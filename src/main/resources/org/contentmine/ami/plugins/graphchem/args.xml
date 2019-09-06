@@ -1,0 +1,19 @@
+<argList name="graphchem">
+	<arg name="graphchem" 
+		long="--gc.graphchem"
+		args="?"
+		countRange="{1,*}"
+		parseMethod="parseChem"
+		runMethod="runChem"
+		outputMethod="outputChem"
+		>
+		<help>
+			GRAPHIC CHEM:
+			Analyze vector images into chemistry. 
+			Under development.
+			
+		</help>
+	</arg>	
+	
+</argList>
+			

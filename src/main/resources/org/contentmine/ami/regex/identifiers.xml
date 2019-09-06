@@ -1,0 +1,11 @@
+<compoundRegex title="misc">
+	<regex fields="bio.ena" url="http://www.ncbi.nlm.nih.gov/Sequin/acc.html" 
+	    lookup="http://www.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&amp;term=${match}GENBANK_ID" >[A-Z]{2}\d{6}|[A-Z]{1}\d{5}</regex>
+	<regex fields="bio.enaprot" url="http://www.ncbi.nlm.nih.gov/Sequin/acc.html">[A-Z]{3}\d{5}</regex>
+	<regex fields="bio.pdb">\w[A-Z]{3}\d</regex>
+	<regex fields="meta.orcid" url="http://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier">http://orcid\.org/(\d{4}-){3}\d{3}[\dX]</regex>
+	<regex fields="clin.nct">NCT\d{8}</regex>
+	<regex fields="clin.isrctn">ISRCTN.{0,20}\d{8}</regex>
+	<!-- example AB_1004986 -->
+	<regex fields="rrid.ab" lookup="https://scicrunch.org/resources/Antibodies/search?q=${match}">RRID:(AB_\d+)</regex>
+</compoundRegex>

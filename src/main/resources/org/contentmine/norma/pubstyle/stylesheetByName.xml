@@ -1,0 +1,34 @@
+<stylesheetList>
+<!--  this may no longer be offered by BMC -->
+  <stylesheet name="bmcxml2html">/org/contentmine/norma/pubstyle/bmc/xml2html.xsl</stylesheet>
+
+  <stylesheet name="ncbi-jats2html">/org/contentmine/norma/pubstyle/nlm/ncbi/jats-html.xsl</stylesheet>
+  <stylesheet name="jats2shtml">/org/contentmine/norma/pubstyle/nlm/jats/jats2shtml.xsl</stylesheet>
+
+  <stylesheet name="hind2xml">/org/contentmine/norma/pubstyle/hindawi/groupMajorSections.xsl</stylesheet>
+
+  <stylesheet name="bmc2html">/org/contentmine/norma/pubstyle/bmc/toHtml.xsl</stylesheet>
+  <stylesheet name="acs2html">/org/contentmine/norma/pubstyle/acs/toHtml.xsl</stylesheet>
+  <stylesheet name="aip2html">/org/contentmine/norma/pubstyle/aip/toHtml.xsl</stylesheet>
+  <stylesheet name="apa2html">/org/contentmine/norma/pubstyle/apa/toHtml.xsl</stylesheet>
+  <stylesheet name="bmj2html">/org/contentmine/norma/pubstyle/bmj/toHtml.xsl</stylesheet>
+  <stylesheet name="cup2html">/org/contentmine/norma/pubstyle/cup/toHtml.xsl</stylesheet>
+  <stylesheet name="els2html">/org/contentmine/norma/pubstyle/elsevier/toHtml.xsl</stylesheet>
+  <stylesheet name="ieee2html">/org/contentmine/norma/pubstyle/ieee/toHtml.xsl</stylesheet>
+  <stylesheet name="iop2html">/org/contentmine/norma/pubstyle/iop/toHtml.xsl</stylesheet>
+  <stylesheet name="nature2html">/org/contentmine/norma/pubstyle/nature/toHtml.xsl</stylesheet>
+  <stylesheet name="nlm2html">/org/contentmine/norma/pubstyle/nlm/toHtml.xsl</stylesheet>
+  <stylesheet name="oup2html">/org/contentmine/norma/pubstyle/oup/toHtml.xsl</stylesheet>
+  <stylesheet name="rs2html">/org/contentmine/norma/pubstyle/rs/toHtml.xsl</stylesheet> <!-- royal society -->
+  <stylesheet name="sage2html">/org/contentmine/norma/pubstyle/sage/toHtml.xsl</stylesheet> 
+  <stylesheet name="sp2html">/org/contentmine/norma/pubstyle/springer/toHtml.xsl</stylesheet> 
+  <stylesheet name="tf2html">/org/contentmine/norma/pubstyle/tf/toHtml.xsl</stylesheet>
+  <stylesheet name="wiley2html">/org/contentmine/norma/pubstyle/wiley/toHtml.xsl</stylesheet>
+  <stylesheet name="wk2html">/org/contentmine/norma/pubstyle/wk/toHtml.xsl</stylesheet>
+  <!--  tei grobid  -->
+  <stylesheet name="grobid2html">/org/contentmine/norma/tei/grobid-html.xsl</stylesheet>
+  <!--  patents  -->
+  <stylesheet name="uspto2html">/org/contentmine/norma/patents/uspto/toHtml.xsl</stylesheet>
+  <!-- extractions from jats -->
+  <stylesheet name="nlm2method">/org/contentmine/norma/pubstyle/nlm/jats/sections/methods.xsl</stylesheet>
+</stylesheetList>

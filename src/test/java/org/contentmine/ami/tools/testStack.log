@@ -1,0 +1,793 @@
+/Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397
+fulltext.pdf
+pdfimages
+svg
+
+Generic values (AMIMakeProjectTool)
+================================
+output basename     null
+input basename      null
+cproject            /Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited
+ctree               
+cTreeList           14 trees [/Users/pm286/projects/forestplots/stataforestplot
+dryrun              false
+excludeBase         null
+excludeTrees        null
+file types          [pdf]
+forceMake           false
+includeBase         null
+includeTrees        null
+log4j               
+logfile             null
+verbose             0
+
+Specific values (AMIMakeProjectTool)
+================================
+compress            25
+omit                [template\.xml, log\.txt, summary\.json]
+
+Generic values (AMIPDFTool)
+================================
+output basename     null
+input basename      null
+cproject            
+ctree               /Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397
+cTreeList           [/Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397]
+dryrun              false
+excludeBase         null
+excludeTrees        null
+file types          []
+forceMake           false
+includeBase         null
+includeTrees        null
+log4j               
+logfile             null
+verbose             0
+
+Specific values (AMIPDFTool)
+================================
+maxpages            5
+svgDirectoryName    svg/
+outputSVG           true
+imgDirectoryName    pdfimages/
+outputPDFImages     true
+AMIPDFTool cTree: PMC5882397
+cTree: PMC5882397
+make skipped 
+Generic values (AMIImageTool)
+================================
+output basename     null
+input basename      null
+cproject            
+ctree               /Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397
+cTreeList           [/Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397]
+dryrun              false
+excludeBase         null
+excludeTrees        null
+file types          []
+forceMake           false
+includeBase         null
+includeTrees        null
+log4j               
+logfile             null
+verbose             0
+
+Specific values (AMIImageTool)
+================================
+minHeight           100
+minWidth            100
+smalldir            small
+monochromeDir       monochrome
+duplicateDir        duplicate
+borders             null
+binarize            null
+despeckle           true
+erodeDilate         false
+maxheight           1000
+maxwidth            1000
+posterize           false
+priority            RAW
+rotate              null
+scalefactor         null
+sharpen             sharpen4
+template            null
+threshold           150
+
+AMIImageTool cTree: PMC5882397
+filterImages cTree: PMC5882397
+transformImages cTree: PMC5882397
+Assuming base: raw
+transforming: image.5.1.167_508.40_303/raw.png
+transforming: image.5.2.170_506.437_647/raw.png
+transforming: image.6.1.140_509.40_343/raw.png
+transforming: image.7.1.170_506.40_238/raw.png
+
+Generic values (AMIImageTool)
+================================
+output basename     null
+input basename      null
+cproject            
+ctree               /Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397
+cTreeList           [/Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397]
+dryrun              false
+excludeBase         null
+excludeTrees        null
+file types          []
+forceMake           false
+includeBase         null
+includeTrees        null
+log4j               
+logfile             null
+verbose             0
+
+Specific values (AMIImageTool)
+================================
+minHeight           100
+minWidth            100
+smalldir            small
+monochromeDir       monochrome
+duplicateDir        duplicate
+borders             null
+binarize            null
+despeckle           true
+erodeDilate         false
+maxheight           1000
+maxwidth            1000
+posterize           false
+priority            RAW
+rotate              null
+scalefactor         null
+sharpen             sharpen4
+template            null
+threshold           230
+
+AMIImageTool cTree: PMC5882397
+filterImages cTree: PMC5882397
+transformImages cTree: PMC5882397
+Assuming base: raw
+transforming: image.5.1.167_508.40_303/raw.png
+transforming: image.5.2.170_506.437_647/raw.png
+transforming: image.6.1.140_509.40_343/raw.png
+transforming: image.7.1.170_506.40_238/raw.png
+
+Generic values (AMIImageTool)
+================================
+output basename     null
+input basename      null
+cproject            
+ctree               /Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397
+cTreeList           [/Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397]
+dryrun              false
+excludeBase         null
+excludeTrees        null
+file types          []
+forceMake           false
+includeBase         null
+includeTrees        null
+log4j               
+logfile             null
+verbose             0
+
+Specific values (AMIImageTool)
+================================
+minHeight           100
+minWidth            100
+smalldir            small
+monochromeDir       monochrome
+duplicateDir        duplicate
+borders             null
+binarize            null
+despeckle           true
+erodeDilate         false
+maxheight           1000
+maxwidth            1000
+posterize           false
+priority            RAW
+rotate              null
+scalefactor         null
+sharpen             sharpen4
+template            null
+threshold           240
+
+AMIImageTool cTree: PMC5882397
+filterImages cTree: PMC5882397
+transformImages cTree: PMC5882397
+Assuming base: raw
+transforming: image.5.1.167_508.40_303/raw.png
+transforming: image.5.2.170_506.437_647/raw.png
+transforming: image.6.1.140_509.40_343/raw.png
+transforming: image.7.1.170_506.40_238/raw.png
+===============Finished AmiImage=============
+
+Generic values (AMIOCRTool)
+================================
+output basename     null
+input basename      null
+cproject            
+ctree               /Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397
+cTreeList           [/Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397]
+dryrun              false
+excludeBase         null
+excludeTrees        null
+file types          []
+forceMake           true
+includeBase         null
+includeTrees        null
+log4j               
+logfile             null
+verbose             0
+
+Specific values (AMIOCRTool)
+================================
+disambiguate        false
+extractlines        [gocr]
+glyphs              false
+gocr                /usr/local/bin/gocr
+html                true
+maxsize             null
+replace             []
+scale               null
+scalefactor         null
+scaledFilename      null
+tesseractPath       null
+
+AMIOCRTool cTree: PMC5882397
+imageDirs: 4
+>image.5.1.167_508/raw>
+>gocr>
+>image.5.2.170_506/raw>
+>gocr>
+>image.6.1.140_509/raw>
+>gocr>
+>image.7.1.170_506/raw>
+>gocr>
+
+Generic values (AMIOCRTool)
+================================
+output basename     null
+input basename      null
+cproject            
+ctree               /Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397
+cTreeList           [/Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397]
+dryrun              false
+excludeBase         null
+excludeTrees        null
+file types          []
+forceMake           true
+includeBase         null
+includeTrees        null
+log4j               
+logfile             null
+verbose             0
+
+Specific values (AMIOCRTool)
+================================
+disambiguate        false
+extractlines        [hocr]
+glyphs              false
+gocr                null
+html                false
+maxsize             null
+replace             []
+scale               null
+scalefactor         null
+scaledFilename      null
+tesseractPath       /usr/local/bin/tesseract
+
+AMIOCRTool cTree: PMC5882397
+imageDirs: 4
+>image.5.1.167_508/raw>
+>skip hocr>
+>image.5.2.170_506/raw>
+>skip hocr>
+>image.6.1.140_509/raw>
+>skip hocr>
+>image.7.1.170_506/raw>
+>skip hocr>
+===============Finished AmiOcr=============
+
+Generic values (AMIPixelTool)
+================================
+output basename     null
+input basename      raw_thr_230_ds
+cproject            
+ctree               /Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397
+cTreeList           [/Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397]
+dryrun              false
+excludeBase         null
+excludeTrees        null
+file types          []
+forceMake           false
+includeBase         null
+includeTrees        null
+log4j               
+logfile             null
+verbose             0
+
+Specific values (AMIPixelTool)
+================================
+basename             default
+lines                false
+maxislands           500
+minwidth             30
+minheight            -1
+maxIslandCount       0
+minRingCount         -1
+outputDirname        raw_thr_230_ds/
+projections          true
+projectionsName      projections
+subimageTokens       [statascale, y, 2, delta, 10, projection, x]
+templateInput        raw_thr_230_ds/projections.xml
+templateOutput       template.xml
+templateXsl          /org/contentmine/ami/tools/stataTemplate.xsl
+thinning             none
+xProjectionFactor    0.5
+yProjectionFactor    0.8
+
+AMIPixelTool cTree: PMC5882397
+imageDirs: 4
+>imageDir> image.5.1.167_508.40_303
+0    [main] DEBUG org.contentmine.ami.tools.AMIPixelTool  - basename: raw_thr_230_ds
+442  [main] DEBUG org.contentmine.ami.tools.AMIPixelTool  - w/h 946/10
+>imageDir> image.5.2.170_506.437_647
+659  [main] DEBUG org.contentmine.ami.tools.AMIPixelTool  - basename: raw_thr_230_ds
+743  [main] WARN  org.contentmine.ami.tools.AMIPixelTool  - cannot find yRange: 2 [(548,551)]
+743  [main] WARN  org.contentmine.ami.tools.AMIPixelTool  - missing coord: [statascale, y, 2, delta, 10, projection, x]
+>imageDir> image.6.1.140_509.40_343
+754  [main] DEBUG org.contentmine.ami.tools.AMIPixelTool  - basename: raw_thr_230_ds
+899  [main] WARN  org.contentmine.ami.tools.AMIPixelTool  - cannot find yRange: 2 [(793,796)]
+899  [main] WARN  org.contentmine.ami.tools.AMIPixelTool  - missing coord: [statascale, y, 2, delta, 10, projection, x]
+>imageDir> image.7.1.170_506.40_238
+907  [main] DEBUG org.contentmine.ami.tools.AMIPixelTool  - basename: raw_thr_230_ds
+973  [main] WARN  org.contentmine.ami.tools.AMIPixelTool  - cannot find yRange: 2 [(514,517)]
+973  [main] WARN  org.contentmine.ami.tools.AMIPixelTool  - missing coord: [statascale, y, 2, delta, 10, projection, x]
+===============Finished AmiPixel=============
+
+Generic values (AMIForestPlotTool)
+================================
+output basename     null
+input basename      null
+cproject            
+ctree               /Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397
+cTreeList           [/Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397]
+dryrun              false
+excludeBase         null
+excludeTrees        null
+file types          []
+forceMake           false
+includeBase         null
+includeTrees        null
+log4j               
+logfile             null
+verbose             0
+
+Specific values (AMIForestPlotTool)
+================================
+color of lines      0
+files to display    null
+min line length     300
+min nested rings    2
+radius of contours  4.0
+plot type           null
+use Hocr            false
+offsets             null
+scaledFilename      null
+summaryFilenam      null
+table               false
+segment             false
+table               false
+template            raw_thr_230_ds/template.xml
+
+
+AMIForestPlotTool cTree: PMC5882397
+cTree>> PMC5882397
+======>image.5.1.167_508.40_303/null
+======>image.5.2.170_506.437_647/null
+======>image.6.1.140_509.40_343/null
+======>image.7.1.170_506.40_238/null
+>> null sumary
+0    [main] DEBUG org.contentmine.ami.tools.AMIForestPlotTool  - >abbrev>[]
+===============Finished AmiForest=============
+
+Generic values (AMIImageTool)
+================================
+output basename     null
+input basename      raw.header
+cproject            
+ctree               /Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397
+cTreeList           [/Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397]
+dryrun              false
+excludeBase         null
+excludeTrees        null
+file types          []
+forceMake           false
+includeBase         null
+includeTrees        null
+log4j               
+logfile             null
+verbose             0
+
+Specific values (AMIImageTool)
+================================
+minHeight           100
+minWidth            100
+smalldir            small
+monochromeDir       monochrome
+duplicateDir        duplicate
+borders             null
+binarize            null
+despeckle           true
+erodeDilate         false
+maxheight           1000
+maxwidth            1000
+posterize           false
+priority            RAW
+rotate              null
+scalefactor         null
+sharpen             sharpen4
+template            null
+threshold           120
+
+AMIImageTool cTree: PMC5882397
+filterImages cTree: PMC5882397
+transformImages cTree: PMC5882397
+transforming: image.5.1.167_508.40_303/raw.header.png
+transforming: image.5.2.170_506.437_647/raw.header.png
+transforming: image.6.1.140_509.40_343/raw.header.png
+transforming: image.7.1.170_506.40_238/raw.header.png
+
+Generic values (AMIImageTool)
+================================
+output basename     null
+input basename      raw.body.ltable
+cproject            
+ctree               /Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397
+cTreeList           [/Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397]
+dryrun              false
+excludeBase         null
+excludeTrees        null
+file types          []
+forceMake           false
+includeBase         null
+includeTrees        null
+log4j               
+logfile             null
+verbose             0
+
+Specific values (AMIImageTool)
+================================
+minHeight           100
+minWidth            100
+smalldir            small
+monochromeDir       monochrome
+duplicateDir        duplicate
+borders             null
+binarize            null
+despeckle           true
+erodeDilate         false
+maxheight           1000
+maxwidth            1000
+posterize           false
+priority            RAW
+rotate              null
+scalefactor         null
+sharpen             sharpen4
+template            null
+threshold           120
+
+AMIImageTool cTree: PMC5882397
+filterImages cTree: PMC5882397
+transformImages cTree: PMC5882397
+transforming: image.5.1.167_508.40_303/raw.body.ltable.png
+transforming: image.5.2.170_506.437_647/raw.body.ltable.png
+transforming: image.6.1.140_509.40_343/raw.body.ltable.png
+transforming: image.7.1.170_506.40_238/raw.body.ltable.png
+
+Generic values (AMIImageTool)
+================================
+output basename     null
+input basename      raw.body.rtable
+cproject            
+ctree               /Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397
+cTreeList           [/Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397]
+dryrun              false
+excludeBase         null
+excludeTrees        null
+file types          []
+forceMake           false
+includeBase         null
+includeTrees        null
+log4j               
+logfile             null
+verbose             0
+
+Specific values (AMIImageTool)
+================================
+minHeight           100
+minWidth            100
+smalldir            small
+monochromeDir       monochrome
+duplicateDir        duplicate
+borders             null
+binarize            null
+despeckle           true
+erodeDilate         false
+maxheight           1000
+maxwidth            1000
+posterize           false
+priority            RAW
+rotate              null
+scalefactor         null
+sharpen             sharpen4
+template            null
+threshold           120
+
+AMIImageTool cTree: PMC5882397
+filterImages cTree: PMC5882397
+transformImages cTree: PMC5882397
+transforming: image.5.1.167_508.40_303/raw.body.rtable.png
+transforming: image.5.2.170_506.437_647/raw.body.rtable.png
+transforming: image.6.1.140_509.40_343/raw.body.rtable.png
+transforming: image.7.1.170_506.40_238/raw.body.rtable.png
+===============Finished Sharpen Threshold=============
+
+Generic values (AMIOCRTool)
+================================
+output basename     null
+input basename      raw.header_s4_thr_120_ds
+cproject            
+ctree               /Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397
+cTreeList           [/Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397]
+dryrun              false
+excludeBase         null
+excludeTrees        null
+file types          []
+forceMake           false
+includeBase         null
+includeTrees        null
+log4j               
+logfile             null
+verbose             0
+
+Specific values (AMIOCRTool)
+================================
+disambiguate        false
+extractlines        [hocr]
+glyphs              false
+gocr                null
+html                true
+maxsize             null
+replace             []
+scale               null
+scalefactor         null
+scaledFilename      null
+tesseractPath       /usr/local/bin/tesseract
+
+AMIOCRTool cTree: PMC5882397
+imageDirs: 4
+>image.5.1.167_508/raw.header_s4_thr_120_ds>
+>skip hocr>
+>image.5.2.170_506/raw.header_s4_thr_120_ds>
+>skip hocr>
+>image.6.1.140_509/raw.header_s4_thr_120_ds>
+>skip hocr>
+>image.7.1.170_506/raw.header_s4_thr_120_ds>
+>skip hocr>
+
+Generic values (AMIOCRTool)
+================================
+output basename     null
+input basename      raw.body.ltable_s4_thr_120_ds
+cproject            
+ctree               /Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397
+cTreeList           [/Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397]
+dryrun              false
+excludeBase         null
+excludeTrees        null
+file types          []
+forceMake           false
+includeBase         null
+includeTrees        null
+log4j               
+logfile             null
+verbose             0
+
+Specific values (AMIOCRTool)
+================================
+disambiguate        false
+extractlines        [hocr]
+glyphs              false
+gocr                null
+html                true
+maxsize             null
+replace             []
+scale               null
+scalefactor         null
+scaledFilename      null
+tesseractPath       /usr/local/bin/tesseract
+
+AMIOCRTool cTree: PMC5882397
+imageDirs: 4
+>image.5.1.167_508/raw.body.ltable_s4_thr_120_ds>
+>skip hocr>
+>image.5.2.170_506/raw.body.ltable_s4_thr_120_ds>
+>skip hocr>
+>image.6.1.140_509/raw.body.ltable_s4_thr_120_ds>
+>skip hocr>
+0    [main] DEBUG org.contentmine.eucl.euclid.IntegerMultiset  - splitAtGaps NYI fully): [578]
+>image.7.1.170_506/raw.body.ltable_s4_thr_120_ds>
+>skip hocr>
+
+Generic values (AMIOCRTool)
+================================
+output basename     null
+input basename      raw.body.rtable_s4_thr_120_ds
+cproject            
+ctree               /Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397
+cTreeList           [/Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397]
+dryrun              false
+excludeBase         null
+excludeTrees        null
+file types          []
+forceMake           false
+includeBase         null
+includeTrees        null
+log4j               
+logfile             null
+verbose             0
+
+Specific values (AMIOCRTool)
+================================
+disambiguate        false
+extractlines        [hocr]
+glyphs              false
+gocr                null
+html                true
+maxsize             null
+replace             []
+scale               null
+scalefactor         null
+scaledFilename      null
+tesseractPath       /usr/local/bin/tesseract
+
+AMIOCRTool cTree: PMC5882397
+imageDirs: 4
+>image.5.1.167_508/raw.body.rtable_s4_thr_120_ds>
+>skip hocr>
+>image.5.2.170_506/raw.body.rtable_s4_thr_120_ds>
+>skip hocr>
+>image.6.1.140_509/raw.body.rtable_s4_thr_120_ds>
+>skip hocr>
+>image.7.1.170_506/raw.body.rtable_s4_thr_120_ds>
+>skip hocr>
+===============Finished Tesseract =============
+
+Generic values (AMIOCRTool)
+================================
+output basename     null
+input basename      raw.header_s4_thr_120_ds
+cproject            
+ctree               /Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397
+cTreeList           [/Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397]
+dryrun              false
+excludeBase         null
+excludeTrees        null
+file types          []
+forceMake           false
+includeBase         null
+includeTrees        null
+log4j               
+logfile             null
+verbose             0
+
+Specific values (AMIOCRTool)
+================================
+disambiguate        false
+extractlines        [gocr]
+glyphs              false
+gocr                /usr/local/bin/gocr
+html                true
+maxsize             null
+replace             []
+scale               null
+scalefactor         null
+scaledFilename      null
+tesseractPath       null
+
+AMIOCRTool cTree: PMC5882397
+imageDirs: 4
+>image.5.1.167_508/raw.header_s4_thr_120_ds>
+>skip gocr>raw.header_s4_thr_120_ds.png
+>image.5.2.170_506/raw.header_s4_thr_120_ds>
+>skip gocr>raw.header_s4_thr_120_ds.png
+>image.6.1.140_509/raw.header_s4_thr_120_ds>
+>skip gocr>raw.header_s4_thr_120_ds.png
+>image.7.1.170_506/raw.header_s4_thr_120_ds>
+>skip gocr>raw.header_s4_thr_120_ds.png
+
+Generic values (AMIOCRTool)
+================================
+output basename     null
+input basename      raw.body.ltable_s4_thr_120_ds
+cproject            
+ctree               /Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397
+cTreeList           [/Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397]
+dryrun              false
+excludeBase         null
+excludeTrees        null
+file types          []
+forceMake           false
+includeBase         null
+includeTrees        null
+log4j               
+logfile             null
+verbose             0
+
+Specific values (AMIOCRTool)
+================================
+disambiguate        false
+extractlines        [gocr]
+glyphs              false
+gocr                /usr/local/bin/gocr
+html                true
+maxsize             null
+replace             []
+scale               null
+scalefactor         null
+scaledFilename      null
+tesseractPath       null
+
+AMIOCRTool cTree: PMC5882397
+imageDirs: 4
+>image.5.1.167_508/raw.body.ltable_s4_thr_120_ds>
+>skip gocr>raw.body.ltable_s4_thr_120_ds.png
+>image.5.2.170_506/raw.body.ltable_s4_thr_120_ds>
+>skip gocr>raw.body.ltable_s4_thr_120_ds.png
+>image.6.1.140_509/raw.body.ltable_s4_thr_120_ds>
+>skip gocr>raw.body.ltable_s4_thr_120_ds.png
+>image.7.1.170_506/raw.body.ltable_s4_thr_120_ds>
+>skip gocr>raw.body.ltable_s4_thr_120_ds.png
+
+Generic values (AMIOCRTool)
+================================
+output basename     null
+input basename      raw.body.rtable_s4_thr_120_ds
+cproject            
+ctree               /Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397
+cTreeList           [/Users/pm286/projects/forestplots/stataforestplots/stataTotalEdited/PMC5882397]
+dryrun              false
+excludeBase         null
+excludeTrees        null
+file types          []
+forceMake           false
+includeBase         null
+includeTrees        null
+log4j               
+logfile             null
+verbose             0
+
+Specific values (AMIOCRTool)
+================================
+disambiguate        false
+extractlines        [gocr]
+glyphs              false
+gocr                /usr/local/bin/gocr
+html                true
+maxsize             null
+replace             []
+scale               null
+scalefactor         null
+scaledFilename      null
+tesseractPath       null
+
+AMIOCRTool cTree: PMC5882397
+imageDirs: 4
+>image.5.1.167_508/raw.body.rtable_s4_thr_120_ds>
+>skip gocr>raw.body.rtable_s4_thr_120_ds.png
+>image.5.2.170_506/raw.body.rtable_s4_thr_120_ds>
+>skip gocr>raw.body.rtable_s4_thr_120_ds.png
+>image.6.1.140_509/raw.body.rtable_s4_thr_120_ds>
+>skip gocr>raw.body.rtable_s4_thr_120_ds.png
+>image.7.1.170_506/raw.body.rtable_s4_thr_120_ds>
+>skip gocr>raw.body.rtable_s4_thr_120_ds.png
+===============Finished GOCR =============

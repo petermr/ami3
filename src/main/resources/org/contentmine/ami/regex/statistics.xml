@@ -1,0 +1,6 @@
+<compoundRegex title="statistics">
+  <regex fields="pvalue">[pP]\s*&amp;lt;\s*\d?\.\d+</regex> <!-- p < 0.05 -->
+<!--   <regex fields="pvalue1">[pP]\s*[>=≤≥]\s*(\d?\.\d+|n\.?s\.?)</regex> -->
+  <regex fields="fvalue">F\(\d+\,\d+\)</regex>
+  <regex fields="number">[nN]\s*=\s*\d+</regex>
+</compoundRegex>

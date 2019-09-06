@@ -1,0 +1,29 @@
+<argList name="regex">
+	<arg name="regex" 
+		brief="-r.r"
+		long="--r.regex"
+		args="location [location ...]"
+		countRange="{1,*}"
+		parseMethod="parseRegex"
+		runMethod="runRegex"
+		outputMethod="outputResultElements"
+		>
+		<help>
+		
+			REGEX:
+			Reads location(s) of the source of regex files. These can be :
+			- files within the distribution (""regex/...")
+			- files on local files store
+			- URLs 
+			Any number of files can be imported. The at present they are sequentially OR'ed, i.e.
+			each regex independently annotates/indexes the document.
+			
+		</help>
+		<!--  replace leading and trailing tildes  -->
+		<value name="trailing_tilde">(?:[^\s\p{Punct}]*)</value>
+		<value name="leading_tilde">(?:\s+)</value>
+	</arg>	
+	
+	
+</argList>
+			

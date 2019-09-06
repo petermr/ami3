@@ -1,0 +1,47 @@
+<compoundRegex title="phylotree">
+	<regex weight="1.0" url="books.google.co.uk/books?isbn=1118017862" fields="acctran">ACCTRAN</regex>
+	<regex weight="0.5" fields="align">align~</regex>
+	<regex weight="0.6" fields="apomorph">apomorph~</regex>
+	<regex weight="0.6" fields="bayesian">bayes~</regex>
+	<regex weight="0.6" fields="beast" case="required">BEAST</regex>
+	<regex weight="0.6" fields="bootstrap pre bs post">bootstrap~</regex>
+	<regex weight="0.8" fields="branch_lengths">branch\s+lengths?</regex>
+	<regex weight="1.0" url="DOI: 10.1111/j.1096-0031.1994.tb00179.x" fields="bremer_support" case="required">Bremer\s+support</regex>
+	<regex weight="0.5" fields="cladist">cladist~</regex>
+	<regex weight="0.8" fields="consistency_index">consistency\s+ind(ex|ices)?</regex>
+	<regex weight="1.0" url="books.google.co.uk/books?isbn=1118017862" fields="deltran" case="required">DELTRAN</regex>
+	<regex weight="0.4" url="http://datadryad.org/" fields="dryad" case="required">DRYAD</regex>
+	<regex weight="0.8" url="https://www.nescent.org/wg_garli/Main_Page" case="required" fields="garli">GARLI</regex>
+	<regex weight="0.5" url="http://www.ncbi.nlm.nih.gov/genbank/" fields="genbank" case="required">GenBank</regex>
+	<regex weight="0.8" url="http://www.cladistics.com/aboutTNT.html" fields="goloboff" case="required">Goloboff</regex>
+	<regex weight="0.9" url="Lectures on Mathematics in the Life Sciences (American Mathematical Society) 17: 57–86." fields="gtr" case="required">GTR</regex>
+	<regex weight="0.5" url="https://en.wikipedia.org/wiki/Willi_Hennig" fields="hennig" case="required">Hennig</regex>
+	<regex weight="0.7" fields="jackknife">jackknif~</regex>
+	<regex weight="0.5" fields="maximum_likelihood">maximum\s+likelihood</regex>
+	<regex weight="0.5" fields="maximum_parsimony">maximum\s+parsimony</regex>
+	<regex weight="0.7" fields="character_matrix">character\s+matrix</regex>
+	<regex weight="0.7" fields="mega" case="required">MEGA</regex>
+	<regex weight="1.0" fields="mr_bayes" case="required">MrBayes</regex>
+	<regex weight="0.9" fields="mpt" case="required">MPT</regex>
+	<regex weight="0.8" fields="multistate_characters">multistate\s+characters?</regex>
+	<regex weight="0.5" fields="neighbour_join">neighbou?r\s+join~</regex>
+	<regex weight="0.1" fields="node">node</regex>
+	<regex weight="0.8" fields="nona">nona</regex>
+	<regex weight="0.8" fields="ordered_characters">ordered\s+characters?</regex>
+	<regex weight="0.5" fields="outgroup">outgroup</regex>
+	<regex weight="0.5" fields="parsimony">[Pp]arsimon~</regex>
+	<regex weight="1.0" url="http://paup.csit.fsu.edu/" 
+	   title="Phylogenetic Analysis Using Parsimony" fields="paup version" case="required">PAUP\*?\s*(\d+\.?\d*)</regex>
+	<regex weight="0.5" fields="phylip" case="required">PHYLIP</regex>
+	<regex weight="0.2" fields="phylogen">phylog~</regex>
+	<regex weight="0.8" fields="phyml" case="required">PHYML</regex>
+	<regex weight="1.0" fields="poy" case="required">POY</regex>
+	<regex weight="1.0" fields="raxml" case="required">RAxML</regex>
+	<regex weight="0.8" fields="swofford" case="required">Swofford</regex>
+	<regex weight="0.9" fields="tbr" case="required">TBR</regex>
+	<regex weight="0.8" url="http://www.cladistics.com/aboutTNT.html" fields="tnt" case="required">TNT</regex>
+	<regex weight="0.6" fields="phylogenetic_tree">phylogenetic\s+tree</regex>
+	<regex weight="0.8" fields="treebase" case="required">TreeBASE</regex>
+	<regex weight="0.5" fields="unordered_characters?">unordered\s+characters?</regex>
+	<regex weight="1.0" fields="winclada" case="required">Winclada</regex>
+</compoundRegex>

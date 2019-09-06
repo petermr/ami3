@@ -1,0 +1,16 @@
+<symbols>
+	<symbol abbreviation="g_h" expand="gene(human)"/>
+	<symbol abbreviation="sp_b" expand="species(binomial)"/>
+	<symbol abbreviation="sp_g" expand="species(genus)"/>
+	<symbol abbreviation="sq_p" expand="sequence(dnaprimer)"/>
+	<symbol abbreviation="sq_d" expand="sequence(dna)"/>
+	<symbol abbreviation="w_f" expand="word(frequencies)"/>
+	<symbol abbreviation="w_fstop" expand="word(frequencies)xpath:@count>20~w.stopwords:pmcstop.txt_stopwords.txt"/>
+	<symbol abbreviation="sm_d" expand="summary(datatables) --filter snippets"/>
+	<symbol abbreviation="s_inn" expand="search(inn)"/>
+	<symbol abbreviation="s_tv" expand="search(tropicalVirus)"/>
+	<symbol abbreviation="s_nal" expand="search(nal)"/>
+	<symbol abbreviation="s_phch" expand="search(phytochemicals1)"/>
+	<symbol abbreviation="s_optr" expand="search(opentrials)"/>
+	
+</symbols>

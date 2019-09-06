@@ -1,0 +1,87 @@
+<argList name="word">
+    <arg name="final"
+        long="--w.summary"
+        parseMethod="parseSummary"
+        finalMethod="finalSummary"
+		args="method [method...]"
+		countRange="{1,*}"
+		pattern="(aggregateFrequencies|tfidf|foo)"
+        >
+        <help>
+        
+        </help>
+    </arg>
+    <!--  the name needs to match the classname of the ArgProcessor at present.
+    MESSY -->
+	<arg name="word" 
+		brief="-w.w"
+		long="--w.words"
+		args="method [method...]"
+		countRange="{0,*}"
+		parseMethod="parseWords"
+		runMethod="runExtractWords"
+		outputMethod="outputWords"
+		>
+		<help>
+			WORDS:
+			extractWords() allows for various extraction of words such as BagOfWords, Stemming, etc.
+			"operations" include:
+		</help>
+	</arg>	
+	
+	<arg name="wordlengths" 
+		long="--w.wordlengths"
+		args="shortest longest"
+		countRange="{1,1}"
+		class="org.contentmine.eucl.euclid.IntRange"
+		parseMethod="parseWordLengths"
+		>
+		<help>
+			WORDLENGTHS:
+			set limits on lengths of words (values are inclusive)
+		</help>
+	</arg>	
+	
+	<arg name="wordtypes" 
+		long="--w.wordtypes"
+		args="type [type...]"
+		countRange="{0,*}"
+		pattern="(acronym|capitalized)"
+		parseMethod="parseWordTypes"
+		>
+		<help>
+			WORDTYPES:
+			word types to extract. Entering zero args will give a list of types. These are likely to change but
+			could be "acronym", "capitalized", etc. 
+		</help>
+	</arg>	
+	
+	<arg name="wordcount" 
+		long="--w.wordcount"
+		args="{min"
+		countRange="{1,1}"
+		class="org.contentmine.eucl.euclid.IntRange"
+		parseMethod="parseMinCount"
+		>
+		<help>
+		 number of words in summary bins
+		</help>
+	</arg>	
+	
+	<!-- MOVED TO sr.search
+	<arg name="search" 
+		long="- -w.search"
+		args="dictionary [...dictionary]"
+		countRange="{1,*}"
+		parseMethod="parseSearch"
+		runMethod="runSearch"
+		outputMethod="outputSearch"
+		>
+		<help>
+		 arguments are names of dictionaries (currently filenames)
+		</help>
+	</arg>	
+-->	
+	
+</argList>
+			

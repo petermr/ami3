@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <properties>
+	    <!-- upstream -->
+	    
+	    <!--<ches.version>0.1-SNAPSHOT</ches.version>-->
+	    <cephis.version>0.1-SNAPSHOT</cephis.version>
+	    <ches.version>0.1-SNAPSHOT</ches.version>
+	    <java.version>1.8</java.version>
+	    <javax.ws.rs.version>2.1</javax.ws.rs.version>
+	    <lucene.version>4.10.3</lucene.version>
+ 	    <resteasy.client>3.6.1.Final</resteasy.client>
+	    <Saxon-HE.version>9.6.0-3</Saxon-HE.version>
+        <surefire.version>2.12.4</surefire.version>
+        <univocity.version>1.5.6</univocity.version>
+	    <xml-apis.version>1.4.01</xml-apis.version>
+ 	    <xmlunit.version>1.4</xmlunit.version>
+<!--
+	    <opennlp.version>1.6.0</opennlp.version>       
+	    <json-path.version>2.0.0</json-path.version>
+	    <jsoup.version>1.8.2</jsoup.version>
+	    <jdeb.version>1.3</jdeb.version>
+-->
+	     
+    </properties>
+
+    <groupId>org.contentmine</groupId>
+    <artifactId>normami</artifactId>
+    <!-- to sync with new cproject-norma-ami versions -->
+    <version>0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>norma</name>
+    <description>A Java library for processing multiple legacy formats into normalized HTML5</description>
+    <inceptionYear>2014</inceptionYear>
+
+    <build>
+        <plugins>
+	        <plugin>
+		        <groupId>org.apache.maven.plugins</groupId>
+		        <artifactId>maven-compiler-plugin</artifactId>
+		        <version>3.8.0</version>
+		        <configuration>
+		          <source>${java.version}</source>
+		          <target>${java.version}</target>
+		        </configuration>
+		    </plugin>
+		    <!--  skip integration tests -->
+		    <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>2.22.0</version>
+                <configuration>
+                    <skipITs>true</skipITs>
+                </configuration>
+            </plugin>
+		    
+        
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>appassembler-maven-plugin</artifactId>
+                <version>1.8.1</version>
+ 		       <executions>
+		          <execution>
+		            <phase>package</phase>
+		            <goals>
+		              <goal>assemble</goal>
+		            </goals>
+		          </execution>
+		        </executions>
+                 <configuration>
+                    <programs>
+                      <!-- general -->
+                         <program>
+                            <mainClass>org.contentmine.ContentMine</mainClass>
+                            <!--  description: exist??? -->
+                            <id>contentMine</id>
+                        </program>
+                      <!--  from Cephis -->
+                         <program>
+                            <mainClass>org.contentmine.cproject.files.CProject</mainClass>
+                            <!--  description: runs "cproject [args] -->
+                            <id>cproject</id>
+                        </program>
+                         <program>
+                            <mainClass>org.contentmine.cproject.files.MakeProject</mainClass>
+                            <!--  description:  runs - -makeProject (\\1)/fulltext.pdf - -fileFilter .*/(.*)\\.pdf" -->
+                            <id>makeProject</id>
+                        </program>
+                      <!-- norma -->  
+                         <program>
+                            <mainClass>org.contentmine.norma.Norma</mainClass>
+                            <!--  description: norma [args]
+                            but also runs makeProject (FIX this) -->
+                            <id>norma</id>
+                        </program>
+                      <!-- ami -->  
+                         <program>
+                            <mainClass>org.contentmine.ami.AMIProcessor</mainClass>
+							<!-- description: lists AMI commands (ami-*) -->
+                            <id>ami-all</id>
+                        </program>
+                         <program>
+                            <mainClass>org.contentmine.ami.AMIDictionary</mainClass>
+							<!-- description: edit/create AMI dictionaries -->
+                            <id>ami-dictionaries</id>
+                        </program>
+                         <program>
+                            <mainClass>org.contentmine.ami.AMISearch</mainClass>
+							<!-- description: run AMI searches and co-occurrence -->
+                            <id>ami-search-cooccur</id>
+                        </program>
+                         <program>
+                            <mainClass>org.contentmine.ami.AMIProcessorPDF</mainClass>
+							<!-- description: convert PDF into SVG and extract images -->
+                            <id>ami-pdf</id>
+                        </program>
+                         <program>
+                            <mainClass>org.contentmine.ami.AMIProcessorXML</mainClass>
+							<!-- description: ??? -->
+                            <id>ami-xml</id>
+                        </program>
+                         <program>
+                            <mainClass>org.contentmine.ami.plugins.CommandProcessor</mainClass>
+                            <!--  description:  -->
+                            <id>cmine</id>
+                        </program>
+                         <program>
+                            <mainClass>org.contentmine.ami.plugins.EntityAnalyzer</mainClass>
+                            <!--  description:  -->
+                            <id>ami-frequencies</id>
+                        </program>
+                         <program>
+                            <mainClass>org.contentmine.ami.plugins.gene.GenePlugin</mainClass>
+                            <!--  description:  -->
+                            <id>ami-gene</id>
+                        </program>
+                         <program>
+                            <mainClass>org.contentmine.ami.plugins.identifier.IdentifierPlugin</mainClass>
+                            <!--  description:  -->
+                            <id>ami-identifier</id>
+                        </program>
+                        <!-- 
+                         <program>
+                            <mainClass>org.contentmine.ami.plugins.phylotree.PhyloTreePlugin</mainClass>
+                            <!- -  description:  - ->
+                            <id>ami-phylotree</id>
+                        </program>
+                        -->
+                         <program>
+                            <mainClass>org.contentmine.ami.plugins.regex.RegexPlugin</mainClass>
+                            <!--  description:  -->
+                            <id>ami-regex</id>
+                        </program>
+                         <program>
+                            <mainClass>org.contentmine.ami.plugins.search.SearchPlugin</mainClass>
+                            <!--  description:  -->
+                            <id>ami-search</id>
+                        </program>
+                        <program>
+                            <mainClass>org.contentmine.ami.plugins.sequence.SequencePlugin</mainClass>
+                            <!--  description:  -->
+                            <id>ami-sequence</id>
+                        </program>
+                        <program>
+                            <mainClass>org.contentmine.ami.plugins.species.SpeciesPlugin</mainClass>
+                            <!--  description:  -->
+                            <id>ami-species</id>
+                        </program>
+                        <program>
+                            <mainClass>org.contentmine.ami.plugins.word.WordPlugin</mainClass>
+                            <!--  description:  -->
+                            <id>ami-word</id>
+                        </program>
+                    </programs>
+
+                    <!-- Prevent long directories -->
+                    <repositoryLayout>flat</repositoryLayout>
+
+                </configuration>
+
+
+            </plugin>
+        <plugin>
+          <groupId>com.github.ferstl</groupId>
+          <artifactId>depgraph-maven-plugin</artifactId>
+          <version>2.0.1</version>
+        </plugin>  
+
+            <plugin>
+                <!--Tool for building a Debian package (.deb) http://tech.ebuddy.com/2013/10/02/automating-debian-package-creation-and-management-with-mavenant/ 
+                    https://github.com/brndkfr/xmppbot/blob/master/xmppbot/pom.xml -->
+                <artifactId>jdeb</artifactId>
+                <groupId>org.vafer</groupId>
+                <version>1.3</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jdeb</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <dataSet>
+                        <data>
+                            <src>${project.build.directory}/appassembler/</src>
+                            <type>directory</type>
+                            <mapper>
+                                <type>perm</type>
+                                <filemode>555</filemode>
+                                <prefix>/usr/share/norma-repo</prefix>
+                            </mapper>
+                        </data>
+
+
+                        <data>
+                            <src>${basedir}/src/main/resources/org/contentmine/norma/pubstyle/plosone/htmlTagger.xml</src>
+                            <type>file</type>
+                            <mapper>
+                                <type>perm</type>
+                                <filemode>555</filemode>
+                                <prefix>/usr/share/norma-repo/exampleData/html</prefix>
+                            </mapper>
+                        </data>
+                        <data>
+                            <src>${basedir}/src/test/resources/org/contentmine/norma/pubstyle/plosone/journal.pone.0111303/fulltext.html</src>
+                            <type>file</type>
+                            <mapper>
+                                <type>perm</type>
+                                <filemode>555</filemode>
+                                <prefix>/usr/share/norma-repo/exampleData/html</prefix>
+                            </mapper>
+                        </data>
+
+
+                        <data>
+                            <type>link</type>
+                            <symlink>true</symlink>
+                            <linkName>/usr/bin/norma</linkName>
+                            <linkTarget>/usr/share/norma-repo/bin/norma</linkTarget>
+                        </data>
+
+                    </dataSet>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5</version>
+                <configuration>
+                    <source>${java.source.version}</source>
+                    <target>${java.target.version}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${surefire.version}</version>
+                <configuration>
+                    <forkCount>3</forkCount>
+                    <reuseForks>true</reuseForks>
+                    <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
+                </configuration>
+            </plugin>
+<!-- 
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+            </plugin>
+-->
+            <!-- giant jar -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                                <version>2.4</version>
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>org.contentmine.norma.Norma</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            
+        </plugins>
+    </build>
+
+    <dependencies>
+<!--     
+        <dependency>
+            <groupId>org.contentmine</groupId>
+            <artifactId>svghtml</artifactId>
+            <version>${svghtml.version}</version>
+        </dependency>
+        -->
+        <!--
+        <dependency>
+            <groupId>org.contentmine</groupId>
+            <artifactId>ches</artifactId>
+            <version>${ches.version}</version>
+        </dependency>
+        -->
+        <dependency>
+            <groupId>org.contentmine</groupId>
+            <artifactId>cephis</artifactId>
+            <version>${cephis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.saxon</groupId>
+            <artifactId>Saxon-HE</artifactId>
+             <version>${Saxon-HE.version}</version>
+        </dependency>        
+        <!-- https://github.com/jayway/JsonPath/blob/master/README.md -->
+		<!--
+        <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+            <version>${json-path.version}</version>
+        </dependency>
+			-->
+        <!--  to avoid Xerces Hell? 
+        http://stackoverflow.com/questions/17777821/maven-dependency-conflict-org-w3c-dom-elementtraversal
+         -->
+		<!--
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>${jsoup.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>xmlunit</groupId>
+            <artifactId>xmlunit</artifactId>
+            <version>${xmlunit.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.vafer</groupId>
+            <artifactId>jdeb</artifactId>
+            <version>${jdeb.version}</version>
+            <!- - Prevents jar bloat in final package - ->
+            <scope>provided</scope>
+        </dependency>
+        -->
+<!--        
+        <dependency>
+	        <groupId>org.grobid</groupId>
+		    <artifactId>grobid-core</artifactId>
+		    <version>0.4.1</version>
+		</dependency>
+		-->
+        <dependency>
+            <groupId>xmlunit</groupId>
+            <artifactId>xmlunit</artifactId>
+            <version>${xmlunit.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>xml-apis</groupId>
+            <artifactId>xml-apis</artifactId>
+		    <version>${xml-apis.version}</version>
+		</dependency>
+		        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-core</artifactId>
+            <version>${lucene.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-analyzers-common</artifactId>
+            <version>${lucene.version}</version>
+        </dependency>
+        <dependency>
+        <!-- https://github.com/uniVocity/univocity-parsers // needed for JAX -->
+            <groupId>com.univocity</groupId>
+            <artifactId>univocity-parsers</artifactId>
+            <version>${univocity.version}</version>
+            <type>jar</type>
+        </dependency>        
+		<!-- https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api -->
+		<dependency>
+		    <groupId>javax.ws.rs</groupId>
+		    <artifactId>javax.ws.rs-api</artifactId>
+		    <version>${javax.ws.rs.version}</version>
+		</dependency>		
+		<dependency>
+		    <groupId>org.jboss.resteasy</groupId>
+		    <artifactId>resteasy-client</artifactId>
+		    <version>${resteasy.client}</version>
+		</dependency>		
+    </dependencies>
+</project>

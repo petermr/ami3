@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary title="cochrane">
+    <desc>Small dictionary of terms in Cochrane Reviews</desc>
+    <desc>hand compiled by Peter Murray-Rust, 2016</desc>
+
+	<entry term="Cochrane Library" name="cochrane library" />
+	<entry term="Cochrane Reviews" name="cochrane reviews" />
+	<entry term="Cochrane Central Register of Controlled Trials" name="Cochrane Central Register of Controlled Trials" />
+	<entry term="Cochrane" name="cochrane" />
+	<entry term="randomize" name="randomize" />
+	<entry term="meta-analysis" name="meta-analysis" />
+	<entry term="Embase" name="embase" />
+	<entry term="MEDLINE" name="medline" />
+	<entry term="eligibility" name="eligibility"/>
+	<entry term="exclusion" name="exclusion"/>
+	<entry term="outcome" name="outcome"/>
+	<entry term="Review Manager" name="Review Manager"/>
+	<entry term="Eggers" name="Eggers"/>
+	<entry term="Stata" name="Stata"/>
+	<entry term="STATA" name="STATA"/>
+	<entry term="RCT" name="RCT"/>
+	<entry term="pCR" name="pCR"/>
+	<entry term="adverse events" name="adverse events"/>
+
+</dictionary>

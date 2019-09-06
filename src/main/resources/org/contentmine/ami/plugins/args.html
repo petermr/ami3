@@ -1,0 +1,143 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+					* {
+					bold : bold;
+					}
+					code {
+					font-family : courier;
+					font-weight :
+					bold;
+					font-size : 14pt;
+					}
+				</style></head>
+   <body>
+      <div>
+         <h1><tt>ami
+               					(
+               					0.2.25p
+               					)
+               				</tt></h1>
+         <h2>Arguments</h2>
+         <ul>
+            <li>
+               <h2><tt>context</tt></h2><code>--context characterExtent [characterExtent2]{1,2}</code><br><code>
+                  					Default:
+                  					 99</code><em>Methods: </em> parse: parseContext<br><br><em>  b: </em><code></code><em>  c: </em><code>java.lang.Integer</code><p>
+                  <h3>Description</h3>
+                  <help>
+                     		
+                     			CONTEXT:
+                     			The extent (in characters) of the text or other content immediately surrounding
+                     the located word/phrase/object. By default this is either
+                     			+- 100 characters (Publisher limit) or to the end of the object (paragraph). a
+                     single "characterExtent" field gives +- characterExtent (post == pre),
+                     			while "characterExtent "characterExtent2" gives the preceeding and
+                     			following text. 
+                     			
+                     			Note: --context must come before any arguments which may depend on its value (e.g.
+                     regex)
+                     		
+                  </help>
+               </p>
+            </li>
+            <li>
+               <h2><tt>param</tt></h2><code>--param string [string]{1,*}</code><br><em>Methods: </em> parse: parseParam<br><br><em>  b: </em><code>-p</code><em>  c: </em><code></code><p>
+                  <h3>Description</h3>
+                  <help>
+                     		
+                     			PARAM
+                     			A simple method (primarily for demo and learning) that passes a number of strings
+                     			to the application. The strings are parsed by "parseParam()" which should be overridden
+                     			in the application. The application consists of subclasses of SimpleVisitor and
+                     SimpleSearcher
+                     			
+                     		
+                  </help>
+               </p>
+            </li>
+            <li>
+               <h2><tt>update</tt></h2><code>--update (overwrite|merge|none){1,1}</code><br><code>
+                  					Constraints:
+                  					 true</code><code>
+                  					Default:
+                  					 overwrite</code><em>Methods: </em> parse: parseUpdate<br><br><em>  b: </em><code>-u</code><em>  c: </em><code></code><p>
+                  <h3>Description</h3>
+                  <help>
+                     		UPDATE
+                     		If an existing results file exists choose the option for updating: 
+                     		"merge" is not yet supported and will throw an Exception
+                     		"none" will throw an exception
+                     		"overwrite" will overwrite 
+                     		
+                  </help>
+               </p>
+            </li>
+            <li>
+               <h2><tt>lookup</tt></h2><code>--lookup site [site...]{1,*}</code><br><code>
+                  					Constraints:
+                  					 true</code><em>Methods: </em> parse: parseLookup final: finalLookup<br><p>
+                  <h3>Description</h3>
+                  <help>
+                     		Looks up results in online sites. This can be overridden for specialist plugins.
+                     may be called at ResultElement creation or might be deferred to final.
+                     		
+                  </help>
+               </p>
+            </li>
+            <li>
+               <h2><tt>test</tt></h2><code>--test1 string [string ...]{1,*}</code><br><code>
+                  					Constraints:
+                  					 true</code><em>Methods: </em> parse: parseTest<br><br><em>  b: </em><code>-t1</code><em>  c: </em><code></code><p>
+                  <h3>Description</h3>
+                  <help>
+                     		
+                     		A dummy parameter to test conformance
+                     		
+                  </help>
+               </p>
+            </li>
+            <li>
+               <h2><tt>stopwords</tt></h2><code>--w.stopwords location [location...]{0,*}</code><br><em>Methods: </em> parse: parseStopwords<br><p>
+                  <h3>Description</h3>
+                  <help>
+                     		
+                     			STOPWORDS:
+                     			select sets of stopwords. Locations are given by resource locations.
+                     			
+                     			
+                     		
+                  </help>
+               </p>
+            </li>
+            <li>
+               <h2><tt>case</tt></h2><code>--w.case options{1,*}</code><br><em>Methods: </em> parse: parseCase<br><br><em>  b: </em><code></code><em>  c: </em><code>java.lang.String</code><p>
+                  <h3>Description</h3>
+                  <help>
+                     			CASE
+                     			respects or ignores case:
+                     			* default is to respect case
+                     			* ignore = ignore case (everything is internally lowercased)
+                     			* respectCamel = don't lowercase anything with midWord uppercase (URL, eBook,)
+                     			
+                     		
+                  </help>
+               </p>
+            </li>
+            <li>
+               <h2><tt>stemming</tt></h2><code>--w.stem {1,1}</code><br><code>
+                  					Default:
+                  					 false</code><em>Methods: </em> parse: parseStem<br><br><em>  b: </em><code></code><em>  c: </em><code>java.lang.Boolean</code><p>
+                  <h3>Description</h3>
+                  <help>
+                     		STEM
+                     		Stemming removes computable suffixes from words (e.g. walks, walked =&gt; walk)
+                     		Uses the Porter Stemming algorithm in Lucene.
+                     		
+                  </help>
+               </p>
+            </li>
+         </ul>
+      </div>
+   </body>
+</html>

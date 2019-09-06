@@ -1,0 +1,6 @@
+<compoundRegex title="neuro">
+  <regex fields="action_potential">action potential</regex>
+  <regex fields="epsc">EPSC</regex>
+  <regex fields="spike">spike</regex>
+  <regex fields="voltage">[Vv]oltage</regex>
+</compoundRegex>

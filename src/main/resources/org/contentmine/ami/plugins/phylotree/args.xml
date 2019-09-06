@@ -1,0 +1,123 @@
+<argList name="phylo" version="0.1.1">
+    <!-- major enhancements to tipe editing -->
+	<arg name="phylo" 
+		long="--ph.phylo"
+		args=""
+		countRange="{1,*}"
+		runMethod="runPhylo"
+		outputMethod="output"
+		>
+		<help>
+		</help>
+		<!-- 
+		<value name="trailing_tilde">(?:[^\s\p{Punct}]*)</value>
+		-->
+	</arg>	
+	
+	<arg name="speciesPattern" 
+		long="--ph.specpattern"
+		args=" name of file"
+		countRange="{1,*}"
+		parseMethod="parseSpeciesPattern"
+		>
+		<help>
+		<p>A regex which parses the tip labels into species, genus, ENA ID, etc.</p>
+		<p>Fragile, since everything to do text on pylotree diagrams is fragile. Simple filenames
+		will be located by getResource() under /org/contentmine/ami/plugins/phylotree.  </p>
+		</help>
+	</arg>	
+<!-- output options
+	XMLUtil.debug(nexml, new FileOutputStream(X15GOODTREE+root+".nexml.xml"), 1);
+	FileUtils.write(new File(X15GOODTREE+root+".nwk"), nexml.createNewick());
+	XMLUtil.debug(nexml.createSVG(), new FileOutputStream(X15GOODTREE+root+".svg"), 1);
+	HOCRReader hocrReader = phyloTreeArgProcessor.getOrCreateHOCRReader();
+	SVGSVG.wrapAndWriteAsSVG(hocrReader.getOrCreateSVG(), new File(X15GOODTREE+root+".words.svg"));
+ -->	
+	<arg name="nexml" 
+		long="--ph.nexml"
+		args=" [name of file]"
+		countRange="{0,1}"
+		parseMethod="parseNexmlFile"
+		>
+		<help>
+		<p>Outputs NEXML</p>
+		<p>If no filename is given (recommended) the default will be used</p>
+		</help>
+	</arg>	
+	
+	<arg name="newick" 
+		long="--ph.newick"
+		args=" [name of file]"
+		countRange="{0,1}"
+		parseMethod="parseNewickFile"
+		>
+		<help>
+		<p>Outputs Newick</p>
+		<p>If no filename is given (recommended) the default will be used</p>
+		</help>
+	</arg>	
+	
+	<arg name="svg" 
+		long="--ph.svg"
+		args=" [name of file]"
+		countRange="{0,1}"
+		parseMethod="parseSVGFile"
+		>
+		<help>
+		<p>Outputs final SVG</p>
+		<p>If no filename is given (recommended) the default will be used</p>
+		</help>
+	</arg>	
+	
+	<arg name="hocrhtml" 
+		long="--ph.hocr.html"
+		args=" [name of file]"
+		countRange="{0,1}"
+		parseMethod="parseHOCRHTMLFile"
+		>
+		<help>
+		<p>Outputs HTML from HOCR output</p>
+		<p>If no filename is given (recommended) the default will be used</p>
+		</help>
+	</arg>	
+	
+	<arg name="hocrsvg" 
+		long="--ph.hocr.svg"
+		args=" [name of file]"
+		countRange="{0,1}"
+		parseMethod="parseHOCRSVGFile"
+		>
+		<help>
+		<p>Outputs SVG from HOCR output</p>
+		<p>If no filename is given (recommended) the default will be used</p>
+		</help>
+	</arg>	
+	
+	<arg name="summarize" 
+		long="--ph.summarize"
+		args=" "
+		countRange="{0,0}"
+		finalMethod="summarize"
+		>
+		<help>
+		<p>Summarizes the output</p>
+		<p>Uses initLog as the record of what files to summarize</p>
+		</help>
+	</arg>	
+
+<!-- 	still working on this
+	<arg name="delete" 
+		long="- -ph.delete" // change to minusminus later
+		args=" filename" 
+		countRange="{1,1}"
+		parseMethod="delete"
+		runMethod="delete"
+		>
+		<help>
+		<p>Deletes species from tips</p>
+		<p>removes tips with species listed in filename. Does not remove from OTUs</p>
+		</help>
+	</arg>	
+	-->
+</argList>
+			

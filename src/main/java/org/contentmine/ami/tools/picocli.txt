@@ -1,0 +1,384 @@
+8. Argument Groups
+
+Picocli 4.0 introduces a new @ArgGroup annotation and its ArgGroupSpec programmatic equivalent.
+
+Argument Groups can be used to define:
+
+    mutually exclusive options
+
+    options that must co-occur (dependent options)
+
+    option sections in the usage help message
+
+    repeating composite arguments
+
+To create a group using the annotations API, annotate a field or method with @ArgGroup. The field’s type refers to the class containing the options and positional parameters in the group. (For annotated interface methods this would be the return type, for annotated setter methods in a concrete class this would be the setter’s parameter type.)
+
+Picocli will instantiate this class when needed to capture command line argument values in the @Option and @Parameters-annotated fields and methods of this class.
+8.1. Mutually Exclusive Options
+
+Annotate a field or method with @ArgGroup(exclusive = true) to create a group of mutually exclusive options and positional parameters. For example:
+
+@Command(name = "exclusivedemo")
+public class MutuallyExclusiveOptionsDemo {
+
+    @ArgGroup(exclusive = true, multiplicity = "1")
+    Exclusive exclusive;
+
+    static class Exclusive {
+        @Option(names = "-a", required = true) int a;
+        @Option(names = "-b", required = true) int b;
+        @Option(names = "-c", required = true) int c;
+    }
+}
+
+The above example defines a command with mutually exclusive options -a, -b and -c.
+
+The group itself has a multiplicity attribute that defines how many times the group may be specified within the command. The default is multiplicity = "0..1", meaning that by default a group may be omitted or specified once. In this example the group has multiplicity = "1", so the group must occur once: one of the exclusive options must occur on the command line.
+
+The synopsis of this command is:
+
+Usage: exclusivedemo (-a=<a> | -b=<b> | -c=<c>)
+
+Note that the options are defined as required = true; this means required within the group, not required within the command.
+
+Picocli will validate the arguments and throw a MutuallyExclusiveArgsException if multiple mutually exclusive arguments were specified. For example:
+
+MutuallyExclusiveOptionsDemo example = new MutuallyExclusiveOptionsDemo();
+CommandLine cmd = new CommandLine(example);
+
+try {
+    cmd.parseArgs("-a=1", "-b=2");
+} catch (MutuallyExclusiveArgsException ex) {
+    assert "Error: -a=<a>, -b=<b> are mutually exclusive (specify only one)"
+            .equals(ex.getMessage());
+}
+
+For the above group, only one of the options can be specified. Any other combination of options, or the absence of options, is invalid.
+8.2. Mutually Dependent Options
+
+Annotate a field or method with @ArgGroup(exclusive = false) to create a group of dependent options and positional parameters that must co-occur. For example:
+
+@Command(name = "co-occur")
+public class DependentOptionsDemo {
+
+    @ArgGroup(exclusive = false)
+    Dependent dependent;
+
+    static class Dependent {
+        @Option(names = "-a", required = true) int a;
+        @Option(names = "-b", required = true) int b;
+        @Option(names = "-c", required = true) int c;
+    }
+}
+
+The above example defines a command with dependent options -a, -b and -c that must co-occur.
+
+The group itself has a multiplicity attribute that defines how many times the group may be specified within the command. In this example the group uses the default multiplicity, multiplicity = "0..1", meaning that the group may be omitted or specified once.
+
+The synopsis of this command is:
+
+Usage: co-occur [-a=<a> -b=<b> -c=<c>]
+
+Note that the options are defined as required = true; this means required within the group, not required within the command.
+
+Picocli will validate the arguments and throw a MissingParameterException if not all dependent arguments were specified. For example:
+
+DependentOptionsDemo example = new DependentOptionsDemo();
+CommandLine cmd = new CommandLine(example);
+
+try {
+    cmd.parseArgs("-a=1", "-b=2");
+} catch (MissingParameterException ex) {
+    assert "Error: Missing required argument(s): -c=<c>".equals(ex.getMessage());
+}
+
+=======================================
+
+
+9. Executing Commands
+
+Parsing the command line arguments is the first step. A robust real-world application needs to handle a number of scenarios:
+
+    User input was invalid
+
+    User requested usage help (potentially for a subcommand)
+
+    User requested version help (potentially for a subcommand)
+
+    None of the above: we can run the business logic (potentially for a subcommand)
+
+    The business logic may throw an exception
+
+Picocli 4.0 introduces an execute method for handling all of the above scenarios in a single line of code. For example:
+
+new CommandLine(new MyApp()).execute(args);
+
+	A command is executable if its user object implements Runnable or Callable, or is a @Command-annotated Method. Examples follow below.
+	The execute method replaces the older run, call, invoke and parseWithHandlers methods.
+
+The DIY Command Execution section shows an example of the boilerplate code that can be omitted with the execute method.
+9.1. Exit Code
+
+Many command line applications return an exit code to signify success or failure. Zero often means success, a non-zero exit code is often used for errors, but other than that, meanings differ per application.
+
+The CommandLine.execute method introduced in picocli 4.0 returns an int, and applications can use this return value to call System.exit if desired. For example:
+
+public static void main(String... args) {
+  int exitCode = new CommandLine(new MyApp()).execute(args);
+  System.exit(exitCode);
+}
+
+	Older versions of picocli had some limited exit code support where picocli would call System.exit, but this is now deprecated.
+9.2. Generating an Exit Code
+
+@Command-annotated classes that implement Callable and @Command-annotated methods can simply return an int or Integer, and this value will be returned from CommandLine.execute. For example:
+
+@Command(name = "greet")
+class Greet implements Callable<Integer> {
+    public Integer call() {
+        System.out.println("hi");
+        return 1;
+    }
+
+    // define a "shout" subcommand with a @Command-annotated method
+    @Command
+    int shout() {
+        System.out.println("HI!");
+        return 2;
+    }
+}
+
+assert 1 == new CommandLine(new Greet()).execute();
+assert 2 == new CommandLine(new Greet()).execute("shout");
+
+Commands with a user object that implements Runnable can implement the IExitCodeGenerator interface to generate an exit code. For example:
+
+@Command(name = "wave")
+class Gesture implements Runnable, IExitCodeGenerator {
+
+    @Override public void run() {
+        System.out.println("wave");
+    }
+
+    @Override public int getExitCode() {
+        return 3;
+    }
+}
+
+assert 3 == new CommandLine(new Gesture()).execute();
+
+9.3. Exception Exit Codes
+
+By default, the execute method returns CommandLine.ExitCode.OK (0) on success, CommandLine.ExitCode.SOFTWARE (1) when an exception occurred in the Runnable, Callable or command method, and CommandLine.ExitCode.USAGE (2) for invalid input. (These are common values according to this StackOverflow answer). This can be customized with the @Command annotation. For example:
+
+@Command(exitCodeOnInvalidInput = 123,
+   exitCodeOnExecutionException = 456)
+
+Additionally, applications can configure a IExitCodeExceptionMapper to map a specific exception to an exit code:
+
+class MyMapper implements IExitCodeExceptionMapper {
+    @Override
+    public int getExitCode(Throwable t) {
+        if (t instance of FileNotFoundException) {
+            return 74;
+        }
+        return 1;
+    }
+}
+
+When the end user specified invalid input, the execute method prints an error message followed by the usage help message of the command, and returns an exit code. This can be customized by configuring a IParameterExceptionHandler.
+
+If the business logic of the command throws an exception, the execute method prints the stack trace of the exception and returns an exit code. This can be customized by configuring a IExecutionExceptionHandler.
+9.4. Usage Help Exit Code Section
+
+By default, the usage help message does not include exit code information. Applications that call System.exit need to configure the usage help message to show exit code details, either with the exitCodeListHeading and exitCodeList annotation attributes, or programmatically by calling UsageMessageSpec.exitCodeListHeading and UsageMessageSpec.exitCodeList.
+
+See Exit Code List for details.
+9.5. Execution Configuration
+
+The following methods can be used to configure the behaviour of the execute method:
+
+    get/setOut
+
+    get/setErr
+
+    get/setColorScheme
+
+    get/setExecutionStrategy
+
+    get/setParameterExceptionHandler
+
+    get/setExecutionExceptionHandler
+
+    get/setExitCodeExceptionMapper
+
+	The above methods are not applicable with (and ignored by) other entry points like parse, parseArgs, populateCommand, run, call, invoke, parseWithHandler and parseWithHandlers.
+9.6. Migration
+
+Older versions of picocli supported run, call, invoke and parseWithHandlers convenience methods that were similar to execute but had limited support for parser configuration and and limited support for exit codes. These methods are deprecated from picocli 4.0. The sections below show some common usages and how the same can be achieved with the execute API.
+9.6.1. Customizing Output Streams and ANSI settings
+Before:
+
+PrintStream out = // output stream for user-requested help
+PrintStream err = // output stream for error messages
+Ansi ansi = // to use ANSI colors and styles or not
+CommandLine.run(new MyRunnable(), out, err, ansi, args);
+
+After:
+
+PrintWriter out = // output stream for user-requested help
+PrintWriter err = // output stream for error messages
+Ansi ansi = // to use ANSI colors and styles or not
+
+CommandLine cmd = new CommandLine(new MyRunnable())
+        .setOut(out);
+        .setErr(err);
+        .setColorScheme(Help.defaultColorScheme(ansi));
+
+int exitCode = cmd.execute(args);
+
+9.6.2. Return Value from Callable or Method
+Before:
+
+class MyCallable implements Callable<MyResult> {
+    public MyResult call() { ... }
+}
+
+MyResult result = CommandLine.call(new MyCallable(), args);
+
+After:
+
+CommandLine cmd = new CommandLine(new MyCallable());
+int exitCode = cmd.execute(args);
+MyResult result = cmd.getExecutionResult();
+
+9.6.3. Invoking Command Methods
+Before:
+
+class MyCommand {
+    @Command
+    public MyResult doit(@Option(names = "-x") int x) { ... }
+}
+
+MyResult result = CommandLine.invoke("doit", MyCommand.class, args);
+
+After:
+
+Method doit = CommandLine.getCommandMethods(MyCommand.class, "doit").get(0);
+CommandLine cmd = new CommandLine(doit);
+int exitCode = cmd.execute(args);
+MyResult result = cmd.getExecutionResult();
+
+9.6.4. Executing Commands with Subcommands
+
+The IParseResultHandler2 interface has been deprecated in picocli 4.0 in favor of IExecutionStrategy. The existing built-in handlers RunLast, RunAll and RunFirst implement the IExecutionStrategy interface and can still be used:
+
+    the RunLast handler prints help if requested, and otherwise gets the last specified command or subcommand and tries to execute it as a Runnable, Callable or Method. This is the default execution strategy.
+
+    the RunFirst handler prints help if requested, and otherwise executes the top-level command as a Runnable, Callable or Method
+
+    the RunAll handler prints help if requested, and otherwise executes all commands and subcommands that the user specified on the command line as Runnable, Callable or Method tasks
+
+Before
+
+CommandLine cmd = new CommandLine(MyTopLevelCommand())
+        .addSubcommand("status",   new GitStatus())
+        .addSubcommand("commit",   new GitCommit())
+        .addSubcommand("add",      new GitAdd());
+List<Object> result = cmd.parseWithHandler(new RunAll(), args);
+
+After
+
+CommandLine cmd = new CommandLine(MyTopLevelCommand())
+        .addSubcommand("status",   new GitStatus())
+        .addSubcommand("commit",   new GitCommit())
+        .addSubcommand("add",      new GitAdd());
+
+// the default is RunLast, this can be customized:
+cmd.setExecutionStrategy(new RunAll());
+int exitCode = cmd.execute(args);
+
+The ParseResult can be used to get the return value from a Callable or Method subcommand:
+
+// getting return value from Callable or Method command
+Object topResult = cmd.getExecutionResult();
+
+// getting return value from Callable or Method subcommand
+ParseResult parseResult = cmd.getParseResult();
+if (parseResult.subcommand() != null) {
+    CommandLine sub = parseResult.subcommand().commandSpec().commandLine();
+    Object subResult = sub.getExecutionResult();
+}
+
+9.7. DIY Command Execution
+
+Alternatively, applications may want to use the parseArgs method directly and write their own "Do It Yourself" command execution logic.
+
+The example below covers the following common scenarios:
+
+    Handle invalid user input, and report any problems to the user (potentially suggesting alternative options and subcommands for simple typos if we want to get fancy).
+
+    Check if the user requested usage help, and print this help and abort processing if this was the case.
+
+    Check if the user requested version information, and print this information and abort processing if this was the case.
+
+    If none of the above, run the business logic of the application.
+
+    Handle any errors that occurred in the business logic.
+
+Callable<Object> callable = new MyCallable();
+CommandLine cmd = new CommandLine(callable);
+try {
+    ParseResult parseResult = cmd.parseArgs(args);
+
+    // Did user request usage help (--help)?
+    if (cmd.isUsageHelpRequested()) {
+        cmd.usage(cmd.getOut());
+        return cmd.getCommandSpec().exitCodeOnUsageHelp();
+
+    // Did user request version help (--version)?
+    } else if (cmd.isVersionHelpRequested()) {
+        cmd.printVersionHelp(cmd.getOut());
+        return cmd.getCommandSpec().exitCodeOnVersionHelp();
+    }
+    // invoke the business logic
+    Object result = callable.call();
+    cmd.setExecutionResult(result);
+    return cmd.getCommandSpec().exitCodeOnSuccess();
+
+// invalid user input: print error message and usage help
+} catch (ParameterException ex) {
+    cmd.getErr().println(ex.getMessage());
+    if (!UnmatchedArgumentException.printSuggestions(ex, cmd.getErr())) {
+        ex.getCommandLine().usage(cmd.getErr());
+    }
+    return cmd.getCommandSpec().exitCodeOnInvalidInput();
+
+// exception occurred in business logic
+} catch (Exception ex) {
+    ex.printStackTrace(cmd.getErr());
+    return cmd.getCommandSpec().exitCodeOnExecutionException();
+}
+
+The CommandLine.execute method is equivalent to the above, and additionally handles subcommands correctly.
+
+===================
+
+@Command(name = "main", subcommands = {
+    ChildCommand1.class,
+    ChildCommand2.class,
+    ChildCommand3.class })
+class MainCommand { }
+
+@Command(name = "cmd3", subcommands = {
+    GrandChild3Command1.class,
+    GrandChild3Command2.class,
+    GrandChild3Command3.class })
+class ChildCommand3 { }
+
+@Command(name = "cmd3sub3", subcommands = {
+    GreatGrandChild3Command3_1.class,
+    GreatGrandChild3Command3_2.class })
+class GrandChild3Command3 { }
+...

@@ -1,0 +1,87 @@
+<otus xmlns:cmphy="http://contentmine.org/phylotree" label="RootTaxaBlock">
+	<otu id="otu1" cmphy:genus="Bacillus" cmphy:species="subtilis"
+		cmphy:strain="168" cmphy:id="NC_00964" editRecord="[]">Bacillus subtilis
+		168 (NC_00964)</otu>
+	<otu id="otu2">Lactoba</otu>
+	<otu id="otu3">Desulfo</otu>
+	<otu id="otu4" cmphy:genus="Proprinogenum" cmphy:species="modestus"
+		cmphy:strain="DSM 2376T" cmphy:id="AJ307978" editRecord="[]">Proprinogenum
+		modestus DSM 2376T (AJ307978)</otu>
+	<otu id="otu5" cmphy:genus="Clostridium" cmphy:species="botulinum"
+		cmphy:strain="serotype e" cmphy:id="M94261" editRecord="[]">Clostridium
+		botulinum serotype e (M94261)</otu>
+	<otu id="otu6" cmphy:edit="[O__0, O__0]" cmphy:genus="Streptococcus"
+		cmphy:species="gordonii" cmphy:strain="CH1" cmphy:id="NC_009785"
+		editRecord="[O__0, O__0]">Streptococcus gordonii CH1 (NC_OO9785)</otu>
+	<otu id="otu7" cmphy:genus="Jonquetella" cmphy:species="anthropi"
+		cmphy:strain="E3_33" cmphy:id="EU840722" editRecord="[]">Jonquetella
+		anthropi E3_33 (EU840722)</otu>
+	<otu id="otu8" cmphy:edit="[O__0, O__0]" cmphy:genus="Pseudomonas"
+		cmphy:species="aeruginosa" cmphy:strain="PAO1" cmphy:id="NC_002516"
+		editRecord="[O__0, O__0]">Pseudomonas aeruginosa PAO1 (NC_OO2516)</otu>
+	<otu id="otu9" cmphy:edit="[O__0]" cmphy:genus="Thermotoga"
+		cmphy:species="maritime" cmphy:strain="MSBBT" cmphy:id="NC_000853"
+		editRecord="[O__0]">Thermotoga maritime MSBBT (NC_O00853)</otu>
+	<otu id="otu10" cmphy:edit="[O__0]" cmphy:genus="Synechococcus"
+		cmphy:species="elongatus" cmphy:strain="PCC 6301" cmphy:id="NC_006576"
+		editRecord="[O__0]">?Synechococcus elongatus? PCC 6301 (NC_0O6576)</otu>
+	<otu id="otu11" cmphy:edit="[O__0]" cmphy:genus="Mycobacterium"
+		cmphy:species="tuberculosis" cmphy:strain="H37Ra" cmphy:id="NC_009525"
+		editRecord="[O__0]">Mycobacterium tuberculosis H37Ra (NC_0O9525)</otu>
+	<otu id="otu12" cmphy:edit="[O__0]" cmphy:genus="Ochrobactrum"
+		cmphy:species="anthropi" cmphy:strain="ATCC 49188T" cmphy:id="NC_009667"
+		editRecord="[O__0]">Ochrobactrum anthropi ATCC 49188T (NC_0O9667)</otu>
+	<otu id="otu13" cmphy:genus="Fusobacterium" cmphy:species="nucleatum"
+		cmphy:strain="DSM 20482" cmphy:id="AJ307974" editRecord="[]">Fusobacterium
+		nucleatum DSM 20482 (AJ307974)</otu>
+	<otu id="otu14" cmphy:edit="[O__0]" cmphy:genus="Caulobacter"
+		cmphy:species="crescentus" cmphy:strain="CB15" cmphy:id="NC_002696"
+		editRecord="[O__0]">Caulobacter crescentus CB15 (NC_0O2696)</otu>
+	<otu id="otu15">Es</otu>
+	<otu id="otu16" cmphy:edit="[O__0]" cmphy:genus="Borrelia"
+		cmphy:species="burgdorferi" cmphy:strain="B31T" cmphy:id="NC_001218"
+		editRecord="[O__0]">Borrelia burgdorferi B31T (NC_O01218)</otu>
+	<otu id="otu17" cmphy:edit="[O__0, O__0]" cmphy:genus="Chlorobium"
+		cmphy:species="tepidum" cmphy:strain="TLST" cmphy:id="NC_002932"
+		editRecord="[O__0, O__0]">Chlorobium tepidum TLST (NC_OO2932)</otu>
+	<otu id="otu18" cmphy:genus="Finegoldia" cmphy:species="magna"
+		cmphy:strain="ATCC 29328" cmphy:id="NC_010376" editRecord="[]">Finegoldia
+		magna ATCC 29328 (NC_010376)</otu>
+	<otu id="otu19" cmphy:edit="[O__0]" cmphy:genus="Bordetella"
+		cmphy:species="pertussis" cmphy:strain="Tohama" cmphy:id="NC_002929"
+		editRecord="[O__0]">Bordetella pertussis Tohama (NC_0O2929)</otu>
+	<otu id="otu20" cmphy:genus="Neisseria" cmphy:species="gonorrhoeae"
+		cmphy:strain="FA1090" cmphy:id="NC_002946" editRecord="[]">Neisseria
+		gonorrhoeae FA1090 (NC_002946)</otu>
+	<otu id="otu21" cmphy:genus="Pyramidobacter" cmphy:species="piscolens"
+		cmphy:strain="W5455T" cmphy:id="EU379932" editRecord="[]">Pyramidobacter
+		piscolens W5455T (EU379932)</otu>
+	<otu id="otu22" cmphy:genus="Haemophilus" cmphy:species="inflenzae"
+		cmphy:strain="RdKW20" cmphy:id="U32697" editRecord="[]">Haemophilus
+		inflenzae RdKW20 (U32697)</otu>
+	<otu id="otu23" />
+	<otu id="otu24" cmphy:genus="Synergistes" cmphy:species="jonesii"
+		cmphy:strain="ATCC 49833T" cmphy:id="EU840723" editRecord="[]">Synergistes
+		jonesii ATCC 49833T (EU840723)</otu>
+	<otu id="otu25" cmphy:genus="Optiutus" cmphy:species="terrae"
+		cmphy:strain="PBQO-1T" cmphy:id="NC_010571" editRecord="[]">Optiutus terrae
+		PBQO-1T (NC_010571)</otu>
+	<otu id="otu26" cmphy:edit="[O__0]" cmphy:genus="Porphyromonas"
+		cmphy:species="gingivalis" cmphy:strain="W83" cmphy:id="AE015924"
+		editRecord="[O__0]">Porphyromonas gingivalis W83 (AEO15924)</otu>
+	<otu id="otu27" cmphy:edit="[/__l, O__0, O__0]" cmphy:genus="Bacteroides"
+		cmphy:species="fragilis" cmphy:strain="ATCC 252857" cmphy:id="NC_003228"
+		editRecord="[/__l, O__0, O__0]">Bacteroides fragi/is ATCC 252857 (NC_OO3228)</otu>
+	<otu id="otu28" cmphy:genus="Aquifex" cmphy:species="aeolicus"
+		cmphy:strain="VF5" cmphy:id="NC_000918" editRecord="[]">?Aquifex aeolicus?
+		VF5 (NC_000918)</otu>
+	<otu id="otu29" cmphy:edit="[O__0]" cmphy:genus="Bifidobacterium"
+		cmphy:species="longum" cmphy:strain="NCC2705" cmphy:id="NC_004307"
+		editRecord="[O__0]">Bifidobacterium longum NCC2705 (NC_0O4307)</otu>
+	<otu id="otu30" cmphy:genus="Rhodopirellula" cmphy:species="baltica"
+		cmphy:strain="SH 1T" cmphy:id="NC_005027" editRecord="[]">Rhodopirellula
+		baltica SH 1T (NC_005027)</otu>
+	<otu id="otu31" cmphy:edit="[O__0]" cmphy:genus="Mycoplasma"
+		cmphy:species="pneumoniae" cmphy:strain="M129" cmphy:id="NC_000912"
+		editRecord="[O__0]">Mycoplasma pneumoniae M129 (NC_00O912)</otu>
+</otus>

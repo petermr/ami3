@@ -1,0 +1,50 @@
+<argList name="species">
+
+	<arg name="species" 
+		long="--sp.species"
+		args=""
+		countRange="{0,0}"
+		initMethod="initSpecies"
+		runMethod="runExtractSpecies"
+		outputMethod="outputSpecies"
+		>
+		<help>
+    This runs the search - there are no argument values. 
+		</help>
+		<!-- NEVER search HTML with regexes, but here it's safe -->
+		<!--  Fooo bar or F. Bar ; assume at least 4 characters (misses some short ones Pan, Aa, etc.)-->
+		<value name="binomial">&lt;i>\s*(([A-Z][a-z]?\.|[A-Z][a-z]{3,})\s+[a-z]+)\s*&lt;/i></value> 
+		<!--  genus without following sp, etc. Assume at least Aaaa -->
+		<value name="genus">&lt;i>\s*([A-Z][a-z]{3,})\s*&lt;/i>(?=\s+[^s])</value> 
+		<!-- Foo sp , Foo spp or Foo species -->
+		<value name="genussp">&lt;i>\s*([A-Z][a-z]+)\s*&lt;/i>\s*spp?(?=\p{Punct}|\s)</value> 
+	</arg>	
+	
+	<arg name="type"
+	    long="--sp.type"
+	    args="type"
+	    class="java.lang.String"
+	    pattern="(binomial|genus|genussp)"
+	    parseMethod="parseTypes"
+	    countRange="{1,*}"
+	    >
+	    <help>
+	    The type of the species. 
+	    </help>
+	</arg>
+	
+	<arg name="abbreviations"
+	    long="--sp.abbrev"
+	    args="boolean"
+	    class="java.lang.Boolean"
+	    parseMethod="parseAbbreviations"
+	    countRange="{1,1}"
+	    >
+	    <help>
+	    if true, expand genera abbreviations.
+	    </help>
+	</arg>
+
+    
+</argList>
+			

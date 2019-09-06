@@ -1,0 +1,19 @@
+<taggerList name="plosone"> 
+ <tagger type="xml">
+  <tag name="abstract"     >//*[local-name()='abstract']</tag>
+  <!--  //sec[@id='s1']/title[.='Introduction'] -->
+  <tag name="background"   >//*[local-name()='sec' and *[local-name()='title' and .='Introduction']]</tag>
+  <tag name="results"      >//*[local-name()='sec' and *[local-name()='title' and .='Results']]</tag>
+  <tag name="discussion"   >//*[local-name()='sec' and *[local-name()='title' and .='Discussion']]</tag>
+  <tag name="additionfiles">//*[local-name()='sec' and *[local-name()='title' and .='Supporting Information']]</tag>
+  <tag name="methods"      >//*[local-name()='sec' and *[local-name()='title' and .='Materials and Methods']]</tag>
+  <tag name="acknowledge"  >//*[local-name()='ack']</tag>
+  <tag name="references"   >//*[local-name()='ref-list']</tag>
+<!--   <tag name="conclusion"   > .='Conclusion'</tag> -->
+  <tag name="competing"    >//*[local-name()='fn' and @fn-type='conflict']</tag>
+  <tag name="authorcontrib">//*[local-name()='fn' and @fn-type='con']</tag>
+  <tag name="figure"       >//*[local-name()='fig']/*[local-name()='caption']</tag>
+  
+<!--  <tag name="title">//*[local-name()='div' and @class='topmatter']/*[local-name()='h1']</tag>   -->
+ </tagger>
+</taggerList>

@@ -1,0 +1,31 @@
+<dictionary name="instrumentManufacturer" title="instrumentManufacturer">
+	<desc>Instrument Manufacturers from Wikipedia. PMR 2018</desc>
+    <entry id="" term="454 Life Sciences" name="454 Life Sciences" wikidata=""/>
+    <entry id="" term="ADInstruments" name="ADInstruments" wikidata=""/>
+    <entry id="" term="Agilent Technologies" name="Agilent Technologies" wikidata=""/>
+    <entry id="" term="Anton Paar" name="Anton Paar" wikidata=""/>
+    <entry id="" term="Reyrolle" name="Reyrolle" wikidata=""/>
+    <entry id="" term="Beckman Coulter" name="Beckman Coulter" wikidata=""/>
+    <entry id="" term="Bruker" name="Bruker" wikidata=""/>
+    <entry id="" term="Cambridge Scientific Instrument Company" name="Cambridge Scientific Instrument Company" wikidata=""/>
+    <entry id="" term="Horiba" name="Horiba" wikidata=""/>
+    <entry id="" term="JEOL" name="JEOL" wikidata=""/>
+    <entry id="" term="LECO Corporation" name="LECO Corporation" wikidata=""/>
+    <entry id="" term="Markes International" name="Markes International" wikidata=""/>
+    <entry id="" term="Malvern Instruments" name="Malvern Instruments" wikidata=""/>
+    <entry id="" term="McPherson Inc" name="McPherson Inc" wikidata=""/>
+    <entry id="" term="Mettler Toledo" name="Mettler Toledo" wikidata=""/>
+    <entry id="" term="MTS Systems Corporation" name="MTS Systems Corporation" wikidata=""/>
+    <entry id="" term="Novacam Technologies" name="Novacam Technologies" wikidata=""/>
+    <entry id="" term="Oxford Instruments" name="Oxford Instruments" wikidata=""/>
+    <entry id="" term="Pall Corp." name="Pall Corp." wikidata=""/>
+    <entry id="" term="PerkinElmer" name="PerkinElmer" wikidata=""/>
+    <entry id="" term="Polymer Char" name="Polymer Char" wikidata=""/>
+    <entry id="" term="Shimadzu Corp." name="Shimadzu Corp." wikidata=""/>
+    <entry id="" term="Techtron" name="Techtron" wikidata=""/>
+    <entry id="" term="Thermo Fisher Scientific" name="Thermo Fisher Scientific" wikidata=""/>
+    <entry id="" term="Waters Corporation" name="Waters Corporation"/>
+	<query>
+		"((454 Life Sciences) OR (ADInstruments) OR (Agilent Technologies) OR (Anton Paar) OR (Reyrolle) OR (Beckman Coulter) OR (Bruker) OR (Cambridge Scientific Instrument Company) OR (Horiba) OR (JEOL) OR (LECO Corporation) OR (Markes International) OR (Malvern Instruments) OR (McPherson Inc) OR (Mettler Toledo) OR (MTS Systems Corporation) OR (Novacam Technologies) OR (Oxford Instruments) OR (Pall Corp.) OR (PerkinElmer) OR (Polymer Char) OR (Shimadzu Corp.) OR (Techtron) OR (Thermo Fisher Scientific) OR (Waters Corporation))"		
+	</query>
+</dictionary>

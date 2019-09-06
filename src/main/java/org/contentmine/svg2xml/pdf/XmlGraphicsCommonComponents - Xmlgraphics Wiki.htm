@@ -1,0 +1,247 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="robots" content="index,nofollow">
+
+<title>XmlGraphicsCommonComponents - Xmlgraphics Wiki</title>
+<script type="text/javascript" src="/wiki/common/js/common.js"></script>
+
+<script type="text/javascript">
+<!--
+var search_hint = "Search";
+//-->
+</script>
+
+
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/wiki/modernized/css/common.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="/wiki/modernized/css/screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="/wiki/modernized/css/print.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="projection" href="/wiki/modernized/css/projection.css">
+
+<!-- css only for MS IE6/IE7 browsers -->
+<!--[if lt IE 8]>
+   <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/wiki/modernized/css/msie.css">
+<![endif]-->
+
+
+<link rel="alternate" title="Xmlgraphics Wiki: XmlGraphicsCommonComponents" href="/xmlgraphics/XmlGraphicsCommonComponents?diffs=1&amp;show_att=1&amp;action=rss_rc&amp;unique=0&amp;page=XmlGraphicsCommonComponents&amp;ddiffs=1" type="application/rss+xml">
+
+
+<link rel="Start" href="/xmlgraphics/FrontPage">
+<link rel="Alternate" title="Wiki Markup" href="/xmlgraphics/XmlGraphicsCommonComponents?action=raw">
+<link rel="Alternate" media="print" title="Print View" href="/xmlgraphics/XmlGraphicsCommonComponents?action=print">
+<link rel="Search" href="/xmlgraphics/FindPage">
+<link rel="Index" href="/xmlgraphics/TitleIndex">
+<link rel="Glossary" href="/xmlgraphics/WordIndex">
+<link rel="Help" href="/xmlgraphics/HelpOnFormatting">
+</head>
+
+<body  lang="en" dir="ltr">
+
+<div id="header">
+
+<form id="searchform" method="get" action="/xmlgraphics/XmlGraphicsCommonComponents">
+<div>
+<input type="hidden" name="action" value="fullsearch">
+<input type="hidden" name="context" value="180">
+<label for="searchinput">Search:</label>
+<input id="searchinput" type="text" name="value" value="" size="20"
+    onfocus="searchFocus(this)" onblur="searchBlur(this)"
+    onkeyup="searchChange(this)" onchange="searchChange(this)" alt="Search">
+<input id="titlesearch" name="titlesearch" type="submit"
+    value="Titles" alt="Search Titles">
+<input id="fullsearch" name="fullsearch" type="submit"
+    value="Text" alt="Search Full Text">
+</div>
+</form>
+<script type="text/javascript">
+<!--// Initialize search form
+var f = document.getElementById('searchform');
+f.getElementsByTagName('label')[0].style.display = 'none';
+var e = document.getElementById('searchinput');
+searchChange(e);
+searchBlur(e);
+//-->
+</script>
+
+<div id="logo"><a href="/xmlgraphics/FrontPage">Xmlgraphics Wiki</a></div>
+<div id="username"><a href="/xmlgraphics/XmlGraphicsCommonComponents?action=login" id="login" rel="nofollow">Login</a></div>
+<h1 id="locationline">
+
+<span id="pagelocation"><a class="backlink" href="/xmlgraphics/XmlGraphicsCommonComponents?action=fullsearch&amp;value=linkto%3A%22XmlGraphicsCommonComponents%22&amp;context=180" rel="nofollow" title="Click to do a full-text search for this title">XmlGraphicsCommonComponents</a></span>
+</h1>
+
+
+<ul id="navibar">
+<li class="wikilink"><a href="/xmlgraphics/FrontPage">FrontPage</a></li><li class="wikilink"><a href="/xmlgraphics/RecentChanges">RecentChanges</a></li><li class="wikilink"><a href="/xmlgraphics/FindPage">FindPage</a></li><li class="wikilink"><a href="/xmlgraphics/HelpContents">HelpContents</a></li><li class="current"><a href="/xmlgraphics/XmlGraphicsCommonComponents">XmlGraphics...nComponents</a></li>
+</ul>
+
+<div id="pageline"><hr style="display:none;"></div>
+
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="#" class="nbcomment" onClick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="/xmlgraphics/XmlGraphicsCommonComponents?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="/xmlgraphics/XmlGraphicsCommonComponents?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="/xmlgraphics/XmlGraphicsCommonComponents">
+<div>
+    <label>More Actions:</label>
+    <select name="action"
+        onchange="if ((this.selectedIndex != 0) &&
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="RenderAsDocbook">Render as Docbook</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="RenamePage" disabled class="disabled">Rename Page</option>
+<option value="CopyPage">Copy Page</option>
+<option value="DeletePage" disabled class="disabled">Delete Page</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="MyPages">My Pages</option>
+<option value="show" disabled class="disabled">Subscribe User</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">Remove Spam</option>
+<option value="show" disabled class="disabled">Revert to this revision</option>
+<option value="PackagePages">Package Pages</option>
+<option value="SyncPages">Sync Pages</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="Load">Load</option>
+<option value="Save">Save</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    <input type="submit" value="Do">
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+</div>
+
+<div id="page" lang="en" dir="ltr">
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><p class="line867">
+<h1 id="XML_Graphics_common_components">XML Graphics common components</h1>
+<span class="anchor" id="line-2"></span><span class="anchor" id="line-3"></span><p class="line867">
+<h2 id="The_problem">The problem</h2>
+<span class="anchor" id="line-4"></span><span class="anchor" id="line-5"></span><p class="line862">The FOP codebase contains two Batik transcoders for PDF and <a class="nonexistent" href="/xmlgraphics/PostScript">PostScript</a> which can be used independently of FOP and are distributed with Batik. The Batik team should be empowered to help maintain these transcoders, for example, after changes in Batik itself. Since Batik and FOP are both implementing an XML standard that creates graphical output there is some overlap between the two efforts. Last but not least, a Batik release didn't involve a FOP release until now which is something that must change. <span class="anchor" id="line-6"></span><span class="anchor" id="line-7"></span><p class="line867">
+<h2 id="The_idea">The idea</h2>
+<span class="anchor" id="line-8"></span><span class="anchor" id="line-9"></span><p class="line874">The idea now is to create a common area where the parts of common interest between the two subprojects are jointly developed and maintained. XML Graphics Commons will deliver a set of well-defined libraries of which some might provide some supporting tools (such as the TTFReader and the PFMReader, but which will eventually vanish when they are not needed anymore). Other potentially reusable software like utilities for build support, ant tasks, plugins for IDEs, test frameworks and data files might also qualify for finding a home in XML Graphics Commons. <span class="anchor" id="line-10"></span><span class="anchor" id="line-11"></span><span class="anchor" id="line-12"></span><p class="line867">
+<h3 id="Benefits">Benefits</h3>
+<span class="anchor" id="line-13"></span><span class="anchor" id="line-14"></span><ul><li>Clear dependencies <span class="anchor" id="line-15"></span></li><li>More structured codebase <span class="anchor" id="line-16"></span></li><li>Easier for newbies to contribute to certain parts (They are afraid now of the big blob of code) <span class="anchor" id="line-17"></span></li><li>New (and now easily visible) use cases for certain components (examples: JPS services to allow Java applications to print to PDF and PS through Printables, PDF lib can be used independetly of FOP, etc.) <span class="anchor" id="line-18"></span></li><li>Faciliating collaboration with "competing" projects like FOray and Folio, i.e. work together on undisputed parts of an XSL-FO processor. <span class="anchor" id="line-19"></span><span class="anchor" id="line-20"></span></li></ul><p class="line867">
+<h2 id="The_plan">The plan</h2>
+<span class="anchor" id="line-21"></span><span class="anchor" id="line-22"></span><p class="line867">
+<h3 id="Common_repository">Common repository</h3>
+<span class="anchor" id="line-23"></span><span class="anchor" id="line-24"></span><p class="line874">For the joint operations we need a common repository. Since we now have migrated both subprojects to Subversion we are in a good starting position for this. <span class="anchor" id="line-25"></span><span class="anchor" id="line-26"></span><p class="line867">
+<h3 id="Parts_affected_in_FOP">Parts affected in FOP</h3>
+<span class="anchor" id="line-27"></span><span class="anchor" id="line-28"></span><p class="line867"><strong>directly:</strong> <span class="anchor" id="line-29"></span><span class="anchor" id="line-30"></span><ul><li>PDF transcoder (org.apache.fop.svg) <span class="anchor" id="line-31"></span></li><li><p class="line891"><a class="nonexistent" href="/xmlgraphics/PostScript">PostScript</a> transcoder (org.apache.fop.render.ps) <span class="anchor" id="line-32"></span><span class="anchor" id="line-33"></span></li></ul><p class="line867"><strong>Dependencies:</strong> <span class="anchor" id="line-34"></span><span class="anchor" id="line-35"></span><ul><li>PDF library (org.apache.fop.pdf, by PDF transcoder) <span class="anchor" id="line-36"></span></li><li>PS generation code (org.apache.fop.ps, by PS transcoder) <span class="anchor" id="line-37"></span></li><li>font support (org.apache.fop.fonts, by PDF lib, PDF and PS transcoders) <span class="anchor" id="line-38"></span></li><li>IO helpers (org.apache.fop.util, by PDF and PS transcoders) [1] <span class="anchor" id="line-39"></span></li><li>Image adapters (org.apache.fop.image, by PDF and PS transcoders) <span class="anchor" id="line-40"></span></li><li>Basic FOP exceptions (org.apache.fop.apps) <span class="anchor" id="line-41"></span></li><li>RTF library (org.apache.fop.render.rtf.rtflib, based on user feedback, generally usable) <span class="anchor" id="line-42"></span><span class="anchor" id="line-43"></span></li></ul><p class="line867"><em>[1] Some of these classes could be candidates to go into Jakarta Commons IO.</em> <span class="anchor" id="line-44"></span><span class="anchor" id="line-45"></span><p class="line867"><strong>External dependencies:</strong> <span class="anchor" id="line-46"></span><span class="anchor" id="line-47"></span><ul><li>Avalon Framework (for the configuration subpackage only) [2] <span class="anchor" id="line-48"></span></li><li>Jakarta Commons Logging [3] <span class="anchor" id="line-49"></span></li><li>Jakarta Commons IO <span class="anchor" id="line-50"></span><span class="anchor" id="line-51"></span></li></ul><p class="line874">[2] There's enough opposition here that warrants a reevaluation. We'll try to do without this. <span class="anchor" id="line-52"></span><span class="anchor" id="line-53"></span><p class="line874">[3] During the move it should be tried to remove this dependency, i.e. no logging at all in the basic shared components. <span class="anchor" id="line-54"></span><span class="anchor" id="line-55"></span><p class="line867">
+<h3 id="Parts_affected_in_Batik">Parts affected in Batik</h3>
+<span class="anchor" id="line-56"></span><span class="anchor" id="line-57"></span><p class="line874">The transcoders depend on several packages inside Batik. Obviously, we can't create a clean hierarchy without dependencies on Batik, at least for the PDF and PS transcoders. But we should do that for the parts where this is possible (PDF lib, fonts, images etc.). <span class="anchor" id="line-58"></span><span class="anchor" id="line-59"></span><p class="line867"><strong>Possible components coming from Batik:</strong> <span class="anchor" id="line-60"></span><span class="anchor" id="line-61"></span><ul><li>ParsedURL (org.apache.batik.util, could be used by FOP, too. Benefits: RFC2397 data: URLs, automatic gzip decompression (SVGZ)) <span class="anchor" id="line-62"></span></li><li>image codecs (org.apache.batik.ext.awt.image.codec) <span class="anchor" id="line-63"></span></li><li>Base64 encoder and decoder (org.apache.batik.util) <span class="anchor" id="line-64"></span></li><li>SVGGraphics2D <span class="anchor" id="line-65"></span></li><li>... <span class="anchor" id="line-66"></span><span class="anchor" id="line-67"></span></li></ul><p class="line867">
+<h3 id="Organization_and_naming">Organization and naming</h3>
+<span class="anchor" id="line-68"></span><span class="anchor" id="line-69"></span><p class="line867">
+<h4 id="Naming_the_individual_parts">Naming the individual parts</h4>
+<span class="anchor" id="line-70"></span><span class="anchor" id="line-71"></span><p class="line867"><em>Apache XML Graphics Commons</em> <span class="anchor" id="line-72"></span><span class="anchor" id="line-73"></span><ul><li>xmlgraphics-commons-pdf (PDF library) <span class="anchor" id="line-74"></span></li><li><p class="line862">xmlgraphics-commons-ps (<a class="nonexistent" href="/xmlgraphics/PostScript">PostScript</a> generation and manipulation/post-processing code) <span class="anchor" id="line-75"></span></li><li>xmlgraphics-commons-fonts (Font library) <span class="anchor" id="line-76"></span></li><li>xmlgraphics-commons-codecs (Image codecs) <span class="anchor" id="line-77"></span></li><li>xmlgraphics-commons-image-adapter (Image library adapters and analyzers) <span class="anchor" id="line-78"></span></li><li>xmlgraphics-commons-utils (IO classes, Exception classes, ParsedURL) <span class="anchor" id="line-79"></span></li><li>xmlgraphics-commons-java2d (Graphics2D implementation for PDF and PS, base for the Transcoders) <span class="anchor" id="line-80"></span></li><li>xmlgraphics-commons-rtf (RTF library) <span class="anchor" id="line-81"></span><span class="anchor" id="line-82"></span></li></ul><p class="line867">
+<h4 id="Layout_in_SVN">Layout in SVN</h4>
+<span class="anchor" id="line-83"></span><span class="anchor" id="line-84"></span><p class="line867"><span class="anchor" id="line-85"></span><span class="anchor" id="line-86"></span><span class="anchor" id="line-87"></span><span class="anchor" id="line-88"></span><span class="anchor" id="line-89"></span><span class="anchor" id="line-90"></span><span class="anchor" id="line-91"></span><span class="anchor" id="line-92"></span><span class="anchor" id="line-93"></span><span class="anchor" id="line-94"></span><span class="anchor" id="line-95"></span><span class="anchor" id="line-96"></span><span class="anchor" id="line-97"></span><span class="anchor" id="line-98"></span><span class="anchor" id="line-99"></span><span class="anchor" id="line-100"></span><span class="anchor" id="line-101"></span><span class="anchor" id="line-102"></span><span class="anchor" id="line-103"></span><span class="anchor" id="line-104"></span><span class="anchor" id="line-105"></span><span class="anchor" id="line-106"></span><span class="anchor" id="line-107"></span><span class="anchor" id="line-108"></span><span class="anchor" id="line-109"></span><span class="anchor" id="line-110"></span><span class="anchor" id="line-111"></span><span class="anchor" id="line-112"></span><span class="anchor" id="line-113"></span><span class="anchor" id="line-114"></span><span class="anchor" id="line-115"></span><span class="anchor" id="line-116"></span><pre><span class="anchor" id="line-1"></span>http://svn.apache.org/repos/asf/xmlgraphics
+<span class="anchor" id="line-2"></span>  +-- commons
+<span class="anchor" id="line-3"></span>        +-- branches
+<span class="anchor" id="line-4"></span>        +-- tags
+<span class="anchor" id="line-5"></span>        +-- trunk
+<span class="anchor" id="line-6"></span>             +-- src
+<span class="anchor" id="line-7"></span>                  +-- java (all shared components under this directory)
+<span class="anchor" id="line-8"></span>                       +-- org.apache.xmlgraphics
+<span class="anchor" id="line-9"></span>                            +-- codecs
+<span class="anchor" id="line-10"></span>                            +-- fonts
+<span class="anchor" id="line-11"></span>                            +-- image-adapters
+<span class="anchor" id="line-12"></span>                            +-- java2d (Graphics2D implementations, gradient/(pattern) extensions)
+<span class="anchor" id="line-13"></span>                                 +-- pdf (PDF implementation)
+<span class="anchor" id="line-14"></span>                                 +-- ps (PS implementation)
+<span class="anchor" id="line-15"></span>                                 +-- svg (SVG implementation)
+<span class="anchor" id="line-16"></span>                            +-- pdf
+<span class="anchor" id="line-17"></span>                            +-- ps
+<span class="anchor" id="line-18"></span>                            +-- rtf
+<span class="anchor" id="line-19"></span>                            +-- utils
+<span class="anchor" id="line-20"></span>                  +-- java-1.4 (all JDK 1.4 dependant code under this directory)
+<span class="anchor" id="line-21"></span>  +-- batik
+<span class="anchor" id="line-22"></span>        +-- branches
+<span class="anchor" id="line-23"></span>        +-- tags
+<span class="anchor" id="line-24"></span>        +-- trunk
+<span class="anchor" id="line-25"></span>  +-- fop
+<span class="anchor" id="line-26"></span>        +-- branches
+<span class="anchor" id="line-27"></span>        +-- tags
+<span class="anchor" id="line-28"></span>        +-- trunk
+<span class="anchor" id="line-29"></span>  +-- site</pre><span class="anchor" id="line-117"></span><span class="anchor" id="line-118"></span><p class="line867"><strong>Notes:</strong> <span class="anchor" id="line-119"></span><span class="anchor" id="line-120"></span><ul><li>In this scenario, the PDF and PS transcoders are transferred to the Batik subproject under their repository. <span class="anchor" id="line-121"></span></li><li>Basic Graphics2D implementations and supporting code (gradient/(pattern) classes) go into Commons (Batik only gets the Transcoders) <span class="anchor" id="line-122"></span></li><li>this layout has the effect that we have three major products (batik, fop and xmlgraphics-commons), where axgc may have additional (sub-)products for each individual components (if necessary). <span class="anchor" id="line-123"></span></li><li>axgc builds some components individually (xmlgraphics-commons-pdf.jar, xmlgraphics-commons-utils.jar etc.), as well as a collective (xmlgraphics-commons.jar). A release is only done as a collective for the whole of XML Graphics Commons. <span class="anchor" id="line-124"></span></li><li>All releases are always coordinated on the project level (i.e. on level Apache XML Graphics). <span class="anchor" id="line-125"></span><span class="anchor" id="line-126"></span></li></ul><p class="line867">
+<h3 id="Notes_on_additional_use_cases_for_the_separated_components">Notes on additional use cases for the separated components</h3>
+<span class="anchor" id="line-127"></span><span class="anchor" id="line-128"></span><ul><li><p class="line862">PDFDocumentGraphics2D and PSDocumentGraphics2D can be used to create streamed print services for JPS which would allow arbitrary Java applications to create PDF and <a class="nonexistent" href="/xmlgraphics/PostScript">PostScript</a> by simply printing to JPS. <span class="anchor" id="line-129"></span></li><li>The PDF library could be used to create PDF documents from scratch (iText is probably better suited for that). <span class="anchor" id="line-130"></span></li><li>The PDF library could be extended to modify existing documents (same comment as above) <span class="anchor" id="line-131"></span></li><li><p class="line862">The PS library code could be extended to support <a class="nonexistent" href="/xmlgraphics/PostScript">PostScript</a> post-processing. <span class="anchor" id="line-132"></span></li><li>The RTF library is reported to be used separately. There is desire for a separate JAR with only the RTF generation code. <span class="anchor" id="line-133"></span><span class="anchor" id="line-134"></span></li></ul><p class="line867">
+<h3 id="work_items">work items</h3>
+<span class="anchor" id="line-135"></span><span class="anchor" id="line-136"></span><p class="line867"><em>closed</em> <span class="anchor" id="line-137"></span><span class="anchor" id="line-138"></span><ul><li>Move Batik and FOP to Subversion. <span class="anchor" id="line-139"></span></li><li>Complete and discuss this plan. <span class="anchor" id="line-140"></span><span class="anchor" id="line-141"></span></li></ul><p class="line867"><em>open</em> <span class="anchor" id="line-142"></span><span class="anchor" id="line-143"></span><ul><li>Vote on the plan. <span class="anchor" id="line-144"></span></li><li>Clean up dependencies. <span class="anchor" id="line-145"></span></li><li>Create basic exception classes so the dependency on org.apache.fop.apps disappears. <span class="anchor" id="line-146"></span></li><li>Create common repository. <span class="anchor" id="line-147"></span></li><li>Move affected parts (see above) over to their new location. <span class="anchor" id="line-148"></span></li><li>Create build system for all components. (TBD: one for all or one for each?) <span class="anchor" id="line-149"></span></li><li>Documentation for the new parts <span class="anchor" id="line-150"></span></li></ul><span class="anchor" id="bottom"></span></div><p id="pageinfo" class="info" lang="en" dir="ltr">XmlGraphicsCommonComponents  (last edited 2012-03-09 10:06:42 by <span title="VincentHennebert @ spc3-bagu2-0-0-cust872.bagu.broadband.ntl.com[81.104.63.105]"><a class="nonexistent" href="/xmlgraphics/VincentHennebert" title="VincentHennebert @ spc3-bagu2-0-0-cust872.bagu.broadband.ntl.com[81.104.63.105]">VincentHennebert</a></span>)</p>
+
+<div id="pagebottom"></div>
+</div>
+
+
+<div id="footer">
+<ul class="editbar"><li><span class="disabled">Immutable Page</span></li><li class="toggleCommentsButton" style="display:none;"><a href="#" class="nbcomment" onClick="toggleComments();return false;">Comments</a></li><li><a class="nbinfo" href="/xmlgraphics/XmlGraphicsCommonComponents?action=info" rel="nofollow">Info</a></li><li><a class="nbattachments" href="/xmlgraphics/XmlGraphicsCommonComponents?action=AttachFile" rel="nofollow">Attachments</a></li><li>
+<form class="actionsmenu" method="GET" action="/xmlgraphics/XmlGraphicsCommonComponents">
+<div>
+    <label>More Actions:</label>
+    <select name="action"
+        onchange="if ((this.selectedIndex != 0) &&
+                      (this.options[this.selectedIndex].disabled == false)) {
+                this.form.submit();
+            }
+            this.selectedIndex = 0;">
+        <option value="raw">Raw Text</option>
+<option value="print">Print View</option>
+<option value="RenderAsDocbook">Render as Docbook</option>
+<option value="refresh">Delete Cache</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="SpellCheck">Check Spelling</option>
+<option value="LikePages">Like Pages</option>
+<option value="LocalSiteMap">Local Site Map</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="RenamePage" disabled class="disabled">Rename Page</option>
+<option value="CopyPage">Copy Page</option>
+<option value="DeletePage" disabled class="disabled">Delete Page</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="MyPages">My Pages</option>
+<option value="show" disabled class="disabled">Subscribe User</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="show" disabled class="disabled">Remove Spam</option>
+<option value="show" disabled class="disabled">Revert to this revision</option>
+<option value="PackagePages">Package Pages</option>
+<option value="SyncPages">Sync Pages</option>
+<option value="show" disabled class="disabled">------------------------</option>
+<option value="Load">Load</option>
+<option value="Save">Save</option>
+<option value="SlideShow">SlideShow</option>
+    </select>
+    <input type="submit" value="Do">
+    
+</div>
+<script type="text/javascript">
+<!--// Init menu
+actionsMenuInit('More Actions:');
+//-->
+</script>
+</form>
+</li></ul>
+
+<ul id="credits">
+<li><a href="http://moinmo.in/" title="This site uses the MoinMoin Wiki software.">MoinMoin Powered</a></li><li><a href="http://moinmo.in/Python" title="MoinMoin is written in Python.">Python Powered</a></li><li><a href="http://moinmo.in/GPL" title="MoinMoin is GPL licensed.">GPL licensed</a></li><li><a href="http://validator.w3.org/check?uri=referer" title="Click here to validate this page.">Valid HTML 4.01</a></li>
+</ul>
+
+
+</div>
+</body>
+</html>
+

@@ -1,0 +1,37 @@
+<taggerList name="bmc">
+	<tagger type="xml"> 
+		<!--  abs/sec[sec] -->
+		<tag name="abstract"     >//*[local-name()='abs']/*[local-name()='sec' and *[local-name()='sec']]</tag>
+		<!-- bdy/sec[st .='Background'] -->
+		<tag name="background"   >//*[local-name()='bdy']/*[local-name()='sec' and *[local-name()='st' and .='Background']]</tag>
+		<!-- 
+		<tag name="results"      >//*[local-name()='div']/*[local-name()='section' and *[local-name()='h3' and .='Results']]/*[local-name()='div']</tag>
+		<tag name="discussion"   >//*[local-name()='div']/*[local-name()='section' and *[local-name()='h3' and .='Discussion']]/*[local-name()='div']</tag>
+		<tag name="conclusion"   >//*[local-name()='div']/*[local-name()='section' and *[local-name()='h3' and .='Conclusion']]/*[local-name()='div']</tag>
+		<tag name="methods"      >//*[local-name()='div']/*[local-name()='section' and *[local-name()='h3' and .='Methods']]/*[local-name()='div']</tag>
+		<tag name="competing"    >//*[local-name()='div']/*[local-name()='section' and *[local-name()='h3' and .='Competing interests']]/*[local-name()='div']</tag>
+		<tag name="authorcontrib">//*[local-name()='div']/*[local-name()='section' and *[local-name()='h3' and contains(.,'Authors') and	contains(.,'contributions')]]/*[local-name()='div']</tag>
+		<tag name="additionfiles">//*[local-name()='div']/*[local-name()='section' and *[local-name()='h3' and .='Additional files']]/*[local-name()='div']</tag>
+		<tag name="acknowledge"  >//*[local-name()='div']/*[local-name()='section' and *[local-name()='h3' and .='Acknowledgements']]/*[local-name()='div']</tag>
+		<tag name="references"   >//*[local-name()='div']/*[local-name()='section' and *[local-name()='h3' and .='References']]/*[local-name()='div']</tag>
+		-->  
+		<tag name="title">//*[local-name()='div' and @class='topmatter']/*[local-name()='h1']</tag>   
+		<tag name="figure">//*[local-name()='fig']</tag>   
+	</tagger>
+	<tagger type="html"> 
+		<!--  HTML //div/section/h3[.='Abstract']/div -->
+		<tag name="abstract"     >//*[local-name()='div']/*[local-name()='section' and *[local-name()='h3' and .='Abstract']]/*[local-name()='div']</tag>
+		<tag name="background"   >//*[local-name()='div']/*[local-name()='section' and *[local-name()='h3' and .='Background']]/*[local-name()='div']</tag>
+		<tag name="results"      >//*[local-name()='div']/*[local-name()='section' and *[local-name()='h3' and .='Results']]/*[local-name()='div']</tag>
+		<tag name="discussion"   >//*[local-name()='div']/*[local-name()='section' and *[local-name()='h3' and .='Discussion']]/*[local-name()='div']</tag>
+		<tag name="conclusion"   >//*[local-name()='div']/*[local-name()='section' and *[local-name()='h3' and .='Conclusion']]/*[local-name()='div']</tag>
+		<tag name="methods"      >//*[local-name()='div']/*[local-name()='section' and *[local-name()='h3' and .='Methods']]/*[local-name()='div']</tag>
+		<tag name="competing"    >//*[local-name()='div']/*[local-name()='section' and *[local-name()='h3' and .='Competing interests']]/*[local-name()='div']</tag>
+		<tag name="authorcontrib">//*[local-name()='div']/*[local-name()='section' and *[local-name()='h3' and contains(.,'Authors') and	contains(.,'contributions')]]/*[local-name()='div']</tag>
+		<tag name="additionfiles">//*[local-name()='div']/*[local-name()='section' and *[local-name()='h3' and .='Additional files']]/*[local-name()='div']</tag>
+		<tag name="acknowledge"  >//*[local-name()='div']/*[local-name()='section' and *[local-name()='h3' and .='Acknowledgements']]/*[local-name()='div']</tag>
+		<tag name="references"   >//*[local-name()='div']/*[local-name()='section' and *[local-name()='h3' and .='References']]/*[local-name()='div']</tag>
+		
+		<tag name="title">//*[local-name()='div' and @class='topmatter']/*[local-name()='h1']</tag>   
+	</tagger>
+</taggerList>

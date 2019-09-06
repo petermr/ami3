@@ -1,0 +1,63 @@
+<argList fields="identifier">
+	<arg name="identifier" 
+		long="--id.identifier"
+		args="identifiername...[]"
+		countRange="{0,0}"
+		runMethod="runExtractIdentifiers"
+		outputMethod="outputIdentifiers"
+		>
+		<help>
+		This argument (without arguments) is mandatory. We shall remove this requirement at a later date.
+		</help>
+		<!-- these should be transferred to the "type" option -->
+		<value fields="bio.ena" url="http://www.ncbi.nlm.nih.gov/Sequin/acc.html" 
+		    lookup="http://www.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&amp;term=${match}GENBANK_ID" >[A-Z]{2}\d{6}|[A-Z]{1}\d{5}</value>
+		<value fields="bio.enaprot" url="http://www.ncbi.nlm.nih.gov/Sequin/acc.html">[A-Z]{3}\d{5}</value>
+		<value fields="bio.pdb">\w[A-Z]{3}\d</value>
+		<value fields="meta.orcid" url="http://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier">http://orcid\.org/(\d{4}-){3}\d{3}[\dX]</value>
+		<value fields="clin.nct">NCT\d{8}</value>
+		<value fields="clin.isrctn">ISRCTN.{0,20}\d{8}</value>
+		<!-- example AB_1004986 -->
+		<value fields="rrid.ab" lookup="https://scicrunch.org/resources/Antibodies/search?q=${match}">RRID:(AB_\d+)</value>
+	</arg>	
+	
+    <arg name="type"
+	    long="--id.type"
+	    args="type"
+	    class="java.lang.String"
+	    parseMethod="parseTypes"
+	    countRange="{1,*}"
+	    >
+	    <help>
+	    The types/codes of the identifier to use at runtime. This argument should come AFTER id.regexfile 
+	    (sorry, we'll correct this later)
+	    </help>
+	</arg>
+    
+   	<arg name="regex" 
+		long="--id.regex"
+		args="location [location ...]"
+		countRange="{1,*}"
+		parseMethod="parseRegex"
+		>
+	    <help>
+	    Mandatory argument.
+	    Definition of the identifiers. The file should be the same format as for regex definitions.
+	    Uses heuristic to locate inputStream (classpth, then URL, then local filename)
+	    This argument should come BEFORE id.types (sorry, we'll correct this later)
+	    </help>
+	    <!-- these should be here at a later date 
+	    <compoundRegex title="consort0">
+			<regex fields="bio.ena" url="http://www.ncbi.nlm.nih.gov/Sequin/acc.html" 
+			    lookup="http://www.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&amp;term=${match}GENBANK_ID" >[A-Z]{2}\d{6}|[A-Z]{1}\d{5}</regex>
+			<regex fields="bio.enaprot" url="http://www.ncbi.nlm.nih.gov/Sequin/acc.html">[A-Z]{3}\d{5}</regex>
+			<regex fields="bio.pdb">\w[A-Z]{3}\d</regex>
+			<regex fields="meta.orcid" url="http://support.orcid.org/knowledgebase/articles/116780-structure-of-the-orcid-identifier">http://orcid\.org/(\d{4}-){3}\d{3}[\dX]</regex>
+			<regex fields="clin.nct">NCT\d{8}</regex>
+			<regex fields="clin.isrctn">ISRCTN.{0,20}\d{8}</regex>
+		</compoundRegex>
+		-->
+	</arg>
+    
+</argList>
+			

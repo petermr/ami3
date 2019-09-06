@@ -1,0 +1,1050 @@
+package org.contentmine.norma;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FilenameFilter;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.Charset;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.Transformer;
+
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.io.IOUtils;
+import org.apache.commons.io.filefilter.IOFileFilter;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
+import org.contentmine.cproject.files.CTree;
+import org.contentmine.cproject.files.ResourceLocation;
+import org.contentmine.cproject.util.RectangularTable;
+import org.contentmine.cproject.util.Utils;
+import org.contentmine.eucl.euclid.util.CMFileUtil;
+import org.contentmine.eucl.xml.XMLUtil;
+import org.contentmine.graphics.html.HtmlElement;
+import org.contentmine.graphics.html.HtmlFactory;
+import org.contentmine.graphics.html.HtmlTable;
+import org.contentmine.graphics.svg.SVGElement;
+import org.contentmine.graphics.svg.SVGSVG;
+import org.contentmine.graphics.svg.SVGText;
+import org.contentmine.graphics.svg.normalize.TextDecorator;
+import org.contentmine.graphics.svg.plot.XYPlotBox;
+import org.contentmine.norma.image.ocr.HOCRReaderOLD;
+import org.contentmine.norma.image.ocr.NamedImage;
+import org.contentmine.norma.input.pdf.PDF2ImagesConverter;
+import org.contentmine.norma.input.pdf.PDF2TEIConverter;
+import org.contentmine.norma.input.pdf.PDF2TXTConverter;
+import org.contentmine.norma.input.tex.TEX2HTMLConverter;
+import org.contentmine.norma.svg.SVG2SVGConverter;
+import org.contentmine.norma.table.CSVTransformer;
+import org.contentmine.norma.table.SVGTable2HTMLConverter;
+import org.contentmine.norma.tagger.SectionTaggerX;
+import org.contentmine.norma.xsl.TransformerWrapper;
+import org.contentmine.svg2xml.pdf.PDFAnalyzer;
+import org.contentmine.svg2xml.pdf.PDFAnalyzerIO;
+
+import nu.xom.Builder;
+import nu.xom.Element;
+
+public class NormaTransformer {
+
+	/** manages types of transform in Norma.
+	 * 
+	 * @author pm286
+	 *
+	 */
+	public enum Type {
+		HTMLUNIT("htmlunit", null, CTree.FULLTEXT_HTML, null, CTree.FULLTEXT_XHTML),
+		JSOUP("jsoup", null, CTree.FULLTEXT_HTML, null, CTree.FULLTEXT_XHTML),
+		TIDY("tidy", null, CTree.FULLTEXT_HTML, null, CTree.FULLTEXT_XHTML),
+		// HTMLCleaner
+//        type             type         indir      informat   outdir     outformat
+		DECOMPACTSVG(  "decompactsvg",  "null",   CTree.SVG,  null,    CTree.SVG+"."+"compact"+".svg"),
+		COMPACTSVG(    "compactsvg",    "null",   CTree.SVG,  null,    CTree.SVG/*+"."+"compact"+".svg"*/),
+		HOCR2SVG(      "hocr2svg",      "image/", CTree.HOCR,  "svg/",   CTree.HOCR_SVG),
+		CSV2HTML(      "csv2html",      "table/", CTree.CSV,  "table/", CTree.FULLTEXT_HTML),
+		CSV2TSV(       "csv2tsv",       "table/", CTree.CSV,  "table/", CTree.TSV),
+		PDF2HTML(      "pdf2html",      null,     CTree.FULLTEXT_PDF,  null,     CTree.FULLTEXT_HTML),
+		PDF2IMAGES(    "pdf2images",    null,     CTree.FULLTEXT_PDF,  "image/", CTree.FULLTEXT_PDF_PNG),
+		PDF2SVG(       "pdf2svg",       null,     CTree.FULLTEXT_PDF,  "svg/",   CTree.FULLTEXT_PDF_SVG),
+		PDF2TEI(       "pdf2tei",       null,     CTree.FULLTEXT_PDF,  null,     CTree.FULLTEXT_TEI_XML),
+		PDF2TXT(       "pdf2txt",       null,     CTree.FULLTEXT_PDF,  null,     CTree.FULLTEXT_PDF_TXT),
+		SCATTER2CSV (  "scatter2csv",   null,     CTree.SVG,           null,     CTree.SVG+"."+"csv"),
+		SVGTABLE2CSV ( "svgtable2csv",  null,     CTree.SVG,           null,     CTree.SVG+"."+"csv"),
+		SVGTABLE2HTML( "svgtable2html", null,     CTree.SVG,           null,     CTree.SVG+"."+"html"),
+		SVG2SVG(       "svg2svg",       null,     CTree.SVG,           null,     CTree.SVG+"."+"svg"),
+		TEI2HTML(      "tei2html",      null,     CTree.FULLTEXT_TEI_XML,  null, CTree.FULLTEXT_HTML),
+		TEI2TXT(       "tei2txt",       null,     CTree.FULLTEXT_TEI_XML,  null, CTree.FULLTEXT_TXT),
+		TEX2HTML(      "tex2html",      null,     CTree.FULLTEXT_TEX,  null,     CTree.FULLTEXT_HTML),
+		TXT2HTML(      "txt2html",      null,     CTree.FULLTEXT_TXT,  null,     CTree.FULLTEXT_HTML),
+		// XML input // all requite stylesheets
+		XML2HTML(      "xml2html",      null,     CTree.FULLTEXT_XML,  null,     CTree.SCHOLARLY_HTML),
+		XML2TXT(       "xml2txt",       null,     CTree.FULLTEXT_XML,  null,     CTree.FULLTEXT_TXT),
+//		XMLSECTION(    "xmlsection",    null,     CTree.FULLTEXT_XML,  null,     CTree.FULLTEXT_XML),
+		XML2XML(       "xml2xml",       null,     CTree.FULLTEXT_XML,  null,     CTree.FULLTEXT_XML),
+		;
+	
+		public String inputSuffix;
+		public String outputSuffix;
+		public String transform;
+		public String inputDirName;
+		public String outputDirName;
+	
+		private Type(String transform, String inputDir, String inputSuffix, String outputDir, String outputSuffix) {
+			this.inputDirName = inputDir;
+			this.outputDirName = outputDir;
+			this.transform = transform;
+			this.inputSuffix = inputSuffix;
+			this.outputSuffix = outputSuffix;
+		}
+	
+		public boolean matches(String transformTypeString) {
+			return transform.equalsIgnoreCase(transformTypeString);
+		}
+	
+		public static boolean contains(String token) {
+			for (Type type : values()) {
+				if (type.matches(token)) {
+					return true;
+				}
+			}
+			return false;
+		}
+		
+		public File getDefaultInputFile(CTree cTree) {
+			return new File(cTree.getDirectory(), inputSuffix);
+		}
+		
+		public File getDefaultOutputFile(CTree cTree) {
+			File file =  new File(cTree.getDirectory(), outputSuffix);
+			return file;
+		}
+		
+		public static Type createTransformType(String transformTypeString) {
+			for (Type type : values()) {
+				LOG.trace("type: "+type);
+				if (type.matches(transformTypeString)) {
+					return type;
+				}
+			}
+			if (transformTypeString.endsWith(CTree.DOT+CTree.XSL)) {
+				LOG.debug("transform type: "+Type.XML2HTML);
+				return Type.XML2HTML;
+			}
+			return null;
+		}
+	}
+
+	private static final Logger LOG = Logger.getLogger(NormaTransformer.class);
+	static {
+		LOG.setLevel(Level.DEBUG);
+	}
+	private static final String STYLESHEET_BY_NAME_XML = NAConstants.PUBSTYLE_RESOURCE+ "/" + "stylesheetByName.xml";
+	public static final String NLM2HTML = "nlm2html";
+	private static final String NAME = "name";
+
+	private NormaArgProcessor normaArgProcessor;
+	private Map<org.w3c.dom.Document, TransformerWrapper> transformerWrapperByStylesheetMap;
+
+	String outputTxt;
+	List<NamedImage> serialImageList;
+	Element xmlElement;
+	HtmlElement htmlElement;
+	SVGElement svgElement;
+	SVGElement svgAnnotElement;
+	File teiFile;
+	String tsvString;
+	
+	private CTree currentCTree;
+	private Map<String, String> stylesheetByNameMap;
+	
+	private File inputFile;
+	private String inputTxt; // text input // maybe move
+	private File outputFile;	
+	private Type type;
+	private File outputDir;
+	private File inputDir;
+	private String transformTypeString;
+	private org.w3c.dom.Document xslDocument;
+	private IOFileFilter ioFileFilter;
+	private RectangularTable rectangularTable;
+	private String annotationFilename;
+
+	public NormaTransformer(NormaArgProcessor argProcessor) {
+		this.normaArgProcessor = argProcessor;
+		currentCTree = normaArgProcessor.getCurrentCMTree();
+		LOG.trace("current CTREE "+currentCTree);
+	}
+
+	public void clearVariables() {
+		inputTxt = null;
+		inputFile = null;
+		inputDir = null;
+		outputTxt = null;
+		outputFile = null;
+		outputDir = null;
+		htmlElement = null;
+		svgElement = null;
+		transformTypeString = null;
+		xslDocument = null;
+	}
+
+	/** transforms currentCTree.
+	 *
+	 * output is either:
+	 *   outputTxt (from PDF2TXT)
+	 *   htmlElement (from PDF/TXT2HTML)
+	 *   xmlStringList (from XSL transformation(s))
+	 *
+	 * @param option
+	 */
+	void runTransform(String transformTypeString) {
+		this.transformTypeString = transformTypeString;
+		type = Type.createTransformType(transformTypeString);
+		if (type == null) {
+			LOG.trace("trying : "+transformTypeString+" as stylesheet symbol");
+			xslDocument = createW3CStylesheetDocument(transformTypeString);
+			if (xslDocument != null) {
+				type = Type.XML2HTML;
+				LOG.trace("FOUND xsl");
+			}
+		}
+		if (type == null) {
+			LOG.debug("Cannot find transform: "+transformTypeString+"; allowed values: "+Arrays.asList(Type.values()));
+			return;
+		}
+		try {
+			parseOptionsAndCheckInputOutput();
+		} catch (Exception e) {
+			LOG.warn("Cannot create input/output "+e);
+			e.printStackTrace();
+			return;
+		}
+		if (inputDir != null) {
+			transformDirectory();
+		} else if (normaArgProcessor.getIOFileFilter() != null) {
+			transformFilteredFiles();
+		} else {
+			transformSingleInputFile();
+		}
+		return;
+		
+	}
+
+	private void transformSingleInputFile() {
+		if (inputFile != null && inputFile.exists()) {
+			try {
+				boolean debug = /*true*/ false;
+				boolean forceMake = false;
+				if (CMFileUtil.shouldMake(forceMake, outputFile , debug, inputFile)) { 
+					transformSingleInput(inputFile);
+				} else {
+					if (debug) {
+						LOG.debug("skipped: " + inputFile);
+					}
+				}
+			} catch (RuntimeException e) {
+				if (Level.ERROR.equals(normaArgProcessor.getExceptionLevel())) {
+					throw e;
+				} else if (Level.INFO.equals(normaArgProcessor.getExceptionLevel())) {
+					System.out.print("?@?");
+				} else {
+					e.printStackTrace();
+					LOG.error("BAD TRANSFORM ("+e.toString()+") "+inputFile);
+				}
+			}
+		}
+	}
+
+	private void transformFilteredFiles() {
+		File dir = currentCTree.getDirectory();
+		IOFileFilter ioFileFilter1 = ioFileFilter;
+		File[] files = Utils.getFilesWithFilter(dir, ioFileFilter1);
+		LOG.trace("filtered files: "+Arrays.asList(files));
+		transformFiles(files);
+	}
+
+	private void transformDirectory() {
+		if (type.inputDirName == null) {
+			throw new RuntimeException("must have input directory for: "+type);
+		}
+		File[] files = inputDir.listFiles(new FilenameFilter() {
+			public boolean accept(File dir, String name) {
+				return name != null && name.endsWith(CTree.DOT + type.inputSuffix);
+			}
+		});
+		transformFiles(files);
+		
+	}
+
+	private void transformFiles(File[] files) {
+		if (files != null) {
+			if (outputDir != null) {
+				outputDir.mkdirs();
+			}
+			for (File file : files) {
+				String basename = FilenameUtils.getBaseName(file.toString());
+				setInputFile(file);
+				String filename = basename+CTree.DOT+type.outputSuffix;
+				if (outputDir == null) {
+					outputFile = new File(file.getParentFile(), filename);
+				} else {
+					outputFile = new File(outputDir, filename);
+				}
+				LOG.trace("writing to "+outputFile+"; output="+normaArgProcessor.getOutput());
+				try {
+					transformSingleInput(file);
+				} catch (Exception e) {
+					LOG.error("transform failed, skipping: "+e.getMessage());
+					continue;
+				}
+				outputSpecifiedFormat();
+			}
+		}
+	}
+
+	private void parseOptionsAndCheckInputOutput() {
+		String inputDirName = normaArgProcessor.getInputDirName();
+		String outputDirName = normaArgProcessor.getOutputDirName();
+		currentCTree = normaArgProcessor.getCurrentCMTree();
+		outputFile = normaArgProcessor.getOutputFile();
+		
+		// create default directory name
+		inputDirName = (type.inputDirName != null) ? type.inputDirName : inputDirName;
+		outputDirName = (type.outputDirName != null) ? type.outputDirName : outputDirName;
+		// FIXME
+		if (outputDirName != null) {
+			outputDir = new File(outputDirName);
+		}
+		ioFileFilter = normaArgProcessor.getIOFileFilter();
+		if (inputDirName != null && !"null".equals(inputDirName)) { // check for duplicate code
+			parseInputDirectoryAndAddDefaults(inputDirName, outputDirName);
+		} else if (ioFileFilter != null) {
+			// used later in transformFilteredFiles() on ctree.dir
+			LOG.trace("fileFilter: "+ioFileFilter);
+		} else {
+			try {
+				parseInputFile();
+			} catch (Exception e) {
+				LOG.warn("Cannot parse file: "+currentCTree.getDirectory()+"; "+e);
+			}
+		} 
+		LOG.trace("inputFile: "+inputFile+"; outputFile: "+outputFile + "; fileFilter: " + ioFileFilter + "; inputDir: "+inputDirName+
+				"; ctree: "+this.currentCTree.getDirectory()+"; outputDir: "+outputDirName);
+		System.err.print(inputFile.getParentFile().getName()+" ");
+		return;
+	}
+
+	private void parseInputFile() {
+		setInputFile(normaArgProcessor.checkAndGetInputFile(currentCTree));
+		if (inputFile == null) {
+			setInputFile(type.getDefaultInputFile(currentCTree));
+			if (inputFile == null) {
+				LOG.warn("cannot find inputFile: "+currentCTree.getDirectory()+" ? "+type);
+			}
+			return;
+		}
+		if (!inputFile.exists()) {
+			warnNoFile();
+			setInputFile(null);
+//			throw new RuntimeException("Input file does not exist: "+inputFile);
+		} else {
+			if (outputFile == null) {
+				outputFile = type.getDefaultOutputFile(currentCTree);
+			}
+		}
+		if (outputDir == null) {
+			if (normaArgProcessor.getOutputDirName() != null) {
+				outputDir = new File(normaArgProcessor.getOutputDirName());
+			} else if (inputDir != null) {
+				outputDir = inputDir;
+			} else if (inputFile == null ) {
+				LOG.debug("get input parent directory: "+inputFile);
+				outputDir = inputFile.getParentFile();
+			} else {
+				
+			}
+
+		}
+	}
+
+	private void warnNoFile() {
+		System.out.print("!");
+	}
+
+	private void parseInputDirectoryAndAddDefaults(String inputDirName, String outputDirName) {
+		if (outputDirName == null) {
+			throw new RuntimeException("Output Dir must be given");
+		} else if (inputFile != null) {
+			LOG.trace("inputFile must be not given with --inputDirName; found "+inputFile);
+		}
+		
+		if (inputDirName != null && !"null".equals(inputDirName)) { // don't know where "null" comes from
+			inputDir = new File(currentCTree.getDirectory(), inputDirName);
+			if (!inputDir.exists()) {
+				throw new RuntimeException("Input directory does not exist: "+inputDir);
+			}
+		}
+		if (outputDirName != null) {
+			outputDir = new File(currentCTree.getDirectory(), outputDirName);
+			outputDir.mkdirs();
+		}
+	}
+
+	private void transformSingleInput(File inputFile) {
+		try {
+			transformSingleInput0(inputFile);
+		} catch (RuntimeException e) {
+			e.printStackTrace();
+			if (Level.ERROR.equals(normaArgProcessor.getExceptionLevel())) {
+				throw e;
+			} else if (Level.INFO.equals(normaArgProcessor.getExceptionLevel())) {
+				System.out.print("?@?");
+			} else {
+				e.printStackTrace();
+				LOG.error("BAD TRANSFORM ("+e.getMessage()+") "+inputFile);
+			}
+		}
+
+	}
+
+	private void transformSingleInput0(File inputFile) {
+		// clear old outputs
+		outputTxt = null;
+		htmlElement = null;
+		svgElement = null;
+		tsvString = null;
+		serialImageList = null;
+		teiFile = null;
+		
+		if (inputFile == null || !inputFile.exists()) {
+			return;
+		}
+		// check for NON-XSL transformation types
+		if (false) {				
+			//
+		} else if (
+			// alternate syntax
+			Type.HTMLUNIT.equals(type) ||
+			Type.JSOUP.equals(type) ||
+			Type.TIDY.equals(type) 
+			) {
+			LOG.warn("Please use --html to clean HTML, and include *before* --transform");
+			normaArgProcessor.runHtmlCleaner(type.transform);
+		} else if (Type.DECOMPACTSVG.equals(type)) {
+			svgElement = applyDecompactSVGToInputFile(inputFile);
+		} else if (Type.COMPACTSVG.equals(type)) {
+			svgElement = applyCompactSVGToInputFile(inputFile);
+		} else if (Type.HOCR2SVG.equals(type)) {
+			svgElement = applyHOCR2SVGToInputFile(inputFile);
+		} else if (Type.CSV2HTML.equals(type)) {
+			htmlElement = applyCSV2HtmlToInputFile(inputFile);
+		} else if (Type.CSV2TSV.equals(type)) {
+			tsvString = applyCSV2TSVToInputFile(inputFile);
+		} else if (Type.PDF2HTML.equals(type)) {
+			applyPDF2SVGToCurrentInputFile(inputFile, outputDir);
+//				htmlElement = convertToHTML();
+		} else if (Type.PDF2IMAGES.equals(type)) {
+			serialImageList = applyPDF2ImagesToInputFile(inputFile);
+		} else if (Type.PDF2SVG.equals(type)) {
+			applyPDF2SVGToCurrentInputFile(inputFile, outputDir);
+		} else if (Type.PDF2TEI.equals(type)) {
+			teiFile = applyPDF2TEIToInputFile(inputFile);
+			htmlElement = applyTEI2HTMLToInputFile(teiFile);
+		} else if (Type.PDF2TXT.equals(type)) {
+			outputTxt = applyPDF2TXTToInputFile(inputFile);
+		} else if (Type.SCATTER2CSV.equals(type)) {
+			tsvString = applyPlotBoxCSVToInput(inputFile);
+		} else if (Type.SVG2SVG.equals(type)) {
+			svgElement = applySVG2SVG(inputFile);
+		} else if (Type.SVGTABLE2HTML.equals(type)) {
+			htmlElement = applySVGTable2HTMLToInputFile(inputFile);
+		} else if (Type.SVGTABLE2CSV.equals(type)) {
+			htmlElement = applySVGTable2HTMLToInputFile(inputFile);
+			HtmlTable htmlTable = HtmlTable.getFirstDescendantTable(htmlElement);
+			rectangularTable = RectangularTable.createRectangularTable(htmlTable);
+			
+//		} else if (Type.TEI2HTML.equals(type)) {
+//			htmlElement = applyTEI2HTMLToInputFile(inputFile);
+			// skipped as we use the stylesheet mechanism directly
+			
+		} else if (Type.TEX2HTML.equals(type)) {
+			String xmlString = convertTeXToHTML(inputFile);
+			createHtmlElement(xmlString);
+		} else if (Type.TXT2HTML.equals(type)) {
+			htmlElement = applyTXT2HTMLToInputFile(inputFile);
+		} else if (normaArgProcessor.getCleanedHtmlElement() != null) {
+			LOG.warn("Cannot process cleaned HTML element - use 2-step norma");
+			
+		} else if (Type.XML2HTML.equals(type) ||
+//				Type.XMLSECTION.equals(type) ||
+				Type.XML2TXT.equals(type) ||
+				Type.XML2XML.equals(type)) {
+			
+			transformXMLWithStylesheet();
+		} else {
+			LOG.warn("Cannot interpret transform: "+type);
+		}
+	}
+
+	public void defaultTransformXML2HTML() {
+		this.type = Type.XML2HTML;
+		this.inputFile = inputFile;
+		transformXMLWithStylesheet();
+	}
+	
+	private void transformXMLWithStylesheet() {
+		/** this is a generic XML transformation for XML input */
+		String xmlString = createAndApplyXSLDocument();
+		if (xmlString == null) {
+			LOG.trace("null content in: "+currentCTree.getDirectory());
+		} else if (Type.XML2HTML.equals(type)) {
+			createHtmlElement(xmlString);
+		} else if (Type.XML2TXT.equals(type)) {
+			outputTxt = xmlString;
+		} else if (Type.XML2XML.equals(type)) {
+			xmlElement = XMLUtil.parseXML(xmlString);
+		}
+	}
+
+	public String createAndApplyXSLDocument(String transformTypeString) {
+		this.transformTypeString = transformTypeString;
+		return createAndApplyXSLDocument();
+	}
+
+	private String createAndApplyXSLDocument() {
+		xslDocument = createW3CStylesheetDocument(transformTypeString);
+		if (xslDocument == null) {
+			throw new IllegalArgumentException("null stylesheet for: "+transformTypeString);
+		}
+		String xmlString = applyXSLDocumentToCurrentCTree(xslDocument);
+		return xmlString;
+	}
+
+	private void debug0(String xmlString) {
+		File file = new File("target/fulltext.xhtml.xml");
+		try {
+			FileUtils.writeStringToFile(file, xmlString);
+			LOG.trace("wrote: html "+file);
+		} catch (IOException e) {
+			throw new RuntimeException("Cannot write transformer output");
+		}
+	}
+
+	private void debug1() {
+		File file = new File("target/fulltext.xhtml");
+			try {
+			XMLUtil.debug(htmlElement, new FileOutputStream(file),  1);
+			LOG.trace("wrote: xhtml "+file);
+		} catch (IOException e) {
+			throw new RuntimeException("Cannot write transformer output");
+		}
+	}
+
+	private void createHtmlElement(String xmlString) {
+		try {
+			htmlElement = new HtmlFactory().parse(xmlString);
+		} catch (Exception e) {
+			throw new RuntimeException("cannot parse HTML string", e);
+		}
+	}
+
+	private org.w3c.dom.Document createStylesheetFromArgs() {
+		int tokenNum = Type.XML2HTML.equals(type) ? 0 : 1;
+		String stylesheet = normaArgProcessor.transformTokenList.get(tokenNum);
+		org.w3c.dom.Document xslDocument = createW3CStylesheetDocument(stylesheet);
+		return xslDocument;
+	}
+
+	public static void listTransformOptions() {
+		System.err.println("TRANSFORMATION OPTIONS");
+		for (Type type : Type.values()) {
+			System.err.println("  "+type.transform);
+		}
+		System.err.println();
+	}
+	
+	private HtmlTable applyCSV2HtmlToInputFile(File inputFile) {
+		HtmlTable table = null;
+		CSVTransformer csvTransformer = new CSVTransformer();
+		try {
+			csvTransformer.readFile(inputFile);
+			table = csvTransformer.createTable();
+		} catch (IOException e) {
+			throw new RuntimeException("Cannot convert TSV: ", e);
+		}
+		return table;
+	}
+
+	private String applyCSV2TSVToInputFile(File inputFile) {
+		String tsvString = null;
+		CSVTransformer csvTransformer = new CSVTransformer();
+		try {
+			csvTransformer.readFile(inputFile);
+			tsvString = csvTransformer.createTSV();
+		} catch (IOException e) {
+			throw new RuntimeException("Cannot convert TSV: ", e);
+		}
+		return tsvString;
+	}
+
+	private SVGElement applyHOCR2SVGToInputFile(File inputFile) {
+		HOCRReaderOLD hocrReader = new HOCRReaderOLD();
+		try {
+			hocrReader.readHOCR(new FileInputStream(inputFile));
+		} catch (IOException e) {
+			throw new RuntimeException("Cannot transform HOCR "+inputFile, e);
+		}
+		SVGSVG svgSvg = (SVGSVG) hocrReader.getOrCreateSVG();
+		return svgSvg;
+	}
+
+	private SVGElement applySVG2SVG(File inputFile) {
+		SVG2SVGConverter svgConverter = new SVG2SVGConverter();
+		List<String> tokenList = new ArrayList<String>(normaArgProcessor.transformTokenList); 
+		try {
+			svgConverter.readFile(inputFile);
+			svgConverter.setTransformTokenList(tokenList);
+			svgElement = svgConverter.createSVGElement();
+		} catch (IOException e) {
+			throw new RuntimeException("Cannot convert SVG: ", e);
+		}
+		return svgElement;
+	}
+
+	private String applyPDF2SVGToCurrentInputFile(File inputFile, File outputDirectory) {
+		if (outputDirectory == null) {
+			throw new RuntimeException("Must give output directory");
+		}
+		String txt = "dummy";
+		PDFAnalyzer pdfAnalyzer = new PDFAnalyzer();
+		try {
+			this.outputDir = outputDirectory;
+			LOG.trace("outputDir: "+outputDir);
+			// this is the proper way
+//			File svgDir = currentCTree.getAllowedChildDirectory(CTree.SVG); 
+			// this is a kludge
+			File svgDir = new File(currentCTree.getDirectory(), CTree.SVG);
+			File imagesDir = new File(currentCTree.getDirectory(), CTree.IMAGES);
+			PDFAnalyzerIO pdfIo = pdfAnalyzer.getPDFIO();
+			pdfIo.setOutputDirectory(outputDirectory);
+			pdfIo.setOutputDirectory(new File(svgDir, "outputTop"));
+			pdfIo.setSvgDir(svgDir);
+			pdfIo.setImageDirectory(imagesDir);
+			pdfIo.setSkipOutput(true);
+			pdfAnalyzer.analyzePDFFile(inputFile);
+		} catch (Exception e) {
+			throw new RuntimeException("Cannot transform PDF "+inputFile, e);
+		}
+		return txt;
+	}
+
+	private String applyPDF2TXTToInputFile(File inputFile) {
+		PDF2TXTConverter converter = new PDF2TXTConverter();
+		String txt = null;
+		try {
+			txt = converter.readPDF(new FileInputStream(inputFile), true);
+		} catch (IOException e) {
+			throw new RuntimeException("Cannot transform PDF "+inputFile, e);
+		}
+		return txt;
+	}
+
+	/** this just does the Text.
+	 * 
+	 * @param inputSVGFile
+	 * @return
+	 */
+	private SVGElement applyCompactSVGToInputFile(File inputSVGFile) {
+		TextDecorator textDecorator = new TextDecorator(); 
+		SVGElement svgElement = SVGElement.readAndCreateSVG(inputSVGFile);
+		List<SVGText> textList = SVGText.extractSelfAndDescendantTexts(svgElement);
+		SVGElement g = textDecorator.compactTexts(textList);
+		svgElement.appendChild(g);
+		return svgElement;
+	}
+
+	private SVGElement applyDecompactSVGToInputFile(File inputSVGFile) {
+		TextDecorator textDecorator = new TextDecorator(); 
+		List<SVGText> textList = SVGText.extractSelfAndDescendantTexts(SVGElement.readAndCreateSVG(inputSVGFile));
+		SVGElement g = textDecorator.decompact(textList);
+		return g;
+	}
+
+
+	private String applyPlotBoxCSVToInput(File inputSVGFile) {
+		if (inputSVGFile == null) {
+			throw new RuntimeException("Null inputSVGFile");
+		}
+		String csv = null;
+		XYPlotBox plotBox = new XYPlotBox();
+		try {
+			File parent = inputSVGFile.getParentFile();
+			plotBox.setCsvOutFile(new File(parent, "figure.csv"));
+			plotBox.setSvgOutFile(new File(parent, "figure.annot.svg"));
+			plotBox.readAndCreateCSVPlot(inputSVGFile);
+			csv = plotBox.getCSV();
+			svgAnnotElement = plotBox.getComponentCache().createSVGElement();
+		} catch (FileNotFoundException e) {
+			throw new RuntimeException("Cannot read svg file: "+inputSVGFile);
+		}
+		csv = plotBox.getCSV();
+		return csv;
+	}
+
+	private String applyScatter2CSVToInputFile(File inputFile) {
+		String csvString = null;
+		throw new RuntimeException("Scatter NYI");
+//		PlotBox plotBox = new PlotBox();
+//		try {
+//			csvTransformer.readFile(inputFile);
+//			csvString = csvTransformer.createTSV();
+//		} catch (IOException e) {
+//			throw new RuntimeException("Cannot convert scatterplot: ", e);
+//		}
+//		return csvString;
+	}
+
+
+	private File applyPDF2TEIToInputFile(File inputFile) {
+		PDF2TEIConverter converter = new PDF2TEIConverter();
+		File teiFile = null;
+		try {
+			teiFile = converter.convertFulltextPDFToTEI(inputFile);
+		} catch (Exception e) {
+			throw new RuntimeException("Cannot transform PDF "+inputFile, e);
+		}
+		return teiFile;
+	}
+
+	private HtmlElement applyTEI2HTMLToInputFile(File teiFile) {
+//		TEI2HTMLConverter converter = new TEI2HTMLConverter();
+		LOG.warn("applyTEI2HTMLToInputFile is no-op");
+		HtmlElement htmlElement = null;
+//		try {
+//			htmlElement = converter.convertTEI2HtmlElement(teiFile);
+//		} catch (Exception e) {
+//			throw new RuntimeException("Cannot transform TEI "+teiFile, e);
+//		}
+		return htmlElement;
+	}
+
+	private HtmlElement applySVGTable2HTMLToInputFile(File inputFile) {
+		LOG.debug("==========="+inputFile+"============");
+		SVGTable2HTMLConverter converter = new SVGTable2HTMLConverter();
+		converter.readInput(inputFile);
+		HtmlElement htmlElement = converter.convert();
+		return htmlElement;
+	}
+
+	private List<NamedImage> applyPDF2ImagesToInputFile(File inputFile) {
+		PDF2ImagesConverter converter = new PDF2ImagesConverter();
+		List<NamedImage> namedImageList = null;
+		try {
+			namedImageList = converter.readPDF(new FileInputStream(inputFile), true);
+		} catch (IOException e) {
+			throw new RuntimeException("Cannot transform PDF "+inputFile, e);
+		}
+		return namedImageList;
+	}
+
+	private HtmlElement applyTXT2HTMLToInputFile(File inputFile) {
+		HtmlElement htmlElement = null;
+		try {
+			inputTxt = FileUtils.readFileToString(inputFile, Charset.forName("UTF-8"));
+			htmlElement = convertToHTML(inputFile);
+		} catch (IOException e) {
+			throw new RuntimeException("Cannot transform TXT "+inputFile, e);
+		}
+		return htmlElement;
+	}
+
+	/** requires LatexML to be present.
+	 * 
+	 * if fail, emits an error LOG and returns null
+	 * 
+	 * @param inputFile
+	 * @return
+	 */
+	private String convertTeXToHTML(File inputFile) {
+		TEX2HTMLConverter converter = new TEX2HTMLConverter();
+		String result = null;
+		try {
+			result = converter.convertTeXToHTML(inputFile);
+		} catch (InterruptedException e) {
+			LOG.error("Failed to convert TeX to HTML"+e);
+		} catch (IOException e) {
+			LOG.error("Failed to convert TeX to HTML"+e);
+		}
+		return result;
+	}
+
+	private HtmlElement convertToHTML(File inputFile) {
+		LOG.debug("convertToHTML NYI");
+		HtmlElement element = null;
+		return element;
+	}
+
+	private String applyXSLDocumentToCurrentCTree(org.w3c.dom.Document xslDocument) {
+		String xmlString = null;
+		try {
+			xmlString = transform(xslDocument);
+		} catch (IOException e) {
+			LOG.error("Cannot transform "+normaArgProcessor.getCurrentCMTree().getDirectory()+"; "+e);
+		}
+		return xmlString;
+	}
+
+	private String transform(org.w3c.dom.Document xslDocument) throws IOException {
+		String xmlString = null;
+		if (inputFile != null) { 
+			TransformerWrapper transformerWrapper = getOrCreateTransformerWrapperForStylesheet(xslDocument);
+//			transformerWrapper.
+			try {
+				xmlString = transformerWrapper.transformToXML(inputFile);
+			} catch (NullPointerException npe) {
+				throw new RuntimeException("cannot transform (NPE) "+inputFile, npe);
+			} catch (Exception e) {
+				throw new RuntimeException("cannot transform "+inputFile, e);
+			}
+		}
+		return xmlString;
+	}
+
+	private TransformerWrapper getOrCreateTransformerWrapperForStylesheet(org.w3c.dom.Document xslDocument) {
+		if (transformerWrapperByStylesheetMap == null) {
+			transformerWrapperByStylesheetMap = new HashMap<org.w3c.dom.Document, TransformerWrapper>();
+		}
+		TransformerWrapper transformerWrapper = transformerWrapperByStylesheetMap.get(xslDocument);
+//		Transformer javaxTransformer = transformerWrapperByStylesheetMap.get(xslDocument);
+		if (transformerWrapper == null) {
+			try {
+				transformerWrapper = new TransformerWrapper(normaArgProcessor.isStandalone());
+				if (xslDocument == null) {
+					throw new IllegalArgumentException("Null stylesheet");
+				}
+				// FIXME
+				Transformer javaxTransformer = transformerWrapper.createTransformer(xslDocument);
+				transformerWrapperByStylesheetMap.put(xslDocument,  transformerWrapper);
+			} catch (Exception e) {
+				throw new RuntimeException("Cannot create transformer from xslDocument", e);
+			}
+		}
+		return transformerWrapper;
+	}
+
+	// ============
+
+	public String getOutputTxt() {
+		return outputTxt;
+	}
+
+	/** ordered list of title+image.
+	 *
+	 * title are of form "image<page>.<serial>.Img<img>"
+	 * page is PD page number (base 1)
+	 * serial is serial index of image (includes duplication)
+	 * img is unique image serial
+	 *
+	 * @return
+	 */
+	public List<NamedImage> getImageList() {
+		return serialImageList;
+	}
+
+	public HtmlElement getHtmlElement() {
+		return htmlElement;
+	}
+
+	void outputSpecifiedFormat() {
+		String output = null;
+		LOG.trace("outputFile "+outputFile);
+		if (outputFile != null) {
+			String outname = outputFile.getAbsolutePath().toString();
+			String treename = currentCTree.getDirectory().getAbsolutePath().toString();
+			
+//			if (!outname.startsWith(treename)) {
+//				throw new RuntimeException("outname is not child of Ctree "+outname+" ; "+treename);
+//			}
+			if (outname.startsWith(treename)) {	
+				output = outname.substring(treename.length());
+			} else {
+				// FIXME
+				File f = outputDir;
+				output = outname.substring(treename.length());
+			}
+			// output is of form "table/table1.html"
+		} else {
+			output = normaArgProcessor.getOutput();
+		}
+		// the output is a mess
+		if (output == null) {
+			output = outputFile == null ? null : outputFile.toString();
+		}
+		if (outputTxt != null) {
+			currentCTree.writeFile(outputTxt, (output != null ? output : CTree.FULLTEXT_PDF_TXT));
+		}
+		if (htmlElement != null) {
+			currentCTree.writeFile(htmlElement.toXML(), (output != null ? output : CTree.FULLTEXT_HTML));
+		}
+		if (svgElement != null && output != null) {
+			currentCTree.writeFile(svgElement.toXML(), output);
+		}
+		// later we will drive the annotation by filename; at present keep it automatic
+		if (svgAnnotElement != null) {
+			if (annotationFilename == null && output != null) {
+				annotationFilename = output.replaceAll("\\.[^\\.]+$", ".annot.svg");
+			}
+			if (annotationFilename != null) {
+				
+				File outputSvgFile = new File(currentCTree.getDirectory(), annotationFilename);
+				LOG.debug("@@@@@@@@@@@@@@@@@@@@@@output annotation: "+outputSvgFile.getAbsolutePath());
+				SVGSVG.wrapAndWriteAsSVG(svgAnnotElement, outputSvgFile);
+			}
+		}
+		if (serialImageList != null) {
+			normaArgProcessor.writeImages();
+		}
+		if (rectangularTable != null) {
+			try {
+				rectangularTable.writeCsvFile(outputFile);
+			} catch (IOException e) {
+				throw new RuntimeException("Cannot write: "+outputFile, e);
+			}
+		}
+		if (teiFile != null) {
+			LOG.debug("wrote TEI: "+teiFile);
+//			currentCTree.writeFile(teiFile.toXML(), (output != null ? output : CTree.FULLTEXT_XML));
+		}
+		if (tsvString != null && output != null) {
+			try {
+				IOUtils.write(tsvString, new FileOutputStream(new File(currentCTree.getDirectory(), output)));
+			} catch (IOException e) {
+				throw new RuntimeException("cannot write CSV: ", e);
+			}
+		}
+
+	}
+
+	private org.w3c.dom.Document createW3CStylesheetDocument(String xslName) {
+		DocumentBuilder db = createDocumentBuilder();
+		// 
+		org.w3c.dom.Document stylesheetDocument = null;
+		String stylesheetResourceName = null;
+		// treat as URL or filename
+		InputStream xslStream = new ResourceLocation().getInputStreamHeuristically(xslName);
+		if (xslStream != null) {
+			stylesheetDocument = readAsStream(db, xslName, xslStream);			
+		} else {
+			// no, lookup symbol
+			stylesheetResourceName = lookupStylesheetByName(xslName);
+			stylesheetDocument = readAsResource(db, stylesheetResourceName);
+			if (stylesheetDocument == null) {
+				LOG.warn("cannout find resource: "+xslName+"; "+stylesheetResourceName);
+			}
+		}
+		// if fails, try as file
+//		if (stylesheetDocument == null) {
+//			try {
+//				stylesheetDocument = readAsStream(db, xslName, new FileInputStream(xslName));
+//			} catch (FileNotFoundException e) { /* hide exception*/}
+//		}
+		if (stylesheetDocument == null) {
+			LOG.trace("Cannot read stylesheet: "+xslName+"; "+stylesheetResourceName);
+		}
+		return stylesheetDocument;
+	}
+	
+	private DocumentBuilder createDocumentBuilder() {
+		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+		DocumentBuilder db = null;
+		try {
+			db = dbf.newDocumentBuilder();
+		} catch (ParserConfigurationException e) {
+			throw new RuntimeException("Serious BUG in JavaXML:", e);
+		}
+		return db;
+	}
+
+	private org.w3c.dom.Document readAsResource(DocumentBuilder db, String stylesheetResourceName) {
+		InputStream is = this.getClass().getResourceAsStream(stylesheetResourceName);
+		return readAsStream(db, stylesheetResourceName, is);
+	}
+
+	/** create stylesshet from InputStream.
+	 * 
+	 * @param db documentBuilder
+	 * @param xslName name = only used for errors
+	 * @param is stylesheet as stream
+	 * @return
+	 */
+	private org.w3c.dom.Document readAsStream(DocumentBuilder db, String xslName, InputStream is) {
+		if (is == null) {
+			throw new IllegalArgumentException("Null stylesheet input: "+xslName);
+		}
+		org.w3c.dom.Document stylesheetDocument = null;
+		try {
+			stylesheetDocument = db.parse(is);
+		} catch (Exception e) { 
+			LOG.error("cannot parse stylesheet stream "+e+"; "+xslName);
+		}
+		return stylesheetDocument;
+	}
+
+	private String lookupStylesheetByName(String xslName) {
+		createStylesheetByNameMap();
+		String stylesheetResourceName = stylesheetByNameMap.get(xslName);
+		stylesheetResourceName = (stylesheetResourceName == null) ? xslName : stylesheetResourceName;
+		return stylesheetResourceName;
+	}
+
+	private void createStylesheetByNameMap() {
+		stylesheetByNameMap = new HashMap<String, String>();
+		try {
+			nu.xom.Document stylesheetByNameDocument = new Builder().build(this.getClass().getResourceAsStream(STYLESHEET_BY_NAME_XML));
+			List<Element> stylesheetList = XMLUtil.getQueryElements(stylesheetByNameDocument, "/stylesheetList/stylesheet");
+			for (Element stylesheet : stylesheetList) {
+				stylesheetByNameMap.put(stylesheet.getAttributeValue(NAME), stylesheet.getValue());
+			}
+			LOG.trace("STYLESHEET"+stylesheetByNameMap);
+		} catch (Exception e) {
+			LOG.error("Cannot read "+STYLESHEET_BY_NAME_XML+"; "+e);
+		}
+	}
+
+	private void tagSections() {
+		LOG.debug("NYI");
+		List<SectionTaggerX> sectionTaggers = normaArgProcessor.getSectionTaggers();
+		for (SectionTaggerX sectionTagger : sectionTaggers) {
+//			LOG.trace("section tagger:" + sectionTagger);
+//			try {
+//				Element xmlElement = XMLUtil.parseXML(xmlString);
+//			} catch (RuntimeException e) {
+//				throw new RuntimeException("failed to parse: "+xmlString.substring(0, Math.min(200, xmlString.length())), e);
+//			}
+		}
+	}
+
+	public File getInputFile() {
+		return inputFile;
+	}
+
+	public void setInputFile(File inputFile) {
+		this.inputFile = inputFile;
+	}
+
+	public void setCurrentCTree(CTree currentCTree) {
+		this.currentCTree = currentCTree;
+	}
+
+}

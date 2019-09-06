@@ -1,0 +1,36 @@
+<argList name="gene">
+
+	<arg name="gene" 
+		long="--g.gene"
+		args=""
+		countRange="{0,0}"
+		initMethod="initGene"
+		runMethod="runExtractGene"
+		outputMethod="outputGene"
+		>
+		<help>
+    This runs the search. Arguments are lists of genes in XML, accessed as files, URLs, resources, symbols 
+		</help>
+		<!-- NEVER search HTML with regexes, but here it's safe -->
+		<!--  ABCDE , NF1, BRCA1, HIST1 H1E A4GNT-->
+		<value   name="human">&lt;i>\s*([A-Z][A-Z0-9]{2,10})\s*&lt;/i></value> 
+		<!--  Brca1-->
+		<value name="mouse">&lt;i>\s*([A-Z][a-z\d]{2,10})\s*&lt;/i></value> 
+		<value name="hgnc">org/contentmine/ami/plugins/gene/hgnc/hgnc_complete_set.xml</value>
+	</arg>	
+	
+	<arg name="type"
+	    long="--g.type"
+	    args="type"
+	    class="java.lang.String"
+	    pattern="(human|mouse)"
+	    parseMethod="parseTypes"
+	    countRange="{1,*}"
+	    >
+	    <help>
+	    The type of the gene. Only human is implemented. May be obseleted if dictionary is used
+	    </help>
+	</arg>
+    
+</argList>
+			

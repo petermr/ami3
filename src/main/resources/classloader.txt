@@ -1,0 +1,19 @@
+https://stackoverflow.com/questions/47900677/where-does-leading-slash-in-java-class-loader-getresource-leads-to
+
+
+
+    MyTestClass.class.getClassLoader().getResource("1.txt") --> jar:file:/tmp/myjar.jar!/1.txt
+
+What is the effect/purpose of leading "/" in getResouce?
+java
+shareeditcloseflag
+asked Dec 20 '17 at 7:17
+Vitali Melamud
+365319
+
+    1
+    There is a difference between class.getResource() (uses relative paths) and class.getClassLoader().getResource() (uses absolute paths) – Ferrybig Dec 20 '17 at 7:19
+    3
+    You're just not supposed to have a leading slash. ClassLoader.getResource() doesn't expect one. Class.getResource() does, though, because without it, it looks for the resource in the same package as the class. – JB Nizet Dec 20 '17 at 7:19
+    Are you using Java 9 modules? They alter the way that Class::getResource delegates. – Stephen C Dec 20 '17 at 7:35
+    Thanks for your clarifications! It's indeed a difference between the class and the classloader I've missed! – Vitali Melamud Dec 20 '17 at 7:48

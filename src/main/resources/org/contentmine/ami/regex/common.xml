@@ -1,0 +1,12 @@
+<compoundRegex title="common">
+<!-- <regex weight="1.0" 
+      fields="wy">\w([Ww]hen|[Ww]hy|[Ww]hat|[Ww]ho|[Ww]here)\w</regex>
+      -->
+      
+  <regex weight="1.0" 
+      fields="wx1">([Ww]hen|[Ww]hy|[Ww]hat|[Ww]ho|[Ww]here)</regex>
+      <!-- 
+  <regex weight="1.0" 
+      fields="wz2">\b([Ww]hen|[Ww]hy|[Ww]hat|[Ww]ho|[Ww]here)\b</regex>
+       -->
+</compoundRegex>

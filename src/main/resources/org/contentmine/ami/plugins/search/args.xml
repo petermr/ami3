@@ -1,0 +1,112 @@
+<argList name="search">
+    <!--  the name needs to match the classname of the ArgProcessor at present.
+    MESSY -->
+    <!-- 
+	<arg name="word" 
+		long="- -sr.words"
+		args="method [method...]"
+		countRange="{0,*}"
+		parseMethod="parseWords"
+		runMethod="runExtractWords"
+		outputMethod="outputWords"
+		>
+		<help>
+		PROBABLY OBSOLETE
+		</help>
+	</arg>	
+-->
+<!-- 	
+	<arg name="stopwords" 
+		long="- -w.stopwords"
+		args="location [location...]"
+		countRange="{0,*}"
+		parseMethod="parseStopwords"
+		>
+		<help>
+		
+			STOPWORDS:
+			select sets of stopwords. Locations are given by resource locations.
+			
+			PROBABLY MOVE from w.words to utility
+			
+		</help>
+	</arg>	
+-->
+
+<!-- 	
+	<arg name="case" 
+		long="- -w.case"
+		args="options"
+		countRange="{1,*}"
+		class="java.lang.String"
+		parseMethod="parseCase"
+		>
+		<help>
+			CASE
+			respects or ignores case:
+			* default is to respect case
+			* ignore = ignore case (everything is internally lowercased)
+			* respectCamel = don't lowercase anything with midWord uppercase (URL, eBook,)
+			
+		</help>
+	</arg>	
+-->
+<!-- 	
+	<arg name="stemming" 
+		long="- -w.stem"
+		args=""
+		countRange="{1,1}"
+		class="java.lang.Boolean"
+		default="false"
+		parseMethod="parseStem"
+		>
+		<help>
+		STEM
+		Stemming removes computable suffixes from words (e.g. walks, walked => walk)
+		Uses the Porter Stemming algorithm in Lucene.
+		</help>
+	</arg>	
+-->
+<!-- 	
+	<arg name="wordtypes" 
+		long="- -w.wordtypes"
+		args="type [type...]"
+		countRange="{0,*}"
+		pattern="(acronym|capitalized)"
+		parseMethod="parseWordTypes"
+		>
+		<help>
+			WORDTYPES:
+			word types to extract. Entering zero args will give a list of types. These are likely to change but
+			could be "acronym", "capitalized", etc. 
+		</help>
+	</arg>	
+-->
+<!-- 	
+	<arg name="wordcount" 
+		long="- -w.wordcount"
+		args="{min"
+		countRange="{1,1}"
+		class="org.contentmine.eucl.euclid.IntRange"
+		parseMethod="parseMinCount"
+		>
+		<help>
+		 number of words in summary bins
+		</help>
+	</arg>	
+-->	
+	<arg name="search" 
+		long="--sr.search"
+		args="{min"
+		countRange="{1,*}"
+		parseMethod="parseSearch"
+		runMethod="runSearch"
+		outputMethod="outputSearch"
+		>
+		<help>
+		 arguments are names of dictionaries (currently filenames)
+		</help>
+	</arg>	
+	
+</argList>
+			

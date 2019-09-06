@@ -1,0 +1,71 @@
+<argList name="sequence">
+	<arg name="sequence" 
+		long="--sq.sequence"
+		args=""
+		countRange="{0,0}"
+		initMethod="initSequences"
+		runMethod="runExtractSequences"
+		outputMethod="outputSequences"
+		>
+		<help>
+    This runs the search - there are no argument values. 
+		</help>
+		<!--  DNA -->
+		<!-- back compatibility for dnaprimer only, obsolete this -->
+		<value name="dna">5['\u2019]\-?[ACGT]{6,}\-?3['\u2019]</value> 
+		<!--  raw dna -->
+		<value name="dnaraw">\b[ACGT]{6,}\b</value> 
+		<!-- 5’-CCTACGGGAGGCAGCAG-3’ --> 
+		<!-- primers with weak matches, etc.-->
+		<value name="dnaprimer">5['\u2019]\-?[ACGTRYNWSKBHDV]{6,}\-?3['\u2019]</value> 
+		
+		<!--  RNA -->
+		<!--  obsolete this -->
+		<value name="rna">\b[ACGU]{6,}\b</value>
+		<!--  raw RNA -->
+		<value name="rnaraw">\b[ACGU]{6,}\b</value>
+		
+		<!--  proteins -->
+		<!-- obsolete this -->
+		<value name="prot">\b[ACDEFGHIKLMNPQRSTVWY]{10,}\b</value> 
+		<!-- 1-letter codes many false positives from abbreviations AND Nucleic -->
+		<value name="prot1">\b[ACDEFGHIKLMNPQRSTVWY]{10,}\b</value> 
+		<!-- 3-letter codes -->
+		<value name="prot3">(Ala\-?|Cys\-?|Asp\-?|Glu\-?|Phe\-?|Gly\-?|His\-?|Ile\-?|Lys\-?|Leu\-?|Met\-?|Asn\-?|Pro\-?|Gln\-?|Arg\-?|Ser\-?|Thr\-?|Val\-?|Trp\-?|Tyr\-?){2,}</value>
+		
+		<!-- carbohydrates -->
+		<!-- a placeholder; no stereochemistry or branches-->
+		<value name="carb3">(Glc\-?|Man\-?|Gal\-?|Rib\-?|Xyl\-?){2,}</value> 
+	</arg>	
+	
+	<arg name="type"
+	    long="--sq.type"
+	    args="type"
+	    class="java.lang.String"
+	    pattern="(dna|dnaraw|dnaprimer|rna|rnaraw|prot|prot1|prot3|carb3)"
+	    parseMethod="parseTypes"
+	    countRange="{1,*}"
+	    >
+	    <help>
+	    The type of the sequence. see above.
+	    </help>
+	</arg>
+
+	
+	<arg name="length"
+	    long="--sq.length"
+	    args="lengthRange"
+	    class="org.contentmine.eucl.euclid.IntRange"
+	    parseMethod="parseLength"
+	    countRange="{1,1}"
+	    >
+	    <help>
+	    The allowed length of the sequence, described by a single org.contentmine.eucl.euclid.IntRange 
+	    (note there are no internal spaces). - any non-empty sequence - will be used if there is 
+	    no `--sq.length` attribute. When this attribute is present, the method `parseLength` will 
+	    be called which saves the value of the `IntRange`.
+	    </help>
+    </arg>	
+    
+</argList>
+			

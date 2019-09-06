@@ -1,0 +1,20 @@
+<argList name="simple">
+	<arg name="simple" 
+		brief="-s.s"
+		long="--s.simple"
+		args="?"
+		countRange="{0,*}"
+		parseMethod="parseSimple"
+		runMethod="countWords"
+		outputMethod="outputWordCounts"
+		>
+		<help>
+		
+			SIMPLE:
+			Simple example of how to count paras and words.
+			
+		</help>
+	</arg>	
+	
+</argList>
+			

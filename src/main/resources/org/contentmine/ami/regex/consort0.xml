@@ -1,0 +1,14 @@
+<compoundRegex title="consort0">
+  <regex fields="random">([Rr]andom~)</regex>
+  <regex fields="blind">[Bb]lind~</regex>
+  <regex fields="followup">follow\-?up</regex>
+  <regex fields="exclude">exclud~</regex>
+  <regex fields="withdraw">withdr[ae]w~</regex>
+  <regex fields="diagnose">(diagnos~)</regex>
+  <regex fields="attrition">attrition~</regex>
+  <regex fields="samplesize">sample size</regex>==
+  <regex fields="placebo">placebo~</regex>
+  <regex fields="stata">Stata</regex>
+  <regex fields="stratify">stratif~</regex>
+  <regex fields="allocate">allocat~</regex>
+</compoundRegex>
