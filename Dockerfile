@@ -14,10 +14,14 @@ RUN mvn -Dmaven.test.skip=true install
 # unstaged build with just this PATH adjustment works!
 ENV PATH /app/ami3/target/appassembler/bin/:${PATH}
 
-#FROM openjdk:8
-#COPY --from=builder /app/ami3/target/appassembler/bin/ /bin/ami3/bin/
-#COPY --from=builder /app/ami3/target/*jar-with-dependencies.jar /bin/ami3/
-#ENV PATH /bin/ami3/bin:${PATH}
+# remove unused .bat files
+WORKDIR /app/ami3/target/appassembler/bin/
+RUN rm *.bat
+
+FROM openjdk:8
+# would like to copy more specifically the jar and binary files here, if possible, see #2
+COPY --from=builder /app/ami3/target/ /bin/ami3/
+ENV PATH /bin/ami3/appassembler/bin/:${PATH}
 
 VOLUME [ "/workspace" ]
 WORKDIR /workspace

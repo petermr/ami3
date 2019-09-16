@@ -61,7 +61,7 @@ Then you can run the container and execute commands in the container:
 
 ```bash
 $ docker run --rm -it ami3
-root@aa87395224cc:/ami3# ami-pdf --help
+root@aa87395224cc:/workspace# ami-pdf --help
 Usage: ami-pdf [OPTIONS]
 Description
 ===========
