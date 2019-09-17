@@ -49,7 +49,7 @@ mvn install -Dmaven.test.skip=true
 
 will not run any tests.
 
-## Building Docker image
+## Running tools based on Docker image
 
 You can also build a Docker image based:
 
@@ -81,6 +81,20 @@ Services include
 
  identification of d
  [...]
+```
+
+The Docker image includes the [`getpapers`](https://www.npmjs.com/package/getpapers) tool:
+
+```bash
+$  docker run --rm -it ami3 getpapers --help
+
+  Usage: getpapers [options]
+
+  Options:
+
+    -h, --help                output usage information
+    -V, --version             output the version number
+[..]
 ```
 
 ## Contributing to development

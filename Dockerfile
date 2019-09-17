@@ -23,6 +23,27 @@ FROM openjdk:8
 COPY --from=builder /app/ami3/target/ /bin/ami3/
 ENV PATH /bin/ami3/appassembler/bin/:${PATH}
 
+# install npm and getpapers package, partly based on https://gist.github.com/remarkablemark/aacf14c29b3f01d6900d13137b21db3a
+RUN rm /bin/sh && ln -s /bin/bash /bin/sh
+ENV NVM_DIR /usr/local/nvm
+ENV NODE_VERSION 7.10.1
+WORKDIR $NVM_DIR
+
+#ARG DEBIAN_FRONTEND=noninteractive
+#RUN apt-get update && apt-get install -y --no-install-recommends tzdata && \
+#    apt-get clean
+RUN wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+
+RUN source $NVM_DIR/nvm.sh \
+    && nvm install $NODE_VERSION \
+    && nvm alias default $NODE_VERSION \
+    && nvm use default
+
+ENV NODE_PATH $NVM_DIR/v$NODE_VERSION/lib/node_modules
+ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
+
+RUN npm install --global getpapers
+
 VOLUME [ "/workspace" ]
 WORKDIR /workspace
 
