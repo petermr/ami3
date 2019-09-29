@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+
+    Copyright (C) 2012 pm286 <peter.murray.rust@googlemail.com>
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<codePointSet encoding="symbol" id="symbol" resource="org/contentmine/pdf2svg/codepoints/symbol">
+
+<!--  this is a mess as there are more than one font mapping here -->
+
+<!--  higher points may be unicode, but there may be some rogues -->
+    <codePointSet idRef="2200_22ff" href="org/contentmine/pdf2svg/codepoints/unicode/2200_22ff.xml"/>
+    <codePointSet idRef="2300_23ff" href="org/contentmine/pdf2svg/codepoints/unicode/2300_23ff.xml"/>
+
+<!-- these seem to track ANSI -->  
+    <codePoint unicode="U+0028" decimal="40" note="LEFT PARENTHESIS"/>
+    <codePoint unicode="U+0029" decimal="41" note="LEFT PARENTHESIS"/>
+    <codePoint unicode="U+002B" decimal="43" note="PLUS SIGN"/>
+    <codePoint unicode="U+002D" decimal="45" note="HYPHEN-MINUS"/>
+    <codePoint unicode="U+003D" name="equal" uName="EQUAL SIGN" />
+    
+<!--  main divergence is for letters -->    
+<!-- Greek: C=Chi F=Phi G=Gamma H=Eta Q=Theta W=Omega Y=Psi Z="Zeta-->  
+    <codePoint unicode="U+0391" decimal="65" note="GREEK CAPITAL LETTER ALPHA"/>
+    <codePoint unicode="U+0392" decimal="66" note="GREEK CAPITAL LETTER BETA"/>
+    <codePoint unicode="U+03A7" decimal="67" note="GREEK CAPITAL LETTER CHI"/>
+    <codePoint unicode="U+0394" decimal="68" note="GREEK CAPITAL LETTER DELTA"/>
+    <codePoint unicode="U+0395" decimal="69" note="GREEK CAPITAL LETTER EPSILON"/>
+    <codePoint unicode="U+03A6" decimal="70" note="GREEK CAPITAL LETTER PHI"/>
+    <codePoint unicode="U+0393" decimal="71" note="GREEK CAPITAL LETTER GAMMA"/>
+    <codePoint unicode="U+0397" decimal="72" note="GREEK CAPITAL LETTER ETA"/>
+    <codePoint unicode="U+0399" decimal="73" note="GREEK CAPITAL LETTER IOTA"/>
+    <codePoint unicode="U+039A" decimal="75" note="GREEK CAPITAL LETTER KAPPA"/>
+    <codePoint unicode="U+039B" decimal="76" note="GREEK CAPITAL LETTER LAMBDA"/>
+    <codePoint unicode="U+039C" decimal="77" note="GREEK CAPITAL LETTER MU"/>
+    <codePoint unicode="U+039D" decimal="78" note="GREEK CAPITAL LETTER NU"/>
+    <codePoint unicode="U+039F" decimal="79" note="GREEK CAPITAL LETTER OMICRON"/>
+    <codePoint unicode="U+03A0" decimal="80" note="GREEK CAPITAL LETTER PI"/>
+    <codePoint unicode="U+0398" decimal="81" note="GREEK CAPITAL LETTER THETA"/>
+    <codePoint unicode="U+03A1" decimal="82" note="GREEK CAPITAL LETTER RHO"/>
+    <codePoint unicode="U+03A3" decimal="83" note="GREEK CAPITAL LETTER SIGMA"/>
+    <codePoint unicode="U+03A4" decimal="84" note="GREEK CAPITAL LETTER TAU"/>
+    <codePoint unicode="U+03A5" decimal="85" note="GREEK CAPITAL LETTER UPSILON"/>
+    <codePoint unicode="U+03A9" decimal="87" note="GREEK CAPITAL LETTER OMEGA"/>
+    <codePoint unicode="U+039E" decimal="88" note="GREEK CAPITAL LETTER XI"/>
+    <codePoint unicode="U+03A8" decimal="89" note="GREEK CAPITAL LETTER PSI"/>
+    <codePoint unicode="U+0396" decimal="90" note="GREEK CAPITAL LETTER ZETA"/>
+
+    <codePoint unicode="U+03B1" decimal="97" note="GREEK SMALL LETTER ALPHA"/>
+    <codePoint unicode="U+03B2" decimal="98" note="GREEK SMALL LETTER BETA"/>
+    <!--  what does c correspond to? -->
+    <codePoint unicode="U+03C7" decimal="99" note="GREEK SMALL LETTER CHI"/>
+    <codePoint unicode="U+03B4" decimal="100" note="GREEK SMALL LETTER DELTA"/>
+    <codePoint unicode="U+03B5" decimal="101" note="GREEK SMALL LETTER EPSILON"/>
+    <codePoint unicode="U+03C6" decimal="102" note="GREEK SMALL LETTER PHI"/>
+    <codePoint unicode="U+03B3" decimal="103" note="GREEK SMALL LETTER GAMMA"/>
+    <codePoint unicode="U+03B7" decimal="104" note="GREEK SMALL LETTER ETA"/>
+    <codePoint unicode="U+03B8" decimal="107" note="GREEK SMALL LETTER THETA"/>
+    <codePoint unicode="U+03B9" decimal="105" note="GREEK SMALL LETTER IOTA"/>
+    <codePoint unicode="U+03BA" decimal="107" note="GREEK SMALL LETTER KAPPA"/>
+    <codePoint unicode="U+03BB" decimal="108" note="GREEK SMALL LETTER LAMBDA"/>
+    <codePoint unicode="U+03BC" decimal="109" note="GREEK SMALL LETTER MU"/>
+    <codePoint unicode="U+03BD" decimal="110" note="GREEK SMALL LETTER NU"/>
+    <codePoint unicode="U+03BF" decimal="111" note="GREEK SMALL LETTER OMICRON"/>
+    <codePoint unicode="U+03C0" decimal="112" note="GREEK SMALL LETTER PI"/>
+    <codePoint unicode="U+03C1" decimal="114" note="GREEK SMALL LETTER RHO"/>
+    <codePoint unicode="U+03C3" decimal="115" note="GREEK SMALL LETTER SIGMA"/>
+    <codePoint unicode="U+03C4" decimal="116" note="GREEK SMALL LETTER TAU"/>
+    <codePoint unicode="U+03B6" decimal="116" note="GREEK SMALL LETTER ZETA"/>
+    <codePoint unicode="U+03C5" decimal="117" note="GREEK SMALL LETTER UPSILON"/>
+    <codePoint unicode="U+03C9" decimal="119" note="GREEK SMALL LETTER OMEGA"/>
+    <codePoint unicode="U+03BE" decimal="120" note="GREEK SMALL LETTER XI"/>
+    <codePoint unicode="U+03C8" decimal="121" note="GREEK SMALL LETTER PSI"/>
+
+<!-- no idea where these come from -->
+    <codePoint unicode="U+03B1" decimal="3" note="GREEK SMALL LETTER ALPHA"/>
+    <codePoint unicode="U+03B1" decimal="916" note="GREEK SMALL LETTER ALPHA"/>
+    <codePoint unicode="U+03B2" decimal="917" note="GREEK SMALL LETTER BETA"/>
+
+<!--  these display OK in browsers so are probably standard ; see nonunicodesymbol.xml -->    
+
+    <codePoint unicode="U+03BC" decimal="61472" note="GREEK SMALL LETTER MU"/>
+
+    <codePoint unicode="U+002D" decimal="61485" note="HYPHEN-MINUS"/>
+    <!--  have also found combining tilde -->
+
+<!--  non-standard -->
+    <codePoint unicode="U+03B1" decimal="61537" note="GREEK SMALL LETTER ALPHA"/>
+    <codePoint unicode="U+03B2" decimal="61538" note="GREEK SMALL LETTER BETA"/>
+    <codePoint unicode="U+03C7" decimal="61539" note="GREEK SMALL LETTER CHI"/>
+    <codePoint unicode="U+03B4" decimal="61540" note="GREEK SMALL LETTER DELTA"/>
+    <codePoint unicode="U+03BC" decimal="61549" note="GREEK SMALL LETTER MU"/>
+    <codePoint unicode="U+03BD" decimal="61550" note="GREEK SMALL LETTER NU"/>
+    
+    
+        <codePoint unicode="U+03B1" decimal="97" note="GREEK SMALL LETTER ALPHA"/>
+        <codePoint unicode="U+03B2" decimal="98" note="GREEK SMALL LETTER BETA"/>
+
+<!-- this is actually SymbolStd but may get routed here - doesn't seem to work -->
+    <codePoint name="C210" unicode="U+00AE" note="REGISTERED SIGN"/> 
+    <codePoint name="C211" unicode="U+00A9" note="COPYRIGHT SIGN"/> 
+    <codePoint name="C212" unicode="U+2122" note="TRADE-MARK SIGN"/> 
+<!-- maybe the same? -->    
+    <codePoint name="c174" unicode="U+2192" note="RIGHTWARDS ARROW"/> 
+    <codePoint name="c176" unicode="U+25E6" note="WHITE BULLET"/> 
+    <codePoint name="c183" unicode="U+2022" note="BULLET"/> 
+    <codePoint name="c215" unicode="U+015C" notee="LATIN CAPITAL LETTER S WITH CIRCUMFLEX"/>
+
+<!--  there are also unicode points -->    
+    <codePoint unicode="U+0020" unicodeName="SPACE" name="space" decimal="32"/>
+    <codePoint unicode="U+03BC" unicodeName="GREEK SMALL LETTER MU" name="mu" decimal="181"/>
+    
+    <codePointSet idRef="greekAndCoptic" href="org/contentmine/pdf2svg/codepoints/unicode/greekAndCoptic.xml"/>
+    <codePointSet idRef="2300_23ff" href="org/contentmine/pdf2svg/codepoints/unicode/2300_23ff.xml"/>
+</codePointSet>

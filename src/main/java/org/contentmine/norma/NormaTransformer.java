@@ -180,6 +180,9 @@ public class NormaTransformer {
 	private RectangularTable rectangularTable;
 	private String annotationFilename;
 
+	public NormaTransformer() {
+	}
+	
 	public NormaTransformer(NormaArgProcessor argProcessor) {
 		this.normaArgProcessor = argProcessor;
 		currentCTree = normaArgProcessor.getCurrentCMTree();
@@ -798,18 +801,17 @@ public class NormaTransformer {
 	private String applyXSLDocumentToCurrentCTree(org.w3c.dom.Document xslDocument) {
 		String xmlString = null;
 		try {
-			xmlString = transform(xslDocument);
+			xmlString = transform(xslDocument, inputFile);
 		} catch (IOException e) {
 			LOG.error("Cannot transform "+normaArgProcessor.getCurrentCMTree().getDirectory()+"; "+e);
 		}
 		return xmlString;
 	}
 
-	private String transform(org.w3c.dom.Document xslDocument) throws IOException {
+	public String transform(org.w3c.dom.Document xslDocument, File inputFile) throws IOException {
 		String xmlString = null;
 		if (inputFile != null) { 
 			TransformerWrapper transformerWrapper = getOrCreateTransformerWrapperForStylesheet(xslDocument);
-//			transformerWrapper.
 			try {
 				xmlString = transformerWrapper.transformToXML(inputFile);
 			} catch (NullPointerException npe) {
@@ -829,7 +831,9 @@ public class NormaTransformer {
 //		Transformer javaxTransformer = transformerWrapperByStylesheetMap.get(xslDocument);
 		if (transformerWrapper == null) {
 			try {
-				transformerWrapper = new TransformerWrapper(normaArgProcessor.isStandalone());
+				boolean standalone = normaArgProcessor == null ? true : normaArgProcessor.isStandalone();
+//				transformerWrapper = normaArgProcessor == null new TransformerWrapper(normaArgProcessor.isStandalone());
+				transformerWrapper =  new TransformerWrapper(standalone);
 				if (xslDocument == null) {
 					throw new IllegalArgumentException("Null stylesheet");
 				}
@@ -936,7 +940,7 @@ public class NormaTransformer {
 
 	}
 
-	private org.w3c.dom.Document createW3CStylesheetDocument(String xslName) {
+	public org.w3c.dom.Document createW3CStylesheetDocument(String xslName) {
 		DocumentBuilder db = createDocumentBuilder();
 		// 
 		org.w3c.dom.Document stylesheetDocument = null;
@@ -965,7 +969,7 @@ public class NormaTransformer {
 		return stylesheetDocument;
 	}
 	
-	private DocumentBuilder createDocumentBuilder() {
+	public static DocumentBuilder createDocumentBuilder() {
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		DocumentBuilder db = null;
 		try {
@@ -988,7 +992,7 @@ public class NormaTransformer {
 	 * @param is stylesheet as stream
 	 * @return
 	 */
-	private org.w3c.dom.Document readAsStream(DocumentBuilder db, String xslName, InputStream is) {
+	public static org.w3c.dom.Document readAsStream(DocumentBuilder db, String xslName, InputStream is) {
 		if (is == null) {
 			throw new IllegalArgumentException("Null stylesheet input: "+xslName);
 		}

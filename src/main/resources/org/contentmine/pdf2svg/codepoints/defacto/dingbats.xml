@@ -1,0 +1,301 @@
+<!--
+    Gatherered from various observations
+
+    Copyright (C) 2012 pm286 <peter.murray.rust@googlemail.com>
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<!-- 
+from http://www.tug.org/pipermail/tex-live/2011-June/029475.html
+
+[MTMI] doesn't exist : "the font MTMI is a virtual one, combining characters
+ from Times Italic with additional characters (such as an italic
+ letter v looking less like the Greek letter nu) contained in a font
+ RMTMI."
+ 
+ -->
+<!-- appears that names take priority over charvals 
+e.g. 
+<character charval="5" charname="Delta1" font="MTMI"/> 
+<character charval="946" charname="null" font="MTMI"/>
+
+the charname appears to take precedence over the charval
+-->
+<codePointSet encoding="Dingbats" id="dingbats" resource="org/contentmine/pdf2svg/codepoints/defacto">
+
+<!--
+#
+#  Name:             Adobe Zapf Dingbats Encoding to Unicode
+#  Unicode version:  2.0
+#  Table version:    1.0
+#  Date:             2011 July 12
+#  
+#  Copyright (c) 1991-2011 Unicode, Inc. All Rights reserved.
+#  
+#  This file is provided as-is by Unicode, Inc. (The Unicode Consortium). No
+#  claims are made as to fitness for any particular purpose. No warranties of
+#  any kind are expressed or implied. The recipient agrees to determine
+#  applicability of information provided. If this file has been provided on
+#  magnetic media by Unicode, Inc., the sole remedy for any claim will be
+#  exchange of defective media within 90 days of receipt.
+#  
+#  Unicode, Inc. hereby grants the right to freely use the information
+#  supplied in this file in the creation of products supporting the
+#  Unicode Standard, and to make copies of this file in any form for
+#  internal or external distribution as long as this notice remains
+#  attached.
+#  
+#  Format: Three tab-delimited fields:
+#
+#    (1) The Unicode value (in hexadecimal)
+#    (2) The Zapf Dingbats Encoding code point (in hexadecimal)
+#    (3) # Unicode 2.0 name
+#    (4) # PostScript character name
+#  
+#  General Notes:
+# 
+#    The Unicode values in this table were produced as the result of
+#    applying the algorithm described in the section "Populating a Unicode
+#    space" in the document "Unicode and Glyph Names," at
+#    http://partners.adobe.com/asn/developer/typeforum/unicodegn.html
+#    to the characters in Zapf Dingbats. Note that some characters, such as
+#    "space", are mapped to 2 Unicode values. 14 characters have assignments in
+#    the Corporate Use Subarea; these are indicated by "(CUS)" in field 4.
+#    Refer to the above document for more details.
+#
+#    2011 July 12: The above link is no longer valid. For comparable,
+#    more current information, see the document, "Glyph", at:
+#    <http://www.adobe.com/devnet/opentype/archives/glyph.html>
+#
+#  Revision History:
+#
+#    [v1.0, 2011 July 12]
+#    Updated terms of use to current wording.
+#    Updated contact information and document link.
+#    No changes to the mapping data.
+#
+#    [v0.2, 30 March 1999] Different algorithm to produce Unicode values (see
+#    notes above) results in some character codes being mapped to 2 Unicode
+#    values; use of Corporate Use subarea values; included BLACK CIRCLE and
+#    RIGHT HALF BLACK CIRCLE. Updated Unicode names to Unicode 2.0 names.
+#    
+#    [v0.1, 5 May 1995] First release.
+#
+#  Use the Unicode reporting form <http://www.unicode.org/reporting.html>
+#    for any questions or comments or to report errors in the data.
+#
+-->
+	<codePoint unicode="U+0020" hex="0020" name="space" note="SPACE"/>
+	<codePoint unicode="U+2701" hex="0021" name="a1"   note="UPPER BLADE SCISSORS"/>
+	<codePoint unicode="U+2702" hex="0022" name="a2"   note="BLACK SCISSORS"/>
+	<codePoint unicode="U+2703" hex="0023" name="a202" note="LOWER BLADE SCISSORS"/>
+	<codePoint unicode="U+2704" hex="0024" name="a3"   note="WHITE SCISSORS"/>
+	<codePoint unicode="U+260E" hex="0025" name="a4"   note="BLACK TELEPHONE"/>
+	<codePoint unicode="U+2706" hex="0026" name="a5"   note="TELEPHONE LOCATION SIGN"/>
+	<codePoint unicode="U+2707" hex="0027" name="a119" note="TAPE DRIVE"/>
+	<codePoint unicode="U+2708" hex="0028" name="a118" note="AIRPLANE"/>
+	<codePoint unicode="U+2709" hex="0029" name="a117" note="ENVELOPE"/>
+	<codePoint unicode="U+261B" hex="002A" name="a11"  note="BLACK RIGHT POINTING INDEX"/>
+	<codePoint unicode="U+261E" hex="002B" name="a12"  note="WHITE RIGHT POINTING INDEX"/>
+	<codePoint unicode="U+270C" hex="002C" name="a13"  note="VICTORY HAND"/>
+	<codePoint unicode="U+270D" hex="002D" name="a14"  note="WRITING HAND"/>
+	<codePoint unicode="U+270E" hex="002E" name="a15"  note="LOWER RIGHT PENCIL"/>
+	<codePoint unicode="U+270F" hex="002F" name="a16"  note="PENCIL"/>
+	<codePoint unicode="U+2710" hex="0030" name="a105" note="UPPER RIGHT PENCIL"/>
+	<codePoint unicode="U+2711" hex="0031" name="a17"  note="WHITE NIB"/>
+	<codePoint unicode="U+2712" hex="0032" name="a18"  note="BLACK NIB"/>
+	<codePoint unicode="U+2713" hex="0033" name="a19"  note="CHECK MARK"/>
+	<codePoint unicode="U+2714" hex="0034" name="a20"  note="HEAVY CHECK MARK"/>
+	<codePoint unicode="U+2715" hex="0035" name="a21"  note="MULTIPLICATION X"/>
+	<codePoint unicode="U+2716" hex="0036" name="a22"  note="HEAVY MULTIPLICATION X"/>
+	<codePoint unicode="U+2717" hex="0037" name="a23"  note="BALLOT X"/>
+	<codePoint unicode="U+2718" hex="0038" name="a24"  note="HEAVY BALLOT X"/>
+	<codePoint unicode="U+2719" hex="0039" name="a25"  note="OUTLINED GREEK CROSS"/>
+	<codePoint unicode="U+271A" hex="003A" name="a26"  note="HEAVY GREEK CROSS"/>
+	<codePoint unicode="U+271B" hex="003B" name="a27"  note="OPEN CENTRE CROSS"/>
+	<codePoint unicode="U+271C" hex="003C" name="a28"  note="HEAVY OPEN CENTRE CROSS"/>
+	<codePoint unicode="U+271D" hex="003D" name="a6"   note="LATIN CROSS"/>
+	<codePoint unicode="U+271E" hex="003E" name="a7"   note="SHADOWED WHITE LATIN CROSS"/>
+	<codePoint unicode="U+271F" hex="003F" name="a8"   note="OUTLINED LATIN CROSS"/>
+	<codePoint unicode="U+2720" hex="0040" name="a9"   note="MALTESE CROSS"/>
+	<codePoint unicode="U+2721" hex="0041" name="a10"  note="STAR OF DAVID"/>
+	<codePoint unicode="U+2722" hex="0042" name="a29"  note="FOUR TEARDROP-SPOKED ASTERISK"/>
+	<codePoint unicode="U+2723" hex="0043" name="a30"  note="FOUR BALLOON-SPOKED ASTERISK"/>
+	<codePoint unicode="U+2724" hex="0044" name="a31"  note="HEAVY FOUR BALLOON-SPOKED ASTERISK"/>
+	<codePoint unicode="U+2725" hex="0045" name="a32"  note="FOUR CLUB-SPOKED ASTERISK"/>
+	<codePoint unicode="U+2726" hex="0046" name="a33"  note="BLACK FOUR POINTED STAR"/>
+	<codePoint unicode="U+2727" hex="0047" name="a34"  note="WHITE FOUR POINTED STAR"/>
+	<codePoint unicode="U+2605" hex="0048" name="a35"  note="BLACK STAR"/>
+	<codePoint unicode="U+2729" hex="0049" name="a36"  note="STRESS OUTLINED WHITE STAR"/>
+	<codePoint unicode="U+272A" hex="004A" name="a37"  note="CIRCLED WHITE STAR"/>
+	<codePoint unicode="U+272B" hex="004B" name="a38"  note="OPEN CENTRE BLACK STAR"/>
+	<codePoint unicode="U+272C" hex="004C" name="a39"  note="BLACK CENTRE WHITE STAR"/>
+	<codePoint unicode="U+272D" hex="004D" name="a40"  note="OUTLINED BLACK STAR"/>
+	<codePoint unicode="U+272E" hex="004E" name="a41"  note="HEAVY OUTLINED BLACK STAR"/>
+	<codePoint unicode="U+272F" hex="004F" name="a42"  note="PINWHEEL STAR"/>
+	<codePoint unicode="U+2730" hex="0050" name="a43"  note="SHADOWED WHITE STAR"/>
+	<codePoint unicode="U+2731" hex="0051" name="a44"  note="HEAVY ASTERISK"/>
+	<codePoint unicode="U+2732" hex="0052" name="a45"  note="OPEN CENTRE ASTERISK"/>
+	<codePoint unicode="U+2733" hex="0053" name="a46"  note="EIGHT SPOKED ASTERISK"/>
+	<codePoint unicode="U+2734" hex="0054" name="a47"  note="EIGHT POINTED BLACK STAR"/>
+	<codePoint unicode="U+2735" hex="0055" name="a48"  note="EIGHT POINTED PINWHEEL STAR"/>
+	<codePoint unicode="U+2736" hex="0056" name="a49"  note="SIX POINTED BLACK STAR"/>
+	<codePoint unicode="U+2737" hex="0057" name="a50"  note="EIGHT POINTED RECTILINEAR BLACK STAR"/>
+	<codePoint unicode="U+2738" hex="0058" name="a51"  note="HEAVY EIGHT POINTED RECTILINEAR BLACK STAR"/>
+	<codePoint unicode="U+2739" hex="0059" name="a52"  note="TWELVE POINTED BLACK STAR"/>
+	<codePoint unicode="U+273A" hex="005A" name="a53"  note="SIXTEEN POINTED ASTERISK"/>
+	<codePoint unicode="U+273B" hex="005B" name="a54"  note="TEARDROP-SPOKED ASTERISK"/>
+	<codePoint unicode="U+273C" hex="005C" name="a55"  note="OPEN CENTRE TEARDROP-SPOKED ASTERISK"/>
+	<codePoint unicode="U+273D" hex="005D" name="a56"  note="HEAVY TEARDROP-SPOKED ASTERISK"/>
+	<codePoint unicode="U+273E" hex="005E" name="a57"  note="SIX PETALLED BLACK AND WHITE FLORETTE"/>
+	<codePoint unicode="U+273F" hex="005F" name="a58"  note="BLACK FLORETTE"/>
+	<codePoint unicode="U+2740" hex="0060" name="a59"  note="WHITE FLORETTE"/>
+	<codePoint unicode="U+2741" hex="0061" name="a60"  note="EIGHT PETALLED OUTLINED BLACK FLORETTE"/>
+	<codePoint unicode="U+2742" hex="0062" name="a61"  note="CIRCLED OPEN CENTRE EIGHT POINTED STAR"/>
+	<codePoint unicode="U+2743" hex="0063" name="a62"  note="HEAVY TEARDROP-SPOKED PINWHEEL ASTERISK"/>
+	<codePoint unicode="U+2744" hex="0064" name="a63"  note="SNOWFLAKE"/>
+	<codePoint unicode="U+2745" hex="0065" name="a64"  note="TIGHT TRIFOLIATE SNOWFLAKE"/>
+	<codePoint unicode="U+2746" hex="0066" name="a65"  note="HEAVY CHEVRON SNOWFLAKE"/>
+	<codePoint unicode="U+2747" hex="0067" name="a66"  note="SPARKLE"/>
+	<codePoint unicode="U+2748" hex="0068" name="a67"  note="HEAVY SPARKLE"/>
+	<codePoint unicode="U+2749" hex="0069" name="a68"  note="BALLOON-SPOKED ASTERISK"/>
+	<codePoint unicode="U+274A" hex="006A" name="a69"  note="EIGHT TEARDROP-SPOKED PROPELLER ASTERISK"/>
+	<codePoint unicode="U+274B" hex="006B" name="a70"  note="HEAVY EIGHT TEARDROP-SPOKED PROPELLER ASTERISK"/>
+	<codePoint unicode="U+25CF" hex="006C" name="a71"  note="BLACK CIRCLE"/>
+	<codePoint unicode="U+274D" hex="006D" name="a72"  note="SHADOWED WHITE CIRCLE"/>
+	<codePoint unicode="U+25A0" hex="006E" name="a73"  note="BLACK SQUARE"/>
+	<codePoint unicode="U+274F" hex="006F" name="a74"  note="LOWER RIGHT DROP-SHADOWED WHITE SQUARE"/>
+	<codePoint unicode="U+2750" hex="0070" name="a203" note="UPPER RIGHT DROP-SHADOWED WHITE SQUARE"/>
+	<codePoint unicode="U+2751" hex="0071" name="a75"  note="LOWER RIGHT SHADOWED WHITE SQUARE"/>
+	<codePoint unicode="U+2752" hex="0072" name="a204" note="UPPER RIGHT SHADOWED WHITE SQUARE"/>
+	<codePoint unicode="U+25B2" hex="0073" name="a76"  note="BLACK UP-POINTING TRIANGLE"/>
+	<codePoint unicode="U+25BC" hex="0074" name="a77"  note="BLACK DOWN-POINTING TRIANGLE"/>
+	<codePoint unicode="U+25C6" hex="0075" name="a78"  note="BLACK DIAMOND"/>
+	<codePoint unicode="U+2756" hex="0076" name="a79"  note="BLACK DIAMOND MINUS WHITE X"/>
+	<codePoint unicode="U+25D7" hex="0077" name="a81"  note="RIGHT HALF BLACK CIRCLE"/>
+	<codePoint unicode="U+2758" hex="0078" name="a82"  note="LIGHT VERTICAL BAR"/>
+	<codePoint unicode="U+2759" hex="0079" name="a83"  note="MEDIUM VERTICAL BAR"/>
+	<codePoint unicode="U+275A" hex="007A" name="a84"  note="HEAVY VERTICAL BAR"/>
+	<codePoint unicode="U+275B" hex="007B" name="a97"  note="HEAVY SINGLE TURNED COMMA QUOTATION MARK ORNAMENT"/>
+	<codePoint unicode="U+275C" hex="007C" name="a98"  note="HEAVY SINGLE COMMA QUOTATION MARK ORNAMENT"/>
+	<codePoint unicode="U+275D" hex="007D" name="a99"  note="HEAVY DOUBLE TURNED COMMA QUOTATION MARK ORNAMENT"/>
+	<codePoint unicode="U+275E" hex="007E" name="a100" note="HEAVY DOUBLE COMMA QUOTATION MARK ORNAMENT"/>
+	<codePoint unicode="U+F8D7" hex="0080" name="a89"  note="MEDIUM LEFT PARENTHESIS ORNAMENT"/>
+	<codePoint unicode="U+F8D8" hex="0081" name="a90"  note="MEDIUM RIGHT PARENTHESIS ORNAMENT"/>
+	<codePoint unicode="U+F8D9" hex="0082" name="a93"  note="MEDIUM FLATTENED LEFT PARENTHESIS ORNAMENT"/>
+	<codePoint unicode="U+F8DA" hex="0083" name="a94"  note="MEDIUM FLATTENED RIGHT PARENTHESIS ORNAMENT"/>
+	<codePoint unicode="U+F8DB" hex="0084" name="a91"  note="MEDIUM LEFT-POINTING ANGLE BRACKET ORNAMENT"/>
+	<codePoint unicode="U+F8DC" hex="0085" name="a92"  note="MEDIUM RIGHT-POINTING ANGLE BRACKET ORNAMENT"/>
+	<codePoint unicode="U+F8DD" hex="0086" name="a205" note="HEAVY LEFT-POINTING ANGLE QUOTATION MARK ORNAMENT"/>
+	<codePoint unicode="U+F8DE" hex="0087" name="a85"  note="HEAVY RIGHT-POINTING ANGLE QUOTATION MARK ORNAMENT"/>
+	<codePoint unicode="U+F8DF" hex="0088" name="a206" note="HEAVY LEFT-POINTING ANGLE BRACKET ORNAMENT"/>
+	<codePoint unicode="U+F8E0" hex="0089" name="a86"  note="HEAVY RIGHT-POINTING ANGLE BRACKET ORNAMENT"/>
+	<codePoint unicode="U+F8E1" hex="008A" name="a87"  note="LIGHT LEFT TORTOISE SHELL BRACKET ORNAMENT"/>
+	<codePoint unicode="U+F8E2" hex="008B" name="a88"  note="LIGHT RIGHT TORTOISE SHELL BRACKET ORNAMENT"/>
+	<codePoint unicode="U+F8E3" hex="008C" name="a95"  note="MEDIUM LEFT CURLY BRACKET ORNAMENT"/>
+	<codePoint unicode="U+F8E4" hex="008D" name="a96"  note="MEDIUM RIGHT CURLY BRACKET ORNAMENT"/>
+	<codePoint unicode="U+2761" hex="00A1" name="a101" note="CURVED STEM PARAGRAPH SIGN ORNAMENT"/>
+	<codePoint unicode="U+2762" hex="00A2" name="a102" note="HEAVY EXCLAMATION MARK ORNAMENT"/>
+	<codePoint unicode="U+2763" hex="00A3" name="a103" note="HEAVY HEART EXCLAMATION MARK ORNAMENT"/>
+	<codePoint unicode="U+2764" hex="00A4" name="a104" note="HEAVY BLACK HEART"/>
+	<codePoint unicode="U+2765" hex="00A5" name="a106" note="ROTATED HEAVY BLACK HEART BULLET"/>
+	<codePoint unicode="U+2766" hex="00A6" name="a107" note="FLORAL HEART"/>
+	<codePoint unicode="U+2767" hex="00A7" name="a108" note="ROTATED FLORAL HEART BULLET"/>
+	<codePoint unicode="U+2663" hex="00A8" name="a112" note="BLACK CLUB SUIT"/>
+	<codePoint unicode="U+2666" hex="00A9" name="a111" note="BLACK DIAMOND SUIT"/>
+	<codePoint unicode="U+2665" hex="00AA" name="a110" note="BLACK HEART SUIT"/>
+	<codePoint unicode="U+2660" hex="00AB" name="a109" note="BLACK SPADE SUIT"/>
+	<codePoint unicode="U+2460" hex="00AC" name="a120" note="CIRCLED DIGIT ONE"/>
+	<codePoint unicode="U+2461" hex="00AD" name="a121" note="CIRCLED DIGIT TWO"/>
+	<codePoint unicode="U+2462" hex="00AE" name="a122" note="CIRCLED DIGIT THREE"/>
+	<codePoint unicode="U+2463" hex="00AF" name="a123" note="CIRCLED DIGIT FOUR"/>
+	<codePoint unicode="U+2464" hex="00B0" name="a124" note="CIRCLED DIGIT FIVE"/>
+	<codePoint unicode="U+2465" hex="00B1" name="a125" note="CIRCLED DIGIT SIX"/>
+	<codePoint unicode="U+2466" hex="00B2" name="a126" note="CIRCLED DIGIT SEVEN"/>
+	<codePoint unicode="U+2467" hex="00B3" name="a127" note="CIRCLED DIGIT EIGHT"/>
+	<codePoint unicode="U+2468" hex="00B4" name="a128" note="CIRCLED DIGIT NINE"/>
+	<codePoint unicode="U+2469" hex="00B5" name="a129" note="CIRCLED NUMBER TEN"/>
+	<codePoint unicode="U+2776" hex="00B6" name="a130" note="DINGBAT NEGATIVE CIRCLED DIGIT ONE"/>
+	<codePoint unicode="U+2777" hex="00B7" name="a131" note="DINGBAT NEGATIVE CIRCLED DIGIT TWO"/>
+	<codePoint unicode="U+2778" hex="00B8" name="a132" note="DINGBAT NEGATIVE CIRCLED DIGIT THREE"/>
+	<codePoint unicode="U+2779" hex="00B9" name="a133" note="DINGBAT NEGATIVE CIRCLED DIGIT FOUR"/>
+	<codePoint unicode="U+277A" hex="00BA" name="a134" note="DINGBAT NEGATIVE CIRCLED DIGIT FIVE"/>
+	<codePoint unicode="U+277B" hex="00BB" name="a135" note="DINGBAT NEGATIVE CIRCLED DIGIT SIX"/>
+	<codePoint unicode="U+277C" hex="00BC" name="a136" note="DINGBAT NEGATIVE CIRCLED DIGIT SEVEN"/>
+	<codePoint unicode="U+277D" hex="00BD" name="a137" note="DINGBAT NEGATIVE CIRCLED DIGIT EIGHT"/>
+	<codePoint unicode="U+277E" hex="00BE" name="a138" note="DINGBAT NEGATIVE CIRCLED DIGIT NINE"/>
+	<codePoint unicode="U+277F" hex="00BF" name="a139" note="DINGBAT NEGATIVE CIRCLED NUMBER TEN"/>
+	<codePoint unicode="U+2780" hex="00C0" name="a140" note="DINGBAT CIRCLED SANS-SERIF DIGIT ONE"/>
+	<codePoint unicode="U+2781" hex="00C1" name="a141" note="DINGBAT CIRCLED SANS-SERIF DIGIT TWO"/>
+	<codePoint unicode="U+2782" hex="00C2" name="a142" note="DINGBAT CIRCLED SANS-SERIF DIGIT THREE"/>
+	<codePoint unicode="U+2783" hex="00C3" name="a143" note="DINGBAT CIRCLED SANS-SERIF DIGIT FOUR"/>
+	<codePoint unicode="U+2784" hex="00C4" name="a144" note="DINGBAT CIRCLED SANS-SERIF DIGIT FIVE"/>
+	<codePoint unicode="U+2785" hex="00C5" name="a145" note="DINGBAT CIRCLED SANS-SERIF DIGIT SIX"/>
+	<codePoint unicode="U+2786" hex="00C6" name="a146" note="DINGBAT CIRCLED SANS-SERIF DIGIT SEVEN"/>
+	<codePoint unicode="U+2787" hex="00C7" name="a147" note="DINGBAT CIRCLED SANS-SERIF DIGIT EIGHT"/>
+	<codePoint unicode="U+2788" hex="00C8" name="a148" note="DINGBAT CIRCLED SANS-SERIF DIGIT NINE"/>
+	<codePoint unicode="U+2789" hex="00C9" name="a149" note="DINGBAT CIRCLED SANS-SERIF NUMBER TEN"/>
+	<codePoint unicode="U+278A" hex="00CA" name="a150" note="DINGBAT NEGATIVE CIRCLED SANS-SERIF DIGIT ONE"/>
+	<codePoint unicode="U+278B" hex="00CB" name="a151" note="DINGBAT NEGATIVE CIRCLED SANS-SERIF DIGIT TWO"/>
+	<codePoint unicode="U+278C" hex="00CC" name="a152" note="DINGBAT NEGATIVE CIRCLED SANS-SERIF DIGIT THREE"/>
+	<codePoint unicode="U+278D" hex="00CD" name="a153" note="DINGBAT NEGATIVE CIRCLED SANS-SERIF DIGIT FOUR"/>
+	<codePoint unicode="U+278E" hex="00CE" name="a154" note="DINGBAT NEGATIVE CIRCLED SANS-SERIF DIGIT FIVE"/>
+	<codePoint unicode="U+278F" hex="00CF" name="a155" note="DINGBAT NEGATIVE CIRCLED SANS-SERIF DIGIT SIX"/>
+	<codePoint unicode="U+2790" hex="00D0" name="a156" note="DINGBAT NEGATIVE CIRCLED SANS-SERIF DIGIT SEVEN"/>
+	<codePoint unicode="U+2791" hex="00D1" name="a157" note="DINGBAT NEGATIVE CIRCLED SANS-SERIF DIGIT EIGHT"/>
+	<codePoint unicode="U+2792" hex="00D2" name="a158" note="DINGBAT NEGATIVE CIRCLED SANS-SERIF DIGIT NINE"/>
+	<codePoint unicode="U+2793" hex="00D3" name="a159" note="DINGBAT NEGATIVE CIRCLED SANS-SERIF NUMBER TEN"/>
+	<codePoint unicode="U+2794" hex="00D4" name="a160" note="HEAVY WIDE-HEADED RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+2192" hex="00D5" name="a161" note="RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+2194" hex="00D6" name="a163" note="LEFT RIGHT ARROW"/>
+	<codePoint unicode="U+2195" hex="00D7" name="a164" note="UP DOWN ARROW"/>
+	<codePoint unicode="U+2798" hex="00D8" name="a196" note="HEAVY SOUTH EAST ARROW"/>
+	<codePoint unicode="U+2799" hex="00D9" name="a165" note="HEAVY RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+279A" hex="00DA" name="a192" note="HEAVY NORTH EAST ARROW"/>
+	<codePoint unicode="U+279B" hex="00DB" name="a166" note="DRAFTING POINT RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+279C" hex="00DC" name="a167" note="HEAVY ROUND-TIPPED RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+279D" hex="00DD" name="a168" note="TRIANGLE-HEADED RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+279E" hex="00DE" name="a169" note="HEAVY TRIANGLE-HEADED RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+279F" hex="00DF" name="a170" note="DASHED TRIANGLE-HEADED RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+27A0" hex="00E0" name="a171" note="HEAVY DASHED TRIANGLE-HEADED RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+27A1" hex="00E1" name="a172" note="BLACK RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+27A2" hex="00E2" name="a173" note="THREE-D TOP-LIGHTED RIGHTWARDS ARROWHEAD"/>
+	<codePoint unicode="U+27A3" hex="00E3" name="a162" note="THREE-D BOTTOM-LIGHTED RIGHTWARDS ARROWHEAD"/>
+	<codePoint unicode="U+27A4" hex="00E4" name="a174" note="BLACK RIGHTWARDS ARROWHEAD"/>
+	<codePoint unicode="U+27A5" hex="00E5" name="a175" note="HEAVY BLACK CURVED DOWNWARDS AND RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+27A6" hex="00E6" name="a176" note="HEAVY BLACK CURVED UPWARDS AND RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+27A7" hex="00E7" name="a177" note="SQUAT BLACK RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+27A8" hex="00E8" name="a178" note="HEAVY CONCAVE-POINTED BLACK RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+27A9" hex="00E9" name="a179" note="RIGHT-SHADED WHITE RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+27AA" hex="00EA" name="a193" note="LEFT-SHADED WHITE RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+27AB" hex="00EB" name="a180" note="BACK-TILTED SHADOWED WHITE RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+27AC" hex="00EC" name="a199" note="FRONT-TILTED SHADOWED WHITE RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+27AD" hex="00ED" name="a181" note="HEAVY LOWER RIGHT-SHADOWED WHITE RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+27AE" hex="00EE" name="a200" note="HEAVY UPPER RIGHT-SHADOWED WHITE RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+27AF" hex="00EF" name="a182" note="NOTCHED LOWER RIGHT-SHADOWED WHITE RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+27B1" hex="00F1" name="a201" note="NOTCHED UPPER RIGHT-SHADOWED WHITE RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+27B2" hex="00F2" name="a183" note="CIRCLED HEAVY WHITE RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+27B3" hex="00F3" name="a184" note="WHITE-FEATHERED RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+27B4" hex="00F4" name="a197" note="BLACK-FEATHERED SOUTH EAST ARROW"/>
+	<codePoint unicode="U+27B5" hex="00F5" name="a185" note="BLACK-FEATHERED RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+27B6" hex="00F6" name="a194" note="BLACK-FEATHERED NORTH EAST ARROW"/>
+	<codePoint unicode="U+27B7" hex="00F7" name="a198" note="HEAVY BLACK-FEATHERED SOUTH EAST ARROW"/>
+	<codePoint unicode="U+27B8" hex="00F8" name="a186" note="HEAVY BLACK-FEATHERED RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+27B9" hex="00F9" name="a195" note="HEAVY BLACK-FEATHERED NORTH EAST ARROW"/>
+	<codePoint unicode="U+27BA" hex="00FA" name="a187" note="TEARDROP-BARBED RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+27BB" hex="00FB" name="a188" note="HEAVY TEARDROP-SHANKED RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+27BC" hex="00FC" name="a189" note="WEDGE-TAILED RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+27BD" hex="00FD" name="a190" note="HEAVY WEDGE-TAILED RIGHTWARDS ARROW"/>
+	<codePoint unicode="U+27BE" hex="00FE" name="a191" note="OPEN-OUTLINED RIGHTWARDS ARROW"/>
+</codePointSet>

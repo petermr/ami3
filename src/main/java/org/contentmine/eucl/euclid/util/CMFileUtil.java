@@ -126,11 +126,16 @@ public class CMFileUtil {
 			LOG.debug("null target file); assume it will be created");
 			return true;
 		}
-		if (debug) LOG.debug("MAKE "+fileToBeCreated+" from "+existingEarlierFiles);
+		if (debug) LOG.debug("MAKE "+fileToBeCreated+" "+fileToBeCreated.exists()+" from "+existingEarlierFiles);
 		if (!fileToBeCreated.exists()) {
 			if (debug) LOG.debug("Target "+fileToBeCreated+" does not exist");
 			return true;
 		}
+		if (existingEarlierFiles.length == 1 && existingEarlierFiles[0].equals(fileToBeCreated)) {
+			if (debug) LOG.debug("depends on single file "+fileToBeCreated);
+			return false;
+		}
+			
 		for (File existingFile : existingEarlierFiles) {
 			if (existingFile != null && !existingFile.exists()) {
 				if (FileUtils.isFileNewer(existingFile, fileToBeCreated)) {

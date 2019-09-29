@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codePointSet encoding="symbolFont" id="symbolFont" resource="org/contentmine/pdf2svg/codepoints/symbol">
+
+    <codePoint decimal="34" name="universal" htmlEnt="forall" unicode="2200" unicodeDecimal="8704" unicodeName="For all"/>
+    <codePoint decimal="36" name="existential" htmlEnt="exist" unicode="2203" unicodeDecimal="8707" unicodeName="There exists"/>
+    <codePoint decimal="39" name="suchthat" unicode="220D" unicodeDecimal="8717" unicodeName="Small contains as member"/>
+    <codePoint decimal="42" name="asteriskmath" htmlEnt="lowast" unicode="2217" unicodeDecimal="8727" unicodeName="Asterisk operator"/>
+    <codePoint decimal="45" name="minus" htmlEnt="minus" unicode="2212" unicodeDecimal="8722" unicodeName="Minus sign"/>
+    <codePoint decimal="64" name="congruent" htmlEnt="cong" unicode="" unicodeDecimal="8773" unicodeName="Approximately equal to"/>
+    <!-- Greek -->
+    <codePoint decimal="65" name="A" note="Alpha" htmlEnt="Alpha" unicode="" unicodeDecimal="913" unicodeName="Greek capital letter alpha"/>
+    <codePoint decimal="66" name="B" note="Beta" htmlEnt="Beta" unicode="" unicodeDecimal="914" unicodeName="Greek capital letter beta"/>
+    <codePoint decimal="67" name="C" note="Chi" htmlEnt="Chi" unicode="" unicodeDecimal="935" unicodeName="Greek capital letter chi"/>
+    <codePoint decimal="70" name="D" note="Delta" htmlEnt="Delta" unicode="" unicodeDecimal="916" unicodeName="Greek capital letter delta"/>
+    <codePoint decimal="71" name="E" note="Epsilon" htmlEnt="Epsilon" unicode="" unicodeDecimal="917" unicodeName="Greek capital letter epsilon"/>
+    <codePoint decimal="71" name="G" note="Gamma" htmlEnt="Gamma" unicode="" unicodeDecimal="915" unicodeName="Greek capital letter gamma"/>
+    <codePoint decimal="72" name="F" note="Phi" htmlEnt="Phi" unicode="" unicodeDecimal="934" unicodeName="Greek capital letter phi"/>
+    <codePoint decimal="72" name="H" note="Eta" htmlEnt="Eta" unicode="" unicodeDecimal="919" unicodeName="Greek capital letter eta"/>
+    <codePoint decimal="73" name="I" note="Iota" htmlEnt="Iota" unicode="" unicodeDecimal="921" unicodeName="Greek capital letter iota"/>
+    <codePoint decimal="74" name="J" note="theta1" htmlEnt="thetasym" unicode="" unicodeDecimal="977" unicodeName="Greek theta symbol"/>
+    <codePoint decimal="75" name="K" note="Kappa" htmlEnt="Kappa" unicode="" unicodeDecimal="922" unicodeName="Greek capital letter kappa"/>
+    <codePoint decimal="76" name="L" note="Lambda" htmlEnt="Lambda" unicode="" unicodeDecimal="923" unicodeName="Greek capital letter lamda"/>
+    <codePoint decimal="77" name="M" note="Mu" htmlEnt="Mu" unicode="" unicodeDecimal="924" unicodeName="Greek capital letter mu"/>
+    <codePoint decimal="78" name="N" note="Nu" htmlEnt="Nu" unicode="" unicodeDecimal="925" unicodeName="Greek capital letter nu"/>
+    <codePoint decimal="79" name="O" note="Omicron" htmlEnt="Omicron" unicode="" unicodeDecimal="927" unicodeName="Greek capital letter omicron"/>
+    <codePoint decimal="80" name="P" note="Pi" htmlEnt="Pi" unicode="" unicodeDecimal="928" unicodeName="Greek capital letter pi"/>
+    <codePoint decimal="81" name="Q" note="Theta" htmlEnt="Theta" unicode="" unicodeDecimal="920" unicodeName="Greek capital letter theta"/>
+    <codePoint decimal="82" name="R" note="Rho" htmlEnt="Rho" unicode="" unicodeDecimal="929" unicodeName="Greek capital letter rho"/>
+    <codePoint decimal="83" name="S" note="Sigma" htmlEnt="Sigma" unicode="" unicodeDecimal="931" unicodeName="Greek capital letter sigma"/>
+    <codePoint decimal="84" name="T" note="Tau" htmlEnt="Tau" unicode="" unicodeDecimal="932" unicodeName="Greek capital letter tau"/>
+    <codePoint decimal="85" name="U" note="Upsilon" htmlEnt="Upsilon" unicode="" unicodeDecimal="933" unicodeName="Greek capital letter upsilon"/>
+    <codePoint decimal="86" name="V" note="sigma1" htmlEnt="sigmaf" unicode="" unicodeDecimal="962" unicodeName="Greek small letter final sigma"/>
+    <codePoint decimal="87" name="W" note="Omega" htmlEnt="Omega" unicode="" unicodeDecimal="937" unicodeName="Greek capital letter omega"/>
+    <codePoint decimal="88" name="X" note="Xi" htmlEnt="Xi" unicode="" unicodeDecimal="926" unicodeName="Greek capital letter xi"/>
+    <codePoint decimal="89" name="Y" note="Psi" htmlEnt="Psi" unicode="" unicodeDecimal="936" unicodeName="Greek capital letter psi"/>
+    <codePoint decimal="90" name="Z" note="Zeta" htmlEnt="Zeta" unicode="" unicodeDecimal="918" unicodeName="Greek capital letter zeta"/>
+    <!-- -->
+    <codePoint decimal="92" name="therefore" htmlEnt="there4" unicode="" unicodeDecimal="8756" unicodeName="Therefore"/>
+    <codePoint decimal="94" name="perpendicular" htmlEnt="perp" unicode="" unicodeDecimal="8869" unicodeName="Up tack"/>
+    <!--more greek -->
+    <codePoint decimal="97" name="a" note="alpha" htmlEnt="alpha" unicode="" unicodeDecimal="945" unicodeName="Greek small letter alpha"/>
+    <codePoint decimal="98" name="b" note="beta" htmlEnt="beta" unicode="" unicodeDecimal="946" unicodeName="Greek small letter beta"/>
+    <codePoint decimal="99" name="c" note="chi" htmlEnt="chi" unicode="" unicodeDecimal="967" unicodeName="Greek small letter chi"/>
+    <codePoint decimal="100" name="d" note="delta" htmlEnt="delta" unicode="" unicodeDecimal="948" unicodeName="Greek small letter delta"/>
+    <codePoint decimal="101" name="e" note="epsilon" htmlEnt="epsilon" unicode="" unicodeDecimal="949" unicodeName="Greek small letter epsilon"/>
+    <codePoint decimal="102" name="f" note="phi" htmlEnt="phi" unicode="" unicodeDecimal="966" unicodeName="Greek small letter phi"/>
+    <codePoint decimal="103" name="g" note="gamma" htmlEnt="gamma" unicode="" unicodeDecimal="947" unicodeName="Greek small letter gamma"/>
+    <codePoint decimal="104" name="h" note="eta" htmlEnt="eta" unicode="" unicodeDecimal="951" unicodeName="Greek small letter eta"/>
+    <codePoint decimal="105" name="i" note="iota" htmlEnt="iota" unicode="" unicodeDecimal="953" unicodeName="Greek small letter iota"/>
+    <codePoint decimal="106" name="j" note="phi1" unicode="" unicodeDecimal="981" unicodeName="Greek phi symbol"/>
+    <codePoint decimal="107" name="k" note="kappa" htmlEnt="kappa" unicode="" unicodeDecimal="954" unicodeName="Greek small letter kappa"/>
+    <codePoint decimal="108" name="l" note="lambda" htmlEnt="lambda" unicode="" unicodeDecimal="955" unicodeName="Greek small letter lamda"/>
+    <codePoint decimal="109" name="m" note="mu" htmlEnt="mu" unicode="" unicodeDecimal="956" unicodeName="Greek small letter mu"/>
+    <codePoint decimal="110" name="n" note="nu" htmlEnt="nu" unicode="" unicodeDecimal="957" unicodeName="Greek small letter nu"/>
+    <codePoint decimal="111" name="o" note="omicron" htmlEnt="omicron" unicode="" unicodeDecimal="959" unicodeName="Greek small letter omicron"/>
+    <codePoint decimal="112" name="p" note="pi" htmlEnt="pi" unicode="" unicodeDecimal="960" unicodeName="Greek small letter pi"/>
+    <codePoint decimal="113" name="q" note="theta" htmlEnt="theta" unicode="" unicodeDecimal="952" unicodeName="Greek small letter theta"/>
+    <codePoint decimal="114" name="r" note="rho" htmlEnt="rho" unicode="" unicodeDecimal="961" unicodeName="Greek small letter rho"/>
+    <codePoint decimal="115" name="s" note="sigma" htmlEnt="sigma" unicode="" unicodeDecimal="963" unicodeName="Greek small letter sigma"/>
+    <codePoint decimal="116" name="t" note="tau" htmlEnt="tau" unicode="" unicodeDecimal="964" unicodeName="Greek small letter tau"/>
+    <codePoint decimal="117" name="u" note="upsilon" htmlEnt="upsilon" unicode="" unicodeDecimal="965" unicodeName="Greek small letter upsilon"/>
+    <codePoint decimal="118" name="v" note="omega1" htmlEnt="piv" unicode="" unicodeDecimal="982" unicodeName="Greek pi symbol"/>
+    <codePoint decimal="119" name="w" note="omega" htmlEnt="omega" unicode="" unicodeDecimal="969" unicodeName="Greek small letter omega"/>
+    <codePoint decimal="120" name="x" note="xi" htmlEnt="xi" unicode="" unicodeDecimal="958" unicodeName="Greek small letter xi"/>
+    <codePoint decimal="121" name="y" note="psi" htmlEnt="psi" unicode="" unicodeDecimal="968" unicodeName="Greek small letter psi"/>
+    <codePoint decimal="122" name="z" note="zeta" htmlEnt="zeta" unicode="" unicodeDecimal="950" unicodeName="Greek small letter zeta"/>
+    <!-- -->
+    <codePoint decimal="126" name="similar" htmlEnt="sim" unicode="223C" unicodeDecimal="8764" unicodeName="Tilde operator"/>
+    <codePoint decimal="161" name="Upsilon1" htmlEnt="upsih" unicode="" unicodeDecimal="978" unicodeName="Greek upsilon with hook symbol"/>
+    <codePoint decimal="162" name="minute" htmlEnt="prime" unicode="" unicodeDecimal="8242" unicodeName="Prime"/>
+    <codePoint decimal="163" name="lessequal" htmlEnt="le" unicode="" unicodeDecimal="8804" unicodeName="Less-than or equal to"/>
+    <codePoint decimal="164" name="fraction" htmlEnt="frasl" unicode="" unicodeDecimal="8260" unicodeName="Fraction slash"/>
+    <codePoint decimal="165" name="infinity" htmlEnt="infin" unicode="" unicodeDecimal="8734" unicodeName="Infinity"/>
+    <codePoint decimal="166" name="florin" htmlEnt="fnof" unicode="" unicodeDecimal="402" unicodeName="Latin small letter f with hook"/>
+    <codePoint decimal="167" name="club" htmlEnt="clubs" unicode="" unicodeDecimal="9827" unicodeName="Black club suit"/>
+    <codePoint decimal="168" name="diamond" htmlEnt="diams" unicode="" unicodeDecimal="9830" unicodeName="Black diamond suit"/>
+    <codePoint decimal="169" name="heart" htmlEnt="hearts" unicode="" unicodeDecimal="9829" unicodeName="Black heart suit"/>
+    <codePoint decimal="170" name="spade" htmlEnt="spades" unicode="" unicodeDecimal="9824" unicodeName="Black spade suit"/>
+    <codePoint decimal="171" name="arrowboth" htmlEnt="harr" unicode="" unicodeDecimal="8596" unicodeName="Left right arrow"/>
+    <codePoint decimal="172" name="arrowleft" htmlEnt="larr" unicode="" unicodeDecimal="8592" unicodeName="Leftwards arrow"/>
+    <codePoint decimal="173" name="arrowup" htmlEnt="uarr" unicode="" unicodeDecimal="8593" unicodeName="Upwards arrow"/>
+    <codePoint decimal="174" name="arrowright" htmlEnt="rarr" unicode="" unicodeDecimal="8594" unicodeName="Rightwards arrow"/>
+    <codePoint decimal="175" name="arrowdown" htmlEnt="darr" unicode="" unicodeDecimal="8595" unicodeName="Downwards arrow"/>
+    <codePoint decimal="176" name="degree" htmlEnt="deg" unicode="" unicodeDecimal="176" unicodeName="Degree sign"/>
+    <codePoint decimal="177" name="plusminus" htmlEnt="plusmn" unicode="" unicodeDecimal="177" unicodeName="Plus-minus sign"/>
+    <codePoint decimal="178" name="second" htmlEnt="Prime" unicode="" unicodeDecimal="8243" unicodeName="Double prime"/>
+    <codePoint decimal="179" name="greaterequal" htmlEnt="ge" unicode="" unicodeDecimal="8805" unicodeName="Greater-than or equal to"/>
+    <codePoint decimal="180" name="multiply" htmlEnt="times" unicode="" unicodeDecimal="215" unicodeName="Multiplication sign"/>
+    <codePoint decimal="181" name="proportional" htmlEnt="prop" unicode="" unicodeDecimal="8733" unicodeName="Proportional to"/>
+    <codePoint decimal="182" name="partialdiff" htmlEnt="part" unicode="2202" unicodeDecimal="8706" unicodeName="Partial differential"/>
+    <codePoint decimal="183" name="bullet" unicode="" unicodeDecimal="8729" unicodeName="Bullet operator"/>
+    <codePoint decimal="184" name="divide" htmlEnt="divide" unicode="" unicodeDecimal="247" unicodeName="Division sign"/>
+    <codePoint decimal="185" name="notequal" htmlEnt="ne" unicode="" unicodeDecimal="8800" unicodeName="Not equal to"/>
+    <codePoint decimal="186" name="equivalence" htmlEnt="equiv" unicode="" unicodeDecimal="8801" unicodeName="Identical to"/>
+    <codePoint decimal="187" name="approxequal" htmlEnt="asymp" unicode="" unicodeDecimal="8776" unicodeName="Almost equal to"/>
+    <codePoint decimal="188" name="ellipsis" htmlEnt="hellip" unicode="" unicodeDecimal="8230" unicodeName="Horizontal ellipsis"/>
+    <codePoint decimal="189" name="arrowvertex" unicode="" unicodeDecimal="9168" unicodeName="Vertical line extension"/>
+    <codePoint decimal="190" name="arrowhorizex" unicode="" unicodeDecimal="9135" unicodeName="Horizontal line extension"/>
+    <codePoint decimal="191" name="carriagereturn" htmlEnt="crarr" unicode="" unicodeDecimal="8629" unicodeName="Downwards arrow with corner leftwards"/>
+    <codePoint decimal="192" name="aleph" htmlEnt="alefsym" unicode="" unicodeDecimal="8501" unicodeName="Alef symbol"/>
+    <codePoint decimal="193" name="Ifraktur" htmlEnt="image" unicode="" unicodeDecimal="8465" unicodeName="Black-letter capital I"/>
+    <codePoint decimal="194" name="Rfraktur" htmlEnt="real" unicode="" unicodeDecimal="8476" unicodeName="Black-letter capital R"/>
+    <codePoint decimal="195" name="weierstrass" htmlEnt="weierp" unicode="" unicodeDecimal="8472" unicodeName="Script capital P"/>
+    <codePoint decimal="196" name="circlemultiply" htmlEnt="otimes" unicode="" unicodeDecimal="8855" unicodeName="Circled times"/>
+    <codePoint decimal="197" name="circleplus" htmlEnt="oplus" unicode="" unicodeDecimal="8853" unicodeName="Circled plus"/>
+    <codePoint decimal="198" name="emptyset" htmlEnt="empty" unicode="" unicodeDecimal="8709" unicodeName="Empty set"/>
+    <codePoint decimal="199" name="intersection" htmlEnt="cap" unicode="" unicodeDecimal="8745" unicodeName="Intersection"/>
+    <codePoint decimal="200" name="union" htmlEnt="cup" unicode="" unicodeDecimal="8746" unicodeName="Union"/>
+    <codePoint decimal="201" name="propersuperset" htmlEnt="sup" unicode="" unicodeDecimal="8835" unicodeName="Superset of"/>
+    <codePoint decimal="202" name="reflexsuperset" htmlEnt="supe" unicode="" unicodeDecimal="8839" unicodeName="Superset of or equal to"/>
+    <codePoint decimal="203" name="notsubset" htmlEnt="nsub" unicode="" unicodeDecimal="8836" unicodeName="Not a subset of"/>
+    <codePoint decimal="204" name="propersubset" htmlEnt="sub" unicode="" unicodeDecimal="8834" unicodeName="Subset of"/>
+    <codePoint decimal="205" name="reflexsubset" htmlEnt="sube" unicode="" unicodeDecimal="8838" unicodeName="Subset of or equal to"/>
+    <codePoint decimal="206" name="element" htmlEnt="isin" unicode="" unicodeDecimal="8712" unicodeName="Element of"/>
+    <codePoint decimal="207" name="notelement" htmlEnt="notin" unicode="" unicodeDecimal="8713" unicodeName="Not an element of"/>
+    <codePoint decimal="208" name="angle" htmlEnt="ang" unicode="" unicodeDecimal="8736" unicodeName="Angle"/>
+    <codePoint decimal="209" name="gradient" htmlEnt="nabla" unicode="" unicodeDecimal="8711" unicodeName="Nabla"/>
+    <codePoint decimal="210" name="registerserif" htmlEnt="reg" unicode="" unicodeDecimal="174" unicodeName="Registered sign (serif)"/>
+    <codePoint decimal="211" name="copyrightserif" htmlEnt="copy" unicode="" unicodeDecimal="169" unicodeName="Copyright sign (serif)"/>
+    <codePoint decimal="212" name="trademarkserif" htmlEnt="trade" unicode="" unicodeDecimal="8482" unicodeName="Trade mark sign (serif)"/>
+    <codePoint decimal="213" name="product" htmlEnt="prod" unicode="" unicodeDecimal="8719" unicodeName="N-ary product"/>
+    <codePoint decimal="214" name="radical" htmlEnt="radic" unicode="" unicodeDecimal="8730" unicodeName="Square root"/>
+    <codePoint decimal="215" name="dotmath" htmlEnt="sdot" unicode="" unicodeDecimal="8901" unicodeName="Dot operator"/>
+    <codePoint decimal="216" name="logicalnot" htmlEnt="not" unicode="" unicodeDecimal="172" unicodeName="Not sign"/>
+    <codePoint decimal="217" name="logicaland" htmlEnt="and" unicode="" unicodeDecimal="8743" unicodeName="Logical and"/>
+    <codePoint decimal="218" name="logicalor" htmlEnt="or" unicode="" unicodeDecimal="8744" unicodeName="Logical or"/>
+    <codePoint decimal="219" name="arrowdblboth" htmlEnt="hArr" unicode="" unicodeDecimal="8660" unicodeName="Left right double arrow"/>
+    <codePoint decimal="220" name="arrowdblleft" htmlEnt="lArr" unicode="" unicodeDecimal="8656" unicodeName="Leftwards double arrow"/>
+    <codePoint decimal="221" name="arrowdblup" htmlEnt="uArr" unicode="" unicodeDecimal="8657" unicodeName="Upwards double arrow"/>
+    <codePoint decimal="222" name="arrowdblright" htmlEnt="rArr" unicode="" unicodeDecimal="8658" unicodeName="Rightwards double arrow"/>
+    <codePoint decimal="223" name="arrowdbldown" htmlEnt="dArr" unicode="" unicodeDecimal="8659" unicodeName="Downwards double arrow"/>
+    <codePoint decimal="224" name="lozenge" htmlEnt="loz" unicode="" unicodeDecimal="9674" unicodeName="Lozenge"/>
+    <codePoint decimal="225" name="angleleft" htmlEnt="lang" unicode="" unicodeDecimal="9001" unicodeName="Left-pointing angle bracket"/>
+    <codePoint decimal="226" name="registersans" htmlEnt="reg" unicode="" unicodeDecimal="174" unicodeName="Registered sign (sans-serif)"/>
+    <codePoint decimal="227" name="copyrightsans" htmlEnt="copy" unicode="" unicodeDecimal="169" unicodeName="Copyright sign (sans-serif)"/>
+    <codePoint decimal="228" name="trademarksans" htmlEnt="trade" unicode="" unicodeDecimal="8482" unicodeName="Trade mark sign (sans-serif)"/>
+    <codePoint decimal="229" name="summation" htmlEnt="sum" unicode="" unicodeDecimal="8721" unicodeName="N-ary summation"/>
+    <codePoint decimal="230" name="parenlefttp" unicode="" unicodeDecimal="9115" unicodeName="Left parenthesis upper hook"/>
+    <codePoint decimal="231" name="parenleftex" unicode="" unicodeDecimal="9116" unicodeName="Left parenthesis extension"/>
+    <codePoint decimal="232" name="parenleftbt" unicode="" unicodeDecimal="9117" unicodeName="Left parenthesis lower hook"/>
+    <codePoint decimal="233" name="bracketlefttp" unicode="" unicodeDecimal="9121" unicodeName="Left square bracket upper corner"/>
+    <codePoint decimal="234" name="bracketleftex" unicode="" unicodeDecimal="9122" unicodeName="Left square bracket extension"/>
+    <codePoint decimal="235" name="bracketleftbt" unicode="" unicodeDecimal="9123" unicodeName="Left square bracket lower corner"/>
+    <codePoint decimal="236" name="bracelefttp" unicode="" unicodeDecimal="9127" unicodeName="Left curly bracket upper hook"/>
+    <codePoint decimal="237" name="braceleftmid" unicode="" unicodeDecimal="9128" unicodeName="Left curly bracket middle piece"/>
+    <codePoint decimal="238" name="braceleftbt" unicode="" unicodeDecimal="9129" unicodeName="Left curly bracket lower hook"/>
+    <codePoint decimal="239" name="braceex" unicode="" unicodeDecimal="9130" unicodeName="Curly bracket extension"/>
+    <codePoint decimal="240" name="Euro" htmlEnt="euro" unicode="" unicodeDecimal="8364" unicodeName="Euro sign"/>
+    <codePoint decimal="241" name="angleright" htmlEnt="rang" unicode="" unicodeDecimal="9002" unicodeName="Right-pointing angle bracket"/>
+    <codePoint decimal="242" name="integral" htmlEnt="int" unicode="" unicodeDecimal="8747" unicodeName="Integral"/>
+    <codePoint decimal="243" name="integraltp" unicode="" unicodeDecimal="8992" unicodeName="Top half integral"/>
+    <codePoint decimal="244" name="integralex" unicode="" unicodeDecimal="9134" unicodeName="Integral extension"/>
+    <codePoint decimal="245" name="integralbt" unicode="" unicodeDecimal="8993" unicodeName="Bottom half integral"/>
+    <codePoint decimal="246" name="parenrighttp" unicode="" unicodeDecimal="9118" unicodeName="Right parenthesis upper hook"/>
+    <codePoint decimal="247" name="parenrightex" unicode="" unicodeDecimal="9119" unicodeName="Right parenthesis extension"/>
+    <codePoint decimal="248" name="parenrightbt" unicode="" unicodeDecimal="9120" unicodeName="Right parenthesis lower hook"/>
+    <codePoint decimal="249" name="bracketrighttp" unicode="" unicodeDecimal="9124" unicodeName="Right square bracket upper corner"/>
+    <codePoint decimal="250" name="bracketrightex" unicode="" unicodeDecimal="9125" unicodeName="Right square bracket extension"/>
+    <codePoint decimal="251" name="bracketrightbt" unicode="" unicodeDecimal="9126" unicodeName="Right square bracket lower corner"/>
+    <codePoint decimal="252" name="bracerighttp" unicode="" unicodeDecimal="9131" unicodeName="Right curly bracket upper hook"/>
+    <codePoint decimal="253" name="bracerightmid" unicode="" unicodeDecimal="9132" unicodeName="Right curly bracket middle piece"/>
+    <codePoint decimal="254" name="bracerightbt" unicode="" unicodeDecimal="9133" unicodeName="Right curly bracket lower hook"/>
+</codePointSet>

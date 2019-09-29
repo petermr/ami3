@@ -66,6 +66,13 @@ public class AMISectionToolTest {
 
 	
 	@Test
+	public void testHelp() {
+		String args = ""
+			;
+		new AMISectionTool().runCommands(args);
+	}
+	
+	@Test
 	public void testAbstractMethods() {
 		String args = ""
 				+ "-t " + new File(AMIFixtures.TEST_ZIKA10_DIR, "PMC3289602") + ""
@@ -76,6 +83,23 @@ public class AMISectionToolTest {
 		new AMISectionTool().runCommands(args);
 	}
 	
+	@Test
+	public void testTransformToHtml() {
+		String args = ""
+//				+ "-t " + new File(AMIFixtures.TEST_ZIKA10_DIR, "PMC3289602") + ""
+				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
+				+ " -v"
+				+ " --sections "
+				+ " " + SectionTag.ALL
+//				+ " " + SectionTag.ABSTRACT
+//				+ " " + SectionTag.METHODS
+				+ " --html nlm2html"
+//				+ " --write false"
+			;
+		new AMISectionTool().runCommands(args);
+	}
+
+
 	@Test
 	public void testALL() {
 		File targetDir = new File("target/sections/");
@@ -412,6 +436,7 @@ public class AMISectionToolTest {
 		projectTagger.addProjectBodysAsFiles();
 		projectTagger.addProjectFrontsAsFiles();
 	}
+	
 }
 		
 	

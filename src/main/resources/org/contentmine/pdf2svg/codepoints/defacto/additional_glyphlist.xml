@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codePointSet name="Additional Glyph List" id="adobeGlyphList" encoding="adobeGlyphList" resource="org/contentmine/pdf2svg/codepoints/defacto">
+<!--
+#
+# Licensed to the Apache Software Foundation (ASF) under one or more
+# contributor license agreements.  See the NOTICE file distributed with
+# this work for additional information regarding copyright ownership.
+# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License")" unicode="U+ you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+# 
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+# Format: Semicolon-delimited fields:
+#            (1) glyph name
+#            (2) Unicode scalar value
+#
+# These mappings are missing in the original copy of the adobe glyphlist.txt 
+# 
+-->
+    <codePoint unicode="U+3008" name="angbracketleft"/>
+    <codePoint unicode="U+3009" name="angbracketright"/>
+    <codePoint unicode="U+00A9" name="circlecopyrt"/>
+    <codePoint unicode="U+0000" name="controlNULL"/>
+<!--
+# TeX-related mappings using named values"
+-->"
+    <codePoint unicode="U+2329" name="angbracketleftbig"/>
+    <codePoint unicode="U+2329" name="angbracketleftBig"/>
+    <codePoint unicode="U+2329" name="angbracketleftbigg"/>
+    <codePoint unicode="U+2329" name="angbracketleftBigg"/>
+    <codePoint unicode="U+232A" name="angbracketrightBig"/>
+    <codePoint unicode="U+232A" name="angbracketrightbig"/>
+    <codePoint unicode="U+232A" name="angbracketrightBigg"/>
+    <codePoint unicode="U+232A" name="angbracketrightbigg"/>
+    <codePoint unicode="U+21AA" name="arrowhookleft"/>
+    <codePoint unicode="U+21A9" name="arrowhookright"/>
+    <codePoint unicode="U+21BC" name="arrowlefttophalf"/>
+    <codePoint unicode="U+21BD" name="arrowleftbothalf"/>
+    <codePoint unicode="U+2197" name="arrownortheast"/>
+    <codePoint unicode="U+2196" name="arrownorthwest"/>
+    <codePoint unicode="U+21C0" name="arrowrighttophalf"/>
+    <codePoint unicode="U+21C1" name="arrowrightbothalf"/>
+    <codePoint unicode="U+2198" name="arrowsoutheast"/>
+    <codePoint unicode="U+2199" name="arrowsouthwest"/>
+    <codePoint unicode="U+2216" name="backslashbig"/>
+    <codePoint unicode="U+2216" name="backslashBig"/>
+    <codePoint unicode="U+2216" name="backslashBigg"/>
+    <codePoint unicode="U+2216" name="backslashbigg"/>
+    <codePoint unicode="U+2016" name="bardbl"/>
+    <codePoint unicode="U+FE37" name="bracehtipdownleft"/>
+    <codePoint unicode="U+FE37" name="bracehtipdownright"/>
+    <codePoint unicode="U+FE38" name="bracehtipupleft"/>
+    <codePoint unicode="U+FE38" name="bracehtipupright"/>
+    <codePoint unicode="U+007B" name="braceleftBig"/>
+    <codePoint unicode="U+007B" name="braceleftbig"/>
+    <codePoint unicode="U+007B" name="braceleftbigg"/>
+    <codePoint unicode="U+007B" name="braceleftBigg"/>
+    <codePoint unicode="U+007D" name="bracerightBig"/>
+    <codePoint unicode="U+007D" name="bracerightbig"/>
+    <codePoint unicode="U+007D" name="bracerightbigg"/>
+    <codePoint unicode="U+007D" name="bracerightBigg"/>
+    <codePoint unicode="U+005B" name="bracketleftbig"/>
+    <codePoint unicode="U+005B" name="bracketleftBig"/>
+    <codePoint unicode="U+005B" name="bracketleftbigg"/>
+    <codePoint unicode="U+005B" name="bracketleftBigg"/>
+    <codePoint unicode="U+005D" name="bracketrightBig"/>
+    <codePoint unicode="U+005D" name="bracketrightbig"/>
+    <codePoint unicode="U+005D" name="bracketrightbigg"/>
+    <codePoint unicode="U+005D" name="bracketrightBigg"/>
+    <codePoint unicode="U+2308" name="ceilingleftbig"/>
+    <codePoint unicode="U+2308" name="ceilingleftBig"/>
+    <codePoint unicode="U+2308" name="ceilingleftBigg"/>
+    <codePoint unicode="U+2308" name="ceilingleftbigg"/>
+    <codePoint unicode="U+2309" name="ceilingrightbig"/>
+    <codePoint unicode="U+2309" name="ceilingrightBig"/>
+    <codePoint unicode="U+2309" name="ceilingrightbigg"/>
+    <codePoint unicode="U+2309" name="ceilingrightBigg"/>
+    <codePoint unicode="U+2299" name="circledotdisplay"/>
+    <codePoint unicode="U+2299" name="circledottext"/>
+    <codePoint unicode="U+2297" name="circlemultiplydisplay"/>
+    <codePoint unicode="U+2297" name="circlemultiplytext"/>
+    <codePoint unicode="U+2295" name="circleplusdisplay"/>
+    <codePoint unicode="U+2295" name="circleplustext"/>
+    <codePoint unicode="U+222E" name="contintegraldisplay"/>
+    <codePoint unicode="U+222E" name="contintegraltext"/>
+    <codePoint unicode="U+2210" name="coproductdisplay"/>
+    <codePoint unicode="U+2210" name="coproducttext"/>
+    <codePoint unicode="U+230A" name="floorleftBig"/>
+    <codePoint unicode="U+230A" name="floorleftbig"/>
+    <codePoint unicode="U+230A" name="floorleftbigg"/>
+    <codePoint unicode="U+230A" name="floorleftBigg"/>
+    <codePoint unicode="U+230B" name="floorrightbig"/>
+    <codePoint unicode="U+230B" name="floorrightBig"/>
+    <codePoint unicode="U+230B" name="floorrightBigg"/>
+    <codePoint unicode="U+230B" name="floorrightbigg"/>
+    <codePoint unicode="U+0302" name="hatwide"/>
+    <codePoint unicode="U+0302" name="hatwider"/>
+    <codePoint unicode="U+0302" name="hatwidest"/>
+    <codePoint unicode="U+1D40" name="intercal"/>
+    <codePoint unicode="U+222B" name="integraldisplay"/>
+    <codePoint unicode="U+222B" name="integraltext"/>
+    <codePoint unicode="U+22C2" name="intersectiondisplay"/>
+    <codePoint unicode="U+22C2" name="intersectiontext"/>
+    <codePoint unicode="U+2227" name="logicalanddisplay"/>
+    <codePoint unicode="U+2227" name="logicalandtext"/>
+    <codePoint unicode="U+2228" name="logicalordisplay"/>
+    <codePoint unicode="U+2228" name="logicalortext"/>
+    <codePoint unicode="U+0028" name="parenleftBig"/>
+    <codePoint unicode="U+0028" name="parenleftbig"/>
+    <codePoint unicode="U+0028" name="parenleftBigg"/>
+    <codePoint unicode="U+0028" name="parenleftbigg"/>
+    <codePoint unicode="U+0029" name="parenrightBig"/>
+    <codePoint unicode="U+0029" name="parenrightbig"/>
+    <codePoint unicode="U+0029" name="parenrightBigg"/>
+    <codePoint unicode="U+0029" name="parenrightbigg"/>
+    <codePoint unicode="U+2032" name="prime"/>
+    <codePoint unicode="U+220F" name="productdisplay"/>
+    <codePoint unicode="U+220F" name="producttext"/>
+    <codePoint unicode="U+221A" name="radicalbig"/>
+    <codePoint unicode="U+221A" name="radicalBig"/>
+    <codePoint unicode="U+221A" name="radicalBigg"/>
+    <codePoint unicode="U+221A" name="radicalbigg"/>
+    <codePoint unicode="U+221A" name="radicalbt"/>
+    <codePoint unicode="U+221A" name="radicaltp"/>
+    <codePoint unicode="U+221A" name="radicalvertex"/>
+    <codePoint unicode="U+002F" name="slashbig"/>
+    <codePoint unicode="U+002F" name="slashBig"/>
+    <codePoint unicode="U+002F" name="slashBigg"/>
+    <codePoint unicode="U+002F" name="slashbigg"/>
+    <codePoint unicode="U+2211" name="summationdisplay"/>
+    <codePoint unicode="U+2211" name="summationtext"/>
+    <codePoint unicode="U+02DC" name="tildewide"/>
+    <codePoint unicode="U+02DC" name="tildewider"/>
+    <codePoint unicode="U+02DC" name="tildewidest"/>
+    <codePoint unicode="U+22C3" name="uniondisplay"/>
+    <codePoint unicode="U+228E" name="unionmultidisplay"/>
+    <codePoint unicode="U+228E" name="unionmultitext"/>
+    <codePoint unicode="U+2294" name="unionsqdisplay"/>
+    <codePoint unicode="U+2294" name="unionsqtext"/>
+    <codePoint unicode="U+22C3" name="uniontext"/>
+    <codePoint unicode="U+2225" name="vextenddouble"/>
+    <codePoint unicode="U+2223" name="vextendsingle"/>
+    <!--
+    # TeX-related mappings using hexadecimal or decimal values"
+    -->
+    <codePoint unicode="U+FB00" name="x1b"/>
+    <codePoint unicode="U+FB01" name="x1c"/>
+    <codePoint unicode="U+FB02" name="x1d"/>
+    <codePoint unicode="U+FB03" name="x1e"/>
+    <codePoint unicode="U+0141" name="x8a"/>
+    <codePoint unicode="U+00DF" name="xff"/>
+    <codePoint unicode="U+FB00" name="a27"/>
+    <codePoint unicode="U+FB01" name="a28"/>
+    <codePoint unicode="U+FB02" name="a29"/>
+    <codePoint unicode="U+FB03" name="a30"/>
+    <codePoint unicode="U+0141" name="a138"/>
+    <codePoint unicode="U+00DF" name="a255"/>
+</codePointSet>

@@ -1,0 +1,6 @@
+<codePointSet encoding="Unicode" id="cjkSymbolsAndPunctuation">
+    <codePoint unicode="U+3008" unicodeName="LEFT ANGLE BRACKET"
+        note="quasi-synonym replace by LESS-THAN SIGN" replaceByUnicode="U+003C" name=""/>
+    <codePoint unicode="U+3009" unicodeName="RIGHT ANGLE BRACKET"
+        note="quasi-synonym replace by GREATER-THAN SIGN" replaceByUnicode="U+003D" name=""/>
+</codePointSet>

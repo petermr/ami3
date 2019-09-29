@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2011 Peter Murray-Rust et. al. Licensed under the Apache License, 
+     Version 2.0 (the "License"); you may not use this file except in compliance 
+     with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 
+     Unless required by applicable law or agreed to in writing, software distributed 
+     under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES 
+     OR CONDITIONS OF ANY KIND, either express or implied. See the License for 
+     the specific language governing permissions and limitations under the License. -->
+
+<xsd:schema targetNamespace="http://www.xml-cml.org/schema"
+     xmlns:h="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+     xmlns="http://www.xml-cml.org/schema">
+     <xsd:simpleType id="st.actionOrderType" name="actionOrderType">
+          <xsd:annotation>
+               <xsd:documentation>
+                    <h:div class="summary">Describes whether child elements are sequential
+                         or parallel.</h:div>
+                    <h:div class="description">There is no default.</h:div>
+               </xsd:documentation>
+          </xsd:annotation>
+          <xsd:restriction base="xsd:string">
+               <xsd:enumeration value="sequential" />
+               <xsd:enumeration value="parallel" />
+          </xsd:restriction>
+     </xsd:simpleType>
+     <xsd:attributeGroup id="attGp.abbreviation" name="abbreviation">
+          <xsd:attribute id="att.abbreviation" name="abbreviation"
+               type="xsd:string">
+               <xsd:annotation>
+                    <xsd:documentation>
+                         <h:div class="summary">Abbreviation.</h:div>
+                         <h:div class="description">Abbreviation for units, terms, etc.</h:div>
+                    </xsd:documentation>
+               </xsd:annotation>
+          </xsd:attribute>
+     </xsd:attributeGroup>
+     <xsd:attributeGroup id="attGp.actionOrder" name="actionOrder">
+          <xsd:attribute name="order" id="att.actionOrder" type="actionOrderType">
+               <xsd:annotation>
+                    <xsd:documentation>
+                         <h:div class="summary">Describes whether child elements are sequential
+                              or parallel.</h:div>
+                         <h:div class="description">There is no default.</h:div>
+                    </xsd:documentation>
+               </xsd:annotation>
+          </xsd:attribute>
+     </xsd:attributeGroup>
+     <xsd:element name="abundance" id="el.abundance">
+          <xsd:annotation>
+               <xsd:documentation>
+                    <h:div class="summary">The abundance of an isotope.</h:div>
+                    <h:div class="description">The abundance of an isotope in an isotopeList.
+                         Values are expressed in percentages.
+                    </h:div>
+                    <h:div class="example" href="isotope1.xml" />
+               </xsd:documentation>
+          </xsd:annotation>
+          <xsd:complexType>
+               <xsd:simpleContent>
+                    <xsd:extension base="xsd:double">
+                         <xsd:attributeGroup ref="title" />
+                         <xsd:attributeGroup ref="id" />
+                         <xsd:attributeGroup ref="convention" />
+                         <xsd:attributeGroup ref="dictRef" />
+                         <xsd:attributeGroup ref="min" />
+                         <xsd:attributeGroup ref="max" />
+                         <xsd:attributeGroup ref="units" />
+                    </xsd:extension>
+               </xsd:simpleContent>
+          </xsd:complexType>
+     </xsd:element>
+     <xsd:element name="action" id="el.action">
+          <xsd:annotation>
+               <xsd:documentation>
+                    <h:div class="summary">An action which might occur in scientific data or
+                         narrative.</h:div>
+                    <h:div class="description">
+                         An action which might occur in scientific data or narrative. The
+                         definition is deliberately vague, intending to collect examples of
+                         possible usage. Thus an action could be addition of materials,
+                         measurement, application of heat or radiation. The content model is
+                         unrestricted. _action_ iself is normally a child of _actionList_.
+
+                         <h:p>The start, end and duration attributes should be interpreted
+                              as
+                         </h:p>
+                         <h:ul>
+                              <h:li>
+                                   XSD dateTimes and XSD durations. This allows precise recording of
+                                   time of day, etc, or duration after start of actionList. A
+                                   <h:tt>convention="xsd"</h:tt>
+                                   attribute should be used to enforce XSD.
+                              </h:li>
+                              <h:li>a numerical value, with a units attribute linked to a
+                                   dictionary.</h:li>
+                              <h:li>a human-readable string (unlikely to be machine processable)
+                              </h:li>
+                         </h:ul>
+                         <h:p>
+                              <h:tt>startCondition</h:tt>
+                              and
+                              <h:tt>endCondition</h:tt>
+                              values are not constrained, which allows XSL-like
+                              <h:tt>test</h:tt>
+                              attribute values. The semantics of the conditions are yet to be
+                              defined and at present are simply human readable.
+                         </h:p>
+                         <h:p>
+                              The order of the
+                              <h:tt>action</h:tt>
+                              elements in the document may, but will not always, define
+                              the order that they actually occur in.
+                         </h:p>
+                         <h:p>
+                              A delay can be shown by an
+                              <h:tt>action</h:tt>
+                              with no content. Repeated actions or
+                              actionLists are indicated through the count attribute.
+                         </h:p>
+                    </h:div>
+
+                    <h:div class="example" href="action1.xml" />
+                    <!-- <h:div class="example" href="action2.xml"></h:div> -->
+               </xsd:documentation>
+          </xsd:annotation>
+
+          <xsd:complexType mixed="true">
+               <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+                    <xsd:any processContents="lax" />
+               </xsd:sequence>
+
+               <xsd:attributeGroup ref="title" />
+               <xsd:attributeGroup ref="id" />
+               <xsd:attributeGroup ref="convention" />
+               <xsd:attributeGroup ref="dictRef" />
+               <xsd:attributeGroup ref="units" />
+               <xsd:attributeGroup ref="start" />
+               <xsd:attributeGroup ref="startCondition" />
+               <xsd:attributeGroup ref="duration" />
+               <xsd:attributeGroup ref="end" />
+               <xsd:attributeGroup ref="endCondition" />
+               <xsd:attributeGroup ref="type" />
+               <xsd:attributeGroup ref="actionOrder" />
+               <xsd:attributeGroup ref="count">
+                    <xsd:annotation>
+                         <xsd:documentation>
+                              <h:div class="specific">Number of times the action should be repeated.
+                              </h:div>
+                         </xsd:documentation>
+                    </xsd:annotation>
+               </xsd:attributeGroup>
+               <xsd:attributeGroup ref="ref" />
+          </xsd:complexType>
+
+     </xsd:element>
+</xsd:schema>

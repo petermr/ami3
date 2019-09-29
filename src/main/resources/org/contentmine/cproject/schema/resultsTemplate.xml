@@ -1,0 +1,67 @@
+<dir>
+	<dir name="word" count="0,1">
+	  <p>Summary statistics for non-stopwords in file</p>
+	  <dir name="frequencies" count="0,1">
+		<file name="results.html" count="0,1">
+		    <p>Frequencies for non-stopwords.</p>
+		</file>
+		<file name="results.xml" count="0,1">
+		    <p>Frequencies for non-stopwords.</p>
+		</file>
+	  </dir>
+	</dir>
+	<dir name="species" count="0,1">
+	  <p>Summary statistics for species in file</p>
+	  <dir name="binomial" count="0,1">
+		<file name="results.xml" count="0,1">
+		    <p>Snippets for species in context.</p>
+		</file>
+		<file name="empty.xml" count="0,1">
+		    <p>Failure to find species</p>
+		</file>
+	  </dir>
+	  <dir name="genus" count="0,1">
+		<file name="results.xml" count="0,1">
+		    <p>Snippets for genus (single words) in context.</p>
+		</file>
+		<file name="empty.xml" count="0,1">
+		    <p>Failure to find genus</p>
+		</file>
+	  </dir>
+	</dir>
+	<dir name="gene" count="0,1">
+	  <p>Summary statistics for genes in file</p>
+	  <dir name="human" count="0,1">
+		<file name="results.xml" count="0,1">
+		    <p>Snippets for human genes in context.</p>
+		</file>
+		<file name="empty.xml" count="0,1">
+		    <p>Failure to find genes</p>
+		</file>
+	  </dir>
+	  <dir name="mouse" count="0,1">
+		<file name="results.xml" count="0,1">
+		    <p>Snippets for mouse genes in context.</p>
+		</file>
+		<file name="empty.xml" count="0,1">
+		    <p>Failure to find genes</p>
+		</file>
+	  </dir>
+	</dir>
+	<dir name="search" count="0,1">
+	  <p>Search through dictionaries</p>
+	  <dir regex="[a-z]+" count="0,1">
+	    <p>dictionary name provided by system and users. Unconstrained</p>
+		<file name="results.xml" count="0,1">
+		    <p>Snippets for search terms.</p>
+		</file>
+		<file name="empty.xml" count="0,1">
+		    <p>no results</p>
+		</file>
+	  </dir>
+	</dir>
+	<!-- 
+	<dir name="search" schema="dirTemplate.xml" count="0,9">
+	</dir>
+	-->
+</dir>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codePointSet encoding="AdvPi2" id="advpi2" resource="org/contentmine/pdf2svg/codepoints/symbol">
+    
+    <!--  This is a symbol font? -->
+	<codePoint unicode="U+2192" decimal="63" name="question" note="RIGHTWARDS ARROW" />
+	<codePoint unicode="U+0394" decimal="68" name="D" note="GREEK CAPITAL LETTER DELTA" />
+	<codePoint unicode="U+03A6" decimal="70" name="F" note="GREEK CAPITAL LETTER PHI"/>
+	<codePoint unicode="U+221A" decimal="72" name="H" note="SQUARE ROOT"/>
+	<codePoint unicode="U+03B7" decimal="90" name="Z" note="GREEK SMALL LETTER ETA"/> 
+	<codePoint unicode="U+03B1" decimal="97" name="a" note="GREEK SMALL LETTER ALPHA"/>
+	<codePoint unicode="U+03B2" decimal="98" name="b" note="GREEK SMALL LETTER BETA"/>
+	<codePoint unicode="U+03B4" decimal="100" name="d" note="GREEK SMALL LETTER DELTA"/>
+	<codePoint unicode="U+03B5" decimal="101" name="e" note="GREEK SMALL LETTER EPSILON"/>
+	<codePoint unicode="U+03B3" decimal="103" name="g" note="GREEK SMALL LETTER GAMMA"/>
+	<codePoint unicode="U+03C6" decimal="106" name="j" note="GREEK SMALL LETTER PHI"/>
+	<codePoint unicode="U+03BA" decimal="107" name="k" note="GREEK SMALL LETTER KAPPA"/>
+	<codePoint unicode="U+03BB" decimal="108" name="l" note="GREEK SMALL LETTER LAMBDA"/>
+	<codePoint unicode="U+03BC" decimal="109" name="m" note="GREEK SMALL LETTER MU"/>
+	<codePoint unicode="U+03BD" decimal="110" name="n" note="GREEK SMALL LETTER NU"/>
+	<codePoint unicode="U+03C0" decimal="112" name="p" note="GREEK SMALL LETTER PI"/>
+	<codePoint unicode="U+03C1" decimal="114" name="r" note="GREEK SMALL LETTER RHO"/>
+	<codePoint unicode="U+03C3" decimal="115" name="s" note="GREEK SMALL LETTER SIGMA"/>
+	<codePoint unicode="U+03C4" decimal="116" name="t" note="GREEK SMALL LETTER TAU"/>
+	<codePoint unicode="U+03C9" decimal="121" name="y" note="GREEK SMALL LETTER OMEGA"/>
+    
+</codePointSet>

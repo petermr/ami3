@@ -1,0 +1,27 @@
+<!--
+
+    Copyright (C) 2012 pm286 <peter.murray.rust@googlemail.com>
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<codePointSet encoding="AdvEnt1" id="advEnt1" resource="org/contentmine/pdf2svg/codepoints/defacto">
+
+    <codePointSet idRef="unicode" href="org/contentmine/pdf2svg/codepoints/unicode/unicode.xml"/>
+    
+    <codePoint unicode="U+21C4" decimal="34" note="RIGHTWARDS ARROW OVER LEFTWARDS ARROW"/>
+    <codePoint unicode="U+2192" decimal="45" note="RIGHTWARDS ARROW"/>
+    <codePoint unicode="U+2264" name="hyphen" note="LESS-THAN OR EQUAL TO"/>
+    <codePoint unicode="U+2194" decimal="50" note="LEFT RIGHT ARROW"/>
+    
+</codePointSet>

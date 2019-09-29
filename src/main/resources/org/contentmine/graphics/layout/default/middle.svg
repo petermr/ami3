@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600.0"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     height="800.0" style="stroke:none;stroke-width:0.0;">
+     <!-- Default -->
+  <g class="document" role="middle">
+    <rect id="mediabox" class="medibox" x="0" y="0" width="600" height="800" style="fill:none;stroke:blue;stroke-width:1.0;"/>
+    <g class="main" id="main">
+      <g class="body">
+	  <!-- height varies slightly between pages
+	  page 1 narrow + wide, others narrow?, wide -->	  
+        <rect id="main.body" class="fixed" x="35" y="67" width="540" height="678" style="fill:green;opacity:0.3;stroke-width:1.0;stroke:blue;"/>
+      </g>
+      <g class="column">
+		<rect id="main.narrowSingleColumn" class="expandable.ymax expandable.ymin" x="100" y="70" width="150" height="560" style="fill:purple;opacity:0.3;stroke-width:0.5;"/>
+      </g>
+      <g class="column">
+		<rect id="main.wideSingleColumn" class="expandable.ymax expandable.ymin" x="290" y="70" width="300" height="590" 
+		  style="fill:purple;opacity:0.3;stroke-width:2.0;stroke:black;stroke-dasharray:5 5;"/>
+	  </g>
+	  <g class="table">
+		<rect id="main.wideFloat" class="expandable.ymax expandable.ymin" x="30" y="200" width="590" height="160" style="fill:orange;opacity:0.3;"/>
+      </g>
+	  <g class="table">
+		<rect id="main.columnFloat" class="expandable.ymax expandable.ymin" x="30" y="200" width="590" height="160" style="fill:orange;opacity:0.3;"/>
+      </g>
+    </g>
+  </g>
+</svg>

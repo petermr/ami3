@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codePointSet encoding="TeXmath-OT1xxx-0" id="texmath-ot1xxx-0">
+ <codePoint unicode="U+0393" decimal="0" name="\xxGamma" stringRepresentation="Γ"/>
+ <codePoint unicode="U+0394" decimal="1" name="\xxDelta" stringRepresentation="Δ"/>
+ <codePoint unicode="U+0398" decimal="2" name="\xxTheta" stringRepresentation="Θ"/>
+ <codePoint unicode="U+039B" decimal="3" name="\xxLambda" stringRepresentation="Λ"/>
+ <codePoint unicode="U+039E" decimal="4" name="\xxXi" stringRepresentation="Ξ"/>
+ <codePoint unicode="U+03A0" decimal="5" name="\xxPi" stringRepresentation="Π"/>
+ <codePoint unicode="U+03A3" decimal="6" name="\xxSigma" stringRepresentation="Σ"/>
+ <codePoint unicode="U+03A5" decimal="7" name="\xxUpsilon" stringRepresentation="Υ"/>
+ <codePoint unicode="U+03A6" decimal="8" name="\xxPhi" stringRepresentation="Φ"/>
+ <codePoint unicode="U+03A8" decimal="9" name="\xxPsi" stringRepresentation="Ψ"/>
+ <codePoint unicode="U+03A9" decimal="10" name="\xxOmega" stringRepresentation="Ω"/>
+ <codePoint unicode="U+FB00" decimal="11" name="ff" stringRepresentation="ﬀ"/>
+ <codePoint unicode="U+FB01" decimal="12" name="fi" stringRepresentation="ﬁ"/>
+ <codePoint unicode="U+FB02" decimal="13" name="fl" stringRepresentation="ﬂ"/>
+ <codePoint unicode="U+FB03" decimal="14" name="ffi" stringRepresentation="ﬃ"/>
+ <codePoint unicode="U+FB04" decimal="15" name="ffl" stringRepresentation="ﬄ"/>
+ <codePoint unicode="U+0131" decimal="16" name="{\i}" stringRepresentation="ı"/>
+ <codePoint unicode="U+0237" decimal="17" name="{\j}" stringRepresentation="ȷ"/>
+ <codePoint unicode="U+0300" decimal="18" name="\`" stringRepresentation="̀"/>
+ <codePoint unicode="U+0301" decimal="19" name="\'" stringRepresentation="́"/>
+ <codePoint unicode="U+030C" decimal="20" name="\v" stringRepresentation="̌"/>
+ <codePoint unicode="U+0305" decimal="21" name="\u" stringRepresentation="̅"/>
+ <codePoint unicode="U+0304" decimal="22" name="\=" stringRepresentation="̄"/>
+ <codePoint unicode="U+030A" decimal="23" name="\r" stringRepresentation="̊"/>
+ <codePoint unicode="U+0327" decimal="24" name="\c" stringRepresentation="̧"/>
+ <codePoint unicode="U+00DF" decimal="25" name="{\ss}" stringRepresentation="ß"/>
+ <codePoint unicode="U+00E6" decimal="26" name="{\ae}" stringRepresentation="æ"/>
+ <codePoint unicode="U+0153" decimal="27" name="{\oe}" stringRepresentation="œ"/>
+ <codePoint unicode="U+00F8" decimal="28" name="{\e}" stringRepresentation="ø"/>
+ <codePoint unicode="U+00C6" decimal="29" name="{\AE}" stringRepresentation="Æ"/>
+ <codePoint unicode="U+0152" decimal="30" name="{\OE}" stringRepresentation="Œ"/>
+ <codePoint unicode="U+00D8" decimal="31" name="{\O}" stringRepresentation="Ø"/>
+ <codePoint unicode="U+005C" decimal="32" name="&lt;005C&gt;" stringRepresentation="\"/>
+ <codePoint unicode="U+0021" decimal="33" name="&lt;0021&gt;" stringRepresentation="!"/>
+ <codePoint unicode="U+201D" decimal="34" name="&quot;&quot;" stringRepresentation="”"/>
+ <codePoint unicode="U+0023" decimal="35" name="\#" stringRepresentation="#"/>
+ <codePoint unicode="U+0024" decimal="36" name="\$" stringRepresentation="$"/>
+ <codePoint unicode="U+0025" decimal="37" name="\%" stringRepresentation="%"/>
+ <codePoint unicode="U+0026" decimal="38" name="\&amp;" stringRepresentation="&amp;"/>
+ <codePoint unicode="U+0027" decimal="39" stringRepresentation="'"/>
+ <codePoint unicode="U+0028" decimal="40" stringRepresentation="("/>
+ <codePoint unicode="U+0029" decimal="41" stringRepresentation=")"/>
+ <codePoint unicode="U+002A" decimal="42" stringRepresentation="*"/>
+ <codePoint unicode="U+002B" decimal="43" stringRepresentation="+"/>
+ <codePoint unicode="U+002C" decimal="44" stringRepresentation=","/>
+ <codePoint unicode="U+002D" decimal="45" stringRepresentation="-"/>
+ <codePoint unicode="U+002E" decimal="46" stringRepresentation="."/>
+ <codePoint unicode="U+002F" decimal="47" stringRepresentation="/"/>
+ <codePoint unicode="U+0030" decimal="48" name="\xxzero" stringRepresentation="0"/>
+ <codePoint unicode="U+0031" decimal="49" name="\xxone" stringRepresentation="1"/>
+ <codePoint unicode="U+0032" decimal="50" name="\xxtwo" stringRepresentation="2"/>
+ <codePoint unicode="U+0033" decimal="51" name="\xxthree" stringRepresentation="3"/>
+ <codePoint unicode="U+0034" decimal="52" name="\xxfour" stringRepresentation="4"/>
+ <codePoint unicode="U+0035" decimal="53" name="\xxfive" stringRepresentation="5"/>
+ <codePoint unicode="U+0036" decimal="54" name="\xxsix" stringRepresentation="6"/>
+ <codePoint unicode="U+0037" decimal="55" name="\xxseven" stringRepresentation="7"/>
+ <codePoint unicode="U+0038" decimal="56" name="\xxeight" stringRepresentation="8"/>
+ <codePoint unicode="U+0039" decimal="57" name="\xxnine" stringRepresentation="9"/>
+ <codePoint unicode="U+003A" decimal="58" stringRepresentation=":"/>
+ <codePoint unicode="U+003B" decimal="59" stringRepresentation=";"/>
+ <codePoint unicode="U+00A1" decimal="60" name="!`" stringRepresentation="¡"/>
+ <codePoint unicode="U+003D" decimal="61" name="&lt;003D&gt;" stringRepresentation="="/>
+ <codePoint unicode="U+00BF" decimal="62" name="?`" stringRepresentation="¿"/>
+ <codePoint unicode="U+003F" decimal="63" stringRepresentation="?"/>
+ <codePoint unicode="U+0040" decimal="64" stringRepresentation="@"/>
+ <codePoint unicode="U+0041" decimal="65" name="\xxA" stringRepresentation="A"/>
+ <codePoint unicode="U+0042" decimal="66" name="\xxB" stringRepresentation="B"/>
+ <codePoint unicode="U+0043" decimal="67" name="\xxC" stringRepresentation="C"/>
+ <codePoint unicode="U+0044" decimal="68" name="\xxD" stringRepresentation="D"/>
+ <codePoint unicode="U+0045" decimal="69" name="\xxE" stringRepresentation="E"/>
+ <codePoint unicode="U+0046" decimal="70" name="\xxF" stringRepresentation="F"/>
+ <codePoint unicode="U+0047" decimal="71" name="\xxG" stringRepresentation="G"/>
+ <codePoint unicode="U+030B" decimal="72" name="\xxH" stringRepresentation="̋"/>
+ <codePoint unicode="U+0049" decimal="73" name="\xxI" stringRepresentation="I"/>
+ <codePoint unicode="U+004A" decimal="74" name="\xxJ" stringRepresentation="J"/>
+ <codePoint unicode="U+004B" decimal="75" name="\xxK" stringRepresentation="K"/>
+ <codePoint unicode="U+004C" decimal="76" name="\xxL" stringRepresentation="L"/>
+ <codePoint unicode="U+004D" decimal="77" name="\xxM" stringRepresentation="M"/>
+ <codePoint unicode="U+004E" decimal="78" name="\xxN" stringRepresentation="N"/>
+ <codePoint unicode="U+004F" decimal="79" name="\xxO" stringRepresentation="O"/>
+ <codePoint unicode="U+00B6" decimal="80" name="\xxP" stringRepresentation="¶"/>
+ <codePoint unicode="U+0051" decimal="81" name="\xxQ" stringRepresentation="Q"/>
+ <codePoint unicode="U+0052" decimal="82" name="\xxR" stringRepresentation="R"/>
+ <codePoint unicode="U+00A7" decimal="83" name="\xxS" stringRepresentation="§"/>
+ <codePoint unicode="U+0054" decimal="84" name="\xxT" stringRepresentation="T"/>
+ <codePoint unicode="U+0055" decimal="85" name="\xxU" stringRepresentation="U"/>
+ <codePoint unicode="U+0056" decimal="86" name="\xxV" stringRepresentation="V"/>
+ <codePoint unicode="U+0057" decimal="87" name="\xxW" stringRepresentation="W"/>
+ <codePoint unicode="U+0058" decimal="88" name="\xxX" stringRepresentation="X"/>
+ <codePoint unicode="U+0059" decimal="89" name="\xxY" stringRepresentation="Y"/>
+ <codePoint unicode="U+005A" decimal="90" name="\xxZ" stringRepresentation="Z"/>
+ <codePoint unicode="U+005B" decimal="91" name="&lt;005B&gt;" stringRepresentation="["/>
+ <codePoint unicode="U+201C" decimal="92" name="``" stringRepresentation="“"/>
+ <codePoint unicode="U+005D" decimal="93" name="&lt;005D&gt;" stringRepresentation="]"/>
+ <codePoint unicode="U+0302" decimal="94" name="\^" stringRepresentation="̂"/>
+ <codePoint unicode="U+0306" decimal="95" name="\." stringRepresentation="̆"/>
+ <codePoint unicode="U+0060" decimal="96" name="&lt;0060&gt;" stringRepresentation="`"/>
+ <codePoint unicode="U+0061" decimal="97" name="\xxa" stringRepresentation="a"/>
+ <codePoint unicode="U+0062" decimal="98" name="\xxb" stringRepresentation="b"/>
+ <codePoint unicode="U+0327" decimal="99" name="\xxc" stringRepresentation="̧"/>
+ <codePoint unicode="U+0064" decimal="100" name="\xxd" stringRepresentation="d"/>
+ <codePoint unicode="U+0065" decimal="101" name="\xxe" stringRepresentation="e"/>
+ <codePoint unicode="U+0066" decimal="102" name="\xxf" stringRepresentation="f"/>
+ <codePoint unicode="U+0067" decimal="103" name="\xxg" stringRepresentation="g"/>
+ <codePoint unicode="U+0068" decimal="104" name="\xxh" stringRepresentation="h"/>
+ <codePoint unicode="U+0069" decimal="105" name="\xxi" stringRepresentation="i"/>
+ <codePoint unicode="U+006A" decimal="106" name="\xxj" stringRepresentation="j"/>
+ <codePoint unicode="U+006B" decimal="107" name="\xxk" stringRepresentation="k"/>
+ <codePoint unicode="U+006C" decimal="108" name="\xxl" stringRepresentation="l"/>
+ <codePoint unicode="U+006D" decimal="109" name="\xxm" stringRepresentation="m"/>
+ <codePoint unicode="U+006E" decimal="110" name="\xxn" stringRepresentation="n"/>
+ <codePoint unicode="U+006F" decimal="111" name="\xxo" stringRepresentation="o"/>
+ <codePoint unicode="U+0070" decimal="112" name="\xxp" stringRepresentation="p"/>
+ <codePoint unicode="U+0071" decimal="113" name="\xxq" stringRepresentation="q"/>
+ <codePoint unicode="U+030A" decimal="114" name="\xxr" stringRepresentation="̊"/>
+ <codePoint unicode="U+0073" decimal="115" name="\xxs" stringRepresentation="s"/>
+ <codePoint unicode="U+0074" decimal="116" name="\xxt" stringRepresentation="t"/>
+ <codePoint unicode="U+0305" decimal="117" name="\xxu" stringRepresentation="̅"/>
+ <codePoint unicode="U+030C" decimal="118" name="\xxv" stringRepresentation="̌"/>
+ <codePoint unicode="U+0077" decimal="119" name="\xxw" stringRepresentation="w"/>
+ <codePoint unicode="U+0078" decimal="120" name="\xxx" stringRepresentation="x"/>
+ <codePoint unicode="U+0079" decimal="121" name="\xxy" stringRepresentation="y"/>
+ <codePoint unicode="U+007A" decimal="122" name="\xxz" stringRepresentation="z"/>
+ <codePoint unicode="U+2013" decimal="123" name="--" stringRepresentation="–"/>
+ <codePoint unicode="U+2014" decimal="124" name="---" stringRepresentation="—"/>
+ <codePoint unicode="U+030B" decimal="125" name="\H" stringRepresentation="̋"/>
+ <codePoint unicode="U+0303" decimal="126" name="\~" stringRepresentation="̃"/>
+ <codePoint unicode="U+0308" decimal="127" name="\&quot;" stringRepresentation="̈"/>
+ <codePoint unicode="U+0304" decimal="128" name="\=" stringRepresentation="̄"/>
+ <codePoint unicode="U+007E" decimal="160" name="&lt;007E&gt;" stringRepresentation="~"/>
+ <codePoint unicode="U+0393" decimal="161" name="\xxGamma" stringRepresentation="Γ"/>
+ <codePoint unicode="U+0394" decimal="162" name="\xxDelta" stringRepresentation="Δ"/>
+ <codePoint unicode="U+0398" decimal="163" name="\xxTheta" stringRepresentation="Θ"/>
+ <codePoint unicode="U+039B" decimal="164" name="\xxLambda" stringRepresentation="Λ"/>
+ <codePoint unicode="U+039E" decimal="165" name="\xxXi" stringRepresentation="Ξ"/>
+ <codePoint unicode="U+03A0" decimal="166" name="\xxPi" stringRepresentation="Π"/>
+ <codePoint unicode="U+03A3" decimal="167" name="\xxSigma" stringRepresentation="Σ"/>
+ <codePoint unicode="U+03A5" decimal="168" name="\xxUpsilon" stringRepresentation="Υ"/>
+ <codePoint unicode="U+03A6" decimal="169" name="\xxPhi" stringRepresentation="Φ"/>
+ <codePoint unicode="U+03A8" decimal="170" name="\xxPsi" stringRepresentation="Ψ"/>
+ <codePoint unicode="U+03A9" decimal="173" name="\xxOmega" stringRepresentation="Ω"/>
+ <codePoint unicode="U+FB00" decimal="174" name="ff" stringRepresentation="ﬀ"/>
+ <codePoint unicode="U+FB01" decimal="175" name="fi" stringRepresentation="ﬁ"/>
+ <codePoint unicode="U+FB02" decimal="176" name="fl" stringRepresentation="ﬂ"/>
+ <codePoint unicode="U+FB03" decimal="177" name="ffi" stringRepresentation="ﬃ"/>
+ <codePoint unicode="U+FB04" decimal="178" name="ffl" stringRepresentation="ﬄ"/>
+ <codePoint unicode="U+0131" decimal="179" name="{\i}" stringRepresentation="ı"/>
+ <codePoint unicode="U+0237" decimal="180" name="{\j}" stringRepresentation="ȷ"/>
+ <codePoint unicode="U+0300" decimal="181" name="\`" stringRepresentation="̀"/>
+ <codePoint unicode="U+0301" decimal="182" name="\'" stringRepresentation="́"/>
+ <codePoint unicode="U+030C" decimal="183" name="\v" stringRepresentation="̌"/>
+ <codePoint unicode="U+0305" decimal="184" name="\u" stringRepresentation="̅"/>
+ <codePoint unicode="U+0304" decimal="185" name="\=" stringRepresentation="̄"/>
+ <codePoint unicode="U+030A" decimal="186" name="\r" stringRepresentation="̊"/>
+ <codePoint unicode="U+0327" decimal="187" name="\c" stringRepresentation="̧"/>
+ <codePoint unicode="U+00DF" decimal="188" name="{\ss}" stringRepresentation="ß"/>
+ <codePoint unicode="U+00E6" decimal="189" name="{\ae}" stringRepresentation="æ"/>
+ <codePoint unicode="U+0153" decimal="190" name="{\ee}" stringRepresentation="œ"/>
+ <codePoint unicode="U+00F8" decimal="191" name="{\o}" stringRepresentation="ø"/>
+ <codePoint unicode="U+00C6" decimal="192" name="{\AE}" stringRepresentation="Æ"/>
+ <codePoint unicode="U+0152" decimal="193" name="{\OE}" stringRepresentation="Œ"/>
+ <codePoint unicode="U+00D8" decimal="194" name="{\O}" stringRepresentation="Ø"/>
+ <codePoint unicode="U+005C" decimal="195" name="&lt;005C&gt;" stringRepresentation="\"/>
+ <codePoint unicode="U+0308" decimal="196" name="\&quot;" stringRepresentation="̈"/>
+</codePointSet>

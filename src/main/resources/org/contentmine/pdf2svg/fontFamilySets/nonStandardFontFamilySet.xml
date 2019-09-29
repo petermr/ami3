@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fontFamilySet name="nonStandard">
+
+    <fontFamily name="Arial" />
+    <fontFamily name="Avenir" />
+    <fontFamily name="Calibri" />
+    <fontFamily name="Frutiger-Roman" />
+    <fontFamily name="Frutiger-Light" />
+    <fontFamily name="FrutigerBold" />
+    <fontFamily name="FrutigerLTStdBold" />
+    <fontFamily name="FrutigerLTStd-Roman"/>
+    <fontFamily name="OptimaItalic" />
+    <fontFamily name="Optima" />
+    <fontFamily name="OptimaBold" />
+    <fontFamily name="Strada-Light" />
+    <fontFamily name="TimesGreekSF" />
+    <fontFamily name="TimesNRExpertMT" />
+    <fontFamily name="TimesNRMT" />
+    <fontFamily name="Times-Roman" />
+    <fontFamily name="Univers" />
+
+<!--  =================MathematicalPi================================= -->    
+
+    <fontFamily name="MathematicalPi-One-Italic" note="" symbol="true" italic="true"
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/mathpi1.xml"/>
+    <fontFamily name="MathPiOne" note="" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/mathpi1.xml"/>
+    <fontFamily name="MathematicalPi-One" note="" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/mathpi1.xml"/>
+    <fontFamily name="MATHG-1A" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/mathpi1.xml"/>
+        
+        
+        
+    <fontFamily name="MathematicalPi-Two"
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/mathpi2.xml"/>
+    <fontFamily name="MathematicalPi-Three"
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/mathpi3.xml"/>
+    <fontFamily name="MathematicalPi-Four"
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/mathpi4.xml"/>
+    <fontFamily name="MathematicalPi-Five"
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/mathpi5.xml"/>
+    <fontFamily name="MathematicalPi-Six"
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/mathpi6.xml"/>
+
+<!-- combination? -->        
+    <fontFamily name="Universal-GreekwithMathPi" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/universalGreekMathpi.xml"/>
+        
+<!--  =================CommPi================================= -->    
+
+    <fontFamily name="Universal-NewswithCommPi"
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/commpi.xml"/>
+
+<!--  =================AstrologyPi================================= -->    
+    <fontFamily name="LAstrologyPi-One"
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/astrologypi1.xml"/>
+
+
+<!--  ================== MATH TIME =================== -->    
+<!-- for MT (Y&Y) fonts see http://www.math.utah.edu/~beebe/fonts/y-and-y-fontnames.html#Y-and-Y-MathTime-1.1-fonts 
+ Here are the 3 font names, in alphabetical order:
+
+    MTMI
+    MTSY
+    MTEX
+
+Y & Y MathTime Plus fonts
+
+Here are the 15 font names, in alphabetical order:
+
+    MTEXB
+    MTEXH
+    MTGU
+    MTGUB
+    MTLS
+    MTLSB
+    MTMIB
+    MTMIH
+    MTMS
+    MTMSB
+    MTMUB
+    MTMUH
+    MTSYB
+    MTSYH
+    MTSYN
+
+see also http://www.pctex.com/mtpro2.html (commercial sale)
+
+-->    
+    <fontFamily name="MT" />
+
+    <fontFamily name="MTMI" symbol="true" italic="true"
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/mtmi.xml" />
+    <fontFamily name="RMTMI" symbol="true" italic="true"
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/mtmi.xml"/>
+    <fontFamily name="MTMIB" symbol="true" italic="true"
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/mtmi.xml" />
+        
+    <fontFamily name="MTSY"
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/mtsy.xml" />
+    <fontFamily name="MTEX" unicode="guessed" publishers=""/>
+    
+    <fontFamily name="MTGU" />
+    <fontFamily name="MTGUB" />
+    <fontFamily name="MTSYB" />
+    
+    <fontFamily name="MTSYN"
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/mtsyn.xml" />
+        
+<!--  =======================FONTS OF TEX / AMS (MSAM/MSBM)=========================== -->    
+    <!--  FONTS OF TEX / AMS (MSAM/MSBM) -->
+    <fontFamily name="MSAM6" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/msam6.xml" />
+    <fontFamily name="MSAM7" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/msam7.xml" />
+    <fontFamily name="MSAM8" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/msam8.xml" />
+    <fontFamily name="MSAM9" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/msam9.xml" />
+    <fontFamily name="MSAM10" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/msam10.xml" />
+    <fontFamily name="msam10" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/msam10.xml" />
+
+    <fontFamily name="MSBM10" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/msam10.xml" />
+        
+<!--  ==================ADVPI fonts =========================== -->    
+    <!--  possible symbol fonts -->
+    <fontFamily name="AdvPi1" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/symbol/advpi1.xml"/>
+    <fontFamily name="AdvMPi-One" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/symbol/advpi1.xml"/>
+    <fontFamily name="AdvPi2" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/symbol/advpi2.xml"/>
+    <fontFamily name="AdvPi3" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/symbol/advpi3.xml"/>
+
+<!--  ==================MathPack =========================== -->    
+    <fontFamily name="MathPackTen" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/mathpack10.xml"/>
+    <fontFamily name="MathPackThirteen" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/mathpack13.xml"/>
+
+
+<!--  ==================Adv misc =========================== -->    
+    
+    
+    <fontFamily name="AdvMathSymb" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/advmathsymb.xml"/>
+
+    <fontFamily name="AdvCORRESAST" />
+
+    <fontFamily name="AdvP4C4E74" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/AdvP4C4E74.xml"/>
+    <fontFamily name="AdvP4C4E59" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/AdvP4C4E59.xml"/>
+    <fontFamily name="AdvP4C4E46" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/AdvP4C4E46.xml"/>
+    <fontFamily name="AdvP697C" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/AdvP697C.xml"/>
+    <fontFamily name="AdvPSSym" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/advPSSym.xml"/>
+    <fontFamily name="AdvP4C4E51" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/AdvP4C4E51.xml"/>
+    <fontFamily name="AdvP4C4E5E" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/AdvP4C4E5E.xml"/>
+    <fontFamily name="AdvTTec1d2308I" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/AdvTTec1d2308I.xml"/>
+    <fontFamily name="AdvPS4731B1" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/AdvPS4731B1.xml"/>
+    <fontFamily name="AdvPS586B" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/AdvPS586B.xml"/>
+
+
+    <fontFamily name="AdvT001" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/AdvT001.xml"/>
+    <fontFamily name="AdvT006" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/AdvT006.xml"/>
+
+    <fontFamily name="AdvPSMP1" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/advPSMP1.xml"/>
+    <fontFamily name="AdvPS_TINR" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/advPSTINR.xml"/>
+
+    <fontFamily name="AdvMT_EX" symbol="true"
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/advmt_ex.xml" />
+<!-- MT_MI seems variable -->        
+    <fontFamily name="AdvMT_MI" symbol="true"
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/advmt_mi.xml" />
+    <fontFamily name="ADVMT_MI" symbol="true"
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/advmt_mi.xml" />
+    <fontFamily name="ADVMT_RM" symbol="true"
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/advmt_rm.xml" />
+    <fontFamily name="AdvMT_RM" symbol="true"
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/advmt_rm.xml" />
+        
+    <fontFamily name="AdvMT_SY" symbol="true"
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/advmt_sy.xml" />
+    <fontFamily name="ADVMT_SY" symbol="true"
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/advmt_sy.xml" />
+        
+<!--  ==================AdvELS-ENT =========================== -->    
+    <fontFamily name="AdvEls-Ent1" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/advEnt1.xml"/>
+    <fontFamily name="AdvEls-ent2" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/advEnt2.xml"/>
+    <fontFamily name="AdvEls-ent3" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/advEnt3.xml"/>
+    <fontFamily name="AdvEls-ent4" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/advEnt4.xml"/>
+    <fontFamily name="AdvEls-ent5" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/advEnt5.xml"/>
+    <fontFamily name="AdvEls-ent6" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/advEnt6.xml"/>
+    <fontFamily name="AdvEls-ent7" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/advEnt7.xml"/>
+    <fontFamily name="AdvEls-ent8" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/advEnt8.xml"/>
+        
+<!--some SymbolStd announce family Symbol -->
+    <fontFamily name="SymbolStd" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/symbol/SymbolStd.xml"/>
+    <fontFamily name="Symbol" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/symbol/symbol.xml"/>
+        
+    <fontFamily name="AdvT377" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/AdvT377.xml"/>
+    <fontFamily name="AdvT042" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/AdvT042.xml"/>
+    <fontFamily name="AdvT897" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/AdvT897.xml"/>
+        
+    <fontFamily name="Wingdings-Regular" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/wingdings.xml"/>
+    <fontFamily name="Wingdings3" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/wingdings3.xml"/>
+
+    <fontFamily name="Cambria Math" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/cambriaMath.xml"/>
+    <fontFamily name="CambriaMath" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/cambriaMath.xml"/>
+
+<!-- uses Cddd codepoints -->
+    <fontFamily name="AdvMacMthSyN" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/AdvMacMthSyN.xml"/>
+    <fontFamily name="AdvMacms"  
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/AdvMacMthSyN.xml"/>
+
+    <!-- ligatures -->
+    <fontFamily name="AdvOT863180fb" symbol="false" />
+    <fontFamily name="AdvOT863180fb+fb" symbol="false" />
+
+<!-- ====================== AdvMTR ==============================  -->
+    <fontFamily name="AdvMTR" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/advmtr.xml"/>
+
+<!-- ====================== CM ==============================  -->
+<!--  these are all identical with different sizes -->
+    <fontFamily name="CMSY12" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmsy.xml"/>
+    <fontFamily name="CMSY11" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmsy.xml"/>
+    <fontFamily name="CMSY10" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmsy.xml"/>
+    <fontFamily name="CMSY9" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmsy.xml"/>
+    <fontFamily name="CMSY8" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmsy.xml"/>
+    <fontFamily name="CMSY7" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmsy.xml"/>
+    <fontFamily name="CMSY6" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmsy.xml"/>
+    <fontFamily name="CMSY5" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmsy.xml"/>
+
+<!--         
+    <fontFamily name="CMTI12" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmti.xml"/>
+    <fontFamily name="CMTI11" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmti.xml"/>
+    <fontFamily name="CMTI10" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmti.xml"/>
+    <fontFamily name="CMTI9" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmti.xml"/>
+    <fontFamily name="CMTI8" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmti.xml"/>
+    <fontFamily name="CMTI7" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmti.xml"/>
+    <fontFamily name="CMTI6" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmti.xml"/>
+    <fontFamily name="CMTI5" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmti.xml"/>
+        
+    <fontFamily name="CMR12" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmr.xml"/>
+    <fontFamily name="CMR11" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmr.xml"/>
+    <fontFamily name="CMR10" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmr.xml"/>
+    <fontFamily name="CMR9" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmr.xml"/>
+    <fontFamily name="CMR8" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmr.xml"/>
+    <fontFamily name="CMR7" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmr.xml"/>
+    <fontFamily name="CMR6" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmr.xml"/>
+    <fontFamily name="CMR5" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmr.xml"/>
+
+        
+    <fontFamily name="CMBX12" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmbx.xml"/>
+    <fontFamily name="CMBX11" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmbx.xml"/>
+    <fontFamily name="CMBX10" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmbx.xml"/>
+    <fontFamily name="CMBX9" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmbx.xml"/>
+    <fontFamily name="CMBX8" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmbx.xml"/>
+    <fontFamily name="CMBX7" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmbx.xml"/>
+    <fontFamily name="CMBX6" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmbx.xml"/>
+    <fontFamily name="CMBX5" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/cm/cmbx.xml"/>
+ -->
+    <fontFamily name="CMMI6" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/cmmi6.xml"/>
+    <fontFamily name="cmmi6" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/cmmi6.xml"/>
+    <fontFamily name="CMMI7" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/cmmi7.xml"/>
+    <fontFamily name="cmmi7" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/cmmi7.xml"/>
+    <fontFamily name="CMMIB8" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/cmmi8.xml"/> <!-- bold -->
+    <fontFamily name="CMMI8" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/cmmi8.xml"/>
+    <fontFamily name="cmmi8" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/cmmi8.xml"/>
+    <fontFamily name="cmmi9" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/cmmi9.xml"/>
+    <fontFamily name="CMMIB10" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/cmmi10.xml"/> <!-- bold -->
+    <fontFamily name="CMMI10" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/cmmi10.xml"/>
+    <fontFamily name="cmmi10" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/cmmi10.xml"/>
+<!-- ====================== Calibri ==============================  -->
+<!-- 
+    <fontFamily name="Calibri" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/calibri.xml"/>
+-->
+        
+    <!-- normalize these later -->
+    <fontFamily name="CalibriBold" />
+    <fontFamily name="Calibri,old" />
+    <fontFamily name="Calibri,talic" />
+
+<!-- ====================== Cyrillic ==============================  -->
+    <fontFamily name="Cyryl" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/cyryl.xml"/>
+
+<!-- ====================== Fx ==============================  -->
+
+<!-- there is a family of fonts Fe, Fi, Fs, etc. maybe one for each letter. No idea what to do -->
+<!-- ====================== MS-Gothic ==============================  -->
+    <fontFamily name="MS-PGothic" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/MSPGothic.xml"/>
+
+<!-- ====================== Myriad ==============================  -->
+    <fontFamily name="MyriadPro-Regular" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/myriadPro.xml"/>
+    <fontFamily name="MyriadPro-Bold" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/myriadPro.xml"/>
+        
+    <fontFamily name="MyriadMM215LT700SE" />
+    <fontFamily name="MyriadMM565SB700SE" />
+    <fontFamily name="MyriadMM400RG700SE" />
+    <fontFamily name="MyriadProIt" />
+    <fontFamily name="MyriadMM-Regular" />
+    <fontFamily name="MyriadProSemibold" />
+    <fontFamily name="MyriadMM-Light" />
+    <fontFamily name="MyriadProBold" />
+    <fontFamily name="MyriadPro-Light" />
+    <fontFamily name="MyriademiBold" />
+    <fontFamily name="MyriadItalic" />
+    <fontFamily name="Myriad-Roman" />
+    <fontFamily name="MyriadLight" />
+    
+    <fontFamily name="AdvMyriad_R" />
+
+<!-- ====================== Other ==============================  -->
+    <fontFamily name="AdvSPSASORT" symbol="true" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/AdvSPSASORT.xml"/>
+
+    <fontFamily name="OnemtmiguAAAA"
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/OnemtmiguAAAA.xml"/>
+
+    <fontFamily name="TTE266A490t00"
+        codePointSet="org/contentmine/pdf2svg/codepoints/misc/TTE266A490t00.xml"/>
+
+<!-- ====================== Dingbats ==============================  -->
+    <fontFamily name="Dingbats" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/defacto/dingbats.xml"/>
+      
+<!-- ====================== Other ==============================  -->
+    <fontFamily name="TimesNRMTBold" />
+    <fontFamily name="TimesGreekSFInclined" />
+    <fontFamily name="TimesNRExpertMTBold" />
+    <fontFamily name="TimesNRMTSemiBold" />
+    <fontFamily name="TimesBold" />
+    <fontFamily name="TimesNRMTItalic" />
+    <fontFamily name="TimesNRMTBoldtalic" />
+    <fontFamily name="TimesNRMTSemiBoldtalic" />
+    <fontFamily name="Times-RomanSC" />
+    <fontFamily name="UniversBold" />
+
+    <!--  BMC -->
+    <!--  +20 seems to be bold, +03 may be non-ascii set -->
+    <fontFamily name="AdvOTa9103878+03" />
+    <fontFamily name="AdvOT3b30f6db" />
+    <fontFamily name="AdvOT3b30f6db.B" forceBold="true"/>
+    <fontFamily name="AdvOT07517017" />
+    <fontFamily name="AdvOTf0bf83d5I" forceItalic="true"/>
+    <fontFamily name="AdvOT46dcae81" forceBold="true"/>  <!--  this is darker than normal; should be called bold, I think -->
+    <fontFamily name="AdvOT46dcae81+20" forceBold="true"/>
+    <fontFamily name="AdvOT56309c18I" forceBold="true" forceItalic="true" />
+    <fontFamily name="AdvOT56309c18.I" forceBold="true" forceItalic="true" />
+    <fontFamily name="AdvOT56309c18.I+20" forceBold="true" forceItalic="true" />
+    <fontFamily name="AdvOT65f8a23bI"  forceItalic="true"/>
+    <fontFamily name="AdvOTce3d9a73" forceBold="true"/>
+    
+    <fontFamily name="AdvOT07517017+03" />
+    <fontFamily name="AdvOTa9103878+20" forceBold="true"/>
+    <fontFamily name="AdvOTa9103878" />
+    <fontFamily name="AdvTT3f84ef53" 
+        codePointSet="org/contentmine/pdf2svg/codepoints/symbol/symbol.xml"/>
+    <fontFamily name="AdvTT94be8fa4.B" forceBold="true"
+        codePointSet="org/contentmine/pdf2svg/codepoints/symbol/symbol.xml"/>
+      
+    <fontFamily name="AdvOT07517017+20" forceBold="true"/>
+    <fontFamily name="AdvOTce3d9a73+03" />
+    <fontFamily name="AdvOTce3d9a73+20" forceBold="true"/>
+    <fontFamily name="AdvOT0d9ab1dbI" />
+
+    <!--  elsevier  -->    
+    <fontFamily name="AdvPSA35D" />
+    <fontFamily name="AdvOTc4d0b532" />
+    <fontFamily name="AdvOTb83ee1ddB" />
+    <fontFamily name="AdvOT404f8e91BI" />
+    <fontFamily name="AdvPS4BD310" />
+    <fontFamily name="AdvPS3F4C13" />
+    <fontFamily name="AdvOTb92eb7dfI" />
+    <fontFamily name="AdvOT863180fb+20" forceBold="true"/>
+    <fontFamily name="AdvPS4721B4" />
+    <fontFamily name="AdvPS44A44B" />
+
+    <fontFamily name="Minion-Regular" />
+    <fontFamily name="MinionBold" />
+    <fontFamily name="MinionBoldtalic" />
+    <fontFamily name="MinionItalic" />
+    <fontFamily name="Univers-Condensedold" />
+    <fontFamily name="Univers-Lightblique" />
+    <fontFamily name="UniversBoldblique" />
+    <fontFamily name="Univers-Condensedoldblique" />
+    <fontFamily name="Univers-Light" />
+    <fontFamily name="UniversBlack" />
+
+    <fontFamily name="TimesItalic" />
+
+    <fontFamily name="TimesTenGreekInclined" />
+    <fontFamily name="ChemBats2" />
+    <fontFamily name="ChemBats" />
+
+    <fontFamily name="AdvOTf32ed098B" />
+    <fontFamily name="AdvOT144a03c1" />
+    <fontFamily name="AdvP43B38B" />
+    <fontFamily name="AdvOT7d6df7abI" />
+    <fontFamily name="AdvPA0C7" />
+    <fontFamily name="AdvP44E6F4" />
+    <fontFamily name="AdvOT5e4d79fc" />
+    <fontFamily name="AdvP40798" />
+    <fontFamily name="AdvP3EAA99" />
+    <fontFamily name="AdvP414BFB" />
+    <fontFamily name="AdvOT1415ea69B" />
+    <fontFamily name="AdvP7DA6" />
+    <fontFamily name="AdvP705F" />
+    <fontFamily name="AdvP7627" />
+    <fontFamily name="AdvP7DB7" />
+    <fontFamily name="AdvP4383EF" />
+    <fontFamily name="AdvP3F0CD3" />
+    <fontFamily name="AdvP7CA8" />
+    <fontFamily name="AdvOT735b620e" />
+    <fontFamily name="AdvOTb65e897dB" forceBold="true"/>
+    <fontFamily name="AdvOT1ef757c0" />
+
+    <fontFamily name="AdvTimes" />
+    <fontFamily name="AdvP3FA081" />
+    <fontFamily name="AdvTT3f228929" />
+    <fontFamily name="AdvP3FA080" />
+    <fontFamily name="AdvP8952" />
+    <fontFamily name="AdvTT9b21af61" />
+    <fontFamily name="AdvTTaf2fa8d1" />
+    <fontFamily name="AdvP8955" />
+    <fontFamily name="AdvTT7c108665" />
+    <fontFamily name="AdvP3FA07F" />
+    <fontFamily name="AdvP3FA07E" />
+    <fontFamily name="AdvP3FA07A" />
+    <fontFamily name="AdvTT1fd23801" />
+    <fontFamily name="AdvP4A5FDB" />
+    <fontFamily name="AdvTT920944b2" />
+
+    <fontFamily name="AdvTT00bc0be2" />
+    <fontFamily name="AdvOT8608a8d1+25" forceBold="true"/>
+    <fontFamily name="AdvTT03eea2a7B+20" forceBold="true"/>
+    <fontFamily name="AdvOT7b6c0d50B" forceBold="true"/>
+    <fontFamily name="AdvOT8608a8d1+22" forceBold="true"/>
+    <fontFamily name="AdvTT03eea2a7B" forceBold="true"/>
+    <fontFamily name="AdvOTeeb42827I" forceItalic="true"/>
+    <fontFamily name="AdvOT82c4f4c4" />
+    <fontFamily name="AdvOTef4c711aI" />
+    <fontFamily name="AdvOT82c4f4c4+20"  forceBold="true"/>
+    <fontFamily name="AdvTT03eea2a7B+fb" />
+    <fontFamily name="AdvTT00bc0be2+fb" />
+    <fontFamily name="AdvTTd9d2734bI" forceItalic="true"/>
+    <fontFamily name="AdvOT9bd2e232B" />
+    <fontFamily name="AdvTT00bc0be2+20" forceBold="true"/>
+    <fontFamily name="AdvOT30a32c65" />
+    <fontFamily name="AdvOT30a32c65+20" forceBold="true"/>
+    <fontFamily name="AdvTT05cc2067+03" />
+
+    <fontFamily name="Avenir-Roman" />
+    <fontFamily name="Avenir-Mediumblique" />
+    <fontFamily name="AvenirLTStd-Medium" />
+    <fontFamily name="AvenirOblique" forceItalic="true"/>
+    <fontFamily name="Avenir-Heavy" forceBold="true"/>
+    <fontFamily name="AvenirBlack" forceBold="true"/>
+    <fontFamily name="AvenirLTStd-Mediumblique" />
+    <fontFamily name="AvenirBlackblique" />
+    <fontFamily name="Avenir-Medium" />
+    <fontFamily name="Avenir-Lightblique" />
+    <fontFamily name="Avenir-Light" />
+
+    <fontFamily name="MinionSemiboldtalic" />
+    <fontFamily name="MinionSemibold" />
+    <fontFamily name="OurOwn-CJS" />
+
+<!-- possibly PLoS -->
+    <fontFamily name="AdvP4C9F3E" />
+    <fontFamily name="AdvP43A417" />
+    <fontFamily name="AdvP41461E" forceBold="true"/> <!--  bold guessed, might be wrong -->
+    <fontFamily name="AdvP4041BD" />
+    <fontFamily name="AdvP3D3256" />
+    <fontFamily name="AdvP4980F" />
+    <fontFamily name="AdvP4980C" />
+    <fontFamily name="AdvP49811" />
+    <fontFamily name="AdvP49812" forceItalic="true"/>
+    <fontFamily name="AdvP403A40" />
+    <fontFamily name="AdvP40319B" forceBold="true"/>
+    <fontFamily name="AdvP497E2" />
+    <fontFamily name="AdvP497E3" />
+    
+    <fontFamily name="AdvTA42" />
+    <fontFamily name="AdvP4DF614" />
+    <fontFamily name="AdvMacT_R" />
+    <fontFamily name="AdvUnivers" />
+    <fontFamily name="AdvP4DF60E" />
+    <fontFamily name="AdvP4DF60F" />
+    <fontFamily name="AdvGulliver-SCO" />
+    
+    <fontFamily name="AdvGulliv-B" forceBold="true"/>
+    <fontFamily name="AdvGulliv-I" forceItalic="true"/>
+    <fontFamily name="AdvGulliv-R"/>
+    
+    <fontFamily name="AdvHelv_B" forceBold="true"/>
+    <fontFamily name="AdvTT5843c571" />
+    <fontFamily name="AdvTNR" />
+    <fontFamily name="AdvTNRBoldI" forceItalic="true"/>
+    <fontFamily name="AdvMPi-Three" />
+    <fontFamily name="AdvHelv_BO" />
+    <fontFamily name="AdvOptima" />
+    <fontFamily name="AdvMPi-Four" />
+    <fontFamily name="AdvOptimab" forceBold="true"/>
+    <fontFamily name="AdvTNRBold" forceBold="true"/>
+    <fontFamily name="AdvTNRItalic" forceItalic="true"/>
+    <fontFamily name="AdvHelv_R" />
+    <fontFamily name="AdvP7B6C" />
+    <fontFamily name="AdvOT62649246B" />
+    <fontFamily name="AdvOptimai" forceItalic="true"/>
+
+    <fontFamily name="AdvPompei_Reg" />
+    <fontFamily name="AdvTimesb" forceBold="true"/>
+    <fontFamily name="AdvTimesbi" forceBold="true" forceItalic="true"/>
+    <fontFamily name="AdvTimesi" forceItalic="true"/>
+    <fontFamily name="AdvT004" />
+    
+</fontFamilySet>
+    

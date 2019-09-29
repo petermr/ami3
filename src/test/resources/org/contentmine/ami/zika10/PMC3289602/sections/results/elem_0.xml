@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="s3" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Results</div>
+ <sec id="s3a" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Phlyogenetic analyses</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">All three methods of phylogenetic inference (NJ, ML and MP) identified two major lineages (African and Asian) (
+   <a ref-type="fig" rid="pntd-0001477-g001" href="#pntd-0001477-g001">Figure 1</a>). The most recent common ancestor of MR 766 (Uganda, 1947) diverged first, followed by the divergence of the most recent common ancestor of the ArD 41519 (Senegal, 1984) and IbH 30656 (Nigeria, 1968) strains, the P6-740 strain (Malaysia, 1966), and lastly the EC Yap (Micronesia, 2007) and FS13025 (Cambodia, 2010) strains.
+  </p>
+  <div id="pntd-0001477-g001" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span pub-id-type="doi" class="object-id">10.1371/journal.pntd.0001477.g001</span>
+   <span class="label">Figure 1</span>
+   <div class="caption">
+    <div class="title">Zika virus nucleotide and amino acid alignments.</div>
+    <p>Neighbor-joining phylogeny generated from open reading frame nucleotide sequences of Zika virus strains. The tree was rooted with Spondweni virus (GenBank accession number DQ859064). The scale at the bottom of the tree represents genetic distance in nucleotide substitutions per site. Numbers at the nodes represent percent bootstrap support values based on 1,000 replicates. Isolates are represented according to strain name, country of origin, and year of isolation. The lineage of each virus is indicated to the right of the tree. *Strains sequenced in this study.</p>
+   </div>
+   <div xlink:href="pntd.0001477.g001" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </sec>
+ <sec id="s3b" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Nucleotide and amino acid sequence variation among African and Asian strains</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Based on nucleotide and amino acid sequence composition, the African strains were the most divergent from the Asian strains, and strains from the same geographic regions were the least divergent (Africa and Asia) (
+   <a ref-type="table" rid="pntd-0001477-t003" href="#pntd-0001477-t003">Table 3</a>). There were several deduced amino acid differences among the strains, which in turn correlated to geographic area of virus collection.
+  </p>
+  <div id="pntd-0001477-t003" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+   <span pub-id-type="doi" class="object-id">10.1371/journal.pntd.0001477.t003</span>
+   <span class="label">Table 3</span>
+   <div class="caption">
+    <div class="title">Pairwise comparisons of African and Asian Zika virus strains.
+     <a ref-type="table-fn" rid="nt108" href="#nt108">*</a>
+    </div>
+   </div>
+   <div class="alternatives">
+    <div id="pntd-0001477-t003-3" xlink:href="pntd.0001477.t003" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+    <table frame="hsides" rules="groups">
+     <colgroup span="1">
+      <col align="left" span="1"/>
+      <col align="center" span="1"/>
+      <col align="center" span="1"/>
+      <col align="center" span="1"/>
+      <col align="center" span="1"/>
+      <col align="center" span="1"/>
+      <col align="center" span="1"/>
+     </colgroup>
+     <thead>
+      <tr>
+       <td align="left" rowspan="1" colspan="1">Sequence</td>
+       <td align="left" rowspan="1" colspan="1">MR 766
+        <a ref-type="table-fn" rid="nt109" href="#nt109">†</a>
+       </td>
+       <td align="left" rowspan="1" colspan="1">IbH 30656</td>
+       <td align="left" rowspan="1" colspan="1">ArD 41519</td>
+       <td align="left" rowspan="1" colspan="1">P6-740</td>
+       <td align="left" rowspan="1" colspan="1">FSS13025</td>
+       <td align="left" rowspan="1" colspan="1">EC Yap</td>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td align="left" rowspan="1" colspan="1">MR 766
+        <a ref-type="table-fn" rid="nt109" href="#nt109">†</a>
+       </td>
+       <td align="left" rowspan="1" colspan="1"/>
+       <td align="left" rowspan="1" colspan="1">
+        <span class="bold">2.2</span>
+       </td>
+       <td align="left" rowspan="1" colspan="1">
+        <span class="bold">1.7</span>
+       </td>
+       <td align="left" rowspan="1" colspan="1">
+        <span class="bold">3.1</span>
+       </td>
+       <td align="left" rowspan="1" colspan="1">
+        <span class="bold">3.7</span>
+       </td>
+       <td align="left" rowspan="1" colspan="1">
+        <span class="bold">3.7</span>
+       </td>
+      </tr>
+      <tr>
+       <td align="left" rowspan="1" colspan="1">IbH 30656</td>
+       <td align="left" rowspan="1" colspan="1">7.0</td>
+       <td align="left" rowspan="1" colspan="1"/>
+       <td align="left" rowspan="1" colspan="1">
+        <span class="bold">1.2</span>
+       </td>
+       <td align="left" rowspan="1" colspan="1">
+        <span class="bold">3.1</span>
+       </td>
+       <td align="left" rowspan="1" colspan="1">
+        <span class="bold">3.6</span>
+       </td>
+       <td align="left" rowspan="1" colspan="1">
+        <span class="bold">3.9</span>
+       </td>
+      </tr>
+      <tr>
+       <td align="left" rowspan="1" colspan="1">ArD 41519</td>
+       <td align="left" rowspan="1" colspan="1">7.0</td>
+       <td align="left" rowspan="1" colspan="1">3.2</td>
+       <td align="left" rowspan="1" colspan="1"/>
+       <td align="left" rowspan="1" colspan="1">
+        <span class="bold">2.7</span>
+       </td>
+       <td align="left" rowspan="1" colspan="1">
+        <span class="bold">3.1</span>
+       </td>
+       <td align="left" rowspan="1" colspan="1">
+        <span class="bold">3.4</span>
+       </td>
+      </tr>
+      <tr>
+       <td align="left" rowspan="1" colspan="1">P6-740</td>
+       <td align="left" rowspan="1" colspan="1">10.2</td>
+       <td align="left" rowspan="1" colspan="1">10.3</td>
+       <td align="left" rowspan="1" colspan="1">10.1</td>
+       <td align="left" rowspan="1" colspan="1"/>
+       <td align="left" rowspan="1" colspan="1">
+        <span class="bold">1.2</span>
+       </td>
+       <td align="left" rowspan="1" colspan="1">
+        <span class="bold">1.5</span>
+       </td>
+      </tr>
+      <tr>
+       <td align="left" rowspan="1" colspan="1">FSS13025</td>
+       <td align="left" rowspan="1" colspan="1">11.6</td>
+       <td align="left" rowspan="1" colspan="1">11.7</td>
+       <td align="left" rowspan="1" colspan="1">11.6</td>
+       <td align="left" rowspan="1" colspan="1">4.3</td>
+       <td align="left" rowspan="1" colspan="1"/>
+       <td align="left" rowspan="1" colspan="1">
+        <span class="bold">0.8</span>
+       </td>
+      </tr>
+      <tr>
+       <td align="left" rowspan="1" colspan="1">EC Yap</td>
+       <td align="left" rowspan="1" colspan="1">11.4</td>
+       <td align="left" rowspan="1" colspan="1">11.7</td>
+       <td align="left" rowspan="1" colspan="1">11.5</td>
+       <td align="left" rowspan="1" colspan="1">4.3</td>
+       <td align="left" rowspan="1" colspan="1">1.8</td>
+       <td align="left" rowspan="1" colspan="1"/>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+   <div class="table-wrap-foot">
+    <fn id="nt108" class="fn" xmlns="">
+     <span class="label" xmlns="http://www.w3.org/1999/xhtml"/>
+     <p xmlns="http://www.w3.org/1999/xhtml">*Lightface type = Percent nucleotide divergence; Boldface type = Percent amino acid divergence.</p>
+    </fn>
+    <fn id="nt109" class="fn" xmlns="">
+     <p xmlns="http://www.w3.org/1999/xhtml">
+      <span class="bold">†:</span> GenBank accession no. AY632535.
+     </p>
+    </fn>
+   </div>
+  </div>
+ </sec>
+ <sec id="s3c" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Genetic variation among three MR 766 sequences</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">The two MR 766 strains that had been previously sequenced exhibited extensive genetic variation (6.3% nucleotide, 1.8% amino acid divergence) (
+   <a ref-type="table" rid="pntd-0001477-t002" href="#pntd-0001477-t002">Table 2</a>). To investigate this discrepancy (
+   <a ref-type="table" rid="pntd-0001477-t002" href="#pntd-0001477-t002">Table 2</a>), we sequenced an additional strain of MR 766 from the WRCEVA collection. The MR 766 sequence with accession number AY632535 
+   <a ref-type="bibr" rid="pntd.0001477-Kuno1" href="#pntd.0001477-Kuno1">[16]</a>, was ultimately chosen for use in our analyses due to its low passage history, nucleotide and amino acid similarity to the high passage MR 766 strain that we sequenced (0.4% nucleotide and 0.6% amino acid divergence), and its position closest to the root of the MR 766 lineage in a tree including all three sequences (not shown).
+  </p>
+ </sec>
+ <sec id="s3d" class="sec">
+  <div class="title" xmlns="http://www.w3.org/1999/xhtml">Glycosylation site variation between African and Asian strains</div>
+  <p xmlns="http://www.w3.org/1999/xhtml">Deletions in a potential glycosylation site of several strains were observed following their alignment (
+   <a ref-type="fig" rid="pntd-0001477-g002" href="#pntd-0001477-g002">Figure 2</a>). A 4-codon deletion was observed beginning at amino acid position 153 of the E protein of the MR766 strain (GenBank accession number AY632535), a 6-codon deletion at position 156 of another MR 766 strain (GenBank accession number DQ859059), and a 6-codon deletion at position 156 of the IbH 30656 strain sequenced in this study. The MR 766 strain (Passage 147) sequenced here did not exhibit any deletions in the predicted amino acid sequence and provided evidence of passage-associated changes in potential glycosylation site(s).
+  </p>
+  <div id="pntd-0001477-g002" position="float" class="fig" xmlns="http://www.w3.org/1999/xhtml">
+   <span pub-id-type="doi" class="object-id">10.1371/journal.pntd.0001477.g002</span>
+   <span class="label">Figure 2</span>
+   <div class="caption">
+    <div class="title">Zika virus phylogeny.</div>
+    <p>Nucleotide (top) and amino acid (bottom) sequences of the envelope protein/gene of Zika virus strains showing the deletions in the potential glycosylation sites of the MR 766 (Uganda, 1947) and the IbH 30656 (Nigeria, 1968) strains. Deletions are indicated by dashes. The “N” at position 467 of the P6-740 strain (Malaysia, 1966) represents an equally weighted double population of the nucleotides “C” and “T”. This translates to an “X” at position 165 of the amino acid alignment.</p>
+   </div>
+   <div xlink:href="pntd.0001477.g002" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </div>
+ </sec>
+</sec>

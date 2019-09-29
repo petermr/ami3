@@ -1,0 +1,57 @@
+<codePointSet encoding="Unicode" id="mathematicalOperators">
+
+    <codePoint unicode="U+2200" unicodeName="FOR ALL" name="universal" />
+    <codePoint unicode="U+2202" unicodeName="PARTIAL DIFFERENTIAL" name="partialdiff" />
+    <codePoint unicode="U+2203" unicodeName="THERE EXISTS" name="existential" />
+    <codePoint unicode="U+2205" unicodeName="EMPTY SET" name="emptyset" />
+    <codePoint unicode="U+2206" unicodeName="INCREMENT" name="Delta"
+        replaceByName="GREEK CAPITAL LETTER DELTA" replaceByUnicode="U+0394" />
+    <codePoint unicode="U+2207" unicodeName="NABLA" name="gradient" />
+    <codePoint unicode="U+2208" unicodeName="ELEMENT OF" name="element" />
+    <codePoint unicode="U+2209" unicodeName="NOT AN ELEMENT OF" name="notelement" />
+    <codePoint unicode="U+220B" unicodeName="CONTAINS AS MEMBER" name="suchthat" />
+    <codePoint unicode="U+220F" unicodeName="N-ARY PRODUCT" name="product" />
+    <codePoint unicode="U+2211" unicodeName="N-ARY SUMMATION" name="summation" />
+    <codePoint unicode="U+2212" unicodeName="MINUS SIGN" name="minus"
+         replaceName="HYPHEN-MINUS" replaceByUnicode="U+002D" />
+    <codePoint unicode="U+2215" unicodeName="DIVISION SLASH" name="fraction" />
+    <codePoint unicode="U+2217" unicodeName="ASTERISK OPERATOR" name="asteriskmath" 
+        replaceName="ASTERISK" replaceByUnicode="U+002A" />
+    <codePoint unicode="U+221A" unicodeName="SQUARE ROOT" name="radical" />
+    <codePoint unicode="U+221D" unicodeName="PROPORTIONAL TO" name="proportional" />
+    <codePoint unicode="U+221E" unicodeName="INFINITY" name="infinity" />
+    <codePoint unicode="U+2220" unicodeName="ANGLE" name="angle" />
+    <codePoint unicode="U+2223" unicodeName="DIVIDES" name=""
+        note="replace by VERTICAL LINE" replaceByUnicode="U+007C" />
+
+    
+    <codePoint unicode="U+2227" unicodeName="LOGICAL AND" name="logicaland" />
+    <codePoint unicode="U+2228" unicodeName="LOGICAL OR" name="logicalor" />
+    <codePoint unicode="U+2229" unicodeName="INTERSECTION" name="intersection" />
+    <codePoint unicode="U+222A" unicodeName="UNION" name="union" />
+    <codePoint unicode="U+222B" unicodeName="INTEGRAL" name="integral" />
+    <codePoint unicode="U+2234" unicodeName="THEREFORE" name="therefore" />
+    <codePoint unicode="U+223C" unicodeName="TILDE OPERATOR" name="similar" 
+        replaceByUnicode="U+007E" replaceName="TILDE" />
+    <codePoint unicode="U+2245" unicodeName="APPROXIMATELY EQUAL TO" name="congruent" />
+    <codePoint unicode="U+2248" unicodeName="ALMOST EQUAL TO" name="approxequal" />
+    <codePoint unicode="U+2260" unicodeName="NOT EQUAL TO" name="notequal" />
+    <codePoint unicode="U+2261" unicodeName="IDENTICAL TO" name="equivalence" />
+    <codePoint unicode="U+2264" unicodeName="LESS-THAN OR EQUAL TO" name="lessequal" />
+    <codePoint unicode="U+2265" unicodeName="GREATER-THAN OR EQUAL TO" name="greaterequal" />
+    <codePoint unicode="U+226A" unicodeName="MUCH LESS-THAN" name="" />
+    <codePoint unicode="U+226B" unicodeName="MUCH GREATER-THAN" name="" />
+	
+    <codePoint unicode="U+2282" unicodeName="SUBSET OF" name="propersubset" />
+    <codePoint unicode="U+2283" unicodeName="SUPERSET OF" name="propersuperset" />
+    <codePoint unicode="U+2284" unicodeName="NOT A SUBSET OF" name="notsubset" />
+    <codePoint unicode="U+2286" unicodeName="SUBSET OF OR EQUAL TO" name="reflexsubset" />
+    <codePoint unicode="U+2287" unicodeName="SUPERSET OF OR EQUAL TO" name="reflexsuperset" />
+    <codePoint unicode="U+2295" unicodeName="CIRCLED PLUS" name="circleplus" />
+    <codePoint unicode="U+2297" unicodeName="CIRCLED TIMES" name="circlemultiply" />
+    <codePoint unicode="U+22A5" unicodeName="UP TACK" name="perpendicular" />
+    <codePoint unicode="U+22C5" unicodeName="DOT OPERATOR" name="dotmath" />
+
+    <codePoint unicode="U+22EF" unicodeName="MIDLINE HORIZONTAL ELLIPSIS" name="" />
+
+</codePointSet>

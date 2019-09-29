@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sec id="s1" class="sec">
+ <div class="title" xmlns="http://www.w3.org/1999/xhtml">Introduction</div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Zika virus (ZIKV) is a member of the Spondweni serocomplex within the genus 
+  <span class="italic">Flavivirus</span>, family 
+  <span class="italic">Flaviviridae</span>
+  <a ref-type="bibr" rid="pntd.0001477-Thiel1" href="#pntd.0001477-Thiel1">[1]</a>. Other mosquito-borne flaviviruses of public health importance include yellow fever, dengue, St. Louis encephalitis, West Nile and Japanese encephalitis viruses. Although research efforts have focused on many of these viruses, other medically important members of the mosquito-borne flaviviruses, such as ZIKV, have received far less attention.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Zika virus was first isolated from a sentinel rhesus monkey placed in the Zika Forest near Lake Victoria, Uganda in April 1947; a second isolation from the mosquito 
+  <span class="italic">Aedes africanus</span> followed at the same site in January 1948 
+  <a ref-type="bibr" rid="pntd.0001477-Dick1" href="#pntd.0001477-Dick1">[2]</a>. Since that time, sporadic isolations have been made from humans and a variety of mosquito species in both Africa and Asia, with studies of human and animal seroprevalence confirming this distribution (
+  <a ref-type="table" rid="pntd-0001477-t001" href="#pntd-0001477-t001">Table 1</a>). Zika virus is most likely maintained in a sylvatic cycle involving non-human primates and mosquitoes 
+  <a ref-type="bibr" rid="pntd.0001477-Haddow1" href="#pntd.0001477-Haddow1">[3]</a>, 
+  <a ref-type="bibr" rid="pntd.0001477-Boorman1" href="#pntd.0001477-Boorman1">[4]</a>, with cyclic epizootics in monkeys reported in Uganda 
+  <a ref-type="bibr" rid="pntd.0001477-Henderson1" href="#pntd.0001477-Henderson1">[5]</a>, 
+  <a ref-type="bibr" rid="pntd.0001477-Kirya1" href="#pntd.0001477-Kirya1">[6]</a>, 
+  <a ref-type="bibr" rid="pntd.0001477-McCrae1" href="#pntd.0001477-McCrae1">[7]</a>, 
+  <a ref-type="bibr" rid="pntd.0001477-McCrae2" href="#pntd.0001477-McCrae2">[8]</a>. In the sylvatic transmission cycle, humans likely serve as incidental hosts. However, in areas without non-human primates, humans probably serve as primary amplification hosts and potentially as reservoir hosts if their viremia is sufficient in duration and magnitude 
+  <a ref-type="bibr" rid="pntd.0001477-Duffy1" href="#pntd.0001477-Duffy1">[9]</a>. Although it is thought that enzootic ZIKV is maintained primarily in a monkey/mosquito transmission cycle, antibodies have been detected in numerous other animal species including water buffalo, elephants, goats, hippos, impala, kongoni, lions, sheep, rodents, wildebeest, and zebras 
+  <a ref-type="bibr" rid="pntd.0001477-Henderson1" href="#pntd.0001477-Henderson1">[5]</a>, 
+  <a ref-type="bibr" rid="pntd.0001477-Darwish1" href="#pntd.0001477-Darwish1">[10]</a>.
+ </p>
+ <div id="pntd-0001477-t001" position="float" class="table-wrap" xmlns="http://www.w3.org/1999/xhtml">
+  <span pub-id-type="doi" class="object-id">10.1371/journal.pntd.0001477.t001</span>
+  <span class="label">Table 1</span>
+  <div class="caption">
+   <div class="title">Probable distribution of Zika virus based on virus isolation and seroprevalence.</div>
+  </div>
+  <div class="alternatives">
+   <div id="pntd-0001477-t001-1" xlink:href="pntd.0001477.t001" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <table frame="hsides" rules="groups">
+    <colgroup span="1">
+     <col align="left" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+     <col align="center" span="1"/>
+    </colgroup>
+    <thead>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Country</td>
+      <td align="left" rowspan="1" colspan="1">Earliest Report
+       <a ref-type="table-fn" rid="nt101" href="#nt101">*</a>
+      </td>
+      <td align="left" rowspan="1" colspan="1">Seroprevalence
+       <a ref-type="table-fn" rid="nt102" href="#nt102">†</a> (Humans)
+      </td>
+      <td align="left" rowspan="1" colspan="1">Virus isolation (Human)</td>
+      <td align="left" rowspan="1" colspan="1">Seroprevalence
+       <a ref-type="table-fn" rid="nt102" href="#nt102">†</a> (Non-human primates)
+      </td>
+      <td align="left" rowspan="1" colspan="1">Virus isolation (Non-human primates)</td>
+      <td align="left" rowspan="1" colspan="1">Virus isolation (Mosquito)</td>
+      <td align="left" rowspan="1" colspan="1">Reference(s)</td>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Borneo</td>
+      <td align="left" rowspan="1" colspan="1">1951</td>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">Pongo pygmaeus</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <a ref-type="bibr" rid="pntd.0001477-Smithburn1" href="#pntd.0001477-Smithburn1">[29]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Wolfe1" href="#pntd.0001477-Wolfe1">[30]</a>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Burkina Faso</td>
+      <td align="left" rowspan="1" colspan="1">1981</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">Aedes aegypti, Ae. furcifer, Ae. jamoti, Ae. opok</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">
+       <a ref-type="bibr" rid="pntd.0001477-Institut1" href="#pntd.0001477-Institut1">[31]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Faye1" href="#pntd.0001477-Faye1">[32]</a>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Cambodia</td>
+      <td align="left" rowspan="1" colspan="1">2010</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <a ref-type="bibr" rid="pntd.0001477-Heang1" href="#pntd.0001477-Heang1">[15]</a>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Cameroon</td>
+      <td align="left" rowspan="1" colspan="1">2010</td>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <a ref-type="bibr" rid="pntd.0001477-Fokam1" href="#pntd.0001477-Fokam1">[33]</a>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Central African Republic</td>
+      <td align="left" rowspan="1" colspan="1">1968</td>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">Ae. africanus, Ae. opok</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">
+       <a ref-type="bibr" rid="pntd.0001477-Institut1" href="#pntd.0001477-Institut1">[31]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Faye1" href="#pntd.0001477-Faye1">[32]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Saluzzo1" href="#pntd.0001477-Saluzzo1">[34]</a>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Cote d'Ivoire</td>
+      <td align="left" rowspan="1" colspan="1">1980</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">Ae. africanus, Ae. flavicollis, Ae. furcifer, Ae. grahami, Eretmapodites inornatus, Ae. opok, Er. quinquevittatus, Ae. taeniarostris, Ae. tarsalis, Ae. vitattus</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">
+       <a ref-type="bibr" rid="pntd.0001477-Institut1" href="#pntd.0001477-Institut1">[31]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Faye1" href="#pntd.0001477-Faye1">[32]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-AkouaKoffi1" href="#pntd.0001477-AkouaKoffi1">[35]</a>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Egypt</td>
+      <td align="left" rowspan="1" colspan="1">1953</td>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <a ref-type="bibr" rid="pntd.0001477-Smithburn2" href="#pntd.0001477-Smithburn2">[36]</a>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Ethiopia</td>
+      <td align="left" rowspan="1" colspan="1">1967</td>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <a ref-type="bibr" rid="pntd.0001477-Henderson2" href="#pntd.0001477-Henderson2">[37]</a>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Gabon</td>
+      <td align="left" rowspan="1" colspan="1">1967</td>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <a ref-type="bibr" rid="pntd.0001477-Jan1" href="#pntd.0001477-Jan1">[38]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Saluzzo2" href="#pntd.0001477-Saluzzo2">[39]</a>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">India</td>
+      <td align="left" rowspan="1" colspan="1">1952</td>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <a ref-type="bibr" rid="pntd.0001477-Smithburn3" href="#pntd.0001477-Smithburn3">[40]</a>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Indonesia</td>
+      <td align="left" rowspan="1" colspan="1">1951</td>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <a ref-type="bibr" rid="pntd.0001477-Olson1" href="#pntd.0001477-Olson1">[13]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Olson2" href="#pntd.0001477-Olson2">[41]</a>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Kenya</td>
+      <td align="left" rowspan="1" colspan="1">1967</td>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <a ref-type="bibr" rid="pntd.0001477-Henderson2" href="#pntd.0001477-Henderson2">[37]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Geser1" href="#pntd.0001477-Geser1">[42]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Henderson3" href="#pntd.0001477-Henderson3">[43]</a>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Malaysia</td>
+      <td align="left" rowspan="1" colspan="1">1951</td>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">Ae. aegypti</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">
+       <a ref-type="bibr" rid="pntd.0001477-Marchette1" href="#pntd.0001477-Marchette1">[28]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Smithburn1" href="#pntd.0001477-Smithburn1">[29]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Pond1" href="#pntd.0001477-Pond1">[44]</a>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Micronesia, Yap Island
+       <a ref-type="table-fn" rid="nt103" href="#nt103">‡</a>
+      </td>
+      <td align="left" rowspan="1" colspan="1">2007</td>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <a ref-type="bibr" rid="pntd.0001477-Duffy1" href="#pntd.0001477-Duffy1">[9]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Lanciotti1" href="#pntd.0001477-Lanciotti1">[17]</a>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Nigeria</td>
+      <td align="left" rowspan="1" colspan="1">1968</td>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <a ref-type="bibr" rid="pntd.0001477-AdekoluJohn1" href="#pntd.0001477-AdekoluJohn1">[45]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Carey2" href="#pntd.0001477-Carey2">[46]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Lee1" href="#pntd.0001477-Lee1">[47]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Fagbami1" href="#pntd.0001477-Fagbami1">[48]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Moore1" href="#pntd.0001477-Moore1">[49]</a>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Pakistan</td>
+      <td align="left" rowspan="1" colspan="1">1980</td>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <a ref-type="bibr" rid="pntd.0001477-Darwish1" href="#pntd.0001477-Darwish1">[10]</a>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Philippines</td>
+      <td align="left" rowspan="1" colspan="1">1953</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <a ref-type="bibr" rid="pntd.0001477-Hammon1" href="#pntd.0001477-Hammon1">[50]</a>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Senegal</td>
+      <td align="left" rowspan="1" colspan="1">1968</td>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">Cercopithecus aethiops, Erythrocebus patas</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">Ae. aegypti, Ae. dalzieli, Ae. fowleri, Ae. furcifer, Ae. luteocephalus, Ae. metallicus, Ae. minutus, Ae. neoafricanus, Ae. tarsalis, Ae. vitattus, Anopheles gambiae, Mansonia uniformis</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">
+       <a ref-type="bibr" rid="pntd.0001477-Foy1" href="#pntd.0001477-Foy1">[14]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Institut1" href="#pntd.0001477-Institut1">[31]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Faye1" href="#pntd.0001477-Faye1">[32]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Monlun1" href="#pntd.0001477-Monlun1">[51]</a>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Sierra Leone</td>
+      <td align="left" rowspan="1" colspan="1">1972</td>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <a ref-type="bibr" rid="pntd.0001477-Robin1" href="#pntd.0001477-Robin1">[52]</a>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Somalia</td>
+      <td align="left" rowspan="1" colspan="1">1967</td>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <a ref-type="bibr" rid="pntd.0001477-Henderson2" href="#pntd.0001477-Henderson2">[37]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Henderson3" href="#pntd.0001477-Henderson3">[43]</a>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Tanzania</td>
+      <td align="left" rowspan="1" colspan="1">1948</td>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <a ref-type="bibr" rid="pntd.0001477-Smithburn4" href="#pntd.0001477-Smithburn4">[53]</a>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Thailand</td>
+      <td align="left" rowspan="1" colspan="1">1954</td>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <a ref-type="bibr" rid="pntd.0001477-Pond1" href="#pntd.0001477-Pond1">[44]</a>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Uganda</td>
+      <td align="left" rowspan="1" colspan="1">1947</td>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">Cercopithecus aethiops, Cercopithecus ascanius schmidti, Cercopithecus mona denti, Cercopithecus albigena johnstoni, Colobus abyssinicus</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <span class="italic">Ae. africanus</span>
+      </td>
+      <td align="left" rowspan="1" colspan="1">
+       <a ref-type="bibr" rid="pntd.0001477-Dick1" href="#pntd.0001477-Dick1">[2]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Haddow1" href="#pntd.0001477-Haddow1">[3]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Henderson1" href="#pntd.0001477-Henderson1">[5]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Kirya1" href="#pntd.0001477-Kirya1">[6]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-McCrae1" href="#pntd.0001477-McCrae1">[7]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-McCrae2" href="#pntd.0001477-McCrae2">[8]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Simpson1" href="#pntd.0001477-Simpson1">[11]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Henderson3" href="#pntd.0001477-Henderson3">[43]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Smithburn4" href="#pntd.0001477-Smithburn4">[53]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Dick2" href="#pntd.0001477-Dick2">[54]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Henderson4" href="#pntd.0001477-Henderson4">[55]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Rodhain1" href="#pntd.0001477-Rodhain1">[56]</a>, 
+       <a ref-type="bibr" rid="pntd.0001477-Weinbren1" href="#pntd.0001477-Weinbren1">[57]</a>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">USA</td>
+      <td align="left" rowspan="1" colspan="1">2009</td>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <a ref-type="bibr" rid="pntd.0001477-Foy1" href="#pntd.0001477-Foy1">[14]</a>
+      </td>
+     </tr>
+     <tr>
+      <td align="left" rowspan="1" colspan="1">Vietnam</td>
+      <td align="left" rowspan="1" colspan="1">1954</td>
+      <td align="left" rowspan="1" colspan="1">X</td>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1"/>
+      <td align="left" rowspan="1" colspan="1">
+       <a ref-type="bibr" rid="pntd.0001477-Pond1" href="#pntd.0001477-Pond1">[44]</a>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="table-wrap-foot">
+   <fn id="nt101" class="fn" xmlns="">
+    <span class="label" xmlns="http://www.w3.org/1999/xhtml"/>
+    <p xmlns="http://www.w3.org/1999/xhtml">*Earliest report, indicates either the first virus isolation or the first report of seroprevalence.</p>
+   </fn>
+   <fn id="nt102" class="fn" xmlns="">
+    <p xmlns="http://www.w3.org/1999/xhtml">
+     <span class="bold">†:</span> Seroprevalence was either determined by one or more of the following methods: Haemagglution inhibition, neutralization, complement-fixation, IgG and/or IgM ELISA. Of note, it is possible due to antigenic cross-reactivity among flaviviruses that seropostive individuals may have been previously exposed to one or more flaviviruses and not to Zika virus.
+    </p>
+   </fn>
+   <fn id="nt103" class="fn" xmlns="">
+    <p xmlns="http://www.w3.org/1999/xhtml">
+     <span class="bold">‡:</span> Viral RNA sequenced from four patients (Lanciotti et al. 2008).
+    </p>
+   </fn>
+  </div>
+ </div>
+ <p xmlns="http://www.w3.org/1999/xhtml">Human case reports of clinically diagnosed ZIKV infections include self-limiting acute febrile illnesses with fever, headache, myalgia and rash, similar to that caused by many other arboviruses found throughout the tropics 
+  <a ref-type="bibr" rid="pntd.0001477-Duffy1" href="#pntd.0001477-Duffy1">[9]</a>, 
+  <a ref-type="bibr" rid="pntd.0001477-Simpson1" href="#pntd.0001477-Simpson1">[11]</a>, 
+  <a ref-type="bibr" rid="pntd.0001477-Filipe1" href="#pntd.0001477-Filipe1">[12]</a>, 
+  <a ref-type="bibr" rid="pntd.0001477-Olson1" href="#pntd.0001477-Olson1">[13]</a>, 
+  <a ref-type="bibr" rid="pntd.0001477-Foy1" href="#pntd.0001477-Foy1">[14]</a>, 
+  <a ref-type="bibr" rid="pntd.0001477-Heang1" href="#pntd.0001477-Heang1">[15]</a>. This clinical picture could easily be mistaken for dengue (DEN) or chikungunya (CHIK) fevers, two common arboviral infections which both produce similar clinical presentations. The latter two infections are much more commonly diagnosed in tropical Africa and Asia than ZIKV. Clinical DENV and CHIKV infections are familiar to local clinicians and most diagnostic laboratories can detect them. In contrast, few physicians are aware of ZIKV and few laboratories test for clinical infection. Consequently, most ZIKV infections are probably missed or incorrectly diagnosed, as suggested by the high prevalence of ZIKV antibodies found in serosurveys of human populations in Africa and Asia (
+  <a ref-type="table" rid="pntd-0001477-t001" href="#pntd-0001477-t001">Table 1</a>). A recent epidemic on Yap Island, Federated States of Micronesia, and a pediatric case of ZIKV infection in Cambodia demonstrate that ZIKV is also capable of causing human disease and may be expanding its geographic distribution 
+  <a ref-type="bibr" rid="pntd.0001477-Duffy1" href="#pntd.0001477-Duffy1">[9]</a>, 
+  <a ref-type="bibr" rid="pntd.0001477-Heang1" href="#pntd.0001477-Heang1">[15]</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Zika virus, has a positive-sense, single-stranded RNA genome approximately 11 kilobases in length 
+  <a ref-type="bibr" rid="pntd.0001477-Kuno1" href="#pntd.0001477-Kuno1">[16]</a>. The genome contains 5′ and 3′ untranslated regions flanking a single open reading frame (ORF) that encodes a polyprotein that is cleaved into three structural proteins: the capsid (C), premembrane/membrane (prM), and envelope (E), and seven non-structural proteins (NS1, NS2A, NS2B, NS3, NS4A, 2K, NS4B, and NS5) 
+  <a ref-type="bibr" rid="pntd.0001477-Kuno1" href="#pntd.0001477-Kuno1">[16]</a>. A previous genetic study using nucleotide sequences derived from the NS5 gene indicated three ZIKV lineages: East African (one strain examined), West African (three strains examined), and Asian (one strain examined) 
+  <a ref-type="bibr" rid="pntd.0001477-Lanciotti1" href="#pntd.0001477-Lanciotti1">[17]</a>.
+ </p>
+ <p xmlns="http://www.w3.org/1999/xhtml">Although ZIKV circulates widely in sub-Saharan Africa and Southeast Asia, little is known of the genetic relationships among isolates from these two geographic regions, which may have different vector/host transmission cycles. Furthermore, the geographic origin of the strain responsible for the epidemic on Yap Island epidemic and of the recent Cambodian case of ZIKV infection is unknown. To answer these questions, we determined the nucleotide sequences of the ORF of five ZIKV strains collected between 1947 and 2010 in Cambodia, Malaysia, Nigeria, Uganda, and Senegal and constructed phylogenetic trees to assess their relationships.</p>
+</sec>

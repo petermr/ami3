@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article-meta class="article-meta">
+ <article-id pub-id-type="pmcid" class="article-id">3113902</article-id>
+ <article-id pub-id-type="publisher-id" class="article-id">PONE-D-11-02571</article-id>
+ <article-id pub-id-type="doi" class="article-id">10.1371/journal.pone.0021045</article-id>
+ <article-categories class="article-categories">
+  <div subj-group-type="heading" class="subj-group" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="subject">Research Article</span>
+  </div>
+  <div subj-group-type="Discipline-v2" class="subj-group" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="subject">Agriculture</span>
+   <div class="subj-group">
+    <span class="subject">Agricultural Biotechnology</span>
+    <div class="subj-group">
+     <span class="subject">Genetically Modified Organisms</span>
+    </div>
+   </div>
+   <div class="subj-group">
+    <span class="subject">Animal Management</span>
+    <div class="subj-group">
+     <span class="subject">Animal Genetics</span>
+     <span class="subject">Transgenic Animals</span>
+    </div>
+   </div>
+  </div>
+  <div subj-group-type="Discipline-v2" class="subj-group" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="subject">Biology</span>
+   <div class="subj-group">
+    <span class="subject">Biotechnology</span>
+    <div class="subj-group">
+     <span class="subject">Bioengineering</span>
+     <span class="subject">Genetic Engineering</span>
+    </div>
+   </div>
+   <div class="subj-group">
+    <span class="subject">Computational Biology</span>
+    <div class="subj-group">
+     <span class="subject">Molecular Genetics</span>
+     <div class="subj-group">
+      <span class="subject">Gene Expression</span>
+     </div>
+    </div>
+    <div class="subj-group">
+     <span class="subject">Population Genetics</span>
+     <div class="subj-group">
+      <span class="subject">Gene Pool</span>
+     </div>
+    </div>
+   </div>
+   <div class="subj-group">
+    <span class="subject">Genetics</span>
+    <div class="subj-group">
+     <span class="subject">Animal Genetics</span>
+    </div>
+   </div>
+   <div class="subj-group">
+    <span class="subject">Immunology</span>
+    <div class="subj-group">
+     <span class="subject">Genetics of the Immune System</span>
+    </div>
+   </div>
+   <div class="subj-group">
+    <span class="subject">Model Organisms</span>
+    <div class="subj-group">
+     <span class="subject">Animal Models</span>
+    </div>
+   </div>
+  </div>
+  <div subj-group-type="Discipline-v2" class="subj-group" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="subject">Veterinary Science</span>
+   <div class="subj-group">
+    <span class="subject">Animal Management</span>
+    <div class="subj-group">
+     <span class="subject">Animal Genetics</span>
+    </div>
+   </div>
+   <div class="subj-group">
+    <span class="subject">Animal Types</span>
+    <div class="subj-group">
+     <span class="subject">Laboratory Animals</span>
+    </div>
+   </div>
+  </div>
+ </article-categories>
+ <title-group class="title-group">
+  <div class="article-title" xmlns="http://www.w3.org/1999/xhtml">Efficient Immunoglobulin Gene Disruption and Targeted Replacement in Rabbit Using Zinc Finger Nucleases</div>
+  <div alt-title-type="running-head" class="alt-title" xmlns="http://www.w3.org/1999/xhtml">ZFN IgM Knock Out and Homologous Recombination</div>
+ </title-group>
+ <div class="contrib-group" xmlns="http://www.w3.org/1999/xhtml">
+  <contrib contrib-type="author" equal-contrib="yes" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Flisikowska</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Tatiana</span>
+   </name>
+   <a ref-type="aff" rid="aff1" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">1</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" equal-contrib="yes" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Thorey</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Irmgard S.</span>
+   </name>
+   <a ref-type="aff" rid="aff2" href="#aff2" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">2</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Offner</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Sonja</span>
+   </name>
+   <a ref-type="aff" rid="aff2" href="#aff2" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">2</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Ros</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Francesca</span>
+   </name>
+   <a ref-type="aff" rid="aff2" href="#aff2" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">2</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Lifke</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Valeria</span>
+   </name>
+   <a ref-type="aff" rid="aff2" href="#aff2" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">2</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Zeitler</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Bryan</span>
+   </name>
+   <a ref-type="aff" rid="aff3" href="#aff3" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">3</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Rottmann</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Oswald</span>
+   </name>
+   <a ref-type="aff" rid="aff1" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">1</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Vincent</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Anna</span>
+   </name>
+   <a ref-type="aff" rid="aff3" href="#aff3" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">3</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Zhang</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Lei</span>
+   </name>
+   <a ref-type="aff" rid="aff3" href="#aff3" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">3</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Jenkins</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Shirin</span>
+   </name>
+   <a ref-type="aff" rid="aff3" href="#aff3" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">3</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Niersbach</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Helmut</span>
+   </name>
+   <a ref-type="aff" rid="aff2" href="#aff2" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">2</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Kind</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Alexander J.</span>
+   </name>
+   <a ref-type="aff" rid="aff1" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">1</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Gregory</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Philip D.</span>
+   </name>
+   <a ref-type="aff" rid="aff3" href="#aff3" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">3</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Schnieke</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Angelika E.</span>
+   </name>
+   <a ref-type="aff" rid="aff1" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">1</span>
+   </a>
+   <a ref-type="corresp" rid="cor1" href="#cor1" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">*</span>
+   </a>
+   <a ref-type="author-notes" rid="fn1" href="#fn1" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">¶</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Platzer</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Josef</span>
+   </name>
+   <a ref-type="aff" rid="aff2" href="#aff2" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">2</span>
+   </a>
+   <a ref-type="author-notes" rid="fn1" href="#fn1" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">¶</span>
+   </a>
+  </contrib>
+ </div>
+ <aff id="aff1" class="aff">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">1</span>
+  <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Chair of Livestock Biotechnology, Technische Universität München, Freising, Germany</div>
+ </aff>
+ <aff id="aff2" class="aff">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">2</span>
+  <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Pharma Research and Early Development, Roche Diagnostics GmbH, Penzberg, Germany</div>
+ </aff>
+ <aff id="aff3" class="aff">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">3</span>
+  <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Sangamo BioSciences Inc., Richmond, California, United States of America</div>
+ </aff>
+ <div class="contrib-group" xmlns="http://www.w3.org/1999/xhtml">
+  <contrib contrib-type="editor" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Milstone</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">David S.</span>
+   </name>
+   <span class="role" xmlns="http://www.w3.org/1999/xhtml">Editor</span>
+   <a href="#edit1" xmlns="http://www.w3.org/1999/xhtml">*</a>
+  </contrib>
+ </div>
+ <aff id="edit1" class="aff">Brigham and Women's Hospital, United States of America</aff>
+ <div class="author-notes" xmlns="http://www.w3.org/1999/xhtml">
+  <div id="cor1" class="corresp">* E-mail: 
+   <span class="email">schnieke@wzw.tum.de</span>
+  </div>
+  <fn fn-type="con" class="fn" xmlns="">
+   <p xmlns="http://www.w3.org/1999/xhtml">Conceived and designed the experiments: TF IST SO FR VL BZ AJK PG AES JP. Performed the experiments: TF IST SO FR VL BZ OR AV LZ SJ HN. Analyzed the data: TF IST SO FR VL BZ HN. Wrote the paper: IST AJK PG AES JP.</p>
+  </fn>
+  <fn id="fn1" fn-type="other" class="fn" xmlns="">
+   <p xmlns="http://www.w3.org/1999/xhtml">¶ These authors also contributed equally to this work.</p>
+  </fn>
+ </div>
+ <pub-date pub-type="collection" class="pub-date">
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2011</span>
+ </pub-date>
+ <pub-date pub-type="epub" class="pub-date">
+  <span class="day" xmlns="http://www.w3.org/1999/xhtml">13</span>
+  <span class="month" xmlns="http://www.w3.org/1999/xhtml">6</span>
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2011</span>
+ </pub-date>
+ <span class="volume" xmlns="http://www.w3.org/1999/xhtml">6</span>
+ <span class="issue" xmlns="http://www.w3.org/1999/xhtml">6</span>
+ <span class="elocation-id" xmlns="http://www.w3.org/1999/xhtml">e21045</span>
+ <history class="history">
+  <date date-type="received" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">2</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">2</span>
+   <span class="year" xmlns="http://www.w3.org/1999/xhtml">2011</span>
+  </date>
+  <date date-type="accepted" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">17</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">5</span>
+   <span class="year" xmlns="http://www.w3.org/1999/xhtml">2011</span>
+  </date>
+ </history>
+ <div class="permissions" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="copyright-statement">Flisikowska et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</span>
+  <span class="copyright-year">2011</span>
+ </div>
+ <div class="abstract" xmlns="http://www.w3.org/1999/xhtml">
+  <p>Rabbits are widely used in biomedical research, yet techniques for their precise genetic modification are lacking. We demonstrate that zinc finger nucleases (ZFNs) introduced into fertilized oocytes can inactivate a chosen gene by mutagenesis and also mediate precise homologous recombination with a DNA gene-targeting vector to achieve the first gene knockout and targeted sequence replacement in rabbits. Two ZFN pairs were designed that target the rabbit immunoglobulin M (IgM) locus within exons 1 and 2. ZFN mRNAs were microinjected into pronuclear stage fertilized oocytes. Founder animals carrying distinct mutated IgM alleles were identified and bred to produce offspring. Functional knockout of the immunoglobulin heavy chain locus was confirmed by serum IgM and IgG deficiency and lack of IgM
+   <span class="sup">+</span> and IgG
+   <span class="sup">+</span> B lymphocytes. We then tested whether ZFN expression would enable efficient targeted sequence replacement in rabbit oocytes. ZFN mRNA was co-injected with a linear DNA vector designed to replace exon 1 of the IgM locus with ∼1.9 kb of novel sequence. Double strand break induced targeted replacement occurred in up to 17% of embryos and in 18% of fetuses analyzed. Two major goals have been achieved. First, inactivation of the endogenous IgM locus, which is an essential step for the production of therapeutic human polyclonal antibodies in the rabbit. Second, establishing efficient targeted gene manipulation and homologous recombination in a refractory animal species. ZFN mediated genetic engineering in the rabbit and other mammals opens new avenues of experimentation in immunology and many other research fields.
+  </p>
+ </div>
+ <div class="counts" xmlns="http://www.w3.org/1999/xhtml">
+  <span count="10" class="page-count"/>
+ </div>
+</article-meta>

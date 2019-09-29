@@ -1,0 +1,58 @@
+<!--
+    Gatherered from various observations
+
+    Copyright (C) 2012 pm286 <peter.murray.rust@googlemail.com>
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<codePointSet encoding="MTSYN" id="MTSYN" resource="org/contentmine/pdf2svg/codepoints/defacto">
+
+<!-- NOT UNICODE -->
+
+    <codePoint unicode="U+002F" decimal="5"                        note="SOLIDUS" />
+    <codePoint unicode="U+2260" decimal="11"                       note="NOT EQUAL TO" />
+    <codePoint unicode="U+002B" decimal="43"   name="plus"         note="PLUS unicode" />
+    <codePoint unicode="U+003A" decimal="58"   name="colon"        note="COLON" />
+    <codePoint unicode="U+003B" decimal="59"   name="semicolon"    note="SEMICOLON" />
+    <codePoint unicode="U+002D" decimal="61"   name="equal"        note="EQUALS SIGN" />
+    <codePoint unicode="U+002D" decimal="68"   name="D"            note="EQUALS SIGN" />
+    <codePoint unicode="U+007C" decimal="124"  name="bar"          note="VERTICAL LINE" />
+    
+    <codePoint unicode="U+002D" decimal="161" name="exclamdown"    note="HYPHEN-MINUS" />
+    <codePoint unicode="U+002A" decimal="163"                      note="ASTERISK" />
+    <codePoint unicode="U+002A" decimal="164" name="currency"      note="ASTERISK" />
+    <codePoint unicode="U+002B" decimal="163" name="plus"          note="PLUS SIGN" />
+    <codePoint unicode="U+00B1" decimal="167" name="section"       note="PLUS-MINUS SIGN" />
+    <codePoint unicode="U+25E6" decimal="169" name="quotesingle"   note="WHITE BULLET" />
+    <codePoint unicode="U+00B1" decimal="177" name="endash"        note="PLUS-MINUS SIGN" />
+    <codePoint unicode="U+00B7" decimal="183" name="bullet"        note="MIDDLE DOT" />
+    <codePoint unicode="U+007E" decimal="187" name="guillemotright" note="TILDE" />
+    <codePoint unicode="U+00D7" decimal="215" name="multiply"      note="MULTIPLICATION SIGN" />
+
+    <codePoint unicode="U+00B1"               name="plusminus"     note="PLUS-MINUS SIGN" />
+    <codePoint unicode="U+002F"               name="negationslash" note="SOLIDUS" />
+    <codePoint unicode="U+22A6"               name="turnstileleft" note="ASSERTION" />
+    
+<!-- unicode --> 
+    <codePointSet idRef="unicode256" href="org/contentmine/pdf2svg/codepoints/unicode/unicode256.xml"/>
+
+<!-- 
+    <codePoint unicode="U+2032" decimal="8242" note="PRIME" />
+    <codePoint unicode="U+2192" decimal="8594" note="RIGHTWARDS ARROW" />
+    <codePoint unicode="U+223C" decimal="8764" note="TILDE OPERATOR" />
+    <codePoint unicode="U+2217" decimal="8727" note="ASTERISK OPERATOR" />
+    <codePoint unicode="U+2212" decimal="8764" note="MINUS SIGN" />
+    -->
+    
+</codePointSet>

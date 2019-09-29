@@ -1,0 +1,258 @@
+<codePointSet id="0000_00ff" encoding="UTF-8" block="BASIC_LATIN">
+	<codePoint unicode="U+0000" hex="0x0000"  uName="NULL CHARACTER" /> 
+	<codePoint unicode="U+0001" hex="0x0001"  uName="START OF HEADING" /> 
+	<codePoint unicode="U+0002" hex="0x0002"  uName="START OF TEXT" /> 
+	<codePoint unicode="U+0003" hex="0x0003"  uName="END-OF-TEXT CHARACTER" /> 
+	<codePoint unicode="U+0004" hex="0x0004"  uName="END-OF-TRANSMISSION CHARACTER" /> 
+	<codePoint unicode="U+0005" hex="0x0005"  uName="ENQUIRY CHARACTER" /> 
+	<codePoint unicode="U+0006" hex="0x0006"  uName="ACKNOWLEDGE CHARACTER" /> 
+	<codePoint unicode="U+0007" hex="0x0007"  uName="BELL CHARACTER" /> 
+	<codePoint unicode="U+0008" hex="0x0008"  uName="BACKSPACE" /> 
+	<codePoint unicode="U+0009" hex="0x0009"  uName="HORIZONTAL TAB" /> 
+	<codePoint unicode="U+000A" hex="0x000A"  uName="LINE FEED" /> 
+	<codePoint unicode="U+000B" hex="0x000B"  uName="VERTICAL TAB" /> 
+	<codePoint unicode="U+000C" hex="0x000C"  uName="FORM FEED" /> 
+	<codePoint unicode="U+000D" hex="0x000D"  uName="CARRIAGE RETURN" /> 
+	<codePoint unicode="U+000E" hex="0x000E"  uName="SHIFT OUT" /> 
+	<codePoint unicode="U+000F" hex="0x000F"  uName="SHIFT IN" /> 
+	<codePoint unicode="U+0010" hex="0x0010"  uName="DATA LINK ESCAPE" /> 
+	<codePoint unicode="U+0011" hex="0x0011"  uName="DEVICE CONTROL 1" /> 
+	<codePoint unicode="U+0012" hex="0x0012"  uName="DEVICE CONTROL 2" /> 
+	<codePoint unicode="U+0013" hex="0x0013"  uName="DEVICE CONTROL 3" /> 
+	<codePoint unicode="U+0014" hex="0x0014"  uName="DEVICE CONTROL 4" /> 
+	<codePoint unicode="U+0015" hex="0x0015"  uName="NEGATIVE-ACKNOWLEDGE CHARACTER" /> 
+	<codePoint unicode="U+0016" hex="0x0016"  uName="SYNCHRONOUS IDLE" /> 
+	<codePoint unicode="U+0017" hex="0x0017"  uName="END OF TRANSMISSION BLOCK" /> 
+	<codePoint unicode="U+0018" hex="0x0018"  uName="CANCEL CHARACTER" /> 
+	<codePoint unicode="U+0019" hex="0x0019"  uName="END OF MEDIUM" /> 
+	<codePoint unicode="U+001A" hex="0x001A"  uName="SUBSTITUTE CHARACTER" /> 
+	<codePoint unicode="U+001B" hex="0x001B"  uName="ESCAPE CHARACTER" /> 
+	<codePoint unicode="U+001C" hex="0x001C"  uName="FILE SEPARATOR" /> 
+	<codePoint unicode="U+001D" hex="0x001D"  uName="GROUP SEPARATOR" /> 
+	<codePoint unicode="U+001E" hex="0x001E"  uName="RECORD SEPARATOR" /> 
+	<codePoint unicode="U+001F" hex="0x001F"  uName="UNIT SEPARATOR" /> 
+	<codePoint unicode="U+0020" hex="0x0020"  uName="SPACE SP" /> 
+	<codePoint unicode="U+0021" hex="0x0021"  uName="EXCLAMATION MARK" /> 
+	<codePoint unicode="U+0022" hex="0x0022"  uName="QUOTATION MARK" /> 
+	<codePoint unicode="U+0023" hex="0x0023"  uName="NUMBER SIGN, HASH TAG" /> 
+	<codePoint unicode="U+0024" hex="0x0024"  uName="DOLLAR SIGN" /> 
+	<codePoint unicode="U+0025" hex="0x0025"  uName="PERCENT SIGN" /> 
+	<codePoint unicode="U+0026" hex="0x0026"  uName="AMPERSAND" /> 
+	<codePoint unicode="U+0027" hex="0x0027"  uName="APOSTROPHE" /> 
+	<codePoint unicode="U+0028" hex="0x0028"  uName="LEFT PARENTHESIS" /> 
+	<codePoint unicode="U+0029" hex="0x0029"  uName="RIGHT PARENTHESIS" /> 
+	<codePoint unicode="U+002A" hex="0x002A"  uName="ASTERISK" /> 
+	<codePoint unicode="U+002B" hex="0x002B"  uName="PLUS SIGN" /> 
+	<codePoint unicode="U+002C" hex="0x002C"  uName="COMMA" /> 
+	<codePoint unicode="U+002D" hex="0x002D"  uName="HYPHEN-MINUS" /> 
+	<codePoint unicode="U+002E" hex="0x002E"  uName="FULL STOP" /> 
+	<codePoint unicode="U+002F" hex="0x002F"  uName="SLASH (SOLIDUS)" /> 
+	<codePoint unicode="U+0030" hex="0x0030"  uName="DIGIT ZERO" /> 
+	<codePoint unicode="U+0031" hex="0x0031"  uName="DIGIT ONE" /> 
+	<codePoint unicode="U+0032" hex="0x0032"  uName="DIGIT TWO" /> 
+	<codePoint unicode="U+0033" hex="0x0033"  uName="DIGIT THREE" /> 
+	<codePoint unicode="U+0034" hex="0x0034"  uName="DIGIT FOUR" /> 
+	<codePoint unicode="U+0035" hex="0x0035"  uName="DIGIT FIVE" /> 
+	<codePoint unicode="U+0036" hex="0x0036"  uName="DIGIT SIX" /> 
+	<codePoint unicode="U+0037" hex="0x0037"  uName="DIGIT SEVEN" /> 
+	<codePoint unicode="U+0038" hex="0x0038"  uName="DIGIT EIGHT" /> 
+	<codePoint unicode="U+0039" hex="0x0039"  uName="DIGIT NINE" /> 
+	<codePoint unicode="U+003A" hex="0x003A"  uName="COLON" /> 
+	<codePoint unicode="U+003B" hex="0x003B"  uName="SEMICOLON" /> 
+	<codePoint unicode="U+003C" hex="0x003C"  uName="LESS-THAN SIGN" /> 
+	<codePoint unicode="U+003D" hex="0x003D"  uName="EQUAL SIGN" /> 
+	<codePoint unicode="U+003E" hex="0x003E"  uName="GREATER-THAN SIGN" /> 
+	<codePoint unicode="U+003F" hex="0x003F"  uName="QUESTION MARK" /> 
+	<codePoint unicode="U+0040" hex="0x0040"  uName="AT SIGN" /> 
+	<codePoint unicode="U+0041" hex="0x0041"  uName="LATIN CAPITAL LETTER A" /> 
+	<codePoint unicode="U+0042" hex="0x0042"  uName="LATIN CAPITAL LETTER B" /> 
+	<codePoint unicode="U+0043" hex="0x0043"  uName="LATIN CAPITAL LETTER C" /> 
+	<codePoint unicode="U+0044" hex="0x0044"  uName="LATIN CAPITAL LETTER D" /> 
+	<codePoint unicode="U+0045" hex="0x0045"  uName="LATIN CAPITAL LETTER E" /> 
+	<codePoint unicode="U+0046" hex="0x0046"  uName="LATIN CAPITAL LETTER F" /> 
+	<codePoint unicode="U+0047" hex="0x0047"  uName="LATIN CAPITAL LETTER G" /> 
+	<codePoint unicode="U+0048" hex="0x0048"  uName="LATIN CAPITAL LETTER H" /> 
+	<codePoint unicode="U+0049" hex="0x0049"  uName="LATIN CAPITAL LETTER I" /> 
+	<codePoint unicode="U+004A" hex="0x004A"  uName="LATIN CAPITAL LETTER J" /> 
+	<codePoint unicode="U+004B" hex="0x004B"  uName="LATIN CAPITAL LETTER K" /> 
+	<codePoint unicode="U+004C" hex="0x004C"  uName="LATIN CAPITAL LETTER L" /> 
+	<codePoint unicode="U+004D" hex="0x004D"  uName="LATIN CAPITAL LETTER M" /> 
+	<codePoint unicode="U+004E" hex="0x004E"  uName="LATIN CAPITAL LETTER N" /> 
+	<codePoint unicode="U+004F" hex="0x004F"  uName="LATIN CAPITAL LETTER O" /> 
+	<codePoint unicode="U+0050" hex="0x0050"  uName="LATIN CAPITAL LETTER P" /> 
+	<codePoint unicode="U+0051" hex="0x0051"  uName="LATIN CAPITAL LETTER Q" /> 
+	<codePoint unicode="U+0052" hex="0x0052"  uName="LATIN CAPITAL LETTER R" /> 
+	<codePoint unicode="U+0053" hex="0x0053"  uName="LATIN CAPITAL LETTER S" /> 
+	<codePoint unicode="U+0054" hex="0x0054"  uName="LATIN CAPITAL LETTER T" /> 
+	<codePoint unicode="U+0055" hex="0x0055"  uName="LATIN CAPITAL LETTER U" /> 
+	<codePoint unicode="U+0056" hex="0x0056"  uName="LATIN CAPITAL LETTER V" /> 
+	<codePoint unicode="U+0057" hex="0x0057"  uName="LATIN CAPITAL LETTER W" /> 
+	<codePoint unicode="U+0058" hex="0x0058"  uName="LATIN CAPITAL LETTER X" /> 
+	<codePoint unicode="U+0059" hex="0x0059"  uName="LATIN CAPITAL LETTER Y" /> 
+	<codePoint unicode="U+005A" hex="0x005A"  uName="LATIN CAPITAL LETTER Z" /> 
+	<codePoint unicode="U+005B" hex="0x005B"  uName="LEFT SQUARE BRACKET" /> 
+	<codePoint unicode="U+005C" hex="0x005C"  uName="BACKSLASH" /> 
+	<codePoint unicode="U+005D" hex="0x005D"  uName="RIGHT SQUARE BRACKET" /> 
+	<codePoint unicode="U+005E" hex="0x005E"  uName="CIRCUMFLEX ACCENT" /> 
+	<codePoint unicode="U+005F" hex="0x005F"  uName="LOW LINE" /> 
+	<codePoint unicode="U+0060" hex="0x0060"  uName="GRAVE ACCENT" /> 
+	<codePoint unicode="U+0061" hex="0x0061"  uName="LATIN SMALL LETTER A" /> 
+	<codePoint unicode="U+0062" hex="0x0062"  uName="LATIN SMALL LETTER B" /> 
+	<codePoint unicode="U+0063" hex="0x0063"  uName="LATIN SMALL LETTER C" /> 
+	<codePoint unicode="U+0064" hex="0x0064"  uName="LATIN SMALL LETTER D" /> 
+	<codePoint unicode="U+0065" hex="0x0065"  uName="LATIN SMALL LETTER E" /> 
+	<codePoint unicode="U+0066" hex="0x0066"  uName="LATIN SMALL LETTER F" /> 
+	<codePoint unicode="U+0067" hex="0x0067"  uName="LATIN SMALL LETTER G" /> 
+	<codePoint unicode="U+0068" hex="0x0068"  uName="LATIN SMALL LETTER H" /> 
+	<codePoint unicode="U+0069" hex="0x0069"  uName="LATIN SMALL LETTER I" /> 
+	<codePoint unicode="U+006A" hex="0x006A"  uName="LATIN SMALL LETTER J" /> 
+	<codePoint unicode="U+006B" hex="0x006B"  uName="LATIN SMALL LETTER K" /> 
+	<codePoint unicode="U+006C" hex="0x006C"  uName="LATIN SMALL LETTER L" /> 
+	<codePoint unicode="U+006D" hex="0x006D"  uName="LATIN SMALL LETTER M" /> 
+	<codePoint unicode="U+006E" hex="0x006E"  uName="LATIN SMALL LETTER N" /> 
+	<codePoint unicode="U+006F" hex="0x006F"  uName="LATIN SMALL LETTER O" /> 
+	<codePoint unicode="U+0070" hex="0x0070"  uName="LATIN SMALL LETTER P" /> 
+	<codePoint unicode="U+0071" hex="0x0071"  uName="LATIN SMALL LETTER Q" /> 
+	<codePoint unicode="U+0072" hex="0x0072"  uName="LATIN SMALL LETTER R" /> 
+	<codePoint unicode="U+0073" hex="0x0073"  uName="LATIN SMALL LETTER S" /> 
+	<codePoint unicode="U+0074" hex="0x0074"  uName="LATIN SMALL LETTER T" /> 
+	<codePoint unicode="U+0075" hex="0x0075"  uName="LATIN SMALL LETTER U" /> 
+	<codePoint unicode="U+0076" hex="0x0076"  uName="LATIN SMALL LETTER V" /> 
+	<codePoint unicode="U+0077" hex="0x0077"  uName="LATIN SMALL LETTER W" /> 
+	<codePoint unicode="U+0078" hex="0x0078"  uName="LATIN SMALL LETTER X" /> 
+	<codePoint unicode="U+0079" hex="0x0079"  uName="LATIN SMALL LETTER Y" /> 
+	<codePoint unicode="U+007A" hex="0x007A"  uName="LATIN SMALL LETTER Z" /> 
+	<codePoint unicode="U+007B" hex="0x007B"  uName="LEFT CURLY BRACKET" /> 
+	<codePoint unicode="U+007C" hex="0x007C"  uName="VERTICAL BAR" /> 
+	<codePoint unicode="U+007D" hex="0x007D"  uName="RIGHT CURLY BRACKET" /> 
+	<codePoint unicode="U+007E" hex="0x007E"  uName="TILDE" /> 
+	<codePoint unicode="U+007F" hex="0x007F"  uName="DELETE" /> 
+	<codePoint unicode="U+0080" hex="0x0080"  uName="PADDING CHARACTER" /> 
+	<codePoint unicode="U+0081" hex="0x0081"  uName="HIGH OCTET PRESET" /> 
+	<codePoint unicode="U+0082" hex="0x0082"  uName="BREAK PERMITTED HERE" /> 
+	<codePoint unicode="U+0083" hex="0x0083"  uName="NO BREAK HERE" /> 
+	<codePoint unicode="U+0084" hex="0x0084"  uName="INDEX" /> 
+	<codePoint unicode="U+0085" hex="0x0085"  uName="NEXT LINE" /> 
+	<codePoint unicode="U+0086" hex="0x0086"  uName="START OF SELECTED AREA" /> 
+	<codePoint unicode="U+0087" hex="0x0087"  uName="END OF SELECTED AREA" /> 
+	<codePoint unicode="U+0088" hex="0x0088"  uName="CHARACTER TABULATION SET" /> 
+	<codePoint unicode="U+0089" hex="0x0089"  uName="CHARACTER TABULATION WITH JUSTIFICATION" /> 
+	<codePoint unicode="U+008A" hex="0x008A"  uName="LINE TABULATION SET" /> 
+	<codePoint unicode="U+008B" hex="0x008B"  uName="PARTIAL LINE FORWARD" /> 
+	<codePoint unicode="U+008C" hex="0x008C"  uName="PARTIAL LINE BACKWARD" /> 
+	<codePoint unicode="U+008D" hex="0x008D"  uName="REVERSE LINE FEED" /> 
+	<codePoint unicode="U+008E" hex="0x008E"  uName="SINGLE-SHIFT TWO" /> 
+	<codePoint unicode="U+008F" hex="0x008F"  uName="SINGLE-SHIFT THREE" /> 
+	<codePoint unicode="U+0090" hex="0x0090"  uName="DEVICE CONTROL STRING" /> 
+	<codePoint unicode="U+0091" hex="0x0091"  uName="PRIVATE USE 1" /> 
+	<codePoint unicode="U+0092" hex="0x0092"  uName="PRIVATE USE 2" /> 
+	<codePoint unicode="U+0093" hex="0x0093"  uName="SET TRANSMIT STATE" /> 
+	<codePoint unicode="U+0094" hex="0x0094"  uName="CANCEL CHARACTER" /> 
+	<codePoint unicode="U+0095" hex="0x0095"  uName="MESSAGE WAITING" /> 
+	<codePoint unicode="U+0096" hex="0x0096"  uName="START OF PROTECTED AREA" /> 
+	<codePoint unicode="U+0097" hex="0x0097"  uName="END OF PROTECTED AREA" /> 
+	<codePoint unicode="U+0098" hex="0x0098"  uName="START OF STRING" /> 
+	<codePoint unicode="U+0099" hex="0x0099"  uName="SINGLE GRAPHIC CHARACTER INTRODUCER" /> 
+	<codePoint unicode="U+009A" hex="0x009A"  uName="SINGLE CHARACTER INTRO INTRODUCER" /> 
+	<codePoint unicode="U+009B" hex="0x009B"  uName="CONTROL SEQUENCE INTRODUCER" /> 
+	<codePoint unicode="U+009C" hex="0x009C"  uName="STRING TERMINATOR" /> 
+	<codePoint unicode="U+009D" hex="0x009D"  uName="OPERATING SYSTEM COMMAND" /> 
+	<codePoint unicode="U+009E" hex="0x009E"  uName="PRIVATE MESSAGE" /> 
+	<codePoint unicode="U+009F" hex="0x009F"  uName="APPLICATION PROGRAM COMMAND" /> 
+	<codePoint unicode="U+00A0" hex="0x00A0"  uName="NON-BREAKING SPACE" /> 
+	<codePoint unicode="U+00A1" hex="0x00A1"  uName="INVERTED EXCLAMATION MARK" /> 
+	<codePoint unicode="U+00A2" hex="0x00A2"  uName="CENT SIGN" /> 
+	<codePoint unicode="U+00A3" hex="0x00A3"  uName="POUND SIGN" /> 
+	<codePoint unicode="U+00A4" hex="0x00A4"  uName="CURRENCY SIGN" /> 
+	<codePoint unicode="U+00A5" hex="0x00A5"  uName="YEN SIGN" /> 
+	<codePoint unicode="U+00A6" hex="0x00A6"  uName="BROKEN BAR" /> 
+	<codePoint unicode="U+00A7" hex="0x00A7"  uName="SECTION SIGN" /> 
+	<codePoint unicode="U+00A8" hex="0x00A8"  uName="DIAERESIS" /> 
+	<codePoint unicode="U+00A9" hex="0x00A9"  uName="COPYRIGHT SIGN" /> 
+	<codePoint unicode="U+00AA" hex="0x00AA"  uName="FEMININE ORDINAL INDICATOR" /> 
+	<codePoint unicode="U+00AB" hex="0x00AB"  uName="LEFT-POINTING DOUBLE ANGLE QUOTATION MARK" /> 
+	<codePoint unicode="U+00AC" hex="0x00AC"  uName="NOT SIGN" /> 
+	<codePoint unicode="U+00AD" hex="0x00AD"  uName="SOFT HYPHEN" /> 
+	<codePoint unicode="U+00AE" hex="0x00AE"  uName="REGISTERED SIGN" /> 
+	<codePoint unicode="U+00AF" hex="0x00AF"  uName="MACRON" /> 
+	<codePoint unicode="U+00B0" hex="0x00B0"  uName="DEGREE SYMBOL" /> 
+	<codePoint unicode="U+00B1" hex="0x00B1"  uName="PLUS-MINUS SIGN" /> 
+	<codePoint unicode="U+00B2" hex="0x00B2"  uName="SUPERSCRIPT TWO" /> 
+	<codePoint unicode="U+00B3" hex="0x00B3"  uName="SUPERSCRIPT THREE" /> 
+	<codePoint unicode="U+00B4" hex="0x00B4"  uName="ACUTE ACCENT" /> 
+	<codePoint unicode="U+00B5" hex="0x00B5"  uName="MICRO SIGN" /> 
+	<codePoint unicode="U+00B6" hex="0x00B6"  uName="PILCROW SIGN" /> 
+	<codePoint unicode="U+00B7" hex="0x00B7"  uName="MIDDLE DOT" /> 
+	<codePoint unicode="U+00B8" hex="0x00B8"  uName="CEDILLA" /> 
+	<codePoint unicode="U+00B9" hex="0x00B9"  uName="SUPERSCRIPT ONE" /> 
+	<codePoint unicode="U+00BA" hex="0x00BA"  uName="MASCULINE ORDINAL INDICATOR" /> 
+	<codePoint unicode="U+00BB" hex="0x00BB"  uName="RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK" /> 
+	<codePoint unicode="U+00BC" hex="0x00BC"  uName="VULGAR FRACTION ONE QUARTER" /> 
+	<codePoint unicode="U+00BD" hex="0x00BD"  uName="VULGAR FRACTION ONE HALF" /> 
+	<codePoint unicode="U+00BE" hex="0x00BE"  uName="VULGAR FRACTION THREE QUARTERS" /> 
+	<codePoint unicode="U+00BF" hex="0x00BF"  uName="INVERTED QUESTION MARK" /> 
+	<codePoint unicode="U+00C0" hex="0x00C0"  uName="LATIN CAPITAL LETTER A WITH GRAVE" /> 
+	<codePoint unicode="U+00C1" hex="0x00C1"  uName="LATIN CAPITAL LETTER A WITH ACUTE" /> 
+	<codePoint unicode="U+00C2" hex="0x00C2"  uName="LATIN CAPITAL LETTER A WITH CIRCUMFLEX" /> 
+	<codePoint unicode="U+00C3" hex="0x00C3"  uName="LATIN CAPITAL LETTER A WITH TILDE" /> 
+	<codePoint unicode="U+00C4" hex="0x00C4"  uName="LATIN CAPITAL LETTER A WITH DIAERESIS" /> 
+	<codePoint unicode="U+00C5" hex="0x00C5"  uName="LATIN CAPITAL LETTER A WITH RING ABOVE" /> 
+	<codePoint unicode="U+00C6" hex="0x00C6"  uName="LATIN CAPITAL LETTER Æ" /> 
+	<codePoint unicode="U+00C7" hex="0x00C7"  uName="LATIN CAPITAL LETTER C WITH CEDILLA" /> 
+	<codePoint unicode="U+00C8" hex="0x00C8"  uName="LATIN CAPITAL LETTER E WITH GRAVE" /> 
+	<codePoint unicode="U+00C9" hex="0x00C9"  uName="LATIN CAPITAL LETTER E WITH ACUTE" /> 
+	<codePoint unicode="U+00CA" hex="0x00CA"  uName="LATIN CAPITAL LETTER E WITH CIRCUMFLEX" /> 
+	<codePoint unicode="U+00CB" hex="0x00CB"  uName="LATIN CAPITAL LETTER E WITH DIAERESIS" /> 
+	<codePoint unicode="U+00CC" hex="0x00CC"  uName="LATIN CAPITAL LETTER I WITH GRAVE" /> 
+	<codePoint unicode="U+00CD" hex="0x00CD"  uName="LATIN CAPITAL LETTER I WITH ACUTE" /> 
+	<codePoint unicode="U+00CE" hex="0x00CE"  uName="LATIN CAPITAL LETTER I WITH CIRCUMFLEX" /> 
+	<codePoint unicode="U+00CF" hex="0x00CF"  uName="LATIN CAPITAL LETTER I WITH DIAERESIS" /> 
+	<codePoint unicode="U+00D0" hex="0x00D0"  uName="LATIN CAPITAL LETTER ETH" /> 
+	<codePoint unicode="U+00D1" hex="0x00D1"  uName="LATIN CAPITAL LETTER N WITH TILDE" /> 
+	<codePoint unicode="U+00D2" hex="0x00D2"  uName="LATIN CAPITAL LETTER O WITH GRAVE" /> 
+	<codePoint unicode="U+00D3" hex="0x00D3"  uName="LATIN CAPITAL LETTER O WITH ACUTE" /> 
+	<codePoint unicode="U+00D4" hex="0x00D4"  uName="LATIN CAPITAL LETTER O WITH CIRCUMFLEX" /> 
+	<codePoint unicode="U+00D5" hex="0x00D5"  uName="LATIN CAPITAL LETTER O WITH TILDE" /> 
+	<codePoint unicode="U+00D6" hex="0x00D6"  uName="LATIN CAPITAL LETTER O WITH DIAERESIS" /> 
+	<codePoint unicode="U+00D7" hex="0x00D7"  uName="MULTIPLICATION SIGN" /> 
+	<codePoint unicode="U+00D8" hex="0x00D8"  uName="LATIN CAPITAL LETTER O WITH STROKE" /> 
+	<codePoint unicode="U+00D9" hex="0x00D9"  uName="LATIN CAPITAL LETTER U WITH GRAVE" /> 
+	<codePoint unicode="U+00DA" hex="0x00DA"  uName="LATIN CAPITAL LETTER U WITH ACUTE" /> 
+	<codePoint unicode="U+00DB" hex="0x00DB"  uName="LATIN CAPITAL LETTER U WITH CIRCUMFLEX" /> 
+	<codePoint unicode="U+00DC" hex="0x00DC"  uName="LATIN CAPITAL LETTER U WITH DIAERESIS" /> 
+	<codePoint unicode="U+00DD" hex="0x00DD"  uName="LATIN CAPITAL LETTER Y WITH ACUTE" /> 
+	<codePoint unicode="U+00DE" hex="0x00DE"  uName="LATIN CAPITAL LETTER THORN" /> 
+	<codePoint unicode="U+00DF" hex="0x00DF"  uName="LATIN SMALL LETTER SHARP S" /> 
+	<codePoint unicode="U+00E0" hex="0x00E0"  uName="LATIN SMALL LETTER A WITH GRAVE" /> 
+	<codePoint unicode="U+00E1" hex="0x00E1"  uName="LATIN SMALL LETTER A WITH ACUTE" /> 
+	<codePoint unicode="U+00E2" hex="0x00E2"  uName="LATIN SMALL LETTER A WITH CIRCUMFLEX" /> 
+	<codePoint unicode="U+00E3" hex="0x00E3"  uName="LATIN SMALL LETTER A WITH TILDE" /> 
+	<codePoint unicode="U+00E4" hex="0x00E4"  uName="LATIN SMALL LETTER A WITH DIAERESIS" /> 
+	<codePoint unicode="U+00E5" hex="0x00E5"  uName="LATIN SMALL LETTER A WITH RING ABOVE" /> 
+	<codePoint unicode="U+00E6" hex="0x00E6"  uName="LATIN SMALL LETTER Æ" /> 
+	<codePoint unicode="U+00E7" hex="0x00E7"  uName="LATIN SMALL LETTER C WITH CEDILLA" /> 
+	<codePoint unicode="U+00E8" hex="0x00E8"  uName="LATIN SMALL LETTER E WITH GRAVE" /> 
+	<codePoint unicode="U+00E9" hex="0x00E9"  uName="LATIN SMALL LETTER E WITH ACUTE" /> 
+	<codePoint unicode="U+00EA" hex="0x00EA"  uName="LATIN SMALL LETTER E WITH CIRCUMFLEX" /> 
+	<codePoint unicode="U+00EB" hex="0x00EB"  uName="LATIN SMALL LETTER E WITH DIAERESIS" /> 
+	<codePoint unicode="U+00EC" hex="0x00EC"  uName="LATIN SMALL LETTER I WITH GRAVE" /> 
+	<codePoint unicode="U+00ED" hex="0x00ED"  uName="LATIN SMALL LETTER I WITH ACUTE" /> 
+	<codePoint unicode="U+00EE" hex="0x00EE"  uName="LATIN SMALL LETTER I WITH CIRCUMFLEX" /> 
+	<codePoint unicode="U+00EF" hex="0x00EF"  uName="LATIN SMALL LETTER I WITH DIAERESIS" /> 
+	<codePoint unicode="U+00F0" hex="0x00F0"  uName="LATIN SMALL LETTER ETH" /> 
+	<codePoint unicode="U+00F1" hex="0x00F1"  uName="LATIN SMALL LETTER N WITH TILDE" /> 
+	<codePoint unicode="U+00F2" hex="0x00F2"  uName="LATIN SMALL LETTER O WITH GRAVE" /> 
+	<codePoint unicode="U+00F3" hex="0x00F3"  uName="LATIN SMALL LETTER O WITH ACUTE" /> 
+	<codePoint unicode="U+00F4" hex="0x00F4"  uName="LATIN SMALL LETTER O WITH CIRCUMFLEX" /> 
+	<codePoint unicode="U+00F5" hex="0x00F5"  uName="LATIN SMALL LETTER O WITH TILDE" /> 
+	<codePoint unicode="U+00F6" hex="0x00F6"  uName="LATIN SMALL LETTER O WITH DIAERESIS" /> 
+	<codePoint unicode="U+00F7" hex="0x00F7"  uName="DIVISION SIGN" /> 
+	<codePoint unicode="U+00F8" hex="0x00F8"  uName="LATIN SMALL LETTER O WITH STROKE" /> 
+	<codePoint unicode="U+00F9" hex="0x00F9"  uName="LATIN SMALL LETTER U WITH GRAVE" /> 
+	<codePoint unicode="U+00FA" hex="0x00FA"  uName="LATIN SMALL LETTER U WITH ACUTE" /> 
+	<codePoint unicode="U+00FB" hex="0x00FB"  uName="LATIN SMALL LETTER U WITH CIRCUMFLEX" /> 
+	<codePoint unicode="U+00FC" hex="0x00FC"  uName="LATIN SMALL LETTER U WITH DIAERESIS" /> 
+	<codePoint unicode="U+00FD" hex="0x00FD"  uName="LATIN SMALL LETTER Y WITH ACUTE" /> 
+	<codePoint unicode="U+00FE" hex="0x00FE"  uName="LATIN SMALL LETTER THORN" /> 
+	<codePoint unicode="U+00FF" hex="0x00FF"  uName="LATIN SMALL LETTER Y WITH DIAERESIS" /> 
+</codePointSet>

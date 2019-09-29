@@ -1,0 +1,108 @@
+<argList>
+	<arg name="password" 
+		brief="-p.w"
+		long="--password"
+		args="[password]"
+		class="java.lang.String"
+		default=""
+		min="1" 
+		max="1"
+		methodName="processPassword"
+		>
+		<help>
+			
+			PASSWORD:
+			For password protected PDFs
+		</help>
+	</arg>	
+	<arg name="nonseq" 
+		brief="-p.n"
+		long="--nonseq"
+		args=""
+		class="java.lang.Boolean"
+		default="Boolean.TRUE"
+		min="0" 
+		max="1"
+		methodName="processNonSeq"
+		>
+		<help>
+			
+			NON-SEQ:
+			A switch for PDFBox (read their docs...)
+		</help>
+	</arg>	
+	<arg name="svg" 
+		brief="-p.s"
+		long="--svg"
+		args="true OR false"
+		class="java.lang.Boolean"
+		default="Boolean.TRUE"
+		min="0" 
+		max="1"
+		methodName="processSVG"
+		>
+		<help>
+			
+			SVG:
+			Emit SVG?
+		</help>
+	</arg>	
+	<arg name="debug" 
+		brief="-p.d"
+		long="--debugPdf"
+		args="'codepoint' point 'charname' name ... 'fontname' name ..."
+		class="java.lang.String"
+		default=""
+		min="0" 
+		max="Integer.MAX_VALUE"
+		methodName="processDebugPDF"
+		>
+		<help>
+			
+			DEBUG_PDF:
+			Debugs PDF. Fairly hacky, to be used when the PDF is really horrible. Currently three syntaxes (codepoint, charname, fontname). Each is optional
+			and can be followed by one or more args. 
+			  codepoint 12345 \u1234 ... 
+			    will start debugging when it hits a character with a given point
+			  charname a gamma ... 
+			    will start debugging when it hits a character with a given name
+			  fontname C47358  ... 
+			    will start debugging when it hits a character font with given name (omit 6-character prefix)
+		</help>
+	</arg>	
+	<arg name="debug" 
+		brief="-q"
+		long="--debugPdf"
+		args="'codepoint' point 'charname' name ... 'fontname' name ..."
+		class="java.lang.String"
+		default=""
+		min="0" 
+		max="Integer.MAX_VALUE"
+		methodName="processDebugPDF"
+		>
+		<help>
+			
+			DEBUG_PDF:
+			Debugs PDF. Fairly hacky, to be used when the PDF is really horrible. Currently three syntaxes (codepoint, charname, fontname). Each is optional
+			and can be followed by one or more args. 
+			  codepoint 12345 \u1234 ... 
+			    will start debugging when it hits a character with a given point
+			  charname a gamma ... 
+			    will start debugging when it hits a character with a given name
+			  fontname C47358  ... 
+			    will start debugging when it hits a character font with given name (omit 6-character prefix)
+		</help>
+	</arg>	
+	<!-- 
+??			MKDIR Boolean
+			STORE_SVG Boolean
+			INFO_FILES Boolean
+			LOGGER Boolean
+			LOGFILE String
+			LOGMORE Boolean
+			LOGGLYPHS Boolean
+			EXITONERR Boolean
+			PAGES Int2Range
+			-->
+</argList>
+			

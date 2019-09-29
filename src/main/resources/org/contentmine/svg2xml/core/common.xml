@@ -1,0 +1,68 @@
+<semanticDocument debug="true" xmlns="http://www.xml-cml.org/schema/ami2">
+  <documentIterator>
+    <documentActionList outDir="${d.rawDirectory}/../out" skipIfExists="${d.outDir}">
+      <documentReader filename="${d.rawDirectory}" format="svgPages"/>
+      <pageIterator>
+        <pageAnalyzer timeout="15000" maxMbyte="5.0">
+          <pageVariable name="p.root" value="${d.outDir}/${p.page}"/>
+          <pageWriter filename="${p.root}start.svg"/>
+          <pageNormalizer 
+              normalizeHighCodePoints="true"
+              denormalizeFontSizes="true"
+              removeUnwantedAttributes="true" 
+              applyAndRemoveCumulativeTransforms="true"
+              removeImageData="true"
+              cleanSVGStyles="true"
+              canRotateLandscape="true"
+              removeUnitTransforms="true"
+              formatDecimalPlaces="3"/>
+          <pageStyleProcessor translateClipPathsToPhysicalStyles="true" removeDefs="true"/> 
+          <pageWriter filename="target/pageStyle1clipPaths.svg"/>              
+          <pathNormalizer 
+              removeDuplicatePaths="true" 
+              createHigherPrimitives="true" 
+              removeEmptySVGG="true" 
+              minLinesInPolyline="8"
+              joinPolylines="true" 
+              enforceVisibility="true"
+              />
+          <pageWriter filename="target/pathNorm99.svg"/>              
+          <whitespaceChunker depth="3"/>
+          <pageWriter filename="target/whiteSpace99.svg"/>              
+          <deleteNodes xpath="//svg:rect[@title='leafNodes']"/>
+          <pageWriter filename="target/textChunker99.svg"/>              
+          <chunkAnalyzer xpath="//svg:g[@LEAF]" 
+              subSup="true" 
+              removeNumericTSpans="true"
+              splitAtSpaces="true"/>
+          <pageWriter filename="target/subSup.svg"/>
+          <deleteNodes xpath="//@*[local-name()='oldFontSize' or local-name()='physicalStyle']"/>
+          <pageNormalizer 
+              removeUnitTransforms="true"
+              formatDecimalPlaces="3"/>
+          <boxDrawer xpath="//svg:g[@LEAF='3']" stroke="red" strokeWidth="3" fill="#ffffcc" opacity="0.1" />
+          <textChunker xpath="//svg:g[@physicalStyle='style2']" createWordsLinesParasAndSuscripts="true" createTSpans="true" createHTML="true"/>
+          <deleteElements pageRange="notFirst" xpath="//svg:g[@id='chunk0.0.1']" title="pageNumber" />
+          <boxProcessor xpath="//svg:g[@LEAF]" title="ProcessBoxes" marginX="5" marginY="5" boxCount="8" />
+          <figureAnalyzer locationStrategy="outlineBox" analyzeFragments="true" filename="${p.root}figure" createWordsLines="true"/>
+            <pageVariable name="p.fig" value="//svg:g[@chunkStyle='FIGURE']" log="${p.fig}"/>
+            <pageVariable name="p.figBody" value="${p.fig}/svg:g[@chunkStyle='FIGURE_BODY']" log="${p.figBody}"/>
+            <pageVariable name="p.figCaption" value="${p.fig}/svg:g[@chunkStyle='CAPTION']" log="${p.figCaption}"/>
+            <pageVariable name="p.figPanel" value="${p.figBody}/svg:g[@chunkStyle='FIGURE_PANEL']" log="${p.figPanel}"/>
+            <pageVariable name="p.figPanel1" value="${p.figBody}/svg:g[@chunkStyle='FIGURE_PANEL'][1]" log="${p.figPanel1}"/>
+            <pageVariable name="p.fragment" value="svg:g[@chunkStyle='FRAGMENT']"/>
+<!--           <textChunker xpath="${p.figPanel}/svg:g" createWordsLines="true"/> -->
+          <tree xpath="${p.figPanel}/svg:g" filename="${p.root}tree" nexml="${p.root}nexml" mark="tree"/>
+          <textChunker mergeChunks="true" xpath="//svg:g[@physicalStyle='style2']"/>
+              
+          <pageWriter filename="${p.root}end.svg"/>
+          
+        </pageAnalyzer>
+      </pageIterator>
+      <documentWriter filename="${d.outDir}" format="htmlMenu" regex="((.*chunk.*\.xml)|(.*figure.*\.svg))"/>
+    </documentActionList> 
+  </documentIterator>
+</semanticDocument>
+
+
+

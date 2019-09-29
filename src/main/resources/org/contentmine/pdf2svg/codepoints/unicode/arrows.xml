@@ -1,0 +1,24 @@
+<codePointSet encoding="Unicode" id="arrows">
+
+    <codePoint unicode="U+2190" unicodeName="LEFTWARDS ARROW" name="arrowleft" />
+    <codePoint unicode="U+2191" unicodeName="UPWARDS ARROW" name="arrowup" />
+    <codePoint unicode="U+2192" unicodeName="RIGHTWARDS ARROW" name="arrowright" />
+    <codePoint unicode="U+2193" unicodeName="DOWNWARDS ARROW" name="arrowdown" />
+    <codePoint unicode="U+2194" unicodeName="LEFT RIGHT ARROW" name="arrowboth" />
+    <codePoint unicode="U+21B5" unicodeName="DOWNWARDS ARROW WITH CORNER LEFTWARDS" name="carriagereturn" />
+
+    <codePoint unicode="U+21BD" decimal="8637" unicodeName="LEFTWARDS HARPOON WITH BARB DOWNWARDS" name=""/>
+    <codePoint unicode="U+21BE" decimal="8638" unicodeName="UPWARDS HARPOON WITH BARB RIGHTWARDS" name=""/>
+    <codePoint unicode="U+21BF" decimal="8639" unicodeName="UPWARDS HARPOON WITH BARB LEFTWARDS" name=""/>
+    <codePoint unicode="U+21C0" decimal="8640" unicodeName="RIGHTWARDS HARPOON WITH BARB UPWARDS" name=""/>
+    <codePoint unicode="U+21CC" unicodeName="RIGHTWARDS HARPOON OVER LEFTWARDS HARPOON" name=""/>
+
+    <codePoint unicode="U+21D0" unicodeName="LEFTWARDS DOUBLE ARROW" name="arrowdblleft" />
+    <codePoint unicode="U+21D1" unicodeName="UPWARDS DOUBLE ARROW" name="arrowdblup" />
+    <codePoint unicode="U+21D2" unicodeName="RIGHTWARDS DOUBLE ARROW" name="arrowdblright" />
+    <codePoint unicode="U+21D3" unicodeName="DOWNWARDS DOUBLE ARROW" name="arrowdbldown" />
+    <codePoint unicode="U+21D4" unicodeName="LEFT RIGHT DOUBLE ARROW" name="arrowdblboth" />
+
+    <codePoint unicode="U+21E5" unicodeName="RIGHTWARDS ARROW TO BAR" name=""/>
+
+</codePointSet>

@@ -1,0 +1,85 @@
+<cProject>
+	<p>CProject file container. </p>
+≈	<dir name="cooccurrence" schema="cooccurrenceTemplate.xml" count="0,1">
+	  <p>univariate and bivariate stats for results.</p>
+	</dir>
+≈	<dir name="results" schema="resultsTemplate.xml" count="0,1">
+	  <p>Concatenated results from individual cTree/results/ directories. Will probably have same structure as the results/ directories</p>
+	</dir>
+	<!-- regexes come last -->
+	<dir type="cTree" schema="cTreeTemplate.xml" regex="[A-Za-z0-9_\.\-]+" count="0,9999999999">
+	  <p>Lists name (maybe provenance) of CTrees but not their contents. Note, this is a general regex and assumes
+	  everything can be a CTree. Note underscore, minus and dot.</p>
+	</dir>
+	<!--  files -->
+	<file name="commonest.dataTables.html"  count="0,1">
+	  <p>summary of stats by column. Rarely used</p>
+	</file>
+	<file name="count.dataTables.html"  count="0,1">
+	  <p>summary of stats by column. Rarely used</p>
+	</file>
+	<file name="entries.dataTables.html"  count="0,1">
+	  <p>summary of stats by column. Rarely used</p>
+	</file>
+	<file name="eupmc_fulltext_html_urls.txt"  count="0,1">
+	  <p>URLs from EPMC retrieved by getpapers</p>
+	</file>
+	<file name="eupmc_results.json"  count="0,1">
+	  <p>URLs retrieved from EPMC by getpapers</p>
+	</file>
+	<file name="full.dataTables.html"  count="0,1">
+	  <p>main summary dataTables</p>
+	</file>
+	<file name="log.xml"  count="0,1">
+	  <p>LOG file for processing. Likely to change repeatedly.</p>
+	</file>
+	<file name="manifest.xml" count="1,1">
+	  <p>Manifest listing all cTrees in the cProject. There may be other non-CTree controlled files in this directory. 
+	  Follows structure of this file.</p>
+	</file>
+	
+	<!--  semi-hardcoded -->
+	<file name="gene.human.count.xml"  count="0,1">
+	  <p>counts of genes</p>
+	</file>
+	<file name="gene.human.documents.xml"  count="0,1">
+	  <p>?? of genes</p>
+	</file>
+	<file name="gene.human.snippets.xml"  count="0,1">
+	  <p>snippets containing genes</p>
+	</file>
+	
+	<!--  semi-hardcoded -->
+	<file name="species.binomial.count.xml"  count="0,1">
+	  <p>counts of species</p>
+	</file>
+	<file name="species.binomial.documents.xml"  count="0,1">
+	  <p>?? of species</p>
+	</file>
+	<file name="species.binomial.snippets.xml"  count="0,1">
+	  <p>snippets containing species</p>
+	</file>
+	
+	<!-- these are hardcoded -->
+	<file name="word.frequencies.count.xml"  count="0,1">
+	  <p>counts of words</p>
+	</file>
+	<file name="word.frequencies.documents.xml"  count="0,1">
+	  <p>?? of words</p>
+	</file>
+	<file name="word.frequencies.snippets.xml"  count="0,1">
+	  <p>snippets containing words</p>
+	</file>
+	
+	<!-- these depend on dictionary names -->
+	<file regex="search\.[A-Za-z]+\.count\.xml"  count="0,1">
+	  <p>counts of searches</p>
+	</file>
+	<file regex="search\.[A-Za-z]+\.documents\.xml"  count="0,1">
+	  <p>?? of searches</p>
+	</file>
+	<file regex="search\.[A-Za-z]+\.snippets\.xml"  count="0,1">
+	  <p>snippets containing searches</p>
+	</file>
+
+</cProject>

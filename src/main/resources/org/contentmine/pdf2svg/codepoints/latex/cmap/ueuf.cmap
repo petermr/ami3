@@ -1,0 +1,67 @@
+%!PS-Adobe-3.0 Resource-CMap
+%%DocumentNeededResources: ProcSet (CIDInit)
+%%IncludeResource: ProcSet (CIDInit)
+%%BeginResource: CMap (TeX-EuFM-0)
+%%Title: (TeX-EuFM-0 TeX EuFM 0)
+%%Version: 1.001
+%%EndComments
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CIDSystemInfo
+<< /Registry (TeX)
+/Ordering (EuFM)
+/Supplement 0
+>> def
+/CMapName /Eu-FM-0 def
+/CMapVersion 1.001 def
+/CMapType 2 def
+1 begincodespacerange
+<00> <FF>
+endcodespacerange
+7 beginbfrange
+<12> <13> <2018>
+<20> <21> <0020>
+<26> <3B> <0026>
+<41> <5B> <D835DD04>
+<5D> <5E> <005D>
+<61> <7A> <D835DD1E>
+<B5> <B6> <2018>
+endbfrange
+29 beginbfchar
+<00> <D835DD21>
+<01> <D835DD21>
+<02> <D835DD23>
+<03> <D835DD23>
+<04> <D835DD24>
+<05> <D835DD28>
+<06> <D835DD31>
+<07> <D835DD32>
+<3D> <003D>
+<3F> <003F>
+<43> <212D>
+<48> <210C>
+<49> <2111>
+<52> <211C>
+<5A> <2128>
+<7D> <0022>
+<7F> <0031>
+<80> <0020>
+<A0> <0020>
+<A1> <D835DD21>
+<A2> <D835DD21>
+<A3> <D835DD23>
+<A4> <D835DD23>
+<A5> <D835DD24>
+<A6> <D835DD28>
+<A7> <D835DD31>
+<A8> <D835DD32>
+<C3> <0020>
+<C4> <0031>
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+%%EndResource
+%%EOF

@@ -1,0 +1,12 @@
+<semanticDocument debug="true" xmlns="http://www.xml-cml.org/schema/ami2">
+  <documentIterator>
+     <pageIterator timeout="15000" maxMbyte="5.0">
+        <variable nam=======================================================================================================[]
+        <pageWriter filename="${p.root}_start.svg"/>
+     </pageIterator>
+     <documentWriter filename="${d.outDir}" format="htmlMenu" regex="((.*chunk.*\.xml)|(.*figure.*\.svg))"/>
+  </documentIterator>
+</semanticDocument>
+
+
+

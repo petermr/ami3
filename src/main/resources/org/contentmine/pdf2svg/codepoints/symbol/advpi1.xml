@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+
+    Copyright (C) 2012 pm286 <peter.murray.rust@googlemail.com>
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<codePointSet encoding="AdvPi1"  id="advpi1" resource="org/contentmine/pdf2svg/codepoints/symbol">
+
+    <!-- NOT UNICODE -->  
+    
+    <codePoint unicode="U+2264" decimal="35" name="numbersign" note="LESS-THAN OR EQUAL TO"/>
+    <codePoint unicode="U+2265" decimal="36" name="dollar" note="GREATER-THAN OR EQUAL TO"/>
+    <codePoint unicode="U+2245" decimal="38" name="ampersand" note="APPROXIMATELY EQUAL TO"/>
+    <codePoint unicode="U+003C" decimal="44" name="comma"  note="LESS-THAN SIGN"/>
+    <codePoint unicode="U+2192" decimal="45" name="hyphen"  note="RIGHTWARDS ARROW"/>
+    <codePoint unicode="U+003E" decimal="46" note="GREATER-THAN SIGN"/>
+    <codePoint unicode="U+2022" name="period" note="BULLET"/>
+    <codePoint unicode="U+2260" decimal="49" name="one" note="NOT-EQUALS SIGN"/>
+    <codePoint unicode="U+2014" decimal="50" name="two" note="EM DASH"/>
+    <codePoint unicode="U+003E" decimal="52" name="four" note="RIGHT ANGLE BRACKET"/>
+    <codePoint unicode="U+00D7" decimal="54" name="six" note="MULTIPLY SIGN"/>
+    <codePoint unicode="U+00B0" decimal="56" name="eight" note="DEGREE SIGN"/>
+    <codePoint unicode="U+221E" decimal="63" name="question" note="INFINITY"/>
+
+<!--  greek Gamma = G -->    
+    <codePoint unicode="U+0391" decimal="65" name="A" note="GREEK CAPITAL LETTER ALPHA"/>
+    <codePoint unicode="U+0392" decimal="66" name="B" note="GREEK CAPITAL LETTER BETA"/>
+    <codePoint unicode="U+03A7" decimal="67" name="C" note="GREEK CAPITAL LETTER CHI"  />
+    <codePoint unicode="U+0394" decimal="68" name="D" note="GREEK CAPITAL LETTER DELTA"/>
+    <codePoint unicode="U+0395" decimal="69" name="E" note="GREEK CAPITAL LETTER EPSILON"/>
+    <codePoint unicode="U+03A6" decimal="70" name="F" note="GREEK CAPITAL LETTER PHI"  />
+    <codePoint unicode="U+0393" decimal="71" name="G" note="GREEK CAPITAL LETTER GAMMA"/>
+    <codePoint unicode="U+0397" decimal="72" name="H" note="GREEK CAPITAL LETTER ETA"/>
+    <codePoint unicode="U+0399" decimal="73" name="I" note="GREEK CAPITAL LETTER IOTA"/>
+    <codePoint unicode="U+039A" decimal="75" name="K" note="GREEK CAPITAL LETTER KAPPA"/>
+    <codePoint unicode="U+039B" decimal="76" name="L" note="GREEK CAPITAL LETTER LAMBDA"/>
+    <codePoint unicode="U+039C" decimal="77" name="M" note="GREEK CAPITAL LETTER MU"/>
+    <codePoint unicode="U+039D" decimal="78" name="N" note="GREEK CAPITAL LETTER NU"/>
+    <codePoint unicode="U+039F" decimal="79" name="O" note="GREEK CAPITAL LETTER OMICRON"/>
+    <codePoint unicode="U+03A0" decimal="80" name="P" note="GREEK CAPITAL LETTER PI"/>
+    <codePoint unicode="U+0398" decimal="81" name="Q" note="GREEK CAPITAL LETTER THETA"/>
+    <codePoint unicode="U+03A1" decimal="82" name="R" note="GREEK CAPITAL LETTER RHO"/>
+    <codePoint unicode="U+03A3" decimal="83" name="S" note="GREEK CAPITAL LETTER SIGMA"/>
+    <codePoint unicode="U+03A4" decimal="84" name="T" note="GREEK CAPITAL LETTER TAU"/>
+    <codePoint unicode="U+03A5" decimal="85" name="U" note="GREEK CAPITAL LETTER UPSILON"/>
+    <codePoint unicode="U+03A9" decimal="87" name="W" note="GREEK CAPITAL LETTER OMEGA"  />
+    <codePoint unicode="U+039E" decimal="88" name="X" note="GREEK CAPITAL LETTER XI"/>
+    <codePoint unicode="U+03A8" decimal="89" name="Y" note="GREEK CAPITAL LETTER PSI"  />
+    <codePoint unicode="U+0396" decimal="90" name="Z" note="GREEK CAPITAL LETTER ZETA"/>
+    <codePoint unicode="U+22EF" decimal="95" name="underscore" note="MIDLINE HORIZONTAL ELLIPSIS"/>
+    <codePoint unicode="U+03B1" decimal="97" name="a" note="GREEK SMALL LETTER ALPHA"/>
+    <codePoint unicode="U+03B2" decimal="98" name="b" note="GREEK SMALL LETTER BETA"/>
+    <codePoint unicode="U+03C7" decimal="99" name="c" note="GREEK SMALL LETTER CHI"  />
+    <codePoint unicode="U+03B4" decimal="100" name="d" note="GREEK SMALL LETTER DELTA"/>
+    <codePoint unicode="U+03B5" decimal="101" name="e" note="GREEK SMALL LETTER EPSILON"/>
+    <codePoint unicode="U+03C6" decimal="102" name="f" note="GREEK SMALL LETTER PHI"  />
+    <codePoint unicode="U+03B3" decimal="103" name="g" note="GREEK SMALL LETTER GAMMA"/>
+    <codePoint unicode="U+03B7" decimal="104" name="h" note="GREEK SMALL LETTER ETA"/>
+    <codePoint unicode="U+03B9" decimal="105" name="i" note="GREEK SMALL LETTER IOTA"/>
+    <codePoint unicode="U+03B8" decimal="106" name="j" note="GREEK SMALL LETTER THETA"/>
+    <codePoint unicode="U+03BA" decimal="107" name="k" note="GREEK SMALL LETTER KAPPA"/>
+    <codePoint unicode="U+03BB" decimal="108" name="l" note="GREEK SMALL LETTER LAMBDA"/>
+    <codePoint unicode="U+03BC" decimal="109" name="m" note="GREEK SMALL LETTER MU"/>
+    <codePoint unicode="U+03BD" decimal="110" name="n" note="GREEK SMALL LETTER NU"/>
+    <codePoint unicode="U+03BF" decimal="111" name="o" note="GREEK SMALL LETTER OMICRON"/>
+    <codePoint unicode="U+03C0" decimal="112" name="p" note="GREEK SMALL LETTER PI"/>
+    <codePoint unicode="U+2202" decimal="113" name="q" note="PARTIAL DIFFERENTIAL"/>
+    <codePoint unicode="U+03C1" decimal="114" name="r" note="GREEK SMALL LETTER RHO"/>
+    <codePoint unicode="U+03C3" decimal="115" name="s" note="GREEK SMALL LETTER SIGMA"/>
+    <codePoint unicode="U+03C4" decimal="116" name="t" note="GREEK SMALL LETTER TAU"/>
+    <codePoint unicode="U+03C5" decimal="117" name="u" note="GREEK SMALL LETTER UPSILON"/>
+    <!--  note problem -->
+    <codePoint unicode="U+03C9" decimal="118" name="v" note="GREEK SMALL LETTER OMEGA"  />
+    <codePoint unicode="U+03C9" decimal="119" name="w" note="GREEK SMALL LETTER OMEGA"  />
+    <codePoint unicode="U+03BE" decimal="120" name="x" note="GREEK SMALL LETTER XI"/>
+    <codePoint unicode="U+03C8" decimal="121" name="y" note="GREEK SMALL LETTER PSI"  />
+
+</codePointSet>

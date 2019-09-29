@@ -1,0 +1,111 @@
+<codePointSet encoding="Unicode" id="generalPunctuation">
+    <codePoint unicode="U+2000" unicodeName="EN QUAD" name=""/>
+    <codePoint unicode="U+2001" unicodeName="EM QUAD" name=""/>
+    <codePoint unicode="U+2002" unicodeName="EN SPACE" name=""/>
+    <codePoint unicode="U+2003" unicodeName="EM SPACE" name=""/>
+    <codePoint unicode="U+2004" unicodeName="THREE-PER-EM SPACE" name=""/>
+    <codePoint unicode="U+2005" unicodeName="FOUR-PER-EM SPACE" name=""/>
+    <codePoint unicode="U+2006" unicodeName="SIX-PER-EM SPACE" name=""/>
+    <codePoint unicode="U+2007" unicodeName="FIGURE SPACE" name=""/>
+    <codePoint unicode="U+2008" unicodeName="PUNCTUATION SPACE" name=""/>
+    <codePoint unicode="U+2009" unicodeName="THIN SPACE" name=""/>
+    <codePoint unicode="U+200A" unicodeName="HAIR SPACE" name=""/>
+    <codePoint unicode="U+200B" unicodeName="ZERO WIDTH SPACE" name=""/>
+    <codePoint unicode="U+200C" unicodeName="ZERO WIDTH NON-JOINER" name=""/>
+    <codePoint unicode="U+200D" unicodeName="ZERO WIDTH JOINER" name=""/>
+    <codePoint unicode="U+200E" unicodeName="LEFT-TO-RIGHT MARK" name=""/>
+    <codePoint unicode="U+200F" unicodeName="RIGHT-TO-LEFT MARK" name=""/>
+    
+    <codePoint unicode="U+2010" unicodeName="HYPHEN" note="replace by HYPHEN-MINUS" replaceByUnicode="U+002D" name=""/>
+    <codePoint unicode="U+2011" unicodeName="NON-BREAKING HYPHEN" name=""/>
+    <codePoint unicode="U+2012" unicodeName="FIGURE DASH" name=""/>
+    <codePoint unicode="U+2013" unicodeName="EN DASH" note="replace by HYPHEN-MINUS" replaceByUnicode="U+002D" name=""/>
+    <codePoint unicode="U+2014" unicodeName="EM DASH" note="replace by HYPHEN-MINUS" replaceByUnicode="U+002D" name=""/>
+    <codePoint unicode="U+2015" unicodeName="FIGURE DASH" name=""/>
+    <codePoint unicode="U+2016" unicodeName="DOUBLE VERTICAL LINE" name=""/>
+    <codePoint unicode="U+2017" unicodeName="DOUBLE LOW LINE" name=""/>
+    <codePoint unicode="U+2018" unicodeName="LEFT SINGLE QUOTATION MARK" note="replace by APOSTROPHE" replaceByUnicode="U+0027" name="" />
+    <codePoint unicode="U+2019" unicodeName="RIGHT SINGLE QUOTATION MARK" note="replace by APOSTROPHE" replaceByUnicode="U+0027" name="" />
+    <codePoint unicode="U+201A" unicodeName="SINGLE LOW-9 QUOTATION MARK" note="replace by APOSTROPHE" replaceByUnicode="U+0027" name="" />
+    <codePoint unicode="U+201B" unicodeName="SINGLE HIGH-REVERSED-9 QUOTATION MARK" note="replace by APOSTROPHE" replaceByUnicode="U+0027" name="" />
+    <codePoint unicode="U+201C" unicodeName="LEFT DOUBLE QUOTATION MARK" note="replace by QUOTATION MARK" replaceByUnicode="U+0022" name=""/>
+    <codePoint unicode="U+201D" unicodeName="RIGHT DOUBLE QUOTATION MARK" note="replace by QUOTATION MARK" replaceByUnicode="U+0022" name=""/>
+    <codePoint unicode="U+201E" unicodeName="DOUBLE LOW-9 QUOTATION MARK" note="replace by QUOTATION MARK" replaceByUnicode="U+0022" name=""/>
+    <codePoint unicode="U+201F" unicodeName="DOUBLE HIGH-REVERSED-9 QUOTATION MARK" note="replace by QUOTATION MARK" replaceByUnicode="U+0022" name=""/>
+
+    <codePoint unicode="U+2020" unicodeName="DAGGER" name=""/>
+    <codePoint unicode="U+2021" unicodeName="DOUBLE DAGGER" name=""/>
+    <codePoint unicode="U+2022" unicodeName="BULLET" name=""/>
+    <codePoint unicode="U+2023" unicodeName="TRIANGULAR BULLET " /> 
+    <codePoint unicode="U+2024" unicodeName="ONE DOT LEADER " /> 
+    <codePoint unicode="U+2025" unicodeName="TWO DOT LEADER " /> 
+    <codePoint unicode="U+2026" unicodeName="HORIZONTAL ELLIPSIS" name="ellipsis" />
+    <codePoint unicode="U+2027" unicodeName="HYPHENATION POINT " /> 
+    <codePoint unicode="U+2028" unicodeName="LINE SEPARATOR " /> 
+    <codePoint unicode="U+2029" unicodeName="PARAGRAPH SEPARATOR " /> 
+    <codePoint unicode="U+202A" unicodeName="LEFT-TO-RIGHT EMBEDDING " /> 
+    <codePoint unicode="U+202B" unicodeName="RIGHT-TO-LEFT EMBEDDING " /> 
+    <codePoint unicode="U+202C" unicodeName="POP DIRECTIONAL FORMATTING " /> 
+    <codePoint unicode="U+202D" unicodeName="LEFT-TO-RIGHT OVERRIDE " /> 
+    <codePoint unicode="U+202E" unicodeName="RIGHT-TO-LEFT OVERRIDE " /> 
+    <codePoint unicode="U+202F" unicodeName="NARROW NO-BREAK SPACE " /> 
+    <codePoint unicode="U+2030" unicodeName="PER MILLE SIGN" name=""/>
+    <codePoint unicode="U+2031" unicodeName="PER TEN THOUSAND SIGN " /> 
+    <codePoint unicode="U+2032" unicodeName="PRIME" decimal="8242" note="replace by APOSTROPHE" replaceByUnicode="U+0027" name="minute" />
+    <codePoint unicode="U+2033" unicodeName="DOUBLE PRIME" name="second" />
+    <codePoint unicode="U+2034" unicodeName="TRIPLE PRIME " /> 
+    <codePoint unicode="U+2035" unicodeName="REVERSED PRIME " /> 
+    <codePoint unicode="U+2036" unicodeName="REVERSED DOUBLE PRIME " /> 
+    <codePoint unicode="U+2037" unicodeName="REVERSED TRIPLE PRIME " /> 
+    <codePoint unicode="U+2038" unicodeName="CARET" name=""/>
+    <codePoint unicode="U+2039" unicodeName="SINGLE LEFT-POINTING ANGLE QUOTATION MARK " /> 
+    <codePoint unicode="U+203A" unicodeName="SINGLE RIGHT-POINTING ANGLE QUOTATION MARK " /> 
+    <codePoint unicode="U+203B" unicodeName="REFERENCE MARK " /> 
+    <codePoint unicode="U+203C" unicodeName="DOUBLE EXCLAMATION MARK " /> 
+    <codePoint unicode="U+203D" unicodeName="INTERROBANG " /> 
+    <codePoint unicode="U+203E" unicodeName="OVERLINE " /> 
+    <codePoint unicode="U+203F" unicodeName="UNDERTIE " /> 
+    <codePoint unicode="U+2040" unicodeName="CHARACTER TIE " /> 
+    <codePoint unicode="U+2041" unicodeName="CARET INSERTION POINT " /> 
+    <codePoint unicode="U+2042" unicodeName="ASTERISM " /> 
+    <codePoint unicode="U+2043" unicodeName="HYPHEN BULLET " /> 
+    <codePoint unicode="U+2044" unicodeName="FRACTION SLASH" name="fraction" />
+    <codePoint unicode="U+2045" unicodeName="LEFT SQUARE BRACKET WITH QUILL " /> 
+    <codePoint unicode="U+2046" unicodeName="RIGHT SQUARE BRACKET WITH QUILL " /> 
+    <codePoint unicode="U+2047" unicodeName="DOUBLE QUESTION MARK " /> 
+    <codePoint unicode="U+2048" unicodeName="QUESTION EXCLAMATION MARK " /> 
+    <codePoint unicode="U+2049" unicodeName="EXCLAMATION QUESTION MARK " /> 
+    <codePoint unicode="U+204A" unicodeName="TIRONIAN SIGN ET " /> 
+    <codePoint unicode="U+204B" unicodeName="REVERSED PILCROW SIGN " /> 
+    <codePoint unicode="U+204C" unicodeName="BLACK LEFTWARDS BULLET " /> 
+    <codePoint unicode="U+204D" unicodeName="BLACK RIGHTWARDS BULLET " /> 
+    <codePoint unicode="U+204E" unicodeName="LOW ASTERISK" name=""/>
+    <codePoint unicode="U+204F" unicodeName="REVERSED SEMICOLON " /> 
+    <codePoint unicode="U+2050" unicodeName="CLOSE UP " /> 
+    <codePoint unicode="U+2051" unicodeName="TWO ASTERISKS ALIGNED VERTICALLY " /> 
+    <codePoint unicode="U+2052" unicodeName="COMMERCIAL MINUS SIGN " /> 
+    <codePoint unicode="U+2053" unicodeName="SWUNG DASH " /> 
+    <codePoint unicode="U+2054" unicodeName="INVERTED UNDERTIE " /> 
+    <codePoint unicode="U+2055" unicodeName="FLOWER PUNCTUATION MARK " /> 
+    <codePoint unicode="U+2056" unicodeName="THREE DOT PUNCTUATION " /> 
+    <codePoint unicode="U+2057" unicodeName="QUADRUPLE PRIME " /> 
+    <codePoint unicode="U+2058" unicodeName="FOUR DOT PUNCTUATION " /> 
+    <codePoint unicode="U+2059" unicodeName="FIVE DOT PUNCTUATION " /> 
+    <codePoint unicode="U+205A" unicodeName="TWO DOT PUNCTUATION " /> 
+    <codePoint unicode="U+205B" unicodeName="FOUR DOT MARK " /> 
+    <codePoint unicode="U+205C" unicodeName="DOTTED CROSS " /> 
+    <codePoint unicode="U+205D" unicodeName="TRICOLON " /> 
+    <codePoint unicode="U+205E" unicodeName="VERTICAL FOUR DOTS " /> 
+    <codePoint unicode="U+205F" unicodeName="MEDIUM MATHEMATICAL SPACE " /> 
+    <codePoint unicode="U+2060" unicodeName="WORD JOINER " /> 
+    <codePoint unicode="U+2061" unicodeName="FUNCTION APPLICATION " /> 
+    <codePoint unicode="U+2062" unicodeName="INVISIBLE TIMES " /> 
+    <codePoint unicode="U+2063" unicodeName="INVISIBLE SEPARATOR " /> 
+    <codePoint unicode="U+2064" unicodeName="INVISIBLE PLUS " /> 
+    <codePoint unicode="U+206A" unicodeName="INHIBIT SYMMETRIC SWAPPING " /> 
+    <codePoint unicode="U+206B" unicodeName="ACTIVATE SYMMETRIC SWAPPING " /> 
+    <codePoint unicode="U+206C" unicodeName="INHIBIT ARABIC FORM SHAPING " /> 
+    <codePoint unicode="U+206D" unicodeName="ACTIVATE ARABIC FORM SHAPING " /> 
+    <codePoint unicode="U+206E" unicodeName="NATIONAL DIGIT SHAPES " /> 
+    <codePoint unicode="U+206F" unicodeName="NOMINAL DIGIT SHAPES " /> 
+</codePointSet>

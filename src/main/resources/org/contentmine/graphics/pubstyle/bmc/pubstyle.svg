@@ -1,0 +1,324 @@
+<?xml version="1.0" standalone="yes" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="600.0" height="800.0"
+	style="stroke:blue;stroke-width:0.5;fill:none;">
+	<g id="pubstyle" class="pubstyle" pubstyleName="bmc" publisher="BioMedCentral" doi="10.1186">
+	    <defs>
+   			<text id="header.biblio" class="header.biblio" fontName="(MyriadPro\-(Regular|It))" y="38.469" fontStyle="(italic)" 
+				fontSize="8.0" fontWeight="(bold|normal)">
+				<![CDATA[
+				(
+				(?:et\s+al\.)?\s*
+				(?<journal>[A-Za-z,\.\s]+)\s+
+				\((?<year>\d+)\)\s+
+				(?<vol>\d+)
+				:
+				(?<artno>\d+)\s*
+				)
+				]]>
+			</text>
+					<!-- Page 2 of 13 -->
+			<text id="header.pagecount" class="header.pagecount rjustify" fontName="MyriadPro-Regular" fontSize="8.0" fontWeight="(normal)"
+				y="47.307" >
+				<![CDATA[
+				(Page\s+
+				(?<page>\d+)
+				\s+of\s+
+				(?<totalPage>\d+)
+				)
+				]]>
+			</text>
+					<!-- Sumarnrote -->
+			<text id="header.authors" class="header.authors" fontName="(MyriadPro\-(Regular))" y="38.469" fontStyle="(normal)" 
+				fontSize="8.0" fontWeight="(normal)">
+				<![CDATA[
+				(
+				(?<authors>[A-Za-z,\s]+)\s*
+				)
+				]]>
+			</text>
+			<text id="header.doi" class="header.doi" fontName="MyriadPro-Regular" y="48.469" x="56.622,159.878" 
+			    style="fill:#000000;font-size:8.0px;font-weight:normal;">
+				<![CDATA[
+    			(DOI\s
+	    		(?<doi>10\.1186/[^\s]+)
+		    	)
+		    	]]>
+		    </text>
+            <text id="header.journal" class="header.journal" newFill="cyan" fontName="OpenSans" y="47.307" x="436.912,536.315" 
+                style="fill:#555554;font-size:16.2px;font-weight:normal;">
+				<![CDATA[
+                (
+                (?<journal>.*)
+                )
+                ]]>
+			</text>
+			
+<!-- =================== page1 ARTICLETYPE =================== -->			
+            <path id="page1.articletype" class="articletype xfix yfix wfix hfix" newFill="pink" 
+	            style="fill:#8095b9;stroke-width:0.0;" 
+	            d="M59.693 88.217 C59.693 88.217 56.693 88.217 56.693 91.217 
+	            L56.693 101.217 C56.693 101.217 56.693 104.217 59.693 104.217 
+	            L535.583 104.217 C535.583 104.217 538.583 104.217 538.583 101.217 
+	            L538.583 91.217 C538.583 91.217 538.583 88.217 535.583 88.217 Z" 
+	            signature="MCLCLCLCZ"/>
+			
+<!-- =================== page1 MAINTITLE =================== -->			
+			<!-- MAINTITLE, regular or italic, x, y, width (not height) fixed -->
+            <text id="page1.title" class="page1.title xfix yfix wfix" newFill="green" fontName="MyriadPro-(Regular|It)" x="80.646" 
+style="fill:#000000;font-size:24.0px;font-weight:normal;">(.*)</text>
+
+<!-- =================== page1 AUTHORS =================== -->			
+            <text id="page1.authors" class="authors xfix wfix" newFill="cyan" fontName="MyriadPro-Light" x="56.622" 
+                style="fill:#000000;font-size:11.0px;font-weight:normal;">(.*)</text>
+            <text id="page1.authors.sub" class="authors.sub" newFill="cyan" fontName="MyriadPro-Light" x="56.622" 
+                style="fill:#000000;font-size:7.7px;font-weight:normal;">(.*)</text>
+			
+<!-- =================== ABSTRACT =================== -->			
+            <!-- page1 ABSTRACT -->
+			<g id="page1.abstract" class="abstract roundedbox">
+			    <!-- rounded box -->
+                <path class="example" style="fill:none;stroke:#8095b9;stroke-width:0.5;" 
+                d="M60.872 256.482 C60.872 256.482 56.872 256.482 56.872 260.482 
+                L56.872 577.457 C56.872 577.457 56.872 581.457 60.872 581.457 
+                L534.262 581.457 C534.262 581.457 538.262 581.457 538.262 577.457 
+                L538.262 260.482 C538.262 260.482 538.262 256.482 534.262 256.482 L60.872 256.482 Z"
+                signature="MCLCLCLCZ" />
+                <!-- adjustable bounding box in y, height -->
+                <rect class="bbox xfix wfix" x="56.872" y="100" width="481" height="100" fill="none" stroke="purple" stroke-width="1.0" />
+                
+	            <text id="abstract.title" class="abstract.title" level="2" x="63.122" style="font-size:10.0;font-weight:bold;">Abstract</text>
+				<text id="abstract.section" class="abstract.section" level="3" x="63.122" style="font-size:10.0;font-weight:bold;">
+							(Background|Methods|Results|Discussion|Keywords):
+				</text>
+				<text id="abstract.section.text" class="abstract.section.text" newFill="orange" level="0" 
+				     style="font-size:10.0;font-weight:normal;">ANY</text>
+			</g>
+
+<!-- =================== page1 CORRESPONDENCE =================== -->			
+			<g id="page1.correspondence" class="correspondence xfix wfix">
+				<path style="stroke:#000000;stroke-width:0.15;" d="M56.693 632.617 L290.551 632.617 " />
+				<rect class="bbox" stroke-dasharray="5,5" x="56.693" y="632" width="234.8" height="60" 
+				    fill="none" stroke="purple" opacity="1.0" stroke-width="1"/>
+		    </g>
+
+<!-- =================== page1 BIBLIO heads =================== -->			
+
+			<g id="page1.biblio" class="header xfix yfix hfix wfix">
+				<rect class="bbox" stroke-dasharray="5,5" x="56.693" y="30" width="234.8" height="21" 
+				    fill="none" stroke="purple" opacity="1.0" stroke-width="1"/>
+			</g>
+<!-- =================== page1 JOURNAL heads =================== -->			
+			<g id="page1.journal" class="header xfix yfix hfix wfix">
+				<rect class="bbox" x="302" width="238" y="30" height="21" 
+				    fill="none" stroke="purple" stroke-dasharray="5,5" opacity="1.0" stroke-width="1"/>
+			</g>
+
+            
+<!-- =================== page1 PUBLISHER stuff =================== -->			
+			<g id="biomedcentrallogo" class="logo xfix yfix hfix wfix">
+                <rect x="57" y="703" width="110" height="22" 
+				    fill="none" stroke="purple" stroke-dasharray="5,5" stroke-width="1"/>
+			</g>
+			<g id="crossref" class="logo xfix yfix hfix wfix">
+				<rect class="bbox" x="488" y="109" width="52" height="16" 
+			    	fill="none" stroke="purple" stroke-dasharray="5,5" stroke-width="1"/>
+			</g>
+			
+
+<!-- =================== SECTIONs and COLUMNs all pages =================== -->			
+			     
+	    <!-- section header 1 -->
+			<text id="sectionheader1" class="sectionheader1" newFill="blue" fontName="(MyriadPro\-Bold)" level="1" wrap="true"
+					style="fill:#000000;font-size:10.3px;font-weight:bold;"><![CDATA[(.*)]]>
+					
+			</text>
+			<text id="sectionheader2" class="sectionheader2" newFill="cyan" fontName="(MyriadPro\-Semibold)" level="2" wrap="true"
+					style="fill:#000000;;font-size:9.2px;font-weight:bold;"><![CDATA[(.*)]]>
+			</text>
+			
+	        <!-- alternative columns -->
+	        <g id="narrowcolumnheader" class="narrowcolumnheader">
+	            <text id="narrowcolumnheader.1" idref="sectionheader1"/>
+				<text id="narrowcolumnheader.2" idref="sectionheader2"/>
+			</g>
+			
+			<g id="leftright.column" class="leftright.column">
+				<g id="leftcolumn" class="leftcolumn">
+					<rect x="55" width="238" y="82" height="639" />
+					<g idref="narrowcolumnheader"/>
+				</g>
+				<g id="rightcolumn" class="rightcolumn">
+					<rect x="302" width="238" y="82" height="639" />
+					<g idref="narrowcolumnheader"/>
+				</g>
+			</g>
+			
+<!-- =================== WIDE IMAGES all pages =================== -->			
+			
+			<g id="wide.image" class="wide.image">
+	            <rect id="wide.image.rect" class="wide.image.rect"  x="30" width="515" y="57" height="550"/>
+				<path id="wide.image.outer" class="wide.image.outer" style="fill:none;stroke-width:1.0;stroke:#000000;" signature="MLLLZ"
+					d="M57.068 486.972 L538.958 486.972 L538.958 94.092 L57.068 94.092 Z" />
+				<image id="wide.image.image" class="wide.image.image" xmlns:xlink="http://www.w3.org/1999/xlink"
+					transform="matrix(0.240,0.0,0.0,0.240,106.673,94.091)" xlink:href="fulltext.p4.i1.png"
+					x="0.0" y="0.0" width="1595.0" height="1637.0" boundingBox="" />
+					<!-- <rect x="106.67" y="94.091" width = 382.8, height = 392.9 -->
+				<!-- rounded corners rect -->
+				<path id="image.rounded" class="image.rounded" style="stroke:blue;stroke-width:2.25;fill:yellow;"
+					d="M61.068 88.092 
+				    C61.068 88.092 57.068 88.092 57.068 92.092 L57.068 519.852 
+				    C57.068 519.852 57.068 523.852 61.068 523.852 L534.958 523.852 
+				    C534.958 523.852 538.958 523.852 538.958 519.852 L538.958 92.092 
+				    C538.958 92.092 538.958 88.092 534.958 88.092 L61.068 88.092 Z"
+					signature="MCLCLCLCLZ" />
+			</g>
+
+<!-- =================== WIDE TABLES all pages =================== -->			
+
+			<g id="wide.table" class="wide.table">
+				<!-- diagram -->
+				<!-- table rules -->
+				<path id="table.path.1" class="table.path.1" style="stroke:#000000;stroke-width:0.15;" 
+				    d="M56.693 572.729 L538.583 572.729 " />
+				<path id="table.path.2" class="table.path.2" style="stroke:#000000;stroke-width:0.15;" 
+				    d="M56.693 703.503 L538.583 703.503 " />
+
+				<!-- background? -->
+				<path id="table.path.3" class="table.path.3" style="fill:none;stroke-width:1.0;stroke:red;" signature="MLLLZ"
+					d="M57.068 486.972 L538.958 486.972 L538.958 94.092 L57.068 94.092 Z" />
+			</g>
+			
+<!-- =================== BACKMATTER =================== -->	
+		
+		<!-- backmatter -->
+		    <text id="admin" class="admin" newFill="purple" fontName="MyriadPro-Semibold" x="56.693"  style="fill:#000000;font-size:7.5px;font-weight:bold;">
+				<![CDATA[
+                (
+Funding|
+Abbreviations|
+Authors’\scontributions|
+Author\sdetails|
+Acknowledgements|
+Competing\sinterests|
+Consent\sfor\spublication|
+Ethics\sapproval\sand\sconsent\sto\sparticipate
+                )
+                ]]>
+	        </text>
+	        <text id="backtext" class="backtext" newFill="pink" fontName="MyriadPro-Light" x="56.693"  style="fill:#000000;font-size:7.5px;font-weight:normal;">
+                <![CDATA[
+                (.*)
+                ]]>
+	        </text>
+	        <text id="pubnote" class="pubnote" fontName="MyriadPro-Bold"   x="56.693"  style="fill:#000000;font-size:10.3px;font-weight:bold;">
+                <![CDATA[
+                (Publishers Note)
+                ]]>
+	        </text>
+	        <text id="pubstuff1" class="pubstuff1" fontName="MyriadPro-Light"    x="56.693"  style="fill:#000000;font-size:7.5px;font-weight:normal;">
+                <![CDATA[
+                (Springer Nature.*)
+                ]]>
+	        </text>
+	        <text id="dates" class="dates" fontName="MyriadPro-Regular"  x="56.693"  style="fill:#000000;font-size:7.5px;font-weight:normal;">
+                <![CDATA[
+                (Received: (\d+ ([^ ]*)\s(\d\d\d\d)\s+(Accepted: )(\d+ ([^ ]+)\s+\d\d\d\d)
+                ]]>
+	        </text>
+	        <text id="refsection" class="refsection" fontName="MyriadPro-Semibold" x="56.693"  style="fill:#000000;font-size:7.5px;font-weight:bold;">
+                <![CDATA[
+                (References)
+                ]]>
+	        </text>
+	        <text id="refstart" class="refstart" newFill="red" fontName="(MyriadPro-Light|MyriadPro-LightIt)" 
+                    y="93.342" x="56.693,219.0" style="fill:#000000;font-size:7.5px;font-weight:normal;">
+                    <![CDATA[
+                    (\s*(\d+)\..*)
+		        ]]>
+		    </text>
+	        <text id="refbody" class="refbody" newFill="gray" fontName="MyriadPro-Light" y="102.342" x="71.693,..." style="fill:#000000;font-size:7.5px;font-weight:normal;">
+                <![CDATA[
+                (.*)
+                ]]>
+	        </text>
+                
+            <!-- BACKMATTER REFS -->
+            <g id="backmatter" class="backmatter">
+                <text idref="admin"/>
+                <text idref="backtext"/>
+                <text idref="pubnote"/>
+                <text idref="pubstuff1"/>
+                <text idref="dates"/>
+                <text idref="refsection"/>
+                <text idref="refstart"/>
+                <text idref="refbody"/>
+            </g>
+                
+	    </defs>
+
+<!-- =================== PAGES =================== -->			
+<!-- =================== PAGES =================== -->			
+
+	<!-- ===============PAGE 1=========== -->	    
+		<g id="page1" class="page1" number="P1">
+			<g id="header1" class="header">
+				<rect id="header1.rect" class="header.rect" x="0" width="600" y="0" height="47" />
+				<text idref="header.authors"/>
+				<text idref="header.biblio"/>
+				<text idref="header.doi"/>
+				<text idref="header.journal"/>
+			</g>
+						
+			<g id="wide" class="wide">
+                <rect id="wide.rect" class="wide.rect" x="30" width="515" y="57" height="550"/>
+                <path  idref="page1.articletype"/>
+				<title idref="page1.title"/>
+				<title idref="page1.authors"/>
+				<title idref="page1.authors.sub"/>
+				<g     idref="page1.abstract"/>
+			</g>
+			
+			<g idref="leftright.column"/>
+		</g>
+
+	<!-- ===============PAGE 2=========== -->	    
+		<g id="page2" class="page2" number="P2">
+			<g id="header2" class="header">
+				<rect id="header2.rect" class="header.rect" x="0" width="540" y="0" height="47" />
+					<!-- et al. Malar J  (2017) 16:299 -->
+				<text idref="header.biblio"/>
+				<text idref="header.authors"/>
+				<text idref="header.pagecount"/>
+			</g>
+
+			<g id="wide" class="wide">
+				<g idref="wide.image"/>
+				<g idref="wide.table"/>
+			</g>
+			<g idref="leftright.column"/>
+		</g>
+
+	<!-- ===============PAGE N=========== -->	    
+		<g id="pagen" class="pagen" number="PN">
+			<g id="headern" class="header">
+				<rect id="headern.rect" class="header.rect" x="0" width="540" y="0" height="47" />
+					<!-- et al. Malar J  (2017) 16:299 -->
+				<text idref="header.biblio"/>
+				<text idref="header.authors"/>
+				<text idref="header.pagecount"/>
+			</g>
+
+			<g id="leftbackcolumn" class="leftbackcolumn">
+				<rect x="55" width="238" y="82" height="639" />
+				<g idref="backmatter"/>
+			</g>
+			<g id="rightbackcolumn" class="rightbackcolumn">
+				<rect x="302" width="238" y="82" height="639" />
+				<g idref="backmatter"/>
+			</g>
+			
+			<g id="footer" class="footer">
+			</g>
+		</g>
+	</g>
+</svg>

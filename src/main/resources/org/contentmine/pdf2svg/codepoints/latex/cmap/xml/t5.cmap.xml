@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codePointSet encoding="TeX-T5-0" id="tex-t5-0">
+ <codePoint unicode="U+0060" decimal="0" name="&lt;0060&gt;" stringRepresentation="`"/>
+ <codePoint unicode="U+00B4" decimal="1" name="&lt;00B4&gt;" stringRepresentation="´"/>
+ <codePoint unicode="U+02C6" decimal="2" name="&lt;02C6&gt;" stringRepresentation="ˆ"/>
+ <codePoint unicode="U+02DC" decimal="3" name="&lt;02DC&gt;" stringRepresentation="˜"/>
+ <codePoint unicode="U+00A8" decimal="4" name="&lt;00A8&gt;" stringRepresentation="¨"/>
+ <codePoint unicode="U+0323" decimal="5" name="&lt;0323&gt;" stringRepresentation="̣"/>
+ <codePoint unicode="U+02DA" decimal="6" name="&lt;02DA&gt;" stringRepresentation="˚"/>
+ <codePoint unicode="U+02C7" decimal="7" name="&lt;02C7&gt;" stringRepresentation="ˇ"/>
+ <codePoint unicode="U+02D8" decimal="8" name="&lt;02D8&gt;" stringRepresentation="˘"/>
+ <codePoint unicode="U+00AF" decimal="9" name="&lt;00AF&gt;" stringRepresentation="¯"/>
+ <codePoint unicode="U+02D9" decimal="10" name="&lt;02D9&gt;" stringRepresentation="˙"/>
+ <codePoint unicode="U+00B8" decimal="11" name="&lt;00B8&gt;" stringRepresentation="¸"/>
+ <codePoint unicode="U+0309" decimal="12" name="&lt;0309&gt;" stringRepresentation="̉"/>
+ <codePoint unicode="U+201A" decimal="13" name="&lt;201A&gt;" stringRepresentation="‚"/>
+ <codePoint unicode="U+2039" decimal="14" stringRepresentation="‹"/>
+ <codePoint unicode="U+203A" decimal="15" stringRepresentation="›"/>
+ <codePoint unicode="U+201C" decimal="16" stringRepresentation="“"/>
+ <codePoint unicode="U+201D" decimal="17" stringRepresentation="”"/>
+ <codePoint unicode="U+201E" decimal="18" stringRepresentation="„"/>
+ <codePoint unicode="U+00AB" decimal="19" name="&lt;00AB&gt;" stringRepresentation="«"/>
+ <codePoint unicode="U+00BB" decimal="20" name="&lt;00BB&gt;" stringRepresentation="»"/>
+ <codePoint unicode="U+2013" decimal="21" stringRepresentation="–"/>
+ <codePoint unicode="U+2014" decimal="22" stringRepresentation="—"/>
+ <codePoint unicode="U+200C" decimal="23" name="&lt;200C&gt;" stringRepresentation="‌"/>
+ <codePoint unicode="U+2080" decimal="24" name="&lt;2080&gt;" stringRepresentation="₀"/>
+ <codePoint unicode="U+0131" decimal="25" name="&lt;0131&gt;" stringRepresentation="ı"/>
+ <codePoint unicode="U+1EF6" decimal="26" stringRepresentation="Ỷ"/>
+ <codePoint unicode="U+1EF7" decimal="27" stringRepresentation="ỷ"/>
+ <codePoint unicode="U+1EF4" decimal="28" stringRepresentation="Ỵ"/>
+ <codePoint unicode="U+1EF5" decimal="29" stringRepresentation="ỵ"/>
+ <codePoint unicode="U+0110" decimal="30" stringRepresentation="Đ"/>
+ <codePoint unicode="U+0111" decimal="31" stringRepresentation="đ"/>
+ <codePoint unicode="U+2423" decimal="32" name="&lt;2423&gt;" stringRepresentation="␣"/>
+ <codePoint unicode="U+0021" decimal="33" stringRepresentation="!"/>
+ <codePoint unicode="U+0022" decimal="34" stringRepresentation="&quot;"/>
+ <codePoint unicode="U+0023" decimal="35" stringRepresentation="#"/>
+ <codePoint unicode="U+0024" decimal="36" stringRepresentation="$"/>
+ <codePoint unicode="U+0025" decimal="37" stringRepresentation="%"/>
+ <codePoint unicode="U+0026" decimal="38" stringRepresentation="&amp;"/>
+ <codePoint unicode="U+2019" decimal="39" name="&lt;2019&gt;" stringRepresentation="’"/>
+ <codePoint unicode="U+0028" decimal="40" stringRepresentation="("/>
+ <codePoint unicode="U+0029" decimal="41" stringRepresentation=")"/>
+ <codePoint unicode="U+002A" decimal="42" stringRepresentation="*"/>
+ <codePoint unicode="U+002B" decimal="43" stringRepresentation="+"/>
+ <codePoint unicode="U+002C" decimal="44" stringRepresentation=","/>
+ <codePoint unicode="U+002D" decimal="45" stringRepresentation="-"/>
+ <codePoint unicode="U+002E" decimal="46" stringRepresentation="."/>
+ <codePoint unicode="U+002F" decimal="47" stringRepresentation="/"/>
+ <codePoint unicode="U+0030" decimal="48" stringRepresentation="0"/>
+ <codePoint unicode="U+0031" decimal="49" stringRepresentation="1"/>
+ <codePoint unicode="U+0032" decimal="50" stringRepresentation="2"/>
+ <codePoint unicode="U+0033" decimal="51" stringRepresentation="3"/>
+ <codePoint unicode="U+0034" decimal="52" stringRepresentation="4"/>
+ <codePoint unicode="U+0035" decimal="53" stringRepresentation="5"/>
+ <codePoint unicode="U+0036" decimal="54" stringRepresentation="6"/>
+ <codePoint unicode="U+0037" decimal="55" stringRepresentation="7"/>
+ <codePoint unicode="U+0038" decimal="56" stringRepresentation="8"/>
+ <codePoint unicode="U+0039" decimal="57" stringRepresentation="9"/>
+ <codePoint unicode="U+003A" decimal="58" stringRepresentation=":"/>
+ <codePoint unicode="U+003B" decimal="59" stringRepresentation=";"/>
+ <codePoint unicode="U+003C" decimal="60" stringRepresentation="&lt;"/>
+ <codePoint unicode="U+003D" decimal="61" stringRepresentation="="/>
+ <codePoint unicode="U+003E" decimal="62" stringRepresentation="&gt;"/>
+ <codePoint unicode="U+003F" decimal="63" stringRepresentation="?"/>
+ <codePoint unicode="U+0040" decimal="64" stringRepresentation="@"/>
+ <codePoint unicode="U+0041" decimal="65" stringRepresentation="A"/>
+ <codePoint unicode="U+0042" decimal="66" stringRepresentation="B"/>
+ <codePoint unicode="U+0043" decimal="67" stringRepresentation="C"/>
+ <codePoint unicode="U+0044" decimal="68" stringRepresentation="D"/>
+ <codePoint unicode="U+0045" decimal="69" stringRepresentation="E"/>
+ <codePoint unicode="U+0046" decimal="70" stringRepresentation="F"/>
+ <codePoint unicode="U+0047" decimal="71" stringRepresentation="G"/>
+ <codePoint unicode="U+0048" decimal="72" stringRepresentation="H"/>
+ <codePoint unicode="U+0049" decimal="73" stringRepresentation="I"/>
+ <codePoint unicode="U+004A" decimal="74" stringRepresentation="J"/>
+ <codePoint unicode="U+004B" decimal="75" stringRepresentation="K"/>
+ <codePoint unicode="U+004C" decimal="76" stringRepresentation="L"/>
+ <codePoint unicode="U+004D" decimal="77" stringRepresentation="M"/>
+ <codePoint unicode="U+004E" decimal="78" stringRepresentation="N"/>
+ <codePoint unicode="U+004F" decimal="79" stringRepresentation="O"/>
+ <codePoint unicode="U+0050" decimal="80" stringRepresentation="P"/>
+ <codePoint unicode="U+0051" decimal="81" stringRepresentation="Q"/>
+ <codePoint unicode="U+0052" decimal="82" stringRepresentation="R"/>
+ <codePoint unicode="U+0053" decimal="83" stringRepresentation="S"/>
+ <codePoint unicode="U+0054" decimal="84" stringRepresentation="T"/>
+ <codePoint unicode="U+0055" decimal="85" stringRepresentation="U"/>
+ <codePoint unicode="U+0056" decimal="86" stringRepresentation="V"/>
+ <codePoint unicode="U+0057" decimal="87" stringRepresentation="W"/>
+ <codePoint unicode="U+0058" decimal="88" stringRepresentation="X"/>
+ <codePoint unicode="U+0059" decimal="89" stringRepresentation="Y"/>
+ <codePoint unicode="U+005A" decimal="90" stringRepresentation="Z"/>
+ <codePoint unicode="U+005B" decimal="91" stringRepresentation="["/>
+ <codePoint unicode="U+005C" decimal="92" stringRepresentation="\"/>
+ <codePoint unicode="U+005D" decimal="93" stringRepresentation="]"/>
+ <codePoint unicode="U+005E" decimal="94" stringRepresentation="^"/>
+ <codePoint unicode="U+005F" decimal="95" stringRepresentation="_"/>
+ <codePoint unicode="U+2018" decimal="96" name="&lt;2018&gt;" stringRepresentation="‘"/>
+ <codePoint unicode="U+0061" decimal="97" stringRepresentation="a"/>
+ <codePoint unicode="U+0062" decimal="98" stringRepresentation="b"/>
+ <codePoint unicode="U+0063" decimal="99" stringRepresentation="c"/>
+ <codePoint unicode="U+0064" decimal="100" stringRepresentation="d"/>
+ <codePoint unicode="U+0065" decimal="101" stringRepresentation="e"/>
+ <codePoint unicode="U+0066" decimal="102" stringRepresentation="f"/>
+ <codePoint unicode="U+0067" decimal="103" stringRepresentation="g"/>
+ <codePoint unicode="U+0068" decimal="104" stringRepresentation="h"/>
+ <codePoint unicode="U+0069" decimal="105" stringRepresentation="i"/>
+ <codePoint unicode="U+006A" decimal="106" stringRepresentation="j"/>
+ <codePoint unicode="U+006B" decimal="107" stringRepresentation="k"/>
+ <codePoint unicode="U+006C" decimal="108" stringRepresentation="l"/>
+ <codePoint unicode="U+006D" decimal="109" stringRepresentation="m"/>
+ <codePoint unicode="U+006E" decimal="110" stringRepresentation="n"/>
+ <codePoint unicode="U+006F" decimal="111" stringRepresentation="o"/>
+ <codePoint unicode="U+0070" decimal="112" stringRepresentation="p"/>
+ <codePoint unicode="U+0071" decimal="113" stringRepresentation="q"/>
+ <codePoint unicode="U+0072" decimal="114" stringRepresentation="r"/>
+ <codePoint unicode="U+0073" decimal="115" stringRepresentation="s"/>
+ <codePoint unicode="U+0074" decimal="116" stringRepresentation="t"/>
+ <codePoint unicode="U+0075" decimal="117" stringRepresentation="u"/>
+ <codePoint unicode="U+0076" decimal="118" stringRepresentation="v"/>
+ <codePoint unicode="U+0077" decimal="119" stringRepresentation="w"/>
+ <codePoint unicode="U+0078" decimal="120" stringRepresentation="x"/>
+ <codePoint unicode="U+0079" decimal="121" stringRepresentation="y"/>
+ <codePoint unicode="U+007A" decimal="122" stringRepresentation="z"/>
+ <codePoint unicode="U+007B" decimal="123" stringRepresentation="{"/>
+ <codePoint unicode="U+007C" decimal="124" stringRepresentation="|"/>
+ <codePoint unicode="U+007D" decimal="125" stringRepresentation="}"/>
+ <codePoint unicode="U+007E" decimal="126" stringRepresentation="~"/>
+ <codePoint unicode="U+00AD" decimal="127" name="&lt;00AD&gt;" stringRepresentation="­"/>
+ <codePoint unicode="U+00C0" decimal="128" name="&lt;00C0&gt;" stringRepresentation="À"/>
+ <codePoint unicode="U+00C1" decimal="129" name="&lt;00C1&gt;" stringRepresentation="Á"/>
+ <codePoint unicode="U+00C3" decimal="130" name="&lt;00C3&gt;" stringRepresentation="Ã"/>
+ <codePoint unicode="U+1EA2" decimal="131" name="&lt;1EA2&gt;" stringRepresentation="Ả"/>
+ <codePoint unicode="U+1EA0" decimal="132" name="&lt;1EA0&gt;" stringRepresentation="Ạ"/>
+ <codePoint unicode="U+00C2" decimal="133" name="&lt;00C2&gt;" stringRepresentation="Â"/>
+ <codePoint unicode="U+1EA6" decimal="134" name="&lt;1EA6&gt;" stringRepresentation="Ầ"/>
+ <codePoint unicode="U+1EA4" decimal="135" name="&lt;1EA4&gt;" stringRepresentation="Ấ"/>
+ <codePoint unicode="U+1EAA" decimal="136" name="&lt;1EAA&gt;" stringRepresentation="Ẫ"/>
+ <codePoint unicode="U+1EA8" decimal="137" name="&lt;1EA8&gt;" stringRepresentation="Ẩ"/>
+ <codePoint unicode="U+1EAC" decimal="138" name="&lt;1EAC&gt;" stringRepresentation="Ậ"/>
+ <codePoint unicode="U+0102" decimal="139" name="&lt;0102&gt;" stringRepresentation="Ă"/>
+ <codePoint unicode="U+1EB0" decimal="140" name="&lt;1EB0&gt;" stringRepresentation="Ằ"/>
+ <codePoint unicode="U+1EAE" decimal="141" name="&lt;1EAE&gt;" stringRepresentation="Ắ"/>
+ <codePoint unicode="U+1EB4" decimal="142" name="&lt;1EB4&gt;" stringRepresentation="Ẵ"/>
+ <codePoint unicode="U+1EB2" decimal="143" name="&lt;1EB2&gt;" stringRepresentation="Ẳ"/>
+ <codePoint unicode="U+1EB6" decimal="144" name="&lt;1EB6&gt;" stringRepresentation="Ặ"/>
+ <codePoint unicode="U+00C8" decimal="145" name="&lt;00C8&gt;" stringRepresentation="È"/>
+ <codePoint unicode="U+00C9" decimal="146" name="&lt;00C9&gt;" stringRepresentation="É"/>
+ <codePoint unicode="U+1EBC" decimal="147" name="&lt;1EBC&gt;" stringRepresentation="Ẽ"/>
+ <codePoint unicode="U+1EBA" decimal="148" name="&lt;1EBA&gt;" stringRepresentation="Ẻ"/>
+ <codePoint unicode="U+1EB8" decimal="149" name="&lt;1EB8&gt;" stringRepresentation="Ẹ"/>
+ <codePoint unicode="U+00CA" decimal="150" name="&lt;00CA&gt;" stringRepresentation="Ê"/>
+ <codePoint unicode="U+1EC0" decimal="151" name="&lt;1EC0&gt;" stringRepresentation="Ề"/>
+ <codePoint unicode="U+1EBE" decimal="152" name="&lt;1EBE&gt;" stringRepresentation="Ế"/>
+ <codePoint unicode="U+1EC4" decimal="153" name="&lt;1EC4&gt;" stringRepresentation="Ễ"/>
+ <codePoint unicode="U+1EC2" decimal="154" name="&lt;1EC2&gt;" stringRepresentation="Ể"/>
+ <codePoint unicode="U+1EC6" decimal="155" name="&lt;1EC6&gt;" stringRepresentation="Ệ"/>
+ <codePoint unicode="U+00CC" decimal="156" name="&lt;00CC&gt;" stringRepresentation="Ì"/>
+ <codePoint unicode="U+00CD" decimal="157" name="&lt;00CD&gt;" stringRepresentation="Í"/>
+ <codePoint unicode="U+0128" decimal="158" name="&lt;0128&gt;" stringRepresentation="Ĩ"/>
+ <codePoint unicode="U+1EC8" decimal="159" name="&lt;1EC8&gt;" stringRepresentation="Ỉ"/>
+ <codePoint unicode="U+00E0" decimal="160" name="&lt;00E0&gt;" stringRepresentation="à"/>
+ <codePoint unicode="U+00E1" decimal="161" name="&lt;00E1&gt;" stringRepresentation="á"/>
+ <codePoint unicode="U+00E3" decimal="162" name="&lt;00E3&gt;" stringRepresentation="ã"/>
+ <codePoint unicode="U+1EA3" decimal="163" name="&lt;1EA3&gt;" stringRepresentation="ả"/>
+ <codePoint unicode="U+1EA1" decimal="164" name="&lt;1EA1&gt;" stringRepresentation="ạ"/>
+ <codePoint unicode="U+00E2" decimal="165" name="&lt;00E2&gt;" stringRepresentation="â"/>
+ <codePoint unicode="U+1EA7" decimal="166" name="&lt;1EA7&gt;" stringRepresentation="ầ"/>
+ <codePoint unicode="U+1EA5" decimal="167" name="&lt;1EA5&gt;" stringRepresentation="ấ"/>
+ <codePoint unicode="U+1EAB" decimal="168" name="&lt;1EAB&gt;" stringRepresentation="ẫ"/>
+ <codePoint unicode="U+1EA9" decimal="169" name="&lt;1EA9&gt;" stringRepresentation="ẩ"/>
+ <codePoint unicode="U+1EAD" decimal="170" name="&lt;1EAD&gt;" stringRepresentation="ậ"/>
+ <codePoint unicode="U+0103" decimal="171" name="&lt;0103&gt;" stringRepresentation="ă"/>
+ <codePoint unicode="U+1EB1" decimal="172" name="&lt;1EB1&gt;" stringRepresentation="ằ"/>
+ <codePoint unicode="U+1EAF" decimal="173" name="&lt;1EAF&gt;" stringRepresentation="ắ"/>
+ <codePoint unicode="U+1EB5" decimal="174" name="&lt;1EB5&gt;" stringRepresentation="ẵ"/>
+ <codePoint unicode="U+1EB3" decimal="175" name="&lt;1EB3&gt;" stringRepresentation="ẳ"/>
+ <codePoint unicode="U+1EB7" decimal="176" name="&lt;1EB7&gt;" stringRepresentation="ặ"/>
+ <codePoint unicode="U+00E8" decimal="177" name="&lt;00E8&gt;" stringRepresentation="è"/>
+ <codePoint unicode="U+00E9" decimal="178" name="&lt;00E9&gt;" stringRepresentation="é"/>
+ <codePoint unicode="U+1EBD" decimal="179" name="&lt;1EBD&gt;" stringRepresentation="ẽ"/>
+ <codePoint unicode="U+1EBB" decimal="180" name="&lt;1EBB&gt;" stringRepresentation="ẻ"/>
+ <codePoint unicode="U+1EB9" decimal="181" name="&lt;1EB9&gt;" stringRepresentation="ẹ"/>
+ <codePoint unicode="U+00EA" decimal="182" name="&lt;00EA&gt;" stringRepresentation="ê"/>
+ <codePoint unicode="U+1EC1" decimal="183" name="&lt;1EC1&gt;" stringRepresentation="ề"/>
+ <codePoint unicode="U+1EBF" decimal="184" name="&lt;1EBF&gt;" stringRepresentation="ế"/>
+ <codePoint unicode="U+1EC5" decimal="185" name="&lt;1EC5&gt;" stringRepresentation="ễ"/>
+ <codePoint unicode="U+1EC3" decimal="186" name="&lt;1EC3&gt;" stringRepresentation="ể"/>
+ <codePoint unicode="U+1EC7" decimal="187" name="&lt;1EC7&gt;" stringRepresentation="ệ"/>
+ <codePoint unicode="U+00EC" decimal="188" name="&lt;00EC&gt;" stringRepresentation="ì"/>
+ <codePoint unicode="U+00ED" decimal="189" name="&lt;00ED&gt;" stringRepresentation="í"/>
+ <codePoint unicode="U+0129" decimal="190" name="&lt;0129&gt;" stringRepresentation="ĩ"/>
+ <codePoint unicode="U+1EC9" decimal="191" name="&lt;1EC9&gt;" stringRepresentation="ỉ"/>
+ <codePoint unicode="U+1ECA" decimal="192" name="&lt;1ECA&gt;" stringRepresentation="Ị"/>
+ <codePoint unicode="U+00D2" decimal="193" name="&lt;00D2&gt;" stringRepresentation="Ò"/>
+ <codePoint unicode="U+00D3" decimal="194" name="&lt;00D3&gt;" stringRepresentation="Ó"/>
+ <codePoint unicode="U+00D5" decimal="195" name="&lt;00D5&gt;" stringRepresentation="Õ"/>
+ <codePoint unicode="U+1ECE" decimal="196" name="&lt;1ECE&gt;" stringRepresentation="Ỏ"/>
+ <codePoint unicode="U+1ECC" decimal="197" name="&lt;1ECC&gt;" stringRepresentation="Ọ"/>
+ <codePoint unicode="U+00D4" decimal="198" name="&lt;00D4&gt;" stringRepresentation="Ô"/>
+ <codePoint unicode="U+1ED2" decimal="199" name="&lt;1ED2&gt;" stringRepresentation="Ồ"/>
+ <codePoint unicode="U+1ED0" decimal="200" name="&lt;1ED0&gt;" stringRepresentation="Ố"/>
+ <codePoint unicode="U+1ED6" decimal="201" name="&lt;1ED6&gt;" stringRepresentation="Ỗ"/>
+ <codePoint unicode="U+1ED4" decimal="202" name="&lt;1ED4&gt;" stringRepresentation="Ổ"/>
+ <codePoint unicode="U+1ED8" decimal="203" name="&lt;1ED8&gt;" stringRepresentation="Ộ"/>
+ <codePoint unicode="U+01A0" decimal="204" name="&lt;01A0&gt;" stringRepresentation="Ơ"/>
+ <codePoint unicode="U+1EDC" decimal="205" name="&lt;1EDC&gt;" stringRepresentation="Ờ"/>
+ <codePoint unicode="U+1EDA" decimal="206" name="&lt;1EDA&gt;" stringRepresentation="Ớ"/>
+ <codePoint unicode="U+1EE0" decimal="207" name="&lt;1EE0&gt;" stringRepresentation="Ỡ"/>
+ <codePoint unicode="U+1EDE" decimal="208" name="&lt;1EDE&gt;" stringRepresentation="Ở"/>
+ <codePoint unicode="U+1EE2" decimal="209" name="&lt;1EE2&gt;" stringRepresentation="Ợ"/>
+ <codePoint unicode="U+00D9" decimal="210" name="&lt;00D9&gt;" stringRepresentation="Ù"/>
+ <codePoint unicode="U+00DA" decimal="211" name="&lt;00DA&gt;" stringRepresentation="Ú"/>
+ <codePoint unicode="U+0168" decimal="212" name="&lt;0168&gt;" stringRepresentation="Ũ"/>
+ <codePoint unicode="U+1EE6" decimal="213" name="&lt;1EE6&gt;" stringRepresentation="Ủ"/>
+ <codePoint unicode="U+1EE4" decimal="214" name="&lt;1EE4&gt;" stringRepresentation="Ụ"/>
+ <codePoint unicode="U+01AF" decimal="215" name="&lt;01AF&gt;" stringRepresentation="Ư"/>
+ <codePoint unicode="U+1EEA" decimal="216" name="&lt;1EEA&gt;" stringRepresentation="Ừ"/>
+ <codePoint unicode="U+1EE8" decimal="217" name="&lt;1EE8&gt;" stringRepresentation="Ứ"/>
+ <codePoint unicode="U+1EEE" decimal="218" name="&lt;1EEE&gt;" stringRepresentation="Ữ"/>
+ <codePoint unicode="U+1EEC" decimal="219" name="&lt;1EEC&gt;" stringRepresentation="Ử"/>
+ <codePoint unicode="U+1EF0" decimal="220" name="&lt;1EF0&gt;" stringRepresentation="Ự"/>
+ <codePoint unicode="U+1EF2" decimal="221" name="&lt;1EF2&gt;" stringRepresentation="Ỳ"/>
+ <codePoint unicode="U+00DD" decimal="222" name="&lt;00DD&gt;" stringRepresentation="Ý"/>
+ <codePoint unicode="U+1EF8" decimal="223" name="&lt;1EF8&gt;" stringRepresentation="Ỹ"/>
+ <codePoint unicode="U+1ECB" decimal="224" name="&lt;1ECB&gt;" stringRepresentation="ị"/>
+ <codePoint unicode="U+00F2" decimal="225" name="&lt;00F2&gt;" stringRepresentation="ò"/>
+ <codePoint unicode="U+00F3" decimal="226" name="&lt;00F3&gt;" stringRepresentation="ó"/>
+ <codePoint unicode="U+00F5" decimal="227" name="&lt;00F5&gt;" stringRepresentation="õ"/>
+ <codePoint unicode="U+1ECF" decimal="228" name="&lt;1ECF&gt;" stringRepresentation="ỏ"/>
+ <codePoint unicode="U+1ECD" decimal="229" name="&lt;1ECD&gt;" stringRepresentation="ọ"/>
+ <codePoint unicode="U+00F4" decimal="230" name="&lt;00F4&gt;" stringRepresentation="ô"/>
+ <codePoint unicode="U+1ED3" decimal="231" name="&lt;1ED3&gt;" stringRepresentation="ồ"/>
+ <codePoint unicode="U+1ED1" decimal="232" name="&lt;1ED1&gt;" stringRepresentation="ố"/>
+ <codePoint unicode="U+1ED7" decimal="233" name="&lt;1ED7&gt;" stringRepresentation="ỗ"/>
+ <codePoint unicode="U+1ED5" decimal="234" name="&lt;1ED5&gt;" stringRepresentation="ổ"/>
+ <codePoint unicode="U+1ED9" decimal="235" name="&lt;1ED9&gt;" stringRepresentation="ộ"/>
+ <codePoint unicode="U+01A1" decimal="236" name="&lt;01A1&gt;" stringRepresentation="ơ"/>
+ <codePoint unicode="U+1EDD" decimal="237" name="&lt;1EDD&gt;" stringRepresentation="ờ"/>
+ <codePoint unicode="U+1EDB" decimal="238" name="&lt;1EDB&gt;" stringRepresentation="ớ"/>
+ <codePoint unicode="U+1EE1" decimal="239" name="&lt;1EE1&gt;" stringRepresentation="ỡ"/>
+ <codePoint unicode="U+1EDF" decimal="240" name="&lt;1EDF&gt;" stringRepresentation="ở"/>
+ <codePoint unicode="U+1EE3" decimal="241" name="&lt;1EE3&gt;" stringRepresentation="ợ"/>
+ <codePoint unicode="U+00F9" decimal="242" name="&lt;00F9&gt;" stringRepresentation="ù"/>
+ <codePoint unicode="U+00FA" decimal="243" name="&lt;00FA&gt;" stringRepresentation="ú"/>
+ <codePoint unicode="U+0169" decimal="244" name="&lt;0169&gt;" stringRepresentation="ũ"/>
+ <codePoint unicode="U+1EE7" decimal="245" name="&lt;1EE7&gt;" stringRepresentation="ủ"/>
+ <codePoint unicode="U+1EE5" decimal="246" name="&lt;1EE5&gt;" stringRepresentation="ụ"/>
+ <codePoint unicode="U+01B0" decimal="247" name="&lt;01B0&gt;" stringRepresentation="ư"/>
+ <codePoint unicode="U+1EEB" decimal="248" name="&lt;1EEB&gt;" stringRepresentation="ừ"/>
+ <codePoint unicode="U+1EE9" decimal="249" name="&lt;1EE9&gt;" stringRepresentation="ứ"/>
+ <codePoint unicode="U+1EEF" decimal="250" name="&lt;1EEF&gt;" stringRepresentation="ữ"/>
+ <codePoint unicode="U+1EED" decimal="251" name="&lt;1EED&gt;" stringRepresentation="ử"/>
+ <codePoint unicode="U+1EF1" decimal="252" name="&lt;1EF1&gt;" stringRepresentation="ự"/>
+ <codePoint unicode="U+1EF3" decimal="253" name="&lt;1EF3&gt;" stringRepresentation="ỳ"/>
+ <codePoint unicode="U+00FD" decimal="254" name="&lt;00FD&gt;" stringRepresentation="ý"/>
+ <codePoint unicode="U+1EF9" decimal="255" name="&lt;1EF9&gt;" stringRepresentation="ỹ"/>
+</codePointSet>

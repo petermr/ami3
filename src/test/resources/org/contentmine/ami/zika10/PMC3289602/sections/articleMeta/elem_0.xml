@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article-meta class="article-meta">
+ <article-id pub-id-type="pmcid" class="article-id">3289602</article-id>
+ <article-id pub-id-type="publisher-id" class="article-id">PNTD-D-11-00811</article-id>
+ <article-id pub-id-type="doi" class="article-id">10.1371/journal.pntd.0001477</article-id>
+ <article-categories class="article-categories">
+  <div subj-group-type="heading" class="subj-group" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="subject">Research Article</span>
+  </div>
+  <div subj-group-type="Discipline-v2" class="subj-group" xmlns="http://www.w3.org/1999/xhtml">
+   <span class="subject">Medicine</span>
+   <div class="subj-group">
+    <span class="subject">Infectious Diseases</span>
+    <div class="subj-group">
+     <span class="subject">Neglected Tropical Diseases</span>
+    </div>
+    <div class="subj-group">
+     <span class="subject">Vectors and Hosts</span>
+    </div>
+   </div>
+  </div>
+ </article-categories>
+ <title-group class="title-group">
+  <div class="article-title" xmlns="http://www.w3.org/1999/xhtml">Genetic Characterization of Zika Virus Strains: Geographic Expansion of the Asian Lineage</div>
+  <div alt-title-type="running-head" class="alt-title" xmlns="http://www.w3.org/1999/xhtml">Zika Virus Expansion in Asia</div>
+ </title-group>
+ <div class="contrib-group" xmlns="http://www.w3.org/1999/xhtml">
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Haddow</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Andrew D.</span>
+   </name>
+   <a ref-type="aff" rid="aff1" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">1</span>
+   </a>
+   <a ref-type="corresp" rid="cor1" href="#cor1" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">*</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Schuh</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Amy J.</span>
+   </name>
+   <a ref-type="aff" rid="aff1" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">1</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Yasuda</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Chadwick Y.</span>
+   </name>
+   <a ref-type="aff" rid="aff2" href="#aff2" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">2</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Kasper</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Matthew R.</span>
+   </name>
+   <a ref-type="aff" rid="aff2" href="#aff2" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">2</span>
+   </a>
+   <a ref-type="author-notes" rid="fn1" href="#fn1" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">¤</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Heang</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Vireak</span>
+   </name>
+   <a ref-type="aff" rid="aff2" href="#aff2" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">2</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Huy</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Rekol</span>
+   </name>
+   <a ref-type="aff" rid="aff3" href="#aff3" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">3</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Guzman</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Hilda</span>
+   </name>
+   <a ref-type="aff" rid="aff1" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">1</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Tesh</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Robert B.</span>
+   </name>
+   <a ref-type="aff" rid="aff1" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">1</span>
+   </a>
+  </contrib>
+  <contrib contrib-type="author" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Weaver</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Scott C.</span>
+   </name>
+   <a ref-type="aff" rid="aff1" href="#aff1" xmlns="http://www.w3.org/1999/xhtml">
+    <span class="sup">1</span>
+   </a>
+  </contrib>
+ </div>
+ <aff id="aff1" class="aff">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">1</span>
+  <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">Institute for Human Infections and Immunity, Center for Tropical Diseases, Department of Pathology, University of Texas Medical Branch, Galveston, Texas, United States of America</div>
+ </aff>
+ <aff id="aff2" class="aff">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">2</span>
+  <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">United States Naval Medical Research Unit, No. 2, Phnom Penh, Cambodia</div>
+ </aff>
+ <aff id="aff3" class="aff">
+  <span class="label" xmlns="http://www.w3.org/1999/xhtml">3</span>
+  <div class="addr-line" xmlns="http://www.w3.org/1999/xhtml">National Dengue Control Program, Phnom Penh, Cambodia</div>
+ </aff>
+ <div class="contrib-group" xmlns="http://www.w3.org/1999/xhtml">
+  <contrib contrib-type="editor" class="contrib" xmlns="">
+   <name class="name">
+    <span class="surname" xmlns="http://www.w3.org/1999/xhtml">Olson</span>
+    <span class="given-names" xmlns="http://www.w3.org/1999/xhtml">Ken E.</span>
+   </name>
+   <span class="role" xmlns="http://www.w3.org/1999/xhtml">Editor</span>
+   <a href="#edit1" xmlns="http://www.w3.org/1999/xhtml">*</a>
+  </contrib>
+ </div>
+ <aff id="edit1" class="aff">Colorado State University, United States of America</aff>
+ <div class="author-notes" xmlns="http://www.w3.org/1999/xhtml">
+  <div id="cor1" class="corresp">* E-mail: 
+   <span class="email">adhaddow@gmail.com</span>
+  </div>
+  <fn id="fn1" fn-type="current-aff" class="fn" xmlns="">
+   <p xmlns="http://www.w3.org/1999/xhtml">
+    <span class="bold">¤:</span> Current address: United States Naval Medical Research Unit, No. 6, Lima, Peru
+   </p>
+  </fn>
+  <fn fn-type="con" class="fn" xmlns="">
+   <p xmlns="http://www.w3.org/1999/xhtml">Conceived and designed the experiments: ADH AJS. Performed the experiments: ADH AJS. Analyzed the data: ADH AJS. Contributed reagents/materials/analysis tools: AHD AJS CYY MRK VH RH HG RBT SCW. Wrote the paper: ADH AJS RBT SCW.</p>
+  </fn>
+ </div>
+ <pub-date pub-type="collection" class="pub-date">
+  <span class="month" xmlns="http://www.w3.org/1999/xhtml">2</span>
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2012</span>
+ </pub-date>
+ <pub-date pub-type="epub" class="pub-date">
+  <span class="day" xmlns="http://www.w3.org/1999/xhtml">28</span>
+  <span class="month" xmlns="http://www.w3.org/1999/xhtml">2</span>
+  <span class="year" xmlns="http://www.w3.org/1999/xhtml">2012</span>
+ </pub-date>
+ <span class="volume" xmlns="http://www.w3.org/1999/xhtml">6</span>
+ <span class="issue" xmlns="http://www.w3.org/1999/xhtml">2</span>
+ <span class="elocation-id" xmlns="http://www.w3.org/1999/xhtml">e1477</span>
+ <history class="history">
+  <date date-type="received" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">15</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">8</span>
+   <span class="year" xmlns="http://www.w3.org/1999/xhtml">2011</span>
+  </date>
+  <date date-type="accepted" class="date">
+   <span class="day" xmlns="http://www.w3.org/1999/xhtml">3</span>
+   <span class="month" xmlns="http://www.w3.org/1999/xhtml">12</span>
+   <span class="year" xmlns="http://www.w3.org/1999/xhtml">2011</span>
+  </date>
+ </history>
+ <div class="permissions" xmlns="http://www.w3.org/1999/xhtml">
+  <span class="copyright-statement">This is an open-access article, free of all copyright, and may be freely reproduced, distributed, transmitted, modified, built upon, or otherwise used by anyone for any lawful purpose. The work is made available under the Creative Commons CC0 public domain dedication.</span>
+  <span class="copyright-year">2012</span>
+ </div>
+ <div class="abstract" xmlns="http://www.w3.org/1999/xhtml">
+  <sec class="sec" xmlns="">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">Background</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">Zika virus (ZIKV) is a mosquito-borne flavivirus distributed throughout much of Africa and Asia. Infection with the virus may cause acute febrile illness that clinically resembles dengue fever. A recent study indicated the existence of three geographically distinct viral lineages; however this analysis utilized only a single viral gene. Although ZIKV has been known to circulate in both Africa and Asia since at least the 1950s, little is known about the genetic relationships between geographically distinct virus strains. Moreover, the geographic origin of the strains responsible for the epidemic that occurred on Yap Island, Federated States of Micronesia in 2007, and a 2010 pediatric case in Cambodia, has not been determined.</p>
+  </sec>
+  <sec class="sec" xmlns="">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">Methodology/Principal Findings</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">To elucidate the genetic relationships of geographically distinct ZIKV strains and the origin of the strains responsible for the 2007 outbreak on Yap Island and a 2010 Cambodian pediatric case of ZIKV infection, the nucleotide sequences of the open reading frame of five isolates from Cambodia, Malaysia, Nigeria, Uganda, and Senegal collected between 1947 and 2010 were determined. Phylogenetic analyses of these and previously published ZIKV sequences revealed the existence of two main virus lineages (African and Asian) and that the strain responsible for the Yap epidemic and the Cambodian case most likely originated in Southeast Asia. Examination of the nucleotide and amino acid sequence alignments revealed the loss of a potential glycosylation site in some of the virus strains, which may correlate with the passage history of the virus.</p>
+  </sec>
+  <sec class="sec" xmlns="">
+   <div class="title" xmlns="http://www.w3.org/1999/xhtml">Conclusions/Significance</div>
+   <p xmlns="http://www.w3.org/1999/xhtml">The basal position of the ZIKV strain isolated in Malaysia in 1966 suggests that the recent outbreak in Micronesia was initiated by a strain from Southeast Asia. Because ZIKV infection in humans produces an illness clinically similar to dengue fever and many other tropical infectious diseases, it is likely greatly misdiagnosed and underreported.</p>
+  </sec>
+ </div>
+ <div abstract-type="summary" class="abstract" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="title">Author Summary</div>
+  <p>Zika virus (ZIKV) is a mosquito-transmitted flavivirus found in both Africa and Asia. Human infection with the virus may result in a febrile illness similar to dengue fever and many other tropical infections found in these regions. Previously, little was known about the genetic relationships between ZIKV strains collected in Africa and those collected in Asia. In addition, the geographic origins of the strains responsible for the recent outbreak of human disease on Yap Island, Federated States of Micronesia, and a human case of ZIKV infection in Cambodia were unknown. Our results indicate that there are two geographically distinct lineages of ZIKV (African and Asian). The virus has circulated in Southeast Asia for at least the past 50 years, whereupon it was introduced to Yap Island resulting in an epidemic of human disease in 2007, and in 2010 was the cause of a pediatric case of ZIKV infection in Cambodia. This study also highlights the danger of ZIKV introduction into new areas and the potential for future epidemics of human disease.</p>
+ </div>
+ <div class="counts" xmlns="http://www.w3.org/1999/xhtml">
+  <span count="7" class="page-count"/>
+ </div>
+</article-meta>

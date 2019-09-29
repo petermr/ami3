@@ -1,0 +1,28 @@
+<!-- EXAMPLES:
+ http://api.crossref.org/works?filter=publisher.name:Medknow,publisher:Copernicus%20GmbH,from-pub-date:2016-02-01,until-pub-date:2016-02-01
+ http://api.crossref.org/works?filter=member:2581,member:3145,from-pub-date:2016-02-01,until-pub-date:2016-02-01
+ 
+ http://api.crossref.org/works?filter=
+   member:340,member:98,member:2581,member:1968,member:3145
+   ,member:1965,member:895,member:2549,member:2620,member:2258
+   ,member:3285
+   ,from-pub-date:2016-02-01,until-pub-date:2016-02-01
+   
+    http://api.crossref.org/works?filter=from-pub-date:2016-02-01,until-pub-date:2016-02-01,member:340,member:98,member:2581,member:1968,member:3145,member:1965,member:895,member:2549,member:2620,member:2258,member:3285
+   
+-->
+<publishers>
+	<publisher name="Public Library of Science (PLoS)" member="340"/>
+	<publisher name="Hindawi Publishing Corporation" member="98"/>
+	<publisher name="BioMed Central" member="0"/> 
+	<publisher name="Medknow" member="2581"/>
+	<publisher name="MDPI AG" member="1968"/>
+	<publisher name="Copernicus GmbH" member="3145"/>
+	<publisher name="Frontiers Media SA" member="1965"/>
+	<publisher name="Dove Medical Press Ltd." member="895"/>
+	<publisher name="De Gruyter Open" member="0"/>
+	<publisher name="PAGEPress Publications" member="2549"
+	<publisher name="Libertas Academica, Ltd." member="2620"
+	<publisher name="Pensoft Publishers" member="2258"
+	<publisher name="Ubiquity Press, Ltd." member="3285"
+</publishers>

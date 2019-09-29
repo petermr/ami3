@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="yes" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="600.0" height="800.0" style="stroke:none;stroke-width:0.0;">
+    <g id="pubstyle" pubstyle="bmj" publisher="BritishMedicalJournal" doi="10.1136">
+	<!-- NOT YET DONE -->
+		<g id="page1" number="P1">
+			<g id="header">
+			</g>
+
+			<g id="abstract">
+			</g>
+		</g>
+
+		<g id="page2" number="P2">
+			<g id="header">
+			</g>
+
+			<g id="wideImage">
+			</g>
+
+			<g id="wideTable">
+			</g>
+
+			<g id="leftColumn">
+			</g>
+			<g id="rightColumn">
+			</g>
+			<g id="footer">
+			</g>
+		</g>
+	</g>
+</svg>

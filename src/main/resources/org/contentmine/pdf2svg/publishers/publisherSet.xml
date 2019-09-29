@@ -1,0 +1,191 @@
+<!--
+
+    Copyright (C) 2012 pm286 <peter.murray.rust@googlemail.com>
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<publisherSet>
+	<publisher abbreviation="acs" name="Ameican Chemical Society" note="">
+	</publisher>
+	<publisher abbreviation="ajc" name="Australian Journal of Chemistry"
+		note="">
+		<fontFamilyName>Frutiger</fontFamilyName>
+		<fontFamilyName>Helvetica</fontFamilyName>
+		<fontFamilyName>MSAM8</fontFamilyName>
+		<fontFamilyName>MT</fontFamilyName>
+		<fontFamilyName>MTEX</fontFamilyName>
+		<fontFamilyName>MTGU</fontFamilyName>
+		<fontFamilyName>MTMI</fontFamilyName>
+		<fontFamilyName>MTSYB</fontFamilyName>
+		<fontFamilyName>MTSYN</fontFamilyName>
+		<fontFamilyName>MathematicalPi-Four</fontFamilyName>
+		<fontFamilyName>MathematicalPi-One</fontFamilyName>
+		<fontFamilyName>MathematicalPi-Three</fontFamilyName>
+		<fontFamilyName>Optima</fontFamilyName>
+		<fontFamilyName>Symbol</fontFamilyName>
+		<fontFamilyName>TimesNewRoman</fontFamilyName>
+		<fontFamilyName>Wingdings</fontFamilyName>
+		<fontFamilyName>ZapfDingbats</fontFamilyName>
+	</publisher>
+	<publisher abbreviation="apa" name="American Psychological Association" note="">
+		<fontFamilyName>Times-Roman</fontFamilyName>
+		<fontFamilyName>TimesItalic</fontFamilyName>
+		<fontFamilyName>Universal-GreekwithMathPi</fontFamilyName>
+		<fontFamilyName>Universal-NewswithCommPi</fontFamilyName>
+	</publisher>
+	<publisher abbreviation="bmc" name="BioMedCentral" note="">
+		<fontFamilyName>AdvOT07517017</fontFamilyName>
+		<fontFamilyName>AdvOT07517017+03</fontFamilyName>
+		<fontFamilyName>AdvOT07517017+20</fontFamilyName>
+		<fontFamilyName>AdvOT0d9ab1dbI</fontFamilyName>
+		<fontFamilyName>AdvOT3b30f6dbB</fontFamilyName>
+		<fontFamilyName>AdvOT46dcae81</fontFamilyName>
+		<fontFamilyName>AdvOT46dcae81+20</fontFamilyName>
+		<fontFamilyName>AdvOT56309c18I</fontFamilyName>
+		<fontFamilyName>AdvOT65f8a23bI</fontFamilyName>
+		<fontFamilyName>AdvOTa9103878</fontFamilyName>
+		<fontFamilyName>AdvOTa9103878+03</fontFamilyName>
+		<fontFamilyName>AdvOTa9103878+20</fontFamilyName>
+		<fontFamilyName>AdvOTce3d9a73</fontFamilyName>
+		<fontFamilyName>AdvOTce3d9a73+03</fontFamilyName>
+		<fontFamilyName>AdvOTce3d9a73+20</fontFamilyName>
+		<fontFamilyName>AdvOTf0bf83d5I</fontFamilyName>
+		<fontFamilyName>AdvTT3f84ef53</fontFamilyName>
+		<fontFamilyName>FrutigerLTStd-Roman</fontFamilyName>
+		<fontFamilyName>FrutigerLTStdBold</fontFamilyName>
+		<fontFamilyName>MT</fontFamilyName>
+	</publisher>
+	<publisher abbreviation="bmj" name="British Medical Journal"
+		note="">
+		<fontFamilyName>AdvOT30a32c65</fontFamilyName>
+		<fontFamilyName>AdvOT30a32c65+20</fontFamilyName>
+		<fontFamilyName>AdvOT7b6c0d50B</fontFamilyName>
+		<fontFamilyName>AdvOT82c4f4c4</fontFamilyName>
+		<fontFamilyName>AdvOT82c4f4c4+20</fontFamilyName>
+		<fontFamilyName>AdvOT8608a8d1+22</fontFamilyName>
+		<fontFamilyName>AdvOT8608a8d1+25</fontFamilyName>
+		<fontFamilyName>AdvOT9bd2e232B</fontFamilyName>
+		<fontFamilyName>AdvOTeeb42827I</fontFamilyName>
+		<fontFamilyName>AdvOTef4c711aI</fontFamilyName>
+		<fontFamilyName>AdvTT00bc0be2</fontFamilyName>
+		<fontFamilyName>AdvTT00bc0be2+20</fontFamilyName>
+		<fontFamilyName>AdvTT00bc0be2+fb</fontFamilyName>
+		<fontFamilyName>AdvTT03eea2a7B</fontFamilyName>
+		<fontFamilyName>AdvTT03eea2a7B+20</fontFamilyName>
+		<fontFamilyName>AdvTT03eea2a7B+fb</fontFamilyName>
+		<fontFamilyName>AdvTT05cc2067+03</fontFamilyName>
+		<fontFamilyName>AdvTTd9d2734bI</fontFamilyName>
+		<fontFamilyName>Helvetica</fontFamilyName>
+		<fontFamilyName>Symbol</fontFamilyName>
+	</publisher>
+	<publisher abbreviation="els" name="Elsevier" note="">
+		<fontFamilyName>AdvOT404f8e91BI</fontFamilyName>
+		<fontFamilyName>AdvOT863180fb</fontFamilyName>
+		<fontFamilyName>AdvOT863180fb+20</fontFamilyName>
+		<fontFamilyName>AdvOT863180fb+fb</fontFamilyName>
+		<fontFamilyName>AdvOTb83ee1ddB</fontFamilyName>
+		<fontFamilyName>AdvOTb92eb7dfI</fontFamilyName>
+		<fontFamilyName>AdvOTc4d0b532</fontFamilyName>
+		<fontFamilyName>AdvP4C4E51</fontFamilyName>
+		<fontFamilyName>AdvP4C4E59</fontFamilyName>
+		<fontFamilyName>AdvP4C4E74</fontFamilyName>
+		<fontFamilyName>AdvPS3F4C13</fontFamilyName>
+		<fontFamilyName>AdvPS44A44B</fontFamilyName>
+		<fontFamilyName>AdvPS4721B4</fontFamilyName>
+		<fontFamilyName>AdvPS4BD310</fontFamilyName>
+		<fontFamilyName>AdvPSA35D</fontFamilyName>
+		<fontFamilyName>AdvPSSym</fontFamilyName>
+		<fontFamilyName>Arial</fontFamilyName>
+		<fontFamilyName>MT</fontFamilyName>
+	</publisher>
+	<publisher abbreviation="npg" name="Nature Publishing Group"
+		note="">
+	</publisher>
+	<publisher abbreviation="pccp" name="PCCP" note="">
+		<fontFamilyName>AdvEls-Ent1</fontFamilyName>
+		<fontFamilyName>AdvEls-ent2</fontFamilyName>
+		<fontFamilyName>AdvEls-ent7</fontFamilyName>
+		<fontFamilyName>AdvMyriad_R</fontFamilyName>
+		<fontFamilyName>AdvOT07517017</fontFamilyName>
+		<fontFamilyName>AdvOTce3d9a73</fontFamilyName>
+		<fontFamilyName>AdvP4C4E46</fontFamilyName>
+		<fontFamilyName>AdvP4C4E74</fontFamilyName>
+		<fontFamilyName>AdvPi1</fontFamilyName>
+		<fontFamilyName>AdvPi2</fontFamilyName>
+		<fontFamilyName>AdvPompei_Reg</fontFamilyName>
+		<fontFamilyName>AdvT004</fontFamilyName>
+		<fontFamilyName>AdvTimes</fontFamilyName>
+		<fontFamilyName>AdvTimesb</fontFamilyName>
+		<fontFamilyName>AdvTimesbi</fontFamilyName>
+		<fontFamilyName>AdvTimesi</fontFamilyName>
+		<fontFamilyName>Myriad-Roman</fontFamilyName>
+		<fontFamilyName>MyriadItalic</fontFamilyName>
+		<fontFamilyName>MyriadLight</fontFamilyName>
+		<fontFamilyName>MyriadPro-Light</fontFamilyName>
+		<fontFamilyName>MyriademiBold</fontFamilyName>
+		<fontFamilyName>Times-Roman</fontFamilyName>
+	</publisher>
+	<publisher abbreviation="rsc" name="Royal Society of Chemistry"
+		note="">
+		<fontFamilyName>MT</fontFamilyName>
+		<fontFamilyName>MathematicalPi-Four</fontFamilyName>
+		<fontFamilyName>MathematicalPi-One</fontFamilyName>
+		<fontFamilyName>Myriad</fontFamilyName>
+		<fontFamilyName>MyriadMM400RG700SE</fontFamilyName>
+		<fontFamilyName>MyriadMM565SB700SE</fontFamilyName>
+		<fontFamilyName>Symbol</fontFamilyName>
+		<fontFamilyName>Times-Roman</fontFamilyName>
+		<fontFamilyName>TimesGreekSF</fontFamilyName>
+		<fontFamilyName>TimesGreekSFInclined</fontFamilyName>
+		<fontFamilyName>TimesNRExpertMTBold</fontFamilyName>
+		<fontFamilyName>TimesNRMTBold</fontFamilyName>
+		<fontFamilyName>TimesNRMTBoldtalic</fontFamilyName>
+		<fontFamilyName>TimesNRMTItalic</fontFamilyName>
+		<fontFamilyName>TimesNRMTSemiBold</fontFamilyName>
+		<fontFamilyName>TimesNRMTSemiBoldtalic</fontFamilyName>
+		<fontFamilyName>UniversBold</fontFamilyName>
+	</publisher>
+	<publisher abbreviation="frpsyc" name="Frontiers in Psychology" note="">
+		<fontFamilyName>MTSYN</fontFamilyName>
+		<fontFamilyName>Minion-Regular</fontFamilyName>
+		<fontFamilyName>MinionBold</fontFamilyName>
+		<fontFamilyName>MinionBoldtalic</fontFamilyName>
+		<fontFamilyName>MinionItalic</fontFamilyName>
+		<fontFamilyName>RMTMI</fontFamilyName>
+		<fontFamilyName>Univers</fontFamilyName>
+		<fontFamilyName>Univers-Condensedold</fontFamilyName>
+		<fontFamilyName>Univers-Condensedoldblique</fontFamilyName>
+		<fontFamilyName>Univers-Light</fontFamilyName>
+		<fontFamilyName>Univers-Lightblique</fontFamilyName>
+		<fontFamilyName>UniversBlack</fontFamilyName>
+		<fontFamilyName>UniversBold</fontFamilyName>
+		<fontFamilyName>UniversBoldblique</fontFamilyName>
+	</publisher>
+	<publisher abbreviation="socdir" name="Social Sciences Directory" note="">
+		<fontFamilyName>Arial</fontFamilyName>
+		<fontFamilyName>Calibri</fontFamilyName>
+		<fontFamilyName>Calibri,old</fontFamilyName>
+		<fontFamilyName>Calibri,talic</fontFamilyName>
+		<fontFamilyName>Courier</fontFamilyName>
+	</publisher>
+	<publisher abbreviation="springer" name="Springer Verlag"
+		note="">
+	</publisher>
+	<publisher abbreviation="wiley" name="Wiley Blackwell" note="">
+	</publisher>
+	<publisher abbreviation="word" name="Word" note="">
+		</publisher>
+	
+</publisherSet>
+		

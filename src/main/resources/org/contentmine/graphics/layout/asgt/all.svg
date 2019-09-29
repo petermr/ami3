@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200.0"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     height="800.0">
+     <title>components for capturing SVG pages</title>
+
+	 <defs>
+	 <!-- general -->
+  	     <g id="all.mediabox">
+         <rect id="all.mediabox.rect" class="title centered repeatableY" x="0" y="0" width="600" height="800"
+	       style="fill:none;stroke:blue;stroke-width:1.0;">
+	     </rect>
+	     <title>mediabox</title>
+	   </g>
+	 
+  	     <g id="first.title">
+         <rect id="first.title.rect" class="title centered repeatableY" x="50" y="50" width="400" height="18"
+	       style="fill:none;stroke:blue;stroke-width:3.0;">
+	     </rect>
+	     <text id="page.title.text" x="50" y="68" style="fill:#000000;font-size:18.0px;font-weight:bold;">Title for paper (may wrap)</text>
+	     <title>document title</title>
+	   </g>
+	   	   
+	   <g id="first.authors">
+	     <rect id="first.authors.box" class="authors centered repeatableY" x="100" yoffset="20" y="150" width="300" height="50"
+	     style="fill:none;stroke:purple;stroke-width:3.0;"/>
+	     <text id="first.authors.text" fontName="Helvetica" style="fill:#000000;font-family:Helvetica;font-name:StoneSans;font-size:12.0px;font-weight:normal;" class="title.text superscriptable">authors</text>
+	     <title>list of authors</title>
+	     </g>
+	   
+	   <!-- middle specific -->
+	   <g id="middle.body">
+	   <rect id="middle.body.box" class="fixed" x="14" y="42" width="497" height="661"
+         style="fill:green;opacity:0.3;stroke-width:1.0;stroke:blue;">
+       </rect>
+	     </g>
+	     
+	      <g id="middle.leftDoubleColumn" class="column expandable.ymax expandable.ymin">
+			 <title>middle.leftDoubleColumn</title>
+			<rect x="14" y="55" width="241" height="590"
+			 style="fill:purple;opacity:0.3;stroke-width:0.5;stroke:black;stroke-dasharray:5 2 5 2;">
+			 </rect>
+	      </g>
+	      
+	      <!-- last specific -->
+	 </defs>
+<!-- end of defs -->	 
+	 <g id="page.all">
+	    <g class="page.first" id="page.first" transform="translate(0,0)scale(0.5,0.5)">
+		  <use xlink:href="#all.mediabox"/>
+		  <use xlink:href="#first.title"/>
+		  <use xlink:href="#first.authors"/>
+		</g>
+	    <g class="page.middle" id="page.middle" transform="translate(300,0)scale(0.5,0.5)">
+		  <use xlink:href="#all.mediabox"/>
+		  <use xlink:href="#middle.body"/>
+		</g>
+	    <g class="page.middle" id="page.middle" transform="translate(600,0)scale(0.5,0.5)">
+		  <use xlink:href="#all.mediabox"/>
+		  <use xlink:href="#middle.body"/>
+		</g>
+	</g>
+	<!--
+    <g class="middle" id="middle">
+      <g id="middle.body" class="body">
+		 <title>middle.body</title>
+	     <use xlink:href="#middle.body.rect"/>
+		 
+	      <g id="middle.leftDoubleColumn" class="column expandable.ymax expandable.ymin">
+			 <title>middle.leftDoubleColumn</title>
+			<rect x="14" y="55" width="241" height="590"
+			 style="fill:purple;opacity:0.3;stroke-width:0.5;stroke:black;stroke-dasharray:5 2 5 2;">
+			 </rect>
+	      </g>
+	      
+	      <g id="middle.rightDoubleColumn" class="column expandable.ymax expandable.ymin">
+			<title>middle.rightDoubleColumn</title>
+			<rect x="268.0" y="55" width="241" height="590" 
+			  style="fill:purple;opacity:0.3;stroke-width:2.0;stroke:black;stroke-dasharray:5 5;">
+			 </rect>
+		  </g>
+		  <g id="middle.wideFloat" class="table expandable.ymax expandable.ymin">
+			 <title>middle.wideFloat</title>
+			<rect  x="14" y="200" width="497" height="100"
+			 style="fill:orange;opacity:0.3;">
+	        </rect>
+	      </g>
+		  <g id="middle.leftColumnFloat" class="table">
+			 <title>middle.leftColumnFloat</title>
+			<rect class="expandable.ymax expandable.ymin" x="14" y="350" width="241" height="160"
+			 style="fill:orange;opacity:0.3;stroke-width:0.5;stroke:black;">
+			 </rect>
+			 <g id="middle.leftColumnFloat.caption" class="caption">
+			   <title>middle.leftColumnFloat.caption</title>
+			  <rect class="expandable.ymax expandable.ymin" x="14" y="450" width="241" height="50"
+			     style="fill:red;opacity:0.3;stroke-width:1;stroke:blue;">
+			  </rect>
+			 </g>
+	      </g>
+		  <g id="middle.rightColumnFloat" class="table">
+			 <title>middle.rightColumnFloat</title>
+			<rect class="expandable.ymax expandable.ymin" x="268" y="400" width="241" height="160"
+			 style="fill:orange;opacity:0.3;">
+			 </rect>
+	      </g>
+	    </g>
+      </g>
+     </g>      
+	 -->
+</svg>

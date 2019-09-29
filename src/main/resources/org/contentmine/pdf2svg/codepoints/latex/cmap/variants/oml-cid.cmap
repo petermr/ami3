@@ -1,0 +1,153 @@
+%!PS-Adobe-3.0 Resource-CMap
+%%DocumentNeededResources: ProcSet (CIDInit)
+%%IncludeResource: ProcSet (CIDInit)
+%%BeginResource: CMap (TeX-MI-H)
+%%Title: (TeX-MI-H TeX MI H)
+%%Version: 1.000
+%%EndComments
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CIDSystemInfo
+<< /Registry (TeX)
+/Ordering (MI)
+/Supplement 5
+>> def
+/CMapName /TeX-MI-H def
+/CMapVersion 1.000 def
+/CMapType 2 def
+1 begincodespacerange
+<00> <FF>
+endcodespacerange
+4 beginbfrange
+<C5> <D6> <00C5>
+<D8> <DE> <00D8>
+<E0> <F6> <00E0>
+<F8> <FE> <00F8>
+endbfrange
+37 beginbfchar
+<28> <21BC>
+<29> <21BD>
+<2A> <21C0>
+<2B> <21C1>
+<2C> <02D3>
+<2D> <02D2>
+<2E> <25C1>
+<2F> <25B7>
+<30> <0030>
+<31> <0031>
+<32> <0032>
+<33> <0033>
+<34> <0034>
+<35> <0035>
+<36> <0036>
+<37> <0037>
+<38> <0038>
+<39> <0039>
+<3A> <002E>
+<3B> <002C>
+<3C> <003C>
+<3D> <002F>
+<3E> <003E>
+<3F> <22C6>
+<40> <2202>
+<5B> <266D>
+<5C> <266E>
+<5D> <266F>
+<5E> <2323>
+<5F> <2322>
+<60> <2113>
+<68> <210E>
+<7D> <2118>
+<7E> <20D7>
+<7F> <2040>
+<A0> <0020>
+<C4> <2040>
+endbfchar
+2 begincidrange
+<41> <5A> 119860
+<61> <7A> 119886
+endcidrange
+75 begincidchar
+<00> 120548
+<01> 120549
+<02> 120553
+<03> 120556
+<04> 120558
+<05> 120560
+<06> 120563
+<07> 120565
+<08> 120566
+<09> 120568
+<0A> 120569
+<0B> 120571
+<0C> 120572
+<0D> 120573
+<0E> 120574
+<0F> 120598
+<10> 120575
+<11> 120576
+<12> 120577
+<13> 120578
+<14> 120579
+<15> 120580
+<16> 120581
+<17> 120582
+<18> 120583
+<19> 120585
+<1A> 120586
+<1B> 120588
+<1C> 120589
+<1D> 120590
+<1E> 120598
+<1F> 120592
+<20> 120593
+<21> 120594
+<22> 120574
+<23> 120596
+<24> 120600
+<25> 120599
+<26> 120587
+<27> 120591
+<7C> 120485
+<80> 120593
+<A1> 120548
+<A2> 120549
+<A3> 120553
+<A4> 120556
+<A5> 120558
+<A6> 120560
+<A7> 120563
+<A8> 120565
+<A9> 120566
+<AA> 120568
+<AD> 120569
+<AE> 120571
+<AF> 120572
+<B0> 120573
+<B1> 120574
+<B2> 120598
+<B3> 120575
+<B4> 120576
+<B5> 120577
+<B6> 120578
+<B7> 120579
+<B8> 120580
+<B9> 120581
+<BA> 120582
+<BB> 120583
+<BC> 120585
+<BD> 120586
+<BE> 120588
+<BF> 120589
+<C0> 120590
+<C1> 120598
+<C2> 120592
+<C3> 120593
+endcidchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+%%EndResource
+%%EOF

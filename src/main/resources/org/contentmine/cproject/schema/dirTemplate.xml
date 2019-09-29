@@ -1,0 +1,8 @@
+<dir name="dir">
+	<dir regex="[a-z]+" schema="dirTemplate.xml" count="0,9999">
+	    <p>general directory</p>
+	</dir>
+  	<file name="[a-z]*\.[a-z]+" count="0,9999">
+  	    <p>general file</p>
+	</file>
+</dir>

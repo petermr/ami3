@@ -1197,7 +1197,7 @@ public class CTree extends CContainer implements Comparable<CTree> {
 		return new File(getDirectory(), RAW_IMAGES_DIR);
 	}
 
-	File getSectionsDirectory() {
+	public File getSectionsDirectory() {
 		File directory = getDirectory();
 		return new File(directory, SECTIONS_DIR);
 	}
@@ -2073,7 +2073,9 @@ public class CTree extends CContainer implements Comparable<CTree> {
 
 	public void setHtmlTagger(HtmlTagger htmlTagger) {
 		this.htmlTagger = htmlTagger;
-		htmlTagger.setCTree(this);
+		if (htmlTagger != null) {
+			htmlTagger.setCTree(this);
+		}
 	}
 
 	public List<String> extractWords() {

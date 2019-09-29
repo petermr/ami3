@@ -1,0 +1,250 @@
+<argList name="cmineCommand" version="0.0.1">
+
+
+  <arg name="createCTrees" 
+    long="--createCTreesFrom"
+    args="Directoryname "
+    class="java.lang.String"
+    countRange="{1,1}"
+    parseMethod="parseCreateCTreesFrom"
+    finalMethod="finalCreateCTreesFrom"
+    >
+    <help>
+      <p>Creates CTrees from files in a directory. foo.pdf is converted into foo/fulltext.pdf.
+      Duplicate CTres are given an arbitrary number to disambiguate. Punctuation is converted to "_"</p>
+    </help>
+  </arg>  
+        
+  <arg name="csv" 
+    long="--csv"
+    args="Filename [optional columns to extract]"
+    class="java.lang.String"
+    countRange="{0,*}"
+    parseMethod="parseCSV"
+    finalMethod="finalCSV"
+    >
+    <help>
+      <p>extracts CSV table. First argument is filename. subsequent arguments are columns to extract. If none, default 
+      column headings are used. 
+      if no args, help is given. If no columns, then uses all.</p>
+    </help>
+  </arg>  
+        
+  <arg name="duplicates" 
+    long="--duplicates"
+    args="directoryName"
+    class="java.io.File"
+    countRange="{1,1}"
+    parseMethod="parseDuplicates"
+    finalMethod="finalDuplicates"
+    >
+    <help>
+      <p>Creates a cProject containing duplicate CTrees during merge</p>
+    </help>
+  </arg>  
+        
+  <arg name="extractPrefixes" 
+    long="--extractPrefixes"
+    args="prefixFile"
+    class="java.io.File"
+    countRange="{1,1}"
+    parseMethod="parseExtractPrefixes"
+    finalMethod="finalExtractPrefixes"
+    >
+    <help>
+      <p>extracts DOI prefixes and lists all corresponding file to prefixFile (XML)</p>
+    </help>
+  </arg>  
+        
+  <arg name="extractByPrefix" 
+    long="--extractByPrefix"
+    args="prefix [prefix, prefix]"
+    class="java.lang.String"
+    countRange="{0,*}"
+    parseMethod="parseExtractByPrefix"
+    finalMethod="finalExtractByPrefix"
+    >
+    <help>
+    <p>args are a list of prefixes; if no prefixes, then reads --input as list of prefixes</p>
+      <p>
+      Extracts CTrees with given prefix to subdirectories of outputDir, e.g. 
+      outputDir
+        10.1234
+          10.1234_foo
+          10.1234_bar
+        10.4567
+          10.4567_grot
+          </p>
+    </help>
+  </arg>  
+        
+  <arg name="inUrls" 
+    long="--inUrls"
+    args="Filename [markEmpty]"
+    class="java.lang.String"
+    countRange="{1,2}"
+    parseMethod="parseInUrls"
+    finalMethod="finalInUrls"
+    >
+    <help>
+      <p>Only used with quickscrape results, and normally after a broken download. It is normally the URLS used to originally create the 
+      project, so that differences in the CTreeList and the URLs represent entries which have been attempted and   </p>
+    </help>
+  </arg>  
+        
+  <arg name="outUrls" 
+    long="--outUrls"
+    args="Filename [shuffle|noshuffle]"
+    class="java.lang.String"
+    countRange="{1,2}"
+    parseMethod="parseOutUrls"
+    finalMethod="finalOutUrls"
+    >
+    <help>
+      <p>extractsURLs from project to given file. The first argument is the file in CProject to extract
+      to; the second (optional) is the word "shuffle", resulting in shuffled URLs.
+      If "inUrls" is given, this </p>
+    </help>
+  </arg>  
+
+  <arg name="mergeProjects" 
+    long="--mergeProjects"
+    args="projectName"
+    class="java.lang.String"
+    countRange="{1,1}"
+    parseMethod="parseMergeProjects"
+    finalMethod="finalMergeProjects"
+    >
+    <help>
+      <p>merges projects. The cTrees are aggregated; if CTrees have identical names then 
+      the contents are merged into a single resultant cTree. If there are common files then the 
+      original cTree is kept.</p>
+    </help>
+  </arg>  
+
+  <arg name="metadataType" 
+    long="--metadataType"
+    args="CROSSREF | QUICKSCRAPE | HTML"
+    class="java.lang.String"
+    countRange="{1,1}"
+    parseMethod="parseMetadataType"
+    >
+    <help>
+      <p>set type of metadata. Might also be inferred from CProject later</p>
+    </help>
+  </arg>  
+        
+  <arg name="quickscrapeNo200"
+    long="--quickscrapeNo200"
+    args="file"
+    class="java.io.File"
+    countRange="{1,1}"
+    parseMethod="parseQuickscrapeNo200"
+    >
+    <help>
+      <p>identifies all records in log which didn't yield Http 200. Argument is file to write results.</p>
+    </help>
+  </arg>  
+
+  <arg name="quickscrapeCapture"
+    long="--quickscrapeCapture"
+    args="file [lo, hi]"
+    class="java.lang.String"
+    countRange="{3,3}"
+    parseMethod="parseQuickscrapeCapture"
+    >
+    <help>
+      <p>Extracts all records of captures to a file. the selection is given by lo and hi numbers of captures, so
+      0,0 would return those with no captures, and 5,* would be those over 5</p>
+    </help>
+  </arg>  
+        
+        
+  <arg name="quickscrapeLog"
+    long="--quickscrapeLog"
+    args="File"
+    class="java.lang.String"
+    countRange="{0,1}"
+    parseMethod="parseQuickscrapeLog"
+    finalMethod="finalQuickscrapeLog"
+    >
+    <help>
+      <p>rename CTree directories. noHttp removes DOI-based prefix ("http_doi_dx_"). 
+      If the target directory exists default is to copy all files in "from" and
+      overwrite.</p>
+    </help>
+  </arg>  
+        
+  <arg name="removeUrlsWithPrefixes"
+    long="--removeUrlsWithPrefixes"
+    args="File"
+    class="java.io.File"
+    countRange="{1,1}"
+    parseMethod="parseRemoveUrlsWithPrefixes"
+    finalMethod="finalRemoveUrlsWithPrefixes"
+    >
+    <help>
+      <p>Remove all URLs with DOI prefixes in the file. InputUrls are in --inUrls, OutputUrls in --ourUrls</p>
+    </help>
+  </arg>  
+        
+  <arg name="renameCTree"
+    long="--renameCTree"
+    args="[noHttp]"
+    class="java.lang.String"
+    pattern="(noHttp)"
+    countRange="{1,*}"
+    parseMethod="parseRenameCTree"
+    runMethod="runRenameCTree"
+    >
+    <help>
+      <p>rename CTree directories. noHttp removes DOI-based prefix ("http_doi_dx_"). 
+      If the target directory exists default is to copy all files in "from" and
+      overwrite.</p>
+    </help>
+  </arg>  
+        
+  <arg name="deleteFile"
+    long="--deleteFile"
+    args="file1 [file2...]"
+    class="java.lang.String"
+    countRange="{1,*}"
+    parseMethod="parseDeleteFile"
+    runMethod="runDeleteFile"
+    >
+    <help>
+      <p>delete files in CTree directories, i.i. [ctree]/file1 ... [ctree]/filen. If file
+      does not exist no-op and no error. </p>
+    </help>
+  </arg>  
+        
+  <arg name="renameFile"
+    long="--renameFile"
+    args="oldFile newFile"
+    class="java.lang.String"
+    countRange="{2,2}"
+    parseMethod="parseRenameFile"
+    runMethod="runRenameFile"
+    >
+    <help>
+      <p>rename files in CTree directories. directory/oldFile to directory/newFile. 
+      If newFile exists Java will probably throw an error.
+      overwrite.</p>
+    </help>
+  </arg>  
+        
+  <arg name="renamePDF"
+    long="--renamePDF"
+    args=""
+    class="java.lang.String"
+    countRange="{0,0}"
+    parseMethod="parseRenamePDF"
+    runMethod="runRenamePDF"
+    >
+    <help>
+      <p>Checks *.pdf content. If discovered to be HTML (common for some quickscrape targets), renames the file</p>
+    </help>
+  </arg>  
+        
+        
+</argList>

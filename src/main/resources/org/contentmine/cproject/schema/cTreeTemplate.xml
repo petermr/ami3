@@ -1,0 +1,79 @@
+<cTree>
+	<file name="manifest.xml" count="0,1">
+	  <p>Manifest listing all files in the tree, and other controlled files in this directory. 
+	  Follows structure of this file. Not currently used</p>
+	</file>
+	<file name="eupmc_result.json" count="0,1">
+	    <p>Metadata from getpapers/eupmc. </p>
+	    <input program="getpapers">EUPMC</input>
+	</file>
+	<file name="fulltext.html" count="0,1">
+	    <p>Raw HTML from publisher site. May not be well-formed or valid HTML5.</p>
+	    <input program="getpapers">PUBLISHER</input>
+	</file>
+	<file name="fulltext.pdf.html" count="0,1">
+	    <input program="pdf2html">fulltext.pdf</input>
+	    <p>converted from PDF</p>
+	</file>
+	<file name="fulltext.pdf" count="0,1">
+	    <p>Raw PDF from publisher site. </p>
+	    <input program="getpapers">PUBLISHER</input>
+	</file>
+	<file name="fulltext.pdf.txt" count="0,1">
+	    <p>Text file created from fulltext.pdf with a converter. </p>
+	    <input program="pdf2txt">fulltext.pdf</input>
+	</file>
+	<file name="fulltext.txt" count="0,1">
+	    <p>Raw TXT from publisher site. </p>
+	    <input program="unknown">PUBLISHER</input>
+	</file>
+	<file name="fulltext.xml" count="0,1">
+	    <p>Raw XML from publisher site. Probably well-formed but not necessarily schema-compliant.</p>
+	    <input program="getpapers">PUBLISHER</input>
+	</file>
+	<file name="results.json" count="0,1">
+	    <p>Metadata and manifest output by quickscrape.</p>
+	    <input program="getpapers">EPMC</input>
+	</file>
+	<file name="semantic.html" count="0,1">
+	    <p>Converted from various inputs</p>
+	    <input program="some_semantifier"></input>
+	</file>
+	<file name="scholarly.html" count="0,1">
+	    <p>Scholarly HTML, normally created by transforming a fulltext.* input. Legacy, should be replaced</p>
+	</file>
+	<file regex="(gene|search|species|word)\.[a-z]+\.(snippets|count|documents).xml" count="0,99999">
+	    <p> summary of "results/", possibly shouldn't be here but in results</p>
+	    <input program="???">???</input>
+	</file>
+	<dir name="svg" schema="svgTemplate.xml">
+	    <p>Converted by PDF2SVG2</p>
+	    <input program="pdf2svg2">fulltext.pdf</input>
+	</dir>
+	<dir name="images" schema="imagesTemplate.xml" count="0,1">
+	    <p>Images or similar graphics downloaded from publisher site. There may be many images for one CTree, one directory per downloaded image.
+	     Numbering and naming may be ad hoc until we work it out.</p>
+	</dir>
+	<dir name="results" schema="resultsTemplate.xml">
+	    <p>Output from ami plugins. Each plugin generates a new child of "results/", so "ami-word" will create a subdirectory "word".
+	    Species generates "species/", gene creates "gene/"; 
+	    Most plugins have options and these create sub-subdirectories. Not sure if this is a fixed format yet.</p>
+	    <!-- 
+	      <file name="results.xml" count="0,1">
+	      	<p>The results. The format will depend on the plugin, but a commone example is entity in context for each fact.</p>
+     	  </file>
+	      <file name="results.html" count="0,1">
+	      	 <p>Html transformation of XML, normally for easier viewing</p>
+	      </file>
+	    -->
+	</dir>
+	<dir name="suppData">
+	  <p>Supplementary data from quickscrape or other scrapers, downloaders. One directory per data package. Formats will be highly
+	  variable, but here are some below.</p>
+	  <dir regex="\.*">
+	    <file name="data.csv" count="0,1"/>
+	    <file name="data.txt" count="0,1"/>
+	    <file name="data.xml" count="0,1"/>
+	  </dir>
+	</dir>
+</cTree>

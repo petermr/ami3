@@ -1,0 +1,74 @@
+<!--
+    Gatherered from various observations
+
+    Copyright (C) 2012 pm286 <peter.murray.rust@googlemail.com>
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<codePointSet encoding="GreekByName" id="greekByName1" resource="org/contentmine/pdf2svg/codepoints/defacto">
+
+<!-- same as greek but with 1 added. Might be for italics?? -->
+
+    <codePoint unicode="U+0391" name="Alpha1"   unicodeName="GREEK CAPITAL LETTER ALPHA"/>
+    <codePoint unicode="U+0392" name="Beta1"    unicodeName="GREEK CAPITAL LETTER BETA"/>
+    <codePoint unicode="U+0393" name="Gamma1"   unicodeName="GREEK CAPITAL LETTER GAMMA"/>
+    <codePoint unicode="U+0394" name="Delta1"   unicodeName="GREEK CAPITAL LETTER DELTA"/>
+    <codePoint unicode="U+0395" name="Epsilon1" unicodeName="GREEK CAPITAL LETTER EPSILON"/>
+    <codePoint unicode="U+0396" name="Zeta1"    unicodeName="GREEK CAPITAL LETTER ZETA"/>
+    <codePoint unicode="U+0397" name="Eta1"     unicodeName="GREEK CAPITAL LETTER ETA"/>
+    <codePoint unicode="U+0398" name="Theta1"   unicodeName="GREEK CAPITAL LETTER THETA"/>
+    <codePoint unicode="U+0399" name="Iota1"    unicodeName="GREEK CAPITAL LETTER IOTA"/>
+    <codePoint unicode="U+039A" name="Kappa1"   unicodeName="GREEK CAPITAL LETTER KAPPA"/>
+    <codePoint unicode="U+039B" name="Lambda1"  unicodeName="GREEK CAPITAL LETTER LAMBDA"/>
+    <codePoint unicode="U+039C" name="Mu1"      unicodeName="GREEK CAPITAL LETTER MU"/>
+    <codePoint unicode="U+039D" name="Nu1"      unicodeName="GREEK CAPITAL LETTER NU"/>
+    <codePoint unicode="U+039E" name="Xi1"      unicodeName="GREEK CAPITAL LETTER XI"/>
+    <codePoint unicode="U+039F" name="Omicron1" unicodeName="GREEK CAPITAL LETTER OMICRON"/>
+    <codePoint unicode="U+03A0" name="Pi1"      unicodeName="GREEK CAPITAL LETTER PI"/>
+    <codePoint unicode="U+03A1" name="Rho1"     unicodeName="GREEK CAPITAL LETTER RHO"/>
+    <codePoint unicode="U+03A3" name="Sigma1"   unicodeName="GREEK CAPITAL LETTER SIGMA"/>
+    <codePoint unicode="U+03A4" name="Tau1"     unicodeName="GREEK CAPITAL LETTER TAU"/>
+    <codePoint unicode="U+03A5" name="Upsilon1" unicodeName="GREEK CAPITAL LETTER UPSILON"/>
+    <codePoint unicode="U+03A6" name="Phi1"     unicodeName="GREEK CAPITAL LETTER PHI"/>
+    <codePoint unicode="U+03A7" name="Chi1"     unicodeName="GREEK CAPITAL LETTER CHI"/>
+    <codePoint unicode="U+03A8" name="Psi1"     unicodeName="GREEK CAPITAL LETTER PSI"/>
+    <codePoint unicode="U+03A9" name="Omega1"   unicodeName="GREEK CAPITAL LETTER OMEGA"/>
+    
+    <codePoint unicode="U+03B1" name="alpha1"   unicodeName="GREEK SMALL LETTER ALPHA"/>
+    <codePoint unicode="U+03B2" name="beta1"    unicodeName="GREEK SMALL LETTER BETA"/>
+    <codePoint unicode="U+03B3" name="gamma1"   unicodeName="GREEK SMALL LETTER GAMMA"/>
+    <codePoint unicode="U+03B4" name="delta1"   unicodeName="GREEK SMALL LETTER DELTA"/>
+    <codePoint unicode="U+03B5" name="epsilon1" unicodeName="GREEK SMALL LETTER EPSILON"/>
+    <codePoint unicode="U+03B6" name="zeta1"    unicodeName="GREEK SMALL LETTER ZETA"/>
+    <codePoint unicode="U+03B7" name="eta1"     unicodeName="GREEK SMALL LETTER ETA"/>
+    <codePoint unicode="U+03B8" name="theta1"   unicodeName="GREEK SMALL LETTER THETA"/>
+    <codePoint unicode="U+03B9" name="iota1"    unicodeName="GREEK SMALL LETTER IOTA"/>
+    <codePoint unicode="U+03BA" name="kappa1"   unicodeName="GREEK SMALL LETTER KAPPA"/>
+    <codePoint unicode="U+03BB" name="lambda1"  unicodeName="GREEK SMALL LETTER LAMBDA"/>
+    <codePoint unicode="U+03BC" name="mu1"      unicodeName="GREEK SMALL LETTER MU"/>
+    <codePoint unicode="U+03BD" name="nu1"      unicodeName="GREEK SMALL LETTER NU"/>
+    <codePoint unicode="U+03BE" name="xi1"      unicodeName="GREEK SMALL LETTER XI"/>
+    <codePoint unicode="U+03BF" name="omicron1" unicodeName="GREEK SMALL LETTER OMICRON"/>
+    <codePoint unicode="U+03C0" name="pi1"      unicodeName="GREEK SMALL LETTER PI"/>
+    <codePoint unicode="U+03C1" name="rho1"     unicodeName="GREEK SMALL LETTER RHO"/>
+    <codePoint unicode="U+03C2" name="sigma11"  unicodeName="GREEK SMALL LETTER FINAL SIGMA" note="probably uncommon"/>
+    <codePoint unicode="U+03C3" name="sigma1"   unicodeName="GREEK SMALL LETTER SIGMA"/>
+    <codePoint unicode="U+03C4" name="tau1"     unicodeName="GREEK SMALL LETTER TAU"/>
+    <codePoint unicode="U+03C5" name="upsilon1" unicodeName="GREEK SMALL LETTER UPSILON"/>
+    <codePoint unicode="U+03C6" name="phi1"     unicodeName="GREEK SMALL LETTER PHI"/>
+    <codePoint unicode="U+03C7" name="chi1"     unicodeName="GREEK SMALL LETTER CHI"/>
+    <codePoint unicode="U+03C8" name="psi1"     unicodeName="GREEK SMALL LETTER PSI"/>
+    <codePoint unicode="U+03C9" name="omega1"   unicodeName="GREEK SMALL LETTER OMEGA"/>
+    
+</codePointSet>

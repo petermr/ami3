@@ -1,7 +1,6 @@
 package org.contentmine.ami.tools;
 
 import java.io.File;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,6 +12,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Callable;
 
+import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.AMIDictionaryTool.RawFileFormat;
@@ -294,6 +294,8 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 
 
 	public void init() {
+		// log4j configuration
+		BasicConfigurator.configure();
 	}
 
 	public void runCommands(String cmd) {
@@ -307,6 +309,7 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 	 * @param args
 	 */
 	public void runCommands(String[] args) {
+		init();
 		this.args = args;
 		// add help
     	args = args.length == 0 ? new String[] {"--help"} : args;
@@ -456,9 +459,9 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 				dir = parentFile;
 				LOG.info("** using parentFile as " + type + ": "+directory);
 			} else {
-	 			System.err.println(type + " must be existing directory or have directory parent: " +
+	 			System.err.println("not found: "+ type + " must be existing directory or have directory parent: " +
 			        cProjectDirectory + " ("+dir.getAbsolutePath());
-	 			return null;
+	 			directory = null;
 			}
 		}
 		return directory;
@@ -502,9 +505,13 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 		if (cTreeDirectory != null) {
 			File cTreeDir = new File(cTreeDirectory);
 			cTreeDirectory = checkDirExistenceAndGetAbsoluteName(cTreeDir, "cTree");
-			cTree = new CTree(cTreeDir);
-			cTreeList = new CTreeList();
-			cTreeList.add(cTree);
+			if (cTreeDirectory == null) {
+				System.err.println("***Cannot find ctree/parent: " + cTreeDir + " ***");
+			} else {
+				cTree = new CTree(cTreeDir);
+				cTreeList = new CTreeList();
+				cTreeList.add(cTree);
+			}
     	}
 	}
 	

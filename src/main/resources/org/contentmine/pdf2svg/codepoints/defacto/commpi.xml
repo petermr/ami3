@@ -1,0 +1,49 @@
+<!--
+
+    Copyright (C) 2012 pm286 <peter.murray.rust@googlemail.com>
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<codePointSet encoding="MathematicalPI" id="commpi" resource="org/contentmine/pdf2svg/codepoints/defacto">
+
+    <codePoint unicode="U+002B" name="H11001"  note="PLUS"/>
+    <codePoint unicode="U+002D" name="H11002"  note="MINUS"/>
+    <codePoint unicode="U+00D7" name="H11003"  note="MULTIPLICATION SIGN"/> 
+    <codePoint unicode="U+00F7" name="H11004"  note="DIVISION SIGN"/> 
+    <codePoint unicode="U+003D" name="H11005"  note="EQUALS"/> 
+    <codePoint unicode="U+00B1" name="H11006"  note="PLUS-MINUS SIGN"/> 
+    <codePoint unicode="U+007E" name="H11011"  note="TILDE"/> 
+    <codePoint unicode="U+003C" name="H11021"  note="LESS-THAN SIGN"/> 
+    <codePoint unicode="U+003E" name="H11022"  note="GREATER-THAN SIGN"/> 
+    <codePoint unicode="U+0027" name="H11032"  note="APOSTROPHE"/> 
+    <codePoint unicode="U+0022" name="H11033"  note="QUOT"/> 
+    <codePoint unicode="U+00B0" name="H11034"  note="DEGREE SIGN"/> 
+    
+    <!-- these are offset by 500 - maybe bold/size? -->
+    <codePoint unicode="U+002B" name="H11501"  note="PLUS"/>
+    <codePoint unicode="U+002D" name="H11502"  note="MINUS"/> 
+    <codePoint unicode="U+00D7" name="H11503"  note="MULTIPLICATION SIGN"/> 
+    <codePoint unicode="U+00F7" name="H11504"  note="DIVISION SIGN"/> 
+    <codePoint unicode="U+003D" name="H11505"  note="EQUALS"/> 
+    <codePoint unicode="U+00B1" name="H11506"  note="PLUS-MINUS SIGN"/> 
+    <codePoint unicode="U+00B7" name="H11554"  note="MIDDLE DOT"/> 
+    
+    <codePoint unicode="U+00A9" name="H17015"  note="COPYRIGHT SIGN"/> 
+    
+    <codePoint unicode="U+00B7" name="H18528"  note="MIDDLE DOT"/> 
+
+    <codePoint unicode="U+00B7" name="z" note="MIDDLE DOT"/> 
+    
+</codePointSet>
+        

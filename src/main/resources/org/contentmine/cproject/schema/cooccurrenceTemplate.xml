@@ -1,0 +1,20 @@
+<dir name="cooccurrence">
+	<dir regex="[a-z]+" count="0,1">
+	  <p>A search term. Includes word, species, genus, gene, and user-dictionaries</p>
+  	  <file name="histogram.csv" count="0,1">
+	    <p>Frequencies.</p>
+	  </file>
+	  <file name="histogram.svg" count="0,1">
+	    <p>Frequencies.</p>
+	  </file>
+	</dir>
+	<dir regex="[a-z]+\-[a-z]+" count="0,1">
+	  <p>Summary statistics for bivariate stats</p>
+  	  <file name="cooccurrence.csv" count="0,1">
+	    <p>Frequencies.</p>
+	  </file>
+	  <file name="cooccurrence.svg" count="0,1">
+	    <p>Frequencies.</p>
+	  </file>
+	</dir>
+</dir>

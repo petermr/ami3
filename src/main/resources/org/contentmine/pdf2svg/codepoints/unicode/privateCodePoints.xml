@@ -1,0 +1,34 @@
+<codePointSet encoding="Unicode" id="privateCodePoints">
+    <codePoint unicode="U+F6D9" unicodeName="COPYRIGHT SIGN SERIF" name="copyrightserif (CUS)"/>
+    <codePoint unicode="U+F6DA" unicodeName="REGISTERED SIGN SERIF" name="registerserif (CUS)"/>
+    <codePoint unicode="U+F6DB" unicodeName="TRADE MARK SIGN SERIF" name="trademarkserif (CUS)"/>
+
+<!--  f8xx -->    
+<!-- I think these are all Adobe extensions -->
+    <codePoint unicode="U+F8E5" unicodeName="RADICAL EXTENDER" name="radicalex (CUS)" />
+    <codePoint unicode="U+F8E6" unicodeName="VERTICAL ARROW EXTENDER" name="arrowvertex (CUS)" />
+    <codePoint unicode="U+F8E7" unicodeName="HORIZONTAL ARROW EXTENDER" name="arrowhorizex (CUS)" />
+    <codePoint unicode="U+F8E8" unicodeName="REGISTERED SIGN SANS SERIF" name="registersans (CUS)" />
+    <codePoint unicode="U+F8E9" unicodeName="COPYRIGHT SIGN SANS SERIF" name="copyrightsans (CUS)" />
+    <codePoint unicode="U+F8EA" unicodeName="TRADE MARK SIGN SANS SERIF" name="trademarksans (CUS)" />
+    <codePoint unicode="U+F8EB" unicodeName="LEFT PAREN TOP" name="parenlefttp (CUS)" />
+    <codePoint unicode="U+F8EC" unicodeName="LEFT PAREN EXTENDER" name="parenleftex (CUS)" />
+    <codePoint unicode="U+F8ED" unicodeName="LEFT PAREN BOTTOM" name="parenleftbt (CUS)" />
+    <codePoint unicode="U+F8EE" unicodeName="LEFT SQUARE BRACKET TOP" name="bracketlefttp (CUS)" />
+    <codePoint unicode="U+F8EF" unicodeName="LEFT SQUARE BRACKET EXTENDER" name="bracketleftex (CUS)" />
+    <codePoint unicode="U+F8F0" unicodeName="LEFT SQUARE BRACKET BOTTOM" name="bracketleftbt (CUS)" />
+    <codePoint unicode="U+F8F1" unicodeName="LEFT CURLY BRACKET TOP" name="bracelefttp (CUS)" />
+    <codePoint unicode="U+F8F2" unicodeName="LEFT CURLY BRACKET MID" name="braceleftmid (CUS)" />
+    <codePoint unicode="U+F8F3" unicodeName="LEFT CURLY BRACKET BOTTOM" name="braceleftbt (CUS)" />
+    <codePoint unicode="U+F8F4" unicodeName="CURLY BRACKET EXTENDER" name="braceex (CUS)" />
+    <codePoint unicode="U+F8F5" unicodeName="INTEGRAL EXTENDER" name="integralex (CUS)" />
+    <codePoint unicode="U+F8F6" unicodeName="RIGHT PAREN TOP" name="parenrighttp (CUS)" />
+    <codePoint unicode="U+F8F7" unicodeName="RIGHT PAREN EXTENDER" name="parenrightex (CUS)" />
+    <codePoint unicode="U+F8F8" unicodeName="RIGHT PAREN BOTTOM" name="parenrightbt (CUS)" />
+    <codePoint unicode="U+F8F9" unicodeName="RIGHT SQUARE BRACKET TOP" name="bracketrighttp (CUS)" />
+    <codePoint unicode="U+F8FA" unicodeName="RIGHT SQUARE BRACKET EXTENDER" name="bracketrightex (CUS)" />
+    <codePoint unicode="U+F8FB" unicodeName="RIGHT SQUARE BRACKET BOTTOM" name="bracketrightbt (CUS)" />
+    <codePoint unicode="U+F8FC" unicodeName="RIGHT CURLY BRACKET TOP" name="bracerighttp (CUS)" />
+    <codePoint unicode="U+F8FD" unicodeName="RIGHT CURLY BRACKET MID" name="bracerightmid (CUS)" />
+    <codePoint unicode="U+F8FE" unicodeName="RIGHT CURLY BRACKET BOTTOM" name="bracerightbt (CUS)" />
+</codePointSet>
