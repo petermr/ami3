@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<snippetsTree>
- <snippets file="epmc/PMC2978366/results/species/genus/results.xml">
-  <result pre=" some of them are also subject to splicing ( 5, 9, 24). " exact="Arabidopsis" xpath="/html[1]/body[1]/div[2]/div[3]/div[4]/p[4]" match="Arabidopsis" post=" mitochondrial transcriptome presents eight transcripts needing both editing and splicing. Most RNA" name="genus"/>
-  <result pre="ref=&quot;#B13&quot;&gt;13). In this work, the edited or the unedited version of nad1 c/d intron D6 from " exact="Oenothera" xpath="/html[1]/body[1]/div[2]/div[3]/div[4]/p[4]" match="Oenothera" post=" mitochondria was grafted into a yeast self-splicing intron. Only the chimera containing the edited" name="genus"/>
-  <result pre="). The PPR protein OTP43 is important for trans-splicing of the first nad1 intron in " exact="Arabidopsis" match="Arabidopsis" post=" mitochondria ( 43). Moreover, some proteins belonging to a particular PPR subfamily" name="genus"/>
- </snippets>
-</snippetsTree>
