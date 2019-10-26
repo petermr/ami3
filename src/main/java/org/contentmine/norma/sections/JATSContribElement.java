@@ -5,7 +5,7 @@ import java.util.List;
 
 import nu.xom.Element;
 
-public class JATSContribElement extends JATSElement {
+public class JATSContribElement extends JATSElement implements IsBlock {
 
 	private static final String ROLE = "role";
 	private static final String CONTRIB_TYPE = "contrib-type";

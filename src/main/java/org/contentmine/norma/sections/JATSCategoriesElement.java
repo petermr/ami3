@@ -10,33 +10,13 @@ import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
 
-public class JATSCategoriesElement extends JATSElement {
+public class JATSCategoriesElement extends JATSElement implements IsBlock, IsNonStandard {
 
 	private static final Logger LOG = Logger.getLogger(JATSCategoriesElement.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
 	
-	/**
-			<contrib-group>
-				<contrib contrib-type="author">
-					<name>
-						<surname>Haddow</surname>
-						<given-names>Andrew D.</given-names>
-					</name>
-					<xref ref-type="aff" rid="aff1">
-						<sup>1</sup>
-					</xref>
-					<xref ref-type="corresp" rid="cor1">
-						<sup>&#x0002a;</sup>
-					</xref>
-				</contrib>
-				<contrib contrib-type="author">
-				...
-				</contrib>
-			</contribGroup>
-			
-	 */
 	final static String TAG = "contribGroup";
 
 	public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {

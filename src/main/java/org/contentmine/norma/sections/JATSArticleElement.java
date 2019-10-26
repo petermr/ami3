@@ -14,7 +14,7 @@ import nu.xom.Element;
  * @author pm286
  *
  */
-public class JATSArticleElement extends JATSElement {
+public class JATSArticleElement extends JATSElement implements IsBlock, HasDirectory {
 	/**
 		<article>
 		  <front>
@@ -77,6 +77,10 @@ public class JATSArticleElement extends JATSElement {
 
 	public String getPMCID() {
 		return front == null ? null : front.getPMCID();
+	}
+
+	public String directoryName() {
+		return this.TAG;
 	}
 
 }

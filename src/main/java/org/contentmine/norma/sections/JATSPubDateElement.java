@@ -8,7 +8,7 @@ import org.apache.log4j.Logger;
 
 import nu.xom.Element;
 
-public class JATSPubDateElement extends JATSDateElement {
+public class JATSPubDateElement extends JATSDateElement implements IsBlock {
 
 	private static final String PUB_TYPE = "pub-type";
 	/**

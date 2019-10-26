@@ -5,7 +5,7 @@ import java.util.List;
 
 import nu.xom.Element;
 
-public class JATSBackElement extends JATSElement {
+public class JATSBackElement extends JATSElement implements IsBlock, HasDirectory {
 
 	static String TAG = "back";
 	
@@ -45,6 +45,11 @@ public class JATSBackElement extends JATSElement {
 		fnGroup = (JATSFnGroupElement) getSingleChild(JATSFnGroupElement.TAG);
 		reflist = (JATSReflistElement) getSingleChild(JATSReflistElement.TAG);
 	}
+
+	public String directoryName() {
+		return this.TAG;
+	}
+
 
 
 }

@@ -2,7 +2,7 @@ package org.contentmine.norma.sections;
 
 import nu.xom.Element;
 
-public class JATSArticleIdElement extends JATSElement {
+public class JATSArticleIdElement extends JATSElement implements IsInline {
 
 	public final static String TAG = "article-id";
 

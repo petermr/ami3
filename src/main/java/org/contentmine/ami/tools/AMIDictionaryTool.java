@@ -70,7 +70,11 @@ import picocli.CommandLine.Parameters;
  */
 
 @Command(
-		description = "Manages AMI dictionaries",
+		description = "Manages AMI dictionaries%n"
+				+ "Create from Wikipedia:%n"
+				+ "   ami-dictionary create --informat wikipage%n"
+				+ "    --input https://en.wikipedia.org/wiki/List_of_fish_common_names%n"
+				+ "    --dictionary commonfish --directory mydictionary --outformats xml,html%n",
 		name = "ami-dictionary",
 		mixinStandardHelpOptions = true,
 		version = "ami 0.1"

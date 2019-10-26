@@ -5,61 +5,25 @@ import java.util.List;
 
 import nu.xom.Element;
 
-public class JATSSubjGroupElement extends JATSElement {
+public class JATSSubjGroupElement extends JATSElement implements IsBlock {
 
 	private static final String ROLE = "role";
 	private static final String CONTRIB_TYPE = "contrib-type";
 
 	/**
-	<contrib contrib-type="author">
-		<name>
-			<surname>Huy</surname>
-			<given-names>Rekol</given-names>
-		</name>
-		<xref ref-type="aff" rid="aff3">
-			<sup>3</sup>
-		</xref>
-		<role>Editor</role>
-	</contrib>
-			
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
 	 */
-	final static String TAG = "contrib";
-
-	public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {
-			JATSDivFactory.NAME,
-			JATSDivFactory.XREF,
-			JATSSpanFactory.ROLE,
-			JATSSpanFactory.EMAIL,
-			JATSSpanFactory.URI,
-			JATSSpanFactory.CONTRIB_ID,
-			JATSSpanFactory.DEGREES,
-			JATSSpanFactory.CONF_DATE,
-			JATSDivFactory.AFF,
-			JATSDivFactory.BIO,
-			JATSSpanFactory.COLLAB,
-			JATSSpanFactory.EDITION,
-			JATSDivFactory.ADDRESS,
-	});
-
-	@Override
-	protected List<String> getAllowedChildNames() {
-		return ALLOWED_CHILD_NAMES;
-	}
-
-	
-	private JATSNameElement name;
-	private JATSXrefElement xref;
-	private String contribType;
-	private String role;
-	
+	final static String TAG = "subj-group";
+	final static String SUBJ_GROUP_TYPE = "subj-group-type";
 
 	public JATSSubjGroupElement(Element element) {
 		super(element);
-		this.contribType = element.getAttributeValue(CONTRIB_TYPE);
-		this.role = element.getAttributeValue(ROLE);
 	}
 
-	public String getContribType() {
-		return contribType;
+	@Override 
+	public String getAttributeString() {
+		return getAttributeString(SUBJ_GROUP_TYPE);
 	}
 }

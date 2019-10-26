@@ -8,7 +8,7 @@ import org.apache.log4j.Logger;
 
 import nu.xom.Element;
 
-public class JATSAffElement extends JATSElement {
+public class JATSAffElement extends JATSElement implements IsBlock {
 
 	/**
 	<aff id="aff1">

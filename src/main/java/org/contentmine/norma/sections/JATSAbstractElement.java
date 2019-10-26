@@ -7,7 +7,7 @@ import nu.xom.Element;
  * @author pm286
  *
  */
-public class JATSAbstractElement extends JATSElement {
+public class JATSAbstractElement extends JATSElement implements IsBlock {
 
 	public static String TAG = "abstract";
 
@@ -15,10 +15,6 @@ public class JATSAbstractElement extends JATSElement {
 		super(element);
 	}
 	
-	public static boolean matches(Element element) {
-		// TODO Auto-generated method stub
-		return false;
-	}
 	
 	
 

@@ -5,7 +5,13 @@ import org.apache.log4j.Logger;
 
 import nu.xom.Element;
 
-public class JATSYearElement extends JATSElement {
+/**
+ * 		<year>1958</year>
+
+ * @author pm286
+ *
+ */
+public class JATSYearElement extends JATSElement implements IsInline {
 
 	private static final Logger LOG = Logger.getLogger(JATSYearElement.class);
 	static {
@@ -13,6 +19,7 @@ public class JATSYearElement extends JATSElement {
 	}
 	
 	private static final String TITLE = "year";
+	static final String TAG = "year";
 
 	public JATSYearElement(Element element) {
 		super(element);
@@ -26,6 +33,9 @@ public class JATSYearElement extends JATSElement {
 		return false;
 	}
 	
+	public String debugString(int level) {
+		return "y: "+this.getValue();
+	}
 	
 
 }

@@ -5,7 +5,7 @@ import org.apache.log4j.Logger;
 
 import nu.xom.Element;
 
-public class JATSSurnameElement extends JATSElement {
+public class JATSSurnameElement extends JATSElement implements IsInline {
 
 	private static final Logger LOG = Logger.getLogger(JATSSurnameElement.class);
 	static {

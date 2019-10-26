@@ -5,16 +5,8 @@ import java.util.List;
 
 import nu.xom.Element;
 
-public class JATSFrontElement extends JATSElement {
+public class JATSFrontElement extends JATSElement implements IsBlock , HasDirectory {
 
-	/**
-		<journal-meta>
-		...
-		</journal-meta>
-		<article-meta>
-		</article-meta>
-		
-	 */
 	static String TAG = "front";
 
 	public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {
@@ -28,7 +20,7 @@ public class JATSFrontElement extends JATSElement {
 		return ALLOWED_CHILD_NAMES;
 	}
 
-	private JATSJournalMetaElement journalMeta;
+	private JATSElement journalMeta;
 	private JATSArticleMetaElement articleMeta;
 	
 	public JATSFrontElement(Element element) {
@@ -36,7 +28,7 @@ public class JATSFrontElement extends JATSElement {
 	}
 
 	protected void applyNonXMLSemantics() {
-		journalMeta = (JATSJournalMetaElement) this.getSingleChild(JATSJournalMetaElement.TAG);
+		journalMeta = (JATSElement) this.getSingleChild(JATSJournalMetaElement.TAG);
 		articleMeta = (JATSArticleMetaElement) this.getSingleChild(JATSArticleMetaElement.TAG);
 	}
 	
@@ -44,11 +36,16 @@ public class JATSFrontElement extends JATSElement {
 		return articleMeta == null ? null : articleMeta.getPMCID();
 	}
 
-	public JATSJournalMetaElement getJournalMeta() {
+	public JATSElement getJournalMeta() {
 		return journalMeta;
 	}
 
 	public JATSArticleMetaElement getArticleMeta() {
 		return articleMeta;
+	}
+
+	@Override
+	public String directoryName() {
+		return TAG;
 	}
 }

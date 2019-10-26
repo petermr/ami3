@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.contentmine.norma.sections.JATSPMCitation;
+import org.contentmine.norma.sections.PMCitation;
 
 public class DottyPlotter {
 	
@@ -73,7 +73,7 @@ public class DottyPlotter {
 		this.title = title;
 	}
 
-	public void setLinkList(List<JATSPMCitation> citationList) {
+	public void setLinkList(List<PMCitation> citationList) {
 		this.linkList = citationList;
 	}
 }

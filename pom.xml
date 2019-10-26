@@ -155,6 +155,11 @@
                                 <id>ami-clean</id>
                             </program>
                             <program>
+                                <mainClass>org.contentmine.ami.tools.AMIDictionaryTool</mainClass>
+                            <!-- creates and manages dictionaries -->
+                                <id>ami-dictionary</id>
+                            </program>
+                            <program>
                                <mainClass>org.contentmine.ami.tools.AMIFilterTool</mainClass>
                                <!-- description: filters images -->
                                <id>ami-filter</id>

@@ -5,9 +5,11 @@ import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
+import nu.xom.Text;
 
 public class JATSElementCitationElement extends JATSElement {
 
@@ -172,6 +174,23 @@ public class JATSElementCitationElement extends JATSElement {
 		this.issue = this.getSingleValueByClassAttributeValue(JATSSpanFactory.ISSUE);
 		this.collab = this.getSingleValueByClassAttributeValue(JATSSpanFactory.COLLAB);
 		this.size = this.getSingleValueByClassAttributeValue(JATSSpanFactory.SIZE);
+	}
+	
+	public String debugString(int level) {
+		StringBuilder sb = new StringBuilder();
+		sb.append("[REF]");
+		List<Element> childElements = this.getChildElementList();
+		for (Element childElement : childElements) {
+			if (childElement instanceof JATSElement) {
+				JATSElement jatsElement = (JATSElement)childElement;
+				sb.append(jatsElement.debugString(level + 1));
+			} else {
+				sb.append("<H/> "+childElement.toXML());
+				sb.append("\n");
+			}
+		}
+		sb.append("\n");
+		return sb.toString();
 	}
 
 

@@ -10,7 +10,7 @@ import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
 
-public class JATSReflistElement extends JATSElement {
+public class JATSReflistElement extends JATSElement implements IsBlock, HasDirectory {
 
 	/**
 		<ref-list>
@@ -79,6 +79,11 @@ public class JATSReflistElement extends JATSElement {
 			}
 		}
 		return pmcidList;
+	}
+
+	@Override
+	public String directoryName() {
+		return TAG;
 	}
 
 }

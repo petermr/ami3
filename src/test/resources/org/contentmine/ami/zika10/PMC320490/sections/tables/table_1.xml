@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table-wrap position="float" id="T1" class="table-wrap">
+ <label class="label">Table 1</label>
+ <caption class="caption">
+  <p class="p">Motor behavior of untreated rats</p>
+ </caption>
+ <table frame="hsides" rules="groups" class="table">
+  <thead xmlns="http://www.w3.org/1999/xhtml">
+   <tr>
+    <td align="center">Compound (dose, μmol Kg
+     <sup class="sup" xmlns="">-1</sup>)
+    </td>
+    <td align="center">Movements (±SEM) / 30 min</td>
+    <td align="center">Compared with the control group (%)</td>
+   </tr>
+  </thead>
+  <tbody xmlns="http://www.w3.org/1999/xhtml">
+   <tr>
+    <td align="center">Controls</td>
+    <td align="center">263(81)</td>
+    <td align="center">100</td>
+   </tr>
+   <tr>
+    <td align="center">TPBIA(40)</td>
+    <td align="center">161(22)
+     <sup class="sup" xmlns="">NS</sup>
+    </td>
+    <td align="center">61</td>
+   </tr>
+   <tr>
+    <td align="center">TPBIA(80)</td>
+    <td align="center">46(16)**</td>
+    <td align="center">18</td>
+   </tr>
+  </tbody>
+ </table>
+ <table-wrap-foot class="table-wrap-foot">
+  <p class="p">
+   <sup class="sup">NS</sup>, P &gt; 0.05 (not significant) and **P &lt; 0.01 according to Student's test, n = 3–6
+  </p>
+ </table-wrap-foot>
+</table-wrap>

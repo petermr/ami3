@@ -5,10 +5,19 @@ import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.eucl.euclid.Util;
 
 import nu.xom.Element;
 
-public class JATSNameElement extends JATSElement {
+/**
+    <name>
+     <surname>Weinbren</surname>
+     <given-names>MP</given-names>
+    </name>
+ * @author pm286
+ *
+ */
+public class JATSNameElement extends JATSElement implements IsBlock {
 
 	private static final Logger LOG = Logger.getLogger(JATSNameElement.class);
 	static {
@@ -52,6 +61,16 @@ public class JATSNameElement extends JATSElement {
 		this.surname = this.getSingleChildValue(JATSSurnameElement.TAG);
 		this.givenNames = this.getSingleChildValue(JATSGivenNamesElement.TAG);
 		this.suffix = this.getSingleChildValue(JATSSpanFactory.LABEL);
+	}
+	
+	@Override
+	public String debugString(int level) {
+		StringBuilder sb = new StringBuilder();
+		addNonNull(sb, getSingleChildValue(JATSSurnameElement.TAG));
+		sb.append(" ");
+		addNonNull(sb, getSingleChildValue(JATSGivenNamesElement.TAG));
+		return /*Util.spaces(level)+*/ /*TAG+":"+*/sb.toString();
+		
 	}
 
 

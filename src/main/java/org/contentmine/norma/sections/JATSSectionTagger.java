@@ -1,6 +1,7 @@
 package org.contentmine.norma.sections;
 
 import java.io.File;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -18,6 +19,7 @@ import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeList;
 import org.contentmine.cproject.files.HtmlTagger;
 import org.contentmine.cproject.files.ResourceLocation;
+import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.html.HtmlElement;
@@ -34,15 +36,22 @@ import com.google.common.collect.Multimap;
 import com.google.common.collect.Multiset;
 
 import nu.xom.Element;
+import nu.xom.Elements;
 
 /** sections in JATS and similar documents
  * 
  * note: some sections are hardcoded in JATS (have reserved vocabulary tags).
  * examples are abstract
- * Otehrs such as "materials and methods" are free text which require community agreement
+ * Others such as "materials and methods" are free text which require community agreement
  * (is an introduction the same as background??)
  * 
  * Note that some apparently simple tags ("title) are deeply nested - hopefully consistently
+ * @author pm286
+ *
+ */
+/** sections can be in XML or HTML. Initially they were in HTML which confused things.
+ * XML should be the basic type 
+ * 
  * @author pm286
  *
  */
@@ -57,6 +66,12 @@ public class JATSSectionTagger implements HtmlTagger {
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
+	
+	public enum SectionType {
+		HTML,
+		XML
+	}
+	
 	
 	/**
 	 * 
@@ -84,6 +99,20 @@ public class JATSSectionTagger implements HtmlTagger {
 	 * 
 	 */
 
+	public final static List<String> REMOVE_TAGS = Arrays.asList(new String[] {
+		"article-meta",
+		"journal-meta",
+		"front",
+		
+		// floats in body
+		"fig",
+		"table-wrap",
+		"body",
+		// back
+		"ref-list",
+		"back",
+	});
+	
 	/** these are JATS reserved names
 	 *   
 	abstract x 2, addr-line x 3, aff x 4, alt-title, alternatives x 3, article, article-categories, article-id x 3, 
@@ -162,6 +191,9 @@ public class JATSSectionTagger implements HtmlTagger {
 		 * 
 		 */
 		APPENDIX("appendix", new String[]{"app"}, "Appendix", "app-group"),
+		
+		ARTICLE("article", new String[]{"article"}, "Html meta", "article"),
+		
 		ARTICLE_META("articleMeta", new String[]{"article-meta"}, "Html meta", ""),
 		ARTICLE_TITLE("articleTitle", new String[]{""}, "Article title", "title"),
 		CONTRIB("contrib", new String[]{"contrib"}, "Contributors", "Contributors"),
@@ -190,8 +222,9 @@ public class JATSSectionTagger implements HtmlTagger {
 		SUBTITLE("subtitle", new String[]{""}, "Subtitle of article", "subtitle"),
 		TITLE("title", new String[]{""}, "Title of article", "title"),
 		/** a reserved word for all the sections */
-		ALL("all", new String[]{""}, "all sections", "all"),
 		
+		ALL("all", new String[]{""}, "all sections", "all"),
+		AUTO("auto", new String[]{"auto"}, "Heuristic tree", "auto")
 		;
 		private String description;
 		private Pattern pattern;
@@ -250,6 +283,25 @@ public class JATSSectionTagger implements HtmlTagger {
 			return name;
 		}
 		
+	};
+	
+	public enum FloatSection {
+		FIG("fig"),
+		TABLEWRAP("table-wrap")
+		;
+		private String tag;
+
+		private FloatSection(String tag) {
+			this.tag = tag;
+		}
+		/** get FloatSection by tag 
+		 * @return null if not found */
+		public static FloatSection getFloatSection(String tag) {
+			for (FloatSection floatSection : values()) {
+				if (floatSection.tag.equals(tag)) return floatSection;
+			}
+			return null;
+		}
 	};
 
 	public final static String[] CLASSTAGS = {
@@ -445,6 +497,8 @@ public class JATSSectionTagger implements HtmlTagger {
 	private CTree cTree;
 	private CProject cProject;
 	private Element rawXmlElement;
+	private SectionType sectionType = SectionType.XML;
+	
 
 
 	
@@ -686,13 +740,21 @@ public class JATSSectionTagger implements HtmlTagger {
 			if (jatsXmlFile == null) {
 				throw new RuntimeException("Null JATS XML");
 			}
-			rawXmlElement = XMLUtil.parseQuietlyToDocumentWithoutDTD(jatsXmlFile).getRootElement();
+			rawXmlElement = getOrCreateRawXMLElement(jatsXmlFile);
 			htmlElement = getOrCreateJATSHtmlElement();
 		}
 		return htmlElement;
 	}
 
-	
+	private Element getOrCreateRawXMLElement(File jatsXmlFile) {
+		if (rawXmlElement == null) {
+			if (jatsXmlFile != null) {
+				rawXmlElement = XMLUtil.parseQuietlyToDocumentWithoutDTD(jatsXmlFile).getRootElement();
+			}
+		}
+		return rawXmlElement;
+	}
+
 	public HtmlElement getOrCreateJATSHtmlElement() {
 		if (jatsHtmlElement == null) {
 			JATSFactory jatsFactory = new JATSFactory();
@@ -775,18 +837,150 @@ public class JATSSectionTagger implements HtmlTagger {
 	}
 
 	public List<Element> getSections(SectionTag sectionTag) {
+		return getSections(sectionTag, sectionType);
+	}
+
+	public List<Element> getSections(SectionTag sectionTag, SectionType sectionType) {
 		List<Element> sections = new ArrayList<>();
-		File existingFulltextXML = cTree.getExistingFulltextXML();
-		if (existingFulltextXML != null) {
-			this.getOrCreateJATSHtml(existingFulltextXML);
+		Element element = getOrCreateMLFromCTree();
+		if (element != null) {
 			String xpath = getXPath(sectionTag);
-			LOG.trace("xpath for tag: "+sectionTag+": "+xpath);
-			sections = getSections(xpath);
+			if (SectionType.HTML.equals(sectionType)) {
+				sections = getHtmlSections(xpath);
+			} else if (SectionTag.AUTO.equals(sectionTag)) {
+				removeAndWriteSections(element);
+				sections = recursiveDescent(element, 0);
+			} else if (SectionTag.ARTICLE.equals(sectionTag)) {
+				removeAndWriteSections(element);
+				sections = Arrays.asList(new Element[]{element});
+			} else {
+				sections = getTitledXMLSections(xpath);
+			}
 		}
 		return sections;
 	}
+	
+	private void removeAndWriteSections(Element element) {
+		List<String> removeTags = REMOVE_TAGS;
+		for (String tag : removeTags) {
+			removeAndWriteElement(element, tag);
+		}
+	}
+	
+	private void removeAndWriteElement(Element element, String sectionTag) {
+		boolean deleteExisting = true;
+		File sectionDir = cTree.makeSectionDir(sectionTag, deleteExisting);
+		List<Element> removables = XMLUtil.getQueryElements(element, "//*[local-name()='"+sectionTag+"']");
+		for (int i = 0; i < removables.size(); i++) {
+			Element removable = removables.get(i);
+			removable.detach();
+			File file = new File(sectionDir, "elem_" + i + ".xml");
+			try {
+				List<Element> childElements = XMLUtil.getChildElements(removable);
+				if (childElements.size() == 0) {
+					LOG.debug("empty element "+sectionTag);
+				} else {
+					XMLUtil.debug(removable, file, 1);
+				}
+			} catch (IOException e) {
+				System.err.println("Cannot write "+file+"; "+e);
+			}
+		}
+	}
 
-	private List<Element> getSections(String xpath) {
+	private List<Element> recursiveDescent(Element element, int level) {
+		String tag = element.getLocalName();
+		System.out.print(Util.spaces(2*level)+"<"+tag+">");
+		List<Element> childElements = XMLUtil.getChildElements(element);
+		if (childElements.size() == 0) {
+			System.out.println(""+Util.truncateAndAddEllipsis(element.getValue(), 20));
+		} else {
+			System.out.println();
+			for (Element childElement : childElements) {
+				recursiveDescent(childElement, level+1);
+			}
+		}
+		return null;
+	}
+	
+	/** sec-type
+	Suggested usage
+	Recommended section type values are:
+	cases
+		
+	Cases/Case Reports
+	conclusions
+		
+	Conclusions/Comment
+	discussion
+		
+	Discussion/Interpretation
+	intro
+		
+	Introduction/Synopsis/Overview
+	materials
+		
+	Materials
+	methods
+		
+	Methods/Methodology/Procedures
+	results
+		
+	Results/Statement of Findings
+	subjects
+		
+	Subjects/Participants/Patients
+	supplementary-material
+		
+	Supplementary materials
+
+	/** get or create XML or HTML from CTree file 
+	 * @return HTMLElement or Element 
+	 * */
+	private Element getOrCreateMLFromCTree() {
+		File existingFulltextXML = cTree.getExistingFulltextXML();
+		Element element = null;
+		if (existingFulltextXML != null && sectionType != null) {
+			if (SectionType.HTML.equals(sectionType)) {
+				element = this.getOrCreateJATSHtml(existingFulltextXML);
+			} else if (SectionType.XML.equals(sectionType)) {
+				element = this.getOrCreateRawXMLElement(existingFulltextXML);
+			} else {
+				throw new RuntimeException("Bad sectionType: "+sectionType);
+			}
+		}
+		return element;
+	}
+
+	/** Pull method for getting sections.
+	 * 
+	 * @param xpath
+	 * @return list of sections conforming to XPath
+	 */
+	private List<Element> getTitledXMLSections(String xpath) {
+		List<Element> titledSections = new ArrayList<Element>();
+		if (xpath != null && rawXmlElement != null) {
+			xpath = createXMLTitleXPathFromHtmlTitleXPath(xpath);
+			titledSections = XMLUtil.getQueryElements(rawXmlElement, xpath);
+			for (Element section : titledSections) {
+				String sectionS = section.toXML();
+					System.out.println("XML "+" || "+sectionS.substring(0, Math.min(100, sectionS.length())));
+			}
+		}
+		return titledSections;
+	}
+
+	/** terrible kludge. The xpath in read in from file and applies 
+	 * to HTML. This converts it to XML-aware xpath.
+	 * Basically [@class='title' => [local-name='title'
+	 * @param xpath
+	 * @return
+	 */
+	private String createXMLTitleXPathFromHtmlTitleXPath(String xpath) {
+		return xpath.replace("@class", "local-name()");
+	}
+	
+	private List<Element> getHtmlSections(String xpath) {
 		List<Element> sections = new ArrayList<Element>();
 		if (xpath != null) {
 			Element jatsElement = getJATSHtmlElement();
@@ -827,7 +1021,7 @@ public class JATSSectionTagger implements HtmlTagger {
 	}
 
 	public List<Element> getAllSections() {
-		return getSections(".//*[@class]");
+		return getHtmlSections(".//*[@class]");
 	}
 
 	public Multiset<String> getOrCreateTagClassMultiset() {
@@ -1049,6 +1243,13 @@ public class JATSSectionTagger implements HtmlTagger {
 		}
 	}
 
+	public SectionType getSectionType() {
+		return sectionType;
+	}
+
+	public void setSectionType(SectionType sectionType) {
+		this.sectionType = sectionType;
+	}
 
 
 

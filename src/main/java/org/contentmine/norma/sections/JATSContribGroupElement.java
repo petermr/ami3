@@ -10,7 +10,7 @@ import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
 
-public class JATSContribGroupElement extends JATSElement {
+public class JATSContribGroupElement extends JATSElement implements IsBlock {
 
 	private static final Logger LOG = Logger.getLogger(JATSContribGroupElement.class);
 	static {
@@ -37,7 +37,7 @@ public class JATSContribGroupElement extends JATSElement {
 			</contribGroup>
 			
 	 */
-	final static String TAG = "contribGroup";
+	final static String TAG = "contrib-group";
 
 	public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {
 			JATSDivFactory.CONTRIB,
@@ -69,7 +69,7 @@ public class JATSContribGroupElement extends JATSElement {
 				}
 				first = false;
 			} else if (contribType == null || (contribType != contribType1)) {
-				LOG.warn("inconsistent contribTypes " + contribType1 + " != " + contribType);
+				LOG.trace("inconsistent contribTypes " + contribType1 + " != " + contribType);
 				contribType = null;
 			}
 			contribList.add((JATSContribElement)element);

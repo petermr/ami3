@@ -35,6 +35,9 @@ import java.io.PrintStream;
 import java.net.HttpURLConnection;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.text.DecimalFormat;
@@ -52,6 +55,7 @@ import java.util.Map;
 import java.util.StringTokenizer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
@@ -2067,14 +2071,14 @@ public class Util implements EuclidConstants {
 		}
 	}
 
-	/**
-	 * Description of the Method
-	 * 
+	/** concatenates words to CamelCase
+	 *  "thisIsFred", Util
+		"this is fred" -> "thisIsFred"
 	 * @param s
-	 *            Description of the Parameter
-	 * @return Description of the Return Value
+	 * @return 
 	 */
 	public static String toCamelCase(String s) {
+		if (s == null) return null;
 		StringTokenizer st = new StringTokenizer(s, " \n\r\t");
 		String out = EC.S_EMPTY;
 		while (st.hasMoreTokens()) {
@@ -2085,6 +2089,37 @@ public class Util implements EuclidConstants {
 			out += s;
 		}
 		return out;
+	}
+	
+	public static String hyphensToUpperCamelCase(String s) {
+		return hyphensToCamelCase(s, true);
+	}
+
+	public static String hyphensToLowerCamelCase(String s) {
+		return hyphensToCamelCase(s, false);
+	}
+
+	private static String hyphensToCamelCase(String s, boolean toUpper) {
+		if (s == null) return null;
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < s.length(); i++) {
+			char c = s.charAt(i);
+			if (c == '-') {
+				toUpper = true;
+			} else if (!Character.isAlphabetic(c)) {
+				sb.append(c);
+			} else if (Character.isLowerCase(c)) {
+				char cc = (char) ((toUpper) ? (c + 'A' - 'a') : c);
+				toUpper = false;
+				sb.append(cc);
+			} else if (Character.isUpperCase(c)) {
+				char cc = (char) ((toUpper) ? c : (c + 'A' - 'a'));
+				toUpper = false;
+				sb.append(cc);
+			}
+			
+		}
+		return sb.toString();
 	}
 
 	/**
@@ -3276,6 +3311,45 @@ public class Util implements EuclidConstants {
 		return sb.toString();	
 	}
 
+	/** flattens all punctuation to "_"
+	 * 
+	 * @param title
+	 * @param length // truncate after length characters
+	 * @return
+	 */
+	public static String makeLowercaseAndDespace(String title, int length) {
+		if (title != null) {
+			title = title.toLowerCase().replaceAll("\\s+", "_");
+			title = title.replaceAll("\\p{Punct}", "_");
+			title = title.substring(0, Math.min(length, title.length()));
+		}
+		return title;
+	}
+
+	/** lists files (uses Paths).
+	 * 
+	 * @param dir
+	 * @param regex to match whole filename (e.g. .* /foo.xml) if null lists all
+	 * @return empty if no hits
+	 */
+	public static List<File> listFilesFromPaths(File dir, String regex) {
+		List<File> fileList = new ArrayList<File>();
+		if (dir != null) {
+			try {
+				List<Path> paths = Files.list(Paths.get(dir.toString())).collect(Collectors.toList());
+				for (Path path : paths) {
+					if (regex == null || Pattern.matches(regex, path.toString())) {
+						fileList.add(path.toFile());
+					}
+				}
+			} catch (IOException e) {
+				throw new RuntimeException("cannot list files", e);
+			}
+		}
+		return fileList;
+	}
+
+
 
 }
 
@@ -3327,6 +3401,7 @@ class StringIntegerComparator implements Comparator<Object> {
 		fw.close();
 		br.close();
 	}
-	
+
+// NOTE this is not the main class
 	
  }

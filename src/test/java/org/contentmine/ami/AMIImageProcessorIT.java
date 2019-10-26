@@ -326,7 +326,6 @@ public class AMIImageProcessorIT {
 		
 		IntArray xArray = lineCache.getGridXCoordinates();
 		graphList.snapNodesToArray(xArray, Axis2.X, 2);
-		LOG.debug("xxx"+xArray);
 		IntArray yArray = lineCache.getGridYCoordinates();
 		graphList.snapNodesToArray(yArray, Axis2.Y, 1);
 		

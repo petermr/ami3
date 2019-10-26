@@ -365,9 +365,8 @@ public abstract class XMLUtil implements XMLConstants {
 	 * convenience routine to get child nodes (iterating through getChild(i) is
 	 * fragile if children are removed)
 	 * 
-	 * @param el
-	 *            may be null
-	 * @return list of children (immutable) - empty if none
+	 * @param el may be null
+	 * @return list of children empty if none
 	 */
 	public static List<Node> getChildNodes(Element el) {
 		List<Node> childs = new ArrayList<Node>();
@@ -377,6 +376,25 @@ public abstract class XMLUtil implements XMLConstants {
 			}
 		}
 		return childs;
+	}
+	
+	 /** convenience routine to get child element 
+	 * 
+	 * @param el may be null
+	 * @return list of children empty if none
+	 */
+	public static List<Element> getChildElements(Element el) {
+		List<Element> childs = new ArrayList<>();
+		if (el != null) {
+			for (int i = 0; i < el.getChildCount(); i++) {
+				Node child = el.getChild(i);
+				if (child instanceof Element) {
+					childs.add((Element)child);
+				}
+			}
+		}
+		return childs;
+		
 	}
 
 	/**

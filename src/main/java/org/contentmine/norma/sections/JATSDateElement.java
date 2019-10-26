@@ -9,7 +9,7 @@ import org.contentmine.eucl.euclid.JodaDate;
 
 import nu.xom.Element;
 
-public class JATSDateElement extends JATSElement {
+public class JATSDateElement extends JATSElement implements IsBlock {
 
 	/**
 	<date date-type="received">

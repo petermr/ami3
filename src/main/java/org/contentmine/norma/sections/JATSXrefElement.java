@@ -5,7 +5,7 @@ import org.apache.log4j.Logger;
 
 import nu.xom.Element;
 
-public class JATSXrefElement extends JATSElement {
+public class JATSXrefElement extends JATSElement implements IsInline {
 
 	private static final String REF_TYPE = "ref-type";
 	private static final String RID = "rid";
@@ -20,7 +20,7 @@ public class JATSXrefElement extends JATSElement {
 		LOG.setLevel(Level.DEBUG);
 	}
 	
-	private static final String TAG = "xref";
+	public static final String TAG = "xref";
 	
 	private String refType; 
 	private String rid; 

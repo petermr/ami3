@@ -76,7 +76,7 @@ public class JATSSectionTaggerTest {
 		JATSFactory factory = new JATSFactory();
 		JATSArticleElement articleElement = factory.readArticle(inputFile);
 		JATSFrontElement frontElement = articleElement.getFront();
-		JATSJournalMetaElement journalMetaElement = frontElement.getJournalMeta();
+		JATSElement journalMetaElement = frontElement.getJournalMeta();
 		Assert.assertNotNull("journalMeta", journalMetaElement);
 		JATSArticleMetaElement articleMetaElement = frontElement.getArticleMeta();
 		Assert.assertNotNull("articleMeta", articleMetaElement);
@@ -90,7 +90,7 @@ public class JATSSectionTaggerTest {
 		JATSFactory factory = new JATSFactory();
 		JATSArticleElement articleElement = factory.readArticle(inputFile);
 		JATSFrontElement frontElement = articleElement.getFront();
-		JATSJournalMetaElement journalMetaElement = frontElement.getJournalMeta();
+		JATSElement journalMetaElement = frontElement.getJournalMeta();
 		Assert.assertNotNull("journalMeta", journalMetaElement);
 		JATSArticleMetaElement articleMetaElement = frontElement.getArticleMeta();
 		Assert.assertNotNull("articleMeta", articleMetaElement);

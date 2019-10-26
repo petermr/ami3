@@ -10,7 +10,7 @@ import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
 
-public class JATSHistoryElement extends JATSElement {
+public class JATSHistoryElement extends JATSElement implements IsBlock {
 
 	/**
 	<history>

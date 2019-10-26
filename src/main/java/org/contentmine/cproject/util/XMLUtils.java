@@ -27,6 +27,9 @@ public class XMLUtils {
 	}
 
 	public static Document parseWithoutDTD(File xmlFile) {
+		if (xmlFile == null) {
+			throw new RuntimeException("Null xmlFile");
+		}
 		try {
 			return XMLUtils.parseWithoutDTD(new FileInputStream(xmlFile));
 		} catch (FileNotFoundException e) {

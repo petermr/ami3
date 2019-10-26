@@ -873,4 +873,12 @@ public class UtilTest {
 		strings = Util.createSplitStrings("[]", "[ab]c]");
 		Assert.assertEquals(5, strings.size());
 	}
+	
+	@Test
+	public void testHyphensToCamelCase() {
+		Assert.assertEquals("abc", Util.hyphensToLowerCamelCase("abc"));
+		Assert.assertEquals("Abc", Util.hyphensToUpperCamelCase("abc"));
+		Assert.assertEquals("abcDef", Util.hyphensToLowerCamelCase("abc-def"));
+		Assert.assertEquals("AbcDef", Util.hyphensToUpperCamelCase("abc-def"));
+	}
 }

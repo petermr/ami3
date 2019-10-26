@@ -31,6 +31,11 @@ import org.contentmine.norma.sections.FiguresExtractor;
 import org.contentmine.norma.sections.FinancialSupportExtractor;
 import org.contentmine.norma.sections.FrontMatterExtractor;
 import org.contentmine.norma.sections.IntroductionExtractor;
+import org.contentmine.norma.sections.JATSArticleElement;
+import org.contentmine.norma.sections.JATSBackElement;
+import org.contentmine.norma.sections.JATSBodyElement;
+import org.contentmine.norma.sections.JATSFactory;
+import org.contentmine.norma.sections.JATSFrontElement;
 import org.contentmine.norma.sections.JATSSectionTagger;
 import org.contentmine.norma.sections.JATSSectionTagger.SectionTag;
 import org.contentmine.norma.sections.JournalMetaExtractor;
@@ -84,15 +89,24 @@ public class AMISectionToolTest {
 	}
 	
 	@Test
+	/** selects some of the sections and then cut out the XML sections
+	 * 
+	 */
 	public void testTransformToHtml() {
 		String args = ""
-//				+ "-t " + new File(AMIFixtures.TEST_ZIKA10_DIR, "PMC3289602") + ""
-				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
+				+ "-t " + new File(AMIFixtures.TEST_ZIKA10_DIR, "PMC3289602") + ""
+//				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
 				+ " -v"
+				+ " --forcemake"
 				+ " --sections "
-				+ " " + SectionTag.ALL
-//				+ " " + SectionTag.ABSTRACT
+//				+ " " + SectionTag.ALL
+//				+ " " + SectionTag.ARTICLE
+//				+ " " + SectionTag.AUTO
+//				+ " " + SectionTag.TITLE
+				+ " " + SectionTag.ABSTRACT
 //				+ " " + SectionTag.METHODS
+//				+ " --sectiontype HTML"
+				+ " --sectiontype XML"
 				+ " --html nlm2html"
 //				+ " --write false"
 			;
@@ -113,6 +127,93 @@ public class AMISectionToolTest {
 			;
 		new AMISectionTool().runCommands(args);
 	}
+	
+	@Test
+	/** writes sections 
+	 * 
+	 */
+	public void testReadFrontBodyBack() {
+		File inputFile = new File(AMIFixtures.TEST_ZIKA10_DIR, "PMC3289602/fulltext.xml");
+		CTree cTree = new CTree(inputFile.getParentFile());
+		Assert.assertTrue(inputFile + " should exist", inputFile.exists());
+		JATSFactory factory = new JATSFactory();
+		JATSArticleElement articleElement = factory.readArticle(inputFile);
+		JATSFrontElement frontElement = articleElement.getFront();
+//		System.out.println(frontElement.debugString(0));
+		Assert.assertNotNull("front", frontElement);
+		JATSBodyElement bodyElement = articleElement.getBody();
+		System.out.println(bodyElement.debugString(0));
+		bodyElement.writeSections(cTree);
+		Assert.assertNotNull("body", bodyElement);
+		JATSBackElement backElement = articleElement.getBack();
+		System.out.println(backElement.debugString(0));
+		Assert.assertNotNull("back", backElement);
+	}
+
+	@Test
+	/** writes sections 
+	 * 
+	 */
+	public void testArticle() {
+		File inputFile = new File(AMIFixtures.TEST_ZIKA10_DIR, "PMC320490/fulltext.xml");
+		File parentFile = inputFile.getParentFile();
+		CTree cTree = new CTree(parentFile);
+		Assert.assertTrue(inputFile + " should exist", inputFile.exists());
+		JATSFactory factory = new JATSFactory();
+		JATSArticleElement articleElement = factory.readArticle(inputFile);
+		articleElement.writeSections(cTree);
+//		JATSFrontElement frontElement = articleElement.getFront();
+////		System.out.println(frontElement.debugString(0));
+//		Assert.assertNotNull("front", frontElement);
+//		JATSBodyElement bodyElement = articleElement.getBody();
+//		System.out.println(bodyElement.debugString(0));
+//		bodyElement.writeSections(cTree);
+//		Assert.assertNotNull("body", bodyElement);
+//		JATSBackElement backElement = articleElement.getBack();
+//		System.out.println(backElement.debugString(0));
+//		Assert.assertNotNull("back", backElement);
+	}
+
+	@Test
+	public void testFrontBodyBackProject() {
+		String args = ""
+				+ "-t " + new File(AMIFixtures.TEST_ZIKA10_DIR, "PMC320490") + ""
+//				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
+				+ " -v"
+				+ " --forcemake"
+				+ " --sections "
+				+ " " + SectionTag.ARTICLE
+//				+ " " + SectionTag.FRONT
+//				+ " " + SectionTag.BODY
+//				+ " " + SectionTag.BACK
+				+ " --sectiontype XML"
+				+ " --html nlm2html"
+//				+ " --write false"
+			;
+		new AMISectionTool().runCommands(args);
+	}
+
+	@Test
+	public void testAUTO() {
+		String args = ""
+//				+ "-t " + new File(AMIFixtures.TEST_ZIKA10_DIR, "PMC320490") + ""
+//			+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
+//				+ "-p " + "/Users/pm286/workspace/projects/climate/searches/clim107"
+//				+ "-p " + "/Users/pm286/workspace/projects/climate/searches/climatechange"
+				+ "-p " + "/Users/pm286/workspace/projects/ebola2015"
+//				+ " -v"
+				+ " --forcemake"
+				+ " --tables"
+				+ " --figures"
+//				+ " --sections "
+//				+ " " + SectionTag.ARTICLE
+//				+ " --write false
+
+			;
+		new AMISectionTool().runCommands(args);
+	}
+
+
 
 	@Test
 	public void testCEVBug() {

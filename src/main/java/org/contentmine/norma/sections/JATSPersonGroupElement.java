@@ -10,7 +10,21 @@ import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
 
-public class JATSPersonGroupElement extends JATSElement {
+/**
+ *    <person-group>
+    <name>
+     <surname>Weinbren</surname>
+     <given-names>MP</given-names>
+    </name>
+    <name>
+     <surname>Williams</surname>
+     <given-names>MC</given-names>
+    </name>
+   </person-group>
+ * @author pm286
+ *
+ */
+public class JATSPersonGroupElement extends JATSElement implements IsBlock {
 
 	private static final Logger LOG = Logger.getLogger(JATSPersonGroupElement.class);
 	static {
@@ -49,6 +63,18 @@ public class JATSPersonGroupElement extends JATSElement {
 			personGroupList.add((JATSPersonGroupElement)element);
 		}
 		etal = this.getSingleChildValue(JATSSpanFactory.ETAL);
+	}
+
+	@Override
+	public String debugString(int level) {
+		StringBuilder sb = new StringBuilder("pg: ");
+		List<Element> nameList = this.getChildElementList(JATSNameElement.TAG);  
+		for (Element name : nameList) {
+			addNonNull(sb, ((JATSElement)name).debugString());
+			sb.append(",");
+		}
+		return sb.toString()+"\n";
+		
 	}
 
 

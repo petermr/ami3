@@ -497,7 +497,7 @@ public class SectionTest {
 //		root = new File(NormaFixtures.TEST_SECTIONS_DIR, "zika10");
 		LOG.debug("root is: "+root+" and exists = "+root.exists());
 		if (!root.exists()) return;
-		JATSPMCitations citations = new JATSPMCitations();
+		PMCitations citations = new PMCitations();
 		for (File file : root.listFiles()) {
 			if (!file.isDirectory()) continue;
 			for (File file1 : file.listFiles()) {
@@ -514,7 +514,7 @@ public class SectionTest {
 			}
 		}
 		int minCitationCount = 4;
-		List<JATSPMCitation> citationList = citations.getCitations(minCitationCount);
+		List<PMCitation> citationList = citations.getCitations(minCitationCount);
 		List<Multiset.Entry<String>> citationList1 = citations.listCitationEntries(3);
 		/**
 23563266 x 7

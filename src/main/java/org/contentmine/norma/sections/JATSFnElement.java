@@ -5,7 +5,7 @@ import java.util.List;
 
 import nu.xom.Element;
 
-public class JATSFnElement extends JATSElement {
+public class JATSFnElement extends JATSElement implements IsBlock {
 
 	/**
 		<journal-meta>
@@ -27,15 +27,8 @@ public class JATSFnElement extends JATSElement {
 		return ALLOWED_CHILD_NAMES;
 	}
 
-//	private JATSJournalMetaElement journalMeta;
-//	private JATSArticleMetaElement articleMeta;
-	
 	public JATSFnElement(Element element) {
 		super(element);
 	}
 
-	protected void applyNonXMLSemantics() {
-//		journalMeta = (JATSJournalMetaElement) this.getSingleChild(JATSJournalMetaElement.TAG);
-//		articleMeta = (JATSArticleMetaElement) this.getSingleChild(JATSArticleMetaElement.TAG);
-	}
 }

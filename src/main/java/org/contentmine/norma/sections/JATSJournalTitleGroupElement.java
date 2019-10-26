@@ -5,7 +5,7 @@ import java.util.List;
 
 import nu.xom.Element;
 
-public class JATSJournalTitleGroupElement extends JATSElement {
+public class JATSJournalTitleGroupElement extends JATSElement implements IsBlock {
 
 	static String TAG = "journal-title-group";
 	public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {

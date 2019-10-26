@@ -5,7 +5,7 @@ import org.apache.log4j.Logger;
 
 import nu.xom.Element;
 
-public class JATSGivenNamesElement extends JATSElement {
+public class JATSGivenNamesElement extends JATSElement implements IsBlock {
 
 	private static final Logger LOG = Logger.getLogger(JATSGivenNamesElement.class);
 	static {

@@ -10,7 +10,7 @@ import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
 
-public class JATSArticleCategoriesElement extends JATSElement {
+public class JATSArticleCategoriesElement extends JATSElement implements IsBlock {
 
 	private static final Logger LOG = Logger.getLogger(JATSArticleCategoriesElement.class);
 	static {

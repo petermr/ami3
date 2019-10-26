@@ -16,7 +16,7 @@ import nu.xom.Element;
  * @author pm286
  *
  */
-public class JATSArticleMetaElement extends JATSElement {
+public class JATSArticleMetaElement extends JATSElement implements IsBlock, HasDirectory {
 	/**
 		<article-meta>
 			<article-id pub-id-type="pmcid">3289602</article-id>
@@ -197,7 +197,7 @@ public class JATSArticleMetaElement extends JATSElement {
 
 	private JATSAbstractElement abstractx;
 	private JATSHistoryElement history;
-	private JATSArticleTitleGroupElement titleGroup;
+	private JATSTitleGroupElement titleGroup;
 	private JATSContribGroupElement contribGroup;
 	
 	public JATSArticleMetaElement(Element element) {
@@ -254,4 +254,9 @@ public String getPublisherID() {
 	public JATSAbstractElement getAbstract() {
 		return abstractx;
 	}
+	
+	public String directoryName() {
+		return this.TAG;
+	}
+
 }
