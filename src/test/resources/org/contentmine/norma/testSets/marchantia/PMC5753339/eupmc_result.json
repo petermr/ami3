@@ -1,0 +1,414 @@
+{
+  "id": [
+    "29069403"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "29069403"
+  ],
+  "pmcid": [
+    "PMC5753339"
+  ],
+  "doi": [
+    "10.1093/nar/gkx1002"
+  ],
+  "title": [
+    "PLAZA 4.0: an integrative resource for functional, evolutionary and comparative plant genomics."
+  ],
+  "authorString": [
+    "Van Bel M, Diels T, Vancaester E, Kreft L, Botzki A, Van de Peer Y, Coppens F, Vandepoele K."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Van Bel M"
+          ],
+          "firstName": [
+            "Michiel"
+          ],
+          "lastName": [
+            "Van Bel"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-1873-2563",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Plant Biotechnology and Bioinformatics, Ghent University, 9052 Ghent, Belgium."
+          ]
+        },
+        {
+          "fullName": [
+            "Diels T"
+          ],
+          "firstName": [
+            "Tim"
+          ],
+          "lastName": [
+            "Diels"
+          ],
+          "initials": [
+            "T"
+          ],
+          "affiliation": [
+            "Department of Plant Biotechnology and Bioinformatics, Ghent University, 9052 Ghent, Belgium."
+          ]
+        },
+        {
+          "fullName": [
+            "Vancaester E"
+          ],
+          "firstName": [
+            "Emmelien"
+          ],
+          "lastName": [
+            "Vancaester"
+          ],
+          "initials": [
+            "E"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-9177-8808",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Plant Biotechnology and Bioinformatics, Ghent University, 9052 Ghent, Belgium."
+          ]
+        },
+        {
+          "fullName": [
+            "Kreft L"
+          ],
+          "firstName": [
+            "Lukasz"
+          ],
+          "lastName": [
+            "Kreft"
+          ],
+          "initials": [
+            "L"
+          ],
+          "affiliation": [
+            "VIB Bioinformatics Core, 9052 Ghent, Belgium."
+          ]
+        },
+        {
+          "fullName": [
+            "Botzki A"
+          ],
+          "firstName": [
+            "Alexander"
+          ],
+          "lastName": [
+            "Botzki"
+          ],
+          "initials": [
+            "A"
+          ],
+          "affiliation": [
+            "VIB Bioinformatics Core, 9052 Ghent, Belgium."
+          ]
+        },
+        {
+          "fullName": [
+            "Van de Peer Y"
+          ],
+          "firstName": [
+            "Yves"
+          ],
+          "lastName": [
+            "Van de Peer"
+          ],
+          "initials": [
+            "Y"
+          ],
+          "affiliation": [
+            "Department of Plant Biotechnology and Bioinformatics, Ghent University, 9052 Ghent, Belgium."
+          ]
+        },
+        {
+          "fullName": [
+            "Coppens F"
+          ],
+          "firstName": [
+            "Frederik"
+          ],
+          "lastName": [
+            "Coppens"
+          ],
+          "initials": [
+            "F"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-6565-5145",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Plant Biotechnology and Bioinformatics, Ghent University, 9052 Ghent, Belgium."
+          ]
+        },
+        {
+          "fullName": [
+            "Vandepoele K"
+          ],
+          "firstName": [
+            "Klaas"
+          ],
+          "lastName": [
+            "Vandepoele"
+          ],
+          "initials": [
+            "K"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-4790-2725",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Plant Biotechnology and Bioinformatics, Ghent University, 9052 Ghent, Belgium."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0003-4790-2725",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-6565-5145",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-1873-2563",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-9177-8808",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "D1"
+      ],
+      "volume": [
+        "46"
+      ],
+      "journalIssueId": [
+        "2637429"
+      ],
+      "dateOfPublication": [
+        "2018 Jan"
+      ],
+      "monthOfPublication": [
+        "1"
+      ],
+      "yearOfPublication": [
+        "2018"
+      ],
+      "printPublicationDate": [
+        "2018-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Nucleic acids research"
+          ],
+          "ISOAbbreviation": [
+            "Nucleic Acids Res."
+          ],
+          "medlineAbbreviation": [
+            "Nucleic Acids Res"
+          ],
+          "NLMid": [
+            "0411011"
+          ],
+          "ISSN": [
+            "0305-1048"
+          ],
+          "ESSN": [
+            "1362-4962"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2018"
+  ],
+  "pageInfo": [
+    "D1190-D1196"
+  ],
+  "abstractText": [
+    "PLAZA (https://bioinformatics.psb.ugent.be/plaza) is a plant-oriented online resource for comparative, evolutionary and functional genomics. The PLAZA platform consists of multiple independent instances focusing on different plant clades, while also providing access to a consistent set of reference species. Each PLAZA instance contains structural and functional gene annotations, gene family data and phylogenetic trees and detailed gene colinearity information. A user-friendly web interface makes the necessary tools and visualizations accessible, specific for each data type. Here we present PLAZA 4.0, the latest iteration of the PLAZA framework. This version consists of two new instances (Dicots 4.0 and Monocots 4.0) providing a large increase in newly available species, and offers access to updated and newly implemented tools and visualizations, helping users with the ever-increasing demands for complex and in-depth analyzes. The total number of species across both instances nearly doubles from 37 species in PLAZA 3.0 to 71 species in PLAZA 4.0, with a much broader coverage of crop species (e.g. wheat, palm oil) and species of evolutionary interest (e.g. spruce, Marchantia). The new PLAZA instances can also be accessed by a programming interface through a RESTful web service, thus allowing bioinformaticians to optimally leverage the power of the PLAZA platform."
+  ],
+  "affiliation": [
+    "Department of Plant Biotechnology and Bioinformatics, Ghent University, 9052 Ghent, Belgium."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5753339?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5753339"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1093/nar/gkx1002"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "1"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by-nc"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCreation": [
+    "2017-10-26"
+  ],
+  "dateOfRevision": [
+    "2018-01-10"
+  ],
+  "firstPublicationDate": [
+    "2018-01-01"
+  ]
+}

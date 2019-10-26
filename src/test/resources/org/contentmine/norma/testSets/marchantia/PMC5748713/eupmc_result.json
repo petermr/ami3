@@ -1,0 +1,364 @@
+{
+  "id": [
+    "29257096"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "29257096"
+  ],
+  "pmcid": [
+    "PMC5748713"
+  ],
+  "doi": [
+    "10.3390/genes8120395"
+  ],
+  "title": [
+    "Comparative Analysis of Four Calypogeia Species Revealed Unexpected Change in Evolutionarily-Stable Liverwort Mitogenomes."
+  ],
+  "authorString": [
+    "Ślipiko M, Myszczyński K, Buczkowska-Chmielewska K, Bączkiewicz A, Szczecińska M, Sawicki J."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Ślipiko M"
+          ],
+          "firstName": [
+            "Monika"
+          ],
+          "lastName": [
+            "Ślipiko"
+          ],
+          "initials": [
+            "M"
+          ],
+          "affiliation": [
+            "Department of Botany and Nature Protection, University of Warmia and Mazury in Olsztyn, Plac Łódzki 1, 10-727 Olsztyn, Poland. monika.slipiko@uwm.edu.pl."
+          ]
+        },
+        {
+          "fullName": [
+            "Myszczyński K"
+          ],
+          "firstName": [
+            "Kamil"
+          ],
+          "lastName": [
+            "Myszczyński"
+          ],
+          "initials": [
+            "K"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-3118-0900",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Botany and Nature Protection, University of Warmia and Mazury in Olsztyn, Plac Łódzki 1, 10-727 Olsztyn, Poland. kamil.myszczynski@gmail.com."
+          ]
+        },
+        {
+          "fullName": [
+            "Buczkowska-Chmielewska K"
+          ],
+          "firstName": [
+            "Katarzyna"
+          ],
+          "lastName": [
+            "Buczkowska-Chmielewska"
+          ],
+          "initials": [
+            "K"
+          ],
+          "affiliation": [
+            "Department of Biology, Institute of Experimental Biology, Adam Mickiewicz University in Poznań, Umultowska 89, 61-614 Poznań, Poland. androsac@amu.edu.pl."
+          ]
+        },
+        {
+          "fullName": [
+            "Bączkiewicz A"
+          ],
+          "firstName": [
+            "Alina"
+          ],
+          "lastName": [
+            "Bączkiewicz"
+          ],
+          "initials": [
+            "A"
+          ],
+          "affiliation": [
+            "Department of Biology, Institute of Experimental Biology, Adam Mickiewicz University in Poznań, Umultowska 89, 61-614 Poznań, Poland. alinbacz@amu.edu.pl."
+          ]
+        },
+        {
+          "fullName": [
+            "Szczecińska M"
+          ],
+          "firstName": [
+            "Monika"
+          ],
+          "lastName": [
+            "Szczecińska"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-5377-4304",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Botany and Nature Protection, University of Warmia and Mazury in Olsztyn, Plac Łódzki 1, 10-727 Olsztyn, Poland. monika.szczecinska@uwm.edu.pl."
+          ]
+        },
+        {
+          "fullName": [
+            "Sawicki J"
+          ],
+          "firstName": [
+            "Jakub"
+          ],
+          "lastName": [
+            "Sawicki"
+          ],
+          "initials": [
+            "J"
+          ],
+          "affiliation": [
+            "Department of Botany and Nature Protection, University of Warmia and Mazury in Olsztyn, Plac Łódzki 1, 10-727 Olsztyn, Poland. jakub.sawicki@uwm.edu.pl."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-3118-0900",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-5377-4304",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "12"
+      ],
+      "volume": [
+        "8"
+      ],
+      "journalIssueId": [
+        "2624009"
+      ],
+      "dateOfPublication": [
+        "2017 Dec"
+      ],
+      "monthOfPublication": [
+        "12"
+      ],
+      "yearOfPublication": [
+        "2017"
+      ],
+      "printPublicationDate": [
+        "2017-12-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Genes"
+          ],
+          "ISOAbbreviation": [
+            "Genes (Basel)"
+          ],
+          "medlineAbbreviation": [
+            "Genes (Basel)"
+          ],
+          "NLMid": [
+            "101551097"
+          ],
+          "ISSN": [
+            "2073-4425"
+          ],
+          "ESSN": [
+            "2073-4425"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2017"
+  ],
+  "abstractText": [
+    "Liverwort mitogenomes are considered to be evolutionarily stable. A comparative analysis of four Calypogeia species revealed differences compared to previously sequenced liverwort mitogenomes. Such differences involve unexpected structural changes in the two genes, cox1 and atp1, which have lost three and two introns, respectively. The group I introns in the cox1 gene are proposed to have been lost by two-step localized retroprocessing, whereas one-step retroprocessing could be responsible for the disappearance of the group II introns in the atp1 gene. These cases represent the first identified losses of introns in mitogenomes of leafy liverworts (Jungermanniopsida) contrasting the stability of mitochondrial gene order with certain changes in the gene content and intron set in liverworts."
+  ],
+  "affiliation": [
+    "Department of Botany and Nature Protection, University of Warmia and Mazury in Olsztyn, Plac Łódzki 1, 10-727 Olsztyn, Poland. monika.slipiko@uwm.edu.pl."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Editing sites",
+        "intron loss",
+        "Group I And Ii Introns",
+        "Retroprocessing",
+        "Calypogeia",
+        "Liverwort Mitogenome"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5748713?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5748713"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.3390/genes8120395"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "1"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCreation": [
+    "2017-12-20"
+  ],
+  "dateOfRevision": [
+    "2018-01-08"
+  ],
+  "electronicPublicationDate": [
+    "2017-12-19"
+  ],
+  "firstPublicationDate": [
+    "2017-12-19"
+  ]
+}

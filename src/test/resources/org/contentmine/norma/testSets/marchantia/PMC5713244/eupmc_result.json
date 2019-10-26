@@ -1,0 +1,803 @@
+{
+  "id": [
+    "29109378"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "29109378"
+  ],
+  "pmcid": [
+    "PMC5713244"
+  ],
+  "doi": [
+    "10.3390/ijms18112274"
+  ],
+  "title": [
+    "Evolutionary Conserved Cysteines Function as cis-Acting Regulators of Arabidopsis PIN-FORMED 2 Distribution."
+  ],
+  "authorString": [
+    "Retzer K, Lacek J, Skokan R, Del Genio CI, Vosolsobě S, Laňková M, Malínská K, Konstantinova N, Zažímalová E, Napier RM, Petrášek J, Luschnig C."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Retzer K"
+          ],
+          "firstName": [
+            "Katarzyna"
+          ],
+          "lastName": [
+            "Retzer"
+          ],
+          "initials": [
+            "K"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-6074-7999",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Applied Genetics and Cell Biology, University of Natural Resources and Life Sciences, Vienna (BOKU), Muthgasse 18, 1190 Wien, Austria. retzer@ueb.cas.cz."
+          ]
+        },
+        {
+          "fullName": [
+            "Lacek J"
+          ],
+          "firstName": [
+            "Jozef"
+          ],
+          "lastName": [
+            "Lacek"
+          ],
+          "initials": [
+            "J"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-1239-3625",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Institute of Experimental Botany of the Czech Academy of Sciences, Rozvojová 263, 165 02 Praha 6, Czech Republic. lacek@ueb.cas.cz."
+          ]
+        },
+        {
+          "fullName": [
+            "Skokan R"
+          ],
+          "firstName": [
+            "Roman"
+          ],
+          "lastName": [
+            "Skokan"
+          ],
+          "initials": [
+            "R"
+          ],
+          "affiliation": [
+            "Institute of Experimental Botany of the Czech Academy of Sciences, Rozvojová 263, 165 02 Praha 6, Czech Republic. skokan@ueb.cas.cz."
+          ]
+        },
+        {
+          "fullName": [
+            "Del Genio CI"
+          ],
+          "firstName": [
+            "Charo I"
+          ],
+          "lastName": [
+            "Del Genio"
+          ],
+          "initials": [
+            "CI"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-9958-017X",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "School of Life Sciences, University of Warwick, Gibbet Hill Road, Coventry CV4 7AL, UK. the.paraw@gmail.com."
+          ]
+        },
+        {
+          "fullName": [
+            "Vosolsobě S"
+          ],
+          "firstName": [
+            "Stanislav"
+          ],
+          "lastName": [
+            "Vosolsobě"
+          ],
+          "initials": [
+            "S"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-1180-3250",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Experimental Plant Biology, Faculty of Science, Charles University, Vinicna 5, 128 44 Prague 2, Czech Republic. stanislav.vosolsobe@natur.cuni.cz."
+          ]
+        },
+        {
+          "fullName": [
+            "Laňková M"
+          ],
+          "firstName": [
+            "Martina"
+          ],
+          "lastName": [
+            "Laňková"
+          ],
+          "initials": [
+            "M"
+          ],
+          "affiliation": [
+            "Institute of Experimental Botany of the Czech Academy of Sciences, Rozvojová 263, 165 02 Praha 6, Czech Republic. lankova@ueb.cas.cz."
+          ]
+        },
+        {
+          "fullName": [
+            "Malínská K"
+          ],
+          "firstName": [
+            "Kateřina"
+          ],
+          "lastName": [
+            "Malínská"
+          ],
+          "initials": [
+            "K"
+          ],
+          "affiliation": [
+            "Institute of Experimental Botany of the Czech Academy of Sciences, Rozvojová 263, 165 02 Praha 6, Czech Republic. malinska@ueb.cas.cz."
+          ]
+        },
+        {
+          "fullName": [
+            "Konstantinova N"
+          ],
+          "firstName": [
+            "Nataliia"
+          ],
+          "lastName": [
+            "Konstantinova"
+          ],
+          "initials": [
+            "N"
+          ],
+          "affiliation": [
+            "Department of Applied Genetics and Cell Biology, University of Natural Resources and Life Sciences, Vienna (BOKU), Muthgasse 18, 1190 Wien, Austria. nataliia.konstantinova@boku.ac.at."
+          ]
+        },
+        {
+          "fullName": [
+            "Zažímalová E"
+          ],
+          "firstName": [
+            "Eva"
+          ],
+          "lastName": [
+            "Zažímalová"
+          ],
+          "initials": [
+            "E"
+          ],
+          "affiliation": [
+            "Institute of Experimental Botany of the Czech Academy of Sciences, Rozvojová 263, 165 02 Praha 6, Czech Republic. Zazimalova@ueb.cas.cz."
+          ]
+        },
+        {
+          "fullName": [
+            "Napier RM"
+          ],
+          "firstName": [
+            "Richard M"
+          ],
+          "lastName": [
+            "Napier"
+          ],
+          "initials": [
+            "RM"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-0605-518X",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "School of Life Sciences, University of Warwick, Gibbet Hill Road, Coventry CV4 7AL, UK. Richard.Napier@warwick.ac.uk."
+          ]
+        },
+        {
+          "fullName": [
+            "Petrášek J"
+          ],
+          "firstName": [
+            "Jan"
+          ],
+          "lastName": [
+            "Petrášek"
+          ],
+          "initials": [
+            "J"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-6719-2735",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Institute of Experimental Botany of the Czech Academy of Sciences, Rozvojová 263, 165 02 Praha 6, Czech Republic. petrasek@ueb.cas.cz."
+          ]
+        },
+        {
+          "fullName": [
+            "Luschnig C"
+          ],
+          "firstName": [
+            "Christian"
+          ],
+          "lastName": [
+            "Luschnig"
+          ],
+          "initials": [
+            "C"
+          ],
+          "affiliation": [
+            "Department of Applied Genetics and Cell Biology, University of Natural Resources and Life Sciences, Vienna (BOKU), Muthgasse 18, 1190 Wien, Austria. christian.luschnig@boku.ac.at."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0001-6074-7999",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-9958-017X",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-0605-518X",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0003-1239-3625",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-1180-3250",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-6719-2735",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "11"
+      ],
+      "volume": [
+        "18"
+      ],
+      "journalIssueId": [
+        "2611214"
+      ],
+      "dateOfPublication": [
+        "2017 Oct"
+      ],
+      "monthOfPublication": [
+        "10"
+      ],
+      "yearOfPublication": [
+        "2017"
+      ],
+      "printPublicationDate": [
+        "2017-10-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "International journal of molecular sciences"
+          ],
+          "ISOAbbreviation": [
+            "Int J Mol Sci"
+          ],
+          "medlineAbbreviation": [
+            "Int J Mol Sci"
+          ],
+          "NLMid": [
+            "101092791"
+          ],
+          "ISSN": [
+            "1422-0067"
+          ],
+          "ESSN": [
+            "1422-0067"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2017"
+  ],
+  "abstractText": [
+    "Coordination of plant development requires modulation of growth responses that are under control of the phytohormone auxin. PIN-FORMED plasma membrane proteins, involved in intercellular transport of the growth regulator, are key to the transmission of such auxin signals and subject to multilevel surveillance mechanisms, including reversible post-translational modifications. Apart from well-studied PIN protein modifications, namely phosphorylation and ubiquitylation, no further post-translational modifications have been described so far. Here, we focused on root-specific Arabidopsis PIN2 and explored functional implications of two evolutionary conserved cysteines, by a combination of in silico and molecular approaches. PIN2 sequence alignments and modeling predictions indicated that both cysteines are facing the cytoplasm and therefore would be accessible to redox status-controlled modifications. Notably, mutant pin2C-A alleles retained functionality, demonstrated by their ability to almost completely rescue defects of a pin2 null allele, whereas high resolution analysis of pin2C-A localization revealed increased intracellular accumulation, and altered protein distribution within plasma membrane micro-domains. The observed effects of cysteine replacements on root growth and PIN2 localization are consistent with a model in which redox status-dependent cysteine modifications participate in the regulation of PIN2 mobility, thereby fine-tuning polar auxin transport."
+  ],
+  "affiliation": [
+    "Department of Applied Genetics and Cell Biology, University of Natural Resources and Life Sciences, Vienna (BOKU), Muthgasse 18, 1190 Wien, Austria. retzer@ueb.cas.cz."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Membrane Microdomains"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Arabidopsis"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Plant Roots"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GD"
+                  ],
+                  "qualifierName": [
+                    "growth & development"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Cysteine"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Indoleacetic Acids"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Arabidopsis Proteins"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Conserved Sequence"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Protein Transport"
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Arabidopsis",
+        "Intracellular distribution",
+        "auxin",
+        "Pin Proteins",
+        "Protein Mobility",
+        "Root Phenotype",
+        "Plasma Membrane Protein Sorting",
+        "Protein Modeling",
+        "Srrf"
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "PIN2 protein, Arabidopsis"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Indoleacetic Acids"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Arabidopsis Proteins"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Cysteine"
+          ],
+          "registryNumber": [
+            "K848JZ4886"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5713244?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5713244"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.3390/ijms18112274"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "1"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "pdb"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2018-06-19"
+  ],
+  "dateOfCreation": [
+    "2017-11-08"
+  ],
+  "dateOfRevision": [
+    "2018-06-20"
+  ],
+  "electronicPublicationDate": [
+    "2017-10-29"
+  ],
+  "firstPublicationDate": [
+    "2017-10-29"
+  ]
+}

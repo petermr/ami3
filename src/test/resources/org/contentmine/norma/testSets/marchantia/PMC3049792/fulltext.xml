@@ -1,0 +1,599 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.1 20151215//EN" "JATS-archivearticle1.dtd"> 
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Publishing DTD v2.3 20031101//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName journalpublishing.dtd?><?SourceDTD.Version 2.3?><?ConverterInfo.XSLTName jp2nlmx2.xsl?><?ConverterInfo.Version 1?><front><journal-meta><journal-id journal-id-type="nlm-ta">PLoS One</journal-id><journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group><issn pub-type="epub">1932-6203</issn><publisher><publisher-name>Public Library of Science</publisher-name><publisher-loc>San Francisco, USA</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">3049792</article-id><article-id pub-id-type="pmid">21408187</article-id><article-id pub-id-type="publisher-id">PONE-D-10-03935</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0017747</article-id><article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Biology</subject><subj-group><subject>Developmental Biology</subject><subj-group><subject>Morphogenesis</subject><subj-group><subject>Sex Determination</subject><subject>Sexual Differentiation</subject></subj-group></subj-group></subj-group><subj-group><subject>Evolutionary Biology</subject><subj-group><subject>Evolutionary Genetics</subject><subject>Genomic Evolution</subject></subj-group></subj-group><subj-group><subject>Genetics</subject><subj-group><subject>Cytogenetics</subject><subj-group><subject>Cytogenetic Analysis</subject><subject>Cytogenetic Techniques</subject></subj-group></subj-group><subj-group><subject>Molecular Genetics</subject><subj-group><subject>Gene Duplication</subject><subject>Gene Identification and Analysis</subject></subj-group></subj-group><subj-group><subject>Gene Function</subject></subj-group></subj-group><subj-group><subject>Genomics</subject><subj-group><subject>Chromosome Biology</subject><subj-group><subject>Chromatin</subject></subj-group></subj-group><subj-group><subject>Genome Evolution</subject></subj-group></subj-group><subj-group><subject>Molecular cell biology</subject><subj-group><subject>Chromosome Biology</subject><subj-group><subject>Chromosome Structure and Function</subject></subj-group></subj-group><subj-group><subject>Transposons</subject><subj-group><subject>DNA transposons</subject></subj-group></subj-group></subj-group><subj-group><subject>Zoology</subject><subj-group><subject>Entomology</subject></subj-group></subj-group></subj-group></article-categories><title-group><article-title>Interchromosomal Duplications on the <italic>Bactrocera oleae</italic> Y Chromosome Imply a Distinct Evolutionary Origin of the Sex Chromosomes Compared to <italic>Drosophila</italic>
+</article-title><alt-title alt-title-type="running-head"><italic>Bactrocera oleae</italic> Y Chromosome Duplications</alt-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Gabrieli</surname><given-names>Paolo</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Gomulski</surname><given-names>Ludvik M.</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Bonomi</surname><given-names>Angelica</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Siciliano</surname><given-names>Paolo</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Scolari</surname><given-names>Francesca</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Franz</surname><given-names>Gerald</given-names></name><xref ref-type="aff" rid="aff2">
+<sup>2</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Jessup</surname><given-names>Andrew</given-names></name><xref ref-type="aff" rid="aff2">
+<sup>2</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Malacrida</surname><given-names>Anna R.</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Gasperi</surname><given-names>Giuliano</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref><xref ref-type="corresp" rid="cor1">
+<sup>&#x0002a;</sup>
+</xref></contrib></contrib-group><aff id="aff1">
+<label>1</label>
+<addr-line>Department of Animal Biology, University of Pavia, Pavia, Italy</addr-line>
+</aff><aff id="aff2">
+<label>2</label>
+<addr-line>Entomology Unit, FAO/IAEA Agriculture and Biotechnology Laboratory, Joint FAO/IAEA Programme, International Atomic Energy Agency, Vienna, Austria</addr-line>
+</aff><contrib-group><contrib contrib-type="editor"><name><surname>Fugmann</surname><given-names>Sebastian</given-names></name><role>Editor</role><xref ref-type="aff" rid="edit1"/></contrib></contrib-group><aff id="edit1">National Institute on Aging, United States of America</aff><author-notes><corresp id="cor1">&#x0002a; E-mail: <email>gasperi@unipv.it</email></corresp><fn fn-type="con"><p>Conceived and designed the experiments: PG LMG GG. Performed the experiments: PG PS AB FS. Analyzed the data: PG LMG AB ARM GG. Contributed reagents/materials/analysis tools: PS FS GF AJ. Wrote the paper: PG LMG ARM GG.</p></fn></author-notes><pub-date pub-type="collection"><year>2011</year></pub-date><pub-date pub-type="epub"><day>7</day><month>3</month><year>2011</year></pub-date><volume>6</volume><issue>3</issue><elocation-id>e17747</elocation-id><history><date date-type="received"><day>27</day><month>10</month><year>2010</year></date><date date-type="accepted"><day>11</day><month>2</month><year>2011</year></date></history><permissions><copyright-statement>Gabrieli et al.</copyright-statement><copyright-year>2011</copyright-year><license xlink:href="http://creativecommons.org/licenses/by/4.0/"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are properly credited.</license-p></license></permissions><abstract><sec><title>Background</title><p>Diptera have an extraordinary variety of sex determination mechanisms, and <italic>Drosophila melanogaster</italic> is the paradigm for this group. However, the <italic>Drosophila</italic> sex determination pathway is only partially conserved and the family Tephritidae affords an interesting example. The tephritid Y chromosome is postulated to be necessary to determine male development. Characterization of Y sequences, apart from elucidating the nature of the male determining factor, is also important to understand the evolutionary history of sex chromosomes within the Tephritidae. We studied the Y sequences from the olive fly, <italic>Bactrocera oleae</italic>. Its Y chromosome is minute and highly heterochromatic, and displays high heteromorphism with the X chromosome.</p></sec><sec><title>Methodology/Principal Findings</title><p>A combined Representational Difference Analysis (RDA) and fluorescence <italic>in-situ</italic> hybridization (FISH) approach was used to investigate the Y chromosome to derive information on its sequence content. The Y chromosome is strewn with repetitive DNA sequences, the majority of which are also interdispersed in the pericentromeric regions of the autosomes. The Y chromosome appears to have accumulated small and large repetitive interchromosomal duplications. The large interchromosomal duplications harbour an <italic>importin-4</italic>-like gene fragment. Apart from these <italic>importin-4</italic>-like sequences, the other Y repetitive sequences are not shared with the X chromosome, suggesting molecular differentiation of these two chromosomes. Moreover, as the identified Y sequences were not detected on the Y chromosomes of closely related tephritids, we can infer divergence in the repetitive nature of their sequence contents.</p></sec><sec><title>Conclusions/Significance</title><p>The identification of Y-linked sequences may tell us much about the repetitive nature, the origin and the evolution of Y chromosomes. We hypothesize how these repetitive sequences accumulated and were maintained on the Y chromosome during its evolutionary history. Our data reinforce the idea that the sex chromosomes of the Tephritidae may have distinct evolutionary origins with respect to those of the Drosophilidae and other Dipteran families.</p></sec></abstract><counts><page-count count="11"/></counts></article-meta></front><body><sec id="s1"><title>Introduction</title><p>Diptera are a group with an extraordinary variety of sex determination mechanisms <xref rid="pone.0017747-Snchez1" ref-type="bibr">[1]</xref>. Sex determination in <italic>Drosophila</italic> has been the paradigm for this group <xref rid="pone.0017747-Saccone1" ref-type="bibr">[2]</xref>. However, it is now known that only parts of the <italic>Drosophila</italic> sex determination pathways are conserved in other insects and the Tephritidae family affords an example. This family is well known for its prolific speciation and it includes some of the world's most significant agricultural pests <xref rid="pone.0017747-White1" ref-type="bibr">[3]</xref>. The four major genera, <italic>Anastrepha</italic>, <italic>Bactrocera</italic>, <italic>Ceratitis</italic> and <italic>Rhagoletis</italic>, include pest species of remarkable economic importance. In particular, the genera <italic>Bactrocera</italic> and <italic>Ceratitis</italic> contain primarily Afrotropical, Australian, Mediterranean and Oriental highly invasive species. The karyotypes of all the species analyzed to date consist of six pairs of chromosomes including one pair of heteromorphic, highly heterochromatic sex chromosomes (XY), with the male being the heterogametic sex <xref rid="pone.0017747-GarciaMartinez1" ref-type="bibr">[4]</xref>, <xref rid="pone.0017747-Kounatidis1" ref-type="bibr">[5]</xref>, <xref rid="pone.0017747-MavraganiTsipidou1" ref-type="bibr">[6]</xref>, <xref rid="pone.0017747-Zhao1" ref-type="bibr">[7]</xref>. The Y chromosome in the Tephritidae, despite being very variable in size, not only at the inter-specific but also at the intra-specific level, is postulated to be necessary to determine the development of male individuals <xref rid="pone.0017747-Willhoeft1" ref-type="bibr">[8]</xref>. The sex-determination molecular mechanism of the species belonging to this family differs from that of <italic>Drosophila melanogaster</italic>, whose Y chromosome is dispensable in the sex determination process but contains genes essential for male fertility <xref rid="pone.0017747-Charlesworth1" ref-type="bibr">[9]</xref>. In fact, based on the model formulated for the most studied tephritid species, <italic>Ceratitis capitata</italic> (medfly), a postulated Y-linked male-determining factor (M) directly or indirectly blocks the regulatory functions of key sex determination genes <xref rid="pone.0017747-Saccone1" ref-type="bibr">[2]</xref>, <xref rid="pone.0017747-Willhoeft1" ref-type="bibr">[8]</xref>. Thus far, attempts to isolate Y-specific genes/sequences have resulted in the isolation of a Y-specific repetitive sequence in the medfly <xref rid="pone.0017747-Anleitner1" ref-type="bibr">[10]</xref>, <xref rid="pone.0017747-Zhou1" ref-type="bibr">[11]</xref>, but the molecular nature of the M factor remains unknown.</p><p>Characterization of Y-specific sequences, apart from elucidating the molecular nature of the male determining factor, is also of crucial importance to characterize the molecular nature of the sex chromosomes and their evolutionary history within this dipteran family. Indeed, the nascent interest in understanding the evolutionary history of tephritid Y chromosomes is explained by the fundamental differences between the sex-determination molecular cascades between the Drosophilidae and Tephritidae. The fundamental question is whether it is possible to infer in tephritid flies a model of Y evolution applicable to a male-determining factor-carrying chromosome.</p><p>To date no sequenced genome is available for any tephritid species. Only from <italic>Ceratitis capitata</italic> have Y-specific and Y-enriched sequences been isolated <xref rid="pone.0017747-Anleitner1" ref-type="bibr">[10]</xref>, <xref rid="pone.0017747-Zhou1" ref-type="bibr">[11]</xref>. The Y chromosome of this species is largely degenerate with many repetitive sequences and it appears to be shaped by the massive accumulation of transposable elements <xref rid="pone.0017747-Torti1" ref-type="bibr">[12]</xref>. No factors affecting fertility were detected outside the male determining region of the medfly Y chromosome <xref rid="pone.0017747-Willhoeft1" ref-type="bibr">[8]</xref>.</p><p>We chose to investigate the Y chromosome sequence content of a tephritid species from the <italic>Bactrocera</italic> genus, <italic>Bactrocera oleae</italic> (olive fly). The olive fly is a very economically important species that has a major impact on global olive production <xref rid="pone.0017747-MontielBueno1" ref-type="bibr">[13]</xref>. Its Y chromosome is very small, dot-shaped and highly heterochromatic, and displays very high heteromorphism with the X chromosome <xref rid="pone.0017747-MavraganiTsipidou1" ref-type="bibr">[6]</xref>, <xref rid="pone.0017747-MavraganiTsipidou2" ref-type="bibr">[14]</xref>. Moreover, in this species, the Y-based male determining system has been investigated at the molecular level <xref rid="pone.0017747-Lagos1" ref-type="bibr">[15]</xref>, <xref rid="pone.0017747-Lagos2" ref-type="bibr">[16]</xref>. Given the difficulties involved in the analysis of heterochromatic sequences, we employed a Representational Difference Analyses (RDA) approach <xref rid="pone.0017747-Lisitsyn1" ref-type="bibr">[17]</xref> to study the Y content of <italic>B. oleae</italic>. This technique has facilitated the isolation of female-specific sequences from <italic>Schistosoma mansoni</italic>
+<xref rid="pone.0017747-Drew1" ref-type="bibr">[18]</xref>, Y-specific sequences from <italic>Silene latifolia</italic>
+<xref rid="pone.0017747-Donnison1" ref-type="bibr">[19]</xref> and X- and Y-specific sequences from <italic>Marchantia polymorpha</italic>
+<xref rid="pone.0017747-Fujisawa1" ref-type="bibr">[20]</xref>. The data shows that the <italic>B. oleae</italic> Y chromosome appears to have accumulated small and large repetitive interchromosomal duplications that are not shared with the X chromosome, suggesting molecular differentiation between these two chromosomes. The isolated Y-specific and Y-enriched sequences were used to assess the presence of sequence conservation within several Tephritidae species and derive an hypothesis regarding the evolution of the sex chromosomes in this family.</p></sec><sec sec-type="materials|methods" id="s2"><title>Materials and Methods</title><sec id="s2a"><title>Flies</title><p>Samples of <italic>B. oleae</italic> from the Demokritos and Israel Hybrid strains and from two natural populations, collected in two Eastern Meditteranean regions , Lebanon and Jordan, were considered in this study. The two laboratory strains were obtained from the FAO/IAEA Agriculture and Biotechnology Laboratory (Seibersdorf, Vienna, Austria). The Demokritos strain was originally set up with wild olive flies collected in Marathon, Greece, in 1966 and it has since been maintained on artificial rearing medium <xref rid="pone.0017747-Tzanakakis1" ref-type="bibr">[21]</xref>. Wild male and female flies were added occasionally to maintain variability within the strain. The Israel Hybrid strain originated in 2006 by four back crosses of Demokritos females with wild males collected in Israel.</p><p>The wild Eastern Mediterranean samples were collected in 2005 from the locality of Jbeie (Republic of Lebanon) and in 2004 from the region of Salt (Hashemite Kingdom of Jordan).</p></sec><sec id="s2b"><title>Genomic DNA preparations</title><p>Genomic DNA from wild and laboratory strain samples was individually extracted from male and female adult flies using the method previously used for <italic>C. capitata</italic>
+<xref rid="pone.0017747-Baruffi1" ref-type="bibr">[22]</xref>. Following treatment with RNase A, the DNA was extracted with phenol/chloroform, precipitated with ethanol and resuspended in TE buffer (10 mM Tris-HCl, pH 8, 1 mM EDTA). The DNA concentration was quantified using a Nanodrop ND-1000 spectrophotometer (Nanodrop Technologies Inc., Wilmington, DE, USA).</p></sec><sec id="s2c"><title>Representational difference analysis (RDA)</title><p>The Representational Difference Analysis (RDA) <xref rid="pone.0017747-Lisitsyn1" ref-type="bibr">[17]</xref>, <xref rid="pone.0017747-Groot1" ref-type="bibr">[23]</xref> was applied to identify Y-specific or Y-enriched sequences in <italic>B. oleae</italic>. Briefly, to obtain maximum representation, male and female genomic DNA, extracted from twenty adults from the Israel Hybrid strain, was digested with four-cutter endonucleases, a CG-rich region cutter (<italic>Msp</italic>I) and an AT-rich region cutter (<italic>Mse</italic>I). Two pairs of each of the R, J and N series of adaptors (<xref ref-type="supplementary-material" rid="pone.0017747.s003">Table S1</xref>) were designed modifying adaptor-sequences from previously published protocols <xref rid="pone.0017747-Lisitsyn1" ref-type="bibr">[17]</xref>.</p><p>As a first step, the RDA protocol foresees the generation of male and female Representations by PCR of R-adaptors-ligated genomic fragments. To determine the optimum amount of input DNA, analytical amplifications were performed using serial dilutions of linker-ligated DNA: spanning four orders of magnitude (from 1000 to 0.064 pg/&#x000b5;l). Based on the results of this preliminary experiment, we chose concentrations of 8 pg/&#x000b5;l and 200 pg/&#x000b5;l to generate, respectively, the <italic>Msp</italic>I- and <italic>Mse</italic>I- male and female Representations. After the generation of Representations, adaptors were removed from the Representations by digestion, followed by spin-column purification (Purelink PCR Micro Kit, Invitrogen, Carlsbad, CA, USA). To generate the tester, J adaptors were ligated only to the Representations obtained from the male genomic DNA and control PCR reactions were performed to verify the adaptor substitution. In the subtractive hybridization, the Representations obtained from the female genomic DNA were used as driver DNA, using a 1/100 tester/driver ratio. After subtractive hybridization, the male-specific DNA was re-amplified to generate the Differential Product 1 (DP1) using J adaptors as primers. Following this procedure, a second and a third round of subtractive hybridizations were performed: the Differential Product 2 (DP2) was obtained using a new DNA tester generated by substituting the DP1 J adaptors for N adaptors and a 1/800 tester/driver ratio, while the Differential Product 3 (DP3) was obtained substituting the DP2 N adaptors for J adaptors and a 1/40000 tester/driver ratio. The final DP3 was cloned and sequenced to identify Y-specific and Y-enriched sequences in <italic>B. oleae</italic>.</p></sec><sec id="s2d"><title>Cloning, sequencing and analysis of Differential Product 3 (DP3) sequences</title><p>The male specific bands present in the Differential Product 3 (DP3) were gel eluted and cloned into the PCR&#x000ae;2.1-TOPO&#x000ae; vector using the TOPO TA cloning kit (Invitrogen). Positive colonies were selected and the size of the insert quantified by <italic>Eco</italic>RI digestion and gel electrophoresis. Clones were sequenced using an ABI-310 automatic sequencer and the ABI Prism BigDye Terminator Cycle Sequencing Ready Reaction Kit v. 3.1 (Applied Biosystems, Foster City, CA, USA). Sequence analysis was performed using the BLAST family of programs from the National Centre for Biotechnology Information <xref rid="pone.0017747-Altschul1" ref-type="bibr">[24]</xref>.</p></sec><sec id="s2e"><title>PCR amplifications of DP3 sequences from male and female genomic DNA</title><p>To assess whether the sequences found in the two DP3s were male-specific, male and female genomic DNA from twenty <italic>B. oleae</italic> individuals of the Israel Hybrid strain were amplified using primers designed on DP3 sequences. The primers were designed using Primer3 <xref rid="pone.0017747-Rozen1" ref-type="bibr">[25]</xref> (<xref ref-type="supplementary-material" rid="pone.0017747.s004">Table S2</xref>) and PCR amplifications were performed in 10 &#x000b5;l reaction volumes using &#x0223c;10 ng <italic>B. oleae</italic> male and female genomic DNA, 1.5 mM MgCl<sub>2</sub>, Reaction Buffer (10 mM Tris, 50 mM KCl; pH 8.3), 0.2 mM dNTPs mixture, 10 pmol of each primer and 1 unit <italic>Taq</italic> DNA polymerase (Invitrogen). Amplification was achieved on an Eppendorf Mastercycler Gradient using the following program: an initial denaturation step at 94&#x000b0;C for 3 min; 30 cycles of denaturation at 94&#x000b0;C for 30 s, annealing at the primer-specific annealing temperature (<xref ref-type="supplementary-material" rid="pone.0017747.s004">Table S2</xref>) for 30 s, extension at 72&#x000b0;C for 45 s, followed by a final extension at 72&#x000b0;C for 5 min. Established primers and cycling conditions were used to amplify the <italic>Botransformer</italic> sequence <xref rid="pone.0017747-Lagos2" ref-type="bibr">[16]</xref>. The PCR products were analyzed on 14&#x000d7;10 cm 1.5&#x00025; agarose gel slabs in 1&#x000d7;TAE buffer together with a 100 bp DNA ladder standard (Invitrogen). Ethidium bromide staining and exposure to UV light was used to visualize the bands.</p><p>Bands amplified using primers designed on DP3 sequences were directly cloned into the PCR&#x000ae;2.1-TOPO&#x000ae; vector (Invitrogen) and sequenced. Putative gene structures were predicted using the GenScan program <xref rid="pone.0017747-Burge1" ref-type="bibr">[26]</xref>. Nucleotide sequences were aligned using T-coffee <xref rid="pone.0017747-Poirot1" ref-type="bibr">[27]</xref> and the neutral versus positive selection of synonymous and nonsynonymous substitutions of putative protein-coding fragments was assessed using the codon-based Fisher's exact test (Nei-Gojobori method) in MEGA4 <xref rid="pone.0017747-Tamura1" ref-type="bibr">[28]</xref>.</p></sec><sec id="s2f"><title>Southern hybridization analyses</title><p>To determine the <italic>B. oleae</italic> male and female genomic distribution of the DP3 sequences, genomic DNA from individual male and female flies (4 &#x000b5;g) from the Israel Hybrid strain were digested with <italic>Msp</italic>I or <italic>Mse</italic>I endonucleases. The digested DNAs were electrophoresed on a 20&#x000d7;14 cm 1&#x00025; agarose gel in 1&#x000d7;TBE buffer and transferred to a positively charged nylon membrane according to Southern <xref rid="pone.0017747-Southern1" ref-type="bibr">[29]</xref>. The membrane was hybridized at 55&#x000b0;C with 200 ng of probe DNA labelled with the Gene Images Alkphos Direct labelling system (GE Healthcare, Little Chalfont, UK) using the random primer method. The hybridization and detection protocols were those described by the manufacturer. Signal detection was performed using CDP-star followed by exposure to autoradiographic film (X-OMAT AR, Kodak).</p></sec><sec id="s2g"><title>Chromosome preparation and fluorescence <italic>in situ</italic> hybridization</title><p>To assess the chromosomal distribution of the DP3 sequences, mitotic chromosome spreads were obtained using third instar larvae <xref rid="pone.0017747-MavraganiTsipidou1" ref-type="bibr">[6]</xref> of the <italic>B. oleae</italic> Israel Hybrid strain. Briefly, brain tissue was incubated in 1&#x00025; sodium citrate for 10 min at room temperature and transferred to methanol-acetic acid 3&#x02236;1 solution for 4 min. The material was disrupted in 100 &#x000b5;l 60&#x00025; acetic acid and dropped onto clean slides and dried. Fluorescence <italic>in situ</italic> hybridization (FISH) was performed using the following protocol; pre-hybridization was performed according to <xref rid="pone.0017747-Willhoeft1" ref-type="bibr">[8]</xref>: chromosome preparations were denatured at 80&#x000b0;C for 2 h, dehydrated by immersed in 30&#x00025;, 50&#x00025;, 70&#x00025; and 96&#x00025; ethanol for 2 min and allowing them to air dry. Slides were then immersed in NaOH 0.07 M for 2 min, rinsed for a few seconds in 0.4&#x000d7;SSC buffer plus 0.1&#x00025; Tween 20 and dehydrated using ethanol as previously done. To generate the labelled probe, 1 &#x000b5;g of DNA resuspended in ddH<sub>2</sub>O (16 &#x000b5;l) was denatured by boiling for 10 min. 4 &#x000b5;l of labelling mix (Biotin High Prime kit; Roche, Basel, Switzerland) were added and the reaction was incubated over night at 37&#x000b0;C. After the reaction was stopped, ddH<sub>2</sub>O (5 &#x000b5;l), 20&#x000d7;SSC buffer (25 &#x000b5;l) and formamide (50 &#x000b5;l) were added and 25 &#x000b5;l of denatured probe was placed on each pre-treated slide. The hybridization was performed at 37&#x000b0;C over night in a humid chamber and detection of hybridization signals was performed using the Vectastain ABC elite kit (Vector Laboratories, Burlingame, CA, USA) and Alexa Fluor 594 Tyramide (Invitrogen). Chromosomes were DAPI stained and the slides were mounted using the VECTASHIELD mounting medium (Vector Laboratories). Chromosomes were screened under an epifluorescence Zeiss Axioplan microscope and images were captured using an Olympus DP70 digital camera.</p></sec></sec><sec id="s3"><title>Results</title><sec id="s3a"><title>Identification and characterization of Y-specific or Y-enriched RDA sequences</title><p>The amplification patterns generated during each step of the RDA analyses are shown in <xref ref-type="fig" rid="pone-0017747-g001">Fig. 1</xref>. The final Difference Product 3 (DP3) of both <italic>Msp</italic>I and the <italic>Mse</italic>I RDA libraries each contained four discrete bands that were isolated by gel electrophoresis, gel-eluted, cloned and sequenced (Genbank acc. n. HR714291&#x02013;HR714300).</p><fig id="pone-0017747-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0017747.g001</object-id><label>Figure 1</label><caption><title>Agarose gel electrophoresis of <italic>Msp</italic>I (upper panel) and <italic>Mse</italic>I (lower panel) difference products from <italic>B. oleae</italic> Israel Hybrid strain genomic DNA.</title><p>The Representation and the three Differential Products (DP1, DP2 and DP3) are shown.</p></caption><graphic xlink:href="pone.0017747.g001"/></fig><p>From these eight bands, ten sequences were identified, as both the MspI-1 and the MspI-2 clones comprised two different sequences (MspI-1A and MspI-1B, MspI-2A and MspI-2B). All the sequences were analyzed using BLAST and the results are reported in <xref ref-type="table" rid="pone-0017747-t001">Table 1</xref>.</p><table-wrap id="pone-0017747-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0017747.t001</object-id><label>Table 1</label><caption><title>BLAST analyses of the RDA clones identified in this study.</title></caption><alternatives><graphic id="pone-0017747-t001-1" xlink:href="pone.0017747.t001"/><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup><thead><tr><td align="left" rowspan="1" colspan="1">Clone</td><td align="left" rowspan="1" colspan="1">Clone length (bp)</td><td align="left" rowspan="1" colspan="1">BLASTX<sup>X</sup> or BLASTN<sup>N</sup> best hits</td><td align="left" rowspan="1" colspan="1">alignment length</td><td align="left" rowspan="1" colspan="1">e-value</td><td align="left" rowspan="1" colspan="1">maximum identity (&#x00025;)</td></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">MspI-3</td><td align="left" rowspan="1" colspan="1">315</td><td align="left" rowspan="1" colspan="1">No significant hit</td><td align="left" rowspan="1" colspan="1">
+<italic>-</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>-</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>-</italic>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">MspI-4</td><td align="left" rowspan="1" colspan="1">246</td><td align="left" rowspan="1" colspan="1">No significant hit</td><td align="left" rowspan="1" colspan="1">
+<italic>-</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>-</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>-</italic>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">MspI-1A</td><td align="left" rowspan="1" colspan="1">612</td><td align="left" rowspan="1" colspan="1">
+<italic>Drosophila erecta</italic> inactive <italic>mariner</italic> mobile element<sup>N</sup>
+</td><td align="left" rowspan="1" colspan="1">210</td><td align="left" rowspan="1" colspan="1">3E-30</td><td align="left" rowspan="1" colspan="1">75</td></tr><tr><td align="left" rowspan="1" colspan="1">MspI-2A</td><td align="left" rowspan="1" colspan="1">519</td><td align="left" rowspan="1" colspan="1">
+<italic>Drosophila buzzatii</italic> Osvaldo retrotransposon<sup>N</sup>
+</td><td align="left" rowspan="1" colspan="1">162</td><td align="left" rowspan="1" colspan="1">2E-13</td><td align="left" rowspan="1" colspan="1">71</td></tr><tr><td align="left" rowspan="1" colspan="1">MspI-2B</td><td align="left" rowspan="1" colspan="1">423</td><td align="left" rowspan="1" colspan="1">
+<italic>Bactrocera oleae ovoA</italic> (AJ535756.1)<sup>N</sup>
+</td><td align="left" rowspan="1" colspan="1">67</td><td align="left" rowspan="1" colspan="1">3E-04</td><td align="left" rowspan="1" colspan="1">80</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<italic>Bactrocera oleae ovoA</italic> (AJ535756.1)<sup>N</sup>
+</td><td align="left" rowspan="1" colspan="1">67</td><td align="left" rowspan="1" colspan="1">3E-04</td><td align="left" rowspan="1" colspan="1">80</td></tr><tr><td align="left" rowspan="1" colspan="1">MseI-1</td><td align="left" rowspan="1" colspan="1">398</td><td align="left" rowspan="1" colspan="1">
+<italic>Bactrocera oleae ovoA</italic> (AJ535756.1)<sup>N</sup>
+</td><td align="left" rowspan="1" colspan="1">57</td><td align="left" rowspan="1" colspan="1">7E-11</td><td align="left" rowspan="1" colspan="1">89</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<italic>Bactrocera oleae ovoA</italic> (AJ535756.1)<sup>N</sup>
+</td><td align="left" rowspan="1" colspan="1">57</td><td align="left" rowspan="1" colspan="1">7E-11</td><td align="left" rowspan="1" colspan="1">89</td></tr><tr><td align="left" rowspan="1" colspan="1">MseI-2</td><td align="left" rowspan="1" colspan="1">310</td><td align="left" rowspan="1" colspan="1">
+<italic>Bactrocera oleae ovoA</italic> (AJ535756.1)<sup>N</sup>
+</td><td align="left" rowspan="1" colspan="1">246</td><td align="left" rowspan="1" colspan="1">3E-71</td><td align="left" rowspan="1" colspan="1">84</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<italic>Bactrocera oleae ovoA</italic> (AJ535756.1)<sup>N</sup>
+</td><td align="left" rowspan="1" colspan="1">246</td><td align="left" rowspan="1" colspan="1">3E-71</td><td align="left" rowspan="1" colspan="1">84</td></tr><tr><td align="left" rowspan="1" colspan="1">MspI-1B</td><td align="left" rowspan="1" colspan="1">572</td><td align="left" rowspan="1" colspan="1">
+<italic>Anopheles gambiae</italic> AGAP006942-PA<sup>X</sup>
+</td><td align="left" rowspan="1" colspan="1">68</td><td align="left" rowspan="1" colspan="1">2E-14</td><td align="left" rowspan="1" colspan="1">55</td></tr><tr><td align="left" rowspan="1" colspan="1">MseI-3</td><td align="left" rowspan="1" colspan="1">283</td><td align="left" rowspan="1" colspan="1">
+<italic>Anopheles gambiae</italic> AGAP006942-PA<sup>X</sup>
+</td><td align="left" rowspan="1" colspan="1">52</td><td align="left" rowspan="1" colspan="1">1E-04</td><td align="left" rowspan="1" colspan="1">42</td></tr><tr><td align="left" rowspan="1" colspan="1">MseI-4</td><td align="left" rowspan="1" colspan="1">226</td><td align="left" rowspan="1" colspan="1">
+<italic>Anopheles gambiae</italic> AGAP006942-PA<sup>X</sup>
+</td><td align="left" rowspan="1" colspan="1">79</td><td align="left" rowspan="1" colspan="1">6E-11</td><td align="left" rowspan="1" colspan="1">48</td></tr></tbody></table></alternatives></table-wrap><p>The MspI-3 and the MspI-4 sequences presented no significant similarity (BLASTN and BLASTX) with any of the sequences present in Genbank. On the contrary, MspI-1A and the MspI-2A harbour sequences that are similar to known transposable elements (TEs). The fragment present in MspI-1A is similar to the transposase coding sequences of a <italic>mariner</italic> element of the <italic>mellifera</italic> family, <xref rid="pone.0017747-Torti1" ref-type="bibr">[12]</xref>, <xref rid="pone.0017747-Robertson1" ref-type="bibr">[30]</xref>; however, the presence of stop codons in the conceptual translation suggests that it may be an inactive element. MspI-2A contains a sequence similar to the <italic>Osvaldo</italic> retrotransposon first identified in <italic>Drosophila buzzatii</italic>
+<xref rid="pone.0017747-Labrador1" ref-type="bibr">[31]</xref>, <xref rid="pone.0017747-Pantazidis1" ref-type="bibr">[32]</xref>.</p><p>MspI-2B, MseI-1 and MseI-2 showed sequence identity with two different promotor regions present in the zinc-finger transcription factor encoding gene, <italic>Ovo</italic>, of <italic>B. oleae</italic> which codes for two alternative transcripts <italic>OvoA</italic> and <italic>OvoB</italic> with separate promotors <xref rid="pone.0017747-Khila1" ref-type="bibr">[33]</xref> (<xref ref-type="supplementary-material" rid="pone.0017747.s001">Fig. S1A</xref>). Moreover, the MseI-1 and MseI-2 sequences are partially similar to the same section of the promoter region upstream of the <italic>OvoA</italic> transcript start site (nucleotide identity: 89&#x00025; and 84&#x00025;), as they share an identical 57 bp region. MspI-2B differs from the previous two sequences and shares partial identity with a different section of the promoter region upstream of the <italic>OvoA</italic> transcript start site (nucleotides identity: 80&#x00025;).</p><p>Finally, the MspI-1B, the MseI-3 and the MseI-4 clones shared amino-acid similarity with Importin-4 proteins of many insect species. In particular, these three sequences shared similarity, in part or over their full length (such as MseI-4, 226 bp), to different portions of the <italic>Anopheles gambiae</italic> Importin-4 protein sequence (AGAP006942) (<xref ref-type="supplementary-material" rid="pone.0017747.s001">Fig. S1B</xref>). MspI-1B is similar (amino-acid identity: 55&#x00025;) to the importin-beta domain, while MseI-4 to the N-portion of the Armadillo domain (amino-acid identity: 42&#x00025;) and MseI-3 to the HEAT-repeated domain (amino-acid identity: 48&#x00025;).</p></sec><sec id="s3b"><title>Genomic distribution of the isolated RDA sequences</title><p>To investigate whether the transposable element-related sequences present in MspI-1A and the MspI-2A clones are Y-specific or Y-enriched sequences, PCR primers were designed (<xref ref-type="supplementary-material" rid="pone.0017747.s004">Table S2</xref>) and used to amplify male and female genomic DNA from the Israel Hybrid strain. For both the <italic>mariner</italic> and <italic>Osvaldo</italic> sequences, primer pairs produced the same amplification product in both male and female samples and both amplicons were of the expected size. Furthermore, the Southern blot analysis demonstrated that multiple copies of these sequences are spread throughout the <italic>B. oleae</italic> genome (not shown).</p><p>Primers were designed also on the <italic>Ovo</italic>-related sequences present in MspI-2B, MseI-1 and MseI-2 clones, and used to amplify male and female genomic DNA from the Israel Hybrid strain (<xref ref-type="fig" rid="pone-0017747-g002">Fig. 2A</xref>). Specifically, for MspI-2B the same amplification product was obtained in both male and female samples and both amplicons were of the expected size (182 bp). However, despite using the same amount of genomic DNA template, the intensity of the male product was much greater than that of the female. Also the genomic amplification of the MseI-1 sequence produced a single product of the expected size in both male and female samples (129 bp), whereas for MseI-2 at least five bands were obtained from male samples (188, 342, 500, 650, and 955 bp; Genbank acc. n. HR714301&#x02013;HR714304) and no products in female samples. The five amplicons obtained from the male sample are imperfect tandem-repeats of the expected 188 bp MseI-2 amplicon (<xref ref-type="fig" rid="pone-0017747-g002">Fig. 2B</xref>). Southern blot analysis showed that this 188 bp portion of the MseI-2 sequence is a male-enriched sequence, as, although multiple bands ranging from 200 to 600 bp were visible in both male and female samples, their intensity was greater in the male samples (<xref ref-type="fig" rid="pone-0017747-g002">Fig. 2C</xref>). Moreover, FISH to mitotic chromosomes confirmed that the 188 bp sequence is located on the Y chromosome and on the pericentromeric region of autosome 2 (<xref ref-type="fig" rid="pone-0017747-g002">Fig. 2D</xref>).</p><fig id="pone-0017747-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0017747.g002</object-id><label>Figure 2</label><caption><title>The <italic>B. oleae</italic> Y chromosome contains small duplicated regions similar to a portion of the <italic>Ovo</italic> promoter region.</title><p>A) PCR amplifications on male and female genomic DNA from the Israel Hybrid strain using primers designed on the MspI-2B, MseI-1 and MseI-2 RDA clones. As a control, <italic>Botransformer</italic> (<italic>Botra</italic>) was amplified from the same samples. B) Schematic representations of the tandem repeat arrays, which are present on the <italic>B. oleae</italic> Y chromosome. The 188 bp repeat unit was isolated from the MseI-2 RDA clones. C&#x02013;D) The enrichment of MseI-2-like sequences on the <italic>B. oleae</italic> Y chromosome was verified using Southern blot analyses (C) and fluorescence in situ hybridization (D) to male and female mitotic chromosomes preparations (scale bar 15 &#x000b5;m). For the Southern blot analyses male and female genomic DNA was digested with <italic>Mse</italic>I.</p></caption><graphic xlink:href="pone.0017747.g002"/></fig><p>Primers were also designed for the RDA sequences that are similar to insect importin-4 proteins, i.e. the MspI-1B, MseI-3 and MseI-4 clones (<xref ref-type="supplementary-material" rid="pone.0017747.s004">Table S2</xref>) and used to amplify male and female genomic DNA from the Israel Hybrid strain (<xref ref-type="fig" rid="pone-0017747-g003">Fig. 3A</xref>) in order to investigate the genomic distribution of these sequences. The MseI-4 primers produced the same product (169 bp) in both the male and female samples. However, despite using the same amount of genomic DNA template, the male <italic>importin-4</italic> amplification product was much more intense than that of the female. On the contrary, primers designed on MspI-1B clone amplified two bands only from male genomic DNA (330 bp and 400 bp). These two amplicons are closely related <italic>importin-4</italic>-like sequences sharing 72&#x00025; identity. Similarly, primers designed on the MseI-3 RDA clone amplified a single <italic>importin-4</italic> band only in male individuals (117 bp).</p><fig id="pone-0017747-g003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0017747.g003</object-id><label>Figure 3</label><caption><title>The <italic>B. oleae</italic> Y chromosome contains large interchromosomal duplications harbouring <italic>importin-4</italic> gene fragments.</title><p>A) PCR amplifications on male and female genomic DNA from the Israel Hybrid strain using primers designed on the MspI-1B, MseI-3 and MseI-4 RDA clones. As a control, <italic>Botransformer</italic> (<italic>Botra</italic>) was amplified from the same samples. B&#x02013;C) The Y-specificity of the MspI-1B and MseI-3 clones was verified using Southern blot analyses and fluorescence in situ hybridization to male and female <italic>B. oleae</italic> mitotic chromosomes preparations (scale bar 15 &#x000b5;m). For the Southern blot analyses male and female genomic DNA was digested with <italic>MspI</italic> or <italic>MseI</italic>, depending on the RDA clone used as probe.</p></caption><graphic xlink:href="pone.0017747.g003"/></fig><p>The Y-specificity of the MspI-1B and the MseI-3 clones was tested using Southern blot analysis and in FISH. These analysis confirmed that the MspI-1B <italic>importin-4</italic> sequence is Y-specific, as it only hybridizes to a 550 bp fragment of male <italic>Msp</italic>I digested genomic DNA and only to the Y chromosome as shown in <xref ref-type="fig" rid="pone-0017747-g003">Fig. 3B</xref>. On the contrary, the MseI-3 <italic>importin-4</italic> clone hybridizes to a single band of about 300 bp in both male and female <italic>Mse</italic>I digested genomic DNA. In FISH analyses it hybridizes to the Y chromosome, to the highly heterochromatic long arm of the X chromosome and to the pericentromeric region of all the five autosomes (<xref ref-type="fig" rid="pone-0017747-g003">Fig. 3C</xref>).</p></sec><sec id="s3c"><title>Isolation and characterization of a Y-specific <italic>importin-4</italic> gene fragment</title><p>To amplify a Y-specific <italic>importin-4</italic> gene fragment, longer than those present in the RDA clones, we used the primers designed to amplify the Y-specific <italic>importin-4</italic> MspI-1B and the MseI-3 sequences. Based on results of the BLASTX analyses of MspI-1B and MseI-3 RDA clones, we used the MspI-1Br and MseI-1r primer pair (<xref ref-type="supplementary-material" rid="pone.0017747.s004">Table S2</xref>). A single 2048 bp amplification product was obtained only from male-derived DNA (GenBank acc. n. HR714305) (<xref ref-type="fig" rid="pone-0017747-g004">Fig. 4A</xref>). BLASTN and BLASTX analyses of this 2048 bp fragment confirmed that it might be part of a gene similar to the <italic>importin-4</italic> genes of many insect species (<xref ref-type="table" rid="pone-0017747-t002">Table 2</xref>). Using GenScan <xref rid="pone.0017747-Burge1" ref-type="bibr">[26]</xref> it was also possible to predict a putative exon-intron structure for this gene fragment (<xref ref-type="fig" rid="pone-0017747-g004">Fig. 4B</xref>) and the protein encoded by the putative coding sequence is similar to Importin-4 proteins of different organisms, as suggested by the BLASTP analysis (<xref ref-type="table" rid="pone-0017747-t002">Table 2</xref>).</p><fig id="pone-0017747-g004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0017747.g004</object-id><label>Figure 4</label><caption><title>Presence of larger <italic>importin-4</italic> gene fragments on the <italic>B. oleae</italic> Y chromosome.</title><p>
+<bold>A</bold>) Agarose gel electrophoresis of PCR products using the <italic>Msp</italic>I-1r and <italic>Mse</italic>I-3r primers sets on male and female genomic DNA from the Israel Hybrid strain. The <italic>Botransformer</italic> gene was amplified from the same samples as a positive control. <bold>B</bold>) Putative genomic organization of the Y specific <italic>importin-4</italic> gene fragments as predicted by GenScan analysis. The predicted exons are shown as black boxes. The BoY primer set was designed to amplify the exon region shown in grey.</p></caption><graphic xlink:href="pone.0017747.g004"/></fig><table-wrap id="pone-0017747-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0017747.t002</object-id><label>Table 2</label><caption><title>BLAST analyses of <italic>importin-4</italic> sequences identified in <italic>B. oleae</italic>.</title></caption><alternatives><graphic id="pone-0017747-t002-2" xlink:href="pone.0017747.t002"/><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup><thead><tr><td align="left" rowspan="1" colspan="1">Sequence</td><td align="left" rowspan="1" colspan="1">BLASTX<sup>X</sup>, BLASTN<sup>N</sup> or BLASTP<sup>P</sup> best hits</td><td align="left" rowspan="1" colspan="1">alignment length (bp)</td><td align="left" rowspan="1" colspan="1">e-value</td><td align="left" rowspan="1" colspan="1">maximum identity (&#x00025;)</td></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">Y-specific sequence (2048 bp)</td><td align="left" rowspan="1" colspan="1">
+<italic>Drosophila virilis</italic> GJ12922<sup>N</sup>
+</td><td align="left" rowspan="1" colspan="1">196</td><td align="left" rowspan="1" colspan="1">4E-23</td><td align="left" rowspan="1" colspan="1">69</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<italic>Aedes aegypti importin beta-4</italic> (AAEL010698)<sup>N</sup>
+</td><td align="left" rowspan="1" colspan="1">217</td><td align="left" rowspan="1" colspan="1">2E-08</td><td align="left" rowspan="1" colspan="1">66</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<italic>Culex quinquefasciatus importin-4</italic> (CPIJ002334)<sup>N</sup>
+</td><td align="left" rowspan="1" colspan="1">225</td><td align="left" rowspan="1" colspan="1">7E-07</td><td align="left" rowspan="1" colspan="1">65</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<italic>Drosophila wiilistoni</italic> GK11274<sup>X</sup>
+</td><td align="left" rowspan="1" colspan="1">263</td><td align="left" rowspan="1" colspan="1">2E-60</td><td align="left" rowspan="1" colspan="1">47</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<italic>Culex quinquefasciatus importin-4</italic> (CPIJ002334)<sup>X</sup>
+</td><td align="left" rowspan="1" colspan="1">247</td><td align="left" rowspan="1" colspan="1">4E-55</td><td align="left" rowspan="1" colspan="1">44</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<italic>Anopheles gambiae</italic> AGAP004962<sup>X</sup>
+</td><td align="left" rowspan="1" colspan="1">262</td><td align="left" rowspan="1" colspan="1">3E-54</td><td align="left" rowspan="1" colspan="1">43</td></tr><tr><td align="left" rowspan="1" colspan="1">Y-specific <italic>importin</italic>-<italic>4</italic> (putative CDS)</td><td align="left" rowspan="1" colspan="1">
+<italic>Drosophila wiilistoni</italic> GK11274<sup>P</sup>
+</td><td align="left" rowspan="1" colspan="1">254</td><td align="left" rowspan="1" colspan="1">6E-47</td><td align="left" rowspan="1" colspan="1">42</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<italic>Culex quinquefasciatus importin-4</italic> (CPIJ002334)<sup>P</sup>
+</td><td align="left" rowspan="1" colspan="1">319</td><td align="left" rowspan="1" colspan="1">2E-44</td><td align="left" rowspan="1" colspan="1">35</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<italic>Aedes aegypti importin beta-4</italic> (AAEL010698)<sup>P</sup>
+</td><td align="left" rowspan="1" colspan="1">252</td><td align="left" rowspan="1" colspan="1">3E-44</td><td align="left" rowspan="1" colspan="1">40</td></tr><tr><td align="left" rowspan="1" colspan="1">autosomal <italic>importin-4</italic> gene (688 bp)</td><td align="left" rowspan="1" colspan="1">
+<italic>Drosophila pseudoobscura</italic> GA28523<sup>N</sup>
+</td><td align="left" rowspan="1" colspan="1">95</td><td align="left" rowspan="1" colspan="1">3E-12</td><td align="left" rowspan="1" colspan="1">78</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<italic>Dropsophila melanogaster</italic> CG32164<sup>N</sup>
+</td><td align="left" rowspan="1" colspan="1">64</td><td align="left" rowspan="1" colspan="1">3E-06</td><td align="left" rowspan="1" colspan="1">82</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<italic>Apis melliphera</italic> LOC412817<sup>N</sup>
+</td><td align="left" rowspan="1" colspan="1">43</td><td align="left" rowspan="1" colspan="1">4E-04</td><td align="left" rowspan="1" colspan="1">88</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<italic>Culex quinquefasciatus importin-4</italic> (CPIJ002334)<sup>X</sup>
+</td><td align="left" rowspan="1" colspan="1">37</td><td align="left" rowspan="1" colspan="1">1.0</td><td align="left" rowspan="1" colspan="1">75</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<italic>Aedes aegypti importin beta-4</italic> (AAEL010698)<sup>X</sup>
+</td><td align="left" rowspan="1" colspan="1">37</td><td align="left" rowspan="1" colspan="1">1.0</td><td align="left" rowspan="1" colspan="1">75</td></tr><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">
+<italic>Drosophila virilis</italic> GJ12922<sup>X</sup>
+</td><td align="left" rowspan="1" colspan="1">36</td><td align="left" rowspan="1" colspan="1">3.9</td><td align="left" rowspan="1" colspan="1">69</td></tr></tbody></table></alternatives></table-wrap><p>To test whether sequences closely related to the Y-specific <italic>importin-4</italic> gene fragments are also present on <italic>B. oleae</italic> autosomes or the X chromosome, primers were designed to amplify the putative third exon of the Y-specific <italic>importin</italic> gene fragment (light-grey in <xref ref-type="fig" rid="pone-0017747-g004">Fig. 4B</xref>). As expected, a 162 bp band was amplified only from male samples; however, an additional 688 bp band was amplified in both male and female samples (GenBank acc. n. HR714306) (<xref ref-type="fig" rid="pone-0017747-g005">Fig. 5A</xref>). BLASTN and BLASTX analyses of this 688 bp fragment showed that it is an additional <italic>importin-4</italic> gene fragment similar to the Y-specific one (<xref ref-type="table" rid="pone-0017747-t002">Table 2</xref>). FISH using the 688 bp fragment as probe indicated that, in addition to the Y chromosome, similar sequences are located at the centromeric regions of all the autosomes and on the long arm of the X-chromosome (<xref ref-type="fig" rid="pone-0017747-g005">Fig. 5D</xref>).</p><fig id="pone-0017747-g005" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0017747.g005</object-id><label>Figure 5</label><caption><title>Presence of multiple copies of the <italic>importin-4</italic> gene fragment in the <italic>B. oleae</italic> genome.</title><p>
+<bold>A</bold>) Agarose gel electrophoresis of PCR reactions using the BoY primer set on male and female genomic DNA from the Israel Hybrid strain. The <italic>Botransformer</italic> gene was amplified from the same samples as a positive control. B) Putative genomic organization of the 688 bp amplicon as predicted by GenScan analysis. The predicted exon of an <italic>importin-4</italic> gene is shown as a black box. <bold>C</bold>) Nucleotide and amino-acid alignment of putative coding portions of the Y-specific and non-Y specific <italic>importin-4</italic> gene fragments. Yellow shading represents areas of nucleotide and amino-acid changes. D) Fluorescence in situ hybridization on mitotic chromosomes spreads using the 688 bp band as probe (scale bar 15 &#x000b5;m). The upper panel shows male mitotic spreads, while the lower panel shows female mitotic spreads.</p></caption><graphic xlink:href="pone.0017747.g005"/></fig><p>The only predicted exon in the 688 bp sequence (<xref ref-type="fig" rid="pone-0017747-g005">Fig. 5B</xref>) codes for a putative 43 aa sequence that shares 62&#x00025; identity with the putative Y-specific importin-4 protein (<xref ref-type="fig" rid="pone-0017747-g005">Fig. 5C</xref>). The Y-specific <italic>importin-4</italic> gene fragment and the one spread throughout the genome appear to be under neutral evolution (MEGA4 codon based Fisher's Exact test, P&#x0200a;=&#x0200a;0.27) <xref rid="pone.0017747-Tamura1" ref-type="bibr">[28]</xref>.</p></sec><sec id="s3d"><title>Amplification of identified Y chromosome sequences is possible from different <italic>B. oleae</italic> samples, but not from other <italic>Bactrocera</italic> and <italic>Ceratitis</italic> species</title><p>To assess whether the Y sequences identified in this study are not restricted to the Israel Hybrid strain, the same set of primers (<xref ref-type="supplementary-material" rid="pone.0017747.s004">Table S2</xref>) designed on the MspI_1B, the MseI-2 and the MseI-3 RDA clones and on exon 3 of the Y-specific <italic>importin-4</italic> sequence were used to amplify male and female genomic DNA from individuals of different origins: i.e. from the Demokritos laboratory strain and from two wild populations, Jordan and Lebanon. As expected, amplicons were produced only from male-derived DNA for all the individuals analyzed (<xref ref-type="supplementary-material" rid="pone.0017747.s002">Fig. S2</xref>) and the amplification patterns were identical to those obtained in the Israel Hybrid strain.</p><p>To further investigate whether the <italic>B. oleae</italic> Y-specific or Y-enriched sequences are species-specific or genus-specific, the same set of primers listed above were used to amplify male and female genomic DNA from individuals from the most representative tephritid species. Four <italic>Bactrocera</italic> species (<italic>B. dorsalis</italic>, <italic>B. invadens</italic>, <italic>B. correcta</italic> and <italic>B. cucurbitae</italic>) and two <italic>Ceratitis</italic> species (<italic>C. capitata</italic> and <italic>C. rosa</italic>) were tested. Even using less stringent amplification conditions, it was not possible to recover any amplicon, neither in male nor female samples (Data not shown).</p></sec></sec><sec id="s4"><title>Discussion</title><p>In the absence of any available sequence data, we used an RDA approach to investigate the Y chromosome of a tephritid fly, <italic>Bactrocera oleae</italic>, in order to derive information on its sequence content. The data provided insights on Y chromosome evolution in this Acalyptrate family, in which this chromosome plays an active role in the determination of male sex <xref rid="pone.0017747-Willhoeft1" ref-type="bibr">[8]</xref>, <xref rid="pone.0017747-Lagos2" ref-type="bibr">[16]</xref>.</p><p>The very small, highly heterochromatic Y chromosome of <italic>B. oleae</italic> is strewn with repetitive DNA sequences, the majority of which are also interdispersed in the pericentromeric regions of the autosomes. The Y chromosome appears to have accumulated small and large repetitive interchromosomal duplications. The large repetitive interchromosomal duplications harbour an <italic>importin-4</italic>-like gene fragment. Apart from these <italic>importin-4</italic>-like sequences, the other Y repetitive sequences are not shared with the X chromosome, suggesting the presence of molecular differentiation between these two chromosomes. Moreover, as the identified <italic>B. oleae</italic> Y specific or enriched regions were not detected on the Y-chromosomes of closely related tephritid species, we can infer a divergence in the repetitive nature of their sequence contents.</p><sec id="s4a"><title>The <italic>B. oleae</italic> Y chromosome harbours transposable elements, small duplications and longer gene fragments</title><p>Among the sequences isolated from the Y chromosome, two are transposable element fragments: an inactive <italic>mariner</italic> element and an <italic>Osvaldo-like</italic> retroelement. The enrichment of transposable elements on Y chromosome, particularly inactive <italic>mariner</italic> elements, is a feature already observed on the highly heterochromatic and largely degenerate Y chromosome of the related species, <italic>C. capitata</italic>
+<xref rid="pone.0017747-Torti1" ref-type="bibr">[12]</xref>. Indeed, the accumulation of TEs in the Y heterochromatin, where recombination is strongly reduced, is an expected condition resulting from negative selection against the deleterious rearrangements caused by ectopic recombination between copies of the element in the euchromatin <xref rid="pone.0017747-Charlesworth2" ref-type="bibr">[34]</xref>. It has also been hypothesized that TEs have a major role in the degeneration of Y chromosomes by remodelling euchromatin into heterochromatic regions <xref rid="pone.0017747-Steinemann1" ref-type="bibr">[35]</xref>. The presence of many transposable elements in the <italic>B. oleae</italic> Y chromosome is, therefore, a conserved feature, despite the diminutive size of this chromosome <xref rid="pone.0017747-MavraganiTsipidou1" ref-type="bibr">[6]</xref>, <xref rid="pone.0017747-MavraganiTsipidou2" ref-type="bibr">[14]</xref>.</p><p>Besides these expected repetitive sequences, the <italic>B. oleae</italic> Y chromosome appears to be also rich in sequences that are repeated on the Y chromosome itself and on the autosomes. The first sequence, which is similar to a portion of the <italic>B. oleae Ovo</italic> gene, is small and highly repeated in tandem arrays on the Y chromosome and on autosome 2. The second sequence is longer, harbours a fragment of an <italic>importin-4</italic>-like gene, and is also present on the pericentromeric regions of all the autosomes. The first type of duplication may be the result of an accumulation of smaller repetitions, while the second duplication may be the consequence of the spread of large blocks across the genome, particularly across highly heterochromatic regions, such as the pericentromeric regions. This pattern follows the proposed model of pericentromeric duplications first described in humans <xref rid="pone.0017747-Kirsch1" ref-type="bibr">[36]</xref>, that predicts an initial step of transposition seeding, caused by smaller duplications, followed by pericentromeric exchange of longer sequences <xref rid="pone.0017747-Eichler1" ref-type="bibr">[37]</xref>.</p><p>The paralogous sequences of the larger regions, containing the <italic>importin-4</italic>-like gene fragment, present on the Y and on the other chromosomes, were shown to have evolved at neutral rates (codon based Fisher's Exact test). Applying the rate of 1&#x00025; nucleotide divergence per Myr <xref rid="pone.0017747-Werman1" ref-type="bibr">[38]</xref>, <xref rid="pone.0017747-Powell1" ref-type="bibr">[39]</xref> on both the Y-specific and autosomal <italic>importin-4</italic> sequences and on the <italic>Ovo</italic> related sequences, it was possible to calculate that these segmental duplications occurred respectively about 6 and 10 Mya, long after the split of Tephritidae and Drosophilidae, 80&#x02013;100 Mya <xref rid="pone.0017747-Beverley1" ref-type="bibr">[40]</xref>, <xref rid="pone.0017747-Kwiatowski1" ref-type="bibr">[41]</xref>, and, within the family Tephritidae, after the divergence of the <italic>Bactrocera</italic> and the <italic>Ceratitis</italic> genera 31.5 Mya <xref rid="pone.0017747-Beverley1" ref-type="bibr">[40]</xref>. Based on these data it appears that the enrichment of such sequences on the Y chromosome occurred relatively late during Acalyptrate evolution and that the presence of these sequences on the Y chromosome is probably limited to the <italic>Bactrocera</italic> genus, or perhaps to the species <italic>B. oleae</italic>. In agreement with this hypothesis, it was not possible to isolate <italic>importin-4</italic> related sequences from the Y chromosomes of four other <italic>Bactrocera</italic> species (<italic>B. dorsalis</italic>, <italic>B. invadens</italic>, <italic>B. correcta</italic> and <italic>B. cucurbitae</italic>) and of two <italic>Ceratitis</italic> species (<italic>C. capitata</italic> and <italic>C. rosa</italic>). However,we cannot exclude that this lack of amplification could be due to the sequence divergence of the primer regions, rather than a complete absence of such sequences in the genomes.</p><p>It has been observed that segmental duplications are usually involved in the multiplication of gene sequences in duplicated regions <xref rid="pone.0017747-Kirsch1" ref-type="bibr">[36]</xref>, <xref rid="pone.0017747-Horvath1" ref-type="bibr">[42]</xref>, <xref rid="pone.0017747-Luijten1" ref-type="bibr">[43]</xref>, <xref rid="pone.0017747-Samonte1" ref-type="bibr">[44]</xref>. This phenomenon was also observed in the <italic>B. oleae</italic> Y chromosome: the <italic>importin-4</italic> gene fragment was shown to be repeated on the Y chromosome, as well as being repeated also on the X chromosomes and the autosomes. In order to explain the persistent presence of such duplications on the Y chromosomes, it has been hypothesized that they are a reservoir for the maintenance of gene integrity. As the Y is a non-recombining chromosome, the mechanism proposed to maintain the identity of the repeat copies is the non-reciprocal transfer of sequences from one homologous locus to another. A similar mechanism could also be applied to the <italic>B. oleae</italic> Y chromosome, particularly to the <italic>importin-4</italic> gene fragments. This hypothesis, however, implies that the integrity of such sequences is necessary for the Y chromosome, or that they exert some structural function or some other molecular function. Genes of the <italic>importin</italic> family encode nuclear import receptors, which recognize the nuclear localization signal of protein cargo as &#x003b1;/&#x003b2; heterodimers <xref rid="pone.0017747-Nakielny1" ref-type="bibr">[45]</xref>. In particular, <italic>importin</italic> &#x003b2;-like proteins, of which <italic>importin-4</italic> is a member, import SR proteins into the nucleus as they recognize the RS (arginine-serine rich) domain as a nuclear localization signal <xref rid="pone.0017747-Hedley1" ref-type="bibr">[46]</xref>, <xref rid="pone.0017747-Cazalla1" ref-type="bibr">[47]</xref>, <xref rid="pone.0017747-Kataoka1" ref-type="bibr">[48]</xref>, <xref rid="pone.0017747-Lai1" ref-type="bibr">[49]</xref>, <xref rid="pone.0017747-Allemand1" ref-type="bibr">[50]</xref>. It is noteworthy that the <italic>Bo-transformer</italic> gene <xref rid="pone.0017747-Lagos2" ref-type="bibr">[16]</xref>, the key component of the <italic>B. oleae</italic> sex-determination molecular cascade, is a member of the SR protein superfamily. It has also recently been demonstrated that an <italic>importin-4</italic> gene product is involved in the nuclear shuttling of the human male-determining factor protein, SRY <xref rid="pone.0017747-Gontan1" ref-type="bibr">[51]</xref>. In <italic>B. oleae</italic>, as in other Tephritidae species, the Y chromosome is known to be necessary to determine the male sex and a postulated Y-linked male-determining factor (M) directly or indirectly blocks the regulatory functions of the <italic>Bo-transformer</italic> gene <xref rid="pone.0017747-Saccone1" ref-type="bibr">[2]</xref>, <xref rid="pone.0017747-Willhoeft1" ref-type="bibr">[8]</xref>, <xref rid="pone.0017747-Gabrieli1" ref-type="bibr">[52]</xref>. However, even knowing the putative functions of importin-4 proteins, we cannot exclude that, once transposed on the <italic>B. oleae</italic> Y chromosome, the <italic>importin-4</italic> gene lost its original functions. Autosome-to-Y transposition is often followed by the duplication, exon pruning and degeneration of the transposed genes <xref rid="pone.0017747-Gvozdev1" ref-type="bibr">[53]</xref>. The degenerate genes and pseudogenes present in the repetitive regions of the human and <italic>D. melanogaster</italic> Y chromosomes are no longer considered simply &#x02018;junk&#x02019; DNA, as they have assumed new functions such as stabilizing mRNA or controlling gene expression through the iRNA mechanism <xref rid="pone.0017747-Premi1" ref-type="bibr">[54]</xref>, <xref rid="pone.0017747-Kalmykova1" ref-type="bibr">[55]</xref>. Therefore, although the molecular functions of the general <italic>importin</italic> gene family are known, we cannot exclude that similar sequences on the <italic>B. oleae</italic> Y chromosome could have assumed novel functions during evolution. However, as the complete sequence of the <italic>B. oleae</italic> Y chromosome is not yet available, it is impossible to predict whether it contains putative complete functional <italic>importin-4</italic> genes or only pseudogenes that may have assumed new unpredictable functions.</p></sec><sec id="s4b"><title>Conclusions and Outlook</title><p>Within the Tephritidae, the Y chromosomes share some conserved features: they are largely degenerate with much repetitive DNA <xref rid="pone.0017747-Willhoeft1" ref-type="bibr">[8]</xref>, <xref rid="pone.0017747-Zhou1" ref-type="bibr">[11]</xref> and they are predicted to harbour an M factor that determines male development. Despite these apparently conserved features, the Y chromosomes display a high degree of variation in size and heterochromatin abundance, even among individuals of the same species <xref rid="pone.0017747-Willhoeft2" ref-type="bibr">[56]</xref>. The sequences here isolated from the <italic>B. oleae</italic> Y chromosome have no known related sequences on the Y chromosomes of other related genera, such as <italic>C. capitata</italic>: this may be indicative of a low conservation of sequence content. The high Y sequence-divergence within a taxonomic group belonging to the order Diptera was observed once the sequenced genomes of twelve different <italic>Drosophila</italic> species became available <xref rid="pone.0017747-BernardoCarvalho1" ref-type="bibr">[57]</xref>. Among <italic>Drosophila</italic> species, the genetic content of the Y chromosome is fluid and Y-linked genes are poorly conserved; furthermore there are cases of wholesale replacement of the Y chromosome. It is noteworthy that divergence in repetitive sequences may cause reproductive isolation between nascent species <xref rid="pone.0017747-Ferree1" ref-type="bibr">[58]</xref>. Even if it is impossible to assess whether this is the case also for tephritid flies, as complete genome sequences are not yet available for any species, our data indicate that the Y chromosomes of tephritid species, or at least of the genera here considered, may have evolved independently. This suggestion has to be, however, proved and carefully tested.</p><p>The newly identified sequences of the <italic>B. oleae</italic> Y chromosome have no related sequences on the <italic>Drosophila</italic> sex chromosomes. This observation suggests that the tephritid sex chromosomes have a different evolutionary history with respect to the <italic>Drosophila</italic> X and Y. This suggestion is further supported by other experimental evidence: the <italic>B. oleae</italic> and, more generally, the tephritid Y chromosomes harbour the male determining factor, while that of <italic>Drosophila</italic> does not. By contrast, the <italic>Drosophila</italic> Y harbours many male-fertility genes, which are not located on the tephritid Y: this was first demonstrated in <italic>C. capitata</italic>
+<xref rid="pone.0017747-Saccone1" ref-type="bibr">[2]</xref>, <xref rid="pone.0017747-Willhoeft1" ref-type="bibr">[8]</xref> and later in <italic>B. oleae</italic>
+<xref rid="pone.0017747-Lagos2" ref-type="bibr">[16]</xref>. The tephritid Y chromosome is extremely heteromorphic with respect to the X and displays a high degree of molecular divergence with it. The X-chromosomes of tephritid species are not homologous to those of <italic>Drosophila</italic>: they are completely heterochromatic and genes orthologous to the <italic>Drosophila</italic> X-linked genes are syntenic on different autosomes in different species <xref rid="pone.0017747-Stratikopoulos1" ref-type="bibr">[59]</xref>, suggesting that the Tephritidae X chromosome is not syntenic to the <italic>Drosophila</italic> X chromosome. Therefore, even if the origin of the X chromosome in Diptera has been proposed to have occurred more than 260 Mya <xref rid="pone.0017747-BernardoCarvalho1" ref-type="bibr">[57]</xref> as the <italic>Drosophila</italic> X chromosome is homologous to those of mosquito species of the genera <italic>Anopheles</italic> and <italic>Aedes</italic>
+<xref rid="pone.0017747-Nene1" ref-type="bibr">[60]</xref>, <xref rid="pone.0017747-Zdobnov1" ref-type="bibr">[61]</xref>, the X chromosomes of Tephritids have evolved more recently and may have followed a distinct evolution.</p><p>Finally, as a practical application, we propose that the recent evolutionary history of tephritid sex chromosomes could facilitate the development of robust molecular diagnostic markers to discriminate species (i.e. BAR-coding) and sexes within a species <xref rid="pone.0017747-Gabrieli1" ref-type="bibr">[52]</xref>, <xref rid="pone.0017747-Papathanos1" ref-type="bibr">[62]</xref>.</p></sec></sec><sec sec-type="supplementary-material" id="s5"><title>Supporting Information</title><supplementary-material content-type="local-data" id="pone.0017747.s001"><label>Figure S1</label><caption><p>Schematic representations of regions that are similar between RDA clones and sequences found in Genbank using BLAST analyses. A) Schematic representation of nucleotide alignments between the <italic>B. oleae Ovo</italic> gene upstream region and three RDA clones (MspI-2B, MseI-1 and MseI-2). The MseI-1 and MseI-2 clones are partially similar to the same sequences in the <italic>Ovo</italic> promoter region. B) Schematic representation of amino-acid alignments between the <italic>An. gambiae</italic> AGAP006942 protein and three RDA clones (MspI-1B, MseI-3 and MseI-4).</p><p>(TIF)</p></caption><media xlink:href="pone.0017747.s001.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0017747.s002"><label>Figure S2</label><caption><p>Agarose gel electrophoresis of PCR reactions using the BoY primer set and primer sets designed to amplify the <italic>Msp</italic>I-1, <italic>Mse</italic>I-2 and <italic>Mse</italic>I-3 RDA clones. Male and female genomic DNA were used as template; <italic>B. oleae</italic> individuals of different origins were used (Israel Hybrid strain, Demokritos strain, wild individuals from Lebanon and Jordan). The <italic>Botransformer</italic> gene was amplified from the same samples as a positive control.</p><p>(TIF)</p></caption><media xlink:href="pone.0017747.s002.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0017747.s003"><label>Table S1</label><caption><p>Primers used for representational difference analysis (RDA).</p><p>(DOC)</p></caption><media xlink:href="pone.0017747.s003.doc"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0017747.s004"><label>Table S2</label><caption><p>Primers used to amplify <italic>Bactrocera oleae</italic> male and female genomic DNA, and their respective annealing temperatures (Ta).</p><p>(DOC)</p></caption><media xlink:href="pone.0017747.s004.doc"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><ack><p>We thank the FAO/IAEA Insect Pest Control Laboratory at Seibersdorf for providing material.</p></ack><fn-group><fn fn-type="COI-statement"><p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p></fn><fn fn-type="financial-disclosure"><p><bold>Funding: </bold>This research was supported by a FAR grant from the University of Pavia in the framework of the IAEA Research Agreement No. 15642/R0 to G. Gasperi, concerning the Research Project: &#x0201c;Identification of Molecular and Transgenic Tools for Sexing Strategies and Development of Strain and Sperm Marking Systems for Fruitfly Pests.&#x0201d; The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p></fn></fn-group><ref-list><title>References</title><ref id="pone.0017747-Snchez1"><label>1</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>S&#x000e1;nchez</surname><given-names>L</given-names></name></person-group>
+<year>2008</year>
+<article-title>Sex-determining mechanisms in insects.</article-title>
+<source>Int J Dev Biol</source>
+<volume>52</volume>
+<fpage>837</fpage>
+<lpage>856</lpage>
+<pub-id pub-id-type="pmid">18956315</pub-id></element-citation></ref><ref id="pone.0017747-Saccone1"><label>2</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Saccone</surname><given-names>G</given-names></name><name><surname>Pane</surname><given-names>A</given-names></name><name><surname>Polito</surname><given-names>LC</given-names></name></person-group>
+<year>2002</year>
+<article-title>Sex determination in flies, fruitflies and butterflies.</article-title>
+<source>Genetica</source>
+<volume>116</volume>
+<fpage>15</fpage>
+<lpage>23</lpage>
+<pub-id pub-id-type="pmid">12484523</pub-id></element-citation></ref><ref id="pone.0017747-White1"><label>3</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>White</surname><given-names>I</given-names></name><name><surname>Elson-Harris</surname><given-names>MM</given-names></name></person-group>
+<year>1992</year>
+<source>Fruit flies of economic significance : their identification and bionomics</source>
+<publisher-loc>Wallingford, Oxon, UK</publisher-loc>
+<publisher-name>CAB International in association with ACIAR</publisher-name>
+<fpage>xii, 601</fpage>
+</element-citation></ref><ref id="pone.0017747-GarciaMartinez1"><label>4</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Garcia-Martinez</surname><given-names>V</given-names></name><name><surname>Hernandez-Ortiz</surname><given-names>E</given-names></name><name><surname>Zepeta-Cisneros</surname><given-names>CS</given-names></name><name><surname>Robinson</surname><given-names>AS</given-names></name><name><surname>Zacharopoulou</surname><given-names>A</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Mitotic and polytene chromosome analysis in the Mexican fruit fly, <italic>Anastrepha ludens</italic> (Loew) (Diptera: Tephritidae).</article-title>
+<source>Genome</source>
+<volume>52</volume>
+<fpage>20</fpage>
+<lpage>30</lpage>
+<pub-id pub-id-type="pmid">19132068</pub-id></element-citation></ref><ref id="pone.0017747-Kounatidis1"><label>5</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kounatidis</surname><given-names>I</given-names></name><name><surname>Papadopoulos</surname><given-names>N</given-names></name><name><surname>Bourtzis</surname><given-names>K</given-names></name><name><surname>Mavragani-Tsipidou</surname><given-names>P</given-names></name></person-group>
+<year>2008</year>
+<article-title>Genetic and cytogenetic analysis of the fruit fly <italic>Rhagoletis cerasi</italic> (Diptera: Tephritidae).</article-title>
+<source>Genome</source>
+<volume>51</volume>
+<fpage>479</fpage>
+<lpage>491</lpage>
+<pub-id pub-id-type="pmid">18545272</pub-id></element-citation></ref><ref id="pone.0017747-MavraganiTsipidou1"><label>6</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mavragani-Tsipidou</surname><given-names>P</given-names></name><name><surname>Karamanlidou</surname><given-names>G</given-names></name><name><surname>Zacharopoulou</surname><given-names>A</given-names></name><name><surname>Koliais</surname><given-names>S</given-names></name><name><surname>Kastritisis</surname><given-names>C</given-names></name></person-group>
+<year>1992</year>
+<article-title>Mitotic and polytene chromosome analysis in <italic>Dacus oleae</italic> (Diptera: Tephritidae).</article-title>
+<source>Genome</source>
+<volume>35</volume>
+<fpage>373</fpage>
+<lpage>378</lpage>
+<pub-id pub-id-type="pmid">1624130</pub-id></element-citation></ref><ref id="pone.0017747-Zhao1"><label>7</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zhao</surname><given-names>JT</given-names></name><name><surname>Frommer</surname><given-names>M</given-names></name><name><surname>Sved</surname><given-names>JA</given-names></name><name><surname>Zacharopoulou</surname><given-names>A</given-names></name></person-group>
+<year>1998</year>
+<article-title>Mitotic and polytene chromosome analyses in the Queensland fruit fly, <italic>Bactrocera tryoni</italic> (Diptera: Tephritidae).</article-title>
+<source>Genome</source>
+<volume>41</volume>
+<fpage>510</fpage>
+<lpage>526</lpage>
+<pub-id pub-id-type="pmid">9796100</pub-id></element-citation></ref><ref id="pone.0017747-Willhoeft1"><label>8</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Willhoeft</surname><given-names>U</given-names></name><name><surname>Franz</surname><given-names>G</given-names></name></person-group>
+<year>1996</year>
+<article-title>Identification of the sex-determining region of the <italic>Ceratitis capitata</italic> Y chromosome by deletion mapping.</article-title>
+<source>Genetics</source>
+<volume>144</volume>
+<fpage>737</fpage>
+<lpage>745</lpage>
+<pub-id pub-id-type="pmid">8889534</pub-id></element-citation></ref><ref id="pone.0017747-Charlesworth1"><label>9</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Charlesworth</surname><given-names>B</given-names></name></person-group>
+<year>2001</year>
+<article-title>Genome analysis: More <italic>Drosophila</italic> Y chromosome genes.</article-title>
+<source>Curr Biol</source>
+<volume>11</volume>
+<fpage>R182</fpage>
+<lpage>184</lpage>
+<pub-id pub-id-type="pmid">11267888</pub-id></element-citation></ref><ref id="pone.0017747-Anleitner1"><label>10</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Anleitner</surname><given-names>JE</given-names></name><name><surname>Haymer</surname><given-names>DS</given-names></name></person-group>
+<year>1992</year>
+<article-title>Y enriched and Y specific DNA sequences from the genome of the Mediterranean fruit fly, <italic>Ceratitis capitata</italic>.</article-title>
+<source>Chromosoma</source>
+<volume>101</volume>
+<fpage>271</fpage>
+<lpage>278</lpage>
+<pub-id pub-id-type="pmid">1533581</pub-id></element-citation></ref><ref id="pone.0017747-Zhou1"><label>11</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zhou</surname><given-names>Q</given-names></name><name><surname>Untalan</surname><given-names>PM</given-names></name><name><surname>Haymer</surname><given-names>DS</given-names></name></person-group>
+<year>2000</year>
+<article-title>Repetitive A-T rich DNA sequences from the Y chromosome of the Mediterranean fruit fly, <italic>Ceratitis capitata</italic>.</article-title>
+<source>Genome</source>
+<volume>43</volume>
+<fpage>434</fpage>
+<lpage>438</lpage>
+<pub-id pub-id-type="pmid">10902705</pub-id></element-citation></ref><ref id="pone.0017747-Torti1"><label>12</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Torti</surname><given-names>C</given-names></name><name><surname>Gomulski</surname><given-names>LM</given-names></name><name><surname>Moralli</surname><given-names>D</given-names></name><name><surname>Raimondi</surname><given-names>E</given-names></name><name><surname>Robertson</surname><given-names>HM</given-names></name><etal/></person-group>
+<year>2000</year>
+<article-title>Evolution of different subfamilies of mariner elements within the medfly genome inferred from abundance and chromosomal distribution.</article-title>
+<source>Chromosoma</source>
+<volume>108</volume>
+<fpage>523</fpage>
+<lpage>532</lpage>
+<pub-id pub-id-type="pmid">10794574</pub-id></element-citation></ref><ref id="pone.0017747-MontielBueno1"><label>13</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Montiel Bueno</surname><given-names>A</given-names></name><name><surname>Jones</surname><given-names>O</given-names></name></person-group>
+<year>2002</year>
+<article-title>Alternative methods for controlling the olive fly, <italic>Bactrocera oleae</italic>, involving semiochemicals.</article-title>
+<source>International Organization for Biological and Integrated Control of Noxious Animals and Plants West Palaearctic Regional Section (IOBC/WPRS) Bulletin</source>
+<volume>25</volume>
+<fpage>1</fpage>
+<lpage>11</lpage>
+</element-citation></ref><ref id="pone.0017747-MavraganiTsipidou2"><label>14</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mavragani-Tsipidou</surname><given-names>P</given-names></name></person-group>
+<year>2002</year>
+<article-title>Genetic and cytogenetic analysis of the olive fruit fly <italic>Bactrocera oleae</italic> (Diptera: Tephritidae).</article-title>
+<source>Genetica</source>
+<volume>116</volume>
+<fpage>45</fpage>
+<lpage>57</lpage>
+<pub-id pub-id-type="pmid">12484525</pub-id></element-citation></ref><ref id="pone.0017747-Lagos1"><label>15</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lagos</surname><given-names>D</given-names></name><name><surname>Ruiz</surname><given-names>MF</given-names></name><name><surname>S&#x000e1;nchez</surname><given-names>L</given-names></name><name><surname>Komitopoulou</surname><given-names>K</given-names></name></person-group>
+<year>2005</year>
+<article-title>Isolation and characterization of the <italic>Bactrocera oleae</italic> genes orthologous to the sex determining <italic>Sex-lethal</italic> and <italic>doublesex</italic> genes of <italic>Drosophila melanogaster</italic>.</article-title>
+<source>Gene</source>
+<volume>348</volume>
+<fpage>111</fpage>
+<lpage>121</lpage>
+<pub-id pub-id-type="pmid">15777677</pub-id></element-citation></ref><ref id="pone.0017747-Lagos2"><label>16</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lagos</surname><given-names>D</given-names></name><name><surname>Koukidou</surname><given-names>M</given-names></name><name><surname>Savakis</surname><given-names>C</given-names></name><name><surname>Komitopoulou</surname><given-names>K</given-names></name></person-group>
+<year>2007</year>
+<article-title>The <italic>transformer</italic> gene in <italic>Bactrocera oleae</italic>: the genetic switch that determines its sex fate.</article-title>
+<source>Insect Mol Biol</source>
+<volume>16</volume>
+<fpage>221</fpage>
+<lpage>230</lpage>
+<pub-id pub-id-type="pmid">17298554</pub-id></element-citation></ref><ref id="pone.0017747-Lisitsyn1"><label>17</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lisitsyn</surname><given-names>N</given-names></name><name><surname>Wigler</surname><given-names>M</given-names></name></person-group>
+<year>1993</year>
+<article-title>Cloning the differences between two complex genomes.</article-title>
+<source>Science</source>
+<volume>259</volume>
+<fpage>946</fpage>
+<lpage>951</lpage>
+<pub-id pub-id-type="pmid">8438152</pub-id></element-citation></ref><ref id="pone.0017747-Drew1"><label>18</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Drew</surname><given-names>AC</given-names></name><name><surname>Brindley</surname><given-names>PJ</given-names></name></person-group>
+<year>1995</year>
+<article-title>Female-specific sequences isolated from <italic>Schistosoma mansoni</italic> by representational difference analysis.</article-title>
+<source>Mol Biochem Parasitol</source>
+<volume>71</volume>
+<fpage>173</fpage>
+<lpage>181</lpage>
+<pub-id pub-id-type="pmid">7477099</pub-id></element-citation></ref><ref id="pone.0017747-Donnison1"><label>19</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Donnison</surname><given-names>IS</given-names></name><name><surname>Siroky</surname><given-names>J</given-names></name><name><surname>Vyskot</surname><given-names>B</given-names></name><name><surname>Saedler</surname><given-names>H</given-names></name><name><surname>Grant</surname><given-names>SR</given-names></name></person-group>
+<year>1996</year>
+<article-title>Isolation of Y chromosome-specific sequences from <italic>Silene latifolia</italic> and mapping of male sex-determining genes using representational difference analysis.</article-title>
+<source>Genetics</source>
+<volume>144</volume>
+<fpage>1893</fpage>
+<lpage>1901</lpage>
+<pub-id pub-id-type="pmid">8978072</pub-id></element-citation></ref><ref id="pone.0017747-Fujisawa1"><label>20</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Fujisawa</surname><given-names>M</given-names></name><name><surname>Hayashi</surname><given-names>K</given-names></name><name><surname>Nishio</surname><given-names>T</given-names></name><name><surname>Bando</surname><given-names>T</given-names></name><name><surname>Okada</surname><given-names>S</given-names></name><etal/></person-group>
+<year>2001</year>
+<article-title>Isolation of X and Y chromosome-specific DNA markers from a liverwort, <italic>Marchantia polymorpha</italic>, by representational difference analysis.</article-title>
+<source>Genetics</source>
+<volume>159</volume>
+<fpage>981</fpage>
+<lpage>985</lpage>
+<pub-id pub-id-type="pmid">11729146</pub-id></element-citation></ref><ref id="pone.0017747-Tzanakakis1"><label>21</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tzanakakis</surname><given-names>ME</given-names></name><name><surname>Economopoulos</surname><given-names>AP</given-names></name><name><surname>Tsitsipis</surname><given-names>JA</given-names></name></person-group>
+<year>1966</year>
+<article-title>Improved artificial food media for larvae <italic>Dacus oleae</italic> (Gmelin) (Diptera:Tephritidae).</article-title>
+<source>Z Angrew Entomol</source>
+<volume>59</volume>
+<fpage>127</fpage>
+<lpage>130</lpage>
+</element-citation></ref><ref id="pone.0017747-Baruffi1"><label>22</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Baruffi</surname><given-names>L</given-names></name><name><surname>Damiani</surname><given-names>G</given-names></name><name><surname>Guglielmino</surname><given-names>CR</given-names></name><name><surname>Bandi</surname><given-names>C</given-names></name><name><surname>Malacrida</surname><given-names>AR</given-names></name><etal/></person-group>
+<year>1995</year>
+<article-title>Polymorphism within and between populations of <italic>Ceratitis capitata</italic>: comparison between RAPD and multilocus enzyme electrophoresis data.</article-title>
+<source>Heredity</source>
+<volume>74 </volume>
+<issue>Pt 4</issue>
+<fpage>425</fpage>
+<lpage>437</lpage>
+<pub-id pub-id-type="pmid">7759289</pub-id></element-citation></ref><ref id="pone.0017747-Groot1"><label>23</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Groot</surname><given-names>PC</given-names></name><name><surname>van Oost</surname><given-names>BA</given-names></name></person-group>
+<year>1998</year>
+<article-title>Identification of fragments of human transcripts froma defined chromosomal region: representational difference analysis of somatic cell hybrids.</article-title>
+<source>Nucleic Acids Res</source>
+<volume>26</volume>
+<fpage>4476</fpage>
+<lpage>4481</lpage>
+<pub-id pub-id-type="pmid">9742252</pub-id></element-citation></ref><ref id="pone.0017747-Altschul1"><label>24</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Altschul</surname><given-names>SF</given-names></name><name><surname>Gish</surname><given-names>W</given-names></name><name><surname>Miller</surname><given-names>W</given-names></name><name><surname>Myers</surname><given-names>EW</given-names></name><name><surname>Lipman</surname><given-names>DJ</given-names></name></person-group>
+<year>1990</year>
+<article-title>Basic local alignment search tool.</article-title>
+<source>J Mol Biol</source>
+<volume>215</volume>
+<fpage>403</fpage>
+<lpage>410</lpage>
+<pub-id pub-id-type="pmid">2231712</pub-id></element-citation></ref><ref id="pone.0017747-Rozen1"><label>25</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Rozen</surname><given-names>S</given-names></name><name><surname>Skaletsky</surname><given-names>H</given-names></name></person-group>
+<year>2000</year>
+<article-title>Primer3 on the WWW for general users and for biologist programmers.</article-title>
+<source>Methods Mol Biol</source>
+<volume>132</volume>
+<fpage>365</fpage>
+<lpage>386</lpage>
+<pub-id pub-id-type="pmid">10547847</pub-id></element-citation></ref><ref id="pone.0017747-Burge1"><label>26</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Burge</surname><given-names>C</given-names></name><name><surname>Karlin</surname><given-names>S</given-names></name></person-group>
+<year>1997</year>
+<article-title>Prediction of complete gene structures in human genomic DNA.</article-title>
+<source>J Mol Biol</source>
+<volume>268</volume>
+<fpage>78</fpage>
+<lpage>94</lpage>
+<pub-id pub-id-type="pmid">9149143</pub-id></element-citation></ref><ref id="pone.0017747-Poirot1"><label>27</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Poirot</surname><given-names>O</given-names></name><name><surname>O'Toole</surname><given-names>E</given-names></name><name><surname>Notredame</surname><given-names>C</given-names></name></person-group>
+<year>2003</year>
+<article-title>Tcoffee@igs: A web server for computing, evaluating and combining multiple sequence alignments.</article-title>
+<source>Nucleic Acids Res</source>
+<volume>31</volume>
+<fpage>3503</fpage>
+<lpage>3506</lpage>
+<pub-id pub-id-type="pmid">12824354</pub-id></element-citation></ref><ref id="pone.0017747-Tamura1"><label>28</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tamura</surname><given-names>K</given-names></name><name><surname>Dudley</surname><given-names>J</given-names></name><name><surname>Nei</surname><given-names>M</given-names></name><name><surname>Kumar</surname><given-names>S</given-names></name></person-group>
+<year>2007</year>
+<article-title>MEGA4: Molecular Evolutionary Genetics Analysis (MEGA) software version 4.0.</article-title>
+<source>Mol Biol Evol</source>
+<volume>24</volume>
+<fpage>1596</fpage>
+<lpage>1599</lpage>
+<pub-id pub-id-type="pmid">17488738</pub-id></element-citation></ref><ref id="pone.0017747-Southern1"><label>29</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Southern</surname><given-names>EM</given-names></name></person-group>
+<year>1975</year>
+<article-title>Detection of specific sequences among DNA fragments separated by gel electrophoresis.</article-title>
+<source>J Mol Biol</source>
+<volume>98</volume>
+<fpage>503</fpage>
+<lpage>517</lpage>
+<pub-id pub-id-type="pmid">1195397</pub-id></element-citation></ref><ref id="pone.0017747-Robertson1"><label>30</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Robertson</surname><given-names>HM</given-names></name></person-group>
+<year>1993</year>
+<article-title>The <italic>mariner</italic> transposable element is widespread in insects.</article-title>
+<source>Nature</source>
+<volume>362</volume>
+<fpage>241</fpage>
+<lpage>245</lpage>
+<pub-id pub-id-type="pmid">8384700</pub-id></element-citation></ref><ref id="pone.0017747-Labrador1"><label>31</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Labrador</surname><given-names>M</given-names></name><name><surname>Fontdevila</surname><given-names>A</given-names></name></person-group>
+<year>1994</year>
+<article-title>High transposition rates of <italic>Osvaldo</italic>, a new <italic>Drosophila buzzatii</italic> retrotransposon.</article-title>
+<source>Mol Gen Genet</source>
+<volume>245</volume>
+<fpage>661</fpage>
+<lpage>674</lpage>
+<pub-id pub-id-type="pmid">7545973</pub-id></element-citation></ref><ref id="pone.0017747-Pantazidis1"><label>32</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Pantazidis</surname><given-names>A</given-names></name><name><surname>Labrador</surname><given-names>M</given-names></name><name><surname>Fontdevila</surname><given-names>A</given-names></name></person-group>
+<year>1999</year>
+<article-title>The retrotransposon <italic>Osvaldo</italic> from <italic>Drosophila buzzatii</italic> displays all structural features of a functional retrovirus.</article-title>
+<source>Mol Biol Evol</source>
+<volume>16</volume>
+<fpage>909</fpage>
+<lpage>921</lpage>
+<pub-id pub-id-type="pmid">10406108</pub-id></element-citation></ref><ref id="pone.0017747-Khila1"><label>33</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Khila</surname><given-names>A</given-names></name><name><surname>El Haidani</surname><given-names>A</given-names></name><name><surname>Vincent</surname><given-names>A</given-names></name><name><surname>Payre</surname><given-names>F</given-names></name><name><surname>Souda</surname><given-names>SI</given-names></name></person-group>
+<year>2003</year>
+<article-title>The dual function of <italic>ovo</italic>/<italic>shavenbaby</italic> in germline and epidermis differentiation is conserved between <italic>Drosophila melanogaster</italic> and the olive fruit fly <italic>Bactrocera oleae</italic>.</article-title>
+<source>Insect Biochem Mol Biol</source>
+<volume>33</volume>
+<fpage>691</fpage>
+<lpage>699</lpage>
+<pub-id pub-id-type="pmid">12826096</pub-id></element-citation></ref><ref id="pone.0017747-Charlesworth2"><label>34</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Charlesworth</surname><given-names>B</given-names></name><name><surname>Langley</surname><given-names>CH</given-names></name><name><surname>Sniegowski</surname><given-names>PD</given-names></name></person-group>
+<year>1997</year>
+<article-title>Transposable element distributions in <italic>Drosophila</italic>.</article-title>
+<source>Genetics</source>
+<volume>147</volume>
+<fpage>1993</fpage>
+<lpage>1995</lpage>
+<pub-id pub-id-type="pmid">9409855</pub-id></element-citation></ref><ref id="pone.0017747-Steinemann1"><label>35</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Steinemann</surname><given-names>S</given-names></name><name><surname>Steinemann</surname><given-names>M</given-names></name></person-group>
+<year>2005</year>
+<article-title>Y chromosomes: born to be destroyed.</article-title>
+<source>BioEssays</source>
+<volume>27</volume>
+<fpage>1076</fpage>
+<lpage>1083</lpage>
+<pub-id pub-id-type="pmid">16163733</pub-id></element-citation></ref><ref id="pone.0017747-Kirsch1"><label>36</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kirsch</surname><given-names>S</given-names></name><name><surname>Weiss</surname><given-names>B</given-names></name><name><surname>Miner</surname><given-names>T</given-names></name><name><surname>Waterston</surname><given-names>R</given-names></name><name><surname>Clark</surname><given-names>R</given-names></name><etal/></person-group>
+<year>2005</year>
+<article-title>Interchromosomal segmental duplications of the pericentromeric region on the human Y chromosome.</article-title>
+<source>Genome Res</source>
+<volume>15</volume>
+<fpage>195</fpage>
+<lpage>204</lpage>
+<pub-id pub-id-type="pmid">15653831</pub-id></element-citation></ref><ref id="pone.0017747-Eichler1"><label>37</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Eichler</surname><given-names>EE</given-names></name><name><surname>Budarf</surname><given-names>ML</given-names></name><name><surname>Rocchi</surname><given-names>M</given-names></name><name><surname>Deaven</surname><given-names>LL</given-names></name><name><surname>Doggett</surname><given-names>NA</given-names></name><etal/></person-group>
+<year>1997</year>
+<article-title>Interchromosomal duplications of the adrenoleukodystrophy locus: a phenomenon of pericentromeric plasticity.</article-title>
+<source>Hum Mol Genet</source>
+<volume>6</volume>
+<fpage>991</fpage>
+<lpage>1002</lpage>
+<pub-id pub-id-type="pmid">9215666</pub-id></element-citation></ref><ref id="pone.0017747-Werman1"><label>38</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Werman</surname><given-names>SD</given-names></name><name><surname>Davidson</surname><given-names>EH</given-names></name><name><surname>Britten</surname><given-names>RJ</given-names></name></person-group>
+<year>1990</year>
+<article-title>Rapid evolution in a fraction of the <italic>Drosophila</italic> nuclear genome.</article-title>
+<source>J Mol Evol</source>
+<volume>30</volume>
+<fpage>281</fpage>
+<lpage>289</lpage>
+<pub-id pub-id-type="pmid">2109090</pub-id></element-citation></ref><ref id="pone.0017747-Powell1"><label>39</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Powell</surname><given-names>JR</given-names></name><name><surname>Caccone</surname><given-names>A</given-names></name><name><surname>Gleason</surname><given-names>JM</given-names></name><name><surname>Nigro</surname><given-names>L</given-names></name></person-group>
+<year>1993</year>
+<article-title>Rates of DNA evolution in <italic>Drosophila</italic> depend on function and developmental stage of expression.</article-title>
+<source>Genetics</source>
+<volume>133</volume>
+<fpage>291</fpage>
+<lpage>298</lpage>
+<pub-id pub-id-type="pmid">8094697</pub-id></element-citation></ref><ref id="pone.0017747-Beverley1"><label>40</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Beverley</surname><given-names>SM</given-names></name><name><surname>Wilson</surname><given-names>AC</given-names></name></person-group>
+<year>1984</year>
+<article-title>Molecular evolution in <italic>Drosophila</italic> and the higher Diptera II. A time scale for fly evolution.</article-title>
+<source>J Mol Evol</source>
+<volume>21</volume>
+<fpage>1</fpage>
+<lpage>13</lpage>
+<pub-id pub-id-type="pmid">6442354</pub-id></element-citation></ref><ref id="pone.0017747-Kwiatowski1"><label>41</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kwiatowski</surname><given-names>J</given-names></name><name><surname>Skarecky</surname><given-names>D</given-names></name><name><surname>Bailey</surname><given-names>K</given-names></name><name><surname>Ayala</surname><given-names>FJ</given-names></name></person-group>
+<year>1994</year>
+<article-title>Phylogeny of <italic>Drosophila</italic> and related genera inferred from the nucleotide sequence of the Cu,Zn <italic>Sod</italic> gene.</article-title>
+<source>J Mol Evol</source>
+<volume>38</volume>
+<fpage>443</fpage>
+<lpage>454</lpage>
+<pub-id pub-id-type="pmid">7545938</pub-id></element-citation></ref><ref id="pone.0017747-Horvath1"><label>42</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Horvath</surname><given-names>JE</given-names></name><name><surname>Schwartz</surname><given-names>S</given-names></name><name><surname>Eichler</surname><given-names>EE</given-names></name></person-group>
+<year>2000</year>
+<article-title>The mosaic structure of human pericentromeric DNA: a strategy for characterizing complex regions of the human genome.</article-title>
+<source>Genome Res</source>
+<volume>10</volume>
+<fpage>839</fpage>
+<lpage>852</lpage>
+<pub-id pub-id-type="pmid">10854415</pub-id></element-citation></ref><ref id="pone.0017747-Luijten1"><label>43</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Luijten</surname><given-names>M</given-names></name><name><surname>Wang</surname><given-names>Y</given-names></name><name><surname>Smith</surname><given-names>BT</given-names></name><name><surname>Westerveld</surname><given-names>A</given-names></name><name><surname>Smink</surname><given-names>LJ</given-names></name><etal/></person-group>
+<year>2000</year>
+<article-title>Mechanism of spreading of the highly related neurofibromatosis type 1 (NF1) pseudogenes on chromosomes 2, 14 and 22.</article-title>
+<source>Eur J Hum Genet</source>
+<volume>8</volume>
+<fpage>209</fpage>
+<lpage>214</lpage>
+<pub-id pub-id-type="pmid">10780787</pub-id></element-citation></ref><ref id="pone.0017747-Samonte1"><label>44</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Samonte</surname><given-names>RV</given-names></name><name><surname>Eichler</surname><given-names>EE</given-names></name></person-group>
+<year>2002</year>
+<article-title>Segmental duplications and the evolution of the primate genome.</article-title>
+<source>Nat Rev Genet</source>
+<volume>3</volume>
+<fpage>65</fpage>
+<lpage>72</lpage>
+<pub-id pub-id-type="pmid">11823792</pub-id></element-citation></ref><ref id="pone.0017747-Nakielny1"><label>45</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nakielny</surname><given-names>S</given-names></name><name><surname>Dreyfuss</surname><given-names>G</given-names></name></person-group>
+<year>1999</year>
+<article-title>Transport of proteins and RNAs in and out of the nucleus.</article-title>
+<source>Cell</source>
+<volume>99</volume>
+<fpage>677</fpage>
+<lpage>690</lpage>
+<pub-id pub-id-type="pmid">10619422</pub-id></element-citation></ref><ref id="pone.0017747-Hedley1"><label>46</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hedley</surname><given-names>ML</given-names></name><name><surname>Amrein</surname><given-names>H</given-names></name><name><surname>Maniatis</surname><given-names>T</given-names></name></person-group>
+<year>1995</year>
+<article-title>An amino acid sequence motif sufficient for subnuclear localization of an arginine/serine-rich splicing factor.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>92</volume>
+<fpage>11524</fpage>
+<lpage>11528</lpage>
+<pub-id pub-id-type="pmid">8524796</pub-id></element-citation></ref><ref id="pone.0017747-Cazalla1"><label>47</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Cazalla</surname><given-names>D</given-names></name><name><surname>Zhu</surname><given-names>J</given-names></name><name><surname>Manche</surname><given-names>L</given-names></name><name><surname>Huber</surname><given-names>E</given-names></name><name><surname>Krainer</surname><given-names>AR</given-names></name><etal/></person-group>
+<year>2002</year>
+<article-title>Nuclear export and retention signals in the RS domain of SR proteins.</article-title>
+<source>Mol Cell Biol</source>
+<volume>22</volume>
+<fpage>6871</fpage>
+<lpage>6882</lpage>
+<pub-id pub-id-type="pmid">12215544</pub-id></element-citation></ref><ref id="pone.0017747-Kataoka1"><label>48</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kataoka</surname><given-names>N</given-names></name><name><surname>Bachorik</surname><given-names>JL</given-names></name><name><surname>Dreyfuss</surname><given-names>G</given-names></name></person-group>
+<year>1999</year>
+<article-title>Transportin-SR, a nuclear import receptor for SR proteins.</article-title>
+<source>J Cell Biol</source>
+<volume>145</volume>
+<fpage>1145</fpage>
+<lpage>1152</lpage>
+<pub-id pub-id-type="pmid">10366588</pub-id></element-citation></ref><ref id="pone.0017747-Lai1"><label>49</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lai</surname><given-names>MC</given-names></name><name><surname>Lin</surname><given-names>RI</given-names></name><name><surname>Tarn</surname><given-names>WY</given-names></name></person-group>
+<year>2001</year>
+<article-title>Transportin-SR2 mediates nuclear import of phosphorylated SR proteins.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>98</volume>
+<fpage>10154</fpage>
+<lpage>10159</lpage>
+<pub-id pub-id-type="pmid">11517331</pub-id></element-citation></ref><ref id="pone.0017747-Allemand1"><label>50</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Allemand</surname><given-names>E</given-names></name><name><surname>Dokudovskaya</surname><given-names>S</given-names></name><name><surname>Bordonn&#x000e9;</surname><given-names>R</given-names></name><name><surname>Tazi</surname><given-names>J</given-names></name></person-group>
+<year>2002</year>
+<article-title>A conserved <italic>Drosophila</italic> transportin-serine/arginine-rich (SR) protein permits nuclear import of <italic>Drosophila</italic> SR protein splicing factors and their antagonist repressor splicing factor 1.</article-title>
+<source>Mol Biol Cell</source>
+<volume>13</volume>
+<fpage>2436</fpage>
+<lpage>2447</lpage>
+<pub-id pub-id-type="pmid">12134081</pub-id></element-citation></ref><ref id="pone.0017747-Gontan1"><label>51</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gontan</surname><given-names>C</given-names></name><name><surname>G&#x000fc;ttler</surname><given-names>T</given-names></name><name><surname>Engelen</surname><given-names>E</given-names></name><name><surname>Demmers</surname><given-names>J</given-names></name><name><surname>Fornerod</surname><given-names>M</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>
+<italic>Exportin 4</italic> mediates a novel nuclear import pathway for Sox family transcription factors.</article-title>
+<source>J Cell Biol</source>
+<volume>185</volume>
+<fpage>27</fpage>
+<lpage>34</lpage>
+<pub-id pub-id-type="pmid">19349578</pub-id></element-citation></ref><ref id="pone.0017747-Gabrieli1"><label>52</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gabrieli</surname><given-names>P</given-names></name><name><surname>Falaguerra</surname><given-names>A</given-names></name><name><surname>Siciliano</surname><given-names>P</given-names></name><name><surname>Gomulski</surname><given-names>LM</given-names></name><name><surname>Scolari</surname><given-names>F</given-names></name><etal/></person-group>
+<year>2010</year>
+<article-title>Sex and the single embryo: early development in the Mediterranean fruit fly, <italic>Ceratitis capitata</italic>.</article-title>
+<source>BMC Dev Biol</source>
+<volume>10</volume>
+<fpage>12</fpage>
+<pub-id pub-id-type="pmid">20102629</pub-id></element-citation></ref><ref id="pone.0017747-Gvozdev1"><label>53</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gvozdev</surname><given-names>VA</given-names></name><name><surname>Kogan</surname><given-names>GL</given-names></name><name><surname>Usakin</surname><given-names>LA</given-names></name></person-group>
+<year>2005</year>
+<article-title>The Y chromosome as a target for acquired and amplified genetic material in evolution.</article-title>
+<source>Bioessays</source>
+<volume>27</volume>
+<fpage>1256</fpage>
+<lpage>1262</lpage>
+<pub-id pub-id-type="pmid">16299764</pub-id></element-citation></ref><ref id="pone.0017747-Premi1"><label>54</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Premi</surname><given-names>S</given-names></name><name><surname>Srivastava</surname><given-names>J</given-names></name><name><surname>Epplen</surname><given-names>JT</given-names></name><name><surname>Ali</surname><given-names>S</given-names></name></person-group>
+<year>2010</year>
+<article-title>AZFc region of the Y chromosome shows singular structural organization.</article-title>
+<source>Chromosome Res</source>
+<volume>18</volume>
+<fpage>419</fpage>
+<lpage>430</lpage>
+<pub-id pub-id-type="pmid">20373140</pub-id></element-citation></ref><ref id="pone.0017747-Kalmykova1"><label>55</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kalmykova</surname><given-names>AI</given-names></name><name><surname>Shevelyov</surname><given-names>YY</given-names></name><name><surname>Dobritsa</surname><given-names>AA</given-names></name><name><surname>Gvozdev</surname><given-names>VA</given-names></name></person-group>
+<year>1997</year>
+<article-title>Acquisition and amplification of a testis-expressed autosomal gene, SSL, by the <italic>Drosophila</italic> Y chromosome.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>94</volume>
+<fpage>6297</fpage>
+<lpage>6302</lpage>
+<pub-id pub-id-type="pmid">9177211</pub-id></element-citation></ref><ref id="pone.0017747-Willhoeft2"><label>56</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Willhoeft</surname><given-names>U</given-names></name><name><surname>Franz</surname><given-names>G</given-names></name></person-group>
+<year>1996</year>
+<article-title>Comparison of the mitotic karyotypes of <italic>Ceratitis capitata</italic>, <italic>Ceratitis rosa</italic>, and <italic>Trirhithrum coffeae</italic> (Diptera: Tephritidae) by C-banding and FISH.</article-title>
+<source>Genome</source>
+<volume>39</volume>
+<fpage>884</fpage>
+<lpage>889</lpage>
+<pub-id pub-id-type="pmid">18469941</pub-id></element-citation></ref><ref id="pone.0017747-BernardoCarvalho1"><label>57</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bernardo Carvalho</surname><given-names>A</given-names></name><name><surname>Koerich</surname><given-names>LB</given-names></name><name><surname>Clark</surname><given-names>AG</given-names></name></person-group>
+<year>2009</year>
+<article-title>Origin and evolution of Y chromosomes: <italic>Drosophila</italic> tales.</article-title>
+<source>Trends Genet</source>
+<volume>25</volume>
+<fpage>270</fpage>
+<lpage>277</lpage>
+<pub-id pub-id-type="pmid">19443075</pub-id></element-citation></ref><ref id="pone.0017747-Ferree1"><label>58</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ferree</surname><given-names>PM</given-names></name><name><surname>Barbash</surname><given-names>DA</given-names></name></person-group>
+<year>2009</year>
+<article-title>Species-specific heterochromatin prevents mitotic chromosome segregation to cause hybrid lethality in <italic>Drosophila</italic>.</article-title>
+<source>PLoS Biol</source>
+<volume>7</volume>
+<fpage>e1000234</fpage>
+<pub-id pub-id-type="pmid">19859525</pub-id></element-citation></ref><ref id="pone.0017747-Stratikopoulos1"><label>59</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Stratikopoulos</surname><given-names>EE</given-names></name><name><surname>Augustinos</surname><given-names>AA</given-names></name><name><surname>Petalas</surname><given-names>YG</given-names></name><name><surname>Vrahatis</surname><given-names>MN</given-names></name><name><surname>Mintzas</surname><given-names>A</given-names></name><etal/></person-group>
+<year>2008</year>
+<article-title>An integrated genetic and cytogenetic map for the Mediterranean fruit fly, <italic>Ceratitis capitata</italic>, based on microsatellite and morphological markers.</article-title>
+<source>Genetica</source>
+<volume>133</volume>
+<fpage>147</fpage>
+<lpage>157</lpage>
+<pub-id pub-id-type="pmid">17786564</pub-id></element-citation></ref><ref id="pone.0017747-Nene1"><label>60</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nene</surname><given-names>V</given-names></name><name><surname>Wortman</surname><given-names>JR</given-names></name><name><surname>Lawson</surname><given-names>D</given-names></name><name><surname>Haas</surname><given-names>B</given-names></name><name><surname>Kodira</surname><given-names>C</given-names></name><etal/></person-group>
+<year>2007</year>
+<article-title>Genome sequence of <italic>Aedes aegypti</italic>, a major arbovirus vector.</article-title>
+<source>Science</source>
+<volume>316</volume>
+<fpage>1718</fpage>
+<lpage>1723</lpage>
+<pub-id pub-id-type="pmid">17510324</pub-id></element-citation></ref><ref id="pone.0017747-Zdobnov1"><label>61</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zdobnov</surname><given-names>EM</given-names></name><name><surname>von Mering</surname><given-names>C</given-names></name><name><surname>Letunic</surname><given-names>I</given-names></name><name><surname>Torrents</surname><given-names>D</given-names></name><name><surname>Suyama</surname><given-names>M</given-names></name><etal/></person-group>
+<year>2002</year>
+<article-title>Comparative genome and proteome analysis of <italic>Anopheles gambiae</italic> and <italic>Drosophila melanogaster</italic>.</article-title>
+<source>Science</source>
+<volume>298</volume>
+<fpage>149</fpage>
+<lpage>159</lpage>
+<pub-id pub-id-type="pmid">12364792</pub-id></element-citation></ref><ref id="pone.0017747-Papathanos1"><label>62</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Papathanos</surname><given-names>PA</given-names></name><name><surname>Bossin</surname><given-names>HC</given-names></name><name><surname>Benedict</surname><given-names>MQ</given-names></name><name><surname>Catteruccia</surname><given-names>F</given-names></name><name><surname>Malcolm</surname><given-names>CA</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Sex separation strategies: past experience and new approaches.</article-title>
+<source>Malar J</source>
+<volume>8</volume>
+<issue>Suppl 2</issue>
+<fpage>S5</fpage>
+</element-citation></ref></ref-list></back></article>

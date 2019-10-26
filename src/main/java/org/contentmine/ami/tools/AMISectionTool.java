@@ -27,10 +27,13 @@ import org.contentmine.graphics.html.HtmlThead;
 import org.contentmine.graphics.html.HtmlTr;
 import org.contentmine.norma.NormaTransformer;
 import org.contentmine.norma.sections.JATSArticleElement;
+import org.contentmine.norma.sections.JATSBoldElement;
 import org.contentmine.norma.sections.JATSCaptionElement;
 import org.contentmine.norma.sections.JATSFactory;
 import org.contentmine.norma.sections.JATSFloatsGroupElement;
 import org.contentmine.norma.sections.JATSLabelElement;
+import org.contentmine.norma.sections.JATSPElement;
+import org.contentmine.norma.sections.JATSSecElement;
 import org.contentmine.norma.sections.JATSSectionTagger;
 import org.contentmine.norma.sections.JATSSectionTagger.FloatSection;
 import org.contentmine.norma.sections.JATSSectionTagger.SectionTag;
@@ -60,6 +63,10 @@ description = "splits XML files into sections using XPath%n"
 
 public class AMISectionTool extends AbstractAMITool {
 	
+	private static final String BOLD_FIRST_CHILD_OF_PARA_IN_SEC =
+			".//*[local-name()='"+JATSSecElement.TAG+"' "
+					+ "and *[local-name()='"+JATSPElement.TAG+"' "
+							+ "and *[local-name()='"+JATSBoldElement.TAG+"' and position()=1]]]";
 	private static final String FLOATS_GROUP_REGEX = ".*/\\d+_"+JATSFloatsGroupElement.TAG.replaceAll("\\-", "\\\\-");
 	private static final String FIGURE_ = "figure_";
 	private static final String FIGURE_DIR = "figures/";
@@ -73,6 +80,12 @@ public class AMISectionTool extends AbstractAMITool {
 		LOG.setLevel(Level.DEBUG);
 	}
 
+    @Option(names = {"--boldsections"},
+            description = "convert paras with bold first sentence/phrase into subsections.%n"
+            		+ "e.g. <sec id='s2.1'><p><bold>Extraction of Oils.</bold>. more text...</p></sec>%n"
+            		+ "=>  <sec id='s2.1'><sec id='s2.1.1'><title>Extraction of Oils.</title>. <p>more text...</p></sec>%n")
+    private boolean makeBoldSections = false;
+    
     @Option(names = {"--html"},
     		arity = "1",
             description = "convert sections to HTML using stylesheet (convention as in --transform)."
@@ -122,6 +135,7 @@ public class AMISectionTool extends AbstractAMITool {
 	private NormaTransformer normaTransformer;
 	private File floatsDir;
 	private File sectionsDir;
+	private File existingFulltextXML;
 		
 	public AMISectionTool() {
 		
@@ -135,6 +149,7 @@ public class AMISectionTool extends AbstractAMITool {
 	protected void parseSpecifics() {
 		normalizeSectionTags();
 		System.out.println("xslt                    " + xsltName);
+		System.out.println("boldSections            " + makeBoldSections);
 		System.out.println("extract                 " + extractList);
 		System.out.println("figureList              " + figureList);
 		System.out.println("sectionList             " + sectionTagList);
@@ -162,7 +177,6 @@ public class AMISectionTool extends AbstractAMITool {
 			if (debug) LOG.debug("skipped: "+sectionsDir);
 			return;
 		}
-//		LOG.debug(" "+cTree.getName());
 		boolean deleteExisting = false;
 		if (cTree == null || !cTree.hasExistingFulltextXML()) {
 			System.err.println("no fulltext.xml");
@@ -237,10 +251,6 @@ public class AMISectionTool extends AbstractAMITool {
 		tr.appendChild((HtmlTd) HtmlTd.createAndWrapText(Util.truncateAndAddEllipsis(caption.replaceAll("\\s*\\n\\s*", " "), 60)));
 	}
 	
-//	private List<File> extractTables() {
-//		return Util.listFilesFromPaths(floatsDir, TABLE_FILE_REGEX);
-//	}
-	
 	private File getFloatsDir() {
 		List<File> floatsDirList = Util.listFilesFromPaths(cTree.getSectionsDirectory(), FLOATS_GROUP_REGEX);
 		return (floatsDirList.size() == 1) ? floatsDirList.get(0) : null;
@@ -248,12 +258,23 @@ public class AMISectionTool extends AbstractAMITool {
 
 	private void createSectionsRecursively() {
 		JATSFactory factory = new JATSFactory();
-		File existingFulltextXML = cTree.getExistingFulltextXML();
+		existingFulltextXML = cTree.getExistingFulltextXML();
 		if (existingFulltextXML == null) {
 			System.err.println("No fulltext.xml");
 		} else {
 			JATSArticleElement articleElement = factory.readArticle(existingFulltextXML);
+			if (makeBoldSections) {
+				makeBoldSections(articleElement);
+			}
 			articleElement.writeSections(cTree);
+		}
+	}
+
+	private void makeBoldSections(JATSArticleElement articleElement) {
+		List<Element> secWithParaBoldList = XMLUtil.getQueryElements(
+				articleElement, BOLD_FIRST_CHILD_OF_PARA_IN_SEC);
+		for (Element element : secWithParaBoldList) {
+			((JATSSecElement) element).makeBoldSections();
 		}
 	}
 

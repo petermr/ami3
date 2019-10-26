@@ -5,14 +5,17 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.contentmine.eucl.euclid.Util;
+import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
+import nu.xom.Node;
 
 public class JATSSecElement extends JATSElement implements IsBlock, HasDirectory, HasTitle {
 
+	private static final String BOLD = "*[local-name()='"+JATSBoldElement.TAG+"']";
 	private static final String SEC_TYPE = "sec-type";
 
-	static String TAG = "sec";
+	public static String TAG = "sec";
 
 	public final static String CASES = "cases";
 	public final static String CONCLUSIONS = "conclusions";
@@ -39,6 +42,10 @@ public class JATSSecElement extends JATSElement implements IsBlock, HasDirectory
 		super(element);
 	}
 	
+	public JATSSecElement() {
+		super(TAG);
+	}
+
 	@Override
 	protected String getAttributeString() {
 		return getAttributeString(SEC_TYPE);
@@ -98,6 +105,44 @@ public class JATSSecElement extends JATSElement implements IsBlock, HasDirectory
 			title = this.getID();
 		}
 		return title;
+	}
+
+	/** converts <sec id='s2.3'><p><bold>some phrase</bold> some sentence</p> ...
+	 * to <sec id='s2.3'><sec id='s2.3.7'><title>some phrase</title> <p>some sentence</p></sec></sec>
+	 * adds serial numbers to IDs if present.
+	 * 
+	 */
+	public void makeBoldSections() {
+		// p[body]
+		List<Element> paraList = XMLUtil.getQueryElements(
+				this, "./*[local-name()='"+JATSPElement.TAG+"' and *[local-name()='"+JATSBoldElement.TAG+"']]");
+		for (int i = 0; i < paraList.size(); i++) {
+			JATSPElement para = (JATSPElement)paraList.get(i);
+			Element firstBoldElement = getElementWithFirstChildBoldElement(para);
+			if (firstBoldElement != null) {
+				creatNewSecAndTransferContent(i, para, firstBoldElement);
+			}
+			
+		}
+	}
+
+	private void creatNewSecAndTransferContent(int i, JATSPElement para, Element firstBoldElement) {
+		String boldValue = firstBoldElement.getValue();
+		JATSTitleElement titleElement = new JATSTitleElement(boldValue);
+		JATSSecElement newSecElement = new JATSSecElement();
+		this.replaceChild(para, newSecElement);
+		String id = this.getID();
+		if (id != null) {
+			newSecElement.setID(String.valueOf(id + "." + (i + 1)));
+		}
+		newSecElement.appendChild(titleElement);
+		newSecElement.appendChild(para);
+	}
+
+	private Element getElementWithFirstChildBoldElement(JATSPElement para) {
+		List<Node> nodes = XMLUtil.getQueryNodes(para, "node()");
+		Element element = nodes.size() > 0 && (nodes.get(0) instanceof JATSBoldElement) ? (Element) nodes.get(0) : null;
+		return element;
 	}
 
 

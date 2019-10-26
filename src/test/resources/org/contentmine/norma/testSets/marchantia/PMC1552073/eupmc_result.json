@@ -1,0 +1,474 @@
+{
+  "id": [
+    "16872510"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "16872510"
+  ],
+  "pmcid": [
+    "PMC1552073"
+  ],
+  "doi": [
+    "10.1186/1471-2180-6-68"
+  ],
+  "title": [
+    "Influence of plant diversity and elevated atmospheric carbon dioxide levels on belowground bacterial diversity."
+  ],
+  "authorString": [
+    "Grüter D, Schmid B, Brandl H."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Grüter D"
+          ],
+          "firstName": [
+            "Dominique"
+          ],
+          "lastName": [
+            "Grüter"
+          ],
+          "initials": [
+            "D"
+          ]
+        },
+        {
+          "fullName": [
+            "Schmid B"
+          ],
+          "firstName": [
+            "Bernhard"
+          ],
+          "lastName": [
+            "Schmid"
+          ],
+          "initials": [
+            "B"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-8430-3214",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Brandl H"
+          ],
+          "firstName": [
+            "Helmut"
+          ],
+          "lastName": [
+            "Brandl"
+          ],
+          "initials": [
+            "H"
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-8430-3214",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "6"
+      ],
+      "journalIssueId": [
+        "1294666"
+      ],
+      "dateOfPublication": [
+        "2006 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2006"
+      ],
+      "printPublicationDate": [
+        "2006-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "BMC microbiology"
+          ],
+          "ISOAbbreviation": [
+            "BMC Microbiol."
+          ],
+          "medlineAbbreviation": [
+            "BMC Microbiol"
+          ],
+          "NLMid": [
+            "100966981"
+          ],
+          "ISSN": [
+            "1471-2180"
+          ],
+          "ESSN": [
+            "1471-2180"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2006"
+  ],
+  "pageInfo": [
+    "68"
+  ],
+  "abstractText": [
+    "BACKGROUND: Changes in aboveground plant species diversity as well as variations of environmental conditions such as exposure of ecosystems to elevated concentrations of atmospheric carbon dioxide may lead to changes in metabolic activity, composition and diversity of belowground microbial communities, both bacterial and fungal. RESULTS: We examined soil samples taken from a biodiversity x CO2 grassland experiment where replicate plots harboring 5, 12, or 31 different plant species had been exposed to ambient or elevated (600 ppm) levels of carbon dioxide for 5 years. Analysis of soil bacterial communities in these plots by temporal temperature gradient gel electrophoresis (TTGE) showed that dominant soil bacterial populations varied only very little between different experimental treatments. These populations seem to be ubiquitous. Likewise, screening of samples on a high-resolution level by terminal restriction fragment length polymorphism (T-RFLP) showed that increased levels of carbon dioxide had no significant influence on both soil bacterial community composition (appearance and frequency of operational taxonomic units, OTUs) and on bacterial richness (total number of different OTUs). In contrast, differences in plant diversity levels had a significant effect on bacterial composition but no influence on bacterial richness. Regarding species level, several bacterial species were found only in specific plots and were related to elevated carbon dioxide or varying plant diversity levels. For example, analysis of T-RFLP showed that the occurrence of Salmonella typhimurium was significantly increased in plots exposed to elevated CO2 (P < 0.05). CONCLUSION: Plant diversity levels are affecting bacterial composition (bacterial types and their frequency of occurrence). Elevated carbon dioxide does not lead to quantitative alteration (bacterial richness), whereas plant diversity is responsible for qualitative changes (bacterial diversity)."
+  ],
+  "affiliation": [
+    "University of Zurich, Institute of Environmental Sciences, Winterthurerstrasse 190, CH-8057 Zurich, Switzerland. dgrueter@uwinst.unizh.ch"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Bacteria"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "CL"
+                  ],
+                  "qualifierName": [
+                    "classification"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "GD"
+                  ],
+                  "qualifierName": [
+                    "growth & development"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Plants"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Carbon Dioxide"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "RNA, Ribosomal, 16S"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Electrophoresis"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Soil Microbiology"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Ecosystem"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Biodiversity"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Temperature"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Atmosphere"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Plant Development"
+          ]
+        }
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "Carbon Dioxide"
+          ],
+          "registryNumber": [
+            "124-38-9"
+          ]
+        },
+        {
+          "name": [
+            "RNA, Ribosomal, 16S"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC1552073?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC1552073"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1186/1471-2180-6-68"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "21"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2006-09-07"
+  ],
+  "dateOfCreation": [
+    "2006-08-23"
+  ],
+  "dateOfRevision": [
+    "2012-11-15"
+  ],
+  "electronicPublicationDate": [
+    "2006-07-27"
+  ],
+  "firstPublicationDate": [
+    "2006-07-27"
+  ]
+}

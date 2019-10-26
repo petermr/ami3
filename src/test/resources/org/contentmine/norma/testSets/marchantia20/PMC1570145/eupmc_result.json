@@ -1,0 +1,497 @@
+{
+  "id": [
+    "16956407"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "16956407"
+  ],
+  "pmcid": [
+    "PMC1570145"
+  ],
+  "doi": [
+    "10.1186/1741-7007-4-31"
+  ],
+  "title": [
+    "An exceptional horizontal gene transfer in plastids: gene replacement by a distant bacterial paralog and evidence that haptophyte and cryptophyte plastids are sisters."
+  ],
+  "authorString": [
+    "Rice DW, Palmer JD."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Rice DW"
+          ],
+          "firstName": [
+            "Danny W"
+          ],
+          "lastName": [
+            "Rice"
+          ],
+          "initials": [
+            "DW"
+          ],
+          "affiliation": [
+            "Department of Biology, Indiana University, Bloomington, IN 47405, USA. dwrice@indiana.edu"
+          ]
+        },
+        {
+          "fullName": [
+            "Palmer JD"
+          ],
+          "firstName": [
+            "Jeffrey D"
+          ],
+          "lastName": [
+            "Palmer"
+          ],
+          "initials": [
+            "JD"
+          ]
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "4"
+      ],
+      "journalIssueId": [
+        "2465063"
+      ],
+      "dateOfPublication": [
+        "2006 Sep"
+      ],
+      "monthOfPublication": [
+        "9"
+      ],
+      "yearOfPublication": [
+        "2006"
+      ],
+      "printPublicationDate": [
+        "2006-09-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "BMC biology"
+          ],
+          "ISOAbbreviation": [
+            "BMC Biol."
+          ],
+          "medlineAbbreviation": [
+            "BMC Biol"
+          ],
+          "NLMid": [
+            "101190720"
+          ],
+          "ISSN": [
+            "1741-7007"
+          ],
+          "ESSN": [
+            "1741-7007"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2006"
+  ],
+  "pageInfo": [
+    "31"
+  ],
+  "abstractText": [
+    "Horizontal gene transfer (HGT) to the plant mitochondrial genome has recently been shown to occur at a surprisingly high rate; however, little evidence has been found for HGT to the plastid genome, despite extensive sequencing. In this study, we analyzed all genes from sequenced plastid genomes to unearth any neglected cases of HGT and to obtain a measure of the overall extent of HGT to the plastid.Although several genes gave strongly supported conflicting trees under certain conditions, we are confident of HGT in only a single case beyond the rubisco HGT already reported. Most of the conflicts involved near neighbors connected by long branches (e.g. red algae and their secondary hosts), where phylogenetic methods are prone to mislead. However, three genes--clpP, ycf2, and rpl36--provided strong support for taxa moving far from their organismal position. Further taxon sampling of clpP and ycf2 resulted in rejection of HGT due to long-branch attraction and a serious error in the published plastid genome sequence of Oenothera elata, respectively. A single new case, a bacterial rpl36 gene transferred into the ancestor of the cryptophyte and haptophyte plastids, appears to be a true HGT event. Interestingly, this rpl36 gene is a distantly related paralog of the rpl36 type found in other plastids and most eubacteria. Moreover, the transferred gene has physically replaced the native rpl36 gene, yet flanking genes and intergenic regions show no sign of HGT. This suggests that gene replacement somehow occurred by recombination at the very ends of rpl36, without the level and length of similarity normally expected to support recombination.The rpl36 HGT discovered in this study is of considerable interest in terms of both molecular mechanism and phylogeny. The plastid acquisition of a bacterial rpl36 gene via HGT provides the first strong evidence for a sister-group relationship between haptophyte and cryptophyte plastids to the exclusion of heterokont and alveolate plastids. Moreover, the bacterial gene has replaced the native plastid rpl36 gene by an uncertain mechanism that appears inconsistent with existing models for the recombinational basis of gene conversion."
+  ],
+  "affiliation": [
+    "Department of Biology, Indiana University, Bloomington, IN 47405, USA. dwrice@indiana.edu"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "GM-35087"
+          ],
+          "agency": [
+            "NIGMS NIH HHS"
+          ],
+          "acronym": [
+            "GM"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "R01 GM070612"
+          ],
+          "agency": [
+            "NIGMS NIH HHS"
+          ],
+          "acronym": [
+            "GM"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "R01 GM035087"
+          ],
+          "agency": [
+            "NIGMS NIH HHS"
+          ],
+          "acronym": [
+            "GM"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "GM-70612"
+          ],
+          "agency": [
+            "NIGMS NIH HHS"
+          ],
+          "acronym": [
+            "GM"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Plastids"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Bacteria"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Plants"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Oenothera"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Symbiosis"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Gene Transfer, Horizontal"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Genes, Plant"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Rhodophyta"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC1570145?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC1570145"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1186/1741-7007-4-31"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "82"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "Y"
+  ],
+  "dbCrossReferenceList": [
+    {
+      "dbName": [
+        "EMBL",
+        "UNIPROT"
+      ]
+    }
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "gen"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2006-10-06"
+  ],
+  "dateOfCreation": [
+    "2006-09-19"
+  ],
+  "dateOfRevision": [
+    "2016-10-19"
+  ],
+  "electronicPublicationDate": [
+    "2006-09-06"
+  ],
+  "firstPublicationDate": [
+    "2006-09-06"
+  ]
+}

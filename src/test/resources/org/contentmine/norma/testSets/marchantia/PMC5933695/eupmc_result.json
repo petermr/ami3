@@ -1,0 +1,402 @@
+{
+  "id": [
+    "29723275"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "29723275"
+  ],
+  "pmcid": [
+    "PMC5933695"
+  ],
+  "doi": [
+    "10.1371/journal.pone.0196810"
+  ],
+  "title": [
+    "Droplet-based microfluidic analysis and screening of single plant cells."
+  ],
+  "authorString": [
+    "Yu Z, Boehm CR, Hibberd JM, Abell C, Haseloff J, Burgess SJ, Reyna-Llorens I."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Yu Z"
+          ],
+          "firstName": [
+            "Ziyi"
+          ],
+          "lastName": [
+            "Yu"
+          ],
+          "initials": [
+            "Z"
+          ],
+          "affiliation": [
+            "Department of Chemistry, University of Cambridge, Cambridge, United Kingdom."
+          ]
+        },
+        {
+          "fullName": [
+            "Boehm CR"
+          ],
+          "firstName": [
+            "Christian R"
+          ],
+          "lastName": [
+            "Boehm"
+          ],
+          "initials": [
+            "CR"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-6633-7998",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Plant Sciences, University of Cambridge, Cambridge, United Kingdom."
+          ]
+        },
+        {
+          "fullName": [
+            "Hibberd JM"
+          ],
+          "firstName": [
+            "Julian M"
+          ],
+          "lastName": [
+            "Hibberd"
+          ],
+          "initials": [
+            "JM"
+          ],
+          "affiliation": [
+            "Department of Plant Sciences, University of Cambridge, Cambridge, United Kingdom."
+          ]
+        },
+        {
+          "fullName": [
+            "Abell C"
+          ],
+          "firstName": [
+            "Chris"
+          ],
+          "lastName": [
+            "Abell"
+          ],
+          "initials": [
+            "C"
+          ],
+          "affiliation": [
+            "Department of Chemistry, University of Cambridge, Cambridge, United Kingdom."
+          ]
+        },
+        {
+          "fullName": [
+            "Haseloff J"
+          ],
+          "firstName": [
+            "Jim"
+          ],
+          "lastName": [
+            "Haseloff"
+          ],
+          "initials": [
+            "J"
+          ],
+          "affiliation": [
+            "Department of Plant Sciences, University of Cambridge, Cambridge, United Kingdom."
+          ]
+        },
+        {
+          "fullName": [
+            "Burgess SJ"
+          ],
+          "firstName": [
+            "Steven J"
+          ],
+          "lastName": [
+            "Burgess"
+          ],
+          "initials": [
+            "SJ"
+          ],
+          "affiliation": [
+            "Department of Plant Sciences, University of Cambridge, Cambridge, United Kingdom."
+          ]
+        },
+        {
+          "fullName": [
+            "Reyna-Llorens I"
+          ],
+          "firstName": [
+            "Ivan"
+          ],
+          "lastName": [
+            "Reyna-Llorens"
+          ],
+          "initials": [
+            "I"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-7964-7306",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Plant Sciences, University of Cambridge, Cambridge, United Kingdom."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0001-7964-7306",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-6633-7998",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "5"
+      ],
+      "volume": [
+        "13"
+      ],
+      "journalIssueId": [
+        "2678126"
+      ],
+      "dateOfPublication": [
+        "2018 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2018"
+      ],
+      "printPublicationDate": [
+        "2018-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "PloS one"
+          ],
+          "ISOAbbreviation": [
+            "PLoS ONE"
+          ],
+          "medlineAbbreviation": [
+            "PLoS One"
+          ],
+          "NLMid": [
+            "101285081"
+          ],
+          "ISSN": [
+            "1932-6203"
+          ],
+          "ESSN": [
+            "1932-6203"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2018"
+  ],
+  "pageInfo": [
+    "e0196810"
+  ],
+  "abstractText": [
+    "Droplet-based microfluidics has been used to facilitate high-throughput analysis of individual prokaryote and mammalian cells. However, there is a scarcity of similar workflows applicable to rapid phenotyping of plant systems where phenotyping analyses typically are time-consuming and low-throughput. We report on-chip encapsulation and analysis of protoplasts isolated from the emergent plant model Marchantia polymorpha at processing rates of >100,000 cells per hour. We use our microfluidic system to quantify the stochastic properties of a heat-inducible promoter across a population of transgenic protoplasts to demonstrate its potential for assessing gene expression activity in response to environmental conditions. We further demonstrate on-chip sorting of droplets containing YFP-expressing protoplasts from wild type cells using dielectrophoresis force. This work opens the door to droplet-based microfluidic analysis of plant cells for applications ranging from high-throughput characterisation of DNA parts to single-cell genomics to selection of rare plant phenotypes."
+  ],
+  "affiliation": [
+    "Department of Chemistry, University of Cambridge, Cambridge, United Kingdom."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-eCollection"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5933695?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5933695"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1371/journal.pone.0196810"
+          ]
+        }
+      ]
+    }
+  ],
+  "commentCorrectionList": [
+    {
+      "commentCorrection": [
+        {
+          "id": [
+            "PPR11658"
+          ],
+          "source": [
+            "PPR"
+          ],
+          "type": [
+            "Preprint in"
+          ],
+          "note": [
+            "CrossRef Pre-print loader"
+          ],
+          "orderIn": [
+            "10002"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "0"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "Y"
+  ],
+  "dbCrossReferenceList": [
+    {
+      "dbName": [
+        "EMBL"
+      ]
+    }
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCreation": [
+    "2018-05-04"
+  ],
+  "dateOfRevision": [
+    "2018-05-13"
+  ],
+  "electronicPublicationDate": [
+    "2018-05-03"
+  ],
+  "firstPublicationDate": [
+    "2018-05-03"
+  ]
+}

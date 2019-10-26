@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results title="human">
+ <result pre=" a " exact="SLG" post=" S-locus glycoprotein, EGF epidermal growth factor, PAN plasminogen apple nematode, &lt;" xpath="/html[1]/body[1]/div[2]/div[3]/div[6]/p[9]" dictionary="hgnc" dictionaryCheck="false" name="human"/>
+ <result pre=" a SLG S-locus glycoprotein, " exact="EGF" post=" epidermal growth factor, PAN plasminogen apple nematode, TM transmembrane " xpath="/html[1]/body[1]/div[2]/div[3]/div[6]/p[9]" name="human"/>
+ <result pre=" a SLG S-locus glycoprotein, EGF epidermal growth factor, " exact="PAN" post=" plasminogen apple nematode, TM transmembrane " xpath="/html[1]/body[1]/div[2]/div[3]/div[6]/p[9]" dictionary="hgnc" dictionaryCheck="false" name="human"/>
+ <result pre=" a " exact="SLG" post=" S-locus glycoprotein, EGF epidermal growth factor, PAN plasminogen apple nematode, &lt;" xpath="/html[1]/body[1]/div[2]/div[3]/div[6]/p[9]" dictionary="hgnc" dictionaryCheck="false" name="human"/>
+ <result pre=" a SLG S-locus glycoprotein, " exact="EGF" post=" epidermal growth factor, PAN plasminogen apple nematode, TM transmembrane " xpath="/html[1]/body[1]/div[2]/div[3]/div[6]/p[9]" name="human"/>
+ <result pre=" a SLG S-locus glycoprotein, EGF epidermal growth factor, " exact="PAN" post=" plasminogen apple nematode, TM transmembrane " xpath="/html[1]/body[1]/div[2]/div[3]/div[6]/p[9]" dictionary="hgnc" dictionaryCheck="false" name="human"/>
+ <result pre="s. The Arabidopsis gene (At4g00340.1) has not been characterized, but its ortholog in strawberry ( " exact="M2F10" post=") is upregulated in response to infection by the fungus Colletotrichum acutatum [ &lt;a href=&quot;#" dictionary="hgnc" dictionaryCheck="false" name="human"/>
+</results>

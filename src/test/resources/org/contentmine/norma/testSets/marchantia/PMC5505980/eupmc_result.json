@@ -1,0 +1,355 @@
+{
+  "id": [
+    "28698618"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "28698618"
+  ],
+  "pmcid": [
+    "PMC5505980"
+  ],
+  "doi": [
+    "10.1038/s41598-017-05309-w"
+  ],
+  "title": [
+    "An intragenic mutagenesis strategy in Physcomitrella patens to preserve intron splicing."
+  ],
+  "authorString": [
+    "Ako AE, Perroud PF, Innocent J, Demko V, Olsen OA, Johansen W."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Ako AE"
+          ],
+          "firstName": [
+            "Ako Eugene"
+          ],
+          "lastName": [
+            "Ako"
+          ],
+          "initials": [
+            "AE"
+          ],
+          "affiliation": [
+            "Inland Norway University of Applied Sciences, Holsetgata 31, N-2318, Hamar, Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Perroud PF"
+          ],
+          "firstName": [
+            "Pierre-François"
+          ],
+          "lastName": [
+            "Perroud"
+          ],
+          "initials": [
+            "PF"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-7607-3618",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Philipps University Marburg, Plant Cell Biology II, Karl-von-Frisch-Str. 8, 35043, Marburg, Germany."
+          ]
+        },
+        {
+          "fullName": [
+            "Innocent J"
+          ],
+          "firstName": [
+            "Joseph"
+          ],
+          "lastName": [
+            "Innocent"
+          ],
+          "initials": [
+            "J"
+          ],
+          "affiliation": [
+            "Inland Norway University of Applied Sciences, Holsetgata 31, N-2318, Hamar, Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Demko V"
+          ],
+          "firstName": [
+            "Viktor"
+          ],
+          "lastName": [
+            "Demko"
+          ],
+          "initials": [
+            "V"
+          ],
+          "affiliation": [
+            "Norwegian University of Life Sciences, P.O. Box 5003, N-1432, As, Norway."
+          ]
+        },
+        {
+          "fullName": [
+            "Olsen OA"
+          ],
+          "firstName": [
+            "Odd-Arne"
+          ],
+          "lastName": [
+            "Olsen"
+          ],
+          "initials": [
+            "OA"
+          ],
+          "affiliation": [
+            "Norwegian University of Life Sciences, P.O. Box 5003, N-1432, As, Norway. odd-arne.olsen@nmbu.no."
+          ]
+        },
+        {
+          "fullName": [
+            "Johansen W"
+          ],
+          "firstName": [
+            "Wenche"
+          ],
+          "lastName": [
+            "Johansen"
+          ],
+          "initials": [
+            "W"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-9240-586X",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Inland Norway University of Applied Sciences, Holsetgata 31, N-2318, Hamar, Norway. wenche.johansen@inn.no."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0001-7607-3618",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-9240-586X",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "1"
+      ],
+      "volume": [
+        "7"
+      ],
+      "journalIssueId": [
+        "2573257"
+      ],
+      "dateOfPublication": [
+        "2017 Jul"
+      ],
+      "monthOfPublication": [
+        "7"
+      ],
+      "yearOfPublication": [
+        "2017"
+      ],
+      "printPublicationDate": [
+        "2017-07-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Scientific reports"
+          ],
+          "ISOAbbreviation": [
+            "Sci Rep"
+          ],
+          "medlineAbbreviation": [
+            "Sci Rep"
+          ],
+          "NLMid": [
+            "101563288"
+          ],
+          "ISSN": [
+            "2045-2322"
+          ],
+          "ESSN": [
+            "2045-2322"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2017"
+  ],
+  "pageInfo": [
+    "5111"
+  ],
+  "abstractText": [
+    "Gene targeting is a powerful reverse genetics technique for site-specific genome modification. Intrinsic homologous recombination in the moss Physcomitrella patens permits highly effective gene targeting, a characteristic that makes this organism a valuable model for functional genetics. Functional characterization of domains located within a multi-domain protein depends on the ability to generate mutants harboring genetic modifications at internal gene positions while maintaining the reading-frames of the flanking exons. In this study, we designed and evaluated different gene targeting constructs for targeted gene manipulation of sequences corresponding to internal domains of the DEFECTIVE KERNEL1 protein in Physcomitrella patens. Our results show that gene targeting-associated mutagenesis of introns can have adverse effects on splicing, corrupting the normal reading frame of the transcript. We show that successful genetic modification of internal sequences of multi-exon genes depends on gene-targeting strategies which insert the selection marker cassette into the 5' end of the intron and preserve the nucleotide sequence of the targeted intron."
+  ],
+  "affiliation": [
+    "Inland Norway University of Applied Sciences, Holsetgata 31, N-2318, Hamar, Norway."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5505980?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5505980"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1038/s41598-017-05309-w"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "0"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCreation": [
+    "2017-07-12"
+  ],
+  "dateOfRevision": [
+    "2017-07-16"
+  ],
+  "electronicPublicationDate": [
+    "2017-07-11"
+  ],
+  "firstPublicationDate": [
+    "2017-07-11"
+  ]
+}

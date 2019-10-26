@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippetsTree>
+ <snippets file="epmc/PMC6011411/results/species/binomial/results.xml">
+  <result pre="Among markets we compared plant species reported as being used (unique Latin binomials, e.g., " exact="Aloe vera" xpath="/html[1]/body[1]/div[2]/div[2]/div[3]/p[1]" match="Aloe vera" post="), plant uses (unique combinations of a species used for an ailment or illness, e.g., Aloe vera&lt;" name="binomial"/>
+  <result pre="Aloe vera), plant uses (unique combinations of a species used for an ailment or illness, e.g., " exact="Aloe vera" xpath="/html[1]/body[1]/div[2]/div[2]/div[3]/p[1]" match="Aloe vera" post=" for eye irritation), and plant categories (unique combinations of a species used for a category of" name="binomial"/>
+  <result pre="on), and plant categories (unique combinations of a species used for a category of ailments, e.g., " exact="Aloe vera" match="Aloe vera" post=" sensory system). " name="binomial"/>
+ </snippets>
+</snippetsTree>

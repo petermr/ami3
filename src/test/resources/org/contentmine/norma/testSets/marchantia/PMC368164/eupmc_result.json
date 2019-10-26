@@ -1,0 +1,1152 @@
+{
+  "id": [
+    "15024419"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "15024419"
+  ],
+  "pmcid": [
+    "PMC368164"
+  ],
+  "doi": [
+    "10.1371/journal.pbio.0020069"
+  ],
+  "title": [
+    "Phylogenomics of the reproductive parasite Wolbachia pipientis wMel: a streamlined genome overrun by mobile genetic elements."
+  ],
+  "authorString": [
+    "Wu M, Sun LV, Vamathevan J, Riegler M, Deboy R, Brownlie JC, McGraw EA, Martin W, Esser C, Ahmadinejad N, Wiegand C, Madupu R, Beanan MJ, Brinkac LM, Daugherty SC, Durkin AS, Kolonay JF, Nelson WC, Mohamoud Y, Lee P, Berry K, Young MB, Utterback T, Weidman J, Nierman WC, Paulsen IT, Nelson KE, Tettelin H, O'Neill SL, Eisen JA."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Wu M"
+          ],
+          "firstName": [
+            "Martin"
+          ],
+          "lastName": [
+            "Wu"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-3093-4077",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "The Institute for Genomic Research, Rockville, Maryland, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Sun LV"
+          ],
+          "firstName": [
+            "Ling V"
+          ],
+          "lastName": [
+            "Sun"
+          ],
+          "initials": [
+            "LV"
+          ]
+        },
+        {
+          "fullName": [
+            "Vamathevan J"
+          ],
+          "firstName": [
+            "Jessica"
+          ],
+          "lastName": [
+            "Vamathevan"
+          ],
+          "initials": [
+            "J"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-2016-9754",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Riegler M"
+          ],
+          "firstName": [
+            "Markus"
+          ],
+          "lastName": [
+            "Riegler"
+          ],
+          "initials": [
+            "M"
+          ]
+        },
+        {
+          "fullName": [
+            "Deboy R"
+          ],
+          "firstName": [
+            "Robert"
+          ],
+          "lastName": [
+            "Deboy"
+          ],
+          "initials": [
+            "R"
+          ]
+        },
+        {
+          "fullName": [
+            "Brownlie JC"
+          ],
+          "firstName": [
+            "Jeremy C"
+          ],
+          "lastName": [
+            "Brownlie"
+          ],
+          "initials": [
+            "JC"
+          ]
+        },
+        {
+          "fullName": [
+            "McGraw EA"
+          ],
+          "firstName": [
+            "Elizabeth A"
+          ],
+          "lastName": [
+            "McGraw"
+          ],
+          "initials": [
+            "EA"
+          ]
+        },
+        {
+          "fullName": [
+            "Martin W"
+          ],
+          "firstName": [
+            "William"
+          ],
+          "lastName": [
+            "Martin"
+          ],
+          "initials": [
+            "W"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-1478-6449",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Esser C"
+          ],
+          "firstName": [
+            "Christian"
+          ],
+          "lastName": [
+            "Esser"
+          ],
+          "initials": [
+            "C"
+          ]
+        },
+        {
+          "fullName": [
+            "Ahmadinejad N"
+          ],
+          "firstName": [
+            "Nahal"
+          ],
+          "lastName": [
+            "Ahmadinejad"
+          ],
+          "initials": [
+            "N"
+          ]
+        },
+        {
+          "fullName": [
+            "Wiegand C"
+          ],
+          "firstName": [
+            "Christian"
+          ],
+          "lastName": [
+            "Wiegand"
+          ],
+          "initials": [
+            "C"
+          ]
+        },
+        {
+          "fullName": [
+            "Madupu R"
+          ],
+          "firstName": [
+            "Ramana"
+          ],
+          "lastName": [
+            "Madupu"
+          ],
+          "initials": [
+            "R"
+          ]
+        },
+        {
+          "fullName": [
+            "Beanan MJ"
+          ],
+          "firstName": [
+            "Maureen J"
+          ],
+          "lastName": [
+            "Beanan"
+          ],
+          "initials": [
+            "MJ"
+          ]
+        },
+        {
+          "fullName": [
+            "Brinkac LM"
+          ],
+          "firstName": [
+            "Lauren M"
+          ],
+          "lastName": [
+            "Brinkac"
+          ],
+          "initials": [
+            "LM"
+          ]
+        },
+        {
+          "fullName": [
+            "Daugherty SC"
+          ],
+          "firstName": [
+            "Sean C"
+          ],
+          "lastName": [
+            "Daugherty"
+          ],
+          "initials": [
+            "SC"
+          ]
+        },
+        {
+          "fullName": [
+            "Durkin AS"
+          ],
+          "firstName": [
+            "A Scott"
+          ],
+          "lastName": [
+            "Durkin"
+          ],
+          "initials": [
+            "AS"
+          ]
+        },
+        {
+          "fullName": [
+            "Kolonay JF"
+          ],
+          "firstName": [
+            "James F"
+          ],
+          "lastName": [
+            "Kolonay"
+          ],
+          "initials": [
+            "JF"
+          ]
+        },
+        {
+          "fullName": [
+            "Nelson WC"
+          ],
+          "firstName": [
+            "William C"
+          ],
+          "lastName": [
+            "Nelson"
+          ],
+          "initials": [
+            "WC"
+          ]
+        },
+        {
+          "fullName": [
+            "Mohamoud Y"
+          ],
+          "firstName": [
+            "Yasmin"
+          ],
+          "lastName": [
+            "Mohamoud"
+          ],
+          "initials": [
+            "Y"
+          ]
+        },
+        {
+          "fullName": [
+            "Lee P"
+          ],
+          "firstName": [
+            "Perris"
+          ],
+          "lastName": [
+            "Lee"
+          ],
+          "initials": [
+            "P"
+          ]
+        },
+        {
+          "fullName": [
+            "Berry K"
+          ],
+          "firstName": [
+            "Kristi"
+          ],
+          "lastName": [
+            "Berry"
+          ],
+          "initials": [
+            "K"
+          ]
+        },
+        {
+          "fullName": [
+            "Young MB"
+          ],
+          "firstName": [
+            "M Brook"
+          ],
+          "lastName": [
+            "Young"
+          ],
+          "initials": [
+            "MB"
+          ]
+        },
+        {
+          "fullName": [
+            "Utterback T"
+          ],
+          "firstName": [
+            "Teresa"
+          ],
+          "lastName": [
+            "Utterback"
+          ],
+          "initials": [
+            "T"
+          ]
+        },
+        {
+          "fullName": [
+            "Weidman J"
+          ],
+          "firstName": [
+            "Janice"
+          ],
+          "lastName": [
+            "Weidman"
+          ],
+          "initials": [
+            "J"
+          ]
+        },
+        {
+          "fullName": [
+            "Nierman WC"
+          ],
+          "firstName": [
+            "William C"
+          ],
+          "lastName": [
+            "Nierman"
+          ],
+          "initials": [
+            "WC"
+          ]
+        },
+        {
+          "fullName": [
+            "Paulsen IT"
+          ],
+          "firstName": [
+            "Ian T"
+          ],
+          "lastName": [
+            "Paulsen"
+          ],
+          "initials": [
+            "IT"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-9015-9418",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Nelson KE"
+          ],
+          "firstName": [
+            "Karen E"
+          ],
+          "lastName": [
+            "Nelson"
+          ],
+          "initials": [
+            "KE"
+          ]
+        },
+        {
+          "fullName": [
+            "Tettelin H"
+          ],
+          "firstName": [
+            "Hervé"
+          ],
+          "lastName": [
+            "Tettelin"
+          ],
+          "initials": [
+            "H"
+          ]
+        },
+        {
+          "fullName": [
+            "O'Neill SL"
+          ],
+          "firstName": [
+            "Scott L"
+          ],
+          "lastName": [
+            "O'Neill"
+          ],
+          "initials": [
+            "SL"
+          ]
+        },
+        {
+          "fullName": [
+            "Eisen JA"
+          ],
+          "firstName": [
+            "Jonathan A"
+          ],
+          "lastName": [
+            "Eisen"
+          ],
+          "initials": [
+            "JA"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-0159-2197",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0003-3093-4077",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-9015-9418",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-1873-3929",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-0159-2197",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0003-2016-9754",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0003-1478-6449",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "3"
+      ],
+      "volume": [
+        "2"
+      ],
+      "journalIssueId": [
+        "1197034"
+      ],
+      "dateOfPublication": [
+        "2004 Mar"
+      ],
+      "monthOfPublication": [
+        "3"
+      ],
+      "yearOfPublication": [
+        "2004"
+      ],
+      "printPublicationDate": [
+        "2004-03-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "PLoS biology"
+          ],
+          "ISOAbbreviation": [
+            "PLoS Biol."
+          ],
+          "medlineAbbreviation": [
+            "PLoS Biol"
+          ],
+          "NLMid": [
+            "101183755"
+          ],
+          "ISSN": [
+            "1544-9173"
+          ],
+          "ESSN": [
+            "1545-7885"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2004"
+  ],
+  "pageInfo": [
+    "E69"
+  ],
+  "abstractText": [
+    "The complete sequence of the 1,267,782 bp genome of Wolbachia pipientis wMel, an obligate intracellular bacteria of Drosophila melanogaster, has been determined. Wolbachia, which are found in a variety of invertebrate species, are of great interest due to their diverse interactions with different hosts, which range from many forms of reproductive parasitism to mutualistic symbioses. Analysis of the wMel genome, in particular phylogenomic comparisons with other intracellular bacteria, has revealed many insights into the biology and evolution of wMel and Wolbachia in general. For example, the wMel genome is unique among sequenced obligate intracellular species in both being highly streamlined and containing very high levels of repetitive DNA and mobile DNA elements. This observation, coupled with multiple evolutionary reconstructions, suggests that natural selection is somewhat inefficient in wMel, most likely owing to the occurrence of repeated population bottlenecks. Genome analysis predicts many metabolic differences with the closely related Rickettsia species, including the presence of intact glycolysis and purine synthesis, which may compensate for an inability to obtain ATP directly from its host, as Rickettsia can. Other discoveries include the apparent inability of wMel to synthesize lipopolysaccharide and the presence of the most genes encoding proteins with ankyrin repeat domains of any prokaryotic genome yet sequenced. Despite the ability of wMel to infect the germline of its host, we find no evidence for either recent lateral gene transfer between wMel and D. melanogaster or older transfers between Wolbachia and any host. Evolutionary analysis further supports the hypothesis that mitochondria share a common ancestor with the alpha-Proteobacteria, but shows little support for the grouping of mitochondria with species in the order Rickettsiales. With the availability of the complete genomes of both species and excellent genetic tools for the host, the wMel-D. melanogaster symbiosis is now an ideal system for studying the biology and evolution of Wolbachia infections."
+  ],
+  "affiliation": [
+    "The Institute for Genomic Research, Rockville, Maryland, USA."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print-Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, U.S. Gov't, P.H.S.",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "UO1-AI47409-01"
+          ],
+          "agency": [
+            "NIAID NIH HHS"
+          ],
+          "acronym": [
+            "AI"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Drosophila melanogaster"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "MI"
+                  ],
+                  "qualifierName": [
+                    "microbiology"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Parasites"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Wolbachia"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Purines"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "DNA"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "DNA Primers"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Adenosine Triphosphate"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Polymerase Chain Reaction"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Genomics"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "MT"
+                  ],
+                  "qualifierName": [
+                    "methods"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Evolution, Molecular"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Gene Duplication"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Gene Deletion"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Interspersed Repetitive Sequences"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Protein Structure, Tertiary"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Glycolysis"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Cell Lineage"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Gene Library"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Genes, Bacterial"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Genome, Bacterial"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Open Reading Frames"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Genome"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Models, Genetic"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Molecular Sequence Data"
+          ]
+        }
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "DNA"
+          ],
+          "registryNumber": [
+            "9007-49-2"
+          ]
+        },
+        {
+          "name": [
+            "Purines"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "DNA Primers"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Adenosine Triphosphate"
+          ],
+          "registryNumber": [
+            "8L70Q75FXE"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC368164?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC368164"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1371/journal.pbio.0020069"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "321"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "Y"
+  ],
+  "dbCrossReferenceList": [
+    {
+      "dbName": [
+        "EMBL",
+        "UNIPROT"
+      ]
+    }
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "gen"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2006-05-12"
+  ],
+  "dateOfCreation": [
+    "2004-03-16"
+  ],
+  "dateOfRevision": [
+    "2017-02-24"
+  ],
+  "electronicPublicationDate": [
+    "2004-03-16"
+  ],
+  "firstPublicationDate": [
+    "2004-03-16"
+  ]
+}

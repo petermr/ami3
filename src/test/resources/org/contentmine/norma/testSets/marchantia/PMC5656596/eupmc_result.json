@@ -1,0 +1,437 @@
+{
+  "id": [
+    "29070794"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "29070794"
+  ],
+  "pmcid": [
+    "PMC5656596"
+  ],
+  "doi": [
+    "10.1038/s41598-017-14332-w"
+  ],
+  "title": [
+    "Yucasin DF, a potent and persistent inhibitor of auxin biosynthesis in plants."
+  ],
+  "authorString": [
+    "Tsugafune S, Mashiguchi K, Fukui K, Takebayashi Y, Nishimura T, Sakai T, Shimada Y, Kasahara H, Koshiba T, Hayashi KI."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Tsugafune S"
+          ],
+          "firstName": [
+            "Shinichi"
+          ],
+          "lastName": [
+            "Tsugafune"
+          ],
+          "initials": [
+            "S"
+          ],
+          "affiliation": [
+            "Department of Biochemistry, Okayama University of Science, Kitaku, Okayama city, Okayama, 700-0005, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Mashiguchi K"
+          ],
+          "firstName": [
+            "Kiyoshi"
+          ],
+          "lastName": [
+            "Mashiguchi"
+          ],
+          "initials": [
+            "K"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-7234-887X",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Graduate School of Life Sciences, Tohoku University, Sendai city, Miyagi, 980-8577, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Fukui K"
+          ],
+          "firstName": [
+            "Kosuke"
+          ],
+          "lastName": [
+            "Fukui"
+          ],
+          "initials": [
+            "K"
+          ],
+          "affiliation": [
+            "Department of Biochemistry, Okayama University of Science, Kitaku, Okayama city, Okayama, 700-0005, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Takebayashi Y"
+          ],
+          "firstName": [
+            "Yumiko"
+          ],
+          "lastName": [
+            "Takebayashi"
+          ],
+          "initials": [
+            "Y"
+          ],
+          "affiliation": [
+            "RIKEN Center for Sustainable Resource Science, Yokohama city, Kanagawa, 230-0045, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Nishimura T"
+          ],
+          "firstName": [
+            "Takeshi"
+          ],
+          "lastName": [
+            "Nishimura"
+          ],
+          "initials": [
+            "T"
+          ],
+          "affiliation": [
+            "Graduate School of Bioagricultural Sciences, Nagoya University, Nagoya city, Aichi, 464-8601, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Sakai T"
+          ],
+          "firstName": [
+            "Tatsuya"
+          ],
+          "lastName": [
+            "Sakai"
+          ],
+          "initials": [
+            "T"
+          ],
+          "affiliation": [
+            "Graduate School of Science and Technology, Niigata University, Nishiku, Niigata, 950-2181, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Shimada Y"
+          ],
+          "firstName": [
+            "Yukihisa"
+          ],
+          "lastName": [
+            "Shimada"
+          ],
+          "initials": [
+            "Y"
+          ],
+          "affiliation": [
+            "Kihara Institute for Biological Research, Yokohama City University, Yokohama, Kanagawa, 244-0813, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Kasahara H"
+          ],
+          "firstName": [
+            "Hiroyuki"
+          ],
+          "lastName": [
+            "Kasahara"
+          ],
+          "initials": [
+            "H"
+          ],
+          "affiliation": [
+            "Institute of Global Innovation Research, Tokyo University of Agriculture and Technology, Fuchu city, Tokyo, 183-8509, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Koshiba T"
+          ],
+          "firstName": [
+            "Tomokazu"
+          ],
+          "lastName": [
+            "Koshiba"
+          ],
+          "initials": [
+            "T"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-9264-4775",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Biological Sciences, Tokyo Metropolitan University, Hachioji city, Tokyo, 192-0397, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Hayashi KI"
+          ],
+          "firstName": [
+            "Ken-Ichiro"
+          ],
+          "lastName": [
+            "Hayashi"
+          ],
+          "initials": [
+            "KI"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-9812-2801",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Biochemistry, Okayama University of Science, Kitaku, Okayama city, Okayama, 700-0005, Japan. hayashi@dbc.ous.ac.jp."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0001-9264-4775",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-7234-887X",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-9812-2801",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "1"
+      ],
+      "volume": [
+        "7"
+      ],
+      "journalIssueId": [
+        "2603102"
+      ],
+      "dateOfPublication": [
+        "2017 Oct"
+      ],
+      "monthOfPublication": [
+        "10"
+      ],
+      "yearOfPublication": [
+        "2017"
+      ],
+      "printPublicationDate": [
+        "2017-10-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Scientific reports"
+          ],
+          "ISOAbbreviation": [
+            "Sci Rep"
+          ],
+          "medlineAbbreviation": [
+            "Sci Rep"
+          ],
+          "NLMid": [
+            "101563288"
+          ],
+          "ISSN": [
+            "2045-2322"
+          ],
+          "ESSN": [
+            "2045-2322"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2017"
+  ],
+  "pageInfo": [
+    "13992"
+  ],
+  "abstractText": [
+    "The plant hormone auxin plays a crucial role in plant growth and development. Indole-3-acetic acid (IAA), a natural auxin, is mainly biosynthesized by two sequential enzyme reactions catalyzed by TAA1 and YUCCA (YUC). TAA1 is involved in the conversion of tryptophan to IPA, and YUC catalyzes the conversion of IPA to IAA. We previously demonstrated that yucasin inhibits AtYUC1 enzyme activity and suppress high-auxin phenotype of YUC overexpression plants, although yucasin displayed weak effects on the auxin-related phenotype of wild-type plants. To develop more potent YUC inhibitors, various derivatives of yucasin were synthesized, and their structure-activity relationships were investigated. Yucasin difluorinated analog (YDF) (5-[2,6-difluorophenyl]-2,4-dihydro-[1,2,4]-triazole-3-thione) was identified to be a more potent YUC inhibitor than the original yucasin. YDF caused an auxin-deficient phenotype in Arabidopsis wild-type plants that was restored with auxin application. YDF was found to be highly stable regarding metabolic conversion in vivo, accounting for the potent activity of the inhibition of IAA biosynthesis in planta. Photoaffinity labeling experiments demonstrated that yucasin-type inhibitors bind to the active site of AtYUC1. YDF is a promising auxin biosynthesis inhibitor and is a useful chemical tool for plant biology and agrochemical studies."
+  ],
+  "affiliation": [
+    "Department of Biochemistry, Okayama University of Science, Kitaku, Okayama city, Okayama, 700-0005, Japan."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5656596?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5656596"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1038/s41598-017-14332-w"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "0"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCreation": [
+    "2017-10-27"
+  ],
+  "dateOfRevision": [
+    "2017-12-19"
+  ],
+  "electronicPublicationDate": [
+    "2017-10-25"
+  ],
+  "firstPublicationDate": [
+    "2017-10-25"
+  ]
+}

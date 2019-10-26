@@ -197,10 +197,9 @@ public class AMISectionToolTest {
 	public void testAUTO() {
 		String args = ""
 //				+ "-t " + new File(AMIFixtures.TEST_ZIKA10_DIR, "PMC320490") + ""
-//			+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
+				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
 //				+ "-p " + "/Users/pm286/workspace/projects/climate/searches/clim107"
 //				+ "-p " + "/Users/pm286/workspace/projects/climate/searches/climatechange"
-				+ "-p " + "/Users/pm286/workspace/projects/ebola2015"
 //				+ " -v"
 				+ " --forcemake"
 				+ " --tables"
@@ -208,6 +207,18 @@ public class AMISectionToolTest {
 //				+ " --sections "
 //				+ " " + SectionTag.ARTICLE
 //				+ " --write false
+
+			;
+		new AMISectionTool().runCommands(args);
+	}
+
+	@Test
+	public void testBoldParas() {
+		String args = ""
+//				+ "-t " + new File(AMIFixtures.TEST_OIL5_DIR, "PMC4391421")
+				+ "-p " + AMIFixtures.TEST_OIL5_DIR
+				+ " --forcemake"
+				+ " --boldsections"
 
 			;
 		new AMISectionTool().runCommands(args);

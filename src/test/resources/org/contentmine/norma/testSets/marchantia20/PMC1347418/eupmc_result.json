@@ -1,0 +1,497 @@
+{
+  "id": [
+    "16381961"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "16381961"
+  ],
+  "pmcid": [
+    "PMC1347418"
+  ],
+  "doi": [
+    "10.1093/nar/gkj055"
+  ],
+  "title": [
+    "ChloroplastDB: the Chloroplast Genome Database."
+  ],
+  "authorString": [
+    "Cui L, Veeraraghavan N, Richter A, Wall K, Jansen RK, Leebens-Mack J, Makalowska I, dePamphilis CW."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Cui L"
+          ],
+          "firstName": [
+            "Liying"
+          ],
+          "lastName": [
+            "Cui"
+          ],
+          "initials": [
+            "L"
+          ]
+        },
+        {
+          "fullName": [
+            "Veeraraghavan N"
+          ],
+          "firstName": [
+            "Narayanan"
+          ],
+          "lastName": [
+            "Veeraraghavan"
+          ],
+          "initials": [
+            "N"
+          ]
+        },
+        {
+          "fullName": [
+            "Richter A"
+          ],
+          "firstName": [
+            "Alexander"
+          ],
+          "lastName": [
+            "Richter"
+          ],
+          "initials": [
+            "A"
+          ]
+        },
+        {
+          "fullName": [
+            "Wall K"
+          ],
+          "firstName": [
+            "Kerr"
+          ],
+          "lastName": [
+            "Wall"
+          ],
+          "initials": [
+            "K"
+          ]
+        },
+        {
+          "fullName": [
+            "Jansen RK"
+          ],
+          "firstName": [
+            "Robert K"
+          ],
+          "lastName": [
+            "Jansen"
+          ],
+          "initials": [
+            "RK"
+          ]
+        },
+        {
+          "fullName": [
+            "Leebens-Mack J"
+          ],
+          "firstName": [
+            "Jim"
+          ],
+          "lastName": [
+            "Leebens-Mack"
+          ],
+          "initials": [
+            "J"
+          ]
+        },
+        {
+          "fullName": [
+            "Makalowska I"
+          ],
+          "firstName": [
+            "Izabela"
+          ],
+          "lastName": [
+            "Makalowska"
+          ],
+          "initials": [
+            "I"
+          ]
+        },
+        {
+          "fullName": [
+            "dePamphilis CW"
+          ],
+          "firstName": [
+            "Claude W"
+          ],
+          "lastName": [
+            "dePamphilis"
+          ],
+          "initials": [
+            "CW"
+          ]
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "Database issue"
+      ],
+      "volume": [
+        "34"
+      ],
+      "journalIssueId": [
+        "1280857"
+      ],
+      "dateOfPublication": [
+        "2006 Jan"
+      ],
+      "monthOfPublication": [
+        "1"
+      ],
+      "yearOfPublication": [
+        "2006"
+      ],
+      "printPublicationDate": [
+        "2006-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Nucleic acids research"
+          ],
+          "ISOAbbreviation": [
+            "Nucleic Acids Res."
+          ],
+          "medlineAbbreviation": [
+            "Nucleic Acids Res"
+          ],
+          "NLMid": [
+            "0411011"
+          ],
+          "ISSN": [
+            "0305-1048"
+          ],
+          "ESSN": [
+            "1362-4962"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2006"
+  ],
+  "pageInfo": [
+    "D692-6"
+  ],
+  "abstractText": [
+    "The Chloroplast Genome Database (ChloroplastDB) is an interactive, web-based database for fully sequenced plastid genomes, containing genomic, protein, DNA and RNA sequences, gene locations, RNA-editing sites, putative protein families and alignments (http://chloroplast.cbio.psu.edu/). With recent technical advances, the rate of generating new organelle genomes has increased dramatically. However, the established ontology for chloroplast genes and gene features has not been uniformly applied to all chloroplast genomes available in the sequence databases. For example, annotations for some published genome sequences have not evolved with gene naming conventions. ChloroplastDB provides unified annotations, gene name search, BLAST and download functions for chloroplast encoded genes and genomic sequences. A user can retrieve all orthologous sequences with one search regardless of gene names in GenBank. This feature alone greatly facilitates comparative research on sequence evolution including changes in gene content, codon usage, gene structure and post-transcriptional modifications such as RNA editing. Orthologous protein sets are classified by TribeMCL and each set is assigned a standard gene name. Over the next few years, as the number of sequenced chloroplast genomes increases rapidly, the tools available in ChloroplastDB will allow researchers to easily identify and compile target data for comparative analysis of chloroplast genes and genomes."
+  ],
+  "affiliation": [
+    "Department of Biology and Institute of Molecular Evolutionary Genetics, The Pennsylvania State University, University Park, PA 16802, USA."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Chloroplasts"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Sequence Analysis, DNA"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Sequence Analysis, Protein"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Sequence Analysis, RNA"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Genomics"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "RNA Editing"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Genome, Plant"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Internet"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Database Management Systems"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "User-Computer Interface"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Databases, Genetic"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Eukaryota"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC1347418?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC1347418"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1093/nar/gkj055"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "www.oxfordjournals.org"
+          ],
+          "url": [
+            "https://doi.org/10.1093/nar/gkj055"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "43"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2006-02-28"
+  ],
+  "dateOfCreation": [
+    "2005-12-29"
+  ],
+  "dateOfRevision": [
+    "2010-11-18"
+  ],
+  "firstPublicationDate": [
+    "2006-01-01"
+  ]
+}

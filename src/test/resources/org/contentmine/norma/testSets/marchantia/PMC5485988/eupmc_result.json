@@ -1,0 +1,632 @@
+{
+  "id": [
+    "28561754"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "28561754"
+  ],
+  "pmcid": [
+    "PMC5485988"
+  ],
+  "doi": [
+    "10.3390/ijms18061164"
+  ],
+  "title": [
+    "Plant Lectins and Lectin Receptor-Like Kinases: How Do They Sense the Outside?"
+  ],
+  "authorString": [
+    "Bellande K, Bono JJ, Savelli B, Jamet E, Canut H."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Bellande K"
+          ],
+          "firstName": [
+            "Kevin"
+          ],
+          "lastName": [
+            "Bellande"
+          ],
+          "initials": [
+            "K"
+          ],
+          "affiliation": [
+            "Laboratoire de Recherche en Sciences Végétales, Université de Toulouse, CNRS, UPS, 24 Chemin de Borde Rouge, Auzeville, BP 42617, 31326 Castanet-Tolosan, France. kevin.bellande@lrsv.ups-tlse.fr."
+          ]
+        },
+        {
+          "fullName": [
+            "Bono JJ"
+          ],
+          "firstName": [
+            "Jean-Jacques"
+          ],
+          "lastName": [
+            "Bono"
+          ],
+          "initials": [
+            "JJ"
+          ],
+          "affiliation": [
+            "LIPM, Université de Toulouse, INRA, CNRS, 31326 Castanet-Tolosan, France. Jean-Jacques.Bono@toulouse.inra.fr."
+          ]
+        },
+        {
+          "fullName": [
+            "Savelli B"
+          ],
+          "firstName": [
+            "Bruno"
+          ],
+          "lastName": [
+            "Savelli"
+          ],
+          "initials": [
+            "B"
+          ],
+          "affiliation": [
+            "Laboratoire de Recherche en Sciences Végétales, Université de Toulouse, CNRS, UPS, 24 Chemin de Borde Rouge, Auzeville, BP 42617, 31326 Castanet-Tolosan, France. savelli@lrsv.ups-tlse.fr."
+          ]
+        },
+        {
+          "fullName": [
+            "Jamet E"
+          ],
+          "firstName": [
+            "Elisabeth"
+          ],
+          "lastName": [
+            "Jamet"
+          ],
+          "initials": [
+            "E"
+          ],
+          "affiliation": [
+            "Laboratoire de Recherche en Sciences Végétales, Université de Toulouse, CNRS, UPS, 24 Chemin de Borde Rouge, Auzeville, BP 42617, 31326 Castanet-Tolosan, France. jamet@lrsv.ups-tlse.fr."
+          ]
+        },
+        {
+          "fullName": [
+            "Canut H"
+          ],
+          "firstName": [
+            "Hervé"
+          ],
+          "lastName": [
+            "Canut"
+          ],
+          "initials": [
+            "H"
+          ],
+          "affiliation": [
+            "Laboratoire de Recherche en Sciences Végétales, Université de Toulouse, CNRS, UPS, 24 Chemin de Borde Rouge, Auzeville, BP 42617, 31326 Castanet-Tolosan, France. canut@lrsv.ups-tlse.fr."
+          ]
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "6"
+      ],
+      "volume": [
+        "18"
+      ],
+      "journalIssueId": [
+        "2560195"
+      ],
+      "dateOfPublication": [
+        "2017 May"
+      ],
+      "monthOfPublication": [
+        "5"
+      ],
+      "yearOfPublication": [
+        "2017"
+      ],
+      "printPublicationDate": [
+        "2017-05-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "International journal of molecular sciences"
+          ],
+          "ISOAbbreviation": [
+            "Int J Mol Sci"
+          ],
+          "medlineAbbreviation": [
+            "Int J Mol Sci"
+          ],
+          "NLMid": [
+            "101092791"
+          ],
+          "ISSN": [
+            "1422-0067"
+          ],
+          "ESSN": [
+            "1422-0067"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2017"
+  ],
+  "abstractText": [
+    "Lectins are fundamental to plant life and have important roles in cell-to-cell communication; development and defence strategies. At the cell surface; lectins are present both as soluble proteins (LecPs) and as chimeric proteins: lectins are then the extracellular domains of receptor-like kinases (LecRLKs) and receptor-like proteins (LecRLPs). In this review; we first describe the domain architectures of proteins harbouring G-type; L-type; LysM and malectin carbohydrate-binding domains. We then focus on the functions of LecPs; LecRLKs and LecRLPs referring to the biological processes they are involved in and to the ligands they recognize. Together; LecPs; LecRLKs and LecRLPs constitute versatile recognition systems at the cell surface contributing to the detection of symbionts and pathogens; and/or involved in monitoring of the cell wall structure and cell growth."
+  ],
+  "affiliation": [
+    "Laboratoire de Recherche en Sciences Végétales, Université de Toulouse, CNRS, UPS, 24 Chemin de Borde Rouge, Auzeville, BP 42617, 31326 Castanet-Tolosan, France. kevin.bellande@lrsv.ups-tlse.fr."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Arabidopsis"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Protein Kinases"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Plant Lectins"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Receptors, Mitogen"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Plant Proteins"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "CL"
+                  ],
+                  "qualifierName": [
+                    "classification"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Signal Transduction"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Protein Interaction Domains and Motifs"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Cell wall",
+        "Plant pathology",
+        "Lectin",
+        "Carbohydrate",
+        "Plant development",
+        "Signalling",
+        "Lectin Receptor-like Kinase"
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "Plant Proteins"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Plant Lectins"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Receptors, Mitogen"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Protein Kinases"
+          ],
+          "registryNumber": [
+            "EC 2.7.-"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5485988?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5485988"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.3390/ijms18061164"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "1"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "pfam"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2018-03-12"
+  ],
+  "dateOfCreation": [
+    "2017-06-01"
+  ],
+  "dateOfRevision": [
+    "2018-03-12"
+  ],
+  "electronicPublicationDate": [
+    "2017-05-31"
+  ],
+  "firstPublicationDate": [
+    "2017-05-31"
+  ]
+}

@@ -1,0 +1,1279 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.1 20151215//EN" "JATS-archivearticle1.dtd"> 
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Archiving and Interchange DTD v3.0 20080202//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName archivearticle3.dtd?><?SourceDTD.Version 3.0?><?ConverterInfo.XSLTName jp2nlmx2.xsl?><?ConverterInfo.Version 1?><front><journal-meta><journal-id journal-id-type="nlm-ta">New Phytol</journal-id><journal-id journal-id-type="iso-abbrev">New Phytol</journal-id><journal-id journal-id-type="doi">10.1111/(ISSN)1469-8137</journal-id><journal-id journal-id-type="publisher-id">NPH</journal-id><journal-title-group><journal-title>The New Phytologist</journal-title></journal-title-group><issn pub-type="ppub">0028-646X</issn><issn pub-type="epub">1469-8137</issn><publisher><publisher-name>John Wiley and Sons Inc.</publisher-name><publisher-loc>Hoboken</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">5637896</article-id><article-id pub-id-type="doi">10.1111/nph.14318</article-id><article-id pub-id-type="publisher-id">NPH14318</article-id><article-id pub-id-type="other">2016-22567</article-id><article-categories><subj-group subj-group-type="overline"><subject>Full Paper</subject></subj-group><subj-group subj-group-type="heading"><subject>Research</subject><subj-group subj-group-type="heading"><subject>Full Papers</subject></subj-group></subj-group></article-categories><title-group><article-title>Nonreciprocal complementation of KNOX gene function in land plants</article-title></title-group><contrib-group><contrib id="nph14318-cr-0001" contrib-type="author"><name><surname>Frangedakis</surname><given-names>Eftychios</given-names></name><xref ref-type="aff" rid="nph14318-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="nph14318-cr-0002" contrib-type="author"><name><surname>Saint&#x02010;Marcoux</surname><given-names>Denis</given-names></name><xref ref-type="aff" rid="nph14318-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="nph14318-cr-0003" contrib-type="author"><name><surname>Moody</surname><given-names>Laura A.</given-names></name><xref ref-type="aff" rid="nph14318-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="nph14318-cr-0004" contrib-type="author"><name><surname>Rabbinowitsch</surname><given-names>Ester</given-names></name><xref ref-type="aff" rid="nph14318-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="nph14318-cr-0005" contrib-type="author" corresp="yes"><name><surname>Langdale</surname><given-names>Jane A.</given-names></name><address><email>jane.langdale@plants.ox.ac.uk</email></address><xref ref-type="aff" rid="nph14318-aff-0001">
+<sup>1</sup>
+</xref></contrib></contrib-group><aff id="nph14318-aff-0001">
+<label><sup>1</sup></label>
+<named-content content-type="organisation-division">Department of Plant Sciences</named-content>
+<institution>University of Oxford</institution>
+<named-content content-type="street">South Parks Road</named-content>
+<named-content content-type="city">Oxford</named-content>
+<named-content content-type="post-code">OX1 3RB</named-content>
+<country country="GB">UK</country>
+</aff><author-notes><corresp id="correspondenceTo"><label>*</label>
+Author for correspondence:<break/><italic>Jane A. Langdale</italic><break/><italic>Tel: +44 01865 275099</italic><break/><italic>Email: </italic><email>jane.langdale@plants.ox.ac.uk</email><break/></corresp></author-notes><pub-date pub-type="epub"><day>25</day><month>11</month><year>2016</year></pub-date><pub-date pub-type="ppub"><month>10</month><year>2017</year></pub-date><volume>216</volume><issue>2</issue><issue-id pub-id-type="doi">10.1111/nph.2017.216.issue-2</issue-id><issue-title content-type="special-issue-title">Plant developmental evolution</issue-title><fpage>591</fpage><lpage>604</lpage><history><date date-type="received"><day>06</day><month>8</month><year>2016</year></date><date date-type="accepted"><day>30</day><month>9</month><year>2016</year></date></history><permissions><!--<copyright-statement content-type="issue-copyright"> Copyright &#x000a9; 2017 New Phytologist Trust <copyright-statement>--><copyright-statement content-type="article-copyright">&#x000a9; 2016 The Authors. New Phytologist &#x000a9; 2016 New Phytologist Trust</copyright-statement><license license-type="creativeCommonsBy"><license-p>This is an open access article under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri content-type="pdf" xlink:type="simple" xlink:href="file:NPH-216-591.pdf"/><abstract id="nph14318-abs-0001"><title>Summary</title><p>
+<list list-type="bullet" id="nph14318-list-0001"><list-item><p>Class I <styled-content style="fixed-case">KNOTTED</styled-content>&#x02010;<styled-content style="fixed-case">LIKE</styled-content> HOMEOBOX (<styled-content style="fixed-case">KNOX</styled-content>) proteins regulate development of the multicellular diploid sporophyte in both mosses and flowering plants; however, the morphological context in which they function differs.</p></list-item><list-item><p>In order to determine how Class I <styled-content style="fixed-case">KNOX</styled-content> function was modified as land plants evolved, phylogenetic analyses and cross&#x02010;species complementation assays were performed.</p></list-item><list-item><p>Our data reveal that a duplication within the charophyte sister group to land plants led to distinct Class I and Class <styled-content style="fixed-case">II KNOX</styled-content> gene families. Subsequently, Class I sequences diverged substantially in the nonvascular bryophyte groups (liverworts, mosses and hornworts), with moss sequences being most similar to those in vascular plants. Despite this similarity, moss mutants were not complemented by vascular plant <styled-content style="fixed-case">KNOX</styled-content> genes. Conversely, the Arabidopsis <italic>brevipedicellus</italic> (<italic>bp&#x02010;9</italic>) mutant was complemented by the <italic>Pp<styled-content style="fixed-case">MKN</styled-content>2</italic> gene from the moss <italic>Physcomitrella patens</italic>. Lycophyte <styled-content style="fixed-case">KNOX</styled-content> genes also complemented <italic>bp&#x02010;9</italic> whereas fern genes only partially complemented the mutant. This lycophyte/fern distinction is mirrored in the phylogeny of <styled-content style="fixed-case">KNOX</styled-content>&#x02010;interacting <styled-content style="fixed-case">BELL</styled-content> proteins, in that a gene duplication occurred after divergence of the two groups.</p></list-item><list-item><p>Together, our results imply that the moss <styled-content style="fixed-case">MKN</styled-content>2 protein can function in a broader developmental context than vascular plant <styled-content style="fixed-case">KNOX</styled-content> proteins, the narrower scope having evolved progressively as lycophytes, ferns and flowering plants diverged.</p></list-item></list>
+</p></abstract><kwd-group kwd-group-type="author-generated"><kwd id="nph14318-kwd-0001">Arabidopsis</kwd><kwd id="nph14318-kwd-0002"><italic>Ceratopteris richardii</italic></kwd><kwd id="nph14318-kwd-0003">cross&#x02010;species complementation</kwd><kwd id="nph14318-kwd-0004">KNOTTED homeobox genes</kwd><kwd id="nph14318-kwd-0005">land plant evolution</kwd><kwd id="nph14318-kwd-0006">phylogeny</kwd><kwd id="nph14318-kwd-0007"><italic>Physcomitrella patens</italic></kwd><kwd id="nph14318-kwd-0008"><italic>Selaginella kraussiana</italic></kwd></kwd-group><funding-group><award-group><funding-source>ERC AdG (EDIP)</funding-source></award-group><award-group><funding-source>BBSRC</funding-source><award-id>BB/M020517/1</award-id></award-group><award-group><funding-source>JSPS Fellowship</funding-source></award-group></funding-group><counts><fig-count count="5"/><table-count count="0"/><page-count count="14"/><word-count count="9764"/></counts><custom-meta-group><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>component-id</meta-name><meta-value>nph14318</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>October 2017</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_NLMPMC version:5.2.1 mode:remove_FC converted:12.10.2017</meta-value></custom-meta></custom-meta-group></article-meta></front><body><sec id="nph14318-sec-0001"><title>Introduction</title><p>Morphogenesis in all major eukaryotic lineages is regulated at least in part by homeodomain transcription factors (Holland, <xref rid="nph14318-bib-0023" ref-type="ref">2013</xref>). Based on phylogeny, two classes of homeodomain transcription factors are assumed to have been present in the eukaryote ancestor &#x02013; the canonical homeodomain proteins which have a 60 amino acid DNA binding domain and the three amino acid loop extension (TALE) proteins which have a 63 amino acid DNA binding domain (Bharathan <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0004" ref-type="ref">1997</xref>; Burglin, <xref rid="nph14318-bib-0006" ref-type="ref">1997</xref>; Derelle <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0011" ref-type="ref">2007</xref>). In the green plant lineage, two families of TALE proteins have been distinguished: KNOTTED&#x02010;LIKE HOMEOBOX (KNOX) and BELL (Mukherjee <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0045" ref-type="ref">2009</xref>). KNOX proteins are encoded by a single gene in the unicellular chlorophyte algae that are sister group to the streptophytes (charophyte algae and land plants) (Serikawa &#x00026; Mandoli, <xref rid="nph14318-bib-0058" ref-type="ref">1999</xref>; Lee <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0033" ref-type="ref">2008</xref>). In the chlorophyte alga <italic>Chlamydomanas reinhardtii</italic>, the KNOX protein GSM accumulates in the cytoplasm of &#x02018;minus&#x02019; type gametes, and the BELL protein GSP similarly accumulates in &#x02018;plus&#x02019; type gametes. When the two types of gamete fuse, KNOX/BELL dimerization leads to nuclear localization and formation of the diploid zygote (Lee <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0033" ref-type="ref">2008</xref>). The KNOX protein in the unicellular green alga <italic>Acetabularia acetabulum</italic> similarly becomes nuclear&#x02010;localized during the vegetative to reproductive transition (Serikawa &#x00026; Mandoli, <xref rid="nph14318-bib-0058" ref-type="ref">1999</xref>). KNOX/BELL interactions may therefore have evolved in the chlorophytes to regulate the transition from vegetative to reproductive development and/or to specifically facilitate formation of the diploid zygote.</p><p>In contrast to the single copy KNOX genes found in chlorophyte algae, several duplication events have led to multiple copies being present in all land plant genomes examined to date (Mukherjee <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0045" ref-type="ref">2009</xref>). Similarly, BELL gene numbers have expanded from the one or two seen in algal genomes to the many that are present in flowering plants (Mukherjee <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0045" ref-type="ref">2009</xref>). Members of the KNOX gene family are split into two classes, with representatives of both Class I and Class II genes present in the bryophyte moss <italic>Physcomitrella patens</italic> (Singer &#x00026; Ashton, <xref rid="nph14318-bib-0060" ref-type="ref">2007</xref>; Sakakibara <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0052" ref-type="ref">2008</xref>), the lycophyte genus <italic>Selaginella</italic> (Harrison <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0018" ref-type="ref">2005</xref>; Kawai <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0029" ref-type="ref">2010</xref>), the monilophyte fern <italic>Ceratopteris richardii</italic> (Sano <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0056" ref-type="ref">2005</xref>) and in all flowering plants examined (Kerstetter <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0031" ref-type="ref">1994</xref>; Mukherjee <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0045" ref-type="ref">2009</xref>). This phylogenetic distribution suggests that the gene duplication that led to distinct Class I and Class II KNOX genes occurred in a common ancestor of the mosses and vascular plants.</p><p>In <italic>P.&#x000a0;patens</italic>, although KNOX genes are expressed in the gametophyte, triple mutants that are null for the three Class I genes <italic>PpMKN2</italic>,<italic> PpMKN4</italic> and <italic>PpMKN5</italic> form normal gametophytes<italic>,</italic> and zygote formation is not disrupted (Sakakibara <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0052" ref-type="ref">2008</xref>). However, mutants exhibit perturbed cell proliferation in the diploid generation of the life cycle, which in bryophytes is represented by a multicellular sporophyte as opposed to the unicellular zygotes of chlorophyte algae. Although Class I genes promote cell proliferation in the sporophyte, the Class II genes <italic>PpMKN1</italic> and <italic>PpMKN6</italic> promote tissue differentiation, with loss&#x02010;of&#x02010;function leading to diploid structures having gametophyte bodyplans (Sakakibara <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0051" ref-type="ref">2013</xref>). Neofunctionalization following the duplication of KNOX genes thus enabled the development of a multicellular diploid sporophyte, which was a bryophyte innovation.</p><p>Opposing roles for Class I and Class II KNOX genes also are observed in the flowering plant Arabidopsis, where Class I genes promote cell proliferation in the shoot apical meristem (Long <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0039" ref-type="ref">1996</xref>; Venglat <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0069" ref-type="ref">2002</xref>; Belles&#x02010;Boix <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0003" ref-type="ref">2006</xref>) and Class II genes promote tissue differentiation (Furumizu <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0016" ref-type="ref">2015</xref>). Although the role of Class I genes in promoting cell proliferation in the multicellular sporophyte is conserved in mosses and flowering plants, the context in which the genes operate was modified during the course of land plant evolution. For example, bryophyte sporophytes are determinate, developing as a single unbranched stalk subtending a sporangium (Ligrone <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0036" ref-type="ref">2012a</xref>), whereas vascular plant sporophytes have highly variable and complex shoot architecture that results from the sustained activity of indeterminate shoot meristems giving rise to determinate lateral organs (leaves) (Sussex &#x00026; Kerk, <xref rid="nph14318-bib-0065" ref-type="ref">2001</xref>). The indeterminate nature of shoot growth in the three vascular plant lineages further varies in terms of the structure of the shoot apex, with lycophyte and monilophyte shoots developing from one or a few apical initials (Steeves &#x00026; Sussex, <xref rid="nph14318-bib-0064" ref-type="ref">1989</xref>; Harrison <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0020" ref-type="ref">2007</xref>; Jones &#x00026; Drinnan, <xref rid="nph14318-bib-0028" ref-type="ref">2009</xref>; Harrison &#x00026; Langdale, <xref rid="nph14318-bib-0019" ref-type="ref">2010</xref>; Sanders <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0055" ref-type="ref">2011</xref>; Vasco <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0068" ref-type="ref">2013</xref>), and seed plant shoots developing from multicellular meristems (Steeves &#x00026; Sussex, <xref rid="nph14318-bib-0064" ref-type="ref">1989</xref>; Barton, <xref rid="nph14318-bib-0001" ref-type="ref">2010</xref>). There is currently very little understanding of how Class I KNOX gene function evolved as the developmental mechanisms underpinning shoot growth changed.</p><p>In Arabidopsis and other flowering plants with simple leaves, Class I KNOX genes function in the indeterminate shoot meristem but are switched off in determinate leaf primordia (Hay &#x00026; Tsiantis, <xref rid="nph14318-bib-0022" ref-type="ref">2010</xref>). Gene function maintains indeterminacy in the meristem by promoting cytokinin (CK) signalling and inhibiting gibberellic acid (GA) signalling (Sakamoto <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0053" ref-type="ref">2001</xref>; Hay <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0021" ref-type="ref">2002</xref>; Jasinski <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0026" ref-type="ref">2005</xref>). Repression of KNOX activity in the leaf therefore de&#x02010;represses GA and suppresses CK, leading to determinate leaf development. A failure to suppress KNOX gene expression in the leaf, through transgenic manipulation or dominant gain of function mutation, results in continued repression of GA, promotion of CK activity, ectopic cellular proliferation, and a resultant lobed or knotted leaf phenotype (Smith <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0061" ref-type="ref">1992</xref>; Lincoln <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0038" ref-type="ref">1994</xref>; Sakamoto <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0053" ref-type="ref">2001</xref>, <xref rid="nph14318-bib-0054" ref-type="ref">2006</xref>; Hay <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0021" ref-type="ref">2002</xref>). Notably, constitutive expression of Class I KNOX genes from both <italic>P.&#x000a0;patens</italic> and <italic>C.&#x000a0;richardii</italic>, also leads to a lobed leaf phenotype in Arabidopsis (Sano <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0056" ref-type="ref">2005</xref>; Sakakibara <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0052" ref-type="ref">2008</xref>). The similar phenotypes seen in lines with transgenes from mosses, ferns and flowering plants indicate that genes from the different lineages have equivalent potential to regulate GA and/or CK targets in the context of the Arabidopsis leaf. However, a true understanding of differences in KNOX gene activity between lineages cannot be obtained from constitutive overexpression studies; instead gene function must be analysed in endogenous expression domains.</p><p>In this report we demonstrate that the duplication leading to Class I and Class II KNOX genes occurred in the charophyte algae, before the evolution of a multicellular diploid sporophyte. Representatives of both classes are retained in all land plant lineages except hornworts, where Class I genes could not be identified in the species examined. Although Class I genes from the moss <italic>P.&#x000a0;patens</italic> share sequence similarity with those from vascular plants, lycophyte, fern and flowering plant genes all failed to complement loss&#x02010;of&#x02010;function moss mutants. By contrast, <italic>MKN2</italic> from <italic>P.&#x000a0;patens</italic> fully complemented loss&#x02010;of&#x02010;function <italic>brevipedicellus</italic> (<italic>bp</italic>) mutants in Arabidopsis. <italic>Selaginella kraussiana</italic> Class I genes also complemented <italic>bp</italic> mutants, whereas genes from <italic>C.&#x000a0;richardii</italic> only partially complemented them. These results suggest that genes in earlier diverging land plant lineages are able to function in a broader developmental context than those in later diverging lineages. Notably, the BELL gene phylogeny indicates that specialized function in ferns and flowering plants may have been achieved at least in part through modified KNOX&#x02010;BELL interactions.</p></sec><sec id="nph14318-sec-0002"><title>Materials and Methods</title><sec id="nph14318-sec-0003"><title>Plant strains and growth conditions</title><p>The Gransden strain <italic>Physcomitrella patens</italic> subsp. <italic>patens</italic> (Engel, <xref rid="nph14318-bib-0013" ref-type="ref">1968</xref>) was grown and maintained under sterile conditions on BCD or BCDAT medium (Nishiyama <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0046" ref-type="ref">2000</xref>) and grown at 24&#x000b0;C with a diurnal cycle of 16&#x000a0;h&#x000a0;:&#x000a0;8&#x000a0;h, light (300&#x000a0;&#x003bc;mol&#x000a0;m<sup>&#x02212;2</sup>&#x000a0;s<sup>&#x02212;1</sup>)&#x000a0;:&#x000a0;dark. For sporophyte induction, 1&#x02010;wk&#x02010;old protonemal tissue was transferred into Magenta pots containing 100&#x000a0;ml solidified BCD medium supplemented with 1&#x000a0;mM CaCl<sub>2</sub>, and grown at 25&#x000b0;C for 6&#x000a0;wk with a 16&#x000a0;h&#x000a0;:&#x000a0;8&#x000a0;h, light (300&#x000a0;&#x003bc;mol&#x000a0;m<sup>&#x02212;2</sup>&#x000a0;s<sup>&#x02212;1</sup>): dark cycle. Magenta pots containing tall gametophores were then transferred to 16&#x000b0;C, with an 8&#x000a0;h&#x000a0;:&#x000a0;16&#x000a0;h, light (150&#x000a0;&#x003bc;mol&#x000a0;m<sup>&#x02212;2</sup>&#x000a0;s<sup>&#x02212;1</sup>): dark cycle. Sterile water (5&#x02013;6&#x000a0;ml) was added to each pot immediately after transfer to 16&#x000b0;C. Gametangia formation started within 2&#x02013;3&#x000a0;wk and sporophytes were visible within 5&#x02013;6&#x000a0;wk. The triple <italic>mkn2;mkn4;mkn5</italic> mutant (Sakakibara <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0052" ref-type="ref">2008</xref>) was obtained from Mitsuyasu Hasebe, Okazaki, Japan. Arabidopsis (<italic>Arabidopsis thaliana</italic>) ecotypes Columbia and Landsberg erecta were grown at 22&#x000b0;C in a glasshouse with a 16&#x000a0;h&#x000a0;:&#x000a0;8&#x000a0;h, light (300&#x000a0;&#x003bc;mol&#x000a0;m<sup>&#x02212;2</sup>&#x000a0;s<sup>&#x02212;1</sup>)&#x000a0;:&#x000a0;dark cycle. The <italic>bp</italic>&#x02010;9 (Col) mutant (Smith &#x00026; Hake, <xref rid="nph14318-bib-0062" ref-type="ref">2003</xref>) was obtained from the Nottingham Arabidopsis Stock Centre, UK. Conditions for growth of <italic>Marchantia polymorpha</italic>,<italic> Spirogyra pratensis</italic>,<italic> Anthoceros agrestis</italic>,<italic> Selaginella kraussiana</italic> and <italic>Ceratopteris richardii</italic> are provided in Supporting Information Methods S1.</p></sec><sec id="nph14318-sec-0004"><title>Phylogenetic analysis</title><p>KNOTTED&#x02010;LIKE HOMEOBOX (KNOX) and BELL homologous sequences were obtained by interrogating databases at NCBI (<ext-link ext-link-type="uri" xlink:href="http://ncbi.nlm.nih.gov">http://ncbi.nlm.nih.gov</ext-link>), Phytozome (<ext-link ext-link-type="uri" xlink:href="http://phytozome.jgi.doe.gov">http://phytozome.jgi.doe.gov</ext-link>) and OneKP (<ext-link ext-link-type="uri" xlink:href="http://bioinfodata.org/Blast4OneKP">http://bioinfodata.org/Blast4OneKP</ext-link>) (Johnson <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0027" ref-type="ref">2012</xref>; Wickett <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0071" ref-type="ref">2014</xref>; Xie <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0072" ref-type="ref">2014</xref>), plus rice (<ext-link ext-link-type="uri" xlink:href="http://rice.plantbiology.msu.edu">http://rice.plantbiology.msu.edu</ext-link>), <italic>Klebsormidium</italic> (<ext-link ext-link-type="uri" xlink:href="http://www.plantmorphogenesis.bio.titech.ac.jp/~algae_genome_project/klebsormidium">http://www.plantmorphogenesis.bio.titech.ac.jp/~algae_genome_project/klebsormidium</ext-link>), <italic>Amborella</italic> (<ext-link ext-link-type="uri" xlink:href="http://amborella.org">http://amborella.org</ext-link>) and spruce (<ext-link ext-link-type="uri" xlink:href="http://congenie.org">http://congenie.org</ext-link>) genome projects, as well as in house genomic and transcriptomic resources for <italic>Anthoceros punctatus</italic>,<italic> A.&#x000a0;agrestis</italic>,<italic> M.&#x000a0;polymorpha, C.&#x000a0;richardii</italic> and <italic>S.&#x000a0;pratensis</italic> (Li <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0034" ref-type="ref">2014</xref>; Sz&#x000f6;v&#x000e9;nyi <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0066" ref-type="ref">2015</xref>; unpublished data), with a variety of KNOX or BELL homologues as B<sc>last</sc> queries. Homology was assessed using reciprocal B<sc>last</sc> and examination of alignments. <italic>Selaginella kraussiana</italic> BELL sequences were identified in this study (see Methods S1; Notes S1, S2).</p><p>Sequences were only included in the dataset if they comprised the conserved domains defined for each gene family: MEINOX, ELK and TALE&#x02010;HD domains for the KNOX family; SKY, PBC and TALE&#x02010;HD domains for the BELL family. <italic>Marchantia polymorpha</italic>,<italic> S.&#x000a0;pratensis</italic> and <italic>A.&#x000a0;agrestis</italic> KNOX sequences were verified by PCR amplification (see Methods S1; Notes S1) and dideoxy sequencing (Notes S2). In addition to species used in the KNOX dataset (Notes S3), sequences from <italic>Picea abies</italic> and <italic>Amborella trichopoda</italic> were added to the BELL dataset (Notes S4). A number of sequences from Arabidopsis, rice and <italic>P.&#x000a0;patens</italic> could not be placed with confidence and consequently were excluded to improve overall tree robustness (listed in Notes S4). Putative homologues were identified in <italic>S.&#x000a0;pratensis</italic> and other charophytes but these sequences appeared only remotely related to land plant BELL proteins, and when added to the dataset, showed very long branches and destabilized the resulting phylogenetic trees. As a consequence, charophyte sequences were not included in the final dataset. For the same reason, <italic>Chlorophyta</italic> sequences also were omitted. Because of these restrictions, the number of sequences for any particular species in the resulting phylogenies does not always reflect the total number of homologues in the genome of that species (Notes S3, S4).</p><p>KNOX protein alignment was achieved using C<sc>lustal</sc> O<sc>mega</sc> v.1.2.0 (Sievers <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0059" ref-type="ref">2011</xref>) with 10 iterations and a HMM profile that was built using Pfam database alignments (<ext-link ext-link-type="uri" xlink:href="http://pfam.xfam.org">http://pfam.xfam.org</ext-link>) of the MEINOX, ELK and TALE&#x02010;HD domains as a guide. The amino acids were then translated back to their corresponding codon sequences using a custom P<sc>erl</sc> script. BELL protein alignment was obtained using M<sc>erge</sc>A<sc>lign</sc> (Collingridge &#x00026; Kelly, <xref rid="nph14318-bib-0009" ref-type="ref">2012</xref>) with default parameters. The aligned sequences were then edited and trimmed manually to conserve homologous sites only (Fig.&#x000a0;S1; Notes S5, S6). Maximum&#x02010;likelihood trees were obtained with RA<sc>x</sc>ML v.8.2.3 (Stamatakis, <xref rid="nph14318-bib-0063" ref-type="ref">2014</xref>) and Bayesian trees were obtained using M<sc>r</sc>B<sc>ayes</sc> v.3.2.5 (Ronquist &#x00026; Huelsenbeck, <xref rid="nph14318-bib-0049" ref-type="ref">2003</xref>) (full details in Methods S1).</p></sec><sec id="nph14318-sec-0005"><title>Generation of constructs for complementation in <italic>Physcomitrella patens</italic>
+</title><p>
+<italic>MKN2</italic> coding sequence was synthesized by Integrated DNA Technologies (Coralville, IA, USA). Remaining sequences were amplified from genomic DNA or by reverse transcription polymerase chain reaction (RT&#x02010;PCR) (Methods S1) and cloned into pJET1.2 before dideoxy sequencing. The p35S&#x02010;loxP&#x02010;BSD plasmid (NCBI no. AB537973) was used as a backbone for all <italic>P.&#x000a0;patens</italic> transformation constructs. Constructs were designed to express <italic>PpMKN2</italic>,<italic> SkKNOX1</italic>,<italic> SkKNOX2</italic>,<italic> CrKNOX1</italic>,<italic> CrKNOX2</italic>,<italic> BP or STM</italic> genes under the control of the endogenous <italic>PpMKN2</italic> gene promoter (<italic>MKN2pro:KNOX</italic> constructs) (Fig.&#x000a0;S2). During the generation of the triple <italic>mkn2;mkn4;mkn5</italic> mutant, the entire genomic sequence of <italic>PpMKN2</italic> and a 208&#x02010;bp fragment of 5&#x02032; <italic>MKN2</italic> flanking sequence was replaced by the G418 resistance cassette (Sakakibara <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0052" ref-type="ref">2008</xref>). To reintroduce this 208&#x02010;bp fragment into the endogenous locus, it was included as part of the 5&#x02032; <italic>MKN2</italic> flanking sequence that was used as homologous sequence for recombination. A total of 1.211&#x000a0;kb of 5&#x02032; flanking sequence was fused with the coding sequence of <italic>PpMKN2</italic>,<italic> SkKNOX1</italic>,<italic> SkKNOX2</italic>,<italic> CrKNOX1 CrKNOX2</italic>,<italic> BP</italic> or <italic>STM</italic>. The <italic>nos</italic> terminator was fused 3&#x02032; to the coding sequence followed by the blasticidin resistance cassette and then a 1.833&#x02010;kb fragment of 3&#x02032; <italic>MKN2</italic> flanking sequence as homologous sequence for recombination. Expression of the blasticidin resistance gene was driven by the <italic>35S CaMV</italic> promoter.</p></sec><sec id="nph14318-sec-0006"><title>
+<italic>Physcomitrella patens</italic> transformation</title><p>
+<italic>Physcomitrella patens</italic> was transformed using the polyethylene glycol&#x02010;based transformation method (Schaefer <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0057" ref-type="ref">1991</xref>). In five to seven independent transformation experiments, the <italic>MKN2pro:KNOX</italic> constructs were introduced into <italic>mkn2;mkn4;mkn5</italic> triple mutant protoplasts. Protoplasts were regenerated for 7&#x000a0;d and then transferred to fresh media containing antibiotics for selection (blasticidin at 75&#x000a0;mg&#x000a0;ml<sup>&#x02212;1</sup>). After 2&#x000a0;wk, plants were transferred back to nonselective BCDAT medium for another week and then stable transformants were selected by plating on selective media. After generating stable transgenic moss lines, each one was analysed by PCR to check that the construct was integrated into the desired locus (using primers listed in Notes S1). To determine the transgene copy number in each line, DNA gel blot analysis was carried out using 6&#x000a0;&#x003bc;g of genomic <italic>P.&#x000a0;patens</italic> DNA according to Langdale <italic>et&#x000a0;al</italic>. (<xref rid="nph14318-bib-0032" ref-type="ref">1988</xref>). A 510&#x02010;bp fragment of the blasticidin resistance gene was hybridized to <italic>NdeI</italic> restricted genomic DNA &#x02013; if the construct was correctly targeted to the <italic>PpMKN2</italic> locus, a single fragment was detected after hybridization. Genomic DNA from the <italic>mkn2;mkn4;mkn5</italic> triple mutant lines was used as a negative control.</p></sec><sec id="nph14318-sec-0007"><title>Expression analysis of <italic>Physcomitrella patens</italic> transformants by RT&#x02010;PCR</title><p>Total RNA was extracted from approximately 300 archegonia that contained either unfertilized eggs or early developing embryos. cDNA was synthesized using Superscript III reverse transcriptase (Invitrogen) and 500&#x000a0;ng of DNase treated (Turbo DNAse; Ambion) total RNA per sample. Primer pairs (Notes S1) designed to amplify a <italic>c</italic>.500&#x02010;bp fragment of the 5&#x02032; region of the Arabidopsis<italic>, S.&#x000a0;kraussiana</italic> or <italic>C.&#x000a0;richardii</italic> Class I KNOX genes, or to amplify <italic>PpMKN2</italic>, were used to check transcript accumulation. Amplification of the <italic>Glycolytic glyceraldehyde&#x02010;3&#x02010;phosphate dehydrogenase</italic> (<italic>GAPC1</italic>) gene (&#x000d7;72381) was used as an internal control (as used in Sakakibara <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0052" ref-type="ref">2008</xref>). Each PCR was performed with both sets of primer pairs and adjusted so that the reactions were in the exponential phase. Optimization of RT&#x02010;PCR conditions to generate identical levels of <italic>GAPC1</italic> amplification was not possible due to the difficulty of extracting sufficient amounts of RNA.</p></sec><sec id="nph14318-sec-0008"><title>Arabidopsis transformation</title><p>Six constructs were designed to express <italic>P.&#x000a0;patens</italic>,<italic> S.&#x000a0;kraussiana</italic>,<italic> C.&#x000a0;richardii</italic> and Arabidopsis Class I KNOX genes under the endogenous <italic>BP</italic> promoter. The final constructs (Fig.&#x000a0;S3) consisted of the <italic>BP</italic> 5&#x02032; <italic>cis</italic>&#x02010;regulatory sequence (from &#x02212;5474&#x000a0;bp to &#x02212;1&#x000a0;bp relative to the ATG) fused to the coding sequence of <italic>PpMKN2</italic>,<italic> SkKNOX1</italic>,<italic> SkKNOX2</italic>,<italic> CrKNOX1</italic>,<italic> CrKNOX2</italic> or <italic>BP</italic>. The <italic>octopine synthase</italic> (<italic>ocs3&#x02032;</italic>) terminator sequence was fused to the 3&#x02032; end of the various <italic>KNOX</italic> gene coding sequences. The <italic>BPpro:KNOX:ocs3&#x02032;</italic> cassette was transferred as a <italic>Not</italic>I fragment into the binary vector pART27 (Gleave, <xref rid="nph14318-bib-0017" ref-type="ref">1992</xref>) and transformed into <italic>bp</italic>&#x02010;9 plants by floral dipping (Clough &#x00026; Bent, <xref rid="nph14318-bib-0008" ref-type="ref">1998</xref>). Transformed plants were selected on the basis of kanamycin resistance and were self&#x02010;pollinated to generate T<sub>1</sub>, T<sub>2</sub>, and T<sub>3</sub> populations that segregated the transgenes. Five T<sub>3</sub> lines with a single transgenic copy were analysed for each combination of transgene/background, with the exception of <italic>BPpro:SkKNOX1</italic> and <italic>BPpro:MKN2</italic> for which 6 and 3 lines were analysed, respectively.</p></sec><sec id="nph14318-sec-0009"><title>Expression analysis of Arabidopsis transformants by qPCR</title><p>Transgene expression was analysed in Arabidopsis by quantitative real&#x02010;time reverse transcription&#x02010;PCR (qPCR). Total RNA was extracted from 12 inflorescences and then cDNA was synthesized using Superscript III reverse transcriptase (Invitrogen) and 1&#x000a0;&#x003bc;g of DNase treated (Turbo DNAse, Ambion) total RNA. Primer pairs were designed to amplify a <italic>c</italic>. 100&#x02010;bp fragment of the 3&#x02032; end of specific KNOX genes, with the exception of <italic>PpMKN2</italic> and <italic>BP</italic> which were designed to amplify the middle of the coding region (Notes S1). Amplification was detected using the SYBR Green master mix (Life Technologies, Carlsbad, CA, USA) according to manufacturer's instructions on a 7300 Real&#x02010;Time PCR System (Applied Biosystems, Foster City, CA, USA). Cycling conditions were: 95&#x000b0;C for 5&#x000a0;min, and 40 cycles of 95&#x000b0;C for 15&#x000a0;s and 60&#x000b0;C for 1&#x000a0;min. Three technical replicates were performed for three different biological samples of each independent line. The mean value between the two technical replicates with the closest values was calculated. Two housekeeping genes, <italic>EF1Balpha2</italic> (At5g19510) and <italic>UBP6</italic> (At1g51710) were used as constitutive controls. To test for genomic DNA contamination, primers that amplify only the genomic sequence of <italic>EF1Balpha2</italic> (At5g19510) were used (Wang <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0070" ref-type="ref">2007</xref>).</p><p>Data analysis was performed using the L<sc>in</sc>R<sc>eg</sc>PCR program (Ramakers <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0047" ref-type="ref">2003</xref>). L<sc>in</sc>R<sc>eg</sc>PCR calculates a value called <italic>N</italic>
+<sub>0</sub>, expressed in arbitrary fluorescence units, which reflects the initial amount of template in the reaction mix, using the following formula: <italic>N</italic>
+<sub>0</sub>&#x000a0;=&#x000a0;<italic>N</italic>
+<sub>q</sub>/<italic>E</italic>
+<sub>m</sub>
+<sup>Cq</sup>. <italic>N</italic>
+<sub>q</sub> is the fluorescence threshold, <italic>C</italic>
+<sub>q</sub> is the cycle number at which the PCR reaction reaches <italic>N</italic>
+<sub>q</sub>, and <italic>E</italic>
+<sub>m</sub> is the mean PCR efficiency for a particular primer pair amplicon. Samples were normalized using the geometric mean of the expression values of <italic>EF1BalphaA2</italic> and <italic>UBP6</italic> reference genes. Finally, <italic>N</italic>
+<sub>0</sub> values obtained from the reactions that amplify genomic sequence of <italic>EF1Balpha2,</italic> reflecting genomic contamination, were subtracted from <italic>N</italic>
+<sub>0</sub> value for each line.</p></sec><sec id="nph14318-sec-0010"><title>Silique angle measurement</title><p>Measurements were performed on 7&#x02010;wk&#x02010;old plants. Silique angles on the main inflorescence were measured for 10 plants per line using a protractor. Statistical analyses were carried out as in Methods S1 and Notes S7.</p></sec><sec id="nph14318-sec-0011"><title>Microscopy</title><p>
+<italic>Physcomitrella patens</italic> images were captured using a QImaging Micropublishing 5.0 RTV camera on a Leica M165C microscope. Photographs of 30 sporophytes were taken and then the surface area of the sporophyte was compared with the area occupied by spores. Area measurements were carried out using the I<sc>mage</sc>J software (<ext-link ext-link-type="uri" xlink:href="http://rsb.info.nih.gov/ij/">http://rsb.info.nih.gov/ij/</ext-link>). The mean of the sporophyte area divided by the area occupied by spores was calculated for each line.</p></sec></sec><sec id="nph14318-sec-0012"><title>Results</title><sec id="nph14318-sec-0013"><title>KNOX genes duplicated before the evolution of land plants</title><p>To date, liverwort and hornwort sequences have not been included in KNOX gene phylogenies, and in the one example where charophyte sequences have been included (Sakakibara, <xref rid="nph14318-bib-0050" ref-type="ref">2016</xref>) the topology contradicted a better&#x02010;supported tree that defined distinct <italic>Chlorophyta</italic>, KNOX1 and KNOX2 clades (Furumizu <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0016" ref-type="ref">2015</xref>). To better define relationships in early diverging lineages, transcriptome and/or genome data from the charophyte alga <italic>S.&#x000a0;pratensis</italic>, the liverwort <italic>M.&#x000a0;polymorpha</italic>, and the hornworts <italic>A.&#x000a0;punctatus</italic> (Li <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0034" ref-type="ref">2014</xref>) and <italic>A.&#x000a0;agrestis</italic> (Sz&#x000f6;v&#x000e9;nyi <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0066" ref-type="ref">2015</xref>) were searched for KNOX&#x02010;homologous sequences using TB<sc>last</sc>N and B<sc>last</sc>P algorithms and a variety of KNOX homologues as queries. Retrieved sequences were classified as KNOX genes if they encoded both a MEINOX domain and a TALE&#x02010;HD, using careful sequence examination of alignments and reciprocal B<sc>last</sc> (a number of MEINOX&#x02010;only sequences from <italic>M.&#x000a0;polymorpha</italic> were discarded). A single KNOX gene sequence was identified in both <italic>A.&#x000a0;punctatus</italic> and <italic>A.&#x000a0;agrestis</italic>, whereas two gene sequences were identified in both <italic>S.&#x000a0;pratensis</italic> and <italic>M.&#x000a0;polymorpha</italic>. To validate gene models, coding sequences were confirmed by sequencing PCR&#x02010;amplified cDNA (Notes S2). Notably, the annotation model for the <italic>MpKNOX2</italic> gene includes a long repetitive region between the MEINOX and ELK domains that could not be amplified by PCR (Notes S2). As this region could not be validated molecularly, it was excluded from subsequent alignments used for tree inference. In summary, a single KNOX gene was verified in each of the hornwort genomes, whereas two genes were verified in the charophyte <italic>S.&#x000a0;pratensis</italic> and the liverwort <italic>M.&#x000a0;polymorpha</italic>.</p><p>Phylogenetic analyses were carried out using the five newly identified sequences from <italic>S.&#x000a0;pratensis</italic>,<italic> M.&#x000a0;polymorpha</italic> and <italic>A.&#x000a0;agrestis</italic>, all of the KNOX sequences identified in the model flowering plants Arabidopsis (eight genes) and rice (10 genes) (Mukherjee <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0045" ref-type="ref">2009</xref>), and sequences that have previously been molecularly validated in the monilophyte fern <italic>C.&#x000a0;richardii</italic> (Sano <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0056" ref-type="ref">2005</xref>), the lycophyte <italic>S.&#x000a0;kraussiana</italic> (Harrison <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0018" ref-type="ref">2005</xref>), the moss <italic>P.&#x000a0;patens</italic> (Sakakibara <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0052" ref-type="ref">2008</xref>) and the chlorophyte algae <italic>A.&#x000a0;acetabulum</italic> (Serikawa &#x00026; Mandoli, <xref rid="nph14318-bib-0058" ref-type="ref">1999</xref>) and <italic>C.&#x000a0;reinhardtii</italic> (Lee <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0033" ref-type="ref">2008</xref>). To provide a more balanced species distribution, additional nonflowering plant and charophyte sequences were retrieved from the OneKP dataset (Matasci <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0043" ref-type="ref">2014</xref>) and from the <italic>Klebsormidium</italic> genome project database (Hori <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0024" ref-type="ref">2014</xref>). Further chlorophyte sequences were retrieved from the Phytozome database (Notes S3). After alignment of protein sequences and reverse translation back to nucleotide sequence (Fig.&#x000a0;S1; Notes S5), both maximum&#x02010;likelihood and Bayesian trees were inferred (Figs&#x000a0;<xref rid="nph14318-fig-0001" ref-type="fig">1</xref>, S4). The topology of both trees essentially reflected the species tree, with three statistically well&#x02010;supported KNOX gene clades &#x02013; <italic>Chlorophyta</italic>, Class I and Class II. Notably, charophyte sequences are present in both Class I and Class II clades, whereas hornwort sequences are restricted to Class II. The duplication leading to Class I and Class II KNOX genes therefore occurred within the charophyte sister group to land plants, with subsequent events in the bryophytes leading to conserved Class II sequences but substantially different (or absent) Class I sequences.</p><fig fig-type="Figure" xml:lang="en" id="nph14318-fig-0001" orientation="portrait" position="float"><label>Figure 1</label><caption><p>Maximum&#x02010;likelihood and Bayesian phylogenetic analysis of KNOTTED&#x02010;LIKE HOMEOBOX (<styled-content style="fixed-case">KNOX</styled-content>) homologues. (a, b) Phylogenetic trees inferred with (a) <styled-content style="fixed-case">RA</styled-content>
+<sc>x</sc>
+<styled-content style="fixed-case">ML</styled-content> or (b) M<sc>r</sc>B<sc>ayes</sc>, using a partitioned nucleotide dataset of 59&#x000a0;+&#x000a0;2 sequences (Supporting Information Fig.&#x000a0;S1) evolving under the <styled-content style="fixed-case">GTR</styled-content>&#x000a0;+&#x000a0;&#x00393;&#x000a0;+&#x000a0;I model. Support values (a, bootstrap values; b, posterior probabilities) are indicated next to the corresponding branch. To avoid destabilization at the base of the Class I clade by <italic>Klebsormidium flaccidum</italic> sequences, kfl00113_0180 and kfl00118_0070 were added to the maximum&#x02010;likelihood tree after the phylogeny was inferred using the evolutionary placement algorithm of RA<sc>x</sc>ML. As a consequence, <italic>K</italic>.&#x000a0;<italic>flaccidum</italic> sequence branches are dashed and their associated likelihood weight ratios (Stamatakis, <xref rid="nph14318-bib-0063" ref-type="ref">2014</xref>) are indicated in italics. Each sequence was placed on its recipient tree branch with respect to the actual distance derived from a maximum likelihood tree inferred using all 61 sequences (Fig.&#x000a0;S2). Colour&#x02010;coded boxes correspond to the species&#x02019; phyla. Both trees were rooted using the <italic>Chlorophyta</italic> clade as an outgroup.</p></caption><graphic id="nlm-graphic-1" xlink:href="NPH-216-591-g001"/></fig></sec><sec id="nph14318-sec-0014"><title>Vascular plant Class I KNOX genes are unable to complement loss&#x02010;of&#x02010;function mutations in the moss <italic>Physcomitrella patens</italic>
+</title><p>In order to determine the extent to which Class I KNOX gene function diverged beyond the bryophytes, experiments were designed to test whether Class I KNOX genes from vascular plants can complement loss&#x02010;of&#x02010;gene&#x02010;function in <italic>P.&#x000a0;patens</italic>. Sporophyte defects in triple loss&#x02010;of&#x02010;function <italic>mkn2;mkn4;mkn5</italic> mutants are more severe than those in <italic>mkn4</italic> and <italic>mkn5</italic> single mutants but are very similar to those in single <italic>mkn2</italic> mutants (Sakakibara <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0052" ref-type="ref">2008</xref>). This suggests that <italic>PpMKN2</italic> plays a more substantial role in sporophyte development than the other two Class I KNOX genes. To test this, a construct was designed to replace the G418 marker in the disrupted <italic>mkn2</italic> locus of the triple mutant with a functional <italic>PpMKN2</italic> gene and a blasticidin selectable marker (Fig.&#x000a0;S2). Homologous recombination should lead to both the <italic>PpMKN2</italic> coding sequence and the blasticidin resistance gene being driven by the endogenous <italic>PpMKN2</italic> promoter, with both genes being flanked by the endogenous <italic>PpMKN2</italic> 3&#x02032; sequence. Three independent transgenic lines were selected on blasticidin and a single insertion of the expected size was confirmed in each line by DNA gel blot analysis (Fig.&#x000a0;<xref rid="nph14318-fig-0002" ref-type="fig">2</xref>a). RT&#x02010;PCR analysis confirmed that the <italic>PpMKN2</italic> coding sequence was expressed in each case (Fig.&#x000a0;<xref rid="nph14318-fig-0002" ref-type="fig">2</xref>b) and a comparison between the phenotype of wild&#x02010;type (Fig.&#x000a0;<xref rid="nph14318-fig-0003" ref-type="fig">3</xref>a), triple mutant (Fig.&#x000a0;<xref rid="nph14318-fig-0003" ref-type="fig">3</xref>b) and triple mutant plus the <italic>MKN2pro:MKN2</italic> transgene (Fig.&#x000a0;<xref rid="nph14318-fig-0003" ref-type="fig">3</xref>c) lines demonstrated that sporophyte size and morphology was restored by the presence of the functional <italic>PpMKN2</italic> gene (Fig.&#x000a0;<xref rid="nph14318-fig-0003" ref-type="fig">3</xref>j,k), with the extent of complementation broadly correlated with transgene expression level (compare Figs&#x000a0;<xref rid="nph14318-fig-0002" ref-type="fig">2</xref>b, <xref rid="nph14318-fig-0003" ref-type="fig">3</xref>k). Loss&#x02010;of&#x02010;function in all three <italic>P.&#x000a0;patens</italic> Class I KNOX genes can thus be complemented by <italic>PpMKN2</italic> alone.</p><fig fig-type="Figure" xml:lang="en" id="nph14318-fig-0002" orientation="portrait" position="float"><label>Figure 2</label><caption><p>Transgene integration and expression in <italic>Physcomitrella patens mkn</italic> triple mutants. (a) <styled-content style="fixed-case">DNA</styled-content> gel blot analysis of <italic>Nde</italic>I digested genomic <styled-content style="fixed-case">DNA</styled-content> from <italic>mkn2;mkn4;mkn5</italic> mutants transformed with <italic><styled-content style="fixed-case">MKN</styled-content>2pro:<styled-content style="fixed-case">KNOX</styled-content></italic> constructs. Blots were hybridized with a fragment of the blasticidin resistance gene present in the transgene construct (see Supporting Information Fig.&#x000a0;S2). Hybridizing fragments were not detected in <styled-content style="fixed-case">DNA</styled-content> samples from nontransformed mutants (<styled-content style="fixed-case">NT</styled-content>), whereas 11.8&#x02010;kb (<italic><styled-content style="fixed-case">MKN</styled-content>2pro:<styled-content style="fixed-case">MKN</styled-content>2</italic>), 10&#x02010;kb (<italic><styled-content style="fixed-case">MKN</styled-content>2pro:<styled-content style="fixed-case">BP</styled-content></italic>), 11.59&#x02010;kb (<italic><styled-content style="fixed-case">MKN</styled-content>2pro:<styled-content style="fixed-case">STM</styled-content></italic>), 9.9&#x02010;kb (<italic><styled-content style="fixed-case">MKN</styled-content>2pro:Cr<styled-content style="fixed-case">KNOX</styled-content>1</italic>), 11.78&#x02010;kb (<italic><styled-content style="fixed-case">MKN</styled-content>2pro:Cr<styled-content style="fixed-case">KNOX</styled-content>2</italic>), 9.42&#x02010;kb (<italic><styled-content style="fixed-case">MKN</styled-content>2pro:Sk<styled-content style="fixed-case">KNOX</styled-content>1</italic>) and 9.72&#x02010;kb (<italic><styled-content style="fixed-case">MKN</styled-content>2pro:Sk<styled-content style="fixed-case">KNOX</styled-content>2</italic>) fragments were detected in transgenic lines. (b&#x02013;h) reverse transcription polymerase chain reaction (<styled-content style="fixed-case">RT</styled-content>&#x02010;<styled-content style="fixed-case">PCR</styled-content>) showing transgene transcript accumulation in <italic>mkn2;mkn4;mkn5</italic> mutant plants transformed with (b) <italic><styled-content style="fixed-case">MKN</styled-content>2pro:<styled-content style="fixed-case">MKN</styled-content>2</italic>, (c) <italic><styled-content style="fixed-case">MKN</styled-content>2pro:<styled-content style="fixed-case">BP</styled-content></italic>, (d) <italic><styled-content style="fixed-case">MKN</styled-content>2pro:<styled-content style="fixed-case">STM</styled-content></italic>, (e) <italic><styled-content style="fixed-case">MKN</styled-content>2pro:Cr<styled-content style="fixed-case">KNOX</styled-content>1</italic>, (f) <italic><styled-content style="fixed-case">MKN</styled-content>2pro:Cr<styled-content style="fixed-case">KNOX</styled-content>2</italic>, (g) <italic><styled-content style="fixed-case">MKN</styled-content>2pro:Sk<styled-content style="fixed-case">KNOX</styled-content>1</italic> and (h) <italic><styled-content style="fixed-case">MKN</styled-content>2pro:Sk<styled-content style="fixed-case">KNOX</styled-content>2</italic>. <italic><styled-content style="fixed-case">GAPC</styled-content>1</italic> was used as an amplification and loading control in each case. Amplifications were performed for 29, 32 and 35 cycles (as indicated) to ensure amplification in the exponential phase. Negative control reactions were carried out in the absence of reverse transcriptase (&#x02010;RT) and with <styled-content style="fixed-case">cDNA</styled-content> isolated from nontransformed triple mutants (<styled-content style="fixed-case">NT</styled-content>).</p></caption><graphic id="nlm-graphic-3" xlink:href="NPH-216-591-g002"/></fig><fig fig-type="Figure" xml:lang="en" id="nph14318-fig-0003" orientation="portrait" position="float"><label>Figure 3</label><caption><p>Cross&#x02010;species complementation tests with <italic>Physcomitrella patens mkn</italic> triple mutants. (a&#x02013;i) Representative sporophyte phenotype of (a) wild&#x02010;type (<styled-content style="fixed-case">WT</styled-content>), (b) <italic>mkn2;mkn4;mkn5</italic> mutant, and (c&#x02013;i) <italic>mkn2;mkn4;mkn5</italic> mutants transformed with (c) <italic><styled-content style="fixed-case">MKN</styled-content>2pro:<styled-content style="fixed-case">MKN</styled-content>2</italic>, (d) <italic><styled-content style="fixed-case">MKN</styled-content>2pro:<styled-content style="fixed-case">BP</styled-content></italic>, (e) <italic><styled-content style="fixed-case">MKN</styled-content>2pro:<styled-content style="fixed-case">STM</styled-content></italic>, (f) <italic><styled-content style="fixed-case">MKN</styled-content>2pro:Cr<styled-content style="fixed-case">KNOX</styled-content>1</italic>, (g) <italic><styled-content style="fixed-case">MKN</styled-content>2pro:Cr<styled-content style="fixed-case">KNOX</styled-content>2</italic>, (h) <italic><styled-content style="fixed-case">MKN</styled-content>2pro:Sk<styled-content style="fixed-case">KNOX</styled-content>1</italic> and (i) <italic><styled-content style="fixed-case">MKN</styled-content>2pro:Sk<styled-content style="fixed-case">KNOX</styled-content>2</italic> constructs. Bars, 200&#x000a0;&#x003bc;m. (j, k) Schematic depiction of measurements taken (j) and average ratios of sporophyte surface area to the area occupied by spores (k) for the lines exemplified in (a&#x02013;i). Thirty sporophytes from each of three independent transformed lines were analysed for each construct, with the exception of <italic><styled-content style="fixed-case">MKN</styled-content>2pro:Cr<styled-content style="fixed-case">KNOX</styled-content>2</italic> for which only two independent lines were recovered. Error bars represent &#x000b1;&#x000a0;<styled-content style="fixed-case">SEM</styled-content>.</p></caption><graphic id="nlm-graphic-5" xlink:href="NPH-216-591-g003"/></fig><p>In order to determine whether Class I KNOX genes from vascular plant lineages can substitute for <italic>PpMKN2</italic> function in <italic>P.&#x000a0;patens</italic>, constructs analogous to that used for <italic>PpMKN2</italic> were designed for homologous recombination with two of the four Class I KNOX genes in Arabidopsis (<italic>BP</italic> and <italic>SHOOTMERISTEMLESS</italic>&#x02013;<italic>STM</italic>), the two genes in <italic>C.&#x000a0;richardii</italic> (<italic>CrKNOX1</italic> and <italic>CrKNOX2</italic>) and the two genes in <italic>S.&#x000a0;kraussiana</italic> (<italic>SkKNOX1</italic> and <italic>SkKNOX2</italic>) (Fig.&#x000a0;S2b&#x02013;g). As with <italic>MKN2pro:MKN2</italic>, three independent transgenic lines were selected for each construct (with the exception of <italic>MKN2pro:CrKNOX2</italic> for which only two lines regenerated), all were confirmed by DNA gel blot analysis to have single transgene insertions of the expected size (Fig.&#x000a0;<xref rid="nph14318-fig-0002" ref-type="fig">2</xref>a) and all showed transgene expression (Fig.&#x000a0;<xref rid="nph14318-fig-0002" ref-type="fig">2</xref>c&#x02013;h). Unlike <italic>MKN2pro:MKN2</italic> lines, however, sporophyte phenotypes in lines expressing genes from the vascular plant lineages were the same as in the triple mutant (Fig.&#x000a0;<xref rid="nph14318-fig-0003" ref-type="fig">3</xref>d&#x02013;i). Quantification of the total sporophyte area and the area occupied by spores (Fig.&#x000a0;<xref rid="nph14318-fig-0003" ref-type="fig">3</xref>j,k) confirmed the lack of complementation in each case. As such, Class I KNOX genes from vascular plants cannot substitute for <italic>PpMKN2</italic> function in <italic>P.&#x000a0;patens</italic>.</p></sec><sec id="nph14318-sec-0015"><title>Class I KNOX genes from <italic>Physcomitrella patens</italic> and <italic>Selaginella kraussiana</italic> fully complement loss&#x02010;of&#x02010;function mutations in the Arabidopsis <italic>BP</italic> gene &#x02013; but those from <italic>Ceratopteris richardii</italic> do not</title><p>Class I KNOX genes from vascular plants may be unable to complement loss&#x02010;of&#x02010;function moss mutants because inherently distinct roles have evolved in the two groups. To test this hypothesis, the ability of <italic>PpMKN2</italic> to complement loss&#x02010;of&#x02010;function Arabidopsis mutants was determined. Ideally, both <italic>stm</italic> and <italic>bp</italic> mutants would be analysed but loss&#x02010;of&#x02010;function <italic>stm</italic> mutants exhibit severe and/or often pleiotropic shoot defects that are extremely difficult to quantify (Barton &#x00026; Poethig, <xref rid="nph14318-bib-0002" ref-type="ref">1993</xref>; Endrizzi <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0012" ref-type="ref">1996</xref>). <italic>bp</italic> mutants can also exhibit a range of different shoot phenotypes; however, the <italic>bp&#x02010;9</italic> allele has a consistent mutant phenotype whereby cell division defects in the developing inflorescence lead to downward&#x02010;pointing siliques (Venglat <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0069" ref-type="ref">2002</xref>) (Fig.&#x000a0;<xref rid="nph14318-fig-0004" ref-type="fig">4</xref>a). Experiments were thus carried out with the <italic>bp&#x02010;9</italic> allele. Quantification of silique angles demonstrated that the mutant phenotype was fully rescued by a construct comprising the full&#x02010;length <italic>BP</italic> coding sequence driven by 5.474&#x000a0;kb of the endogenous promoter (Figs&#x000a0;<xref rid="nph14318-fig-0004" ref-type="fig">4</xref>c,i, S3). This observation demonstrated that the 5.474&#x02010;kb sequence is sufficient to ensure appropriate temporal and spatial regulation of <italic>BP</italic> gene expression during shoot development. The same promoter sequence was therefore used to generate constructs for transgenic expression of <italic>PpMKN2</italic> (Fig.&#x000a0;S3). Analysis of three lines showed that when the <italic>pBPpro:MKN2</italic> transgene was expressed (Fig.&#x000a0;<xref rid="nph14318-fig-0004" ref-type="fig">4</xref>k), the <italic>bp&#x02010;9</italic> mutant phenotype was fully complemented (Fig.&#x000a0;<xref rid="nph14318-fig-0004" ref-type="fig">4</xref>d,i). As such, PpMKN2 is not inherently different from BP in that it can activate or repress targets (either directly or indirectly) that are misexpressed in <italic>bp&#x02010;9</italic> mutants, and in so doing restore normal cell division patterns.</p><fig fig-type="Figure" xml:lang="en" id="nph14318-fig-0004" orientation="portrait" position="float"><label>Figure 4</label><caption><p>Cross&#x02010;species complementation tests with Arabidopsis <italic>bp&#x02010;9</italic> mutants. (a&#x02013;h) Representative inflorescence phenotype of (a) wild&#x02010;type (<styled-content style="fixed-case">WT</styled-content>), (b) <italic>bp&#x02010;9</italic> mutant, and (c&#x02013;h) homozygous <italic>bp&#x02010;9</italic> mutant plants transformed with (c) <italic><styled-content style="fixed-case">BP</styled-content>pro:<styled-content style="fixed-case">BP</styled-content></italic>, (d) <italic><styled-content style="fixed-case">BP</styled-content>pro:<styled-content style="fixed-case">MKN</styled-content>2</italic>, (e) <italic><styled-content style="fixed-case">BP</styled-content>pro:Sk<styled-content style="fixed-case">KNOX</styled-content>1</italic>, (f) <italic><styled-content style="fixed-case">BP</styled-content>proSk<styled-content style="fixed-case">KNOX</styled-content>2</italic>, (g) <italic><styled-content style="fixed-case">BP</styled-content>pro:Cr<styled-content style="fixed-case">KNOX</styled-content>1</italic> and (h) <italic><styled-content style="fixed-case">BP</styled-content>pro:Cr<styled-content style="fixed-case">KNOX</styled-content>2</italic> constructs. Bars, 2&#x000a0;cm. (i) Boxplot showing range of silique angles on the primary inflorescence of lines exemplified in (a&#x02013;h). Primary inflorescences from 10 plants of at least three independent lines per transgene were analysed. Red asterisks indicate lines that are significantly different (<italic>P&#x000a0;</italic>&#x0003c;<italic>&#x000a0;</italic>0.05) from WT. All lines are significantly different (<italic>P&#x000a0;</italic>&#x0003c;<italic>&#x000a0;</italic>0.05) from <italic>bp&#x02010;9</italic> mutants. Note that blue points on the <italic>y</italic>&#x02010;axis are not to scale relative to those in black. (j&#x02013;o) Quantitative reverse transcription polymerase chain reaction (q<styled-content style="fixed-case">RT</styled-content>&#x02010;<styled-content style="fixed-case">PCR</styled-content>) analyses of (j) <italic><styled-content style="fixed-case">BP</styled-content>pro:<styled-content style="fixed-case">BP</styled-content></italic>, (k) <italic><styled-content style="fixed-case">BP</styled-content>pro:<styled-content style="fixed-case">MKN</styled-content>2</italic>, (l) <italic><styled-content style="fixed-case">BP</styled-content>pro:Sk<styled-content style="fixed-case">KNOX</styled-content>1</italic>, (m)<italic><styled-content style="fixed-case">BP</styled-content>pro:Sk<styled-content style="fixed-case">KNOX</styled-content>2</italic>, (n) <italic><styled-content style="fixed-case">BP</styled-content>pro:Cr<styled-content style="fixed-case">KNOX</styled-content>1</italic> and (o) <italic><styled-content style="fixed-case">BP</styled-content>pro:Cr<styled-content style="fixed-case">KNOX</styled-content>2</italic> transgene expression. Numbers on the <italic>x</italic>&#x02010;axis represent independent transgenic lines as indicated in (i). The <italic>y</italic>&#x02010;axis represents transcript levels (<italic>N</italic>
+<sub>0</sub>) normalized against the <italic><styled-content style="fixed-case">EF</styled-content>1Balpha2</italic> and <italic><styled-content style="fixed-case">UBP</styled-content>6</italic> genes. Three technical replicates were performed for three different biological samples of each independent line. Scatter blots represent values of individual biological replicates; bars represent mean of three biological replicates.</p></caption><graphic id="nlm-graphic-7" xlink:href="NPH-216-591-g004"/></fig><p>Given that PpMKN2 shares only 35% amino acid identity with BP whereas the vascular plant proteins share 43% (SkKNOX2) to 52% (CrKNOX1) identity, we predicted that the lycophyte and fern genes also would complement <italic>bp&#x02010;9</italic> mutants. To test this prediction, transgenic <italic>bp&#x02010;9</italic> mutant lines were generated in which expression of full&#x02010;length <italic>SkKNOX1, SkKNOX2, CrKNOX1</italic> or <italic>CrKNOX2</italic> coding sequence was driven from the 5.474&#x02010;kb <italic>BP</italic> promoter (Fig.&#x000a0;S3). Analysis of at least five independent lines for each transgene demonstrated that both <italic>BPpro:SkKNOX1</italic> and <italic>BPpro:SkKNOX2</italic> can fully rescue the mutant phenotype (Fig.&#x000a0;<xref rid="nph14318-fig-0004" ref-type="fig">4</xref>e,f,i). Quantitative RT&#x02010;PCR revealed that the extent of phenotypic rescue roughly correlated with the amount of transcript present in the inflorescence (compare Fig.&#x000a0;<xref rid="nph14318-fig-0004" ref-type="fig">4</xref>i,l,m), with lines accumulating the most transcript showing a similar level of complementation to lines expressing the <italic>BPpro</italic>:<italic>BP</italic> construct. By contrast, <italic>BPpro:CrKNOX1</italic> and <italic>BPpro:CrKNOX2</italic> constructs showed only partial rescue of the <italic>bp&#x02010;9</italic> mutant phenotype (Fig.&#x000a0;<xref rid="nph14318-fig-0004" ref-type="fig">4</xref>g&#x02013;i), even when relatively high levels of transgene transcripts were detected (compare Fig.&#x000a0;<xref rid="nph14318-fig-0004" ref-type="fig">4</xref>i,n,o). These results suggest that despite the fern KNOX proteins being more similar in sequence to BP, the lycophyte proteins are better able to regulate BP targets in the context of the Arabidopsis silique development.</p></sec><sec id="nph14318-sec-0016"><title>Distinct evolutionary trajectories for BELL proteins in lycophytes and euphyllophytes</title><p>In order to determine whether the differential ability of lycophyte and fern KNOX proteins to complement the Arabidopsis <italic>bp&#x02010;9</italic> mutant could reflect conserved vs divergent molecular interactions, existing BELL gene phylogenies (Mukherjee <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0045" ref-type="ref">2009</xref>; Furumizu <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0016" ref-type="ref">2015</xref>; Sakakibara, <xref rid="nph14318-bib-0050" ref-type="ref">2016</xref>) were examined for evidence of coevolution. Unfortunately, the critical lycophyte/fern distinction could not be examined because none of the published phylogenies included fern sequences. BELL gene sequences were therefore aligned and used to infer phylogeny (see the <xref rid="nph14318-sec-0002" ref-type="sec">Materials and Methods</xref> section; Methods S1; Notes S4, S6). The resultant maximum&#x02010;likelihood and Bayesian phylogenies both align well with the species tree and both resolve single clades in each bryophyte group and in the lycophytes, but two distinctive clades in the euphyllophytes (Euphyllophytes I and Euphyllophytes II) (Fig.&#x000a0;<xref rid="nph14318-fig-0005" ref-type="fig">5</xref>). The topology of the BELL phylogeny indicates that a gene duplication event predated the divergence of the monilophytes and seed plants, and that copies of both duplicates have been retained in each lineage. There is thus a clear lycophyte/fern distinction in the BELL phylogeny.</p><fig fig-type="Figure" xml:lang="en" id="nph14318-fig-0005" orientation="portrait" position="float"><label>Figure 5</label><caption><p>Maximum&#x02010;likelihood and Bayesian phylogenetic analysis of <styled-content style="fixed-case">BELL</styled-content> homologues. (a, b) Phylogenetic trees inferred with (a) <styled-content style="fixed-case">RA</styled-content>
+<sc>x</sc>
+<styled-content style="fixed-case">ML</styled-content> or (b) M<sc>r</sc>B<sc>ayes</sc>, using a protein alignment evolving under the <styled-content style="fixed-case">JTT</styled-content>&#x000a0;+&#x000a0;&#x00393;&#x000a0;+&#x000a0;I model. Support values (a, bootstrap values; b, posterior probabilities) are indicated next to the corresponding branch. In order to avoid destabilization of the early divergent clades, the identified <styled-content style="fixed-case">BELL</styled-content> homologue in <italic>Marchantia polymorpha</italic> was placed using the evolutionary placement algorithm of <styled-content style="fixed-case">RA</styled-content>
+<sc>x</sc>
+<styled-content style="fixed-case">ML</styled-content> and the maximum&#x02010;likelihood tree as recipient. As a consequence, the <italic>M.&#x000a0;polymorpha</italic>
+<styled-content style="fixed-case">BELL</styled-content> sequence branch is dashed and the associated likelihood weight ratio (Stamatakis, <xref rid="nph14318-bib-0063" ref-type="ref">2014</xref>) is indicated in italics. Colour coded boxes correspond to the species phyla. (a) The maximum&#x02010;likelihood tree was rooted using the <italic>M.&#x000a0;polymorpha</italic>
+<styled-content style="fixed-case">BELL</styled-content> homologue and (b) the Bayesian tree was rooted using the moss clade.</p></caption><graphic id="nlm-graphic-9" xlink:href="NPH-216-591-g005"/></fig></sec></sec><sec id="nph14318-sec-0017"><title>Discussion</title><p>Using newly acquired genome and transcriptome datasets, supported by molecular validation of gene models, we have generated KNOTTED&#x02010;LIKE HOMEOBOX (KNOX) and BELL gene phylogenies that have refined the timing of the duplication that led to distinct Class I and Class II KNOX genes, and identified a BELL gene duplication before the divergence of monilophytes and seed plants that distinguishes bryophyte and lycophyte lineages from euphyllophytes. The integration of these phylogenetic data with the results of reciprocal cross&#x02010;species complementation experiments reveals an evolutionary trajectory whereby KNOX function becomes more specialized as progressively more gene duplications occur and lineages diverge. Notwithstanding the limitations of heterologous complementation assays, particularly where it is only feasible and/or practical to analyse the activity of single genes from multigene families, this study provides the most comprehensive functional comparison of Class I KNOX genes to date, in that it incorporates genes from all of the major land plant lineages.</p><sec id="nph14318-sec-0018"><title>Class I and Class II KNOX genes in charophytes</title><p>The discovery of Class I and Class II KNOX genes in the charophyte alga <italic>Spirogyra pratensis,</italic> plus confirmation of single KNOX gene sequences in all chlorophyte algae examined (Fig.&#x000a0;<xref rid="nph14318-fig-0001" ref-type="fig">1</xref>) refines the timing of the first KNOX duplication event and raises a question about the ancestral function of the two gene classes. It has previously been suggested that the ability to balance activity between Class I and Class II gene function enabled the alternation of generations to evolve in land plants (Sakakibara <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0051" ref-type="ref">2013</xref>; Furumizu <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0016" ref-type="ref">2015</xref>). Whilst this may be correct, KNOX genes must play a different role in charophyte algae because the diploid phase of the lifecycle is invariantly restricted to the unicellular zygote. Possibly the gene duplication facilitated multicellularity in the gametophyte, a suggestion supported by the observation that transcriptomes of the unicellular charophyte <italic>Cylindrocystis</italic> contains just a Class II gene whereas both classes are present in the filamentous charophytes <italic>S.&#x000a0;pratensis</italic> and <italic>Klebsormidium flaccidum</italic> (Figs&#x000a0;<xref rid="nph14318-fig-0001" ref-type="fig">1</xref>, S4). The presence of the two gene classes in the <italic>K.&#x000a0;flaccidum</italic> genome further infers that the duplication occurred before the divergence of Charales, Zygnemetales and Coleochaetales. As such, the duplication may have occurred concomitant with the chlorophyte/streptophyte divergence, but genome sequence from <italic>Clorokybus</italic> is needed to confirm or refute this suggestion because existing transcriptome datasets (Timme <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0067" ref-type="ref">2012</xref>) do not contain KNOX gene sequences.</p></sec><sec id="nph14318-sec-0019"><title>Divergent Class I KNOX genes in bryophytes</title><p>To date, KNOX gene function in bryophytes has been characterized only in the moss <italic>Physcomitrella patens</italic>, where <italic>PpMKN2</italic> is expressed in the gametophyte, and after fertilization all three Class I genes regulate cell proliferation in the developing sporophyte (Singer &#x00026; Ashton, <xref rid="nph14318-bib-0060" ref-type="ref">2007</xref>; Sakakibara <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0052" ref-type="ref">2008</xref>; Frank &#x00026; Scanlon, <xref rid="nph14318-bib-0014" ref-type="ref">2015a</xref>,<xref rid="nph14318-bib-0015" ref-type="ref">b</xref>; Horst <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0025" ref-type="ref">2016</xref>). Class II genes also are expressed in the sporophyte, where they are proposed to suppress the gametophyte developmental program (Sakakibara <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0051" ref-type="ref">2013</xref>). Both Class I and Class II genes have been identified in liverworts, although at least in <italic>Marchantia polymorpha</italic> there is substantial sequence divergence in the Class I gene as evidenced by poor sequence alignment, a very long branch, and unsupported placement in the lycophyte clade (Figs&#x000a0;<xref rid="nph14318-fig-0001" ref-type="fig">1</xref>, S1, S4). The failure to identify Class I genes in the three hornwort species examined suggests even greater sequence divergence in this group, or even gene loss. These observations are surprising given the phylogenetic position of mosses in relation to the other two bryophyte groups. Possibly the role of Class I KNOX genes in the <italic>P.&#x000a0;patens</italic> sporophyte is a moss (or even <italic>P.&#x000a0;patens</italic>)&#x02010;specific trait within the bryophytes. If this is the case, given that Class I KNOX genes also regulate cell proliferation in vascular plant sporophytes, this role either evolved independently in mosses and vascular plants, substantially diverged and/or was lost twice independently in liverworts and hornworts or, contrary to current phylogenetic interpretations (Ligrone <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0037" ref-type="ref">2012b</xref>; Cox <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0010" ref-type="ref">2014</xref>; Wickett <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0071" ref-type="ref">2014</xref>), mosses are the sister group to vascular plants.</p></sec><sec id="nph14318-sec-0020"><title>Evolution of KNOX function</title><p>Reciprocal cross&#x02010;complementation experiments have revealed that the Class I KNOX gene <italic>PpMKN2</italic> from <italic>P.&#x000a0;patens</italic> is able to complement the Arabidopsis <italic>bp&#x02010;9</italic> mutant when expressed in the endogenous <italic>BP</italic> expression domain (Fig.&#x000a0;<xref rid="nph14318-fig-0004" ref-type="fig">4</xref>), whereas BP cannot substitute for PpMKN2 function in <italic>P.&#x000a0;patens</italic> (Figs&#x000a0;<xref rid="nph14318-fig-0002" ref-type="fig">2</xref>, <xref rid="nph14318-fig-0003" ref-type="fig">3</xref>). As such, it can be concluded that PpMKN2 is able to activate the same downstream gene targets as BP, either on its own or as a heterodimer with Arabidopsis BELL proteins, but that BP is unable to activate PpMKN2 downstream targets. This distinction suggests that sub&#x02010; or neofunctionalization of Class I genes in Arabidopsis has constrained the activity of BP relative to PpMKN2. Examples of both subfunctionalization (stomatal development, MacAlister &#x00026; Bergmann, <xref rid="nph14318-bib-0040" ref-type="ref">2011</xref>; ABA signalling, Marella <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0042" ref-type="ref">2006</xref>) and neofunctionalization (LEAFY function, Maizel <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0041" ref-type="ref">2005</xref>) during the evolutionary transition from bryophytes to flowering plants have been reported previously. However, in most cases, whereas complementation of Arabidopsis mutants by homologous <italic>P.&#x000a0;patens</italic> genes have been reported (e.g. in root hair development (Menand <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0044" ref-type="ref">2007</xref>), stomatal opening (Chater <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0007" ref-type="ref">2011</xref>) and photomorphogenesis (Ranjan <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0048" ref-type="ref">2014</xref>)), reciprocal experiments with moss mutants were not carried out and thus no trend could be inferred. An exception to this was reported for transcription factors that regulate chloroplast development. In this case, as with Class I KNOX genes, a <italic>P.&#x000a0;patens GOLDEN2&#x02010;LIKE</italic> gene complemented an Arabidopsis loss&#x02010;of&#x02010;function mutant (Yasumura <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0073" ref-type="ref">2005</xref>), whereas an Arabidopsis gene could not rescue a <italic>P.&#x000a0;patens</italic> mutant (Bravo&#x02010;Garcia <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0005" ref-type="ref">2009</xref>).</p><p>The inability of Class I KNOX genes from any of the vascular plant lineages to complement the <italic>P.&#x000a0;patens mkn2;mkn4;mkn5</italic> mutant (Figs&#x000a0;<xref rid="nph14318-fig-0002" ref-type="fig">2</xref>, <xref rid="nph14318-fig-0003" ref-type="fig">3</xref>) is striking because it suggests divergence of gene function after the bryophyte/lycophyte divergence. However, even though the lycophyte genes <italic>SkKNOX1</italic> and <italic>SkKNOX2</italic> cannot substitute for <italic>PpMKN2</italic> in moss, both lycophyte genes complement the <italic>bp&#x02010;9</italic> mutant to the same extent as <italic>PpMKN2</italic> (Fig.&#x000a0;<xref rid="nph14318-fig-0004" ref-type="fig">4</xref>; Notes S7). This observation indicates an equivalent ability to regulate downstream targets of BP in Arabidopsis (either directly or indirectly), which in the case of promoting appropriate cell division patterns in the silique, requires repression of the Class I genes <italic>KNAT2</italic> and <italic>KNAT6</italic> (Li <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0035" ref-type="ref">2012</xref>). By contrast, the monilophyte fern genes <italic>CrKNOX1</italic> and <italic>CrKNOX2</italic> only partially complement the <italic>bp&#x02010;9</italic> mutant phenotype (Fig.&#x000a0;<xref rid="nph14318-fig-0004" ref-type="fig">4</xref>; Notes S7). Previous reports have suggested that <italic>PpMKN2</italic> (Sakakibara <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0052" ref-type="ref">2008</xref>), <italic>CrKNOX</italic> (Sano <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0056" ref-type="ref">2005</xref>) and <italic>BP</italic> (Lincoln <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0038" ref-type="ref">1994</xref>) genes function equivalently in Arabidopsis because in each case constitutive expression leads to a lobed leaf phenotype. However, these reports may have overlooked the functional distinction between PpMKN2 and CrKNOX because of the contextual difference between ectopic KNOX activity in the leaf vs loss of endogenous activity in the shoot.</p></sec><sec id="nph14318-sec-0021"><title>Evolution of KNOX/BELL interactions</title><p>Because KNOX proteins function by dimerizing with BELL proteins in both chlorophyte algae (Lee <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0033" ref-type="ref">2008</xref>) and flowering plants (reviewed in Hay &#x00026; Tsiantis, <xref rid="nph14318-bib-0022" ref-type="ref">2010</xref>), changes in KNOX protein structure and function must have influenced, and been influenced by, changes in BELL protein structure and function. Despite this assumption, there is little evidence of co&#x02010;evolution in the gene phylogenies (Figs&#x000a0;<xref rid="nph14318-fig-0001" ref-type="fig">1</xref>, <xref rid="nph14318-fig-0005" ref-type="fig">5</xref>; Furumizu <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0016" ref-type="ref">2015</xref>). KNOX genes underwent a duplication event within the charophytes, and then any subsequent duplications were phylum&#x02010; or species&#x02010;specific with structural motifs clearly conserved throughout the green lineage. In contrast to the conserved structure of KNOX proteins, BELL protein structure is highly variant in both chlorophyte and charophyte algae, with clearly recognizable domains only apparent in land plants. Previous phylogenies nested lycophyte BELL sequences within a flowering plant clade (Furumizu <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0016" ref-type="ref">2015</xref>) but by increasing the taxon sampling to include ferns, our data have revealed that BELL gene duplications were phylum&#x02010; or species&#x02010;specific before the divergence of lycophytes and euphyllophytes. As such, the multiple BELL genes in hornworts, mosses and lycophytes are all derived from a single ancestral sequence at the base of each lineage. By contrast, a gene duplication before the divergence of monilophytes and seed plants resulted in two gene families in euphyllophytes (Euphyllophytes I and II; Fig.&#x000a0;<xref rid="nph14318-fig-0005" ref-type="fig">5</xref>). Notably the euphyllophyte duplication may have provided the potential for monilophyte and seed plant KNOX proteins to evolve more restricted interactions with BELL proteins, as compared with their lycophyte and bryophyte counterparts. As such, the inability of CrKNOX genes to fully complement <italic>bp&#x02010;9</italic> mutants could reflect restricted capacity (as compared with BP, SkKNOX1/2 and MKN2) to interact with the Arabidopsis BELL proteins that partner BP. This suggestion may seem counterintuitive given that CrKNOX proteins share the greatest amino acid identity with BP (50%, 48%, 44%, 40% and 44% for CrKNOX1, CrKNOX2, SkKNOX1, SkKNOX2 and MKN2, respectively) in the MEINOX domain that interacts with BELL proteins. However, <italic>in silico</italic> secondary structure analyses (<ext-link ext-link-type="uri" xlink:href="http://www.sbg.bio.ic.ac.uk/phyre2/">http://www.sbg.bio.ic.ac.uk/phyre2/</ext-link>; Kelley <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0030" ref-type="ref">2015</xref>) predict the folding of two alpha helices in the MEINOX domain of BP, SkKNOX1, SkKNOX2 and MKN2, but predict the presence of just a single helix in CrKNOX2 and only weakly support the presence of a second helix in CrKNOX1 (Fig.&#x000a0;S5). The suggestion that differential complementation capacity results from differential ability to form KNOX/BELL dimers needs to be confirmed experimentally, but given that the results of <italic>in&#x000a0;vitro</italic> and heterologous interaction assays are often conflicting depending on the assay used, or have been overturned by <italic>in&#x000a0;vivo</italic> genetic experiments (Furumizu <italic>et&#x000a0;al</italic>., <xref rid="nph14318-bib-0016" ref-type="ref">2015</xref>), it is not a trivial hypothesis to validate and thus must remain speculation at this stage.</p></sec></sec><sec id="nph14318-sec-0023"><title>Author contributions</title><p>E.F. conducted Arabidopsis and moss complementation plus hornwort KNOX gene isolation; D.S&#x02010;M. conducted Spirogyra and Marchantia transcriptomes/gene isolation plus phylogenetic analysis; L.A.M. conducted BELL gene isolation; E.R. conducted plant culture and maintenance plus RT&#x02010;PCR analyses; J.A.L. conducted initial project design; and E.F., L.A.M., D.S&#x02010;M. and J.A.L. conducted data analysis and manuscript preparation.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material content-type="local-data"><p>Please note: Wiley Blackwell are not responsible for the content or functionality of any Supporting Information supplied by the authors. Any queries (other than missing material) should be directed to the <italic>New Phytologist</italic> Central Office.</p></supplementary-material><supplementary-material content-type="local-data"><caption><p>
+<bold>Fig.&#x000a0;S1</bold>&#x000a0;Graphical representation of KNOX alignment showing KNOX conserved domains and partitioning used for inferring phylogeny.</p><p>
+<bold>Fig.&#x000a0;S2</bold>&#x000a0;Construct design for homologous recombination of KNOX genes in the <italic>Physcomitrella patens MKN2</italic> locus.</p><p>
+<bold>Fig.&#x000a0;S3</bold>&#x000a0;Schematic of <italic>BPpro:KNOX</italic> constructs for <italic>bp</italic> complementation experiments.</p><p>
+<bold>Fig.&#x000a0;S4</bold>&#x000a0;KNOX maximum&#x02010;likelihood phylogeny including <italic>Klebsormidium</italic> sequences.</p><p>
+<bold>Fig.&#x000a0;S5</bold>&#x000a0;Predicted secondary structure of the MEINOX domain.</p></caption><media xlink:href="NPH-216-591-s001.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data"><caption><p>
+<bold>Methods S1</bold>&#x000a0;Supplementary details for methods.</p></caption><media xlink:href="NPH-216-591-s002.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data"><caption><p>
+<bold>Notes S1</bold>&#x000a0;List of primers used.</p></caption><media xlink:href="NPH-216-591-s003.xlsx"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data"><caption><p>
+<bold>Notes S2</bold>&#x000a0;Verified <italic>Marchantia polymorpha</italic>,<italic> Spirogyra pratensis</italic> and <italic>Anthoceros agrestis</italic> KNOX plus <italic>Selaginella kraussiana</italic> BELL sequences.</p></caption><media xlink:href="NPH-216-591-s004.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data"><caption><p>
+<bold>Notes S3</bold>&#x000a0;Source and accessions of KNOX sequences used for phylogenetic analysis.</p></caption><media xlink:href="NPH-216-591-s005.xlsx"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data"><caption><p>
+<bold>Notes S4</bold>&#x000a0;Source and accessions of BELL sequences used for phylogenetic analysis.</p></caption><media xlink:href="NPH-216-591-s006.xlsx"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data"><caption><p>
+<bold>Notes S5</bold>&#x000a0;Edited KNOX alignment.</p></caption><media xlink:href="NPH-216-591-s007.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data"><caption><p>
+<bold>Notes S6</bold>&#x000a0;Edited BELL alignment.</p></caption><media xlink:href="NPH-216-591-s008.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data"><caption><p>
+<bold>Notes S7</bold>&#x000a0;Silique angle measurements and results of Tukey's HSD tests.</p></caption><media xlink:href="NPH-216-591-s009.xlsx"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><ack id="nph14318-sec-0022"><title>Acknowledgements</title><p>Thanks to Jill Harrison, Stefanie Mueller, Chris Della Vedova, Yuki Yasumura and Georgios Lagiotis for assistance with initial cloning steps, to Angela Hay for providing advice on the <italic>BP</italic> promoter sequence and to Michael Niklaus for guidance on R codes. We are grateful to the following for sharing sequence data: Sandy Hetherington, Clement Champion &#x00026; Liam Dolan (<italic>M.&#x000a0;polymorpha</italic>), Peter Szovenyi (<italic>A.&#x000a0;agrestis</italic>) and the OneKP consortium (<ext-link ext-link-type="uri" xlink:href="http://www.onekp.com">www.onekp.com</ext-link>); and to Mitsuyasu Hasebe for providing the <italic>P.&#x000a0;patens</italic> triple <italic>mkn</italic> mutant and the p35S&#x02010;loxP&#x02010;BSD (AB537973) plasmid. As always we thank John Baker for photography, Julie Bull for technical assistance and Steve Kelly for bioinformatics advice. This work was funded by ERC AdG (EDIP) and BBSRC (BB/M020517/1) grants to J.A.L., and by a JSPS Fellowship to E.F.</p></ack><ref-list content-type="cited-references" id="nph14318-bibl-0001"><title>References</title><ref id="nph14318-bib-0001"><mixed-citation publication-type="journal" id="nph14318-cit-0001">
+<string-name>
+<surname>Barton</surname>
+<given-names>MK</given-names>
+</string-name>. <year>2010</year>
+<article-title>Twenty years on: the inner workings of the shoot apical meristem, a developmental dynamo</article-title>. <source>Developmental Biology</source>
+<volume>341</volume>: <fpage>95</fpage>&#x02013;<lpage>113</lpage>.<pub-id pub-id-type="pmid">19961843</pub-id></mixed-citation></ref><ref id="nph14318-bib-0002"><mixed-citation publication-type="journal" id="nph14318-cit-0002">
+<string-name>
+<surname>Barton</surname>
+<given-names>MK</given-names>
+</string-name>, <string-name>
+<surname>Poethig</surname>
+<given-names>RS</given-names>
+</string-name>. <year>1993</year>
+<article-title>Formation of the shoot apical meristem in <italic>Arabidopsis thaliana</italic>: an analysis of development in the wild type and in the shoot meristemless mutant</article-title>. <source>Development</source>
+<volume>119</volume>: <fpage>823</fpage>&#x02013;<lpage>831</lpage>.</mixed-citation></ref><ref id="nph14318-bib-0003"><mixed-citation publication-type="journal" id="nph14318-cit-0003">
+<string-name>
+<surname>Belles&#x02010;Boix</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Hamant</surname>
+<given-names>O</given-names>
+</string-name>, <string-name>
+<surname>Witiak</surname>
+<given-names>SM</given-names>
+</string-name>, <string-name>
+<surname>Morin</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Traas</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Pautot</surname>
+<given-names>V</given-names>
+</string-name>. <year>2006</year>
+<article-title>
+<italic>KNAT6</italic>: an Arabidopsis homeobox gene involved in meristem activity and organ separation</article-title>. <source>Plant Cell</source>
+<volume>18</volume>: <fpage>1900</fpage>&#x02013;<lpage>1907</lpage>.<pub-id pub-id-type="pmid">16798887</pub-id></mixed-citation></ref><ref id="nph14318-bib-0004"><mixed-citation publication-type="journal" id="nph14318-cit-0004">
+<string-name>
+<surname>Bharathan</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Janssen</surname>
+<given-names>B&#x02010;J</given-names>
+</string-name>, <string-name>
+<surname>Kellogg</surname>
+<given-names>EA</given-names>
+</string-name>, <string-name>
+<surname>Sinha</surname>
+<given-names>N</given-names>
+</string-name>. <year>1997</year>
+<article-title>Did homeodomain proteins duplicate before the origin of angiosperms, fungi and metazoa</article-title>. <source>Proceedings of the National Academy of Sciences, USA</source>
+<volume>94</volume>: <fpage>13749</fpage>&#x02013;<lpage>13753</lpage>.</mixed-citation></ref><ref id="nph14318-bib-0005"><mixed-citation publication-type="journal" id="nph14318-cit-0005">
+<string-name>
+<surname>Bravo&#x02010;Garcia</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Yasumura</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Langdale</surname>
+<given-names>JA</given-names>
+</string-name>. <year>2009</year>
+<article-title>Specialization of the Golden2&#x02010;like regulatory pathway during land plant evolution</article-title>. <source>New Phytologist</source>
+<volume>183</volume>: <fpage>133</fpage>&#x02013;<lpage>141</lpage>.<pub-id pub-id-type="pmid">19383092</pub-id></mixed-citation></ref><ref id="nph14318-bib-0006"><mixed-citation publication-type="journal" id="nph14318-cit-0006">
+<string-name>
+<surname>Burglin</surname>
+<given-names>T</given-names>
+</string-name>. <year>1997</year>
+<article-title>Analysis of TALE superclass homeobox genes (MEIS, PBC, KNOX, Iroquois, TGIF) reveals a novel domain conserved between plants and animals</article-title>. <source>Nucleic Acids Research</source>
+<volume>25</volume>: <fpage>4173</fpage>&#x02013;<lpage>4180</lpage>.<pub-id pub-id-type="pmid">9336443</pub-id></mixed-citation></ref><ref id="nph14318-bib-0007"><mixed-citation publication-type="journal" id="nph14318-cit-0007">
+<string-name>
+<surname>Chater</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Kamisugi</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Movahedi</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Fleming</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Cuming</surname>
+<given-names>AC</given-names>
+</string-name>, <string-name>
+<surname>Gray</surname>
+<given-names>JE</given-names>
+</string-name>, <string-name>
+<surname>Beerling</surname>
+<given-names>DJ</given-names>
+</string-name>. <year>2011</year>
+<article-title>Regulatory mechanism controlling stomatal behavior conserved across 400 million years of land plant evolution</article-title>. <source>Current Biology</source>
+<volume>21</volume>: <fpage>1025</fpage>&#x02013;<lpage>1029</lpage>.<pub-id pub-id-type="pmid">21658944</pub-id></mixed-citation></ref><ref id="nph14318-bib-0008"><mixed-citation publication-type="journal" id="nph14318-cit-0008">
+<string-name>
+<surname>Clough</surname>
+<given-names>SJ</given-names>
+</string-name>, <string-name>
+<surname>Bent</surname>
+<given-names>AF</given-names>
+</string-name>. <year>1998</year>
+<article-title>Floral dip: a simplified method for Agrobacterium&#x02010;mediated transformation of <italic>Arabidopsis thaliana</italic>
+</article-title>. <source>Plant Journal</source>
+<volume>16</volume>: <fpage>735</fpage>&#x02013;<lpage>743</lpage>.<pub-id pub-id-type="pmid">10069079</pub-id></mixed-citation></ref><ref id="nph14318-bib-0009"><mixed-citation publication-type="journal" id="nph14318-cit-0009">
+<string-name>
+<surname>Collingridge</surname>
+<given-names>PW</given-names>
+</string-name>, <string-name>
+<surname>Kelly</surname>
+<given-names>S</given-names>
+</string-name>. <year>2012</year>
+<article-title>MergeAlign: improving multipe sequence alignment performance by dynamic reconstruction of consensus multiple sequence alignments</article-title>. <source>BMC Bioinformatics</source>
+<volume>13</volume>: <fpage>117</fpage>.<pub-id pub-id-type="pmid">22646090</pub-id></mixed-citation></ref><ref id="nph14318-bib-0010"><mixed-citation publication-type="journal" id="nph14318-cit-0010">
+<string-name>
+<surname>Cox</surname>
+<given-names>CJ</given-names>
+</string-name>, <string-name>
+<surname>Li</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Foster</surname>
+<given-names>PG</given-names>
+</string-name>, <string-name>
+<surname>Embley</surname>
+<given-names>TM</given-names>
+</string-name>, <string-name>
+<surname>Civan</surname>
+<given-names>P</given-names>
+</string-name>. <year>2014</year>
+<article-title>Conflicting phylogenies for early land plants are caused by composition biases among synonymous substitutions</article-title>. <source>Systematic Biology</source>
+<volume>63</volume>: <fpage>272</fpage>&#x02013;<lpage>279</lpage>.<pub-id pub-id-type="pmid">24399481</pub-id></mixed-citation></ref><ref id="nph14318-bib-0011"><mixed-citation publication-type="journal" id="nph14318-cit-0011">
+<string-name>
+<surname>Derelle</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Lopez</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Le Guyader</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Manuel</surname>
+<given-names>M</given-names>
+</string-name>. <year>2007</year>
+<article-title>Homeodomain proteins belong to the ancestral molecular toolkit of eukaryotes</article-title>. <source>Evolution and Development</source>
+<volume>9</volume>: <fpage>212</fpage>&#x02013;<lpage>219</lpage>.<pub-id pub-id-type="pmid">17501745</pub-id></mixed-citation></ref><ref id="nph14318-bib-0012"><mixed-citation publication-type="journal" id="nph14318-cit-0012">
+<string-name>
+<surname>Endrizzi</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Moussian</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Haecker</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Levin</surname>
+<given-names>JZ</given-names>
+</string-name>, <string-name>
+<surname>Laux</surname>
+<given-names>T</given-names>
+</string-name>. <year>1996</year>
+<article-title>The <italic>shoot meristemless</italic> gene is required for maintenance of undifferentiated cells in Arabidopsis shoot and floral mersitems and acts at a different regulatory level than the meristem genes <italic>WUSCHEL</italic> and <italic>ZWILLE</italic>
+</article-title>. <source>Plant Journal</source>
+<volume>10</volume>: <fpage>967</fpage>&#x02013;<lpage>979</lpage>.<pub-id pub-id-type="pmid">9011081</pub-id></mixed-citation></ref><ref id="nph14318-bib-0013"><mixed-citation publication-type="journal" id="nph14318-cit-0013">
+<string-name>
+<surname>Engel</surname>
+<given-names>PP</given-names>
+</string-name>. <year>1968</year>
+<article-title>The induction of biochemical and morphological mutants in the moss <italic>Physcomitrella patens</italic>
+</article-title>. <source>American Journal of Botany</source>
+<volume>55</volume>: <fpage>438</fpage>&#x02013;<lpage>446</lpage>.</mixed-citation></ref><ref id="nph14318-bib-0014"><mixed-citation publication-type="journal" id="nph14318-cit-0014">
+<string-name>
+<surname>Frank</surname>
+<given-names>MH</given-names>
+</string-name>, <string-name>
+<surname>Scanlon</surname>
+<given-names>MJ</given-names>
+</string-name>. <year>2015a</year>
+<article-title>Transcriptomic evidence for the evolution of shoot meristem function in sporophyte&#x02010;dominant land plants through concerted selection of ancestral gametophytic and sporophytic genetic programs</article-title>. <source>Molecular Biology and Evolution</source>
+<volume>32</volume>: <fpage>355</fpage>&#x02013;<lpage>367</lpage>.<pub-id pub-id-type="pmid">25371433</pub-id></mixed-citation></ref><ref id="nph14318-bib-0015"><mixed-citation publication-type="journal" id="nph14318-cit-0015">
+<string-name>
+<surname>Frank</surname>
+<given-names>MH</given-names>
+</string-name>, <string-name>
+<surname>Scanlon</surname>
+<given-names>MJ</given-names>
+</string-name>. <year>2015b</year>
+<article-title>Cell&#x02010;specific transcriptomic analyses of three&#x02010;dimensional shoot development in the moss <italic>Physcomitrella patens</italic>
+</article-title>. <source>Plant Journal</source>
+<volume>83</volume>: <fpage>743</fpage>&#x02013;<lpage>751</lpage>.<pub-id pub-id-type="pmid">26123849</pub-id></mixed-citation></ref><ref id="nph14318-bib-0016"><mixed-citation publication-type="journal" id="nph14318-cit-0016">
+<string-name>
+<surname>Furumizu</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Alvarez</surname>
+<given-names>JP</given-names>
+</string-name>, <string-name>
+<surname>Sakakibara</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Bowman</surname>
+<given-names>JL</given-names>
+</string-name>. <year>2015</year>
+<article-title>Antagonistic roles for KNOX1 and KNOX2 genes in patterning the land plant body plan following an ancient gene duplication</article-title>. <source>PLoS Genetics</source>
+<volume>11</volume>: <fpage>e1004980</fpage>.<pub-id pub-id-type="pmid">25671434</pub-id></mixed-citation></ref><ref id="nph14318-bib-0017"><mixed-citation publication-type="journal" id="nph14318-cit-0017">
+<string-name>
+<surname>Gleave</surname>
+<given-names>AP</given-names>
+</string-name>. <year>1992</year>
+<article-title>A versatile binary vector system with a T&#x02010;DNA organisational structure conducive to efficient integration of cloned DNA into the plant genome</article-title>. <source>Plant Molecular Biology</source>
+<volume>20</volume>: <fpage>1203</fpage>&#x02013;<lpage>1207</lpage>.<pub-id pub-id-type="pmid">1463857</pub-id></mixed-citation></ref><ref id="nph14318-bib-0018"><mixed-citation publication-type="journal" id="nph14318-cit-0018">
+<string-name>
+<surname>Harrison</surname>
+<given-names>CJ</given-names>
+</string-name>, <string-name>
+<surname>Corley</surname>
+<given-names>SB</given-names>
+</string-name>, <string-name>
+<surname>Moylan</surname>
+<given-names>EC</given-names>
+</string-name>, <string-name>
+<surname>Alexander</surname>
+<given-names>DL</given-names>
+</string-name>, <string-name>
+<surname>Scotland</surname>
+<given-names>RW</given-names>
+</string-name>, <string-name>
+<surname>Langdale</surname>
+<given-names>JA</given-names>
+</string-name>. <year>2005</year>
+<article-title>Independent recruitment of a conserved developmental mechanism during leaf evolution</article-title>. <source>Nature</source>
+<volume>434</volume>: <fpage>509</fpage>&#x02013;<lpage>514</lpage>.<pub-id pub-id-type="pmid">15791256</pub-id></mixed-citation></ref><ref id="nph14318-bib-0019"><mixed-citation publication-type="journal" id="nph14318-cit-0019">
+<string-name>
+<surname>Harrison</surname>
+<given-names>CJ</given-names>
+</string-name>, <string-name>
+<surname>Langdale</surname>
+<given-names>JA</given-names>
+</string-name>. <year>2010</year>
+<article-title>The developmental pattern of shoot apices in <italic>Selaginella kraussiana</italic> (Kunze) A. Braun</article-title>. <source>International Journal of Plant Sciences</source>
+<volume>171</volume>: <fpage>690</fpage>&#x02013;<lpage>692</lpage>.</mixed-citation></ref><ref id="nph14318-bib-0020"><mixed-citation publication-type="journal" id="nph14318-cit-0020">
+<string-name>
+<surname>Harrison</surname>
+<given-names>CJ</given-names>
+</string-name>, <string-name>
+<surname>Rezvani</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Langdale</surname>
+<given-names>JA</given-names>
+</string-name>. <year>2007</year>
+<article-title>Growth from two transient apical initials in the meristem of <italic>Selaginella kraussiana</italic>
+</article-title>. <source>Development</source>
+<volume>134</volume>: <fpage>881</fpage>&#x02013;<lpage>889</lpage>.<pub-id pub-id-type="pmid">17251270</pub-id></mixed-citation></ref><ref id="nph14318-bib-0021"><mixed-citation publication-type="journal" id="nph14318-cit-0021">
+<string-name>
+<surname>Hay</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Kaur</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Phillips</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Hedden</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Hake</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Tsiantis</surname>
+<given-names>M</given-names>
+</string-name>. <year>2002</year>
+<article-title>The gibberellin pathway mediates KNOTTED1&#x02010;type homeobox function in plants with different body plans</article-title>. <source>Current Biology</source>
+<volume>12</volume>: <fpage>1557</fpage>&#x02013;<lpage>1565</lpage>.<pub-id pub-id-type="pmid">12372247</pub-id></mixed-citation></ref><ref id="nph14318-bib-0022"><mixed-citation publication-type="journal" id="nph14318-cit-0022">
+<string-name>
+<surname>Hay</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Tsiantis</surname>
+<given-names>M</given-names>
+</string-name>. <year>2010</year>
+<article-title>KNOX genes: versatile regulators of plant development and diversity</article-title>. <source>Development</source>
+<volume>137</volume>: <fpage>3153</fpage>&#x02013;<lpage>3165</lpage>.<pub-id pub-id-type="pmid">20823061</pub-id></mixed-citation></ref><ref id="nph14318-bib-0023"><mixed-citation publication-type="journal" id="nph14318-cit-0023">
+<string-name>
+<surname>Holland</surname>
+<given-names>PWH</given-names>
+</string-name>. <year>2013</year>
+<article-title>Evolution of homeobox genes</article-title>. <source>Wiley Interdisciplinary Reviews: Developmental Biology</source>
+<volume>2</volume>: <fpage>31</fpage>&#x02013;<lpage>45</lpage>.<pub-id pub-id-type="pmid">23799629</pub-id></mixed-citation></ref><ref id="nph14318-bib-0024"><mixed-citation publication-type="journal" id="nph14318-cit-0024">
+<string-name>
+<surname>Hori</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Maruyama</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Fujisawa</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Togashi</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Yamamoto</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Seo</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Sato</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Yamada</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Mori</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Tajima</surname>
+<given-names>N</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2014</year>
+<article-title>
+<italic>Klebsormidium flaccidum</italic> genome reveals primary factors for plant terrestrial adaptation</article-title>. <source>Nature Communications</source>
+<volume>5</volume>: <fpage>3978</fpage>.</mixed-citation></ref><ref id="nph14318-bib-0025"><mixed-citation publication-type="journal" id="nph14318-cit-0025">
+<string-name>
+<surname>Horst</surname>
+<given-names>NA</given-names>
+</string-name>, <string-name>
+<surname>Katz</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Pereman</surname>
+<given-names>I</given-names>
+</string-name>, <string-name>
+<surname>Decker</surname>
+<given-names>EL</given-names>
+</string-name>, <string-name>
+<surname>Ohad</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Reski</surname>
+<given-names>R</given-names>
+</string-name>. <year>2016</year>
+<article-title>A single homeobox gene triggers phase transition, embryogenesis and asexual reproduction</article-title>. <source>Nature Plants</source>
+<volume>2</volume>: <fpage>15&#x000a0;209</fpage>.</mixed-citation></ref><ref id="nph14318-bib-0026"><mixed-citation publication-type="journal" id="nph14318-cit-0026">
+<string-name>
+<surname>Jasinski</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Piazza</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Craft</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Hay</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Woolley</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Rieu</surname>
+<given-names>I</given-names>
+</string-name>, <string-name>
+<surname>Phillips</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Hedden</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Tsiantis</surname>
+<given-names>M</given-names>
+</string-name>. <year>2005</year>
+<article-title>KNOX action in Arabidopsis is mediated by coordinate regulation of cytokinin and gibberellin activities</article-title>. <source>Current Biology</source>
+<volume>15</volume>: <fpage>1560</fpage>&#x02013;<lpage>1565</lpage>.<pub-id pub-id-type="pmid">16139211</pub-id></mixed-citation></ref><ref id="nph14318-bib-0027"><mixed-citation publication-type="journal" id="nph14318-cit-0027">
+<string-name>
+<surname>Johnson</surname>
+<given-names>MT</given-names>
+</string-name>, <string-name>
+<surname>Carpenter</surname>
+<given-names>EJ</given-names>
+</string-name>, <string-name>
+<surname>Tian</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name>
+<surname>Bruskiewich</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Burris</surname>
+<given-names>JN</given-names>
+</string-name>, <string-name>
+<surname>Carrigan</surname>
+<given-names>CT</given-names>
+</string-name>, <string-name>
+<surname>Chase</surname>
+<given-names>MW</given-names>
+</string-name>, <string-name>
+<surname>Clarke</surname>
+<given-names>ND</given-names>
+</string-name>, <string-name>
+<surname>Covshoff</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Depamphilis</surname>
+<given-names>CW</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2012</year>
+<article-title>Evaluating methods for isolating total RNA and predicting the success of sequencing phylogenetically diverse plant transcriptomes</article-title>. <source>PLoS ONE</source>
+<volume>7</volume>: <fpage>e50226</fpage>.<pub-id pub-id-type="pmid">23185583</pub-id></mixed-citation></ref><ref id="nph14318-bib-0028"><mixed-citation publication-type="journal" id="nph14318-cit-0028">
+<string-name>
+<surname>Jones</surname>
+<given-names>CS</given-names>
+</string-name>, <string-name>
+<surname>Drinnan</surname>
+<given-names>AN</given-names>
+</string-name>. <year>2009</year>
+<article-title>The developmental pattern of shoot apices in <italic>Selaginella kraussiana</italic> (Kunze) A. Braun</article-title>. <source>International Journal of Plant Sciences</source>
+<volume>170</volume>: <fpage>1009</fpage>&#x02013;<lpage>1018</lpage>.</mixed-citation></ref><ref id="nph14318-bib-0029"><mixed-citation publication-type="journal" id="nph14318-cit-0029">
+<string-name>
+<surname>Kawai</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Tanabe</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Soma</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Ito</surname>
+<given-names>M</given-names>
+</string-name>. <year>2010</year>
+<article-title>Class 1 KNOX gene expression supports the <italic>Selaginella</italic> rhizophore concept</article-title>. <source>Journal of Plant Biology</source>
+<volume>53</volume>: <fpage>268</fpage>&#x02013;<lpage>274</lpage>.</mixed-citation></ref><ref id="nph14318-bib-0030"><mixed-citation publication-type="journal" id="nph14318-cit-0030">
+<string-name>
+<surname>Kelley</surname>
+<given-names>LA</given-names>
+</string-name>, <string-name>
+<surname>Mezulis</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Yates</surname>
+<given-names>CM</given-names>
+</string-name>, <string-name>
+<surname>Wass</surname>
+<given-names>MN</given-names>
+</string-name>, <string-name>
+<surname>Sternberg</surname>
+<given-names>MJE</given-names>
+</string-name>. <year>2015</year>
+<article-title>The Phyre2 web portal for protein modeling, prediction and analysis</article-title>. <source>Nature Protocols</source>
+<volume>10</volume>: <fpage>845</fpage>&#x02013;<lpage>858</lpage>.<pub-id pub-id-type="pmid">25950237</pub-id></mixed-citation></ref><ref id="nph14318-bib-0031"><mixed-citation publication-type="journal" id="nph14318-cit-0031">
+<string-name>
+<surname>Kerstetter</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Volbrecht</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Lowe</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Veit</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Yamaguchi</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Hake</surname>
+<given-names>S</given-names>
+</string-name>. <year>1994</year>
+<article-title>Sequence analysis and expression patterns divide the maize <italic>knotted1&#x02010;like</italic> homebox genes into two classes</article-title>. <source>Plant Cell</source>
+<volume>6</volume>: <fpage>1877</fpage>&#x02013;<lpage>1887</lpage>.<pub-id pub-id-type="pmid">7866030</pub-id></mixed-citation></ref><ref id="nph14318-bib-0032"><mixed-citation publication-type="journal" id="nph14318-cit-0032">
+<string-name>
+<surname>Langdale</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name>
+<surname>Rothermel</surname>
+<given-names>BA</given-names>
+</string-name>, <string-name>
+<surname>Nelson</surname>
+<given-names>T</given-names>
+</string-name>. <year>1988</year>
+<article-title>Cellular patterns of photosynthetic gene expression in developing maize leaves</article-title>. <source>Genes &#x00026; Development</source>
+<volume>2</volume>: <fpage>106</fpage>&#x02013;<lpage>115</lpage>.<pub-id pub-id-type="pmid">3356335</pub-id></mixed-citation></ref><ref id="nph14318-bib-0033"><mixed-citation publication-type="journal" id="nph14318-cit-0033">
+<string-name>
+<surname>Lee</surname>
+<given-names>JH</given-names>
+</string-name>, <string-name>
+<surname>Lin</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Joo</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Goodenough</surname>
+<given-names>U</given-names>
+</string-name>. <year>2008</year>
+<article-title>Early sexual origins of homeoprotein heterodimerization and evolution of the plant KNOX/BELL family</article-title>. <source>Cell</source>
+<volume>133</volume>: <fpage>829</fpage>&#x02013;<lpage>840</lpage>.<pub-id pub-id-type="pmid">18510927</pub-id></mixed-citation></ref><ref id="nph14318-bib-0034"><mixed-citation publication-type="journal" id="nph14318-cit-0034">
+<string-name>
+<surname>Li</surname>
+<given-names>FW</given-names>
+</string-name>, <string-name>
+<surname>Villarreal</surname>
+<given-names>JC</given-names>
+</string-name>, <string-name>
+<surname>Kelly</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Rothfels</surname>
+<given-names>CJ</given-names>
+</string-name>, <string-name>
+<surname>Melkonian</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Frangedakis</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Ruhsam</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Sigel</surname>
+<given-names>EM</given-names>
+</string-name>, <string-name>
+<surname>Der</surname>
+<given-names>JP</given-names>
+</string-name>, <string-name>
+<surname>Pittermann</surname>
+<given-names>J</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2014</year>
+<article-title>Horizontal transfer of an adaptive chimeric photoreceptor from bryophytes to ferns</article-title>. <source>Proceedings of the National Academy of Sciences, USA</source>
+<volume>111</volume>: <fpage>6672</fpage>&#x02013;<lpage>6677</lpage>.</mixed-citation></ref><ref id="nph14318-bib-0035"><mixed-citation publication-type="journal" id="nph14318-cit-0035">
+<string-name>
+<surname>Li</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Pi</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Huang</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Xu</surname>
+<given-names>L</given-names>
+</string-name>. <year>2012</year>
+<article-title>ATH1 and KNAT2 proteins act together in regulation of plant inflorescence architecture</article-title>. <source>Journal of Experimental Botany</source>
+<volume>63</volume>: <fpage>1423</fpage>&#x02013;<lpage>1433</lpage>.<pub-id pub-id-type="pmid">22140242</pub-id></mixed-citation></ref><ref id="nph14318-bib-0036"><mixed-citation publication-type="journal" id="nph14318-cit-0036">
+<string-name>
+<surname>Ligrone</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Duckett</surname>
+<given-names>JG</given-names>
+</string-name>, <string-name>
+<surname>Renzaglia</surname>
+<given-names>KS</given-names>
+</string-name>. <year>2012a</year>
+<article-title>The origin of the sporophyte shoot in land plants: a bryological perspective</article-title>. <source>Annals of Botany</source>
+<volume>110</volume>: <fpage>935</fpage>&#x02013;<lpage>941</lpage>.<pub-id pub-id-type="pmid">22875816</pub-id></mixed-citation></ref><ref id="nph14318-bib-0037"><mixed-citation publication-type="journal" id="nph14318-cit-0037">
+<string-name>
+<surname>Ligrone</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Duckett</surname>
+<given-names>JG</given-names>
+</string-name>, <string-name>
+<surname>Renzaglia</surname>
+<given-names>KS</given-names>
+</string-name>. <year>2012b</year>
+<article-title>Major transitions in the evolution of early land plants: a bryological perspective</article-title>. <source>Annals of Botany</source>
+<volume>109</volume>: <fpage>851</fpage>&#x02013;<lpage>871</lpage>.<pub-id pub-id-type="pmid">22356739</pub-id></mixed-citation></ref><ref id="nph14318-bib-0038"><mixed-citation publication-type="journal" id="nph14318-cit-0038">
+<string-name>
+<surname>Lincoln</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Long</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Yamaguchi</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Serikawa</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Hake</surname>
+<given-names>S</given-names>
+</string-name>. <year>1994</year>
+<article-title>A <italic>knotted1&#x02010;like</italic> homeobox gene in Arabidopsis is expressed in the vegetative meristem and dramatically alters leaf morphology when overexpressed in transgenic plants</article-title>. <source>Plant Cell</source>
+<volume>6</volume>: <fpage>1859</fpage>&#x02013;<lpage>1876</lpage>.<pub-id pub-id-type="pmid">7866029</pub-id></mixed-citation></ref><ref id="nph14318-bib-0039"><mixed-citation publication-type="journal" id="nph14318-cit-0039">
+<string-name>
+<surname>Long</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name>
+<surname>Moan</surname>
+<given-names>EI</given-names>
+</string-name>, <string-name>
+<surname>Medford</surname>
+<given-names>JI</given-names>
+</string-name>, <string-name>
+<surname>Barton</surname>
+<given-names>MK</given-names>
+</string-name>. <year>1996</year>
+<article-title>A member of the KNOTTED class of homeodomain proteins encoded by the <italic>STM</italic> gene of Arabidopsis</article-title>. <source>Nature</source>
+<volume>379</volume>: <fpage>66</fpage>&#x02013;<lpage>69</lpage>.<pub-id pub-id-type="pmid">8538741</pub-id></mixed-citation></ref><ref id="nph14318-bib-0040"><mixed-citation publication-type="journal" id="nph14318-cit-0040">
+<string-name>
+<surname>MacAlister</surname>
+<given-names>CA</given-names>
+</string-name>, <string-name>
+<surname>Bergmann</surname>
+<given-names>DC</given-names>
+</string-name>. <year>2011</year>
+<article-title>Sequence and function of basic helix&#x02010;loop&#x02010;helix proteins required for stomatal development in Arabidopsis are deeply conserved in land plants</article-title>. <source>Evolution &#x00026; Development</source>
+<volume>13</volume>: <fpage>182</fpage>&#x02013;<lpage>192</lpage>.<pub-id pub-id-type="pmid">21410874</pub-id></mixed-citation></ref><ref id="nph14318-bib-0041"><mixed-citation publication-type="journal" id="nph14318-cit-0041">
+<string-name>
+<surname>Maizel</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Busch</surname>
+<given-names>MA</given-names>
+</string-name>, <string-name>
+<surname>Tanahashi</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Perkovic</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Kato</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Hasebe</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Weigel</surname>
+<given-names>D</given-names>
+</string-name>. <year>2005</year>
+<article-title>The floral regulator LEAFY evolves by substitutions in the DNA binding domain</article-title>. <source>Science</source>
+<volume>308</volume>: <fpage>260</fpage>&#x02013;<lpage>263</lpage>.<pub-id pub-id-type="pmid">15821093</pub-id></mixed-citation></ref><ref id="nph14318-bib-0042"><mixed-citation publication-type="journal" id="nph14318-cit-0042">
+<string-name>
+<surname>Marella</surname>
+<given-names>HH</given-names>
+</string-name>, <string-name>
+<surname>Sakata</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Quatrano</surname>
+<given-names>RS</given-names>
+</string-name>. <year>2006</year>
+<article-title>Characterization and functional analysis of <italic>ABSCISIC ACID INSENSITIVE3</italic>&#x02010;like genes from <italic>Physcomitrella patens</italic>
+</article-title>. <source>Plant Journal</source>
+<volume>46</volume>: <fpage>1032</fpage>&#x02013;<lpage>1044</lpage>.<pub-id pub-id-type="pmid">16805735</pub-id></mixed-citation></ref><ref id="nph14318-bib-0043"><mixed-citation publication-type="journal" id="nph14318-cit-0043">
+<string-name>
+<surname>Matasci</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Hung</surname>
+<given-names>L&#x02010;H</given-names>
+</string-name>, <string-name>
+<surname>Yan</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name>
+<surname>Carpenter</surname>
+<given-names>EJ</given-names>
+</string-name>, <string-name>
+<surname>Wickett</surname>
+<given-names>NJ</given-names>
+</string-name>, <string-name>
+<surname>Mirarab</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Nguyen</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Warnow</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Ayyampalayam</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Barker</surname>
+<given-names>M</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2014</year>
+<article-title>Data access for the 1,000 Plants (1KP) project</article-title>. <source>GigaScience</source>
+<volume>3</volume>: <fpage>17</fpage>.<pub-id pub-id-type="pmid">25625010</pub-id></mixed-citation></ref><ref id="nph14318-bib-0044"><mixed-citation publication-type="journal" id="nph14318-cit-0044">
+<string-name>
+<surname>Menand</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Yi</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Jouannic</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Hoffmann</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Ryan</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Linstead</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Schaefer</surname>
+<given-names>DG</given-names>
+</string-name>, <string-name>
+<surname>Dolan</surname>
+<given-names>L</given-names>
+</string-name>. <year>2007</year>
+<article-title>An ancient mechanism controls the development of cells with a rooting function in land plants</article-title>. <source>Science</source>
+<volume>316</volume>: <fpage>1477</fpage>&#x02013;<lpage>1480</lpage>.<pub-id pub-id-type="pmid">17556585</pub-id></mixed-citation></ref><ref id="nph14318-bib-0045"><mixed-citation publication-type="journal" id="nph14318-cit-0045">
+<string-name>
+<surname>Mukherjee</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Brocchieri</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>B&#x000fc;rglin</surname>
+<given-names>TR</given-names>
+</string-name>. <year>2009</year>
+<article-title>A comprehensive classification and evolutionary analysis of plant homeobox genes</article-title>. <source>Molecular Biology and Evolution</source>
+<volume>26</volume>: <fpage>2775</fpage>&#x02013;<lpage>2794</lpage>.<pub-id pub-id-type="pmid">19734295</pub-id></mixed-citation></ref><ref id="nph14318-bib-0046"><mixed-citation publication-type="journal" id="nph14318-cit-0046">
+<string-name>
+<surname>Nishiyama</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Hiwatashi</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Sakakibara</surname>
+<given-names>I</given-names>
+</string-name>, <string-name>
+<surname>Kato</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Hasebe</surname>
+<given-names>M</given-names>
+</string-name>. <year>2000</year>
+<article-title>Tagged mutagenesis and gene&#x02010;trap in the moss, <italic>Physcomitrella patens</italic> by shuttle mutagenesis</article-title>. <source>DNA Research</source>
+<volume>7</volume>: <fpage>9</fpage>&#x02013;<lpage>17</lpage>.<pub-id pub-id-type="pmid">10718194</pub-id></mixed-citation></ref><ref id="nph14318-bib-0047"><mixed-citation publication-type="journal" id="nph14318-cit-0047">
+<string-name>
+<surname>Ramakers</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Ruijter</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name>
+<surname>Deprez</surname>
+<given-names>RHL</given-names>
+</string-name>, <string-name>
+<surname>Moorman</surname>
+<given-names>AF</given-names>
+</string-name>. <year>2003</year>
+<article-title>Assumption&#x02010;free analysis of quantitative real&#x02010;time polymerase chain reaction (PCR) data</article-title>. <source>Neuroscience Letters</source>
+<volume>339</volume>: <fpage>62</fpage>&#x02013;<lpage>66</lpage>.<pub-id pub-id-type="pmid">12618301</pub-id></mixed-citation></ref><ref id="nph14318-bib-0048"><mixed-citation publication-type="journal" id="nph14318-cit-0048">
+<string-name>
+<surname>Ranjan</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Dickopf</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Ullrich</surname>
+<given-names>KK</given-names>
+</string-name>, <string-name>
+<surname>Rensing</surname>
+<given-names>SA</given-names>
+</string-name>, <string-name>
+<surname>Hoecker</surname>
+<given-names>U</given-names>
+</string-name>. <year>2014</year>
+<article-title>Functional analysis of COP1 and SPA orthologs from <italic>Physcomitrella</italic> and rice during photomorphogenesis of transgenic Arabidopsis reveals distinct evolutionary conservation</article-title>. <source>BMC Plant Biology</source>
+<volume>14</volume>: <fpage>178</fpage>.<pub-id pub-id-type="pmid">24985152</pub-id></mixed-citation></ref><ref id="nph14318-bib-0049"><mixed-citation publication-type="journal" id="nph14318-cit-0049">
+<string-name>
+<surname>Ronquist</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Huelsenbeck</surname>
+<given-names>JP</given-names>
+</string-name>. <year>2003</year>
+<article-title>MrBayes 3: Bayesian phylogenetic inference under mixed models</article-title>. <source>Bioinformatics</source>
+<volume>19</volume>: <fpage>1572</fpage>&#x02013;<lpage>1574</lpage>.<pub-id pub-id-type="pmid">12912839</pub-id></mixed-citation></ref><ref id="nph14318-bib-0050"><mixed-citation publication-type="book" id="nph14318-cit-0050">
+<string-name>
+<surname>Sakakibara</surname>
+<given-names>K</given-names>
+</string-name>. <year>2016</year>
+<chapter-title>Technological innovations give rise to a new era of plant evolutionary developmental biology</chapter-title> In: <person-group person-group-type="editor"><name><surname>Rensing</surname><given-names>SA</given-names></name></person-group>, ed. <source>Advances in botanical research volume 78 &#x02018;Genomes and evolution of charophytes, bryophytes, lycophytes and ferns&#x02019;</source>. <publisher-loc>London, UK</publisher-loc>: <publisher-name>Academic Press</publisher-name>, <fpage>3</fpage>&#x02013;<lpage>35</lpage>.</mixed-citation></ref><ref id="nph14318-bib-0051"><mixed-citation publication-type="journal" id="nph14318-cit-0051">
+<string-name>
+<surname>Sakakibara</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Ando</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Yip</surname>
+<given-names>HK</given-names>
+</string-name>, <string-name>
+<surname>Tamada</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Hiwatashi</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Murata</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Deguchi</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Hasebe</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Bowman</surname>
+<given-names>JL</given-names>
+</string-name>. <year>2013</year>
+<article-title>KNOX2 genes regulate the haploid&#x02010;to&#x02010;diploid morphological transition in land plants</article-title>. <source>Science</source>
+<volume>339</volume>: <fpage>1067</fpage>&#x02013;<lpage>1070</lpage>.<pub-id pub-id-type="pmid">23449590</pub-id></mixed-citation></ref><ref id="nph14318-bib-0052"><mixed-citation publication-type="journal" id="nph14318-cit-0052">
+<string-name>
+<surname>Sakakibara</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Nishiyama</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Deguchi</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Hasebe</surname>
+<given-names>M</given-names>
+</string-name>. <year>2008</year>
+<article-title>Class 1 KNOX genes are not involved in shoot development in the moss <italic>Physcomitrella patens</italic> but do function in sporophyte development</article-title>. <source>Evolution and Development</source>
+<volume>10</volume>: <fpage>555</fpage>&#x02013;<lpage>566</lpage>.<pub-id pub-id-type="pmid">18803774</pub-id></mixed-citation></ref><ref id="nph14318-bib-0053"><mixed-citation publication-type="journal" id="nph14318-cit-0053">
+<string-name>
+<surname>Sakamoto</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Kamiya</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Ueguchi&#x02010;Tanaka</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Iwahori</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Matsuoka</surname>
+<given-names>M</given-names>
+</string-name>. <year>2001</year>
+<article-title>KNOX homeodomain protein directly suppresses the expression of a gibberellin biosynthetic gene in the tobacco shoot apical meristem</article-title>. <source>Genes &#x00026; Development</source>
+<volume>15</volume>: <fpage>581</fpage>&#x02013;<lpage>590</lpage>.<pub-id pub-id-type="pmid">11238378</pub-id></mixed-citation></ref><ref id="nph14318-bib-0054"><mixed-citation publication-type="journal" id="nph14318-cit-0054">
+<string-name>
+<surname>Sakamoto</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Sakakibara</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Kojima</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Yamamoto</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Nagasaki</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Inukai</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Sato</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Matsuoka</surname>
+<given-names>M</given-names>
+</string-name>. <year>2006</year>
+<article-title>Ectopic expression of KNOTTED1&#x02010;like homeobox protein induces expression of cytokinin biosynthesis genes in rice</article-title>. <source>Plant Physiology</source>
+<volume>142</volume>: <fpage>54</fpage>&#x02013;<lpage>62</lpage>.<pub-id pub-id-type="pmid">16861569</pub-id></mixed-citation></ref><ref id="nph14318-bib-0055"><mixed-citation publication-type="journal" id="nph14318-cit-0055">
+<string-name>
+<surname>Sanders</surname>
+<given-names>HL</given-names>
+</string-name>, <string-name>
+<surname>Darrah</surname>
+<given-names>PR</given-names>
+</string-name>, <string-name>
+<surname>Langdale</surname>
+<given-names>JA</given-names>
+</string-name>. <year>2011</year>
+<article-title>Sector analysis and predictive modelling reveal iterative shoot&#x02010;like development in fern fronds</article-title>. <source>Development</source>
+<volume>138</volume>: <fpage>2925</fpage>&#x02013;<lpage>2934</lpage>.<pub-id pub-id-type="pmid">21653615</pub-id></mixed-citation></ref><ref id="nph14318-bib-0056"><mixed-citation publication-type="journal" id="nph14318-cit-0056">
+<string-name>
+<surname>Sano</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Juarez</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Hass</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Sakakibara</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Ito</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Banks</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Hasebe</surname>
+<given-names>M</given-names>
+</string-name>. <year>2005</year>
+<article-title>KNOX homeobox genes potentially have similar function in both diploid unicellular and multicellular meristems, but not in haploid meristems</article-title>. <source>Evolution and Development</source>
+<volume>7</volume>: <fpage>69</fpage>&#x02013;<lpage>78</lpage>.<pub-id pub-id-type="pmid">15642091</pub-id></mixed-citation></ref><ref id="nph14318-bib-0057"><mixed-citation publication-type="journal" id="nph14318-cit-0057">
+<string-name>
+<surname>Schaefer</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Zryd</surname>
+<given-names>JP</given-names>
+</string-name>, <string-name>
+<surname>Knight</surname>
+<given-names>CD</given-names>
+</string-name>, <string-name>
+<surname>Cove</surname>
+<given-names>DJ</given-names>
+</string-name>. <year>1991</year>
+<article-title>Stable transformation of the moss <italic>Physcomitrella patens</italic>
+</article-title>. <source>Molecular and General Genetics</source>
+<volume>226</volume>: <fpage>418</fpage>&#x02013;<lpage>424</lpage>.<pub-id pub-id-type="pmid">2038304</pub-id></mixed-citation></ref><ref id="nph14318-bib-0058"><mixed-citation publication-type="journal" id="nph14318-cit-0058">
+<string-name>
+<surname>Serikawa</surname>
+<given-names>KA</given-names>
+</string-name>, <string-name>
+<surname>Mandoli</surname>
+<given-names>DF</given-names>
+</string-name>. <year>1999</year>
+<article-title>
+<italic>Aaknox1</italic>, a <italic>kn1</italic>&#x02010;like homeobox gene in <italic>Acetabularia acetabulum</italic>, undergoes developmentally regulated subcellular localization</article-title>. <source>Plant Molecular Biology</source>
+<volume>41</volume>: <fpage>785</fpage>&#x02013;<lpage>793</lpage>.<pub-id pub-id-type="pmid">10737143</pub-id></mixed-citation></ref><ref id="nph14318-bib-0059"><mixed-citation publication-type="journal" id="nph14318-cit-0059">
+<string-name>
+<surname>Sievers</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Wilm</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Dineen</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Gibson</surname>
+<given-names>TJ</given-names>
+</string-name>, <string-name>
+<surname>Karplus</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Li</surname>
+<given-names>W</given-names>
+</string-name>, <string-name>
+<surname>Lopez</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>McWilliam</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Remmert</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>S&#x000f6;ding</surname>
+<given-names>J</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2011</year>
+<article-title>Fast, scalable generation of high&#x02010;quality protein multiple sequence alignments using Clustal Omega</article-title>. <source>Molecular Systems Biology</source>
+<volume>7</volume>: <fpage>539</fpage>.<pub-id pub-id-type="pmid">21988835</pub-id></mixed-citation></ref><ref id="nph14318-bib-0060"><mixed-citation publication-type="journal" id="nph14318-cit-0060">
+<string-name>
+<surname>Singer</surname>
+<given-names>SD</given-names>
+</string-name>, <string-name>
+<surname>Ashton</surname>
+<given-names>NW</given-names>
+</string-name>. <year>2007</year>
+<article-title>Revelation of ancestral roles of KNOX genes by a functional analysis of Physcomitrella homologues</article-title>. <source>Plant Cell Reports</source>
+<volume>26</volume>: <fpage>2039</fpage>&#x02013;<lpage>2054</lpage>.<pub-id pub-id-type="pmid">17724598</pub-id></mixed-citation></ref><ref id="nph14318-bib-0061"><mixed-citation publication-type="journal" id="nph14318-cit-0061">
+<string-name>
+<surname>Smith</surname>
+<given-names>LG</given-names>
+</string-name>, <string-name>
+<surname>Greene</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Veit</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Hake</surname>
+<given-names>S</given-names>
+</string-name>. <year>1992</year>
+<article-title>A dominant mutation in the maize homeobox gene, Knotted&#x02010;1, causes its ectopic expression in leaf cells with altered fates</article-title>. <source>Development</source>
+<volume>116</volume>: <fpage>21</fpage>&#x02013;<lpage>30</lpage>.<pub-id pub-id-type="pmid">1362381</pub-id></mixed-citation></ref><ref id="nph14318-bib-0062"><mixed-citation publication-type="journal" id="nph14318-cit-0062">
+<string-name>
+<surname>Smith</surname>
+<given-names>HM</given-names>
+</string-name>, <string-name>
+<surname>Hake</surname>
+<given-names>S</given-names>
+</string-name>. <year>2003</year>
+<article-title>The interaction of two homeobox genes, <italic>BREVIPEDICELLUS</italic> and <italic>PENNYWISE</italic>, regulates internode patterning in the Arabidopsis inflorescence</article-title>. <source>Plant Cell</source>
+<volume>15</volume>: <fpage>1717</fpage>&#x02013;<lpage>1727</lpage>.<pub-id pub-id-type="pmid">12897247</pub-id></mixed-citation></ref><ref id="nph14318-bib-0063"><mixed-citation publication-type="journal" id="nph14318-cit-0063">
+<string-name>
+<surname>Stamatakis</surname>
+<given-names>A</given-names>
+</string-name>. <year>2014</year>
+<article-title>RAxML version 8: a tool for phylogenetic analysis and post&#x02010;analysis of large phylogenies</article-title>. <source>Bioinformatics</source>
+<volume>30</volume>: <fpage>1312</fpage>&#x02013;<lpage>1313</lpage>.<pub-id pub-id-type="pmid">24451623</pub-id></mixed-citation></ref><ref id="nph14318-bib-0064"><mixed-citation publication-type="book" id="nph14318-cit-0064">
+<string-name>
+<surname>Steeves</surname>
+<given-names>TA</given-names>
+</string-name>, <string-name>
+<surname>Sussex</surname>
+<given-names>IM</given-names>
+</string-name>. <year>1989</year>
+<source>Patterns in plant development</source>. <publisher-loc>Cambridge, UK</publisher-loc>: <publisher-name>Cambridge University Press</publisher-name>.</mixed-citation></ref><ref id="nph14318-bib-0065"><mixed-citation publication-type="journal" id="nph14318-cit-0065">
+<string-name>
+<surname>Sussex</surname>
+<given-names>IM</given-names>
+</string-name>, <string-name>
+<surname>Kerk</surname>
+<given-names>NM</given-names>
+</string-name>. <year>2001</year>
+<article-title>The evolution of plant architecture</article-title>. <source>Current Opinion Plant Biology</source>
+<volume>4</volume>: <fpage>33</fpage>&#x02013;<lpage>37</lpage>.</mixed-citation></ref><ref id="nph14318-bib-0066"><mixed-citation publication-type="journal" id="nph14318-cit-0066">
+<string-name>
+<surname>Sz&#x000f6;v&#x000e9;nyi</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Frangedakis</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Ricca</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Quandt</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Wicke</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Langdale</surname>
+<given-names>JA</given-names>
+</string-name>. <year>2015</year>
+<article-title>Establishment of <italic>Anthoceros agrestis</italic> as a model species for studying the biology of hornworts</article-title>. <source>BMC Plant Biology</source>
+<volume>15</volume>: <fpage>98</fpage>.<pub-id pub-id-type="pmid">25886741</pub-id></mixed-citation></ref><ref id="nph14318-bib-0067"><mixed-citation publication-type="journal" id="nph14318-cit-0067">
+<string-name>
+<surname>Timme</surname>
+<given-names>RE</given-names>
+</string-name>, <string-name>
+<surname>Bachvaroff</surname>
+<given-names>TR</given-names>
+</string-name>, <string-name>
+<surname>Delwiche</surname>
+<given-names>CF</given-names>
+</string-name>. <year>2012</year>
+<article-title>Broad phylogenomic sampling and the sister lineage of land plants</article-title>. <source>PLoS ONE</source>
+<volume>7</volume>: <fpage>e29696</fpage>.<pub-id pub-id-type="pmid">22253761</pub-id></mixed-citation></ref><ref id="nph14318-bib-0068"><mixed-citation publication-type="journal" id="nph14318-cit-0068">
+<string-name>
+<surname>Vasco</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Moran</surname>
+<given-names>RC</given-names>
+</string-name>, <string-name>
+<surname>Ambrose</surname>
+<given-names>BA</given-names>
+</string-name>. <year>2013</year>
+<article-title>The evolution, morphology, and development of fern leaves</article-title>. <source>Frontiers in Plant Science</source>
+<volume>4</volume>: <fpage>345</fpage>.<pub-id pub-id-type="pmid">24027574</pub-id></mixed-citation></ref><ref id="nph14318-bib-0069"><mixed-citation publication-type="journal" id="nph14318-cit-0069">
+<string-name>
+<surname>Venglat</surname>
+<given-names>SP</given-names>
+</string-name>, <string-name>
+<surname>Dumonceaux</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Rozwadowski</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Parnell</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Babic</surname>
+<given-names>V</given-names>
+</string-name>, <string-name>
+<surname>Keller</surname>
+<given-names>W</given-names>
+</string-name>, <string-name>
+<surname>Martienssen</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Selvaraj</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Datla</surname>
+<given-names>R</given-names>
+</string-name>. <year>2002</year>
+<article-title>The homeobox gene <italic>BREVIPEDICELLUS</italic> is a key regulator of inflorescence architecture in Arabidopsis</article-title>. <source>Proceedings of the National Academy of Sciences, USA</source>
+<volume>99</volume>: <fpage>4730</fpage>&#x02013;<lpage>4735</lpage>.</mixed-citation></ref><ref id="nph14318-bib-0070"><mixed-citation publication-type="journal" id="nph14318-cit-0070">
+<string-name>
+<surname>Wang</surname>
+<given-names>HY</given-names>
+</string-name>, <string-name>
+<surname>Klatte</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Jakoby</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>B&#x000e4;umlein</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Weisshaar</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Bauer</surname>
+<given-names>P</given-names>
+</string-name>. <year>2007</year>
+<article-title>Iron deficiency&#x02010;mediated stress regulation of four subgroup Ib <italic>BHLH</italic> genes in <italic>Arabidopsis thaliana</italic>
+</article-title>. <source>Planta</source>
+<volume>226</volume>: <fpage>897</fpage>&#x02013;<lpage>908</lpage>.<pub-id pub-id-type="pmid">17516080</pub-id></mixed-citation></ref><ref id="nph14318-bib-0071"><mixed-citation publication-type="journal" id="nph14318-cit-0071">
+<string-name>
+<surname>Wickett</surname>
+<given-names>NJ</given-names>
+</string-name>, <string-name>
+<surname>Mirarab</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Nguyen</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Warnow</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Carpenter</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Matasci</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Ayyampalayam</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Barker</surname>
+<given-names>MS</given-names>
+</string-name>, <string-name>
+<surname>Burleigh</surname>
+<given-names>JG</given-names>
+</string-name>, <string-name>
+<surname>Gitzendanner</surname>
+<given-names>MA</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2014</year>
+<article-title>Phylotranscriptomic analysis of the origin and early diversification of land plants</article-title>. <source>Proceedings of the National Academy of Sciences, USA</source>
+<volume>111</volume>: <fpage>E4859</fpage>&#x02013;<lpage>E4868</lpage>.</mixed-citation></ref><ref id="nph14318-bib-0072"><mixed-citation publication-type="journal" id="nph14318-cit-0072">
+<string-name>
+<surname>Xie</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Wu</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Tang</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Luo</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Patterson</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Liu</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Huang</surname>
+<given-names>W</given-names>
+</string-name>, <string-name>
+<surname>He</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Gu</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Li</surname>
+<given-names>S</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2014</year>
+<article-title>SOAPdenovo&#x02010;Trans: <italic>de novo</italic> transcriptome assembly with short RNA&#x02010;Seq reads</article-title>. <source>Bioinformatics</source>
+<volume>30</volume>: <fpage>1660</fpage>&#x02013;<lpage>1666</lpage>.<pub-id pub-id-type="pmid">24532719</pub-id></mixed-citation></ref><ref id="nph14318-bib-0073"><mixed-citation publication-type="journal" id="nph14318-cit-0073">
+<string-name>
+<surname>Yasumura</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Moylan</surname>
+<given-names>EC</given-names>
+</string-name>, <string-name>
+<surname>Langdale</surname>
+<given-names>JA</given-names>
+</string-name>. <year>2005</year>
+<article-title>A conserved transcription factor mediates nuclear control of organelle biogenesis in anciently diverged land plants</article-title>. <source>Plant Cell</source>
+<volume>17</volume>: <fpage>1894</fpage>&#x02013;<lpage>1907</lpage>.<pub-id pub-id-type="pmid">15923345</pub-id></mixed-citation></ref></ref-list></back></article>

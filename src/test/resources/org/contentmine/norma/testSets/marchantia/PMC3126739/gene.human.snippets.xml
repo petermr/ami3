@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippetsTree>
+ <snippets file="epmc/PMC3126739/results/gene/human/results.xml">
+  <result pre="sume a zero-order Markov chain (i.e. a separate set of independent base frequencies π " exact="ROOT " post=" = { π A , π C , π G " xpath="/html[1]/body[1]/div[2]/div[2]/div[9]/p[4]" dictionary="hgnc" dictionaryCheck="false" name="human"/>
+  <result pre="e ancestral root sequence, which requires four independent sets of base frequencies π " exact="ROOT " post=" = { π X|A , π X|C , π X|" xpath="/html[1]/body[1]/div[2]/div[2]/div[9]/p[4]" dictionary="hgnc" dictionaryCheck="false" name="human"/>
+  <result pre=" codon. We model this &quot;second-order&quot; dependence through 16 sets of base frequencies π " exact="ROOT " post=" = { π X|A|Y , π X|C|Y , π &lt;" dictionary="hgnc" dictionaryCheck="false" name="human"/>
+ </snippets>
+</snippetsTree>

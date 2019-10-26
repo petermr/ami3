@@ -1,0 +1,1794 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.1 20151215//EN" "JATS-archivearticle1.dtd"> 
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Archiving and Interchange DTD v3.0 20080202//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName archivearticle3.dtd?><?SourceDTD.Version 3.0?><?ConverterInfo.XSLTName jp2nlmx2.xsl?><?ConverterInfo.Version 1?><front><journal-meta><journal-id journal-id-type="nlm-ta">New Phytol</journal-id><journal-id journal-id-type="iso-abbrev">New Phytol</journal-id><journal-id journal-id-type="doi">10.1111/(ISSN)1469-8137</journal-id><journal-id journal-id-type="publisher-id">NPH</journal-id><journal-title-group><journal-title>The New Phytologist</journal-title></journal-title-group><issn pub-type="ppub">0028-646X</issn><issn pub-type="epub">1469-8137</issn><publisher><publisher-name>John Wiley and Sons Inc.</publisher-name><publisher-loc>Hoboken</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">5638080</article-id><article-id pub-id-type="doi">10.1111/nph.14487</article-id><article-id pub-id-type="publisher-id">NPH14487</article-id><article-id pub-id-type="other">2016-23432</article-id><article-categories><subj-group subj-group-type="overline"><subject>Full Paper</subject></subj-group><subj-group subj-group-type="heading"><subject>Research</subject><subj-group subj-group-type="heading"><subject>Full Papers</subject></subj-group></subj-group></article-categories><title-group><article-title>Early evolution of the land plant circadian clock</article-title></title-group><contrib-group><contrib id="nph14487-cr-0001" contrib-type="author"><name><surname>Linde</surname><given-names>Anna&#x02010;Malin</given-names></name><xref ref-type="aff" rid="nph14487-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="aff" rid="nph14487-aff-0002">
+<sup>2</sup>
+</xref><xref ref-type="author-notes" rid="nph14487-note-1001">
+<sup>&#x02020;</sup>
+</xref></contrib><contrib id="nph14487-cr-0002" contrib-type="author"><name><surname>Eklund</surname><given-names>D. Magnus</given-names></name><contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-0576-7636</contrib-id><xref ref-type="aff" rid="nph14487-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="aff" rid="nph14487-aff-0002">
+<sup>2</sup>
+</xref><xref ref-type="author-notes" rid="nph14487-note-1001">
+<sup>&#x02020;</sup>
+</xref></contrib><contrib id="nph14487-cr-0003" contrib-type="author"><name><surname>Kubota</surname><given-names>Akane</given-names></name><xref ref-type="aff" rid="nph14487-aff-0003">
+<sup>3</sup>
+</xref><xref ref-type="author-notes" rid="nph14487-note-1001">
+<sup>&#x02020;</sup>
+</xref></contrib><contrib id="nph14487-cr-0004" contrib-type="author"><name><surname>Pederson</surname><given-names>Eric R. A.</given-names></name><xref ref-type="aff" rid="nph14487-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="aff" rid="nph14487-aff-0002">
+<sup>2</sup>
+</xref></contrib><contrib id="nph14487-cr-0005" contrib-type="author"><name><surname>Holm</surname><given-names>Karl</given-names></name><xref ref-type="aff" rid="nph14487-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="aff" rid="nph14487-aff-0002">
+<sup>2</sup>
+</xref></contrib><contrib id="nph14487-cr-0006" contrib-type="author"><name><surname>Gyllenstrand</surname><given-names>Niclas</given-names></name><xref ref-type="aff" rid="nph14487-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="aff" rid="nph14487-aff-0002">
+<sup>2</sup>
+</xref></contrib><contrib id="nph14487-cr-0007" contrib-type="author"><name><surname>Nishihama</surname><given-names>Ryuichi</given-names></name><xref ref-type="aff" rid="nph14487-aff-0003">
+<sup>3</sup>
+</xref></contrib><contrib id="nph14487-cr-0008" contrib-type="author"><name><surname>Cronberg</surname><given-names>Nils</given-names></name><xref ref-type="aff" rid="nph14487-aff-0004">
+<sup>4</sup>
+</xref></contrib><contrib id="nph14487-cr-0009" contrib-type="author"><name><surname>Muranaka</surname><given-names>Tomoaki</given-names></name><xref ref-type="aff" rid="nph14487-aff-0005">
+<sup>5</sup>
+</xref></contrib><contrib id="nph14487-cr-0010" contrib-type="author"><name><surname>Oyama</surname><given-names>Tokitaka</given-names></name><xref ref-type="aff" rid="nph14487-aff-0005">
+<sup>5</sup>
+</xref></contrib><contrib id="nph14487-cr-0011" contrib-type="author"><name><surname>Kohchi</surname><given-names>Takayuki</given-names></name><xref ref-type="aff" rid="nph14487-aff-0003">
+<sup>3</sup>
+</xref></contrib><contrib id="nph14487-cr-0012" contrib-type="author" corresp="yes"><name><surname>Lagercrantz</surname><given-names>Ulf</given-names></name><address><email>ulf.lagercrantz@ebc.uu.se</email></address><xref ref-type="aff" rid="nph14487-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="aff" rid="nph14487-aff-0002">
+<sup>2</sup>
+</xref></contrib></contrib-group><aff id="nph14487-aff-0001">
+<label><sup>1</sup></label>
+<named-content content-type="organisation-division">Department of Plant Ecology and Evolution</named-content>
+<named-content content-type="organisation-division">Evolutionary Biology Centre</named-content>
+<institution>Uppsala University</institution>
+<named-content content-type="street">Norbyv&#x000e4;gen 18D</named-content>
+<named-content content-type="post-code">SE&#x02010;75236</named-content>
+<named-content content-type="city">Uppsala</named-content>
+<country country="SE">Sweden</country>
+</aff><aff id="nph14487-aff-0002">
+<label><sup>2</sup></label>
+<institution>The Linnean Centre for Plant Biology in Uppsala</institution>
+<named-content content-type="city">Uppsala</named-content>
+<country country="SE">Sweden</country>
+</aff><aff id="nph14487-aff-0003">
+<label><sup>3</sup></label>
+<named-content content-type="organisation-division">Graduate School of Biostudies</named-content>
+<institution>Kyoto University</institution>
+<named-content content-type="city">Kyoto</named-content>
+<named-content content-type="post-code">606&#x02010;8502</named-content>
+<country country="JP">Japan</country>
+</aff><aff id="nph14487-aff-0004">
+<label><sup>4</sup></label>
+<named-content content-type="organisation-division">Department of Biology</named-content>
+<institution>Lund University</institution>
+<named-content content-type="street">Ecology Building</named-content>
+<named-content content-type="post-code">SE&#x02010;22362</named-content>
+<named-content content-type="city">Lund</named-content>
+<country country="SE">Sweden</country>
+</aff><aff id="nph14487-aff-0005">
+<label><sup>5</sup></label>
+<named-content content-type="organisation-division">Graduate School of Science</named-content>
+<institution>Kyoto University</institution>
+<named-content content-type="city">Kyoto</named-content>
+<named-content content-type="post-code">606&#x02010;8502</named-content>
+<country country="JP">Japan</country>
+</aff><author-notes><corresp id="correspondenceTo"><label>*</label>
+Author for correspondence:<break/><italic>Ulf Lagercrantz</italic><break/><italic>Tel: +46(0)18 471 6418</italic><break/><italic>Email: </italic><email>ulf.lagercrantz@ebc.uu.se</email><break/></corresp><fn fn-type="equal" id="nph14487-note-1001"><label>&#x02020;</label><p>These authors contributed equally to this work.</p></fn></author-notes><pub-date pub-type="epub"><day>28</day><month>2</month><year>2017</year></pub-date><pub-date pub-type="ppub"><month>10</month><year>2017</year></pub-date><volume>216</volume><issue>2</issue><issue-id pub-id-type="doi">10.1111/nph.2017.216.issue-2</issue-id><issue-title content-type="special-issue-title">Plant developmental evolution</issue-title><fpage>576</fpage><lpage>590</lpage><history><date date-type="received"><day>14</day><month>12</month><year>2016</year></date><date date-type="accepted"><day>18</day><month>1</month><year>2017</year></date></history><permissions><!--<copyright-statement content-type="issue-copyright"> Copyright &#x000a9; 2017 New Phytologist Trust <copyright-statement>--><copyright-statement content-type="article-copyright">&#x000a9; 2017 The Authors. New Phytologist &#x000a9; 2017 New Phytologist Trust</copyright-statement><license license-type="creativeCommonsBy"><license-p>This is an open access article under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri content-type="pdf" xlink:type="simple" xlink:href="file:NPH-216-576.pdf"/><abstract id="nph14487-abs-0001"><title>Summary</title><p>
+<list list-type="bullet" id="nph14487-list-0001"><list-item><p>While angiosperm clocks can be described as an intricate network of interlocked transcriptional feedback loops, clocks of green algae have been modelled as a loop of only two genes. To investigate the transition from a simple clock in algae to a complex one in angiosperms, we performed an inventory of circadian clock genes in bryophytes and charophytes. Additionally, we performed functional characterization of putative core clock genes in the liverwort <italic>Marchantia polymorpha</italic> and the hornwort <italic>Anthoceros agrestis</italic>.</p></list-item><list-item><p>Phylogenetic construction was combined with studies of spatiotemporal expression patterns and analysis of <italic>M.&#x000a0;polymorpha</italic> clock gene mutants.</p></list-item><list-item><p>Homologues to core clock genes identified in Arabidopsis were found not only in bryophytes but also in charophytes, albeit in fewer copies. Circadian rhythms were detected for most identified genes in <italic>M.&#x000a0;polymorpha</italic> and <italic>A.&#x000a0;agrestis</italic>, and mutant analysis supports a role for putative clock genes in <italic>M.&#x000a0;polymorpha</italic>.</p></list-item><list-item><p>Our data are in line with a recent hypothesis that adaptation to terrestrial life occurred earlier than previously expected in the evolutionary history of charophyte algae. Both gene duplication and acquisition of new genes was important in the evolution of the plant circadian clock, but gene loss has also contributed to shaping the clock of bryophytes.</p></list-item></list>
+</p></abstract><kwd-group kwd-group-type="author-generated"><kwd id="nph14487-kwd-0001">bryophyte</kwd><kwd id="nph14487-kwd-0002">circadian clock</kwd><kwd id="nph14487-kwd-0003"><italic>Marchantia polymorpha</italic></kwd><kwd id="nph14487-kwd-0004">evolution</kwd><kwd id="nph14487-kwd-0005">transcription factor</kwd></kwd-group><funding-group><award-group><funding-source>Swedish Research Council</funding-source><award-id>2011&#x02010;5609</award-id><award-id>2014&#x02010;522</award-id></award-group><award-group><funding-source>JSPS KAKENHI</funding-source><award-id>24&#x02010;6987</award-id><award-id>25113009</award-id><award-id>26291059</award-id></award-group></funding-group><counts><fig-count count="9"/><table-count count="3"/><page-count count="15"/><word-count count="11317"/></counts><custom-meta-group><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>component-id</meta-name><meta-value>nph14487</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>October 2017</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_NLMPMC version:5.2.1 mode:remove_FC converted:12.10.2017</meta-value></custom-meta></custom-meta-group></article-meta></front><body><sec id="nph14487-sec-0001"><title>Introduction</title><p>Adaptation to changing environments is critical to all life. Some of these changes are predictable, such as day&#x02013;night cycles and the ever&#x02010;changing seasons. Accordingly, organisms from all kingdoms of life have developed mechanisms to anticipate such predictable changes. Intrinsic clocks that generate circadian rhythms are present in most organisms, from cyanobacteria to land plants and animals. Although the overall architecture is generally conserved, the key genes involved are generally not, suggesting multiple independent origins of circadian clocks (Dunlap, <xref rid="nph14487-bib-0018" ref-type="ref">1999</xref>; Young &#x00026; Kay, <xref rid="nph14487-bib-0085" ref-type="ref">2001</xref>; McClung, <xref rid="nph14487-bib-0050" ref-type="ref">2013</xref>).</p><p>The circadian clock is a self&#x02010;sustaining oscillator and the <italic>c</italic>. 24&#x000a0;h rhythm results mainly from transcriptional and translational feedback loops (Harmer, <xref rid="nph14487-bib-0031" ref-type="ref">2009</xref>). The clock must interact with a fluctuating environment and needs to be adjusted daily. The major environmental cues for this entrainment are light and temperature (Johnson <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0042" ref-type="ref">2003</xref>). The clock also has to cope with unpredictable variations in sunlight and temperature and is generally thought to have evolved towards a more complex and thereby flexible and robust architecture (Rand <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0063" ref-type="ref">2004</xref>; Tsai <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0077" ref-type="ref">2008</xref>).</p><p>Circadian regulation is important in the control of a number of diverse processes. In vascular plants, well&#x02010;studied examples include stomatal opening, leaf movement, growth, metabolism, induction of flowering and response to stress (Greenham &#x00026; McClung, <xref rid="nph14487-bib-0028" ref-type="ref">2015</xref>). Correspondingly, thousands of genes are under circadian control (Covington <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0510" ref-type="ref">2008</xref>; Michael <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0501" ref-type="ref">2008</xref>). Disruption of the circadian clock has also been shown to confer fitness costs, implicating its importance (Yerushalmi &#x00026; Green, <xref rid="nph14487-bib-0084" ref-type="ref">2009</xref>).</p><p>The plant circadian clock has been intensely studied in a few model species, mainly the angiosperm <italic>Arabidopsis thaliana</italic>, and the green algae <italic>Chlamydomonas reinhardtii</italic> and <italic>Ostreococcus tauri</italic>. Recent models of the Arabidopsis clock describe it as an intricate network of interlocked transcriptional feedback loops (Pokhilko <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0062" ref-type="ref">2013</xref>; Fogelmark &#x00026; Troein, <xref rid="nph14487-bib-0023" ref-type="ref">2014</xref>; De Caluw&#x000e9; <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0015" ref-type="ref">2016</xref>). The main components of those models include a set of single MYB domain transcription factors, a family of PSEUDO&#x02010;RESPONSE REGULATORs (PRRs), and a few plant&#x02010;specific genes with unknown biochemical function (Table&#x000a0;<xref rid="nph14487-tbl-0001" ref-type="table-wrap">1</xref>).</p><table-wrap id="nph14487-tbl-0001" xml:lang="en" orientation="portrait" position="float"><label>Table 1</label><caption><p>Clock gene homologues in <italic>Chlamydomonas reinhardtii</italic> (Cr), <italic>Ostreococcus tauri</italic> (Ot), <italic>Klebsormidium flaccidum</italic> (Kf), <italic>Marchantia polymorpha</italic> (Mp), <italic>Anthoceros agrestis</italic> (Aa), <italic>Physcomitrella patens</italic> (Pp), <italic>Selaginella moellendorffii</italic> (Sm), <italic>Picea abies</italic> (Pa), <italic>Oryza sativa</italic> (Os) and <italic>Arabidopsis thaliana</italic> (At)</p></caption><table frame="hsides" rules="groups"><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><thead valign="top"><tr style="border-bottom:solid 1px #000000"><th align="left" rowspan="2" valign="top" colspan="1">Species<xref ref-type="fn" rid="nph14487-note-0002">a</xref>
+</th><th align="left" colspan="2" style="border-bottom:solid 1px #000000" valign="top" rowspan="1">RVE</th><th align="left" colspan="2" style="border-bottom:solid 1px #000000" valign="top" rowspan="1">PRR</th><th align="left" rowspan="2" valign="top" colspan="1">ELF3</th><th align="left" rowspan="2" valign="top" colspan="1">ELF4</th><th align="left" rowspan="2" valign="top" colspan="1">LUX</th><th align="left" rowspan="2" valign="top" colspan="1">GI</th><th align="left" rowspan="2" valign="top" colspan="1">ZTL</th></tr><tr style="border-bottom:solid 1px #000000"><th align="left" valign="top" rowspan="1" colspan="1">CCA1&#x02010;clade</th><th align="left" valign="top" rowspan="1" colspan="1">LCL&#x02010;clade</th><th align="left" valign="top" rowspan="1" colspan="1">TOC1&#x02010;clade</th><th align="left" valign="top" rowspan="1" colspan="1">PRR&#x02010;clade</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">Cr</td><td align="left" rowspan="1" colspan="1">1<xref ref-type="fn" rid="nph14487-note-0003">b</xref>
+</td><td align="left" rowspan="1" colspan="1">2<xref ref-type="fn" rid="nph14487-note-0004">c</xref>
+</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">1<xref ref-type="fn" rid="nph14487-note-0006">e</xref>
+</td><td align="left" rowspan="1" colspan="1">2<xref ref-type="fn" rid="nph14487-note-0006">e</xref>
+</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">Ot</td><td align="left" rowspan="1" colspan="1">1<xref ref-type="fn" rid="nph14487-note-0003">b</xref>
+</td><td align="left" rowspan="1" colspan="1">1<xref ref-type="fn" rid="nph14487-note-0004">c</xref>
+</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">Kf</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">2</td><td align="left" rowspan="1" colspan="1">2</td><td align="left" rowspan="1" colspan="1">0<xref ref-type="fn" rid="nph14487-note-0005">d</xref>
+</td><td align="left" rowspan="1" colspan="1">1</td></tr><tr><td align="left" rowspan="1" colspan="1">Mp</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td></tr><tr><td align="left" rowspan="1" colspan="1">Aa</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">2</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td></tr><tr><td align="left" rowspan="1" colspan="1">Pp</td><td align="left" rowspan="1" colspan="1">2</td><td align="left" rowspan="1" colspan="1">3</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">4</td><td align="left" rowspan="1" colspan="1">3</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">3</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">0</td></tr><tr><td align="left" rowspan="1" colspan="1">Sm</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">2</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">2</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td></tr><tr><td align="left" rowspan="1" colspan="1">Pa</td><td align="left" rowspan="1" colspan="1">3</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">2</td><td align="left" rowspan="1" colspan="1">0</td><td align="left" rowspan="1" colspan="1">5</td><td align="left" rowspan="1" colspan="1">2</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td></tr><tr><td align="left" rowspan="1" colspan="1">Os</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">6</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">4</td><td align="left" rowspan="1" colspan="1">2</td><td align="left" rowspan="1" colspan="1">3</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">3</td></tr><tr><td align="left" rowspan="1" colspan="1">At</td><td align="left" rowspan="1" colspan="1">6</td><td align="left" rowspan="1" colspan="1">5</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">4</td><td align="left" rowspan="1" colspan="1">2</td><td align="left" rowspan="1" colspan="1">5</td><td align="left" rowspan="1" colspan="1">2</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">3</td></tr></tbody></table><table-wrap-foot><fn id="nph14487-note-0002"><label>a</label><p>Corresponding locus names and accession numbers are found in Supporting Information Table&#x000a0;<xref rid="nph14487-sup-0001" ref-type="supplementary-material">S1</xref>.</p></fn><fn id="nph14487-note-0003"><label>b</label><p>These genes could not be assigned to either the CCA1/LHY or the LCL clade.</p></fn><fn id="nph14487-note-0004"><label>c</label><p>These genes could not be assigned to either the PRR or the TOC1 clade.</p></fn><fn id="nph14487-note-0005"><label>d</label><p>GI was not found in <italic>K.&#x000a0;flaccidum</italic>, but was identified in other charophytes.</p></fn><fn id="nph14487-note-0006"><label>e</label><p>Potential homologue.</p></fn></table-wrap-foot><permissions><copyright-holder>John Wiley &#x00026; Sons, Ltd</copyright-holder></permissions></table-wrap><p>The components of the Arabidopsis clock can be classified according to their phase of expression. The morning&#x02010;phased genes <italic>CIRCADIAN CLOCK&#x02010;ASSOCIATED 1 (CCA1)</italic> and <italic>LATE ELONGATED HYPOCOTYL (LHY)</italic> are two MYB&#x02010;like transcription factors that function mainly as repressors of day&#x02010; and evening&#x02010;phased genes (Wang <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0079" ref-type="ref">1997</xref>; Schaffer <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0068" ref-type="ref">1998</xref>; Mizoguchi <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0055" ref-type="ref">2002</xref>; Fogelmark &#x00026; Troein, <xref rid="nph14487-bib-0023" ref-type="ref">2014</xref>; Kamioka <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0043" ref-type="ref">2016</xref>). They bind to a motif coined the evening element (EE; Harmer <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0032" ref-type="ref">2000</xref>) that is present in the promoters of several day&#x02010; and evening&#x02010;phased genes, as well as in a large number of putative output genes.</p><p>The evening&#x02010;phased component includes three proteins that form the evening complex (EC). The complex contains the MYB transcription factor LUX ARRHYTHMO (LUX), and the two proteins EARLY FLOWERING 3 (ELF3)<italic>,</italic> and ELF4 (Hicks <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0034" ref-type="ref">2001</xref>; Doyle <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0017" ref-type="ref">2002</xref>; Hazen <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0033" ref-type="ref">2005</xref>; Nusinow <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0059" ref-type="ref">2011</xref>). The EC functions as a repressor of at least two <italic>PRR</italic> genes as well as <italic>LUX</italic> itself (Nusinow <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0059" ref-type="ref">2011</xref>; Chow <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0011" ref-type="ref">2012</xref>).</p><p>The family of <italic>PRR</italic> genes comprise five members in Arabidopsis: <italic>PRR1</italic>,<italic> PRR3</italic>,<italic> PRR5</italic>,<italic> PRR7</italic>, and <italic>PRR9</italic>. <italic>PRR1</italic> is also known as <italic>TIMING OF CAB EXPRESSION 1</italic> (<italic>TOC1</italic>), which, together with CCA1, constituted the first conceptual model of the Arabidopsis clock (Alabad&#x000ed; <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0002" ref-type="ref">2001</xref>). The expression of <italic>PRR</italic> genes ranges from morning to evening, with <italic>PRR9</italic> peaking in the morning, <italic>PRR5</italic> and <italic>PRR7</italic> around noon, and <italic>PRR3</italic> and <italic>TOC1</italic> around dusk (Matsushika <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0049" ref-type="ref">2000</xref>). PRR proteins are in recent models incorporated as transcriptional repressors of <italic>CCA1/LHY</italic> and other <italic>PRR</italic> genes (Fogelmark &#x00026; Troein, <xref rid="nph14487-bib-0023" ref-type="ref">2014</xref>).</p><p>The proteins described are reported to function as repressors. However, recently a family of MYB transcription factors related to CCA1/LHY was identified (Rawat <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0064" ref-type="ref">2011</xref>; Hsu <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0036" ref-type="ref">2013</xref>), some of which were reported to work as activators in the circadian clock. These <italic>REVEILLE</italic> (<italic>RVE</italic>) genes are transcribed mainly in the morning, but the protein amounts of at least some members peak in the afternoon. RVE8 and probably RVE4 and&#x000a0;RVE6 bind to the same EE as CCA1/LHY and induce evening&#x02010;phased genes. Conversely, one or more PRR proteins repress <italic>RVE8</italic> and possibly other <italic>RVE</italic> genes.</p><p>Additionally, ZEITLUPE (ZTL), an F&#x02010;box protein, and <italic>GIGANTEA</italic> (<italic>GI</italic>), encoding a large protein with unclear biochemical function, are implicated to function in the circadian clock (Fowler <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0025" ref-type="ref">1999</xref>; Somers <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0073" ref-type="ref">2000</xref>). GI interacts with ZTL which, in turn, regulates the stability of at least TOC1 and PRR5 (M&#x000e1;s <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0047" ref-type="ref">2003</xref>; Kim <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0044" ref-type="ref">2007</xref>). The activity of <italic>GI</italic> is under clock control, including repression by EC and CCA1/LHY and probably also activation by RVE8 (Berns <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0003" ref-type="ref">2014</xref>). GI is also important for flowering time regulation through its interaction with the ZTL paralogue FLAVIN&#x02010;BINDING, KELCH REPEAT, F&#x02010;BOX1 (FKF1; Sawa <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0067" ref-type="ref">2007</xref>). The GI&#x02013;FKF1 complex controls the degradation of CYCLING DOF FACTOR proteins, which in turn are repressors of the flowering time gene <italic>CONSTANS</italic> (Fornara <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0024" ref-type="ref">2009</xref>).</p><p>The clocks in green algae differ considerably from the angiosperm clock (Matsuo <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0048" ref-type="ref">2008</xref>; Corellou <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0012" ref-type="ref">2009</xref>). In both <italic>C.&#x000a0;reinhardtii</italic> and <italic>O.&#x000a0;tauri</italic>, putative homologues to <italic>CCA1</italic> and <italic>TOC1</italic> have been identified, however, no obvious <italic>ELF3</italic>,<italic> ELF4</italic>,<italic> GI</italic> or <italic>ZTL</italic> homologues could be found (Matsuo <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0048" ref-type="ref">2008</xref>; Corellou <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0012" ref-type="ref">2009</xref>). Even though the identification of clock components in these algae might be incomplete, comparatively simple models can be built that reproduce the dynamics of their circadian clocks. For example, the <italic>O.&#x000a0;tauri</italic> clock was successfully modelled as a feedback loop between a <italic>CCA1</italic> and a <italic>TOC1</italic> homologue (Troein <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0076" ref-type="ref">2011</xref>).</p><p>Comparisons of circadian clock genes in green algae and angiosperms suggest that additional genes have been recruited during plant evolution, resulting in successively more complex clocks with multiple feedback loops. However, when and how these genes were recruited is currently unknown. Land plants form a monophyletic group, which nests within a freshwater Charophycean algal clade, implying that land plants evolved from an ancestral freshwater or terrestrial alga (Bowman, <xref rid="nph14487-bib-0004" ref-type="ref">2013</xref>; and references therein; Harholt <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0030" ref-type="ref">2016</xref>). Liverworts, mosses and hornworts are gametophyte&#x02010;dominant land plants collectively known as bryophytes, and comprise the closest extant relatives to the first embryophytic land plants (Shaw <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0070" ref-type="ref">2011</xref>). Their phylogenetic position makes them crucial for studying the evolution of biological processes from freshwater plants to land plants, and from relatively simple basal land plants to more complex forms. A few studies investigating clock genes in the moss <italic>Physcomitrella patens</italic> have concluded that although multiple <italic>PRR</italic> genes and homologues to <italic>CCA1</italic> and the EC genes were identified, orthologues to important clock genes such as <italic>GI</italic>,<italic> TOC1</italic> and <italic>ZTL</italic> were not (Okada <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0060" ref-type="ref">2009</xref>; Holm <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0035" ref-type="ref">2010</xref>; Satbhai <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0066" ref-type="ref">2011</xref>).</p><p>Even though the circadian clock has been studied in a few plant model species over the last decades, little is known of clock function in the bryophytes. Because of their key phylogenetic position, bryophytes have the potential to reveal the mechanisms regulating the ancestral clock present in the first plants that colonized land. This study gives a comparative overview of charophyte and bryophyte clock gene families, spanning over all three major clades of bryophytes &#x02013; mosses, liverworts and hornworts &#x02013; and suggests that most components present in angiosperm circadian clocks were already recruited in the ancestors of land plants (the charophytes). Gene duplication has generally resulted in an increased complexity of the plant circadian clock, but independent gene losses in various lineages have shaped the architecture of the individual clock networks.</p></sec><sec id="nph14487-sec-0002"><title>Materials and Methods</title><sec id="nph14487-sec-0003"><title>Plant material and growth conditions</title><p>
+<italic>Marchantia polymorpha</italic> ssp. <italic>ruderalis</italic> from Uppsala, Sweden, referred to as Upp, was grown aseptically on agar solidified Gamborg's B5 (Gamborg <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0026" ref-type="ref">1968</xref>; PhytoTechnology Laboratories, Lenexa, KS, USA), pH 5.5. Strains Takaragaike (Tak) &#x02010;1 and Tak&#x02010;2 were grown in a similar way in the Kyoto laboratory, and used as indicated in the text. Plants were grown under cool white fluorescent light (50&#x02013;60&#x000a0;&#x003bc;mol&#x000a0;photons&#x000a0;m<sup>&#x02212;2</sup>&#x000a0;s<sup>&#x02212;1</sup>) in 16&#x000a0;:&#x000a0;8&#x000a0;h, light&#x000a0;:&#x000a0;dark cycles at 20&#x000b0;C (Uppsala), or in continuous light at 22&#x000b0;C (Kyoto).</p></sec><sec id="nph14487-sec-0004"><title>RNA isolation and quantitative reverse transcription polymerase chain reaction (qRT&#x02010;PCR)</title><p>
+<italic>Marchantia polymorpha</italic> (Upp) and <italic>Anthoceros agrestis</italic> were grown on half&#x02010;strength Gamborg's B5 with 1% sucrose in growth cabinets (MLR&#x02010;350; Sanyo, Osaka, Japan) with fluorescent tubes producing 40&#x02013;50&#x000a0;&#x003bc;mol&#x000a0;m<sup>&#x02212;2</sup>&#x000a0;s<sup>&#x02212;1,</sup> red&#x000a0;: far red &#x02248;&#x000a0;7.0 at 18&#x000b0;C. Plants were entrained in neutral day (ND; 12&#x000a0;:&#x000a0;12&#x000a0;h, light&#x000a0;:&#x000a0;dark cycles), and then transferred to constant darkness (DD), constant light (LL) or ND. Total RNA extraction and qRT&#x02010;PCR were performed as previously described (Holm <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0035" ref-type="ref">2010</xref>), with PCR primers listed in Supporting Information Table&#x000a0;<xref rid="nph14487-sup-0001" ref-type="supplementary-material">S2</xref>. Primers targeting Mp&#x003b2;&#x02010;<italic>tubulin2</italic> (Mp<italic>TUB2</italic>; Mapoly0158s0010.1; Buschmann <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0009" ref-type="ref">2016</xref>), Mp<italic>ACTIN</italic> (Mp<italic>ACT</italic>) and Mp<italic>ADENINE PHOSPHORIBOSYL TRANSFERASE</italic> were utilized for normalization of gene expression (Saint&#x02010;Marcoux <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0065" ref-type="ref">2015</xref>). Corresponding primers for <italic>A.&#x000a0;agrestis</italic> targeted Aa<italic>ACT</italic> and Aa<italic>TUB</italic>. Normalization of gene expression was performed using analysis of covariance (ANCOVA) in R (v.3.0.2; R Core Team, <xref rid="nph14487-bib-0509" ref-type="ref">2016</xref>), where the response variable was the Ct value of the target gene and explanatory variables Ct values from the reference genes plus time. Residuals from the ANCOVA analyses were used for plotting and analysis of rhythmic expression using JTK_CYCLE (Hughes <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0037" ref-type="ref">2010</xref>).</p><p>RNA isolation and gene expression analyses in <italic>M.&#x000a0;polymorpha</italic> (Tak) were performed as described previously (Kubota <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0045" ref-type="ref">2014</xref>), with at least two technical replicates for each cDNA sample. Primers are shown in Table&#x000a0;<xref rid="nph14487-sup-0001" ref-type="supplementary-material">S2</xref>. Expression data were normalized against <italic>ELONGATION FACTOR 1</italic>&#x003b1; (Mp<italic>EF1</italic>). Relative expression values for each gene and sample were then calculated as the average of three biological replicates.</p></sec><sec id="nph14487-sec-0005"><title>Cloning and construction of plasmids</title><p>To generate targeting vectors for Mp<italic>PRR</italic>, Mp<italic>RVE</italic>, and Mp<italic>TOC1</italic>,<italic> c</italic>. 3&#x000a0;kb flanking regions were PCR&#x02010;amplified from Tak&#x02010;1 genomic DNA. Primers are listed in Table&#x000a0;<xref rid="nph14487-sup-0001" ref-type="supplementary-material">S2</xref>. The PCR&#x02010;amplified fragments were cloned into the <italic>Pac</italic>I and <italic>Asc</italic>I sites of pJHY&#x02010;TMp1 (Ishizaki <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0039" ref-type="ref">2013</xref>), using the In&#x02010;Fusion HD cloning kit (Clontech, Kusatsu, Japan). The resulting plasmids were introduced into sporelings derived from crosses between Tak&#x02010;1 and Tak&#x02010;2 (Ishizaki <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0038" ref-type="ref">2008</xref>). Screening for correctly targeted lines was performed by genomic PCR as described previously (Ishizaki <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0039" ref-type="ref">2013</xref>; see later Figs <xref rid="nph14487-sup-0001" ref-type="supplementary-material">S8</xref>&#x02013;<xref rid="nph14487-sup-0001" ref-type="supplementary-material">S10</xref>). For the complementation test of Mp<italic>rve</italic>
+<sup><italic>ko</italic></sup> and Mp<italic>prr</italic>
+<sup><italic>ko</italic></sup>, genomic fragments including entire regions of Mp<italic>RVE</italic> or Mp<italic>PRR</italic> were PCR&#x02010;amplified from Tak&#x02010;1 genomic DNA and subsequently cloned into pENTR/D&#x02010;TOPO (Life Technologies, Yokohama, Japan). Fragments were subcloned into pMpGWB301 (Ishizaki <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0040" ref-type="ref">2015</xref>) in order to generate binary plasmids harbouring Mp<italic>RVE</italic>
+<sub><italic>pro</italic></sub>
+<italic>:g</italic>Mp<italic>RVE</italic> or Mp<italic>PRR</italic>
+<sub><italic>pro</italic></sub>
+<italic>:g</italic>Mp<italic>PRR</italic>. The resulting plasmids were introduced into corresponding knockout mutants, Mp<italic>rve</italic>
+<sup><italic>ko</italic></sup> or Mp<italic>prr</italic>
+<sup><italic>ko</italic></sup>, as described previously (Kubota <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0508" ref-type="ref">2013</xref>).</p><p>Binary promoter:<italic>LUC</italic> plasmids were built by PCR&#x02010;amplifying regulatory regions from genomic DNA (Upp) extracted using the DNeasy Plant Mini Kit (Qiagen). Fragments were subcloned into pMpGWB431 (Nakajima <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0058" ref-type="ref">2010</xref>; Ishizaki <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0040" ref-type="ref">2015</xref>), via pENTR/D&#x02010;TOPO (Invitrogen). These plasmids were transformed into sporelings (Upp) as previously described (Ishizaki <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0038" ref-type="ref">2008</xref>). To generate the <italic>35S</italic>
+<sub><italic>pro</italic></sub>
+<italic>:LUC</italic> construct, a <italic>Hin</italic>dIII/<italic>Sma</italic>I fragment from pBI221 (Takara Bio, Kusatsu, Japan) was blunt&#x02010;ended and inserted into the <italic>Dra</italic>I/<italic>Eco</italic>RV site of pENTR1a (Life technologies). This fragment was then subcloned into pMpGWB331 (Ishizaki <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0040" ref-type="ref">2015</xref>). <italic>35S</italic>
+<sub><italic>pro</italic></sub>
+<italic>:LUC</italic> was introduced into Tak&#x02010;1, Mp<italic>toc1</italic>
+<sup><italic>ko</italic></sup>
+<italic>,</italic> Mp<italic>rve</italic>
+<sup><italic>ko</italic></sup> or Mp<italic>prr</italic>
+<sup><italic>ko</italic></sup> as described previously (Kubota <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0508" ref-type="ref">2013</xref>).</p></sec><sec id="nph14487-sec-0006"><title>Luciferase expression analysis</title><p>Gemmalings entrained in ND at 20&#x000b0;C on medium containing 1% sucrose (Uppsala) or 22&#x000b0;C (Kyoto) for 4&#x02013;7 d were sprayed with a 1&#x000a0;mM solution of D&#x02010;Luciferin (Pierce D&#x02010;Luciferin; Fisher Scientific, G&#x000f6;teborg, Sweden). After an additional 1&#x02013;2&#x000a0;d in ND, bioluminescence imaging was performed. In Kyoto, a dish monitoring system with photomultiplier tubes (R329P; Hamamatsu Photonics K.K., Hamatsu City, Japan) was used, as described in Miwa <italic>et&#x000a0;al</italic>. (<xref rid="nph14487-bib-0054" ref-type="ref">2006</xref>). To reduce fluorescent signals form Chl, a short&#x02010;pass filter (VS0630; Asahi Spectra Co. Ltd, Tokyo, Japan) was used. Each dish was subjected to 30s measurement of bioluminescence every 20&#x000a0;min. In Uppsala, plates were imaged with an ImagEM charge&#x02010;coupled device (CCD) camera (Hamamatsu Photonics K.K.) in a light contained box equipped with blue and red LEDs. Light intensity was set to equal amounts of blue and red light with a total intensity of 50&#x000a0;&#x003bc;mol&#x000a0;m<sup>&#x02212;2</sup>&#x000a0;s<sup>&#x02212;1</sup>. Ten&#x02010;minute exposures were taken every hour with the light turned off starting 3&#x000a0;min before exposure during light periods. Intensity data were extracted with I<sc>mage</sc>J (Abramoff <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0001" ref-type="ref">2004</xref>), and analysed with Spectrum Resampling (Costa <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0013" ref-type="ref">2013</xref>). For 12&#x000a0;h T&#x02010;cycle experiments, light intensity was reduced to 5&#x000a0;&#x003bc;mol&#x000a0;m<sup>&#x02212;2</sup>&#x000a0;s<sup>&#x02212;1</sup> to increase the possibility of revealing frequency demultiplication.</p><p>To visualize spatial <italic>LUC</italic> expression, patterns plants were sprayed with 1&#x000a0;mM D&#x02010;Luciferin and incubated for 12&#x000a0;h in continuous light. Plants were then placed in darkness for 5&#x000a0;min, and imaged with the CCD camera for 10&#x000a0;min.</p></sec></sec><sec id="nph14487-sec-0007"><title>Results</title><sec id="nph14487-sec-0008"><title>Identification of putative bryophyte and charophyte clock genes</title><p>To trace the origin of the plant circadian clock, we performed an inventory of homologues to known plant circadian clock genes in available bryophyte and charophyte genomes (Table&#x000a0;<xref rid="nph14487-tbl-0001" ref-type="table-wrap">1</xref>; Methods S1). To identify orthologues and examine the evolutionary relationship of plant circadian clock genes, phylogenetic trees were constructed based on alignments shown in Fig.&#x000a0;<xref rid="nph14487-sup-0001" ref-type="supplementary-material">S1</xref>. The results are presented below on a gene family basis.</p><sec id="nph14487-sec-0009"><title>REVEILLE</title><p>The 11 members of the <italic>RVE</italic> family in Arabidopsis &#x02013; <italic>CCA1</italic>,<italic> LHY</italic> and nine <italic>RVE</italic> genes &#x02013; all encode proteins with a single highly conserved MYB/SANT domain (SHAQKYF class; Rawat <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0064" ref-type="ref">2011</xref>; Farinas &#x00026; Mas, <xref rid="nph14487-bib-0021" ref-type="ref">2011</xref>). Two subgroups have been named in this family, one comprising <italic>CCA1</italic>,<italic> LHY</italic>,<italic> RVE1</italic>,<italic> 2</italic>,<italic> 7</italic> and <italic>RVE7&#x02010;like</italic> and the other <italic>RVE3</italic>,<italic> 4</italic>,<italic> 5</italic>,<italic> 6</italic> and <italic>8</italic>. The second group, referred to as the <italic>LCL</italic> subfamily, shares an additional conserved region outside the MYB domain (Farinas &#x00026; Mas, <xref rid="nph14487-bib-0021" ref-type="ref">2011</xref>).</p><p>As previously reported, the green algae <italic>C.&#x000a0;reinhardtii</italic> and <italic>O.&#x000a0;tauri</italic> contain single homologues that are similar to genes in the CCA1/LHY clade (Matsuo <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0048" ref-type="ref">2008</xref>; Corellou <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0012" ref-type="ref">2009</xref>). However, in the charophyte <italic>Klebsormidium flaccidum</italic> two homologues were found, one in the CCA1/LHY clade (Kf<italic>CCA1</italic>) and the other in the LCL clade (Kf<italic>RVE</italic>; Fig.&#x000a0;<xref rid="nph14487-fig-0001" ref-type="fig">1</xref>; Table&#x000a0;<xref rid="nph14487-tbl-0001" ref-type="table-wrap">1</xref>). Likewise, <italic>A.&#x000a0;agrestis</italic> and <italic>P.&#x000a0;patens</italic> contain genes from both groups (Fig.&#x000a0;<xref rid="nph14487-fig-0001" ref-type="fig">1</xref>; Table&#x000a0;<xref rid="nph14487-tbl-0001" ref-type="table-wrap">1</xref>).</p><fig fig-type="Figure" xml:lang="en" id="nph14487-fig-0001" orientation="portrait" position="float"><label>Figure 1</label><caption><p>Inferred phylogeny of homologues to the <styled-content style="fixed-case">CCA</styled-content>/<styled-content style="fixed-case">LHY</styled-content>/<styled-content style="fixed-case">RVE</styled-content> gene family. Separate trees were constructed from the complete alignment (a), the <italic><styled-content style="fixed-case">CCA</styled-content>1</italic> subfamily (b), and the <styled-content style="fixed-case">LCL</styled-content> subfamily (c). Trees were constructed using MrBayes and Phy<styled-content style="fixed-case">ML</styled-content> on an amino acid alignment of proteins retrieved from <italic>Arabidopsis thaliana</italic> (At), <italic>Oryza sativa</italic> (Os), <italic>Picea abies</italic> (Pa), <italic>Selaginella moellendorffii</italic> (Sm), <italic>Physcomitrella patens</italic> (Pp), <italic>Marchantia polymorpha</italic> (Mp), <italic>Anthoceros agrestis</italic> (Aa) and <italic>Klebsormidium flaccidum</italic> (Kf). Bayesian trees are shown with posterior probabilities (above) and bootstrap proportions from Phy<styled-content style="fixed-case">ML</styled-content> analysis (below) for each node. Nodes with conflicting support from the two methods were collapsed. Branch length is relative to the thickness of individual branches: the shortest branches have a straight line and the longest are increasingly triangular. &#x02020;Mp indicates loss of a <styled-content style="fixed-case">CCA</styled-content>1/<styled-content style="fixed-case">LHY</styled-content> homologue in Mp (as well as all surveyed liverworts); &#x02020;Pa indicates loss of <styled-content style="fixed-case">LCL</styled-content>&#x02010;like genes in Pa. The <styled-content style="fixed-case">MYB</styled-content>/<styled-content style="fixed-case">SANT</styled-content> domain includes, in the <styled-content style="fixed-case">LCL</styled-content> group, a <styled-content style="fixed-case">SHAQKYF</styled-content>&#x02010;version of the <styled-content style="fixed-case">SHAQKYF</styled-content>&#x02010;motif, while the <styled-content style="fixed-case">CCA</styled-content>1 subclade shares <styled-content style="fixed-case">SHAQKFF</styled-content>.</p></caption><graphic id="nlm-graphic-1" xlink:href="NPH-216-576-g001"/></fig><p>In the liverwort <italic>M.&#x000a0;polymorpha</italic> only one homologue was identified, Mp<italic>RVE</italic>, which clustered with the <italic>LCL</italic> clade in a phylogenetic analysis (Fig.&#x000a0;<xref rid="nph14487-fig-0001" ref-type="fig">1</xref>; Table&#x000a0;<xref rid="nph14487-tbl-0001" ref-type="table-wrap">1</xref>), suggesting that <italic>M.&#x000a0;polymorpha</italic> has lost the <italic>CCA1</italic>/<italic>LHY</italic>&#x02010;type gene. Based on data from the oneKP database, the presence of one <italic>LCL</italic> gene and no <italic>CCA1</italic>/<italic>LHY</italic> gene is shared among all 28 deposited liverwort species, while mosses and hornworts contain both <italic>LCL</italic>&#x02010;like and <italic>CCA1</italic>/<italic>LHY</italic>&#x02010;like homologues.</p></sec><sec id="nph14487-sec-0010"><title>PSEUDO&#x02010;RESPONSE REGULATORS</title><p>PSEUDO&#x02010;RESPONSE REGULATOR proteins contain a response regulator receiver (REC) domain and a CONSTANS, CONSTANS&#x02010;like and TOC1 (CCT) domain (Strayer <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0500" ref-type="ref">2000</xref>). This family consists of five members in Arabidopsis: <italic>TOC1</italic>/<italic>PRR1</italic>,<italic> PRR3</italic>,<italic> PRR5</italic>,<italic> PRR7</italic> and <italic>PRR9</italic> (Matsushika <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0049" ref-type="ref">2000</xref>).</p><p>One and two genes from this family are found in <italic>O.&#x000a0;tauri</italic> and <italic>C.&#x000a0;reinhardtii</italic>, respectively (Table&#x000a0;<xref rid="nph14487-tbl-0001" ref-type="table-wrap">1</xref>; Matsuo <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0048" ref-type="ref">2008</xref>; Corellou <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0012" ref-type="ref">2009</xref>), but it is unclear whether these are more closely related to <italic>TOC1</italic> or to the other <italic>PRR</italic>s. <italic>K. flaccidum</italic> contains two <italic>PRR</italic> family genes, one in a clade with At<italic>TOC1</italic> and the other one in a clade with At<italic>PRR3</italic>/<italic>7</italic> (Fig.&#x000a0;<xref rid="nph14487-fig-0002" ref-type="fig">2</xref>; Table&#x000a0;<xref rid="nph14487-tbl-0001" ref-type="table-wrap">1</xref>). In <italic>A.&#x000a0;agrestis</italic>, only one <italic>PRR</italic> gene was found, belonging to the <italic>PRR3/7</italic> clade (Aa<italic>PRR</italic>; Fig.&#x000a0;<xref rid="nph14487-fig-0002" ref-type="fig">2</xref>), while in <italic>P.&#x000a0;patens</italic>, four <italic>PRR</italic> genes, all belonging to the PRR3/7 clade, were identified (Fig.&#x000a0;<xref rid="nph14487-fig-0002" ref-type="fig">2</xref>; Table&#x000a0;<xref rid="nph14487-tbl-0001" ref-type="table-wrap">1</xref>). In oneKP database searches, <italic>TOC1</italic>&#x02010;related genes were not found in moss or hornwort transcriptomes (41 and eight species, respectively).</p><fig fig-type="Figure" xml:lang="en" id="nph14487-fig-0002" orientation="portrait" position="float"><label>Figure 2</label><caption><p>Inferred phylogeny of homologues to the <styled-content style="fixed-case">PSEUDO</styled-content>&#x02010;<styled-content style="fixed-case">RESPONSE REGULATOR</styled-content> (<styled-content style="fixed-case">PRR</styled-content>) gene family. Separate trees were constructed from the complete alignment (a), the <styled-content style="fixed-case">PRR</styled-content> subfamily (b), and the <styled-content style="fixed-case">TOC</styled-content>1 subfamily (c). Trees were constructed using MrBayes and Phy<styled-content style="fixed-case">ML</styled-content> on an amino acid alignment of proteins retrieved from <italic>Arabidopsis thaliana</italic> (At), <italic>Oryza sativa</italic> (Os), <italic>Picea abies</italic> (Pa), <italic>Selaginella moellendorffii</italic> (Sm), <italic>Physcomitrella patens</italic> (Pp), <italic>Marchantia polymorpha</italic> (Mp), <italic>Anthoceros agrestis</italic> (Aa), and <italic>Klebsormidium flaccidum</italic> (Kf). The Bayesian tree is shown with posterior probabilities (above) and bootstrap proportions from Phy<styled-content style="fixed-case">ML</styled-content> analysis (below) for each node. Nodes with conflicting support from the two methods were collapsed. Branch length is relative to the thickness of individual branches: the shortest branches have a straight line and the longest are increasingly triangular. &#x02020;Aa and &#x02020;Pp indicate loss of <styled-content style="fixed-case">TOC</styled-content>1 in Aa and Pp, respectively (as well as all surveyed hornworts and mosses).</p></caption><graphic id="nlm-graphic-3" xlink:href="NPH-216-576-g002"/></fig><p>In <italic>M.&#x000a0;polymorpha</italic> two <italic>PRR</italic> genes were identified of which one clustered in a clade with AtTOC1 (Mp<italic>TOC1</italic>), and one with the AtPRR3/7 clade (Mp<italic>PRR</italic>; Fig.&#x000a0;<xref rid="nph14487-fig-0002" ref-type="fig">2</xref>; Table&#x000a0;<xref rid="nph14487-tbl-0001" ref-type="table-wrap">1</xref>). We conclude that a first duplication event resulting in separate <italic>TOC1</italic> and <italic>PRR3/7</italic> paralogues occurred before or during the evolution of charophytes. Furthermore, TOC1 paralogues were lost in both hornworts and mosses.</p></sec><sec id="nph14487-sec-0011"><title>EARLY FLOWERING 3</title><p>ELF3 is predicted to encode a soluble protein that is particularly rich in serine, proline, and glutamine (Hicks <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0034" ref-type="ref">2001</xref>). No ELF3 homologues have been detected in green algae, but a single homologue was found in <italic>K.&#x000a0;flaccidum</italic>,<italic> M.&#x000a0;polymorpha</italic>,<italic> A.&#x000a0;agrestis</italic>, and <italic>Selaginella moellendorffii</italic>, and three homologues were detected in <italic>P.&#x000a0;patens</italic> (Fig.&#x000a0;<xref rid="nph14487-sup-0001" ref-type="supplementary-material">S2</xref>; Table&#x000a0;<xref rid="nph14487-tbl-0001" ref-type="table-wrap">1</xref>). As previously reported, no homologue was detected in <italic>Picea&#x000a0;abies</italic>, but two homologues were found in Arabidopsis and <italic>Oryza sativa</italic> (Fig.&#x000a0;<xref rid="nph14487-sup-0001" ref-type="supplementary-material">S2</xref>; Table&#x000a0;<xref rid="nph14487-tbl-0001" ref-type="table-wrap">1</xref>). Thus, data suggest that ELF3 arose in charophytes.</p></sec><sec id="nph14487-sec-0012"><title>EARLY FLOWERING 4</title><p>ELF4 is a small protein with a conserved domain of unknown function (DUF1313; Li <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0503" ref-type="ref">2016</xref>). A putative protein with a DUF1313 domain has been reported in <italic>C</italic>.&#x000a0;<italic>reinhardtii</italic>, but no ELF4 homologue was found in the early diverging green alga <italic>O</italic>.&#x000a0;<italic>tauri</italic> (Tables&#x000a0;<xref rid="nph14487-tbl-0001" ref-type="table-wrap">1</xref>, <xref rid="nph14487-sup-0001" ref-type="supplementary-material">S1</xref>). Two homologues were found in <italic>K.&#x000a0;flaccidum</italic>,<italic> A.&#x000a0;agrestis</italic> and <italic>S.&#x000a0;moellendorffii</italic>, while a single ELF4 homologue was identified in each of <italic>M.&#x000a0;polymorpha</italic> and <italic>P.&#x000a0;patens</italic> (Fig.&#x000a0;<xref rid="nph14487-sup-0001" ref-type="supplementary-material">S3</xref>; Table&#x000a0;<xref rid="nph14487-tbl-0001" ref-type="table-wrap">1</xref>). <italic>P. abies</italic>, Arabidopsis and <italic>O.&#x000a0;sativa</italic> contain five, five and three homologues, respectively (Fig.&#x000a0;<xref rid="nph14487-sup-0001" ref-type="supplementary-material">S3</xref>; Table&#x000a0;<xref rid="nph14487-tbl-0001" ref-type="table-wrap">1</xref>). Previous phylogenetic analyses in angiosperms have identified two clusters of ELF4 or ELF4&#x02010;like (from now on referred to as EFL) proteins, one corresponding to the AtELF4/AtEFL1 clade in our analyses, and the other corresponding to the clade including AtEFL2, 3, 4. It should be noted that only proteins in the first clade (AtELF4 and AtEFL1) have been shown to possess circadian clock function (Kolmos <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0507" ref-type="ref">2009</xref>).</p></sec><sec id="nph14487-sec-0013"><title>LUX ARRHYTHMO</title><p>LUX and its homologue BROTHER OF LUX (BOA) are MYB&#x02010;like transcription factors, belonging to the SANT superfamily (Dai <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0014" ref-type="ref">2011</xref>). Proteins with similarity to the LUX MYB&#x02010;domain are found in green algae (Tables&#x000a0;<xref rid="nph14487-tbl-0001" ref-type="table-wrap">1</xref>, S1). In <italic>K.&#x000a0;flaccidum</italic> two proteins were identified with BLAST. One of them had a high e&#x02010;value, but as reciprocal BLAST against Arabidopsis identified AtBOA as the top hit, this protein was included in the phylogeny. Single homologues to AtLUX were identified in <italic>A.&#x000a0;agrestis</italic> and <italic>M.&#x000a0;polymorpha</italic> (Fig.&#x000a0;<xref rid="nph14487-sup-0001" ref-type="supplementary-material">S4</xref>; Table&#x000a0;<xref rid="nph14487-tbl-0001" ref-type="table-wrap">1</xref>). Three LUX homologues were identified in <italic>P.&#x000a0;patens</italic>, one in <italic>S.&#x000a0;moelendorffii</italic> and <italic>O.&#x000a0;sativa</italic>, whereas two were identified in <italic>P.&#x000a0;abies</italic> (Fig.&#x000a0;<xref rid="nph14487-sup-0001" ref-type="supplementary-material">S4</xref>; Table&#x000a0;<xref rid="nph14487-tbl-0001" ref-type="table-wrap">1</xref>).</p></sec><sec id="nph14487-sec-0014"><title>GIGANTEA</title><p>
+<italic>GIGANTEA</italic> is a large well&#x02010;conserved plant&#x02010;specific protein with no known domains and unknown biochemical function. Remarkably, a single <italic>GI</italic> copy is found in most land plant species, including Arabidopsis, <italic>S.&#x000a0;moelendorffii</italic>,<italic> O.&#x000a0;sativa</italic> and <italic>P.&#x000a0;abies</italic>. No trace of <italic>GI</italic>&#x02010;like sequences were found in green algae or in <italic>K</italic>.&#x000a0;<italic>flaccidum</italic>; however, GI homologues were detected in the more recently diverged charophytes <italic>Coleochaete irregularis</italic> (Coleochaetales) and <italic>Cylindrocystis cushleckae</italic> (Zygnematales). Searches in the oneKP database confirmed that charophytes, belonging to Zygnematales and Coleochaetales, do contain single <italic>GI</italic> homologues. A single <italic>GI</italic> gene is found also in <italic>M.&#x000a0;polymorpha</italic> and <italic>A.&#x000a0;agrestis</italic>, but no gene with detectable homology to <italic>GI</italic> was found in <italic>P.&#x000a0;patens</italic> (Holm <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0035" ref-type="ref">2010</xref>; Fig.&#x000a0;<xref rid="nph14487-sup-0001" ref-type="supplementary-material">S5</xref>; Table&#x000a0;<xref rid="nph14487-tbl-0001" ref-type="table-wrap">1</xref>). According to BLAST searches in oneKP databases, the only moss, out of 41 species in 31 genera, that contains a homologue to GI is the early diverging moss <italic>Takakia lepidozioides</italic>. These data indicate that GI first occurred in charophytes suggested as sisters to land plants, but was uniquely lost within the moss lineage.</p></sec><sec id="nph14487-sec-0015"><title>ZEITLUPE</title><p>In Arabidopsis there are three ZTL&#x02010;family F&#x02010;box proteins which are involved in blue&#x02010;light regulated protein degradation: ZTL, FKF1 and LOV KELCH PROTEIN2 (LKP2; Schultz <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0069" ref-type="ref">2001</xref>). The genes of this family have three main domains; a Light, oxygen or voltage domain (LOV; belongs to the Per&#x02010;ARNT&#x02010;Sim (PAS) superfamily), a central F&#x02010;box and multiple Kelch&#x02010;repeats in the C&#x02010;terminus. The LOV domain confers blue&#x02010;light sensing, while F&#x02010;box and Kelch&#x02010;repeats strongly suggest a role in ubiquitin&#x02010;mediated protein degradation (Ito <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0041" ref-type="ref">2012</xref>).</p><p>As for ELF3, homologues to the ZTL family are first observed in charophytes. One homologue was identified in each of <italic>K.&#x000a0;flaccidum</italic>,<italic> M.&#x000a0;polymorpha</italic>,<italic> A.&#x000a0;agrestis</italic>, and <italic>S.&#x000a0;moelendorffii</italic> (Fig.&#x000a0;<xref rid="nph14487-sup-0001" ref-type="supplementary-material">S6</xref>; Table&#x000a0;<xref rid="nph14487-tbl-0001" ref-type="table-wrap">1</xref>). Previously, it has been shown that the <italic>P.&#x000a0;patens</italic> genome does not contain any ZTL homologue (Holm <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0035" ref-type="ref">2010</xref>). As for GI, a BLAST search against oneKP revealed that the only moss, among the 41 species in the database, that expresses a ZTL/FKF1 homologue is <italic>T.&#x000a0;lepidozioides</italic>.</p><p>In summary, homologues to most of the core clock genes and important clock&#x02010;associated genes identified in Arabidopsis were not only found in bryophytes but also in charophytes, suggesting that the circadian clockwork of land plants may have arisen earlier than previously assumed, perhaps in land&#x02010;living charophyte algae (Table&#x000a0;<xref rid="nph14487-tbl-0001" ref-type="table-wrap">1</xref>). Our data also suggest that besides gene duplication resulting in redundancy and functional diversification, gene loss has been important in shaping circadian clocks in hornworts, liverworts and mosses. The three genes that previously have been shown to be missing in <italic>P.&#x000a0;patens</italic> (<italic>GI</italic>,<italic> ZTL</italic> and <italic>TOC1</italic>; Holm <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0035" ref-type="ref">2010</xref>) were not found in any moss except the basal moss species <italic>T.&#x000a0;lepidozioides</italic>. <italic>GI</italic> and <italic>ZTL</italic> were identified in liverworts, hornworts and charophytes, but <italic>TOC1</italic> was also absent from hornworts. Furthermore, our phylogenetic analyses suggest that liverworts have lost their <italic>CCA1</italic> orthologue.</p></sec></sec><sec id="nph14487-sec-0016"><title>Knockout mutants support a role for Mp<italic>PRR</italic>, Mp<italic>RVE</italic> and Mp<italic>TOC1</italic> in the <italic>M.&#x000a0;polymorpha</italic> circadian clock</title><p>The identification of orthologues of most angiosperm circadian clock genes in early land plants prompted us to start probing their role as circadian clock genes. As <italic>M.&#x000a0;polymorpha</italic> has emerged as a model species with well&#x02010;developed molecular genetic tools, we investigated if in particular Mp<italic>PRR</italic>, Mp<italic>TOC1</italic>, and Mp<italic>RVE</italic> are required for circadian rhythmicity. First, using qRT&#x02010;PCR we found that a majority of putative <italic>M.&#x000a0;polymorpha</italic> clock genes, including Mp<italic>PRR</italic>, Mp<italic>TOC1</italic> and Mp<italic>RVE</italic>, showed diel expression patterns in mature thalli grown in ND conditions (Table&#x000a0;<xref rid="nph14487-tbl-0002" ref-type="table-wrap">2</xref>; Fig.&#x000a0;<xref rid="nph14487-sup-0001" ref-type="supplementary-material">S7</xref>). The rhythmic expression of most of these genes also persisted after the transition to LL and DD conditions (Table&#x000a0;<xref rid="nph14487-tbl-0002" ref-type="table-wrap">2</xref>; Fig.&#x000a0;<xref rid="nph14487-sup-0001" ref-type="supplementary-material">S7</xref>).</p><table-wrap id="nph14487-tbl-0002" xml:lang="en" orientation="portrait" position="float"><label>Table 2</label><caption><p>Rhythms in <italic>Marchantia polymorpha</italic> clock gene transcript abundance identified by quantitative reverse transcription polymerase chain reaction (qRT&#x02010;PCR) and JTK_CYCLE analysis</p></caption><table frame="hsides" rules="groups"><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><thead valign="top"><tr style="border-bottom:solid 1px #000000"><th align="left" valign="top" rowspan="1" colspan="1">Gene</th><th align="left" valign="top" rowspan="1" colspan="1">Condition<xref ref-type="fn" rid="nph14487-note-0007">a</xref>
+</th><th align="left" valign="top" rowspan="1" colspan="1">
+<italic>P</italic>&#x02010;value<xref ref-type="fn" rid="nph14487-note-0008">b</xref>
+</th><th align="left" valign="top" rowspan="1" colspan="1">Period</th></tr></thead><tbody><tr><td align="left" rowspan="3" colspan="1">Mp<italic>PRR</italic>
+</td><td align="left" rowspan="1" colspan="1">ND</td><td align="left" rowspan="1" colspan="1">
+<bold>&#x0003c;&#x000a0;0.001</bold>
+</td><td align="left" rowspan="1" colspan="1">24</td></tr><tr><td align="left" rowspan="1" colspan="1">DD</td><td align="left" rowspan="1" colspan="1">
+<bold>0.001</bold>
+</td><td align="left" rowspan="1" colspan="1">28</td></tr><tr><td align="left" rowspan="1" colspan="1">LL</td><td align="left" rowspan="1" colspan="1">
+<bold>&#x0003c;&#x000a0;0.001</bold>
+</td><td align="left" rowspan="1" colspan="1">28</td></tr><tr><td align="left" rowspan="3" colspan="1">Mp<italic>TOC1</italic>
+</td><td align="left" rowspan="1" colspan="1">ND</td><td align="left" rowspan="1" colspan="1">
+<bold>&#x0003c;&#x000a0;0.001</bold>
+</td><td align="left" rowspan="1" colspan="1">24</td></tr><tr><td align="left" rowspan="1" colspan="1">DD</td><td align="left" rowspan="1" colspan="1">
+<bold>&#x0003c;&#x000a0;0.001</bold>
+</td><td align="left" rowspan="1" colspan="1">28</td></tr><tr><td align="left" rowspan="1" colspan="1">LL</td><td align="left" rowspan="1" colspan="1">
+<bold>0.001</bold>
+</td><td align="left" rowspan="1" colspan="1">28</td></tr><tr><td align="left" rowspan="3" colspan="1">Mp<italic>RVE</italic>
+</td><td align="left" rowspan="1" colspan="1">ND</td><td align="left" rowspan="1" colspan="1">
+<bold>0.003</bold>
+</td><td align="left" rowspan="1" colspan="1">24</td></tr><tr><td align="left" rowspan="1" colspan="1">DD</td><td align="left" rowspan="1" colspan="1">
+<bold>0.020</bold>
+</td><td align="left" rowspan="1" colspan="1">28</td></tr><tr><td align="left" rowspan="1" colspan="1">LL</td><td align="left" rowspan="1" colspan="1">0.061</td><td align="left" rowspan="1" colspan="1">28</td></tr><tr><td align="left" rowspan="3" colspan="1">Mp<italic>ELF3</italic>
+</td><td align="left" rowspan="1" colspan="1">ND</td><td align="left" rowspan="1" colspan="1">
+<bold>0.005</bold>
+</td><td align="left" rowspan="1" colspan="1">24</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>DD</italic>
+</td><td align="left" rowspan="1" colspan="1">0.073</td><td align="left" rowspan="1" colspan="1">28</td></tr><tr><td align="left" rowspan="1" colspan="1">LL</td><td align="left" rowspan="1" colspan="1">
+<bold>0.008</bold>
+</td><td align="left" rowspan="1" colspan="1">28</td></tr><tr><td align="left" rowspan="3" colspan="1">Mp<italic>GI</italic>
+</td><td align="left" rowspan="1" colspan="1">ND</td><td align="left" rowspan="1" colspan="1">
+<bold>0.035</bold>
+</td><td align="left" rowspan="1" colspan="1">20</td></tr><tr><td align="left" rowspan="1" colspan="1">DD</td><td align="left" rowspan="1" colspan="1">
+<bold>&#x0003c;&#x000a0;0.001</bold>
+</td><td align="left" rowspan="1" colspan="1">28</td></tr><tr><td align="left" rowspan="1" colspan="1">LL</td><td align="left" rowspan="1" colspan="1">0.080</td><td align="left" rowspan="1" colspan="1">28</td></tr><tr><td align="left" rowspan="3" colspan="1">Mp<italic>LUX</italic>
+</td><td align="left" rowspan="1" colspan="1">
+<italic>ND</italic>
+</td><td align="left" rowspan="1" colspan="1">0.073</td><td align="left" rowspan="1" colspan="1">20</td></tr><tr><td align="left" rowspan="1" colspan="1">DD</td><td align="left" rowspan="1" colspan="1">
+<bold>0.007</bold>
+</td><td align="left" rowspan="1" colspan="1">28</td></tr><tr><td align="left" rowspan="1" colspan="1">LL</td><td align="left" rowspan="1" colspan="1">0.149</td><td align="left" rowspan="1" colspan="1">28</td></tr><tr><td align="left" rowspan="3" colspan="1">Mp<italic>EFL</italic>
+</td><td align="left" rowspan="1" colspan="1">ND</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">20</td></tr><tr><td align="left" rowspan="1" colspan="1">DD</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">28</td></tr><tr><td align="left" rowspan="1" colspan="1">LL</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">28</td></tr><tr><td align="left" rowspan="3" colspan="1">MpFKF</td><td align="left" rowspan="1" colspan="1">ND</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">28</td></tr><tr><td align="left" rowspan="1" colspan="1">DD</td><td align="left" rowspan="1" colspan="1">0.121</td><td align="left" rowspan="1" colspan="1">28</td></tr><tr><td align="left" rowspan="1" colspan="1">LL</td><td align="left" rowspan="1" colspan="1">0.225</td><td align="left" rowspan="1" colspan="1">24</td></tr></tbody></table><table-wrap-foot><fn id="nph14487-note-0007"><label>a</label><p>Light condition: neutral day (ND; 12&#x000a0;:&#x000a0;12&#x000a0;h, light&#x000a0;:&#x000a0;dark cycles), constant darkness (DD) or constant light (LL).</p></fn><fn id="nph14487-note-0008"><label>b</label><p>Adjusted <italic>P</italic>&#x02010;values&#x000a0;&#x0003c;&#x000a0;0.05 are presented in bold.</p></fn></table-wrap-foot><permissions><copyright-holder>John Wiley &#x00026; Sons, Ltd</copyright-holder></permissions></table-wrap><p>Next, we generated knockout lines of Mp<italic>PRR</italic>, Mp<italic>TOC1</italic> and Mp<italic>RVE</italic> in F1 sporelings derived from crosses between Tak&#x02010;1 and Tak&#x02010;2 (Figs <xref rid="nph14487-sup-0001" ref-type="supplementary-material">S8</xref>&#x02013;<xref rid="nph14487-sup-0001" ref-type="supplementary-material">S10</xref>), and utilized a luciferase reporter controlled by a CaMV35S promoter (35S<sub><italic>pro</italic></sub>
+<italic>:LUC</italic>) to assay bioluminescence in transgenic lines. As previously observed in the angiosperm <italic>Lemna gibba</italic> (Muranaka <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0057" ref-type="ref">2014</xref>), 35S<sub><italic>pro</italic></sub>
+<italic>:LUC</italic> lines showed diel oscillation under ND and persistent rhythm in LL for several days (Fig.&#x000a0;<xref rid="nph14487-fig-0003" ref-type="fig">3</xref>). In white light, relative amplitude error (RAE)&#x02010;weighted period mean for three independent 35S<sub><italic>pro</italic></sub>
+<italic>:LUC</italic> lines was 28.9&#x000a0;h, with RAE &#x0003c; 0.07 for each line. Analysis of mRNA levels of <italic>LUC</italic> under equivalent conditions revealed a diel rhythm under ND that markedly dampened upon transfer to LL (Fig.&#x000a0;<xref rid="nph14487-sup-0001" ref-type="supplementary-material">S11</xref>). Thus, it is not obvious that the bioluminescence rhythm seen with 35S<sub><italic>pro</italic></sub>
+<italic>:LUC</italic> in LL is caused primarily by a transcriptional rhythm. Irrespective of the cause of the circadian rhythm in 35S<sub><italic>pro</italic></sub>
+<italic>:LUC</italic> bioluminescence, a perturbation of this rhythm in knockout lines of putative clock genes would suggest a role for these genes in the generation of circadian rhythmicity. Therefore, we introduced 35S<sub><italic>pro</italic></sub>
+<italic>:LUC</italic> into knockout lines of Mp<italic>PRR</italic>, Mp<italic>RVE</italic> and Mp<italic>TOC1</italic>. Several reporter lines were obtained for Mp<italic>prr</italic>
+<sup><italic>ko</italic></sup> and Mp<italic>rve</italic>
+<sup><italic>ko</italic></sup>, but only one line for Mp<italic>toc1</italic>
+<sup><italic>ko</italic></sup>. Bioluminescence rhythm was strongly affected in all knockout lines. Under ND conditions, the 35S<sub><italic>pro</italic></sub>
+<italic>:LUC</italic> Mp<italic>prr</italic>
+<sup><italic>ko</italic></sup> and 35S<sub><italic>pro</italic></sub>
+<italic>:LUC</italic> Mp<italic>toc1</italic>
+<sup><italic>ko</italic></sup> lines showed a pattern with an almost linear increase and decrease in light and dark, respectively, while 35S<sub><italic>pro</italic></sub>
+<italic>:LUC</italic> Mp<italic>rve</italic>
+<sup><italic>ko</italic></sup> showed a pattern more similar to the 35S<sub><italic>pro</italic></sub>
+<italic>:LUC</italic> lines (Fig.&#x000a0;<xref rid="nph14487-fig-0003" ref-type="fig">3</xref>). In LL, bioluminescence rhythm was abolished in all knockout lines (Fig.&#x000a0;<xref rid="nph14487-fig-0003" ref-type="fig">3</xref>). Obtained period estimates consequently varied widely and RAEs were high (Fig.&#x000a0;<xref rid="nph14487-fig-0003" ref-type="fig">3</xref>). These results show that Mp<italic>PRR</italic>, Mp<italic>RVE</italic> and Mp<italic>TOC1</italic> do have a role in controlling the bioluminescence rhythm observed in 35S<sub><italic>pro</italic></sub>
+<italic>:LUC</italic>, and suggest that the <italic>M.&#x000a0;polymorpha</italic> circadian clock generates this rhythm.</p><fig fig-type="Figure" xml:lang="en" id="nph14487-fig-0003" orientation="portrait" position="float"><label>Figure 3</label><caption><p>Bioluminescence rhythm of 35S<sub><italic>pro</italic></sub>
+<italic>:LUC</italic> is abolished in <italic>Marchantia polymorpha</italic> knockout mutants of Mp<italic><styled-content style="fixed-case">PRR</styled-content></italic>, Mp<italic><styled-content style="fixed-case">RVE</styled-content></italic> and Mp<italic><styled-content style="fixed-case">TOC</styled-content>1</italic>. Bioluminescence was recorded under neutral&#x02010;day (<styled-content style="fixed-case">ND</styled-content>; 12&#x000a0;:&#x000a0;12&#x000a0;h, light&#x000a0;:&#x000a0;dark cycles) and constant&#x02010;light (<styled-content style="fixed-case">LL</styled-content>) conditions in <styled-content style="fixed-case">wild&#x02010;type</styled-content> (Tak&#x02010;1) and clock mutants. Normalized bioluminescence for representative lines are shown, as follows: (a) 35S<sub><italic>pro</italic></sub>
+<italic>:<styled-content style="fixed-case">LUC</styled-content></italic>; (b) 35S<sub><italic>pro</italic></sub>
+<italic>:<styled-content style="fixed-case">LUC</styled-content></italic> Mp<italic>prr</italic>
+<sup><italic>ko</italic></sup>; (c) 35S<sub><italic>pro</italic></sub>
+<italic>:<styled-content style="fixed-case">LUC</styled-content></italic> Mp<italic>toc1</italic>
+<sup><italic>ko</italic></sup>; (d)&#x000a0;35S<sub><italic>pro</italic></sub>
+<italic>:<styled-content style="fixed-case">LUC</styled-content></italic> Mp<italic>rve</italic>
+<sup><italic>ko</italic></sup>. (e) Estimates of period plotted against relative amplitude error (<styled-content style="fixed-case">RAE</styled-content>). Each plotted symbol in (e) represents an independent line.</p></caption><graphic id="nlm-graphic-5" xlink:href="NPH-216-576-g003"/></fig><p>To further test these conclusions, we studied Mp<italic>PRR</italic> expression in Mp<italic>rve</italic>
+<sup><italic>ko</italic></sup> and Mp<italic>toc1</italic>
+<sup><italic>ko</italic></sup> knockout lines with qRT&#x02010;PCR. If these genes are part of transcriptional feedback loops typical of circadian clocks, we should expect changes in their temporal expression patterns. In Mp<italic>rve</italic>
+<sup><italic>ko</italic></sup> lines, reduced peak levels of Mp<italic>PRR</italic> expression were observed in both ND and LL (Fig.&#x000a0;<xref rid="nph14487-fig-0004" ref-type="fig">4</xref>a,b). The deviant expression patterns in ND were restored by the introduction of a genomic fragment of Mp<italic>RVE</italic> into the mutant (Figs&#x000a0;<xref rid="nph14487-fig-0004" ref-type="fig">4</xref>a, <xref rid="nph14487-sup-0001" ref-type="supplementary-material">S12</xref>a), suggesting that Mp<italic>RVE</italic> positively regulates Mp<italic>PRR</italic>, similar to the role of At<italic>RVE4, 6, 8</italic> in promoting expression of evening&#x02010;phased genes in Arabidopsis (Rawat <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0064" ref-type="ref">2011</xref>; Hsu <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0036" ref-type="ref">2013</xref>).</p><fig fig-type="Figure" xml:lang="en" id="nph14487-fig-0004" orientation="portrait" position="float"><label>Figure 4</label><caption><p>Temporal expression of Mp<italic><styled-content style="fixed-case">PRR</styled-content></italic> in neutral&#x02010;day (<styled-content style="fixed-case">ND</styled-content>; 12&#x000a0;:&#x000a0;12&#x000a0;h, light&#x000a0;:&#x000a0;dark cycles) and constant&#x02010;light (<styled-content style="fixed-case">LL</styled-content>) conditions is affected in knockout mutants of putative <italic>Marchantia polymorpha</italic> circadian clock genes. (a, b) Expression of Mp<italic><styled-content style="fixed-case">PRR</styled-content></italic> in wild&#x02010;type (<styled-content style="fixed-case">WT;</styled-content> Tak&#x02010;1, solid line), Mp<italic>rve</italic>
+<sup><italic>ko</italic></sup> mutant (broken line) and restored mutant (orange line) under <styled-content style="fixed-case">ND</styled-content> conditions (a) and in <styled-content style="fixed-case">WT</styled-content> and mutant under <styled-content style="fixed-case">LL</styled-content> conditions (b). (c, d) Expression of Mp<italic><styled-content style="fixed-case">PRR</styled-content></italic> in <styled-content style="fixed-case">WT</styled-content> (Tak&#x02010;1, solid line) and Mp<italic>toc1</italic>
+<sup><italic>ko</italic></sup> mutant (broken line) under <styled-content style="fixed-case">ND</styled-content> (c) and <styled-content style="fixed-case">LL</styled-content> conditions (d). Mean expression values measured using quantitative reverse transcription polymerase chain reaction are shown with standard errors based on three biological replicates. Expression was normalized using Mp<italic><styled-content style="fixed-case">EF</styled-content>1</italic>.</p></caption><graphic id="nlm-graphic-7" xlink:href="NPH-216-576-g004"/></fig><p>In Mp<italic>toc1</italic>
+<sup><italic>ko</italic></sup> lines grown under ND conditions, night&#x02010;time decrease in Mp<italic>PRR</italic> expression was slightly reduced (Figs&#x000a0;<xref rid="nph14487-fig-0004" ref-type="fig">4</xref>c, <xref rid="nph14487-sup-0001" ref-type="supplementary-material">S12</xref>b). In LL, expression of Mp<italic>PRR</italic> remained at peak levels, resulting in arrhythmicity (Figs&#x000a0;<xref rid="nph14487-fig-0004" ref-type="fig">4</xref>d, <xref rid="nph14487-sup-0001" ref-type="supplementary-material">S12</xref>c). Thus, these data support the idea that Mp<italic>TOC1</italic> directly or indirectly represses the expression of Mp<italic>PRR</italic>, supporting a conserved role for <italic>TOC1</italic> in land plants.</p><p>Collectively, these data support the idea that Mp<italic>PRR</italic>, Mp<italic>RVE</italic> and Mp<italic>TOC1</italic> have central roles in the <italic>M.&#x000a0;polymorpha</italic> circadian clock and that these roles are at least partially conserved in plants.</p></sec><sec id="nph14487-sec-0017"><title>Characterization of circadian rhythms in <italic>M.&#x000a0;polymorpha</italic>
+</title><p>To further study circadian rhythms of <italic>M.&#x000a0;polymorpha</italic> clock genes, promoter activities of Mp<italic>ELF3</italic>, Mp<italic>GI</italic>, Mp<italic>LUX</italic>, Mp<italic>PRR</italic> and Mp<italic>RVE</italic> were analysed using transgenic promoter:LUC reporter lines. All lines showed distinct diurnal bioluminescence rhythms in ND (Fig.&#x000a0;<xref rid="nph14487-fig-0005" ref-type="fig">5</xref>a&#x02013;e). Significant rhythms were detected for all genes in LL, but rapid dampening of the bioluminescence signal was observed in DD (Fig.&#x000a0;<xref rid="nph14487-fig-0005" ref-type="fig">5</xref>a&#x02013;f). This rapid dampening of the luciferase signal in DD seems at odds with evidence for rhythmic expression of several of these genes in DD in qRT&#x02010;PCR assays, and suggests that the reduced bioluminescence signal may be a result of an attenuated luciferase activity in DD (e.g. owing to low concentrations of ATP) rather than a reduction in transcription of clock genes. Still, no increase in signal was observed after the addition of sucrose to culture media. With one exception (Mp<italic>PRR</italic>), the amplitudes in ND and LL were also modest. In these conditions, amplitudes in qRT&#x02010;PCR assays and bioluminescence assays were generally in agreement, indicating that Mp<italic>PRR</italic> is an exception in exhibiting a strong transcriptional rhythm in both light driven and free&#x02010;running conditions.</p><fig fig-type="Figure" xml:lang="en" id="nph14487-fig-0005" orientation="portrait" position="float"><label>Figure 5</label><caption><p>Luciferase reporter lines driven by <italic>Marchantia polymorpha</italic> clock gene promoters show rhythmic expression under neutral&#x02010;day (<styled-content style="fixed-case">ND</styled-content>; 12&#x000a0;:&#x000a0;12&#x000a0;h, light&#x000a0;:&#x000a0;dark) and constant&#x02010;light (<styled-content style="fixed-case">LL</styled-content>) cycles. (a, f) Mp<italic><styled-content style="fixed-case">PRR</styled-content></italic>
+<sub><italic>pro</italic></sub>
+<italic>:<styled-content style="fixed-case">LUC</styled-content></italic>; (b) Mp<italic><styled-content style="fixed-case">LUX</styled-content></italic>
+<sub><italic>pro</italic></sub>
+<italic>:<styled-content style="fixed-case">LUC</styled-content></italic>; (c) Mp<italic><styled-content style="fixed-case">RVE</styled-content></italic>
+<sub><italic>pro</italic></sub>
+<italic>:<styled-content style="fixed-case">LUC</styled-content></italic>; (d) Mp<italic><styled-content style="fixed-case">ELF</styled-content>3</italic>
+<sub><italic>pro</italic></sub>
+<italic>:<styled-content style="fixed-case">LUC</styled-content></italic>; (e) Mp<italic><styled-content style="fixed-case">GI</styled-content></italic>
+<sub><italic>pro</italic></sub>
+<italic>:<styled-content style="fixed-case">LUC</styled-content></italic>. Transcriptional reporter lines were entrained under <styled-content style="fixed-case">ND</styled-content> conditions and transferred to <styled-content style="fixed-case">LL</styled-content> (a&#x02013;e) or constant darkness (<styled-content style="fixed-case">DD</styled-content>; f). Means of triplicates of representative reporter lines are shown with standard errors. Light periods are represented by white areas and dark periods by black areas on top of the graphs. In (a&#x02013;e), grey areas represent subjective night in <styled-content style="fixed-case">LL conditions</styled-content>. In (f), grey areas represent subjective day in <styled-content style="fixed-case">DD conditions</styled-content>. (a&#x02013;e) Normalized luminescence; (f) background&#x02010;subtracted average counts&#x000a0;min<sup>&#x02013;1</sup>.</p></caption><graphic id="nlm-graphic-9" xlink:href="NPH-216-576-g005"/></fig><p>The apparently weak amplitudes of circadian rhythms and the rapid dampening of rhythms in DD prompted us to investigate further the relative importance of light&#x02010;driven vs circadian control on clock gene expression in <italic>M.&#x000a0;polymorpha</italic>. In environmental cycles with time periods close to half the circadian period, circadian rhythms tend to frequency demultiply, meaning that every other environmental cycle is skipped (Bruce, <xref rid="nph14487-bib-0007" ref-type="ref">1960</xref>; Thines &#x00026; Harmon, <xref rid="nph14487-bib-0075" ref-type="ref">2010</xref>). Luciferase reporter lines driven by <italic>M.&#x000a0;polymorpha</italic> clock gene promoters were entrained in ND, and transferred to a T&#x02010;cycle of 12&#x000a0;h (6&#x000a0;:&#x000a0;6&#x000a0;h, light&#x000a0;:&#x000a0;dark). Even for the Mp<italic>PRR</italic>
+<sub><italic>pro</italic></sub>
+<italic>:LUC</italic> lines displaying the strongest rhythm in LL, an immediate adoption of a 12&#x000a0;h period was evident and no tendency for frequency demultiplication could be observed (Fig.&#x000a0;<xref rid="nph14487-fig-0006" ref-type="fig">6</xref>). The same result was obtained with Mp<italic>ELF3</italic>, Mp<italic>GI</italic>, Mp<italic>LUX</italic> and Mp<italic>RVE</italic>, suggesting that the <italic>M.&#x000a0;polymorpha</italic> clock is strongly driven by light changes and that the circadian rhythms are generally weak (Fig.&#x000a0;<xref rid="nph14487-sup-0001" ref-type="supplementary-material">S13</xref>).</p><fig fig-type="Figure" xml:lang="en" id="nph14487-fig-0006" orientation="portrait" position="float"><label>Figure 6</label><caption><p>Expression of <italic>Marchantia polymorpha</italic> circadian clock genes is strongly driven by light. Mp<italic><styled-content style="fixed-case">PRR</styled-content></italic>
+<sub><italic>pro</italic></sub>
+<italic>:<styled-content style="fixed-case">LUC</styled-content></italic> bioluminescence of plants entrained in a 12&#x000a0;:&#x000a0;12&#x000a0;h, light&#x000a0;:&#x000a0;dark photoperiod and transferred to <italic>T</italic>&#x000a0;=&#x000a0;12 photocycles. Light intensity was set to 5&#x000a0;&#x003bc;mol&#x000a0;m<sup>&#x02212;2</sup>&#x000a0;s<sup>&#x02212;1</sup>. Data from three independent transformants are shown. Expression patterns were readily adjusted to a <italic>T</italic>&#x000a0;=&#x000a0;12 photocycle without frequency demultiplication.</p></caption><graphic id="nlm-graphic-11" xlink:href="NPH-216-576-g006"/></fig><p>To further characterize and directly compare circadian rhythms observed in <italic>M.&#x000a0;polymorpha</italic> with those of Arabidopsis, bioluminescence rhythms for both species were simultaneously compared under different light qualities and intensities. After entrainment in blue plus red light, plants were released into different intensities of red light. As expected, At<italic>CCA1</italic>
+<sub><italic>pro</italic></sub>
+<italic>:LUC</italic>, At<italic>PRR9</italic>
+<sub><italic>pro</italic></sub>
+<italic>:LUC</italic>, At<italic>TOC1</italic>
+<sub><italic>pro</italic></sub>
+<italic>:LUC</italic> and At<italic>CAB</italic>
+<sub><italic>pro</italic></sub>
+<italic>:LUC</italic> displayed a clear shortening of period with increasing light intensity (Fig.&#x000a0;<xref rid="nph14487-fig-0007" ref-type="fig">7</xref>; Somers <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0072" ref-type="ref">1998</xref>). By contrast, all <italic>M.&#x000a0;polymorpha</italic> lines, including 35S<sub><italic>pro</italic></sub>
+<italic>:LUC</italic>, showed a slight increase in period with increased light intensity (Fig.&#x000a0;<xref rid="nph14487-fig-0007" ref-type="fig">7</xref>). These results suggest that the role of light in entrainment of the <italic>M.&#x000a0;polymorpha</italic> clock is different from that of Arabidopsis. One striking difference between rhythms observed in Arabidopsis and <italic>M.&#x000a0;polymorpha</italic> was the absence of early&#x02010;phased genes in the latter. In Arabidopsis, both <italic>CCA1/LHY</italic> and <italic>PRR9</italic> have an early morning phase with peaks at and shortly after dawn, respectively. A homologue to <italic>CCA1/LHY</italic> is lacking in <italic>M.&#x000a0;polymorpha</italic> and the closest relative, Mp<italic>RVE</italic>, showed a broad expression peak throughout the light period (Fig.&#x000a0;<xref rid="nph14487-fig-0008" ref-type="fig">8</xref>a). Additionally, the closest homologue to <italic>PRR9</italic>, Mp<italic>PRR</italic>, showed an afternoon peak of Mp<italic>PRR</italic>
+<sub><italic>pro</italic></sub>
+<italic>:LUC</italic> activity, although Mp<italic>PRR</italic> mRNA levels peaks earlier during the day (Figs&#x000a0;<xref rid="nph14487-fig-0004" ref-type="fig">4</xref>, <xref rid="nph14487-fig-0005" ref-type="fig">5</xref>a, <xref rid="nph14487-fig-0008" ref-type="fig">8</xref>b, <xref rid="nph14487-sup-0001" ref-type="supplementary-material">S11</xref>a, <xref rid="nph14487-sup-0001" ref-type="supplementary-material">S12</xref>). Both <italic>CCA1/LHY</italic> and <italic>PRR9</italic> are also acutely induced by light, and CCA1/LHY have been suggested to be important for entrainment at dawn (Wang &#x00026; Tobin, <xref rid="nph14487-bib-0080" ref-type="ref">1998</xref>); however, no such acute induction was evident for our assayed <italic>M.&#x000a0;polymorpha</italic> genes (Figs&#x000a0;<xref rid="nph14487-fig-0005" ref-type="fig">5</xref>, <xref rid="nph14487-fig-0008" ref-type="fig">8</xref>). This apparent lack of dawn&#x02010;phased genes with acute light response might explain the lack of period shortening with increased light intensity observed for <italic>M.&#x000a0;polymorpha</italic>.</p><fig fig-type="Figure" xml:lang="en" id="nph14487-fig-0007" orientation="portrait" position="float"><label>Figure 7</label><caption><p>
+<italic>Marchantia polymorpha</italic> circadian clock genes do not follow Aschoff's rule. Periods of circadian rhythm for Arabidopsis (closed symbols) and <italic>M.&#x000a0;polymorpha</italic> (open symbols) promoter:<styled-content style="fixed-case">LUC</styled-content> lines were estimated in different intensities of continuous red light. Plants harbouring promoter:<styled-content style="fixed-case">LUC</styled-content> constructs as indicated in the figure were first entrained in red and blue light, and then released into 0.4, 4 or 44&#x000a0;&#x003bc;mol&#x000a0;m<sup>&#x02212;2</sup>&#x000a0;s<sup>&#x02212;1</sup> of red light. Period in constant light (<styled-content style="fixed-case">LL</styled-content>) was estimated with Spectrum Resampling (Costa <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0013" ref-type="ref">2013</xref>) and plotted against logged light intensity. PAR, photosynthetically active radiation.</p></caption><graphic id="nlm-graphic-13" xlink:href="NPH-216-576-g007"/></fig><fig fig-type="Figure" xml:lang="en" id="nph14487-fig-0008" orientation="portrait" position="float"><label>Figure 8</label><caption><p>Comparison of bioluminescence rhythm for Arabidopsis and <italic>Marchantia polymorpha</italic> promoter:<styled-content style="fixed-case">LUC</styled-content> reporter lines. (a, b) Bioluminescence of Mp<italic><styled-content style="fixed-case">RVE</styled-content></italic>
+<sub><italic>pro</italic></sub>
+<italic>:<styled-content style="fixed-case">LUC</styled-content></italic>, At<italic><styled-content style="fixed-case">CCA</styled-content></italic>1<sub><italic>pro</italic></sub>
+<italic>:<styled-content style="fixed-case">LUC</styled-content></italic> (a), and Mp<italic><styled-content style="fixed-case">PRR</styled-content></italic>
+<sub><italic>pro</italic></sub>
+<italic>:<styled-content style="fixed-case">LUC</styled-content></italic> and At<italic><styled-content style="fixed-case">PRR</styled-content>9</italic>
+<sub><italic>pro</italic></sub>
+<italic>:<styled-content style="fixed-case">LUC</styled-content></italic> (b). Plants were entrained in neutral&#x02010;day conditions (<styled-content style="fixed-case">ND</styled-content>; 12&#x000a0;:&#x000a0;12&#x000a0;h, light&#x000a0;:&#x000a0;dark cycles), monitored for 3&#x000a0;d and released into constant light (<styled-content style="fixed-case">LL</styled-content>) and monitored for an additional 5&#x000a0;d.</p></caption><graphic id="nlm-graphic-15" xlink:href="NPH-216-576-g008"/></fig></sec><sec id="nph14487-sec-0018"><title>
+<italic>Marchantia polymorpha</italic> clock genes are highly expressed in meristematic regions</title><p>To investigate the spatial expression pattern of <italic>M.&#x000a0;polymorpha</italic> clock gene homologues, we assayed bioluminescence on different developmental stages of <italic>M.&#x000a0;polymorpha</italic> using luciferase reporter lines for Mp<italic>ELF3</italic>, Mp<italic>GI</italic>, Mp<italic>LUX</italic>, Mp<italic>PRR</italic> and Mp<italic>RVE</italic>. We also generated transgenic plants harboring Mp<italic>PRR</italic>
+<sub><italic>pro</italic></sub>
+<italic>:GUS</italic> to better assay patterns of weak expression. For all <italic>LUC</italic>&#x02010;lines, bioluminescence was detected in the apical thallus in and/or around the apical cell (Figs&#x000a0;<xref rid="nph14487-fig-0009" ref-type="fig">9</xref>, <xref rid="nph14487-sup-0001" ref-type="supplementary-material">S14</xref>). In gemmalings, expression was confined to the apical notches (Figs&#x000a0;<xref rid="nph14487-fig-0009" ref-type="fig">9</xref>a,b, <xref rid="nph14487-sup-0001" ref-type="supplementary-material">S14</xref>). Expression was also seen in the developing gemma cups, but as the cups matured, this expression markedly decreased and was confined to the walls of the cup (Figs&#x000a0;<xref rid="nph14487-fig-0009" ref-type="fig">9</xref>c&#x02013;e, <xref rid="nph14487-sup-0001" ref-type="supplementary-material">S14</xref>). After extended exposure, a weak signal could sometimes be detected along the midrib in older thalli (Figs&#x000a0;<xref rid="nph14487-fig-0009" ref-type="fig">9</xref>e, <xref rid="nph14487-sup-0001" ref-type="supplementary-material">S14</xref>). Mp<italic>PRR</italic>
+<sub><italic>pro</italic></sub>
+<italic>:GUS</italic> lines support a strong expression in meristematic regions, but prolonged staining also revealed expression in chlorenchyma cells within air chambers (Fig.&#x000a0;<xref rid="nph14487-sup-0001" ref-type="supplementary-material">S15</xref>). These observations suggest that the <italic>M.&#x000a0;polymorpha</italic> circadian clock is highly active in meristematic or rapidly dividing cells and tissues, but also in photosynthetically active tissues.</p><fig fig-type="Figure" xml:lang="en" id="nph14487-fig-0009" orientation="portrait" position="float"><label>Figure 9</label><caption><p>The Mp<italic><styled-content style="fixed-case">PRR</styled-content></italic> promoter drives luciferase expression in meristematic regions. Luciferase imaging in transgenic <italic>Marchantia polymorpha</italic> plants expressing luciferase under the control of the Mp<italic><styled-content style="fixed-case">PRR</styled-content></italic> promoter. (a&#x02013;e) Mp<italic><styled-content style="fixed-case">PRR</styled-content></italic>
+<sub><italic>pro</italic></sub>
+<italic>:<styled-content style="fixed-case">LUC</styled-content></italic>: (a) 4&#x02010;d&#x02010;old gemmaling showing expression at the apical notches; (b) 7&#x02010;d&#x02010;old gemmaling with expression at the recently split apical notches; (c) 4&#x02010;wk&#x02010;old thallus showing strong expression in apical regions and young gemma cups; (d) 3&#x02010;wk&#x02010;old thallus grown on 2% sucrose with high expression in young gemma cups; (e) 5&#x02010;wk&#x02010;old thallus showing weak expression along the midrib. Bioluminescense is pseudocolored in green. Illuminated images are shown in grey in (a&#x02013;c), but omitted from (d) and (e) to reveal weak signals.</p></caption><graphic id="nlm-graphic-17" xlink:href="NPH-216-576-g009"/></fig></sec><sec id="nph14487-sec-0019"><title>Temporal expression patterns support a role also for hornwort clock gene homologues in a circadian clock</title><p>Quantitative RT&#x02010;PCR was also used to study endogenous transcript abundance of putative <italic>A.&#x000a0;agrestis</italic> clock genes identified earlier. These data suggested that a majority of the assayed genes showed a clear diurnal rhythm under ND. Significant <italic>P</italic>&#x02010;values from analysis of rhythmicity with JTK&#x02010;cycle were obtained for all genes except Aa<italic>RVE</italic> (Table&#x000a0;<xref rid="nph14487-tbl-0003" ref-type="table-wrap">3</xref>; Fig.&#x000a0;<xref rid="nph14487-sup-0001" ref-type="supplementary-material">S16</xref>). Most genes also displayed a significant free&#x02010;running circadian rhythm under at least one constant condition (LL or DD). The exception was Aa<italic>RVE</italic>, which lacked evidence of significant rhythmic expression under all conditions (Table&#x000a0;<xref rid="nph14487-tbl-0003" ref-type="table-wrap">3</xref>; Fig.&#x000a0;<xref rid="nph14487-sup-0001" ref-type="supplementary-material">S16</xref>). Data suggest an early morning phased expression of Aa<italic>CCA1</italic>, and a near dusk expression of Aa<italic>ELF3</italic>, Aa<italic>EFL&#x02010;1</italic>,<italic> 2</italic>, Aa<italic>GI</italic>, Aa<italic>LUX</italic> and Aa<italic>PRR</italic>. Low amplitude of Aa<italic>RVE</italic> expression precluded estimation of phase for this gene. qRT&#x02010;PCR data also support rhythmic expression under day&#x02013;night cycles or free&#x02010;running conditions for additional putative circadian clock genes in <italic>M.&#x000a0;polymorpha</italic> (Table&#x000a0;<xref rid="nph14487-tbl-0002" ref-type="table-wrap">2</xref>; Fig.&#x000a0;<xref rid="nph14487-sup-0001" ref-type="supplementary-material">S7</xref>).</p><table-wrap id="nph14487-tbl-0003" xml:lang="en" orientation="portrait" position="float"><label>Table 3</label><caption><p>Circadian rhythms in <italic>Anthoceros agrestis</italic> clock gene transcript abundance identified by JTK_CYCLE</p></caption><table frame="hsides" rules="groups"><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><thead valign="top"><tr style="border-bottom:solid 1px #000000"><th align="left" valign="top" rowspan="1" colspan="1">Gene</th><th align="left" valign="top" rowspan="1" colspan="1">Condition<xref ref-type="fn" rid="nph14487-note-0009">a</xref>
+</th><th align="left" valign="top" rowspan="1" colspan="1">
+<italic>P</italic>&#x02010;value<xref ref-type="fn" rid="nph14487-note-0010">b</xref>
+</th><th align="left" valign="top" rowspan="1" colspan="1">Period</th></tr></thead><tbody><tr><td align="left" rowspan="3" colspan="1">Aa<italic>CCA1</italic>
+</td><td align="left" rowspan="1" colspan="1">ND</td><td align="left" rowspan="1" colspan="1">
+<bold>&#x0003c;&#x000a0;0.001</bold>
+</td><td align="left" rowspan="1" colspan="1">24</td></tr><tr><td align="left" rowspan="1" colspan="1">LL</td><td align="left" rowspan="1" colspan="1">
+<bold>0.001</bold>
+</td><td align="left" rowspan="1" colspan="1">24</td></tr><tr><td align="left" rowspan="1" colspan="1">DD</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">28</td></tr><tr><td align="left" rowspan="3" colspan="1">Aa<italic>RVE</italic>
+</td><td align="left" rowspan="1" colspan="1">ND</td><td align="left" rowspan="1" colspan="1">0.225</td><td align="left" rowspan="1" colspan="1">24</td></tr><tr><td align="left" rowspan="1" colspan="1">LL</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">20</td></tr><tr><td align="left" rowspan="1" colspan="1">DD</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">28</td></tr><tr><td align="left" rowspan="3" colspan="1">Aa<italic>PRR</italic>
+</td><td align="left" rowspan="1" colspan="1">ND</td><td align="left" rowspan="1" colspan="1">
+<bold>&#x0003c;&#x000a0;0.001</bold>
+</td><td align="left" rowspan="1" colspan="1">24</td></tr><tr><td align="left" rowspan="1" colspan="1">LL</td><td align="left" rowspan="1" colspan="1">0.598</td><td align="left" rowspan="1" colspan="1">20</td></tr><tr><td align="left" rowspan="1" colspan="1">DD</td><td align="left" rowspan="1" colspan="1">0.261</td><td align="left" rowspan="1" colspan="1">24</td></tr><tr><td align="left" rowspan="3" colspan="1">Aa<italic>ELF3</italic>
+</td><td align="left" rowspan="1" colspan="1">ND</td><td align="left" rowspan="1" colspan="1">
+<bold>0.002</bold>
+</td><td align="left" rowspan="1" colspan="1">20</td></tr><tr><td align="left" rowspan="1" colspan="1">LL</td><td align="left" rowspan="1" colspan="1">0.225</td><td align="left" rowspan="1" colspan="1">20</td></tr><tr><td align="left" rowspan="1" colspan="1">DD</td><td align="left" rowspan="1" colspan="1">
+<bold>0.029</bold>
+</td><td align="left" rowspan="1" colspan="1">24</td></tr><tr><td align="left" rowspan="3" colspan="1">Aa<italic>GI</italic>
+</td><td align="left" rowspan="1" colspan="1">ND</td><td align="left" rowspan="1" colspan="1">
+<bold>0.004</bold>
+</td><td align="left" rowspan="1" colspan="1">24</td></tr><tr><td align="left" rowspan="1" colspan="1">LL</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">28</td></tr><tr><td align="left" rowspan="1" colspan="1">DD</td><td align="left" rowspan="1" colspan="1">0.225</td><td align="left" rowspan="1" colspan="1">20</td></tr><tr><td align="left" rowspan="3" colspan="1">Aa<italic>LUX</italic>
+</td><td align="left" rowspan="1" colspan="1">ND</td><td align="left" rowspan="1" colspan="1">
+<bold>&#x0003c;&#x000a0;0.001</bold>
+</td><td align="left" rowspan="1" colspan="1">24</td></tr><tr><td align="left" rowspan="1" colspan="1">LL</td><td align="left" rowspan="1" colspan="1">
+<bold>0.035</bold>
+</td><td align="left" rowspan="1" colspan="1">28</td></tr><tr><td align="left" rowspan="1" colspan="1">DD</td><td align="left" rowspan="1" colspan="1">
+<bold>0.010</bold>
+</td><td align="left" rowspan="1" colspan="1">24</td></tr><tr><td align="left" rowspan="3" colspan="1">Aa<italic>ZTL</italic>
+</td><td align="left" rowspan="1" colspan="1">ND</td><td align="left" rowspan="1" colspan="1">
+<bold>&#x0003c;&#x000a0;0.001</bold>
+</td><td align="left" rowspan="1" colspan="1">20</td></tr><tr><td align="left" rowspan="1" colspan="1">LL</td><td align="left" rowspan="1" colspan="1">0.121</td><td align="left" rowspan="1" colspan="1">20</td></tr><tr><td align="left" rowspan="1" colspan="1">DD</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">24</td></tr><tr><td align="left" rowspan="3" colspan="1">Aa<italic>EFL&#x02010;1</italic>
+</td><td align="left" rowspan="1" colspan="1">ND</td><td align="left" rowspan="1" colspan="1">
+<bold>&#x0003c;&#x000a0;0.001</bold>
+</td><td align="left" rowspan="1" colspan="1">24</td></tr><tr><td align="left" rowspan="1" colspan="1">LL</td><td align="left" rowspan="1" colspan="1">
+<bold>0.024</bold>
+</td><td align="left" rowspan="1" colspan="1">28</td></tr><tr><td align="left" rowspan="1" colspan="1">DD</td><td align="left" rowspan="1" colspan="1">
+<bold>0.020</bold>
+</td><td align="left" rowspan="1" colspan="1">24</td></tr><tr><td align="left" rowspan="3" colspan="1">Aa<italic>EFL&#x02010;2</italic>
+</td><td align="left" rowspan="1" colspan="1">ND</td><td align="left" rowspan="1" colspan="1">&#x0003c;<bold>&#x000a0;0.001</bold>
+</td><td align="left" rowspan="1" colspan="1">24</td></tr><tr><td align="left" rowspan="1" colspan="1">LL</td><td align="left" rowspan="1" colspan="1">
+<bold>0.013</bold>
+</td><td align="left" rowspan="1" colspan="1">28</td></tr><tr><td align="left" rowspan="1" colspan="1">DD</td><td align="left" rowspan="1" colspan="1">0.073</td><td align="left" rowspan="1" colspan="1">24</td></tr></tbody></table><table-wrap-foot><fn id="nph14487-note-0009"><label>a</label><p>Light condition: neutral day (ND; 12&#x000a0;:&#x000a0;12&#x000a0;h, light&#x000a0;:&#x000a0;dark cycles), constant darkness (DD) or constant light (LL).</p></fn><fn id="nph14487-note-0010"><label>b</label><p>Adjusted <italic>P</italic>&#x02010;values&#x000a0;&#x0003c;&#x000a0;0.05 are presented in bold.</p></fn></table-wrap-foot><permissions><copyright-holder>John Wiley &#x00026; Sons, Ltd</copyright-holder></permissions></table-wrap><p>In conclusion, temporal expression patterns are consistent with a role in the circadian clock for a majority of homologues to Arabidopsis clock genes identified in the hornwort <italic>A.&#x000a0;agrestis</italic> and the liverwort <italic>M.&#x000a0;polymorpha</italic>. Estimates of phase are also in agreement with an <italic>A.&#x000a0;agrestis</italic> clock model consisting of a dawn&#x02010;phased CCA1/LHY homologue and evening&#x02010;phased genes including those belonging to the EC (<italic>ELF3</italic>,<italic> ELF4</italic> and <italic>LUX</italic> homologues). While Arabidopsis contains several PRR&#x02010;family genes with phases ranging from morning to evening, one and two homologues were detected in <italic>A.&#x000a0;agrestis</italic> and <italic>M.&#x000a0;polymorpha</italic>, none of which showed a dawn&#x02010;phased expression. The apparent lack of dawn&#x02010;phased components in <italic>M.&#x000a0;polymorpha</italic> might explain some of the differences in clock behaviour observed between <italic>M.&#x000a0;polymorpha</italic> and Arabidopsis.</p></sec></sec><sec id="nph14487-sec-0020"><title>Discussion</title><p>Transition through a shallow fresh water environment to a terrestrial environment probably had a profound impact on the plant circadian clock and the processes it controls. In marine algae, the circadian clock is important for control of, for example, phototaxis, chemotaxis and cell division (Bruce, <xref rid="nph14487-bib-0008" ref-type="ref">1970</xref>; Byrne <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0010" ref-type="ref">1992</xref>; Goto &#x00026; Johnson, <xref rid="nph14487-bib-0027" ref-type="ref">1995</xref>; Moulager <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0056" ref-type="ref">2007</xref>). In angiosperms the circadian clock regulates a wide range of processes, including those affecting metabolism, growth, abiotic and biotic stress, and various photoperiodic responses (Greenham &#x00026; McClung, <xref rid="nph14487-bib-0028" ref-type="ref">2015</xref>, and references therein).</p><sec id="nph14487-sec-0021"><title>A majority of plant circadian clock genes are present in charophytes</title><p>Evolution of the plant circadian clock is characterized by an increase in gene number and interactions through additional feedback loops. This has partly been accomplished through gene duplication and functional divergence but also through the acquisition of new genes. While green algae clocks can be modelled as a simple two&#x02010;gene, one&#x02010;loop circuit, angiosperm clocks seem to consist of a complex multi&#x02010;loop network comprising many genes.</p><p>Our data suggest that all the known major core clock components present in angiosperms were actually present already in charophytes. Novel components in charophytes, which are crucial in angiosperm clocks, are the EC genes <italic>ELF3</italic>,<italic> ELF4</italic> and <italic>LUX</italic>, but also <italic>GI</italic> and genes of the <italic>ZTL</italic> family. Charophytes also contain both TOC1 and PRR3/7 homologues. The function of the EC genes in charophytes or bryophytes is, to our knowledge, unknown. Besides an important function in control of the circadian rhythm, the EC in Arabidopsis is also implicated in output processes such as circadian and temperature control of hypocotyl growth (Nusinow <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0059" ref-type="ref">2011</xref>; Box&#x000a0;<italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0005" ref-type="ref">2015</xref>).</p><p>In angiosperms, the GI protein interacts with several proteins, including ZTL family proteins, ELF3 and ELF4, to regulate protein stability and localization (references in Kim <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0506" ref-type="ref">2013</xref>). In <italic>M.&#x000a0;polymorpha</italic>, Kubota <italic>et&#x000a0;al</italic>. (<xref rid="nph14487-bib-0045" ref-type="ref">2014</xref>) showed that MpGI interacts with the single ZTL family member MpFKF and affects photoperiodic induction of reproduction, similar to the role of AtFKF1 in flower induction. A role for nonangiosperm GI and ZTL family proteins in clock function has, to our knowledge, not been reported. The GI protein is a large protein without known protein domains. Its protein sequence is also highly conserved, and remarkably the gene occurs in most species as a single copy. No homologous proteins are detected outside Streptophyta, and within this group homologous proteins can be found in Embryophytes, Zygnematales and Coleochaetales, but not in, for example, Klebsormidiales. This pattern supports the notion that Zygnematales or Coleochaetales is sister to land plants, and that GI arose <italic>de novo</italic> in parallel with the transition to a terrestrial environment.</p></sec><sec id="nph14487-sec-0022"><title>Gene loss has been important in shaping early land plant circadian clocks</title><p>Although gene numbers and complexity have generally increased during plant circadian clock evolution, several examples of gene loss are also evident. It was previously suggested that the reduced circadian clock of <italic>P.&#x000a0;patens</italic> without <italic>GI</italic>,<italic> TOC1</italic> and <italic>ZTL</italic> homologues might represent an ancestral, less complex, state (Holm <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0035" ref-type="ref">2010</xref>). It is now clear that the lack of these three components is the result of gene loss. Interestingly, homologues to <italic>GI</italic>,<italic> TOC1</italic> and <italic>ZTL</italic> are present in the basal moss <italic>T.&#x000a0;lepidozioides</italic>. This was originally described as a liverwort, but retrieval and analysis of reproductive structures resulted in reclassification of the genus <italic>Takakia</italic> as a basal moss (Smith, <xref rid="nph14487-bib-0502" ref-type="ref">1993</xref>). Following this reclassification, this set of clock genes was lost very early after the branching of mosses. In Arabidopsis these three genes show close interaction, as physical interaction between GI and ZTL proteins regulate TOC1 stability (M&#x000e1;s <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0047" ref-type="ref">2003</xref>; Kim <italic>et&#x000a0;al</italic>., 2009). It is thus intriguing that these three genes were all lost early in the moss lineage. In hornworts, on the other hand, our data suggest that homologues to GI and ZTL are retained and only TOC1 was lost. An additional intriguing gene loss is <italic>CCA1</italic> in liverworts. CCA1 has until now been considered a fundamental component of all plant circadian clocks, from algae to angiosperms. Functional studies of circadian clock genes in bryophytes will shed light on the effects of these gene losses and give a better understanding of the evolution of the plant circadian clock.</p></sec><sec id="nph14487-sec-0023"><title>Are circadian clocks of early land plants less robust and do they control fewer processes?</title><p>Analysis of circadian rhythms of putative clock genes in <italic>M.&#x000a0;polymorpha</italic> suggests that these rhythms are weak compared with those in angiosperms. With one exception (Mp<italic>PRR</italic>), significant but weak rhythms were detected for <italic>M.&#x000a0;polymorpha</italic> genes in constant conditions. In <italic>P.&#x000a0;patens</italic>, clear rhythms are seen in DD but not in LL conditions, while in the gymnosperm <italic>P.&#x000a0;abies</italic> a rapid dampening of rhythms was observed for clock gene homologues in both LL and DD conditions (Holm <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0035" ref-type="ref">2010</xref>; Gyllenstrand <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0029" ref-type="ref">2014</xref>). Even though a free&#x02010;running clock in constant conditions is often considered a hallmark of circadian rhythm, the advantage of such a property is not entirely obvious, as plants occur in a geophysical rhythmic environment. One advantage of a complex free&#x02010;running oscillator could be increased resilience to external noise (Brown <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0006" ref-type="ref">2012</xref>). It has been suggested that a less complex clock with fewer interlocked feedback loops and less control of degradation of its component results in a more rapidly dampened timer (Brown <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0006" ref-type="ref">2012</xref>). If circadian clocks of nonangiosperm plants are less complex or less resilience to external noise awaits further study.</p><p>Analysis of LUC and GUS reporter lines driven by promoters of putative <italic>M.&#x000a0;polymorpha</italic> clock genes suggested that these genes were predominantly expressed in meristematic regions, but weaker expression was also detected in chlorenchyma cells within air chambers. This suggests that basic metabolic processes such as photosynthesis and starch metabolism may also be under circadian control in <italic>M.&#x000a0;polymorpha</italic>. Processes confined to meristematic regions that are probably under circadian control include photoperiodic induction of reproduction. Gametangia production in <italic>M.&#x000a0;polymorpha</italic> is induced by long photoperiods and requires Mp<italic>GI</italic> and Mp<italic>FKF</italic> (Voth &#x00026; Hamner, <xref rid="nph14487-bib-0078" ref-type="ref">1940</xref>; Kubota <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0045" ref-type="ref">2014</xref>).</p><p>Our inventory of circadian clock gene homologues in charophytes and bryophytes suggests an early acquisition of a complex circadian network, with all known main components already present before or concurrent with the occurrence of land plants, although in lower copy numbers. It has been suggested that physiological adaptations to land had already evolved in early terrestrial charophytes (Delwiche &#x00026; Cooper, <xref rid="nph14487-bib-0016" ref-type="ref">2015</xref>; Harholt <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0030" ref-type="ref">2016</xref>). Work on cell wall evolution (Mikkelsen <italic>et&#x000a0;al</italic>., <xref rid="nph14487-bib-0051" ref-type="ref">2014</xref>) suggests that key adaptations to terrestrial habitats had already occurred in <italic>Klebsormidium</italic>, which is in line with our observations of an early complexity of the circadian network. Our data provide good grounds for pursuing functional studies of circadian clocks not only in bryophytes but also in charophytes. Our preliminary observations of circadian rhythms in <italic>M.&#x000a0;polymorpha</italic>, suggesting weak rhythms, lack of morning&#x02010;phased genes that show acute light response, and deviations from predictions of Aschoff's rule for diurnal organisms, point to significant differences in the wiring of the <italic>M.&#x000a0;polymorpha</italic> circadian network.</p></sec></sec><sec id="nph14487-sec-0025"><title>Author contributions</title><p>A&#x02010;M.L., A.K., K.H., N.C., N.G., R.N., T.K. and U.L. conceived the project; A&#x02010;M.L. and U.L. performed the sequence retrieval and phylogenetic analyses; A&#x02010;M.L., A.K., D.M.E., E.R.A.P., K.H., N.G. and U.L. performed the qRT&#x02010;PCR experiments; A&#x02010;M.L. and A.K. analysed qRT&#x02010;PCR data. A.K., D.M.E., E.R.A.P., T.M., T.O. and U.L. performed the luciferase experiments; A&#x02010;M.L., A.K., T.M., T.O. and U.L. analysed the luciferase data. N.C. provided new materials. A&#x02010;M.L., D.M.E. and U.L. wrote the article with contributions of all the authors.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material content-type="local-data"><p>Please note: Wiley Blackwell are not responsible for the content or functionality of any Supporting Information supplied by the authors. Any queries (other than missing material) should be directed to the <italic>New Phytologist</italic> Central Office.</p></supplementary-material><supplementary-material content-type="local-data" id="nph14487-sup-0001"><caption><p>
+<bold>Fig.&#x000a0;S1</bold> Alignments used for phylogenetic construction.</p><p>
+<bold>Fig.&#x000a0;S2</bold> Inferred phylogeny of homologues to the ELF3 family.</p><p>
+<bold>Fig.&#x000a0;S3</bold> Inferred phylogeny of homologues to the ELF4 family.</p><p>
+<bold>Fig.&#x000a0;S4</bold> Inferred phylogeny of homologues to the LUX family.</p><p>
+<bold>Fig.&#x000a0;S5</bold> Inferred phylogeny of homologues to the GI gene family.</p><p>
+<bold>Fig.&#x000a0;S6</bold> Inferred phylogeny of homologues to the ZTL gene family.</p><p>
+<bold>Fig.&#x000a0;S7</bold> Temporal expression patterns of putative circadian clock genes in <italic>Marchantia polymorpha</italic> (Mp) under ND, LL and DD conditions.</p><p>
+<bold>Fig.&#x000a0;S8</bold> Generation of Mp<italic>RVE</italic> knockout mutant.</p><p>
+<bold>Fig.&#x000a0;S9</bold> Generation of Mp<italic>PRR</italic> knockout mutant.</p><p>
+<bold>Fig.&#x000a0;S10</bold> Generation of Mp<italic>TOC1</italic> knockout mutants.</p><p>
+<bold>Fig.&#x000a0;S11</bold> Temporal expression pattern of Mp<italic>PRR</italic> and 35S<sub><italic>pro</italic></sub>
+<italic>:LUC</italic> under ND and LL conditions.</p><p>
+<bold>Fig.&#x000a0;S12</bold> Temporal expression pattern of Mp<italic>PRR</italic> in WT, Mp<italic>rve</italic>
+<sup><italic>ko</italic></sup>, Mp<italic>toc1</italic>
+<sup><italic>ko</italic></sup> and restored lines of Mp<italic>rve</italic>
+<sup><italic>ko</italic></sup>.</p><p>
+<bold>Fig.&#x000a0;S13 </bold>
+<italic>pro:LUC</italic> bioluminescence for Mp<italic>ELF3</italic>, Mp<italic>GI</italic>, Mp<italic>LUX</italic> and Mp<italic>RVE</italic>.</p><p>
+<bold>Fig.&#x000a0;S14</bold> Luciferase imaging in transgenic <italic>Marchantia polymorpha</italic> plants expressing luciferase under the control of <italic>Marchantia polymorpha</italic> promoters.</p><p>
+<bold>Fig.&#x000a0;S15</bold> Mp<italic>PRR</italic>
+<sub><italic>pro</italic></sub>
+<italic>:GUS</italic> expression in mature thallus.</p><p>
+<bold>Fig.&#x000a0;S16</bold> Temporal expression patterns of putative circadian clock genes in <italic>Anthoceros agrestis</italic> (Aa) under ND, LL and DD conditions.</p><p>
+<bold>Table&#x000a0;S1</bold> Gene names, family/subclade, gene ID or accession number</p><p>
+<bold>Table&#x000a0;S2</bold> Oligonucleotides used in this study</p><p>
+<bold>Methods S1</bold> Supplemental materials and methods describing sequence retrieval, sequence analysis and phylogenetic reconstruction.</p></caption><media xlink:href="NPH-216-576-s001.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><ack id="nph14487-sec-0024"><title>Acknowledgements</title><p>We are grateful for the technical assistance of Kerstin Jeppsson. This project was supported by the Swedish Research Council VR, grant nos 2011&#x02010;5609 and 2014&#x02010;522 to U.L. and by JSPS KAKENHI, grants nos 25113009 and 26291059 to T.K. A.K. was supported by JSPS KAKENHI Grants&#x02010;in&#x02010;Aid for JSPS fellows (no. 24&#x02010;6987).</p></ack><ref-list content-type="cited-references" id="nph14487-bibl-0001"><title>References</title><ref id="nph14487-bib-0001"><mixed-citation publication-type="journal" id="nph14487-cit-0001">
+<string-name>
+<surname>Abramoff</surname>
+<given-names>MD</given-names>
+</string-name>, <string-name>
+<surname>Magalhaes</surname>
+<given-names>PJ</given-names>
+</string-name>, <string-name>
+<surname>Ram</surname>
+<given-names>SJ</given-names>
+</string-name>. <year>2004</year>
+<article-title>Image processing with image j</article-title>. <source>Biophotonics International</source>
+<volume>11</volume>: <fpage>7</fpage>.</mixed-citation></ref><ref id="nph14487-bib-0002"><mixed-citation publication-type="journal" id="nph14487-cit-0002">
+<string-name>
+<surname>Alabad&#x000ed;</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Oyama</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Yanovsky</surname>
+<given-names>MJ</given-names>
+</string-name>, <string-name>
+<surname>Harmon</surname>
+<given-names>FG</given-names>
+</string-name>, <string-name>
+<surname>M&#x000e1;s</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Kay</surname>
+<given-names>SA</given-names>
+</string-name>. <year>2001</year>
+<article-title>Reciprocal regulation between <italic>TOC1</italic> and <italic>LHY/CCA1</italic> within the <italic>Arabidopsis</italic> circadian clock</article-title>. <source>Science</source>
+<volume>293</volume>: <fpage>880</fpage>&#x02013;<lpage>883</lpage>.<pub-id pub-id-type="pmid">11486091</pub-id></mixed-citation></ref><ref id="nph14487-bib-0003"><mixed-citation publication-type="journal" id="nph14487-cit-0003">
+<string-name>
+<surname>Berns</surname>
+<given-names>MC</given-names>
+</string-name>, <string-name>
+<surname>Nordstr&#x000f6;m</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Cremer</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>T&#x000f3;th</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Hartke</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Simon</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Klasen</surname>
+<given-names>JR</given-names>
+</string-name>, <string-name>
+<surname>B&#x000fc;rstel</surname>
+<given-names>I</given-names>
+</string-name>, <string-name>
+<surname>Coupland</surname>
+<given-names>G</given-names>
+</string-name>. <year>2014</year>
+<article-title>Evening expression of <italic>Arabidopsis GIGANTEA</italic> is controlled by combinatorial interactions among evolutionarily conserved regulatory motifs</article-title>. <source>Plant Cell</source>
+<volume>26</volume>: <fpage>3999</fpage>&#x02013;<lpage>4018</lpage>.<pub-id pub-id-type="pmid">25361953</pub-id></mixed-citation></ref><ref id="nph14487-bib-0004"><mixed-citation publication-type="journal" id="nph14487-cit-0004">
+<string-name>
+<surname>Bowman</surname>
+<given-names>JL</given-names>
+</string-name>. <year>2013</year>
+<article-title>Walkabout on the long branches of plant evolution</article-title>. <source>Current Opinion in Plant Biology</source>
+<volume>16</volume>: <fpage>70</fpage>&#x02013;<lpage>77</lpage>.<pub-id pub-id-type="pmid">23140608</pub-id></mixed-citation></ref><ref id="nph14487-bib-0005"><mixed-citation publication-type="journal" id="nph14487-cit-0005">
+<string-name>
+<surname>Box</surname>
+<given-names>MS</given-names>
+</string-name>, <string-name>
+<surname>Huang</surname>
+<given-names>BE</given-names>
+</string-name>, <string-name>
+<surname>Domijan</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Jaeger</surname>
+<given-names>KE</given-names>
+</string-name>, <string-name>
+<surname>Khattak</surname>
+<given-names>AK</given-names>
+</string-name>, <string-name>
+<surname>Yoo</surname>
+<given-names>SJ</given-names>
+</string-name>, <string-name>
+<surname>Sedivy</surname>
+<given-names>EL</given-names>
+</string-name>, <string-name>
+<surname>Jones</surname>
+<given-names>DM</given-names>
+</string-name>, <string-name>
+<surname>Hearn</surname>
+<given-names>TJ</given-names>
+</string-name>, <string-name>
+<surname>Webb</surname>
+<given-names>AAR</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2015</year>
+<article-title>
+<italic>ELF3</italic> controls thermoresponsive growth in <italic>Arabidopsis</italic>
+</article-title>. <source>Current Biology</source>
+<volume>25</volume>: <fpage>194</fpage>&#x02013;<lpage>199</lpage>.<pub-id pub-id-type="pmid">25557663</pub-id></mixed-citation></ref><ref id="nph14487-bib-0006"><mixed-citation publication-type="journal" id="nph14487-cit-0006">
+<string-name>
+<surname>Brown</surname>
+<given-names>SA</given-names>
+</string-name>, <string-name>
+<surname>Kowalska</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Dallmann</surname>
+<given-names>R</given-names>
+</string-name>. <year>2012</year>
+<article-title>(Re)inventing the circadian feedback loop</article-title>. <source>Developmental Cell</source>
+<volume>22</volume>: <fpage>477</fpage>&#x02013;<lpage>487</lpage>.<pub-id pub-id-type="pmid">22421040</pub-id></mixed-citation></ref><ref id="nph14487-bib-0007"><mixed-citation publication-type="journal" id="nph14487-cit-0007">
+<string-name>
+<surname>Bruce</surname>
+<given-names>VG</given-names>
+</string-name>. <year>1960</year>
+<article-title>Environmental entrainment of circadian rhythms</article-title>. <source>Cold Spring Harbor Symposia on Quantitative Biology</source>
+<volume>25</volume>: <fpage>29</fpage>&#x02013;<lpage>48</lpage>.</mixed-citation></ref><ref id="nph14487-bib-0008"><mixed-citation publication-type="journal" id="nph14487-cit-0008">
+<string-name>
+<surname>Bruce</surname>
+<given-names>VG</given-names>
+</string-name>. <year>1970</year>
+<article-title>The biological clock in <italic>Chlamydomonas reinhardi</italic>
+</article-title>. <source>Journal of Protozoology</source>
+<volume>17</volume>: <fpage>328</fpage>&#x02013;<lpage>334</lpage>.</mixed-citation></ref><ref id="nph14487-bib-0009"><mixed-citation publication-type="journal" id="nph14487-cit-0009">
+<string-name>
+<surname>Buschmann</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Holtmannsp&#x000f6;tter</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Borchers</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>O'Donoghue</surname>
+<given-names>M&#x02010;T</given-names>
+</string-name>, <string-name>
+<surname>Zachgo</surname>
+<given-names>S</given-names>
+</string-name>. <year>2016</year>
+<article-title>Microtubule dynamics of the centrosome&#x02010;like polar organizers from the basal land plant <italic>Marchantia polymorpha</italic>
+</article-title>. <source>New Phytologist</source>
+<volume>209</volume>: <fpage>1469</fpage>&#x02013;<lpage>8137</lpage>.</mixed-citation></ref><ref id="nph14487-bib-0010"><mixed-citation publication-type="journal" id="nph14487-cit-0010">
+<string-name>
+<surname>Byrne</surname>
+<given-names>TE</given-names>
+</string-name>, <string-name>
+<surname>Wells</surname>
+<given-names>MR</given-names>
+</string-name>, <string-name>
+<surname>Johnson</surname>
+<given-names>CH</given-names>
+</string-name>. <year>1992</year>
+<article-title>Circadian rhythms of chemotaxis to ammonium and of methylammonium uptake in <italic>Chlamydomonas</italic>
+</article-title>. <source>Plant Physiology</source>
+<volume>98</volume>: <fpage>879</fpage>&#x02013;<lpage>886</lpage>.<pub-id pub-id-type="pmid">16668759</pub-id></mixed-citation></ref><ref id="nph14487-bib-0011"><mixed-citation publication-type="journal" id="nph14487-cit-0011">
+<string-name>
+<surname>Chow</surname>
+<given-names>BY</given-names>
+</string-name>, <string-name>
+<surname>Helfer</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Nusinow</surname>
+<given-names>DA</given-names>
+</string-name>, <string-name>
+<surname>Kay</surname>
+<given-names>SA</given-names>
+</string-name>. <year>2012</year>
+<article-title>ELF3 recruitment to the <italic>PRR9</italic> promoter requires other Evening Complex members in the Arabidopsis circadian clock</article-title>. <source>Plant Signaling &#x00026; Behavior</source>
+<volume>7</volume>: <fpage>170</fpage>&#x02013;<lpage>173</lpage>.<pub-id pub-id-type="pmid">22307044</pub-id></mixed-citation></ref><ref id="nph14487-bib-0012"><mixed-citation publication-type="journal" id="nph14487-cit-0012">
+<string-name>
+<surname>Corellou</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Schwartz</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Motta</surname>
+<given-names>J&#x02010;P</given-names>
+</string-name>, <string-name>
+<surname>Djouani&#x02010;Tahri</surname>
+<given-names>EB</given-names>
+</string-name>, <string-name>
+<surname>Sanchez</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Bouget</surname>
+<given-names>F&#x02010;Y</given-names>
+</string-name>. <year>2009</year>
+<article-title>Clocks in the green lineage: comparative functional analysis of the circadian architecture of the Picoeukaryote <italic>Ostreococcus</italic>
+</article-title>. <source>Plant Cell</source>
+<volume>21</volume>: <fpage>3436</fpage>&#x02013;<lpage>3449</lpage>.<pub-id pub-id-type="pmid">19948792</pub-id></mixed-citation></ref><ref id="nph14487-bib-0013"><mixed-citation publication-type="journal" id="nph14487-cit-0013">
+<string-name>
+<surname>Costa</surname>
+<given-names>MJ</given-names>
+</string-name>, <string-name>
+<surname>Finkenst&#x000e4;dt</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Roche</surname>
+<given-names>V</given-names>
+</string-name>, <string-name>
+<surname>L&#x000e9;vi</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Gould</surname>
+<given-names>PD</given-names>
+</string-name>, <string-name>
+<surname>Foreman</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Halliday</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Hall</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Rand</surname>
+<given-names>DA</given-names>
+</string-name>. <year>2013</year>
+<article-title>Inference on periodicity of circadian time series</article-title>. <source>Biostatistics (Oxford, England)</source>
+<volume>14</volume>: <fpage>792</fpage>&#x02013;<lpage>806</lpage>.</mixed-citation></ref><ref id="nph14487-bib-0510"><mixed-citation publication-type="journal" id="nph14487-cit-0510">
+<string-name>
+<surname>Covington</surname>
+<given-names>MF</given-names>
+</string-name>, <string-name>
+<surname>Maloof</surname>
+<given-names>JN</given-names>
+</string-name>, <string-name>
+<surname>Straume</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Kay</surname>
+<given-names>SA</given-names>
+</string-name>, <string-name>
+<surname>Harmer</surname>
+<given-names>SL</given-names>
+</string-name>. <year>2008</year>
+<article-title>Global transcriptome analysis reveals circadian regulation of key pathways in plant growth and development</article-title>. <source>Genome Biology</source>
+<volume>9</volume>: <fpage>R130</fpage>.<pub-id pub-id-type="pmid">18710561</pub-id></mixed-citation></ref><ref id="nph14487-bib-0014"><mixed-citation publication-type="journal" id="nph14487-cit-0014">
+<string-name>
+<surname>Dai</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Wei</surname>
+<given-names>X</given-names>
+</string-name>, <string-name>
+<surname>Pei</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Thompson</surname>
+<given-names>RL</given-names>
+</string-name>, <string-name>
+<surname>Liu</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Heard</surname>
+<given-names>JE</given-names>
+</string-name>, <string-name>
+<surname>Ruff</surname>
+<given-names>TG</given-names>
+</string-name>, <string-name>
+<surname>Beachy</surname>
+<given-names>RN</given-names>
+</string-name>. <year>2011</year>
+<article-title>BROTHER OF LUX ARRHYTHMO is a component of the <italic>Arabidopsis</italic> circadian clock</article-title>. <source>Plant Cell</source>
+<volume>23</volume>: <fpage>961</fpage>&#x02013;<lpage>972</lpage>.<pub-id pub-id-type="pmid">21447790</pub-id></mixed-citation></ref><ref id="nph14487-bib-0015"><mixed-citation publication-type="journal" id="nph14487-cit-0015">
+<string-name>
+<surname>De Caluw&#x000e9;</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Xiao</surname>
+<given-names>Q</given-names>
+</string-name>, <string-name>
+<surname>Hermans</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Verbruggen</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Leloup</surname>
+<given-names>J&#x02010;C</given-names>
+</string-name>, <string-name>
+<surname>Gonze</surname>
+<given-names>D</given-names>
+</string-name>. <year>2016</year>
+<article-title>A compact model for the complex plant circadian clock</article-title>. <source>Frontiers in Plant Science</source>
+<volume>7</volume>: <fpage>74</fpage>.<pub-id pub-id-type="pmid">26904049</pub-id></mixed-citation></ref><ref id="nph14487-bib-0016"><mixed-citation publication-type="journal" id="nph14487-cit-0016">
+<string-name>
+<surname>Delwiche</surname>
+<given-names>CF</given-names>
+</string-name>, <string-name>
+<surname>Cooper</surname>
+<given-names>ED</given-names>
+</string-name>. <year>2015</year>
+<article-title>The evolutionary origin of a terrestrial flora</article-title>. <source>Current Biology</source>
+<volume>25</volume>: <fpage>R899</fpage>&#x02013;<lpage>R910</lpage>.<pub-id pub-id-type="pmid">26439353</pub-id></mixed-citation></ref><ref id="nph14487-bib-0017"><mixed-citation publication-type="journal" id="nph14487-cit-0017">
+<string-name>
+<surname>Doyle</surname>
+<given-names>MR</given-names>
+</string-name>, <string-name>
+<surname>Davis</surname>
+<given-names>SJ</given-names>
+</string-name>, <string-name>
+<surname>Bastow</surname>
+<given-names>RM</given-names>
+</string-name>, <string-name>
+<surname>McWatters</surname>
+<given-names>HG</given-names>
+</string-name>, <string-name>
+<surname>Kozma&#x02010;Bogn&#x000e1;r</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Nagy</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Millar</surname>
+<given-names>AJ</given-names>
+</string-name>, <string-name>
+<surname>Amasino</surname>
+<given-names>RM</given-names>
+</string-name>. <year>2002</year>
+<article-title>The <italic>ELF4</italic> gene controls circadian rhythms and flowering time in <italic>Arabidopsis thaliana</italic>
+</article-title>. <source>Nature</source>
+<volume>419</volume>: <fpage>74</fpage>&#x02013;<lpage>77</lpage>.<pub-id pub-id-type="pmid">12214234</pub-id></mixed-citation></ref><ref id="nph14487-bib-0018"><mixed-citation publication-type="journal" id="nph14487-cit-0018">
+<string-name>
+<surname>Dunlap</surname>
+<given-names>JC</given-names>
+</string-name>. <year>1999</year>
+<article-title>Molecular bases for circadian clocks</article-title>. <source>Cell</source>
+<volume>96</volume>: <fpage>271</fpage>&#x02013;<lpage>290</lpage>.<pub-id pub-id-type="pmid">9988221</pub-id></mixed-citation></ref><ref id="nph14487-bib-0021"><mixed-citation publication-type="journal" id="nph14487-cit-0021">
+<string-name>
+<surname>Farinas</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Mas</surname>
+<given-names>P</given-names>
+</string-name>. <year>2011</year>
+<article-title>Functional implication of the MYB transcription factor RVE8/LCL5 in the circadian control of histone acetylation</article-title>. <source>Plant Journal</source>
+<volume>66</volume>: <fpage>318</fpage>&#x02013;<lpage>329</lpage>.<pub-id pub-id-type="pmid">21205033</pub-id></mixed-citation></ref><ref id="nph14487-bib-0023"><mixed-citation publication-type="journal" id="nph14487-cit-0023">
+<string-name>
+<surname>Fogelmark</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Troein</surname>
+<given-names>C</given-names>
+</string-name>. <year>2014</year>
+<article-title>Rethinking transcriptional activation in the <italic>Arabidopsis</italic> circadian clock</article-title>. <source>PLoS Computational Biology</source>
+<volume>10</volume>: <fpage>e1003705</fpage>.<pub-id pub-id-type="pmid">25033214</pub-id></mixed-citation></ref><ref id="nph14487-bib-0024"><mixed-citation publication-type="journal" id="nph14487-cit-0024">
+<string-name>
+<surname>Fornara</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Panigrahi</surname>
+<given-names>KCS</given-names>
+</string-name>, <string-name>
+<surname>Gissot</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Sauerbrunn</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>R&#x000fc;hl</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Jarillo</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name>
+<surname>Coupland</surname>
+<given-names>G</given-names>
+</string-name>. <year>2009</year>
+<article-title>
+<italic>Arabidopsis</italic> DOF transcription factors act redundantly to reduce <italic>CONSTANS</italic> expression and are essential for a photoperiodic flowering response</article-title>. <source>Developmental Cell</source>
+<volume>17</volume>: <fpage>75</fpage>&#x02013;<lpage>86</lpage>.<pub-id pub-id-type="pmid">19619493</pub-id></mixed-citation></ref><ref id="nph14487-bib-0025"><mixed-citation publication-type="journal" id="nph14487-cit-0025">
+<string-name>
+<surname>Fowler</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Onouchi</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Samach</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Richardson</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Morris</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Coupland</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Putterill</surname>
+<given-names>J</given-names>
+</string-name>. <year>1999</year>
+<article-title>GIGANTEA: a circadian clock&#x02010;controlled gene that regulates photoperiodic flowering in Arabidopsis and encodes a protein with several possible membrane&#x02010;spanning domains</article-title>. <source>EMBO Journal</source>
+<volume>18</volume>: <fpage>4679</fpage>&#x02013;<lpage>4688</lpage>.<pub-id pub-id-type="pmid">10469647</pub-id></mixed-citation></ref><ref id="nph14487-bib-0026"><mixed-citation publication-type="journal" id="nph14487-cit-0026">
+<string-name>
+<surname>Gamborg</surname>
+<given-names>OL</given-names>
+</string-name>, <string-name>
+<surname>Miller</surname>
+<given-names>RA</given-names>
+</string-name>, <string-name>
+<surname>Ojima</surname>
+<given-names>K</given-names>
+</string-name>. <year>1968</year>
+<article-title>Nutrient requirements of suspension cultures of soybean root cells</article-title>. <source>Experimental Cell Research</source>
+<volume>50</volume>: <fpage>151</fpage>&#x02013;<lpage>158</lpage>.<pub-id pub-id-type="pmid">5650857</pub-id></mixed-citation></ref><ref id="nph14487-bib-0027"><mixed-citation publication-type="journal" id="nph14487-cit-0027">
+<string-name>
+<surname>Goto</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Johnson</surname>
+<given-names>CH</given-names>
+</string-name>. <year>1995</year>
+<article-title>Is the cell division cycle gated by a circadian clock? The case of <italic>Chlamydomonas reinhardtii</italic>
+</article-title>. <source>Journal of Cell Biology</source>
+<volume>129</volume>: <fpage>1061</fpage>&#x02013;<lpage>1069</lpage>.<pub-id pub-id-type="pmid">7744955</pub-id></mixed-citation></ref><ref id="nph14487-bib-0028"><mixed-citation publication-type="journal" id="nph14487-cit-0028">
+<string-name>
+<surname>Greenham</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>McClung</surname>
+<given-names>CR</given-names>
+</string-name>. <year>2015</year>
+<article-title>Integrating circadian dynamics with physiological processes in plants</article-title>. <source>Nature Reviews Genetics</source>
+<volume>16</volume>: <fpage>598</fpage>&#x02013;<lpage>610</lpage>.</mixed-citation></ref><ref id="nph14487-bib-0029"><mixed-citation publication-type="journal" id="nph14487-cit-0029">
+<string-name>
+<surname>Gyllenstrand</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Karlgren</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Clapham</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Holm</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Hall</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Gould</surname>
+<given-names>PD</given-names>
+</string-name>, <string-name>
+<surname>K&#x000e4;llman</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Lagercrantz</surname>
+<given-names>U</given-names>
+</string-name>. <year>2014</year>
+<article-title>No time for spruce: rapid dampening of circadian rhythms in <italic>Picea abies</italic> (L. Karst)</article-title>. <source>Plant and Cell Physiology</source>
+<volume>55</volume>: <fpage>535</fpage>&#x02013;<lpage>550</lpage>.<pub-id pub-id-type="pmid">24363286</pub-id></mixed-citation></ref><ref id="nph14487-bib-0030"><mixed-citation publication-type="journal" id="nph14487-cit-0030">
+<string-name>
+<surname>Harholt</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Moestrup</surname>
+<given-names>&#x000d8;</given-names>
+</string-name>, <string-name>
+<surname>Ulvskov</surname>
+<given-names>P</given-names>
+</string-name>. <year>2016</year>
+<article-title>Why plants were terrestrial from the beginning</article-title>. <source>Trends in Plant Science</source>
+<volume>21</volume>: <fpage>96</fpage>&#x02013;<lpage>101</lpage>.<pub-id pub-id-type="pmid">26706443</pub-id></mixed-citation></ref><ref id="nph14487-bib-0031"><mixed-citation publication-type="journal" id="nph14487-cit-0031">
+<string-name>
+<surname>Harmer</surname>
+<given-names>SL</given-names>
+</string-name>. <year>2009</year>
+<article-title>The circadian system in higher plants</article-title>. <source>Annual Review of Plant Biology</source>
+<volume>60</volume>: <fpage>357</fpage>&#x02013;<lpage>377</lpage>.</mixed-citation></ref><ref id="nph14487-bib-0032"><mixed-citation publication-type="journal" id="nph14487-cit-0032">
+<string-name>
+<surname>Harmer</surname>
+<given-names>SL</given-names>
+</string-name>, <string-name>
+<surname>Hogenesch</surname>
+<given-names>JB</given-names>
+</string-name>, <string-name>
+<surname>Straume</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Chang</surname>
+<given-names>HS</given-names>
+</string-name>, <string-name>
+<surname>Han</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Zhu</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Wang</surname>
+<given-names>X</given-names>
+</string-name>, <string-name>
+<surname>Kreps</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name>
+<surname>Kay</surname>
+<given-names>SA</given-names>
+</string-name>. <year>2000</year>
+<article-title>Orchestrated transcription of key pathways in <italic>Arabidopsis</italic> by the circadian clock</article-title>. <source>Science (New York, N.Y.)</source>
+<volume>290</volume>: <fpage>2110</fpage>&#x02013;<lpage>2113</lpage>.</mixed-citation></ref><ref id="nph14487-bib-0033"><mixed-citation publication-type="journal" id="nph14487-cit-0033">
+<string-name>
+<surname>Hazen</surname>
+<given-names>SP</given-names>
+</string-name>, <string-name>
+<surname>Schultz</surname>
+<given-names>TF</given-names>
+</string-name>, <string-name>
+<surname>Pruneda&#x02010;Paz</surname>
+<given-names>JL</given-names>
+</string-name>, <string-name>
+<surname>Borevitz</surname>
+<given-names>JO</given-names>
+</string-name>, <string-name>
+<surname>Ecker</surname>
+<given-names>JR</given-names>
+</string-name>, <string-name>
+<surname>Kay</surname>
+<given-names>SA</given-names>
+</string-name>. <year>2005</year>
+<article-title>
+<italic>LUX ARRHYTHMO</italic> encodes a Myb domain protein essential for circadian rhythms</article-title>. <source>Proceedings of the National Academy of Sciences, USA</source>
+<volume>102</volume>: <fpage>10387</fpage>&#x02013;<lpage>10392</lpage>.</mixed-citation></ref><ref id="nph14487-bib-0034"><mixed-citation publication-type="journal" id="nph14487-cit-0034">
+<string-name>
+<surname>Hicks</surname>
+<given-names>KA</given-names>
+</string-name>, <string-name>
+<surname>Albertson</surname>
+<given-names>TM</given-names>
+</string-name>, <string-name>
+<surname>Wagner</surname>
+<given-names>DR</given-names>
+</string-name>. <year>2001</year>
+<article-title>
+<italic>EARLY FLOWERING3</italic> encodes a novel protein that regulates circadian clock function and flowering in Arabidopsis</article-title>. <source>Plant Cell</source>
+<volume>13</volume>: <fpage>1281</fpage>&#x02013;<lpage>1292</lpage>.<pub-id pub-id-type="pmid">11402160</pub-id></mixed-citation></ref><ref id="nph14487-bib-0035"><mixed-citation publication-type="journal" id="nph14487-cit-0035">
+<string-name>
+<surname>Holm</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>K&#x000e4;llman</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Gyllenstrand</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Hedman</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Lagercrantz</surname>
+<given-names>U</given-names>
+</string-name>. <year>2010</year>
+<article-title>Does the core circadian clock in the moss <italic>Physcomitrella patens</italic> (Bryophyta) comprise a single loop?</article-title>
+<source>BMC Plant Biology</source>
+<volume>10</volume>: <fpage>109</fpage>.<pub-id pub-id-type="pmid">20550695</pub-id></mixed-citation></ref><ref id="nph14487-bib-0036"><mixed-citation publication-type="journal" id="nph14487-cit-0036">
+<string-name>
+<surname>Hsu</surname>
+<given-names>PY</given-names>
+</string-name>, <string-name>
+<surname>Devisetty</surname>
+<given-names>UK</given-names>
+</string-name>, <string-name>
+<surname>Harmer</surname>
+<given-names>SL</given-names>
+</string-name>. <year>2013</year>
+<article-title>Accurate timekeeping is controlled by a cycling activator in Arabidopsis</article-title>. <source>eLife</source>
+<volume>2</volume>: <fpage>e00473</fpage>.<pub-id pub-id-type="pmid">23638299</pub-id></mixed-citation></ref><ref id="nph14487-bib-0037"><mixed-citation publication-type="journal" id="nph14487-cit-0037">
+<string-name>
+<surname>Hughes</surname>
+<given-names>ME</given-names>
+</string-name>, <string-name>
+<surname>Hogenesch</surname>
+<given-names>JB</given-names>
+</string-name>, <string-name>
+<surname>Kornacker</surname>
+<given-names>K</given-names>
+</string-name>. <year>2010</year>
+<article-title>JTK_CYCLE: an efficient nonparametric algorithm for detecting rhythmic components in genome&#x02010;scale data sets</article-title>. <source>Journal of Biological Rhythms</source>
+<volume>25</volume>: <fpage>372</fpage>&#x02013;<lpage>380</lpage>.<pub-id pub-id-type="pmid">20876817</pub-id></mixed-citation></ref><ref id="nph14487-bib-0038"><mixed-citation publication-type="journal" id="nph14487-cit-0038">
+<string-name>
+<surname>Ishizaki</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Chiyoda</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Yamato</surname>
+<given-names>KT</given-names>
+</string-name>, <string-name>
+<surname>Kohchi</surname>
+<given-names>T</given-names>
+</string-name>. <year>2008</year>
+<article-title>Agrobacterium&#x02010;mediated transformation of the haploid liverwort <italic>Marchantia polymorpha</italic> L., an emerging model for plant biology</article-title>. <source>Plant &#x00026; Cell Physiology</source>
+<volume>49</volume>: <fpage>1084</fpage>&#x02013;<lpage>1091</lpage>.<pub-id pub-id-type="pmid">18535011</pub-id></mixed-citation></ref><ref id="nph14487-bib-0039"><mixed-citation publication-type="journal" id="nph14487-cit-0039">
+<string-name>
+<surname>Ishizaki</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Johzuka&#x02010;Hisatomi</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Ishida</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Iida</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Kohchi</surname>
+<given-names>T</given-names>
+</string-name>. <year>2013</year>
+<article-title>Homologous recombination&#x02010;mediated gene targeting in the liverwort <italic>Marchantia polymorpha</italic> L</article-title>. <source>Scientific Reports</source>
+<volume>3</volume>: <fpage>1532</fpage>.<pub-id pub-id-type="pmid">23524944</pub-id></mixed-citation></ref><ref id="nph14487-bib-0040"><mixed-citation publication-type="journal" id="nph14487-cit-0040">
+<string-name>
+<surname>Ishizaki</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Nishihama</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Ueda</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Inoue</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Ishida</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Nishimura</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Shikanai</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Kohchi</surname>
+<given-names>T</given-names>
+</string-name>. <year>2015</year>
+<article-title>Development of gateway binary vector series with four different selection markers for the liverwort <italic>Marchantia polymorpha</italic>
+</article-title>. <source>PLoS ONE</source>
+<volume>10</volume>: <fpage>e0138876</fpage>.<pub-id pub-id-type="pmid">26406247</pub-id></mixed-citation></ref><ref id="nph14487-bib-0041"><mixed-citation publication-type="journal" id="nph14487-cit-0041">
+<string-name>
+<surname>Ito</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Song</surname>
+<given-names>YH</given-names>
+</string-name>, <string-name>
+<surname>Imaizumi</surname>
+<given-names>T</given-names>
+</string-name>. <year>2012</year>
+<article-title>LOV domain&#x02010;containing F&#x02010;box proteins: light&#x02010;dependent protein degradation modules in <italic>Arabidopsis</italic>
+</article-title>. <source>Molecular Plant</source>
+<volume>5</volume>: <fpage>47</fpage>&#x02013;<lpage>56</lpage>.</mixed-citation></ref><ref id="nph14487-bib-0042"><mixed-citation publication-type="journal" id="nph14487-cit-0042">
+<string-name>
+<surname>Johnson</surname>
+<given-names>CH</given-names>
+</string-name>, <string-name>
+<surname>Elliott</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name>
+<surname>Foster</surname>
+<given-names>R</given-names>
+</string-name>. <year>2003</year>
+<article-title>Entrainment of circadian programs</article-title>. <source>Chronobiology International</source>
+<volume>20</volume>: <fpage>741</fpage>&#x02013;<lpage>774</lpage>.<pub-id pub-id-type="pmid">14535352</pub-id></mixed-citation></ref><ref id="nph14487-bib-0043"><mixed-citation publication-type="journal" id="nph14487-cit-0043">
+<string-name>
+<surname>Kamioka</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Takao</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Suzuki</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Taki</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Higashiyama</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Kinoshita</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Nakamichi</surname>
+<given-names>N</given-names>
+</string-name>. <year>2016</year>
+<article-title>Direct repression of evening genes by CIRCADIAN CLOCK&#x02010;ASSOCIATED1 in the Arabidopsis circadian clock</article-title>. <source>Plant Cell</source>
+<volume>28</volume>: <fpage>696</fpage>&#x02013;<lpage>711</lpage>.<pub-id pub-id-type="pmid">26941090</pub-id></mixed-citation></ref><ref id="nph14487-bib-0044"><mixed-citation publication-type="journal" id="nph14487-cit-0044">
+<string-name>
+<surname>Kim</surname>
+<given-names>W&#x02010;Y</given-names>
+</string-name>, <string-name>
+<surname>Fujiwara</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Suh</surname>
+<given-names>S&#x02010;S</given-names>
+</string-name>, <string-name>
+<surname>Kim</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Kim</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Han</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>David</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Putterill</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Nam</surname>
+<given-names>HG</given-names>
+</string-name>, <string-name>
+<surname>Somers</surname>
+<given-names>DE</given-names>
+</string-name>. <year>2007</year>
+<article-title>ZEITLUPE is a circadian photoreceptor stabilized by GIGANTEA in blue light</article-title>. <source>Nature</source>
+<volume>449</volume>: <fpage>356</fpage>&#x02013;<lpage>360</lpage>.<pub-id pub-id-type="pmid">17704763</pub-id></mixed-citation></ref><ref id="nph14487-bib-0506"><mixed-citation publication-type="journal" id="nph14487-cit-0506">
+<string-name>
+<surname>Kim</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Lim</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Yeom</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Kim</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Kim</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Wang</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Kim</surname>
+<given-names>WY</given-names>
+</string-name>, <string-name>
+<surname>Somers</surname>
+<given-names>DE</given-names>
+</string-name>, <string-name>
+<surname>Nam</surname>
+<given-names>HG</given-names>
+</string-name>. <year>2013</year>
+<article-title>ELF4 regulates GIGANTEA chromatin access through subnuclear sequestration</article-title>. <source>Cell Reports</source>
+<volume>3</volume>: <fpage>671</fpage>&#x02013;<lpage>677</lpage>.<pub-id pub-id-type="pmid">23523352</pub-id></mixed-citation></ref><ref id="nph14487-bib-0507"><mixed-citation publication-type="journal" id="nph14487-cit-0507">
+<string-name>
+<surname>Kolmos</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Nowak</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Werner</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Fischer</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Schwarz</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Mathews</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Schoof</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Nagy</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Bujnicki</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name>
+<surname>Davis</surname>
+<given-names>SJ</given-names>
+</string-name>. <year>2009</year>
+<article-title>Integrating ELF4 into the circadian system through combined structural and functional studies</article-title>. <source>HFSP Journal</source>
+<volume>3</volume>: <fpage>350</fpage>&#x02013;<lpage>366</lpage>.<pub-id pub-id-type="pmid">20357892</pub-id></mixed-citation></ref><ref id="nph14487-bib-0508"><mixed-citation publication-type="journal" id="nph14487-cit-0508">
+<string-name>
+<surname>Kubota</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Ishizaki</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Hosaka</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Kohchi</surname>
+<given-names>T</given-names>
+</string-name>. <year>2013</year>
+<article-title>Efficient Agrobacterium&#x02010;mediated transformation of the liverwort <italic>Marchantia polymorpha</italic> using regenerating thalli</article-title>. <source>Bioscience, Biotechnology, and Biochemistry</source>
+<volume>77</volume>: <fpage>167</fpage>&#x02013;<lpage>172</lpage>.</mixed-citation></ref><ref id="nph14487-bib-0045"><mixed-citation publication-type="journal" id="nph14487-cit-0045">
+<string-name>
+<surname>Kubota</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Kita</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Ishizaki</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Nishihama</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Yamato</surname>
+<given-names>KT</given-names>
+</string-name>, <string-name>
+<surname>Kohchi</surname>
+<given-names>T</given-names>
+</string-name>. <year>2014</year>
+<article-title>Co&#x02010;option of a photoperiodic growth&#x02010;phase transition system during land plant evolution</article-title>. <source>Nature Communications</source>
+<volume>5</volume>: <fpage>3668</fpage>.</mixed-citation></ref><ref id="nph14487-bib-0503"><mixed-citation publication-type="journal" id="nph14487-cit-0503">
+<string-name>
+<surname>Li</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Chen</surname>
+<given-names>X</given-names>
+</string-name>, <string-name>
+<surname>Xu</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Lan</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Li</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Lu</surname>
+<given-names>Y</given-names>
+</string-name>. <year>2016</year>
+<article-title>Evolution of DUF1313 family members across plant species and their association with maize photoperiod sensitivity</article-title>. <source>Genomics</source>
+<volume>107</volume>: <fpage>199</fpage>&#x02013;<lpage>207</lpage>.<pub-id pub-id-type="pmid">26772990</pub-id></mixed-citation></ref><ref id="nph14487-bib-0047"><mixed-citation publication-type="journal" id="nph14487-cit-0047">
+<string-name>
+<surname>M&#x000e1;s</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Kim</surname>
+<given-names>W&#x02010;Y</given-names>
+</string-name>, <string-name>
+<surname>Somers</surname>
+<given-names>DE</given-names>
+</string-name>, <string-name>
+<surname>Kay</surname>
+<given-names>SA</given-names>
+</string-name>. <year>2003</year>
+<article-title>Targeted degradation of TOC1 by ZTL modulates circadian function in <italic>Arabidopsis thaliana</italic>
+</article-title>. <source>Nature</source>
+<volume>426</volume>: <fpage>567</fpage>&#x02013;<lpage>570</lpage>.<pub-id pub-id-type="pmid">14654842</pub-id></mixed-citation></ref><ref id="nph14487-bib-0048"><mixed-citation publication-type="journal" id="nph14487-cit-0048">
+<string-name>
+<surname>Matsuo</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Okamoto</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Onai</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Niwa</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Shimogawara</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Ishiura</surname>
+<given-names>M</given-names>
+</string-name>. <year>2008</year>
+<article-title>A systematic forward genetic analysis identified components of the <italic>Chlamydomonas</italic> circadian system</article-title>. <source>Genes &#x00026; Development</source>
+<volume>22</volume>: <fpage>918</fpage>&#x02013;<lpage>930</lpage>.<pub-id pub-id-type="pmid">18334618</pub-id></mixed-citation></ref><ref id="nph14487-bib-0049"><mixed-citation publication-type="journal" id="nph14487-cit-0049">
+<string-name>
+<surname>Matsushika</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Makino</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Kojima</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Mizuno</surname>
+<given-names>T</given-names>
+</string-name>. <year>2000</year>
+<article-title>Circadian waves of expression of the APRR1/TOC1 family of pseudo&#x02010;response regulators in <italic>Arabidopsis thaliana</italic>: insight into the plant circadian clock</article-title>. <source>Plant and Cell Physiology</source>
+<volume>41</volume>: <fpage>1002</fpage>&#x02013;<lpage>1012</lpage>.<pub-id pub-id-type="pmid">11100772</pub-id></mixed-citation></ref><ref id="nph14487-bib-0050"><mixed-citation publication-type="journal" id="nph14487-cit-0050">
+<string-name>
+<surname>McClung</surname>
+<given-names>CR</given-names>
+</string-name>. <year>2013</year>
+<article-title>Beyond <italic>Arabidopsis</italic>: the circadian clock in non&#x02010;model plant species</article-title>. <source>Seminars in Cell &#x00026; Developmental Biology</source>
+<volume>24</volume>: <fpage>430</fpage>&#x02013;<lpage>436</lpage>.<pub-id pub-id-type="pmid">23466287</pub-id></mixed-citation></ref><ref id="nph14487-bib-0501"><mixed-citation publication-type="journal" id="nph14487-cit-0501">
+<string-name>
+<surname>Michael</surname>
+<given-names>TP</given-names>
+</string-name>, <string-name>
+<surname>Mockler</surname>
+<given-names>TC</given-names>
+</string-name>, <string-name>
+<surname>Breton</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>McEntee</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Byer</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Trout</surname>
+<given-names>JD</given-names>
+</string-name>, <string-name>
+<surname>Hazen</surname>
+<given-names>SP</given-names>
+</string-name>, <string-name>
+<surname>Shen</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Priest</surname>
+<given-names>HD</given-names>
+</string-name>, <string-name>
+<surname>Sullivan</surname>
+<given-names>CM</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2008</year>
+<article-title>Network discovery pipeline elucidates conserved time&#x02010;of&#x02010;day&#x02013;specific cis&#x02010;regulatory modules</article-title>. <source>PLoS Genetics</source>
+<volume>4</volume>: <fpage>e14</fpage>.<pub-id pub-id-type="pmid">18248097</pub-id></mixed-citation></ref><ref id="nph14487-bib-0051"><mixed-citation publication-type="journal" id="nph14487-cit-0051">
+<string-name>
+<surname>Mikkelsen</surname>
+<given-names>MD</given-names>
+</string-name>, <string-name>
+<surname>Harholt</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Ulvskov</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Johansen</surname>
+<given-names>IE</given-names>
+</string-name>, <string-name>
+<surname>Fangel</surname>
+<given-names>JU</given-names>
+</string-name>, <string-name>
+<surname>Doblin</surname>
+<given-names>MS</given-names>
+</string-name>, <string-name>
+<surname>Bacic</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Willats</surname>
+<given-names>WG</given-names>
+</string-name>. <year>2014</year>
+<article-title>Evidence for land plant cell wall biosynthetic mechanisms in charophyte green algae</article-title>. <source>Annals of Botany</source>
+<volume>114</volume>: <fpage>1217</fpage>&#x02013;<lpage>1236</lpage>.<pub-id pub-id-type="pmid">25204387</pub-id></mixed-citation></ref><ref id="nph14487-bib-0054"><mixed-citation publication-type="journal" id="nph14487-cit-0054">
+<string-name>
+<surname>Miwa</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Serikawa</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Suzuki</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Kondo</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Oyama</surname>
+<given-names>T</given-names>
+</string-name>. <year>2006</year>
+<article-title>Conserved expression profiles of circadian clock&#x02010;related genes in two <italic>Lemna</italic> species showing long&#x02010;day and short&#x02010;day photoperiodic flowering responses</article-title>. <source>Plant and Cell Physiology</source>
+<volume>47</volume>: <fpage>601</fpage>&#x02013;<lpage>612</lpage>.<pub-id pub-id-type="pmid">16524874</pub-id></mixed-citation></ref><ref id="nph14487-bib-0055"><mixed-citation publication-type="journal" id="nph14487-cit-0055">
+<string-name>
+<surname>Mizoguchi</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Wheatley</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Hanzawa</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Wright</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Mizoguchi</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Song</surname>
+<given-names>H&#x02010;R</given-names>
+</string-name>, <string-name>
+<surname>Carr&#x000e9;</surname>
+<given-names>IA</given-names>
+</string-name>, <string-name>
+<surname>Coupland</surname>
+<given-names>G</given-names>
+</string-name>. <year>2002</year>
+<article-title>
+<italic>LHY</italic> and <italic>CCA1</italic> are partially redundant genes required to maintain circadian rhythms in <italic>Arabidopsis</italic>
+</article-title>. <source>Developmental Cell</source>
+<volume>2</volume>: <fpage>629</fpage>&#x02013;<lpage>641</lpage>.<pub-id pub-id-type="pmid">12015970</pub-id></mixed-citation></ref><ref id="nph14487-bib-0056"><mixed-citation publication-type="journal" id="nph14487-cit-0056">
+<string-name>
+<surname>Moulager</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Monnier</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Jesson</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Bouvet</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Mosser</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Schwartz</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Garnier</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Corellou</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Bouget</surname>
+<given-names>F&#x02010;Y</given-names>
+</string-name>. <year>2007</year>
+<article-title>Light&#x02010;dependent regulation of cell division in <italic>Ostreococcus</italic>: evidence for a major transcriptional input</article-title>. <source>Plant Physiology</source>
+<volume>144</volume>: <fpage>1360</fpage>&#x02013;<lpage>1369</lpage>.<pub-id pub-id-type="pmid">17535824</pub-id></mixed-citation></ref><ref id="nph14487-bib-0057"><mixed-citation publication-type="journal" id="nph14487-cit-0057">
+<string-name>
+<surname>Muranaka</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Okada</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Yomo</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Kubota</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Oyama</surname>
+<given-names>T</given-names>
+</string-name>. <year>2014</year>
+<article-title>Characterisation of circadian rhythms of various duckweeds</article-title>. <source>Plant Biology</source>
+<volume>17</volume>: <fpage>66</fpage>&#x02013;<lpage>74</lpage>.<pub-id pub-id-type="pmid">24942699</pub-id></mixed-citation></ref><ref id="nph14487-bib-0058"><mixed-citation publication-type="journal" id="nph14487-cit-0058">
+<string-name>
+<surname>Nakajima</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Yamazaki</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Nishii</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Noguchi</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Hoshino</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Niwa</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Viviani</surname>
+<given-names>VR</given-names>
+</string-name>, <string-name>
+<surname>Ohmiya</surname>
+<given-names>Y</given-names>
+</string-name>. <year>2010</year>
+<article-title>Enhanced beetle luciferase for high&#x02010;resolution bioluminescence imaging</article-title>. <source>PLoS ONE</source>
+<volume>5</volume>: <fpage>e10011</fpage>.<pub-id pub-id-type="pmid">20368807</pub-id></mixed-citation></ref><ref id="nph14487-bib-0059"><mixed-citation publication-type="journal" id="nph14487-cit-0059">
+<string-name>
+<surname>Nusinow</surname>
+<given-names>DA</given-names>
+</string-name>, <string-name>
+<surname>Helfer</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Hamilton</surname>
+<given-names>EE</given-names>
+</string-name>, <string-name>
+<surname>King</surname>
+<given-names>JJ</given-names>
+</string-name>, <string-name>
+<surname>Imaizumi</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Schultz</surname>
+<given-names>TF</given-names>
+</string-name>, <string-name>
+<surname>Farr&#x000e9;</surname>
+<given-names>EM</given-names>
+</string-name>, <string-name>
+<surname>Kay</surname>
+<given-names>SA</given-names>
+</string-name>. <year>2011</year>
+<article-title>The ELF4&#x02010;ELF3&#x02010;LUX complex links the circadian clock to diurnal control of hypocotyl growth</article-title>. <source>Nature</source>
+<volume>475</volume>: <fpage>398</fpage>&#x02013;<lpage>402</lpage>.<pub-id pub-id-type="pmid">21753751</pub-id></mixed-citation></ref><ref id="nph14487-bib-0060"><mixed-citation publication-type="journal" id="nph14487-cit-0060">
+<string-name>
+<surname>Okada</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Kondo</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Satbhai</surname>
+<given-names>SB</given-names>
+</string-name>, <string-name>
+<surname>Yamaguchi</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Tsukuda</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Aoki</surname>
+<given-names>S</given-names>
+</string-name>. <year>2009</year>
+<article-title>Functional characterization of <italic>CCA1</italic>/<italic>LHY</italic> homolog genes, <italic>PpCCA1a</italic> and <italic>PpCCA1b</italic>, in the moss <italic>Physcomitrella patens</italic>
+</article-title>. <source>Plant Journal</source>
+<volume>60</volume>: <fpage>551</fpage>&#x02013;<lpage>563</lpage>.<pub-id pub-id-type="pmid">19624471</pub-id></mixed-citation></ref><ref id="nph14487-bib-0062"><mixed-citation publication-type="journal" id="nph14487-cit-0062">
+<string-name>
+<surname>Pokhilko</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Mas</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Millar</surname>
+<given-names>AJ</given-names>
+</string-name>. <year>2013</year>
+<article-title>Modelling the widespread effects of TOC1 signalling on the plant circadian clock and its outputs</article-title>. <source>BMC Systems Biology</source>
+<volume>7</volume>: <fpage>23</fpage>.<pub-id pub-id-type="pmid">23506153</pub-id></mixed-citation></ref><ref id="nph14487-bib-0509"><mixed-citation publication-type="book" id="nph14487-cit-0509">
+<collab collab-type="authors">R Core Team</collab>
+. <year>2016</year>
+<source>R: a language and environment for statistical computing</source>. <publisher-loc>Vienna, Austria</publisher-loc>: <publisher-name>R Foundation for Statistical Computing</publisher-name>.</mixed-citation></ref><ref id="nph14487-bib-0063"><mixed-citation publication-type="journal" id="nph14487-cit-0063">
+<string-name>
+<surname>Rand</surname>
+<given-names>DA</given-names>
+</string-name>, <string-name>
+<surname>Shulgin</surname>
+<given-names>BV</given-names>
+</string-name>, <string-name>
+<surname>Salazar</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Millar</surname>
+<given-names>AJ</given-names>
+</string-name>. <year>2004</year>
+<article-title>Design principles underlying circadian clocks</article-title>. <source>Journal of the Royal Society Interface</source>
+<volume>1</volume>: <fpage>119</fpage>&#x02013;<lpage>130</lpage>.</mixed-citation></ref><ref id="nph14487-bib-0064"><mixed-citation publication-type="journal" id="nph14487-cit-0064">
+<string-name>
+<surname>Rawat</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Takahashi</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Hsu</surname>
+<given-names>PY</given-names>
+</string-name>, <string-name>
+<surname>Jones</surname>
+<given-names>MA</given-names>
+</string-name>, <string-name>
+<surname>Schwartz</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Salemi</surname>
+<given-names>MR</given-names>
+</string-name>, <string-name>
+<surname>Phinney</surname>
+<given-names>BS</given-names>
+</string-name>, <string-name>
+<surname>Harmer</surname>
+<given-names>SL</given-names>
+</string-name>. <year>2011</year>
+<article-title>REVEILLE8 and PSEUDO&#x02010;REPONSE REGULATOR5 form a negative feedback loop within the Arabidopsis circadian clock</article-title>. <source>PLoS Genetics</source>
+<volume>7</volume>: <fpage>e1001350</fpage>.<pub-id pub-id-type="pmid">21483796</pub-id></mixed-citation></ref><ref id="nph14487-bib-0065"><mixed-citation publication-type="journal" id="nph14487-cit-0065">
+<string-name>
+<surname>Saint&#x02010;Marcoux</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Proust</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Dolan</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Langdale</surname>
+<given-names>JA</given-names>
+</string-name>. <year>2015</year>
+<article-title>Identification of reference genes for real&#x02010;time quantitative PCR experiments in the liverwort <italic>Marchantia polymorpha</italic>
+</article-title>. <source>PLoS ONE</source>
+<volume>10</volume>: <fpage>e0118678</fpage>.<pub-id pub-id-type="pmid">25798897</pub-id></mixed-citation></ref><ref id="nph14487-bib-0066"><mixed-citation publication-type="journal" id="nph14487-cit-0066">
+<string-name>
+<surname>Satbhai</surname>
+<given-names>SB</given-names>
+</string-name>, <string-name>
+<surname>Yamashino</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Okada</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Nomoto</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Mizuno</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Tezuka</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Itoh</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Tomita</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Otsuki</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Aoki</surname>
+<given-names>S</given-names>
+</string-name>. <year>2011</year>
+<article-title>Pseudo&#x02010;response regulator (PRR) homologues of the moss <italic>Physcomitrella patens</italic>: insights into the evolution of the PRR family in Land plants</article-title>. <source>DNA Research</source>
+<volume>18</volume>: <fpage>39</fpage>&#x02013;<lpage>52</lpage>.<pub-id pub-id-type="pmid">21186242</pub-id></mixed-citation></ref><ref id="nph14487-bib-0067"><mixed-citation publication-type="journal" id="nph14487-cit-0067">
+<string-name>
+<surname>Sawa</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Nusinow</surname>
+<given-names>DA</given-names>
+</string-name>, <string-name>
+<surname>Kay</surname>
+<given-names>SA</given-names>
+</string-name>, <string-name>
+<surname>Imaizumi</surname>
+<given-names>T</given-names>
+</string-name>. <year>2007</year>
+<article-title>FKF1 and GIGANTEA complex formation is required for day&#x02010;length measurement in <italic>Arabidopsis</italic>
+</article-title>. <source>Science</source>
+<volume>318</volume>: <fpage>261</fpage>&#x02013;<lpage>265</lpage>.<pub-id pub-id-type="pmid">17872410</pub-id></mixed-citation></ref><ref id="nph14487-bib-0068"><mixed-citation publication-type="journal" id="nph14487-cit-0068">
+<string-name>
+<surname>Schaffer</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Ramsay</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Samach</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Corden</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Putterill</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Carr&#x000e9;</surname>
+<given-names>IA</given-names>
+</string-name>, <string-name>
+<surname>Coupland</surname>
+<given-names>G</given-names>
+</string-name>. <year>1998</year>
+<article-title>The <italic>late elongated hypocotyl</italic> mutation of <italic>Arabidopsis</italic> disrupts circadian rhythms and the photoperiodic control of flowering</article-title>. <source>Cell</source>
+<volume>93</volume>: <fpage>1219</fpage>&#x02013;<lpage>1229</lpage>.<pub-id pub-id-type="pmid">9657154</pub-id></mixed-citation></ref><ref id="nph14487-bib-0069"><mixed-citation publication-type="journal" id="nph14487-cit-0069">
+<string-name>
+<surname>Schultz</surname>
+<given-names>TF</given-names>
+</string-name>, <string-name>
+<surname>Kiyosue</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Yanovsky</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Wada</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Kay</surname>
+<given-names>SA</given-names>
+</string-name>. <year>2001</year>
+<article-title>A role for LKP2 in the circadian clock of Arabidopsis</article-title>. <source>Plant Cell</source>
+<volume>13</volume>: <fpage>2659</fpage>&#x02013;<lpage>2670</lpage>.<pub-id pub-id-type="pmid">11752379</pub-id></mixed-citation></ref><ref id="nph14487-bib-0070"><mixed-citation publication-type="journal" id="nph14487-cit-0070">
+<string-name>
+<surname>Shaw</surname>
+<given-names>AJ</given-names>
+</string-name>, <string-name>
+<surname>Sz&#x000f6;v&#x000e9;nyi</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Shaw</surname>
+<given-names>B</given-names>
+</string-name>. <year>2011</year>
+<article-title>Bryophyte diversity and evolution: windows into the early evolution of land plants</article-title>. <source>American Journal of Botany</source>
+<volume>98</volume>: <fpage>352</fpage>&#x02013;<lpage>369</lpage>.<pub-id pub-id-type="pmid">21613131</pub-id></mixed-citation></ref><ref id="nph14487-bib-0502"><mixed-citation publication-type="journal" id="nph14487-cit-0502">
+<string-name>
+<surname>Smith</surname>
+<given-names>D</given-names>
+</string-name>. <year>1993</year>
+<article-title>Antheridia and sporophytes in <italic>Takakia ceratophylla</italic> (Mitt.) Grolle: evidence for reclassification among the mosses</article-title>. <source>Journal of the Hattori Botanical Laboratory</source>
+<volume>73</volume>: <fpage>263</fpage>&#x02013;<lpage>271</lpage>.</mixed-citation></ref><ref id="nph14487-bib-0072"><mixed-citation publication-type="journal" id="nph14487-cit-0072">
+<string-name>
+<surname>Somers</surname>
+<given-names>DE</given-names>
+</string-name>, <string-name>
+<surname>Devlin</surname>
+<given-names>PF</given-names>
+</string-name>, <string-name>
+<surname>Kay</surname>
+<given-names>SA</given-names>
+</string-name>. <year>1998</year>
+<article-title>Phytochromes and cryptochromes in the entrainment of the <italic>Arabidopsis</italic> circadian clock</article-title>. <source>Science</source>
+<volume>282</volume>: <fpage>1488</fpage>&#x02013;<lpage>1490</lpage>.<pub-id pub-id-type="pmid">9822379</pub-id></mixed-citation></ref><ref id="nph14487-bib-0073"><mixed-citation publication-type="journal" id="nph14487-cit-0073">
+<string-name>
+<surname>Somers</surname>
+<given-names>DE</given-names>
+</string-name>, <string-name>
+<surname>Schultz</surname>
+<given-names>TF</given-names>
+</string-name>, <string-name>
+<surname>Milnamow</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Kay</surname>
+<given-names>SA</given-names>
+</string-name>. <year>2000</year>
+<article-title>
+<italic>ZEITLUPE</italic> encodes a novel clock&#x02010;associated PAS protein from <italic>Arabidopsis</italic>
+</article-title>. <source>Cell</source>
+<volume>101</volume>: <fpage>319</fpage>&#x02013;<lpage>329</lpage>.<pub-id pub-id-type="pmid">10847686</pub-id></mixed-citation></ref><ref id="nph14487-bib-0500"><mixed-citation publication-type="journal" id="nph14487-cit-0500">
+<string-name>
+<surname>Strayer</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Oyama</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Schultz</surname>
+<given-names>TF</given-names>
+</string-name>, <string-name>
+<surname>Raman</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Somers</surname>
+<given-names>DE</given-names>
+</string-name>, <string-name>
+<surname>M&#x000e1;s</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Panda</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Kreps</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name>
+<surname>Kay</surname>
+<given-names>SA</given-names>
+</string-name>. <year>2000</year>
+<article-title>Cloning of the <italic>Arabidopsis</italic> clock gene <italic>TOC1</italic>, an autoregulatory response regulator homolog</article-title>. <source>Science</source>
+<volume>289</volume>: <fpage>768</fpage>&#x02013;<lpage>771</lpage>.<pub-id pub-id-type="pmid">10926537</pub-id></mixed-citation></ref><ref id="nph14487-bib-0075"><mixed-citation publication-type="journal" id="nph14487-cit-0075">
+<string-name>
+<surname>Thines</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Harmon</surname>
+<given-names>FG</given-names>
+</string-name>. <year>2010</year>
+<article-title>Ambient temperature response establishes ELF3 as a required component of the core <italic>Arabidopsis</italic> circadian clock</article-title>. <source>Proceedings of the National Academy of Sciences</source>
+<volume>107</volume>: <fpage>3257</fpage>&#x02013;<lpage>3262</lpage>.</mixed-citation></ref><ref id="nph14487-bib-0076"><mixed-citation publication-type="journal" id="nph14487-cit-0076">
+<string-name>
+<surname>Troein</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Corellou</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Dixon</surname>
+<given-names>LE</given-names>
+</string-name>, <string-name>
+<surname>van Ooijen</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>O'Neill</surname>
+<given-names>JS</given-names>
+</string-name>, <string-name>
+<surname>Bouget</surname>
+<given-names>F&#x02010;Y</given-names>
+</string-name>, <string-name>
+<surname>Millar</surname>
+<given-names>AJ</given-names>
+</string-name>. <year>2011</year>
+<article-title>Multiple light inputs to a simple clock circuit allow complex biological rhythms</article-title>. <source>Plant Journal</source>
+<volume>66</volume>: <fpage>375</fpage>&#x02013;<lpage>385</lpage>.<pub-id pub-id-type="pmid">21219507</pub-id></mixed-citation></ref><ref id="nph14487-bib-0077"><mixed-citation publication-type="journal" id="nph14487-cit-0077">
+<string-name>
+<surname>Tsai</surname>
+<given-names>TY&#x02010;C</given-names>
+</string-name>, <string-name>
+<surname>Choi</surname>
+<given-names>YS</given-names>
+</string-name>, <string-name>
+<surname>Ma</surname>
+<given-names>W</given-names>
+</string-name>, <string-name>
+<surname>Pomerening</surname>
+<given-names>JR</given-names>
+</string-name>, <string-name>
+<surname>Tang</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Ferrell</surname>
+<given-names>JE</given-names>
+</string-name>. <year>2008</year>
+<article-title>Robust, tunable biological oscillations from interlinked positive and negative feedback loops</article-title>. <source>Science</source>
+<volume>321</volume>: <fpage>126</fpage>&#x02013;<lpage>129</lpage>.<pub-id pub-id-type="pmid">18599789</pub-id></mixed-citation></ref><ref id="nph14487-bib-0078"><mixed-citation publication-type="journal" id="nph14487-cit-0078">
+<string-name>
+<surname>Voth</surname>
+<given-names>PD</given-names>
+</string-name>, <string-name>
+<surname>Hamner</surname>
+<given-names>KC</given-names>
+</string-name>. <year>1940</year>
+<article-title>Responses of <italic>Marchantia polymorpha</italic> to nutrient supply and photoperiod</article-title>. <source>Botanical Gazette</source>
+<volume>102</volume>: <fpage>169</fpage>&#x02013;<lpage>205</lpage>.</mixed-citation></ref><ref id="nph14487-bib-0079"><mixed-citation publication-type="journal" id="nph14487-cit-0079">
+<string-name>
+<surname>Wang</surname>
+<given-names>ZY</given-names>
+</string-name>, <string-name>
+<surname>Kenigsbuch</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Sun</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Harel</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Ong</surname>
+<given-names>MS</given-names>
+</string-name>, <string-name>
+<surname>Tobin</surname>
+<given-names>EM</given-names>
+</string-name>. <year>1997</year>
+<article-title>A Myb&#x02010;related transcription factor is involved in the phytochrome regulation of an Arabidopsis Lhcb gene</article-title>. <source>Plant Cell</source>
+<volume>9</volume>: <fpage>491</fpage>&#x02013;<lpage>507</lpage>.<pub-id pub-id-type="pmid">9144958</pub-id></mixed-citation></ref><ref id="nph14487-bib-0080"><mixed-citation publication-type="journal" id="nph14487-cit-0080">
+<string-name>
+<surname>Wang</surname>
+<given-names>Z&#x02010;Y</given-names>
+</string-name>, <string-name>
+<surname>Tobin</surname>
+<given-names>EM</given-names>
+</string-name>. <year>1998</year>
+<article-title>Constitutive expression of the <italic>CIRCADIAN CLOCK ASSOCIATED 1</italic> (<italic>CCA1</italic>) gene disrupts circadian rhythms and suppresses its own expression</article-title>. <source>Cell</source>
+<volume>93</volume>: <fpage>1207</fpage>&#x02013;<lpage>1217</lpage>.<pub-id pub-id-type="pmid">9657153</pub-id></mixed-citation></ref><ref id="nph14487-bib-0084"><mixed-citation publication-type="journal" id="nph14487-cit-0084">
+<string-name>
+<surname>Yerushalmi</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Green</surname>
+<given-names>RM</given-names>
+</string-name>. <year>2009</year>
+<article-title>Evidence for the adaptive significance of circadian rhythms</article-title>. <source>Ecology Letters</source>
+<volume>12</volume>: <fpage>970</fpage>&#x02013;<lpage>981</lpage>.<pub-id pub-id-type="pmid">19566794</pub-id></mixed-citation></ref><ref id="nph14487-bib-0085"><mixed-citation publication-type="journal" id="nph14487-cit-0085">
+<string-name>
+<surname>Young</surname>
+<given-names>MW</given-names>
+</string-name>, <string-name>
+<surname>Kay</surname>
+<given-names>SA</given-names>
+</string-name>. <year>2001</year>
+<article-title>Time zones: a comparative genetics of circadian clocks</article-title>. <source>Nature Reviews Genetics</source>
+<volume>2</volume>: <fpage>702</fpage>&#x02013;<lpage>715</lpage>.</mixed-citation></ref></ref-list></back></article>

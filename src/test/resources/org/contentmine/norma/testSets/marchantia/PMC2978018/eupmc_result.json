@@ -1,0 +1,605 @@
+{
+  "id": [
+    "20579371"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "20579371"
+  ],
+  "pmcid": [
+    "PMC2978018"
+  ],
+  "doi": [
+    "10.1186/1471-2148-10-198"
+  ],
+  "title": [
+    "Molecular evolution of glutamine synthetase II: Phylogenetic evidence of a non-endosymbiotic gene transfer event early in plant evolution."
+  ],
+  "authorString": [
+    "Ghoshroy S, Binder M, Tartar A, Robertson DL."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Ghoshroy S"
+          ],
+          "firstName": [
+            "Sohini"
+          ],
+          "lastName": [
+            "Ghoshroy"
+          ],
+          "initials": [
+            "S"
+          ]
+        },
+        {
+          "fullName": [
+            "Binder M"
+          ],
+          "firstName": [
+            "Manfred"
+          ],
+          "lastName": [
+            "Binder"
+          ],
+          "initials": [
+            "M"
+          ]
+        },
+        {
+          "fullName": [
+            "Tartar A"
+          ],
+          "firstName": [
+            "Aurélien"
+          ],
+          "lastName": [
+            "Tartar"
+          ],
+          "initials": [
+            "A"
+          ]
+        },
+        {
+          "fullName": [
+            "Robertson DL"
+          ],
+          "firstName": [
+            "Deborah L"
+          ],
+          "lastName": [
+            "Robertson"
+          ],
+          "initials": [
+            "DL"
+          ]
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "10"
+      ],
+      "journalIssueId": [
+        "1698115"
+      ],
+      "dateOfPublication": [
+        "2010 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2010"
+      ],
+      "printPublicationDate": [
+        "2010-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "BMC evolutionary biology"
+          ],
+          "ISOAbbreviation": [
+            "BMC Evol. Biol."
+          ],
+          "medlineAbbreviation": [
+            "BMC Evol Biol"
+          ],
+          "NLMid": [
+            "100966975"
+          ],
+          "ISSN": [
+            "1471-2148"
+          ],
+          "ESSN": [
+            "1471-2148"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2010"
+  ],
+  "pageInfo": [
+    "198"
+  ],
+  "abstractText": [
+    "BACKGROUND: Glutamine synthetase (GS) is essential for ammonium assimilation and the biosynthesis of glutamine. The three GS gene families (GSI, GSII, and GSIII) are represented in both prokaryotic and eukaryotic organisms. In this study, we examined the evolutionary relationship of GSII from eubacterial and eukaryotic lineages and present robust phylogenetic evidence that GSII was transferred from gamma-Proteobacteria (Eubacteria) to the Chloroplastida. RESULTS: GSII sequences were isolated from four species of green algae (Trebouxiophyceae), and additional green algal (Chlorophyceae and Prasinophytae) and streptophyte (Charales, Desmidiales, Bryophyta, Marchantiophyta, Lycopodiophyta and Tracheophyta) sequences were obtained from public databases. In Bayesian and maximum likelihood analyses, eubacterial (GSIIB) and eukaryotic (GSIIE) GSII sequences formed distinct clades. Both GSIIB and GSIIE were found in chlorophytes and early-diverging streptophytes. The GSIIB enzymes from these groups formed a well-supported sister clade with the gamma-Proteobacteria, providing evidence that GSIIB in the Chloroplastida arose by horizontal gene transfer (HGT). Bayesian relaxed molecular clock analyses suggest that GSIIB and GSIIE coexisted for an extended period of time but it is unclear whether the proposed HGT happened prior to or after the divergence of the primary endosymbiotic lineages (the Archaeplastida). However, GSIIB genes have not been identified in glaucophytes or red algae, favoring the hypothesis that GSIIB was gained after the divergence of the primary endosymbiotic lineages. Duplicate copies of the GSIIB gene were present in Chlamydomonas reinhardtii, Volvox carteri f. nagariensis, and Physcomitrella patens. Both GSIIB proteins in C. reinhardtii and V. carteri f. nagariensis had N-terminal transit sequences, indicating they are targeted to the chloroplast or mitochondrion. In contrast, GSIIB proteins of P. patens lacked transit sequences, suggesting a cytosolic function. GSIIB sequences were absent in vascular plants where the duplication of GSIIE replaced the function of GSIIB. CONCLUSIONS: Phylogenetic evidence suggests GSIIB in Chloroplastida evolved by HGT, possibly after the divergence of the primary endosymbiotic lineages. Thus while multiple GS isoenzymes are common among members of the Chloroplastida, the isoenzymes may have evolved via different evolutionary processes. The acquisition of essential enzymes by HGT may provide rapid changes in biochemical capacity and therefore be favored by natural selection."
+  ],
+  "affiliation": [
+    "Clark University, Biology Department, Worcester, MA 01610, USA. sghoshroy@clarku.edu"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Gammaproteobacteria"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "EN"
+                  ],
+                  "qualifierName": [
+                    "enzymology"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Glutamate-Ammonia Ligase"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "DNA, Algal"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Likelihood Functions"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Bayes Theorem"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Sequence Analysis, DNA"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Evolution, Molecular"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Symbiosis"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Gene Transfer, Horizontal"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Multigene Family"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Chlorophyta"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "EN"
+                  ],
+                  "qualifierName": [
+                    "enzymology"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "glutamine synthetase 2"
+          ],
+          "registryNumber": [
+            "EC 6.3.1.-"
+          ]
+        },
+        {
+          "name": [
+            "Glutamate-Ammonia Ligase"
+          ],
+          "registryNumber": [
+            "EC 6.3.1.2"
+          ]
+        },
+        {
+          "name": [
+            "DNA, Algal"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC2978018?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC2978018"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "BioMedCentral"
+          ],
+          "url": [
+            "http://www.biomedcentral.com/content/pdf/1471-2148-10-198.pdf"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "abs"
+          ],
+          "site": [
+            "BioMedCentral"
+          ],
+          "url": [
+            "http://www.biomedcentral.com/1471-2148/10/198/abstract"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "BioMedCentral"
+          ],
+          "url": [
+            "http://www.biomedcentral.com/1471-2148/10/198"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/20579371/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/20579371/pdf/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1186/1471-2148-10-198"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "Y"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "10"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "Y"
+  ],
+  "dbCrossReferenceList": [
+    {
+      "dbName": [
+        "EMBL",
+        "UNIPROT"
+      ]
+    }
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2010-09-23"
+  ],
+  "dateOfCreation": [
+    "2010-07-30"
+  ],
+  "dateOfRevision": [
+    "2013-05-29"
+  ],
+  "electronicPublicationDate": [
+    "2010-06-25"
+  ],
+  "firstPublicationDate": [
+    "2010-06-25"
+  ]
+}

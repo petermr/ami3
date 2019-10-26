@@ -1,0 +1,746 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.1 20151215//EN" "JATS-archivearticle1.dtd"> 
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Archiving and Interchange DTD v3.0 20080202//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName archivearticle3.dtd?><?SourceDTD.Version 3.0?><?ConverterInfo.XSLTName jp2nlmx2.xsl?><?ConverterInfo.Version 1?><front><journal-meta><journal-id journal-id-type="nlm-ta">New Phytol</journal-id><journal-id journal-id-type="iso-abbrev">New Phytol</journal-id><journal-id journal-id-type="doi">10.1111/(ISSN)1469-8137</journal-id><journal-id journal-id-type="publisher-id">NPH</journal-id><journal-title-group><journal-title>The New Phytologist</journal-title></journal-title-group><issn pub-type="ppub">0028-646X</issn><issn pub-type="epub">1469-8137</issn><publisher><publisher-name>John Wiley and Sons Inc.</publisher-name><publisher-loc>Hoboken</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">5813166</article-id><article-id pub-id-type="doi">10.1111/nph.14897</article-id><article-id pub-id-type="publisher-id">NPH14897</article-id><article-id pub-id-type="other">2017-25079</article-id><article-categories><subj-group subj-group-type="overline"><subject>Full Paper</subject></subj-group><subj-group subj-group-type="heading"><subject>Research</subject><subj-group subj-group-type="heading"><subject>Full Papers</subject></subj-group></subj-group></article-categories><title-group><article-title>Xyloglucan is released by plants and promotes soil particle aggregation</article-title></title-group><contrib-group><contrib id="nph14897-cr-0001" contrib-type="author"><name><surname>Galloway</surname><given-names>Andrew F.</given-names></name><xref ref-type="aff" rid="nph14897-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="nph14897-cr-0002" contrib-type="author"><name><surname>Pedersen</surname><given-names>Martin J.</given-names></name><xref ref-type="aff" rid="nph14897-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="nph14897-cr-0003" contrib-type="author"><name><surname>Merry</surname><given-names>Beverley</given-names></name><xref ref-type="aff" rid="nph14897-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="nph14897-cr-0004" contrib-type="author"><name><surname>Marcus</surname><given-names>Susan E.</given-names></name><xref ref-type="aff" rid="nph14897-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="nph14897-cr-0005" contrib-type="author"><name><surname>Blacker</surname><given-names>Joshua</given-names></name><xref ref-type="aff" rid="nph14897-aff-0002">
+<sup>2</sup>
+</xref></contrib><contrib id="nph14897-cr-0006" contrib-type="author"><name><surname>Benning</surname><given-names>Liane G.</given-names></name><xref ref-type="aff" rid="nph14897-aff-0002">
+<sup>2</sup>
+</xref><xref ref-type="aff" rid="nph14897-aff-0003">
+<sup>3</sup>
+</xref><xref ref-type="aff" rid="nph14897-aff-0004">
+<sup>4</sup>
+</xref></contrib><contrib id="nph14897-cr-0007" contrib-type="author"><name><surname>Field</surname><given-names>Katie J.</given-names></name><xref ref-type="aff" rid="nph14897-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="nph14897-cr-0008" contrib-type="author" corresp="yes"><name><surname>Knox</surname><given-names>J. Paul</given-names></name><contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-9231-6891</contrib-id><address><email>j.p.knox@leeds.ac.uk</email></address><xref ref-type="aff" rid="nph14897-aff-0001">
+<sup>1</sup>
+</xref></contrib></contrib-group><aff id="nph14897-aff-0001">
+<label><sup>1</sup></label>
+<named-content content-type="organisation-division">Centre for Plant Sciences</named-content>
+<named-content content-type="organisation-division">Faculty of Biological Sciences</named-content>
+<institution>University of Leeds</institution>
+<named-content content-type="city">Leeds</named-content>
+<named-content content-type="post-code">LS2 9JT</named-content>
+<country country="GB">UK</country>
+</aff><aff id="nph14897-aff-0002">
+<label><sup>2</sup></label>
+<named-content content-type="organisation-division">School of Earth &#x00026; Environment</named-content>
+<institution>University of Leeds</institution>
+<named-content content-type="city">Leeds</named-content>
+<named-content content-type="post-code">LS2 9JT</named-content>
+<country country="GB">UK</country>
+</aff><aff id="nph14897-aff-0003">
+<label><sup>3</sup></label>
+<named-content content-type="organisation-division">German Research Centre for Geosciences</named-content>
+<institution>GFZ</institution>
+<named-content content-type="city">Potsdam</named-content>
+<named-content content-type="post-code">14473</named-content>
+<country country="DE">Germany</country>
+</aff><aff id="nph14897-aff-0004">
+<label><sup>4</sup></label>
+<named-content content-type="organisation-division">Department of Earth Sciences</named-content>
+<institution>Free University of Berlin</institution>
+<named-content content-type="city">Berlin</named-content>
+<named-content content-type="post-code">14195</named-content>
+<country country="DE">Germany</country>
+</aff><author-notes><corresp id="correspondenceTo"><label>*</label>
+Author for correspondence:<break/>
+J. Paul Knox<break/>
+Tel: +44(0)&#x000a0;113&#x000a0;3433169<break/>
+Email<italic>:</italic><email>j.p.knox@leeds.ac.uk</email><break/></corresp></author-notes><pub-date pub-type="epub"><day>15</day><month>11</month><year>2017</year></pub-date><pub-date pub-type="ppub"><month>2</month><year>2018</year></pub-date><volume>217</volume><issue>3</issue><issue-id pub-id-type="doi">10.1111/nph.2018.217.issue-3</issue-id><fpage>1128</fpage><lpage>1136</lpage><history><date date-type="received"><day>09</day><month>8</month><year>2017</year></date><date date-type="accepted"><day>18</day><month>10</month><year>2017</year></date></history><permissions><!--<copyright-statement content-type="issue-copyright"> Copyright &#x000a9; 2018 New Phytologist Trust <copyright-statement>--><copyright-statement content-type="article-copyright">&#x000a9; 2017 The Authors. New Phytologist &#x000a9; 2017 New Phytologist Trust</copyright-statement><license license-type="creativeCommonsBy"><license-p>This is an open access article under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri content-type="pdf" xlink:type="simple" xlink:href="file:NPH-217-1128.pdf"/><abstract id="nph14897-abs-0001"><title>Summary</title><p>
+<list list-type="bullet" id="nph14897-list-0001"><list-item><p>Soil is a crucial component of the biosphere and is a major sink for organic carbon. Plant roots are known to release a wide range of carbon&#x02010;based compounds into soils, including polysaccharides, but the functions of these are not known in detail.</p></list-item><list-item><p>Using a monoclonal antibody to plant cell wall xyloglucan, we show that this polysaccharide is secreted by a wide range of angiosperm roots, and relatively abundantly by grasses. It is also released from the rhizoids of liverworts, the earliest diverging lineage of land plants. Using analysis of water&#x02010;stable aggregate size, dry dispersion particle analysis and scanning electron microscopy, we show that xyloglucan is effective in increasing soil particle aggregation, a key factor in the formation and function of healthy soils.</p></list-item><list-item><p>To study the possible roles of xyloglucan in the formation of soils, we analysed the xyloglucan contents of mineral soils of known age exposed upon the retreat of glaciers. These glacial forefield soils had significantly higher xyloglucan contents than detected in a <styled-content style="fixed-case">UK</styled-content> grassland soil.</p></list-item><list-item><p>We propose that xyloglucan released from plant rhizoids/roots is an effective soil particle aggregator and may, in this role, have been important in the initial colonization of land.</p></list-item></list>
+</p></abstract><kwd-group kwd-group-type="author-generated"><kwd id="nph14897-kwd-0001">cereals</kwd><kwd id="nph14897-kwd-0002">glacial forefields</kwd><kwd id="nph14897-kwd-0003">liverworts</kwd><kwd id="nph14897-kwd-0004">plant roots</kwd><kwd id="nph14897-kwd-0005">polysaccharide</kwd><kwd id="nph14897-kwd-0006">rhizoids</kwd><kwd id="nph14897-kwd-0007">soil aggregates</kwd><kwd id="nph14897-kwd-0008">xyloglucan</kwd></kwd-group><funding-group><award-group><funding-source>Biotechnology &#x00026; Biological Sciences Research council</funding-source><award-id>BB/K017489/10 and BB/M026825/1</award-id></award-group><award-group><funding-source>Natural Environment Research Council</funding-source><award-id>NE/J022365/1</award-id><award-id>NE/N00941X/1</award-id></award-group></funding-group><counts><fig-count count="5"/><table-count count="0"/><page-count count="9"/><word-count count="6314"/></counts><custom-meta-group><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>component-id</meta-name><meta-value>nph14897</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>February 2018</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_NLMPMC version:version=5.3.2.2 mode:remove_FC converted:15.02.2018</meta-value></custom-meta></custom-meta-group></article-meta></front><body><sec id="nph14897-sec-0001"><title>Introduction</title><p>Soil is a critical component of the terrestrial biosphere. It plays a pivotal role in geochemical cycling of carbon and nutrients, which subsequently drives terrestrial ecosystem composition, function and the long&#x02010;term regulation of global climate (Paustian <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0034" ref-type="ref">2016</xref>; Leake &#x00026; Read, <xref rid="nph14897-bib-0024" ref-type="ref">2017</xref>). Soils are known to possess a carbon storage capacity exceeding that of the above&#x02010;ground biomass, making them a major contributor to terrestrial carbon cycling (Scharlemann <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0042" ref-type="ref">2014</xref>; Lehmann &#x00026; Kleber, <xref rid="nph14897-bib-0025" ref-type="ref">2015</xref>; Paustian <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0034" ref-type="ref">2016</xref>). As such, soil is responsible for many of the ecosystem services that are essential to human life, including agriculture, water and atmospheric gas composition. Declining soil health and function as a result of changes in climate and human land use is a major global problem, presenting significant challenges to future food and water security (Lal, <xref rid="nph14897-bib-0023" ref-type="ref">1997</xref>; Kibblewhite <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0021" ref-type="ref">2008</xref>). Soil degradation is marked by reduced soil particle aggregation with associated increased compaction and reduced water flow. Organic matter of plant, animal or microbial origin underpins many soil properties, such as water&#x02010;holding capacity, porosity, microbial community composition and fertility, although it can be challenging to dissect beyond total or organic carbon content (Lehmann &#x00026; Kleber, <xref rid="nph14897-bib-0025" ref-type="ref">2015</xref>). Furthermore, the roles of soil organic matter (SOM) in maintaining particle aggregation that underpins soil properties in relation to water holding and microbial communities are not well defined.</p><p>Polysaccharides of microbial and plant origin are implicated in the maintenance of soil aggregation and properties (Tisdall &#x00026; Oades, <xref rid="nph14897-bib-0043" ref-type="ref">1982</xref>; Cheshire &#x00026; Hayes, <xref rid="nph14897-bib-0005" ref-type="ref">1990</xref>; Oades, <xref rid="nph14897-bib-0031" ref-type="ref">1993</xref>), although their molecular identities and precise functions remain unknown. Plant roots are known to contribute to the total organic carbon content of soils, through their own polysaccharide&#x02010;rich biomass and also through secreted carbon&#x02010;based molecules in mucilages and signalling compounds (Walker <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0045" ref-type="ref">2003</xref>; Dennis <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0010" ref-type="ref">2010</xref>; Baetz &#x00026; Martinoia, <xref rid="nph14897-bib-0002" ref-type="ref">2014</xref>). Analyses of polysaccharide components of plant root mucilage generally reflect cell wall polysaccharides, and major components reported are pectic polysaccharides and arabinogalactan&#x02010;proteins (Bacic <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0001" ref-type="ref">1986</xref>; Moody <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0029" ref-type="ref">1988</xref>; Knee <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0022" ref-type="ref">2001</xref>; Driouich <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0012" ref-type="ref">2013</xref>). However, relatively few studies have been done and precise identities of polysaccharides released by plants into soils and any role(s) they play in rhizospheres and wider soil environments remain largely unknown, although they are proposed to have roles in improving root penetration, soil properties and influencing soil microbial communities (York <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0047" ref-type="ref">2016</xref>; Zickenrott <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0048" ref-type="ref">2016</xref>).</p><p>Monoclonal antibodies directed to cell wall polysaccharides are highly sensitive and versatile molecular tools for the detection and assessment of polysaccharides in various contexts. Using the LM25 xyloglucan monoclonal antibody (Pedersen <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0035" ref-type="ref">2012</xref>), we have identified xyloglucan as a polysaccharide released by both liverwort rhizoids and plant roots and found it to be released by all plants surveyed. This led us to explore the potential roles of xyloglucan in soil environments and to identify it as a potent soil particle aggregator.</p></sec><sec id="nph14897-sec-0002"><title>Materials and Methods</title><sec id="nph14897-sec-0003"><title>Plant materials</title><p>Wheat (<italic>Triticum aestivum</italic> L. cv Cadenza), maize (<italic>Zea mays</italic> L. cv Earlibird), barley (<italic>Hordeum vulgare</italic> L. cv Golden Promise), pea (<italic>Pisum sativum</italic> L. cv Avola), tomato (<italic>Solanum lycopersicum</italic> L. cv Ailsa Craig) and rapeseed (<italic>Brassica napus</italic> L. cv Extrovert) plants were grown hydroponically for 14&#x000a0;d (after 7&#x000a0;d for seedling establishment in Perlite) with eight seedlings in 9&#x000a0;l volumes in half&#x02010;strength Hoagland's solution. <italic>Arabidopsis thaliana</italic> (L.) Heyn. ecotype Col&#x02010;0 seedlings were grown for 14&#x000a0;d and the moss <italic>Physcomitrella patens</italic> (Hedw.) Bruch &#x00026; Schimp., and liverworts <italic>Marchantia polymorpha</italic> L. and <italic>Blasia pusilla</italic> L. were all grown in continuous shaking liquid culture with 4&#x02013;6&#x000a0;wk between subcultures with BG11 medium (Rippka <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0041" ref-type="ref">1979</xref>), as described for <italic>B.&#x000a0;pusilla</italic> (Jackson <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0019" ref-type="ref">2012</xref>). In all cases, plant FWs were taken at the point of medium collection and xyloglucan contents were determined by immunoassay. In some cases, liverworts (<italic>M.&#x000a0;polymorpha</italic> and <italic>Lunularia cruciata</italic> L.) were collected locally and gemmae were taken from thallus cups and immediately placed on solid 1% (w/v) agar with water and maintained in a moist atmosphere under low light. After the time points, gemmae and all rhizoids were removed and 1&#x000a0;ml volumes of agar centred on former positions were removed with a cork borer and excised gel pieces were diced and incubated with 1&#x000a0;ml of water overnight. The water extracts were used for analyses. In additional analyses, nitrocellulose prints of agar surfaces after removal of gemmae were prepared by laying nitrocellulose sheets on agar surfaces for 30&#x000a0;min before sheet removal for processing. <italic>A.&#x000a0;thaliana</italic> seedlings were also grown on solid media (Cornuault <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0006" ref-type="ref">2014</xref>) and solid media surfaces were printed onto nitrocellulose for similar immunoanalyses.</p></sec><sec id="nph14897-sec-0004"><title>Xyloglucan assays with monoclonal antibody LM25</title><p>Initial screening of plant hydroponates and growth media involved enzyme&#x02010;linked immunosorbent assays (ELISAs) of materials coated directly onto microtitre ELISA plates (Supporting Information Tables <xref rid="nph14897-sup-0001" ref-type="supplementary-material">S1</xref>, <xref rid="nph14897-sup-0001" ref-type="supplementary-material">S2</xref>). For subsequent ELISA quantification of xyloglucan in hydroponates<italic>,</italic> shaking culture plant media, solid growth media water extracts and soil alkali extracts, solubilized materials were titrated fivefold onto microtitre plates and incubated in a high salt buffer to ensure efficient microtitre plate well coating overnight before processing with rat monoclonal antibody LM25 to detect xyloglucan (Pedersen <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0035" ref-type="ref">2012</xref>). Sample titrations were extended as appropriate to ensure absorbance readings in the range 0&#x02013;1.0&#x000a0;OD (optical density) which was used to generate xyloglucan equivalents using tamarind xyloglucan (Megazyme International, Bray, Ireland) as a standard. Nitrocellulose prints of solid growth media surfaces were developed with LM25 at 10&#x02010;fold dilution followed by anti&#x02010;rat immunoglobulin G horseradish peroxidase as previously described (Willats <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0046" ref-type="ref">1998</xref>). <italic>In situ</italic> immunofluorescence analysis of <italic>M.&#x000a0;polymorpha</italic> gemmae was performed with gemmae in agar plugs incubated in volumes of antibody solutions using standard indirect labelling methods (Jackson <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0019" ref-type="ref">2012</xref>).</p></sec><sec id="nph14897-sec-0005"><title>Soil particle aggregation analyses</title><p>Wet sieving was performed on 100&#x000a0;g samples of sterilized sandy loam with an addition of the representative polysaccharides, tamarind seed xyloglucan, polygalacturonic acid (Megazyme International) and gum Arabic (Sigma&#x02010;Aldrich). Polysaccharides were added dry to moist sandy loam samples and thoroughly mixed, and then 100&#x000a0;ml of water was added to each sample and mixing continued for 2&#x000a0;h before wet sieving analysis. Wet sieving used an Octagon mechanical shaker (Endecotts Ltd, London, UK) set at an amplitude of 1.8&#x000a0;mm with a constant flow of tap water, which produced five size fractions of soil aggregates: &#x0003e;&#x000a0;1000, 500&#x02013;1000, 250&#x02013;500, 90&#x02013;250 and &#x0003c;&#x000a0;90&#x000a0;&#x003bc;m. Sieves were placed at 95&#x000b0;C for 30&#x000a0;min and then transferred to preweighed blotting card envelopes and placed at 40&#x000b0;C overnight before weighing.</p><p>Dry dispersion particle analysis was carried out using a Morphologi G3 (Malvern Instruments Ltd, Malvern, UK) particle characterization microscope. In this case, 5&#x000a0;g of sandy loam was mixed with test polysaccharides already dissolved in 10&#x000a0;ml of distilled water and mixed for 2&#x000a0;h. After mixing, samples were centrifuged for 10&#x000a0;min at 3856&#x000a0;<italic><bold>g</bold></italic>. Samples of pelleted soil were dried for 48&#x000a0;h at 40&#x000b0;C. Soil samples (18&#x000a0;mm<sup>3</sup>) were added into the dispersal unit which dispensed samples onto a glass slide with an injection pressure of 1&#x000a0;bar. Before and after each analysis, the dispersal unit and blast chamber were cleaned with antistatic spray. The Morphologi G3 imaged 50&#x000a0;000 particles per replicate using a &#x000d7;5 objective.</p><p>Scanning electron microscopy (SEM) was used to study dried samples as prepared for particle analysis and was carried out using a Quanta 200&#x000a0;F scanning electron microscope (Thermo Fisher Scientific, Loughborough, UK). A thin layer of soil was spread onto glass and stubs with carbon&#x02010;rich tape were dipped into the soil and then immediately coated with a 5&#x02010;nm&#x02010;thick layer of platinum under a vacuum before SEM imaging.</p></sec><sec id="nph14897-sec-0006"><title>Soil sampling, total organic carbon (TOC) and xyloglucan analyses</title><p>A sandy loam for soil aggregate analyses was obtained locally in May 2015. All visible plant material was removed from the sampled soils and these were sieved using a 2&#x000a0;mm analytical sieve and sterilized by autoclaving spread on a metal tray and then stored in the dark at 4&#x000b0;C until use. Farm grassland soil samples were obtained from a permanent pasture (GPS coordinates 53.872/&#x02212;1.323) in February 2016. Developing soils were collected in June 2014 from two subArctic glacier forefields on the east and western sides of the Kebnekaise massif in northern Sweden (Storglaci&#x000e4;ren, 67&#x000b0;54&#x02032;N, 18&#x000b0;34&#x02032;E; and Rabots, 67&#x000b0;55&#x02032;N, 18&#x000b0;29&#x02032;E) and from a high&#x02010;Arctic glacier forefield in Svalbard, Norway (Midre Lov&#x000e9;nbreen, 78&#x000b0;53&#x02032;N, 12&#x000b0;3&#x02032;E) in August 2013. The proglacial soil ages were estimated using aerial photography to be <italic>c</italic>. 80 and 104&#x000a0;yr for Storglaci&#x000e4;ren and Rabots, respectively, while that of the Midtre Lovenbreen soils was <italic>c</italic>. 2000&#x000a0;yr based on radio carbon dating (Hodkinson <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0017" ref-type="ref">2003</xref>). In each case three independent samples of both farm and glacial forefield soils from the same vicinity and from the upper 15&#x000a0;cm of soil were analysed. All visible plant materials were discarded at the time of collection, and the soils were dried and sieved (&#x0003c;&#x000a0;2&#x000a0;mm). One gram each of these soils was extracted with 2.5&#x000a0;ml of 4&#x000a0;M KOH for 1&#x000a0;h and then neutralized with 80% acetic acid and the extracts were stored at 4&#x000b0;C until use. TOC was analysed in all grassland and glacial forefield soils after crushing the sieved fractions to &#x0003c;&#x000a0;63&#x000a0;&#x003bc;m and treating the powders overnight with HCl to remove inorganic carbonates; these samples were combusted at 1350&#x000b0;C using a LECO SC 144DR elemental analyser (Leco Corp., St Joseph, MI, USA) calibrated with certified reference materials; analytical precision was &#x0003c;&#x000a0;5% and the limit of detection of 0.0062&#x000a0;g&#x000a0;kg<sup>&#x02212;1</sup>.</p></sec></sec><sec id="nph14897-sec-0007"><title>Results</title><sec id="nph14897-sec-0008"><title>Xyloglucan is released by a wide range of land plants</title><p>The polysaccharide components released from plant roots have not been characterized extensively. To initiate a programme to enhance the understanding of the structures and functions of plant polysaccharides that enter rhizospheres and soil environments, panels of monoclonal antibodies directed to plant cell wall polysaccharides (including pectic polysaccharides and arabinogalactan&#x02010;proteins) were used to assay the contents of growth media subsequent to plant growth (Tables <xref rid="nph14897-sup-0001" ref-type="supplementary-material">S1</xref>, <xref rid="nph14897-sup-0001" ref-type="supplementary-material">S2</xref>). These analyses included the media of six eudicotyledon species grown hydroponically and also the media of <italic>A.&#x000a0;thaliana</italic> and three bryophytes grown in shaking liquid culture. An unexpected feature common to all these growth media was the detection of xyloglucan, as determined by LM25 immunoassay. The LM25 xyloglucan epitope was detected particularly strongly in media of three grass species, whereas pectic polysaccharides were only weakly detected (Fig.&#x000a0;<xref rid="nph14897-fig-0001" ref-type="fig">1</xref>; Table&#x000a0;<xref rid="nph14897-sup-0001" ref-type="supplementary-material">S1</xref>), which was of interest, as grass species such as wheat, maize and barley have a relatively low concentration of xyloglucan within cell walls (Vogel, <xref rid="nph14897-bib-0044" ref-type="ref">2008</xref>). Xyloglucan was also found to be released into the media of bryophytes that do not have roots but soil&#x02010;penetrating rhizoids and in this case xyloglucan was the major polysaccharide detected in bryophyte growth media (Table&#x000a0;<xref rid="nph14897-sup-0001" ref-type="supplementary-material">S2</xref>).</p><fig fig-type="Figure" xml:lang="en" id="nph14897-fig-0001" orientation="portrait" position="float"><label>Figure 1</label><caption><p>Xyloglucan (XG) secretion from plants as determined by enzyme&#x02010;linked immunosorbent assay (ELISA) with XG MAb LM25 (commercial XG equivalents). (a) Survey of <styled-content style="fixed-case">XG</styled-content> release from a range of angiosperms and bryophytes. Most angiosperms were grown in a hydroponic system (H) for 14&#x000a0;d and FW and <styled-content style="fixed-case">XG</styled-content> in hydroponate were assessed. <italic>Arabidopsis</italic> and bryophytes were grown in shaking liquid culture (<styled-content style="fixed-case">LC</styled-content>) for 28&#x000a0;d and FWs and <styled-content style="fixed-case">XG</styled-content> in media were assessed. In the case of <italic>Marchantia polymorpha</italic> and <italic>Lunularia cruciata</italic>, gemmae were grown on solid media (agar, water) for 28&#x000a0;d and the gemmae were removed and agar extracted for <styled-content style="fixed-case">ELISA</styled-content> assessments. Results are presented as <styled-content style="fixed-case">XG</styled-content> (g g<sup>&#x02212;1</sup>
+<styled-content style="fixed-case">FW)</styled-content>. <italic>n&#x000a0;</italic>=<italic>&#x000a0;</italic>3; error bars, +&#x000a0;<styled-content style="fixed-case">SD</styled-content>. (b) Wheat seedlings grown hydroponically (eight seedlings, aerated 9&#x000a0;l medium) and growth medium samples taken at indicated time points for <styled-content style="fixed-case">ELISA</styled-content> assessment. <italic>M.&#x000a0;polymorpha</italic> gemmae were placed individually on agar solid media and at time points gemmae were removed, and agar plugs were taken and extracted with 1&#x000a0;ml water for <styled-content style="fixed-case">ELISA</styled-content> assessments. Results are presented as <styled-content style="fixed-case">XG</styled-content> released per plant at shown time points. Error bars, +&#x000a0;<styled-content style="fixed-case">SD</styled-content>.</p></caption><graphic id="nlm-graphic-1" xlink:href="NPH-217-1128-g001"/></fig><p>As xyloglucan release by plants was detected across the land plant phylogeny and abundantly in secretions of both cereals and liverworts, it was decided to focus our studies on this polysaccharide. Xyloglucan was found to be particularly abundant in the media of liverwort species when expressed on a per&#x02010;unit&#x02010;FW basis (Fig.&#x000a0;<xref rid="nph14897-fig-0001" ref-type="fig">1</xref>). The time course of xyloglucan released by wheat seedlings growing hydroponically and <italic>M.&#x000a0;polymorpha</italic> gemmae grown on agar is shown in Fig.&#x000a0;<xref rid="nph14897-fig-0001" ref-type="fig">1</xref> and indicates that for both of these highly diverged species, xyloglucan steadily accumulates in the media during growth. It was found that wheat grown hydroponically for 14&#x000a0;d released in the region of 800&#x000a0;&#x003bc;g xyloglucan per plant (Fig.&#x000a0;<xref rid="nph14897-fig-0001" ref-type="fig">1</xref>), which is equivalent to <italic>c</italic>. 20&#x000a0;&#x003bc;g&#x000a0;g<sup>&#x02212;1</sup> FW, and that more than 15&#x000a0;ng of xyloglucan was released from each <italic>M.&#x000a0;polymorpha</italic> gemma cultured for 28&#x000a0;d on solid agar media (quantified by extractions of media after gemmae removal; Fig.&#x000a0;<xref rid="nph14897-fig-0001" ref-type="fig">1</xref>). This is equivalent to &#x0003e;&#x000a0;50&#x000a0;&#x003bc;g&#x000a0;g<sup>&#x02212;1</sup> FW, making the amount of xyloglucan secreted from <italic>M.&#x000a0;polymorpha</italic> rhizoids comparable to or greater than that released by wheat roots grown in a hydroponic system.</p><p>The versatility of monoclonal antibodies allows the spatial assessment of released xyloglucan on the nitrocellulose prints of solid media growth surfaces after removal of plants, as shown for an <italic>A.&#x000a0;thaliana</italic> seedling and a <italic>M.&#x000a0;polymorpha</italic> gemma (Fig.&#x000a0;<xref rid="nph14897-fig-0002" ref-type="fig">2</xref>). In the case of <italic>A.&#x000a0;thaliana</italic> root, xyloglucan is abundant at the tips and appears to be diffuse, indicating high solubility in the solidified medium and not a tight association with root tip mucilage, and this is also true for <italic>M.&#x000a0;polymorpha</italic> rhizoids where immunoprints unequivocally indicate the release of xyloglucan from the rhizoids and not the thallus (Fig.&#x000a0;<xref rid="nph14897-fig-0002" ref-type="fig">2</xref>). Furthermore, the rhizoids are strongly and specifically labelled with the LM25 xyloglucan probe, as determined by immunofluorescence in a whole mount approach (Fig.&#x000a0;<xref rid="nph14897-fig-0002" ref-type="fig">2</xref>).</p><fig fig-type="Figure" xml:lang="en" id="nph14897-fig-0002" orientation="portrait" position="float"><label>Figure 2</label><caption><p>Detection of xyloglucan (<styled-content style="fixed-case">XG</styled-content>) secretion from plant surfaces with <styled-content style="fixed-case">XG MA</styled-content>b <styled-content style="fixed-case">LM</styled-content>25. (a) Bright field image of <italic>Arabidopsis</italic> seedling grown on plant agar solid media for 14&#x000a0;d paired with nitrocellulose print of solid media surface (after removal of the seedling) which was then probed with <styled-content style="fixed-case">LM</styled-content>25. Bars, 10&#x000a0;mm. (b) Secretion by day&#x02010;30 <italic>Marchantia polymorpha</italic> gemma. Bright&#x000a0;field image on agar and immunoprint of agar surface after gemma removal. Arrows indicate corresponding rhizoid tips. T, thallus outlined in print by dashed line. Bars, 1&#x000a0;mm. (c) Whole mount immunolabelling of day&#x02010;14&#x000a0;<italic>M.&#x000a0;polymorpha</italic> thallus/rhizoid <italic>in&#x000a0;situ</italic> on agar block with <styled-content style="fixed-case">LM</styled-content>25. Blue represents Calcofluor White labelling of cell walls and green represents LM25&#x02010;<styled-content style="fixed-case">FITC</styled-content>. T, thallus. Bars, 1&#x000a0;mm.</p></caption><graphic id="nlm-graphic-3" xlink:href="NPH-217-1128-g002"/></fig></sec><sec id="nph14897-sec-0009"><title>Xyloglucan is an effective promoter of soil aggregation</title><p>To elucidate possible roles and the influence of soluble xyloglucan in the rhizosphere and on soil properties, commercially available xyloglucan was added to a sterilized sandy loam (1% (w/w), 10&#x000a0;g&#x000a0;kg<sup>&#x02212;1</sup>). It was found to be effective in promoting the aggregation of soil particles (Fig.&#x000a0;<xref rid="nph14897-fig-0003" ref-type="fig">3</xref>), being even more effective in soil aggregation than the pectic polysaccharides and arabinogalactan&#x02010;proteins detected in root mucilage (Fig.&#x000a0;<xref rid="nph14897-fig-0003" ref-type="fig">3</xref>). Wet sieving indicated that when xyloglucan was added, the weight proportion of water&#x02010;stable soil aggregates &#x0003e;&#x000a0;1000&#x000a0;&#x003bc;m doubled from &#x0003c;&#x000a0;20% to &#x0003e; 40% of aggregates and the proportion &#x0003c;&#x000a0;250&#x000a0;&#x003bc;m halved from &#x0003e; 30% to <italic>c</italic>. 15% of all aggregates on a per&#x02010;weight basis (Fig.&#x000a0;<xref rid="nph14897-fig-0003" ref-type="fig">3</xref>). This capacity of xyloglucan to promote soil particle aggregation was confirmed using automated particle characterization after dry sample dispersion with a Morphologi G3 automated imaging system. This showed a significant increase in aggregate volumes &#x0003e;&#x000a0;2000&#x000a0;&#x003bc;m<sup>3</sup> as a result of addition of xyloglucan at 0.1% (w/w) (i.e. a 10 times lower concentration than in the wet&#x02010;sieving analysis) to the sandy loam (Fig.&#x000a0;<xref rid="nph14897-fig-0003" ref-type="fig">3</xref>). The influence of xyloglucan on soil structures was visualised using SEM, which revealed a distinctive occurrence of larger particles being coated with smaller soil particles and also a clear indication of increased attachment of smaller soil particles to the substrate (Fig.&#x000a0;<xref rid="nph14897-fig-0004" ref-type="fig">4</xref>).</p><fig fig-type="Figure" xml:lang="en" id="nph14897-fig-0003" orientation="portrait" position="float"><label>Figure 3</label><caption><p>Xyloglucan (XG) impact on soil aggregation. (a) Wet sieving analyses of a sterilized sandy loam with nothing added (na), with addition of tamarind seed <styled-content style="fixed-case">XG</styled-content>, polygalacturonic acid (<styled-content style="fixed-case">PGA</styled-content>) and gum Arabic (<styled-content style="fixed-case">GA</styled-content>; all at 1% (w/w), 10&#x000a0;g&#x000a0;kg<sup>&#x02212;1</sup>). Error bars, &#x000b1;&#x000a0;<styled-content style="fixed-case">SD</styled-content>. (b) Automated particle analysis after dry dispersion using a Morphologi G3 microscope. Data showing distribution of particle volumes with no addition (na) and 0.1% (w/w), 1&#x000a0;g&#x000a0;kg<sup>&#x02212;1</sup>
+<styled-content style="fixed-case">XG</styled-content>.</p></caption><graphic id="nlm-graphic-5" xlink:href="NPH-217-1128-g003"/></fig><fig fig-type="Figure" xml:lang="en" id="nph14897-fig-0004" orientation="portrait" position="float"><label>Figure 4</label><caption><p>Scanning electron micrographs showing xyloglucan (<styled-content style="fixed-case">XG</styled-content>) impact on aggregation of sandy loam particles without (na) and with <styled-content style="fixed-case">XG</styled-content> at 0.1% (w/w), 1&#x000a0;mg&#x000a0;g<sup>&#x02212;1</sup> soil.</p></caption><graphic id="nlm-graphic-7" xlink:href="NPH-217-1128-g004"/></fig></sec><sec id="nph14897-sec-0010"><title>Xyloglucan can be extracted from soils by alkali treatments and is relatively abundant in glacial forefield soils</title><p>Liverworts are important in the colonization of soils, both in terms of modern&#x02010;day environments and in the processes on the early Earth during land colonization by plants (Field <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0014" ref-type="ref">2015</xref>; Mitchell <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0028" ref-type="ref">2016</xref>). To extend our understanding of how plant&#x02010;secreted xyloglucan, particularly that from liverworts, may influence the formation of soils, we explored the xyloglucan content of young proglacial soils from Arctic Sweden and Norway. We found that alkali extractions of proglacial soils release significant amounts of xyloglucan compared with a typical UK grassland soil (Fig.&#x000a0;<xref rid="nph14897-fig-0005" ref-type="fig">5</xref>). The TOC contents of the Storglaci&#x000e4;ren and Rabots forefield soils (both <italic>c</italic>. 100&#x000a0;yr old and classed as regosols) were 3.46&#x000a0;&#x000b1;&#x000a0;1.62&#x000a0;and 0.89&#x000a0;&#x000b1;&#x000a0;0.36&#x000a0;g&#x000a0;kg<sup>&#x02212;1</sup> soil, respectively. The TOC of the <italic>c</italic>. 2000&#x02010;yr&#x02010;old soil from the Midre Lov&#x000e9;nbreen forefield (a cryosol) was an order of magnitude higher at 29.4&#x000a0;&#x000b1;&#x000a0;0.8&#x000a0;g&#x000a0;kg<sup>&#x02212;1</sup>, and similar to the TOC of the grassland soil (36.0&#x000a0;&#x000b1;&#x000a0;2.9&#x000a0;g&#x000a0;kg<sup>&#x02212;1</sup>). When expressed on a xyloglucan/TOC basis, there was a striking abundance of xyloglucan in all three glacial forefield mineral soils and particularly for the <italic>c</italic>. 2000&#x02010;yr&#x02010;old soil which had &#x0003e;&#x000a0;700&#x000a0;&#x003bc;g&#x000a0;g<sup>&#x02212;1</sup> TOC (Fig.&#x000a0;<xref rid="nph14897-fig-0005" ref-type="fig">5</xref>). In this proglacial soil, xyloglucan was detected at concentrations of &#x0003e; 20&#x000a0;mg&#x000a0;kg<sup>&#x02212;1</sup> soil. The equivalent analyses of the UK grassland soil indicated a xyloglucan content of <italic>c</italic>.&#x000a0;0.8&#x000a0;g&#x000a0;kg<sup>&#x02212;1</sup> soil.</p><fig fig-type="Figure" xml:lang="en" id="nph14897-fig-0005" orientation="portrait" position="float"><label>Figure 5</label><caption><p>Xyloglucan (<styled-content style="fixed-case">XG</styled-content>) contents expressed as &#x003bc;g&#x000a0;g<sup>&#x02212;1</sup> soil total organic carbon (<styled-content style="fixed-case">TOC</styled-content>) in a sample of <styled-content style="fixed-case">UK</styled-content> farm grassland soil (pasture) and three glacial forefield soil samples as determined by <styled-content style="fixed-case">KOH</styled-content> extraction. Error bars, +&#x000a0;<styled-content style="fixed-case">SD</styled-content>,<italic> n&#x000a0;</italic>=<italic>&#x000a0;</italic>3. Soils from Storglaci&#x000e4;ren and Rabots glaciers are <italic>c</italic>. 120&#x000a0;yr old (classed as regosols) with, in all cases, <styled-content style="fixed-case">TOC</styled-content>&#x000a0;&#x0003c;&#x000a0;6&#x000a0;g&#x000a0;kg<sup>&#x02212;1</sup> soil; that of Midre Lov&#x000e9;nbreen glacier is <italic>c</italic>. 2000 yr old (a cryosol) with <styled-content style="fixed-case">TOC</styled-content> of 29.4&#x000a0;&#x000b1;&#x000a0;0.8&#x000a0;g&#x000a0;kg<sup>&#x02212;1</sup>; and the grassland soil <styled-content style="fixed-case">TOC</styled-content> is 36.0&#x000a0;&#x000b1;&#x000a0;2.9&#x000a0;g&#x000a0;kg<sup>&#x02212;1</sup>.</p></caption><graphic id="nlm-graphic-9" xlink:href="NPH-217-1128-g005"/></fig></sec></sec><sec id="nph14897-sec-0011"><title>Discussion</title><p>To date the focus on xyloglucan in plant biology has been on its role in plant cell walls where it is a major matrix polysaccharide that is particularly abundant in the primary cell walls of eudicots (<italic>c</italic>. 20% wall polysaccharides) but less so in grass cell walls (<italic>c</italic>. 5%) (Vogel, <xref rid="nph14897-bib-0044" ref-type="ref">2008</xref>; Park &#x00026; Cosgrove, <xref rid="nph14897-bib-0033" ref-type="ref">2015</xref>). Xyloglucan is a branched polysaccharide with a &#x003b2;1,4&#x02010;glucan backbone with side chain structures including xylosyl, galactosyl and fucosyl residues (Park &#x00026; Cosgrove, <xref rid="nph14897-bib-0033" ref-type="ref">2015</xref>). In the context of cell wall matrices, xyloglucan's roles in binding to and tethering cellulose microfibrils and in the control of cell expansion remain an active area of research (Park &#x00026; Cosgrove, <xref rid="nph14897-bib-0033" ref-type="ref">2015</xref>).</p><p>Our extended analyses indicate that xyloglucan secretion is a widespread phenomenon across land plants with particular abundance in cereal hydroponates and also, at the other end of land plant phylogeny, in liverwort growth media. Liverworts do not possess roots, but instead produce extensive rhizoids &#x02013; tip&#x02010;growing cellular extensions in some ways comparable to root hairs (Jones &#x00026; Dolan, <xref rid="nph14897-bib-0020" ref-type="ref">2012</xref>; Duckett <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0013" ref-type="ref">2014</xref>) with conserved mechanisms of cell wall formation (Honkanen <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0018" ref-type="ref">2016</xref>). The cellular basis of the release of xyloglucan by plant roots &#x02013; whether root tips or root hairs or both &#x02013; remains to be determined. The significance of the apparently relatively low concentrations of xyloglucan released by pea is also unclear at this stage. It is possible that the release of factors from root hairs may be different in legumes in the context of root hairs as points for <italic>Rhizobia</italic> entry into roots. It is of interest in this context that in <italic>A.&#x000a0;thaliana</italic>, a root hair&#x02010;specific acidic xyloglucan (with galacturonic acid as a side chain residue) has been identified and also that a structurally similar acidic xyloglucan has been identified in liverwort cell walls (Pe&#x000f1;a <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0036" ref-type="ref">2008</xref>, <xref rid="nph14897-bib-0037" ref-type="ref">2012</xref>). Additionally a related xyloglucan&#x02010;specific galacturonosyltransferase has roles in both root hair and rhizoid development (Honkanen <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0018" ref-type="ref">2016</xref>). It is also of interest here that, in this initial survey, cultured <italic>P.&#x000a0;patens</italic> secretes relatively low concentrations of xyloglucan in comparison with the liverwort species. In liquid cultures, <italic>P.&#x000a0;patens</italic> mainly produces chloronemata which are very different from liverwort rhizoids (Pressel <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0039" ref-type="ref">2008</xref>). Indeed, the multicellular filament systems (rhizoids, caulo&#x02010; and chloronemata) found in mosses may well have had a separate evolutionary origin as these attributes are absent in basal moss clades (Newton <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0030" ref-type="ref">2000</xref>). However, there has been no previous report of the abundant release of xyloglucan by land plants other than the identification of xyloglucan structural features in maize and wheat root mucilage (Bacic <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0001" ref-type="ref">1986</xref>; Moody <italic>et al</italic>., <xref rid="nph14897-bib-0029" ref-type="ref">1988</xref>). Similarly, there has been little previous work on factors released from rhizoids (Odu, <xref rid="nph14897-bib-0032" ref-type="ref">1989</xref>) and it was once thought that their major role was anchorage, but now it is clear they are likely to be involved in nutrient acquisition and associations with fungi (Pocock &#x00026; Duckett, <xref rid="nph14897-bib-0038" ref-type="ref">1985</xref>; Duckett <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0013" ref-type="ref">2014</xref>).</p><p>The work presented here has targeted soluble molecules that are released from roots/rhizoids and which may not be features of the structurally coherent mucilage that stays adhered to root tips. Future work will need to define the structures of these released glycans and also the cellular and molecular mechanisms of release from roots and rhizoids.</p><sec id="nph14897-sec-0012"><title>Impacts of released xyloglucan in rhizospheres</title><p>There have been only a few studies of the effect of exogenous polysaccharides on soil properties such as compressive strength and hydration characteristics and these have included xanthan and dextran of bacterial origin and polygalacturonic acid (Czarnes <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0008" ref-type="ref">2000</xref>; Hart <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0016" ref-type="ref">2001</xref>; Chang <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0004" ref-type="ref">2015</xref>). Here, using proxies of three polysaccharides known to be detected in plant mucilage and in plant growth media, we show that xyloglucan is the most effective in increasing the proportion of large aggregates in a sandy loam. Future work will require the assessment of isolates of actual released polymers, and also a wider consideration to include microbial polysaccharides, to develop a full understanding of polysaccharide impacts on soil aggregate status. The soil supplementation studies reported here have used much higher concentrations of xyloglucan than were detected in our bulk analyses of soil. However, we propose that the local concentrations of xyloglucan and other plant polysaccharides in the immediate rhizosphere surrounding the plant root/rhizoid surfaces are likely to be of a much higher concentration than those indicated by our bulk soil analyses; indeed, it is possible that they accumulate in soils in these areas influencing rhizosphere properties.</p><p>Factors such as xyloglucan may be key in driving improved local soil structure, including soil particle adhesion and enhanced soil water&#x02010;holding capacity (Dennis <italic>et&#x000a0;al</italic>.,<xref rid="nph14897-bib-0010" ref-type="ref">2010</xref>; Carminati &#x00026; Vetterlein, <xref rid="nph14897-bib-0003" ref-type="ref">2013</xref>; York <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0047" ref-type="ref">2016</xref>). An additional factor here, in the disparity in the amounts detected in bulk soils and the concentrations of added xyloglucan required to demonstrate a change in aggregate status by wet sieving analysis, dry dispersion and SEM techniques, is that we do not yet know the biochemical natures of the xyloglucans released by land plants and these are likely to be different from tamarind seed xyloglucan used in our studies. This commercial form of xyloglucan has no acidic residues that are known to be present in xyloglucan of <italic>A.&#x000a0;thaliana</italic> roots and liverworts (Pe&#x000f1;a <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0036" ref-type="ref">2008</xref>, <xref rid="nph14897-bib-0037" ref-type="ref">2012</xref>), as discussed earlier. It is possible that specific biochemical forms of released factors have different properties and secreted xyloglucan may be more effective in soil particle adhesion than the form of xyloglucan we have used to date. Moreover, the extent of release of polysaccharides in relation to plant biomass may be very different between plants grown in soil and those grown in hydroponic and culture systems. The root systems within a volume of soil can be extensive (Dittmer, <xref rid="nph14897-bib-0011" ref-type="ref">1937</xref>) and a large root&#x02013;soil interface is likely to have an associated large capacity to secrete exudates, including xyloglucan. Further work should focus in this area and aim to characterize not only the identity and structures of plant root/rhizoid&#x02010;secreted polysaccharides, but also the effects of such secretions on surrounding microbial communities, particularly in terms of community structure and functioning. Furthermore, investigations are also now needed to define the responses of plant root/rhizoid secretions to variation in growth environments and nutrient availabilities.</p></sec><sec id="nph14897-sec-0013"><title>Plant terrestrialization and first soils</title><p>Given the critical placement of liverworts at the base of the extant land plant phylogeny (Ligrone <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0027" ref-type="ref">2012</xref>), our finding that they secrete xyloglucan from their rhizoids is evolutionarily significant. Xyloglucan release has been detected across the complex thalloid liverwort phylogeny, including both early divergent genera (<italic>Blasia</italic> and <italic>Lunularia</italic>) and the later divergent <italic>Marchantia</italic> genus (Crandall&#x02010;Stotler <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0007" ref-type="ref">2009</xref>). The abundant release of xyloglucan by <italic>B.&#x000a0;pusilla</italic> may relate to it being a known colonizer of newly exposed mineral soils (Mitchell <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0028" ref-type="ref">2016</xref>), and extended studies of xyloglucan secretion by liverworts in the context of ecology are likely to be fruitful. Analysis of genes encoding proteins involved in xyloglucan biosynthesis and metabolism are indicative that this polysaccharide was an important structural feature of ancestral charophytes that mediated their colonization of land (Del Bem &#x00026; Vincentz, <xref rid="nph14897-bib-0009" ref-type="ref">2010</xref>; Harholt <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0015" ref-type="ref">2016</xref>). We propose that xyloglucan (or equivalent polysaccharide) secretions from the rhizoids or rhizoid&#x02010;like structures of the earliest land plants colonizing Earth's continental land masses &#x0003e;&#x000a0;475&#x000a0;million&#x000a0;yr&#x000a0;ago may have played a role in the formation of the first soils by modifying their immediate rhizospheric environments acting as a transient particle&#x02010;binding agent, aiding aggregation. Such alterations in primordial soils would facilitate SOM and carbon preservation, while contributing to increased aeration and water movement (Tisdall &#x00026; Oades, <xref rid="nph14897-bib-0043" ref-type="ref">1982</xref>; Oades, <xref rid="nph14897-bib-0031" ref-type="ref">1993</xref>). This is likely to have had knock&#x02010;on effects in establishing early soil biotic communities and downstream impacts on mineral weathering and geochemistry (Lenton <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0026" ref-type="ref">2012</xref>; Quirk <italic>et&#x000a0;al</italic>., <xref rid="nph14897-bib-0040" ref-type="ref">2015</xref>). The turnover time of xyloglucan within soils is probably short as it is easily assimilatable by microbes. The relatively elevated xyloglucan contents of glacial forefield soils relative to a grass land soil may be a result of abundance of xyloglucan&#x02010;secreting plants, xyloglucan&#x02010;rich biomass and/or less developed microbial systems capable of xyloglucan degradation. The potential for polysaccharide recalcitrance to enzymatic degradation when adhered to mineral particle surfaces will be an interesting area for future study.</p><p>In summary, here we show that xyloglucan is widely secreted by plant roots, and also importantly by liverwort rhizoids, and has the capacity to play a role in soil structure and functioning through its action as a potentially transient particle&#x02010;binding agent. These findings strongly support the hypothesis that xyloglucan played a crucial role in plant terrestrialization and the formation of the first soils. This work extends our understanding of plant&#x02013;soil biology and also presents new approaches to dissect polysaccharides as important factors influencing soil structures and properties.</p></sec></sec><sec id="nph14897-sec-0015"><title>Author contributions</title><p>A.F.G., M.J.P., J.B., L.G.B., K.J.F. and J.P.K. planned and designed the research. A.F.G., M.J.P., J.B., B.M. and S.E.M. performed experiments, conducted field work, and analysed the data. A.F.G, J.B., L.G.B., K.J.F. and J.P.K. wrote the manuscript.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material content-type="local-data"><p>Please note: Wiley Blackwell are not responsible for the content or functionality of any Supporting Information supplied by the authors. Any queries (other than missing material) should be directed to the <italic>New Phytologist</italic> Central Office.</p></supplementary-material><supplementary-material content-type="local-data" id="nph14897-sup-0001"><caption><p>
+<bold>Table&#x000a0;S1</bold> Cell wall polysaccharide epitope detection in hydroponates from six crop species</p><p>
+<bold>Table&#x000a0;S2</bold> Cell wall polysaccharide epitope detection in medium from liquid cultures of Arabidopsis and bryophytes</p></caption><media xlink:href="NPH-217-1128-s001.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><ack id="nph14897-sec-0014"><title>Acknowledgements</title><p>We acknowledge the award of a University of Leeds Anniversary Research Scholarship to A.F.G. and support from the UK Biotechnology &#x00026; Biological Sciences Research council (S.E.M., J.P.K., BB/K017489/10; K.J.F., BB/M026825/1) and the UK Natural Environment Research Council (L.G.B., NE/J022365/1; K.J.F., NE/N00941X/1). We thank the anonymous reviewers and editor for their constructive criticisms of a previous version of the manuscript.</p></ack><ref-list content-type="cited-references" id="nph14897-bibl-0001"><title>References</title><ref id="nph14897-bib-0001"><mixed-citation publication-type="journal" id="nph14897-cit-0001">
+<string-name>
+<surname>Bacic</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Moody</surname>
+<given-names>SF</given-names>
+</string-name>, <string-name>
+<surname>Clarke</surname>
+<given-names>AE</given-names>
+</string-name>. <year>1986</year>
+<article-title>Structural analysis of secreted root slime from maize (<italic>Zea mays</italic> L.)</article-title>. <source>Plant Physiology</source>
+<volume>80</volume>: <fpage>771</fpage>&#x02013;<lpage>777</lpage>.<pub-id pub-id-type="pmid">16664700</pub-id></mixed-citation></ref><ref id="nph14897-bib-0002"><mixed-citation publication-type="journal" id="nph14897-cit-0002">
+<string-name>
+<surname>Baetz</surname>
+<given-names>U</given-names>
+</string-name>, <string-name>
+<surname>Martinoia</surname>
+<given-names>E</given-names>
+</string-name>. <year>2014</year>
+<article-title>Root exudates: the hidden part of plant defense</article-title>. <source>Trends in Plant Science</source>
+<volume>19</volume>: <fpage>90</fpage>&#x02013;<lpage>98</lpage>.<pub-id pub-id-type="pmid">24332225</pub-id></mixed-citation></ref><ref id="nph14897-bib-0003"><mixed-citation publication-type="journal" id="nph14897-cit-0003">
+<string-name>
+<surname>Carminati</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Vetterlein</surname>
+<given-names>D</given-names>
+</string-name>. <year>2013</year>
+<article-title>Plasticity of rhizosphere hydraulic properties as a key for efficient utilization of scare resources</article-title>. <source>Annals of Botany</source>
+<volume>112</volume>: <fpage>277</fpage>&#x02013;<lpage>290</lpage>.<pub-id pub-id-type="pmid">23235697</pub-id></mixed-citation></ref><ref id="nph14897-bib-0004"><mixed-citation publication-type="journal" id="nph14897-cit-0004">
+<string-name>
+<surname>Chang</surname>
+<given-names>I</given-names>
+</string-name>, <string-name>
+<surname>Im</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Prasidhi</surname>
+<given-names>AK</given-names>
+</string-name>, <string-name>
+<surname>Cho</surname>
+<given-names>G&#x02010;C</given-names>
+</string-name>. <year>2015</year>
+<article-title>Effects of xanthan gum biopolymer on soil strengthening</article-title>. <source>Construction and Building Materials.</source>
+<volume>74</volume>: <fpage>65</fpage>&#x02013;<lpage>72</lpage>.</mixed-citation></ref><ref id="nph14897-bib-0005"><mixed-citation publication-type="book" id="nph14897-cit-0005">
+<string-name>
+<surname>Cheshire</surname>
+<given-names>MV</given-names>
+</string-name>, <string-name>
+<surname>Hayes</surname>
+<given-names>MHB</given-names>
+</string-name>. <year>1990</year>
+<chapter-title>Composition, origins, structures and reactivities of soil polysaccharides</chapter-title> In: <person-group person-group-type="editor"><name><surname>De Boodt</surname><given-names>MF</given-names></name></person-group>, <person-group person-group-type="editor"><name><surname>Hayes</surname><given-names>MHB</given-names></name></person-group>, <person-group person-group-type="editor"><name><surname>Herbillon</surname><given-names>A</given-names></name></person-group>, <person-group person-group-type="editor"><name><surname>De Strooper</surname><given-names>EBA</given-names></name></person-group>, <person-group person-group-type="editor"><name><surname>Tuck</surname><given-names>JJ</given-names></name></person-group>, eds. <source>Soil colloids and their associations in aggregates</source>. <publisher-loc>New York, NY, USA</publisher-loc>: <publisher-name>Plenum Press</publisher-name>, <fpage>307</fpage>&#x02013;<lpage>336</lpage>.</mixed-citation></ref><ref id="nph14897-bib-0006"><mixed-citation publication-type="journal" id="nph14897-cit-0006">
+<string-name>
+<surname>Cornuault</surname>
+<given-names>V</given-names>
+</string-name>, <string-name>
+<surname>Manfield</surname>
+<given-names>IW</given-names>
+</string-name>, <string-name>
+<surname>Ralet</surname>
+<given-names>M&#x02010;C</given-names>
+</string-name>, <string-name>
+<surname>Knox</surname>
+<given-names>JP</given-names>
+</string-name>. <year>2014</year>
+<article-title>Epitope Detection Chromatography (EDC): a method to dissect the structural heterogeneity and interconnections of plant cell wall matrix glycans</article-title>. <source>Plant Journal</source>
+<volume>78</volume>: <fpage>715</fpage>&#x02013;<lpage>722</lpage>.<pub-id pub-id-type="pmid">24621270</pub-id></mixed-citation></ref><ref id="nph14897-bib-0007"><mixed-citation publication-type="journal" id="nph14897-cit-0007">
+<string-name>
+<surname>Crandall&#x02010;Stotler</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Stotler</surname>
+<given-names>RE</given-names>
+</string-name>, <string-name>
+<surname>Long</surname>
+<given-names>DG</given-names>
+</string-name>. <year>2009</year>
+<article-title>Phylogeny and classification of the Marchantiophyta</article-title>. <source>Edinburgh Journal of Botany</source>
+<volume>66</volume>: <fpage>155</fpage>&#x02013;<lpage>198</lpage>.</mixed-citation></ref><ref id="nph14897-bib-0008"><mixed-citation publication-type="journal" id="nph14897-cit-0008">
+<string-name>
+<surname>Czarnes</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Hallet</surname>
+<given-names>PD</given-names>
+</string-name>, <string-name>
+<surname>Bengough</surname>
+<given-names>AG</given-names>
+</string-name>, <string-name>
+<surname>Young</surname>
+<given-names>IM</given-names>
+</string-name>. <year>2000</year>
+<article-title>Root&#x02010; and microbial&#x02010;derived mucilages affect soil structure and water transport</article-title>. <source>European Journal of Soil Science</source>
+<volume>51</volume>: <fpage>435</fpage>&#x02013;<lpage>443</lpage>.</mixed-citation></ref><ref id="nph14897-bib-0009"><mixed-citation publication-type="journal" id="nph14897-cit-0009">
+<string-name>
+<surname>Del Bem</surname>
+<given-names>LE</given-names>
+</string-name>, <string-name>
+<surname>Vincentz</surname>
+<given-names>MGA</given-names>
+</string-name>. <year>2010</year>
+<article-title>Evolution of xyloglucan&#x02010;related genes in green plants</article-title>. <source>BMC Evolutionary Biology</source>
+<volume>10</volume>: <fpage>342</fpage>.<pub-id pub-id-type="pmid">21059254</pub-id></mixed-citation></ref><ref id="nph14897-bib-0010"><mixed-citation publication-type="journal" id="nph14897-cit-0010">
+<string-name>
+<surname>Dennis</surname>
+<given-names>PG</given-names>
+</string-name>, <string-name>
+<surname>Miller</surname>
+<given-names>AJ</given-names>
+</string-name>, <string-name>
+<surname>Hirsch</surname>
+<given-names>PR</given-names>
+</string-name>. <year>2010</year>
+<article-title>Are root exudates more important than other sources of rhizodeposits in structuring rhizosphere bacterial communities?</article-title>
+<source>FEMS Microbiology Ecology</source>
+<volume>72</volume>: <fpage>313</fpage>&#x02013;<lpage>327</lpage>.<pub-id pub-id-type="pmid">20370828</pub-id></mixed-citation></ref><ref id="nph14897-bib-0011"><mixed-citation publication-type="journal" id="nph14897-cit-0011">
+<string-name>
+<surname>Dittmer</surname>
+<given-names>HJ</given-names>
+</string-name>. <year>1937</year>
+<article-title>A quantitative study of roots and root hairs of a winter rye plant (<italic>Secale cereale</italic>)</article-title>. <source>American Journal of Botany</source>
+<volume>24</volume>: <fpage>417</fpage>&#x02013;<lpage>420</lpage>.</mixed-citation></ref><ref id="nph14897-bib-0012"><mixed-citation publication-type="journal" id="nph14897-cit-0012">
+<string-name>
+<surname>Driouich</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Follet&#x02010;Gueye</surname>
+<given-names>M&#x02010;L</given-names>
+</string-name>, <string-name>
+<surname>Vicr&#x000e9;&#x02010;Gibouin</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Hawes</surname>
+<given-names>M</given-names>
+</string-name>. <year>2013</year>
+<article-title>Root border cells and secretions as critical elements in plant host defense</article-title>. <source>Current Opinion in Plant Biology</source>
+<volume>16</volume>: <fpage>489</fpage>&#x02013;<lpage>495</lpage>.<pub-id pub-id-type="pmid">23856080</pub-id></mixed-citation></ref><ref id="nph14897-bib-0013"><mixed-citation publication-type="journal" id="nph14897-cit-0013">
+<string-name>
+<surname>Duckett</surname>
+<given-names>JG</given-names>
+</string-name>, <string-name>
+<surname>Ligrone</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Renzagalia</surname>
+<given-names>KS</given-names>
+</string-name>, <string-name>
+<surname>Pressel</surname>
+<given-names>S</given-names>
+</string-name>. <year>2014</year>
+<article-title>Pegged and smooth rhizoids in complex thalloid liverworts (Marchantiopsida): structure, function and evolution</article-title>. <source>Botanical Journal of the Linnean Society</source>
+<volume>174</volume>: <fpage>68</fpage>&#x02013;<lpage>92</lpage>.</mixed-citation></ref><ref id="nph14897-bib-0014"><mixed-citation publication-type="journal" id="nph14897-cit-0014">
+<string-name>
+<surname>Field</surname>
+<given-names>KJ</given-names>
+</string-name>, <string-name>
+<surname>Pressel</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Duckett</surname>
+<given-names>JG</given-names>
+</string-name>, <string-name>
+<surname>Rimington</surname>
+<given-names>WR</given-names>
+</string-name>, <string-name>
+<surname>Bidartondo</surname>
+<given-names>MI</given-names>
+</string-name>. <year>2015</year>
+<article-title>Symbiotic options for the conquest of land</article-title>. <source>Trends in Ecology &#x00026; Evolution</source>
+<volume>30</volume>: <fpage>477</fpage>&#x02013;<lpage>486</lpage>.<pub-id pub-id-type="pmid">26111583</pub-id></mixed-citation></ref><ref id="nph14897-bib-0015"><mixed-citation publication-type="journal" id="nph14897-cit-0015">
+<string-name>
+<surname>Harholt</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Moestrup</surname>
+<given-names>&#x000d8;</given-names>
+</string-name>, <string-name>
+<surname>Ulvskov</surname>
+<given-names>P</given-names>
+</string-name>. <year>2016</year>
+<article-title>Why plants were terrestrial from the beginning</article-title>. <source>Trends in Plant Science</source>
+<volume>21</volume>: <fpage>96</fpage>&#x02013;<lpage>101</lpage>.<pub-id pub-id-type="pmid">26706443</pub-id></mixed-citation></ref><ref id="nph14897-bib-0016"><mixed-citation publication-type="journal" id="nph14897-cit-0016">
+<string-name>
+<surname>Hart</surname>
+<given-names>TD</given-names>
+</string-name>, <string-name>
+<surname>Lynch</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name>
+<surname>Chamberlain</surname>
+<given-names>AHL</given-names>
+</string-name>. <year>2001</year>
+<article-title>Anion exclusion in microbial and soil polysaccharides</article-title>. <source>Biology &#x00026; Fertility of Soils</source>
+<volume>34</volume>: <fpage>201</fpage>&#x02013;<lpage>209</lpage>.</mixed-citation></ref><ref id="nph14897-bib-0017"><mixed-citation publication-type="journal" id="nph14897-cit-0017">
+<string-name>
+<surname>Hodkinson</surname>
+<given-names>ID</given-names>
+</string-name>, <string-name>
+<surname>Coulson</surname>
+<given-names>SJ</given-names>
+</string-name>, <string-name>
+<surname>Webb</surname>
+<given-names>NR</given-names>
+</string-name>. <year>2003</year>
+<article-title>Community assembly along proglacial chronosequences in the high Arctic: vegetation and soil development in north&#x02010;west Svalbard</article-title>. <source>Journal of Ecology</source>
+<volume>91</volume>: <fpage>651</fpage>&#x02013;<lpage>663</lpage>.</mixed-citation></ref><ref id="nph14897-bib-0018"><mixed-citation publication-type="journal" id="nph14897-cit-0018">
+<string-name>
+<surname>Honkanen</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Jones</surname>
+<given-names>VAS</given-names>
+</string-name>, <string-name>
+<surname>Morieri</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Champion</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Hetherington</surname>
+<given-names>AJ</given-names>
+</string-name>, <string-name>
+<surname>Kelly</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Proust</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Saint&#x02010;Marcoux</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Prescott</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Dolan</surname>
+<given-names>L</given-names>
+</string-name>. <year>2016</year>
+<article-title>The mechanism forming the cell surface of tip&#x02010;growing rooting cells is conserved among land plants</article-title>. <source>Current Biology</source>
+<volume>26</volume>: <fpage>3238</fpage>&#x02013;<lpage>3244</lpage>.<pub-id pub-id-type="pmid">27866889</pub-id></mixed-citation></ref><ref id="nph14897-bib-0019"><mixed-citation publication-type="journal" id="nph14897-cit-0019">
+<string-name>
+<surname>Jackson</surname>
+<given-names>O</given-names>
+</string-name>, <string-name>
+<surname>Taylor</surname>
+<given-names>O</given-names>
+</string-name>, <string-name>
+<surname>Adams</surname>
+<given-names>DG</given-names>
+</string-name>, <string-name>
+<surname>Knox</surname>
+<given-names>JP</given-names>
+</string-name>. <year>2012</year>
+<article-title>Arabinogalactan&#x02010;proteins occur in the free&#x02010;living cyanobacterium <italic>Nostoc</italic> and in plant&#x02010;<italic>Nostoc</italic> symbioses</article-title>. <source>Molecular Plant&#x02010;Microbe Interactions</source>
+<volume>25</volume>: <fpage>1338</fpage>&#x02013;<lpage>1349</lpage>.<pub-id pub-id-type="pmid">22670754</pub-id></mixed-citation></ref><ref id="nph14897-bib-0020"><mixed-citation publication-type="journal" id="nph14897-cit-0020">
+<string-name>
+<surname>Jones</surname>
+<given-names>VAS</given-names>
+</string-name>, <string-name>
+<surname>Dolan</surname>
+<given-names>L</given-names>
+</string-name>. <year>2012</year>
+<article-title>The evolution of root hairs and rhizoids</article-title>. <source>Annals of Botany</source>
+<volume>110</volume>: <fpage>205</fpage>&#x02013;<lpage>212</lpage>.<pub-id pub-id-type="pmid">22730024</pub-id></mixed-citation></ref><ref id="nph14897-bib-0021"><mixed-citation publication-type="journal" id="nph14897-cit-0021">
+<string-name>
+<surname>Kibblewhite</surname>
+<given-names>MG</given-names>
+</string-name>, <string-name>
+<surname>Ritz</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Swift</surname>
+<given-names>MJ</given-names>
+</string-name>. <year>2008</year>
+<article-title>Soil health in agricultural systems</article-title>. <source>Philosophical Transactions of the Royal Society of London. Series B: Biological Sciences</source>
+<volume>363</volume>: <fpage>685</fpage>&#x02013;<lpage>701</lpage>.<pub-id pub-id-type="pmid">17785275</pub-id></mixed-citation></ref><ref id="nph14897-bib-0022"><mixed-citation publication-type="journal" id="nph14897-cit-0022">
+<string-name>
+<surname>Knee</surname>
+<given-names>EM</given-names>
+</string-name>, <string-name>
+<surname>Gong</surname>
+<given-names>F&#x02010;C</given-names>
+</string-name>, <string-name>
+<surname>Gao</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Teplitski</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Jones</surname>
+<given-names>AR</given-names>
+</string-name>, <string-name>
+<surname>Foxworthy</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Mort</surname>
+<given-names>AJ</given-names>
+</string-name>, <string-name>
+<surname>Bauer</surname>
+<given-names>WD</given-names>
+</string-name>. <year>2001</year>
+<article-title>Root mucilage from pea and its utilization by rhizosphere bacteria as a sole carbon source</article-title>. <source>Molecular Plant&#x02013;Microbe Interactions</source>
+<volume>14</volume>: <fpage>775</fpage>&#x02013;<lpage>784</lpage>.<pub-id pub-id-type="pmid">11386373</pub-id></mixed-citation></ref><ref id="nph14897-bib-0023"><mixed-citation publication-type="journal" id="nph14897-cit-0023">
+<string-name>
+<surname>Lal</surname>
+<given-names>R</given-names>
+</string-name>. <year>1997</year>
+<article-title>Degradation and resilience of soils</article-title>. <source>Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences</source>
+<volume>352</volume>: <fpage>997</fpage>&#x02013;<lpage>1010</lpage>.</mixed-citation></ref><ref id="nph14897-bib-0024"><mixed-citation publication-type="book" id="nph14897-cit-0024">
+<string-name>
+<surname>Leake</surname>
+<given-names>JR</given-names>
+</string-name>, <string-name>
+<surname>Read</surname>
+<given-names>DJ</given-names>
+</string-name>. <year>2017</year>
+<chapter-title>Mycorrhizal symbioses and pedogenesis throughout Earth's history</chapter-title> In: <person-group person-group-type="editor"><name><surname>Johnson</surname><given-names>NC</given-names></name></person-group>, <person-group person-group-type="editor"><name><surname>Gehring</surname><given-names>C</given-names></name></person-group>, <person-group person-group-type="editor"><name><surname>Jansa</surname><given-names>J</given-names></name></person-group>, eds. <source>Mycorrhizal mediation of soil</source>. <publisher-loc>Amsterdam, the Netherlands</publisher-loc>: <publisher-name>Elsevier</publisher-name>, <fpage>9</fpage>&#x02013;<lpage>33</lpage>.</mixed-citation></ref><ref id="nph14897-bib-0025"><mixed-citation publication-type="journal" id="nph14897-cit-0025">
+<string-name>
+<surname>Lehmann</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Kleber</surname>
+<given-names>M</given-names>
+</string-name>. <year>2015</year>
+<article-title>The contentious nature of soil organic matter</article-title>. <source>Nature</source>
+<volume>528</volume>: <fpage>60</fpage>&#x02013;<lpage>68</lpage>.<pub-id pub-id-type="pmid">26595271</pub-id></mixed-citation></ref><ref id="nph14897-bib-0026"><mixed-citation publication-type="journal" id="nph14897-cit-0026">
+<string-name>
+<surname>Lenton</surname>
+<given-names>TM</given-names>
+</string-name>, <string-name>
+<surname>Crouch</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Johnson</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Pires</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Dolan</surname>
+<given-names>L</given-names>
+</string-name>. <year>2012</year>
+<article-title>First plants cooled the Ordovician</article-title>. <source>Nature Geoscience</source>
+<volume>5</volume>: <fpage>86</fpage>&#x02013;<lpage>89</lpage>.</mixed-citation></ref><ref id="nph14897-bib-0027"><mixed-citation publication-type="journal" id="nph14897-cit-0027">
+<string-name>
+<surname>Ligrone</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Duckett</surname>
+<given-names>JG</given-names>
+</string-name>, <string-name>
+<surname>Renzaglia</surname>
+<given-names>KS</given-names>
+</string-name>. <year>2012</year>
+<article-title>Major transitions in the evolution of early land plants: a bryological perspective</article-title>. <source>Annals of Botany</source>
+<volume>109</volume>: <fpage>851</fpage>&#x02013;<lpage>871</lpage>.<pub-id pub-id-type="pmid">22356739</pub-id></mixed-citation></ref><ref id="nph14897-bib-0028"><mixed-citation publication-type="journal" id="nph14897-cit-0028">
+<string-name>
+<surname>Mitchell</surname>
+<given-names>RL</given-names>
+</string-name>, <string-name>
+<surname>Cuadros</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Duckett</surname>
+<given-names>JG</given-names>
+</string-name>, <string-name>
+<surname>Pressel</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Mavris</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Sykes</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Najorka</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Edgecombe</surname>
+<given-names>GD</given-names>
+</string-name>, <string-name>
+<surname>Kenrick</surname>
+<given-names>P</given-names>
+</string-name>. <year>2016</year>
+<article-title>Mineral weathering and soil development in the earliest land plant ecosystems</article-title>. <source>Geology</source>
+<volume>44</volume>: <fpage>1007</fpage>&#x02013;<lpage>1010</lpage>.</mixed-citation></ref><ref id="nph14897-bib-0029"><mixed-citation publication-type="journal" id="nph14897-cit-0029">
+<string-name>
+<surname>Moody</surname>
+<given-names>SF</given-names>
+</string-name>, <string-name>
+<surname>Clarke</surname>
+<given-names>AE</given-names>
+</string-name>, <string-name>
+<surname>Bacic</surname>
+<given-names>A</given-names>
+</string-name>. <year>1988</year>
+<article-title>Structural analysis of secreted slime from wheat and cowpea roots</article-title>. <source>Phytochemistry</source>
+<volume>27</volume>: <fpage>2857</fpage>&#x02013;<lpage>2861</lpage>.</mixed-citation></ref><ref id="nph14897-bib-0030"><mixed-citation publication-type="journal" id="nph14897-cit-0030">
+<string-name>
+<surname>Newton</surname>
+<given-names>AE</given-names>
+</string-name>, <string-name>
+<surname>Cox</surname>
+<given-names>CJ</given-names>
+</string-name>, <string-name>
+<surname>Duckett</surname>
+<given-names>JG</given-names>
+</string-name>, <string-name>
+<surname>Wheeler</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name>
+<surname>Goffinet</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Hedderson</surname>
+<given-names>TAJ</given-names>
+</string-name>, <string-name>
+<surname>Mishler</surname>
+<given-names>BD</given-names>
+</string-name>. <year>2000</year>
+<article-title>Evolution of the major moss lineages: phylogenetic analyses based on multiple gene sequences and morphology</article-title>. <source>The Bryologist</source>
+<volume>103</volume>: <fpage>187</fpage>&#x02013;<lpage>211</lpage>.</mixed-citation></ref><ref id="nph14897-bib-0031"><mixed-citation publication-type="journal" id="nph14897-cit-0031">
+<string-name>
+<surname>Oades</surname>
+<given-names>JM</given-names>
+</string-name>. <year>1993</year>
+<article-title>The role of biology in the formation, stabilization and degradation of soil structure</article-title>. <source>Geoderma</source>
+<volume>56</volume>: <fpage>377</fpage>&#x02013;<lpage>400</lpage>.</mixed-citation></ref><ref id="nph14897-bib-0032"><mixed-citation publication-type="journal" id="nph14897-cit-0032">
+<string-name>
+<surname>Odu</surname>
+<given-names>EA</given-names>
+</string-name>. <year>1989</year>
+<article-title>Extracellular adhesive substances on bryophyte rhizoids</article-title>. <source>Acta Botanica Hungarica</source>
+<volume>35</volume>: <fpage>273</fpage>&#x02013;<lpage>277</lpage>.</mixed-citation></ref><ref id="nph14897-bib-0033"><mixed-citation publication-type="journal" id="nph14897-cit-0033">
+<string-name>
+<surname>Park</surname>
+<given-names>YB</given-names>
+</string-name>, <string-name>
+<surname>Cosgrove</surname>
+<given-names>DJ</given-names>
+</string-name>. <year>2015</year>
+<article-title>Xyloglucan and its interactions with other components of the growing cell wall</article-title>. <source>Plant &#x00026; Cell Physiology</source>
+<volume>56</volume>: <fpage>180</fpage>&#x02013;<lpage>194</lpage>.<pub-id pub-id-type="pmid">25613914</pub-id></mixed-citation></ref><ref id="nph14897-bib-0034"><mixed-citation publication-type="journal" id="nph14897-cit-0034">
+<string-name>
+<surname>Paustian</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Lehmann</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Ogle</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Reay</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Robertson</surname>
+<given-names>GP</given-names>
+</string-name>, <string-name>
+<surname>Smith</surname>
+<given-names>P</given-names>
+</string-name>. <year>2016</year>
+<article-title>Climate&#x02010;smart soils</article-title>. <source>Nature</source>
+<volume>532</volume>: <fpage>49</fpage>&#x02013;<lpage>57</lpage>.<pub-id pub-id-type="pmid">27078564</pub-id></mixed-citation></ref><ref id="nph14897-bib-0035"><mixed-citation publication-type="journal" id="nph14897-cit-0035">
+<string-name>
+<surname>Pedersen</surname>
+<given-names>HL</given-names>
+</string-name>, <string-name>
+<surname>Fangel</surname>
+<given-names>JU</given-names>
+</string-name>, <string-name>
+<surname>McCleary</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Ruzanski</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Rydahl</surname>
+<given-names>MG</given-names>
+</string-name>, <string-name>
+<surname>Ralet</surname>
+<given-names>M&#x02010;C</given-names>
+</string-name>, <string-name>
+<surname>Farkas</surname>
+<given-names>V</given-names>
+</string-name>, <string-name>
+<surname>von Schantz</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Marcus</surname>
+<given-names>SE</given-names>
+</string-name>, <string-name>
+<surname>Andersen</surname>
+<given-names>MCF</given-names>
+</string-name>
+<italic>et&#x000a0;al</italic>
+<year>2012</year>
+<article-title>Versatile high&#x02010;resolution oligosaccharide microarrays for plant glycobiology and cell wall research</article-title>. <source>Journal of Biological Chemistry</source>
+<volume>287</volume>: <fpage>39429</fpage>&#x02013;<lpage>39438</lpage>.<pub-id pub-id-type="pmid">22988248</pub-id></mixed-citation></ref><ref id="nph14897-bib-0036"><mixed-citation publication-type="journal" id="nph14897-cit-0036">
+<string-name>
+<surname>Pe&#x000f1;a</surname>
+<given-names>MJ</given-names>
+</string-name>, <string-name>
+<surname>Darvill</surname>
+<given-names>AG</given-names>
+</string-name>, <string-name>
+<surname>Eberhard</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>York</surname>
+<given-names>WS</given-names>
+</string-name>, <string-name>
+<surname>O'Neill</surname>
+<given-names>MA</given-names>
+</string-name>. <year>2008</year>
+<article-title>Moss and liverwort xyloglucans contain galacturonic acid and are structurally distinct from the xyloglucans synthesized by hornworts and vascular plants</article-title>. <source>Glycobiology</source>
+<volume>18</volume>: <fpage>891</fpage>&#x02013;<lpage>904</lpage>.<pub-id pub-id-type="pmid">18703646</pub-id></mixed-citation></ref><ref id="nph14897-bib-0037"><mixed-citation publication-type="journal" id="nph14897-cit-0037">
+<string-name>
+<surname>Pe&#x000f1;a</surname>
+<given-names>MJ</given-names>
+</string-name>, <string-name>
+<surname>Kong</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>York</surname>
+<given-names>WS</given-names>
+</string-name>, <string-name>
+<surname>O'Neill</surname>
+<given-names>MA</given-names>
+</string-name>. <year>2012</year>
+<article-title>A galacturonic acid&#x02013;containing xyloglucan is involved in <italic>Arabidopsis</italic> root hair tip growth</article-title>. <source>Plant Cell</source>
+<volume>24</volume>: <fpage>4511</fpage>&#x02013;<lpage>4524</lpage>.<pub-id pub-id-type="pmid">23175743</pub-id></mixed-citation></ref><ref id="nph14897-bib-0038"><mixed-citation publication-type="journal" id="nph14897-cit-0038">
+<string-name>
+<surname>Pocock</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Duckett</surname>
+<given-names>JG</given-names>
+</string-name>. <year>1985</year>
+<article-title>On the occurrence of branched and swollen rhizoids in British hepatics: their relationships with the substratum and associations with fungi</article-title>. <source>New Phytologist</source>
+<volume>99</volume>: <fpage>281</fpage>&#x02013;<lpage>304</lpage>.</mixed-citation></ref><ref id="nph14897-bib-0039"><mixed-citation publication-type="journal" id="nph14897-cit-0039">
+<string-name>
+<surname>Pressel</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Ligrone</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Duckett</surname>
+<given-names>JG</given-names>
+</string-name>. <year>2008</year>
+<article-title>Cellular differentiation in moss protonemata: a morphological and experimental study</article-title>. <source>Annals of Botany</source>
+<volume>102</volume>: <fpage>227</fpage>&#x02013;<lpage>245</lpage>.<pub-id pub-id-type="pmid">18508779</pub-id></mixed-citation></ref><ref id="nph14897-bib-0040"><mixed-citation publication-type="journal" id="nph14897-cit-0040">
+<string-name>
+<surname>Quirk</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Leake</surname>
+<given-names>JR</given-names>
+</string-name>, <string-name>
+<surname>Johnson</surname>
+<given-names>DA</given-names>
+</string-name>, <string-name>
+<surname>Taylor</surname>
+<given-names>LL</given-names>
+</string-name>, <string-name>
+<surname>Saccone</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Beerling</surname>
+<given-names>DJ</given-names>
+</string-name>. <year>2015</year>
+<article-title>Constraining the role of early land plants in Palaeozoic weathering and global cooling</article-title>. <source>Proceedings of the Royal Society. B</source>
+<volume>282</volume>: <fpage>20151115</fpage>.<pub-id pub-id-type="pmid">26246550</pub-id></mixed-citation></ref><ref id="nph14897-bib-0041"><mixed-citation publication-type="journal" id="nph14897-cit-0041">
+<string-name>
+<surname>Rippka</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Deruelles</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Waterbury</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Herdman</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Stanier</surname>
+<given-names>RY</given-names>
+</string-name>. <year>1979</year>
+<article-title>Generic assignments, strain histories and properties of pure cultures of cyanobacteria</article-title>. <source>Journal of General Microbiology</source>
+<volume>111</volume>: <fpage>1</fpage>&#x02013;<lpage>61</lpage>.</mixed-citation></ref><ref id="nph14897-bib-0042"><mixed-citation publication-type="journal" id="nph14897-cit-0042">
+<string-name>
+<surname>Scharlemann</surname>
+<given-names>JPW</given-names>
+</string-name>, <string-name>
+<surname>Tanner</surname>
+<given-names>EVJ</given-names>
+</string-name>, <string-name>
+<surname>Hiederer</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Kapos</surname>
+<given-names>V</given-names>
+</string-name>. <year>2014</year>
+<article-title>Global soil carbon: understanding and managing the largest terrestrial carbon pool</article-title>. <source>Carbon Management</source>
+<volume>5</volume>: <fpage>81</fpage>&#x02013;<lpage>91</lpage>.</mixed-citation></ref><ref id="nph14897-bib-0043"><mixed-citation publication-type="journal" id="nph14897-cit-0043">
+<string-name>
+<surname>Tisdall</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name>
+<surname>Oades</surname>
+<given-names>JM</given-names>
+</string-name>. <year>1982</year>
+<article-title>Organic matter and water&#x02010;stable aggregates in soils</article-title>. <source>Journal of Soil Science</source>
+<volume>33</volume>: <fpage>141</fpage>&#x02013;<lpage>163</lpage>.</mixed-citation></ref><ref id="nph14897-bib-0044"><mixed-citation publication-type="journal" id="nph14897-cit-0044">
+<string-name>
+<surname>Vogel</surname>
+<given-names>J</given-names>
+</string-name>. <year>2008</year>
+<article-title>Unique aspects of the grass cell wall</article-title>. <source>Current Opinion in Plant Biology</source>
+<volume>11</volume>: <fpage>301</fpage>&#x02013;<lpage>307</lpage>.<pub-id pub-id-type="pmid">18434239</pub-id></mixed-citation></ref><ref id="nph14897-bib-0045"><mixed-citation publication-type="journal" id="nph14897-cit-0045">
+<string-name>
+<surname>Walker</surname>
+<given-names>WS</given-names>
+</string-name>, <string-name>
+<surname>Bais</surname>
+<given-names>HP</given-names>
+</string-name>, <string-name>
+<surname>Grotewold</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Vivanco</surname>
+<given-names>JM</given-names>
+</string-name>. <year>2003</year>
+<article-title>Root exudation and rhizosphere biology</article-title>. <source>Plant Physiology</source>
+<volume>132</volume>: <fpage>44</fpage>&#x02013;<lpage>51</lpage>.<pub-id pub-id-type="pmid">12746510</pub-id></mixed-citation></ref><ref id="nph14897-bib-0046"><mixed-citation publication-type="journal" id="nph14897-cit-0046">
+<string-name>
+<surname>Willats</surname>
+<given-names>WGT</given-names>
+</string-name>, <string-name>
+<surname>Marcus</surname>
+<given-names>SE</given-names>
+</string-name>, <string-name>
+<surname>Knox</surname>
+<given-names>JP</given-names>
+</string-name>. <year>1998</year>
+<article-title>Generation of a monoclonal antibody specific to (1&#x02192;5)&#x02010;&#x003b1;&#x02010;<sc>l</sc>&#x02010;arabinan</article-title>. <source>Carbohydrate Research</source>
+<volume>308</volume>: <fpage>149</fpage>&#x02013;<lpage>152</lpage>.<pub-id pub-id-type="pmid">9675359</pub-id></mixed-citation></ref><ref id="nph14897-bib-0047"><mixed-citation publication-type="journal" id="nph14897-cit-0047">
+<string-name>
+<surname>York</surname>
+<given-names>LM</given-names>
+</string-name>, <string-name>
+<surname>Carminati</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Mooney</surname>
+<given-names>SJ</given-names>
+</string-name>, <string-name>
+<surname>Ritz</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Bennett</surname>
+<given-names>MJ</given-names>
+</string-name>. <year>2016</year>
+<article-title>The holistic rhizosphere: integrating zones, processes, and semantics in the soil influenced by roots</article-title>. <source>Journal of Experimental Botany</source>
+<volume>67</volume>: <fpage>3629</fpage>&#x02013;<lpage>3643</lpage>.<pub-id pub-id-type="pmid">26980751</pub-id></mixed-citation></ref><ref id="nph14897-bib-0048"><mixed-citation publication-type="journal" id="nph14897-cit-0048">
+<string-name>
+<surname>Zickenrott</surname>
+<given-names>I&#x02010;M</given-names>
+</string-name>, <string-name>
+<surname>Woche</surname>
+<given-names>SK</given-names>
+</string-name>, <string-name>
+<surname>Bachmann</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Ahmed</surname>
+<given-names>MA</given-names>
+</string-name>, <string-name>
+<surname>Vetterlein</surname>
+<given-names>D</given-names>
+</string-name>. <year>2016</year>
+<article-title>An efficient method for the collection of root mucilage from different plant species &#x02013; a case study on the effect of mucilage on soil water repellency</article-title>. <source>Journal of Plant Nutrition &#x00026; Soil Science</source>
+<volume>179</volume>: <fpage>294302</fpage>.</mixed-citation></ref></ref-list></back></article>

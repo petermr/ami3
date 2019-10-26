@@ -1,0 +1,268 @@
+{
+  "id": [
+    "29113039"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "29113039"
+  ],
+  "pmcid": [
+    "PMC5750630"
+  ],
+  "doi": [
+    "10.3390/plants6040054"
+  ],
+  "title": [
+    "Surviving a Dry Future: Abscisic Acid (ABA)-Mediated Plant Mechanisms for Conserving Water under Low Humidity."
+  ],
+  "authorString": [
+    "Sussmilch FC, McAdam SAM."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Sussmilch FC"
+          ],
+          "firstName": [
+            "Frances C"
+          ],
+          "lastName": [
+            "Sussmilch"
+          ],
+          "initials": [
+            "FC"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-8659-1125",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Institute for Molecular Plant Physiology and Biophysics, University of Würzburg, D-97082 Würzburg, Germany. frances.sussmilch@uni-wuerzburg.de."
+          ]
+        },
+        {
+          "fullName": [
+            "McAdam SAM"
+          ],
+          "firstName": [
+            "Scott A M"
+          ],
+          "lastName": [
+            "McAdam"
+          ],
+          "initials": [
+            "SAM"
+          ],
+          "affiliation": [
+            "Purdue Center for Plant Biology, Department of Botany and Plant Pathology, Purdue University, West Lafayette, IN 47907, USA. smcadam@purdue.edu."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-8659-1125",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "4"
+      ],
+      "volume": [
+        "6"
+      ],
+      "journalIssueId": [
+        "2616567"
+      ],
+      "dateOfPublication": [
+        "2017 Nov"
+      ],
+      "monthOfPublication": [
+        "11"
+      ],
+      "yearOfPublication": [
+        "2017"
+      ],
+      "printPublicationDate": [
+        "2017-11-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Plants"
+          ],
+          "ISOAbbreviation": [
+            "Plants (Basel)"
+          ],
+          "medlineAbbreviation": [
+            "Plants (Basel)"
+          ],
+          "NLMid": [
+            "101596181"
+          ],
+          "ISSN": [
+            "2223-7747"
+          ],
+          "ESSN": [
+            "2223-7747"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2017"
+  ],
+  "abstractText": [
+    "Angiosperms are able to respond rapidly to the first sign of dry conditions, a decrease in air humidity, more accurately described as an increase in the vapor pressure deficit between the leaf and the atmosphere (VPD), by abscisic acid (ABA)-mediated stomatal closure. The genes underlying this response offer valuable candidates for targeted selection of crop varieties with improved drought tolerance, a critical goal for current plant breeding programs, to maximize crop production in drier and increasingly marginalized environments, and meet the demands of a growing population in the face of a changing climate. Here, we review current understanding of the genetic mechanisms underpinning ABA-mediated stomatal closure, a key means for conserving water under dry conditions, examine how these mechanisms evolved, and discuss what remains to be investigated."
+  ],
+  "affiliation": [
+    "Institute for Molecular Plant Physiology and Biophysics, University of Würzburg, D-97082 Würzburg, Germany. frances.sussmilch@uni-wuerzburg.de."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Evolution",
+        "Humidity",
+        "Stomata",
+        "Abscisic acid (ABA)",
+        "Water deficit stress",
+        "9-Cis-epoxycarotenoid Dioxygenase (Nced)",
+        "Vapor Pressure Deficit (Vpd)",
+        "Sensing Water Status"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5750630"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.3390/plants6040054"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "N"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "0"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCreation": [
+    "2017-11-09"
+  ],
+  "dateOfRevision": [
+    "2018-01-09"
+  ],
+  "electronicPublicationDate": [
+    "2017-11-04"
+  ],
+  "firstPublicationDate": [
+    "2017-11-04"
+  ]
+}

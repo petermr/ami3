@@ -1,0 +1,241 @@
+{
+  "id": [
+    "17326828"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "17326828"
+  ],
+  "pmcid": [
+    "PMC1821018"
+  ],
+  "doi": [
+    "10.1186/1746-4811-3-4"
+  ],
+  "title": [
+    "A database of PCR primers for the chloroplast genomes of higher plants."
+  ],
+  "authorString": [
+    "Heinze B."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Heinze B"
+          ],
+          "firstName": [
+            "Berthold"
+          ],
+          "lastName": [
+            "Heinze"
+          ],
+          "initials": [
+            "B"
+          ]
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "3"
+      ],
+      "journalIssueId": [
+        "1374458"
+      ],
+      "dateOfPublication": [
+        "2007 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2007"
+      ],
+      "printPublicationDate": [
+        "2007-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Plant methods"
+          ],
+          "ISOAbbreviation": [
+            "Plant Methods"
+          ],
+          "medlineAbbreviation": [
+            "Plant Methods"
+          ],
+          "NLMid": [
+            "101245798"
+          ],
+          "ISSN": [
+            "1746-4811"
+          ],
+          "ESSN": [
+            "1746-4811"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2007"
+  ],
+  "pageInfo": [
+    "4"
+  ],
+  "abstractText": [
+    "BACKGROUND: Chloroplast genomes evolve slowly and many primers for PCR amplification and analysis of chloroplast sequences can be used across a wide array of genera. In some cases 'universal' primers have been designed for the purpose of working across species boundaries. However, the essential information on these primer sequences is scattered throughout the literature. RESULTS: A database is presented here which assembles published primer information for chloroplast DNA. Additional primers were designed to fill gaps where little or no primer information could be found. Amplicons are either the genes themselves (typically useful in studies of sequence variation in higher-order phylogeny) or they are spacers, introns, and intergenic regions (for studies of phylogeographic patterns within and among species). The current list of 'generic' primers consists of more than 700 sequences. Wherever possible, we give the locations of the primers in the thirteen fully sequenced chloroplast genomes (Nicotiana tabacum, Atropa belladonna, Spinacia oleracea, Arabidopsis thaliana, Populus trichocarpa, Oryza sativa, Pinus thunbergii, Marchantia polymorpha, Zea mays, Oenothera elata, Acorus calamus, Eucalyptus globulus, Medicago trunculata). CONCLUSION: The database described here is designed to serve as a resource for researchers who are venturing into the study of poorly described chloroplast genomes, whether for large- or small-scale DNA sequencing projects, to study molecular variation or to investigate chloroplast evolution."
+  ],
+  "affiliation": [
+    "Department of Genetics, Federal Research Centre for Forests, Hauptstrasse 7, Vienna, Austria. berthold.heinze@bfw.gv.at"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC1821018?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC1821018"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1186/1746-4811-3-4"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "33"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "gen",
+        "refseq"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2007-08-10"
+  ],
+  "dateOfCreation": [
+    "2007-03-14"
+  ],
+  "dateOfRevision": [
+    "2010-09-15"
+  ],
+  "electronicPublicationDate": [
+    "2007-02-27"
+  ],
+  "firstPublicationDate": [
+    "2007-02-27"
+  ]
+}

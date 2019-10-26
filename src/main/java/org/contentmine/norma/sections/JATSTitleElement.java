@@ -18,6 +18,15 @@ public class JATSTitleElement extends JATSElement implements IsInline {
 		super(element);
 	}
 
+	public JATSTitleElement() {
+		super(TAG);
+	}
+
+	public JATSTitleElement(String value) {
+		this();
+		this.appendChild(value);
+	}
+
 	
 
 }

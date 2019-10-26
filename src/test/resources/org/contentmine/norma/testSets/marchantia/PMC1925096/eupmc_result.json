@@ -1,0 +1,563 @@
+{
+  "id": [
+    "17573971"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "17573971"
+  ],
+  "pmcid": [
+    "PMC1925096"
+  ],
+  "doi": [
+    "10.1186/1471-2164-8-174"
+  ],
+  "title": [
+    "Comparative chloroplast genomics: analyses including new sequences from the angiosperms Nuphar advena and Ranunculus macranthus."
+  ],
+  "authorString": [
+    "Raubeson LA, Peery R, Chumley TW, Dziubek C, Fourcade HM, Boore JL, Jansen RK."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Raubeson LA"
+          ],
+          "firstName": [
+            "Linda A"
+          ],
+          "lastName": [
+            "Raubeson"
+          ],
+          "initials": [
+            "LA"
+          ]
+        },
+        {
+          "fullName": [
+            "Peery R"
+          ],
+          "firstName": [
+            "Rhiannon"
+          ],
+          "lastName": [
+            "Peery"
+          ],
+          "initials": [
+            "R"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-4711-4702",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Chumley TW"
+          ],
+          "firstName": [
+            "Timothy W"
+          ],
+          "lastName": [
+            "Chumley"
+          ],
+          "initials": [
+            "TW"
+          ]
+        },
+        {
+          "fullName": [
+            "Dziubek C"
+          ],
+          "firstName": [
+            "Chris"
+          ],
+          "lastName": [
+            "Dziubek"
+          ],
+          "initials": [
+            "C"
+          ]
+        },
+        {
+          "fullName": [
+            "Fourcade HM"
+          ],
+          "firstName": [
+            "H Matthew"
+          ],
+          "lastName": [
+            "Fourcade"
+          ],
+          "initials": [
+            "HM"
+          ]
+        },
+        {
+          "fullName": [
+            "Boore JL"
+          ],
+          "firstName": [
+            "Jeffrey L"
+          ],
+          "lastName": [
+            "Boore"
+          ],
+          "initials": [
+            "JL"
+          ]
+        },
+        {
+          "fullName": [
+            "Jansen RK"
+          ],
+          "firstName": [
+            "Robert K"
+          ],
+          "lastName": [
+            "Jansen"
+          ],
+          "initials": [
+            "RK"
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0003-4711-4702",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "8"
+      ],
+      "journalIssueId": [
+        "1372849"
+      ],
+      "dateOfPublication": [
+        "2007 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2007"
+      ],
+      "printPublicationDate": [
+        "2007-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "BMC genomics"
+          ],
+          "ISOAbbreviation": [
+            "BMC Genomics"
+          ],
+          "medlineAbbreviation": [
+            "BMC Genomics"
+          ],
+          "NLMid": [
+            "100965258"
+          ],
+          "ISSN": [
+            "1471-2164"
+          ],
+          "ESSN": [
+            "1471-2164"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2007"
+  ],
+  "pageInfo": [
+    "174"
+  ],
+  "abstractText": [
+    "BACKGROUND: The number of completely sequenced plastid genomes available is growing rapidly. This array of sequences presents new opportunities to perform comparative analyses. In comparative studies, it is often useful to compare across wide phylogenetic spans and, within angiosperms, to include representatives from basally diverging lineages such as the genomes reported here: Nuphar advena (from a basal-most lineage) and Ranunculus macranthus (a basal eudicot). We report these two new plastid genome sequences and make comparisons (within angiosperms, seed plants, or all photosynthetic lineages) to evaluate features such as the status of ycf15 and ycf68 as protein coding genes, the distribution of simple sequence repeats (SSRs) and longer dispersed repeats (SDR), and patterns of nucleotide composition. RESULTS: The Nuphar [GenBank:NC_008788] and Ranunculus [GenBank:NC_008796] plastid genomes share characteristics of gene content and organization with many other chloroplast genomes. Like other plastid genomes, these genomes are A+T-rich, except for rRNA and tRNA genes. Detailed comparisons of Nuphar with Nymphaea, another Nymphaeaceae, show that more than two-thirds of these genomes exhibit at least 95% sequence identity and that most SSRs are shared. In broader comparisons, SSRs vary among genomes in terms of abundance and length and most contain repeat motifs based on A and T nucleotides. CONCLUSION: SSR and SDR abundance varies by genome and, for SSRs, is proportional to genome size. Long SDRs are rare in the genomes assessed. SSRs occur less frequently than predicted and, although the majority of the repeat motifs do include A and T nucleotides, the A+T bias in SSRs is less than that predicted from the underlying genomic nucleotide composition. In codon usage third positions show an A+T bias, however variation in codon usage does not correlate with differences in A+T-richness. Thus, although plastome nucleotide composition shows \"A+T richness\", an A+T bias is not apparent upon more in-depth analysis, at least in these aspects. The pattern of evolution in the sequences identified as ycf15 and ycf68 is not consistent with them being protein-coding genes. In fact, these regions show no evidence of sequence conservation beyond what is normal for non-coding regions of the IR."
+  ],
+  "affiliation": [
+    "Biological Sciences, Central Washington University, Ellensburg, WA 98926-7537, USA. raubeson@cwu.edu"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Comparative Study",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Chloroplasts"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Nuphar"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Ranunculus"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Chromosome Mapping"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Computational Biology"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Genomics"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "MT"
+                  ],
+                  "qualifierName": [
+                    "methods"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Evolution, Molecular"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Species Specificity"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Amino Acid Motifs"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Base Sequence"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Genes, Plant"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Genome, Plant"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Genome"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Models, Genetic"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Molecular Sequence Data"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC1925096?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC1925096"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1186/1471-2164-8-174"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "99"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "Y"
+  ],
+  "dbCrossReferenceList": [
+    {
+      "dbName": [
+        "UNIPROT"
+      ]
+    }
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "gen",
+        "refseq"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2007-09-04"
+  ],
+  "dateOfCreation": [
+    "2007-07-20"
+  ],
+  "dateOfRevision": [
+    "2013-06-06"
+  ],
+  "electronicPublicationDate": [
+    "2007-06-15"
+  ],
+  "firstPublicationDate": [
+    "2007-06-15"
+  ]
+}

@@ -470,6 +470,10 @@ public class JATSElement extends Element {
 		return getAttributeValue(ID);
 	}
 
+	public void setID(String id) {
+		this.addAttribute(new Attribute(ID, id));
+	}
+
 	protected String getAttributeString(String name) {
 		String s = this.getAttributeValue(name);
 		return (s == null || s.equals("null")) ? "" : " " + name + "='"+s+"'";

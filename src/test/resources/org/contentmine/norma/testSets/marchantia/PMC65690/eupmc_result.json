@@ -1,0 +1,905 @@
+{
+  "id": [
+    "11869452"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "11869452"
+  ],
+  "pmcid": [
+    "PMC65690"
+  ],
+  "doi": [
+    "10.1186/1471-2105-3-2"
+  ],
+  "title": [
+    "The comparative RNA web (CRW) site: an online database of comparative sequence and structure information for ribosomal, intron, and other RNAs."
+  ],
+  "authorString": [
+    "Cannone JJ, Subramanian S, Schnare MN, Collett JR, D'Souza LM, Du Y, Feng B, Lin N, Madabusi LV, Müller KM, Pande N, Shang Z, Yu N, Gutell RR."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Cannone JJ"
+          ],
+          "firstName": [
+            "Jamie J"
+          ],
+          "lastName": [
+            "Cannone"
+          ],
+          "initials": [
+            "JJ"
+          ],
+          "affiliation": [
+            "Institute for Cellular and Molecular Biology, Section of Integrative Biology, University of Texas at Austin, 2500 Speedway, Austin, TX 78712-1095, USA. cannone@mail.utexas.edu"
+          ]
+        },
+        {
+          "fullName": [
+            "Subramanian S"
+          ],
+          "firstName": [
+            "Sankar"
+          ],
+          "lastName": [
+            "Subramanian"
+          ],
+          "initials": [
+            "S"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-2375-3254",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Schnare MN"
+          ],
+          "firstName": [
+            "Murray N"
+          ],
+          "lastName": [
+            "Schnare"
+          ],
+          "initials": [
+            "MN"
+          ]
+        },
+        {
+          "fullName": [
+            "Collett JR"
+          ],
+          "firstName": [
+            "James R"
+          ],
+          "lastName": [
+            "Collett"
+          ],
+          "initials": [
+            "JR"
+          ]
+        },
+        {
+          "fullName": [
+            "D'Souza LM"
+          ],
+          "firstName": [
+            "Lisa M"
+          ],
+          "lastName": [
+            "D'Souza"
+          ],
+          "initials": [
+            "LM"
+          ]
+        },
+        {
+          "fullName": [
+            "Du Y"
+          ],
+          "firstName": [
+            "Yushi"
+          ],
+          "lastName": [
+            "Du"
+          ],
+          "initials": [
+            "Y"
+          ]
+        },
+        {
+          "fullName": [
+            "Feng B"
+          ],
+          "firstName": [
+            "Brian"
+          ],
+          "lastName": [
+            "Feng"
+          ],
+          "initials": [
+            "B"
+          ]
+        },
+        {
+          "fullName": [
+            "Lin N"
+          ],
+          "firstName": [
+            "Nan"
+          ],
+          "lastName": [
+            "Lin"
+          ],
+          "initials": [
+            "N"
+          ]
+        },
+        {
+          "fullName": [
+            "Madabusi LV"
+          ],
+          "firstName": [
+            "Lakshmi V"
+          ],
+          "lastName": [
+            "Madabusi"
+          ],
+          "initials": [
+            "LV"
+          ]
+        },
+        {
+          "fullName": [
+            "Müller KM"
+          ],
+          "firstName": [
+            "Kirsten M"
+          ],
+          "lastName": [
+            "Müller"
+          ],
+          "initials": [
+            "KM"
+          ]
+        },
+        {
+          "fullName": [
+            "Pande N"
+          ],
+          "firstName": [
+            "Nupur"
+          ],
+          "lastName": [
+            "Pande"
+          ],
+          "initials": [
+            "N"
+          ]
+        },
+        {
+          "fullName": [
+            "Shang Z"
+          ],
+          "firstName": [
+            "Zhidi"
+          ],
+          "lastName": [
+            "Shang"
+          ],
+          "initials": [
+            "Z"
+          ]
+        },
+        {
+          "fullName": [
+            "Yu N"
+          ],
+          "firstName": [
+            "Nan"
+          ],
+          "lastName": [
+            "Yu"
+          ],
+          "initials": [
+            "N"
+          ]
+        },
+        {
+          "fullName": [
+            "Gutell RR"
+          ],
+          "firstName": [
+            "Robin R"
+          ],
+          "lastName": [
+            "Gutell"
+          ],
+          "initials": [
+            "RR"
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-2375-3254",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "3"
+      ],
+      "journalIssueId": [
+        "1275693"
+      ],
+      "dateOfPublication": [
+        "2002 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2002"
+      ],
+      "printPublicationDate": [
+        "2002-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "BMC bioinformatics"
+          ],
+          "ISOAbbreviation": [
+            "BMC Bioinformatics"
+          ],
+          "medlineAbbreviation": [
+            "BMC Bioinformatics"
+          ],
+          "NLMid": [
+            "100965194"
+          ],
+          "ISSN": [
+            "1471-2105"
+          ],
+          "ESSN": [
+            "1471-2105"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2002"
+  ],
+  "pageInfo": [
+    "2"
+  ],
+  "abstractText": [
+    "Comparative analysis of RNA sequences is the basis for the detailed and accurate predictions of RNA structure and the determination of phylogenetic relationships for organisms that span the entire phylogenetic tree. Underlying these accomplishments are very large, well-organized, and processed collections of RNA sequences. This data, starting with the sequences organized into a database management system and aligned to reveal their higher-order structure, and patterns of conservation and variation for organisms that span the phylogenetic tree, has been collected and analyzed. This type of information can be fundamental for and have an influence on the study of phylogenetic relationships, RNA structure, and the melding of these two fields.We have prepared a large web site that disseminates our comparative sequence and structure models and data. The four major types of comparative information and systems available for the three ribosomal RNAs (5S, 16S, and 23S rRNA), transfer RNA (tRNA), and two of the catalytic intron RNAs (group I and group II) are: (1) Current Comparative Structure Models; (2) Nucleotide Frequency and Conservation Information; (3) Sequence and Structure Data; and (4) Data Access Systems.This online RNA sequence and structure information, the result of extensive analysis, interpretation, data collection, and computer program and web development, is accessible at our Comparative RNA Web (CRW) Site http://www.rna.icmb.utexas.edu. In the future, more data and information will be added to these existing categories, new categories will be developed, and additional RNAs will be studied and presented at the CRW Site."
+  ],
+  "affiliation": [
+    "Institute for Cellular and Molecular Biology, Section of Integrative Biology, University of Texas at Austin, 2500 Speedway, Austin, TX 78712-1095, USA. cannone@mail.utexas.edu"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print-Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Comparative Study",
+        "Research Support, U.S. Gov't, P.H.S.",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ]
+    }
+  ],
+  "grantsList": [
+    {
+      "grant": [
+        {
+          "grantId": [
+            "GM48207"
+          ],
+          "agency": [
+            "NIGMS NIH HHS"
+          ],
+          "acronym": [
+            "GM"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "R01 GM048207-08"
+          ],
+          "agency": [
+            "NIGMS NIH HHS"
+          ],
+          "acronym": [
+            "GM"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        },
+        {
+          "grantId": [
+            "R01 GM048207"
+          ],
+          "agency": [
+            "NIGMS NIH HHS"
+          ],
+          "acronym": [
+            "GM"
+          ],
+          "orderIn": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "RNA"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "RNA, Archaeal"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "RNA, Bacterial"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "RNA, Ribosomal, 5S"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "RNA, Ribosomal, 16S"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "RNA, Ribosomal, 23S"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "RNA, Transfer"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Base Sequence"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Nucleic Acid Conformation"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Internet"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Molecular Sequence Data"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Databases, Nucleic Acid"
+          ]
+        }
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "RNA"
+          ],
+          "registryNumber": [
+            "63231-63-0"
+          ]
+        },
+        {
+          "name": [
+            "RNA, Transfer"
+          ],
+          "registryNumber": [
+            "9014-25-9"
+          ]
+        },
+        {
+          "name": [
+            "RNA, Bacterial"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "RNA, Ribosomal, 5S"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "RNA, Ribosomal, 16S"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "RNA, Ribosomal, 23S"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "RNA, Archaeal"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC65690?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC65690"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "BioMedCentral"
+          ],
+          "url": [
+            "https://doi.org/10.1186/1471-2105-3-2"
+          ]
+        }
+      ]
+    }
+  ],
+  "commentCorrectionList": [
+    {
+      "commentCorrection": [
+        {
+          "source": [
+            "MED"
+          ],
+          "reference": [
+            "BMC Bioinformatics. 2002 Jul;3(1):15"
+          ],
+          "type": [
+            "Erratum in"
+          ],
+          "orderIn": [
+            "83"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "644"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "gen"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2003-11-18"
+  ],
+  "dateOfCreation": [
+    "2003-10-29"
+  ],
+  "dateOfRevision": [
+    "2016-11-22"
+  ],
+  "electronicPublicationDate": [
+    "2002-01-17"
+  ],
+  "firstPublicationDate": [
+    "2002-01-17"
+  ]
+}

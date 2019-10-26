@@ -1,0 +1,429 @@
+{
+  "id": [
+    "29228906"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "29228906"
+  ],
+  "pmcid": [
+    "PMC5725981"
+  ],
+  "doi": [
+    "10.1186/s12870-017-1177-1"
+  ],
+  "title": [
+    "Phylogenetic relationship and domain organisation of SET domain proteins of Archaeplastida."
+  ],
+  "authorString": [
+    "Sarma S, Lodha M."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Sarma S"
+          ],
+          "firstName": [
+            "Supriya"
+          ],
+          "lastName": [
+            "Sarma"
+          ],
+          "initials": [
+            "S"
+          ],
+          "affiliation": [
+            "Centre for Cellular and Molecular Biology (CSIR), Uppal Road, Habsiguda, Hyderabad, 500007, India. supriyasarma@ccmb.res.in."
+          ]
+        },
+        {
+          "fullName": [
+            "Lodha M"
+          ],
+          "firstName": [
+            "Mukesh"
+          ],
+          "lastName": [
+            "Lodha"
+          ],
+          "initials": [
+            "M"
+          ],
+          "affiliation": [
+            "Centre for Cellular and Molecular Biology (CSIR), Uppal Road, Habsiguda, Hyderabad, 500007, India. mukesh@ccmb.res.in."
+          ]
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "1"
+      ],
+      "volume": [
+        "17"
+      ],
+      "journalIssueId": [
+        "2623629"
+      ],
+      "dateOfPublication": [
+        "2017 Dec"
+      ],
+      "monthOfPublication": [
+        "12"
+      ],
+      "yearOfPublication": [
+        "2017"
+      ],
+      "printPublicationDate": [
+        "2017-12-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "BMC plant biology"
+          ],
+          "ISOAbbreviation": [
+            "BMC Plant Biol."
+          ],
+          "medlineAbbreviation": [
+            "BMC Plant Biol"
+          ],
+          "NLMid": [
+            "100967807"
+          ],
+          "ISSN": [
+            "1471-2229"
+          ],
+          "ESSN": [
+            "1471-2229"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2017"
+  ],
+  "pageInfo": [
+    "238"
+  ],
+  "abstractText": [
+    "SET is a conserved protein domain with methyltransferase activity. Several genome and transcriptome data in plant lineage (Archaeplastida) are available but status of SET domain proteins in most of the plant lineage is not comprehensively analysed.In this study phylogeny and domain organisation of 506 computationally identified SET domain proteins from 16 members of plant lineage (Archaeplastida) are presented. SET domain proteins of rice and Arabidopsis are used as references. This analysis revealed conserved as well as unique features of SET domain proteins in Archaeplastida. SET domain proteins of plant lineage can be categorised into five classes- E(z), Ash, Trx, Su(var) and Orphan. Orphan class of SET proteins contain unique domains predominantly in early Archaeplastida. Contrary to previous study, this study shows first appearance of several domains like SRA on SET domain proteins in chlorophyta instead of bryophyta.The present study is a framework to experimentally characterize SET domain proteins in plant lineage."
+  ],
+  "affiliation": [
+    "Centre for Cellular and Molecular Biology (CSIR), Uppal Road, Habsiguda, Hyderabad, 500007, India. supriyasarma@ccmb.res.in."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Plant Proteins"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Sequence Analysis, DNA"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Computational Biology"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Evolution, Molecular"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Viridiplantae"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "CL"
+                  ],
+                  "qualifierName": [
+                    "classification"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "PR-SET Domains"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Evolution",
+        "Phylogenetic analysis",
+        "Epigenetics",
+        "SET domain",
+        "Polycomb",
+        "Histone Modifications",
+        "Archaeplastida"
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "Plant Proteins"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5725981?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5725981"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1186/s12870-017-1177-1"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "0"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "bioproject",
+        "pfam"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2018-03-16"
+  ],
+  "dateOfCreation": [
+    "2017-12-13"
+  ],
+  "dateOfRevision": [
+    "2018-03-16"
+  ],
+  "electronicPublicationDate": [
+    "2017-12-11"
+  ],
+  "firstPublicationDate": [
+    "2017-12-11"
+  ]
+}

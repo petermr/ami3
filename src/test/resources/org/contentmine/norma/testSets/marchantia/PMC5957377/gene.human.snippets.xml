@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippetsTree>
+ <snippets file="epmc/PMC5957377/results/gene/human/results.xml">
+  <result pre="ave previously shown that in a range of higher plants including Arabidopsis, maize, and rice, some " exact="CLO" post=" genes are induced by a variety of biotic and abiotic stresses (e.g. RD20, AtPXG1, &lt;i" xpath="/html[1]/body[1]/div[2]/div[3]/div[7]/p[2]" dictionary="hgnc" dictionaryCheck="false" name="human"/>
+  <result pre="ize, and rice, some CLO genes are induced by a variety of biotic and abiotic stresses (e.g. " exact="RD20" post=", AtPXG1, AtPXG2, EFA27, OsCLO-2, OsCLO-6, ZmCLO7) while " xpath="/html[1]/body[1]/div[2]/div[3]/div[7]/p[2]" dictionary="hgnc" dictionaryCheck="false" name="human"/>
+  <result pre="duced by a variety of biotic and abiotic stresses (e.g. RD20, AtPXG1, AtPXG2, " exact="EFA27" post=", OsCLO-2, OsCLO-6, ZmCLO7) while other CLO genes are unresponsive to s" xpath="/html[1]/body[1]/div[2]/div[3]/div[7]/p[2]" dictionary="hgnc" dictionaryCheck="false" name="human"/>
+  <result pre="tPXG1, AtPXG2, EFA27, OsCLO-2, OsCLO-6, ZmCLO7) while other " exact="CLO" post=" genes are unresponsive to such stresses but may be highly expressed in lipid-storing tissues such " xpath="/html[1]/body[1]/div[2]/div[3]/div[7]/p[2]" dictionary="hgnc" dictionaryCheck="false" name="human"/>
+  <result pre="uences, ZmCLO1 and ZmCLO2a [ 13]and in an Arabidopsis " exact="CLO" post=" sequence [ 103]. " dictionary="hgnc" dictionaryCheck="false" name="human"/>
+ </snippets>
+</snippetsTree>

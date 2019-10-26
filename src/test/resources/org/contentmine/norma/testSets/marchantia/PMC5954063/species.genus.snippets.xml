@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippetsTree>
+ <snippets file="epmc/PMC5954063/results/species/genus/results.xml">
+  <result pre="ic unicellular organism which is a member of the Euglenozoa along with the parasites of the genera " exact="Trypanozoma" xpath="/html[1]/body[1]/div[2]/div[3]/p[5]" match="Trypanozoma" post=" and Leishmania 1 . Although this phylogenetic group has evolved " name="genus"/>
+  <result pre=" which is a member of the Euglenozoa along with the parasites of the genera Trypanozoma and " exact="Leishmania" xpath="/html[1]/body[1]/div[2]/div[3]/p[5]" match="Leishmania" post=" 1 . Although this phylogenetic group has evolved independently from the" name="genus"/>
+  <result pre=" possess proteins with the DUF 4201. In addition to being present in the closely related organisms " exact="Trypanosoma" xpath="/html[1]/body[1]/div[2]/div[3]/p[5]" match="Trypanosoma" post=" and Leishmania, this domain was found in a very wide range of species. In algae and plants," name="genus"/>
+  <result pre="d of the early diverging land plants which use sperm cells to reproduce ( eg the bryophytes " exact="Physcomitrella" xpath="/html[1]/body[1]/div[2]/div[3]/p[5]" match="Physcomitrella" post=" and Marchantia and the lycophyte Sellaginella), but was not found in the angiosperm " name="genus"/>
+  <result pre="and plants which use sperm cells to reproduce ( eg the bryophytes Physcomitrella and " exact="Marchantia" xpath="/html[1]/body[1]/div[2]/div[3]/p[5]" match="Marchantia" post=" and the lycophyte Sellaginella), but was not found in the angiosperm genomes. This domain w" name="genus"/>
+  <result pre="o homologues of EgPCDUF4201, termed flagella associated protein FAP 184 and FAP 263 are present in " exact="Chlamydomonas" match="Chlamydomonas" post=" and reported as phosphoproteins 18 . The bioinformatics analysis also " name="genus"/>
+ </snippets>
+</snippetsTree>

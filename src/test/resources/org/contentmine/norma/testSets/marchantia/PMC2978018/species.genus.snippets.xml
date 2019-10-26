@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippetsTree>
+ <snippets file="epmc/PMC2978018/results/species/genus/results.xml">
+  <result pre=". Duplicate copies of the GSII B gene were present in Chlamydomonas reinhardtii, " exact="Volvox " xpath="/html[1]/body[1]/div[2]/div[7]/div[5]/p[1]" match="Volvox" post=" carteri f. nagariensis, and Physcomitrella patens. Both GSII B &lt;" name="genus"/>
+  <result pre="sent in Chlamydomonas reinhardtii, Volvox carteri f. nagariensis, and " exact="Physcomitrella " xpath="/html[1]/body[1]/div[2]/div[7]/div[5]/p[1]" match="Physcomitrella" post=" patens. Both GSII B proteins in C. reinhardtii and V. carteri f. &lt;" name="genus"/>
+  <result pre="ella sp. CCAP211/1A, Chlorella luteoviridis, Auxenochlorella protothecoides, and " exact="Prototheca " xpath="/html[1]/body[1]/div[2]/div[7]/div[5]/p[1]" match="Prototheca" post=" zopfii. A GSII sequence was also obtained for Pseudochlorella sp. CCAP211/1A that in" name="genus"/>
+  <result pre="stida by preliminary phylogenetic analyses . Partial GSII B sequences were obtained for " exact="Acetabularia " xpath="/html[1]/body[1]/div[2]/div[7]/div[5]/p[1]" match="Acetabularia" post=" acetabulum (Chlorophyta: Ulvophyceae) and Mesostigma viride (Streptophyta: M" name="genus"/>
+  <result pre="&gt;sequences were obtained for Acetabularia acetabulum (Chlorophyta: Ulvophyceae) and " exact="Mesostigma " match="Mesostigma" post=" viride (Streptophyta: Mesostigmatophyceae). These sequences were not included in the phylog" name="genus"/>
+ </snippets>
+</snippetsTree>

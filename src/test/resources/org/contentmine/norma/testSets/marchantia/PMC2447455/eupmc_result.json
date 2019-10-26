@@ -1,0 +1,325 @@
+{
+  "id": [
+    "18629165"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "18629165"
+  ],
+  "pmcid": [
+    "PMC2447455"
+  ],
+  "doi": [
+    "10.1002/cfg.411"
+  ],
+  "title": [
+    "Comparative genomic assessment of novel broad-spectrum targets for antibacterial drugs."
+  ],
+  "authorString": [
+    "White TA, Kell DB."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "White TA"
+          ],
+          "firstName": [
+            "Thomas A"
+          ],
+          "lastName": [
+            "White"
+          ],
+          "initials": [
+            "TA"
+          ]
+        },
+        {
+          "fullName": [
+            "Kell DB"
+          ],
+          "firstName": [
+            "Douglas B"
+          ],
+          "lastName": [
+            "Kell"
+          ],
+          "initials": [
+            "DB"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-5838-7963",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0001-5838-7963",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "4"
+      ],
+      "volume": [
+        "5"
+      ],
+      "journalIssueId": [
+        "1542855"
+      ],
+      "dateOfPublication": [
+        "2004 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2004"
+      ],
+      "printPublicationDate": [
+        "2004-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Comparative and functional genomics"
+          ],
+          "ISOAbbreviation": [
+            "Comp. Funct. Genomics"
+          ],
+          "medlineAbbreviation": [
+            "Comp Funct Genomics"
+          ],
+          "NLMid": [
+            "101090797"
+          ],
+          "ISSN": [
+            "1531-6912"
+          ],
+          "ESSN": [
+            "1532-6268"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2004"
+  ],
+  "pageInfo": [
+    "304-327"
+  ],
+  "abstractText": [
+    "Single and multiple resistance to antibacterial drugs currently in use is spreading, since they act against only a very small number of molecular targets; finding novel targets for anti-infectives is therefore of great importance. All protein sequences from three pathogens (Staphylococcus aureus, Mycobacterium tuberculosis and Escherichia coli O157:H7 EDL993) were assessed via comparative genomics methods for their suitability as antibacterial targets according to a number of criteria, including the essentiality of the protein, its level of sequence conservation, and its distribution in pathogens, bacteria and eukaryotes (especially humans). Each protein was scored and ranked based on weighted variants of these criteria in order to prioritize proteins as potential novel broad-spectrum targets for antibacterial drugs. A number of proteins proved to score highly in all three species and were robust to variations in the scoring system used. Sensitivity analysis indicated the quantitative contribution of each metric to the overall score. After further analysis of these targets, tRNA methyltransferase (trmD) and translation initiation factor IF-1 (infA) emerged as potential and novel antimicrobial targets very worthy of further investigation. The scoring strategy used might be of value in other areas of post-genomic drug discovery."
+  ],
+  "affiliation": [
+    "Department of Biology, University of York, Heslington, York YO10 5YW, UK."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC2447455?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC2447455"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "hindawi.com"
+          ],
+          "url": [
+            "http://www.hindawi.com/GetPDF.aspx?doi=10.1002/cfg.411"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/18629165/pdf/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/18629165/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1002/cfg.411"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "Y"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "20"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "pdb"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2010-06-28"
+  ],
+  "dateOfCreation": [
+    "2008-07-16"
+  ],
+  "dateOfRevision": [
+    "2010-09-22"
+  ],
+  "firstPublicationDate": [
+    "2004-01-01"
+  ]
+}

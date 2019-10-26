@@ -1,0 +1,596 @@
+{
+  "id": [
+    "17069655"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "17069655"
+  ],
+  "pmcid": [
+    "PMC1635734"
+  ],
+  "doi": [
+    "10.1186/1741-7007-4-38"
+  ],
+  "title": [
+    "Multiple, non-allelic, intein-coding sequences in eukaryotic RNA polymerase genes."
+  ],
+  "authorString": [
+    "Goodwin TJ, Butler MI, Poulter RT."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Goodwin TJ"
+          ],
+          "firstName": [
+            "Timothy J D"
+          ],
+          "lastName": [
+            "Goodwin"
+          ],
+          "initials": [
+            "TJ"
+          ]
+        },
+        {
+          "fullName": [
+            "Butler MI"
+          ],
+          "firstName": [
+            "Margaret I"
+          ],
+          "lastName": [
+            "Butler"
+          ],
+          "initials": [
+            "MI"
+          ]
+        },
+        {
+          "fullName": [
+            "Poulter RT"
+          ],
+          "firstName": [
+            "Russell T M"
+          ],
+          "lastName": [
+            "Poulter"
+          ],
+          "initials": [
+            "RT"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-5848-646X",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0001-5848-646X",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "4"
+      ],
+      "journalIssueId": [
+        "1300148"
+      ],
+      "dateOfPublication": [
+        "2006 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2006"
+      ],
+      "printPublicationDate": [
+        "2006-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "BMC biology"
+          ],
+          "ISOAbbreviation": [
+            "BMC Biol."
+          ],
+          "medlineAbbreviation": [
+            "BMC Biol"
+          ],
+          "NLMid": [
+            "101190720"
+          ],
+          "ISSN": [
+            "1741-7007"
+          ],
+          "ESSN": [
+            "1741-7007"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2006"
+  ],
+  "pageInfo": [
+    "38"
+  ],
+  "abstractText": [
+    "BACKGROUND: Inteins are self-splicing protein elements. They are translated as inserts within host proteins that excise themselves and ligate the flanking portions of the host protein (exteins) with a peptide bond. They are encoded as in-frame insertions within the genes for the host proteins. Inteins are found in all three domains of life and in viruses, but have a very sporadic distribution. Only a small number of intein coding sequences have been identified in eukaryotic nuclear genes, and all of these are from ascomycete or basidiomycete fungi. RESULTS: We identified seven intein coding sequences within nuclear genes coding for the second largest subunits of RNA polymerase. These sequences were found in diverse eukaryotes: one is in the second largest subunit of RNA polymerase I (RPA2) from the ascomycete fungus Phaeosphaeria nodorum, one is in the RNA polymerase III (RPC2) of the slime mould Dictyostelium discoideum and four intein coding sequences are in RNA polymerase II genes (RPB2), one each from the green alga Chlamydomonas reinhardtii, the zygomycete fungus Spiromyces aspiralis and the chytrid fungi Batrachochytrium dendrobatidis and Coelomomyces stegomyiae. The remaining intein coding sequence is in a viral relic embedded within the genome of the oomycete Phytophthora ramorum. The Chlamydomonas and Dictyostelium inteins are the first nuclear-encoded inteins found outside of the fungi. These new inteins represent a unique dataset: they are found in homologous proteins that form a paralogous group. Although these paralogues diverged early in eukaryotic evolution, their sequences can be aligned over most of their length. The inteins are inserted at multiple distinct sites, each of which corresponds to a highly conserved region of RNA polymerase. This dataset supports earlier work suggesting that inteins preferentially occur in highly conserved regions of their host proteins. CONCLUSION: The identification of these new inteins increases the known host range of intein sequences in eukaryotes, and provides fresh insights into their origins and evolution. We conclude that inteins are ancient eukaryote elements once found widely among microbial eukaryotes. They persist as rarities in the genomes of a sporadic array of microorganisms, occupying highly conserved sites in diverse proteins."
+  ],
+  "affiliation": [
+    "Department of Biochemistry, University of Otago, Dunedin, New Zealand. timg@sanger.otago.ac.nz"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Animals"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Chlamydomonas reinhardtii"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Dictyostelium"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Phytophthora"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Fungi"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Ascomycota"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Chytridiomycota"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "DNA-Directed RNA Polymerases"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Peptides"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "RNA Splicing"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Amino Acid Sequence"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Inteins"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Sequence Homology, Amino Acid"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Alleles"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Molecular Sequence Data"
+          ]
+        }
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "Peptides"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "DNA-Directed RNA Polymerases"
+          ],
+          "registryNumber": [
+            "EC 2.7.7.6"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC1635734?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC1635734"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1186/1741-7007-4-38"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "10"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "Y"
+  ],
+  "dbCrossReferenceList": [
+    {
+      "dbName": [
+        "UNIPROT"
+      ]
+    }
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "gen",
+        "pdb"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2007-01-03"
+  ],
+  "dateOfCreation": [
+    "2006-11-13"
+  ],
+  "dateOfRevision": [
+    "2013-06-07"
+  ],
+  "electronicPublicationDate": [
+    "2006-10-27"
+  ],
+  "firstPublicationDate": [
+    "2006-10-27"
+  ]
+}

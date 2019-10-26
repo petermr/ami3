@@ -1,0 +1,1050 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.1 20151215//EN" "JATS-archivearticle1.dtd"> 
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Publishing DTD v2.3 20031101//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName journalpublishing.dtd?><?SourceDTD.Version 2.3?><?ConverterInfo.XSLTName jp2nlmx2.xsl?><?ConverterInfo.Version 1?><front><journal-meta><journal-id journal-id-type="nlm-ta">PLoS One</journal-id><journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group><issn pub-type="epub">1932-6203</issn><publisher><publisher-name>Public Library of Science</publisher-name><publisher-loc>San Francisco, USA</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">2492810</article-id><article-id pub-id-type="pmid">18698409</article-id><article-id pub-id-type="publisher-id">08-PONE-RA-03672R3</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0002944</article-id><article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline"><subject>Evolutionary Biology/Plant Genomes and Evolution</subject><subject>Genetics and Genomics/Plant Genomes and Evolution</subject><subject>Plant Biology/Plant Genomes and Evolution</subject></subj-group></article-categories><title-group><article-title>The Role of bZIP Transcription Factors in Green Plant Evolution: Adaptive Features Emerging from Four Founder Genes</article-title><alt-title alt-title-type="running-head">Plant bZIP Evolution</alt-title></title-group><contrib-group><contrib contrib-type="author" equal-contrib="yes"><name><surname>Corr&#x000ea;a</surname><given-names>Luiz Gustavo Guedes</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref><xref ref-type="aff" rid="aff2">
+<sup>2</sup>
+</xref><xref ref-type="aff" rid="aff3">
+<sup>3</sup>
+</xref></contrib><contrib contrib-type="author" equal-contrib="yes"><name><surname>Ria&#x000f1;o-Pach&#x000f3;n</surname><given-names>Diego Mauricio</given-names></name><xref ref-type="aff" rid="aff2">
+<sup>2</sup>
+</xref><xref ref-type="aff" rid="aff4">
+<sup>4</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Schrago</surname><given-names>Carlos Guerra</given-names></name><xref ref-type="aff" rid="aff5">
+<sup>5</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>dos Santos</surname><given-names>Renato Vicentini</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Mueller-Roeber</surname><given-names>Bernd</given-names></name><xref ref-type="aff" rid="aff2">
+<sup>2</sup>
+</xref><xref ref-type="aff" rid="aff3">
+<sup>3</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Vincentz</surname><given-names>Michel</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref><xref ref-type="corresp" rid="cor1">
+<sup>&#x0002a;</sup>
+</xref></contrib></contrib-group><aff id="aff1">
+<label>1</label>
+<addr-line>Centro de Biologia Molecular e Engenharia Gen&#x000e9;tica, Departamento de Gen&#x000e9;tica e Evolu&#x000e7;&#x000e3;o, Instituto de Biologia, Universidade Estadual de Campinas, Campinas, Brazil</addr-line>
+</aff><aff id="aff2">
+<label>2</label>
+<addr-line>Department of Molecular Biology, University of Potsdam, Potsdam-Golm, Germany</addr-line>
+</aff><aff id="aff3">
+<label>3</label>
+<addr-line>Cooperative Research Group, Max-Planck Institute of Molecular Plant Physiology, Potsdam-Golm, Germany</addr-line>
+</aff><aff id="aff4">
+<label>4</label>
+<addr-line>GabiPD Team, Bioinformatics Group, Max-Planck Institute of Molecular Plant Physiology, Potsdam-Golm, Germany</addr-line>
+</aff><aff id="aff5">
+<label>5</label>
+<addr-line>Laborat&#x000f3;rio de Biodiversidade Molecular, Departamento de Gen&#x000e9;tica, Universidade Federal do Rio de Janeiro, Rio de Janeiro, Brazil</addr-line>
+</aff><contrib-group><contrib contrib-type="editor"><name><surname>Shiu</surname><given-names>Shin-Han</given-names></name><role>Editor</role><xref ref-type="aff" rid="edit1"/></contrib></contrib-group><aff id="edit1">Michigan State University, United States of America</aff><author-notes><corresp id="cor1">&#x0002a; E-mail: <email>mgavince@unicamp.br</email></corresp><fn fn-type="con"><p>Conceived and designed the experiments: LGGC CGS RVRVdS MV. Performed the experiments: LGGC DMRP RVRVdS. Analyzed the data: LGGC DMRP CGS MV. Contributed reagents/materials/analysis tools: BMR. Wrote the paper: LGGC DMRP BMR MV.</p></fn></author-notes><pub-date pub-type="collection"><year>2008</year></pub-date><pub-date pub-type="epub"><day>13</day><month>8</month><year>2008</year></pub-date><volume>3</volume><issue>8</issue><elocation-id>e2944</elocation-id><history><date date-type="received"><day>18</day><month>2</month><year>2008</year></date><date date-type="accepted"><day>22</day><month>7</month><year>2008</year></date></history><permissions><copyright-statement>Guedes Correa et al.</copyright-statement><copyright-year>2008</copyright-year><license xlink:href="http://creativecommons.org/licenses/by/4.0/"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are properly credited.</license-p></license></permissions><abstract><sec><title>Background</title><p>Transcription factors of the basic leucine zipper (bZIP) family control important processes in all eukaryotes. In plants, bZIPs are regulators of many central developmental and physiological processes including photomorphogenesis, leaf and seed formation, energy homeostasis, and abiotic and biotic stress responses. Here we performed a comprehensive phylogenetic analysis of bZIP genes from algae, mosses, ferns, gymnosperms and angiosperms.</p></sec><sec><title>Methodology/Principal Findings</title><p>We identified 13 groups of bZIP homologues in angiosperms, three more than known before, that represent 34 Possible Groups of Orthologues (PoGOs). The 34 PoGOs may correspond to the complete set of ancestral angiosperm bZIP genes that participated in the diversification of flowering plants. Homologous genes dedicated to seed-related processes and ABA-mediated stress responses originated in the common ancestor of seed plants, and three groups of homologues emerged in the angiosperm lineage, of which one group plays a role in optimizing the use of energy.</p></sec><sec><title>Conclusions/Significance</title><p>Our data suggest that the ancestor of green plants possessed four bZIP genes functionally involved in oxidative stress and unfolded protein responses that are bZIP-mediated processes in all eukaryotes, but also in light-dependent regulations. The four founder genes amplified and diverged significantly, generating traits that benefited the colonization of new environments.</p></sec></abstract><counts><page-count count="16"/></counts></article-meta></front><body><sec id="s1"><title>Introduction</title><p>Growth and development of all organisms depend on proper regulation of gene expression. The control of transcription initiation rates by transcription factors (TF) represents one of the most important means of modulating gene expression <xref rid="pone.0002944-Meshi1" ref-type="bibr">[1]</xref>&#x02013;<xref rid="pone.0002944-Warren1" ref-type="bibr">[4]</xref>. TFs can be grouped into different protein families according to their primary and/or three-dimensional structure similarities in the DNA-binding and multimerization domains <xref rid="pone.0002944-Warren1" ref-type="bibr">[4]</xref>&#x02013;<xref rid="pone.0002944-Riechmann1" ref-type="bibr">[6]</xref>. The interplay between the amplification of the ancestral repertoire of TFs, the emergence of new TFs, the combination of protein domains and sequence divergence constitutes an important driving force towards the evolution of organismic complexity <xref rid="pone.0002944-Hsia1" ref-type="bibr">[7]</xref>&#x02013;<xref rid="pone.0002944-Levine1" ref-type="bibr">[10]</xref>. Understanding the detailed evolutionary history of these TFs and their corresponding functions is therefore crucial to reveal the changes and/or innovations in transcriptional regulatory circuits that underlie the biological diversity found among eukaryotes.</p><p>Large scale genomic comparisons revealed that angiosperm TF families undergo more intense gene expansion when compared to animals and fungi, possibly reflecting the ability of flowering plants to efficiently adapt to different and unstable environmental conditions. Moreover, gene expansion rates vary among plant TF families, indicating lineage-differential specializations <xref rid="pone.0002944-Shiu1" ref-type="bibr">[11]</xref>, <xref rid="pone.0002944-RiaoPachn1" ref-type="bibr">[12]</xref>. For instance, MADS-box and homeodomain families, which exert similar functions in developmental control, expanded preferentially in the angiosperm and human lineages, respectively <xref rid="pone.0002944-Irish1" ref-type="bibr">[13]</xref>, <xref rid="pone.0002944-GarciaFernandez1" ref-type="bibr">[14]</xref>. Contrariwise, the basic leucine zipper (bZIP) TF family apparently expanded to a similar extent in angiosperms and humans <xref rid="pone.0002944-Deppmann1" ref-type="bibr">[15]</xref>. Currently we do not well understand why individual TF families underwent differential evolutionary expansions in the different eukaryotic lineages. Therefore, a deep evolutionary analysis of TF families including the identification of the founding (ancestral) gene sets in combination with functional assignments will greatly assist in addressing this issue <xref rid="pone.0002944-Floyd1" ref-type="bibr">[16]</xref>, <xref rid="pone.0002944-Bowman1" ref-type="bibr">[17]</xref>.</p><p>To our knowledge, however, only four families that are present in all green plants have until today been studied in a deep evolutionary scale, Dof <xref rid="pone.0002944-MorenoRisueno1" ref-type="bibr">[18]</xref>, homeodomain <xref rid="pone.0002944-Derelle1" ref-type="bibr">[19]</xref>, MADS-box <xref rid="pone.0002944-MartinezCastilla1" ref-type="bibr">[20]</xref>, <xref rid="pone.0002944-Parenicova1" ref-type="bibr">[21]</xref> and WRKY <xref rid="pone.0002944-Zhang1" ref-type="bibr">[22]</xref>. As a matter of fact, groups of orthologues, for which functional equivalence is often assumed, are rarely identified in a systematic and direct manner, with the exception of the HD-Zip class III subfamily <xref rid="pone.0002944-Prigge1" ref-type="bibr">[23]</xref>, <xref rid="pone.0002944-Floyd2" ref-type="bibr">[24]</xref>. It is thus often difficult to infer ancestral functions at different time points of the evolutionary process. Here we performed a comprehensive analysis of the evolutionary relationships of TFs of the green plant bZIP family; homologous and orthologous relationships among bZIP TFs were established and ancestral functions were inferred.</p><p>The bZIP TFs are characterized by a 40- to 80-amino-acid-long conserved domain (bZIP domain) that is composed of two motifs: a basic region responsible for specific binding of the TF to its target DNA, and a leucine zipper required for TF dimerization <xref rid="pone.0002944-Wingender1" ref-type="bibr">[5]</xref>, <xref rid="pone.0002944-Hurst1" ref-type="bibr">[25]</xref>. Genetic, molecular and biochemical analyses indicate that bZIPs are regulators of important plant processes such as organ and tissue differentiation <xref rid="pone.0002944-Walsh1" ref-type="bibr">[26]</xref>&#x02013;<xref rid="pone.0002944-Shen1" ref-type="bibr">[30]</xref>, cell elongation <xref rid="pone.0002944-Yin1" ref-type="bibr">[31]</xref>, <xref rid="pone.0002944-Fukazawa1" ref-type="bibr">[32]</xref>, nitrogen/carbon balance control <xref rid="pone.0002944-Ciceri1" ref-type="bibr">[33]</xref>, <xref rid="pone.0002944-Weltmeier1" ref-type="bibr">[34]</xref>, pathogen defence <xref rid="pone.0002944-Zhang2" ref-type="bibr">[35]</xref>&#x02013;<xref rid="pone.0002944-Kaminaka1" ref-type="bibr">[40]</xref>, energy metabolism <xref rid="pone.0002944-BaenaGonzalez1" ref-type="bibr">[41]</xref>, unfolded protein response <xref rid="pone.0002944-Liu1" ref-type="bibr">[42]</xref>, <xref rid="pone.0002944-Iwata1" ref-type="bibr">[43]</xref>, hormone and sugar signalling <xref rid="pone.0002944-Finkelstein1" ref-type="bibr">[44]</xref>&#x02013;<xref rid="pone.0002944-Nieva1" ref-type="bibr">[47]</xref>, light response <xref rid="pone.0002944-Wellmer1" ref-type="bibr">[48]</xref>&#x02013;<xref rid="pone.0002944-Ulm1" ref-type="bibr">[50]</xref>, osmotic control <xref rid="pone.0002944-Weltmeier1" ref-type="bibr">[34]</xref>, <xref rid="pone.0002944-Satoh1" ref-type="bibr">[51]</xref>, and seed storage protein gene regulation <xref rid="pone.0002944-Lara1" ref-type="bibr">[52]</xref>. Initially, 50 plant bZIP proteins were classified into five families, taking into account similarities of their bZIP domain <xref rid="pone.0002944-Vettore1" ref-type="bibr">[53]</xref>. An original investigation of the complete <italic>Arabidopsis thaliana</italic> genome sequence indicated the presence of 81 putative <italic>bZIP</italic> genes <xref rid="pone.0002944-Arabidopsis1" ref-type="bibr">[54]</xref>, <xref rid="pone.0002944-Jakoby1" ref-type="bibr">[55]</xref>. However, further detailed studies revealed 75 to 77 bZIP proteins to be encoded by the Arabidopsis nuclear genome, representing members of ten groups of homologues <xref rid="pone.0002944-Jakoby1" ref-type="bibr">[55]</xref>, <xref rid="pone.0002944-Vincentz1" ref-type="bibr">[56]</xref>.</p><p>The availability of the rice (<italic>Oryza sativa</italic>) <xref rid="pone.0002944-Yu1" ref-type="bibr">[57]</xref>, <xref rid="pone.0002944-Goff1" ref-type="bibr">[58]</xref>, black cottonwood (<italic>Populus trichocarpa</italic>) <xref rid="pone.0002944-Tuskan1" ref-type="bibr">[59]</xref> and Arabidopsis genomic sequences <xref rid="pone.0002944-Arabidopsis1" ref-type="bibr">[54]</xref> provides an exciting opportunity for the large-scale investigation of the genetic bases that underlies the extensive physiological and morphological diversity amongst the two main angiosperm divisions: monocots and eudicots. A possible comparative approach involves the establishment of relationships between different genomes in a homologous gene system <xref rid="pone.0002944-Bennetzen1" ref-type="bibr">[60]</xref>&#x02013;<xref rid="pone.0002944-Vincentz2" ref-type="bibr">[62]</xref>, in which each group of orthologues is derived from an ancestral gene that underwent numerous modifications throughout evolution, including duplication and subsequent functional diversification. Considering that all genes of a given group of orthologues have the same ancestral origin, the establishment of this classification should allow the transfer of biochemical, structural and functional information from one protein to another, inside the same group <xref rid="pone.0002944-Tatusov1" ref-type="bibr">[63]</xref>. Moreover, the relationships within a group of orthologues constitute the basis for a better understanding of the evolution of ancestral functions (conservation versus neo- or sub-functionalization through duplication) <xref rid="pone.0002944-Adams1" ref-type="bibr">[64]</xref>&#x02013;<xref rid="pone.0002944-Woolfe1" ref-type="bibr">[66]</xref>.</p><p>In this study, we identified the possible non-redundant complete sets of bZIPs in rice, comprising 92 proteins, and in black cottonwood, comprising 89 proteins. These collections of bZIPs together with the 77 bZIPs from Arabidopsis <xref rid="pone.0002944-Vincentz1" ref-type="bibr">[56]</xref> could be divided, based on bZIP domain and other conserved motifs similarities, into 13 groups of bZIP homologues in angiosperms, three more than previously reported <xref rid="pone.0002944-Jakoby1" ref-type="bibr">[55]</xref>. The identified groups constituted a backbone for a more detailed analysis of each group, to which additional bZIP sequences reported from other plants, including those deduced from expressed sequence tags (ESTs), were added. In total, we defined 34 Possible Groups of Orthologues (PoGOs), which may represent 34 ancestral functions in angiosperms. Interestingly, one PoGO was found exclusively in monocots, whereas a Possible Group of Paralogues (PoGP) appears to be restricted to Arabidopsis.</p><p>To extend our bZIP analysis to all major lineages of green plants we additionally identified and incorporated bZIP sequences not only from two algal (<italic>Chlamydomonas reinhardtii</italic>
+<xref rid="pone.0002944-Merchant1" ref-type="bibr">[67]</xref> and <italic>Ostreococcus tauri</italic>
+<xref rid="pone.0002944-Derelle2" ref-type="bibr">[68]</xref>) and moss (<italic>Physcomitrella patens</italic>
+<xref rid="pone.0002944-Rensing1" ref-type="bibr">[69]</xref>) genomes, but also from ESTs of the ferns <italic>Selaginella moellendorffii</italic> and <italic>Adiantum capillus-veneris</italic> and the gymnosperms <italic>Pinus taeda</italic> and <italic>Picea glauca</italic>. Based on this investigation, a model for the evolution of <italic>bZIP</italic> genes in green plants, based on four founder genes representing an ancestral tool kit, was established. Its main points are discussed here. We also propose an updated classification of plant <italic>bZIP</italic> genes which should facilitate functional studies.</p></sec><sec id="s2"><title>Results and Discussion</title><sec id="s2a"><title>Groups of Homologues of Angiosperm <italic>bZIP</italic> Genes</title><p>The Arabidopsis genome encodes for a possible complete set of 77 unique bZIP proteins, representing an update of previous results <xref rid="pone.0002944-Jakoby1" ref-type="bibr">[55]</xref>, <xref rid="pone.0002944-Vincentz1" ref-type="bibr">[56]</xref>, <xref rid="pone.0002944-Corra1" ref-type="bibr">[70]</xref>. <italic>AtbZIP73</italic> contains a premature stop codon and was thus not considered further in our analyses. As it appears to be a pseudogene it should be referred to as <italic>&#x003a8;AtbZIP73</italic>. Through iterated searches with tblastn and blastx algorithms, and PFAM bZIP Hidden Markov Models (HMM), we identified 92 <italic>bZIP</italic> genes in rice (<xref ref-type="supplementary-material" rid="pone.0002944.s032">Text S1a</xref>). Recently, Nijhawan <italic>et al.</italic>
+<xref rid="pone.0002944-Nijhawan1" ref-type="bibr">[71]</xref> reported the presence of 89 <italic>bZIP</italic> genes in rice and their phylogenetic relationship to the Arabidopsis <italic>bZIPs</italic>. Of the 89 bZIPs, 86 are also present in this study. Careful sequence analyses of both gene sets revealed complete sequence identity of the Os06g50480 and Os06g50830 TFs, and complete identity with TF Os06g50600 (OsbZIP14) along amino acids 1&#x02013;143, indicating that these sequences were redundant in the Nijhawan <italic>et al.</italic> data set. <italic>Os03g59460</italic> has also been identified in our studies, however, the protein it encodes contains a proline residue at the beginning of its leucine zipper, precluding dimerization <xref rid="pone.0002944-Hurst1" ref-type="bibr">[25]</xref>; thus it may not function like other known bZIPs. Despite <italic>OsbZIP24</italic> and <italic>OsbZIP75</italic> being classified as retrotransposons in TIGR, we included them in our analysis as they possess a standard bZIP sequence in their open reading frame. <xref ref-type="supplementary-material" rid="pone.0002944.s021">Table S1</xref> gives a summary of this information.</p><p>We identified 89 bZIP sequences in <italic>P. trichocarpa</italic>, some of which were incomplete. We therefore performed a more refined analysis of genomic data sets taking into account gene structures and conserved motifs. This allowed us to resolve the entire <italic>bZIP</italic> gene sequences in nine cases (<xref ref-type="supplementary-material" rid="pone.0002944.s028">Datasets S1</xref> and <xref ref-type="supplementary-material" rid="pone.0002944.s029">S2</xref>).</p><p>Through Neighbour-Joining (NJ) analysis of the minimum bZIP domain (44 amino acids; <xref ref-type="supplementary-material" rid="pone.0002944.s032">Text S1a</xref>) of 257 unique bZIPs from Arabidopsis, rice and black cottonwood (bZARP data set) we identified seven clusters of proteins with bootstrap support greater than or equal to 50&#x00025;, defining the groups of homologous genes B, D, F, G, H, J and K. The topology of the phylogenetic tree and a bootstrap support of 50&#x00025; indicate that Groups D and F are sister groups that share a common ancestor (<xref ref-type="fig" rid="pone-0002944-g001">Figures 1A</xref> and <xref ref-type="supplementary-material" rid="pone.0002944.s001">S1</xref>). Although Group A has a weaker bootstrap support in NJ analyses (34&#x00025; using PAM matrix data, and 58&#x00025; using p-distance values), its members were kept together for two main reasons: (i) all its member genes share a common motif in accordance with previous results from Jakoby <italic>et al.</italic>
+<xref rid="pone.0002944-Jakoby1" ref-type="bibr">[55]</xref>; (ii) all genes but <italic>Gbf4</italic> (<italic>AtbZIP40</italic>) and <italic>AtbZIP13</italic> from Arabidopsis share common intron positions, suggesting a single evolutionary origin (<xref ref-type="supplementary-material" rid="pone.0002944.s032">Text S1b</xref>, and <xref ref-type="supplementary-material" rid="pone.0002944.s002">Figure S2</xref>). In Group F a clear tendency for loss of introns was observed. None of the rice <italic>bZIP</italic> genes contains introns, nor do the black cottonwood genes <italic>PtrbZIP39</italic> and <italic>PtrbZIP40</italic>. Although <italic>PtrbZIP38</italic> and <italic>PtrbZIP41</italic> have introns, they lost it from the conserved basic motif. The only gene that possesses an intron in this motif is <italic>AtbZIP24</italic> from Arabidopsis.</p><fig id="pone-0002944-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0002944.g001</object-id><label>Figure 1</label><caption><title>Phylogeny of bZIP transcription factors in green plants.</title><p>(A) Model of angiosperm bZIP evolution with two large clades, one including groups A, D, F, G and J, and the other including groups B, C, E, H, I and L. Sister groups B and K, E and L, D and F, and G and J, respectively, were defined based on bootstrap support of &#x0003e;50&#x00025;. The position of Group S could not be clearly defined. (B) Consensus tree inferred from NJ analyses of bryophyte and algal bZIP sequences. This tree reveals new evolutionary relationships among green plant bZIPs, which were not observed when the complete ViridiZIP set was analyzed. Group C appears to be related to two other groups (cI and cII) and members of these three groups are orthologues of <italic>OtbZIP5</italic>, constituting the Group Proto-C. Group b was identified as a sister group of Group B and genes of both groups are orthologous to the algal <italic>OtbZIP3</italic> gene, forming the Group Proto-B. Groups Proto-B and H have a common ancestral origin. Similarly, Groups G and J diverged from the same ancestor and are both orthologous to the algal gene <italic>OtbZIP2</italic>. Finally, Groups E and I show a sisterhood relation but no ancestral link to a bZIP from algae could be established. (C) Tree inferred from NJ analyses of the ViridiZIP data set (bZIPs from algae to angiosperms). This tree indicates that Group S probably originated from Proto-C, and Group K from Proto-B. Tree topology and functional data support these hypotheses. Bootstrap values were calculated from NJ analyses. Red, values obtained with p-distances and, black, with PAM matrix.</p></caption><graphic xlink:href="pone.0002944.g001"/></fig><p>Members of Groups A and D have a bZIP domain of only 44 amino acids. To refine our analysis we created a subset-of-bZARP (sbZARP) dataset that excluded groups A and D members but included all remaining 172 proteins with a bZIP domain of 60 amino acids (53, 60 and 59 bZIPs from Arabidopsis, rice and black cottonwood, respectively). NJ analyses revealed four new groups of homologues, Groups C, E, I and L, all supported by bootstrap values of &#x0003e;50&#x00025; (<xref ref-type="supplementary-material" rid="pone.0002944.s003">Figure S3</xref>; note that Group L members harbor an atypical basic motif; see <xref ref-type="supplementary-material" rid="pone.0002944.s002">Figure S2</xref>, and <xref ref-type="supplementary-material" rid="pone.0002944.s032">Text S1c</xref>). The overall organization into twelve groups is further supported by the presence of at least one shared intron position among the members of each group, confirming a common ancestral origin of all its members (<xref ref-type="fig" rid="pone-0002944-g001">Figures 1A</xref>, <xref ref-type="fig" rid="pone-0002944-g002">2</xref> and <xref ref-type="supplementary-material" rid="pone.0002944.s002">S2</xref>). The twelve groups encompass 199 of the 257 bZIPs of the bZARP data set. Fifty-three of the remaining bZIPs (17, 17 and 19 from Arabidopsis, rice, and black cottonwood, respectively) tended to form a separate group, defined as Group S in agreement with previous data <xref rid="pone.0002944-Jakoby1" ref-type="bibr">[55]</xref>. However, this group did not have significant bootstrap support. Members of Group S bZIPs share two characteristics: they harbor a long leucine zipper (eight to nine heptads) and are encoded by intron-less genes. Finally, <italic>AtbZIP72</italic> (Arabidopsis) and <italic>PtrbZIP37</italic>, <italic>81</italic>, <italic>82</italic> and <italic>89</italic> (black cottonwood) could not be classified into any of the above groups (<xref ref-type="fig" rid="pone-0002944-g001">Figure 1A</xref>).</p><fig id="pone-0002944-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0002944.g002</object-id><label>Figure 2</label><caption><title>Motifs conserved in angiosperm bZIPs.</title><p>A summary of the motif sequences is given in <xref ref-type="supplementary-material" rid="pone.0002944.s022">Table S2</xref>. Arrows indicate intron positions conserved among most members of each group. Representative bZIP sizes and positions of conserved motifs are shown. (&#x0002a;) Group A has two motifs (A1 and A2), that are important putative kinase phosphorylation sites involved in ABA responses. Both motifs appear to be conserved in most members of this group of homologues, except for OsbZIP8, 13, 14 and 15, and PtrbZIP5 and 10, which lack motif A1. The same sequences and also PtrbZIP9 lack motif A2. Due to the lack of complete sequences, no structures are shown for Groups AL, GP, b, cI and cII.</p></caption><graphic xlink:href="pone.0002944.g002"/></fig><p>In summary, our data suggest 13 groups of homologous angiosperm <italic>bZIP</italic> genes (A, B, C, D, E, F, G, H, I, J, K, L, and S), representing a unified classification of angiosperm bZIPs (<xref ref-type="fig" rid="pone-0002944-g003">Figure 3</xref>) <xref rid="pone.0002944-Jakoby1" ref-type="bibr">[55]</xref>, <xref rid="pone.0002944-Vincentz1" ref-type="bibr">[56]</xref>, <xref rid="pone.0002944-Nijhawan1" ref-type="bibr">[71]</xref>. This result is in agreement with previous analyses, but additionally revealed three new groups (J, K and L) (<xref ref-type="supplementary-material" rid="pone.0002944.s003">Figure S3</xref>). The name of each group of homologues follows the classification established by Jakoby <italic>et al.</italic>
+<xref rid="pone.0002944-Jakoby1" ref-type="bibr">[55]</xref>. Similar conclusions were reached using Maximum Likelihood analyses.</p><fig id="pone-0002944-g003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0002944.g003</object-id><label>Figure 3</label><caption><title>Classification of bZIPs from Arabidopsis, black cottonwood and rice.</title><p>Thirteen groups of homologues (A to L, and S) were defined through NJ phylogenetic analyses with the bZARP set (<xref ref-type="supplementary-material" rid="pone.0002944.s001">Figures S1</xref> and <xref ref-type="supplementary-material" rid="pone.0002944.s003">S3</xref>). The organization into Possible Groups of Orthologues (PoGOs) was done by more refined NJ phylogenetic analyses inside each group of homologues, including also sequences from other eudicots and monocots. The alignment used for these analyses corresponds to a concatenated sequence of the group-specific conserved motifs identified employing MEME (<ext-link ext-link-type="uri" xlink:href="http://meme.sdsc.edu/meme/website/intro.html">http://meme.sdsc.edu/meme/website/intro.html</ext-link>; <xref ref-type="fig" rid="pone-0002944-g002">Figure 2</xref>). (&#x0002a;) Represents genes that lack group-wise conserved motifs, thus they were included inside a PoGO according to their best hit to another bZIP. Because the relation of AtbZIP72, PtrbZIP37, 81, 82 and 89 could not be clarified, they were not included in any of the groups of homologous or orthologous genes. One Possible Group of Paralogues (PoGP I1) was found in Arabidopsis. Column &#x02018;Gene code&#x02019; provides the gene identifiers for Arabidopsis, black cottonwood and rice bZIP sequences taken from TAIR (<ext-link ext-link-type="uri" xlink:href="http://www.arabidopsis.org/">http://www.arabidopsis.org/</ext-link>), JGI (<ext-link ext-link-type="uri" xlink:href="http://www.jgi.doe.gov/">http://www.jgi.doe.gov/</ext-link>) or TIGR (<ext-link ext-link-type="uri" xlink:href="http://www.tigr.org/">http://www.tigr.org/</ext-link>), respectively. &#x02018;Synonym&#x02019; indicates published and often cites names of bZIP genes. The GenBank accession numbers of nucleotide sequences are given.</p></caption><graphic xlink:href="pone.0002944.g003"/></fig></sec><sec id="s2b"><title>Possible Groups of Orthologues (PoGOs) in Angiosperms</title><p>We next aimed at identifying Possible Groups of Orthologues (PoGOs) among the 13 groups of homologues. By definition, each PoGO represents a group of genes that diverged from an ancestral gene through speciation and duplication. Members of a given PoGO typically have closely related biological functions, and this allows making predictions for poorly characterized genes and rationalizes functional studies of the proteins they encode <xref rid="pone.0002944-Thornton1" ref-type="bibr">[72]</xref>. PoGOs also establish a basis for the definition of functional diversification among genes. Here, we identified PoGOs by NJ analysis of each group of homologues separately, using the criteria defined in <xref ref-type="sec" rid="s3">Material and Methods</xref>. To optimize the resolution of the evolutionary relationships, alignment lengths were extended by including conserved motifs specific to each group of homologues (<xref ref-type="fig" rid="pone-0002944-g002">Figure 2</xref>, and <xref ref-type="supplementary-material" rid="pone.0002944.s022">Table S2</xref>). Additionally, 636 further bZIP sequences, 260 from eudicots and 376 from monocots (<xref ref-type="supplementary-material" rid="pone.0002944.s023">Table S3</xref>), were extracted from EST databases. These new bZIPs were included in the respective groups of homologous genes according to their tblastn best matches against members of an upgraded Angiotot dataset that contained the rice and black cottonwood bZIPs.</p><p>Our analysis revealed 31 PoGOs distributed among Groups A to L (<xref ref-type="fig" rid="pone-0002944-g003">Figures 3</xref> and <xref ref-type="supplementary-material" rid="pone.0002944.s004">S4</xref>, <xref ref-type="supplementary-material" rid="pone.0002944.s005">S5</xref>, <xref ref-type="supplementary-material" rid="pone.0002944.s006">S6</xref>, <xref ref-type="supplementary-material" rid="pone.0002944.s007">S7</xref>, <xref ref-type="supplementary-material" rid="pone.0002944.s008">S8</xref>, <xref ref-type="supplementary-material" rid="pone.0002944.s009">S9</xref>, <xref ref-type="supplementary-material" rid="pone.0002944.s010">S10</xref>, <xref ref-type="supplementary-material" rid="pone.0002944.s011">S11</xref>, <xref ref-type="supplementary-material" rid="pone.0002944.s012">S12</xref>, <xref ref-type="supplementary-material" rid="pone.0002944.s013">S13</xref>, <xref ref-type="supplementary-material" rid="pone.0002944.s014">S14</xref> and <xref ref-type="supplementary-material" rid="pone.0002944.s015">S15</xref>). In all PoGOs except D2, at least one black cottonwood bZIP sequence could be included (<xref ref-type="fig" rid="pone-0002944-g003">Figure 3</xref>) further supporting the organization into PoGOs. The lack of a black cottonwood <italic>bZIP</italic> gene in PoGO D2 could be due to an absence of such a gene in its genome or to incomplete genome sequence availability. OsbZIP24, PtrbZIP86, 87 and 88 lack some of the motifs conserved in Group D members and were therefore assigned to the PoGO to which they showed the highest overall sequence similarity (as identified through blastp analysis).</p><p>We identified only one eudicot-monocot PoGO, S1, in Group S (<xref ref-type="supplementary-material" rid="pone.0002944.s016">Figure S16</xref>). The remaining sequences could be clustered into three PoGOs each restricted to either eudicots (SE1, SE2 and SE3) or monocots (SM1, SM2 and SM3) (<xref ref-type="supplementary-material" rid="pone.0002944.s016">Figure S16</xref>). Arabidopsis bZIP TFs of groups SE2 and SE3 are involved in energy metabolism and hypoosmolarity signaling (<xref ref-type="supplementary-material" rid="pone.0002944.s024">Table S4</xref>) further supporting the evolutionary relationship deduced from the phylogenetic analysis. Similarly, SM2 members play a role in cold signaling (<xref ref-type="supplementary-material" rid="pone.0002944.s024">Table S4</xref>), thus providing function-based support also for this group. Although further efforts to more precisely uncover the relationship between the three monocot (SM1, SM2 and SM3) and eudicot (SE1, SE2 and SE3) groups of orthologues proved unsuccessful, we propose that up to three additional eudicot-monocot PoGOs, besides S1, exist in Group S (as a minimal representation of the three possible monocot and eudicot PoGOs). The difficulty of organizing Group S bZIPs into PoGOs that comprise both eudicots and monocots sequences may reflect an increased evolutionary rate after their emergence. Rapid evolution can mainly be explained by relaxation of purifying selection or by positive selection. We used the Yang algorithm <xref rid="pone.0002944-Yang1" ref-type="bibr">[73]</xref> to verify whether lineage-specific dN/dS ratios in Arabidopsis, black cottonwood and rice (the &#x003c9; parameter, <xref rid="pone.0002944-Kellogg1" ref-type="bibr">[74]</xref>, <xref rid="pone.0002944-Nam1" ref-type="bibr">[75]</xref>) of Group S were different from that of all other groups. The &#x003c9; value for Group S (0.12) was found to be significantly different from the average &#x003c9; calculated for all other groups (0.03, likelihood ratio test <inline-formula><inline-graphic xlink:href="pone.0002944.e001.jpg" mimetype="image"/></inline-formula>, <italic>p</italic>&#x0003c;0.01). Despite being under purifying selection (&#x003c9;&#x0003c;1), the value of &#x003c9; for Group S is four times higher than the average. Thus it can be concluded that purifying selection is relaxed in this group, explaining the higher rate of sequence divergence among its members. Low selective constraint (i.e., low purifying selection) is a hallmark of more recently duplicated genes and can be correlated with functional diversification <xref rid="pone.0002944-Lynch1" ref-type="bibr">[76]</xref>. The extensive amplification of Group S members in angiosperms (see below) further supports the notion that functional diversification partly related to the control of energy metabolism is operating among Group S genes.</p><p>In Group G, we observed one PoGO that is restricted to monocots (PoGO G4; <xref ref-type="supplementary-material" rid="pone.0002944.s010">Figure S10</xref>). This may be explained by gene gain at an early phase of monocot radiation, or alternatively by gene loss in the ancestor of the eudicot lineage. Our analysis also revealed the existence of a Possible Group of Paralogues (PoGP) restricted to Group I in Arabidopsis (PoGP I1, <xref ref-type="supplementary-material" rid="pone.0002944.s012">Figure S12</xref>). This PoGP most probably reflects a recent duplication event followed by rapid divergence in the Arabidopsis lineage. As PoGO G4 and PoGP I1 are restricted to distinct evolutionary lineages, they probably do not play essential (common) roles in angiosperms as a whole. This conclusion is supported by the fact that EmBP from maize and wheat, both assigned to PoGO G4, control reserve protein (prolamin) production <xref rid="pone.0002944-Carlini1" ref-type="bibr">[77]</xref> which can be considered a monocot-specific function.</p><p>Gene duplication is an important means of evolutionary diversification. Therefore, PoGOs that preferentially expanded during angiosperm evolution are expected to include genes that were particularly important for establishing angiosperm-specific physiological or functional characteristics. Of the 13 groups of homologous genes, Groups A, D, E, I and S contain more genes per PoGO than the average (approximately six genes per PoGO, <xref ref-type="supplementary-material" rid="pone.0002944.s017">Figure S17</xref>), indicating their preferential contribution to the evolution of adaptive characteristics in angiosperms. Interestingly, Groups A, D and S include genes for responses and adaptation to environmental factors (abiotic and biotic stresses in Groups A/S and D, respectively; <xref ref-type="supplementary-material" rid="pone.0002944.s024">Table S4</xref>) and the control of energy use (Group S; <xref ref-type="supplementary-material" rid="pone.0002944.s024">Table S4</xref>). These observations raise the possibility that genes of these groups were particularly important for the colonization of new habitats and consequently for the radiation and expansion of angiosperms (<xref ref-type="supplementary-material" rid="pone.0002944.s032">Text S1d</xref>). Additionally, some PoGOs have a conserved one-to-one gene relationship, indicating that their genes may play a pivotal role during development (<xref ref-type="supplementary-material" rid="pone.0002944.s032">Text S1e</xref>)</p><p>In summary, we propose the existence of 31 monocot-eudicot PoGOs in Groups A to L, one monocot-specific PoGO (G5), one PoGP (I1) in Arabidopsis, and possibly three PoGOs in Group S. The 34 PoGOs are likely to be related to 34 possible ancestral functions of bZIPs in angiosperms (<xref ref-type="fig" rid="pone-0002944-g003">Figure 3</xref>, and <xref ref-type="supplementary-material" rid="pone.0002944.s032">Text S1d</xref>).</p></sec><sec id="s2c"><title>Tracing the Origin and Diversification of <italic>bZIP</italic> Genes in Green Plants</title><p>Based on the phylogenetic analyses and the <italic>bZIP</italic> gene structures from Arabidopsis, black cottonwood and rice, we propose a model for the evolution of angiosperm bZIPs (<xref ref-type="fig" rid="pone-0002944-g001">Figure 1A</xref>). This model proposes two large clades encompassing Groups A, D, F, G and J, and Groups B, C, E, H, I, K and L, respectively. Groups B, H and K, Groups E and L, and Groups D and F are sister groups, as evidenced by their bootstrap support. Furthermore, the conserved intron position in the bZIP domain shared by Groups A, D, G and J, as well as the one shared by Groups C, E, H, I, K and L (<xref ref-type="supplementary-material" rid="pone.0002944.s003">Figure S3</xref>) supports the hypothesis that these groups diverged from a common ancestor. We were not able to establish a clear relationship of Group S to any of the two larger groups. It may have an independent ancestral origin, constituting a third group, or may have evolved from one of the two large groups (<xref ref-type="fig" rid="pone-0002944-g001">Figure 1A</xref>).</p><p>To identify groups of homologues among the major eukaryotic lineages, i.e. animals, fungi, and plants, we performed a large-scale phylogenetic analysis using the conserved bZIP region of all bZIPs from <italic>Homo sapiens</italic>
+<xref rid="pone.0002944-Vinson1" ref-type="bibr">[78]</xref>, <italic>Caenorhabditis elegans</italic> (<ext-link ext-link-type="uri" xlink:href="http://www.wormbase.org/">http://www.wormbase.org/</ext-link>), <italic>Drosophila melanogaster</italic>
+<xref rid="pone.0002944-Fassler1" ref-type="bibr">[79]</xref>, <italic>Saccharomyces cerevisiae</italic> (<ext-link ext-link-type="uri" xlink:href="http://mips.gsf.de/genre/proj/yeast/">http://mips.gsf.de/genre/proj/yeast/</ext-link>), <italic>A. thaliana</italic> and <italic>O. sativa</italic>. This analysis revealed that <italic>bZIPs</italic> of each of these lineages share only one common ancestor (data not shown) which is in accordance with the fact that only a single <italic>bZIP</italic> sequence is present in the primitive eukaryote <italic>Giardia lamblia</italic>
+<xref rid="pone.0002944-Deppmann2" ref-type="bibr">[80]</xref>, <xref rid="pone.0002944-Best1" ref-type="bibr">[81]</xref>, perhaps representing the <italic>bZIP</italic> gene content prior to the plant/animal/fungal separation <xref rid="pone.0002944-Deppmann2" ref-type="bibr">[80]</xref>. The function of this unique ancestral gene may be related to unfolded protein (UPR) and oxidative stress responses (see below). Deep evolutionary analyses have also been performed for the homeodomain and MADS-box families and it appears that their member TFs derived from at least two genes present in the last common ancestor of the three eukaryotic kingdoms <xref rid="pone.0002944-Derelle1" ref-type="bibr">[19]</xref>, <xref rid="pone.0002944-AlvarezBuylla1" ref-type="bibr">[82]</xref>. It has been proposed that one of the ancestral functions of the MIKC<sup>c</sup> class of MADS-box genes is an involvement in reproductive organ development <xref rid="pone.0002944-Singer1" ref-type="bibr">[83]</xref>, <xref rid="pone.0002944-Tanabe1" ref-type="bibr">[84]</xref>. Although this function appears to be conserved, it is still not clear whether it has a monophyletic origin.</p><p>We identified 7, 8, and 40 <italic>bZIP</italic> genes, respectively, in the genomes of the algae <italic>Chlamydomonas reinhardtii</italic> and <italic>Ostreococcus tauri</italic> and the moss <italic>Physcomitrella patens</italic> (however, a complete bZIP domain is missing in three of the moss proteins). Additionally, we identified bZIP sequences from assembled ESTs of species representing the most relevant divisions of the green plants from which sequences are available: four <italic>bZIP</italic> genes in the bryophyte <italic>Marchantia polymorpha</italic>, one each in the ferns <italic>Selaginella moellendorffii</italic> and <italic>Adiantum capillus-veneris</italic>, and 40 and nine, respectively, in the gymnosperms <italic>Pinus taeda</italic> and <italic>Picea glauca</italic> (<xref ref-type="supplementary-material" rid="pone.0002944.s025">Table S5</xref>). Although no complete genomic sequences were available for ferns or gymnosperms, a considerable number of ESTs is available for the latter. We assembled a set of 345 bZIPs from algae to angiosperms (ViridiZIP set) for phylogenetic analyses (<xref ref-type="fig" rid="pone-0002944-g001">Figures 1B, 1C</xref> and <xref ref-type="fig" rid="pone-0002944-g004">4</xref>).</p><fig id="pone-0002944-g004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0002944.g004</object-id><label>Figure 4</label><caption><title>Global Phylogeny of bZIPs in green plants.</title><p>This tree is a consensus of NJ analyses with p-distance performed with the ViridiZIP set. Bootstrap values in yellow were calculated from NJ analysis (PAM matrices, and with 44 and 60 amino acid alignments; only the highest bootstrap values are shown). Bootstrap values in red were calculated from ML analyses using the JTT&#x0002b;&#x00393; evolutionary model (either with 44 or 60 amino acid alignments; only the highest bootstrap values are shown). GPX, GPI, GPII, GPIII, and GPIV indicate putative gymnosperm specific groups. Each group of homologues is colored following the same colour scheme used in Tables I and SV. The center of the tree depicts a typical bZIP dimer bound to DNA, representing the conserved bZIP domain (GCN4 from <italic>Saccharomyces cerevisiae</italic>; Protein Data Bank entry 2DGC).</p></caption><graphic xlink:href="pone.0002944.g004"/></fig><p>Our study revealed that Group H is the most conserved group of <italic>bZIP</italic> homologues; members of this group are present in all green plant lineages. This observation is particularly interesting because Group H includes <italic>HY5</italic> and <italic>HYH</italic> that are important regulators of light responses and anthocyanin biosynthesis (<xref ref-type="supplementary-material" rid="pone.0002944.s024">Table S4</xref>). We therefore propose that Hy5-like bZIPs control light-dependent processes in all green plants. Similar to bZIPs in Group H, DOF transcription factors involved in light responses (subfamily A) also appear to be well conserved, suggesting that genes involved in light-related functions are under strong selective constraints <xref rid="pone.0002944-Shigyo1" ref-type="bibr">[85]</xref>. In Arabidopsis Hy5-mediated photomorphogenesis is negatively regulated by the E3 ubiquitin ligase Cop1, which ubiquitylates Hy5 protein leading to its degradation <xref rid="pone.0002944-Holm1" ref-type="bibr">[86]</xref>. We detected Cop1-related proteins in Physcomitrella, in agreement with previous results, as well as the Cop1-interaction motif in Physcomitrella Hy5-like bZIPs, suggesting that the genetic toolkit for photomorphogenesis described in angiosperms is also present in mosses <xref rid="pone.0002944-Richardt1" ref-type="bibr">[87]</xref>. We also detected a single gene similar to <italic>COP1</italic> in Ostreococcus (ID 30007), but while in higher plants Cop1 protein contains a RING domain at the N-terminus, followed by multiple WD40 repetitions <xref rid="pone.0002944-Yi1" ref-type="bibr">[88]</xref>, this order is reversed in the Ostreococcus protein. Moreover, a Cop1 interaction site (<xref ref-type="supplementary-material" rid="pone.0002944.s022">Table S2</xref>) was not detected in the algal <italic>HY5</italic>-orthologues OtbZIP1 or CrbZIP1, or in any other green algae bZIP. Nevertheless, we found one Cop1-related protein in the red alga <italic>Cyanidioschyzon merolae</italic> (ID CMK039C; <ext-link ext-link-type="uri" xlink:href="http://merolae.biol.s.u-tokyo.ac.jp/">http://merolae.biol.s.u-tokyo.ac.jp/</ext-link>). Cop1-like proteins are also known in animals where they promote the degradation of the bZIP transcription factor c-Jun <xref rid="pone.0002944-Yi1" ref-type="bibr">[88]</xref>, suggesting Cop1-dependent protein degradation to be a regulatory scheme conserved in most eukaryotes.</p><p>Groups B, C, D, E, F, G, I and J were present in the most recent common ancestor (MRCA) of bryophytes and tracheophytes, indicating a functional connection to the colonization of the terrestrial environment (<xref ref-type="fig" rid="pone-0002944-g005">Figure 5</xref>). Some of these genes play a role in light responses (Group G), nitrogen/carbon balance control (Groups C and G), and ion responses (Group D), which are some of the important features that developed further in embryophytes (<xref ref-type="supplementary-material" rid="pone.0002944.s024">Table S4</xref>). Moreover, it appears that during the evolution from early land plants to angiosperms, Group D and I genes amplified more than genes of the other groups of homologues (5 to 10, and 4 to 11 genes in groups D and I, respectively), strongly suggesting that both groups were particularly important for this transition. Several Group D genes are involved in biotic stress responses (<xref ref-type="supplementary-material" rid="pone.0002944.s024">Table S4</xref>) indicating that improved pathogen defense was important for land plant evolution. Some <italic>bZIP</italic> genes of Group I control the expression of vascular genes (<xref ref-type="supplementary-material" rid="pone.0002944.s024">Table S4</xref>), which are central to vascular tissue development in tracheophytes.</p><fig id="pone-0002944-g005" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0002944.g005</object-id><label>Figure 5</label><caption><title>Phylogenetic profile and structure of bZIPs in green plants.</title><p>Groups E, L and I belong to the same branch as Groups Proto-B, Proto-C and H but their exact position is not clear (<xref ref-type="fig" rid="pone-0002944-g001">Figure 1A</xref>). Similarly, Groups A, D and F do not have a clear position, though they belong to the same branch as Groups G and J (<xref ref-type="fig" rid="pone-0002944-g001">Figure 1A</xref>). The relation of Groups AL and GP to the other groups could not be established. bZIPs of the species studied here were grouped at the level of higher taxa, i.e., algae (represented by <italic>C. reinhardtii</italic> and <italic>O. tauri</italic>); bryophytes (<italic>P. patens</italic>); gymnosperms (<italic>P. glauca</italic> and <italic>P. taeda</italic>), and angiosperms (<italic>O. sativa</italic>, <italic>A. thaliana</italic> and <italic>P. trichocarpa</italic>). Solid boxes indicate that at least one bZIP was found for a given group of homologues in the respective taxon. Squared boxes indicate that homologous bZIP sequences were not yet observed in gymnosperms, possibly due to sampling limitations. Notably, however, sequences of the respective groups are conserved in bryophytes and angiosperms. Dashed lines with brackets shown in Groups Proto-B and Proto-C indicate that there is an orthologous bZIP in at least one of the algal species, although it does not strictly belong to any of the homologous groups. The half lines present in G and J indicate the presence of common orthologues in algae. Groups AL, GP, K, L and S appear to be lineage specific.</p></caption><graphic xlink:href="pone.0002944.g005"/></fig><p>Group A probably first appeared in the MRCA of spermatophytes and may thus be related to seed formation (<xref ref-type="fig" rid="pone-0002944-g005">Figure 5</xref>). As a matter of fact, Group A bZIPs often have functions in seed development, ABA responsiveness and fruit maturation (<xref ref-type="supplementary-material" rid="pone.0002944.s024">Table S4</xref>). Moreover, they are elements of ABA-dependent signaling pathways that coordinate responses to desiccation/dehydration and salt stress. ABA-mediated signaling is known in Physcomitrella <xref rid="pone.0002944-Kamisugi1" ref-type="bibr">[89]</xref>, <xref rid="pone.0002944-Marella1" ref-type="bibr">[90]</xref>, however, Group A bZIPs are not present in this organism (<xref ref-type="fig" rid="pone-0002944-g005">Figure 5</xref>), indicating a less developed ABA regulatory network (<xref ref-type="supplementary-material" rid="pone.0002944.s032">Text S1f</xref>).</p><p>According to our data Groups K, L and S are angiosperm-specific (<xref ref-type="fig" rid="pone-0002944-g005">Figure 5</xref>). However, due to sampling limitations we can not formally exclude the possibility that these groups are also present in gymnosperms. Additionally, this analysis eliminates the hypothesis that Group S has an independent ancestral origin (<xref ref-type="fig" rid="pone-0002944-g001">Figures 1A and 1C</xref>).</p><p>We also detected Group NA, a possible group of homologues exclusively present in non-angiosperm plants (<xref ref-type="supplementary-material" rid="pone.0002944.s018">Figure S18</xref>, and <xref ref-type="supplementary-material" rid="pone.0002944.s032">Text S1g</xref>). This finding is intriguing as genes conserved in mosses and gymnosperms are expected to represent general plant functions. Group NA bZIPs may thus have lineage-specific roles unimportant for angiosperms; the reduction of a dominant gametophyte during angiosperm evolution combined with a concomitant gene loss is an example for this. Alternatively, gene loss could have played a key role in the acquisition of important features in angiosperms, as seen for <italic>KNOX</italic> genes <xref rid="pone.0002944-Singer2" ref-type="bibr">[91]</xref>; or, the roles played by bZIPs of Group NA could have been taken over by non-related but functionally analogous genes (non-orthologous gene displacement).</p></sec><sec id="s2d"><title>Ancestral Relationships in Groups B and C</title><p>The above analysis in combination with detailed sequential NJ analyses restricted to algal, moss and/or Arabidopsis sequences revealed two new groups, i.e. Groups Proto-B and Proto-C (<xref ref-type="fig" rid="pone-0002944-g001">Figure 1B</xref>). Group Proto-C encompasses Group C (<xref ref-type="fig" rid="pone-0002944-g001">Figure 1A</xref>) and two new Groups, cI and cII that correspond to the sequences previously identified in Group NA (<xref ref-type="supplementary-material" rid="pone.0002944.s018">Figure S18</xref>). While cI appears to be restricted to bryophytes, cII is found up to gymnosperms, and C is present up to angiosperms (<xref ref-type="fig" rid="pone-0002944-g001">Figures 1C</xref> and <xref ref-type="fig" rid="pone-0002944-g005">5</xref>). Notably, in all phylogenetic analyses Group S appeared to be more attracted by Groups C, cI and cII (<xref ref-type="fig" rid="pone-0002944-g001">Figures 1C</xref>, <xref ref-type="fig" rid="pone-0002944-g004">4</xref> and <xref ref-type="fig" rid="pone-0002944-g005">5</xref>), suggesting it originated from Group Proto-C, probably by gene duplication followed by rapid evolution. This finding is supported by the observation that bZIPs tend to dimerize with more similar partners, e.g. AtbZIP10 (Group C) with AtbZIP53 (Group S) <xref rid="pone.0002944-Weltmeier1" ref-type="bibr">[34]</xref>, <xref rid="pone.0002944-Vinson2" ref-type="bibr">[92]</xref>. Additionally, members of Group C (<italic>AtbZIP63</italic>) and S (<italic>ATB2</italic>, <italic>GBF5</italic>, <italic>AtbZIP1</italic> and <italic>AtbZIP53</italic>) participate in the control of energy metabolism and thus share similar functions (<xref ref-type="supplementary-material" rid="pone.0002944.s024">Table S4</xref>). Moreover, Group Proto-C possesses one <italic>bZIP</italic> gene, <italic>OtbZIP5</italic> from Ostreococcus, supporting the model that the biological functions played by bZIPs of Group C/S, such as oxidative stress responses associated with <italic>AtbZIP10</italic>
+<xref rid="pone.0002944-Kaminaka1" ref-type="bibr">[40]</xref> and energy metabolism control mediated for example by <italic>GBF5</italic>
+<xref rid="pone.0002944-BaenaGonzalez1" ref-type="bibr">[41]</xref>, are at least partially present in all green plants. Importantly, oxidative stress signaling involving bZIPs has been reported in yeast and men and thus appears to be conserved in all eukaryotes <xref rid="pone.0002944-Lawrence1" ref-type="bibr">[93]</xref>&#x02013;<xref rid="pone.0002944-Makino1" ref-type="bibr">[97]</xref>.</p><p>Group Proto-B consists of Group B, which includes members from bryophytes and angiosperms, a new group of homologues (Group b) that is apparently restricted to bryophytes and gymnosperms, and the Ostreococcus gene <italic>OtbZIP3</italic> (<xref ref-type="fig" rid="pone-0002944-g001">Figures 1B</xref>, <xref ref-type="fig" rid="pone-0002944-g004">4</xref> and <xref ref-type="fig" rid="pone-0002944-g005">5</xref>). Based on our initial phylogenetic analysis of angiosperm sequences (<xref ref-type="fig" rid="pone-0002944-g001">Figure 1A</xref>) and tree topology (<xref ref-type="fig" rid="pone-0002944-g001">Figures 1C</xref> and <xref ref-type="fig" rid="pone-0002944-g004">4</xref>) we concluded that angiosperm-specific Group K is not only a sister group of B, but very likely also emerged from Proto-B. Members of Group K are likely to have a role in the unfolded protein response (UPR), a cellular process involving the endoplasmic reticulum (ER) that counteracts cellular stress when incorrectly folded proteins accumulate <xref rid="pone.0002944-Iwata1" ref-type="bibr">[43]</xref>. bZIPs involved in this response are known in mammals and yeast and thus appear to be conserved in many lineages <xref rid="pone.0002944-Yoshida1" ref-type="bibr">[98]</xref>, <xref rid="pone.0002944-Cox1" ref-type="bibr">[99]</xref>. Recently, Liu et al. <xref rid="pone.0002944-Liu1" ref-type="bibr">[42]</xref> demonstrated a role of Arabidopsis AtbZIP17 (Group B) in the UPR pathway, supporting the hypothesis that Group K emerged from Group B, and that <italic>OtbZIP3</italic> plays a similar role. Members of Groups B and K (like animal bZIP proteins involved in UPR) posses a trans-membrane domain for ER attachment (<xref ref-type="supplementary-material" rid="pone.0002944.s022">Table S2</xref>), but members of Group K lack the cleavage site recognized by the so-called site-1 protease (S1P). Most likely, the two groups function in different branches of the UPR pathway. Additionally, we looked for the presence of both trans-membrane and S1P interaction domains in other plant proteins. The trans-membrane domain is present in all Group B and K bZIPs from green plant lineages, whereas the S1P interaction domain was not found in some of them, perhaps due to missing sequence data.</p><p>Another important result of our analysis is that Ostreococcus sequences could be included, with significant bootstrap support, into Groups Proto-C (<italic>OtbZIP5</italic>) and Proto-B (<italic>OtbZIP3</italic>; <xref ref-type="fig" rid="pone-0002944-g001">Figure 1B</xref>). Moreover, Ostreococcus <italic>OtbZIP2</italic> was found to significantly cluster with Groups G and J, forming a new group named G&#x0002b;J (<xref ref-type="fig" rid="pone-0002944-g001">Figure 1B</xref>).</p><p>In conclusion, our results indicate that four Ostreococcus <italic>bZIP</italic> genes can be assigned to Groups Proto-C (<italic>OtbZIP5</italic>), Proto-B (<italic>OtbZIP3</italic>), G&#x0002b;J (<italic>OtbZIP2</italic>), and H (<italic>OtbZIP1</italic>), defining four orthologous relationships between algal and five groups of homologues from terrestrial plants (<xref ref-type="fig" rid="pone-0002944-g006">Figure 6</xref>). This data suggests the presence of at least four founder genes in the MRCA of green plants. Our analysis also indicates that Groups H (including <italic>OtbZIP1</italic> and <italic>CrbZIP1</italic>) and Proto-B (including <italic>OtbZIP3</italic>) originated from a common ancestral gene (<xref ref-type="fig" rid="pone-0002944-g001">Figure 1B</xref>). However, their relationship with Proto-C (<italic>OtbZIP5</italic>) and G&#x0002b;J (<italic>OtbZIP2</italic>), and the relationship of the four founder genes to the possible monophyletic origin of bZIPs in green plants could not be determined. The most parsimonious model that can explain the origin of the four ancestral bZIPs is shown in <xref ref-type="fig" rid="pone-0002944-g006">Figure 6</xref>. The assumption that Group Proto-C and Groups H/Proto-B share a common ancestral gene was inferred from the observation that angiosperm Groups C, B and H also cluster together (<xref ref-type="fig" rid="pone-0002944-g001">Figure 1A</xref>). Similarly, all DOF TFs appear to have originated from a single founder gene from subfamily A, which was present in the MRCA of green plants and might have played a role in light-regulated mechanisms <xref rid="pone.0002944-MorenoRisueno1" ref-type="bibr">[18]</xref>. In addition, MADS-box TYPE II (MIKC<sup>c</sup>) and HD-Zip class III TF families each emerged from a single founder gene present in the MRCA of streptophytes that was possibly involved in haploid reproductive cell differentiation <xref rid="pone.0002944-Tanabe1" ref-type="bibr">[84]</xref> or control of apical growth <xref rid="pone.0002944-Prigge1" ref-type="bibr">[23]</xref>, <xref rid="pone.0002944-Floyd2" ref-type="bibr">[24]</xref>, respectively.</p><fig id="pone-0002944-g006" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0002944.g006</object-id><label>Figure 6</label><caption><title>Most parsimonious model explaining the emergence of the four green plant founder <italic>bZIP</italic> genes.</title><p>The four founder genes (in Groups G&#x0002b;J, Proto-C, Proto-B and H) are derived from a unique ancestral gene common to all eukaryotes. Groups Proto-B and Proto-C most likely derived from a multifunctional UPR/oxidative stress gene. Groups Proto-B and H are sister groups and their relationship to Group Proto-C was found by analyzing angiosperm bZIPs (<xref ref-type="fig" rid="pone-0002944-g001">Figure 1A</xref>). Group G&#x0002b;J is the ancestral group of a large set of <italic>bZIP</italic> genes included in Groups A, D and F, but the ancestral function played by this group is still largely unknown.</p></caption><graphic xlink:href="pone.0002944.g006"/></fig></sec><sec id="s2e"><title>bZIP Evolution in Plants</title><p>Our data show that Group C and B members are elements of the oxidative stress signaling and UPR pathways, respectively, which appear to be crucial in all eukaryotes. This observation and the likely monophyletic origin of bZIPs of the main eukaryotic lineages (plants, animals, and fungi) suggest that the common bZIP ancestor was a multifunctional regulatory factor. An important consequence of this model is that Group H, which has a central role in light-mediated control, emerged from bZIPs of the oxidative stress and UPR regulatory modules. The integration of the branch leading to Group G&#x0002b;J, however, remains unclear which is partially due to the fact that functional information is limited and restricted to Group G that plays a role in light and ABA signaling.</p><p>From the extant algal sequences that do not cluster into any of the homologous groups of streptophytes, only a single group of homologues restricted to algae could be detected (Group AL; <xref ref-type="fig" rid="pone-0002944-g001">Figures 1C</xref> and <xref ref-type="fig" rid="pone-0002944-g005">5</xref>). In most cases bZIP sequences from Chlamydomonas and Ostreococcus do not cluster together at all. This observation indicates that bZIPs evolved differently in the algal lineages, probably reflecting adaptations to different ecological niches; Chlamydomonas lives in fresh water, while Ostreococcus lives in sea water.</p><p>We estimated the number of bZIPs in the MRCA of all land plants (embryophytes), using the method of Hahn <italic>et al.</italic>
+<xref rid="pone.0002944-Hahn1" ref-type="bibr">[100]</xref>; the MRCA most likely had 64 bZIPs that expanded to 83 in the branch leading to seed plants. The rate of gene gain-loss, &#x003bb;, in the seed plant lineage was found to be 2.01&#x000d7;10<sup>&#x02212;3</sup> per million years, which is similar to estimates for yeast (0.002) <xref rid="pone.0002944-Hahn1" ref-type="bibr">[100]</xref> and mammals (0.0016) <xref rid="pone.0002944-Demuth1" ref-type="bibr">[101]</xref>. We calculated expansions and contractions of the bZIP phylogenetic branches in the land plant lineage, using the estimated value for &#x003bb;; this revealed a significant expansion (<italic>p</italic>&#x0003c;0.05) of the branch leading to the seed plant lineage. Finally, the evolution of the <italic>bZIP</italic> gene family is well explained by the random birth-and-death model in seed plants, i.e., no significant expansions/contractions occurred preferentially in any specific PoGO or group of homologues (<xref ref-type="supplementary-material" rid="pone.0002944.s019">Figure S19</xref>, and <xref ref-type="supplementary-material" rid="pone.0002944.s032">Text S1h</xref>).</p></sec><sec id="s2f"><title>Conclusions</title><p>In our analysis presented here we systematically classified bZIP TFs into PoGOs and considered existing knowledge about their biological functions to establish a robust methodology to reveal evolutionary relationships of this group of regulatory proteins. The moss Physcomitrella possesses almost five times more <italic>bZIP</italic> genes (37 genes, <xref ref-type="supplementary-material" rid="pone.0002944.s025">Table S5</xref>) than the alga Ostreococcus (8 genes), and half the number found in angiosperms (around 80 genes). Group A genes first appeared in the MRCA of spermatophytes and were recruited for seed development or germination but also to fine tune the responses to desiccation/dehydration and salt stress. Groups K, L and S are seemingly exclusive to angiosperms. Unexpectedly, Groups K and S control processes conserved in all eukaryotes, i.e. UPR and energy homeostasis. This apparent paradox can be explained by the fact that both, Groups K and S derived from the functionally related Groups Proto-B and Proto-C, respectively, that emerged early on during green plant evolution. Group S amplification likely contributed to refining the regulatory circuit controlling the organism's energy status. The most strongly conserved group of homologues in algae and angiosperms is Group H which includes light control factors <italic>HY5</italic> and <italic>HYH</italic>. Group H is representative of one of the four green plant founder <italic>bZIP</italic> genes. Our data thus establish the hypothesis that bZIP-controlled light responses of Group H emerged (through neofunctionalization) from a multifunctional ancestral gene of the UPR and oxidative stress response pathways (UPR/oxidative stress). The UPR/oxidative stress gene is also the ancestor of two other of the four founder genes, i.e. Groups Proto-B (UPR) and Proto-C (oxidative stress), which most likely diverged through subfunctionalization processes. The fourth founder gene, represented by Groups G and J, is the sister gene of the multifunctional UPR/oxidative stress gene. More functional data for Group G- and J-related bZIPs are required to further elaborate the model of green plant bZIP evolution.</p></sec></sec><sec id="s3"><title>Materials and Methods</title><sec id="s3a"><title>Datasets of <italic>bZIP</italic> Genes</title><p>We generated a bZIP dataset (Angiotot) representing an updated version of the ABZ data set <xref rid="pone.0002944-Vincentz1" ref-type="bibr">[56]</xref>. Plant bZIP sequences were identified as described by Ria&#x000f1;o-Pach&#x000f3;n et al. <xref rid="pone.0002944-RiaoPachn2" ref-type="bibr">[102]</xref>. The whole proteomes deduced from the completely sequenced genomes of the algae <italic>Ostreococcus tauri</italic>
+<xref rid="pone.0002944-Derelle2" ref-type="bibr">[68]</xref> and <italic>Chlamydomonas reinhardtii</italic>
+<xref rid="pone.0002944-Merchant1" ref-type="bibr">[67]</xref>, the bryophyte <italic>Physcomitrella patens</italic>
+<xref rid="pone.0002944-Rensing1" ref-type="bibr">[69]</xref>, and the angiosperm <italic>Populus trichocarpa</italic>
+<xref rid="pone.0002944-Tuskan1" ref-type="bibr">[59]</xref> were downloaded from the Joint Genome Institute/Department of Energy (JGI/DOE; <ext-link ext-link-type="uri" xlink:href="http://www.jgi.doe.gov/">http://www.jgi.doe.gov/</ext-link>). Protein sequences for the angiosperm <italic>Arabidopsis thaliana</italic>
+<xref rid="pone.0002944-Arabidopsis1" ref-type="bibr">[54]</xref> were downloaded from The Arabidopsis Information Resource (TAIR; <ext-link ext-link-type="uri" xlink:href="http://www.arabidopsis.org/">http://www.arabidopsis.org/</ext-link>), and from The J. Craig Venter Institute (<ext-link ext-link-type="uri" xlink:href="http://www.tigr.org/">http://www.tigr.org/</ext-link>) for the monocot <italic>Oryza sativa</italic> ssp. <italic>japonica</italic>
+<xref rid="pone.0002944-Goff1" ref-type="bibr">[58]</xref>.</p><p>Assembled ESTs from <italic>Marchantia polymorpha</italic>, <italic>Physcomitrella patens</italic>, <italic>Adiantum capillus-veneris</italic>, <italic>Selaginella moellendorffii</italic>, <italic>Picea glauca</italic>, <italic>Pinus taeda</italic>, <italic>Brassica napus</italic>, <italic>Glycine max</italic>, <italic>Heliathus annus</italic>, <italic>Medicago truncatula</italic>, <italic>Solanum lycopersicum</italic>, <italic>Solanum tuberosum</italic>, <italic>Hordeum vulgare</italic>, <italic>Saccharum ssp.</italic>, <italic>Sorghum bicolor</italic>, <italic>Triticum aestivum</italic> and <italic>Zea mays</italic> were downloaded from the TIGR Plant Transcript Assemblies Database <xref rid="pone.0002944-Childs1" ref-type="bibr">[103]</xref>. ESTs from <italic>Oryza sativa</italic> ssp. <italic>indica</italic> were downloaded from the Beijing Genomics Institute website (07.11.2006), and assembled into clusters using TGICL <xref rid="pone.0002944-Pertea1" ref-type="bibr">[104]</xref>. Additional rice bZIP sequences were obtained from the Full Length Rice cDNA Consortium <xref rid="pone.0002944-Kikuchi1" ref-type="bibr">[105]</xref>. Some sequences from completely sequenced genomes were re-annotated (<xref ref-type="supplementary-material" rid="pone.0002944.s028">Datasets S1</xref> and <xref ref-type="supplementary-material" rid="pone.0002944.s029">S2</xref>), based on conserved protein motifs and gene structures of each family. The list of abbreviations of the organisms used is given in <xref ref-type="supplementary-material" rid="pone.0002944.s026">Table S6</xref>.</p><p>The tblastn program <xref rid="pone.0002944-Altschul1" ref-type="bibr">[106]</xref> was used to search for bZIP sequences in rice nucleotide databases (<italic>Oryza sativa</italic> ssp. <italic>indica</italic>
+<xref rid="pone.0002944-Yu1" ref-type="bibr">[57]</xref>; Beijing Genomics Institute, <ext-link ext-link-type="uri" xlink:href="http://btn.genomics.org.cn/rice">http://btn.genomics.org.cn/rice</ext-link>, and <italic>Oryza sativa</italic> ssp. <italic>japonica</italic>; Syngenta, <ext-link ext-link-type="uri" xlink:href="http://www.syngenta.com/">http://www.syngenta.com/</ext-link>; IRGSP, <ext-link ext-link-type="uri" xlink:href="http://www.gramene.org/">http://www.gramene.org/</ext-link>) using Angiotot as query. Sequences with an e-value &#x0003c;10<sup>&#x02212;4</sup> were selected to form a subset (SeqZIP), from which false positive hits, corresponding mainly to low complexity regions, and hits that we initially identified using the above procedure were excluded. To identify the open reading frame and gene structure of each SeqZIP sequence, pairwise blastx analyses against their respective Angiotot best hits were performed. Gene structures were defined based on the alignments obtained, the conserved positions of introns in homologous bZIP genes, and the presence of canonical splicing sites (GT-AG). The protocol used for bZIP identification is described in <xref ref-type="supplementary-material" rid="pone.0002944.s020">Figure S20</xref>.</p><p>The procedure used to identify bZIPs in EST datasets was identical to that used for genomic sequences, except that the estwisedb program of the Wise2 package <xref rid="pone.0002944-Birney1" ref-type="bibr">[107]</xref> was included to identify the most likely reading frames and its bZIP domains in a given cluster.</p></sec><sec id="s3b"><title>Phylogenetic Analyses</title><p>Alignment of bZIP protein sequences was performed by ClustalX <xref rid="pone.0002944-Thompson1" ref-type="bibr">[108]</xref>, using default parameters, and subsequently adjusted manually. The alignments used for the analyses within each group of homologues represent a concatenated sequence of the different conserved motifs found within each group (<xref ref-type="fig" rid="pone-0002944-g002">Figure 2</xref>). The phylogenetic analyses based on amino acid sequences were conducted using MEGA v3.1 <xref rid="pone.0002944-Kumar1" ref-type="bibr">[109]</xref> and PHYLIP v3.6 <xref rid="pone.0002944-Felsenstein1" ref-type="bibr">[110]</xref>. Unrooted phylogenetic tree topologies were reconstructed by Neighbor-Joining (NJ), the distances were obtained using a PAM-like distance matrix <xref rid="pone.0002944-Dayhoff1" ref-type="bibr">[111]</xref>, or alternatively, using p-distances <xref rid="pone.0002944-Nei1" ref-type="bibr">[112]</xref>, and the re-sampling of the original bZIP set was a 1,000 bootstrap repetition. Maximum Likelihood (ML) analyses of the bZIP domain (44 and 60 amino acids) were carried out using RAxML <xref rid="pone.0002944-Stamatakis1" ref-type="bibr">[113]</xref> with the distances computed using the JTT&#x0002b;&#x00393; evolutionary model <xref rid="pone.0002944-Jones1" ref-type="bibr">[114]</xref>, and a re-sampling of the original bZIP set of 500 bootstrap repetitions. Bayesian approaches were not employed as they often lead to very liberal estimates of branch confidence that can result in wrong topologies <xref rid="pone.0002944-Suzuki1" ref-type="bibr">[115]</xref>. Additionally, phylogenetic trees for nucleotide sequences, corresponding to the conserved motifs used for proteins, were inferred by means of the maximum likelihood method available in PAUP 4b10 <xref rid="pone.0002944-Swofford1" ref-type="bibr">[116]</xref>. The TrN&#x0002b;&#x00393; <xref rid="pone.0002944-Tamura1" ref-type="bibr">[117]</xref> model of sequence evolution was used. Model choice was performed in MODELTEST 3.6 <xref rid="pone.0002944-Posada1" ref-type="bibr">[118]</xref> by the likelihood ratio test with significance level set at 1&#x00025;. ML trees are available upon request. Branch lengths of the tree comprising all species analyzed were estimated by Maximum Likelihood in TREE-PUZZLE v5.2 <xref rid="pone.0002944-Schmidt1" ref-type="bibr">[119]</xref>, using the consensus topology inferred by NJ analysis with PAM-like distances. All sequences and alignments used in this study are available upon request.</p></sec><sec id="s3c"><title>Identification of Conserved Motifs</title><p>The putative complete sets of unique bZIPs from Chlamydomonas, Ostreococcus, Physcomitrella, black cottonwood, Arabidopsis and rice served as input for a conserved motif analysis performed with MEME (<ext-link ext-link-type="uri" xlink:href="http://meme.sdsc.edu/meme/meme.html">http://meme.sdsc.edu/meme/meme.html</ext-link>) <xref rid="pone.0002944-Bailey1" ref-type="bibr">[120]</xref>. Whole protein sequences were employed for this search. A given motif was allowed to appear at any number of repetitions, the maximum width of a motif was set to 80, and the maximum number of motifs was set to 20. The other parameters were used as default. In a complementary approach, each group of homologues was analyzed individually with the parameters described above.</p></sec><sec id="s3d"><title>Phylogenetic Analyses and Identification of Possible Groups of Orthologoues (PoGOs)</title><p>The detailed evolutionary analysis of angiosperm bZIP sequence relationships within each group allowed the identification of PoGOs. A PoGO is defined by the following criteria: (i) members of a PoGO have a monophyletic origin, indicated by a bootstrap support greater than 50&#x00025;; (ii) a PoGO possesses at least one representative gene each from <italic>A. thaliana</italic> and <italic>O. sativa</italic>, assuming that the putative complete sets of <italic>bZIP</italic> genes of these organisms were identified and no selective gene loss had occurred. In case a PoGO is found to be restricted to either monocots or eudicots, the presence of sequences from at least one other species of the same lineage in this PoGO is required; and (iii) the inferred phylogeny should be consistent with the known phylogeny of plant species <xref rid="pone.0002944-Vincentz1" ref-type="bibr">[56]</xref>.</p></sec><sec id="s3e"><title>Identification of Pseudogenes and Genomic Duplications</title><p>Search for pseudogenes in Chlamydomonas, Ostreococcus, black cottonwood, Arabidopsis and rice was performed by masking the genomic region for each identified bZIP. Blastx searches were performed against the masked sequences using the Angiotot bZIP database as query. A hit was considered as a pseudogene only if it possessed all or part of the bZIP domain; therefore all hits were compared against bZIP PFAM models <xref rid="pone.0002944-Finn1" ref-type="bibr">[121]</xref> and manually cured, eliminating false positives. Genomic duplications in Arabidopsis were identified via &#x0201c;Paralogons in Arabidopsis thaliana&#x0201d; (<ext-link ext-link-type="uri" xlink:href="http://wolfe.gen.tcd.ie/athal/dup">http://wolfe.gen.tcd.ie/athal/dup</ext-link>) and &#x02018;MATDB: Segmental Duplications&#x02019; from MIPS (Munich Information Center for Protein Sequences; <ext-link ext-link-type="uri" xlink:href="http://www.mips.gsf.de/projects/plants">http://www.mips.gsf.de/projects/plants</ext-link>) (<xref ref-type="supplementary-material" rid="pone.0002944.s027">Table S7</xref>).</p></sec><sec id="s3f"><title>Analysis of Gene Family Expansion and Contraction</title><p>The evolution of rates of <italic>bZIP</italic> gene gain and loss along the history of green plants was analyzed by the method of Hahn <italic>et al.</italic>
+<xref rid="pone.0002944-Hahn1" ref-type="bibr">[100]</xref>, implemented in CAF&#x000c9; <xref rid="pone.0002944-DeBie1" ref-type="bibr">[122]</xref>. The method models gene family evolution as a stochastic birth-and-death process implemented as a probabilistic graphical model that allows for the inference of the most likely family sizes in the common ancestors of every branching point. In this way one can test the null hypothesis of random change in the family size. To avoid incomplete sampling, only plants with fully sequenced genomes were analyzed. The algorithm developed by Hahn <italic>et al.</italic> uses a birth-and-death parameter, &#x003bb;, which was also estimated within CAFE. In addition to the parameter &#x003bb;, CAFE needs divergence times to be entered along with the phylogeny of the organisms used. Since the inference of the size of gene families at deep evolutionary times is not reliable with any of the current methods available (Hahn, personal communication; <xref rid="pone.0002944-Hahn1" ref-type="bibr">[100]</xref>), we focused on land plants only. Tree topology and divergence times are shown in <xref ref-type="supplementary-material" rid="pone.0002944.s019">Figure S19</xref>. Significance of the contractions and expansions along branches was accessed by means of the three methodologies available in CAFE: branch cutting, likelihood ratio test, and Viterbi assignments <xref rid="pone.0002944-DeBie1" ref-type="bibr">[122]</xref>.</p></sec><sec id="s3g"><title>Gene Expression Analysis</title><p>Absolute signal intensity values from Arabidopsis ATH1_22K array (Affymetrix) was obtained through Meta-Analyzer from GENEVESTIGATOR (<ext-link ext-link-type="uri" xlink:href="http://www.genevestigator.ethz.ch/">http://www.genevestigator.ethz.ch/</ext-link>) <xref rid="pone.0002944-Zimmermann1" ref-type="bibr">[123]</xref>. The developmental stages were as described by Boyes <italic>et al.</italic>
+<xref rid="pone.0002944-Boyes1" ref-type="bibr">[124]</xref>. Massively Parallel Signature Sequencing, MPSS, <xref rid="pone.0002944-Brenner1" ref-type="bibr">[125]</xref> was also verified for Arabidopsis and rice genes (<xref ref-type="supplementary-material" rid="pone.0002944.s030">Datasets S3</xref> and <xref ref-type="supplementary-material" rid="pone.0002944.s031">S4</xref>).</p></sec></sec><sec sec-type="supplementary-material" id="s4"><title>Supporting Information</title><supplementary-material content-type="local-data" id="pone.0002944.s001"><label>Figure S1</label><caption><p>Definition of homologous gene groups A, D and F. This figure is a partial representation of the tree inferred from NJ analysis from the 258 non-redundant set of bZIPs from Arabidopsis, rice and black cottonwood using <italic>p</italic>-distance and 1000 bootstrap repetitions (indicated as percentages at the branch points). The alignment used corresponds to the minimum bZIP domain of 44 amino acids. Groups D and F are sister groups supported by a 50&#x00025; bootstrap. Rice, black cottonwood and Arabidopsis sequences are represented in orange, dark blue and light blue, respectively.</p><p>(1.01 MB TIF)</p></caption><media xlink:href="pone.0002944.s001.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s002"><label>Figure S2</label><caption><p>Conserved intron position in the basic motif region of angiosperm bZIP transcription factors. The first leucine of the leucine zipper is highlighted in green, and the conserved asparagine of the basic motif is shown in red. According to the position of the introns, indicated by arrows, four different groups can be observed (1 to 4). bZIPs from Group L have a basic motif five amino acids shorter than that of the other bZIPs, and the conserved asparagine, shown in red, is substituted either by lysine (K) or arginine (R). In bold, the first amino acid after the intron. The <italic>bZIP</italic> genes used in this figure are: <italic>AtbZIP24</italic> (Group F), <italic>AtbZIP45</italic> (Group D), <italic>AtbZIP39</italic> (Group A), <italic>AtbZIP54</italic> (Group G), <italic>AtbZIP62</italic> (Group J), <italic>AtbZIP63</italic> (Group C), <italic>AtbZIP56</italic> (Group H), <italic>AtbZIP61</italic> (Group E), <italic>AtbZIP31</italic> (Group I), <italic>AtbZIP60</italic> (Group K), <italic>AtbZIP76</italic> (Group L), <italic>AtbZIP70</italic> (Group S), and <italic>AtbZIP49</italic> (Group B).</p><p>(1.85 MB TIF)</p></caption><media xlink:href="pone.0002944.s002.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s003"><label>Figure S3</label><caption><p>Unrooted phylogenetic tree inferred from a NJ analysis from a subset of 173 bZIPs of Arabidopsis, rice and black cottonwood using <italic>p</italic>-distance and 1000 bootstrap repetitions (indicated as percentages at the branches). The alignment used corresponds to the minimal bZIP domain extended by two leucine repetitions, totaling 60 amino acids. Groups B, K and H, as well as Groups E and L are sister groups supported by bootstrap analysis. Rice, black cottonwood and Arabidopsis sequences are represented in orange, dark blue and light blue, respectively.</p><p>(1.11 MB TIF)</p></caption><media xlink:href="pone.0002944.s003.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s004"><label>Figure S4</label><caption><p>Phylogenetic tree of monocot and eudicot bZIPs of Group A. The unrooted tree was inferred by a NJ analysis from distances calculated with the PAM distance matrix. The bootstrap values correspond to 1000 repetitions and are indicated as percentage in every branch. The amino acid alignment used to generate this tree corresponds to the bZIP domain plus the conserved motif A1 (<xref ref-type="fig" rid="pone-0002944-g002">Figure 2</xref> and <xref ref-type="supplementary-material" rid="pone.0002944.s022">Table S2</xref>). Rice, black cottonwood and Arabidopsis sequences are represented in orange, dark blue and light blue, respectively. Other eudicot sequences are shown in green. The organism from which the remaining monocot and eudicot bZIPs originated is indicated by the last two letters in each sequence. Abbreviations are explained in <xref ref-type="supplementary-material" rid="pone.0002944.s026">Table S6</xref>.</p><p>(1.28 MB TIF)</p></caption><media xlink:href="pone.0002944.s004.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s005"><label>Figure S5</label><caption><p>Phylogenetic tree of Group B bZIPs from monocots and eudicots. An unrooted tree was inferred by a NJ analysis from distances obtained from the PAM distance matrix. The bootstrap values correspond to 1000 repetitions and are indicated as percentage in every branch. The amino acid alignment used to generate this tree corresponds to the bZIP domain plus the conserved motifs within this group (<xref ref-type="fig" rid="pone-0002944-g002">Figure 2</xref> and <xref ref-type="supplementary-material" rid="pone.0002944.s022">Table S2</xref>). Rice, black cottonwood and Arabidopsis sequences are represented in orange, dark blue and light blue, respectively. Other monocot sequences are shown in red. The organism from which the remaining monocot and eudicot bZIPs originated is indicated by the last two letters in each sequence. Abbreviations are explained in <xref ref-type="supplementary-material" rid="pone.0002944.s026">Table S6</xref>.</p><p>(0.31 MB TIF)</p></caption><media xlink:href="pone.0002944.s005.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s006"><label>Figure S6</label><caption><p>Phylogenetic tree of Group C bZIPs from monocots and eudicots. An unrooted tree was inferred by a NJ analysis from distances calculated with the PAM distance matrix. The bootstrap values correspond to 1000 repetitions and are indicated as percentage in every branch. The amino acid alignment used to generate this tree corresponds to the bZIP domain plus the conserved motif within this group (<xref ref-type="fig" rid="pone-0002944-g002">Figure 2</xref> and <xref ref-type="supplementary-material" rid="pone.0002944.s022">Table S2</xref>). Rice, black cottonwood and Arabidopsis sequences are represented in orange, dark blue and light blue, respectively. Other eudicot and monocot sequences are show in green and red, respectively. The organism from which the remaining monocot and eudicot bZIPs originated is indicated by the last two letters in each sequence. Abbreviations are explained in <xref ref-type="supplementary-material" rid="pone.0002944.s026">Table S6</xref>.</p><p>(2.03 MB TIF)</p></caption><media xlink:href="pone.0002944.s006.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s007"><label>Figure S7</label><caption><p>Phylogenetic tree of Group D bZIPs from monocots and eudicots. An unrooted tree was inferred by a NJ analysis from distances calculated with the PAM distance matrix. The bootstrap values correspond to 1000 repetitions and are indicated as percentage in every branch. The amino acid alignment used to generate this tree corresponds to the bZIP domain plus the conserved motifs within this group (<xref ref-type="fig" rid="pone-0002944-g002">Figure 2</xref> and <xref ref-type="supplementary-material" rid="pone.0002944.s022">Table S2</xref>). Rice, black cottonwood and Arabidopsis sequences are represented in orange, dark blue and light blue, respectively. Other eudicot and monocot sequences are show in green and red, respectively. The organism from which the remaining monocot and eudicot bZIPs originated is indicated by the last two letters in each sequence. Abbreviations are explained in <xref ref-type="supplementary-material" rid="pone.0002944.s026">Table S6</xref>.</p><p>(1.31 MB TIF)</p></caption><media xlink:href="pone.0002944.s007.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s008"><label>Figure S8</label><caption><p>Phylogenetic tree of Group E bZIPs from monocots and eudicots. An unrooted tree was inferred by a NJ analysis from distances calculated with the PAM distance matrix. The bootstrap values correspond to 1000 repetitions and are indicated as percentage in every branch. The amino acid alignment used to generate this tree corresponds to the bZIP domain plus the conserved motifs within this group (<xref ref-type="fig" rid="pone-0002944-g002">Figure 2</xref> and <xref ref-type="supplementary-material" rid="pone.0002944.s022">Table S2</xref>). Rice, black cottonwood and Arabidopsis sequences are represented in orange, dark blue and light blue, respectively. The organism from which the remaining monocot and eudicot bZIPs originated is indicated by the last two letters in each sequence. Abbreviations are explained in <xref ref-type="supplementary-material" rid="pone.0002944.s026">Table S6</xref>.</p><p>(0.31 MB TIF)</p></caption><media xlink:href="pone.0002944.s008.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s009"><label>Figure S9</label><caption><p>Phylogenetic tree of Group F bZIPs from monocots and eudicots. An unrooted tree was inferred by a NJ analysis from distances calculated with the PAM distance matrix. The bootstrap values correspond to 1000 repetitions and are indicated as percentage in every branch. The amino acid alignment used to generate this tree corresponds to the bZIP domain plus the conserved motif within this group (<xref ref-type="fig" rid="pone-0002944-g002">Figure 2</xref> and <xref ref-type="supplementary-material" rid="pone.0002944.s022">Table S2</xref>). Rice, black cottonwood and Arabidopsis sequences are represented in orange, dark blue and light blue, respectively. Other eudicot and monocot sequences are show in green and red, respectively. The organism from which the remaining monocot and eudicot bZIPs originated is indicated by the last two letters in each sequence. Abbreviations are explained in <xref ref-type="supplementary-material" rid="pone.0002944.s026">Table S6</xref>.</p><p>(0.83 MB TIF)</p></caption><media xlink:href="pone.0002944.s009.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s010"><label>Figure S10</label><caption><p>Phylogenetic tree of Group G bZIPs from monocots and eudicots. An unrooted tree was inferred by a NJ analysis from distances calculated with the PAM distance matrix. The bootstrap values correspond to 1000 repetitions and are indicated as percentage in every branch. The amino acid alignment used to generate this tree corresponds to the bZIP domain plus the conserved motifs within this group (<xref ref-type="fig" rid="pone-0002944-g002">Figure 2</xref> and <xref ref-type="supplementary-material" rid="pone.0002944.s022">Table S2</xref>). Rice, black cottonwood and Arabidopsis sequences are represented in orange, dark blue and light blue, respectively. Other eudicot and monocot sequences are show in green and red, respectively. The organism from which the remaining monocot and eudicot bZIPs originated is indicated by the last two letters in each sequence. Abbreviations are explained in <xref ref-type="supplementary-material" rid="pone.0002944.s026">Table S6</xref>.</p><p>(1.03 MB TIF)</p></caption><media xlink:href="pone.0002944.s010.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s011"><label>Figure S11</label><caption><p>Phylogenetic tree of Group H bZIPs from monocots and eudicots. An unrooted tree was inferred by a NJ analysis from distances obtained from a PAM distance matrix. The bootstrap values correspond to 1000 repetitions and are indicated as percentage in every branch. The amino acid alignment used to generate this tree corresponds to the bZIP domain plus the conserved motif within this group (<xref ref-type="fig" rid="pone-0002944-g002">Figure 2</xref> and <xref ref-type="supplementary-material" rid="pone.0002944.s022">Table S2</xref>). Rice, black cottonwood and Arabidopsis sequences are represented in orange, dark blue and light blue, respectively. Other eudicot and monocot sequences are show in green and red, respectively. The organism from which the remaining monocot and eudicot bZIPs originated is indicated by the last two letters in each sequence. Abbreviations are explained in <xref ref-type="supplementary-material" rid="pone.0002944.s026">Table S6</xref>.</p><p>(0.85 MB TIF)</p></caption><media xlink:href="pone.0002944.s011.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s012"><label>Figure S12</label><caption><p>Phylogenetic tree of Group I bZIPs from monocots and eudicots. An unrooted tree was inferred by a NJ analysis from distances obtained from a PAM distance matrix. The bootstrap values correspond to 1000 repetitions and are indicated as percentage in every branch. The amino acid alignment used to generate this tree corresponds to the bZIP domain plus the conserved motifs within this group (<xref ref-type="fig" rid="pone-0002944-g002">Figure 2</xref> and <xref ref-type="supplementary-material" rid="pone.0002944.s022">Table S2</xref>). Rice, black cottonwood and Arabidopsis sequences are represented in orange, dark blue and light blue, respectively. Other eudicot sequences are show in green. The organism from which the remaining monocot and eudicot bZIPs originated is indicated by the last two letters in each sequence. Abbreviations are explained in <xref ref-type="supplementary-material" rid="pone.0002944.s026">Table S6</xref>.</p><p>(1.12 MB TIF)</p></caption><media xlink:href="pone.0002944.s012.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s013"><label>Figure S13</label><caption><p>Phylogenetic tree of Group J bZIPs from monocots and eudicots. An unrooted tree was inferred by a NJ analysis from distances obtained from a PAM distance matrix. The bootstrap values correspond to 1000 repetitions and are indicated as percentage in every branch. The amino acid alignment used to generate this tree corresponds to the bZIP domain plus the conserved motifs within this group (<xref ref-type="fig" rid="pone-0002944-g002">Figure 2</xref> and <xref ref-type="supplementary-material" rid="pone.0002944.s022">Table S2</xref>). Rice, black cottonwood and Arabidopsis sequences are represented in orange, dark blue and light blue, respectively. The organism from which the remaining monocot and eudicot bZIPs originated is indicated by the last two letters in each sequence. Abbreviations are explained in <xref ref-type="supplementary-material" rid="pone.0002944.s026">Table S6</xref>.</p><p>(0.14 MB TIF)</p></caption><media xlink:href="pone.0002944.s013.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s014"><label>Figure S14</label><caption><p>Phylogenetic tree of Group K bZIPs from monocots and eudicots. An unrooted tree was inferred by a NJ analysis from distances obtained from a PAM distance matrix. The bootstrap values correspond to 1000 repetitions and are indicated as percentage in every branch. The amino acid alignment used to generate this tree corresponds to the bZIP domain plus the conserved motif within this group (<xref ref-type="fig" rid="pone-0002944-g002">Figure 2</xref> and <xref ref-type="supplementary-material" rid="pone.0002944.s022">Table S2</xref>). Rice, black cottonwood and Arabidopsis sequences are represented in orange, dark blue and light blue, respectively. Other eudicots and monocot sequences are show in green and red, respectively. The organism from which the remaining monocot and eudicot bZIPs originated is indicated by the last two letters in each sequence. Abbreviations are explained in <xref ref-type="supplementary-material" rid="pone.0002944.s026">Table S6</xref>.</p><p>(0.82 MB TIF)</p></caption><media xlink:href="pone.0002944.s014.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s015"><label>Figure S15</label><caption><p>Phylogenetic tree of Group L bZIPs from monocots and eudicots. An unrooted tree was inferred by a NJ analysis from distances obtained from a PAM distance matrix. The bootstrap values correspond to 1000 repetitions and are indicated as percentage in every branch. The amino acid alignment used to generate this tree corresponds to the bZIP domain plus the conserved motifs within this group (<xref ref-type="fig" rid="pone-0002944-g002">Figure 2</xref> and <xref ref-type="supplementary-material" rid="pone.0002944.s022">Table S2</xref>). Rice, black cottonwood and Arabidopsis sequences are represented in orange, dark blue and light blue, respectively. The organism from which the remaining monocot and eudicot bZIPs originated is indicated by the last two letters in each sequence. Abbreviations are explained in <xref ref-type="supplementary-material" rid="pone.0002944.s026">Table S6</xref>.</p><p>(0.47 MB TIF)</p></caption><media xlink:href="pone.0002944.s015.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s016"><label>Figure S16</label><caption><p>Phylogenetic tree of Group S bZIPs from monocots and eudicots. An unrooted tree was inferred by a NJ analysis from distances obtained from a PAM distance matrix. The bootstrap values correspond to 1000 repetitions and are indicated as percentage in every branch. The amino acid alignment used to generate this tree corresponds to the bZIP domain. Rice, black cottonwood and Arabidopsis sequences are represented in orange, dark blue and light blue, respectively. Other eudicot and monocot sequences are show in green and red, respectively. The organism from which the remaining monocot and eudicot bZIPs originated is indicated by the last two letters in each sequence. Abbreviations are explained in <xref ref-type="supplementary-material" rid="pone.0002944.s026">Table S6</xref>.</p><p>(2.04 MB TIF)</p></caption><media xlink:href="pone.0002944.s016.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s017"><label>Figure S17</label><caption><p>Gene amplification pattern in each angiosperm group of bZIP homologues.</p><p>(0.77 MB TIF)</p></caption><media xlink:href="pone.0002944.s017.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s018"><label>Figure S18</label><caption><p>Identification of Groups cI and cII. Both trees are a partial representation of the whole tree obtained by NJ analyses. (A) In the initial phylogenetic analysis with the complete ViridiZIP set, we were able to identify two clusters of genes that did not posses any member from angiosperms; therefore, we called them NA (non-angiosperm). (B) Restricted analyses including bZIPs from algae and mosses uncovered the relationship of Groups NA and C; both groups share the same homologue in Ostreococcus (<italic>OtbZIP5</italic>), indicating it to be a common ancestor. Group NA was re-classified into Groups cI and cII. Their relation to members of Group NA shown in (A) is indicated by stars (&#x0002a; for Group cII, or &#x0002a;&#x0002a; for Group cI). Groups cI, cII, C and OtbZIP5 form the Group Proto-C. The bootstrap support of each group is shown in the figure.</p><p>(2.44 MB TIF)</p></caption><media xlink:href="pone.0002944.s018.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s019"><label>Figure S19</label><caption><p>Evolution of the bZIP family of transcription factors in land plants. We estimated the birth-and-death parameter (&#x003bb;) using CAFE, as described in <xref ref-type="sec" rid="s3">Materials and Methods</xref>. (A) The examined values of &#x003bb; ranged from 1.0&#x000d7;10<sup>&#x02212;4</sup> to 6.8&#x000d7;10<sup>&#x02212;3</sup>. The log probabilities obtained for each assayed value are shown. The shadowed region is displayed at a higher scale in the inset, where a peak at &#x003bb;&#x0200a;=&#x0200a;0.002011 is observed. (B) Evolutionary relationships of land plants with divergence time points (Arabidopsis - black cottonwood, 100&#x02013;120 million years ago (mya) (47); monocot - eudicot, 140&#x02013;150 mya (57); Physcomitrella - angiosperms, 450 mya (58)). Numbers at the branch end points indicate the numbers of bZIPs observed in the extant species. Numbers at the nodes represent the expected number of bZIPs in the ancestral species. Using the three methods available in CAFE, i.e., Viterbi assignments, branch cutting and likelihood ratio test, we identified branches deviating from the background model. According to all three methods, the branch leading to angiosperms significantly deviates from the null model (<italic>p</italic>&#x0003c;0.05), which implies that there was a significant increase in the number of bZIPs in the lineage leading to that group. Similarly, the Viterbi and branch cutting methods identify the branch leading to bryophytes (Physcomitrella) exhibiting a significant reduction in the number of bZIPs (<italic>p</italic>&#x0003c;0.05). Finally, we did not observe any significant deviation of the model for the extant group of angiosperms which can be interpreted as an even diffusion of the number of bZIPs in each branch. However, one cannot exclude the effect of natural selection in accounting for the differences that are nevertheless occurring. The increased number of bZIPs in the branch leading to angiosperms might be, at least partly, related to the several genome-wide duplication events that took place in the history of that lineage.</p><p>(1.62 MB TIF)</p></caption><media xlink:href="pone.0002944.s019.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s020"><label>Figure S20</label><caption><p>Scheme of the pipeline for bZIP identification in genomic sequences and ESTs. (I) Input genomic and EST sequences are compared by tblastn with the Angiotot protein dataset, generating a group of sequences that putatively code for bZIPs (SeqZIP). (II) Manual curation allowed subtracting sequences already present in Angiotot (redundancies) and false positives, which mainly correspond to low-complexity sequences. (III) The remaining sequences (true positives) are compared by tblastx against the best hit from Angiotot obtained in step I, allowing to identify the most probable ORF, and in the case of genomic sequences, to identify their gene structure, taking into account conserved intron positions and the presence of canonic splicing sites (GT-AG).</p><p>(0.75 MB TIF)</p></caption><media xlink:href="pone.0002944.s020.tif"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s021"><label>Table S1</label><caption><p>Comparison between bZIPs reported in this manuscript and in Nijhawan et al. (2008)</p><p>(0.04 MB XLS)</p></caption><media xlink:href="pone.0002944.s021.xls"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s022"><label>Table S2</label><caption><p>Conserved motifs in bZIP PoGOs.</p><p>(0.01 MB PDF)</p></caption><media xlink:href="pone.0002944.s022.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s023"><label>Table S3</label><caption><p>Accession numbers and classification into groups of homologues of non-sequenced angiosperms.</p><p>(0.03 MB PDF)</p></caption><media xlink:href="pone.0002944.s023.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s024"><label>Table S4</label><caption><p>Biological functions of genes in PoGOs.</p><p>(0.02 MB PDF)</p></caption><media xlink:href="pone.0002944.s024.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s025"><label>Table S5</label><caption><p>Classification of non-angiosperm bZIPs.</p><p>(0.02 MB XLS)</p></caption><media xlink:href="pone.0002944.s025.xls"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s026"><label>Table S6</label><caption><p>Organism abbreviations.</p><p>(0.03 MB XLS)</p></caption><media xlink:href="pone.0002944.s026.xls"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s027"><label>Table S7</label><caption><p>Gene pairs resulting from segmental duplications of the Arabidopsis genome.</p><p>(0.03 MB DOC)</p></caption><media xlink:href="pone.0002944.s027.doc"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s028"><label>Dataset S1</label><caption><p>Re-annotated nucleotide sequences from rice and black cottonwood.</p><p>(0.02 MB TXT)</p></caption><media xlink:href="pone.0002944.s028.txt"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s029"><label>Dataset S2</label><caption><p>Re-annotated amino acid sequences from rice and black cottonwood.</p><p>(0.01 MB TXT)</p></caption><media xlink:href="pone.0002944.s029.txt"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s030"><label>Dataset S3</label><caption><p>MPSS Expression data for bZIP genes from rice.</p><p>(0.02 MB PDF)</p></caption><media xlink:href="pone.0002944.s030.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s031"><label>Dataset S4</label><caption><p>MPSS Expression data for bZIP genes from Arabidopsis.</p><p>(0.01 MB PDF)</p></caption><media xlink:href="pone.0002944.s031.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0002944.s032"><label>Text S1</label><caption><p>Supporting texts including further results and discussion.</p><p>(0.06 MB DOC)</p></caption><media xlink:href="pone.0002944.s032.doc"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><ack><p>We thank Amanda Bortolini Silveira (Universidade Estadual de Campinas, Brazil) for nuclear localisation experiments on Group L bZIPs, and Stefanie Hartmann (University of Potsdam) for critical comments on our manuscript, Liam Childs (MPI of Molecular Plant Physiology, Potsdam) for improving our English and the two reviewers for their helpful comments on the manuscript.</p></ack><fn-group><fn fn-type="COI-statement"><p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p></fn><fn fn-type="financial-disclosure"><p><bold>Funding: </bold>L.G.G.C. thanks the DAAD for providing a scholarship (A/04/34814). D.M.R.P. acknowledges financial support from the BMBF (FKZ 0315046). This work was supported in part by grants from the Funda&#x000e7;&#x000e3;o de Amparo a Ci&#x000ea;ncia do Estado de S&#x000e3;o Paulo (FAPESP), Coordena&#x000e7;&#x000e3;o de Aperfei&#x000e7;oamento de Pessoal de N&#x000ed;vel Superior (Capes) (to L.G.G.C and M.V.), the University of Potsdam Interdisciplinary Research Centre &#x02018;Advanced Protein Technologies&#x02019; (to B.M.-R.), the DAAD/DFG International PhD Programme &#x02018;Integrative Plant Science&#x02019; (DAAD D/04/01336; to B.M-R.), and the Fonds der Chemischen Industrie (N&#x000b0; 0164389; to B.M.-R.).</p></fn></fn-group><ref-list><title>References</title><ref id="pone.0002944-Meshi1"><label>1</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Meshi</surname><given-names>T</given-names></name><name><surname>Iwabuchi</surname><given-names>M</given-names></name></person-group>
+<year>1995</year>
+<article-title>Plant transcription factors.</article-title>
+<source>Plant Cell Physiol</source>
+<volume>36</volume>
+<fpage>1405</fpage>
+<lpage>1420</lpage>
+<pub-id pub-id-type="pmid">8589926</pub-id></element-citation></ref><ref id="pone.0002944-Beckett1"><label>2</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Beckett</surname><given-names>D</given-names></name></person-group>
+<year>2001</year>
+<article-title>Regulated assembly of transcription factors and control of transcription initiation.</article-title>
+<source>J Mol Biol</source>
+<volume>314</volume>
+<fpage>335</fpage>
+<lpage>352</lpage>
+<pub-id pub-id-type="pmid">11846548</pub-id></element-citation></ref><ref id="pone.0002944-Wray1"><label>3</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wray</surname><given-names>GA</given-names></name><name><surname>Hahn</surname><given-names>MW</given-names></name><name><surname>Abouheif</surname><given-names>E</given-names></name><name><surname>Balhoff</surname><given-names>JP</given-names></name><name><surname>Pizer</surname><given-names>M</given-names></name><etal/></person-group>
+<year>2003</year>
+<article-title>The evolution of transcriptional regulation in eukaryotes.</article-title>
+<source>Mol Biol Evol</source>
+<volume>20</volume>
+<fpage>1377</fpage>
+<lpage>1419</lpage>
+<pub-id pub-id-type="pmid">12777501</pub-id></element-citation></ref><ref id="pone.0002944-Warren1"><label>4</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Warren</surname><given-names>AJ</given-names></name></person-group>
+<year>2002</year>
+<article-title>Eukaryotic transcription factors.</article-title>
+<source>Curr Opin Struct Biol</source>
+<volume>12</volume>
+<fpage>107</fpage>
+<lpage>114</lpage>
+<pub-id pub-id-type="pmid">11839497</pub-id></element-citation></ref><ref id="pone.0002944-Wingender1"><label>5</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wingender</surname><given-names>E</given-names></name><name><surname>Chen</surname><given-names>X</given-names></name><name><surname>Fricke</surname><given-names>E</given-names></name><name><surname>Geffers</surname><given-names>R</given-names></name><name><surname>Hehl</surname><given-names>R</given-names></name><etal/></person-group>
+<year>2001</year>
+<article-title>The TRANSFAC system on gene expression regulation.</article-title>
+<source>Nucleic Acids Res</source>
+<volume>29</volume>
+<fpage>281</fpage>
+<lpage>283</lpage>
+<pub-id pub-id-type="pmid">11125113</pub-id></element-citation></ref><ref id="pone.0002944-Riechmann1"><label>6</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Riechmann</surname><given-names>JL</given-names></name><name><surname>Ratcliffe</surname><given-names>OJ</given-names></name></person-group>
+<year>2000</year>
+<article-title>A genomic perspective on plant transcription factors.</article-title>
+<source>Curr Opin Plant Biol</source>
+<volume>3</volume>
+<fpage>423</fpage>
+<lpage>434</lpage>
+<pub-id pub-id-type="pmid">11019812</pub-id></element-citation></ref><ref id="pone.0002944-Hsia1"><label>7</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hsia</surname><given-names>CC</given-names></name><name><surname>McGinnis</surname><given-names>W</given-names></name></person-group>
+<year>2003</year>
+<article-title>Evolution of transcription factor function.</article-title>
+<source>Curr Opin Genet Dev</source>
+<volume>13</volume>
+<fpage>199</fpage>
+<lpage>206</lpage>
+<pub-id pub-id-type="pmid">12672498</pub-id></element-citation></ref><ref id="pone.0002944-Chen1"><label>8</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Chen</surname><given-names>K</given-names></name><name><surname>Rajewsky</surname><given-names>N</given-names></name></person-group>
+<year>2007</year>
+<article-title>The evolution of gene regulation by transcription factors and microRNAs.</article-title>
+<source>Nat Rev Genet</source>
+<volume>8</volume>
+<fpage>93</fpage>
+<lpage>103</lpage>
+<pub-id pub-id-type="pmid">17230196</pub-id></element-citation></ref><ref id="pone.0002944-LawtonRauh1"><label>9</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lawton-Rauh</surname><given-names>A</given-names></name></person-group>
+<year>2003</year>
+<article-title>Evolutionary dynamics of duplicated genes in plants.</article-title>
+<source>Mol Phylogenet Evol</source>
+<volume>29</volume>
+<fpage>396</fpage>
+<lpage>409</lpage>
+<pub-id pub-id-type="pmid">14615182</pub-id></element-citation></ref><ref id="pone.0002944-Levine1"><label>10</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Levine</surname><given-names>M</given-names></name><name><surname>Tjian</surname><given-names>R</given-names></name></person-group>
+<year>2003</year>
+<article-title>Transcription regulation and animal diversity.</article-title>
+<source>Nature</source>
+<volume>424</volume>
+<fpage>147</fpage>
+<lpage>151</lpage>
+<pub-id pub-id-type="pmid">12853946</pub-id></element-citation></ref><ref id="pone.0002944-Shiu1"><label>11</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Shiu</surname><given-names>SH</given-names></name><name><surname>Shih</surname><given-names>MC</given-names></name><name><surname>Li</surname><given-names>WH</given-names></name></person-group>
+<year>2005</year>
+<article-title>Transcription factor families have much higher expansion rates in plants than in animals.</article-title>
+<source>Plant Physiol</source>
+<volume>139</volume>
+<fpage>18</fpage>
+<lpage>26</lpage>
+<pub-id pub-id-type="pmid">16166257</pub-id></element-citation></ref><ref id="pone.0002944-RiaoPachn1"><label>12</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ria&#x000f1;o-Pach&#x000f3;n</surname><given-names>DM</given-names></name><name><surname>Corr&#x000ea;a</surname><given-names>LGG</given-names></name><name><surname>Trejos-Espinosa</surname><given-names>R</given-names></name><name><surname>Mueller-Roeber</surname><given-names>B</given-names></name></person-group>
+<year>2008</year>
+<article-title>Green transcription factors: a chlamydomonas overview.</article-title>
+<source>Genetics</source>
+<volume>179</volume>
+<fpage>31</fpage>
+<lpage>39</lpage>
+<pub-id pub-id-type="pmid">18493038</pub-id></element-citation></ref><ref id="pone.0002944-Irish1"><label>13</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Irish</surname><given-names>VF</given-names></name></person-group>
+<year>2003</year>
+<article-title>The evolution of floral homeotic gene function.</article-title>
+<source>Bioessays</source>
+<volume>25</volume>
+<fpage>637</fpage>
+<lpage>646</lpage>
+<pub-id pub-id-type="pmid">12815719</pub-id></element-citation></ref><ref id="pone.0002944-GarciaFernandez1"><label>14</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Garcia-Fernandez</surname><given-names>J</given-names></name></person-group>
+<year>2005</year>
+<article-title>The genesis and evolution of homeobox gene clusters.</article-title>
+<source>Nat Rev Genet</source>
+<volume>6</volume>
+<fpage>881</fpage>
+<lpage>892</lpage>
+<pub-id pub-id-type="pmid">16341069</pub-id></element-citation></ref><ref id="pone.0002944-Deppmann1"><label>15</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Deppmann</surname><given-names>CD</given-names></name><name><surname>Acharya</surname><given-names>A</given-names></name><name><surname>Rishi</surname><given-names>V</given-names></name><name><surname>Wobbes</surname><given-names>B</given-names></name><name><surname>Smeekens</surname><given-names>S</given-names></name><etal/></person-group>
+<year>2004</year>
+<article-title>Dimerization specificity of all 67 B-ZIP motifs in <italic>Arabidopsis thaliana</italic>: a comparison to Homo sapiens B-ZIP motifs.</article-title>
+<source>Nucleic Acids Res</source>
+<volume>32</volume>
+<fpage>3435</fpage>
+<lpage>3445</lpage>
+<pub-id pub-id-type="pmid">15226410</pub-id></element-citation></ref><ref id="pone.0002944-Floyd1"><label>16</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Floyd</surname><given-names>SK</given-names></name><name><surname>Bowman</surname><given-names>JL</given-names></name></person-group>
+<year>2007</year>
+<article-title>The ancestral developmental tool kit of land plants.</article-title>
+<source>Int J Plant Sci</source>
+<volume>168</volume>
+<fpage>1</fpage>
+<lpage>35</lpage>
+</element-citation></ref><ref id="pone.0002944-Bowman1"><label>17</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bowman</surname><given-names>JL</given-names></name><name><surname>Floyd</surname><given-names>SK</given-names></name><name><surname>Sakakibara</surname><given-names>K</given-names></name></person-group>
+<year>2007</year>
+<article-title>Green genes-comparative genomics of the green branch of life.</article-title>
+<source>Cell</source>
+<volume>129</volume>
+<fpage>229</fpage>
+<lpage>234</lpage>
+<pub-id pub-id-type="pmid">17448980</pub-id></element-citation></ref><ref id="pone.0002944-MorenoRisueno1"><label>18</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Moreno-Risueno</surname><given-names>MA</given-names></name><name><surname>Martinez</surname><given-names>M</given-names></name><name><surname>Vicente-Carbajosa</surname><given-names>J</given-names></name><name><surname>Carbonero</surname><given-names>P</given-names></name></person-group>
+<year>2007</year>
+<article-title>The family of DOF transcription factors: from green unicellular algae to vascular plants.</article-title>
+<source>Mol Genet Genomics</source>
+<volume>277</volume>
+<fpage>379</fpage>
+<lpage>390</lpage>
+<pub-id pub-id-type="pmid">17180359</pub-id></element-citation></ref><ref id="pone.0002944-Derelle1"><label>19</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Derelle</surname><given-names>R</given-names></name><name><surname>Lopez</surname><given-names>P</given-names></name><name><surname>Le</surname><given-names>GH</given-names></name><name><surname>Manuel</surname><given-names>M</given-names></name></person-group>
+<year>2007</year>
+<article-title>Homeodomain proteins belong to the ancestral molecular toolkit of eukaryotes.</article-title>
+<source>Evol Dev</source>
+<volume>9</volume>
+<fpage>212</fpage>
+<lpage>219</lpage>
+<pub-id pub-id-type="pmid">17501745</pub-id></element-citation></ref><ref id="pone.0002944-MartinezCastilla1"><label>20</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Martinez-Castilla</surname><given-names>LP</given-names></name><name><surname>Alvarez-Buylla</surname><given-names>ER</given-names></name></person-group>
+<year>2003</year>
+<article-title>Adaptive evolution in the Arabidopsis MADS-box gene family inferred from its complete resolved phylogeny.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>100</volume>
+<fpage>13407</fpage>
+<lpage>13412</lpage>
+<pub-id pub-id-type="pmid">14597714</pub-id></element-citation></ref><ref id="pone.0002944-Parenicova1"><label>21</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Parenicova</surname><given-names>L</given-names></name><name><surname>de Folter</surname><given-names>S</given-names></name><name><surname>Kieffer</surname><given-names>M</given-names></name><name><surname>Horner</surname><given-names>DS</given-names></name><name><surname>Favalli</surname><given-names>C</given-names></name><etal/></person-group>
+<year>2003</year>
+<article-title>Molecular and phylogenetic analyses of the complete MADS-box transcription factor family in Arabidopsis: new openings to the MADS world.</article-title>
+<source>Plant Cell</source>
+<volume>15</volume>
+<fpage>1538</fpage>
+<lpage>1551</lpage>
+<pub-id pub-id-type="pmid">12837945</pub-id></element-citation></ref><ref id="pone.0002944-Zhang1"><label>22</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zhang</surname><given-names>Y</given-names></name><name><surname>Wang</surname><given-names>L</given-names></name></person-group>
+<year>2005</year>
+<article-title>The WRKY transcription factor superfamily: its origin in eukaryotes and expansion in plants.</article-title>
+<source>BMC Evol Biol</source>
+<volume>5</volume>
+<fpage>1</fpage>
+<pub-id pub-id-type="pmid">15629062</pub-id></element-citation></ref><ref id="pone.0002944-Prigge1"><label>23</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Prigge</surname><given-names>MJ</given-names></name><name><surname>Clark</surname><given-names>SE</given-names></name></person-group>
+<year>2006</year>
+<article-title>Evolution of the class III HD-Zip gene family in land plants.</article-title>
+<source>Evol Dev</source>
+<volume>8</volume>
+<fpage>350</fpage>
+<lpage>361</lpage>
+<pub-id pub-id-type="pmid">16805899</pub-id></element-citation></ref><ref id="pone.0002944-Floyd2"><label>24</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Floyd</surname><given-names>SK</given-names></name><name><surname>Zalewski</surname><given-names>CS</given-names></name><name><surname>Bowman</surname><given-names>JL</given-names></name></person-group>
+<year>2006</year>
+<article-title>Evolution of class III homeodomain-leucine zipper genes in streptophytes.</article-title>
+<source>Genetics</source>
+<volume>173</volume>
+<fpage>373</fpage>
+<lpage>388</lpage>
+<pub-id pub-id-type="pmid">16489224</pub-id></element-citation></ref><ref id="pone.0002944-Hurst1"><label>25</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hurst</surname><given-names>HC</given-names></name></person-group>
+<year>1995</year>
+<article-title>Transcription factors 1: bZIP proteins.</article-title>
+<source>Protein Profile</source>
+<volume>2</volume>
+<fpage>101</fpage>
+<lpage>168</lpage>
+<pub-id pub-id-type="pmid">7780801</pub-id></element-citation></ref><ref id="pone.0002944-Walsh1"><label>26</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Walsh</surname><given-names>J</given-names></name><name><surname>Waters</surname><given-names>CA</given-names></name><name><surname>Freeling</surname><given-names>M</given-names></name></person-group>
+<year>1998</year>
+<article-title>The maize gene liguleless2 encodes a basic leucine zipper protein involved in the establishment of the leaf blade-sheath boundary.</article-title>
+<source>Genes Dev</source>
+<volume>12</volume>
+<fpage>208</fpage>
+<lpage>218</lpage>
+<pub-id pub-id-type="pmid">9490265</pub-id></element-citation></ref><ref id="pone.0002944-Chuang1"><label>27</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Chuang</surname><given-names>CF</given-names></name><name><surname>Running</surname><given-names>MP</given-names></name><name><surname>Williams</surname><given-names>RW</given-names></name><name><surname>Meyerowitz</surname><given-names>EM</given-names></name></person-group>
+<year>1999</year>
+<article-title>The <italic>PERIANTHIA</italic> gene encodes a bZIP protein involved in the determination of floral organ number in <italic>Arabidopsis thaliana</italic>.</article-title>
+<source>Genes Dev</source>
+<volume>13</volume>
+<fpage>334</fpage>
+<lpage>344</lpage>
+<pub-id pub-id-type="pmid">9990857</pub-id></element-citation></ref><ref id="pone.0002944-Abe1"><label>28</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Abe</surname><given-names>M</given-names></name><name><surname>Kobayashi</surname><given-names>Y</given-names></name><name><surname>Yamamoto</surname><given-names>S</given-names></name><name><surname>Daimon</surname><given-names>Y</given-names></name><name><surname>Yamaguchi</surname><given-names>A</given-names></name><etal/></person-group>
+<year>2005</year>
+<article-title>FD, a bZIP protein mediating signals from the floral pathway integrator FT at the shoot apex.</article-title>
+<source>Science</source>
+<volume>309</volume>
+<fpage>1052</fpage>
+<lpage>1056</lpage>
+<pub-id pub-id-type="pmid">16099979</pub-id></element-citation></ref><ref id="pone.0002944-Silveira1"><label>29</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Silveira</surname><given-names>AB</given-names></name><name><surname>Gauer</surname><given-names>L</given-names></name><name><surname>Tomaz</surname><given-names>JP</given-names></name><name><surname>Cardoso</surname><given-names>PR</given-names></name><name><surname>Carmello-Guerreiro</surname><given-names>S</given-names></name><etal/></person-group>
+<year>2007</year>
+<article-title>The Arabidopsis AtbZIP9 protein fused to the VP16 transcriptional activation domain alters leaf and vascular development.</article-title>
+<source>Plant Sci</source>
+<volume>172</volume>
+<fpage>1148</fpage>
+<lpage>1156</lpage>
+</element-citation></ref><ref id="pone.0002944-Shen1"><label>30</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Shen</surname><given-names>H</given-names></name><name><surname>Cao</surname><given-names>K</given-names></name><name><surname>Wang</surname><given-names>X</given-names></name></person-group>
+<year>2007</year>
+<article-title>A conserved proline residue in the leucine zipper region of AtbZIP34 and AtbZIP61 in <italic>Arabidopsis thaliana</italic> interferes with the formation of homodimer.</article-title>
+<source>Biochem Biophys Res Commun</source>
+<volume>362</volume>
+<fpage>425</fpage>
+<lpage>430</lpage>
+<pub-id pub-id-type="pmid">17719007</pub-id></element-citation></ref><ref id="pone.0002944-Yin1"><label>31</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yin</surname><given-names>Y</given-names></name><name><surname>Zhu</surname><given-names>Q</given-names></name><name><surname>Dai</surname><given-names>S</given-names></name><name><surname>Lamb</surname><given-names>C</given-names></name><name><surname>Beachy</surname><given-names>RN</given-names></name></person-group>
+<year>1997</year>
+<article-title>RF2a, a bZIP transcriptional activator of the phloem-specific rice tungro bacilliform virus promoter, functions in vascular development.</article-title>
+<source>EMBO J</source>
+<volume>16</volume>
+<fpage>5247</fpage>
+<lpage>5259</lpage>
+<pub-id pub-id-type="pmid">9311985</pub-id></element-citation></ref><ref id="pone.0002944-Fukazawa1"><label>32</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Fukazawa</surname><given-names>J</given-names></name><name><surname>Sakai</surname><given-names>T</given-names></name><name><surname>Ishida</surname><given-names>S</given-names></name><name><surname>Yamaguchi</surname><given-names>I</given-names></name><name><surname>Kamiya</surname><given-names>Y</given-names></name><etal/></person-group>
+<year>2000</year>
+<article-title>Repression of shoot growth, a bZIP transcriptional activator, regulates cell elongation by controlling the level of gibberellins.</article-title>
+<source>Plant Cell</source>
+<volume>12</volume>
+<fpage>901</fpage>
+<lpage>915</lpage>
+<pub-id pub-id-type="pmid">10852936</pub-id></element-citation></ref><ref id="pone.0002944-Ciceri1"><label>33</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ciceri</surname><given-names>P</given-names></name><name><surname>Locatelli</surname><given-names>F</given-names></name><name><surname>Genga</surname><given-names>A</given-names></name><name><surname>Viotti</surname><given-names>A</given-names></name><name><surname>Schmidt</surname><given-names>RJ</given-names></name></person-group>
+<year>1999</year>
+<article-title>The activity of the maize Opaque2 transcriptional activator is regulated diurnally.</article-title>
+<source>Plant Physiol</source>
+<volume>121</volume>
+<fpage>1321</fpage>
+<lpage>1328</lpage>
+<pub-id pub-id-type="pmid">10594119</pub-id></element-citation></ref><ref id="pone.0002944-Weltmeier1"><label>34</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Weltmeier</surname><given-names>F</given-names></name><name><surname>Ehlert</surname><given-names>A</given-names></name><name><surname>Mayer</surname><given-names>CS</given-names></name><name><surname>Dietrich</surname><given-names>K</given-names></name><name><surname>Wang</surname><given-names>X</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Combinatorial control of Arabidopsis proline dehydrogenase transcription by specific heterodimerisation of bZIP transcription factors.</article-title>
+<source>EMBO J</source>
+<volume>25</volume>
+<fpage>3133</fpage>
+<lpage>3143</lpage>
+<pub-id pub-id-type="pmid">16810321</pub-id></element-citation></ref><ref id="pone.0002944-Zhang2"><label>35</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zhang</surname><given-names>B</given-names></name><name><surname>Foley</surname><given-names>RC</given-names></name><name><surname>Singh</surname><given-names>KB</given-names></name></person-group>
+<year>1993</year>
+<article-title>Isolation and characterization of two related Arabidopsis ocs-element bZIP binding proteins.</article-title>
+<source>Plant J</source>
+<volume>4</volume>
+<fpage>711</fpage>
+<lpage>716</lpage>
+<pub-id pub-id-type="pmid">8252072</pub-id></element-citation></ref><ref id="pone.0002944-Despres1"><label>36</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Despres</surname><given-names>C</given-names></name><name><surname>DeLong</surname><given-names>C</given-names></name><name><surname>Glaze</surname><given-names>S</given-names></name><name><surname>Liu</surname><given-names>E</given-names></name><name><surname>Fobert</surname><given-names>PR</given-names></name></person-group>
+<year>2000</year>
+<article-title>The Arabidopsis NPR1/NIM1 protein enhances the DNA binding activity of a subgroup of the TGA family of bZIP transcription factors.</article-title>
+<source>Plant Cell</source>
+<volume>12</volume>
+<fpage>279</fpage>
+<lpage>290</lpage>
+<pub-id pub-id-type="pmid">10662863</pub-id></element-citation></ref><ref id="pone.0002944-Pontier1"><label>37</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Pontier</surname><given-names>D</given-names></name><name><surname>Miao</surname><given-names>ZH</given-names></name><name><surname>Lam</surname><given-names>E</given-names></name></person-group>
+<year>2001</year>
+<article-title>Trans-dominant suppression of plant TGA factors reveals their negative and positive roles in plant defense responses.</article-title>
+<source>Plant J</source>
+<volume>27</volume>
+<fpage>529</fpage>
+<lpage>538</lpage>
+<pub-id pub-id-type="pmid">11576436</pub-id></element-citation></ref><ref id="pone.0002944-Niggeweg1"><label>38</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Niggeweg</surname><given-names>R</given-names></name><name><surname>Thurow</surname><given-names>C</given-names></name><name><surname>Kegler</surname><given-names>C</given-names></name><name><surname>Gatz</surname><given-names>C</given-names></name></person-group>
+<year>2000</year>
+<article-title>Tobacco transcription factor TGA2.2 is the main component of as-1-binding factor ASF-1 and is involved in salicylic acid- and auxin-inducible expression of as-1-containing target promoters.</article-title>
+<source>J Biol Chem</source>
+<volume>275</volume>
+<fpage>19897</fpage>
+<lpage>19905</lpage>
+<pub-id pub-id-type="pmid">10751419</pub-id></element-citation></ref><ref id="pone.0002944-Thurow1"><label>39</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Thurow</surname><given-names>C</given-names></name><name><surname>Schiermeyer</surname><given-names>A</given-names></name><name><surname>Krawczyk</surname><given-names>S</given-names></name><name><surname>Butterbrodt</surname><given-names>T</given-names></name><name><surname>Nickolov</surname><given-names>K</given-names></name><etal/></person-group>
+<year>2005</year>
+<article-title>Tobacco bZIP transcription factor TGA2.2 and related factor TGA2.1 have distinct roles in plant defense responses and plant development.</article-title>
+<source>Plant J</source>
+<volume>44</volume>
+<fpage>100</fpage>
+<lpage>113</lpage>
+<pub-id pub-id-type="pmid">16167899</pub-id></element-citation></ref><ref id="pone.0002944-Kaminaka1"><label>40</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kaminaka</surname><given-names>H</given-names></name><name><surname>Nake</surname><given-names>C</given-names></name><name><surname>Epple</surname><given-names>P</given-names></name><name><surname>Dittgen</surname><given-names>J</given-names></name><name><surname>Schutze</surname><given-names>K</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>bZIP10-LSD1 antagonism modulates basal defense and cell death in Arabidopsis following infection.</article-title>
+<source>EMBO J</source>
+<volume>25</volume>
+<fpage>4400</fpage>
+<lpage>4411</lpage>
+<pub-id pub-id-type="pmid">16957775</pub-id></element-citation></ref><ref id="pone.0002944-BaenaGonzalez1"><label>41</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Baena-Gonzalez</surname><given-names>E</given-names></name><name><surname>Rolland</surname><given-names>F</given-names></name><name><surname>Thevelein</surname><given-names>JM</given-names></name><name><surname>Sheen</surname><given-names>J</given-names></name></person-group>
+<year>2007</year>
+<article-title>A central integrator of transcription networks in plant stress and energy signalling.</article-title>
+<source>Nature</source>
+<volume>448</volume>
+<fpage>938</fpage>
+<lpage>943</lpage>
+<pub-id pub-id-type="pmid">17671505</pub-id></element-citation></ref><ref id="pone.0002944-Liu1"><label>42</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Liu</surname><given-names>JX</given-names></name><name><surname>Srivastava</surname><given-names>R</given-names></name><name><surname>Che</surname><given-names>P</given-names></name><name><surname>Howell</surname><given-names>SH</given-names></name></person-group>
+<year>2007</year>
+<article-title>Salt stress responses in Arabidopsis utilize a signal transduction pathway related to endoplasmic reticulum stress signaling.</article-title>
+<source>Plant J</source>
+<volume>51</volume>
+<fpage>897</fpage>
+<lpage>909</lpage>
+<pub-id pub-id-type="pmid">17662035</pub-id></element-citation></ref><ref id="pone.0002944-Iwata1"><label>43</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Iwata</surname><given-names>Y</given-names></name><name><surname>Koizumi</surname><given-names>N</given-names></name></person-group>
+<year>2005</year>
+<article-title>An Arabidopsis transcription factor, AtbZIP60, regulates the endoplasmic reticulum stress response in a manner unique to plants.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>102</volume>
+<fpage>5280</fpage>
+<lpage>5285</lpage>
+<pub-id pub-id-type="pmid">15781873</pub-id></element-citation></ref><ref id="pone.0002944-Finkelstein1"><label>44</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Finkelstein</surname><given-names>RR</given-names></name><name><surname>Lynch</surname><given-names>TJ</given-names></name></person-group>
+<year>2000</year>
+<article-title>Abscisic acid inhibition of radicle emergence but not seedling growth is suppressed by sugars.</article-title>
+<source>Plant Physiol</source>
+<volume>122</volume>
+<fpage>1179</fpage>
+<lpage>1186</lpage>
+<pub-id pub-id-type="pmid">10759513</pub-id></element-citation></ref><ref id="pone.0002944-Uno1"><label>45</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Uno</surname><given-names>Y</given-names></name><name><surname>Furihata</surname><given-names>T</given-names></name><name><surname>Abe</surname><given-names>H</given-names></name><name><surname>Yoshida</surname><given-names>R</given-names></name><name><surname>Shinozaki</surname><given-names>K</given-names></name><etal/></person-group>
+<year>2000</year>
+<article-title>Arabidopsis basic leucine zipper transcription factors involved in an abscisic acid-dependent signal transduction pathway under drought and high-salinity conditions.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>97</volume>
+<fpage>11632</fpage>
+<lpage>11637</lpage>
+<pub-id pub-id-type="pmid">11005831</pub-id></element-citation></ref><ref id="pone.0002944-Niggeweg2"><label>46</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Niggeweg</surname><given-names>R</given-names></name><name><surname>Thurow</surname><given-names>C</given-names></name><name><surname>Weigel</surname><given-names>R</given-names></name><name><surname>Pfitzner</surname><given-names>U</given-names></name><name><surname>Gatz</surname><given-names>C</given-names></name></person-group>
+<year>2000</year>
+<article-title>Tobacco TGA factors differ with respect to interaction with NPR1, activation potential and DNA-binding properties.</article-title>
+<source>Plant Mol Biol</source>
+<volume>42</volume>
+<fpage>775</fpage>
+<lpage>788</lpage>
+<pub-id pub-id-type="pmid">10809449</pub-id></element-citation></ref><ref id="pone.0002944-Nieva1"><label>47</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nieva</surname><given-names>C</given-names></name><name><surname>Busk</surname><given-names>PK</given-names></name><name><surname>Dominguez-Puigjaner</surname><given-names>E</given-names></name><name><surname>Lumbreras</surname><given-names>V</given-names></name><name><surname>Testillano</surname><given-names>PS</given-names></name><etal/></person-group>
+<year>2005</year>
+<article-title>Isolation and functional characterisation of two new bZIP maize regulators of the ABA responsive gene rab28.</article-title>
+<source>Plant Mol Biol</source>
+<volume>58</volume>
+<fpage>899</fpage>
+<lpage>914</lpage>
+<pub-id pub-id-type="pmid">16240181</pub-id></element-citation></ref><ref id="pone.0002944-Wellmer1"><label>48</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wellmer</surname><given-names>F</given-names></name><name><surname>Kircher</surname><given-names>S</given-names></name><name><surname>Rugner</surname><given-names>A</given-names></name><name><surname>Frohnmeyer</surname><given-names>H</given-names></name><name><surname>Schafer</surname><given-names>E</given-names></name><etal/></person-group>
+<year>1999</year>
+<article-title>Phosphorylation of the parsley bZIP transcription factor CPRF2 is regulated by light.</article-title>
+<source>J Biol Chem</source>
+<volume>274</volume>
+<fpage>29476</fpage>
+<lpage>29482</lpage>
+<pub-id pub-id-type="pmid">10506211</pub-id></element-citation></ref><ref id="pone.0002944-Osterlund1"><label>49</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Osterlund</surname><given-names>MT</given-names></name><name><surname>Hardtke</surname><given-names>CS</given-names></name><name><surname>Wei</surname><given-names>N</given-names></name><name><surname>Deng</surname><given-names>XW</given-names></name></person-group>
+<year>2000</year>
+<article-title>Targeted destabilization of HY5 during light-regulated development of Arabidopsis.</article-title>
+<source>Nature</source>
+<volume>405</volume>
+<fpage>462</fpage>
+<lpage>466</lpage>
+<pub-id pub-id-type="pmid">10839542</pub-id></element-citation></ref><ref id="pone.0002944-Ulm1"><label>50</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ulm</surname><given-names>R</given-names></name><name><surname>Baumann</surname><given-names>A</given-names></name><name><surname>Oravecz</surname><given-names>A</given-names></name><name><surname>Mate</surname><given-names>Z</given-names></name><name><surname>Adam</surname><given-names>E</given-names></name><etal/></person-group>
+<year>2004</year>
+<article-title>Genome-wide analysis of gene expression reveals function of the bZIP transcription factor HY5 in the UV-B response of Arabidopsis.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>101</volume>
+<fpage>1397</fpage>
+<lpage>1402</lpage>
+<pub-id pub-id-type="pmid">14739338</pub-id></element-citation></ref><ref id="pone.0002944-Satoh1"><label>51</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Satoh</surname><given-names>R</given-names></name><name><surname>Fujita</surname><given-names>Y</given-names></name><name><surname>Nakashima</surname><given-names>K</given-names></name><name><surname>Shinozaki</surname><given-names>K</given-names></name><name><surname>Yamaguchi-Shinozaki</surname><given-names>K</given-names></name></person-group>
+<year>2004</year>
+<article-title>A novel subgroup of bZIP proteins functions as transcriptional activators in hypoosmolarity-responsive expression of the <italic>ProDH</italic> gene in Arabidopsis.</article-title>
+<source>Plant Cell Physiol</source>
+<volume>45</volume>
+<fpage>309</fpage>
+<lpage>317</lpage>
+<pub-id pub-id-type="pmid">15047879</pub-id></element-citation></ref><ref id="pone.0002944-Lara1"><label>52</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lara</surname><given-names>P</given-names></name><name><surname>Onate-Sanchez</surname><given-names>L</given-names></name><name><surname>Abraham</surname><given-names>Z</given-names></name><name><surname>Ferrandiz</surname><given-names>C</given-names></name><name><surname>Diaz</surname><given-names>I</given-names></name><etal/></person-group>
+<year>2003</year>
+<article-title>Synergistic activation of seed storage protein gene expression in Arabidopsis by ABI3 and two bZIPs related to OPAQUE2.</article-title>
+<source>J Biol Chem</source>
+<volume>278</volume>
+<fpage>21003</fpage>
+<lpage>21011</lpage>
+<pub-id pub-id-type="pmid">12657652</pub-id></element-citation></ref><ref id="pone.0002944-Vettore1"><label>53</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Vettore</surname><given-names>AL</given-names></name><name><surname>Yunes</surname><given-names>JA</given-names></name><name><surname>Cord</surname><given-names>NG</given-names></name><name><surname>da Silva</surname><given-names>MJ</given-names></name><name><surname>Arruda</surname><given-names>P</given-names></name><etal/></person-group>
+<year>1998</year>
+<article-title>The molecular and functional characterization of an Opaque2 homologue gene from Coix and a new classification of plant bZIP proteins.</article-title>
+<source>Plant Mol Biol</source>
+<volume>36</volume>
+<fpage>249</fpage>
+<lpage>263</lpage>
+<pub-id pub-id-type="pmid">9484437</pub-id></element-citation></ref><ref id="pone.0002944-Arabidopsis1"><label>54</label><element-citation publication-type="journal">
+<collab>Arabidopsis Genome Iniciative</collab>
+<year>2000</year>
+<article-title>Analysis of the genome sequence of the flowering plant <italic>Arabidopsis thaliana</italic>.</article-title>
+<source>Nature</source>
+<volume>408</volume>
+<fpage>796</fpage>
+<lpage>815</lpage>
+<pub-id pub-id-type="pmid">11130711</pub-id></element-citation></ref><ref id="pone.0002944-Jakoby1"><label>55</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jakoby</surname><given-names>M</given-names></name><name><surname>Weisshaar</surname><given-names>B</given-names></name><name><surname>Droge-Laser</surname><given-names>W</given-names></name><name><surname>Vicente-Carbajosa</surname><given-names>J</given-names></name><name><surname>Tiedemann</surname><given-names>J</given-names></name><etal/></person-group>
+<year>2002</year>
+<article-title>bZIP transcription factors in Arabidopsis.</article-title>
+<source>Trends Plant Sci</source>
+<volume>7</volume>
+<fpage>106</fpage>
+<lpage>111</lpage>
+<pub-id pub-id-type="pmid">11906833</pub-id></element-citation></ref><ref id="pone.0002944-Vincentz1"><label>56</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Vincentz</surname><given-names>M</given-names></name><name><surname>Bandeira-Kobarg</surname><given-names>C</given-names></name><name><surname>Gauer</surname><given-names>L</given-names></name><name><surname>Schlogl</surname><given-names>P</given-names></name><name><surname>Leite</surname><given-names>A</given-names></name></person-group>
+<year>2003</year>
+<article-title>Evolutionary pattern of angiosperm bZIP factors homologous to the maize Opaque2 regulatory protein.</article-title>
+<source>J Mol Evol</source>
+<volume>56</volume>
+<fpage>105</fpage>
+<lpage>116</lpage>
+<pub-id pub-id-type="pmid">12569427</pub-id></element-citation></ref><ref id="pone.0002944-Yu1"><label>57</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yu</surname><given-names>J</given-names></name><name><surname>Hu</surname><given-names>S</given-names></name><name><surname>Wang</surname><given-names>J</given-names></name><name><surname>Wong</surname><given-names>GK</given-names></name><name><surname>Li</surname><given-names>S</given-names></name><etal/></person-group>
+<year>2002</year>
+<article-title>A draft sequence of the rice genome (<italic>Oryza sativa</italic> L. ssp. <italic>indica</italic>).</article-title>
+<source>Science</source>
+<volume>296</volume>
+<fpage>79</fpage>
+<lpage>92</lpage>
+<pub-id pub-id-type="pmid">11935017</pub-id></element-citation></ref><ref id="pone.0002944-Goff1"><label>58</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Goff</surname><given-names>SA</given-names></name><name><surname>Ricke</surname><given-names>D</given-names></name><name><surname>Lan</surname><given-names>TH</given-names></name><name><surname>Presting</surname><given-names>G</given-names></name><name><surname>Wang</surname><given-names>R</given-names></name><etal/></person-group>
+<year>2002</year>
+<article-title>A draft sequence of the rice genome (<italic>Oryza sativa</italic> L. ssp. <italic>japonica</italic>).</article-title>
+<source>Science</source>
+<volume>296</volume>
+<fpage>92</fpage>
+<lpage>100</lpage>
+<pub-id pub-id-type="pmid">11935018</pub-id></element-citation></ref><ref id="pone.0002944-Tuskan1"><label>59</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tuskan</surname><given-names>GA</given-names></name><name><surname>Difazio</surname><given-names>S</given-names></name><name><surname>Jansson</surname><given-names>S</given-names></name><name><surname>Bohlmann</surname><given-names>J</given-names></name><name><surname>Grigoriev</surname><given-names>I</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>The genome of black cottonwood, <italic>Populus trichocarpa</italic> (Torr. &#x00026; Gray).</article-title>
+<source>Science</source>
+<volume>313</volume>
+<fpage>1596</fpage>
+<lpage>1604</lpage>
+<pub-id pub-id-type="pmid">16973872</pub-id></element-citation></ref><ref id="pone.0002944-Bennetzen1"><label>60</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bennetzen</surname><given-names>J</given-names></name></person-group>
+<year>2002</year>
+<article-title>The rice genome. Opening the door to comparative plant biology.</article-title>
+<source>Science</source>
+<volume>296</volume>
+<fpage>60</fpage>
+<lpage>63</lpage>
+<pub-id pub-id-type="pmid">11935009</pub-id></element-citation></ref><ref id="pone.0002944-Pennacchio1"><label>61</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Pennacchio</surname><given-names>LA</given-names></name></person-group>
+<year>2003</year>
+<article-title>Insights from human/mouse genome comparisons.</article-title>
+<source>Mamm Genome</source>
+<volume>14</volume>
+<fpage>429</fpage>
+<lpage>436</lpage>
+<pub-id pub-id-type="pmid">12925891</pub-id></element-citation></ref><ref id="pone.0002944-Vincentz2"><label>62</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Vincentz</surname><given-names>M</given-names></name><name><surname>Cara</surname><given-names>FA</given-names></name><name><surname>Okura</surname><given-names>VK</given-names></name><name><surname>da Silva</surname><given-names>FR</given-names></name><name><surname>Pedrosa</surname><given-names>GL</given-names></name><etal/></person-group>
+<year>2004</year>
+<article-title>Evaluation of monocot and eudicot divergence using the sugarcane transcriptome.</article-title>
+<source>Plant Physiol</source>
+<volume>134</volume>
+<fpage>951</fpage>
+<lpage>959</lpage>
+<pub-id pub-id-type="pmid">15020759</pub-id></element-citation></ref><ref id="pone.0002944-Tatusov1"><label>63</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tatusov</surname><given-names>RL</given-names></name><name><surname>Koonin</surname><given-names>EV</given-names></name><name><surname>Lipman</surname><given-names>DJ</given-names></name></person-group>
+<year>1997</year>
+<article-title>A genomic perspective on protein families.</article-title>
+<source>Science</source>
+<volume>278</volume>
+<fpage>631</fpage>
+<lpage>637</lpage>
+<pub-id pub-id-type="pmid">9381173</pub-id></element-citation></ref><ref id="pone.0002944-Adams1"><label>64</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Adams</surname><given-names>KL</given-names></name></person-group>
+<year>2007</year>
+<article-title>Evolution of duplicate gene expression in polyploid and hybrid plants.</article-title>
+<source>J Hered</source>
+<volume>98</volume>
+<fpage>136</fpage>
+<lpage>141</lpage>
+<pub-id pub-id-type="pmid">17208934</pub-id></element-citation></ref><ref id="pone.0002944-Rijpkema1"><label>65</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Rijpkema</surname><given-names>AS</given-names></name><name><surname>Gerats</surname><given-names>T</given-names></name><name><surname>Vandenbussche</surname><given-names>M</given-names></name></person-group>
+<year>2007</year>
+<article-title>Evolutionary complexity of MADS complexes.</article-title>
+<source>Curr Opin Plant Biol</source>
+<volume>10</volume>
+<fpage>32</fpage>
+<lpage>38</lpage>
+<pub-id pub-id-type="pmid">17140839</pub-id></element-citation></ref><ref id="pone.0002944-Woolfe1"><label>66</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Woolfe</surname><given-names>A</given-names></name><name><surname>Elgar</surname><given-names>G</given-names></name></person-group>
+<year>2007</year>
+<article-title>Comparative genomics using Fugu reveals insights into regulatory subfunctionalization.</article-title>
+<source>Genome Biol</source>
+<volume>8</volume>
+<fpage>R53</fpage>
+<pub-id pub-id-type="pmid">17428329</pub-id></element-citation></ref><ref id="pone.0002944-Merchant1"><label>67</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Merchant</surname><given-names>SS</given-names></name><name><surname>Prochnik</surname><given-names>SE</given-names></name><name><surname>Vallon</surname><given-names>O</given-names></name><name><surname>Harris</surname><given-names>EH</given-names></name><name><surname>Karpowicz</surname><given-names>SJ</given-names></name><etal/></person-group>
+<year>2007</year>
+<article-title>The Chlamydomonas genome reveals the evolution of key animal and plant functions.</article-title>
+<source>Science</source>
+<volume>318</volume>
+<fpage>245</fpage>
+<lpage>250</lpage>
+<pub-id pub-id-type="pmid">17932292</pub-id></element-citation></ref><ref id="pone.0002944-Derelle2"><label>68</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Derelle</surname><given-names>E</given-names></name><name><surname>Ferraz</surname><given-names>C</given-names></name><name><surname>Rombauts</surname><given-names>S</given-names></name><name><surname>Rouze</surname><given-names>P</given-names></name><name><surname>Worden</surname><given-names>AZ</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Genome analysis of the smallest free-living eukaryote <italic>Ostreococcus tauri</italic> unveils many unique features.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>103</volume>
+<fpage>11647</fpage>
+<lpage>11652</lpage>
+<pub-id pub-id-type="pmid">16868079</pub-id></element-citation></ref><ref id="pone.0002944-Rensing1"><label>69</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Rensing</surname><given-names>SA</given-names></name><name><surname>Lang</surname><given-names>D</given-names></name><name><surname>Zimmer</surname><given-names>AD</given-names></name><name><surname>Terry</surname><given-names>A</given-names></name><name><surname>Salamov</surname><given-names>A</given-names></name><etal/></person-group>
+<year>2008</year>
+<article-title>The Physcomitrella genome reveals evolutionary insights into the conquest of land by plants.</article-title>
+<source>Science</source>
+<volume>319</volume>
+<fpage>64</fpage>
+<lpage>69</lpage>
+<pub-id pub-id-type="pmid">18079367</pub-id></element-citation></ref><ref id="pone.0002944-Corra1"><label>70</label><element-citation publication-type="other">
+<person-group person-group-type="author"><name><surname>Corr&#x000ea;a</surname><given-names>LGG</given-names></name></person-group>
+<year>2004</year>
+<article-title>An&#x000e1;lise Filogen&#x000e9;tica de Fatores de Transcri&#x000e7;&#x000e3;o bZIP em Angiospermas.</article-title>
+<comment>(Phylogenetic analyses of bZIP transcription factors in angiosperms) [dissertation]. Universidade Estadual de Campinas, Campinas, Brazil</comment>
+</element-citation></ref><ref id="pone.0002944-Nijhawan1"><label>71</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nijhawan</surname><given-names>A</given-names></name><name><surname>Jain</surname><given-names>M</given-names></name><name><surname>Tyagi</surname><given-names>AK</given-names></name><name><surname>Khurana</surname><given-names>JP</given-names></name></person-group>
+<year>2008</year>
+<article-title>Genomic survey and gene expression analysis of the basic leucine zipper transcription factor family in rice.</article-title>
+<source>Plant Physiol</source>
+<volume>146</volume>
+<fpage>333</fpage>
+<lpage>350</lpage>
+<pub-id pub-id-type="pmid">18065552</pub-id></element-citation></ref><ref id="pone.0002944-Thornton1"><label>72</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Thornton</surname><given-names>JW</given-names></name><name><surname>DeSalle</surname><given-names>R</given-names></name></person-group>
+<year>2000</year>
+<article-title>Gene family evolution and homology: genomics meets phylogenetics.</article-title>
+<source>Annu Rev Genomics Hum Genet</source>
+<volume>1</volume>
+<fpage>41</fpage>
+<lpage>73</lpage>
+<pub-id pub-id-type="pmid">11701624</pub-id></element-citation></ref><ref id="pone.0002944-Yang1"><label>73</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yang</surname><given-names>Z</given-names></name></person-group>
+<year>1998</year>
+<article-title>Likelihood ratio tests for detecting positive selection and application to primate lysozyme evolution.</article-title>
+<source>Mol Biol Evol</source>
+<volume>15</volume>
+<fpage>568</fpage>
+<lpage>573</lpage>
+<pub-id pub-id-type="pmid">9580986</pub-id></element-citation></ref><ref id="pone.0002944-Kellogg1"><label>74</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kellogg</surname><given-names>EA</given-names></name></person-group>
+<year>2004</year>
+<article-title>Evolution of developmental traits.</article-title>
+<source>Curr Opin Plant Biol</source>
+<volume>7</volume>
+<fpage>92</fpage>
+<lpage>98</lpage>
+<pub-id pub-id-type="pmid">14732447</pub-id></element-citation></ref><ref id="pone.0002944-Nam1"><label>75</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nam</surname><given-names>J</given-names></name><name><surname>Kim</surname><given-names>J</given-names></name><name><surname>Lee</surname><given-names>S</given-names></name><name><surname>An</surname><given-names>G</given-names></name><name><surname>Ma</surname><given-names>H</given-names></name><etal/></person-group>
+<year>2004</year>
+<article-title>Type I MADS-box genes have experienced faster birth-and-death evolution than type II MADS-box genes in angiosperms.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>101</volume>
+<fpage>1910</fpage>
+<lpage>1915</lpage>
+<pub-id pub-id-type="pmid">14764899</pub-id></element-citation></ref><ref id="pone.0002944-Lynch1"><label>76</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lynch</surname><given-names>M</given-names></name><name><surname>Katju</surname><given-names>V</given-names></name></person-group>
+<year>2004</year>
+<article-title>The altered evolutionary trajectories of gene duplicates.</article-title>
+<source>Trends Genet</source>
+<volume>20</volume>
+<fpage>544</fpage>
+<lpage>549</lpage>
+<pub-id pub-id-type="pmid">15475113</pub-id></element-citation></ref><ref id="pone.0002944-Carlini1"><label>77</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Carlini</surname><given-names>LE</given-names></name><name><surname>Ketudat</surname><given-names>M</given-names></name><name><surname>Parsons</surname><given-names>RL</given-names></name><name><surname>Prabhakar</surname><given-names>S</given-names></name><name><surname>Schmidt</surname><given-names>RJ</given-names></name><etal/></person-group>
+<year>1999</year>
+<article-title>The maize EmBP-1 orthologue differentially regulates opaque2-dependent gene expression in yeast and cultured maize endosperm cells.</article-title>
+<source>Plant Mol Biol</source>
+<volume>41</volume>
+<fpage>339</fpage>
+<lpage>349</lpage>
+<pub-id pub-id-type="pmid">10598101</pub-id></element-citation></ref><ref id="pone.0002944-Vinson1"><label>78</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Vinson</surname><given-names>C</given-names></name><name><surname>Myakishev</surname><given-names>M</given-names></name><name><surname>Acharya</surname><given-names>A</given-names></name><name><surname>Mir</surname><given-names>AA</given-names></name><name><surname>Moll</surname><given-names>JR</given-names></name><etal/></person-group>
+<year>2002</year>
+<article-title>Classification of human B-ZIP proteins based on dimerization properties.</article-title>
+<source>Mol Cell Biol</source>
+<volume>22</volume>
+<fpage>6321</fpage>
+<lpage>6335</lpage>
+<pub-id pub-id-type="pmid">12192032</pub-id></element-citation></ref><ref id="pone.0002944-Fassler1"><label>79</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Fassler</surname><given-names>J</given-names></name><name><surname>Landsman</surname><given-names>D</given-names></name><name><surname>Acharya</surname><given-names>A</given-names></name><name><surname>Moll</surname><given-names>JR</given-names></name><name><surname>Bonovich</surname><given-names>M</given-names></name><etal/></person-group>
+<year>2002</year>
+<article-title>B-ZIP proteins encoded by the Drosophila genome: evaluation of potential dimerization partners.</article-title>
+<source>Genome Res</source>
+<volume>12</volume>
+<fpage>1190</fpage>
+<lpage>1200</lpage>
+<pub-id pub-id-type="pmid">12176927</pub-id></element-citation></ref><ref id="pone.0002944-Deppmann2"><label>80</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Deppmann</surname><given-names>CD</given-names></name><name><surname>Alvania</surname><given-names>RS</given-names></name><name><surname>Taparowsky</surname><given-names>EJ</given-names></name></person-group>
+<year>2006</year>
+<article-title>Cross-species annotation of basic leucine zipper factor interactions: Insight into the evolution of closed interaction networks.</article-title>
+<source>Mol Biol Evol</source>
+<volume>23</volume>
+<fpage>1480</fpage>
+<lpage>1492</lpage>
+<pub-id pub-id-type="pmid">16731568</pub-id></element-citation></ref><ref id="pone.0002944-Best1"><label>81</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Best</surname><given-names>AA</given-names></name><name><surname>Morrison</surname><given-names>HG</given-names></name><name><surname>McArthur</surname><given-names>AG</given-names></name><name><surname>Sogin</surname><given-names>ML</given-names></name><name><surname>Olsen</surname><given-names>GJ</given-names></name></person-group>
+<year>2004</year>
+<article-title>Evolution of eukaryotic transcription: insights from the genome of <italic>Giardia lamblia</italic>.</article-title>
+<source>Genome Res</source>
+<volume>14</volume>
+<fpage>1537</fpage>
+<lpage>1547</lpage>
+<pub-id pub-id-type="pmid">15289474</pub-id></element-citation></ref><ref id="pone.0002944-AlvarezBuylla1"><label>82</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Alvarez-Buylla</surname><given-names>ER</given-names></name><name><surname>Pelaz</surname><given-names>S</given-names></name><name><surname>Liljegren</surname><given-names>SJ</given-names></name><name><surname>Gold</surname><given-names>SE</given-names></name><name><surname>Burgeff</surname><given-names>C</given-names></name><etal/></person-group>
+<year>2000</year>
+<article-title>An ancestral MADS-box gene duplication occurred before the divergence of plants and animals.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>97</volume>
+<fpage>5328</fpage>
+<lpage>5333</lpage>
+<pub-id pub-id-type="pmid">10805792</pub-id></element-citation></ref><ref id="pone.0002944-Singer1"><label>83</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Singer</surname><given-names>SD</given-names></name><name><surname>Krogan</surname><given-names>NT</given-names></name><name><surname>Ashton</surname><given-names>NW</given-names></name></person-group>
+<year>2007</year>
+<article-title>Clues about the ancestral roles of plant MADS-box genes from a functional analysis of moss homologues.</article-title>
+<source>Plant Cell Rep</source>
+<volume>26</volume>
+<fpage>1155</fpage>
+<lpage>1169</lpage>
+<pub-id pub-id-type="pmid">17390136</pub-id></element-citation></ref><ref id="pone.0002944-Tanabe1"><label>84</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tanabe</surname><given-names>Y</given-names></name><name><surname>Hasebe</surname><given-names>M</given-names></name><name><surname>Sekimoto</surname><given-names>H</given-names></name><name><surname>Nishiyama</surname><given-names>T</given-names></name><name><surname>Kitani</surname><given-names>M</given-names></name><etal/></person-group>
+<year>2005</year>
+<article-title>Characterization of MADS-box genes in charophycean green algae and its implication for the evolution of MADS-box genes.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>102</volume>
+<fpage>2436</fpage>
+<lpage>2441</lpage>
+<pub-id pub-id-type="pmid">15699346</pub-id></element-citation></ref><ref id="pone.0002944-Shigyo1"><label>85</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Shigyo</surname><given-names>M</given-names></name><name><surname>Tabei</surname><given-names>N</given-names></name><name><surname>Yoneyama</surname><given-names>T</given-names></name><name><surname>Yanagisawa</surname><given-names>S</given-names></name></person-group>
+<year>2007</year>
+<article-title>Evolutionary processes during the formation of the plant-specific Dof transcription factor family.</article-title>
+<source>Plant Cell Physiol</source>
+<volume>48</volume>
+<fpage>179</fpage>
+<lpage>185</lpage>
+<pub-id pub-id-type="pmid">17132629</pub-id></element-citation></ref><ref id="pone.0002944-Holm1"><label>86</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Holm</surname><given-names>M</given-names></name><name><surname>Ma</surname><given-names>LG</given-names></name><name><surname>Qu</surname><given-names>LJ</given-names></name><name><surname>Deng</surname><given-names>XW</given-names></name></person-group>
+<year>2002</year>
+<article-title>Two interacting bZIP proteins are direct targets of COP1-mediated control of light-dependent gene expression in Arabidopsis.</article-title>
+<source>Genes Dev</source>
+<volume>16</volume>
+<fpage>1247</fpage>
+<lpage>1259</lpage>
+<pub-id pub-id-type="pmid">12023303</pub-id></element-citation></ref><ref id="pone.0002944-Richardt1"><label>87</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Richardt</surname><given-names>S</given-names></name><name><surname>Lang</surname><given-names>D</given-names></name><name><surname>Reski</surname><given-names>R</given-names></name><name><surname>Frank</surname><given-names>W</given-names></name><name><surname>Rensing</surname><given-names>SA</given-names></name></person-group>
+<year>2007</year>
+<article-title>PlanTAPDB, a phylogeny-based resource of plant transcription-associated proteins.</article-title>
+<source>Plant Physiol</source>
+<volume>143</volume>
+<fpage>1452</fpage>
+<lpage>1466</lpage>
+<pub-id pub-id-type="pmid">17337525</pub-id></element-citation></ref><ref id="pone.0002944-Yi1"><label>88</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yi</surname><given-names>C</given-names></name><name><surname>Deng</surname><given-names>XW</given-names></name></person-group>
+<year>2005</year>
+<article-title>COP1 - from plant photomorphogenesis to mammalian tumorigenesis.</article-title>
+<source>Trends Cell Biol</source>
+<volume>15</volume>
+<fpage>618</fpage>
+<lpage>625</lpage>
+<pub-id pub-id-type="pmid">16198569</pub-id></element-citation></ref><ref id="pone.0002944-Kamisugi1"><label>89</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kamisugi</surname><given-names>Y</given-names></name><name><surname>Cuming</surname><given-names>AC</given-names></name></person-group>
+<year>2005</year>
+<article-title>The evolution of the abscisic acid-response in land plants: comparative analysis of group 1 <italic>LEA</italic> gene expression in moss and cereals.</article-title>
+<source>Plant Mol Biol</source>
+<volume>59</volume>
+<fpage>723</fpage>
+<lpage>737</lpage>
+<pub-id pub-id-type="pmid">16270226</pub-id></element-citation></ref><ref id="pone.0002944-Marella1"><label>90</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Marella</surname><given-names>HH</given-names></name><name><surname>Sakata</surname><given-names>Y</given-names></name><name><surname>Quatrano</surname><given-names>RS</given-names></name></person-group>
+<year>2006</year>
+<article-title>Characterization and functional analysis of ABSCISIC ACID INSENSITIVE3-like genes from <italic>Physcomitrella patens</italic>.</article-title>
+<source>Plant J</source>
+<volume>46</volume>
+<fpage>1032</fpage>
+<lpage>1044</lpage>
+<pub-id pub-id-type="pmid">16805735</pub-id></element-citation></ref><ref id="pone.0002944-Singer2"><label>91</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Singer</surname><given-names>SD</given-names></name><name><surname>Ashton</surname><given-names>NW</given-names></name></person-group>
+<year>2007</year>
+<article-title>Revelation of ancestral roles of KNOX genes by a functional analysis of Physcomitrella homologues.</article-title>
+<source>Plant Cell Rep</source>
+<volume>26</volume>
+<fpage>2039</fpage>
+<lpage>2054</lpage>
+<pub-id pub-id-type="pmid">17724598</pub-id></element-citation></ref><ref id="pone.0002944-Vinson2"><label>92</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Vinson</surname><given-names>C</given-names></name><name><surname>Acharya</surname><given-names>A</given-names></name><name><surname>Taparowsky</surname><given-names>EJ</given-names></name></person-group>
+<year>2006</year>
+<article-title>Deciphering B-ZIP transcription factor interactions <italic>in vitro</italic> and <italic>in vivo</italic>.</article-title>
+<source>Biochim Biophys Acta</source>
+<volume>1759</volume>
+<fpage>4</fpage>
+<lpage>12</lpage>
+<pub-id pub-id-type="pmid">16580748</pub-id></element-citation></ref><ref id="pone.0002944-Lawrence1"><label>93</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lawrence</surname><given-names>CL</given-names></name><name><surname>Maekawa</surname><given-names>H</given-names></name><name><surname>Worthington</surname><given-names>JL</given-names></name><name><surname>Reiter</surname><given-names>W</given-names></name><name><surname>Wilkinson</surname><given-names>CR</given-names></name><etal/></person-group>
+<year>2007</year>
+<article-title>Regulation of <italic>Schizosaccharomyces pombe</italic> Atf1 protein levels by Sty1-mediated phosphorylation and heterodimerization with Pcr1.</article-title>
+<source>J Biol Chem</source>
+<volume>282</volume>
+<fpage>5160</fpage>
+<lpage>5170</lpage>
+<pub-id pub-id-type="pmid">17182615</pub-id></element-citation></ref><ref id="pone.0002944-RodriguesPousada1"><label>94</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Rodrigues-Pousada</surname><given-names>CA</given-names></name><name><surname>Nevitt</surname><given-names>T</given-names></name><name><surname>Menezes</surname><given-names>R</given-names></name><name><surname>Azevedo</surname><given-names>D</given-names></name><name><surname>Pereira</surname><given-names>J</given-names></name><etal/></person-group>
+<year>2004</year>
+<article-title>Yeast activator proteins and stress response: an overview.</article-title>
+<source>FEBS Lett</source>
+<volume>567</volume>
+<fpage>80</fpage>
+<lpage>85</lpage>
+<pub-id pub-id-type="pmid">15165897</pub-id></element-citation></ref><ref id="pone.0002944-Jaiswal1"><label>95</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jaiswal</surname><given-names>AK</given-names></name></person-group>
+<year>2004</year>
+<article-title>Nrf2 signaling in coordinated activation of antioxidant gene expression.</article-title>
+<source>Free Radic Biol Med</source>
+<volume>36</volume>
+<fpage>1199</fpage>
+<lpage>1207</lpage>
+<pub-id pub-id-type="pmid">15110384</pub-id></element-citation></ref><ref id="pone.0002944-Warabi1"><label>96</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Warabi</surname><given-names>E</given-names></name><name><surname>Takabe</surname><given-names>W</given-names></name><name><surname>Minami</surname><given-names>T</given-names></name><name><surname>Inoue</surname><given-names>K</given-names></name><name><surname>Itoh</surname><given-names>K</given-names></name><etal/></person-group>
+<year>2007</year>
+<article-title>Shear stress stabilizes NF-E2-related factor 2 and induces antioxidant genes in endothelial cells: role of reactive oxygen/nitrogen species.</article-title>
+<source>Free Radic Biol Med</source>
+<volume>42</volume>
+<fpage>260</fpage>
+<lpage>269</lpage>
+<pub-id pub-id-type="pmid">17189831</pub-id></element-citation></ref><ref id="pone.0002944-Makino1"><label>97</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Makino</surname><given-names>C</given-names></name><name><surname>Sano</surname><given-names>Y</given-names></name><name><surname>Shinagawa</surname><given-names>T</given-names></name><name><surname>Millar</surname><given-names>JB</given-names></name><name><surname>Ishii</surname><given-names>S</given-names></name></person-group>
+<year>2006</year>
+<article-title>Sin1 binds to both ATF-2 and p38 and enhances ATF-2-dependent transcription in an SAPK signaling pathway.</article-title>
+<source>Genes Cells</source>
+<volume>11</volume>
+<fpage>1239</fpage>
+<lpage>1251</lpage>
+<pub-id pub-id-type="pmid">17054722</pub-id></element-citation></ref><ref id="pone.0002944-Yoshida1"><label>98</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yoshida</surname><given-names>H</given-names></name><name><surname>Haze</surname><given-names>K</given-names></name><name><surname>Yanagi</surname><given-names>H</given-names></name><name><surname>Yura</surname><given-names>T</given-names></name><name><surname>Mori</surname><given-names>K</given-names></name></person-group>
+<year>1998</year>
+<article-title>Identification of the <italic>cis</italic>-acting endoplasmic reticulum stress response element responsible for transcriptional induction of mammalian glucose-regulated proteins. Involvement of basic leucine zipper transcription factors.</article-title>
+<source>J Biol Chem</source>
+<volume>273</volume>
+<fpage>33741</fpage>
+<lpage>33749</lpage>
+<pub-id pub-id-type="pmid">9837962</pub-id></element-citation></ref><ref id="pone.0002944-Cox1"><label>99</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Cox</surname><given-names>JS</given-names></name><name><surname>Walter</surname><given-names>P</given-names></name></person-group>
+<year>1996</year>
+<article-title>A novel mechanism for regulating activity of a transcription factor that controls the unfolded protein response.</article-title>
+<source>Cell</source>
+<volume>87</volume>
+<fpage>391</fpage>
+<lpage>404</lpage>
+<pub-id pub-id-type="pmid">8898193</pub-id></element-citation></ref><ref id="pone.0002944-Hahn1"><label>100</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hahn</surname><given-names>MW</given-names></name><name><surname>De Bie</surname><given-names>T</given-names></name><name><surname>Stajich</surname><given-names>JE</given-names></name><name><surname>Nguyen</surname><given-names>C</given-names></name><name><surname>Cristianini</surname><given-names>N</given-names></name></person-group>
+<year>2005</year>
+<article-title>Estimating the tempo and mode of gene family evolution from comparative genomic data.</article-title>
+<source>Genome Res</source>
+<volume>15</volume>
+<fpage>1153</fpage>
+<lpage>1160</lpage>
+<pub-id pub-id-type="pmid">16077014</pub-id></element-citation></ref><ref id="pone.0002944-Demuth1"><label>101</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Demuth</surname><given-names>JP</given-names></name><name><surname>Wade</surname><given-names>MJ</given-names></name></person-group>
+<year>2007</year>
+<article-title>Maternal expression increases the rate of bicoid evolution by relaxing selective constraint.</article-title>
+<source>Genetica</source>
+<volume>129</volume>
+<fpage>37</fpage>
+<lpage>43</lpage>
+<pub-id pub-id-type="pmid">16955333</pub-id></element-citation></ref><ref id="pone.0002944-RiaoPachn2"><label>102</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ria&#x000f1;o-Pach&#x000f3;n</surname><given-names>DM</given-names></name><name><surname>Ruzicic</surname><given-names>S</given-names></name><name><surname>Dreyer</surname><given-names>I</given-names></name><name><surname>Mueller-Roeber</surname><given-names>B</given-names></name></person-group>
+<year>2007</year>
+<article-title>PlnTFDB: an integrative plant transcription factor database.</article-title>
+<source>BMC Bioinformatics</source>
+<volume>8</volume>
+<fpage>42</fpage>
+<pub-id pub-id-type="pmid">17286856</pub-id></element-citation></ref><ref id="pone.0002944-Childs1"><label>103</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Childs</surname><given-names>KL</given-names></name><name><surname>Hamilton</surname><given-names>JP</given-names></name><name><surname>Zhu</surname><given-names>W</given-names></name><name><surname>Ly</surname><given-names>E</given-names></name><name><surname>Cheung</surname><given-names>F</given-names></name><etal/></person-group>
+<year>2007</year>
+<article-title>The TIGR Plant Transcript Assemblies database.</article-title>
+<source>Nucleic Acids Res</source>
+<volume>35</volume>
+<fpage>D846</fpage>
+<lpage>D851</lpage>
+<pub-id pub-id-type="pmid">17088284</pub-id></element-citation></ref><ref id="pone.0002944-Pertea1"><label>104</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Pertea</surname><given-names>G</given-names></name><name><surname>Huang</surname><given-names>X</given-names></name><name><surname>Liang</surname><given-names>F</given-names></name><name><surname>Antonescu</surname><given-names>V</given-names></name><name><surname>Sultana</surname><given-names>R</given-names></name><etal/></person-group>
+<year>2003</year>
+<article-title>TIGR Gene Indices clustering tools (TGICL): a software system for fast clustering of large EST datasets.</article-title>
+<source>Bioinformatics</source>
+<volume>19</volume>
+<fpage>651</fpage>
+<lpage>652</lpage>
+<pub-id pub-id-type="pmid">12651724</pub-id></element-citation></ref><ref id="pone.0002944-Kikuchi1"><label>105</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kikuchi</surname><given-names>S</given-names></name><name><surname>Satoh</surname><given-names>K</given-names></name><name><surname>Nagata</surname><given-names>T</given-names></name><name><surname>Kawagashira</surname><given-names>N</given-names></name><name><surname>Doi</surname><given-names>K</given-names></name><etal/></person-group>
+<year>2003</year>
+<article-title>Collection, mapping, and annotation of over 28,000 cDNA clones from japonica rice.</article-title>
+<source>Science</source>
+<volume>301</volume>
+<fpage>376</fpage>
+<lpage>379</lpage>
+<pub-id pub-id-type="pmid">12869764</pub-id></element-citation></ref><ref id="pone.0002944-Altschul1"><label>106</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Altschul</surname><given-names>SF</given-names></name><name><surname>Gish</surname><given-names>W</given-names></name><name><surname>Miller</surname><given-names>W</given-names></name><name><surname>Myers</surname><given-names>EW</given-names></name><name><surname>Lipman</surname><given-names>DJ</given-names></name></person-group>
+<year>1990</year>
+<article-title>Basic local alignment search tool.</article-title>
+<source>J Mol Biol</source>
+<volume>215</volume>
+<fpage>403</fpage>
+<lpage>410</lpage>
+<pub-id pub-id-type="pmid">2231712</pub-id></element-citation></ref><ref id="pone.0002944-Birney1"><label>107</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Birney</surname><given-names>E</given-names></name><name><surname>Clamp</surname><given-names>M</given-names></name><name><surname>Durbin</surname><given-names>R</given-names></name></person-group>
+<year>2004</year>
+<article-title>GeneWise and Genomewise.</article-title>
+<source>Genome Res</source>
+<volume>14</volume>
+<fpage>988</fpage>
+<lpage>995</lpage>
+<pub-id pub-id-type="pmid">15123596</pub-id></element-citation></ref><ref id="pone.0002944-Thompson1"><label>108</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Thompson</surname><given-names>JD</given-names></name><name><surname>Gibson</surname><given-names>TJ</given-names></name><name><surname>Plewniak</surname><given-names>F</given-names></name><name><surname>Jeanmougin</surname><given-names>F</given-names></name><name><surname>Higgins</surname><given-names>DG</given-names></name></person-group>
+<year>1997</year>
+<article-title>The CLUSTAL_X windows interface: flexible strategies for multiple sequence alignment aided by quality analysis tools.</article-title>
+<source>Nucl Acids Res</source>
+<volume>25</volume>
+<fpage>4876</fpage>
+<lpage>4882</lpage>
+<pub-id pub-id-type="pmid">9396791</pub-id></element-citation></ref><ref id="pone.0002944-Kumar1"><label>109</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kumar</surname><given-names>S</given-names></name><name><surname>Tamura</surname><given-names>K</given-names></name><name><surname>Nei</surname><given-names>M</given-names></name></person-group>
+<year>2004</year>
+<article-title>MEGA3: Integrated software for Molecular Evolutionary Genetics Analysis and sequence alignment.</article-title>
+<source>Brief Bioinform</source>
+<volume>5</volume>
+<fpage>150</fpage>
+<lpage>163</lpage>
+<pub-id pub-id-type="pmid">15260895</pub-id></element-citation></ref><ref id="pone.0002944-Felsenstein1"><label>110</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Felsenstein</surname><given-names>J</given-names></name></person-group>
+<year>1989</year>
+<article-title>PHYLIP - Phylogeny Inference Package (Version 3.2).</article-title>
+<source>Cladistics</source>
+<volume>5</volume>
+<fpage>164</fpage>
+<lpage>166</lpage>
+</element-citation></ref><ref id="pone.0002944-Dayhoff1"><label>111</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Dayhoff</surname><given-names>MO</given-names></name><name><surname>Schwartz</surname><given-names>RC</given-names></name><name><surname>Orcutt</surname><given-names>BC</given-names></name></person-group>
+<year>1978</year>
+<article-title>A model of evolutionary change in proteins.</article-title>
+<person-group person-group-type="editor"><name><surname>Dayhoff</surname><given-names>MO</given-names></name></person-group>
+<source>Atlas of protein sequence and structure</source>
+<publisher-loc>Silver Spring, MD</publisher-loc>
+<publisher-name>National Biomedical Research Fundation Silver</publisher-name>
+<fpage>301</fpage>
+<lpage>310</lpage>
+</element-citation></ref><ref id="pone.0002944-Nei1"><label>112</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Nei</surname><given-names>M</given-names></name><name><surname>Kumar</surname><given-names>S</given-names></name></person-group>
+<year>2000</year>
+<source>Molecular Evolution and Phylogenetics</source>
+<publisher-loc>New York</publisher-loc>
+<publisher-name>Oxford University Press</publisher-name>
+</element-citation></ref><ref id="pone.0002944-Stamatakis1"><label>113</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Stamatakis</surname><given-names>A</given-names></name></person-group>
+<year>2006</year>
+<article-title>RAxML-VI-HPC: maximum likelihood-based phylogenetic analyses with thousands of taxa and mixed models.</article-title>
+<source>Bioinformatics</source>
+<volume>22</volume>
+<fpage>2688</fpage>
+<lpage>2690</lpage>
+<pub-id pub-id-type="pmid">16928733</pub-id></element-citation></ref><ref id="pone.0002944-Jones1"><label>114</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jones</surname><given-names>DT</given-names></name><name><surname>Taylor</surname><given-names>WR</given-names></name><name><surname>Thornton</surname><given-names>JM</given-names></name></person-group>
+<year>1992</year>
+<article-title>The rapid generation of mutation data matrices from protein sequences.</article-title>
+<source>Comput Appl Biosci</source>
+<volume>8</volume>
+<fpage>275</fpage>
+<lpage>282</lpage>
+<pub-id pub-id-type="pmid">1633570</pub-id></element-citation></ref><ref id="pone.0002944-Suzuki1"><label>115</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Suzuki</surname><given-names>Y</given-names></name><name><surname>Glazko</surname><given-names>GV</given-names></name><name><surname>Nei</surname><given-names>M</given-names></name></person-group>
+<year>2002</year>
+<article-title>Overcredibility of molecular phylogenies obtained by Bayesian phylogenetics.</article-title>
+<source>Proc Natl Acad Sci U S A</source>
+<volume>99</volume>
+<fpage>16138</fpage>
+<lpage>16143</lpage>
+<pub-id pub-id-type="pmid">12451182</pub-id></element-citation></ref><ref id="pone.0002944-Swofford1"><label>116</label><element-citation publication-type="other">
+<person-group person-group-type="author"><name><surname>Swofford</surname><given-names>DL</given-names></name></person-group>
+<year>2003</year>
+<comment>PAUP&#x0002a;. Phylogenetic Analysis Using Parsimony (&#x0002a;and Other Methods). Sinauer Associates)</comment>
+</element-citation></ref><ref id="pone.0002944-Tamura1"><label>117</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tamura</surname><given-names>K</given-names></name><name><surname>Nei</surname><given-names>M</given-names></name></person-group>
+<year>1993</year>
+<article-title>Estimation of the number of nucleotide substitutions in the control region of mitochondrial DNA in humans and chimpanzees.</article-title>
+<source>Mol Biol Evol</source>
+<volume>10</volume>
+<fpage>512</fpage>
+<lpage>526</lpage>
+<pub-id pub-id-type="pmid">8336541</pub-id></element-citation></ref><ref id="pone.0002944-Posada1"><label>118</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Posada</surname><given-names>D</given-names></name><name><surname>Crandall</surname><given-names>KA</given-names></name></person-group>
+<year>1998</year>
+<article-title>MODELTEST: testing the model of DNA substitution.</article-title>
+<source>Bioinformatics</source>
+<volume>14</volume>
+<fpage>817</fpage>
+<lpage>818</lpage>
+<pub-id pub-id-type="pmid">9918953</pub-id></element-citation></ref><ref id="pone.0002944-Schmidt1"><label>119</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Schmidt</surname><given-names>HA</given-names></name><name><surname>Strimmer</surname><given-names>K</given-names></name><name><surname>Vingron</surname><given-names>M</given-names></name><name><surname>von Haeseler</surname><given-names>A</given-names></name></person-group>
+<year>2002</year>
+<article-title>TREE-PUZZLE: maximum likelihood phylogenetic analysis using quartets and parallel computing.</article-title>
+<source>Bioinformatics</source>
+<volume>18</volume>
+<fpage>502</fpage>
+<lpage>504</lpage>
+<pub-id pub-id-type="pmid">11934758</pub-id></element-citation></ref><ref id="pone.0002944-Bailey1"><label>120</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bailey</surname><given-names>TL</given-names></name><name><surname>Elkan</surname><given-names>C</given-names></name></person-group>
+<year>1995</year>
+<article-title>The value of prior knowledge in discovering motifs with MEME.</article-title>
+<source>Proc Int Conf Intell Syst Mol Biol</source>
+<volume>3</volume>
+<fpage>21</fpage>
+<lpage>29</lpage>
+<pub-id pub-id-type="pmid">7584439</pub-id></element-citation></ref><ref id="pone.0002944-Finn1"><label>121</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Finn</surname><given-names>RD</given-names></name><name><surname>Mistry</surname><given-names>J</given-names></name><name><surname>Schuster-Bockler</surname><given-names>B</given-names></name><name><surname>Griffiths-Jones</surname><given-names>S</given-names></name><name><surname>Hollich</surname><given-names>V</given-names></name><name><surname>Lassmann</surname><given-names>T</given-names></name><etal/></person-group>
+<year>2006</year>
+<article-title>Pfam: clans, web tools and services.</article-title>
+<source>Nucleic Acids Res</source>
+<volume>34</volume>
+<fpage>D247</fpage>
+<lpage>D251</lpage>
+<pub-id pub-id-type="pmid">16381856</pub-id></element-citation></ref><ref id="pone.0002944-DeBie1"><label>122</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>De Bie</surname><given-names>T</given-names></name><name><surname>Cristianini</surname><given-names>N</given-names></name><name><surname>Demuth</surname><given-names>JP</given-names></name><name><surname>Hahn</surname><given-names>MW</given-names></name></person-group>
+<year>2006</year>
+<article-title>CAFE: a computational tool for the study of gene family evolution.</article-title>
+<source>Bioinformatics</source>
+<volume>22</volume>
+<fpage>1269</fpage>
+<lpage>1271</lpage>
+<pub-id pub-id-type="pmid">16543274</pub-id></element-citation></ref><ref id="pone.0002944-Zimmermann1"><label>123</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zimmermann</surname><given-names>P</given-names></name><name><surname>Hirsch-Hoffmann</surname><given-names>M</given-names></name><name><surname>Hennig</surname><given-names>L</given-names></name><name><surname>Gruissem</surname><given-names>W</given-names></name></person-group>
+<year>2004</year>
+<article-title>GENEVESTIGATOR. Arabidopsis microarray database and analysis toolbox.</article-title>
+<source>Plant Physiol</source>
+<volume>136</volume>
+<fpage>2621</fpage>
+<lpage>2632</lpage>
+<pub-id pub-id-type="pmid">15375207</pub-id></element-citation></ref><ref id="pone.0002944-Boyes1"><label>124</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Boyes</surname><given-names>DC</given-names></name><name><surname>Zayed</surname><given-names>AM</given-names></name><name><surname>Ascenzi</surname><given-names>R</given-names></name><name><surname>McCaskill</surname><given-names>AJ</given-names></name><name><surname>Hoffman</surname><given-names>NE</given-names></name><etal/></person-group>
+<year>2001</year>
+<article-title>Growth stage-based phenotypic analysis of Arabidopsis: a model for high throughput functional genomics in plants.</article-title>
+<source>Plant Cell</source>
+<volume>13</volume>
+<fpage>1499</fpage>
+<lpage>1510</lpage>
+<pub-id pub-id-type="pmid">11449047</pub-id></element-citation></ref><ref id="pone.0002944-Brenner1"><label>125</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Brenner</surname><given-names>S</given-names></name><name><surname>Johnson</surname><given-names>M</given-names></name><name><surname>Bridgham</surname><given-names>J</given-names></name><name><surname>Golda</surname><given-names>G</given-names></name><name><surname>Lloyd</surname><given-names>DH</given-names></name><etal/></person-group>
+<year>2000</year>
+<article-title>Gene expression analysis by massively parallel signature sequencing (MPSS) on microbead arrays.</article-title>
+<source>Nat Biotechnol</source>
+<volume>18</volume>
+<fpage>630</fpage>
+<lpage>634</lpage>
+<pub-id pub-id-type="pmid">10835600</pub-id></element-citation></ref></ref-list></back></article>

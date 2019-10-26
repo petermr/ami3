@@ -1,0 +1,513 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.1 20151215//EN" "JATS-archivearticle1.dtd"> 
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Publishing DTD v2.3 20031101//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName journalpublishing.dtd?><?SourceDTD.Version 2.3?><?ConverterInfo.XSLTName jp2nlmx2.xsl?><?ConverterInfo.Version 1?><front><journal-meta><journal-id journal-id-type="nlm-ta">PLoS One</journal-id><journal-id journal-id-type="iso-abbrev">PLoS ONE</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group><issn pub-type="epub">1932-6203</issn><publisher><publisher-name>Public Library of Science</publisher-name><publisher-loc>San Francisco, USA</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">3162594</article-id><article-id pub-id-type="pmid">21887287</article-id><article-id pub-id-type="publisher-id">PONE-D-11-08352</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0023624</article-id><article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Biology</subject><subj-group><subject>Evolutionary Biology</subject><subj-group><subject>Comparative Genomics</subject><subject>Evolutionary Genetics</subject><subject>Genomic Evolution</subject></subj-group></subj-group><subj-group><subject>Genetics</subject></subj-group><subj-group><subject>Genomics</subject><subj-group><subject>Comparative Genomics</subject><subject>Genome Complexity</subject><subject>Genome Evolution</subject></subj-group></subj-group><subj-group><subject>Plant Science</subject><subj-group><subject>Plant Evolution</subject><subject>Plant Genomics</subject><subject>Plant Microbiology</subject></subj-group></subj-group></subj-group></article-categories><title-group><article-title>The GC-Rich Mitochondrial and Plastid Genomes of the Green Alga <italic>Coccomyxa</italic> Give Insight into the Evolution of Organelle DNA Nucleotide Landscape</article-title><alt-title alt-title-type="running-head">The GC-Rich Organelle Genomes of <italic>Coccomyxa</italic></alt-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Smith</surname><given-names>David Roy</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref><xref ref-type="corresp" rid="cor1">
+<sup>&#x0002a;</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Burki</surname><given-names>Fabien</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Yamada</surname><given-names>Takashi</given-names></name><xref ref-type="aff" rid="aff2">
+<sup>2</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Grimwood</surname><given-names>Jane</given-names></name><xref ref-type="aff" rid="aff3">
+<sup>3</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Grigoriev</surname><given-names>Igor V.</given-names></name><xref ref-type="aff" rid="aff4">
+<sup>4</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Van Etten</surname><given-names>James L.</given-names></name><xref ref-type="aff" rid="aff5">
+<sup>5</sup>
+</xref></contrib><contrib contrib-type="author"><name><surname>Keeling</surname><given-names>Patrick J.</given-names></name><xref ref-type="aff" rid="aff1">
+<sup>1</sup>
+</xref></contrib></contrib-group><aff id="aff1">
+<label>1</label>
+<addr-line>Department of Botany, Canadian Institute for Advanced Research, University of British Columbia, Vancouver, British Columbia, Canada</addr-line>
+</aff><aff id="aff2">
+<label>2</label>
+<addr-line>Department of Molecular Biotechnology, Graduate School of Advanced Sciences of Matter, Hiroshima University, Higashi-Hiroshima, Japan</addr-line>
+</aff><aff id="aff3">
+<label>3</label>
+<addr-line>HudsonAlpha-JGI, HudsonAlpha Genome Sequencing Center, Huntsville, Alabama, United States of America</addr-line>
+</aff><aff id="aff4">
+<label>4</label>
+<addr-line>Department of Energy Joint Genome Institute, Walnut Creek, California, United States of America</addr-line>
+</aff><aff id="aff5">
+<label>5</label>
+<addr-line>Department of Plant Pathology and Nebraska Center for Virology, University of Nebraska, Lincoln, Nebraska, United States of America</addr-line>
+</aff><contrib-group><contrib contrib-type="editor"><name><surname>Kroymann</surname><given-names>Juergen</given-names></name><role>Editor</role><xref ref-type="aff" rid="edit1"/></contrib></contrib-group><aff id="edit1">French National Centre for Scientific Research, Universit&#x000e9; Paris-Sud, France</aff><author-notes><corresp id="cor1">&#x0002a; E-mail: <email>smithdr@dal.ca</email></corresp><fn fn-type="con"><p>Conceived and designed the experiments: DRS PJK. Performed the experiments: JG IVG TY JLVE. Analyzed the data: DRS FB JG. Contributed reagents/materials/analysis tools: JG IVG TY JVE. Wrote the paper: DRS. Helped interpret the data and revise the manuscript: DRS FB PJK JLVE.</p></fn></author-notes><pub-date pub-type="collection"><year>2011</year></pub-date><pub-date pub-type="epub"><day>26</day><month>8</month><year>2011</year></pub-date><volume>6</volume><issue>8</issue><elocation-id>e23624</elocation-id><history><date date-type="received"><day>13</day><month>5</month><year>2011</year></date><date date-type="accepted"><day>21</day><month>7</month><year>2011</year></date></history><permissions><copyright-statement>Smith et al.</copyright-statement><copyright-year>2011</copyright-year><license xlink:href="http://creativecommons.org/licenses/by/4.0/"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are properly credited.</license-p></license></permissions><abstract><p>Most of the available mitochondrial and plastid genome sequences are biased towards adenine and thymine (AT) over guanine and cytosine (GC). Examples of GC-rich organelle DNAs are limited to a small but eclectic list of species, including certain green algae. Here, to gain insight in the evolution of organelle nucleotide landscape, we present the GC-rich mitochondrial and plastid DNAs from the trebouxiophyte green alga <italic>Coccomyxa</italic> sp. C-169. We compare these sequences with other GC-rich organelle DNAs and argue that the forces biasing them towards G and C are nonadaptive and linked to the metabolic and/or life history features of this species. The <italic>Coccomyxa</italic> organelle genomes are also used for phylogenetic analyses, which highlight the complexities in trying to resolve the interrelationships among the core chlorophyte green algae, but ultimately favour a sister relationship between the Ulvophyceae and Chlorophyceae, with the Trebouxiophyceae branching at the base of the chlorophyte crown.</p></abstract><counts><page-count count="10"/></counts></article-meta></front><body><sec id="s1"><title>Introduction</title><p>Some of the most diverse and unusual mitochondrial and plastid DNAs (mtDNAs and ptDNAs) from all eukaryotes come from the Chlorophyta &#x02014; a lineage comprising the majority of known green algal species <xref rid="pone.0023624-Lewis1" ref-type="bibr">[1]</xref>. Both among and within the four main chlorophyte classes &#x02014; Prasinophyceae, Trebouxiophyceae, Ulvophyceae, and Chlorophyceae &#x02014; there is an impressive range of mitochondrial and plastid genome sizes, gene complements, and noncoding DNA compositions (see <xref rid="pone.0023624-Smith1" ref-type="bibr">[2]</xref> for a compilation). Moreover, the Chlorophyceae boasts some of the few documented cases of species with guanine- and cytosine-rich (GC-rich) mtDNA, which is a significant feat when considering that most mitochondrial (and plastid) genomes are highly biased in adenine and thymine (AT). The nonphotosynthetic chlorophycean <italic>Polytomella capuana</italic> has one of the highest recorded mtDNA GC contents (57&#x00025;) <xref rid="pone.0023624-Smith2" ref-type="bibr">[3]</xref>, and analyses of the mtDNA-encoded <italic>cox1</italic> and <italic>cob</italic> from the chlorophyceans <italic>Lobochlamys segnis</italic> and <italic>Lobochlamys culleus</italic> revealed average GC compositions of 54 and 62&#x00025;, respectively <xref rid="pone.0023624-Borza1" ref-type="bibr">[4]</xref>. The only other published examples of GC-rich mitochondrial genomes (as of March 2011) come from the parasitic fungus <italic>Candida subhashii</italic>
+<xref rid="pone.0023624-Fricova1" ref-type="bibr">[5]</xref>, a few teleost species (<xref rid="pone.0023624-Clare1" ref-type="bibr">[6]</xref>, and references therein), and the lycophyte <italic>Selaginella moellendorffii</italic>
+<xref rid="pone.0023624-Smith3" ref-type="bibr">[7]</xref>, <xref rid="pone.0023624-Hecht1" ref-type="bibr">[8]</xref>. The latter and other members of the <italic>Selaginella</italic> genus are also exceptional in that they are the only species known to contain GC-rich plastid genomes <xref rid="pone.0023624-Smith3" ref-type="bibr">[7]</xref>, <xref rid="pone.0023624-Tsuji1" ref-type="bibr">[9]</xref>.</p><p>The forces biasing organelle genomes towards G and C may differ among lineages. For instance, within the <italic>P. capuana</italic> mtDNA, the GC content is highest at silent sites, such as noncoding and third codon position, suggesting a neutral underpinning to the GC richness <xref rid="pone.0023624-Smith2" ref-type="bibr">[3]</xref>. Conversely, for the <italic>S. moellendorffii</italic> mitochondrial and plastid genomes, the levels of G and C are highest at the more functionally constrained sites, like rRNA-coding regions and first and second codon positions, implying that the GC bias is driven by natural selection; complicating this interpretation, however, is the fact that many of the cytosine residues within the <italic>Selaginella</italic> mtDNA and ptDNA are post-transcriptionally edited to uracil <xref rid="pone.0023624-Smith3" ref-type="bibr">[7]</xref>&#x02013;<xref rid="pone.0023624-Tsuji1" ref-type="bibr">[9]</xref>. Unraveling the mechanism responsible for the GC enrichment of organelle genomes might in turn help explain the near-ubiquity of AT-rich mitochondrial and plastid DNAs throughout the eukaryotic domain, a feature that is poorly understood but probably linked to AT mutation pressure <xref rid="pone.0023624-Burger1" ref-type="bibr">[10]</xref>, <xref rid="pone.0023624-Kusumi1" ref-type="bibr">[11]</xref>.</p><p>
+<italic>Coccomyxa</italic> sp. C-169 (formerly referred to as <italic>Chlorella</italic> sp. C-169; hereafter <italic>Coccomyxa</italic>) is a unicellular, free-living trebouxiophyte <xref rid="pone.0023624-Karsten1" ref-type="bibr">[12]</xref> whose nuclear genome is being sequenced by the United States Department of Energy Joint Genome Institute (DOE JGI). Our cursory scan of the <italic>Coccomyxa</italic> sequencing reads revealed elevated levels of G and C in what appeared to be mtDNA and ptDNA sequences, suggesting that complete assemblies of the <italic>Coccomyxa</italic> mitochondrial and plastid genomes may reveal a novel set of GC-rich organelle DNAs.</p><p>Moreover, there is currently a lack of trebouxiophyte organelle genome data, which limits the utility of the available green algal organelle genomes for phylogenetic analyses. This is significant because, although there is strong support for the Prasinophyceae forming a paraphyletic assemblage at the base of the Chlorophyta, the branching order of the Ulvophyceae, Trebouxiophyceae, and Chlorophyceae (UTC) remains unresolved and controversial <xref rid="pone.0023624-Lewis1" ref-type="bibr">[1]</xref>, <xref rid="pone.0023624-Prschold1" ref-type="bibr">[13]</xref>. This is likely due to poor sampling and a lack of molecular sequence data from these groups, but it also reflects their antiquity, morphological diversity, and the potentially short timeframe over which they diverged from each other <xref rid="pone.0023624-Prschold1" ref-type="bibr">[13]</xref>&#x02013;<xref rid="pone.0023624-Cocquyt1" ref-type="bibr">[15]</xref>. Depending on the ultrastructural characteristics and molecular data being used, all three possible branching orders of the UTC classes have been hypothesized <xref rid="pone.0023624-Pombert1" ref-type="bibr">[16]</xref>&#x02013;<xref rid="pone.0023624-Turmel1" ref-type="bibr">[18]</xref>. Plastid genome multi-gene phylogenies have generally supported a sister relationship between the Ulvophyceae and Trebouxiophyceae <xref rid="pone.0023624-Pombert1" ref-type="bibr">[16]</xref>, <xref rid="pone.0023624-Turmel1" ref-type="bibr">[18]</xref>, whereas mtDNA phylogenies have tended to group the ulvophytes close to the chlorophyceans <xref rid="pone.0023624-Pombert2" ref-type="bibr">[19]</xref>, <xref rid="pone.0023624-Pombert3" ref-type="bibr">[20]</xref>. These analyses, however, have been hindered because the only complete sets of trebouxiophyte organelle genomes come from <italic>Pedinomonas minor</italic>
+<xref rid="pone.0023624-Turmel1" ref-type="bibr">[18]</xref>, <xref rid="pone.0023624-Turmel2" ref-type="bibr">[21]</xref> &#x02014; a species that some have argued is not a trebouxiophyte at all, and whose mitochondrial genome shows high rates of evolution <xref rid="pone.0023624-Pombert3" ref-type="bibr">[20]</xref>, <xref rid="pone.0023624-Melkonian1" ref-type="bibr">[22]</xref>, <xref rid="pone.0023624-Moestrup1" ref-type="bibr">[23]</xref> &#x02014; and the nonphotosynthetic parasite <italic>Helicosporidium</italic> sp. ATCC 50920 <xref rid="pone.0023624-Pombert3" ref-type="bibr">[20]</xref>, <xref rid="pone.0023624-deKoning1" ref-type="bibr">[24]</xref> (hereafter <italic>Helicosporidium</italic>), whose plastid genome contains no genes for proteins that function in photosynthesis and is therefore poorly suited for multi-gene ptDNA phylogenies.</p><p>Here, we present the mitochondrial and plastid genome sequences from <italic>Coccomyxa</italic>. We investigate the architectures and nucleotide landscapes of these genomes as well as their potential for resolving the relationships among the crown chlorophytes.</p></sec><sec id="s2"><title>Results and Discussion</title><sec id="s2a"><title>Architecture of the Coccomyxa organelle genomes</title><p>The <italic>Coccomyxa</italic> mitochondrial and plastid genome sequences (GenBank under accession numbers HQ874522 and HQ693844, respectively) are both circular-mapping <xref rid="pone.0023624-Bendich1" ref-type="bibr">[25]</xref>, <xref rid="pone.0023624-Bendich2" ref-type="bibr">[26]</xref> (<xref ref-type="fig" rid="pone-0023624-g001">Figure 1</xref>) and, as predicted, are rich in G and C. These are the third set of trebouxiophyte mtDNA and ptDNA sequences described thus far; the other two, as mentioned above, come from <italic>Helicosporidium</italic> and <italic>P. minor</italic>
+<xref rid="pone.0023624-Turmel1" ref-type="bibr">[18]</xref>, <xref rid="pone.0023624-Pombert3" ref-type="bibr">[20]</xref>, <xref rid="pone.0023624-Turmel2" ref-type="bibr">[21]</xref>, <xref rid="pone.0023624-deKoning1" ref-type="bibr">[24]</xref>, and there is also complete sequence data for the ptDNAs of the trebouxiophytes <italic>Chlorella vulgaris</italic>, <italic>Parachlorella kessleri</italic>, and <italic>Leptosira terrestris</italic>
+<xref rid="pone.0023624-Turmel1" ref-type="bibr">[18]</xref>, <xref rid="pone.0023624-deCambiaire1" ref-type="bibr">[27]</xref> and for the mtDNA of the nonphotosynthetic parasite <italic>Prototheca wickerhamii</italic>
+<xref rid="pone.0023624-Wolff1" ref-type="bibr">[28]</xref>. General features of the sequenced trebouxiophyte organelle genomes, including those from <italic>Coccomyxa</italic>, are shown in <xref ref-type="table" rid="pone-0023624-t001">Table 1</xref>.</p><fig id="pone-0023624-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0023624.g001</object-id><label>Figure 1</label><caption><title>Genetic maps of the <italic>Coccomyxa</italic> plastid (outer) and mitochondrial (inner) genomes.</title><p>The ptDNA and mtDNA sequences have respective lengths of 175.7 and 65.4 kb, and are deposited in GenBank under accession numbers HQ693844 and HQ874522. Arrows within the coding regions denote transcriptional polarities. Transfer RNA-coding regions are designated by the single-letter abbreviation of the amino acid they specify; their anticodon sequences are shown in brackets.</p></caption><graphic xlink:href="pone.0023624.g001"/></fig><table-wrap id="pone-0023624-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0023624.t001</object-id><label>Table 1</label><caption><title>General features of available trebouxiophyte organelle genomes.</title></caption><alternatives><graphic id="pone-0023624-t001-1" xlink:href="pone.0023624.t001"/><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup><thead><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">Length (kb)</td><td align="left" rowspan="1" colspan="1">&#x00025; GC</td><td align="left" rowspan="1" colspan="1">&#x00025; NC</td><td align="left" rowspan="1" colspan="1"># Genes</td><td align="left" rowspan="1" colspan="1"># Introns (I/II)</td><td align="left" rowspan="1" colspan="1">Notable Features</td><td align="left" rowspan="1" colspan="1">GenBank Accession</td></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">
+<bold>MtDNAs</bold>
+</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Coccomyxa</italic>
+</td><td align="left" rowspan="1" colspan="1">65.4</td><td align="left" rowspan="1" colspan="1">53.2</td><td align="left" rowspan="1" colspan="1">52</td><td align="left" rowspan="1" colspan="1">59</td><td align="left" rowspan="1" colspan="1">1/4</td><td align="left" rowspan="1" colspan="1">High GC content. Shares repeats with ptDNA.</td><td align="left" rowspan="1" colspan="1">HQ874522</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Helicosporidium</italic>
+</td><td align="left" rowspan="1" colspan="1">49.3</td><td align="left" rowspan="1" colspan="1">25.6</td><td align="left" rowspan="1" colspan="1">35</td><td align="left" rowspan="1" colspan="1">60</td><td align="left" rowspan="1" colspan="1">4/0</td><td align="left" rowspan="1" colspan="1">Fragmented <italic>cox1</italic> gene with trans-spliced group I intron.</td><td align="left" rowspan="1" colspan="1">GQ339576</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Pedinomonas minor</italic>
+</td><td align="left" rowspan="1" colspan="1">25.1</td><td align="left" rowspan="1" colspan="1">22.2</td><td align="left" rowspan="1" colspan="1">43</td><td align="left" rowspan="1" colspan="1">22</td><td align="left" rowspan="1" colspan="1">0/1</td><td align="left" rowspan="1" colspan="1">Small, intronless genome. Reduced gene content. Fragmented <italic>rrnS</italic> gene.</td><td align="left" rowspan="1" colspan="1">NC_000892</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Prototheca wickerhamii</italic>
+</td><td align="left" rowspan="1" colspan="1">55.3</td><td align="left" rowspan="1" colspan="1">25.8</td><td align="left" rowspan="1" colspan="1">34</td><td align="left" rowspan="1" colspan="1">61</td><td align="left" rowspan="1" colspan="1">5/0</td><td align="left" rowspan="1" colspan="1">Moderate size &#x00026; coding content. High degree of synteny with <italic>Helicosporidium</italic> mtDNA.</td><td align="left" rowspan="1" colspan="1">NC_001613</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>PtDNAs</bold>
+</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Chlorella vulgaris</italic>
+</td><td align="left" rowspan="1" colspan="1">150.3</td><td align="left" rowspan="1" colspan="1">31.6</td><td align="left" rowspan="1" colspan="1">49</td><td align="left" rowspan="1" colspan="1">115</td><td align="left" rowspan="1" colspan="1">3/0</td><td align="left" rowspan="1" colspan="1">IR<sup>&#x02212;</sup>. Moderate size &#x00026; coding content.</td><td align="left" rowspan="1" colspan="1">NC_001865</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Coccomyxa</italic>
+</td><td align="left" rowspan="1" colspan="1">175.7</td><td align="left" rowspan="1" colspan="1">50.7</td><td align="left" rowspan="1" colspan="1">56</td><td align="left" rowspan="1" colspan="1">115</td><td align="left" rowspan="1" colspan="1">1/0</td><td align="left" rowspan="1" colspan="1">IR<sup>&#x02212;</sup>. Large genome with high GC content. Shares repeats with mtDNA.</td><td align="left" rowspan="1" colspan="1">HQ693844</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Helicosporidium</italic>
+</td><td align="left" rowspan="1" colspan="1">37.4</td><td align="left" rowspan="1" colspan="1">26.9</td><td align="left" rowspan="1" colspan="1">5</td><td align="left" rowspan="1" colspan="1">54</td><td align="left" rowspan="1" colspan="1">1/0</td><td align="left" rowspan="1" colspan="1">IR<sup>&#x02212;</sup>. Smallest &#x00026; most reduced ptDNA from the Viridiplantae.</td><td align="left" rowspan="1" colspan="1">NC_008100</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Leptosira terrestris</italic>
+</td><td align="left" rowspan="1" colspan="1">195.0</td><td align="left" rowspan="1" colspan="1">27.3</td><td align="left" rowspan="1" colspan="1">55</td><td align="left" rowspan="1" colspan="1">106</td><td align="left" rowspan="1" colspan="1">4/0</td><td align="left" rowspan="1" colspan="1">IR<sup>&#x02212;</sup>. Largest available trebouxiophyte organelle DNA.</td><td align="left" rowspan="1" colspan="1">NC_009681</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Parachlorella kessleri</italic>
+</td><td align="left" rowspan="1" colspan="1">123.9</td><td align="left" rowspan="1" colspan="1">30.0</td><td align="left" rowspan="1" colspan="1">36</td><td align="left" rowspan="1" colspan="1">112</td><td align="left" rowspan="1" colspan="1">1/0</td><td align="left" rowspan="1" colspan="1">IR<sup>&#x0002b;</sup>. Small, intron-poor genome.</td><td align="left" rowspan="1" colspan="1">NC_012978</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Pedinomonas minor</italic>
+</td><td align="left" rowspan="1" colspan="1">98.3</td><td align="left" rowspan="1" colspan="1">38.4</td><td align="left" rowspan="1" colspan="1">29</td><td align="left" rowspan="1" colspan="1">105</td><td align="left" rowspan="1" colspan="1">0/0</td><td align="left" rowspan="1" colspan="1">IR<sup>&#x0002b;</sup>. Small, intronless genome.</td><td align="left" rowspan="1" colspan="1">FJ968740</td></tr></tbody></table></alternatives><table-wrap-foot><fn id="nt101"><label/><p>Guanine and cytosine (GC); Noncoding DNA (NC), includes introns as well as intronic and unclassified ORFs; rRNA-, tRNA-, and protein-coding (Genes); Group I/group II introns (I/II); inverted repeat present (IR<sup>&#x0002b;</sup>) or absent (IR<sup>&#x02212;</sup>).</p></fn></table-wrap-foot></table-wrap><p>With respective sizes of 65 and 175 kilobases (kb) and noncoding DNA contents of 52 and 56&#x00025;, the <italic>Coccomyxa</italic> mitochondrial and plastid genomes are among the most inflated organelle DNAs observed from the Trebouxiophyceae, and are more akin to the prodigious organelles genomes often found within the Chlorophyceae and Ulvophyceae. Apart from the ptDNA of <italic>L. terrestris</italic>, which is 195 kb and 55&#x00025; noncoding, most of the trebouxiophyte organelle genomes studied heretofore are relatively condensed (<xref ref-type="table" rid="pone-0023624-t001">Table 1</xref>), as exemplified by the <italic>P. minor</italic> mtDNA, which is 25 kb and contains only 22 genes, and the <italic>Helicosporidium</italic> ptDNA, which is 37.4 kb and 95&#x00025; coding, making it the most streamlined plastid genome observed from the Viridiplantae.</p><p>Annotation of the <italic>Coccomyxa</italic> organelle genomes revealed 59 (mtDNA) and 115 (ptDNA) putative genes, which are listed, along with the genes from the other sequenced trebouxiophyte organelle DNAs, in Supplementary <xref ref-type="supplementary-material" rid="pone.0023624.s002">Tables S1</xref> and <xref ref-type="supplementary-material" rid="pone.0023624.s003">S2</xref>. Like other available trebouxiophyte organelle DNAs, save for the <italic>P. minor</italic> mtDNA, the <italic>Coccomyxa</italic> mitochondrial and plastid genomes use the standard genetic code. The mitochondrial gene content of <italic>Coccomyxa</italic> differs from those of <italic>P. wickerhamii</italic> and <italic>Helicosporidium</italic> in that it does not have <italic>rpl6</italic>, <italic>rps11</italic>, and <italic>trnT</italic>
+<sub>ugu</sub>. We identified intact copies of <italic>rpl6</italic> and <italic>rps11</italic> within the <italic>Coccomyxa</italic> nuclear genome sequence (v2) on scaffolds 12 and 36, respectively, but did not find an mtDNA-like copy of <italic>trnT</italic>
+<sub>ugu</sub>, leaving open the possibility that a nuclear-encoded cytosolic <italic>trnT</italic>
+<sub>ugu</sub> is getting imported into the mitochondrion and compensating for the lost mitochondrial version of the gene. The ptDNA from <italic>Coccomyxa</italic> contains the same number of genes as that of <italic>C. vulgaris</italic>, which is about 3 to 10 more genes (mostly tRNAs) than those from other photosynthetic trebouxiophytes and around 50 more genes than the <italic>Helicosporidium</italic> plastid genome, which does not encode any photosynthetic proteins (<xref ref-type="table" rid="pone-0023624-t001">Table 1</xref>; Supplementary <xref ref-type="supplementary-material" rid="pone.0023624.s003">Table S2</xref>).</p><p>Although replete with noncoding sequence, the <italic>Coccomyxa</italic> organelle genomes harbour few introns. We identified one group I intron in the ptDNA, found in <italic>psbB</italic>, and five introns in the mtDNA: a group I intron in <italic>rrnL</italic> and four group II introns, distributed among four tRNA-coding genes (<italic>trnH</italic>
+<sub>gug</sub>, <italic>trnS</italic>
+<sub>gcu</sub>, <italic>trnS</italic>
+<sub>uga</sub>, and <italic>trnW</italic>
+<sub>cca</sub>). Group II introns within tRNA-coding genes have been found in mtDNAs of other green algae, including those of <italic>Chlorokybus atmophyticus</italic>, <italic>Chaetosphaeridium globosum</italic>, and <italic>C. vulgaris</italic>. Three of tRNA group II introns in the <italic>Coccomyxa</italic> mtDNA (<italic>trnH</italic>
+<sub>gug</sub>, <italic>trnS</italic>
+<sub>gcu</sub>, <italic>trnS</italic>
+<sub>uga</sub>) are orthologous with those of <italic>C. atmophyticus</italic>. Low organelle intron contents are a common theme in trebouxiophytes and prasinophytes, whereas the organelle DNAs of chlorophyceans and ulvophytes are often intron dense.</p><p>Many of the intergenic regions in the <italic>Coccomyxa</italic> organelle genomes contain repetitive elements. Approximately 7&#x00025; of both the mtDNA and ptDNA comprises repeats, most of which have forward (i.e., direct) or inverted (i.e., palindromic) orientations, are GC rich (60&#x02013;70&#x00025;), and are 20&#x02013;250 nt in length (average 100 nt). Similar (even identical) repeats were found in both the mitochondrial and plastid compartments. In total, the <italic>Coccomyxa</italic> organelle genomes share &#x0223c;500 nt of repeat sequence with one another, distributed over approximately five different sites in the mtDNA and eleven in the ptDNA. To the best of our knowledge, this is one of only a few examples from all eukaryotes of a species harbouring the same repetitive element in both its mtDNA and ptDNA. GC-rich repeat elements have been identified in other organelle genomes, including the mtDNAs of the green algae <italic>P. capuana</italic> and <italic>Chlorogonium elongatum</italic>
+<xref rid="pone.0023624-Smith2" ref-type="bibr">[3]</xref>, <xref rid="pone.0023624-Kroymann1" ref-type="bibr">[29]</xref>. The repeats within the <italic>Coccomyxa</italic> organelle DNAs, however, do not show any obvious sequence similarity to those from other organelle DNAs.</p><p>The plastid genome of <italic>Coccomyxa</italic>, like those of <italic>C. vulgaris</italic>, <italic>L. terrestris</italic>, and <italic>Helicosporidium</italic>, does not have a &#x0201c;quadripartite structure&#x0201d;, meaning that it lacks inverted repeats. The only sequenced trebouxiophyte ptDNAs that have inverted repeats are those of <italic>Parachlorella kessleri</italic> and <italic>Pedinomonas minor</italic> (<xref ref-type="table" rid="pone-0023624-t001">Table 1</xref>), implying that loss of the inverted repeat has occurred multiple times throughout the evolution of trebouxiophytes <xref rid="pone.0023624-deCambiaire1" ref-type="bibr">[27]</xref>.</p></sec><sec id="s2b"><title>Organelle DNA nucleotide landscape</title><p>The <italic>Coccomyxa</italic> organelle genomes have overall GC contents of 53.2&#x00025; (mtDNA) and 50.7&#x00025; (ptDNA). Although only modestly biased in G and C, the nucleotide compositions of these two genomes are made more impressive by the AT bias found in nearly all other available mtDNA and ptDNA sequences (<xref ref-type="fig" rid="pone-0023624-g002">Figure 2</xref>). Indeed, <italic>Coccomyxa</italic> belongs to a small but eclectic list of species that are known to have organelle DNAs that exceed 50&#x00025; GC (<xref ref-type="table" rid="pone-0023624-t002">Table 2</xref>).</p><fig id="pone-0023624-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0023624.g002</object-id><label>Figure 2</label><caption><title>Guanine and cytosine compositions of completely sequenced mitochondrial and plastid genomes.</title><p>Species with high organelle GC contents are labeled (see <xref ref-type="table" rid="pone-0023624-t002">Table 2</xref> for full genus names). Organelle genome sequences were downloaded from the GenBank Reference Sequence collection on 1 March 2011.</p></caption><graphic xlink:href="pone.0023624.g002"/></fig><table-wrap id="pone-0023624-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0023624.t002</object-id><label>Table 2</label><caption><title>General features of available GC-rich organelle genomes.</title></caption><alternatives><graphic id="pone-0023624-t002-2" xlink:href="pone.0023624.t002"/><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup><thead><tr><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1">Lineage</td><td align="left" rowspan="1" colspan="1">GC total</td><td align="left" rowspan="1" colspan="1">GC1</td><td align="left" rowspan="1" colspan="1">GC2</td><td align="left" rowspan="1" colspan="1">GC3</td><td align="left" rowspan="1" colspan="1">GC coding/intergenic</td><td align="left" rowspan="1" colspan="1">Notable Features</td><td align="left" rowspan="1" colspan="1">GenBank Accession</td></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">
+<bold>MtDNAs</bold>
+</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Candida subhashii</italic>
+</td><td align="left" rowspan="1" colspan="1">Yeast</td><td align="left" rowspan="1" colspan="1">52.7</td><td align="left" rowspan="1" colspan="1">53.2</td><td align="left" rowspan="1" colspan="1">38.7</td><td align="left" rowspan="1" colspan="1">66.4</td><td align="left" rowspan="1" colspan="1">52.3/54.4</td><td align="left" rowspan="1" colspan="1">Linear genome with inverted repeat telomeres. Pathogenic species.</td><td align="left" rowspan="1" colspan="1">NC_014337</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Chirocentrus dorab</italic>
+</td><td align="left" rowspan="1" colspan="1">Teleost</td><td align="left" rowspan="1" colspan="1">53.2</td><td align="left" rowspan="1" colspan="1">58.7</td><td align="left" rowspan="1" colspan="1">47.7</td><td align="left" rowspan="1" colspan="1">53.7</td><td align="left" rowspan="1" colspan="1">53.6/39.3</td><td align="left" rowspan="1" colspan="1">Compact, intronless genome.</td><td align="left" rowspan="1" colspan="1">NC_006913</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Coccomyxa</italic>
+</td><td align="left" rowspan="1" colspan="1">Green alga</td><td align="left" rowspan="1" colspan="1">53.2</td><td align="left" rowspan="1" colspan="1">51.4</td><td align="left" rowspan="1" colspan="1">40.8</td><td align="left" rowspan="1" colspan="1">59.8</td><td align="left" rowspan="1" colspan="1">51.1/55.7</td><td align="left" rowspan="1" colspan="1">GC-rich repeat elements. Similar repeats in both mtDNA and ptDNA.</td><td align="left" rowspan="1" colspan="1">HQ874522</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Polytomella capuana</italic>
+</td><td align="left" rowspan="1" colspan="1">Green alga</td><td align="left" rowspan="1" colspan="1">57.2</td><td align="left" rowspan="1" colspan="1">52.2</td><td align="left" rowspan="1" colspan="1">41.3</td><td align="left" rowspan="1" colspan="1">76.0</td><td align="left" rowspan="1" colspan="1">56.4/61.0</td><td align="left" rowspan="1" colspan="1">Highly reduced, linear genome with inverted repeat telomeres. Nonphotosynthetic species.</td><td align="left" rowspan="1" colspan="1">NC_010357</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Selaginella moellendorffii</italic>
+</td><td align="left" rowspan="1" colspan="1">Land plant</td><td align="left" rowspan="1" colspan="1">68.1</td><td align="left" rowspan="1" colspan="1">64.2</td><td align="left" rowspan="1" colspan="1">60.2</td><td align="left" rowspan="1" colspan="1">61.5</td><td align="left" rowspan="1" colspan="1">63.5/68.9</td><td align="left" rowspan="1" colspan="1">Extreme C-to-U RNA editing. Complex network of recombinogenic mtDNA molecules.</td><td align="left" rowspan="1" colspan="1">GQ246802-8 JF338143-7</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<bold>PtDNAs</bold>
+</td><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/><td align="left" rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Coccomyxa</italic>
+</td><td align="left" rowspan="1" colspan="1">Green alga</td><td align="left" rowspan="1" colspan="1">50.7</td><td align="left" rowspan="1" colspan="1">56.1</td><td align="left" rowspan="1" colspan="1">43.6</td><td align="left" rowspan="1" colspan="1">50.1</td><td align="left" rowspan="1" colspan="1">50.3/51.0</td><td align="left" rowspan="1" colspan="1">GC-rich repeat elements. Similar repeats in both mtDNA and ptDNA.</td><td align="left" rowspan="1" colspan="1">NC_015084</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Selaginella moellendorffii</italic>
+</td><td align="left" rowspan="1" colspan="1">Land plant</td><td align="left" rowspan="1" colspan="1">51.0</td><td align="left" rowspan="1" colspan="1">55.9</td><td align="left" rowspan="1" colspan="1">50.8</td><td align="left" rowspan="1" colspan="1">44.8</td><td align="left" rowspan="1" colspan="1">51.4/49.9</td><td align="left" rowspan="1" colspan="1">Extreme C-to-U RNA editing</td><td align="left" rowspan="1" colspan="1">NC_013086</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<italic>Selaginella uncinata</italic>
+</td><td align="left" rowspan="1" colspan="1">Land plant</td><td align="left" rowspan="1" colspan="1">54.8</td><td align="left" rowspan="1" colspan="1">58.8</td><td align="left" rowspan="1" colspan="1">54.7</td><td align="left" rowspan="1" colspan="1">49.3</td><td align="left" rowspan="1" colspan="1">54.8/54.9</td><td align="left" rowspan="1" colspan="1">Extreme C-to-U RNA editing</td><td align="left" rowspan="1" colspan="1">AB197035</td></tr></tbody></table></alternatives><table-wrap-foot><fn id="nt102"><label/><p>Percentage of guanine and cytosine (GC) of entire genome (total), first-, second-, and third-position codon sites (GC1, GC2, and GC3), rRNA-, tRNA-, and protein-coding regions (coding), and intergenic regions (intergenic).</p></fn></table-wrap-foot></table-wrap><p>The individual strands of the <italic>Coccomyxa</italic> organelle genomes contain almost equal proportions of G versus C (the GC skew of the mtDNA is 0.015 and that of the ptDNA is 0.008), a trait that is shared by other GC-rich organelle DNAs, except for the mtDNA of the wolf herring <italic>Chirocentrus dorab</italic>, which contains an abundance of cytosine on the main sense strand. Analyses of <italic>Coccomyxa</italic> EST sequence data revealed no evidence of post-transcriptional editing in either the mitochondrial or plastid compartments (&#x0223c;10 organelle transcripts were explored), contrasting the massive levels of C-to-U editing found in the GC-biased mtDNA and ptDNA of the spikemoss <italic>Selaginella moellendorffii</italic>
+<xref rid="pone.0023624-Smith3" ref-type="bibr">[7]</xref>&#x02013;<xref rid="pone.0023624-Tsuji1" ref-type="bibr">[9]</xref>. <italic>Selaginella</italic> organelle genomes are currently the only examples where GC richness is allied with post-transcriptional editing (<xref ref-type="table" rid="pone-0023624-t002">Table 2</xref>).</p><p>The GC composition differs among the various regions of the <italic>Coccomyxa</italic> organelle genomes (<xref ref-type="table" rid="pone-0023624-t002">Table 2</xref>). For the mtDNA, the GC contents of intergenic regions (55.7&#x00025;) and third codon positions (59.8&#x00025;) are higher than those of the more functionally constrained regions, such as first and second codon positions (51.4 and 40.8&#x00025;) and sites coding for structural RNAs (52.5&#x00025;). In the plastid genome the GC content at first codon positions (56.1&#x00025;) exceeds that of intergenic (51&#x00025;) and third codon positions (50.1&#x00025;), and is lowest at second codon positions (43.6&#x00025;). An inflated GC content at first codon positions relative to the other genomic regions is a general trend among plastid genomes (reflecting, in part, an amino acid composition rich in leucine) and is not unique to <italic>Coccomyxa</italic> (see <xref rid="pone.0023624-Smith3" ref-type="bibr">[7]</xref> for a compilation of the codon position GC contents for various completely sequenced ptDNAs). For both the mtDNA and ptDNA, the highest levels of G and C are observed for the repetitive elements, most of which are between 60&#x02013;75&#x00025; GC.</p><p>The deduced amino acid sequences of the <italic>Coccomyxa</italic> mtDNA and ptDNA protein-coding genes, although slightly enriched in alanine and glycine, are not markedly different from their counterparts in AT-rich trebouxiophyte organelle DNAs (Supplementary <xref ref-type="supplementary-material" rid="pone.0023624.s004">Tables S3</xref> and <xref ref-type="supplementary-material" rid="pone.0023624.s005">S4</xref>). It is therefore unlikely that the GC contents of the <italic>Coccomyxa</italic> organelle genomes are driven by selection for a particular amino acid composition. Moreover, the tRNA repertoire and anticodon suite encoded within the organelle DNAs of <italic>Coccomyxa</italic> are almost identical to those from other AT-rich trebouxiophyte organelle genomes (Supplementary <xref ref-type="supplementary-material" rid="pone.0023624.s002">Tables S1</xref> and <xref ref-type="supplementary-material" rid="pone.0023624.s003">S2</xref>). Adaptation for DNA thermo stability (resulting from the extra hydrogen bond in G&#x02022;C pairs) can also be ruled out as <italic>Coccomyxa</italic> sp. 169 originates from Marble Point Antarctica <xref rid="pone.0023624-HolmHasen1" ref-type="bibr">[30]</xref>. So then what is the nature of the forces biasing the <italic>Coccomyxa</italic> organelle DNAs in G and C? When addressing this question, it may help to reflect on why most organelle genomes are enriched in A and T.</p><p>The forces shaping organelle genome nucleotide landscape are poorly understood and probably differ both among and within lineages. Some have invoked selection for translational efficiency to explain the high levels of A and T in organelle genomes (reviewed in <xref rid="pone.0023624-Lynch1" ref-type="bibr">[31]</xref>), whereas others contend that it stems from AT mutation pressure coupled with inefficient mitochondrial and plastid DNA repair processes <xref rid="pone.0023624-Lynch1" ref-type="bibr">[31]</xref>&#x02013;<xref rid="pone.0023624-Mason1" ref-type="bibr">[33]</xref>. Indeed, mitochondrial and plastid genomes, because they are housed in energy-producing organelles, are often exposed to reactive oxygen species (ROS), which, by causing the deamination of cytosine to uracil and the oxidative conversion of guanine to 8-oxo-guanine, promote C&#x02236;G&#x02192;T&#x02236;A transitions and C&#x02236;G&#x02192;A&#x02236;T transversions <xref rid="pone.0023624-Lynch1" ref-type="bibr">[31]</xref>. That being said, the plastid genomes from nonphotosynthetic species, like <italic>Helicosporidium</italic> and <italic>Plasmodium falciparum</italic>, which are not currently exposed to high levels of ROS, are also AT rich, suggesting that there are a diversity of forces biasing organelle genomes towards A and T. Whatever these forces may be, <italic>Coccomyxa</italic> appears to be buffering or counteracting them. The following observations give insight into how it may be achieving this.</p><p>Within the <italic>Coccomyxa</italic> mtDNA and ptDNA there are, with some exceptions, an excess of guanines and cytosines at silent sites relative to the more functionally constrained positions (<xref ref-type="table" rid="pone-0023624-t002">Table 2</xref>). This distribution of G and C is best explained by the negative selection principle of the neutral theory of molecular evolution <xref rid="pone.0023624-Kimura1" ref-type="bibr">[34]</xref>. In other words, nonadaptive forces may be driving the nucleotide composition towards G and C. The two neutral processes that are thought to influence nucleotide landscape are biased mutation pressure, which, as discussed above, seems to be skewed towards A and T in mitochondria and plastids, and biased gene conversion, which favours G and C in nuclear genomes <xref rid="pone.0023624-Marais1" ref-type="bibr">[35]</xref>, <xref rid="pone.0023624-Duret1" ref-type="bibr">[36]</xref> but appears to be AT-biased in the sole organelle system in which it has been studied (the ptDNA of tobacco) <xref rid="pone.0023624-Khakhlova1" ref-type="bibr">[37]</xref>. Although speculative, one possibility is that the inflated GC content of the <italic>Coccomyxa</italic> organelle DNA repeat elements &#x02014; sequences that presumably undergo high levels of recombination and therefore experience a lot of gene conversion <xref rid="pone.0023624-Spencer1" ref-type="bibr">[38]</xref> &#x02014; may be a sign of a GC-biased conversion process within the mitochondrion and plastid of this species; however, this would contrast the AT biased conversion process found in the tobacco plastid genome <xref rid="pone.0023624-Khakhlova1" ref-type="bibr">[37]</xref>. Also, the presence of identical GC-rich repeats in both the mtDNA and ptDNA of <italic>Coccomyxa</italic> implies that there is a mobile nature to at least some of these elements, meaning that they may be able to propagate their GC richness by spreading their sequence throughout the various noncoding regions.</p><p>Another possibility is that a mutation conferring a GC-biased mutational pattern has been fixed in <italic>Coccomyxa</italic>. Given that both the mtDNA and ptDNA are GC rich, one would expect that this new mutation bias be derived from a system that affected both organelles. The mitochondrial and plastid compartments share comparatively few proteins with one another, but nucleus-encoded dual-targeted organelle proteins have been characterized in a number of lineages, and are the rule rather than the exception in some systems <xref rid="pone.0023624-Millar1" ref-type="bibr">[39]</xref>, <xref rid="pone.0023624-Carrie1" ref-type="bibr">[40]</xref>. The similar GC bias of the mtDNA and ptDNA may imply that cell-wide features, like life history characteristics, environment, and/or metabolic processes, have influenced the mitochondrial and plastid nucleotide compositions. In this context, it is noteworthy that the overall GC content of <italic>Coccomyxa</italic> nuclear genome (&#x0223c;53&#x00025;) is comparable to that of the organelle DNAs.</p><p>Organelle DNA sequence data from other <italic>Coccomyxa</italic> species are scarce, but we were able to find in GenBank partial <italic>rbcL</italic> ptDNA sequences from 49 different <italic>Coccomyxa</italic> strains. Forty-seven of these strains have relatively GC-poor <italic>rbcL</italic> sequences (average&#x0200a;=&#x0200a;40&#x00025; GC), suggesting that their plastid genomes are AT rich. However, the <italic>rbcL</italic> GC contents from two strains &#x02014; <italic>Coccomyxa chodatii</italic> (49&#x00025;) and <italic>Coccomyxa rayssiae</italic> (47.3&#x00025;) &#x02014; are similar to that of <italic>Coccomyxa</italic> sp. C-169 (49.3&#x00025;), the focus of this study. All three of these taxa are non-lichenized, free living species, whereas the other 47 species, which had typical AT-rich <italic>rbcL</italic> GC contents, are symbionts.</p></sec><sec id="s2c"><title>Phylogenetic analyses</title><p>Sparse taxon sampling and a lack of DNA sequence data have made it difficult to resolve the phylogenetic relationships among the Ulvophyceae, Trebouxiophyceae, and Chlorophyceae. The completion of the <italic>Coccomyxa</italic> mitochondrial and plastid genomes allows for a more thorough phylogenetic evaluation of these groups. Using two amino acid sequence datasets &#x02014; one with 29 mtDNA-encoded proteins and another containing 67 ptDNA-encoded proteins &#x02014; we performed Maximum Likelihood (LG&#x0002b;&#x00393; model) and Bayesian phylogenetic (CAT&#x0002b;GTR&#x0002b;&#x00393; model) analyses on <italic>Coccomyxa</italic> and various other green algae for which complete or almost complete organelle DNA sequences are available. <italic>Helicosporidium</italic> was not included in the phylogenetic analyses because it lacked several important organelle genes for phylogenetic reconstruction; when we included <italic>Helicosporidium</italic> (which groups with species from the Chlorellaceae) in our analyses it did not alter the tree topologies discussed below.</p><p>Both the mitochondrial and plastid phylogenies (<xref ref-type="fig" rid="pone-0023624-g003">Figures 3</xref> and <xref ref-type="fig" rid="pone-0023624-g004">4</xref>, respectively) consistently grouped <italic>Coccomyxa</italic> with other trebouxiophytes. On the mitochondrial trees, <italic>Coccomyxa</italic> was sister to a clade containing <italic>Helicosporidium</italic> and <italic>P. wickerhamii</italic>, but the taxon sampling remains relatively poor, and elevated rates of evolution for <italic>P. minor</italic> and <italic>Scenedesmus obliquus</italic> prevented resolution of the UTC classes. The grouping of <italic>P. minor</italic> with <italic>Scenedesmus obliquus</italic> received high bootstrap support (95&#x00025;) in the ML tree (<xref ref-type="fig" rid="pone-0023624-g003">Figure 3A</xref>), as it did in previous mtDNA-based green algal phylogenies <xref rid="pone.0023624-Pombert2" ref-type="bibr">[19]</xref>, <xref rid="pone.0023624-Pombert3" ref-type="bibr">[20]</xref>, but given that both of these species show high rates of mtDNA substitution, we argue that this arrangement is caused by long-branch attraction (LBA), which also appears to be attracting the relatively fast evolving ulvophyte <italic>P. akinetum</italic>, resulting in a paraphyletic Ulvophyceae (<xref ref-type="fig" rid="pone-0023624-g003">Figure 3A</xref>). Our concerns regarding LBA were confirmed by Bayesian inference with the site-heterogeneous CAT model [combined with a general time reversible (GTR) exchange rate matrix and gamma correction], which has been shown to handle saturated positions more efficiently than site-homogeneous models such as the LG matrix <xref rid="pone.0023624-Lartillot1" ref-type="bibr">[41]</xref>. In the Bayesian tree (<xref ref-type="fig" rid="pone-0023624-g003">Figure 3B</xref>), a monophyletic Ulvophyceae clade was recovered, with maximal statistical support, and the position of <italic>P. minor</italic> and <italic>S. obliquus</italic> were unresolved.</p><fig id="pone-0023624-g003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0023624.g003</object-id><label>Figure 3</label><caption><title>Maximum-likelihood (A) and Bayesian (B) trees inferred from the amino acid sequence of 29 mtDNA-encoded proteins.</title><p>Phylogenetic tree of green algae, with 6 streptophyte species used as outgroup. Thick branches represent maximal statistical support (100&#x00025; bootstrap support in A; 1.0 Bayesian posterior probabilities in B). When not maximal, values are indicated. The scale bar represents the estimated number of amino acid substitutions per site.</p></caption><graphic xlink:href="pone.0023624.g003"/></fig><fig id="pone-0023624-g004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0023624.g004</object-id><label>Figure 4</label><caption><title>Bayesian tree inferred from the amino acid sequence of 67 ptDNA-encoded proteins.</title><p>Phylogenetic tree of green algae, with 5 streptophyte species used as outgroup. Thick branches represent maximal statistical support (1.0 Bayesian posterior probabilities). When not maximal, values are indicated. The scale bar represents the estimated number of amino acid substitutions per site.</p></caption><graphic xlink:href="pone.0023624.g004"/></fig><p>The plastid dataset contained both a larger diversity of chlorophyte species and more than twice the number of genes than the mitochondrial dataset. <xref ref-type="fig" rid="pone-0023624-g004">Figure 4</xref> corresponds to the Bayesian tree inferred from the site-heterogeneous CAT&#x0002b;GTR&#x0002b;&#x00393; model. On this tree the trebouxiophytes formed a monophyletic group comprising two subclades: one containing <italic>P. minor</italic> and members of the Chlorellaceae and another harbouring <italic>Coccomyxa</italic>, <italic>O. solitaria</italic>, and <italic>L. terrestris</italic>. Previous plastid multi-gene phylogenies positioned <italic>L. terrestris</italic> on a long branch next to the Chlorophyceae <xref rid="pone.0023624-Turmel1" ref-type="bibr">[18]</xref>, <xref rid="pone.0023624-L1" ref-type="bibr">[42]</xref>, but our analyses place it with the trebouxiophytes and indeed sister to <italic>Coccomyxa</italic> with high support, which is consistent with its traditional classification <xref rid="pone.0023624-Lockhorst1" ref-type="bibr">[43]</xref>. The plastid tree also recovered a weakly supported sister relationship between the Ulvophyceae and Chlorophyceae, with the Trebouxiophyceae branching at the base of the chlorophyte crown. Although the relationships among the UTC groups were not burdened by dramatically long branches, it is noticeable that the Chlorophyceae in general and the ulvophyte <italic>Bryopsis hypnoides</italic> evolve faster than the rest of the UTC members. In an attempt to test for an undetected misleading effect resulting from this heterogeneous rate of sequence evolution that would lower the support for the overall UTC branching pattern, we reconstructed a tree where six fast-evolving lineages were discarded: <italic>P. provasolii</italic>, <italic>B. hypnoides</italic> and all Chlorophyceae except <italic>S. obliquus</italic> (Supplementary <xref ref-type="supplementary-material" rid="pone.0023624.s001">Figure S1</xref>). Using this reduced dataset, the statistical support for the Ulvophyceae and Chlorophyceae grouping increased significantly (0.73 PP to 0.99 PP); the monophyly of Trebouxiophyceae, however, remained poor. This branching order is consistent with previous phylogenetic analyses using 18S rRNA <xref rid="pone.0023624-DeWever1" ref-type="bibr">[17]</xref>, <xref rid="pone.0023624-Watanabe1" ref-type="bibr">[44]</xref> and plastid genome architectural features <xref rid="pone.0023624-Turmel1" ref-type="bibr">[18]</xref> and reinforces the belief that the ancestor of the UTC clade had a phycoplast and a non-persistent mitotic spindle <xref rid="pone.0023624-Mattox1" ref-type="bibr">[45]</xref> &#x02014; features that were presumably lost in the Ulvophyceae. An early diverging Trebouxiophyceae also implies that a counter-clockwise flagellar orientation was an ancestral characteristic of the UTC, which evolved to directly opposed and clockwise orientations within the Chlorophyceae. This hypothesis is consistent with the counter clockwise flagellar root system in the prasinophyte class Chlorodendrophyceae <xref rid="pone.0023624-Mattox1" ref-type="bibr">[45]</xref>.</p></sec></sec><sec sec-type="materials|methods" id="s3"><title>Materials and Methods</title><sec id="s3a"><title>Strain information</title><p>
+<italic>Coccomyxa</italic> sp. C-169 (formerly referred to as <italic>Chlorella</italic> sp. C-169 and then redefined after phylogenetic analysis of the draft nuclear genome sequence [DOE JGI, unpublished data]) was maintained at the culture collection of the Institute of Molecular and Cellular Biosciences (IAM), University of Tokyo, until 2007. It is now available from the Microbial Culture Collection at the National Institute for Environmental Studies (NIES) under strain number 2166. <italic>Coccomyxa</italic> C-169/NIES-2166 originates from Marble Point Antarctica.</p></sec><sec id="s3b"><title>Assembly and annotation of the Coccomyxa organelle genomes</title><p>The <italic>Coccomyxa</italic> organelle genomes were sequenced as a part of the DOE JGI <italic>Coccomyxa</italic> genome project using whole-genome shotgun sequencing on a Sanger platform. Reads were data-mined from the National Center for Biotechnology Information (NCBI) <italic>Coccomyxa</italic> Trace Archive using the following sequences as BlastN (v2.2.25&#x0002b;) queries: the <italic>Helicosporidium</italic> and <italic>P. wickerhamii</italic> mitochondrial genomes and the <italic>C. vulgaris</italic> ptDNA. BlastN parameters were as follows: an expectation value (E-value) of 0.0001; a word size of 11; match and mismatch scores of 2 and &#x02212;3, respectively; and gap-cost values of 5 (existence) and 2 (extension). Trace files corresponding to Blast hits were assembled with CodonCode Aligner v3.7.1.1 (CodonCode Corporation, Dedham, MA, USA). Gaps in the assemblies were filled by blasting the generated <italic>Coccomyxa</italic> mtDNA and ptDNA contigs against the <italic>Coccomyxa</italic> Trace Archive and then using the hits to extend the contigs. The entire <italic>Coccomyxa</italic> organelle genome sequences were blasted against the <italic>Coccomyxa</italic> draft nuclear genome sequence (v2) to verify that they were not generated from either nuclear mitochondrial DNAs or nuclear plastid DNAs. These analyses indicate that the mitochondrial and plastid genome assemblies were generated from organelle DNA and are consistent with the view that <italic>Coccomyxa</italic> harbours very little organelle-like sequences in its nuclear genome <xref rid="pone.0023624-Smith4" ref-type="bibr">[46]</xref>.</p><p>Introns and repeat elements were respectively detected with RNAweasel <xref rid="pone.0023624-Lang1" ref-type="bibr">[47]</xref> and REPuter <xref rid="pone.0023624-Kurtz1" ref-type="bibr">[48]</xref>. Additional scans for repeats were performed by building custom BLAST databanks of the <italic>Coccomyxa</italic> mtDNA and ptDNA sequences and then blasting (BlastN v2.2.25&#x0002b;) these with specific regions from the mitochondrial and plastid genomes. <italic>Coccomyxa</italic> EST and nuclear genome sequence data (v2) were downloaded from the DOE JGI <italic>Coccomyxa</italic> genome portal.</p></sec><sec id="s3c"><title>Phylogenetic analyses</title><p>The phylogenetic datasets included the concatenated alignments of 29 mtDNA-encoded genes (5,344 amino acids) from 15 taxa (mitochondrial dataset) and 67 ptDNA-encoded genes (1,1218 amino acids) from 25 taxa (plastid dataset); see Supplementary <xref ref-type="supplementary-material" rid="pone.0023624.s006">Table S5</xref> for a list of species and genes that were employed. Sequences were aligned using the L-INS-I method of the MAFFT package <xref rid="pone.0023624-Katoh1" ref-type="bibr">[49]</xref>. Poorly aligned positions were removed with Gblocks <xref rid="pone.0023624-Castresana1" ref-type="bibr">[50]</xref> using the following settings: no gaps allowed, minimum number of sequences for conserved and flank positions equal to 50&#x00025; of the number of taxa plus one, a maximum number of contiguous non-conserved positions of 10, and a minimum block length of 8. <italic>Chlamydomonas reinhardtii</italic> was discarded from the mitochondrial dataset because it showed high rates of mtDNA evolution and has a gene-poor mitochondrial genome &#x02014; a more slowly evolving representative for the Chlorophyceae was available (i.e., <italic>S. obliquus</italic>). The <italic>Helicosporidium</italic> ptDNA was not included in the plastid dataset because it is highly reduced and thus lacks several genes that were important for phylogenetic reconstruction. The final gene datasets were based on the presence of at least 70&#x00025; of the species that were to be included in the final concatenations (Supplementary <xref ref-type="supplementary-material" rid="pone.0023624.s006">Table S5</xref>).</p><p>Maximum Likelihood (ML) phylogenetic analyses were run with RAxML 7.2.8 <xref rid="pone.0023624-Stamatakis1" ref-type="bibr">[51]</xref> in combination with the rapid hill-climbing algorithm and the site-homogeneous LG&#x0002b;&#x00393;&#x0002b;F model of evolution (&#x02212;m PROTGAMMALGF, 4 discrete rate categories). The best-scoring ML tree was based on multiple searches of 20 randomized stepwise addition parsimony starting trees. Statistical support was evaluated with non-parametric bootstrapping using 100 replicates. Bayesian phylogenetic analyses were performed with PhyloBayes 3.2f <xref rid="pone.0023624-Lartillot2" ref-type="bibr">[52]</xref> using the site-heterogeneous mixture CAT model with a general time reversible (GTR) exchange rate matrix and gamma correction (4 categories). Two independent Markov chains with a total length of 10,000 cycles were performed, discarding the first 2000 points as burnin, and calculating the posterior consensus on the remaining trees. Convergence between the two chains was ascertained by examining the difference in frequency for all of their bipartitions (&#x0003c;0.05 in all analyses).</p><p>For the fast-evolving species removal analysis on the plastid dataset, root-to-tip distances were calculated with the &#x0201c;ape&#x0201d; and &#x0201c;geiger&#x0201d; packages available in R, with a root position defined on the branch leading to the monophyletic clade of <italic>Marchantia polymorpha</italic> and <italic>Physcomitrella patens</italic> (within the outgroup Streptophyta). Taxa were sorted according to their distance to the root, and the fastest evolving taxa removed (<italic>Pycnococcus provasolii</italic>, <italic>Bryopsis hypnoides</italic>, and all of the Chlorophyceae except the relatively slowly evolving <italic>S. obliquus</italic>).</p></sec></sec><sec sec-type="supplementary-material" id="s4"><title>Supporting Information</title><supplementary-material content-type="local-data" id="pone.0023624.s001"><label>Figure S1</label><caption><p>Bayesian phylogenetic tree of the ptDNA data with fast-evolving species removed</p><p>(PDF)</p></caption><media xlink:href="pone.0023624.s001.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0023624.s002"><label>Table S1</label><caption><p>Gene contents of available trebouxiophyte mitochondrial genomes</p><p>(PDF)</p></caption><media xlink:href="pone.0023624.s002.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0023624.s003"><label>Table S2</label><caption><p>Gene contents of available trebouxiophyte plastid genomes</p><p>(PDF)</p></caption><media xlink:href="pone.0023624.s003.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0023624.s004"><label>Table S3</label><caption><p>Amino acid composition of proteins encoded in complete mitochondrial genome sequences from trebouxiophytes</p><p>(PDF)</p></caption><media xlink:href="pone.0023624.s004.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0023624.s005"><label>Table S4</label><caption><p>Amino acid composition of proteins encoded in complete plastid genome sequences from trebouxiophytes</p><p>(PDF)</p></caption><media xlink:href="pone.0023624.s005.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material content-type="local-data" id="pone.0023624.s006"><label>Table S5</label><caption><p>Gene and species lists for the mitochondrial and chloroplast datasets</p><p>(XLSX)</p></caption><media xlink:href="pone.0023624.s006.xlsx"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><fn-group><fn fn-type="COI-statement"><p><bold>Competing Interests: </bold>The authors have declared that no competing interests exist.</p></fn><fn fn-type="financial-disclosure"><p><bold>Funding: </bold>DRS is supported by a postdoctoral fellowship from the Natural Sciences and Engineering Research Council (NSERC) of Canada. FB is supported by a prospective researcher postdoctoral fellowship from the Swiss National Science Foundation, and by a grant to the Centre for Microbial Diversity and Evolution from the Tula Foundation. JLVE was partially supported by grant P20-RR15635 from the COBRE program of the National Center for Research Resources (no additional external funding received for this study). PJK is funded by a grant from NSERC (227301). PJK is a Fellow of the Canadian Institute for Advanced Research and a Senior Scholar of the Michael Smith Foundation for Health Research. The work conducted by the DOE JGI is supported by the Office of Science of the U.S. Department of Energy under Contract Number DE-AC02-05CH11231. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p></fn></fn-group><ref-list><title>References</title><ref id="pone.0023624-Lewis1"><label>1</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lewis</surname><given-names>LA</given-names></name><name><surname>McCourt</surname><given-names>RM</given-names></name></person-group>
+<year>2004</year>
+<article-title>Green algae and the origin of land plants.</article-title>
+<source>Am J Bot</source>
+<volume>91</volume>
+<fpage>1535</fpage>
+<lpage>1556</lpage>
+<pub-id pub-id-type="pmid">21652308</pub-id></element-citation></ref><ref id="pone.0023624-Smith1"><label>2</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Smith</surname><given-names>DR</given-names></name><name><surname>Lee</surname><given-names>RW</given-names></name></person-group>
+<year>2010</year>
+<article-title>Low nucleotide diversity for the expanded organelle and nuclear genomes of <italic>Volvox carteri</italic> supports the mutational-hazard hypothesis.</article-title>
+<source>Mol Biol Evol</source>
+<volume>27</volume>
+<fpage>2244</fpage>
+<lpage>2256</lpage>
+<pub-id pub-id-type="pmid">20430860</pub-id></element-citation></ref><ref id="pone.0023624-Smith2"><label>3</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Smith</surname><given-names>DR</given-names></name><name><surname>Lee</surname><given-names>RW</given-names></name></person-group>
+<year>2008</year>
+<article-title>Mitochondrial genome of the colorless green alga <italic>Polytomella capuana</italic>: a linear molecule with an unprecedented GC content.</article-title>
+<source>Mol Biol Evol</source>
+<volume>25</volume>
+<fpage>487</fpage>
+<lpage>496</lpage>
+<pub-id pub-id-type="pmid">18222946</pub-id></element-citation></ref><ref id="pone.0023624-Borza1"><label>4</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Borza</surname><given-names>T</given-names></name><name><surname>Redmond</surname><given-names>EK</given-names></name><name><surname>Laflamme</surname><given-names>M</given-names></name><name><surname>Lee</surname><given-names>RW</given-names></name></person-group>
+<year>2009</year>
+<article-title>Mitochondrial DNA in the <italic>Oogamochlamys</italic> clade (Chlorophyceae): high GC content and unique genome architecture for green algae.</article-title>
+<source>J Phycol</source>
+<volume>45</volume>
+<fpage>1323</fpage>
+<lpage>1334</lpage>
+<pub-id pub-id-type="pmid">27032590</pub-id></element-citation></ref><ref id="pone.0023624-Fricova1"><label>5</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Fricova</surname><given-names>D</given-names></name><name><surname>Valach</surname><given-names>M</given-names></name><name><surname>Farkas</surname><given-names>Z</given-names></name><name><surname>Pfeiffer</surname><given-names>I</given-names></name><name><surname>Kucsera</surname><given-names>J</given-names></name><etal/></person-group>
+<year>2010</year>
+<article-title>The mitochondrial genome of the pathogenic yeast <italic>Candida subhashii</italic>: GC-rich linear DNA with a protein covalently attached to the 5&#x02032; termini.</article-title>
+<source>Microbiology</source>
+<volume>156</volume>
+<fpage>2153</fpage>
+<lpage>2163</lpage>
+<pub-id pub-id-type="pmid">20395267</pub-id></element-citation></ref><ref id="pone.0023624-Clare1"><label>6</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Clare</surname><given-names>EL</given-names></name><name><surname>Kerr</surname><given-names>KCR</given-names></name><name><surname>von K&#x000f6;nigsl&#x000f6;w</surname><given-names>TE</given-names></name><name><surname>Wilson</surname><given-names>JJ</given-names></name><name><surname>Hebert</surname><given-names>PDN</given-names></name></person-group>
+<year>2008</year>
+<article-title>Diagnosing mitochondrial DNA diversity: applications of a sentinel gene approach.</article-title>
+<source>J Mol Evol</source>
+<volume>66</volume>
+<fpage>362</fpage>
+<lpage>367</lpage>
+<pub-id pub-id-type="pmid">18368433</pub-id></element-citation></ref><ref id="pone.0023624-Smith3"><label>7</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Smith</surname><given-names>DR</given-names></name></person-group>
+<year>2009</year>
+<article-title>Unparalleled GC content in the plastid DNA of <italic>Selaginella</italic>.</article-title>
+<source>Plant Mol Biol</source>
+<volume>71</volume>
+<fpage>627</fpage>
+<lpage>639</lpage>
+<pub-id pub-id-type="pmid">19774466</pub-id></element-citation></ref><ref id="pone.0023624-Hecht1"><label>8</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hecht</surname><given-names>J</given-names></name><name><surname>Grewe</surname><given-names>F</given-names></name><name><surname>Knoop</surname><given-names>V</given-names></name></person-group>
+<year>2011</year>
+<article-title>Extreme RNA editing in coding islands and abundant microsatellites in repeat sequences of <italic>Selaginella moellendorffii</italic> mitochondria: the root of frequent plant mtDNA recombination in early tracheophytes.</article-title>
+<source>Genome Biol Evol</source>
+<volume>3</volume>
+<fpage>344</fpage>
+<lpage>358</lpage>
+<pub-id pub-id-type="pmid">21436122</pub-id></element-citation></ref><ref id="pone.0023624-Tsuji1"><label>9</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tsuji</surname><given-names>S</given-names></name><name><surname>Ueda</surname><given-names>K</given-names></name><name><surname>Nishiyama</surname><given-names>T</given-names></name><name><surname>Hasebe</surname><given-names>M</given-names></name><name><surname>Yoshikawa</surname><given-names>S</given-names></name><etal/></person-group>
+<year>2007</year>
+<article-title>The chloroplast genome from a lycophyte (microphyllophyte), <italic>Selaginella uncinata</italic>, has a unique inversion, transpositions and many gene losses.</article-title>
+<source>J Plant Res</source>
+<volume>120</volume>
+<fpage>281</fpage>
+<lpage>290</lpage>
+<pub-id pub-id-type="pmid">17297557</pub-id></element-citation></ref><ref id="pone.0023624-Burger1"><label>10</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Burger</surname><given-names>G</given-names></name><name><surname>Lang</surname><given-names>BF</given-names></name></person-group>
+<year>2003</year>
+<article-title>Parallels in genome evolution in mitochondria and bacterial symbionts.</article-title>
+<source>IUBMB Life</source>
+<volume>55</volume>
+<fpage>205</fpage>
+<lpage>212</lpage>
+<pub-id pub-id-type="pmid">12880200</pub-id></element-citation></ref><ref id="pone.0023624-Kusumi1"><label>11</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kusumi</surname><given-names>J</given-names></name><name><surname>Tachida</surname><given-names>H</given-names></name></person-group>
+<year>2005</year>
+<article-title>Compositional properties of green-plant plastid genomes.</article-title>
+<source>J Mol Evol</source>
+<volume>60</volume>
+<fpage>417</fpage>
+<lpage>425</lpage>
+<pub-id pub-id-type="pmid">15883877</pub-id></element-citation></ref><ref id="pone.0023624-Karsten1"><label>12</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Karsten</surname><given-names>U</given-names></name><name><surname>Friedl</surname><given-names>T</given-names></name><name><surname>Schumann</surname><given-names>R</given-names></name><name><surname>Hoyer</surname><given-names>K</given-names></name><name><surname>Lembcke</surname><given-names>S</given-names></name></person-group>
+<year>2005</year>
+<article-title>Mycosporine-like amino acids and phylogenies in green algae: <italic>Prasiola</italic> and its relatives from the Trebouxiophyceae (Chlorophyta).</article-title>
+<source>J Phycol</source>
+<volume>41</volume>
+<fpage>557</fpage>
+<lpage>566</lpage>
+</element-citation></ref><ref id="pone.0023624-Prschold1"><label>13</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Pr&#x000f6;schold</surname><given-names>T</given-names></name><name><surname>Leliaert</surname><given-names>F</given-names></name></person-group>
+<year>2007</year>
+<article-title>Systematics of the green algae: conflict of classic and modern approaches.</article-title>
+<person-group person-group-type="editor"><name><surname>Brodie</surname><given-names>J</given-names></name><name><surname>Lewis</surname><given-names>J</given-names></name></person-group>
+<source>Unravelling the algae: the past, present, and future of algal systematics</source>
+<publisher-loc>London (UK)</publisher-loc>
+<publisher-name>Taylor and Francis</publisher-name>
+<fpage>123</fpage>
+<lpage>53</lpage>
+</element-citation></ref><ref id="pone.0023624-OKelly1"><label>14</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>O'Kelly</surname><given-names>CJ</given-names></name></person-group>
+<year>2007</year>
+<article-title>The origin and early evolution of green plants.</article-title>
+<person-group person-group-type="editor"><name><surname>Falkowski</surname><given-names>PG</given-names></name><name><surname>Knoll</surname><given-names>AH</given-names></name></person-group>
+<source>Evolution of primary producers in the sea</source>
+<publisher-loc>Burlington (MA)</publisher-loc>
+<publisher-name>Elsevier Academic Press</publisher-name>
+<fpage>287</fpage>
+<lpage>309</lpage>
+</element-citation></ref><ref id="pone.0023624-Cocquyt1"><label>15</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Cocquyt</surname><given-names>E</given-names></name><name><surname>Verbruggen</surname><given-names>H</given-names></name><name><surname>Leliaert</surname><given-names>F</given-names></name><name><surname>De Clerck</surname><given-names>O</given-names></name></person-group>
+<year>2010</year>
+<article-title>Evolution and cytological diversification of the green seaweeds (Ulvophyceae).</article-title>
+<source>Mol Biol Evol</source>
+<volume>27</volume>
+<fpage>2052</fpage>
+<lpage>2061</lpage>
+<pub-id pub-id-type="pmid">20368268</pub-id></element-citation></ref><ref id="pone.0023624-Pombert1"><label>16</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Pombert</surname><given-names>JF</given-names></name><name><surname>Otis</surname><given-names>C</given-names></name><name><surname>Lemieux</surname><given-names>C</given-names></name><name><surname>Turmel</surname><given-names>M</given-names></name></person-group>
+<year>2005</year>
+<article-title>The chloroplast genome sequence of the green alga <italic>Pseudendoclonium akinetum</italic> (Ulvophyceae) reveals unusual structural features and new insights into the branching order of chlorophyte lineages.</article-title>
+<source>Mol Biol Evol</source>
+<volume>22</volume>
+<fpage>1903</fpage>
+<lpage>1918</lpage>
+<pub-id pub-id-type="pmid">15930151</pub-id></element-citation></ref><ref id="pone.0023624-DeWever1"><label>17</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>De Wever</surname><given-names>A</given-names></name><name><surname>Leliaert</surname><given-names>F</given-names></name><name><surname>Verleyen</surname><given-names>E</given-names></name><name><surname>Vanormelingen</surname><given-names>P</given-names></name><name><surname>Van der Gucht</surname><given-names>K</given-names></name><etal/></person-group>
+<year>2009</year>
+<article-title>Hidden levels of phylodiversity in Antarctic green algae: further evidence for the existence of glacial refugia.</article-title>
+<source>Proc R Soc B Biol Sci</source>
+<volume>276</volume>
+<fpage>3591</fpage>
+<lpage>3599</lpage>
+</element-citation></ref><ref id="pone.0023624-Turmel1"><label>18</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Turmel</surname><given-names>M</given-names></name><name><surname>Otis</surname><given-names>C</given-names></name><name><surname>Lemieux</surname><given-names>C</given-names></name></person-group>
+<year>2009</year>
+<article-title>The chloroplast genomes of the green algae <italic>Pedinomonas minor</italic>, <italic>Parachlorella kessleri</italic>, and <italic>Oocystis solitatia</italic> reveal a shared ancestry between the Pedinomonadales and Chlorellales.</article-title>
+<source>Mol Biol Evol</source>
+<volume>26</volume>
+<fpage>2317</fpage>
+<lpage>2331</lpage>
+<pub-id pub-id-type="pmid">19578159</pub-id></element-citation></ref><ref id="pone.0023624-Pombert2"><label>19</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Pombert</surname><given-names>JF</given-names></name><name><surname>Otis</surname><given-names>C</given-names></name><name><surname>Lemieux</surname><given-names>C</given-names></name><name><surname>Turmel</surname><given-names>M</given-names></name></person-group>
+<year>2004</year>
+<article-title>The complete mitochondrial DNA sequence of the green alga <italic>Pseudendoclonium akinetum</italic> (Ulvophyceae) highlights distinctive evolutionary trends in the Chlorophyta and suggests a sister-group relationship between the Ulvophyceae and Chlorophyceae.</article-title>
+<source>Mol Biol Evol</source>
+<volume>21</volume>
+<fpage>922</fpage>
+<lpage>935</lpage>
+<pub-id pub-id-type="pmid">15014170</pub-id></element-citation></ref><ref id="pone.0023624-Pombert3"><label>20</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Pombert</surname><given-names>JF</given-names></name><name><surname>Keeling</surname><given-names>PJ</given-names></name></person-group>
+<year>2010</year>
+<article-title>The mitochondrial genome of the entomoparasitic green alga <italic>Helicosporidium</italic>.</article-title>
+<source>PLoS ONE</source>
+<volume>5</volume>
+<fpage>e8954</fpage>
+<pub-id pub-id-type="pmid">20126458</pub-id></element-citation></ref><ref id="pone.0023624-Turmel2"><label>21</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Turmel</surname><given-names>M</given-names></name><name><surname>Lemieux</surname><given-names>C</given-names></name><name><surname>Burger</surname><given-names>G</given-names></name><name><surname>Lang</surname><given-names>BF</given-names></name><name><surname>Otis</surname><given-names>C</given-names></name><etal/></person-group>
+<year>1999</year>
+<article-title>The complete mitochondrial DNA sequences of <italic>Nephroselmis olivacea</italic> and <italic>Pedinomonas minor</italic>. Two radically different evolutionary patterns within green algae.</article-title>
+<source>Plant Cell</source>
+<volume>11</volume>
+<fpage>1717</fpage>
+<lpage>1730</lpage>
+<pub-id pub-id-type="pmid">10488238</pub-id></element-citation></ref><ref id="pone.0023624-Melkonian1"><label>22</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Melkonian</surname><given-names>M</given-names></name></person-group>
+<year>1990</year>
+<article-title>Chlorophyte orders of uncertain affinities. Order Pedinomonadales.</article-title>
+<person-group person-group-type="editor"><name><surname>Margulis</surname><given-names>L</given-names></name><name><surname>Corliss</surname><given-names>JO</given-names></name><name><surname>Melkonian</surname><given-names>M</given-names></name><name><surname>Chapman</surname><given-names>DJ</given-names></name></person-group>
+<source>Handbook of protoctista. The structure, cultivation, habitats and life histories of the Eukaryotic microorganisms and their descendants exclusive of animals, plants and fungi</source>
+<publisher-loc>Boston (MA)</publisher-loc>
+<publisher-name>Jones and Bartlett Publishers</publisher-name>
+<fpage>649</fpage>
+<lpage>651</lpage>
+</element-citation></ref><ref id="pone.0023624-Moestrup1"><label>23</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Moestrup</surname><given-names>&#x000d8;</given-names></name></person-group>
+<year>1991</year>
+<article-title>Further studies of presumedly primitive green algae, including the description of <italic>Pedinophyceae</italic> class. nov. and <italic>Resultor</italic> gen. nov.</article-title>
+<source>J Phycol</source>
+<volume>27</volume>
+<fpage>119</fpage>
+<lpage>133</lpage>
+</element-citation></ref><ref id="pone.0023624-deKoning1"><label>24</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>de Koning</surname><given-names>AP</given-names></name><name><surname>Keeling</surname><given-names>PJ</given-names></name></person-group>
+<year>2006</year>
+<article-title>The complete plastid genome sequence of the parasitic green alga <italic>Helicosporidium</italic> sp. is highly reduced and structured.</article-title>
+<source>BMC Biol</source>
+<volume>4</volume>
+<fpage>12</fpage>
+<pub-id pub-id-type="pmid">16630350</pub-id></element-citation></ref><ref id="pone.0023624-Bendich1"><label>25</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bendich</surname><given-names>AJ</given-names></name></person-group>
+<year>2004</year>
+<article-title>Circular chloroplast chromosomes: the grand illusion.</article-title>
+<source>Plant Cell</source>
+<volume>16</volume>
+<fpage>1661</fpage>
+<lpage>1666</lpage>
+<pub-id pub-id-type="pmid">15235123</pub-id></element-citation></ref><ref id="pone.0023624-Bendich2"><label>26</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bendich</surname><given-names>AJ</given-names></name></person-group>
+<year>2007</year>
+<article-title>The size and form of chromosomes are constant in the nucleus, but highly variable in bacteria, mitochondria and chloroplasts.</article-title>
+<source>Bioessays</source>
+<volume>29</volume>
+<fpage>474</fpage>
+<lpage>483</lpage>
+<pub-id pub-id-type="pmid">17450598</pub-id></element-citation></ref><ref id="pone.0023624-deCambiaire1"><label>27</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>de Cambiaire</surname><given-names>JC</given-names></name><name><surname>Otis</surname><given-names>C</given-names></name><name><surname>Turmel</surname><given-names>M</given-names></name><name><surname>Lemieux</surname><given-names>C</given-names></name></person-group>
+<year>2007</year>
+<article-title>The chloroplast genome sequence of the green alga <italic>Leptosira terrestris</italic>: multiple losses of the inverted repeat and extensive genome rearrangements within the Trebouxiophyceae.</article-title>
+<source>BMC Genomics</source>
+<volume>8</volume>
+<fpage>213</fpage>
+<pub-id pub-id-type="pmid">17610731</pub-id></element-citation></ref><ref id="pone.0023624-Wolff1"><label>28</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wolff</surname><given-names>G</given-names></name><name><surname>Plante</surname><given-names>I</given-names></name><name><surname>Lang</surname><given-names>BF</given-names></name><name><surname>K&#x000fc;ck</surname><given-names>U</given-names></name><name><surname>Burger</surname><given-names>G</given-names></name></person-group>
+<year>1994</year>
+<article-title>Complete sequence of the mitochondrial DNA of the chlorophyte alga <italic>Prototheca wickerhamii</italic>. Gene content and genome organization.</article-title>
+<source>J Mol Biol</source>
+<volume>237</volume>
+<fpage>75</fpage>
+<lpage>86</lpage>
+<pub-id pub-id-type="pmid">8133522</pub-id></element-citation></ref><ref id="pone.0023624-Kroymann1"><label>29</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kroymann</surname><given-names>J</given-names></name><name><surname>Zetsche</surname><given-names>K</given-names></name></person-group>
+<year>1998</year>
+<article-title>The mitochondrial genome of <italic>Chlorogonium elongatum</italic> inferred from the complete sequence.</article-title>
+<source>J Mol Evol</source>
+<volume>47</volume>
+<fpage>431</fpage>
+<lpage>440</lpage>
+<pub-id pub-id-type="pmid">9767688</pub-id></element-citation></ref><ref id="pone.0023624-HolmHasen1"><label>30</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Holm-Hasen</surname><given-names>O</given-names></name></person-group>
+<year>1964</year>
+<article-title>Isolation and culture of terrestrial and fresh-water algae of Antarctica.</article-title>
+<source>Phycologia</source>
+<volume>4</volume>
+<fpage>43</fpage>
+<lpage>51</lpage>
+</element-citation></ref><ref id="pone.0023624-Lynch1"><label>31</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Lynch</surname></name></person-group>
+<year>2007</year>
+<source>The origins of genome architecture</source>
+<publisher-loc>Sunderland (MA)</publisher-loc>
+<publisher-name>Sinauer Associates</publisher-name>
+</element-citation></ref><ref id="pone.0023624-Kang1"><label>32</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kang</surname><given-names>D</given-names></name><name><surname>Hamasaki</surname><given-names>N</given-names></name></person-group>
+<year>2002</year>
+<article-title>Maintenance of mitochondrial DNA integrity: repair and degradation.</article-title>
+<source>Curr Genet</source>
+<volume>41</volume>
+<fpage>311</fpage>
+<lpage>322</lpage>
+<pub-id pub-id-type="pmid">12185497</pub-id></element-citation></ref><ref id="pone.0023624-Mason1"><label>33</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mason</surname><given-names>PA</given-names></name><name><surname>Matheson</surname><given-names>EC</given-names></name><name><surname>Hall</surname><given-names>AG</given-names></name><name><surname>Lightowlers</surname><given-names>RN</given-names></name></person-group>
+<year>2003</year>
+<article-title>Mismatch repair activity in mammalian mitochondria.</article-title>
+<source>Nucleic Acids Res</source>
+<volume>31</volume>
+<fpage>1052</fpage>
+<lpage>1058</lpage>
+<pub-id pub-id-type="pmid">12560503</pub-id></element-citation></ref><ref id="pone.0023624-Kimura1"><label>34</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Kimura</surname><given-names>M</given-names></name></person-group>
+<year>1983</year>
+<source>The neutral theory of molecular evolution</source>
+<publisher-loc>Cambridge (UK)</publisher-loc>
+<publisher-name>Cambridge University Press</publisher-name>
+</element-citation></ref><ref id="pone.0023624-Marais1"><label>35</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Marais</surname><given-names>G</given-names></name></person-group>
+<year>2003</year>
+<article-title>Biased gene conversion: implications for genome and sex evolution.</article-title>
+<source>Trends Genet</source>
+<volume>19</volume>
+<fpage>330</fpage>
+<lpage>338</lpage>
+<pub-id pub-id-type="pmid">12801726</pub-id></element-citation></ref><ref id="pone.0023624-Duret1"><label>36</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Duret</surname><given-names>L</given-names></name><name><surname>Galtier</surname><given-names>N</given-names></name></person-group>
+<year>2009</year>
+<article-title>Biased gene conversion and the evolution of mammalian genomic landscapes.</article-title>
+<source>Annu Rev Genomics Hum Genet</source>
+<volume>10</volume>
+<fpage>285</fpage>
+<lpage>311</lpage>
+<pub-id pub-id-type="pmid">19630562</pub-id></element-citation></ref><ref id="pone.0023624-Khakhlova1"><label>37</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Khakhlova</surname><given-names>O</given-names></name><name><surname>Bock</surname><given-names>R</given-names></name></person-group>
+<year>2006</year>
+<article-title>Elimination of deleterious mutations in plastid genomes by gene conversion.</article-title>
+<source>Plant J</source>
+<volume>46</volume>
+<fpage>85</fpage>
+<lpage>94</lpage>
+<pub-id pub-id-type="pmid">16553897</pub-id></element-citation></ref><ref id="pone.0023624-Spencer1"><label>38</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Spencer</surname><given-names>CC</given-names></name></person-group>
+<year>2006</year>
+<article-title>Human polymorphism around recombination hotspots.</article-title>
+<source>Biochem Soc Trans</source>
+<volume>34</volume>
+<fpage>535</fpage>
+<lpage>536</lpage>
+<pub-id pub-id-type="pmid">16856853</pub-id></element-citation></ref><ref id="pone.0023624-Millar1"><label>39</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Millar</surname><given-names>A</given-names></name><name><surname>Whelan</surname><given-names>J</given-names></name><name><surname>Small</surname><given-names>I</given-names></name></person-group>
+<year>2006</year>
+<article-title>Recent surprises in protein targeting to mitochondria and plastids.</article-title>
+<source>Curr Opin Plant Biol</source>
+<volume>9</volume>
+<fpage>610</fpage>
+<lpage>615</lpage>
+<pub-id pub-id-type="pmid">17008120</pub-id></element-citation></ref><ref id="pone.0023624-Carrie1"><label>40</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Carrie</surname><given-names>C</given-names></name><name><surname>Giraud</surname><given-names>E</given-names></name><name><surname>Whelan</surname><given-names>J</given-names></name></person-group>
+<year>2009</year>
+<article-title>Protein transport in organelles: Dual targeting of proteins to mitochondria and chloroplasts.</article-title>
+<source>FEBS J</source>
+<volume>276</volume>
+<fpage>1187</fpage>
+<lpage>1195</lpage>
+<pub-id pub-id-type="pmid">19187233</pub-id></element-citation></ref><ref id="pone.0023624-Lartillot1"><label>41</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lartillot</surname><given-names>N</given-names></name><name><surname>Philippe</surname><given-names>H</given-names></name></person-group>
+<year>2008</year>
+<article-title>Improvement of molecular phylogenetic inference and the phylogeny of Bilateria.</article-title>
+<source>Philos T Roy Soc B</source>
+<volume>363</volume>
+<fpage>1463</fpage>
+<lpage>1472</lpage>
+</element-citation></ref><ref id="pone.0023624-L1"><label>42</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>L&#x000fc;</surname><given-names>F</given-names></name><name><surname>X&#x000fc;</surname><given-names>W</given-names></name><name><surname>Tian</surname><given-names>C</given-names></name><name><surname>Wang</surname><given-names>G</given-names></name><name><surname>Niu</surname><given-names>J</given-names></name><etal/></person-group>
+<year>2011</year>
+<article-title>The Bryopsis hypnoides Plastid Genome: Multimeric Forms and Complete Nucleotide Sequence.</article-title>
+<source>PLoS ONE</source>
+<volume>6</volume>
+<fpage>e14663</fpage>
+<pub-id pub-id-type="pmid">21339817</pub-id></element-citation></ref><ref id="pone.0023624-Lockhorst1"><label>43</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lockhorst</surname><given-names>GM</given-names></name><name><surname>Rongen</surname><given-names>GPJ</given-names></name></person-group>
+<year>1994</year>
+<article-title>Comparative ultrastructural studies of division processes in terrestrial green alga <italic>Leptosira erumpens</italic> (Deason &#x00026; Bold) Lukesova confirm the ordinal status of the Pleurastrales.</article-title>
+<source>Cryptogamic Botany</source>
+<volume>4</volume>
+<fpage>394</fpage>
+<lpage>409</lpage>
+</element-citation></ref><ref id="pone.0023624-Watanabe1"><label>44</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Watanabe</surname><given-names>S</given-names></name><name><surname>Nakayama</surname><given-names>T</given-names></name></person-group>
+<year>2007</year>
+<article-title>Ultrastructure and phylogenetic relationships of the unicellular green algae <italic>Ignatius tetrasporus</italic> and <italic>Pseudocharacium americanum</italic> (Chlorophyta).</article-title>
+<source>Phycol Res</source>
+<volume>55</volume>
+<fpage>1</fpage>
+<lpage>16</lpage>
+</element-citation></ref><ref id="pone.0023624-Mattox1"><label>45</label><element-citation publication-type="book">
+<person-group person-group-type="author"><name><surname>Mattox</surname><given-names>KR</given-names></name><name><surname>Stewart</surname><given-names>KD</given-names></name></person-group>
+<year>1984</year>
+<article-title>Classification of the green algae: a concept based on comparative cytology.</article-title>
+<person-group person-group-type="editor"><name><surname>Irvine</surname><given-names>DEG</given-names></name><name><surname>John</surname><given-names>DM</given-names></name></person-group>
+<source>Systematics of green algae</source>
+<publisher-loc>London (UK)</publisher-loc>
+<publisher-name>Academic Press</publisher-name>
+<fpage>29</fpage>
+<lpage>72</lpage>
+</element-citation></ref><ref id="pone.0023624-Smith4"><label>46</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Smith</surname><given-names>DR</given-names></name><name><surname>Crosby</surname><given-names>K</given-names></name><name><surname>Lee</surname><given-names>RW</given-names></name></person-group>
+<year>2011</year>
+<article-title>Correlation between nuclear plastid DNA abundance and plastid number supports the limited transfer window hypothesis.</article-title>
+<source>Genome Biol Evol</source>
+<volume>3</volume>
+<fpage>365</fpage>
+<lpage>371</lpage>
+<pub-id pub-id-type="pmid">21292629</pub-id></element-citation></ref><ref id="pone.0023624-Lang1"><label>47</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lang</surname><given-names>BF</given-names></name><name><surname>Laforest</surname><given-names>MJ</given-names></name><name><surname>Burger</surname><given-names>G</given-names></name></person-group>
+<year>2007</year>
+<article-title>Mitochondrial introns: a critical view.</article-title>
+<source>Trends Genet</source>
+<volume>23</volume>
+<fpage>119</fpage>
+<lpage>125</lpage>
+<pub-id pub-id-type="pmid">17280737</pub-id></element-citation></ref><ref id="pone.0023624-Kurtz1"><label>48</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kurtz</surname><given-names>S</given-names></name><name><surname>Schleiermacher</surname><given-names>C</given-names></name></person-group>
+<year>1999</year>
+<article-title>REPuter: fast computation of maximal repeats in complete genomes.</article-title>
+<source>Bioinformatics</source>
+<volume>15</volume>
+<fpage>426</fpage>
+<lpage>427</lpage>
+<pub-id pub-id-type="pmid">10366664</pub-id></element-citation></ref><ref id="pone.0023624-Katoh1"><label>49</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Katoh</surname><given-names>K</given-names></name><name><surname>Kuma</surname><given-names>K</given-names></name><name><surname>Toh</surname><given-names>H</given-names></name><name><surname>Miyata</surname><given-names>T</given-names></name></person-group>
+<year>2005</year>
+<article-title>MAFFT version 5: improvement in accuracy of multiple sequence alignment.</article-title>
+<source>Nucleic Acids Res</source>
+<volume>33</volume>
+<fpage>511</fpage>
+<lpage>518</lpage>
+<pub-id pub-id-type="pmid">15661851</pub-id></element-citation></ref><ref id="pone.0023624-Castresana1"><label>50</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Castresana</surname><given-names>J</given-names></name></person-group>
+<year>2000</year>
+<article-title>Selection of conserved blocks from multiple alignments for their use in phylogenetic analysis.</article-title>
+<source>Mol Biol Evol</source>
+<volume>17</volume>
+<fpage>540</fpage>
+<lpage>552</lpage>
+<pub-id pub-id-type="pmid">10742046</pub-id></element-citation></ref><ref id="pone.0023624-Stamatakis1"><label>51</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Stamatakis</surname><given-names>A</given-names></name></person-group>
+<year>2006</year>
+<article-title>RAxML-VI-HPC: Maximum Likelihood-based Phylogenetic Analyses with Thousands of Taxa and Mixed Models.</article-title>
+<source>Bioinformatics</source>
+<volume>22</volume>
+<fpage>2688</fpage>
+<lpage>2690</lpage>
+<pub-id pub-id-type="pmid">16928733</pub-id></element-citation></ref><ref id="pone.0023624-Lartillot2"><label>52</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lartillot</surname><given-names>N</given-names></name><name><surname>Lepage</surname><given-names>T</given-names></name><name><surname>Blanquart</surname><given-names>S</given-names></name></person-group>
+<year>2009</year>
+<article-title>PhyloBayes 3: a Bayesian software package for phylogenetic reconstruction and molecular dating.</article-title>
+<source>Bioinformatics</source>
+<volume>25</volume>
+<fpage>2286</fpage>
+<lpage>2288</lpage>
+<pub-id pub-id-type="pmid">19535536</pub-id></element-citation></ref></ref-list></back></article>

@@ -1,0 +1,557 @@
+{
+  "id": [
+    "16085754"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "16085754"
+  ],
+  "pmcid": [
+    "PMC1183108"
+  ],
+  "doi": [
+    "10.1093/nar/gki757"
+  ],
+  "title": [
+    "The Rhodomonas salina mitochondrial genome: bacteria-like operons, compact gene arrangement and complex repeat region."
+  ],
+  "authorString": [
+    "Hauth AM, Maier UG, Lang BF, Burger G."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Hauth AM"
+          ],
+          "firstName": [
+            "Amy M"
+          ],
+          "lastName": [
+            "Hauth"
+          ],
+          "initials": [
+            "AM"
+          ]
+        },
+        {
+          "fullName": [
+            "Maier UG"
+          ],
+          "firstName": [
+            "Uwe G"
+          ],
+          "lastName": [
+            "Maier"
+          ],
+          "initials": [
+            "UG"
+          ]
+        },
+        {
+          "fullName": [
+            "Lang BF"
+          ],
+          "firstName": [
+            "B Franz"
+          ],
+          "lastName": [
+            "Lang"
+          ],
+          "initials": [
+            "BF"
+          ]
+        },
+        {
+          "fullName": [
+            "Burger G"
+          ],
+          "firstName": [
+            "Gertraud"
+          ],
+          "lastName": [
+            "Burger"
+          ],
+          "initials": [
+            "G"
+          ]
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "14"
+      ],
+      "volume": [
+        "33"
+      ],
+      "journalIssueId": [
+        "1252827"
+      ],
+      "dateOfPublication": [
+        "2005 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2005"
+      ],
+      "printPublicationDate": [
+        "2005-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Nucleic acids research"
+          ],
+          "ISOAbbreviation": [
+            "Nucleic Acids Res."
+          ],
+          "medlineAbbreviation": [
+            "Nucleic Acids Res"
+          ],
+          "NLMid": [
+            "0411011"
+          ],
+          "ISSN": [
+            "0305-1048"
+          ],
+          "ESSN": [
+            "1362-4962"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2005"
+  ],
+  "pageInfo": [
+    "4433-4442"
+  ],
+  "abstractText": [
+    "To gain insight into the mitochondrial genome structure and gene content of a putatively ancestral group of eukaryotes, the cryptophytes, we sequenced the complete mitochondrial DNA of Rhodomonas salina. The 48 063 bp circular-mapping molecule codes for 2 rRNAs, 27 tRNAs and 40 proteins including 23 components of oxidative phosphorylation, 15 ribosomal proteins and two subunits of tat translocase. One potential protein (ORF161) is without assigned function. Only two introns occur in the genome; both are present within cox1 belong to group II and contain RT open reading frames. Primitive genome features include bacteria-like rRNAs and tRNAs, ribosomal protein genes organized in large clusters resembling bacterial operons and the presence of the otherwise rare genes such as rps1 and tatA. The highly compact gene organization contrasts with the presence of a 4.7 kb long, repeat-containing intergenic region. Repeat motifs approximately 40-700 bp long occur up to 31 times, forming a complex repeat structure. Tandem repeats are the major arrangement but the region also includes a large, approximately 3 kb, inverted repeat and several potentially stable approximately 40-80 bp long hairpin structures. We provide evidence that the large repeat region is involved in replication and transcription initiation, predict a promoter motif that occurs in three locations and discuss two likely scenarios of how this highly structured repeat region might have evolved."
+  ],
+  "affiliation": [
+    "Département de Biochimie, Robert Cedergren Research Center for Bioinformatics and Genomics, Canadian Institute for Advanced Research, Université de Montréal 2900 Boulevard Edouard-Montpetit, Montréal, Québec, Canada H3T 1J4. amy.hauth@umontreal.ca"
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-Print"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Cryptophyta"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "DNA, Algal"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "DNA, Mitochondrial"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "DNA, Intergenic"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "RNA, Transfer"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "CH"
+                  ],
+                  "qualifierName": [
+                    "chemistry"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Chromosome Mapping"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Evolution, Molecular"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "DNA Replication"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Transcription, Genetic"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Base Sequence"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Repetitive Sequences, Nucleic Acid"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Operon"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Genes, rRNA"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Genome"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Molecular Sequence Data"
+          ]
+        }
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "RNA, Transfer"
+          ],
+          "registryNumber": [
+            "9014-25-9"
+          ]
+        },
+        {
+          "name": [
+            "DNA, Mitochondrial"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "DNA, Intergenic"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "DNA, Algal"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC1183108?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC1183108"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1093/nar/gki757"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "21"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "refseq"
+      ]
+    }
+  ],
+  "dateOfCompletion": [
+    "2005-08-15"
+  ],
+  "dateOfCreation": [
+    "2005-08-08"
+  ],
+  "dateOfRevision": [
+    "2009-11-18"
+  ],
+  "electronicPublicationDate": [
+    "2005-08-05"
+  ],
+  "firstPublicationDate": [
+    "2005-08-05"
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "id": [
+    "29540542"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "29540542"
+  ],
+  "pmcid": [
+    "PMC5908529"
+  ],
+  "doi": [
+    "10.1098/rsif.2017.0868"
+  ],
+  "title": [
+    "Plant-inspired pipettes."
+  ],
+  "authorString": [
+    "Nakamura K, Hisanaga T, Fujimoto K, Nakajima K, Wada H."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Nakamura K"
+          ],
+          "firstName": [
+            "Keigo"
+          ],
+          "lastName": [
+            "Nakamura"
+          ],
+          "initials": [
+            "K"
+          ],
+          "affiliation": [
+            "Department of Physics, Ritsumeikan University, Kusatsu, Shiga 525-8577, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Hisanaga T"
+          ],
+          "firstName": [
+            "Tetsuya"
+          ],
+          "lastName": [
+            "Hisanaga"
+          ],
+          "initials": [
+            "T"
+          ],
+          "affiliation": [
+            "Graduate School of Biological Sciences, Nara Institute of Science and Technology, Ikoma, Nara 630-0192, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Fujimoto K"
+          ],
+          "firstName": [
+            "Koichi"
+          ],
+          "lastName": [
+            "Fujimoto"
+          ],
+          "initials": [
+            "K"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-6473-7990",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Biological Sciences, Osaka University, Toyonaka, Osaka, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Nakajima K"
+          ],
+          "firstName": [
+            "Keiji"
+          ],
+          "lastName": [
+            "Nakajima"
+          ],
+          "initials": [
+            "K"
+          ],
+          "affiliation": [
+            "Graduate School of Biological Sciences, Nara Institute of Science and Technology, Ikoma, Nara 630-0192, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Wada H"
+          ],
+          "firstName": [
+            "Hirofumi"
+          ],
+          "lastName": [
+            "Wada"
+          ],
+          "initials": [
+            "H"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-1536-167X",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Physics, Ritsumeikan University, Kusatsu, Shiga 525-8577, Japan hwada@fc.ritsumei.ac.jp."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0001-6473-7990",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0003-1536-167X",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "140"
+      ],
+      "volume": [
+        "15"
+      ],
+      "journalIssueId": [
+        "2659450"
+      ],
+      "dateOfPublication": [
+        "2018 Mar"
+      ],
+      "monthOfPublication": [
+        "3"
+      ],
+      "yearOfPublication": [
+        "2018"
+      ],
+      "printPublicationDate": [
+        "2018-03-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Journal of the Royal Society, Interface"
+          ],
+          "ISOAbbreviation": [
+            "J R Soc Interface"
+          ],
+          "medlineAbbreviation": [
+            "J R Soc Interface"
+          ],
+          "NLMid": [
+            "101217269"
+          ],
+          "ISSN": [
+            "1742-5689"
+          ],
+          "ESSN": [
+            "1742-5662"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2018"
+  ],
+  "abstractText": [
+    "The female sex organ of the liverwort (Marchantia polymorpha) has a characteristic parasol-like form highly suitable for collecting water droplets containing sperm for fertilization. Motivated by this observation and using three-dimensional printing techniques, we develop a parasol-like rigid object that can grab, transport and release water droplets of a maximum size of about 1 cm. By combining experiments and scaling theory, we quantify the object's fundamental wetting and fluid dynamical properties. We construct a stability phase diagram and suggest that it is largely insensitive to properties of liquids such as surface tension and viscosity. A simple scaling argument is developed to explain the phase boundary. Our study provides basic design rules of a simple pipette-like device with bubble-free capture and drop of liquids, which can be used in laboratory settings and has applications within soft robotics. Through systematic experimental investigations, we suggest the optimal design criteria of the liverwort-inspired object to achieve maximal pipetting performance. We also provide, based on our scalable model experiments, a biological implication for the mechanistic advantage of this structure in liverwort reproduction."
+  ],
+  "affiliation": [
+    "Department of Physics, Ritsumeikan University, Kusatsu, Shiga 525-8577, Japan."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Liverwort",
+        "Capillarity",
+        "Free Surface Flow",
+        "Water-grabbing"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5908529?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5908529"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1098/rsif.2017.0868"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "0"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "doi",
+        "pdb"
+      ]
+    }
+  ],
+  "dateOfCreation": [
+    "2018-03-16"
+  ],
+  "dateOfRevision": [
+    "2018-04-22"
+  ],
+  "firstPublicationDate": [
+    "2018-03-01"
+  ]
+}

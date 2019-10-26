@@ -1,0 +1,381 @@
+{
+  "id": [
+    "29074957"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "29074957"
+  ],
+  "pmcid": [
+    "PMC5658414"
+  ],
+  "doi": [
+    "10.1038/s41598-017-14286-z"
+  ],
+  "title": [
+    "Keeping it complicated: Mitochondrial genome plasticity across diplonemids."
+  ],
+  "authorString": [
+    "Valach M, Moreira S, Hoffmann S, Stadler PF, Burger G."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Valach M"
+          ],
+          "firstName": [
+            "Matus"
+          ],
+          "lastName": [
+            "Valach"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-8689-0080",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of biochemistry and Robert-Cedergren Centre for Bioinformatics and Genomics, Université de Montréal, 2900 Edouard-Montpetit, Montreal, H3T 1J4, QC, Canada. matus.a.valach@gmail.com."
+          ]
+        },
+        {
+          "fullName": [
+            "Moreira S"
+          ],
+          "firstName": [
+            "Sandrine"
+          ],
+          "lastName": [
+            "Moreira"
+          ],
+          "initials": [
+            "S"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-4580-3566",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Biochemistry and Molecular Biophysics, Columbia University, Hammer Health Science Center, 701 W 168th St, New York, NY, 10031, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Hoffmann S"
+          ],
+          "firstName": [
+            "Steve"
+          ],
+          "lastName": [
+            "Hoffmann"
+          ],
+          "initials": [
+            "S"
+          ],
+          "affiliation": [
+            "Leipzig University, LIFE - Leipzig Research Center for Civilization Diseases, Haertelstrasse 16-18, Leipzig, D-04107, Germany."
+          ]
+        },
+        {
+          "fullName": [
+            "Stadler PF"
+          ],
+          "firstName": [
+            "Peter F"
+          ],
+          "lastName": [
+            "Stadler"
+          ],
+          "initials": [
+            "PF"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-5016-5191",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Santa Fe Institute, 1399 Hyde Park Road, Santa Fe, NM, 87501, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Burger G"
+          ],
+          "firstName": [
+            "Gertraud"
+          ],
+          "lastName": [
+            "Burger"
+          ],
+          "initials": [
+            "G"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-8679-8812",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of biochemistry and Robert-Cedergren Centre for Bioinformatics and Genomics, Université de Montréal, 2900 Edouard-Montpetit, Montreal, H3T 1J4, QC, Canada. gertraud.burger@umontreal.ca."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-4580-3566",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-8679-8812",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-5016-5191",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-8689-0080",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "1"
+      ],
+      "volume": [
+        "7"
+      ],
+      "journalIssueId": [
+        "2603102"
+      ],
+      "dateOfPublication": [
+        "2017 Oct"
+      ],
+      "monthOfPublication": [
+        "10"
+      ],
+      "yearOfPublication": [
+        "2017"
+      ],
+      "printPublicationDate": [
+        "2017-10-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Scientific reports"
+          ],
+          "ISOAbbreviation": [
+            "Sci Rep"
+          ],
+          "medlineAbbreviation": [
+            "Sci Rep"
+          ],
+          "NLMid": [
+            "101563288"
+          ],
+          "ISSN": [
+            "2045-2322"
+          ],
+          "ESSN": [
+            "2045-2322"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2017"
+  ],
+  "pageInfo": [
+    "14166"
+  ],
+  "abstractText": [
+    "Chromosome rearrangements are important drivers in genome and gene evolution, with implications ranging from speciation to development to disease. In the flagellate Diplonema papillatum (Euglenozoa), mitochondrial genome rearrangements have resulted in nearly hundred chromosomes and a systematic dispersal of gene fragments across the multipartite genome. Maturation into functional RNAs involves separate transcription of gene pieces, joining of precursor RNAs via trans-splicing, and RNA editing by substitution and uridine additions both reconstituting crucial coding sequence. How widespread these unusual features are across diplonemids is unclear. We have analyzed the mitochondrial genomes and transcriptomes of four species from the Diplonema/Rhynchopus clade, revealing a considerable genomic plasticity. Although gene breakpoints, and thus the total number of gene pieces (~80), are essentially conserved across this group, the number of distinct chromosomes varies by a factor of two, with certain chromosomes combining up to eight unrelated gene fragments. Several internal protein-coding gene pieces overlap substantially, resulting, for example, in a stretch of 22 identical amino acids in cytochrome c oxidase subunit 1 and NADH dehydrogenase subunit 5. Finally, the variation of post-transcriptional editing patterns across diplonemids indicates compensation of two adverse trends: rapid sequence evolution and loss of genetic information through unequal chromosome segregation."
+  ],
+  "affiliation": [
+    "Department of biochemistry and Robert-Cedergren Centre for Bioinformatics and Genomics, Université de Montréal, 2900 Edouard-Montpetit, Montreal, H3T 1J4, QC, Canada. matus.a.valach@gmail.com."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5658414?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5658414"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1038/s41598-017-14286-z"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "2"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "Y"
+  ],
+  "dbCrossReferenceList": [
+    {
+      "dbName": [
+        "EMBL",
+        "UNIPROT"
+      ]
+    }
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "bioproject"
+      ]
+    }
+  ],
+  "dateOfCreation": [
+    "2017-10-28"
+  ],
+  "dateOfRevision": [
+    "2017-12-19"
+  ],
+  "electronicPublicationDate": [
+    "2017-10-26"
+  ],
+  "firstPublicationDate": [
+    "2017-10-26"
+  ]
+}

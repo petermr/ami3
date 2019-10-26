@@ -1,0 +1,743 @@
+{
+  "id": [
+    "28467665"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "28467665"
+  ],
+  "pmcid": [
+    "PMC5518222"
+  ],
+  "doi": [
+    "10.1111/nph.14584"
+  ],
+  "title": [
+    "Bryophyte gas-exchange dynamics along varying hydration status reveal a significant carbonyl sulphide (COS) sink in the dark and COS source in the light."
+  ],
+  "authorString": [
+    "Gimeno TE, Ogée J, Royles J, Gibon Y, West JB, Burlett R, Jones SP, Sauze J, Wohl S, Benard C, Genty B, Wingate L."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Gimeno TE"
+          ],
+          "firstName": [
+            "Teresa E"
+          ],
+          "lastName": [
+            "Gimeno"
+          ],
+          "initials": [
+            "TE"
+          ],
+          "affiliation": [
+            "ISPA, Bordeaux Science Agro, INRA, Villenave d'Ornon, 33140, France."
+          ]
+        },
+        {
+          "fullName": [
+            "Ogée J"
+          ],
+          "firstName": [
+            "Jérôme"
+          ],
+          "lastName": [
+            "Ogée"
+          ],
+          "initials": [
+            "J"
+          ],
+          "affiliation": [
+            "ISPA, Bordeaux Science Agro, INRA, Villenave d'Ornon, 33140, France."
+          ]
+        },
+        {
+          "fullName": [
+            "Royles J"
+          ],
+          "firstName": [
+            "Jessica"
+          ],
+          "lastName": [
+            "Royles"
+          ],
+          "initials": [
+            "J"
+          ],
+          "affiliation": [
+            "Department Plant Sciences, University of Cambridge, Cambridge, CB2 3EA, UK."
+          ]
+        },
+        {
+          "fullName": [
+            "Gibon Y"
+          ],
+          "firstName": [
+            "Yves"
+          ],
+          "lastName": [
+            "Gibon"
+          ],
+          "initials": [
+            "Y"
+          ],
+          "affiliation": [
+            "UMR BFP 1332, Plateforme Métabolome du Centre de Génomique Fonctionnelle Bordeaux, PHENOME INRA, University of Bordeaux, Villenave d'Ornon, 33140, France."
+          ]
+        },
+        {
+          "fullName": [
+            "West JB"
+          ],
+          "firstName": [
+            "Jason B"
+          ],
+          "lastName": [
+            "West"
+          ],
+          "initials": [
+            "JB"
+          ],
+          "affiliation": [
+            "Department of Ecosystem Science & Management, Texas A&M University, College Station, TX, 77845, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Burlett R"
+          ],
+          "firstName": [
+            "Régis"
+          ],
+          "lastName": [
+            "Burlett"
+          ],
+          "initials": [
+            "R"
+          ],
+          "affiliation": [
+            "UMR BIOGECO, INRA, University of Bordeaux, Talence, 33450, France."
+          ]
+        },
+        {
+          "fullName": [
+            "Jones SP"
+          ],
+          "firstName": [
+            "Sam P"
+          ],
+          "lastName": [
+            "Jones"
+          ],
+          "initials": [
+            "SP"
+          ],
+          "affiliation": [
+            "ISPA, Bordeaux Science Agro, INRA, Villenave d'Ornon, 33140, France."
+          ]
+        },
+        {
+          "fullName": [
+            "Sauze J"
+          ],
+          "firstName": [
+            "Joana"
+          ],
+          "lastName": [
+            "Sauze"
+          ],
+          "initials": [
+            "J"
+          ],
+          "affiliation": [
+            "ISPA, Bordeaux Science Agro, INRA, Villenave d'Ornon, 33140, France."
+          ]
+        },
+        {
+          "fullName": [
+            "Wohl S"
+          ],
+          "firstName": [
+            "Steven"
+          ],
+          "lastName": [
+            "Wohl"
+          ],
+          "initials": [
+            "S"
+          ],
+          "affiliation": [
+            "ISPA, Bordeaux Science Agro, INRA, Villenave d'Ornon, 33140, France."
+          ]
+        },
+        {
+          "fullName": [
+            "Benard C"
+          ],
+          "firstName": [
+            "Camille"
+          ],
+          "lastName": [
+            "Benard"
+          ],
+          "initials": [
+            "C"
+          ],
+          "affiliation": [
+            "UMR BFP 1332, Plateforme Métabolome du Centre de Génomique Fonctionnelle Bordeaux, PHENOME INRA, University of Bordeaux, Villenave d'Ornon, 33140, France."
+          ]
+        },
+        {
+          "fullName": [
+            "Genty B"
+          ],
+          "firstName": [
+            "Bernard"
+          ],
+          "lastName": [
+            "Genty"
+          ],
+          "initials": [
+            "B"
+          ],
+          "affiliation": [
+            "CNRS/CEA/Aix-Marseille University, UMR 7265 BVME, Saint-Paul-lez-Durance, France."
+          ]
+        },
+        {
+          "fullName": [
+            "Wingate L"
+          ],
+          "firstName": [
+            "Lisa"
+          ],
+          "lastName": [
+            "Wingate"
+          ],
+          "initials": [
+            "L"
+          ],
+          "affiliation": [
+            "ISPA, Bordeaux Science Agro, INRA, Villenave d'Ornon, 33140, France."
+          ]
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "3"
+      ],
+      "volume": [
+        "215"
+      ],
+      "journalIssueId": [
+        "2576150"
+      ],
+      "dateOfPublication": [
+        "2017 Aug"
+      ],
+      "monthOfPublication": [
+        "8"
+      ],
+      "yearOfPublication": [
+        "2017"
+      ],
+      "printPublicationDate": [
+        "2017-08-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "The New phytologist"
+          ],
+          "ISOAbbreviation": [
+            "New Phytol."
+          ],
+          "medlineAbbreviation": [
+            "New Phytol"
+          ],
+          "NLMid": [
+            "9882884"
+          ],
+          "ISSN": [
+            "1469-8137"
+          ],
+          "ESSN": [
+            "1469-8137"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2017"
+  ],
+  "pageInfo": [
+    "965-976"
+  ],
+  "abstractText": [
+    "Carbonyl sulphide (COS) is a potential tracer of gross primary productivity (GPP), assuming a unidirectional COS flux into the vegetation that scales with GPP. However, carbonic anhydrase (CA), the enzyme that hydrolyses COS, is expected to be light independent, and thus plants without stomata should continue to take up COS in the dark. We measured net CO2 (AC ) and COS (AS ) uptake rates from two astomatous bryophytes at different relative water contents (RWCs), COS concentrations, temperatures and light intensities. We found large AS in the dark, indicating that CA activity continues without photosynthesis. More surprisingly, we found a nonzero COS compensation point in light and dark conditions, indicating a temperature-driven COS source with a Q10 (fractional change for a 10°C temperature increase) of 3.7. This resulted in greater AS in the dark than in the light at similar RWC. The processes underlying such COS emissions remain unknown. Our results suggest that ecosystems dominated by bryophytes might be strong atmospheric sinks of COS at night and weaker sinks or even sources of COS during daytime. Biotic COS production in bryophytes could result from symbiotic fungal and bacterial partners that could also be found on vascular plants."
+  ],
+  "affiliation": [
+    "ISPA, Bordeaux Science Agro, INRA, Villenave d'Ornon, 33140, France."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Print-Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Bryophyta"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "RE"
+                  ],
+                  "qualifierName": [
+                    "radiation effects"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Plant Leaves"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                },
+                {
+                  "abbreviation": [
+                    "RE"
+                  ],
+                  "qualifierName": [
+                    "radiation effects"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Gases"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Water"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Sulfur Oxides"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Carbohydrates"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "AN"
+                  ],
+                  "qualifierName": [
+                    "analysis"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Plant Proteins"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Desiccation"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Temperature"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Light"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Darkness"
+          ]
+        }
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Carbohydrates",
+        "Moss",
+        "Respiration",
+        "Desiccation",
+        "Protein",
+        "Liverwort",
+        "Marchantia polymorpha",
+        "Scleropodium Purum"
+      ]
+    }
+  ],
+  "chemicalList": [
+    {
+      "chemical": [
+        {
+          "name": [
+            "Carbohydrates"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Plant Proteins"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Gases"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "Sulfur Oxides"
+          ],
+          "registryNumber": [
+            "0"
+          ]
+        },
+        {
+          "name": [
+            "carbonyl sulfide"
+          ],
+          "registryNumber": [
+            "871UI0ET21"
+          ]
+        },
+        {
+          "name": [
+            "Water"
+          ],
+          "registryNumber": [
+            "059QF0KO0R"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5518222?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5518222"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1111/nph.14584"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "3"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2018-04-09"
+  ],
+  "dateOfCreation": [
+    "2017-05-04"
+  ],
+  "dateOfRevision": [
+    "2018-04-09"
+  ],
+  "electronicPublicationDate": [
+    "2017-05-03"
+  ],
+  "firstPublicationDate": [
+    "2017-05-03"
+  ]
+}

@@ -1,0 +1,565 @@
+{
+  "id": [
+    "19503618"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "19503618"
+  ],
+  "pmcid": [
+    "PMC2685480"
+  ],
+  "doi": [
+    "10.1371/journal.pone.0005764"
+  ],
+  "title": [
+    "The impact of outgroup choice and missing data on major seed plant phylogenetics using genome-wide EST data."
+  ],
+  "authorString": [
+    "de la Torre-Bárcena JE, Kolokotronis SO, Lee EK, Stevenson DW, Brenner ED, Katari MS, Coruzzi GM, DeSalle R."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "de la Torre-Bárcena JE"
+          ],
+          "firstName": [
+            "Jose Eduardo"
+          ],
+          "lastName": [
+            "de la Torre-Bárcena"
+          ],
+          "initials": [
+            "JE"
+          ],
+          "affiliation": [
+            "Center for Genomics and Systems Biology, Department of Biology, New York University, New York, New York, United States of America."
+          ]
+        },
+        {
+          "fullName": [
+            "Kolokotronis SO"
+          ],
+          "firstName": [
+            "Sergios-Orestis"
+          ],
+          "lastName": [
+            "Kolokotronis"
+          ],
+          "initials": [
+            "SO"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-3309-8465",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Lee EK"
+          ],
+          "firstName": [
+            "Ernest K"
+          ],
+          "lastName": [
+            "Lee"
+          ],
+          "initials": [
+            "EK"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-0974-7763",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ]
+        },
+        {
+          "fullName": [
+            "Stevenson DW"
+          ],
+          "firstName": [
+            "Dennis Wm"
+          ],
+          "lastName": [
+            "Stevenson"
+          ],
+          "initials": [
+            "DW"
+          ]
+        },
+        {
+          "fullName": [
+            "Brenner ED"
+          ],
+          "firstName": [
+            "Eric D"
+          ],
+          "lastName": [
+            "Brenner"
+          ],
+          "initials": [
+            "ED"
+          ]
+        },
+        {
+          "fullName": [
+            "Katari MS"
+          ],
+          "firstName": [
+            "Manpreet S"
+          ],
+          "lastName": [
+            "Katari"
+          ],
+          "initials": [
+            "MS"
+          ]
+        },
+        {
+          "fullName": [
+            "Coruzzi GM"
+          ],
+          "firstName": [
+            "Gloria M"
+          ],
+          "lastName": [
+            "Coruzzi"
+          ],
+          "initials": [
+            "GM"
+          ]
+        },
+        {
+          "fullName": [
+            "DeSalle R"
+          ],
+          "firstName": [
+            "Rob"
+          ],
+          "lastName": [
+            "DeSalle"
+          ],
+          "initials": [
+            "R"
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0003-3309-8465",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-0974-7763",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "6"
+      ],
+      "volume": [
+        "4"
+      ],
+      "journalIssueId": [
+        "2467259"
+      ],
+      "dateOfPublication": [
+        "2009 Jun"
+      ],
+      "monthOfPublication": [
+        "6"
+      ],
+      "yearOfPublication": [
+        "2009"
+      ],
+      "printPublicationDate": [
+        "2009-06-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "PloS one"
+          ],
+          "ISOAbbreviation": [
+            "PLoS ONE"
+          ],
+          "medlineAbbreviation": [
+            "PLoS One"
+          ],
+          "NLMid": [
+            "101285081"
+          ],
+          "ISSN": [
+            "1932-6203"
+          ],
+          "ESSN": [
+            "1932-6203"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2009"
+  ],
+  "pageInfo": [
+    "e5764"
+  ],
+  "abstractText": [
+    "Genome level analyses have enhanced our view of phylogenetics in many areas of the tree of life. With the production of whole genome DNA sequences of hundreds of organisms and large-scale EST databases a large number of candidate genes for inclusion into phylogenetic analysis have become available. In this work, we exploit the burgeoning genomic data being generated for plant genomes to address one of the more important plant phylogenetic questions concerning the hierarchical relationships of the several major seed plant lineages (angiosperms, Cycadales, Gingkoales, Gnetales, and Coniferales), which continues to be a work in progress, despite numerous studies using single, few or several genes and morphology datasets. Although most recent studies support the notion that gymnosperms and angiosperms are monophyletic and sister groups, they differ on the topological arrangements within each major group.We exploited the EST database to construct a supermatrix of DNA sequences (over 1,200 concatenated orthologous gene partitions for 17 taxa) to examine non-flowering seed plant relationships. This analysis employed programs that offer rapid and robust orthology determination of novel, short sequences from plant ESTs based on reference seed plant genomes. Our phylogenetic analysis retrieved an unbiased (with respect to gene choice), well-resolved and highly supported phylogenetic hypothesis that was robust to various outgroup combinations.We evaluated character support and the relative contribution of numerous variables (e.g. gene number, missing data, partitioning schemes, taxon sampling and outgroup choice) on tree topology, stability and support metrics. Our results indicate that while missing characters and order of addition of genes to an analysis do not influence branch support, inadequate taxon sampling and limited choice of outgroup(s) can lead to spurious inference of phylogeny when dealing with phylogenomic scale data sets. As expected, support and resolution increases significantly as more informative characters are added, until reaching a threshold, beyond which support metrics stabilize, and the effect of adding conflicting characters is minimized."
+  ],
+  "affiliation": [
+    "Center for Genomics and Systems Biology, Department of Biology, New York University, New York, New York, United States of America."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ]
+    }
+  ],
+  "meshHeadingList": [
+    {
+      "meshHeading": [
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Plants"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Arabidopsis"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "GE"
+                  ],
+                  "qualifierName": [
+                    "genetics"
+                  ],
+                  "majorTopic_YN": [
+                    "Y"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Seeds"
+          ],
+          "meshQualifierList": [
+            {
+              "meshQualifier": [
+                {
+                  "abbreviation": [
+                    "ME"
+                  ],
+                  "qualifierName": [
+                    "metabolism"
+                  ],
+                  "majorTopic_YN": [
+                    "N"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Data Interpretation, Statistical"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Likelihood Functions"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Sequence Analysis, DNA"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Genomics"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Phylogeny"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Genes, Plant"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Genome, Plant"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "Y"
+          ],
+          "descriptorName": [
+            "Expressed Sequence Tags"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Models, Genetic"
+          ]
+        },
+        {
+          "majorTopic_YN": [
+            "N"
+          ],
+          "descriptorName": [
+            "Databases, Genetic"
+          ]
+        }
+      ]
+    }
+  ],
+  "subsetList": [
+    {
+      "subset": [
+        {
+          "code": [
+            "IM"
+          ],
+          "name": [
+            "Index Medicus"
+          ]
+        }
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC2685480?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC2685480"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/19503618/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/19503618/pdf/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1371/journal.pone.0005764"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "Y"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "19"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2009-11-17"
+  ],
+  "dateOfCreation": [
+    "2009-06-09"
+  ],
+  "dateOfRevision": [
+    "2018-03-10"
+  ],
+  "electronicPublicationDate": [
+    "2009-06-02"
+  ],
+  "firstPublicationDate": [
+    "2009-06-02"
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "id": [
+    "29868043"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "29868043"
+  ],
+  "pmcid": [
+    "PMC5954354"
+  ],
+  "doi": [
+    "10.3389/fpls.2018.00537"
+  ],
+  "title": [
+    "Identification of Putative Precursor Genes for the Biosynthesis of Cannabinoid-Like Compound in Radula marginata."
+  ],
+  "authorString": [
+    "Hussain T, Plunkett B, Ejaz M, Espley RV, Kayser O."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Hussain T"
+          ],
+          "firstName": [
+            "Tajammul"
+          ],
+          "lastName": [
+            "Hussain"
+          ],
+          "initials": [
+            "T"
+          ],
+          "affiliation": [
+            "Department of Technical Biochemistry, TU Dortmund University, Dortmund, Germany."
+          ]
+        },
+        {
+          "fullName": [
+            "Plunkett B"
+          ],
+          "firstName": [
+            "Blue"
+          ],
+          "lastName": [
+            "Plunkett"
+          ],
+          "initials": [
+            "B"
+          ],
+          "affiliation": [
+            "The New Zealand Institute for Plant & Food Research Limited (PFR), Auckland, New Zealand."
+          ]
+        },
+        {
+          "fullName": [
+            "Ejaz M"
+          ],
+          "firstName": [
+            "Mahwish"
+          ],
+          "lastName": [
+            "Ejaz"
+          ],
+          "initials": [
+            "M"
+          ],
+          "affiliation": [
+            "Max Planck Institute for Plant Breeding Research, Cologne, Germany."
+          ]
+        },
+        {
+          "fullName": [
+            "Espley RV"
+          ],
+          "firstName": [
+            "Richard V"
+          ],
+          "lastName": [
+            "Espley"
+          ],
+          "initials": [
+            "RV"
+          ],
+          "affiliation": [
+            "The New Zealand Institute for Plant & Food Research Limited (PFR), Auckland, New Zealand."
+          ]
+        },
+        {
+          "fullName": [
+            "Kayser O"
+          ],
+          "firstName": [
+            "Oliver"
+          ],
+          "lastName": [
+            "Kayser"
+          ],
+          "initials": [
+            "O"
+          ],
+          "affiliation": [
+            "Department of Technical Biochemistry, TU Dortmund University, Dortmund, Germany."
+          ]
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "9"
+      ],
+      "journalIssueId": [
+        "2644150"
+      ],
+      "dateOfPublication": [
+        "2018 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2018"
+      ],
+      "printPublicationDate": [
+        "2018-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Frontiers in plant science"
+          ],
+          "ISOAbbreviation": [
+            "Front Plant Sci"
+          ],
+          "medlineAbbreviation": [
+            "Front Plant Sci"
+          ],
+          "NLMid": [
+            "101568200"
+          ],
+          "ISSN": [
+            "1664-462X"
+          ],
+          "ESSN": [
+            "1664-462X"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2018"
+  ],
+  "pageInfo": [
+    "537"
+  ],
+  "abstractText": [
+    "The liverwort Radula marginata belongs to the bryophyte division of land plants and is a prospective alternate source of cannabinoid-like compounds. However, mechanistic insights into the molecular pathways directing the synthesis of these cannabinoid-like compounds have been hindered due to the lack of genetic information. This prompted us to do deep sequencing, de novo assembly and annotation of R. marginata transcriptome, which resulted in the identification and validation of the genes for cannabinoid biosynthetic pathway. In total, we have identified 11,421 putative genes encoding 1,554 enzymes from 145 biosynthetic pathways. Interestingly, we have identified all the upstream genes of the central precursor of cannabinoid biosynthesis, cannabigerolic acid (CBGA), including its two first intermediates, stilbene acid (SA) and geranyl diphosphate (GPP). Expression of all these genes was validated using quantitative real-time PCR. We have characterized the protein structure of stilbene synthase (STS), which is considered as a homolog of olivetolic acid in R. marginata. Moreover, the metabolomics approach enabled us to identify CBGA-analogous compounds using electrospray ionization mass spectrometry (ESI-MS/MS) and gas chromatography mass spectrometry (GC-MS). Transcriptomic analysis revealed 1085 transcription factors (TF) from 39 families. Comparative analysis showed that six TF families have been uniquely predicted in R. marginata. In addition, the bioinformatics analysis predicted a large number of simple sequence repeats (SSRs) and non-coding RNAs (ncRNAs). Our results collectively provide mechanistic insights into the putative precursor genes for the biosynthesis of cannabinoid-like compounds and a novel transcriptomic resource for R. marginata. The large-scale transcriptomic resource generated in this study would further serve as a reference transcriptome to explore the Radulaceae family."
+  ],
+  "affiliation": [
+    "Department of Technical Biochemistry, TU Dortmund University, Dortmund, Germany."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-eCollection"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Radula",
+        "Plant Cannabinoids",
+        "Radula Marginata",
+        "De Novo Transcriptomic Assembly",
+        "Biosynthetic Metabolomics Pathways",
+        "A Prospective Alternate To Cannabinoids"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5954354?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5954354"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.3389/fpls.2018.00537"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "0"
+  ],
+  "hasReferences": [
+    "N"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "bioproject",
+        "pdb"
+      ]
+    }
+  ],
+  "dateOfCreation": [
+    "2018-06-06"
+  ],
+  "dateOfRevision": [
+    "2018-06-08"
+  ],
+  "electronicPublicationDate": [
+    "2018-05-09"
+  ],
+  "firstPublicationDate": [
+    "2018-05-09"
+  ]
+}

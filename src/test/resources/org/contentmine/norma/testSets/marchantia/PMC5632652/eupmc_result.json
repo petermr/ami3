@@ -1,0 +1,291 @@
+{
+  "id": [
+    "29046682"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "29046682"
+  ],
+  "pmcid": [
+    "PMC5632652"
+  ],
+  "doi": [
+    "10.3389/fpls.2017.01704"
+  ],
+  "title": [
+    "Cyclic Nucleotide Monophosphates and Their Cyclases in Plant Signaling."
+  ],
+  "authorString": [
+    "Gehring C, Turek IS."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Gehring C"
+          ],
+          "firstName": [
+            "Chris"
+          ],
+          "lastName": [
+            "Gehring"
+          ],
+          "initials": [
+            "C"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-4355-4591",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Chemistry, Biology and Biotechnology, University of Perugia, Perugia, Italy."
+          ]
+        },
+        {
+          "fullName": [
+            "Turek IS"
+          ],
+          "firstName": [
+            "Ilona S"
+          ],
+          "lastName": [
+            "Turek"
+          ],
+          "initials": [
+            "IS"
+          ],
+          "affiliation": [
+            "Leibniz Institute of Plant Biochemistry, Halle, Germany."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0003-4355-4591",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "8"
+      ],
+      "journalIssueId": [
+        "2550591"
+      ],
+      "dateOfPublication": [
+        "2017 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2017"
+      ],
+      "printPublicationDate": [
+        "2017-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Frontiers in Plant Science"
+          ],
+          "ISOAbbreviation": [
+            "Front Plant Sci"
+          ],
+          "medlineAbbreviation": [
+            "Front Plant Sci"
+          ],
+          "NLMid": [
+            "101568200"
+          ],
+          "ISSN": [
+            "1664-462X"
+          ],
+          "ESSN": [
+            "1664-462X"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2017"
+  ],
+  "pageInfo": [
+    "1704"
+  ],
+  "abstractText": [
+    "The cyclic nucleotide monophosphates (cNMPs), and notably 3',5'-cyclic guanosine monophosphate (cGMP) and 3',5'-cyclic adenosine monophosphate (cAMP) are now accepted as key signaling molecules in many processes in plants including growth and differentiation, photosynthesis, and biotic and abiotic defense. At the single molecule level, we are now beginning to understand how cNMPs modify specific target molecules such as cyclic nucleotide-gated channels, while at the systems level, a recent study of the Arabidopsis cNMP interactome has identified novel target molecules with specific cNMP-binding domains. A major advance came with the discovery and characterization of a steadily increasing number of guanylate cyclases (GCs) and adenylate cyclases (ACs). Several of the GCs are receptor kinases and include the brassinosteroid receptor, the phytosulfokine receptor, the Pep receptor, the plant natriuretic peptide receptor as well as a nitric oxide sensor. We foresee that in the near future many more molecular mechanisms and biological roles of GCs and ACs and their catalytic products will be discovered and further establish cNMPs as a key component of plant responses to the environment."
+  ],
+  "affiliation": [
+    "Department of Chemistry, Biology and Biotechnology, University of Perugia, Perugia, Italy."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-eCollection"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Arabidopsis thaliana",
+        "cAMP",
+        "cGMP",
+        "Signaling",
+        "receptor kinases",
+        "Guanylate Cyclase (Gc) And Adenylate Cyclase (Ac)"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5632652?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5632652"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.3389/fpls.2017.01704"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "1"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "sprot",
+        "interpro"
+      ]
+    }
+  ],
+  "dateOfCreation": [
+    "2017-10-20"
+  ],
+  "dateOfRevision": [
+    "2017-12-19"
+  ],
+  "electronicPublicationDate": [
+    "2017-10-04"
+  ],
+  "firstPublicationDate": [
+    "2017-10-04"
+  ]
+}

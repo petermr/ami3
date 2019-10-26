@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippetsTree>
+ <snippets file="epmc/PMC2386067/results/gene/human/results.xml">
+  <result pre="en these two can be defined as d( G 1, G 2) = d( " exact="SSC" post=" 1, SSC 2) + d( LSC 1, LSC 2&lt;/sub" xpath="/html[1]/body[1]/div[2]/div[5]/div[3]/p[2]" dictionary="hgnc" dictionaryCheck="false" name="human"/>
+  <result pre="ed as d( G 1, G 2) = d( SSC 1, " exact="SSC" post=" 2) + d( LSC 1, LSC 2) + d( IR " xpath="/html[1]/body[1]/div[2]/div[5]/div[3]/p[2]" dictionary="hgnc" dictionaryCheck="false" name="human"/>
+  <result pre=", G 2) = d( SSC 1, SSC 2) + d( " exact="LSC" post=" 1, LSC 2) + d( IR 1, IR 2)" xpath="/html[1]/body[1]/div[2]/div[5]/div[3]/p[2]" dictionary="hgnc" dictionaryCheck="false" name="human"/>
+  <result pre="= d( SSC 1, SSC 2) + d( LSC 1, " exact="LSC" post=" 2) + d( IR 1, IR 2), i.e., the overall dista" dictionary="hgnc" dictionaryCheck="false" name="human"/>
+ </snippets>
+</snippetsTree>

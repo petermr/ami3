@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippetsTree>
+ <snippets file="epmc/PMC1087475/results/species/binomial/results.xml">
+  <result pre=" and has also been used to infer the absence of RNA editing in the entire mitochondrial genomes of " exact="Marchantia polymorpha" xpath="/html[1]/body[1]/div[3]/div[1]/div[1]/p[1]" match="Marchantia polymorpha" post=", a complex thalloid liverwort, and the green algae Chara vulgaris and Chaetosphaeridium " name="binomial"/>
+  <result pre="ondrial genomes of Marchantia polymorpha, a complex thalloid liverwort, and the green algae " exact="Chara vulgaris " xpath="/html[1]/body[1]/div[3]/div[1]/div[1]/p[1]" match="Chara vulgaris" post="and Chaetosphaeridium globosum [ 27- 29]. Limited experimental" name="binomial"/>
+  <result pre="hantia polymorpha, a complex thalloid liverwort, and the green algae Chara vulgaris and " exact="Chaetosphaeridium globosum " xpath="/html[1]/body[1]/div[3]/div[1]/div[1]/p[1]" match="Chaetosphaeridium globosum" post="[ 27- 29]. Limited experimental evidence has so far corroborated the " name="binomial"/>
+  <result pre="thors constructed a data set containing all of the known edited sites from the complete genomes of " exact="Arabidopsis thaliana" xpath="/html[1]/body[1]/div[3]/div[1]/div[1]/p[1]" match="Arabidopsis thaliana" post=", Brassica napus, and Oryza sativa and compared them to an equal number of known uned" name="binomial"/>
+  <result pre="containing all of the known edited sites from the complete genomes of Arabidopsis thaliana, " exact="Brassica napus" xpath="/html[1]/body[1]/div[3]/div[1]/div[1]/p[1]" match="Brassica napus" post=", and Oryza sativa and compared them to an equal number of known unedited sites randomly sel" name="binomial"/>
+  <result pre=" edited sites from the complete genomes of Arabidopsis thaliana, Brassica napus, and " exact="Oryza sativa " xpath="/html[1]/body[1]/div[3]/div[1]/div[1]/p[1]" match="Oryza sativa" post="and compared them to an equal number of known unedited sites randomly selected from these genomes. " name="binomial"/>
+  <result pre="logous protein alignments (as does PREP-Mt) to predict C insertion editing sites in the slime mold " exact="Physarum polycephalum " xpath="/html[1]/body[1]/div[3]/div[1]/div[1]/p[1]" match="Physarum polycephalum" post="[ 37]. Bundschuh predicted RNA editing sites for six Physarum mitochondrial g" name="binomial"/>
+  <result pre="scussions and Alejandro Araya for providing the RNA editing positions in exon 5 of nad1 for " exact="Triticum aestivum" match="Triticum aestivum" post=". This research was supported by National Institutes of Health Grant R01-GM-35087 (to Jeffrey D. Pa" name="binomial"/>
+ </snippets>
+</snippetsTree>

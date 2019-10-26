@@ -1,0 +1,382 @@
+{
+  "id": [
+    "29659634"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "29659634"
+  ],
+  "pmcid": [
+    "PMC5901983"
+  ],
+  "doi": [
+    "10.1371/journal.pone.0195974"
+  ],
+  "title": [
+    "Genome-wide analysis of basic helix-loop-helix superfamily members in peach."
+  ],
+  "authorString": [
+    "Zhang C, Feng R, Ma R, Shen Z, Cai Z, Song Z, Peng B, Yu M."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Zhang C"
+          ],
+          "firstName": [
+            "Chunhua"
+          ],
+          "lastName": [
+            "Zhang"
+          ],
+          "initials": [
+            "C"
+          ],
+          "affiliation": [
+            "Institute of Pomology, Jiangsu Academy of Agricultural Sciences/Jiangsu Key Laboratory for Horticultural Crop Genetic Improvement, Nanjing, Jiangsu, China."
+          ]
+        },
+        {
+          "fullName": [
+            "Feng R"
+          ],
+          "firstName": [
+            "Ruchao"
+          ],
+          "lastName": [
+            "Feng"
+          ],
+          "initials": [
+            "R"
+          ],
+          "affiliation": [
+            "Institute of Pomology, Jiangsu Academy of Agricultural Sciences/Jiangsu Key Laboratory for Horticultural Crop Genetic Improvement, Nanjing, Jiangsu, China."
+          ]
+        },
+        {
+          "fullName": [
+            "Ma R"
+          ],
+          "firstName": [
+            "Ruijuan"
+          ],
+          "lastName": [
+            "Ma"
+          ],
+          "initials": [
+            "R"
+          ],
+          "affiliation": [
+            "Institute of Pomology, Jiangsu Academy of Agricultural Sciences/Jiangsu Key Laboratory for Horticultural Crop Genetic Improvement, Nanjing, Jiangsu, China."
+          ]
+        },
+        {
+          "fullName": [
+            "Shen Z"
+          ],
+          "firstName": [
+            "Zhijun"
+          ],
+          "lastName": [
+            "Shen"
+          ],
+          "initials": [
+            "Z"
+          ],
+          "affiliation": [
+            "Institute of Pomology, Jiangsu Academy of Agricultural Sciences/Jiangsu Key Laboratory for Horticultural Crop Genetic Improvement, Nanjing, Jiangsu, China."
+          ]
+        },
+        {
+          "fullName": [
+            "Cai Z"
+          ],
+          "firstName": [
+            "Zhixiang"
+          ],
+          "lastName": [
+            "Cai"
+          ],
+          "initials": [
+            "Z"
+          ],
+          "affiliation": [
+            "Institute of Pomology, Jiangsu Academy of Agricultural Sciences/Jiangsu Key Laboratory for Horticultural Crop Genetic Improvement, Nanjing, Jiangsu, China."
+          ]
+        },
+        {
+          "fullName": [
+            "Song Z"
+          ],
+          "firstName": [
+            "Zhizhong"
+          ],
+          "lastName": [
+            "Song"
+          ],
+          "initials": [
+            "Z"
+          ],
+          "affiliation": [
+            "Institute of Pomology, Jiangsu Academy of Agricultural Sciences/Jiangsu Key Laboratory for Horticultural Crop Genetic Improvement, Nanjing, Jiangsu, China."
+          ]
+        },
+        {
+          "fullName": [
+            "Peng B"
+          ],
+          "firstName": [
+            "Bin"
+          ],
+          "lastName": [
+            "Peng"
+          ],
+          "initials": [
+            "B"
+          ],
+          "affiliation": [
+            "Institute of Pomology, Jiangsu Academy of Agricultural Sciences/Jiangsu Key Laboratory for Horticultural Crop Genetic Improvement, Nanjing, Jiangsu, China."
+          ]
+        },
+        {
+          "fullName": [
+            "Yu M"
+          ],
+          "firstName": [
+            "Mingliang"
+          ],
+          "lastName": [
+            "Yu"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-7275-0893",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Institute of Pomology, Jiangsu Academy of Agricultural Sciences/Jiangsu Key Laboratory for Horticultural Crop Genetic Improvement, Nanjing, Jiangsu, China."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-7275-0893",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "4"
+      ],
+      "volume": [
+        "13"
+      ],
+      "journalIssueId": [
+        "2667071"
+      ],
+      "dateOfPublication": [
+        "2018 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2018"
+      ],
+      "printPublicationDate": [
+        "2018-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "PloS one"
+          ],
+          "ISOAbbreviation": [
+            "PLoS ONE"
+          ],
+          "medlineAbbreviation": [
+            "PLoS One"
+          ],
+          "NLMid": [
+            "101285081"
+          ],
+          "ISSN": [
+            "1932-6203"
+          ],
+          "ESSN": [
+            "1932-6203"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2018"
+  ],
+  "pageInfo": [
+    "e0195974"
+  ],
+  "abstractText": [
+    "The basic helix-loop-helix (bHLH) transcription factor family is a superfamily found in all eukaryotes that plays important roles in regulating growth and development. Over the past several decades, many bHLH superfamily genes have been identified and characterized in herbaceous and woody plants. However, the genes belonging to the bHLH superfamily in peach (Prunus persica) have not yet been comprehensively identified and characterized. Here, we identified 95 members of the bHLH superfamily in the peach genome, and these genes were classified into 19 subfamilies based on a phylogenetic comparison with bHLH proteins from Arabidopsis. The members within each subfamily were highly conserved according to the analysis of motif compositions and exon/intron organizations. The 95 bHLH genes were unevenly distributed on chromosomes 1 to 8 of the peach genome. We identified 57 pairs of bHLH members that were orthologous between peach and Arabidopsis. Additionally, 48 pairs of paralogous bHLH genes were identified on the eight chromosomes of the peach genome. Coupled with relative expression analysis of bHLH genes in red-fleshed peach fruit at five developmental stages, we identified several bHLH genes that might be involved in fruit development and anthocyanin biosynthesis. This study provides insight into the molecular mechanisms through which these genes are involved in the regulation of biological and biochemical processes in peach and lays the foundation for further studies on these genes."
+  ],
+  "affiliation": [
+    "Institute of Pomology, Jiangsu Academy of Agricultural Sciences/Jiangsu Key Laboratory for Horticultural Crop Genetic Improvement, Nanjing, Jiangsu, China."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic-eCollection"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5901983?pdf=render"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "http://europepmc.org/articles/PMC5901983"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1371/journal.pone.0195974"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "0"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "Y"
+  ],
+  "tmAccessionTypeList": [
+    {
+      "accessionType": [
+        "pfam"
+      ]
+    }
+  ],
+  "dateOfCreation": [
+    "2018-04-17"
+  ],
+  "dateOfRevision": [
+    "2018-05-07"
+  ],
+  "electronicPublicationDate": [
+    "2018-04-16"
+  ],
+  "firstPublicationDate": [
+    "2018-04-16"
+  ]
+}
