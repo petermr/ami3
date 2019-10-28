@@ -123,6 +123,7 @@ public class HtmlTbody extends HtmlElement {
     }
 
 	public List<HtmlTr> getRowList() {
+		getOrCreateChildTrs();
 		return rowList;
 	}
 

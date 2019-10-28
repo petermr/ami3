@@ -34,6 +34,11 @@ public class HtmlCaption extends HtmlElement {
 		super(TAG);
 	}
 	
+	public HtmlCaption(String text) {
+		this();
+		this.appendChild(text);
+	}
+	
 	/** convenience method as best way to add complex text.
 	 * 
 	 * @param para

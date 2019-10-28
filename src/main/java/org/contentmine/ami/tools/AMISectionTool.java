@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -19,6 +21,9 @@ import org.contentmine.cproject.files.DebugPrint;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.euclid.util.CMFileUtil;
 import org.contentmine.eucl.xml.XMLUtil;
+import org.contentmine.graphics.html.HtmlCaption;
+import org.contentmine.graphics.html.HtmlElement;
+import org.contentmine.graphics.html.HtmlLabel;
 import org.contentmine.graphics.html.HtmlTable;
 import org.contentmine.graphics.html.HtmlTbody;
 import org.contentmine.graphics.html.HtmlTd;
@@ -35,7 +40,6 @@ import org.contentmine.norma.sections.JATSLabelElement;
 import org.contentmine.norma.sections.JATSPElement;
 import org.contentmine.norma.sections.JATSSecElement;
 import org.contentmine.norma.sections.JATSSectionTagger;
-import org.contentmine.norma.sections.JATSSectionTagger.FloatSection;
 import org.contentmine.norma.sections.JATSSectionTagger.SectionTag;
 import org.contentmine.norma.sections.JATSSectionTagger.SectionType;
 import org.w3c.dom.Document;
@@ -63,23 +67,72 @@ description = "splits XML files into sections using XPath%n"
 
 public class AMISectionTool extends AbstractAMITool {
 	
+	private static final String SUMMARY_HTML = "summary.html";
 	private static final String BOLD_FIRST_CHILD_OF_PARA_IN_SEC =
 			".//*[local-name()='"+JATSSecElement.TAG+"' "
 					+ "and *[local-name()='"+JATSPElement.TAG+"' "
 							+ "and *[local-name()='"+JATSBoldElement.TAG+"' and position()=1]]]";
 	private static final String FLOATS_GROUP_REGEX = ".*/\\d+_"+JATSFloatsGroupElement.TAG.replaceAll("\\-", "\\\\-");
+	
 	private static final String FIGURE_ = "figure_";
-	private static final String FIGURE_DIR = "figures/";
+	private static final String FIGURES_DIR = "figures";
 	private static final String FIGURE_FILE_REGEX = ".*/\\d+_fig(ure)?_+(\\d+)\\.xml";
+	private static final String FIGURE_SUMMARY_DIR = "__figures";
+
+	private static final String RESULTS = "results";
+	private static final String RESULTS_DIR = "supplementary";
+	private static final String RESULTS_FILE_REGEX = ".*/\\d+_supp.*\\.xml";
+	private static final String RESULTS_SUMMARY_DIR = "__supplementary";
+
+	private static final String SUPPLEMENTARY_ = "supplementary_";
+	private static final String SUPPLEMENTARY_DIR = "supplementary";
+	private static final String SUPPLEMENTARY_FILE_REGEX = ".*/\\d+_supp.*\\.xml";
+	private static final String SUPPLEMENTARY_SUMMARY_DIR = "__supplementary";
+
 	private static final String TABLE_ = "table_";
-	private static final String TABLE_DIR = "tables/";
+	private static final String TABLES_DIR = "tables";
 	private static final String TABLE_FILE_REGEX = ".*/\\d+_tab(le)?_+(\\d+)\\.xml";
+	private static final String TABLE_SUMMARY_DIR = "__tables";
+	
 
 	private static final Logger LOG = Logger.getLogger(AMISectionTool.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
 
+	private enum SummaryType {
+		figure(FIGURES_DIR, FIGURE_SUMMARY_DIR),
+		results(RESULTS_DIR, RESULTS_SUMMARY_DIR),
+		supplementary(SUPPLEMENTARY_DIR, SUPPLEMENTARY_SUMMARY_DIR),
+		table(TABLES_DIR, TABLE_SUMMARY_DIR),;
+		private String path;
+		private String summaryPath;
+		private SummaryType(String path, String summaryPath) {
+			this.path = path;
+			this.summaryPath = summaryPath;
+		}
+		public String getPath() {
+			return path;
+		}
+		public String getSummaryPath() {
+			return summaryPath;
+		}
+	}
+	
+	private enum FloatType {
+		fig("fig"),
+		supplementary("supplementary-material"),
+		table("table-wrap"),
+		;
+		private String path;
+		private FloatType(String path) {
+			this.path = path;
+		}
+		public String getPath() {
+			return path;
+		}
+	}
+	
     @Option(names = {"--boldsections"},
             description = "convert paras with bold first sentence/phrase into subsections.%n"
             		+ "e.g. <sec id='s2.1'><p><bold>Extraction of Oils.</bold>. more text...</p></sec>%n"
@@ -95,14 +148,16 @@ public class AMISectionTool extends AbstractAMITool {
     private String xsltName = null;
 
     @Option(names = {"--extract"},
-    		arity = "1..*",
-            description = "extract float elements to subdirectory) ")
-    private List<FloatSection> extractList = new ArrayList<>();
-
-    @Option(names = {"--figures"},
     		arity = "0..*",
-            description = "extract float figure elements to subdirectory and make index; under development ")
-    private List<String> figureList = null;
+            description = "extract float elements to subdirectory,"
+            		+ "default table, fig, supplementary) ")
+    private List<FloatType> extractList = new ArrayList<FloatType>(
+    		Arrays.asList(new FloatType[]{FloatType.table, FloatType.fig, FloatType.supplementary}));
+
+//    @Option(names = {"--figures"},
+//    		arity = "0..*",
+//            description = "extract float figure elements to subdirectory and make index; under development ")
+//    private List<String> figureList = null;
 
     @Option(names = {"--sections"},
     		arity = "0..*",
@@ -120,10 +175,15 @@ public class AMISectionTool extends AbstractAMITool {
             description = "Type of section (XML or HTML) default XML. Probably only used in development")
     private SectionType sectionType = SectionType.XML;
 
-    @Option(names = {"--tables"},
-    		arity = "0..*",
-            description = "extract float table elements to subdirectory and make index; under development ")
-    private List<String> tableList = null;
+    @Option(names = {"--summary"},
+    		arity = "1..*",
+            description = "create summary files for sections")
+    private List<SummaryType> summaryList = new ArrayList<>();
+
+//    @Option(names = {"--tables"},
+//    		arity = "0..*",
+//            description = "extract float table elements to subdirectory and make index; under development ")
+//    private List<String> tableList = null;
     
     @Option(names = {"--write"},
     		arity = "0",
@@ -136,6 +196,7 @@ public class AMISectionTool extends AbstractAMITool {
 	private File floatsDir;
 	private File sectionsDir;
 	private File existingFulltextXML;
+	private int maxrows = 10;
 		
 	public AMISectionTool() {
 		
@@ -151,10 +212,9 @@ public class AMISectionTool extends AbstractAMITool {
 		System.out.println("xslt                    " + xsltName);
 		System.out.println("boldSections            " + makeBoldSections);
 		System.out.println("extract                 " + extractList);
-		System.out.println("figureList              " + figureList);
 		System.out.println("sectionList             " + sectionTagList);
 		System.out.println("sectiontype             " + sectionType);
-		System.out.println("tableList               " + tableList);
+		System.out.println("summaryList             " + summaryList);
 		System.out.println("write                   " + writeFiles);
 		System.out.println();
 	}
@@ -164,11 +224,23 @@ public class AMISectionTool extends AbstractAMITool {
     protected void runSpecifics() {
 		if (sectionTagList.size() == 0) {
 			System.err.println("section values: "+Arrays.asList(SectionTag.values()));
-		} else if (processTrees()) { 
+		} else if (processTrees()) {
+			writeSummaries();
     	} else {
 			DebugPrint.debugPrint(Level.ERROR, "must give cProject or cTree");
 	    }
     }
+
+	private void writeSummaries() {
+		if (cProject != null) {
+			for (SummaryType summaryType : summaryList) {
+				HtmlTable totalSummaryTable = createTotalSummary(summaryType);
+				File summaryDir = new File(cProject.getDirectory(), summaryType.getSummaryPath());
+				summaryDir.mkdirs();
+				XMLUtil.writeQuietly(totalSummaryTable, new File(summaryDir, SUMMARY_HTML), 1);
+			}
+		}
+	}
 
 	public void processTree() {
 		sectionsDir = cTree.getSectionsDirectory();
@@ -190,11 +262,14 @@ public class AMISectionTool extends AbstractAMITool {
 	private void createSections() {
 		createSectionsRecursively();
 		floatsDir = getFloatsDir();
-		if (figureList != null) {
-			renameFloatsFiles(FIGURE_FILE_REGEX, FIGURE_DIR, FIGURE_);
+		if (extractList.contains(FloatType.fig)) {
+			renameFloatsFiles(FIGURE_FILE_REGEX, FIGURES_DIR, FIGURE_);
 		}
-		if (tableList != null) {
-			renameFloatsFiles(TABLE_FILE_REGEX, TABLE_DIR, TABLE_);
+		if (extractList.contains(FloatType.supplementary)) {
+			renameFloatsFiles(SUPPLEMENTARY_FILE_REGEX, SUPPLEMENTARY_DIR, SUPPLEMENTARY_);
+		}
+		if (extractList.contains(FloatType.table)) {
+			renameFloatsFiles(TABLE_FILE_REGEX, TABLES_DIR, TABLE_);
 		}
 	}
 
@@ -207,22 +282,24 @@ public class AMISectionTool extends AbstractAMITool {
 	 */
 	private void renameFloatsFiles(String fileRegex, String outdirname, String filePrefix) {
 		List<File> files = Util.listFilesFromPaths(floatsDir, fileRegex);
+		Collections.sort(files, new SectionComparator());
+//		LOG.debug("FILES: "+files);
 		Pattern pattern = Pattern.compile(fileRegex);
 		if (files.size() > 0) {
 			File newDirectory = new File(sectionsDir, outdirname);
 			newDirectory.mkdirs();
 			HtmlTable table = new HtmlTable();
-			HtmlThead thead = table.getOrCreateThead();
+			HtmlCaption caption = new HtmlCaption(cTree.getName());
+			table.getOrCreateThead().appendChild(caption);
 			HtmlTr tr = new HtmlTr();
-			thead.appendChild(tr);
+			table.getOrCreateThead().appendChild(tr);
 			tr.appendChild((HtmlTh) HtmlTh.createAndWrapText(JATSLabelElement.TAG));
 			tr.appendChild((HtmlTh) HtmlTh.createAndWrapText(JATSCaptionElement.TAG));
 			HtmlTbody tbody = table.getOrCreateTbody();
 			for (File file : files) {
 				moveFilesAndCreateHTMLTable(filePrefix, pattern, newDirectory, file, tbody);
 			}
-//			System.out.println("ttt "+table.toXML());
-			XMLUtil.writeQuietly(table, new File(newDirectory, "summary.html"), 1);
+			XMLUtil.writeQuietly(table, new File(newDirectory, SUMMARY_HTML), 1);
 		}
 	}
 
@@ -241,15 +318,52 @@ public class AMISectionTool extends AbstractAMITool {
 		} catch (IOException e) {
 			throw new RuntimeException("Cannot move file: ", e);
 		}
-		Element element = XMLUtil.parseQuietlyToRootElement(destFile);
-		String label = XMLUtil.getSingleValue(element, "./*[local-name()='"+JATSLabelElement.TAG+"']");
-		String caption = XMLUtil.getSingleValue(element, "./*[local-name()='"+JATSCaptionElement.TAG+"']");
+		HtmlTr tr = createSummaryRow(destFile);
+		if (tr != null) tbody.appendChild(tr);
+	}
+
+	private HtmlTr createSummaryRow(File destFile) {
+		HtmlElement htmlElement = HtmlElement.create(destFile);
+		HtmlTable table = (HtmlTable) XMLUtil.getSingleElement(htmlElement, "//*[local-name()='"+HtmlTable.TAG+"']");
+		if (table == null) {
+			// probably a figure
+//			System.err.println(destFile);
+//			System.err.println("null table");
+			return null;
+		}
+//		System.err.println("OK table");
+		String label = XMLUtil.getSingleValue(htmlElement, "./*[local-name()='"+JATSLabelElement.TAG+"']");
+		String caption = XMLUtil.getSingleValue(htmlElement, "./*[local-name()='"+JATSCaptionElement.TAG+"']");
 		caption = caption == null ? "" : caption.trim();
 		HtmlTr tr = new HtmlTr();
-		tbody.appendChild(tr);
 		tr.appendChild((HtmlTd) HtmlTd.createAndWrapText(label));
 		tr.appendChild((HtmlTd) HtmlTd.createAndWrapText(Util.truncateAndAddEllipsis(caption.replaceAll("\\s*\\n\\s*", " "), 60)));
+		// table may have a Thead OR may have a Tr/Th row
+		HtmlThead thead = table.getThead();
+		HtmlTr trth = (thead != null) ? thead.getOrCreateChildTr() : table.getSingleLeadingTrThChild();
+		addThValuesToTr(trth, tr);
+		return tr;
 	}
+
+	private void addThValuesToTr(HtmlTr trth, HtmlTr tr) {
+		if (trth != null) {
+			List<String> tdCellValues = trth.getThCellValues();
+			for (int i = 0; i < Math.min(tdCellValues.size(), maxrows); i++) {
+				String cellValue = tdCellValues.get(i);
+				HtmlTd td = HtmlTd.createAndWrapText(cellValue);
+				tr.appendChild(td);
+			}
+		}
+	}
+
+//	private void addCellValuesToRow(HtmlTr tr, List<String> cellValues) {
+//		System.err.println("ROW0: "+cellValues);
+//		for (int i = 0; i < Math.min(cellValues.size(), maxrows); i++) {
+//			String cellValue = cellValues.get(i);
+//			HtmlTd td = HtmlTd.createAndWrapText(cellValue);
+//			tr.appendChild(td);
+//		}
+//	}
 	
 	private File getFloatsDir() {
 		List<File> floatsDirList = Util.listFilesFromPaths(cTree.getSectionsDirectory(), FLOATS_GROUP_REGEX);
@@ -414,12 +528,69 @@ public class AMISectionTool extends AbstractAMITool {
 		return tagger;
 	}
 
+	private HtmlTable createTotalSummary(SummaryType summaryType) {
+		HtmlTable totalSummaryTable = new HtmlTable();
+		HtmlThead thead = totalSummaryTable.getOrCreateThead();
+		HtmlTr theadrow = thead.getOrCreateChildTr();
+		theadrow.appendChild(HtmlTh.createAndWrapText("Art-id"));
+		theadrow.appendChild(HtmlTh.createAndWrapText(HtmlLabel.TAG));
+		theadrow.appendChild(HtmlTh.createAndWrapText(HtmlCaption.TAG));
+		for (CTree cTree : cProject.getOrCreateCTreeList()) {
+			sectionsDir = cTree.getExistingSectionsDir();
+			List<HtmlTr> rows = createSummaryRows(summaryType);
+			for (HtmlTr row : rows) {
+				totalSummaryTable.appendChild(row);
+			}
+		}
+		return totalSummaryTable;
+	}
+	
+	private List<HtmlTr> createSummaryRows(SummaryType summaryType) {
+		List<HtmlTr> rows = new ArrayList<>();
+		File sectionSubDirectory = new File(sectionsDir, summaryType.getPath());
+		File summaryFile = new File(sectionSubDirectory, SUMMARY_HTML);
+		if (!summaryFile.exists()) {
+			return rows;
+		}
+		HtmlElement htmlElement = HtmlElement.create(summaryFile);
+		HtmlTable table = (HtmlTable) XMLUtil.getSingleElement(htmlElement, "//*[local-name()='"+HtmlTable.TAG+"']");
+		if (table != null) {
+			Element caption = XMLUtil.getSingleElement(table, ".//*[local-name()='"+HtmlCaption.TAG+"']");
+			String captionValue = (caption == null) ? "" : caption.getValue();
+			List<HtmlTr> trows = table.getRows();
+			for (HtmlTr trow : trows) {
+				HtmlTr row = (HtmlTr) HtmlElement.create(trow);
+				row.insertChild(HtmlTd.createAndWrapText(captionValue), 0);
+				rows.add(row);
+			}
+		}
+		return rows;
+	}
+
 	private void runHelp() {
 		DebugPrint.debugPrint("sections recognized in documents");
 		for (SectionTag tag : JATSSectionTagger.SectionTag.values()) {
 			DebugPrint.debugPrint(tag.name()+": "+tag.getDescription());
 		}
 	}
+}
 
-	
+class SectionComparator implements Comparator<File> {
+/** file is of form .../[1-9][0-9]*_name_[1-9][0-9]*.xml
+ * 
+ */
+	@Override
+	public int compare(File o1, File o2) {
+		if (o1 == null ||  o2 == null) return 0;
+		int serial1 = getFirstSerial(o1);
+		int serial2 = getFirstSerial(o2);
+		return serial1 - serial2;
+	}
+
+private int getFirstSerial(File o1) {
+	String name1 = o1.getName();
+	int serial = Integer.parseInt(name1.split("_")[0]);
+	return serial;
+}
+
 }

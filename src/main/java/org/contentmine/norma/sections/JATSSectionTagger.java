@@ -285,24 +285,25 @@ public class JATSSectionTagger implements HtmlTagger {
 		
 	};
 	
-	public enum FloatSection {
-		FIG("fig"),
-		TABLEWRAP("table-wrap")
-		;
-		private String tag;
-
-		private FloatSection(String tag) {
-			this.tag = tag;
-		}
-		/** get FloatSection by tag 
-		 * @return null if not found */
-		public static FloatSection getFloatSection(String tag) {
-			for (FloatSection floatSection : values()) {
-				if (floatSection.tag.equals(tag)) return floatSection;
-			}
-			return null;
-		}
-	};
+//	public enum FloatSection {
+//		FIG("fig"),
+//		SUPPLEMENTARY("supplementary-material"),
+//		TABLEWRAP("table-wrap")
+//		;
+//		private String tag;
+//
+//		private FloatSection(String tag) {
+//			this.tag = tag;
+//		}
+//		/** get FloatSection by tag 
+//		 * @return null if not found */
+//		public static FloatSection getFloatSection(String tag) {
+//			for (FloatSection floatSection : values()) {
+//				if (floatSection.tag.equals(tag)) return floatSection;
+//			}
+//			return null;
+//		}
+//	};
 
 	public final static String[] CLASSTAGS = {
 		"abstract",  // 11

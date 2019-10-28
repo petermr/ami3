@@ -5,25 +5,25 @@
   <p class="p">Motor behavior of apomorphine treated rats</p>
  </caption>
  <table frame="hsides" rules="groups" class="table">
-  <thead xmlns="http://www.w3.org/1999/xhtml">
-   <tr>
-    <td align="center">Compound (dose, μmol Kg
-     <sup class="sup" xmlns="">-1</sup>)
+  <thead class="thead">
+   <tr class="tr">
+    <td align="center" class="td">Compound (dose, μmol Kg
+     <sup class="sup">-1</sup>)
     </td>
-    <td align="center">Movements (± SEM) / 30 min</td>
-    <td align="center">Compared with the control group (%)</td>
+    <td align="center" class="td">Movements (± SEM) / 30 min</td>
+    <td align="center" class="td">Compared with the control group (%)</td>
    </tr>
   </thead>
-  <tbody xmlns="http://www.w3.org/1999/xhtml">
-   <tr>
-    <td align="center">Apomorphine treated controls</td>
-    <td align="center">385(68)</td>
-    <td align="center">100</td>
+  <tbody class="tbody">
+   <tr class="tr">
+    <td align="center" class="td">Apomorphine treated controls</td>
+    <td align="center" class="td">385(68)</td>
+    <td align="center" class="td">100</td>
    </tr>
-   <tr>
-    <td align="center">TPBIA(80)</td>
-    <td align="center">113(28)**</td>
-    <td align="center">29</td>
+   <tr class="tr">
+    <td align="center" class="td">TPBIA(80)</td>
+    <td align="center" class="td">113(28)**</td>
+    <td align="center" class="td">29</td>
    </tr>
   </tbody>
  </table>

@@ -8,121 +8,121 @@
  <alternatives class="alternatives">
   <graphic id="pntd-0001477-t002-2" xlink:href="pntd.0001477.t002" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
   <table frame="hsides" rules="groups" class="table">
-   <colgroup span="1" xmlns="http://www.w3.org/1999/xhtml">
-    <col align="left" span="1"/>
-    <col align="center" span="1"/>
-    <col align="center" span="1"/>
-    <col align="center" span="1"/>
-    <col align="center" span="1"/>
-    <col align="center" span="1"/>
+   <colgroup span="1" class="colgroup">
+    <col align="left" span="1" class="col"/>
+    <col align="center" span="1" class="col"/>
+    <col align="center" span="1" class="col"/>
+    <col align="center" span="1" class="col"/>
+    <col align="center" span="1" class="col"/>
+    <col align="center" span="1" class="col"/>
    </colgroup>
-   <thead xmlns="http://www.w3.org/1999/xhtml">
-    <tr>
-     <td align="left" rowspan="1" colspan="1">Isolate</td>
-     <td align="left" rowspan="1" colspan="1">Species/Source</td>
-     <td align="left" rowspan="1" colspan="1">Origin</td>
-     <td align="left" rowspan="1" colspan="1">Year of collection</td>
-     <td align="left" rowspan="1" colspan="1">Passage history</td>
-     <td align="left" rowspan="1" colspan="1">Reference (GenBank accession no.)</td>
+   <thead class="thead">
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td">Isolate</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Species/Source</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Origin</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Year of collection</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Passage history</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Reference (GenBank accession no.)</td>
     </tr>
    </thead>
-   <tbody xmlns="http://www.w3.org/1999/xhtml">
-    <tr>
-     <td align="left" rowspan="1" colspan="1">MR 766</td>
-     <td align="left" rowspan="1" colspan="1">Sentinel rhesus</td>
-     <td align="left" rowspan="1" colspan="1">Uganda</td>
-     <td align="left" rowspan="1" colspan="1">1947</td>
-     <td align="left" rowspan="1" colspan="1">SM 3</td>
-     <td align="left" rowspan="1" colspan="1">
-      <xref ref-type="bibr" rid="pntd.0001477-Heang1" class="xref" xmlns="">[15]</xref> (AY632535)
+   <tbody class="tbody">
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td">MR 766</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Sentinel rhesus</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Uganda</td>
+     <td align="left" rowspan="1" colspan="1" class="td">1947</td>
+     <td align="left" rowspan="1" colspan="1" class="td">SM 3</td>
+     <td align="left" rowspan="1" colspan="1" class="td">
+      <xref ref-type="bibr" rid="pntd.0001477-Heang1" class="xref">[15]</xref> (AY632535)
      </td>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1">MR 766</td>
-     <td align="left" rowspan="1" colspan="1">Sentinel rhesus</td>
-     <td align="left" rowspan="1" colspan="1">Uganda</td>
-     <td align="left" rowspan="1" colspan="1">1947</td>
-     <td align="left" rowspan="1" colspan="1">SM 146, C6/36#1</td>
-     <td align="left" rowspan="1" colspan="1">HQ234498
-      <xref ref-type="table-fn" rid="nt107" class="xref" xmlns="">‡</xref>
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td">MR 766</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Sentinel rhesus</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Uganda</td>
+     <td align="left" rowspan="1" colspan="1" class="td">1947</td>
+     <td align="left" rowspan="1" colspan="1" class="td">SM 146, C6/36#1</td>
+     <td align="left" rowspan="1" colspan="1" class="td">HQ234498
+      <xref ref-type="table-fn" rid="nt107" class="xref">‡</xref>
      </td>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1">MR 766</td>
-     <td align="left" rowspan="1" colspan="1">Sentinel rhesus</td>
-     <td align="left" rowspan="1" colspan="1">Uganda</td>
-     <td align="left" rowspan="1" colspan="1">1947</td>
-     <td align="left" rowspan="1" colspan="1">Unknown</td>
-     <td align="left" rowspan="1" colspan="1">
-      <xref ref-type="bibr" rid="pntd.0001477-Theiler1" class="xref" xmlns="">[21]</xref> (DQ859059)
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td">MR 766</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Sentinel rhesus</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Uganda</td>
+     <td align="left" rowspan="1" colspan="1" class="td">1947</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Unknown</td>
+     <td align="left" rowspan="1" colspan="1" class="td">
+      <xref ref-type="bibr" rid="pntd.0001477-Theiler1" class="xref">[21]</xref> (DQ859059)
      </td>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1">P6-740</td>
-     <td align="left" rowspan="1" colspan="1">
-      <italic class="italic" xmlns="">Aedes aegypti</italic>
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td">P6-740</td>
+     <td align="left" rowspan="1" colspan="1" class="td">
+      <italic class="italic">Aedes aegypti</italic>
      </td>
-     <td align="left" rowspan="1" colspan="1">Malaysia</td>
-     <td align="left" rowspan="1" colspan="1">1966</td>
-     <td align="left" rowspan="1" colspan="1">SM 6, Vero 1, BHK 1, C6/36#1</td>
-     <td align="left" rowspan="1" colspan="1">HQ234499
-      <xref ref-type="table-fn" rid="nt107" class="xref" xmlns="">‡</xref>
-     </td>
-    </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1">IbH 30656</td>
-     <td align="left" rowspan="1" colspan="1">Human blood</td>
-     <td align="left" rowspan="1" colspan="1">Nigeria</td>
-     <td align="left" rowspan="1" colspan="1">1968</td>
-     <td align="left" rowspan="1" colspan="1">SM 21, Vero 1</td>
-     <td align="left" rowspan="1" colspan="1">HQ234500
-      <xref ref-type="table-fn" rid="nt107" class="xref" xmlns="">‡</xref>
+     <td align="left" rowspan="1" colspan="1" class="td">Malaysia</td>
+     <td align="left" rowspan="1" colspan="1" class="td">1966</td>
+     <td align="left" rowspan="1" colspan="1" class="td">SM 6, Vero 1, BHK 1, C6/36#1</td>
+     <td align="left" rowspan="1" colspan="1" class="td">HQ234499
+      <xref ref-type="table-fn" rid="nt107" class="xref">‡</xref>
      </td>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1">ArD 41519</td>
-     <td align="left" rowspan="1" colspan="1">
-      <italic class="italic" xmlns="">Aedes africanus</italic>
-     </td>
-     <td align="left" rowspan="1" colspan="1">Senegal</td>
-     <td align="left" rowspan="1" colspan="1">1984</td>
-     <td align="left" rowspan="1" colspan="1">AP61#1, C6/36#2</td>
-     <td align="left" rowspan="1" colspan="1">HQ234501
-      <xref ref-type="table-fn" rid="nt107" class="xref" xmlns="">‡</xref>
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td">IbH 30656</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Human blood</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Nigeria</td>
+     <td align="left" rowspan="1" colspan="1" class="td">1968</td>
+     <td align="left" rowspan="1" colspan="1" class="td">SM 21, Vero 1</td>
+     <td align="left" rowspan="1" colspan="1" class="td">HQ234500
+      <xref ref-type="table-fn" rid="nt107" class="xref">‡</xref>
      </td>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1">EC Yap
-      <xref ref-type="table-fn" rid="nt105" class="xref" xmlns="">*</xref>
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td">ArD 41519</td>
+     <td align="left" rowspan="1" colspan="1" class="td">
+      <italic class="italic">Aedes africanus</italic>
      </td>
-     <td align="left" rowspan="1" colspan="1">Human blood</td>
-     <td align="left" rowspan="1" colspan="1">Micronesia</td>
-     <td align="left" rowspan="1" colspan="1">2007</td>
-     <td align="left" rowspan="1" colspan="1">N/A</td>
-     <td align="left" rowspan="1" colspan="1">
-      <xref ref-type="bibr" rid="pntd.0001477-Kuno1" class="xref" xmlns="">[16]</xref> (EU545988)
-     </td>
-    </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1">FSS13025</td>
-     <td align="left" rowspan="1" colspan="1">Human blood</td>
-     <td align="left" rowspan="1" colspan="1">Cambodia</td>
-     <td align="left" rowspan="1" colspan="1">2010</td>
-     <td align="left" rowspan="1" colspan="1">Vero 1</td>
-     <td align="left" rowspan="1" colspan="1">JN860885
-      <xref ref-type="table-fn" rid="nt107" class="xref" xmlns="">‡</xref>
+     <td align="left" rowspan="1" colspan="1" class="td">Senegal</td>
+     <td align="left" rowspan="1" colspan="1" class="td">1984</td>
+     <td align="left" rowspan="1" colspan="1" class="td">AP61#1, C6/36#2</td>
+     <td align="left" rowspan="1" colspan="1" class="td">HQ234501
+      <xref ref-type="table-fn" rid="nt107" class="xref">‡</xref>
      </td>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1">SM-6 V-1
-      <xref ref-type="table-fn" rid="nt106" class="xref" xmlns="">†</xref>
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td">EC Yap
+      <xref ref-type="table-fn" rid="nt105" class="xref">*</xref>
      </td>
-     <td align="left" rowspan="1" colspan="1">Unknown</td>
-     <td align="left" rowspan="1" colspan="1">Unknown</td>
-     <td align="left" rowspan="1" colspan="1">Unknown</td>
-     <td align="left" rowspan="1" colspan="1">Unknown</td>
-     <td align="left" rowspan="1" colspan="1">
-      <xref ref-type="bibr" rid="pntd.0001477-Theiler1" class="xref" xmlns="">[21]</xref> (DQ859064)
+     <td align="left" rowspan="1" colspan="1" class="td">Human blood</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Micronesia</td>
+     <td align="left" rowspan="1" colspan="1" class="td">2007</td>
+     <td align="left" rowspan="1" colspan="1" class="td">N/A</td>
+     <td align="left" rowspan="1" colspan="1" class="td">
+      <xref ref-type="bibr" rid="pntd.0001477-Kuno1" class="xref">[16]</xref> (EU545988)
+     </td>
+    </tr>
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td">FSS13025</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Human blood</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Cambodia</td>
+     <td align="left" rowspan="1" colspan="1" class="td">2010</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Vero 1</td>
+     <td align="left" rowspan="1" colspan="1" class="td">JN860885
+      <xref ref-type="table-fn" rid="nt107" class="xref">‡</xref>
+     </td>
+    </tr>
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td">SM-6 V-1
+      <xref ref-type="table-fn" rid="nt106" class="xref">†</xref>
+     </td>
+     <td align="left" rowspan="1" colspan="1" class="td">Unknown</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Unknown</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Unknown</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Unknown</td>
+     <td align="left" rowspan="1" colspan="1" class="td">
+      <xref ref-type="bibr" rid="pntd.0001477-Theiler1" class="xref">[21]</xref> (DQ859064)
      </td>
     </tr>
    </tbody>

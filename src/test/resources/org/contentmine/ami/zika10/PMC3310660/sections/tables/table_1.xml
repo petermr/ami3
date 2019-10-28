@@ -8,264 +8,264 @@
  <alternatives class="alternatives">
   <graphic id="pone-0021045-t001-1" xlink:href="pone.0021045.t001" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
   <table frame="hsides" rules="groups" class="table">
-   <colgroup span="1" xmlns="http://www.w3.org/1999/xhtml">
-    <col align="left" span="1"/>
-    <col align="center" span="1"/>
-    <col align="center" span="1"/>
-    <col align="center" span="1"/>
-    <col align="center" span="1"/>
-    <col align="center" span="1"/>
-    <col align="center" span="1"/>
-    <col align="center" span="1"/>
-    <col align="center" span="1"/>
-    <col align="center" span="1"/>
+   <colgroup span="1" class="colgroup">
+    <col align="left" span="1" class="col"/>
+    <col align="center" span="1" class="col"/>
+    <col align="center" span="1" class="col"/>
+    <col align="center" span="1" class="col"/>
+    <col align="center" span="1" class="col"/>
+    <col align="center" span="1" class="col"/>
+    <col align="center" span="1" class="col"/>
+    <col align="center" span="1" class="col"/>
+    <col align="center" span="1" class="col"/>
+    <col align="center" span="1" class="col"/>
    </colgroup>
-   <thead xmlns="http://www.w3.org/1999/xhtml">
-    <tr>
-     <td align="left" rowspan="1" colspan="1">Target/ZFN Pair</td>
-     <td align="left" rowspan="1" colspan="1">Experiment</td>
-     <td align="left" rowspan="1" colspan="1">mRNA conc. (ng/
-      <bold class="bold" xmlns="">µ</bold>l)
+   <thead class="thead">
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td">Target/ZFN Pair</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Experiment</td>
+     <td align="left" rowspan="1" colspan="1" class="td">mRNA conc. (ng/
+      <bold class="bold">µ</bold>l)
      </td>
-     <td align="left" rowspan="1" colspan="1">Oocytes injected/transferred</td>
-     <td align="left" rowspan="1" colspan="1">Oocytes per recipient</td>
-     <td align="left" rowspan="1" colspan="1">Offspring live/stillborn</td>
-     <td align="left" rowspan="1" colspan="1">F0 mutated (% of live offspring)</td>
-     <td align="left" rowspan="1" colspan="1">Mutations in F0</td>
-     <td align="left" rowspan="1" colspan="1">Founder (line) ID/gender</td>
-     <td align="left" rowspan="1" colspan="1">Mutated/total offspring in F1 (%)</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Oocytes injected/transferred</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Oocytes per recipient</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Offspring live/stillborn</td>
+     <td align="left" rowspan="1" colspan="1" class="td">F0 mutated (% of live offspring)</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Mutations in F0</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Founder (line) ID/gender</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Mutated/total offspring in F1 (%)</td>
     </tr>
    </thead>
-   <tbody xmlns="http://www.w3.org/1999/xhtml">
-    <tr>
-     <td align="left" rowspan="1" colspan="1">IgM exon 118255/18257</td>
-     <td align="left" rowspan="1" colspan="1">1</td>
-     <td align="left" rowspan="1" colspan="1">3</td>
-     <td align="left" rowspan="1" colspan="1">40/22</td>
-     <td align="left" rowspan="1" colspan="1">11</td>
-     <td align="left" rowspan="1" colspan="1">2/1</td>
-     <td align="left" rowspan="1" colspan="1">1 (50)</td>
-     <td align="left" rowspan="1" colspan="1">Δ1; Δ25</td>
-     <td align="left" rowspan="1" colspan="1">22821/f</td>
-     <td align="left" rowspan="1" colspan="1">0/17
-      <xref ref-type="table-fn" rid="nt102" class="xref" xmlns="">°</xref> (0)
+   <tbody class="tbody">
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td">IgM exon 118255/18257</td>
+     <td align="left" rowspan="1" colspan="1" class="td">1</td>
+     <td align="left" rowspan="1" colspan="1" class="td">3</td>
+     <td align="left" rowspan="1" colspan="1" class="td">40/22</td>
+     <td align="left" rowspan="1" colspan="1" class="td">11</td>
+     <td align="left" rowspan="1" colspan="1" class="td">2/1</td>
+     <td align="left" rowspan="1" colspan="1" class="td">1 (50)</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Δ1; Δ25</td>
+     <td align="left" rowspan="1" colspan="1" class="td">22821/f</td>
+     <td align="left" rowspan="1" colspan="1" class="td">0/17
+      <xref ref-type="table-fn" rid="nt102" class="xref">°</xref> (0)
      </td>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1">11</td>
-     <td align="left" rowspan="1" colspan="1">1/0</td>
-     <td align="left" rowspan="1" colspan="1">1 (100)</td>
-     <td align="left" rowspan="1" colspan="1">Δ10</td>
-     <td align="left" rowspan="1" colspan="1">22822/f
-      <xref ref-type="table-fn" rid="nt103" class="xref" xmlns="">#</xref>
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td">11</td>
+     <td align="left" rowspan="1" colspan="1" class="td">1/0</td>
+     <td align="left" rowspan="1" colspan="1" class="td">1 (100)</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Δ10</td>
+     <td align="left" rowspan="1" colspan="1" class="td">22822/f
+      <xref ref-type="table-fn" rid="nt103" class="xref">#</xref>
      </td>
-     <td align="left" rowspan="1" colspan="1"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1">2</td>
-     <td align="left" rowspan="1" colspan="1">3</td>
-     <td align="left" rowspan="1" colspan="1">133/120</td>
-     <td align="left" rowspan="1" colspan="1">30</td>
-     <td align="left" rowspan="1" colspan="1">5/0</td>
-     <td align="left" rowspan="1" colspan="1">1 (20)</td>
-     <td align="left" rowspan="1" colspan="1">+11 (Δ7+18)</td>
-     <td align="left" rowspan="1" colspan="1">22823/m</td>
-     <td align="left" rowspan="1" colspan="1">1/80 (1.3)</td>
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td">2</td>
+     <td align="left" rowspan="1" colspan="1" class="td">3</td>
+     <td align="left" rowspan="1" colspan="1" class="td">133/120</td>
+     <td align="left" rowspan="1" colspan="1" class="td">30</td>
+     <td align="left" rowspan="1" colspan="1" class="td">5/0</td>
+     <td align="left" rowspan="1" colspan="1" class="td">1 (20)</td>
+     <td align="left" rowspan="1" colspan="1" class="td">+11 (Δ7+18)</td>
+     <td align="left" rowspan="1" colspan="1" class="td">22823/m</td>
+     <td align="left" rowspan="1" colspan="1" class="td">1/80 (1.3)</td>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1">30</td>
-     <td align="left" rowspan="1" colspan="1">0/9</td>
-     <td align="left" rowspan="1" colspan="1">4
-      <xref ref-type="table-fn" rid="nt101" class="xref" xmlns="">*</xref> (0)
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td">30</td>
+     <td align="left" rowspan="1" colspan="1" class="td">0/9</td>
+     <td align="left" rowspan="1" colspan="1" class="td">4
+      <xref ref-type="table-fn" rid="nt101" class="xref">*</xref> (0)
      </td>
-     <td align="left" rowspan="1" colspan="1">Δ5; Δ10; +1; +5 (Δ5+10)</td>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
+     <td align="left" rowspan="1" colspan="1" class="td">Δ5; Δ10; +1; +5 (Δ5+10)</td>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1">30</td>
-     <td align="left" rowspan="1" colspan="1">7/2</td>
-     <td align="left" rowspan="1" colspan="1">3 (43)</td>
-     <td align="left" rowspan="1" colspan="1">Δ10; Δ1</td>
-     <td align="left" rowspan="1" colspan="1">22826/m</td>
-     <td align="left" rowspan="1" colspan="1">21
-      <xref ref-type="table-fn" rid="nt105" class="xref" xmlns="">**</xref>/83 (25)
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td">30</td>
+     <td align="left" rowspan="1" colspan="1" class="td">7/2</td>
+     <td align="left" rowspan="1" colspan="1" class="td">3 (43)</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Δ10; Δ1</td>
+     <td align="left" rowspan="1" colspan="1" class="td">22826/m</td>
+     <td align="left" rowspan="1" colspan="1" class="td">21
+      <xref ref-type="table-fn" rid="nt105" class="xref">**</xref>/83 (25)
      </td>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1">Δ10</td>
-     <td align="left" rowspan="1" colspan="1">22828/f
-      <xref ref-type="table-fn" rid="nt104" class="xref" xmlns="">§</xref>
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td">Δ10</td>
+     <td align="left" rowspan="1" colspan="1" class="td">22828/f
+      <xref ref-type="table-fn" rid="nt104" class="xref">§</xref>
      </td>
-     <td align="left" rowspan="1" colspan="1"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1">Δ7 (Δ8+1)</td>
-     <td align="left" rowspan="1" colspan="1">22830/f</td>
-     <td align="left" rowspan="1" colspan="1">7/14 (50)</td>
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td">Δ7 (Δ8+1)</td>
+     <td align="left" rowspan="1" colspan="1" class="td">22830/f</td>
+     <td align="left" rowspan="1" colspan="1" class="td">7/14 (50)</td>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1">3</td>
-     <td align="left" rowspan="1" colspan="1">5</td>
-     <td align="left" rowspan="1" colspan="1">94/66</td>
-     <td align="left" rowspan="1" colspan="1">22</td>
-     <td align="left" rowspan="1" colspan="1">1/1</td>
-     <td align="left" rowspan="1" colspan="1">0 (0)</td>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td">3</td>
+     <td align="left" rowspan="1" colspan="1" class="td">5</td>
+     <td align="left" rowspan="1" colspan="1" class="td">94/66</td>
+     <td align="left" rowspan="1" colspan="1" class="td">22</td>
+     <td align="left" rowspan="1" colspan="1" class="td">1/1</td>
+     <td align="left" rowspan="1" colspan="1" class="td">0 (0)</td>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1">22</td>
-     <td align="left" rowspan="1" colspan="1">1/2</td>
-     <td align="left" rowspan="1" colspan="1">1
-      <xref ref-type="table-fn" rid="nt101" class="xref" xmlns="">*</xref> (0)
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td">22</td>
+     <td align="left" rowspan="1" colspan="1" class="td">1/2</td>
+     <td align="left" rowspan="1" colspan="1" class="td">1
+      <xref ref-type="table-fn" rid="nt101" class="xref">*</xref> (0)
      </td>
-     <td align="left" rowspan="1" colspan="1">Δ8; Δ13</td>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
+     <td align="left" rowspan="1" colspan="1" class="td">Δ8; Δ13</td>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1">22</td>
-     <td align="left" rowspan="1" colspan="1">0</td>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td">22</td>
+     <td align="left" rowspan="1" colspan="1" class="td">0</td>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1">IgM exon218276/18277</td>
-     <td align="left" rowspan="1" colspan="1">4</td>
-     <td align="left" rowspan="1" colspan="1">3</td>
-     <td align="left" rowspan="1" colspan="1">96/75</td>
-     <td align="left" rowspan="1" colspan="1">20</td>
-     <td align="left" rowspan="1" colspan="1">1/0</td>
-     <td align="left" rowspan="1" colspan="1">1 (100)</td>
-     <td align="left" rowspan="1" colspan="1">Δ16</td>
-     <td align="left" rowspan="1" colspan="1">24656/f</td>
-     <td align="left" rowspan="1" colspan="1">2/5 (40)</td>
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td">IgM exon218276/18277</td>
+     <td align="left" rowspan="1" colspan="1" class="td">4</td>
+     <td align="left" rowspan="1" colspan="1" class="td">3</td>
+     <td align="left" rowspan="1" colspan="1" class="td">96/75</td>
+     <td align="left" rowspan="1" colspan="1" class="td">20</td>
+     <td align="left" rowspan="1" colspan="1" class="td">1/0</td>
+     <td align="left" rowspan="1" colspan="1" class="td">1 (100)</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Δ16</td>
+     <td align="left" rowspan="1" colspan="1" class="td">24656/f</td>
+     <td align="left" rowspan="1" colspan="1" class="td">2/5 (40)</td>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1">28</td>
-     <td align="left" rowspan="1" colspan="1">2/0</td>
-     <td align="left" rowspan="1" colspan="1">1 (50)</td>
-     <td align="left" rowspan="1" colspan="1">Δ19</td>
-     <td align="left" rowspan="1" colspan="1">24657/m</td>
-     <td align="left" rowspan="1" colspan="1">5/16 (31)</td>
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td">28</td>
+     <td align="left" rowspan="1" colspan="1" class="td">2/0</td>
+     <td align="left" rowspan="1" colspan="1" class="td">1 (50)</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Δ19</td>
+     <td align="left" rowspan="1" colspan="1" class="td">24657/m</td>
+     <td align="left" rowspan="1" colspan="1" class="td">5/16 (31)</td>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1">27</td>
-     <td align="left" rowspan="1" colspan="1">0/2</td>
-     <td align="left" rowspan="1" colspan="1">1
-      <xref ref-type="table-fn" rid="nt101" class="xref" xmlns="">*</xref> (0)
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td">27</td>
+     <td align="left" rowspan="1" colspan="1" class="td">0/2</td>
+     <td align="left" rowspan="1" colspan="1" class="td">1
+      <xref ref-type="table-fn" rid="nt101" class="xref">*</xref> (0)
      </td>
-     <td align="left" rowspan="1" colspan="1">Δ15</td>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
+     <td align="left" rowspan="1" colspan="1" class="td">Δ15</td>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1">5</td>
-     <td align="left" rowspan="1" colspan="1">3</td>
-     <td align="left" rowspan="1" colspan="1">27/25</td>
-     <td align="left" rowspan="1" colspan="1">25</td>
-     <td align="left" rowspan="1" colspan="1">0/1</td>
-     <td align="left" rowspan="1" colspan="1">0 (0)</td>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td">5</td>
+     <td align="left" rowspan="1" colspan="1" class="td">3</td>
+     <td align="left" rowspan="1" colspan="1" class="td">27/25</td>
+     <td align="left" rowspan="1" colspan="1" class="td">25</td>
+     <td align="left" rowspan="1" colspan="1" class="td">0/1</td>
+     <td align="left" rowspan="1" colspan="1" class="td">0 (0)</td>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1">6</td>
-     <td align="left" rowspan="1" colspan="1">3</td>
-     <td align="left" rowspan="1" colspan="1">136/112</td>
-     <td align="left" rowspan="1" colspan="1">28</td>
-     <td align="left" rowspan="1" colspan="1">0/0</td>
-     <td align="left" rowspan="1" colspan="1">0 (0)</td>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td">6</td>
+     <td align="left" rowspan="1" colspan="1" class="td">3</td>
+     <td align="left" rowspan="1" colspan="1" class="td">136/112</td>
+     <td align="left" rowspan="1" colspan="1" class="td">28</td>
+     <td align="left" rowspan="1" colspan="1" class="td">0/0</td>
+     <td align="left" rowspan="1" colspan="1" class="td">0 (0)</td>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1">28</td>
-     <td align="left" rowspan="1" colspan="1">6/0</td>
-     <td align="left" rowspan="1" colspan="1">0 (0)</td>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td">28</td>
+     <td align="left" rowspan="1" colspan="1" class="td">6/0</td>
+     <td align="left" rowspan="1" colspan="1" class="td">0 (0)</td>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1">28</td>
-     <td align="left" rowspan="1" colspan="1">6/0</td>
-     <td align="left" rowspan="1" colspan="1">1 (17)</td>
-     <td align="left" rowspan="1" colspan="1">Δ15</td>
-     <td align="left" rowspan="1" colspan="1">25035/f</td>
-     <td align="left" rowspan="1" colspan="1">1/6 (17)</td>
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td">28</td>
+     <td align="left" rowspan="1" colspan="1" class="td">6/0</td>
+     <td align="left" rowspan="1" colspan="1" class="td">1 (17)</td>
+     <td align="left" rowspan="1" colspan="1" class="td">Δ15</td>
+     <td align="left" rowspan="1" colspan="1" class="td">25035/f</td>
+     <td align="left" rowspan="1" colspan="1" class="td">1/6 (17)</td>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1"/>
-     <td align="left" rowspan="1" colspan="1">28</td>
-     <td align="left" rowspan="1" colspan="1">2/0</td>
-     <td align="left" rowspan="1" colspan="1">1 (50)</td>
-     <td align="left" rowspan="1" colspan="1">+1</td>
-     <td align="left" rowspan="1" colspan="1">25039/m</td>
-     <td align="left" rowspan="1" colspan="1">2/13 (15)</td>
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td"/>
+     <td align="left" rowspan="1" colspan="1" class="td">28</td>
+     <td align="left" rowspan="1" colspan="1" class="td">2/0</td>
+     <td align="left" rowspan="1" colspan="1" class="td">1 (50)</td>
+     <td align="left" rowspan="1" colspan="1" class="td">+1</td>
+     <td align="left" rowspan="1" colspan="1" class="td">25039/m</td>
+     <td align="left" rowspan="1" colspan="1" class="td">2/13 (15)</td>
     </tr>
    </tbody>
   </table>

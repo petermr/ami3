@@ -202,8 +202,7 @@ public class AMISectionToolTest {
 //				+ "-p " + "/Users/pm286/workspace/projects/climate/searches/climatechange"
 //				+ " -v"
 				+ " --forcemake"
-				+ " --tables"
-				+ " --figures"
+				+ " --extract table fig"
 //				+ " --sections "
 //				+ " " + SectionTag.ARTICLE
 //				+ " --write false
@@ -220,6 +219,23 @@ public class AMISectionToolTest {
 				+ " --forcemake"
 				+ " --boldsections"
 
+			;
+		new AMISectionTool().runCommands(args);
+	}
+
+	@Test
+	public void testSummary() {
+		String args = ""
+//				+ "-t " + new File(AMIFixtures.TEST_OIL5_DIR, "PMC4391421")
+//				+ "-p " + AMIFixtures.TEST_OIL5_DIR
+//				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
+//				+ "-p " + "/Users/pm286/workspace/projects/climate/searches/clim107"
+				+ "-p " + "/Users/pm286/workspace/projects/CEV/searches/oil186"
+//				+ "-p " + "/Users/pm286/workspace/projects/CEV/searches/oil1000"
+//				+ "-p " + "/Users/pm286/workspace/projects/climate/searches/climatechange"
+				+ " --forcemake"
+				+ " --extract table fig"
+				+ " --summary figure table "
 			;
 		new AMISectionTool().runCommands(args);
 	}

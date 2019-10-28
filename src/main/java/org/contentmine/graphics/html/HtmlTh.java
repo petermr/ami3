@@ -35,8 +35,9 @@ public class HtmlTh extends HtmlElement {
 	public HtmlTh() {
 		super(TAG);
 	}
+	
 	/**
-	 * create a Td with the included text
+	 * create a Th with the included text
 	 * @param content
 	 * @return
 	 */

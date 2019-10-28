@@ -16,6 +16,7 @@
 
     package org.contentmine.graphics.html;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.HashSet;
@@ -591,6 +592,19 @@ public abstract class HtmlElement extends AbstractCMElement {
 		return coord;
 	}
 
+	/** create HTMLElement from file
+	 * 
+	 * @param file throws RuntimeException if null of non-existent
+	 * @return
+	 */
+	public static HtmlElement create(File file) {
+		if (file == null | !file.exists()) {
+			throw new RuntimeException("null or non-existent file: "+file);
+		}
+		Element element = XMLUtil.parseQuietlyToRootElement(file);
+		HtmlElement htmlElement = HtmlElement.create(element);
+		return htmlElement;
+	}
 
 
 }

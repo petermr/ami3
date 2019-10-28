@@ -42,15 +42,18 @@ public class HtmlTd extends HtmlElement {
 	public HtmlTd() {
 		super(TAG);
 	}
+	
+	public HtmlTd(String value) {
+		this();
+		this.appendChild(value);
+	}
 	/**
 	 * create a Td with the included text
 	 * @param content
 	 * @return
 	 */
-	public static HtmlElement createAndWrapText(String content) {
-		HtmlElement td = new HtmlTd();
-		td.appendChild(content);
-		return td;
+	public static HtmlTd createAndWrapText(String content) {
+		return content == null ? null : new HtmlTd(content);
 	}
 
 
