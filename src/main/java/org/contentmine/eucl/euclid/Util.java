@@ -1535,6 +1535,44 @@ public class Util implements EuclidConstants {
 	}
 
 	/**
+	 * replaces all concatenated unicode whitespace characters with a single space
+	 * @param s
+	 * @return
+	 */
+	
+	public static String normalizeUnicodeWhitespaces(String s) {
+		return replaceUnicodeWhitespaces(s, " ");
+	}
+	
+	/**
+	 * see https://stackoverflow.com/questions/58656881/removing-all-non-printing-characters-by-regex#58657001
+	 * All the characters you provided belong to the Separator, space Unicode category, so, you may use
+
+s = s.replaceAll("\\p{Zs}+", " ");
+To replace all horizontal whitespaces with a single regular ASCII space you may use
+
+s = s.replaceAll("\\h+", " ");
+If you want to shrink all Unicode whitespace to a single space
+
+s = s.replaceAll("(?U)\\s+", " "); <<<< uses this with variable replacement, i.e.
+You may split directly with
+
+s.split("\\p{Zs}+")
+or
+
+s.split("(?U)\\s+")
+
+
+s = s.replaceAll("(?U)\\s+", replace);
+	 * @param s
+	 * @param replace string to replace with
+	 * @return
+	 */
+	public static String replaceUnicodeWhitespaces(String s, String replace) {
+		return s == null ? null : s.replaceAll("(?U)\\s+", replace);
+	}
+	
+	/**
 	 * @param s
 	 *            string to be edited
 	 * @param ent
@@ -3338,12 +3376,13 @@ public class Util implements EuclidConstants {
 			try {
 				List<Path> paths = Files.list(Paths.get(dir.toString())).collect(Collectors.toList());
 				for (Path path : paths) {
-					if (regex == null || Pattern.matches(regex, path.toString())) {
+					String pathS = path.toString();
+					if (regex == null || Pattern.matches(regex, pathS)) {
 						fileList.add(path.toFile());
 					}
 				}
 			} catch (IOException e) {
-				throw new RuntimeException("cannot list files", e);
+				throw new RuntimeException("cannot list files in " + dir, e);
 			}
 		}
 		return fileList;

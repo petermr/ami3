@@ -16,13 +16,16 @@
 
 package org.contentmine.graphics.html;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.log4j.Logger;
+import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.util.HtmlUtil;
 
 import nu.xom.Attribute;
+import nu.xom.Element;
 import nu.xom.Nodes;
 
 
@@ -200,6 +203,31 @@ public class HtmlTable extends HtmlElement {
 
 	public static List<HtmlTable> extractTables(HtmlElement htmlElement, String xpath) {
 		return HtmlTable.extractTables(HtmlUtil.getQueryHtmlElements(htmlElement, xpath));
+	}
+
+	public static List<HtmlTable> extractTables(File tableFile) {
+		HtmlElement htmlElement = HtmlElement.create(tableFile);
+		return extractSelfAndDescendantTables(htmlElement);
+	}
+
+	/** gets a row of header values either from Thead or first tr[th] row.
+	 *  MESSY because there are two different approaches 
+	 * @return
+	 */
+	public HtmlTr getHeaderRow() {
+		HtmlTr tr = null;
+		HtmlThead thead = this.getThead();
+		if (thead != null) {
+			tr = thead.getOrCreateChildTr();
+		} else {
+			tr = this.getSingleLeadingTrThChild();
+		}
+		return tr;
+	}
+
+	public String getCaption() {
+		List<Element> captions = XMLUtil.getQueryElements(this, "//*[local-name()='"+HtmlCaption.TAG+"']");
+		return captions.size() == 0 ? null : captions.get(0).getValue().replaceAll("\n", " ").replaceAll("\\s+", " ");
 	}
 
 

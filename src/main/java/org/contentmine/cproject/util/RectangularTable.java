@@ -44,8 +44,11 @@ public class RectangularTable {
 	private List<List<String>> rows;
 	private List<String> currentRow;
 	private int truncateChars = -1;
-	private Map<Integer, List<String>> columnByIndexMap;
+	private Map<Integer, RectTabColumn> columnByIndexMap;
 	private HashMap<Integer, Map<String, Integer>> rowIndexByCellValueMapByColumnIndexMap;
+	private String caption;
+
+	private List<RectTabColumn> completeColumnList;
 	
 	public RectangularTable() {
 	}
@@ -317,14 +320,17 @@ public class RectangularTable {
 	 * @param jcol
 	 * @return
 	 */
-	public List<String> getColumn(Integer jcol) {
+	public RectTabColumn getColumn(Integer jcol) {
 		getOrCreateColumnByIndexMap();
-		List<String> column = columnByIndexMap.get(jcol);
+		RectTabColumn column = columnByIndexMap.get(jcol);
 		if (column == null) {
-			column = new ArrayList<String>();
+			column = new RectTabColumn();
 			for (int irow = 0; irow < rows.size(); irow++) {
 				List<String> row = rows.get(irow);
-				column.add(row.get(jcol));
+				column.add(jcol >= row.size() ? null : row.get(jcol));
+			}
+			if (header != null) {
+				column.setHeader(header.get(jcol));
 			}
 			columnByIndexMap.put(jcol, column);
 		}
@@ -365,12 +371,42 @@ public class RectangularTable {
 		return rows == null ? 0 : rows.size();
 	}
 
-	public boolean addColumn(List<String> col, String head) {
+	/** adds column with specific header.
+	 * 
+	 * @param col
+	 * @param head
+	 * @return
+	 */
+	@Deprecated // use addColumn with header already set
+	
+	public boolean addColumn(RectTabColumn col, String head) {
+		String colHead = col.getHeader();
+		if (colHead == null) {
+			col.setHeader(head);
+		} else if (colHead.equals(head)) {
+			throw new RuntimeException("Changing column heade not allowed");
+		}
+		return addColumn(col);
+	}
+
+	/** add column
+	 * must have header set
+	 * @param col
+	 * @return
+	 * @throws RuntimeException if header is null
+	 */
+	private boolean addColumn(RectTabColumn col) {
+		if (col == null) {
+			throw new RuntimeException("column cannot be null");
+		}
 		if (!isMergeable(this, col)) {
 			return false;
 		}
+		if (col.getHeader() == null) {
+			throw new RuntimeException("column must have header");
+		}
 		ensureHeader();
-		this.header.add(head);
+		this.header.add(col.getHeader());
 		for (int i = 0; i < rows.size(); i++) {
 			String value = col.get(i);
 			if (rows.get(i) == null) {
@@ -453,12 +489,12 @@ public class RectangularTable {
 	 * @return
 	 */
 	public static List<Integer> getMapping0to1(RectangularTable table0, RectangularTable table1, String colHead) {
-		List<String> col0 = table0.getColumn(colHead);
-		List<String> col1 = table1.getColumn(colHead);
+		RectTabColumn col0 = table0.getColumn(colHead);
+		RectTabColumn col1 = table1.getColumn(colHead);
 		return getMapping0to1(col0, col1);
 	}
 
-	public static List<Integer> getMapping0to1(List<String> col0, List<String> col1) {
+	public static List<Integer> getMapping0to1(RectTabColumn col0, RectTabColumn col1) {
 		Map<String, Integer> index0 = createIndex(col0);
 		Map<String, Integer> index1 = createIndex(col1);
 		List<Integer> map0to1 = new ArrayList<Integer>();
@@ -488,7 +524,7 @@ public class RectangularTable {
 		return renamed;
 	}
 	
-	public List<String> getColumn(String col) {
+	public RectTabColumn getColumn(String col) {
 		int idx = this.getIndexOfColumn(col);
 		return (idx == -1) ? null : this.getColumn(idx);
 	}
@@ -504,13 +540,15 @@ public class RectangularTable {
 		return sb.toString();
 	}
 
-	public List<Entry<String>> extractSortedMultisetList(String colHead) {
-		List<String> col = this.getColumn(colHead);
-		Multiset<String> set = HashMultiset.create();
-		set.addAll(col);
-		return CMineUtil.getEntryListSortedByCount(set);
+	/**
+	 * 
+	 * @param colHead
+	 * @return if no column returns empty List
+	 */
+	public List<Entry<String>> extractSortedMultisetListForColumn(String colHead) {
+		RectTabColumn col = this.getColumn(colHead);
+		return col == null ? new ArrayList<Entry<String>>() : col.extractSortedMultisetListForColumn();
 	}
-	
 
 	public static List<String> getValues(CSVRecord record) {
 		List<String> values = new ArrayList<String>();
@@ -523,7 +561,7 @@ public class RectangularTable {
 	}
 
 	public List<Entry<String>> extractDuplicateMultisetList(String colHead) {
-		List<Entry<String>> multisetList = extractSortedMultisetList(colHead);
+		List<Entry<String>> multisetList = extractSortedMultisetListForColumn(colHead);
 		List<Entry<String>> duplicateList = new ArrayList<Entry<String>>();
 		for (Entry<String> entry : multisetList) {
 			if (entry.getCount() > 1) {
@@ -537,7 +575,7 @@ public class RectangularTable {
 	}
 
 	public List<Entry<String>> extractUniqueMultisetList(String colHead) {
-		List<Entry<String>> multisetList = extractSortedMultisetList(colHead);
+		List<Entry<String>> multisetList = extractSortedMultisetListForColumn(colHead);
 		List<Entry<String>> uniqueList = new ArrayList<Entry<String>>();
 		for (Entry<String> entry : multisetList) {
 			if (entry.getCount() == 1) {
@@ -555,7 +593,7 @@ public class RectangularTable {
 		List<Integer> columnIndexes = extractColumnIndexes(columnHeadings);
 		for (int i = 0; i < columnIndexes.size(); i++) {
 			int jcol = columnIndexes.get(i);
-			List<String> column = this.getColumn(jcol);
+			RectTabColumn column = this.getColumn(jcol);
 			String head = header.get(jcol);
 			newTable.addColumn(column, head);
 		}
@@ -591,7 +629,7 @@ public class RectangularTable {
 		columnByIndexMap = null;
 	}
 
-	private static Map<String, Integer> createIndex(List<String> col) {
+	private static Map<String, Integer> createIndex(RectTabColumn col) {
 		Map<String, Integer> index = new HashMap<String, Integer>();
 		for (int i = 0; i < col.size(); i++) {
 			index.put(col.get(i), (Integer) i);
@@ -637,9 +675,9 @@ public class RectangularTable {
 		}
 	}
 
-	private Map<Integer, List<String>> getOrCreateColumnByIndexMap() {
+	private Map<Integer, RectTabColumn> getOrCreateColumnByIndexMap() {
 		if (columnByIndexMap == null) {
-			columnByIndexMap = new HashMap<Integer, List<String>>();
+			columnByIndexMap = new HashMap<Integer, RectTabColumn>();
 		}
 		return columnByIndexMap;
 	}
@@ -649,7 +687,7 @@ public class RectangularTable {
 		if (rowIndexByCellValueMap == null) {
 			rowIndexByCellValueMap = new HashMap<String, Integer>();
 			rowIndexByCellValueMapByColumnIndexMap.put(jcol, rowIndexByCellValueMap);
-			List<String> column = getColumn(jcol);
+			RectTabColumn column = getColumn(jcol);
 			for (int irow = 0; irow < column.size(); irow++) {
 				String valuec = column.get(irow);
 				rowIndexByCellValueMap.put(valuec, new Integer(irow));
@@ -666,8 +704,8 @@ public class RectangularTable {
 
 	private boolean haveSortedCommonColumn(RectangularTable csvTable1, String col) {
 		if (!isMergeable(this, csvTable1)) return false;
-		List<String> col0 = this.getColumn(col);
-		List<String> col1 = csvTable1.getColumn(col);
+		RectTabColumn col0 = this.getColumn(col);
+		RectTabColumn col1 = csvTable1.getColumn(col);
 		if (col0 != null && col1 != null) {
 			for (int irow = 0; irow < col0.size(); irow++) {
 				String value0 = col0.get(irow);
@@ -681,7 +719,7 @@ public class RectangularTable {
 		return true;
 	}
 
-	private boolean isMergeable(RectangularTable csvTable, List<String> col) {
+	private boolean isMergeable(RectangularTable csvTable, RectTabColumn col) {
 		if (csvTable == null || csvTable.rows == null || col == null) return false;
 		if (csvTable.size() != col.size()) {
 			LOG.warn("Cannot add column of size ("+col.size()+") to table ("+this.size()+")");
@@ -707,16 +745,16 @@ public class RectangularTable {
 	private RectangularTable mergeTables(RectangularTable csvTable, List<String> mergeCols) {
 		RectangularTable table = new RectangularTable(this);
 		for (String col : mergeCols) {
-			List<String> colVals = csvTable.getColumn(col);
-			table.addColumn(colVals, col);
+			RectTabColumn column = csvTable.getColumn(col);
+			table.addColumn(column, col);
 		}
 		return table;
 	}
 
 	public List<String> getValuesNotIn(RectangularTable notTable, String colHead) {
-		List<String> notList = notTable.getColumn(colHead);
-		Set<String> notSet = new HashSet<String>(notList);
-		List<String> thisColumn = this.getColumn(colHead);
+		RectTabColumn notList = notTable.getColumn(colHead);
+		Set<String> notSet = new HashSet<String>(notList.getValues());
+		RectTabColumn thisColumn = this.getColumn(colHead);
 		List<String> newColumn = new ArrayList<String>();
 		for (String value : thisColumn) {
 			if (!notSet.contains(value)) {
@@ -727,12 +765,12 @@ public class RectangularTable {
 	}
 
 	public void writeColumn(File outputCsvFile, String columnHeading) throws IOException {
-		List<String> lines = getColumn(columnHeading);
-		FileUtils.writeLines(outputCsvFile, lines, "\n");
+		RectTabColumn lines = getColumn(columnHeading);
+		FileUtils.writeLines(outputCsvFile, lines.getValues(), "\n");
 	}
 	
 	public static RectangularTable createRectangularTable(HtmlTable table) {
-		HtmlTr tr = table.getSingleLeadingTrThChild();
+		HtmlTr tr = table.getHeaderRow();
 		List<String> header = tr == null ? null : tr.getThCellValues();
 		RectangularTable rectangularTable = new RectangularTable(header);
 		List<HtmlTr> trTdList = table.getTrTdRows();
@@ -753,14 +791,45 @@ public class RectangularTable {
 		return rectangularTable;
 	}
 
-	public List<List<String>> getColumnList(String[] colNames) {
-		List<List<String>> columnList = new ArrayList<List<String>>();
+	public List<RectTabColumn> getColumnList(String[] colNames) {
+		List<RectTabColumn> columnList = new ArrayList<>();
 		for (String colName : colNames) {
-			List<String> column = this.getColumn(colName);
+			RectTabColumn column = this.getColumn(colName);
 			columnList.add(column);
 		}
 		return columnList;
 	}
+	
+	public Integer getColumnCount() {
+		return header == null ? null : header.size();
+	}
+	
+	public List<RectTabColumn> getCompleteColumnList() {
+		completeColumnList = null;
+		if (completeColumnList == null && getColumnCount() != null) {
+			completeColumnList = new ArrayList<>();
+			for (int jcol = 0; jcol < getColumnCount(); jcol++) {
+				RectTabColumn col = this.getColumn(jcol);
+				completeColumnList.add(col);
+			}
+		}
+		return completeColumnList;
+	}
+
+	public List<String> getColumnValues(String doi) {
+		RectTabColumn column = this.getColumn(doi);
+		return column == null ? null : column.getValues();
+	}
+
+	public String getCaption() {
+		return caption;
+	}
+
+	public void setCaption(String caption) {
+		this.caption = caption;
+	}
+	
+	
 
 
 }

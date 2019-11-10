@@ -18,7 +18,6 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.regex.Matcher;
@@ -38,6 +37,7 @@ import org.contentmine.ami.lookups.WikipediaDictionary;
 import org.contentmine.ami.lookups.WikipediaLookup;
 import org.contentmine.cproject.files.DebugPrint;
 import org.contentmine.cproject.util.CMineGlobber;
+import org.contentmine.cproject.util.RectTabColumn;
 import org.contentmine.cproject.util.RectangularTable;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -324,8 +324,8 @@ public class AMIDictionaryTool extends AbstractAMITool {
 	private List<String> termList;
 	private List<String> nameList;
 	private List<String> linkList;
-	private List<List<String>> hrefColList;
-	private List<List<String>> dataColList;
+	private List<RectTabColumn> hrefColList;
+	private List<RectTabColumn> dataColList;
 	private Element dictionaryElement;
 	private HtmlTbody tBody;
 	private WikipediaDictionary wikipediaDictionary;
@@ -620,11 +620,11 @@ public class AMIDictionaryTool extends AbstractAMITool {
 		if (termCol == null) {
 			throw new RuntimeException("must give termCol");
 		}
-		termList = rectangularTable.getColumn(termCol);
+		termList = rectangularTable.getColumn(termCol).getValues();
 		if (termList == null) {
 			throw new RuntimeException("Cannot find term column");
 		}
-		nameList = rectangularTable.getColumn(nameCol);
+		nameList = rectangularTable.getColumn(nameCol).getValues();
 		if (dataCols != null) {
 			dataColList = rectangularTable.getColumnList(dataCols);
 			checkColumnsNotNull(dataColList, dataCols);
@@ -636,7 +636,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 		return rectangularTable;
 	}
 
-	private void checkColumnsNotNull(List<List<String>> colList, String[] colNames) {
+	private void checkColumnsNotNull(List<RectTabColumn> colList, String[] colNames) {
 		for (int i = 0; i < colList.size(); i++) {
 			if (colList.get(i) == null) {
 				LOG.warn("Cannot find column: "+colNames[i]);

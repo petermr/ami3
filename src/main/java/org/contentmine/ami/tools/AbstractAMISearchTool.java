@@ -180,6 +180,7 @@ public abstract class AbstractAMISearchTool extends AbstractAMITool {
     }
 
 	protected void createWordListInWordCollectionFactory() {
+		getOrCreateSearchProcessor();
 		wordCollectionFactory = abstractSearchArgProcessor.getOrCreateWordCollectionFactory();
 		
 		wordCollectionFactory.setMinRawWordLength(wordLengthRange.getMin());

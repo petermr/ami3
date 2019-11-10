@@ -21,6 +21,7 @@ import org.contentmine.cproject.files.DebugPrint;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.euclid.util.CMFileUtil;
 import org.contentmine.eucl.xml.XMLUtil;
+import org.contentmine.graphics.html.HtmlA;
 import org.contentmine.graphics.html.HtmlCaption;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlLabel;
@@ -30,6 +31,7 @@ import org.contentmine.graphics.html.HtmlTd;
 import org.contentmine.graphics.html.HtmlTh;
 import org.contentmine.graphics.html.HtmlThead;
 import org.contentmine.graphics.html.HtmlTr;
+import org.contentmine.graphics.html.util.HtmlUtil;
 import org.contentmine.norma.NormaTransformer;
 import org.contentmine.norma.sections.JATSArticleElement;
 import org.contentmine.norma.sections.JATSBoldElement;
@@ -79,14 +81,15 @@ public class AMISectionTool extends AbstractAMITool {
 	private static final String FIGURE_FILE_REGEX = ".*/\\d+_fig(ure)?_+(\\d+)\\.xml";
 	private static final String FIGURE_SUMMARY_DIR = "__figures";
 
+	/** probably not yet used */
 	private static final String RESULTS = "results";
-	private static final String RESULTS_DIR = "supplementary";
-	private static final String RESULTS_FILE_REGEX = ".*/\\d+_supp.*\\.xml";
-	private static final String RESULTS_SUMMARY_DIR = "__supplementary";
+	private static final String RESULTS_DIR = "results";
+	private static final String RESULTS_FILE_REGEX = ".*/results.xml";
+	private static final String RESULTS_SUMMARY_DIR = "__results";
 
 	private static final String SUPPLEMENTARY_ = "supplementary_";
 	private static final String SUPPLEMENTARY_DIR = "supplementary";
-	private static final String SUPPLEMENTARY_FILE_REGEX = ".*/\\d+_supp.*\\.xml";
+	private static final String SUPPLEMENTARY_FILE_REGEX = ".*/(\\d+)_supp.*\\.xml";
 	private static final String SUPPLEMENTARY_SUMMARY_DIR = "__supplementary";
 
 	private static final String TABLE_ = "table_";
@@ -197,6 +200,7 @@ public class AMISectionTool extends AbstractAMITool {
 	private File sectionsDir;
 	private File existingFulltextXML;
 	private int maxrows = 10;
+	private int currentSerial;
 		
 	public AMISectionTool() {
 		
@@ -308,8 +312,8 @@ public class AMISectionTool extends AbstractAMITool {
 		if (!matcher.matches()) {
 			throw new RuntimeException("cannot match file: "+matcher.matches()+" "+file+" ~~~ "+pattern);
 		}
-		int serial = new Integer(matcher.group(2));
-		File destFile = new File(newDirectory, filePrefix + serial + "." + CTree.XML);
+		currentSerial = new Integer(matcher.group(matcher.groupCount()));
+		File destFile = new File(newDirectory, filePrefix + currentSerial + "." + CTree.XML);
 		try {
 			if (!destFile.exists()) {
 				FileUtils.moveFile(file, destFile);
@@ -324,25 +328,41 @@ public class AMISectionTool extends AbstractAMITool {
 
 	private HtmlTr createSummaryRow(File destFile) {
 		HtmlElement htmlElement = HtmlElement.create(destFile);
-		HtmlTable table = (HtmlTable) XMLUtil.getSingleElement(htmlElement, "//*[local-name()='"+HtmlTable.TAG+"']");
-		if (table == null) {
-			// probably a figure
-//			System.err.println(destFile);
-//			System.err.println("null table");
-			return null;
+		
+		String tag = htmlElement.getLocalName();
+		HtmlTr tr = createRowWithLabelAndCaption(htmlElement);
+		// table may have a Thead OR may have a Tr/Th row
+		if (HtmlTable.TAG.equals(tag)) {
+			addTableColumnNames(htmlElement, tr);
 		}
-//		System.err.println("OK table");
+		return tr;
+	}
+
+	private HtmlTr createRowWithLabelAndCaption(HtmlElement htmlElement) {
 		String label = XMLUtil.getSingleValue(htmlElement, "./*[local-name()='"+JATSLabelElement.TAG+"']");
+		label = label == null ? "" : label.trim();
 		String caption = XMLUtil.getSingleValue(htmlElement, "./*[local-name()='"+JATSCaptionElement.TAG+"']");
 		caption = caption == null ? "" : caption.trim();
 		HtmlTr tr = new HtmlTr();
-		tr.appendChild((HtmlTd) HtmlTd.createAndWrapText(label));
-		tr.appendChild((HtmlTd) HtmlTd.createAndWrapText(Util.truncateAndAddEllipsis(caption.replaceAll("\\s*\\n\\s*", " "), 60)));
-		// table may have a Thead OR may have a Tr/Th row
-		HtmlThead thead = table.getThead();
+		// a href="../PMC4391421/sections/tables/table_1.xml">
+//		String href = "../"+cTree.getName()+"/sections/tables/"+"table_"+currentSerial+"."+CTree.XML;
+		String href = "table_"+currentSerial+"."+CTree.XML;
+		HtmlA a = new HtmlA();
+		a.setHref(href);
+		a.setContent(label);
+		HtmlTd td = new HtmlTd();
+		td.appendChild(a);
+		tr.appendChild(td);
+		String truncatedTitle = Util.truncateAndAddEllipsis(caption.replaceAll("\\s*\\n\\s*", " "), 60);
+		tr.appendChild((HtmlTd) HtmlTd.createAndWrapText(truncatedTitle));
+		return tr;
+	}
+
+	private void addTableColumnNames(HtmlElement htmlElement, HtmlTr tr) {
+		HtmlTable table = (HtmlTable) XMLUtil.getSingleElement(htmlElement, "/*[local-name()='"+HtmlTable.TAG+"']");
+		HtmlThead thead = table == null ? null : table.getThead();
 		HtmlTr trth = (thead != null) ? thead.getOrCreateChildTr() : table.getSingleLeadingTrThChild();
 		addThValuesToTr(trth, tr);
-		return tr;
 	}
 
 	private void addThValuesToTr(HtmlTr trth, HtmlTr tr) {
@@ -545,6 +565,26 @@ public class AMISectionTool extends AbstractAMITool {
 		return totalSummaryTable;
 	}
 	
+	/** read existing summary file 
+<table xmlns="http://www.w3.org/1999/xhtml">
+<thead>
+<caption>PMC3921638</caption>
+<tr>
+<th>label</th>
+<th>caption</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="table_1.xml">Table 1</a>
+</td>
+<td>List of observed datasets with symbols used, along with the ... </td>
+</tr>
+<tr>
+<td>
+	 */
+
 	private List<HtmlTr> createSummaryRows(SummaryType summaryType) {
 		List<HtmlTr> rows = new ArrayList<>();
 		File sectionSubDirectory = new File(sectionsDir, summaryType.getPath());
@@ -559,7 +599,18 @@ public class AMISectionTool extends AbstractAMITool {
 			String captionValue = (caption == null) ? "" : caption.getValue();
 			List<HtmlTr> trows = table.getRows();
 			for (HtmlTr trow : trows) {
+				HtmlTd td0 = trow.getTd(0);
+				List<HtmlElement> aList = HtmlUtil.getQueryHtmlElements(td0, "./*[local-name()='"+HtmlA.TAG+"']");
+				HtmlA a = aList.size() == 0 ? null : (HtmlA) aList.get(0);
+				if (a == null) {
+					LOG.debug("no AHREF");
+					continue;
+				}
+				String href = a.getHref();
+				String href1 = "../"+captionValue+"/"+sectionsDir.getName()+"/"+summaryType.getPath()+"/"+href;
+				a.setHref(href1);
 				HtmlTr row = (HtmlTr) HtmlElement.create(trow);
+				
 				row.insertChild(HtmlTd.createAndWrapText(captionValue), 0);
 				rows.add(row);
 			}

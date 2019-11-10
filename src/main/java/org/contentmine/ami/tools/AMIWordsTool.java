@@ -220,6 +220,7 @@ public class AMIWordsTool extends AbstractAMISearchTool {
     @Override
     protected void runSpecifics() {
 		wordArgProcessor = getOrCreateSearchProcessor();
+		abstractSearchArgProcessor = wordArgProcessor;
 		
     	populateArgProcessorFromCLI();
     	createWordListInWordCollectionFactory();

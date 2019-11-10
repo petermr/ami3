@@ -61,7 +61,7 @@ import nu.xom.Element;
  * @author pm286
  *
  */
-public class AMISectionToolTest {
+public class AMISectionToolTest extends AbstractAMITest {
 	
 
 	private static final Logger LOG = Logger.getLogger(AMISectionToolTest.class);
@@ -116,14 +116,22 @@ public class AMISectionToolTest {
 
 	@Test
 	public void testALL() {
-		File targetDir = new File("target/sections/");
-//		File testZikaDir = AMIFixtures.TEST_ZIKA2_DIR;
 		File testZikaDir = AMIFixtures.TEST_ZIKA10_DIR;
-		CMineTestFixtures.cleanAndCopyDir(testZikaDir, targetDir);
 		String args = ""
-				+ "-p " + targetDir
-//				+" --sections ABSTRACT"
+				+ "-p " + testZikaDir
 				+" --sections ALL"
+			;
+		new AMISectionTool().runCommands(args);
+	}
+	
+	@Test
+	public void testCMIPSummary() {
+//		File dir = CMIP200;
+		File dir = OIL186;
+		String args = ""
+				+ "-p " + dir 
+				+ " --summary table figure supplementary"
+				+ " --forcemake"
 			;
 		new AMISectionTool().runCommands(args);
 	}

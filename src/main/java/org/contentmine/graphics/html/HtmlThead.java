@@ -17,9 +17,13 @@
 package org.contentmine.graphics.html;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.apache.log4j.Logger;
+import org.contentmine.eucl.xml.XMLUtil;
+
+import nu.xom.Element;
 
 
 /** 
@@ -45,6 +49,10 @@ public class HtmlThead extends HtmlElement {
 		super(TAG);
 	}
 	
+	protected List<String> allowedChildren() {
+		return Arrays.asList(new String[] {HtmlTr.TAG});
+	}
+	
     public List<HtmlTr> getChildTrs() {
         List<HtmlTr> rowList = new ArrayList<HtmlTr>();
         List<HtmlElement> rows = getChildElements(this, HtmlTr.TAG);
@@ -66,6 +74,18 @@ public class HtmlThead extends HtmlElement {
 			rows = getChildTrs();
 		}
 		return rows.get(0);
+	}
+
+	public HtmlTr getOrCreateTr() {
+		List<Element> trList = XMLUtil.getQueryElements(this, "./*[local-name()='"+HtmlTr.TAG+"']");
+		HtmlTr tr = null;
+		if (trList.size() == 0) {
+			tr = new HtmlTr();
+			this.appendChild(tr);
+		} else {
+			tr = (HtmlTr) trList.get(0);
+		}
+		return tr;
 	}
 
 }

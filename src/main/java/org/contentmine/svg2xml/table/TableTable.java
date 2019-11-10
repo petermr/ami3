@@ -19,6 +19,7 @@ import org.contentmine.graphics.html.HtmlHead;
 import org.contentmine.graphics.html.HtmlP;
 import org.contentmine.graphics.html.HtmlTable;
 import org.contentmine.graphics.html.HtmlTh;
+import org.contentmine.graphics.html.HtmlTr;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGShape;
 import org.contentmine.graphics.svg.SVGText;
@@ -170,11 +171,11 @@ public class TableTable extends TableChunk {
 		if (headerChunk != null) {
 			HtmlHead htmlHead = new HtmlHead();
 			htmlTable.appendChild(htmlHead);
-			HtmlTh th = new HtmlTh();
-			htmlHead.appendChild(th);
+			HtmlTr tr = new HtmlTr();
+			htmlHead.appendChild(tr);
 			for (int i = 0; i < maxHorizontalChunks; i++) {
 				String text = headerChunk.getHorizontalChunk(i);
-				th.appendChild(text);
+				tr.appendChild(new HtmlTh(text));
 			}
 		}
 	}

@@ -10,6 +10,7 @@ import java.util.Map;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.util.RectTabColumn;
 import org.contentmine.cproject.util.RectangularTable;
 import org.contentmine.eucl.xml.XMLUtil;
 
@@ -256,8 +257,8 @@ public class CMJsonDictionary {
 
 	public void addMixMatchIds(RectangularTable table) {
 		Map<String, String> qByExtId = new HashMap<String, String>();
-		List<String> ids = table.getColumn(EXT_ID);
-		List<String> qs = table.getColumn(Q);
+		RectTabColumn ids = table.getColumn(EXT_ID);
+		RectTabColumn qs = table.getColumn(Q);
 		for (int i = 0; i < ids.size(); i++) {
 			String id = ids.get(i);
 			String q = qs.get(i);

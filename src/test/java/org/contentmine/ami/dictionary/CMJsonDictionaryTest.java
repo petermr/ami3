@@ -4,16 +4,13 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.charset.Charset;
-import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.AMIFixtures;
-import org.contentmine.ami.dictionary.CMJsonDictionary;
-import org.contentmine.ami.dictionary.CMJsonTerm;
-import org.contentmine.ami.dictionary.DefaultAMIDictionary;
+import org.contentmine.cproject.util.RectTabColumn;
 import org.contentmine.cproject.util.RectangularTable;
 import org.contentmine.norma.NAConstants;
 import org.junit.Assert;
@@ -171,7 +168,7 @@ public class CMJsonDictionaryTest {
 		RectangularTable table = RectangularTable.readCSVTable(mapping, useHeader);
 		Assert.assertEquals("size", 60174, table.size());
 		Assert.assertEquals("[ext_id, q]", table.getHeader().toString());
-		List<String> ids = table.getColumn("ext_id");
+		RectTabColumn ids = table.getColumn("ext_id");
 		Assert.assertEquals("ext", "["
 				+ "CM.cochrane13,"
 				+ " CM.cochrane14,"
@@ -187,7 +184,7 @@ public class CMJsonDictionaryTest {
 				+ " CM.disease1000,"
 				+ " CM.disease1002,",
 				    ids.toString().substring(0, 188));
-		List<String> qs = table.getColumn("q");
+		RectTabColumn qs = table.getColumn("q");
 		Assert.assertEquals("q", "["
 				+ "1204300,"
 				+ " 1204300,"

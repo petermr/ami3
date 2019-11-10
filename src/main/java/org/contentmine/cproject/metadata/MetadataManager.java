@@ -8,6 +8,7 @@ import java.util.Map;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.util.RectTabColumn;
 import org.contentmine.cproject.util.RectangularTable;
 
 public class MetadataManager  {
@@ -42,8 +43,8 @@ public class MetadataManager  {
 		RectangularTable refTable = metadataTableByKey.get(ref);
 		RectangularTable downloadTable = metadataTableByKey.get(download);
 		if (refTable != null && downloadTable != null) {
-			List<String> refDoiList = refTable.getColumn(DOI);
-			List<String> downloadDoiList = downloadTable.getColumn(DOI);
+			List<String> refDoiList = refTable.getColumnValues(DOI);
+			List<String> downloadDoiList = downloadTable.getColumnValues(DOI);
 			for (int i = 0; i < refDoiList.size(); i++) {
 				String refDoi = refDoiList.get(i);
 				int downloadDoiIndex = downloadDoiList.indexOf(refDoi);
@@ -73,8 +74,8 @@ public class MetadataManager  {
 		RectangularTable table = ensureMetadataTableByType().get(key);
 		List<String> values = null;
 		if (table != null) {
-			List<String> allValues = table.getColumn(colHead);
-			values = (allValues == null) ? null : allValues.subList(startRow, allValues.size());
+			RectTabColumn column = table.getColumn(colHead);
+			values = (column == null) ? null : column.subList(startRow, column.size());
 		}
 		return values;
 	}

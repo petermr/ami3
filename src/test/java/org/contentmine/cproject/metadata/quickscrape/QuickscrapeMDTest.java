@@ -18,6 +18,7 @@ import org.contentmine.cproject.metadata.AbstractMetadata;
 import org.contentmine.cproject.metadata.AbstractMetadata.Type;
 import org.contentmine.cproject.metadata.crossref.CrossrefMD;
 import org.contentmine.cproject.util.CMineUtil;
+import org.contentmine.cproject.util.RectTabColumn;
 import org.contentmine.cproject.util.RectangularTable;
 import org.junit.Assert;
 import org.junit.Ignore;
@@ -282,9 +283,9 @@ public class QuickscrapeMDTest {
 				+ "]", table.getHeader().toString());
 
 		String colHead = "DOI";
-		List<String> columnValues = table.getColumn(table.getIndexOfColumn(colHead));
+		RectTabColumn columnValues = table.getColumn(table.getIndexOfColumn(colHead));
 		Assert.assertEquals(451, columnValues.size());
-		List<Multiset.Entry<String>> multisetList = table.extractSortedMultisetList(colHead);
+		List<Multiset.Entry<String>> multisetList = table.extractSortedMultisetListForColumn(colHead);
 		Assert.assertEquals(410, multisetList.size());
 		List<Multiset.Entry<String>> uniqueMultisetList = table.extractUniqueMultisetList(colHead);
 		Assert.assertEquals(408, uniqueMultisetList.size());

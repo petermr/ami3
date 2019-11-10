@@ -10,55 +10,55 @@
  <alternatives class="alternatives">
   <graphic id="pone.0166684.t002g" xlink:href="pone.0166684.t002" class="graphic" xmlns:xlink="http://www.w3.org/1999/xlink"/>
   <table frame="hsides" rules="groups" class="table">
-   <colgroup span="1" xmlns="http://www.w3.org/1999/xhtml">
-    <col align="left" valign="middle" span="1"/>
-    <col align="left" valign="middle" span="1"/>
+   <colgroup span="1" class="colgroup">
+    <col align="left" valign="middle" span="1" class="col"/>
+    <col align="left" valign="middle" span="1" class="col"/>
    </colgroup>
-   <thead xmlns="http://www.w3.org/1999/xhtml">
-    <tr>
-     <th align="left" rowspan="1" colspan="1">OE concentrations of 
-      <italic class="italic" xmlns="">A</italic>. 
-      <italic class="italic" xmlns="">suaveolens</italic> (mg.mL
-      <sup class="sup" xmlns="">-1</sup>)
+   <thead class="thead">
+    <tr class="tr">
+     <th align="left" rowspan="1" colspan="1" class="th">OE concentrations of 
+      <italic class="italic">A</italic>. 
+      <italic class="italic">suaveolens</italic> (mg.mL
+      <sup class="sup">-1</sup>)
      </th>
-     <th align="left" rowspan="1" colspan="1">% AA</th>
+     <th align="left" rowspan="1" colspan="1" class="th">% AA</th>
     </tr>
    </thead>
-   <tbody xmlns="http://www.w3.org/1999/xhtml">
-    <tr>
-     <td align="left" rowspan="1" colspan="1">0.25</td>
-     <td align="left" rowspan="1" colspan="1">19.5±0.38
-      <sup class="sup" xmlns="">a</sup>
+   <tbody class="tbody">
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td">0.25</td>
+     <td align="left" rowspan="1" colspan="1" class="td">19.5±0.38
+      <sup class="sup">a</sup>
      </td>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1">0.50</td>
-     <td align="left" rowspan="1" colspan="1">21.5±0.09
-      <sup class="sup" xmlns="">b</sup>
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td">0.50</td>
+     <td align="left" rowspan="1" colspan="1" class="td">21.5±0.09
+      <sup class="sup">b</sup>
      </td>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1">0.75</td>
-     <td align="left" rowspan="1" colspan="1">22.8±0.05
-      <sup class="sup" xmlns="">c</sup>
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td">0.75</td>
+     <td align="left" rowspan="1" colspan="1" class="td">22.8±0.05
+      <sup class="sup">c</sup>
      </td>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1">1</td>
-     <td align="left" rowspan="1" colspan="1">24.1±0.44
-      <sup class="sup" xmlns="">d</sup>
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td">1</td>
+     <td align="left" rowspan="1" colspan="1" class="td">24.1±0.44
+      <sup class="sup">d</sup>
      </td>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1">2.5</td>
-     <td align="left" rowspan="1" colspan="1">31,5±0.50
-      <sup class="sup" xmlns="">e</sup>
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td">2.5</td>
+     <td align="left" rowspan="1" colspan="1" class="td">31,5±0.50
+      <sup class="sup">e</sup>
      </td>
     </tr>
-    <tr>
-     <td align="left" rowspan="1" colspan="1">5</td>
-     <td align="left" rowspan="1" colspan="1">43.5±0.33
-      <sup class="sup" xmlns="">f</sup>
+    <tr class="tr">
+     <td align="left" rowspan="1" colspan="1" class="td">5</td>
+     <td align="left" rowspan="1" colspan="1" class="td">43.5±0.33
+      <sup class="sup">f</sup>
      </td>
     </tr>
    </tbody>

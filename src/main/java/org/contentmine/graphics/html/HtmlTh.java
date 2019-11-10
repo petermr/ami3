@@ -36,6 +36,11 @@ public class HtmlTh extends HtmlElement {
 		super(TAG);
 	}
 	
+	public HtmlTh(String colHeader) {
+		this();
+		this.appendChild(colHeader);
+	}
+
 	/**
 	 * create a Th with the included text
 	 * @param content

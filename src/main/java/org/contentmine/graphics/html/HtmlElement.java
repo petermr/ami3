@@ -19,7 +19,9 @@
 import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import org.apache.log4j.Logger;
@@ -256,6 +258,8 @@ public abstract class HtmlElement extends AbstractCMElement {
 	// coordinates
 	public final static String X = "x"; 
 	public final static String Y = "y"; 
+	
+	public final static String ANY_TAG = "_ANY";
 	
 	/** constructor.
 	 * 
@@ -556,9 +560,17 @@ public abstract class HtmlElement extends AbstractCMElement {
 		return textNode;
 	}
 
+	@Override
     public void appendChild(Node child) {
     	if (child == null) {
     		LOG.error("null child");
+    	} else if (child instanceof HtmlElement) {
+    		HtmlElement element = (HtmlElement) child;
+    		if (!this.isAllowed(element)) {
+				LOG.warn("Cannot appendChild "+element+" to "+this.getClass());
+			} else {
+				super.appendChild(element);
+			}
     	} else {
     		super.appendChild(child);
     	}
@@ -601,10 +613,19 @@ public abstract class HtmlElement extends AbstractCMElement {
 		if (file == null | !file.exists()) {
 			throw new RuntimeException("null or non-existent file: "+file);
 		}
+		
 		Element element = XMLUtil.parseQuietlyToRootElement(file);
 		HtmlElement htmlElement = HtmlElement.create(element);
 		return htmlElement;
 	}
 
+	protected boolean isAllowed(HtmlElement element) {
+		String tag = element == null ? null : element.getLocalName();
+		return (tag ==  null ? false : (allowedChildren().contains(ANY_TAG) || allowedChildren().contains(tag)));
+	}
+
+	protected List<String> allowedChildren() {
+		return Arrays.asList(new String[] {ANY_TAG});
+	}
 
 }
