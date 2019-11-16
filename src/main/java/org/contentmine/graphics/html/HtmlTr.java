@@ -44,6 +44,13 @@ public class HtmlTr extends HtmlElement {
 		super(TAG);
 	}
 
+	public HtmlTr(List<String> row) {
+		this();
+		for (String cell : row) {
+			this.appendChild(new HtmlTd(cell));
+		}
+	}
+
 	public List<HtmlTh> getThChildren() {
 		List<HtmlElement> ths = HtmlElement.getChildElements(this, HtmlTh.TAG);
 		List<HtmlTh> thList = new ArrayList<HtmlTh>();

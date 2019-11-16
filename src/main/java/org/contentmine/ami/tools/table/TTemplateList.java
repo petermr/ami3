@@ -2,9 +2,12 @@ package org.contentmine.ami.tools.table;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.log4j.Level;
@@ -34,30 +37,31 @@ import nu.xom.Element;
  * @author pm286
  *
  */
-public class TableTemplateListElement extends AbstractTableTemplateElement {
-	private static final String COLUMN = "column";
-	private static final String TEMPLATE = "template";
-	private static final Logger LOG = Logger.getLogger(TableTemplateListElement.class);
-	public static String TAG = "templateList";
+public class TTemplateList extends AbstractTTElement {
+	private static final Logger LOG = Logger.getLogger(TTemplateList.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
+	private static final String COLUMN = "column";
+	private static final String TEMPLATE = "template";
+	private static final Pattern VARIABLE_PATTERN = Pattern.compile("@[^@]+@");
+	public static String TAG = "templateList";
 
-//	private Element templateListElement;
 	private File templateFile;
-	private List<TableTemplateElement> templateElementList;
+	private List<TTemplate> templateElementList;
 	private Map<String, Pattern> patternByNameMap;
-	private TableTemplateElement currentTemplateElement;
+	private TTemplate currentTemplateElement;
+	private Map<String, String> variableMap;
 	
-	public TableTemplateListElement() {
-		super(TAG);
+	public TTemplateList() {
+		super(TAG, (TTemplateList) null);
 	}
 
-	public static TableTemplateListElement getOrCreateTemplateListElement(File templateFile) {
-		TableTemplateListElement templateListTemplate = null;
+	public static TTemplateList getOrCreateTemplateListElement(File templateFile) {
+		TTemplateList templateListTemplate = null;
 		if (templateFile != null) {
 			Element templateListElement = XMLUtil.parseQuietlyToRootElement(templateFile);
-			templateListTemplate = (TableTemplateListElement) AbstractTableTemplateElement.create(templateListElement);
+			templateListTemplate = (TTemplateList) AbstractTTElement.create(templateListElement, (TTemplateList) null);
 			templateListTemplate.setTemplateFile(templateFile);
 		}
 		return templateListTemplate;
@@ -67,7 +71,7 @@ public class TableTemplateListElement extends AbstractTableTemplateElement {
 		this.templateFile = templateFile;
 	}
 
-	public TableTemplateElement getTemplateFor(String templateName) {
+	public TTemplate getTemplateFor(String templateName) {
 		currentTemplateElement = null;
 		if (templateName != null) {
 			getOrCreateTemplateElementList();
@@ -75,7 +79,7 @@ public class TableTemplateListElement extends AbstractTableTemplateElement {
 				for (Element templateElement :templateElementList) {
 					String name = templateElement.getAttributeValue(NAME);
 					if (templateName.contentEquals(name)) {
-						currentTemplateElement = (TableTemplateElement) templateElement;
+						currentTemplateElement = (TTemplate) templateElement;
 					}
 				}
 			}
@@ -83,12 +87,12 @@ public class TableTemplateListElement extends AbstractTableTemplateElement {
 		return this.currentTemplateElement;
 	}
 
-	public List<TableTemplateElement> getOrCreateTemplateElementList() {
+	public List<TTemplate> getOrCreateTemplateElementList() {
 		if (templateElementList == null) {
 			List<Element> elementList = XMLUtil.getQueryElements(this, "./*[local-name()='" + TEMPLATE + "']");
 			templateElementList = new ArrayList<>(); 
 			for (Element element : elementList) {
-				templateElementList.add((TableTemplateElement)element);
+				templateElementList.add((TTemplate)element);
 			}
 		}
 		return templateElementList;
@@ -105,7 +109,47 @@ public class TableTemplateListElement extends AbstractTableTemplateElement {
 		}
 		return nameList;
 	}
-	
+
+	public Map<String, String> getOrCreateVariableMap() { 
+		if (variableMap == null) {
+			variableMap = new HashMap<String, String>();
+		}
+		return variableMap;
+	}
+
+	public String substituteVariables(String content) {
+		getOrCreateVariableMap();
+		List<String> keys = new ArrayList<String> (variableMap.keySet());
+		int start = 0;
+		int end = 0;
+		StringBuilder sb = new StringBuilder();
+		while (true) {
+			Matcher matcher = VARIABLE_PATTERN.matcher(content);
+			if (!matcher.find(start)) {
+				break;
+			}
+			start = matcher.start();
+			sb.append(content.substring(end, start));
+			end = matcher.end();
+			String varname = content.substring(start, end);
+			String newString = varname;
+			for (int i = 0; i < keys.size(); i++) {
+				String key = keys.get(i);
+				if (key.equals(varname)) {
+					newString = variableMap.get(key);
+					break;
+				}
+			}
+			if (newString.equals(varname)) {
+				throw new RuntimeException("Cannot find symbol: "+varname);
+			}
+			sb.append(newString);
+			start = end;
+		}
+		sb.append(content.substring(start));
+		return sb.toString();
+	}
+
 //	private Map<String, Pattern> getPatternByNameMap(String templateName) {
 //		Element templateElement = getTemplateFor(templateName);
 //		List<Element> columnElementList = XMLUtil.getQueryElements(templateElement, "./*[local-name()='"+COLUMN+"']");

@@ -1,10 +1,5 @@
 package org.contentmine.ami.tools.table;
 
-import java.util.List;
-import java.util.regex.Pattern;
-
-import org.contentmine.eucl.xml.XMLUtil;
-
 import nu.xom.Element;
 
 /**
@@ -29,16 +24,13 @@ import nu.xom.Element;
  * @author pm286
  *
  */
-public class TableTableElement extends AbstractTableTemplateElement {
+public class TTFile extends AbstractTTElement {
 
-	public static String TAG = "table";
+	public static String TAG = "file";
+	private TTQueryTool queryTool;
 	
-	public TableTableElement() {
-		super(TAG);
-	}
-
-	public String getRegex() {
-		return this.getAttributeValue(REGEX);
+	public TTFile(TTemplateList templateList) {
+		super(TAG, templateList);
 	}
 
 

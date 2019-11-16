@@ -25,6 +25,8 @@ import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.graphics.html.HtmlTable;
+import org.contentmine.graphics.html.HtmlTbody;
+import org.contentmine.graphics.html.HtmlThead;
 import org.contentmine.graphics.html.HtmlTr;
 
 import com.google.common.collect.HashMultiset;
@@ -393,19 +395,30 @@ public class RectangularTable {
 	 * must have header set
 	 * @param col
 	 * @return
-	 * @throws RuntimeException if header is null
+	 * throws RuntimeException if header is null
 	 */
-	private boolean addColumn(RectTabColumn col) {
+	public boolean addColumn(RectTabColumn col) {
 		if (col == null) {
 			throw new RuntimeException("column cannot be null");
 		}
-		if (!isMergeable(this, col)) {
+		
+		if (!isMergeable(col)) {
+			LOG.debug("cannot addColumn");
 			return false;
 		}
 		if (col.getHeader() == null) {
 			throw new RuntimeException("column must have header");
 		}
 		ensureHeader();
+		// first add?
+		if (rows == null || rows.size() == 0) {
+			int size = col.getValues().size();
+			rows = new ArrayList<>(size);
+			for (int i = 0; i < size;  i++) {
+				rows.add(new ArrayList<>());
+			}
+		}
+
 		this.header.add(col.getHeader());
 		for (int i = 0; i < rows.size(); i++) {
 			String value = col.get(i);
@@ -418,7 +431,7 @@ public class RectangularTable {
 	}
 	
 	public RectangularTable merge(RectangularTable csvTable1) {
-		if (!isMergeable(this, csvTable1)) return null;
+		if (!isMergeable(csvTable1)) return null;
 		RectangularTable table = new RectangularTable(this);
 		for (int i = 0; i < this.size(); i++) {
 			table.rows.get(i).addAll(csvTable1.rows.get(i));
@@ -434,7 +447,7 @@ public class RectangularTable {
 	 * @param col
 	 */
 	public RectangularTable mergeOnCommonColumn(RectangularTable csvTable1, String col) {
-		if (!isMergeable(this, csvTable1)) return null;
+		if (!isMergeable(csvTable1)) return null;
 		if (!haveSortedCommonColumn(csvTable1, col)) return null;
 		List<String> mergeCols = new ArrayList<String>(csvTable1.header);
 		mergeCols.remove(col);
@@ -703,7 +716,7 @@ public class RectangularTable {
 	}
 
 	private boolean haveSortedCommonColumn(RectangularTable csvTable1, String col) {
-		if (!isMergeable(this, csvTable1)) return false;
+		if (!isMergeable(csvTable1)) return false;
 		RectTabColumn col0 = this.getColumn(col);
 		RectTabColumn col1 = csvTable1.getColumn(col);
 		if (col0 != null && col1 != null) {
@@ -719,22 +732,22 @@ public class RectangularTable {
 		return true;
 	}
 
-	private boolean isMergeable(RectangularTable csvTable, RectTabColumn col) {
-		if (csvTable == null || csvTable.rows == null || col == null) return false;
-		if (csvTable.size() != col.size()) {
+	private boolean isMergeable(RectTabColumn col) {
+		if (col == null) return false;
+		if (this.size() > 0 && this.size() != col.size()) {
 			LOG.warn("Cannot add column of size ("+col.size()+") to table ("+this.size()+")");
 			return false;
 		}
 		return true;
 	}
 
-	private boolean isMergeable(RectangularTable csvTable, RectangularTable csvTable1) {
+	private boolean isMergeable(RectangularTable csvTable1) {
 		boolean merge = false;
-		if (csvTable == null || csvTable1 == null) {
-			LOG.debug("null tables");
-		} else if (csvTable.rows == null || csvTable1.rows == null) {
+		if (csvTable1 == null) {
+			LOG.debug("null table");
+		} else if (csvTable1.rows == null) {
 			LOG.debug("null rows");
-		} else if (csvTable.rows.size() != csvTable1.rows.size()) {
+		} else if (this.rows == null || this.rows.size() > 0 && this.rows.size() != csvTable1.rows.size()) {
 			LOG.debug("unequal rows");
 		} else {
 			merge = true;
@@ -769,6 +782,26 @@ public class RectangularTable {
 		FileUtils.writeLines(outputCsvFile, lines.getValues(), "\n");
 	}
 	
+	public HtmlTable createHtmlTable() {
+		HtmlTable htmlTable = new HtmlTable();
+		List<String> header = getHeader();
+		if (header !=  null) {
+			HtmlThead thead = htmlTable.getOrCreateThead().addHeader(header);
+		}
+		HtmlTbody body = htmlTable.getOrCreateTbody();
+		List<List<String>> rows = this.getRows();
+		if (rows != null) {
+			
+			for (List<String> row : rows) {
+				HtmlTr tr = new HtmlTr(row);
+				body.appendChild(tr);
+			}
+		}
+		return htmlTable;
+			
+			
+	}
+		
 	public static RectangularTable createRectangularTable(HtmlTable table) {
 		HtmlTr tr = table.getHeaderRow();
 		List<String> header = tr == null ? null : tr.getThCellValues();

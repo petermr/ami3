@@ -103,7 +103,7 @@ public class AMISectionTool extends AbstractAMITool {
 		LOG.setLevel(Level.DEBUG);
 	}
 
-	private enum SummaryType {
+	public enum SummaryType {
 		figure(FIGURES_DIR, FIGURE_SUMMARY_DIR),
 		results(RESULTS_DIR, RESULTS_SUMMARY_DIR),
 		supplementary(SUPPLEMENTARY_DIR, SUPPLEMENTARY_SUMMARY_DIR),

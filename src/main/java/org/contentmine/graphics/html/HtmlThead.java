@@ -88,4 +88,12 @@ public class HtmlThead extends HtmlElement {
 		return tr;
 	}
 
+	public HtmlThead addHeader(List<String> header) {
+		HtmlTr tr = getOrCreateTr();
+		for (String h : header) {
+			tr.appendChild(new HtmlTh(h));
+		}
+		return this;
+	}
+
 }

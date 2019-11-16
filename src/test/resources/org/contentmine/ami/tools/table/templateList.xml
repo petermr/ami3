@@ -1,0 +1,105 @@
+<templateList>
+<!-- composition table (percentage of compounds in oils)
+ -->
+	<template name="composition">
+	    <variable name="@FLOAT@">\-?\d+\.\d+</variable>
+	    <variable name="@FLOAT_ERROR@">@FLOAT@\s*±\s*@FLOAT@</variable>
+	    <variable name="@CHEMICAL@">[A-Za-z0-9\(][A-Za-z0-9\.\-\(\)\s]+[A-Za-z\)]</variable>
+	    <variable name="@JUNK@">GG@GROT@HH@FLOAT_ERROR@KKK</variable>
+	    <!--  title of table -->
+		<title find="
+		     [Cc]hemical composition _OR
+			 [Mm]ajor constituents _OR
+             [Cc]ompound composition _OR
+             [Pp]hytochemical constituents _OR
+		     [Cc]omposition of _OR
+		     ([Mm]ain|[Mm]ajor) (components|constituents|compounds)
+			 "
+			 >
+			  <query case="insensitive">
+				 chemical composition OR
+				 composition of OR
+	             compound composition OR
+	             phytochemical constituents OR
+			     (main|major) (components|constituents|compounds)
+			  </query>
+			 </title>
+			 
+        <!--  filename of table -->
+		<file regex=".*\/table_\d+\.xml"/>
+		
+		<!-- column to retrieve/extract (names of compounds)-->
+		<column name="compound" find="
+		    [Cc]onstituent _OR
+		    [Cc]ompound _OR
+		    [Cc]omponent
+		    " >
+		    <title>
+			    <query>
+				    constituent OR
+				    compound OR
+				    component
+			    </query>
+		    </title>
+			<cell>
+	  		  <query>^@CHEMICAL@$</query>
+			</cell>
+		</column>
+		    
+		<!-- column to retrieve/extract (percentages of compounds)-->
+		<column name="percentage" splittable="true" find="
+			[Pp]ercentage _OR
+			[Pp]eak [Aa]rea _OR
+			%" 
+		>
+			<title>
+	  		    <query>
+				    percentage 
+				    OR peak area 
+				    OR ^.*%.*$
+				    NOT activity
+			    </query>
+			</title>
+			<cell>
+	  		    <query>
+	  		        @FLOAT@ OR
+	  		        @FLOAT_ERROR@
+	  		    </query>
+			</cell>
+			<footer>
+			    <query>
+			        Total
+			    </query>
+			</footer>
+		</column>
+	</template>
+	
+	<template name="activity">
+		<title find="
+		[Aa]ctivity
+		target"
+		/>
+		<file regex=".*/table_\d+\.xml"/>
+		<column name="activity" find="activity">
+		  <title>
+		  </title>
+		  <cell>
+		  </cell>
+		</column>
+		<column name="target" find="target">
+		</column>
+	</template>
+	
+    <template name="mic">
+		<title 
+		/>
+		<file regex=".*/table_\d+\.xml"/>
+		<column name="activity" find="activity">
+		  <title>
+		  </title>
+		  <cell>
+		  </cell>
+		</column>
+	</template>
+	<!--  https://stackoverflow.com/questions/9830506/how-do-you-use-colspan-and-rowspan-in-html-tables/9830847#9830847  -->
+</templateList>

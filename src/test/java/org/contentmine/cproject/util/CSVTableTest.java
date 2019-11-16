@@ -150,7 +150,7 @@ public class CSVTableTest {
 		csvTable0.addRow(new ArrayList<String>(Arrays.asList(new String[]{"a0","b0","c0"})));
 		csvTable0.addRow(new ArrayList<String>(Arrays.asList(new String[]{"a1","b1","c1"})));
 		csvTable0.addRow(new ArrayList<String>(Arrays.asList(new String[]{"a2","b2","c2"})));
-		RectTabColumn col = new RectTabColumn(
+		RectTabColumn col = RectTabColumn.createColumn(
 				new ArrayList<String>(Arrays.asList(new String[]{"d0", "d1", "d2"})));
 		boolean ok = csvTable0.addColumn(col, "D");
 		Assert.assertTrue(ok);
@@ -187,8 +187,8 @@ public class CSVTableTest {
 	@Test
 	public void testIndex() {
 		List<String> values = new ArrayList<String>(Arrays.asList(new String[] {"a","b","c","d","e","f","g","h","i","j"}));
-		RectTabColumn col0 = new RectTabColumn(values);
-		RectTabColumn col1 = new RectTabColumn(
+		RectTabColumn col0 = RectTabColumn.createColumn(values);
+		RectTabColumn col1 = RectTabColumn.createColumn(
 				new ArrayList<String>(Arrays.asList(new String[] {"b","h","j","c","f","g","a","d","i","e"})));
 		List<Integer> mapping0to1 = RectangularTable.getMapping0to1(col0, col1);
 		// col1[mapping0to1[idx]] == col0[idx]
@@ -200,9 +200,9 @@ public class CSVTableTest {
 	
 	@Test
 	public void testIndexWithMissing() {
-		RectTabColumn col0 = new RectTabColumn(
+		RectTabColumn col0 = RectTabColumn.createColumn(
 				new ArrayList<String>(Arrays.asList(new String[] {"a","b","c","d","e","f","g","h","i","j"})));
-		RectTabColumn col2 = new RectTabColumn(
+		RectTabColumn col2 = RectTabColumn.createColumn(
 				new ArrayList<String>(Arrays.asList(new String[] {"b","h","c","y","f","g","x","a","e"})));
 		List<Integer> mapping0to2 = RectangularTable.getMapping0to1(col0, col2);
 		// col2[mapping0to2[idx]] == col0[idx]

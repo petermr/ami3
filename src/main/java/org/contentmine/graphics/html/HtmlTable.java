@@ -21,12 +21,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.util.RectangularTable;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.util.HtmlUtil;
 
 import nu.xom.Attribute;
 import nu.xom.Element;
+import nu.xom.Node;
 import nu.xom.Nodes;
+import nu.xom.ParentNode;
+import nu.xom.Text;
 
 
 /** 
@@ -228,6 +232,28 @@ public class HtmlTable extends HtmlElement {
 	public String getCaption() {
 		List<Element> captions = XMLUtil.getQueryElements(this, "//*[local-name()='"+HtmlCaption.TAG+"']");
 		return captions.size() == 0 ? null : captions.get(0).getValue().replaceAll("\n", " ").replaceAll("\\s+", " ");
+	}
+
+	public void normalize() {
+		List<Node> textNodes = XMLUtil.getQueryNodes(this, ".//text()");
+		for (Node textNode : textNodes) {
+			ParentNode parentNode = textNode.getParent();
+			String value = textNode.getValue();
+			if (value != null) {
+				value = value.trim().replaceAll("\n", " ").replaceAll("\\s+", " ");
+				parentNode.replaceChild(textNode, new Text(value));
+			}
+		}
+	}
+
+	public void addFooterSummary() {
+		HtmlTfoot tfoot = this.getOrCreateTfoot();
+//		RectangularTable rectTab = RectangularTable.
+//		List<HtmlTr> trList = tfoot.getTrList();
+//		if (trList.size() == 0) {
+//			this.getCo
+//		}
+		
 	}
 
 

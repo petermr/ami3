@@ -31,7 +31,7 @@ import nu.xom.Element;
  * @author pm286
  *
  */
-public class TableTemplateElement extends AbstractTableTemplateElement {
+public class TTemplate extends AbstractTTElement {
 
 	public static String TAG = "template";
 	
@@ -39,41 +39,41 @@ public class TableTemplateElement extends AbstractTableTemplateElement {
 	public static String TABLE = "table";
 	public static String COLUMN = "column";
 
-	private AbstractTableTemplateElement titleElement;
-	private TableTableElement tableElement;
-	private List<TableColumnElement> columnElementList;
+	private TTitle titleElement;
+	private TTFile tableElement;
+	private List<TTColumn> columnElementList;
 
 	private Map<String, List<Pattern>> columnFindListMap;
 
-		public TableTemplateElement() {
-		super(TAG);
+		public TTemplate(TTemplateList templateList) {
+		super(TAG, templateList);
 //		getOrCreateTitleElement();
 //		getOrCreateTableElement();
 //		getOrCreateColumnElementList();
 		
 	}
 
-	public List<TableColumnElement> getOrCreateColumnElementList() {
+	public List<TTColumn> getOrCreateColumnElementList() {
 		if (columnElementList == null) {
 			columnElementList = new ArrayList<>();
-			List<Element> elementList = XMLUtil.getQueryElements(this, "./*[local-name()='"+TableColumnElement.TAG+"']");
+			List<Element> elementList = XMLUtil.getQueryElements(this, "./*[local-name()='"+TTColumn.TAG+"']");
 			for (Element element : elementList) {
-				columnElementList.add((TableColumnElement)element);
+				columnElementList.add((TTColumn)element);
 			}
 		}
 		return columnElementList;
 	}
 
-	public AbstractTableTemplateElement getOrCreateTitleElement() {
+	public TTitle getOrCreateTitleElement() {
 		if (titleElement == null) {
-			titleElement = (AbstractTableTemplateElement) XMLUtil.getSingleElement(this, "./*[local-name()='"+TableTitleElement.TAG+"']");
+			titleElement = (TTitle) XMLUtil.getSingleElement(this, "./*[local-name()='"+TTitle.TAG+"']");
 		}
 		return titleElement;
 	}
 
-	public TableTableElement getOrCreateTableElement() {
+	public TTFile getOrCreateTableElement() {
 		if (tableElement == null) {
-			tableElement = (TableTableElement) XMLUtil.getSingleElement(this, "./*[local-name()='"+TableTableElement.TAG+"']");
+			tableElement = (TTFile) XMLUtil.getSingleElement(this, "./*[local-name()='"+TTFile.TAG+"']");
 		}
 		return tableElement;
 	}
@@ -87,7 +87,7 @@ public class TableTemplateElement extends AbstractTableTemplateElement {
 	    if (columnFindListMap == null) {
 	    	getOrCreateColumnElementList();
 	    	columnFindListMap = new HashMap<>();
-	    	for (AbstractTableTemplateElement columnElement : columnElementList) {
+	    	for (AbstractTTElement columnElement : columnElementList) {
 	    		String find = columnElement.getFind();
 	    		String name = columnElement.getName();
 //	    		String regex = columnElement.getRegex();
@@ -111,19 +111,13 @@ public class TableTemplateElement extends AbstractTableTemplateElement {
 	
 	public boolean findTitle(String caption) {
 		getOrCreateTitleElement();
-		List<Pattern> findPatternList = titleElement.getOrCreateFindPatternList();
-		for (Pattern findPattern : findPatternList) {
-			if (findPattern.matcher(caption).find()) {
-				return true;
-			}
-		}
-		return false;
+		return titleElement.find(caption);
 	}
 
-	public List<TableColumnElement> findColumnList(String header) {
+	public List<TTColumn> findColumnList(String header) {
 		getOrCreateColumnElementList();
-		List<TableColumnElement> columnList = new ArrayList<>();
-		for (TableColumnElement columnElement : columnElementList) {
+		List<TTColumn> columnList = new ArrayList<>();
+		for (TTColumn columnElement : columnElementList) {
 			List<Pattern> findPatternList = columnElement.getOrCreateFindPatternList();
 			for (Pattern findPattern : findPatternList) {
 				if (findPattern.matcher(header).find()) {

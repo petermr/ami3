@@ -31,8 +31,8 @@ public class AMITableToolTest extends AbstractAMITest {
 
 	@Test
 	public void testColumnTypesOil() {
-		File dir = OIL5;
-//		File dir = OIL186;
+//		File dir = OIL5;
+		File dir = OIL186;
 		new AMISectionTool().runCommands("-p " + dir );
 		String args = ""
 				+ "-p " + dir + ""
@@ -40,6 +40,7 @@ public class AMITableToolTest extends AbstractAMITest {
 				+ " --columntypes"
 				+ " --templatefile "+CEV_SEARCH+"/../templates/phytomedchem.xml"
 				+ " --template composition"
+				+ " --multiset compound"
 				
 			;
 		new AMITableTool().runCommands(args);
