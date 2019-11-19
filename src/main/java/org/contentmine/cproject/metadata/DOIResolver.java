@@ -29,8 +29,8 @@ public class DOIResolver {
 		LOG.setLevel(Level.DEBUG);
 	}
 
-	private static final String HTTP_DOI_ORG_API_HANDLES = "http://doi.org/api/handles/";
-	private static final String HTTP_DX_DOI_ORG = "http://dx.doi.org/";
+	private static final String HTTP_DOI_ORG_API_HANDLES = "https://doi.org/api/handles/";
+	private static final String HTTP_DX_DOI_ORG = "https://doi.org/";
 	private static final String VALUE = "value";
 	private static final String DATA = "data";
 	private static final String VALUES = "values";

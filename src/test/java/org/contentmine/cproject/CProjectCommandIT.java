@@ -39,7 +39,7 @@ public class CProjectCommandIT {
 		List<String> lines = FileUtils.readLines(outUrls);
 		Collections.sort(lines);
 		Assert.assertEquals("out urls ", 15, lines.size());
-		Assert.assertEquals("url ",  "http://dx.doi.org/10.1063/1.4943235", lines.get(0));
+		Assert.assertEquals("url ",  "https://doi.org/10.1063/1.4943235", lines.get(0));
 		
 	}
 

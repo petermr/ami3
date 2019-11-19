@@ -43,7 +43,7 @@ public class CMineUtil {
 		LOG.setLevel(Level.DEBUG);
 	}
 
-	private static final String HTTP_DX_DOI_ORG2 = "http://dx.doi.org/";
+	private static final String HTTP_DX_DOI_ORG2 = "https://doi.org/";
 	private static final String HTML_START = "<";
 	private static final String PDF_START = "%PDF";
 	private static final String URL_PUNCT = "[\\/\\$\\%\\*\\(\\)\\[\\]]";
@@ -310,7 +310,7 @@ public class CMineUtil {
 		return s == null ? null : s.replaceAll(regex, replace);
 	}
 
-	/** removes "http://dx.doi.org/" from start of string.
+	/** removes "https://doi.org/" from start of string.
 	 * 
 	 * @param string
 	 * @return

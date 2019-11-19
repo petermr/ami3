@@ -177,7 +177,7 @@ public class RSDownloadTest {
 
 },
 "page": "20151498",
-"update-policy": "http://dx.doi.org/10.1098/crossmarkpolicy",
+"update-policy": "https://doi.org/10.1098/crossmarkpolicy",
 "source": "CrossRef",
 "title": 
 [
@@ -261,7 +261,7 @@ public class RSDownloadTest {
     "10.1098/rspb.2015.1498"
 
 ],
-"URL": "http://dx.doi.org/10.1098/rspb.2015.1498",
+"URL": "https://doi.org/10.1098/rspb.2015.1498",
 "ISSN": 
 [
 

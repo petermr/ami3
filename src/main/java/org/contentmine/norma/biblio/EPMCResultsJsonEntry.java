@@ -87,7 +87,7 @@ public class EPMCResultsJsonEntry extends AbstractMetadata {
 		new CellRenderer(SOURCE).setVisible(false),
 		new CellRenderer(AUTHOR_STRING).setBrief(20),
 		new CellRenderer(ABSTRACT_TEXT).setBrief(20),
-		new CellRenderer(DOI).setHref0("http://doi.org/"),
+		new CellRenderer(DOI).setHref0("https://doi.org/"),
 		new CellRenderer(ID).setVisible(false),
 		new CellRenderer(PMID).setVisible(false),
 		new CellRenderer(PMCID).setHref0("foo/").setHref1("/bar").setVisible(false),

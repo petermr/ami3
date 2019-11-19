@@ -39,7 +39,7 @@ public class QuickscrapeLog {
 
 	// info: URL processed
 	private final static Pattern OUTER = Pattern.compile("(trace|debug|info|warn|error)\\:\\s(.*)");
-	// [debug] [phantom] opening url: http://dx.doi.org/10.1093/mnras/stw468, HTTP GET
+	// [debug] [phantom] opening url: https://doi.org/10.1093/mnras/stw468, HTTP GET
 	private final static Pattern INNER1 = Pattern.compile("\\s*\\[(trace|debug|info|warn|error)\\]\\s+\\[(phantom)\\]\\s+(.*)");
 //	private final static Pattern INNER2 = Pattern.compile("\\[(^\\])+\\]\\s+(.*)");
 	

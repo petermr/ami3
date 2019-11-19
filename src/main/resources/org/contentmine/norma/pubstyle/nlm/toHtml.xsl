@@ -9,7 +9,7 @@
 	<xsl:variable name="publisher">Generic NLM</xsl:variable>
 	<xsl:variable name="prefix">10.0000</xsl:variable>
     
-    <xsl:variable name="doiroot">https://dx.doi.org/</xsl:variable>
+    <xsl:variable name="doiroot">https://doi.org/</xsl:variable>
     <xsl:variable name="nlmroot">http://www.ncbi.nlm.nih.gov/pubmed/</xsl:variable>    
 	<xsl:variable name="lowercase" select="'abcdefghijklmnopqrstuvwxyz'" />
 	<xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'" />
@@ -885,7 +885,7 @@ UNKNOWN nlm: alt-text:
 	<xsl:template match="*[local-name()='fig']">
 	 <div class="fig" title="fig">
 	  <div class="figure" title="figure">
-	    <a href="http://doi.org/{*[local-name()='object-id' and @pub-id-type='doi']}"><xsl:apply-templates select="*[local-name()='label']"/></a>
+	    <a href="https://doi.org/{*[local-name()='object-id' and @pub-id-type='doi']}"><xsl:apply-templates select="*[local-name()='label']"/></a>
 	  </div>
 	  <caption class="caption" title="caption"><xsl:apply-templates select="*[local-name()='caption']"/></caption>
 	  <!--  the <graphic> links to files we don't have -->
