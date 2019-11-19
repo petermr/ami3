@@ -29,7 +29,7 @@ https://doi.org/10.1177/2150135116645604
 https://doi.org/10.1525/irqr.2016.9.1.29
 	 */
 
-	static Pattern PATTERN = Pattern.compile("https?://dx\\.doi\\.org/(10\\.\\d{3,8})/(.*)");
+	static Pattern PATTERN = Pattern.compile("https?://(dx\\.)?doi\\.org/(10\\.\\d{3,8})/(.*)");
 	public static CMDOI DUMMY = new CMDOI(null, null);
 	
 	public CMDOI(String prefix, String suffix) {
