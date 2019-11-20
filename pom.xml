@@ -227,6 +227,11 @@
                                 <id>ami-svg</id>
                             </program>
                             <program>
+                                <mainClass>org.contentmine.ami.tools.AMITableTool</mainClass>
+                                <!-- description: extracts tables -->
+                                <id>ami-table</id>
+                            </program>
+                            <program>
                                 <mainClass>org.contentmine.ami.tools.AMIWordsTool</mainClass>
                                 <!-- description: runs word counts -->
                                 <id>ami-word</id>

@@ -23,7 +23,7 @@ import org.apache.log4j.Logger;
  *  @author pm286
  */
 public class HtmlCode extends HtmlElement {
-	private final static Logger LOG = Logger.getLogger(HtmlSpan.class);
+	private final static Logger LOG = Logger.getLogger(HtmlCode.class);
 	public final static String TAG = "code";
 
 	/** constructor.

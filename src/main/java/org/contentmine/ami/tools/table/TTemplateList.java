@@ -2,11 +2,9 @@ package org.contentmine.ami.tools.table;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -49,22 +47,36 @@ public class TTemplateList extends AbstractTTElement {
 
 	private File templateFile;
 	private List<TTemplate> templateElementList;
-	private Map<String, Pattern> patternByNameMap;
-	private TTemplate currentTemplateElement;
 	private Map<String, String> variableMap;
+	private FileMatcher fileMatcher;
+	private List<HasQuery> hasQueryDescendantList;
+	private List<TQueryTool> queryToolList;
 	
 	public TTemplateList() {
 		super(TAG, (TTemplateList) null);
 	}
 
 	public static TTemplateList getOrCreateTemplateListElement(File templateFile) {
-		TTemplateList templateListTemplate = null;
+		TTemplateList templateList = null;
 		if (templateFile != null) {
-			Element templateListElement = XMLUtil.parseQuietlyToRootElement(templateFile);
-			templateListTemplate = (TTemplateList) AbstractTTElement.create(templateListElement, (TTemplateList) null);
-			templateListTemplate.setTemplateFile(templateFile);
+			Element rawElement = XMLUtil.parseQuietlyToRootElement(templateFile);
+//			LOG.debug("EL "+rawElement.toXML());
+			templateList = (TTemplateList) AbstractTTElement.create(rawElement, (TTemplateList) null);
+			templateList.setTemplateFile(templateFile);
+			templateList.getOrCreateVariableMap();
+			List<Element> variableList = XMLUtil.getQueryElements(templateList, "./*[local-name()='"+VariableMatcher.TAG+"']");
+			for (Element variable : variableList) {
+				((VariableMatcher)variable).addToMap();
+			}
+			LOG.debug("created variable map: "+templateList.getOrCreateVariableMap());
+			List<TQueryTool> queryToolList = templateList.addQueryTools();
+			for (TQueryTool queryTool : queryToolList) {
+				queryTool.parseQueries();
+			}
+//			templateList.parseDescendantQueries();
+			LOG.debug("read and parsed "+templateFile);
 		}
-		return templateListTemplate;
+		return templateList;
 	}
 	
 	public void setTemplateFile(File templateFile) {
@@ -72,22 +84,20 @@ public class TTemplateList extends AbstractTTElement {
 	}
 
 	public TTemplate getTemplateFor(String templateName) {
-		currentTemplateElement = null;
+		getOrCreateTemplateList();
+		TTemplate template = null;
 		if (templateName != null) {
-			getOrCreateTemplateElementList();
-			if (templateElementList != null) {
-				for (Element templateElement :templateElementList) {
-					String name = templateElement.getAttributeValue(NAME);
-					if (templateName.contentEquals(name)) {
-						currentTemplateElement = (TTemplate) templateElement;
-					}
+			for (Element templateElement : templateElementList) {
+				String name = templateElement.getAttributeValue(NAME);
+				if (templateName.contentEquals(name)) {
+					template = (TTemplate) templateElement;
 				}
 			}
 		}
-		return this.currentTemplateElement;
+		return template;
 	}
 
-	public List<TTemplate> getOrCreateTemplateElementList() {
+	public List<TTemplate> getOrCreateTemplateList() {
 		if (templateElementList == null) {
 			List<Element> elementList = XMLUtil.getQueryElements(this, "./*[local-name()='" + TEMPLATE + "']");
 			templateElementList = new ArrayList<>(); 
@@ -100,7 +110,7 @@ public class TTemplateList extends AbstractTTElement {
 	
 	public List<String> getTemplateNames() {
 		List<String> nameList = new ArrayList<>();
-		getOrCreateTemplateElementList();
+		getOrCreateTemplateList();
 		if (templateElementList != null) {
 			for (Element templateElement :templateElementList) {
 				String name = templateElement.getAttributeValue(NAME);
@@ -150,22 +160,43 @@ public class TTemplateList extends AbstractTTElement {
 		return sb.toString();
 	}
 
-//	private Map<String, Pattern> getPatternByNameMap(String templateName) {
-//		Element templateElement = getTemplateFor(templateName);
-//		List<Element> columnElementList = XMLUtil.getQueryElements(templateElement, "./*[local-name()='"+COLUMN+"']");
-//		patternByNameMap = new HashMap<>();
-//		for (Element columnElement : columnElementList) {
-//			String regex = columnElement.getAttributeValue(REGEX);
-//			if (regex == null) {
-//				throw new RuntimeException("missing regex attribute "+columnElement.toXML());
-//			}
-//			Pattern pattern = Pattern.compile(regex);
-//			String name = columnElement.getAttributeValue(NAME);
-//			if (name == null) {
-//				throw new RuntimeException("missing name attribute "+columnElement.toXML());
-//			}
-//			patternByNameMap.put(name, pattern);
-//		}
-//		return patternByNameMap;
-//	}
+	public FileMatcher getOrCreateFileMatcher() {
+		if (fileMatcher == null) {
+//			fileMatcher = (FileMatcher) XMLUtil.getSingleElement(this, "ancestor-or-self::*[local-name()='"+FileMatcher.TAG+"']");
+			fileMatcher = (FileMatcher) XMLUtil.getSingleChild(this, FileMatcher.TAG);
+		}
+		if (fileMatcher == null) {
+			throw new RuntimeException("cannot find <file> in templateList ");
+		}
+		return fileMatcher;
+	}
+
+	public List<TQueryTool> addQueryTools() {
+		if (queryToolList == null) {
+			queryToolList = new ArrayList<>();
+			List<HasQuery> hasQueryList = getOrCreateHasQueryDescendants();
+			for (HasQuery hasQuery : hasQueryList) {
+				TQueryTool queryTool = hasQuery.getOrCreateQueryTool();
+				queryToolList.add(queryTool);
+			}
+			LOG.debug("Added queryTools: "+queryToolList.size());
+		}
+		return queryToolList;
+	}
+
+	private List<HasQuery> getOrCreateHasQueryDescendants() {
+		if (hasQueryDescendantList == null) {
+			hasQueryDescendantList = new ArrayList<>();
+			List<Element> descendants = XMLUtil.getQueryElements(this, ".//*");
+			for (Element descendant : descendants) {
+				if (descendant instanceof HasQuery) {
+					hasQueryDescendantList.add((HasQuery) descendant);
+				}
+			}
+		}
+		return hasQueryDescendantList;
+	}
+	
+	
+
 }

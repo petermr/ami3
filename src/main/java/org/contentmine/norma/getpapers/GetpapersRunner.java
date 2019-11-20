@@ -12,7 +12,7 @@ import org.contentmine.norma.util.CommandRunner;
 
 public class GetpapersRunner extends CommandRunner {
 
-	public final static Logger LOG = Logger.getLogger(HOCRConverter.class);
+	public final static Logger LOG = Logger.getLogger(GetpapersRunner.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}

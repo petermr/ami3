@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.log4j.Logger;
-import org.contentmine.cproject.util.RectangularTable;
+import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.util.HtmlUtil;
 
@@ -234,13 +234,13 @@ public class HtmlTable extends HtmlElement {
 		return captions.size() == 0 ? null : captions.get(0).getValue().replaceAll("\n", " ").replaceAll("\\s+", " ");
 	}
 
-	public void normalize() {
+	public void normalizeWhitespace() {
 		List<Node> textNodes = XMLUtil.getQueryNodes(this, ".//text()");
 		for (Node textNode : textNodes) {
 			ParentNode parentNode = textNode.getParent();
 			String value = textNode.getValue();
 			if (value != null) {
-				value = value.trim().replaceAll("\n", " ").replaceAll("\\s+", " ");
+				value = Util.normalizeTrimWhitespace(value);
 				parentNode.replaceChild(textNode, new Text(value));
 			}
 		}

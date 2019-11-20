@@ -1,21 +1,22 @@
-<templateList>
+<templateList case="insensitive">
+    <!--  filename of table -->
+	<file >
+	  <query>
+	      ^.*\/table_\d+\.xml$
+	  </query>
+	</file>
+
 <!-- composition table (percentage of compounds in oils)
  -->
 	<template name="composition">
 	    <variable name="@FLOAT@">\-?\d+\.\d+</variable>
 	    <variable name="@FLOAT_ERROR@">@FLOAT@\s*±\s*@FLOAT@</variable>
 	    <variable name="@CHEMICAL@">[A-Za-z0-9\(][A-Za-z0-9\.\-\(\)\s]+[A-Za-z\)]</variable>
-	    <variable name="@JUNK@">GG@GROT@HH@FLOAT_ERROR@KKK</variable>
+	    <variable name="@CEV@">/Users/pm286/workspace/CEVOpen</variable>
+	    <variable name="@DICTIONARY@">@CEV@/dictionary</variable>
+	    <variable name="@COMPOUND_DICT@">@DICTIONARY@/compound/compound.xml</variable>
 	    <!--  title of table -->
-		<title find="
-		     [Cc]hemical composition _OR
-			 [Mm]ajor constituents _OR
-             [Cc]ompound composition _OR
-             [Pp]hytochemical constituents _OR
-		     [Cc]omposition of _OR
-		     ([Mm]ain|[Mm]ajor) (components|constituents|compounds)
-			 "
-			 >
+		<title >
 			  <query case="insensitive">
 				 chemical composition OR
 				 composition of OR
@@ -23,34 +24,27 @@
 	             phytochemical constituents OR
 			     (main|major) (components|constituents|compounds)
 			  </query>
-			 </title>
+		</title>
 			 
-        <!--  filename of table -->
-		<file regex=".*\/table_\d+\.xml"/>
 		
 		<!-- column to retrieve/extract (names of compounds)-->
-		<column name="compound" find="
-		    [Cc]onstituent _OR
-		    [Cc]ompound _OR
-		    [Cc]omponent
-		    " >
+		<column name="compound" case="insensitive" >
 		    <title>
 			    <query>
 				    constituent OR
 				    compound OR
 				    component
+				    NOT activity
 			    </query>
 		    </title>
 			<cell>
 	  		  <query>^@CHEMICAL@$</query>
+	  		  <query mode="lookup">@COMPOUND_DICT@</query>
 			</cell>
 		</column>
 		    
 		<!-- column to retrieve/extract (percentages of compounds)-->
-		<column name="percentage" splittable="true" find="
-			[Pp]ercentage _OR
-			[Pp]eak [Aa]rea _OR
-			%" 
+		<column name="percentage" count="1,*"
 		>
 			<title>
 	  		    <query>
@@ -61,10 +55,10 @@
 			    </query>
 			</title>
 			<cell>
-	  		    <query>
-	  		        @FLOAT@ OR
-	  		        @FLOAT_ERROR@
-	  		    </query>
+			  <query>
+  		        @FLOAT@ OR
+  		        @FLOAT_ERROR@
+			  </query>
 			</cell>
 			<footer>
 			    <query>
@@ -75,27 +69,28 @@
 	</template>
 	
 	<template name="activity">
-		<title find="
-		[Aa]ctivity
-		target"
+		<title 
 		/>
-		<file regex=".*/table_\d+\.xml"/>
-		<column name="activity" find="activity">
+		<column name="target" >
 		  <title>
 		  </title>
 		  <cell>
+		    (?-i) [A-Z](\.|[a-z]+)\s+[a-z]+
 		  </cell>
 		</column>
-		<column name="target" find="target">
+		<column name="target">
+		  <cell>
+		    (?-i) [A-Z](\.|[a-z]+)\s+[a-z]+
+		  </cell>
 		</column>
 	</template>
 	
     <template name="mic">
 		<title 
 		/>
-		<file regex=".*/table_\d+\.xml"/>
-		<column name="activity" find="activity">
+		<column name="activity">
 		  <title>
+		    
 		  </title>
 		  <cell>
 		  </cell>

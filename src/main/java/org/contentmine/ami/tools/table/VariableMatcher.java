@@ -26,8 +26,8 @@ import org.contentmine.eucl.xml.XMLUtil;
  * @author pm286
  *
  */
-public class TTVariable extends AbstractTTElement {
-	private static final Logger LOG = Logger.getLogger(TTVariable.class);
+public class VariableMatcher extends AbstractTTElement {
+	private static final Logger LOG = Logger.getLogger(VariableMatcher.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
@@ -35,25 +35,19 @@ public class TTVariable extends AbstractTTElement {
 	public static String TAG = "variable";
 	private static final String NAME = "name";
 	
-	public TTVariable(TTemplateList templateList) {
+	public VariableMatcher(TTemplateList templateList) {
 		super(TAG, templateList);
 	}
 	
-	void addToMap() {
+	public void addToMap() {
+		String value = this.getValue();
+//		LOG.debug("adding variable: "+value);
+		String substitutedContent = templateList.substituteVariables(value);
+		XMLUtil.setXMLContent(this, substitutedContent);
 		String name = this.getAttributeValue(NAME);
-		String content = this.getValue();
-		String content1 = templateList.substituteVariables(content);
-		XMLUtil.setXMLContent(this, content1);
-//		LOG.debug("name => "+content1);
-		if (name != null && content1 != null) {
-			templateList.getOrCreateVariableMap().put(name, content1);
+		if (name != null && substitutedContent != null) {
+			templateList.getOrCreateVariableMap().put(name, substitutedContent);
 		}
 	}
-
-	@Override
-	protected void finalize() {
-		this.addToMap();
-	}
-
 
 }

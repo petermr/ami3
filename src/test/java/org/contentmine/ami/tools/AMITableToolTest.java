@@ -31,14 +31,15 @@ public class AMITableToolTest extends AbstractAMITest {
 
 	@Test
 	public void testColumnTypesOil() {
-//		File dir = OIL5;
-		File dir = OIL186;
-		new AMISectionTool().runCommands("-p " + dir );
+		File dir = OIL5;
+//		File dir = OIL186;
+//		new AMISectionTool().runCommands("-p " + dir +" --forcemake");
 		String args = ""
 				+ "-p " + dir + ""
 				+ " --tabledir sections/tables"
 				+ " --columntypes"
 				+ " --templatefile "+CEV_SEARCH+"/../templates/phytomedchem.xml"
+//				+ " --templatefile "+CEV_SEARCH+"/../templates/phytomedchem0.xml"
 				+ " --template composition"
 				+ " --multiset compound"
 				

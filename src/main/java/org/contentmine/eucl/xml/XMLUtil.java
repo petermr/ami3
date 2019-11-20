@@ -31,6 +31,7 @@ import java.util.List;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;
+import org.contentmine.ami.tools.table.FileMatcher;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlHtml;
@@ -1538,6 +1539,10 @@ public abstract class XMLUtil implements XMLConstants {
 				throw new RuntimeException("Cannot write file: "+xmlFile, e);
 			}
 		}
+	}
+
+	public static Element getSingleChild(Element parent, String tag) {
+		return XMLUtil.getSingleElement(parent, "./*[local-name()='"+tag+"']");
 	}
 
 }

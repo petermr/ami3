@@ -3388,7 +3388,15 @@ s = s.replaceAll("(?U)\\s+", replace);
 		return fileList;
 	}
 
-
+	/** trims value and normalizes all whitespace to single space.
+	 * 
+	 * @param value
+	 * @return null if input is null
+	 */
+	public static String normalizeTrimWhitespace(String value) {
+		return value == null ? null : 
+			value.trim().replaceAll("\n", " ").replaceAll("\\s+", " ");
+	}
 
 }
 

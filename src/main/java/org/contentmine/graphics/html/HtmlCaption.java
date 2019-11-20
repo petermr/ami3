@@ -24,7 +24,7 @@ import org.apache.log4j.Logger;
  *  @author pm286
  */
 public class HtmlCaption extends HtmlElement {
-	private final static Logger LOG = Logger.getLogger(HtmlSpan.class);
+	private final static Logger LOG = Logger.getLogger(HtmlCaption.class);
 	public final static String TAG = "caption";
 
 	/** constructor.

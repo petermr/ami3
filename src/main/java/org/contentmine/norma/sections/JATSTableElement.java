@@ -40,7 +40,7 @@ import nu.xom.Element;
  */
 public class JATSTableElement extends AbstractJATSHtmlElement implements IsBlock, IsFloat {
 
-	private static final Logger LOG = Logger.getLogger(JATSFigElement.class);
+	private static final Logger LOG = Logger.getLogger(JATSTableElement.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}

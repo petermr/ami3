@@ -10,7 +10,7 @@ import nu.xom.Element;
 
 public class MetadataListElement extends AbstractTElement {
 
-	private static final Logger LOG = Logger.getLogger(TagListElement.class);
+	private static final Logger LOG = Logger.getLogger(MetadataListElement.class);
 	
 	public static final String TAG_DEFINITION_NAME = "name";
 	public static final String TAG = "metadataList";

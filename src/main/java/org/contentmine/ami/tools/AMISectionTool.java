@@ -294,7 +294,7 @@ public class AMISectionTool extends AbstractAMITool {
 			newDirectory.mkdirs();
 			HtmlTable table = new HtmlTable();
 			HtmlCaption caption = new HtmlCaption(cTree.getName());
-			table.getOrCreateThead().appendChild(caption);
+			table./*getOrCreateThead().*/appendChild(caption);
 			HtmlTr tr = new HtmlTr();
 			table.getOrCreateThead().appendChild(tr);
 			tr.appendChild((HtmlTh) HtmlTh.createAndWrapText(JATSLabelElement.TAG));
@@ -313,7 +313,7 @@ public class AMISectionTool extends AbstractAMITool {
 			throw new RuntimeException("cannot match file: "+matcher.matches()+" "+file+" ~~~ "+pattern);
 		}
 		currentSerial = new Integer(matcher.group(matcher.groupCount()));
-		File destFile = new File(newDirectory, filePrefix + currentSerial + "." + CTree.XML);
+		File destFile = new File(newDirectory, filePrefix + currentSerial + "." + /*CTree.XML*/CTree.HTML);
 		try {
 			if (!destFile.exists()) {
 				FileUtils.moveFile(file, destFile);
@@ -376,15 +376,6 @@ public class AMISectionTool extends AbstractAMITool {
 		}
 	}
 
-//	private void addCellValuesToRow(HtmlTr tr, List<String> cellValues) {
-//		System.err.println("ROW0: "+cellValues);
-//		for (int i = 0; i < Math.min(cellValues.size(), maxrows); i++) {
-//			String cellValue = cellValues.get(i);
-//			HtmlTd td = HtmlTd.createAndWrapText(cellValue);
-//			tr.appendChild(td);
-//		}
-//	}
-	
 	private File getFloatsDir() {
 		List<File> floatsDirList = Util.listFilesFromPaths(cTree.getSectionsDirectory(), FLOATS_GROUP_REGEX);
 		return (floatsDirList.size() == 1) ? floatsDirList.get(0) : null;

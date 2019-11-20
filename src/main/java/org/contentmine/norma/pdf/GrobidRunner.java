@@ -12,7 +12,7 @@ import org.contentmine.norma.util.CommandRunner;
 
 public class GrobidRunner extends CommandRunner {
 
-	public final static Logger LOG = Logger.getLogger(HOCRConverter.class);
+	public final static Logger LOG = Logger.getLogger(GrobidRunner.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}

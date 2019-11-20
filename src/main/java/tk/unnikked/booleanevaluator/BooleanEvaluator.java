@@ -16,6 +16,7 @@ public class BooleanEvaluator {
 	public static void main(String[] args) throws InterruptedException {
 		Scanner sc = new Scanner((System.in));
 		String input = "true & ((true | false) & !(true & false))";
+		input = "true & false | !true";
 		String expression = "";
 		if(args.length > 0 && args[0].equals("-f")) {
 			while(sc.hasNextLine()) expression += sc.nextLine(); System.out.println(expression);

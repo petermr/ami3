@@ -13,7 +13,7 @@ import nu.xom.Attribute;
  *
  */
 public class SVGStop extends SVGElement {
-	private static final Logger LOG = Logger.getLogger(SVGLinearGradient.class);
+	private static final Logger LOG = Logger.getLogger(SVGStop.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}

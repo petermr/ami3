@@ -28,7 +28,7 @@ import org.contentmine.graphics.html.util.HtmlUtil;
  */
 public class HtmlSub extends HtmlElement {
 	
-	private final static Logger LOG = Logger.getLogger(HtmlSpan.class);
+	private final static Logger LOG = Logger.getLogger(HtmlSub.class);
 	public final static String TAG = "sub";
 	public final static String ALL_SUB_XPATH = ".//h:sub";
 

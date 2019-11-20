@@ -26,10 +26,12 @@ public class ValueNormaliser {
     // Dashes denoting a range are not replaced with hyphen minus:
     //    \d--\d
     //    \d--\.
-    private static final Logger LOG = Logger.getLogger(TableContentCreator.class);
-    static {
-        LOG.setLevel(Level.DEBUG);
-    }
+
+
+	private static final Logger LOG = Logger.getLogger(ValueNormaliser.class);
+	static {
+		LOG.setLevel(Level.DEBUG);
+	}
     
     // Use the Unicode regex for Punctuation dash and also \u2212 Unicode minus
     private static final Pattern MINUS_EQUIVALENTS_PREFIX = Pattern.compile("([\\D])([\\p{IsPd}\u2212])([.\\d]?\\d+)");

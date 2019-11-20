@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
 
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
@@ -32,6 +34,12 @@ import nu.xom.Element;
  *
  */
 public class TTemplate extends AbstractTTElement {
+	private static final Logger LOG = Logger.getLogger(TTemplate.class);
+	static {
+		LOG.setLevel(Level.DEBUG);
+	}
+	
+	private static final String OR = "OR";
 
 	public static String TAG = "template";
 	
@@ -39,93 +47,29 @@ public class TTemplate extends AbstractTTElement {
 	public static String TABLE = "table";
 	public static String COLUMN = "column";
 
-	private TTitle titleElement;
-	private TTFile tableElement;
-	private List<TTColumn> columnElementList;
+	private HasQuery titleMatcher;
+	private List<ColumnMatcher> columnMatcherList;
 
-	private Map<String, List<Pattern>> columnFindListMap;
 
-		public TTemplate(TTemplateList templateList) {
+	public TTemplate(TTemplateList templateList) {
 		super(TAG, templateList);
-//		getOrCreateTitleElement();
-//		getOrCreateTableElement();
-//		getOrCreateColumnElementList();
-		
 	}
 
-	public List<TTColumn> getOrCreateColumnElementList() {
-		if (columnElementList == null) {
-			columnElementList = new ArrayList<>();
-			List<Element> elementList = XMLUtil.getQueryElements(this, "./*[local-name()='"+TTColumn.TAG+"']");
+	public List<ColumnMatcher> getOrCreateColumnMatcherList() {
+		if (columnMatcherList == null) {
+			columnMatcherList = new ArrayList<>();
+			List<Element> elementList = XMLUtil.getQueryElements(this, "./*[local-name()='"+ColumnMatcher.TAG+"']");
 			for (Element element : elementList) {
-				columnElementList.add((TTColumn)element);
+				columnMatcherList.add((ColumnMatcher)element);
 			}
 		}
-		return columnElementList;
+		return columnMatcherList;
 	}
 
-	public TTitle getOrCreateTitleElement() {
-		if (titleElement == null) {
-			titleElement = (TTitle) XMLUtil.getSingleElement(this, "./*[local-name()='"+TTitle.TAG+"']");
+	public HasQuery getTitleMatcher() {
+		if (titleMatcher == null) {
+			titleMatcher = (TitleMatcher) XMLUtil.getSingleChild(this, TitleMatcher.TAG);
 		}
-		return titleElement;
+		return titleMatcher;
 	}
-
-	public TTFile getOrCreateTableElement() {
-		if (tableElement == null) {
-			tableElement = (TTFile) XMLUtil.getSingleElement(this, "./*[local-name()='"+TTFile.TAG+"']");
-		}
-		return tableElement;
-	}
-
-	public String getTableRegex() {
-		getOrCreateTableElement();
-		return tableElement == null ? null : tableElement.getRegex();
-	}
-
-	public Map<String, List<Pattern>> getColumnPatternListMap() {
-	    if (columnFindListMap == null) {
-	    	getOrCreateColumnElementList();
-	    	columnFindListMap = new HashMap<>();
-	    	for (AbstractTTElement columnElement : columnElementList) {
-	    		String find = columnElement.getFind();
-	    		String name = columnElement.getName();
-//	    		String regex = columnElement.getRegex();
-	    		List<Pattern> findPatterns = getPatternList(find);
-//	    		Pattern pattern = Pattern.compile(regex);
-	    		columnFindListMap.put(name, findPatterns);
-	    	}
-	    }
-	    return columnFindListMap;
-	}
-
-	private List<Pattern> getPatternList(String find) {
-		List<Pattern> patternList = new ArrayList<>();
-		String[] findStrings = find.trim().split("\\s+");
-		for (String findString : findStrings) {
-			Pattern pattern = Pattern.compile(findString);
-			patternList.add(pattern);
-		}
-		return patternList;
-	}
-	
-	public boolean findTitle(String caption) {
-		getOrCreateTitleElement();
-		return titleElement.find(caption);
-	}
-
-	public List<TTColumn> findColumnList(String header) {
-		getOrCreateColumnElementList();
-		List<TTColumn> columnList = new ArrayList<>();
-		for (TTColumn columnElement : columnElementList) {
-			List<Pattern> findPatternList = columnElement.getOrCreateFindPatternList();
-			for (Pattern findPattern : findPatternList) {
-				if (findPattern.matcher(header).find()) {
-					columnList.add(columnElement);
-				}
-			}
-		}
-		return columnList;
-	}
-
 }
