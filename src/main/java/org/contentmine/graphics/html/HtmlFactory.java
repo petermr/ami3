@@ -558,8 +558,8 @@ public class HtmlFactory {
 			htmlElement = new HtmlTr();
 		} else if(HtmlTt.TAG.equalsIgnoreCase(tag)) {
 			htmlElement = new HtmlTt();
-		} else if(HtmlUl.TAG.equalsIgnoreCase(tag)) {
-			htmlElement = new HtmlUl();
+		} else if(HtmlU.TAG.equalsIgnoreCase(tag)) {
+			htmlElement = new HtmlU();
 		} else if(HtmlUl.TAG.equalsIgnoreCase(tag)) {
 			htmlElement = new HtmlUl();
 			

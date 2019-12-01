@@ -16,6 +16,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.regex.Pattern;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
@@ -26,6 +27,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.graphics.html.HtmlTable;
 import org.contentmine.graphics.html.HtmlTbody;
+import org.contentmine.graphics.html.HtmlTfoot;
 import org.contentmine.graphics.html.HtmlThead;
 import org.contentmine.graphics.html.HtmlTr;
 
@@ -50,22 +52,25 @@ public class RectangularTable {
 	private HashMap<Integer, Map<String, Integer>> rowIndexByCellValueMapByColumnIndexMap;
 	private String caption;
 
-	private List<RectTabColumn> completeColumnList;
-	
 	public RectangularTable() {
+		init();
 	}
 	
+	private void init() {
+		rows = new ArrayList<>();
+	}
+
 	public RectangularTable(List<String> header) {
+		this();
 		this.header = header;
 	}
 	
     public RectangularTable(RectangularTable csvTable) {
+    	this();
     	this.header = new ArrayList<String>(csvTable.header);
-    	this.rows = new ArrayList<List<String>>();
-    	for (int i = 0; i < csvTable.rows.size(); i++) {
+   	    for (int i = 0; i < csvTable.rows.size(); i++) { 
     		this.rows.add(new ArrayList<String>(csvTable.rows.get(i)));
     	}
-//    	this.currentRow = new ArrayList<String>(csvTable.currentRow);
     	this.truncateChars = csvTable.truncateChars;
     	this.clearMaps();
 	}
@@ -323,6 +328,7 @@ public class RectangularTable {
 	 * @return
 	 */
 	public RectTabColumn getColumn(Integer jcol) {
+		if (jcol < 0 || jcol >= size()) return null;
 		getOrCreateColumnByIndexMap();
 		RectTabColumn column = columnByIndexMap.get(jcol);
 		if (column == null) {
@@ -782,24 +788,51 @@ public class RectangularTable {
 		FileUtils.writeLines(outputCsvFile, lines.getValues(), "\n");
 	}
 	
-	public HtmlTable createHtmlTable() {
+	/** create table
+	 * if split
+	 * @param splitRow if >=0 split 
+	 * @return
+	 */
+	public HtmlTable createHtmlTable(int splitRow) {
+		//			List<List<String>> splitColumns = rectangularCol.splitBefore(indexOfFirstMatch);
+
 		HtmlTable htmlTable = new HtmlTable();
 		List<String> header = getHeader();
-		if (header !=  null) {
-			HtmlThead thead = htmlTable.getOrCreateThead().addHeader(header);
-		}
-		HtmlTbody body = htmlTable.getOrCreateTbody();
 		List<List<String>> rows = this.getRows();
-		if (rows != null) {
-			
-			for (List<String> row : rows) {
-				HtmlTr tr = new HtmlTr(row);
-				body.appendChild(tr);
-			}
+		if (header !=  null) htmlTable.getOrCreateThead().addHeader(header);
+		if (splitRow == -1) splitRow = this.size();
+		HtmlTbody tbody = extractTBody(0, splitRow, rows);
+		if (tbody.getRowList().size() > 0) {
+			htmlTable.appendChild(tbody);
 		}
+		addHtmlTfoot(splitRow, htmlTable, rows);
 		return htmlTable;
 			
 			
+	}
+
+	private void addHtmlTfoot(int splitRow, HtmlTable htmlTable, List<List<String>> rows) {
+		HtmlTbody tfootercopy = extractTBody(splitRow, this.size(), rows);
+		List<HtmlTr> rowbList = tfootercopy.getRowList();
+		int sizeb = rowbList.size();
+		if (sizeb > 0) {
+			HtmlTfoot tfoot = htmlTable.getOrCreateTfoot();
+			for (int i = 0; i < sizeb; i++) {
+				HtmlTr tr = rowbList.get(i);
+				tr.detach();
+				tfoot.appendChild(tr);
+			}
+		}
+	}
+
+	private HtmlTbody extractTBody(int start, int splitRow, List<List<String>> rows) {
+		HtmlTbody tbody = new HtmlTbody();
+		for (int i = start; i < splitRow; i++) {
+			List<String> row = rows.get(i);
+			HtmlTr tr = new HtmlTr(row);
+			tbody.appendChild(tr);
+		}
+		return tbody;
 	}
 		
 	public static RectangularTable createRectangularTable(HtmlTable table) {
@@ -834,17 +867,14 @@ public class RectangularTable {
 	}
 	
 	public Integer getColumnCount() {
-		return header == null ? null : header.size();
+		return header == null ? 0 : header.size();
 	}
 	
 	public List<RectTabColumn> getCompleteColumnList() {
-		completeColumnList = null;
-		if (completeColumnList == null && getColumnCount() != null) {
-			completeColumnList = new ArrayList<>();
-			for (int jcol = 0; jcol < getColumnCount(); jcol++) {
-				RectTabColumn col = this.getColumn(jcol);
-				completeColumnList.add(col);
-			}
+		List<RectTabColumn> completeColumnList = new ArrayList<>();
+		for (int jcol = 0; jcol < getColumnCount(); jcol++) {
+			RectTabColumn col = this.getColumn(jcol);
+			completeColumnList.add(col);
 		}
 		return completeColumnList;
 	}
@@ -861,6 +891,19 @@ public class RectangularTable {
 	public void setCaption(String caption) {
 		this.caption = caption;
 	}
+
+	public int getColumnIndexFromRegex(String regex) {
+    	if (header != null) {
+			for (int i = 0; i < header.size(); i++) {
+    			String colName = header.get(i).trim();
+				if (colName.matches(regex)) {
+    				return i;
+    			}
+    		}
+    	}
+    	return -1;
+	}
+
 	
 	
 

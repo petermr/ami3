@@ -102,7 +102,7 @@ public class WellIT {
 				XMLUtil.parseQuietlyToRootElement(new FileInputStream(page2svg)));
 		SVGG g = new SVGG();
 		List<SVGText> texts = SVGText.extractSelfAndDescendantTexts(svgElement);
-		HtmlHtml html = new HtmlHtml();
+		HtmlHtml html = HtmlHtml.createUTF8Html();
 		HtmlStyle style = html.getOrCreateHead().getOrCreateHtmlStyle();
 		style.appendChild(" td {border : solid red; font-family : monospace;}");
 		HtmlTable htmlTable = new HtmlTable();

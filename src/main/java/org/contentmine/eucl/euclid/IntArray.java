@@ -1664,6 +1664,19 @@ public class IntArray extends ArrayBase implements Iterable<Integer> {
 		return delta;
 	}
 	
+	/** finds index of first element with given value.
+	 * @param value to find
+	 * @return -1 if not found, else index
+	 */
+	public int indexOfFirst(int value) {
+		for (int i = 0; i < nelem; i++) {
+			if (array[i] == value) {
+				return i;
+			}
+		}
+		return -1;
+	}
+	
 	
 	
 }

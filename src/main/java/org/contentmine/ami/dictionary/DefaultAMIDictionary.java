@@ -162,9 +162,12 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 		} else if (!mightContain(string)) {
 			return false;
 		} else {
-//			Set<DictionaryTerm> termSet = namesByTerm.keySet();
 			return (rawTermSet == null) ? false : rawTermSet.contains(string);
 		}
+	}
+
+	public Set<String> getRawTermSet() {
+		return rawTermSet;
 	}
 
 	private boolean mightContain(String string) {
@@ -178,12 +181,6 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 	public Map<DictionaryTerm, String> getNamesByTerm() {
 		return namesByTerm;
 	}
-
-//	@Override
-//	protected void createFromInputStream(String dictionarySource, InputStream is) throws IOException {
-//		inputStream = is;
-//		this.dictionarySource = dictionarySource;
-//	}
 
 	@Override
 	public List<List<String>> getTrailingWords(String key) {
@@ -653,6 +650,12 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 	public List<Element> getEntryList() {
 		List<Element> entryList = XMLUtil.getQueryElements(dictionaryElement, "./*[local-name()='" + ENTRY + "']");
 		return entryList;
+	}
+
+	public List<String> getLowercaseTerms() {
+		List<DictionaryTerm> terms = getTermsSortedBySize();
+		LOG.debug("terms "+terms);
+		return null;
 	}
 	
 }

@@ -13,6 +13,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -26,7 +27,6 @@ import org.contentmine.graphics.html.HtmlCaption;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlLabel;
 import org.contentmine.graphics.html.HtmlTable;
-import org.contentmine.graphics.html.HtmlTbody;
 import org.contentmine.graphics.html.HtmlTd;
 import org.contentmine.graphics.html.HtmlTh;
 import org.contentmine.graphics.html.HtmlThead;
@@ -36,6 +36,7 @@ import org.contentmine.norma.NormaTransformer;
 import org.contentmine.norma.sections.JATSArticleElement;
 import org.contentmine.norma.sections.JATSBoldElement;
 import org.contentmine.norma.sections.JATSCaptionElement;
+import org.contentmine.norma.sections.JATSElement;
 import org.contentmine.norma.sections.JATSFactory;
 import org.contentmine.norma.sections.JATSFloatsGroupElement;
 import org.contentmine.norma.sections.JATSLabelElement;
@@ -79,23 +80,23 @@ public class AMISectionTool extends AbstractAMITool {
 	private static final String FIGURE_ = "figure_";
 	private static final String FIGURES_DIR = "figures";
 	private static final String FIGURE_FILE_REGEX = ".*/\\d+_fig(ure)?_+(\\d+)\\.xml";
-	private static final String FIGURE_SUMMARY_DIR = "__figures";
+	public static final String FIGURE_SUMMARY_DIRNAME = "__figures";
 
 	/** probably not yet used */
 	private static final String RESULTS = "results";
 	private static final String RESULTS_DIR = "results";
 	private static final String RESULTS_FILE_REGEX = ".*/results.xml";
-	private static final String RESULTS_SUMMARY_DIR = "__results";
+	public static final String RESULTS_SUMMARY_DIRNAMR = "__results";
 
 	private static final String SUPPLEMENTARY_ = "supplementary_";
 	private static final String SUPPLEMENTARY_DIR = "supplementary";
 	private static final String SUPPLEMENTARY_FILE_REGEX = ".*/(\\d+)_supp.*\\.xml";
-	private static final String SUPPLEMENTARY_SUMMARY_DIR = "__supplementary";
+	public static final String SUPPLEMENTARY_SUMMARY_DIRNAME = "__supplementary";
 
 	private static final String TABLE_ = "table_";
 	private static final String TABLES_DIR = "tables";
 	private static final String TABLE_FILE_REGEX = ".*/\\d+_tab(le)?_+(\\d+)\\.xml";
-	private static final String TABLE_SUMMARY_DIR = "__tables";
+	public static final String TABLE_SUMMARY_DIRNAME = "__tables";
 	
 
 	private static final Logger LOG = Logger.getLogger(AMISectionTool.class);
@@ -104,10 +105,10 @@ public class AMISectionTool extends AbstractAMITool {
 	}
 
 	public enum SummaryType {
-		figure(FIGURES_DIR, FIGURE_SUMMARY_DIR),
-		results(RESULTS_DIR, RESULTS_SUMMARY_DIR),
-		supplementary(SUPPLEMENTARY_DIR, SUPPLEMENTARY_SUMMARY_DIR),
-		table(TABLES_DIR, TABLE_SUMMARY_DIR),;
+		figure(FIGURES_DIR, FIGURE_SUMMARY_DIRNAME),
+		results(RESULTS_DIR, RESULTS_SUMMARY_DIRNAMR),
+		supplementary(SUPPLEMENTARY_DIR, SUPPLEMENTARY_SUMMARY_DIRNAME),
+		table(TABLES_DIR, TABLE_SUMMARY_DIRNAME),;
 		private String path;
 		private String summaryPath;
 		private SummaryType(String path, String summaryPath) {
@@ -267,13 +268,13 @@ public class AMISectionTool extends AbstractAMITool {
 		createSectionsRecursively();
 		floatsDir = getFloatsDir();
 		if (extractList.contains(FloatType.fig)) {
-			renameFloatsFiles(FIGURE_FILE_REGEX, FIGURES_DIR, FIGURE_);
+			renameFloatsFilesAndCreateSummary(FIGURE_FILE_REGEX, FIGURES_DIR, FIGURE_);
 		}
 		if (extractList.contains(FloatType.supplementary)) {
-			renameFloatsFiles(SUPPLEMENTARY_FILE_REGEX, SUPPLEMENTARY_DIR, SUPPLEMENTARY_);
+			renameFloatsFilesAndCreateSummary(SUPPLEMENTARY_FILE_REGEX, SUPPLEMENTARY_DIR, SUPPLEMENTARY_);
 		}
 		if (extractList.contains(FloatType.table)) {
-			renameFloatsFiles(TABLE_FILE_REGEX, TABLES_DIR, TABLE_);
+			renameFloatsFilesAndCreateSummary(TABLE_FILE_REGEX, TABLES_DIR, TABLE_);
 		}
 	}
 
@@ -284,7 +285,7 @@ public class AMISectionTool extends AbstractAMITool {
 	 * @param outdirname
 	 * @param filePrefix
 	 */
-	private void renameFloatsFiles(String fileRegex, String outdirname, String filePrefix) {
+	private void renameFloatsFilesAndCreateSummary(String fileRegex, String outdirname, String filePrefix) {
 		List<File> files = Util.listFilesFromPaths(floatsDir, fileRegex);
 		Collections.sort(files, new SectionComparator());
 //		LOG.debug("FILES: "+files);
@@ -292,28 +293,61 @@ public class AMISectionTool extends AbstractAMITool {
 		if (files.size() > 0) {
 			File newDirectory = new File(sectionsDir, outdirname);
 			newDirectory.mkdirs();
-			HtmlTable table = new HtmlTable();
-			HtmlCaption caption = new HtmlCaption(cTree.getName());
-			table./*getOrCreateThead().*/appendChild(caption);
-			HtmlTr tr = new HtmlTr();
-			table.getOrCreateThead().appendChild(tr);
-			tr.appendChild((HtmlTh) HtmlTh.createAndWrapText(JATSLabelElement.TAG));
-			tr.appendChild((HtmlTh) HtmlTh.createAndWrapText(JATSCaptionElement.TAG));
-			HtmlTbody tbody = table.getOrCreateTbody();
+			HtmlTable summaryTable = createSummaryTableStub();
 			for (File file : files) {
-				moveFilesAndCreateHTMLTable(filePrefix, pattern, newDirectory, file, tbody);
+				moveFilesCreateSummaryRowCreateHTML(filePrefix, pattern, newDirectory, file, summaryTable);
 			}
-			XMLUtil.writeQuietly(table, new File(newDirectory, SUMMARY_HTML), 1);
+			XMLUtil.writeQuietly(summaryTable, new File(newDirectory, SUMMARY_HTML), 1);
 		}
 	}
+	
+	/** transfers floats-group or other float to custom directory
+	 * e.g. tables are relocated to ./sections/tables/table_d.xml
+	 * then converted to HTML
+	 * 
+	 * @param filePrefix   e.g. figure_
+	 * @param pattern eg.  .* /\d+_fig(ure)?_+(\d+)\.xml
+	 * @param newDirectory e.g. PMC4391421/sections/figures/
+	 * @param file  e.g. PMC4391421/sections/3_floats-group/1_fig__1.xml
+	 * @param tbody of summary file
+	 * @return renamed/moved file 
+	 */
+	private void moveFilesCreateSummaryRowCreateHTML(String filePrefix, Pattern pattern, File newDirectory, File file, HtmlTable summaryTable) {
+		File destFile = moveFiles(filePrefix, pattern, newDirectory, file);
+		HtmlTr tr = createSummaryRow(destFile);
+		if (tr != null) {
+			summaryTable.getOrCreateTbody().appendChild(tr);
+		}
+		createAndWriteHTML(destFile);
+	}
 
-	private void moveFilesAndCreateHTMLTable(String filePrefix, Pattern pattern, File newDirectory, File file, HtmlTbody tbody) {
+	private HtmlTable createSummaryTableStub() {
+		HtmlTable summaryTable = new HtmlTable();
+		HtmlCaption caption = new HtmlCaption(cTree.getName());
+		summaryTable.appendChild(caption);
+		HtmlTr tr = new HtmlTr();
+		summaryTable.getOrCreateThead().appendChild(tr);
+		tr.appendChild((HtmlTh) HtmlTh.createAndWrapText(JATSLabelElement.TAG));
+		tr.appendChild((HtmlTh) HtmlTh.createAndWrapText(JATSCaptionElement.TAG));
+		return summaryTable;
+	}
+
+	/** transfers floats-group or other float to custom directory
+	 * e.g. tables are relocated to ./sections/tables/table_d.xml
+	 * 
+	 * @param filePrefix   e.g. figure_
+	 * @param pattern eg.  .* /\d+_fig(ure)?_+(\d+)\.xml
+	 * @param newDirectory e.g. PMC4391421/sections/figures/
+	 * @param file  e.g. PMC4391421/sections/3_floats-group/1_fig__1.xml
+	 * @return renamed/moved file 
+	 */
+	private File moveFiles(String filePrefix, Pattern pattern, File newDirectory, File file) {
 		Matcher matcher = pattern.matcher(file.toString());
 		if (!matcher.matches()) {
 			throw new RuntimeException("cannot match file: "+matcher.matches()+" "+file+" ~~~ "+pattern);
 		}
 		currentSerial = new Integer(matcher.group(matcher.groupCount()));
-		File destFile = new File(newDirectory, filePrefix + currentSerial + "." + /*CTree.XML*/CTree.HTML);
+		File destFile = new File(newDirectory, filePrefix + currentSerial + "." + CTree.XML);
 		try {
 			if (!destFile.exists()) {
 				FileUtils.moveFile(file, destFile);
@@ -322,8 +356,7 @@ public class AMISectionTool extends AbstractAMITool {
 		} catch (IOException e) {
 			throw new RuntimeException("Cannot move file: ", e);
 		}
-		HtmlTr tr = createSummaryRow(destFile);
-		if (tr != null) tbody.appendChild(tr);
+		return destFile;
 	}
 
 	private HtmlTr createSummaryRow(File destFile) {
@@ -338,6 +371,25 @@ public class AMISectionTool extends AbstractAMITool {
 		return tr;
 	}
 
+	private void createAndWriteHTML(File xmlFile) {
+		Element element = XMLUtil.parseQuietlyToRootElement(xmlFile);
+		Element newElement = new JATSFactory().create(element);
+//		LOG.debug("xx "+newElement.toXML());
+		HtmlElement htmlElement = null;
+		if (newElement instanceof HtmlElement) {
+			htmlElement = (HtmlElement) newElement;
+		} else {
+			JATSElement jatsElement = (JATSElement) new JATSFactory().create(element);
+			htmlElement = ((JATSElement)jatsElement).createHTML();
+		}
+		String basename = FilenameUtils.getBaseName(xmlFile.toString());
+		File htmlFile = new File(xmlFile.getParentFile(), basename+"."+CTree.HTML);
+//		LOG.debug("html "+htmlFile);
+		XMLUtil.writeQuietly(htmlElement, htmlFile, 1);
+	}
+
+
+	
 	private HtmlTr createRowWithLabelAndCaption(HtmlElement htmlElement) {
 		String label = XMLUtil.getSingleValue(htmlElement, "./*[local-name()='"+JATSLabelElement.TAG+"']");
 		label = label == null ? "" : label.trim();

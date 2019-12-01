@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.Charset;
 import java.nio.file.FileStore;
 import java.nio.file.FileSystem;
 import java.nio.file.Files;
@@ -122,6 +123,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 		create,
 		display,
 		help,
+		search,
 		translate,
 		;
 		public static Operation getOperation(String operationS) {
@@ -274,6 +276,20 @@ public class AMIDictionaryTool extends AbstractAMITool {
     		)
     private Integer queryChunk = null;
         
+    @Option(names = {"--search"}, 
+    		arity="1..*",
+    	    paramLabel = "search",
+    		description = "search dictionary for these terms (experimental)"
+    		)
+    private List<String> searchTerms;
+        
+    @Option(names = {"--searchfile"}, 
+    		arity="1..*",
+    	    paramLabel = "searchfile",
+    		description = "search dictionary for terms in these files (experimental)"
+    		)
+    private List<String> searchTermFilenames;
+        
     @Option(names = {"--splitcol"}, 
     		arity="1",
     		paramLabel="input separator",
@@ -342,6 +358,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 	private HashSet<String> missingWikipediaSet;
 	private HashSet<String> missingWikidataSet;
 	private List<String> descriptionList;
+	private Set<String> termSet;
 
 
 	public AMIDictionaryTool() {
@@ -406,6 +423,8 @@ public class AMIDictionaryTool extends AbstractAMITool {
 			displayDictionaries();
 		} else if (Operation.create.equals(operation)) {
 			createDictionary();
+		} else if (Operation.search.equals(operation)) {
+			searchDictionary();
 		} else if (Operation.translate.equals(operation)) {
 			translateDictionaries();
 		} else {
@@ -525,13 +544,46 @@ public class AMIDictionaryTool extends AbstractAMITool {
 	}
 
 	private void createSortedTermList() {
-		termList = Arrays.asList(terms);
-		Set<String> termSet = new HashSet<>();
-		for (String term : terms) {
-			termSet.add(term.toLowerCase());
+		if (termSet == null || termList == null) {
+			termSet = new HashSet<>();
+			for (String term : terms) {
+				termSet.add(term.toLowerCase());
+			}
+			termList = new ArrayList<String>(termSet);
+			Collections.sort(termList);
 		}
-		termList = new ArrayList<String>(termSet);
-		Collections.sort(termList);
+	}
+
+	private void searchDictionary() {
+		DefaultAMIDictionary amiDictionary = new DefaultAMIDictionary();
+		amiDictionary.readDictionary(new File(dictionary[0]));
+		Set<String> rawTermSet = amiDictionary.getRawTermSet();
+		
+		if (searchTerms != null) {
+			searchDictionaryForTerms(rawTermSet, searchTerms);
+		} else if (searchTermFilenames != null) {
+			List<String> allSearchTerms = new ArrayList<>();
+			for (String searchTermFilename : searchTermFilenames) {
+				File file = new File(searchTermFilename);
+				try {
+					List<String> searchTerms0 = FileUtils.readLines(file, Charset.forName("UTF-8"));
+					allSearchTerms.addAll(searchTerms0);
+				} catch (Exception e) {
+					throw new RuntimeException("Cannot read "+file);
+				}
+			}
+			searchDictionaryForTerms(rawTermSet, allSearchTerms);			
+		}
+	}
+
+	private void searchDictionaryForTerms(Set<String> rawTermSet, List<String> searchTerms) {
+		for (String searchTerm : searchTerms) {
+			if (rawTermSet.contains(searchTerm)) {
+				System.out.println("found: "+searchTerm);
+			} else {
+				System.err.println("Cannot find term in dictionary "+searchTerm);
+			}
+		}
 	}
 
 	private void translateDictionaries() {

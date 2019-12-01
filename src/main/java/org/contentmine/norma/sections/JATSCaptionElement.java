@@ -3,6 +3,8 @@ package org.contentmine.norma.sections;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.eucl.xml.XMLUtil;
+import org.contentmine.graphics.html.HtmlElement;
+import org.contentmine.graphics.html.HtmlP;
 
 import nu.xom.Element;
 
@@ -27,6 +29,13 @@ public class JATSCaptionElement extends JATSElement implements IsBlock {
 
 	public JATSCaptionElement(Element element) {
 		super(element);
+	}
+
+	@Override
+	public HtmlElement createHTML() {
+		HtmlP p = new HtmlP();
+		p.appendChild(this.getValue());
+		return p;
 	}
 
 

@@ -27,13 +27,11 @@ public class FooterMatcher extends AbstractTTElement implements HasQuery {
 	
 	public FooterMatcher(TTemplateList templateList) {
 		super(TAG, templateList);
-		LOG.debug("FOOTER CTOR");
 	}
 	public TQueryTool getOrCreateQueryTool() {
 		if (queryTool == null) {
 			queryTool = new TQueryTool(this);
 		}
-		LOG.debug("FOOTER QUERY");
 		return queryTool;
 	}
 

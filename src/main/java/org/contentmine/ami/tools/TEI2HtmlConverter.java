@@ -117,7 +117,7 @@ public class TEI2HtmlConverter {
 		String tag = element.getLocalName();
 		HtmlHtml htmlHtml = null;
 		if (tag.equals(TEI)) {
-			htmlHtml = new HtmlHtml();
+			htmlHtml = HtmlHtml.createUTF8Html();
 			Elements childElements = element.getChildElements();
 			for (int i = 0; i < childElements.size(); i++) {
 				Element childElement = childElements.get(i);

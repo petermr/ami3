@@ -612,7 +612,7 @@ public class DefaultArgProcessor {
 	private void createProjectMenu() {
 		File pDirectory = cProject.getDirectory();
 		List<File> files = new RegexPathFilter(fileFilterPattern).listNonDirectoriesRecursively(pDirectory);
-		HtmlHtml html = new HtmlHtml();
+		HtmlHtml html = HtmlHtml.createUTF8Html();
 		HtmlH1 h1 = new HtmlH1();
 		html.appendChild(h1);
 		h1.appendChild(pDirectory.toString());

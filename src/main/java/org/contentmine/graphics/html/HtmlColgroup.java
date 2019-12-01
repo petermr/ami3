@@ -32,4 +32,5 @@ public class HtmlColgroup extends HtmlElement {
 	public HtmlColgroup() {
 		super(TAG);
 	}
+	
 }

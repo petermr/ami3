@@ -16,7 +16,7 @@ public class AMITableToolTest extends AbstractAMITest {
 	public void testSummaryTableOil() {
 		File dir = OIL5;
 //		File dir = OIL186;
-		new AMISectionTool().runCommands("-p " + dir );
+//		new AMISectionTool().runCommands("-p " + dir +" --extract fig table supplementary");
 		String args = ""
 				+ "-p " + dir + ""
 				+ " --summarytable __table/summary.html"
@@ -33,13 +33,17 @@ public class AMITableToolTest extends AbstractAMITest {
 	public void testColumnTypesOil() {
 		File dir = OIL5;
 //		File dir = OIL186;
-//		new AMISectionTool().runCommands("-p " + dir +" --forcemake");
+//		File dir = OIL1000;
+		String cmd = "-p " + dir +" --forcemake "
+				+ " --extract fig table supplementary"
+				+ " --summary table figure supplementary";
+//		new AMISectionTool().runCommands(cmd);
 		String args = ""
 				+ "-p " + dir + ""
 				+ " --tabledir sections/tables"
 				+ " --columntypes"
-				+ " --templatefile "+CEV_SEARCH+"/../templates/phytomedchem.xml"
-//				+ " --templatefile "+CEV_SEARCH+"/../templates/phytomedchem0.xml"
+//				+ " --templatefile "+CEV_SEARCH+"/../templates/phytomedchem.xml"
+				+ " --templatefile "+CEV_SEARCH+"/../templates/phytomedchem1.xml"  // uses chemical lookup
 				+ " --template composition"
 				+ " --multiset compound"
 				

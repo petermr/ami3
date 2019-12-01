@@ -6,6 +6,11 @@ import java.util.regex.Pattern;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.ami.tools.AMITableTool;
+import org.contentmine.cproject.util.RectTabColumn;
+import org.contentmine.cproject.util.RectangularTable;
+import org.contentmine.eucl.euclid.IntArray;
+import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.xml.XMLUtil;
 
 /**
@@ -48,6 +53,7 @@ public class ColumnMatcher extends AbstractTTElement {
 	public CellMatcher getOrCreateCellMatcher() {
 		if (cellMatcher == null) {
 			cellMatcher = (CellMatcher) XMLUtil.getSingleChild(this, CellMatcher.TAG);
+			cellMatcher.getOrCreateQueryTool();
 		}
 		return cellMatcher;
 	}
@@ -72,6 +78,82 @@ public class ColumnMatcher extends AbstractTTElement {
 	public boolean matches(String colHeader) {
 		LOG.debug("NYI");
 		return false;
+	}
+
+	public RectTabColumn validateAndAddColumn(String colHeader, RectTabColumn column) {
+		String colName = getName();
+		RectTabColumn rectangularCol = RectTabColumn.createColumn(column.getValues(), colName+"=("+colHeader+")");
+		TQueryTool cellQueryTool = getOrCreateCellMatcher().getOrCreateQueryTool();
+		IntArray matchCells = cellQueryTool.match(rectangularCol);
+		double fract = Util.format((100. * matchCells.absSumAllElements()) / matchCells.size(), 1);
+		System.out.println("      column: "+colName+" => "+colHeader + "; "+fract);
+		return rectangularCol;
+	}
+
+	public TQueryTool findFooterQueryTool(String colHeader, RectTabColumn column) {
+		FooterMatcher footerMatcher = getOrCreateFooterMatcher();
+		TQueryTool footerQueryTool = null;
+		if (footerMatcher != null) {
+			footerQueryTool = footerMatcher.getOrCreateQueryTool();
+			IntArray matchCells = footerQueryTool.match(column.getValues());
+		}
+		return footerQueryTool;
+	}
+
+	/**
+	 * 
+	 * 	<column name="compound" case="insensitive" id="comp.col.comp">
+		    <title id="comp.col.comp.tit">
+			    <query id="comp.col.comp.tit.q">
+				    constituent OR
+				    compound OR
+				    component
+				    NOT class
+			    </query>
+		    </title>
+			<cell id="comp.col.comp.cell">
+	  		  <query id="comp.col.comp.cell.q1">^@CHEMICAL@$</query>
+	  		  <query id="comp.col.comp.cell.q2" mode="lookup">@COMPOUND_DICT@</query>
+			</cell>
+		</column>
+	
+	 * @param subRectTable
+	 * @param columnList
+	 */
+	public int createColumnsAndAddToSubTable(
+			RectangularTable subRectTable, List<RectTabColumn> columnList, int footerStart) {
+		for (int jcol = 0; jcol < columnList.size(); jcol++) {
+			RectTabColumn column = columnList.get(jcol);
+			if (column == null) {
+				LOG.debug("null column");
+			} else {
+				String colHeader = column.getHeader();
+				TQueryTool columnQueryTool = getOrCreateTitleMatcher().getOrCreateQueryTool();
+				if (columnQueryTool.matches(colHeader)) {
+					RectTabColumn rectangularCol = validateAndAddColumn(colHeader, column);
+					subRectTable.addColumn(rectangularCol);
+					footerStart = updateFooterStart(footerStart, column, colHeader);
+				}
+			}
+		}
+		return footerStart;
+	}
+
+	private int updateFooterStart(int footerStart, RectTabColumn column, String colHeader) {
+		TQueryTool footerQueryTool = findFooterQueryTool(colHeader, column);
+		if (footerQueryTool != null && footerStart != AMITableTool.INCONSISTENT_FOOTER) {
+			int indexOfFirstMatch = footerQueryTool.getMatchIntArray().indexOfFirst(AMITableTool.FIRST_MATCH);
+			if (indexOfFirstMatch == AMITableTool.NOT_FOUND) {
+				// skip
+			} else if (footerStart == AMITableTool.NO_FOOTER) {
+				footerStart = indexOfFirstMatch;
+			} else if (footerStart != indexOfFirstMatch) {
+				AMITableTool.LOG.error("inconsistent footer start: "+indexOfFirstMatch+" != "+footerStart);
+				// this will skip the rest
+				footerStart = AMITableTool.INCONSISTENT_FOOTER;
+			}
+		}
+		return footerStart;
 	}
 
 }

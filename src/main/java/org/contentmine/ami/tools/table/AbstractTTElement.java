@@ -17,10 +17,9 @@ public abstract class AbstractTTElement extends Element {
 	}
 
 	
-//	public static final String FIND = "find";
 	public static final String NAME = "name";
-//	public static final String REGEX = "regex";
-	private static final String ID = "id";
+	public static final String ID = "id";
+
 	
 	protected TTemplateList templateList;
 
@@ -94,7 +93,6 @@ public abstract class AbstractTTElement extends Element {
 		return this.getAttributeValue(ID);
 	}
 
-	
 
 			
 }

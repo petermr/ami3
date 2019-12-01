@@ -3,6 +3,8 @@ package org.contentmine.norma.sections;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.eucl.xml.XMLUtil;
+import org.contentmine.graphics.html.HtmlElement;
+import org.contentmine.graphics.html.HtmlP;
 
 import nu.xom.Element;
 
@@ -37,6 +39,10 @@ public class JATSFigElement extends JATSElement implements IsBlock, IsFloat, Has
 		return (JATSCaptionElement) getSingleChild(JATSCaptionElement.TAG);
 	}
 
+	public JATSGraphicElement getGraphic() {
+		return (JATSGraphicElement) getSingleChild(JATSGraphicElement.TAG);
+	}
+
 	public JATSLabelElement getLabel() {
 		return (JATSLabelElement) getSingleChild(JATSLabelElement.TAG);
 	}
@@ -57,6 +63,25 @@ public class JATSFigElement extends JATSElement implements IsBlock, IsFloat, Has
 		return this.getSingleChildValue(JATSLabelElement.TAG);
 	}
 
-
-
+	@Override
+	public HtmlElement createHTML() {
+		HtmlP p = new HtmlP();
+		JATSCaptionElement caption = getCaption();
+		if (caption != null) {
+			p.appendChild(caption.createHTML());
+			p.appendChild(" "); 
+		}
+		JATSGraphicElement graphic = getGraphic();
+		if (graphic != null) {
+			p.appendChild(graphic.createHTML());
+			p.appendChild(" "); 
+		}
+		JATSLabelElement label = getLabel();
+		if (label != null) {
+			p.appendChild(label.createHTML());
+			p.appendChild(" "); 
+		}
+		
+		return p;
+	}
 }

@@ -125,7 +125,7 @@ public class AMISectionToolTest extends AbstractAMITest {
 	}
 	
 	@Test
-	public void testCMIPSummary() {
+	public void testCMIP_OILSummary() {
 //		File dir = CMIP200;
 		File dir = OIL186;
 		String args = ""

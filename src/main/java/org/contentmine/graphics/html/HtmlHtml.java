@@ -40,8 +40,8 @@ public class HtmlHtml extends HtmlElement {
 	/** constructor.
 	 * 
 	 */
-//	@Deprecated // because it doesn't require UTF-8; @see {createUTF8Html()}
-	public HtmlHtml() {
+	@Deprecated // because it doesn't require UTF-8; @see {createUTF8Html()}
+	protected HtmlHtml() {
 		super(TAG);
 	}
 

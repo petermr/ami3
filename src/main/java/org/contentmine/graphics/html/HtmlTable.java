@@ -19,6 +19,7 @@ package org.contentmine.graphics.html;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
 
 import org.apache.log4j.Logger;
 import org.contentmine.eucl.euclid.Util;
@@ -170,7 +171,7 @@ public class HtmlTable extends HtmlElement {
 	}
 
 	/** convenience method to extract list of HtmlTable in element
-	 * 
+	 * requires HTML namespace
 	 * @param htmlElement
 	 * @return
 	 */
@@ -178,14 +179,24 @@ public class HtmlTable extends HtmlElement {
 		return HtmlTable.extractTables(HtmlUtil.getQueryHtmlElements(htmlElement, ALL_TABLE_XPATH));
 	}
 
+	/** convenience method to extract list of HtmlTable in element
+	 * 
+	 * @param htmlElement
+	 * @return
+	 */
+	public static List<HtmlTable> extractSelfAndDescendantTablesIgnoreNamespaces(HtmlElement htmlElement) {
+		List<Element> elements = XMLUtil.getQueryElements(htmlElement, "descendant-or-self::*[local-name()='"+HtmlTable.TAG+"']");
+		return HtmlTable.extractTables(elements);
+	}
+
 	/** makes a new list composed of the tables in the list
 	 * 
 	 * @param elements
 	 * @return
 	 */
-	public static List<HtmlTable> extractTables(List<HtmlElement> elements) {
+	public static List<HtmlTable> extractTables(List<? extends Element> elements) {
 		List<HtmlTable> tableList = new ArrayList<HtmlTable>();
-		for (HtmlElement element : elements) {
+		for (Element element : elements) {
 			if (element instanceof HtmlTable) {
 				tableList.add((HtmlTable) element);
 			}
@@ -212,6 +223,12 @@ public class HtmlTable extends HtmlElement {
 	public static List<HtmlTable> extractTables(File tableFile) {
 		HtmlElement htmlElement = HtmlElement.create(tableFile);
 		return extractSelfAndDescendantTables(htmlElement);
+	}
+
+	public static List<HtmlTable> extractTablesIgnoreNamespace(File tableFile) {
+		HtmlElement htmlElement = HtmlElement.create(tableFile);
+		List<HtmlTable> tables = extractSelfAndDescendantTablesIgnoreNamespaces(htmlElement);
+		return tables;
 	}
 
 	/** gets a row of header values either from Thead or first tr[th] row.
@@ -255,6 +272,21 @@ public class HtmlTable extends HtmlElement {
 //		}
 		
 	}
+
+//	public int getColumnIndexFromRegex(String regex) {
+//    	HtmlThead thead = getOrCreateThead()();
+//    	if (thead != null) {
+//    		Pattern pattern = Pattern.compile(regex);
+//    		List<String> thCellValues = thead.getThCellValues();
+//			for (int i = 0; i < thCellValues.size(); i++) {
+//    			String colName = thCellValues.get(i).trim();
+//				if (colName.matches(regex)) {
+//    				return i;
+//    			}
+//    		}
+//    	}
+//    	return -1;
+//	}
 
 
 

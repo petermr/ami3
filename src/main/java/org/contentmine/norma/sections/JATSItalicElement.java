@@ -1,5 +1,8 @@
 package org.contentmine.norma.sections;
 
+import org.contentmine.graphics.html.HtmlElement;
+import org.contentmine.graphics.html.HtmlI;
+
 import nu.xom.Element;
 
 /** the actual abstract in tne article
@@ -15,7 +18,13 @@ public class JATSItalicElement extends AbstractJATSHtmlElement implements IsInli
 		super(element);
 	}
 	
-	
+	/** HTMLEquivalent
+	 */
+	@Override
+	public HtmlElement createHTML() {
+		return deepCopyAndTransform(new HtmlI());
+	}
+
 	
 
 }

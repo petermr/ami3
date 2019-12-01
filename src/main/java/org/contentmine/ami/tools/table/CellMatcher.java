@@ -27,15 +27,12 @@ public class CellMatcher extends AbstractTTElement implements HasQuery {
 	
 	public CellMatcher(TTemplateList templateList) {
 		super(TAG, templateList);
-		LOG.debug("CELL CTOR");
 	}
 	public TQueryTool getOrCreateQueryTool() {
 		if (queryTool == null) {
 			queryTool = new TQueryTool(this);
 		}
-		LOG.debug("CELL QUERY");
 		return queryTool;
 	}
-
-
+	
 }

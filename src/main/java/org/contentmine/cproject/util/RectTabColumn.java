@@ -20,6 +20,7 @@ import com.google.common.collect.Multiset.Entry;
  * @author pm286
  *
  */
+ 
 public class RectTabColumn implements Iterable<String> {
 	private static final Logger LOG = Logger.getLogger(RectTabColumn.class);
 	static {
@@ -69,7 +70,25 @@ public class RectTabColumn implements Iterable<String> {
 	}
 
 	public List<String> subList(int startRow, int size) {
-		return columnValues.subList(startRow, size);
+		return columnValues.subList(startRow, startRow + size);
+	}
+
+	/** splits column before index
+	*/
+	
+	public List<List<String>> splitBefore(int row) {
+		LOG.debug("SPLIT");
+		if (row < 0) {
+			throw new RuntimeException("row too small "+row);
+		} else if (row > size()) {
+			throw new RuntimeException("row too large "+row+"/"+size());
+		}
+		List<List<String>> splitValues = new ArrayList<>();
+		List<String> upper = subList(0, row);
+		splitValues.add(upper);
+		List<String> lower = subList(row, size() - row);
+		splitValues.add(lower);
+		return splitValues;
 	}
 
 	@Override

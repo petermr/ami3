@@ -9,6 +9,8 @@ import java.util.regex.Pattern;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.util.RectTabColumn;
+import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.xml.XMLUtil;
 
@@ -25,12 +27,14 @@ public class TQueryTool {
 	public static final String QUERY = "query";
 	private static final String FIND = "find";
 	private static final String MATCH = "match";
-	private static final String MODE = "mode";
 	private static final String AND = "AND";
 	private static final String NOT = "NOT";
 	private static final String OR = "OR";
 //	public static int DEFAULT_FLAGS = Pattern.CASE_INSENSITIVE | Pattern.COMMENTS;
 	public static int DEFAULT_FLAGS = Pattern.CASE_INSENSITIVE ;
+	private static final String MODE = "mode";
+	public static final String LOOKUP = "lookup";
+
 	
 	private static final Logger LOG = Logger.getLogger(TQueryTool.class);
 	private static int flags = DEFAULT_FLAGS;
@@ -42,7 +46,12 @@ public class TQueryTool {
 	private List<Pattern> andPatternList;
 	private List<Pattern> notPatternList;
 	private List<Pattern> orPatternList;
-	private HasQuery containingQuery;
+	private AbstractTTElement containingQueryElement;
+	protected String lookupTarget;
+	// row-wise results as integers
+	private IntArray matchIntArray;
+	private String lookupContent;
+	private TTemplateList templateList;
 	
 	private TQueryTool() {
 		init();
@@ -69,23 +78,24 @@ public class TQueryTool {
 
 	public TQueryTool(HasQuery containingQuery) {
 		this();
-		this.containingQuery = containingQuery;
+		this.containingQueryElement = (AbstractTTElement) containingQuery;
+		templateList = containingQueryElement.templateList;
+
+		Element queryChild = XMLUtil.getSingleChild(containingQueryElement, QueryMatcher.TAG);
+		String modeValue = queryChild == null ? null : queryChild.getAttributeValue(MODE);
+		if (LOOKUP.equals(modeValue)) {
+			lookupTarget = containingQueryElement.getValue().trim();
+			lookupContent = templateList.substituteVariables(lookupTarget).trim();
+		}
 	}
 	
 	
 	public void parseQueries() {
-		parseQueries(containingQuery);
-	}
-		
-	public void parseQueries(HasQuery query) {
-		System.err.println("FL "+flags);
-		Element queryElement = (Element) query;
-//		LOG.debug("QUERY "+queryElement.toXML());
-		String queryContent0 = Util.normalizeTrimWhitespace(queryElement.getValue());
-		String queryContent = ((AbstractTTElement) containingQuery).templateList.substituteVariables(queryContent0);
+		String queryContent0 = Util.normalizeTrimWhitespace(containingQueryElement.getValue());
+		String queryContent = ((AbstractTTElement) containingQueryElement).templateList.substituteVariables(queryContent0);
 		notPatternList = new ArrayList<>();
 		String pre= addChunksToPatternListAndGetUnparsed(queryContent, NOT, notPatternList);
-		if (notPatternList.size() > 0) LOG.debug("NOT "+notPatternList);
+//		if (notPatternList.size() > 0) LOG.debug("NOT "+notPatternList);
 		orPatternList = new ArrayList<>();
 		pre = addChunksToPatternListAndGetUnparsed(pre, OR, orPatternList);
 		if (orPatternList.size() > 0) {
@@ -96,7 +106,7 @@ public class TQueryTool {
 		andPatternList = new ArrayList<>();
 		// omit AND at present
 //		pre = addChunksToPatternListAndGetUnparsed(pre, AND, andPatternList);
-		if (andPatternList.size() > 0) LOG.debug("AND "+andPatternList);
+//		if (andPatternList.size() > 0) LOG.debug("AND "+andPatternList);
 		
 	}
 
@@ -111,7 +121,6 @@ public class TQueryTool {
 			String regex = chunks.get(i).trim();
 			if (regex.length() > 0) {
 				Pattern pattern = Pattern.compile(regex, flags);
-//				Pattern pattern = Pattern.compile(regex);
 				patternList.add(pattern);
 			}
 		}
@@ -125,10 +134,11 @@ public class TQueryTool {
 		
 	}
 
-	public void getQueryResult(HasQuery hasQuery) {
-		parseQueries(hasQuery);
-	}
-
+	/** temporary until we can get a proper parser
+	 * 
+	 * @param target
+	 * @return
+	 */
 	public boolean matches(String target) {
 		target = target.trim();
 //		LOG.debug("contain "+((AbstractTTElement)containingQuery).toXML());
@@ -173,7 +183,7 @@ public class TQueryTool {
 		for (Pattern pattern : notPatternList) {
 			boolean matches = pattern.matcher(colHeader).find(0);
 			if (matches) {
-				System.err.println("NOT: ");
+//				System.err.println("NOT: ");
 				return false;
 			}
 		}
@@ -185,6 +195,29 @@ public class TQueryTool {
 	 * @return
 	 */
 	public String getSingleRegex() {
-		return ((Element) containingQuery).getValue().trim();
+		return ((Element) containingQueryElement).getValue().trim();
 	}
+
+	public IntArray match(RectTabColumn rectangularCol) {
+//		System.out.println("OR "+orPatternList);
+		List<String> values = rectangularCol.getValues();
+		return match(values);
+	}
+
+	public IntArray match(List<String> values) {
+		int size = values.size();
+		matchIntArray = new IntArray(size);
+		for (int i = 0; i < size; i++) {
+			String value = values.get(i);
+			if (value == null) value = "";
+			int result = this.matches(value) ? 1 : 0;
+			matchIntArray.setElementAt(i, result);
+		}
+		return matchIntArray;
+	}
+
+	public IntArray getMatchIntArray() {
+		return matchIntArray;
+	}
+
 }

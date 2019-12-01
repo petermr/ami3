@@ -24,6 +24,7 @@ import org.apache.log4j.Logger;
  *
  */
 public class QueryMatcher extends AbstractTTElement {
+
 	private static final Logger LOG = Logger.getLogger(QueryMatcher.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
@@ -40,11 +41,22 @@ public class QueryMatcher extends AbstractTTElement {
 	private List<Pattern> andPatternList;
 	private List<Pattern> notPatternList;
 	private List<Pattern> orPatternList;
+	private String mode;
+	private String lookupTarget;
 	
 	public QueryMatcher(TTemplateList templateList) {
-		super(TAG, templateList);		
+		super(TAG, templateList);
+		init();
 	}
 	
+	private void init() {
+//		LOG.debug("ID "+this.getAttributeValue("id")+"; "+this.getLocalName()+"; "+this.toXML());
+//		if (LOOKUP.equals(this.getAttributeValue(MODE))) {
+//			lookupTarget = this.getValue();
+//			LOG.info("LOOKUP "+lookupTarget);
+//		}
+	}
+
 	public List<Pattern> getOrCreateAndPatternList() {
 		if (andPatternList == null) {
 			andPatternList = new ArrayList<Pattern>();

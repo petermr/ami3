@@ -279,7 +279,7 @@ public class CMineUtil {
 	}
 
 	public static HtmlElement createEmptyHTMLWthComment(String comment) {
-		HtmlHtml html = new HtmlHtml();
+		HtmlHtml html = HtmlHtml.createUTF8Html();
 		html.appendChild(new Comment(comment));
 		return html;
 	}

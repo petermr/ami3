@@ -520,7 +520,7 @@ public class TableContentCreator extends PageLayoutAnalyzer {
 	}
 
 	public HtmlHtml createHtmlFromSVG() {
-		HtmlHtml html = new HtmlHtml();
+		HtmlHtml html = HtmlHtml.createUTF8Html();
                 // Use this API to ensure top-level structures are added
                 // to the output XML tree / HTML DOM
 		HtmlBody body = html.getOrCreateBody();      

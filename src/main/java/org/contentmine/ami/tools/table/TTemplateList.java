@@ -68,7 +68,7 @@ public class TTemplateList extends AbstractTTElement {
 			for (Element variable : variableList) {
 				((VariableMatcher)variable).addToMap();
 			}
-			LOG.debug("created variable map: "+templateList.getOrCreateVariableMap());
+//			LOG.debug("created variable map: "+templateList.getOrCreateVariableMap());
 			List<TQueryTool> queryToolList = templateList.addQueryTools();
 			for (TQueryTool queryTool : queryToolList) {
 				queryTool.parseQueries();
@@ -179,7 +179,7 @@ public class TTemplateList extends AbstractTTElement {
 				TQueryTool queryTool = hasQuery.getOrCreateQueryTool();
 				queryToolList.add(queryTool);
 			}
-			LOG.debug("Added queryTools: "+queryToolList.size());
+//			LOG.debug("Added queryTools: "+queryToolList.size());
 		}
 		return queryToolList;
 	}

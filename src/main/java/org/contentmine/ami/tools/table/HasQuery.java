@@ -8,5 +8,6 @@ import nu.xom.Element;
 public interface HasQuery {
 
 	TQueryTool getOrCreateQueryTool();
+	
 
 }

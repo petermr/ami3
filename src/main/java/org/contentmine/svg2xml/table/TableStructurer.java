@@ -173,7 +173,7 @@ public class TableStructurer {
 	}
 
 	private HtmlHtml createHtmlWithTable() {
-		html = new HtmlHtml();
+		html = HtmlHtml.createUTF8Html();
 		createHtmlHead();
 		createHtmlTable();
 		html.appendChild(htmlTable);

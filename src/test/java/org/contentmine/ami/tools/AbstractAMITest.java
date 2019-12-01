@@ -17,6 +17,7 @@ public class AbstractAMITest {
 	public static File PROJECTS = new File(_HOME, "projects/");
 	public static File CEV_SEARCH = new File(PROJECTS, "CEVOpen/searches/");
 	public static File OIL186 = new File(CEV_SEARCH, "oil186/");
+	public static File OIL1000 = new File(CEV_SEARCH, "oil1000/");
 	public static CProject OIL186_PROJ = new CProject(OIL186);
 	public static File CLIM_SEARCH = new File(PROJECTS, "climate/searches/");
 	public static File CMIP200 = new File(CLIM_SEARCH, "cmip200/");

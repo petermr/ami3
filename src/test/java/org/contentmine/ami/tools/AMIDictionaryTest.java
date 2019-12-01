@@ -18,7 +18,7 @@ import junit.framework.Assert;
  * @author pm286
  *
  */
-public class AMIDictionaryTest {
+public class AMIDictionaryTest extends AbstractAMITest {
 	private static final Logger LOG = Logger.getLogger(AMIDictionaryTest.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
@@ -439,7 +439,9 @@ public class AMIDictionaryTest {
 
 	@Test
 	public void testListOfRiceVarieties() {
-		String args = "create  --input https://en.wikipedia.org/wiki/List_of_rice_varieties --informat wikipage --hreftext --dictionary ricevarieties --outformats xml,json,html";
+		String args = "create"
+				+ " --input https://en.wikipedia.org/wiki/List_of_rice_varieties"
+				+ " --informat wikipage --hreftext --dictionary ricevarieties --outformats xml,json,html";
 		new AMIDictionaryTool().runCommands(args);
 	}
 	
@@ -452,6 +454,16 @@ public class AMIDictionaryTest {
 				+ " --dictionary otenuiflorum"
 				+ " --directory mydictionaries"
 				+ " --outformats xml,html";
+		new AMIDictionaryTool().runCommands(args);
+
+	}
+	@Test
+	public void testDictionarySearch() {
+		String args = "search"
+				+ " --dictionary "+CEV_SEARCH+"/../dictionary/compound/compound.xml"
+//				+ " --search thymol carvacrol"
+				+ " --searchfile "+CEV_SEARCH+"/oil186/__tables/compound_set.txt"
+				+ "";
 		new AMIDictionaryTool().runCommands(args);
 
 	}
