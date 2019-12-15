@@ -75,8 +75,10 @@ public class CustomPageDrawer {
 	
     public static void main(String[] args) throws IOException
     {
-        File indir = new File("src/main/resources/org/apache/pdfbox/examples/rendering/");
-        String fileroot = "custom-render-demo";
+//        File indir = new File("src/main/resources/org/apache/pdfbox/examples/rendering/");
+        File indir = new File("src/test/resources/org/contentmine/ami/omar/test/lichtenburg19a");
+//        String fileroot = "custom-render-demo";
+        String fileroot = "fulltext";
         File outdir = indir;
         CustomPageDrawer customPageDrawer = new CustomPageDrawer();
         customPageDrawer.renderPage0(indir, outdir, fileroot);

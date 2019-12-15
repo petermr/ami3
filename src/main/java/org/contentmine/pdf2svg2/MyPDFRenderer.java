@@ -20,8 +20,8 @@ public class MyPDFRenderer extends PDFRenderer
     @Override
     protected PageDrawer createPageDrawer(PageDrawerParameters parameters) throws IOException
     {
-//        return new CustomPageDrawerNew(parameters);
-    	throw new RuntimeException("NYI");
+        return new CustomPageDrawerNew(parameters);
+//    	throw new RuntimeException("NYI");
     }
 }
 
