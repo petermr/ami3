@@ -572,7 +572,12 @@ public class AMISectionToolTest extends AbstractAMITest {
 		projectTagger.addProjectBodysAsFiles();
 		projectTagger.addProjectFrontsAsFiles();
 	}
-	
+
+	@Test
+	public void testOmar1() {
+		File targetDir = new File("target/sections/");
+		CMineTestFixtures.cleanAndCopyDir(AMIFixtures.TEST_OMAR_DIR, targetDir);
+	}
 }
 		
 	
