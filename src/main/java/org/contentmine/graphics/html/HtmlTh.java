@@ -24,7 +24,8 @@ import org.apache.log4j.Logger;
  * @author pm286
  *
  */
-public class HtmlTh extends HtmlElement {
+public class HtmlTh extends HtmlTCell {
+	
 	@SuppressWarnings("unused")
 	private final static Logger LOG = Logger.getLogger(HtmlTh.class);
 	public final static String TAG = "th";

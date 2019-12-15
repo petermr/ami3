@@ -436,6 +436,9 @@ public abstract class HtmlElement extends AbstractCMElement {
 
 	public HtmlElement setClassAttribute(String value) {
 		this.setAttribute(CLASS, value);
+		if (value == this.getLocalName()) {
+			LOG.debug("unnecessary class attribute");
+		}
 		return this;
 	}
 
@@ -626,6 +629,10 @@ public abstract class HtmlElement extends AbstractCMElement {
 
 	protected List<String> allowedChildren() {
 		return Arrays.asList(new String[] {ANY_TAG});
+	}
+
+	public void tidy() {
+		LOG.debug("no tidy for: "+this.getClass()+" ; override");
 	}
 
 }

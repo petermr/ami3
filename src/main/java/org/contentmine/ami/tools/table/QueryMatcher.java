@@ -50,11 +50,6 @@ public class QueryMatcher extends AbstractTTElement {
 	}
 	
 	private void init() {
-//		LOG.debug("ID "+this.getAttributeValue("id")+"; "+this.getLocalName()+"; "+this.toXML());
-//		if (LOOKUP.equals(this.getAttributeValue(MODE))) {
-//			lookupTarget = this.getValue();
-//			LOG.info("LOOKUP "+lookupTarget);
-//		}
 	}
 
 	public List<Pattern> getOrCreateAndPatternList() {

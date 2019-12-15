@@ -83,5 +83,12 @@ public class HtmlP extends HtmlElement {
 		List<HtmlSpan> spanList = getSpanList();
 		return spanList.size() == 0 ? null : spanList.get(spanList.size() - 1);
 	}
+	
+	public void tidy() {
+//		LOG.debug("p "+this.toXML());
+//		LOG.debug("ignored p.tidy()");
+	}
+
+
 
 }

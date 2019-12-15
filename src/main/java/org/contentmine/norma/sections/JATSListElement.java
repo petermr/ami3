@@ -1,7 +1,7 @@
 package org.contentmine.norma.sections;
 
-import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.html.HtmlElement;
+import org.contentmine.graphics.html.HtmlUl;
 
 import nu.xom.Element;
 
@@ -22,9 +22,8 @@ public class JATSListElement extends JATSElement implements IsBlock {
 	 */
 	@Override
 	public HtmlElement createHTML() {
-		HtmlDiv div = new HtmlDiv();
-		div.setClassAttribute(TAG);
-		return deepCopyAndTransform(div);
+		HtmlUl ul = new HtmlUl();
+		return deepCopyAndTransform(ul);
 	}
 
 

@@ -46,6 +46,7 @@ import org.contentmine.graphics.html.HtmlA;
 import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlLi;
+import org.contentmine.graphics.html.HtmlTCell;
 import org.contentmine.graphics.html.HtmlTable;
 import org.contentmine.graphics.html.HtmlTbody;
 import org.contentmine.graphics.html.HtmlTr;
@@ -84,6 +85,7 @@ import picocli.CommandLine.Parameters;
 public class AMIDictionaryTool extends AbstractAMITool {
 	
 
+	private static final String UTF_8 = "UTF-8";
 	private static final Logger LOG = Logger.getLogger(AMIDictionaryTool.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
@@ -555,28 +557,40 @@ public class AMIDictionaryTool extends AbstractAMITool {
 	}
 
 	private void searchDictionary() {
-		DefaultAMIDictionary amiDictionary = new DefaultAMIDictionary();
-		amiDictionary.readDictionary(new File(dictionary[0]));
-		Set<String> rawTermSet = amiDictionary.getRawTermSet();
+		DefaultAMIDictionary amiDictionary = AMIDictionaryTool.readDictionary(new File(dictionary[0]));
+		Set<String> rawTermSet = amiDictionary.getRawLowercaseTermSet();
 		
 		if (searchTerms != null) {
 			searchDictionaryForTerms(rawTermSet, searchTerms);
 		} else if (searchTermFilenames != null) {
-			List<String> allSearchTerms = new ArrayList<>();
-			for (String searchTermFilename : searchTermFilenames) {
-				File file = new File(searchTermFilename);
-				try {
-					List<String> searchTerms0 = FileUtils.readLines(file, Charset.forName("UTF-8"));
-					allSearchTerms.addAll(searchTerms0);
-				} catch (Exception e) {
-					throw new RuntimeException("Cannot read "+file);
-				}
-			}
-			searchDictionaryForTerms(rawTermSet, allSearchTerms);			
+			searchTermsInFiles(rawTermSet, searchTermFilenames);	
 		}
 	}
+	
+	public static DefaultAMIDictionary readDictionary(File file) {
+		DefaultAMIDictionary amiDictionary = new DefaultAMIDictionary();
+		amiDictionary.readDictionary(file);
+		return amiDictionary;
+	}
 
-	private void searchDictionaryForTerms(Set<String> rawTermSet, List<String> searchTerms) {
+
+
+	private void searchTermsInFiles(Set<String> rawTermSet, List<String> searchTermFilenames) {
+		List<String> allSearchTerms = new ArrayList<>();
+		for (String searchTermFilename : searchTermFilenames) {
+			File file = new File(searchTermFilename);
+			try {
+				List<String> searchTerms0 = FileUtils.readLines(file, Charset.forName(UTF_8));
+				allSearchTerms.addAll(searchTerms0);
+			} catch (Exception e) {
+				throw new RuntimeException("Cannot read "+file);
+			}
+		}
+		searchDictionaryForTerms(rawTermSet, allSearchTerms);
+	}
+
+	private static void searchDictionaryForTerms(Set<String> rawTermSet, List<String> searchTerms) {
+		rawTermSet = Util.toLowercase(rawTermSet);
 		for (String searchTerm : searchTerms) {
 			if (rawTermSet.contains(searchTerm)) {
 				System.out.println("found: "+searchTerm);
@@ -632,7 +646,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 	private void convertJsonDictionaryToXML(File infile, File outfile) {
 		String inString = null;
 		try {
-			inString = FileUtils.readFileToString(infile, "UTF-8");
+			inString = FileUtils.readFileToString(infile, UTF_8);
 		} catch (IOException e) {
 			throw new RuntimeException("Cannot read Json: " + infile, e);
 		}
@@ -944,12 +958,12 @@ public class AMIDictionaryTool extends AbstractAMITool {
 			XMLUtil.debug(dictionaryElement, fos, 1);
 		} else if (outformat.equals(DictionaryFileFormat.json)) {
 			String jsonS = createJson(dictionaryElement);
-			IOUtils.write(jsonS, fos, "UTF-8");
+			IOUtils.write(jsonS, fos, UTF_8);
 		} else if (outformat.equals(DictionaryFileFormat.html)) {
 			HtmlDiv div = createHtml();
 			if (div != null) {
 				String xmlS = div.toXML();
-				IOUtils.write(xmlS, fos, "UTF-8");
+				IOUtils.write(xmlS, fos, UTF_8);
 			}
 		}
 		try {
@@ -1147,8 +1161,8 @@ public class AMIDictionaryTool extends AbstractAMITool {
 			for (int i = 0; i < rowList.size(); i++) {
 				HtmlTr row = tBody.getRowList().get(i);
 				// unfortunately Th is also found
-				List<HtmlElement> tdthChildren = row.getTdOrThChildren();
-				int size = tdthChildren.size();
+				List<HtmlTCell> cellChildren = row.getTCellChildren();
+				int size = cellChildren.size();
 				if (size == 0) {
 					// skip header and empty rows
 					continue;
@@ -1164,7 +1178,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 					fusedrow++;
 					continue;
 				}
-				List<String> linkFields = addValueFromContentOrHref(tdthChildren.get(colIndex), field, base);
+				List<String> linkFields = addValueFromContentOrHref((HtmlElement)cellChildren.get(colIndex), field, base);
 				valueList.addAll(linkFields);
 			}
 			System.out.print("\nrows: "+rowList.size()+" ");

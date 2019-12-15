@@ -1,0 +1,44 @@
+pm286macbook:omar pm286$ curl http://proceedings.mlr.press/v97/lichtenberg19a/lichtenberg19a.pdf --output lichtenburg19a.pdf
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  420k  100  420k    0     0   473k      0 --:--:-- --:--:-- --:--:--  472k
+pm286macbook:omar pm286$ ls -l
+total 848
+-rw-r--r--  1 pm286  staff  430748 15 Dec 11:55 lichtenburg19a.pdf
+pm286macbook:omar pm286$ mkdir test
+pm286macbook:omar pm286$ mv lichtenburg19a.pdf test/
+pm286macbook:omar pm286$ ls
+test
+pm286macbook:omar pm286$ ami-makeproject -p test
+
+Generic values (AMIMakeProjectTool)
+================================
+AMIMakeProjectTool: ERROR: must give at least one filetype (e.g. html); NO ACTION
+-v to see generic values
+oldstyle            true
+
+Specific values (AMIMakeProjectTool)
+================================
+compress            25
+omit                [template\.xml, log\.txt, summary\.json]
+processing halted due to argument errors, level:ERROR
+pm286macbook:omar pm286$ ami-makeproject -p test --rawfiletypes=pdf
+
+Generic values (AMIMakeProjectTool)
+================================
+-v to see generic values
+oldstyle            true
+
+Specific values (AMIMakeProjectTool)
+================================
+compress            25
+omit                [template\.xml, log\.txt, summary\.json]
+pm286macbook:omar pm286$ tree test
+test
+├── lichtenburg19a
+│   └── fulltext.pdf
+└── make_project.json
+
+1 directory, 2 files
+pm286macbook:omar pm286$ 
+

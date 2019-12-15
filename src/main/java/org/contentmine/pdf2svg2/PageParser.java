@@ -127,7 +127,8 @@ public class PageParser extends PageDrawer    {
 	// to limit section being analyzed
 	private Real2Range viewBox;
 	// to avoid quadratic or similar performance
-	private int maxPrimitives;
+//	private int maxPrimitives;
+	private PDFDocumentProcessor documentProcessor;
 
 
 	PageParser(PageDrawerParameters parameters, int iPage) throws IOException        {
@@ -149,7 +150,7 @@ public class PageParser extends PageDrawer    {
 
 	private void setDefaults() {
 		viewBox = new Real2Range(new RealRange(-100, 1000), new RealRange(-100, 1000));
-		maxPrimitives = 5000; /// 
+//		maxPrimitives = 5000; /// 
 	}
 
 	/**
@@ -429,7 +430,7 @@ PMR have not yet looked into this.
     public void moveTo(float x, float y) {
     	super.moveTo(x, y);
     	MovePrimitive mp = new MovePrimitive(new Real2(x, createY((double)y)));
-//    	System.out.print(" MOVE "+mp);
+//    	LOG.debug(" MOVE "+mp);
     	if (currentPathPrimitiveList == null) {
     		currentPathPrimitiveList = new PathPrimitiveList();
     	}
@@ -440,7 +441,7 @@ PMR have not yet looked into this.
     public void lineTo(float x, float y) {
     	super.lineTo(x, y);
     	LinePrimitive lp = new LinePrimitive(new Real2(x, createY((double)y)));
-//    	System.out.print(" LINE "+lp);
+//    	LOG.debug(" LINE "+lp);
     	checkNotNullAndAdd(lp);
     }
 
@@ -450,7 +451,7 @@ PMR have not yet looked into this.
     	String coordString = x1+","+createY((double)y1)+","+x2+","+createY((double)y2)+","+x3+","+createY((double)y3);
     	Real2Array r2a = Real2Array.createFromPairs(coordString, ",");
     	CubicPrimitive cp = new CubicPrimitive(r2a); 
-//    	System.out.print(" CURVE "+cp);
+//    	LOG.debug(" CURVE "+cp);
     	checkNotNullAndAdd(cp);
     }
 
@@ -473,10 +474,12 @@ PMR have not yet looked into this.
     		LOG.warn("cannot close path on non-existent primitiveList");
     	} else {
     		Real2Range bb = p.getBoundingBox();
-    		if (viewBox.includes(bb) && (true || currentPathPrimitiveList.size() < maxPrimitives)) {
-    			currentPathPrimitiveList.add(p);
-//    			System.err.print(p.getTag()+"/"+p.toString());
-//    			System.err.print(p.getTag());
+    			
+    		if (viewBox.includes(bb) ) {
+        		if (currentPathPrimitiveList.size() < documentProcessor.getMaxPrimitives()) {
+//	    			LOG.debug("PP "+currentPathPrimitiveList.size());
+	    			currentPathPrimitiveList.add(p);
+        		}
     		} else {
 //    			System.err.print(p.getTag() + "?" + viewBox +"/"+ (bb == null ? "x" : bb.format(3)));
 //    			LOG.debug("omitted primitive out of range");
@@ -993,6 +996,10 @@ xmlns="http://www.w3.org/2000/svg">
 
 	public void setViewBox(Real2Range viewBox) {
 		this.viewBox = viewBox;
+	}
+
+	public void setDocumentProcessor(PDFDocumentProcessor documentProcessor) {
+		this.documentProcessor = documentProcessor;
 	}
 
 

@@ -169,6 +169,14 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 	public Set<String> getRawTermSet() {
 		return rawTermSet;
 	}
+	
+	public Set<String> getRawLowercaseTermSet() {
+		Set<String> lowercaseSet = new HashSet<>();
+		for (String rawTerm : rawTermSet) {
+			lowercaseSet.add(rawTerm.toLowerCase());
+		}
+		return lowercaseSet;
+	}
 
 	private boolean mightContain(String string) {
 		return bloomFilter == null ? true : bloomFilter.mightContain(string);
@@ -270,7 +278,7 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 		readDictionaryElement(dictionaryElement);
 	}
 
-	public void readDictionaryElement(Element dictionaryElement) {
+	public DefaultAMIDictionary readDictionaryElement(Element dictionaryElement) {
 		this.dictionaryElement = dictionaryElement;
 		namesByTerm = new HashMap<DictionaryTerm, String>();
 		rawTermSet = new HashSet<String>();
@@ -300,7 +308,7 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 				// add desc here
 			}
 		}
-		return;
+		return this;
 	}
 
 

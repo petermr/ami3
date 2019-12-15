@@ -822,7 +822,7 @@ public class IntArray extends ArrayBase implements Iterable<Integer> {
      */
     public int indexOfLargestElement() throws ArrayIndexOutOfBoundsException {
         if (nelem == 0) {
-            throw new ArrayIndexOutOfBoundsException();
+            throw new ArrayIndexOutOfBoundsException("no element to find max");
         }
         int index = -1;
         int value = Integer.MIN_VALUE;
@@ -873,7 +873,11 @@ public class IntArray extends ArrayBase implements Iterable<Integer> {
      * @return value
      */
     public int getMax() throws ArrayIndexOutOfBoundsException {
-        return array[indexOfLargestElement()];
+        int indexOfLargestElement = indexOfLargestElement();
+        if (indexOfLargestElement == -1) {
+        	throw new ArrayIndexOutOfBoundsException("no elements to find max");
+        }
+		return array[indexOfLargestElement];
     }
     /**
      * value of smallest element.

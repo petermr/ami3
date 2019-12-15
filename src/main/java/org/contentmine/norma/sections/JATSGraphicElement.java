@@ -1,12 +1,9 @@
 package org.contentmine.norma.sections;
 
-import java.util.Arrays;
-import java.util.List;
-
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.html.HtmlElement;
-import org.contentmine.graphics.html.HtmlP;
 
 import nu.xom.Element;
 
@@ -37,9 +34,10 @@ public class JATSGraphicElement extends JATSElement implements IsAnchor {
 
 	@Override
 	public HtmlElement createHTML() {
-		HtmlP p = new HtmlP();
-		p.appendChild(this.getAttributeValue("href"));
-		return p;
+		HtmlDiv div = new HtmlDiv();
+		div.setClassAttribute(this.TAG);
+		div.appendChild(this.getAttributeValue("href"));
+		return div;
 	}
 
 

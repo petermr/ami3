@@ -33,11 +33,11 @@ public class DocumentParser extends PDFRenderer {
 	private PageParser currentPageParser;
 	private SVGG currentSVGG;
 	private Map<PageSerial, SVGG> svgPageBySerial;
-//	private Map<PageSerial, BufferedImage> rawImageBySerial;
 	private Map<PageSerial, BufferedImage> renderedImageBySerial;
 	private int pageIndex;
 	private int iPage;
 	private Map<String, BufferedImage> rawImageByTitle;
+	private PDFDocumentProcessor documentProcessor;
 
 
 	DocumentParser(PDDocument document) {
@@ -64,6 +64,7 @@ public class DocumentParser extends PDFRenderer {
     @Override
     protected PageDrawer createPageDrawer(PageDrawerParameters parameters) throws IOException {
         currentPageParser = new PageParser(parameters, iPage);
+        currentPageParser.setDocumentProcessor(documentProcessor);
         return currentPageParser;
     }
     
@@ -114,14 +115,16 @@ public class DocumentParser extends PDFRenderer {
 	 * @throws InvalidPasswordException
 	 * @throws IOException
 	 */
-	public Map<PageSerial, BufferedImage> parseDocument(PDFDocumentProcessor processor, PDDocument currentDoc) throws IOException {
+	public Map<PageSerial, BufferedImage> parseDocument(PDFDocumentProcessor documentProcessor, PDDocument currentDoc) throws IOException {
+		this.documentProcessor = documentProcessor;
 		renderedImageBySerial = new HashMap<PageSerial, BufferedImage>();
         svgPageBySerial = new HashMap<PageSerial, SVGG>();
         rawImageByTitle = new HashMap<>();
         int numberOfPages = currentDoc.getNumberOfPages();
-    	PageIncluder pageIncluder = processor.getOrCreatePageIncluder();
+    	PageIncluder pageIncluder = documentProcessor.getOrCreatePageIncluder();
         iPage = 0;
         for (; iPage < numberOfPages; iPage++) {
+        	
 			PageSerial pageSerial = PageSerial.createFromZeroBasedPage(iPage);
 			if (pageIncluder.pageIsIncluded(pageSerial)) {
 	        	parsePage(pageSerial);

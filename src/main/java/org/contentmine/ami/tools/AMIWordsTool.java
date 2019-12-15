@@ -349,7 +349,7 @@ WS: /
 //	}
 					
 				} catch (Exception e) {
-					CommandProcessor.LOG.error("cannot run command: "+pluginOption +"; " + e.getMessage());
+					LOG.error("cannot run command: "+pluginOption +"; " + e.getMessage());
 					continue;
 				}
 				System.out.println("filter: "+pluginOption);

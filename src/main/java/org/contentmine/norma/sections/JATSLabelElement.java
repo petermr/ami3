@@ -35,6 +35,7 @@ public class JATSLabelElement extends JATSElement implements IsInline {
 	@Override
 	public HtmlElement createHTML() {
 		HtmlP p = new HtmlP();
+		p.setClassAttribute(this.TAG);
 		p.appendChild(this.getValue());
 		return p;
 	}

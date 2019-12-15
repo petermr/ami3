@@ -2,8 +2,8 @@ package org.contentmine.norma.sections;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.html.HtmlElement;
+import org.contentmine.graphics.html.HtmlLi;
 
 import nu.xom.Element;
 
@@ -22,9 +22,9 @@ public class JATSListItemElement extends JATSElement {
 	 */
 	@Override
 	public HtmlElement createHTML() {
-		HtmlDiv div = new HtmlDiv();
-		div.setClassAttribute(TAG);
-		return deepCopyAndTransform(div);
+		HtmlLi li = new HtmlLi();
+		li.setClassAttribute(TAG);
+		return deepCopyAndTransform(li);
 	}
 
 

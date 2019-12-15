@@ -84,9 +84,11 @@ public class ColumnMatcher extends AbstractTTElement {
 		String colName = getName();
 		RectTabColumn rectangularCol = RectTabColumn.createColumn(column.getValues(), colName+"=("+colHeader+")");
 		TQueryTool cellQueryTool = getOrCreateCellMatcher().getOrCreateQueryTool();
-		IntArray matchCells = cellQueryTool.match(rectangularCol);
+		IntArray matchCells = cellQueryTool.match(rectangularCol.getValues());
 		double fract = Util.format((100. * matchCells.absSumAllElements()) / matchCells.size(), 1);
 		System.out.println("      column: "+colName+" => "+colHeader + "; "+fract);
+		LOG.debug("MATCHED "+cellQueryTool.getMatchedValues());
+		LOG.debug("UNMATCHED "+cellQueryTool.getUnmatchedValues());
 		return rectangularCol;
 	}
 
@@ -96,6 +98,7 @@ public class ColumnMatcher extends AbstractTTElement {
 		if (footerMatcher != null) {
 			footerQueryTool = footerMatcher.getOrCreateQueryTool();
 			IntArray matchCells = footerQueryTool.match(column.getValues());
+			LOG.debug("FOOTER matches "+matchCells);
 		}
 		return footerQueryTool;
 	}
@@ -148,7 +151,7 @@ public class ColumnMatcher extends AbstractTTElement {
 			} else if (footerStart == AMITableTool.NO_FOOTER) {
 				footerStart = indexOfFirstMatch;
 			} else if (footerStart != indexOfFirstMatch) {
-				AMITableTool.LOG.error("inconsistent footer start: "+indexOfFirstMatch+" != "+footerStart);
+				LOG.error("inconsistent footer start: "+indexOfFirstMatch+" != "+footerStart);
 				// this will skip the rest
 				footerStart = AMITableTool.INCONSISTENT_FOOTER;
 			}

@@ -22,7 +22,7 @@ public class AMITableToolTest extends AbstractAMITest {
 				+ " --summarytable __table/summary.html"
 				+ " --tabledir sections/tables"
 				
-				+ " --templatefile "+CEV_SEARCH+"/../templates/phytomedchem.xml"
+				+ " --templatefile "+CEV+"/templates/phytomedchem.xml"
 				+ " --template composition"
 				
 			;
@@ -31,25 +31,61 @@ public class AMITableToolTest extends AbstractAMITest {
 
 	@Test
 	public void testColumnTypesOil() {
-		File dir = OIL5;
-//		File dir = OIL186;
+//		File dir = OIL5;
+		File dir = OIL186;
 //		File dir = OIL1000;
 		String cmd = "-p " + dir +" --forcemake "
 				+ " --extract fig table supplementary"
 				+ " --summary table figure supplementary";
-//		new AMISectionTool().runCommands(cmd);
+		new AMISectionTool().runCommands(cmd);
 		String args = ""
 				+ "-p " + dir + ""
 				+ " --tabledir sections/tables"
 				+ " --columntypes"
-//				+ " --templatefile "+CEV_SEARCH+"/../templates/phytomedchem.xml"
-				+ " --templatefile "+CEV_SEARCH+"/../templates/phytomedchem1.xml"  // uses chemical lookup
+				+ " --templatefile "+CEV+"/templates/phytomedchem.xml"
+//				+ " --templatefile "+CEV+"/templates/phytomedchem1.xml"  // uses chemical lookup
 				+ " --template composition"
 				+ " --multiset compound"
 				
 			;
 		new AMITableTool().runCommands(args);
 	}
+
+	@Test
+	public void testColspans() {
+		File dir = OIL5;
+//		File dir = OIL186;
+//		File dir = OIL1000;
+		String cmd = "-p " + dir +" --forcemake "
+				+ " --extract fig table supplementary"
+				+ " --summary table figure supplementary";
+		new AMISectionTool().runCommands(cmd);
+	}
+
+
+	@Test
+	public void testActivity() {
+		File dir = OIL5;
+//		File dir = OIL186;
+//		File dir = OIL1000;
+		String cmd = "-p " + dir +" --forcemake "
+				+ " --extract fig table supplementary"
+				+ " --summary table figure supplementary";
+		new AMISectionTool().runCommands(cmd);
+//		if (true) return;
+		String args = ""
+				+ "-p " + dir + ""
+				+ " --tabledir sections/tables"
+				+ " --columntypes"
+				+ " --templatefile "+CEV+"/templates/phytomedchem.xml"
+				+ " --template activity"
+				+ " --multiset activity"
+				+ " -vv"
+				
+			;
+		new AMITableTool().runCommands(args);
+	}
+
 
 
 	@Test

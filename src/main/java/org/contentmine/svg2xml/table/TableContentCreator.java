@@ -32,6 +32,7 @@ import org.contentmine.graphics.html.HtmlTfoot;
 import org.contentmine.graphics.html.HtmlTh;
 import org.contentmine.graphics.html.HtmlThead;
 import org.contentmine.graphics.html.HtmlTr;
+import org.contentmine.graphics.html.HtmlTrContainer;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGRect;
@@ -120,7 +121,7 @@ public class TableContentCreator extends PageLayoutAnalyzer {
 	private TableHeaderSection tableHeaderSection;
 	private TableBodySection tableBodySection;
 	private TableFooterSection tableFooterSection;
-    private HtmlThead tableHtmlThead;
+    private HtmlTrContainer tableHtmlThead;
     private HtmlTfoot tableHtmlTfoot;
 	private SVGElement annotatedSvgChunk;
     private boolean tableHasCompoundColumns = false;
@@ -554,7 +555,7 @@ public class TableContentCreator extends PageLayoutAnalyzer {
 			cols = addHeaderBoxes(tr, g, bodyCols);
 		}
                 
-                HtmlThead htmlThead = new HtmlThead();
+                HtmlTrContainer htmlThead = new HtmlThead();
                 AbstractCMElement gColGroups = svgElement == null ? null : (SVGElement) XMLUtil.getSingleElement(svgElement, 
 				".//*[local-name()='g' and @class='"+TableHeaderSection.HEADER_BOXES+"']");
 		if (gColGroups != null) {
@@ -599,7 +600,7 @@ public class TableContentCreator extends PageLayoutAnalyzer {
             return colGroupHeaderRows;
         } 
         
-        private void addColumnGroups(HtmlThead htmlHead, AbstractCMElement g, AbstractCMElement hdrG, int bodyDelta) { 
+        private void addColumnGroups(HtmlTrContainer htmlHead, AbstractCMElement g, AbstractCMElement hdrG, int bodyDelta) { 
             List<SVGRect> columnGroupRects = SVGRect.extractSelfAndDescendantRects(g);
             List<List<SVGRect>> cgRows = createColumnGroupRows(columnGroupRects);
             HtmlTr tr;

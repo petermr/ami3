@@ -15,7 +15,9 @@ public class AbstractAMITest {
 	public static File SRC_TEST_AMI = new File(CMDEV, "ami3/src/test/resources/org/contentmine/ami");
 	public static File OIL5 = new File(SRC_TEST_AMI, "oil5/");
 	public static File PROJECTS = new File(_HOME, "projects/");
-	public static File CEV_SEARCH = new File(PROJECTS, "CEVOpen/searches/");
+	public static File CANADA = new File(PROJECTS, "canada/");
+	public static File CEV = new File(PROJECTS, "CEVOpen/");
+	public static File CEV_SEARCH = new File(CEV, "searches/");
 	public static File OIL186 = new File(CEV_SEARCH, "oil186/");
 	public static File OIL1000 = new File(CEV_SEARCH, "oil1000/");
 	public static CProject OIL186_PROJ = new CProject(OIL186);

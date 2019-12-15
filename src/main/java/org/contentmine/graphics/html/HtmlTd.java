@@ -30,7 +30,7 @@ import nu.xom.Attribute;
  * @author pm286
  *
  */
-public class HtmlTd extends HtmlElement {
+public class HtmlTd extends HtmlTCell {
 	@SuppressWarnings("unused")
 	private final static Logger LOG = Logger.getLogger(HtmlTd.class);
 	public final static String TAG = "td";

@@ -19,7 +19,7 @@ import org.junit.Test;
  * @author pm286
  *
  */
-public class AMIPDFTest {
+public class AMIPDFTest extends AbstractAMITest {
 	private static final Logger LOG = Logger.getLogger(AMIPDFTest.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
@@ -134,5 +134,23 @@ public class AMIPDFTest {
 			;
 		new AMIPDFTool().runCommands(args);
 	}
+
+
+	@Test
+	/** 
+	 * this has very long paths and hangs with resource problems.
+	 * The maxprimitives truncates these paths (thus losing data)
+	 * but allows the job to complete. 
+	 * 
+	 */
+	public void testLargeVector() throws Exception {
+		String args = ""
+				+ "-p "+CANADA+"/test"
+				+ " --maxprimitives 10000"
+				+ " --forcemake"
+			;
+		new AMIPDFTool().runCommands(args);
+	}
+
 
 }

@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -25,6 +26,7 @@ import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.euclid.util.MultisetUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlA;
+import org.contentmine.graphics.html.HtmlBody;
 import org.contentmine.graphics.html.HtmlHtml;
 import org.contentmine.graphics.html.HtmlStyle;
 import org.contentmine.graphics.html.HtmlTable;
@@ -44,7 +46,7 @@ import picocli.CommandLine.Option;
  *
  */
 public class AMITableTool extends AbstractAMITool {
-	public static final Logger LOG = Logger.getLogger(AMITableTool.class);
+	private static final Logger LOG = Logger.getLogger(AMITableTool.class);
 
 	static {
 		LOG.setLevel(Level.DEBUG);
@@ -53,8 +55,9 @@ public class AMITableTool extends AbstractAMITool {
 	public static final int INCONSISTENT_FOOTER = -2;
 	public static final int NO_FOOTER = -1;
 	public static final int NOT_FOUND = -1;
-	// use "1" to mark a matche
+	// use "1" to mark a match
 	public static final int FIRST_MATCH = 1;
+	private static final String SUBTABLE = "subtable";
 
 	/** for reading in
 	 * 
@@ -103,7 +106,6 @@ public class AMITableTool extends AbstractAMITool {
 	    description = "file with (XML) extraction templates; if name is not absolute then relative to CProject ")
 	private File templateFile = null;
 
-//	private Element templateElement;
 	private TTemplateList templateListElement;
 	private FileMatcher fileMatcher = null; // 
 	private File tableDir;
@@ -115,6 +117,7 @@ public class AMITableTool extends AbstractAMITool {
 	private HtmlTable templateSummaryTable;
 
 	private String currentCaption;
+	private int columnSerial;
 
 
     /**
@@ -179,8 +182,9 @@ public class AMITableTool extends AbstractAMITool {
 			templateListElement.getTemplateFor(templateName);
 		if (currentTemplate == null) {
 			LOG.warn("Cannot find template for "+templateName);
+			return;
 		} else {
-			LOG.debug("found template for : "+templateName);
+			debugPrint(Verbosity.DEBUG, "found template for : "+templateName);
 			templateSummaryHtml = HtmlHtml.createUTF8Html();
 			templateSummaryTable = new HtmlTable();
 			templateSummaryHtml.getOrCreateBody().appendChild(templateSummaryTable);
@@ -208,33 +212,38 @@ public class AMITableTool extends AbstractAMITool {
 	}
 
 	private void writeSubTablesForTreeAndUpdateMultisets() {
-		String tableFileRegex = fileMatcher.getOrCreateQueryTool().getSingleRegex();
-		List<File> listFilesFromPaths = Util.listFilesFromPaths(tableDir, tableFileRegex);
-//		LOG.debug("files to analyze: "+listFilesFromPaths.size()+"; "+tableFileRegex);
-		List<HtmlTable> rawXhtmlTableList = makeRawXhtmlTables(listFilesFromPaths);
-//		LOG.debug("raw tables: "+rawXhtmlTableList.size());
-		int serial = 0;
-		for (HtmlTable rawXhtmlTable : rawXhtmlTableList) {
-			serial = createSubTable(++serial, rawXhtmlTable);
-		}
-	}
-
-	private int createSubTable(int serial, HtmlTable rawXhtmlTable) {
-		rawXhtmlTable.normalizeWhitespace();
-		HtmlTable subTable = createMatchedSubtable(rawXhtmlTable);
-		if (subTable != null) {
-			HtmlHtml subTableHtml = HtmlHtml.createUTF8Html();
-			subTableHtml.getOrCreateBody().appendChild(currentCaption);
-			subTableHtml.getOrCreateBody().appendChild(subTable);
-			addTableStyle(subTableHtml);
-			if (subTable.getRows().size() > 0) {
-				makeSummaryTableAndMultiset(serial, subTable, subTableHtml);
+		if (fileMatcher != null) {
+			String tableFileRegex = fileMatcher.getOrCreateQueryTool().getSingleRegex();
+			List<File> listFilesFromPaths = Util.listFilesFromPaths(tableDir, tableFileRegex);
+			debugPrint(Verbosity.DEBUG, "files to analyze: "+listFilesFromPaths.size()+"; "+tableFileRegex+" / "+listFilesFromPaths);
+			List<HtmlTable> rawXhtmlTableList = makeRawXhtmlTables(listFilesFromPaths);
+			debugPrint(Verbosity.DEBUG, "raw tables: "+rawXhtmlTableList.size());
+			for (HtmlTable rawXhtmlTable : rawXhtmlTableList) {
+				createSubTable(rawXhtmlTable);
 			}
 		}
-		return serial;
 	}
 
-	private void makeSummaryTableAndMultiset(int serial, HtmlTable subTable, HtmlHtml subTableHtml) {
+	private void createSubTable(HtmlTable rawXhtmlTable) {
+		rawXhtmlTable.normalizeWhitespace();
+		rawXhtmlTable.ensureTidy();
+		HtmlTable subTable = createMatchedSubtable(rawXhtmlTable);
+		if (subTable != null) {
+			String id = rawXhtmlTable.getId();
+			if (id != null) subTable.setId(id);
+			HtmlHtml subTableHtml = HtmlHtml.createUTF8Html();
+			subTableHtml.setId(id);
+			HtmlBody body = subTableHtml.getOrCreateBody();
+			body.appendChild(subTable);
+			subTable.addCaption(currentCaption);
+			addTableStyle(subTableHtml);
+			if (subTable.getRows().size() > 0) {
+				makeSummaryTableAndMultiset(subTable, subTableHtml);
+			}
+		}
+	}
+
+	private void makeSummaryTableAndMultiset(HtmlTable subTable, HtmlHtml subTableHtml) {
 		/**
  <thead>
   <tr>
@@ -251,6 +260,8 @@ public class AMITableTool extends AbstractAMITool {
   <td>Chemical composition of thyme EO</td>
  </tr>
 		 */
+		String id = subTableHtml.getId();
+		String serial = id == null ? "" : id.replaceAll(".*_", "");
 		File subTableFile = new File(tableDir,  templateName+"_" + (serial) + "."+CTree.HTML);
 		XMLUtil.writeQuietly(subTableHtml, subTableFile, 1);
 		copyLinkToSubtableFile(serial, subTableFile);
@@ -260,12 +271,12 @@ public class AMITableTool extends AbstractAMITool {
 		}
 	}
 
-	private void copyLinkToSubtableFile(int serial, File subTableFile) {
+	private void copyLinkToSubtableFile(String serial, File subTableFile) {
 		String href = Util.getRelativeFilename(new File(cProject.getDirectory(), AMISectionTool.TABLE_SUMMARY_DIRNAME), subTableFile, "/");
 		HtmlTr tr = new HtmlTr();
 		tr.appendChild(new HtmlTd(cTree.getName()));
 		HtmlTd td = new HtmlTd();
-		td.appendChild(HtmlA.createFromHrefAndContent(href, "subtable_"+serial));
+		td.appendChild(HtmlA.createFromHrefAndContent(href, SUBTABLE+"_"+serial));
 		tr.appendChild(td);
 		tr.appendChild(new HtmlTd(currentCaption));
 		templateSummaryTable.appendChild(tr);
@@ -284,10 +295,9 @@ public class AMITableTool extends AbstractAMITool {
 				List<HtmlTr> rows = tbody.getRowList();
 				List<String> colValues = new ArrayList<>();
 				for (HtmlTr tr : rows) {
-					String value = tr.getTdOrThChildren().get(colIndex).getValue();
+					String value = tr.getTCellChildren().get(colIndex).getValue();
 					colValues.add(value);
 				}
-//				LOG.debug("VAL "+colValues);
 			}
 		}
 		
@@ -302,11 +312,15 @@ public class AMITableTool extends AbstractAMITool {
 	}
 
 	private HtmlTable createMatchedSubtable(HtmlTable rawXhtmlTable) {
-		currentCaption = rawXhtmlTable.getCaption();
+		currentCaption = rawXhtmlTable.getCaptionValue();
 		TQueryTool queryTool = currentTemplate.getTitleMatcher().getOrCreateQueryTool();
 		HtmlTable htmlSubTable = null;
+		debugPrint(Verbosity.DEBUG, "queryTool "+queryTool.getSingleRegex());
 		if (queryTool.matches(currentCaption)) {
+			debugPrint(Verbosity.DEBUG, "matched table caption "+currentCaption);
 			htmlSubTable = createHtmlSubTable(rawXhtmlTable);
+		} else {
+			debugPrint(Verbosity.DEBUG, "failed match caption "+currentCaption);
 		}
 		return htmlSubTable;
 	}
@@ -314,6 +328,9 @@ public class AMITableTool extends AbstractAMITool {
 	private HtmlTable createHtmlSubTable(HtmlTable rawXhtmlTable) {
 		RectangularTable rectSubTable = new RectangularTable();
 		RectangularTable rectTable = RectangularTable.createRectangularTable(rawXhtmlTable);
+		HtmlTable denormalizedheader = rawXhtmlTable.getDenormalizedHeader();
+		LOG.debug("DH "+denormalizedheader.toXML());
+		LOG.debug("COLS "+rectTable.getColumnCount());
 		List<RectTabColumn> columnList = rectTable.getCompleteColumnList();
 		List<ColumnMatcher> columnMatcherList = currentTemplate.getOrCreateColumnMatcherList();
 		int footerStart = NO_FOOTER;
@@ -327,11 +344,11 @@ public class AMITableTool extends AbstractAMITool {
 	private int getConsistentFooterStart(int footerStart) {
 		int consistentFooterStart = NO_FOOTER;
 		if (footerStart == NO_FOOTER) {
-			LOG.debug("Cannot find footer");
+//			LOG.debug("Cannot find footer");
 		} else if (footerStart == INCONSISTENT_FOOTER) {
-			LOG.debug("Inconsistent footer");
+			LOG.warn("Inconsistent footer");
 		} else {
-			AMITableTool.LOG.debug("SPLIT footer "+footerStart);
+			LOG.debug("SPLIT footer "+footerStart);
 			consistentFooterStart = footerStart;
 		}
 		return consistentFooterStart;
@@ -397,8 +414,22 @@ public class AMITableTool extends AbstractAMITool {
 	private List<HtmlTable> makeRawXhtmlTables(List<File> tableFileList) {
 		List<HtmlTable> htmlTableList = new ArrayList<>();
 		for (File tableFile : tableFileList) {
+			LOG.debug("file "+tableFile);
+			String cTreeName = FilenameUtils.getBaseName(tableFile.getParentFile().getParentFile().getParentFile().toString());
+			String tableName = FilenameUtils.getBaseName(tableFile.toString());
 			List<HtmlTable> tableList = HtmlTable.extractTablesIgnoreNamespace(tableFile);
-			htmlTableList.addAll(tableList);
+			if (tableList.size() > 1) {
+				throw new RuntimeException("Table file should have one table: "+tableFile);
+			} else if (tableList.size() == 0) {
+				LOG.warn("Table file has no table: "+tableFile);
+			} else {
+				HtmlTable table = tableList.get(0);
+				table.setId(cTreeName+"/"+tableName);
+				htmlTableList.addAll(tableList);
+			}
+		}
+		for (HtmlTable htmlTable : htmlTableList) {
+			XMLUtil.replaceStyleMarkup(htmlTable);
 		}
 		return htmlTableList;
 	}

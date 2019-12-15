@@ -49,9 +49,11 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Enumeration;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.StringTokenizer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -60,10 +62,13 @@ import java.util.stream.Collectors;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;
+import org.contentmine.eucl.xml.XMLUtil;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
+
+import nu.xom.Element;
 
 
 /**
@@ -3388,14 +3393,32 @@ s = s.replaceAll("(?U)\\s+", replace);
 		return fileList;
 	}
 
-	/** trims value and normalizes all whitespace to single space.
+	/** normalizes all whitespace to single space.
+	 * does not trim
 	 * 
 	 * @param value
 	 * @return null if input is null
 	 */
-	public static String normalizeTrimWhitespace(String value) {
+	public static String normalizeWhitespace(String value) {
 		return value == null ? null : 
-			value.trim().replaceAll("\n", " ").replaceAll("\\s+", " ");
+			value.replaceAll("\n", " ").replaceAll("\\s+", " ");
+	}
+
+	/** returns set with lowercase entries.
+	 * if two entries differ only by case, they are flattened
+	 * @param rawTermSet empty if rawTermSet null
+	 * @return set with lowercase of non-null entries
+	 */
+	public static Set<String> toLowercase(Set<String> rawTermSet) {
+		Set<String> lowercaseSet = new HashSet<>();
+		if (rawTermSet != null) {
+			for (String rawTerm : rawTermSet) {
+				if (rawTerm != null) {
+					lowercaseSet.add(rawTerm.toLowerCase());
+				}
+			}
+		}
+		return lowercaseSet;
 	}
 
 }

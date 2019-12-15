@@ -16,7 +16,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.regex.Pattern;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
@@ -65,11 +64,23 @@ public class RectangularTable {
 		this.header = header;
 	}
 	
+	public static RectangularTable createNullFilledTable(int rowCount, int colCount) {
+		RectangularTable rectTable = new RectangularTable();
+		List<String> nullRow = new ArrayList<>(colCount);
+		for (int jcol = 0; jcol < colCount; jcol++) {
+			nullRow.add(null);
+		}
+		for (int irow = 0; irow < rowCount; irow++) {
+			rectTable.addRow(new ArrayList<>(nullRow));
+		}
+		return rectTable;
+	}
+	
     public RectangularTable(RectangularTable csvTable) {
     	this();
     	this.header = new ArrayList<String>(csvTable.header);
    	    for (int i = 0; i < csvTable.rows.size(); i++) { 
-    		this.rows.add(new ArrayList<String>(csvTable.rows.get(i)));
+    		this.addRow(new ArrayList<String>(csvTable.rows.get(i)));
     	}
     	this.truncateChars = csvTable.truncateChars;
     	this.clearMaps();
@@ -134,7 +145,7 @@ public class RectangularTable {
 				} else if (values.size() != maxRowLength) {
 					throw new RuntimeException("Bad row (was "+maxRowLength+", found: "+values.size()+"; "+record);
 				}
-				table.rows.add(values);
+				table.addRow(values);
 			}
 			if (useHeader) {
 				table.header = table.rows.get(0);
@@ -261,7 +272,7 @@ public class RectangularTable {
 			List<String> row = new ArrayList<String>();
 			row.add(String.valueOf(entry.getElement()));
 			row.add(String.valueOf(entry.getCount()));
-			rows.add(row);
+			addRow(row);
 		}
 		setRows(rows);
 		writeCsvFile(filename);
@@ -356,6 +367,24 @@ public class RectangularTable {
 		return -1;
 	}
 
+	public String getCellValue(int irow, int jcol) {
+		String value = null;
+		List<String> row = this.getRow(irow);
+		if (row != null && jcol >= 0 && jcol < row.size()) {
+			value = row.get(jcol);
+		}
+		return value;
+	}
+	
+	/** gets row by index.
+	 * 
+	 * @param irow
+	 * @return null is no rows or index out of range
+	 */
+	public List<String> getRow(int irow) {
+		return (rows == null || irow < 0 || irow >= rows.size()) ? null : rows.get(irow); 
+	}
+
 	/** adds csvTable to bottom of this.
 	 * requires that both tables have the same non-null headers
 	 * 
@@ -421,7 +450,7 @@ public class RectangularTable {
 			int size = col.getValues().size();
 			rows = new ArrayList<>(size);
 			for (int i = 0; i < size;  i++) {
-				rows.add(new ArrayList<>());
+				addRow(new ArrayList<>());
 			}
 		}
 
@@ -550,7 +579,7 @@ public class RectangularTable {
 
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		sb.append(header+"\n");
+		sb.append("\n"+header+"\n");
 		if (rows != null) {
 			for (List<String> row : rows) {
 				sb.append(row+"\n");
@@ -689,7 +718,7 @@ public class RectangularTable {
 		}
 		if (rows.size() == 0) {
 			for (int i = 0; i < size; i++) {
-				rows.add(new ArrayList<String>());
+				addRow(new ArrayList<String>());
 			}
 		}
 	}
@@ -835,21 +864,28 @@ public class RectangularTable {
 		return tbody;
 	}
 		
+	/** creates rectangular table. 
+	 * requires a tidy-ed table
+	 
+	 */
 	public static RectangularTable createRectangularTable(HtmlTable table) {
-		HtmlTr tr = table.getHeaderRow();
-		List<String> header = tr == null ? null : tr.getThCellValues();
-		RectangularTable rectangularTable = new RectangularTable(header);
-		List<HtmlTr> trTdList = table.getTrTdRows();
-		for (HtmlTr trTd : trTdList) {
-			List<String> strings = trTd.getTdCellValues();
-			rectangularTable.addRow(strings);
+		if (table == null || !table.isTidy()) {
+			LOG.error("table must be tidy-ed");
+			return null;
 		}
+		return createFromBodyRows(table);
+	}
+
+	private static RectangularTable createFromBodyRows(HtmlTable table) {
+		HtmlThead thead = table.getThead();
+		List<String> columnLabels = thead.getColumnLabels();
+		RectangularTable rectangularTable = createRectangularTable(table, columnLabels);
 		return rectangularTable;
 	}
 
 	public static RectangularTable createRectangularTable(HtmlTable table, List<String> headers) {
 		RectangularTable rectangularTable = new RectangularTable(headers);
-		List<HtmlTr> trTdList = table.getTrTdRows();
+		List<HtmlTr> trTdList = table.getTbody().getOrCreateChildTrs();
 		for (HtmlTr trTd : trTdList) {
 			List<String> strings = trTd.getTdCellValues();
 			rectangularTable.addRow(strings);
@@ -902,6 +938,13 @@ public class RectangularTable {
     		}
     	}
     	return -1;
+	}
+
+	public void setCellValue(int irow, int icol, String value) {
+		if (rows != null && irow >= 0 && irow < rows.size() 
+				&& irow >= 0 && irow < rows.get(0).size()) {
+			rows.get(irow).set(icol, value);
+		}
 	}
 
 	

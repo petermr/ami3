@@ -38,6 +38,7 @@ public class JATSFnElement extends JATSElement implements IsBlock {
 	@Override
 	public HtmlElement createHTML() {
 		HtmlP p = new HtmlP();
+		p.setClassAttribute(this.TAG);
 		p.setCharset("fn");
 		return deepCopyAndTransform(p);
 	}

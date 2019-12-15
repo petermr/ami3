@@ -63,7 +63,7 @@ public class PDFGraphics2D extends Graphics2D {
 	private SVGPath svgPath;
 	
 	public PDFGraphics2D(AMIFont amiFont) {
-//		System.out.println("PDFGraphics");
+		LOG.debug("PDFGraphics");
 		this.amiFont = amiFont;
 	}
 

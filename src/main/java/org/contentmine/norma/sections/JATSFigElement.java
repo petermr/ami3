@@ -3,8 +3,8 @@ package org.contentmine.norma.sections;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.eucl.xml.XMLUtil;
+import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.html.HtmlElement;
-import org.contentmine.graphics.html.HtmlP;
 
 import nu.xom.Element;
 
@@ -49,7 +49,7 @@ public class JATSFigElement extends JATSElement implements IsBlock, IsFloat, Has
 
 	public String debugString(int level) {
 		String caption = XMLUtil.getSingleValue(this, 
-				"./*[local-name()='caption']/*[local-name()='title']");
+				"./*[local-name()='caption']/*[local-name()='" + JATSTitleElement.TAG + "']");
 		return caption == null ? "" : "[FIG: "+caption+"]";
 	}
 
@@ -65,23 +65,24 @@ public class JATSFigElement extends JATSElement implements IsBlock, IsFloat, Has
 
 	@Override
 	public HtmlElement createHTML() {
-		HtmlP p = new HtmlP();
+		HtmlDiv div = new HtmlDiv();
+		div.setClassAttribute(this.TAG);
 		JATSCaptionElement caption = getCaption();
 		if (caption != null) {
-			p.appendChild(caption.createHTML());
-			p.appendChild(" "); 
+			div.appendChild(caption.createHTML());
+			div.appendChild(" "); 
 		}
 		JATSGraphicElement graphic = getGraphic();
 		if (graphic != null) {
-			p.appendChild(graphic.createHTML());
-			p.appendChild(" "); 
+			div.appendChild(graphic.createHTML());
+			div.appendChild(" "); 
 		}
 		JATSLabelElement label = getLabel();
 		if (label != null) {
-			p.appendChild(label.createHTML());
-			p.appendChild(" "); 
+			div.appendChild(label.createHTML());
+			div.appendChild(" "); 
 		}
 		
-		return p;
+		return div;
 	}
 }

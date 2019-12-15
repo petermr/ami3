@@ -65,6 +65,7 @@ public class JATSTableElement extends AbstractJATSHtmlElement implements IsBlock
 	public HtmlElement createHTML() {
 		HtmlTable table = new HtmlTable();
 		for (Element child : this.getChildElementList()) {
+//			LOG.debug("tableChild: "+child.toXML());
 			HtmlElement childHtml = ((JATSElement)child).createHTML();
 			table.appendChild(childHtml);
 		}

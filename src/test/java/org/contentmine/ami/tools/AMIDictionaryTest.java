@@ -460,7 +460,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 	@Test
 	public void testDictionarySearch() {
 		String args = "search"
-				+ " --dictionary "+CEV_SEARCH+"/../dictionary/compound/compound.xml"
+				+ " --dictionary "+CEV+"/dictionary/compound/compound.xml"
 //				+ " --search thymol carvacrol"
 				+ " --searchfile "+CEV_SEARCH+"/oil186/__tables/compound_set.txt"
 				+ "";

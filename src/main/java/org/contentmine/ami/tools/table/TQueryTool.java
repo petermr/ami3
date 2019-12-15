@@ -9,6 +9,8 @@ import java.util.regex.Pattern;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.ami.dictionary.DefaultAMIDictionary;
+import org.contentmine.ami.tools.AMIDictionaryTool;
 import org.contentmine.cproject.util.RectTabColumn;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.Util;
@@ -23,7 +25,12 @@ import nu.xom.Element;
  *
  */
 public class TQueryTool {
-	//	private static final String QUERY_LIST = "queryList";
+	
+	private static final Logger LOG = Logger.getLogger(TQueryTool.class);
+	static {
+		LOG.setLevel(Level.DEBUG);
+	}
+
 	public static final String QUERY = "query";
 	private static final String FIND = "find";
 	private static final String MATCH = "match";
@@ -35,13 +42,10 @@ public class TQueryTool {
 	private static final String MODE = "mode";
 	public static final String LOOKUP = "lookup";
 
-	
-	private static final Logger LOG = Logger.getLogger(TQueryTool.class);
+	private static final int TRUE = 1;
+	private static final int FALSE = 0;
 	private static int flags = DEFAULT_FLAGS;
 	
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
 	
 	private List<Pattern> andPatternList;
 	private List<Pattern> notPatternList;
@@ -50,8 +54,12 @@ public class TQueryTool {
 	protected String lookupTarget;
 	// row-wise results as integers
 	private IntArray matchIntArray;
-	private String lookupContent;
 	private TTemplateList templateList;
+	private File lookupFile;
+	private Element lookupElement;
+	private DefaultAMIDictionary dictionary;
+	private List<String> unmatchedValues;
+	private List<String> matchedValues;
 	
 	private TQueryTool() {
 		init();
@@ -84,14 +92,13 @@ public class TQueryTool {
 		Element queryChild = XMLUtil.getSingleChild(containingQueryElement, QueryMatcher.TAG);
 		String modeValue = queryChild == null ? null : queryChild.getAttributeValue(MODE);
 		if (LOOKUP.equals(modeValue)) {
-			lookupTarget = containingQueryElement.getValue().trim();
-			lookupContent = templateList.substituteVariables(lookupTarget).trim();
+			lookupTarget = templateList.substituteVariables(containingQueryElement.getValue().trim());
 		}
 	}
 	
 	
 	public void parseQueries() {
-		String queryContent0 = Util.normalizeTrimWhitespace(containingQueryElement.getValue());
+		String queryContent0 = Util.normalizeWhitespace(containingQueryElement.getValue());
 		String queryContent = ((AbstractTTElement) containingQueryElement).templateList.substituteVariables(queryContent0);
 		notPatternList = new ArrayList<>();
 		String pre= addChunksToPatternListAndGetUnparsed(queryContent, NOT, notPatternList);
@@ -141,7 +148,11 @@ public class TQueryTool {
 	 */
 	public boolean matches(String target) {
 		target = target.trim();
-//		LOG.debug("contain "+((AbstractTTElement)containingQuery).toXML());
+
+		if (lookupElement != null) {
+			getOrCreateDictionary();
+			if (dictionary.contains(target.toLowerCase())) return true;
+		}
 		if (andPatternList.size() > 0 ) {
 			if (!andMatches(target)) return false;
 		}
@@ -155,6 +166,13 @@ public class TQueryTool {
 			return true;
 		}
 		return (notMatches(target));
+	}
+
+	private DefaultAMIDictionary getOrCreateDictionary() {
+		if (dictionary == null) {
+			dictionary = new DefaultAMIDictionary().readDictionaryElement(lookupElement);
+		}
+		return dictionary;
 	}
 
 	private boolean andMatches(String target) {
@@ -198,22 +216,46 @@ public class TQueryTool {
 		return ((Element) containingQueryElement).getValue().trim();
 	}
 
-	public IntArray match(RectTabColumn rectangularCol) {
-//		System.out.println("OR "+orPatternList);
-		List<String> values = rectangularCol.getValues();
-		return match(values);
-	}
-
 	public IntArray match(List<String> values) {
 		int size = values.size();
 		matchIntArray = new IntArray(size);
+		unmatchedValues = new ArrayList<>();	
+		matchedValues = new ArrayList<>();	
+		makeLookupElement();
+		
+
 		for (int i = 0; i < size; i++) {
 			String value = values.get(i);
 			if (value == null) value = "";
-			int result = this.matches(value) ? 1 : 0;
-			matchIntArray.setElementAt(i, result);
+			if (this.matches(value)) {
+				matchIntArray.setElementAt(i, TRUE);
+				matchedValues.add(value);
+				unmatchedValues.add(null);
+			} else {
+				matchIntArray.setElementAt(i, FALSE);
+				unmatchedValues.add(value);
+				matchedValues.add(null);
+			}
 		}
 		return matchIntArray;
+	}
+
+	public List<String> getUnmatchedValues() {
+		return unmatchedValues;
+	}
+
+	public List<String> getMatchedValues() {
+		return matchedValues;
+	}
+
+	private void makeLookupElement() {
+		if (lookupTarget != null) {
+			lookupFile = new File(lookupTarget);
+			lookupElement = XMLUtil.parseQuietlyToRootElement(lookupFile);
+			if (lookupFile == null || lookupElement == null) {
+				throw new RuntimeException("lookup file not found or can't be read: "+lookupFile);
+			}
+		}
 	}
 
 	public IntArray getMatchIntArray() {

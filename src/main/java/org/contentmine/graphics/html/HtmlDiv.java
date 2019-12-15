@@ -104,7 +104,10 @@ public class HtmlDiv extends HtmlElement {
 		for (HtmlDiv div : divList) {
 			LOG.debug(div.toXML());
 		}
-		
+	}
+
+	public void tidy() {
+//		LOG.debug("ignored div.tidy()");
 	}
 
 

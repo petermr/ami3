@@ -318,7 +318,14 @@ public class AMISectionTool extends AbstractAMITool {
 		if (tr != null) {
 			summaryTable.getOrCreateTbody().appendChild(tr);
 		}
-		createAndWriteHTML(destFile);
+		HtmlElement htmlElement = createAndWriteHTML(destFile);
+		if (htmlElement instanceof HtmlTable) {
+			HtmlTable denormalizedheader = ((HtmlTable) htmlElement).getDenormalizedHeader();
+			LOG.debug("DH "+denormalizedheader.toXML());
+			File denormalizedFile = new File(destFile.toString().replace("."+CTree.XML, "."+"denorm"+"."+CTree.HTML));
+			LOG.debug("wrote denorm: "+denormalizedFile);
+			XMLUtil.writeQuietly(denormalizedheader, denormalizedFile, 1);
+		}
 	}
 
 	private HtmlTable createSummaryTableStub() {
@@ -371,21 +378,27 @@ public class AMISectionTool extends AbstractAMITool {
 		return tr;
 	}
 
-	private void createAndWriteHTML(File xmlFile) {
+	private HtmlElement createAndWriteHTML(File xmlFile) {
 		Element element = XMLUtil.parseQuietlyToRootElement(xmlFile);
 		Element newElement = new JATSFactory().create(element);
-//		LOG.debug("xx "+newElement.toXML());
 		HtmlElement htmlElement = null;
 		if (newElement instanceof HtmlElement) {
 			htmlElement = (HtmlElement) newElement;
 		} else {
 			JATSElement jatsElement = (JATSElement) new JATSFactory().create(element);
 			htmlElement = ((JATSElement)jatsElement).createHTML();
+			if (htmlElement == null) {
+				LOG.error("Null JATS->HTML");
+				return null;
+			}
 		}
+		htmlElement.tidy();		
+		
 		String basename = FilenameUtils.getBaseName(xmlFile.toString());
 		File htmlFile = new File(xmlFile.getParentFile(), basename+"."+CTree.HTML);
-//		LOG.debug("html "+htmlFile);
+		htmlElement.setId(cTree.getName()+"/"+basename);
 		XMLUtil.writeQuietly(htmlElement, htmlFile, 1);
+		return htmlElement;
 	}
 
 

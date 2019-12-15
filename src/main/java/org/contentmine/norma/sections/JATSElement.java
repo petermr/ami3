@@ -10,8 +10,8 @@ import org.apache.log4j.Logger;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.xml.XMLUtil;
+import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.html.HtmlElement;
-import org.contentmine.graphics.html.HtmlSpan;
 
 import nu.xom.Attribute;
 import nu.xom.Element;
@@ -352,7 +352,6 @@ public class JATSElement extends Element {
 
 	public void recurseThroughDescendants(Element element, JATSFactory jatsFactory) {
 		XMLUtil.copyAttributes(element, this);
-		this.setClassAttribute(element.getLocalName());
 		for (int i = 0; i < element.getChildCount(); i++) {
 			Node childNode = element.getChild(i);
 			if (childNode instanceof Element) {
@@ -361,7 +360,6 @@ public class JATSElement extends Element {
 				List<String> allowedChildNames = getAllowedChildNames();
 				if (allowedChildNames.size() > 0 && !allowedChildNames.contains(tag)) {
 					String xml = childElement.toXML();
-//					LOG.debug(this.getClass().getName()+" unprocessed child: "+tag+" "+xml.substring(0, Math.min(80, xml.length())));
 				}
 				this.appendChild(jatsFactory.create(childElement));
 			} else {
@@ -593,19 +591,19 @@ public class JATSElement extends Element {
 	}
 
 	public HtmlElement createHTML() {
-		System.out.println("Overide createHTML in "+this.getLocalName());
-		return null;
+		LOG.debug("Overide createHTML in "+this.getLocalName());
+		return deepCopyAndTransform(new HtmlDiv());
 	}
 
 	public HtmlElement deepCopyAndTransform(HtmlElement htmlElement) {
 		XMLUtil.copyAttributes(this, htmlElement);
 		for (int i = 0; i < this.getChildCount(); i++) {
 			Node child = this.getChild(i);
-			if (child instanceof Node || child instanceof HtmlElement) {
-				htmlElement.appendChild(child.copy());
-			} else {
+			if (child instanceof Element) {
 				HtmlElement childHtml = ((JATSElement)child).createHTML();
 				htmlElement.appendChild(childHtml);
+			} else {
+				htmlElement.appendChild(child.copy());
 			}
 		}
 		return htmlElement;

@@ -800,9 +800,18 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 		return isLevel(amiTool, AbstractAMITool.Verbosity.INFO);
 	}
 
-	private static boolean isLevel(AbstractAMITool amiTool, Verbosity debug2) {
-		return (amiTool == null) ? false : debug2.getVerbosity() == amiTool.getVerbosityInt();
+	private static boolean isLevel(AbstractAMITool amiTool, Verbosity verbosity) {
+		return (amiTool == null) ? false : verbosity.getVerbosity() == amiTool.getVerbosityInt();
 	}
 
+	protected boolean reachesLevel(Verbosity verbosity) {
+		return verbosity.getVerbosity() <= this.getVerbosityInt();
+	}
+
+	public void debugPrint(Verbosity verbosity, String message) {
+		if (reachesLevel(verbosity)) {
+			System.out.println("<"+verbosity+">"+message);
+		}
+	}
 
 }

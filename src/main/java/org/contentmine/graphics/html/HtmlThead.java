@@ -16,7 +16,6 @@
 
 package org.contentmine.graphics.html;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -34,13 +33,21 @@ import nu.xom.Element;
     </tr>
   </thead>
 
+NOTE: <thead> can be empty.
+otherwise contains one or more <tr>
+we discourage multiple <tr> and try to denormalize header structure
+In general only the first <tr> will be used
+
  * @author pm286
  *
  */
-public class HtmlThead extends HtmlElement {
+public class HtmlThead extends HtmlTrContainer {
 	@SuppressWarnings("unused")
-	private final static Logger LOG = Logger.getLogger(HtmlThead.class);
+	public final static Logger LOG = Logger.getLogger(HtmlThead.class);
 	public final static String TAG = "thead";
+	private static final String COL = "col";
+	
+	private HtmlTr tr;
 
 	/** constructor.
 	 * 
@@ -53,16 +60,7 @@ public class HtmlThead extends HtmlElement {
 		return Arrays.asList(new String[] {HtmlTr.TAG});
 	}
 	
-    public List<HtmlTr> getChildTrs() {
-        List<HtmlTr> rowList = new ArrayList<HtmlTr>();
-        List<HtmlElement> rows = getChildElements(this, HtmlTr.TAG);
-        for (HtmlElement el : rows) {
-            rowList.add((HtmlTr) el);
-        }
-        return rowList;
-    }
-
-    /** gets first (usually only) Tr.
+    /** gets first (and often only) Tr.
      * creates and adds if not present.
      * @return first row (created empty if absent)
      */
@@ -76,24 +74,50 @@ public class HtmlThead extends HtmlElement {
 		return rows.get(0);
 	}
 
-	public HtmlTr getOrCreateTr() {
-		List<Element> trList = XMLUtil.getQueryElements(this, "./*[local-name()='"+HtmlTr.TAG+"']");
-		HtmlTr tr = null;
-		if (trList.size() == 0) {
-			tr = new HtmlTr();
-			this.appendChild(tr);
-		} else {
-			tr = (HtmlTr) trList.get(0);
-		}
-		return tr;
-	}
+//	public HtmlTr getOrCreateTr() {
+//		List<Element> trList = XMLUtil.getQueryElements(this, "./*[local-name()='"+HtmlTr.TAG+"']");
+//		tr = null;
+//		if (trList.size() == 0) {
+//			tr = new HtmlTr();
+//			this.appendChild(tr);
+//		} else {
+//			tr = (HtmlTr) trList.get(0);
+//		}
+//		return tr;
+//	}
 
-	public HtmlThead addHeader(List<String> header) {
-		HtmlTr tr = getOrCreateTr();
+	public HtmlTrContainer addHeader(List<String> header) {
+		HtmlTr tr = getOrCreateChildTr();
 		for (String h : header) {
 			tr.appendChild(new HtmlTh(h));
 		}
 		return this;
+	}
+
+	public List<String> getColumnLabels() {
+		return (tr == null) ? null : tr.getChildThTdValues();
+	}
+
+	/** adds Tr with Th columns with default headers
+	 * 
+	 * @param cols
+	 */
+	public void addDefaultColumnHeaders(int cols) {
+		this.appendChild(HtmlThead.createDefaultColumnHeaders(cols));
+	}
+
+	/** create default headers
+	 * 
+	 * @param cols
+	 * @return
+	 */
+	public static HtmlTr createDefaultColumnHeaders(int cols) {
+		HtmlTr tr = new HtmlTr();
+		for (int i = 0; i < cols; i++) {
+			HtmlTh th = new HtmlTh(COL+i);
+			tr.appendChild(th);
+		}
+		return tr;
 	}
 
 }
