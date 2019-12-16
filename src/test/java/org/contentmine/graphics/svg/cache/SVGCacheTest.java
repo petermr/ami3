@@ -23,7 +23,7 @@ public class SVGCacheTest {
 	}
 
 	@Test
-	@Ignore // too many for testing
+//	@Ignore // too many for testing
 	public void testMultipleFigure() throws IOException {
 		String fileRoot = "fulltext-page4";
 		ComponentCache cache = new ComponentCache();
@@ -35,7 +35,7 @@ public class SVGCacheTest {
 	}
 	
 	@Test
-	@Ignore // too many for testing
+//	@Ignore // too many for testing
 	public void testManyPapers() throws IOException {
 		File[] files = SVGHTMLFixtures.G_S_FIGURE_DIR.listFiles();
 		Assert.assertNotNull("files in "+SVGHTMLFixtures.G_S_FIGURE_DIR, files);
@@ -52,7 +52,7 @@ public class SVGCacheTest {
 	}
 
 	@Test
-	@Ignore // too many for tests
+//	@Ignore // too many for tests
 	public void testImages() throws IOException {
 		File[] files = new File(SVGHTMLFixtures.G_S_SVG_IMAGE_DIR, "10.2147_OTT.S94348").listFiles();
 		Assert.assertNotNull("files in "+SVGHTMLFixtures.G_S_SVG_IMAGE_DIR, files);
@@ -68,20 +68,26 @@ public class SVGCacheTest {
 	}
 	
 	@Test
-	@Ignore // uncomment to re-test papers 
+//	@Ignore // uncomment to re-test papers 
 	public void testPapers() throws IOException {
 		File[] dirs = SVGHTMLFixtures.G_S_TABLE_DIR.listFiles();
 		for (File dir : dirs) {
 			String base = FilenameUtils.getName(dir.toString());
 			File svgDir = new File(dir, "svg");
-			for (File svgFile : svgDir.listFiles()) {
-				if (svgFile.toString().endsWith(".svg")) {
-					String root = FilenameUtils.getBaseName(svgFile.toString());
-					ComponentCache cache = new ComponentCache();
-					cache.readGraphicsComponentsAndMakeCaches(svgFile);
-					List<Real2Range> boundingBoxes = cache.getMergedBoundingBoxes(2.0);
-					if (boundingBoxes.size() > 0) {
-						displayBoxes(new File("target/plot/debug/table/"+base+"/"), cache, root, boundingBoxes, "green");
+//			LOG.debug("svg/ "+svgDir);
+			if (svgDir != null) {
+				File[] files = svgDir.listFiles();
+				if (files != null) {
+					for (File svgFile : files) {
+						if (svgFile.toString().endsWith(".svg")) {
+							String root = FilenameUtils.getBaseName(svgFile.toString());
+							ComponentCache cache = new ComponentCache();
+							cache.readGraphicsComponentsAndMakeCaches(svgFile);
+							List<Real2Range> boundingBoxes = cache.getMergedBoundingBoxes(2.0);
+							if (boundingBoxes.size() > 0) {
+								displayBoxes(new File("target/plot/debug/table/"+base+"/"), cache, root, boundingBoxes, "green");
+							}
+						}
 					}
 				}
 			}
