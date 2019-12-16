@@ -19,12 +19,13 @@ public class TestAxis {
 		LOG.setLevel(Level.DEBUG);
 	}
 	
-	private static File OMAR_DIR = new File("src/test/resources/org/contentmine/projects/omar/test/lichtenburg19a/svg/");
+//	private static File OMAR_DIR = new File("src/test/resources/org/contentmine/projects/omar/test/lichtenburg19a/svg/");
+	private static File OMAR_DIR = new File("src/test/resources/org/contentmine/ami/omar/test/lichtenburg19a/svg/");
 
 	@Test
-	public void testExtractAxis() throws FileNotFoundException {
+	public void testExtractAxisGraph1() throws FileNotFoundException {
 		// seems to have drifted slightly
-		AnnotatedAxis[] axisArray = AnnotatedAxisTest.getAxisArrayAndTestFullBox(OMAR_DIR, "page1.graphs.svg", "((85.755,286.894),(510.354,658.197))");
+		AnnotatedAxis[] axisArray = AnnotatedAxisTest.getAxisArrayAndTestFullBox(OMAR_DIR, "page1.graph1.svg", "((327.106,423.087),(75.336,144.035))");
 		
 		if (axisArray == null) {
 			LOG.error("FIXME empty axis");
@@ -33,6 +34,8 @@ public class TestAxis {
 		Assert.assertEquals("FIXME ", 4, axisArray.length);
 		AnnotatedAxis axis0 = axisArray[0];
 		System.out.println("axis0 "+axis0);
+		AnnotatedAxis axis1 = axisArray[1];
+		System.out.println("axis1 "+axis1);
 		/**
 		fullLineBbox.format(3);
 		Assert.assertEquals("full box",  "((140.415,426.016),(483.056,650.628))", fullLineBbox.toString());
