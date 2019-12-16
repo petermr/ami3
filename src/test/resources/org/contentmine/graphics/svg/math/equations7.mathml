@@ -1,0 +1,33 @@
+<html>
+<ul>
+<li>d(Complex >Internal</sub>)/dt = Complex >total</sub><times/> <exp/>( <minus/> t) <minus/>  k<sub>escape </sub><times/> Complex >Internal</sub>(1)</text>
+
+<li>d(Complex <sub>Cytoplasmic</sub>)/dt = k<sub>escape </sub><times/> Complex >Internal <minus/>  k<sub>bind </sub><times/> Complex <sub>Cytoplasmic <minus/>  k<sub>unpack </sub><times/>  >Complex <sub>Cytoplasmic</sub>(2)</li>
+
+><li>d(ComplexBound <sub>Cytoplasmic</sub>)/dt = k<sub>bind </sub><times/> Complex <sub>Cytoplasmic <minus/>  k <sub>NPC</sub><times/> >ComplexBound <sub>Cytoplasmic</sub>(3)</li>
+
+<li>d(ComplexBound <sub>NPC</sub>)/dt = k <sub>NPC </sub><times/> ComplexBound <sub>Cytoplasmic <minus/>  k<sub>In</sub><times/> ComplexBound <sub>NPC</sub>(4)</li>
+ 
+<li>d(ComplexBound <sub>Nuclear</sub>)/dt = k<sub>In</sub><times/> ComplexBound <sub>NPC <minus/>  k<sub>dissociation</sub><times/> >ComplexBound <sub>Nuclear</sub>(5)</li>
+ 
+<li>d(Complex <sub>Nuclear</sub>)/dt = k<sub>dissociation</sub><times/> ComplexBound <sub>Nuclear <minus/>  k<sub>unpack</sub><times/> Complex <sub>Nuclear</sub>(6)</li>
+  
+<li>d(Vector <sub>Nuclear</sub>)/dt = k<sub>unpack</sub><times/> Complex <sub>Nuclear ><plus/> k<sub>dissociation</sub><times/> VectorBound <sub>Nuclear</sub>(7)</li>
+   
+<li>d(Plasmid <sub>Nuclear</sub>)/dt = k<sub>unpack</sub><times/> Complex <sub>Nuclear ><plus/> k<sub>dissociation</sub><times/> PlasmidBound <sub>Nuclear</sub>(8)</li>
+  
+<li>d(Vector <sub>Cytoplasmic</sub>)/dt = k<sub>unpack</sub><times/> Complex <sub>Cytoplasmic <minus/>  k<sub>bind</sub><times/> Vector <sub>Cytoplasmic</sub>(9)</li>
+   
+<li>d(Plasmid <sub>Cytoplasmic</sub>)/dt = k<sub>unpack</sub><times/> Complex <sub>Cytoplasmic <minus/>  k<sub>bind</sub><times/> Plasmid <sub>Cytoplasmic <minus/>  k<sub>degradation</sub><times/> Plasmid <sub>Cytoplasmic</sub>(10)</li>
+
+<li>d(PlasmidBound <sub>Cytoplasmic</sub>)/dt = k<sub>bind</sub><times/> Plasmid <sub>Cytoplasmic <minus/>  k <sub>NPC </sub><times/>PlasmidBound <sub>Cytoplasmic</sub>(11)</li>
+
+<li>d(PlasmidBound <sub>NPC</sub>)/dt = k <sub>NPC </sub><times/> PlasmidBound <sub>Cytoplasmic <minus/>  k<sub>In</sub><times/> PlasmidBound <sub>NPC</sub>(12)</li>
+
+<li>d(PlasmidBound <sub>Nuclear</sub>)/dt = k<sub>In</sub><times/> PlasmidBound <sub>NPC <minus/>  k<sub>dissociation</sub><times/> PlasmidBound <sub>Nuclear</sub>(13)</li>
+
+<li>d(X_Plasmid <sub>Cytoplasmic</sub>)/dt = k<sub>degradation</sub><times/> Plasmid <sub>Cytoplasmic <minus/>  k<sub>bind</sub><times/> X_Plasmid <sub>Cytoplasmic</sub>(14)</li>
+
+<li>d(Protein)/dt = k<sub>protein</sub><times/> Plasmid <sub>Nuclear</sub>(15)</li>
+</ul>
+</html>

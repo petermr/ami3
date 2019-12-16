@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+<meta name="viewport" content="width=1000">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@mbostock">
+<meta property="og:url" content="http://bl.ocks.org/WilliamQLiu/76ae20060e19bf42d774">
+<meta property="og:title" content="D3 Mouse Events">
+<meta property="og:description" content="Will’s Block 76ae20060e19bf42d774">
+<title>D3 Mouse Events - bl.ocks.org</title>
+<link rel="icon" href="http://bl.ocks.org/favicon.png">
+<link rel="canonical" href="http://bl.ocks.org/WilliamQLiu/76ae20060e19bf42d774">
+<style>
+
+@import url("/style.css");
+
+</style>
+
+
+</head><body><header>
+  <div class="column">
+    <div class="navigation">
+      <a href="http://bl.ocks.org/">Popular</a>
+      / <a href="http://bl.ocks.org/-/about">About</a>
+    </div>
+    <a class="user" href="http://bl.ocks.org/WilliamQLiu"><img class="avatar" src="D3MouseEvents_files/590708.jpg" width="30" height="30">Will</a>’s
+    Block <a class="gist gist-id self" title="View Gist on GitHub." href="https://gist.github.com/WilliamQLiu/76ae20060e19bf42d774">76ae20060e19bf42d774</a>    <div class="date">Updated August 29, 2015</div>
+  </div>
+</header>
+
+<div class="column">
+  <h1>D3 Mouse Events</h1>
+  <div class="index">
+    <iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin" src="D3MouseEvents_files/a.html" marginwidth="0" marginheight="0" style="height:500px;" scrolling="no"></iframe>
+  </div>
+  <div class="index-pop">
+    <a target="_blank" title="Open Block 76ae20060e19bf42d774 a new window." href="http://bl.ocks.org/WilliamQLiu/raw/76ae20060e19bf42d774">Open<svg height="16" width="12"><path d="M11 10h1v3c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V3c0-0.55 0.45-1 1-1h3v1H1v10h10V10zM6 2l2.25 2.25-3.25 3.25 1.5 1.5 3.25-3.25 2.25 2.25V2H6z"></path></svg></a>
+  </div>
+  <div class="gist-readme" data-key=""></div>
+  <div class="gist-sources">
+    <div class="gist-source" data-key="index.html">
+      <h2>index.html<a name="index.html" class="anchor" href="#index.html">#</a></h2>
+      <pre><code class="html hljs xml"><span class="meta">&lt;!DOCTYPE html&gt;</span>
+<span class="comment">&lt;!-- How to create Mouse Events for D3 --&gt;</span>
+<span class="tag">&lt;<span class="name">html</span>&gt;</span>
+
+  <span class="tag">&lt;<span class="name">head</span>&gt;</span>
+    <span class="comment">&lt;!-- Load D3 from site --&gt;</span>
+    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"http://d3js.org/d3.v3.min.js"</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
+
+    <span class="comment">&lt;!-- CSS (Styling) --&gt;</span>
+    <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="css">
+
+      <span class="selector-tag">body</span> {
+        <span class="attribute">margin</span>: <span class="number">0</span>;
+        <span class="attribute">font-family</span>: sans-serif;
+        <span class="attribute">font-size</span>: <span class="number">11px</span>;
+      }
+
+      <span class="selector-class">.axis</span> <span class="selector-tag">path</span>, <span class="selector-class">.axis</span> <span class="selector-tag">line</span> {
+        <span class="attribute">fill</span>: none;
+        <span class="attribute">stroke</span>: black;
+        <span class="attribute">shape-rendering</span>: crispEdges;  <span class="comment">/* Round any decimal pixels so it'll render nicely */</span>
+      }
+
+      <span class="comment">/*
+      //Can use CSS3 Transitions, but not for everything (e.g. change radius size)
+      circle:hover{
+        fill: green;
+      }
+      */</span>
+
+    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span>
+  <span class="tag">&lt;/<span class="name">head</span>&gt;</span>
+
+  <span class="tag">&lt;<span class="name">body</span>&gt;</span>
+    <span class="comment">&lt;!-- Begin Javascript --&gt;</span>
+    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="javascript">
+      <span class="keyword">var</span> w = <span class="built_in">window</span>.innerWidth,
+          h = <span class="built_in">window</span>.innerHeight,
+          margin = { <span class="attr">top</span>: <span class="number">40</span>, <span class="attr">right</span>: <span class="number">20</span>, <span class="attr">bottom</span>: <span class="number">20</span>, <span class="attr">left</span>: <span class="number">40</span> },
+          radius = <span class="number">6</span>;
+
+      <span class="keyword">var</span> svg = d3.select(<span class="string">"body"</span>).append(<span class="string">"svg"</span>).attr({
+        <span class="attr">width</span>: w,
+        <span class="attr">height</span>: h
+      });
+
+      <span class="keyword">var</span> dataset = [
+        { <span class="attr">x</span>: <span class="number">100</span>, <span class="attr">y</span>: <span class="number">110</span> },
+        { <span class="attr">x</span>: <span class="number">83</span>, <span class="attr">y</span>: <span class="number">43</span> },
+        { <span class="attr">x</span>: <span class="number">92</span>, <span class="attr">y</span>: <span class="number">28</span> },
+        { <span class="attr">x</span>: <span class="number">49</span>, <span class="attr">y</span>: <span class="number">74</span> },
+        { <span class="attr">x</span>: <span class="number">51</span>, <span class="attr">y</span>: <span class="number">10</span> },
+        { <span class="attr">x</span>: <span class="number">25</span>, <span class="attr">y</span>: <span class="number">98</span> },
+        { <span class="attr">x</span>: <span class="number">77</span>, <span class="attr">y</span>: <span class="number">30</span> },
+        { <span class="attr">x</span>: <span class="number">20</span>, <span class="attr">y</span>: <span class="number">83</span> },
+        { <span class="attr">x</span>: <span class="number">11</span>, <span class="attr">y</span>: <span class="number">63</span> },
+        { <span class="attr">x</span>:  <span class="number">4</span>, <span class="attr">y</span>: <span class="number">55</span> },
+        { <span class="attr">x</span>:  <span class="number">0</span>, <span class="attr">y</span>:  <span class="number">0</span> },
+        { <span class="attr">x</span>: <span class="number">85</span>, <span class="attr">y</span>: <span class="number">100</span> },
+        { <span class="attr">x</span>: <span class="number">60</span>, <span class="attr">y</span>: <span class="number">40</span> },
+        { <span class="attr">x</span>: <span class="number">70</span>, <span class="attr">y</span>: <span class="number">80</span> },
+        { <span class="attr">x</span>: <span class="number">10</span>, <span class="attr">y</span>: <span class="number">20</span> },
+        { <span class="attr">x</span>: <span class="number">40</span>, <span class="attr">y</span>: <span class="number">50</span> },
+        { <span class="attr">x</span>: <span class="number">25</span>, <span class="attr">y</span>: <span class="number">31</span> }
+      ];
+
+      <span class="comment">// We're passing in a function in d3.max to tell it what we're maxing (x value)</span>
+      <span class="keyword">var</span> xScale = d3.scale.linear()
+          .domain([<span class="number">0</span>, d3.max(dataset, <span class="function"><span class="keyword">function</span> (<span class="params">d</span>) </span>{ <span class="keyword">return</span> d.x + <span class="number">10</span>; })])
+          .range([margin.left, w - margin.right]);  <span class="comment">// Set margins for x specific</span>
+
+      <span class="comment">// We're passing in a function in d3.max to tell it what we're maxing (y value)</span>
+      <span class="keyword">var</span> yScale = d3.scale.linear()
+          .domain([<span class="number">0</span>, d3.max(dataset, <span class="function"><span class="keyword">function</span> (<span class="params">d</span>) </span>{ <span class="keyword">return</span> d.y + <span class="number">10</span>; })])
+          .range([margin.top, h - margin.bottom]);  <span class="comment">// Set margins for y specific</span>
+
+      <span class="comment">// Add a X and Y Axis (Note: orient means the direction that ticks go, not position)</span>
+      <span class="keyword">var</span> xAxis = d3.svg.axis().scale(xScale).orient(<span class="string">"top"</span>);
+      <span class="keyword">var</span> yAxis = d3.svg.axis().scale(yScale).orient(<span class="string">"left"</span>);
+
+      <span class="keyword">var</span> circleAttrs = {
+          <span class="attr">cx</span>: <span class="function"><span class="keyword">function</span>(<span class="params">d</span>) </span>{ <span class="keyword">return</span> xScale(d.x); },
+          <span class="attr">cy</span>: <span class="function"><span class="keyword">function</span>(<span class="params">d</span>) </span>{ <span class="keyword">return</span> yScale(d.y); },
+          <span class="attr">r</span>: radius
+      };
+
+
+      <span class="comment">// Adds X-Axis as a 'g' element</span>
+      svg.append(<span class="string">"g"</span>).attr({
+        <span class="string">"class"</span>: <span class="string">"axis"</span>,  <span class="comment">// Give class so we can style it</span>
+        transform: <span class="string">"translate("</span> + [<span class="number">0</span>, margin.top] + <span class="string">")"</span>  <span class="comment">// Translate just moves it down into position (or will be on top)</span>
+      }).call(xAxis);  <span class="comment">// Call the xAxis function on the group</span>
+
+      <span class="comment">// Adds Y-Axis as a 'g' element</span>
+      svg.append(<span class="string">"g"</span>).attr({
+        <span class="string">"class"</span>: <span class="string">"axis"</span>,
+        <span class="attr">transform</span>: <span class="string">"translate("</span> + [margin.left, <span class="number">0</span>] + <span class="string">")"</span>
+      }).call(yAxis);  <span class="comment">// Call the yAxis function on the group</span>
+
+      svg.selectAll(<span class="string">"circle"</span>)
+          .data(dataset)
+          .enter()
+          .append(<span class="string">"circle"</span>)
+          .attr(circleAttrs)  <span class="comment">// Get attributes from circleAttrs var</span>
+          .on(<span class="string">"mouseover"</span>, handleMouseOver)
+          .on(<span class="string">"mouseout"</span>, handleMouseOut);
+
+      <span class="comment">// On Click, we want to add data to the array and chart</span>
+      svg.on(<span class="string">"click"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>{
+          <span class="keyword">var</span> coords = d3.mouse(<span class="keyword">this</span>);
+
+          <span class="comment">// Normally we go from data to pixels, but here we're doing pixels to data</span>
+          <span class="keyword">var</span> newData= {
+            <span class="attr">x</span>: <span class="built_in">Math</span>.round( xScale.invert(coords[<span class="number">0</span>])),  <span class="comment">// Takes the pixel number to convert to number</span>
+            y: <span class="built_in">Math</span>.round( yScale.invert(coords[<span class="number">1</span>]))
+          };
+
+          dataset.push(newData);   <span class="comment">// Push data to our array</span>
+
+          svg.selectAll(<span class="string">"circle"</span>)  <span class="comment">// For new circle, go through the update process</span>
+            .data(dataset)
+            .enter()
+            .append(<span class="string">"circle"</span>)
+            .attr(circleAttrs)  <span class="comment">// Get attributes from circleAttrs var</span>
+            .on(<span class="string">"mouseover"</span>, handleMouseOver)
+            .on(<span class="string">"mouseout"</span>, handleMouseOut);
+        })
+
+      <span class="comment">// Create Event Handlers for mouse</span>
+      <span class="function"><span class="keyword">function</span> <span class="title">handleMouseOver</span>(<span class="params">d, i</span>) </span>{  <span class="comment">// Add interactivity</span>
+
+            <span class="comment">// Use D3 to select element, change color and size</span>
+            d3.select(<span class="keyword">this</span>).attr({
+              <span class="attr">fill</span>: <span class="string">"orange"</span>,
+              <span class="attr">r</span>: radius * <span class="number">2</span>
+            });
+
+            <span class="comment">// Specify where to put label of text</span>
+            svg.append(<span class="string">"text"</span>).attr({
+               <span class="attr">id</span>: <span class="string">"t"</span> + d.x + <span class="string">"-"</span> + d.y + <span class="string">"-"</span> + i,  <span class="comment">// Create an id for text so we can select it later for removing on mouseout</span>
+                x: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>{ <span class="keyword">return</span> xScale(d.x) - <span class="number">30</span>; },
+                <span class="attr">y</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>{ <span class="keyword">return</span> yScale(d.y) - <span class="number">15</span>; }
+            })
+            .text(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>{
+              <span class="keyword">return</span> [d.x, d.y];  <span class="comment">// Value of the text</span>
+            });
+          }
+
+      <span class="function"><span class="keyword">function</span> <span class="title">handleMouseOut</span>(<span class="params">d, i</span>) </span>{
+            <span class="comment">// Use D3 to select element, change color back to normal</span>
+            d3.select(<span class="keyword">this</span>).attr({
+              <span class="attr">fill</span>: <span class="string">"black"</span>,
+              <span class="attr">r</span>: radius
+            });
+
+            <span class="comment">// Select text by id and then remove</span>
+            d3.select(<span class="string">"#t"</span> + d.x + <span class="string">"-"</span> + d.y + <span class="string">"-"</span> + i).remove();  <span class="comment">// Remove text location</span>
+          }
+
+    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
+  <span class="tag">&lt;/<span class="name">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="name">html</span>&gt;</span></code></pre>
+    </div>
+  </div>
+  <div class="gist-license">
+    <h2>LICENSE<a name="license" class="anchor" href="#license">#</a></h2>
+    This block appears to have <a target="_blank" href="http://choosealicense.com/no-license/">no license</a>. Please contact <a target="_blank" href="https://github.com/WilliamQLiu">the author</a> to request a license.
+  </div>
+</div>
+
+<script src="D3MouseEvents_files/d3-array.js" integrity="sha384-c+16cUIc0b/tqEZ9mRvDfI/r1Dg1Yq3JpWgZFW4mjN2QU7XXFWVB90PDFlV8SIAm" crossorigin="anonymous"></script>
+<script src="D3MouseEvents_files/d3-collection.js" integrity="sha384-H/Didu3qLpyrVmUqlvWapaxyhCzc+anaMa9uw+CHWHu+GNfClr91w8QgiLFIp7/V" crossorigin="anonymous"></script>
+<script src="D3MouseEvents_files/d3-dispatch.js" integrity="sha384-dGRK/lIqGrmmAoVA9K4pwKI4YL4BxIpaGa1dwU6lcRdpp5OJR6FoMZqxqzvCzFBS" crossorigin="anonymous"></script>
+<script src="D3MouseEvents_files/d3-request.js" integrity="sha384-xsZEl8WRzIEBs+gkv/88ttcv7hmGnFJX8t8k6V+fZcrG2y5o1SXsCRLzl2S9HkFU" crossorigin="anonymous"></script>
+<script src="D3MouseEvents_files/d3-selection.js" integrity="sha384-AOxWgfcHKw/K6u7UX8IJ4vy418+zXnA6wB6P4/sobPFG0mM34UlLPHELGvI+aEX5" crossorigin="anonymous"></script>
+<script src="D3MouseEvents_files/showdown.js" integrity="sha384-Mcx6WhltjdlkIwTWetAJIBNgD0lLtUcl//A7Ksp/vmVZVD2rzQ949wtmoehrDJd/" crossorigin="anonymous"></script>
+<script src="D3MouseEvents_files/highlight.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+<script>
+
+hljs.configure({classPrefix: ""});
+showdown.setFlavor("github");
+
+var gist = {"public":true,"protocol":"http","sha":"0f3e6be9aba19730d04a39606548b9fd0c3bf944","files":{"index.html":{"language":"HTML","type":"text/html","filename":"index.html","size":5167,"sha":"a71bc00b74c49cee2cd7b756732ff7ae4c30d07f"}},"created_at":"2014-11-17T20:25:07Z","updated_at":"2015-08-29T14:09:45Z","description":"D3 Mouse Events","owner":{"login":"WilliamQLiu"},"id":"76ae20060e19bf42d774"};
+
+var files = d3.values(gist.files);
+
+d3.select(".gist-readme")
+  .data(files, function(d) { return d ? d.filename : this.getAttribute("data-key"); })
+    .each(function(d) {
+      var readme = d3.select(this);
+      d3.text("/WilliamQLiu/raw/76ae20060e19bf42d774/0f3e6be9aba19730d04a39606548b9fd0c3bf944/" + d.filename, function(error, content) {
+        if (error) content = "Sorry, an error occurred.";
+        readme.html(new showdown.Converter().makeHtml(content));
+        readme.selectAll("code").each(function() { hljs.highlightBlock(this); });
+      });
+    });
+
+d3.selectAll(".gist-source")
+  .data(files, function(d) { return d ? d.filename : this.getAttribute("data-key"); })
+  .select("code")
+    .attr("class", function(d) { return d.language && (d.language === "JSON" ? "javascript" : d.language.toLowerCase()); })
+    .each(function(d) {
+      var code = d3.select(this);
+      d3.text("/WilliamQLiu/raw/76ae20060e19bf42d774/0f3e6be9aba19730d04a39606548b9fd0c3bf944/" + (d.filename === "index.html" ? "" : d.filename), function(error, content) {
+        if (error) content = "Sorry, an error occurred.";
+        code.text(content);
+        hljs.highlightBlock(code.node());
+      });
+    });
+
+</script>
+
+<script>
+
+GoogleAnalyticsObject = "ga", ga = function() { ga.q.push(arguments); }, ga.q = [], ga.l = +new Date;
+ga("create", "UA-48272912-1", "auto");
+ga("send", "pageview");
+
+</script>
+<script async="" src="D3MouseEvents_files/analytics.js"></script>
+</body></html>
