@@ -381,8 +381,12 @@ public class AnnotatedAxisTest {
 
 	// ================================================
 	
-	private static AnnotatedAxis[] getAxisArrayAndTestFullBox(String svgName, String boxCoords) throws FileNotFoundException {
-		AbstractCMElement svgElement = SVGUtil.parseToSVGElement(new FileInputStream(new File(SVGHTMLFixtures.G_S_PLOT_DIR, svgName)));
+	public static AnnotatedAxis[] getAxisArrayAndTestFullBox(String svgName, String boxCoords) throws FileNotFoundException {
+		return getAxisArrayAndTestFullBox(SVGHTMLFixtures.G_S_PLOT_DIR, svgName, boxCoords);
+	}
+		
+	public static AnnotatedAxis[] getAxisArrayAndTestFullBox(File dir, String svgName, String boxCoords) throws FileNotFoundException {
+		AbstractCMElement svgElement = SVGUtil.parseToSVGElement(new FileInputStream(new File(dir, svgName)));
 		AbstractPlotBox plotBox = new XYPlotBox();
 		try {
 			plotBox.readAndCreateCSVPlot(svgElement);
