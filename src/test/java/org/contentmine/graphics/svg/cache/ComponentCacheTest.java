@@ -28,7 +28,7 @@ import com.google.common.collect.Multiset;
  * @author pm286
  *
  */
-@Ignore // too long
+//@Ignore // too long
 public class ComponentCacheTest {
 	private static final Logger LOG = Logger.getLogger(ComponentCacheTest.class);
 	static {

@@ -26,6 +26,7 @@ public class LineCacheTest {
 	 */
 	@Test
 	public void testLine11() {
+		System.out.println(SVGHTMLFixtures.TABLE_RECT_DIR);
 		SVGLineList lineList = extractAndDisplayLines(SVGHTMLFixtures.TABLE_RECT_DIR, "table11.svg", "line11.svg");
 		// all boxes are formed from 4 lines 7*14 + 2 + 4 + 1+7 + 7*2 + 14 * 8 === 98+14+14+112 => 238
 		// two lines in top row are butted

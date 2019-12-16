@@ -37,7 +37,7 @@ public class AnnotatedAxisTest {
 	}
 	
 	@Test
-	@Ignore // changes every time we change parameters
+//	@Ignore // changes every time we change parameters
 	public void testFunnelXYAxis() throws FileNotFoundException {
 		AbstractCMElement svgElement = SVGUtil.parseToSVGElement(new FileInputStream(new File(SVGHTMLFixtures.G_S_PLOT_DIR, "bakker2014-page11b.svg")));
 		AbstractPlotBox plotBox = new XYPlotBox();
@@ -142,6 +142,7 @@ public class AnnotatedAxisTest {
 		}
 		Assert.assertEquals("FIXME ", 4, axisArray.length);
 		AnnotatedAxis axis0 = axisArray[0];
+		System.out.println("axis0 "+axis0);
 /**
 		+"majorTicks: (87.096,106.955,127.108,146.967,167.119,186.978,206.869,226.99,246.881,267.001,286.894)\n"
 		+"minorTicks: ()\n"

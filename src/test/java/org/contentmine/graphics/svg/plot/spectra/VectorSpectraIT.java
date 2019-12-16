@@ -148,12 +148,6 @@ public class VectorSpectraIT {
 	    documentProcessor.writeSVGPages(targetDir);
     	documentProcessor.writePDFImages(targetDir);
 	}
-
-
-	@Test
-	public void testSuppdata10() {
-		
-	}
 	
 
 	// ========================================
