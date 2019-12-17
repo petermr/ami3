@@ -69,6 +69,10 @@ public class SVGCacheTest {
 	
 	@Test
 //	@Ignore // uncomment to re-test papers 
+	/** useful set of papers with Cache compponents
+	 * 
+	 * @throws IOException
+	 */
 	public void testPapers() throws IOException {
 		File[] dirs = SVGHTMLFixtures.G_S_TABLE_DIR.listFiles();
 		for (File dir : dirs) {

@@ -18,12 +18,6 @@ import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 
-//import org.openjdk.jmh.annotations.*;
-//import java.util.concurrent.TimeUnit;
-
-
-//@Ignore("This really should be in POM or CL")
-
 public class DocumentCacheIT {
 public static final Logger LOG = Logger.getLogger(DocumentCacheIT.class);
 	static {
@@ -47,7 +41,7 @@ public static final Logger LOG = Logger.getLogger(DocumentCacheIT.class);
 		// superimposed pages
 		SVGElement g = documentCache.getOrCreateConvertedSVGElement();
 		Assert.assertNotNull("non-null g", g);
-		LOG.debug("gg "+g.toXML());
+//		LOG.debug("gg "+g.toXML());
 		Assert.assertTrue("empty g", g.getChildCount() > 0);
 		File file = new File("target/document/"+fileroot+"/boxes.svg");
 		LOG.debug("wrote: "+file.getAbsolutePath());
