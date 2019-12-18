@@ -52,8 +52,10 @@ public class SVGCacheTest {
 	}
 
 	@Test
-//	@Ignore // too many for tests
+	@Ignore // too many for tests
 	public void testImages() throws IOException {
+		System.out.println("testing "+SVGHTMLFixtures.G_S_SVG_IMAGE_DIR);
+		// APPEARS TO BE MISSING
 		File[] files = new File(SVGHTMLFixtures.G_S_SVG_IMAGE_DIR, "10.2147_OTT.S94348").listFiles();
 		Assert.assertNotNull("files in "+SVGHTMLFixtures.G_S_SVG_IMAGE_DIR, files);
 		for (File file : files) {
