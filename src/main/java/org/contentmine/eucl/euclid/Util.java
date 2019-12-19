@@ -3421,6 +3421,17 @@ s = s.replaceAll("(?U)\\s+", replace);
 		return lowercaseSet;
 	}
 
+	public static String toString(float[] floats, int ndec) {
+		StringBuilder sb = new StringBuilder();
+		if (floats != null) {
+			for (float f : floats) {
+				sb.append(Util.format(f, ndec));
+				sb.append(" ");
+			}
+		}
+		return sb.toString();
+	}
+
 }
 
 

@@ -172,7 +172,22 @@ public class PageDrawerRunner
         		return new MyPageDrawer(parameters);
         	}
         	if (DrawerType.AMI.equals(drawerType)) {
-        		return new AmiPageDrawer(parameters);
+        		AMIPageDrawer amiPageDrawer = new AMIPageDrawer(parameters, AMIDebugParameters.getDefaultParameters());
+        		amiPageDrawer.getDebugParameters().showAnnotation=false;
+        		amiPageDrawer.getDebugParameters().showAppendRectangle=false;
+        		amiPageDrawer.getDebugParameters().showBeginText=false;
+        		amiPageDrawer.getDebugParameters().showClip=false;
+        		amiPageDrawer.getDebugParameters().showColor=false;
+        		amiPageDrawer.getDebugParameters().showCurrentPoint=false;
+        		amiPageDrawer.getDebugParameters().showFontGlyph=true;
+        		amiPageDrawer.getDebugParameters().showForm=false;
+        		amiPageDrawer.getDebugParameters().showClosePath=false;
+        		amiPageDrawer.getDebugParameters().showEndPath=false;
+        		amiPageDrawer.getDebugParameters().showEndText=false;
+        		amiPageDrawer.getDebugParameters().showLineTo=false;
+        		amiPageDrawer.getDebugParameters().showMoveTo=false;
+        		amiPageDrawer.getDebugParameters().showStrokePath=false;
+				return amiPageDrawer;
         	}
         	return null;
         }

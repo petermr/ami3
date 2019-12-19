@@ -24,16 +24,26 @@ public class CustomPageDrawerTest extends AbstractAMITest {
 	
 	@Test
 	public void testPDF2SVG() throws IOException {
-      File file = new File(PDF2SVG2, "lichtenburg19a.pdf");
+//      String root = "custom-render-demo"; // pageSserial=0
+      String root = "lichtenburg19a"; // pageSerial=1 or 5
+	  File file = new File(PDF2SVG2, root + ".pdf");
       Assert.assertTrue(file.exists());
       
-      PDDocument doc = PDDocument.load(file);
-      PageDrawerRunner pageDrawerRunner = new PageDrawerRunner();
-      PDFRenderer renderer = pageDrawerRunner.createPDFRenderer(doc, DrawerType.ORIGINAL);
-//      PDFRenderer renderer = new MyPDFRenderer(doc);
-      BufferedImage image = renderer.renderImage(1);
-      ImageIO.write(image, "PNG", new File(PDF2SVG2, "lichtenburg19a.png"));
-      doc.close();
+//      DrawerType drawerType = DrawerType.ORIGINAL;
+      DrawerType drawerType = DrawerType.AMI;
+ //     int pageSerial = 0;
+      int pageSerial = 1;
+      runPageDrawer(root, file, pageSerial, drawerType);
 	}
 
+	private void runPageDrawer(String root, File inputPdf, int pageSerial, DrawerType drawerType) throws IOException {
+		PDDocument doc = PDDocument.load(inputPdf);
+		PageDrawerRunner pageDrawerRunner = new PageDrawerRunner();
+		PDFRenderer renderer = pageDrawerRunner.createPDFRenderer(doc, drawerType);
+		BufferedImage image = renderer.renderImage(pageSerial);
+		File outputPng = new File(PDF2SVG2, root+".png");
+		ImageIO.write(image, "PNG", outputPng);
+		LOG.debug("wrote PNG "+outputPng);
+		doc.close();
+	}
 }

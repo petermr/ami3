@@ -40,7 +40,8 @@ public class AbstractAMITest {
 //		args = new String[]{"node", "--help"};
 //		CMineUtil.runProcess(args, (InputStream) null);
 		
-		args = new String[]{"bashx", "-xx"};
+//		args = new String[]{"bashx", "-xx"};
+		args = new String[]{"bash", "-xx"};
 		CMineUtil.runProcess(args, (InputStream) null);
 		
 	}
