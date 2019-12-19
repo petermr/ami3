@@ -1,4 +1,4 @@
-package org.contentmine.pdf2svg.rendering;
+package org.contentmine.pdf2svg2;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
@@ -7,6 +7,7 @@ import java.awt.Paint;
 import java.awt.Shape;
 import java.awt.Stroke;
 import java.awt.geom.AffineTransform;
+import java.awt.geom.GeneralPath;
 import java.awt.geom.Rectangle2D;
 import java.io.IOException;
 
@@ -24,9 +25,9 @@ import org.apache.pdfbox.util.Vector;
  * modified by pm286
  * 
  */
-public class MyPageDrawer extends PageDrawer
+public class AmiPageDrawer extends PageDrawer
 {
-    MyPageDrawer(PageDrawerParameters parameters) throws IOException
+    AmiPageDrawer(PageDrawerParameters parameters) throws IOException
     {
         super(parameters);
     }
@@ -37,6 +38,7 @@ public class MyPageDrawer extends PageDrawer
     @Override
     protected Paint getPaint(PDColor color) throws IOException
     {
+    	System.err.println("PDColor "+color+"/"+color.getComponents()[0]);
     	// JUST AN EXAMPLE
         // if this is the non-stroking color
         if (getGraphicsState().getNonStrokingColor() == color)
@@ -44,6 +46,7 @@ public class MyPageDrawer extends PageDrawer
             // find red, ignoring alpha channel
             if (color.toRGB() == (Color.RED.getRGB() & 0x00FFFFFF))
             {
+            	System.err.println("BLUE!");
                 // replace it with blue
                 return Color.BLUE;
             }
@@ -58,12 +61,14 @@ public class MyPageDrawer extends PageDrawer
     protected void showGlyph(Matrix textRenderingMatrix, PDFont font, int code, String unicode,
                              Vector displacement) throws IOException
     {
-    	
+
+    	System.err.println("glyph "+font+"/"+code+"/"+unicode+"/"+displacement);
     	// JUST AN EXAMPLE
 
         // draw glyph
         super.showGlyph(textRenderingMatrix, font, code, unicode, displacement);
         
+        // draw box round glyph
         // bbox in EM -> user units
         Shape bbox = new Rectangle2D.Float(0, 0, font.getWidth(code) / 1000, 1);
         AffineTransform at = textRenderingMatrix.createAffineTransform();
@@ -71,6 +76,7 @@ public class MyPageDrawer extends PageDrawer
         
         // save
         Graphics2D graphics = getGraphics();
+        System.err.println("Graphics "+graphics);
         Color color = graphics.getColor();
         Stroke stroke = graphics.getStroke();
         Shape clip = graphics.getClip();
@@ -93,6 +99,8 @@ public class MyPageDrawer extends PageDrawer
     @Override
     public void fillPath(int windingRule) throws IOException
     {
+    	GeneralPath generalPath = this.getLinePath();
+    	System.err.println("general path "+generalPath);
     	// JUST AN EXAMPLE
 
         // bbox in user units

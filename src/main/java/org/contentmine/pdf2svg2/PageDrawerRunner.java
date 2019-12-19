@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.contentmine.pdf2svg.rendering;
+package org.contentmine.pdf2svg2;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
@@ -53,9 +53,9 @@ import org.eclipse.jetty.util.log.Log;
  *
  * @author John Hewson
  */
-public class MyPageDrawerExample
+public class PageDrawerRunner
 {
-	private static final Logger LOG = Logger.getLogger(MyPageDrawerExample.class);
+	private static final Logger LOG = Logger.getLogger(PageDrawerRunner.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
@@ -66,18 +66,18 @@ public class MyPageDrawerExample
 			"src/test/resources/org/contentmine/projects";
 	private static final File OMAR_TEST_DIR = new File(PROJECTS_DIR, "omar/test");
 
-	public enum Drawer {
+	public enum DrawerType {
 		AMI,
 		ORIGINAL,
 		
 	}
 
-	private Drawer drawer = Drawer.ORIGINAL;
+	private DrawerType drawer = DrawerType.ORIGINAL;
 	private BufferedImage image;
 	private PDFRenderer renderer;
 	private PDDocument doc;
 
-	public void setPageDrawer(Drawer drawer) {
+	public void setDrawerType(DrawerType drawer) {
 		this.drawer = drawer;
 	}
 
@@ -101,18 +101,25 @@ public class MyPageDrawerExample
 		ImageIO.write(image, "PNG", output);
 	}
 
+	public PDFRenderer createPDFRenderer(PDDocument doc, DrawerType drawerType) {
+		return new MyPDFRenderer(doc, drawerType);
+	}
+
+
+
     public static void main(String[] args) throws IOException
     {
         example1();
-        example2();
+//        example2();
     }
 
-	private static void example1() throws IOException {
+	public static void example1() throws IOException {
 		File inputFile = new File(TEST_PDFBOX_DIR, "custom-render-demo.pdf");
         File outputFile = new File(TEST_PDFBOX_DIR, "custom-render-demo.png");
         int pageSerial = 0;
-        MyPageDrawerExample drawerExample = new MyPageDrawerExample();
-        drawerExample.runExample(inputFile, outputFile, pageSerial, Drawer.ORIGINAL);
+        PageDrawerRunner drawerExample = new PageDrawerRunner();
+        drawerExample.runExample(inputFile, outputFile, pageSerial, DrawerType.AMI);
+//        drawerExample.runExample(inputFile, outputFile, pageSerial, Drawer.ORIGINAL);
 	}
 
 	private static void example2() throws IOException {
@@ -120,11 +127,11 @@ public class MyPageDrawerExample
 		File imgDir = new File(LICHTENBURG, "img");
 		imgDir.mkdirs();
 		File inputFile = new File(LICHTENBURG, "fulltext.pdf");
-        MyPageDrawerExample drawerExample = new MyPageDrawerExample();
+        PageDrawerRunner drawerExample = new PageDrawerRunner();
         for (int pageSerial = 0; pageSerial < 10; pageSerial++) {
         	File outputFile = new File(imgDir, "fulltext."+pageSerial+".png");
         	System.out.println("wrote: "+outputFile);
-        	drawerExample.runExample(inputFile, outputFile, pageSerial, Drawer.ORIGINAL);
+        	drawerExample.runExample(inputFile, outputFile, pageSerial, DrawerType.ORIGINAL);
         }
 	}
 
@@ -133,12 +140,12 @@ public class MyPageDrawerExample
 	}
 
 	public void runExample(File inputFile, File outputFile, int pageSerial) throws IOException {
-		runExample(inputFile, outputFile, pageSerial, Drawer.ORIGINAL);
+		runExample(inputFile, outputFile, pageSerial, DrawerType.ORIGINAL);
 	}
 
-	public void runExample(File inputFile, File outputFile, int pageSerial, Drawer drawer)
+	public void runExample(File inputFile, File outputFile, int pageSerial, DrawerType drawerType)
 			throws IOException {
-		setPageDrawer(drawer);
+		setDrawerType(drawerType);
 	    readFile(inputFile);
 	    createImage(pageSerial);
 	    writeImage(outputFile);
@@ -150,26 +157,25 @@ public class MyPageDrawerExample
      */
     private static class MyPDFRenderer extends PDFRenderer
     {
-        private Drawer drawer;
+        private DrawerType drawerType;
 
-		MyPDFRenderer(PDDocument document, Drawer drawer)
+		MyPDFRenderer(PDDocument document, DrawerType drawer)
         {
             super(document);
-            this.drawer = drawer;
+            this.drawerType = drawer;
         }
 
         @Override
         protected PageDrawer createPageDrawer(PageDrawerParameters parameters) throws IOException
         {
-        	if (Drawer.ORIGINAL.equals(drawer)) {
+        	if (DrawerType.ORIGINAL.equals(drawerType)) {
         		return new MyPageDrawer(parameters);
         	}
-        	if (Drawer.AMI.equals(drawer)) {
+        	if (DrawerType.AMI.equals(drawerType)) {
         		return new AmiPageDrawer(parameters);
         	}
         	return null;
         }
     }
-
 
 }
