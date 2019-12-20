@@ -5,9 +5,12 @@ import java.awt.Color;
 import java.awt.Composite;
 import java.awt.Graphics2D;
 import java.awt.Paint;
+import java.awt.Stroke;
 import java.awt.geom.AffineTransform;
 import java.awt.geom.Point2D;
 import java.io.IOException;
+import java.util.HashSet;
+import java.util.Set;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -42,6 +45,9 @@ public class AMIPageDrawer extends PageDrawer {
     private AMIDebugParameters debugParams;
 	private FontGlyph currentFontGlyph;
 	private Color currentColor;
+	private Stroke currentStroke;
+	private Set<String> nameSet = new HashSet<>();
+	private Set<String> strokeSet = new HashSet<>();
 
 	AMIPageDrawer(PageDrawerParameters parameters, AMIDebugParameters debugParams) throws IOException {
         super(parameters);
@@ -221,8 +227,17 @@ public class AMIPageDrawer extends PageDrawer {
     	FontGlyph fontGlyph = new FontGlyph(textRenderingMatrix, font, code, unicode, displacement);
     	PDFont newFont = (currentFontGlyph == null || !currentFontGlyph.getFont().equals(font)) ? font : null; 
     	if (newFont != null && debugParams.showFontGlyph) {
-    		System.out.println("showFontGlyph "+format(textRenderingMatrix, 2)+"/"+
-     	    font.getName()+"/"+code+"/"+unicode+"/"+format(displacement, 3));
+//    		System.out.println("showFontGlyph "+format(textRenderingMatrix, 2)+"/"+
+//    	     	    font.getName()+"/"+code+"/"+unicode+"/"+format(displacement, 3));
+//    		System.out.println(font.getName().split("\\+")[1]);
+    		String name = font.getName();
+			name = name.contains("+") ? name.split("\\+")[1] : name;
+			if (nameSet.contains(name)) {
+				System.out.print("+");
+			} else {
+				nameSet.add(name);
+				System.out.println("\n"+name);
+			}
     	}
     	super.showFontGlyph(textRenderingMatrix, font, code, unicode, displacement);
     	currentFontGlyph = fontGlyph;
@@ -395,12 +410,20 @@ public class AMIPageDrawer extends PageDrawer {
 
     @Override
     public void strokePath() throws IOException {
-//    	graphics.getX(); NOT visible
     	Graphics2D graphics = getGraphics();
     	Color color = graphics.getColor();
     	if (!color.equals(currentColor)) {
-    		System.err.println(color);
+    		System.err.println(Integer.toHexString(color.getRGB() /*& 0x00ffffff*/));
     		currentColor = color;
+    	}
+    	Stroke stroke = graphics.getStroke();
+    	if (!stroke.equals(currentStroke)) {
+			if (!strokeSet .contains(stroke)) {
+	    		System.out.println("\n"+stroke);
+    		} else {
+    			System.out.print("|");
+    		}
+    		currentStroke = stroke;
     	}
     	
     	
