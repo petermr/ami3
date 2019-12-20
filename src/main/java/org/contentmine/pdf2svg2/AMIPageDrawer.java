@@ -46,8 +46,9 @@ public class AMIPageDrawer extends PageDrawer {
 	private FontGlyph currentFontGlyph;
 	private Color currentColor;
 	private Stroke currentStroke;
-	private Set<String> nameSet = new HashSet<>();
-	private Set<String> strokeSet = new HashSet<>();
+	private Set<PDFont> fontSet = new HashSet<>();
+	private Set<Stroke> strokeSet = new HashSet<>();
+	private Set<Color> colorSet = new HashSet<>();
 
 	AMIPageDrawer(PageDrawerParameters parameters, AMIDebugParameters debugParams) throws IOException {
         super(parameters);
@@ -230,14 +231,7 @@ public class AMIPageDrawer extends PageDrawer {
 //    		System.out.println("showFontGlyph "+format(textRenderingMatrix, 2)+"/"+
 //    	     	    font.getName()+"/"+code+"/"+unicode+"/"+format(displacement, 3));
 //    		System.out.println(font.getName().split("\\+")[1]);
-    		String name = font.getName();
-			name = name.contains("+") ? name.split("\\+")[1] : name;
-			if (nameSet.contains(name)) {
-				System.out.print("+");
-			} else {
-				nameSet.add(name);
-				System.out.println("\n"+name);
-			}
+    		printNewFont(font);
     	}
     	super.showFontGlyph(textRenderingMatrix, font, code, unicode, displacement);
     	currentFontGlyph = fontGlyph;
@@ -246,6 +240,7 @@ public class AMIPageDrawer extends PageDrawer {
 //
 //        drawGlyph2D(glyph2D, font, code, displacement, at);
     }
+
 
 	/**
      * Render the font using the Glyph2D interface.
@@ -413,16 +408,12 @@ public class AMIPageDrawer extends PageDrawer {
     	Graphics2D graphics = getGraphics();
     	Color color = graphics.getColor();
     	if (!color.equals(currentColor)) {
-    		System.err.println(Integer.toHexString(color.getRGB() /*& 0x00ffffff*/));
+			printNewColor(color);
     		currentColor = color;
     	}
     	Stroke stroke = graphics.getStroke();
     	if (!stroke.equals(currentStroke)) {
-			if (!strokeSet .contains(stroke)) {
-	    		System.out.println("\n"+stroke);
-    		} else {
-    			System.out.print("|");
-    		}
+			printNewStroke(stroke);
     		currentStroke = stroke;
     	}
     	
@@ -960,6 +951,37 @@ public class AMIPageDrawer extends PageDrawer {
     }
 
     // ===========================
+
+	private void printNewFont(PDFont font) {
+		String name = font.getName();
+		name = name.contains("+") ? name.split("\\+")[1] : name;
+		if (fontSet.contains(font)) {
+			System.out.print("+");
+		} else {
+			fontSet.add(font);
+			System.out.println("\n"+name);
+		}
+	}
+
+	private void printNewStroke(Stroke stroke) {
+		if (!strokeSet .contains(stroke)) {
+			System.out.println("\n"+stroke);
+			strokeSet.add(stroke);
+		} else {
+			System.out.print("|");
+		}
+	}
+	
+	private void printNewColor(Color color) {
+		if (!colorSet .contains(color)) {
+    		System.out.println("\n"+Integer.toHexString(color.getRGB() /*& 0x00ffffff*/));
+			colorSet.add(color);
+		} else {
+			System.out.print("c");
+		}
+	}
+
+
     private String format(Matrix mat, int ndec) {
     	return ""+
     	    	"s("+Util.format(mat.getScaleX(), ndec)+","+Util.format(mat.getScaleY(), ndec)+")"+" "+
