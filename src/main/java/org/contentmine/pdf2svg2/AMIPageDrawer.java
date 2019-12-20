@@ -1,8 +1,9 @@
 package org.contentmine.pdf2svg2;
 
 import java.awt.AlphaComposite;
+import java.awt.Color;
 import java.awt.Composite;
-import java.awt.Font;
+import java.awt.Graphics2D;
 import java.awt.Paint;
 import java.awt.geom.AffineTransform;
 import java.awt.geom.Point2D;
@@ -40,6 +41,7 @@ public class AMIPageDrawer extends PageDrawer {
 	
     private AMIDebugParameters debugParams;
 	private FontGlyph currentFontGlyph;
+	private Color currentColor;
 
 	AMIPageDrawer(PageDrawerParameters parameters, AMIDebugParameters debugParams) throws IOException {
         super(parameters);
@@ -223,11 +225,11 @@ public class AMIPageDrawer extends PageDrawer {
      	    font.getName()+"/"+code+"/"+unicode+"/"+format(displacement, 3));
     	}
     	super.showFontGlyph(textRenderingMatrix, font, code, unicode, displacement);
+    	currentFontGlyph = fontGlyph;
 //        AffineTransform at = textRenderingMatrix.createAffineTransform();
 //        at.concatenate(font.getFontMatrix().createAffineTransform());
 //
 //        drawGlyph2D(glyph2D, font, code, displacement, at);
-    	currentFontGlyph = fontGlyph;
     }
 
 	/**
@@ -393,6 +395,15 @@ public class AMIPageDrawer extends PageDrawer {
 
     @Override
     public void strokePath() throws IOException {
+//    	graphics.getX(); NOT visible
+    	Graphics2D graphics = getGraphics();
+    	Color color = graphics.getColor();
+    	if (!color.equals(currentColor)) {
+    		System.err.println(color);
+    		currentColor = color;
+    	}
+    	
+    	
 //        graphics.setComposite(getGraphicsState().getStrokingJavaComposite());
 //        graphics.setPaint(getStrokingPaint());
 //        graphics.setStroke(getStroke());
