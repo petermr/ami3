@@ -16,14 +16,18 @@
 
 package org.contentmine.graphics.html;
 
+import java.util.List;
+
 import org.apache.log4j.Logger;
+import org.contentmine.graphics.html.util.HtmlUtil;
 
 
 /** 
  *  @author pm286
  */
-public class HtmlColgroup extends HtmlElement {
-	private final static Logger LOG = Logger.getLogger(HtmlSpan.class);
+public class HtmlColgroup extends HtmlElement implements HasColspan {
+	private final static Logger LOG = Logger.getLogger(HtmlColgroup.class);
+	
 	public final static String TAG = "colgroup";
 
 	/** constructor.
@@ -32,4 +36,21 @@ public class HtmlColgroup extends HtmlElement {
 	public HtmlColgroup() {
 		super(TAG);
 	}
+	
+	@Override
+	public int getColspan() {
+		int colspan = 0;
+		List<HtmlElement> colChildList = HtmlUtil.getQueryHtmlElements(this, "./*[local-name()='"+HtmlCol.TAG+"']");
+		if (colChildList.size() == 0) {
+			String colspanAttval = this.getAttributeValue(COLSPAN);
+			colspan = colspanAttval == null ? 1 : Integer.parseInt(colspanAttval);
+		} else {
+			for (HtmlElement colChild : colChildList) {
+				colspan += ((HtmlCol)colChild).getColspan();
+			}
+		}
+		return colspan;
+	}
+
+	
 }

@@ -154,7 +154,8 @@ public class TFDemos {
 	}
 
 	private static List<String> getColumnTdValues(HtmlTable table, int jCol) {
-		List<HtmlTr> trtdList = table.getTrTdRows();
+		if (table == null || !table.isTidy()) return null;
+		List<HtmlTr> trtdList = table.getOrCreateChildTrs();
 		List<String> colValues = new ArrayList<String>();
 		for (HtmlTr tr : trtdList) {
 			HtmlTd td = (HtmlTd) tr.getTd(jCol);

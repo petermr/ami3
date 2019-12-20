@@ -6,6 +6,7 @@ import java.util.List;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.cproject.CMineFixtures;
+import org.contentmine.cproject.util.RectTabColumn;
 import org.contentmine.cproject.util.RectangularTable;
 import org.junit.Assert;
 import org.junit.Ignore;
@@ -46,9 +47,9 @@ public class CrossrefCSVTest {
 	public void testAnalyzeDOIColumn() throws IOException {
 		String colHead = "DOI";
 		RectangularTable table = RectangularTable.readCSVTable(CMineFixtures.CROSSREF_SRC_A_1_CSV, true);
-		List<String> columnValues = table.getColumn(table.getIndexOfColumn(colHead));
+		RectTabColumn columnValues = table.getColumn(table.getIndexOfColumn(colHead));
 		Assert.assertEquals(12141, columnValues.size());
-		List<Multiset.Entry<String>> multisetList = table.extractSortedMultisetList(colHead);
+		List<Multiset.Entry<String>> multisetList = table.extractSortedMultisetListForColumn(colHead);
 		Assert.assertEquals(12141, multisetList.size());
 		List<Multiset.Entry<String>> uniqueMultisetList = table.extractUniqueMultisetList(colHead);
 		Assert.assertEquals(12141, uniqueMultisetList.size());
@@ -67,9 +68,9 @@ public class CrossrefCSVTest {
 	public void testAnalyzeLicenseColumn() throws IOException {
 		String colHead = "License";
 		RectangularTable table = RectangularTable.readCSVTable(CMineFixtures.CROSSREF_SRC_A_1_CSV, true);
-		List<String> columnValues = table.getColumn(table.getIndexOfColumn(colHead));
+		RectTabColumn columnValues = table.getColumn(table.getIndexOfColumn(colHead));
 		Assert.assertEquals(12141, columnValues.size());
-		List<Multiset.Entry<String>> multisetList = table.extractSortedMultisetList(colHead);
+		List<Multiset.Entry<String>> multisetList = table.extractSortedMultisetListForColumn(colHead);
 		Assert.assertEquals(33, multisetList.size());
 		List<Multiset.Entry<String>> uniqueMultisetList = table.extractUniqueMultisetList(colHead);
 		Assert.assertEquals(2, uniqueMultisetList.size());
@@ -126,9 +127,9 @@ public class CrossrefCSVTest {
 	public void testAnalyzePublishers() throws IOException {
 		String colHead = "Publisher";
 		RectangularTable table = RectangularTable.readCSVTable(CMineFixtures.CROSSREF_SRC_A_1_CSV, true);
-		List<String> columnValues = table.getColumn(table.getIndexOfColumn(colHead));
+		RectTabColumn columnValues = table.getColumn(table.getIndexOfColumn(colHead));
 		Assert.assertEquals(12141, columnValues.size());
-		List<Multiset.Entry<String>> multisetList = table.extractSortedMultisetList(colHead);
+		List<Multiset.Entry<String>> multisetList = table.extractSortedMultisetListForColumn(colHead);
 		Assert.assertEquals(325, multisetList.size());
 		Assert.assertEquals("[Elsevier BV x 2271,"
 		+ " Springer Science + Business Media x 1038,"

@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.Charset;
 import java.nio.file.FileStore;
 import java.nio.file.FileSystem;
 import java.nio.file.Files;
@@ -18,7 +19,6 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.regex.Matcher;
@@ -38,6 +38,7 @@ import org.contentmine.ami.lookups.WikipediaDictionary;
 import org.contentmine.ami.lookups.WikipediaLookup;
 import org.contentmine.cproject.files.DebugPrint;
 import org.contentmine.cproject.util.CMineGlobber;
+import org.contentmine.cproject.util.RectTabColumn;
 import org.contentmine.cproject.util.RectangularTable;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -45,6 +46,7 @@ import org.contentmine.graphics.html.HtmlA;
 import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlLi;
+import org.contentmine.graphics.html.HtmlTCell;
 import org.contentmine.graphics.html.HtmlTable;
 import org.contentmine.graphics.html.HtmlTbody;
 import org.contentmine.graphics.html.HtmlTr;
@@ -83,6 +85,7 @@ import picocli.CommandLine.Parameters;
 public class AMIDictionaryTool extends AbstractAMITool {
 	
 
+	private static final String UTF_8 = "UTF-8";
 	private static final Logger LOG = Logger.getLogger(AMIDictionaryTool.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
@@ -122,6 +125,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 		create,
 		display,
 		help,
+		search,
 		translate,
 		;
 		public static Operation getOperation(String operationS) {
@@ -274,6 +278,20 @@ public class AMIDictionaryTool extends AbstractAMITool {
     		)
     private Integer queryChunk = null;
         
+    @Option(names = {"--search"}, 
+    		arity="1..*",
+    	    paramLabel = "search",
+    		description = "search dictionary for these terms (experimental)"
+    		)
+    private List<String> searchTerms;
+        
+    @Option(names = {"--searchfile"}, 
+    		arity="1..*",
+    	    paramLabel = "searchfile",
+    		description = "search dictionary for terms in these files (experimental)"
+    		)
+    private List<String> searchTermFilenames;
+        
     @Option(names = {"--splitcol"}, 
     		arity="1",
     		paramLabel="input separator",
@@ -324,8 +342,8 @@ public class AMIDictionaryTool extends AbstractAMITool {
 	private List<String> termList;
 	private List<String> nameList;
 	private List<String> linkList;
-	private List<List<String>> hrefColList;
-	private List<List<String>> dataColList;
+	private List<RectTabColumn> hrefColList;
+	private List<RectTabColumn> dataColList;
 	private Element dictionaryElement;
 	private HtmlTbody tBody;
 	private WikipediaDictionary wikipediaDictionary;
@@ -342,6 +360,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 	private HashSet<String> missingWikipediaSet;
 	private HashSet<String> missingWikidataSet;
 	private List<String> descriptionList;
+	private Set<String> termSet;
 
 
 	public AMIDictionaryTool() {
@@ -406,6 +425,8 @@ public class AMIDictionaryTool extends AbstractAMITool {
 			displayDictionaries();
 		} else if (Operation.create.equals(operation)) {
 			createDictionary();
+		} else if (Operation.search.equals(operation)) {
+			searchDictionary();
 		} else if (Operation.translate.equals(operation)) {
 			translateDictionaries();
 		} else {
@@ -525,13 +546,58 @@ public class AMIDictionaryTool extends AbstractAMITool {
 	}
 
 	private void createSortedTermList() {
-		termList = Arrays.asList(terms);
-		Set<String> termSet = new HashSet<>();
-		for (String term : terms) {
-			termSet.add(term.toLowerCase());
+		if (termSet == null || termList == null) {
+			termSet = new HashSet<>();
+			for (String term : terms) {
+				termSet.add(term.toLowerCase());
+			}
+			termList = new ArrayList<String>(termSet);
+			Collections.sort(termList);
 		}
-		termList = new ArrayList<String>(termSet);
-		Collections.sort(termList);
+	}
+
+	private void searchDictionary() {
+		DefaultAMIDictionary amiDictionary = AMIDictionaryTool.readDictionary(new File(dictionary[0]));
+		Set<String> rawTermSet = amiDictionary.getRawLowercaseTermSet();
+		
+		if (searchTerms != null) {
+			searchDictionaryForTerms(rawTermSet, searchTerms);
+		} else if (searchTermFilenames != null) {
+			searchTermsInFiles(rawTermSet, searchTermFilenames);	
+		}
+	}
+	
+	public static DefaultAMIDictionary readDictionary(File file) {
+		DefaultAMIDictionary amiDictionary = new DefaultAMIDictionary();
+		amiDictionary.readDictionary(file);
+		return amiDictionary;
+	}
+
+
+
+	private void searchTermsInFiles(Set<String> rawTermSet, List<String> searchTermFilenames) {
+		List<String> allSearchTerms = new ArrayList<>();
+		for (String searchTermFilename : searchTermFilenames) {
+			File file = new File(searchTermFilename);
+			try {
+				List<String> searchTerms0 = FileUtils.readLines(file, Charset.forName(UTF_8));
+				allSearchTerms.addAll(searchTerms0);
+			} catch (Exception e) {
+				throw new RuntimeException("Cannot read "+file);
+			}
+		}
+		searchDictionaryForTerms(rawTermSet, allSearchTerms);
+	}
+
+	private static void searchDictionaryForTerms(Set<String> rawTermSet, List<String> searchTerms) {
+		rawTermSet = Util.toLowercase(rawTermSet);
+		for (String searchTerm : searchTerms) {
+			if (rawTermSet.contains(searchTerm)) {
+				System.out.println("found: "+searchTerm);
+			} else {
+				System.err.println("Cannot find term in dictionary "+searchTerm);
+			}
+		}
 	}
 
 	private void translateDictionaries() {
@@ -580,7 +646,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 	private void convertJsonDictionaryToXML(File infile, File outfile) {
 		String inString = null;
 		try {
-			inString = FileUtils.readFileToString(infile, "UTF-8");
+			inString = FileUtils.readFileToString(infile, UTF_8);
 		} catch (IOException e) {
 			throw new RuntimeException("Cannot read Json: " + infile, e);
 		}
@@ -620,11 +686,11 @@ public class AMIDictionaryTool extends AbstractAMITool {
 		if (termCol == null) {
 			throw new RuntimeException("must give termCol");
 		}
-		termList = rectangularTable.getColumn(termCol);
+		termList = rectangularTable.getColumn(termCol).getValues();
 		if (termList == null) {
 			throw new RuntimeException("Cannot find term column");
 		}
-		nameList = rectangularTable.getColumn(nameCol);
+		nameList = rectangularTable.getColumn(nameCol).getValues();
 		if (dataCols != null) {
 			dataColList = rectangularTable.getColumnList(dataCols);
 			checkColumnsNotNull(dataColList, dataCols);
@@ -636,7 +702,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 		return rectangularTable;
 	}
 
-	private void checkColumnsNotNull(List<List<String>> colList, String[] colNames) {
+	private void checkColumnsNotNull(List<RectTabColumn> colList, String[] colNames) {
 		for (int i = 0; i < colList.size(); i++) {
 			if (colList.get(i) == null) {
 				LOG.warn("Cannot find column: "+colNames[i]);
@@ -892,12 +958,12 @@ public class AMIDictionaryTool extends AbstractAMITool {
 			XMLUtil.debug(dictionaryElement, fos, 1);
 		} else if (outformat.equals(DictionaryFileFormat.json)) {
 			String jsonS = createJson(dictionaryElement);
-			IOUtils.write(jsonS, fos, "UTF-8");
+			IOUtils.write(jsonS, fos, UTF_8);
 		} else if (outformat.equals(DictionaryFileFormat.html)) {
 			HtmlDiv div = createHtml();
 			if (div != null) {
 				String xmlS = div.toXML();
-				IOUtils.write(xmlS, fos, "UTF-8");
+				IOUtils.write(xmlS, fos, UTF_8);
 			}
 		}
 		try {
@@ -1095,8 +1161,8 @@ public class AMIDictionaryTool extends AbstractAMITool {
 			for (int i = 0; i < rowList.size(); i++) {
 				HtmlTr row = tBody.getRowList().get(i);
 				// unfortunately Th is also found
-				List<HtmlElement> tdthChildren = row.getTdOrThChildren();
-				int size = tdthChildren.size();
+				List<HtmlTCell> cellChildren = row.getTCellChildren();
+				int size = cellChildren.size();
 				if (size == 0) {
 					// skip header and empty rows
 					continue;
@@ -1112,7 +1178,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 					fusedrow++;
 					continue;
 				}
-				List<String> linkFields = addValueFromContentOrHref(tdthChildren.get(colIndex), field, base);
+				List<String> linkFields = addValueFromContentOrHref((HtmlElement)cellChildren.get(colIndex), field, base);
 				valueList.addAll(linkFields);
 			}
 			System.out.print("\nrows: "+rowList.size()+" ");

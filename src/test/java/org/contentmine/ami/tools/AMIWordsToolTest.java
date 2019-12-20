@@ -10,27 +10,28 @@ import org.contentmine.ami.tools.AMIWordsTool;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.junit.Test;
 
-public class AMIWordsToolTest {
+public class AMIWordsToolTest extends AbstractAMITest {
 	private static final Logger LOG = Logger.getLogger(AMIWordsToolTest.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
 
 	@Test
-	public void testZikaWords10() {
-		File testFile = AMIFixtures.TEST_ZIKA10_DIR;
-		String name = testFile.getName();
-		File targetDir = new File("target/cooccurrence/", name);
-		CMineTestFixtures.cleanAndCopyDir(testFile, targetDir);
-		/** need HTML */
+	public void testOil5() {
+//		File testFile = OIL5;
+//		String name = testFile.getName();
+//		File targetDir = new File("target/cooccurrence/", name);
+//		CMineTestFixtures.cleanAndCopyDir(testFile, targetDir);
+//		/** need HTML */
+//		String args = 
+//				"-p /Users/pm286/workspace/cmdev/normami/target/cooccurrence/"+name+"/";
+//			;
+//		new AMITransformTool().runCommands(args);
+//		// transformed norma
 		String args = 
-				"-p /Users/pm286/workspace/cmdev/normami/target/cooccurrence/"+name+"/";
-			;
-		new AMITransformTool().runCommands(args);
-		// transformed norma
-		args = 
 				"-h"
-				+ " -p /Users/pm286/workspace/cmdev/normami/target/cooccurrence/"+name+"/"
+//				+ " -p /Users/pm286/workspace/cmdev/normami/target/cooccurrence/"+name+"/"
+				+ " -p " + OIL5
 				+ " --stopwords pmcstop.txt stopwords.txt"
 				+ " --methods frequencies "  //wordLengths"
 				+ " --stripNumbers" // works

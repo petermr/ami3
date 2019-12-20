@@ -68,7 +68,7 @@ public class CSVTableTest {
 		csvTable.addRow(new ArrayList<String>(Arrays.asList(new String[]{"a1","b1","c1"})));
 		csvTable.addRow(new ArrayList<String>(Arrays.asList(new String[]{"a2","b2","c2"})));
 		int jcol = csvTable.getIndexOfColumn("B");
-		List<String> col = csvTable.getColumn(jcol);
+		RectTabColumn col = csvTable.getColumn(jcol);
 		Assert.assertEquals("[b0, b1, b2]", col.toString());
 	}
 
@@ -150,7 +150,8 @@ public class CSVTableTest {
 		csvTable0.addRow(new ArrayList<String>(Arrays.asList(new String[]{"a0","b0","c0"})));
 		csvTable0.addRow(new ArrayList<String>(Arrays.asList(new String[]{"a1","b1","c1"})));
 		csvTable0.addRow(new ArrayList<String>(Arrays.asList(new String[]{"a2","b2","c2"})));
-		List<String> col = new ArrayList<String>(Arrays.asList(new String[]{"d0", "d1", "d2"}));
+		RectTabColumn col = RectTabColumn.createColumn(
+				new ArrayList<String>(Arrays.asList(new String[]{"d0", "d1", "d2"})));
 		boolean ok = csvTable0.addColumn(col, "D");
 		Assert.assertTrue(ok);
 		Assert.assertEquals(""+
@@ -185,8 +186,10 @@ public class CSVTableTest {
 	
 	@Test
 	public void testIndex() {
-		List<String> col0 = new ArrayList<String>(Arrays.asList(new String[] {"a","b","c","d","e","f","g","h","i","j"}));
-		List<String> col1 = new ArrayList<String>(Arrays.asList(new String[] {"b","h","j","c","f","g","a","d","i","e"}));
+		List<String> values = new ArrayList<String>(Arrays.asList(new String[] {"a","b","c","d","e","f","g","h","i","j"}));
+		RectTabColumn col0 = RectTabColumn.createColumn(values);
+		RectTabColumn col1 = RectTabColumn.createColumn(
+				new ArrayList<String>(Arrays.asList(new String[] {"b","h","j","c","f","g","a","d","i","e"})));
 		List<Integer> mapping0to1 = RectangularTable.getMapping0to1(col0, col1);
 		// col1[mapping0to1[idx]] == col0[idx]
 		Assert.assertEquals("[6, 0, 3, 7, 9, 4, 5, 1, 8, 2]", mapping0to1.toString());
@@ -197,8 +200,10 @@ public class CSVTableTest {
 	
 	@Test
 	public void testIndexWithMissing() {
-		List<String> col0 = new ArrayList<String>(Arrays.asList(new String[] {"a","b","c","d","e","f","g","h","i","j"}));
-		List<String> col2 = new ArrayList<String>(Arrays.asList(new String[] {"b","h","c","y","f","g","x","a","e"}));
+		RectTabColumn col0 = RectTabColumn.createColumn(
+				new ArrayList<String>(Arrays.asList(new String[] {"a","b","c","d","e","f","g","h","i","j"})));
+		RectTabColumn col2 = RectTabColumn.createColumn(
+				new ArrayList<String>(Arrays.asList(new String[] {"b","h","c","y","f","g","x","a","e"})));
 		List<Integer> mapping0to2 = RectangularTable.getMapping0to1(col0, col2);
 		// col2[mapping0to2[idx]] == col0[idx]
 		Assert.assertEquals("[7, 0, 2, null, 8, 4, 5, 1, null, null]", mapping0to2.toString());
@@ -278,11 +283,11 @@ public class CSVTableTest {
 		csvTable1.addRow(new ArrayList<String>(Arrays.asList(new String[]{"a5","d5",""})));
 		csvTable1.addRow(new ArrayList<String>(Arrays.asList(new String[]{"a2","d1","e1"})));
 		csvTable1.addRow(new ArrayList<String>(Arrays.asList(new String[]{"a1","d8",""})));
-		Iterable<Entry<String>> entriesA = csvTable1.extractSortedMultisetList("A");
+		Iterable<Entry<String>> entriesA = csvTable1.extractSortedMultisetListForColumn("A");
 		Assert.assertEquals("[a2 x 2, a1, a3, a5, a0]", entriesA.toString());
-		Iterable<Entry<String>> entriesD = csvTable1.extractSortedMultisetList("D");
+		Iterable<Entry<String>> entriesD = csvTable1.extractSortedMultisetListForColumn("D");
 		Assert.assertEquals("[d5, d8, d0, d1, d2, d3]", entriesD.toString());
-		Iterable<Entry<String>> entriesE = csvTable1.extractSortedMultisetList("E");
+		Iterable<Entry<String>> entriesE = csvTable1.extractSortedMultisetListForColumn("E");
 		Assert.assertEquals("[ x 2, e0, e1, e2, e3]", entriesE.toString());
 	}
 

@@ -3,6 +3,7 @@ package org.contentmine.norma.sections;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.graphics.html.HtmlElement;
+import org.contentmine.graphics.html.HtmlTr;
 
 import nu.xom.Element;
 
@@ -17,4 +18,12 @@ public class JATSTrElement extends AbstractJATSHtmlElement {
     public JATSTrElement(Element element) {
         super(element);
     }
+    
+	/** HTMLEquivalent
+	 */
+	@Override
+	public HtmlElement createHTML() {
+		return deepCopyAndTransform(new HtmlTr());
+	}
+
 }

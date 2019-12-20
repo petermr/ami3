@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200.0"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     height="800.0" style="stroke:none;stroke-width:0.0;">
+     <!-- American Society for Gene Therapy -->
+     <script type="text/javascript"><![CDATA[
+       var KEY = { w:87, a:65, s:83, d:68 };
+       var moveSpeed = 5;
+       var rect = document.getElementsByTagName("main.body.box")[0];
+	   alert("RECT")	   
+       var x = rect.getAttribute('x')*1,
+           y = rect.getAttribute('y')*1;
+       document.documentElement.addEventListener('keydown',function(evt){
+         switch (evt.keyCode){
+		   alert("A")
+           case KEY.w:
+             rect.setAttribute('cy',y-=moveSpeed);
+           break;
+           case KEY.s:
+             rect.setAttribute('cy',y+=moveSpeed);
+           break;
+           case KEY.a:
+             rect.setAttribute('cx',x-=moveSpeed);
+           break;
+           case KEY.d:
+             rect.setAttribute('cx',x+=moveSpeed);
+           break;
+         }
+       },false);
+     ]]></script>
+	 
+    <rect id="mediabox" class="mediabox" x="0" y="0" width="520" height="700"
+	 style="fill:none;stroke:blue;stroke-width:1.0;"/>
+	<defs>
+      <g id="main.leftDoubleColumn" class="column expandable.ymax expandable.ymin">
+		 <title>main.leftDoubleColumn</title>
+		<rect x="14" y="55" width="241" height="590"
+		 style="fill:purple;opacity:0.3;stroke-width:0.5;stroke:black;stroke-dasharray:5 2 5 2;">
+			 </rect>
+      </g>
+	</defs>
+    <g class="main" id="main">
+      <g id="main.body" class="body">
+  	    <!-- height varies slightly between pages page 1 narrow + wide, others narrow?, wide -->	  
+		 <title>main.body</title>
+        <rect id="main.body.box" class="fixed" x="14" y="42" width="497" height="661"
+         style="fill:green;opacity:0.3;stroke-width:1.0;stroke:blue;">
+         </rect>
+		 <use xlink:ref="#leftDoubleColumn"/>
+		 <!--
+	      <g id="main.leftDoubleColumn" class="column expandable.ymax expandable.ymin">
+			 <title>main.leftDoubleColumn</title>
+			<rect x="14" y="55" width="241" height="590"
+			 style="fill:purple;opacity:0.3;stroke-width:0.5;stroke:black;stroke-dasharray:5 2 5 2;">
+			 </rect>
+	      </g>
+		  -->
+	      <g id="main.rightDoubleColumn" class="column expandable.ymax expandable.ymin">
+			<title>main.rightDoubleColumn</title>
+			<rect x="268.0" y="55" width="241" height="590" 
+			  style="fill:purple;opacity:0.3;stroke-width:2.0;stroke:black;stroke-dasharray:5 5;">
+			 </rect>
+		  </g>
+		  <g id="main.wideFloat" class="table expandable.ymax expandable.ymin">
+			 <title>main.wideFloat</title>
+			<rect  x="14" y="200" width="497" height="100"
+			 style="fill:orange;opacity:0.3;">
+	        </rect>
+	      </g>
+		  <g id="main.leftColumnFloat" class="table">
+			 <title>main.leftColumnFloat</title>
+			<rect class="expandable.ymax expandable.ymin" x="14" y="350" width="241" height="160"
+			 style="fill:orange;opacity:0.3;stroke-width:0.5;stroke:black;">
+			 </rect>
+			 <g id="main.leftColumnFloat.caption" class="caption">
+			   <title>main.leftColumnFloat.caption</title>
+			  <rect class="expandable.ymax expandable.ymin" x="14" y="450" width="241" height="50"
+			     style="fill:red;opacity:0.3;stroke-width:1;stroke:blue;">
+			  </rect>
+			 </g>
+	      </g>
+		  <g id="main.rightColumnFloat" class="table">
+			 <title>main.rightColumnFloat</title>
+			<rect class="expandable.ymax expandable.ymin" x="268" y="400" width="241" height="160"
+			 style="fill:orange;opacity:0.3;">
+			 </rect>
+	      </g>
+      </g>
+    </g>
+</svg>

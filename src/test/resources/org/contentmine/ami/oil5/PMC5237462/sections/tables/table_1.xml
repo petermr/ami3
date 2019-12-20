@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<table-wrap id="tab1" orientation="portrait" position="float" class="table-wrap">
- <label class="label">Table 1</label>
- <caption class="caption">
-  <p class="p">Major constituents of the essential oils of 
-   <italic class="italic">M. piperita</italic>.
+<table-wrap id="tab1" orientation="portrait" position="float">
+ <label>Table 1</label>
+ <caption>
+  <p>Major constituents of the essential oils of 
+   <italic>M. piperita</italic>.
   </p>
  </caption>
- <table frame="hsides" rules="groups" class="table">
-  <thead xmlns="http://www.w3.org/1999/xhtml">
+ <table frame="hsides" rules="groups">
+  <thead>
    <tr>
     <th align="left" rowspan="1" colspan="1">Number</th>
     <th align="center" rowspan="1" colspan="1">tR (min)</th>
@@ -16,7 +16,7 @@
     <th align="center" rowspan="1" colspan="1">Peak Area (%)</th>
    </tr>
   </thead>
-  <tbody xmlns="http://www.w3.org/1999/xhtml">
+  <tbody>
    <tr>
     <td align="left" rowspan="1" colspan="1">1</td>
     <td align="center" rowspan="1" colspan="1">8.88</td>
@@ -36,7 +36,7 @@
     <td align="center" rowspan="1" colspan="1">9.96</td>
     <td align="center" rowspan="1" colspan="1">979</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">β</italic>-Pinene
+     <italic>β</italic>-Pinene
     </td>
     <td align="center" rowspan="1" colspan="1">3.8</td>
    </tr>
@@ -52,7 +52,7 @@
     <td align="center" rowspan="1" colspan="1">13.20</td>
     <td align="center" rowspan="1" colspan="1">1177</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">β</italic>-Ocimene
+     <italic>β</italic>-Ocimene
     </td>
     <td align="center" rowspan="1" colspan="1">0.4</td>
    </tr>
@@ -100,7 +100,7 @@
    </tr>
    <tr>
     <td align="center" colspan="5" rowspan="1">
-     <span class="hr"/>
+     <hr/>
     </td>
    </tr>
    <tr>
@@ -126,26 +126,26 @@
    </tr>
    <tr>
     <td align="center" colspan="5" rowspan="1">
-     <span class="hr"/>
+     <hr/>
     </td>
    </tr>
    <tr>
     <td align="left" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">Total</italic>
+     <italic>Total</italic>
     </td>
     <td align="center" rowspan="1" colspan="1"> </td>
     <td align="center" rowspan="1" colspan="1"> </td>
     <td align="center" rowspan="1" colspan="1"> </td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">94.9</italic>
+     <italic>94.9</italic>
     </td>
    </tr>
   </tbody>
  </table>
- <table-wrap-foot class="table-wrap-foot">
-  <fn class="fn">
-   <p class="p">tR: retention time; KI: Kovats Index [
-    <xref rid="B13" ref-type="bibr" class="xref">13</xref>].
+ <table-wrap-foot>
+  <fn>
+   <p>tR: retention time; KI: Kovats Index [
+    <xref rid="B13" ref-type="bibr">13</xref>].
    </p>
   </fn>
  </table-wrap-foot>

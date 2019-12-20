@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- saved from url=(0101)file:///Users/pm286/workspace/cmdev/svghtml/src/main/resources/org/xmlcml/layout/d3test1/middle3.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>d3.js range selection with drag</title>
+	<link rel="stylesheet" type="text/css" href="../d3test1/styles.css">
+	<style>
+		input {color:grey;background-color:pink;font-weight:normal;}
+	</style>
+</head>
+<body>
+	<div id="option">
+	    <input name="doiButton" class="doi" color="blue" value="DOI" onclick="selectDOI()" type="button"/>
+	    <input name="titleButton" class="title" value="Title" onclick="selectTitle()" type="button"/>
+	    <input name="authorsButton" class="author" value="Auth" onclick="selectAuth()" type="button"/>
+	    <input name="affilButton" class="affil" value="Affil" onclick="selectAffil()" type="button"/>
+	    <input name="emailButton" class="email" value="Email" onclick="selectEmail()" type="button"/>
+	    <input name="abstractButton" class="abst" value="Abst" onclick="selectAbstract()" type="button"/>
+	    <input name="leftColButton" class="lCol" value="Col" onclick="selectColumn()" type="button"/>
+	    <input name="sectionHeadButton" class="sectionHead" value="SHead" onclick="selectSectionHead()" type="button"/>
+	    <input name="sectionSubHeadButton" class="subSectionHead" value="SubHd" onclick="selectSubSectionHead()" type="button"/>
+	    <input name="biblioButton" class="biblio" value="Bib" onclick="selectBiblio()" type="button"/>
+	    <input name="pageButton" class="page" value="Page" onclick="selectPage()" type="button"/>
+	    <input name="figureButton" class="figure" value="Fig" onclick="selectFigure()" type="button"/>
+	    <input name="figureCaptionButton" class="figureCaption" value="fCap" onclick="selectFigureCaption()" type="button"/>
+	    <input name="tableButton" class="table" value="Table" onclick="selectTable()" type="button"/>
+	    <input name="tableTitleButton" class="tableTitle" value="TTitl" onclick="selectTableTitle()" type="button"/>
+	    <input name="tableHeaderButton" class="tableHead" value="THead" onclick="selectTableHead()" type="button"/>
+	    <input name="tableBodyButton" class="table" value="TBody" onclick="selectTableBody()" type="button"/>
+	    <input name="tableFooterButton" class="table" value="TFoot" onclick="selectTableFoot()" type="button"/>
+	    <input name="mathsButton" class="math" value="Math" onclick="selectMaths()" type="button"/>
+	    <input name="referenceButton" class="references" value="Refs" onclick="selectReferences()" type="button"/>
+	</div>
+<p id="attributestext" style="position:absolute; background-color:pink; margin-left:100px; pointer-events: none;">x1: 0 x2: 0 y1: 0 y2: 0</p>
+<p id="messagetext" style="position:absolute; margin-left:600px; pointer-events: none;">message</p>
+<!-- SVG goes here -->
+
+<script src="../d3test1/d3.v3.min.js"></script>
+<script src="../d3test1/annotatePage.js"></script>
+
+</body></html>

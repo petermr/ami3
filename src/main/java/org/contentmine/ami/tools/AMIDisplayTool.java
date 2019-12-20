@@ -178,7 +178,7 @@ public class AMIDisplayTool extends AbstractAMITool {
 	
 	private void summarizeFiles() {
 		if (summaryFileList != null) {
-			HtmlHtml html = new HtmlHtml();
+			HtmlHtml html = HtmlHtml.createUTF8Html();
 			HtmlBody body = html.getOrCreateBody();
 			HtmlUl ul = new HtmlUl();
 			body.appendChild(ul);

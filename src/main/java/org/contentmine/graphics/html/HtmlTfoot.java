@@ -16,7 +16,11 @@
 
 package org.contentmine.graphics.html;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.apache.log4j.Logger;
+import org.contentmine.graphics.html.util.HtmlUtil;
 
 
 /** base class for lightweight generic SVG element.
@@ -36,5 +40,13 @@ public class HtmlTfoot extends HtmlElement {
 		super(TAG);
 	}
 	
+	public List<HtmlTr> getRows() {
+		List<HtmlTr> trList = new ArrayList<>();
+		List<HtmlElement> rows = HtmlUtil.getQueryHtmlElements(this, "./*[local-name()='"+HtmlTr.TAG+"']");
+		for (HtmlElement row : rows) {
+			trList.add((HtmlTr) row);
+		}
+		return trList;
+	}
 	
 }

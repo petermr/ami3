@@ -35,6 +35,7 @@ import org.contentmine.graphics.html.HtmlTfoot;
 import org.contentmine.graphics.html.HtmlTh;
 import org.contentmine.graphics.html.HtmlThead;
 import org.contentmine.graphics.html.HtmlTr;
+import org.contentmine.graphics.html.HtmlTrContainer;
 import org.contentmine.graphics.html.HtmlUl;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
@@ -106,7 +107,7 @@ public class TableStructurer {
 	private List<SVGRect> spanningRects;
 	private SVGRect outerRect;
 	private List<SVGRect> rectList;
-	private HtmlThead thead;
+	private HtmlTrContainer thead;
 	private HtmlUl titleUl;
 
 	
@@ -173,7 +174,7 @@ public class TableStructurer {
 	}
 
 	private HtmlHtml createHtmlWithTable() {
-		html = new HtmlHtml();
+		html = HtmlHtml.createUTF8Html();
 		createHtmlHead();
 		createHtmlTable();
 		html.appendChild(htmlTable);

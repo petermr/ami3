@@ -22,6 +22,7 @@ import org.contentmine.cproject.metadata.AbstractMetadata;
 import org.contentmine.cproject.metadata.MetadataManager;
 import org.contentmine.cproject.metadata.MetadataObjects;
 import org.contentmine.cproject.util.CMineUtil;
+import org.contentmine.cproject.util.RectTabColumn;
 import org.contentmine.cproject.util.RectangularTable;
 import org.junit.Assert;
 import org.junit.Ignore;
@@ -187,8 +188,8 @@ public class CrossrefLongTest {
 		int i = 1;
 		File file = new File(CMineFixtures.GETPAPERS_NEW, "crossref_a_"+i+".csv");
 		RectangularTable table = RectangularTable.readCSVTable(file, true);
-		List<String> dois = table.getColumn(MetadataManager.DOI);
-		allDois.addAll(dois);
+		RectTabColumn dois = table.getColumn(MetadataManager.DOI);
+		allDois.addAll(dois.getValues());
 		String doisS = CMineUtil.getEntriesSortedByCount(allDois).toString();
 		Assert.assertEquals(12141, allDois.size());
 	}

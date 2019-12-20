@@ -24,6 +24,7 @@ import junit.framework.Assert;
  *
  */
 public class MathCacheTest {
+	private static final File OUTDIR = new File("target/demos/varga/");
 	public static final Logger LOG = Logger.getLogger(MathCacheTest.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
@@ -46,7 +47,7 @@ public class MathCacheTest {
 	}
 		
 	@Test
-	@Ignore
+//	@Ignore
 	public void testLines() {
 		File svgFile = new File(SVGHTMLFixtures.G_S_MATH_DIR, "equations7.svg");
 		ComponentCache cache = new ComponentCache();
@@ -63,10 +64,10 @@ public class MathCacheTest {
 	}
 		
 	@Test
-	@Ignore
+//	@Ignore
 	public void testIndents() {
 		File svgFile = new File(SVGHTMLFixtures.G_S_MATH_DIR, "equations7.svg");
-		File targetDir = new File("target/demos/varga/");
+		File targetDir = OUTDIR;
 		ComponentCache componentCache = new ComponentCache();
 		componentCache.readGraphicsComponentsAndMakeCaches(svgFile);
 		MathCache mathCache = componentCache.getOrCreateMathCache();
@@ -80,13 +81,14 @@ public class MathCacheTest {
 	}
 
 	@Test
-	@Ignore
+	@Ignore // not yet written
 	public void testJoinLinesAtIndents() {
 		File svgFile = new File(SVGHTMLFixtures.G_S_MATH_DIR, "equations7.svg");
-		File targetDir = new File("target/demos/varga/");
+		File targetDir = OUTDIR;
 		ComponentCache componentCache = new ComponentCache();
 		componentCache.readGraphicsComponentsAndMakeCaches(svgFile);
 		TextCache textCache = componentCache.getOrCreateTextCache();
+//		MathCache mathCache = componentCache.getOrCreateMathCache();
 //		SVGTextLineList textLineList = mathCache.createAndJoinTextLineList();
 //		Assert.assertEquals(19, textLineList.size());
 	}

@@ -102,7 +102,7 @@ public class WellIT {
 				XMLUtil.parseQuietlyToRootElement(new FileInputStream(page2svg)));
 		SVGG g = new SVGG();
 		List<SVGText> texts = SVGText.extractSelfAndDescendantTexts(svgElement);
-		HtmlHtml html = new HtmlHtml();
+		HtmlHtml html = HtmlHtml.createUTF8Html();
 		HtmlStyle style = html.getOrCreateHead().getOrCreateHtmlStyle();
 		style.appendChild(" td {border : solid red; font-family : monospace;}");
 		HtmlTable htmlTable = new HtmlTable();
@@ -443,28 +443,6 @@ public class WellIT {
 
 	}
 
-	@Test
-	public void testLargeRenderer() {
-        String[] ctrees = {
-//        		"3br_tab",
-//        		"benevento_002",
-//        		"brsa",
-//
-        	"composto_vec_log",
-//        		"nusco_002",
-//        		"s.croce_001"
-        };
-    	CustomPageDrawer customPageDrawer = new CustomPageDrawer();
-        for (String ctree : ctrees) {
-        	File inDir = new File(WELL_DIR, ctree);
-        	File outDir = new File(inDir, "render");
-    	    try {
-    	    	customPageDrawer.renderFile(inDir, outDir);
-    	    } catch (Exception e) {
-    	    	throw new RuntimeException("exception", e);
-    	    }
-        }
-	}
 	
 	@Test
 	public void testClipNuscoHandriting() {

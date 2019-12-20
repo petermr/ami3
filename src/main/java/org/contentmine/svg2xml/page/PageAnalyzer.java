@@ -419,7 +419,7 @@ public class PageAnalyzer /*extends PageChunkAnalyzer*/ {
 
 	public HtmlElement createHtmlElement() {
 		ensureAbstractContainerList();
-		HtmlHtml html = new HtmlHtml();
+		HtmlHtml html = HtmlHtml.createUTF8Html();
 //		addStyle(html);
 //		HtmlTitle title = new HtmlTitle("Page: "+pageIo.getHumanPageNumber());
 //		html.appendChild(title);

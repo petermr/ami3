@@ -72,7 +72,7 @@ public class AMIOCRTool extends AbstractAMITool implements HasImageDir {
 
 	public static final String IMAGE_DOT = "image.";
 	
-	public static final Logger LOG = Logger.getLogger(AMIOCRTool.class);
+	private static final Logger LOG = Logger.getLogger(AMIOCRTool.class);
 
 	/** not yet used*/
 	public enum LineDir {

@@ -3,6 +3,9 @@ package org.contentmine.norma.sections;
 import java.util.Arrays;
 import java.util.List;
 
+import org.contentmine.graphics.html.HtmlElement;
+import org.contentmine.graphics.html.HtmlP;
+
 import nu.xom.Element;
 
 public class JATSFnElement extends JATSElement implements IsBlock {
@@ -30,5 +33,15 @@ public class JATSFnElement extends JATSElement implements IsBlock {
 	public JATSFnElement(Element element) {
 		super(element);
 	}
+	/** HTMLEquivalent
+	 */
+	@Override
+	public HtmlElement createHTML() {
+		HtmlP p = new HtmlP();
+		p.setClassAttribute(this.TAG);
+		p.setCharset("fn");
+		return deepCopyAndTransform(p);
+	}
 
+	
 }

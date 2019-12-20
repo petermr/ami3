@@ -1,0 +1,40 @@
+<html>
+<head>
+	<style>
+		times,eq,minus,plus {font-size:20;font-weight:bold;margin-left:50 px;}
+		apply {background-colot:red;}
+	</style>
+		
+</head>
+<ul>
+<li>d(Complex <sub>Internal</sub>)/dt<eq>=</eq>Complex <sub>total</sub><times>&#215;</times> <apply><exp/>e<sup>( <minus>-</minus> t)</sup></apply> <minus>-</minus>  k<sub>escape </sub><times>&#215;</times> Complex <sub>Internal</sub>(1)</text>
+
+<li>d(Complex <sub>Cytoplasmic</sub>)/dt<eq>=</eq>k<sub>escape </sub><times>&#215;</times> Complex <sub>Internal </sub><minus>-</minus>  k<sub>bind </sub><times>&#215;</times> Complex <sub>Cytoplasmic</sub> <minus>-</minus>  k<sub>unpack </sub><times>&#215;</times>  Complex <sub>Cytoplasmic</sub>(2)</li>
+
+<li>d(ComplexBound <sub>Cytoplasmic</sub>)/dt<eq>=</eq>k<sub>bind </sub><times>&#215;</times> Complex <sub>Cytoplasmic</sub> <minus>-</minus>  k <sub>NPC</sub><times>&#215;</times> ComplexBound <sub>Cytoplasmic</sub>(3)</li>
+
+<li>d(ComplexBound <sub>NPC</sub>)/dt<eq>=</eq>k <sub>NPC </sub><times>&#215;</times> ComplexBound <sub>Cytoplasmic</sub> <minus>-</minus>  k<sub>In</sub><times>&#215;</times> ComplexBound <sub>NPC</sub>(4)</li>
+ 
+<li>d(ComplexBound <sub>Nuclear</sub>)/dt<eq>=</eq>k<sub>In</sub><times>&#215;</times> ComplexBound <sub>NPC </sub><minus>-</minus>  k<sub>dissociation</sub><times>&#215;</times> ComplexBound <sub>Nuclear</sub>(5)</li>
+ 
+<li>d(Complex <sub>Nuclear</sub>)/dt<eq>=</eq>k<sub>dissociation</sub><times>&#215;</times> ComplexBound <sub>Nuclear</sub> <minus>-</minus>  k<sub>unpack</sub><times>&#215;</times> Complex <sub>Nuclear</sub>(6)</li>
+  
+<li>d(Vector <sub>Nuclear</sub>)/dt<eq>=</eq>k<sub>unpack</sub><times>&#215;</times> Complex <sub>Nuclear</sub> <plus>+</plus> k<sub>dissociation</sub><times>&#215;</times> VectorBound <sub>Nuclear</sub>(7)</li>
+   
+<li>d(Plasmid <sub>Nuclear</sub>)/dt<eq>=</eq>k<sub>unpack</sub><times>&#215;</times> Complex <sub>Nuclear </sub><plus>+</plus> k<sub>dissociation</sub><times>&#215;</times> PlasmidBound <sub>Nuclear</sub>(8)</li>
+  
+<li>d(Vector <sub>Cytoplasmic</sub>)/dt<eq>=</eq>k<sub>unpack</sub><times>&#215;</times> Complex <sub>Cytoplasmic</sub> <minus>-</minus>  k<sub>bind</sub><times>&#215;</times> Vector <sub>Cytoplasmic</sub>(9)</li>
+   
+<li>d(Plasmid <sub>Cytoplasmic</sub>)/dt<eq>=</eq>k<sub>unpack</sub><times>&#215;</times> Complex <sub>Cytoplasmic</sub> <minus>-</minus>  k<sub>bind</sub><times>&#215;</times> Plasmid <sub>Cytoplasmic <minus>-</minus>  k<sub>degradation</sub><times>&#215;</times> Plasmid <sub>Cytoplasmic</sub>(10)</li>
+
+<li>d(PlasmidBound <sub>Cytoplasmic</sub>)/dt<eq>=</eq>k<sub>bind</sub><times>&#215;</times> Plasmid <sub>Cytoplasmic</sub> <minus>-</minus>  k <sub>NPC </sub><times>&#215;</times>PlasmidBound <sub>Cytoplasmic</sub>(11)</li>
+
+<li>d(PlasmidBound <sub>NPC</sub>)/dt<eq>=</eq>k <sub>NPC </sub><times>&#215;</times> PlasmidBound <sub>Cytoplasmic</sub> <minus>-</minus>  k<sub>In</sub><times>&#215;</times> PlasmidBound <sub>NPC</sub>(12)</li>
+
+<li>d(PlasmidBound <sub>Nuclear</sub>)/dt<eq>=</eq>k<sub>In</sub><times>&#215;</times> PlasmidBound <sub>NPC</sub> <minus>-</minus>  k<sub>dissociation</sub><times>&#215;</times> PlasmidBound <sub>Nuclear</sub>(13)</li>
+
+<li>d(X_Plasmid <sub>Cytoplasmic</sub>)/dt<eq>=</eq>k<sub>degradation</sub><times>&#215;</times> Plasmid <sub>Cytoplasmic</sub> <minus>-</minus>  k<sub>bind</sub><times>&#215;</times> X_Plasmid <sub>Cytoplasmic</sub>(14)</li>
+
+<li>d(Protein)/dt<eq>=</eq>k<sub>protein</sub><times>&#215;</times> Plasmid <sub>Nuclear</sub>(15)</li>
+</ul>
+</html>

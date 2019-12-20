@@ -32,8 +32,12 @@ import java.util.List;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;
 import org.contentmine.eucl.euclid.Util;
+import org.contentmine.graphics.html.HtmlB;
 import org.contentmine.graphics.html.HtmlElement;
-import org.contentmine.graphics.html.HtmlHtml;
+import org.contentmine.graphics.html.HtmlI;
+import org.contentmine.graphics.html.HtmlSub;
+import org.contentmine.graphics.html.HtmlSup;
+import org.contentmine.graphics.html.HtmlTr;
 
 import nu.xom.Attribute;
 import nu.xom.Builder;
@@ -1538,6 +1542,117 @@ public abstract class XMLUtil implements XMLConstants {
 				throw new RuntimeException("Cannot write file: "+xmlFile, e);
 			}
 		}
+	}
+
+	public static Element getSingleChild(Element parent, String tag) {
+		return XMLUtil.getSingleElement(parent, "./*[local-name()='"+tag+"']");
+	}
+
+	/** creates a string of recursively concatenated child values.
+	 * for <b>bold</b><i>ital</i>
+	 * returns "bold ital"
+	 * 
+	 * @param element
+	 * @return
+	 */
+	public static String getSpaceSeparatedChildValues(Element element) {
+		StringBuilder sb = new StringBuilder();
+		List<Node> childNodes = XMLUtil.getChildNodes(element);
+		for (Node childNode : childNodes) {
+			sb.append(" ");
+			if (childNode instanceof Element) {
+				sb.append(XMLUtil.getSpaceSeparatedChildValues((Element)childNode));
+			} else {
+				sb.append(childNode.getValue());
+			}
+		}
+		return sb.toString().trim();
+	}
+
+	/** creates a string of recursively concatenated child values.
+	 * for <b>bold</b>x<i>ital</i>
+	 * returns "~~b_bold_b~~x~~i_ital_i~~"
+	 * 
+	 * @param element
+	 * @return
+	 */
+	public static String inlineMarkup(Element element) {
+		StringBuilder sb = new StringBuilder();
+		List<Node> childNodes = XMLUtil.getChildNodes(element);
+		for (Node childNode : childNodes) {
+			sb.append(" ");
+			
+			if (childNode instanceof HtmlSup ||
+				childNode instanceof HtmlSub ||
+				childNode instanceof HtmlI ||
+				childNode instanceof HtmlB 
+				) {
+				HtmlElement childElement = (HtmlElement)childNode;
+				String tag = childElement.getLocalName();
+				String start = makeInlineStart(tag);
+				String end = makeInlineEnd(tag);
+				sb.append(start+XMLUtil.inlineMarkup(childElement)+end);
+			} else if (childNode instanceof Element) {
+				sb.append(XMLUtil.inlineMarkup((Element)childNode));
+			} else {
+				sb.append(childNode.getValue());
+			}
+		}
+		return sb.toString().trim();
+	}
+
+	/** replace style markup by string.
+	 * does not do nesting 
+	 * 
+	 * @param element
+	 * @return
+	 */
+	public static void replaceStyleMarkup(Element element) {
+		List<Node> childNodes = XMLUtil.getChildNodes(element);
+		for (Node childNode : childNodes) {
+			if (childNode instanceof HtmlSup ||
+				childNode instanceof HtmlSub ||
+				childNode instanceof HtmlI ||
+				childNode instanceof HtmlB 
+				) {
+				HtmlElement childElement = (HtmlElement)childNode;
+				String tag = childElement.getLocalName();
+				String start = makeInlineStart(tag);
+				String end = makeInlineEnd(tag);
+				Text text = new Text(start+childElement.getValue()+end);
+				element.replaceChild(childElement, text);
+			} else if (childNode instanceof Element) {
+				replaceStyleMarkup((Element)childNode);
+			} else {
+			}
+		}
+	}
+
+	private static String makeInlineEnd(String tag) {
+		return "_"+tag+"__";
+	}
+
+	private static String makeInlineStart(String tag) {
+		return "__"+tag+"_";
+	}
+
+	/** gets values of nodes from XMLUtil.getQueryNodes()
+	 * 
+	 * @param element
+	 * @param xpath
+	 * @return
+	 */
+	public static List<String> getQueryValues(Element element, String xpath) {
+		List<Node> nodeList = XMLUtil.getQueryNodes(element, xpath);
+		return getStringValues(nodeList);
+	}
+
+	public static List<String> getStringValues(List<Node> nodeList) {
+		List<String> values = new ArrayList<>();
+		for (Node node : nodeList) {
+			values.add(node.getValue());
+		}
+		return values;
 	}
 
 }

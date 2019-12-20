@@ -58,6 +58,7 @@ UNKNOWN nlm: alt-text:
 		*[local-name()='alt-text']
 	" >[<xsl:value-of select='local-name()'/>] <xsl:apply-templates/></xsl:template> 
 
+
 <!--  HTML5 -->
 	<xsl:template match="
 		*[local-name()='a'] | 
@@ -97,19 +98,19 @@ UNKNOWN nlm: alt-text:
 		*[local-name()='table-wrap'] | 
 		*[local-name()='table-wrap-foot'] | 
 		*[local-name()='tbody'] | 
-		*[local-name()='td'] | 
 		*[local-name()='tfoot'] | 
-		*[local-name()='th'] | 
-		*[local-name()='th'] | 
 		*[local-name()='thead'] | 
 		*[local-name()='tr'] |
-		*[local-name()='ul'] 
-		
-		" >
-        <xsl:copy>
-           <xsl:apply-templates select=" * | text()" />
+		*[local-name()='ul'] |
+		*[local-name()='td'] | 
+		*[local-name()='th'] 
+		">
+		<xsl:copy>
+ 		   <xsl:copy-of select="@*"/>
+           <xsl:apply-templates/>
         </xsl:copy>
-        </xsl:template>
+    </xsl:template>
+		
 
 <!--  SVG -->
 	<xsl:template match="
@@ -120,8 +121,9 @@ UNKNOWN nlm: alt-text:
 		*[local-name()='use']
 		
 		" >
-        <xsl:copy>
-           <xsl:apply-templates select=" * | text()" />
+		<xsl:copy>
+ 		   <xsl:copy-of select="@*"/>
+           <xsl:apply-templates/>
         </xsl:copy>
         </xsl:template>
 

@@ -162,9 +162,20 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 		} else if (!mightContain(string)) {
 			return false;
 		} else {
-//			Set<DictionaryTerm> termSet = namesByTerm.keySet();
 			return (rawTermSet == null) ? false : rawTermSet.contains(string);
 		}
+	}
+
+	public Set<String> getRawTermSet() {
+		return rawTermSet;
+	}
+	
+	public Set<String> getRawLowercaseTermSet() {
+		Set<String> lowercaseSet = new HashSet<>();
+		for (String rawTerm : rawTermSet) {
+			lowercaseSet.add(rawTerm.toLowerCase());
+		}
+		return lowercaseSet;
 	}
 
 	private boolean mightContain(String string) {
@@ -178,12 +189,6 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 	public Map<DictionaryTerm, String> getNamesByTerm() {
 		return namesByTerm;
 	}
-
-//	@Override
-//	protected void createFromInputStream(String dictionarySource, InputStream is) throws IOException {
-//		inputStream = is;
-//		this.dictionarySource = dictionarySource;
-//	}
 
 	@Override
 	public List<List<String>> getTrailingWords(String key) {
@@ -273,7 +278,7 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 		readDictionaryElement(dictionaryElement);
 	}
 
-	public void readDictionaryElement(Element dictionaryElement) {
+	public DefaultAMIDictionary readDictionaryElement(Element dictionaryElement) {
 		this.dictionaryElement = dictionaryElement;
 		namesByTerm = new HashMap<DictionaryTerm, String>();
 		rawTermSet = new HashSet<String>();
@@ -303,7 +308,7 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 				// add desc here
 			}
 		}
-		return;
+		return this;
 	}
 
 
@@ -653,6 +658,12 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 	public List<Element> getEntryList() {
 		List<Element> entryList = XMLUtil.getQueryElements(dictionaryElement, "./*[local-name()='" + ENTRY + "']");
 		return entryList;
+	}
+
+	public List<String> getLowercaseTerms() {
+		List<DictionaryTerm> terms = getTermsSortedBySize();
+		LOG.debug("terms "+terms);
+		return null;
 	}
 	
 }

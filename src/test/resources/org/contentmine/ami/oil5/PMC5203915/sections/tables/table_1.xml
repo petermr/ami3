@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<table-wrap id="tab1" orientation="portrait" position="float" class="table-wrap">
- <label class="label">Table 1</label>
- <caption class="caption">
-  <p class="p">Percentage of composition of essential oils from 
-   <italic class="italic">Rhaponticum carthamoides</italic> roots of soil-grown plants (SGR) and hairy roots (HR).
+<table-wrap id="tab1" orientation="portrait" position="float">
+ <label>Table 1</label>
+ <caption>
+  <p>Percentage of composition of essential oils from 
+   <italic>Rhaponticum carthamoides</italic> roots of soil-grown plants (SGR) and hairy roots (HR).
   </p>
  </caption>
- <table frame="hsides" rules="groups" class="table">
-  <thead xmlns="http://www.w3.org/1999/xhtml">
+ <table frame="hsides" rules="groups">
+  <thead>
    <tr>
     <th align="left" rowspan="1" colspan="1">Peak number</th>
     <th align="center" rowspan="1" colspan="1">Constituent</th>
@@ -18,11 +18,11 @@
     <th align="center" rowspan="1" colspan="1">Class of compound</th>
    </tr>
   </thead>
-  <tbody xmlns="http://www.w3.org/1999/xhtml">
+  <tbody>
    <tr>
     <td align="left" rowspan="1" colspan="1">(1)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">α</italic>-Pinene
+     <italic>α</italic>-Pinene
     </td>
     <td align="center" rowspan="1" colspan="1">936</td>
     <td align="center" rowspan="1" colspan="1">931</td>
@@ -51,7 +51,7 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(4)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">α</italic>-Phellandrene
+     <italic>α</italic>-Phellandrene
     </td>
     <td align="center" rowspan="1" colspan="1">1002</td>
     <td align="center" rowspan="1" colspan="1">998</td>
@@ -71,7 +71,7 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(6)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">β</italic>-Phellandrene
+     <italic>β</italic>-Phellandrene
     </td>
     <td align="center" rowspan="1" colspan="1">1023</td>
     <td align="center" rowspan="1" colspan="1">1021</td>
@@ -91,7 +91,7 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(8)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">(E)</italic>-Oct-2-enal
+     <italic>(E)</italic>-Oct-2-enal
     </td>
     <td align="center" rowspan="1" colspan="1">1034</td>
     <td align="center" rowspan="1" colspan="1">1032</td>
@@ -111,7 +111,7 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(10)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">(E)</italic>-Non-2-enal
+     <italic>(E)</italic>-Non-2-enal
     </td>
     <td align="center" rowspan="1" colspan="1">1139</td>
     <td align="center" rowspan="1" colspan="1">1136</td>
@@ -149,8 +149,8 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(14)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">(E</italic>,
-     <italic class="italic" xmlns="">E)</italic>-Deca-2,4-dienal
+     <italic>(E</italic>,
+     <italic>E)</italic>-Deca-2,4-dienal
     </td>
     <td align="center" rowspan="1" colspan="1">1291</td>
     <td align="center" rowspan="1" colspan="1">1288</td>
@@ -170,22 +170,22 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(16)</td>
     <td align="center" rowspan="1" colspan="1">
-     <bold class="bold" xmlns="">13-Norcypera-1(5),11(12)-diene</bold>
+     <bold>13-Norcypera-1(5),11(12)-diene</bold>
     </td>
     <td align="center" rowspan="1" colspan="1">1352</td>
     <td align="center" rowspan="1" colspan="1">1349</td>
     <td align="center" rowspan="1" colspan="1">
-     <bold class="bold" xmlns="">1.4</bold>
+     <bold>1.4</bold>
     </td>
     <td align="center" rowspan="1" colspan="1">
-     <bold class="bold" xmlns="">15.3</bold>
+     <bold>15.3</bold>
     </td>
     <td align="center" rowspan="1" colspan="1">SH</td>
    </tr>
    <tr>
     <td align="left" rowspan="1" colspan="1">(17)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">α</italic>-Longipinene
+     <italic>α</italic>-Longipinene
     </td>
     <td align="center" rowspan="1" colspan="1">1360</td>
     <td align="center" rowspan="1" colspan="1">1360</td>
@@ -214,7 +214,7 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(20)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">α</italic>-Copaene
+     <italic>α</italic>-Copaene
     </td>
     <td align="center" rowspan="1" colspan="1">1379</td>
     <td align="center" rowspan="1" colspan="1">1376</td>
@@ -225,7 +225,7 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(21)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">α</italic>-Funebrene
+     <italic>α</italic>-Funebrene
     </td>
     <td align="center" rowspan="1" colspan="1">1385</td>
     <td align="center" rowspan="1" colspan="1">1382</td>
@@ -236,12 +236,12 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(22)</td>
     <td align="center" rowspan="1" colspan="1">
-     <bold class="bold" xmlns="">Petasitene</bold>
+     <bold>Petasitene</bold>
     </td>
     <td align="center" rowspan="1" colspan="1">1398</td>
     <td align="center" rowspan="1" colspan="1">1398</td>
     <td align="center" rowspan="1" colspan="1">
-     <bold class="bold" xmlns="">4.3</bold>
+     <bold>4.3</bold>
     </td>
     <td align="center" rowspan="1" colspan="1">—</td>
     <td align="center" rowspan="1" colspan="1">SH</td>
@@ -249,7 +249,7 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(23)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">β</italic>-Elemene
+     <italic>β</italic>-Elemene
     </td>
     <td align="center" rowspan="1" colspan="1">1389</td>
     <td align="center" rowspan="1" colspan="1">1389</td>
@@ -269,15 +269,15 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(25)</td>
     <td align="center" rowspan="1" colspan="1">
-     <bold class="bold" xmlns="">Cyperene</bold>
+     <bold>Cyperene</bold>
     </td>
     <td align="center" rowspan="1" colspan="1">1404</td>
     <td align="center" rowspan="1" colspan="1">1404</td>
     <td align="center" rowspan="1" colspan="1">
-     <bold class="bold" xmlns="">2.6</bold>
+     <bold>2.6</bold>
     </td>
     <td align="center" rowspan="1" colspan="1">
-     <bold class="bold" xmlns="">18.2</bold>
+     <bold>18.2</bold>
     </td>
     <td align="center" rowspan="1" colspan="1">SH</td>
    </tr>
@@ -293,7 +293,7 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(27)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">α</italic>-Cedrene
+     <italic>α</italic>-Cedrene
     </td>
     <td align="center" rowspan="1" colspan="1">1418</td>
     <td align="center" rowspan="1" colspan="1">1415</td>
@@ -304,7 +304,7 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(28)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">β</italic>-Caryophyllene
+     <italic>β</italic>-Caryophyllene
     </td>
     <td align="center" rowspan="1" colspan="1">1420</td>
     <td align="center" rowspan="1" colspan="1">1418</td>
@@ -315,16 +315,16 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(29)</td>
     <td align="center" rowspan="1" colspan="1">
-     <bold class="bold" xmlns="">
-      <italic class="italic">trans</italic>-
+     <bold>
+      <italic>trans</italic>-
      </bold>
-     <bold class="bold" xmlns="">α</bold>
-     <bold class="bold" xmlns="">-Bergamotene</bold>
+     <bold>α</bold>
+     <bold>-Bergamotene</bold>
     </td>
     <td align="center" rowspan="1" colspan="1">1434</td>
     <td align="center" rowspan="1" colspan="1">1433</td>
     <td align="center" rowspan="1" colspan="1">
-     <bold class="bold" xmlns="">4.2</bold>
+     <bold>4.2</bold>
     </td>
     <td align="center" rowspan="1" colspan="1">—</td>
     <td align="center" rowspan="1" colspan="1">SH</td>
@@ -341,7 +341,7 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(31)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">β</italic>-Helmiscapene
+     <italic>β</italic>-Helmiscapene
     </td>
     <td align="center" rowspan="1" colspan="1">1446</td>
     <td align="center" rowspan="1" colspan="1">1443</td>
@@ -352,7 +352,7 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(32)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">α</italic>-Helmiscapene
+     <italic>α</italic>-Helmiscapene
     </td>
     <td align="center" rowspan="1" colspan="1">1447</td>
     <td align="center" rowspan="1" colspan="1">1447</td>
@@ -363,8 +363,8 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(33)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">(Z)</italic>-
-     <italic class="italic" xmlns="">β</italic>-Farnesene
+     <italic>(Z)</italic>-
+     <italic>β</italic>-Farnesene
     </td>
     <td align="center" rowspan="1" colspan="1">1447</td>
     <td align="center" rowspan="1" colspan="1">1447</td>
@@ -375,7 +375,7 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(34)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">α</italic>-Humulene
+     <italic>α</italic>-Humulene
     </td>
     <td align="center" rowspan="1" colspan="1">1455</td>
     <td align="center" rowspan="1" colspan="1">1453</td>
@@ -386,7 +386,7 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(35)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">β</italic>-Santalene
+     <italic>β</italic>-Santalene
     </td>
     <td align="center" rowspan="1" colspan="1">1457</td>
     <td align="center" rowspan="1" colspan="1">1455</td>
@@ -415,7 +415,7 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(38)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">α</italic>-Acoradiene
+     <italic>α</italic>-Acoradiene
     </td>
     <td align="center" rowspan="1" colspan="1">1464</td>
     <td align="center" rowspan="1" colspan="1">1464</td>
@@ -426,7 +426,7 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(39)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">γ</italic>-Gurjunene
+     <italic>γ</italic>-Gurjunene
     </td>
     <td align="center" rowspan="1" colspan="1">1472</td>
     <td align="center" rowspan="1" colspan="1">1468</td>
@@ -446,14 +446,14 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(41)</td>
     <td align="center" rowspan="1" colspan="1">
-     <bold class="bold" xmlns="">Dauca-4(11),8-diene</bold>
+     <bold>Dauca-4(11),8-diene</bold>
     </td>
     <td align="center" rowspan="1" colspan="1">1530
-     <sup class="sup" xmlns="">a</sup>
+     <sup>a</sup>
     </td>
     <td align="center" rowspan="1" colspan="1">1472</td>
     <td align="center" rowspan="1" colspan="1">
-     <bold class="bold" xmlns="">10.2</bold>
+     <bold>10.2</bold>
     </td>
     <td align="center" rowspan="1" colspan="1">—</td>
     <td align="center" rowspan="1" colspan="1">SH</td>
@@ -461,12 +461,12 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(42)</td>
     <td align="center" rowspan="1" colspan="1">
-     <bold class="bold" xmlns="">Nardosina-1(10),11-diene</bold>
+     <bold>Nardosina-1(10),11-diene</bold>
     </td>
     <td align="center" rowspan="1" colspan="1">1484</td>
     <td align="center" rowspan="1" colspan="1">1479</td>
     <td align="center" rowspan="1" colspan="1">
-     <bold class="bold" xmlns="">20.7</bold>
+     <bold>20.7</bold>
     </td>
     <td align="center" rowspan="1" colspan="1">—</td>
     <td align="center" rowspan="1" colspan="1">SH</td>
@@ -474,7 +474,7 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(43)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">β</italic>-Selinene
+     <italic>β</italic>-Selinene
     </td>
     <td align="center" rowspan="1" colspan="1">1486</td>
     <td align="center" rowspan="1" colspan="1">1484</td>
@@ -494,7 +494,7 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(45)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">α</italic>-Muurolene
+     <italic>α</italic>-Muurolene
     </td>
     <td align="center" rowspan="1" colspan="1">1496</td>
     <td align="center" rowspan="1" colspan="1">1495</td>
@@ -514,7 +514,7 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(47)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">β</italic>-Bisabolene
+     <italic>β</italic>-Bisabolene
     </td>
     <td align="center" rowspan="1" colspan="1">1503</td>
     <td align="center" rowspan="1" colspan="1">1500</td>
@@ -525,8 +525,8 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(48)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">(Z)</italic>-
-     <italic class="italic" xmlns="">γ</italic>-Bisabolene
+     <italic>(Z)</italic>-
+     <italic>γ</italic>-Bisabolene
     </td>
     <td align="center" rowspan="1" colspan="1">1505</td>
     <td align="center" rowspan="1" colspan="1">1506</td>
@@ -546,7 +546,7 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(50)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">δ</italic>-Cadinene
+     <italic>δ</italic>-Cadinene
     </td>
     <td align="center" rowspan="1" colspan="1">1520</td>
     <td align="center" rowspan="1" colspan="1">1514</td>
@@ -566,7 +566,7 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(52)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">α</italic>-Calacorene
+     <italic>α</italic>-Calacorene
     </td>
     <td align="center" rowspan="1" colspan="1">1527</td>
     <td align="center" rowspan="1" colspan="1">1529</td>
@@ -577,7 +577,7 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(53)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">(E)</italic>-Nerolidol
+     <italic>(E)</italic>-Nerolidol
     </td>
     <td align="center" rowspan="1" colspan="1">1553</td>
     <td align="center" rowspan="1" colspan="1">1545</td>
@@ -588,7 +588,7 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(54)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">β</italic>-Caryophyllene oxide
+     <italic>β</italic>-Caryophyllene oxide
     </td>
     <td align="center" rowspan="1" colspan="1">1578</td>
     <td align="center" rowspan="1" colspan="1">1571</td>
@@ -599,7 +599,7 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(55)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">α</italic>-Corocalene
+     <italic>α</italic>-Corocalene
     </td>
     <td align="center" rowspan="1" colspan="1">1602</td>
     <td align="center" rowspan="1" colspan="1">1602</td>
@@ -619,20 +619,20 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(57)</td>
     <td align="center" rowspan="1" colspan="1">
-     <bold class="bold" xmlns="">2,5,8-Trimethyl-1-naphthol</bold>
+     <bold>2,5,8-Trimethyl-1-naphthol</bold>
     </td>
     <td align="center" rowspan="1" colspan="1">—</td>
     <td align="center" rowspan="1" colspan="1">1635</td>
     <td align="center" rowspan="1" colspan="1">1.1</td>
     <td align="center" rowspan="1" colspan="1">
-     <bold class="bold" xmlns="">9.6</bold>
+     <bold>9.6</bold>
     </td>
     <td align="center" rowspan="1" colspan="1">O</td>
    </tr>
    <tr>
     <td align="left" rowspan="1" colspan="1">(58)</td>
     <td align="center" rowspan="1" colspan="1">
-     <italic class="italic" xmlns="">β</italic>-Himachalol
+     <italic>β</italic>-Himachalol
     </td>
     <td align="center" rowspan="1" colspan="1">1638</td>
     <td align="center" rowspan="1" colspan="1">1634</td>
@@ -643,25 +643,25 @@
    <tr>
     <td align="left" rowspan="1" colspan="1">(59)</td>
     <td align="center" rowspan="1" colspan="1">
-     <bold class="bold" xmlns="">Cadalene</bold>
+     <bold>Cadalene</bold>
     </td>
     <td align="center" rowspan="1" colspan="1">1659</td>
     <td align="center" rowspan="1" colspan="1">1658</td>
     <td align="center" rowspan="1" colspan="1">0.6</td>
     <td align="center" rowspan="1" colspan="1">
-     <bold class="bold" xmlns="">7.2</bold>
+     <bold>7.2</bold>
     </td>
     <td align="center" rowspan="1" colspan="1">SH</td>
    </tr>
    <tr>
     <td align="left" rowspan="1" colspan="1">(60)</td>
     <td align="center" rowspan="1" colspan="1">
-     <bold class="bold" xmlns="">Aplotaxene</bold>
+     <bold>Aplotaxene</bold>
     </td>
     <td align="center" rowspan="1" colspan="1">1659</td>
     <td align="center" rowspan="1" colspan="1">1659</td>
     <td align="center" rowspan="1" colspan="1">
-     <bold class="bold" xmlns="">27.3 </bold>
+     <bold>27.3 </bold>
     </td>
     <td align="center" rowspan="1" colspan="1">t</td>
     <td align="center" rowspan="1" colspan="1">O</td>
@@ -735,15 +735,15 @@
    </tr>
   </tbody>
  </table>
- <table-wrap-foot class="table-wrap-foot">
-  <fn class="fn">
-   <p class="p">The concentrations of the main compounds were signified in bold.</p>
+ <table-wrap-foot>
+  <fn>
+   <p>The concentrations of the main compounds were signified in bold.</p>
   </fn>
-  <fn class="fn">
-   <p class="p">RI: relative retention index on Rtx-1 column, RI lit: relative retention index of literature.</p>
+  <fn>
+   <p>RI: relative retention index on Rtx-1 column, RI lit: relative retention index of literature.</p>
   </fn>
-  <fn class="fn">
-   <p class="p">t: traces (percentage value less than 0.05%).</p>
+  <fn>
+   <p>t: traces (percentage value less than 0.05%).</p>
   </fn>
  </table-wrap-foot>
 </table-wrap>

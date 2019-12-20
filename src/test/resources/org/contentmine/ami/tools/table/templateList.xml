@@ -1,0 +1,100 @@
+<templateList case="insensitive">
+    <!--  filename of table -->
+	<file >
+	  <query>
+	      ^.*\/table_\d+\.xml$
+	  </query>
+	</file>
+
+<!-- composition table (percentage of compounds in oils)
+ -->
+	<template name="composition">
+	    <variable name="@FLOAT@">\-?\d+\.\d+</variable>
+	    <variable name="@FLOAT_ERROR@">@FLOAT@\s*±\s*@FLOAT@</variable>
+	    <variable name="@CHEMICAL@">[A-Za-z0-9\(][A-Za-z0-9\.\-\(\)\s]+[A-Za-z\)]</variable>
+	    <variable name="@CEV@">/Users/pm286/workspace/CEVOpen</variable>
+	    <variable name="@DICTIONARY@">@CEV@/dictionary</variable>
+	    <variable name="@COMPOUND_DICT@">@DICTIONARY@/compound/compound.xml</variable>
+	    <!--  title of table -->
+		<title >
+			  <query case="insensitive">
+				 chemical composition OR
+				 composition of OR
+	             compound composition OR
+	             phytochemical constituents OR
+			     (main|major) (components|constituents|compounds)
+			  </query>
+		</title>
+			 
+		
+		<!-- column to retrieve/extract (names of compounds)-->
+		<column name="compound" case="insensitive" >
+		    <title>
+			    <query>
+				    constituent OR
+				    compound OR
+				    component
+				    NOT activity
+			    </query>
+		    </title>
+			<cell>
+	  		  <query>^@CHEMICAL@$</query>
+	  		  <query mode="lookup">@COMPOUND_DICT@</query>
+			</cell>
+		</column>
+		    
+		<!-- column to retrieve/extract (percentages of compounds)-->
+		<column name="percentage" count="1,*"
+		>
+			<title>
+	  		    <query>
+				    percentage 
+				    OR peak area 
+				    OR ^.*%.*$
+				    NOT activity
+			    </query>
+			</title>
+			<cell>
+			  <query>
+  		        @FLOAT@ OR
+  		        @FLOAT_ERROR@
+			  </query>
+			</cell>
+			<footer>
+			    <query>
+			        Total
+			    </query>
+			</footer>
+		</column>
+	</template>
+	
+	<template name="activity">
+		<title 
+		/>
+		<column name="target" >
+		  <title>
+		  </title>
+		  <cell>
+		    (?-i) [A-Z](\.|[a-z]+)\s+[a-z]+
+		  </cell>
+		</column>
+		<column name="target">
+		  <cell>
+		    (?-i) [A-Z](\.|[a-z]+)\s+[a-z]+
+		  </cell>
+		</column>
+	</template>
+	
+    <template name="mic">
+		<title 
+		/>
+		<column name="activity">
+		  <title>
+		    
+		  </title>
+		  <cell>
+		  </cell>
+		</column>
+	</template>
+	<!--  https://stackoverflow.com/questions/9830506/how-do-you-use-colspan-and-rowspan-in-html-tables/9830847#9830847  -->
+</templateList>

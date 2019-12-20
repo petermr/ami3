@@ -49,9 +49,11 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Enumeration;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.StringTokenizer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -60,10 +62,13 @@ import java.util.stream.Collectors;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;
+import org.contentmine.eucl.xml.XMLUtil;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
+
+import nu.xom.Element;
 
 
 /**
@@ -1534,6 +1539,44 @@ public class Util implements EuclidConstants {
 		return s;
 	}
 
+	/**
+	 * replaces all concatenated unicode whitespace characters with a single space
+	 * @param s
+	 * @return
+	 */
+	
+	public static String normalizeUnicodeWhitespaces(String s) {
+		return replaceUnicodeWhitespaces(s, " ");
+	}
+	
+	/**
+	 * see https://stackoverflow.com/questions/58656881/removing-all-non-printing-characters-by-regex#58657001
+	 * All the characters you provided belong to the Separator, space Unicode category, so, you may use
+
+s = s.replaceAll("\\p{Zs}+", " ");
+To replace all horizontal whitespaces with a single regular ASCII space you may use
+
+s = s.replaceAll("\\h+", " ");
+If you want to shrink all Unicode whitespace to a single space
+
+s = s.replaceAll("(?U)\\s+", " "); <<<< uses this with variable replacement, i.e.
+You may split directly with
+
+s.split("\\p{Zs}+")
+or
+
+s.split("(?U)\\s+")
+
+
+s = s.replaceAll("(?U)\\s+", replace);
+	 * @param s
+	 * @param replace string to replace with
+	 * @return
+	 */
+	public static String replaceUnicodeWhitespaces(String s, String replace) {
+		return s == null ? null : s.replaceAll("(?U)\\s+", replace);
+	}
+	
 	/**
 	 * @param s
 	 *            string to be edited
@@ -3338,18 +3381,56 @@ public class Util implements EuclidConstants {
 			try {
 				List<Path> paths = Files.list(Paths.get(dir.toString())).collect(Collectors.toList());
 				for (Path path : paths) {
-					if (regex == null || Pattern.matches(regex, path.toString())) {
+					String pathS = path.toString();
+					if (regex == null || Pattern.matches(regex, pathS)) {
 						fileList.add(path.toFile());
 					}
 				}
 			} catch (IOException e) {
-				throw new RuntimeException("cannot list files", e);
+				throw new RuntimeException("cannot list files in " + dir, e);
 			}
 		}
 		return fileList;
 	}
 
+	/** normalizes all whitespace to single space.
+	 * does not trim
+	 * 
+	 * @param value
+	 * @return null if input is null
+	 */
+	public static String normalizeWhitespace(String value) {
+		return value == null ? null : 
+			value.replaceAll("\n", " ").replaceAll("\\s+", " ");
+	}
 
+	/** returns set with lowercase entries.
+	 * if two entries differ only by case, they are flattened
+	 * @param rawTermSet empty if rawTermSet null
+	 * @return set with lowercase of non-null entries
+	 */
+	public static Set<String> toLowercase(Set<String> rawTermSet) {
+		Set<String> lowercaseSet = new HashSet<>();
+		if (rawTermSet != null) {
+			for (String rawTerm : rawTermSet) {
+				if (rawTerm != null) {
+					lowercaseSet.add(rawTerm.toLowerCase());
+				}
+			}
+		}
+		return lowercaseSet;
+	}
+
+	public static String toString(float[] floats, int ndec) {
+		StringBuilder sb = new StringBuilder();
+		if (floats != null) {
+			for (float f : floats) {
+				sb.append(Util.format(f, ndec));
+				sb.append(" ");
+			}
+		}
+		return sb.toString();
+	}
 
 }
 

@@ -220,6 +220,7 @@ public class AMIWordsTool extends AbstractAMISearchTool {
     @Override
     protected void runSpecifics() {
 		wordArgProcessor = getOrCreateSearchProcessor();
+		abstractSearchArgProcessor = wordArgProcessor;
 		
     	populateArgProcessorFromCLI();
     	createWordListInWordCollectionFactory();
@@ -348,7 +349,7 @@ WS: /
 //	}
 					
 				} catch (Exception e) {
-					CommandProcessor.LOG.error("cannot run command: "+pluginOption +"; " + e.getMessage());
+					LOG.error("cannot run command: "+pluginOption +"; " + e.getMessage());
 					continue;
 				}
 				System.out.println("filter: "+pluginOption);

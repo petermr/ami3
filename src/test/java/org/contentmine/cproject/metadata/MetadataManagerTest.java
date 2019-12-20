@@ -9,6 +9,7 @@ import org.apache.log4j.Logger;
 import org.contentmine.cproject.CMineFixtures;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
+import org.contentmine.cproject.util.RectTabColumn;
 import org.contentmine.cproject.util.RectangularTable;
 import org.junit.Assert;
 import org.junit.Test;
@@ -32,7 +33,7 @@ public class MetadataManagerTest {
 		CProject cProject = new CProject(CMineFixtures.GETPAPERS_SRC);
 		File inputCsvFile = new File(cProject.getDirectory(), "crossref_common.csv");
 		RectangularTable table = RectangularTable.readCSVTable(inputCsvFile, true);
-		List<String> col2 = table.getColumn(MetadataManager.DOI);
+		RectTabColumn col2 = table.getColumn(MetadataManager.DOI);
 		Assert.assertEquals(12141, col2.size());
 		Assert.assertEquals("col02", "10.1002/1873-3468.12075", col2.get(0));
 

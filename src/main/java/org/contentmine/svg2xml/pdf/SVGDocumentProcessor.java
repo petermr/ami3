@@ -153,7 +153,7 @@ public class SVGDocumentProcessor {
 
 	public HtmlHtml readAndConvertToHtml(List<File> svgFiles) {
 		readSVGFilesIntoSortedPageList(svgFiles);
-		HtmlHtml html = new HtmlHtml();
+		HtmlHtml html = HtmlHtml.createUTF8Html();
 		html.getOrCreateHead().addCssStyle(CSS_STYLE);
 		for (SVGSVG svgPage : sortedSvgPageList) {
 			HtmlDiv htmlPage = convertToHtml(svgPage);

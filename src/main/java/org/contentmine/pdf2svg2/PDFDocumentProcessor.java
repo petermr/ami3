@@ -67,6 +67,7 @@ public class PDFDocumentProcessor {
 	private int maxPages;
 	private boolean outputSVG = true;
 	private boolean outputPDFImages = true;
+	private int maxPrimitives = 1000000;
 
 	public PDFDocumentProcessor() {
 		init();
@@ -101,6 +102,7 @@ public class PDFDocumentProcessor {
 		documentParser = new DocumentParser(currentDoc);
 		documentParser.clean();
 		documentParser.parseDocument(this, currentDoc);
+		return;
 	}
 
 	private DocumentParser getOrCreateDocumentParser() {
@@ -115,23 +117,6 @@ public class PDFDocumentProcessor {
 		currentDoc = PDDocument.load(file);
 		return currentDoc;
 	}
-
-
-//	private Map<String, BufferedImage> createRawSubImageList() {
-//		this.pageParser = documentParser.getPageParser();
-//        return pageParser.getOrCreateRawImageList();
-//	}
-
-//	private PDDocument updateCurrentDoc() {
-//		if (currentDoc == null && currentFile != null) {
-//			try {
-//				currentDoc = PDDocument.load(currentFile);
-//			} catch (IOException e) {
-//				throw new RuntimeException("Cannot read currentFile", e);
-//			}
-//		}
-//		return currentDoc;
-//	}
 
 	public PDFDocumentProcessor setFile(File file) {
 		this.currentFile = file;
@@ -316,6 +301,15 @@ public class PDFDocumentProcessor {
 
 	public void setOutputPDFImages(boolean outputPDFImages) {
 		this.outputPDFImages = outputPDFImages;
+	}
+
+	public void setMaxPrimitives(int maxPrimitives) {
+		this.maxPrimitives  = maxPrimitives;
+		
+	}
+
+	public int getMaxPrimitives() {
+		return maxPrimitives;
 	}
 	
 

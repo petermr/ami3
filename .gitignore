@@ -2,7 +2,6 @@
 .settings/
 .project
 .hg/*
-corpus/
 docs/
 examplesOld/
 examplestemp/
@@ -12,4 +11,4 @@ bin/
 src/main/resources/org/xmlcml/ami2/plugins/phylotree/taxdump/
 /target/
 izpackhelp.txt
-
+.idea

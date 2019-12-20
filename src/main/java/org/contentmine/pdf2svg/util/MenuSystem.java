@@ -74,7 +74,7 @@ public class MenuSystem {
 	}
 
 	private void createAndWriteDisplayFile() {
-		HtmlHtml html = new HtmlHtml();
+		HtmlHtml html = HtmlHtml.createUTF8Html();
 		try {
 			File displayFile = new File(outdir, DISPLAY_HTML);
 			XMLUtil.debug(html, new FileOutputStream(displayFile), 1);
@@ -84,7 +84,7 @@ public class MenuSystem {
 	}
 
 	private void createAndWriteIndexFile() {
-		HtmlHtml html = new HtmlHtml();
+		HtmlHtml html = HtmlHtml.createUTF8Html();
 		HtmlFrameset frameset = new HtmlFrameset();
 		html.appendChild(frameset);
 		frameset.setCols(rowWidth+", *");
@@ -107,7 +107,7 @@ public class MenuSystem {
 
 	private void writeFilenamesToMenu(List<File> files) {
 		File relativeParent = outdir;
-		HtmlHtml html1 = new HtmlHtml();
+		HtmlHtml html1 = HtmlHtml.createUTF8Html();
 		ul = new HtmlUl();
 		html1.appendChild(ul);
 		for (File file : files) {

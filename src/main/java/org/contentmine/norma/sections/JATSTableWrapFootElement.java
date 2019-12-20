@@ -2,6 +2,8 @@ package org.contentmine.norma.sections;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.graphics.html.HtmlElement;
+import org.contentmine.graphics.html.HtmlTfoot;
 
 import nu.xom.Element;
 
@@ -39,6 +41,19 @@ public class JATSTableWrapFootElement extends JATSElement implements IsBlock {
 	
 	public JATSTableWrapFootElement(Element element) {
 		super(element);
+	}
+
+	/** creates a tfoot
+	 * @return HtmlTFoot
+	 */
+	@Override
+	public HtmlElement createHTML() {
+		HtmlTfoot tfoot = new HtmlTfoot();
+		for (Element child : this.getChildElementList()) {
+			HtmlElement childHtml = ((JATSElement)child).createHTML();
+			tfoot.appendChild(childHtml);
+		}
+		return tfoot;
 	}
 
 }

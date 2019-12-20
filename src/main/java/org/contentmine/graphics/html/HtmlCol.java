@@ -22,8 +22,8 @@ import org.apache.log4j.Logger;
 /** 
  *  @author pm286
  */
-public class HtmlCol extends HtmlElement {
-	private final static Logger LOG = Logger.getLogger(HtmlSpan.class);
+public class HtmlCol extends HtmlElement implements HasColspan {
+	private final static Logger LOG = Logger.getLogger(HtmlCol.class);
 	public final static String TAG = "col";
 
 	/** constructor.
@@ -31,5 +31,11 @@ public class HtmlCol extends HtmlElement {
 	 */
 	public HtmlCol() {
 		super(TAG);
+	}
+
+	@Override
+	public int getColspan() {
+		String colspan = this.getAttributeValue(COLSPAN);
+		return colspan == null ? 1 : Integer.parseInt(colspan);
 	}
 }

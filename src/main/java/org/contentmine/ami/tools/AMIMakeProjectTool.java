@@ -74,7 +74,7 @@ description = "Processes a directory (CProject) containing files (e.g.*.pdf, *.h
 )
 
 public class AMIMakeProjectTool extends AbstractAMITool {
-	public static final Logger LOG = Logger.getLogger(AMIMakeProjectTool.class);
+	private static final Logger LOG = Logger.getLogger(AMIMakeProjectTool.class);
 
 	static {
 		LOG.setLevel(Level.DEBUG);

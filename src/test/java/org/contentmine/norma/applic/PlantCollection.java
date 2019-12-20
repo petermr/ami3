@@ -19,6 +19,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.cproject.util.CMineUtil;
+import org.contentmine.cproject.util.RectTabColumn;
 import org.contentmine.cproject.util.RectangularTable;
 
 import com.google.common.collect.ArrayListMultimap;
@@ -282,9 +283,9 @@ public class PlantCollection {
       0               1               2              3                4               5               6                7            8        9           10
 		 */
 		RectangularTable table = RectangularTable.readCSVTable(new StringReader(s), useHeader, CSVFormat.TDF);
-		List<String> submittedNames = table.getColumn("Name_submitted");
-		List<String> matchedNames = table.getColumn("Name_matched");
-		List<String> acceptedNames = table.getColumn("Accepted_name");
+		RectTabColumn submittedNames = table.getColumn("Name_submitted");
+		RectTabColumn matchedNames = table.getColumn("Name_matched");
+		RectTabColumn acceptedNames = table.getColumn("Accepted_name");
 		acceptedNameBySubmittedName = new HashMap<String, String>();
 		matchedNameBySubmittedName = new HashMap<String, String>();
 		for (int i = 0; i < table.getRows().size(); i++) {

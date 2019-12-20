@@ -31,6 +31,7 @@ import org.contentmine.graphics.html.HtmlTfoot;
 import org.contentmine.graphics.html.HtmlTh;
 import org.contentmine.graphics.html.HtmlThead;
 import org.contentmine.graphics.html.HtmlTr;
+import org.contentmine.graphics.html.HtmlTrContainer;
 
 import nu.xom.Element;
 
@@ -141,8 +142,8 @@ public class DataTablesTool {
 		}
 	}
 
-	public HtmlThead createHtmlHead() {
-		HtmlThead htmlThead = new HtmlThead();
+	public HtmlTrContainer createHtmlHead() {
+		HtmlTrContainer htmlThead = new HtmlThead();
 		HtmlTr htmlTr = new HtmlTr();
 		htmlThead.appendChild(htmlTr);
 		// normally "articles"

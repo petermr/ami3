@@ -23,7 +23,7 @@ import org.apache.log4j.Logger;
  *  @author pm286
  */
 public class HtmlFooter extends HtmlElement {
-	private final static Logger LOG = Logger.getLogger(HtmlSpan.class);
+	private final static Logger LOG = Logger.getLogger(HtmlFooter.class);
 	public final static String TAG = "footer";
 
 	/** constructor.

@@ -9,4 +9,6 @@ import org.contentmine.graphics.html.HtmlElement;
  */
 public interface IsHtml {
 	HtmlElement toHtml();
+
+	HtmlElement deepCopyAndTransform(HtmlElement htmlElement);
 }

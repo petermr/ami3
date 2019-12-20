@@ -1,5 +1,8 @@
 package org.contentmine.norma.sections;
 
+import org.contentmine.graphics.html.HtmlElement;
+import org.contentmine.graphics.html.HtmlUl;
+
 import nu.xom.Element;
 
 /** the actual abstract in tne article
@@ -15,7 +18,15 @@ public class JATSListElement extends JATSElement implements IsBlock {
 		super(element);
 	}
 	
-	
+	/** HTMLEquivalent
+	 */
+	@Override
+	public HtmlElement createHTML() {
+		HtmlUl ul = new HtmlUl();
+		return deepCopyAndTransform(ul);
+	}
+
+
 	
 
 }

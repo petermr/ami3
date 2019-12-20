@@ -336,30 +336,6 @@ public class CustomPageDrawerNew extends PageDrawer
             this.annotationFilter = annotationFilter;
         }    
         
-//        /**
-//         * Returns the parent renderer.
-//         */
-//        public final PDFRenderer getRenderer()
-//        {
-//            return renderer;
-//        }
-
-//        /**
-//         * Returns the underlying Graphics2D. May be null if drawPage has not yet been called.
-//         */
-//        protected final Graphics2D getGraphics()
-//        {
-//            return graphics;
-//        }
-//
-//        /**
-//         * Returns the current line path. This is reset to empty after each fill/stroke.
-//         */
-//        protected final GeneralPath getLinePath()
-//        {
-//            return linePath;
-//        }
-
         /**
          * Sets high-quality rendering hints on the current Graphics2D.
          */

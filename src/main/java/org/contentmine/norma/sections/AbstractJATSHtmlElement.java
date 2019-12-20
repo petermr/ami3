@@ -3,6 +3,7 @@ package org.contentmine.norma.sections;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.graphics.html.HtmlElement;
+import org.contentmine.graphics.html.HtmlThead;
 
 import nu.xom.Element;
 

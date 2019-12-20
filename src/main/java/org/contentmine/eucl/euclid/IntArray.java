@@ -822,7 +822,7 @@ public class IntArray extends ArrayBase implements Iterable<Integer> {
      */
     public int indexOfLargestElement() throws ArrayIndexOutOfBoundsException {
         if (nelem == 0) {
-            throw new ArrayIndexOutOfBoundsException();
+            throw new ArrayIndexOutOfBoundsException("no element to find max");
         }
         int index = -1;
         int value = Integer.MIN_VALUE;
@@ -873,7 +873,11 @@ public class IntArray extends ArrayBase implements Iterable<Integer> {
      * @return value
      */
     public int getMax() throws ArrayIndexOutOfBoundsException {
-        return array[indexOfLargestElement()];
+        int indexOfLargestElement = indexOfLargestElement();
+        if (indexOfLargestElement == -1) {
+        	throw new ArrayIndexOutOfBoundsException("no elements to find max");
+        }
+		return array[indexOfLargestElement];
     }
     /**
      * value of smallest element.
@@ -1662,6 +1666,19 @@ public class IntArray extends ArrayBase implements Iterable<Integer> {
 		List<Entry<Integer>> commonest = MultisetUtil.createListSortedByCount(diffSet);
 		int delta = commonest.get(0).getElement();
 		return delta;
+	}
+	
+	/** finds index of first element with given value.
+	 * @param value to find
+	 * @return -1 if not found, else index
+	 */
+	public int indexOfFirst(int value) {
+		for (int i = 0; i < nelem; i++) {
+			if (array[i] == value) {
+				return i;
+			}
+		}
+		return -1;
 	}
 	
 	

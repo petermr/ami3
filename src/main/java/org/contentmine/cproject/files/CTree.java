@@ -1534,7 +1534,7 @@ public class CTree extends CContainer implements Comparable<CTree> {
 				}
 			}
 			if (fulltextXHtml == null) {
-				fulltextXHtml = new HtmlHtml();
+				fulltextXHtml = HtmlHtml.createUTF8Html();
 			}
 			if (this.fulltextXHtml != null && this.writeXHtml) {
 				this.fulltextXHtmlFile = new File(this.fulltextHtmlFile.getParentFile(), CTree.FULLTEXT_XHTML);

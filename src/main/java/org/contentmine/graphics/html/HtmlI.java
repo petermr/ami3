@@ -27,7 +27,7 @@ import org.contentmine.graphics.html.util.HtmlUtil;
  *  @author pm286
  */
 public class HtmlI extends HtmlElement {
-	private final static Logger LOG = Logger.getLogger(HtmlSpan.class);
+	private final static Logger LOG = Logger.getLogger(HtmlI.class);
 	public final static String TAG = "i";
 	public final static String ALL_I_XPATH = ".//h:i";
 

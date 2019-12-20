@@ -44,6 +44,14 @@ public class AMIPDFTool extends AbstractAMITool {
     		)
     private int maxpages = 5;
     
+	@Option(names = {"--maxprimitives"}, 
+    		arity="0..1",
+   		    description = "maximum number pf SVG primitives. Some diagrams have hundreds of thousands of"
+   		    		+ " graphics primitives and create quadratic or memory problems. Setting maxprimitives"
+   		    		+ " allows the job to continue but loses data. We have to find a better approach."
+    		)
+    private int maxprimitives = 5000;
+    
     /** this should be a Mixin, with SVGTool
      * NYI
      */
@@ -118,6 +126,7 @@ public class AMIPDFTool extends AbstractAMITool {
 		pdfDocumentProcessor.setOutputSVG(outputSVG);
 		pdfDocumentProcessor.setOutputPDFImages(outputPdfImages);
 		pdfDocumentProcessor.setMaxPages(maxpages);
+		pdfDocumentProcessor.setMaxPrimitives(maxprimitives);
         cTree.setPDFDocumentProcessor(pdfDocumentProcessor);
         cTree.setForceMake(forceMake);
 		cTree.processPDFTree();

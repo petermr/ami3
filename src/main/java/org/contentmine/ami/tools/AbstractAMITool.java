@@ -763,6 +763,31 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 		return inputStream;
 	}
 
+	/** gets filename relative to CProject.
+	 * useful for ancillary files such a templates or dictionaries.
+	 * attempts to fine File as absolute name , else files file relative to CProject directory
+	 * if CProject is null or directory does not exist returns null
+	 * 
+	 * @param filename
+	 * @return null if file does not exist
+	 */
+	protected File getFileRelativeToProject(String filename) {
+		File file1 = null;
+		if (filename != null) {
+			File file = new File(filename);
+			if (file.exists()) {
+				file1 = file;
+			} else if (cProject != null) {
+				File directory = cProject.getDirectory();
+				if (directory != null && directory.exists()) {
+					file1 = new File(directory, file.toString());
+					file1 = file1.exists() ? file1 : null;
+				}
+			}
+		}
+		return file1;
+	}
+
 	public static boolean isTrace(AbstractAMITool amiTool) {
 		return isLevel(amiTool, AbstractAMITool.Verbosity.TRACE);
 	}
@@ -775,9 +800,18 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 		return isLevel(amiTool, AbstractAMITool.Verbosity.INFO);
 	}
 
-	private static boolean isLevel(AbstractAMITool amiTool, Verbosity debug2) {
-		return (amiTool == null) ? false : debug2.getVerbosity() == amiTool.getVerbosityInt();
+	private static boolean isLevel(AbstractAMITool amiTool, Verbosity verbosity) {
+		return (amiTool == null) ? false : verbosity.getVerbosity() == amiTool.getVerbosityInt();
 	}
 
+	protected boolean reachesLevel(Verbosity verbosity) {
+		return verbosity.getVerbosity() <= this.getVerbosityInt();
+	}
+
+	public void debugPrint(Verbosity verbosity, String message) {
+		if (reachesLevel(verbosity)) {
+			System.out.println("<"+verbosity+">"+message);
+		}
+	}
 
 }

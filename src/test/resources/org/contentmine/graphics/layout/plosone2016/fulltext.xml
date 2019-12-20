@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1d3 20150301//EN" "http://jats.nlm.nih.gov/publishing/1.1d3/JATS-journalpublishing1.dtd">
+<article article-type="research-article" dtd-version="1.1d3" xml:lang="en" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1371/journal.pone.0160103</article-id>
+<article-id pub-id-type="publisher-id">PONE-D-16-00597</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Cell biology</subject><subj-group><subject>Cellular types</subject><subj-group><subject>Animal cells</subject><subj-group><subject>Immune cells</subject><subj-group><subject>Antibody-producing cells</subject><subj-group><subject>B cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Immune cells</subject><subj-group><subject>Antibody-producing cells</subject><subj-group><subject>B cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Immune cells</subject><subj-group><subject>Antibody-producing cells</subject><subj-group><subject>B cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Cell biology</subject><subj-group><subject>Cellular types</subject><subj-group><subject>Animal cells</subject><subj-group><subject>Blood cells</subject><subj-group><subject>White blood cells</subject><subj-group><subject>B cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Cell biology</subject><subj-group><subject>Cellular types</subject><subj-group><subject>Animal cells</subject><subj-group><subject>Immune cells</subject><subj-group><subject>White blood cells</subject><subj-group><subject>B cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Immune cells</subject><subj-group><subject>White blood cells</subject><subj-group><subject>B cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Immune cells</subject><subj-group><subject>White blood cells</subject><subj-group><subject>B cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Clinical medicine</subject><subj-group><subject>Clinical immunology</subject><subj-group><subject>Autoimmune diseases</subject><subj-group><subject>Crohn's disease</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Clinical immunology</subject><subj-group><subject>Autoimmune diseases</subject><subj-group><subject>Crohn's disease</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Clinical immunology</subject><subj-group><subject>Autoimmune diseases</subject><subj-group><subject>Crohn's disease</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Gastroenterology and hepatology</subject><subj-group><subject>Inflammatory bowel disease</subject><subj-group><subject>Crohn's disease</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Cell biology</subject><subj-group><subject>Cellular types</subject><subj-group><subject>Animal cells</subject><subj-group><subject>Immune cells</subject><subj-group><subject>Antibody-producing cells</subject><subj-group><subject>B cells</subject><subj-group><subject>Memory B cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Immune cells</subject><subj-group><subject>Antibody-producing cells</subject><subj-group><subject>B cells</subject><subj-group><subject>Memory B cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Immune cells</subject><subj-group><subject>Antibody-producing cells</subject><subj-group><subject>B cells</subject><subj-group><subject>Memory B cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Cell biology</subject><subj-group><subject>Cellular types</subject><subj-group><subject>Animal cells</subject><subj-group><subject>Blood cells</subject><subj-group><subject>White blood cells</subject><subj-group><subject>B cells</subject><subj-group><subject>Memory B cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Cell biology</subject><subj-group><subject>Cellular types</subject><subj-group><subject>Animal cells</subject><subj-group><subject>Immune cells</subject><subj-group><subject>White blood cells</subject><subj-group><subject>B cells</subject><subj-group><subject>Memory B cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Immune cells</subject><subj-group><subject>White blood cells</subject><subj-group><subject>B cells</subject><subj-group><subject>Memory B cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Immune cells</subject><subj-group><subject>White blood cells</subject><subj-group><subject>B cells</subject><subj-group><subject>Memory B cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Cell biology</subject><subj-group><subject>Cellular types</subject><subj-group><subject>Animal cells</subject><subj-group><subject>Blood cells</subject><subj-group><subject>White blood cells</subject><subj-group><subject>Plasma cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Cell biology</subject><subj-group><subject>Cellular types</subject><subj-group><subject>Animal cells</subject><subj-group><subject>Immune cells</subject><subj-group><subject>White blood cells</subject><subj-group><subject>Plasma cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Immune cells</subject><subj-group><subject>White blood cells</subject><subj-group><subject>Plasma cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Immune cells</subject><subj-group><subject>White blood cells</subject><subj-group><subject>Plasma cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Cell biology</subject><subj-group><subject>Cellular types</subject><subj-group><subject>Animal cells</subject><subj-group><subject>Immune cells</subject><subj-group><subject>Granulomas</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Immune cells</subject><subj-group><subject>Granulomas</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Immune cells</subject><subj-group><subject>Granulomas</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Body fluids</subject><subj-group><subject>Blood</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Body fluids</subject><subj-group><subject>Blood</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Physiology</subject><subj-group><subject>Body fluids</subject><subj-group><subject>Blood</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Physiology</subject><subj-group><subject>Body fluids</subject><subj-group><subject>Blood</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Hematology</subject><subj-group><subject>Blood</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Gastroenterology and hepatology</subject><subj-group><subject>Inflammatory bowel disease</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Cell biology</subject><subj-group><subject>Cellular types</subject><subj-group><subject>Animal cells</subject><subj-group><subject>Blood cells</subject><subj-group><subject>White blood cells</subject><subj-group><subject>T cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Cell biology</subject><subj-group><subject>Cellular types</subject><subj-group><subject>Animal cells</subject><subj-group><subject>Immune cells</subject><subj-group><subject>White blood cells</subject><subj-group><subject>T cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Immune cells</subject><subj-group><subject>White blood cells</subject><subj-group><subject>T cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Immune cells</subject><subj-group><subject>White blood cells</subject><subj-group><subject>T cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>B-Cell Dysregulation in Crohn's Disease Is Partially Restored with Infliximab Therapy</article-title>
+<alt-title alt-title-type="running-head">B-Cell Abnormalities in Crohn's Disease</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Timmermans</surname>
+<given-names>Wilhelmina M. C.</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>van Laar</surname>
+<given-names>Jan A. M.</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>van der Houwen</surname>
+<given-names>Tim B.</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Kamphuis</surname>
+<given-names>Lieke S. J.</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Bartol</surname>
+<given-names>Sophinus J. W.</given-names>
+</name>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Lam</surname>
+<given-names>King H.</given-names>
+</name>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Ouwendijk</surname>
+<given-names>Rob J.</given-names>
+</name>
+<xref ref-type="aff" rid="aff004"><sup>4</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Sparrow</surname>
+<given-names>Miles P.</given-names>
+</name>
+<xref ref-type="aff" rid="aff005"><sup>5</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Gibson</surname>
+<given-names>Peter R.</given-names>
+</name>
+<xref ref-type="aff" rid="aff005"><sup>5</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>van Hagen</surname>
+<given-names>P. Martin</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<contrib-id authenticated="true" contrib-id-type="orcid">http://orcid.org/0000-0003-4161-1919</contrib-id>
+<name name-style="western">
+<surname>van Zelm</surname>
+<given-names>Menno C.</given-names>
+</name>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+<xref ref-type="aff" rid="aff006"><sup>6</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+</contrib-group>
+<aff id="aff001"><label>1</label> <addr-line>Department of Internal Medicine, Erasmus MC, Rotterdam, The Netherlands</addr-line></aff>
+<aff id="aff002"><label>2</label> <addr-line>Department of Immunology, Erasmus MC, Rotterdam, The Netherlands</addr-line></aff>
+<aff id="aff003"><label>3</label> <addr-line>Department of Pathology, Erasmus MC, Rotterdam, The Netherlands</addr-line></aff>
+<aff id="aff004"><label>4</label> <addr-line>Department of Gastroenterology, Ikazia Hospital, Rotterdam, The Netherlands</addr-line></aff>
+<aff id="aff005"><label>5</label> <addr-line>Department of Gastroenterology, Alfred Hospital, Monash University and Alfred Health, Melbourne, VIC, Australia</addr-line></aff>
+<aff id="aff006"><label>6</label> <addr-line>Department of Immunology and Pathology, Monash University, Melbourne, VIC, Australia</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Richard</surname>
+<given-names>Yolande</given-names>
+</name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>COCHIN INSTITUTE, Institut National de la Santé et de la Recherche Médicale, FRANCE</addr-line></aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<fn fn-type="con" id="contrib001">
+<p>Conceived and designed the experiments: WMCT JAMvL PMvH MCvZ. Performed the experiments: WMCT TBvdH LSJK SJWB KHL RJO MPS PRG. Analyzed the data: WMCT SJWB KHL. Contributed reagents/materials/analysis tools: KHL RJO MPS PRG MCvZ. Wrote the paper: WMCT JAMvL PMvH MCvZ. Interpretation of data: WMCT JAMvL PMvH MCvZ. Revising manuscript: TBvdH LSJK SJWB KHL RJO MPS PRG. Approval final manuscript: WMCT JAMvL TBvdH LSJK SJWB KHL RJO MPS PRG PMvH MCvZ.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">menno.vanzelm@monash.edu</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<day>28</day>
+<month>7</month>
+<year>2016</year>
+</pub-date>
+<pub-date pub-type="collection">
+<year>2016</year>
+</pub-date>
+<volume>11</volume>
+<issue>7</issue>
+<elocation-id>e0160103</elocation-id>
+<history>
+<date date-type="received">
+<day>7</day>
+<month>1</month>
+<year>2016</year>
+</date>
+<date date-type="accepted">
+<day>11</day>
+<month>7</month>
+<year>2016</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2016</copyright-year>
+<copyright-holder>Timmermans et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0160103"/>
+<abstract>
+<sec id="sec001">
+<title>Background</title>
+<p>B-cell depletion can improve a variety of chronic inflammatory diseases, but does not appear beneficial for patients with Crohn’s disease.</p>
+</sec>
+<sec id="sec002">
+<title>Objective</title>
+<p>To elucidate the involvement of B cells in Crohn’s disease, we here performed an ‘in depth’ analysis of intestinal and blood B-cells in this chronic inflammatory disease.</p>
+</sec>
+<sec id="sec003">
+<title>Methods</title>
+<p>Patients with Crohn’s disease were recruited to study B-cell infiltrates in intestinal biopsies (n = 5), serum immunoglobulin levels and the phenotype and molecular characteristics of blood B-cell subsets (n = 21). The effects of infliximab treatment were studied in 9 patients.</p>
+</sec>
+<sec id="sec004">
+<title>Results</title>
+<p>Granulomatous tissue showed infiltrates of B lymphocytes rather than Ig-secreting plasma cells. Circulating transitional B cells and CD21<sup>low</sup> B cells were elevated. IgM memory B cells were reduced and natural effector cells showed decreased replication histories and somatic hypermutation (SHM) levels. In contrast, IgG and IgA memory B cells were normally present and their Ig gene transcripts carried increased SHM levels. The numbers of transitional and natural effector cells were normal in patients who responded clinically well to infliximab.</p>
+</sec>
+<sec id="sec005">
+<title>Conclusions</title>
+<p>B cells in patients with Crohn’s disease showed signs of chronic stimulation with localization to granulomatous tissue and increased molecular maturation of IgA and IgG. Therapy with TNFα-blockers restored the defect in IgM memory B-cell generation and normalized transitional B-cell levels, making these subsets candidate markers for treatment monitoring. Together, these results suggest a chronic, aberrant B-cell response in patients with Crohn’s disease, which could be targeted with new therapeutics that specifically regulate B-cell function.</p>
+</sec>
+</abstract>
+<funding-group>
+<funding-statement>The authors have no support or funding to report.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="5"/>
+<table-count count="1"/>
+<page-count count="15"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability">
+<meta-name>Data Availability</meta-name>
+<meta-value>All relevant data are within the paper and its Supporting Information files.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec006" sec-type="intro">
+<title>Introduction</title>
+<p>The human intestinal tract contains a complex interplay between commensal bacteria, food antigens and the host immune system to limit inflammation, while preventing the translocation of intestinal microbiota. This delicate balance is disrupted in Crohn’s disease, a chronic inflammatory disease characterized by transmural inflammation of the gastrointestinal tract [<xref ref-type="bibr" rid="pone.0160103.ref001">1</xref>]. The pathogenesis of Crohn’s disease is of complex nature with genetic susceptibility and dysfunction of mucosal immunity that result in a disturbed intestinal balance [<xref ref-type="bibr" rid="pone.0160103.ref002">2</xref>]. An abnormal Th1 response is induced by dendritic cells that present commensal bacteria [<xref ref-type="bibr" rid="pone.0160103.ref003">3</xref>], which leads to overproduction of pro-inflammatory cytokines, including interferon-γ (IFN-γ) and tumor necrosis factor-alpha (TNF-α). In combination with impaired regulatory T cell (Treg) function, this is thought to lead to persistent inflammation in Crohn’s disease [<xref ref-type="bibr" rid="pone.0160103.ref004">4</xref>].</p>
+<p>In about one third of patients, histopathology of biopsy specimens show granulomas; a feature supporting the diagnosis Crohn’s disease [<xref ref-type="bibr" rid="pone.0160103.ref005">5</xref>, <xref ref-type="bibr" rid="pone.0160103.ref006">6</xref>]. As early as in the 1980s, a corona of B lymphocytes around the granuloma was described [<xref ref-type="bibr" rid="pone.0160103.ref007">7</xref>], which parallels granulomas in patients with sarcoidosis [<xref ref-type="bibr" rid="pone.0160103.ref008">8</xref>]. Furthermore, similar to patients with sarcoidosis [<xref ref-type="bibr" rid="pone.0160103.ref008">8</xref>–<xref ref-type="bibr" rid="pone.0160103.ref010">10</xref>], patients with Crohn’s disease show signs of abnormal B-cell responses that include increased numbers of immunoglobulin (Ig)-secreting cells [<xref ref-type="bibr" rid="pone.0160103.ref011">11</xref>], and serum antibodies against Saccharomyces cerevisiae antibodies (ASCA) and neutrophils (ANCA) [<xref ref-type="bibr" rid="pone.0160103.ref012">12</xref>, <xref ref-type="bibr" rid="pone.0160103.ref013">13</xref>]. Being good antigen-presenters and cytokine producers, B cells can regulate T cell responses [<xref ref-type="bibr" rid="pone.0160103.ref014">14</xref>]. Indeed, B-cells were found to affect regulatory T cell through production of IL-10 [<xref ref-type="bibr" rid="pone.0160103.ref015">15</xref>]. However, it is not been clarified how B cells influence disease activity, because studies in murine models have reported ambiguous results, supporting either a suppressive or exacerbating role in gut inflammation [<xref ref-type="bibr" rid="pone.0160103.ref016">16</xref>–<xref ref-type="bibr" rid="pone.0160103.ref018">18</xref>].</p>
+<p>In spite of a potential role of B cells in chronic inflammation, circulating naive B cells and class-switched memory B cells were found to be normally present in peripheral blood of patients with Crohn’s disease, whereas IgM memory B cell numbers were reduced [<xref ref-type="bibr" rid="pone.0160103.ref019">19</xref>]. IgM memory cells consist of two types; IgM-only (CD27<sup>+</sup>IgM<sup>+</sup>IgD<sup>-</sup>) and natural effector B cells (CD27<sup>+</sup>IgM<sup>+</sup>IgD<sup>+</sup>). While all IgM-only memory B cells originate from germinal center responses, about one-third of natural effector cells in healthy controls are derived from T-cell independent responses in the marginal zone of the spleen [<xref ref-type="bibr" rid="pone.0160103.ref020">20</xref>–<xref ref-type="bibr" rid="pone.0160103.ref022">22</xref>].</p>
+<p>These contrasting observations did not clarify the exact role of B-cell involvement in Crohn’s disease. Therefore, we here aimed to elucidate their contribution in Crohn’s disease through detailed molecular analysis and immunophenotyping in locally inflamed intestinal tissue and in peripheral blood. Moreover, to evaluate candidate B-cell markers for monitoring therapeutic efficacy, we studied, the B-cell compartment after anti-TNFα therapy in patients treated with infliximab.</p>
+</sec>
+<sec id="sec007" sec-type="materials|methods">
+<title>Materials and Methods</title>
+<sec id="sec008">
+<title>Patients</title>
+<p>Clinical data and blood samples of 30 patients with Crohn’s disease and 28 healthy controls were collected after written informed consent was obtained (<xref ref-type="table" rid="pone.0160103.t001">Table 1</xref>). In addition, surplus tissue materials from diagnostic colon biopsies of 5 patients were retrospectively analyzed. This study was performed according to the Declaration of Helsinki. This study was approved by the Medical Ethics Committees of Erasmus MC (ethics approval number MEC-2011-060) and Alfred Hospital (ethics approval number 472/15) and patients were recruited from the Ikazia Hospital in Rotterdam (The Netherlands) and the Alfred Hospital in Melbourne (VIC, Australia).</p>
+<table-wrap id="pone.0160103.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0160103.t001</object-id>
+<label>Table 1</label> <caption><title>Clinical and basic immunological characteristics of patients with Crohn’s disease.</title></caption>
+<alternatives>
+<graphic id="pone.0160103.t001g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0160103.t001" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<tbody>
+<tr>
+<td align="justify">Patient</td>
+<td align="justify">Gender</td>
+<td align="justify">Age (yr)</td>
+<td align="justify">Disease duration (yr)</td>
+<td align="justify">Medication</td>
+<td align="justify">Surgery</td>
+<td align="justify">Granuloma</td>
+<td align="justify">B-cells</td>
+<td align="justify">T-cells</td>
+<td align="justify">NK-cells</td>
+<td align="justify">IgG</td>
+<td align="justify">IgG1</td>
+<td align="justify">IgG2</td>
+<td align="justify">IgG3</td>
+<td align="justify">IgG4</td>
+<td align="justify">IgA</td>
+<td align="justify">IgA1</td>
+<td align="justify">IgA2</td>
+<td align="justify">IgM</td>
+</tr>
+<tr>
+<td align="justify">1</td>
+<td align="justify">F</td>
+<td align="justify">30</td>
+<td align="justify">0</td>
+<td align="justify">None</td>
+<td align="justify">No</td>
+<td align="justify">Yes</td>
+<td align="left"><bold>91</bold></td>
+<td align="left">1,200</td>
+<td align="left">270</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+</tr>
+<tr>
+<td align="justify">2</td>
+<td align="justify">F</td>
+<td align="justify">25</td>
+<td align="justify">3</td>
+<td align="justify">None</td>
+<td align="justify">Yes</td>
+<td align="justify">No</td>
+<td align="left">197</td>
+<td align="left">1,100</td>
+<td align="left">310</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+</tr>
+<tr>
+<td align="justify">3</td>
+<td align="justify">M</td>
+<td align="justify">23</td>
+<td align="justify">4</td>
+<td align="justify">None</td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="left">208</td>
+<td align="left">1,575</td>
+<td align="left">220</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+</tr>
+<tr>
+<td align="justify">4</td>
+<td align="justify">M</td>
+<td align="justify">34</td>
+<td align="justify">13</td>
+<td align="justify">5-ASA</td>
+<td align="justify">Yes</td>
+<td align="justify">No</td>
+<td align="left"><bold>430</bold></td>
+<td align="left">1,120</td>
+<td align="left"><bold>430</bold></td>
+<td align="left"><bold>6.8</bold></td>
+<td align="left"><bold>4.8</bold></td>
+<td align="left">1.9</td>
+<td align="left">0.2</td>
+<td align="left">1.0</td>
+<td align="left">2.8</td>
+<td align="left">2.0</td>
+<td align="left"><bold>1.4</bold></td>
+<td align="left">1.4</td>
+</tr>
+<tr>
+<td align="justify">5</td>
+<td align="justify">M</td>
+<td align="justify">43</td>
+<td align="justify">10</td>
+<td align="justify">5-ASA</td>
+<td align="justify">Yes</td>
+<td align="justify">Yes</td>
+<td align="left"><bold>470</bold></td>
+<td align="left">1,620</td>
+<td align="left">270</td>
+<td align="left">10.1</td>
+<td align="left">7.1</td>
+<td align="left">3.8</td>
+<td align="left">0.9</td>
+<td align="left"><bold>&lt;0.06</bold></td>
+<td align="left">1.7</td>
+<td align="left">1.2</td>
+<td align="left">0.2</td>
+<td align="left">0.7</td>
+</tr>
+<tr>
+<td align="justify">6</td>
+<td align="justify">M</td>
+<td align="justify">63</td>
+<td align="justify">5</td>
+<td align="justify">5-ASA</td>
+<td align="justify">Yes</td>
+<td align="justify">No</td>
+<td align="left">160</td>
+<td align="left"><bold>2,190</bold></td>
+<td align="left">310</td>
+<td align="left">10.0</td>
+<td align="left">6.2</td>
+<td align="left">4.8</td>
+<td align="left">0.8</td>
+<td align="left">0.4</td>
+<td align="left"><bold>4.9</bold></td>
+<td align="left"><bold>3.6</bold></td>
+<td align="left"><bold>1.6</bold></td>
+<td align="left">0.7</td>
+</tr>
+<tr>
+<td align="justify">7</td>
+<td align="justify">M</td>
+<td align="justify">35</td>
+<td align="justify">22</td>
+<td align="justify">None</td>
+<td align="justify">Yes</td>
+<td align="justify">No</td>
+<td align="left"><bold>90</bold></td>
+<td align="left"><bold>470</bold></td>
+<td align="left">220</td>
+<td align="left">9.0</td>
+<td align="left">5.2</td>
+<td align="left">5.3</td>
+<td align="left">0.6</td>
+<td align="left">0.1</td>
+<td align="left"><bold>4.3</bold></td>
+<td align="left"><bold>2.9</bold></td>
+<td align="left"><bold>2.4</bold></td>
+<td align="left">0.7</td>
+</tr>
+<tr>
+<td align="justify">8</td>
+<td align="justify">M</td>
+<td align="justify">33</td>
+<td align="justify">2</td>
+<td align="justify">5-ASA</td>
+<td align="justify">No</td>
+<td align="justify">Yes</td>
+<td align="left">220</td>
+<td align="left">1,260</td>
+<td align="left">190</td>
+<td align="left">11.1</td>
+<td align="left">8.3</td>
+<td align="left">2.7</td>
+<td align="left">0.9</td>
+<td align="left">0.5</td>
+<td align="left">3.6</td>
+<td align="left"><bold>2.6</bold></td>
+<td align="left"><bold>0.8</bold></td>
+<td align="left">0.5</td>
+</tr>
+<tr>
+<td align="justify">9</td>
+<td align="justify">F</td>
+<td align="justify">22</td>
+<td align="justify">7</td>
+<td align="justify">None</td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="left">250</td>
+<td align="left">1,110</td>
+<td align="left">270</td>
+<td align="left">14.9</td>
+<td align="left">11.1</td>
+<td align="left">4.0</td>
+<td align="left">0.8</td>
+<td align="left">0.4</td>
+<td align="left">2.6</td>
+<td align="left">1.8</td>
+<td align="left">0.3</td>
+<td align="left">2.3</td>
+</tr>
+<tr>
+<td align="justify">10</td>
+<td align="justify">F</td>
+<td align="justify">27</td>
+<td align="justify">0</td>
+<td align="justify">5-ASA</td>
+<td align="justify">No</td>
+<td align="justify">Yes</td>
+<td align="left"><bold>590</bold></td>
+<td align="left">1,790</td>
+<td align="left">230</td>
+<td align="left">9.2</td>
+<td align="left">5.7</td>
+<td align="left">3.7</td>
+<td align="left">0.5</td>
+<td align="left">1.2</td>
+<td align="left">1.8</td>
+<td align="left">1.3</td>
+<td align="left">0.3</td>
+<td align="left">1.1</td>
+</tr>
+<tr>
+<td align="justify">11</td>
+<td align="justify">F</td>
+<td align="justify">62</td>
+<td align="justify">21</td>
+<td align="justify">5-ASA</td>
+<td align="justify">Yes</td>
+<td align="justify">Yes</td>
+<td align="left">160</td>
+<td align="left">1,090</td>
+<td align="left">220</td>
+<td align="left">7.8</td>
+<td align="left"><bold>4.8</bold></td>
+<td align="left">3.7</td>
+<td align="left">0.5</td>
+<td align="left"><bold>&lt;0.06</bold></td>
+<td align="left">3.4</td>
+<td align="left">2.3</td>
+<td align="left"><bold>1.0</bold></td>
+<td align="left">0.6</td>
+</tr>
+<tr>
+<td align="justify">12</td>
+<td align="justify">F</td>
+<td align="justify">26</td>
+<td align="justify">8</td>
+<td align="justify">5-ASA</td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="left">260</td>
+<td align="left">750</td>
+<td align="left">150</td>
+<td align="left">10.6</td>
+<td align="left">8.2</td>
+<td align="left">3.1</td>
+<td align="left">0.2</td>
+<td align="left">0.2</td>
+<td align="left">1.5</td>
+<td align="left">1.1</td>
+<td align="left">0.4</td>
+<td align="left">0.6</td>
+</tr>
+<tr>
+<td align="justify">13</td>
+<td align="justify">F</td>
+<td align="justify">61</td>
+<td align="justify">11</td>
+<td align="justify">5-ASA</td>
+<td align="justify">Yes</td>
+<td align="justify">No</td>
+<td align="left">210</td>
+<td align="left">1,600</td>
+<td align="left">160</td>
+<td align="left">15.1</td>
+<td align="left"><bold>13.0</bold></td>
+<td align="left">2.5</td>
+<td align="left">0.7</td>
+<td align="left">0.1</td>
+<td align="left">2.1</td>
+<td align="left">1.5</td>
+<td align="left">0.3</td>
+<td align="left">1.6</td>
+</tr>
+<tr>
+<td align="justify">14</td>
+<td align="justify">F</td>
+<td align="justify">48</td>
+<td align="justify">34</td>
+<td align="justify">5-ASA</td>
+<td align="justify">Yes</td>
+<td align="justify">Yes</td>
+<td align="left">180</td>
+<td align="left">1,220</td>
+<td align="left">100</td>
+<td align="left">8.4</td>
+<td align="left">7.3</td>
+<td align="left"><bold>0.9</bold></td>
+<td align="left">0.5</td>
+<td align="left"><bold>&lt;0.06</bold></td>
+<td align="left">2.7</td>
+<td align="left">1.8</td>
+<td align="left"><bold>1.0</bold></td>
+<td align="left">0.7</td>
+</tr>
+<tr>
+<td align="justify">15</td>
+<td align="justify">M</td>
+<td align="justify">45</td>
+<td align="justify">6</td>
+<td align="justify">5-ASA</td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="left">380</td>
+<td align="left"><bold>2,060</bold></td>
+<td align="left"><bold>820</bold></td>
+<td align="left"><bold>17.3</bold></td>
+<td align="left">10.7</td>
+<td align="left"><bold>8.3</bold></td>
+<td align="left">0.4</td>
+<td align="left"><bold>2.2</bold></td>
+<td align="left"><bold>5.8</bold></td>
+<td align="left"><bold>4.3</bold></td>
+<td align="left"><bold>1.3</bold></td>
+<td align="left">0.7</td>
+</tr>
+<tr>
+<td align="justify">16</td>
+<td align="justify">F</td>
+<td align="justify">35</td>
+<td align="justify">1</td>
+<td align="justify">None</td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="left">333</td>
+<td align="left"><bold>1,990</bold></td>
+<td align="left">250</td>
+<td align="left">10.7</td>
+<td align="left">7.1</td>
+<td align="left">5.3</td>
+<td align="left">0.6</td>
+<td align="left"><bold>&lt;0.06</bold></td>
+<td align="left">0.7</td>
+<td align="left"><bold>0.5</bold></td>
+<td align="left">0.2</td>
+<td align="left">1.2</td>
+</tr>
+<tr>
+<td align="justify">17</td>
+<td align="justify">F</td>
+<td align="justify">31</td>
+<td align="justify">11</td>
+<td align="justify">None</td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="left">230</td>
+<td align="left"><bold>3,250</bold></td>
+<td align="left">250</td>
+<td align="left">9.5</td>
+<td align="left">8.5</td>
+<td align="left"><bold>1.4</bold></td>
+<td align="left">0.7</td>
+<td align="left"><bold>&lt;0.06</bold></td>
+<td align="left">1.3</td>
+<td align="left">1.0</td>
+<td align="left">0.4</td>
+<td align="left">1.3</td>
+</tr>
+<tr>
+<td align="justify">18</td>
+<td align="justify">F</td>
+<td align="justify">35</td>
+<td align="justify">8</td>
+<td align="justify">None</td>
+<td align="justify">No</td>
+<td align="justify">Yes</td>
+<td align="left">350</td>
+<td align="left">1,120</td>
+<td align="left">180</td>
+<td align="left"><bold>16.4</bold></td>
+<td align="left"><bold>12.5</bold></td>
+<td align="left">6.0</td>
+<td align="left">1.0</td>
+<td align="left">0.2</td>
+<td align="left">3.3</td>
+<td align="left">2.4</td>
+<td align="left">0.5</td>
+<td align="left">1.4</td>
+</tr>
+<tr>
+<td align="justify">19</td>
+<td align="justify">F</td>
+<td align="justify">41</td>
+<td align="justify">23</td>
+<td align="justify">5-ASA</td>
+<td align="justify">Yes</td>
+<td align="justify">No</td>
+<td align="left">110</td>
+<td align="left">1,330</td>
+<td align="left">150</td>
+<td align="left">8.8</td>
+<td align="left">5.8</td>
+<td align="left">4.1</td>
+<td align="left">0.4</td>
+<td align="left"><bold>&lt;0.06</bold></td>
+<td align="left">2.5</td>
+<td align="left">1.6</td>
+<td align="left"><bold>1.1</bold></td>
+<td align="left">1.2</td>
+</tr>
+<tr>
+<td align="justify">20</td>
+<td align="justify">F</td>
+<td align="justify">53</td>
+<td align="justify">0</td>
+<td align="justify">None</td>
+<td align="justify">Yes</td>
+<td align="justify">No</td>
+<td align="left"><bold>870</bold></td>
+<td align="left"><bold>2,500</bold></td>
+<td align="left">260</td>
+<td align="left"><bold>6.3</bold></td>
+<td align="left"><bold>4.3</bold></td>
+<td align="left">2.9</td>
+<td align="left">0.5</td>
+<td align="left">0.1</td>
+<td align="left">0.8</td>
+<td align="left">0.6</td>
+<td align="left">0.3</td>
+<td align="left">ND</td>
+</tr>
+<tr>
+<td align="justify">21</td>
+<td align="justify">M</td>
+<td align="justify">39</td>
+<td align="justify">3</td>
+<td align="justify">5-ASA</td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="left"><bold>680</bold></td>
+<td align="left">1,580</td>
+<td align="left"><bold>660</bold></td>
+<td align="left">15.8</td>
+<td align="left"><bold>13</bold></td>
+<td align="left">3.5</td>
+<td align="left">0.8</td>
+<td align="left">1.1</td>
+<td align="left">1.6</td>
+<td align="left">1.1</td>
+<td align="left">0.4</td>
+<td align="left">1.0</td>
+</tr>
+<tr>
+<td align="justify">22</td>
+<td align="justify">F</td>
+<td align="justify">34</td>
+<td align="justify">14</td>
+<td align="justify">IFX, 5-ASA</td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="left">240</td>
+<td align="left">1,730</td>
+<td align="left">160</td>
+<td align="left">11.7</td>
+<td align="left">9.0</td>
+<td align="left">2.5</td>
+<td align="left">0.4</td>
+<td align="left">0.1</td>
+<td align="left">1.4</td>
+<td align="left">1.1</td>
+<td align="left">0.1</td>
+<td align="left">1.3</td>
+</tr>
+<tr>
+<td align="justify">23</td>
+<td align="justify">F</td>
+<td align="justify">51</td>
+<td align="justify">14</td>
+<td align="justify">IFX, AZA</td>
+<td align="justify">Yes</td>
+<td align="justify">Yes</td>
+<td align="left">150</td>
+<td align="left">970</td>
+<td align="left">110</td>
+<td align="left">8.7</td>
+<td align="left">6.8</td>
+<td align="left">2.1</td>
+<td align="left">0.4</td>
+<td align="left">0.1</td>
+<td align="left">2.3</td>
+<td align="left">1.8</td>
+<td align="left">0.2</td>
+<td align="left">1.1</td>
+</tr>
+<tr>
+<td align="justify">24</td>
+<td align="justify">M</td>
+<td align="justify">31</td>
+<td align="justify">4</td>
+<td align="justify">IFX</td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="left">200</td>
+<td align="left">1,130</td>
+<td align="left"><bold>80</bold></td>
+<td align="left">9.0</td>
+<td align="left">5.0</td>
+<td align="left">4.0</td>
+<td align="left">0.7</td>
+<td align="left">0.7</td>
+<td align="left">2.3</td>
+<td align="left">1.7</td>
+<td align="left">0.3</td>
+<td align="left">0.5</td>
+</tr>
+<tr>
+<td align="left">25</td>
+<td align="left">M</td>
+<td align="left">58</td>
+<td align="left">37</td>
+<td align="left">IFX, 5-ASA, AZA</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+<td align="left">200</td>
+<td align="left"><bold>2,030</bold></td>
+<td align="left"><bold>30</bold></td>
+<td align="left"><bold>16.9</bold></td>
+<td align="left"><bold>13.3</bold></td>
+<td align="left">2.8</td>
+<td align="left">0.6</td>
+<td align="left">0.1</td>
+<td align="left">2.6</td>
+<td align="left">1.9</td>
+<td align="left">0.2</td>
+<td align="left">0.9</td>
+</tr>
+<tr>
+<td align="justify">26</td>
+<td align="justify">F</td>
+<td align="justify">48</td>
+<td align="justify">19</td>
+<td align="justify">IFX</td>
+<td align="justify">Yes</td>
+<td align="justify">No</td>
+<td align="left">370</td>
+<td align="left"><bold>2,400</bold></td>
+<td align="left"><bold>780</bold></td>
+<td align="left">9.6</td>
+<td align="left">5.1</td>
+<td align="left">4.4</td>
+<td align="left">0.4</td>
+<td align="left"><bold>&lt;0.06</bold></td>
+<td align="left">3.1</td>
+<td align="left">2.1</td>
+<td align="left"><bold>1.4</bold></td>
+<td align="left">1.4</td>
+</tr>
+<tr>
+<td align="justify">27</td>
+<td align="justify">F</td>
+<td align="justify">22</td>
+<td align="justify">4</td>
+<td align="justify">IFX</td>
+<td align="justify">Yes</td>
+<td align="justify">No</td>
+<td align="left"><bold>790</bold></td>
+<td align="left">1,760</td>
+<td align="left">220</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+</tr>
+<tr>
+<td align="justify">28</td>
+<td align="justify">F</td>
+<td align="justify">33</td>
+<td align="justify">15</td>
+<td align="justify">IFX, AZA</td>
+<td align="justify">Yes</td>
+<td align="justify">Yes</td>
+<td align="left">128</td>
+<td align="left"><bold>513</bold></td>
+<td align="left"><bold>21</bold></td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+</tr>
+<tr>
+<td align="justify">29</td>
+<td align="justify">F</td>
+<td align="justify">46</td>
+<td align="justify">9</td>
+<td align="justify">IFX</td>
+<td align="justify">Yes</td>
+<td align="justify">No</td>
+<td align="left">120</td>
+<td align="left"><bold>460</bold></td>
+<td align="left"><bold>28</bold></td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+</tr>
+<tr>
+<td align="justify">30</td>
+<td align="justify">M</td>
+<td align="justify">22</td>
+<td align="justify">2</td>
+<td align="justify">IFX, AZA</td>
+<td align="justify">No</td>
+<td align="justify">No</td>
+<td align="left">199</td>
+<td align="left">855</td>
+<td align="left"><bold>22</bold></td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+<td align="left">ND</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t001fn001"><p>Lymphocyte subsets are provided in cells/μL, Immunoglobulin levels in g/L. Abnormal values are depicted in bold font. Definition of abbreviations: F, female; M, male 5-ASA, 5-aminosalicylic acid; IFX, infliximab; AZA, azathioprine. Normal values: B cells: 100–400 cells/μl; T cells: 700–1900 cells/μl; NK cells; 100–400 cells/μl; IgG: 7–16 g/L; IgG1: 4.9–11.4 g/L; IgG2: 1.50–6.4 g/L; IgG3: 0.20–1.10 g/L; IgG4: 0.080–1.40 g/L; IgA: 0.70–4.0 g/L; IgA1: 0.6–2.4 g/L; IgA2: 0.1–0.6 g/L; IgM 0.4–2.3 g/L.</p></fn>
+</table-wrap-foot>
+</table-wrap>
+</sec>
+<sec id="sec009">
+<title>Immunohistochemistry of gut tissue biopsies</title>
+<p>Tissue slides were stained with hematoxylin and eosin. Immunohistochemistry was performed using monoclonal antibodies against CD4 (clone SP35), CD3 (2GV6), CD79a (SP18; all from Ventana, Tucson, AZ), CD8 (C8/144 B), CD20 (L26), IgG (rabbit polyclonal; all from Dako Cytomation, Glostrup, Denmark), IgA (rabbit polyclonal, Cell Marque, Rocklin, CA), CD138 (B-A38; IQ Products, Groningen, The Netherlands), and IgM (IgM88; Biogenex, Fremont, CA).</p>
+</sec>
+<sec id="sec010">
+<title>Flowcytometry and cell sorting of blood lymphocytes</title>
+<p>Absolute counts of blood CD4 and CD8 T cells, CD16<sup>+</sup>/56<sup>+</sup> natural killer cells, and CD19<sup>+</sup> B cells were obtained with a diagnostic lyse-no-wash protocol. Eight-color flow cytometric analysis was performed as described previously to detect transitional, naive mature, six memory B cell subsets, plasmablasts and CD21<sup>low</sup>CD38<sup>dim</sup> cells (<xref ref-type="supplementary-material" rid="pone.0160103.s001">S1 Fig</xref>) on a 3-laser FACS LSRII with standardized configuration according to Euroflow protocols (BD Biosciences, San Jose, CA) [<xref ref-type="bibr" rid="pone.0160103.ref023">23</xref>]. Detailed analysis of B cell subsets was performed with IgM-HorV450 (G20-127; BD), IgD-biotin (IA6-2), IgG-PE (G18-145), CD19-PE-Cy7 (SJ25C1), CD19-PerCP-Cy5.5 (SJ25C1), CD21-PE-Cy7 (B-ly4), CD27-PerCP-Cy5.5 (L128), CD27-APC (L128), CD38-APC-H7 (HB7; all from BD Biosciences, San Jose, CA, USA) and IgA-FITC (IS11-8E10; Miltenyi-Biotec GmbH, Germany) [<xref ref-type="bibr" rid="pone.0160103.ref024">24</xref>]. Biotinylated antibodies were visualized with streptavidin-Pac.Orange (Invitrogen).</p>
+<p>Naive mature and natural effector B cells were high-speed cell sorted to greater than 95% purity on a FACSAria I (BD Biosciences), as described previously [<xref ref-type="bibr" rid="pone.0160103.ref025">25</xref>].</p>
+</sec>
+<sec id="sec011">
+<title>Quantification of serum immunoglobulin levels</title>
+<p>Serum IgM, IgG, and IgA levels were measured with an immunoturbidimetric method (Hitachi Analyzer; Roche, Basel, Switzerland). IgG and IgA subclasses were determined using the immunonephelometric method (Sanquin, Amsterdam, The Netherlands).</p>
+</sec>
+<sec id="sec012">
+<title>Molecular analysis of replication history and immunoglobulin heavy chain (<italic>IGH</italic>) transcripts</title>
+<p><italic>IGHA</italic> and <italic>IGHG</italic> transcripts were amplified from PBMC cDNA of patients with Crohn’s disease (n = 4) and healthy controls (n = 4). <italic>IGHV3</italic> and <italic>IGHV4</italic> leader primers and consensus Cα or Cγ reverse primers were used [<xref ref-type="bibr" rid="pone.0160103.ref022">22</xref>].</p>
+<p>DNA was isolated from sorted naive mature and natural effector B cells of patients with Crohn’s disease (n = 4) to analyze the replication history with the kappa-deleting recombination excision circle assay as described previously [<xref ref-type="bibr" rid="pone.0160103.ref025">25</xref>]. In addition, <italic>IGH</italic> gene rearrangements were amplified from DNA of sorted natural effector B cells. PCR products were cloned into the pGEM-T easy vector (Promega, Madison, WI) and prepared for sequencing on an ABIPRISM 3130XL (Applied Biosystems, Carlsbad, CA). Obtained sequences were analyzed with IMGT database (<ext-link ext-link-type="uri" xlink:href="http://imgt.cines.fr/" xlink:type="simple">http://imgt.cines.fr</ext-link>), Joinsolver (<ext-link ext-link-type="uri" xlink:href="https://joinsolver.niaid.nih.gov/" xlink:type="simple">https://joinsolver.niaid.nih.gov</ext-link>) and Bayesian estimation of Antigen-driven SELectIoN (BASELINe; <ext-link ext-link-type="uri" xlink:href="http://selection.med.yale.edu/baseline/" xlink:type="simple">http://selection.med.yale.edu/baseline/</ext-link>). IgA and IgG receptor subclasses were determined using the <italic>IGH</italic> reference sequence (NG_001019).</p>
+</sec>
+<sec id="sec013">
+<title>Statistics</title>
+<p>Statistical analyses were performed using the Mann-Whitney test (SPSS version 18.0), χ2 test or Spearman correlation as indicated in Figure legends. A P-value &lt;0.05 was considered statistically significant.</p>
+</sec>
+</sec>
+<sec id="sec014" sec-type="results">
+<title>Results</title>
+<sec id="sec015">
+<title>Clinical and basic immunological characterization of patients</title>
+<p>In this study, 30 patients with biopsy-confirmed Crohn’s disease (11 males) were included with a mean age of 38.5 yr (range 22–62 yr; <xref ref-type="table" rid="pone.0160103.t001">Table 1</xref>). Patients 1–21 had not received immunosuppressive drugs for at least three months prior to inclusion. Of these 21 patients, 12 patients received 5-ASA medication, 9 were without any medication for Crohn’s disease and 11/21 patients had received systemic immunosuppressive medication in the past. All patients had clinically mild to moderate disease without a need for systemic immune suppressive treatment at the time of study inclusion. Patients 22–30 received infliximab treatment for &gt;6 weeks at study inclusion and were clinically good responders. In 9/30 patients, granulomas were previously detected in ileal or colon biopsies and 16/30 patients had a history of surgical resection of the gut. The average duration of disease at study inclusion was 10.3 years (range 0–34 year). Mean values of B, T and NK cells, as well as mean serum IgM, IgG and IgA levels were within the normal range. The average IgA2 serum level of the patients was increased as compared to controls (0.7 g/L; range 0.1–2.4; normal range 0.1–0.6), with 9/23 patients having levels above the normal range.</p>
+</sec>
+<sec id="sec016">
+<title>B cell localization around granulomas</title>
+<p>All colon tissue biopsies showed inflammation compatible with Crohn’s disease. Haematoxylin and eosin-staining of the granulomas did not show any sign of necrosis. T cells were easily detectable with stainings for CD3, CD4 or CD8, and were located throughout the inflamed tissue, both inside and outside the granulomas (<xref ref-type="fig" rid="pone.0160103.g001">Fig 1</xref>). In agreement with previous observations [<xref ref-type="bibr" rid="pone.0160103.ref007">7</xref>], CD4<sup>+</sup> T cells were more numerous than CD8<sup>+</sup> T cells with a ratio of 4:1. CD20<sup>+</sup> B cells were detectable in intestinal biopsies, but these were restricted to normal lymphoid follicles and were very sparse in the non-granulomatous inflamed tissue (<xref ref-type="fig" rid="pone.0160103.g001">Fig 1</xref>). However, directly surrounding the granulomas, B cells were numerous as visualized with CD20 or CD79a stainings (<xref ref-type="fig" rid="pone.0160103.g001">Fig 1</xref>). Plasma cells are abundantly present in the human gut tissue of healthy individuals, with IgA as their major product [<xref ref-type="bibr" rid="pone.0160103.ref026">26</xref>, <xref ref-type="bibr" rid="pone.0160103.ref027">27</xref>]. Tissue sections from our patients with Crohn’s disease showed numerous CD138<sup>+</sup> plasma cells, both in inflamed and in non-inflamed regions. These plasma cells were not specifically localized near granulomas, but were distributed over the gut tissue with the majority secreting IgA and smaller fractions IgG or IgM (<xref ref-type="supplementary-material" rid="pone.0160103.s002">S2 Fig</xref>). The specific localization of B cells surrounding granulomas indicates involvement of B cells in the immunopathogenesis of granulomatous inflammation in Crohn’s disease.</p>
+<fig id="pone.0160103.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0160103.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>B-cells accumulate around granulomas in affected colon tissue in Crohn’s disease.</title>
+<p><bold>A,</bold> Representative images of colon biopsies with granulomas and non-granulomatous tissue in two patients with Crohn’s disease. <bold>B,</bold> Magnifications of granulomatous tissue from panel A.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0160103.g001" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec017">
+<title>Abnormalities in blood B cell subsets in patients with Crohn’s disease</title>
+<p>To study whether local intestinal inflammation affected B cells systemically, we studied blood B-cell subsets in 21 patients with Crohn’s disease. Flowcytometric analysis revealed normal numbers of total CD19<sup>+</sup> B-cells in patients (n = 21) as compared with healthy controls (n = 28). Further subsetting of these CD19<sup>+</sup> B cells (<xref ref-type="fig" rid="pone.0160103.g002">Fig 2A</xref>) revealed significantly increased numbers of CD38<sup>high</sup>CD24<sup>high</sup> transitional B cells (P = 0.009), while CD27<sup>-</sup>IgD<sup>+</sup> naive mature B cells were normally present (<xref ref-type="fig" rid="pone.0160103.g002">Fig 2B</xref>). Within the antigen-experienced B-cell compartment, IgM<sup>+</sup> memory B cells were low with CD27<sup>+</sup>IgM<sup>+</sup>IgD<sup>+</sup> natural effector B cells being significantly decreased (P&lt;0.001), IgM-only B cells (CD27<sup>+</sup>IgM<sup>+</sup>IgD<sup>-</sup>) not-significantly decreased (P = 0.06). The numbers of class-switched B cell subsets (CD27<sup>+</sup>IgG<sup>+</sup>, CD27<sup>-</sup>IgG<sup>+</sup>, CD27<sup>+</sup>IgA<sup>+</sup> and CD27<sup>-</sup>IgA<sup>+</sup>) and plasma blasts were similar between patients and controls. Large fractions of the patients’ B cells showed low CD21 expression levels and these numbers were significantly higher than in healthy controls (P&lt;0.0001). The increase was not related to disease duration (P = 0.10; <xref ref-type="fig" rid="pone.0160103.g002">Fig 2D</xref>), and a large fraction of these CD21<sup>low</sup> B cells were Ig class switched to IgA or IgG, suggestive of an origin from antigen-experienced B cells (<xref ref-type="fig" rid="pone.0160103.g002">Fig 2C</xref>).</p>
+<fig id="pone.0160103.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0160103.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>Composition of the blood B-cell compartment in patients with Crohn’s disease.</title>
+<p><bold>A.</bold> Schematic overview of peripheral B-cell subsets. <bold>B.</bold> Average numbers of blood B cell subsets of 21 patients affected with Crohn’s disease (black bars) and 28 healthy controls (light grey bars). <bold>C.</bold> Distribution of IgM, IgA and IgG within CD21<sup>low</sup> in patients and controls <bold>D.</bold> Total CD21<sup>low</sup> B cells in relation to disease duration. Statistical analyses were performed with the Mann-Whitney test or Spearman correlation; *, P&lt;0.05; **, P&lt;0.01.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0160103.g002" xlink:type="simple"/>
+</fig>
+<p>To study whether the abnormalities in transitional, natural effector and CD21<sup>low</sup> B cells were associated with surgical treatment and current or past medication, additional analyses were performed following division of the total 21 patients into patients with (n = 10) or without surgical resection (n = 11), into patients currently treated with (n = 12) or without 5-ASA medication (n = 9) and patients with (n = 11) and without (n = 10) a history of systemic medication. All three analyses revealed similar patterns for the separate patient groups (<xref ref-type="supplementary-material" rid="pone.0160103.s003">S3 Fig</xref>), thereby excluding differential effects of these treatments on the blood B-cell compartment.</p>
+</sec>
+<sec id="sec018">
+<title>Impaired generation of natural effector B cells</title>
+<p>Our flowcytometric analysis showed decreased numbers of natural effector B cells in peripheral blood of patients with Crohn’s disease, line with previous findings [<xref ref-type="bibr" rid="pone.0160103.ref019">19</xref>]. To study whether the decline was due to impaired generation of these cells, we analyzed the replication history and somatic hypermutation (SHM) levels in purified cells from four patients (Patient 15, 16, 18 and 19). Naive mature B cells of patients and controls showed a similar replication history of 1–2 cell divisions [<xref ref-type="bibr" rid="pone.0160103.ref025">25</xref>]. However, the patients’ natural effector B cells showed a replication history of only 2 cell division versus 9 in controls (P = 0.002; <xref ref-type="fig" rid="pone.0160103.g003">Fig 3A</xref>). These natural effector B cells carried diverse <italic>IGH</italic> gene rearrangements, with shorter <italic>IGH</italic>-CDR3 sizes than in naive B cells, which is a typical feature of antigen-experienced B cells (<xref ref-type="fig" rid="pone.0160103.g003">Fig 3D</xref>) [<xref ref-type="bibr" rid="pone.0160103.ref022">22</xref>]. Still, the majority of rearrangements amplified from the patients carried unmutated <italic>IGHV</italic> genes (28 of 51 unique rearranged <italic>IGHV</italic>). Moreover, the overall SHM levels were significantly lower than in controls (P&lt;0.0001; <xref ref-type="fig" rid="pone.0160103.g003">Fig 3B</xref>), and hardly higher than in naive mature B cells. The few mutations in patients’ Ig genes were normally targeted (<xref ref-type="supplementary-material" rid="pone.0160103.s006">S1 Table</xref>). However, on top of their low numbers, the mutations in complementarity determining regions (CDR) were not selected for amino acid replacements as is typical seen in healthy controls (P&lt;0.0001; <xref ref-type="fig" rid="pone.0160103.g003">Fig 3C</xref>). Thus, IgM<sup>+</sup>IgD<sup>+</sup>-expressing memory B cells in patients with Crohn’s disease are not only decreased in number, they also display a defects in replication history and SHM.</p>
+<fig id="pone.0160103.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0160103.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>Replication history and SHM levels in <italic>IGHV</italic> genes of natural effector B cells.</title>
+<p><bold>A,</bold> Replication history of naïve and natural effector B cells as assessed using the KREC assay [<xref ref-type="bibr" rid="pone.0160103.ref025">25</xref>]. <bold>B,</bold> <italic>IGHV</italic> mutation frequencies in rearranged <italic>IGH</italic> genes of natural effector B cells in patients and controls (total numbers of sequences indicated between brackets). Grey dots represent unique sequences; red lines represent median values. <bold>C</bold>, Selection for replacement mutation in IGHV-CDR (red line) and IGHV-FR regions (blue lines) as determined with the BASELINe program [<xref ref-type="bibr" rid="pone.0160103.ref028">28</xref>, <xref ref-type="bibr" rid="pone.0160103.ref029">29</xref>]. Solid lines represent patients; dashed lines represent healthy controls. Selection Strengths &gt;0 indicate positive selection. <bold>D,</bold> IGH-CDR3 size distributions. All individual sizes are indicated as grey dots, red lines representing median values. The dashed line represents median values for centroblasts and centrocytes. Sorted cells were analyzed from patients 15, 16, 18 and 19. Controls were published previously [<xref ref-type="bibr" rid="pone.0160103.ref030">30</xref>, <xref ref-type="bibr" rid="pone.0160103.ref031">31</xref>]. Statistical analysis was performed with the Mann-Whitney test; *, P&lt;0.05; **, P&lt;0.01; ***, P&lt;0.001; ****, P&lt;0.0001.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0160103.g003" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec019">
+<title>Increased SHM levels in Ig genes of switched memory B cells</title>
+<p>In contrast to IgM<sup>+</sup> memory B cells, Ig class-switched memory B cells were normally present in blood of patients with Crohn’s disease (<xref ref-type="fig" rid="pone.0160103.g002">Fig 2</xref>) [<xref ref-type="bibr" rid="pone.0160103.ref019">19</xref>]. Their IgA and IgG transcripts displayed a diverse usage of <italic>IGHV3</italic> and <italic>IGHV4</italic> subgroups with CDR3 size distributions similar to those of controls and typical for antigen-experienced B cells with a median of 15 amino acids (<xref ref-type="supplementary-material" rid="pone.0160103.s005">S5 Fig</xref>). These transcripts showed high levels of SHM, which appeared to be normally targeted to the typical sequence motifs (<xref ref-type="supplementary-material" rid="pone.0160103.s006">S1 Table</xref>). In addition, nucleotide substitution spectra and transition/transversion ratios did not differ between patients and controls. To determine whether these transcripts showed signs of antigen selection, we analyzed selection for replacement mutations using the BASELINE program. Similar to healthy controls, sequences derived from patients with Crohn’s disease showed positive selection for replacement mutations in CDR and negative selection in framework regions (FR) (<xref ref-type="supplementary-material" rid="pone.0160103.s005">S5C Fig</xref>).</p>
+<p>To study whether the high SHM levels were the result of altered IgG and IgA subclass usage, we analyzed these in the rearranged transcripts [<xref ref-type="bibr" rid="pone.0160103.ref032">32</xref>, <xref ref-type="bibr" rid="pone.0160103.ref033">33</xref>]. Patients with Crohn’s disease showed increased IgA1 and IgG2 usage, to the expense of IgA2 and IgG3 (<xref ref-type="fig" rid="pone.0160103.g004">Fig 4B</xref>). Still, these altered distributions did not underlie the difference in SHM levels. IgA1 and IgA2, as well as IgG1 and IgG2 transcripts of the patients carried more SHM than those of controls (<xref ref-type="fig" rid="pone.0160103.g004">Fig 4C</xref>). More specifically, a substantial fraction of IgA2 transcripts from controls was hardly mutated, and this fraction was nearly absent in patients with Crohn’s disease. In conclusion, patients with Crohn’s disease show increased levels of SHM with otherwise normal targeting and selection for replacement mutations. This was independent of the concomitant reduction in IgA2 and IgG3 subclass usage.</p>
+<fig id="pone.0160103.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0160103.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title>IgA and IgG subclass analysis.</title>
+<p><bold>A,</bold> Schematic representation of the constant region of the human IGH locus. <bold>B,</bold> Distribution of IgA and IgG subclass use in switched transcripts of healthy controls and patients with Crohn’s disease. Total numbers of analyzed sequences are indicated in the middle of the plots. χ<sup>2</sup> Test was performed to analyze differences in distributions. <bold>C,</bold> Combined <italic>IGHV</italic> mutation frequencies in IgA and IgG transcripts in patients and controls (total numbers of sequences indicated between brackets). Grey dots represent unique sequences; red lines represent median values. Statistical analysis was performed with the Mann-Whitney test; *, P&lt;0.05; **, P&lt;0.01; ***, P&lt;0.001.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0160103.g004" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec020">
+<title>Normalization of blood B-cell subsets in infliximab-treated patients</title>
+<p>Previous observations indicated normalization of spleen function and levels of circulating IgM+ memory B cells in Crohn’s disease patients following infliximab therapy [<xref ref-type="bibr" rid="pone.0160103.ref034">34</xref>]. To study whether successful treatment normalized the total peripheral B-cell compartment, we phenotyped blood B cells in 9 patients that were receiving infliximab (patients 21–30; <xref ref-type="table" rid="pone.0160103.t001">Table 1</xref>). Infliximab was administered once every eight weeks for a long period of time (range 8 months-10 years), and all patients were in clinical response after treatment. In contrast to patients not receiving infliximab, transitional B cells and natural effector B cells were normalized to levels comparable with healthy controls (<xref ref-type="fig" rid="pone.0160103.g005">Fig 5A</xref>). However, IgM-only B cell numbers were still low, and CD21<sup>low</sup> B cells remained increased as compared to healthy controls. Within CD21<sup>low</sup>, the IgM, IgA and the IgG expressing subsets were higher in number than in healthy controls. Patients treated with infliximab showed a further increase in the IgA subset, with an accompanied (non-significant) decrease in IgM (<xref ref-type="fig" rid="pone.0160103.g005">Fig 5B</xref>). A substantial fraction of the CD21<sup>low</sup> subset expressed CD27, and CD27<sup>+</sup> and CD27<sup>-</sup> was similar between controls and patients (<xref ref-type="supplementary-material" rid="pone.0160103.s004">S4A Fig</xref>). In absolute numbers, both fractions were elevated in patients. Thus, patients with Crohn’s disease show systemic abnormalities in their B cell compartments, which appear almost completely recovered by successful infliximab treatment.</p>
+<fig id="pone.0160103.g005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0160103.g005</object-id>
+<label>Fig 5</label>
+<caption>
+<title>Effects of infliximab on blood B-cell and CD21<sup>low</sup> compartment.</title>
+<p><bold>A</bold>, Blood B-cell compartments in patients under treatment with infliximab. <bold>B,</bold> Absolute total numbers of IgM, IgA and IgG with low CD21 expression in controls, patients and patients under treatment with infliximab. Bars represent mean values ±SEM. Statistical analysis was performed with the Mann-Whitney test; *, P&lt;0.05; **, P&lt;0.01; ***, P&lt;0.001.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0160103.g005" xlink:type="simple"/>
+</fig>
+</sec>
+</sec>
+<sec id="sec021" sec-type="conclusions">
+<title>Discussion</title>
+<p>In this study, we demonstrate that patients with Crohn’s disease have an infiltration of B cells around granulomas and an altered B-cell compartment in the peripheral blood. While IgM memory B-cell formation was impaired, Ig class switched B cells showed molecular sings of chronic stimulation. Importantly, alterations in the peripheral B-cell compartment normalized after treating inflammation effectively with TNFα-blockers.</p>
+<p>Our findings of B cells surrounding granulomas in Crohn’s disease extend previous observations from the 1980s [<xref ref-type="bibr" rid="pone.0160103.ref007">7</xref>], and more recent ones from pediatric patients with Crohn’s disease with <italic>NOD2</italic> gene mutations [<xref ref-type="bibr" rid="pone.0160103.ref035">35</xref>]. These B cells appear to be lymphocytes and not plasma cells and localize specifically around the granulomas. Still, the origin and types of B cell subsets remain unclear. Large amounts of B cells were also found to be present around the granulomas in sarcoidosis [<xref ref-type="bibr" rid="pone.0160103.ref008">8</xref>], and consequently researchers have evaluated treatment with anti-CD20 therapy (e.g. with rituximab) [<xref ref-type="bibr" rid="pone.0160103.ref036">36</xref>]. It is possible that these B cells are crucial for the formation of granulomas. This is supported by studies in mouse models that were capable of granuloma formation in the absence of T cells, but not in the absence of B cells [<xref ref-type="bibr" rid="pone.0160103.ref037">37</xref>]. Furthermore, granulomas are found in a large fraction of patients with antibody deficiencies in the presence of B cells (esp. Common Variable Immunodeficiency; CVID), while these have not been reported in patients with X-linked agammaglobulinemia, who lack circulating B cells due to a block in differentiation of precursor B cells [<xref ref-type="bibr" rid="pone.0160103.ref038">38</xref>]. How these B cells would function in the formation of granulomas remains unclear. B-cell depletion therapy seems to induce and exacerbate colitis [<xref ref-type="bibr" rid="pone.0160103.ref039">39</xref>, <xref ref-type="bibr" rid="pone.0160103.ref040">40</xref>], while immunoglobulin substitution can induce rapid dampening of inflammation in patients with Crohn’s disease [<xref ref-type="bibr" rid="pone.0160103.ref041">41</xref>]. Thus, it is well-possible that the local B cells have a regulatory function to control inflammation [<xref ref-type="bibr" rid="pone.0160103.ref042">42</xref>].</p>
+<p>Our patients showed alterations in blood B cell subsets in absence of systemic immunosuppressive therapy. One of these was a strong reduction in circulating IgM+ memory B cells, which was the result of impaired generation rather than increased loss, because the few remaining IgM memory ‘natural effector’ B cells showed severely reduced replication history, SHM levels and absence of selection for replacement mutations in CDR. The loss of IgM memory B cells was previously attributed to impaired spleen function [<xref ref-type="bibr" rid="pone.0160103.ref019">19</xref>]. However, a large fraction of these ‘natural effector’ B cells is dependent on T-cell help and more likely originates from germinal center reactions [<xref ref-type="bibr" rid="pone.0160103.ref021">21</xref>, <xref ref-type="bibr" rid="pone.0160103.ref022">22</xref>]. Considering the strongly decreased natural effector B-cell numbers in our patients, it is therefore likely that in addition to IgM responses in the spleen, also germinal center responses are impaired in the generation of IgM<sup>+</sup> memory B cells in patients with Crohn’s disease.</p>
+<p>In contrast to IgM<sup>+</sup> memory, transitional and CD21<sup>low</sup> B-cell numbers were increased in our patients. Higher numbers of transitional cells were previously observed in patients with other chronic inflammatory diseases, including sarcoidosis and SLE [<xref ref-type="bibr" rid="pone.0160103.ref008">8</xref>, <xref ref-type="bibr" rid="pone.0160103.ref009">9</xref>, <xref ref-type="bibr" rid="pone.0160103.ref043">43</xref>]. This increase could reflect increased B-cell output from the bone marrow. Still, this did not result in higher numbers of circulating mature B cells and might be due to inability of these transitional B cells to further mature. CD21<sup>low</sup> B cells are peculiar cells that have been described to be functionally anergic with the downregulation of CD21 suppressing their responsiveness and decreasing their survival [<xref ref-type="bibr" rid="pone.0160103.ref022">22</xref>, <xref ref-type="bibr" rid="pone.0160103.ref044">44</xref>]. The increase in transitional B cells could therefore be a compensation for the loss of mature B cells through downregulation of CD21. While CD21<sup>low</sup> B cells are scarce in healthy controls, their numbers are increased during infections, autoimmune diseases [<xref ref-type="bibr" rid="pone.0160103.ref022">22</xref>, <xref ref-type="bibr" rid="pone.0160103.ref045">45</xref>, <xref ref-type="bibr" rid="pone.0160103.ref046">46</xref>], CVID with autoimmunity and Down syndrome [<xref ref-type="bibr" rid="pone.0160103.ref044">44</xref>, <xref ref-type="bibr" rid="pone.0160103.ref046">46</xref>–<xref ref-type="bibr" rid="pone.0160103.ref048">48</xref>]. As these cells were not increased in patients with sarcoidosis [<xref ref-type="bibr" rid="pone.0160103.ref008">8</xref>], CD21<sup>low</sup> B cells could represent a marker of distinct pathophysiology between these two granulomatous inflammatory diseases.</p>
+<p>The numbers of natural effector B cells normalized under infliximab therapy, an observation that was made previously as well and was associated with restoration of spleen function [<xref ref-type="bibr" rid="pone.0160103.ref034">34</xref>]. More recently, Li and colleagues also confirmed these low numbers of pre-switched memory B cells in inflammatory bowel disease and its restoration with TNFα-blockers [<xref ref-type="bibr" rid="pone.0160103.ref049">49</xref>]. Thus, infliximab therapy either directly or indirectly by dampening inflammation restores IgM memory in patients with Crohn’s disease. Whether natural effector B cells can predict successful therapeutic outcome would need to be investigated in future studies with longitudinal follow-up of patients. Treatment with 5-ASA did not show this effect on the B-cell compartment. This could be due to the difference in therapeutic mechanisms or the merely local application of 5-ASA medication in contrast to systemic effects of infliximab. Alternatively, infliximab can induce and maintain mucosal healing [<xref ref-type="bibr" rid="pone.0160103.ref050">50</xref>]. Furthermore, the CD21<sup>low</sup> population was the aberrant B-cell subset in our patient group that did not normalize during treatment with infliximab, suggesting that the process to downregulate CD21 is either not affected by TNFα-blockers, or is maintained to dampen inflammation.</p>
+<p>A large fraction of CD21<sup>low</sup> B cells was Ig class switched, suggesting their origin from memory B cells. Indeed, the increased SHM levels in IgA and IgG transcripts reflected abnormally high or strong activation of these class-switched memory cells. SHM levels are tightly regulated and even in individuals continuously exposed to parasites these are not increased [<xref ref-type="bibr" rid="pone.0160103.ref032">32</xref>, <xref ref-type="bibr" rid="pone.0160103.ref033">33</xref>]. Notably, IgA transcripts in patients with Crohn’s disease were highly mutated, and the frequencies of hypomutated transcripts were lower than in healthy controls. A substantial fraction of blood IgA+ memory B cells carries polyreactive immunoglobulins. These are typically highly mutated and bind strongly to mucosa-colonizing bacteria [<xref ref-type="bibr" rid="pone.0160103.ref051">51</xref>]. Despite the high SHM levels, the Ig transcripts from patients with Crohn’s disease did not show signs of additional selection for replacement mutations in CDR regions. This is suggestive of a lack in additional affinity maturation, and the result of abnormal and chronic activation in patients with Crohn’s disease and in previously studied sarcoidosis patients [<xref ref-type="bibr" rid="pone.0160103.ref008">8</xref>]. Despite the signs of chronic stimulation, total numbers of IgA and IgG memory B cells were not increased in blood of patients with Crohn’s disease. This is potentially due to their infiltration into tissue. Alternatively, these cells could be silenced by downregulating CD21 expression. This would make the cells more susceptible to cell death and would explain, at least in part, the expansion of the CD21<sup>low</sup> B cell population.</p>
+</sec>
+<sec id="sec022" sec-type="conclusions">
+<title>Conclusion</title>
+<p>Our study demonstrates distinct B-cell maturation alterations in both local inflamed tissue and in peripheral blood of patients with Crohn’s disease. These effects were independent of 5-ASA treatment or past systemic therapy and surgical resections, and seemed homogeneous in our study population. Especially the Ig class-switched B cells show signs of chronic stimulation, while the generation of IgM memory B cells is impaired. Moreover, clinical improvement is heralded by normalization of the elevated circulating transitional and natural effector B cells in response to TNFα-blockers. Thus, through dissection of the local and systemic B cell compartments, this study provides new insights into their role in chronic inflammation. Specifically, blood B-cell deviations could represent good markers to predict treatment success before or early after start of infliximab or other novel therapeutics in Crohn’s disease.</p>
+</sec>
+<sec id="sec023">
+<title>Supporting Information</title>
+<supplementary-material id="pone.0160103.s001" mimetype="application/eps" position="float" xlink:href="info:doi/10.1371/journal.pone.0160103.s001" xlink:type="simple">
+<label>S1 Fig</label>
+<caption>
+<title/>
+<p><bold>Flowcytometric gating strategy for B-cell subsets in a representative healthy control (A) and a patient with Crohn’s disease (B)</bold>. B cells defined as CD19+ lymphocytes and further subsetted into two naive subsets (transitional cells and naive mature cells), six memory subsets, plasma cells and CD38<sup>dim</sup>C21<sup>low</sup> cells. Non-switched memory B cells were separated into natural effector (CD27<sup>+</sup>IgM<sup>+</sup>IgD<sup>+</sup>) and IgM-only cells (CD27<sup>+</sup>IgM<sup>+</sup>IgD<sup>-</sup>). IgA and IgG switched memory B cells were further separated into CD27<sup>-</sup> and CD27<sup>+</sup> subsets.</p>
+<p>(EPS)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0160103.s002" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0160103.s002" xlink:type="simple">
+<label>S2 Fig</label>
+<caption>
+<title/>
+<p><bold>Immunohistological analysis of plasma cells in sections with (A) and without granulomas (B) in colon biopsies of two patients with Crohn’s disease.</bold> Both tissues show presence of CD138<sup>+</sup> plasma cells, with the majority producing IgA, to a lesser extent IgG and low frequencies IgM.</p>
+<p>(TIF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0160103.s003" mimetype="application/eps" position="float" xlink:href="info:doi/10.1371/journal.pone.0160103.s003" xlink:type="simple">
+<label>S3 Fig</label>
+<caption>
+<title/>
+<p><bold>Blood B-cell compartments in (A) patients with a history of resection, (B) patients under treatment with 5-ASA medication, and (C) patients with a history of systemic immunosuppressive medication.</bold> Bars represent mean values ±SEM. No significant differences were found for any subset between Crohn’s patients with or with the indicated mode of treatment (Mann-Whitney U test).</p>
+<p>(EPS)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0160103.s004" mimetype="application/eps" position="float" xlink:href="info:doi/10.1371/journal.pone.0160103.s004" xlink:type="simple">
+<label>S4 Fig</label>
+<caption>
+<title>CD21<sup>low</sup> population in controls, patients on infliximab and Crohn’s disease patients without systemic treatment.</title>
+<p><bold>A,</bold> Relative distribution of CD27<sup>-</sup> and CD27<sup>+</sup> cells within the CD21<sup>low</sup> compartment. <bold>B,</bold> Absolute cell counts of CD27<sup>-</sup> and CD27<sup>+</sup> cells within CD21<sup>low</sup> compartment. Bars represent mean values ±SEM.</p>
+<p>(EPS)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0160103.s005" mimetype="application/eps" position="float" xlink:href="info:doi/10.1371/journal.pone.0160103.s005" xlink:type="simple">
+<label>S5 Fig</label>
+<caption>
+<title>Somatic hypermutation analysis of IgM, IgA and IgG B cells.</title>
+<p><bold>Somatic hypermutation levels in IGHV genes of rearranged IgA (A) and IgG (B) transcripts of four patients with Crohn’s disease and four healthy controls.</bold> Grey dots represent unique sequences; red lines represent median values. <bold>C,</bold> Selection for replacement mutation in IGHV-CDR (red line) and IGHV-FR regions (blue lines) as determined with the BASELINe program [<xref ref-type="bibr" rid="pone.0160103.ref028">28</xref>, <xref ref-type="bibr" rid="pone.0160103.ref029">29</xref>]. Solid lines represent patients; dashed lines represent healthy controls. Selection Strengths &gt;0 indicate positive selection. <bold>D</bold>, IGH-CDR3 size distributions. All individual sizes are indicated as grey dots, red lines representing median values. The dashed line represents median values for centroblasts and centrocytes from controls (22).</p>
+<p>(EPS)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0160103.s006" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" position="float" xlink:href="info:doi/10.1371/journal.pone.0160103.s006" xlink:type="simple">
+<label>S1 Table</label>
+<caption>
+<title>Targeting and selection of individual mutations in rearranged IGHV.</title>
+<p>(DOCX)</p>
+</caption>
+</supplementary-material>
+</sec>
+</body>
+<back>
+<ack>
+<p>The authors thank Dr. D. van den Heuvel (Erasmus MC, Rotterdam, The Netherlands) for her advice on analysis, and the (research)nurses and gastroenterologists of the Department of Gastroenterology at the Ikazia Hospital (Rotterdam, The Netherlands) and the Department of Gasteroenterology at the Alfred Hospital for support with patient inclusion. This study was performed in the framework of the Molecular Medicine Postgraduate School of the Erasmus MC.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0160103.ref001"><label>1</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Baumgart</surname> <given-names>DC</given-names></name>, <name name-style="western"><surname>Sandborn</surname> <given-names>WJ</given-names></name>. <article-title>Crohn's disease</article-title>. <source>Lancet</source>. <year>2012</year>;<volume>380</volume>(<issue>9853</issue>):<fpage>1590</fpage>–<lpage>605</lpage>. Epub 2012/08/24. doi: S0140-6736(12)60026-9 [pii] <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0140-6736(12)60026-9" xlink:type="simple">10.1016/S0140-6736(12)60026-9</ext-link></comment> <object-id pub-id-type="pmid">22914295</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref002"><label>2</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Baumgart</surname> <given-names>DC</given-names></name>, <name name-style="western"><surname>Carding</surname> <given-names>SR</given-names></name>. <article-title>Inflammatory bowel disease: cause and immunobiology</article-title>. <source>Lancet</source>. <year>2007</year>;<volume>369</volume>(<issue>9573</issue>):<fpage>1627</fpage>–<lpage>40</lpage>. <object-id pub-id-type="pmid">17499605</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref003"><label>3</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Geremia</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Biancheri</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Allan</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Corazza</surname> <given-names>GR</given-names></name>, <name name-style="western"><surname>Di Sabatino</surname> <given-names>A</given-names></name>. <article-title>Innate and adaptive immunity in inflammatory bowel disease</article-title>. <source>Autoimmunity reviews</source>. <year>2014</year>;<volume>13</volume>(<issue>1</issue>):<fpage>3</fpage>–<lpage>10</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.autrev.2013.06.004" xlink:type="simple">10.1016/j.autrev.2013.06.004</ext-link></comment> <object-id pub-id-type="pmid">23774107</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref004"><label>4</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hisamatsu</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Kanai</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Mikami</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Yoneno</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Matsuoka</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Hibi</surname> <given-names>T</given-names></name>. <article-title>Immune aspects of the pathogenesis of inflammatory bowel disease</article-title>. <source>Pharmacol Ther</source>. <year>2013</year>;<volume>137</volume>(<issue>3</issue>):<fpage>283</fpage>–<lpage>97</lpage>. Epub 2012/10/30. doi: S0163-7258(12)00233-1 [pii] <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.pharmthera.2012.10.008" xlink:type="simple">10.1016/j.pharmthera.2012.10.008</ext-link></comment> <object-id pub-id-type="pmid">23103332</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref005"><label>5</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Heresbach</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Alexandre</surname> <given-names>JL</given-names></name>, <name name-style="western"><surname>Branger</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Bretagne</surname> <given-names>JF</given-names></name>, <name name-style="western"><surname>Cruchant</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Dabadie</surname> <given-names>A</given-names></name>, <etal>et al</etal>. <article-title>Frequency and significance of granulomas in a cohort of incident cases of Crohn's disease</article-title>. <source>Gut</source>. <year>2005</year>;<volume>54</volume>(<issue>2</issue>):<fpage>215</fpage>–<lpage>22</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1136/gut.2004.041715" xlink:type="simple">10.1136/gut.2004.041715</ext-link></comment> <object-id pub-id-type="pmid">15647184</object-id>; PubMed Central PMCID: PMC1774855.</mixed-citation></ref>
+<ref id="pone.0160103.ref006"><label>6</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lennard-Jones</surname> <given-names>JE</given-names></name>, <name name-style="western"><surname>Lockhart-Mummery</surname> <given-names>HE</given-names></name>, <name name-style="western"><surname>Morson</surname> <given-names>BC</given-names></name>. <article-title>Clinical and pathological differentiation of Crohn's disease and proctocolitis</article-title>. <source>Gastroenterology</source>. <year>1968</year>;<volume>54</volume>(<issue>6</issue>):<fpage>1162</fpage>–<lpage>70</lpage>. Epub 1968/06/01. <object-id pub-id-type="pmid">5656336</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref007"><label>7</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Geboes</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>van den Oord</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>De Wolf-Peeters</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Desmet</surname> <given-names>V</given-names></name>, <name name-style="western"><surname>Rutgeerts</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Janssens</surname> <given-names>J</given-names></name>, <etal>et al</etal>. <article-title>The cellular composition of granulomas in mesenteric lymph nodes from patients with Crohn's disease</article-title>. <source>Virchows Archiv A, Pathological anatomy and histopathology</source>. <year>1986</year>;<volume>409</volume>(<issue>5</issue>):<fpage>679</fpage>–<lpage>92</lpage>. <object-id pub-id-type="pmid">3092463</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref008"><label>8</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kamphuis</surname> <given-names>LS</given-names></name>, <name name-style="western"><surname>van Zelm</surname> <given-names>MC</given-names></name>, <name name-style="western"><surname>Lam</surname> <given-names>KH</given-names></name>, <name name-style="western"><surname>Rimmelzwaan</surname> <given-names>GF</given-names></name>, <name name-style="western"><surname>Baarsma</surname> <given-names>GS</given-names></name>, <name name-style="western"><surname>Dik</surname> <given-names>WA</given-names></name>, <etal>et al</etal>. <article-title>Perigranuloma localization and abnormal maturation of B cells: emerging key players in sarcoidosis?</article-title> <source>American journal of respiratory and critical care medicine</source>. <year>2013</year>;<volume>187</volume>(<issue>4</issue>):<fpage>406</fpage>–<lpage>16</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1164/rccm.201206-1024OC" xlink:type="simple">10.1164/rccm.201206-1024OC</ext-link></comment> <object-id pub-id-type="pmid">23239158</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref009"><label>9</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Saussine</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Tazi</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Feuillet</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Rybojad</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Juillard</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Bergeron</surname> <given-names>A</given-names></name>, <etal>et al</etal>. <article-title>Active chronic sarcoidosis is characterized by increased transitional blood B cells, increased IL-10-producing regulatory B cells and high BAFF levels</article-title>. <source>PloS one</source>. <year>2012</year>;<volume>7</volume>(<issue>8</issue>):<fpage>e43588</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0043588" xlink:type="simple">10.1371/journal.pone.0043588</ext-link></comment> <object-id pub-id-type="pmid">22927996</object-id>; PubMed Central PMCID: PMC3425471.</mixed-citation></ref>
+<ref id="pone.0160103.ref010"><label>10</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lee</surname> <given-names>NS</given-names></name>, <name name-style="western"><surname>Barber</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Akula</surname> <given-names>SM</given-names></name>, <name name-style="western"><surname>Sigounas</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Kataria</surname> <given-names>YP</given-names></name>, <name name-style="western"><surname>Arce</surname> <given-names>S</given-names></name>. <article-title>Disturbed homeostasis and multiple signaling defects in the peripheral blood B-cell compartment of patients with severe chronic sarcoidosis</article-title>. <source>Clin Vaccine Immunol</source>. <year>2011</year>;<volume>18</volume>(<issue>8</issue>):<fpage>1306</fpage>–<lpage>16</lpage>. Epub 2011/06/10. doi: CVI.05118-11 [pii] <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1128/CVI.05118-11" xlink:type="simple">10.1128/CVI.05118-11</ext-link></comment> <object-id pub-id-type="pmid">21653741</object-id>; PubMed Central PMCID: PMC3147362.</mixed-citation></ref>
+<ref id="pone.0160103.ref011"><label>11</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sieber</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Herrmann</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Zeitz</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Teichmann</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Ruhl</surname> <given-names>H</given-names></name>. <article-title>Abnormalities of B-cell activation and immunoregulation in patients with Crohn's disease</article-title>. <source>Gut</source>. <year>1984</year>;<volume>25</volume>(<issue>11</issue>):<fpage>1255</fpage>–<lpage>61</lpage>. <object-id pub-id-type="pmid">6238880</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref012"><label>12</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Quinton</surname> <given-names>JF</given-names></name>, <name name-style="western"><surname>Sendid</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Reumaux</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Duthilleul</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Cortot</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Grandbastien</surname> <given-names>B</given-names></name>, <etal>et al</etal>. <article-title>Anti-Saccharomyces cerevisiae mannan antibodies combined with antineutrophil cytoplasmic autoantibodies in inflammatory bowel disease: prevalence and diagnostic role</article-title>. <source>Gut</source>. <year>1998</year>;<volume>42</volume>(<issue>6</issue>):<fpage>788</fpage>–<lpage>91</lpage>. Epub 1998/08/06. <object-id pub-id-type="pmid">9691915</object-id>; PubMed Central PMCID: PMC1727156.</mixed-citation></ref>
+<ref id="pone.0160103.ref013"><label>13</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>van Schaik</surname> <given-names>FD</given-names></name>, <name name-style="western"><surname>Oldenburg</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Hart</surname> <given-names>AR</given-names></name>, <name name-style="western"><surname>Siersema</surname> <given-names>PD</given-names></name>, <name name-style="western"><surname>Lindgren</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Grip</surname> <given-names>O</given-names></name>, <etal>et al</etal>. <article-title>Serological markers predict inflammatory bowel disease years before the diagnosis</article-title>. <source>Gut</source>. <year>2013</year>;<volume>62</volume>(<issue>5</issue>):<fpage>683</fpage>–<lpage>8</lpage>. Epub 2012/07/31. doi: gutjnl-2012-302717 [pii] <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1136/gutjnl-2012-302717" xlink:type="simple">10.1136/gutjnl-2012-302717</ext-link></comment> <object-id pub-id-type="pmid">22842615</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref014"><label>14</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Harris</surname> <given-names>DP</given-names></name>, <name name-style="western"><surname>Haynes</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Sayles</surname> <given-names>PC</given-names></name>, <name name-style="western"><surname>Duso</surname> <given-names>DK</given-names></name>, <name name-style="western"><surname>Eaton</surname> <given-names>SM</given-names></name>, <name name-style="western"><surname>Lepak</surname> <given-names>NM</given-names></name>, <etal>et al</etal>. <article-title>Reciprocal regulation of polarized cytokine production by effector B and T cells</article-title>. <source>Nat Immunol</source>. <year>2000</year>;<volume>1</volume>(<issue>6</issue>):<fpage>475</fpage>–<lpage>82</lpage>. Epub 2001/03/23. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/82717" xlink:type="simple">10.1038/82717</ext-link></comment> <object-id pub-id-type="pmid">11101868</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref015"><label>15</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mizoguchi</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Bhan</surname> <given-names>AK</given-names></name>. <article-title>A case for regulatory B cells</article-title>. <source>J Immunol</source>. <year>2006</year>;<volume>176</volume>(<issue>2</issue>):<fpage>705</fpage>–<lpage>10</lpage>. Epub 2006/01/06. doi: 176/2/705 [pii]. <object-id pub-id-type="pmid">16393950</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref016"><label>16</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mizoguchi</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Mizoguchi</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Preffer</surname> <given-names>FI</given-names></name>, <name name-style="western"><surname>Bhan</surname> <given-names>AK</given-names></name>. <article-title>Regulatory role of mature B cells in a murine model of inflammatory bowel disease</article-title>. <source>International immunology</source>. <year>2000</year>;<volume>12</volume>(<issue>5</issue>):<fpage>597</fpage>–<lpage>605</lpage>. <object-id pub-id-type="pmid">10784605</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref017"><label>17</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Olson</surname> <given-names>TS</given-names></name>, <name name-style="western"><surname>Bamias</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Naganuma</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Rivera-Nieves</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Burcin</surname> <given-names>TL</given-names></name>, <name name-style="western"><surname>Ross</surname> <given-names>W</given-names></name>, <etal>et al</etal>. <article-title>Expanded B cell population blocks regulatory T cells and exacerbates ileitis in a murine model of Crohn disease</article-title>. <source>J Clin Invest</source>. <year>2004</year>;<volume>114</volume>(<issue>3</issue>):<fpage>389</fpage>–<lpage>98</lpage>. Epub 2004/08/03. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1172/JCI20855" xlink:type="simple">10.1172/JCI20855</ext-link></comment> <object-id pub-id-type="pmid">15286805</object-id>; PubMed Central PMCID: PMC484978.</mixed-citation></ref>
+<ref id="pone.0160103.ref018"><label>18</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>LeBien</surname> <given-names>TW</given-names></name>, <name name-style="western"><surname>Tedder</surname> <given-names>TF</given-names></name>. <article-title>B lymphocytes: how they develop and function</article-title>. <source>Blood</source>. <year>2008</year>;<volume>112</volume>(<issue>5</issue>):<fpage>1570</fpage>–<lpage>80</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1182/blood-2008-02-078071" xlink:type="simple">10.1182/blood-2008-02-078071</ext-link></comment> <object-id pub-id-type="pmid">18725575</object-id>; PubMed Central PMCID: PMC2518873.</mixed-citation></ref>
+<ref id="pone.0160103.ref019"><label>19</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Di Sabatino</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Rosado</surname> <given-names>MM</given-names></name>, <name name-style="western"><surname>Ciccocioppo</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Cazzola</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Morera</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Corazza</surname> <given-names>GR</given-names></name>, <etal>et al</etal>. <article-title>Depletion of immunoglobulin M memory B cells is associated with splenic hypofunction in inflammatory bowel disease</article-title>. <source>The American journal of gastroenterology</source>. <year>2005</year>;<volume>100</volume>(<issue>8</issue>):<fpage>1788</fpage>–<lpage>95</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1572-0241.2005.41939.x" xlink:type="simple">10.1111/j.1572-0241.2005.41939.x</ext-link></comment> <object-id pub-id-type="pmid">16086716</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref020"><label>20</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kruetzmann</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Rosado</surname> <given-names>MM</given-names></name>, <name name-style="western"><surname>Weber</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Germing</surname> <given-names>U</given-names></name>, <name name-style="western"><surname>Tournilhac</surname> <given-names>O</given-names></name>, <name name-style="western"><surname>Peter</surname> <given-names>HH</given-names></name>, <etal>et al</etal>. <article-title>Human immunoglobulin M memory B cells controlling Streptococcus pneumoniae infections are generated in the spleen</article-title>. <source>J Exp Med</source>. <year>2003</year>;<volume>197</volume>(<issue>7</issue>):<fpage>939</fpage>–<lpage>45</lpage>. Epub 2003/04/12. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1084/jem.20022020" xlink:type="simple">10.1084/jem.20022020</ext-link></comment> [pii]. <object-id pub-id-type="pmid">12682112</object-id>; PubMed Central PMCID: PMC2193885.</mixed-citation></ref>
+<ref id="pone.0160103.ref021"><label>21</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Weller</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Braun</surname> <given-names>MC</given-names></name>, <name name-style="western"><surname>Tan</surname> <given-names>BK</given-names></name>, <name name-style="western"><surname>Rosenwald</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Cordier</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Conley</surname> <given-names>ME</given-names></name>, <etal>et al</etal>. <article-title>Human blood IgM "memory" B cells are circulating splenic marginal zone B cells harboring a prediversified immunoglobulin repertoire</article-title>. <source>Blood</source>. <year>2004</year>;<volume>104</volume>(<issue>12</issue>):<fpage>3647</fpage>–<lpage>54</lpage>. <object-id pub-id-type="pmid">15191950</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref022"><label>22</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Berkowska</surname> <given-names>MA</given-names></name>, <name name-style="western"><surname>Driessen</surname> <given-names>GJ</given-names></name>, <name name-style="western"><surname>Bikos</surname> <given-names>V</given-names></name>, <name name-style="western"><surname>Grosserichter-Wagener</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Stamatopoulos</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Cerutti</surname> <given-names>A</given-names></name>, <etal>et al</etal>. <article-title>Human memory B cells originate from three distinct germinal center-dependent and -independent maturation pathways</article-title>. <source>Blood</source>. <year>2011</year>. <object-id pub-id-type="pmid">21690558</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref023"><label>23</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kalina</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Flores-Montero</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>van der Velden</surname> <given-names>VH</given-names></name>, <name name-style="western"><surname>Martin-Ayuso</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Bottcher</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Ritgen</surname> <given-names>M</given-names></name>, <etal>et al</etal>. <article-title>EuroFlow standardization of flow cytometer instrument settings and immunophenotyping protocols</article-title>. <source>Leukemia</source>. <year>2012</year>;<volume>26</volume>(<issue>9</issue>):<fpage>1986</fpage>–<lpage>2010</lpage>. Epub 2012/09/06. doi: leu2012122 [pii] <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/leu.2012.122" xlink:type="simple">10.1038/leu.2012.122</ext-link></comment> <object-id pub-id-type="pmid">22948490</object-id>; PubMed Central PMCID: PMC3437409.</mixed-citation></ref>
+<ref id="pone.0160103.ref024"><label>24</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Berkowska</surname> <given-names>MA</given-names></name>, <name name-style="western"><surname>Heeringa</surname> <given-names>JJ</given-names></name>, <name name-style="western"><surname>Hajdarbegovic</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>van der Burg</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Thio</surname> <given-names>HB</given-names></name>, <name name-style="western"><surname>van Hagen</surname> <given-names>PM</given-names></name>, <etal>et al</etal>. <article-title>Human IgE(+) B cells are derived from T cell-dependent and T cell-independent pathways</article-title>. <source>J Allergy Clin Immunol</source>. <year>2014</year>;<volume>134</volume>(<issue>3</issue>):<fpage>688</fpage>–<lpage>97</lpage> e6. Epub 2014/05/20. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.jaci.2014.03.036" xlink:type="simple">10.1016/j.jaci.2014.03.036</ext-link></comment> <object-id pub-id-type="pmid">24835500</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref025"><label>25</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>van Zelm</surname> <given-names>MC</given-names></name>, <name name-style="western"><surname>Szczepanski</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>van der Burg</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>van Dongen</surname> <given-names>JJ</given-names></name>. <article-title>Replication history of B lymphocytes reveals homeostatic proliferation and extensive antigen-induced B cell expansion</article-title>. <source>J Exp Med</source>. <year>2007</year>;<volume>204</volume>(<issue>3</issue>):<fpage>645</fpage>–<lpage>55</lpage>. Epub 2007/02/22. doi: jem.20060964 [pii] <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1084/jem.20060964" xlink:type="simple">10.1084/jem.20060964</ext-link></comment> <object-id pub-id-type="pmid">17312005</object-id>; PubMed Central PMCID: PMC2137914.</mixed-citation></ref>
+<ref id="pone.0160103.ref026"><label>26</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Brandtzaeg</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Farstad</surname> <given-names>IN</given-names></name>, <name name-style="western"><surname>Johansen</surname> <given-names>FE</given-names></name>, <name name-style="western"><surname>Morton</surname> <given-names>HC</given-names></name>, <name name-style="western"><surname>Norderhaug</surname> <given-names>IN</given-names></name>, <name name-style="western"><surname>Yamanaka</surname> <given-names>T</given-names></name>. <article-title>The B-cell system of human mucosae and exocrine glands</article-title>. <source>Immunol Rev</source>. <year>1999</year>;<volume>171</volume>:<fpage>45</fpage>–<lpage>87</lpage>. <object-id pub-id-type="pmid">10582165</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref027"><label>27</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Crabbe</surname> <given-names>PA</given-names></name>, <name name-style="western"><surname>Carbonara</surname> <given-names>AO</given-names></name>, <name name-style="western"><surname>Heremans</surname> <given-names>JF</given-names></name>. <article-title>The Normal Human Intestinal Mucosa as a Major Source of Plasma Cells Containing Gamma-a-Immunoglobulin</article-title>. <source>Laboratory investigation; a journal of technical methods and pathology</source>. <year>1965</year>;<volume>14</volume>:<fpage>235</fpage>–<lpage>48</lpage>. <object-id pub-id-type="pmid">14289438</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref028"><label>28</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yaari</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Uduman</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Kleinstein</surname> <given-names>SH</given-names></name>. <article-title>Quantifying selection in high-throughput Immunoglobulin sequencing data sets</article-title>. <source>Nucleic Acids Res</source>. <year>2012</year>;<volume>40</volume>(<issue>17</issue>):<fpage>e134</fpage>. Epub 2012/05/30. doi: gks457 [pii] <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/nar/gks457" xlink:type="simple">10.1093/nar/gks457</ext-link></comment> <object-id pub-id-type="pmid">22641856</object-id>; PubMed Central PMCID: PMC3458526.</mixed-citation></ref>
+<ref id="pone.0160103.ref029"><label>29</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Uduman</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Yaari</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Hershberg</surname> <given-names>U</given-names></name>, <name name-style="western"><surname>Stern</surname> <given-names>JA</given-names></name>, <name name-style="western"><surname>Shlomchik</surname> <given-names>MJ</given-names></name>, <name name-style="western"><surname>Kleinstein</surname> <given-names>SH</given-names></name>. <article-title>Detecting selection in immunoglobulin sequences</article-title>. <source>Nucleic Acids Res</source>. <year>2011</year>;<volume>39</volume>(Web Server issue):<fpage>W499</fpage>–<lpage>504</lpage>. Epub 2011/06/15. doi: gkr413 [pii] <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/nar/gkr413" xlink:type="simple">10.1093/nar/gkr413</ext-link></comment> <object-id pub-id-type="pmid">21665923</object-id>; PubMed Central PMCID: PMC3125793.</mixed-citation></ref>
+<ref id="pone.0160103.ref030"><label>30</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Berkowska</surname> <given-names>MA</given-names></name>, <name name-style="western"><surname>Grosserichter-Wagener</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Adriaansen</surname> <given-names>HJ</given-names></name>, <name name-style="western"><surname>de Ridder</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Mirani-Oostdijk</surname> <given-names>KP</given-names></name>, <name name-style="western"><surname>Agteresch</surname> <given-names>HJ</given-names></name>, <etal>et al</etal>. <article-title>Persistent polyclonal B-cell lymphocytosis: extensively proliferated CD27+IgM+IgD+ memory B cells with a distinctive immunophenotype</article-title>. <source>Leukemia</source>. <year>2014</year>;<volume>28</volume>(<issue>7</issue>):<fpage>1560</fpage>–<lpage>4</lpage>. Epub 2014/02/20. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/leu.2014.77" xlink:type="simple">10.1038/leu.2014.77</ext-link></comment> <object-id pub-id-type="pmid">24549258</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref031"><label>31</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>van Zelm</surname> <given-names>MC</given-names></name>, <name name-style="western"><surname>Bartol</surname> <given-names>SJ</given-names></name>, <name name-style="western"><surname>Driessen</surname> <given-names>GJ</given-names></name>, <name name-style="western"><surname>Mascart</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Reisli</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Franco</surname> <given-names>JL</given-names></name>, <etal>et al</etal>. <article-title>Human CD19 and CD40L deficiencies impair antibody selection and differentially affect somatic hypermutation</article-title>. <source>J Allergy Clin Immunol</source>. <year>2014</year>;<volume>134</volume>(<issue>1</issue>):<fpage>135</fpage>–<lpage>44</lpage>. Epub 2014/01/15. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.jaci.2013.11.015" xlink:type="simple">10.1016/j.jaci.2013.11.015</ext-link></comment> <object-id pub-id-type="pmid">24418477</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref032"><label>32</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jackson</surname> <given-names>KJ</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Collins</surname> <given-names>AM</given-names></name>. <article-title>Human immunoglobulin classes and subclasses show variability in VDJ gene mutation levels</article-title>. <source>Immunol Cell Biol</source>. <year>2014</year>;<volume>92</volume>(<issue>8</issue>):<fpage>729</fpage>–<lpage>33</lpage>. Epub 2014/06/11. doi: icb201444 [pii] <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/icb.2014.44" xlink:type="simple">10.1038/icb.2014.44</ext-link></comment> <object-id pub-id-type="pmid">24913324</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref033"><label>33</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>van Zelm</surname> <given-names>MC</given-names></name>. <article-title>B cells take their time: sequential IgG class switching over the course of an immune response?</article-title> <source>Immunol Cell Biol</source>. <year>2014</year>;<volume>92</volume>(<issue>8</issue>):<fpage>645</fpage>–<lpage>6</lpage>. Epub 2014/06/18. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/icb.2014.48" xlink:type="simple">10.1038/icb.2014.48</ext-link></comment> <object-id pub-id-type="pmid">24935459</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref034"><label>34</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Di Sabatino</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Rosado</surname> <given-names>MM</given-names></name>, <name name-style="western"><surname>Cazzola</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Biancheri</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Tinozzi</surname> <given-names>FP</given-names></name>, <name name-style="western"><surname>Laera</surname> <given-names>MR</given-names></name>, <etal>et al</etal>. <article-title>Splenic function and IgM-memory B cells in Crohn's disease patients treated with infliximab</article-title>. <source>Inflammatory bowel diseases</source>. <year>2008</year>;<volume>14</volume>(<issue>5</issue>):<fpage>591</fpage>–<lpage>6</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/ibd.20374" xlink:type="simple">10.1002/ibd.20374</ext-link></comment> <object-id pub-id-type="pmid">18240280</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref035"><label>35</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Janssen</surname> <given-names>CE</given-names></name>, <name name-style="western"><surname>Rose</surname> <given-names>CD</given-names></name>, <name name-style="western"><surname>De Hertogh</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Martin</surname> <given-names>TM</given-names></name>, <name name-style="western"><surname>Bader Meunier</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Cimaz</surname> <given-names>R</given-names></name>, <etal>et al</etal>. <article-title>Morphologic and immunohistochemical characterization of granulomas in the nucleotide oligomerization domain 2-related disorders Blau syndrome and Crohn disease</article-title>. <source>J Allergy Clin Immunol</source>. <year>2012</year>;<volume>129</volume>(<issue>4</issue>):<fpage>1076</fpage>–<lpage>84</lpage>. Epub 2012/04/03. doi: S0091-6749(12)00265-5 [pii] <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.jaci.2012.02.004" xlink:type="simple">10.1016/j.jaci.2012.02.004</ext-link></comment> <object-id pub-id-type="pmid">22464675</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref036"><label>36</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sweiss</surname> <given-names>NJ</given-names></name>, <name name-style="western"><surname>Lower</surname> <given-names>EE</given-names></name>, <name name-style="western"><surname>Mirsaeidi</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Dudek</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Garcia</surname> <given-names>JG</given-names></name>, <name name-style="western"><surname>Perkins</surname> <given-names>D</given-names></name>, <etal>et al</etal>. <article-title>Rituximab in the treatment of refractory pulmonary sarcoidosis</article-title>. <source>The European respiratory journal</source>. <year>2014</year>;<volume>43</volume>(<issue>5</issue>):<fpage>1525</fpage>–<lpage>8</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1183/09031936.00224513" xlink:type="simple">10.1183/09031936.00224513</ext-link></comment> <object-id pub-id-type="pmid">24488568</object-id>; PubMed Central PMCID: PMC4167390.</mixed-citation></ref>
+<ref id="pone.0160103.ref037"><label>37</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chen</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Liao</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Holl</surname> <given-names>TM</given-names></name>, <name name-style="western"><surname>Snowden</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Ueda</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Kelsoe</surname> <given-names>G</given-names></name>. <article-title>Genetic regulation of pristane-induced oil granuloma responses</article-title>. <source>International journal of experimental pathology</source>. <year>2010</year>;<volume>91</volume>(<issue>5</issue>):<fpage>472</fpage>–<lpage>83</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1365-2613.2010.00732.x" xlink:type="simple">10.1111/j.1365-2613.2010.00732.x</ext-link></comment> <object-id pub-id-type="pmid">20804539</object-id>; PubMed Central PMCID: PMC3003845.</mixed-citation></ref>
+<ref id="pone.0160103.ref038"><label>38</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hermaszewski</surname> <given-names>RA</given-names></name>, <name name-style="western"><surname>Webster</surname> <given-names>AD</given-names></name>. <article-title>Primary hypogammaglobulinaemia: a survey of clinical manifestations and complications</article-title>. <source>The Quarterly journal of medicine</source>. <year>1993</year>;<volume>86</volume>(<issue>1</issue>):<fpage>31</fpage>–<lpage>42</lpage>. <object-id pub-id-type="pmid">8438047</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref039"><label>39</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Blombery</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Prince</surname> <given-names>HM</given-names></name>, <name name-style="western"><surname>Levinson</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Pianko</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Maxwell</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Bhathal</surname> <given-names>P</given-names></name>. <article-title>Rituximab-induced immunodysregulatory ileocolitis in a patient with follicular lymphoma</article-title>. <source>J Clin Oncol</source>. <year>2011</year>;<volume>29</volume>(<issue>5</issue>):<fpage>e110</fpage>–<lpage>2</lpage>. Epub 2010/11/26. doi: JCO.2010.31.8899 [pii] <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1200/JCO.2010.31.8899" xlink:type="simple">10.1200/JCO.2010.31.8899</ext-link></comment> <object-id pub-id-type="pmid">21098319</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref040"><label>40</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Papadakis</surname> <given-names>KA</given-names></name>, <name name-style="western"><surname>Rosenbloom</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Targan</surname> <given-names>SR</given-names></name>. <article-title>Anti-CD2O chimeric monoclonal antibody (rituximab) treatment of immune-mediated thrombocytopenia associated with Crohn's disease</article-title>. <source>Gastroenterology</source>. <year>2003</year>;<volume>124</volume>(<issue>2</issue>):<fpage>583</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1053/gast.2003.50081" xlink:type="simple">10.1053/gast.2003.50081</ext-link></comment> <object-id pub-id-type="pmid">12557172</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref041"><label>41</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rogosnitzky</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Danks</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Holt</surname> <given-names>D</given-names></name>. <article-title>Intravenous immunoglobulin for the treatment of Crohn's disease</article-title>. <source>Autoimmunity reviews</source>. <year>2012</year>;<volume>12</volume>(<issue>2</issue>):<fpage>275</fpage>–<lpage>80</lpage>. Epub 2012/05/15. doi: S1568-9972(12)00096-1 [pii] <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.autrev.2012.04.006" xlink:type="simple">10.1016/j.autrev.2012.04.006</ext-link></comment> <object-id pub-id-type="pmid">22579561</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref042"><label>42</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nishida</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Lau</surname> <given-names>CW</given-names></name>, <name name-style="western"><surname>Mizoguchi</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Mizoguchi</surname> <given-names>A</given-names></name>. <article-title>Regulatory B cells in mouse models of intestinal inflammation</article-title>. <source>Methods Mol Biol</source>. <year>2014</year>;<volume>1190</volume>:<fpage>227</fpage>–<lpage>41</lpage>. Epub 2014/07/13. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/978-1-4939-1161-5_16" xlink:type="simple">10.1007/978-1-4939-1161-5_16</ext-link></comment> <object-id pub-id-type="pmid">25015284</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref043"><label>43</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sims</surname> <given-names>GP</given-names></name>, <name name-style="western"><surname>Ettinger</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Shirota</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Yarboro</surname> <given-names>CH</given-names></name>, <name name-style="western"><surname>Illei</surname> <given-names>GG</given-names></name>, <name name-style="western"><surname>Lipsky</surname> <given-names>PE</given-names></name>. <article-title>Identification and characterization of circulating human transitional B cells</article-title>. <source>Blood</source>. <year>2005</year>;<volume>105</volume>(<issue>11</issue>):<fpage>4390</fpage>–<lpage>8</lpage>. Epub 2005/02/11. doi: 2004-11-4284 [pii] <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1182/blood-2004-11-4284" xlink:type="simple">10.1182/blood-2004-11-4284</ext-link></comment> <object-id pub-id-type="pmid">15701725</object-id>; PubMed Central PMCID: PMC1895038.</mixed-citation></ref>
+<ref id="pone.0160103.ref044"><label>44</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Isnardi</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Ng</surname> <given-names>YS</given-names></name>, <name name-style="western"><surname>Menard</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Meyers</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Saadoun</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Srdanovic</surname> <given-names>I</given-names></name>, <etal>et al</etal>. <article-title>Complement receptor 2/CD21- human naive B cells contain mostly autoreactive unresponsive clones</article-title>. <source>Blood</source>. <year>2010</year>;<volume>115</volume>(<issue>24</issue>):<fpage>5026</fpage>–<lpage>36</lpage>. Epub 2010/03/17. doi: blood-2009-09-243071 [pii] <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1182/blood-2009-09-243071" xlink:type="simple">10.1182/blood-2009-09-243071</ext-link></comment> <object-id pub-id-type="pmid">20231422</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref045"><label>45</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Moir</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Malaspina</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Ogwaro</surname> <given-names>KM</given-names></name>, <name name-style="western"><surname>Donoghue</surname> <given-names>ET</given-names></name>, <name name-style="western"><surname>Hallahan</surname> <given-names>CW</given-names></name>, <name name-style="western"><surname>Ehler</surname> <given-names>LA</given-names></name>, <etal>et al</etal>. <article-title>HIV-1 induces phenotypic and functional perturbations of B cells in chronically infected individuals</article-title>. <source>Proc Natl Acad Sci U S A</source>. <year>2001</year>;<volume>98</volume>(<issue>18</issue>):<fpage>10362</fpage>–<lpage>7</lpage>. Epub 2001/08/16. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.181347898" xlink:type="simple">10.1073/pnas.181347898</ext-link></comment> [pii]. <object-id pub-id-type="pmid">11504927</object-id>; PubMed Central PMCID: PMC56966.</mixed-citation></ref>
+<ref id="pone.0160103.ref046"><label>46</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wehr</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Eibel</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Masilamani</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Illges</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Schlesier</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Peter</surname> <given-names>HH</given-names></name>, <etal>et al</etal>. <article-title>A new CD21low B cell population in the peripheral blood of patients with SLE</article-title>. <source>Clin Immunol</source>. <year>2004</year>;<volume>113</volume>(<issue>2</issue>):<fpage>161</fpage>–<lpage>71</lpage>. Epub 2004/09/29. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.clim.2004.05.010" xlink:type="simple">10.1016/j.clim.2004.05.010</ext-link></comment> S1521-6616(04)00181-0 [pii]. <object-id pub-id-type="pmid">15451473</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref047"><label>47</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Verstegen</surname> <given-names>RH</given-names></name>, <name name-style="western"><surname>Driessen</surname> <given-names>GJ</given-names></name>, <name name-style="western"><surname>Bartol</surname> <given-names>SJ</given-names></name>, <name name-style="western"><surname>van Noesel</surname> <given-names>CJ</given-names></name>, <name name-style="western"><surname>Boon</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>van der Burg</surname> <given-names>M</given-names></name>, <etal>et al</etal>. <article-title>Defective B-cell memory in patients with Down syndrome</article-title>. <source>J Allergy Clin Immunol</source>. <year>2014</year>. Epub 2014/08/28. doi: S0091-6749(14)00970-1 [pii] <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.jaci.2014.07.015" xlink:type="simple">10.1016/j.jaci.2014.07.015</ext-link></comment> <object-id pub-id-type="pmid">25159464</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref048"><label>48</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rakhmanov</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Gutenberger</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Keller</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Schlesier</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Peter</surname> <given-names>HH</given-names></name>, <name name-style="western"><surname>Warnatz</surname> <given-names>K</given-names></name>. <article-title>CD21low B cells in common variable immunodeficiency do not show defects in receptor editing, but resemble tissue-like memory B cells</article-title>. <source>Blood</source>. <year>2010</year>;<volume>116</volume>(<issue>18</issue>):<fpage>3682</fpage>–<lpage>3</lpage>. Epub 2010/11/06. doi: 116/18/3682 [pii] <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1182/blood-2010-05-285585" xlink:type="simple">10.1182/blood-2010-05-285585</ext-link></comment> <object-id pub-id-type="pmid">21051568</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref049"><label>49</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Li</surname> <given-names>Z</given-names></name>, <name name-style="western"><surname>Vermeire</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Bullens</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Ferrante</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Van Steen</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Noman</surname> <given-names>M</given-names></name>, <etal>et al</etal>. <article-title>Anti-Tumor Necrosis Factor Therapy Restores Peripheral Blood B-cell Subsets and CD40 Expression in Inflammatory Bowel Diseases</article-title>. <source>Inflammatory bowel diseases</source>. <year>2015</year>;<volume>21</volume>(<issue>12</issue>):<fpage>2787</fpage>–<lpage>96</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/MIB.0000000000000554" xlink:type="simple">10.1097/MIB.0000000000000554</ext-link></comment> <object-id pub-id-type="pmid">26383913</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref050"><label>50</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Neurath</surname> <given-names>MF</given-names></name>, <name name-style="western"><surname>Travis</surname> <given-names>SP</given-names></name>. <article-title>Mucosal healing in inflammatory bowel diseases: a systematic review</article-title>. <source>Gut</source>. <year>2012</year>;<volume>61</volume>(<issue>11</issue>):<fpage>1619</fpage>–<lpage>35</lpage>. Epub 2012/07/31. doi: gutjnl-2012-302830 [pii] <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1136/gutjnl-2012-302830" xlink:type="simple">10.1136/gutjnl-2012-302830</ext-link></comment> <object-id pub-id-type="pmid">22842618</object-id>.</mixed-citation></ref>
+<ref id="pone.0160103.ref051"><label>51</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Berkowska</surname> <given-names>MA</given-names></name>, <name name-style="western"><surname>Schickel</surname> <given-names>JN</given-names></name>, <name name-style="western"><surname>Grosserichter-Wagener</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>de Ridder</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Ng</surname> <given-names>YS</given-names></name>, <name name-style="western"><surname>van Dongen</surname> <given-names>JJ</given-names></name>, <etal>et al</etal>. <article-title>Circulating Human CD27-IgA+ Memory B Cells Recognize Bacteria with Polyreactive Igs</article-title>. <source>J Immunol</source>. <year>2015</year>;<volume>195</volume>(<issue>4</issue>):<fpage>1417</fpage>–<lpage>26</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.4049/jimmunol.1402708" xlink:type="simple">10.4049/jimmunol.1402708</ext-link></comment> <object-id pub-id-type="pmid">26150533</object-id>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

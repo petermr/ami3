@@ -20,9 +20,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.log4j.Logger;
+import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.util.HtmlUtil;
 
+import nu.xom.Attribute;
 import nu.xom.Element;
 
 
@@ -44,6 +46,18 @@ public class HtmlTr extends HtmlElement {
 		super(TAG);
 	}
 
+	public HtmlTr(List<String> row) {
+		this();
+		for (String cell : row) {
+			this.appendChild(new HtmlTd(cell));
+		}
+	}
+
+	/** get th children specifically. Could occur in tbody as well as thead.
+	 * will NOT necessarily map onto the column number
+	 * 
+	 * @return
+	 */
 	public List<HtmlTh> getThChildren() {
 		List<HtmlElement> ths = HtmlElement.getChildElements(this, HtmlTh.TAG);
 		List<HtmlTh> thList = new ArrayList<HtmlTh>();
@@ -54,19 +68,28 @@ public class HtmlTr extends HtmlElement {
 	}
 
 	/** some people mix TD and TH in rows.
+	 * gets all th or td children.
+	 * this should map onto columns
 	 * 
 	 * @return
 	 */
-	public List<HtmlElement> getTdOrThChildren() {
-		List<HtmlElement> children = new ArrayList<HtmlElement>();
+	public List<HtmlTCell> getTCellChildren() {
+		List<HtmlTCell> children = new ArrayList<>();
 		List<Element> elements = XMLUtil.getQueryElements(this, 
 				"./*[local-name()='" + HtmlTd.TAG + "' or local-name()='" + HtmlTh.TAG + "']");
 		for (Element element : elements) {
-			children.add((HtmlElement)element);
+			children.add((HtmlTCell)element);
 		}
 		return children;
 	}
 	
+	/** get td children specifically. 
+	 * Shouldn't occur in thead but who knows.
+	 * will NOT necessarily map onto the column number
+	 * 
+	 * @return
+	 */
+
 	public List<HtmlTd> getTdChildren() {
 		List<HtmlElement> tds = HtmlElement.getChildElements(this, HtmlTd.TAG);
 		List<HtmlTd> tdList = new ArrayList<HtmlTd>();
@@ -76,9 +99,17 @@ public class HtmlTr extends HtmlElement {
 		return tdList;
 	}
 	
-	public HtmlTd getTd(int col) {
+	/** get nth td.
+	 * if there is a mixture of th and td ignores the th. 
+	 * Be careful. If you want the nth column, use getTCell(n)
+	 * 
+	 * @param n
+	 * @return
+	 */
+	public HtmlTd getTd(int n) {
 		List<HtmlTd> cells = getTdChildren();
-		return (col < 0 || col >= cells.size()) ? null : (HtmlTd) cells.get(col);
+		HtmlTd htmlTd = cells.get(n);
+		return (n < 0 || n >= cells.size()) ? null : (HtmlTd) htmlTd;
 	}
 	
 	public HtmlTh getTh(int col) {
@@ -132,5 +163,62 @@ public class HtmlTr extends HtmlElement {
 		}
 		return strings;
 	}
+
+	boolean isPureRow(String tag) {
+		boolean isPure = true;
+		int childElementCount = getChildElements().size();
+		for (int i = 0; i < childElementCount; i++) {
+			Element child = getChildElements().get(i);
+			if (!tag.equals(child.getLocalName())) {
+				isPure = false;
+				break;
+			}
+		}
+		return isPure;
+	}
+
+	public List<String> getChildThTdValues() {
+		List<String> stringValues = XMLUtil.getQueryValues(
+				this, "./*[local-name()='"+HtmlTh.TAG+"' or local-name='"+HtmlTh.TAG+"']");
+		return stringValues;
+	}
+
+	public void addDefaultRowColspans() {
+		List<HtmlTCell> cellList = this.getTCellChildren();
+		for (HtmlTCell cell : cellList) {
+			cell.addDefault(HasColspan.COLSPAN, "1");
+			cell.addDefault(HtmlTCell.ROWSPAN, "1");
+		}
+	}
+
+	public int getTotalColspan() {
+		List<HtmlTCell> cellList = this.getTCellChildren();
+		int totalColspan = 0;
+		for (int icell = 0; icell < cellList.size(); icell++) {
+			HtmlTCell cell = cellList.get(icell);
+			int colspan = cell.getColspan();
+			totalColspan += colspan;
+		}
+		return totalColspan;
+	}
+	
+	public int getMaxColspan() {
+		return getMaxspan(HasColspan.COLSPAN);
+	}
+
+	public int getMaxRowspan() {
+		return getMaxspan(HtmlTCell.ROWSPAN);
+	}
+
+	private int getMaxspan(String spanName) {
+		List<HtmlTCell> cellList = this.getTCellChildren();
+		int maxspan = 1;
+		for (HtmlTCell cell : cellList) {
+			maxspan = cell.getMaxspan(spanName, maxspan);
+		}
+		return maxspan;
+	}
+
+
 
 }

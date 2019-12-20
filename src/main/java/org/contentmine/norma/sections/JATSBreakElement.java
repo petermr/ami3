@@ -2,6 +2,9 @@ package org.contentmine.norma.sections;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.graphics.html.HtmlBr;
+import org.contentmine.graphics.html.HtmlElement;
+
 import nu.xom.Element;
 
 public class JATSBreakElement extends JATSElement {
@@ -15,4 +18,12 @@ public class JATSBreakElement extends JATSElement {
     public JATSBreakElement(Element element) {
         super(element);
     }
+    
+	/** HTMLEquivalent
+	 */
+	@Override
+	public HtmlElement createHTML() {
+		return deepCopyAndTransform(new HtmlBr());
+	}
+
 }

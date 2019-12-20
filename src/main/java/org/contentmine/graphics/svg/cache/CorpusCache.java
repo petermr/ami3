@@ -106,7 +106,7 @@ public class CorpusCache extends ComponentCache {
 	 */
 	public HtmlElement getOrCreateConvertedHtmlElement() {
 		if (this.convertedHtmlElement == null) {
-			this.convertedHtmlElement = new HtmlHtml();
+			this.convertedHtmlElement = HtmlHtml.createUTF8Html();
 			HtmlBody bodyAll = ((HtmlHtml)convertedHtmlElement).getOrCreateBody();
 			for (DocumentCache documentCache : documentCacheList) {
 				LOG.debug("hack this later");
