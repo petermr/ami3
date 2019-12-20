@@ -63,6 +63,8 @@ description = "splits XML files into sections using XPath%n"
 		+ "examples:%n"
 		+ "    --sections ALL --html nlm2html%n"
 		+ "    --sections ABSTRACT ACK_FUND --write false%n"
+		+ "%n"
+		+ "    --forcemake --extract table fig --summary figure table "
 )
 
 public class AMISectionTool extends AbstractAMITool {

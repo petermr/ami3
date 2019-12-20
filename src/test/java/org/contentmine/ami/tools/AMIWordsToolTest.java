@@ -17,8 +17,8 @@ public class AMIWordsToolTest {
 	}
 
 	@Test
-	public void testZikaWords2() {
-		File testFile = AMIFixtures.TEST_ZIKA2_DIR;
+	public void testZikaWords10() {
+		File testFile = AMIFixtures.TEST_ZIKA10_DIR;
 		String name = testFile.getName();
 		File targetDir = new File("target/cooccurrence/", name);
 		CMineTestFixtures.cleanAndCopyDir(testFile, targetDir);
