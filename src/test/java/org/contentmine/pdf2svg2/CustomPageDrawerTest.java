@@ -52,16 +52,14 @@ public class CustomPageDrawerTest extends AbstractAMITest {
 	}
 
 	private void runPageDrawer(String root, File inputPdf, int pageSerial, DrawerType drawerType) throws IOException {
-		PDDocument doc = PDDocument.load(inputPdf);
-		PageDrawerRunner pageDrawerRunner = new PageDrawerRunner(doc, drawerType);
+		PageDrawerRunner pageDrawerRunner = new PageDrawerRunner(inputPdf, drawerType);
 		pageDrawerRunner.processPage(pageSerial);
-
 		
 		File outputPng = new File(PDF2SVG2, root+".png");
-		ImageIO.write(image, "PNG", outputPng);
+		ImageIO.write(pageDrawerRunner.getImage(), "PNG", outputPng);
 		LOG.debug("wrote PNG "+outputPng);
 		SVGElement svgElement = pageDrawerRunner.getSVG();
 		SVGSVG.wrapAndWriteAsSVG(svgElement, new File(PDF2SVG2, root+".svg"));
-		doc.close();
+//		doc.close();
 	}
 }

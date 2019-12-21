@@ -69,16 +69,35 @@ public class PageDrawerRunner
 	private PDDocument doc;
 	private PDPage currentPage;
 
+	public PageDrawerRunner() {
+		
+	}
+
 	public PageDrawerRunner(PDDocument doc, DrawerType drawerType) {
 		this.doc = doc;
 		this.setDrawerType(drawerType);
 	}
 	
+	public PageDrawerRunner(File inputFile, DrawerType drawerType) {
+		try {
+			doc = PDDocument.load(inputFile);
+		} catch (IOException e) {
+			throw new RuntimeException("cannot read PDF", e);
+		}
+		this.setDrawerType(drawerType);
+	}
+
 	public void setDrawerType(DrawerType drawerType) {
 		this.drawerType = drawerType;
 	}
 	
-
+	public void closeDoc() {
+		try {
+			doc.close();
+		} catch (IOException e) {
+			throw new RuntimeException("cannot close doc ", e);
+		}
+	}
 
 	/** parses page, creates Image and SVG
 	 * 
@@ -114,15 +133,18 @@ public class PageDrawerRunner
 	}
 	
 	public void processPage(int pageSerial) throws IOException {
+		createPDFRenderer(doc, drawerType);
 		currentPage = doc.getPage(pageSerial);
 		PageDrawer pageDrawer = ((MyPDFRenderer)myPdfRenderer).getPageDrawer();
 		if (pageDrawer instanceof AMIPageDrawer) {
 			((AMIPageDrawer)pageDrawer).setCurrentPage(currentPage);
 		}
 		image = myPdfRenderer.renderImage(pageSerial);
-
 	}
 
+	public BufferedImage getImage() {
+		return image;
+	}
 
 	public SVGElement getSVG() {
 		SVGElement svgElement = null;
@@ -163,9 +185,9 @@ public class PageDrawerRunner
 		File inputFile = new File(TEST_PDFBOX_DIR, "custom-render-demo.pdf");
         File outputFile = new File(TEST_PDFBOX_DIR, "custom-render-demo.png");
         int pageSerial = 0;
-        PageDrawerRunner drawerExample = new PageDrawerRunner();
+        PageDrawerRunner drawerExample = new PageDrawerRunner(inputFile, DrawerType.AMI_BRIEF);
         drawerExample.runExample(inputFile, outputFile, pageSerial, DrawerType.AMI_BRIEF);
-//        drawerExample.runExample(inputFile, outputFile, pageSerial, Drawer.ORIGINAL);
+//        drawerExample.runExample(inputFile, outputFile, pageSerial);
 	}
 
 	private static void example2() throws IOException {
@@ -173,11 +195,11 @@ public class PageDrawerRunner
 		File imgDir = new File(LICHTENBURG, "img");
 		imgDir.mkdirs();
 		File inputFile = new File(LICHTENBURG, "fulltext.pdf");
-        PageDrawerRunner drawerExample = new PageDrawerRunner();
+        PageDrawerRunner drawerExample = new PageDrawerRunner(inputFile, DrawerType.ORIGINAL);
         for (int pageSerial = 0; pageSerial < 10; pageSerial++) {
         	File outputFile = new File(imgDir, "fulltext."+pageSerial+".png");
         	System.out.println("wrote: "+outputFile);
-        	drawerExample.runExample(inputFile, outputFile, pageSerial, DrawerType.ORIGINAL);
+        	drawerExample.runExample(inputFile, outputFile, pageSerial);
         }
 	}
 
