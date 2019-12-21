@@ -17,32 +17,22 @@
 
 package org.contentmine.pdf2svg2;
 
-import java.awt.BasicStroke;
-import java.awt.Color;
-import java.awt.Graphics2D;
-import java.awt.Paint;
-import java.awt.Shape;
-import java.awt.Stroke;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+
 import javax.imageio.ImageIO;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.pdfbox.contentstream.PDFGraphicsStreamEngine;
 import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.pdmodel.font.PDFont;
-import org.apache.pdfbox.pdmodel.graphics.color.PDColor;
-import org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation;
+import org.apache.pdfbox.pdmodel.PDPage;
+import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.rendering.PDFRenderer;
 import org.apache.pdfbox.rendering.PageDrawer;
 import org.apache.pdfbox.rendering.PageDrawerParameters;
-import org.apache.pdfbox.util.Matrix;
-import org.apache.pdfbox.util.Vector;
-import org.eclipse.jetty.util.log.Log;
+import org.contentmine.graphics.svg.SVGElement;
 
 /**
  * Example showing custom rendering by subclassing PageDrawer.
@@ -67,50 +57,106 @@ public class PageDrawerRunner
 	private static final File OMAR_TEST_DIR = new File(PROJECTS_DIR, "omar/test");
 
 	public enum DrawerType {
-		AMI,
+		AMI_BRIEF,
+		AMI_MEDIUM,
 		ORIGINAL,
 		
 	}
 
-	private DrawerType drawer = DrawerType.ORIGINAL;
+	private DrawerType drawerType = DrawerType.ORIGINAL;
 	private BufferedImage image;
-	private PDFRenderer renderer;
+	private MyPDFRenderer myPdfRenderer;
 	private PDDocument doc;
+	private PDPage currentPage;
 
-	public void setDrawerType(DrawerType drawer) {
-		this.drawer = drawer;
+	public PageDrawerRunner(PDDocument doc, DrawerType drawerType) {
+		this.doc = doc;
+		this.setDrawerType(drawerType);
 	}
+	
+	public void setDrawerType(DrawerType drawerType) {
+		this.drawerType = drawerType;
+	}
+	
 
-	public BufferedImage createImage(int pageSerial) throws IOException, IllegalArgumentException {
+
+	/** parses page, creates Image and SVG
+	 * 
+	 * @param pageSerial
+	 * @return
+	 * @throws IOException
+	 * @throws IllegalArgumentException
+	 */
+	public BufferedImage createImageAndSVG(int pageSerial) throws IOException, IllegalArgumentException {
 		int count = doc.getPages().getCount();
 		if (pageSerial < 0 || pageSerial >= count) {
 			throw new IllegalArgumentException(
 					"bad page index: " + pageSerial + " not in 0-" + (count - 1));
 		}
-        image = renderer.renderImage(pageSerial);
+		currentPage = doc.getPage(pageSerial);
+        image = myPdfRenderer.renderImage(pageSerial);
         return image;
 	}
 
 	private PDFRenderer readFile(File file) throws IOException {
 		doc = PDDocument.load(file);
-        renderer = new MyPDFRenderer(doc, drawer);
-		return renderer;
+        return createPDFRenderer(doc, drawerType);
 	}
 
 	public void writeImage(File output) throws IOException {
 		ImageIO.write(image, "PNG", output);
 	}
 
-	public PDFRenderer createPDFRenderer(PDDocument doc, DrawerType drawerType) {
-		return new MyPDFRenderer(doc, drawerType);
+	/** creates a MyPDFRenderer */
+	public MyPDFRenderer createPDFRenderer(PDDocument doc, DrawerType drawerType) {
+		myPdfRenderer = new MyPDFRenderer(doc, drawerType);
+		return myPdfRenderer;
+	}
+	
+	public void processPage(int pageSerial) throws IOException {
+		currentPage = doc.getPage(pageSerial);
+		PageDrawer pageDrawer = ((MyPDFRenderer)myPdfRenderer).getPageDrawer();
+		if (pageDrawer instanceof AMIPageDrawer) {
+			((AMIPageDrawer)pageDrawer).setCurrentPage(currentPage);
+		}
+		image = myPdfRenderer.renderImage(pageSerial);
+
 	}
 
 
+	public SVGElement getSVG() {
+		SVGElement svgElement = null;
+		if (drawerType == DrawerType.ORIGINAL) {
+			// null;
+		} else {
+			PageDrawer pageDrawer = ((MyPDFRenderer)myPdfRenderer).getPageDrawer();
+			svgElement = ((AMIPageDrawer) pageDrawer).getSVGElement();
+		}
+		return svgElement;
+	}
+
+
+	private void close() throws IOException {
+    	doc.close();
+	}
+
+	public void runExample(File inputFile, File outputFile, int pageSerial) throws IOException {
+		runExample(inputFile, outputFile, pageSerial, DrawerType.ORIGINAL);
+	}
+
+	public void runExample(File inputFile, File outputFile, int pageSerial, DrawerType drawerType)
+			throws IOException {
+		setDrawerType(drawerType);
+	    readFile(inputFile);
+	    createImageAndSVG(pageSerial);
+	    writeImage(outputFile);
+	    close();
+	}
 
     public static void main(String[] args) throws IOException
     {
         example1();
-//        example2();
+        example2();
     }
 
 	public static void example1() throws IOException {
@@ -118,7 +164,7 @@ public class PageDrawerRunner
         File outputFile = new File(TEST_PDFBOX_DIR, "custom-render-demo.png");
         int pageSerial = 0;
         PageDrawerRunner drawerExample = new PageDrawerRunner();
-        drawerExample.runExample(inputFile, outputFile, pageSerial, DrawerType.AMI);
+        drawerExample.runExample(inputFile, outputFile, pageSerial, DrawerType.AMI_BRIEF);
 //        drawerExample.runExample(inputFile, outputFile, pageSerial, Drawer.ORIGINAL);
 	}
 
@@ -135,22 +181,6 @@ public class PageDrawerRunner
         }
 	}
 
-	private void close() throws IOException {
-    	doc.close();
-	}
-
-	public void runExample(File inputFile, File outputFile, int pageSerial) throws IOException {
-		runExample(inputFile, outputFile, pageSerial, DrawerType.ORIGINAL);
-	}
-
-	public void runExample(File inputFile, File outputFile, int pageSerial, DrawerType drawerType)
-			throws IOException {
-		setDrawerType(drawerType);
-	    readFile(inputFile);
-	    createImage(pageSerial);
-	    writeImage(outputFile);
-	    close();
-	}
 
 	/**
      * Example PDFRenderer subclass, uses MyPageDrawer for custom rendering.
@@ -158,6 +188,11 @@ public class PageDrawerRunner
     private static class MyPDFRenderer extends PDFRenderer
     {
         private DrawerType drawerType;
+        private PageDrawer pageDrawer;
+
+		public PageDrawer getPageDrawer() {
+			return pageDrawer;
+		}
 
 		MyPDFRenderer(PDDocument document, DrawerType drawer)
         {
@@ -168,28 +203,47 @@ public class PageDrawerRunner
         @Override
         protected PageDrawer createPageDrawer(PageDrawerParameters parameters) throws IOException
         {
+        	pageDrawer = null;
         	if (DrawerType.ORIGINAL.equals(drawerType)) {
-        		return new MyPageDrawer(parameters);
-        	}
-        	if (DrawerType.AMI.equals(drawerType)) {
+        		pageDrawer = new MyPageDrawer(parameters);
+        	} else if (DrawerType.AMI_BRIEF.equals(drawerType)) {
         		AMIPageDrawer amiPageDrawer = new AMIPageDrawer(parameters, AMIDebugParameters.getDefaultParameters());
         		amiPageDrawer.getDebugParameters().showAnnotation=false;
         		amiPageDrawer.getDebugParameters().showAppendRectangle=false;
         		amiPageDrawer.getDebugParameters().showBeginText=false;
+        		amiPageDrawer.getDebugParameters().showChar=false;
         		amiPageDrawer.getDebugParameters().showClip=false;
+        		amiPageDrawer.getDebugParameters().showClosePath=false;
         		amiPageDrawer.getDebugParameters().showColor=false;
         		amiPageDrawer.getDebugParameters().showCurrentPoint=false;
         		amiPageDrawer.getDebugParameters().showFontGlyph=true;
         		amiPageDrawer.getDebugParameters().showForm=false;
-        		amiPageDrawer.getDebugParameters().showClosePath=false;
         		amiPageDrawer.getDebugParameters().showEndPath=false;
         		amiPageDrawer.getDebugParameters().showEndText=false;
         		amiPageDrawer.getDebugParameters().showLineTo=false;
         		amiPageDrawer.getDebugParameters().showMoveTo=false;
         		amiPageDrawer.getDebugParameters().showStrokePath=false;
-				return amiPageDrawer;
+				pageDrawer = amiPageDrawer;
+        	} else if (DrawerType.AMI_MEDIUM.equals(drawerType)) {
+        		AMIPageDrawer amiPageDrawer = new AMIPageDrawer(parameters, AMIDebugParameters.getDefaultParameters());
+        		amiPageDrawer.getDebugParameters().showAnnotation=false;
+//        		amiPageDrawer.getDebugParameters().showAppendRectangle=false;
+//        		amiPageDrawer.getDebugParameters().showBeginText=false;
+//        		amiPageDrawer.getDebugParameters().showChar=false;
+//        		amiPageDrawer.getDebugParameters().showClip=false;
+//        		amiPageDrawer.getDebugParameters().showClosePath=false;
+//        		amiPageDrawer.getDebugParameters().showColor=false;
+        		amiPageDrawer.getDebugParameters().showCurrentPoint=false;
+//        		amiPageDrawer.getDebugParameters().showFontGlyph=true;
+        		amiPageDrawer.getDebugParameters().showForm=false;
+//        		amiPageDrawer.getDebugParameters().showEndPath=false;
+//        		amiPageDrawer.getDebugParameters().showEndText=false;
+//        		amiPageDrawer.getDebugParameters().showLineTo=false;
+//        		amiPageDrawer.getDebugParameters().showMoveTo=false;
+        		amiPageDrawer.getDebugParameters().showStrokePath=false;
+				pageDrawer = amiPageDrawer;
         	}
-        	return null;
+        	return pageDrawer;
         }
     }
 

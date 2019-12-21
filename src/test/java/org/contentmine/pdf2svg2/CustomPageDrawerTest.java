@@ -9,11 +9,14 @@ import javax.imageio.ImageIO;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.pdmodel.PDPage;
+import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.rendering.PDFRenderer;
 import org.contentmine.ami.tools.AbstractAMITest;
+import org.contentmine.graphics.svg.SVGElement;
+import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.pdf2svg2.PageDrawerRunner.DrawerType;
 import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 
 public class CustomPageDrawerTest extends AbstractAMITest {
@@ -23,27 +26,42 @@ public class CustomPageDrawerTest extends AbstractAMITest {
 	}
 	
 	@Test
-	public void testPDF2SVG() throws IOException {
+	public void testCustom() throws IOException {
+      String root = "custom-render-demo"; // pageSserial=0
+	  File file = new File(PDF2SVG2, root + ".pdf");
+      Assert.assertTrue(file.exists());
+      
+//      DrawerType drawerType = DrawerType.ORIGINAL;
+      DrawerType drawerType = DrawerType.AMI_MEDIUM;
+        int pageSerial = 0;
+      runPageDrawer(root, file, pageSerial, drawerType);
+	}
+
+	@Test
+	public void testLichtenburg() throws IOException {
 //      String root = "custom-render-demo"; // pageSserial=0
       String root = "lichtenburg19a"; // pageSerial=1 or 5
 	  File file = new File(PDF2SVG2, root + ".pdf");
       Assert.assertTrue(file.exists());
       
 //      DrawerType drawerType = DrawerType.ORIGINAL;
-      DrawerType drawerType = DrawerType.AMI;
- //     int pageSerial = 0;
-      int pageSerial = 1;
+      DrawerType drawerType = DrawerType.AMI_BRIEF;
+//        int pageSerial = 0;
+          int pageSerial = 1;
       runPageDrawer(root, file, pageSerial, drawerType);
 	}
 
 	private void runPageDrawer(String root, File inputPdf, int pageSerial, DrawerType drawerType) throws IOException {
 		PDDocument doc = PDDocument.load(inputPdf);
-		PageDrawerRunner pageDrawerRunner = new PageDrawerRunner();
-		PDFRenderer renderer = pageDrawerRunner.createPDFRenderer(doc, drawerType);
-		BufferedImage image = renderer.renderImage(pageSerial);
+		PageDrawerRunner pageDrawerRunner = new PageDrawerRunner(doc, drawerType);
+		pageDrawerRunner.processPage(pageSerial);
+
+		
 		File outputPng = new File(PDF2SVG2, root+".png");
 		ImageIO.write(image, "PNG", outputPng);
 		LOG.debug("wrote PNG "+outputPng);
+		SVGElement svgElement = pageDrawerRunner.getSVG();
+		SVGSVG.wrapAndWriteAsSVG(svgElement, new File(PDF2SVG2, root+".svg"));
 		doc.close();
 	}
 }

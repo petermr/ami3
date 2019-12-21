@@ -69,7 +69,9 @@ public static final Logger LOG = Logger.getLogger(DocumentCacheIT.class);
 		SVGHTMLFixtures.cleanAndCopyDir(new File(SVGHTMLFixtures.G_S_PAGE_DIR, fileroot + "/"), targetDir);
 		DocumentCache documentCache = DocumentCache.createDocumentCache(targetDir);
 		documentCache.processSVGFilesToSVGElementAndHTMLElement();
-		XMLUtil.debug(documentCache.getHtmlDiv(), new File("target/html/pages.html"), 1);
+		File file = new File("target/html/pages.html");
+		XMLUtil.debug(documentCache.getHtmlDiv(), file, 1);
+		LOG.debug("wrote: "+file);
 
 	}
 	
@@ -80,7 +82,9 @@ public static final Logger LOG = Logger.getLogger(DocumentCacheIT.class);
 		SVGHTMLFixtures.cleanAndCopyDir(new File(SVGHTMLFixtures.G_S_CORPUS_DIR, "mosquitos1/12936_2017_Article_1948/"), targetDir);
 		DocumentCache documentCache = DocumentCache.createDocumentCache(targetDir);
 		documentCache.processSVGFilesToSVGElementAndHTMLElement();
-		XMLUtil.debug(documentCache.getHtmlDiv(), new File(targetDir, "pages.html"), 1);
+		File file = new File(targetDir, "pages.html");
+		XMLUtil.debug(documentCache.getHtmlDiv(), file, 1);
+		LOG.debug("wrote: "+file);
 	}
 	
 

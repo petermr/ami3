@@ -179,7 +179,7 @@ public class ComponentCacheTest {
 		headers.add(ComponentCache.FILE);
 		headers.addAll(Feature.getAbbreviations(Feature.RECT_LINE_FEATURES));
 		File jb = new File("/Users/pm286/workspace/cm-ucliijkb/corpus-oa-uclii-01");
-		if (!jb.exists()) {LOG.error("No file: "+jb); return;}
+		if (!jb.exists()) {LOG.info("No file: "+jb+"; so test skipped"); return;}
 		// tedious - need RegexFileFilter here but it's in cproject - needs moving
 		File[] cTreeFiles = jb.listFiles();
 		List<File> svgTables = extractSVGTables(csvBodyList, cTreeFiles);
