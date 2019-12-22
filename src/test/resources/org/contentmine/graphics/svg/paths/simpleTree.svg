@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" stroke-width="3" fill="black" font-size="16">
+    <line id="r1" x1="10" y1="200" x2="100" y2="200" stroke="blue"/>
+      <text x="10" y="210">r1</text>
+        <line id="v11" x1="100" y1="100" x2="100" y2="400" stroke="red"/>
+          <text x="100" y="250">v11</text>
+            <line id="r111" x1="100" y1="100" x2="230" y2="100" stroke="blue"/>
+              <text x="100" y="110">r111</text>
+                <line id="v1111" x1="230" y1="50" x2="230" y2="280" stroke="red"/>
+                  <text x="230" y="180">v1111</text>
+                    <line id="r11111" x1="230" y1="50" x2="300" y2="50" stroke="blue"/> 
+                      <text x="230" y="60">r11111</text>
+                    <line id="r11112" x1="230" y1="90" x2="300" y2="90" stroke="blue"/> 
+                      <text x="230" y="100">r11112</text>
+                    <line id="r11113" x1="230" y1="150" x2="290" y2="150" stroke="blue"/> 
+                      <text x="230" y="160">r11113</text>
+                    <line id="r11114" x1="230" y1="200" x2="300" y2="200" stroke="blue"/> 
+                      <text x="230" y="210">r11114</text>
+                    <line id="r11115" x1="230" y1="240" x2="310 " y2="240" stroke="blue"/> 
+                      <text x="230" y="250">r11115</text>
+                    <line id="r11116" x1="230" y1="280" x2="300" y2="280" stroke="blue"/>
+                      <text x="230" y="290">r11116</text>
+            <line id="r112" x1="100" y1="400" x2="200" y2="400" stroke="blue"/>
+              <text x="100" y="410">r112</text>
+                <line id="v1121" x1="200" y1="320" x2="200" y2="500" stroke="red"/>
+                  <text x="200" y="410">v1121</text>
+                    <line id="r11211" x1="200" y1="320" x2="300" y2="320" stroke="blue"/>
+                      <text x="200" y="330">r11211</text>
+                    <line id="r11212" x1="200" y1="370" x2="400" y2="370" stroke="blue"/>
+                      <text x="200" y="380">r11212</text>
+                        <line id="v112121" x1="400" y1="350" x2="400" y2="390" stroke="red"/>
+                          <text x="400" y="380">v112121</text>
+                            <line id="r1121211" x1="400" y1="350" x2="430" y2="350" stroke="blue"/>
+                              <text x="400" y="360">r1121211</text>
+                            <line id="r1121212" x1="400" y1="390" x2="430" y2="390" stroke="blue"/>
+                              <text x="400" y="400">r1121212</text>
+                    <line id="r11213" x1="200" y1="420" x2="300" y2="420" stroke="blue"/>
+                       <text x="200" y="430">r11213</text>
+                   <line id="r11214" x1="200" y1="500" x2="300" y2="500" stroke="blue"/>
+                      <text x="200" y="510">r11214</text>
+  </svg>

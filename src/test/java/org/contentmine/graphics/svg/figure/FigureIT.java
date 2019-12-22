@@ -18,7 +18,7 @@ import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 
-@Ignore("This really should be in POM or CL")
+//@Ignore("This really should be in POM or CL")
 public class FigureIT {
 	private static final Logger LOG = Logger.getLogger(FigureIT.class);
 	static {
