@@ -89,6 +89,18 @@ public class AMISectionToolTest extends AbstractAMITest {
 	}
 	
 	@Test
+	public void testALLSections() {
+		String args = ""
+//				+ "-t " + new File(AMIFixtures.TEST_ZIKA10_DIR, "PMC3113902") + ""
+				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
+				+ " --sections ALL"
+				+ " --sectiontype XML"
+				+ " --forcemake"
+			;
+		new AMISectionTool().runCommands(args);
+	}
+	
+	@Test
 	/** selects some of the sections and then cut out the XML sections
 	 * 
 	 */
@@ -99,11 +111,11 @@ public class AMISectionToolTest extends AbstractAMITest {
 				+ " -v"
 				+ " --forcemake"
 				+ " --sections "
-//				+ " " + SectionTag.ALL
+				+ " " + SectionTag.ALL
 //				+ " " + SectionTag.ARTICLE
 //				+ " " + SectionTag.AUTO
 //				+ " " + SectionTag.TITLE
-				+ " " + SectionTag.ABSTRACT
+//				+ " " + SectionTag.ABSTRACT
 //				+ " " + SectionTag.METHODS
 //				+ " --sectiontype HTML"
 				+ " --sectiontype XML"

@@ -491,10 +491,11 @@ public class AMISectionTool extends AbstractAMITool {
 		System.err.println("section: "+sectionTag);
 		sectionNumber = new SectionNumber();
 		if (writeFiles && sectionList != null && sectionList.size() > 0) {
+			LOG.debug(sectionTag+": "+sectionList.size());
 			File sectionDir = cTree.makeSectionDir(sectionTag.getName(), deleteExisting);
 			for (int serial = 0; serial < sectionList.size(); serial++) {
 				Element section = sectionList.get(serial);
-//				LOG.debug("SECT "+section.toXML());
+				LOG.debug("SECT "+section.toXML());
 				writeSection(section, sectionDir);
 				sectionNumber.incrementSerial();
 			}

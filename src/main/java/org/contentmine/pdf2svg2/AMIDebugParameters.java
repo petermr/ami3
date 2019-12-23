@@ -35,10 +35,13 @@ public class AMIDebugParameters {
 	public boolean showForm  = true;
 	public boolean showLineTo = true;
 	public boolean showMoveTo = true;
+	public boolean showPaint = true;
 	public boolean showShadingFill = true;
 	public boolean showStrokePath = true;
 	public boolean showTransGrp = true;
-	
+
+	public boolean debugGraphics = true;
+
 	public AMIDebugParameters() {
 		
 	}
@@ -65,9 +68,12 @@ public class AMIDebugParameters {
 		parameters.showForm  = true;
 		parameters.showLineTo = true;
 		parameters.showMoveTo = true;
+		parameters.showPaint = true;
 		parameters.showShadingFill = true;
 		parameters.showStrokePath = true;
 		parameters.showTransGrp = true;
+		
+		parameters.debugGraphics = true;
 		return parameters;
 	}
 	

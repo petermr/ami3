@@ -8,6 +8,7 @@ import java.awt.Graphics2D;
 import java.awt.Paint;
 import java.awt.Stroke;
 import java.awt.geom.AffineTransform;
+import java.awt.geom.GeneralPath;
 import java.awt.geom.Point2D;
 import java.io.IOException;
 import java.util.HashSet;
@@ -22,6 +23,8 @@ import org.apache.pdfbox.pdmodel.PDResources;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.font.PDFont;
 import org.apache.pdfbox.pdmodel.graphics.color.PDColor;
+import org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace;
+import org.apache.pdfbox.pdmodel.graphics.color.PDPattern;
 import org.apache.pdfbox.pdmodel.graphics.form.PDFormXObject;
 import org.apache.pdfbox.pdmodel.graphics.form.PDTransparencyGroup;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImage;
@@ -63,6 +66,8 @@ public class AMIPageDrawer extends PageDrawer {
 	private Double currentLineWidth;
 	private Real2 currentPoint;
 	private PDPage currentPage;
+	private Graphics2D lastGraphics;
+	private GeneralPath lastPath;
 
 	AMIPageDrawer(PageDrawerParameters parameters, AMIDebugParameters debugParams) throws IOException {
         super(parameters);
@@ -89,17 +94,27 @@ public class AMIPageDrawer extends PageDrawer {
      * Color replacement.
      */
     @Override
-    protected Paint getPaint(PDColor color) throws IOException {
-    	float[] components = color.getComponents();
-    	if (components.length == 1) {
-    		components = new float[] {components[0], 0.0f, 0.0f};
-    	}
-    	Color javaColor = new Color(components[0], components[1], components[2]);
-    	if (debugParams.showColor &&!javaColor.equals(currentJavaColor)) {
-    		System.out.println("Col["+Util.toString(components, 2)+"]");
+    protected Paint getPaint(PDColor pdColor) throws IOException {
+    	if (debugParams.showPaint) System.out.println("paint "+pdColor);
+    	Color javaColor = null;
+        PDColorSpace colorSpace = pdColor.getColorSpace();
+        if (!(colorSpace instanceof PDPattern)) {
+            float[] rgb = colorSpace.toRGB(pdColor.getComponents());
+            javaColor = new Color(clampColor(rgb[0]), clampColor(rgb[1]), clampColor(rgb[2]));
+        } else {
+        	throw new RuntimeException("PDPattern not supported");
+        }
+
+//    	float[] components = pdColor.getComponents();
+//    	if (components.length == 1) {
+//    		components = new float[] {components[0], 0.0f, 0.0f};
+//    	}
+//    	Color javaColor = new Color(components[0], components[1], components[2]);
+    	if (debugParams.showColor && !javaColor.equals(currentJavaColor)) {
+    		System.out.println("Col["+toRGB(javaColor));
     	}
     	currentJavaColor = javaColor;
-        return super.getPaint(color);
+        return super.getPaint(pdColor);
     }
 
 //    /**
@@ -238,6 +253,7 @@ public class AMIPageDrawer extends PageDrawer {
     @Override
     public void beginText() throws IOException {
     	if (debugParams.showBeginText) System.out.println("beginText");
+    	// does not affect plot?
     	super.beginText();
     	currentTextPhrase = new SVGG();
     	currentTextPhrase.addAttribute(new Attribute("begin","text"));
@@ -250,7 +266,9 @@ public class AMIPageDrawer extends PageDrawer {
     public void endText() throws IOException {
     	
     	if (debugParams.showEndText) System.out.println("endText");
+    	if (debugParams.debugGraphics) debugGraphics("endText");
     	super.endText();
+    	
     	if (currentTextPhrase == null) {
     		throw new RuntimeException("textPhrase not opened");
     	}
@@ -274,7 +292,7 @@ public class AMIPageDrawer extends PageDrawer {
     	if (debugParams.showChar) {
     		System.err.print(unicode);
     	}
-    	super.showFontGlyph(matrix, font, code, unicode, displacement);
+    	
     	double x = matrix.getTranslateX();
     	double y = matrix.getTranslateY();
     	SVGText text = new SVGText(new Real2(x, y).format(2), unicode);
@@ -288,7 +306,58 @@ public class AMIPageDrawer extends PageDrawer {
 //        at.concatenate(font.getFontMatrix().createAffineTransform());
 //
 //        drawGlyph2D(glyph2D, font, code, displacement, at);
+    	super.showFontGlyph(matrix, font, code, unicode, displacement);
+    	if (debugParams.debugGraphics) debugGraphics("showFontGlyph");
     }
+
+	private void debugGraphics(String msg) {
+		Graphics2D graphics = getGraphics();
+		if (!graphics.equals(lastGraphics)) {
+			System.out.println("*****************"+msg+"*********************");
+			System.out.println("lastGraphics: "+debug(lastGraphics)+" !=\n"+debug(graphics));
+			lastGraphics = graphics;
+		}
+	}
+		
+	private String debug(Graphics2D graphics) {
+		StringBuilder sb = new StringBuilder();
+		if (graphics == null) {
+			sb.append("null");
+		} else {
+			sb.append("back "+graphics.getBackground());
+			sb.append("col "+graphics.getColor());
+			sb.append("compos "+graphics.getComposite());
+			sb.append("font "+graphics.getFont());
+			sb.append("paint "+graphics.getPaint());
+			sb.append("stroke "+graphics.getStroke());
+			sb.append("trans "+graphics.getTransform());
+		}
+
+		return sb.toString();
+	}
+
+	private void debugPath(String msg) {
+		GeneralPath path = getLinePath();
+		if (!path.equals(lastPath)) {
+			System.out.println("*****************"+msg+"*********************");
+			System.out.println("lastPath: "+debug(lastPath)+" !=\n"+debug(path));
+			lastPath = path;
+		}
+	}
+		
+
+	private String debug(GeneralPath path) {
+		StringBuilder sb = new StringBuilder();
+		if (path == null) {
+			sb.append("null");
+		} else {
+			sb.append("wind "+path.getWindingRule());
+			sb.append("bounds "+path.getBounds2D());
+			sb.append("path "+SVGPath.constructDString(path));
+		}
+
+		return sb.toString();
+	}
 
 	private String getCurrentRGB() {
 		return currentJavaColor == null ? "white" : toRGB(currentJavaColor);
@@ -1134,6 +1203,12 @@ public class AMIPageDrawer extends PageDrawer {
 		this.currentPage = currentPage;
 		PDRectangle cropBox = currentPage.getCropBox();
 	}
+
+    private float clampColor(float color)
+    {
+        return color < 0 ? 0 : (color > 1 ? 1 : color);        
+    }
+
 
 
 }

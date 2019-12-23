@@ -34,7 +34,7 @@ public class CustomPageDrawerTest extends AbstractAMITest {
 //      DrawerType drawerType = DrawerType.ORIGINAL;
       DrawerType drawerType = DrawerType.AMI_MEDIUM;
         int pageSerial = 0;
-      runPageDrawer(root, file, pageSerial, drawerType);
+      runPageDrawer(root, file, pageSerial, drawerType, true);
 	}
 
 	@Test
@@ -48,11 +48,11 @@ public class CustomPageDrawerTest extends AbstractAMITest {
       DrawerType drawerType = DrawerType.AMI_BRIEF;
 //        int pageSerial = 0;
           int pageSerial = 1;
-      runPageDrawer(root, file, pageSerial, drawerType);
+      runPageDrawer(root, file, pageSerial, drawerType, false);
 	}
 
-	private void runPageDrawer(String root, File inputPdf, int pageSerial, DrawerType drawerType) throws IOException {
-		PageDrawerRunner pageDrawerRunner = new PageDrawerRunner(inputPdf, drawerType);
+	private void runPageDrawer(String root, File inputPdf, int pageSerial, DrawerType drawerType, boolean debug) throws IOException {
+		PageDrawerRunner pageDrawerRunner = new PageDrawerRunner(inputPdf, drawerType, debug);
 		pageDrawerRunner.processPage(pageSerial);
 		
 		File outputPng = new File(PDF2SVG2, root+".png");

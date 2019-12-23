@@ -68,6 +68,7 @@ public class PageDrawerRunner
 	private MyPDFRenderer myPdfRenderer;
 	private PDDocument doc;
 	private PDPage currentPage;
+	private boolean debug;
 
 	public PageDrawerRunner() {
 		
@@ -78,13 +79,19 @@ public class PageDrawerRunner
 		this.setDrawerType(drawerType);
 	}
 	
-	public PageDrawerRunner(File inputFile, DrawerType drawerType) {
+	public PageDrawerRunner(File inputFile, DrawerType drawerType, boolean debug) {
 		try {
 			doc = PDDocument.load(inputFile);
 		} catch (IOException e) {
 			throw new RuntimeException("cannot read PDF", e);
 		}
 		this.setDrawerType(drawerType);
+		this.setDebug(debug);
+		
+	}
+
+	private void setDebug(boolean debug) {
+		this.debug= debug;
 	}
 
 	public void setDrawerType(DrawerType drawerType) {
@@ -185,7 +192,7 @@ public class PageDrawerRunner
 		File inputFile = new File(TEST_PDFBOX_DIR, "custom-render-demo.pdf");
         File outputFile = new File(TEST_PDFBOX_DIR, "custom-render-demo.png");
         int pageSerial = 0;
-        PageDrawerRunner drawerExample = new PageDrawerRunner(inputFile, DrawerType.AMI_BRIEF);
+        PageDrawerRunner drawerExample = new PageDrawerRunner(inputFile, DrawerType.AMI_BRIEF, true);
         drawerExample.runExample(inputFile, outputFile, pageSerial, DrawerType.AMI_BRIEF);
 //        drawerExample.runExample(inputFile, outputFile, pageSerial);
 	}
@@ -195,7 +202,7 @@ public class PageDrawerRunner
 		File imgDir = new File(LICHTENBURG, "img");
 		imgDir.mkdirs();
 		File inputFile = new File(LICHTENBURG, "fulltext.pdf");
-        PageDrawerRunner drawerExample = new PageDrawerRunner(inputFile, DrawerType.ORIGINAL);
+        PageDrawerRunner drawerExample = new PageDrawerRunner(inputFile, DrawerType.ORIGINAL, false);
         for (int pageSerial = 0; pageSerial < 10; pageSerial++) {
         	File outputFile = new File(imgDir, "fulltext."+pageSerial+".png");
         	System.out.println("wrote: "+outputFile);
