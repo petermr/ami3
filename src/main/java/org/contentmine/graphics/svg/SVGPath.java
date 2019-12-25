@@ -160,7 +160,10 @@ public class SVGPath extends SVGShape {
 	public SVGPath(PathPrimitiveList primitiveList, SVGPath reference) {
 		this();
 		if (primitiveList == null) {
-			throw new RuntimeException("null primitiveList");
+			// seems to be OK to end non-existent path?
+			primitiveList = getOrCreatePathPrimitiveList();
+			LOG.info("null primitiveList");
+//			throw new RuntimeException("null primitiveList");
 		}
 		if (reference != null) {
 			XMLUtil.copyAttributes(reference, this);
@@ -646,18 +649,38 @@ public class SVGPath extends SVGShape {
 
 	public static String constructDString(GeneralPath generalPath) {
 		// should create a new Iterator
-		PathIterator pathIterator = generalPath.getPathIterator(new AffineTransform());
+		PathIterator pathIterator = generalPath.getPathIterator(/*new AffineTransform()*/null);
 		return getPathAsDString(pathIterator);
+	}
+
+	public static String constructDString(GeneralPath generalPath, int places) {
+		// should create a new Iterator
+		String d = "";
+		PathIterator pathIterator = generalPath.getPathIterator(/*new AffineTransform()*/null);
+		if (pathIterator.isDone()) {
+			System.out.println("DONE");
+//			pathIterator = generalPath.getPathIterator(/*new AffineTransform()*/null);
+//			if (pathIterator.isDone()) {
+//				System.out.println("STILL DONE");
+//			}
+		} else {
+			d = SVGPathPrimitive.formatDString(getPathAsDString(pathIterator), places);
+		}
+		return d;
 	}
 
 	public static String getPathAsDString(PathIterator pathIterator) {
 		// if the iterator is constructed with isDone() = true something has gone wrong. 
+		// or maybe there are no primitives
 		// This kludge allows us to navigate to the first Z and hope
 		boolean kludgeIterate = pathIterator.isDone();
-		if (kludgeIterate) {System.err.print("!K");}
 		if (kludgeIterate) {
+			System.err.print("KLUGE ITER");
 			return createKludgedDString(pathIterator);
+			
+//			return createDString(pathIterator);
 		} else {
+//			System.err.println("OKIterator");
 			return createDString(pathIterator);
 		}
 	}

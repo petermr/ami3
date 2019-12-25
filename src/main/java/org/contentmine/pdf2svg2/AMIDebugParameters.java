@@ -49,11 +49,11 @@ public class AMIDebugParameters {
 	public static AMIDebugParameters getDefaultParameters() {
 		AMIDebugParameters parameters = new AMIDebugParameters();
 		parameters.showAnnotation = true;
-		parameters.showAppendRectangle = true;
+		parameters.showAppendRectangle = /*true*/ false;
 		parameters.showBeginMarked = true;
 		parameters.showBeginText = true;
 		parameters.showChar = true;
-		parameters.showClip = true;
+		parameters.showClip = /*true*/ false;
 		parameters.showClosePath = true;
 		parameters.showColor = true;
 		parameters.showCurveTo = true;
