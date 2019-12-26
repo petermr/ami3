@@ -391,67 +391,7 @@ public class AMIPageDrawer extends PageDrawer {
     	if (debugParams.debugGraphics) debugGraphics("showFontGlyph");
     }
 
-	private double transformY(float y) {
-		return pageSize.getHeight() - y;
-	}
 
-	private void debugGraphics(String msg) {
-		AMIGraphics2D amiGraphics = new AMIGraphics2D(getGraphics(), getLinePath());
-		Graphics2D graphics = getGraphics();
-		if (!graphics.equals(lastGraphics)) {
-			System.out.println("*****************"+msg+"*********************");
-			System.out.println("lastGraphics: "+debug(lastGraphics)+" !=\n"+debug(graphics));
-			lastGraphics = graphics;
-		}
-	}
-		
-	private String debug(Graphics2D graphics) {
-		StringBuilder sb = new StringBuilder();
-		if (graphics == null) {
-			sb.append("null");
-		} else {
-			sb.append("back "+graphics.getBackground());
-			sb.append("col "+graphics.getColor());
-			sb.append("compos "+graphics.getComposite());
-			sb.append("font "+graphics.getFont());
-			sb.append("paint "+graphics.getPaint());
-			sb.append("stroke "+graphics.getStroke());
-			sb.append("trans "+graphics.getTransform());
-		}
-
-		return sb.toString();
-	}
-
-	private void debugPath(String msg) {
-		GeneralPath path = getLinePath();
-		if (!path.equals(lastPath)) {
-			System.out.println("*****************"+msg+"*********************");
-			System.out.println("lastPath: "+debug(lastPath)+" !=\n"+debug(path));
-			lastPath = path;
-		}
-	}
-		
-
-	private String debug(GeneralPath path) {
-		StringBuilder sb = new StringBuilder();
-		if (path == null) {
-			sb.append("null");
-		} else {
-			sb.append("wind "+path.getWindingRule());
-			sb.append("bounds "+path.getBounds2D());
-			sb.append("path "+SVGPath.constructDString(path));
-		}
-
-		return sb.toString();
-	}
-
-	private String getCurrentJavaStrokeRGB() {
-		return currentJavaStrokeColor == null ? "none" : toRGB(currentJavaStrokeColor);
-	}
-
-	private String getCurrentJavaFillRGB() {
-		return currentJavaNonStrokeColor == null ? "none" : toRGB(currentJavaNonStrokeColor);
-	}
 
 	/**
      * Render the font using the Glyph2D interface.
@@ -762,9 +702,9 @@ so afterwards we can get Composite, StrokingPaint, Stroke and Clip from the Java
     		System.out.println("M"+format(x, y, ndec));
     	}
     	super.moveTo(x, y);
-    	ensurePathPrimitiveList().add(new MovePrimitive(new Real2(x, y).format(ndec)));
+    	ensurePathPrimitiveList().add(new MovePrimitive(new Real2(x, transformY(y)).format(ndec)));
 //    	linePath.moveTo(x, y);
-    	LOG.debug("MOVE "+ SVGPath.constructDString(getLinePath(), ndec));
+//    	LOG.debug("MOVE "+ SVGPath.constructDString(getLinePath(), ndec));
     	currentPoint = new Real2(x, transformY(y));
     }
 
@@ -775,7 +715,7 @@ so afterwards we can get Composite, StrokingPaint, Stroke and Clip from the Java
     	}
     	super.lineTo(x, y);
     	ensurePathPrimitiveList().add(new LinePrimitive(new Real2(x, transformY(y)).format(ndec)));
-    	LOG.debug("LINE "+ SVGPath.constructDString(getLinePath(), ndec));
+//    	LOG.debug("LINE "+ SVGPath.constructDString(getLinePath(), ndec));
     }
 
     @Override
@@ -791,7 +731,7 @@ so afterwards we can get Composite, StrokingPaint, Stroke and Clip from the Java
     		}
     		));
     	ensurePathPrimitiveList().add(new CubicPrimitive(xyArray));
-      	LOG.debug("CURVE "+ SVGPath.constructDString(getLinePath(), ndec));
+//      	LOG.debug("CURVE "+ SVGPath.constructDString(getLinePath(), ndec));
     }
 
 	@Override
@@ -810,7 +750,7 @@ so afterwards we can get Composite, StrokingPaint, Stroke and Clip from the Java
     	}
     	super.closePath();    	
 //        linePath.closePath();
-    	LOG.debug("CLOSE "+ SVGPath.constructDString(getLinePath(), ndec));
+//    	LOG.debug("CLOSE "+ SVGPath.constructDString(getLinePath(), ndec));
     }
 
     @Override
@@ -818,7 +758,7 @@ so afterwards we can get Composite, StrokingPaint, Stroke and Clip from the Java
     	if (debugParams.showEndPath) {
     		System.out.println("endPath");
     	}
-    	LOG.debug("END "+ SVGPath.constructDString(getLinePath(), ndec));
+//    	LOG.debug("END "+ SVGPath.constructDString(getLinePath(), ndec));
     	super.endPath();
     	createPathAndFlush();
     }
@@ -1214,6 +1154,8 @@ so afterwards we can get Composite, StrokingPaint, Stroke and Clip from the Java
 //        }
     }
     
+    // ===========================
+
 	private void updateColorCompositeStroke() {
 		updateCurrentColor();
     	updateCurrentComposite();
@@ -1246,7 +1188,67 @@ so afterwards we can get Composite, StrokingPaint, Stroke and Clip from the Java
     	}
 	}
 
+	private double transformY(float y) {
+		return pageSize.getHeight() - y;
+	}
 
+	private void debugGraphics(String msg) {
+		AMIGraphics2D amiGraphics = new AMIGraphics2D(getGraphics(), getLinePath());
+		Graphics2D graphics = getGraphics();
+		if (!graphics.equals(lastGraphics)) {
+			System.out.println("*****************"+msg+"*********************");
+			System.out.println("lastGraphics: "+debug(lastGraphics)+" !=\n"+debug(graphics));
+			lastGraphics = graphics;
+		}
+	}
+		
+	private String debug(Graphics2D graphics) {
+		StringBuilder sb = new StringBuilder();
+		if (graphics == null) {
+			sb.append("null");
+		} else {
+			sb.append("back "+graphics.getBackground());
+			sb.append("col "+graphics.getColor());
+			sb.append("compos "+graphics.getComposite());
+			sb.append("font "+graphics.getFont());
+			sb.append("paint "+graphics.getPaint());
+			sb.append("stroke "+graphics.getStroke());
+			sb.append("trans "+graphics.getTransform());
+		}
+
+		return sb.toString();
+	}
+
+	private void debugPath(String msg) {
+		GeneralPath path = getLinePath();
+		if (!path.equals(lastPath)) {
+			System.out.println("*****************"+msg+"*********************");
+			System.out.println("lastPath: "+debug(lastPath)+" !=\n"+debug(path));
+			lastPath = path;
+		}
+	}
+		
+
+	private String debug(GeneralPath path) {
+		StringBuilder sb = new StringBuilder();
+		if (path == null) {
+			sb.append("null");
+		} else {
+			sb.append("wind "+path.getWindingRule());
+			sb.append("bounds "+path.getBounds2D());
+			sb.append("path "+SVGPath.constructDString(path));
+		}
+
+		return sb.toString();
+	}
+
+	private String getCurrentJavaStrokeRGB() {
+		return currentJavaStrokeColor == null ? "none" : toRGB(currentJavaStrokeColor);
+	}
+
+	private String getCurrentJavaFillRGB() {
+		return currentJavaNonStrokeColor == null ? "none" : toRGB(currentJavaNonStrokeColor);
+	}
 
     // ===========================
 

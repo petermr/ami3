@@ -141,6 +141,9 @@ public class PageDrawerRunner
 	
 	public void processPage(int pageSerial) throws IOException {
 		createPDFRenderer(doc, drawerType);
+		if (pageSerial < 0 || pageSerial >= doc.getNumberOfPages()) {
+			throw new IllegalArgumentException("Page out of bounds "+pageSerial);
+		}
 		currentPage = doc.getPage(pageSerial);
 		PageDrawer pageDrawer = ((MyPDFRenderer)myPdfRenderer).getPageDrawer();
 		if (pageDrawer instanceof AMIPageDrawer) {

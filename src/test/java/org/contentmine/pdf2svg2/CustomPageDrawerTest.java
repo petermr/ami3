@@ -45,21 +45,48 @@ public class CustomPageDrawerTest extends AbstractAMITest {
       Assert.assertTrue(file.exists());
       
 //      DrawerType drawerType = DrawerType.ORIGINAL;
-      DrawerType drawerType = DrawerType.AMI_BRIEF;
-//        int pageSerial = 0;
-          int pageSerial = 1;
+//      DrawerType drawerType = DrawerType.AMI_BRIEF;
+      
+      DrawerType drawerType = DrawerType.AMI_MEDIUM;
+//        int pageSerial = 0; // title
+//      int pageSerial = 1; // plots
+      int pageSerial = -1; // analyze all
       runPageDrawer(root, file, pageSerial, drawerType, false);
 	}
 
+	/**
+	 * 
+	 * @param root
+	 * @param inputPdf
+	 * @param pageSerial page to draw (0-based); -1 runs all
+	 * @param drawerType
+	 * @param debug
+	 * @throws IOException
+	 */
 	private void runPageDrawer(String root, File inputPdf, int pageSerial, DrawerType drawerType, boolean debug) throws IOException {
 		PageDrawerRunner pageDrawerRunner = new PageDrawerRunner(inputPdf, drawerType, debug);
+		if (pageSerial < 0) {
+			while(true) {
+				try {
+					runPageDrawer(root, ++pageSerial, pageDrawerRunner);
+				} catch (IllegalArgumentException e) {
+					System.out.println("quit");
+					break;
+				}
+			}
+		} else {
+			runPageDrawer(root, pageSerial, pageDrawerRunner);
+		}
+//		doc.close();
+	}
+
+	private void runPageDrawer(String root, int pageSerial, PageDrawerRunner pageDrawerRunner) throws IOException , IllegalArgumentException{
 		pageDrawerRunner.processPage(pageSerial);
 		
-		File outputPng = new File(PDF2SVG2, root+".png");
+		File outputPng = new File(PDF2SVG2, root+"."+pageSerial+".png");
 		ImageIO.write(pageDrawerRunner.getImage(), "PNG", outputPng);
 		LOG.debug("wrote PNG "+outputPng);
 		SVGElement svgElement = pageDrawerRunner.getSVG();
-		SVGSVG.wrapAndWriteAsSVG(svgElement, new File(PDF2SVG2, root+".svg"));
-//		doc.close();
+		SVGSVG.wrapAndWriteAsSVG(svgElement, new File(PDF2SVG2, root+"."+pageSerial+".svg"));
 	}
 }
