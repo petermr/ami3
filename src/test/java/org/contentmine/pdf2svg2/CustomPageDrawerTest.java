@@ -48,9 +48,9 @@ public class CustomPageDrawerTest extends AbstractAMITest {
 //      DrawerType drawerType = DrawerType.AMI_BRIEF;
       
       DrawerType drawerType = DrawerType.AMI_MEDIUM;
-//        int pageSerial = 0; // title
-//      int pageSerial = 1; // plots
-      int pageSerial = -1; // analyze all
+        int pageSerial = 0; // title
+//      pageSerial = 1; // plots
+//      pageSerial = -1; // analyze all
       runPageDrawer(root, file, pageSerial, drawerType, false);
 	}
 

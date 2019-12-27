@@ -35,6 +35,7 @@ import org.apache.pdfbox.rendering.PageDrawer;
 import org.apache.pdfbox.rendering.PageDrawerParameters;
 import org.apache.pdfbox.util.Matrix;
 import org.apache.pdfbox.util.Vector;
+import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Array;
 import org.contentmine.eucl.euclid.Util;
@@ -61,6 +62,11 @@ public class AMIPageDrawer extends PageDrawer {
 		LOG.setLevel(Level.DEBUG);
 	}
 	
+	private static final String CODE = "code";
+	private static final String UNICODE = "unicode";
+	private static final String WIDTH = "width";
+	private static final String MATRIX = "matrix";
+	
     private AMIDebugParameters debugParams;
 	private FontGlyph currentFontGlyph;
 	private Color currentJavaStrokeColor;
@@ -80,6 +86,7 @@ public class AMIPageDrawer extends PageDrawer {
 	private PathPrimitiveList pathPrimitiveList;
 	private Composite currentComposite;
 	private PDRectangle pageSize;
+	private double EPS = 0.000000001;
 
 	AMIPageDrawer(PageDrawerParameters parameters, AMIDebugParameters debugParams) throws IOException {
         super(parameters);
@@ -380,6 +387,15 @@ public class AMIPageDrawer extends PageDrawer {
     	text.setStroke(getCurrentJavaFillRGB());
     	text.setFill(getCurrentJavaStrokeRGB());
     	text.setFontSize(Util.format((double)matrix.getScaleY(), ndec));
+    	text.setFontFamily(getName(font));
+    	if (unicode == null) {
+    		text.addAttribute(new Attribute(CODE, String.valueOf(code)));
+//    	text.addAttribute(new Attribute(UNICODE, String.valueOf(unicode)));
+    	}
+    	text.addAttribute(new Attribute(WIDTH, String.valueOf(displacement.getX())));
+    	if (!Real.isZero(matrix.getShearX(), EPS) || !Real.isZero(matrix.getShearY(), EPS )) {
+    		text.addAttribute(new Attribute(MATRIX, String.valueOf(matrix)));
+    	}
     	currentTextPhrase.appendChild(text);
     	currentFontGlyph = fontGlyph;
     	
@@ -392,6 +408,14 @@ public class AMIPageDrawer extends PageDrawer {
     }
 
 
+
+	private String getName(PDFont font) {
+		String name = font == null ? null : font.getName();
+		if (name != null && name.contains("+")) {
+			name = name.split("\\+")[1];
+		}
+		return name;
+	}
 
 	/**
      * Render the font using the Glyph2D interface.

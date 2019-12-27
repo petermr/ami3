@@ -20,6 +20,7 @@ package org.contentmine.pdf2svg2;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 import javax.imageio.ImageIO;
 
@@ -28,11 +29,12 @@ import org.apache.log4j.Logger;
 import org.apache.pdfbox.contentstream.PDFGraphicsStreamEngine;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
-import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.rendering.PDFRenderer;
 import org.apache.pdfbox.rendering.PageDrawer;
 import org.apache.pdfbox.rendering.PageDrawerParameters;
 import org.contentmine.graphics.svg.SVGElement;
+import org.contentmine.graphics.svg.SVGG;
+import org.contentmine.graphics.svg.SVGText;
 
 /**
  * Example showing custom rendering by subclassing PageDrawer.
@@ -69,6 +71,7 @@ public class PageDrawerRunner
 	private PDDocument doc;
 	private PDPage currentPage;
 	private boolean debug;
+	private boolean tidySVG = true;
 
 	public PageDrawerRunner() {
 		
@@ -164,9 +167,18 @@ public class PageDrawerRunner
 			PageDrawer pageDrawer = ((MyPDFRenderer)myPdfRenderer).getPageDrawer();
 			svgElement = ((AMIPageDrawer) pageDrawer).getSVGElement();
 		}
+		if (tidySVG) {
+			tidySVG(svgElement);
+		}
 		return svgElement;
 	}
 
+
+	private SVGElement tidySVG(SVGElement svgElement) {
+		SVGElement newSvgElement = new SVGG();
+		List<SVGText> textList = SVGText.extractSelfAndDescendantTexts(svgElement);
+		
+	}
 
 	private void close() throws IOException {
     	doc.close();
