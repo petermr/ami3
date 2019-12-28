@@ -75,8 +75,12 @@ import nu.xom.Attribute;
  *  
  * @author pm286
  */
+/** superseded by AMIPageDrawer
+ * 
+ * @author pm286
+ *
+ */
 public class PageParser extends PageDrawer    {
-	private static final String ILLEGAL_CHAR = "?";
 	private static final Logger LOG = Logger.getLogger(PageParser.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
@@ -86,6 +90,7 @@ public class PageParser extends PageDrawer    {
 	private static final Graphics2D TEXT = null;
 	private static final String SVG_RHMARGIN = "svg_rhmargin";
 	private static final double YMAX = 800.;
+	public static final String ILLEGAL_CHAR = "?";
 
 	private SVGG svgg;
 	private double yEpsilon = 0.05; // guess
@@ -328,7 +333,7 @@ PMR have not yet looked into this.
 				(textParameters.isItalic() ? FontStyle.ITALIC.toString() : FontStyle.NORMAL.toString()));
 		currentSVGText.setFontWeight(textParameters.isForceBold() ? FontWeight.BOLD : FontWeight.NORMAL);
 		if (!currentSVGText.isBold()) {
-			addBoldFromFontWeight();
+			currentSVGText.addBoldFromFontWeight(textParameters.getFontWeight(), minBoldWeight);
 		}
 		
 		Real2 scales = textParameters.getScales().format(3);
@@ -339,16 +344,6 @@ PMR have not yet looked into this.
 		currentSVGText.setX(xArray);
 		addCurrentTextAttributes(currentSVGText);
 		svgg.appendChild(currentSVGText);
-	}
-
-	private void addBoldFromFontWeight() {
-		Double fontWeight = textParameters.getFontWeight();
-		if (fontWeight != null && fontWeight > 0.0) {
-			LOG.trace("wt: "+fontWeight);
-			if (fontWeight > minBoldWeight ) {
-				currentSVGText.setFontWeight(FontWeight.BOLD);
-			}
-		}
 	}
 
 	private void drawRHMargin() {

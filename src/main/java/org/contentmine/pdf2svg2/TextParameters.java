@@ -1,5 +1,6 @@
 package org.contentmine.pdf2svg2;
 
+import java.awt.geom.AffineTransform;
 import java.io.IOException;
 
 import org.apache.log4j.Level;
@@ -9,21 +10,26 @@ import org.apache.pdfbox.pdmodel.font.PDFontDescriptor;
 import org.apache.pdfbox.util.Matrix;
 import org.apache.pdfbox.util.Vector;
 import org.contentmine.eucl.euclid.Angle;
+import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.RealSquareMatrix;
 import org.contentmine.eucl.euclid.Transform2;
+import org.contentmine.graphics.svg.SVGText;
 
 public class TextParameters {
 	private static final Logger LOG = Logger.getLogger(TextParameters.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
+	public final static double EPS = 1e-10;
+	public final static double SCALE_EPS = 1e-5;
 
 	private Matrix matrix;
 	private PDFont font;
 	private Transform2 transform2;
 	private Angle angle;
 	private PDFontDescriptor fdescriptor;
+	private String style;
 
 	public TextParameters(Matrix matrix, PDFont font) {
 		if (matrix == null) {
@@ -68,6 +74,20 @@ public class TextParameters {
 	    			"/"+font.getFontMatrix()+            // /[0.001,0.0,0.0,0.001,0.0,0.0]  3*2 ??
 	    			"");
     	}
+	}
+
+	/** create TextParameters from previously processed/generated SVGText.
+	 * 
+	 * @param text
+	 */
+	public TextParameters(SVGText text) {
+		Transform2 t2 = text.getTransform();
+		if (t2 != null) {
+			AffineTransform at = t2.getAffineTransform();
+			matrix = new Matrix(at);
+		} else {
+			LOG.info("text has no Transform");
+		}
 	}
 
 	@Override
@@ -196,6 +216,10 @@ public class TextParameters {
 	public Angle getAngle() {
 		return angle;
 	}
+	
+	public String getStyle() {
+		return style;
+	}
 
 	@Override
 	public String toString() {
@@ -205,5 +229,40 @@ public class TextParameters {
 		return sb.toString();
 	}
 
-	
+	public boolean hasNormalOrientation() {
+		// any shear is not normal
+		return 
+			Real.isZero(matrix.getShearX(), EPS) &&
+			Real.isZero(matrix.getShearY(), EPS) &&
+		// both scales should be positive
+		   matrix.getScaleX() > 0.0 &&
+		   matrix.getScaleY() > 0.0
+		   ;
+	}
+
+	public String getCSSTransformValue() {
+		return "matrix("
+				+matrix.getValue(0, 0)+" "
+				+matrix.getValue(0, 1)+" "
+				+matrix.getValue(1, 0)+" "
+				+matrix.getValue(1, 1)+" "
+				+matrix.getValue(0, 2)+" "
+				+matrix.getValue(1, 2)+
+				")";
+	}
+
+	public boolean isScaleChanged(TextParameters lastTextParameters) {
+		return lastTextParameters == null ||
+			(!Real.isEqual(lastTextParameters.getScaleX(), this.getScaleX(), SCALE_EPS) ||
+			!Real.isEqual(lastTextParameters.getScaleY(), this.getScaleY(), SCALE_EPS)
+			);
+	}
+
+	private Double getScaleX() {
+		return matrix == null ? null : (double) matrix.getScaleX();
+	}
+
+	private Double getScaleY() {
+		return matrix == null ? null : (double) matrix.getScaleY();
+	}
 }

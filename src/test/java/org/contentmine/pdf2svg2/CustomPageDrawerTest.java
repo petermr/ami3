@@ -65,6 +65,9 @@ public class CustomPageDrawerTest extends AbstractAMITest {
 	 */
 	private void runPageDrawer(String root, File inputPdf, int pageSerial, DrawerType drawerType, boolean debug) throws IOException {
 		PageDrawerRunner pageDrawerRunner = new PageDrawerRunner(inputPdf, drawerType, debug);
+		boolean tidySVG = true;
+//		tidySVG = false;
+		pageDrawerRunner.setTidySVG(tidySVG);
 		if (pageSerial < 0) {
 			while(true) {
 				try {

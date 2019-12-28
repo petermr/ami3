@@ -35,6 +35,7 @@ import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.html.HtmlSub;
 import org.contentmine.graphics.html.HtmlSup;
+import org.contentmine.graphics.svg.GraphicsElement.FontWeight;
 import org.contentmine.graphics.svg.SVGLine.LineDirection;
 import org.contentmine.graphics.svg.fonts.FontWidths;
 import org.contentmine.image.ImageUtil;
@@ -1534,12 +1535,12 @@ public class SVGText extends SVGElement {
 	 * slightly inefficient as should use StringBuilder
 	 * @param unicode
 	 */
-	public void appendText(String unicode) {
+	public void appendText(String charx) {
 		String text = this.getText();
 		if (text == null) {
-			text = unicode;
+			text = charx;
 		} else {
-			text += unicode;
+			text += charx;
 		}
 		this.setText(text);
 	}
@@ -1552,6 +1553,17 @@ public class SVGText extends SVGElement {
 		RealArray xArray = getXArray();
 		xArray.addElement(x);
 		this.setX(xArray);
+	}
+
+	/** adds an x coordinate to Width array.
+	 * 
+	 * @param x2
+	 */
+	public void appendFontWidth(double x) {
+		RealArray widthArray = getSVGXFontWidthArray();
+		if (widthArray == null) widthArray = new RealArray();
+		widthArray.addElement(x);
+		this.setSVGXFontWidth(widthArray);
 	}
 
 	public void removeCharacter(int i) {
@@ -1657,6 +1669,37 @@ public class SVGText extends SVGElement {
 			this.addAttribute(new Attribute(SVGElement.BOUNDING_BOX, bbox.toString()));
 		}
 	}
+
+	public boolean hasSameStyle(SVGText text) {
+		if (text == null) return false;
+		String style = this.getStyle();
+		String textStyle = text.getStyle();
+		if (style == null && textStyle == null) return true;
+		if (style != null && style.equals(textStyle)) return true;
+		return false;
+	}
+	
+	public boolean hasSameY(SVGText text, double eps) {
+		if (text == null) {
+			return false;
+		}
+		double thisY = this.getY();
+		double y = text.getY();
+		return Real.isEqual(thisY, y, eps);
+		
+	}
+
+
+
+	public void addBoldFromFontWeight(Double fontWeight, double minBoldWeight) {
+		if (fontWeight != null && fontWeight > 0.0) {
+			LOG.trace("wt: "+fontWeight);
+			if (fontWeight > minBoldWeight ) {
+				this.setFontWeight(FontWeight.BOLD);
+			}
+		}
+	}
+
 
 	
 

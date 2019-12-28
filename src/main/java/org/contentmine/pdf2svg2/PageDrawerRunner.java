@@ -20,6 +20,8 @@ package org.contentmine.pdf2svg2;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import javax.imageio.ImageIO;
@@ -32,9 +34,17 @@ import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.rendering.PDFRenderer;
 import org.apache.pdfbox.rendering.PageDrawer;
 import org.apache.pdfbox.rendering.PageDrawerParameters;
+import org.contentmine.eucl.euclid.Real2;
+import org.contentmine.eucl.euclid.RealArray;
+import org.contentmine.graphics.svg.GraphicsElement.FontStyle;
+import org.contentmine.graphics.svg.GraphicsElement.FontWeight;
+import org.contentmine.graphics.svg.SVGConstants;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGText;
+import org.contentmine.graphics.svg.SVGUtil;
+
+import nu.xom.Element;
 
 /**
  * Example showing custom rendering by subclassing PageDrawer.
@@ -57,12 +67,12 @@ public class PageDrawerRunner
 	private static final String PROJECTS_DIR = 
 			"src/test/resources/org/contentmine/projects";
 	private static final File OMAR_TEST_DIR = new File(PROJECTS_DIR, "omar/test");
+	private static double Y_EPS = 1.0E-5;
 
 	public enum DrawerType {
 		AMI_BRIEF,
 		AMI_MEDIUM,
 		ORIGINAL,
-		
 	}
 
 	private DrawerType drawerType = DrawerType.ORIGINAL;
@@ -72,6 +82,9 @@ public class PageDrawerRunner
 	private PDPage currentPage;
 	private boolean debug;
 	private boolean tidySVG = true;
+//	private SVGText currentSVGText;
+	private TextParameters lastTextParameters;
+	private double minBoldWeight = 500.;
 
 	public PageDrawerRunner() {
 		
@@ -91,6 +104,14 @@ public class PageDrawerRunner
 		this.setDrawerType(drawerType);
 		this.setDebug(debug);
 		
+	}
+
+	public boolean isTidySVG() {
+		return tidySVG;
+	}
+
+	public void setTidySVG(boolean tidySVG) {
+		this.tidySVG = tidySVG;
 	}
 
 	private void setDebug(boolean debug) {
@@ -167,17 +188,74 @@ public class PageDrawerRunner
 			PageDrawer pageDrawer = ((MyPDFRenderer)myPdfRenderer).getPageDrawer();
 			svgElement = ((AMIPageDrawer) pageDrawer).getSVGElement();
 		}
+		if (debug) {
+			// output intermediate
+		}
 		if (tidySVG) {
-			tidySVG(svgElement);
+			tidyGTextDescendants(svgElement);
 		}
 		return svgElement;
 	}
 
 
-	private SVGElement tidySVG(SVGElement svgElement) {
-		SVGElement newSvgElement = new SVGG();
-		List<SVGText> textList = SVGText.extractSelfAndDescendantTexts(svgElement);
-		
+	private void tidyGTextDescendants(SVGElement svgElement) {
+		List<SVGElement> gTextElements = SVGUtil.getQuerySVGElements(
+				svgElement, "//*[local-name()='"+SVGG.TAG+"' and @begin='text']");
+		List<SVGG> gTextList = SVGG.extractGs(gTextElements);
+		for (SVGG gText : gTextList) {
+			tidyGText(gText);
+		}
+		svgElement.addNamespaceDeclaration(SVGConstants.SVGX_PREFIX,SVGConstants.SVGX_NS);
+
+	}
+
+	private void tidyGText(SVGG gText) {
+		List<SVGElement> textList0 = SVGUtil.getQuerySVGElements(gText, "*[local-name()='"+SVGText.TAG+"']");
+		List<SVGText> textList = new ArrayList<>(); 
+		Iterator<SVGElement> textIterator = textList0.iterator();
+		lastTextParameters = null;
+		SVGText lastText = null;
+		SVGText newText = null;
+		while (textIterator.hasNext()) {
+			SVGText text = (SVGText) textIterator.next();
+			TextParameters textParameters = new TextParameters(text); 
+			if (mustBreakText(lastTextParameters, textParameters, lastText, text)) {
+				text.detach();
+	    		newText = text;
+	    		gText.appendChild(newText);
+			} else {
+				text.detach();
+				newText.appendText(text.getValue());
+		    	newText.appendFontWidth(text.getSVGXFontWidth());
+		    	newText.appendX(text.getX());
+		    	newText.setY(text.getY());
+			}
+
+//	        // bbox in EM -> user units
+//	        Shape bbox = new Rectangle2D.Float(0, 0, font.getWidth(code) / 1000, 1);
+//	        AffineTransform at = textRenderingMatrix.createAffineTransform();
+//	        bbox = at.createTransformedShape(bbox);
+	                
+//	        saveUpdatedParameters(scales, x, y);
+	        lastText = text;
+	        lastTextParameters = textParameters;
+		}
+	}
+	private boolean mustBreakText(TextParameters lastTextParameters, TextParameters textParameters,
+			SVGText lastText, SVGText text) {
+    	if (lastText == null || lastTextParameters == null) {
+    		return true;
+    	} else if (!lastText.hasSameStyle(text)) {
+    		return true;
+    	} else if (!textParameters.hasNormalOrientation()) {
+    		return true;
+    	} else if (!text.hasSameY(lastText, Y_EPS)) {
+    		return true;
+    	} else if (textParameters.isScaleChanged(lastTextParameters)) {
+    		return true;
+    	} else {
+    		return false;
+    	}
 	}
 
 	private void close() throws IOException {
@@ -290,5 +368,40 @@ public class PageDrawerRunner
         	return pageDrawer;
         }
     }
+    
+	private void addCurrentTextAttributes(SVGText text) {
+//		setFillAndStrokeFromGraphics2D(text);
+//		Real2 scales = textParameters.getScales();
+//		// at present I think only the PDFont matters
+//		PDTextState textState = getGraphicsState().getTextState();
+//		PDFont font = textState.getFont();
+//		PDFontDescriptor fontDescriptor = font.getFontDescriptor();
+//
+//		/** not sure how this works
+//		 * sometimes fontSize2 is 1.0, and we need scales
+//		 */
+//		setFontSize(text, scales, textState);
+//
+//		String fontName = font.getName();
+//		fontName = removeArbitraryPrefix(fontName);
+//		text.setFontFamily(fontName);
+//		
+//		// these *might* be useful
+//		try {
+//			font.getDisplacement(codepoint);
+//			font.getBoundingBox();
+////			font.getPositionVector(code); // pnly vertical
+//		} catch (Exception e) {throw new RuntimeException(e);}
+//		
+//		// these *might* be useful
+//		if (fontDescriptor != null) {
+//			fontDescriptor.getItalicAngle();
+//			fontDescriptor.isAllCap();
+//			fontDescriptor.isForceBold();
+//			fontDescriptor.isItalic();
+//			fontDescriptor.isSmallCap();
+//		}
+	}
+
 
 }
