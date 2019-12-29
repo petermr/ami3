@@ -26,6 +26,7 @@ public class AMIDebugParameters {
 	public boolean showCurveTo = true;
 	public boolean showCurrentPoint = true;
 	public boolean showDrawImage = true;
+	public boolean showDrawPage = true;
 	public boolean showEndMarked = true;
 	public boolean showEndPath = true;
 	public boolean showEndText = true;

@@ -31,6 +31,8 @@ import org.apache.pdfbox.pdmodel.graphics.color.PDPattern;
 import org.apache.pdfbox.pdmodel.graphics.form.PDFormXObject;
 import org.apache.pdfbox.pdmodel.graphics.form.PDTransparencyGroup;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImage;
+import org.apache.pdfbox.pdmodel.graphics.state.PDGraphicsState;
+import org.apache.pdfbox.pdmodel.graphics.state.RenderingMode;
 import org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation;
 import org.apache.pdfbox.rendering.PageDrawer;
 import org.apache.pdfbox.rendering.PageDrawerParameters;
@@ -47,6 +49,7 @@ import org.contentmine.graphics.svg.SVGPath;
 import org.contentmine.graphics.svg.SVGText;
 import org.contentmine.graphics.svg.GraphicsElement.FontStyle;
 import org.contentmine.graphics.svg.GraphicsElement.FontWeight;
+import org.contentmine.graphics.svg.path.ClosePrimitive;
 import org.contentmine.graphics.svg.path.CubicPrimitive;
 import org.contentmine.graphics.svg.path.LinePrimitive;
 import org.contentmine.graphics.svg.path.MovePrimitive;
@@ -73,8 +76,8 @@ public class AMIPageDrawer extends PageDrawer {
 	
     private AMIDebugParameters debugParams;
 	private FontGlyph currentFontGlyph;
-	private Color currentJavaStrokeColor;
-	private Color currentJavaNonStrokeColor;
+	private Color javaStrokeColor;
+	private Color javaFillColor;
 	private Stroke currentStroke;
 	private Set<PDFont> fontSet = new HashSet<>();
 	private Set<Stroke> strokeSet = new HashSet<>();
@@ -92,6 +95,7 @@ public class AMIPageDrawer extends PageDrawer {
 	private PDRectangle pageSize;
 	private double EPS = 0.000000001;
 	private Map<String, PDFont> pdFontByName;
+	private RenderingMode renderingMode;
 
 	AMIPageDrawer(PageDrawerParameters parameters, AMIDebugParameters debugParams) throws IOException {
         super(parameters);
@@ -123,9 +127,12 @@ public class AMIPageDrawer extends PageDrawer {
      */
     public void drawPage(Graphics g, PDRectangle pageSize) throws IOException
     {
+    	if (debugParams.showDrawPage) System.out.println(">drawPage");
 
         this.pageSize = pageSize;
     	super.drawPage(g, pageSize);
+    	javaFillColor = null;
+    	javaStrokeColor = null;
     }
 
 
@@ -164,23 +171,21 @@ public class AMIPageDrawer extends PageDrawer {
      */
     @Override
     protected Paint getPaint(PDColor pdColor) throws IOException {
-    	Color javaColor = null;
-//    	boolean change = false;
-        PDColorSpace colorSpace = pdColor.getColorSpace();
-        if (!(colorSpace instanceof PDPattern)) {
-            float[] rgb = colorSpace.toRGB(pdColor.getComponents());
-            javaColor = new Color(clampColor(rgb[0]), clampColor(rgb[1]), clampColor(rgb[2]));
-//            if (!javaColor.equals(currentJavaColor)) {
-//            	if (debugParams.showPaint) System.out.println("COL change "+toRGB(currentJavaColor) +" ==> "+toRGB(javaColor));
-////            	change = true;
-//            }
-        } else {
-        	throw new RuntimeException("PDPattern not supported");
-        }
-
-    	AMIGraphics2D oldAMIG = createCurrentAMIG();
+//    	if (debugParams.showPaint) System.out.println(">paint");
         Paint paint = super.getPaint(pdColor);
-    	showAMIGDiff(oldAMIG);
+//    	Color javaColor = null;
+//        PDColorSpace colorSpace = pdColor.getColorSpace();
+//        if (!(colorSpace instanceof PDPattern)) {
+//            float[] rgb = colorSpace.toRGB(pdColor.getComponents());
+//            javaColor = new Color(clampColor(rgb[0]), clampColor(rgb[1]), clampColor(rgb[2]));
+////            if (!javaColor.equals(javaColor)) {
+////            	if (debugParams.showPaint) System.out.println("COL change "+toRGB(javaColor) +" ==> "+toRGB(javaColor));
+//////            	change = true;
+////            }
+//        } else {
+//        	throw new RuntimeException("PDPattern not supported");
+//        }
+
     	
         return paint;
     }
@@ -188,24 +193,19 @@ public class AMIPageDrawer extends PageDrawer {
 
     @Override
     public void beginText() throws IOException {
-    	createPathAndFlush();
-    	updateColorCompositeStroke();
+    	if (debugParams.showBeginText) System.out.println(">beginText");
 
-    	if (debugParams.showBeginText) System.out.println("beginText");
     	// does not affect plot?
     	super.beginText();
     	currentTextPhrase = new SVGG();
     	currentTextPhrase.addAttribute(new Attribute("begin","text"));
-//    	gTop.appendChild(currentTextPhrase);
 //        setClip();
 //        beginTextClip();
     }
 
     @Override
     public void endText() throws IOException {
-    	createPathAndFlush();
-    	updateColorCompositeStroke();
-    	if (debugParams.showEndText) System.out.println("endText");
+    	if (debugParams.showEndText) System.out.println(">endText");
     	if (debugParams.debugGraphics) debugGraphics("endText");
     	super.endText();
     	
@@ -229,47 +229,265 @@ public class AMIPageDrawer extends PageDrawer {
     @Override
     protected void showFontGlyph(Matrix matrix, PDFont font, int code, String unicode,
                                  Vector displacement) throws IOException {
-    	createPathAndFlush();
-    	updateColorCompositeStroke();
+    	if (debugParams.showFontGlyph) System.out.println(">showFontGlyph");
+    	super.showFontGlyph(matrix, font, code, unicode, displacement);
     	
+        updateRenderingColorsStroke();
 
-    	FontGlyph fontGlyph = new FontGlyph(matrix, font, code, unicode, displacement);
-    	String fontName = getName(font);
-    	PDFont newFont = (currentFontGlyph == null || !currentFontGlyph.getFont().equals(font)) ? font : null; 
-    	if (newFont != null && debugParams.showFontGlyph) {
-    		printNewFont(font);
-    	}
     	if (debugParams.showChar) {
-    		System.err.print(unicode);
+    		System.out.print("["+unicode+"|"+(int)code+"]");
     	}
     	registerFont(font);
     	
     	double x = matrix.getTranslateX();
     	double y = transformY(matrix.getTranslateY());
-    	SVGText text = new SVGText(new Real2(x, y).format(2), unicode);
+    	SVGText text = new SVGText(new Real2(x, y).format(2), unicode == null ? PageParser.ILLEGAL_CHAR : unicode);
     	TextParameters textParameters = new TextParameters(matrix, font);
     	if (!textParameters.hasNormalOrientation()) {
     		// NOT RIGHT YET - WORK THIS OUT
 //    		text.setTransform(textParameters.getTransform2());
     	}
-    	text.setStroke(getCurrentJavaFillRGB());
-    	text.setFill(getCurrentJavaStrokeRGB());
+    	text.setStroke(renderingMode.isStroke() ? getJavaStrokeRGB() : "none");
+    	text.setFill(renderingMode.isFill() ? getJavaFillRGB() : "none");
     	text.setFontSize(Util.format((double)matrix.getScaleY(), ndec));
     	text.setFontFamily(getName(font));
     	if (unicode == null) {
     		text.addAttribute(new Attribute(CODE, String.valueOf(code)));
-//    	text.addAttribute(new Attribute(UNICODE, String.valueOf(unicode)));
     	}
     	text.setSVGXFontWidth(Util.format((double)displacement.getX(), ndec));
     	if (!Real.isZero(matrix.getShearX(), EPS) || !Real.isZero(matrix.getShearY(), EPS )) {
     		text.addAttribute(new Attribute(MATRIX, String.valueOf(matrix)));
     	}
     	currentTextPhrase.appendChild(text);
-    	currentFontGlyph = fontGlyph;
-    	
-    	super.showFontGlyph(matrix, font, code, unicode, displacement);
     	if (debugParams.debugGraphics) debugGraphics("showFontGlyph");
     }
+
+
+
+    @Override
+    public void appendRectangle(Point2D p0, Point2D p1, Point2D p2, Point2D p3) {
+    	createPathAndFlush();
+    	if (debugParams.showAppendRectangle) {
+    		System.out.println(">appRect ["+format(p0, ndec)+"/"+format(p1, ndec)+"/"+format(p2, ndec)+"/"+format(p3, ndec)+"]");
+    	}
+    	super.appendRectangle(p0, p1, p2, p3);
+
+    }
+
+    /**  this does the actual stroking 
+     */
+    @Override
+    public void strokePath() throws IOException {
+    	if (debugParams.showStrokePath) System.out.println(">strokePath");
+    	super.strokePath();
+    	updateRenderingColorsStroke();
+    	javaFillColor = null;
+    	createPathAndFlush();
+    	
+    	registerColor(javaStrokeColor);
+    }
+
+	@Override
+    public void fillPath(int windingRule) throws IOException {
+    	super.fillPath(windingRule);
+    	if (debugParams.showFillPath) {
+    		System.out.println("super.fillPath("+windingRule+")");
+    	}
+    	updateRenderingColorsStroke();
+    	javaStrokeColor = null;
+    	createPathAndFlush();
+
+		registerColor(javaFillColor);
+
+    	
+
+    }
+
+    /**
+     * Fills and then strokes the path.
+     *
+     * @param windingRule The winding rule this path will use.
+     * @throws IOException If there is an IO error while filling the path.
+     */
+    @Override
+    public void fillAndStrokePath(int windingRule) throws IOException {
+    	if (debugParams.showFillAndStrokePath) {
+    		System.out.println(">fillAndStrokePath("+windingRule+")");
+    	}
+    	createPathAndFlush();
+    	LOG.error("fillAndStrokePath NYI");
+    	super.fillAndStrokePath(windingRule);
+    }
+
+    @Override
+    public void clip(int windingRule) {
+    	if (debugParams.showClip) {
+    		System.out.println("clip("+windingRule+")");
+    	}
+    	createPathAndFlush();
+    	super.clip(windingRule);
+    }
+
+    @Override
+    public void moveTo(float x, float y) {
+    	if (debugParams.showMoveTo) {
+    		System.out.println("M"+format(x, y, ndec));
+    	}
+    	super.moveTo(x, y);
+    	ensurePathPrimitiveList().add(new MovePrimitive(new Real2(x, transformY(y)).format(ndec)));
+    	currentPoint = new Real2(x, transformY(y));
+    }
+
+	@Override
+    public void lineTo(float x, float y) {
+    	if (debugParams.showLineTo) {
+    		System.out.println("L"+format(x, y, ndec));
+    	}
+    	super.lineTo(x, y);
+    	ensurePathPrimitiveList().add(new LinePrimitive(new Real2(x, transformY(y)).format(ndec)));
+    }
+
+    @Override
+    public void curveTo(float x1, float y1, float x2, float y2, float x3, float y3) {
+    	if (debugParams.showCurveTo) {
+    		System.out.println("C"+format(x1, y1, x2, y2, x3, y3, 2));
+    	}
+    	super.curveTo(x1, y1, x2, y2, x3, y3);
+    	Real2Array xyArray = new Real2Array(Arrays.asList(new Real2[] {
+    			new Real2(x1, transformY(y1)).format(ndec),
+    			new Real2(x2, transformY(y2)).format(ndec),
+    			new Real2(x3, transformY(y3)).format(ndec)
+    		}
+    		));
+    	ensurePathPrimitiveList().add(new CubicPrimitive(xyArray));
+    }
+
+	@Override
+    public Point2D getCurrentPoint() {
+		Point2D currentPoint = super.getCurrentPoint();
+    	if (debugParams.showCurrentPoint) {
+//			System.out.println("CURPT"+format(currentPoint, ndec));
+    	}
+    	return currentPoint;
+    }
+
+	@Override
+    public void closePath() {
+    	if (debugParams.showClosePath) {
+    		System.out.println(">closePath");
+    	}
+    	super.closePath();    	
+    	ensurePathPrimitiveList().add(new ClosePrimitive());
+    }
+
+    @Override
+    public void endPath() {
+    	if (debugParams.showEndPath) {
+    		System.out.println(">endPath");
+    	}
+    	super.endPath();
+    	createPathAndFlush();
+    }
+
+	private void createPathAndFlush() {
+		if (pathPrimitiveList != null) {
+	    	SVGPath path = new SVGPath(pathPrimitiveList);
+//	        updateRenderingColorsStroke();
+	    	path.setStroke(getJavaStrokeRGB());
+	    	path.setFill(getJavaFillRGB());
+	    	path.setStrokeWidth(currentLineWidth);
+	    	path.format(3);
+	    	gTop.appendChild(path);
+	    	pathPrimitiveList = null;
+		}
+	}
+    
+    @Override
+    public void drawImage(PDImage pdImage) throws IOException {
+    	if (debugParams.showDrawImage) {
+    		System.out.println(">drawImage "+pdImage);
+    	}
+    	super.drawImage(pdImage);
+
+    }
+
+    @Override
+    public void shadingFill(COSName shadingName) throws IOException {
+    	if (debugParams.showShadingFill) {
+    		System.out.println(">shadingFill "+shadingName);
+    	}
+    	super.shadingFill(shadingName);
+    }
+
+    @Override
+    public void showAnnotation(PDAnnotation annotation) throws IOException {
+    	if (debugParams.showAnnotation) {
+    		System.out.println(">annotation "+
+    	    format(annotation));
+    	}
+    	super.showAnnotation(annotation);
+    }
+
+
+	/**
+     * {@inheritDoc}
+     */
+    @Override
+    public void showForm(PDFormXObject form) throws IOException {
+    	if (debugParams.showForm) {
+    		System.out.println(">showForm "+format(form));
+    	}
+    	super.showForm(form);
+    }
+
+    @Override
+    public void showTransparencyGroup(PDTransparencyGroup form) throws IOException {
+    	if (debugParams.showTransGrp) {
+    		System.out.println(">showTransparencyGroup "+form);
+    	}
+        super.showTransparencyGroup(form);
+    }
+
+
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void beginMarkedContentSequence(COSName tag, COSDictionary properties) {
+    	if (debugParams.showBeginMarked) {
+    		System.out.println(">beginMarkedContentSequence "+tag+"/"+properties);
+    	}
+    	super.beginMarkedContentSequence(tag, properties);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void endMarkedContentSequence() {
+    	if (debugParams.showEndMarked) {
+    		System.out.println(">endMarkedContentSequence");
+    	}
+    	super.endMarkedContentSequence();
+    }
+    
+    // ===========================
+    
+	private void updateRenderingColorsStroke() {
+		renderingMode = getGraphicsState().getTextState().getRenderingMode();
+		try {
+	        javaStrokeColor = (Color) getPaint(getGraphicsState().getStrokingColor());
+	        javaFillColor = (Color) getPaint(getGraphicsState().getNonStrokingColor());
+		} catch (IOException e) {
+			throw new RuntimeException("cannot extract colors", e);
+		}
+        System.out.println("stroke: "+javaStrokeColor);
+        System.out.println("fill: "+javaFillColor);
+        updateCurrentStroke();
+	}
+
+
 
     /** not used, but may need this to set font weights , etc.
      * 
@@ -323,243 +541,13 @@ public class AMIPageDrawer extends PageDrawer {
 		return name;
 	}
 
-
-
-    @Override
-    public void appendRectangle(Point2D p0, Point2D p1, Point2D p2, Point2D p3) {
-    	createPathAndFlush();
-    	if (debugParams.showAppendRectangle) {
-    		System.out.println("appRect ["+format(p0, ndec)+"/"+format(p1, ndec)+"/"+format(p2, ndec)+"/"+format(p3, ndec)+"]");
-    	}
-    	super.appendRectangle(p0, p1, p2, p3);
-
-    }
-
-    /**  this does the actual drawing:
-     *         
-     *  graphics.setComposite(getGraphicsState().getStrokingJavaComposite());
-        graphics.setPaint(getStrokingPaint());
-        graphics.setStroke(getStroke());
-        setClip();
-        //TODO bbox of shading pattern should be used here? (see fillPath)
-        if (isContentRendered())
-        {
-            graphics.draw(linePath);
-        }
-        linePath.reset();
-
-so afterwards we can get Composite, StrokingPaint, Stroke and Clip from the Java AWT Canvas
-     */
-    @Override
-    public void strokePath() throws IOException {
-    	createPathAndFlush();
-    	updateColorCompositeStroke();
-    	
-    	
-    	Composite composite = getGraphicsState().getStrokingJavaComposite();
-    	
-    	if (debugParams.showStrokePath) {
-    		System.out.println("strokePath "+format(composite)+"/");
-    	}
-    	super.strokePath();
-    }
-
-	@Override
-    public void fillPath(int windingRule) throws IOException {
-    	createPathAndFlush();
-
-    	if (debugParams.showFillPath) {
-    		System.out.println("super.fillPath(windingRule)");
-    	}
-    	Graphics2D graphics = getGraphics();
-    	Color javaColor = graphics.getColor();
-    	if (!javaColor.equals(currentJavaNonStrokeColor)) {
-    		//System.out.println(javaColor+"/"+currentJavaColor);
-			printNewColor(javaColor);
-    		currentJavaNonStrokeColor = javaColor;
-    	}
-
-    	super.fillPath(windingRule);
-    	
-
-    }
-
-    /**
-     * Fills and then strokes the path.
-     *
-     * @param windingRule The winding rule this path will use.
-     * @throws IOException If there is an IO error while filling the path.
-     */
-    @Override
-    public void fillAndStrokePath(int windingRule) throws IOException {
-    	createPathAndFlush();
-    	if (debugParams.showFillAndStrokePath) {
-    		System.out.println("super.fillAndStrokePath(windingRule)");
-    	}
-    	LOG.error("fillAndStrokePath NYI");
-    	super.fillAndStrokePath(windingRule);
-    }
-
-    @Override
-    public void clip(int windingRule) {
-    	createPathAndFlush();
-    	if (debugParams.showClip) {
-    		System.out.println("clip("+windingRule+")");
-    	}
-    	super.clip(windingRule);
-    }
-
-    @Override
-    public void moveTo(float x, float y) {
-
-    	if (debugParams.showMoveTo) {
-    		System.out.println("M"+format(x, y, ndec));
-    	}
-    	super.moveTo(x, y);
-    	ensurePathPrimitiveList().add(new MovePrimitive(new Real2(x, transformY(y)).format(ndec)));
-    	currentPoint = new Real2(x, transformY(y));
-    }
-
-	@Override
-    public void lineTo(float x, float y) {
-    	if (debugParams.showLineTo) {
-    		System.out.println("L"+format(x, y, ndec));
-    	}
-    	super.lineTo(x, y);
-    	ensurePathPrimitiveList().add(new LinePrimitive(new Real2(x, transformY(y)).format(ndec)));
-    }
-
-    @Override
-    public void curveTo(float x1, float y1, float x2, float y2, float x3, float y3) {
-    	if (debugParams.showCurveTo) {
-    		System.out.println("C"+format(x1, y1, x2, y2, x3, y3, 2));
-    	}
-    	super.curveTo(x1, y1, x2, y2, x3, y3);
-    	Real2Array xyArray = new Real2Array(Arrays.asList(new Real2[] {
-    			new Real2(x1, transformY(y1)).format(ndec),
-    			new Real2(x2, transformY(y2)).format(ndec),
-    			new Real2(x3, transformY(y3)).format(ndec)
-    		}
-    		));
-    	ensurePathPrimitiveList().add(new CubicPrimitive(xyArray));
-    }
-
-	@Override
-    public Point2D getCurrentPoint() {
-    	if (debugParams.showCurrentPoint) {
-    		System.out.println("CURPT"+format(super.getCurrentPoint(), ndec));
-    	}
-    	return super.getCurrentPoint();
-    }
-
-	@Override
-    public void closePath() {
-    	if (debugParams.showClosePath) {
-    		System.out.println("closePath");
-    	}
-    	super.closePath();    	
-    }
-
-    @Override
-    public void endPath() {
-    	if (debugParams.showEndPath) {
-    		System.out.println("endPath");
-    	}
-    	super.endPath();
-    	createPathAndFlush();
-    }
-
-	private void createPathAndFlush() {
-		if (pathPrimitiveList != null) {
-	    	SVGPath path = new SVGPath(pathPrimitiveList);
-//	    	LOG.debug("E "+ path.getDString());
-	    	pathPrimitiveList = null;
-	    	path.setStroke(getCurrentJavaStrokeRGB());
-	    	path.setFill(getCurrentJavaFillRGB());
-	    	path.setStrokeWidth(currentLineWidth);
-	    	path.format(3);
-	    	gTop.appendChild(path);
-		}
-	}
-    
-    @Override
-    public void drawImage(PDImage pdImage) throws IOException {
-    	if (debugParams.showDrawImage) {
-    		System.out.println("drawImage "+pdImage);
-    	}
-    	super.drawImage(pdImage);
-
-    }
-
-    @Override
-    public void shadingFill(COSName shadingName) throws IOException {
-    	if (debugParams.showShadingFill) {
-    		System.out.println("shadingFill "+shadingName);
-    	}
-    	super.shadingFill(shadingName);
-    }
-
-    @Override
-    public void showAnnotation(PDAnnotation annotation) throws IOException {
-    	if (debugParams.showAnnotation) {
-    		System.out.println("showAnnotation "+
-    	    format(annotation));
-    	}
-    	super.showAnnotation(annotation);
-    }
-
-
-	/**
-     * {@inheritDoc}
-     */
-    @Override
-    public void showForm(PDFormXObject form) throws IOException {
-    	if (debugParams.showForm) {
-    		System.out.println("showForm "+format(form));
-    	}
-    	super.showForm(form);
-    }
-
-    @Override
-    public void showTransparencyGroup(PDTransparencyGroup form) throws IOException {
-    	if (debugParams.showTransGrp) {
-    		System.out.println("transpGrp "+form);
-    	}
-        super.showTransparencyGroup(form);
-    }
-
-
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void beginMarkedContentSequence(COSName tag, COSDictionary properties) {
-    	if (debugParams.showBeginMarked) {
-    		System.out.println("beginMarkedContentSequence "+tag+"/"+properties);
-    	}
-    	super.beginMarkedContentSequence(tag, properties);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public void endMarkedContentSequence() {
-    	if (debugParams.showEndMarked) {
-    		System.out.println("endMarked");
-    	}
-    	super.endMarkedContentSequence();
-    }
-    
-    // ===========================
-
+/**
 	private void updateColorCompositeStroke() {
 		updateCurrentColor();
     	updateCurrentComposite();
     	updateCurrentStroke();
 	}
-
+*/
 	private void updateCurrentStroke() {
 		BasicStroke basicStroke = (BasicStroke) getGraphics().getStroke();
     	if (!basicStroke.equals(currentStroke)) {
@@ -569,7 +557,7 @@ so afterwards we can get Composite, StrokingPaint, Stroke and Clip from the Java
     		currentLineWidth = (double) basicStroke.getLineWidth();
     	}
 	}
-
+/**
 	private void updateCurrentComposite() {
 		Composite newComposite = getGraphics().getComposite();
     	if (!newComposite.equals(currentComposite)) {
@@ -577,13 +565,15 @@ so afterwards we can get Composite, StrokingPaint, Stroke and Clip from the Java
     		currentComposite = newComposite;
     	}
 	}
-
+*/
 	private void updateCurrentColor() {
+		/**
     	Color newStrokeColor = getGraphics().getColor();
-    	if (!newStrokeColor.equals(currentJavaStrokeColor)) {
-			printNewColor(newStrokeColor);
-    		currentJavaStrokeColor = newStrokeColor;
+    	if (!newStrokeColor.equals(javaStrokeColor)) {
+			registerColor(newStrokeColor);
+    		javaStrokeColor = newStrokeColor;
     	}
+    	*/
 	}
 
 	private double transformY(float y) {
@@ -606,12 +596,12 @@ so afterwards we can get Composite, StrokingPaint, Stroke and Clip from the Java
 			sb.append("null");
 		} else {
 			sb.append("back "+graphics.getBackground());
-			sb.append("col "+graphics.getColor());
-			sb.append("compos "+graphics.getComposite());
-			sb.append("font "+graphics.getFont());
-			sb.append("paint "+graphics.getPaint());
-			sb.append("stroke "+graphics.getStroke());
-			sb.append("trans "+graphics.getTransform());
+			sb.append("; col "+graphics.getColor());
+			sb.append("; compos "+format(graphics.getComposite()));
+			sb.append("; font "+graphics.getFont());
+			sb.append("; paint "+graphics.getPaint()); // paint and color are the same?
+			sb.append("; stroke "+graphics.getStroke());
+			sb.append("; trans "+graphics.getTransform());
 		}
 
 		return sb.toString();
@@ -640,12 +630,12 @@ so afterwards we can get Composite, StrokingPaint, Stroke and Clip from the Java
 		return sb.toString();
 	}
 
-	private String getCurrentJavaStrokeRGB() {
-		return currentJavaStrokeColor == null ? "none" : toRGB(currentJavaStrokeColor);
+	private String getJavaStrokeRGB() {
+		return javaStrokeColor == null ? "none" : toRGB(javaStrokeColor);
 	}
 
-	private String getCurrentJavaFillRGB() {
-		return currentJavaNonStrokeColor == null ? "none" : toRGB(currentJavaNonStrokeColor);
+	private String getJavaFillRGB() {
+		return javaFillColor == null ? "none" : toRGB(javaFillColor);
 	}
 
     // ===========================
@@ -689,7 +679,7 @@ so afterwards we can get Composite, StrokingPaint, Stroke and Clip from the Java
 		return s;
 	}
 
-	private void printNewColor(Color color) {
+	private void registerColor(Color color) {
 		if (!colorSet .contains(color)) {
     		System.out.println("\nnew col:"+Integer.toHexString(color.getRGB()));
 			colorSet.add(color);

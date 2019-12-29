@@ -34,6 +34,7 @@ import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.rendering.PDFRenderer;
 import org.apache.pdfbox.rendering.PageDrawer;
 import org.apache.pdfbox.rendering.PageDrawerParameters;
+import org.contentmine.ami.tools.AbstractAMITest;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.RealArray;
 import org.contentmine.graphics.svg.GraphicsElement.FontStyle;
@@ -41,6 +42,7 @@ import org.contentmine.graphics.svg.GraphicsElement.FontWeight;
 import org.contentmine.graphics.svg.SVGConstants;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
+import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.graphics.svg.SVGText;
 import org.contentmine.graphics.svg.SVGUtil;
 
@@ -72,7 +74,8 @@ public class PageDrawerRunner
 	public enum DrawerType {
 		AMI_BRIEF,
 		AMI_MEDIUM,
-		ORIGINAL,
+		AMI_FULL,
+		ORIGINAL, // Don't use
 	}
 
 	private DrawerType drawerType = DrawerType.ORIGINAL;
@@ -187,6 +190,7 @@ public class PageDrawerRunner
 		} else {
 			PageDrawer pageDrawer = ((MyPDFRenderer)myPdfRenderer).getPageDrawer();
 			svgElement = ((AMIPageDrawer) pageDrawer).getSVGElement();
+			
 		}
 		if (debug) {
 			// output intermediate
@@ -199,9 +203,11 @@ public class PageDrawerRunner
 
 
 	private void tidyGTextDescendants(SVGElement svgElement) {
+		LOG.debug("SVG: "+svgElement.toXML());
 		List<SVGElement> gTextElements = SVGUtil.getQuerySVGElements(
 				svgElement, "//*[local-name()='"+SVGG.TAG+"' and @begin='text']");
 		List<SVGG> gTextList = SVGG.extractGs(gTextElements);
+		LOG.debug("GText descendants: "+gTextElements.size());
 		for (SVGG gText : gTextList) {
 			tidyGText(gText);
 		}
@@ -338,6 +344,7 @@ public class PageDrawerRunner
         		amiPageDrawer.getDebugParameters().showClosePath=false;
         		amiPageDrawer.getDebugParameters().showColor=false;
         		amiPageDrawer.getDebugParameters().showCurrentPoint=false;
+        		amiPageDrawer.getDebugParameters().showDrawPage=false;
         		amiPageDrawer.getDebugParameters().showFontGlyph=true;
         		amiPageDrawer.getDebugParameters().showForm=false;
         		amiPageDrawer.getDebugParameters().showEndPath=false;
@@ -355,6 +362,7 @@ public class PageDrawerRunner
 //        		amiPageDrawer.getDebugParameters().showClip=false;
 //        		amiPageDrawer.getDebugParameters().showClosePath=false;
 //        		amiPageDrawer.getDebugParameters().showColor=false;
+//        		amiPageDrawer.getDebugParameters().showDrawPage=false;
         		amiPageDrawer.getDebugParameters().showCurrentPoint=false;
 //        		amiPageDrawer.getDebugParameters().showFontGlyph=true;
         		amiPageDrawer.getDebugParameters().showForm=false;
@@ -363,6 +371,9 @@ public class PageDrawerRunner
 //        		amiPageDrawer.getDebugParameters().showLineTo=false;
 //        		amiPageDrawer.getDebugParameters().showMoveTo=false;
         		amiPageDrawer.getDebugParameters().showStrokePath=false;
+				pageDrawer = amiPageDrawer;
+        	} else if (DrawerType.AMI_FULL.equals(drawerType)) {
+        		AMIPageDrawer amiPageDrawer = new AMIPageDrawer(parameters, AMIDebugParameters.getDefaultParameters());
 				pageDrawer = amiPageDrawer;
         	}
         	return pageDrawer;
@@ -401,6 +412,16 @@ public class PageDrawerRunner
 //			fontDescriptor.isItalic();
 //			fontDescriptor.isSmallCap();
 //		}
+	}
+
+	public void run(String root, int pageSerial) throws IOException , IllegalArgumentException{
+		processPage(pageSerial);
+		
+		File outputPng = new File(AbstractAMITest.PDF2SVG2, root+"."+pageSerial+".png");
+		ImageIO.write(getImage(), "PNG", outputPng);
+		CustomPageDrawerTest.LOG.debug("wrote PNG "+outputPng);
+		SVGElement svgElement = getSVG();
+		SVGSVG.wrapAndWriteAsSVG(svgElement, new File(AbstractAMITest.PDF2SVG2, root+"."+pageSerial+".svg"));
 	}
 
 
