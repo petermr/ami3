@@ -131,8 +131,7 @@ public class AMIPageDrawer extends PageDrawer {
 
         this.pageSize = pageSize;
     	super.drawPage(g, pageSize);
-    	javaFillColor = null;
-    	javaStrokeColor = null;
+    	unsetFillStroke();
     }
 
 
@@ -214,10 +213,16 @@ public class AMIPageDrawer extends PageDrawer {
     	}
     	gTop.appendChild(currentTextPhrase);
     	currentTextPhrase = null;
+    	unsetFillStroke();
 //        endTextClip();
     }
     
-    /**
+    private void unsetFillStroke() {
+    	javaFillColor = null;
+    	javaStrokeColor = null;
+	}
+
+	/**
      * from PageDrawer
      *    static final float[] DEFAULT_SINGLE =
     {
@@ -232,7 +237,7 @@ public class AMIPageDrawer extends PageDrawer {
     	if (debugParams.showFontGlyph) System.out.println(">showFontGlyph");
     	super.showFontGlyph(matrix, font, code, unicode, displacement);
     	
-        updateRenderingColorsStroke();
+        updateRenderingColorsStroke("showFontGlyph");
 
     	if (debugParams.showChar) {
     		System.out.print("["+unicode+"|"+(int)code+"]");
@@ -249,6 +254,8 @@ public class AMIPageDrawer extends PageDrawer {
     	}
     	text.setStroke(renderingMode.isStroke() ? getJavaStrokeRGB() : "none");
     	text.setFill(renderingMode.isFill() ? getJavaFillRGB() : "none");
+    	registerColor(javaFillColor);
+    	registerColor(javaStrokeColor);
     	text.setFontSize(Util.format((double)matrix.getScaleY(), ndec));
     	text.setFontFamily(getName(font));
     	if (unicode == null) {
@@ -266,7 +273,7 @@ public class AMIPageDrawer extends PageDrawer {
 
     @Override
     public void appendRectangle(Point2D p0, Point2D p1, Point2D p2, Point2D p3) {
-    	createPathAndFlush();
+//    	createPathAndFlush();
     	if (debugParams.showAppendRectangle) {
     		System.out.println(">appRect ["+format(p0, ndec)+"/"+format(p1, ndec)+"/"+format(p2, ndec)+"/"+format(p3, ndec)+"]");
     	}
@@ -279,28 +286,23 @@ public class AMIPageDrawer extends PageDrawer {
     @Override
     public void strokePath() throws IOException {
     	if (debugParams.showStrokePath) System.out.println(">strokePath");
+    	updateRenderingColorsStroke("strokePath");
     	super.strokePath();
-    	updateRenderingColorsStroke();
     	javaFillColor = null;
-    	createPathAndFlush();
-    	
     	registerColor(javaStrokeColor);
+    	createPathAndFlush("strokePath");
+    	
     }
 
 	@Override
     public void fillPath(int windingRule) throws IOException {
+    	if (debugParams.showFillPath) {System.out.println(">fillPath("+windingRule+")");}
+    	updateRenderingColorsStroke("fillPath");
     	super.fillPath(windingRule);
-    	if (debugParams.showFillPath) {
-    		System.out.println("super.fillPath("+windingRule+")");
-    	}
-    	updateRenderingColorsStroke();
-    	javaStrokeColor = null;
-    	createPathAndFlush();
-
+//    	updateRenderingColorsStroke();
+//    	javaStrokeColor = null;
 		registerColor(javaFillColor);
-
-    	
-
+    	createPathAndFlush("fillPath");
     }
 
     /**
@@ -311,21 +313,21 @@ public class AMIPageDrawer extends PageDrawer {
      */
     @Override
     public void fillAndStrokePath(int windingRule) throws IOException {
+    	super.fillAndStrokePath(windingRule);
     	if (debugParams.showFillAndStrokePath) {
     		System.out.println(">fillAndStrokePath("+windingRule+")");
     	}
-    	createPathAndFlush();
-    	LOG.error("fillAndStrokePath NYI");
-    	super.fillAndStrokePath(windingRule);
+    	createPathAndFlush("fillAndStroke");
+    	throw new RuntimeException("fillAndStrokePath NYI");
     }
 
     @Override
     public void clip(int windingRule) {
+    	super.clip(windingRule);
     	if (debugParams.showClip) {
     		System.out.println("clip("+windingRule+")");
     	}
-    	createPathAndFlush();
-    	super.clip(windingRule);
+//    	createPathAndFlush();
     }
 
     @Override
@@ -386,19 +388,26 @@ public class AMIPageDrawer extends PageDrawer {
     		System.out.println(">endPath");
     	}
     	super.endPath();
-    	createPathAndFlush();
+//    	createPathAndFlush();
     }
 
-	private void createPathAndFlush() {
+	private void createPathAndFlush(String source) {
 		if (pathPrimitiveList != null) {
+			LOG.debug(source + ": flush");
 	    	SVGPath path = new SVGPath(pathPrimitiveList);
-//	        updateRenderingColorsStroke();
-	    	path.setStroke(getJavaStrokeRGB());
-	    	path.setFill(getJavaFillRGB());
+	    	updateRenderingColorsStroke("createPathAndFlush");
+	    	String javaStrokeRGB = getJavaStrokeRGB();
+			path.setStroke(javaStrokeRGB);
+	    	String javaFillRGB = getJavaFillRGB();
+			path.setFill(javaFillRGB);
 	    	path.setStrokeWidth(currentLineWidth);
 	    	path.format(3);
+	    	LOG.debug("createPathFlush: "+path);
 	    	gTop.appendChild(path);
 	    	pathPrimitiveList = null;
+	    	unsetFillStroke();
+		} else {
+			System.out.println("createPathAndFlush: no primitives");
 		}
 	}
     
@@ -474,7 +483,7 @@ public class AMIPageDrawer extends PageDrawer {
     
     // ===========================
     
-	private void updateRenderingColorsStroke() {
+	private void updateRenderingColorsStroke(String source) {
 		renderingMode = getGraphicsState().getTextState().getRenderingMode();
 		try {
 	        javaStrokeColor = (Color) getPaint(getGraphicsState().getStrokingColor());
@@ -482,8 +491,8 @@ public class AMIPageDrawer extends PageDrawer {
 		} catch (IOException e) {
 			throw new RuntimeException("cannot extract colors", e);
 		}
-        System.out.println("stroke: "+javaStrokeColor);
-        System.out.println("fill: "+javaFillColor);
+        System.out.println("PDGraphics " + source + ": AWTstroke: "+javaStrokeColor);
+        System.out.println("PDGraphics " + source + ": AWTfill: "+javaFillColor);
         updateCurrentStroke();
 	}
 
@@ -684,7 +693,7 @@ public class AMIPageDrawer extends PageDrawer {
     		System.out.println("\nnew col:"+Integer.toHexString(color.getRGB()));
 			colorSet.add(color);
 		} else {
-			System.out.print("c");
+			System.out.print("\ncol "+Integer.toHexString(color.getRGB()));
 		}
 	}
 
