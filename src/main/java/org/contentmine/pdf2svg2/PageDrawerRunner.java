@@ -56,6 +56,7 @@ import nu.xom.Element;
  * cases where the goal is to render onto a Graphics2D surface.
  *
  * @author John Hewson
+ * @author Peter Murray-Rust
  */
 public class PageDrawerRunner
 {
@@ -207,7 +208,6 @@ public class PageDrawerRunner
 		List<SVGElement> gTextElements = SVGUtil.getQuerySVGElements(
 				svgElement, "//*[local-name()='"+SVGG.TAG+"' and @begin='text']");
 		List<SVGG> gTextList = SVGG.extractGs(gTextElements);
-		LOG.debug("GText descendants: "+gTextElements.size());
 		for (SVGG gText : gTextList) {
 			tidyGText(gText);
 		}
