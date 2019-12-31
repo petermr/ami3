@@ -45,12 +45,10 @@ public class CustomPageDrawerTest extends AbstractAMITest {
 	}
 
 	@Test
-	/** simple coloured strokes */
-	public void testStrokeColours() throws IOException {
+	/** successive primitives */
+	public void testStrokeAndFillColours() throws IOException {
 	  String root = "primitives1"; // 
       int pageSerial = 0; // title
-//    pageSerial = 1; // plots
-      pageSerial = -1; // analyze all
 	  runPageDrawer(root, pageSerial, DrawerType.AMI_FULL);
 	  root = "primitives"; // 
       pageSerial = 0; // title
