@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg height="550.0" width="730.0" xmlns="http://www.w3.org/2000/svg">
  <g xmlns:svgx="http://www.xml-cml.org/schema/svgx">
-  <path style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:1.0;" d="M0.0 0.0 L720.0 0.0 L720.0 540.0 L0.0 540.0 Z"/>
-  <path style="fill:rgb(255,255,255);stroke:rgb(2,28,161);stroke-width:6.0;" d="M12.04 253.23 L52.73 335.45 "/>
-  <path style="fill:rgb(255,255,255);stroke:rgb(255,38,0);stroke-width:4.5;" d="M71.37 257.97 L124.55 257.97 L124.55 332.0 L71.37 332.0 Z"/>
-  <path style="fill:rgb(212,253,213);stroke:rgb(255,38,0);stroke-width:4.5;" d="M147.26 290.0 C147.26 266.8 161.14 248.0 178.26 248.0 C195.39 248.0 209.27 266.8 209.27 290.0 C209.27 313.2 195.39 332.0 178.26 332.0 C161.14 332.0 147.26 313.2 147.26 290.0 Z"/>
-  <path style="fill:rgb(212,253,213);stroke:rgb(0,143,0);stroke-width:3.0;" d="M147.26 290.0 C147.26 266.8 161.14 248.0 178.26 248.0 C195.39 248.0 209.27 266.8 209.27 290.0 C209.27 313.2 195.39 332.0 178.26 332.0 C161.14 332.0 147.26 313.2 147.26 290.0 Z"/>
-  <path style="fill:rgb(212,253,213);stroke:rgb(65,128,255);stroke-width:6.0;" d="M218.18 329.36 L235.45 250.48 L287.27 250.48 L270.0 329.36 Z"/>
-  <path style="fill:rgb(212,253,213);stroke:rgb(0,0,0);stroke-width:2.25;" d="M314.83 293.13 L334.26 254.25 L378.12 254.25 L397.55 293.13 L378.12 332.0 L334.26 332.0 Z"/>
+  <path style="fill:rgb(255,255,255);stroke:none;stroke-width:1.0;" d="M0.0 0.0 L720.0 0.0 L720.0 540.0 L0.0 540.0 Z"/>
+  <path style="fill:none;stroke:rgb(2,28,161);stroke-width:1.0;" d="M12.04 253.23 L52.73 335.45 "/>
+  <path style="fill:none;stroke:rgb(255,38,0);stroke-width:6.0;" d="M71.37 257.97 L124.55 257.97 L124.55 332.0 L71.37 332.0 Z"/>
+  <path style="fill:rgb(212,253,213);stroke:none;stroke-width:4.5;" d="M147.26 290.0 C147.26 266.8 161.14 248.0 178.26 248.0 C195.39 248.0 209.27 266.8 209.27 290.0 C209.27 313.2 195.39 332.0 178.26 332.0 C161.14 332.0 147.26 313.2 147.26 290.0 Z"/>
+  <path style="fill:none;stroke:rgb(0,143,0);stroke-width:4.5;" d="M147.26 290.0 C147.26 266.8 161.14 248.0 178.26 248.0 C195.39 248.0 209.27 266.8 209.27 290.0 C209.27 313.2 195.39 332.0 178.26 332.0 C161.14 332.0 147.26 313.2 147.26 290.0 Z"/>
+  <path style="fill:none;stroke:rgb(65,128,255);stroke-width:3.0;" d="M218.18 329.36 L235.45 250.48 L287.27 250.48 L270.0 329.36 Z"/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:6.0;" d="M314.83 293.13 L334.26 254.25 L378.12 254.25 L397.55 293.13 L378.12 332.0 L334.26 332.0 Z"/>
   <g begin="text">
    <text svgx:width="0.56,0.5,0.54,0.23" x="418.84,441.36,461.5,482.96" y="297.85" style="fill:rgb(255,0,0);font-family:Calibri-Bold;font-size:40.0px;stroke:none;">Red </text>
   </g>
-  <path style="fill:rgb(255,251,0);stroke:rgb(0,0,0);stroke-width:2.25;" d="M497.3 325.64 L497.3 250.5 L562.75 325.64 Z"/>
+  <path style="fill:rgb(255,251,0);stroke:none;stroke-width:2.25;" d="M497.3 325.64 L497.3 250.5 L562.75 325.64 Z"/>
   <g begin="text">
    <text svgx:width="0.53,0.45,0.48,0.52,0.23" x="569.95,589.15,605.44,622.68,641.6" y="290.1" style="fill:rgb(32,248,253);font-family:Calibri;font-size:36.0px;stroke:none;">Cyan </text>
   </g>
-  <path style="fill:rgb(32,248,253);stroke:rgb(255,124,0);stroke-width:4.5;" d="M660.18 273.69 L685.64 254.25 L711.09 273.69 L701.37 305.14 L669.9 305.14 Z"/>
+  <path style="fill:none;stroke:rgb(255,124,0);stroke-width:2.25;" d="M660.18 273.69 L685.64 254.25 L711.09 273.69 L701.37 305.14 L669.9 305.14 Z"/>
  </g>
 </svg>

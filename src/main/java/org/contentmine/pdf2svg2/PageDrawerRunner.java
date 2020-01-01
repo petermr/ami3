@@ -89,6 +89,8 @@ public class PageDrawerRunner
 //	private SVGText currentSVGText;
 	private TextParameters lastTextParameters;
 	private double minBoldWeight = 500.;
+	private File outputPng;
+	private File outputDir;
 
 	public PageDrawerRunner() {
 		
@@ -204,7 +206,6 @@ public class PageDrawerRunner
 
 
 	private void tidyGTextDescendants(SVGElement svgElement) {
-		LOG.debug("SVG: "+svgElement.toXML());
 		List<SVGElement> gTextElements = SVGUtil.getQuerySVGElements(
 				svgElement, "//*[local-name()='"+SVGG.TAG+"' and @begin='text']");
 		List<SVGG> gTextList = SVGG.extractGs(gTextElements);
@@ -281,34 +282,6 @@ public class PageDrawerRunner
 	    close();
 	}
 
-    public static void main(String[] args) throws IOException
-    {
-        example1();
-        example2();
-    }
-
-	public static void example1() throws IOException {
-		File inputFile = new File(TEST_PDFBOX_DIR, "custom-render-demo.pdf");
-        File outputFile = new File(TEST_PDFBOX_DIR, "custom-render-demo.png");
-        int pageSerial = 0;
-        PageDrawerRunner drawerExample = new PageDrawerRunner(inputFile, DrawerType.AMI_BRIEF, true);
-        drawerExample.runExample(inputFile, outputFile, pageSerial, DrawerType.AMI_BRIEF);
-//        drawerExample.runExample(inputFile, outputFile, pageSerial);
-	}
-
-	private static void example2() throws IOException {
-		File LICHTENBURG = new File(OMAR_TEST_DIR, "lichtenburg19a/");
-		File imgDir = new File(LICHTENBURG, "img");
-		imgDir.mkdirs();
-		File inputFile = new File(LICHTENBURG, "fulltext.pdf");
-        PageDrawerRunner drawerExample = new PageDrawerRunner(inputFile, DrawerType.ORIGINAL, false);
-        for (int pageSerial = 0; pageSerial < 10; pageSerial++) {
-        	File outputFile = new File(imgDir, "fulltext."+pageSerial+".png");
-        	System.out.println("wrote: "+outputFile);
-        	drawerExample.runExample(inputFile, outputFile, pageSerial);
-        }
-	}
-
 
 	/**
      * Example PDFRenderer subclass, uses MyPageDrawer for custom rendering.
@@ -345,7 +318,8 @@ public class PageDrawerRunner
         		amiPageDrawer.getDebugParameters().showColor=false;
         		amiPageDrawer.getDebugParameters().showCurrentPoint=false;
         		amiPageDrawer.getDebugParameters().showDrawPage=false;
-        		amiPageDrawer.getDebugParameters().showFontGlyph=true;
+        		amiPageDrawer.getDebugParameters().showFillPath=false;
+        		amiPageDrawer.getDebugParameters().showFontGlyph=false;
         		amiPageDrawer.getDebugParameters().showForm=false;
         		amiPageDrawer.getDebugParameters().showEndPath=false;
         		amiPageDrawer.getDebugParameters().showEndText=false;
@@ -415,14 +389,46 @@ public class PageDrawerRunner
 	}
 
 	public void run(String root, int pageSerial) throws IOException , IllegalArgumentException{
+		
 		processPage(pageSerial);
 		
-		File outputPng = new File(AbstractAMITest.PDF2SVG2, root+"."+pageSerial+".png");
+		outputDir = AbstractAMITest.PDF2SVG2;
+		outputPng = new File(outputDir, root+"."+pageSerial+".png");
+		
 		ImageIO.write(getImage(), "PNG", outputPng);
-		CustomPageDrawerTest.LOG.debug("wrote PNG "+outputPng);
+		LOG.debug("wrote PNG "+outputPng);
 		SVGElement svgElement = getSVG();
-		SVGSVG.wrapAndWriteAsSVG(svgElement, new File(AbstractAMITest.PDF2SVG2, root+"."+pageSerial+".svg"));
+		SVGSVG.wrapAndWriteAsSVG(svgElement, new File(outputDir, root+"."+pageSerial+".svg"));
 	}
+
+    public static void main(String[] args) throws IOException
+    {
+        example1();
+        example2();
+    }
+
+	public static void example1() throws IOException {
+		File inputFile = new File(TEST_PDFBOX_DIR, "custom-render-demo.pdf");
+        File outputFile = new File(TEST_PDFBOX_DIR, "custom-render-demo.png");
+        int pageSerial = 0;
+        PageDrawerRunner drawerExample = new PageDrawerRunner(inputFile, DrawerType.AMI_BRIEF, true);
+        drawerExample.runExample(inputFile, outputFile, pageSerial, DrawerType.AMI_BRIEF);
+//        drawerExample.runExample(inputFile, outputFile, pageSerial);
+	}
+
+	private static void example2() throws IOException {
+		File LICHTENBURG = new File(OMAR_TEST_DIR, "lichtenburg19a/");
+		File imgDir = new File(LICHTENBURG, "img");
+		imgDir.mkdirs();
+		File inputFile = new File(LICHTENBURG, "fulltext.pdf");
+        PageDrawerRunner drawerExample = new PageDrawerRunner(inputFile, DrawerType.ORIGINAL, false);
+        for (int pageSerial = 0; pageSerial < 10; pageSerial++) {
+        	File outputFile = new File(imgDir, "fulltext."+pageSerial+".png");
+        	System.out.println("wrote: "+outputFile);
+        	drawerExample.runExample(inputFile, outputFile, pageSerial);
+        }
+	}
+
 
 
 }

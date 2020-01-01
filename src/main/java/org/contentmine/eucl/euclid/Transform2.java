@@ -115,6 +115,11 @@ public class Transform2 extends RealSquareMatrix {
         flmat[1][2] = v.y;
     }
     
+    /** as for Vector2 */
+    public Transform2(Real2 xy) {
+    	this(new Vector2(xy));
+    }
+    
     public Transform2(AffineTransform at) {
     	this();
     	double[] dd = new double[6];
@@ -784,4 +789,16 @@ public class Transform2 extends RealSquareMatrix {
     	}
     	return affineTransform;
     }
+    
+    /** format the transform.
+     * returns 'this'
+     */
+	public RealMatrix format(int ndec) {
+		for (int i = 0; i < 3; i++) {
+			for (int j = 0; j < 3; j++) {
+				flmat[i][j] = Util.format(flmat[i][j], ndec);
+			}
+		}
+		return this;
+	}
 }

@@ -47,9 +47,10 @@ public class CustomPageDrawerTest extends AbstractAMITest {
 	@Test
 	/** successive primitives */
 	public void testStrokeAndFillColours() throws IOException {
-	  String root = "primitives1"; // 
+	  String root = "circles"; // 
       int pageSerial = 0; // title
 	  runPageDrawer(root, pageSerial, DrawerType.AMI_FULL);
+//	  if (true) return;
 	  root = "primitives"; // 
       pageSerial = 0; // title
 	  runPageDrawer(root, pageSerial, DrawerType.AMI_FULL);
@@ -61,7 +62,7 @@ public class CustomPageDrawerTest extends AbstractAMITest {
       int pageSerial = 0; // title
 //    pageSerial = 1; // plots
       pageSerial = -1; // analyze all
-	  runPageDrawer(root, pageSerial, DrawerType.AMI_FULL);
+	  runPageDrawer(root, pageSerial, DrawerType.AMI_BRIEF);
 	}
 
 	private void runPageDrawer(String root, int pageSerial, DrawerType drawerType) throws IOException {

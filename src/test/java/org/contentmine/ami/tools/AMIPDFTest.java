@@ -1,6 +1,7 @@
 package org.contentmine.ami.tools;
 
 import java.io.File;
+import java.io.IOException;
 
 import org.apache.log4j.Appender;
 import org.apache.log4j.FileAppender;
@@ -11,6 +12,7 @@ import org.apache.log4j.PatternLayout;
 import org.contentmine.ami.tools.AMICleanTool;
 import org.contentmine.ami.tools.AMIPDFTool;
 import org.contentmine.cproject.files.CProject;
+import org.contentmine.pdf2svg2.PageDrawerRunner.DrawerType;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -24,6 +26,8 @@ public class AMIPDFTest extends AbstractAMITest {
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
+	
+	public final static File PDF2SVG2TEST = new File(PDF2SVG2, "text");
 	
 	@Test
 	/** reads UCL corpus as PDFs and creates first pass SVG , images and scholarly html
@@ -152,5 +156,19 @@ public class AMIPDFTest extends AbstractAMITest {
 		new AMIPDFTool().runCommands(args);
 	}
 
+	@Test
+	public void testPDF2Framework() throws IOException {
+		
+		String args = "-p " + new File(PDF2SVG2, "test")
+				+ " --maxprimitives 10000"
+				+ " --forcemake"
+				;
+      
+//	      DrawerType drawerType = DrawerType.ORIGINAL;
+//      DrawerType drawerType = DrawerType.AMI_MEDIUM;
+//        int pageSerial = 0;
+//      runPageDrawer(root, file, pageSerial, drawerType, true);
+
+	}
 
 }

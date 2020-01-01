@@ -7,6 +7,7 @@ import java.awt.Composite;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Stroke;
+import java.awt.geom.AffineTransform;
 import java.awt.geom.GeneralPath;
 import java.awt.geom.Point2D;
 import java.io.IOException;
@@ -33,10 +34,13 @@ import org.apache.pdfbox.rendering.PageDrawer;
 import org.apache.pdfbox.rendering.PageDrawerParameters;
 import org.apache.pdfbox.util.Matrix;
 import org.apache.pdfbox.util.Vector;
+import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Array;
 import org.contentmine.eucl.euclid.RealArray;
+import org.contentmine.eucl.euclid.RealSquareMatrix;
+import org.contentmine.eucl.euclid.Transform2;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.graphics.svg.GraphicsElement.FontStyle;
 import org.contentmine.graphics.svg.GraphicsElement.FontWeight;
@@ -85,12 +89,13 @@ public class AMIPageDrawer extends PageDrawer {
 	private Graphics2D lastGraphics;
 	private GeneralPath lastPath;
 	private int ndec = 2;
+	private int nxydec = 3;
 	private PathPrimitiveList pathPrimitiveList;
 	private Composite currentComposite;
 	private PDRectangle pageSize;
 	private double EPS = 0.000000001;
 	private Map<String, PDFont> pdFontByName;
-	private RenderingMode renderingMode;
+	private RenderingMode textRenderingMode;
 
 	AMIPageDrawer(PageDrawerParameters parameters, AMIDebugParameters debugParams) throws IOException {
         super(parameters);
@@ -173,55 +178,34 @@ public class AMIPageDrawer extends PageDrawer {
     	super.showFontGlyph(matrix, font, code, unicode, displacement);
     	
         updateRenderingColorsStroke("showFontGlyph");
-        /*
-        AffineTransform at = matrix.createAffineTransform();
-        System.out.println(at);
-        Transform2 t2 = new Transform2(at);
+        
+        Transform2 t2 = new Transform2(matrix.createAffineTransform());
         Angle angleOfRotation = t2.getAngleOfRotation();
-		System.out.println("rot "+angleOfRotation.getDegrees());
-        Real2 centreOfRotation = t2.getCentreOfRotation();
-		System.out.println("centre "+centreOfRotation);
-        Real2 translation = t2.getTranslation();
-		System.out.println("trans "+translation);
-        RealArray scales = t2.getScales();
-		System.out.println("scale "+scales);
-		Transform2 t2a = new Transform2(t2);
-        t2a.multiplyBy(scales.elementAt(0));
-        at.scale(1./scales.elementAt(0), 1./scales.elementAt(1));
-        System.out.println("AT "+at);
-		
-		AffineTransform atinv = null;
-		try {atinv = at.createInverse();} catch (Exception e) {LOG.debug("Cannot create inverse");}
-
-        matrix.getScalingFactorX();
-        */
+        
     	if (debugParams.showChar) {
     		System.out.println("["+unicode+"|"+(int)code+"]");
     	}
     	registerFont(font);
     	
-    	double x = matrix.getTranslateX();
-    	double y = transformY(matrix.getTranslateY());
-    	/*
-		Point2D ptSrc = new Point2D.Double(x,y);
-		Point2D ptDst = new Point2D.Double();
-		at.transform(ptSrc, ptDst);
-		System.out.println("transAt "+ptDst);
-		atinv.transform(ptSrc, ptDst);
-		System.out.println("transAtInv "+ptDst);
-		*/
+    	double x = Util.format(matrix.getTranslateX(), nxydec);
+    	double y = Util.format(transformY(matrix.getTranslateY()), nxydec);
+    	Real2 xy = new Real2(x, y).format(nxydec);
 		
-    	SVGText text = new SVGText(new Real2(x, y).format(2), unicode == null ? PageParser.ILLEGAL_CHAR : unicode);
+		SVGText text = new SVGText(xy, unicode == null ? PageParser.ILLEGAL_CHAR : unicode);
     	TextParameters textParameters = new TextParameters(matrix, font);
     	if (!textParameters.hasNormalOrientation()) {
-    		// NOT RIGHT YET - WORK THIS OUT
-//    		text.setTransform(textParameters.getTransform2());
+    		text.rotateTextAboutPoint(xy, angleOfRotation.multiplyBy(-1.0), 5);
+    		RealSquareMatrix mat = new RealSquareMatrix(t2.extractSubMatrixData(0, 1, 0, 1));
+    		double scalesq = mat.elementAt(0, 0) * mat.elementAt(1, 1) - mat.elementAt(0, 1) * mat.elementAt(1, 0);
+    		double fontSize = Util.format(Math.sqrt(scalesq), ndec);
+			text.setFontSize(fontSize);
+    	} else {
+        	text.setFontSize(Util.format((double)matrix.getScaleY(), ndec));
     	}
-    	text.setStroke(renderingMode.isStroke() ? getJavaStrokeRGB() : "none");
-    	text.setFill(renderingMode.isFill() ? getJavaFillRGB() : "none");
+    	text.setStroke(textRenderingMode.isStroke() ? getJavaStrokeRGB() : "none");
+    	text.setFill(textRenderingMode.isFill() ? getJavaFillRGB() : "none");
     	registerColor("fontGlyph", "fill", awtFillColor);
     	registerColor("fontGlyph", "stroke", awtStrokeColor);
-    	text.setFontSize(Util.format((double)matrix.getScaleY(), ndec));
     	text.setFontFamily(getName(font));
     	if (unicode == null) {
     		text.addAttribute(new Attribute(CODE, String.valueOf(code)));
@@ -231,7 +215,6 @@ public class AMIPageDrawer extends PageDrawer {
     		text.addAttribute(new Attribute(MATRIX, String.valueOf(matrix)));
     	}
     	currentTextPhrase.appendChild(text);
-//    	if (debugParams.debugGraphics) debugGraphics("showFontGlyph");
     }
 
 // ===== APPEND RECTANGLE =========
@@ -255,7 +238,7 @@ public class AMIPageDrawer extends PageDrawer {
     	updateRenderingColorsStroke("strokePath");
     	super.strokePath();
     	registerColor("strokePath", "stroke", awtStrokeColor);
-    	registerColor("strokePath", "fill", awtFillColor);
+    	awtFillColor = null;
     	createPathAndFlush("strokePath");
     	
     }
@@ -266,7 +249,7 @@ public class AMIPageDrawer extends PageDrawer {
     	updateRenderingColorsStroke("fillPath");
     	super.fillPath(windingRule);
 		registerColor("fillPath", "fill", awtFillColor);
-		registerColor("fillPath", "stroke", awtStrokeColor);
+		awtStrokeColor = null;
     	createPathAndFlush("fillPath");
     }
 
@@ -278,27 +261,21 @@ public class AMIPageDrawer extends PageDrawer {
      */
     @Override
     public void fillAndStrokePath(int windingRule) throws IOException {
+    	if (debugParams.showFillAndStrokePath) {System.out.println(">fillAndStrokePath("+windingRule+")");}
     	super.fillAndStrokePath(windingRule);
-    	if (debugParams.showFillAndStrokePath) {
-    		System.out.println(">fillAndStrokePath("+windingRule+")");
-    	}
     	createPathAndFlush("fillAndStroke");
     	throw new RuntimeException("fillAndStrokePath NYI");
     }
 
     @Override
     public void clip(int windingRule) {
-    	if (debugParams.showClip) {
-    		System.out.println("clip("+windingRule+")");
-    	}
+    	if (debugParams.showClip) {System.out.println("clip("+windingRule+")");}
     	super.clip(windingRule);
     }
 
     @Override
     public void moveTo(float x, float y) {
-    	if (debugParams.showMoveTo) {
-    		System.out.println("M"+format(x, y, ndec));
-    	}
+    	if (debugParams.showMoveTo) {System.out.println("M"+format(x, y, ndec));}
     	super.moveTo(x, y);
     	ensurePathPrimitiveList().add(new MovePrimitive(new Real2(x, transformY(y)).format(ndec)));
     	currentPoint = new Real2(x, transformY(y));
@@ -306,9 +283,7 @@ public class AMIPageDrawer extends PageDrawer {
 
 	@Override
     public void lineTo(float x, float y) {
-    	if (debugParams.showLineTo) {
-    		System.out.println("L"+format(x, y, ndec));
-    	}
+    	if (debugParams.showLineTo) {System.out.println("L"+format(x, y, ndec));}
     	super.lineTo(x, y);
     	ensurePathPrimitiveList().add(new LinePrimitive(new Real2(x, transformY(y)).format(ndec)));
     	currentPoint = new Real2(x, transformY(y));
@@ -316,9 +291,7 @@ public class AMIPageDrawer extends PageDrawer {
 
     @Override
     public void curveTo(float x1, float y1, float x2, float y2, float x3, float y3) {
-    	if (debugParams.showCurveTo) {
-    		System.out.println("C"+format(x1, y1, x2, y2, x3, y3, 2));
-    	}
+    	if (debugParams.showCurveTo) {System.out.println("C"+format(x1, y1, x2, y2, x3, y3, 2));}
     	super.curveTo(x1, y1, x2, y2, x3, y3);
     	Real2Array xyArray = new Real2Array(Arrays.asList(new Real2[] {
     			new Real2(x1, transformY(y1)).format(ndec),
@@ -327,60 +300,49 @@ public class AMIPageDrawer extends PageDrawer {
     		}
     		));
     	ensurePathPrimitiveList().add(new CubicPrimitive(xyArray));
+    	currentPoint = new Real2(x3, transformY(y3));
     }
 
 	@Override
     public Point2D getCurrentPoint() {
 		Point2D currentPoint = super.getCurrentPoint();
-    	if (debugParams.showCurrentPoint) {
-//    		System.out.println("CURPT"+format(currentPoint, ndec));
-    	}
+//    	if (debugParams.showCurrentPoint) {System.out.println("CURPT"+format(currentPoint, ndec));}
     	return currentPoint;
     }
 
 	@Override
     public void closePath() {
-    	if (debugParams.showClosePath) {
-    		System.out.println(">closePath");
-    	}
+    	if (debugParams.showClosePath) {System.out.println(">closePath");}
     	super.closePath();    	
     	ensurePathPrimitiveList().add(new ClosePrimitive());
     }
 
     @Override
     public void endPath() {
-    	if (debugParams.showEndPath) {
-    		System.out.println(">endPath");
-    	}
+    	if (debugParams.showEndPath) {System.out.println(">endPath");}
     	super.endPath();
     }
 
 // ===== IMAGE ======
     @Override
     public void drawImage(PDImage pdImage) throws IOException {
-    	if (debugParams.showDrawImage) {
-    		System.out.println(">drawImage "+pdImage);
-    	}
+    	if (debugParams.showDrawImage) {System.out.println(">drawImage "+pdImage);}
     	super.drawImage(pdImage);
 
     }
 
- // ===== SHADING FILL =====    
+ // ===== Painting =====
+    
     @Override
     public void shadingFill(COSName shadingName) throws IOException {
-    	if (debugParams.showShadingFill) {
-    		System.out.println(">shadingFill "+shadingName);
-    	}
+    	if (debugParams.showShadingFill) {System.out.println(">shadingFill "+shadingName);}
     	super.shadingFill(shadingName);
     }
 
 // ===== ANNOTATION =====    
     @Override
     public void showAnnotation(PDAnnotation annotation) throws IOException {
-    	if (debugParams.showAnnotation) {
-    		System.out.println(">annotation "+
-    	    format(annotation));
-    	}
+    	if (debugParams.showAnnotation) {System.out.println(">annotation "+format(annotation));}
     	super.showAnnotation(annotation);
     }
 
@@ -391,9 +353,7 @@ public class AMIPageDrawer extends PageDrawer {
      */
     @Override
     public void showForm(PDFormXObject form) throws IOException {
-    	if (debugParams.showForm) {
-    		System.out.println(">showForm "+format(form));
-    	}
+    	if (debugParams.showForm) {System.out.println(">showForm "+format(form));}
     	super.showForm(form);
     }
 
@@ -401,9 +361,7 @@ public class AMIPageDrawer extends PageDrawer {
     
     @Override
     public void showTransparencyGroup(PDTransparencyGroup form) throws IOException {
-    	if (debugParams.showTransGrp) {
-    		System.out.println(">showTransparencyGroup "+form);
-    	}
+    	if (debugParams.showTransGrp) {System.out.println(">showTransparencyGroup "+form);}
         super.showTransparencyGroup(form);
     }
 
@@ -414,9 +372,7 @@ public class AMIPageDrawer extends PageDrawer {
      */
     @Override
     public void beginMarkedContentSequence(COSName tag, COSDictionary properties) {
-    	if (debugParams.showBeginMarked) {
-    		System.out.println(">beginMarkedContentSequence "+tag+"/"+properties);
-    	}
+    	if (debugParams.showBeginMarked) {System.out.println(">beginMarkedContentSequence "+tag+"/"+properties);}
     	super.beginMarkedContentSequence(tag, properties);
     }
 
@@ -425,9 +381,7 @@ public class AMIPageDrawer extends PageDrawer {
      */
     @Override
     public void endMarkedContentSequence() {
-    	if (debugParams.showEndMarked) {
-    		System.out.println(">endMarkedContentSequence");
-    	}
+    	if (debugParams.showEndMarked) {System.out.println(">endMarkedContentSequence");}
     	super.endMarkedContentSequence();
     }
     
@@ -435,33 +389,32 @@ public class AMIPageDrawer extends PageDrawer {
     
 	private void createPathAndFlush(String source) {
 		if (pathPrimitiveList != null) {
-			System.out.println(source + ": flush");
+//			System.out.println(source + ": flush");
 	    	SVGPath path = new SVGPath(pathPrimitiveList);
-	    	updateRenderingColorsStroke("createPathAndFlush");
-	    	String javaStrokeRGB = getJavaStrokeRGB();
-			path.setStroke(javaStrokeRGB);
-	    	String javaFillRGB = getJavaFillRGB();
-			path.setFill(javaFillRGB);
+//	    	updateRenderingColorsStroke("createPathAndFlush");
+	    	path.setStroke(getJavaStrokeRGB());
+	    	path.setFill(getJavaFillRGB());
 	    	path.setStrokeWidth(Util.format(currentLineWidth, ndec));
 	    	path.format(ndec);
-	    	System.out.println("createPathFlush: "+path);
+//	    	System.out.println("createPathFlush: "+path);
 	    	gTop.appendChild(path);
 	    	pathPrimitiveList = null;
 		} else {
-			System.out.println("createPathAndFlush: no primitives");
+			LOG.trace("createPathAndFlush: no primitives");
 		}
 	}
     
 
 	private void updateRenderingColorsStroke(String source) {
-		renderingMode = getGraphicsState().getTextState().getRenderingMode();
+		textRenderingMode = getGraphicsState().getTextState().getRenderingMode();
+//		System.out.println("textRenderingMode "+textRenderingMode);
 		try {
 	        awtStrokeColor = (Color) getPaint(getGraphicsState().getStrokingColor());
 	        awtFillColor = (Color) getPaint(getGraphicsState().getNonStrokingColor());
 		} catch (IOException e) {
 			throw new RuntimeException("cannot extract colors", e);
 		}
-        System.out.println("PageDrawer " + source + ": AWTstroke: "+awtStrokeColor + "; AWTfill: "+awtFillColor);
+//        System.out.println("PageDrawer " + source + ": AWTstroke: "+awtStrokeColor + "; AWTfill: "+awtFillColor);
         updateCurrentStroke();
 	}
 
@@ -470,7 +423,7 @@ public class AMIPageDrawer extends PageDrawer {
 		String name = getName(font);
 		if (!pdFontByName.containsKey(name)) {
 			pdFontByName.put(name, font);
-			System.out.println("font: "+pdFontByName);
+//			System.out.println("font: "+pdFontByName);
 		}
 	}
 
@@ -500,7 +453,7 @@ public class AMIPageDrawer extends PageDrawer {
 		BasicStroke basicStroke = (BasicStroke) getGraphics().getStroke();
     	if (!basicStroke.equals(currentStroke)) {
     		currentLineWidth = (double) basicStroke.getLineWidth();
-			printNewStroke(basicStroke);
+//			printNewStroke(basicStroke);
     		currentStroke = basicStroke;
     		currentLineWidth = (double) basicStroke.getLineWidth();
     	}
@@ -553,7 +506,7 @@ public class AMIPageDrawer extends PageDrawer {
 	}
 
 	private void registerColor(String source, String fillStroke, Color color) {
-		System.out.println(source + ": " + fillStroke + " : " + Integer.toHexString(color.getRGB()));
+//		System.out.println(source + ": " + fillStroke + " : " + (color == null ? "none" : Integer.toHexString(color.getRGB())));
 		if (!colorSet .contains(color)) {
 //    		System.out.println("\nnew col:"+Integer.toHexString(color.getRGB()));
 			colorSet.add(color);

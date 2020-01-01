@@ -1465,6 +1465,11 @@ public class SVGText extends SVGElement {
 		this.addAttribute(new Attribute(Y, array.getStringArray()));
 	}
 
+	/** not sure what this does.
+	 * 
+	 * @param centre
+	 * @param t90
+	 */
 	public void rotateTextAboutPoint(Real2 centre, Transform2 t90) {
 		Real2 textXY = getXY();
 		Real2 delta = textXY.subtract(centre);
@@ -1472,6 +1477,24 @@ public class SVGText extends SVGElement {
 		Real2 textXY1 = centre.plus(delta);
 		setXY(textXY1);
 		removeAttribute("transform");
+	
+	}
+
+	/** .
+	 * 
+	 * @param centre
+	 * @param angle
+	 * @param ndec   // number of decimal digits in transform
+	 */
+	public void rotateTextAboutPoint(Real2 centre, Angle angle, int ndec) {
+		Transform2 newTransform2 = new Transform2(centre);
+		newTransform2 = newTransform2.concatenate(new Transform2(angle));
+		newTransform2 = newTransform2.concatenate(new Transform2(new Real2(centre.multiplyBy(-1.0))));
+		if (ndec > 0) {
+			newTransform2.format(ndec);
+		}
+		this.setTransform(newTransform2);
+	
 	}
 
 	public HtmlSup createSuperscript() {
