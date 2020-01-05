@@ -1,4 +1,4 @@
-package org.contentmine.pdf2svg2;
+package org.contentmine.pdf2svg2.old;
 
 import java.awt.Color;
 import java.awt.Graphics2D;

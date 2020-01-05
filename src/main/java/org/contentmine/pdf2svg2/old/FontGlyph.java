@@ -1,4 +1,4 @@
-package org.contentmine.pdf2svg2;
+package org.contentmine.pdf2svg2.old;
 
 import org.apache.pdfbox.pdmodel.font.PDFont;
 import org.apache.pdfbox.util.Matrix;

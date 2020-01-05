@@ -30,23 +30,18 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.pdfbox.contentstream.PDFGraphicsStreamEngine;
 import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.rendering.PDFRenderer;
 import org.apache.pdfbox.rendering.PageDrawer;
 import org.apache.pdfbox.rendering.PageDrawerParameters;
+import org.contentmine.ami.tools.AMIPDFTool;
+import org.contentmine.ami.tools.AMIPDFTool.PDFTidySVG;
 import org.contentmine.ami.tools.AbstractAMITest;
-import org.contentmine.eucl.euclid.Real2;
-import org.contentmine.eucl.euclid.RealArray;
-import org.contentmine.graphics.svg.GraphicsElement.FontStyle;
-import org.contentmine.graphics.svg.GraphicsElement.FontWeight;
 import org.contentmine.graphics.svg.SVGConstants;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.graphics.svg.SVGText;
 import org.contentmine.graphics.svg.SVGUtil;
-
-import nu.xom.Element;
 
 /**
  * Example showing custom rendering by subclassing PageDrawer.
@@ -55,12 +50,12 @@ import nu.xom.Element;
  * subclass {@link PDFGraphicsStreamEngine} instead. Subclassing PageDrawer is only suitable for
  * cases where the goal is to render onto a Graphics2D surface.
  *
- * @author John Hewson
+ * 
  * @author Peter Murray-Rust
  */
-public class PageDrawerRunner
+public class PageParserRunner
 {
-	private static final Logger LOG = Logger.getLogger(PageDrawerRunner.class);
+	private static final Logger LOG = Logger.getLogger(PageParserRunner.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
@@ -72,42 +67,53 @@ public class PageDrawerRunner
 	private static final File OMAR_TEST_DIR = new File(PROJECTS_DIR, "omar/test");
 	private static double Y_EPS = 1.0E-5;
 
-	public enum DrawerType {
+	public enum ParserDebug {
 		AMI_BRIEF,
 		AMI_MEDIUM,
 		AMI_FULL,
 		ORIGINAL, // Don't use
+		AMI_ONE,
+		AMI_TWO,
+		AMI_ZERO,
+
 	}
 
-	private DrawerType drawerType = DrawerType.ORIGINAL;
+	private ParserDebug parserDebug = ParserDebug.ORIGINAL;
 	private BufferedImage image;
-	private MyPDFRenderer myPdfRenderer;
+	private RendererExtractor myPdfRenderer;
 	private PDDocument doc;
-	private PDPage currentPage;
+//	private PDPage currentPage;
 	private boolean debug;
 	private boolean tidySVG = true;
-//	private SVGText currentSVGText;
 	private TextParameters lastTextParameters;
 	private double minBoldWeight = 500.;
-	private File outputPng;
+	private File outputPngFile;
 	private File outputDir;
+    private PageSerial pageSerial;
 
-	public PageDrawerRunner() {
+	private RendererExtractor rendererExtractor;
+	private List<PDFTidySVG> tidySVGList;
+
+
+	public PageParserRunner() {
 		
 	}
 
-	public PageDrawerRunner(PDDocument doc, DrawerType drawerType) {
+	public PageParserRunner(PDDocument doc, ParserDebug drawerType) {
 		this.doc = doc;
-		this.setDrawerType(drawerType);
+		this.setParserDebug(drawerType);
 	}
 	
-	public PageDrawerRunner(File inputFile, DrawerType drawerType, boolean debug) {
+	public PageParserRunner(File inputFile, ParserDebug parserDebug, boolean debug) {
+		if (inputFile == null || !inputFile.exists()) {
+			throw new RuntimeException("null or non-existent file " + inputFile);
+		}
 		try {
 			doc = PDDocument.load(inputFile);
 		} catch (IOException e) {
 			throw new RuntimeException("cannot read PDF", e);
 		}
-		this.setDrawerType(drawerType);
+		this.setParserDebug(parserDebug);
 		this.setDebug(debug);
 		
 	}
@@ -124,8 +130,8 @@ public class PageDrawerRunner
 		this.debug= debug;
 	}
 
-	public void setDrawerType(DrawerType drawerType) {
-		this.drawerType = drawerType;
+	public void setParserDebug(ParserDebug drawerType) {
+		this.parserDebug = drawerType;
 	}
 	
 	public void closeDoc() {
@@ -143,43 +149,40 @@ public class PageDrawerRunner
 	 * @throws IOException
 	 * @throws IllegalArgumentException
 	 */
-	public BufferedImage createImageAndSVG(int pageSerial) throws IOException, IllegalArgumentException {
+	public BufferedImage createImageAndSVG(int pageIndex) throws IOException, IllegalArgumentException {
 		int count = doc.getPages().getCount();
-		if (pageSerial < 0 || pageSerial >= count) {
+		if (pageIndex < 0 || pageIndex >= count) {
 			throw new IllegalArgumentException(
-					"bad page index: " + pageSerial + " not in 0-" + (count - 1));
+					"bad page index: " + pageIndex + " not in 0-" + (count - 1));
 		}
-		currentPage = doc.getPage(pageSerial);
-        image = myPdfRenderer.renderImage(pageSerial);
+//		currentPage = doc.getPage(pageIndex);
+        image = myPdfRenderer.renderImage(pageIndex);
         return image;
 	}
 
 	private PDFRenderer readFile(File file) throws IOException {
 		doc = PDDocument.load(file);
-        return createPDFRenderer(doc, drawerType);
+        myPdfRenderer = new RendererExtractor(doc, parserDebug);
+		return myPdfRenderer;
 	}
 
 	public void writeImage(File output) throws IOException {
 		ImageIO.write(image, "PNG", output);
 	}
 
-	/** creates a MyPDFRenderer */
-	public MyPDFRenderer createPDFRenderer(PDDocument doc, DrawerType drawerType) {
-		myPdfRenderer = new MyPDFRenderer(doc, drawerType);
-		return myPdfRenderer;
-	}
-	
-	public void processPage(int pageSerial) throws IOException {
-		createPDFRenderer(doc, drawerType);
-		if (pageSerial < 0 || pageSerial >= doc.getNumberOfPages()) {
+	public void processPage(int pageIndex) {
+		this.setPageSerial(PageSerial.createFromZeroBasedPage(pageIndex));
+		myPdfRenderer = new RendererExtractor(doc, parserDebug, pageIndex, this);
+		if (pageIndex < 0 || pageIndex >= doc.getNumberOfPages()) {
 			throw new IllegalArgumentException("Page out of bounds "+pageSerial);
 		}
-		currentPage = doc.getPage(pageSerial);
-		PageDrawer pageDrawer = ((MyPDFRenderer)myPdfRenderer).getPageDrawer();
-		if (pageDrawer instanceof AMIPageDrawer) {
-			((AMIPageDrawer)pageDrawer).setCurrentPage(currentPage);
+		// currentPage = doc.getPage(pageIndex);
+		
+		try {
+			image = myPdfRenderer.renderImage(pageIndex);
+		} catch (IOException e) {
+			throw new RuntimeException("Cannot create image", e);
 		}
-		image = myPdfRenderer.renderImage(pageSerial);
 	}
 
 	public BufferedImage getImage() {
@@ -188,11 +191,11 @@ public class PageDrawerRunner
 
 	public SVGElement getSVG() {
 		SVGElement svgElement = null;
-		if (drawerType == DrawerType.ORIGINAL) {
+		if (parserDebug == ParserDebug.ORIGINAL) {
 			// null;
 		} else {
-			PageDrawer pageDrawer = ((MyPDFRenderer)myPdfRenderer).getPageDrawer();
-			svgElement = ((AMIPageDrawer) pageDrawer).getSVGElement();
+			PageDrawer pageDrawer = ((RendererExtractor)myPdfRenderer).getPageDrawer();
+			svgElement = ((AbstractPageParser) pageDrawer).getSVGG();
 			
 		}
 		if (debug) {
@@ -270,12 +273,12 @@ public class PageDrawerRunner
 	}
 
 	public void runExample(File inputFile, File outputFile, int pageSerial) throws IOException {
-		runExample(inputFile, outputFile, pageSerial, DrawerType.ORIGINAL);
+		runExample(inputFile, outputFile, pageSerial, ParserDebug.ORIGINAL);
 	}
 
-	public void runExample(File inputFile, File outputFile, int pageSerial, DrawerType drawerType)
+	public void runExample(File inputFile, File outputFile, int pageSerial, ParserDebug drawerType)
 			throws IOException {
-		setDrawerType(drawerType);
+		setParserDebug(drawerType);
 	    readFile(inputFile);
 	    createImageAndSVG(pageSerial);
 	    writeImage(outputFile);
@@ -285,30 +288,58 @@ public class PageDrawerRunner
 
 	/**
      * Example PDFRenderer subclass, uses MyPageDrawer for custom rendering.
+     * (Names changed to RendererExtractor and PageParser to reflect their subclassed roles)
      */
-    private static class MyPDFRenderer extends PDFRenderer
+    /*public*/ private static class RendererExtractor extends PDFRenderer
     {
-        private DrawerType drawerType;
-        private PageDrawer pageDrawer;
+        private ParserDebug parserDebug;
+        private PageDrawer pageParser;
+		private int pageIndex;
+		private PageParserRunner pageParserRunner;
 
 		public PageDrawer getPageDrawer() {
-			return pageDrawer;
+			return pageParser;
 		}
 
-		MyPDFRenderer(PDDocument document, DrawerType drawer)
+		RendererExtractor(PDDocument document, ParserDebug drawer)
         {
-            super(document);
-            this.drawerType = drawer;
+			this(document, drawer, -1, null);
         }
 
+		RendererExtractor(PDDocument document, ParserDebug drawer, int pageIndex, PageParserRunner parserRunner)
+        {
+            super(document);
+            this.parserDebug = drawer;
+            this.pageIndex = pageIndex;
+            this.pageParserRunner = parserRunner;
+            pageParserRunner.setRendererExtractor(this);
+        }
+
+		@Override
+	    public BufferedImage renderImage(int pageIndex) throws IOException
+	    {
+			this.setPageIndex(pageIndex);
+	        BufferedImage renderImage = renderImage(pageIndex, 1);
+			AbstractPageParser pageParser = (AbstractPageParser) this.getPageDrawer();
+			pageParser.createPageSerial(pageIndex);
+			return renderImage;
+	    }
+
+		private void setPageIndex(int pageIndex) {
+			this.pageIndex = pageIndex;
+		}
+
+		/** this actually creates a PageParser but we can't change the signature
+		 * 
+		 */
         @Override
         protected PageDrawer createPageDrawer(PageDrawerParameters parameters) throws IOException
         {
-        	pageDrawer = null;
-        	if (DrawerType.ORIGINAL.equals(drawerType)) {
-        		pageDrawer = new MyPageDrawer(parameters);
-        	} else if (DrawerType.AMI_BRIEF.equals(drawerType)) {
-        		AMIPageDrawer amiPageDrawer = new AMIPageDrawer(parameters, AMIDebugParameters.getDefaultParameters());
+        	pageParser = null;
+        	if (ParserDebug.ORIGINAL.equals(parserDebug)) {
+        		pageParser = new PageParserZero(parameters, -1, AMIDebugParameters.getDefaultParameters());
+        	} else if (ParserDebug.AMI_ONE.equals(parserDebug)) {
+        		AbstractPageParser amiPageDrawer = new PageParserOne(parameters, AMIDebugParameters.getDefaultParameters());
         		amiPageDrawer.getDebugParameters().showAnnotation=false;
         		amiPageDrawer.getDebugParameters().showAppendRectangle=false;
         		amiPageDrawer.getDebugParameters().showBeginText=false;
@@ -326,9 +357,49 @@ public class PageDrawerRunner
         		amiPageDrawer.getDebugParameters().showLineTo=false;
         		amiPageDrawer.getDebugParameters().showMoveTo=false;
         		amiPageDrawer.getDebugParameters().showStrokePath=false;
-				pageDrawer = amiPageDrawer;
-        	} else if (DrawerType.AMI_MEDIUM.equals(drawerType)) {
-        		AMIPageDrawer amiPageDrawer = new AMIPageDrawer(parameters, AMIDebugParameters.getDefaultParameters());
+				pageParser = amiPageDrawer;
+        	} else if (ParserDebug.AMI_TWO.equals(parserDebug)) {
+        		AbstractPageParser amiPageDrawer = new PageParserTwo(parameters, pageIndex, AMIDebugParameters.getDefaultParameters());
+        		amiPageDrawer.getDebugParameters().showAnnotation=false;
+        		amiPageDrawer.getDebugParameters().showAppendRectangle=false;
+        		amiPageDrawer.getDebugParameters().showBeginText=false;
+        		amiPageDrawer.getDebugParameters().showChar=false;
+        		amiPageDrawer.getDebugParameters().showClip=false;
+        		amiPageDrawer.getDebugParameters().showClosePath=false;
+        		amiPageDrawer.getDebugParameters().showColor=false;
+        		amiPageDrawer.getDebugParameters().showCurrentPoint=false;
+        		amiPageDrawer.getDebugParameters().showDrawPage=false;
+        		amiPageDrawer.getDebugParameters().showFillPath=false;
+        		amiPageDrawer.getDebugParameters().showFontGlyph=false;
+        		amiPageDrawer.getDebugParameters().showForm=false;
+        		amiPageDrawer.getDebugParameters().showEndPath=false;
+        		amiPageDrawer.getDebugParameters().showEndText=false;
+        		amiPageDrawer.getDebugParameters().showLineTo=false;
+        		amiPageDrawer.getDebugParameters().showMoveTo=false;
+        		amiPageDrawer.getDebugParameters().showStrokePath=false;
+				pageParser = amiPageDrawer;
+        	} else if (ParserDebug.AMI_ZERO.equals(parserDebug)) {
+        		AbstractPageParser amiPageDrawer = new PageParserZero(parameters, pageIndex, AMIDebugParameters.getDefaultParameters());
+        		amiPageDrawer.getDebugParameters().showAnnotation=false;
+        		amiPageDrawer.getDebugParameters().showAppendRectangle=false;
+        		amiPageDrawer.getDebugParameters().showBeginText=false;
+        		amiPageDrawer.getDebugParameters().showChar=false;
+        		amiPageDrawer.getDebugParameters().showClip=false;
+        		amiPageDrawer.getDebugParameters().showClosePath=false;
+        		amiPageDrawer.getDebugParameters().showColor=false;
+        		amiPageDrawer.getDebugParameters().showCurrentPoint=false;
+        		amiPageDrawer.getDebugParameters().showDrawPage=false;
+        		amiPageDrawer.getDebugParameters().showFillPath=false;
+        		amiPageDrawer.getDebugParameters().showFontGlyph=false;
+        		amiPageDrawer.getDebugParameters().showForm=false;
+        		amiPageDrawer.getDebugParameters().showEndPath=false;
+        		amiPageDrawer.getDebugParameters().showEndText=false;
+        		amiPageDrawer.getDebugParameters().showLineTo=false;
+        		amiPageDrawer.getDebugParameters().showMoveTo=false;
+        		amiPageDrawer.getDebugParameters().showStrokePath=false;
+				pageParser = amiPageDrawer;
+        	} else if (ParserDebug.AMI_MEDIUM.equals(parserDebug)) {
+        		AbstractPageParser amiPageDrawer = new PageParserOne(parameters, AMIDebugParameters.getDefaultParameters());
         		amiPageDrawer.getDebugParameters().showAnnotation=false;
 //        		amiPageDrawer.getDebugParameters().showAppendRectangle=false;
 //        		amiPageDrawer.getDebugParameters().showBeginText=false;
@@ -345,12 +416,15 @@ public class PageDrawerRunner
 //        		amiPageDrawer.getDebugParameters().showLineTo=false;
 //        		amiPageDrawer.getDebugParameters().showMoveTo=false;
         		amiPageDrawer.getDebugParameters().showStrokePath=false;
-				pageDrawer = amiPageDrawer;
-        	} else if (DrawerType.AMI_FULL.equals(drawerType)) {
-        		AMIPageDrawer amiPageDrawer = new AMIPageDrawer(parameters, AMIDebugParameters.getDefaultParameters());
-				pageDrawer = amiPageDrawer;
+				pageParser = amiPageDrawer;
+        	} else if (ParserDebug.AMI_FULL.equals(parserDebug)) {
+        		AbstractPageParser amiPageDrawer = new PageParserOne(parameters, AMIDebugParameters.getDefaultParameters());
+				pageParser = amiPageDrawer;
+        	} else {
+        		throw new RuntimeException("Cannot create PageParser: "+parserDebug);
         	}
-        	return pageDrawer;
+        	((AbstractPageParser) pageParser).setPageSerial(this.pageParserRunner.getPageSerial());
+        	return pageParser;
         }
     }
     
@@ -388,20 +462,57 @@ public class PageDrawerRunner
 //		}
 	}
 
-	public void run(String root, int pageSerial) throws IOException , IllegalArgumentException{
-		
-		processPage(pageSerial);
-		
-		outputDir = AbstractAMITest.PDF2SVG2;
-		outputPng = new File(outputDir, root+"."+pageSerial+".png");
-		
-		ImageIO.write(getImage(), "PNG", outputPng);
-		LOG.debug("wrote PNG "+outputPng);
-		SVGElement svgElement = getSVG();
-		SVGSVG.wrapAndWriteAsSVG(svgElement, new File(outputDir, root+"."+pageSerial+".svg"));
+	public void setRendererExtractor(RendererExtractor rendererExtractor) {
+		this.rendererExtractor = rendererExtractor;
+	}
+	
+	public RendererExtractor getRendererExtractor() {
+		return rendererExtractor;
 	}
 
-    public static void main(String[] args) throws IOException
+	public void run(String root, int pageIndex) throws IllegalArgumentException{
+
+		this.setPageSerial(PageSerial.createFromZeroBasedPage(pageIndex));
+		processPage(pageIndex);
+		
+		outputDir = AbstractAMITest.PDF2SVG2;
+		outputPngFile = new File(outputDir, root+"."+pageIndex+".png");
+		
+		try {
+			ImageIO.write(getImage(), "PNG", outputPngFile);
+		} catch (IOException e) {
+			throw new RuntimeException("cannot write PNG", e);
+		}
+		LOG.debug("wrote PNG "+outputPngFile);
+		SVGElement svgElement = getSVG();
+		SVGSVG.wrapAndWriteAsSVG(svgElement, new File(outputDir, root+"."+pageIndex+".svg"));
+	}
+
+    private void setPageSerial(PageSerial pageSerial) {
+    	this.pageSerial = pageSerial;
+	}
+    
+	public PageSerial getPageSerial() {
+		return pageSerial;
+	}
+
+
+	public void runPages(String root, int pageIndex) {
+		if (pageIndex < 0) {
+			while(true) {
+				try {
+					run(root, ++pageIndex);
+				} catch (IllegalArgumentException e) {
+					System.out.println("quit");
+					break;
+				}
+			}
+		} else {
+			run(root, pageIndex);
+		}
+	}
+
+	public static void main(String[] args) throws IOException
     {
         example1();
         example2();
@@ -411,8 +522,8 @@ public class PageDrawerRunner
 		File inputFile = new File(TEST_PDFBOX_DIR, "custom-render-demo.pdf");
         File outputFile = new File(TEST_PDFBOX_DIR, "custom-render-demo.png");
         int pageSerial = 0;
-        PageDrawerRunner drawerExample = new PageDrawerRunner(inputFile, DrawerType.AMI_BRIEF, true);
-        drawerExample.runExample(inputFile, outputFile, pageSerial, DrawerType.AMI_BRIEF);
+        PageParserRunner drawerExample = new PageParserRunner(inputFile, ParserDebug.AMI_BRIEF, true);
+        drawerExample.runExample(inputFile, outputFile, pageSerial, ParserDebug.AMI_BRIEF);
 //        drawerExample.runExample(inputFile, outputFile, pageSerial);
 	}
 
@@ -421,12 +532,16 @@ public class PageDrawerRunner
 		File imgDir = new File(LICHTENBURG, "img");
 		imgDir.mkdirs();
 		File inputFile = new File(LICHTENBURG, "fulltext.pdf");
-        PageDrawerRunner drawerExample = new PageDrawerRunner(inputFile, DrawerType.ORIGINAL, false);
+        PageParserRunner drawerExample = new PageParserRunner(inputFile, ParserDebug.ORIGINAL, false);
         for (int pageSerial = 0; pageSerial < 10; pageSerial++) {
         	File outputFile = new File(imgDir, "fulltext."+pageSerial+".png");
         	System.out.println("wrote: "+outputFile);
         	drawerExample.runExample(inputFile, outputFile, pageSerial);
         }
+	}
+
+	public void setTidySVGList(List<AMIPDFTool.PDFTidySVG> tidySVGList) {
+		this.tidySVGList = tidySVGList;
 	}
 
 

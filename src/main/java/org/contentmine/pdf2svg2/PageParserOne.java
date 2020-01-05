@@ -1,36 +1,21 @@
 package org.contentmine.pdf2svg2;
 
-import java.awt.AlphaComposite;
-import java.awt.BasicStroke;
-import java.awt.Color;
-import java.awt.Composite;
 import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Stroke;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.GeneralPath;
 import java.awt.geom.Point2D;
 import java.io.IOException;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.pdfbox.cos.COSDictionary;
 import org.apache.pdfbox.cos.COSName;
-import org.apache.pdfbox.pdmodel.PDPage;
-import org.apache.pdfbox.pdmodel.PDResources;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.font.PDFont;
 import org.apache.pdfbox.pdmodel.graphics.form.PDFormXObject;
 import org.apache.pdfbox.pdmodel.graphics.form.PDTransparencyGroup;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImage;
-import org.apache.pdfbox.pdmodel.graphics.state.RenderingMode;
 import org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation;
-import org.apache.pdfbox.rendering.PageDrawer;
 import org.apache.pdfbox.rendering.PageDrawerParameters;
 import org.apache.pdfbox.util.Matrix;
 import org.apache.pdfbox.util.Vector;
@@ -46,13 +31,11 @@ import org.contentmine.graphics.svg.GraphicsElement.FontStyle;
 import org.contentmine.graphics.svg.GraphicsElement.FontWeight;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
-import org.contentmine.graphics.svg.SVGPath;
 import org.contentmine.graphics.svg.SVGText;
 import org.contentmine.graphics.svg.path.ClosePrimitive;
 import org.contentmine.graphics.svg.path.CubicPrimitive;
 import org.contentmine.graphics.svg.path.LinePrimitive;
 import org.contentmine.graphics.svg.path.MovePrimitive;
-import org.contentmine.graphics.svg.path.PathPrimitiveList;
 
 import nu.xom.Attribute;
 
@@ -62,61 +45,27 @@ import nu.xom.Attribute;
  * modified by pm286
  * 
  */
-public class AMIPageDrawer extends PageDrawer {
-	private static final Logger LOG = Logger.getLogger(AMIPageDrawer.class);
+public class PageParserOne extends AbstractPageParser {
+	static final Logger LOG = Logger.getLogger(PageParserOne.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
 	
-	private static final String CODE = "code";
-	private static final String UNICODE = "unicode";
 	private static final String WIDTH = "width";
-	private static final String MATRIX = "matrix";
-	
-    private AMIDebugParameters debugParams;
-	private FontGlyph currentFontGlyph;
-	private Color awtStrokeColor;
-	private Color awtFillColor;
-	private Stroke currentStroke;
-	private Set<PDFont> fontSet = new HashSet<>();
-	private Set<Stroke> strokeSet = new HashSet<>();
-	private Set<Color> colorSet = new HashSet<>();
-	private SVGG gTop;
-	private SVGG currentTextPhrase;
-	private Double currentLineWidth;
-	private Real2 currentPoint;
-	private PDPage currentPage;
-	private Graphics2D lastGraphics;
-	private GeneralPath lastPath;
-	private int ndec = 2;
-	private int nxydec = 3;
-	private PathPrimitiveList pathPrimitiveList;
-	private Composite currentComposite;
-	private PDRectangle pageSize;
-	private double EPS = 0.000000001;
-	private Map<String, PDFont> pdFontByName;
-	private RenderingMode textRenderingMode;
-
-	AMIPageDrawer(PageDrawerParameters parameters, AMIDebugParameters debugParams) throws IOException {
-        super(parameters);
+	PageParserOne(PageDrawerParameters parameters, AMIDebugParameters debugParams) throws IOException {
+        super(parameters, debugParams);
         init();
-        this.debugParams = debugParams;
     }
     
-    private void init() {
-    	fontSet = new HashSet<>();
-    	strokeSet = new HashSet<>();
-    	colorSet = new HashSet<>();
-    	gTop = new SVGG();
+    void init() {
+    	super.init();
 	}
 
 	public void setDebugParameters(AMIDebugParameters params) {
     	this.debugParams = params;
     }
     
-    public AMIDebugParameters getDebugParameters() {
-    	return debugParams;
-    }
+    
 
     // ========= BEGIN OVERIDE ==================
     
@@ -131,8 +80,7 @@ public class AMIPageDrawer extends PageDrawer {
     public void drawPage(Graphics g, PDRectangle pageSize) throws IOException
     {
     	if (debugParams.showDrawPage) System.out.println(">drawPage");
-
-        this.pageSize = pageSize;
+    	LOG.debug("PS "+this.getPageSerial());
     	super.drawPage(g, pageSize);
     }
 
@@ -157,7 +105,7 @@ public class AMIPageDrawer extends PageDrawer {
     	if (currentTextPhrase == null) {
     		throw new RuntimeException("textPhrase not opened");
     	}
-    	gTop.appendChild(currentTextPhrase);
+    	svgg.appendChild(currentTextPhrase);
     	currentTextPhrase = null;
     }
     
@@ -191,10 +139,10 @@ public class AMIPageDrawer extends PageDrawer {
     	double y = Util.format(transformY(matrix.getTranslateY()), nxydec);
     	Real2 xy = new Real2(x, y).format(nxydec);
 		
-		SVGText text = new SVGText(xy, unicode == null ? PageParser.ILLEGAL_CHAR : unicode);
+		SVGText text = new SVGText(xy, unicode == null ? AbstractPageParser.ILLEGAL_CHAR : unicode);
     	TextParameters textParameters = new TextParameters(matrix, font);
     	if (!textParameters.hasNormalOrientation()) {
-    		text.rotateTextAboutPoint(xy, angleOfRotation.multiplyBy(-1.0), 5);
+    		text.rotateTextAboutPoint(xy, angleOfRotation.multiplyBy(-1.0), matdec);
     		RealSquareMatrix mat = new RealSquareMatrix(t2.extractSubMatrixData(0, 1, 0, 1));
     		double scalesq = mat.elementAt(0, 0) * mat.elementAt(1, 1) - mat.elementAt(0, 1) * mat.elementAt(1, 0);
     		double fontSize = Util.format(Math.sqrt(scalesq), ndec);
@@ -211,7 +159,7 @@ public class AMIPageDrawer extends PageDrawer {
     		text.addAttribute(new Attribute(CODE, String.valueOf(code)));
     	}
     	text.setSVGXFontWidth(Util.format((double)displacement.getX(), ndec));
-    	if (!Real.isZero(matrix.getShearX(), EPS) || !Real.isZero(matrix.getShearY(), EPS )) {
+    	if (!Real.isZero(matrix.getShearX(), eps) || !Real.isZero(matrix.getShearY(), eps)) {
     		text.addAttribute(new Attribute(MATRIX, String.valueOf(matrix)));
     	}
     	currentTextPhrase.appendChild(text);
@@ -263,8 +211,11 @@ public class AMIPageDrawer extends PageDrawer {
     public void fillAndStrokePath(int windingRule) throws IOException {
     	if (debugParams.showFillAndStrokePath) {System.out.println(">fillAndStrokePath("+windingRule+")");}
     	super.fillAndStrokePath(windingRule);
+    	updateRenderingColorsStroke("fillAndStrokePath");
+    	super.fillPath(windingRule);
+    	super.strokePath();
     	createPathAndFlush("fillAndStroke");
-    	throw new RuntimeException("fillAndStrokePath NYI");
+    	LOG.debug("fillAndStrokePath");
     }
 
     @Override
@@ -278,7 +229,6 @@ public class AMIPageDrawer extends PageDrawer {
     	if (debugParams.showMoveTo) {System.out.println("M"+format(x, y, ndec));}
     	super.moveTo(x, y);
     	ensurePathPrimitiveList().add(new MovePrimitive(new Real2(x, transformY(y)).format(ndec)));
-    	currentPoint = new Real2(x, transformY(y));
     }
 
 	@Override
@@ -286,7 +236,6 @@ public class AMIPageDrawer extends PageDrawer {
     	if (debugParams.showLineTo) {System.out.println("L"+format(x, y, ndec));}
     	super.lineTo(x, y);
     	ensurePathPrimitiveList().add(new LinePrimitive(new Real2(x, transformY(y)).format(ndec)));
-    	currentPoint = new Real2(x, transformY(y));
     }
 
     @Override
@@ -300,15 +249,14 @@ public class AMIPageDrawer extends PageDrawer {
     		}
     		));
     	ensurePathPrimitiveList().add(new CubicPrimitive(xyArray));
-    	currentPoint = new Real2(x3, transformY(y3));
     }
 
-	@Override
-    public Point2D getCurrentPoint() {
-		Point2D currentPoint = super.getCurrentPoint();
-//    	if (debugParams.showCurrentPoint) {System.out.println("CURPT"+format(currentPoint, ndec));}
-    	return currentPoint;
-    }
+//	@Override
+//    public Point2D getCurrentPoint() {
+//		Point2D currentPoint = super.getCurrentPoint();
+////    	if (debugParams.showCurrentPoint) {System.out.println("CURPT"+format(currentPoint, ndec));}
+//    	return currentPoint;
+//    }
 
 	@Override
     public void closePath() {
@@ -328,7 +276,9 @@ public class AMIPageDrawer extends PageDrawer {
     public void drawImage(PDImage pdImage) throws IOException {
     	if (debugParams.showDrawImage) {System.out.println(">drawImage "+pdImage);}
     	super.drawImage(pdImage);
-
+    	LOG.debug("page serial: "+pageSerial);
+//    	super.setPageSerial(pageSerial);
+    	extractImage(pdImage);
     }
 
  // ===== Painting =====
@@ -386,269 +336,6 @@ public class AMIPageDrawer extends PageDrawer {
     }
     
     // ========= END OVERIDE ==================
-    
-	private void createPathAndFlush(String source) {
-		if (pathPrimitiveList != null) {
-//			System.out.println(source + ": flush");
-	    	SVGPath path = new SVGPath(pathPrimitiveList);
-//	    	updateRenderingColorsStroke("createPathAndFlush");
-	    	path.setStroke(getJavaStrokeRGB());
-	    	path.setFill(getJavaFillRGB());
-	    	path.setStrokeWidth(Util.format(currentLineWidth, ndec));
-	    	path.format(ndec);
-//	    	System.out.println("createPathFlush: "+path);
-	    	gTop.appendChild(path);
-	    	pathPrimitiveList = null;
-		} else {
-			LOG.trace("createPathAndFlush: no primitives");
-		}
-	}
-    
-
-	private void updateRenderingColorsStroke(String source) {
-		textRenderingMode = getGraphicsState().getTextState().getRenderingMode();
-//		System.out.println("textRenderingMode "+textRenderingMode);
-		try {
-	        awtStrokeColor = (Color) getPaint(getGraphicsState().getStrokingColor());
-	        awtFillColor = (Color) getPaint(getGraphicsState().getNonStrokingColor());
-		} catch (IOException e) {
-			throw new RuntimeException("cannot extract colors", e);
-		}
-//        System.out.println("PageDrawer " + source + ": AWTstroke: "+awtStrokeColor + "; AWTfill: "+awtFillColor);
-        updateCurrentStroke();
-	}
-
-	private void registerFont(PDFont font) {
-		getOrCreatePDFontByName();
-		String name = getName(font);
-		if (!pdFontByName.containsKey(name)) {
-			pdFontByName.put(name, font);
-//			System.out.println("font: "+pdFontByName);
-		}
-	}
-
-	private Map<String, PDFont> getOrCreatePDFontByName() {
-		if (pdFontByName == null) {
-			pdFontByName = new HashMap<>();
-		}
-		return pdFontByName;
-	}
-
-	private String getName(PDFont font) {
-		String name = font == null ? null : font.getName();
-		if (name != null && name.contains("+")) {
-			name = name.split("\\+")[1];
-		}
-		return name;
-	}
-
-/**
-	private void updateColorCompositeStroke() {
-		updateCurrentColor();
-    	updateCurrentComposite();
-    	updateCurrentStroke();
-	}
-*/
-	private void updateCurrentStroke() {
-		BasicStroke basicStroke = (BasicStroke) getGraphics().getStroke();
-    	if (!basicStroke.equals(currentStroke)) {
-    		currentLineWidth = (double) basicStroke.getLineWidth();
-//			printNewStroke(basicStroke);
-    		currentStroke = basicStroke;
-    		currentLineWidth = (double) basicStroke.getLineWidth();
-    	}
-	}
-
-	private double transformY(float y) {
-		return pageSize.getHeight() - y;
-	}
-
-//	private void debugGraphics(String msg) {
-//		Graphics2D amiGraphics = new AMIGraphics2D(getGraphics(), getLinePath());
-//		Graphics2D graphics = getGraphics();
-//		if (!graphics.equals(lastGraphics)) {
-//			System.out.println("*****************"+msg+"*********************");
-//			System.out.println("lastGraphics: "+debug(lastGraphics)+" !=\n"+debug(graphics));
-//			lastGraphics = graphics;
-//		}
-//	}
-		
-//	private String debug(Graphics2D graphics) {
-//		StringBuilder sb = new StringBuilder();
-//		if (graphics == null) {
-//			sb.append("null");
-//		} else {
-//			sb.append("back "+graphics.getBackground());
-//			sb.append("; col "+graphics.getColor());
-//			sb.append("; compos "+format(graphics.getComposite()));
-//			sb.append("; font "+graphics.getFont());
-//			sb.append("; paint "+graphics.getPaint()); // paint and color are the same?
-//			sb.append("; stroke "+graphics.getStroke());
-//			sb.append("; trans "+graphics.getTransform());
-//		}
-//
-//		return sb.toString();
-//	}
-
-	private String getJavaStrokeRGB() {
-		return awtStrokeColor == null ? "none" : toRGB(awtStrokeColor);
-	}
-
-	private String getJavaFillRGB() {
-		return awtFillColor == null ? "none" : toRGB(awtFillColor);
-	}
-
-	private PathPrimitiveList ensurePathPrimitiveList() {
-		if (pathPrimitiveList == null) {
-			pathPrimitiveList = new PathPrimitiveList();
-		}
-		return pathPrimitiveList;
-	}
-
-	private void registerColor(String source, String fillStroke, Color color) {
-//		System.out.println(source + ": " + fillStroke + " : " + (color == null ? "none" : Integer.toHexString(color.getRGB())));
-		if (!colorSet .contains(color)) {
-//    		System.out.println("\nnew col:"+Integer.toHexString(color.getRGB()));
-			colorSet.add(color);
-		} else {
-//			System.out.print("\ncol "+Integer.toHexString(color.getRGB()));
-		}
-	}
-
-	public static String toRGB(Color javaColor) {
-		return javaColor == null ? null : "rgb(" + (int) javaColor.getRed()+","+javaColor.getGreen()+","+javaColor.getBlue()+")";
-	}
-
-	private void printNewFont(PDFont font) {
-		String name = font.getName();
-		name = name.contains("+") ? name.split("\\+")[1] : name;
-		if (fontSet.contains(font)) {
-			System.out.print("+");
-		} else {
-			fontSet.add(font);
-			System.out.println("\n"+name);
-		}
-	}
-
-	private void printNewComposite(Composite composite) {
-		System.out.println("comp: "+composite);
-	}
-	
-	private void printNewStroke(BasicStroke basicStroke) {
-		if (!strokeSet .contains(basicStroke)) {
-			System.out.println("\n"+format(basicStroke));
-			strokeSet.add(basicStroke);
-		} else {
-			System.out.print("|");
-		}
-	}
-	
-	private String format(BasicStroke basicStroke) {
-		String s = "";
-		s += "dashArray:"+basicStroke.getDashArray()+";";
-		s += "lwidth:"+basicStroke.getLineWidth()+";";
-		return s;
-	}
-
-    private String format(Matrix mat, int ndec) {
-    	return ""+
-    	    	"s("+Util.format(mat.getScaleX(), ndec)+","+Util.format(mat.getScaleY(), ndec)+")"+" "+
-    	    	"t("+Util.format(mat.getTranslateX(), ndec)+","+Util.format(mat.getTranslateY(), ndec)+")"+
-    	    	"";
-	}
-
-	private String format(Vector vec, int ndec) {
-    	return ""+
-    	    	"s("+Util.format(vec.getX(), ndec)+","+Util.format(vec.getY(), ndec)+")"+
-    	    	"";
-	}
-
-    private String format(float x, float y, int ndec) {
-    	String s = "("+Util.format(x, ndec)+","+Util.format(y,  ndec)+")";
-    	return s;
-	}
-
-    private String format(float x1, float y1, float x2, float y2, float x3, float y3, int ndec) {
-    	return "["+format(x1,y1,ndec)+","+format(x2,y2,ndec)+","+format(x3,y3,ndec)+"]";
-    }
-    
-    private String format(Point2D point, int ndec) {
-    	return "("+Util.format(point.getX(), ndec)+","+Util.format(point.getY(), ndec)+")";
-	}
-
-    private String format(PDAnnotation annotation) {
-    	if ("Link".equals(annotation.getSubtype().toString())) {
-    		return "Link";
-    	}
-    	StringBuilder sb = new StringBuilder();
-    	int fl = annotation.getAnnotationFlags(); if (fl != 0) {
-    		sb.append("flags:"+fl);
-    	}
-    	appendNonNull(sb, "name", annotation.getAnnotationName());
-    	appendNonNull(sb, "appear", annotation.getAppearance());
-    	appendNonNull(sb, "appearState", annotation.getAppearanceState());
-    	appendNonNull(sb, "border", annotation.getBorder());
-    	appendNonNull(sb, "color", annotation.getColor());
-    	appendNonNull(sb, "contents", annotation.getContents());
-    	appendNonNull(sb, "cosObject", annotation.getCOSObject());
-    	appendNonNull(sb, "modDate", annotation.getModifiedDate());
-    	appendNonNull(sb, "page", annotation.getPage());
-    	appendNonNull(sb, "subtype", annotation.getSubtype());
-
-		return sb.toString();
-	}
-
-	private void appendNonNull(StringBuilder sb, String title, Object object) {
-		if (object != null) {
-			sb.append(title+":"+object);
-		}
-	}
-
-    private String format(Composite composite) {
-    	String s = "";
-    	float alpha = ((AlphaComposite)composite).getAlpha();
-    	int rule = ((AlphaComposite)composite).getRule();
-    	s += "alpha:"+alpha+"; rule:"+rule;
-    	return s;
-	}
-
-    private String format(PDFormXObject xobject) {
-    	String s = "";
-    	int form = xobject.getFormType();
-    	PDRectangle rect = xobject.getBBox();
-    	PDResources resources = xobject.getResources();
-    	s += "form:"+form+";rect:"+rect+";res:"+resources;
-    	return s;
-	}
-
-	public SVGElement getSVGElement() {
-		return gTop;
-	}
-
-	public void setCurrentPage(PDPage currentPage) {
-		this.currentPage = currentPage;
-		PDRectangle cropBox = currentPage.getCropBox();
-	}
-
-    private float clampColor(float color)
-    {
-        return color < 0 ? 0 : (color > 1 ? 1 : color);        
-    }
-
-//	private void showAMIGDiff(AMIGraphics2D currentAMIG) {
-//		AMIGraphics2D newAMIG = createCurrentAMIG();
-////    	System.out.println("??? "+newAMIG.getNonNullFields());
-//    	AMIGraphics2D diff = newAMIG.createDiffGraphics2D(currentAMIG);
-//    	String nonNull = diff.getNonNullFields().trim();
-//    	
-//    	if (!"".equals(nonNull)) {
-//    		System.out.println(">>> "+nonNull);
-//    	}
-//	}
-//
-//    private AMIGraphics2D createCurrentAMIG() {
-//    	return new AMIGraphics2D(getGraphics(), getLinePath());
-//	}
 
     /** not used, but may need this to set font weights , etc.
      * 

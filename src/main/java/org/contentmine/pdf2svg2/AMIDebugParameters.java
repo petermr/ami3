@@ -42,6 +42,8 @@ public class AMIDebugParameters {
 	public boolean showTransGrp = true;
 
 	public boolean debugGraphics = true;
+	public boolean checkViewBox = true;
+	public boolean maxPrimitives = true;
 
 	public AMIDebugParameters() {
 		
@@ -73,6 +75,8 @@ public class AMIDebugParameters {
 		parameters.showShadingFill = true;
 		parameters.showStrokePath = true;
 		parameters.showTransGrp = true;
+		parameters.checkViewBox = true;
+		parameters.maxPrimitives = true;
 		
 		parameters.debugGraphics = true;
 		return parameters;

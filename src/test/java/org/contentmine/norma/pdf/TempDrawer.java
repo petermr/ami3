@@ -85,7 +85,7 @@ import org.contentmine.graphics.svg.path.CubicPrimitive;
 import org.contentmine.graphics.svg.path.LinePrimitive;
 import org.contentmine.graphics.svg.path.MovePrimitive;
 import org.contentmine.graphics.svg.path.PathPrimitiveList;
-import org.contentmine.pdf2svg2.Glyph2D;
+import org.contentmine.pdf2svg2.old.Glyph2D;
 
 /**
  * Example PageDrawer subclass with custom rendering.

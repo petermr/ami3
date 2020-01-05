@@ -31,6 +31,8 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.pdfbox.contentstream.PDFGraphicsStreamEngine;
 import org.apache.pdfbox.pdmodel.PDDocument;
+import org.contentmine.ami.tools.AMIPDFTool;
+import org.contentmine.ami.tools.AMIPDFTool.ParserType;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.graphics.svg.SVGG;
@@ -55,7 +57,6 @@ public class PDFDocumentProcessor {
 		LOG.setLevel(Level.DEBUG);
 	}
 	
-	private PageParser pageParser;
 	private PDDocument currentDoc;
 	private DocumentParser documentParser;
 	private File currentFile;
@@ -68,6 +69,7 @@ public class PDFDocumentProcessor {
 	private boolean outputSVG = true;
 	private boolean outputPDFImages = true;
 	private int maxPrimitives = 1000000;
+	private AMIPDFTool.ParserType parserType;
 
 	public PDFDocumentProcessor() {
 		init();
@@ -79,7 +81,7 @@ public class PDFDocumentProcessor {
 	
 
 	void clean() {
-		pageParser = null;
+//		pageParser = null;
 		currentDoc = null;
 		documentParser = null;
 		currentFile = null;
@@ -113,7 +115,7 @@ public class PDFDocumentProcessor {
 	}
 
 	private PDDocument readDocument(File file) throws IOException {
-		this.currentFile = file;
+		setFile(file);
 		currentDoc = PDDocument.load(file);
 		return currentDoc;
 	}
@@ -310,6 +312,14 @@ public class PDFDocumentProcessor {
 
 	public int getMaxPrimitives() {
 		return maxPrimitives;
+	}
+
+	public void setParserType(ParserType parserType) {
+		this.parserType = parserType;
+	}
+
+	public ParserType getParserType() {
+		return parserType;
 	}
 	
 

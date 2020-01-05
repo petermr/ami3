@@ -15,6 +15,8 @@ import org.apache.pdfbox.pdmodel.encryption.InvalidPasswordException;
 import org.apache.pdfbox.rendering.PDFRenderer;
 import org.apache.pdfbox.rendering.PageDrawer;
 import org.apache.pdfbox.rendering.PageDrawerParameters;
+import org.contentmine.ami.tools.AMIPDFTool;
+import org.contentmine.ami.tools.AMIPDFTool.ParserType;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGText;
 
@@ -30,7 +32,7 @@ public class DocumentParser extends PDFRenderer {
 		LOG.setLevel(Level.DEBUG);
 	}
 
-	private PageParser currentPageParser;
+	private AbstractPageParser currentPageParser;
 	private SVGG currentSVGG;
 	private Map<PageSerial, SVGG> svgPageBySerial;
 	private Map<PageSerial, BufferedImage> renderedImageBySerial;
@@ -63,7 +65,19 @@ public class DocumentParser extends PDFRenderer {
 	 */
     @Override
     protected PageDrawer createPageDrawer(PageDrawerParameters parameters) throws IOException {
-        currentPageParser = new PageParser(parameters, iPage);
+        currentPageParser = null;
+        ParserType parserType = documentProcessor.getParserType();
+        if (parserType == null) {
+        	throw new RuntimeException("must set parserType");
+        } else if (AMIPDFTool.ParserType.zero.equals(parserType)) {
+			currentPageParser = new PageParserZero(parameters, iPage, (AMIDebugParameters) null);
+//        } else if (AMIPDFTool.ParserType.one.equals(parserType)) {
+//			currentPageParser = new PageParserOne(parameters, iPage, (AMIDebugParameters) null);
+        } else if (AMIPDFTool.ParserType.two.equals(parserType)) {
+        	currentPageParser = new PageParserTwo(parameters, iPage, AMIDebugParameters.getDefaultParameters());
+        } else {
+        	throw new RuntimeException(" cannot create parser: "+parserType);
+        }
         currentPageParser.setDocumentProcessor(documentProcessor);
         return currentPageParser;
     }
@@ -104,7 +118,7 @@ public class DocumentParser extends PDFRenderer {
         return super.renderImage(pageIndex, 1);
     }
 
-	public PageParser getPageParser() {
+	public AbstractPageParser getPageParser() {
 		return currentPageParser;
 	}
 

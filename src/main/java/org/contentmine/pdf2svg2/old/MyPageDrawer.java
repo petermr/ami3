@@ -1,4 +1,4 @@
-package org.contentmine.pdf2svg2;
+package org.contentmine.pdf2svg2.old;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
@@ -55,7 +55,7 @@ import org.apache.pdfbox.util.Vector;
  */
 public class MyPageDrawer extends PageDrawer
 {
-    MyPageDrawer(PageDrawerParameters parameters) throws IOException
+    public MyPageDrawer(PageDrawerParameters parameters) throws IOException
     {
         super(parameters);
     }

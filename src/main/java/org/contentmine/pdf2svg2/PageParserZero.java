@@ -5,13 +5,12 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Paint;
 import java.awt.Shape;
+import java.awt.Stroke;
 import java.awt.geom.AffineTransform;
 import java.awt.geom.GeneralPath;
 import java.awt.geom.Point2D;
 import java.awt.geom.Rectangle2D;
-import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -30,12 +29,10 @@ import org.apache.pdfbox.pdmodel.graphics.shading.AxialShadingPaint;
 import org.apache.pdfbox.pdmodel.graphics.state.PDGraphicsState;
 import org.apache.pdfbox.pdmodel.graphics.state.PDTextState;
 import org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation;
-import org.apache.pdfbox.rendering.PageDrawer;
 import org.apache.pdfbox.rendering.PageDrawerParameters;
 import org.apache.pdfbox.util.Matrix;
 import org.apache.pdfbox.util.Vector;
 import org.contentmine.eucl.euclid.Angle;
-import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Array;
 import org.contentmine.eucl.euclid.Real2Range;
@@ -57,13 +54,12 @@ import org.contentmine.graphics.svg.SVGRect;
 import org.contentmine.graphics.svg.SVGText;
 import org.contentmine.graphics.svg.SVGText.RotateText;
 import org.contentmine.graphics.svg.SVGUtil;
-import org.contentmine.graphics.svg.path.ClosePrimitive;
 import org.contentmine.graphics.svg.path.CubicPrimitive;
 import org.contentmine.graphics.svg.path.LinePrimitive;
 import org.contentmine.graphics.svg.path.MovePrimitive;
 import org.contentmine.graphics.svg.path.PathPrimitiveList;
-import org.eclipse.jetty.util.log.Log;
 
+import boofcv.misc.UnsupportedException;
 import nu.xom.Attribute;
 
 /** intercepts graphics primitives sent to Java AWT
@@ -80,8 +76,8 @@ import nu.xom.Attribute;
  * @author pm286
  *
  */
-public class PageParser extends PageDrawer    {
-	private static final Logger LOG = Logger.getLogger(PageParser.class);
+public class PageParserZero extends AbstractPageParser {
+	private static final Logger LOG = Logger.getLogger(PageParserZero.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
@@ -90,7 +86,6 @@ public class PageParser extends PageDrawer    {
 	private static final Graphics2D TEXT = null;
 	private static final String SVG_RHMARGIN = "svg_rhmargin";
 	private static final double YMAX = 800.;
-	public static final String ILLEGAL_CHAR = "?";
 
 	private SVGG svgg;
 	private double yEpsilon = 0.05; // guess
@@ -114,41 +109,27 @@ public class PageParser extends PageDrawer    {
 	private Set<String> clipStringSet;
 	// defs
 	private SVGElement defs1;
-	private Point2D currentPoint;
-	private PathPrimitiveList currentPathPrimitiveList;
+//	private PathPrimitiveList currentPathPrimitiveList;
 
-	private double yMax;
-	private Real2Range mediaBox;
-	private int pageRotation;
 	private int fontPrecision = 2;
 	private Double maxSpaceRatio = 1.2;
-//	private List<BufferedImage> rawImageList;
-	private Map<String, BufferedImage> imageByTitle;
-	private PageSerial pageSerial;
-
 	private Double minBoldWeight = 500.;
-	private BufferedImage renderedImage;
-	
-	// to limit section being analyzed
-	private Real2Range viewBox;
-	// to avoid quadratic or similar performance
-//	private int maxPrimitives;
-	private PDFDocumentProcessor documentProcessor;
+	Point2D currentPoint; // probably obsolete
 
 
-	PageParser(PageDrawerParameters parameters, int iPage) throws IOException        {
-        super(parameters);
+	PageParserZero(PageDrawerParameters parameters, int iPage, AMIDebugParameters debugParams) throws IOException        {
+        super(parameters, debugParams);
         init();
     	this.pageSerial = PageSerial.createFromZeroBasedPage(iPage);
     }
 
-    private void init() {
+    void init() {
+    	super.init();
     	LOG.trace("created parserPageDrawer");
     	svgg = new SVGG();
     	svgg.setFill("none");
     	integerByClipStringMap = new HashMap<String, Integer>();
     	yMax = YMAX; // hopefully overwritten by mediaBox
-    	imageByTitle = new HashMap<String, BufferedImage>();
     	setDefaults();
 
 	}
@@ -189,9 +170,9 @@ public class PageParser extends PageDrawer    {
     /** would be best to set up temporary array for text coordinates and values.
      * also deal with rotated text here
      */
-    protected void showGlyph(Matrix textRenderingMatrix, PDFont font, int code, String unicode,
+    protected void showFontGlyph(Matrix textRenderingMatrix, PDFont font, int code, String unicode,
                              Vector displacementxy) throws IOException    {
-    	super.showGlyph(textRenderingMatrix, font, code, unicode, displacementxy);
+    	super.showFontGlyph(textRenderingMatrix, font, code, unicode, displacementxy);
     	this.codepoint = code;
 
     	Vector v = font.getDisplacement(codepoint);
@@ -252,41 +233,6 @@ public class PageParser extends PageDrawer    {
         saveUpdatedParameters(scales, x, y);
     }
 
-    /** create rightmost extent of text.
-     * add characterWidth (displacement) * fontSize to X-coord
-     * This is invisible "right margin" of text
-     * @param x
-     */
-	private void addRightTextLimitToCurrentText(double currentX, float displacement) {
-		double xLimit = Util.format(currentX + textParameters.getFontSize() * displacement, nPlaces);
-		currentSVGText.addAttribute(new Attribute(SVG_RHMARGIN, String.valueOf(xLimit)));
-	}
-
-	private void saveUpdatedParameters(Real2 scales, Double x, Double y) {
-		currentX = x;
-        currentY = y;
-        currentTextParameters = textParameters;
-		currentScales = scales;
-	}
-
-	private void processNonZeroRotations(Angle rotAngle) {
-		if (rotAngle != null && !rotAngle. isEqualTo(0.0, angleEps)) {
-    		Transform2 t2 = Transform2.getRotationAboutPoint(rotAngle, currentXY);
-    		currentSVGText.applyTransform(t2, RotateText.FALSE);
-    		currentSVGText.format(nPlaces);
-    	}
-	}
-
-	/** use when PDF has no explicit spaces. Messy */
-	private void addSpaceIfSpaceLargerThanRatio(Double x, Double y) {
-		Double deltaX = (currentX == null || x == null) ? null : Util.format(x - currentX, 2);
-    	Double spaceOffsetRatio = (deltaX == null || currentDisplacement == null) ? null : deltaX / currentDisplacement.getX();
-    	if (spaceOffsetRatio != null && spaceOffsetRatio > maxSpaceRatio ) {
-        	currentSVGText.appendText(" ");
-        	currentSVGText.appendX(currentX + currentDisplacement.getX());
-        	currentSVGText.setY(y);
-    	}
-	}
     
     @Override
     public void beginText() throws IOException {
@@ -297,78 +243,6 @@ public class PageParser extends PageDrawer    {
     public void endText() throws IOException {
     	super.endText();
     }
-
-	private double createY(double y) {
-		return yMax - y;
-	}
-
-	private boolean isScaleChanged(Real2 scales) {
-		if (currentScales == null || scales == null) {
-			return true;
-		}
-		return (!currentScales.isEqualTo(scales, scalesEpsilon));
-	}
-
-	private boolean isYChanged(Double y) {
-		if (currentY == null || y == null) {
-			return true;
-		}
-		double delta = Math.abs(currentY - y);
-		return delta > yEpsilon;
-	}
-
-	private void createAndAddEmptyCurrentSVGText() {
-		/* from an email
-		 * I have tried the DrawPrintTextLocations.java
-> example on 3 PDFs, and I see that the best way to get the display font 
-> size for letters in any PDF is by using “text.getXScale()”. Am I right? ... Yes
-
-PMR have not yet looked into this.
-		 */
-		
-		drawRHMargin();
-		currentSVGText = new SVGText();
-		currentSVGText.setFontFamily(textParameters.getFontFamily());
-		currentSVGText.setFontStyle(
-				(textParameters.isItalic() ? FontStyle.ITALIC.toString() : FontStyle.NORMAL.toString()));
-		currentSVGText.setFontWeight(textParameters.isForceBold() ? FontWeight.BOLD : FontWeight.NORMAL);
-		if (!currentSVGText.isBold()) {
-			currentSVGText.addBoldFromFontWeight(textParameters.getFontWeight(), minBoldWeight);
-		}
-		
-		Real2 scales = textParameters.getScales().format(3);
-		double yScale = scales.getY();
-		
-		currentSVGText.setFontSize(yScale);
-		RealArray xArray = new RealArray();
-		currentSVGText.setX(xArray);
-		addCurrentTextAttributes(currentSVGText);
-		svgg.appendChild(currentSVGText);
-	}
-
-	private void drawRHMargin() {
-		if (currentSVGText != null) {
-			Double yLast = currentSVGText.getY();
-			if (yLast == null) {
-				LOG.trace("curr: "+currentSVGText.toXML().toString());
-			}
-			Double xLast = Double.valueOf(currentSVGText.getAttributeValue(SVG_RHMARGIN));
-			if (yLast != null && xLast != null) {
-//				drawMargin(yLast, xLast, "red");
-				RealArray xArray = currentSVGText.getXArray();
-//				drawMargin(yLast, xArray.getLast(), "blue");
-			}
-		}
-	}
-
-	private void drawMargin(Double yLast, Double xLast, String stroke) {
-		Real2 l0 = new Real2(xLast, yLast);
-		Real2 l1 = new Real2(xLast, yLast - currentSVGText.getCurrentFontSize());
-		SVGLine line = new SVGLine(l0, l1);
-		line.setWidth(0.5);
-		line.setStroke(stroke);
-		svgg.appendChild(line);
-	}
 
 	/**
      * Filled path bounding boxes.
@@ -426,8 +300,8 @@ PMR have not yet looked into this.
     	super.moveTo(x, y);
     	MovePrimitive mp = new MovePrimitive(new Real2(x, createY((double)y)));
 //    	LOG.debug(" MOVE "+mp);
-    	if (currentPathPrimitiveList == null) {
-    		currentPathPrimitiveList = new PathPrimitiveList();
+    	if (pathPrimitiveList == null) {
+    		pathPrimitiveList = new PathPrimitiveList();
     	}
     	checkNotNullAndAdd(mp);
     }
@@ -457,55 +331,51 @@ PMR have not yet looked into this.
     }
 
     @Override
-    public void closePath()    {
-    	super.closePath();
-    	ClosePrimitive cp = new ClosePrimitive();
-//    	System.out.print(" CLOSE ");
-    	checkNotNullAndAdd(cp);
-    }
-
-	private void checkNotNullAndAdd(SVGPathPrimitive p) {
-		if (currentPathPrimitiveList == null) {
-    		LOG.warn("cannot close path on non-existent primitiveList");
-    	} else {
-    		Real2Range bb = p.getBoundingBox();
-    			
-    		if (viewBox.includes(bb) ) {
-        		if (currentPathPrimitiveList.size() < documentProcessor.getMaxPrimitives()) {
-//	    			LOG.debug("PP "+currentPathPrimitiveList.size());
-	    			currentPathPrimitiveList.add(p);
-        		}
-    		} else {
-//    			System.err.print(p.getTag() + "?" + viewBox +"/"+ (bb == null ? "x" : bb.format(3)));
-//    			LOG.debug("omitted primitive out of range");
-    		}
-    	}
-	}
-
-    @Override
     public void endPath()    {
     	super.endPath();
-    	if (currentPathPrimitiveList == null) {
+    	if (pathPrimitiveList == null) {
     		LOG.trace("WARN: cannot close path on non-existent primitiveList");
     	}  else {
-    		currentSvgPath = new SVGPath(currentPathPrimitiveList);
+    		currentSvgPath = new SVGPath(pathPrimitiveList);
     		addCurrentPathAttributes(currentSvgPath);
     		// fixes bug - probably shouldn't fill at all //BUG
     		currentSvgPath.setFill(GraphicsElement.NONE);
     		
-//    		getGraphicsState().getLineDashPattern()
-//    		if (graphicsState.getDashPattern() != null) {
-//    			setDashArray(currentSvgPath);
-//    		}
-//    		currentSvgPath.setStrokeWidth((double)graphicsState.getLineWidth());
-
     		svgg.appendChild(currentSvgPath);
-//        	System.out.print(" END ");
         }
-    	currentPathPrimitiveList = null;
+    	pathPrimitiveList = null;
 		currentSvgPath = null;
 		
     }
+
+
+    
+    @Override
+    public void drawImage(PDImage pdImage) throws IOException    {
+    	super.drawImage(pdImage);
+    	extractImage(pdImage);
+    }
+
+	/**
+     * Draws the page to the requested context.
+     * 
+     * @param g The graphics context to draw onto.
+     * @param pageSize The size of the page to draw.
+     * @throws IOException If there is an IO error while drawing the page.
+     */
+    @Override
+    public void drawPage(Graphics g, PDRectangle pageSize) throws IOException
+    {
+    	super.drawPage(g, pageSize);
+    }
+
+    @Override
+    public void appendRectangle(Point2D p0, Point2D p1, Point2D p2, Point2D p3)
+    {
+    	super.appendRectangle(p0, p1, p2, p3);
+    }
+
+    // ============ UTILITIES ============
 
 	private void addCurrentPathAttributes(SVGElement element) {
 		element.setFill(getAMIFill());
@@ -585,223 +455,132 @@ PMR have not yet looked into this.
 		return fontName;
 	}
 
-
-    
-    @Override
-    public void drawImage(PDImage pdImage) throws IOException    {
-    	super.drawImage(pdImage);
-    	if (pageSerial == null) {
-    		throw new RuntimeException("null pageSerial");
+    void checkNotNullAndAdd(SVGPathPrimitive p) {
+		if (pathPrimitiveList == null) {
+    		LOG.warn("cannot close path on non-existent primitiveList");
+    	} else {
+    		Real2Range bb = p.getBoundingBox();
+    			
+    		if (viewBox.includes(bb) ) {
+        		if (ensurePathPrimitiveList().size() < documentProcessor.getMaxPrimitives()) {
+	    			pathPrimitiveList.add(p);
+        		}
+    		} else {
+//    			System.err.print(p.getTag() + "?" + viewBox +"/"+ (bb == null ? "x" : bb.format(3)));
+//    			LOG.debug("omitted primitive out of range");
+    		}
     	}
-		PageSerial imageSerial = PageSerial.createFromZeroBasedPages(
-    		pageSerial.getZeroBasedPage(), imageByTitle.size());
-    	BufferedImage bufferedImage = pdImage.getImage();
-    	// FIXME should write image to disk here
-    	System.out.print("["+"."+imageByTitle.size()+"]");
-    	
-        SVGRect rect = getBoundingRect();
-        rect.format(3);
-        String serialTitle = pageSerial.getOneBasedSerialString();
-		rect.setTitle(serialTitle);
-        svgg.appendChild(rect);
-        Int2Range box = new Int2Range(rect.getBoundingBox());
-        int width = (int)(double)rect.getWidth();
-        int height = (int)(double)rect.getHeight();
-        String oneBasedSerialString = imageSerial.getOneBasedSerialString();
-        String title = createTitle(box, oneBasedSerialString);
-    	imageByTitle.put(title,bufferedImage);
-        SVGText text = new SVGText(rect.getBoundingBox().getLLURCorners()[0], title);
-        text.addSVGClassName("image");
-		text.setId("image."+oneBasedSerialString);
-		text.addAttribute(new Attribute("width", ""+width));
-		text.addAttribute(new Attribute("height", ""+height));
-        svgg.appendChild(text);
-
-        /**
-        if (!pdImage.getInterpolate())
-        {
-            boolean isScaledUp = pdImage.getWidth() < Math.round(at.getScaleX()) ||
-                                 pdImage.getHeight() < Math.round(at.getScaleY());
-
-            // if the image is scaled down, we use smooth interpolation, eg PDFBOX-2364
-            // only when scaled up do we use nearest neighbour, eg PDFBOX-2302 / mori-cvpr01.pdf
-            // stencils are excluded from this rule (see survey.pdf)
-            if (isScaledUp || pdImage.isStencil())
-            {
-                graphics.setRenderingHint(RenderingHints.KEY_INTERPOLATION,
-                        RenderingHints.VALUE_INTERPOLATION_NEAREST_NEIGHBOR);
-            }
-        }
-        */
-
-        /**
-        if (pdImage.isStencil())
-        {
-            if (getGraphicsState().getNonStrokingColor().getColorSpace() instanceof PDPattern)
-            {
-                // The earlier code for stencils (see "else") doesn't work with patterns because the
-                // CTM is not taken into consideration.
-                // this code is based on the fact that it is easily possible to draw the mask and 
-                // the paint at the correct place with the existing code, but not in one step.
-                // Thus what we do is to draw both in separate images, then combine the two and draw
-                // the result. 
-                // Note that the device scale is not used. In theory, some patterns can get better
-                // at higher resolutions but the stencil would become more and more "blocky".
-                // If anybody wants to do this, have a look at the code in showTransparencyGroup().
-
-                // draw the paint
-                Paint paint = getNonStrokingPaint();
-                Rectangle2D unitRect = new Rectangle2D.Float(0, 0, 1, 1);
-                Rectangle2D bounds = at.createTransformedShape(unitRect).getBounds2D();
-                BufferedImage renderedPaint = 
-                        new BufferedImage((int) Math.ceil(bounds.getWidth()), 
-                                          (int) Math.ceil(bounds.getHeight()), 
-                                           BufferedImage.TYPE_INT_ARGB);
-                Graphics2D g = (Graphics2D) renderedPaint.getGraphics();
-                g.translate(-bounds.getMinX(), -bounds.getMinY());
-                g.setPaint(paint);
-                g.fill(bounds);
-                g.dispose();
-
-                // draw the mask
-                BufferedImage mask = pdImage.getImage();
-                BufferedImage renderedMask = new BufferedImage((int) Math.ceil(bounds.getWidth()), 
-                                                               (int) Math.ceil(bounds.getHeight()), 
-                                                               BufferedImage.TYPE_INT_RGB);
-                g = (Graphics2D) renderedMask.getGraphics();
-                g.translate(-bounds.getMinX(), -bounds.getMinY());
-                AffineTransform imageTransform = new AffineTransform(at);
-                imageTransform.scale(1.0 / mask.getWidth(), -1.0 / mask.getHeight());
-                imageTransform.translate(0, -mask.getHeight());
-                g.drawImage(mask, imageTransform, null);
-                g.dispose();
-
-                // apply the mask
-                final int[] transparent = new int[4];
-                int[] alphaPixel = null;
-                WritableRaster raster = renderedPaint.getRaster();
-                WritableRaster alpha = renderedMask.getRaster();
-                int h = renderedMask.getRaster().getHeight();
-                int w = renderedMask.getRaster().getWidth();
-                for (int y = 0; y < h; y++)
-                {
-                    for (int x = 0; x < w; x++)
-                    {
-                        alphaPixel = alpha.getPixel(x, y, alphaPixel);
-                        if (alphaPixel[0] == 255)
-                        {
-                            raster.setPixel(x, y, transparent);
-                        }
-                    }
-                }
-                
-                // draw the image
-                setClip();
-                graphics.setComposite(getGraphicsState().getNonStrokingJavaComposite());
-                graphics.drawImage(renderedPaint, 
-                        AffineTransform.getTranslateInstance(bounds.getMinX(), bounds.getMinY()), 
-                        null);
-            }
-            else
-            {
-                // fill the image with stenciled paint
-                BufferedImage image = pdImage.getStencilImage(getNonStrokingPaint());
-
-                // draw the image
-                drawBufferedImage(image, at);
-            }
-        }
-        else
-        {
-            if (subsamplingAllowed)
-            {
-                int subsampling = getSubsampling(pdImage, at);
-                // draw the subsampled image
-                drawBufferedImage(pdImage.getImage(null, subsampling), at);
-            }
-            else
-            {
-                // subsampling not allowed, draw the image
-                drawBufferedImage(pdImage.getImage(), at);
-            }
-        }
-
-        if (!pdImage.getInterpolate())
-        {
-            // JDK 1.7 has a bug where rendering hints are reset by the above call to
-            // the setRenderingHint method, so we re-set all hints, see PDFBOX-2302
-            setRenderingHints();
-        }
-        
-        */
-    }
-
-	private String createTitle(Int2Range box, String oneBasedSerialString) {
-		return "image."+oneBasedSerialString+"."+box.getXRange().getMin()+"_"+box.getXRange().getMax()+"."+box.getYRange().getMin()+"_"+box.getYRange().getMax();
 	}
 
-	private SVGRect getBoundingRect() {
-		Matrix ctm = getGraphicsState().getCurrentTransformationMatrix();
-        AffineTransform at = ctm.createAffineTransform();
-        Rectangle2D unitRect = new Rectangle2D.Float(0, 0, 1, 1);
-        Rectangle2D bounds = at.createTransformedShape(unitRect).getBounds2D();
-		Real2Range box = new Real2Range(
-        		new RealRange(bounds.getMinX(), bounds.getMaxX()),
-        		new RealRange(yMax - bounds.getMaxY(), yMax - bounds.getMinY())
-        		).format(3);
-        SVGRect rect = SVGRect.createFromReal2Range(box);
-        rect.setStroke("blue").setStrokeWidth(0.3);
-		return rect;
+
+	private double createY(double y) {
+		return yMax - y;
 	}
 
-    /**
-     * Draws the page to the requested context.
-     * 
-     * @param g The graphics context to draw onto.
-     * @param pageSize The size of the page to draw.
-     * @throws IOException If there is an IO error while drawing the page.
+	private boolean isScaleChanged(Real2 scales) {
+		if (currentScales == null || scales == null) {
+			return true;
+		}
+		return (!currentScales.isEqualTo(scales, scalesEpsilon));
+	}
+
+	private boolean isYChanged(Double y) {
+		if (currentY == null || y == null) {
+			return true;
+		}
+		double delta = Math.abs(currentY - y);
+		return delta > yEpsilon;
+	}
+
+	private void createAndAddEmptyCurrentSVGText() {
+		/* from an email
+		 * I have tried the DrawPrintTextLocations.java
+> example on 3 PDFs, and I see that the best way to get the display font 
+> size for letters in any PDF is by using “text.getXScale()”. Am I right? ... Yes
+
+PMR have not yet looked into this.
+		 */
+		
+		drawRHMargin();
+		currentSVGText = new SVGText();
+		currentSVGText.setFontFamily(textParameters.getFontFamily());
+		currentSVGText.setFontStyle(
+				(textParameters.isItalic() ? FontStyle.ITALIC.toString() : FontStyle.NORMAL.toString()));
+		currentSVGText.setFontWeight(textParameters.isForceBold() ? FontWeight.BOLD : FontWeight.NORMAL);
+		if (!currentSVGText.isBold()) {
+			currentSVGText.addBoldFromFontWeight(textParameters.getFontWeight(), minBoldWeight);
+		}
+		
+		Real2 scales = textParameters.getScales().format(3);
+		double yScale = scales.getY();
+		
+		currentSVGText.setFontSize(yScale);
+		RealArray xArray = new RealArray();
+		currentSVGText.setX(xArray);
+		addCurrentTextAttributes(currentSVGText);
+		svgg.appendChild(currentSVGText);
+	}
+
+	private void drawRHMargin() {
+		if (currentSVGText != null) {
+			Double yLast = currentSVGText.getY();
+			if (yLast == null) {
+				LOG.trace("curr: "+currentSVGText.toXML().toString());
+			}
+			Double xLast = Double.valueOf(currentSVGText.getAttributeValue(SVG_RHMARGIN));
+			if (yLast != null && xLast != null) {
+//				drawMargin(yLast, xLast, "red");
+				RealArray xArray = currentSVGText.getXArray();
+//				drawMargin(yLast, xArray.getLast(), "blue");
+			}
+		}
+	}
+
+	private void drawMargin(Double yLast, Double xLast, String stroke) {
+		Real2 l0 = new Real2(xLast, yLast);
+		Real2 l1 = new Real2(xLast, yLast - currentSVGText.getCurrentFontSize());
+		SVGLine line = new SVGLine(l0, l1);
+		line.setWidth(0.5);
+		line.setStroke(stroke);
+		svgg.appendChild(line);
+	}
+
+
+    /** create rightmost extent of text.
+     * add characterWidth (displacement) * fontSize to X-coord
+     * This is invisible "right margin" of text
+     * @param x
      */
-    @Override
-    public void drawPage(Graphics g, PDRectangle pageSize) throws IOException
-    {
-    	super.drawPage(g, pageSize);
-    	mediaBox = new Real2Range(
-    			new RealRange(pageSize.getLowerLeftX(), pageSize.getUpperRightX()),
-    			new RealRange(pageSize.getLowerLeftY(), pageSize.getUpperRightY())
-    	);
-    	yMax = pageSize.getUpperRightY();
-    	pageRotation = getPage().getRotation() % 360;
-    	if (pageRotation != 0) {
-    		LOG.warn("Rotated page: "+pageRotation);
+	private void addRightTextLimitToCurrentText(double currentX, float displacement) {
+		double xLimit = Util.format(currentX + textParameters.getFontSize() * displacement, nPlaces);
+		currentSVGText.addAttribute(new Attribute(SVG_RHMARGIN, String.valueOf(xLimit)));
+	}
+
+	private void saveUpdatedParameters(Real2 scales, Double x, Double y) {
+		currentX = x;
+        currentY = y;
+        currentTextParameters = textParameters;
+		currentScales = scales;
+	}
+
+	private void processNonZeroRotations(Angle rotAngle) {
+		if (rotAngle != null && !rotAngle. isEqualTo(0.0, angleEps)) {
+    		Transform2 t2 = Transform2.getRotationAboutPoint(rotAngle, currentXY);
+    		currentSVGText.applyTransform(t2, RotateText.FALSE);
+    		currentSVGText.format(nPlaces);
     	}
-    }
+	}
 
-    @Override
-    public void appendRectangle(Point2D p0, Point2D p1, Point2D p2, Point2D p3)
-    {
-    	super.appendRectangle(p0, p1, p2, p3);
-    	// coordinates reversed in Y
-    	Real2 p00 = new Real2(p0.getX(), createY(p2.getY()));
-    	Real2 p22 = new Real2(p2.getX(), createY(p0.getY()));
-    	SVGRect rect = new SVGRect(p00, p22);
-    	rect.format(3);
-    	addCurrentPathAttributes(rect);
-    	// try skipping this - it seems to give unnecessary rects
-//    	svgg.appendChild(rect);
-//    	System.out.print(" RECT "+rect);
-//        // to ensure that the path is created in the right direction, we have to create
-//        // it by combining single lines instead of creating a simple rectangle
-//        linePath.moveTo((float) p0.getX(), (float) p0.getY());
-//        linePath.lineTo((float) p1.getX(), (float) p1.getY());
-//        linePath.lineTo((float) p2.getX(), (float) p2.getY());
-//        linePath.lineTo((float) p3.getX(), (float) p3.getY());
-//
-//        // close the subpath instead of adding the last line so that a possible set line
-//        // cap style isn't taken into account at the "beginning" of the rectangle
-//        linePath.closePath();
-    }
-
-    // ============ UTILITIES ============
+	/** use when PDF has no explicit spaces. Messy */
+	private void addSpaceIfSpaceLargerThanRatio(Double x, Double y) {
+		Double deltaX = (currentX == null || x == null) ? null : Util.format(x - currentX, 2);
+    	Double spaceOffsetRatio = (deltaX == null || currentDisplacement == null) ? null : deltaX / currentDisplacement.getX();
+    	if (spaceOffsetRatio != null && spaceOffsetRatio > maxSpaceRatio ) {
+        	currentSVGText.appendText(" ");
+        	currentSVGText.appendX(currentX + currentDisplacement.getX());
+        	currentSVGText.setY(y);
+    	}
+	}
 
 
 	private String getAMIFill() {
@@ -859,10 +638,6 @@ PMR have not yet looked into this.
 			integerByClipStringMap.put(clipString, integerByClipStringMap.size()+1); // count from 1
 		}
 		return clipString;
-	}
-    
-	public SVGG getSVGG() {
-		return svgg;
 	}
     
 	private void setDashArray(SVGElement svgElement) {
@@ -958,45 +733,9 @@ xmlns="http://www.w3.org/2000/svg">
 		}
 	}
 
-	public Map<String, BufferedImage> getOrCreateRawImageMap() {
-		if (imageByTitle == null) {
-			imageByTitle = new HashMap<String, BufferedImage>();
-		}
-		return imageByTitle;
-	}
-
-	/** sets the serial number of the page.
-	 * normally the serial of the pages as iterated through the PDDocument.
-	 * 
-	 * @param iPage
-	 */
-	public void setPageSerial(PageSerial pageSerial) {
-		if (pageSerial == null) {
-			throw new RuntimeException("null pageSerial");
-		}
-		this.pageSerial = pageSerial;
-	}
-
-	public void setRenderedImage(BufferedImage renderImage) {
-		this.renderedImage = renderImage;
-	}
-	
-	public BufferedImage getRenderedImage() {
-		return renderedImage;
-	}
-
-	public Real2Range getViewBox() {
-		return viewBox;
-	}
-
-	public void setViewBox(Real2Range viewBox) {
-		this.viewBox = viewBox;
-	}
-
-	public void setDocumentProcessor(PDFDocumentProcessor documentProcessor) {
-		this.documentProcessor = documentProcessor;
-	}
-
+	public Set<PDFont> getFontSet() {throw new UnsupportedException("no fontSet");}
+	public Set<Stroke> getStrokeSet() {throw new UnsupportedException("no strokeSet");}
+	public Set<Color> getColorSet()  {throw new UnsupportedException("no ColorSet");}
 
 
 	

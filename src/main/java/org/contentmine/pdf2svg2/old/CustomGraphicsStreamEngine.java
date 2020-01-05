@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.contentmine.pdf2svg2;
+package org.contentmine.pdf2svg2.old;
 
 import java.awt.geom.Point2D;
 import java.io.File;

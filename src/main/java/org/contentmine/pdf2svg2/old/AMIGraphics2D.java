@@ -1,4 +1,4 @@
-package org.contentmine.pdf2svg2;
+package org.contentmine.pdf2svg2.old;
 
 import java.awt.Color;
 import java.awt.Composite;
@@ -10,6 +10,8 @@ import java.awt.geom.AffineTransform;
 import java.awt.geom.GeneralPath;
 import java.awt.geom.Point2D;
 import java.awt.geom.Rectangle2D;
+
+import org.contentmine.pdf2svg2.PageParserOne;
 
 public class AMIGraphics2D {
 
@@ -191,7 +193,7 @@ return true;
 	}
 
 	private void appendNonNull(StringBuilder sb, String title, Color col) {
-		if (col != null) sb.append(title+": "+AMIPageDrawer.toRGB(col)+"\n");
+		if (col != null) sb.append(title+": "+PageParserOne.toRGB(col)+"\n");
 	}
 
 	private void appendNonNull(StringBuilder sb, String title, Object obj) {

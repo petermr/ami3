@@ -11,12 +11,12 @@ import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.rendering.PDFRenderer;
 import org.contentmine.ami.tools.AbstractAMITest;
-import org.contentmine.pdf2svg2.PageDrawerRunner.DrawerType;
+import org.contentmine.pdf2svg2.PageParserRunner.ParserDebug;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class CustomPageDrawerTest extends AbstractAMITest {
-	public static final Logger LOG = Logger.getLogger(CustomPageDrawerTest.class);
+public class PageParserTest extends AbstractAMITest {
+	public static final Logger LOG = Logger.getLogger(PageParserTest.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
@@ -28,9 +28,9 @@ public class CustomPageDrawerTest extends AbstractAMITest {
       Assert.assertTrue(file.exists());
       
 //      DrawerType drawerType = DrawerType.ORIGINAL;
-      DrawerType drawerType = DrawerType.AMI_MEDIUM;
+      ParserDebug drawerType = ParserDebug.AMI_MEDIUM;
         int pageSerial = 0;
-      runPageDrawer(root, file, pageSerial, drawerType, true);
+      runPageParser(root, file, pageSerial, drawerType, true);
 	}
 
 	@Test
@@ -41,7 +41,7 @@ public class CustomPageDrawerTest extends AbstractAMITest {
       int pageSerial = 0; // title
 //    pageSerial = 1; // plots
       pageSerial = -1; // analyze all
-	  runPageDrawer(root, pageSerial, DrawerType.AMI_FULL);
+	  runPageParser(root, pageSerial, ParserDebug.AMI_FULL);
 	}
 
 	@Test
@@ -49,11 +49,11 @@ public class CustomPageDrawerTest extends AbstractAMITest {
 	public void testStrokeAndFillColours() throws IOException {
 	  String root = "circles"; // 
       int pageSerial = 0; // title
-	  runPageDrawer(root, pageSerial, DrawerType.AMI_FULL);
+	  runPageParser(root, pageSerial, ParserDebug.AMI_FULL);
 //	  if (true) return;
 	  root = "primitives"; // 
       pageSerial = 0; // title
-	  runPageDrawer(root, pageSerial, DrawerType.AMI_FULL);
+	  runPageParser(root, pageSerial, ParserDebug.AMI_FULL);
 	}
 
 	@Test
@@ -62,13 +62,13 @@ public class CustomPageDrawerTest extends AbstractAMITest {
       int pageSerial = 0; // title
 //    pageSerial = 1; // plots
       pageSerial = -1; // analyze all
-	  runPageDrawer(root, pageSerial, DrawerType.AMI_BRIEF);
+	  runPageParser(root, pageSerial, ParserDebug.AMI_BRIEF);
 	}
 
-	private void runPageDrawer(String root, int pageSerial, DrawerType drawerType) throws IOException {
+	private void runPageParser(String root, int pageSerial, ParserDebug parserDebug) throws IOException {
 		File file = new File(PDF2SVG2, root + ".pdf");
 		  Assert.assertTrue("file should exist: "+file, file.exists());
-		  runPageDrawer(root, file, pageSerial, drawerType, false);
+		  runPageParser(root, file, pageSerial, parserDebug, false);
 	}
 
 	/**
@@ -80,23 +80,10 @@ public class CustomPageDrawerTest extends AbstractAMITest {
 	 * @param debug
 	 * @throws IOException
 	 */
-	private void runPageDrawer(String root, File inputPdf, int pageSerial, DrawerType drawerType, boolean debug) throws IOException {
-		PageDrawerRunner pageDrawerRunner = new PageDrawerRunner(inputPdf, drawerType, debug);
+	private void runPageParser(String root, File inputPdf, int pageIndex, ParserDebug parserDebug, boolean debug) throws IOException {
+		PageParserRunner pageParserRunner = new PageParserRunner(inputPdf, parserDebug, debug);
 		boolean tidySVG = true;
-//		tidySVG = false;
-		pageDrawerRunner.setTidySVG(tidySVG);
-		if (pageSerial < 0) {
-			while(true) {
-				try {
-					pageDrawerRunner.run(root, ++pageSerial);
-				} catch (IllegalArgumentException e) {
-					System.out.println("quit");
-					break;
-				}
-			}
-		} else {
-			pageDrawerRunner.run(root, pageSerial);
-		}
-//		doc.close();
+		pageParserRunner.setTidySVG(true);
+		pageParserRunner.runPages(root, pageIndex);
 	}
 }

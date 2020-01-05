@@ -1,15 +1,18 @@
 package org.contentmine.ami.tools;
 
 import java.io.File;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.cproject.files.CProject;
-import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.DebugPrint;
-import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.pdf2svg2.PDFDocumentProcessor;
+import org.contentmine.pdf2svg2.PageParserRunner;
+import org.contentmine.pdf2svg2.PageParserRunner.ParserDebug;
 
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
@@ -29,6 +32,19 @@ public class AMIPDFTool extends AbstractAMITool {
 		LOG.setLevel(Level.DEBUG);
 	}
 	
+	public enum ParserType {
+		early,
+		ami,
+		zero,
+		one,
+		two;
+	}
+	
+	public enum PDFTidySVG {
+		concat, // concatenate characters (maybe in beginText...endText)
+		spaces  // add spaces using character widths
+	}
+	
 	public AMIPDFTool() {
 	}
 	
@@ -36,6 +52,21 @@ public class AMIPDFTool extends AbstractAMITool {
     	this.cProject = cProject;
 	}
 
+    @Option(names = {"--debug"}, 
+    		arity="0",
+    		paramLabel="DEBUG",
+   		    description = "debug level (experimental, AMI_ZERO, AMI_ONE, AMI_TWO)"
+    		)
+    private ParserDebug parserDebug = ParserDebug.AMI_BRIEF;
+
+    @Option(names = {"--imagedir"}, 
+    		arity="0..1",
+    		paramLabel="IMAGE_DIR",
+   		    description = "Directory for Image files created from PDF. Do not use/change this unless you are testing "
+   		    		+ "or developing AMI as other components rely on this."
+    		)
+    private String pdfImagesDirname = "pdfimages/";
+    
 	@Option(names = {"--maxpages"}, 
     		arity="0..1",
    		    description = "maximum PDF pages. If less than actual pages, will repeat untill all pages processed. "
@@ -57,9 +88,24 @@ public class AMIPDFTool extends AbstractAMITool {
      */
     @Option(names = {"--pages"},
     		arity = "1..*",
-            description = "pages to extract")
+            description = "pages to extract; if omitted processes all")
     private List<Integer> pages = null;
 
+    @Option(names = {"--parser"}, 
+    		arity="1",
+   		    description = "Parser type (early or ami). early is being phased out."
+    		)
+    private ParserType parserType = 
+//        	ParserType.ami
+        	ParserType.two
+    	;
+    
+    @Option(names = {"--pdfimages"}, 
+    		arity="0..1",
+   		    description = "output PDFImages pages. Default true "
+    		)
+    private boolean outputPdfImages = true;
+    
     @Option(names = {"--svgdir"}, 
     		arity="0..1",
    		    description = "Directory for SVG files created from PDF. Do not use/change this unless you are testing "
@@ -73,19 +119,11 @@ public class AMIPDFTool extends AbstractAMITool {
     		)
     private boolean outputSVG = true;
     
-    @Option(names = {"--imagedir"}, 
+    @Option(names = {"--tidysvg"}, 
     		arity="0..1",
-    		paramLabel="IMAGE_DIR",
-   		    description = "Directory for Image files created from PDF. Do not use/change this unless you are testing "
-   		    		+ "or developing AMI as other components rely on this."
+   		    description = "Tidy SVG (currently text, default concat spaces"
     		)
-    private String pdfImagesDirname = "pdfimages/";
-    
-    @Option(names = {"--pdfimages"}, 
-    		arity="0..1",
-   		    description = "output PDFImages pages. Default true "
-    		)
-    private boolean outputPdfImages = true;
+    private List<PDFTidySVG> tidySVGList = Arrays.asList(new PDFTidySVG[]{PDFTidySVG.concat, PDFTidySVG.spaces});
     
     public static void main(String[] args) throws Exception {
     	AMIPDFTool amiProcessorPDF = new AMIPDFTool();
@@ -95,6 +133,11 @@ public class AMIPDFTool extends AbstractAMITool {
 	@Override
 	protected void parseSpecifics() {
 		printDebug();
+		if (pages == null) {
+			pages = new ArrayList<Integer>();
+			pages.add(-1);
+		}
+
 	}
 
 	@Override
@@ -111,22 +154,48 @@ public class AMIPDFTool extends AbstractAMITool {
 		System.out.println("outputSVG           "+outputSVG);
 		System.out.println("imgDirectoryName    "+pdfImagesDirname);
 		System.out.println("outputPDFImages     "+outputPdfImages);
+		System.out.println("parserDebug         "+parserDebug);
 		return;
 	}
 
 	protected void processTree() {
 		System.out.println("cTree: "+cTree.getName());
 		File pdfImagesDir = cTree.getExistingPDFImagesDir();
-        runPDF();
+//		if (ParserType.early.equals(parserType)) {
+		if (ParserDebug.AMI_ZERO.equals(parserDebug)) {
+			docProcRunPDF();
+		} else if (ParserDebug.AMI_TWO.equals(parserDebug)) {
+			docProcRunPDF();
+//			amiPDF();
+		} else if (ParserType.ami.equals(parserType)) {
+			amiPDF();
+		}
 	}
 
+	private void amiPDF() {
+		File inputPdf = cTree.getExistingFulltextPDF();
+		if (inputPdf == null || !inputPdf.exists()) {
+			LOG.warn("file does not exist: "+inputPdf);
+		} else {
+			boolean debug = false; // change 
+			PageParserRunner pageParserRunner = new PageParserRunner(inputPdf, parserDebug, debug);
+			pageParserRunner.setTidySVGList(tidySVGList);
+			for (int pageIndex : pages) {
+				pageParserRunner.runPages(cTree.getName(), pageIndex);
+			}
+		}
+	}
 
-    public void runPDF() {
+	/** early approach from PDFBox1
+	 * now uses PDFBox2 but soon to be obsoleted
+	 */
+    public void docProcRunPDF() {
 		PDFDocumentProcessor pdfDocumentProcessor = cTree.getOrCreatePDFDocumentProcessor();
 		pdfDocumentProcessor.setOutputSVG(outputSVG);
 		pdfDocumentProcessor.setOutputPDFImages(outputPdfImages);
 		pdfDocumentProcessor.setMaxPages(maxpages);
 		pdfDocumentProcessor.setMaxPrimitives(maxprimitives);
+		pdfDocumentProcessor.setParserType(parserType);
         cTree.setPDFDocumentProcessor(pdfDocumentProcessor);
         cTree.setForceMake(forceMake);
 		cTree.processPDFTree();
