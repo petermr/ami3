@@ -405,7 +405,8 @@ public class SVGElement extends GraphicsElement {
 			// is object rotated?
 			Angle angle = transform2.getAngleOfRotation();
 			if (angle.getRadian() > Math.PI/4.) {
-				this.addAttribute(new Attribute(ROTATE, YPLUS));
+				String yplus2 = YPLUS;
+				this.addAttribute(new Attribute(ROTATE, yplus2));
 			}
 			if (angle.getRadian() < -Math.PI/4.) {
 				this.addAttribute(new Attribute(ROTATE, YMINUS));

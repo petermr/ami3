@@ -166,6 +166,7 @@ public class AxisTickBox extends AxialBox {
 	void extractIntersectingLines(List<SVGLine> horizontalLines, List<SVGLine> verticalLines) {
 		this.intersectingHorizontalLines = extractIntersectingLines(new SVGLineList(horizontalLines));
 		this.intersectingVerticalLines = extractIntersectingLines(new SVGLineList(verticalLines));
+		LOG.debug("intersectingLines: "+intersectingHorizontalLines.size()+"/"+intersectingVerticalLines.size()+" || "+intersectingHorizontalLines+" / "+intersectingVerticalLines);
 	}
 
 	/** get all lines intersecting with this.boundingBox.

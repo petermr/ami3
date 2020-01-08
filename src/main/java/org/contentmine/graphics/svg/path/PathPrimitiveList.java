@@ -22,6 +22,8 @@ import org.contentmine.graphics.svg.SVGText;
 
 /** 
  * Container and manager for primitives from an SVGPath.
+ * being developed to manage compression for dense paths (NYI)
+ * 
  * 
  * @author pm286
  */

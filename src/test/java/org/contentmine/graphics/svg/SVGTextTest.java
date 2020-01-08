@@ -510,4 +510,32 @@ public class SVGTextTest {
 		
 	}
 	
+	@Test
+	public void testAddSpaces() {
+		String textXML = ""
+				+ "<text y='124.844' "
+				+ "    x='183.896,187.28,192.452,199.789,206.913,211.424,215.377,219.33,224.411,232.317,239.431,"
+				+ "242.256,247.336,251.848,257.275,260.659,265.171,269.682,272.507,277.588,280.972,285.484'"
+				+ " svgx:width='0.33,0.25,0.72,0.44,0.44,0.39,0.39,0.5,0.78,0.44,0.28,0.5,0.44,0.28,0.33,0.44,0.44,"
+				+ "0.28,0.5,0.33,0.44,0.39'"
+				+ " style='fill:rgb(0,0,0);font-family:NimbusRomNo9L-Regu;font-size:9.96px;stroke:none;'"
+				+ " xmlns:svgx='http://www.xml-cml.org/schema/svgx'"
+				+ ">),weassumethatfeatures</text>"
+			 ;
+		SVGText text = (SVGText) SVGElement.readAndCreateSVG(XMLUtil.parseXML(textXML));
+		text.addSpaces();
+		text.format(3);
+		String textXML1 = text.toXML();
+		Assert.assertEquals("new text",  ""
+				+ "<text xmlns=\"http://www.w3.org/2000/svg\" xmlns:svgx=\"http://www.xml-cml.org/schema/svgx\""
+				+ " svgx:width=\"0.33,0.25,0.55,0.72,0.44,0.55,0.44,0.39,0.39,0.5,0.78,0.44,0.55,0.28,0.5,0.44,0.28,0.55,0.33,0.44,0.44,0.28,0.5,0.33,0.44,0.39\""
+				+ " y=\"124.844\""
+				+ " x=\""
+				+ "183.896,187.28,189.77,192.452,199.789,204.171,206.913,211.424,215.377,219.33,224.411,232.317,236.699,239.431,242.256,247.336,251.848,254.637,257.275,260.659,265.171,269.682,272.507,277.588,280.972,285.484\""
+				+ " style=\"fill:rgb(0,0,0);font-family:NimbusRomNo9L-Regu;font-size:9.96px;stroke:none;\""
+				+ ">), we assume that features</text>"
+				, textXML1);
+		
+	}
+	
 }

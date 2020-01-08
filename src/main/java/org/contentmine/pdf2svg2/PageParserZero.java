@@ -14,7 +14,6 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 import org.apache.log4j.Level;
@@ -73,6 +72,12 @@ import nu.xom.Attribute;
  */
 /** superseded by AMIPageDrawer
  * 
+ * First version (runs under PDFDocumentProcessor)
+ * integrated into and superseded by PageParserTwo
+ * 
+ * 
+ * hopefully obsolete
+ * 
  * @author pm286
  *
  */
@@ -85,8 +90,6 @@ public class PageParserZero extends AbstractPageParser {
 	private static final String CLIP_PATH = "clipPath";
 	private static final Graphics2D TEXT = null;
 	private static final String SVG_RHMARGIN = "svg_rhmargin";
-	private static final double YMAX = 800.;
-
 	private SVGG svgg;
 	private double yEpsilon = 0.05; // guess
 	private double scalesEpsilon = 0.1; // guess
@@ -104,8 +107,6 @@ public class PageParserZero extends AbstractPageParser {
 	private Real2 currentDisplacement;
 	private Real2 currentXY;
 	private int codepoint;
-	// clipping
-	private Map<String, Integer> integerByClipStringMap;
 	private Set<String> clipStringSet;
 	// defs
 	private SVGElement defs1;
@@ -134,7 +135,7 @@ public class PageParserZero extends AbstractPageParser {
 
 	}
 
-	private void setDefaults() {
+	protected void setDefaults() {
 		viewBox = new Real2Range(new RealRange(-100, 1000), new RealRange(-100, 1000));
 //		maxPrimitives = 5000; /// 
 	}

@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800.0" height="800.0" style="stroke:none;stroke-width:0.0;" xmlns="http://www.w3.org/2000/svg" xmlns:svgx="http://www.xml-cml.org/schema/svgx">
+ 
+ <!-- MAIN BOX -->
+ <!--
+ <path style="fill:#ff0000;stroke-width:10.5;" d="M62.375 514.625 L466.624 514.625 L466.624 58.202 L62.375 58.202 Z"/>
+ -->
+ <!--
+ <path fill="none" style="stroke:#606265;stroke-width:10.75;" d="M61.625 515.893 L466.625 515.893 L466.625 54.952 L61.625 54.952 Z"/>
+--> 
+<!--
+ <path class="divider" style="fill:#ffffff;stroke-width:0.5;stroke:red;" d="M62.375 218.479 L466.624 218.479 Z"/>
+ <path class="divider" fill="none"  style="stroke:#606265;stroke-width:0.75;" d="M466.625 218.479 L61.625 218.479 "/>
+ -->
+ 
+ 
+ <text title="b" svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" x="68.825" y="229.152" style="fill:#000000;font-family:Helvetica;font-size:9.0px;font-weight:bold;">B</text>
+ 
+ <!-- three data boxes -->
+ <g opacity="0.3">
+ <path style="fill:#ffffff;stroke-width:20.5;" d="M401.978 434.423 L285.675 434.423 L285.675 411.423 L401.978 411.423 Z"/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M401.978 434.423 L285.675 434.423 L285.675 411.423 L401.978 411.423 Z"/>
+</g> 
+
+ <rect title="66" fill="orange" opacity="0.9" x="285" y="434" width="66" height="10"/>
+ <text x="287" y="442" font-size="8" fill="white" font-weight="bold" font-family="helvetica">66</text>
+ 
+ <g opacity="0.3">
+ <path  style="fill:#ffffff;stroke-width:0.5;" d="M242.718 434.433 L126.415 434.433 L126.415 411.433 L242.718 411.433 Z"/>
+ <path fill="none"  style="stroke:#000000;stroke-width:0.5;" d="M242.718 434.434 L126.415 434.434 L126.415 411.434 L242.718 411.434 Z"/>
+</g>
+
+ <rect title="69" fill="blue" opacity="0.9" x="126" y="434" width="69" height="10"/>
+ 
+ <g opacity="0.3">
+  <path fill="none"  style="fill:#ffffff;stroke-width:0.5;" d="M329.178 381.972 L199.177 381.972 L199.177 358.972 L329.178 358.972 Z"/>
+ <path fill="none"  style="stroke:#000000;stroke-width:0.5;" d="M329.178 381.972 L199.177 381.972 L199.177 358.972 L329.178 358.972 Z"/>
+ </g>
+ 
+<g title="135 randomization" fill="none" opacity="0.8"> 
+ <rect fill="black" opacity="0.9" x="199.178" y="381.972" width="135" height="10"/>
+
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="219.82" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">1</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="223.313" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">3</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="226.813" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">5</text>
+ 
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="230.313" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="232.063" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">U</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="236.963" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">n</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="240.778" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">d</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="244.551" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="247.834" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">r</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="250.193" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">w</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="254.869" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="258.152" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">n</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="261.967" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="264.13" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="265.88" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">r</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="268.239" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">a</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="271.571" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">n</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="275.386" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">d</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="279.159" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">o</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="282.89" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">m</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="288.819" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="290.548" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">z</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="293.768" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">a</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="297.1" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="299.263" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="300.992" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">o</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="304.723" y="372.46" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">n</text>
+ </g>
+ 
+ <path fill="none"  style="stroke:#000000;stroke-width:0.5;" d="M264.177 381.972 L264.177 391.66 "/>
+ <g opacity="0.3">
+ 
+ <path fill="none"  style="fill:#ffffff;stroke-width:0.5;" d="M329.178 322.081 L199.177 322.081 L199.177 299.081 L329.178 299.081 Z"/>
+ <path fill="none"  style="stroke:#000000;stroke-width:0.5;" d="M329.178 322.082 L199.177 322.082 L199.177 299.082 L329.178 299.082 Z"/>
+ 
+ 
+ 
+ 
+ <g title="185 screened">
+ <rect fill="black" opacity="0.9" x="199" y="322" width="182" height="10"/>
+ <text x="201" y="330" font-size="8" fill="white" font-weight="bold" font-family="helvetica">182 optimization</text>
+ 
+ <g opacity="0.2">
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="208.306" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">1</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="211.798" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">8</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="215.298" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">2</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="218.798" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="220.548" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">E</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="224.321" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">n</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="228.136" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="230.299" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="233.582" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">r</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="235.941" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="239.224" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">d</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="242.997" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="244.747" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">r</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="247.106" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">u</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="250.893" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">n</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="254.708" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">-</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="256.64" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="258.369" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">n</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="262.184" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="263.934" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">o</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="267.665" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">p</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="271.466" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="273.629" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="275.358" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">m</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="281.287" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="283.016" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">z</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="286.236" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">a</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="289.568" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="291.731" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="293.46" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">o</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="297.191" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">n</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="301.006" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="302.756" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">p</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="306.557" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">h</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="310.309" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">a</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="313.641" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">s</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="316.77" y="312.703" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ </g>
+ 
+ <g opacity="0.3" class="box">
+ 
+ <path style="fill:#ffffff;stroke-width:0.5;" d="M439.169 352.209 L313.748 352.209 L313.748 329.209 L439.169 329.209 Z"/>
+ <path fill="none"  style="stroke:#000000;stroke-width:0.5;" d="M439.169 352.209 L313.748 352.209 L313.748 329.209 L439.169 329.209 Z"/>
+ </g>
+ </g>
+ 
+ <g title="5 42 withdrew"> 
+ <rect fill="grey" opacity="0.9" x="313" y="352" width="42" height="10"/>
+ <text x="315" y="360" font-size="8" fill="white" font-weight="bold" font-family="helvetica">42 optimization</text>
+ 
+ <rect fill="pink" opacity="0.9" x="355" y="362" width="5" height="10"/>
+ 
+ 
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="319.748" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">4</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="323.248" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">2</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="326.748" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="328.498" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">D</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="333.475" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="335.204" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">d</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="338.977" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="340.727" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">n</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="344.542" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">o</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="348.273" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="350.436" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="352.186" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">m</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="358.115" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="361.398" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="364.681" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="366.844" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="368.594" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">r</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="370.953" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">a</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="374.285" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">n</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="378.1" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">d</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="381.873" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">o</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="385.604" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">m</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="391.533" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="393.262" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">z</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="396.482" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">a</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="399.814" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="401.977" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="403.706" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">o</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="407.437" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">n</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="411.252" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="413.002" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">c</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="416.11" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">r</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="418.469" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="420.198" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="422.361" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="425.644" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">r</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="428.003" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="429.732" y="338.698" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">a</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="323.248" y="346.699" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">5</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="326.748" y="346.699" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="328.498" y="346.699" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">W</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="334.546" y="346.699" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="336.275" y="346.699" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="338.438" y="346.699" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">h</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="342.19" y="346.699" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">d</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="345.963" y="346.699" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">r</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="348.322" y="346.699" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="351.605" y="346.699" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">w</text>
+ 
+ </g>
+ 
+ <g class="arrow">
+ 
+ <path fill="none"  style="stroke:#000000;stroke-width:0.5;" d="M264.161 322.082 L264.161 353.408 "/>
+ <path style="fill:#000000;stroke-width:0.5;" d="M262.726 352.417 L264.179 357.837 L265.632 352.417 Z"/>
+ </g>
+ <g class="arrow">
+ <path fill="none"  style="stroke:#000000;stroke-width:0.5;" d="M264.248 340.727 L308.125 340.727 "/>
+ <path style="fill:#000000;stroke-width:0.5;" d="M307.135 342.163 L312.555 340.71 L307.135 339.257 Z"/>
+</g> 
+
+ <g opacity="0.3">
+ <path style="fill:#ffffff;stroke-width:0.5;" d="M329.178 258.149 L199.177 258.149 L199.177 235.15 L329.178 235.15 Z"/>
+ <path fill="none"  style="stroke:#000000;stroke-width:0.5;" d="M329.178 258.151 L199.177 258.151 L199.177 235.151 L329.178 235.151 Z"/>
+ </g>
+ 
+ 
+ </g>
+ 
+ <rect fill="black" opacity="0.9" x="199" y="258" width="185" height="10"/>
+ 
+ 
+ 
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="206.066" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">1</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="209.559" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">8</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="213.059" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">5</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="216.559" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="218.309" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">P</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="222.201" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">a</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="225.533" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="227.696" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="229.425" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="232.708" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">n</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="236.523" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="238.686" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">s</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="241.815" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="243.565" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">w</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="248.24" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="251.524" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">r</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="253.882" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="257.166" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="258.916" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">s</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="262.044" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">c</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="265.153" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">r</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="267.512" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="270.794" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="274.077" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">n</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="277.892" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="281.175" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">d</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="284.948" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="286.698" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">f</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="288.672" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">o</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="292.403" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">r</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="294.762" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="296.512" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="299.795" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">l</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="301.468" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="303.197" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">g</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="306.746" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="308.475" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">b</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="312.164" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="313.893" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">l</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="315.567" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="317.296" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="319.459" y="248.772" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">y</text>
+ <g opacity="0.3">
+ 
+ <path fill="none"  style="fill:#ffffff;stroke-width:0.5;" d="M407.018 290.13 L313.748 290.13 L313.748 267.13 L407.018 267.13 Z"/>
+ <path fill="none"  style="stroke:#000000;stroke-width:0.5;" d="M407.018 290.13 L313.748 290.13 L313.748 267.13 L407.018 267.13 Z"/>
+ </g>
+ <rect fill="grey" opacity="0.9" x="313" y="290" width="3" height="10"/>
+ 
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="333.363" y="280.618" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">3</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="336.863" y="280.618" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="338.613" y="280.618" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">W</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="344.661" y="280.618" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="347.944" y="280.618" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">r</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="350.303" y="280.618" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="353.586" y="280.618" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="355.336" y="280.618" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">n</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="359.151" y="280.618" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">o</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="362.882" y="280.618" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="365.045" y="280.618" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="366.795" y="280.618" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="370.078" y="280.618" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">l</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="371.751" y="280.618" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="373.48" y="280.618" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">g</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="377.029" y="280.618" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="378.758" y="280.618" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">b</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="382.447" y="280.618" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">l</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="384.12" y="280.618" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ 
+ <!-- arrows -->
+ <g class="arrow.vert">
+ <path fill="none"  style="stroke:#000000;stroke-width:0.5;" d="M264.161 258.151 L264.161 293.471 "/>
+ <path fill="none"  style="fill:#000000;stroke-width:0.5;" d="M262.726 292.48 L264.179 297.9 L265.632 292.48 Z"/>
+</g>
+ 
+ <g class="arrow.hor">
+ <path fill="none"  style="stroke:#000000;stroke-width:0.5;" d="M264.248 278.648 L308.125 278.648 "/>
+ <path fill="none"  style="fill:#000000;stroke-width:0.5;" d="M307.135 280.083 L312.555 278.631 L307.135 277.178 Z"/>
+ </g>
+ 
+ <g title="assigned">
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="303.437" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">6</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="306.937" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">6</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="310.437" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="312.187" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">W</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="318.235" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="321.518" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">r</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="323.877" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="327.16" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="328.91" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">a</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="332.242" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">s</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="335.371" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">s</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="338.5" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="340.229" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">g</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="343.778" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">n</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="347.593" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="350.876" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">d</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="354.649" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="356.399" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="358.562" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">o</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="362.293" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="364.043" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">r</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="366.402" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="369.685" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">c</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="372.793" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="376.076" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="377.805" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">v</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="380.934" y="420.911" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="332.515" y="428.912" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">p</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="336.316" y="428.912" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">l</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="337.989" y="428.912" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">a</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="341.321" y="428.912" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">c</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="344.429" y="428.912" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="347.712" y="428.912" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">b</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="351.401" y="428.912" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">o</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="144.173" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">6</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="147.673" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">9</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="151.173" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="152.923" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">W</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="158.971" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="162.254" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">r</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="164.613" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="167.896" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="169.646" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">a</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="172.978" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">s</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="176.107" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">s</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="179.236" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="180.965" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">g</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="184.514" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">n</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="188.329" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="191.612" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">d</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="195.385" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="197.135" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="199.298" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">o</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="203.029" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="204.779" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">r</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="207.138" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="210.421" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">c</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="213.529" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="216.812" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="218.541" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">v</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="221.67" y="421.415" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="164.508" y="429.416" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">m</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="170.437" y="429.416" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="173.72" y="429.416" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">p</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="177.521" y="429.416" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">o</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="181.252" y="429.416" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">l</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="182.925" y="429.416" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="184.654" y="429.416" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">z</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="187.874" y="429.416" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">u</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="191.661" y="429.416" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">m</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="197.59" y="429.416" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">a</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="200.922" y="429.416" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">b</text>
+ </g>
+ 
+ <g opacity="0.3">
+ 
+ <path fill="none"  style="fill:#ffffff;stroke-width:0.5;" d="M162.104 470.49 L75.113 470.49 L75.113 447.49 L162.104 447.49 Z"/>
+ <path fill="none"  style="stroke:#000000;stroke-width:0.5;" d="M162.104 470.491 L75.113 470.491 L75.113 447.491 L162.104 447.491 Z"/>
+ </g>
+ 
+ <g title="discontinued">
+ <rect fill="red" opacity="0.9" x="75" y="470" width="3" height="10"/>
+ 
+ 
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="79.607" y="456.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">3</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="83.107" y="456.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="84.857" y="456.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">(</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="87.398" y="456.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">4</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="90.898" y="456.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">%</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="96.848" y="456.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">)</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="99.389" y="456.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="101.139" y="456.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">D</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="106.115" y="456.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="107.845" y="456.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">s</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="110.974" y="456.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">c</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="114.082" y="456.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">o</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="117.813" y="456.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">n</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="121.628" y="456.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="123.791" y="456.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="125.52" y="456.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">n</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="129.334" y="456.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">u</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="133.122" y="456.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="136.405" y="456.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">d</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="140.178" y="456.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="141.928" y="456.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">s</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="145.057" y="456.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="147.22" y="456.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">u</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="151.007" y="456.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">d</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="154.78" y="456.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">y</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="85.305" y="464.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">o</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="89.036" y="464.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">w</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="93.712" y="464.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="95.441" y="464.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">n</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="99.256" y="464.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">g</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="102.805" y="464.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="104.555" y="464.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="106.718" y="464.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">o</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="110.449" y="464.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="112.199" y="464.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">a</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="115.531" y="464.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">d</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="119.304" y="464.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">v</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="122.433" y="464.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="125.716" y="464.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">r</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="128.075" y="464.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">s</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="131.204" y="464.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="134.487" y="464.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="136.237" y="464.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="139.52" y="464.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">v</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="142.649" y="464.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="145.932" y="464.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">n</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="149.747" y="464.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ </g>
+ 
+ <g opacity="0.3">
+ 
+ <path fill="none"  style="fill:#ffffff;stroke-width:0.5;" d="M454.16 474.539 L367.169 474.539 L367.169 443.442 L454.16 443.442 Z"/>
+ <path fill="none"  style="stroke:#000000;stroke-width:0.5;" d="M454.16 474.539 L367.169 474.539 L367.169 443.443 L454.16 443.443 Z"/>
+ </g>
+ 
+ <g title="disconued adverse event">
+ <rect fill="red" opacity="0.9" x="367" y="474" width="3" height="10"/>
+ <rect fill="pink" opacity="0.9" x="371" y="474" width="1" height="10"/>
+ 
+ 
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="371.661" y="452.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">4</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="375.161" y="452.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="376.911" y="452.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">(</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="379.452" y="452.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">6</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="382.952" y="452.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">%</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="388.902" y="452.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">)</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="391.443" y="452.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="393.193" y="452.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">D</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="398.17" y="452.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="399.899" y="452.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">s</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="403.028" y="452.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">c</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="406.136" y="452.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">o</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="409.867" y="452.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">n</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="413.682" y="452.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="415.845" y="452.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="417.574" y="452.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">n</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="421.389" y="452.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">u</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="425.176" y="452.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="428.459" y="452.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">d</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="432.232" y="452.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="433.982" y="452.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">s</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="437.111" y="452.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="439.274" y="452.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">u</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="443.061" y="452.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">d</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="446.834" y="452.979" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">y</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="378.661" y="460.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">3</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="382.161" y="460.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="383.911" y="460.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">H</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="389.308" y="460.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">a</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="392.64" y="460.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">d</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="396.413" y="460.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="398.163" y="460.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">a</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="401.495" y="460.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">d</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="405.268" y="460.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">v</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="408.397" y="460.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="411.68" y="460.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">r</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="414.039" y="460.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">s</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="417.168" y="460.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="420.451" y="460.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="422.201" y="460.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="425.484" y="460.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">v</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="428.613" y="460.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="431.896" y="460.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">n</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="435.711" y="460.98" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="378.661" y="468.981" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">1</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="382.154" y="468.981" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="383.904" y="468.981" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">W</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="389.952" y="468.981" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="391.681" y="468.981" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="393.844" y="468.981" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">h</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="397.596" y="468.981" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">d</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="401.369" y="468.981" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">r</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="403.728" y="468.981" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="407.011" y="468.981" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">w</text>
+ 
+ </g>
+ 
+ <!-- arrows -->
+ <g class="arrow.vert">
+ <path fill="none"  style="stroke:#000000;stroke-width:0.5;" d="M343.809 391.66 L343.809 406.025 "/>
+ <path fill="none"  style="fill:#000000;stroke-width:0.5;" d="M342.373 405.035 L343.826 410.455 L345.279 405.035 Z"/>
+</g>
+ 
+ <g class="arrow.hor">
+ <path fill="none"  style="stroke:#000000;stroke-width:0.5;" d="M184.503 459.008 L166.843 459.008 "/>
+ <path fill="none"  style="fill:#000000;stroke-width:0.5;" d="M167.835 460.444 L162.413 458.991 L167.835 457.538 Z"/>
+</g> 
+
+ <g class="arrow.hor">
+ <path fill="none"  style="stroke:#000000;stroke-width:0.5;" d="M344.08 458.973 L361.74 458.973 "/>
+ <path fill="none"  style="fill:#000000;stroke-width:0.5;" d="M360.748 457.538 L366.17 458.991 L360.748 460.444 Z"/>
+</g>
+ 
+ <g class="arrow.vert">
+ <path fill="none"  style="stroke:#000000;stroke-width:0.5;" d="M184.549 391.66 L184.549 406.025 "/>
+ <path fill="none"  style="fill:#000000;stroke-width:0.5;" d="M183.113 405.035 L184.566 410.455 L186.019 405.035 Z"/>
+</g>
+ 
+ <g title="box" opacity="0.3">
+ <path fill="none"  style="fill:#ffffff;stroke-width:0.5;" d="M242.718 506.535 L126.415 506.535 L126.415 483.535 L242.718 483.535 Z"/>
+ <path fill="none"  style="stroke:#000000;stroke-width:0.5;" d="M242.718 506.536 L126.415 506.536 L126.415 483.536 L242.718 483.536 Z"/>
+ </g>
+ 
+ <g class="boxx">
+ <rect fill="blue" x="126" y="506" width="66" height="10"/>
+ 
+ <g opacity="0.3">
+ <path fill="none"  style="fill:#ffffff;stroke-width:0.5;" d="M401.978 506.535 L285.675 506.535 L285.675 483.535 L401.978 483.535 Z"/>
+ <path fill="none"  style="stroke:#000000;stroke-width:0.5;" d="M401.978 506.536 L285.675 506.536 L285.675 483.536 L401.978 483.536 Z"/>
+ </g>
+ 
+ <rect fill="orange" x="285" y="506" width="62" height="10"/>
+ 
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="304.907" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">6</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="308.407" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">2</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="311.907" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="313.657" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">(</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="316.198" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">9</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="319.698" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">4</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="323.198" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">%</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="329.148" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">)</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="331.689" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="333.439" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">C</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="337.674" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">o</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="341.405" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">m</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="347.334" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">p</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="351.135" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">l</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="352.808" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="356.091" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="358.254" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="361.537" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">d</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="365.31" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="367.06" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">s</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="370.189" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="372.352" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">u</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="376.139" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">d</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="379.912" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">y</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="145.65" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">6</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="149.15" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">6</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="152.65" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="154.4" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">(</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="156.941" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">9</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="160.441" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">6</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="163.941" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">%</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="169.891" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">)</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="172.432" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="174.182" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">C</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="178.417" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">o</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="182.148" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">m</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="188.077" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">p</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="191.878" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">l</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="193.551" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="196.834" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="198.997" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="202.28" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">d</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="206.053" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="207.803" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">s</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="210.932" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">t</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="213.095" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">u</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="216.882" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">d</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="220.655" y="497.024" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">y</text>
+ </g>
+
+<g class="arrow.vert"> 
+ <path fill="none"  style="stroke:#000000;stroke-width:0.5;" d="M343.809 434.443 L343.809 478.155 "/>
+ <path fill="none"  style="fill:#000000;stroke-width:0.5;" d="M342.373 477.164 L343.826 482.585 L345.279 477.164 Z"/>
+</g>
+ 
+<g class="arrow.vert"> 
+ <path fill="none"  style="stroke:#000000;stroke-width:0.5;" d="M184.549 434.443 L184.549 478.155 "/>
+ <path fill="none"  style="fill:#000000;stroke-width:0.5;" d="M183.113 477.164 L184.566 482.585 L186.019 477.164 Z"/>
+ </g>
+ 
+<g class="arrow.hor.split"> 
+ <path fill="none"  style="stroke:#000000;stroke-width:0.5;" d="M184.549 391.53 L343.809 391.53 "/>
+</g>
+
+<!-- outer box -->
+<!--
+ <path fill="none"  style="stroke:#606265;stroke-width:0.75;" d="M62.375 514.625 L466.625 514.625 L466.625 58.202 L62.375 58.202 Z"/>
+ -->
+</svg>

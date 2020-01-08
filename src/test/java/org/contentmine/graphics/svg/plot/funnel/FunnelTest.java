@@ -24,6 +24,7 @@ public class FunnelTest {
 		String fileRoot = "bakker2014-page11";
 		File svgFile = PlotStructurerTest.createSVGPathsAndWriteToSVGPathFile(
 			new File(SVGHTMLFixtures.FUNNEL_DIR, fileRoot + SVG_SUFFIX), fileRoot);
+		LOG.debug(svgFile);
 		PlotStructurerTest.createPlots(svgFile, fileRoot);
 	}
 

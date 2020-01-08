@@ -257,7 +257,9 @@ public abstract class AbstractPlotBox {
 		LineCache lineCache = componentCache.getOrCreateLineCache();
 		for (AnnotatedAxis axis : axisArray) {
 			axis.getOrCreateSingleLine();		
-			axis.createAndFillTickBox(lineCache.getOrCreateHorizontalLineList(), lineCache.getOrCreateVerticalLineList());
+			List<SVGLine> horizontalLineList = lineCache.getOrCreateHorizontalLineList();
+			List<SVGLine> verticalLineList = lineCache.getOrCreateVerticalLineList();
+			axis.createAndFillTickBox(horizontalLineList, verticalLineList);
 		}
 	}
 

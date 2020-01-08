@@ -1,5 +1,6 @@
 package org.contentmine.graphics.svg.cache;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -21,6 +22,7 @@ import org.contentmine.graphics.svg.SVGLine.LineDirection;
 import org.contentmine.graphics.svg.SVGLineList;
 import org.contentmine.graphics.svg.SVGPolyline;
 import org.contentmine.graphics.svg.SVGRect;
+import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.graphics.svg.linestuff.AxialLineList;
 import org.contentmine.graphics.svg.linestuff.HorizontalLineComparator;
 import org.contentmine.graphics.svg.plot.AbstractPlotBox;
@@ -546,6 +548,38 @@ public class LineCache extends AbstractCache {
 		if (lineList != null) {
 			this.addLines(svgLineList.getLineList());
 		}
+	}
+	
+	/** convenience method to extract lines and write as SVG.
+	 *  
+	 *  
+	 * @param inDir
+	 * @param svgName
+	 * @param outdir
+	 * @param outName
+	 * @return
+	 */
+
+	public static SVGLineList extractAndDisplayLines(File inDir, String svgName, File outdir,  String outName) {
+		AbstractCMElement svgElement = SVGElement.readAndCreateSVG(new File(inDir, svgName));
+		return createLineCacheAndDisplay(outdir, outName, svgElement);
+	}
+
+	/** convenience method to create LineCache and display contents
+	 * 
+	 * 
+	 * @param outdir
+	 * @param outName
+	 * @param svgElement
+	 * @return
+	 */
+	public static SVGLineList createLineCacheAndDisplay(File outdir, String outName, AbstractCMElement svgElement) {
+		ComponentCache componentCache = new ComponentCache();
+		componentCache.readGraphicsComponentsAndMakeCaches(svgElement);
+		LineCache lineCache = componentCache.getOrCreateLineCache();
+		SVGSVG.wrapAndWriteAsSVG(lineCache.getOrCreateConvertedSVGElement(), new File(outdir, outName));
+		SVGLineList lineList = lineCache.getOrCreateLineList();
+		return lineList;
 	}
 
 

@@ -42,7 +42,8 @@ public class AMIPDFTool extends AbstractAMITool {
 	
 	public enum PDFTidySVG {
 		concat, // concatenate characters (maybe in beginText...endText)
-		spaces  // add spaces using character widths
+		spaces, // add spaces using character widths
+		styles, // add empirical styles
 	}
 	
 	public AMIPDFTool() {
@@ -196,6 +197,7 @@ public class AMIPDFTool extends AbstractAMITool {
 		pdfDocumentProcessor.setMaxPages(maxpages);
 		pdfDocumentProcessor.setMaxPrimitives(maxprimitives);
 		pdfDocumentProcessor.setParserType(parserType);
+		pdfDocumentProcessor.setTidySVGList(tidySVGList);
         cTree.setPDFDocumentProcessor(pdfDocumentProcessor);
         cTree.setForceMake(forceMake);
 		cTree.processPDFTree();

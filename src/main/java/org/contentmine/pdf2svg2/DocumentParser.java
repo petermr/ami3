@@ -16,7 +16,9 @@ import org.apache.pdfbox.rendering.PDFRenderer;
 import org.apache.pdfbox.rendering.PageDrawer;
 import org.apache.pdfbox.rendering.PageDrawerParameters;
 import org.contentmine.ami.tools.AMIPDFTool;
+import org.contentmine.ami.tools.AMIPDFTool.PDFTidySVG;
 import org.contentmine.ami.tools.AMIPDFTool.ParserType;
+import org.contentmine.ami.tools.AMISVGTool.TidySVG;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGText;
 
@@ -40,6 +42,7 @@ public class DocumentParser extends PDFRenderer {
 	private int iPage;
 	private Map<String, BufferedImage> rawImageByTitle;
 	private PDFDocumentProcessor documentProcessor;
+	private double yeps = 0.00001;
 
 
 	DocumentParser(PDDocument document) {
@@ -153,7 +156,7 @@ public class DocumentParser extends PDFRenderer {
 		BufferedImage renderedImage = currentPageParser.getRenderedImage();
 		renderedImageBySerial.put(pageSerial, renderedImage);
 		SVGG svgPage = extractSVGG();
-		cleanUp(svgPage);
+		tidySVG(svgPage);
 		svgPageBySerial.put(pageSerial, svgPage);
 		// FIXME we should write the images to disk, not store them?
 		Map<String, BufferedImage> subImageMap = currentPageParser.getOrCreateRawImageMap();
@@ -190,12 +193,35 @@ public class DocumentParser extends PDFRenderer {
 		return rawImageByTitle;
 	}
 
-	private void cleanUp(SVGG svgPage) {
+	private void tidySVG(SVGG svgPage) {
+		if (documentProcessor.getTidySVGList().contains(PDFTidySVG.concat)) {
+			concatenateCharacters(svgPage);
+		}
+		if (documentProcessor.getTidySVGList().contains(PDFTidySVG.spaces)) {
+			addSpaces(svgPage);
+		}
+		if (documentProcessor.getTidySVGList().contains(PDFTidySVG.styles)) {
+			addEmpiricalStyles(svgPage);
+		}
+	}
+
+	private void addEmpiricalStyles(SVGG svgPage) {
 		List<SVGText> texts = SVGText.extractSelfAndDescendantTexts(svgPage);
 		for (SVGText text : texts) {
-			text.removeLeadingSpaces();
 			text.addEmpiricalStylesFromFont();
 		}
+	}
+
+	private void addSpaces(SVGG svgPage) {
+		List<SVGText> texts = SVGText.extractSelfAndDescendantTexts(svgPage);
+		for (SVGText text : texts) {
+			text.addSpaces();
+		}
+	}
+
+	private void concatenateCharacters(SVGG svgPage) {
+		List<SVGText> texts = SVGText.extractSelfAndDescendantTexts(svgPage);
+		SVGText.concatenate(texts, yeps);
 	}
 
 	private SVGG extractSVGG() {

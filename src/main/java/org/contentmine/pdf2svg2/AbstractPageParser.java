@@ -9,6 +9,7 @@ import java.awt.geom.Point2D;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -28,15 +29,26 @@ import org.apache.pdfbox.rendering.PageDrawer;
 import org.apache.pdfbox.rendering.PageDrawerParameters;
 import org.apache.pdfbox.util.Matrix;
 import org.apache.pdfbox.util.Vector;
+import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Int2Range;
+import org.contentmine.eucl.euclid.Real;
+import org.contentmine.eucl.euclid.Real2;
+import org.contentmine.eucl.euclid.Real2Array;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealRange;
+import org.contentmine.eucl.euclid.RealSquareMatrix;
+import org.contentmine.eucl.euclid.Transform2;
 import org.contentmine.eucl.euclid.Util;
-import org.contentmine.graphics.svg.SVGElement;
+import org.contentmine.graphics.svg.SVGConstants;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGPath;
+import org.contentmine.graphics.svg.SVGPathPrimitive;
 import org.contentmine.graphics.svg.SVGRect;
 import org.contentmine.graphics.svg.SVGText;
+import org.contentmine.graphics.svg.path.ClosePrimitive;
+import org.contentmine.graphics.svg.path.CubicPrimitive;
+import org.contentmine.graphics.svg.path.LinePrimitive;
+import org.contentmine.graphics.svg.path.MovePrimitive;
 import org.contentmine.graphics.svg.path.PathPrimitiveList;
 
 import nu.xom.Attribute;
@@ -58,6 +70,7 @@ public abstract class AbstractPageParser extends PageDrawer {
 	protected static final String CODE = "code";
 	private static final String UNICODE = "unicode";
 	protected static final String MATRIX = "matrix";
+	public static final double YMAX = 800.;
 	
 	public static String toRGB(Color javaColor) {
 		return javaColor == null ? null : "rgb(" + (int) javaColor.getRed()+","+javaColor.getGreen()+","+javaColor.getBlue()+")";
@@ -92,6 +105,7 @@ public abstract class AbstractPageParser extends PageDrawer {
 	BufferedImage renderedImage;
 	protected Real2Range viewBox;
 	protected PDFDocumentProcessor documentProcessor;
+	protected Map<String, Integer> integerByClipStringMap;
 
 	protected AbstractPageParser(PageDrawerParameters parameters, AMIDebugParameters debugParams) throws IOException {
 		super(parameters);
@@ -105,13 +119,14 @@ public abstract class AbstractPageParser extends PageDrawer {
     	strokeSet = new HashSet<>();
     	colorSet = new HashSet<>();
     	svgg = new SVGG();
+    	svgg.addNamespaceDeclaration(SVGConstants.SVGX_PREFIX,SVGConstants.SVGX_NS);
+    	svgg.setId("page");
+    	integerByClipStringMap = new HashMap<String, Integer>();
+    	yMax = YMAX; // hopefully overwritten by mediaBox
+    	setDefaults();
 
 	}
 	
-//	public SVGElement getSVGElement() {
-//		return svgg;
-//	}
-
 	public SVGG getSVGG() {
 		return svgg;
 	}
@@ -153,15 +168,28 @@ public abstract class AbstractPageParser extends PageDrawer {
      * not mandatory */
     @Override
     public void beginText() throws IOException {
+    	if (debugParams.showBeginText) System.out.println(">beginText");
+
+    	// does not affect plot?
     	super.beginText();
+    	currentTextPhrase = new SVGG();
+    	currentTextPhrase.addAttribute(new Attribute("begin","text"));
     }
-    
+
     /** end of text. Should always balance startText()? 
      * not mandatory*/
     @Override
     public void endText() throws IOException {
+    	if (debugParams.showEndText) System.out.println(">endText");
     	super.endText();
+    	
+    	if (currentTextPhrase == null) {
+    		throw new RuntimeException("textPhrase not opened");
+    	}
+    	svgg.appendChild(currentTextPhrase);
+    	currentTextPhrase = null;
     }
+    
     
 	/**
      * from PageDrawer
@@ -176,9 +204,52 @@ public abstract class AbstractPageParser extends PageDrawer {
      * the stroke/fill is captured from PDGraphics and distinction is made through the renderingMode() 
      * */
     @Override
-    protected void showFontGlyph(Matrix matrix, PDFont font, int code, String unicode, Vector displacement) throws IOException {
+    protected void showFontGlyph(Matrix matrix, PDFont font, int code, String unicode,
+                                 Vector displacement) throws IOException {
+    	if (debugParams.showFontGlyph) System.out.println(">showFontGlyph");
     	super.showFontGlyph(matrix, font, code, unicode, displacement);
+    	
+        updateRenderingColorsStroke("showFontGlyph");
+        
+        Transform2 t2 = new Transform2(matrix.createAffineTransform());
+        Angle angleOfRotation = t2.getAngleOfRotation();
+        
+    	if (debugParams.showChar) {
+    		System.out.println("["+unicode+"|"+(int)code+"]");
+    	}
+    	registerFont(font);
+    	
+    	double x = Util.format(matrix.getTranslateX(), nxydec);
+    	double y = Util.format(transformY(matrix.getTranslateY()), nxydec);
+    	Real2 xy = new Real2(x, y).format(nxydec);
+		
+		SVGText text = new SVGText(xy, unicode == null ? AbstractPageParser.ILLEGAL_CHAR : unicode);
+    	TextParameters textParameters = new TextParameters(matrix, font);
+    	if (!textParameters.hasNormalOrientation()) {
+    		text.rotateTextAboutPoint(xy, angleOfRotation.multiplyBy(-1.0), matdec);
+    		text.setRotateAttributeDegrees(angleOfRotation, 1);
+    		RealSquareMatrix mat = new RealSquareMatrix(t2.extractSubMatrixData(0, 1, 0, 1));
+    		double scalesq = mat.elementAt(0, 0) * mat.elementAt(1, 1) - mat.elementAt(0, 1) * mat.elementAt(1, 0);
+    		double fontSize = Util.format(Math.sqrt(scalesq), ndec);
+			text.setFontSize(fontSize);
+    	} else {
+        	text.setFontSize(Util.format((double)matrix.getScaleY(), ndec));
+    	}
+    	text.setStroke(textRenderingMode.isStroke() ? getJavaStrokeRGB() : "none");
+    	text.setFill(textRenderingMode.isFill() ? getJavaFillRGB() : "none");
+    	registerColor("fontGlyph", "fill", awtFillColor);
+    	registerColor("fontGlyph", "stroke", awtStrokeColor);
+    	text.setFontFamily(getName(font));
+    	if (unicode == null) {
+    		text.addAttribute(new Attribute(CODE, String.valueOf(code)));
+    	}
+    	text.setSVGXFontWidth(Util.format((double)displacement.getX(), ndec));
+    	if (!Real.isZero(matrix.getShearX(), eps) || !Real.isZero(matrix.getShearY(), eps)) {
+    		text.addAttribute(new Attribute(MATRIX, String.valueOf(matrix)));
+    	}
+    	currentTextPhrase.appendChild(text);
     }
+    
 
 // ===== APPEND RECTANGLE =========
 
@@ -195,10 +266,15 @@ public abstract class AbstractPageParser extends PageDrawer {
      * gets stroke and Stroke from PDGraphics 
      * this is where we capture the stroke and stroke-width then create the SVGPath and dispatch it
      * does not reset fill*/
-    @Override
-    public void strokePath() throws IOException {
-    	super.strokePath();
-    }
+	@Override
+	public void strokePath() throws IOException {
+		if (debugParams.showStrokePath) System.out.println(">strokePath");
+		updateRenderingColorsStroke("strokePath");
+		super.strokePath();
+		registerColor("strokePath", "stroke", awtStrokeColor);
+		awtFillColor = null;
+		createPathAndFlush("strokePath");
+	}
 
     /** gets fill from PDGraphics.
      * does not reset the stroke
@@ -208,23 +284,34 @@ public abstract class AbstractPageParser extends PageDrawer {
      * @param windingRule
      * @throws IOException
      */
-    @Override
-    public void fillPath(int windingRule) throws IOException {
-    	super.fillPath(windingRule);
-    }
+	@Override
+	public void fillPath(int windingRule) throws IOException {
+		if (debugParams.showFillPath) {System.out.println(">fillPath("+windingRule+")");}
+		updateRenderingColorsStroke("fillPath");
+		super.fillPath(windingRule);
+		registerColor("fillPath", "fill", awtFillColor);
+		awtStrokeColor = null;
+		createPathAndFlush("fillPath");
+	}
 
-    /**
+	/**
      * Fills and then strokes the path.
      * this is when the stroke width interacts with the fill and changes the latter Shape
      * (I think)
-     * 
-     * @param windingRule The winding rule this path will use.
-     * @throws IOException If there is an IO error while filling the path.
-     */
-    @Override
-    public void fillAndStrokePath(int windingRule) throws IOException {
-    	super.fillAndStrokePath(windingRule);
-    }
+	 *
+	 * @param windingRule The winding rule this path will use.
+	 * @throws IOException If there is an IO error while filling the path.
+	 */
+	@Override
+	public void fillAndStrokePath(int windingRule) throws IOException {
+		if (debugParams.showFillAndStrokePath) {System.out.println(">fillAndStrokePath("+windingRule+")");}
+		super.fillAndStrokePath(windingRule);
+		updateRenderingColorsStroke("fillAndStrokePath");
+		this.fillPath(windingRule);
+		this.strokePath();
+		createPathAndFlush("fillAndStroke");
+		LOG.debug("fillAndStrokePath");
+	}
 
     /** captures move and adds to PathPrimitiveList
      * mandatory
@@ -233,9 +320,15 @@ public abstract class AbstractPageParser extends PageDrawer {
      * @param y
      */
     @Override
-     public void moveTo(float x, float y) {
-    	 super.moveTo(x, y);
-     };
+    public void moveTo(float x, float y) {
+    	if (debugParams.showMoveTo) {System.out.println("M"+format(x, y, ndec));}
+    	super.moveTo(x, y);
+    	Real2 point = new Real2(x, transformY(y));
+		MovePrimitive movePrimitive = new MovePrimitive(point.format(ndec));
+    	if (checkViewBoxAndMaxPrimitives(movePrimitive)) {
+			ensurePathPrimitiveList().add(movePrimitive);
+    	}
+    }
 
     /** captures lineTo and adds to PathPrimitiveList
      * mandatory
@@ -243,10 +336,17 @@ public abstract class AbstractPageParser extends PageDrawer {
      * @param x
      * @param y
      */
-    @Override
+	@Override
     public void lineTo(float x, float y) {
+    	if (debugParams.showLineTo) {System.out.println("L"+format(x, y, ndec));}
     	super.lineTo(x, y);
+    	Real2 point = new Real2(x, transformY(y));
+		LinePrimitive linePrimitive = new LinePrimitive(point.format(ndec));
+    	if (checkViewBoxAndMaxPrimitives(linePrimitive)) {
+			ensurePathPrimitiveList().add(linePrimitive);
+    	}
     }
+
 
     /**captures curveTo and adds to PathPrimitive list.
      * mandatory
@@ -254,8 +354,20 @@ public abstract class AbstractPageParser extends PageDrawer {
      */
     @Override
     public void curveTo(float x1, float y1, float x2, float y2, float x3, float y3) {
+    	if (debugParams.showCurveTo) {System.out.println("C"+format(x1, y1, x2, y2, x3, y3, 2));}
     	super.curveTo(x1, y1, x2, y2, x3, y3);
+    	Real2Array xyArray = new Real2Array(Arrays.asList(new Real2[] {
+    			new Real2(x1, transformY(y1)).format(ndec),
+    			new Real2(x2, transformY(y2)).format(ndec),
+    			new Real2(x3, transformY(y3)).format(ndec)
+    		}
+    		));
+    	CubicPrimitive cubicPrimitive = new CubicPrimitive(xyArray);
+    	if (checkViewBoxAndMaxPrimitives(cubicPrimitive)) {
+			ensurePathPrimitiveList().add(cubicPrimitive);
+    	}
     }
+
     
     /** may be useful for complex paths. Not sure
      *  */
@@ -270,10 +382,13 @@ public abstract class AbstractPageParser extends PageDrawer {
     not the same as endPath
     
     */
-    @Override
+	@Override
     public void closePath() {
-    	super.closePath();
+    	if (debugParams.showClosePath) {System.out.println(">closePath");}
+    	super.closePath();    	
+    	ensurePathPrimitiveList().add(new ClosePrimitive());
     }
+
 
     /** ends the path 
      * used as a time to flush the primitive list to SVG
@@ -281,8 +396,10 @@ public abstract class AbstractPageParser extends PageDrawer {
      */
     @Override
     public void endPath() {
+    	if (debugParams.showEndPath) {System.out.println(">endPath");}
     	super.endPath();
     }
+
 
 // ===== IMAGE ======
     /** captures the image as a bitmap and can write as file
@@ -290,10 +407,16 @@ public abstract class AbstractPageParser extends PageDrawer {
      * @param pdImage
      * @throws IOException
      */
+ // ===== IMAGE ======
     @Override
     public void drawImage(PDImage pdImage) throws IOException {
+    	if (debugParams.showDrawImage) {System.out.println(">drawImage "+pdImage);}
     	super.drawImage(pdImage);
+    	LOG.debug("page serial: "+pageSerial);
+//    	super.setPageSerial(pageSerial);
+    	extractImage(pdImage);
     }
+
     
  // ===== TRANSPARENCY =====  ignored
     public void showTransparencyGroup(PDTransparencyGroup form) throws IOException {
@@ -302,6 +425,30 @@ public abstract class AbstractPageParser extends PageDrawer {
     
 // ===== MARKED CONTENT =====  ignored  
     
+    
+	private boolean checkViewBoxAndMaxPrimitives(SVGPathPrimitive p) {
+		Real2Range bb = p.getBoundingBox();
+		return checkViewBoxAndMaxPrimitives(p, bb);
+	}
+
+	private boolean checkViewBoxAndMaxPrimitives(SVGPathPrimitive p, Real2Range bb) {
+		if (!viewBox.includes(bb) ) {
+			if (debugParams.checkViewBox) {
+				System.err.println(p+" is not inside "+viewBox);
+			}
+			return false;
+		}
+		if (documentProcessor != null && ensurePathPrimitiveList().size() > documentProcessor.getMaxPrimitives()) {
+			if (debugParams.maxPrimitives) {
+				System.err.println("primitiveList exceeded: "+pathPrimitiveList.size());
+			}
+			return false;
+		}
+		return true;
+	}
+
+
+
     public int getNdec() {
 		return ndec;
 	}
@@ -575,4 +722,10 @@ public abstract class AbstractPageParser extends PageDrawer {
 		}
 		return imageByTitle;
 	}
+
+	protected void setDefaults() {
+			viewBox = new Real2Range(new RealRange(-100, 1000), new RealRange(-100, 1000));
+	//		maxPrimitives = 5000; /// 
+		}
+
 }

@@ -44,6 +44,8 @@ import nu.xom.Attribute;
  * John Hewson
  * modified by pm286
  * 
+ * Integrated into and superseded by PageParserTwo + AbstractPageParser
+ * 
  */
 public class PageParserOne extends AbstractPageParser {
 	static final Logger LOG = Logger.getLogger(PageParserOne.class);
@@ -175,7 +177,6 @@ public class PageParserOne extends AbstractPageParser {
     	super.appendRectangle(p0, p1, p2, p3);
 
     }
-
 // ===== PATHS ========
     
     /**  this does the actual stroking 
@@ -269,16 +270,6 @@ public class PageParserOne extends AbstractPageParser {
     public void endPath() {
     	if (debugParams.showEndPath) {System.out.println(">endPath");}
     	super.endPath();
-    }
-
-// ===== IMAGE ======
-    @Override
-    public void drawImage(PDImage pdImage) throws IOException {
-    	if (debugParams.showDrawImage) {System.out.println(">drawImage "+pdImage);}
-    	super.drawImage(pdImage);
-    	LOG.debug("page serial: "+pageSerial);
-//    	super.setPageSerial(pageSerial);
-    	extractImage(pdImage);
     }
 
  // ===== Painting =====

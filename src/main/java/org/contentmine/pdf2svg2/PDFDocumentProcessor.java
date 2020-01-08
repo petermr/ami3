@@ -32,6 +32,7 @@ import org.apache.log4j.Logger;
 import org.apache.pdfbox.contentstream.PDFGraphicsStreamEngine;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.contentmine.ami.tools.AMIPDFTool;
+import org.contentmine.ami.tools.AMIPDFTool.PDFTidySVG;
 import org.contentmine.ami.tools.AMIPDFTool.ParserType;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.eucl.euclid.Int2;
@@ -70,6 +71,7 @@ public class PDFDocumentProcessor {
 	private boolean outputPDFImages = true;
 	private int maxPrimitives = 1000000;
 	private AMIPDFTool.ParserType parserType;
+	private List<PDFTidySVG> tidySVGList;
 
 	public PDFDocumentProcessor() {
 		init();
@@ -321,6 +323,14 @@ public class PDFDocumentProcessor {
 	public ParserType getParserType() {
 		return parserType;
 	}
+
+	public void setTidySVGList(List<PDFTidySVG> tidySVGList) {
+		this.tidySVGList = tidySVGList;
+	}
 	
+	public List<PDFTidySVG> getTidySVGList() {
+		return tidySVGList;
+	}
+
 
 }

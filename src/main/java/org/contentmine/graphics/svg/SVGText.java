@@ -56,6 +56,9 @@ import nu.xom.Text;
  */
 public class SVGText extends SVGElement {
 
+	private static final String MINUS90 = "-90";
+	private static final String PLUS90 = "90";
+
 	private static final String X = "x";
 
 	private static Logger LOG = Logger.getLogger(SVGText.class);
@@ -104,6 +107,8 @@ public class SVGText extends SVGElement {
 	public final static Double DEFAULT_SPACE_FACTOR = 0.05;
 	private static final double MIN_FONT_SIZE = 0.01;
 	private static final Double DEFAULT_CHARACTER_WIDTH = 500.0;
+
+	private static final String ROTATE_DEGREES = "rotateDegrees";
 
 	/** categorizes text strings as common types
 	 * 
@@ -452,15 +457,25 @@ public class SVGText extends SVGElement {
      * @return this
      */
     public void format(int places) {
-    	super.format(places);
-    	Real2 xy = getXY();
-    	if (xy != null) {
-			setXY(xy.format(places));
-	    	Double fontSize = this.getFontSize();
-	    	if (fontSize != null) {
-	    		fontSize = Util.format(fontSize, places);
-	    		this.setFontSize(fontSize);
-	    	}
+// this fails when X is an array; some decimal attributes or children might not be formatted
+//       	super.format(places);
+    	RealArray xArray = getXArray();
+    	if (xArray != null) {
+        	Double y = getY();
+        	if (y != null) {
+	        	setY(Util.format(y, places));
+        	}
+        	this.setX(xArray.format(places));
+    	} else {
+    		Real2 xy = this.getXY();
+    		if (xy != null) {
+				setXY(xy.format(places));
+    		}
+    	}
+    	Double fontSize = this.getFontSize();
+    	if (fontSize != null) {
+    		fontSize = Util.format(fontSize, places);
+    		this.setFontSize(fontSize);
     	}
     }
 
@@ -1140,7 +1155,9 @@ public class SVGText extends SVGElement {
 	}
 
 	public void setSVGXFontWidth(RealArray array) {
-		SVGUtil.setSVGXAttribute(this, WIDTH, array.getStringArray());
+		if (array != null) {
+			SVGUtil.setSVGXAttribute(this, WIDTH, array.getStringArray());
+		}
 	}
 
 	public GlyphVector getGlyphVector() {
@@ -1578,6 +1595,16 @@ public class SVGText extends SVGElement {
 		this.setX(xArray);
 	}
 
+	/** adds a y coordinate to Y array.
+	 * 
+	 * @param y
+	 */
+	public void appendY(double y) {
+		RealArray yArray = getYArray();
+		yArray.addElement(y);
+		this.setY(yArray);
+	}
+
 	/** adds an x coordinate to Width array.
 	 * 
 	 * @param x2
@@ -1616,6 +1643,25 @@ public class SVGText extends SVGElement {
 
 	/** somettimes the font styles and weights are not set properly.
 	 * 
+	 * The CSS “font-weight” property is used to define the weight of a font, such as regular or bold. This article describes how to best use font families that have extended weights that may range from Extra Light all the way to Extra Black.
+
+Here is how a regular and bold weight would be defined:
+
+font-weight:normal
+font-weight:bold
+But for all other weights a numerical range from 100 to 900 is used. One of the challenges with web fonts is that most web browsers do not properly support font weights other than normal & bold. The following chart describes the possible mappings of weights to the numeric definitions:
+
+100    Extra Light or Ultra Light
+200    Light or Thin
+300    Book or Demi
+400    Normal or Regular
+500    Medium
+600    Semibold, Demibold
+700    Bold
+800    Black, Extra Bold or Heavy
+900    Extra Black, Fat, Poster or Ultra Black
+
+
 	 * this uses the fontName/family to look for substrings such as "ital'
 	 */
 	public void addEmpiricalStylesFromFont() {
@@ -1627,7 +1673,9 @@ public class SVGText extends SVGElement {
 		if (style.equals(FontStyle.NORMAL.toString().toLowerCase()) && nameFamily.indexOf("ital") != -1) {
 			setFontStyle(FontStyle.ITALIC);
 		}
-		if (weight.equals(FontWeight.NORMAL.toString().toLowerCase()) && nameFamily.indexOf("bold") != -1) {
+		if (weight.equals(FontWeight.NORMAL.toString().toLowerCase()) && 
+				(nameFamily.indexOf("bold") != -1 ||
+				nameFamily.indexOf("med") != -1)) {
 			setFontWeight(FontWeight.BOLD.toString());
 		}
 	}
@@ -1723,9 +1771,111 @@ public class SVGText extends SVGElement {
 		}
 	}
 
+	/** add spaces to text based on character widths.
+	 * requires characters to be held as arrays, e.g.
+	 * <text y="124.844" 
+	 *    x="183.896,187.28,192.452,199.789,206.913,211.424,215.377,219.33,224.411,232.317,239.431,242.256,247.336,
+	 *         251.848,257.275,260.659,265.171,269.682,272.507,277.588,280.972,285.484"
+	 *     svgx:width="0.33,0.25,0.72,0.44,0.44,0.39,0.39,0.5,0.78,0.44,0.28,0.5,0.44,0.28,0.33,0.44,0.44,0.28,0.5,0.33,0.44,0.39"
+	 *      style="fill:rgb(0,0,0);font-family:NimbusRomNo9L-Regu;font-size:9.96px;stroke:none;" 
+	 *      xmlns:svgx="http://www.xml-cml.org/schema/svgx"
+	 *      >),weassumethatfeatures</text> 
+	 */
+	public void addSpaces() {
+		double widthFactor = 1.3;
+		String SPACE = " ";
+		RealArray xArray = this.getXArray();
+		RealArray widths = this.getSVGXFontWidthArray();
+		StringBuilder sb = new StringBuilder(this.getValue());
+		for (int i = xArray.size() - 1; i > 0; i--) {
+			double x0 = xArray.elementAt(i - 1);
+			double x1 = xArray.elementAt(i);
+			double fontSize = this.getFontSize();
+			// apparently they may be the same? 
+			if (x1 < x0) {
+				LOG.error("xArray out of order at: " + i + "/" + xArray);
+				return;
+			}
+			double delta = x1 - x0;
+			double width = widths.elementAt(i - 1);
+			double screenWidth = fontSize * width;
+			if (delta > screenWidth * widthFactor) {
+				sb.insert(i,  SPACE);
+				xArray.insertElementAt(i, x0 + screenWidth);
+				widths.insertElementAt(i, N_SPACE);
+			}
+		}
+		this.setX(xArray);
+		this.setSVGXFontWidth(widths);
+		this.setText(sb.toString());
+	}
 
-	
+	/** concatenates a list of SVGTexts.
+	 * most suitable for a list in approximate reading order.
+	 * Manages both static Y (horizontal) and static X (rotated, vert)
+	 * Assumes the texts are in chunks with same Static, and same style and same parent
+	 * breaks whenever neighbours differ in Static or style or parent.
+	 * Uses the first newText as the seed to append* the remaining tests. Typically 
+	 * a <g> element with text children will emerge as the same element but with many fewer
+	 * (array-based) children, perhaps only one.
+	 * 
+	 */
+	public static void concatenate(List<SVGText> texts, double eps) {
+		SVGText previousText = null;
+		SVGElement previousParent = null;
+		Double previousStaticCoord = null;
+		String previousStyle = null;
+		SVGText newText = null;
+		Double lastX = null;
+		Double lastY = null;
+		for (SVGText text : texts) {
+			SVGElement currentParent = (SVGElement) text.getParent();
+			String rotate = text.getRotateDegrees();
+			boolean rotate90 = PLUS90.equals(rotate) || MINUS90.equals(rotate);
+			Double currentStaticCoord = rotate90 ? text.getX() : text.getY();
+			String currentStyle = text.getStyle();
+			if (previousText == null ||
+				!currentParent.equals(previousParent) ||
+				!Real.isEqual(currentStaticCoord, previousStaticCoord, eps) ||
+				currentStyle == null ||
+				!currentStyle.equals(previousStyle)) {
+					// move on
+					newText = text;
+					lastY = text.getY();
 
+			} else {
+				text.detach();
+				if (rotate90) {
+					double deltaY = lastY - text.getY();
+					newText.appendX(text.getX() + deltaY);
+				} else {
+					newText.appendX(text.getX());
+				}
+				newText.appendText(text.getValue());
+				newText.appendFontWidth(text.getSVGXFontWidth());
+			}
+			previousStaticCoord = currentStaticCoord;
+			previousStyle = currentStyle;
+			previousParent = currentParent;
+			previousText = text;
+			lastX = text.getX();
+		}
+		return;
+	}
+
+	private String getRotateDegrees() {
+		String rotateDegrees = this.getAttributeValue(ROTATE_DEGREES);
+		return rotateDegrees;
+	}
+
+	public void setRotateAttributeDegrees(String value) {
+		this.addAttribute(new Attribute(ROTATE_DEGREES, value));
+	}
+
+	public void setRotateAttributeDegrees(Angle angle, int ndec) {
+		String deg = String.valueOf(Util.format(angle.getDegrees(), ndec)).replaceAll("\\.0", "");
+		this.addAttribute(new Attribute(ROTATE_DEGREES, deg));
+	}
 
 }
 class XComparator implements Comparator<SVGText> {
