@@ -95,6 +95,14 @@ public class LineCache extends AbstractCache {
 		// leave lists as null untill needed
 	}
 	
+	public static LineCache createLineCache(AbstractCMElement svgElement) {
+		ComponentCache componentCache = new ComponentCache();		
+		componentCache.readGraphicsComponentsAndMakeCaches(svgElement);
+		LineCache lineCache = componentCache.getOrCreateLineCache();
+		return lineCache;
+	}
+	
+
 	/** clears the internediate caaches such a horizontal lines
 	 * messy but necessary when repeatedly adding data.
 	 * don't know whether caching is worth it.
@@ -574,13 +582,21 @@ public class LineCache extends AbstractCache {
 	 * @return
 	 */
 	public static SVGLineList createLineCacheAndDisplay(File outdir, String outName, AbstractCMElement svgElement) {
-		ComponentCache componentCache = new ComponentCache();
-		componentCache.readGraphicsComponentsAndMakeCaches(svgElement);
-		LineCache lineCache = componentCache.getOrCreateLineCache();
+		LineCache lineCache = createLineCache(svgElement);
 		SVGSVG.wrapAndWriteAsSVG(lineCache.getOrCreateConvertedSVGElement(), new File(outdir, outName));
 		SVGLineList lineList = lineCache.getOrCreateLineList();
 		return lineList;
 	}
+
+	public LineBoxCache createLineBoxCache() {
+		LineBoxCache lineBoxCache = new LineBoxCache();
+		getOrCreateHorizontalLineList();
+		getOrCreateVerticalLineList();
+		lineBoxCache.createLineBoxes(horizontalLines, verticalLines);
+		return lineBoxCache;
+	}
+
+
 
 
 

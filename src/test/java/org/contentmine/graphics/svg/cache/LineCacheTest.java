@@ -15,8 +15,6 @@ import org.junit.Test;
  *
  */
 public class LineCacheTest {
-
-
 	private static final File OUTDIR = new File("target/table/cache/");
 
 	/** a 2-level header bar which involves rowspans

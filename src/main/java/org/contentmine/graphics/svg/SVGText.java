@@ -643,7 +643,7 @@ public class SVGText extends SVGElement {
 	 */
 	public Double getEstimatedHorizontalLength(double fontWidthFactor) {
 		estimatedHorizontallength = Double.NaN;
-		if (xArray != null && yArray != null) {
+		if (xArray != null /* && yArray != null*/) {
 			String text = getText();
 			int nchar = xArray.size();
 			// get length from x-coordinates
@@ -657,7 +657,7 @@ public class SVGText extends SVGElement {
 			} else {
 				lastFontWidth = fontWidthArray.getMean();
 			}
-			estimatedHorizontallength += lastFontWidth * 0.001 * this.getFontSize();
+			estimatedHorizontallength += lastFontWidth /* * 0.001 */ * this.getFontSize();
 		} else if (getChildTSpans().size() == 0) {
 			String s = getText();
 			if (s != null) {

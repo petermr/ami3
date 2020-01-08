@@ -1,5 +1,6 @@
 package org.contentmine.graphics.svg.cache;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -18,8 +19,10 @@ import org.contentmine.graphics.html.HtmlP;
 import org.contentmine.graphics.html.HtmlSpan;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
+import org.contentmine.graphics.svg.SVGLineList;
 import org.contentmine.graphics.svg.SVGLine.LineDirection;
 import org.contentmine.graphics.svg.SVGRect;
+import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.graphics.svg.SVGText;
 import org.contentmine.graphics.svg.SVGTextComparator;
 import org.contentmine.graphics.svg.StyleAttributeFactory;
@@ -82,6 +85,7 @@ public class TextCache extends AbstractCache {
 	SVGTextLineList processedTextLines;
 	private Stack<TextLineFormatter> lineFormatterStack;
 	private SuscriptFormatter suscriptFormatter;
+	private List<Real2Range> bboxList;
 
 	
 	public TextCache(ComponentCache svgCache) {
@@ -796,6 +800,48 @@ public class TextCache extends AbstractCache {
 	public void setSuscriptFormatter(SuscriptFormatter suscriptFormatter) {
 		this.suscriptFormatter = suscriptFormatter;
 	}
+
+	/** convenience method to create TextCache and display contents
+	 * 
+	 * 
+	 * @param outdir
+	 * @param outName
+	 * @param svgElement
+	 * @return
+	 */
+	public static List<SVGText> createTextCacheAndDisplay(
+			File outdir, String outName, AbstractCMElement svgElement, boolean addBBox) {
+		ComponentCache componentCache = new ComponentCache();
+		componentCache.readGraphicsComponentsAndMakeCaches(svgElement);
+		TextCache textCache = componentCache.getOrCreateTextCache();
+		SVGElement convertedSVGElement = textCache.getOrCreateConvertedSVGElement();
+		SVGElement displayElement = (SVGElement) convertedSVGElement.copy();
+		if (addBBox) {
+			List<Real2Range> textBoxList = textCache.getOrCreateBoundingBoxList();
+			for (Real2Range textBox : textBoxList) {
+				displayElement.appendChild(SVGRect.createFromReal2Range(textBox)
+						.setFill("red").setStroke("blue").setStrokeWidth(0.3).setOpacity(0.2));
+			}
+		}
+		SVGSVG.wrapAndWriteAsSVG(displayElement, new File(outdir, outName));
+		//not used
+		List<SVGText> textList = textCache.getOrCreateCurrentTextList();
+		return textList;
+	}
+
+	private List<Real2Range> getOrCreateBoundingBoxList() {
+		if (bboxList == null) {
+			bboxList = new ArrayList<>();
+			getOrCreateCurrentTextList();
+			for (SVGText text : currentTextList) {
+				Real2Range bbox = text.getBoundingBox();
+				bboxList.add(bbox);
+	//			SVGRect rect = text.getBoundingSVGRect();
+			}
+		}
+		return bboxList;
+	}
+
 
 
 

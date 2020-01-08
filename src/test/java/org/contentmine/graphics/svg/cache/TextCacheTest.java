@@ -28,9 +28,10 @@ import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import com.gargoylesoftware.htmlunit.javascript.host.svg.SVGRect;
 import com.google.common.collect.Multimap;
 
-public class TextCacheTest {
+public class TextCacheTest extends AbstractCacheTest {
 
 
 private static final Logger LOG = Logger.getLogger(TextCacheTest.class);
@@ -370,7 +371,19 @@ private static final Logger LOG = Logger.getLogger(TextCacheTest.class);
 
 	}
 
-	
+	/** first step towards creating components by expanding local components
+	 * 
+	 */
+	@Test
+	public void testPage() {
+		String root = "fullPageNestedPanels";
+		File pageFile = new File(CACHE_TEST, root+".svg");
+		SVGElement svgElement = SVGElement.readAndCreateSVG(pageFile);
+		boolean addBBox = true;
+		List<SVGText> textList = TextCache.createTextCacheAndDisplay(CACHE_TEST, root+".text.svg", svgElement, addBBox);
+		Assert.assertEquals("texts",  489, textList.size());
+	}
+
 
 
 }
