@@ -19,7 +19,7 @@ import nu.xom.Element;
  */
 public class QSRecord {
 
-	private static final String HTTP_DX_DOI_ORG = "http://dx.doi.org/";
+	private static final String HTTP_DX_DOI_ORG = "https://doi.org/";
 	private static final Logger LOG = Logger.getLogger(QSRecord.class);
 	static {
 		LOG.setLevel(Level.DEBUG);

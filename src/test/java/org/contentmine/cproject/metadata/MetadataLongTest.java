@@ -48,16 +48,16 @@ public class MetadataLongTest {
 		List<String> lines = FileUtils.readLines(shuffledUrlsOutFilename);
 		Assert.assertEquals("lines "+lines.size(), 12141,  lines.size());
 		lines = lines.subList(0,  10);
-		Assert.assertEquals("lines "+lines.size(), "[http://dx.doi.org/10.1002/zoo.21264,"
-				+ " http://dx.doi.org/10.1007/s41105-016-0048-8,"
-				+ " http://dx.doi.org/10.1016/s2225-4110(16)00008-0,"
-				+ " http://dx.doi.org/10.1017/s2045796016000044,"
-				+ " http://dx.doi.org/10.1021/mpv013i002_797621,"
-				+ " http://dx.doi.org/10.1016/s2225-4110(16)00007-9,"
-				+ " http://dx.doi.org/10.1037/tra0000087.supp,"
-				+ " http://dx.doi.org/10.1038/srep20371,"
-				+ " http://dx.doi.org/10.1039/c6tc00170j,"
-				+ " http://dx.doi.org/10.1049/iet-wss.2014.0090]"
+		Assert.assertEquals("lines "+lines.size(), "[https://doi.org/10.1002/zoo.21264,"
+				+ " https://doi.org/10.1007/s41105-016-0048-8,"
+				+ " https://doi.org/10.1016/s2225-4110(16)00008-0,"
+				+ " https://doi.org/10.1017/s2045796016000044,"
+				+ " https://doi.org/10.1021/mpv013i002_797621,"
+				+ " https://doi.org/10.1016/s2225-4110(16)00007-9,"
+				+ " https://doi.org/10.1037/tra0000087.supp,"
+				+ " https://doi.org/10.1038/srep20371,"
+				+ " https://doi.org/10.1039/c6tc00170j,"
+				+ " https://doi.org/10.1049/iet-wss.2014.0090]"
 				+ "",  lines.toString());
 	}
 

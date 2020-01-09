@@ -89,7 +89,7 @@ public class ManifestTest {
 2    [main] DEBUG org.contentmine.norma.json.ManifestTest  - pubModel = "Electronic-eCollection"
 2    [main] DEBUG org.contentmine.norma.json.ManifestTest  - pubTypeList = {"pubType":["Journal Article"]}
 2    [main] DEBUG org.contentmine.norma.json.ManifestTest  - subsetList = {"subset":[{"code":["IM"],"name":["Index Medicus"]}]}
-2    [main] DEBUG org.contentmine.norma.json.ManifestTest  - fullTextUrlList = {"fullTextUrl":[{"availability":["Open access"],"availabilityCode":["OA"],"documentStyle":["pdf"],"site":["Europe_PMC"],"url":["http://europepmc.org/articles/PMC4441471?pdf=render"]},{"availability":["Open access"],"availabilityCode":["OA"],"documentStyle":["html"],"site":["Europe_PMC"],"url":["http://europepmc.org/articles/PMC4441471"]},{"availability":["Subscription required"],"availabilityCode":["S"],"documentStyle":["doi"],"site":["DOI"],"url":["http://dx.doi.org/10.1371/journal.pone.0127339"]}]}
+2    [main] DEBUG org.contentmine.norma.json.ManifestTest  - fullTextUrlList = {"fullTextUrl":[{"availability":["Open access"],"availabilityCode":["OA"],"documentStyle":["pdf"],"site":["Europe_PMC"],"url":["http://europepmc.org/articles/PMC4441471?pdf=render"]},{"availability":["Open access"],"availabilityCode":["OA"],"documentStyle":["html"],"site":["Europe_PMC"],"url":["http://europepmc.org/articles/PMC4441471"]},{"availability":["Subscription required"],"availabilityCode":["S"],"documentStyle":["doi"],"site":["DOI"],"url":["https://doi.org/10.1371/journal.pone.0127339"]}]}
 2    [main] DEBUG org.contentmine.norma.json.ManifestTest  - isOpenAccess = "Y"
 2    [main] DEBUG org.contentmine.norma.json.ManifestTest  - inEPMC = "Y"
 2    [main] DEBUG org.contentmine.norma.json.ManifestTest  - inPMC = "N"

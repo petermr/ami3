@@ -50,18 +50,18 @@ public class CProjectCommandTest {
 		List<String> lines = FileUtils.readLines(urls);
 		Assert.assertEquals(30,  lines.size());
 		Assert.assertEquals("["
-				+ "http://dx.doi.org/10.1002/adaw.30456,"
-				+ " http://dx.doi.org/10.1007/s00332-016-9284-y,"
-				+ " http://dx.doi.org/10.1007/s00300-016-1897-y,"
-				+ " http://dx.doi.org/10.1007/s00294-016-0568-4,"
-				+ " http://dx.doi.org/10.1002/acs.2674,"
-				+ " http://dx.doi.org/10.1016/j.ijpe.2016.01.022,"
-				+ " http://dx.doi.org/10.1007/s00294-016-0564-8,"
-				+ " http://dx.doi.org/10.1515/tjj-2015-0056,"
-				+ " http://dx.doi.org/10.1002/acs.2662,"
-				+ " http://dx.doi.org/10.1007/s00291-015-0429-4,"
-				+ " http://dx.doi.org/10.1016/j.ijpe.2016.01.021,"
-				+ " http://dx.doi.org/10.1007/s0028",
+				+ "https://doi.org/10.1002/adaw.30456,"
+				+ " https://doi.org/10.1007/s00332-016-9284-y,"
+				+ " https://doi.org/10.1007/s00300-016-1897-y,"
+				+ " https://doi.org/10.1007/s00294-016-0568-4,"
+				+ " https://doi.org/10.1002/acs.2674,"
+				+ " https://doi.org/10.1016/j.ijpe.2016.01.022,"
+				+ " https://doi.org/10.1007/s00294-016-0564-8,"
+				+ " https://doi.org/10.1515/tjj-2015-0056,"
+				+ " https://doi.org/10.1002/acs.2662,"
+				+ " https://doi.org/10.1007/s00291-015-0429-4,"
+				+ " https://doi.org/10.1016/j.ijpe.2016.01.021,"
+				+ " https://doi.org/10.1007/s0028",
 				lines.toString().substring(0, 500));
 	}
 
@@ -82,18 +82,18 @@ public class CProjectCommandTest {
 		List<String> lines = FileUtils.readLines(urls);
 		Assert.assertEquals(30,  lines.size());
 		Assert.assertEquals("["
-				+ "http://dx.doi.org/10.1002/adaw.30456,"
-				+ " http://dx.doi.org/10.1007/s00332-016-9284-y,"
-				+ " http://dx.doi.org/10.1007/s00300-016-1897-y,"
-				+ " http://dx.doi.org/10.1007/s00294-016-0568-4,"
-				+ " http://dx.doi.org/10.1002/acs.2674,"
-				+ " http://dx.doi.org/10.1016/j.ijpe.2016.01.022,"
-				+ " http://dx.doi.org/10.1007/s00294-016-0564-8,"
-				+ " http://dx.doi.org/10.1515/tjj-2015-0056,"
-				+ " http://dx.doi.org/10.1002/acs.2662,"
-				+ " http://dx.doi.org/10.1007/s00291-015-0429-4,"
-				+ " http://dx.doi.org/10.1016/j.ijpe.2016.01.021,"
-				+ " http://dx.doi.org/10.1007/s0028",
+				+ "https://doi.org/10.1002/adaw.30456,"
+				+ " https://doi.org/10.1007/s00332-016-9284-y,"
+				+ " https://doi.org/10.1007/s00300-016-1897-y,"
+				+ " https://doi.org/10.1007/s00294-016-0568-4,"
+				+ " https://doi.org/10.1002/acs.2674,"
+				+ " https://doi.org/10.1016/j.ijpe.2016.01.022,"
+				+ " https://doi.org/10.1007/s00294-016-0564-8,"
+				+ " https://doi.org/10.1515/tjj-2015-0056,"
+				+ " https://doi.org/10.1002/acs.2662,"
+				+ " https://doi.org/10.1007/s00291-015-0429-4,"
+				+ " https://doi.org/10.1016/j.ijpe.2016.01.021,"
+				+ " https://doi.org/10.1007/s0028",
 				lines.toString().substring(0, 500));
 	}
 
@@ -138,10 +138,10 @@ public class CProjectCommandTest {
 		Assert.assertEquals(132,  lines.size());
 		Assert.assertEquals("["
 				+ "URL,Title,Date,PDFURL,PDFFile,HTMLURL,HTMLFile,XMLURL,XMLFile,DOI,Publisher,Volume,AuthorList,Type,Issue,FirstPage,Description,Abstract,Journal,License,Links,Copyright,ISSN,Keywords,QuickscrapeMD,CrossrefMD,PublisherMD,Prefix,"
-				+ " http://dx.doi.org/10.1001/jama.2016.7992,Sodium Reduction—Saving Lives by Putting Choice Into Consumers’ Hands,2016-06-01T23:24:00Z,,N,,N,,N,10.1001/jama.2016.7992,American Medical Association (AMA),,\"[Frieden Thomas R. [{\"\"name\"\":\"\"Centers for Disease Control and Prevention, Atlanta, Georgia\"\"}], ]\",journal-article,,,,,JAMA,0: [],0: [],,0098-7484,\"[[\"\"Medicine(all)\"\"]]\",N,N,N,http://id.crossref.org/prefix/10.1001,"
-				+ " http://dx.doi.org/10.1002/ab.21660,\"The relationship between physical aggression, foreign policy and moral choices: Phenotypic and genetic findings\",2016-06-01T04:27:39Z,,N,,N,,N,10.1002/ab.21660,Wiley-Blackwell,,\"[McDermott Rose [{\"\"name\"\":\"\"Brown University; Providence Rhode Island\"\"}], , Hatemi Peter K. [{\"\"name\"\":\"\"Pennsylvania State University; State College Pennsylvania\"\"}], ]\",journal-article,,,,,Aggr. Behav.,"
-				+ "\"2: [http://doi.wiley.com/10.1002/tdm_license_1, http://onlinelibrary.wiley.com/termsAndConditions]\",1: [application/pdf http://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fab.21660],,0096-140X,\"[[\"\"Psychology(all)\"\"]]\",N,N,N,http://id.crossref.org/prefix/10.1002, http://dx.doi.org/10.1002/acp.3238,Die Hard in Notting Hill: Gender Differences in Recalling Contents from Action and Romantic Movies,2016-06-01T08:12:49Z,,N,,N,,N,10.1002/acp.3238,Wiley-Blackwell,,\"[Wühr Peter [{\"\"name\"\":\"\"Institut für Psychologie; Technische Universität Dortmund; Dortmund Germany\"\"}], , Schwarz Sascha [{\"\"name\"\":\"\"Institut für Psychologie; Bergische Universität Wuppertal; Wuppertal Germany\"\"}], ]\",journal-article,,,,,Applied Cognitive Psychology,"
-				+ "\"2: [http://doi.wiley.com/10.1002/tdm_license_1, http://onlinelibrary.wiley.com/termsAndConditions]\",1: [application/pdf http://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Facp.3238],,0888-4080,\"[[\"\"Experimental and Cognitive Psychology\"\"]]\",N,N,N,http://id.crossref.org/prefix/10.1002, http://dx.doi.org/10.1002/acp.3239,Improving Unfamiliar Face Matching by Masking the External Facial Features,2016-06-01T08:13:03Z,,N,,N,,N,10.1002/acp.3239,Wiley-Blackwell,,\"[Kemp Richard I. [{\"\"name\"\":\"\"School of Psychology; University of New South Wales; Sydney Australia\"\"}], , Caon Alita [{\"\"name\"\":\"\"School of Psychology; University of New South Wales; Sydney Australia\"\"}], , Howard Mark [{\"\"name\"\":\"\"School of Psychology; University of New South Wales; Sydney Australia\"\"}], , Brooks Kevin R. [{\"\"name\"\":\"\"Department of Psychology; Macquarie University; Sydney Australia\"\"},{\"\"name\"\":\"\"Perception in Action Research Centre (PARC), Faculty of Human Sciences; Macquarie University; Sydney Australia\"\"}], ]\",journal-article,,,,,Applied Cognitive Psychology,"
+				+ " https://doi.org/10.1001/jama.2016.7992,Sodium Reduction—Saving Lives by Putting Choice Into Consumers’ Hands,2016-06-01T23:24:00Z,,N,,N,,N,10.1001/jama.2016.7992,American Medical Association (AMA),,\"[Frieden Thomas R. [{\"\"name\"\":\"\"Centers for Disease Control and Prevention, Atlanta, Georgia\"\"}], ]\",journal-article,,,,,JAMA,0: [],0: [],,0098-7484,\"[[\"\"Medicine(all)\"\"]]\",N,N,N,http://id.crossref.org/prefix/10.1001,"
+				+ " https://doi.org/10.1002/ab.21660,\"The relationship between physical aggression, foreign policy and moral choices: Phenotypic and genetic findings\",2016-06-01T04:27:39Z,,N,,N,,N,10.1002/ab.21660,Wiley-Blackwell,,\"[McDermott Rose [{\"\"name\"\":\"\"Brown University; Providence Rhode Island\"\"}], , Hatemi Peter K. [{\"\"name\"\":\"\"Pennsylvania State University; State College Pennsylvania\"\"}], ]\",journal-article,,,,,Aggr. Behav.,"
+				+ "\"2: [http://doi.wiley.com/10.1002/tdm_license_1, http://onlinelibrary.wiley.com/termsAndConditions]\",1: [application/pdf http://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fab.21660],,0096-140X,\"[[\"\"Psychology(all)\"\"]]\",N,N,N,http://id.crossref.org/prefix/10.1002, https://doi.org/10.1002/acp.3238,Die Hard in Notting Hill: Gender Differences in Recalling Contents from Action and Romantic Movies,2016-06-01T08:12:49Z,,N,,N,,N,10.1002/acp.3238,Wiley-Blackwell,,\"[Wühr Peter [{\"\"name\"\":\"\"Institut für Psychologie; Technische Universität Dortmund; Dortmund Germany\"\"}], , Schwarz Sascha [{\"\"name\"\":\"\"Institut für Psychologie; Bergische Universität Wuppertal; Wuppertal Germany\"\"}], ]\",journal-article,,,,,Applied Cognitive Psychology,"
+				+ "\"2: [http://doi.wiley.com/10.1002/tdm_license_1, http://onlinelibrary.wiley.com/termsAndConditions]\",1: [application/pdf http://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Facp.3238],,0888-4080,\"[[\"\"Experimental and Cognitive Psychology\"\"]]\",N,N,N,http://id.crossref.org/prefix/10.1002, https://doi.org/10.1002/acp.3239,Improving Unfamiliar Face Matching by Masking the External Facial Features,2016-06-01T08:13:03Z,,N,,N,,N,10.1002/acp.3239,Wiley-Blackwell,,\"[Kemp Richard I. [{\"\"name\"\":\"\"School of Psychology; University of New South Wales; Sydney Australia\"\"}], , Caon Alita [{\"\"name\"\":\"\"School of Psychology; University of New South Wales; Sydney Australia\"\"}], , Howard Mark [{\"\"name\"\":\"\"School of Psychology; University of New South Wales; Sydney Australia\"\"}], , Brooks Kevin R. [{\"\"name\"\":\"\"Department of Psychology; Macquarie University; Sydney Australia\"\"},{\"\"name\"\":\"\"Perception in Action Research Centre (PARC), Faculty of Human Sciences; Macquarie University; Sydney Australia\"\"}], ]\",journal-article,,,,,Applied Cognitive Psychology,"
 				+ "\"2: [http://doi.wiley.com/10.1002/tdm_license_1, http://onlinelibrary.wiley.com/termsAndConditions]\",1: [application/pdf http://api.",
 				lines.toString().substring(0, Math.min(lines.toString().length(), 3000)));
 	}
