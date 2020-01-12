@@ -28,8 +28,8 @@ public class MathCache extends AbstractCache {
 	private StyleRecordSet horizontalStyleRecordSet;
 	private SVGTextLineList textLineList;
 	
-	private MathCache() {
-		
+	public MathCache() {
+		this(new ComponentCache());
 	}
 	
 	public MathCache(ComponentCache containingComponentCache) {

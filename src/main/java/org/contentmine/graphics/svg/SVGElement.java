@@ -26,6 +26,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -272,6 +273,19 @@ public class SVGElement extends GraphicsElement {
 		Element element = (file == null) ? null : XMLUtil.parseQuietlyToDocument(file).getRootElement();
 		return (element == null ? null : readAndCreateSVG(element));
 	}
+
+	/**
+	 * Converts an SVG path to SVGElement
+	 * 
+	 * @param path
+	 * @return
+	 */
+
+	public static SVGElement readAndCreateSVG(Path path) {
+		return SVGElement.readAndCreateSVG(path.toFile());
+	}
+	
+	
 	
 	/** 
 	 * Converts an SVG file to SVGElement

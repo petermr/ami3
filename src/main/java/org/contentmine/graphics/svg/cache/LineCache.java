@@ -49,14 +49,14 @@ public class LineCache extends AbstractCache {
 	}
 	private static Double STROKE_WIDTH_FACTOR = 5.0;
 
-	private List<SVGLine> horizontalLines;
-	private List<SVGLine> verticalLines;
+	private List<SVGLine> horizontalLines = new ArrayList<>();
+	private List<SVGLine> verticalLines = new ArrayList<>();
 
 	private SVGLineList lineList;
-	private SVGLineList longHorizontalLineList;
+	private SVGLineList longHorizontalLineList = new SVGLineList();
 	// where possible short horizontal lines will be contained within sibling tuples
-	private SVGLineList shortHorizontalLineList;
-	private List<SVGLineList> horizontalSiblingsList;
+	private SVGLineList shortHorizontalLineList  = new SVGLineList();
+	private List<SVGLineList> horizontalSiblingsList = new ArrayList<>();
 	private SVGLineList topHorizontalLineList;
 	private SVGLineList bottomHorizontalLineList;
 	private Multiset<Double> horizontalLineStrokeWidthSet;
@@ -92,16 +92,15 @@ public class LineCache extends AbstractCache {
 	}
 	
 	private void init() {
-		// leave lists as null untill needed
+		// leave lists as null until needed
 	}
 	
 	public static LineCache createLineCache(AbstractCMElement svgElement) {
-		ComponentCache componentCache = new ComponentCache();		
+		ComponentCache componentCache = new ComponentCache();
 		componentCache.readGraphicsComponentsAndMakeCaches(svgElement);
 		LineCache lineCache = componentCache.getOrCreateLineCache();
 		return lineCache;
 	}
-	
 
 	/** clears the internediate caaches such a horizontal lines
 	 * messy but necessary when repeatedly adding data.
@@ -132,6 +131,7 @@ public class LineCache extends AbstractCache {
 		return getOrCreateBoundingBox(lineList.getLineList());
 	}
 
+	@Override
 	public List<? extends SVGElement> getOrCreateElementList() {
 		return getOrCreateLineList().getLineList();
 	}
@@ -588,6 +588,7 @@ public class LineCache extends AbstractCache {
 		return lineList;
 	}
 
+	/** lineBoxCache requires lineCaches first */
 	public LineBoxCache createLineBoxCache() {
 		LineBoxCache lineBoxCache = new LineBoxCache();
 		getOrCreateHorizontalLineList();
@@ -595,6 +596,7 @@ public class LineCache extends AbstractCache {
 		lineBoxCache.createLineBoxes(horizontalLines, verticalLines);
 		return lineBoxCache;
 	}
+
 
 
 

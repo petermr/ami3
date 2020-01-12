@@ -599,7 +599,7 @@ public class JATSElement extends Element {
 		XMLUtil.copyAttributes(this, htmlElement);
 		for (int i = 0; i < this.getChildCount(); i++) {
 			Node child = this.getChild(i);
-			if (child instanceof Element) {
+			if (child instanceof JATSElement) {
 				HtmlElement childHtml = ((JATSElement)child).createHTML();
 				htmlElement.appendChild(childHtml);
 			} else {

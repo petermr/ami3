@@ -35,7 +35,6 @@ import org.apache.pdfbox.rendering.PageDrawer;
 import org.apache.pdfbox.rendering.PageDrawerParameters;
 import org.contentmine.ami.tools.AMIPDFTool;
 import org.contentmine.ami.tools.AMIPDFTool.PDFTidySVG;
-import org.contentmine.ami.tools.AbstractAMITest;
 import org.contentmine.graphics.svg.SVGConstants;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
@@ -475,7 +474,10 @@ public class PageParserRunner
 		this.setPageSerial(PageSerial.createFromZeroBasedPage(pageIndex));
 		processPage(pageIndex);
 		
-		outputDir = AbstractAMITest.PDF2SVG2;
+//		outputDir = AbstractAMITest.PDF2SVG2;
+		outputDir = new File("target/pageParser/");
+		LOG.warn("creating target/pageParser/ dir - probably contains test data");
+		outputDir.mkdirs();
 		outputPngFile = new File(outputDir, root+"."+pageIndex+".png");
 		
 		try {

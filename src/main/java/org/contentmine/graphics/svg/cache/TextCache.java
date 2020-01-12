@@ -93,6 +93,10 @@ public class TextCache extends AbstractCache {
 		init();
 	}
 
+	public TextCache() {
+		this(new ComponentCache());
+	}
+
 	private void init() {
 		this.lineFormatterStack = new Stack<TextLineFormatter>();
 		lineFormatterStack.push(TextLineFormatter.createDefaultFormatter(this));

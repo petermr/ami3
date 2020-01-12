@@ -1,6 +1,7 @@
 package org.contentmine.graphics.svg.cache;
 
 import java.io.File;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -179,4 +180,16 @@ public abstract class AbstractCache {
 	public void setSiblingShapeCache(ShapeCache shapeCache) {
 		this.siblingShapeCache = shapeCache;
 	}
+
+	public void display(File svgDir, Path path, SVGElement svgElement) {
+		AbstractCache cache = this.createCache(svgElement);
+		SVGElement cacheElement = cache.getOrCreateConvertedSVGElement();
+		File svgOut = new File(svgDir, path.toString().replaceAll("\\.svg", "")+"."+cache.getClass().getSimpleName()+".svg");
+		SVGSVG.wrapAndWriteAsSVG(cacheElement, svgOut);
+	}
+
+	protected AbstractCache createCache(SVGElement svgElement) {
+		throw new RuntimeException("Override AbstractCache createCache in "+this.getClass());
+	}
+//	protected abstract AbstractCache createCache(SVGElement svgElement);
 }

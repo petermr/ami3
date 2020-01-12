@@ -26,8 +26,8 @@ public class PolygonCache extends AbstractCache {
 //	private List<SVGTriangle> triangleList;
 	private double DEFAULT_PANEL_EPS;
 	
-	private PolygonCache() {
-		
+	public PolygonCache() {
+		this(new ComponentCache());
 	}
 	
 	public PolygonCache(ComponentCache containingComponentCache) {

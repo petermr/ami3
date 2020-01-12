@@ -94,6 +94,10 @@ public class PathCache extends AbstractCache{
 		setDefaults();
 	}
 	
+	public PathCache() {
+		this(new ComponentCache());
+	}
+
 	private void setDefaults() {
 		pathBoxColor = "orange";
 	}

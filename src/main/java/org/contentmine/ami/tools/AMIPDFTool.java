@@ -167,6 +167,8 @@ public class AMIPDFTool extends AbstractAMITool {
 			docProcRunPDF();
 		} else if (ParserDebug.AMI_TWO.equals(parserDebug)) {
 			docProcRunPDF();
+		} else if (ParserDebug.AMI_BRIEF.equals(parserDebug)) {
+			docProcRunPDF();
 //			amiPDF();
 		} else if (ParserType.ami.equals(parserType)) {
 			amiPDF();

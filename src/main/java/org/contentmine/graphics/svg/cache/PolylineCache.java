@@ -24,8 +24,8 @@ public class PolylineCache extends AbstractCache {
 	private List<SVGPolyline> polylineList;
 	private double DEFAULT_PANEL_EPS;
 	
-	private PolylineCache() {
-		
+	public PolylineCache() {
+		this(new ComponentCache());
 	}
 	
 	public PolylineCache(ComponentCache containingComponentCache) {

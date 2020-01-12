@@ -63,7 +63,7 @@ public class DocumentCache extends ComponentCache {
 	private PubstyleManager pubstyleManager;
 	private CTree cTree;
 
-	protected DocumentCache() {
+	public DocumentCache() {
 		init();
 	}
 

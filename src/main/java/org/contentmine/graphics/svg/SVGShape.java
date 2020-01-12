@@ -19,7 +19,7 @@ import nu.xom.Attribute;
  * @author pm286
  *
  */
-public abstract class SVGShape extends SVGElement {
+public abstract class SVGShape extends /*GraphicsElement*/ SVGElement {
 	private static final Logger LOG = Logger.getLogger(SVGShape.class);
 	static {
 		LOG.setLevel(Level.DEBUG);

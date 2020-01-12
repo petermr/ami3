@@ -55,6 +55,10 @@ public class ShapeCache extends AbstractCache {
 		init();
 	}
 	
+	public ShapeCache() {
+		this(new ComponentCache());
+	}
+
 	private void init() {
 		pathList = new ArrayList<SVGPath>();
 		unknownShapeList = new ArrayList<SVGShape>();
