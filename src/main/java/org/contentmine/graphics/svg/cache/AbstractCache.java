@@ -27,7 +27,54 @@ public abstract class AbstractCache {
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
+
+	public enum CacheType {
+		/**
+		document(new DocumentCache()),
+		glyph(new GlyphCache()),
+		image(new ImageCache()),
+		line(new LineCache()),
+		linebox(new LineBoxCache()),
+		math(new MathCache()),
+		page(new PageCache()),
+		// more page components could go here
+		path(new PathCache()),
+		polygon(new PolygonCache()),
+		polyline(new PolylineCache()),
+		rect(new RectCache()),
+		shape(new ShapeCache()),
+		text(new TextCache()),
+		*/
+		document,
+		glyph,
+		image,
+		line,
+		linebox,
+		math,
+		page,
+		// more page components could go here
+		path,
+		polygon,
+		polyline,
+		rect,
+		shape,
+		text,
+		;
+		private AbstractCache cache;
+		private CacheType() { 
+		}
+		
+		private CacheType(AbstractCache cache) {
+			this();
+			this.cache = cache; 
+		}
+		
+		public AbstractCache getCache() {
+			return cache;
+		}
+	}
 	
+
 	public static final double MARGIN = 1.0;
 	
 	protected Double axialEps = 0.1;

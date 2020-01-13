@@ -56,6 +56,7 @@ import nu.xom.Text;
  */
 public class SVGText extends SVGElement {
 
+	private static final String ILLEGAL_TEXT = ""+(char)127;
 	private static final String MINUS90 = "-90";
 	private static final String PLUS90 = "90";
 
@@ -536,7 +537,9 @@ public class SVGText extends SVGElement {
 			try {
 				this.appendChild(text);
 			} catch (nu.xom.IllegalCharacterDataException e) {
-				throw new nu.xom.IllegalCharacterDataException("Cannot append text: "+text+" (char-"+(int)text.charAt(0)+")", e);
+//				throw new nu.xom.IllegalCharacterDataException("Cannot append text: "+text+" (char-"+(int)text.charAt(0)+")", e);
+				System.err.println(""+text+" (char-"+(int)text.charAt(0)+")" + e);
+				this.appendChild(ILLEGAL_TEXT);
 			}
 		}
 		boundingBox = null;
@@ -1793,7 +1796,8 @@ But for all other weights a numerical range from 100 to 900 is used. One of the 
 			double fontSize = this.getFontSize();
 			// apparently they may be the same? 
 			if (x1 < x0) {
-				LOG.error("xArray out of order at: " + i + "/" + xArray);
+				System.err.println("xArray ooo("+i+")");
+//				LOG.error("xArray out of order at: " + i + "/" + xArray);
 				return;
 			}
 			double delta = x1 - x0;

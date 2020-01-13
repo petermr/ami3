@@ -3,6 +3,7 @@ package org.contentmine.pdf2svg2;
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Paint;
 import java.awt.Stroke;
 import java.awt.geom.AffineTransform;
 import java.awt.geom.Point2D;
@@ -225,7 +226,7 @@ public abstract class AbstractPageParser extends PageDrawer {
 		
 		SVGText text = new SVGText(xy, unicode == null ? AbstractPageParser.ILLEGAL_CHAR : unicode);
     	TextParameters textParameters = new TextParameters(matrix, font);
-    	if (!textParameters.hasNormalOrientation()) {
+    	if (!textParameters.hasNormalOrientation() && angleOfRotation != null) {
     		text.rotateTextAboutPoint(xy, angleOfRotation.multiplyBy(-1.0), matdec);
     		text.setRotateAttributeDegrees(angleOfRotation, 1);
     		RealSquareMatrix mat = new RealSquareMatrix(t2.extractSubMatrixData(0, 1, 0, 1));
@@ -310,7 +311,6 @@ public abstract class AbstractPageParser extends PageDrawer {
 		this.fillPath(windingRule);
 		this.strokePath();
 		createPathAndFlush("fillAndStroke");
-		LOG.debug("fillAndStrokePath");
 	}
 
     /** captures move and adds to PathPrimitiveList
@@ -412,7 +412,7 @@ public abstract class AbstractPageParser extends PageDrawer {
     public void drawImage(PDImage pdImage) throws IOException {
     	if (debugParams.showDrawImage) {System.out.println(">drawImage "+pdImage);}
     	super.drawImage(pdImage);
-    	LOG.debug("page serial: "+pageSerial);
+//    	LOG.debug("page serial: "+pageSerial);
 //    	super.setPageSerial(pageSerial);
     	extractImage(pdImage);
     }
@@ -618,8 +618,10 @@ public abstract class AbstractPageParser extends PageDrawer {
 	protected void updateRenderingColorsStroke(String source) {
 		textRenderingMode = getGraphicsState().getTextState().getRenderingMode();
 		try {
-	        awtStrokeColor = (Color) getPaint(getGraphicsState().getStrokingColor());
-	        awtFillColor = (Color) getPaint(getGraphicsState().getNonStrokingColor());
+	        Paint strokingPaint = getPaint(getGraphicsState().getStrokingColor());
+	        awtStrokeColor = (strokingPaint instanceof Color) ? (Color) strokingPaint : null;
+	        Paint nonStrokingPaint = getPaint(getGraphicsState().getNonStrokingColor());
+			awtFillColor = (nonStrokingPaint instanceof Color) ? (Color) nonStrokingPaint : null;
 		} catch (IOException e) {
 			throw new RuntimeException("cannot extract colors", e);
 		}

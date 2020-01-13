@@ -323,7 +323,7 @@ public class AMISectionTool extends AbstractAMITool {
 		HtmlElement htmlElement = createAndWriteHTML(destFile);
 		if (htmlElement instanceof HtmlTable) {
 			HtmlTable denormalizedheader = ((HtmlTable) htmlElement).getDenormalizedHeader();
-			LOG.debug("DH "+denormalizedheader.toXML());
+			LOG.trace("DH "+denormalizedheader.toXML());
 			File denormalizedFile = new File(destFile.toString().replace("."+CTree.XML, "."+"denorm"+"."+CTree.HTML));
 			LOG.debug("wrote denorm: "+denormalizedFile);
 			XMLUtil.writeQuietly(denormalizedheader, denormalizedFile, 1);

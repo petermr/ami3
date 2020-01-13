@@ -94,7 +94,7 @@ public class AMITableTool extends AbstractAMITool {
 	  @Option(names = {"--tabledir"},
 		arity = "1",
 	    description = "table directoryName (relative to CTree)")
-	private String tableDirName = null;
+	private String tableDirName = "sections/tables";
 
 	  @Option(names = {"--template"},
 		arity = "1",
@@ -201,6 +201,9 @@ public class AMITableTool extends AbstractAMITool {
 //			if (debug) LOG.debug("skipped: "+sectionsDir);
 //			return;
 //		}
+		if (tableDirName == null) {
+			throw new RuntimeException("Null tableDirName");
+		}
 		tableDir = new File(cTree.getDirectory(), tableDirName);
 		if (!tableDir.exists()) {
 			System.err.println("table dir does not exist: "+tableDir);
@@ -355,10 +358,11 @@ public class AMITableTool extends AbstractAMITool {
 	}
 
 	private void summarize() {
-		if (multisetList.size() > 0) {
+		if (multisetList != null && multisetList.size() > 0) {
 			createAndOutputMultisets();
 		}
 		XMLUtil.writeQuietly(templateSummaryHtml, new File(cProjectDirectory, "__tables/"+templateName+"."+CTree.HTML), 1);
+		
 	}
 
 	private void createAndOutputMultisets() {

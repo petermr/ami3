@@ -82,4 +82,37 @@ public class AMIDebugParameters {
 		return parameters;
 	}
 	
+	public static AMIDebugParameters getBriefParameters() {
+		AMIDebugParameters parameters = new AMIDebugParameters();
+		parameters.showAnnotation = false;
+		parameters.showAppendRectangle = /*false*/ false;
+		parameters.showBeginMarked = false;
+		parameters.showBeginText = false;
+		parameters.showChar = false;
+		parameters.showClip = /*false*/ false;
+		parameters.showClosePath = false;
+		parameters.showColor = false;
+		parameters.showCurveTo = false;
+		parameters.showCurrentPoint = false;
+		parameters.showDrawImage = false;
+		parameters.showEndMarked = false;
+		parameters.showEndPath = false;
+		parameters.showEndText = false;
+		parameters.showFillPath = false;
+		parameters.showFillAndStrokePath = false;
+		parameters.showFontGlyph = false;
+		parameters.showForm  = false;
+		parameters.showLineTo = false;
+		parameters.showMoveTo = false;
+		parameters.showPaint = false;
+		parameters.showShadingFill = false;
+		parameters.showStrokePath = false;
+		parameters.showTransGrp = false;
+		parameters.checkViewBox = false;
+		parameters.maxPrimitives = false;
+		
+		parameters.debugGraphics = false;
+		return parameters;
+	}
+	
 }

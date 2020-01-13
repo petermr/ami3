@@ -337,6 +337,26 @@ public class PageParserRunner
         	pageParser = null;
         	if (ParserDebug.ORIGINAL.equals(parserDebug)) {
         		pageParser = new PageParserZero(parameters, -1, AMIDebugParameters.getDefaultParameters());
+        	} else if (ParserDebug.AMI_BRIEF.equals(parserDebug)) {
+        		AbstractPageParser amiPageDrawer = new PageParserOne(parameters, AMIDebugParameters.getDefaultParameters());
+        		amiPageDrawer.getDebugParameters().showAnnotation=false;
+        		amiPageDrawer.getDebugParameters().showAppendRectangle=false;
+        		amiPageDrawer.getDebugParameters().showBeginText=false;
+        		amiPageDrawer.getDebugParameters().showChar=false;
+        		amiPageDrawer.getDebugParameters().showClip=false;
+        		amiPageDrawer.getDebugParameters().showClosePath=false;
+        		amiPageDrawer.getDebugParameters().showColor=false;
+        		amiPageDrawer.getDebugParameters().showCurrentPoint=false;
+        		amiPageDrawer.getDebugParameters().showDrawPage=false;
+        		amiPageDrawer.getDebugParameters().showFillPath=false;
+        		amiPageDrawer.getDebugParameters().showFontGlyph=false;
+        		amiPageDrawer.getDebugParameters().showForm=false;
+        		amiPageDrawer.getDebugParameters().showEndPath=false;
+        		amiPageDrawer.getDebugParameters().showEndText=false;
+        		amiPageDrawer.getDebugParameters().showLineTo=false;
+        		amiPageDrawer.getDebugParameters().showMoveTo=false;
+        		amiPageDrawer.getDebugParameters().showStrokePath=false;
+				pageParser = amiPageDrawer;
         	} else if (ParserDebug.AMI_ONE.equals(parserDebug)) {
         		AbstractPageParser amiPageDrawer = new PageParserOne(parameters, AMIDebugParameters.getDefaultParameters());
         		amiPageDrawer.getDebugParameters().showAnnotation=false;

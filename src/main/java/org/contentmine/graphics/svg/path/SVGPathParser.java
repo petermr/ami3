@@ -80,10 +80,7 @@ public class SVGPathParser {
 		mm = System.currentTimeMillis();
 		tt = (mm-millis)/1000;
 		if (tt > 1) {
-			LOG.debug("longParse: "+tt+"; d "+d.length());
-			if (d.length() == 225300) {
-				LOG.debug("stop");
-			}
+			System.err.println("longParse: "+tt+"; d "+d.length());
 		}
 
 		return primitiveList;
@@ -244,11 +241,13 @@ Since the Z and z commands take no parameters, they have an identical effect.	 *
 	 */
 	private int addClosePrimitive(int itok, char t) {
 		checkExistingFirstXY(t);
-		firstPoint = firstPoint.format(3);
-		currentPoint = firstPoint;
-		SVGPathPrimitive pp = new ClosePrimitive(currentPoint);
-		primitiveList.add(pp);
-		lastPrimitive = pp;
+		if (firstPoint != null) {
+			firstPoint = firstPoint.format(3);
+			currentPoint = firstPoint;
+			SVGPathPrimitive pp = new ClosePrimitive(currentPoint);
+			primitiveList.add(pp);
+			lastPrimitive = pp;
+		}
 		return itok;
 	}
 

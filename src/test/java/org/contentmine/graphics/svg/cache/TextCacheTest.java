@@ -28,7 +28,6 @@ import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import com.gargoylesoftware.htmlunit.javascript.host.svg.SVGRect;
 import com.google.common.collect.Multimap;
 
 public class TextCacheTest extends AbstractCacheTest {

@@ -22,6 +22,8 @@ import org.contentmine.ami.tools.AMISVGTool.TidySVG;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGText;
 
+import nu.xom.IllegalCharacterDataException;
+
 /** helper class extending PDFBox renderer
  * works with PageDrawer to capture the PDF input stream
  * 
@@ -77,7 +79,7 @@ public class DocumentParser extends PDFRenderer {
 //        } else if (AMIPDFTool.ParserType.one.equals(parserType)) {
 //			currentPageParser = new PageParserOne(parameters, iPage, (AMIDebugParameters) null);
         } else if (AMIPDFTool.ParserType.two.equals(parserType)) {
-        	currentPageParser = new PageParserTwo(parameters, iPage, AMIDebugParameters.getDefaultParameters());
+        	currentPageParser = new PageParserTwo(parameters, iPage, AMIDebugParameters.getBriefParameters());
         } else {
         	throw new RuntimeException(" cannot create parser: "+parserType);
         }

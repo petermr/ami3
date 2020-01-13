@@ -7,6 +7,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Level;
@@ -189,6 +190,8 @@ public class ComponentCache extends AbstractCache {
 	private double outerBoxEps = 3.0; // outer bbox error
 	private TextStructurer textStructurer;
 	private List<AbstractCache> cascadingCacheList;
+	
+	private Map<CacheType, AbstractCache> cacheByType = new HashMap()<>;
 
 
 
@@ -283,6 +286,7 @@ public class ComponentCache extends AbstractCache {
 		if (pathCache == null) {
 			this.pathCache = new PathCache(this);
 			this.pathCache.extractPaths(this.inputSVGElement);
+			cacheByType.put(CacheType.path, this.pathCache);
 		}
 		return pathCache;
 	}
@@ -291,6 +295,7 @@ public class ComponentCache extends AbstractCache {
 		if (imageCache == null) {
 			this.imageCache = new ImageCache(this);
 			this.imageCache.getOrCreateImageList();
+			cacheByType.put(CacheType.image, this.imageCache);
 		}
 		return imageCache;
 	}
@@ -314,6 +319,7 @@ public class ComponentCache extends AbstractCache {
 			if (this.inputSVGElement != null) {
 				this.textCache.extractTexts(this.inputSVGElement);
 			}
+			cacheByType.put(CacheType.text, this.textCache);
 		}
 		return textCache;
 	}
@@ -328,6 +334,7 @@ public class ComponentCache extends AbstractCache {
 			List<SVGShape> shapeList = shapeCache.getOrCreateConvertedShapeList();
 			addElementsToExtractedElement(shapeList);
 			LOG.trace("shapes: "+(System.currentTimeMillis() - millis)/1000);
+			cacheByType.put(CacheType.shape, this.shapeCache);
 		}
 		return shapeCache;
 	}
@@ -340,6 +347,8 @@ public class ComponentCache extends AbstractCache {
 			for (SVGPath path : pathList) {
 				
 			}
+			cacheByType.put(CacheType.glyph, this.glyphCache);
+
 		}
 		return glyphCache;
 	}
@@ -347,6 +356,7 @@ public class ComponentCache extends AbstractCache {
 	public LineCache getOrCreateLineCache() {
 		if (lineCache == null) {
 			this.lineCache = new LineCache(this);
+			cacheByType.put(CacheType.line, this.lineCache);
 		}
 		return lineCache;
 	}
@@ -354,6 +364,7 @@ public class ComponentCache extends AbstractCache {
 	public RectCache getOrCreateRectCache() {
 		if (rectCache == null) {
 			this.rectCache = new RectCache(this);
+			cacheByType.put(CacheType.rect, this.rectCache);
 		}
 		return rectCache;
 	}
@@ -362,6 +373,7 @@ public class ComponentCache extends AbstractCache {
 		if (polylineCache == null) {
 			this.polylineCache = new PolylineCache(this);
 //			polylineCache.setSiblingShapeCache(shapeCache);
+			cacheByType.put(CacheType.polyline, this.polylineCache);
 		}
 		return polylineCache;
 	}
@@ -370,6 +382,7 @@ public class ComponentCache extends AbstractCache {
 		if (polygonCache == null) {
 			this.polygonCache = new PolygonCache(this);
 //			polygonCache.setSiblingShapeCache(shapeCache);
+			cacheByType.put(CacheType.polygon, this.polygonCache);
 		}
 		return polygonCache;
 	}
@@ -392,6 +405,8 @@ public class ComponentCache extends AbstractCache {
 			AbstractCMElement textChunk = textStructurer.getTextChunkList().getLastTextChunk();
 			textStructurer.condenseSuscripts();
 //			LOG.debug("t6");
+			cacheByType.put(CacheType.textchunk, this.textChunkCache);
+
 		}
 		return textChunkCache;
 	}
@@ -955,6 +970,15 @@ public class ComponentCache extends AbstractCache {
 			}
 		}
 		return componentCache;
+	}
+
+	public void getCaches(List<CacheType> cacheList) {
+		cacheList.forEach(c ->{
+			System.out.println(c);
+//			LineCache lineCache = componentCache.getOrCreateLineCache();
+//			SVGSVG.wrapAndWriteAsSVG(lineCache.getOrCreateConvertedSVGElement(), 
+//					new File(svgFile.toString().replaceAll("\\.svg", "\\.linecache.svg")));
+		}); 
 	}
 
 }

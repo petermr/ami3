@@ -14,22 +14,8 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
-import org.contentmine.graphics.svg.SVGElement;
-import org.contentmine.graphics.svg.SVGSVG;
-import org.contentmine.graphics.svg.cache.AbstractCache;
-import org.contentmine.graphics.svg.cache.DocumentCache;
-import org.contentmine.graphics.svg.cache.GlyphCache;
-import org.contentmine.graphics.svg.cache.ImageCache;
-import org.contentmine.graphics.svg.cache.LineBoxCache;
-import org.contentmine.graphics.svg.cache.LineCache;
-import org.contentmine.graphics.svg.cache.MathCache;
-import org.contentmine.graphics.svg.cache.PageCache;
-import org.contentmine.graphics.svg.cache.PathCache;
-import org.contentmine.graphics.svg.cache.PolygonCache;
-import org.contentmine.graphics.svg.cache.PolylineCache;
-import org.contentmine.graphics.svg.cache.RectCache;
-import org.contentmine.graphics.svg.cache.ShapeCache;
-import org.contentmine.graphics.svg.cache.TextCache;
+import org.contentmine.graphics.svg.cache.AbstractCache.CacheType;
+import org.contentmine.graphics.svg.cache.ComponentCache;
 
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
@@ -61,37 +47,11 @@ public class AMIGraphicsTool extends AbstractAMITool {
 		LOG.setLevel(Level.DEBUG);
 	}
 
-	public enum Cache {
-		document(new DocumentCache()),
-		glyph(new GlyphCache()),
-		image(new ImageCache()),
-		line(new LineCache()),
-		linebox(new LineBoxCache()),
-		math(new MathCache()),
-		page(new PageCache()),
-		// more page components could go here
-		path(new PathCache()),
-		polygon(new PolygonCache()),
-		polyline(new PolylineCache()),
-		rect(new RectCache()),
-		shape(new ShapeCache()),
-		text(new TextCache()),
-		;
-		private AbstractCache cache;
-		private Cache(AbstractCache cache) {
-			this.cache = cache; 
-		}
-		
-		public AbstractCache getCache() {
-			return cache;
-		}
-	}
-	
 
     @Option(names = {"--cache"},
     		arity = "1..*",
             description = "caches to use")
-	private List<Cache> cacheList = new ArrayList<>() ;
+	private List<CacheType> cacheList = new ArrayList<>() ;
 
 
     /** used by some non-picocli calls
@@ -143,8 +103,8 @@ public class AMIGraphicsTool extends AbstractAMITool {
 		            .map(Path::getFileName).sorted().collect(Collectors.toList());
 
 		    for (Path path : filesWithName) {
-				SVGElement svgElement = SVGElement.readAndCreateSVG(new File(svgDir, path.toString()));
-		    	displayCaches(svgDir, path, svgElement);
+				File file = new File(svgDir, path.toString());
+		    	displayCaches(file);
 		        
 		    }
 		} catch (IOException e) {
@@ -152,8 +112,9 @@ public class AMIGraphicsTool extends AbstractAMITool {
 		}
 	}
 
-	private void displayCaches(File svgDir, Path path, SVGElement svgElement) {
-		cacheList.forEach(c -> c.getCache().display(svgDir, path, svgElement));
+	private void displayCaches(File svgFile) {
+		ComponentCache componentCache = ComponentCache.readAndCreateComponentCache(svgFile);
+		componentCache.getCaches(cacheList);
 	}
 
 

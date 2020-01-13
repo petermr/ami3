@@ -189,6 +189,7 @@ public abstract class HtmlTrContainer extends HtmlElement {
 	}
 
 	private String getIdStart(String id) {
+		if (id == null) return null;
 		String[] ids = id.split(ID_SEP);
 		return ids[0] + ID_SEP + ids[1];
 	}
@@ -203,7 +204,9 @@ public abstract class HtmlTrContainer extends HtmlElement {
 		}
 		for (HtmlTCell tcell : tcellList) {
 			String idStart = getIdStart(tcell.getId());
-			tcellByIdStart.put(idStart, tcell);
+			if (idStart != null) {
+				tcellByIdStart.put(idStart, tcell);
+			}
 		}
 	}
 
