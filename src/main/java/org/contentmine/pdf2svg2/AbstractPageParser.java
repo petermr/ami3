@@ -248,7 +248,10 @@ public abstract class AbstractPageParser extends PageDrawer {
     	if (!Real.isZero(matrix.getShearX(), eps) || !Real.isZero(matrix.getShearY(), eps)) {
     		text.addAttribute(new Attribute(MATRIX, String.valueOf(matrix)));
     	}
+    	
     	currentTextPhrase.appendChild(text);
+    	
+    	
     }
     
 

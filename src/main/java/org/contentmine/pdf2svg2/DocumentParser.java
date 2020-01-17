@@ -187,10 +187,6 @@ public class DocumentParser extends PDFRenderer {
         return pageList;
 	}
 	
-//	public Map<PageSerial, BufferedImage> getRawImageMap() {
-//		return rawImageBySerial;
-//	}
-
 	public Map<String, BufferedImage> getRawImageMap1() {
 		return rawImageByTitle;
 	}

@@ -14,6 +14,9 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
+import org.contentmine.graphics.svg.SVGElement;
+import org.contentmine.graphics.svg.SVGSVG;
+import org.contentmine.graphics.svg.cache.AbstractCache;
 import org.contentmine.graphics.svg.cache.AbstractCache.CacheType;
 import org.contentmine.graphics.svg.cache.ComponentCache;
 
@@ -51,7 +54,7 @@ public class AMIGraphicsTool extends AbstractAMITool {
     @Option(names = {"--cache"},
     		arity = "1..*",
             description = "caches to use")
-	private List<CacheType> cacheList = new ArrayList<>() ;
+	private List<CacheType> cacheTypeList = new ArrayList<>() ;
 
 
     /** used by some non-picocli calls
@@ -72,7 +75,7 @@ public class AMIGraphicsTool extends AbstractAMITool {
     @Override
 	protected void parseSpecifics() {
     	if (verbosity.length > 0) {
-			System.out.println("caches              " + cacheList);
+			System.out.println("caches              " + cacheTypeList);
     	}
 		System.out.println();
 	}
@@ -95,26 +98,41 @@ public class AMIGraphicsTool extends AbstractAMITool {
 	private void runGraphics() {
 		File svgDir = cTree.getExistingSVGDir();
 		try {
-			LOG.debug(">>>"+svgDir);
-			
-			List<Path> filesWithName = Files.walk(Paths.get(svgDir.toString()))
-		            .filter(s -> s.toString().endsWith("."+CTree.SVG))
-		            .filter(s -> s.toString().matches(FULLTEXT_PAGE_SVG_REGEX))
-		            .map(Path::getFileName).sorted().collect(Collectors.toList());
-
-		    for (Path path : filesWithName) {
-				File file = new File(svgDir, path.toString());
-		    	displayCaches(file);
-		        
-		    }
+			LOG.trace(">>>"+svgDir);
+			if (svgDir != null) {
+				List<Path> filesWithName = Files.walk(Paths.get(svgDir.toString()))
+			            .filter(s -> s.toString().endsWith("."+CTree.SVG))
+			            .filter(s -> s.toString().matches(FULLTEXT_PAGE_SVG_REGEX))
+			            .map(Path::getFileName).sorted().collect(Collectors.toList());
+	
+			    for (Path path : filesWithName) {
+					File file = new File(svgDir, path.toString());
+					System.out.print(" "+path.toString().replaceAll("(fulltext\\-page|\\.svg)", ""));
+			    	displayCaches(file);
+			        
+			    }
+			}
 		} catch (IOException e) {
 			throw new RuntimeException("cannot list files", e);
 		}
 	}
 
 	private void displayCaches(File svgFile) {
+		Level level = LOG.getLevel();
+//		LOG.setLevel(Level.TRACE);
 		ComponentCache componentCache = ComponentCache.readAndCreateComponentCache(svgFile);
-		componentCache.getCaches(cacheList);
+		List<AbstractCache> cacheList = componentCache.getCaches(cacheTypeList);
+		for (AbstractCache cache : cacheList) {
+			File outDir = new File(svgFile.toString().replace(".svg", "").replace("fulltext-",  ""));
+			outDir.mkdirs();
+			File outSvgFile = new File(outDir, cache.getOrCreateCacheType()+".svg");
+			LOG.trace(cache.getOrCreateCacheType()+"/"+outDir);
+			SVGElement svgElement = cache.getOrCreateConvertedSVGElement();
+			if (svgElement.getChildElements().size() > 0) {
+				SVGSVG.wrapAndWriteAsSVG(svgElement, outSvgFile);
+			}
+		}
+		LOG.setLevel(level);
 	}
 
 

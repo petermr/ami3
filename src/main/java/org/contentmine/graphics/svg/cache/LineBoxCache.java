@@ -61,33 +61,37 @@ public class LineBoxCache extends ComponentCache {
 	}
 
 	public void createLineBoxes(List<SVGLine> horizLines, List<SVGLine> vertLines) {
+		Level level = LOG.getLevel();
+		LOG.setLevel(Level.TRACE);
 		
+		LOG.debug("H/L"+horizLines.size()+"/"+vertLines.size());
 	    totalLineSet = sortLinesByLengthCreateLineSet(horizLines, vertLines);
 		createBoxesFromHorizontalVerticalIntersection();
 		compressLineBoxList();
 		createUnusedLineSet();
 		addUnusedLinesToBoxes();
 		
-		LOG.debug("VL:" +verticalLines);
+		LOG.trace("VL:" +verticalLines);
 		
-		LOG.debug("BOXES "+lineBoxSet.size());
-		LOG.debug("BB "+lineBoxSet);
+		LOG.trace("BOXES "+lineBoxSet.size());
+		LOG.trace("BB "+lineBoxSet);
 		SVGG g = new SVGG();
 		for (LineBox box : lineBoxSet) {
-//			LOG.debug(box.getHorizontalLineList().size()+"/"+box.getVerticalLineList().size()+"/"+box.getBoundingBox());
+//			LOG.trace(box.getHorizontalLineList().size()+"/"+box.getVerticalLineList().size()+"/"+box.getBoundingBox());
 			g.appendChild(box.getSVGElement());
 			SVGRect svgRect =  (SVGRect) SVGRect.createFromReal2Range(box.getBoundingBox()/*, 1.5*/).setFill("red").setStroke("blue").setStrokeWidth(0.3).setOpacity(0.4);
 //			g.appendChild(svgRect);
 		}
-		LOG.debug("HS "+usedHorizontalLineSet.size()+"/"+usedHorizontalLineSet);
-		LOG.debug("VS "+usedVerticalLineSet.size()+"/"+usedVerticalLineSet);
-		LOG.debug("US "+unusedLineSet.size()+"/"+unusedLineSet);
+		LOG.trace("HS "+usedHorizontalLineSet.size()+"/"+usedHorizontalLineSet);
+		LOG.trace("VS "+usedVerticalLineSet.size()+"/"+usedVerticalLineSet);
+		LOG.trace("US "+unusedLineSet.size()+"/"+unusedLineSet);
 		for (SVGLine unusedLine : unusedLineSet) {
 			GraphicsElement line = ((SVGLine)unusedLine.copy()).setStrokeWidth(3.0).setStroke("cyan").setOpacity(0.5);
 			g.appendChild(line);
 		}
 		
 		SVGSVG.wrapAndWriteAsSVG(g, new File("target/cache/lineBox.svg"));
+		LOG.setLevel(level);
 	}
 
 	private void addUnusedLinesToBoxes() {
@@ -178,7 +182,20 @@ public class LineBoxCache extends ComponentCache {
 		usedHorizontalLineSet.add(horizLine);
 		usedVerticalLineSet.add(vertLine);
 	}
-	
-
+	/* cached boundingBox.
+	 * The bbox may be reset 
+	 * 
+	 */
+	public Real2Range getBoundingBox() {
+		// there's a bug here
+		for (SVGLine line : totalLineSet) {
+			if (boundingBox == null) {
+				boundingBox = line.getBoundingBox();
+			} else {
+				boundingBox.plusEquals(line.getBoundingBox());
+			}
+		}
+		return boundingBox;
+	}
 	
 }

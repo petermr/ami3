@@ -38,6 +38,7 @@ import org.contentmine.cproject.files.CTree;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGSVG;
+import org.contentmine.graphics.svg.SVGText;
 
 /**
  * Example showing custom rendering by subclassing PageDrawer.
@@ -57,6 +58,9 @@ public class PDFDocumentProcessor {
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
+
+	
+	private static final int SVG_CHAR_FACTOR = 40; // rough guess (M ddd.ddd ddd.ddd)
 	
 	private PDDocument currentDoc;
 	private DocumentParser documentParser;
@@ -72,6 +76,7 @@ public class PDFDocumentProcessor {
 	private int maxPrimitives = 1000000;
 	private AMIPDFTool.ParserType parserType;
 	private List<PDFTidySVG> tidySVGList;
+	private int maxSVGChars = 8 * maxPrimitives;
 
 	public PDFDocumentProcessor() {
 		init();
@@ -134,20 +139,35 @@ public class PDFDocumentProcessor {
 	}
 
 	public void writeSVGPages(File parent) {
+		Level level = LOG.getLevel();
+//		LOG.setLevel(Level.TRACE);
 		File svgDir = getOutputSVGDirectory(parent);
 		if (documentParser != null && outputSVG) {
 			LOG.trace("\nwriting SVG to: "+svgDir);
 			Map<PageSerial, SVGG> svgPageBySerial = documentParser.getOrCreateSvgPageBySerial();
 			Set<Entry<PageSerial, SVGG>> entrySet = svgPageBySerial.entrySet();
 			if (entrySet != null) {
+				LOG.trace("entry set: "+entrySet.size());
 				for (Map.Entry<PageSerial, SVGG> entry : entrySet) {
 					PageSerial key = entry.getKey();
-					SVGSVG.wrapAndWriteAsSVG(entry.getValue(), new File(svgDir, 
-					CTree.FULLTEXT_PAGE+CTree.DOT+key.getZeroBasedSerialString()+CTree.DOT+CTree.SVG));
+					SVGG value = entry.getValue();
+					int length = value.toXML().length();
+					LOG.trace("entry key/value-size: "+key+"/"+length);
+					File file = new File(svgDir, 
+					CTree.FULLTEXT_PAGE+CTree.DOT+key.getZeroBasedSerialString()+CTree.DOT+CTree.SVG);
+					if (length > maxSVGChars ) {
+						System.out.println("large SVG: ("+length+") "+key);
+						List<SVGText> texts = SVGText.extractSelfAndDescendantTexts(value);
+						SVGSVG.wrapAndWriteAsSVG(texts, file);
+					}	
+					if (length < maxSVGChars ) {
+						SVGSVG.wrapAndWriteAsSVG(value, file);
+						LOG.trace("\nwrote SVG to: "+svgDir);
+					}
 				}
 			}
-			LOG.trace("\nwrote SVG to: "+svgDir);
 		}
+		LOG.setLevel(level);
 	}
 
 	public File getOutputSVGDirectory(File parent) {
@@ -309,6 +329,7 @@ public class PDFDocumentProcessor {
 
 	public void setMaxPrimitives(int maxPrimitives) {
 		this.maxPrimitives  = maxPrimitives;
+		this.maxSVGChars = SVG_CHAR_FACTOR * maxPrimitives;
 		
 	}
 

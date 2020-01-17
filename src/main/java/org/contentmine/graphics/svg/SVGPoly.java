@@ -491,7 +491,7 @@ public abstract class SVGPoly extends SVGShape {
 			if (Math.abs(ixmax - ixmin) != 2 ||
 			    Math.abs(iymax - iymin) != 2 ||
 				(dixy0 != 1 && dixy0 != 3 )) {
-			    	LOG.debug("not a rhomb");
+//			    	LOG.debug("not a rhomb: "+xy2);
 			    	return rhomb;
 		    }
 			rhomb = new SVGRhomb(xy2);

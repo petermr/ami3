@@ -1717,6 +1717,8 @@ public class CTree extends CContainer implements Comparable<CTree> {
 	}
 
 	public void processPDFTree() {
+		Level level = LOG.getLevel();
+//		LOG.setLevel(Level.TRACE);
 		int start = 0;
 		File existingFulltextPDF = getExistingFulltextPDF();
 		if (existingFulltextPDF == null) {
@@ -1746,13 +1748,18 @@ public class CTree extends CContainer implements Comparable<CTree> {
 				pageIncluder.setZeroNumberedIncludePages(new IntRange(start, start + deltaPages - 1));
 				System.out.print("pages "+pageIncluder.toString());
 		    	pdfDocumentProcessor.readAndProcess(document);
+				LOG.trace("readAndProcess");
 		    	pdfDocumentProcessor.writeSVGPages(directory);
+				LOG.trace("writeSVGPages");
 		    	pdfDocumentProcessor.writePDFImages(directory);
+				LOG.trace("writePDFImages");
 		    } catch (IOException ioe) {
 		    	LOG.error("cannot read/process: " + this + "; "+ioe);
 		    }
 		    start += deltaPages;
 		}
+		System.out.println("end: ");
+		LOG.setLevel(level);
 	}
 
 	public void tidyImages() {

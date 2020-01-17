@@ -138,9 +138,8 @@ public class SVGSVG extends SVGElement {
 		Real2Range bbox = svgg.getBoundingBox();
 		if (bbox == null || !bbox.isValid()) {
 			LOG.trace("***ERROR*** NULL bbox: "+bbox+" // "+svgg.toXML());
-			svgg = new SVGText(new Real2(5., 5.), "null/empty bbox: ");
-			svgg.setFontSize(100.);
-			svgg.setFontWeight(FontWeight.BOLD);
+			svgg = new SVGText(new Real2(50., 50.), "no content");
+			svgg.setFontSize(50.).setFontWeight(FontWeight.BOLD);
 			return wrapAndWriteAsSVG(svgg, file, 1000, 500.);
 		}
 		return wrapAndWriteAsSVG(svgg, file, bbox.getXMax() + BBOX_MARGIN_X, bbox.getYMax() + BBOX_MARGIN_Y);

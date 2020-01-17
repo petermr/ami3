@@ -194,13 +194,13 @@ public class PageParserTwo extends AbstractPageParser {
        }
 
 
-    // ONE + ZERO
-    @Override
-    public void drawImage(PDImage pdImage) throws IOException    {
-    	super.drawImage(pdImage);
-    	extractImage(pdImage);
-
-    }
+//    // ONE + ZERO
+//    @Override
+//    public void drawImage(PDImage pdImage) throws IOException    {
+//    	super.drawImage(pdImage);
+//    	extractImage(pdImage);
+//
+//    }
 
     // This doesn't mark the canvas so not used
     @Override

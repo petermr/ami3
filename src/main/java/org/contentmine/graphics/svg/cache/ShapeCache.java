@@ -260,11 +260,13 @@ public class ShapeCache extends AbstractCache {
 	}
 
 	public void extractShapes(List<SVGPath> pathList, AbstractCMElement svgElement) {
-		convertToShapes(pathList);
-		LOG.trace("polylines: "+polylineList);
-		createListsOfShapes(svgElement);
-		removeElementsOutsideBox(ownerComponentCache.getPositiveXBox());
-		LOG.trace("polylines: "+polylineList);
+		if (pathList != null) {
+			convertToShapes(pathList);
+			LOG.trace("polylines: "+polylineList);
+			createListsOfShapes(svgElement);
+			removeElementsOutsideBox(ownerComponentCache.getPositiveXBox());
+			LOG.trace("polylines: "+polylineList);
+		}
 	}
 
 	public AbstractCMElement debugToSVG(String outFilename) {

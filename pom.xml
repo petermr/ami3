@@ -163,6 +163,11 @@
                                 <id>ami-forestplot</id>
                             </program>
                              <program>
+                                <mainClass>org.contentmine.ami.tools.AMIGraphicsTool</mainClass>
+                                <!-- description: extract graphics primitives from SVG -->
+                                <id>ami-graphics</id>
+                            </program>
+                             <program>
                                 <mainClass>org.contentmine.ami.tools.AMIGrobidTool</mainClass>
                                 <!-- description: process PDF with Grobid -->
                                 <id>ami-grobid</id>

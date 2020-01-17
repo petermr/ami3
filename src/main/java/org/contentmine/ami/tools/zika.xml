@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node title="hypertree">
+ <node title="cTree" count="8">
+  <node title="scholarly.html" count="8"/>
+  <node title="sections" count="8">
+   <node title="abstract" count="8">
+    <node title="elem_0.xml" count="6"/>
+    <node title="background__0.xml" count="2"/>
+    <node title="author_summary_1.html" count="1"/>
+    <node title="author_summary_1.xml" count="1"/>
+    <node title="background__0.html" count="1"/>
+    <node title="elem_1.xml" count="1"/>
+   </node>
+   <node title="floats-group" count="8">
+    <node title="appendix_figure_.xml" count="3"/>
+    <node title="figure_.xml" count="12"/>
+    <node title="supplementary-material.xml" count="13"/>
+    <node title="table-wrap.xml" count="1"/>
+    <node title="table.xml" count="1"/>
+   </node>
+   <node title="article" count="8">
+    <node title="elem_0.xml" count="8"/>
+    <node title="elem_0.html" count="1"/>
+   </node>
+   <node title="tables" count="2">
+    <node title="table_1.xml" count="2"/>
+    <node title="table_2.xml" count="2"/>
+    <node title="summary.html" count="2"/>
+    <node title="table_3.xml" count="1"/>
+   </node>
+   <node title="back" count="6">
+    <node title="ack.xml" count="5"/>
+    <node title="ref-list" count="6">
+     <node title="ref.xml" count="264"/>
+     <node title="title.xml" count="5"/>
+    </node>
+    <node title="app-group.xml" count="1"/>
+    <node title="fn-group.xml" count="4"/>
+    <node title="bio.xml" count="4"/>
+   </node>
+   <node title="figures" count="4">
+    <node title="figure_4.xml" count="2"/>
+    <node title="figure_5.xml" count="1"/>
+    <node title="figure_2.xml" count="4"/>
+    <node title="figure_3.xml" count="2"/>
+    <node title="figure_1.xml" count="4"/>
+    <node title="summary.html" count="4"/>
+   </node>
+   <node title="body" count="6">
+    <node title="discussion" count="2">
+     <node title="title.xml" count="2"/>
+     <node title="p.xml" count="12"/>
+    </node>
+    <node title="background" count="1">
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="title.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+    </node>
+    <node title="conclusion" count="1">
+     <node title="title.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+    </node>
+    <node title="conflict_of_interest" count="1">
+     <node title="title.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+    </node>
+    <node title="materials_and_methods" count="2">
+     <node title="title.xml" count="2"/>
+     <node title="biological_experimental_p" count="1">
+      <node title="title.xml" count="1"/>
+      <node title="in_vitro" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="in_vivo" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+     </node>
+     <node title="synthesis_of_tpbia" count="1">
+      <node title="title.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+     </node>
+     <node title="experimental_animals" count="1">
+      <node title="title.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+     </node>
+     <node title="detection_of_zfn_induced_" count="1">
+      <node title="title.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+     </node>
+     <node title="facs_analysis_of_peripher" count="1">
+      <node title="title.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+     </node>
+     <node title="in_vitro_mrna_transcripti" count="1">
+      <node title="title.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+     </node>
+     <node title="detection_of_rabbit_igm_a" count="1">
+      <node title="title.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+     </node>
+     <node title="p.xml" count="1"/>
+     <node title="microinjection_of_zfn_mrn" count="1">
+      <node title="title.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+     </node>
+     <node title="gene_targeting_vector" count="1">
+      <node title="title.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+     </node>
+    </node>
+    <node title="results" count="2">
+     <node title="title.xml" count="2"/>
+     <node title="p.xml" count="5"/>
+     <node title="igm_knockout_rabbits_are_" count="1">
+      <node title="title.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+     </node>
+     <node title="establishment_of_rabbit_o" count="1">
+      <node title="title.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+     </node>
+     <node title="zfn_mediated_targeted_seq" count="1">
+      <node title="title.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+     </node>
+     <node title="zfn_induced_mutant_igm_al" count="1">
+      <node title="title.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+     </node>
+     <node title="zfn_design_and_validation" count="1">
+      <node title="title.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+     </node>
+     <node title="microinjection_of_zfn_mrn" count="1">
+      <node title="title.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+     </node>
+    </node>
+    <node title="taxonomy" count="1">
+     <node title="title.xml" count="1"/>
+     <node title="_spartina_anglica_" count="1">
+      <node title="distribution_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="title.xml" count="1"/>
+      <node title="comments_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="morphology_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="description_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="common_name_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="pollen_fertility_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="p.xml" count="1"/>
+      <node title="illustrations_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="etymology_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="specimens_examined_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="p.xml" count="1"/>
+      <node title="list.xml" count="1"/>
+     </node>
+     <node title="_spartina_" count="1">
+      <node title="sec" count="1">
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="title.xml" count="1"/>
+      <node title="key_to_native_and_introdu" count="1">
+       <node title="title.xml" count="1"/>
+      </node>
+      <node title="p.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+      <node title="list.xml" count="1"/>
+     </node>
+     <node title="_spartina_gracilis_" count="1">
+      <node title="distribution_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="title.xml" count="1"/>
+      <node title="description_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="common_name_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="etymology_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="illustrations_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="p.xml" count="1"/>
+      <node title="morphology_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="p.xml" count="1"/>
+      <node title="specimens_examined_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="list.xml" count="1"/>
+     </node>
+     <node title="_spartina_patens_" count="1">
+      <node title="distribution_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="title.xml" count="1"/>
+      <node title="comments_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="morphology_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="description_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="p.xml" count="1"/>
+      <node title="common_names_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="illustrations_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="etymology_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="p.xml" count="1"/>
+      <node title="specimens_examined_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="list.xml" count="1"/>
+     </node>
+     <node title="_spartina_×townsendii_" count="1">
+      <node title="distribution_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="illustration_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="title.xml" count="1"/>
+      <node title="comments_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="morphology_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="description_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="common_name_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="p.xml" count="1"/>
+      <node title="etymology_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="p.xml" count="1"/>
+      <node title="specimens_examined_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="list.xml" count="1"/>
+     </node>
+     <node title="_spartina_pectinata_" count="1">
+      <node title="distribution_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="title.xml" count="1"/>
+      <node title="comments_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="morphology_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="description_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="common_name_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="p.xml" count="1"/>
+      <node title="illustrations_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="etymology_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="p.xml" count="1"/>
+      <node title="specimens_examined_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="list.xml" count="1"/>
+     </node>
+     <node title="_spartina_alterniflora_" count="1">
+      <node title="distribution_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="title.xml" count="1"/>
+      <node title="comments_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="morphology_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="description_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="common_name_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="p.xml" count="1"/>
+      <node title="illustrations_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="etymology_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="p.xml" count="1"/>
+      <node title="specimens_examined_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="list.xml" count="1"/>
+     </node>
+     <node title="_spartina_densiflora_" count="1">
+      <node title="distribution_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="illustration_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="title.xml" count="1"/>
+      <node title="comments_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="morphology_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="description_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="common_name_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="p.xml" count="1"/>
+      <node title="etymology_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="p.xml" count="1"/>
+      <node title="specimens_examined_" count="1">
+       <node title="title.xml" count="1"/>
+       <node title="p.xml" count="1"/>
+      </node>
+      <node title="list.xml" count="1"/>
+     </node>
+    </node>
+    <node title="supplementary_material" count="1">
+     <node title="title.xml" count="1"/>
+    </node>
+    <node title="introduction" count="2">
+     <node title="title.xml" count="2"/>
+     <node title="spartina_in_north_america" count="1">
+      <node title="title.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+     </node>
+     <node title="higher_level_classificati" count="1">
+      <node title="title.xml" count="1"/>
+      <node title="p.xml" count="1"/>
+     </node>
+     <node title="p.xml" count="9"/>
+    </node>
+    <node title="clinical_manifestations" count="1">
+     <node title="title.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+    </node>
+    <node title="public_health_implication" count="1">
+     <node title="title.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+    </node>
+    <node title="p.xml" count="10"/>
+    <node title="diagnosis" count="1">
+     <node title="title.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+    </node>
+    <node title="virology_and_pathogenesis" count="1">
+     <node title="title.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+    </node>
+    <node title="dynamics_of_transmission" count="1">
+     <node title="title.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+    </node>
+    <node title="supporting_information" count="1">
+     <node title="title.xml" count="1"/>
+    </node>
+    <node title="the_study" count="1">
+     <node title="p.xml" count="1"/>
+     <node title="title.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+    </node>
+    <node title="conclusions" count="1">
+     <node title="title.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+     <node title="p.xml" count="1"/>
+    </node>
+   </node>
+   <node title="front" count="6">
+    <node title="journal-meta" count="6">
+     <node title="journal-id.xml" count="15"/>
+     <node title="journal-title.xml" count="1"/>
+     <node title="issn.xml" count="10"/>
+     <node title="publisher.xml" count="6"/>
+     <node title="journal-title-group.xml" count="5"/>
+    </node>
+    <node title="article-meta" count="6">
+     <node title="title-group.xml" count="6"/>
+     <node title="article-categories.xml" count="6"/>
+     <node title="abstract.xml" count="7"/>
+     <node title="contrib-group.xml" count="7"/>
+     <node title="aff.xml" count="6"/>
+     <node title="fpage.xml" count="5"/>
+     <node title="article-id.xml" count="21"/>
+     <node title="pub-date.xml" count="9"/>
+     <node title="permissions.xml" count="3"/>
+     <node title="ext-link.xml" count="1"/>
+     <node title="history.xml" count="3"/>
+     <node title="volume.xml" count="5"/>
+     <node title="lpage.xml" count="5"/>
+     <node title="kwd-group.xml" count="4"/>
+     <node title="author-notes.xml" count="5"/>
+     <node title="issue.xml" count="5"/>
+     <node title="counts.xml" count="1"/>
+     <node title="elocation-id.xml" count="1"/>
+    </node>
+   </node>
+   <node title="methods" count="1">
+    <node title="methods__0.xml" count="1"/>
+   </node>
+   <node title="acknowledge" count="2">
+    <node title="elem_0.xml" count="2"/>
+    <node title="elem_0.html" count="1"/>
+   </node>
+  </node>
+  <node title="fulltext.xml" count="8"/>
+  <node title="body.xml" count="1"/>
+ </node>
+</node>

@@ -80,7 +80,8 @@ public class AMIPDFTool extends AbstractAMITool {
     		arity="0..1",
    		    description = "maximum number pf SVG primitives. Some diagrams have hundreds of thousands of"
    		    		+ " graphics primitives and create quadratic or memory problems. Setting maxprimitives"
-   		    		+ " allows the job to continue but loses data. We have to find a better approach."
+   		    		+ " allows the job to continue but loses data. Some SVGs could be 150 Mbyte so selection"
+   		    		+ " by user will be important"
     		)
     private int maxprimitives = 5000;
     
@@ -185,6 +186,7 @@ public class AMIPDFTool extends AbstractAMITool {
 			pageParserRunner.setTidySVGList(tidySVGList);
 			for (int pageIndex : pages) {
 				pageParserRunner.runPages(cTree.getName(), pageIndex);
+				System.out.println(">finished: "+pageIndex);
 			}
 		}
 	}

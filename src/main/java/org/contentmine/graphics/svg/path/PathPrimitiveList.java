@@ -20,9 +20,13 @@ import org.contentmine.graphics.svg.SVGPath;
 import org.contentmine.graphics.svg.SVGPathPrimitive;
 import org.contentmine.graphics.svg.SVGText;
 
+import com.jayway.jsonpath.internal.PathRef;
+
 /** 
  * Container and manager for primitives from an SVGPath.
  * being developed to manage compression for dense paths (NYI)
+ * For some reason I cannot understand a normal ArrayList has appalling performance
+ * 
  * 
  * 
  * @author pm286
@@ -32,6 +36,8 @@ public class PathPrimitiveList implements Iterable<SVGPathPrimitive> {
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
+	
+	private final static int MAX_ARRAY = 100000;
 
 	private List<SVGPathPrimitive> primitiveList;
 	private boolean isClosed;
@@ -41,32 +47,29 @@ public class PathPrimitiveList implements Iterable<SVGPathPrimitive> {
 	
 	public PathPrimitiveList() {
 	}
-	
+
 	public void add(SVGPathPrimitive primitive) {
-		ensurePathPrimitiveList();
+		long t0 = System.currentTimeMillis();
+		getOrCreatePrimitiveList();
 		primitiveList.add(primitive);
+	}
+
+	public void add(PathPrimitiveList pathPrimitiveList) {
+		getOrCreatePrimitiveList();
+		this.primitiveList.addAll(pathPrimitiveList.getOrCreatePrimitiveList());
 		setFirstPoints();
 	}
 
-	public void add(PathPrimitiveList primitiveList) {
-		ensurePathPrimitiveList();
-		this.primitiveList.addAll(primitiveList.getPrimitiveList());
-		setFirstPoints();
-	}
 
-	private void ensurePathPrimitiveList() {
-		if (primitiveList == null) {
-			primitiveList = new ArrayList<SVGPathPrimitive>();
-		}
-	}
-	
 	/**
 	 * sets first points of primitives to last coord of precedingPrimitive
-	 * if last primitive (j) is Z, or isClosed,  set firstCoord of primitive(0) to lastCoord of primitive(j-1) 
+	 * if last primitive (j) is Z, or isClosed,  set firstCoord of primitive(0) to lastCoord of primitive(j-1)
+	 * This looks like a massive time sink
+	 *  
 	 * @param primitiveList
 	 */
 	void setFirstPoints() {
-		ensurePathPrimitiveList();
+		getOrCreatePrimitiveList();
 		int nprim = primitiveList.size();
 		for (int i = 1; i < nprim; i++) {
 			primitiveList.get(i).setFirstPoint(primitiveList.get(i-1).getLastCoord());
@@ -83,21 +86,24 @@ public class PathPrimitiveList implements Iterable<SVGPathPrimitive> {
 	}
 	
 	public Iterator<SVGPathPrimitive> iterator() {
-		ensurePathPrimitiveList();
+		getOrCreatePrimitiveList();
 		return primitiveList.iterator();
 	}
 
 	public int size() {
-		ensurePathPrimitiveList();
+		getOrCreatePrimitiveList();
 		return primitiveList.size();
 	}
 
 	public SVGPathPrimitive get(int i) {
-		ensurePathPrimitiveList();
+		getOrCreatePrimitiveList();
 		return (i < 0 || i >= primitiveList.size()) ? null : primitiveList.get(i);
 	}
 
-	public List<SVGPathPrimitive> getPrimitiveList() {
+	public List<SVGPathPrimitive> getOrCreatePrimitiveList() {
+		if (primitiveList == null) {
+			primitiveList = new ArrayList<>();
+		}
 		return primitiveList;
 	}
 
@@ -189,6 +195,7 @@ public class PathPrimitiveList implements Iterable<SVGPathPrimitive> {
 	}
 
 	public void replaceUTurnsByButt(int quad, boolean extend) {
+		getOrCreatePrimitiveList();
 		LinePrimitive linePrimitive;
 		if (extend) {
 			CubicPrimitive cubic1 = (CubicPrimitive) primitiveList.get(quad);
@@ -258,6 +265,7 @@ public class PathPrimitiveList implements Iterable<SVGPathPrimitive> {
 	 * @param i
 	 */
 	public void replaceCoordinateArray(CubicPrimitive cubicPrimitive, int i) {
+		getOrCreatePrimitiveList();
 		if (primitiveList != null) {
 			if (this.get(i) instanceof CubicPrimitive) {
 				CubicPrimitive thisCubicPrimitive = (CubicPrimitive) this.get(i);
@@ -267,10 +275,12 @@ public class PathPrimitiveList implements Iterable<SVGPathPrimitive> {
 	}
 
 	public String getDString() {
+		getOrCreatePrimitiveList();
 		return SVGPath.constructDString(this);
 	}
 
 	public void replaceCoordinateArray(Real2Array coordArray, int i) {
+		getOrCreatePrimitiveList();
 		if (primitiveList != null) {
 			if (this.get(i) instanceof LinePrimitive) {
 				this.get(i).setCoordArray(coordArray);
@@ -387,6 +397,7 @@ public class PathPrimitiveList implements Iterable<SVGPathPrimitive> {
 	}
 	
 	public String toString() {
+		getOrCreatePrimitiveList();
 		return Arrays.toString(primitiveList.toArray());
 	}
 
@@ -417,8 +428,9 @@ public class PathPrimitiveList implements Iterable<SVGPathPrimitive> {
 
 	public String createD() {
 		StringBuilder sb = new StringBuilder();
-		for (SVGPathPrimitive primitive : this) {
-			sb.append(primitive.toString());
+		getOrCreatePrimitiveList();
+		for (SVGPathPrimitive primitive : primitiveList) {
+			sb.append(primitive == null ? "" : primitive.toString());
 		}
 		return sb.toString();
 	}
@@ -507,6 +519,7 @@ public class PathPrimitiveList implements Iterable<SVGPathPrimitive> {
 	 * @return
 	 */
 	public SVGPath getOrCreateSVGPath() {
+		getOrCreatePrimitiveList();
 		if (svgPath == null) {
 			svgPath = new SVGPath(this);
 		}
@@ -536,6 +549,7 @@ public class PathPrimitiveList implements Iterable<SVGPathPrimitive> {
 	}
 	
 	public Real2Array getOrCreateCoordinates() {
+		getOrCreatePrimitiveList();
 		if (coords == null) {
 			coords = new Real2Array(this.size());
 			for (int i = 0; i < primitiveList.size(); i++) {
@@ -544,5 +558,18 @@ public class PathPrimitiveList implements Iterable<SVGPathPrimitive> {
 			}
 		}
 		return coords;
+	}
+
+	/** create new list by sampling "this" at interval stepSize
+	 * 
+	 * @param stepSize
+	 * @return
+	 */
+	public PathPrimitiveList getCompactedList(int stepSize) {
+		PathPrimitiveList newList = new PathPrimitiveList();
+		for (int i = 0; i < this.size(); i += stepSize) {
+			newList.add(this.get(i));
+		}
+		return newList;
 	}
 }

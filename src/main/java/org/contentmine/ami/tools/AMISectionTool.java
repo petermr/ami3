@@ -45,8 +45,10 @@ import org.contentmine.norma.sections.JATSSecElement;
 import org.contentmine.norma.sections.JATSSectionTagger;
 import org.contentmine.norma.sections.JATSSectionTagger.SectionTag;
 import org.contentmine.norma.sections.JATSSectionTagger.SectionType;
+import org.eclipse.jetty.util.log.Log;
 import org.w3c.dom.Document;
 
+import nu.xom.Attribute;
 import nu.xom.Element;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
@@ -683,6 +685,7 @@ public class AMISectionTool extends AbstractAMITool {
 			DebugPrint.debugPrint(tag.name()+": "+tag.getDescription());
 		}
 	}
+
 }
 
 class SectionComparator implements Comparator<File> {

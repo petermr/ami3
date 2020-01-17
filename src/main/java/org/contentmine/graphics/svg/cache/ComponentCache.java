@@ -4,8 +4,10 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
+import java.util.AbstractList;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -160,6 +162,7 @@ public class ComponentCache extends AbstractCache {
 	private PolygonCache polygonCache;
 	private GlyphCache glyphCache;
 	private LineCache lineCache;
+	private LineBoxCache lineboxCache;
 	private MathCache mathCache;
 	private RectCache rectCache;
 	ShapeCache shapeCache; // can be accessed by siblings
@@ -191,7 +194,7 @@ public class ComponentCache extends AbstractCache {
 	private TextStructurer textStructurer;
 	private List<AbstractCache> cascadingCacheList;
 	
-	private Map<CacheType, AbstractCache> cacheByType = new HashMap()<>;
+	private Map<CacheType, AbstractCache> cacheByType = new HashMap<>();
 
 
 
@@ -239,18 +242,20 @@ public class ComponentCache extends AbstractCache {
 			 // is this a good idea? These are clipping boxes. 
 			SVGDefs.removeDefs(this.inputSVGElement);
 			LOG.trace("atts "+(System.currentTimeMillis() - time));
+			
 			StyleAttributeFactory.convertElementAndChildrenFromOldStyleAttributesToCSS(this.inputSVGElement);
 			LOG.trace("after atts "+(System.currentTimeMillis() - time));
 			
 			this.positiveXBox = new Real2Range(new RealRange(-100., 10000), new RealRange(-10., 10000));
 			this.removeEmptyTextElements();
 			LOG.trace("after empty "+(System.currentTimeMillis() - time));
+			
 			this.removeNegativeXorYElements();
 			LOG.trace("casc "+(System.currentTimeMillis() - time));
 			
 			this.getOrCreateCascadingCaches();
+			
 			LOG.trace("lines "+(System.currentTimeMillis() - time));
-			this.lineCache.createSpecializedLines();
 			LOG.trace("end "+(System.currentTimeMillis() - time));
 			LOG.trace("lines: "+lineCache);
 			LOG.trace("text: "+textCache);
@@ -286,7 +291,7 @@ public class ComponentCache extends AbstractCache {
 		if (pathCache == null) {
 			this.pathCache = new PathCache(this);
 			this.pathCache.extractPaths(this.inputSVGElement);
-			cacheByType.put(CacheType.path, this.pathCache);
+//			cacheByType.put(CacheType.path, this.pathCache);
 		}
 		return pathCache;
 	}
@@ -295,7 +300,7 @@ public class ComponentCache extends AbstractCache {
 		if (imageCache == null) {
 			this.imageCache = new ImageCache(this);
 			this.imageCache.getOrCreateImageList();
-			cacheByType.put(CacheType.image, this.imageCache);
+//			cacheByType.put(CacheType.image, this.imageCache);
 		}
 		return imageCache;
 	}
@@ -319,7 +324,7 @@ public class ComponentCache extends AbstractCache {
 			if (this.inputSVGElement != null) {
 				this.textCache.extractTexts(this.inputSVGElement);
 			}
-			cacheByType.put(CacheType.text, this.textCache);
+//			cacheByType.put(CacheType.text, this.textCache);
 		}
 		return textCache;
 	}
@@ -334,7 +339,7 @@ public class ComponentCache extends AbstractCache {
 			List<SVGShape> shapeList = shapeCache.getOrCreateConvertedShapeList();
 			addElementsToExtractedElement(shapeList);
 			LOG.trace("shapes: "+(System.currentTimeMillis() - millis)/1000);
-			cacheByType.put(CacheType.shape, this.shapeCache);
+//			cacheByType.put(CacheType.shape, this.shapeCache);
 		}
 		return shapeCache;
 	}
@@ -347,7 +352,7 @@ public class ComponentCache extends AbstractCache {
 			for (SVGPath path : pathList) {
 				
 			}
-			cacheByType.put(CacheType.glyph, this.glyphCache);
+//			cacheByType.put(CacheType.glyph, this.glyphCache);
 
 		}
 		return glyphCache;
@@ -356,7 +361,7 @@ public class ComponentCache extends AbstractCache {
 	public LineCache getOrCreateLineCache() {
 		if (lineCache == null) {
 			this.lineCache = new LineCache(this);
-			cacheByType.put(CacheType.line, this.lineCache);
+//			cacheByType.put(CacheType.line, this.lineCache);
 		}
 		return lineCache;
 	}
@@ -364,7 +369,7 @@ public class ComponentCache extends AbstractCache {
 	public RectCache getOrCreateRectCache() {
 		if (rectCache == null) {
 			this.rectCache = new RectCache(this);
-			cacheByType.put(CacheType.rect, this.rectCache);
+//			cacheByType.put(CacheType.rect, this.rectCache);
 		}
 		return rectCache;
 	}
@@ -373,7 +378,7 @@ public class ComponentCache extends AbstractCache {
 		if (polylineCache == null) {
 			this.polylineCache = new PolylineCache(this);
 //			polylineCache.setSiblingShapeCache(shapeCache);
-			cacheByType.put(CacheType.polyline, this.polylineCache);
+//			cacheByType.put(CacheType.polyline, this.polylineCache);
 		}
 		return polylineCache;
 	}
@@ -382,32 +387,35 @@ public class ComponentCache extends AbstractCache {
 		if (polygonCache == null) {
 			this.polygonCache = new PolygonCache(this);
 //			polygonCache.setSiblingShapeCache(shapeCache);
-			cacheByType.put(CacheType.polygon, this.polygonCache);
+//			cacheByType.put(CacheType.polygon, this.polygonCache);
 		}
 		return polygonCache;
 	}
 
 	public TextChunkCache getOrCreateTextChunkCache() {
+		Level level = LOG.getLevel();
+//		LOG.setLevel(Level.TRACE);
 		if (textChunkCache == null) {
-//			LOG.debug("t0");
+			LOG.trace("t0");
 			this.textChunkCache = new TextChunkCache(this);
-//			LOG.debug("t1");
+			LOG.trace("t1");
 			textStructurer = textChunkCache.getOrCreateTextStructurer();
 			TextChunkList textChunkList = textChunkCache.getOrCreateTextChunkList();
 			// should probably move TextStructure to TextChunkCache
-//			LOG.debug("t2");
+			LOG.trace("t2");
 			textStructurer = TextStructurer.createTextStructurerWithSortedLines(convertedSVGElement);
-//			LOG.debug("t3");
+			LOG.trace("t3");
 			AbstractCMElement inputSVGChunk = textStructurer.getSVGChunk();
-//			LOG.debug("t4");
+			LOG.trace("t4");
 			textChunkCache.cleanChunk(inputSVGChunk);
-//			LOG.debug("t5");
+			LOG.trace("t5");
 			AbstractCMElement textChunk = textStructurer.getTextChunkList().getLastTextChunk();
 			textStructurer.condenseSuscripts();
-//			LOG.debug("t6");
+			LOG.trace("t6");
 			cacheByType.put(CacheType.textchunk, this.textChunkCache);
 
 		}
+		LOG.setLevel(level);
 		return textChunkCache;
 	}
 
@@ -420,6 +428,8 @@ public class ComponentCache extends AbstractCache {
 				LOG.trace("poly1 "+contentBoxCache.ownerComponentCache.shapeCache.getPolylineList());
 				contentBoxCache.getOrCreateContentBoxGrid();
 			}
+			cacheByType.put(CacheType.contentbox, this.contentBoxCache);
+
 		}
 		return contentBoxCache;
 	}
@@ -428,12 +438,14 @@ public class ComponentCache extends AbstractCache {
 		if (convertedSVGElement == null) {
 			convertedSVGElement = new SVGG();
 		}
-		for (AbstractCMElement element : elementList) {
-			SVGElement elementCopy = (SVGElement) element.copy();
-			
-			StyleAttributeFactory.convertElementAndChildrenFromOldStyleAttributesToCSS(elementCopy);
-//			StyleAttributeFactory.createUpdatedStyleAttribute(elementCopy, AttributeStrategy.MERGE);
-			convertedSVGElement.appendChild(elementCopy);
+		if (elementList != null) {
+			for (AbstractCMElement element : elementList) {
+				SVGElement elementCopy = (SVGElement) element.copy();
+				
+				StyleAttributeFactory.convertElementAndChildrenFromOldStyleAttributesToCSS(elementCopy);
+	//			StyleAttributeFactory.createUpdatedStyleAttribute(elementCopy, AttributeStrategy.MERGE);
+				convertedSVGElement.appendChild(elementCopy);
+			}
 		}
 	}
 
@@ -659,7 +671,7 @@ public class ComponentCache extends AbstractCache {
 				}
 			}
 			if (boundingBox == null) {
-				LOG.trace("null BBox (maybe no primitives) "+(inputSVGElement == null ? "NULL" : inputSVGElement.toXML()));
+				LOG.debug("null BBox (maybe no primitives) "+(inputSVGElement == null ? "NULL" : inputSVGElement.toXML()));
 			}
 		}
 		return boundingBox;
@@ -719,44 +731,78 @@ public class ComponentCache extends AbstractCache {
 	 * There is some backtracking required. For example later elements (e.g. borderingRect)
 	 * may be removed and this will affect not only the rect list but also the bounding boxes.
 	 * These in turn affect the judgment of axial lines and long lines.
+	 * @return 
 	 * 
 	 * 
 	 */
-	public void getOrCreateCascadingCaches() {
+	public List<AbstractCache> getOrCreateCascadingCaches() {
+		Level level = LOG.getLevel();
+//		LOG.setLevel(Level.TRACE);
+
 		if (cascadingCacheList == null) {
+			long millis = System.currentTimeMillis();
 			cascadingCacheList = new ArrayList<AbstractCache>();
-			LOG.trace("path");
-			cascadingCacheList.add(getOrCreatePathCache());
-			LOG.trace("text");
-			cascadingCacheList.add(getOrCreateTextCache());
-			LOG.trace("image");
-			cascadingCacheList.add(getOrCreateImageCache());
+			LOG.trace("path "+(System.currentTimeMillis() - millis));
+			addNonNull(cascadingCacheList, getOrCreatePathCache());
+			LOG.trace("text "+(System.currentTimeMillis() - millis));
+			addNonNull(cascadingCacheList, getOrCreateTextCache());
+			LOG.trace("image "+(System.currentTimeMillis() - millis));
+			addNonNull(cascadingCacheList, getOrCreateImageCache());
 			
 			// first pass creates raw caches which may be elaborated later
 			// GEOMETRY
-			LOG.trace("shape");
-			cascadingCacheList.add(getOrCreateShapeCache());
-			LOG.trace("glyph");
-			cascadingCacheList.add(getOrCreateGlyphCache());
-			LOG.trace("line");
-			cascadingCacheList.add(getOrCreateLineCache());
-			LOG.trace("rect");
-			cascadingCacheList.add(getOrCreateRectCache());
-			LOG.trace("polyline");
-			cascadingCacheList.add(getOrCreatePolylineCache());
+			LOG.trace("shape "+(System.currentTimeMillis() - millis));
+			addNonNull(cascadingCacheList, getOrCreateShapeCache());
+			LOG.trace("glyph "+(System.currentTimeMillis() - millis));
+			addNonNull(cascadingCacheList, getOrCreateGlyphCache());
+			LOG.trace("line "+(System.currentTimeMillis() - millis));
+			addNonNull(cascadingCacheList, getOrCreateLineCache());
+			
+			LOG.trace("rect "+(System.currentTimeMillis() - millis));
+			addNonNull(cascadingCacheList, getOrCreateRectCache());
+			LOG.trace("polyline "+(System.currentTimeMillis() - millis));
+			addNonNull(cascadingCacheList, getOrCreatePolylineCache());
+			LOG.trace("polygon "+(System.currentTimeMillis() - millis));
+			addNonNull(cascadingCacheList, getOrCreatePolygonCache());
+
 			// TEXT
 			LOG.trace("text");
 			// this is slow and may not be required
 			if (!ignoreClassList.contains(TextChunkCache.class)) {
-				LOG.debug("ignored "+TextChunkCache.class);
-				cascadingCacheList.add(getOrCreateTextChunkCache());
+				LOG.trace("ignored "+TextChunkCache.class);
+				addNonNull(cascadingCacheList, getOrCreateTextChunkCache());
 			}
 			// COMBINED OBJECTS
 			LOG.trace("contentbox");
-			cascadingCacheList.add(getOrCreateContentBoxCache());
+			addNonNull(cascadingCacheList, getOrCreateContentBoxCache());
+			// this might be a child of lineCache?
+			this.lineCache.createSpecializedLines();
+			lineboxCache = lineCache.getOrCreateLineBoxCache();
+			addNonNull(cascadingCacheList, lineboxCache);
+
 			// tidying heuristics
 			LOG.trace("border");
 			this.removeBorderingRects();
+			 LOG.trace("time in caches "+(System.currentTimeMillis() - millis));
+		}
+		if (cacheByType.size() < cascadingCacheList.size()) {
+			for (AbstractCache cache : cascadingCacheList) {
+				if (cache != null) {
+					CacheType cacheType = cache.getOrCreateCacheType();
+					if (cacheType == null) {
+						throw new RuntimeException("cannot find cache for: "+cache);
+					}
+					cacheByType.put(cacheType, cache);
+				}
+			}
+		}
+		LOG.setLevel(level);
+		return cascadingCacheList;
+	}
+	
+	private void addNonNull(List<AbstractCache> cascadingCacheList, AbstractCache cache) {
+		if (cache != null) {
+			cascadingCacheList.add(cache);
 		}
 	}
 
@@ -891,6 +937,7 @@ public class ComponentCache extends AbstractCache {
 		pathCache = null;
 		textCache = null;
 		lineCache = null;
+		lineboxCache = null;
 		rectCache = null;
 		shapeCache = null;
 		contentBoxCache = null;
@@ -972,13 +1019,25 @@ public class ComponentCache extends AbstractCache {
 		return componentCache;
 	}
 
-	public void getCaches(List<CacheType> cacheList) {
-		cacheList.forEach(c ->{
-			System.out.println(c);
-//			LineCache lineCache = componentCache.getOrCreateLineCache();
-//			SVGSVG.wrapAndWriteAsSVG(lineCache.getOrCreateConvertedSVGElement(), 
-//					new File(svgFile.toString().replaceAll("\\.svg", "\\.linecache.svg")));
+	public List<AbstractCache> getCaches(List<CacheType> cacheTypeList) {
+		getOrCreateCascadingCaches();
+		List<AbstractCache> cacheList = new ArrayList<>();
+		cacheTypeList.forEach(c -> {
+//			System.out.println("> "+c);
+			AbstractCache cache = this.getCache(c);
+			if (cache != null) {
+				cacheList.add(cache);
+			} else {
+				LOG.debug("null cache : "+c);
+			}
+			
 		}); 
+		return cacheList;
+	}
+
+	private AbstractCache getCache(CacheType c) {
+		getOrCreateCascadingCaches();
+		return cacheByType.get(c);
 	}
 
 }

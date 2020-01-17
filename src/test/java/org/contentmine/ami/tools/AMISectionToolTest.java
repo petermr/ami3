@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 import org.contentmine.ami.AMIFixtures;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
+import org.contentmine.cproject.files.CTreeList;
 import org.contentmine.cproject.files.DebugPrint;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.eucl.euclid.util.MultisetUtil;
@@ -589,6 +590,39 @@ public class AMISectionToolTest extends AbstractAMITest {
 	public void testOmar1() {
 		File targetDir = new File("target/sections/");
 		CMineTestFixtures.cleanAndCopyDir(AMIFixtures.TEST_OMAR_DIR, targetDir);
+	}
+	
+	@Test
+	/** overlap all sectionTrees.
+	 * 
+	 */
+	public void testHyperTree() throws IOException {
+		File targetDir = new File("target/sections/");
+		CMineTestFixtures.cleanAndCopyDir(AMIFixtures.TEST_ZIKA10_DIR, targetDir);
+		CProject cProject = new CProject(targetDir);
+		SectionElement hypertree = createAndPopulateHypertree(cProject);
+		XMLUtil.debug(hypertree, new File("target/hypertree/zika.xml"), 1);
+	}
+
+	@Test
+	/** overlap all sectionTrees.
+	 * 
+	 */
+	public void testClimateHyperTreeIT() throws IOException {
+		CProject cProject = new CProject(AbstractAMITest.CLIMATE200SECTIONS);
+		SectionElement hypertree = createAndPopulateHypertree(cProject);
+		XMLUtil.debug(hypertree, new File("target/hypertree/climate200.xml"), 1);
+	}
+
+	private SectionElement createAndPopulateHypertree(CProject cProject) {
+		CTreeList cTreeList = cProject.getOrCreateCTreeList();
+		SectionElement hypertree = new SectionElement("hypertree");
+		for (CTree cTree : cTreeList) {
+			hypertree.addToTree(new SectionElement("cTree"), cTree.getDirectory());
+			hypertree.mergeDescendants();
+			hypertree.sortDescendantsByCount();
+		}
+		return hypertree;
 	}
 }
 		

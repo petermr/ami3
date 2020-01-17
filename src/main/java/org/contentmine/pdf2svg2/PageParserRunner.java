@@ -528,6 +528,9 @@ public class PageParserRunner
 					System.out.println("quit");
 					break;
 				}
+				if (pageIndex > 100) {
+					throw new RuntimeException("shouldn't be here");
+				}
 			}
 		} else {
 			run(root, pageIndex);

@@ -28,6 +28,7 @@ public abstract class AbstractCache {
 		LOG.setLevel(Level.DEBUG);
 	}
 
+
 	public enum CacheType {
 		/**
 		document(new DocumentCache()),
@@ -45,33 +46,54 @@ public abstract class AbstractCache {
 		shape(new ShapeCache()),
 		text(new TextCache()),
 		*/
-		document,
-		glyph,
-		image,
-		line,
-		linebox,
-		math,
-		page,
+		contentbox(ContentBoxCache.class),
+		document(DocumentCache.class),
+		glyph(GlyphCache.class),
+		image(ImageCache.class),
+		line(LineCache.class),
+		linebox(LineBoxCache.class),
+		math(MathCache.class),
+		page(PageCache.class),
 		// more page components could go here
-		path,
-		polygon,
-		polyline,
-		rect,
-		shape,
-		text,
+		path(PathCache.class),
+		polygon(PolygonCache.class),
+		polyline(PolylineCache.class),
+		rect(RectCache.class),
+		shape(ShapeCache.class),
+		text(TextCache.class),
+		textchunk(TextChunkCache.class),
 		;
-		private AbstractCache cache;
+		private Class<? extends AbstractCache> clazz;
 		private CacheType() { 
 		}
 		
-		private CacheType(AbstractCache cache) {
+		private CacheType(Class<?extends AbstractCache> clazz) {
 			this();
-			this.cache = cache; 
+			this.clazz = clazz; 
 		}
 		
-		public AbstractCache getCache() {
-			return cache;
+		public Class<? extends AbstractCache> getCacheClass() {
+			return clazz;
 		}
+		
+		public static Class<? extends AbstractCache> getCacheClass(CacheType type) {
+			for (CacheType cacheType : values()) {
+				if (cacheType.equals(type)) {
+					return cacheType.getCacheClass();
+				}
+			}
+			return null;
+		}
+		
+		public static CacheType getCacheType(Class<? extends AbstractCache> clazz) {
+			for (CacheType cacheType : values()) {
+				if (cacheType.getCacheClass().equals(clazz)) {
+					return cacheType;
+				}
+			}
+			return null;
+		}
+		
 	}
 	
 
@@ -114,6 +136,10 @@ public abstract class AbstractCache {
 		this.svgMediaBox = svgMediaBox;
 	}
 
+	public CacheType getOrCreateCacheType() {
+		return CacheType.getCacheType(this.getClass());
+	}
+	
 	protected void drawBox(AbstractCMElement g, String col, double width) {
 		Real2Range box = this.getBoundingBox();
 		if (box != null) {

@@ -76,6 +76,7 @@ public class LineCache extends AbstractCache {
 	private double segmentTolerance = 1.0;
 	private IntArray gridXCoordinates;
 	private IntArray gridYCoordinates;
+	private LineBoxCache lineBoxCache;
 
 	public LineCache() {
 		this(new ComponentCache());
@@ -589,11 +590,14 @@ public class LineCache extends AbstractCache {
 	}
 
 	/** lineBoxCache requires lineCaches first */
-	public LineBoxCache createLineBoxCache() {
-		LineBoxCache lineBoxCache = new LineBoxCache();
-		getOrCreateHorizontalLineList();
-		getOrCreateVerticalLineList();
-		lineBoxCache.createLineBoxes(horizontalLines, verticalLines);
+	public LineBoxCache getOrCreateLineBoxCache() {
+		if (lineBoxCache == null) {
+			lineBoxCache = new LineBoxCache();
+			LOG.debug("HH "+getOrCreateHorizontalLineList());
+			getOrCreateVerticalLineList();
+			LOG.debug("VV "+getOrCreateVerticalLineList());
+			lineBoxCache.createLineBoxes(horizontalLines, verticalLines);
+		}
 		return lineBoxCache;
 	}
 
