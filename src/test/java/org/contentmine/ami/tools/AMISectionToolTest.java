@@ -10,7 +10,6 @@ import org.apache.log4j.Logger;
 import org.contentmine.ami.AMIFixtures;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
-import org.contentmine.cproject.files.CTreeList;
 import org.contentmine.cproject.files.DebugPrint;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.eucl.euclid.util.MultisetUtil;
@@ -44,6 +43,7 @@ import org.contentmine.norma.sections.KeywordsExtractor;
 import org.contentmine.norma.sections.MethodExtractor;
 import org.contentmine.norma.sections.RefListExtractor;
 import org.contentmine.norma.sections.ResultsExtractor;
+import org.contentmine.norma.sections.SectionElement;
 import org.contentmine.norma.sections.SectionTest;
 import org.contentmine.norma.sections.SubtitlesExtractor;
 import org.contentmine.norma.sections.SupplementalExtractor;
@@ -600,7 +600,7 @@ public class AMISectionToolTest extends AbstractAMITest {
 		File targetDir = new File("target/sections/");
 		CMineTestFixtures.cleanAndCopyDir(AMIFixtures.TEST_ZIKA10_DIR, targetDir);
 		CProject cProject = new CProject(targetDir);
-		SectionElement hypertree = createAndPopulateHypertree(cProject);
+		SectionElement hypertree = SectionElement.createAndPopulateHypertree(cProject);
 		XMLUtil.debug(hypertree, new File("target/hypertree/zika.xml"), 1);
 	}
 
@@ -610,20 +610,23 @@ public class AMISectionToolTest extends AbstractAMITest {
 	 */
 	public void testClimateHyperTreeIT() throws IOException {
 		CProject cProject = new CProject(AbstractAMITest.CLIMATE200SECTIONS);
-		SectionElement hypertree = createAndPopulateHypertree(cProject);
-		XMLUtil.debug(hypertree, new File("target/hypertree/climate200.xml"), 1);
+		File file = new File(AbstractAMITest.CLIMATE200SECTIONS, "climate200.xml");
+		SectionElement hypertree = SectionElement.createAndPopulateHypertree(cProject);
+		System.out.println(file);
+		XMLUtil.debug(hypertree, file, 1);
 	}
 
-	private SectionElement createAndPopulateHypertree(CProject cProject) {
-		CTreeList cTreeList = cProject.getOrCreateCTreeList();
-		SectionElement hypertree = new SectionElement("hypertree");
-		for (CTree cTree : cTreeList) {
-			hypertree.addToTree(new SectionElement("cTree"), cTree.getDirectory());
-			hypertree.mergeDescendants();
-			hypertree.sortDescendantsByCount();
-		}
-		return hypertree;
+	@Test
+	/** overlap all sectionTrees.
+	 * 
+	 */
+	public void testOilHyperTreeIT() throws IOException {
+		LOG.debug(AbstractAMITest.OIL186);
+		CProject cProject = new CProject(AbstractAMITest.OIL186);
+		SectionElement hypertree = SectionElement.createAndPopulateHypertree(cProject);
+		XMLUtil.debug(hypertree, new File(AbstractAMITest.OIL186, "hypertree.xml"), 1);
 	}
+
 }
 		
 	

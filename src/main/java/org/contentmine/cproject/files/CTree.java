@@ -137,8 +137,7 @@ The results file include the regexes used and other metadata (more needed!). Aga
  */
 public class CTree extends CContainer implements Comparable<CTree> {
 
-
-
+	public static final String C_TREE = "cTree";
 	private static final String IMAGEDOT = "image.";
 
 	enum TableFormat {
@@ -1131,7 +1130,7 @@ public class CTree extends CContainer implements Comparable<CTree> {
 
 	
 	public Element getMetadataElement() {
-		Element metadata = new Element("cTree");
+		Element metadata = new Element(C_TREE);
 		metadata.appendChild(this.toString());
 		return metadata;
 	}

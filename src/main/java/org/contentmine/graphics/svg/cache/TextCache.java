@@ -498,8 +498,8 @@ public class TextCache extends AbstractCache {
 	@Override
 	public String toString() {
 		String s = ""
-			+ "hor: "+horizontalTexts.size()+"; "
-			+ "vert: "+verticalTexts.size()+"; "
+			+ "hortxt: "+horizontalTexts.size()+"; "
+			+ "vertxt: "+verticalTexts.size()+"; "
 			+ "textList "+originalTextList.size();
 		return s;
 

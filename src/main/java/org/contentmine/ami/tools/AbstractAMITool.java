@@ -132,7 +132,7 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 	
 	@Option(names = {"--outputname"}, 
     		arity="1",
-    		description = "User's basename for outputfiles (e.g. foo/bar/<basename>.png or directories. By default this is computed by AMI."
+    		description = "(A) User's basename for outputfiles (e.g. foo/bar/<basename>.png or directories. By default this is computed by AMI."
     				+ " This allows users to create their own variants, but they won't always be known by default to subsequent"
     				+ "applications"
     		)
@@ -140,14 +140,14 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 
 	@Option(names = {"--inputname"}, 
     		arity="1",
-    		description = "User's basename for inputfiles (e.g. foo/bar/<basename>.png) or directories. By default this is often computed by AMI."
+    		description = "(A) User's basename for inputfiles (e.g. foo/bar/<basename>.png) or directories. By default this is often computed by AMI."
     				+ " However some files will have variable names (e.g. output of AMIImage) or from foreign sources or applications"
     		)
 	protected String inputBasename;
 
 	@Option(names = {"--inputnamelist"}, 
     		arity="1..*",
-    		description = "list of inputnames; will iterate over them , eseentially compressing multiple commands into one. Experimental"
+    		description = "(A) list of inputnames; will iterate over them , eseentially compressing multiple commands into one. Experimental"
     		)
 	protected List<String> inputBasenameList = null;
 
@@ -155,21 +155,21 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 		arity = "1",
 		paramLabel="CProject",
 		description = "CProject (directory) to process. This can be (a) a child directory of cwd (current working directory (b) cwd itself (use -p .) or (c) an absolute filename."
-				+ " No defaults. The cProject name is the basename of the file."
+				+ " (A) No defaults. The cProject name is the basename of the file."
 				)
     protected String cProjectDirectory = null;
 
     @Option(names = {"-i", "--input"}, 
 		arity = "1",
 		paramLabel="input",
-		description = "input filename (no defaults)"
+		description = "(A) input filename (no defaults)"
 				)
     protected String input = null;
 
     @Option(names = {"-o", "--output"}, 
 		arity = "1",
 		paramLabel="output",
-		description = "output filename (no defaults)"
+		description = "(A) output filename (no defaults)"
 				)
     protected String output = null;
 
@@ -178,74 +178,74 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 		paramLabel = "CTree",
 		interactive = false,
 		descriptionKey = "descriptionKey",
-		description = "CTree (directory) to process. This can be (a) a child directory of cwd (current working directory, usually cProject) (b) cwd itself, usually cTree (use -t .) or (c) an absolute filename."
+		description = "(A) CTree (directory) to process. This can be (a) a child directory of cwd (current working directory, usually cProject) (b) cwd itself, usually cTree (use -t .) or (c) an absolute filename."
 				+ " No defaults. The cTree name is the basename of the file."
 				)
     protected String cTreeDirectory = null;
 
     @Option(names = {"--dryrun"}, 
     		arity="1",
-    		description = "for testing runs a single phase without output, deletion or transformation.(NYI)."
+    		description = "(A) for testing runs a single phase without output, deletion or transformation.(NYI)."
     		)
 	protected Boolean dryrun = false;
 
     @Option(names = {"--forcemake"}, 
     		arity="0",
-    		description = "force 'make' regardless of file existence and dates."
+    		description = "(A) force 'make' regardless of file existence and dates."
     		)
 	protected Boolean forceMake = false;
 
     @Option(names = {"--excludebase"}, 
     		arity="1..*",
-    		description = "exclude child files of cTree (only works with --ctree). "
+    		description = "(A) exclude child files of cTree (only works with --ctree). "
     				+ "Currently must be explicit or with trailing percent for truncated glob."
     		)
 	public String[] excludeBase;
 
     @Option(names = {"--excludetree"}, 
     		arity="1..*",
-    		description = "exclude the CTrees in the list. (only works with --cproject). "
+    		description = "(A) exclude the CTrees in the list. (only works with --cproject). "
     				+ "Currently must be explicit but we'll add globbing later."
     		)
 	public String[] excludeTrees;
 
     @Option(names = {"--includebase"}, 
     		arity="1..*",
-    		description = "include child files of cTree (only works with --ctree). "
+    		description = "(A) include child files of cTree (only works with --ctree). "
     				+ "Currently must be explicit or with trailing percent for truncated glob."
     		)
 	public String[] includeBase;
 
     @Option(names = {"--includetree"}, 
     		arity="1..*",
-    		description = "include only the CTrees in the list. (only works with --cproject). "
+    		description = "(A) include only the CTrees in the list. (only works with --cproject). "
     				+ "Currently must be explicit but we'll add globbing later."
     		)
 	public String[] includeTrees;
 
     @Option(names = {"--log4j"}, 
-    		arity="2",
-    		description = "format: <classname> <level>; sets logging level of class, e.g. \n "
+    		arity="2..*",
+    		description = "(A) format: <classname> <level>; sets logging level of class, e.g. \n "
     				+ "org.contentmine.ami.lookups.WikipediaDictionary INFO"
     		)
 	public String[] log4j;
 
     @Option(names = {"--logfile"}, 
     		arity="1",
-    		description = "log file for each tree/file/image analyzed. "
+    		description = "(A) log file for each tree/file/image analyzed. "
     		)
 	public String logfile;
 
     @Option(names = {"--oldstyle"},
     		arity = "0",
-            description = " use oldstyle style of processing (project based) for unconverted tools; new style is per tree")
+            description = "(A) use oldstyle style of processing (project based) for unconverted tools; new style is per tree")
 	protected boolean oldstyle = true;
     
 
 	@Option(names = {"--rawfiletypes" }, 
 			arity = "1..*", 
 			split = ",", 
-			description = "suffixes of included files (${COMPLETION-CANDIDATES}): "
+			description = "(A) suffixes of included files (${COMPLETION-CANDIDATES}): "
 					+ "can be concatenated with commas ")
 	protected RawFileFormat[] rawFileFormats;
 
@@ -256,13 +256,13 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 
     @Option(names = {"--maxTrees"},
     		arity = "1",
-            description = "quit after given number of trees; null means infinite")
+            description = "(A) quit after given number of trees; null means infinite")
     protected Integer maxTreeCount = null;
 
 
 	@Option(names = { "-v", "--verbose" }, 
     		description = {
-        "Specify multiple -v options to increase verbosity.",
+        "(A) Specify multiple -v options to increase verbosity.",
         "For example, `-v -v -v` or `-vvv`"
         + "We map ERROR or WARN -> 0 (i.e. always print), INFO -> 1(-v), DEBUG->2 (-vv)" })
     protected boolean[] verbosity = new boolean[0];
@@ -354,6 +354,9 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 
 	private void setLogging() {
 		if (log4j != null) {
+			if (log4j.length % 2 != 0) {
+				throw new RuntimeException ("log4j must have even number of arguments");
+			}
 			Map<Class<?>, Level> levelByClass = new HashMap<Class<?>, Level>();
 			for (int i = 0; i < log4j.length; ) {
 				String className = log4j[i++];
@@ -361,7 +364,8 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 				try {
 					logClass = Class.forName(className);
 				} catch (ClassNotFoundException e) {
-					LOG.error("Cannot find logger Class: "+logClass);
+					System.err.println("Cannot find logger Class: "+className);
+					i++;
 					continue;
 				}
 				String levelS = log4j[i++];

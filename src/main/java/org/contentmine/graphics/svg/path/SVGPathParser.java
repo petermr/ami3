@@ -25,6 +25,8 @@ public class SVGPathParser {
 	private String d;
 	private SVGPathPrimitive lastPrimitive;
 	private int pathPrimitiveTime = 0;
+//	private int compactFactor = 0;
+//	private int maxToken = 4000;
 	
 	public PathPrimitiveList parseDString(String d) {
 		long t0 = System.currentTimeMillis();
@@ -49,14 +51,16 @@ public class SVGPathParser {
 		firstPoint = null;
 		currentPoint = null;
 		long t1 = System.currentTimeMillis();
-//		long mmm = t1-t0;
-//		if (mmm > 1000) {
-//			LOG.debug("to create token List "+tokenList.size()+"/milli "+mmm);
+		
+//		if (tokenList.size() > maxToken) {
+//			compactFactor = (tokenList.size() / maxToken);
+//			LOG.debug("tokens: "+tokenList.size());
 //		}
 		
 		parseAndAdd(d, itok);
 		while (pathPrimitiveList.size() > 1000) {
 			pathPrimitiveList = pathPrimitiveList.getCompactedList(2);
+			System.out.print("pp: "+pathPrimitiveList.size()+" ");
 		}
 		
 		long tend = System.currentTimeMillis();
@@ -72,7 +76,9 @@ public class SVGPathParser {
 		char t;
 		int mm = 0;	int ll = 0;	int nl = 0;	int hv = 0;	int cc = 0;	int qq = 0;	int aa = 0;	int kk = 0;
 		long t0 = System.currentTimeMillis();
-		if (tokenList.size()>1000) System.out.println("tokenList>"+tokenList.size());
+		if (tokenList.size()>1000) {
+			System.out.println("tokenList>1000: "+tokenList.size());
+		}
 		while (itok <tokenList.size()) {
 			String token = tokenList.get(itok);
 			t = token.charAt(0);

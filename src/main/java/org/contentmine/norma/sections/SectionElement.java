@@ -1,4 +1,4 @@
-package org.contentmine.ami.tools;
+package org.contentmine.norma.sections;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -9,6 +9,9 @@ import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.files.CProject;
+import org.contentmine.cproject.files.CTree;
+import org.contentmine.cproject.files.CTreeList;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Attribute;
@@ -28,7 +31,8 @@ public class SectionElement extends Element {
 	private static final String ID = "id";
 	private static final String NODE = "node";
 	private static final String TITLE = "title";
-
+	public static final String C_PROJECT = "cProject";
+	
 	public SectionElement() {
 		super(NODE);
 	}
@@ -41,6 +45,8 @@ public class SectionElement extends Element {
 	public SectionElement(File file) {
 		this();
 		String title = file.getName().replaceAll("\\d+_", "");
+		title = title.replaceAll("^_*", "");
+		title = title.replaceAll("_*$", "");
 //		System.out.println(">>"+title);
 		this.setTitle(title);
 	}
@@ -162,6 +168,20 @@ public class SectionElement extends Element {
 			childElements.get(i).sortDescendantsByCount();
 		}
 
+	}
+
+	/** top entry point for creating hypertrees.
+	 * 
+	 */
+	public static SectionElement createAndPopulateHypertree(CProject cProject) {
+		CTreeList cTreeList = cProject.getOrCreateCTreeList();
+		SectionElement hypertree = new SectionElement(C_PROJECT);
+		for (CTree cTree : cTreeList) {
+			hypertree.addToTree(new SectionElement(CTree.C_TREE), cTree.getDirectory());
+			hypertree.mergeDescendants();
+			hypertree.sortDescendantsByCount();
+		}
+		return hypertree;
 	}
 	
 }

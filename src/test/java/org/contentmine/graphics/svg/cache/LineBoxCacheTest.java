@@ -8,6 +8,7 @@ import org.apache.log4j.Logger;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGLine;
 import org.contentmine.graphics.svg.SVGLineList;
+import org.contentmine.graphics.svg.SVGSVG;
 import org.junit.Test;
 
 import junit.framework.Assert;
@@ -30,6 +31,9 @@ public class LineBoxCacheTest extends AbstractCacheTest {
 		SVGElement svgElement = SVGElement.readAndCreateSVG(pageFile);
 		SVGLineList lineList = LineCache.createLineCacheAndDisplay(CACHE_TEST, root+".lines.svg", svgElement);
 		Assert.assertEquals("lines",  59, lineList.size());
+		File svgOutfile = new File(pageFile.toString().replace(".svg",  ".out.svg"));
+		SVGSVG.wrapAndWriteAsSVG(lineList, svgOutfile);
+		Assert.assertTrue(svgOutfile+" exists", svgOutfile.exists());
 	}
 
 

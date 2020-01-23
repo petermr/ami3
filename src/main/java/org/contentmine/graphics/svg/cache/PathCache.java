@@ -71,7 +71,7 @@ public class PathCache extends AbstractCache{
 		long millis = System.currentTimeMillis();
 		this.originalPathList = SVGPath.extractPaths(svgElement);
 		if (hasManyPaths()) {
-			System.out.print(" paths: "+originalPathList.size()+" ");
+			System.out.print("many paths paths: "+originalPathList.size()+" ");
 			int totalDStringLength = 0;
 			for (SVGPath path : originalPathList) {
 				totalDStringLength += path.getDString().length();

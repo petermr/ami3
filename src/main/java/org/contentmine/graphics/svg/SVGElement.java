@@ -1167,7 +1167,7 @@ public class SVGElement extends GraphicsElement {
 		}
 	}
 
-	public SVGElement createGraphicalBoundingBox() {
+	public SVGRect createGraphicalBoundingBox() {
 		Real2Range r2r = this.getBoundingBox();
 		SVGRect rect = createGraphicalBox(r2r, getBBStroke(), getBBFill(), getBBStrokeWidth(), getBBOpacity());
 		if (this.getAttribute(TRANSFORM) != null) {
@@ -1180,6 +1180,14 @@ public class SVGElement extends GraphicsElement {
 			}
 		}
 		return rect;
+	}
+	
+	/** create graphical bounding box and insert as first child of this 
+	 * return the bounding box. Can always get "this" back with getParent() */
+	public SVGRect insertGraphicalBoundingBox() {
+		SVGRect graphicalBox = this.createGraphicalBoundingBox();
+		this.insertChild(graphicalBox, 0);
+		return graphicalBox;
 	}
 	
 	public static SVGRect createGraphicalBox(Real2Range r2r, String stroke, String fill, Double strokeWidth, Double opacity) {

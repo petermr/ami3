@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
-import java.util.AbstractList;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -27,6 +26,7 @@ import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGImage;
 import org.contentmine.graphics.svg.SVGLine;
+import org.contentmine.graphics.svg.SVGLineList;
 import org.contentmine.graphics.svg.SVGPath;
 import org.contentmine.graphics.svg.SVGRect;
 import org.contentmine.graphics.svg.SVGSVG;
@@ -195,6 +195,8 @@ public class ComponentCache extends AbstractCache {
 	private List<AbstractCache> cascadingCacheList;
 	
 	private Map<CacheType, AbstractCache> cacheByType = new HashMap<>();
+
+	private long systemTime;
 
 
 
@@ -740,50 +742,44 @@ public class ComponentCache extends AbstractCache {
 //		LOG.setLevel(Level.TRACE);
 
 		if (cascadingCacheList == null) {
-			long millis = System.currentTimeMillis();
+			systemTime = System.currentTimeMillis();
 			cascadingCacheList = new ArrayList<AbstractCache>();
-			LOG.trace("path "+(System.currentTimeMillis() - millis));
-			addNonNull(cascadingCacheList, getOrCreatePathCache());
-			LOG.trace("text "+(System.currentTimeMillis() - millis));
-			addNonNull(cascadingCacheList, getOrCreateTextCache());
-			LOG.trace("image "+(System.currentTimeMillis() - millis));
-			addNonNull(cascadingCacheList, getOrCreateImageCache());
 			
-			// first pass creates raw caches which may be elaborated later
+			/**
+			 * NOT YET IMPLEMENTED
+	private MathCache mathCache;
+	*/
+			pathCache = (PathCache) addAndDebug(getOrCreatePathCache());
+			textCache = (TextCache) addAndDebug(getOrCreateTextCache());
+			imageCache = (ImageCache) addAndDebug(getOrCreateImageCache());
+			
 			// GEOMETRY
-			LOG.trace("shape "+(System.currentTimeMillis() - millis));
-			addNonNull(cascadingCacheList, getOrCreateShapeCache());
-			LOG.trace("glyph "+(System.currentTimeMillis() - millis));
-			addNonNull(cascadingCacheList, getOrCreateGlyphCache());
-			LOG.trace("line "+(System.currentTimeMillis() - millis));
-			addNonNull(cascadingCacheList, getOrCreateLineCache());
-			
-			LOG.trace("rect "+(System.currentTimeMillis() - millis));
-			addNonNull(cascadingCacheList, getOrCreateRectCache());
-			LOG.trace("polyline "+(System.currentTimeMillis() - millis));
-			addNonNull(cascadingCacheList, getOrCreatePolylineCache());
-			LOG.trace("polygon "+(System.currentTimeMillis() - millis));
-			addNonNull(cascadingCacheList, getOrCreatePolygonCache());
-
-			// TEXT
-			LOG.trace("text");
+			shapeCache = (ShapeCache) addAndDebug(getOrCreateShapeCache());
+			glyphCache = (GlyphCache) addAndDebug(getOrCreateGlyphCache());
+			lineCache = (LineCache) addAndDebug(getOrCreateLineCache());
+			rectCache = (RectCache) addAndDebug(getOrCreateRectCache());
+			polylineCache = (PolylineCache) addAndDebug(getOrCreatePolylineCache());
+			polygonCache = (PolygonCache) addAndDebug(getOrCreatePolygonCache());
+			if (polygonCache.getOrCreatePolygonList().size() > 0) {
+				LOG.debug("polygons "+polygonCache.getOrCreatePolygonList().size());
+			}
 			// this is slow and may not be required
 			if (!ignoreClassList.contains(TextChunkCache.class)) {
-				LOG.trace("ignored "+TextChunkCache.class);
-				addNonNull(cascadingCacheList, getOrCreateTextChunkCache());
+				textChunkCache = (TextChunkCache) addAndDebug(getOrCreateTextChunkCache());
 			}
 			// COMBINED OBJECTS
-			LOG.trace("contentbox");
-			addNonNull(cascadingCacheList, getOrCreateContentBoxCache());
+			contentBoxCache = (ContentBoxCache) addAndDebug(getOrCreateContentBoxCache());
 			// this might be a child of lineCache?
+			
 			this.lineCache.createSpecializedLines();
 			lineboxCache = lineCache.getOrCreateLineBoxCache();
-			addNonNull(cascadingCacheList, lineboxCache);
+			LOG.trace("lineboxCache "+lineboxCache);
+			addAndDebug(lineboxCache);
 
 			// tidying heuristics
 			LOG.trace("border");
 			this.removeBorderingRects();
-			 LOG.trace("time in caches "+(System.currentTimeMillis() - millis));
+			 LOG.trace("time in caches "+(System.currentTimeMillis() - systemTime));
 		}
 		if (cacheByType.size() < cascadingCacheList.size()) {
 			for (AbstractCache cache : cascadingCacheList) {
@@ -798,6 +794,12 @@ public class ComponentCache extends AbstractCache {
 		}
 		LOG.setLevel(level);
 		return cascadingCacheList;
+	}
+
+	private AbstractCache addAndDebug(AbstractCache abstractCache) {
+		LOG.trace(" "+abstractCache+"; t:"+(System.currentTimeMillis() - systemTime));
+		addNonNull(cascadingCacheList, abstractCache);
+		return abstractCache;
 	}
 	
 	private void addNonNull(List<AbstractCache> cascadingCacheList, AbstractCache cache) {

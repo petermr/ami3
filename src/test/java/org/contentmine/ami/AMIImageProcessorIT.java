@@ -343,7 +343,7 @@ public class AMIImageProcessorIT {
 		SVGLineList horSVGLineList = new SVGLineList(horLines);
 		horSVGLineList.mergeLines(1.0, MergeMethod.OVERLAP);
 		Assert.assertEquals("lines", 11, horSVGLineList.size());
-		lineCache.clearLineCaches();
+		lineCache.clearAll();
 		List<SVGLine> horLineList = horSVGLineList.getLineList();
 		lineCache.addLines(horLineList);
 		

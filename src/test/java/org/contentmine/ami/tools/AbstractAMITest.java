@@ -24,7 +24,7 @@ public class AbstractAMITest {
 	public static File WORKSPACE = new File(_HOME, "workspace/");
 	public static File PROJECTS = WORKSPACE.exists() ? new File(WORKSPACE, "projects/") : new File(_HOME, "projects/");
 	public static File CANADA = new File(PROJECTS, "canada/");
-	public static File CEV = new File(PROJECTS, "CEVOpen/");
+	public static File CEV = new File(PROJECTS, "CEVOpen/").exists() ? new File(PROJECTS, "CEVOpen/") : new File(PROJECTS, "CEV/");
 	public static File CEV_SEARCH = new File(CEV, "searches/");
 	public static File CLIMATE = new File(PROJECTS, "climate/");
 	public static File CLIM_SEARCH = new File(CLIMATE, "searches/");
