@@ -297,7 +297,7 @@ public class AMISectionToolTest extends AbstractAMITest {
 		new File("target/jats/").mkdirs();
 		XMLUtil.debug(tagger.getJATSHtmlElement(),new FileOutputStream("target/jats/PMC3289602a.html"), 1);
 //
-//		String xml = FileUtils.readFileToString(SectionTest.PMC3113902XML, Charset.forName("UTF-8"));
+//		String xml = FileUtils.readFileToString(SectionTest.PMC3113902XML, CMineUtil.UTF8_CHARSET);
 		Multiset<String> tagClassSet = tagger.getOrCreateTagClassMultiset();
 		Iterable<Entry<String>> entriesSortedByCount = MultisetUtil.getEntriesSortedByCount(tagClassSet);
 //		DebugPrint.debugPrint("tags "+entriesSortedByCount);

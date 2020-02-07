@@ -216,11 +216,13 @@ public class AMISVGTool extends AbstractAMITool {
 		}
 	}
 
-	protected void processTree() {
+	protected boolean processTree() {
+		processedTree = true;
 		System.out.println("cTree: "+cTree.getName());
 		svgDir = cTree.getExistingSVGDir();
 		if (svgDir == null || !svgDir.exists()) {
 			LOG.warn("no svg/ dir");
+			processedTree = false;
 		} else {
 			createLogfileWriter();
 			createVectorLogfileWriter();
@@ -228,6 +230,7 @@ public class AMISVGTool extends AbstractAMITool {
 			closeWriters();
 			LOG.trace("closed");
 		}
+		return processedTree;
 	}
 
 	private void processPages() {

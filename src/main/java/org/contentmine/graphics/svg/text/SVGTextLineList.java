@@ -15,6 +15,7 @@ import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGText;
 import org.contentmine.graphics.svg.SVGUtil;
+import org.eclipse.jetty.util.log.Log;
 
 public class SVGTextLineList extends SVGG implements List<SVGTextLine> {
 	private static final Logger LOG = Logger.getLogger(SVGTextLineList.class);
@@ -32,6 +33,10 @@ public class SVGTextLineList extends SVGG implements List<SVGTextLine> {
 
 	public SVGTextLineList(List<SVGTextLine> textLineList) {
 		this.textLineList = new ArrayList<SVGTextLine>(textLineList);
+		for (SVGTextLine textLine : textLineList) {
+			LOG.trace("tl "+textLine.toXML());
+			this.appendChild(textLine.copy());
+		}
 	}
 
 	public int size() {

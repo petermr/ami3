@@ -35,7 +35,7 @@ public class ImageDirProcessor {
 		this.cTree = cTree;
 	}
 
-	public void processImageDirs() {
+	public boolean processImageDirs() {
 		imageDirs = null;
 		File rawImageDir = null;
 		File pdfImagesDir = cTree.getExistingPDFImagesDir();
@@ -47,7 +47,7 @@ public class ImageDirProcessor {
 		}
 		if (imageDirs == null && rawImageDir == null) {
 			LOG.warn("no pdfimages/ dir and no image/ dir");
-			return;
+			return  false;
 		}
 			
 		if (imageDirs != null) {
@@ -59,11 +59,13 @@ public class ImageDirProcessor {
 				} catch (Exception e) {
 					e.printStackTrace();
 					LOG.error("Cannot process imageDir: "+imageDir + e.getMessage());
+					return false;
 				}
 			}
 		} else {
 			processRawImageDir(rawImageDir);
 		}
+		return true;
 	}
 
 	private void processRawImageDir(File rawImageDir) {

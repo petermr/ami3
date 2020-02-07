@@ -3,7 +3,6 @@ package org.contentmine.norma.sections;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
@@ -11,6 +10,7 @@ import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.AMIFixtures;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.html.HtmlElement;
@@ -594,7 +594,7 @@ public class SectionTest {
 		new File("target/jats/").mkdirs();
 		XMLUtil.debug(tagger.getJATSHtmlElement(),new FileOutputStream("target/jats/PMC3289602a.html"), 1);
 		LOG.trace(PMC3113902XML);
-		String xml = FileUtils.readFileToString(PMC3113902XML, Charset.forName("UTF-8"));
+		String xml = FileUtils.readFileToString(PMC3113902XML, CMineUtil.UTF8_CHARSET);
 		List<Element> sections;
 		sections = tagger.getSections(SectionTag.SUBTITLE);
 		Assert.assertEquals("intro", 25, sections.size()); 
@@ -638,7 +638,7 @@ public class SectionTest {
 		new File("target/jats/").mkdirs();
 		XMLUtil.debug(tagger.getJATSHtmlElement(),new FileOutputStream("target/jats/PMC3289602a.html"), 1);
 		LOG.trace(PMC3113902XML);
-		String xml = FileUtils.readFileToString(PMC3113902XML, Charset.forName("UTF-8"));
+		String xml = FileUtils.readFileToString(PMC3113902XML, CMineUtil.UTF8_CHARSET);
 		List<Element> sections;
 		sections = tagger.getSections(SectionTag.SUBTITLE);
 		Assert.assertEquals("intro", 25, sections.size()); 

@@ -2,18 +2,13 @@ package org.contentmine.norma.json;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.util.Arrays;
 import java.util.Collection;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.contentmine.norma.json.BibSource;
-import org.contentmine.norma.json.CatalogEntry;
-import org.contentmine.norma.json.Hit;
-import org.contentmine.norma.json.Hits;
-import org.contentmine.norma.json.Shard;
+import org.contentmine.cproject.util.CMineUtil;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -214,7 +209,7 @@ public class CatalogEntryTest {
 	public void testCompleteCatalog() throws IOException {
 		
 	    JsonParser parser = new JsonParser();
-		String RSU_JSON = FileUtils.readFileToString(RSU_JSON_FILE, Charset.forName("UTF-8"));
+		String RSU_JSON = FileUtils.readFileToString(RSU_JSON_FILE, CMineUtil.UTF8_CHARSET);
 	    JsonElement jsonElement = parser.parse(RSU_JSON);
 	    JsonObject jsonObject = jsonElement.getAsJsonObject();
 	    CatalogEntry catalogEntry = CatalogEntry.createCatalogEntry(jsonObject);

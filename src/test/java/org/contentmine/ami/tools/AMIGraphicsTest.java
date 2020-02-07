@@ -1,16 +1,20 @@
 package org.contentmine.ami.tools;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.graphics.svg.SVGElement;
+import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.graphics.svg.SVGUtil;
 import org.contentmine.graphics.svg.cache.AbstractCache;
 import org.contentmine.graphics.svg.cache.AbstractCache.CacheType;
+import org.contentmine.graphics.svg.plot.AnnotatedAxis;
+import org.contentmine.graphics.svg.plot.AnnotatedAxisTest;
 import org.contentmine.graphics.svg.cache.ComponentCache;
 import org.contentmine.graphics.svg.cache.LineBox;
 import org.contentmine.graphics.svg.cache.LineBoxCache;
@@ -22,8 +26,30 @@ import org.junit.Test;
 public class AMIGraphicsTest extends AbstractAMITest {
 
 	private static final Logger LOG = Logger.getLogger(AMIGraphicsTest.class);
+	private static File PROBLEMS_DIR = new File(PDF2SVG2, "problems/");
+
 	static {
 		LOG.setLevel(Level.DEBUG);
+	}
+
+	@Test
+	/** mainly for development of code*/
+	public void testMujaSinglePage1() {
+		File svgDir = new File(PROBLEMS_DIR, "Muja_Lowe/svg/");
+		File svgFile = new File(svgDir, "fulltext-page.4.svg");
+		File outdir = new File(svgDir, "page.4/");
+		
+		analyzeSinglePage(svgFile, outdir, 1);
+	}
+
+	@Test
+	/** mainly for development of code*/
+	public void testMujaSinglePanel4() {
+		File svgDir = new File(PROBLEMS_DIR, "Muja_Lowe/svg/");
+		File svgFile = new File(svgDir, "panel.4.svg");
+		File outdir = new File(svgDir, "panel.4/");
+		
+		analyzeSinglePage(svgFile, outdir, 1);
 	}
 
 	@Test
@@ -88,6 +114,32 @@ public class AMIGraphicsTest extends AbstractAMITest {
 		File outdir = new File(svgDir, "panel.4.1.123min/");
 		
 		analyzeSinglePage(svgFile, outdir, 3);
+	}
+
+	@Test
+	/** PROBLEM: has superscripts on x-axis values */
+	public void testExtractAxisGraph1() throws FileNotFoundException {
+		// seems to have drifted slightly
+		AnnotatedAxis[] axisArray = AnnotatedAxisTest.getAxisArrayAndTestFullBox(PROBLEMS_DIR, "lichtenburg19a/svg/panel.1.1.svg", "((327.11,423.09),(67.34,136.04))");
+		
+		if (axisArray == null) {
+			LOG.error("FIXME empty axis");
+			return;
+		}
+		Assert.assertEquals("FIXME ", 4, axisArray.length);
+		AnnotatedAxis axis0 = axisArray[0];
+		SVGSVG.wrapAndWriteAsSVG((SVGElement) axis0.getSVGElement(), new File(PROBLEMS_DIR, "lichtenburg19a/svg/panel.1.1.axis0.svg"));
+		
+		System.out.println("axis0 "+axis0);
+		AnnotatedAxis axis1 = axisArray[1];
+		System.out.println("axis1 "+axis1);
+		SVGSVG.wrapAndWriteAsSVG((SVGElement) axis1.getSVGElement(), new File(PROBLEMS_DIR, "lichtenburg19a/svg/panel.1.1.axis1.svg"));
+		SVGG g = new SVGG();
+		g.appendChild(axis0.getSVGElement());
+		g.appendChild(axis1.getSVGElement());
+		SVGSVG.wrapAndWriteAsSVG(g, new File(PROBLEMS_DIR, "lichtenburg19a/svg/panel.1.1.axis01.svg"));
+
+
 	}
 
 
@@ -260,4 +312,8 @@ public class AMIGraphicsTest extends AbstractAMITest {
 
 	}
 	
+	/** rotation bug
+	 * 
+	file:///Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/pdf2svg2/test/He/svg/page.0/text.svg
+	*/
 }

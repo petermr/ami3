@@ -2,13 +2,13 @@ package org.contentmine.cproject.metadata;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.util.CMineUtil;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -109,7 +109,7 @@ public class JsonUtils {
 	}
 
 	public static List<JsonElement> getListFromFile(File file) throws IOException {
-		String s = FileUtils.readFileToString(file, Charset.forName("UTF-8"));
+		String s = FileUtils.readFileToString(file, CMineUtil.UTF8_CHARSET);
 		JsonArray array = (JsonArray) new JsonParser().parse(s);
 		List<JsonElement> elements = new ArrayList<JsonElement>();
 		for (int i = 0; i < array.size(); i++) {
@@ -119,7 +119,7 @@ public class JsonUtils {
 	}
 	
 	public static JsonElement parseJson(File file) throws IOException {
-		return new JsonParser().parse(FileUtils.readFileToString(file, Charset.forName("UTF-8")));
+		return new JsonParser().parse(FileUtils.readFileToString(file, CMineUtil.UTF8_CHARSET));
 	}
 
 

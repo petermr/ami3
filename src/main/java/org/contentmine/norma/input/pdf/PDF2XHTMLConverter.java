@@ -128,7 +128,7 @@ public class PDF2XHTMLConverter {
 //			for (SVGSVG svg : svgList) {
 //				File svgFile = new File(svgDirectory, getPageString()+(i++)+"."+SVG);
 //				try {
-//					FileUtils.write(svgFile, svg.toXML(), , Charset.forName("UTF-8"));
+//					FileUtils.write(svgFile, svg.toXML(), , CMineUtil.UTF8_CHARSET);
 //				} catch (IOException e) {
 //					throw new RuntimeException("Cannot write svg file", e);
 //				}

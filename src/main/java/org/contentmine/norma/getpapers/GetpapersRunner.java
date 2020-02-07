@@ -12,12 +12,13 @@ import org.contentmine.norma.util.CommandRunner;
 
 public class GetpapersRunner extends CommandRunner {
 
+	private static final String NODE = "/usr/local/n/versions/node/6.2.1/bin/node";
 	public final static Logger LOG = Logger.getLogger(GetpapersRunner.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
 	
-	/**
+/**
 /usr/local/n/versions/node/6.2.1/bin/getpapers
  */
 
@@ -54,13 +55,15 @@ public class GetpapersRunner extends CommandRunner {
         try {
 			runBuilderAndCleanUp();
 		} catch (Exception e) {
-			throw new RuntimeException("Cannot run Grobid: ", e);
+			throw new RuntimeException("Cannot run Getpapers: ", e);
 		}
     }
 
 	protected String getProgram() {
-		return "node";
+//		return "node";
+		// not yet tested and does not work
 //		return GETPAPERS; 
+		return NODE + " " + "getpapers";
 	}
 	
 }

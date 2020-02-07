@@ -13,6 +13,7 @@ import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.html.HtmlDiv;
@@ -144,7 +145,7 @@ public class PageAnalyzer /*extends PageChunkAnalyzer*/ {
 	private SVGSVG convertLongHref(File svgPageFile) {
 		SVGSVG svgPage = null;
 		try {
-			String content = FileUtils.readFileToString(svgPageFile, "UTF-8");
+			String content = FileUtils.readFileToString(svgPageFile, CMineUtil.UTF8_CHARSET);
 			long size = FileUtils.sizeOf(svgPageFile);
 			if (size > BIG_SVG_FILE) {
 				ImageConverter cleaner = new ImageConverter();//TODO not used

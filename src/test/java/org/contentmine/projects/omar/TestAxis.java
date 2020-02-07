@@ -5,11 +5,11 @@ import java.io.FileNotFoundException;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.contentmine.graphics.svg.SVGLine.LineDirection;
+import org.contentmine.graphics.svg.SVGElement;
+import org.contentmine.graphics.svg.SVGG;
+import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.graphics.svg.plot.AnnotatedAxis;
 import org.contentmine.graphics.svg.plot.AnnotatedAxisTest;
-import org.contentmine.graphics.svg.plot.AxisScaleBox;
-import org.contentmine.graphics.svg.plot.AxisTickBox;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -21,11 +21,14 @@ public class TestAxis {
 	
 //	private static File OMAR_DIR = new File("src/test/resources/org/contentmine/projects/omar/test/lichtenburg19a/svg/");
 	private static File OMAR_DIR = new File("src/test/resources/org/contentmine/ami/omar/test/lichtenburg19a/svg/");
+	private static File PROBLEMS_DIR = new File("src/test/resources/org/contentmine/ami/pdf2svg2/problems/");
 
 	@Test
+	/** PROBLEM: has superscripts on x-axis values */
 	public void testExtractAxisGraph1() throws FileNotFoundException {
 		// seems to have drifted slightly
-		AnnotatedAxis[] axisArray = AnnotatedAxisTest.getAxisArrayAndTestFullBox(OMAR_DIR, "page1.graph1.svg", "((327.106,423.087),(75.336,144.035))");
+//		AnnotatedAxis[] axisArray = AnnotatedAxisTest.getAxisArrayAndTestFullBox(OMAR_DIR, "page1.graph1.svg", "((327.106,423.087),(75.336,144.035))");
+		AnnotatedAxis[] axisArray = AnnotatedAxisTest.getAxisArrayAndTestFullBox(PROBLEMS_DIR, "lichtenburg19a/svg/panel.1.1.svg", "((327.11,423.09),(67.34,136.04))");
 		
 		if (axisArray == null) {
 			LOG.error("FIXME empty axis");
@@ -33,9 +36,16 @@ public class TestAxis {
 		}
 		Assert.assertEquals("FIXME ", 4, axisArray.length);
 		AnnotatedAxis axis0 = axisArray[0];
+		SVGSVG.wrapAndWriteAsSVG((SVGElement) axis0.getSVGElement(), new File(PROBLEMS_DIR, "lichtenburg19a/svg/panel.1.1.axis0.svg"));
+		
 		System.out.println("axis0 "+axis0);
 		AnnotatedAxis axis1 = axisArray[1];
 		System.out.println("axis1 "+axis1);
+		SVGSVG.wrapAndWriteAsSVG((SVGElement) axis1.getSVGElement(), new File(PROBLEMS_DIR, "lichtenburg19a/svg/panel.1.1.axis1.svg"));
+		SVGG g = new SVGG();
+		g.appendChild(axis0.getSVGElement());
+		g.appendChild(axis1.getSVGElement());
+		SVGSVG.wrapAndWriteAsSVG(g, new File(PROBLEMS_DIR, "lichtenburg19a/svg/panel.1.1.axis01.svg"));
 		/**
 		fullLineBbox.format(3);
 		Assert.assertEquals("full box",  "((140.415,426.016),(483.056,650.628))", fullLineBbox.toString());

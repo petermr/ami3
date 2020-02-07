@@ -635,4 +635,8 @@ public abstract class HtmlElement extends AbstractCMElement {
 		LOG.debug("no tidy for: "+this.getClass()+" ; override");
 	}
 
+	public static HtmlElement parseXML(String content) {
+		return HtmlElement.create(XMLUtil.parseCleanlyToXML(content));
+	}
+
 }

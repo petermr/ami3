@@ -2,7 +2,6 @@ package org.contentmine.cproject.files;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -12,6 +11,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.cproject.CMineFixtures;
+import org.contentmine.cproject.util.CMineUtil;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -35,7 +35,7 @@ public class ResultsJsonTest {
 		CTree ctree = new CTree(file);
 		File resultsJson = ctree.getExistingQuickscrapeMD();
 		Assert.assertNotNull("QMD is null: "+file, resultsJson);
-		String resultsJsonString = FileUtils.readFileToString(resultsJson, Charset.forName("UTF-8"));
+		String resultsJsonString = FileUtils.readFileToString(resultsJson, CMineUtil.UTF8_CHARSET);
 	    JsonParser parser = new JsonParser();
 	    JsonObject jsonObject = (JsonObject) parser.parse(resultsJsonString);
 		Assert.assertEquals("{\"value\":[\"Trials\"]}", jsonObject.get("journal").toString());
@@ -75,7 +75,7 @@ public class ResultsJsonTest {
 		CTree ctree = new CTree(file);
 		File resultsJson = ctree.getExistingQuickscrapeMD();
 		if (resultsJson != null) {
-			resultsJsonString = FileUtils.readFileToString(resultsJson, Charset.forName("UTF-8"));
+			resultsJsonString = FileUtils.readFileToString(resultsJson, CMineUtil.UTF8_CHARSET);
 		}
 		return resultsJsonString;
 	}

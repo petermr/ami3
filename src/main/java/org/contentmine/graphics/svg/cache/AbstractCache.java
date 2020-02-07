@@ -264,5 +264,9 @@ public abstract class AbstractCache {
 	protected AbstractCache createCache(SVGElement svgElement) {
 		throw new RuntimeException("Override AbstractCache createCache in "+this.getClass());
 	}
-//	protected abstract AbstractCache createCache(SVGElement svgElement);
+	
+	protected void printNonNull(StringBuilder sb, String name, AbstractCache cache) {
+		sb.append(((cache == null) ? "" : name+": "+cache.toString())+" ");
+	}
+
 }

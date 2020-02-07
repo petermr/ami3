@@ -24,11 +24,12 @@ import org.contentmine.graphics.svg.SVGLine.LineDirection;
 import org.contentmine.graphics.svg.SVGRect;
 import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.graphics.svg.SVGText;
+import org.contentmine.graphics.svg.SVGTextBuilder;
 import org.contentmine.graphics.svg.SVGTextComparator;
 import org.contentmine.graphics.svg.StyleAttributeFactory;
 import org.contentmine.graphics.svg.fonts.StyleRecord;
 import org.contentmine.graphics.svg.fonts.StyleRecordFactory;
-import org.contentmine.graphics.svg.fonts.StyleRecordSet;
+import org.contentmine.graphics.svg.fonts.StyledBoxRecordSet;
 import org.contentmine.graphics.svg.normalize.TextDecorator;
 import org.contentmine.graphics.svg.plot.AnnotatedAxis;
 import org.contentmine.graphics.svg.text.SVGTextLine;
@@ -73,12 +74,12 @@ public class TextCache extends AbstractCache {
 	private List<SVGText> currentTextList;
 	private StyleRecordFactory styleRecordFactory;
 	private List<StyleRecord> sortedStyleRecords;
-	private StyleRecordSet styleRecordSet;
+	private StyledBoxRecordSet styleRecordSet;
 	private Multimap<Double, SVGText> horizontalTextsByYCoordinate;
 	private Multimap<Double, SVGText> horizontalTextsByFontSize;
 	private int coordinateDecimalPlaces = 1;
 	SVGTextLineList textLineListForLargestFont;
-	private StyleRecordSet horizontalStyleRecordSet;
+	private StyledBoxRecordSet horizontalStyleRecordSet;
 	private List<SVGText> horizontalTextListSortedY;
 	Double largestCurrentFont;
 	SVGTextLineList textLines;
@@ -86,6 +87,7 @@ public class TextCache extends AbstractCache {
 	private Stack<TextLineFormatter> lineFormatterStack;
 	private SuscriptFormatter suscriptFormatter;
 	private List<Real2Range> bboxList;
+	private SVGTextBuilder svgTextBuilder;
 
 	
 	public TextCache(ComponentCache svgCache) {
@@ -577,7 +579,7 @@ public class TextCache extends AbstractCache {
 		return styleRecordFactory;
 	}
 
-	public StyleRecordSet getStyleRecordSet() {
+	public StyledBoxRecordSet getStyleRecordSet() {
 		return styleRecordSet;
 	}
 
@@ -605,7 +607,7 @@ public class TextCache extends AbstractCache {
 		List<StyleRecord> sortedStyleRecords = createSortedStyleRecords();
 		LOG.trace(sortedStyleRecords.size());
 		for (int i = 0; i < sortedStyleRecords.size(); i++) {
-			StyleRecordSet leftStyleRecordSet = getStyleRecordSet();
+			StyledBoxRecordSet leftStyleRecordSet = getStyleRecordSet();
 			SVGElement gg = leftStyleRecordSet.createStyledTextBBoxes(texts);
 			gg.setId("text boxes");
 			g.appendChild(gg);
@@ -691,13 +693,13 @@ public class TextCache extends AbstractCache {
 
 	public SVGTextLineList getTextLinesForLargestFont() {
 		// assume that y-coords will be the most important structure
-		StyleRecordSet styleRecordSet = getOrCreateHorizontalStyleRecordSet();
+		StyledBoxRecordSet styleRecordSet = getOrCreateHorizontalStyleRecordSet();
 		largestCurrentFont = styleRecordSet.getLargestFontSize();
 		textLineListForLargestFont = this.getTextLinesForFontSize(largestCurrentFont);
 		return textLineListForLargestFont;
 	}
 
-	public StyleRecordSet getOrCreateHorizontalStyleRecordSet() {
+	public StyledBoxRecordSet getOrCreateHorizontalStyleRecordSet() {
 		if (horizontalStyleRecordSet == null) {
 			List<SVGText> orCreateHorizontalTextListSortedY = getOrCreateHorizontalTextListSortedY();
 			horizontalStyleRecordSet = new StyleRecordFactory().createStyleRecordSet(orCreateHorizontalTextListSortedY);
@@ -722,7 +724,7 @@ public class TextCache extends AbstractCache {
 	}
 
 	public List<Double> getMinorFontSizes() {
-		StyleRecordSet horizontalStyleRecordSet =
+		StyledBoxRecordSet horizontalStyleRecordSet =
 				getOrCreateHorizontalStyleRecordSet();
 		List<Double> minorFontSizes = horizontalStyleRecordSet.getMinorFontSizes();
 		return minorFontSizes;
@@ -844,6 +846,26 @@ public class TextCache extends AbstractCache {
 			}
 		}
 		return bboxList;
+	}
+
+	public SVGTextBuilder getOrCreateSVGTextBuilder() {
+		if (svgTextBuilder == null) {
+			svgTextBuilder = new SVGTextBuilder();
+			svgTextBuilder.readTextList(currentTextList);
+		}
+		return svgTextBuilder;
+	}
+
+	/** create bounding boxes round all text elements and margin lines.
+	 *  
+	 * @return
+	 */
+	SVGElement createTextBoxes() {
+		StyleRecordFactory styleRecordFactory = new StyleRecordFactory();
+		styleRecordFactory.setNormalizeFontNames(true);
+		StyledBoxRecordSet styleRecordSet = styleRecordFactory.createStyleRecordSet(originalTextList);
+		SVGElement g = styleRecordSet.createStyledTextBBoxes(originalTextList);
+		return g;
 	}
 
 

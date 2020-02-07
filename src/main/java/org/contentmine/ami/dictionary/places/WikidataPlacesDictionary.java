@@ -10,6 +10,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 
 
@@ -49,7 +50,7 @@ public class WikidataPlacesDictionary extends DefaultAMIDictionary {
 
 	private void readWikiplacesRaw() {
 		try {
-//			raw = FileUtils.readFileToString(WIKIPLACES_RAW_FILE, Charset.forName("UTF-8"));
+//			raw = FileUtils.readFileToString(WIKIPLACES_RAW_FILE, CMineUtil.UTF8_CHARSET);
 //			String[] lines = raw.split("<");
 //			String xmlString = StringUtils.join(Arrays.asList(lines), "\n<");
 //			File xmlFile = new File("target/wikiplaces/raw.txt.xml");

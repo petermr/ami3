@@ -11,6 +11,7 @@ import org.apache.commons.csv.CSVPrinter;
 import org.apache.commons.csv.CSVRecord;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.cproject.util.RectangularTable;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlTable;
@@ -34,7 +35,7 @@ public class CSVTransformer {
 		LOG.setLevel(Level.DEBUG);
 	}
 
-	private Charset charset = Charset.forName("UTF-8");
+	private Charset charset = CMineUtil.UTF8_CHARSET;
 	private CSVFormat csvFormat = CSVFormat.DEFAULT;
 	
 	public CSVTransformer() {

@@ -3,12 +3,12 @@ package org.contentmine.cproject.args.log;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.joda.time.DateTime;
 import org.joda.time.Interval;
@@ -171,7 +171,7 @@ public class AbstractLogElement extends Element {
 				ByteArrayOutputStream baos = new ByteArrayOutputStream();
 				XMLUtil.debug(this, baos, 1);
 				LOG.trace(">>"+this.toXML());
-				FileUtils.write(file, baos.toString(), Charset.forName("UTF-8"));
+				FileUtils.write(file, baos.toString(), CMineUtil.UTF8_CHARSET);
 			} catch (IOException e) {
 				throw new RuntimeException("Cannot write LOG: ", e);
 			}

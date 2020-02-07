@@ -594,5 +594,9 @@ public class RealRange implements EuclidConstants, Comparable<RealRange>  {
 // uses	 getConstantTo(bRange) + x * getScaleTo(range);
 		return getConstantTo(range) + x * range.getRange() / this.getRange();
 	}
+	
+	public IntRange getIntRange() {
+		return new IntRange(this);
+	}
 
 }

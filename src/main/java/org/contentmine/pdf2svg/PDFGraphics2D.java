@@ -16,6 +16,7 @@
 package org.contentmine.pdf2svg;
 
 import java.awt.Color;
+
 import java.awt.Composite;
 import java.awt.Font;
 import java.awt.FontMetrics;

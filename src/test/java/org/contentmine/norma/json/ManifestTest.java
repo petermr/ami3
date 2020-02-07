@@ -2,16 +2,14 @@ package org.contentmine.norma.json;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.util.Map;
 import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.norma.NormaFixtures;
-import org.contentmine.norma.json.ManifestElement;
-import org.contentmine.norma.json.ManifestJson;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -49,7 +47,7 @@ public class ManifestTest {
 	
 	@Test
 	public void testReadFirstManifestFromArray() throws IOException {
-		String resultsJsonString = FileUtils.readFileToString(new File(NormaFixtures.TEST_JSON_DIR, "all_results.json"), Charset.forName("UTF-8"));
+		String resultsJsonString = FileUtils.readFileToString(new File(NormaFixtures.TEST_JSON_DIR, "all_results.json"), CMineUtil.UTF8_CHARSET);
 	    JsonParser parser = new JsonParser();
 	    JsonElement jsonElement = parser.parse(resultsJsonString);
 	    JsonArray jsonArray = jsonElement.getAsJsonArray();
@@ -62,7 +60,7 @@ public class ManifestTest {
 	
 	@Test
 	public void testReadFirstManifestFromFile() throws IOException {
-		String resultsJsonString = FileUtils.readFileToString(new File(NormaFixtures.TEST_JSON_DIR, "results0.json"), Charset.forName("UTF-8"));
+		String resultsJsonString = FileUtils.readFileToString(new File(NormaFixtures.TEST_JSON_DIR, "results0.json"), CMineUtil.UTF8_CHARSET);
 	    JsonParser parser = new JsonParser();
 	    JsonElement jsonElement = parser.parse(resultsJsonString);
 	    JsonObject jsonObject = jsonElement.getAsJsonObject();
@@ -178,7 +176,7 @@ public class ManifestTest {
 	 * @throws IOException
 	 */
 	public void testJSONPath() throws IOException {
-		String json = FileUtils.readFileToString(new File(NormaFixtures.TEST_JSON_DIR, "results0.json"), Charset.forName("UTF-8"));
+		String json = FileUtils.readFileToString(new File(NormaFixtures.TEST_JSON_DIR, "results0.json"), CMineUtil.UTF8_CHARSET);
 		ReadContext ctx = JsonPath.parse(json);
 		net.minidev.json.JSONArray authorList = ctx.read("$.authorList[0].author");
 		for (int i = 0; i < authorList.size(); i++) { 

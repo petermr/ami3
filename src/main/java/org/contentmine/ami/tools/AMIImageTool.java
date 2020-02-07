@@ -381,10 +381,12 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 		sharpenMethod = SharpenMethod.getMethod(sharpen);
 	}
 
-	protected void processTree() {
+	protected boolean processTree() {
+		processedTree = true;
 		if (getVerbosityInt() > 0) System.out.println("AMIImageTool processTree");
 		ImageDirProcessor imageDirProcessor = new ImageDirProcessor(this, cTree);
-		imageDirProcessor.processImageDirs();
+		processedTree = imageDirProcessor.processImageDirs();
+		return processedTree;
 	}
 
 	private void processSingleImageFile(File imageFile) {

@@ -377,10 +377,10 @@ public class AMIForestPlotTool extends AbstractAMITool implements HasImageDir {
 	    }
     }
 
-	protected void processTree() {
+	protected boolean processTree() {
 		ImageDirProcessor imageDirProcessor = new ImageDirProcessor(this, cTree);
-		imageDirProcessor.processImageDirs();
-		
+		processedTree = imageDirProcessor.processImageDirs();
+		return processedTree;
 	}
 
 	@Override

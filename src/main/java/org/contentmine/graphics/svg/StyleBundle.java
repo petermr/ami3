@@ -654,6 +654,9 @@ public class StyleBundle implements XMLConstants {
 	}
 
 	private String normalizeBold(String fontName) {
+		if (fontName == null) {
+			return null;
+		}
 		// examples are FooBold Foo-Bold, Foo.B, Foo+20
 		String bold1 = "(\\-?Bold)";
 		String bold2 = "(\\.B$)";
@@ -669,6 +672,7 @@ public class StyleBundle implements XMLConstants {
 	}
 
 	private String normalizeItalic(String fontName) {
+		if (fontName == null) return null;
 		// examples are FooBold Foo-Bold, Foo.B, Foo+20
 		String ital1 = "(\\-?Italic)";
 		String ital2 = "(\\-?Oblique)";

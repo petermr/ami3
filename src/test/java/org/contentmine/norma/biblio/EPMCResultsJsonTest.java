@@ -3,7 +3,6 @@ package org.contentmine.norma.biblio;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.util.Arrays;
 import java.util.List;
 
@@ -11,13 +10,10 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.cproject.args.DefaultArgProcessor;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlHtml;
 import org.contentmine.norma.NormaFixtures;
-import org.contentmine.norma.biblio.EPMCAuthor;
-import org.contentmine.norma.biblio.EPMCResultsJsonEntry;
-import org.contentmine.norma.biblio.FullTextURL;
-import org.contentmine.norma.biblio.JournalInfo;
 import org.contentmine.norma.biblio.json.EPMCConverter;
 import org.joda.time.DateTime;
 import org.junit.Assert;
@@ -37,7 +33,7 @@ public class EPMCResultsJsonTest {
 	
 	@Test
 	public void testReadEpmcMD() throws IOException {
-		String resultsJsonString = FileUtils.readFileToString(new File(NormaFixtures.TEST_BIBLIO_DIR, "json/eupmc_results.json"), Charset.forName("UTF-8"));
+		String resultsJsonString = FileUtils.readFileToString(new File(NormaFixtures.TEST_BIBLIO_DIR, "json/eupmc_results.json"), CMineUtil.UTF8_CHARSET);
 	    JsonParser parser = new JsonParser();
 	    JsonElement jsonElement = parser.parse(resultsJsonString);
 	    JsonArray entryArray = jsonElement.getAsJsonArray();
@@ -52,7 +48,7 @@ public class EPMCResultsJsonTest {
 	
 	@Test
 	public void testReadEpmcMDFields() throws IOException {
-		String resultsJsonString = FileUtils.readFileToString(new File(NormaFixtures.TEST_BIBLIO_DIR, "json/eupmc_results.json"), Charset.forName("UTF-8"));
+		String resultsJsonString = FileUtils.readFileToString(new File(NormaFixtures.TEST_BIBLIO_DIR, "json/eupmc_results.json"), CMineUtil.UTF8_CHARSET);
 	    JsonParser parser = new JsonParser();
 	    JsonElement jsonElement = parser.parse(resultsJsonString);
 	    JsonArray entryArray = jsonElement.getAsJsonArray();
@@ -215,7 +211,7 @@ public class EPMCResultsJsonTest {
 	@Test
 	public void testReadEpmcMD1() throws IOException {
 		// a 5 Mbyte file
-		String resultsJsonString = FileUtils.readFileToString(new File(NormaFixtures.TEST_BIBLIO_DIR, "json/ursusmaritimus.json"), Charset.forName("UTF-8"));
+		String resultsJsonString = FileUtils.readFileToString(new File(NormaFixtures.TEST_BIBLIO_DIR, "json/ursusmaritimus.json"), CMineUtil.UTF8_CHARSET);
 	    JsonParser parser = new JsonParser();
 	    JsonElement jsonElement = parser.parse(resultsJsonString);
 	    JsonArray entryArray = jsonElement.getAsJsonArray();

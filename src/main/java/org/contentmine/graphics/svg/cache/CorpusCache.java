@@ -16,6 +16,7 @@ import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.html.HtmlBody;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlHtml;
+import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.graphics.svg.SVGText;
@@ -125,7 +126,7 @@ public class CorpusCache extends ComponentCache {
 				HtmlElement element = documentCache.getOrCreateConvertedHtmlElement();
 				if (element == null) {
 					LOG.warn("Null html");
-					throw new RuntimeException("Null element");
+//					throw new RuntimeException("Null element");
 				} else {
 					htmlElementList.add(element);
 				}
@@ -156,7 +157,10 @@ public class CorpusCache extends ComponentCache {
 			ensureDocumentCacheList();
 			getOrCreateCTreeList();
 			for (CTree cTree : cTreeList) {
+				System.out.println(">"+cTree.getName()+">");
 				DocumentCache documentCache = new DocumentCache(cTree);
+				documentCache.getOrCreatePageCacheList();
+				LOG.debug("DocCache "+documentCache.toString());
 				documentCacheList.add(documentCache);
 			}
 		}
@@ -199,6 +203,12 @@ public class CorpusCache extends ComponentCache {
 			}
 		}
 		return null;
+	}
+
+	public void createTextBoxesAndWriteToSVGDirectories() {
+		for (DocumentCache documentCache : getOrCreateDocumentCacheList()) {
+			documentCache.createTextBoxesAndWriteToSVGDir();
+		}
 	}
 
 }

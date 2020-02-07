@@ -90,13 +90,15 @@ public class AMIGraphicsTool extends AbstractAMITool {
     }
 
 
-	protected void processTree() {
+	protected boolean processTree() {
 		if (getVerbosityInt() > 0) System.out.println("AMIGraphicsTool processTree");
 		runGraphics();
+		return processedTree;
 	}
 
 	private void runGraphics() {
 		File svgDir = cTree.getExistingSVGDir();
+		processedTree = false;
 		try {
 			LOG.trace(">>>"+svgDir);
 			if (svgDir != null) {
@@ -112,6 +114,7 @@ public class AMIGraphicsTool extends AbstractAMITool {
 			        
 			    }
 			}
+			processedTree = true;
 		} catch (IOException e) {
 			throw new RuntimeException("cannot list files", e);
 		}

@@ -1267,7 +1267,7 @@ public class CProject extends CContainer {
 			log.add("log from "+this.getDirectory(), renamedFileFileArray);
 			
 			String prettyString = Util.prettyPrintJson(log);
-			FileUtils.write(file, prettyString, "UTF-8");
+			FileUtils.write(file, prettyString, CMineUtil.UTF8_CHARSET);
 		} catch (IOException e) {
 			throw new RuntimeException("cannnot write log file: "+file, e);
 		}

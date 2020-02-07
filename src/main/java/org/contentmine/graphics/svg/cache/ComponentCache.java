@@ -882,19 +882,26 @@ public class ComponentCache extends AbstractCache {
 
 	@Override
 	public String toString() {
-		String s = ""
-		+"image: "+String.valueOf(imageCache)+"\n"
-		+"path: "+String.valueOf(pathCache)+"\n"
-		+"text: "+String.valueOf(textCache)+"\n"
-		+"line: "+String.valueOf(lineCache)+"\n"
-		+"rect: "+String.valueOf(rectCache)+"\n"
-		+"shape: "+String.valueOf(getOrCreateShapeCache()+"\n");
+		StringBuilder sb = new StringBuilder();
+		printNonNull(sb, "imageCache", imageCache);
+		printNonNull(sb, "pathCache", pathCache);
+		printNonNull(sb, "textCache", textCache);
+		printNonNull(sb, "lineCache", imageCache);
+		printNonNull(sb, "rectCache", rectCache);
+		printNonNull(sb, "shapeCache", shapeCache);
+//		String s = ""
+//		+"image: "+String.valueOf(imageCache)+"\n"
+//		+"path: "+String.valueOf(pathCache)+"\n"
+//		+"text: "+String.valueOf(textCache)+"\n"
+//		+"line: "+String.valueOf(lineCache)+"\n"
+//		+"rect: "+String.valueOf(rectCache)+"\n"
+//		+"shape: "+String.valueOf(getOrCreateShapeCache()+"\n");
 		if (abstractCacheList != null) {
 			for (AbstractCache abstractCache : abstractCacheList) {
-				s += abstractCache.getClass().getSimpleName()+": "+String.valueOf(abstractCache)+"\n";
+				printNonNull(sb,  abstractCache.getClass().getSimpleName(), abstractCache);
 			}
 		}
-		return s;
+		return sb.toString();
 	}
 
 	public void setContentBoxCache(ContentBoxCache contentBoxCache) {

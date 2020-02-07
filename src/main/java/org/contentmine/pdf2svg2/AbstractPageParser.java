@@ -148,7 +148,12 @@ public abstract class AbstractPageParser extends PageDrawer {
 	@Override
     public void drawPage(Graphics g, PDRectangle pageSize) throws IOException {
     	this.pageSize = pageSize;
-    	super.drawPage(g, pageSize);
+    	try {
+    		super.drawPage(g, pageSize);
+    	} catch (Exception e) {
+    		LOG.error(e.getMessage());
+    		return;
+    	}
     	mediaBox = new Real2Range(
     			new RealRange(pageSize.getLowerLeftX(), pageSize.getUpperRightX()),
     			new RealRange(pageSize.getLowerLeftY(), pageSize.getUpperRightY())
@@ -185,7 +190,8 @@ public abstract class AbstractPageParser extends PageDrawer {
     	super.endText();
     	
     	if (currentTextPhrase == null) {
-    		throw new RuntimeException("textPhrase not opened");
+    		LOG.error("textPhrase not opened");
+    		return;
     	}
     	svgg.appendChild(currentTextPhrase);
     	currentTextPhrase = null;

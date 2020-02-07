@@ -8,7 +8,6 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -43,6 +42,7 @@ import org.contentmine.cproject.files.ResultElement;
 import org.contentmine.cproject.files.ResultsElement;
 import org.contentmine.cproject.files.SnippetsTree;
 import org.contentmine.cproject.lookup.DefaultStringDictionary;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlA;
@@ -833,7 +833,7 @@ public class DefaultArgProcessor {
 					LOG.error("Cannot transform "+argsXmlFile+"; skipping");
 					continue;
 				}
-				FileUtils.writeStringToFile(argsHtmlFile, xmlString, Charset.forName("UTF-8"));
+				FileUtils.writeStringToFile(argsHtmlFile, xmlString, CMineUtil.UTF8_CHARSET);
 			} catch (Exception e) {
 				LOG.debug("Cannot transform to HTML "+argsXmlFile+"; "+e.getMessage());
 			}

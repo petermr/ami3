@@ -18,6 +18,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLConstants;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.util.HtmlUtil;
@@ -627,7 +628,7 @@ public class HtmlFactory {
 	}
 
 	public HtmlElement parse(InputStream is) throws Exception {
-		String ss = IOUtils.toString(is, "UTF-8");
+		String ss = IOUtils.toString(is, CMineUtil.UTF8_CHARSET);
 		ensureContentLists();
 		for (String remove : contentList) {
 			ss = XMLUtil.removeTags(remove, ss);

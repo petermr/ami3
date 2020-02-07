@@ -25,7 +25,7 @@ import org.contentmine.graphics.svg.SVGRect;
 import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.graphics.svg.SVGText;
 import org.contentmine.graphics.svg.fonts.StyleRecordFactory;
-import org.contentmine.graphics.svg.fonts.StyleRecordSet;
+import org.contentmine.graphics.svg.fonts.StyledBoxRecordSet;
 import org.contentmine.graphics.svg.util.SuperPixelArray;
 import org.junit.Assert;
 import org.junit.Ignore;
@@ -207,7 +207,7 @@ public class PageCacheIT {
 		cache.readGraphicsComponentsAndMakeCaches(svgFile);
 		List<SVGText> svgTexts = cache.getOrCreateTextCache().getOrCreateOriginalTextList();
 		StyleRecordFactory styleRecordFactory = new StyleRecordFactory();
-		StyleRecordSet styleRecordSet = styleRecordFactory.createStyleRecordSet(svgTexts);
+		StyledBoxRecordSet styleRecordSet = styleRecordFactory.createStyleRecordSet(svgTexts);
 		SVGElement g = styleRecordSet.createStyledTextBBoxes(svgTexts);
 		List<SVGLine> horizontalLines = cache.getOrCreateLineCache().getOrCreateHorizontalLineList();
 		g.appendChildren(horizontalLines);

@@ -27,7 +27,10 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.StringReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;
@@ -37,7 +40,6 @@ import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlI;
 import org.contentmine.graphics.html.HtmlSub;
 import org.contentmine.graphics.html.HtmlSup;
-import org.contentmine.graphics.html.HtmlTr;
 
 import nu.xom.Attribute;
 import nu.xom.Builder;
@@ -421,7 +423,7 @@ public abstract class XMLUtil implements XMLConstants {
 			Document doc = new Builder().build(new StringReader(xmlString));
 			root = doc.getRootElement();
 		} catch (Exception e) {
-			System.out.println(">xml>"+xmlString+"<");
+//			System.out.println(">xml>"+xmlString+"<");
 			throw new RuntimeException(e);
 		}
 		return root;
@@ -1144,6 +1146,12 @@ public abstract class XMLUtil implements XMLConstants {
 		}
 	}
 	
+	/**
+	 * requires element to be only element matching xpath
+	 * @param element
+	 * @param xpath
+	 * @return
+	 */
 	public static Element getSingleElement(Element element, String xpath) {
 		Nodes nodes;
 		try {
@@ -1152,6 +1160,22 @@ public abstract class XMLUtil implements XMLConstants {
 			throw new RuntimeException("Xpath: "+xpath, e);
 		}
 		return (nodes.size() == 1) ? (Element) nodes.get(0) : null;
+	}
+
+	/**
+	 * requires element to be First element matching xpath
+	 * @param element
+	 * @param xpath
+	 * @return
+	 */
+	public static Element getFirstElement(Element element, String xpath) {
+		Nodes nodes;
+		try {
+			nodes = element.query(xpath);
+		} catch (XPathException e) {
+			throw new RuntimeException("Xpath: "+xpath, e);
+		}
+		return (nodes.size() > 0) ? (Element) nodes.get(0) : null;
 	}
 
 	public static void detach(nu.xom.Element element) {
@@ -1654,5 +1678,45 @@ public abstract class XMLUtil implements XMLConstants {
 		}
 		return values;
 	}
+
+	/** replaces all non-standard entities or ones we can't look up 
+	 * (crude, just to get it parsing)
+	 * keep amp, apos, lt, gt, quot*/
+	private final static List<String> standard = Arrays.asList(new String[]{"apos", "amp", "quot", "lt", "gt"});
+
+	private static final String START = "[[";
+	private static final String END = "]]";
+	
+	public static String replaceCharacterEntities(String string) {
+		
+		Pattern pattern = Pattern.compile("\\&([^;]+)\\;");
+		Matcher matcher = pattern.matcher(string);
+		int start = 0;
+		int end = 0;
+		StringBuilder sb = new StringBuilder();
+		while (matcher.find(start)) {
+			String group1 = matcher.group(1);
+			sb.append(string.substring(end, matcher.start()));
+			sb.append((standard.contains(group1)) ? matcher.group(0) : START + group1 + END);
+			start = matcher.end();
+			end = matcher.end();
+		}
+		sb.append(string.substring(end));
+		return sb.toString();
+	}
+
+	public static Element parseCleanlyToXML(String result) {
+		result = XMLUtil.removeScripts(result);		
+		result = XMLUtil.replaceCharacterEntities(result);
+		Element element = null;
+		try {
+			element = XMLUtil.parseXML(result);
+		} catch (Exception e) {
+			System.out.println("CANNOT PARSE:\n"+result.substring(0, Math.min(100, result.length())));
+			throw e;
+		}
+		return element;
+	}
+
 
 }

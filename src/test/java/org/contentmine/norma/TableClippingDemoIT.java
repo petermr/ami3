@@ -14,7 +14,7 @@ import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.graphics.svg.SVGText;
 import org.contentmine.graphics.svg.fonts.StyleRecordFactory;
-import org.contentmine.graphics.svg.fonts.StyleRecordSet;
+import org.contentmine.graphics.svg.fonts.StyledBoxRecordSet;
 import org.contentmine.graphics.svg.fonts.TypefaceMaps;
 import org.contentmine.norma.pubstyle.util.RegionFinder;
 import org.contentmine.svg2xml.page.PageCropper;
@@ -297,7 +297,7 @@ public class TableClippingDemoIT {
 			List<SVGText> svgTexts = SVGText.readAndCreateTexts(textFiles);
 			Assert.assertEquals(8538, svgTexts.size());
 			StyleRecordFactory styleRecordFactory = new StyleRecordFactory();
-			StyleRecordSet styleRecordSet = styleRecordFactory.createStyleRecordSet(svgTexts);
+			StyledBoxRecordSet styleRecordSet = styleRecordFactory.createStyleRecordSet(svgTexts);
 			TypefaceMaps typefaceSet = styleRecordSet.extractTypefaceMaps("cert");
 			Assert.assertEquals(29, typefaceSet.size());
 			LOG.debug(typefaceSet);

@@ -1379,7 +1379,9 @@ public class SVGElement extends GraphicsElement {
 	public static List<SVGElement> extractElementsContainedInBox(List<? extends SVGElement> elements, Real2Range bbox) {
 		List<SVGElement> containedElements = new ArrayList<SVGElement>();
 		for (SVGElement element : elements) {
-			if (bbox.includes(element.getBoundingBox())) {
+			Real2Range boundingBox2 = element.getBoundingBox();
+//			System.out.println("bb> "+bbox+" / "+boundingBox2);
+			if (bbox.includes(boundingBox2)) {
 				containedElements.add(element);
 			}
 		}

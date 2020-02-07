@@ -209,16 +209,20 @@ public class AMISearchTool extends AbstractAMISearchTool {
 //	}
 //	
 
-	/** change this */
-	protected void processTree() {
+	/** change this 
+	 * @return */
+	protected boolean processTree() {
+		processedTree = false;
 		if (getVerbosityInt() > 0) System.out.println("AMIWords processTree");
 		abstractSearchArgProcessor.setCTree(cTree);
-		runTreeSearch();
+		processedTree = runTreeSearch();
+		return processedTree;
 	}
 		
-	private void runTreeSearch() {
-		// TODO Auto-generated method stub
-		
+	private boolean runTreeSearch() {
+		processedTree = false;
+		LOG.error("treeSearch NYI");
+		return processedTree;
 	}
 
 	public void processProject() {

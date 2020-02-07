@@ -4,9 +4,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.charset.Charset;
 
 import org.apache.commons.io.FileUtils;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
@@ -52,7 +52,7 @@ public abstract class CManifest {
 		} else {
 			manifestElement = new Element(MANIFEST);
 			try {
-				FileUtils.write(manifestFile, manifestElement.toXML(), Charset.forName("UTF-8"));
+				FileUtils.write(manifestFile, manifestElement.toXML(), CMineUtil.UTF8_CHARSET);
 			} catch (IOException e) {
 				throw new RuntimeException("Cannot create manifest: "+manifestFile, e);
 			}

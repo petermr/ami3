@@ -16,6 +16,7 @@
 
 package org.contentmine.graphics.html;
 
+import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
 
@@ -25,12 +26,14 @@ import org.apache.log4j.Logger;
  *
  */
 public class HtmlMeta extends HtmlElement {
+	private static final Logger LOG = Logger.getLogger(HtmlMeta.class);
+	static {
+		LOG.setLevel(Level.DEBUG);
+	}
 	
-	private final static Logger LOG = Logger.getLogger(HtmlMeta.class);
 	public final static String TAG = "meta";
-
-	private static final String CONTENT = "content";
-	private static final String NAME = "name";
+	public static final String CONTENT = "content";
+	public static final String NAME = "name";
 
 	private HtmlStyle style;
 	

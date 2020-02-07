@@ -30,7 +30,7 @@ public class StyleRecordIT {
 			File infile = new File(SVGHTMLFixtures.G_S_TEXT_DIR, "CM_pdf2svg_BMCCancer_9_page4.svg");
 			AbstractCMElement svgElement = SVGElement.readAndCreateSVG(infile);
 			StyleRecordFactory styleRecordFactory = new StyleRecordFactory();
-			StyleRecordSet cssStyleRecordSet = styleRecordFactory.createStyleRecordSet(svgElement);
+			StyledBoxRecordSet cssStyleRecordSet = styleRecordFactory.createStyleRecordSet(svgElement);
 	//		Assert.assertEquals("styleRecords", 
 	//		"{font-name:YtvlrqAdvTTe45e47d2;font-size:8.0px;font-weight:normal;=chars: [,, -, . x 2, / x 5, 0 x 4, 1 x 4, 2 x 4, 4 x 3, 5 x 2, 6 x 2, 7 x 2, 9, : x 2, H, P, a x 3, b, c x 2, d, e x 4, f, g, h, i, k, l, m x 2, n, o x 3, p, r, s, t x 3, w x 4],"
 	//		+ " font-name:CdrtkwAdvTTaf7f9f4f.B;font-size:8.0px;font-weight:bold;=chars: [1, 2],"
@@ -67,7 +67,7 @@ public class StyleRecordIT {
 			Assert.assertTrue("indir exists "+indir, indir.exists());
 			List<SVGText> svgTexts = SVGText.readSVGFilesAndCreateTexts(indir);
 			StyleRecordFactory styleRecordFactory = new StyleRecordFactory();
-			StyleRecordSet cssStyleRecordSet = styleRecordFactory.createStyleRecordSet(svgTexts);
+			StyledBoxRecordSet cssStyleRecordSet = styleRecordFactory.createStyleRecordSet(svgTexts);
 			Assert.assertEquals("font analyzer set", 69, cssStyleRecordSet.size());
 			// omit whitespace characters
 	
@@ -92,7 +92,7 @@ public class StyleRecordIT {
 		File indir = new File(BAKKER_SVG_DIR);
 		List<SVGText> svgTexts = SVGText.readSVGFilesAndCreateTexts(indir);
 		StyleRecordFactory styleRecordFactory = new StyleRecordFactory();
-		StyleRecordSet cssStyleRecordSet = styleRecordFactory.createStyleRecordSet(svgTexts);
+		StyledBoxRecordSet cssStyleRecordSet = styleRecordFactory.createStyleRecordSet(svgTexts);
 		Multiset<String> fontNameSet = cssStyleRecordSet.extractFontNameSet();
 		Assert.assertEquals(15, fontNameSet.entrySet().size());
 		Assert.assertEquals(69, fontNameSet.size());
@@ -108,7 +108,7 @@ public class StyleRecordIT {
 		File indir = new File(BAKKER_SVG_DIR);
 		List<SVGText> svgTexts = SVGText.readSVGFilesAndCreateTexts(indir);
 		StyleRecordFactory styleRecordFactory = new StyleRecordFactory();
-		StyleRecordSet cssStyleRecordSet = styleRecordFactory.createStyleRecordSet(svgTexts);
+		StyledBoxRecordSet cssStyleRecordSet = styleRecordFactory.createStyleRecordSet(svgTexts);
 		TypefaceMaps typefaceSet = cssStyleRecordSet.extractTypefaceMaps("Bakker typefaces");
 		LOG.debug("\n"+typefaceSet);
 		Assert.assertEquals(15, typefaceSet.size());
@@ -131,8 +131,8 @@ public class StyleRecordIT {
 		File infile = new File(SVGHTMLFixtures.G_S_TEXT_DIR, "CM_pdf2svg_BMCCancer_9_page4.svg");
 		AbstractCMElement svgElement = SVGElement.readAndCreateSVG(infile);
 		StyleRecordFactory styleRecordFactory = new StyleRecordFactory();
-		StyleRecordSet cssStyleRecordSet = styleRecordFactory.createStyleRecordSet(svgElement);
-		StyleRecordSet boldSet = cssStyleRecordSet.getStyleRecordSet(StyleBundle.FONT_WEIGHT, StyleBundle.BOLD);
+		StyledBoxRecordSet cssStyleRecordSet = styleRecordFactory.createStyleRecordSet(svgElement);
+		StyledBoxRecordSet boldSet = cssStyleRecordSet.getStyleRecordSet(StyleBundle.FONT_WEIGHT, StyleBundle.BOLD);
 		Assert.assertEquals("bold", "{fill:#000000;font-name:CdrtkwAdvTTaf7f9f4f.B;font-size:8.0px;font-weight:bold;stroke:none;=chars: total: 2; unique: 2; coords: 1 [39.7 x 2]}", boldSet.toString());
 	}
 

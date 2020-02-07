@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,6 +13,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.util.CMineUtil;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -155,7 +155,7 @@ public class DOIResolver {
 
 	public void resolveDOIs(File doiFile) throws IOException {
 		if (doiFile != null) {
-			doiStrings = FileUtils.readLines(doiFile, Charset.forName("UTF-8"));
+			doiStrings = FileUtils.readLines(doiFile, CMineUtil.UTF8_CHARSET);
 			urlStrings = resolveDOIs(doiStrings);
 		}
 	}

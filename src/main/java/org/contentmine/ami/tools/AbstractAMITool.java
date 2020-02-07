@@ -154,8 +154,8 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
     @Option(names = {"-p", "--cproject"}, 
 		arity = "1",
 		paramLabel="CProject",
-		description = "CProject (directory) to process. This can be (a) a child directory of cwd (current working directory (b) cwd itself (use -p .) or (c) an absolute filename."
-				+ " (A) No defaults. The cProject name is the basename of the file."
+		description = "(A) CProject (directory) to process. This can be (a) a child directory of cwd (current working directory (b) cwd itself (use -p .) or (c) an absolute filename."
+				+ " No defaults. The cProject name is the basename of the file."
 				)
     protected String cProjectDirectory = null;
 
@@ -251,7 +251,7 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 
     @Option(names = {"--subdirectorytype"},
     		arity = "1",
-            description = "use subdirectory of cTree")
+            description = "(A) use subdirectory of cTree")
     protected SubDirectoryType subdirectoryType;
 
     @Option(names = {"--maxTrees"},
@@ -292,6 +292,9 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 	private Level level;
 	protected File contentMineDir = DEFAULT_CONTENT_MINE_DIR;
 
+	protected CTreeList processedTreeList;
+	// has processTree run OK? 
+	protected boolean processedTree = true;
 
 	public void init() {
 		// log4j configuration
@@ -675,13 +678,15 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 		int treeCount = 0; 
 		if (cTreeList != null) {
 			for (CTree cTree : cTreeList) {
-				if (maxTreeCount != null && treeCount++ >= maxTreeCount) {
-					System.out.println("CTree limit readched: "+(--treeCount));
+				if (maxTreeCount != null && getOrCreateProcessedTrees().size() >= maxTreeCount) {
+					System.out.println("CTree limit reached: "+(--treeCount));
 					break;
 				}
 				this.cTree = cTree;
 				outputCTreeName();
-				processTree();
+				if (processTree()) {
+					getOrCreateProcessedTrees().add(cTree);
+				};
 			}
 		} else {
 			System.err.println("no trees");
@@ -689,9 +694,18 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 		}
 		return processed;
 	}
+
 	
-	protected void processTree() {
+	protected CTreeList getOrCreateProcessedTrees() {
+		if (processedTreeList == null) {
+			processedTreeList = new CTreeList();
+		}
+		return processedTreeList;
+	}
+
+	protected boolean processTree() {
 		LOG.warn("Override processTree()");
+		return true;
 	}
 	
     protected boolean includeExclude(String basename) {

@@ -19,6 +19,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.DebugPrint;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.euclid.util.CMFileUtil;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -251,12 +252,14 @@ public class AMISectionTool extends AbstractAMITool {
 		}
 	}
 
-	public void processTree() {
+	public boolean processTree() {
+		processedTree = true;
 		sectionsDir = cTree.getSectionsDirectory();
 		boolean debug = false;
 		if (!CMFileUtil.shouldMake(forceMake, sectionsDir, debug, sectionsDir)) {
 			if (debug) LOG.debug("skipped: "+sectionsDir);
-			return;
+			processedTree = false;
+			return processedTree;
 		}
 		boolean deleteExisting = false;
 		if (cTree == null || !cTree.hasExistingFulltextXML()) {
@@ -266,6 +269,7 @@ public class AMISectionTool extends AbstractAMITool {
 		} else {
 			tagWithJATSTagger(deleteExisting); // oldStyle
 		}
+		return processedTree;
 	}
 
 	private void createSections() {
@@ -528,7 +532,7 @@ public class AMISectionTool extends AbstractAMITool {
 			Document xslDocument = normaTransformer.createW3CStylesheetDocument(xsltName);
 			String sectionHtmlString = normaTransformer.transform(xslDocument, xmlFile);
 			File htmlFile = createFileDescriptor(sectionDir, title, CTree.HTML);
-			IOUtils.write(sectionHtmlString, new FileOutputStream(htmlFile), Charset.forName("UTF-8"));
+			IOUtils.write(sectionHtmlString, new FileOutputStream(htmlFile), CMineUtil.UTF8_CHARSET);
 		} catch (IOException ioe) {
 			throw new RuntimeException("failed to convert/write XML to HTML");
 		}

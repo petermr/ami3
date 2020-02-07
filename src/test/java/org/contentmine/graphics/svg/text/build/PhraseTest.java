@@ -11,7 +11,7 @@ import org.contentmine.graphics.svg.SVGText;
 import org.contentmine.graphics.svg.cache.ComponentCache;
 import org.contentmine.graphics.svg.cache.TextCache;
 import org.contentmine.graphics.svg.fonts.StyleRecord;
-import org.contentmine.graphics.svg.fonts.StyleRecordSet;
+import org.contentmine.graphics.svg.fonts.StyledBoxRecordSet;
 import org.junit.Test;
 
 import junit.framework.Assert;

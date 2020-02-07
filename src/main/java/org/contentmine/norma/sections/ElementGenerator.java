@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.Util;
 
 public class ElementGenerator {
@@ -68,11 +69,11 @@ public class ElementGenerator {
 		StringBuilder sb = new StringBuilder();
 		for (String tag : tagList) {
 			readElelement(tag);
-			FileUtils.write(new File(SRC_DIR, createClassName()+".java"), createClass(), "UTF-8");
+			FileUtils.write(new File(SRC_DIR, createClassName()+".java"), createClass(), CMineUtil.UTF8_CHARSET);
 			sb.append(createFactorySnippet());
 		}
 		File snippetsFile = new File(SRC_DIR, "Snippets.java");
-		FileUtils.write(snippetsFile, sb.toString(), "UTF-8");
+		FileUtils.write(snippetsFile, sb.toString(), CMineUtil.UTF8_CHARSET);
 	}
 	
 	public static void main(String[] args) throws IOException {

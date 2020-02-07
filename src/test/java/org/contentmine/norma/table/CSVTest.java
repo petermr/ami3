@@ -1,18 +1,17 @@
 package org.contentmine.norma.table;
 
 import java.io.File;
-import java.nio.charset.Charset;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.cproject.util.CMineTestFixtures;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlHtml;
 import org.contentmine.graphics.html.HtmlTable;
 import org.contentmine.norma.Norma;
 import org.contentmine.norma.NormaFixtures;
-import org.contentmine.norma.table.CSVTransformer;
 import org.junit.Test;
 
 import net.minidev.json.JSONObject;
@@ -39,7 +38,7 @@ public class CSVTest {
 		CSVTransformer csvTransformer = new CSVTransformer();
 		csvTransformer.readFile(new File(NormaFixtures.TEST_TABLE_DIR, "table.csv"));
 		String tsvString = csvTransformer.createTSV();
-		FileUtils.write(new File("target/table/table.tsv"), tsvString, Charset.forName("UTF-8"));
+		FileUtils.write(new File("target/table/table.tsv"), tsvString, CMineUtil.UTF8_CHARSET);
 	}
 
 	@Test
@@ -47,7 +46,7 @@ public class CSVTest {
 		CSVTransformer csvTransformer = new CSVTransformer();
 		csvTransformer.readFile(new File(NormaFixtures.TEST_TABLE_DIR, "table.csv"));
 		JSONObject object= csvTransformer.createJSON();
-		FileUtils.write(new File("target/table/table.json"), object.toJSONString(), Charset.forName("UTF-8"));
+		FileUtils.write(new File("target/table/table.json"), object.toJSONString(), CMineUtil.UTF8_CHARSET);
 	}
 
 	@Test

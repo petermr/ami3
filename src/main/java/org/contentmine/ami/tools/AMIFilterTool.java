@@ -253,11 +253,12 @@ public class AMIFilterTool extends AbstractAMITool /*implements HasImageDir*/ {
 	    }
     }
 
-	protected void processTree() {
-		processTreeFilter();
+	protected boolean processTree() {
+		processedTree = processTreeFilter();
+		return processedTree;
 	}
 
-	protected void processTreeFilter() {
+	protected boolean processTreeFilter() {
 		File pdfImagesDir = cTree.getExistingPDFImagesDir();
 		if (pdfImagesDir == null || !pdfImagesDir.exists()) {
 			LOG.warn("no pdfimages/ dir");
@@ -270,7 +271,7 @@ public class AMIFilterTool extends AbstractAMITool /*implements HasImageDir*/ {
 				processImageFileFilter(pdfImagesDir, imageFile);
 			}
 		}
-		return;
+		return processedTree;
 	}
 
 	private void processImageFileFilter(File pdfImagesDir, File imageFile) {

@@ -65,7 +65,7 @@ public class ScraperSet {
 			for (File scraperFile : scraperFiles) {
 				JsonElement jsonElement = null;
 				try {
-					jsonElement = new JsonParser().parse(FileUtils.readFileToString(scraperFile, Charset.forName("UTF-8")));
+					jsonElement = new JsonParser().parse(FileUtils.readFileToString(scraperFile, CMineUtil.UTF8_CHARSET));
 				} catch (Exception e) {
 					LOG.debug("Cannot read file: "+scraperFile+"; "+e);
 					continue;

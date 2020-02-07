@@ -147,7 +147,8 @@ public class AMIDisplayTool extends AbstractAMITool {
 	    }
     }
 
-	protected void processTree() {
+	protected boolean processTree() {
+		processedTree = true;
 		System.out.println("cTree>> "+cTree.getName());
 		summaryFileList = new ArrayList<>();
 
@@ -164,6 +165,7 @@ public class AMIDisplayTool extends AbstractAMITool {
 			}
 		}
 		summarizeFiles();
+		return processedTree;
 	}
 
 	

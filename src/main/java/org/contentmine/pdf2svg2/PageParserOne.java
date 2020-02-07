@@ -105,7 +105,8 @@ public class PageParserOne extends AbstractPageParser {
     	super.endText();
     	
     	if (currentTextPhrase == null) {
-    		throw new RuntimeException("textPhrase not opened");
+    		LOG.error("textPhrase not opened");
+    		return;
     	}
     	svgg.appendChild(currentTextPhrase);
     	currentTextPhrase = null;

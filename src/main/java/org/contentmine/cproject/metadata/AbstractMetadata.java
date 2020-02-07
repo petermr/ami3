@@ -618,7 +618,7 @@ ARRAY translator; [{"affiliation":[],"family":"Munder","given":"Marc"},{"affilia
 				CTree.JSON.equals(FilenameUtils.getExtension(jsonFile.getName()))) {
 			try {
 				JsonParser jsonParser = new JsonParser();
-				JsonElement jsonElement = jsonParser.parse(FileUtils.readFileToString(jsonFile, Charset.forName("UTF-8")));
+				JsonElement jsonElement = jsonParser.parse(FileUtils.readFileToString(jsonFile, CMineUtil.UTF8_CHARSET));
 				if (Type.CROSSREF.equals(metadataType)) {
 					metadata = CrossrefMD.createMetadata();
 					metadata.analyzeElement(0, jsonElement);
@@ -954,7 +954,7 @@ ARRAY translator; [{"affiliation":[],"family":"Munder","given":"Marc"},{"affilia
 	}
 
 	public JsonElement readMetadataJson(File jsonFile) throws IOException {
-		metadataJson = new JsonParser().parse(FileUtils.readFileToString(jsonFile, Charset.forName("UTF-8")));
+		metadataJson = new JsonParser().parse(FileUtils.readFileToString(jsonFile, CMineUtil.UTF8_CHARSET));
 		return metadataJson;
 	}
 

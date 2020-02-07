@@ -8,6 +8,7 @@ import java.util.List;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.files.CTree;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealRange;
@@ -15,7 +16,6 @@ import org.contentmine.eucl.euclid.util.MultisetUtil;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.html.HtmlElement;
-import org.contentmine.graphics.html.HtmlHtml;
 import org.contentmine.graphics.html.HtmlP;
 import org.contentmine.graphics.html.HtmlSpan;
 import org.contentmine.graphics.svg.SVGElement;
@@ -26,7 +26,7 @@ import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.graphics.svg.SVGShape;
 import org.contentmine.graphics.svg.SVGText;
 import org.contentmine.graphics.svg.fonts.StyleRecordFactory;
-import org.contentmine.graphics.svg.fonts.StyleRecordSet;
+import org.contentmine.graphics.svg.fonts.StyledBoxRecordSet;
 import org.contentmine.graphics.svg.layout.DocumentChunk;
 import org.contentmine.graphics.svg.layout.SVGPubstyle;
 import org.contentmine.graphics.svg.util.SuperPixelArray;
@@ -61,6 +61,8 @@ public class PageCache extends ComponentCache {
 	private List<SVGRect> rectsList;
 	private PageLayout pageLayout;
 	private double paraSepRatio;
+	private SVGElement svgElement;
+	private StyledBoxRecordSet styledBoxRecordSet;
 
 	public PageCache() {
 		setDefaults();
@@ -161,15 +163,17 @@ public class PageCache extends ComponentCache {
 
 	private AbstractCMElement getStyledBoxes(Multiset<Int2Range> intBoxes) {
 		AbstractCMElement g = new SVGG();
-		if (inputSVGElement != null) {
-			List<SVGText> svgTexts = SVGText.extractSelfAndDescendantTexts(inputSVGElement); 
-			StyleRecordFactory styleRecordFactory = new StyleRecordFactory();
-			StyleRecordSet styleRecordSet = styleRecordFactory.createStyleRecordSet(svgTexts);
-			g = styleRecordSet.createStyledTextBBoxes(svgTexts);
-			List<SVGRect> boxes = SVGRect.extractSelfAndDescendantRects(g);
-			for (SVGRect box : boxes) {
-				Int2Range intBox = new Int2Range(box.getBoundingBox());
-				intBoxes.add(intBox);
+		if (styledBoxRecordSet == null) {
+			if (inputSVGElement != null) {
+				List<SVGText> svgTexts = SVGText.extractSelfAndDescendantTexts(inputSVGElement); 
+				StyleRecordFactory styleRecordFactory = new StyleRecordFactory();
+				styledBoxRecordSet = styleRecordFactory.createStyleRecordSet(svgTexts);
+				g = styledBoxRecordSet.createStyledTextBBoxes(svgTexts);
+				List<SVGRect> boxes = SVGRect.extractSelfAndDescendantRects(g);
+				for (SVGRect box : boxes) {
+					Int2Range intBox = new Int2Range(box.getBoundingBox());
+					intBoxes.add(intBox);
+				}
 			}
 		}
 		return g;
@@ -271,14 +275,15 @@ public class PageCache extends ComponentCache {
 		this.basename = basename;
 	}
 
-
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("body: "+bodyCache.toString()+"\n");
-		sb.append("header: "+headerCache.toString()+"\n");
-		sb.append("footer: "+footerCache.toString()+"\n");
-		sb.append("left: "+leftSidebarCache.toString()+"\n");
-		sb.append("right: "+rightSidebarCache.toString()+"\n");
+		sb.append("components: ");
+		sb.append(super.toString());
+		printNonNull(sb, "bodyCache", bodyCache);
+		printNonNull(sb, "headerCache", headerCache);
+		printNonNull(sb, "footerCache", footerCache);
+		printNonNull(sb, "leftSidebar", leftSidebarCache);
+		printNonNull(sb, "rightSidebar", rightSidebarCache);
 		return sb.toString();
 	}
 
@@ -439,6 +444,30 @@ public class PageCache extends ComponentCache {
 		HtmlDiv div = createHtmlFromPage(textList);
 		return div;
 	}
+
+	public static PageCache createPageCache(DocumentCache documentCache, File svgFile) {
+		PageCache pageCache = new PageCache(documentCache);
+		pageCache.setSvgFile(svgFile);
+		pageCache.readGraphicsComponentsAndMakeCaches(svgFile);
+		return pageCache;
+	}
+
+	SVGElement createTextBoxes() {
+		getOrCreateSVGElement();
+		TextCache textCache = this.getOrCreateTextCache();
+		SVGElement g = textCache.createTextBoxes();
+		return g;
+	}
+
+	private SVGElement getOrCreateSVGElement() {
+		if (svgElement == null) {
+			if (inputSvgFile != null) {
+				svgElement =  SVGElement.readAndCreateSVG(inputSvgFile);
+			}
+		}
+		return svgElement;
+	}
+	
 
 
 

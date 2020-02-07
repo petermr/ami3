@@ -160,26 +160,33 @@ public class AMIPDFTool extends AbstractAMITool {
 		return;
 	}
 
-	protected void processTree() {
+	protected boolean processTree() {
+		processedTree = false;
 		System.out.println("cTree: "+cTree.getName());
 		File pdfImagesDir = cTree.getExistingPDFImagesDir();
 //		if (ParserType.early.equals(parserType)) {
+		boolean processed = false;
 		if (ParserDebug.AMI_ZERO.equals(parserDebug)) {
-			docProcRunPDF();
+			processedTree = docProcRunPDF();
 		} else if (ParserDebug.AMI_TWO.equals(parserDebug)) {
-			docProcRunPDF();
+			processedTree = docProcRunPDF();
 		} else if (ParserDebug.AMI_BRIEF.equals(parserDebug)) {
-			docProcRunPDF();
+			processedTree = docProcRunPDF();
 //			amiPDF();
 		} else if (ParserType.ami.equals(parserType)) {
-			amiPDF();
+			processedTree = amiPDF();
+		} else {
+			processedTree = false;
 		}
+		return processedTree;
 	}
 
-	private void amiPDF() {
+	private boolean amiPDF() {
+		processedTree = true;
 		File inputPdf = cTree.getExistingFulltextPDF();
 		if (inputPdf == null || !inputPdf.exists()) {
 			LOG.warn("file does not exist: "+inputPdf);
+			processedTree = false;
 		} else {
 			boolean debug = false; // change 
 			PageParserRunner pageParserRunner = new PageParserRunner(inputPdf, parserDebug, debug);
@@ -189,12 +196,13 @@ public class AMIPDFTool extends AbstractAMITool {
 				System.out.println(">finished: "+pageIndex);
 			}
 		}
+		return processedTree;
 	}
 
 	/** early approach from PDFBox1
 	 * now uses PDFBox2 but soon to be obsoleted
 	 */
-    public void docProcRunPDF() {
+    public boolean docProcRunPDF() {
 		PDFDocumentProcessor pdfDocumentProcessor = cTree.getOrCreatePDFDocumentProcessor();
 		pdfDocumentProcessor.setOutputSVG(outputSVG);
 		pdfDocumentProcessor.setOutputPDFImages(outputPdfImages);
@@ -204,7 +212,8 @@ public class AMIPDFTool extends AbstractAMITool {
 		pdfDocumentProcessor.setTidySVGList(tidySVGList);
         cTree.setPDFDocumentProcessor(pdfDocumentProcessor);
         cTree.setForceMake(forceMake);
-		cTree.processPDFTree();
+		processedTree = cTree.processPDFTree();
+		return processedTree;
     }
 
 

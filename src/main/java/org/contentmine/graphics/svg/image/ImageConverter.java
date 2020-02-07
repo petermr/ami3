@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.IntRange;
 import org.contentmine.graphics.svg.SVGImage;
 
@@ -222,6 +223,6 @@ public class ImageConverter {
 	}
 
 	public void readSVGFile(File svgFile) throws IOException {
-		svgString = FileUtils.readFileToString(svgFile, "UTF-8");
+		svgString = FileUtils.readFileToString(svgFile, CMineUtil.UTF8_CHARSET);
 	}
 }

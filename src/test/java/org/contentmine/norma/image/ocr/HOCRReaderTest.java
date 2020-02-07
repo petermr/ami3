@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.charset.Charset;
 import java.util.List;
 import java.util.regex.Pattern;
 
@@ -12,11 +11,11 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.cproject.files.CTree;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlBody;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlMeta;
-import org.contentmine.graphics.html.HtmlSpan;
 import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.image.ocr.HOCRReader;
 import org.contentmine.norma.NAConstants;
@@ -77,8 +76,8 @@ public class HOCRReaderTest {
 	    		resultsFile,
 	    		true);
 		if (msg != null) {
-			LOG.debug(""+expectedFile+"; "+ FileUtils.readFileToString(expectedFile, Charset.forName("UTF-8")));
-			LOG.debug(""+resultsFile+"; "+FileUtils.readFileToString(resultsFile, Charset.forName("UTF-8")));
+			LOG.debug(""+expectedFile+"; "+ FileUtils.readFileToString(expectedFile, CMineUtil.UTF8_CHARSET));
+			LOG.debug(""+resultsFile+"; "+FileUtils.readFileToString(resultsFile, CMineUtil.UTF8_CHARSET));
 		}
 	    Assert.assertNull("message: "+msg, msg);
 	}
@@ -128,8 +127,8 @@ public class HOCRReaderTest {
 		    		resultsFile,
 		    		true);
 			if (msg != null) {
-				LOG.debug(""+expectedFile+"; "+ FileUtils.readFileToString(expectedFile, Charset.forName("UTF-8")));
-				LOG.debug(""+resultsFile+"; "+FileUtils.readFileToString(resultsFile, Charset.forName("UTF-8")));
+				LOG.debug(""+expectedFile+"; "+ FileUtils.readFileToString(expectedFile, CMineUtil.UTF8_CHARSET));
+				LOG.debug(""+resultsFile+"; "+FileUtils.readFileToString(resultsFile, CMineUtil.UTF8_CHARSET));
 			}
 		    Assert.assertNull("message: "+msg, msg);
 		}

@@ -1,11 +1,11 @@
 package org.contentmine.norma;
 
 import java.io.File;
-import java.nio.charset.Charset;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.util.CMineUtil;
 
 public class NormaUtil {
 
@@ -20,7 +20,7 @@ public class NormaUtil {
 	public static String getStringFromInputFile(File file) {
 		String s = null;
 		try {
-			s = FileUtils.readFileToString(file, Charset.forName("UTF-8"));
+			s = FileUtils.readFileToString(file, CMineUtil.UTF8_CHARSET);
 		} catch (Exception e) {
 			// consume exception
 		}
