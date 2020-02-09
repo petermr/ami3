@@ -7,20 +7,18 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
-import org.apache.http.HttpResponse;
-import org.apache.http.HttpStatus;
-import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.contentmine.ami.tools.extractors.AbstractExtractor;
-import org.contentmine.ami.tools.extractors.AbstractMetadata;
-import org.contentmine.ami.tools.extractors.BiorxivExtractor;
+import org.contentmine.ami.tools.download.AbstractDownloader;
+import org.contentmine.ami.tools.download.AbstractMetadataEntry;
+import org.contentmine.ami.tools.download.BiorxivDownloader;
+import org.contentmine.ami.tools.download.BiorxivMetadataEntry;
+import org.contentmine.ami.tools.download.SDDownloader;
+import org.contentmine.ami.tools.download.SDMetadataEntry;
 import org.contentmine.cproject.files.CProject;
+import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.util.CMineUtil;
 
 import picocli.CommandLine.Command;
@@ -50,26 +48,65 @@ public class AMIDownloadTool extends AbstractAMITool {
 	}
 	
 	public enum SearchSite {
-		biorxiv(BiorxivExtractor.BIORXIV_SEARCH),
-		europepmc("https://europepmc.org/search?query="),
+		biorxiv(BiorxivDownloader.getSearchUrl(), new BiorxivDownloader(), new BiorxivMetadataEntry()),
+		sd(SDDownloader.getSearchUrl(), new SDDownloader(), new SDMetadataEntry()),
 		;
 		private String site;
-		private SearchSite(String site) {
+		private AbstractDownloader downloader;
+		private AbstractMetadataEntry metadata;
+		
+		private SearchSite(String site, AbstractDownloader downloader, AbstractMetadataEntry metadata) {
 			this.site = site;
+			this.downloader = downloader;
+			this.metadata = metadata;
 		}
+//		SearchSite(String string, SDDownloader sdDownloader, SDMetadata sdMetadata) {
+//			// TODO Auto-generated constructor stub
+//		}
 		public String getSite() {
 			return site;
 		}
+
+		public AbstractDownloader createDownloader(AMIDownloadTool downloadTool) {
+			AbstractDownloader newDownloader = null;
+			try {
+				newDownloader = (AbstractDownloader) Class.forName(downloader.getClass().getName()).newInstance();
+				newDownloader.setDownloadTool(downloadTool);
+			} catch (Exception e) {
+				throw new RuntimeException("BUG: ", e);
+			}
+			return newDownloader;
+		}
+
+		public AbstractMetadataEntry createMetadata() {
+			AbstractMetadataEntry newMetadata = null;
+			try {
+				newMetadata = (AbstractMetadataEntry) Class.forName(metadata.getClass().getName()).newInstance();
+			} catch (Exception e) {
+				throw new RuntimeException("BUG: ", e);
+			}
+			return newMetadata;
+		}
 	}
+
+//    @Option(names = {"--download"},
+//    		arity = "1..*",
+//            description = "file types to download")
+//    private FileTypes fileTypes = new ArrayList<>("html", "pdf");
 
     @Option(names = {"--limit"},
     		arity = "1",
             description = "max hits to download (default 200)")
     private Integer limit = 200;
 
+    @Option(names = {"--metadata"},
+    		arity = "1",
+            description = "directory for metadata pages")
+    private String metadata = "metadata";
+
     @Option(names = {"--pages"},
     		arity = "1..2",
-            description = "start and optional end hitpage. If only one value download single hitpage, default 1")
+            description = "start and optional end hitpage. If only one value download single hitpage, default 1 ")
     private List<Integer> pageList = new ArrayList<>();
 
     @Option(names = {"--pagesize"},
@@ -91,7 +128,7 @@ public class AMIDownloadTool extends AbstractAMITool {
 	private InputStream dictionaryInputStream;
 
 	private HttpClient client;
-	private AbstractExtractor extractor;
+	private AbstractDownloader downloader;
 	
     /** used by some non-picocli calls
      * obsolete it
@@ -119,6 +156,7 @@ public class AMIDownloadTool extends AbstractAMITool {
     		output = "scraped/";
     		LOG.info("set output to: " + output);
     	}
+		System.out.println("fileformats     " + rawFileFormats);
 		System.out.println("project         " + cProject);
 		System.out.println();
 		return true;
@@ -136,41 +174,32 @@ public class AMIDownloadTool extends AbstractAMITool {
     
     @Override
     protected void runSpecifics() {
-    	try {
-			runDownload();
+		createDownloader();
+		downloader.downloadResultSet();
+		try {
+			downloader.downloadPages();
 		} catch (IOException e) {
-			throw new RuntimeException("cannot download: ", e);
+			e.printStackTrace();
+			System.err.println("cannot load pages "+ e);
+		}
+		try {
+			downloader.downloadPages();
+		} catch (IOException e) {
+			e.printStackTrace();
+			System.err.println("cannot load pages "+ e);
 		}
     }
 
-	private boolean runDownload() throws IOException {
-		extractor = null;
-		if (SearchSite.biorxiv.equals(site)) {
-			extractor = new BiorxivExtractor(cProject);
-		}
-		if (extractor != null) {
-			extractor.setDownloadLimit(limit);
-			extractor.setPageList(pageList);
-			extractor.setPageSize(pagesize);
-			extractor.setQueryList(queryList);
-			extractor.setSite(site);
-			File projectDirectory = cProject.getOrCreateDirectory();
-			extractor.setOutputDir(new File(projectDirectory, output));
-			extractor.downloadHitPages();
-		}
-		return true;
-	}
-
-
-	private void httpClientGet(String url) throws ClientProtocolException, IOException {
-		if (client == null) {	
-			client = HttpClientBuilder.create().build();    
-		}
-	    HttpResponse response = client.execute(new HttpGet(url));
-	    int statusCode = response.getStatusLine().getStatusCode();
-	    if (HttpStatus.SC_OK == statusCode) {
-	    	throw new RuntimeException("Bad Http status: "+statusCode);
-	    }
+	private void createDownloader() {
+		downloader = site.createDownloader(this);
+//			.setCProject(cProject)
+//			.setDownloadLimit(limit)
+//			.setPageList(pageList)
+//			.setPageSize(pagesize)
+//			.setQueryList(queryList)
+//			.setSite(site)
+//			.setMetadataDir(new File(cProject.getOrCreateDirectory(), metadata))
+//			;
 	}
 	
 	public static String runCurlGet(String url) throws IOException {
@@ -191,4 +220,56 @@ public class AMIDownloadTool extends AbstractAMITool {
 		}
 		return result;
 	}
+
+	public File getMetadataDir() {
+		return new File(cProject.getOrCreateDirectory(), metadata);
+	}
+
+	public int getDownloadLimit() {
+		return limit;
+	}
+	
+	private void normalizePageList() {
+		// no pages, use 1
+		if (pageList.size() == 0) {
+			pageList.add(1);
+		}
+		// first page == 0 , signal for no pages
+		if (pageList.size() == 1 && pageList.get(0).equals(0)) return;
+		
+		// first page only, set last to first
+		if (pageList.size() == 1) {
+			pageList.add(pageList.get(0));
+		}
+		// first page <= 0, set to 1
+		if (pageList.get(0) <= 0) {
+			pageList.set(0,  1);
+			System.err.println("page list must start from >= 1");
+		}
+		// upper limit less than start, set to start
+		if (pageList.get(1) < pageList.get(0)) {
+			System.err.println("page list out of order: "+pageList);
+			pageList.set(1, pageList.get(0));
+		}
+	}
+
+	public CTree getCTree(String doi) {
+		CTree cTree = cProject.getExistingCTreeOrCreateNew(doi);
+		cProject.add(cTree);
+		return cTree;
+	}
+
+	public int getPageSize() {
+		return pagesize;
+	}
+
+	public List<Integer> getPageList() {
+		return pageList;
+	}
+
+	public List<String> getQueryList() {
+		return queryList;
+	}
+
+
 }

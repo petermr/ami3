@@ -37,9 +37,11 @@ import org.apache.log4j.Logger;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.graphics.html.HtmlB;
 import org.contentmine.graphics.html.HtmlElement;
+import org.contentmine.graphics.html.HtmlHtml;
 import org.contentmine.graphics.html.HtmlI;
 import org.contentmine.graphics.html.HtmlSub;
 import org.contentmine.graphics.html.HtmlSup;
+import org.contentmine.graphics.html.util.HtmlUtil;
 
 import nu.xom.Attribute;
 import nu.xom.Builder;
@@ -68,6 +70,10 @@ import nu.xom.canonical.Canonicalizer;
  * 
  */
 public abstract class XMLUtil implements XMLConstants {
+
+	private static final String LOCAL_NAME_BR = "local-name()";
+
+	private static final String OR = "or";
 
 	private static Logger LOG = Logger.getLogger(XMLUtil.class);
 
@@ -723,6 +729,18 @@ public abstract class XMLUtil implements XMLConstants {
 		}
 	}
 
+	/** removes all nodes with given xpath.
+	 * 
+	 * @param element
+	 * @param xpath
+	 */
+	public static void removeNodesByXPath(Element element, String xpath) {
+		List<Node> nodes = XMLUtil.getQueryNodes(element, xpath);
+		for (Node node : nodes) {
+			node.detach();
+		}
+	}
+
 
 	/**
 	 * sets text content of element. Does not support mixed content.
@@ -1307,7 +1325,7 @@ public abstract class XMLUtil implements XMLConstants {
 		baosS = baosS.replace(" xmlns=\"http://www.w3.org/1999/xhtml\"", "");
 		// strip XML declaration
 		baosS = baosS.replace("<?xml version=\"1.0\" encoding=\"UTF-8\"?>", "");
-		baosS = removeScripts(baosS);
+		baosS = HtmlUtil.removeScripts(baosS);
 		Document document;
 		try {
 			ByteArrayInputStream bais = new ByteArrayInputStream(baosS.getBytes()); // avoid reader
@@ -1401,10 +1419,14 @@ public abstract class XMLUtil implements XMLConstants {
 		return sb.toString();
 	}
 
-	public static String removeScripts(String s) {
-		return removeTags("script", s);
-	}
-	
+	/** removes content of form <tag>...</tag>
+	 * useful when tag contains non-well-formed content
+	 * crude
+	 * 
+	 * @param tag
+	 * @param ss
+	 * @return
+	 */
 	public static String removeTags(String tag, String ss) {
 		int current = 0;
 		StringBuilder sb = new StringBuilder();
@@ -1705,18 +1727,37 @@ public abstract class XMLUtil implements XMLConstants {
 		return sb.toString();
 	}
 
-	public static Element parseCleanlyToXML(String result) {
-		result = XMLUtil.removeScripts(result);		
-		result = XMLUtil.replaceCharacterEntities(result);
-		Element element = null;
-		try {
-			element = XMLUtil.parseXML(result);
-		} catch (Exception e) {
-			System.out.println("CANNOT PARSE:\n"+result.substring(0, Math.min(100, result.length())));
-			throw e;
+
+	/** removes all element children */
+	public static void removeChildren(HtmlElement element) {
+		Elements childElements = element.getChildElements();
+		for (int i = childElements.size() - 1; i >= 0; i--) {
+			childElements.get(i).detach();
 		}
-		return element;
 	}
 
+	public static void removeElementsByTag(Element element, String...tags) {
+		String xpath = createMultitagXPath(tags);
+		List<Element> elements = XMLUtil.getQueryElements(element, xpath);
+		XMLUtil.removeElements(elements);
+	}
 
+	private static void removeElements(List<Element> elements) {
+		for (Element element : elements ) {
+			element.detach();
+		}
+	}
+
+	private static String createMultitagXPath(String... tags) {
+		StringBuilder sb = new StringBuilder(".//*[");
+		boolean first = true;
+		for (String tag : tags) {
+			if (!first) {sb.append(" " + OR + " ");} else {first = false;}
+			sb.append(LOCAL_NAME_BR + "='"+tag+"'");
+		}
+		sb.append("]");
+		return sb.toString();
+	}
+
+		
 }

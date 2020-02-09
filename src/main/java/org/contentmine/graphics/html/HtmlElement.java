@@ -28,6 +28,7 @@ import org.apache.log4j.Logger;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.AbstractCMElement;
+import org.contentmine.graphics.html.util.HtmlUtil;
 import org.contentmine.graphics.svg.StyleBundle;
 
 import nu.xom.Attribute;
@@ -636,7 +637,7 @@ public abstract class HtmlElement extends AbstractCMElement {
 	}
 
 	public static HtmlElement parseXML(String content) {
-		return HtmlElement.create(XMLUtil.parseCleanlyToXML(content));
+		return HtmlElement.create(HtmlUtil.parseCleanlyToXHTML(content));
 	}
 
 }

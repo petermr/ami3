@@ -2,6 +2,7 @@ package org.contentmine.graphics.html.util;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringWriter;
 import java.net.URL;
@@ -11,7 +12,9 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLConstants;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlElement;
@@ -425,22 +428,47 @@ public class HtmlUtil {
 		return hocrElement;
 	}
 
+	public static Element parseCleanlyToXHTML(String result) {
+		result = HtmlUtil.removeScripts(result);		
+		result = XMLUtil.replaceCharacterEntities(result);
+		Element element = null;
+		try {
+			element = XMLUtil.parseXML(result);
+		} catch (Exception e) {
+			System.out.println("CANNOT PARSE:\n"+result.substring(0, Math.min(100, result.length())));
+			throw e;
+		}
+		return element;
+	}
+
+
+	/** cleans non-XML stuff from HTML file
+	 * e.g. <script> with non-compliant content
+	 * 
+	 * @param file
+	 * @return
+	 */
+	public static Element parseCleanlyToXHTML(File file) {
+		Element element = null;
+		try {
+			String content = FileUtils.readFileToString(file, CMineUtil.UTF8_CHARSET);
+			element = parseCleanlyToXHTML(content);
+		} catch (IOException e) {
+			throw new RuntimeException("Cannot parse: "+file, e);
+		}
+		return element;
+	}
+	
+	/** removes <script> elements 
+	 * used when HTML script content will not parse as XML
+	 * 
+	 * @param s
+	 * @return
+	 */
+	public static String removeScripts(String s) {
+		return XMLUtil.removeTags("script", s);
+	}
 	
 
-//	@Deprecated
-//	public static HtmlElement replaceEntitiesAndJavascriptTags(String ss) throws IOException {
-//		ss = HtmlUtil.stripDOCTYPE(ss);
-//		ss = ss.replace("<html", "<html xmlns:g=\"http://foo\""); // Missing namespace in BMC
-//		ss = HtmlUtil.unescapeHtml3(ss, lookupMapXML);
-//		ss = HtmlUtil.replaceProblemCharacters(ss);
-//		ss = HtmlUtil.stripJavascriptElement(ss, "script");
-//		ss = HtmlUtil.stripJavascriptElement(ss, "button");
-//		ss = Jsoup.parse(ss).html();
-//		// ARGH Jsoup re-escapes characters - have to turn them back again, but NOT &amp; 
-//		ss = HtmlUtil.unescapeHtml3(ss, lookupMapHTML);
-//		Element element = XMLUtil.parseXML(ss);
-//		HtmlElement htmlElement = HtmlElement.create(element);
-//		return htmlElement;
-//	}
 
 }

@@ -19,6 +19,7 @@ import org.apache.commons.io.FilenameUtils;
 //import org.apache.commons.httpclient.params.HttpMethodParams;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.ami.tools.AMIDictionaryTool.RawFileFormat;
 import org.contentmine.cproject.CProjectArgProcessor;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.cproject.args.FileXPathSearcher;
@@ -1081,6 +1082,17 @@ public class CProject extends CContainer {
 	}
 
 	/** turns foo.suffix into foo/fulltext.suffix for each suffix */	
+	public void makeProjectRaw(List<RawFileFormat> rawFormats, int compress) {
+		if (rawFormats != null) {
+			renamedFileFileArray = new JsonArray();
+			for (RawFileFormat rawFormat : rawFormats) {
+				makeProject(rawFormat.toString(), compress);
+			}
+		}
+		return;
+	}
+
+		/** turns foo.suffix into foo/fulltext.suffix for each suffix */	
 	public void makeProject(List<String> suffixes, int compress) {
 		if (suffixes != null) {
 			renamedFileFileArray = new JsonArray();

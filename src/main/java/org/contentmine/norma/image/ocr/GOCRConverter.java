@@ -12,7 +12,7 @@ import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.AMIOCRTool;
-import org.contentmine.ami.tools.gocr.GOCRPageElement;
+import org.contentmine.ami.tools.ocr.GOCRPageElement;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.Int2Range;

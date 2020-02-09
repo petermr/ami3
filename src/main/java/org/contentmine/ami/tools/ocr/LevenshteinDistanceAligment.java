@@ -1,4 +1,4 @@
-package org.contentmine.ami.tools.gocr;
+package org.contentmine.ami.tools.ocr;
 
 import java.util.*;
 

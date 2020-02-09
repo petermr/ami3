@@ -247,7 +247,7 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 			split = ",", 
 			description = "(A) suffixes of included files (${COMPLETION-CANDIDATES}): "
 					+ "can be concatenated with commas ")
-	protected RawFileFormat[] rawFileFormats;
+	protected List<RawFileFormat> rawFileFormats;
 
     @Option(names = {"--subdirectorytype"},
     		arity = "1",
@@ -538,7 +538,7 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 	        System.out.println("dryrun              " + dryrun);
 	        System.out.println("excludeBase         " + excludeBase);
 	        System.out.println("excludeTrees        " + excludeTrees);
-	        System.out.println("file types          " + Util.toStringList(rawFileFormats));
+	        System.out.println("file types          " + rawFileFormats);
 	        System.out.println("forceMake           " + forceMake);
 	        System.out.println("includeBase         " + includeBase);
 	        System.out.println("includeTrees        " + includeTrees);

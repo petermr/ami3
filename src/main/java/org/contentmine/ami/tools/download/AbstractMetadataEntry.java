@@ -1,41 +1,48 @@
-package org.contentmine.ami.tools.extractors;
+package org.contentmine.ami.tools.download;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.AMIDownloadTool;
-import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlElement;
+import org.contentmine.graphics.html.util.HtmlUtil;
 
 import nu.xom.Element;
-import nu.xom.ParsingException;
 
 /** metadata from page scraping
  * 
  * @author pm286
  *
  */
-public abstract class AbstractMetadata {
-	private static final Logger LOG = Logger.getLogger(AbstractMetadata.class);
+public abstract class AbstractMetadataEntry {
+	private static final Logger LOG = Logger.getLogger(AbstractMetadataEntry.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
 
-	protected AbstractExtractor extractor;
+	protected AbstractDownloader downloader;
 	protected String urlPath;
-	private String doi;
+	protected String doi;
+	private Element metadataElement;
+	protected HtmlElement metadataEntryElement;
 
-	protected AbstractMetadata(AbstractExtractor extractor) {
-		this.extractor = extractor;
+	protected AbstractMetadataEntry() {}
+	
+	protected AbstractMetadataEntry(AbstractDownloader downloader) {
+		this.downloader = downloader;
 	}
 
 	protected abstract String extractDOIFromUrl();
 	protected abstract void extractMetadata();
+	protected abstract String getDOI();
+	protected abstract List<String> getAuthors();
+
 
 	protected String getFullUrl() {
 		return urlPath == null ? null :
-			(urlPath.startsWith("/") ? extractor.getBase() + urlPath : urlPath);
+			(urlPath.startsWith("/") ? downloader.getBase() + urlPath : urlPath);
 	}
 	
 	protected String getDOIFromURL() {
@@ -51,7 +58,7 @@ public abstract class AbstractMetadata {
 		String content = AMIDownloadTool.runCurlGet(fullUrl);
 		Element contentElement = null;
 		try {
-			contentElement = XMLUtil.parseCleanlyToXML(content);
+			contentElement = HtmlUtil.parseCleanlyToXHTML(content);
 		} catch (RuntimeException e) {
 			LOG.error("Cannot parse: "+e);
 		}
@@ -62,7 +69,7 @@ public abstract class AbstractMetadata {
 
 	public String getCleanedDOIFromURL() {
 		String doi = getDOIFromURL();
-		doi = AbstractExtractor.replaceDOIPunctuationByUnderscore(doi);
+		doi = AbstractDownloader.replaceDOIPunctuationByUnderscore(doi);
 		return doi;
 	}
 
@@ -75,4 +82,5 @@ public abstract class AbstractMetadata {
 		}
 		return contentElement;
 	}
+
 }

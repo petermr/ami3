@@ -1,4 +1,4 @@
-package org.contentmine.ami.tools;
+package org.contentmine.ami.tools.ocr;
 
 import java.io.File;
 import java.util.ArrayList;

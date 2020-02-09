@@ -1,4 +1,4 @@
-package org.contentmine.ami.tools;
+package org.contentmine.ami.tools.ocr;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -9,8 +9,9 @@ import java.util.List;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.ami.tools.AMIOCRTool;
 import org.contentmine.ami.tools.AMIOCRTool.OcrType;
-import org.contentmine.ami.tools.OcrMerger.MeanType;
+import org.contentmine.ami.tools.ocr.OcrMerger.MeanType;
 import org.contentmine.eucl.euclid.Axis.Axis2;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.Real;

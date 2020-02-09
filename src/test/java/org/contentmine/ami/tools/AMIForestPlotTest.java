@@ -18,7 +18,7 @@ import org.contentmine.ami.tools.AMIPixelTool;
 import org.contentmine.ami.tools.AbstractAMITool;
 import org.contentmine.ami.tools.AMIForestPlotTool.ForestPlotType;
 import org.contentmine.ami.tools.AbstractAMITool.Scope;
-import org.contentmine.ami.tools.gocr.LevenshteinDistanceAligment;
+import org.contentmine.ami.tools.ocr.LevenshteinDistanceAligment;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.junit.Ignore;

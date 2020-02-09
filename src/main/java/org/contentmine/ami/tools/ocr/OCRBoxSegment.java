@@ -1,9 +1,10 @@
-package org.contentmine.ami.tools;
+package org.contentmine.ami.tools.ocr;
 
 import java.io.File;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.ami.tools.AMIOCRTool;
 import org.contentmine.ami.tools.AMIOCRTool.OcrType;
 
 /** holds a list of SVG OCRBoxes from tools like Tessearct and GOCR

@@ -1,4 +1,6 @@
-package org.contentmine.ami.tools.extractors;
+package org.contentmine.ami.tools.download;
+
+import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -39,21 +41,21 @@ import nu.xom.Element;
  * @author pm286
  *
  */
-public class BiorxivMetadata extends AbstractMetadata {
+public class BiorxivMetadataEntry extends AbstractMetadataEntry {
 	
 	
 	private static final String HIGHWIRE_CITE_TITLE = "highwire-cite-title";
-	private static final Logger LOG = Logger.getLogger(BiorxivMetadata.class);
+	private static final Logger LOG = Logger.getLogger(BiorxivMetadataEntry.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
 
-	private Element metadataElement;
-	private HtmlElement metadataEntryElement;
-	private HtmlA titleAndLink;
-	
-	public BiorxivMetadata(AbstractExtractor extractor) {
-		super(extractor);
+	public BiorxivMetadataEntry() {
+		super();
+	}
+		
+	public BiorxivMetadataEntry(AbstractDownloader downloader) {
+		super(downloader);
 	}
 
 	protected void extractMetadata() {
@@ -62,12 +64,13 @@ public class BiorxivMetadata extends AbstractMetadata {
 		getDOI();
 	}
 
-	private void getDOI() {
+	protected String getDOI() {
+		return doi;
 	}
 
-	private void getAuthors() {
-		// TODO Auto-generated method stub
-		
+	protected List<String> getAuthors() {
+		System.err.println("getAuthors(); NYI");
+		return null;
 	}
 	/**
 	<!-- Title AND link to content -->
@@ -83,8 +86,7 @@ public class BiorxivMetadata extends AbstractMetadata {
 		if (span == null) {
 			System.out.println("null span "+metadataEntryElement.toXML());
 		} else {
-			titleAndLink = (HtmlA) XMLUtil.getSingleChild(span, HtmlA.TAG);
-			urlPath = titleAndLink.getHref();
+			urlPath = ((HtmlA) XMLUtil.getSingleChild(span, HtmlA.TAG)).getHref();
 		}
 	}
 

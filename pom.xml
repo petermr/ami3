@@ -153,6 +153,11 @@
                                 <id>ami-dictionary</id>
                             </program>
                             <program>
+                                <mainClass>org.contentmine.ami.tools.AMIDownloadTool</mainClass>
+                            <!-- download files  -->
+                                <id>ami-download</id>
+                            </program>
+                            <program>
                                <mainClass>org.contentmine.ami.tools.AMIFilterTool</mainClass>
                                <!-- description: filters images -->
                                <id>ami-filter</id>
@@ -240,56 +245,71 @@
                         
                         <!--  older AMI -->
                         <!-- general -->
+						<!--
                             <program>
                                 <mainClass>org.contentmine.ContentMine</mainClass>
-                              <!--  description: exist??? -->
+                              <!- -  description: exist??? - ->
                                 <id>contentMine</id>
                             </program>
+						-->
                         <!--  from Cephis -->
+						<!--
                             <program>
                                 <mainClass>org.contentmine.cproject.files.CProject</mainClass>
-                              <!--  description: runs "cproject [args] -->
+                              <!- -  description: runs "cproject [args] - ->
                                 <id>cproject</id>
                             </program>
+						-->
+							<!--
                             <program>
                                 <mainClass>org.contentmine.cproject.files.MakeProject</mainClass>
-                              <!--  description:  runs - -makeProject (\\1)/fulltext.pdf - -fileFilter .*/(.*)\\.pdf" -->
+                              <!- -  description:  runs - -makeProject (\\1)/fulltext.pdf - -fileFilter .*/(.*)\\.pdf" - ->
                                 <id>makeProject</id>
                             </program>
+						-->
                         <!-- norma -->  
+						<!--
+						
                             <program>
                                 <mainClass>org.contentmine.norma.Norma</mainClass>
-                              <!--  description: norma [args]
-                              but also runs makeProject (FIX this) -->
+                              <!- -  description: norma [args]
+                              but also runs makeProject (FIX this) - ->
                               <id>norma</id>
                             </program>
-                          
+						-->
+							<!--
                             <program>
                                 <mainClass>org.contentmine.ami.AMIImageProcessor</mainClass>
-                              <!-- description: process images -->
+                              <!- - description: process images - ->
                                 <id>ami-image-old</id>
                             </program>
+								-->
+								<!--
                             <program>
                                 <mainClass>org.contentmine.ami.AMIProcessorPDF</mainClass>
-                              <!-- description: convert PDF into SVG and extract images -->
+                              <!- - description: convert PDF into SVG and extract images - ->
                                 <id>ami-pdf-old</id>
                             </program>
+						-->
+									<!--
                             <program>
                                 <mainClass>org.contentmine.ami.AMIProcessorXML</mainClass>
-                              <!-- description: converts XML to HTML -->
+                              <!- - description: converts XML to HTML - ->
                                 <id>ami-xml</id>
                             </program>
+						-->
                             <program>
                                 <mainClass>org.contentmine.ami.tools.AMITransformTool</mainClass>
                               <!-- description: transform with AMITransform mainly XML-->
                                 <id>ami-transform</id>
                             </program>
-                          
+							<!--
                             <program>
                                 <mainClass>org.contentmine.ami.plugins.CommandProcessor</mainClass>
-                              <!--  description:  -->
+                              <!- -  description:  - ->
                                 <id>cmine</id>
                             </program>
+						-->
                             <program>
                                 <mainClass>org.contentmine.ami.plugins.EntityAnalyzer</mainClass>
                               <!--  description:  -->
@@ -310,16 +330,13 @@
                               <!--  description:  -->
                                 <id>ami-regex</id>
                             </program>
-                            <program>
-                                <mainClass>org.contentmine.ami.tools.AMISearchTool</mainClass>
-                           <!-- description: run AMI searches -->
-                                <id>ami-search-new</id>
-                            </program>
+							<!--
                             <program>
                                 <mainClass>org.contentmine.ami.plugins.search.SearchPlugin</mainClass>
-                              <!--  description:  -->
+                              <!- -  description:  - ->
                                 <id>ami-search-old</id>
                             </program>
+						-->
                             <program>
                            <!--  will become a tool -->
                                 <mainClass>org.contentmine.ami.tools.AMISearch</mainClass>
@@ -336,11 +353,13 @@
                               <!--  description:  -->
                                 <id>ami-species</id>
                             </program>
+							<!--
                             <program>
                                 <mainClass>org.contentmine.ami.plugins.word.WordPlugin</mainClass>
-                              <!--  description:  -->
+                              <!- -  description:  - ->
                                 <id>ami-word-old</id>
                             </program>
+						-->
                             <program>
                                 <mainClass>org.xmlcml.cproject.PMan</mainClass>
                                 <id>pman</id>
