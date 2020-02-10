@@ -65,6 +65,7 @@ public class CProject extends CContainer {
 	private static final String NEW_FILE = "newFile";
 	
 	public final static String IMAGE   = "image";
+	public final static String METADATA   = "__metadata";
 	public final static String RESULTS = "results";
 	public final static String TABLE   = "table";
 
@@ -1180,13 +1181,14 @@ public class CProject extends CContainer {
 		return files;
 	}
 
-	public void deleteCTrees(CTreeList treeList) throws IOException {
+	public CProject deleteCTrees(CTreeList treeList) throws IOException {
 		for (CTree cTree : treeList) {
 			deleteCTree(cTree);
 		}
+		return this;
 	}
 	
-	public void deleteCTree(CTree cTree) throws IOException {
+	public CProject deleteCTree(CTree cTree) throws IOException {
 		if (cTree != null) {
 			File cTreeDirectory = cTree.getDirectory();
 			// make sure this is a child of this, just to be safe
@@ -1196,6 +1198,7 @@ public class CProject extends CContainer {
 				FileUtils.forceDelete(cTreeDirectory);
 			}
 		}
+		return this;
 	}
 
 	/** this doesn't look right!!
@@ -1215,13 +1218,14 @@ public class CProject extends CContainer {
 		return files;
 	}
 
-	public void setIncludeTreeList(List<String> treeNames) {
+	public CProject setIncludeTreeList(List<String> treeNames) {
 		includeCTreeList = this.createCTreeList(treeNames);
-		return;
+		return this;
 	}
 
-	public void setCTreelist(CTreeList cTreeList) {
+	public CProject setCTreelist(CTreeList cTreeList) {
 		this.cTreeList = cTreeList;
+		return this;
 	}
 
 //	public static CProject createProjectFromPDFsAndMakeCTrees(File sourceDir) throws IOException {
@@ -1242,33 +1246,54 @@ public class CProject extends CContainer {
 //	}
 
 	/** tidy images in Ctrees but also look for commonailty at Documrnt level.
+	 * @return 
 	 * 
 	 */
-	public void tidyImages() {
+	public CProject tidyImages() {
 		CTreeList cTreeList = getOrCreateCTreeList();
 		for (CTree cTree : cTreeList) {
 			cTree.tidyImages();
 		}
+		return this;
 	}
 
 	/** clean files of given name.
 	 * 
 	 * @param arg
+	 * @return 
 	 */
-	public void cleanTrees(String filename) {
+	public CProject cleanTrees(String filename) {
 		for (CTree cTree : this.getOrCreateCTreeList()) {
 			cTree.cleanFileOrDirs(filename);
 		}
+		return this;
+	}
+
+
+	/** clean all CTrees
+	 * 
+	 * @param arg
+	 * @return 
+	 */
+	public CProject cleanAllTrees() {
+		for (CTree cTree : this.getOrCreateCTreeList()) {
+			LOG.debug("delete: "+cTree);
+			cTree.cleanFileOrDirs("");
+		}
+		cTreeList = null;
+		return this;
 	}
 
 	/** clean files of given name.
 	 * 
 	 * @param arg
+	 * @return 
 	 */
-	public void cleanRegex(String arg) {
+	public CProject cleanRegex(String arg) {
 		for (CTree cTree : this.getOrCreateCTreeList()) {
 			cTree.cleanRegex(arg);
 		}
+		return this;
 	}
 
 	public File getMakeProjectLogfile(String filename) {
@@ -1301,6 +1326,34 @@ public class CProject extends CContainer {
 
 	public void setOmitRegexList(List<String> omitRegexList) {
 		this.omitRegexList = omitRegexList;
+	}
+
+	public File getOrCreateExistingMetadataDir() {
+		File metadataDir = new File(this.getOrCreateDirectory(), METADATA + "/");
+		if (metadataDir.exists()) {
+			if (!metadataDir.isDirectory()) {
+				throw new RuntimeException(metadataDir + " should be directory");
+			}
+		} else {
+			metadataDir.mkdirs();
+		}
+		return metadataDir;
+	}
+
+	public CTree getOrCreateExistingCTree(String doi) {
+		File cTreeDirectory = new File(this.getOrCreateDirectory(), doi);
+		CTree cTree = null;
+		if (cTreeDirectory.exists()) {
+			if (!cTreeDirectory.isDirectory()) {
+				throw new RuntimeException(cTreeDirectory + " should be directory");
+			}
+			cTree = this.getCTreeByName(doi);
+		} else {
+			cTreeDirectory.mkdirs();
+			cTree = new CTree(cTreeDirectory);
+			this.add(cTree);
+		}
+		return cTree;
 	}
 
 

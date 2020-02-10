@@ -107,6 +107,7 @@ LANDING PAGE
  */
 public class BiorxivDownloader extends AbstractDownloader {
 
+	private static final String CONTENT = "content/";
 	private static final String HIGHWIRE_CITE_EXTRAS = "highwire-cite-extras";
 	private static final String CITE_EXTRAS_DIV = ".//*[local-name()='"+HtmlDiv.TAG+"' and @class='" + HIGHWIRE_CITE_EXTRAS + "']";
 
@@ -130,31 +131,29 @@ public class BiorxivDownloader extends AbstractDownloader {
 		this.setBase(BIORXIV_BASE);
 	}
 
-//	public BiorxivDownloader(CProject cProject) {
-//		super(cProject);
-//		init();
-//	}
+	public BiorxivDownloader(CProject cProject) {
+		super(cProject);
+		init();
+	}
 
 	/**
     https://www.biorxiv.org/search/coronavirus%20numresults%3A75%20sort%3Arelevance-rank?page=1
 	 */
 
-	/**
-	 * <ul class="highwire-search-results-list">
-	 <li class="first odd search-result result-jcode-biorxiv search-result-highwire-citation">
-	 * @return 
-	 */
 	@Override
-	public ResultSet createResultSet(String result) {
-		Element element = HtmlUtil.parseCleanlyToXHTML(result);
+	protected ResultSet createResultSet(Element element) {
+//		<ul class="highwire-search-results-list">
 		List<Element> ulList = XMLUtil.getQueryElements(element, 
-				".//*[local-name()='ul' and @class='" + HIGHWIRE_SEARCH_RESULTS_LIST + "']");
+				"//*[local-name()='ul' and @class='" + HIGHWIRE_SEARCH_RESULTS_LIST + "']");
+		
 		if (ulList.size() == 0) {
+			LOG.debug(element.toXML());
 			System.err.println("empty array");
 			return new ResultSet();
 		}
 		Element ul = ulList.get(0);
-		return createResultSet(ul);
+		ResultSet createResultSet = super.createResultSet(ul);
+		return createResultSet;
 	}
 
 	
@@ -172,7 +171,7 @@ public class BiorxivDownloader extends AbstractDownloader {
 	@Override
 	protected String getDOIFromUrl(String fullUrl) {
 		if (fullUrl == null) return null;
-		String[] parts = fullUrl.split("content/");
+		String[] parts = fullUrl.split(CONTENT);
 		return parts[1];
 	}
 
@@ -243,6 +242,13 @@ public class BiorxivDownloader extends AbstractDownloader {
 		URL url = BiorxivDownloader.createURL(fileroot);
 		return new CurlPair(urlfile, url);
 	}
+
+	
+	@Override
+	protected List<String> getCitationLinks() {
+		return resultSet == null ? new ArrayList<>() : resultSet.getCitationLinks();
+	}
+
 
 	
 }

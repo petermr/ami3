@@ -52,5 +52,12 @@ public class SDMetadataEntry extends AbstractMetadataEntry {
 		throw new RuntimeException("NYI");
 	}
 
+	@Override
+	public String getCitationLink() {
+		throw new RuntimeException("NYI");
+	}
+	
+	
+
 
 }

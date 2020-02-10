@@ -18,6 +18,7 @@ public class AbstractAMITest {
 	public static File SRC_TEST_GRAPHICS = new File(CMINE, "graphics");
 	public static File SRC_TEST_SVG = new File(SRC_TEST_GRAPHICS, "svg");
 	public static File SRC_TEST_PLOT = new File(SRC_TEST_SVG, "plot");
+	public static File SRC_TEST_TOOLS = new File(SRC_TEST_AMI, "tools");
 	public static File PDF2SVG2 = new File(SRC_TEST_AMI, "pdf2svg2");
 	public static File OIL5 = new File(SRC_TEST_AMI, "oil5/");
 	

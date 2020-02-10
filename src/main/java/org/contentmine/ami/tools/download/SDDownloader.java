@@ -85,6 +85,12 @@ public class SDDownloader extends AbstractDownloader {
 	protected File cleanAndOutputResultSetFile(File file) {
 		throw new RuntimeException("NYI");
 	}
+
+	@Override
+	protected List<String> getCitationLinks() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	// ol[class="search-result-wrapper"]
 	

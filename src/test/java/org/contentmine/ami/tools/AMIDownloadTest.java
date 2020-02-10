@@ -2,16 +2,20 @@ package org.contentmine.ami.tools;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URL;
+import java.util.List;
 
-import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.download.AbstractDownloader;
+import org.contentmine.ami.tools.download.AbstractMetadataEntry;
 import org.contentmine.ami.tools.download.BiorxivDownloader;
 import org.contentmine.ami.tools.download.CurlDownloader;
 import org.contentmine.ami.tools.download.CurlPair;
+import org.contentmine.ami.tools.download.ResultSet;
+import org.contentmine.cproject.files.CProject;
+import org.contentmine.cproject.files.CTree;
+import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.cproject.util.CMineUtil;
 import org.junit.Assert;
 import org.junit.Test;
@@ -21,12 +25,16 @@ import org.junit.Test;
  * @author pm286
  *
  */
-public class AMIDownloadTest {
+public class AMIDownloadTest extends AbstractAMITest {
 	private static final Logger LOG = Logger.getLogger(AMIDownloadTest.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
 
+	private static File DOWNLOAD_DIR = new File(SRC_TEST_TOOLS, "download");
+	private static File BIORXIV_DIR = new File(DOWNLOAD_DIR, "biorxiv");
+	private static File CLIMATE_DIR = new File(BIORXIV_DIR, "climate");
+	
 	@Test
 	/** 
 	 * run query
@@ -83,6 +91,10 @@ public class AMIDownloadTest {
 	}
 
 	@Test 
+	/** downloads a single curlPair
+	 * 
+	 * @throws Exception
+	 */
 	public void testCurlDownloader() throws Exception {
 			
 		File downloadDir = new File("target/biorxiv/");
@@ -133,6 +145,78 @@ public class AMIDownloadTest {
 
 	}
 
+
+
+	@Test
+	/**
+	 * 
+	 */
+	public void testCreateUnpopulatedCTreesFromResultSet() throws IOException {
+		File targetDir = new File("target/biorxiv/climate");
+		CMineTestFixtures.cleanAndCopyDir(CLIMATE_DIR, targetDir);
+		
+		CProject cProject = new CProject(targetDir);
+		File metadataDir = cProject.getOrCreateExistingMetadataDir();
+		/** reads existing resultSet file to create object */
+		ResultSet resultSet = new BiorxivDownloader().setCProject(cProject).createResultSet(new File(metadataDir, "resultSet1.clean.html"));
+		// result set had default 10 entries
+		List<AbstractMetadataEntry> metadataEntryList = resultSet.getMetadataEntryList();
+		Assert.assertEquals("metadata", 10, +metadataEntryList.size());
+		// metadata directory had 3 results sets, each raw and clean
+		Assert.assertEquals(6, metadataDir.listFiles().length);
+		// remove all existing CTrees for the test
+		cProject.cleanAllTrees();
+		Assert.assertEquals(0,  cProject.getOrCreateCTreeList().size());
+		// this is the __metadata directory
+		Assert.assertEquals(1,  cProject.getDirectory().listFiles().length);
+		// create trees from result set
+		resultSet.createCTrees(cProject);
+		Assert.assertEquals("Ctree count", 10, cProject.getOrCreateCTreeList().size());
+		
+		
+	}
+	
+	@Test
+	/**
+	 * as above, but download landing pages
+	 */
+	public void testCreateCTreeLandingPagesFromResultSetIT() throws IOException {
+		File targetDir = new File("target/biorxiv/climate");
+		CMineTestFixtures.cleanAndCopyDir(CLIMATE_DIR, targetDir);
+		
+		CProject cProject = new CProject(targetDir).cleanAllTrees();
+		File metadataDir = cProject.getOrCreateExistingMetadataDir();
+		AbstractDownloader biorxivDownloader = new BiorxivDownloader().setCProject(cProject);
+		ResultSet resultSet = biorxivDownloader.createResultSet(new File(metadataDir, "resultSet1.clean.html"));
+		List<String> fileroots = resultSet.getCitationLinks();
+//		resultSet.createLandingPages(cProject);
+		
+		CurlDownloader curlDownloader = new CurlDownloader();
+//		// these are verbatim from the resultSet file
+//		String[] fileroots = {
+//			       "/content/10.1101/2020.01.24.917864v1",
+//			       "/content/10.1101/850289v1",
+//			       "/content/10.1101/641399v2",
+//			       "/content/10.1101/844886v1",
+//			       "/content/10.1101/709089v1",
+//			       "/content/10.1101/823724v1",
+//			       "/content/10.1101/827196v1",
+//			       "/content/10.1101/823930v1",
+//			       "/content/10.1101/821561v1",
+//			       "/content/10.1101/819326v1",
+//			      };
+		for (String fileroot : fileroots) {
+			curlDownloader.addCurlPair(BiorxivDownloader.createCurlPair(cProject.getDirectory(), fileroot));
+		}
+		
+		curlDownloader.setTraceFile("target/trace.txt");
+		curlDownloader.setTraceTime(true);
+		String result = curlDownloader.run();
+		LOG.debug("result ["+result+"]");
+
+//		Assert.assertEquals("Ctree count", 10, cProject.getOrCreateCTreeList().size());
+		
+	}
 
 
 	// ====private====

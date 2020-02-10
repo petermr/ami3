@@ -23,6 +23,7 @@ import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlHead;
 import org.contentmine.graphics.html.HtmlHtml;
+import org.contentmine.graphics.html.util.HtmlUtil;
 
 import nu.xom.Element;
 
@@ -51,7 +52,7 @@ public abstract class AbstractDownloader {
 
 	private String base;
 	protected List<AbstractMetadataEntry> metadataEntryList;
-//	private CProject cProject;
+	private CProject cProject;
 	private CTree currentTree;
 	private HtmlHead preloadHead;
 //	private ArrayList<Integer> pageList;
@@ -62,8 +63,8 @@ public abstract class AbstractDownloader {
 	private String sortOrder = "relevance-rank"; // will be set by each engine
 	private int downloadCount;
 //	private int downloadLimit = 100;
-	private ResultSet resultSet;
 	private AMIDownloadTool downloadTool;
+	protected ResultSet resultSet;
 
 //	.setCProject(cProject)
 //	.setDownloadLimit(limit)
@@ -77,14 +78,18 @@ public abstract class AbstractDownloader {
 	protected AbstractDownloader() {
 	}
 		
-//	public AbstractDownloader(CProject cProject) {
-//		this();
-//		this.setCProject(cProject);
-//		cProject.getOrCreateDirectory();
-//	}
-	public abstract ResultSet createResultSet(String result);
+	public AbstractDownloader(CProject cProject) {
+		this();
+		this.setCProject(cProject);
+		cProject.getOrCreateDirectory();
+	}
 	protected abstract AbstractMetadataEntry createMetadataEntry(Element parent);
 
+	public AbstractDownloader setCProject(CProject cProject) {
+		this.cProject = cProject;
+		return this;
+	}
+	
 	public static Element parseToHTML(Element element) {
 		HtmlElement htmlElement = HtmlElement.create(element);
 		return htmlElement;
@@ -118,17 +123,36 @@ public abstract class AbstractDownloader {
 			addMetadataToCTree(entryElement, doi);
 		}
 		System.out.println("metadataEntries "+metadataEntryList.size());
-		return new ResultSet(metadataEntryList);
+		resultSet = new ResultSet(metadataEntryList);
+		return resultSet;
 	}
 
 	private void addMetadataToCTree(Element entryElement, String doi) {
-		currentTree = downloadTool.getCTree(doi);
+		getOrCreateCProject();
+		if (cProject == null) {
+			LOG.info("No cProject so no tree");
+			return;
+		}
+		currentTree = cProject.getExistingCTreeOrCreateNew(doi);
 		boolean delete = true;
 		try {
 			currentTree.setScrapedMetadataElement(HtmlElement.create(entryElement), delete);
 		} catch (IOException e) {
 			throw new RuntimeException("cannot add metadata: ", e);
 		}
+	}
+
+	private CProject getOrCreateCProject() {
+		if (cProject == null) {
+			if (downloadTool != null) {
+				cProject = downloadTool.getCProject();
+			}
+			if (cProject == null) {
+				System.err.println("No CProject; set explicitly or use DownloadTool");
+			}
+		}
+		return cProject;
+		
 	}
 
 	/** creates entryElements from children of containerElements
@@ -160,7 +184,7 @@ public abstract class AbstractDownloader {
 	}
 
 	public CProject getCProject() {
-		return downloadTool.getCProject();
+		return downloadTool != null ? downloadTool.getCProject() : cProject;
 	}
 
 	void downloadRequestedFiles(AbstractMetadataEntry metadataEntry) throws IOException {
@@ -378,6 +402,31 @@ https://www.biorxiv.org/search/coronavirus%20numresults%3A75%20sort%3Arelevance-
 	public void setDownloadTool(AMIDownloadTool downloadTool) {
 		this.downloadTool = downloadTool;
 	}
+
+	public ResultSet createResultSet(File file) {
+		if (!file.exists()) {
+			throw new RuntimeException("file does not exist: "+file);
+		}
+		HtmlHtml html = (HtmlHtml) HtmlElement.create(HtmlUtil.parseCleanlyToXHTML(file));
+		return createResultSet(html);
+	}
+
+	/**
+	 * <ul class="highwire-search-results-list">
+	 <li class="first odd search-result result-jcode-biorxiv search-result-highwire-citation">
+	 * @return 
+	 */
+	public ResultSet createResultSet(String result) {
+		Element element = HtmlUtil.parseCleanlyToXHTML(result);
+		return createResultSet(element);
+	}
+
+	/** gets files roots from URLs
+	 * not sure whether this is a Downloader or ResultSet responsibility
+	 * 
+	 * @return
+	 */
+	protected abstract List<String> getCitationLinks();
 
 
 

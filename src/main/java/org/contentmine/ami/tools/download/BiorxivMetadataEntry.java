@@ -99,4 +99,22 @@ public class BiorxivMetadataEntry extends AbstractMetadataEntry {
 		return urlPath.replace("/content/", "");
 	}
 
+	/**
+	   <li class="first odd search-result result-jcode-biorxiv search-result-highwire-citation">
+	    <div class="highwire-article-citation highwire-citation-type-highwire-article" data-pisa="biorxiv;2020.01.24.917864v1" data-pisa-master="biorxiv;2020.01.24.917864" data-seqnum="11" data-apath="/biorxiv/early/2020/01/24/2020.01.24.917864.atom" id="biorxivearly2020012420200124917864atom">
+	     <div class="highwire-cite highwire-cite-highwire-article highwire-citation-biorxiv-article-pap-list clearfix">
+	      <span class="highwire-cite-title">
+	       <a href="/content/10.1101/2020.01.24.917864v1" class="highwire-cite-linked-title" data-icon-position="" data-hide-link-title="0">
+	        <span class="highwire-cite-title">A systematic review of scientific research focused on farmers in agricultural adaptation to climate change (2008-2017)</span>
+	       </a>
+	 * @return
+	 * gets the pointer to the "citation", often a landing page (here the value of @href)
+	 */
+
+
+	@Override
+	public String getCitationLink() {
+		return XMLUtil.getSingleValue(metadataEntryElement, ".//*[local-name()='"+HtmlA.TAG+"']/@href");
+	}
+
 }
