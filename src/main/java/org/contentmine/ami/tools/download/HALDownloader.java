@@ -106,14 +106,14 @@ LANDING PAGE
  * @author pm286
  *
  */
-public class BiorxivDownloader extends AbstractDownloader {
+public class HALDownloader extends AbstractDownloader {
 
 	private static final String ARTICLE = "article";
 	private static final String CONTENT = "content/";
 	private static final String HIGHWIRE_CITE_EXTRAS = "highwire-cite-extras";
 	private static final String CITE_EXTRAS_DIV = ".//*[local-name()='"+HtmlDiv.TAG+"' and @class='" + HIGHWIRE_CITE_EXTRAS + "']";
 
-	static final Logger LOG = Logger.getLogger(BiorxivDownloader.class);
+	static final Logger LOG = Logger.getLogger(HALDownloader.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
@@ -125,7 +125,7 @@ public class BiorxivDownloader extends AbstractDownloader {
 	public static final String BIORXIV_HEADER = "/content/";
 
 	
-	public BiorxivDownloader() {
+	public HALDownloader() {
 		init();
 	}
 
@@ -133,7 +133,7 @@ public class BiorxivDownloader extends AbstractDownloader {
 		this.setBase(BIORXIV_BASE);
 	}
 
-	public BiorxivDownloader(CProject cProject) {
+	public HALDownloader(CProject cProject) {
 		super(cProject);
 		init();
 	}
@@ -246,7 +246,7 @@ public class BiorxivDownloader extends AbstractDownloader {
 	public static URL createURL(String fileroot) {
 		URL url = null;
 		try {
-			url = new URL(AbstractDownloader.HTTPS, BiorxivDownloader.BIORXIV_HOST, fileroot);
+			url = new URL(AbstractDownloader.HTTPS, HALDownloader.BIORXIV_HOST, fileroot);
 		} catch (MalformedURLException e) {
 			throw new RuntimeException("Cannot create URL", e);
 		}
@@ -261,8 +261,8 @@ public class BiorxivDownloader extends AbstractDownloader {
 	 * @return
 	 */
 	public static CurlPair createCurlPair(File downloadDir, String fileroot) {
-		File urlfile = BiorxivDownloader.createLandingPageFile(downloadDir, fileroot);
-		URL url = BiorxivDownloader.createURL(fileroot);
+		File urlfile = HALDownloader.createLandingPageFile(downloadDir, fileroot);
+		URL url = HALDownloader.createURL(fileroot);
 		return new CurlPair(urlfile, url);
 	}
 

@@ -37,7 +37,6 @@ import org.apache.log4j.Logger;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.graphics.html.HtmlB;
 import org.contentmine.graphics.html.HtmlElement;
-import org.contentmine.graphics.html.HtmlHtml;
 import org.contentmine.graphics.html.HtmlI;
 import org.contentmine.graphics.html.HtmlSub;
 import org.contentmine.graphics.html.HtmlSup;
@@ -52,6 +51,7 @@ import nu.xom.Elements;
 import nu.xom.Node;
 import nu.xom.Nodes;
 import nu.xom.ParentNode;
+import nu.xom.ParsingException;
 import nu.xom.ProcessingInstruction;
 import nu.xom.Serializer;
 import nu.xom.Text;
@@ -428,8 +428,20 @@ public abstract class XMLUtil implements XMLConstants {
 		try {
 			Document doc = new Builder().build(new StringReader(xmlString));
 			root = doc.getRootElement();
-		} catch (Exception e) {
-//			System.out.println(">xml>"+xmlString+"<");
+		} catch (IOException e) {
+			throw new RuntimeException("IO exception, ", e);
+		} catch (ParsingException e) {
+			int line = e.getLineNumber();
+			int charx = e.getColumnNumber();
+//		nu.xom.ParsingException: The character reference must end with the ';' delimiter. at line 354, column 7809
+//		Caused by: nu.xom.ParsingException: The character reference must end with the ';' delimiter. at line 354, column 7809
+//		Caused by: org.xml.sax.SAXParseException; lineNumber: 354; columnNumber: 7809; The character reference must end with the ';' delimiter.
+			String msg = e.getMessage();
+			String[] lines = xmlString.split("\\n");
+			String badLine = lines[line - 1];
+			String badString = badLine.substring(Math.max(0,  charx - 20), Math.min(badLine.length(),  charx + 20));
+			System.out.println("<"+line+"/"+charx+">badline > "+badLine+"\n"+badString);
+			
 			throw new RuntimeException(e);
 		}
 		return root;
@@ -1719,7 +1731,13 @@ public abstract class XMLUtil implements XMLConstants {
 		while (matcher.find(start)) {
 			String group1 = matcher.group(1);
 			sb.append(string.substring(end, matcher.start()));
-			sb.append((standard.contains(group1)) ? matcher.group(0) : START + group1 + END);
+			String entity = null;
+			if (standard.contains(group1)) {
+				entity = matcher.group(0)+";";
+			} else {
+				entity = START + group1 + END;
+			}
+			sb.append(entity);
 			start = matcher.end();
 			end = matcher.end();
 		}

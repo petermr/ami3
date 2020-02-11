@@ -284,6 +284,11 @@ public abstract class HtmlElement extends AbstractCMElement {
 		return HtmlElement.create(element, false, true);
 	}
 		
+	public static HtmlElement create(String content) {
+		Element element = HtmlUtil.parseCleanlyToXHTML(content);
+		return create(element);
+	}
+		
 	/** creates subclassed elements.
 	 * 
 	 * if an error is encountered and abort = false, outputs message and
@@ -618,7 +623,7 @@ public abstract class HtmlElement extends AbstractCMElement {
 			throw new RuntimeException("null or non-existent file: "+file);
 		}
 		
-		Element element = XMLUtil.parseQuietlyToRootElement(file);
+		Element element = HtmlUtil.parseCleanlyToXHTML(file);
 		HtmlElement htmlElement = HtmlElement.create(element);
 		return htmlElement;
 	}

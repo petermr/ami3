@@ -2122,4 +2122,5 @@ public class CTree extends CContainer implements Comparable<CTree> {
 		LOG.trace("raw words " + (rawWords != null ? rawWords.size() : null));
 		return rawWords;
 	}
+
 }

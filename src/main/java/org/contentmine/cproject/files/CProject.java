@@ -1356,5 +1356,15 @@ public class CProject extends CContainer {
 		return cTree;
 	}
 
+	public void getOrCreateExistingCProjectDirectory() {
+		File directory = this.getOrCreateDirectory();
+		directory.mkdirs();
+	}
+
+	public CTreeList getOrCreateCTreeList(boolean force) {
+		if (force) allChildDirectoryList = null;
+		return getOrCreateCTreeList();
+	}
+
 
 }

@@ -4,18 +4,15 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.PathMatcher;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.AMIDownloadTool;
-import org.contentmine.ami.tools.AMIDownloadTool.SearchSite;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.util.CMineUtil;
@@ -53,27 +50,13 @@ public abstract class AbstractDownloader {
 	private String base;
 	protected List<AbstractMetadataEntry> metadataEntryList;
 	private CProject cProject;
-	private CTree currentTree;
+	protected CTree currentTree;
 	private HtmlHead preloadHead;
-//	private ArrayList<Integer> pageList;
-//	private ArrayList<String> queryList;
-//	private Integer pageSize;
-	private SearchSite site;
 	private File metadataDir;
 	private String sortOrder = "relevance-rank"; // will be set by each engine
 	private int downloadCount;
-//	private int downloadLimit = 100;
 	private AMIDownloadTool downloadTool;
 	protected ResultSet resultSet;
-
-//	.setCProject(cProject)
-//	.setDownloadLimit(limit)
-//	.setPageList(pageList)
-//	.setPageSize(pagesize)
-//	.setQueryList(queryList)
-//	.setSite(site)
-//	.setMetadataDir(new File(cProject.getOrCreateDirectory(), metadata))
-
 	
 	protected AbstractDownloader() {
 	}
@@ -253,8 +236,9 @@ https://www.biorxiv.org/search/coronavirus%20numresults%3A75%20sort%3Arelevance-
  * @throws IOException 
  */
 		List<Integer> pageList = downloadTool.getPageList();
-		String url = site.getSite() + this.createQuery(downloadTool.getQueryList()); // testing
+		String url = downloadTool.getSite().getSite() + this.createQuery(downloadTool.getQueryList()); // testing
 		System.out.println("URL "+url);
+		metadataDir = cProject.getOrCreateExistingMetadataDir();
 		if (metadataDir == null) {
 			throw new RuntimeException("no output directory");
 		}
@@ -285,11 +269,12 @@ https://www.biorxiv.org/search/coronavirus%20numresults%3A75%20sort%3Arelevance-
 				.setOutputFile(resultSetFile);
 		curlDownloader.run();
 		File cleanResultSetfile = cleanAndOutputResultSetFile(resultSetFile);
-		
-		String resultSetContent = FileUtils.readFileToString(cleanResultSetfile, CMineUtil.UTF8_CHARSET);
-		resultSet = this.createResultSet(resultSetContent);
-		resultSet.setUrl(url);
-		System.err.println("Results " + resultSet.size());
+		if (cleanResultSetfile != null) {
+			String resultSetContent = FileUtils.readFileToString(cleanResultSetfile, CMineUtil.UTF8_CHARSET);
+			resultSet = this.createResultSet(resultSetContent);
+			resultSet.setUrl(url);
+			System.err.println("Results " + resultSet.size());
+		}
 	}
 	
 	protected abstract File cleanAndOutputResultSetFile(File file);
@@ -327,7 +312,7 @@ https://www.biorxiv.org/search/coronavirus%20numresults%3A75%20sort%3Arelevance-
 				throw new RuntimeException("cannot encode: ", e);
 			}
 		}
-		System.out.println(s);
+		System.out.println("Query: "+s);
 		return s;
 	}
 
@@ -343,36 +328,6 @@ https://www.biorxiv.org/search/coronavirus%20numresults%3A75%20sort%3Arelevance-
 		s += " " + name + "=" + value;
 		return s;
 	}
-
-//	public AbstractDownloader setPageList(List<Integer> pageList) {
-//		this.pageList = new ArrayList<>(pageList);
-//		return this;
-//	}
-
-//	public AbstractDownloader setPageSize(Integer pagesize) {
-//		this.pageSize = pagesize;
-//		return this;
-//	}
-
-//	public AbstractDownloader setQueryList(List<String> queryList) {
-//		this.queryList = new ArrayList<>(queryList);
-//		return this;
-//	}
-//
-	public AbstractDownloader setSite(SearchSite site) {
-		this.site = site;
-		return this;
-	}
-
-//	public AbstractDownloader setMetadataDir(File dir) {
-//		this.metadataDir = dir;
-//		return this;
-//	}
-//
-//	public AbstractDownloader setDownloadLimit(int limit) {
-//		this.downloadLimit = limit;
-//		return this;
-//	}
 
 	public static String replaceDOIPunctuationByUnderscore(String doi) {
 		doi = doi == null ? null : doi.replaceAll("[\\.\\/]", "_");
@@ -427,7 +382,46 @@ https://www.biorxiv.org/search/coronavirus%20numresults%3A75%20sort%3Arelevance-
 	 * @return
 	 */
 	protected abstract List<String> getCitationLinks();
+	public AbstractLandingPage createLandingPage() {
+		return downloadTool == null ? null : downloadTool.getSite().createLandingPage();
+	}
 
+	public String clean(String content) {
+		return content;
+	}
+
+	public void clean(File htmlFile) {
+		try {
+			String content = FileUtils.readFileToString(htmlFile, CMineUtil.UTF8_CHARSET);
+			content = clean(content);
+			FileUtils.write(htmlFile, content, CMineUtil.UTF8_CHARSET);
+		} catch (Exception e) {
+			throw new RuntimeException("cannot write clean file: "+htmlFile, e);
+		}
+	}
+
+	public abstract File cleanAndOutputArticleFile(File file);
+
+	public void setCurrentTree(CTree cTree) {
+		this.currentTree = cTree;
+	}
+	
+	public CTree getCurrentCTree() {
+		return currentTree;
+	}
+
+	public void downloadLink(AbstractLandingPage landingPage)
+			throws IOException {
+		String fullTextLink = landingPage.getHtmlLink();
+		System.out.print(" "+fullTextLink.substring(fullTextLink.lastIndexOf("/") + 1));
+		CurlDownloader curlDownloader = new CurlDownloader();
+		File rawHtmlFile = new File(currentTree.getDirectory(), "rawFullText.html");
+		curlDownloader.setOutputFile(rawHtmlFile);
+		curlDownloader.setUrlString(fullTextLink);
+		curlDownloader.run();
+		clean(rawHtmlFile);
+		cleanAndOutputArticleFile(rawHtmlFile);
+	}
 
 
 }

@@ -53,7 +53,7 @@ public class CurlDownloader {
 		addTrace();
 		addCurlPairsOrOutput();
 		addOutputFile();
-		System.out.println("curl: "+commandList);
+//		System.out.println("curl: "+commandList);
 		String result = run(commandList);
 		return result;
 	}
@@ -77,6 +77,7 @@ public class CurlDownloader {
 	}
 
 	private void addCurlPairsOrOutput() {
+		getOrCreateCurlPairList();
 		if (curlPairList.size() > 0 ) {
 			for (CurlPair curlPair : curlPairList) {
 				commandList.add(_OUT);

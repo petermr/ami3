@@ -303,7 +303,7 @@ public abstract class CContainer {
 	}
 	
 	public String toString() {
-		return "Dir: "+directory.toString();
+		return directory.toString();
 	}
 
 }

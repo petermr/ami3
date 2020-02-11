@@ -91,7 +91,12 @@ public class SDDownloader extends AbstractDownloader {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	@Override
+	public File cleanAndOutputArticleFile(File file) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
-	// ol[class="search-result-wrapper"]
 	
 }

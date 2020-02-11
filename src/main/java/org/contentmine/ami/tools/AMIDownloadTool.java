@@ -7,19 +7,28 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.client.HttpClient;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.download.AbstractDownloader;
+import org.contentmine.ami.tools.download.AbstractLandingPage;
 import org.contentmine.ami.tools.download.AbstractMetadataEntry;
 import org.contentmine.ami.tools.download.BiorxivDownloader;
+import org.contentmine.ami.tools.download.BiorxivLandingPage;
 import org.contentmine.ami.tools.download.BiorxivMetadataEntry;
+import org.contentmine.ami.tools.download.CurlDownloader;
+import org.contentmine.ami.tools.download.ResultSet;
 import org.contentmine.ami.tools.download.SDDownloader;
+import org.contentmine.ami.tools.download.SDLandingPage;
 import org.contentmine.ami.tools.download.SDMetadataEntry;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
+import org.contentmine.cproject.files.CTreeList;
 import org.contentmine.cproject.util.CMineUtil;
+import org.contentmine.graphics.html.HtmlElement;
+import org.contentmine.graphics.html.HtmlHtml;
 
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
@@ -48,21 +57,35 @@ public class AMIDownloadTool extends AbstractAMITool {
 	}
 	
 	public enum SearchSite {
-		biorxiv(BiorxivDownloader.getSearchUrl(), new BiorxivDownloader(), new BiorxivMetadataEntry()),
-		sd(SDDownloader.getSearchUrl(), new SDDownloader(), new SDMetadataEntry()),
+		biorxiv(BiorxivDownloader.getSearchUrl(),
+				new BiorxivDownloader(),
+				new BiorxivMetadataEntry(),
+				new BiorxivLandingPage()
+				),
+		hal(HALDownloader.getSearchUrl(),
+				new HALDownloader(),
+				new HALMetadataEntry(),
+				new HALLandingPage()
+				),
+		sd(SDDownloader.getSearchUrl(),
+				new SDDownloader(), 
+				new SDMetadataEntry(), 
+				new SDLandingPage()),
 		;
 		private String site;
 		private AbstractDownloader downloader;
 		private AbstractMetadataEntry metadata;
+		private AbstractLandingPage landingPage;
 		
-		private SearchSite(String site, AbstractDownloader downloader, AbstractMetadataEntry metadata) {
+		private SearchSite(String site, 
+				AbstractDownloader downloader, 
+				AbstractMetadataEntry metadata, 
+				AbstractLandingPage landingPage) {
 			this.site = site;
 			this.downloader = downloader;
 			this.metadata = metadata;
+			this.landingPage = landingPage;
 		}
-//		SearchSite(String string, SDDownloader sdDownloader, SDMetadata sdMetadata) {
-//			// TODO Auto-generated constructor stub
-//		}
 		public String getSite() {
 			return site;
 		}
@@ -87,12 +110,17 @@ public class AMIDownloadTool extends AbstractAMITool {
 			}
 			return newMetadata;
 		}
+		
+		public AbstractLandingPage createLandingPage() {
+			AbstractLandingPage newLandingPage = null;
+			try {
+				newLandingPage = (AbstractLandingPage) Class.forName(landingPage.getClass().getName()).newInstance();
+			} catch (Exception e) {
+				throw new RuntimeException("BUG: ", e);
+			}
+			return newLandingPage;
+		}
 	}
-
-//    @Option(names = {"--download"},
-//    		arity = "1..*",
-//            description = "file types to download")
-//    private FileTypes fileTypes = new ArrayList<>("html", "pdf");
 
     @Option(names = {"--limit"},
     		arity = "1",
@@ -118,6 +146,11 @@ public class AMIDownloadTool extends AbstractAMITool {
     		arity = "1..*",
             description = "query to issue (may need escaping)")
     private List<String> queryList = null;
+
+    @Option(names = {"--resultset"},
+    		arity = "1..*",
+            description = "resultSets to download (experimental)")
+    private List<String> resultsSetList = new ArrayList<>();
 
     @Option(names = {"--site"},
     		arity = "1",
@@ -148,10 +181,12 @@ public class AMIDownloadTool extends AbstractAMITool {
 
     @Override
 	protected boolean parseGenerics() {
+    	makeCProjectDirectory = true;
     	super.parseGenerics();
     	if (cProject == null) {
     		throw new RuntimeException("Must give project");
     	}
+    	
     	if (output == null) {
     		output = "scraped/";
     		LOG.info("set output to: " + output);
@@ -174,7 +209,7 @@ public class AMIDownloadTool extends AbstractAMITool {
     
     @Override
     protected void runSpecifics() {
-		createDownloader();
+		downloader = createDownloader();
 		downloader.downloadResultSet();
 		try {
 			downloader.downloadPages();
@@ -182,24 +217,32 @@ public class AMIDownloadTool extends AbstractAMITool {
 			e.printStackTrace();
 			System.err.println("cannot load pages "+ e);
 		}
-		try {
-			downloader.downloadPages();
-		} catch (IOException e) {
-			e.printStackTrace();
-			System.err.println("cannot load pages "+ e);
+		if (resultsSetList.size() > 0) {
+			for (String resultSetFilename : resultsSetList) {
+				extractResultSets(resultSetFilename);
+			}
+		}
+		if (rawFileFormats.size() > 0) {
+			try {
+				this.downloadCTrees();
+			} catch (IOException e) {
+				e.printStackTrace();
+				System.err.println("Cannot downloadTrees");
+			}
 		}
     }
 
-	private void createDownloader() {
+	private AbstractDownloader createDownloader() {
 		downloader = site.createDownloader(this);
-//			.setCProject(cProject)
+		downloader.setCProject(cProject)
 //			.setDownloadLimit(limit)
 //			.setPageList(pageList)
 //			.setPageSize(pagesize)
 //			.setQueryList(queryList)
 //			.setSite(site)
 //			.setMetadataDir(new File(cProject.getOrCreateDirectory(), metadata))
-//			;
+			;
+		return downloader;
 	}
 	
 	public static String runCurlGet(String url) throws IOException {
@@ -271,5 +314,83 @@ public class AMIDownloadTool extends AbstractAMITool {
 		return queryList;
 	}
 
+	public SearchSite getSite() {
+		return site;
+	}
+
+	private void extractResultSets(String filename) {
+		downloader.setCProject(cProject);
+	
+		File metadataDir = cProject.getOrCreateExistingMetadataDir();
+		ResultSet resultSet = downloader.createResultSet(new File(metadataDir, filename));
+		List<String> fileroots = resultSet.getCitationLinks();
+		String result = null;
+		try {
+			result = downloadWithCurl(fileroots);
+		} catch (IOException e) {
+			throw new RuntimeException("Cannot extract resultSet "+filename);
+		}
+		LOG.debug("result ["+result+"]");
+	}
+
+	private String downloadWithCurl(List<String> fileroots) throws IOException {
+		CurlDownloader curlDownloader = new CurlDownloader();
+		for (String fileroot : fileroots) {
+			curlDownloader.addCurlPair(BiorxivDownloader.createCurlPair(cProject.getDirectory(), fileroot));
+		}
+		
+		curlDownloader.setTraceFile("target/trace.txt");
+		curlDownloader.setTraceTime(true);
+		String result = curlDownloader.run();
+		return result;
+	}
+
+	public HtmlHtml getLandingPageHtml(String content) {
+		HtmlHtml html = (HtmlHtml) HtmlElement.create(content);
+		return html;
+	}
+
+	private String getLandingPageText(CTree cTree) {
+		File landingPageFile = new File(cTree.getDirectory(), AbstractDownloader.LANDING_PAGE + "." + "html");
+		String content = null;
+		try {
+			content = FileUtils.readFileToString(landingPageFile, CMineUtil.UTF8_CHARSET);
+		} catch (IOException e) {
+			throw new RuntimeException("Cannot read "+landingPageFile, e);
+		}
+		return content;
+	}
+	
+	public AbstractLandingPage getLandingPage(CTree cTree) {
+		String content = getLandingPageText(cTree);
+		HtmlHtml landingPageHtml = null;
+		try {
+			content = downloader.clean(content);
+			landingPageHtml = getLandingPageHtml(content);
+		} catch (Exception e) {
+			System.err.println("Bad parse ("  +cTree + ")"+e);
+			return null;
+		}
+		AbstractLandingPage landingPage = downloader.createLandingPage();
+		landingPage.readHtml(landingPageHtml);
+		return landingPage;
+	}
+
+	public AbstractDownloader getDownloader() {
+		return downloader;
+	}
+	
+	public void downloadCTrees() throws IOException {
+		boolean force = true;
+		CTreeList treeList = cProject.getOrCreateCTreeList(force);
+		AbstractDownloader downloader = getDownloader();
+		for (CTree cTree : treeList) {
+			downloader.setCurrentTree(cTree);
+			AbstractLandingPage landingPage = getLandingPage(cTree);
+			if (landingPage != null) {
+				downloader.downloadLink(landingPage);
+			}
+		}
+	}
 
 }

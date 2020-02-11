@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -14,11 +15,21 @@ import org.contentmine.ami.tools.download.CurlDownloader;
 import org.contentmine.ami.tools.download.CurlPair;
 import org.contentmine.ami.tools.download.ResultSet;
 import org.contentmine.cproject.files.CProject;
-import org.contentmine.cproject.files.CTree;
+import org.contentmine.cproject.files.CTreeList;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.cproject.util.CMineUtil;
+import org.contentmine.eucl.xml.XMLUtil;
+import org.contentmine.graphics.html.HtmlBody;
+import org.contentmine.graphics.html.HtmlElement;
+import org.contentmine.graphics.html.HtmlHtml;
+import org.contentmine.graphics.html.HtmlLink;
+import org.contentmine.graphics.html.HtmlStyle;
+import org.contentmine.graphics.html.HtmlUl;
+import org.contentmine.graphics.html.util.HtmlUtil;
 import org.junit.Assert;
 import org.junit.Test;
+
+import nu.xom.Element;
 
 /** test OCR.
  * 
@@ -26,7 +37,7 @@ import org.junit.Test;
  *
  */
 public class AMIDownloadTest extends AbstractAMITest {
-	private static final Logger LOG = Logger.getLogger(AMIDownloadTest.class);
+	public static final Logger LOG = Logger.getLogger(AMIDownloadTest.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
@@ -189,22 +200,7 @@ public class AMIDownloadTest extends AbstractAMITest {
 		AbstractDownloader biorxivDownloader = new BiorxivDownloader().setCProject(cProject);
 		ResultSet resultSet = biorxivDownloader.createResultSet(new File(metadataDir, "resultSet1.clean.html"));
 		List<String> fileroots = resultSet.getCitationLinks();
-//		resultSet.createLandingPages(cProject);
-		
 		CurlDownloader curlDownloader = new CurlDownloader();
-//		// these are verbatim from the resultSet file
-//		String[] fileroots = {
-//			       "/content/10.1101/2020.01.24.917864v1",
-//			       "/content/10.1101/850289v1",
-//			       "/content/10.1101/641399v2",
-//			       "/content/10.1101/844886v1",
-//			       "/content/10.1101/709089v1",
-//			       "/content/10.1101/823724v1",
-//			       "/content/10.1101/827196v1",
-//			       "/content/10.1101/823930v1",
-//			       "/content/10.1101/821561v1",
-//			       "/content/10.1101/819326v1",
-//			      };
 		for (String fileroot : fileroots) {
 			curlDownloader.addCurlPair(BiorxivDownloader.createCurlPair(cProject.getDirectory(), fileroot));
 		}
@@ -217,6 +213,107 @@ public class AMIDownloadTest extends AbstractAMITest {
 //		Assert.assertEquals("Ctree count", 10, cProject.getOrCreateCTreeList().size());
 		
 	}
+	
+	@Test
+	/** issues a search  and turns results into resultSet
+	 * 
+	 */
+	public void testBiorxivSearchResultSetIT() throws IOException {
+		File targetDir = new File("target/biorxiv/testsearch4");
+		FileUtils.deleteQuietly(targetDir);
+		CProject cProject = new CProject(targetDir).cleanAllTrees();
+		cProject.cleanAllTrees();
+		String args = 
+				"-p " + cProject.toString()
+				+ " --site biorxiv"
+				+ " --query climate change"
+				+ " --metadata __metadata"
+				+ " --rawfiletypes html"
+				+ " --pagesize 4"
+				+ " --pages 1 1"
+				+ " --limit 4"
+				+ " --resultset resultSet1.clean.html"
+			;
+		AMIDownloadTool downloadTool = new AMIDownloadTool();
+		downloadTool.runCommands(args);
+		Assert.assertTrue(new File(targetDir, "__metadata/resultSet1.html").exists());
+		Assert.assertTrue(new File(targetDir, "__metadata/resultSet1.clean.html").exists());
+		CTreeList cTreeList = new CProject(targetDir).getOrCreateCTreeList();
+		Assert.assertEquals(4, cTreeList.size());
+		File directory0 = cTreeList.get(0).getDirectory();
+		Assert.assertTrue(new File(directory0, "landingPage.html").exists());
+		Assert.assertTrue(new File(directory0, "rawFullText.html").exists());
+		Assert.assertTrue(new File(directory0, "scholarly.html").exists());
+		Assert.assertTrue(new File(directory0, "scrapedMetadata.html").exists());
+	}
+
+	@Test
+	/** issues a search  and turns results into resultSet
+	 * 
+	 */
+	public void testBiorxivSearchResultSetLargeIT() throws IOException {
+		File targetDir = new File("target/biorxiv/testsearch");
+		FileUtils.deleteQuietly(targetDir);
+		CProject cProject = new CProject(targetDir).cleanAllTrees();
+		cProject.cleanAllTrees();
+		String args = 
+				"-p " + cProject.toString()
+				+ " --site biorxiv"
+				+ " --query climate change"
+				+ " --metadata __metadata"
+				+ " --rawfiletypes html pdf"
+				+ " --pagesize 1000"
+				+ " --pages 1 1"
+				+ " --limit 1000"
+				+ " --resultset resultSet1.clean.html"
+			;
+		AMIDownloadTool downloadTool = new AMIDownloadTool();
+		downloadTool.runCommands(args);
+
+	}
+
+	
+	@Test
+	/** issues a search  and turns results into resultSet
+	 * 
+	 */
+	public void testHALSearchResultSet() throws IOException {
+		File targetDir = new File("target/hal/testsearch4");
+		FileUtils.deleteQuietly(targetDir);
+		CProject cProject = new CProject(targetDir).cleanAllTrees();
+		cProject.cleanAllTrees();
+		String args = 
+				"-p " + cProject.toString()
+				+ " --site hal"
+				+ " --query permafrost"
+				+ " --metadata __metadata"
+				+ " --rawfiletypes html"
+				+ " --pagesize 4"
+				+ " --pages 1 1"
+				+ " --limit 4"
+				+ " --resultset resultSet1.clean.html"
+			;
+		AMIDownloadTool downloadTool = new AMIDownloadTool();
+		downloadTool.runCommands(args);
+		Assert.assertTrue(new File(targetDir, "__metadata/resultSet1.html").exists());
+		Assert.assertTrue(new File(targetDir, "__metadata/resultSet1.clean.html").exists());
+		CTreeList cTreeList = new CProject(targetDir).getOrCreateCTreeList();
+		Assert.assertEquals(4, cTreeList.size());
+		File directory0 = cTreeList.get(0).getDirectory();
+		Assert.assertTrue(new File(directory0, "landingPage.html").exists());
+		Assert.assertTrue(new File(directory0, "rawFullText.html").exists());
+		Assert.assertTrue(new File(directory0, "scholarly.html").exists());
+		Assert.assertTrue(new File(directory0, "scrapedMetadata.html").exists());
+		https://hal-sde.archives-ouvertes.fr/search/index/?q=permafrost&submit=&docType_s%5B%5D=ART&docType_s%5B%5D=COMM&docType_s%5B%5D=OUV&docType_s%5B%5D=COUV&docType_s%5B%5D=DOUV&docType_s%5B%5D=OTHER&docType_s%5B%5D=UNDEFINED&docType_s%5B%5D=REPORT&docType_s%5B%5D=THESE&docType_s%5B%5D=HDR&docType_s%5B%5D=LECTURE&submitType_s%5B%5D=file
+			
+	}
+
+
+	
+
+	
+
+	
 
 
 	// ====private====

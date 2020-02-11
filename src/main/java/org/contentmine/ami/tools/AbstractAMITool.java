@@ -295,6 +295,7 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 	protected CTreeList processedTreeList;
 	// has processTree run OK? 
 	protected boolean processedTree = true;
+	protected boolean makeCProjectDirectory = false;
 
 	public void init() {
 		// log4j configuration
@@ -376,7 +377,6 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 				if (level == null) {
 					LOG.error("cannot parse class/level: "+className+":"+levelS);
 				} else {
-//					LOG.debug(logClass+": "+level);
 					levelByClass.put(logClass, level);
 					Logger.getLogger(logClass).setLevel(level);
 				}
@@ -410,8 +410,12 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 	protected void validateCProject() {
 				
 		if (cProjectDirectory != null) {
+			if (makeCProjectDirectory) {
+				new File(cProjectDirectory).mkdirs();
+			}
 			File cProjectDir = new File(cProjectDirectory);
 			cProjectDirectory = checkDirExistenceAndGetAbsoluteName(cProjectDir, "cProject");
+			
 			if (cProjectDirectory != null) {
 				cProject = new CProject(cProjectDir);
 				cTreeList = generateCTreeList();
@@ -423,6 +427,10 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 			}
     	}
 	}
+
+//	private String ensureExistingCProjectDirectory() {
+//		return cProject.getOrCreateExistingCProjectDirectory();
+//	}
 
 	private void checkIncludeExclude(String[] exclude, String[] include) {
 		if (
