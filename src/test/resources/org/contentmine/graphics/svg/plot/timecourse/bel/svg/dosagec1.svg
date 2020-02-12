@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800.0" height="800.0" style="stroke:none;stroke-width:0.0;" xmlns="http://www.w3.org/2000/svg" xmlns:svgx="http://www.xml-cml.org/schema/svgx">
+<g class="C">
+
+ <g opacity="0.3" title="ACQ5" class="title">
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" x="276.203" y="467.341" style="fill:#000000;font-family:Helvetica;font-size:9.0px;font-weight:bold;">C</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" x="286.699" y="467.341" style="fill:#000000;font-family:Helvetica;font-size:7.5px;font-weight:bold;">A</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" x="291.162" y="467.341" style="fill:#000000;font-family:Helvetica;font-size:7.5px;font-weight:bold;">C</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" x="295.699" y="467.341" style="fill:#000000;font-family:Helvetica;font-size:7.5px;font-weight:bold;">Q</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" x="301.422" y="467.341" style="fill:#000000;font-family:Helvetica;font-size:7.5px;font-weight:bold;">-</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" x="303.492" y="467.341" style="fill:#000000;font-family:Helvetica;font-size:7.5px;font-weight:bold;">5</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" x="307.242" y="467.341" style="fill:#000000;font-family:Helvetica;font-size:7.5px;font-weight:bold;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" x="309.117" y="467.341" style="fill:#000000;font-family:Helvetica;font-size:7.5px;font-weight:bold;">S</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" x="313.122" y="467.341" style="fill:#000000;font-family:Helvetica;font-size:7.5px;font-weight:bold;">c</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" x="316.452" y="467.341" style="fill:#000000;font-family:Helvetica;font-size:7.5px;font-weight:bold;">o</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" x="320.322" y="467.341" style="fill:#000000;font-family:Helvetica;font-size:7.5px;font-weight:bold;">r</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" x="322.849" y="467.341" style="fill:#000000;font-family:Helvetica;font-size:7.5px;font-weight:bold;">e</text>
+ 
+ </g>
+
+ <g opacity="0.3" class="xaxis">
+
+ <!-- minor ticks -->
+ <g opacity="1.0" title="xticks" class="xaxis.ticks.minor">
+ 
+ <!-- xorigin -->
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M321.293 611.167 L321.293 614.417 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M329.421 611.167 L329.421 613.417 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M337.548 611.167 L337.548 613.417 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M345.675 611.167 L345.675 613.417 "/>
+ 
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M361.93 611.167 L361.93 613.417 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M370.057 611.167 L370.057 613.417 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M378.184 611.167 L378.184 613.417 "/>
+ 
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M394.439 611.167 L394.439 613.417 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M402.567 611.167 L402.567 613.417 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M410.693 611.167 L410.693 613.417 "/>
+
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M426.948 611.167 L426.948 613.417 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M435.076 611.167 L435.076 613.417 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M443.203 611.167 L443.203 613.417 "/>
+ 
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M459.458 611.167 L459.458 613.417 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M467.585 611.167 L467.585 613.417 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M475.712 611.167 L475.712 613.417 "/>
+ 
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M491.967 611.167 L491.967 613.417 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M500.095 611.167 L500.095 613.417 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M508.221 611.167 L508.221 613.417 "/>
+ </g> 
+ 
+ <g opacity="1.0" title="8 4 12" class="xaxis.values">
+  <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="319.543" y="621.042" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">0</text>
+  <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="384.562" y="621.041" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">8</text>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M386.312 611.167 L386.312 614.417 "/>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="352.053" y="621.041" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">4</text>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M353.803 611.167 L353.803 614.417 "/>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="415.325" y="621.041" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">1</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="418.818" y="621.041" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">2</text>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M418.821 611.167 L418.821 614.417 "/>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="447.834" y="621.041" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">1</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="451.326" y="621.041" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">6</text>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M451.33 611.167 L451.33 614.417 "/>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="480.339" y="621.041" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">2</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="483.839" y="621.041" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">0</text>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M483.842 611.167 L483.842 614.417 "/>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="512.849" y="621.042" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">2</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="516.348" y="621.042" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">4</text>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M516.349 611.167 L516.349 614.417 "/>
+ </g>
+ 
+ <g opacity="1.0" class="xaxis.line">
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M529.618 611.169 L308.041 611.169 "/>
+ </g>
+ 
+ 
+ <g opacity="1.0" title="Week" class="xaxis.label">
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" x="410.328" y="633.47" style="fill:#000000;font-family:Helvetica;font-size:7.5px;font-weight:bold;">W</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" x="416.808" y="633.47" style="fill:#000000;font-family:Helvetica;font-size:7.5px;font-weight:bold;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" x="420.318" y="633.47" style="fill:#000000;font-family:Helvetica;font-size:7.5px;font-weight:bold;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" x="423.828" y="633.47" style="fill:#000000;font-family:Helvetica;font-size:7.5px;font-weight:bold;">k</text>
+ </g>
+ 
+ </g>
+
+ 
+ <g opacity="0.3" title="yaxis" class="yaxis">
+ 
+ <g opacity="1.0" title="Mean score" class="yaxis.title">
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" transform="matrix(0.0,-1.0,1.0,0.0,-274.92221,847.44241)" x="286.26" y="561.182" style="fill:#000000;font-family:Helvetica;font-size:7.5px;font-weight:bold;">M</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" transform="matrix(0.0,-1.0,1.0,0.0,-268.33719,840.85739)" x="286.26" y="554.597" style="fill:#000000;font-family:Helvetica;font-size:7.5px;font-weight:bold;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" transform="matrix(0.0,-1.0,1.0,0.0,-264.82718,837.34738)" x="286.26" y="551.087" style="fill:#000000;font-family:Helvetica;font-size:7.5px;font-weight:bold;">a</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" transform="matrix(0.0,-1.0,1.0,0.0,-261.25717,833.77737)" x="286.26" y="547.517" style="fill:#000000;font-family:Helvetica;font-size:7.5px;font-weight:bold;">n</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" transform="matrix(0.0,-1.0,1.0,0.0,-257.16971,829.68991)" x="286.26" y="543.43" style="fill:#000000;font-family:Helvetica;font-size:7.5px;font-weight:bold;"> </text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" transform="matrix(0.0,-1.0,1.0,0.0,-255.29471,827.81491)" x="286.26" y="541.555" style="fill:#000000;font-family:Helvetica;font-size:7.5px;font-weight:bold;">S</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" transform="matrix(0.0,-1.0,1.0,0.0,-251.2897,823.80991)" x="286.26" y="537.55" style="fill:#000000;font-family:Helvetica;font-size:7.5px;font-weight:bold;">c</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" transform="matrix(0.0,-1.0,1.0,0.0,-247.95969,820.47989)" x="286.26" y="534.22" style="fill:#000000;font-family:Helvetica;font-size:7.5px;font-weight:bold;">o</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" transform="matrix(0.0,-1.0,1.0,0.0,-244.08969,816.60989)" x="286.26" y="530.35" style="fill:#000000;font-family:Helvetica;font-size:7.5px;font-weight:bold;">r</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF-Bold" svgx:width="0.0" transform="matrix(0.0,-1.0,1.0,0.0,-241.56216,814.08237)" x="286.26" y="527.822" style="fill:#000000;font-family:Helvetica;font-size:7.5px;font-weight:bold;">e</text>
+ </g>
+ 
+ <g opacity="1.0" title="yaxis" class="yaxis.line">
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M308.041 611.169 L308.041 474.328 "/>
+ </g>
+ 
+ <g opacity="1.0" title="yscale 2.4 2.6" class="yaxis.values">
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="295.221" y="479.141" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">2</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="298.721" y="479.141" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">.</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="300.478" y="479.141" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">6</text>
+ 
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="295.221" y="495.893" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">2</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="298.721" y="495.893" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">.</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="300.478" y="495.893" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">4</text>
+ 
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="295.221" y="512.645" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">2</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="298.721" y="512.645" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">.</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="300.478" y="512.645" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">2</text>
+ 
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="295.221" y="529.397" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">2</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="298.721" y="529.397" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">.</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="300.478" y="529.397" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">0</text>
+ 
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="295.228" y="546.149" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">1</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="298.722" y="546.149" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">.</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="300.478" y="546.149" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">8</text>
+ 
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="295.228" y="562.901" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">1</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="298.722" y="562.901" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">.</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="300.478" y="562.901" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">6</text>
+ 
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="295.228" y="579.653" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">1</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="298.722" y="579.653" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">.</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="300.478" y="579.653" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">4</text>
+ 
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="295.228" y="596.405" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">1</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="298.722" y="596.405" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">.</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="300.478" y="596.405" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">2</text>
+ 
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="295.228" y="613.157" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">1</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="298.722" y="613.157" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">.</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="300.478" y="613.157" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">0</text>
+ 
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="295.221" y="479.141" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">2</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="298.721" y="479.141" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">.</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="300.478" y="479.141" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">6</text>
+ 
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="295.221" y="495.893" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">2</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="298.721" y="495.893" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">.</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="300.478" y="495.893" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">4</text>
+ 
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="295.221" y="512.645" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">2</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="298.721" y="512.645" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">.</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="300.478" y="512.645" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">2</text>
+ 
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="295.221" y="529.397" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">2</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="298.721" y="529.397" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">.</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="300.478" y="529.397" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">0</text>
+
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="295.228" y="546.149" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">1</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="298.722" y="546.149" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">.</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="300.478" y="546.149" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">8</text>
+
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="295.228" y="562.901" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">1</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="298.722" y="562.901" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">.</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="300.478" y="562.901" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">6</text>
+
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="295.228" y="579.653" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">1</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="298.722" y="579.653" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">.</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="300.478" y="579.653" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">4</text>
+
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="295.228" y="596.405" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">1</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="298.722" y="596.405" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">.</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="300.478" y="596.405" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">2</text>
+
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="295.228" y="613.157" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">1</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="298.722" y="613.157" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">.</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="300.478" y="613.157" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">0</text>
+ </g>
+ 
+ </g>
+ 
+ 
+ 
+ 
+<g opacity="0.3" class="legend.group">
+ 
+ 
+ <g opacity="1.0" title="placebo" class="legend">
+ <g opacity="1.0" class="legend.bar">
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M313.513 585.467 L323.598 585.467 "/>
+ </g>
+ <g opacity="1.0" class="legend.symbol">
+ <path style="fill:#000000;stroke-width:0.5;" d="M319.949 585.467 C319.949 586.237 319.325 586.862 318.555 586.862 C317.787 586.862 317.163 586.237 317.163 585.467 C317.163 584.699 317.787 584.074 318.555 584.074 C319.325 584.074 319.949 584.699 319.949 585.467 "/>
+ </g>
+ <g opacity="1.0" title="placebo" class="legend.text">
+  
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="325.949" y="587.457" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">P</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="329.841" y="587.457" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">l</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="331.514" y="587.457" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">a</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="334.846" y="587.457" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">c</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="337.954" y="587.457" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="341.237" y="587.457" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">b</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="344.926" y="587.457" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">o</text>
+</g>
+ 
+ </g>
+ 
+
+<g opacity="1.0" title="mepolizumab" class="legend"> 
+ <g opacity="1.0" class="legend.bar">
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M313.513 595.785 L323.598 595.785 "/>
+ </g>
+ <g opacity="1.0" title="legend.symbol">
+ <path style="fill:#e38426;stroke-width:0.5;" d="M317.376 594.605 L319.735 594.605 L319.735 596.964 L317.376 596.964 ZL319.735 594.605 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M317.376 594.605 L319.735 594.605 L319.735 596.964 L317.376 596.964 ZL319.735 594.605 L317.376 594.605 "/>
+ </g>
+ <g opacity="1.0" title="mepolizumab" class="legend.text">
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="325.949" y="597.18" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">M</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="332.095" y="597.18" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">e</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="335.378" y="597.18" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">p</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="339.179" y="597.18" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">o</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="342.91" y="597.18" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">l</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="344.583" y="597.18" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">i</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="346.312" y="597.18" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">z</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="349.532" y="597.18" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">u</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="353.319" y="597.18" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">m</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="359.248" y="597.18" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">a</text>
+ <text svgx:fontName="AXYSWV+OTNEJMScalaSansLF" svgx:width="0.0" x="362.58" y="597.18" style="fill:#000000;font-family:Helvetica;font-size:7.0px;font-weight:normal;">b</text>
+ 
+ </g>
+ 
+ </g>
+ </g>
+ 
+ <g opacity="0.9" title="placebo" class="plot">
+ 
+ <g opacity="1.0" class="plot.symbols">
+ <path style="fill:#000000;stroke-width:0.5;" d="M321.349 521.291 C321.349 522.059 320.725 522.684 319.954 522.684 C319.187 522.684 318.563 522.059 318.563 521.291 C318.563 520.523 319.187 519.898 319.954 519.898 C320.725 519.898 321.349 520.523 321.349 521.291 "/>
+ <path style="fill:#000000;stroke-width:0.5;" d="M329.625 527.729 C329.625 528.499 329.001 529.124 328.231 529.124 C327.463 529.124 326.839 528.499 326.839 527.729 C326.839 526.961 327.463 526.336 328.231 526.336 C329.001 526.336 329.625 526.961 329.625 527.729 "/>
+ <path style="fill:#000000;stroke-width:0.5;" d="M337.596 522.211 C337.596 522.981 336.973 523.606 336.202 523.606 C335.435 523.606 334.81 522.981 334.81 522.211 C334.81 521.443 335.435 520.818 336.202 520.818 C336.973 520.818 337.596 521.443 337.596 522.211 "/>
+ <path style="fill:#000000;stroke-width:0.5;" d="M345.875 505.348 C345.875 506.118 345.251 506.743 344.481 506.743 C343.713 506.743 343.089 506.118 343.089 505.348 C343.089 504.58 343.713 503.955 344.481 503.955 C345.251 503.955 345.875 504.58 345.875 505.348 "/>
+ <path style="fill:#000000;stroke-width:0.5;" d="M353.845 519.45 C353.845 520.22 353.221 520.845 352.451 520.845 C351.683 520.845 351.059 520.22 351.059 519.45 C351.059 518.682 351.683 518.057 352.451 518.057 C353.221 518.057 353.845 518.682 353.845 519.45 "/>
+ <path style="fill:#000000;stroke-width:0.5;" d="M362.123 529.568 C362.123 530.338 361.499 530.963 360.729 530.963 C359.961 530.963 359.337 530.338 359.337 529.568 C359.337 528.8 359.961 528.175 360.729 528.175 C361.499 528.175 362.123 528.8 362.123 529.568 "/>
+ <path style="fill:#000000;stroke-width:0.5;" d="M370.095 528.341 C370.095 529.111 369.471 529.736 368.701 529.736 C367.933 529.736 367.309 529.111 367.309 528.341 C367.309 527.573 367.933 526.948 368.701 526.948 C369.471 526.948 370.095 527.573 370.095 528.341 "/>
+ <path style="fill:#000000;stroke-width:0.5;" d="M378.372 525.889 C378.372 526.659 377.748 527.284 376.978 527.284 C376.21 527.284 375.586 526.659 375.586 525.889 C375.586 525.121 376.21 524.496 376.978 524.496 C377.748 524.496 378.372 525.121 378.372 525.889 "/>
+ <path style="fill:#000000;stroke-width:0.5;" d="M386.344 517.917 C386.344 518.688 385.72 519.313 384.95 519.313 C384.182 519.313 383.558 518.688 383.558 517.917 C383.558 517.149 384.182 516.524 384.95 516.524 C385.72 516.524 386.344 517.149 386.344 517.917 "/>
+ <path style="fill:#000000;stroke-width:0.5;" d="M394.62 517.919 C394.62 518.688 393.996 519.313 393.227 519.313 C392.458 519.313 391.834 518.688 391.834 517.919 C391.834 517.15 392.458 516.525 393.227 516.525 C393.996 516.525 394.62 517.15 394.62 517.919 "/>
+ <path style="fill:#000000;stroke-width:0.5;" d="M402.595 522.517 C402.595 523.287 401.972 523.912 401.202 523.912 C400.433 523.912 399.81 523.287 399.81 522.517 C399.81 521.749 400.433 521.124 401.202 521.124 C401.972 521.124 402.595 521.749 402.595 522.517 "/>
+ <path style="fill:#000000;stroke-width:0.5;" d="M410.87 526.503 C410.87 527.273 410.247 527.898 409.477 527.898 C408.708 527.898 408.085 527.273 408.085 526.503 C408.085 525.734 408.708 525.109 409.477 525.109 C410.247 525.109 410.87 525.734 410.87 526.503 "/>
+ <path style="fill:#000000;stroke-width:0.5;" d="M418.843 530.18 C418.843 530.95 418.22 531.575 417.45 531.575 C416.681 531.575 416.058 530.95 416.058 530.18 C416.058 529.412 416.681 528.787 417.45 528.787 C418.22 528.787 418.843 529.412 418.843 530.18 "/>
+ <path style="fill:#000000;stroke-width:0.5;" d="M427.122 527.729 C427.122 528.499 426.499 529.124 425.729 529.124 C424.96 529.124 424.337 528.499 424.337 527.729 C424.337 526.961 424.96 526.336 425.729 526.336 C426.499 526.336 427.122 526.961 427.122 527.729 "/>
+ <path style="fill:#000000;stroke-width:0.5;" d="M435.092 525.583 C435.092 526.354 434.469 526.979 433.699 526.979 C432.93 526.979 432.307 526.354 432.307 525.583 C432.307 524.815 432.93 524.19 433.699 524.19 C434.469 524.19 435.092 524.815 435.092 525.583 "/>
+ <path style="fill:#000000;stroke-width:0.5;" d="M443.369 524.663 C443.369 525.433 442.746 526.058 441.976 526.058 C441.207 526.058 440.584 525.433 440.584 524.663 C440.584 523.895 441.207 523.27 441.976 523.27 C442.746 523.27 443.369 523.895 443.369 524.663 "/>
+ <path style="fill:#000000;stroke-width:0.5;" d="M451.339 523.743 C451.339 524.513 450.716 525.138 449.946 525.138 C449.177 525.138 448.554 524.513 448.554 523.743 C448.554 522.975 449.177 522.35 449.946 522.35 C450.716 522.35 451.339 522.975 451.339 523.743 "/>
+ <path style="fill:#000000;stroke-width:0.5;" d="M459.617 539.072 C459.617 539.842 458.994 540.467 458.224 540.467 C457.455 540.467 456.832 539.842 456.832 539.072 C456.832 538.304 457.455 537.679 458.224 537.679 C458.994 537.679 459.617 538.304 459.617 539.072 "/>
+ <path style="fill:#000000;stroke-width:0.5;" d="M467.592 529.875 C467.592 530.644 466.969 531.269 466.199 531.269 C465.43 531.269 464.807 530.644 464.807 529.875 C464.807 529.107 465.43 528.482 466.199 528.482 C466.969 528.482 467.592 529.107 467.592 529.875 "/>
+ <path style="fill:#000000;stroke-width:0.5;" d="M475.867 527.729 C475.867 528.499 475.244 529.124 474.474 529.124 C473.705 529.124 473.082 528.499 473.082 527.729 C473.082 526.961 473.705 526.336 474.474 526.336 C475.244 526.336 475.867 526.961 475.867 527.729 "/>
+ <path style="fill:#000000;stroke-width:0.5;" d="M483.839 519.144 C483.839 519.914 483.216 520.539 482.446 520.539 C481.677 520.539 481.054 519.914 481.054 519.144 C481.054 518.376 481.677 517.751 482.446 517.751 C483.216 517.751 483.839 518.376 483.839 519.144 "/>
+ <path style="fill:#000000;stroke-width:0.5;" d="M492.116 538.766 C492.116 539.536 491.493 540.161 490.723 540.161 C489.954 540.161 489.331 539.536 489.331 538.766 C489.331 537.998 489.954 537.373 490.723 537.373 C491.493 537.373 492.116 537.998 492.116 538.766 "/>
+ <path style="fill:#000000;stroke-width:0.5;" d="M500.087 530.565 C500.087 531.335 499.464 531.96 498.694 531.96 C497.925 531.96 497.302 531.335 497.302 530.565 C497.302 529.797 497.925 529.172 498.694 529.172 C499.464 529.172 500.087 529.797 500.087 530.565 "/>
+ <path style="fill:#000000;stroke-width:0.5;" d="M508.058 536.313 C508.058 537.083 507.435 537.708 506.665 537.708 C505.896 537.708 505.273 537.083 505.273 536.313 C505.273 535.545 505.896 534.92 506.665 534.92 C507.435 534.92 508.058 535.545 508.058 536.313 "/>
+ <path style="fill:#000000;stroke-width:10.5;" d="M516.337 528.956 C516.337 529.726 515.714 530.351 514.943 530.351 C514.174 530.351 513.552 529.726 513.552 528.956 C513.552 528.188 514.174 527.563 514.943 527.563 C515.714 527.563 516.337 528.188 516.337 528.956 "/>
+ </g>
+ 
+ <g opacity="0.3" title="placebo" class="plot.errorbar.y.tip">
+ 
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M327.312 540.607 L329.152 540.607 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M335.284 537.234 L337.43 537.234 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M343.562 523.434 L345.402 523.434 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M351.533 535.086 L353.679 535.086 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M359.81 546.737 L361.65 546.737 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M367.782 547.044 L369.928 547.044 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M376.059 543.979 L377.899 543.979 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M384.031 536.62 L386.177 536.62 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M392.309 536.927 L394.147 536.927 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M400.281 543.059 L402.428 543.059 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M408.254 547.351 L410.399 547.351 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M416.53 550.11 L418.369 550.11 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M424.5 547.963 L426.647 547.963 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M432.779 545.819 L434.617 545.819 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M440.75 545.206 L442.896 545.206 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M449.028 546.432 L450.866 546.432 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M456.998 561.453 L459.144 561.453 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M465.278 552.255 L467.115 552.255 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M473.249 548.27 L475.394 548.27 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M481.527 540.3 L483.367 540.3 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M489.497 557.468 L491.644 557.468 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M497.774 550.417 L499.614 550.417 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M505.747 556.549 L507.891 556.549 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M514.023 550.11 L515.864 550.11 "/>
+ </g>
+
+ <g opacity="1.0" title="placebo" class="plot.errorbar.y">
+ 
+ 
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M328.233 540.607 L328.233 514.852 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M336.203 537.234 L336.203 507.19 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M344.482 523.434 L344.482 487.263 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M352.452 535.086 L352.452 503.816 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M360.731 546.737 L360.731 512.094 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M368.702 547.044 L368.702 509.642 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M376.978 543.979 L376.978 507.801 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M384.95 536.62 L384.95 499.218 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M393.227 536.927 L393.227 498.91 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M401.202 543.059 L401.202 501.976 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M409.48 547.351 L409.48 505.656 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M417.45 550.11 L417.45 509.948 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M425.729 547.963 L425.729 507.495 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M433.699 545.819 L433.699 505.349 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M441.974 545.206 L441.974 503.817 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M449.948 546.432 L449.948 501.057 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M458.224 561.453 L458.224 516.693 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M466.199 552.255 L466.199 507.801 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M474.475 548.27 L474.475 507.19 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M482.446 540.3 L482.446 497.685 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M490.723 557.468 L490.723 520.065 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M498.697 550.417 L498.697 510.561 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M506.667 556.549 L506.667 516.078 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M514.943 550.11 L514.943 508.108 "/>
+ 
+ </g>
+
+ <g opacity="0.3" title="placebo" class="plot.errorbar.y.tip">
+ 
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M327.312 514.852 L329.152 514.852 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M335.284 507.19 L337.43 507.19 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M343.562 487.263 L345.402 487.263 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M351.533 503.817 L353.679 503.817 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M359.81 512.094 L361.65 512.094 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M367.782 509.642 L369.928 509.642 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M376.059 507.801 L377.899 507.801 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M384.031 499.217 L386.177 499.217 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M392.309 498.911 L394.147 498.911 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M400.281 501.976 L402.428 501.976 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M408.254 505.656 L410.399 505.656 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M416.53 509.948 L418.369 509.948 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M424.5 507.496 L426.647 507.496 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M432.779 505.349 L434.617 505.349 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M440.75 503.817 L442.896 503.817 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M449.028 501.057 L450.866 501.057 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M456.998 516.693 L459.144 516.693 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M465.278 507.801 L467.115 507.801 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M473.249 507.19 L475.394 507.19 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M481.527 497.685 L483.367 497.685 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M489.497 520.065 L491.644 520.065 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M497.774 510.561 L499.614 510.561 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M505.747 516.08 L507.891 516.08 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.5;" d="M514.023 508.108 L515.864 508.108 "/>
+ 
+ </g>
+
+ <g opacity="0.9" title="placebo" class="plot.polypath">
+ 
+ <path fill="none" style="stroke:#000000;stroke-width:0.75;" d="M319.955 521.292 L328.233 527.729 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.75;" d="M328.233 527.729 L336.204 522.208 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.75;" d="M336.203 522.208 L344.482 505.35 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.75;" d="M344.482 505.349 L352.452 519.451 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.75;" d="M352.452 519.451 L360.731 529.569 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.75;" d="M360.731 529.569 L368.701 528.342 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.75;" d="M368.702 528.342 L376.979 525.888 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.75;" d="M376.978 525.888 L384.95 517.918 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.75;" d="M384.95 517.919 L393.227 517.919 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.75;" d="M393.227 517.919 L401.202 522.518 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.75;" d="M401.202 522.518 L409.48 526.503 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.75;" d="M409.48 526.503 L417.45 530.181 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.75;" d="M417.45 530.181 L425.729 527.729 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.75;" d="M425.729 527.729 L433.699 525.583 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.75;" d="M433.699 525.583 L441.974 524.663 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.75;" d="M441.974 524.663 L449.948 523.744 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.75;" d="M449.948 523.744 L458.224 539.075 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.75;" d="M458.224 539.075 L466.199 529.876 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.75;" d="M466.199 529.875 L474.475 527.729 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.75;" d="M474.475 527.729 L482.446 519.145 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.75;" d="M482.446 519.145 L490.722 538.768 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.75;" d="M490.723 538.768 L498.698 530.489 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.75;" d="M498.697 530.489 L506.667 536.315 "/>
+ <path fill="none" style="stroke:#000000;stroke-width:0.75;" d="M506.667 536.315 L514.943 528.956 "/>
+ </g>
+ 
+ </g>
+ 
+<!-- ================ MEPOLIZUMAB ================= -->
+ 
+ <g opacity="0.3" title="mepolizumab" class="plot">
+ <g opacity="0.3" title="mepolizumab" class="plot.errorbar.y.tip">
+ 
+ 
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M330.073 555.017 L331.912 555.017 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M338.042 565.747 L340.189 565.747 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M346.015 569.731 L348.161 569.731 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M354.292 576.17 L356.131 576.17 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M362.263 583.529 L364.409 583.529 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M370.54 583.836 L372.38 583.836 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M378.512 582.914 L380.658 582.914 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M386.79 581.382 L388.629 581.382 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M394.762 587.207 L396.908 587.207 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M403.041 578.929 L404.88 578.929 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M411.011 578.929 L413.157 578.929 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M419.289 574.944 L421.129 574.944 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M427.263 575.863 L429.408 575.863 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M435.54 583.836 L437.378 583.836 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M443.51 599.163 L445.655 599.163 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M451.785 588.74 L453.625 588.74 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M459.758 591.5 L461.904 591.5 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M468.036 594.874 L469.876 594.874 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M476.008 592.725 L478.154 592.725 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M484.287 582.607 L486.125 582.607 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M492.259 592.725 L494.403 592.725 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M500.536 599.468 L502.374 599.468 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M508.505 594.565 L510.652 594.565 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M516.783 593.337 L518.624 593.337 "/>
+ </g>
+
+ <g opacity="1.0" title="mepolizumab" class="plot.errorbar.y">
+ 
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M330.993 555.017 L330.993 529.875 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M338.964 565.747 L338.964 536.009 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M347.242 569.731 L347.242 533.553 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M355.212 576.17 L355.212 545.205 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M363.49 583.529 L363.49 549.498 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M371.46 583.836 L371.46 546.737 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M379.738 582.914 L379.738 547.659 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M387.71 581.382 L387.71 544.591 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M395.986 587.207 L395.986 549.805 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M403.961 578.929 L403.961 538.155 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M412.238 578.929 L412.238 538.155 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M420.211 574.944 L420.211 535.394 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M428.486 575.863 L428.486 536.009 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M436.458 583.836 L436.458 543.979 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M444.431 599.163 L444.431 558.388 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M452.708 588.74 L452.708 543.979 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M460.677 591.5 L460.677 547.352 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M468.957 594.874 L468.957 551.031 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M476.928 592.725 L476.928 552.255 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M485.206 582.607 L485.206 540.607 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M493.177 592.725 L493.177 555.628 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M501.455 599.468 L501.455 560.228 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M509.425 594.565 L509.425 554.711 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M517.703 593.337 L517.703 551.947 "/>
+ </g>
+
+ <g opacity="0.3" title="mepolizumab" class="plot.errorbar.y.tip">
+ 
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M330.073 529.875 L331.912 529.875 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M338.042 536.008 L340.189 536.008 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M346.015 533.553 L348.161 533.553 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M354.292 545.206 L356.131 545.206 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M362.263 549.498 L364.409 549.498 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M370.54 546.737 L372.38 546.737 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M378.512 547.659 L380.658 547.659 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M386.79 544.591 L388.629 544.591 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M394.762 549.804 L396.908 549.804 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M403.041 538.155 L404.88 538.155 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M411.011 538.155 L413.157 538.155 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M419.289 535.394 L421.129 535.394 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M427.263 536.008 L429.408 536.008 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M435.54 543.979 L437.378 543.979 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M443.51 558.387 L445.655 558.387 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M451.785 543.979 L453.625 543.979 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M459.758 547.351 L461.904 547.351 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M468.036 551.031 L469.876 551.031 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M476.008 552.255 L478.154 552.255 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M484.287 540.607 L486.125 540.607 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M492.259 555.628 L494.403 555.628 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M500.536 560.228 L502.374 560.228 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M508.505 554.711 L510.652 554.711 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M516.783 551.948 L518.624 551.948 "/>
+ </g>
+ 
+ <g opacity="1.0" title="mepolizumab" class="symbols">
+ 
+ <path style="fill:#e38426;stroke-width:0.5;" d="M321.795 520.373 L323.634 520.373 L323.634 522.208 L321.795 522.208 ZL323.634 520.373 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M321.795 520.373 L323.634 520.373 L323.634 522.208 L321.795 522.208 ZL323.634 520.373 L321.795 520.373 "/>
+ <path style="fill:#e38426;stroke-width:0.5;" d="M330.073 541.526 L331.912 541.526 L331.912 543.365 L330.073 543.365 ZL331.912 541.526 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M330.073 541.526 L331.912 541.526 L331.912 543.365 L330.073 543.365 ZL331.912 541.526 L330.073 541.526 "/>
+ <path style="fill:#e38426;stroke-width:0.5;" d="M338.042 550.109 L339.883 550.109 L339.883 551.947 L338.042 551.947 ZL339.884 550.109 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M338.042 550.109 L339.883 550.109 L339.883 551.947 L338.042 551.947 ZL339.884 550.109 L338.042 550.109 "/>
+ <path style="fill:#e38426;stroke-width:0.5;" d="M346.321 550.723 L348.16 550.723 L348.16 552.562 L346.321 552.562 ZL348.16 550.723 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M346.321 550.723 L348.16 550.723 L348.16 552.562 L346.321 552.562 ZL348.16 550.723 L346.321 550.723 "/>
+ <path style="fill:#e38426;stroke-width:0.5;" d="M354.292 559.612 L356.131 559.612 L356.131 561.452 L354.292 561.452 ZL356.132 559.612 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M354.292 559.612 L356.131 559.612 L356.131 561.452 L354.292 561.452 ZL356.132 559.612 L354.292 559.612 "/>
+ <path style="fill:#e38426;stroke-width:0.5;" d="M362.57 565.44 L364.41 565.44 L364.41 567.279 L362.57 567.279 ZL364.41 565.44 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M362.57 565.44 L364.41 565.44 L364.41 567.279 L362.57 567.279 ZL364.41 565.44 L362.57 565.44 "/>
+ <path style="fill:#e38426;stroke-width:0.5;" d="M370.54 564.521 L372.38 564.521 L372.38 566.362 L370.54 566.362 ZL372.381 564.521 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M370.54 564.521 L372.38 564.521 L372.38 566.362 L370.54 566.362 ZL372.381 564.521 L370.54 564.521 "/>
+ <path style="fill:#e38426;stroke-width:0.5;" d="M378.819 564.521 L380.658 564.521 L380.658 566.362 L378.819 566.362 ZL380.658 564.521 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M378.819 564.521 L380.658 564.521 L380.658 566.362 L378.819 566.362 ZL380.658 564.521 L378.819 564.521 "/>
+ <path style="fill:#e38426;stroke-width:0.5;" d="M386.79 562.067 L388.629 562.067 L388.629 563.905 L386.79 563.905 ZL388.63 562.067 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M386.79 562.067 L388.629 562.067 L388.629 563.905 L386.79 563.905 ZL388.63 562.067 L386.79 562.067 "/>
+ <path style="fill:#e38426;stroke-width:0.5;" d="M395.067 567.587 L396.908 567.587 L396.908 569.425 L395.067 569.425 ZL396.908 567.587 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M395.067 567.587 L396.908 567.587 L396.908 569.425 L395.067 569.425 ZL396.908 567.587 L395.067 567.587 "/>
+ <path style="fill:#e38426;stroke-width:0.5;" d="M403.041 557.775 L404.88 557.775 L404.88 559.613 L403.041 559.613 ZL404.88 557.775 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M403.041 557.775 L404.88 557.775 L404.88 559.613 L403.041 559.613 ZL404.88 557.775 L403.041 557.775 "/>
+ <path style="fill:#e38426;stroke-width:0.5;" d="M411.317 557.468 L413.156 557.468 L413.156 559.309 L411.317 559.309 ZL413.156 557.468 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M411.317 557.468 L413.156 557.468 L413.156 559.309 L411.317 559.309 ZL413.156 557.468 L411.317 557.468 "/>
+ <path style="fill:#e38426;stroke-width:0.5;" d="M419.289 554.095 L421.129 554.095 L421.129 555.936 L419.289 555.936 ZL421.129 554.095 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M419.289 554.095 L421.129 554.095 L421.129 555.936 L419.289 555.936 ZL421.129 554.095 L419.289 554.095 "/>
+ <path style="fill:#e38426;stroke-width:0.5;" d="M427.566 555.017 L429.407 555.017 L429.407 556.856 L427.566 556.856 ZL429.407 555.017 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M427.566 555.017 L429.407 555.017 L429.407 556.856 L427.566 556.856 ZL429.407 555.017 L427.566 555.017 "/>
+ <path style="fill:#e38426;stroke-width:0.5;" d="M435.54 562.987 L437.378 562.987 L437.378 564.827 L435.54 564.827 ZL437.378 562.987 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M435.54 562.987 L437.378 562.987 L437.378 564.827 L435.54 564.827 ZL437.378 562.987 L435.54 562.987 "/>
+ <path style="fill:#e38426;stroke-width:0.5;" d="M443.51 577.704 L445.348 577.704 L445.348 579.544 L443.51 579.544 ZL445.347 577.704 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M443.51 577.704 L445.348 577.704 L445.348 579.544 L443.51 579.544 ZL445.347 577.704 L443.51 577.704 "/>
+ <path style="fill:#e38426;stroke-width:0.5;" d="M451.785 565.44 L453.625 565.44 L453.625 567.279 L451.785 567.279 ZL453.625 565.44 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M451.785 565.44 L453.625 565.44 L453.625 567.279 L451.785 567.279 ZL453.625 565.44 L451.785 565.44 "/>
+ <path style="fill:#e38426;stroke-width:0.5;" d="M459.758 568.505 L461.599 568.505 L461.599 570.345 L459.758 570.345 ZL461.598 568.505 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M459.758 568.505 L461.599 568.505 L461.599 570.345 L459.758 570.345 ZL461.598 568.505 L459.758 568.505 "/>
+ <path style="fill:#e38426;stroke-width:0.5;" d="M468.036 571.878 L469.876 571.878 L469.876 573.719 L468.036 573.719 ZL469.876 571.878 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M468.036 571.878 L469.876 571.878 L469.876 573.719 L468.036 573.719 ZL469.876 571.878 L468.036 571.878 "/>
+ <path style="fill:#e38426;stroke-width:0.5;" d="M476.008 571.571 L477.847 571.571 L477.847 573.409 L476.008 573.409 ZL477.847 571.571 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M476.008 571.571 L477.847 571.571 L477.847 573.409 L476.008 573.409 ZL477.847 571.571 L476.008 571.571 "/>
+ <path style="fill:#e38426;stroke-width:0.5;" d="M484.287 560.841 L486.125 560.841 L486.125 562.68 L484.287 562.68 ZL486.125 560.841 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M484.287 560.841 L486.125 560.841 L486.125 562.68 L484.287 562.68 ZL486.125 560.841 L484.287 560.841 "/>
+ <path style="fill:#e38426;stroke-width:0.5;" d="M492.259 573.409 L494.097 573.409 L494.097 575.251 L492.259 575.251 ZL494.097 573.409 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M492.259 573.409 L494.097 573.409 L494.097 575.251 L492.259 575.251 ZL494.097 573.409 L492.259 573.409 "/>
+ <path style="fill:#e38426;stroke-width:0.5;" d="M500.536 578.929 L502.374 578.929 L502.374 580.769 L500.536 580.769 ZL502.374 578.929 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M500.536 578.929 L502.374 578.929 L502.374 580.769 L500.536 580.769 ZL502.374 578.929 L500.536 578.929 "/>
+ <path style="fill:#e38426;stroke-width:0.5;" d="M508.505 573.719 L510.344 573.719 L510.344 575.556 L508.505 575.556 ZL510.344 573.719 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M508.505 573.719 L510.344 573.719 L510.344 575.556 L508.505 575.556 ZL510.344 573.719 L508.505 573.719 "/>
+ <path style="fill:#e38426;stroke-width:0.5;" d="M516.783 571.878 L518.624 571.878 L518.624 573.719 L516.783 573.719 ZL518.624 571.878 Z"/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.5;" d="M516.783 571.878 L518.624 571.878 L518.624 573.719 L516.783 573.719 ZL518.624 571.878 L516.783 571.878 "/>
+ 
+ </g>
+ 
+ <g opacity="1.0" title="mepolizumab" class="plot.polypath">
+ 
+ <path fill="none" style="stroke:#e38426;stroke-width:0.75;" d="M322.714 521.292 L330.993 542.443 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.75;" d="M330.993 542.444 L338.964 551.031 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.75;" d="M338.964 551.031 L347.242 551.643 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.75;" d="M347.242 551.643 L355.212 560.536 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.75;" d="M355.212 560.536 L363.49 566.362 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.75;" d="M363.49 566.362 L371.461 565.44 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.75;" d="M371.46 565.44 L379.738 565.44 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.75;" d="M379.738 565.44 L387.71 562.988 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.75;" d="M387.71 562.988 L395.986 568.506 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.75;" d="M395.986 568.505 L403.961 558.693 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.75;" d="M403.961 558.694 L412.238 558.387 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.75;" d="M412.238 558.387 L420.211 555.017 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.75;" d="M420.211 555.017 L428.486 555.936 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.75;" d="M428.486 555.936 L436.458 563.905 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.75;" d="M436.458 563.905 L444.431 578.623 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.75;" d="M444.431 578.623 L452.708 566.362 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.75;" d="M452.708 566.362 L460.677 569.425 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.75;" d="M460.677 569.425 L468.957 572.798 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.75;" d="M468.957 572.798 L476.929 572.491 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.75;" d="M476.928 572.492 L485.206 561.763 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.75;" d="M485.206 561.762 L493.177 574.331 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.75;" d="M493.177 574.332 L501.455 579.85 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.75;" d="M501.455 579.849 L509.425 574.637 "/>
+ <path fill="none" style="stroke:#e38426;stroke-width:0.75;" d="M509.425 574.637 L517.703 572.798 "/>
+ </g>
+
+</g>
+
+
+</g>
+</svg>

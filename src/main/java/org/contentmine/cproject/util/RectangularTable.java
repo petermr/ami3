@@ -111,7 +111,7 @@ public class RectangularTable {
 
     public final static RectangularTable readCSVTable(InputStream inputStream, boolean useHeader, CSVFormat csvFormat) throws IOException {
     	if (inputStream != null) {
-        	String s = IOUtils.toString(inputStream, Charset.forName("UTF-8"));
+        	String s = IOUtils.toString(inputStream, CMineUtil.UTF8_CHARSET);
         	if (s != null) {
         		StringReader reader = new StringReader(s);
         		return readCSVTable(reader, useHeader, csvFormat);

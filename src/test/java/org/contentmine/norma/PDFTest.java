@@ -4,14 +4,13 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.nio.charset.Charset;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.cproject.files.CTree;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.graphics.html.HtmlElement;
-import org.contentmine.norma.Norma;
 import org.contentmine.norma.input.pdf.PDF2TXTConverter;
 import org.contentmine.norma.input.pdf.PDF2XHTMLConverter;
 import org.junit.Assert;
@@ -122,7 +121,7 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 		PDF2TXTConverter converter = new PDF2TXTConverter();
 		File file0115884 = new File(NormaFixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.pdf");
 		String text = converter.readPDF(new FileInputStream(file0115884), true);
-		FileUtils.write(new File("target/pdf/file0115884.txt"), text, Charset.forName("UTF-8"));
+		FileUtils.write(new File("target/pdf/file0115884.txt"), text, CMineUtil.UTF8_CHARSET);
 	}
 	
 	@Test
@@ -142,7 +141,7 @@ Caused by: java.io.IOException: Error: Header doesn't contain versioninfo
 		converter.setSvgDirectory(new File("target/pdf/0115884/svg"));
 		File file0115884 = new File(NormaFixtures.TEST_PLOSONE_DIR, "journal.pone.0115884/fulltext.pdf");
 		HtmlElement htmlElement = converter.readAndConvertToXHTML(file0115884);
-		FileUtils.write(new File("target/pdf/0115884/fulltext.html"), htmlElement.toXML(), Charset.forName("UTF-8"));
+		FileUtils.write(new File("target/pdf/0115884/fulltext.html"), htmlElement.toXML(), CMineUtil.UTF8_CHARSET);
 	}
 	
 	@Test

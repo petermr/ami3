@@ -19,6 +19,7 @@ import javax.imageio.ImageIO;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.IntRange;
@@ -206,7 +207,7 @@ public class HOCRReader extends InputReader {
 		if (is == null) {
 			throw new IOException("null input stream");
 		}
-		String s = IOUtils.toString(is, "UTF-8");
+		String s = IOUtils.toString(is, CMineUtil.UTF8_CHARSET);
 		clearMaps();
 		readHOCR(HtmlElement.create(XMLUtil.stripDTDAndParse(s)));
 		applyUniversalSubstitutions();

@@ -148,18 +148,20 @@ public class AMIAssertTool extends AbstractAMITool {
 	    }
     }
 
-	protected void processTree() {
+	protected boolean processTree() {
+		boolean processed = true;
 		System.out.println("cTree>> "+cTree.getName());
 		if (SubDirectoryType.pdfimages.equals(subdirectoryType)) {
 			iterateOverPDFImageDirs();
 		} else if (SubDirectoryType.svg.equals(subdirectoryType)) {
-				iterateOverSVGFiles();
+			iterateOverSVGFiles();
 		} else {
 			currentDir = cTree.getDirectory();
 			this.currentFile = new File(currentDir, inputBasename);
 			this.runAssert();
 			
 		}
+		return processed;
 	}
 
 	private void iterateOverPDFImageDirs() {

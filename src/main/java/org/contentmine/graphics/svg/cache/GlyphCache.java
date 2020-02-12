@@ -36,6 +36,10 @@ public class GlyphCache extends AbstractCache{
 		setDefaults();
 	}
 	
+	public GlyphCache() {
+		this(new ComponentCache());
+	}
+
 	public List<? extends SVGElement> getOrCreateElementList() {
 		return getOrCreateGlyphList();
 	}
@@ -67,4 +71,5 @@ public class GlyphCache extends AbstractCache{
 		superClearAll();
 		glyphList = null;
 	}
+	
 }

@@ -37,6 +37,10 @@ public class ImageCache extends AbstractCache{
 		setDefaults();
 	}
 	
+	public ImageCache() {
+		this(new ComponentCache());
+	}
+
 	public List<? extends SVGElement> getOrCreateElementList() {
 		return getOrCreateImageList();
 	}

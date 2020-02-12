@@ -27,7 +27,7 @@ public class AMIGetpapersTest {
 				+ " --query zika"
 				+ " --limit 100"
 			;
-//		if (1 == 1) throw new RuntimeException("Not yet running");
+		if (1 == 1) throw new RuntimeException("Not yet running");
 		
 		new AMIGetpapersTool().runCommands(args);
 	}

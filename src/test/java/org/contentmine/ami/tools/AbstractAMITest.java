@@ -15,17 +15,28 @@ public class AbstractAMITest {
 	public static final String CONTENTMINE = "ami3/src/test/resources/org/contentmine";
 	public static File CMINE = new File(CMDEV, CONTENTMINE);
 	public static File SRC_TEST_AMI = new File(CMINE, "ami");
+	public static File SRC_TEST_GRAPHICS = new File(CMINE, "graphics");
+	public static File SRC_TEST_SVG = new File(SRC_TEST_GRAPHICS, "svg");
+	public static File SRC_TEST_PLOT = new File(SRC_TEST_SVG, "plot");
+	public static File SRC_TEST_TOOLS = new File(SRC_TEST_AMI, "tools");
 	public static File PDF2SVG2 = new File(SRC_TEST_AMI, "pdf2svg2");
 	public static File OIL5 = new File(SRC_TEST_AMI, "oil5/");
-	public static File PROJECTS = new File(_HOME, "projects/");
+	
+	
+	public static File WORKSPACE = new File(_HOME, "workspace/");
+	public static File PROJECTS = WORKSPACE.exists() ? new File(WORKSPACE, "projects/") : new File(_HOME, "projects/");
 	public static File CANADA = new File(PROJECTS, "canada/");
-	public static File CEV = new File(PROJECTS, "CEVOpen/");
+	public static File CEV = new File(PROJECTS, "CEVOpen/").exists() ? new File(PROJECTS, "CEVOpen/") : new File(PROJECTS, "CEV/");
 	public static File CEV_SEARCH = new File(CEV, "searches/");
+	public static File CLIMATE = new File(PROJECTS, "climate/");
+	public static File CLIM_SEARCH = new File(CLIMATE, "searches/");
+	public static File CLIMATE200 = new File(CLIMATE, "climate200");
+	public static File CLIMATE200SECTIONS = new File(CLIMATE, "climate200sections");
+	public static File CMIP200 = new File(CLIM_SEARCH, "cmip200/");
+	
 	public static File OIL186 = new File(CEV_SEARCH, "oil186/");
 	public static File OIL1000 = new File(CEV_SEARCH, "oil1000/");
 	public static CProject OIL186_PROJ = new CProject(OIL186);
-	public static File CLIM_SEARCH = new File(PROJECTS, "climate/searches/");
-	public static File CMIP200 = new File(CLIM_SEARCH, "cmip200/");
 
 	
 	@Test

@@ -42,6 +42,8 @@ public class AMIDebugParameters {
 	public boolean showTransGrp = true;
 
 	public boolean debugGraphics = true;
+	public boolean checkViewBox = true;
+	public boolean maxPrimitives = true;
 
 	public AMIDebugParameters() {
 		
@@ -73,8 +75,43 @@ public class AMIDebugParameters {
 		parameters.showShadingFill = true;
 		parameters.showStrokePath = true;
 		parameters.showTransGrp = true;
+		parameters.checkViewBox = true;
+		parameters.maxPrimitives = true;
 		
 		parameters.debugGraphics = true;
+		return parameters;
+	}
+	
+	public static AMIDebugParameters getBriefParameters() {
+		AMIDebugParameters parameters = new AMIDebugParameters();
+		parameters.showAnnotation = false;
+		parameters.showAppendRectangle = /*false*/ false;
+		parameters.showBeginMarked = false;
+		parameters.showBeginText = false;
+		parameters.showChar = false;
+		parameters.showClip = /*false*/ false;
+		parameters.showClosePath = false;
+		parameters.showColor = false;
+		parameters.showCurveTo = false;
+		parameters.showCurrentPoint = false;
+		parameters.showDrawImage = false;
+		parameters.showEndMarked = false;
+		parameters.showEndPath = false;
+		parameters.showEndText = false;
+		parameters.showFillPath = false;
+		parameters.showFillAndStrokePath = false;
+		parameters.showFontGlyph = false;
+		parameters.showForm  = false;
+		parameters.showLineTo = false;
+		parameters.showMoveTo = false;
+		parameters.showPaint = false;
+		parameters.showShadingFill = false;
+		parameters.showStrokePath = false;
+		parameters.showTransGrp = false;
+		parameters.checkViewBox = false;
+		parameters.maxPrimitives = false;
+		
+		parameters.debugGraphics = false;
 		return parameters;
 	}
 	

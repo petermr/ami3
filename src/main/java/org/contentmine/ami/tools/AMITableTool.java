@@ -94,7 +94,7 @@ public class AMITableTool extends AbstractAMITool {
 	  @Option(names = {"--tabledir"},
 		arity = "1",
 	    description = "table directoryName (relative to CTree)")
-	private String tableDirName = null;
+	private String tableDirName = "sections/tables";
 
 	  @Option(names = {"--template"},
 		arity = "1",
@@ -195,20 +195,27 @@ public class AMITableTool extends AbstractAMITool {
 	}
 
 
-	public void processTree() {
+	public boolean processTree() {
+		processedTree = true;
 		boolean debug = false;
 //		if (!CMFileUtil.shouldMake(forceMake, sectionsDir, debug, sectionsDir)) {
 //			if (debug) LOG.debug("skipped: "+sectionsDir);
 //			return;
 //		}
+		if (tableDirName == null) {
+			processedTree = false;
+			throw new RuntimeException("Null tableDirName");
+		}
 		tableDir = new File(cTree.getDirectory(), tableDirName);
 		if (!tableDir.exists()) {
 			System.err.println("table dir does not exist: "+tableDir);
-			return;
+			processedTree = false;
+			return processedTree;
 		}
 		if (columnTypes) {
 			writeSubTablesForTreeAndUpdateMultisets();
 		}
+		return processedTree;
 	}
 
 	private void writeSubTablesForTreeAndUpdateMultisets() {
@@ -355,10 +362,11 @@ public class AMITableTool extends AbstractAMITool {
 	}
 
 	private void summarize() {
-		if (multisetList.size() > 0) {
+		if (multisetList != null && multisetList.size() > 0) {
 			createAndOutputMultisets();
 		}
 		XMLUtil.writeQuietly(templateSummaryHtml, new File(cProjectDirectory, "__tables/"+templateName+"."+CTree.HTML), 1);
+		
 	}
 
 	private void createAndOutputMultisets() {

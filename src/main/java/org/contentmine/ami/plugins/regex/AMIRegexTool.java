@@ -90,13 +90,16 @@ public class AMIRegexTool extends AbstractAMITool {
 	    }
     }
 
-	public void processTree() {
+	public boolean processTree() {
+		
 		System.out.println("cTree: "+cTree.getName());
-		runRegex();
+		processedTree = runRegex();
+		return processedTree;
 		
 	}
 
-	private void runRegex() {
+	private boolean runRegex() {
+		processedTree = true;
 	    LOG.debug("running regex");
 	    String regexS = Util.createWhitespaceSeparatedTokens(regexList);
 //	    System.out.println(">ss>"+ss);
@@ -111,6 +114,7 @@ public class AMIRegexTool extends AbstractAMITool {
 		AMIPlugin regexPlugin = new RegexPlugin(args);
 		RegexArgProcessor argProcessor = (RegexArgProcessor) regexPlugin.getArgProcessor();
 		argProcessor.runAndOutput();
+		return processedTree;
 	}
 
 }

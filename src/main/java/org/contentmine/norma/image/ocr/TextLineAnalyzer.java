@@ -13,6 +13,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.AMIOCRTool;
 import org.contentmine.ami.tools.AbstractAMITool;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.IntArray;
@@ -410,7 +411,7 @@ public class TextLineAnalyzer {
 	public void outputText(File gocrTextFile) {
 		String s = this.toText();
 		try {
-			FileUtils.write(gocrTextFile, s, "UTF-8");
+			FileUtils.write(gocrTextFile, s, CMineUtil.UTF8_CHARSET);
 		} catch (IOException e) {
 			throw new RuntimeException("Cannot write gocr output", e);
 		}

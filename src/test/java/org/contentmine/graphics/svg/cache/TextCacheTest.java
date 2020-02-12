@@ -21,7 +21,7 @@ import org.contentmine.graphics.svg.SVGHTMLFixtures;
 import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.graphics.svg.SVGText;
 import org.contentmine.graphics.svg.fonts.StyleRecord;
-import org.contentmine.graphics.svg.fonts.StyleRecordSet;
+import org.contentmine.graphics.svg.fonts.StyledBoxRecordSet;
 import org.contentmine.graphics.svg.text.SVGTextLine;
 import org.contentmine.graphics.svg.text.SVGTextLineList;
 import org.junit.Assert;
@@ -30,7 +30,7 @@ import org.junit.Test;
 
 import com.google.common.collect.Multimap;
 
-public class TextCacheTest {
+public class TextCacheTest extends AbstractCacheTest {
 
 
 private static final Logger LOG = Logger.getLogger(TextCacheTest.class);
@@ -100,7 +100,7 @@ private static final Logger LOG = Logger.getLogger(TextCacheTest.class);
 		ComponentCache cache = new ComponentCache();
 		cache.readGraphicsComponentsAndMakeCaches(svgFile);
 		TextCache textCache = cache.getOrCreateTextCache();
-		StyleRecordSet styleRecordSet = textCache.getOrCreateHorizontalStyleRecordSet();
+		StyledBoxRecordSet styleRecordSet = textCache.getOrCreateHorizontalStyleRecordSet();
 		Assert.assertEquals(2, styleRecordSet.size());
 		Multimap<Double, StyleRecord> styleRecordByFontSize = styleRecordSet.getStyleRecordByFontSize();
 		Assert.assertEquals("sizes", 2, styleRecordByFontSize.size());
@@ -113,7 +113,7 @@ private static final Logger LOG = Logger.getLogger(TextCacheTest.class);
 		cache.readGraphicsComponentsAndMakeCaches(svgFile);
 		TextCache textCache = cache.getOrCreateTextCache();
 		// assume that y-coords will be the most important structure
-		StyleRecordSet horizontalStyleRecordSet =
+		StyledBoxRecordSet horizontalStyleRecordSet =
 				textCache.getOrCreateHorizontalStyleRecordSet();
 		Double largestFont = horizontalStyleRecordSet.getLargestFontSize();
 		Assert.assertNotNull("largest font not null", largestFont);
@@ -184,7 +184,7 @@ private static final Logger LOG = Logger.getLogger(TextCacheTest.class);
 				
 			}
 		}
-		StyleRecordSet horizontalStyleRecordSet =
+		StyledBoxRecordSet horizontalStyleRecordSet =
 				textCache.getOrCreateHorizontalStyleRecordSet();
 		Double largestFont = horizontalStyleRecordSet.getLargestFontSize();
 		List<SVGTextLine> textLineList0 = textCache.getTextLinesForFontSize(largestFont);
@@ -370,7 +370,19 @@ private static final Logger LOG = Logger.getLogger(TextCacheTest.class);
 
 	}
 
-	
+	/** first step towards creating components by expanding local components
+	 * 
+	 */
+	@Test
+	public void testPage() {
+		String root = "fullPageNestedPanels";
+		File pageFile = new File(CACHE_TEST, root+".svg");
+		SVGElement svgElement = SVGElement.readAndCreateSVG(pageFile);
+		boolean addBBox = true;
+		List<SVGText> textList = TextCache.createTextCacheAndDisplay(CACHE_TEST, root+".text.svg", svgElement, addBBox);
+		Assert.assertEquals("texts",  489, textList.size());
+	}
+
 
 
 }

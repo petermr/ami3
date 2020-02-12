@@ -3,7 +3,6 @@ package org.contentmine.cproject.files;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -11,8 +10,8 @@ import java.util.List;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.contentmine.cproject.args.ArgumentOption;
 import org.contentmine.cproject.args.DefaultArgProcessor;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
@@ -94,7 +93,7 @@ public class ContentProcessor {
 
 	public void writeResults(String resultsFileName, String results) throws Exception {
 		File resultsFile = new File(cmTree.getDirectory(), resultsFileName);
-		FileUtils.writeStringToFile(resultsFile, results, Charset.forName("UTF-8"));
+		FileUtils.writeStringToFile(resultsFile, results, CMineUtil.UTF8_CHARSET);
 	}
 
 	public void writeResults(File resultsFile, Element resultsXML) {

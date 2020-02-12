@@ -10,6 +10,7 @@ import java.util.Map;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.cproject.util.RectTabColumn;
 import org.contentmine.cproject.util.RectangularTable;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -294,7 +295,7 @@ public class CMJsonDictionary {
 		for (File dictionary : dictionaries) {
 			CMJsonDictionary cmJsonDictionary;
 			try {
-				cmJsonDictionary = CMJsonDictionary.readJsonDictionary(FileUtils.readFileToString(dictionary, Charset.forName("UTF-8")));
+				cmJsonDictionary = CMJsonDictionary.readJsonDictionary(FileUtils.readFileToString(dictionary, CMineUtil.UTF8_CHARSET));
 			} catch (IOException e) {
 				throw new RuntimeException("Cannot read dictionary "+dictionary, e);
 			}
@@ -313,7 +314,7 @@ public class CMJsonDictionary {
 		File[] dictionaries = jsonDir.listFiles();
 		RectangularTable mapping = RectangularTable.readCSVTable(new File(dictionaryDir, "mixnmatch/2016-09-09.tsv"), true);
 		for (File dictionary : dictionaries) {
-			CMJsonDictionary cmJsonDictionary = CMJsonDictionary.readJsonDictionary(FileUtils.readFileToString(dictionary, Charset.forName("UTF-8")));
+			CMJsonDictionary cmJsonDictionary = CMJsonDictionary.readJsonDictionary(FileUtils.readFileToString(dictionary, CMineUtil.UTF8_CHARSET));
 			cmJsonDictionary.addMixMatchIds(mapping);
 			File newDictionaryFile = new File(new File(dictionaryDir, "test"), dictionary.getName());
 			Gson gson = new GsonBuilder().setPrettyPrinting().create();

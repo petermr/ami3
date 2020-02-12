@@ -5,7 +5,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,9 +15,8 @@ import org.apache.log4j.Logger;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.metadata.AbstractMetadata;
-import org.contentmine.cproject.metadata.MetadataEntryOLD;
 import org.contentmine.cproject.metadata.MetadataReader;
-import org.contentmine.cproject.metadata.epmc.EpmcMD;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.cproject.util.CellCalculator;
 import org.contentmine.cproject.util.CellRenderer;
 import org.contentmine.cproject.util.DataTablesTool;
@@ -100,7 +98,7 @@ public class EPMCConverter implements CellCalculator, MetadataReader {
 			throw new RuntimeException("No EMPCJson file to convert");
 		}
 		
-		String resultsJsonString = IOUtils.toString(jsonInputStream, "UTF-8");
+		String resultsJsonString = IOUtils.toString(jsonInputStream, CMineUtil.UTF8_CHARSET);
 	    JsonParser parser = new JsonParser();
 	    JsonElement jsonElement = parser.parse(resultsJsonString);
 		return jsonElement;
@@ -122,7 +120,7 @@ public class EPMCConverter implements CellCalculator, MetadataReader {
 			entry = stripOneElementArrays(entry);
 			try {
 				DefaultArgProcessor.CM_LOG.debug("wrote: "+entryFile);
-				FileUtils.writeStringToFile(entryFile, entry.toString(), Charset.forName("UTF-8"));
+				FileUtils.writeStringToFile(entryFile, entry.toString(), CMineUtil.UTF8_CHARSET);
 			} catch (IOException e) {
 				throw new RuntimeException("Cannot write "+entryFile);
 			}

@@ -31,6 +31,7 @@ public class PathCache extends AbstractCache{
 
 	private static final String ID_PREFIX = "p";
 	private static final Logger LOG = Logger.getLogger(PathCache.class);
+	private static final int MAX_TOTAL_DSTRING = 1000000; // characters in DString
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
@@ -64,19 +65,46 @@ public class PathCache extends AbstractCache{
 	 * @param svgElement
 	 */
 	public void extractPaths(AbstractCMElement svgElement) {
+		Level level = LOG.getLevel();
+//		LOG.setLevel(Level.TRACE);
+		int factor = 1 /* 1000 */;
 		long millis = System.currentTimeMillis();
 		this.originalPathList = SVGPath.extractPaths(svgElement);
+		if (hasManyPaths()) {
+			System.out.print("many paths paths: "+originalPathList.size()+" ");
+			int totalDStringLength = 0;
+			for (SVGPath path : originalPathList) {
+				totalDStringLength += path.getDString().length();
+			}
+			if (totalDStringLength > MAX_TOTAL_DSTRING) {
+				System.err.println( " too many SVG objects: "+totalDStringLength+" ");
+				LOG.setLevel(level);
+				currentPathList = new ArrayList<>();
+				return;
+			}
+		}
+		LOG.trace("extract: "+(System.currentTimeMillis() - millis)/factor);
 		SVGPath.addSignatures(originalPathList);
+		LOG.trace("sigs: "+(System.currentTimeMillis() - millis)/factor);
 		addIDs();
+		LOG.trace("ids: "+(System.currentTimeMillis() - millis)/factor);
 		positiveBoxPathList = new ArrayList<SVGPath>(originalPathList);
 		SVGElement.removeElementsOutsideBox(positiveBoxPathList, positiveXBox);
+		LOG.trace("Paths time OUTSIDE: "+(System.currentTimeMillis() - millis)/factor);
 		nonNegativePathList = SVGPath.removePathsWithNegativeY(positiveBoxPathList);
+		LOG.trace("Paths time negY: "+(System.currentTimeMillis() - millis)/factor);
 		trimmedShadowedPathList = SVGPath.removeShadowedPaths(nonNegativePathList);
 		
 		currentPathList = originalPathList;
 		currentPathList = SVGPath.removeShadowedPaths(currentPathList);
-		LOG.trace("Paths time: "+(System.currentTimeMillis() - millis)/1000);
+//		LOG.trace("Paths time shadowed: "+(System.currentTimeMillis() - millis)/factor);
+		LOG.trace("Paths time: "+(System.currentTimeMillis() - millis)/factor);
+		LOG.setLevel(level);
 		return;
+	}
+
+	private boolean hasManyPaths() {
+		return originalPathList.size() > 100;
 	}
 
 	private void addIDs() {
@@ -94,6 +122,10 @@ public class PathCache extends AbstractCache{
 		setDefaults();
 	}
 	
+	public PathCache() {
+		this(new ComponentCache());
+	}
+
 	private void setDefaults() {
 		pathBoxColor = "orange";
 	}

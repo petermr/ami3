@@ -27,8 +27,8 @@ public class RectCache extends AbstractCache {
 	private List<SVGRect> horizontalPanelList;
 	private double DEFAULT_PANEL_EPS;
 	
-	private RectCache() {
-		
+	public RectCache() {
+		this(new ComponentCache());
 	}
 	
 	public RectCache(ComponentCache containingComponentCache) {

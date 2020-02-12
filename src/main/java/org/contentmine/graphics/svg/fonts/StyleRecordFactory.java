@@ -22,18 +22,21 @@ public class StyleRecordFactory {
 		LOG.setLevel(Level.DEBUG);
 	}
 
-	private StyleRecordSet styleRecordSet;
+	private StyledBoxRecordSet styleRecordSet;
 	private boolean normalizeFontNames;
+	private List<SVGText> inputTexts;
+	
 	public StyleRecordFactory() {
 		
 	}
 	
-	public StyleRecordSet createStyleRecordSet(List<SVGText> texts) {
+	public StyledBoxRecordSet createStyleRecordSet(List<SVGText> texts) {
 		styleRecordSet = null;
-		if (texts != null) {
-			styleRecordSet = new StyleRecordSet();
+		this.inputTexts = texts;
+		if (inputTexts != null) {
+			styleRecordSet = new StyledBoxRecordSet();
 			styleRecordSet.setNormalizeFontNames(normalizeFontNames);
-			for (SVGText text : texts) {
+			for (SVGText text : inputTexts) {
 				styleRecordSet.getOrCreateStyleRecord(text);
 			}
 			if (normalizeFontNames) {
@@ -44,14 +47,14 @@ public class StyleRecordFactory {
 		return styleRecordSet;
 	}
 
-	public StyleRecordSet createStyleRecordSet(File svgFile) {
+	public StyledBoxRecordSet createStyleRecordSet(File svgFile) {
 		AbstractCMElement svgElement = SVGElement.readAndCreateSVG(svgFile);
 		return createStyleRecordSet(svgElement);
 	}
 
-	public StyleRecordSet createStyleRecordSet(AbstractCMElement svgElement) {
+	public StyledBoxRecordSet createStyleRecordSet(AbstractCMElement svgElement) {
 		List<SVGText> texts = SVGText.extractSelfAndDescendantTexts(svgElement);
-		StyleRecordSet styleRecordSet = this.createStyleRecordSet(texts);
+		StyledBoxRecordSet styleRecordSet = this.createStyleRecordSet(texts);
 		return styleRecordSet;
 	}
 

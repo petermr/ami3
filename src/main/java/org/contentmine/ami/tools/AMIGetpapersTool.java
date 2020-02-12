@@ -29,11 +29,14 @@ public class AMIGetpapersTool extends AbstractAMITool {
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
-	
-    @Option(names = {"-o", "--output"},
-    		arity = "1",
-            description = "output directory")
-    private List<Integer> output = null;
+
+	/** already in parent
+	 * 
+	 */
+//    @Option(names = {"-o", "--output"},
+//    		arity = "1",
+//            description = "output directory")
+//    private List<Integer> output = null;
 
     @Option(names = {"-q", "--query"},
     		arity = "1",

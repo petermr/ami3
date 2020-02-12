@@ -49,7 +49,7 @@ import org.contentmine.image.pixel.PixelIslandList;
 import org.contentmine.image.pixel.PixelList;
 import org.contentmine.image.pixel.PixelRing;
 import org.contentmine.image.pixel.PixelRingList;
-import org.contentmine.pdf2svg2.CustomPageDrawer;
+import org.contentmine.pdf2svg2.old.CustomPageDrawer;
 import org.junit.Ignore;
 import org.junit.Test;
 

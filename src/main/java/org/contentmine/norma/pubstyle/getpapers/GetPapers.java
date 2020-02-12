@@ -2,7 +2,6 @@ package org.contentmine.norma.pubstyle.getpapers;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,6 +10,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.metadata.AbstractMetadata.Type;
+import org.contentmine.cproject.util.CMineUtil;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -36,7 +36,7 @@ public class GetPapers {
 
 	public void mapJsonArrayToFiles(File getPapersDir, File resultsJsonFile) throws IOException {
 		JsonParser parser = new JsonParser();
-	    String jsonString = FileUtils.readFileToString(resultsJsonFile, Charset.forName("UTF-8"));
+	    String jsonString = FileUtils.readFileToString(resultsJsonFile, CMineUtil.UTF8_CHARSET);
 	    JsonElement jsonElement = parser.parse(jsonString);
 	    JsonArray resultsArray = jsonElement.getAsJsonArray();
 	    
@@ -49,7 +49,7 @@ public class GetPapers {
 	    		if (element != null) {
 		    		CTree cTree = new CTree(file);
 		    		File resultsJson = cTree.getReservedFile( Type.QUICKSCRAPE.getCTreeMDFilename());
-		    		FileUtils.write(resultsJson, element.toString(), Charset.forName("UTF-8"));
+		    		FileUtils.write(resultsJson, element.toString(), CMineUtil.UTF8_CHARSET);
 	    		}
 	    	}
 	    }

@@ -17,54 +17,110 @@ public class SVGPathParser {
 		LOG.setLevel(Level.DEBUG);
 	}
 
-	/** THESE STATICS ARE CODE SMELLS */
-	private /*static*/ Real2 firstPoint;
-	private /*static*/ Real2 currentPoint;
+	private Real2 firstPoint;
+	private Real2 currentPoint;
 	
-	private PathPrimitiveList primitiveList;
+	private PathPrimitiveList pathPrimitiveList;
 	private List<String> tokenList;
 	private String d;
 	private SVGPathPrimitive lastPrimitive;
+	private int pathPrimitiveTime = 0;
+//	private int compactFactor = 0;
+//	private int maxToken = 4000;
 	
 	public PathPrimitiveList parseDString(String d) {
-		long millis = System.currentTimeMillis();
+		long t0 = System.currentTimeMillis();
 		LOG.trace(">d>"+d);
+//		if (d.length() > 5000)System.out.println("<d> "+d.length());
 		this.d = d;
-		primitiveList = new PathPrimitiveList();
+		pathPrimitiveList = new PathPrimitiveList();
 		if (d == null) {
-			return primitiveList;
+			return pathPrimitiveList;
 		}
+		long e0 = System.currentTimeMillis();
+		
 		tokenList = extractTokenList(d);
-		long mm = System.currentTimeMillis();
-		long tt = (mm-millis)/1000;
-		if (tt > 1) {
-			throw new RuntimeException("long: "+tt);
+		
+		long e1 = System.currentTimeMillis();
+		long extract = e1 - e0;
+		if (extract > 1000) {
+			throw new RuntimeException("long extract "+extract);
 		}
+		
 		int itok = 0;
 		firstPoint = null;
 		currentPoint = null;
-		char t = (char)0;
+		long t1 = System.currentTimeMillis();
+		
+//		if (tokenList.size() > maxToken) {
+//			compactFactor = (tokenList.size() / maxToken);
+//			LOG.debug("tokens: "+tokenList.size());
+//		}
+		
+		parseAndAdd(d, itok);
+		while (pathPrimitiveList.size() > 1000) {
+			pathPrimitiveList = pathPrimitiveList.getCompactedList(2);
+			System.out.print("pp: "+pathPrimitiveList.size()+" ");
+		}
+		
+		long tend = System.currentTimeMillis();
+		long parse = tend - t1;
+		if (tend - t0 > 1000) {
+			System.err.println("parse: "+(parse)+"; d "+d.length()+" prims: "+pathPrimitiveList.size()+"/ extract: "+extract);
+		}
+
+		return pathPrimitiveList;
+	}
+
+	private void parseAndAdd(String d, int itok) {
+		char t;
+		int mm = 0;	int ll = 0;	int nl = 0;	int hv = 0;	int cc = 0;	int qq = 0;	int aa = 0;	int kk = 0;
+		long t0 = System.currentTimeMillis();
+		if (tokenList.size()>1000) {
+			System.out.println("tokenList>1000: "+tokenList.size());
+		}
 		while (itok <tokenList.size()) {
 			String token = tokenList.get(itok);
 			t = token.charAt(0);
-			LOG.trace(">t>"+t);
 			itok++;
 			
 			if (false) {
 			} else if (isMove(t)) {
+				long tm0 = System.currentTimeMillis();
 				itok = addMovePrimitives(itok, t);
+				long tm1 = System.currentTimeMillis();
+				mm += (tm1 - tm0);
 			} else if (isLine(t)) {
+				long tl0 = System.currentTimeMillis();
 				itok = addLinePrimitives(itok, t);
+				long tl1 = System.currentTimeMillis();
+				ll += (tl1 - tl0);
+				nl++;
 			} else if (isHorizontal(t) || isVertical(t)) {
+				long thv0 = System.currentTimeMillis();
 				itok = addHorizontalVerticalPrimitives(itok, t);
+				long thv1 = System.currentTimeMillis();
+				hv += (thv1 - thv0);
 			} else if (isCubic(t)) {
+				long tc0 = System.currentTimeMillis();
 				itok = addCubicPrimitives(itok, t);
+				long tc1 = System.currentTimeMillis();
+				cc += (tc1 - tc0);
 			} else if (isQuadratic(t)) {
+				long tq0 = System.currentTimeMillis();
 				itok = addQuadraticPrimitives(itok, t);
+				long tq1 = System.currentTimeMillis();
+				qq += (tq1 - tq0);
 			} else if (isArc(t)) {
+				long ta0 = System.currentTimeMillis();
 				itok = addArcPrimitives(itok, t);
+				long ta1 = System.currentTimeMillis();
+				aa += (ta1 - ta0);
 			} else if (isClose(t)) {
+				long tk0 = System.currentTimeMillis();
 				itok = addClosePrimitive(itok, t);
+				long tk1 = System.currentTimeMillis();
+				kk += (tk1 - tk0);
 			} else {
 				System.out.println();
 				for (int i = Math.max(itok - 10, 0); i < itok; i++) {
@@ -77,16 +133,20 @@ public class SVGPathParser {
 				throw new RuntimeException("unknown or unsupported primitive "+t+" in token "+itok+"("+token+") in "+d);
 			}
 		}
-		mm = System.currentTimeMillis();
-		tt = (mm-millis)/1000;
-		if (tt > 1) {
-			LOG.debug("longParse: "+tt+"; d "+d.length());
-			if (d.length() == 225300) {
-				LOG.debug("stop");
-			}
+		long tend = System.currentTimeMillis();
+		if (false && tend - t0 > 1000) {
+			System.out.println("times: "
+			+" m: "+mm
+			+" l: "+ll+"("+nl+")"
+			+" hv: "+hv
+			+" c: "+cc
+			+" q: "+qq
+			+" a: "+aa
+			+" k: "+kk
+			+" pp.add "+pathPrimitiveTime
+					);
 		}
 
-		return primitiveList;
 	}
 
 	/**
@@ -114,7 +174,7 @@ a (relative)	elliptical arc	(rx ry x-axis-rotation large-arc-flag sweep-flag x y
 				r2 = r2.plus(currentPoint);
 			}
 			SVGPathPrimitive pp = new LinePrimitive(r2);
-			primitiveList.add(pp);
+			pathPrimitiveList.add(pp);
 			lastPrimitive = pp;
 			currentPoint = r2;
 		}
@@ -165,7 +225,7 @@ t (relative)	Shorthand/smooth quadratic Bézier curveto	(x y)+
 				r2a = temp;
 			}
 			SVGPathPrimitive pp = new QuadPrimitive(r2a);
-			primitiveList.add(pp);
+			pathPrimitiveList.add(pp);
 			lastPrimitive = pp;
 			currentPoint = r2a.get(1);
 		}
@@ -220,7 +280,7 @@ s (relative)	shorthand/smooth curveto	(x2 y2 x y)+
 				r2a = temp;
 			}
 			SVGPathPrimitive pp = new CubicPrimitive(r2a);
-			primitiveList.add(pp);
+			pathPrimitiveList.add(pp);
 			lastPrimitive = pp;
 			currentPoint = r2a.get(2);
 		}
@@ -244,11 +304,13 @@ Since the Z and z commands take no parameters, they have an identical effect.	 *
 	 */
 	private int addClosePrimitive(int itok, char t) {
 		checkExistingFirstXY(t);
-		firstPoint = firstPoint.format(3);
-		currentPoint = firstPoint;
-		SVGPathPrimitive pp = new ClosePrimitive(currentPoint);
-		primitiveList.add(pp);
-		lastPrimitive = pp;
+		if (firstPoint != null) {
+			firstPoint = firstPoint.format(3);
+			currentPoint = firstPoint;
+			SVGPathPrimitive pp = new ClosePrimitive(currentPoint);
+			pathPrimitiveList.add(pp);
+			lastPrimitive = pp;
+		}
 		return itok;
 	}
 
@@ -295,7 +357,7 @@ v (relative)	vertical lineto	y+
 				}
 			} 
 			SVGPathPrimitive pp = new LinePrimitive(r2);
-			primitiveList.add(pp);
+			pathPrimitiveList.add(pp);
 			lastPrimitive = pp;
 			currentPoint = r2;
 		}
@@ -319,20 +381,31 @@ v (relative)	vertical lineto	y+	Draws a vertical line from the current point (cp
 	 * @return
 	 */
 	private int addLinePrimitives(int itok, char t) {
+//		System.out.println("tok "+tokenList.size());
+		int ii = 0;
 		while (isCoordinate(tokenList, itok)) {
-			double[] dd = readDoubles(tokenList, 2, itok);
-			Real2 r2 = new Real2(dd[0], dd[1]);
-			itok += 2;
+			Real2 r2 = null;
+			double[] dd;
+			long t0 = System.currentTimeMillis();
+			dd = readDoubles(tokenList, 2, itok);
+			r2 = new Real2(dd[0], dd[1]);
+			long t1 = System.currentTimeMillis();
 			if (isRelative(t)) {
 				checkExistingFirstXY(t);
 				r2 = r2.plus(currentPoint);
 			}
+			long t2 = System.currentTimeMillis();
+			itok += 2;
 			SVGPathPrimitive pp = new LinePrimitive(r2);
-			primitiveList.add(pp);
+			pathPrimitiveList.add(pp);
+			long t3 = System.currentTimeMillis();
+			pathPrimitiveTime += (t3-t2);
 			lastPrimitive = pp;
 			currentPoint = r2;
+			ii++;
 		}
-		LOG.trace(">l>"+primitiveList);
+//		System.out.println(">>"+ii);
+		LOG.trace(">l>"+pathPrimitiveList);
 		return itok;
 	}
 
@@ -360,7 +433,7 @@ treated as relative even though the initial moveto is interpreted as an absolute
 				firstPoint= r2;
 			}
 			SVGPathPrimitive pp = (count == 0) ? new MovePrimitive(r2) : new LinePrimitive(r2);
-			primitiveList.add(pp);
+			pathPrimitiveList.add(pp);
 			lastPrimitive = pp;
 			currentPoint = r2;
 			count++;
@@ -427,7 +500,8 @@ treated as relative even though the initial moveto is interpreted as an absolute
 	}
 
 	private static boolean isCoordinate(List<String> tokenList, int itok) {
-		return itok < tokenList.size() && !Character.isAlphabetic(tokenList.get(itok).charAt(0));
+		return itok < tokenList.size() &&
+				!Character.isAlphabetic(tokenList.get(itok).charAt(0));
 	}
 
 	private static Real2Array readReal2Array(List<String> tokenList, int ntoread, int itok) {
@@ -456,7 +530,9 @@ treated as relative even though the initial moveto is interpreted as an absolute
 	private static List<String> extractTokenList(String d) {
 		List<String> tokenList = new ArrayList<String>();
 		int numberStart = -1;
-		for (int i = 0; i < d.length(); i++) {
+		long t0 = System.currentTimeMillis();
+		int i;
+		for (i = 0; i < d.length(); i++) {
 			char c = d.charAt(i);
 			if (Character.isWhitespace(c) || c == ',') {
 				String token = getCurrentNumber(d, tokenList, numberStart, i);
@@ -480,6 +556,10 @@ treated as relative even though the initial moveto is interpreted as an absolute
 		}
 		String token = getCurrentNumber(d, tokenList, numberStart, d.length());
 		addToken(tokenList, token);
+		long dt = System.currentTimeMillis() - t0;
+		if (dt > 1000) {
+			LOG.debug("longExtract "+dt+" /toks "+tokenList.size());
+		}
 		LOG.trace(tokenList);
 		return tokenList;
 	}

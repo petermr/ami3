@@ -63,7 +63,7 @@ public class DocumentCache extends ComponentCache {
 	private PubstyleManager pubstyleManager;
 	private CTree cTree;
 
-	protected DocumentCache() {
+	public DocumentCache() {
 		init();
 	}
 
@@ -163,7 +163,7 @@ public class DocumentCache extends ComponentCache {
 			LOG.trace("PAGE "+ipage);
 			PageCache pageCache = new PageCache(this);
 			SVGElement boxes = debugPage(pageDir, fileDir, ipage, pageCache);
-			File outFileSVG = new File(targetDir, fileDir+"/fulltext-page" + ipage + CTree.DOT+CTree.SVG);
+			File outFileSVG = new File(targetDir, fileDir+"/"+CTree.FULLTEXT_PAGE + ipage + CTree.DOT+CTree.SVG);
 			LOG.trace("out "+outFileSVG);
 			SVGSVG.wrapAndWriteAsSVG(boxes, outFileSVG);
 		}
@@ -176,7 +176,7 @@ public class DocumentCache extends ComponentCache {
 	private SVGElement debugPage(File pageDir, String fileDir, int ipage, PageCache pageCache) {
 		currentPageLayout = getCurrentPageLayout(ipage);
 		pageCache.setPageLayout(currentPageLayout);
-		File svgFile = new File(pageDir, fileDir + "/svg/" + CTree.FULLTEXT_PAGE + ipage + CTree.DOT+CTree.SVG);
+		File svgFile = this.getSVGPageFile(ipage);
 		pageCache.readGraphicsComponentsAndMakeCaches(svgFile);
 		pageCache.readPageLayoutAndMakeBBoxesAndMargins(currentPageLayout);
 		AbstractCMElement boxg = pageCache.createSummaryBoxes(svgFile);
@@ -191,18 +191,21 @@ public class DocumentCache extends ComponentCache {
 
 	public PageCacheList getOrCreatePageCacheList() {
 		if (pageCacheList == null) {
+//			processSVGFilesToSVGElementAndHTMLElement();
 //			pageCacheList = new PageCacheList();
-//			createPageCacheListFromSVGFiles();
-			convertSVG2PageCacheList();
+			getOrCreatePageCacheListFromSVGFiles();
+//			convertSVG2PageCacheList();
+			LOG.debug("pages: "+pageCacheList.size());
 			for (int i = 0; i < pageCacheList.size(); i++) {
 				PageCache pageCache = pageCacheList.get(i);
-				if (pageCache == null) {
-					continue;
-				}
-				Integer serialNumber = pageCache.getSerialNumber();
-				if (serialNumber != null) {
-					pageCacheList.set(serialNumber, pageCache);
-				}
+				System.out.println("page "+pageCache.getSerialNumber()+">" +pageCache.toString());
+//				if (pageCache == null) {
+//					continue;
+//				}
+//				Integer serialNumber = pageCache.getSerialNumber();
+//				if (serialNumber != null) {
+//					pageCacheList.set(serialNumber, pageCache);
+//				}
 			}
 		}
 		return pageCacheList;
@@ -240,14 +243,19 @@ public class DocumentCache extends ComponentCache {
 		}
 	}
 
-//	private void createPageCacheListFromSVGFiles() {
-//		svgFiles = cTree.getExistingSVGFileList();
-//		svgFiles = CMFileUtil.sortUniqueFilesByEmbeddedIntegers(svgFiles);
-//		pageCacheList = new PageCacheList();
-//		for (File svgFile : svgFiles) {
-//			PageCache pageCache = new PageCache(this);
-//		}
-//	}
+	private void getOrCreatePageCacheListFromSVGFiles() {
+		if (pageCacheList == null) {
+			svgFiles = cTree.getExistingSVGFileList();
+			svgFiles = CMFileUtil.sortUniqueFilesByEmbeddedIntegers(svgFiles);
+			pageCacheList = new PageCacheList();
+			int serial = 1; // number pages from 1
+			for (File svgFile : svgFiles) {
+				PageCache pageCache = PageCache.createPageCache(this, svgFile);
+				pageCache.setSerialNumber(serial++);
+				pageCacheList.add(pageCache);
+			}
+		}
+	}
 
 	public CTree getCTree() {
 		return cTree;
@@ -315,6 +323,9 @@ public class DocumentCache extends ComponentCache {
 	}
 
 	public HtmlElement getOrCreateConvertedHtmlElement() {
+		if (htmlDiv == null) {
+			htmlDiv = createHtmlElementFromPages();
+		}
 		return htmlDiv;
 	}
 
@@ -332,6 +343,7 @@ public class DocumentCache extends ComponentCache {
 
 	@Override
 	public String toString() {
+		pageCacheList = getOrCreatePageCacheList();
 		StringBuilder sb = new StringBuilder();
 		sb.append("tree: "+cTree+"; pages: "+pageCacheList.size()+"; xml: "+(htmlDiv == null ? "null" : htmlDiv.toXML().length()));
 		return sb.toString();
@@ -384,5 +396,34 @@ public class DocumentCache extends ComponentCache {
 	public String getName() {
 		return cTree == null ? null : cTree.getName();
 	}
+
+	File getSVGPageFile(int serial) {
+		return new File(getCTree().getExistingSVGDir(), CTree.FULLTEXT_PAGE + CTree.DOT + serial + CTree.DOT + CTree.SVG);
+	}
+
+	public PageCache createPageCache(int serial) {
+		File svgFile = getSVGPageFile(serial);
+		PageCache pageCache = new PageCache(this);
+		pageCache.setSvgFile(svgFile);
+		pageCache.readGraphicsComponentsAndMakeCaches(svgFile);
+		return pageCache;
+	}
+
+	public List<File> createTextBoxesAndWriteToSVGDir() {
+		List<File> svgFiles = new ArrayList<>();
+		for (PageCache pageCache : getOrCreatePageCacheListByFileNumber()) {
+			if (pageCache == null) {
+				continue;
+			}
+			SVGElement g = pageCache.createTextBoxes();
+			File svgFile = new File(getCTree().getExistingSVGDir(), "page."+pageCache.getSerialNumber()+"/"+"boxes.svg");
+			svgFiles.add(svgFile);
+			SVGSVG.wrapAndWriteAsSVG(g, svgFile);
+		}
+		return svgFiles;
+		
+	}
+	
+	
 
 }

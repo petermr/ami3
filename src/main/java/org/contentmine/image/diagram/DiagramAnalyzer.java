@@ -130,6 +130,7 @@ public class DiagramAnalyzer {
 	private String logFile;
 
 	private File inputDir;
+	private int maxIsland = 100;
 
 	public DiagramAnalyzer() {
 		setDefaults();
@@ -417,7 +418,8 @@ public class DiagramAnalyzer {
 	}
 
 	public void setMaxIsland(int maxIsland) {
-		this.getMainPixelProcessor().setMaxIsland(maxIsland);
+//		this.getMainPixelProcessor().setMaxIsland(maxIsland);
+		this.maxIsland = maxIsland;
 	}
 
 	public MainPixelProcessor getMainPixelProcessor() {
@@ -483,6 +485,8 @@ public class DiagramAnalyzer {
 		// this is required because the commands are now obsolete and we have to load the image
 		if (pixelGraphList == null) {
 			getOrCreateImageProcessorFromInputFile();
+			ensureImageProcessor();
+			imageProcessor.setMaxIsland(maxIsland);
 			PixelIslandList pixelIslandList = imageProcessor.getOrCreatePixelIslandList();
 			pixelIslandList.sortBySizeDescending();
 			pixelIslandList.setDiagonal(true);

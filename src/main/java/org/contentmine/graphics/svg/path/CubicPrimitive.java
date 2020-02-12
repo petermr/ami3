@@ -34,12 +34,16 @@ public class CubicPrimitive extends SVGPathPrimitive {
 	}
 
 	public String toString() {
-		String s = TAG;
+		StringBuilder sb = new StringBuilder(TAG);
+		formatCoordsIntoStringBuilder(sb, coordArray);
+		return sb.toString();
+	}
+
+	public void formatCoordsIntoStringBuilder(StringBuilder sb, Real2Array coordArray) {
 		for (int i = 0; i < coordArray.size(); i++) {
 			Real2 coord = coordArray.get(i);
-			s += formatCoords(coord);
+			formatCoordsIntoStringBuilder(coord, sb);
 		}
-		return s;
 	}
 	
 	@Override

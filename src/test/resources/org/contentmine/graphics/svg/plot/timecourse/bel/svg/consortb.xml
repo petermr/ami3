@@ -1,0 +1,24 @@
+<consort title="Study Design and Enrollment" ref="Bel2014.fig.2.B">
+<!-- copyright ContentMine Ltd -->
+  <description>
+  enrollment and outcome data in the two study groups.
+  </description>
+  <flow id="f1" title="185 Patients were screened for eligibility" count="185">
+    <flow id="f1.1" class="discontinue" role="ineligible" count="3" title="3 Were not eligible"/>
+    <flow id="f1.2" class="main" role="optimization" count="182" title="182 Entered run-in optimization phase">
+      <flow id="f1.2.1" class="discontinue" role="unrandomizable" count="42" title="Did not meet randomization criteria"/>
+      <flow id="f1.2.2" class="discontinue" role="withdraw" count="5" title="5 Withdrew"/>
+	  <flow id="f1.2.3" class="main" role="randomization" count="135" title="135 Underwent randomization">
+	    <flow id="f1.2.3.1" class="main" role="treatment" count="69" title="69 Were assigned to receive mepolizumab">
+		  <flow id="f1.2.3.1.1" class="discontinue" role="adverseevent" count="3" 
+		     title="3 (4%) Discontinued study owing to adverse event"/>
+          <flow id="f1.2.3.1.2" class="main" role="completed" count="66" title="66 (96%) Completed study"/>
+	    <flow id="f1.2.3.2" class="main" role="placebo" count="66" title="66 Were assigned to receive placebo">
+		  <flow id="f1.2.3.2.1" class="discontinue" role="adverseevent" count="3" title="3 Had adverse event"/>
+		  <flow id="f1.2.3.2.2" class="discontinue" role="withdraw" count="3" title="1 Withdrew"/>
+          <flow id="f1.2.3.2.3" class="main" role="completed" count="62" title="62 (94%) Completed study"/>
+	    </flow>
+	  </flow>
+	</flow>
+  </flow>
+</consort>

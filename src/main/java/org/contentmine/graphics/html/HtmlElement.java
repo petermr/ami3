@@ -28,6 +28,7 @@ import org.apache.log4j.Logger;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.AbstractCMElement;
+import org.contentmine.graphics.html.util.HtmlUtil;
 import org.contentmine.graphics.svg.StyleBundle;
 
 import nu.xom.Attribute;
@@ -281,6 +282,11 @@ public abstract class HtmlElement extends AbstractCMElement {
 	public static HtmlElement create(Element element) {
 		// changed to ignoreNamespaces = true
 		return HtmlElement.create(element, false, true);
+	}
+		
+	public static HtmlElement create(String content) {
+		Element element = HtmlUtil.parseCleanlyToXHTML(content);
+		return create(element);
 	}
 		
 	/** creates subclassed elements.
@@ -617,7 +623,7 @@ public abstract class HtmlElement extends AbstractCMElement {
 			throw new RuntimeException("null or non-existent file: "+file);
 		}
 		
-		Element element = XMLUtil.parseQuietlyToRootElement(file);
+		Element element = HtmlUtil.parseCleanlyToXHTML(file);
 		HtmlElement htmlElement = HtmlElement.create(element);
 		return htmlElement;
 	}
@@ -633,6 +639,10 @@ public abstract class HtmlElement extends AbstractCMElement {
 
 	public void tidy() {
 		LOG.debug("no tidy for: "+this.getClass()+" ; override");
+	}
+
+	public static HtmlElement parseXML(String content) {
+		return HtmlElement.create(HtmlUtil.parseCleanlyToXHTML(content));
 	}
 
 }

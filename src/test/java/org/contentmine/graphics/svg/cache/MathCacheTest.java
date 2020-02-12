@@ -8,7 +8,7 @@ import org.apache.log4j.Logger;
 import org.contentmine.eucl.euclid.RealArray;
 import org.contentmine.graphics.svg.SVGHTMLFixtures;
 import org.contentmine.graphics.svg.fonts.StyleRecord;
-import org.contentmine.graphics.svg.fonts.StyleRecordSet;
+import org.contentmine.graphics.svg.fonts.StyledBoxRecordSet;
 import org.contentmine.graphics.svg.text.SVGTextLine;
 import org.contentmine.graphics.svg.text.SVGTextLineList;
 import org.junit.Ignore;
@@ -40,7 +40,7 @@ public class MathCacheTest {
 		ComponentCache cache = new ComponentCache();
 		cache.readGraphicsComponentsAndMakeCaches(svgFile);
 		TextCache textCache = cache.getOrCreateTextCache();
-		StyleRecordSet styleRecordSet = textCache.getOrCreateHorizontalStyleRecordSet();
+		StyledBoxRecordSet styleRecordSet = textCache.getOrCreateHorizontalStyleRecordSet();
 		Assert.assertEquals(2, styleRecordSet.size());
 		Multimap<Double, StyleRecord> styleRecordByFontSize = styleRecordSet.getStyleRecordByFontSize();
 		Assert.assertEquals("sizes", 2, styleRecordByFontSize.size());
@@ -55,7 +55,7 @@ public class MathCacheTest {
 		MathCache mathCache = cache.getOrCreateMathCache();
 		TextCache textCache = cache.getOrCreateTextCache();
 		// assume that y-coords will be the most important structure
-		StyleRecordSet horizontalStyleRecordSet = mathCache.getOwnerComponentCache()
+		StyledBoxRecordSet horizontalStyleRecordSet = mathCache.getOwnerComponentCache()
 				.getOrCreateTextCache().getOrCreateHorizontalStyleRecordSet();
 		Double largestFont = horizontalStyleRecordSet.getLargestFontSize();
 		Assert.assertEquals(6.0, largestFont, 0.1);

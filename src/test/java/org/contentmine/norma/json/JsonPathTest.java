@@ -2,13 +2,13 @@ package org.contentmine.norma.json;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.norma.NormaFixtures;
 import org.junit.Test;
 
@@ -24,7 +24,7 @@ public class JsonPathTest {
 	}
 	@Test
 	public void testExample0() throws IOException {
-		String json = FileUtils.readFileToString(new File(NormaFixtures.TEST_JSON_DIR, "jsonpathExample.json"), Charset.forName("UTF-8"));
+		String json = FileUtils.readFileToString(new File(NormaFixtures.TEST_JSON_DIR, "jsonpathExample.json"), CMineUtil.UTF8_CHARSET);
 		ReadContext ctx = JsonPath.parse(json);
 		List<String> authorsOfBooksWithISBN = ctx.read("$.store.book[?(@.isbn)].author");
 		for (String author : authorsOfBooksWithISBN) {

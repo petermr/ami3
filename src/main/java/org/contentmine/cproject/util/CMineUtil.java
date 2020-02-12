@@ -57,6 +57,7 @@ public class CMineUtil {
 	private static final String NEW_LINE_SEPARATOR = "\n";
 	public static final String HTML_TYPE = "text/html";
 	public static final String PDF_TYPE = "text/pdf";
+	public final static Charset UTF8_CHARSET = CMineUtil.UTF8_CHARSET;
 
 	/** sort entrySet by count.
 	 * convenience method.
@@ -292,7 +293,7 @@ public class CMineUtil {
 	public static String getTypeOfContent(File file) {
 		String contentType = null;
 		try {
-			String content = FileUtils.readFileToString(file, Charset.forName("UTF-8"));
+			String content = FileUtils.readFileToString(file, CMineUtil.UTF8_CHARSET);
 			if (content == null) {
 				
 			} else if (content.startsWith(PDF_START)) {

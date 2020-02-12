@@ -187,7 +187,12 @@ public class Path2ShapeConverter {
 		for (List<SVGPath> pathList : pathListList) {
 			List<SVGShape> shapeList = new ArrayList<SVGShape>();
 			for (SVGPath path : pathList) {
-				SVGShape shape = convertPathToShape(path);
+				SVGShape shape = null;
+				try {
+					shape = convertPathToShape(path);
+				} catch (RuntimeException e) {
+					continue;
+				}
 				if (shape instanceof SVGRhomb) {
 					LOG.trace("RHOMB "+shape.toString());
 				}

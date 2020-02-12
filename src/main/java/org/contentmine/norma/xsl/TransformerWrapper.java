@@ -1,15 +1,12 @@
 package org.contentmine.norma.xsl;
 
 import java.io.ByteArrayOutputStream;
-
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.nio.charset.Charset;
 
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerConfigurationException;
@@ -24,9 +21,10 @@ import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.cproject.files.CTree;
+import org.contentmine.cproject.util.CMineUtil;
+import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlFactory;
-import org.contentmine.eucl.xml.XMLUtil;
 
 import net.sf.saxon.Configuration;
 import net.sf.saxon.TransformerFactoryImpl;
@@ -132,7 +130,7 @@ public class TransformerWrapper {
 		
 	    String xmlString = transformToXML(infile);
 	    // debug output
-		FileUtils.write(new File("target/debug/transform.xml"), xmlString, Charset.forName("UTF-8"));
+		FileUtils.write(new File("target/debug/transform.xml"), xmlString, CMineUtil.UTF8_CHARSET);
 		Element xmlElement = XMLUtil.parseXML(xmlString);
 		htmlElement = new HtmlFactory().parse(xmlElement);
 //		XMLUtil.debug(xmlElement, new FileOutputStream("target/firstpass.html"), 1);

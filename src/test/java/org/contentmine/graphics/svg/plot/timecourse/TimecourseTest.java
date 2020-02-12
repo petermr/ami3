@@ -86,12 +86,14 @@ public class TimecourseTest {
 		 */
 		Real2Array placeboCoords = extractCoords(bela, "placebo");
 		Assert.assertEquals(4, placeboCoords.size());
+		Assert.assertEquals("placebo", "((333.281,126.538)(364.226,126.538)(333.281,126.538)(518.034,126.538))", placeboCoords.toString());
 		Real2Array mepCoords = extractCoords(bela, "mep");
 		Assert.assertEquals(7, mepCoords.size());
+		Assert.assertEquals("mepXY", "((329.782,126.505)(360.378,126.505)(391.215,152.454)(421.986,166.426)(452.689,177.972)(483.459,160.958)(514.274,186.369))", mepCoords.toString());
 		RealArray mepX = mepCoords.getXArray();
 		RealArray mepY = mepCoords.getYArray();
-		
-		
+		Assert.assertEquals("mepX", "(329.782,360.378,391.215,421.986,452.689,483.459,514.274)", mepX.toString());
+		Assert.assertEquals("mepY", "(126.505,126.505,152.454,166.426,177.972,160.958,186.369)", mepY.toString());
 
 		// *[@class='plot.polyline'
 		

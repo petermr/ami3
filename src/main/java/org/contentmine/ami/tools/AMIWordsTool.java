@@ -255,22 +255,27 @@ public class AMIWordsTool extends AbstractAMISearchTool {
     	return wordCmd;
 	}
 
-	protected void processTree() {
+	protected boolean processTree() {
+		processedTree = true;
 		if (getVerbosityInt() > 0) System.out.println("AMIWords processTree");
 		wordArgProcessor.setCTree(cTree);
-		extractWords();
+		processedTree = extractWords();
 		// this is the original, phased out; will run twice unnecessarily because runs project
 //		runWords();
 //		runWordsNew();
+		return processedTree;
 	}
 	
-	/** ================================================= */
+	/** ================================================= 
+	 * @return */
 
 
-	private void extractWords() {
+	private boolean extractWords() {
+		processedTree = true;
 		wordArgProcessor.setCTree(cTree);
 		wordArgProcessor.extractWords();
 		wordArgProcessor.outputWords("word");
+		return processedTree;
 	}
 
 	public WordArgProcessor getOrCreateSearchProcessor() {

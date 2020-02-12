@@ -186,7 +186,7 @@ public abstract class CContainer {
 		return isAllowedName(file.getName(), allowedNames);
 	}
 
-	public void getOrCreateDirectory() {
+	public File getOrCreateDirectory() {
 		if (directory != null) {
 			if (!directory.exists()) {
 				directory.mkdirs();
@@ -198,6 +198,7 @@ public abstract class CContainer {
 		} else {
 			throw new RuntimeException("directory is null");
 		}
+		return directory;
 	}
 
 	protected void getTreesAndDirectories() {
@@ -302,7 +303,7 @@ public abstract class CContainer {
 	}
 	
 	public String toString() {
-		return "Dir: "+directory.toString();
+		return directory.toString();
 	}
 
 }

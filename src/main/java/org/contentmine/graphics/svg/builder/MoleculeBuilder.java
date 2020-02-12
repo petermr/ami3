@@ -12,6 +12,7 @@ import java.util.Set;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Angle.Units;
 import org.contentmine.eucl.euclid.Real2;
@@ -20,7 +21,6 @@ import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGCircle;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
-import org.contentmine.graphics.svg.SVGLine;
 import org.contentmine.graphics.svg.SVGLineList;
 import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.graphics.svg.SVGText;
@@ -503,7 +503,7 @@ Lines 	Section 	Description
 			File cmlFile = new File(outputDir, fileroot+".cml");
 			XMLUtil.debug(cmlElement, cmlFile, 1);
 			String mol = createMolFileContent();
-			FileUtils.write(new File(outputDir, fileroot+".mol"), mol, "UTF-8");
+			FileUtils.write(new File(outputDir, fileroot+".mol"), mol, CMineUtil.UTF8_CHARSET);
 		}
 	}
 

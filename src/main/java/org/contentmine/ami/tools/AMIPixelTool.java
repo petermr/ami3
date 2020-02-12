@@ -10,8 +10,6 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 import javax.xml.transform.Transformer;
@@ -27,12 +25,12 @@ import org.apache.log4j.Logger;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.DebugPrint;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.Axis.Axis2;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.IntRange;
-import org.contentmine.eucl.euclid.IntRangeComparator;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealArray;
@@ -360,9 +358,10 @@ public class AMIPixelTool extends AbstractAMITool implements HasImageDir {
 	    }
     }
 
-	public void processTree() {
+	public boolean processTree() {
 		ImageDirProcessor imageDirProcessor = new ImageDirProcessor(this, cTree);
-		imageDirProcessor.processImageDirs();
+		processedTree = imageDirProcessor.processImageDirs();
+		return processedTree;
 	}
 
 	private void runPixel(File imageFile) {
@@ -543,7 +542,7 @@ public class AMIPixelTool extends AbstractAMITool implements HasImageDir {
 		try {
 			String xmlString = transform(xmlIs, xslIs);
 			templateOutputFile = new File(projectionsFile.getParentFile(), templateOutput);
-			FileUtils.writeStringToFile(templateOutputFile, xmlString, "UTF-8");
+			FileUtils.writeStringToFile(templateOutputFile, xmlString, CMineUtil.UTF8_CHARSET);
 		} catch (TransformerException e) {
 			throw new RuntimeException(e);
 		} catch (IOException e) {

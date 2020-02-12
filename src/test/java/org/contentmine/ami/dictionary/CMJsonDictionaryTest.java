@@ -3,13 +3,13 @@ package org.contentmine.ami.dictionary;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.nio.charset.Charset;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.AMIFixtures;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.cproject.util.RectTabColumn;
 import org.contentmine.cproject.util.RectangularTable;
 import org.contentmine.norma.NAConstants;
@@ -132,7 +132,7 @@ public class CMJsonDictionaryTest {
 	@Test
 	public void convertJsonToXML() throws IOException {
 		File jsonFile = new File(AMIFixtures.TEST_DICTIONARY_DIR, "cochrane.json");
-//		CMJsonDictionary cmJsonDictionary = CMJsonDictionary.readJsonDictionary(FileUtils.readFileToString(jsonFile, Charset.forName("UTF-8")));
+//		CMJsonDictionary cmJsonDictionary = CMJsonDictionary.readJsonDictionary(FileUtils.readFileToString(jsonFile, CMineUtil.UTF8_CHARSET));
 		CMJsonDictionary cmJsonDictionary = CMJsonDictionary.readJsonDictionary(
 				IOUtils.toString(new FileInputStream(jsonFile), NAConstants.UTF_8));
 		Assert.assertNotNull("null jsonDictionary", cmJsonDictionary);
@@ -198,7 +198,7 @@ public class CMJsonDictionaryTest {
 				+ " 2256736,"
 				+ " 317158", qs.toString().substring(0, 96));
 		File jsonFile = new File(AMIFixtures.TEST_DICTIONARY_DIR, "cochrane.json");
-		CMJsonDictionary cmJsonDictionary = CMJsonDictionary.readJsonDictionary(FileUtils.readFileToString(jsonFile, Charset.forName("UTF-8")));
+		CMJsonDictionary cmJsonDictionary = CMJsonDictionary.readJsonDictionary(FileUtils.readFileToString(jsonFile, CMineUtil.UTF8_CHARSET));
 		Assert.assertNotNull("null jsonDictionary", cmJsonDictionary);
 
 		
@@ -210,7 +210,7 @@ public class CMJsonDictionaryTest {
 		File mapping = new File(AMIFixtures.TEST_DICTIONARY_DIR, "mixmatch.tsv");
 		RectangularTable table = RectangularTable.readCSVTable(mapping, useHeader);
 		File jsonFile = new File(AMIFixtures.TEST_DICTIONARY_DIR, "cochrane.json");
-		CMJsonDictionary cmJsonDictionary = CMJsonDictionary.readJsonDictionary(FileUtils.readFileToString(jsonFile, Charset.forName("UTF-8")));
+		CMJsonDictionary cmJsonDictionary = CMJsonDictionary.readJsonDictionary(FileUtils.readFileToString(jsonFile, CMineUtil.UTF8_CHARSET));
 		Assert.assertNotNull("null jsonDictionary", cmJsonDictionary);
 		cmJsonDictionary.addMixMatchIds(table);
 		Assert.assertEquals("wikidata", 

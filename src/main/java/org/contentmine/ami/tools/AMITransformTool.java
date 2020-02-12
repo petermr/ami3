@@ -8,8 +8,8 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.util.CMFileUtil;
-import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.norma.NormaArgProcessor;
 import org.contentmine.norma.NormaTransformer;
 
@@ -112,7 +112,7 @@ public class AMITransformTool extends AbstractAMITool {
 		normaTransformer.setInputFile(existingFulltextXML);
 		String htmlString = normaTransformer.createAndApplyXSLDocument(NormaTransformer.NLM2HTML);
 		try {
-			FileUtils.write(scholarlyHtmlFile, htmlString, "UTF-8");
+			FileUtils.write(scholarlyHtmlFile, htmlString, CMineUtil.UTF8_CHARSET);
 		} catch (IOException e) {
 			LOG.error("Cannot write Htmlfile: "+scholarlyHtmlFile, e);
 		}

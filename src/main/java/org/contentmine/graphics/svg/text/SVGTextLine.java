@@ -72,6 +72,9 @@ public class SVGTextLine extends SVGG implements List<SVGText> {
 	public SVGTextLine(List<SVGText> lineTexts) {
 		this();
 		this.lineTexts = new ArrayList<SVGText>(lineTexts);
+		for (SVGText lineText : lineTexts) {
+			this.appendChild(lineText.copy());
+		}
 		sortAndGetCommonValues();
 	}
 

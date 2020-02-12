@@ -7,7 +7,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGText;
-import org.contentmine.graphics.svg.fonts.StyleRecordSet;
+import org.contentmine.graphics.svg.fonts.StyledBoxRecordSet;
 import org.contentmine.graphics.svg.math.SVGMath;
 import org.contentmine.graphics.svg.text.SVGTextLineList;
 
@@ -25,11 +25,11 @@ public class MathCache extends AbstractCache {
 
 	private List<SVGText> horizontalTextList;
 	private List<SVGMath> mathList;
-	private StyleRecordSet horizontalStyleRecordSet;
+	private StyledBoxRecordSet horizontalStyleRecordSet;
 	private SVGTextLineList textLineList;
 	
-	private MathCache() {
-		
+	public MathCache() {
+		this(new ComponentCache());
 	}
 	
 	public MathCache(ComponentCache containingComponentCache) {

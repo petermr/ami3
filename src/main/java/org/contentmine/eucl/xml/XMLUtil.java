@@ -27,7 +27,10 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.StringReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;
@@ -37,7 +40,7 @@ import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlI;
 import org.contentmine.graphics.html.HtmlSub;
 import org.contentmine.graphics.html.HtmlSup;
-import org.contentmine.graphics.html.HtmlTr;
+import org.contentmine.graphics.html.util.HtmlUtil;
 
 import nu.xom.Attribute;
 import nu.xom.Builder;
@@ -48,6 +51,7 @@ import nu.xom.Elements;
 import nu.xom.Node;
 import nu.xom.Nodes;
 import nu.xom.ParentNode;
+import nu.xom.ParsingException;
 import nu.xom.ProcessingInstruction;
 import nu.xom.Serializer;
 import nu.xom.Text;
@@ -66,6 +70,10 @@ import nu.xom.canonical.Canonicalizer;
  * 
  */
 public abstract class XMLUtil implements XMLConstants {
+
+	private static final String LOCAL_NAME_BR = "local-name()";
+
+	private static final String OR = "or";
 
 	private static Logger LOG = Logger.getLogger(XMLUtil.class);
 
@@ -420,8 +428,20 @@ public abstract class XMLUtil implements XMLConstants {
 		try {
 			Document doc = new Builder().build(new StringReader(xmlString));
 			root = doc.getRootElement();
-		} catch (Exception e) {
-			System.out.println(">xml>"+xmlString+"<");
+		} catch (IOException e) {
+			throw new RuntimeException("IO exception, ", e);
+		} catch (ParsingException e) {
+			int line = e.getLineNumber();
+			int charx = e.getColumnNumber();
+//		nu.xom.ParsingException: The character reference must end with the ';' delimiter. at line 354, column 7809
+//		Caused by: nu.xom.ParsingException: The character reference must end with the ';' delimiter. at line 354, column 7809
+//		Caused by: org.xml.sax.SAXParseException; lineNumber: 354; columnNumber: 7809; The character reference must end with the ';' delimiter.
+			String msg = e.getMessage();
+			String[] lines = xmlString.split("\\n");
+			String badLine = lines[line - 1];
+			String badString = badLine.substring(Math.max(0,  charx - 20), Math.min(badLine.length(),  charx + 20));
+			System.out.println("<"+line+"/"+charx+">badline > "+badLine+"\n"+badString);
+			
 			throw new RuntimeException(e);
 		}
 		return root;
@@ -718,6 +738,18 @@ public abstract class XMLUtil implements XMLConstants {
 		List<Element> elements = XMLUtil.getQueryElements(element, xpath);
 		for (Element elem : elements) {
 			elem.detach();
+		}
+	}
+
+	/** removes all nodes with given xpath.
+	 * 
+	 * @param element
+	 * @param xpath
+	 */
+	public static void removeNodesByXPath(Element element, String xpath) {
+		List<Node> nodes = XMLUtil.getQueryNodes(element, xpath);
+		for (Node node : nodes) {
+			node.detach();
 		}
 	}
 
@@ -1144,6 +1176,12 @@ public abstract class XMLUtil implements XMLConstants {
 		}
 	}
 	
+	/**
+	 * requires element to be only element matching xpath
+	 * @param element
+	 * @param xpath
+	 * @return
+	 */
 	public static Element getSingleElement(Element element, String xpath) {
 		Nodes nodes;
 		try {
@@ -1152,6 +1190,22 @@ public abstract class XMLUtil implements XMLConstants {
 			throw new RuntimeException("Xpath: "+xpath, e);
 		}
 		return (nodes.size() == 1) ? (Element) nodes.get(0) : null;
+	}
+
+	/**
+	 * requires element to be First element matching xpath
+	 * @param element
+	 * @param xpath
+	 * @return
+	 */
+	public static Element getFirstElement(Element element, String xpath) {
+		Nodes nodes;
+		try {
+			nodes = element.query(xpath);
+		} catch (XPathException e) {
+			throw new RuntimeException("Xpath: "+xpath, e);
+		}
+		return (nodes.size() > 0) ? (Element) nodes.get(0) : null;
 	}
 
 	public static void detach(nu.xom.Element element) {
@@ -1283,7 +1337,7 @@ public abstract class XMLUtil implements XMLConstants {
 		baosS = baosS.replace(" xmlns=\"http://www.w3.org/1999/xhtml\"", "");
 		// strip XML declaration
 		baosS = baosS.replace("<?xml version=\"1.0\" encoding=\"UTF-8\"?>", "");
-		baosS = removeScripts(baosS);
+		baosS = HtmlUtil.removeScripts(baosS);
 		Document document;
 		try {
 			ByteArrayInputStream bais = new ByteArrayInputStream(baosS.getBytes()); // avoid reader
@@ -1377,10 +1431,14 @@ public abstract class XMLUtil implements XMLConstants {
 		return sb.toString();
 	}
 
-	public static String removeScripts(String s) {
-		return removeTags("script", s);
-	}
-	
+	/** removes content of form <tag>...</tag>
+	 * useful when tag contains non-well-formed content
+	 * crude
+	 * 
+	 * @param tag
+	 * @param ss
+	 * @return
+	 */
 	public static String removeTags(String tag, String ss) {
 		int current = 0;
 		StringBuilder sb = new StringBuilder();
@@ -1655,4 +1713,69 @@ public abstract class XMLUtil implements XMLConstants {
 		return values;
 	}
 
+	/** replaces all non-standard entities or ones we can't look up 
+	 * (crude, just to get it parsing)
+	 * keep amp, apos, lt, gt, quot*/
+	private final static List<String> standard = Arrays.asList(new String[]{"apos", "amp", "quot", "lt", "gt"});
+
+	private static final String START = "[[";
+	private static final String END = "]]";
+	
+	public static String replaceCharacterEntities(String string) {
+		
+		Pattern pattern = Pattern.compile("\\&([^;]+)\\;");
+		Matcher matcher = pattern.matcher(string);
+		int start = 0;
+		int end = 0;
+		StringBuilder sb = new StringBuilder();
+		while (matcher.find(start)) {
+			String group1 = matcher.group(1);
+			sb.append(string.substring(end, matcher.start()));
+			String entity = null;
+			if (standard.contains(group1)) {
+				entity = matcher.group(0)+";";
+			} else {
+				entity = START + group1 + END;
+			}
+			sb.append(entity);
+			start = matcher.end();
+			end = matcher.end();
+		}
+		sb.append(string.substring(end));
+		return sb.toString();
+	}
+
+
+	/** removes all element children */
+	public static void removeChildren(HtmlElement element) {
+		Elements childElements = element.getChildElements();
+		for (int i = childElements.size() - 1; i >= 0; i--) {
+			childElements.get(i).detach();
+		}
+	}
+
+	public static void removeElementsByTag(Element element, String...tags) {
+		String xpath = createMultitagXPath(tags);
+		List<Element> elements = XMLUtil.getQueryElements(element, xpath);
+		XMLUtil.removeElements(elements);
+	}
+
+	private static void removeElements(List<Element> elements) {
+		for (Element element : elements ) {
+			element.detach();
+		}
+	}
+
+	private static String createMultitagXPath(String... tags) {
+		StringBuilder sb = new StringBuilder(".//*[");
+		boolean first = true;
+		for (String tag : tags) {
+			if (!first) {sb.append(" " + OR + " ");} else {first = false;}
+			sb.append(LOCAL_NAME_BR + "='"+tag+"'");
+		}
+		sb.append("]");
+		return sb.toString();
+	}
+
+		
 }

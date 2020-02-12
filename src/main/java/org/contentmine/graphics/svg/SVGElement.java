@@ -26,6 +26,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -272,6 +273,19 @@ public class SVGElement extends GraphicsElement {
 		Element element = (file == null) ? null : XMLUtil.parseQuietlyToDocument(file).getRootElement();
 		return (element == null ? null : readAndCreateSVG(element));
 	}
+
+	/**
+	 * Converts an SVG path to SVGElement
+	 * 
+	 * @param path
+	 * @return
+	 */
+
+	public static SVGElement readAndCreateSVG(Path path) {
+		return SVGElement.readAndCreateSVG(path.toFile());
+	}
+	
+	
 	
 	/** 
 	 * Converts an SVG file to SVGElement
@@ -405,7 +419,8 @@ public class SVGElement extends GraphicsElement {
 			// is object rotated?
 			Angle angle = transform2.getAngleOfRotation();
 			if (angle.getRadian() > Math.PI/4.) {
-				this.addAttribute(new Attribute(ROTATE, YPLUS));
+				String yplus2 = YPLUS;
+				this.addAttribute(new Attribute(ROTATE, yplus2));
 			}
 			if (angle.getRadian() < -Math.PI/4.) {
 				this.addAttribute(new Attribute(ROTATE, YMINUS));
@@ -1152,7 +1167,7 @@ public class SVGElement extends GraphicsElement {
 		}
 	}
 
-	public SVGElement createGraphicalBoundingBox() {
+	public SVGRect createGraphicalBoundingBox() {
 		Real2Range r2r = this.getBoundingBox();
 		SVGRect rect = createGraphicalBox(r2r, getBBStroke(), getBBFill(), getBBStrokeWidth(), getBBOpacity());
 		if (this.getAttribute(TRANSFORM) != null) {
@@ -1165,6 +1180,14 @@ public class SVGElement extends GraphicsElement {
 			}
 		}
 		return rect;
+	}
+	
+	/** create graphical bounding box and insert as first child of this 
+	 * return the bounding box. Can always get "this" back with getParent() */
+	public SVGRect insertGraphicalBoundingBox() {
+		SVGRect graphicalBox = this.createGraphicalBoundingBox();
+		this.insertChild(graphicalBox, 0);
+		return graphicalBox;
 	}
 	
 	public static SVGRect createGraphicalBox(Real2Range r2r, String stroke, String fill, Double strokeWidth, Double opacity) {
@@ -1356,7 +1379,9 @@ public class SVGElement extends GraphicsElement {
 	public static List<SVGElement> extractElementsContainedInBox(List<? extends SVGElement> elements, Real2Range bbox) {
 		List<SVGElement> containedElements = new ArrayList<SVGElement>();
 		for (SVGElement element : elements) {
-			if (bbox.includes(element.getBoundingBox())) {
+			Real2Range boundingBox2 = element.getBoundingBox();
+//			System.out.println("bb> "+bbox+" / "+boundingBox2);
+			if (bbox.includes(boundingBox2)) {
 				containedElements.add(element);
 			}
 		}

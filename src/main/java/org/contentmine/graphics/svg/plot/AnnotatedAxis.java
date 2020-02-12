@@ -21,7 +21,7 @@ import org.contentmine.graphics.svg.plot.AbstractPlotBox.AxisType;
 import com.google.common.collect.Multiset;
 
 /**
- * An axis (vertical of horizontal) with (probably) one or more
+ * An axis (vertical or horizontal) with (probably) one or more
  *   axial line (SVGLine)
  *   tick marks (major and minor)
  *   scales (list of numbers aligned with ticks)

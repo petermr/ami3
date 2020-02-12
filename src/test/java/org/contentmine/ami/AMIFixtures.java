@@ -2,14 +2,12 @@ package org.contentmine.ami;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.junit.Assert;
 import org.contentmine.CHESConstants;
 import org.contentmine.ami.plugins.AMIArgProcessor;
 import org.contentmine.ami.plugins.AMIPlugin;
@@ -19,8 +17,10 @@ import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.ContentProcessor;
 import org.contentmine.cproject.files.ResultsElementList;
 import org.contentmine.cproject.util.CMineTestFixtures;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.norma.NAConstants;
+import org.junit.Assert;
 
 public class AMIFixtures {
 
@@ -172,8 +172,8 @@ public class AMIFixtures {
 	    		resultsFile,
 	    		true);
 		if (msg != null) {
-			LOG.debug("bad compare: "+expectedFile+"; "+ FileUtils.readFileToString(expectedFile, Charset.forName("UTF-8")) +"\n"+
-					""+resultsFile+"; "+FileUtils.readFileToString(resultsFile, Charset.forName("UTF-8")));
+			LOG.debug("bad compare: "+expectedFile+"; "+ FileUtils.readFileToString(expectedFile, CMineUtil.UTF8_CHARSET) +"\n"+
+					""+resultsFile+"; "+FileUtils.readFileToString(resultsFile, CMineUtil.UTF8_CHARSET));
 		}
 	    Assert.assertNull("message: "+msg, msg);
 	}

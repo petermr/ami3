@@ -94,15 +94,18 @@ public class AMIGrobidTool extends AbstractAMITool {
 	    }
     }
 
-	protected void processTree() {
+	protected boolean processTree() {
 //		this.cTree = cTree;
 		System.out.println("\n" + "grobid CTree: "+cTree.getName());
+		processedTree = false;
 		try {
 			runGrobid();
 			convertTEIToHtml();
+			processedTree = true;
 		} catch (Exception e) {
 			LOG.error("Bad read: "+cTree+" ("+e.getMessage()+")");
 		}
+		return processedTree;
 	}
 	
 	private void runGrobid() {

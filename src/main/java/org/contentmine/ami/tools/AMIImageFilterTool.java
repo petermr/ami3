@@ -135,7 +135,8 @@ public class AMIImageFilterTool extends AbstractAMITool {
     	processTrees();
     }
 
-	protected void processTree() {
+	protected boolean processTree() {
+		processedTree = true;
 		System.out.println("cTree: "+cTree.getName());
 		File pdfImagesDir = cTree.getExistingPDFImagesDir();
 		if (pdfImagesDir == null || !pdfImagesDir.exists()) {
@@ -166,6 +167,7 @@ public class AMIImageFilterTool extends AbstractAMITool {
 				}
 			}
 		}
+		return processedTree;
 	}
 
 	private boolean moveSmallImageTo(BufferedImage image, File srcImageFile, File destDir) throws IOException {

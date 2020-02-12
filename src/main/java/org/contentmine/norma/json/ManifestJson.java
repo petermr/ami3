@@ -2,7 +2,6 @@ package org.contentmine.norma.json;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -11,6 +10,7 @@ import java.util.Set;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.util.CMineUtil;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -60,7 +60,7 @@ public class ManifestJson {
 		ManifestJson manifestJson = null;
 		if (file != null && file.exists()) {
 			try {
-				String resultsJsonString = FileUtils.readFileToString(file, Charset.forName("UTF-8"));
+				String resultsJsonString = FileUtils.readFileToString(file, CMineUtil.UTF8_CHARSET);
 			    JsonParser parser = new JsonParser();
 			    JsonElement jsonElement = parser.parse(resultsJsonString);
 			    manifestJson = new ManifestJson(jsonElement);

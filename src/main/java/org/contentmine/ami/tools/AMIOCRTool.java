@@ -15,6 +15,7 @@ import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.AMIOCRTool.OcrType;
+import org.contentmine.ami.tools.ocr.OcrMerger;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.DebugPrint;
@@ -243,10 +244,10 @@ public class AMIOCRTool extends AbstractAMITool implements HasImageDir {
 	    }
     }
 
-	protected void processTree() {
+	protected boolean processTree() {
 		ImageDirProcessor imageDirProcessor = new ImageDirProcessor(this, cTree);
-		imageDirProcessor.processImageDirs();
-		
+		processedTree = imageDirProcessor.processImageDirs();
+		return processedTree;
 	}
 
 	/** this is called from ImageDirProcessor ? move it

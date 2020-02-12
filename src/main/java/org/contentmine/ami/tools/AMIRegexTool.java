@@ -145,8 +145,10 @@ public class AMIRegexTool extends AbstractAMISearchTool {
 	    }
     }
 
-	public void processTree() {
-		LOG.debug("processTree");
+	public boolean processTree() {
+		processedTree = false;
+		LOG.debug("amiRegexTool.processTree NYI");
+		return processedTree;
 	}
 
 	@Override

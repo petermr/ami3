@@ -77,7 +77,7 @@ public class PMIDParserTest {
 		}
 		HtmlDiv abstractList = abstractAnalyzer.createAbstractList(parser);
 		File risFile = new File("target/ris/");
-		FileUtils.write(new File(risFile, "pubmed6.html"), abstractList.toXML(), Charset.forName("UTF-8"));
+		FileUtils.write(new File(risFile, "pubmed6.html"), abstractList.toXML(), CMineUtil.UTF8_CHARSET);
 		Multiset<String> countedSet = abstractAnalyzer.getSectionMultiset();
 		LOG.trace("abstract terms: "+countedSet.size());
 		Iterable<Multiset.Entry<String>> sectionByCount = CMineUtil.getEntriesSortedByCount(countedSet);

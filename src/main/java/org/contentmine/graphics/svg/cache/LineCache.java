@@ -1,5 +1,6 @@
 package org.contentmine.graphics.svg.cache;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -21,6 +22,7 @@ import org.contentmine.graphics.svg.SVGLine.LineDirection;
 import org.contentmine.graphics.svg.SVGLineList;
 import org.contentmine.graphics.svg.SVGPolyline;
 import org.contentmine.graphics.svg.SVGRect;
+import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.graphics.svg.linestuff.AxialLineList;
 import org.contentmine.graphics.svg.linestuff.HorizontalLineComparator;
 import org.contentmine.graphics.svg.plot.AbstractPlotBox;
@@ -47,14 +49,14 @@ public class LineCache extends AbstractCache {
 	}
 	private static Double STROKE_WIDTH_FACTOR = 5.0;
 
-	private List<SVGLine> horizontalLines;
-	private List<SVGLine> verticalLines;
+	private List<SVGLine> horizontalLines/* = new ArrayList<>()*/;
+	private List<SVGLine> verticalLines/* = new ArrayList<>()*/;
 
 	private SVGLineList lineList;
-	private SVGLineList longHorizontalLineList;
+	private SVGLineList longHorizontalLineList/* = new SVGLineList()*/;
 	// where possible short horizontal lines will be contained within sibling tuples
-	private SVGLineList shortHorizontalLineList;
-	private List<SVGLineList> horizontalSiblingsList;
+	private SVGLineList shortHorizontalLineList/*  = new SVGLineList()*/;
+	private List<SVGLineList> horizontalSiblingsList/* = new ArrayList<>()*/;
 	private SVGLineList topHorizontalLineList;
 	private SVGLineList bottomHorizontalLineList;
 	private Multiset<Double> horizontalLineStrokeWidthSet;
@@ -74,6 +76,7 @@ public class LineCache extends AbstractCache {
 	private double segmentTolerance = 1.0;
 	private IntArray gridXCoordinates;
 	private IntArray gridYCoordinates;
+	private LineBoxCache lineBoxCache;
 
 	public LineCache() {
 		this(new ComponentCache());
@@ -90,28 +93,14 @@ public class LineCache extends AbstractCache {
 	}
 	
 	private void init() {
-		// leave lists as null untill needed
+		// leave lists as null until needed
 	}
 	
-	/** clears the internediate caaches such a horizontal lines
-	 * messy but necessary when repeatedly adding data.
-	 * don't know whether caching is worth it.
-	 */
-	public void clearLineCaches() {
-        horizontalLines = null;
-        verticalLines = null;
-        lineList = null;
-        longHorizontalLineList = null;
-        shortHorizontalLineList = null;
-        horizontalSiblingsList = null;
-        topHorizontalLineList = null;
-        bottomHorizontalLineList = null;
-        horizontalLineStrokeWidthSet = null;
-        allLines = null;
-        longHorizontalEdgeLines = null;
-        longVerticalEdgeLines = null;
-        fullLineBox = null;
-        lineBbox = null;
+	public static LineCache createLineCache(AbstractCMElement svgElement) {
+		ComponentCache componentCache = new ComponentCache();
+		componentCache.readGraphicsComponentsAndMakeCaches(svgElement);
+		LineCache lineCache = componentCache.getOrCreateLineCache();
+		return lineCache;
 	}
 
 	/** the bounding box of the actual line components
@@ -122,6 +111,7 @@ public class LineCache extends AbstractCache {
 		return getOrCreateBoundingBox(lineList.getLineList());
 	}
 
+	@Override
 	public List<? extends SVGElement> getOrCreateElementList() {
 		return getOrCreateLineList().getLineList();
 	}
@@ -307,7 +297,7 @@ public class LineCache extends AbstractCache {
 		getOrCreateLineList();
 		if (verticalLines == null) {
 			verticalLines = SVGLine.findHorizontalOrVerticalLines(lineList.getLineList(), LineDirection.VERTICAL, AnnotatedAxis.EPS);
-			verticalLines = SVGLine.mergeParallelLines(verticalLines, joinEps);
+			verticalLines = SVGLine.mergeParallelEndToEndHorizontalOrVertical(verticalLines, joinEps);
 		}
 		return verticalLines;
 	}
@@ -316,7 +306,7 @@ public class LineCache extends AbstractCache {
 		getOrCreateLineList();
 		if (horizontalLines == null) {
 			List<SVGLine> horizontalLines0 = SVGLine.findHorizontalOrVerticalLines(lineList.getLineList(), LineDirection.HORIZONTAL, AnnotatedAxis.EPS);
-			horizontalLines = SVGLine.mergeParallelLines(horizontalLines0, joinEps );
+			horizontalLines = SVGLine.mergeParallelEndToEndHorizontalOrVertical(horizontalLines0, joinEps );
 			if (horizontalLines0.size() != horizontalLines.size()) {
 				LOG.trace("merged horizontal lines: ");
 			}
@@ -434,12 +424,13 @@ public class LineCache extends AbstractCache {
 	@Override
 	public String toString() {
 		String s = ""
-			+ "hor: "+horizontalLines.size()+"; "
-			+ "vert: "+verticalLines.size()+"; "
+			+ "hor: "+((horizontalLines == null) ? 0 : horizontalLines.size())+"; "
+			+ "vert: "+((verticalLines == null) ? 0 : verticalLines.size())+"; "
 			+ "line: "+lineList.size()+"; "
-			+ "longH: "+longHorizontalLineList.size()+"; "
-			+ "shortH: "+shortHorizontalLineList.size()+"; "
-			+ "siblingsH: "+horizontalSiblingsList.size()+"; ";
+			+ "longH: "+((longHorizontalLineList == null) ? 0 : longHorizontalLineList.size())+"; "
+			+ "shortH: "+((shortHorizontalLineList == null) ? 0 : shortHorizontalLineList.size())+"; "
+			+ "siblingsH: "+((horizontalSiblingsList == null) ? 0 : horizontalSiblingsList.size())+"; "
+			;
 		return s;
 
 	}
@@ -456,6 +447,7 @@ public class LineCache extends AbstractCache {
 
 	@Override
 	public void clearAll() {
+		LOG.debug("clearAll");
 		superClearAll();
 		horizontalLines = null;
 		verticalLines = null;
@@ -547,6 +539,59 @@ public class LineCache extends AbstractCache {
 			this.addLines(svgLineList.getLineList());
 		}
 	}
+	
+	/** convenience method to extract lines and write as SVG.
+	 *  
+	 *  
+	 * @param inDir
+	 * @param svgName
+	 * @param outdir
+	 * @param outName
+	 * @return
+	 */
+
+	public static SVGLineList extractAndDisplayLines(File inDir, String svgName, File outdir,  String outName) {
+		AbstractCMElement svgElement = SVGElement.readAndCreateSVG(new File(inDir, svgName));
+		return createLineCacheAndDisplay(outdir, outName, svgElement);
+	}
+
+	/** convenience method to create LineCache and display contents
+	 * 
+	 * 
+	 * @param outdir
+	 * @param outName
+	 * @param svgElement
+	 * @return
+	 */
+	public static SVGLineList createLineCacheAndDisplay(File outdir, String outName, AbstractCMElement svgElement) {
+		LineCache lineCache = createLineCache(svgElement);
+		SVGSVG.wrapAndWriteAsSVG(lineCache.getOrCreateConvertedSVGElement(), new File(outdir, outName));
+		SVGLineList lineList = lineCache.getOrCreateLineList();
+		return lineList;
+	}
+
+	/** lineBoxCache requires lineCaches first */
+	public LineBoxCache getOrCreateLineBoxCache() {
+		Level level = LOG.getLevel();
+//		LOG.setLevel(Level.TRACE);
+		if (lineBoxCache == null) {
+			lineBoxCache = new LineBoxCache();
+			getOrCreateHorizontalLineList();
+			LOG.trace("HH "+getOrCreateHorizontalLineList().size()+"/"+getOrCreateHorizontalLineList());
+			getOrCreateVerticalLineList();
+			SVGSVG.wrapAndWriteAsSVG(verticalLines, new File("target/cache/vertical0.svg"));
+			LOG.trace("VV "+getOrCreateVerticalLineList().size()+"/"+getOrCreateVerticalLineList().size());
+			lineBoxCache.createLineBoxes(horizontalLines, verticalLines);
+			LOG.trace("LBox "+lineBoxCache);
+			SVGSVG.wrapAndWriteAsSVG(horizontalLines, new File("target/cache/horizontal.svg"));
+			SVGSVG.wrapAndWriteAsSVG(verticalLines, new File("target/cache/vertical.svg"));			
+		}
+		LOG.setLevel(level);
+		return lineBoxCache;
+	}
+
+
+
 
 
 

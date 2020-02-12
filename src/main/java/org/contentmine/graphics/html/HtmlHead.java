@@ -20,6 +20,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.log4j.Logger;
+import org.contentmine.eucl.xml.XMLUtil;
+
+import nu.xom.Element;
 
 
 /** base class for lightweight generic SVG element.
@@ -29,6 +32,7 @@ import org.apache.log4j.Logger;
  */
 public class HtmlHead extends HtmlElement {
 	
+	private static final String NAME = "name";
 	private final static Logger LOG = Logger.getLogger(HtmlHead.class);
 	public final static String TAG = "head";
 
@@ -121,6 +125,17 @@ public class HtmlHead extends HtmlElement {
 		HtmlElement meta = new HtmlMeta();
 		meta.setCharset(UTF_8);
 		this.appendChild(meta);
+	}
+
+	/** gets value from <meta>
+	 * e.g. from <meta name="foo"
+	 * @param name
+	 * @return
+	 */
+	public String getMetaElementValue(String name) {
+		String xpath = "./*[local-name()='" + HtmlMeta.TAG + "' and @" + HtmlMeta.NAME + "='" + name + "']";
+		HtmlMeta metaElement = (HtmlMeta) XMLUtil.getFirstElement(this, xpath);
+		return metaElement == null ? null : metaElement.getContent();
 	}
 
 

@@ -19,6 +19,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.DebugPrint;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.euclid.util.CMFileUtil;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -45,8 +46,10 @@ import org.contentmine.norma.sections.JATSSecElement;
 import org.contentmine.norma.sections.JATSSectionTagger;
 import org.contentmine.norma.sections.JATSSectionTagger.SectionTag;
 import org.contentmine.norma.sections.JATSSectionTagger.SectionType;
+import org.eclipse.jetty.util.log.Log;
 import org.w3c.dom.Document;
 
+import nu.xom.Attribute;
 import nu.xom.Element;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
@@ -249,12 +252,14 @@ public class AMISectionTool extends AbstractAMITool {
 		}
 	}
 
-	public void processTree() {
+	public boolean processTree() {
+		processedTree = true;
 		sectionsDir = cTree.getSectionsDirectory();
 		boolean debug = false;
 		if (!CMFileUtil.shouldMake(forceMake, sectionsDir, debug, sectionsDir)) {
 			if (debug) LOG.debug("skipped: "+sectionsDir);
-			return;
+			processedTree = false;
+			return processedTree;
 		}
 		boolean deleteExisting = false;
 		if (cTree == null || !cTree.hasExistingFulltextXML()) {
@@ -264,6 +269,7 @@ public class AMISectionTool extends AbstractAMITool {
 		} else {
 			tagWithJATSTagger(deleteExisting); // oldStyle
 		}
+		return processedTree;
 	}
 
 	private void createSections() {
@@ -323,7 +329,7 @@ public class AMISectionTool extends AbstractAMITool {
 		HtmlElement htmlElement = createAndWriteHTML(destFile);
 		if (htmlElement instanceof HtmlTable) {
 			HtmlTable denormalizedheader = ((HtmlTable) htmlElement).getDenormalizedHeader();
-			LOG.debug("DH "+denormalizedheader.toXML());
+			LOG.trace("DH "+denormalizedheader.toXML());
 			File denormalizedFile = new File(destFile.toString().replace("."+CTree.XML, "."+"denorm"+"."+CTree.HTML));
 			LOG.debug("wrote denorm: "+denormalizedFile);
 			XMLUtil.writeQuietly(denormalizedheader, denormalizedFile, 1);
@@ -526,7 +532,7 @@ public class AMISectionTool extends AbstractAMITool {
 			Document xslDocument = normaTransformer.createW3CStylesheetDocument(xsltName);
 			String sectionHtmlString = normaTransformer.transform(xslDocument, xmlFile);
 			File htmlFile = createFileDescriptor(sectionDir, title, CTree.HTML);
-			IOUtils.write(sectionHtmlString, new FileOutputStream(htmlFile), Charset.forName("UTF-8"));
+			IOUtils.write(sectionHtmlString, new FileOutputStream(htmlFile), CMineUtil.UTF8_CHARSET);
 		} catch (IOException ioe) {
 			throw new RuntimeException("failed to convert/write XML to HTML");
 		}
@@ -683,6 +689,7 @@ public class AMISectionTool extends AbstractAMITool {
 			DebugPrint.debugPrint(tag.name()+": "+tag.getDescription());
 		}
 	}
+
 }
 
 class SectionComparator implements Comparator<File> {

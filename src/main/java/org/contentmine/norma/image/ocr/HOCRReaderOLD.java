@@ -1,7 +1,6 @@
 package org.contentmine.norma.image.ocr;
 
 import java.awt.image.BufferedImage;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -18,6 +17,7 @@ import javax.imageio.ImageIO;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -180,7 +180,7 @@ public class HOCRReaderOLD extends InputReader {
 	}
 	
 	public void readHOCR(InputStream is) throws IOException {
-		String s = IOUtils.toString(is, "UTF-8");
+		String s = IOUtils.toString(is, CMineUtil.UTF8_CHARSET);
 		readHOCR(HtmlElement.create(XMLUtil.stripDTDAndParse(s)));
 		applyUniversalSubstitutions();
 		processHTMLAndCreateSVG();

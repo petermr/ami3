@@ -91,13 +91,15 @@ public class AMITableToolTest extends AbstractAMITest {
 	@Test
 	public void testSummaryTableClimate() {
 //		System.out.println("DIR "+OIL186+" X "+OIL186.exists());
+		CMIP200 = new File("/Users/pm286/workspace/projects/climate/searches/climatechange");
 		String args = ""
 				+ "-p " + CMIP200 + ""
 				+ " --summarytable __table/summary.html"
 				+ " --tabledir sections/tables"
 				
-				+ " --templatefile "+CLIM_SEARCH+"/../templates/climate.xml"
-				+ " --template composition"
+//				+ " --templatefile "+CLIM_SEARCH+"/../templates/climate.xml"
+//				+ " --templatefile "+"workspace/projects/climate/templates/climate.xml"
+//				+ " --template composition"
 			;
 		new AMITableTool().runCommands(args);
 	}

@@ -1,5 +1,6 @@
 package org.contentmine.graphics.svg.cache;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -18,14 +19,17 @@ import org.contentmine.graphics.html.HtmlP;
 import org.contentmine.graphics.html.HtmlSpan;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
+import org.contentmine.graphics.svg.SVGLineList;
 import org.contentmine.graphics.svg.SVGLine.LineDirection;
 import org.contentmine.graphics.svg.SVGRect;
+import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.graphics.svg.SVGText;
+import org.contentmine.graphics.svg.SVGTextBuilder;
 import org.contentmine.graphics.svg.SVGTextComparator;
 import org.contentmine.graphics.svg.StyleAttributeFactory;
 import org.contentmine.graphics.svg.fonts.StyleRecord;
 import org.contentmine.graphics.svg.fonts.StyleRecordFactory;
-import org.contentmine.graphics.svg.fonts.StyleRecordSet;
+import org.contentmine.graphics.svg.fonts.StyledBoxRecordSet;
 import org.contentmine.graphics.svg.normalize.TextDecorator;
 import org.contentmine.graphics.svg.plot.AnnotatedAxis;
 import org.contentmine.graphics.svg.text.SVGTextLine;
@@ -70,23 +74,29 @@ public class TextCache extends AbstractCache {
 	private List<SVGText> currentTextList;
 	private StyleRecordFactory styleRecordFactory;
 	private List<StyleRecord> sortedStyleRecords;
-	private StyleRecordSet styleRecordSet;
+	private StyledBoxRecordSet styleRecordSet;
 	private Multimap<Double, SVGText> horizontalTextsByYCoordinate;
 	private Multimap<Double, SVGText> horizontalTextsByFontSize;
 	private int coordinateDecimalPlaces = 1;
 	SVGTextLineList textLineListForLargestFont;
-	private StyleRecordSet horizontalStyleRecordSet;
+	private StyledBoxRecordSet horizontalStyleRecordSet;
 	private List<SVGText> horizontalTextListSortedY;
 	Double largestCurrentFont;
 	SVGTextLineList textLines;
 	SVGTextLineList processedTextLines;
 	private Stack<TextLineFormatter> lineFormatterStack;
 	private SuscriptFormatter suscriptFormatter;
+	private List<Real2Range> bboxList;
+	private SVGTextBuilder svgTextBuilder;
 
 	
 	public TextCache(ComponentCache svgCache) {
 		super(svgCache);
 		init();
+	}
+
+	public TextCache() {
+		this(new ComponentCache());
 	}
 
 	private void init() {
@@ -490,8 +500,8 @@ public class TextCache extends AbstractCache {
 	@Override
 	public String toString() {
 		String s = ""
-			+ "hor: "+horizontalTexts.size()+"; "
-			+ "vert: "+verticalTexts.size()+"; "
+			+ "hortxt: "+horizontalTexts.size()+"; "
+			+ "vertxt: "+verticalTexts.size()+"; "
 			+ "textList "+originalTextList.size();
 		return s;
 
@@ -569,7 +579,7 @@ public class TextCache extends AbstractCache {
 		return styleRecordFactory;
 	}
 
-	public StyleRecordSet getStyleRecordSet() {
+	public StyledBoxRecordSet getStyleRecordSet() {
 		return styleRecordSet;
 	}
 
@@ -597,7 +607,7 @@ public class TextCache extends AbstractCache {
 		List<StyleRecord> sortedStyleRecords = createSortedStyleRecords();
 		LOG.trace(sortedStyleRecords.size());
 		for (int i = 0; i < sortedStyleRecords.size(); i++) {
-			StyleRecordSet leftStyleRecordSet = getStyleRecordSet();
+			StyledBoxRecordSet leftStyleRecordSet = getStyleRecordSet();
 			SVGElement gg = leftStyleRecordSet.createStyledTextBBoxes(texts);
 			gg.setId("text boxes");
 			g.appendChild(gg);
@@ -683,13 +693,13 @@ public class TextCache extends AbstractCache {
 
 	public SVGTextLineList getTextLinesForLargestFont() {
 		// assume that y-coords will be the most important structure
-		StyleRecordSet styleRecordSet = getOrCreateHorizontalStyleRecordSet();
+		StyledBoxRecordSet styleRecordSet = getOrCreateHorizontalStyleRecordSet();
 		largestCurrentFont = styleRecordSet.getLargestFontSize();
 		textLineListForLargestFont = this.getTextLinesForFontSize(largestCurrentFont);
 		return textLineListForLargestFont;
 	}
 
-	public StyleRecordSet getOrCreateHorizontalStyleRecordSet() {
+	public StyledBoxRecordSet getOrCreateHorizontalStyleRecordSet() {
 		if (horizontalStyleRecordSet == null) {
 			List<SVGText> orCreateHorizontalTextListSortedY = getOrCreateHorizontalTextListSortedY();
 			horizontalStyleRecordSet = new StyleRecordFactory().createStyleRecordSet(orCreateHorizontalTextListSortedY);
@@ -714,7 +724,7 @@ public class TextCache extends AbstractCache {
 	}
 
 	public List<Double> getMinorFontSizes() {
-		StyleRecordSet horizontalStyleRecordSet =
+		StyledBoxRecordSet horizontalStyleRecordSet =
 				getOrCreateHorizontalStyleRecordSet();
 		List<Double> minorFontSizes = horizontalStyleRecordSet.getMinorFontSizes();
 		return minorFontSizes;
@@ -796,6 +806,68 @@ public class TextCache extends AbstractCache {
 	public void setSuscriptFormatter(SuscriptFormatter suscriptFormatter) {
 		this.suscriptFormatter = suscriptFormatter;
 	}
+
+	/** convenience method to create TextCache and display contents
+	 * 
+	 * 
+	 * @param outdir
+	 * @param outName
+	 * @param svgElement
+	 * @return
+	 */
+	public static List<SVGText> createTextCacheAndDisplay(
+			File outdir, String outName, AbstractCMElement svgElement, boolean addBBox) {
+		ComponentCache componentCache = new ComponentCache();
+		componentCache.readGraphicsComponentsAndMakeCaches(svgElement);
+		TextCache textCache = componentCache.getOrCreateTextCache();
+		SVGElement convertedSVGElement = textCache.getOrCreateConvertedSVGElement();
+		SVGElement displayElement = (SVGElement) convertedSVGElement.copy();
+		if (addBBox) {
+			List<Real2Range> textBoxList = textCache.getOrCreateBoundingBoxList();
+			for (Real2Range textBox : textBoxList) {
+				displayElement.appendChild(SVGRect.createFromReal2Range(textBox)
+						.setFill("red").setStroke("blue").setStrokeWidth(0.3).setOpacity(0.2));
+			}
+		}
+		SVGSVG.wrapAndWriteAsSVG(displayElement, new File(outdir, outName));
+		//not used
+		List<SVGText> textList = textCache.getOrCreateCurrentTextList();
+		return textList;
+	}
+
+	private List<Real2Range> getOrCreateBoundingBoxList() {
+		if (bboxList == null) {
+			bboxList = new ArrayList<>();
+			getOrCreateCurrentTextList();
+			for (SVGText text : currentTextList) {
+				Real2Range bbox = text.getBoundingBox();
+				bboxList.add(bbox);
+	//			SVGRect rect = text.getBoundingSVGRect();
+			}
+		}
+		return bboxList;
+	}
+
+	public SVGTextBuilder getOrCreateSVGTextBuilder() {
+		if (svgTextBuilder == null) {
+			svgTextBuilder = new SVGTextBuilder();
+			svgTextBuilder.readTextList(currentTextList);
+		}
+		return svgTextBuilder;
+	}
+
+	/** create bounding boxes round all text elements and margin lines.
+	 *  
+	 * @return
+	 */
+	SVGElement createTextBoxes() {
+		StyleRecordFactory styleRecordFactory = new StyleRecordFactory();
+		styleRecordFactory.setNormalizeFontNames(true);
+		StyledBoxRecordSet styleRecordSet = styleRecordFactory.createStyleRecordSet(originalTextList);
+		SVGElement g = styleRecordSet.createStyledTextBBoxes(originalTextList);
+		return g;
+	}
+
 
 
 

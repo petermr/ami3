@@ -98,6 +98,7 @@ public class SVGPath extends SVGShape {
 	private static final Double MAX_WIDTH = 2.0;
 	public final static Pattern REPEATED_ML = Pattern.compile("ML(ML)*");
 	private static final double CIRCLE_EPSILON = 0.01;
+//	private static final int DSTRING_MAX = 100000 ; // omit longer attributes 
 	private static final int DSTRING_MAX = 100000 ; // omit longer attributes 
 	
 	protected GeneralPath path2;
@@ -223,14 +224,18 @@ public class SVGPath extends SVGShape {
 		StringBuilder sb = new StringBuilder();
 		if (xy.size() > 0) {
 			sb.append(M);
-			sb.append(xy.get(0).getX()+S_SPACE);
-			sb.append(xy.get(0).getY()+S_SPACE);
+			sb.append(xy.get(0).getX());
+			sb.append(S_SPACE);
+			sb.append(xy.get(0).getY());
+			sb.append(S_SPACE);
 		}
 		if (xy.size() > 1) {
 			for (int i = 1; i < xy.size(); i++ ) {
 				sb.append(L);
-				sb.append(xy.get(i).getX()+S_SPACE);
-				sb.append(xy.get(i).getY()+S_SPACE);
+				sb.append(xy.get(i).getX());
+				sb.append(S_SPACE);
+				sb.append(xy.get(i).getY());
+				sb.append(S_SPACE);
 			}
 			sb.append(Z);
 		}
@@ -581,6 +586,8 @@ public class SVGPath extends SVGShape {
 
 	@Override
 	public String createSignatureFromDStringPrimitives() {
+		int factor = 1 /*1000*/;
+		int limit = 1000; // millis
 		String signature = null;
 		String dString = getDString();
 		long millis = System.currentTimeMillis();
@@ -588,26 +595,26 @@ public class SVGPath extends SVGShape {
 			int length = dString.length();
 			boolean longString = length > DSTRING_MAX;
 			if (longString) {
+				// strip all numbers and spaces
 				LOG.debug("skipped long string: "+length);
-				signature = M_NULL;
-				primitiveList = new PathPrimitiveList(); // empty, don't recompute
+				signature = createSimpleSignature();
+//				primitiveList = new PathPrimitiveList(); // empty, don't recompute
 			} else {
 				if (length > 10000) {
 					LOG.debug("longSig: "+length);
 				}
 	 			getOrCreatePathPrimitiveList();
 	 			long mm = System.currentTimeMillis();
-	 			long tt = (mm - millis)/1000;
+	 			long tt = (mm - millis)/factor;
 	 			boolean long1 = false;
-	 			if (tt > 1) {
+	 			if (tt > limit) {
 	 				LOG.debug("T "+tt+"; "+";"+length+";"+longString);
 	 				long1 = true;
 	 			}
 				signature = primitiveList.createSignature();
-	 			long mmm = System.currentTimeMillis();
-	 			long ttt = (mmm - mm)/1000;
+	 			long ttt = (System.currentTimeMillis() - mm)/1000;
 	 			if (long1) {
-//	 				LOG.debug("TT "+ttt+"; "+";"+length+";"+longString);
+	 				LOG.debug("TT "+ttt+"; "+";"+length+";"+longString);
 	 			}
 	 			if (length > 10000) {
 	 				LOG.trace("long path: "+primitiveList.size());
@@ -616,6 +623,16 @@ public class SVGPath extends SVGShape {
 		} else {
 			signature = M_NULL;
 		}
+		return signature;
+	}
+
+	/** create signature by removing all numbers and spaces from DString.
+	 * should have thought of this earlier!
+	 * @return
+	 */
+	public String createSimpleSignature() {
+		String signature;
+		signature = getDString().replaceAll("[\\d|\\.|\\-|\\s]", "");
 		return signature;
 	}
 
@@ -1068,7 +1085,8 @@ public class SVGPath extends SVGShape {
 	public String getOrCreateSignatureAttributeValue() {
 		String signature = super.getAttributeValue(SIGNATURE);
 		if (signature == null) {
-			signature = createSignatureFromDStringPrimitives();
+//			signature = createSignatureFromDStringPrimitives();
+			signature = createSimpleSignature();
 			if (signature != null) {
 				addAttribute(new Attribute(SIGNATURE, signature));
 			}
@@ -1080,7 +1098,8 @@ public class SVGPath extends SVGShape {
 	 * 
 	 */
 	public void forceCreateSignatureAttributeValue() {
-		String signature = createSignatureFromDStringPrimitives();
+		String signature = createSimpleSignature();
+//		String signature = createSignatureFromDStringPrimitives();
 		if (signature != null) {
 			addAttribute(new Attribute(SIGNATURE, signature));
 		}

@@ -12,8 +12,8 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.cproject.metadata.crossref.CrossrefDownloader;
 import org.contentmine.cproject.util.CMineTestFixtures;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.norma.cproject.HtmlTidier;
-import org.contentmine.norma.pubstyle.rs.RSDownloader;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -49,7 +49,7 @@ public class RSDownloadTest {
 		rsDownLoader.setRows(250);
 		URL url = rsDownLoader.getURL();
 		InputStream stream = url.openStream();
-		List<String> content = IOUtils.readLines(stream, "UTF-8");
+		List<String> content = IOUtils.readLines(stream, CMineUtil.UTF8_CHARSET);
 		Assert.assertEquals(1, content.size());
 		
 	}
@@ -62,7 +62,7 @@ public class RSDownloadTest {
 		rsDownLoader.setRows(250);
 		URL url = rsDownLoader.getURL();
 		InputStream stream = url.openStream();
-		String content = IOUtils.readLines(stream, "UTF-8").get(0);
+		String content = IOUtils.readLines(stream, CMineUtil.UTF8_CHARSET).get(0);
 		JsonParser parser = new JsonParser();
 		JsonElement element = parser.parse(content);
 		JsonElement message = element.getAsJsonObject().get("message");

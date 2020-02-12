@@ -1,6 +1,8 @@
 package org.contentmine.graphics.svg;
 
 import java.awt.geom.GeneralPath;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 
 import org.apache.log4j.Logger;
 import org.contentmine.eucl.euclid.Angle;
@@ -34,6 +36,8 @@ public abstract class SVGPathPrimitive {
 
 	protected Real2Array coordArray;
 	protected Real2 zerothCoord; // from preceding primitive
+	static NumberFormat FORMAT3 = new DecimalFormat("#0.000");
+
 
 	public SVGPathPrimitive() {
 		
@@ -43,17 +47,19 @@ public abstract class SVGPathPrimitive {
 	
 		
 	public static String formatDString(String d, int places) {
-		PathPrimitiveList primitiveList = null;
+		PathPrimitiveList pathPrimitiveList = null;
 		try {
-			primitiveList = new SVGPathParser().parseDString(d);
+			pathPrimitiveList = new SVGPathParser().parseDString(d);
 		} catch (RuntimeException e) {
 			LOG.warn("Cannot parse: "+d);
 			throw e;
 		}
-		for (SVGPathPrimitive primitive : primitiveList) {
-			primitive.format(places);
+		for (SVGPathPrimitive pathPrimitive : pathPrimitiveList) {
+			if (pathPrimitive != null) {
+				pathPrimitive.format(places);
+			}
 		}
-		d = primitiveList.createD();
+		d = pathPrimitiveList.createD();
 		return d;
 	}
 	
@@ -96,7 +102,22 @@ public abstract class SVGPathPrimitive {
 	}
 	
 	protected String formatCoords(Real2 coords) {
-		return coords == null ? null : ((int)(1000*coords.getX()))/1000.+" "+(int)(1000*coords.getY())/1000.+" ";
+		if (coords == null) {return null;}
+		StringBuilder sb = new StringBuilder();
+		formatCoordsIntoStringBuilder(coords, sb);
+		return sb.toString();
+	}
+
+	public void formatCoordsIntoStringBuilder(Real2 coords, StringBuilder sb) {
+		sb.append( format3(coords.getX()));
+		sb.append(" ");
+		sb.append( format3(coords.getY()));
+		sb.append(" ");
+	}
+
+	protected String format3(double xy) {
+//		return String.valueOf(((int) (xy * 1000.))/1000);
+		return FORMAT3.format(xy);
 	}
 	
 	public void format(int places) {
@@ -152,6 +173,7 @@ public abstract class SVGPathPrimitive {
 	}
 
 	public void setFirstPoint(Real2 lastPoint) {
+//		System.out.println("avoid calling this?");
 		this.zerothCoord = lastPoint;
 	}
 	
@@ -162,4 +184,37 @@ public abstract class SVGPathPrimitive {
 //	public static void setFirstPoints(PathPrimitiveList primitiveList) {
 //		throw new RuntimeException("NYI");
 //	}
+	
+	/** from SO .
+	https://stackoverflow.com/questions/8553672/a-faster-alternative-to-decimalformat-format
+	 * @param builder
+	 * @param d
+	 */
+	public static void appendTo6PeterLawrey(StringBuilder builder, double d) {
+	    if (d < 0) {
+	        builder.append('-');
+	        d = -d;
+	    }
+	    if (d * 1e6 + 0.5 > Long.MAX_VALUE) {
+	        // TODO write a fall back.
+	        throw new IllegalArgumentException("number too large");
+	    }
+	    long scaled = (long) (d * 1e6 + 0.5);
+	    long factor = 1000000;
+	    int scale = 7;
+	    long scaled2 = scaled / 10;
+	    while (factor <= scaled2) {
+	        factor *= 10;
+	        scale++;
+	    }
+	    while (scale > 0) {
+	        if (scale == 6)
+	            builder.append('.');
+	        long c = scaled / factor % 10;
+	        factor /= 10;
+	        builder.append((char) ('0' + c));
+	        scale--;
+	    }
+	}
+
 }

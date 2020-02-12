@@ -1,6 +1,7 @@
 package org.contentmine.graphics.svg.cache;
 
 import java.io.File;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +27,76 @@ public abstract class AbstractCache {
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
+
+
+	public enum CacheType {
+		/**
+		document(new DocumentCache()),
+		glyph(new GlyphCache()),
+		image(new ImageCache()),
+		line(new LineCache()),
+		linebox(new LineBoxCache()),
+		math(new MathCache()),
+		page(new PageCache()),
+		// more page components could go here
+		path(new PathCache()),
+		polygon(new PolygonCache()),
+		polyline(new PolylineCache()),
+		rect(new RectCache()),
+		shape(new ShapeCache()),
+		text(new TextCache()),
+		*/
+		contentbox(ContentBoxCache.class),
+		document(DocumentCache.class),
+		glyph(GlyphCache.class),
+		image(ImageCache.class),
+		line(LineCache.class),
+		linebox(LineBoxCache.class),
+		math(MathCache.class),
+		page(PageCache.class),
+		// more page components could go here
+		path(PathCache.class),
+		polygon(PolygonCache.class),
+		polyline(PolylineCache.class),
+		rect(RectCache.class),
+		shape(ShapeCache.class),
+		text(TextCache.class),
+		textchunk(TextChunkCache.class),
+		;
+		private Class<? extends AbstractCache> clazz;
+		private CacheType() { 
+		}
+		
+		private CacheType(Class<?extends AbstractCache> clazz) {
+			this();
+			this.clazz = clazz; 
+		}
+		
+		public Class<? extends AbstractCache> getCacheClass() {
+			return clazz;
+		}
+		
+		public static Class<? extends AbstractCache> getCacheClass(CacheType type) {
+			for (CacheType cacheType : values()) {
+				if (cacheType.equals(type)) {
+					return cacheType.getCacheClass();
+				}
+			}
+			return null;
+		}
+		
+		public static CacheType getCacheType(Class<? extends AbstractCache> clazz) {
+			for (CacheType cacheType : values()) {
+				if (cacheType.getCacheClass().equals(clazz)) {
+					return cacheType;
+				}
+			}
+			return null;
+		}
+		
+	}
 	
+
 	public static final double MARGIN = 1.0;
 	
 	protected Double axialEps = 0.1;
@@ -66,6 +136,10 @@ public abstract class AbstractCache {
 		this.svgMediaBox = svgMediaBox;
 	}
 
+	public CacheType getOrCreateCacheType() {
+		return CacheType.getCacheType(this.getClass());
+	}
+	
 	protected void drawBox(AbstractCMElement g, String col, double width) {
 		Real2Range box = this.getBoundingBox();
 		if (box != null) {
@@ -179,4 +253,20 @@ public abstract class AbstractCache {
 	public void setSiblingShapeCache(ShapeCache shapeCache) {
 		this.siblingShapeCache = shapeCache;
 	}
+
+	public void display(File svgDir, Path path, SVGElement svgElement) {
+		AbstractCache cache = this.createCache(svgElement);
+		SVGElement cacheElement = cache.getOrCreateConvertedSVGElement();
+		File svgOut = new File(svgDir, path.toString().replaceAll("\\.svg", "")+"."+cache.getClass().getSimpleName()+".svg");
+		SVGSVG.wrapAndWriteAsSVG(cacheElement, svgOut);
+	}
+
+	protected AbstractCache createCache(SVGElement svgElement) {
+		throw new RuntimeException("Override AbstractCache createCache in "+this.getClass());
+	}
+	
+	protected void printNonNull(StringBuilder sb, String name, AbstractCache cache) {
+		sb.append(((cache == null) ? "" : name+": "+cache.toString())+" ");
+	}
+
 }

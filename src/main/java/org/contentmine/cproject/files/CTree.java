@@ -13,6 +13,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
@@ -137,8 +139,8 @@ The results file include the regexes used and other metadata (more needed!). Aga
  */
 public class CTree extends CContainer implements Comparable<CTree> {
 
-
-
+	public static final String SCRAPED_METADATA = "scrapedMetadata";
+	public static final String C_TREE = "cTree";
 	private static final String IMAGEDOT = "image.";
 
 	enum TableFormat {
@@ -476,6 +478,11 @@ public class CTree extends CContainer implements Comparable<CTree> {
 		this.createDirectory(directory, delete);
 	}
 	
+	/** should normally create fromm CProject
+	 * 
+	 * @param filename
+	 */
+	@Deprecated
 	public CTree(String filename) {
 		this(new File(filename), false); 
 	}
@@ -887,9 +894,10 @@ public class CTree extends CContainer implements Comparable<CTree> {
 		File svgDir = getExistingSVGDir();
 		List<File> files = new ArrayList<File>();
 		if (svgDir != null) {
-			List<File> svgFiles0 = Arrays.asList(svgDir.listFiles());
-			CMineGlobber globber = new CMineGlobber().setRegex(".*/" + CTree.FULLTEXT_PAGE + "\\.?" + "\\d+.svg").setLocation(svgDir);
-			files = globber.listFiles();
+		    files = Stream.of(svgDir.listFiles())
+		    	      .filter(file -> !file.isDirectory())
+		    	      .sorted()
+		    	      .collect(Collectors.toList());
 		}
 		return files;
 	}
@@ -1080,7 +1088,7 @@ public class CTree extends CContainer implements Comparable<CTree> {
 		if (content != null) {
 			try {
 				LOG.trace("writing file: "+file);
-				FileUtils.write(file, content, Charset.forName("UTF-8"));
+				FileUtils.write(file, content, CMineUtil.UTF8_CHARSET);
 			} catch (IOException e) {
 				throw new RuntimeException("Cannot write file: ", e);
 			}
@@ -1129,13 +1137,25 @@ public class CTree extends CContainer implements Comparable<CTree> {
 		return filename;
 	}
 
-	
+	/**
+	 * creates a <cTree> element with list of reserved filenames
+	 * probably obsolete
+	 * @return
+	 */
 	public Element getMetadataElement() {
-		Element metadata = new Element("cTree");
+		Element metadata = new Element(C_TREE);
 		metadata.appendChild(this.toString());
 		return metadata;
 	}
-
+	
+	public void setScrapedMetadataElement(HtmlElement element, boolean delete) throws IOException {
+		File metadataFile = new File(this.getDirectory(), SCRAPED_METADATA+"."+CTree.HTML);
+		if (delete && metadataFile.exists()) {
+			FileUtils.forceDelete(metadataFile);
+		}
+		XMLUtil.debug(element, metadataFile, 1);
+	}
+	
 	public static boolean isNonEmptyNonReservedInputList(List<String> inputList) {
 		if (inputList == null || inputList.size() != 1) return false;
 		if (CTree.hasReservedParentDirectory(inputList.get(0))) return false;
@@ -1283,7 +1303,7 @@ public class CTree extends CContainer implements Comparable<CTree> {
 
 	private String readFileQuietly(File file) {
 		try {
-			return file == null ? null : FileUtils.readFileToString(file, Charset.forName("UTF-8"));
+			return file == null ? null : FileUtils.readFileToString(file, CMineUtil.UTF8_CHARSET);
 		} catch (IOException e) {
 //			throw new RuntimeException("Cannot read file: "+pdfTxt, e);
 			return null;
@@ -1716,18 +1736,21 @@ public class CTree extends CContainer implements Comparable<CTree> {
 		return  CMFileUtil.sortUniqueFilesByEmbeddedIntegers(this.getExistingSVGFileList());
 	}
 
-	public void processPDFTree() {
+	public boolean processPDFTree() {
+		boolean processedTree = true;
+		Level level = LOG.getLevel();
+//		LOG.setLevel(Level.TRACE);
 		int start = 0;
 		File existingFulltextPDF = getExistingFulltextPDF();
 		if (existingFulltextPDF == null) {
 			DebugPrint.warnPrintln(debugLevel, "null PDF for: "+this.getName());
-			return;
+			return false;
 		}
 		File svgDir = this.getExistingSVGDir();
 		if (svgDir != null && !CMFileUtil.shouldMake(forceMake, svgDir, existingFulltextPDF)) {
 //			DebugPrint.infoPrintln(debugLevel, "make is skipped: "+existingFulltextPDF);
 			System.out.print("make skipped ");
-			return;
+			return false;
 		}
 		PDDocument document = null;
 		try {
@@ -1746,13 +1769,19 @@ public class CTree extends CContainer implements Comparable<CTree> {
 				pageIncluder.setZeroNumberedIncludePages(new IntRange(start, start + deltaPages - 1));
 				System.out.print("pages "+pageIncluder.toString());
 		    	pdfDocumentProcessor.readAndProcess(document);
+				LOG.trace("readAndProcess");
 		    	pdfDocumentProcessor.writeSVGPages(directory);
+				LOG.trace("writeSVGPages");
 		    	pdfDocumentProcessor.writePDFImages(directory);
+				LOG.trace("writePDFImages");
 		    } catch (IOException ioe) {
 		    	LOG.error("cannot read/process: " + this + "; "+ioe);
 		    }
 		    start += deltaPages;
 		}
+		System.out.println("end: ");
+		LOG.setLevel(level);
+		return processedTree;
 	}
 
 	public void tidyImages() {
@@ -2093,4 +2122,5 @@ public class CTree extends CContainer implements Comparable<CTree> {
 		LOG.trace("raw words " + (rawWords != null ? rawWords.size() : null));
 		return rawWords;
 	}
+
 }

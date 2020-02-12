@@ -58,4 +58,31 @@ public class XMLUtilTest {
 		Assert.assertEquals("<a><meta a=\"b\"/></a>", s);
 	}
 
+	@Test
+	public void testReplaceCharacterEntities() {
+		String s = "you &hellip; and";
+		s = XMLUtil.replaceCharacterEntities(s);
+		Assert.assertEquals("you [[hellip]] and", s);
+		
+		s = "&hellip; and";
+		s = XMLUtil.replaceCharacterEntities(s);
+		Assert.assertEquals("[[hellip]] and", s);
+		
+		s = "you &hellip;";
+		s = XMLUtil.replaceCharacterEntities(s);
+		Assert.assertEquals("you [[hellip]]", s);
+		
+		s = "you &hellip;;";
+		s = XMLUtil.replaceCharacterEntities(s);
+		Assert.assertEquals("you [[hellip]];", s);
+		
+		s = "you &hellip";
+		s = XMLUtil.replaceCharacterEntities(s);
+		Assert.assertEquals("you &hellip", s);
+		
+		s = "<a>me &amp; you &hellip; and &junk;</a>";
+		s = XMLUtil.replaceCharacterEntities(s);
+		Assert.assertEquals("<a>me &amp; you [[hellip]] and [[junk]]</a>", s);
+		
+	}
 }

@@ -7,7 +7,6 @@ import java.io.FileOutputStream;
 import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -27,6 +26,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.ResourceLocation;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.cproject.util.RectangularTable;
 import org.contentmine.cproject.util.Utils;
 import org.contentmine.eucl.euclid.util.CMFileUtil;
@@ -764,7 +764,7 @@ public class NormaTransformer {
 	private HtmlElement applyTXT2HTMLToInputFile(File inputFile) {
 		HtmlElement htmlElement = null;
 		try {
-			inputTxt = FileUtils.readFileToString(inputFile, Charset.forName("UTF-8"));
+			inputTxt = FileUtils.readFileToString(inputFile, CMineUtil.UTF8_CHARSET);
 			htmlElement = convertToHTML(inputFile);
 		} catch (IOException e) {
 			throw new RuntimeException("Cannot transform TXT "+inputFile, e);
