@@ -34,7 +34,6 @@ import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.rendering.PDFRenderer;
 import org.apache.pdfbox.rendering.PageDrawer;
 import org.apache.pdfbox.rendering.PageDrawerParameters;
-import org.contentmine.ami.tools.AbstractAMITest;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.RealArray;
 import org.contentmine.graphics.svg.GraphicsElement.FontStyle;
@@ -392,7 +391,8 @@ public class PageDrawerRunner
 		
 		processPage(pageSerial);
 		
-		outputDir = AbstractAMITest.PDF2SVG2;
+		outputDir = new File("/users/pm286/");
+//		AbstractAMITest.PDF2SVG2;
 		outputPng = new File(outputDir, root+"."+pageSerial+".png");
 		
 		ImageIO.write(getImage(), "PNG", outputPng);
