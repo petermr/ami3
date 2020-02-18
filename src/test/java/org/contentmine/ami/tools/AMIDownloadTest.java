@@ -19,13 +19,8 @@ import org.contentmine.cproject.files.CTreeList;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
-import org.contentmine.graphics.html.HtmlBody;
-import org.contentmine.graphics.html.HtmlElement;
-import org.contentmine.graphics.html.HtmlHtml;
-import org.contentmine.graphics.html.HtmlLink;
-import org.contentmine.graphics.html.HtmlStyle;
+import org.contentmine.graphics.html.HtmlLi;
 import org.contentmine.graphics.html.HtmlUl;
-import org.contentmine.graphics.html.util.HtmlUtil;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -112,7 +107,7 @@ public class AMIDownloadTest extends AbstractAMITest {
 		CurlDownloader curlDownloader = new CurlDownloader();
 		String fileroot = "10.1101/850289v1";
 		
-		CurlPair curlPair = BiorxivDownloader.createCurlPair(downloadDir, fileroot);
+		CurlPair curlPair = new BiorxivDownloader().createCurlPair(downloadDir, fileroot);
 		curlDownloader.addCurlPair(curlPair);
 
 		String result = curlDownloader.run();
@@ -146,7 +141,7 @@ public class AMIDownloadTest extends AbstractAMITest {
 			       "/content/10.1101/819326v1",
 			      };
 		for (String fileroot : fileroots) {
-			curlDownloader.addCurlPair(BiorxivDownloader.createCurlPair(downloadDir, fileroot));
+			curlDownloader.addCurlPair(new BiorxivDownloader().createCurlPair(downloadDir, fileroot));
 		}
 		
 		curlDownloader.setTraceFile("target/trace.txt");
@@ -202,7 +197,7 @@ public class AMIDownloadTest extends AbstractAMITest {
 		List<String> fileroots = resultSet.getCitationLinks();
 		CurlDownloader curlDownloader = new CurlDownloader();
 		for (String fileroot : fileroots) {
-			curlDownloader.addCurlPair(BiorxivDownloader.createCurlPair(cProject.getDirectory(), fileroot));
+			curlDownloader.addCurlPair(biorxivDownloader.createCurlPair(cProject.getDirectory(), fileroot));
 		}
 		
 		curlDownloader.setTraceFile("target/trace.txt");
@@ -246,26 +241,53 @@ public class AMIDownloadTest extends AbstractAMITest {
 		Assert.assertTrue(new File(directory0, "scholarly.html").exists());
 		Assert.assertTrue(new File(directory0, "scrapedMetadata.html").exists());
 	}
+	
+	@Test
+	public void testSections() {
+		File projectDir = new File(DOWNLOAD_DIR,  "testsearch4");
+		Assert.assertTrue(projectDir.toString(), projectDir.exists());
+		String command = ""
+				+ "-p "+projectDir+""
+				+ ""
+				;
+		AMISectionTool sectionTool = new AMISectionTool();
+		sectionTool.runCommands(command);
+	}
+
+	@Test
+	public void testSearch() {
+		File projectDir = new File(DOWNLOAD_DIR,  "testsearch99");
+		Assert.assertTrue(projectDir.toString(), projectDir.exists());
+		String command = ""
+				+ "-p "+projectDir+""
+				+ " --dictionary country disease funders species"
+				;
+		AMISearchTool searchTool = new AMISearchTool();
+		searchTool.runCommands(command);
+	}
 
 	@Test
 	/** issues a search  and turns results into resultSet
 	 * 
 	 */
 	public void testBiorxivSearchResultSetLargeIT() throws IOException {
-		File targetDir = new File("target/biorxiv/testsearch");
+		int pagesize = 3;
+		int pages = 2;
+		File targetDir = new File("target/biorxiv/testsearch" + pagesize);
 		FileUtils.deleteQuietly(targetDir);
 		CProject cProject = new CProject(targetDir).cleanAllTrees();
 		cProject.cleanAllTrees();
+		cProject.getOrCreateExistingMetadataDir();
 		String args = 
 				"-p " + cProject.toString()
 				+ " --site biorxiv"
 				+ " --query climate change"
 				+ " --metadata __metadata"
 				+ " --rawfiletypes html pdf"
-				+ " --pagesize 1000"
-				+ " --pages 1 1"
-				+ " --limit 1000"
-				+ " --resultset resultSet1.clean.html"
+				+ " --pagesize " + pagesize
+				+ " --pages 1 " + pages
+				+ " --limit " + (pagesize * pages)
+//				+ " --resultset resultSet1.clean.html"
 			;
 		AMIDownloadTool downloadTool = new AMIDownloadTool();
 		downloadTool.runCommands(args);
@@ -304,12 +326,152 @@ public class AMIDownloadTest extends AbstractAMITest {
 		Assert.assertTrue(new File(directory0, "rawFullText.html").exists());
 		Assert.assertTrue(new File(directory0, "scholarly.html").exists());
 		Assert.assertTrue(new File(directory0, "scrapedMetadata.html").exists());
-		https://hal-sde.archives-ouvertes.fr/search/index/?q=permafrost&submit=&docType_s%5B%5D=ART&docType_s%5B%5D=COMM&docType_s%5B%5D=OUV&docType_s%5B%5D=COUV&docType_s%5B%5D=DOUV&docType_s%5B%5D=OTHER&docType_s%5B%5D=UNDEFINED&docType_s%5B%5D=REPORT&docType_s%5B%5D=THESE&docType_s%5B%5D=HDR&docType_s%5B%5D=LECTURE&submitType_s%5B%5D=file
+//		https://hal-sde.archives-ouvertes.fr/search/index/?q=permafrost&submit=&docType_s%5B%5D=ART&docType_s%5B%5D=COMM&docType_s%5B%5D=OUV&docType_s%5B%5D=COUV&docType_s%5B%5D=DOUV&docType_s%5B%5D=OTHER&docType_s%5B%5D=UNDEFINED&docType_s%5B%5D=REPORT&docType_s%5B%5D=THESE&docType_s%5B%5D=HDR&docType_s%5B%5D=LECTURE&submitType_s%5B%5D=file
 			
 	}
-
+	
+	// ============== Scielo =========
+	/** extract result set. Very messy. seems that each result consists of two tables,
+	 * the second table contains another table.
+	 * 
+   <center>
+    <table width="600" border="0" cellpadding="0" cellspacing="0">
+     <tbody>
+      <tr>
+       <td>
+        <hr width="600"/>
+        <font face="Verdana" size="1">
+         <b>1 / 280</b>
+        </font>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </center>
+   <center>
+    <table width="600" border="0" cellpadding="0" cellspacing="0">
+     <tbody>
+      <tr>
+       <td align="left" width="115" valign="top" rowspan="6">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+         <tbody>
+          <tr>
+           <td width="28%">
+            <input type="checkbox" name="listChecked" value="^m13555628^h4"/>
+           </td>
+           <td width="72%">
+            <font face="verdana" size="1">
+             <i>select</i>
+            </font>
+           </td>
+          </tr>
+          <tr>
+           <td width="28%">
+            <input type="image" name="toprint^m13555628" src="/iah/I/image/toprint.gif" border="0"/>
+           </td>
+           <td width="72%">
+            <font face="verdana" size="1">
+             <i>to print</i>
+            </font>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </td>
+       <td width="485">
+        <!-- formato de apresentacao da base -->
+        <table>
+         <tbody>
+== BIB == <tr>
+           <td width="15%"> </td>
+           <td>
+            <font class="isoref" size="-1">Salgueiro, João Hipólito Paiva de Britto et al. 
+             <font class="negrito" size="-1">Influence of oceanic-atmospheric interactions on extreme events of daily rainfall in the Sub-basin 39 located in Northeastern Brazil</font>. 
+== BIB ==    <i>RBRH</i>, Dec 2016, vol.21, no.4, p.685-693. ISSN 2318-0331
+             <br/>
+            </font>
+            <div align="left">
+             <font class="isoref" size="-1">
+              <font face="Symbol" color="#000080" size="1">·</font>
+*==ABSTR EN== <a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_abstract&amp;pid=S2318-03312016000400685&amp;lng=en&amp;nrm=iso&amp;tlng=en">abstract in english</a>
+             </font> | 
+             <a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_abstract&amp;pid=S2318-03312016000400685&amp;lng=en&amp;nrm=iso&amp;tlng=pt">portuguese</a>
+             <font face="Symbol" color="#000080" size="1">·</font>
+*==URL EN==  <a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S2318-03312016000400685&amp;lng=en&amp;nrm=iso">text in english</a>
+            </div>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </center>
+*/
 
 	
+	/** Download next page(s) ...
+        <input type="image" name="Page1" src="/iah/I/image/1red.gif" width="6" height="15" border="0"/>
+        <input type="image" name="Page2" src="/iah/I/image/2.gif" width="6" height="15" border="0"/>
+...
+        <input type="image" name="Page10" src="/iah/I/image/1.gif" width="6" height="15" border="0"/>
+        <input type="image" name="Page10" src="/iah/I/image/0.gif" width="6" height="15" border="0"/>
+        <input type="image" name="Page11" src="/iah/I/image/right.gif" border="0" width="17" height="17"/>
+        <input type="image" name="Page28" src="/iah/I/image/last.gif" border="0" width="17" height="17"/>
+	 */
+	
+	@Test 
+	public void testCreateResultSet() {
+		File resultSetClean1 = new File("src/test/resources/org/contentmine/ami/tools/download/scielo/resultSet1.mid.html");
+		Assert.assertTrue("resultSet1.mid", resultSetClean1.exists());
+		Element resultSet1mid = XMLUtil.parseQuietlyToRootElement(resultSetClean1);
+/**
+  <center>
+    <table width="600" border="0" cellpadding="0" cellspacing="0">
+     <tbody>
+      <tr>
+       <td align="left" width="115" valign="top" rowspan="6">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+         <tbody>
+          <tr>
+           <td width="28%">
+            <input type="checkbox" name="listChecked" value="^m13555628^h4"/>
+           </td>
+           <td width="72%">
+           
+                      <td width="28%">
+            <input type="checkbox" name="listChecked" value="^m13554408^h5"/>
+           </td>
+
+*/
+//		tbody xmlns="">
+//		   <tr>
+//		    <td width="15%"> </td>
+//		    <td>
+//		     <font class="isoref" 
+		List<Element> biblioList = XMLUtil.getQueryElements(resultSet1mid, ".//tbody/tr/td//.[font[@class='negrito']]");
+		Assert.assertEquals("biblio", 10, biblioList.size());
+		Element resultSetUl = new HtmlUl();
+		for (Element biblio : biblioList) {
+			HtmlLi li = new HtmlLi();
+			resultSetUl.appendChild(li);
+			biblio.detach();
+			li.appendChild(biblio);
+		}
+		XMLUtil.writeQuietly(resultSetUl, new File("target/scielo/ul.html"), 1);
+		
+		
+		
+		
+		
+		
+		System.out.println("B "+biblioList.size());
+		
+	}
+
+//	https://www.infoq.com/articles/headless-selenium-browsers/
+		
 
 	
 

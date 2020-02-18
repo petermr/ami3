@@ -41,20 +41,20 @@ import nu.xom.Element;
  * @author pm286
  *
  */
-public class BiorxivMetadataEntry extends AbstractMetadataEntry {
+public class ScieloMetadataEntry extends AbstractMetadataEntry {
 	
 	
 	private static final String HIGHWIRE_CITE_TITLE = "highwire-cite-title";
-	private static final Logger LOG = Logger.getLogger(BiorxivMetadataEntry.class);
+	private static final Logger LOG = Logger.getLogger(ScieloMetadataEntry.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
 
-	public BiorxivMetadataEntry() {
+	public ScieloMetadataEntry() {
 		super();
 	}
 		
-	public BiorxivMetadataEntry(AbstractDownloader downloader) {
+	public ScieloMetadataEntry(AbstractDownloader downloader) {
 		super(downloader);
 	}
 
@@ -88,6 +88,11 @@ public class BiorxivMetadataEntry extends AbstractMetadataEntry {
 		} else {
 			urlPath = ((HtmlA) XMLUtil.getSingleChild(span, HtmlA.TAG)).getHref();
 		}
+	}
+
+	public void read(Element li) {
+		metadataEntryElement = HtmlElement.create(li);
+		extractMetadata();
 	}
 
 	protected String extractDOIFromUrl() {

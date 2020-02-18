@@ -3,6 +3,7 @@ package org.contentmine.ami.tools.download;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.log4j.Level;
@@ -21,54 +22,49 @@ import org.contentmine.graphics.html.util.HtmlUtil;
 
 import nu.xom.Element;
 
-/** extracts from HAL pages
+/** extracts from OSF pages
  * 
  * 
-  
+https://osf.io/preprints/discover?page=1001&q=climate%20change
  * @author pm286
  *
  */
-public class HALDownloader extends AbstractDownloader {
+public class OSFDownloader extends AbstractDownloader {
 
-	private static final String ARTICLE = "article";
-	private static final String CONTENT = "content/";
-	private static final String HIGHWIRE_CITE_EXTRAS = "highwire-cite-extras";
-	private static final String CITE_EXTRAS_DIV = ".//*[local-name()='"+HtmlDiv.TAG+"' and @class='" + HIGHWIRE_CITE_EXTRAS + "']";
-
-	static final Logger LOG = Logger.getLogger(HALDownloader.class);
+/**
+https://osf.io/preprints/discover?climate%252Bchange%20sort%3Arelevance-rank%20numresults%3A4 */
+	
+	static final Logger LOG = Logger.getLogger(OSFDownloader.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
-	private static final String HIGHWIRE_SEARCH_RESULTS_LIST = "highwire-search-results-list";
-	
-	public static final String HAL_HOST = "www.HAL.org";
-	public static final String HAL_BASE = HTTPS + P2H + HAL_HOST;
-	public static final String HAL_SEARCH = HAL_BASE + "/search/";
-	public static final String HAL_HEADER = "/content/";
+	public static final String OSF_HOST = "osf.io";
+	public static final String OSF_BASE = HTTPS + P2H + OSF_HOST;
+	public static final String OSF_SEARCH = OSF_BASE + "/preprints/discover?";
+	public static final String OSF_HEADER = "/content/";
 
 	
-	public HALDownloader() {
+	public OSFDownloader() {
 		init();
 	}
 
 	private void init() {
-		this.setBase(HAL_BASE);
+		this.setBase(OSF_BASE);
 	}
 
-	public HALDownloader(CProject cProject) {
+	public OSFDownloader(CProject cProject) {
 		super(cProject);
 		init();
 	}
 
 	/**
-    https://www.HAL.org/search/coronavirus%20numresults%3A75%20sort%3Arelevance-rank?page=1
 	 */
 
 	@Override
 	protected ResultSet createResultSet(Element element) {
 //		<ul class="highwire-search-results-list">
 		List<Element> ulList = XMLUtil.getQueryElements(element, 
-				"//*[local-name()='ul' and @class='" + HIGHWIRE_SEARCH_RESULTS_LIST + "']");
+				"//*[local-name()='ul' and @class='" + "junk" + "']");
 		
 		if (ulList.size() == 0) {
 			LOG.debug(element.toXML());
@@ -87,49 +83,51 @@ public class HALDownloader extends AbstractDownloader {
 	 * 
 	 */
 	protected AbstractMetadataEntry createMetadataEntry(Element contentElement) {
-		HALMetadataEntry metadataEntry = new HALMetadataEntry(this);
+		OSFMetadataEntry metadataEntry = new OSFMetadataEntry(this);
 		metadataEntry.read(contentElement);
 		return metadataEntry;
 	}
 
+	@Override
+	protected String getDOIFromUrl(String fullUrl) {
+		if (fullUrl == null) return null;
+		String[] parts = fullUrl.split("content");
+		return parts[1];
+	}
+
 	public String getSearchUrl() {
-		return HAL_SEARCH;
+		return OSF_SEARCH;
 	}
 
 	@Override
 	protected String getHost() {
-		return HAL_HOST;
+		return OSF_HOST;
 	}
 
 	@Override
 	protected HtmlElement getSearchResultsList(HtmlBody body) {
-		throw new RuntimeException("HAL getSearchResultsList NYI");
-	}
-
-	@Override
-	protected String getDOIFromUrl(String fullUrl) {
-		throw new RuntimeException("HAL getDOIFromURL NYI");
+		throw new RuntimeException("OSF getSearchResultsList NYI");
 	}
 
 	@Override
 	protected void cleanSearchResultsList(HtmlElement searchResultsList) {
-		throw new RuntimeException("HAL cleanSearchResultsList NYI");
+		throw new RuntimeException("OSF cleanSearchResultsList NYI");
 	}
 
 	@Override
 	protected HtmlElement getArticleElement(HtmlHtml htmlHtml) {
-		throw new RuntimeException("HAL getArticleElement NYI");
+		throw new RuntimeException("OSF getArticleElement NYI");
 	}
 
 	@Override
 	protected String getResultSetXPath() {
-		throw new RuntimeException("HAL getResultSetXPath NYI");
+		throw new RuntimeException("OSF getResultSetXPath NYI");
 	}
 
 	@Override
 	protected AbstractMetadataEntry createSubclassedMetadataEntry() {
-		throw new RuntimeException("HAL createSubclassedMetadataEntry NYI");
+		throw new RuntimeException("OSF createSubclassedMetadataEntry NYI");
 	}
 
-	
+
 }

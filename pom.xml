@@ -26,13 +26,14 @@
         <java.source.version>1.8</java.source.version>
         <java.target.version>1.8</java.target.version>
         <javax.ws.rs.version>2.1</javax.ws.rs.version>
+        <jbrowser.version>1.1.1</jbrowser.version>
         <joda-time.version>1.6.2</joda-time.version>
         <json-path.version>2.0.0</json-path.version>
         <jsoup.version>1.9.2</jsoup.version>
         <jtidy.version>4aug2000r7-dev</jtidy.version>
         <jbig2-imageio.version>3.0.1</jbig2-imageio.version>
         <json-path.version>2.0.0</json-path.version>
-        <jsoup.version>1.9.2</jsoup.version>
+        <jsoup.version>1.12.2</jsoup.version>
         <jtidy.version>4aug2000r7-dev</jtidy.version>
         <junit.version>4.8.2</junit.version>
         <lucene.version>7.1.0</lucene.version>
@@ -47,7 +48,7 @@
         <xom.version>1.2.5</xom.version>
         <xml-apis.version>1.4.01</xml-apis.version>
         <xmlunit.version>1.4</xmlunit.version>
-         
+        
 <!--
         <opennlp.version>1.6.0</opennlp.version>       
         <json-path.version>2.0.0</json-path.version>
@@ -676,6 +677,11 @@
                 <artifactId>ejml-all</artifactId>
                 <version>${ejml-all.version}</version>
             </dependency>
+            <dependency>
+				<groupId>com.machinepublishers</groupId>
+				<artifactId>jbrowserdriver</artifactId>
+				<version>${jbrowser.version}</version>
+			</dependency>
         </dependencies>
         <repositories>
             <repository>

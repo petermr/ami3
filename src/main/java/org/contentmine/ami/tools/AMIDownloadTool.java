@@ -19,6 +19,12 @@ import org.contentmine.ami.tools.download.BiorxivDownloader;
 import org.contentmine.ami.tools.download.BiorxivLandingPage;
 import org.contentmine.ami.tools.download.BiorxivMetadataEntry;
 import org.contentmine.ami.tools.download.CurlDownloader;
+import org.contentmine.ami.tools.download.HALDownloader;
+import org.contentmine.ami.tools.download.HALLandingPage;
+import org.contentmine.ami.tools.download.HALMetadataEntry;
+import org.contentmine.ami.tools.download.OSFDownloader;
+import org.contentmine.ami.tools.download.OSFLandingPage;
+import org.contentmine.ami.tools.download.OSFMetadataEntry;
 import org.contentmine.ami.tools.download.ResultSet;
 import org.contentmine.ami.tools.download.SDDownloader;
 import org.contentmine.ami.tools.download.SDLandingPage;
@@ -57,17 +63,22 @@ public class AMIDownloadTool extends AbstractAMITool {
 	}
 	
 	public enum SearchSite {
-		biorxiv(BiorxivDownloader.getSearchUrl(),
+		biorxiv(
 				new BiorxivDownloader(),
 				new BiorxivMetadataEntry(),
 				new BiorxivLandingPage()
 				),
-		hal(HALDownloader.getSearchUrl(),
+		hal(
 				new HALDownloader(),
 				new HALMetadataEntry(),
 				new HALLandingPage()
 				),
-		sd(SDDownloader.getSearchUrl(),
+		osf(
+				new OSFDownloader(),
+				new OSFMetadataEntry(),
+				new OSFLandingPage()
+				),
+		sd(
 				new SDDownloader(), 
 				new SDMetadataEntry(), 
 				new SDLandingPage()),
@@ -77,14 +88,14 @@ public class AMIDownloadTool extends AbstractAMITool {
 		private AbstractMetadataEntry metadata;
 		private AbstractLandingPage landingPage;
 		
-		private SearchSite(String site, 
+		private SearchSite( 
 				AbstractDownloader downloader, 
 				AbstractMetadataEntry metadata, 
 				AbstractLandingPage landingPage) {
-			this.site = site;
 			this.downloader = downloader;
 			this.metadata = metadata;
 			this.landingPage = landingPage;
+			this.site = downloader.getSearchUrl();
 		}
 		public String getSite() {
 			return site;
@@ -124,7 +135,7 @@ public class AMIDownloadTool extends AbstractAMITool {
 
     @Option(names = {"--limit"},
     		arity = "1",
-            description = "max hits to download (default 200)")
+            description = "max hits to download (default 200), set to (pages * pagesize) if both set ")
     private Integer limit = 200;
 
     @Option(names = {"--metadata"},
@@ -134,12 +145,13 @@ public class AMIDownloadTool extends AbstractAMITool {
 
     @Option(names = {"--pages"},
     		arity = "1..2",
-            description = "start and optional end hitpage. If only one value download single hitpage, default 1 ")
+            description = "start and optional end hitpage (1-based, inclusive). If only one value download "
+            		+ "single hitpage, default 1 ")
     private List<Integer> pageList = new ArrayList<>();
 
     @Option(names = {"--pagesize"},
     		arity = "1",
-            description = "size of hit page, no default (set by service)")
+            description = "size of hit page, no default (often set by service)")
     private Integer pagesize = null;
 
     @Option(names = {"--query"},
@@ -199,6 +211,9 @@ public class AMIDownloadTool extends AbstractAMITool {
 
     @Override
 	protected void parseSpecifics() {
+    	if (pageList.size() > 0 && pagesize != null) {
+    		limit = pageList.size() * pagesize;
+    	}
 		System.out.println("limit         " + limit);
 		System.out.println("pages         " + pageList);
 		System.out.println("pagesize      " + pagesize);
@@ -219,6 +234,7 @@ public class AMIDownloadTool extends AbstractAMITool {
 		}
 		if (resultsSetList.size() > 0) {
 			for (String resultSetFilename : resultsSetList) {
+				System.out.println("download files in resultSet "+resultSetFilename);
 				extractResultSets(resultSetFilename);
 			}
 		}
@@ -319,6 +335,7 @@ public class AMIDownloadTool extends AbstractAMITool {
 	}
 
 	private void extractResultSets(String filename) {
+		System.out.println("result set: " + filename);
 		downloader.setCProject(cProject);
 	
 		File metadataDir = cProject.getOrCreateExistingMetadataDir();
@@ -330,22 +347,28 @@ public class AMIDownloadTool extends AbstractAMITool {
 		} catch (IOException e) {
 			throw new RuntimeException("Cannot extract resultSet "+filename);
 		}
-		LOG.debug("result ["+result+"]");
+//		LOG.debug("downloaded  ["+result+"]");
 	}
 
 	private String downloadWithCurl(List<String> fileroots) throws IOException {
 		CurlDownloader curlDownloader = new CurlDownloader();
+		System.out.println("download with curl to <tree>scrapedMetadata.html" + fileroots);
+		int size = fileroots.size();
 		for (String fileroot : fileroots) {
-			curlDownloader.addCurlPair(BiorxivDownloader.createCurlPair(cProject.getDirectory(), fileroot));
+			curlDownloader.addCurlPair(downloader.createCurlPair(cProject.getDirectory(), fileroot));
 		}
 		
 		curlDownloader.setTraceFile("target/trace.txt");
 		curlDownloader.setTraceTime(true);
+		System.out.println("running curlDownloader for "+size+" landingPages, takes ca 1 sec/page ");
 		String result = curlDownloader.run();
+		System.out.println("ran curlDownloader for "+size+" landingPages ");
+		// normally empty
 		return result;
 	}
 
 	public HtmlHtml getLandingPageHtml(String content) {
+		System.out.println("content "+content.length());
 		HtmlHtml html = (HtmlHtml) HtmlElement.create(content);
 		return html;
 	}
@@ -386,11 +409,23 @@ public class AMIDownloadTool extends AbstractAMITool {
 		AbstractDownloader downloader = getDownloader();
 		for (CTree cTree : treeList) {
 			downloader.setCurrentTree(cTree);
-			AbstractLandingPage landingPage = getLandingPage(cTree);
+			AbstractLandingPage landingPage = null;
+			try {
+				landingPage = getLandingPage(cTree);
+			} catch (Exception e) {
+				System.err.println("Cannot get landing page: "+cTree);
+				continue;
+			}
 			if (landingPage != null) {
 				downloader.downloadLink(landingPage);
+			} else {
+				LOG.error("Cannot read CTree links for: " + cTree.getName());
 			}
 		}
+	}
+
+	public List<String> getResultsSetList() {
+		return resultsSetList;
 	}
 
 }

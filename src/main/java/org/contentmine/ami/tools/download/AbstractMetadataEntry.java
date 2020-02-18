@@ -97,4 +97,10 @@ public abstract class AbstractMetadataEntry {
 
 	public abstract String getCitationLink();
 
+	protected void read(Element element) {
+		metadataEntryElement = HtmlElement.create(element);
+		extractMetadata();
+	}
+
+
 }

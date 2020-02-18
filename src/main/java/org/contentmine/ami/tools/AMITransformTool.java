@@ -12,6 +12,10 @@ import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.util.CMFileUtil;
 import org.contentmine.norma.NormaArgProcessor;
 import org.contentmine.norma.NormaTransformer;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
@@ -34,18 +38,22 @@ public class AMITransformTool extends AbstractAMITool {
 		LOG.setLevel(Level.DEBUG);
 	}
 	
+	public enum Tidier {
+		jsoup,
+		tidy,
+	}
     @Option(names = {"--stylesheet"},
     		arity = "1",
     		defaultValue="nlm2html",
             description = "XSLT stylesheet")
     private String stylesheet;
     
-//    @Option(names = {"--output"},
-//    		arity = "1",
-//    		defaultValue="scholarly.html",
-//            description = "ScholarlyHtml")
-//    private String filename;
-
+    @Option(names = {"--tidy"},
+    		arity = "1",
+    		defaultValue="jsoup",
+            description = "HTML tidier")
+    private Tidier tidier = null;
+    
     /** used by some non-picocli calls
      * obsolete it
      * @param cProject
@@ -76,7 +84,11 @@ public class AMITransformTool extends AbstractAMITool {
     }
 
 	protected void processProject() {
-		runNorma();
+		if (tidier != null) {
+			runTidy();
+		} else {
+			runNorma();
+		}
 //		CommandProcessor commandProcessor = new CommandProcessor(cProject.getDirectory());
 //		commandProcessor.runNormaIfNecessary();
 		
@@ -96,6 +108,24 @@ public class AMITransformTool extends AbstractAMITool {
 //			String args = "-i fulltext.xml -o scholarly.html --transform nlm2html --project "+cProject.getDirectory();
 //			LOG.debug("running NORMA "+args);
 //			new Norma().run(args);
+	}
+	
+	private void runTidy() {
+		Document doc = null;
+		System.out.println("reading "+input);
+		try {
+//			doc = Jsoup.connect("https://en.wikipedia.org/").get();
+			doc = Jsoup.connect(input).get();
+		} catch (IOException e) {
+			e.printStackTrace();
+			return;
+		}
+		System.out.println("D "+doc.title());
+		Elements newsHeadlines = doc.select("#mp-itn b a");
+		for (Element headline : newsHeadlines) {
+		  System.out.println("%s\n\t%s" + 
+		    headline.attr("title") + headline.absUrl("href"));
+		}	
 	}
 
 	private void transformTreeToScholarlyHtml(NormaArgProcessor argProcessor, CTree cTree) {

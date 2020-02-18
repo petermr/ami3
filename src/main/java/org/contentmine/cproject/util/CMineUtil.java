@@ -57,7 +57,8 @@ public class CMineUtil {
 	private static final String NEW_LINE_SEPARATOR = "\n";
 	public static final String HTML_TYPE = "text/html";
 	public static final String PDF_TYPE = "text/pdf";
-	public final static Charset UTF8_CHARSET = CMineUtil.UTF8_CHARSET;
+	public static final String UTF_8 = "UTF-8";
+	public final static Charset UTF8_CHARSET = Charset.forName(UTF_8);
 
 	/** sort entrySet by count.
 	 * convenience method.

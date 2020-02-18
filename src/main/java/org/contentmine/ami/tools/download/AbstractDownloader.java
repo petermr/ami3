@@ -2,6 +2,8 @@ package org.contentmine.ami.tools.download;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -17,9 +19,13 @@ import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
+import org.contentmine.graphics.html.HtmlBody;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlHead;
 import org.contentmine.graphics.html.HtmlHtml;
+import org.contentmine.graphics.html.HtmlLink;
+import org.contentmine.graphics.html.HtmlStyle;
+import org.contentmine.graphics.html.HtmlUl;
 import org.contentmine.graphics.html.util.HtmlUtil;
 
 import nu.xom.Element;
@@ -66,7 +72,26 @@ public abstract class AbstractDownloader {
 		this.setCProject(cProject);
 		cProject.getOrCreateDirectory();
 	}
-	protected abstract AbstractMetadataEntry createMetadataEntry(Element parent);
+	
+	// ABSTRACT METHODS
+	/** DOIs are publisher specific so need bespoke filter
+	 * 
+	 * @param fullUrl
+	 * @return
+	 */
+	protected abstract String getDOIFromUrl(String fullUrl);
+	protected abstract String getHost();
+	public abstract String getSearchUrl();
+	protected abstract HtmlElement getSearchResultsList(HtmlBody body);
+	protected abstract void cleanSearchResultsList(HtmlElement searchResultsList);
+	/** the main article */
+	protected abstract HtmlElement getArticleElement(HtmlHtml htmlHtml);
+	protected abstract String getResultSetXPath();
+	protected abstract AbstractMetadataEntry createSubclassedMetadataEntry();
+
+
+
+	// ======
 
 	public AbstractDownloader setCProject(CProject cProject) {
 		this.cProject = cProject;
@@ -221,6 +246,7 @@ public abstract class AbstractDownloader {
 
 	private void writeResultSetFile(HtmlHtml htmlPage) throws IOException {
 		File resultSetFile = new File(currentTree.getOrCreateDirectory(), RESULT_SET + "." + CTree.HTML);
+		downloadTool.getResultsSetList().add(resultSetFile.toString());
 		if (htmlPage != null) {
 			if (resultSetFile.exists()) {
 				System.out.println("skipping (existing) resultSet: "+resultSetFile.getParent());
@@ -277,8 +303,6 @@ https://www.biorxiv.org/search/coronavirus%20numresults%3A75%20sort%3Arelevance-
 		}
 	}
 	
-	protected abstract File cleanAndOutputResultSetFile(File file);
-
 	/** adds ?page=n at end
 	 * 
 	 * @param url
@@ -334,12 +358,6 @@ https://www.biorxiv.org/search/coronavirus%20numresults%3A75%20sort%3Arelevance-
 		return doi;
 	}
 
-	/** DOIs are publisher specific so need bespoke filter
-	 * 
-	 * @param fullUrl
-	 * @return
-	 */
-	protected abstract String getDOIFromUrl(String fullUrl);
 
 	public void downloadPages() throws IOException {
 /**
@@ -376,17 +394,12 @@ https://www.biorxiv.org/search/coronavirus%20numresults%3A75%20sort%3Arelevance-
 		return createResultSet(element);
 	}
 
-	/** gets files roots from URLs
-	 * not sure whether this is a Downloader or ResultSet responsibility
-	 * 
-	 * @return
-	 */
-	protected abstract List<String> getCitationLinks();
 	public AbstractLandingPage createLandingPage() {
 		return downloadTool == null ? null : downloadTool.getSite().createLandingPage();
 	}
 
 	public String clean(String content) {
+		content = cleanAmpersaned(content);
 		return content;
 	}
 
@@ -400,7 +413,6 @@ https://www.biorxiv.org/search/coronavirus%20numresults%3A75%20sort%3Arelevance-
 		}
 	}
 
-	public abstract File cleanAndOutputArticleFile(File file);
 
 	public void setCurrentTree(CTree cTree) {
 		this.currentTree = cTree;
@@ -421,6 +433,127 @@ https://www.biorxiv.org/search/coronavirus%20numresults%3A75%20sort%3Arelevance-
 		curlDownloader.run();
 		clean(rawHtmlFile);
 		cleanAndOutputArticleFile(rawHtmlFile);
+	}
+
+	protected void resultSetErrorMessage() {
+		System.err.println("Cannot write resultSet");
+	}
+
+	/** creates a file/url pair for use bu curl
+	 * manages all transformations
+	 * 
+	 * @param downloadDir
+	 * @param fileroot
+	 * @return
+	 */
+	public CurlPair createCurlPair(File downloadDir, String fileroot) {
+		File urlfile = this.createLandingPageFile(downloadDir, fileroot);
+		URL url = this.createURL(fileroot);
+		return new CurlPair(urlfile, url);
+	}
+
+	protected File createLandingPageFile(File downloadDir, String fileroot) {
+		String localTreeName = createLocalTreeName(fileroot);
+		File cTreeDir = new File(downloadDir, 
+				AbstractDownloader.replaceDOIPunctuationByUnderscore(localTreeName));
+		cTreeDir.mkdirs();
+		File urlfile = new File(cTreeDir, AbstractDownloader.LANDING_PAGE + "." + "html");
+		return urlfile;
+	}
+
+	/** override this if the treename contains parts of directory structure
+	 * 
+	 * @param fileroot
+	 * @return
+	 */
+	protected String createLocalTreeName(String fileroot) {
+		return fileroot;
+	}
+
+
+	public URL createURL(String fileroot) {
+		URL url = null;
+		try {
+			url = new URL(AbstractDownloader.HTTPS, getHost(), fileroot);
+		} catch (MalformedURLException e) {
+			throw new RuntimeException("Cannot create URL", e);
+		}
+		return url;
+	}
+
+	public String cleanAmpersaned(String content) {
+		// really tacky, but this is a general bug
+		
+		content = content.replaceAll(" & ", " &#38; ");
+		return content;
+	}
+
+	protected List<String> getCitationLinks() {
+		return resultSet == null ? new ArrayList<>() : resultSet.getCitationLinks();
+	}
+
+	protected void cleanHtmlRemoveLinkComment(HtmlHtml htmlHtml) {
+		XMLUtil.removeElementsByTag(htmlHtml, HtmlLink.TAG, HtmlStyle.TAG); 
+		XMLUtil.removeNodesByXPath(htmlHtml, "//comment()"); 
+	}
+
+	
+	protected File cleanAndOutputResultSetFile(File file) {
+		Element element = HtmlUtil.parseCleanlyToXHTML(file);
+		HtmlHtml htmlHtml = (HtmlHtml) HtmlElement.create(element);
+		HtmlBody body = htmlHtml.getBody();
+		if (body == null) {
+			System.err.println("null body in cleanAndOutputResultSetFile");
+			return null;
+		}
+		HtmlElement searchResultsList = cleanAndDetachSearchResults(body);
+		if (searchResultsList == null) {
+			resultSetErrorMessage();
+			return null;
+		}
+		cleanHtmlRemoveLinkComment(htmlHtml);
+		replaceBodyChildrenByResultSet(body, searchResultsList);
+		File cleanFile = new File(file.getAbsoluteFile().toString().replace(".html", "." + AbstractDownloader.CLEAN + ".html"));
+		System.out.println("wrote resultSet: "+cleanFile);
+		XMLUtil.writeQuietly(htmlHtml, cleanFile, 1);
+		return cleanFile;
+	}
+
+	void replaceBodyChildrenByResultSet(HtmlBody body, HtmlElement searchResultsList) {
+		XMLUtil.removeChildren(body);
+		body.appendChild(searchResultsList);
+	}
+
+	protected HtmlElement cleanAndDetachSearchResults(HtmlBody body) {
+		HtmlElement searchResultsList = (HtmlUl) getSearchResultsList(body);
+		if (searchResultsList != null) {
+		    cleanSearchResultsList(searchResultsList);
+			searchResultsList.detach();
+		}
+		return searchResultsList;
+	}
+
+	protected File cleanAndOutputArticleFile(File file) {
+		Element element = HtmlUtil.parseCleanlyToXHTML(file);
+		HtmlHtml htmlHtml = (HtmlHtml) HtmlElement.create(element);
+		HtmlBody body = htmlHtml.getBody();
+		if (body == null) {
+			System.err.println("null body");
+			return null;
+		}
+		HtmlElement articleElement = getArticleElement(htmlHtml);
+		cleanHtmlRemoveLinkComment(htmlHtml);
+		articleElement.detach();
+		body.appendChild(articleElement);
+		File cleanFile = new File(currentTree.getDirectory(), CTree.SCHOLARLY_HTML);
+		XMLUtil.writeQuietly(htmlHtml, cleanFile, 1);
+		return cleanFile;
+	}
+
+	protected AbstractMetadataEntry createMetadataEntry(Element contentElement) {
+		AbstractMetadataEntry metadataEntry = createSubclassedMetadataEntry();
+		metadataEntry.read(contentElement);
+		return metadataEntry;
 	}
 
 

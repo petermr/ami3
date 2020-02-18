@@ -8,6 +8,9 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.eucl.xml.XMLUtil;
+import org.contentmine.graphics.html.HtmlBody;
+import org.contentmine.graphics.html.HtmlElement;
+import org.contentmine.graphics.html.HtmlHtml;
 
 import nu.xom.Element;
 
@@ -24,6 +27,7 @@ public class SDDownloader extends AbstractDownloader {
 		LOG.setLevel(Level.DEBUG);
 	}
 	public static final String SD_BASE = "https://sciencedirect.com/";
+	public static final String SD_HOST = "https://sciencedirect.com/";
 	public static final String SD_SEARCH = SD_BASE+"/search/";  /* NOT YET CERTAIN */
 	
 	public SDDownloader() {
@@ -33,11 +37,6 @@ public class SDDownloader extends AbstractDownloader {
 	private void init() {
 		this.setBase(SD_BASE);
 	}
-
-//	public SDDownloader(CProject cProject) {
-//		super(cProject);
-//		init();
-//	}
 
 	/**
     https://www.biorxiv.org/search/coronavirus%20numresults%3A75%20sort%3Arelevance-rank?page=1
@@ -77,26 +76,55 @@ public class SDDownloader extends AbstractDownloader {
 		throw new RuntimeException("NYI");
 	}
 
-	public static String getSearchUrl() {
+	@Override
+	public String getSearchUrl() {
 		return SD_SEARCH;
 	}
 
 	@Override
-	protected File cleanAndOutputResultSetFile(File file) {
-		throw new RuntimeException("NYI");
+	protected String getHost() {
+		return SD_HOST;
+	}
+
+//	@Override
+//	protected File cleanAndOutputResultSetFile(File file) {
+//		throw new RuntimeException("NYI");
+//	}
+//
+//	@Override
+//	protected List<String> getCitationLinks() {
+//		throw new RuntimeException("NYI");
+//	}
+//
+//	@Override
+//	public File cleanAndOutputArticleFile(File file) {
+//		throw new RuntimeException("NYI");
+//	}
+//	
+	@Override
+	protected HtmlElement getSearchResultsList(HtmlBody body) {
+		throw new RuntimeException("SD getSearchResultsList NYI");
 	}
 
 	@Override
-	protected List<String> getCitationLinks() {
-		// TODO Auto-generated method stub
-		return null;
+	protected void cleanSearchResultsList(HtmlElement searchResultsList) {
+		throw new RuntimeException("SD cleanSearchResultsList NYI");
 	}
 
 	@Override
-	public File cleanAndOutputArticleFile(File file) {
-		// TODO Auto-generated method stub
-		return null;
+	protected HtmlElement getArticleElement(HtmlHtml htmlHtml) {
+		throw new RuntimeException("SD getArticleElement NYI");
 	}
-	
+
+	@Override
+	protected String getResultSetXPath() {
+		throw new RuntimeException("SD getResultSetXPath NYI");
+	}
+
+	@Override
+	protected AbstractMetadataEntry createSubclassedMetadataEntry() {
+		throw new RuntimeException("SD createSubclassedMetadataEntry NYI");
+	}
+
 	
 }

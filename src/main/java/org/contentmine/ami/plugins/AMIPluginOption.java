@@ -9,7 +9,6 @@ import java.util.regex.Pattern;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.jsoup.helper.StringUtil;
 import org.contentmine.ami.plugins.gene.GenePluginOption;
 import org.contentmine.ami.plugins.regex.RegexPluginOption;
 import org.contentmine.ami.plugins.search.SearchPluginOption;
@@ -56,7 +55,7 @@ private static final String RESULT_XPATH_ROOT = "//result";
 	public AMIPluginOption(String plugin, List<String> options) {
 		this(plugin);
 		this.options = options;
-		this.optionString = StringUtil.join(options, " ");
+		this.optionString = String.join(" ", options);
 		LOG.trace("optionString: "+optionString);
 		this.resultXPathBase = RESULT_XPATH_ROOT;
 		this.resultXPathAttribute = EXACT_XPATH_ATTRIBUTE;

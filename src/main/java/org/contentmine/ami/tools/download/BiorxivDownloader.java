@@ -1,24 +1,17 @@
 package org.contentmine.ami.tools.download;
 
-import java.io.File;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.cproject.files.CProject;
-import org.contentmine.cproject.files.CTree;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlBody;
 import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlHtml;
-import org.contentmine.graphics.html.HtmlLink;
-import org.contentmine.graphics.html.HtmlStyle;
 import org.contentmine.graphics.html.HtmlUl;
-import org.contentmine.graphics.html.util.HtmlUtil;
 
 import nu.xom.Element;
 
@@ -111,7 +104,7 @@ public class BiorxivDownloader extends AbstractDownloader {
 	private static final String ARTICLE = "article";
 	private static final String CONTENT = "content/";
 	private static final String HIGHWIRE_CITE_EXTRAS = "highwire-cite-extras";
-	private static final String CITE_EXTRAS_DIV = ".//*[local-name()='"+HtmlDiv.TAG+"' and @class='" + HIGHWIRE_CITE_EXTRAS + "']";
+	static final String CITE_EXTRAS_DIV = ".//*[local-name()='"+HtmlDiv.TAG+"' and @class='" + HIGHWIRE_CITE_EXTRAS + "']";
 
 	static final Logger LOG = Logger.getLogger(BiorxivDownloader.class);
 	static {
@@ -138,15 +131,67 @@ public class BiorxivDownloader extends AbstractDownloader {
 		init();
 	}
 
-	/**
-    https://www.biorxiv.org/search/coronavirus%20numresults%3A75%20sort%3Arelevance-rank?page=1
-	 */
+	@Override
+	protected String getResultSetXPath() {
+		return "//*[local-name()='ul' and @class='" + HIGHWIRE_SEARCH_RESULTS_LIST + "']";
+	}
+
+	
+	@Override
+	protected BiorxivMetadataEntry createSubclassedMetadataEntry() {
+		return new BiorxivMetadataEntry(this);
+	}
 
 	@Override
+	protected String getDOIFromUrl(String fullUrl) {
+		if (fullUrl == null) return null;
+		String[] parts = fullUrl.split(CONTENT);
+		return parts[1];
+	}
+
+	@Override
+	public String getSearchUrl() {
+		return BIORXIV_SEARCH;
+	}
+
+	@Override
+	protected void resultSetErrorMessage() {
+		System.err.println("Cannot find metadata list: "+getResultSetXPath());
+	}
+	
+	@Override
+	protected HtmlElement getArticleElement(HtmlHtml htmlHtml) {
+		return (HtmlElement) XMLUtil.getFirstElement(htmlHtml, ".//*[local-name()='"+HtmlDiv.TAG+"' and starts-with(@class, '"+ARTICLE+" "+"')]");
+	}
+	
+	@Override
+	protected HtmlElement getSearchResultsList(HtmlBody body) {
+		return (HtmlUl) XMLUtil.getFirstElement(body, getResultSetXPath());
+	}
+	
+	@Override
+	protected String getHost() {
+		return BiorxivDownloader.BIORXIV_HOST;
+	}
+
+	@Override
+	protected String createLocalTreeName(String fileroot) {
+		return fileroot.replace("/content/", "");
+	}
+	
+	@Override
+	protected void cleanSearchResultsList(HtmlElement searchResultsList) {
+		XMLUtil.removeElementsByXPath(searchResultsList, CITE_EXTRAS_DIV);
+	}
+
+	/**
+	https://www.biorxiv.org/search/coronavirus%20numresults%3A75%20sort%3Arelevance-rank?page=1
+	 */
+	@Override
 	protected ResultSet createResultSet(Element element) {
-//		<ul class="highwire-search-results-list">
+	//		<ul class="highwire-search-results-list">
 		List<Element> ulList = XMLUtil.getQueryElements(element, 
-				"//*[local-name()='ul' and @class='" + HIGHWIRE_SEARCH_RESULTS_LIST + "']");
+				getResultSetXPath());
 		
 		if (ulList.size() == 0) {
 			LOG.debug(element.toXML());
@@ -158,127 +203,8 @@ public class BiorxivDownloader extends AbstractDownloader {
 		return createResultSet;
 	}
 
-	
-	@Override
-	/** creates new MetadataEntry populated with contents of contentElement
-	 * called when creating (or extending) a ResultSet
-	 * 
-	 */
-	protected AbstractMetadataEntry createMetadataEntry(Element contentElement) {
-		BiorxivMetadataEntry metadataEntry = new BiorxivMetadataEntry(this);
-		metadataEntry.read(contentElement);
-		return metadataEntry;
-	}
-
-	@Override
-	protected String getDOIFromUrl(String fullUrl) {
-		if (fullUrl == null) return null;
-		String[] parts = fullUrl.split(CONTENT);
-		return parts[1];
-	}
-
-	public static String getSearchUrl() {
-		return BIORXIV_SEARCH;
-	}
-
-	@Override
-	protected File cleanAndOutputResultSetFile(File file) {
-		Element element = HtmlUtil.parseCleanlyToXHTML(file);
-		HtmlHtml htmlHtml = (HtmlHtml) HtmlElement.create(element);
-		HtmlBody body = htmlHtml.getBody();
-		if (body == null) {
-			System.err.println("null body");
-			return null;
-		}
-		HtmlUl searchResultsList = cleanAndDetachSearchResults(body);
-		if (searchResultsList == null) {
-			System.err.println("Cannout find metadata list: "+("//*[local-name()='ul' and @class='" + HIGHWIRE_SEARCH_RESULTS_LIST + "']"));
-			return null;
-		}
-		XMLUtil.removeElementsByTag(htmlHtml, HtmlLink.TAG, HtmlStyle.TAG); 
-		XMLUtil.removeNodesByXPath(htmlHtml, "//comment()"); 
-		XMLUtil.removeChildren(body);
-		body.appendChild(searchResultsList);
-		File cleanFile = new File(file.getAbsoluteFile().toString().replace(".html", "." + AbstractDownloader.CLEAN + ".html"));
-		XMLUtil.writeQuietly(htmlHtml, cleanFile, 1);
-		return cleanFile;
-	}
-	
-	@Override
-	public File cleanAndOutputArticleFile(File file) {
-		Element element = HtmlUtil.parseCleanlyToXHTML(file);
-		HtmlHtml htmlHtml = (HtmlHtml) HtmlElement.create(element);
-		HtmlBody body = htmlHtml.getBody();
-		if (body == null) {
-			System.err.println("null body");
-			return null;
-		}
-		HtmlElement htmlElement = (HtmlElement) XMLUtil.getFirstElement(htmlHtml, ".//*[local-name()='"+HtmlDiv.TAG+"' and starts-with(@class, '"+ARTICLE+" "+"')]");
-		XMLUtil.removeElementsByTag(htmlHtml, HtmlLink.TAG, HtmlStyle.TAG); 
-		XMLUtil.removeNodesByXPath(htmlHtml, "//comment()"); 
-		XMLUtil.removeChildren(body);
-		htmlElement.detach();
-		body.appendChild(htmlElement);
-		File cleanFile = new File(currentTree.getDirectory(), CTree.SCHOLARLY_HTML);
-		XMLUtil.writeQuietly(htmlHtml, cleanFile, 1);
-		return cleanFile;
-	}
-	
-	private HtmlUl cleanAndDetachSearchResults(HtmlBody body) {
-		HtmlUl searchResultsList;
-		// <ul class="highwire-search-results-list">
-		searchResultsList = (HtmlUl) XMLUtil.getFirstElement(body, "//*[local-name()='ul' and @class='" + HIGHWIRE_SEARCH_RESULTS_LIST + "']");
-		if (searchResultsList != null) {
-		    XMLUtil.removeElementsByXPath(searchResultsList, CITE_EXTRAS_DIV);
-			searchResultsList.detach();
-		}
-		return searchResultsList;
-	}
-	
-	public static File createLandingPageFile(File downloadDir, String fileroot) {
-		File ctreedir = new File(downloadDir, 
-				AbstractDownloader.replaceDOIPunctuationByUnderscore(fileroot.replace("/content/", "")));
-		ctreedir.mkdirs();
-		File urlfile = new File(ctreedir, AbstractDownloader.LANDING_PAGE + "." + "html");
-		return urlfile;
-	}
-
-	public static URL createURL(String fileroot) {
-		URL url = null;
-		try {
-			url = new URL(AbstractDownloader.HTTPS, BiorxivDownloader.BIORXIV_HOST, fileroot);
-		} catch (MalformedURLException e) {
-			throw new RuntimeException("Cannot create URL", e);
-		}
-		return url;
-	}
-
-	/** creates a file/url pair for use bu curl
-	 * manages all transformations
-	 * 
-	 * @param downloadDir
-	 * @param fileroot
-	 * @return
-	 */
-	public static CurlPair createCurlPair(File downloadDir, String fileroot) {
-		File urlfile = BiorxivDownloader.createLandingPageFile(downloadDir, fileroot);
-		URL url = BiorxivDownloader.createURL(fileroot);
-		return new CurlPair(urlfile, url);
-	}
-
-	
-	@Override
-	protected List<String> getCitationLinks() {
-		return resultSet == null ? new ArrayList<>() : resultSet.getCitationLinks();
-	}
-
-	public String clean(String content) {
-		// really tacky, but this is a biorxiv bug
-		
-		content = content.replaceAll(" & ", " &#38; ");
-		return content;
-	}
 
 
-	
+
+
 }

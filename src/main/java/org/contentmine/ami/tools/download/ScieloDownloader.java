@@ -3,6 +3,7 @@ package org.contentmine.ami.tools.download;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.log4j.Level;
@@ -21,54 +22,47 @@ import org.contentmine.graphics.html.util.HtmlUtil;
 
 import nu.xom.Element;
 
-/** extracts from HAL pages
+/** extracts from biorxiv pages
  * 
  * 
   
  * @author pm286
  *
  */
-public class HALDownloader extends AbstractDownloader {
+public class ScieloDownloader extends AbstractDownloader {
 
-	private static final String ARTICLE = "article";
-	private static final String CONTENT = "content/";
-	private static final String HIGHWIRE_CITE_EXTRAS = "highwire-cite-extras";
-	private static final String CITE_EXTRAS_DIV = ".//*[local-name()='"+HtmlDiv.TAG+"' and @class='" + HIGHWIRE_CITE_EXTRAS + "']";
-
-	static final Logger LOG = Logger.getLogger(HALDownloader.class);
+	static final Logger LOG = Logger.getLogger(ScieloDownloader.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
-	private static final String HIGHWIRE_SEARCH_RESULTS_LIST = "highwire-search-results-list";
-	
-	public static final String HAL_HOST = "www.HAL.org";
-	public static final String HAL_BASE = HTTPS + P2H + HAL_HOST;
-	public static final String HAL_SEARCH = HAL_BASE + "/search/";
-	public static final String HAL_HEADER = "/content/";
+	public static final String SCIELO_HOST = "www.scielo.org";
+	public static final String SCIELO_BASE = HTTPS + P2H + SCIELO_HOST;
+	public static final String SCIELO_SEARCH = SCIELO_BASE + "/search/";
+	public static final String SCIELO_HEADER = "/content/";
 
 	
-	public HALDownloader() {
+	public ScieloDownloader() {
 		init();
 	}
 
 	private void init() {
-		this.setBase(HAL_BASE);
+		this.setBase(SCIELO_BASE);
 	}
 
-	public HALDownloader(CProject cProject) {
+	public ScieloDownloader(CProject cProject) {
 		super(cProject);
 		init();
 	}
 
 	/**
-    https://www.HAL.org/search/coronavirus%20numresults%3A75%20sort%3Arelevance-rank?page=1
+    https://www.biorxiv.org/search/coronavirus%20numresults%3A75%20sort%3Arelevance-rank?page=1
 	 */
 
 	@Override
 	protected ResultSet createResultSet(Element element) {
 //		<ul class="highwire-search-results-list">
 		List<Element> ulList = XMLUtil.getQueryElements(element, 
-				"//*[local-name()='ul' and @class='" + HIGHWIRE_SEARCH_RESULTS_LIST + "']");
+				"//*[local-name()='ul' and @class='" + "JUNK" + "']");
 		
 		if (ulList.size() == 0) {
 			LOG.debug(element.toXML());
@@ -87,49 +81,69 @@ public class HALDownloader extends AbstractDownloader {
 	 * 
 	 */
 	protected AbstractMetadataEntry createMetadataEntry(Element contentElement) {
-		HALMetadataEntry metadataEntry = new HALMetadataEntry(this);
+		ScieloMetadataEntry metadataEntry = new ScieloMetadataEntry(this);
 		metadataEntry.read(contentElement);
 		return metadataEntry;
 	}
 
 	public String getSearchUrl() {
-		return HAL_SEARCH;
+		return SCIELO_SEARCH;
 	}
 
-	@Override
 	protected String getHost() {
-		return HAL_HOST;
+		return SCIELO_HOST;
 	}
 
+	
+	@Override
+	public File cleanAndOutputArticleFile(File file) {
+		Element element = HtmlUtil.parseCleanlyToXHTML(file);
+		HtmlHtml htmlHtml = (HtmlHtml) HtmlElement.create(element);
+		HtmlBody body = htmlHtml.getBody();
+		if (body == null) {
+			System.err.println("null body");
+			return null;
+		}
+		HtmlElement htmlElement = (HtmlElement) XMLUtil.getFirstElement(htmlHtml, ".//*[local-name()='"+HtmlDiv.TAG+"' and starts-with(@class, '"+"JUNK"+" "+"')]");
+		XMLUtil.removeElementsByTag(htmlHtml, HtmlLink.TAG, HtmlStyle.TAG); 
+		XMLUtil.removeNodesByXPath(htmlHtml, "//comment()"); 
+		XMLUtil.removeChildren(body);
+		htmlElement.detach();
+		body.appendChild(htmlElement);
+		File cleanFile = new File(currentTree.getDirectory(), CTree.SCHOLARLY_HTML);
+		XMLUtil.writeQuietly(htmlHtml, cleanFile, 1);
+		return cleanFile;
+	}
+	
 	@Override
 	protected HtmlElement getSearchResultsList(HtmlBody body) {
-		throw new RuntimeException("HAL getSearchResultsList NYI");
+		throw new RuntimeException("SCIELO getSearchResultsList NYI");
 	}
 
 	@Override
 	protected String getDOIFromUrl(String fullUrl) {
-		throw new RuntimeException("HAL getDOIFromURL NYI");
+		throw new RuntimeException("SCIELO getDOIFromURL NYI");
 	}
 
 	@Override
 	protected void cleanSearchResultsList(HtmlElement searchResultsList) {
-		throw new RuntimeException("HAL cleanSearchResultsList NYI");
+		throw new RuntimeException("SCIELO cleanSearchResultsList NYI");
 	}
 
 	@Override
 	protected HtmlElement getArticleElement(HtmlHtml htmlHtml) {
-		throw new RuntimeException("HAL getArticleElement NYI");
+		throw new RuntimeException("SCIELO getArticleElement NYI");
 	}
 
 	@Override
 	protected String getResultSetXPath() {
-		throw new RuntimeException("HAL getResultSetXPath NYI");
+		throw new RuntimeException("SCIELO getResultSetXPath NYI");
 	}
 
 	@Override
 	protected AbstractMetadataEntry createSubclassedMetadataEntry() {
-		throw new RuntimeException("HAL createSubclassedMetadataEntry NYI");
+		throw new RuntimeException("SCIELO createSubclassedMetadataEntry NYI");
 	}
 
-	
+
 }
