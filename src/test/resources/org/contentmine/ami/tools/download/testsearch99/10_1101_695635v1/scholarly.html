@@ -1,0 +1,2577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+ <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book#"> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=yes"/>
+  <meta name="type" content="article"/>
+  <meta name="category" content="article"/>
+  <meta name="HW.identifier" content="/biorxiv/early/2019/07/08/695635.atom"/>
+  <meta name="HW.pisa" content="biorxiv;695635v1"/>
+  <meta name="DC.Format" content="text/html"/>
+  <meta name="DC.Language" content="en"/>
+  <meta name="DC.Title" content="Unlocking the potential of historical abundance datasets to study biomass change in flying insects"/>
+  <meta name="DC.Identifier" content="10.1101/695635"/>
+  <meta name="DC.Date" content="2019-07-08"/>
+  <meta name="DC.Publisher" content="Cold Spring Harbor Laboratory"/>
+  <meta name="DC.Rights" content="© 2019, Posted by Cold Spring Harbor Laboratory. The copyright holder for this pre-print is the author. All rights reserved. The material may not be redistributed, re-used or adapted without the author's permission."/>
+  <meta name="DC.AccessRights" content="restricted"/>
+  <meta name="DC.Description" content="1. Insect abundance changes are well-established in some datasets, but far less is known about how this translates into biomass changes. Moths (Lepidoptera) provide particularly good opportunities to study trends and drivers of biomass change at large spatial and temporal scales, given the existence of long-term abundance datasets for moths. This requires estimation of the body mass of moths sampled over time, but such data do not currently exist. 2. We collected empirical data in 2018 on the forewing length and dry mass of sampled moths, and used these to train and test a statistical model that predicts the body mass of moth species from their forewing lengths (with refined parameters for Crambidae, Erebidae, Geometridae and Noctuidae). We tested the relationships between biomass, abundance and species richness of samples of moths for our 2018 samples, and over a 16-year period using long-term historical moth data (with model-estimated biomass) from a single site. 3. Modelled biomass was positively correlated with measured biomass of moth species (R2 = 0.910) and mixed-species samples of moths (R2 = 0.915), showing that it is possible to predict biomass accurately. Biomass correlated with moth abundance and species richness in our 2018 data and in the historical dataset, revealing biomass declined by 65.9 % over a 16-year period. 4. By allowing biomass to be estimated for historical moth abundance datasets, our approach creates opportunities to investigate trends and drivers of insect biomass change over long timescales and broad geographic regions."/>
+  <meta name="DC.Contributor" content="Rebecca S. Kinsella"/>
+  <meta name="DC.Contributor" content="Chris D. Thomas"/>
+  <meta name="DC.Contributor" content="Terry J. Crawford"/>
+  <meta name="DC.Contributor" content="Jane K. Hill"/>
+  <meta name="DC.Contributor" content="Peter J. Mayhew"/>
+  <meta name="DC.Contributor" content="Callum J. Macgregor"/>
+  <meta name="article:published_time" content="2019-07-08"/>
+  <meta name="article:section" content="New Results"/>
+  <meta name="citation_title" content="Unlocking the potential of historical abundance datasets to study biomass change in flying insects"/>
+  <meta name="citation_abstract" lang="en" content="&lt;;h3&gt;;Abstract&lt;;/h3&gt;; &lt;;p&gt;;Insect abundance changes are well-established in some datasets, but far less is known about how this translates into biomass changes. Moths (Lepidoptera) provide particularly good opportunities to study trends and drivers of biomass change at large spatial and temporal scales, given the existence of long-term abundance datasets for moths. This requires estimation of the body mass of moths sampled over time, but such data do not currently exist.&lt;;/p&gt;;&lt;;p&gt;;We collected empirical data in 2018 on the forewing length and dry mass of sampled moths, and used these to train and test a statistical model that predicts the body mass of moth species from their forewing lengths (with refined parameters for Crambidae, Erebidae, Geometridae and Noctuidae). We tested the relationships between biomass, abundance and species richness of samples of moths for our 2018 samples, and over a 16-year period using long-term historical moth data (with model-estimated biomass) from a single site.&lt;;/p&gt;;&lt;;p&gt;;Modelled biomass was positively correlated with measured biomass of moth species (R&lt;;sup&gt;;2&lt;;/sup&gt;; = 0.910) and mixed-species samples of moths (R&lt;;sup&gt;;2&lt;;/sup&gt;; = 0.915), showing that it is possible to predict biomass accurately. Biomass correlated with moth abundance and species richness in our 2018 data and in the historical dataset, revealing biomass declined by 65.9 % over a 16-year period.&lt;;/p&gt;;&lt;;p&gt;;By allowing biomass to be estimated for historical moth abundance datasets, our approach creates opportunities to investigate trends and drivers of insect biomass change over long timescales and broad geographic regions.&lt;;/p&gt;;"/>
+  <meta name="citation_journal_title" content="bioRxiv"/>
+  <meta name="citation_publisher" content="Cold Spring Harbor Laboratory"/>
+  <meta name="citation_publication_date" content="2019/01/01"/>
+  <meta name="citation_mjid" content="biorxiv;695635v1"/>
+  <meta name="citation_id" content="695635v1"/>
+  <meta name="citation_public_url" content="https://www.biorxiv.org/content/10.1101/695635v1"/>
+  <meta name="citation_abstract_html_url" content="https://www.biorxiv.org/content/10.1101/695635v1.abstract"/>
+  <meta name="citation_full_html_url" content="https://www.biorxiv.org/content/10.1101/695635v1.full"/>
+  <meta name="citation_pdf_url" content="https://www.biorxiv.org/content/biorxiv/early/2019/07/08/695635.full.pdf"/>
+  <meta name="citation_doi" content="10.1101/695635"/>
+  <meta name="citation_num_pages" content="28"/>
+  <meta name="citation_article_type" content="Article"/>
+  <meta name="citation_section" content="New Results"/>
+  <meta name="citation_firstpage" content="695635"/>
+  <meta name="citation_author" content="Rebecca S. Kinsella"/>
+  <meta name="citation_author_institution" content="Department of Biology, University of York"/>
+  <meta name="citation_author" content="Chris D. Thomas"/>
+  <meta name="citation_author_institution" content="Department of Biology, University of York"/>
+  <meta name="citation_author" content="Terry J. Crawford"/>
+  <meta name="citation_author_institution" content="Department of Biology, University of York"/>
+  <meta name="citation_author" content="Jane K. Hill"/>
+  <meta name="citation_author_institution" content="Department of Biology, University of York"/>
+  <meta name="citation_author" content="Peter J. Mayhew"/>
+  <meta name="citation_author_institution" content="Department of Biology, University of York"/>
+  <meta name="citation_author" content="Callum J. Macgregor"/>
+  <meta name="citation_author_institution" content="Department of Biology, University of York"/>
+  <meta name="citation_author_email" content="callumjmacgregor@gmail.com"/>
+  <meta name="citation_reference" content="Allen, C.E., Zwaan, B.J. &amp;; Brakefield, P.M. (2011) Evolution of sexual dimorphism in the Lepidoptera. Annual Review of Entomology, 56, 445–464."/>
+  <meta name="citation_reference" content="Altermatt, F., Baumeyer, A. &amp;; Ebert, D. (2009) Experimental evidence for male biased flight-to-light behavior in two moth species. Entomologia Experimentalis et Applicata, 130, 259–265."/>
+  <meta name="citation_reference" content="Bates, A.J., Sadler, J.P., Grundy, D., Lowe, N., Davis, G., Baker, D., et al. (2014) Garden and landscape-scale correlates of moths of differing conservation status: significant effects of urbanization and habitat diversity. PLoS ONE, 9, e86925."/>
+  <meta name="citation_reference" content="Bates, D., Maechler, M., Bolker, B. &amp;; Walker, S. (2015) Fitting linear mixed-effects models using lme4. Journal of Statistical Software, 67, 1–48."/>
+  <meta name="citation_reference" content="Brose, U., Berlow, E.L. &amp;; Martinez, N.D. (2005) Scaling up keystone effects from simple to complex ecological networks. Ecology Letters, 8, 1317–1325."/>
+  <meta name="citation_reference" content="Conrad, K.F., Warren, M.S., Fox, R., Parsons, M.S. &amp;; Woiwod, I.P. (2006) Rapid declines of common, widespread British moths provide evidence of an insect biodiversity crisis. Biological Conservation, 132, 279–291."/>
+  <meta name="citation_reference" content="Coulthard, E., Norrey, J., Shortall, C. &amp;; Harris, W.E. (2019) Ecological traits predict population changes in moths. Biological Conservation, 233, 213–219."/>
+  <meta name="citation_reference" content="Davis, R.B., Õunap, E., Javoiš, J., Gerhold, P. &amp;; Tammaru, T. (2013) Degree of specialization is related to body size in herbivorous insects: a phylogenetic confirmation. Evolution, 67, 583–589."/>
+  <meta name="citation_reference" content="Denerley, C., Redpath, S.M., Wal, R. van der Newson, S.E., Chapman, J.W. &amp;; Wilson, J.D. (2018) Breeding ground correlates of the distribution and decline of the Common Cuckoo Cuculus canorus at two spatial scales. The Ibis, 354, 547."/>
+  <meta name="citation_reference" content="Fox, R. (2013) The decline of moths in Great Britain: a review of possible causes. Insect Conservation and Diversity, 6, 5–19."/>
+  <meta name="citation_reference" content="Fox, R., Oliver, T.H., Harrower, C., Parsons, M.S., Thomas, C.D. &amp;; Roy, D.B. (2014) Longterm changes to the frequency of occurrence of British moths are consistent with opposing and synergistic effects of climate and land-use changes. Journal of Applied Ecology, 51, 949–957."/>
+  <meta name="citation_reference" content="Fox, R., Randle, Z., Hill, L., Anders, S., Wiffen, L. &amp;; Parsons, M.S. (2011) Moths count: recording moths for conservation in the UK. Journal of Insect Conservation, 15, 55–68."/>
+  <meta name="citation_reference" content="Franklin, A.J., Liebhold, A.M., Murray, K. &amp;; Donahue, C. (2003) Canopy herbivore community structure: large-scale geographical variation and relation to forest composition. Ecological Entomology, 28, 278–290."/>
+  <meta name="citation_reference" content="García-Barros, E. (2015) Multivariate indices as estimates of dry body weight for comparative study of body size in Lepidoptera. Nota Lepidopterologica, 38, 59–74."/>
+  <meta name="citation_reference" content="Gilbert, J.D.J. (2011) Insect dry weight: Shortcut to a difficult quantity using museum specimens. The Florida Entomologist, 94, 964–970."/>
+  <meta name="citation_reference" content="Gilburn, A.S., Bunnefeld, N., Wilson, J.M., Botham, M.S., Brereton, T.M., Fox, R., et al. (2015) Are neonicotinoid insecticides driving declines of widespread butterflies? PeerJ, 3, e1402."/>
+  <meta name="citation_reference" content="Groenendijk, D. &amp;; Ellis, W.N. (2011) The state of the Dutch larger moth fauna. Journal of Insect Conservation, 15, 95–101."/>
+  <meta name="citation_reference" content="Grubisic, M., Grunsven, R.H.A. van, Kyba, C.C.M., Manfrin, A. &amp;; Hölker, F. (2018) Insect declines and agroecosystems: does light pollution matter? Annals of Applied Biology, 8, e67798."/>
+  <meta name="citation_reference" content="Hallmann, C.A., Sorg, M., Jongejans, E., Siepel, H., Hofland, N., Schwan, H., et al. (2017) More than 75 percent decline over 27 years in total flying insect biomass in protected areas. PLoS ONE, 12, e0185809."/>
+  <meta name="citation_reference" content="Heath, J. (1965) A genuinely portable MV light trap. Entomologist’s Record and Journal of Variation, 77, 236–238."/>
+  <meta name="citation_reference" content="Hooks, C.R.R., Pandey, R.R. &amp;; Johnson, M.W. (2003) Impact of avian and arthropod predation on lepidopteran caterpillar densities and plant productivity in an ephemeral agroecosystem. Ecological Entomology, 28, 522–532."/>
+  <meta name="citation_reference" content="Janzen, D.H. (1984) Two ways to be a tropical big moth: Santa Rosa saturniids and sphingids. Oxford Surveys in Evolutionary Biology, 1, 140."/>
+  <meta name="citation_reference" content="Komonen, A., Halme, P. &amp;; Kotiaho, J.S. (2019) Alarmist by bad design: Strongly popularized unsubstantiated claims undermine credibility of conservation science. Rethinking Ecology, 4, 17–19."/>
+  <meta name="citation_reference" content="Langevelde van, F., Braamburg-Annegarn, M., Huigens, M.E., Groendijk, R., Poitevin, O., Deijk, J.R. van, et al. (2018) Declines in moth populations stress the need for conserving dark nights. Global Change Biology, 24, 925–932."/>
+  <meta name="citation_reference" content="Langevelde van, F., Ettema, J.A., Donners, M., WallisDeVries, M.F. &amp;; Groenendijk, D. (2011) Effect of spectral composition of artificial light on the attraction of moths. Biological Conservation, 144, 2274–2281."/>
+  <meta name="citation_reference" content="Legendre, P. (2018) lmodel2: Model II Regression. R package version 1.7-3. https://CRAN.R-project.org/package=lmodel2."/>
+  <meta name="citation_reference" content="Lister, B.C. &amp;; Garcia, A. (2018) Climate-driven declines in arthropod abundance restructure a rainforest food web. Proceedings of the National Academy of Sciences of the United States of America, 115, E10397–E10406."/>
+  <meta name="citation_reference" content="Macgregor, C.J., Kitson, J.J.N., Fox, R., Hahn, C., Lunt, D.H., Pocock, M.J.O., et al. (2019) Construction, validation, and application of nocturnal pollen transport networks in an agro-ecosystem: a comparison using light microscopy and DNA metabarcoding: Constructing nocturnal pollination networks. Ecological Entomology, 44, 17–29."/>
+  <meta name="citation_reference" content="Macgregor, C.J., Pocock, M.J.O., Fox, R. &amp;; Evans, D.M. (2015) Pollination by nocturnal Lepidoptera, and the effects of light pollution: a review. Ecological Entomology, 40, 187–198."/>
+  <meta name="citation_reference" content="Mattila, N., Kaitala, V. &amp;; Komonen, A. (2011) Ecological correlates of distribution change and range shift in butterflies. Insect Conservation and Diversity, 4, 239–246."/>
+  <meta name="citation_reference" content="Middleton-Welling, J., Wade, R.A., Dennis, R.L.H., Dapporto, L. &amp;; Shreeve, T.G. (2018) Optimising trait and source selection for explaining occurrence and abundance changes: A case study using British butterflies. Functional Ecology, 111, 543."/>
+  <meta name="citation_reference" content="Morecroft, M.D., Bealey, C.E., Beaumont, D.A., Benham, S., Brooks, D.R., Burt, T.P., et al. (2009) The UK Environmental Change Network: Emerging trends in the composition of plant and animal communities and the physical environment. Biological Conservation, 142, 2814–2832."/>
+  <meta name="citation_reference" content="Penone, C., Davidson, A.D., Shoemaker, K.T., Di Marco, M., Rondinini, C., Brooks, T.M., et al. (2014) Imputation of missing data in life-history trait datasets: which approach performs the best? Methods in Ecology and Evolution, 5, 961–970."/>
+  <meta name="citation_reference" content="Pescott, O.L., Simkin, J.M., August, T.A., Randle, Z., Dore, A.J. &amp;; Botham, M.S. (2015) Air pollution and its effects on lichens, bryophytes, and lichen-feeding Lepidoptera: review and evidence from biological records. Biological Journal of the Linnean Society, 115, 611–635."/>
+  <meta name="citation_reference" content="R Core Team. (2018) R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria."/>
+  <meta name="citation_reference" content="Sage, R.D. (1982) Wet and dry-weight estimates of insects and spiders based on length. The American Midland Naturalist, 108, 407–411."/>
+  <meta name="citation_reference" content="Sánchez-Bayo, F. &amp;; Wyckhuys, K.A.G. (2019) Worldwide decline of the entomofauna: A review of its drivers. Biological Conservation, 232, 8–27."/>
+  <meta name="citation_reference" content="Shortall, C.R., Moore, A., Smith, E., Hall, M.J., Woiwod, I.P. &amp;; Harrington, R. (2009) Longterm changes in the abundance of flying insects. Insect Conservation and Diversity, 2, 251–260."/>
+  <meta name="citation_reference" content="Sierro, A., Arlettaz, R., Naef-Daenzer, B., Strebel, S. &amp;; Zbinden, N. (2001) Habitat use and foraging ecology of the nightjar (Caprimulgus europaeus) in the Swiss Alps: towards a conservation scheme. Biological Conservation, 98, 325–331."/>
+  <meta name="citation_reference" content="Singer, M.S., Farkas, T.E., Skorik, C.M. &amp;; Mooney, K.A. (2012) Tritrophic interactions at a community level: effects of host plant species quality on bird predation of caterpillars. The American Naturalist, 179, 363–374."/>
+  <meta name="citation_reference" content="Sterling, P. &amp;; Parsons, M. (2012) Field Guide to the Micro-Moths of Great Britain and Ireland. First Edition. British Wildlife Publishing Ltd, Gillingham."/>
+  <meta name="citation_reference" content="citation_title=Advances in Ecological Research;citation_pages=3-42;citation_year=2016"/>
+  <meta name="citation_reference" content="Thomas, C.D., Jones, T.H. &amp;; Hartley, S.E. (2019) “Insectageddon”: A call for more robust data and rigorous analyses. Global Change Biology, doi:10.1111/gcb.14608."/>
+  <meta name="citation_reference" content="Threlfall, C.G., Law, B. &amp;; Banks, P.B. (2012) Sensitivity of insectivorous bats to urbanization: Implications for suburban conservation planning. Biological Conservation, 146, 41–52."/>
+  <meta name="citation_reference" content="Vaughan, N. (1997) The diets of British bats (Chiroptera). Mammal Review, 27, 77–94."/>
+  <meta name="citation_reference" content="Wagner, D.L. (2019) Global insect decline: Comments on Sánchez-Bayo and Wyckhuys (2019). Biological Conservation, doi:10.1016/j.biocon.2019.03.005."/>
+  <meta name="citation_reference" content="Waring, P. &amp;; Townsend, M. (2017) Field Guide to the Moths of Great Britain and Ireland. 3rd Revised Edition. Bloomsbury Natural History."/>
+  <meta name="citation_reference" content="Wickham, H. (2016) ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag, New York."/>
+  <meta name="citation_reference" content="Wickramasinghe, L.P., Harris, S., Jones, G. &amp;; Jennings, N.V. (2004) Abundance and species richness of nocturnal insects on organic and conventional farms: Effects of agricultural intensification on bat foraging. Conservation Biology, 18, 1283–1292."/>
+  <meta name="citation_reference" content="Wilson, J.F., Baker, D., Cheney, J., Cook, M., Ellis, M., Freestone, R., et al. (2018) A role for artificial night-time lighting in long-term changes in populations of 100 widespread macro-moths in UK and Ireland: a citizen-science study. Journal of Insect Conservation, 22, 189–196."/>
+  <meta name="citation_reference" content="Woodward, G., Ebenman, B., Emmerson, M., Montoya, J.M., Olesen, J.M., Valido, A., et al. (2005) Body size in ecological networks. Trends in Ecology &amp;; Evolution, 20, 402–409."/>
+  <meta name="twitter:title" content="Unlocking the potential of historical abundance datasets to study biomass change in flying insects"/>
+  <meta name="twitter:site" content="@biorxivpreprint"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:image" content="https://www.biorxiv.org/sites/default/files/images/biorxiv_logo_homepage7-5-small.png"/>
+  <meta name="twitter:description" content="1. Insect abundance changes are well-established in some datasets, but far less is known about how this translates into biomass changes. Moths (Lepidoptera) provide particularly good opportunities to study trends and drivers of biomass change at large spatial and temporal scales, given the existence of long-term abundance datasets for moths. This requires estimation of the body mass of moths sampled over time, but such data do not currently exist. 2. We collected empirical data in 2018 on the forewing length and dry mass of sampled moths, and used these to train and test a statistical model that predicts the body mass of moth species from their forewing lengths (with refined parameters for Crambidae, Erebidae, Geometridae and Noctuidae). We tested the relationships between biomass, abundance and species richness of samples of moths for our 2018 samples, and over a 16-year period using long-term historical moth data (with model-estimated biomass) from a single site. 3. Modelled biomass was positively correlated with measured biomass of moth species (R2 = 0.910) and mixed-species samples of moths (R2 = 0.915), showing that it is possible to predict biomass accurately. Biomass correlated with moth abundance and species richness in our 2018 data and in the historical dataset, revealing biomass declined by 65.9 % over a 16-year period. 4. By allowing biomass to be estimated for historical moth abundance datasets, our approach creates opportunities to investigate trends and drivers of insect biomass change over long timescales and broad geographic regions."/>
+  <meta name="og-title" property="og:title" content="Unlocking the potential of historical abundance datasets to study biomass change in flying insects"/>
+  <meta name="og-url" property="og:url" content="https://www.biorxiv.org/content/10.1101/695635v1"/>
+  <meta name="og-site-name" property="og:site_name" content="bioRxiv"/>
+  <meta name="og-description" property="og:description" content="1. Insect abundance changes are well-established in some datasets, but far less is known about how this translates into biomass changes. Moths (Lepidoptera) provide particularly good opportunities to study trends and drivers of biomass change at large spatial and temporal scales, given the existence of long-term abundance datasets for moths. This requires estimation of the body mass of moths sampled over time, but such data do not currently exist. 2. We collected empirical data in 2018 on the forewing length and dry mass of sampled moths, and used these to train and test a statistical model that predicts the body mass of moth species from their forewing lengths (with refined parameters for Crambidae, Erebidae, Geometridae and Noctuidae). We tested the relationships between biomass, abundance and species richness of samples of moths for our 2018 samples, and over a 16-year period using long-term historical moth data (with model-estimated biomass) from a single site. 3. Modelled biomass was positively correlated with measured biomass of moth species (R2 = 0.910) and mixed-species samples of moths (R2 = 0.915), showing that it is possible to predict biomass accurately. Biomass correlated with moth abundance and species richness in our 2018 data and in the historical dataset, revealing biomass declined by 65.9 % over a 16-year period. 4. By allowing biomass to be estimated for historical moth abundance datasets, our approach creates opportunities to investigate trends and drivers of insect biomass change over long timescales and broad geographic regions."/>
+  <meta name="og-type" property="og:type" content="article"/>
+  <meta name="og-image" property="og:image" content="https://www.biorxiv.org/sites/default/files/images/biorxiv_logo_homepage7-5-small.png"/>
+  <meta name="citation_date" content="2019-07-08"/> 
+  <meta name="description" content="bioRxiv - the preprint server for biology, operated by Cold Spring Harbor Laboratory, a research and educational institution"/>
+  <meta name="generator" content="Drupal 7 (http://drupal.org)"/> 
+  <title>Unlocking the potential of historical abundance datasets to study biomass change in flying insects | bioRxiv</title> 
+ </head>
+ <body class="html not-front not-logged-in page-node page-node- page-node-809648 node-type-highwire-article context-content hw-default-jcode-biorxiv hw-article-type-article hw-article-category-new-results"> 
+  <div class="article fulltext-view ">
+   <span class="highwire-journal-article-marker-start"/>
+   <div class="section abstract" id="abstract-1">
+    <h2 class="">Abstract</h2>
+    <ol class="list-ord " id="list-1">
+     <li id="list-item-1">
+      <p id="p-2">Insect abundance changes are well-established in some datasets, but far less is known about how this translates into biomass changes. Moths (Lepidoptera) provide particularly good opportunities to study trends and drivers of biomass change at large spatial and temporal scales, given the existence of long-term abundance datasets for moths. This requires estimation of the body mass of moths sampled over time, but such data do not currently exist.</p>
+     </li>
+     <li id="list-item-2">
+      <p id="p-3">We collected empirical data in 2018 on the forewing length and dry mass of sampled moths, and used these to train and test a statistical model that predicts the body mass of moth species from their forewing lengths (with refined parameters for Crambidae, Erebidae, Geometridae and Noctuidae). We tested the relationships between biomass, abundance and species richness of samples of moths for our 2018 samples, and over a 16-year period using long-term historical moth data (with model-estimated biomass) from a single site.</p>
+     </li>
+     <li id="list-item-3">
+      <p id="p-4">Modelled biomass was positively correlated with measured biomass of moth species (R
+       <sup>2</sup> = 0.910) and mixed-species samples of moths (R
+       <sup>2</sup> = 0.915), showing that it is possible to predict biomass accurately. Biomass correlated with moth abundance and species richness in our 2018 data and in the historical dataset, revealing biomass declined by 65.9 % over a 16-year period.
+      </p>
+     </li>
+     <li id="list-item-4">
+      <p id="p-5">By allowing biomass to be estimated for historical moth abundance datasets, our approach creates opportunities to investigate trends and drivers of insect biomass change over long timescales and broad geographic regions.</p>
+     </li>
+    </ol>
+   </div>
+   <div class="section" id="sec-1">
+    <h2 class="">Introduction</h2>
+    <p id="p-6">Several recent studies have reported that insect biomass is in decline (
+     <a id="xref-ref-19-1" class="xref-bibr" href="#ref-19">Hallmann 
+      <em>et al</em>., 2017
+     </a>; 
+     <a id="xref-ref-27-1" class="xref-bibr" href="#ref-27">Lister &amp;; Garcia, 2018</a>; 
+     <a id="xref-ref-37-1" class="xref-bibr" href="#ref-37">Sánchez-Bayo &amp;; Wyckhuys, 2019</a>), but with substantial spatial and taxonomic variation in the existence and strength of such declines (
+     <a id="xref-ref-38-1" class="xref-bibr" href="#ref-38">Shortall 
+      <em>et al</em>., 2009
+     </a>). The reasons for such variation are not yet known, and it is therefore possible that declines in insect biomass are not always symptomatic of equivalent declines in abundance, or vice versa. Biomass could remain stable even in the face of declining abundance if communities became increasingly comprised of larger-bodied species. Likewise, changes in community-level biomass could be attributable to changes in community composition, even in the absence of an overall abundance change. This might occur if communities became more biased towards larger- or smaller-bodied species, e.g. through size-bias in strength of selection for or against particular traits (
+     <a id="xref-ref-7-1" class="xref-bibr" href="#ref-7">Coulthard 
+      <em>et al</em>., 2019
+     </a>), such as faster or slower life-histories, degree of habitat specialization (
+     <a id="xref-ref-30-1" class="xref-bibr" href="#ref-30">Mattila 
+      <em>et al</em>., 2011
+     </a>; 
+     <a id="xref-ref-8-1" class="xref-bibr" href="#ref-8">Davis 
+      <em>et al</em>., 2013
+     </a>), and strength of attraction to artificial light at night (van 
+     <a id="xref-ref-25-1" class="xref-bibr" href="#ref-25">Langevelde 
+      <em>et al</em>., 2011
+     </a>). However, the relationships between biomass, abundance and community composition have not yet been examined at large spatial and temporal scales because of a lack of suitable data on biomass.
+    </p>
+    <p id="p-7">Opportunities to investigate changes over time and space in insect communities are provided by several large-scale, long-term abundance datasets for moths (Lepidoptera) in the UK, including the Rothamsted Insect Survey (RIS; 
+     <a id="xref-ref-42-1" class="xref-bibr" href="#ref-42">Storkey 
+      <em>et al</em>., 2016
+     </a>), the National Moth Recording Scheme (NMRS; 
+     <a id="xref-ref-12-1" class="xref-bibr" href="#ref-12">Fox 
+      <em>et al</em>., 2011
+     </a>), and the Garden Moth Scheme (GMS; Bates 
+     <em>et al</em>., 2014a; 
+     <a id="xref-ref-50-1" class="xref-bibr" href="#ref-50">Wilson 
+      <em>et al</em>., 2018
+     </a>), and elsewhere (e.g. the Noctua database; 
+     <a id="xref-ref-17-1" class="xref-bibr" href="#ref-17">Groenendijk &amp;; Ellis, 2011</a>). However, these datasets do not record measurements of body mass, and in most cases do not retain specimens. To address questions of biomass change using these abundance datasets requires reliable body-mass data for all species, but such empirical data are currently available for only a limited set of species (
+     <a id="xref-ref-14-1" class="xref-bibr" href="#ref-14">García-Barros, 2015</a>).
+    </p>
+    <p id="p-8">An alternative approach is to use empirical data from a subset of all species to model the expected body mass of all species from some other, more readily-available, trait. Such models have previously been formulated to predict the body mass of moths and other insects from their body length (
+     <a id="xref-ref-36-1" class="xref-bibr" href="#ref-36">Sage, 1982</a>) and variants thereof (
+     <a id="xref-ref-14-2" class="xref-bibr" href="#ref-14">García-Barros, 2015</a>), chosen because it is easily measurable from museum specimens (
+     <a id="xref-ref-14-3" class="xref-bibr" href="#ref-14">García-Barros, 2015</a>). However, for moths, body length data are not widely available and in any case may be influenced to a greater degree by contraction in dried specimens than other traits (
+     <a id="xref-ref-14-4" class="xref-bibr" href="#ref-14">García-Barros, 2015</a>). The only morphological trait for which existing data on many species is readily available is forewing length: for example, an expected range of forewing lengths is included for all British species of macro-moths, and most British species of micro-moths, in standard field guides (
+     <a id="xref-ref-41-1" class="xref-bibr" href="#ref-41">Sterling &amp;; Parsons, 2012</a>; 
+     <a id="xref-ref-47-1" class="xref-bibr" href="#ref-47">Waring &amp;; Townsend, 2017</a>), and it may therefore be possible to predict body mass based on forewing length. The existence of substantial interfamilial variation in body plan (e.g. between Saturniidae and Sphingidae; 
+     <a id="xref-ref-22-1" class="xref-bibr" href="#ref-22">Janzen, 1984</a>) may provide opportunities to fine-tune such a model without requiring further data, but no previous model has included any refinement based on taxonomic relationships between moths. Therefore, a model to predict body mass based on forewing length, with family-level refinements where possible, may therefore have the broadest potential application, but no such model currently exists.
+    </p>
+    <p id="p-9">Two-thirds of British species of macro-moths show negative abundance trends in the long-term (
+     <a id="xref-ref-6-1" class="xref-bibr" href="#ref-6">Conrad 
+      <em>et al</em>., 2006
+     </a>), with similar patterns observed elsewhere in Europe (e.g. 
+     <a id="xref-ref-17-2" class="xref-bibr" href="#ref-17">Groenendijk &amp;; Ellis, 2011</a>). The potential drivers of these declines are diverse (
+     <a id="xref-ref-10-1" class="xref-bibr" href="#ref-10">Fox, 2013</a>), and likely to include habitat loss and fragmentation, agricultural intensification and associated agrochemical use, increased prevalence of artificial light at night and other factors associated with urbanisation, and climate change (
+     <a id="xref-ref-49-1" class="xref-bibr" href="#ref-49">Wickramasinghe 
+      <em>et al</em>., 2004
+     </a>; 
+     <a id="xref-ref-32-1" class="xref-bibr" href="#ref-32">Morecroft 
+      <em>et al</em>., 2009
+     </a>; 
+     <a id="xref-ref-10-2" class="xref-bibr" href="#ref-10">Fox, 2013</a>; 
+     <a id="xref-ref-11-1" class="xref-bibr" href="#ref-11">Fox 
+      <em>et al</em>., 2014
+     </a>; 
+     <a id="xref-ref-16-1" class="xref-bibr" href="#ref-16">Gilburn 
+      <em>et al</em>., 2015
+     </a>; 
+     <a id="xref-ref-24-1" class="xref-bibr" href="#ref-24">van Langevelde 
+      <em>et al</em>., 2018
+     </a>). Moths contribute to important ecosystem functions, including nocturnal pollination (
+     <a id="xref-ref-29-1" class="xref-bibr" href="#ref-29">Macgregor 
+      <em>et al</em>., 2015
+     </a>, 
+     <a id="xref-ref-28-1" class="xref-bibr" href="#ref-28">2019</a>) and energy transfer from producers to higher-level consumers (e.g. 
+     <a id="xref-ref-13-1" class="xref-bibr" href="#ref-13">Franklin 
+      <em>et al</em>., 2003
+     </a>; 
+     <a id="xref-ref-21-1" class="xref-bibr" href="#ref-21">Hooks 
+      <em>et al</em>., 2003
+     </a>; 
+     <a id="xref-ref-40-1" class="xref-bibr" href="#ref-40">Singer 
+      <em>et al</em>., 2012
+     </a>). Thus, moths can be important to the conservation of their predators, such as bats (
+     <a id="xref-ref-45-1" class="xref-bibr" href="#ref-45">Vaughan, 1997</a>; 
+     <a id="xref-ref-44-1" class="xref-bibr" href="#ref-44">Threlfall 
+      <em>et al</em>., 2012
+     </a>) and some birds (
+     <a id="xref-ref-39-1" class="xref-bibr" href="#ref-39">Sierro 
+      <em>et al</em>., 2001
+     </a>; 
+     <a id="xref-ref-9-1" class="xref-bibr" href="#ref-9">Denerley 
+      <em>et al</em>., 2018
+     </a>). In transferring energy, the quantity of vegetation consumed by caterpillars and the biomass of insects available to predators may be functionally important determinants of ecosystem processes (
+     <a id="xref-ref-5-1" class="xref-bibr" href="#ref-5">Brose 
+      <em>et al</em>., 2005
+     </a>). Similarly, the body size of individual species can play a substantial role in structuring networks of interspecific interactions (
+     <a id="xref-ref-51-1" class="xref-bibr" href="#ref-51">Woodward 
+      <em>et al</em>., 2005
+     </a>). Therefore, understanding changes in the biomass of moths at the community level is vital, requiring biomass data over long time-periods.
+    </p>
+    <p id="p-10">In this study, we develop an approach to estimate the body mass of individual moths from their forewing length, and hence quantify the biomass of samples of moths. We have three aims: (i) collection of empirical data (during 2018 on the University of York campus, UK) to test the relationship between forewing length and body mass in moths; (ii) construction and testing of a predictive model for estimating body mass from species identity and associated forewing length; (iii) demonstration of our model’s potential applications by investigating changes over time in biomass, abundance and species richness, using a 16-year historical abundance dataset (RIS records from the University of York campus during the period 1991-2006) for which no body mass data or specimens are available.</p>
+   </div>
+   <div class="section" id="sec-2">
+    <h2 class="">Materials and methods</h2>
+    <div id="sec-3" class="subsection">
+     <h3>Field sampling, identification and measurement of moths</h3>
+     <p id="p-11">We sampled moths at three sites (Fig. S1) on the University of York campus, UK (53°56’41” N 1°2’2” W) between 11th June and 20th July 2018 (Appendix S1.1). Moths were collected using Heath-style moth traps (
+      <a id="xref-ref-20-1" class="xref-bibr" href="#ref-20">Heath, 1965</a>), each operating a 15 W actinic fluorescent tube and powered by a 12 V battery (Anglian Lepidopterist Supplies, Hindolveston, UK). Moths were euthanised and returned to the laboratory for identification and measurement. Moths were identified to species-level where possible using standard field guides (
+      <a id="xref-ref-41-2" class="xref-bibr" href="#ref-41">Sterling &amp;; Parsons, 2012</a>; 
+      <a id="xref-ref-47-2" class="xref-bibr" href="#ref-47">Waring &amp;; Townsend, 2017</a>). Where species-level identification would have required dissection of the genitalia, identification was made to aggregate level (e.g. Common Rustic agg. 
+      <em>Mesapamea secalis/didyma</em>). After identification, moths were allowed to air-dry at room temperature for a minimum of one week (Appendix S1.2, Fig. S2). After drying, we measured the forewing length and dry mass of each moth. Forewing length was measured from wing base to wing-tip, using calipers and a ruler, to the nearest 1 mm. Dry mass was measured using an A&amp;;D HR-202 balance (A&amp;;D Instruments Ltd., Abingdon, UK), to the nearest 0.01 mg. Measurements were precise to within ± 6 % of the true value (Appendix S1.2).
+     </p>
+    </div>
+    <div id="sec-4" class="subsection">
+     <h3>Modelling forewing length – body mass relationship from empirical data</h3>
+     <p id="p-12">To investigate the relationship between forewing length (mm) and body mass (mg; both variables ln-transformed) in moths, we constructed a generalized linear mixed-effects model (GLMM) using our 2018 field data, with species as a random effect and the fixed-effect structure: body mass is explained by the interaction between forewing length and taxonomic family (i.e. ln(body mass) ∼ ln(wing length) × family). We tested the significance of model terms, including the interaction between wing length and family, using Likelihood Ratio Tests.</p>
+     <p id="p-13">In order to refine the model for making predictions, we then simplified the family variable to analyse four families which had more than five species in our 2018 samples (Crambidae, Erebidae, Geometridae and Noctuidae), grouping all other families together as ‘others’ (n = 7 families). This allowed the predictive model’s parameters to be refined for the four families with sufficient data, whilst also making overall predictions for all other families. We fitted a GLMM to the dataset as above, using this aggregated version of the family variable, and extracted all parameters from the GLMM to form the predictive model. We did not include information on whether individuals were male or female, even though male and female moths can differ substantially in size, because this information is not recorded in historical abundance datasets. Our model therefore used overall slope and intercept to predict body mass from forewing length, with a refined slope and intercept for moths from the most speciose (and therefore data-rich) four families in our dataset.</p>
+     <p id="p-14">To test the accuracy of the predictive model when making predictions based on forewing length data from field guides, we used it to estimate the dry body mass of every moth in our dataset. For each moth, we obtained an expected forewing length by taking the midpoint between the minimum and maximum expected forewing lengths given by field guides (micro-moths: 
+      <a id="xref-ref-41-3" class="xref-bibr" href="#ref-41">Sterling &amp;; Parsons, 2012</a>; macro-moths: 
+      <a id="xref-ref-47-3" class="xref-bibr" href="#ref-47">Waring &amp;; Townsend, 2017</a>), and applied our predictive model to these expected forewing lengths to generate estimated body masses that were independent of our empirical data. From these estimated body masses, we calculated the total estimated biomass of each sample of moths (i.e. all moths captured at one site in one night) in our study, and compared this estimate with the true biomass of the same samples that we had measured. We also calculated the mean dry body mass of each moth species in our dataset. At both species- and sample-level, we tested the relationship between measured and predicted biomass, using model II regressions with a Major Axis approach because neither biomass variable was dependent upon the other. Significance of relationships from random was tested using one-tailed permutation tests (with 100 permutations), and relationships were also compared to the desired 1:1 (i.e. estimated = measured) relationship by calculation of 95% confidence intervals around the estimated slope and intercept. The strength of the relationships between measured and estimated biomass at species- and sample-level were determined by model R
+      <sup>2</sup> values.
+     </p>
+    </div>
+    <div id="sec-5" class="subsection">
+     <h3>Testing biomass – abundance relationships and trends across samples and over time</h3>
+     <p id="p-15">We investigated the relationships between sample-level biomass, abundance and species richness across our three study sites in 2018 using sample-level data, and over time using a 16-year historical dataset also collected on the University of York campus. We obtained this long-term historical abundance data from the Rothamsted Insect Survey (RIS), covering the period 1991–2006. In the RIS, moths are collected in the same location on every night of the year using standard-design light-traps operating a 200 W tungsten bulb (
+      <a id="xref-ref-42-2" class="xref-bibr" href="#ref-42">Storkey 
+       <em>et al</em>. 2016
+      </a>). Samples of moths are identified and counted daily or every few days, generating long-term, high-temporal resolution abundance data for a fixed site which can reveal site-level trends in abundance over many years (e.g. 
+      <a id="xref-ref-10-3" class="xref-bibr" href="#ref-10">Fox 
+       <em>et al</em>. 2013
+      </a>). An RIS trap, “Heslington”, was operated between 1991–2006 on the roof of the Department of Biology, University of York (53°56’51” N 1°3’26” W), at approximately 500 m distance from 2018 sampling site 1 (Fig. S1). This trap was emptied daily and abundance records are available, but specimens were not stored. We used our predictive model to estimate the body mass of all British species of macro-moths and all British species of the micro-moth families Crambidae and Pyralidae (Fig. S3), which collectively included all species that had ever been recorded in the Heslington trap, and also provides a useful resource for other users of insect abundance data (Table S1). From these estimates, we calculated the total annual biomass of moths captured in this trap in each year from 1991–2006.
+     </p>
+     <p id="p-16">For the 2018 samples, we used generalised linear mixed-effects models (GLMMs) to investigate the relationships between sample biomass, abundance, and species richness, with site as a random effect. We tested significance using a Likelihood Ratio Test. For the Heslington RIS data, we tested the same relationships (with no random effects) using generalised linear models (GLMs), testing significance using an F-test. We also confirmed significance of all relationships using model II regressions with a Major Axis approach, as above, because it was unclear which variable should be viewed as the independent variable.</p>
+     <p id="p-17">We used linear regression to test for significant trends over time in biomass, abundance and species richness in the historical dataset, and checked significance of these trends using non-parametric Spearman’s rank correlation because trends over time might not be linear. We calculated the absolute change in biomass, abundance and species richness between 1991 and 2006, as a percentage of the 1991 value.</p>
+     <p id="p-18">All statistical analyses were conducted in R version 3.5.0 (
+      <a id="xref-ref-35-1" class="xref-bibr" href="#ref-35">R Core Team, 2018</a>) using the following packages: 
+      <em>lme4</em> to fit and assess linear mixed-effects models (
+      <a id="xref-ref-4-1" class="xref-bibr" href="#ref-4">Bates 
+       <em>et al.</em>, 2015
+      </a>); 
+      <em>lmodel2</em> to conduct model II regressions (
+      <a id="xref-ref-26-1" class="xref-bibr" href="#ref-26">Legendre, 2018</a>); and 
+      <em>ggplot2</em> to plot figures (
+      <a id="xref-ref-48-1" class="xref-bibr" href="#ref-48">Wickham, 2016</a>). All R scripts used in the analysis, and all data except the Heslington RIS data and its derivatives (which can be obtained independently by application to Rothamsted Research), are archived online at Zenodo (doi: 
+      <span class="underline">10.5281/zenodo.2645026</span>).
+     </p>
+    </div>
+   </div>
+   <div class="section" id="sec-6">
+    <h2 class="">Results</h2>
+    <div id="sec-7" class="subsection">
+     <h3>Sampled moths</h3>
+     <p id="p-19">We sampled 614 individual moths in 2018, of which 13 could not be identified beyond family level. One micro-moth (
+      <em>Narycia duplicella</em> [Goeze, 1783], Psychidae) could not be detected by our balance (and therefore weighed less than 0.005 mg). These 14 individual moths were excluded from further analyses. The remaining dataset contained exactly 600 individual moths, representing 94 species from 11 families (Table S2).
+     </p>
+    </div>
+    <div id="sec-8" class="subsection">
+     <h3>Testing forewing length – body mass relationships in field data</h3>
+     <p id="p-20">Body mass and forewing length were significantly related to each other at both species and individual levels (
+      <a id="xref-fig-1-1" class="xref-fig" href="#F1">Fig. 1</a>), with variation among the eleven families in the slope and intercept of this relationship (χ
+      <sup>2</sup> = 35.9, d.f. = 10, 
+      <em>P</em> &lt;; 0.001; marginal R
+      <sup>2</sup> = 0.819) revealing that interfamilial variation in body plan significantly influences the scaling of forewing length to body mass. To reduce the risk of our model overfitting for families represented by only a few species in our dataset, we refitted this model with an aggregated family variable, in which seven families represented by fewer than five species in our dataset were grouped together as ‘other’ (effectively reducing the family variable from n = 11 to n = 5). The significance of the model (and almost all of its explained variance) was retained when fitting this simplified model (χ
+      <sup>2</sup> = 30.7, d.f. = 4, 
+      <em>P</em> &lt;; 0.001; marginal R
+      <sup>2</sup> = 0.812), resulting in a set of parameters from which body mass could be predicted based on forewing length (
+      <a id="xref-table-wrap-1-1" class="xref-table" href="#T1">Table 1</a>). All four families with refined estimates had larger intercepts and shallower slopes than the overall prediction across the other families (
+      <a id="xref-table-wrap-1-2" class="xref-table" href="#T1">Table 1</a>), implying that within families, body mass may increase more gradually as forewing length increases than between families.
+     </p>
+     <div id="T1" class="table pos-float">
+      <div class="table-inline table-callout-links">
+       <div class="callout">
+        <span>View this table:</span>
+        <ul class="callout-links">
+         <li class="view-inline first">
+          <a href="##" class="table-expand-inline" data-table-url="/highwire/markup/811234/expansion?postprocessors=highwire_tables%2Chighwire_reclass%2Chighwire_figures%2Chighwire_math%2Chighwire_inline_linked_media%2Chighwire_embed&amp;;table-expand-inline=1" data-icon-position="" data-hide-link-title="0">View inline</a>
+         </li>
+         <li class="view-popup">
+          <a href="/highwire/markup/811234/expansion?width=1000&amp;;height=500&amp;;iframe=true&amp;;postprocessors=highwire_tables%2Chighwire_reclass%2Chighwire_figures%2Chighwire_math%2Chighwire_inline_linked_media%2Chighwire_embed" class="colorbox colorbox-load table-expand-popup" rel="gallery-fragment-tables" data-icon-position="" data-hide-link-title="0">View popup</a>
+         </li>
+         <li class="download-ppt last">
+          <a href="/highwire/powerpoint/811234" class="highwire-figure-link highwire-figure-link-ppt" data-icon-position="" data-hide-link-title="0">Download powerpoint</a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div class="table-caption">
+       <span class="table-label">Table 1:</span>
+       <p id="p-21" class="first-child">Parameters of the predictive model, extracted by fitting a GLMM with the fixed-effects structure: log(body mass) ∼ log(forewing length) × family, to data from 600 individual moths. Overall model parameters are given, including the χ
+        <sup>2</sup> and 
+        <em>P-</em>values of a Likelihood Ratio Test of the model’s overall significance. Family-specific slope and intercept values are refinements to be added to the parameters for ‘other families’ (rather than taken in isolation). To predict body mass of a moth from its forewing length, these parameters should be applied to the following formula: log(body mass) = (log(forewing length) × (‘other families’ slope + family slope adjustment)) + (‘other families’ intercept + family intercept adjustment).
+       </p>
+       <div class="sb-div caption-clear"/>
+      </div>
+     </div>
+     <div id="F1" class="fig pos-float type-figure odd">
+      <div class="highwire-figure">
+       <div class="fig-inline-img-wrapper">
+        <div class="fig-inline-img">
+         <a href="https://www.biorxiv.org/content/biorxiv/early/2019/07/08/695635/F1.large.jpg?width=800&amp;;height=600&amp;;carousel=1" title="Relationship between forewing length (mm) and dry mass (mg). In the top panel, the mean forewing length and dry mass of each species sampled in the study is shown on logarithmic axes, with error bars showing standard errors and family indicated by the combination of point colour and shape. In panel (b), the forewing length and dry mass of every individual moth sampled in the study is shown on logarithmic axes, with the four most speciose families in our sample (Crambidae, Erebidae, Geometridae and Noctuidae) indicated as above by point colour and shape." class="highwire-fragment fragment-images colorbox-load" rel="gallery-fragment-images-1035540088" data-figure-caption="&lt;;div class=&quot;;highwire-markup&quot;;&gt;;Relationship between forewing length (mm) and dry mass (mg). In the top panel, the mean forewing length and dry mass of each species sampled in the study is shown on logarithmic axes, with error bars showing standard errors and family indicated by the combination of point colour and shape. In panel (b), the forewing length and dry mass of every individual moth sampled in the study is shown on logarithmic axes, with the four most speciose families in our sample (Crambidae, Erebidae, Geometridae and Noctuidae) indicated as above by point colour and shape.&lt;;/div&gt;;" data-icon-position="" data-hide-link-title="0">
+          <span class="hw-responsive-img">
+           <img class="highwire-fragment fragment-image lazyload" alt="Figure 1:" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://www.biorxiv.org/content/biorxiv/early/2019/07/08/695635/F1.medium.gif" width="303" height="440"/>
+           <noscript>
+            <img class="highwire-fragment fragment-image" alt="Figure 1:" src="https://www.biorxiv.org/content/biorxiv/early/2019/07/08/695635/F1.medium.gif" width="303" height="440"/>
+           </noscript>
+          </span>
+         </a>
+        </div>
+       </div>
+       <ul class="highwire-figure-links inline">
+        <li class="download-fig first">
+         <a href="https://www.biorxiv.org/content/biorxiv/early/2019/07/08/695635/F1.large.jpg?download=true" class="highwire-figure-link highwire-figure-link-download" title="Download Figure 1:" data-icon-position="" data-hide-link-title="0">Download figure</a>
+        </li>
+        <li class="new-tab last">
+         <a href="https://www.biorxiv.org/content/biorxiv/early/2019/07/08/695635/F1.large.jpg" class="highwire-figure-link highwire-figure-link-newtab" target="_blank" data-icon-position="" data-hide-link-title="0">Open in new tab</a>
+        </li>
+       </ul>
+      </div>
+      <div class="fig-caption">
+       <span class="fig-label">Figure 1:</span>
+       <p id="p-22" class="first-child">Relationship between forewing length (mm) and dry mass (mg). In the top panel, the mean forewing length and dry mass of each species sampled in the study is shown on logarithmic axes, with error bars showing standard errors and family indicated by the combination of point colour and shape. In panel (b), the forewing length and dry mass of every individual moth sampled in the study is shown on logarithmic axes, with the four most speciose families in our sample (Crambidae, Erebidae, Geometridae and Noctuidae) indicated as above by point colour and shape.</p>
+       <div class="sb-div caption-clear"/>
+      </div>
+     </div>
+     <p id="p-23">We found that our estimates of biomass significantly predicted the measured biomass at both species- and sample-levels (
+      <a id="xref-fig-2-1" class="xref-fig" href="#F2">Fig. 2</a>), even though body mass varied widely both within and between species (within-species s.d. of body mass = 34.6 mg, between-species s.d. of body mass = 74.7 mg). At sample-level, the relationship between estimated and measured biomass was not significantly different a 1:1 relationship (
+      <a id="xref-table-wrap-2-1" class="xref-table" href="#T2">Table 2</a>), with 91.5 % of variation explained. At species-level, estimated biomass explained 91.0 % of variation, but the relationship was shallower than the expected 1:1 relationship (
+      <a id="xref-table-wrap-2-2" class="xref-table" href="#T2">Table 2</a>). However, when we excluded the 34 smallest species (i.e. only included species weighing &gt;; 15 mg, n = 60 species), the relationship no longer deviated from a 1:1 relationship, indicating that our predictive model may slightly overestimate the body mass of very small species of moths.
+     </p>
+     <div id="T2" class="table pos-float">
+      <div class="table-inline table-callout-links">
+       <div class="callout">
+        <span>View this table:</span>
+        <ul class="callout-links">
+         <li class="view-inline first">
+          <a href="##" class="table-expand-inline" data-table-url="/highwire/markup/811230/expansion?postprocessors=highwire_tables%2Chighwire_reclass%2Chighwire_figures%2Chighwire_math%2Chighwire_inline_linked_media%2Chighwire_embed&amp;;table-expand-inline=1" data-icon-position="" data-hide-link-title="0">View inline</a>
+         </li>
+         <li class="view-popup">
+          <a href="/highwire/markup/811230/expansion?width=1000&amp;;height=500&amp;;iframe=true&amp;;postprocessors=highwire_tables%2Chighwire_reclass%2Chighwire_figures%2Chighwire_math%2Chighwire_inline_linked_media%2Chighwire_embed" class="colorbox colorbox-load table-expand-popup" rel="gallery-fragment-tables" data-icon-position="" data-hide-link-title="0">View popup</a>
+         </li>
+         <li class="download-ppt last">
+          <a href="/highwire/powerpoint/811230" class="highwire-figure-link highwire-figure-link-ppt" data-icon-position="" data-hide-link-title="0">Download powerpoint</a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div class="table-caption">
+       <span class="table-label">Table 2:</span>
+       <p id="p-24" class="first-child">Details of statistical models testing the relationships between measured biomass and estimated biomass at species- and sample-level. Relationships were tested using a model II regression, and significance was determined by a one-tailed permutation test with 100 permutations. The R
+        <sup>2</sup> of each model is also given, alongside the estimated intercept and slope of each model, with associated 95% confidence intervals.
+       </p>
+       <div class="sb-div caption-clear"/>
+      </div>
+     </div>
+     <div id="F2" class="fig pos-float type-figure odd">
+      <div class="highwire-figure">
+       <div class="fig-inline-img-wrapper">
+        <div class="fig-inline-img">
+         <a href="https://www.biorxiv.org/content/biorxiv/early/2019/07/08/695635/F2.large.jpg?width=800&amp;;height=600&amp;;carousel=1" title="Accuracy of predicted biomass of moth species and samples of moths compared to the true, measured biomass. (a) Predicted dry mass of species (mg) is plotted against mean measured dry mass (mg); the 1:1 relationship is plotted as a blue line, and points are coloured by the number of individual moths from which the measured mean was calculated. (b) The absolute difference between mean measured dry mass and predicted dry mass of each moth species is plotted against the number of individuals from which the measured mean was calculated; a horizontal line is plotted at y = 0. (c) Predicted dry mass of samples (mg) is plotted against measured dry mass (mg); the 1:1 relationship is plotted as a blue line, and points are coloured by the number of individual moths contained in the sample. (d) The absolute difference between measured and predicted dry mass of each sample of moths is plotted against measured dry mass (mg); a horizontal line is plotted at y = 0." class="highwire-fragment fragment-images colorbox-load" rel="gallery-fragment-images-1035540088" data-figure-caption="&lt;;div class=&quot;;highwire-markup&quot;;&gt;;Accuracy of predicted biomass of moth species and samples of moths compared to the true, measured biomass. (a) Predicted dry mass of species (mg) is plotted against mean measured dry mass (mg); the 1:1 relationship is plotted as a blue line, and points are coloured by the number of individual moths from which the measured mean was calculated. (b) The absolute difference between mean measured dry mass and predicted dry mass of each moth species is plotted against the number of individuals from which the measured mean was calculated; a horizontal line is plotted at y = 0. (c) Predicted dry mass of samples (mg) is plotted against measured dry mass (mg); the 1:1 relationship is plotted as a blue line, and points are coloured by the number of individual moths contained in the sample. (d) The absolute difference between measured and predicted dry mass of each sample of moths is plotted against measured dry mass (mg); a horizontal line is plotted at y = 0.&lt;;/div&gt;;" data-icon-position="" data-hide-link-title="0">
+          <span class="hw-responsive-img">
+           <img class="highwire-fragment fragment-image lazyload" alt="Figure 2:" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://www.biorxiv.org/content/biorxiv/early/2019/07/08/695635/F2.medium.gif" width="440" height="288"/>
+           <noscript>
+            <img class="highwire-fragment fragment-image" alt="Figure 2:" src="https://www.biorxiv.org/content/biorxiv/early/2019/07/08/695635/F2.medium.gif" width="440" height="288"/>
+           </noscript>
+          </span>
+         </a>
+        </div>
+       </div>
+       <ul class="highwire-figure-links inline">
+        <li class="download-fig first">
+         <a href="https://www.biorxiv.org/content/biorxiv/early/2019/07/08/695635/F2.large.jpg?download=true" class="highwire-figure-link highwire-figure-link-download" title="Download Figure 2:" data-icon-position="" data-hide-link-title="0">Download figure</a>
+        </li>
+        <li class="new-tab last">
+         <a href="https://www.biorxiv.org/content/biorxiv/early/2019/07/08/695635/F2.large.jpg" class="highwire-figure-link highwire-figure-link-newtab" target="_blank" data-icon-position="" data-hide-link-title="0">Open in new tab</a>
+        </li>
+       </ul>
+      </div>
+      <div class="fig-caption">
+       <span class="fig-label">Figure 2:</span>
+       <p id="p-25" class="first-child">Accuracy of predicted biomass of moth species and samples of moths compared to the true, measured biomass. (a) Predicted dry mass of species (mg) is plotted against mean measured dry mass (mg); the 1:1 relationship is plotted as a blue line, and points are coloured by the number of individual moths from which the measured mean was calculated. (b) The absolute difference between mean measured dry mass and predicted dry mass of each moth species is plotted against the number of individuals from which the measured mean was calculated; a horizontal line is plotted at y = 0. (c) Predicted dry mass of samples (mg) is plotted against measured dry mass (mg); the 1:1 relationship is plotted as a blue line, and points are coloured by the number of individual moths contained in the sample. (d) The absolute difference between measured and predicted dry mass of each sample of moths is plotted against measured dry mass (mg); a horizontal line is plotted at y = 0.</p>
+       <div class="sb-div caption-clear"/>
+      </div>
+     </div>
+    </div>
+    <div id="sec-9" class="subsection">
+     <h3>Testing biomass – abundance relationships and trends</h3>
+     <p id="p-26">Amongst the samples of moths collected in 2018 for this study, we found that sample biomass was significantly predicted by abundance and species richness across the three study sites (
+      <a id="xref-fig-3-1" class="xref-fig" href="#F3">Fig. 3</a>), with the strongest relationship to abundance (R
+      <sup>2</sup> = 0.566). These results were qualitatively unchanged and quantitatively similar when the biomass of samples was estimated from the predictive model (Table S3), illustrating that conclusions drawn from estimated biomass (rather than direct measurements of biomass) are likely to be robust. Similarly, both abundance and species richness were strongly correlated with estimated biomass in the Heslington RIS data, with the strongest relationship between biomass and abundance (R
+      <sup>2</sup> = 0.961).
+     </p>
+     <div id="F3" class="fig pos-float type-figure odd">
+      <div class="highwire-figure">
+       <div class="fig-inline-img-wrapper">
+        <div class="fig-inline-img">
+         <a href="https://www.biorxiv.org/content/biorxiv/early/2019/07/08/695635/F3.large.jpg?width=800&amp;;height=600&amp;;carousel=1" title="Relationship between sample biomass (mg) and abundance and species richness of moths, for (a,d) measured biomass of samples of moths captured in this study; (b,e) predicted biomass of samples of moths captured in this study; and (c,f) predicted biomass of samples of moths recorded in a historical dataset. All relationships are significant (P &lt;; 0.05) and are plotted as solid lines. Each point represents a single night for the [[#x2018]]sampled moths[[#x2019]] data, whereas historical point samples are much larger, representing year-long totals." class="highwire-fragment fragment-images colorbox-load" rel="gallery-fragment-images-1035540088" data-figure-caption="&lt;;div class=&quot;;highwire-markup&quot;;&gt;;&lt;;div xmlns=&quot;;http://www.w3.org/1999/xhtml&quot;;&gt;;Relationship between sample biomass (mg) and abundance and species richness of moths, for (a,d) measured biomass of samples of moths captured in this study; (b,e) predicted biomass of samples of moths captured in this study; and (c,f) predicted biomass of samples of moths recorded in a historical dataset. All relationships are significant (&lt;;em&gt;;P&lt;;/em&gt;; &lt;; 0.05) and are plotted as solid lines. Each point represents a single night for the [[#x2018]]sampled moths[[#x2019]] data, whereas historical point samples are much larger, representing year-long totals.&lt;;/div&gt;;&lt;;/div&gt;;" data-icon-position="" data-hide-link-title="0">
+          <span class="hw-responsive-img">
+           <img class="highwire-fragment fragment-image lazyload" alt="Figure 3:" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://www.biorxiv.org/content/biorxiv/early/2019/07/08/695635/F3.medium.gif" width="440" height="258"/>
+           <noscript>
+            <img class="highwire-fragment fragment-image" alt="Figure 3:" src="https://www.biorxiv.org/content/biorxiv/early/2019/07/08/695635/F3.medium.gif" width="440" height="258"/>
+           </noscript>
+          </span>
+         </a>
+        </div>
+       </div>
+       <ul class="highwire-figure-links inline">
+        <li class="download-fig first">
+         <a href="https://www.biorxiv.org/content/biorxiv/early/2019/07/08/695635/F3.large.jpg?download=true" class="highwire-figure-link highwire-figure-link-download" title="Download Figure 3:" data-icon-position="" data-hide-link-title="0">Download figure</a>
+        </li>
+        <li class="new-tab last">
+         <a href="https://www.biorxiv.org/content/biorxiv/early/2019/07/08/695635/F3.large.jpg" class="highwire-figure-link highwire-figure-link-newtab" target="_blank" data-icon-position="" data-hide-link-title="0">Open in new tab</a>
+        </li>
+       </ul>
+      </div>
+      <div class="fig-caption">
+       <span class="fig-label">Figure 3:</span>
+       <p id="p-27" class="first-child">Relationship between sample biomass (mg) and abundance and species richness of moths, for (a,d) measured biomass of samples of moths captured in this study; (b,e) predicted biomass of samples of moths captured in this study; and (c,f) predicted biomass of samples of moths recorded in a historical dataset. All relationships are significant (
+        <em>P</em> &lt;; 0.05) and are plotted as solid lines. Each point represents a single night for the ‘sampled moths’ data, whereas historical point samples are much larger, representing year-long totals.
+       </p>
+       <div class="sb-div caption-clear"/>
+      </div>
+     </div>
+     <p id="p-28">Using the Heslington RIS dataset, we found that both abundance and species richness declined significantly between 1991–2006 (
+      <a id="xref-table-wrap-3-1" class="xref-table" href="#T3">Table 3</a>), but changes were not necessarily linear (
+      <a id="xref-fig-4-1" class="xref-fig" href="#F4">Fig. 4</a>). These declines were matched by a significant decline in biomass of 445.6 ± 153.0 mg per year (i.e. annual reductions of 3.1 % of the total biomass in 1991). Biomass declined by 65.9 % over the 16-year period.
+     </p>
+     <div id="T3" class="table pos-float">
+      <div class="table-inline table-callout-links">
+       <div class="callout">
+        <span>View this table:</span>
+        <ul class="callout-links">
+         <li class="view-inline first">
+          <a href="##" class="table-expand-inline" data-table-url="/highwire/markup/811231/expansion?postprocessors=highwire_tables%2Chighwire_reclass%2Chighwire_figures%2Chighwire_math%2Chighwire_inline_linked_media%2Chighwire_embed&amp;;table-expand-inline=1" data-icon-position="" data-hide-link-title="0">View inline</a>
+         </li>
+         <li class="view-popup">
+          <a href="/highwire/markup/811231/expansion?width=1000&amp;;height=500&amp;;iframe=true&amp;;postprocessors=highwire_tables%2Chighwire_reclass%2Chighwire_figures%2Chighwire_math%2Chighwire_inline_linked_media%2Chighwire_embed" class="colorbox colorbox-load table-expand-popup" rel="gallery-fragment-tables" data-icon-position="" data-hide-link-title="0">View popup</a>
+         </li>
+         <li class="download-ppt last">
+          <a href="/highwire/powerpoint/811231" class="highwire-figure-link highwire-figure-link-ppt" data-icon-position="" data-hide-link-title="0">Download powerpoint</a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div class="table-caption">
+       <span class="table-label">Table 3:</span>
+       <p id="p-29" class="first-child">Details of statistical models testing the trends over time in annual measures of estimated biomass, abundance and species richness, using historical samples recorded from the Heslington RIS trap over the 16-year period 1991–2006. Absolute % change over this period is the absolute difference between values in 1991 and 2006, given as a percentage of the 1991 baseline value. Trends were tested both with a parametric linear regression tested using an 
+        <em>F-</em>test, and a non-parametric Spearman’s rank correlation, because some trends appeared to be non-linear (
+        <a id="xref-fig-4-2" class="xref-fig" href="#F4">Fig. 4</a>). 
+        <em>F</em>-statistics are shown for linear regressions, and 
+        <em>S</em>-statistics for Spearman’s rank correlations. The R
+        <sup>2</sup> of each linear regression model is also given, alongside the effect size, which represents the annual change detected in each metric.
+       </p>
+       <div class="sb-div caption-clear"/>
+      </div>
+     </div>
+     <div id="F4" class="fig pos-float type-figure odd">
+      <div class="highwire-figure">
+       <div class="fig-inline-img-wrapper">
+        <div class="fig-inline-img">
+         <a href="https://www.biorxiv.org/content/biorxiv/early/2019/07/08/695635/F4.large.jpg?width=800&amp;;height=600&amp;;carousel=1" title="Changes in total biomass (mg), abundance and species richness of moths captured in the Heslington RIS trap over a 16-year period between 1991 and 2006. All trends are significant (P &lt;; 0.05) and are plotted as solid lines (significance of all trends was also confirmed by a non-parametric Spearman[[#x2019]]s rank correlation; Table 3)." class="highwire-fragment fragment-images colorbox-load" rel="gallery-fragment-images-1035540088" data-figure-caption="&lt;;div class=&quot;;highwire-markup&quot;;&gt;;&lt;;div xmlns=&quot;;http://www.w3.org/1999/xhtml&quot;;&gt;;Changes in total biomass (mg), abundance and species richness of moths captured in the Heslington RIS trap over a 16-year period between 1991 and 2006. All trends are significant (&lt;;em&gt;;P&lt;;/em&gt;; &lt;; 0.05) and are plotted as solid lines (significance of all trends was also confirmed by a non-parametric Spearman[[#x2019]]s rank correlation; Table 3).&lt;;/div&gt;;&lt;;/div&gt;;" data-icon-position="" data-hide-link-title="0">
+          <span class="hw-responsive-img">
+           <img class="highwire-fragment fragment-image lazyload" alt="Figure 4:" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://www.biorxiv.org/content/biorxiv/early/2019/07/08/695635/F4.medium.gif" width="218" height="440"/>
+           <noscript>
+            <img class="highwire-fragment fragment-image" alt="Figure 4:" src="https://www.biorxiv.org/content/biorxiv/early/2019/07/08/695635/F4.medium.gif" width="218" height="440"/>
+           </noscript>
+          </span>
+         </a>
+        </div>
+       </div>
+       <ul class="highwire-figure-links inline">
+        <li class="download-fig first">
+         <a href="https://www.biorxiv.org/content/biorxiv/early/2019/07/08/695635/F4.large.jpg?download=true" class="highwire-figure-link highwire-figure-link-download" title="Download Figure 4:" data-icon-position="" data-hide-link-title="0">Download figure</a>
+        </li>
+        <li class="new-tab last">
+         <a href="https://www.biorxiv.org/content/biorxiv/early/2019/07/08/695635/F4.large.jpg" class="highwire-figure-link highwire-figure-link-newtab" target="_blank" data-icon-position="" data-hide-link-title="0">Open in new tab</a>
+        </li>
+       </ul>
+      </div>
+      <div class="fig-caption">
+       <span class="fig-label">Figure 4:</span>
+       <p id="p-30" class="first-child">Changes in total biomass (mg), abundance and species richness of moths captured in the Heslington RIS trap over a 16-year period between 1991 and 2006. All trends are significant (
+        <em>P</em> &lt;; 0.05) and are plotted as solid lines (significance of all trends was also confirmed by a non-parametric Spearman’s rank correlation; 
+        <a id="xref-table-wrap-3-2" class="xref-table" href="#T3">Table 3</a>).
+       </p>
+       <div class="sb-div caption-clear"/>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="section" id="sec-10">
+    <h2 class="">Discussion</h2>
+    <p id="p-31">The strong relationship between forewing length and body mass in moths enables prediction (to a useful level of accuracy) of the biomass of samples of moths when specimens have not been kept. Data generated using this approach will allow researchers to address pressing and policy-relevant questions about ongoing declines in insect biomass (
+     <a id="xref-ref-19-2" class="xref-bibr" href="#ref-19">Hallmann 
+      <em>et al.</em>, 2017
+     </a>; 
+     <a id="xref-ref-27-2" class="xref-bibr" href="#ref-27">Lister &amp;; Garcia, 2018</a>; 
+     <a id="xref-ref-37-2" class="xref-bibr" href="#ref-37">Sánchez-Bayo &amp;; Wyckhuys, 2019</a>) using long-term recording datasets, or to include estimates of moth body mass in comparative studies and trait-based analyses, despite the general lack of empirical data of this nature (
+     <a id="xref-ref-14-5" class="xref-bibr" href="#ref-14">García-Barros, 2015</a>). In particular, these data will facilitate studies of the relationships between biomass, abundance and community composition, asking questions such as: do biomass declines indicate a general decline in the abundance of the majority of species, or a severe decline in the biomass of a few key species (e.g. 
+     <a id="xref-ref-38-2" class="xref-bibr" href="#ref-38">Shortall 
+      <em>et al.</em>, 2009
+     </a>), or a shift in community composition towards smaller-bodied species, all of the above, or something else entirely?
+    </p>
+    <div id="sec-11" class="subsection">
+     <h3>Evaluation of the predictive model’s current and future utility</h3>
+     <p id="p-32">Overall, the estimates of body mass calculated using the predictive model’s parameters performed relatively well during testing, with &gt;; 90 % of variation in measured biomass explained by predicted biomass at both species- and sample-levels. Therefore, using estimated body masses from the model (Table S1) to calculate the combined biomass of large samples of moths should yield accurate results (for example, when summed to generate annual totals; c.f. 
+      <a id="xref-fig-4-3" class="xref-fig" href="#F4">Fig. 4</a>). However, our sampled dataset was only sufficiently data-rich to allow refined parameter estimates for four families (Crambidae, Erebidae, Geometridae and Noctuidae). Further improvement of the model’s accuracy may be possible with the collection of additional data on body masses from a greater number of species from other families. These species are less abundant in moth-trap samples than the dominant family, Noctuidae, and so collection of sufficient data using field sampling may be challenging. An alternative may be to use museum collections to measure individuals of a much wider range of species and families, where methods exist to account for the mass of entomological pins when taking such measurements (
+      <a id="xref-ref-15-1" class="xref-bibr" href="#ref-15">Gilbert, 2011</a>). Taking such an approach might allow for more data to be collected even from rarely-trapped families (e.g. Sphingidae), or those which are speciose globally but have few (e.g. Saturniidae) or no (e.g. Hedylidae) species extant in Britain, thereby allowing for incorporation of family-specific refinements for every family, even at a global scale. However, inspection of 
+      <a id="xref-fig-1-2" class="xref-fig" href="#F1">Fig. 1</a> indicates a ‘valley’ in the data for the relationship between forewing length and body mass; two parallel relationships indicating two “ways to be a moth” (
+      <a id="xref-ref-22-2" class="xref-bibr" href="#ref-22">Janzen, 1984</a>), whereby different moth families may have substantially different body-plans. For example, the Noctuidae generally have high body mass for a given forewing length, while Geometridae might have lower body mass for the same forewing length. In some cases it may, therefore, be sufficient to identify which relationship is appropriate for a given family, rather than to derive a separate relationship for every family. Such refinement could potentially be supported by a phylogenetic imputation approach (
+      <a id="xref-ref-33-1" class="xref-bibr" href="#ref-33">Penone 
+       <em>et al.</em>, 2014
+      </a>). However, in some families (most notably Erebidae), species are distributed across both parallel relationships with little obvious influence of phylogeny, and so it may be necessary to identify which “way to be a moth” is most relevant at genus- or even species-level.
+     </p>
+     <p id="p-33">One source of potential error when using published forewing lengths to estimate biomass is that 19% of individuals in our 2018 dataset had a measured forewing length which was outside the expected range given by field guides. Nevertheless, there was an overall correlation (R
+      <sup>2</sup> = 0.942) between the mean forewing length at species-level derived from our 2018 empirical measurements and the midpoint of the range of forewing lengths for each species, taken from the published field guides (Fig. S4). This suggests sufficient accuracy in our approach, particularly considering that our largest measured species, 
+      <em>Laothoe populi</em> (Sphingidae) had a forewing length 524 % larger than that of our smallest species, 
+      <em>Eudonia pallida</em> (Crambidae).
+     </p>
+     <p id="p-34">An alternative source of possible error in our models is sexual dimorphism in moths. Some moth species, including some sampled in our study (e.g. Drinker 
+      <em>Euthrix potatoria</em>; Lasiocampidae), exhibit substantial sexual dimorphism in wing length (
+      <a id="xref-ref-47-4" class="xref-bibr" href="#ref-47">Waring &amp;; Townsend, 2017</a>) and in body mass (
+      <a id="xref-ref-1-1" class="xref-bibr" href="#ref-1">Allen 
+       <em>et al.</em>, 2011
+      </a>). However, we did not quantify or adjust for sexual dimorphism in this study because long-term recording schemes rarely include information on sex of individual moths, even for dimorphic species, although the majority of such records are likely to be males (
+      <a id="xref-ref-2-1" class="xref-bibr" href="#ref-2">Altermatt 
+       <em>et al.</em>, 2009
+      </a>). Therefore, for estimation of sample-level biomass, it will be of most use to provide a single average estimate of body mass per species, regardless of size dimorphism.
+     </p>
+    </div>
+    <div id="sec-12" class="subsection">
+     <h3>Future research using our predictive model to study biomass change</h3>
+     <p id="p-35">The fact that sample biomass correlated strongly with moth abundance, and that both declined over time in the Heslington RIS dataset (abundance: absolute decline of 56.5 % between 1991 and 2006; biomass: absolute decline of 65.9 % over the same period), is consistent with other studies showing insect biomass declines in recent decades (
+      <a id="xref-ref-19-3" class="xref-bibr" href="#ref-19">Hallmann 
+       <em>et al</em>., 2017
+      </a>; 
+      <a id="xref-ref-27-3" class="xref-bibr" href="#ref-27">Lister &amp;; Garcia, 2018</a>; 
+      <a id="xref-ref-37-3" class="xref-bibr" href="#ref-37">Sánchez-Bayo &amp;; Wyckhuys, 2019</a>). However, questions remain regarding temporal, spatial, and taxonomic variation in these declines (
+      <a id="xref-ref-38-3" class="xref-bibr" href="#ref-38">Shortall et al., 2009</a>), the potential drivers of declines (
+      <a id="xref-ref-18-1" class="xref-bibr" href="#ref-18">Grubisic 
+       <em>et al</em>., 2018
+      </a>; 
+      <a id="xref-ref-23-1" class="xref-bibr" href="#ref-23">Komonen 
+       <em>et al</em>., 2019
+      </a>), and the challenges of extrapolating across data types, geographic locations, and temporal and spatial scales (
+      <a id="xref-ref-43-1" class="xref-bibr" href="#ref-43">Thomas 
+       <em>et al</em>., 2019
+      </a>; 
+      <a id="xref-ref-46-1" class="xref-bibr" href="#ref-46">Wagner, 2019</a>). Our study illustrates the power of predictive models of body mass to tackle these challenges. Applying our estimates of body mass to RIS datasets across the UK (
+      <a id="xref-ref-42-3" class="xref-bibr" href="#ref-42">Storkey 
+       <em>et al</em>., 2016
+      </a>), or to other long-term moth abundance datasets, such as the National Moth Recording Scheme or the Garden Moth Scheme (
+      <a id="xref-ref-12-2" class="xref-bibr" href="#ref-12">Fox 
+       <em>et al</em>., 2011
+      </a>; Bates 
+      <em>et al</em>., 2014a), will facilitate investigation of declines over longer time-periods and broader geographical scales than has previously been feasible. Moreover, the same model parameters could be used to estimate body mass of moths in other databases, including macro-moth recording schemes from other regions (e.g. the Noctua database; 
+      <a id="xref-ref-17-3" class="xref-bibr" href="#ref-17">Groenendijk &amp;; Ellis, 2011</a>) and micro-moths, which were incorporated into the NMRS in 2016. This would allow comparison of biomass losses across multiple datasets at a global scale.
+     </p>
+     <p id="p-36">Declines in biomass and abundance have been identified in some studies (
+      <a id="xref-ref-6-2" class="xref-bibr" href="#ref-6">Conrad 
+       <em>et al</em>., 2006
+      </a>; 
+      <a id="xref-ref-19-4" class="xref-bibr" href="#ref-19">Hallmann 
+       <em>et al</em>., 2017
+      </a>; 
+      <a id="xref-ref-37-4" class="xref-bibr" href="#ref-37">Sánchez-Bayo &amp;; Wyckhuys, 2019</a>), but the drivers of these trends have not been identified. Our study is consistent with the hypothesis that changes in insect biomass correlate with changes in abundance and species richness of insects (
+      <a id="xref-fig-3-2" class="xref-fig" href="#F3">Fig. 3</a>). However, declines in biomass within the 1991–2006 Heslington RIS dataset were greater than abundance declines, which in turn were greater than species richness declines (
+      <a id="xref-table-wrap-3-3" class="xref-table" href="#T3">Table 3</a>). Thus, estimating biomass of samples has the potential to add to information held in abundance datasets, such as the RIS. Changes in community composition could also contribute to biomass loss; investigating changes in biomass over time at continuously-recorded sites, using our approach, will be important for examining relationships between biomass change and community composition. Similarly, the environmental drivers causing changes in insect biomass have not been fully established (
+      <a id="xref-ref-10-4" class="xref-bibr" href="#ref-10">Fox, 2013</a>), and our approach will permit their effects to be investigated at a broader scale, in a similar manner to many studies of changes in abundance (
+      <a id="xref-ref-6-3" class="xref-bibr" href="#ref-6">Conrad 
+       <em>et al</em>., 2006
+      </a>; 
+      <a id="xref-ref-34-1" class="xref-bibr" href="#ref-34">Pescott 
+       <em>et al</em>., 2015
+      </a>; 
+      <a id="xref-ref-50-2" class="xref-bibr" href="#ref-50">Wilson 
+       <em>et al</em>., 2018
+      </a>).
+     </p>
+     <p id="p-37">Our approach will be of use for conducting trait-based analyses of moths (e.g. van 
+      <a id="xref-ref-24-2" class="xref-bibr" href="#ref-24">Langevelde 
+       <em>et al</em>., 2018
+      </a>), where it is important that trait data have high precision (
+      <a id="xref-ref-31-1" class="xref-bibr" href="#ref-31">Middleton-Welling 
+       <em>et al</em>., 2018
+      </a>). Our predictive model offers a means to estimate body mass reproducibly, potentially across multiple data sources, using a trait (forewing length) that is straightforward to measure using basic equipment, and therefore can be robustly applied to other datasets. Previous trait-based analyses have used forewing length as a proxy for body size, but we have shown that there is interfamilial variation in this relationship (
+      <a id="xref-fig-1-3" class="xref-fig" href="#F1">Fig. 1</a>), which can be incorporated by using our approach.
+     </p>
+    </div>
+    <div id="sec-13" class="subsection">
+     <h3>Conclusions</h3>
+     <p id="p-38">We have developed a predictive model to estimate the dry body mass of moths based on their forewing length, using it to generate body masses for all British species of macro-moth and demonstrating its potential for use in the investigation of historical changes in biomass at large temporal and spatial scales. The predictions of sample biomass made by our model correlated strongly with measured biomass of the same samples (R
+      <sup>2</sup> = 0.915). We use these predicted body masses to show that biomass of moths has declined by 65.9 % at a site in Britain over a 16-year period between 1991–2006. Our approach unlocks new opportunities to study trends in moth biomass over time and over large geographic regions.
+     </p>
+    </div>
+   </div>
+   <div class="section" id="sec-15">
+    <h2 class="">Contribution of authors</h2>
+    <p id="p-40">The study was conceived by C.J.M. and C.D.T., and designed by those authors in discussion with J.K.H. Field and laboratory work was conducted by R.S.K., who also carried out the statistical analysis with C.J.M. Data was collected from the Heslington RIS trap by T.J.C. The first draft of the manuscript was written by R.S.K. and C.J.M., and all authors contributed to subsequent revisions.</p>
+   </div>
+   <div class="section ack" id="ack-1">
+    <h2 class="">Acknowledgements</h2>
+    <p id="p-39">This study was funded by the Department of Biology, University of York, through an internal grant awarded to C.J.M. We are grateful to collaborators and staff who have contributed data from the Rothamsted Insect Survey, a BBSRC-supported National Capability.</p>
+   </div>
+   <div class="section ref-list" id="ref-list-1">
+    <h2 class="">References</h2>
+    <ol class="cit-list ref-use-labels">
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-1-1" title="View reference in text" id="ref-1">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.1" data-doi="10.1146/annurev-ento-120709-144828">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Allen</span>, 
+          <span class="cit-name-given-names">C.E.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Zwaan</span>, 
+          <span class="cit-name-given-names">B.J.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Brakefield</span>, 
+          <span class="cit-name-given-names">P.M.</span>
+         </span> (
+         <span class="cit-pub-date">2011</span>) 
+         <span class="cit-article-title">Evolution of sexual dimorphism in the Lepidoptera</span>. 
+         <abbr class="cit-jnl-abbrev">Annual Review of Entomology</abbr>, 
+         <span class="cit-vol">56</span>, 
+         <span class="cit-fpage">445</span>–
+         <span class="cit-lpage">464</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DAnnual%2Breview%2Bof%2Bentomology%26rft.stitle%253DAnnu%2BRev%2BEntomol%26rft.aulast%253DAllen%26rft.auinit1%253DC.%2BE.%26rft.volume%253D56%26rft.spage%253D445%26rft.epage%253D464%26rft.atitle%253DEvolution%2Bof%2Bsexual%2Bdimorphism%2Bin%2Bthe%2BLepidoptera.%26rft_id%253Dinfo%253Adoi%252F10.1146%252Fannurev-ento-120709-144828%26rft_id%253Dinfo%253Apmid%252F20822452%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1146/annurev-ento-120709-144828&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=20822452&amp;;link_type=MED&amp;;atom=%2Fbiorxiv%2Fearly%2F2019%2F07%2F08%2F695635.atom" class="cit-ref-sprinkles cit-ref-sprinkles-medline">
+         <span>PubMed</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=000286841900023&amp;;link_type=ISI" class="cit-ref-sprinkles cit-ref-sprinkles-newisilink cit-ref-sprinkles-webofscience">
+         <span>Web of Science</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-2-1" title="View reference in text" id="ref-2">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.2">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Altermatt</span>, 
+          <span class="cit-name-given-names">F.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Baumeyer</span>, 
+          <span class="cit-name-given-names">A.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Ebert</span>, 
+          <span class="cit-name-given-names">D.</span>
+         </span> (
+         <span class="cit-pub-date">2009</span>) 
+         <span class="cit-article-title">Experimental evidence for male biased flight-to-light behavior in two moth species</span>. 
+         <abbr class="cit-jnl-abbrev">Entomologia Experimentalis et Applicata</abbr>, 
+         <span class="cit-vol">130</span>, 
+         <span class="cit-fpage">259</span>–
+         <span class="cit-lpage">265</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DEntomologia%2BExperimentalis%2Bet%2BApplicata%26rft.volume%253D130%26rft.spage%253D259%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <div class="cit ref-cit ref-journal no-rev-xref" id="cit-695635v1.3" data-doi="10.1371/journal.pone.0086925">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Bates</span>, 
+          <span class="cit-name-given-names">A.J.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Sadler</span>, 
+          <span class="cit-name-given-names">J.P.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Grundy</span>, 
+          <span class="cit-name-given-names">D.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Lowe</span>, 
+          <span class="cit-name-given-names">N.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Davis</span>, 
+          <span class="cit-name-given-names">G.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Baker</span>, 
+          <span class="cit-name-given-names">D.</span>
+         </span>, 
+         <span class="cit-etal">et al.</span> (
+         <span class="cit-pub-date">2014</span>) 
+         <span class="cit-article-title">Garden and landscape-scale correlates of moths of differing conservation status: significant effects of urbanization and habitat diversity</span>. 
+         <abbr class="cit-jnl-abbrev">PLoS ONE</abbr>, 
+         <span class="cit-vol">9</span>, 
+         <span class="cit-fpage">e86925</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DPLoS%2BONE%26rft.volume%253D9%26rft.spage%253De86925%26rft_id%253Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0086925%26rft_id%253Dinfo%253Apmid%252F24475197%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1371/journal.pone.0086925&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=24475197&amp;;link_type=MED&amp;;atom=%2Fbiorxiv%2Fearly%2F2019%2F07%2F08%2F695635.atom" class="cit-ref-sprinkles cit-ref-sprinkles-medline">
+         <span>PubMed</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-4-1" title="View reference in text" id="ref-4">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.4">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Bates</span>, 
+          <span class="cit-name-given-names">D.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Maechler</span>, 
+          <span class="cit-name-given-names">M.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Bolker</span>, 
+          <span class="cit-name-given-names">B.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Walker</span>, 
+          <span class="cit-name-given-names">S.</span>
+         </span> (
+         <span class="cit-pub-date">2015</span>) 
+         <span class="cit-article-title">Fitting linear mixed-effects models using 
+          <em>lme4</em>
+         </span>. 
+         <abbr class="cit-jnl-abbrev">Journal of Statistical Software</abbr>, 
+         <span class="cit-vol">67</span>, 
+         <span class="cit-fpage">1</span>–
+         <span class="cit-lpage">48</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DJournal%2Bof%2BStatistical%2BSoftware%26rft.volume%253D67%26rft.spage%253D1%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-5-1" title="View reference in text" id="ref-5">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.5" data-doi="10.1111/j.1461-0248.2005.00838.x">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Brose</span>, 
+          <span class="cit-name-given-names">U.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Berlow</span>, 
+          <span class="cit-name-given-names">E.L.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Martinez</span>, 
+          <span class="cit-name-given-names">N.D.</span>
+         </span> (
+         <span class="cit-pub-date">2005</span>) 
+         <span class="cit-article-title">Scaling up keystone effects from simple to complex ecological networks</span>. 
+         <abbr class="cit-jnl-abbrev">Ecology Letters</abbr>, 
+         <span class="cit-vol">8</span>, 
+         <span class="cit-fpage">1317</span>–
+         <span class="cit-lpage">1325</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DEcology%2BLetters%26rft.volume%253D8%26rft.spage%253D1317%26rft_id%253Dinfo%253Adoi%252F10.1111%252Fj.1461-0248.2005.00838.x%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1111/j.1461-0248.2005.00838.x&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=000233313500009&amp;;link_type=ISI" class="cit-ref-sprinkles cit-ref-sprinkles-newisilink cit-ref-sprinkles-webofscience">
+         <span>Web of Science</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-6-1" title="View reference in text" id="ref-6">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.6" data-doi="10.1016/j.biocon.2006.04.020">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Conrad</span>, 
+          <span class="cit-name-given-names">K.F.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Warren</span>, 
+          <span class="cit-name-given-names">M.S.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Fox</span>, 
+          <span class="cit-name-given-names">R.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Parsons</span>, 
+          <span class="cit-name-given-names">M.S.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Woiwod</span>, 
+          <span class="cit-name-given-names">I.P.</span>
+         </span> (
+         <span class="cit-pub-date">2006</span>) 
+         <span class="cit-article-title">Rapid declines of common, widespread British moths provide evidence of an insect biodiversity crisis</span>. 
+         <abbr class="cit-jnl-abbrev">Biological Conservation</abbr>, 
+         <span class="cit-vol">132</span>, 
+         <span class="cit-fpage">279</span>–
+         <span class="cit-lpage">291</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DBiological%2BConservation%26rft.volume%253D132%26rft.spage%253D279%26rft_id%253Dinfo%253Adoi%252F10.1016%252Fj.biocon.2006.04.020%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1016/j.biocon.2006.04.020&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=000240794500001&amp;;link_type=ISI" class="cit-ref-sprinkles cit-ref-sprinkles-newisilink cit-ref-sprinkles-webofscience">
+         <span>Web of Science</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-7-1" title="View reference in text" id="ref-7">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.7">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Coulthard</span>, 
+          <span class="cit-name-given-names">E.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Norrey</span>, 
+          <span class="cit-name-given-names">J.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Shortall</span>, 
+          <span class="cit-name-given-names">C.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Harris</span>, 
+          <span class="cit-name-given-names">W.E.</span>
+         </span> (
+         <span class="cit-pub-date">2019</span>) 
+         <span class="cit-article-title">Ecological traits predict population changes in moths</span>. 
+         <abbr class="cit-jnl-abbrev">Biological Conservation</abbr>, 
+         <span class="cit-vol">233</span>, 
+         <span class="cit-fpage">213</span>–
+         <span class="cit-lpage">219</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DBiological%2BConservation%26rft.volume%253D233%26rft.spage%253D213%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-8-1" title="View reference in text" id="ref-8">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.8" data-doi="10.1111/j.1558-5646.2012.01776.x">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Davis</span>, 
+          <span class="cit-name-given-names">R.B.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Õunap</span>, 
+          <span class="cit-name-given-names">E.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Javoiš</span>, 
+          <span class="cit-name-given-names">J.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Gerhold</span>, 
+          <span class="cit-name-given-names">P.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Tammaru</span>, 
+          <span class="cit-name-given-names">T.</span>
+         </span> (
+         <span class="cit-pub-date">2013</span>) 
+         <span class="cit-article-title">Degree of specialization is related to body size in herbivorous insects: a phylogenetic confirmation</span>. 
+         <abbr class="cit-jnl-abbrev">Evolution</abbr>, 
+         <span class="cit-vol">67</span>, 
+         <span class="cit-fpage">583</span>–
+         <span class="cit-lpage">589</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DEvolution%26rft.volume%253D67%26rft.spage%253D583%26rft_id%253Dinfo%253Adoi%252F10.1111%252Fj.1558-5646.2012.01776.x%26rft_id%253Dinfo%253Apmid%252F23356629%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1111/j.1558-5646.2012.01776.x&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=23356629&amp;;link_type=MED&amp;;atom=%2Fbiorxiv%2Fearly%2F2019%2F07%2F08%2F695635.atom" class="cit-ref-sprinkles cit-ref-sprinkles-medline">
+         <span>PubMed</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=000314167400025&amp;;link_type=ISI" class="cit-ref-sprinkles cit-ref-sprinkles-newisilink cit-ref-sprinkles-webofscience">
+         <span>Web of Science</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-9-1" title="View reference in text" id="ref-9">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.9">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Denerley</span>, 
+          <span class="cit-name-given-names">C.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Redpath</span>, 
+          <span class="cit-name-given-names">S.M.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Wal</span>, 
+          <span class="cit-name-given-names">R.</span>
+         </span>
+         <span class="cit-auth">
+          <span class="cit-name-surname">van der Newson</span>, 
+          <span class="cit-name-given-names">S.E.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Chapman</span>, 
+          <span class="cit-name-given-names">J.W.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Wilson</span>, 
+          <span class="cit-name-given-names">J.D.</span>
+         </span> (
+         <span class="cit-pub-date">2018</span>) 
+         <span class="cit-article-title">Breeding ground correlates of the distribution and decline of the Common Cuckoo 
+          <em>Cuculus canorus</em> at two spatial scales
+         </span>. 
+         <abbr class="cit-jnl-abbrev">The Ibis</abbr>, 
+         <span class="cit-vol">354</span>, 
+         <span class="cit-fpage">547</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DThe%2BIbis%26rft.volume%253D354%26rft.spage%253D547%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-10-1" title="View reference in text" id="ref-10">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.10" data-doi="10.1111/j.1752-4598.2012.00186.x">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Fox</span>, 
+          <span class="cit-name-given-names">R.</span>
+         </span> (
+         <span class="cit-pub-date">2013</span>) 
+         <span class="cit-article-title">The decline of moths in Great Britain: a review of possible causes</span>. 
+         <abbr class="cit-jnl-abbrev">Insect Conservation and Diversity</abbr>, 
+         <span class="cit-vol">6</span>, 
+         <span class="cit-fpage">5</span>–
+         <span class="cit-lpage">19</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DInsect%2BConservation%2Band%2BDiversity%26rft.volume%253D6%26rft.spage%253D5%26rft_id%253Dinfo%253Adoi%252F10.1111%252Fj.1752-4598.2012.00186.x%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1111/j.1752-4598.2012.00186.x&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-11-1" title="View reference in text" id="ref-11">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.11">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Fox</span>, 
+          <span class="cit-name-given-names">R.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Oliver</span>, 
+          <span class="cit-name-given-names">T.H.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Harrower</span>, 
+          <span class="cit-name-given-names">C.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Parsons</span>, 
+          <span class="cit-name-given-names">M.S.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Thomas</span>, 
+          <span class="cit-name-given-names">C.D.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Roy</span>, 
+          <span class="cit-name-given-names">D.B.</span>
+         </span> (
+         <span class="cit-pub-date">2014</span>) 
+         <span class="cit-article-title">Longterm changes to the frequency of occurrence of British moths are consistent with opposing and synergistic effects of climate and land-use changes</span>. 
+         <abbr class="cit-jnl-abbrev">Journal of Applied Ecology</abbr>, 
+         <span class="cit-vol">51</span>, 
+         <span class="cit-fpage">949</span>–
+         <span class="cit-lpage">957</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DJournal%2Bof%2BApplied%2BEcology%26rft.volume%253D51%26rft.spage%253D949%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-12-1" title="View reference in text" id="ref-12">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.12">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Fox</span>, 
+          <span class="cit-name-given-names">R.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Randle</span>, 
+          <span class="cit-name-given-names">Z.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Hill</span>, 
+          <span class="cit-name-given-names">L.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Anders</span>, 
+          <span class="cit-name-given-names">S.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Wiffen</span>, 
+          <span class="cit-name-given-names">L.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Parsons</span>, 
+          <span class="cit-name-given-names">M.S.</span>
+         </span> (
+         <span class="cit-pub-date">2011</span>) 
+         <span class="cit-article-title">Moths count: recording moths for conservation in the UK</span>. 
+         <abbr class="cit-jnl-abbrev">Journal of Insect Conservation</abbr>, 
+         <span class="cit-vol">15</span>, 
+         <span class="cit-fpage">55</span>–
+         <span class="cit-lpage">68</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DJournal%2Bof%2BInsect%2BConservation%26rft.volume%253D15%26rft.spage%253D55%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-13-1" title="View reference in text" id="ref-13">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.13">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Franklin</span>, 
+          <span class="cit-name-given-names">A.J.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Liebhold</span>, 
+          <span class="cit-name-given-names">A.M.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Murray</span>, 
+          <span class="cit-name-given-names">K.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Donahue</span>, 
+          <span class="cit-name-given-names">C.</span>
+         </span> (
+         <span class="cit-pub-date">2003</span>) 
+         <span class="cit-article-title">Canopy herbivore community structure: large-scale geographical variation and relation to forest composition</span>. 
+         <abbr class="cit-jnl-abbrev">Ecological Entomology</abbr>, 
+         <span class="cit-vol">28</span>, 
+         <span class="cit-fpage">278</span>–
+         <span class="cit-lpage">290</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DEcological%2BEntomology%26rft.volume%253D28%26rft.spage%253D278%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-14-1" title="View reference in text" id="ref-14">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.14">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">García-Barros</span>, 
+          <span class="cit-name-given-names">E.</span>
+         </span> (
+         <span class="cit-pub-date">2015</span>) 
+         <span class="cit-article-title">Multivariate indices as estimates of dry body weight for comparative study of body size in Lepidoptera</span>. 
+         <abbr class="cit-jnl-abbrev">Nota Lepidopterologica</abbr>, 
+         <span class="cit-vol">38</span>, 
+         <span class="cit-fpage">59</span>–
+         <span class="cit-lpage">74</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DNota%2BLepidopterologica%26rft.volume%253D38%26rft.spage%253D59%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-15-1" title="View reference in text" id="ref-15">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.15">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Gilbert</span>, 
+          <span class="cit-name-given-names">J.D.J.</span>
+         </span> (
+         <span class="cit-pub-date">2011</span>) 
+         <span class="cit-article-title">Insect dry weight: Shortcut to a difficult quantity using museum specimens</span>. 
+         <abbr class="cit-jnl-abbrev">The Florida Entomologist</abbr>, 
+         <span class="cit-vol">94</span>, 
+         <span class="cit-fpage">964</span>–
+         <span class="cit-lpage">970</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DThe%2BFlorida%2BEntomologist%26rft.volume%253D94%26rft.spage%253D964%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-16-1" title="View reference in text" id="ref-16">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.16" data-doi="10.7717/peerj.1402">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Gilburn</span>, 
+          <span class="cit-name-given-names">A.S.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Bunnefeld</span>, 
+          <span class="cit-name-given-names">N.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Wilson</span>, 
+          <span class="cit-name-given-names">J.M.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Botham</span>, 
+          <span class="cit-name-given-names">M.S.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Brereton</span>, 
+          <span class="cit-name-given-names">T.M.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Fox</span>, 
+          <span class="cit-name-given-names">R.</span>
+         </span>, 
+         <span class="cit-etal">et al.</span> (
+         <span class="cit-pub-date">2015</span>) 
+         <span class="cit-article-title">Are neonicotinoid insecticides driving declines of widespread butterflies?</span>
+         <abbr class="cit-jnl-abbrev">PeerJ</abbr>, 
+         <span class="cit-vol">3</span>, 
+         <span class="cit-fpage">e1402</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DPeerJ%26rft.volume%253D3%26rft.spage%253De1402%26rft_id%253Dinfo%253Adoi%252F10.7717%252Fpeerj.1402%26rft_id%253Dinfo%253Apmid%252F26623186%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.7717/peerj.1402&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=26623186&amp;;link_type=MED&amp;;atom=%2Fbiorxiv%2Fearly%2F2019%2F07%2F08%2F695635.atom" class="cit-ref-sprinkles cit-ref-sprinkles-medline">
+         <span>PubMed</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-17-1" title="View reference in text" id="ref-17">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.17">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Groenendijk</span>, 
+          <span class="cit-name-given-names">D.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Ellis</span>, 
+          <span class="cit-name-given-names">W.N.</span>
+         </span> (
+         <span class="cit-pub-date">2011</span>) 
+         <span class="cit-article-title">The state of the Dutch larger moth fauna</span>. 
+         <abbr class="cit-jnl-abbrev">Journal of Insect Conservation</abbr>, 
+         <span class="cit-vol">15</span>, 
+         <span class="cit-fpage">95</span>–
+         <span class="cit-lpage">101</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DJournal%2Bof%2BInsect%2BConservation%26rft.volume%253D15%26rft.spage%253D95%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-18-1" title="View reference in text" id="ref-18">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.18">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Grubisic</span>, 
+          <span class="cit-name-given-names">M.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Grunsven</span>, 
+          <span class="cit-name-given-names">R.H.A. van</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Kyba</span>, 
+          <span class="cit-name-given-names">C.C.M.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Manfrin</span>, 
+          <span class="cit-name-given-names">A.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Hölker</span>, 
+          <span class="cit-name-given-names">F.</span>
+         </span> (
+         <span class="cit-pub-date">2018</span>) 
+         <span class="cit-article-title">Insect declines and agroecosystems: does light pollution matter?</span>
+         <abbr class="cit-jnl-abbrev">Annals of Applied Biology</abbr>, 
+         <span class="cit-vol">8</span>, 
+         <span class="cit-fpage">e67798</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DAnnals%2Bof%2BApplied%2BBiology%26rft.volume%253D8%26rft.spage%253De67798%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-19-1" title="View reference in text" id="ref-19">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.19" data-doi="10.1371/journal.pone.0185809">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Hallmann</span>, 
+          <span class="cit-name-given-names">C.A.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Sorg</span>, 
+          <span class="cit-name-given-names">M.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Jongejans</span>, 
+          <span class="cit-name-given-names">E.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Siepel</span>, 
+          <span class="cit-name-given-names">H.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Hofland</span>, 
+          <span class="cit-name-given-names">N.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Schwan</span>, 
+          <span class="cit-name-given-names">H.</span>
+         </span>, 
+         <span class="cit-etal">et al.</span> (
+         <span class="cit-pub-date">2017</span>) 
+         <span class="cit-article-title">More than 75 percent decline over 27 years in total flying insect biomass in protected areas</span>. 
+         <abbr class="cit-jnl-abbrev">PLoS ONE</abbr>, 
+         <span class="cit-vol">12</span>, 
+         <span class="cit-fpage">e0185809</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DPLoS%2BONE%26rft.volume%253D12%26rft.spage%253De0185809%26rft_id%253Dinfo%253Adoi%252F10.1371%252Fjournal.pone.0185809%26rft_id%253Dinfo%253Apmid%252F29045418%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1371/journal.pone.0185809&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=29045418&amp;;link_type=MED&amp;;atom=%2Fbiorxiv%2Fearly%2F2019%2F07%2F08%2F695635.atom" class="cit-ref-sprinkles cit-ref-sprinkles-medline">
+         <span>PubMed</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-20-1" title="View reference in text" id="ref-20">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.20">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Heath</span>, 
+          <span class="cit-name-given-names">J.</span>
+         </span> (
+         <span class="cit-pub-date">1965</span>) 
+         <span class="cit-article-title">A genuinely portable MV light trap</span>. 
+         <abbr class="cit-jnl-abbrev">Entomologist’s Record and Journal of Variation</abbr>, 
+         <span class="cit-vol">77</span>, 
+         <span class="cit-fpage">236</span>–
+         <span class="cit-lpage">238</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DEntomologist%253Fs%2BRecord%2Band%2BJournal%2Bof%2BVariation%26rft.volume%253D77%26rft.spage%253D236%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-21-1" title="View reference in text" id="ref-21">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.21">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Hooks</span>, 
+          <span class="cit-name-given-names">C.R.R.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Pandey</span>, 
+          <span class="cit-name-given-names">R.R.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Johnson</span>, 
+          <span class="cit-name-given-names">M.W.</span>
+         </span> (
+         <span class="cit-pub-date">2003</span>) 
+         <span class="cit-article-title">Impact of avian and arthropod predation on lepidopteran caterpillar densities and plant productivity in an ephemeral agroecosystem</span>. 
+         <abbr class="cit-jnl-abbrev">Ecological Entomology</abbr>, 
+         <span class="cit-vol">28</span>, 
+         <span class="cit-fpage">522</span>–
+         <span class="cit-lpage">532</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DEcological%2BEntomology%26rft.volume%253D28%26rft.spage%253D522%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-22-1" title="View reference in text" id="ref-22">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.22">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Janzen</span>, 
+          <span class="cit-name-given-names">D.H.</span>
+         </span> (
+         <span class="cit-pub-date">1984</span>) 
+         <span class="cit-article-title">Two ways to be a tropical big moth: Santa Rosa saturniids and sphingids</span>. 
+         <abbr class="cit-jnl-abbrev">Oxford Surveys in Evolutionary Biology</abbr>, 
+         <span class="cit-vol">1</span>, 
+         <span class="cit-fpage">140</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DOxford%2BSurveys%2Bin%2BEvolutionary%2BBiology%26rft.volume%253D1%26rft.spage%253D140%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-23-1" title="View reference in text" id="ref-23">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.23">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Komonen</span>, 
+          <span class="cit-name-given-names">A.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Halme</span>, 
+          <span class="cit-name-given-names">P.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Kotiaho</span>, 
+          <span class="cit-name-given-names">J.S.</span>
+         </span> (
+         <span class="cit-pub-date">2019</span>) 
+         <span class="cit-article-title">Alarmist by bad design: Strongly popularized unsubstantiated claims undermine credibility of conservation science</span>. 
+         <abbr class="cit-jnl-abbrev">Rethinking Ecology</abbr>, 
+         <span class="cit-vol">4</span>, 
+         <span class="cit-fpage">17</span>–
+         <span class="cit-lpage">19</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DRethinking%2BEcology%26rft.volume%253D4%26rft.spage%253D17%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-24-1" title="View reference in text" id="ref-24">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.24">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Langevelde van</span>, 
+          <span class="cit-name-given-names">F.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Braamburg-Annegarn</span>, 
+          <span class="cit-name-given-names">M.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Huigens</span>, 
+          <span class="cit-name-given-names">M.E.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Groendijk</span>, 
+          <span class="cit-name-given-names">R.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Poitevin</span>, 
+          <span class="cit-name-given-names">O.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Deijk</span>, 
+          <span class="cit-name-given-names">J.R. van</span>
+         </span>, 
+         <span class="cit-etal">et al.</span> (
+         <span class="cit-pub-date">2018</span>) 
+         <span class="cit-article-title">Declines in moth populations stress the need for conserving dark nights</span>. 
+         <abbr class="cit-jnl-abbrev">Global Change Biology</abbr>, 
+         <span class="cit-vol">24</span>, 
+         <span class="cit-fpage">925</span>–
+         <span class="cit-lpage">932</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DGlobal%2BChange%2BBiology%26rft.volume%253D24%26rft.spage%253D925%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-25-1" title="View reference in text" id="ref-25">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.25" data-doi="10.1016/j.biocon.2011.06.004">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Langevelde van</span>, 
+          <span class="cit-name-given-names">F.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Ettema</span>, 
+          <span class="cit-name-given-names">J.A.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Donners</span>, 
+          <span class="cit-name-given-names">M.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">WallisDeVries</span>, 
+          <span class="cit-name-given-names">M.F.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Groenendijk</span>, 
+          <span class="cit-name-given-names">D.</span>
+         </span> (
+         <span class="cit-pub-date">2011</span>) 
+         <span class="cit-article-title">Effect of spectral composition of artificial light on the attraction of moths</span>. 
+         <abbr class="cit-jnl-abbrev">Biological Conservation</abbr>, 
+         <span class="cit-vol">144</span>, 
+         <span class="cit-fpage">2274</span>–
+         <span class="cit-lpage">2281</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DBiological%2BConservation%26rft.volume%253D144%26rft.spage%253D2274%26rft_id%253Dinfo%253Adoi%252F10.1016%252Fj.biocon.2011.06.004%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1016/j.biocon.2011.06.004&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=000294030900018&amp;;link_type=ISI" class="cit-ref-sprinkles cit-ref-sprinkles-newisilink cit-ref-sprinkles-webofscience">
+         <span>Web of Science</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-26-1" title="View reference in text" id="ref-26">↵</a>
+      <div class="cit ref-cit ref-web" id="cit-695635v1.26">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Legendre</span>, 
+          <span class="cit-name-given-names">P.</span>
+         </span> (
+         <span class="cit-pub-date">2018</span>) 
+         <span class="cit-source">lmodel2: Model II Regression. R package version 1.7-3</span>. 
+         <a href="https://CRAN.R-project.org/package=lmodel2">https://CRAN.R-project.org/package=lmodel2</a>.
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-27-1" title="View reference in text" id="ref-27">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.27" data-doi="10.1073/pnas.1722477115">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Lister</span>, 
+          <span class="cit-name-given-names">B.C.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Garcia</span>, 
+          <span class="cit-name-given-names">A.</span>
+         </span> (
+         <span class="cit-pub-date">2018</span>) 
+         <span class="cit-article-title">Climate-driven declines in arthropod abundance restructure a rainforest food web</span>. 
+         <abbr class="cit-jnl-abbrev">Proceedings of the National Academy of Sciences of the United States of America</abbr>, 
+         <span class="cit-vol">115</span>, 
+         <span class="cit-fpage">E10397</span>–
+         <span class="cit-lpage">E10406</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DProceedings%2Bof%2Bthe%2BNational%2BAcademy%2Bof%2BSciences%2Bof%2Bthe%2BUnited%2BStates%2Bof%2BAmerica%26rft_id%253Dinfo%253Adoi%252F10.1073%252Fpnas.1722477115%26rft_id%253Dinfo%253Apmid%252F30322922%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/ijlink/YTozOntzOjQ6InBhdGgiO3M6MTQ6Ii9sb29rdXAvaWpsaW5rIjtzOjU6InF1ZXJ5IjthOjQ6e3M6ODoibGlua1R5cGUiO3M6NDoiQUJTVCI7czoxMToiam91cm5hbENvZGUiO3M6NDoicG5hcyI7czo1OiJyZXNpZCI7czoxMzoiMTE1LzQ0L0UxMDM5NyI7czo0OiJhdG9tIjtzOjM3OiIvYmlvcnhpdi9lYXJseS8yMDE5LzA3LzA4LzY5NTYzNS5hdG9tIjt9czo4OiJmcmFnbWVudCI7czowOiIiO30=" class="cit-ref-sprinkles cit-ref-sprinkles-ijlink">
+         <span>
+          <span class="cit-reflinks-abstract">Abstract</span>
+          <span class="cit-sep cit-reflinks-variant-name-sep">/</span>
+          <span class="cit-reflinks-full-text">
+           <span class="free-full-text">FREE </span>Full Text
+          </span>
+         </span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-28-1" title="View reference in text" id="ref-28">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.28">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Macgregor</span>, 
+          <span class="cit-name-given-names">C.J.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Kitson</span>, 
+          <span class="cit-name-given-names">J.J.N.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Fox</span>, 
+          <span class="cit-name-given-names">R.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Hahn</span>, 
+          <span class="cit-name-given-names">C.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Lunt</span>, 
+          <span class="cit-name-given-names">D.H.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Pocock</span>, 
+          <span class="cit-name-given-names">M.J.O.</span>
+         </span>, 
+         <span class="cit-etal">et al.</span> (
+         <span class="cit-pub-date">2019</span>) 
+         <span class="cit-article-title">Construction, validation, and application of nocturnal pollen transport networks in an agro-ecosystem: a comparison using light microscopy and DNA metabarcoding: Constructing nocturnal pollination networks</span>. 
+         <abbr class="cit-jnl-abbrev">Ecological Entomology</abbr>, 
+         <span class="cit-vol">44</span>, 
+         <span class="cit-fpage">17</span>–
+         <span class="cit-lpage">29</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DEcological%2BEntomology%26rft.volume%253D44%26rft.spage%253D17%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-29-1" title="View reference in text" id="ref-29">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.29">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Macgregor</span>, 
+          <span class="cit-name-given-names">C.J.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Pocock</span>, 
+          <span class="cit-name-given-names">M.J.O.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Fox</span>, 
+          <span class="cit-name-given-names">R.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Evans</span>, 
+          <span class="cit-name-given-names">D.M.</span>
+         </span> (
+         <span class="cit-pub-date">2015</span>) 
+         <span class="cit-article-title">Pollination by nocturnal Lepidoptera, and the effects of light pollution: a review</span>. 
+         <abbr class="cit-jnl-abbrev">Ecological Entomology</abbr>, 
+         <span class="cit-vol">40</span>, 
+         <span class="cit-fpage">187</span>–
+         <span class="cit-lpage">198</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DEcological%2BEntomology%26rft.volume%253D40%26rft.spage%253D187%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-30-1" title="View reference in text" id="ref-30">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.30">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Mattila</span>, 
+          <span class="cit-name-given-names">N.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Kaitala</span>, 
+          <span class="cit-name-given-names">V.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Komonen</span>, 
+          <span class="cit-name-given-names">A.</span>
+         </span> (
+         <span class="cit-pub-date">2011</span>) 
+         <span class="cit-article-title">Ecological correlates of distribution change and range shift in butterflies</span>. 
+         <abbr class="cit-jnl-abbrev">Insect Conservation and Diversity</abbr>, 
+         <span class="cit-vol">4</span>, 
+         <span class="cit-fpage">239</span>–
+         <span class="cit-lpage">246</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DInsect%2BConservation%2Band%2BDiversity%26rft.volume%253D4%26rft.spage%253D239%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-31-1" title="View reference in text" id="ref-31">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.31">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Middleton-Welling</span>, 
+          <span class="cit-name-given-names">J.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Wade</span>, 
+          <span class="cit-name-given-names">R.A.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Dennis</span>, 
+          <span class="cit-name-given-names">R.L.H.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Dapporto</span>, 
+          <span class="cit-name-given-names">L.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Shreeve</span>, 
+          <span class="cit-name-given-names">T.G.</span>
+         </span> (
+         <span class="cit-pub-date">2018</span>) 
+         <span class="cit-article-title">Optimising trait and source selection for explaining occurrence and abundance changes: A case study using British butterflies</span>. 
+         <abbr class="cit-jnl-abbrev">Functional Ecology</abbr>, 
+         <span class="cit-vol">111</span>, 
+         <span class="cit-fpage">543</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DFunctional%2BEcology%26rft.volume%253D111%26rft.spage%253D543%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-32-1" title="View reference in text" id="ref-32">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.32">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Morecroft</span>, 
+          <span class="cit-name-given-names">M.D.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Bealey</span>, 
+          <span class="cit-name-given-names">C.E.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Beaumont</span>, 
+          <span class="cit-name-given-names">D.A.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Benham</span>, 
+          <span class="cit-name-given-names">S.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Brooks</span>, 
+          <span class="cit-name-given-names">D.R.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Burt</span>, 
+          <span class="cit-name-given-names">T.P.</span>
+         </span>, 
+         <span class="cit-etal">et al.</span> (
+         <span class="cit-pub-date">2009</span>) 
+         <span class="cit-article-title">The UK Environmental Change Network: Emerging trends in the composition of plant and animal communities and the physical environment</span>. 
+         <abbr class="cit-jnl-abbrev">Biological Conservation</abbr>, 
+         <span class="cit-vol">142</span>, 
+         <span class="cit-fpage">2814</span>–
+         <span class="cit-lpage">2832</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DBiological%2BConservation%26rft.volume%253D142%26rft.spage%253D2814%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-33-1" title="View reference in text" id="ref-33">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.33">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Penone</span>, 
+          <span class="cit-name-given-names">C.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Davidson</span>, 
+          <span class="cit-name-given-names">A.D.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Shoemaker</span>, 
+          <span class="cit-name-given-names">K.T.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Di Marco</span>, 
+          <span class="cit-name-given-names">M.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Rondinini</span>, 
+          <span class="cit-name-given-names">C.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Brooks</span>, 
+          <span class="cit-name-given-names">T.M.</span>
+         </span>, 
+         <span class="cit-etal">et al.</span> (
+         <span class="cit-pub-date">2014</span>) 
+         <span class="cit-article-title">Imputation of missing data in life-history trait datasets: which approach performs the best?</span>
+         <abbr class="cit-jnl-abbrev">Methods in Ecology and Evolution</abbr>, 
+         <span class="cit-vol">5</span>, 
+         <span class="cit-fpage">961</span>–
+         <span class="cit-lpage">970</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DMethods%2Bin%2BEcology%2Band%2BEvolution%26rft.volume%253D5%26rft.spage%253D961%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-34-1" title="View reference in text" id="ref-34">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.34">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Pescott</span>, 
+          <span class="cit-name-given-names">O.L.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Simkin</span>, 
+          <span class="cit-name-given-names">J.M.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">August</span>, 
+          <span class="cit-name-given-names">T.A.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Randle</span>, 
+          <span class="cit-name-given-names">Z.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Dore</span>, 
+          <span class="cit-name-given-names">A.J.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Botham</span>, 
+          <span class="cit-name-given-names">M.S.</span>
+         </span> (
+         <span class="cit-pub-date">2015</span>) 
+         <span class="cit-article-title">Air pollution and its effects on lichens, bryophytes, and lichen-feeding Lepidoptera: review and evidence from biological records</span>. 
+         <abbr class="cit-jnl-abbrev">Biological Journal of the Linnean Society</abbr>, 
+         <span class="cit-vol">115</span>, 
+         <span class="cit-fpage">611</span>–
+         <span class="cit-lpage">635</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DBiological%2BJournal%2Bof%2Bthe%2BLinnean%2BSociety%26rft.volume%253D115%26rft.spage%253D611%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-35-1" title="View reference in text" id="ref-35">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.35">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth cit-collab">R Core Team</span>. (
+         <span class="cit-pub-date">2018</span>) 
+         <abbr class="cit-jnl-abbrev">R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria</abbr>.
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-36-1" title="View reference in text" id="ref-36">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.36">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Sage</span>, 
+          <span class="cit-name-given-names">R.D.</span>
+         </span> (
+         <span class="cit-pub-date">1982</span>) 
+         <span class="cit-article-title">Wet and dry-weight estimates of insects and spiders based on length</span>. 
+         <abbr class="cit-jnl-abbrev">The American Midland Naturalist</abbr>, 
+         <span class="cit-vol">108</span>, 
+         <span class="cit-fpage">407</span>–
+         <span class="cit-lpage">411</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DThe%2BAmerican%2BMidland%2BNaturalist%26rft.volume%253D108%26rft.spage%253D407%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-37-1" title="View reference in text" id="ref-37">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.37">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Sánchez-Bayo</span>, 
+          <span class="cit-name-given-names">F.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Wyckhuys</span>, 
+          <span class="cit-name-given-names">K.A.G.</span>
+         </span> (
+         <span class="cit-pub-date">2019</span>) 
+         <span class="cit-article-title">Worldwide decline of the entomofauna: A review of its drivers</span>. 
+         <abbr class="cit-jnl-abbrev">Biological Conservation</abbr>, 
+         <span class="cit-vol">232</span>, 
+         <span class="cit-fpage">8</span>–
+         <span class="cit-lpage">27</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DBiological%2BConservation%26rft.volume%253D232%26rft.spage%253D8%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-38-1" title="View reference in text" id="ref-38">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.38">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Shortall</span>, 
+          <span class="cit-name-given-names">C.R.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Moore</span>, 
+          <span class="cit-name-given-names">A.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Smith</span>, 
+          <span class="cit-name-given-names">E.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Hall</span>, 
+          <span class="cit-name-given-names">M.J.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Woiwod</span>, 
+          <span class="cit-name-given-names">I.P.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Harrington</span>, 
+          <span class="cit-name-given-names">R.</span>
+         </span> (
+         <span class="cit-pub-date">2009</span>) 
+         <span class="cit-article-title">Longterm changes in the abundance of flying insects</span>. 
+         <abbr class="cit-jnl-abbrev">Insect Conservation and Diversity</abbr>, 
+         <span class="cit-vol">2</span>, 
+         <span class="cit-fpage">251</span>–
+         <span class="cit-lpage">260</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DInsect%2BConservation%2Band%2BDiversity%26rft.volume%253D2%26rft.spage%253D251%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-39-1" title="View reference in text" id="ref-39">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.39">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Sierro</span>, 
+          <span class="cit-name-given-names">A.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Arlettaz</span>, 
+          <span class="cit-name-given-names">R.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Naef-Daenzer</span>, 
+          <span class="cit-name-given-names">B.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Strebel</span>, 
+          <span class="cit-name-given-names">S.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Zbinden</span>, 
+          <span class="cit-name-given-names">N.</span>
+         </span> (
+         <span class="cit-pub-date">2001</span>) 
+         <span class="cit-article-title">Habitat use and foraging ecology of the nightjar (
+          <em>Caprimulgus europaeus</em>) in the Swiss Alps: towards a conservation scheme
+         </span>. 
+         <abbr class="cit-jnl-abbrev">Biological Conservation</abbr>, 
+         <span class="cit-vol">98</span>, 
+         <span class="cit-fpage">325</span>–
+         <span class="cit-lpage">331</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DBiological%2BConservation%26rft.volume%253D98%26rft.spage%253D325%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-40-1" title="View reference in text" id="ref-40">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.40" data-doi="10.1086/664080">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Singer</span>, 
+          <span class="cit-name-given-names">M.S.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Farkas</span>, 
+          <span class="cit-name-given-names">T.E.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Skorik</span>, 
+          <span class="cit-name-given-names">C.M.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Mooney</span>, 
+          <span class="cit-name-given-names">K.A.</span>
+         </span> (
+         <span class="cit-pub-date">2012</span>) 
+         <span class="cit-article-title">Tritrophic interactions at a community level: effects of host plant species quality on bird predation of caterpillars</span>. 
+         <abbr class="cit-jnl-abbrev">The American Naturalist</abbr>, 
+         <span class="cit-vol">179</span>, 
+         <span class="cit-fpage">363</span>–
+         <span class="cit-lpage">374</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.stitle%253DAm%2BNat%26rft.aulast%253DSinger%26rft.auinit1%253DM.%2BS.%26rft.volume%253D179%26rft.issue%253D3%26rft.spage%253D363%26rft.epage%253D374%26rft.atitle%253DTritrophic%2Binteractions%2Bat%2Ba%2Bcommunity%2Blevel%253A%2Beffects%2Bof%2Bhost%2Bplant%2Bspecies%2Bquality%2Bon%2Bbird%2Bpredation%2Bof%2Bcaterpillars.%26rft_id%253Dinfo%253Adoi%252F10.1086%252F664080%26rft_id%253Dinfo%253Apmid%252F22322224%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1086/664080&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=22322224&amp;;link_type=MED&amp;;atom=%2Fbiorxiv%2Fearly%2F2019%2F07%2F08%2F695635.atom" class="cit-ref-sprinkles cit-ref-sprinkles-medline">
+         <span>PubMed</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=000300454400007&amp;;link_type=ISI" class="cit-ref-sprinkles cit-ref-sprinkles-newisilink cit-ref-sprinkles-webofscience">
+         <span>Web of Science</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-41-1" title="View reference in text" id="ref-41">↵</a>
+      <div class="cit ref-cit ref-book" id="cit-695635v1.41">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Sterling</span>, 
+          <span class="cit-name-given-names">P.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Parsons</span>, 
+          <span class="cit-name-given-names">M.</span>
+         </span> (
+         <span class="cit-pub-date">2012</span>) 
+         <span class="cit-source">Field Guide to the Micro-Moths of Great Britain and Ireland</span>. 
+         <span class="cit-edition">First</span> Edition. 
+         <span class="cit-publ-name">British Wildlife Publishing Ltd</span>, 
+         <span class="cit-publ-loc">Gillingham</span>.
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-42-1" title="View reference in text" id="ref-42">↵</a>
+      <div class="cit ref-cit ref-book" id="cit-695635v1.42">
+       <div class="cit-metadata">
+        <ol class="duplicate">
+         <li>
+          <span class="cit-ed">
+           <span class="cit-name-surname">Dumbrell</span>, 
+           <span class="cit-name-given-names">A.J.</span>
+          </span>, 
+         </li>
+         <li>
+          <span class="cit-ed">
+           <span class="cit-name-surname">Kordas</span>, 
+           <span class="cit-name-given-names">R.L.</span>
+          </span> &amp;; 
+         </li>
+         <li>
+          <span class="cit-ed">
+           <span class="cit-name-surname">Woodward</span>, 
+           <span class="cit-name-given-names">G.</span>
+          </span>
+         </li>
+        </ol>
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Storkey</span>, 
+          <span class="cit-name-given-names">J.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Macdonald</span>, 
+          <span class="cit-name-given-names">A.J.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Bell</span>, 
+          <span class="cit-name-given-names">J.R.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Clark</span>, 
+          <span class="cit-name-given-names">I.M.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Gregory</span>, 
+          <span class="cit-name-given-names">A.S.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Hawkins</span>, 
+          <span class="cit-name-given-names">N.J.</span>
+         </span>, 
+         <span class="cit-etal">et al.</span> (
+         <span class="cit-pub-date">2016</span>) 
+         <span class="cit-chapter-title">Chapter One - The Unique Contribution of Rothamsted to Ecological Research at Large Temporal Scales</span>. In 
+         <span class="cit-source">Advances in Ecological Research</span> (ed. by 
+         <span class="cit-ed">
+          <span class="cit-name-surname">Dumbrell</span>, 
+          <span class="cit-name-given-names">A.J.</span>
+         </span>, 
+         <span class="cit-ed">
+          <span class="cit-name-surname">Kordas</span>, 
+          <span class="cit-name-given-names">R.L.</span>
+         </span> &amp;; 
+         <span class="cit-ed">
+          <span class="cit-name-surname">Woodward</span>, 
+          <span class="cit-name-given-names">G.</span>
+         </span>). 
+         <span class="cit-publ-name">Academic Press</span>, pp. 
+         <span class="cit-fpage">3</span>–
+         <span class="cit-lpage">42</span>.
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-43-1" title="View reference in text" id="ref-43">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.43" data-doi="10.1111/gcb.14608">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Thomas</span>, 
+          <span class="cit-name-given-names">C.D.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Jones</span>, 
+          <span class="cit-name-given-names">T.H.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Hartley</span>, 
+          <span class="cit-name-given-names">S.E.</span>
+         </span> (
+         <span class="cit-pub-date">2019</span>) 
+         <span class="cit-article-title">“Insectageddon”: A call for more robust data and rigorous analyses</span>. 
+         <abbr class="cit-jnl-abbrev">Global Change Biology</abbr>
+         <span class="cit-pub-id-sep cit-pub-id-doi-sep">, </span>
+         <span class="cit-pub-id-scheme">doi:</span>
+         <span class="cit-pub-id cit-pub-id-doi">10.1111/gcb.14608</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DGlobal%2BChange%2BBiology%26rft_id%253Dinfo%253Adoi%252F10.1111%252Fgcb.14608%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1111/gcb.14608&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-44-1" title="View reference in text" id="ref-44">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.44">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Threlfall</span>, 
+          <span class="cit-name-given-names">C.G.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Law</span>, 
+          <span class="cit-name-given-names">B.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Banks</span>, 
+          <span class="cit-name-given-names">P.B.</span>
+         </span> (
+         <span class="cit-pub-date">2012</span>) 
+         <span class="cit-article-title">Sensitivity of insectivorous bats to urbanization: Implications for suburban conservation planning</span>. 
+         <abbr class="cit-jnl-abbrev">Biological Conservation</abbr>, 
+         <span class="cit-vol">146</span>, 
+         <span class="cit-fpage">41</span>–
+         <span class="cit-lpage">52</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DBiological%2BConservation%26rft.volume%253D146%26rft.spage%253D41%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-45-1" title="View reference in text" id="ref-45">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.45" data-doi="10.1111/j.1365-2907.1997.tb00373.x">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Vaughan</span>, 
+          <span class="cit-name-given-names">N.</span>
+         </span> (
+         <span class="cit-pub-date">1997</span>) 
+         <span class="cit-article-title">The diets of British bats (Chiroptera</span>). 
+         <abbr class="cit-jnl-abbrev">Mammal Review</abbr>, 
+         <span class="cit-vol">27</span>, 
+         <span class="cit-fpage">77</span>–
+         <span class="cit-lpage">94</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DMammal%2BReview%26rft.volume%253D27%26rft.spage%253D77%26rft_id%253Dinfo%253Adoi%252F10.1111%252Fj.1365-2907.1997.tb00373.x%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1111/j.1365-2907.1997.tb00373.x&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=A1997XE77000001&amp;;link_type=ISI" class="cit-ref-sprinkles cit-ref-sprinkles-newisilink cit-ref-sprinkles-webofscience">
+         <span>Web of Science</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-46-1" title="View reference in text" id="ref-46">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.46" data-doi="10.1016/j.biocon.2019.03.005">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Wagner</span>, 
+          <span class="cit-name-given-names">D.L.</span>
+         </span> (
+         <span class="cit-pub-date">2019</span>) 
+         <span class="cit-article-title">Global insect decline: Comments on Sánchez-Bayo and Wyckhuys (2019)</span>. 
+         <abbr class="cit-jnl-abbrev">Biological Conservation</abbr>
+         <span class="cit-pub-id-sep cit-pub-id-doi-sep">, </span>
+         <span class="cit-pub-id-scheme">doi:</span>
+         <span class="cit-pub-id cit-pub-id-doi">10.1016/j.biocon.2019.03.005</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DBiological%2BConservation%26rft_id%253Dinfo%253Adoi%252F10.1016%252Fj.biocon.2019.03.005%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1016/j.biocon.2019.03.005&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-47-1" title="View reference in text" id="ref-47">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.47">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Waring</span>, 
+          <span class="cit-name-given-names">P.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Townsend</span>, 
+          <span class="cit-name-given-names">M.</span>
+         </span> (
+         <span class="cit-pub-date">2017</span>) 
+         <abbr class="cit-jnl-abbrev">Field Guide to the Moths of Great Britain and Ireland</abbr>. 
+         <span class="cit-edition">3rd</span> Revised Edition. Bloomsbury Natural History.
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-48-1" title="View reference in text" id="ref-48">↵</a>
+      <div class="cit ref-cit ref-book" id="cit-695635v1.48">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Wickham</span>, 
+          <span class="cit-name-given-names">H.</span>
+         </span> (
+         <span class="cit-pub-date">2016</span>) 
+         <span class="cit-source">ggplot2: Elegant Graphics for Data Analysis</span>. 
+         <span class="cit-publ-name">Springer-Verlag</span>, 
+         <span class="cit-publ-loc">New York</span>.
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-49-1" title="View reference in text" id="ref-49">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.49" data-doi="10.1111/j.1523-1739.2004.00152.x">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Wickramasinghe</span>, 
+          <span class="cit-name-given-names">L.P.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Harris</span>, 
+          <span class="cit-name-given-names">S.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Jones</span>, 
+          <span class="cit-name-given-names">G.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Jennings</span>, 
+          <span class="cit-name-given-names">N.V.</span>
+         </span> (
+         <span class="cit-pub-date">2004</span>) 
+         <span class="cit-article-title">Abundance and species richness of nocturnal insects on organic and conventional farms: Effects of agricultural intensification on bat foraging</span>. 
+         <abbr class="cit-jnl-abbrev">Conservation Biology</abbr>, 
+         <span class="cit-vol">18</span>, 
+         <span class="cit-fpage">1283</span>–
+         <span class="cit-lpage">1292</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DConservation%2BBiology%26rft.volume%253D18%26rft.spage%253D1283%26rft_id%253Dinfo%253Adoi%252F10.1111%252Fj.1523-1739.2004.00152.x%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1111/j.1523-1739.2004.00152.x&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=000224071800014&amp;;link_type=ISI" class="cit-ref-sprinkles cit-ref-sprinkles-newisilink cit-ref-sprinkles-webofscience">
+         <span>Web of Science</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-50-1" title="View reference in text" id="ref-50">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.50">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Wilson</span>, 
+          <span class="cit-name-given-names">J.F.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Baker</span>, 
+          <span class="cit-name-given-names">D.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Cheney</span>, 
+          <span class="cit-name-given-names">J.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Cook</span>, 
+          <span class="cit-name-given-names">M.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Ellis</span>, 
+          <span class="cit-name-given-names">M.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Freestone</span>, 
+          <span class="cit-name-given-names">R.</span>
+         </span>, 
+         <span class="cit-etal">et al.</span> (
+         <span class="cit-pub-date">2018</span>) 
+         <span class="cit-article-title">A role for artificial night-time lighting in long-term changes in populations of 100 widespread macro-moths in UK and Ireland: a citizen-science study</span>. 
+         <abbr class="cit-jnl-abbrev">Journal of Insect Conservation</abbr>, 
+         <span class="cit-vol">22</span>, 
+         <span class="cit-fpage">189</span>–
+         <span class="cit-lpage">196</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DJournal%2Bof%2BInsect%2BConservation%26rft.volume%253D22%26rft.spage%253D189%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-51-1" title="View reference in text" id="ref-51">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-695635v1.51">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Woodward</span>, 
+          <span class="cit-name-given-names">G.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Ebenman</span>, 
+          <span class="cit-name-given-names">B.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Emmerson</span>, 
+          <span class="cit-name-given-names">M.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Montoya</span>, 
+          <span class="cit-name-given-names">J.M.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Olesen</span>, 
+          <span class="cit-name-given-names">J.M.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Valido</span>, 
+          <span class="cit-name-given-names">A.</span>
+         </span>, 
+         <span class="cit-etal">et al.</span> (
+         <span class="cit-pub-date">2005</span>) 
+         <span class="cit-article-title">Body size in ecological networks</span>. 
+         <abbr class="cit-jnl-abbrev">Trends in Ecology &amp;; Evolution</abbr>, 
+         <span class="cit-vol">20</span>, 
+         <span class="cit-fpage">402</span>–
+         <span class="cit-lpage">409</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DTrends%2Bin%2BEcology%2B%2526%2BEvolution%26rft.volume%253D20%26rft.spage%253D402%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+    </ol>
+   </div>
+   <span class="highwire-journal-article-marker-end"/>
+  </div>
+ </body>
+</html>

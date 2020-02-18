@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" 
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book#" >
+    <!--[if IE]><![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="dns-prefetch" href="//stats.g.doubleclick.net" />
+<link rel="dns-prefetch" href="//www.google-analytics.com" />
+<link rel="dns-prefetch" href="//scholar.google.com" />
+<link rel="dns-prefetch" href="//d33xdlntwy0kbs.cloudfront.net" />
+<link rel="shortcut icon" href="https://www.biorxiv.org/sites/default/files/images/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=yes" />
+<meta name="type" content="article" />
+<meta name="category" content="article" />
+<meta name="HW.identifier" content="/biorxiv/early/2019/03/31/593822.atom" />
+<meta name="HW.pisa" content="biorxiv;593822v1" />
+<meta name="DC.Format" content="text/html" />
+<meta name="DC.Language" content="en" />
+<meta name="DC.Title" content="Catching the big picture of the Mediterranean Sea biodiversity with an end-to-end model of climate and fishing impacts" />
+<meta name="DC.Identifier" content="10.1101/593822" />
+<meta name="DC.Date" content="2019-03-31" />
+<meta name="DC.Publisher" content="Cold Spring Harbor Laboratory" />
+<meta name="DC.Rights" content="© 2019, Posted by Cold Spring Harbor Laboratory. The copyright holder for this pre-print is the author. All rights reserved. The material may not be redistributed, re-used or adapted without the author's permission." />
+<meta name="DC.AccessRights" content="restricted" />
+<meta name="DC.Description" content="The Mediterranean Sea is among the main hotspots of marine biodiversity in the world. Under combined pressures of fishing activities and climate change it has also become a hotspot of global change, with increased concern about the worsening status of marine exploited species. More integrated modelling approaches are needed to anticipate global change impacts in the Mediterranean Sea, in order to help decision makers prioritizing management actions and strategies, mitigating impacts and adapting to changes. Our challenge was to develop a holistic model of the marine biodiversity in the Mediterranean Sea with an explicit representation of the spatial multispecies dynamics of exploited resources under the combined influence of climate variability and fishing pressure. An individual-based ecosystem model OSMOSE (Object-oriented Simulator of Marine ecOSystEms), including 100 marine species (fish, cephalopods and crustaceans) and representing about 95 % of the total declared catches, has been implemented for the first time at a high spatial resolution (400 km2) and at a large spatial scale (whole Mediterranean basin). The coupling of OSMOSE to the NEMOMED 12 physical model, and to the Eco3M-S biogeochemical and low trophic level model has been achieved to build the OSMOSE-MED end-to-end model. We fitted OSMOSE-MED to observed and estimated data of biomass and commercial catches using a likelihood approach and an evolutionary optimization algorithm. The outputs of OSMOSE-MED were then verified against observed biomass and catches, and confronted to independent datasets (MEDITS data, diet compositions and trophic levels). Although some improvements are suggested for future developments, the model results at different hierarchical levels, from individuals up to the ecosystem scale, were consistent with current knowledge and observations on the structure, the functioning and the dynamics of the ecosystems in the Mediterranean Sea. All the modelling steps, from the comprehensive representation of key ecological processes and feedbacks, the careful parameterization of the model, the confrontation to observed data, and the positive outcome from the validation process, allowed to strengthen the degree of realism of OSMOSE-MED and its relevance as an impact model to explore the futures of marine biodiversity under scenarios of global change, and as a tool to support the implementation of ecosystem-based fisheries management in the Mediterranean Sea." />
+<meta name="DC.Contributor" content="Fabien Moullec" />
+<meta name="DC.Contributor" content="Laure Velez" />
+<meta name="DC.Contributor" content="Philippe Verley" />
+<meta name="DC.Contributor" content="Nicolas Barrier" />
+<meta name="DC.Contributor" content="Caroline Ulses" />
+<meta name="DC.Contributor" content="Pierluigi Carbonara" />
+<meta name="DC.Contributor" content="Antonio Esteban" />
+<meta name="DC.Contributor" content="Cristina Follesa" />
+<meta name="DC.Contributor" content="Michele Gristina" />
+<meta name="DC.Contributor" content="Angélique Jadaud" />
+<meta name="DC.Contributor" content="Alessandro Ligas" />
+<meta name="DC.Contributor" content="Eduardo López Díaz" />
+<meta name="DC.Contributor" content="Porzia Maiorano" />
+<meta name="DC.Contributor" content="Panagiota Peristeraki" />
+<meta name="DC.Contributor" content="Maria Teresa Spedicato" />
+<meta name="DC.Contributor" content="Ioannis Thasitis" />
+<meta name="DC.Contributor" content="Maria Valls" />
+<meta name="DC.Contributor" content="François Guilhaumon" />
+<meta name="DC.Contributor" content="Yunne-Jai Shin" />
+<meta name="article:published_time" content="2019-03-31" />
+<meta name="article:section" content="New Results" />
+<meta name="citation_title" content="Catching the big picture of the Mediterranean Sea biodiversity with an end-to-end model of climate and fishing impacts" />
+<meta name="citation_abstract" lang="en" content="&lt;h3&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;The Mediterranean Sea is among the main hotspots of marine biodiversity in the world. Under combined pressures of fishing activities and climate change it has also become a hotspot of global change, with increased concern about the worsening status of marine exploited species. More integrated modelling approaches are needed to anticipate global change impacts in the Mediterranean Sea, in order to help decision makers prioritizing management actions and strategies, mitigating impacts and adapting to changes. Our challenge was to develop a holistic model of the marine biodiversity in the Mediterranean Sea with an explicit representation of the spatial multispecies dynamics of exploited resources under the combined influence of climate variability and fishing pressure. An individual-based ecosystem model OSMOSE (Object-oriented Simulator of Marine ecOSystEms), including 100 marine species (fish, cephalopods and crustaceans) and representing about 95 % of the total declared catches, has been implemented for the first time at a high spatial resolution (400 km&lt;sup&gt;2&lt;/sup&gt;) and at a large spatial scale (whole Mediterranean basin). The coupling of OSMOSE to the NEMOMED 12 physical model, and to the Eco3M-S biogeochemical and low trophic level model has been achieved to build the OSMOSE-MED end-to-end model. We fitted OSMOSE-MED to observed and estimated data of biomass and commercial catches using a likelihood approach and an evolutionary optimization algorithm. The outputs of OSMOSE-MED were then verified against observed biomass and catches, and confronted to independent datasets (MEDITS data, diet compositions and trophic levels). Although some improvements are suggested for future developments, the model results at different hierarchical levels, from individuals up to the ecosystem scale, were consistent with current knowledge and observations on the structure, the functioning and the dynamics of the ecosystems in the Mediterranean Sea. All the modelling steps, from the comprehensive representation of key ecological processes and feedbacks, the careful parameterization of the model, the confrontation to observed data, and the positive outcome from the validation process, allowed to strengthen the degree of realism of OSMOSE-MED and its relevance as an impact model to explore the futures of marine biodiversity under scenarios of global change, and as a tool to support the implementation of ecosystem-based fisheries management in the Mediterranean Sea.&lt;/p&gt;" />
+<meta name="citation_journal_title" content="bioRxiv" />
+<meta name="citation_publisher" content="Cold Spring Harbor Laboratory" />
+<meta name="citation_publication_date" content="2019/01/01" />
+<meta name="citation_mjid" content="biorxiv;593822v1" />
+<meta name="citation_id" content="593822v1" />
+<meta name="citation_public_url" content="https://www.biorxiv.org/content/10.1101/593822v1" />
+<meta name="citation_abstract_html_url" content="https://www.biorxiv.org/content/10.1101/593822v1.abstract" />
+<meta name="citation_full_html_url" content="https://www.biorxiv.org/content/10.1101/593822v1.full" />
+<meta name="citation_pdf_url" content="https://www.biorxiv.org/content/biorxiv/early/2019/03/31/593822.full.pdf" />
+<meta name="citation_doi" content="10.1101/593822" />
+<meta name="citation_num_pages" content="44" />
+<meta name="citation_article_type" content="Article" />
+<meta name="citation_section" content="New Results" />
+<meta name="citation_firstpage" content="593822" />
+<meta name="citation_author" content="Fabien Moullec" />
+<meta name="citation_author_institution" content="MARBEC, Université de Montpellier, IRD, CNRS" />
+<meta name="citation_author_email" content="fabien.moullec@ird.fr" />
+<meta name="citation_author" content="Laure Velez" />
+<meta name="citation_author_institution" content="MARBEC, Université de Montpellier, IRD, CNRS" />
+<meta name="citation_author" content="Philippe Verley" />
+<meta name="citation_author_institution" content="IRD, CIRAD, UMR AMAP, Boulevard de la Lironde" />
+<meta name="citation_author" content="Nicolas Barrier" />
+<meta name="citation_author_institution" content="MARBEC, Université de Montpellier, IRD, CNRS" />
+<meta name="citation_author" content="Caroline Ulses" />
+<meta name="citation_author_institution" content="Laboratoire d’Aérologie, Université de Toulouse, CNRS, UPS" />
+<meta name="citation_author" content="Pierluigi Carbonara" />
+<meta name="citation_author_institution" content="COISPA Tecnologia and Ricerca, Stazione Sperimentale per lo Studio delle Risorse del Mare" />
+<meta name="citation_author" content="Antonio Esteban" />
+<meta name="citation_author_institution" content="Instituto Español de Oceanografía (IEO), Centro Oceanográfico de Murcia" />
+<meta name="citation_author" content="Cristina Follesa" />
+<meta name="citation_author_institution" content="Dipartimento di Biologia Animale ed Ecologia, Universita di Cagliari" />
+<meta name="citation_author" content="Michele Gristina" />
+<meta name="citation_author_institution" content="Institute for the Coastal Marine Environment (CNR)" />
+<meta name="citation_author" content="Angélique Jadaud" />
+<meta name="citation_author_institution" content="MARBEC, Université de Montpellier, IRD, CNRS" />
+<meta name="citation_author" content="Alessandro Ligas" />
+<meta name="citation_author_institution" content="Consorzio per il Centro Interuniversitario di Biologia Marina ed Ecologia Applicata ‘G. Bacci’" />
+<meta name="citation_author" content="Eduardo López Díaz" />
+<meta name="citation_author_institution" content="Instituto Español de Oceanografía (IEO), Centro Oceanográfico de Málaga" />
+<meta name="citation_author" content="Porzia Maiorano" />
+<meta name="citation_author_institution" content="Department of Biology, University of Bari" />
+<meta name="citation_author" content="Panagiota Peristeraki" />
+<meta name="citation_author_institution" content="Hellenic Center for Marine Research" />
+<meta name="citation_author_institution" content="University of Crete, Biology Department" />
+<meta name="citation_author" content="Maria Teresa Spedicato" />
+<meta name="citation_author_institution" content="COISPA Tecnologia and Ricerca, Stazione Sperimentale per lo Studio delle Risorse del Mare" />
+<meta name="citation_author" content="Ioannis Thasitis" />
+<meta name="citation_author_institution" content="Department of Fisheries and Marine Research, Ministry of Agriculture, Natural Resources and Environment" />
+<meta name="citation_author" content="Maria Valls" />
+<meta name="citation_author_institution" content="Instituto Español de Oceanografía (IEO), Centre Oceanográfic de les Balears s/n" />
+<meta name="citation_author" content="François Guilhaumon" />
+<meta name="citation_author_institution" content="MARBEC, Université de Montpellier, IRD, CNRS" />
+<meta name="citation_author" content="Yunne-Jai Shin" />
+<meta name="citation_author_institution" content="MARBEC, Université de Montpellier, IRD, CNRS" />
+<meta name="citation_author_institution" content="Marine Research (MA-RE) Institute and Department of Biological Sciences, University of Cape Town" />
+<meta name="citation_reference" content="Albouy, C., Guilhaumon, F., Araújo, M.B., Mouillot, D., Leprieur, F., 2012. Combining projected changes in species richness and composition reveals climate change impacts on coastal Mediterranean fish assemblages. Glob. Change Biol. 18, 2995–3003. https://doi.org/10.1111/j.1365-2486.2012.02772.x" />
+<meta name="citation_reference" content="Albouy, C., Guilhaumon, F., Leprieur, F., Lasram, F.B.R., Somot, S., Aznar, R., Velez, L., Loc’h, F.L., Mouillot, D., 2013. Projected climate change and the changing biogeography of coastal Mediterranean fishes. J. Biogeogr. 40, 534–547. https://doi.org/10.1111/jbi.12013" />
+<meta name="citation_reference" content="Albouy, C., Lasram, F.B.R., Velez, L., Guilhaumon, F., Meynard, C.N., Boyer, S., Benestan, L., Mouquet, N., Douzery, E., Aznar, R., Troussellier, M., Somot, S., Leprieur, F., Le Loc’h, F., Mouillot, D., 2015. FishMed: traits, phylogeny, current and projected species distribution of Mediterranean fishes, and environmental data. Ecology 96, 2312–2313. https://doi.org/10.1890/14-2279.1" />
+<meta name="citation_reference" content="Albouy, C., Mouillot, D., Rocklin, D., Culioli, J.M., Loc’h, F.L., 2010. Simulation of the combined effects of artisanal and recreational fisheries on a Mediterranean MPA ecosystem using a trophic model. Mar. Ecol. Prog. Ser. 412, 207–221. https://doi.org/10.3354/meps08679" />
+<meta name="citation_reference" content="Albouy, C., Velez, L., Coll, M., Colloca, F., Loc’h, F.L., Mouillot, D., Gravel, D., 2014. From projected species distribution to food-web structure under climate change. Glob. Change Biol. 20, 730–741. https://doi.org/10.1111/gcb.12467" />
+<meta name="citation_reference" content="AllEnvi, 2016. Alliance nationale de recherche pour l’environnement (France). The Mediterranean region under climate change: a scientific update. IRD editions, Marseille." />
+<meta name="citation_reference" content="Allouche, O., Tsoar, A., Kadmon, R., 2006. Assessing the accuracy of species distribution models: prevalence, kappa and the true skill statistic (TSS). J. Appl. Ecol. 43, 1223–1232. https://doi.org/10.1111/j.1365-2664.2006.01214.x" />
+<meta name="citation_reference" content="Anderson, T.R., Pondaven, P., 2003. Non-redfield carbon and nitrogen cycling in the Sargasso Sea: pelagic imbalances and export flux. Deep Sea Res. Part Oceanogr. Res. Pap. 50, 573–591. https://doi.org/10.1016/S0967-0637(03)00034-7" />
+<meta name="citation_reference" content="Auger, P.A., Diaz, F., Ulses, C., Estournel, C., Neveux, J., Joux, F., Pujo-Pay, M., Naudin, J.J., 2011. Functioning of the planktonic ecosystem on the Gulf of Lions shelf (NW Mediterranean) during spring and its impact on the carbon deposition: a field data and 3-D modelling combined approach. Biogeosciences 8, 3231–3261. https://doi.org/10.5194/bg-8-3231-2011" />
+<meta name="citation_reference" content="Baklouti, M., Faure, V., Pawlowski, L., Sciandra, A., 2006. Investigation and sensitivity analysis of a mechanistic phytoplankton model implemented in a new modular numerical tool (Eco3M) dedicated to biogeochemical modelling. Prog. Oceanogr. 71, 34–58. https://doi.org/10.1016/j.pocean.2006.05.003" />
+<meta name="citation_reference" content="Bănaru, D., Mellon-Duval, C., Roos, D., Bigot, J.-L., Souplet, A., Jadaud, A., Beaubrun, P., Fromentin, J.-M., 2013. Trophic structure in the Gulf of Lions marine ecosystem (north-western Mediterranean Sea) and fishing impacts. J. Mar. Syst. 111, 45–68. https://doi.org/10.1016/j.jmarsys.2012.09.010" />
+<meta name="citation_reference" content="Barbet-Massin, M., Walther, B.A., Thuiller, W., Rahbek, C., Jiguet, F., 2009. Potential impacts of climate change on the winter distribution of Afro-Palaearctic migrant passerines. Biol. Lett. rsbl.2008.0715. https://doi.org/10.1098/rsbl.2008.0715" />
+<meta name="citation_reference" content="Ben Rais Lasram, F., Guilhaumon, F., Albouy, C., Somot, S., Thuiller, W., Mouillot, D., 2010. The Mediterranean Sea as a ‘cul-de-sac’ for endemic fishes facing climate change. Glob. Change Biol. 16, 3233–3245. https://doi.org/10.1111/j.1365-2486.2010.02224.x" />
+<meta name="citation_reference" content="Ben Rais Lasram, F., Mouillot, D., 2008. Increasing southern invasion enhances congruence between endemic and exotic Mediterranean fish fauna. Biol. Invasions 11, 697. https://doi.org/10.1007/s10530-008-9284-4" />
+<meta name="citation_reference" content="Bertrand, J.A., Sola, L.G. de, Papaconstantinou, C., Relini, G., Souplet, A., 2002. The general specifications of the MEDITS surveys. Sci. Mar. 66, 9–17. https://doi.org/10.3989/scimar.2002.66s29" />
+<meta name="citation_reference" content="Beuvier, J., Béranger, K., Lebeaupin Brossier, C., Somot, S., Sevault, F., Drillet, Y., Bourdallé-Badie, R., Ferry, N., Lyard, F., 2012. Spreading of the Western Mediterranean Deep Water after winter 2005: Time scales and deep cyclone transport. J. Geophys. Res. Oceans 117, C07022. https://doi.org/10.1029/2011JC007679" />
+<meta name="citation_reference" content="Beuvier, Jonathan, Brossier, C.L., Béranger, K., Arsouze, T., Bourdallé-Badie, R., Deltel, C., Drillet, Y., Drobinski, P., Ferry, N., Lyard, F., Sevault, F., Somot, S., 2012. MED12, Oceanic component for the modeling of the regional Mediterranean earth system. Mercator Ocean Quarterly Newsletter, 46. &lt;hal-01138958&gt;." />
+<meta name="citation_reference" content="Bosc, E., Bricaud, A., Antoine, D., 2004. Seasonal and interannual variability in algal biomass and primary production in the Mediterranean Sea, as derived from 4 years of SeaWiFS observations. Glob. Biogeochem. Cycles 18. https://doi.org/10.1029/2003GB002034" />
+<meta name="citation_reference" content="Bosello, F., Delpiazzo, E., Eboli, F., 2015. Acidification in the Mediterranean Sea: impacts and adaptation strategies. Rev. Environ. Energy Econ. Re3 Forthcom." />
+<meta name="citation_reference" content="Brind’Amour, A., Rochet, M.-J., Ordines, F., Hosack, G.R., Berthelé, O., Mérigot, B., Carbonara, P., Follesa, M.C., Jadaud, A., Lefkaditou, E., Maiorano, P., Peristeraki, P., Mannini, A., Rabiller, M., Spedicato, M.T., Tserpes, G., Trenkel, V.M., 2016. Environmental drivers explain regional variation of changes in fish and invertebrate functional groups across the Mediterranean Sea from 1994 to 2012. Mar. Ecol. Prog. Ser. 562, 19–35. https://doi.org/10.3354/meps11912" />
+<meta name="citation_reference" content="Butchart, S.H.M., Walpole, M., Collen, B., van Strien, A., Scharlemann, J.P.W., Almond, R.E.A., Baillie, J.E.M., Bomhard, B., Brown, C., Bruno, J., Carpenter, K.E., Carr, G.M., Chanson, J., Chenery, A.M., Csirke, J., Davidson, N.C., Dentener, F., Foster, M., Galli, A., Galloway, J.N., Genovesi, P., Gregory, R.D., Hockings, M., Kapos, V., Lamarque, J.-F., Leverington, F., Loh, J., McGeoch, M.A., McRae, L., Minasyan, A., Hernández Morcillo, M., Oldfield, T.E.E., Pauly, D., Quader, S., Revenga, C., Sauer, J.R., Skolnik, B., Spear, D., Stanwell-Smith, D., Stuart, S.N., Symes, A., Tierney, M., Tyrrell, T.D., Vié, J.-C., Watson, R., 2010. Global biodiversity: indicators of recent declines. Science 328, 1164–1168. https://doi.org/10.1126/science.1187512" />
+<meta name="citation_reference" content="Caddy, J.F., 1990. Options for the regulation of Mediterranean demersal fisheries. Nat. Resour. Model. 4, 427–475. https://doi.org/10.1111/j.1939-7445.1990.tb00219.x" />
+<meta name="citation_reference" content="Calvo, E., Simó, R., Coma, R., Ribes, M., Pascual, J., Sabatés, A., Gili, J., Pelejero, C., 2011. Effects of climate change on Mediterranean marine ecosystems: the case of the Catalan Sea. Clim. Res. 50, 1–29. https://doi.org/10.3354/cr01040" />
+<meta name="citation_reference" content="Cardinale, M., Scarcella, G., 2017. Mediterranean Sea: A Failure of the European Fisheries Management System. Front. Mar. Sci. 4. https://doi.org/10.3389/fmars.2017.00072" />
+<meta name="citation_reference" content="Cardoso, A.C., Cochrane, S., Doerner, H., Ferreira, J.G., Galgani, F., Hagebro, C., Hanke, G., Hoepffner, N., Keizer, P.D., Law, R., Olenin, S., Piet, G.J., Rice, J., Rogers, S.I., Swartenbroux, F., Tasker, M.L., Van de Bund, W., Piha, H., European Commission, Joint Research Centre, International Council for the Exploration of the Sea (ICES), 2010. Scientific support to the European Commission Marine Strategy Framework Directiv: management group report, EUR 24336 EN – 2010. Publications Office, Luxembourg." />
+<meta name="citation_reference" content="Carrozzi, V., Di Lorenzo, M., Massi, D., Titone, A., Ardizzone, G.D., Colloca, F., 2018. Prey preferences and ontogenetic diet shift of European hake Merluccius merluccius (Linnaeus, 1758) in the central Mediterranean Sea. Reg. Stud. Mar. Sci. https://doi.org/10.1016/j.rsma.2018.100440" />
+<meta name="citation_reference" content="Cartes, J.E., Hidalgo, M., Papiol, V., Massutí, E., Moranta, J., 2009. Changes in the diet and feeding of the hake Merluccius merluccius at the shelf-break of the Balearic Islands: Influence of the mesopelagic-boundary community. Deep Sea Res. Part Oceanogr. Res. Pap. 56, 344–365. https://doi.org/10.1016/j.dsr.2008.09.009" />
+<meta name="citation_reference" content="Cartwright, S.J., Bowgen, K.M., Collop, C., Hyder, K., Nabe-Nielsen, J., Stafford, R., Stillman, R.A., Thorpe, R.B., Sibly, R.M., 2016. Communicating complex ecological models to nonscientist end users. Ecol. Model. 338, 51–59. https://doi.org/10.1016/j.ecolmodel.2016.07.012" />
+<meta name="citation_reference" content="Cheung, W.W.L., Dunne, J., Sarmiento, J.L., Pauly, D., 2011. Integrating ecophysiology and plankton dynamics into projected maximum fisheries catch potential under climate change in the Northeast Atlantic. ICES J. Mar. Sci. 68, 1008–1018. https://doi.org/10.1093/icesjms/fsr012" />
+<meta name="citation_reference" content="Cheung, W.W.L., Jones, M.C., Reygondeau, G., Fröicher, T.L., 2018. Opportunities for climate-risk reduction through effective fisheries management. Glob. Change Biol. 0. https://doi.org/10.1111/gcb.14390" />
+<meta name="citation_reference" content="Cheung, W.W.L., Jones, M.C., Reygondeau, G., Stock, C.A., Lam, V.W.Y., Frölicher, T.L., 2016. Structural uncertainty in projecting global fisheries catches under climate change. Ecol. Model. 325, 57–66. https://doi.org/10.1016/j.ecolmodel.2015.12.018" />
+<meta name="citation_reference" content="Cheung, W.W.L., Lam, V.W.Y., Sarmiento, J.L., Kearney, K., Watson, R., Pauly, D., 2009. Projecting global marine biodiversity impacts under climate change scenarios. Fish Fish. 10, 235–251. https://doi.org/10.1111/j.1467-2979.2008.00315.x" />
+<meta name="citation_reference" content="Christensen, V., Walters, C.J., 2004. Ecopath with Ecosim: methods, capabilities and limitations. Ecol. Model., Placing Fisheries in their Ecosystem Context 172, 109–139. https://doi.org/10.1016/j.ecolmodel.2003.09.003" />
+<meta name="citation_reference" content="Coll, M., Cury, P., Azzurro, E., Bariche, M., Bayadas, G., Bellido, J.M., Chaboud, C., Claudet, J., El-Sayed, A.-F., Gascuel, D., Knittweis, L., Pipitone, C., Samuel-Rhoads, Y., Taleb, S., Tudela, S., Valls, A., Workshop Participants, 2013. The scientific strategy needed to promote a regional ecosystem-based approach to fisheries in the Mediterranean and Black Seas. Rev. Fish Biol. Fish. 23, 415–434. https://doi.org/10.1007/s11160-013-9305-y" />
+<meta name="citation_reference" content="Coll, M., Libralato, S., 2012. Contributions of food web modelling to the ecosystem approach to marine resource management in the Mediterranean Sea. Fish Fish. 13, 60–88. https://doi.org/10.1111/j.1467-2979.2011.00420.x" />
+<meta name="citation_reference" content="Coll, M., Palomera, I., Tudela, S., Sardà, F., 2006. Trophic flows, ecosystem structure and fishing impacts in the South Catalan Sea, Northwestern Mediterranean. J. Mar. Syst. 59, 63–96. https://doi.org/10.1016/j.jmarsys.2005.09.001" />
+<meta name="citation_reference" content="Coll, M., Piroddi, C., Albouy, C., Lasram, F.B.R., Cheung, W.W.L., Christensen, V., Karpouzi, V.S., Guilhaumon, F., Mouillot, D., Paleczny, M., Palomares, M.L., Steenbeek, J., Trujillo, P., Watson, R., Pauly, D., 2012. The Mediterranean Sea under siege: spatial overlap between marine biodiversity, cumulative threats and marine reserves. Glob. Ecol. Biogeogr. 21, 465–480. https://doi.org/10.1111/j.1466-8238.2011.00697.x" />
+<meta name="citation_reference" content="Coll, M., Piroddi, C., Steenbeek, J., Kaschner, K., Lasram, F.B.R., Aguzzi, J., Ballesteros, E., Bianchi, C.N., Corbera, J., Dailianis, T., Danovaro, R., Estrada, M., Froglia, C., Galil, B.S., Gasol, J.M., Gertwagen, R., Gil, J., Guilhaumon, F., Kesner-Reyes, K., Kitsos, M.-S., Koukouras, A., Lampadariou, N., Laxamana, E., Cuadra, C.M.L.-F. de la Lotze, H.K., Martin, D., Mouillot, D., Oro, D., Raicevich, S., Rius-Barile, J., Saiz-Salinas, J.I., Vicente, C.S., Somot, S., Templado, J., Turon, X., Vafidis, D., Villanueva, R., Voultsiadou, E., 2010. The Biodiversity of the Mediterranean Sea: Estimates, Patterns, and Threats. PLOS ONE 5, e11842. https://doi.org/10.1371/journal.pone.0011842" />
+<meta name="citation_reference" content="Coll, M., Santojanni, A., Palomera, I., Tudela, S., Arneri, E., 2007. An ecological model of the Northern and Central Adriatic Sea: Analysis of ecosystem structure and fishing impacts. J. Mar. Syst. 67, 119–154. https://doi.org/10.1016/j.jmarsys.2006.10.002" />
+<meta name="citation_reference" content="Colloca, F., Cardinale, M., Maynou, F., Giannoulaki, M., Scarcella, G., Jenko, K., Bellido, J.M., Fiorentino, F., 2013. Rebuilding Mediterranean fisheries: a new paradigm for ecological sustainability. Fish Fish. 14, 89–109. https://doi.org/10.1111/j.1467-2979.2011.00453.x" />
+<meta name="citation_reference" content="Colloca, F., Mastrantonio, G., Lasinio, G.J., Ligas, A., Sartor, P., 2014. Parapenaeus longirostris (Lucas, 1846) an early warning indicator species of global warming in the central Mediterranean Sea. J. Mar. Syst., The wrapping up of the IDEADOS project: International Workshop on Environment, Ecosystems and Demersal Resources, and Fisheries 138, 29– 39. https://doi.org/10.1016/j.jmarsys.2013.10.007" />
+<meta name="citation_reference" content="Colloca, F., Scarcella, G., Libralato, S., 2017. Recent Trends and Impacts of Fisheries Exploitation on Mediterranean Stocks and Ecosystems. Front. Mar. Sci. 4. https://doi.org/10.3389/fmars.2017.00244" />
+<meta name="citation_reference" content="Corrales, X., Coll, M., Ofir, E., Piroddi, C., Goren, M., Edelist, D., Heymans, J.J., Steenbeek, J., Christensen, V., Gal, G., 2017a. Hindcasting the dynamics of an Eastern Mediterranean marine ecosystem under the impacts of multiple stressors. Mar. Ecol. Prog. Ser. 580, 17– 36. https://doi.org/10.3354/meps12271" />
+<meta name="citation_reference" content="Corrales, X., Coll, M., Tecchio, S., Bellido, J.M., Fernández, Á.M., Palomera, I., 2015. Ecosystem structure and fishing impacts in the northwestern Mediterranean Sea using a food web model within a comparative approach. J. Mar. Syst. 148, 183–199. https://doi.org/10.1016/j.jmarsys.2015.03.006" />
+<meta name="citation_reference" content="Corrales, X., Ofir, E., Coll, M., Goren, M., Edelist, D., Heymans, J.J., Gal, G., 2017b. Modeling the role and impact of alien species and fisheries on the Israeli marine continental shelf ecosystem. J. Mar. Syst. 170, 88–102. https://doi.org/10.1016/j.jmarsys.2017.02.004" />
+<meta name="citation_reference" content="Costalago, D., Garrido, S., Palomera, I., 2015. Comparison of the feeding apparatus and diet of European sardines Sardina pilchardus of Atlantic and Mediterranean waters: ecological implications. J. Fish Biol. 86, 1348–1362. https://doi.org/10.1111/jfb.12645" />
+<meta name="citation_reference" content="Cramer, W., Guiot, J., Fader, M., Garrabou, J., Gattuso, J.-P., Iglesias, A., Lange, M.A., Lionello, P., Llasat, M.C., Paz, S., Peñuelas, J., Snoussi, M., Toreti, A., Tsimplis, M.N., Xoplaki, E., 2018. Climate change and interconnected risks to sustainable development in the Mediterranean. Nat. Clim. Change 1. https://doi.org/10.1038/s41558-018-0299-2" />
+<meta name="citation_reference" content="de Mora, L., Butenschön, M., Allen, J.I., 2016. The assessment of a global marine ecosystem model on the basis of emergent properties and ecosystem function: a case study with ERSEM. Geosci. Model Dev. 9, 59–76. https://doi.org/10.5194/gmd-9-59-2016" />
+<meta name="citation_reference" content="Dimarchopoulou, D., Stergiou, K.I., Tsikliras, A.C., 2017. Gap analysis on the biology of Mediterranean marine fishes. PLOS ONE 12, e0175949. https://doi.org/10.1371/journal.pone.0175949" />
+<meta name="citation_reference" content="Druon, J.-N., Fiorentino, F., Murenu, M., Knittweis, L., Colloca, F., Osio, C., Mérigot, B., Garofalo, G., Mannini, A., Jadaud, A., Sbrana, M., Scarcella, G., Tserpes, G., Peristeraki, P., Carlucci, R., Heikkonen, J., 2015. Modelling of European hake nurseries in the Mediterranean Sea: An ecological niche approach. Prog. Oceanogr. 130, 188–204. https://doi.org/10.1016/j.pocean.2014.11.005" />
+<meta name="citation_reference" content="Druon, J.-N., Fromentin, J.-M., Hanke, A.R., Arrizabalaga, H., Damalas, D., Tičina, V., Quílez-Badia, G., Ramirez, K., Arregui, I., Tserpes, G., Reglero, P., Deflorio, M., Oray, I., Saadet Karakulak, F., Megalofonou, P., Ceyhan, T., Grubišić, L., MacKenzie, B.R., Lamkin, J., Afonso, P., Addis, P., 2016. Habitat suitability of the Atlantic bluefin tuna by size class: An ecological niche approach. Prog. Oceanogr. 142, 30–46. https://doi.org/10.1016/j.pocean.2016.01.002" />
+<meta name="citation_reference" content="Duboz, R., Versmisse, D., Travers, M., Ramat, E., Shin, Y.-J., 2010. Application of an evolutionary algorithm to the inverse parameter estimation of an individual-based model. Ecol. Model. 221, 840–849. https://doi.org/10.1016/j.ecolmodel.2009.11.023" />
+<meta name="citation_reference" content="Durrieu de Madron, X., Guieu, C., Sempéré, R., Conan, P., Cossa, D., D’Ortenzio, F., Estournel, C., Gazeau, F., Rabouille, C., Stemmann, L., Bonnet, S., Diaz, F., Koubbi, P., Radakovitch, O., Babin, M., Baklouti, M., Bancon-Montigny, C., Belviso, S., Bensoussan, N., Bonsang, B., Bouloubassi, I., Brunet, C., Cadiou, J.-F., Carlotti, F., Chami, M., Charmasson, S., Charrière, B., Dachs, J., Doxaran, D., Dutay, J.-C., Elbaz-Poulichet, F., Eléaume, M., Eyrolles, F., Fernandez, C., Fowler, S., Francour, P., Gaertner, J.C., Galzin, R., Gasparini, S., Ghiglione, J.-F., Gonzalez, J.-L., Goyet, C., Guidi, L., Guizien, K., Heimbürger, L.-E., Jacquet, S.H.M., Jeffrey, W.H., Joux, F., Le Hir, P., Leblanc, K., Lefèvre, D., Lejeusne, C., Lemé, R., Loÿe-Pilot, M.-D., Mallet, M., Méjanelle, L., Mélin, F., Mellon, C., Mérigot, B., Merle, P.-L., Migon, C., Miller, W.L., Mortier, L., Mostajir, B., Mousseau, L., Moutin, T., Para, J., Pérez, T., Petrenko, A., Poggiale, J.-C., Prieur, L., Pujo-Pay, M., Pulido-Villena, Raimbault P., Rees, A.P., Ridame, C., Rontani, J.-F., Ruiz Pino, D., Sicre, M.A., Taillandier, V., Tamburini, C., Tanaka, T., Taupier-Letage, I., Tedetti, M., Testor, P., Thébault, H., Thouvenin, B., Touratier, F., Tronczynski, J., Ulses, C., Van Wambeke, F., Vantrepotte, V., Vaz, S., Verney, R., 2011. Marine ecosystems’ responses to climatic and anthropogenic forcings in the Mediterranean. Prog. Oceanogr. 91, 97–166. https://doi.org/10.1016/j.pocean.2011.02.003" />
+<meta name="citation_reference" content="European Commission, 2017. Report on the Blue Growth Strategy. Towards more sustainable growth and jobs in the blue economy. Commission staff working document. Brussels, 31.3.2017 SWD (2017) 128 final." />
+<meta name="citation_reference" content="European Commission, 2008. Directive 2008/56/EC of the European Parliament and of the Council establishing a framework for community action in the field of marine environmental policy (Marine Strategy Framework Directive) Off. J. Eur. Union, L164 (2008), pp. 19–40." />
+<meta name="citation_reference" content="European Commission, 2003. Proposal for a Council regulation concerning measures for the sustainable exploitation of fishery resources in the Mediterranean Sea and amending regulations (EC) No 2847/93 and (EC) No 973/2001. Commission of the European Communities. Brussels, 9 October 2003, COM (2003) 589 final, 2003/0229 (CNS), 39 pp." />
+<meta name="citation_reference" content="FAO, 2018. Impacts of climate change on fisheries and aquaculture. Synthesis of current knowledge, adaptation and mitigation options. FAO fisheries and aquaculture technical paper 627. FAO, Rome, Italy. 654p." />
+<meta name="citation_reference" content="FAO, 2016. Fisheries and aquaculture software. FAO, Fisheries and aquaculture software FishStatJ - software for fishery statistical time series. FAO Fisheries and Aquaculture Department, Rome (2016. http://www.fao.org/fishery/." />
+<meta name="citation_reference" content="FAO, 2006. Fisheries and aquaculture software. FishStat Plus - Universal software for fishery statistical time series. In: FAO Fisheries and Aquaculture Department [online]. Rome. Updated 28 November 2013. [Cited 4 July 2017]. http://www.fao.org/fishery/statistics/software/fishstat/en." />
+<meta name="citation_reference" content="Ferrà, C., Tassetti, A.N., Grati, F., Pellini, G., Polidori, P., Scarcella, G., Fabi, G., 2018. Mapping change in bottom trawling activity in the Mediterranean Sea through AIS data. Mar. Policy 94, 275–281. https://doi.org/10.1016/j.marpol.2017.12.013" />
+<meta name="citation_reference" content="Fiorentino, F., Massuti, E., Tinti, F., Somarakis, S., Garofalo, G., Russo, T., Facchini, M.T., Carbonara, P., Kapiris, K., Tugores, P., Cannas, R., Tsigenopoulos, C., Patti, B., Colloca, F., Sbrana, M., Mifsud, R., Valavanis, V., Spedicato, M.T., 2014. Stock units: Identification of distinct biological units (stock units) for different fish and shellfish species and among different GFCM-GSA. STOCKMED Deliverable 03: FINAL REPORT (1st and 2nd parts), 460 pp." />
+<meta name="citation_reference" content="Fu, C., Olsen, N., Taylor, N., Grüss, A., Batten, S., Liu, H., Verley, P., Shin, Y.-J., 2017. Spatial and temporal dynamics of predator-prey species interactions off western Canada. ICES J. Mar. Sci. 74, 2107–2119. https://doi.org/10.1093/icesjms/fsx056" />
+<meta name="citation_reference" content="Fu, C., Perry, R.I., Shin, Y.-J., Schweigert, J., Liu, H., 2013. An ecosystem modelling framework for incorporating climate regime shifts into fisheries management. Prog. Oceanogr., Strait of Georgia Ecosystem Research Initiative (ERI) 115, 53–64. https://doi.org/10.1016/j.pocean.2013.03.003" />
+<meta name="citation_reference" content="Fulton, E.A., 2010. Approaches to end-to-end ecosystem models. J. Mar. Syst., Contributions from Advances in Marine Ecosystem Modelling Research II 23-26 June 2008, Plymouth, UK 81, 171–183. https://doi.org/10.1016/j.jmarsys.2009.12.012" />
+<meta name="citation_reference" content="Gal, G., Makler-Pick, V., Shachar, N., 2014. Dealing with uncertainty in ecosystem model scenarios: Application of the single-model ensemble approach. Environ. Model. Softw. 61, 360–370. https://doi.org/10.1016/j.envsoft.2014.05.015" />
+<meta name="citation_reference" content="GFCM, 2018. GFCM Data Collection Reference Framework (DCRF). Version: 2018.1. 121p." />
+<meta name="citation_reference" content="GFCM, 2017a. Working Group on Stock Assessment of Demersal Species (WGSAD). FAO headquarters, Rome, Italy, 13–18 November 2017. Final Report. 70p." />
+<meta name="citation_reference" content="GFCM, 2017b. Mid-term strategy (2017-2020) towards the sustainability of Mediterranean and Black Sea fisheries (Mid-term strategy). FAO-GFCM 2017. Rome." />
+<meta name="citation_reference" content="citation_journal_title=DG MARE Specific Contract SI2.600741, Final Report;citation_title=Mediterranean Sensitive Habitats (2013);citation_pages=557;citation_year=2013a" />
+<meta name="citation_reference" content="Giannoulaki, M., Iglesias, M., Tugores, M.P., Bonanno, A., Patti, B., Felice, A.D., Leonori, I., Bigot, J.L., Tičina, V., Pyrounaki, M.M., Tsagarakis, K., Machias, A., Somarakis, S., Schismenou, E., Quinci, E., Basilone, G., Cuttitta, A., Campanella, F., Miquel, J., Oñate, D., Roos, D., Valavanis, V., 2013b. Characterizing the potential habitat of European anchovy Engraulis encrasicolus in the Mediterranean Sea, at different life stages. Fish. Oceanogr. 22, 69–89. https://doi.org/10.1111/fog.12005" />
+<meta name="citation_reference" content="Giorgi, F., 2006. Climate change hot-spots. Geophys. Res. Lett. 33, L08707. https://doi.org/10.1029/2006GL025734" />
+<meta name="citation_reference" content="Giorgi, F., Lionello, P., 2008. Climate change projections for the Mediterranean region. Glob. Planet. Change, Mediterranean climate: trends, variability and change 63, 90–104. https://doi.org/10.1016/j.gloplacha.2007.09.005" />
+<meta name="citation_reference" content="Grimm, V., Ayllón, D., Railsback, S.F., 2017. Next-Generation Individual-Based Models Integrate Biodiversity and Ecosystems: Yes We Can, and Yes We Must. Ecosystems 20, 229–236. https://doi.org/10.1007/s10021-016-0071-2" />
+<meta name="citation_reference" content="Grüss, A., Schirripa, M.J., Chagaris, D., Drexler, M., Simons, J., Verley, P., Shin, Y.-J., Karnauskas, M., Oliveros-Ramos, R., Ainsworth, C.H., 2015. Evaluation of the trophic structure of the West Florida Shelf in the 2000s using the ecosystem model OSMOSE. J. Mar. Syst. 144, 30–47. https://doi.org/10.1016/j.jmarsys.2014.11.004" />
+<meta name="citation_reference" content="Grüss, A., Schirripa, M.J., Chagaris, D., Velez, L., Shin, Y.-J., Verley, P., Oliveros-Ramos, R., Ainsworth, C.H., 2016. Estimating natural mortality rates and simulating fishing scenarios for Gulf of Mexico red grouper (Epinephelus morio) using the ecosystem model OSMOSE-WFS. J. Mar. Syst. 154, 264–279. https://doi.org/10.1016/j.jmarsys.2015.10.014" />
+<meta name="citation_reference" content="Gunawardena, J., 2014. Models in biology: ‘accurate descriptions of our pathetic thinking.’ BMC Biol. 12, 29. https://doi.org/10.1186/1741-7007-12-29" />
+<meta name="citation_reference" content="Halouani, G., Ben Rais Lasram, F., Shin, Y.-J., Velez, L., Verley, P., Hattab, T., Oliveros-Ramos, R., Diaz, F., Ménard, F., Baklouti, M., Guyennon, A., Romdhane, M.S., Le Loc’h, F., 2016. Modelling food web structure using an end-to-end approach in the coastal ecosystem of the Gulf of Gabes (Tunisia). Ecol. Model. 339, 45–57. https://doi.org/10.1016/j.ecolmodel.2016.08.008" />
+<meta name="citation_reference" content="Hattab, T., Albouy, C., Lasram, F.B.R., Somot, S., Le Loc’h, F., Leprieur, F., 2014. Towards a better understanding of potential impacts of climate change on marine species distribution: a multiscale modelling approach. Glob. Ecol. Biogeogr. 23, 1417–1429. https://doi.org/10.1111/geb.12217" />
+<meta name="citation_reference" content="Hattab, T., Ben Rais Lasram, F., Albouy, C., Romdhane, M.S., Jarboui, O., Halouani, G., Cury, P., Le Loc’h, F., 2013a. An ecosystem model of an exploited southern Mediterranean shelf region (Gulf of Gabes, Tunisia) and a comparison with other Mediterranean ecosystem model properties. J. Mar. Syst. 128, 159–174. https://doi.org/10.1016/j.jmarsys.2013.04.017" />
+<meta name="citation_reference" content="Hattab, T., Lasram, F.B.R., Albouy, C., Sammari, C., Romdhane, M.S., Cury, P., Leprieur, F., Loc’h, F.L., 2013b. The Use of a Predictive Habitat Model and a Fuzzy Logic Approach for Marine Management and Planning. PLOS ONE 8, e76430. https://doi.org/10.1371/journal.pone.0076430" />
+<meta name="citation_reference" content="Herrmann, M.J., Somot, S., 2008. Relevance of ERA40 dynamical downscaling for modeling deep convection in the Mediterranean Sea. Geophys. Res. Lett. 35, L04607. https://doi.org/10.1029/2007GL032442" />
+<meta name="citation_reference" content="Hilborn, R., 2011. Future directions in ecosystem based fisheries management: A personal perspective. Fish. Res. 108, 235–239. https://doi.org/10.1016/j.fishres.2010.12.030" />
+<meta name="citation_reference" content="Hill, S.L., Watters, G.M., Punt, A.E., McAllister, M.K., Quéré, C.L., Turner, J., 2007. Model uncertainty in the ecosystem approach to fisheries. Fish Fish. 8, 315–336. https://doi.org/10.1111/j.1467-2979.2007.00257.x" />
+<meta name="citation_reference" content="citation_pages=1655-1731;citation_year=2014" />
+<meta name="citation_reference" content="Hyder, K., Rossberg, A.G., Allen, J.I., Austen, M.C., Barciela, R.M., Bannister, H.J., Blackwell, P.G., Blanchard, J.L., Burrows, M.T., Defriez, E., Dorrington, T., Edwards, K.P., Garcia-Carreras, B., Heath, M.R., Hembury, D.J., Heymans, J.J., Holt, J., Houle, J.E., Jennings, S., Mackinson, S., Malcolm, S.J., McPike, R., Mee, L., Mills, D.K., Montgomery, C., Pearson, D., Pinnegar, J.K., Pollicino, M., Popova, E.E., Rae, L., Rogers, S.I., Speirs, D., Spence, M.A., Thorpe, R., Turner, R.K., van der Molen, J., Yool, A., Paterson, D.M., 2015. Making modelling count - increasing the contribution of shelf-seas community and ecosystem models to policy development and management. Mar. Policy 61, 291–302. https://doi.org/10.1016/j.marpol.2015.07.015" />
+<meta name="citation_reference" content="Ignatiades, L., Gotsis-Skretas, O., Pagou, K., Krasakopoulou, E., 2009. Diversification of phytoplankton community structure and related parameters along a large-scale longitudinal east–west transect of the Mediterranean Sea. J. Plankton Res. 31, 411–428. https://doi.org/10.1093/plankt/fbn124" />
+<meta name="citation_reference" content="Jackson, J.M., Lenz, P.H., 2016. Predator-prey interactions in the plankton: larval fish feeding on evasive copepods. Sci. Rep. 6, 33585. https://doi.org/10.1038/srep33585" />
+<meta name="citation_reference" content="Jochum, M., Schneider, F.D., Crowe, T.P., Brose, U., O’Gorman, E.J., 2012. Climate-induced changes in bottom-up and top-down processes independently alter a marine ecosystem. Philos. Trans. R. Soc. B Biol. Sci. 367, 2962–2970. https://doi.org/10.1098/rstb.2012.0237" />
+<meta name="citation_reference" content="Jönsson, A.M., Anderbrant, O., Holmér, J., Johansson, J., Schurgers, G., Svensson, G.P., Smith, H.G., 2015. Enhanced science–stakeholder communication to improve ecosystem model performances for climate change impact assessments. Ambio 44, 249–255. https://doi.org/10.1007/s13280-014-0553-4" />
+<meta name="citation_reference" content="Jordà, G., Marbà, N., Duarte, C.M., 2012. Mediterranean seagrass vulnerable to regional climate warming. Nat. Clim. Change 2, 821–824. https://doi.org/10.1038/nclimate1533" />
+<meta name="citation_reference" content="Jørgensen, C., Enberg, K., Dunlop, E.S., Arlinghaus, R., Boukal, D.S., Brander, K., Ernande, B., Gårdmark, A.G., Johnston, F., Matsumura, S., Pardoe, H., Raab, K., Silva, A., Vainikka, A., Dieckmann, U., Heino, M., Rijnsdorp, A.D., 2007. Ecology: Managing Evolving Fish Stocks. Science 318, 1247–1248. https://doi.org/10.1126/science.1148089" />
+<meta name="citation_reference" content="Karachle, P.K., Stergiou, K.I., 2017. An update on the feeding habits of fish in the Mediterranean Sea (2002-2015). Mediterr. Mar. Sci. 18, 43–52. https://doi.org/10.12681/mms.1968" />
+<meta name="citation_reference" content="Katsanevakis, S., Bogucarskis, K., Gatto, F., Vandekerkhove, J., Deriu, I., Cardoso, A.C., 2012. Building the European Alien Species Information Network (EASIN): a novel approach for the exploration of distributed alien species data. BioInvasions Rec. 1, 235–245. https://doi.org/10.3391/bir.2012.1.4.01" />
+<meta name="citation_reference" content="Katsanevakis, S., Levin, N., Coll, M., Giakoumi, S., Shkedi, D., Mackelworth, P., Levy, R., Velegrakis, A., Koutsoubas, D., Caric, H., Brokovich, E., Öztürk, B., Kark, S., 2015. Marine conservation challenges in an era of economic crisis and geopolitical instability: The case of the Mediterranean Sea. Mar. Policy 51, 31–39. https://doi.org/10.1016/j.marpol.2014.07.013" />
+<meta name="citation_reference" content="Katsanevakis, S., Wallentinus, I., Zenetos, A., Leppäkoski, E., Çinar, M.E., Oztürk, B., Grabowski, M., Golani, D., Cardoso, A.C., 2014. Impacts of invasive alien marine species on ecosystem services and biodiversity: a pan-European review. Aquat. Invasions 9, 391– 423. https://doi.org/10.3391/ai.2014.9.4.01" />
+<meta name="citation_reference" content="Kessouri, F., 2015. Cycles biogéochimiques de la mer Méditerranée: processus et bilans, PhD thesis, Univ Toulouse III Paul Sabatier, Toulouse, France." />
+<meta name="citation_reference" content="Kessouri, F., Ulses, C., Estournel, C., Marsaleix, P., Severin, T., Pujo-Pay, M., Caparros, J., Raimbault, P., Pasqueron de Fommervault, O., D’Ortenzio, F., Taillandier, V., Testor, P., Conan, P., 2017. Nitrogen and Phosphorus Budgets in the Northwestern Mediterranean Deep Convection Region. J. Geophys. Res. Oceans 122, 9429–9454. https://doi.org/10.1002/2016JC012665" />
+<meta name="citation_reference" content="Kroodsma, D.A., Mayorga, J., Hochberg, T., Miller, N.A., Boerder, K., Ferretti, F., Wilson, A., Bergman, B., White, T.D., Block, B.A., Woods, P., Sullivan, B., Costello, C., Worm, B., 2018. Tracking the global footprint of fisheries. Science 359, 904–908. https://doi.org/10.1126/science.aao5646" />
+<meta name="citation_reference" content="Law, R., 2000. Fishing, selection, and phenotypic evolution. ICES J. Mar. Sci. 57, 659–668. https://doi.org/10.1006/jmsc.2000.0731" />
+<meta name="citation_reference" content="Le Quesne, W., Brown, M., De oliveira, J., Casey, J., O’Brien, C., 2013. Data-deficient fisheries in EU waters. Directorate-General for internal policies. Policy department B: Structural ad cohesion policies. IP/B/PECH/IC/2012-118. PE 495.865. June 2013. 74p." />
+<meta name="citation_reference" content="Lehuta, S., Girardin, R., Mahévas, S., Travers-Trolet, M., Vermard, Y., 2016. Reconciling complex system models and fisheries advice: Practical examples and leads. Aquat. Living Resour. 29, 208. https://doi.org/10.1051/alr/2016022" />
+<meta name="citation_reference" content="Lehuta, S., Mahévas, S., Petitgas, P., Pelletier, D., 2010. Combining sensitivity and uncertainty analysis to evaluate the impact of management measures with ISIS–Fish: marine protected areas for the Bay of Biscay anchovy (Engraulis encrasicolus) fishery. ICES J. Mar. Sci. 67, 1063–1075. https://doi.org/10.1093/icesjms/fsq002" />
+<meta name="citation_reference" content="Lejeusne, C., Chevaldonné, P., Pergent-Martini, C., Boudouresque, C.F., Pérez, T., 2010. Climate change effects on a miniature ocean: the highly diverse, highly impacted Mediterranean Sea. Trends Ecol. Evol. 25, 250–260. https://doi.org/10.1016/j.tree.2009.10.009" />
+<meta name="citation_reference" content="Leleu, K., Pelletier, D., Charbonnel, E., Letourneur, Y., Alban, F., Bachet, F., Boudouresque, C.F., 2014. Métiers, effort and catches of a Mediterranean small-scale coastal fishery: The case of the Côte Bleue Marine Park. Fish. Res. 154, 93–101. https://doi.org/10.1016/j.fishres.2014.02.006" />
+<meta name="citation_reference" content="Ligas, A., Sartor, P., Colloca, F., 2011. Trends in population dynamics and fishery of Parapenaeus longirostris and Nephrops norvegicus in the Tyrrhenian Sea (NW Mediterranean): the relative importance of fishery and environmental variables. Mar. Ecol. 32, 25–35. https://doi.org/10.1111/j.1439-0485.2011.00440.x" />
+<meta name="citation_reference" content="Link, J., 2010. Ecosystem-Based Fisheries Management: Confronting Tradeoffs. Cambridge University Press." />
+<meta name="citation_reference" content="Liquete, C., Piroddi, C., Macías, D., Druon, J.-N., Zulian, G., 2016. Ecosystem services sustainability in the Mediterranean Sea: assessment of status and trends using multiple modelling approaches. Sci. Rep. 6. https://doi.org/10.1038/srep34162" />
+<meta name="citation_reference" content="Lotze, H.K., Lenihan, H.S., Bourque, B.J., Bradbury, R.H., Cooke, R.G., Kay, M.C., Kidwell, S.M., Kirby, M.X., Peterson, C.H., Jackson, J.B.C., 2006. Depletion, Degradation, and Recovery Potential of Estuaries and Coastal Seas. Science 312, 1806–1809. https://doi.org/10.1126/science.1128035" />
+<meta name="citation_reference" content="MacCall, A.D., 1990. Dynamic geography of marine fish populations, Books in recruitment fishery oceanography. Washington Sea Grant Program: Distributed by University of Washington Press, Seattle." />
+<meta name="citation_reference" content="Macias, D., Garcia-Gorriz, E., Piroddi, C., Stips, A., 2014. Biogeochemical control of marine productivity in the Mediterranean Sea during the last 50 years. Glob. Biogeochem. Cycles 28, 897–907. https://doi.org/10.1002/2014GB004846" />
+<meta name="citation_reference" content="Macias, D.M., Garcia-Gorriz, E., Stips, A., 2015. Productivity changes in the Mediterranean Sea for the twenty-first century in response to changes in the regional atmospheric forcing. Front. Mar. Sci. 2. https://doi.org/10.3389/fmars.2015.00079" />
+<meta name="citation_reference" content="Macpherson, E., 1998. Ontogenetic shifts in habitat use and aggregation in juvenile sparid fishes. J. Exp. Mar. Biol. Ecol. 220, 127–150. https://doi.org/10.1016/S0022-0981(97)00086-5" />
+<meta name="citation_reference" content="Macpherson, E., Duarte, C.M., 1991. Bathymetric trends in demersal fish size: is there a general relationship? Mar. Ecol. Prog. Ser. 71, 103–112." />
+<meta name="citation_reference" content="Marbà, N., Jorda, G., Agusti, S., Girard, C., Duarte, C.M., 2015. Footprints of climate change on Mediterranean Sea biota. Front. Mar. Sci. 2. https://doi.org/10.3389/fmars.2015.00056" />
+<meta name="citation_reference" content="Marzloff, M., Shin, Y.-J., Tam, J., Travers, M., Bertrand, A., 2009. Trophic structure of the Peruvian marine ecosystem in 2000–2006: Insights on the effects of management scenarios for the hake fishery using the IBM trophic model Osmose. J. Mar. Syst. 75, 290–304. https://doi.org/10.1016/j.jmarsys.2008.10.009" />
+<meta name="citation_reference" content="Maynou, F., Recasens, L., Lombarte, A., 2011. Fishing tactics dynamics of a Mediterranean small-scale coastal fishery. Aquat. Living Resour. 24, 149–159. https://doi.org/10.1051/alr/2011131" />
+<meta name="citation_reference" content="Methratta, E.T., Link, J.S., 2007. Ontogenetic variation in habitat associations for four flatfish species in the Gulf of Maine-Georges Bank regio. J. Fish Biol. 70, 1669–1688. https://doi.org/10.1111/j.1095-8649.2007.01428.x" />
+<meta name="citation_reference" content="Micheli, F., Halpern, B.S., Walbridge, S., Ciriaco, S., Ferretti, F., Fraschetti, S., Lewison, R., Nykjaer, L., Rosenberg, A.A., 2013a. Cumulative Human Impacts on Mediterranean and Black Sea Marine Ecosystems: Assessing Current Pressures and Opportunities. PLOS ONE 8, e79889. https://doi.org/10.1371/journal.pone.0079889" />
+<meta name="citation_reference" content="Micheli, F., Levin, N., Giakoumi, S., Katsanevakis, S., Abdulla, A., Coll, M., Fraschetti, S., Kark, S., Koutsoubas, D., Mackelworth, P., others, 2013b. Setting priorities for regional conservation planning in the Mediterranean Sea. PLoS One 8, e59038." />
+<meta name="citation_reference" content="Morote, E., Olivar, M.P., Villate, F., Uriarte, I., 2010. A comparison of anchovy (Engraulis encrasicolus) and sardine (Sardina pilchardus) larvae feeding in the Northwest Mediterranean: influence of prey availability and ontogeny. ICES J. Mar. Sci. 67, 897–908. https://doi.org/10.1093/icesjms/fsp302" />
+<meta name="citation_reference" content="Mouillot, D., Albouy, C., Guilhaumon, F., Ben Rais Lasram, F., Coll, M., Devictor, V., Meynard, C.N., Pauly, D., Tomasini, J.A., Troussellier, M., Velez, L., Watson, R., Douzery, E.J.P., Mouquet, N., 2011. Protected and Threatened Components of Fish Biodiversity in the Mediterranean Sea. Curr. Biol. 21, 1044–1050. https://doi.org/10.1016/j.cub.2011.05.005" />
+<meta name="citation_reference" content="citation_journal_title=The Mediterranean region under climate change – A scientific update. Allenvi - IRD Editions, Marseille;citation_title=Climate change induces bottom-up changes in the food webs of the Mediterranean Sea;citation_pages=219-228;citation_year=2016" />
+<meta name="citation_reference" content="Moutopoulos, D.K., Koutsikopoulos, C., 2014. Fishing strange data in national fisheries statistics of Greece. Mar. Policy 48, 114–122. https://doi.org/10.1016/j.marpol.2014.03.017" />
+<meta name="citation_reference" content="Nicholson, E., Fulton, E.A., Brooks, T.M., Blanchard, R., Leadley, P., Metzger, J.P., Mokany, K., Stevenson, S., Wintle, B.A., Woolley, S.N.C., Barnes, M., Watson, J.E.M., Ferrier, S., 2018. Scenarios and Models to Support Global Conservation Targets. Trends Ecol. Evol. https://doi.org/10.1016/j.tree.2018.10.006" />
+<meta name="citation_reference" content="Oliveros Ramos, R., 2014. End-to-end modelling for an ecosystem approach to fisheries in the Northern Humboldt Current Ecosystem. Inst. MAR PERU - IMARPE." />
+<meta name="citation_reference" content="Oliveros-Ramos, R., Verley, P., Echevin, V., Shin, Y.-J., 2017. A sequential approach to calibrate ecosystem models with multiple time series data. Prog. Oceanogr. 151, 227–244. https://doi.org/10.1016/j.pocean.2017.01.002" />
+<meta name="citation_reference" content="Ortega-Cisneros, K., Cochrane, K., Fulton, E.A., 2017. An Atlantis model of the southern Benguela upwelling system: Validation, sensitivity analysis and insights into ecosystem functioning. Ecol. Model. 355, 49–63. https://doi.org/10.1016/j.ecolmodel.2017.04.009" />
+<meta name="citation_reference" content="Pauly, D., Ulman, A., Piroddi, C., Bultel, E., Coll, M., 2014. ‘Reported’ versus ‘likely’ fisheries catches of four Mediterranean countries. Sci. Mar. 78, 11–17. https://doi.org/10.3989/scimar.04020.17A" />
+<meta name="citation_reference" content="Pauly, D., Zeller, D., 2016. Catch reconstructions reveal that global marine fisheries catches are higher than reported and declining. Nat. Commun. 7, 10244. https://doi.org/10.1038/ncomms10244" />
+<meta name="citation_reference" content="Payne, M.R., Barange, M., Cheung, W.W.L., MacKenzie, B.R., Batchelder, H.P., Cormon, X., Eddy, T.D., Fernandes, J.A., Hollowed, A.B., Jones, M.C., Link, J.S., Neubauer, P., Ortiz, I., Queirós, A.M., Paula, J.R., 2016. Uncertainties in projecting climate-change impacts in marine ecosystems. ICES J. Mar. Sci. 73, 1272–1282. https://doi.org/10.1093/icesjms/fsv231" />
+<meta name="citation_reference" content="Pecl, G.T., Araújo, M.B., Bell, J.D., Blanchard, J., Bonebrake, T.C., Chen, I.-C., Clark, T.D., Colwell, R.K., Danielsen, F., Evengård, B., Falconi, L., Ferrier, S., Frusher, S., Garcia, R.A., Griffis, R.B., Hobday, A.J., Janion-Scheepers, C., Jarzyna, M.A., Jennings, S., Lenoir, J., Linnetved, H.I., Martin, V.Y., McCormack, P.C., McDonald, J., Mitchell, N.J., Mustonen, T., Pandolfi, J.M., Pettorelli, N., Popova, E., Robinson, S.A., Scheffers, B.R., Shaw, J.D., Sorte, C.J.B., Strugnell, J.M., Sunday, J.M., Tuanmu, M.-N., Vergés, A., Villanueva, C., Wernberg, T., Wapstra, E., Williams, S.E., 2017. Biodiversity redistribution under climate change: Impacts on ecosystems and human well-being. Science 355, eaai9214. https://doi.org/10.1126/science.aai9214" />
+<meta name="citation_reference" content="Pepin, P., Penney, R., 2000. Feeding by a larval fish community: impact on zooplankton. Mar. Ecol. Prog. Ser. 204, 199–212. https://doi.org/10.3354/meps204199" />
+<meta name="citation_reference" content="Peristeraki, P., Tserpes, G., Lefkaditou, E., 2005. What cephalopod remains from Xiphias gladius stomachs can imply about predator-prey interactions in the Mediterranean Sea? J. Fish Biol. 67, 549–554. https://doi.org/10.1111/j.0022-1112.2005.00742.x" />
+<meta name="citation_reference" content="Pikitch, E.K., Santora, C., Babcock, E.A., Bakun, A., Bonfil, R., Conover, D.O., Dayton, P., Doukakis, P., Fluharty, D., Heneman, B., Houde, E.D., Link, J., Livingston, P.A., Mangel, M., McAllister, M.K., Pope, J., Sainsbury, K.J., 2004. Ecosystem-Based Fishery Management. Science 305, 346–347. https://doi.org/10.1126/science.1098222" />
+<meta name="citation_reference" content="Piroddi, C., Coll, M., Liquete, C., Macias, D., Greer, K., Buszowski, J., Steenbeek, J., Danovaro, R., Christensen, V., 2017. Historical changes of the Mediterranean Sea ecosystem: modelling the role and impact of primary productivity and fisheries changes over time. Sci. Rep. 7, 44491. https://doi.org/10.1038/srep44491" />
+<meta name="citation_reference" content="Piroddi, C., Coll, M., Steenbeek, J., Macias Moy, D., Christensen, V., 2015a. Modelling the Mediterranean marine ecosystem as a whole: addressing the challenge of complexity. Mar. Ecol. Prog. Ser. 533, 47–65. https://doi.org/10.3354/meps11387" />
+<meta name="citation_reference" content="Piroddi, C., Teixeira, H., Lynam, C.P., Smith, C., Alvarez, M.C., Mazik, K., Andonegi, E., Churilova, T., Tedesco, L., Chifflet, M., Chust, G., Galparsoro, I., Garcia, A.C., Kämäri, M., Kryvenko, O., Lassalle, G., Neville, S., Niquil, N., Papadopoulou, N., Rossberg, A.G., Suslin, V., Uyarra, M.C., 2015b. Using ecological models to assess ecosystem status in support of the European Marine Strategy Framework Directive. Ecol. Indic. 58, 175–191. https://doi.org/10.1016/j.ecolind.2015.05.037" />
+<meta name="citation_reference" content="Por, D., 1989. The legacy of Tethys. Kluwer Academic Publishers, Dordrecht, p 41–64." />
+<meta name="citation_reference" content="Ragonese, S., Cannizaro, G., Norrito, P., Jereb, P., 2016. Watch your stock A! warning about the endorsement of the “Stock concept” adopted by the STOCKMED project for the Mediterranean groundfish fisheries. NTR-ITPP, sr 72: 20 pp." />
+<meta name="citation_reference" content="Raick, C., Delhez, E.J.M., Soetaert, K., Grégoire, M., 2005. Study of the seasonal cycle of the biogeochemical processes in the Ligurian Sea using a 1D interdisciplinary model. J. Mar. Syst. 55, 177–203. https://doi.org/10.1016/j.jmarsys.2004.09.005" />
+<meta name="citation_reference" content="Ramírez, F., Coll, M., Navarro, J., Bustamante, J., Green, A.J., 2018. Spatial congruence between multiple stressors in the Mediterranean Sea may reduce its resilience to climate impacts. Sci. Rep. 8, 14871. https://doi.org/10.1038/s41598-018-33237-w" />
+<meta name="citation_reference" content="Roberts, S.M., 2003. Examination of the stomach contents from a Mediterranean sperm whale found south of Crete, Greece. J. Mar. Biol. Assoc. U. K. 83, 667–670. https://doi.org/10.1017/S0025315403007628h" />
+<meta name="citation_reference" content="Rose, K.A., Allen, J.I., Artioli, Y., Barange, M., Blackford, J., Carlotti, F., Cropp, R., Daewel, U., Edwards, K., Flynn, K., Hill, S.L., HilleRisLambers, R., Huse, G., Mackinson, S., Megrey, B., Moll, A., Rivkin, R., Salihoglu, B., Schrum, C., Shannon, L., Shin, Y.-J., Smith, S.L., Smith, C., Solidoro, C., St. John, M., Zhou, M., 2010. End-To-End Models for the Analysis of Marine Ecosystems: Challenges, Issues, and Next Steps. Mar. Coast. Fish. 2, 115–130. https://doi.org/10.1577/C09-059.1" />
+<meta name="citation_reference" content="Sabatés, A., Martín, P., Lloret, J., Raya, V., 2006. Sea warming and fish distribution: the case of the small pelagic fish, Sardinella aurita, in the western Mediterranean. Glob. Change Biol. 12, 2209–2219. https://doi.org/10.1111/j.1365-2486.2006.01246.x" />
+<meta name="citation_reference" content="Sbrana, M., Zupa, W., Ligas, A., Capezzuto, F., Chatzispyrou, A., Follesa, M.C., Gancitano, V., Guijarro, B., Isajlović, I., Jadaud, A., Markovic, O., Micallef, R., Peristeraki, P., Piccinetti, C., Thasitis, I., Carbonara, P., in press. Spatial-temporal abundance pattern of deep-water rose shrimp, Parapenaeus longirostris, and Norway lobster, Nephrops norvegicus, in European Mediterranean waters. Sci. Mar." />
+<meta name="citation_reference" content="Sharir, Y., Kerem, D., Gol’din, P., Spanier, E., 2011. Small size in the common bottlenose dolphin Tursiops truncatus in the eastern Mediterranean: a possible case of Levantine nanism. Mar. Ecol. Prog. Ser. 438, 241–251. https://doi.org/10.3354/meps09282" />
+<meta name="citation_reference" content="Shin, Y.-J., Cury, P., 2004. Using an individual-based model of fish assemblages to study the response of size spectra to changes in fishing. Can. J. Fish. Aquat. Sci. 61, 414–431. https://doi.org/10.1139/f03-154" />
+<meta name="citation_reference" content="Shin, Y.-J., Cury, P., 2001. Exploring fish community dynamics through size-dependent trophic interactions using a spatialized individual-based model. Aquat. Living Resour. 14, 65–80. https://doi.org/10.1016/S0990-7440(01)01106-8" />
+<meta name="citation_reference" content="Shin, Y.-J., Rochet, M.-J., Jennings, S., Field, J.G., Gislason, H., 2005. Using size-based indicators to evaluate the ecosystem effects of fishing. ICES J. Mar. Sci. 62, 384–396. https://doi.org/10.1016/j.icesjms.2005.01.004" />
+<meta name="citation_reference" content="Shin, Y.-J., Shannon, L.J., Cury, P.M., 2004. Simulations of fishing effects on the southern Benguela fish community using an individual-based model: learning from a comparison with ECOSIM. Afr. J. Mar. Sci. 26, 95–114. https://doi.org/10.2989/18142320409504052" />
+<meta name="citation_reference" content="Sonin, O., Spanier, E., Levi, D., Patti, B., Rizzo, P., Andreoli, M.G., 2007. Nanism (dwarfism) in fish: a comparison between red mullet Mullus barbatus from the southeastern and the central Mediterranean. Mar. Ecol. Prog. Ser. 343, 221–228. https://doi.org/10.3354/meps06917" />
+<meta name="citation_reference" content="STECF, 2017. Reports of the Scientific, Technical and Economic Committee for Fisheries (STECF)-56th Plenary meeting Report (PLEN-17-03). 2017. Publications office of the European union, Luxembourg, ISSN 1831-9424, 162 pp." />
+<meta name="citation_reference" content="Stergiou, K.I., Karpouzi, V.S., 2002. Feeding habits and trophic levels of Mediterranean fish. Rev. Fish Biol. Fish. 11, 217–254. https://doi.org/10.1023/A:1020556722822" />
+<meta name="citation_reference" content="Stergiou, K.I., Somarakis, S., Triantafyllou, G., Tsiaras, K.P., Giannoulaki, M., Petihakis, G., Machias, A., Tsikliras, A.C., 2016. Trends in productivity and biomass yields in the Mediterranean Sea Large Marine Ecosystem during climate change. Environ. Dev., Thematic Issue - Ecosystem Based Management of Large Marine Ecosystems 17, 57–74. https://doi.org/10.1016/j.envdev.2015.09.001" />
+<meta name="citation_reference" content="Stock, A., Crowder, L.B., Halpern, B.S., Micheli, F., 2018. Uncertainty analysis and robust areas of high and low modeled human impact on the global oceans. Conserv. Biol. 0. https://doi.org/10.1111/cobi.13141" />
+<meta name="citation_reference" content="Thuiller, W., Lafourcade, B., Engler, R., Araújo, M.B., 2009. BIOMOD – a platform for ensemble forecasting of species distributions. Ecography 32, 369–373. https://doi.org/10.1111/j.1600-0587.2008.05742.x" />
+<meta name="citation_reference" content="Travers, M., Shin, Y.-J., Jennings, S., Cury, P., 2007. Towards end-to-end models for investigating the effects of climate and fishing in marine ecosystems. Prog. Oceanogr. 75, 751–770. https://doi.org/10.1016/j.pocean.2007.08.001" />
+<meta name="citation_reference" content="Travers, M., Shin, Y.-J., Jennings, S., Machu, E., Huggett, J.A., Field, J.G., Cury, P.M., 2009. Two-way coupling versus one-way forcing of plankton and fish models to predict ecosystem changes in the Benguela. Ecol. Model., Selected Papers from the Sixth European Conference on Ecological Modelling - ECEM’07, on Challenges for ecological modelling in a changing world: Global Changes, Sustainability and Ecosystem Based Management, November 27-30, 2007, Trieste, Italy 220, 3089–3099. https://doi.org/10.1016/j.ecolmodel.2009.08.016" />
+<meta name="citation_reference" content="Travers-Trolet, M., Shin, Y.-J., Field, J.G., 2014. An end-to-end coupled model ROMS-N2P2Z2D2-OSMOSE of the southern Benguela foodweb: parameterisation, calibration and pattern-oriented validation. Afr. J. Mar. Sci. 36, 11–29. https://doi.org/10.2989/1814232X.2014.883326" />
+<meta name="citation_reference" content="Tsikliras, A.C., Dinouli, A., Tsiros, V.-Z., Tsalkou, E., 2015. The Mediterranean and Black Sea Fisheries at Risk from Overexploitation. PLOS ONE 10, e0121188. https://doi.org/10.1371/journal.pone.0121188" />
+<meta name="citation_reference" content="Tzanatos, E., Raitsos, D.E., Triantafyllou, G., Somarakis, S., Tsonis, A.A., 2014. Indications of a climate effect on Mediterranean fisheries. Clim. Change 122, 41–54. https://doi.org/10.1007/s10584-013-0972-4" />
+<meta name="citation_reference" content="Ulses, C., Auger, P.-A., Soetaert, K., Marsaleix, P., Diaz, F., Coppola, L., Herrmann, M.J., Kessouri, F., Estournel, C., 2016. Budget of organic carbon in the North-Western Mediterranean open sea over the period 2004–2008 using 3-D coupled physical-biogeochemical modeling. J. Geophys. Res. Oceans 121, 7026–7055. https://doi.org/10.1002/2016JC011818" />
+<meta name="citation_reference" content="Vasilakopoulos, P., Maravelias, C.D., Tserpes, G., 2014. The Alarming Decline of Mediterranean Fish Stocks. Curr. Biol. 24, 1643–1648. https://doi.org/10.1016/j.cub.2014.05.070" />
+<meta name="citation_reference" content="Velasco, F., Olaso, I., 1998. European hake Merluccius merluccius (L., 1758) feeding in the Cantabrian Sea: seasonal, bathymetric and length variations. Fish. Res. 38, 33–44. https://doi.org/10.1016/S0165-7836(98)00111-8" />
+<meta name="citation_reference" content="Whitehead, P., Bauchot, L., Hureau, J., Nielsen, J., Tortonese, E., 1986. Fishes of the North-Eastern Atlantic and the Mediterranean, Vols. 1–3. UNESCO, Paris." />
+<meta name="citation_reference" content="Würtz, M., 2012. Mediterranean submarine canyons: ecology and governance. Gland, Switzerland and Malaga. Spain: IUCN. 216p. IUCN." />
+<meta name="citation_reference" content="Xing, L., Zhang, C., Chen, Y., Shin, Y.-J., Verley, P., Yu, H., Ren, Y., 2017. An individual-based model for simulating the ecosystem dynamics of Jiaozhou Bay, China. Ecol. Model. 360, 120–131. https://doi.org/10.1016/j.ecolmodel.2017.06.010" />
+<meta name="citation_reference" content="citation_title=Catch reconstruction: concepts, methods and data sources. Online Publication. Sea Around Us;citation_year=2015" />
+<meta name="twitter:title" content="Catching the big picture of the Mediterranean Sea biodiversity with an end-to-end model of climate and fishing impacts" />
+<meta name="twitter:site" content="@biorxivpreprint" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://www.biorxiv.org/sites/default/files/images/biorxiv_logo_homepage7-5-small.png" />
+<meta name="twitter:description" content="The Mediterranean Sea is among the main hotspots of marine biodiversity in the world. Under combined pressures of fishing activities and climate change it has also become a hotspot of global change, with increased concern about the worsening status of marine exploited species. More integrated modelling approaches are needed to anticipate global change impacts in the Mediterranean Sea, in order to help decision makers prioritizing management actions and strategies, mitigating impacts and adapting to changes. Our challenge was to develop a holistic model of the marine biodiversity in the Mediterranean Sea with an explicit representation of the spatial multispecies dynamics of exploited resources under the combined influence of climate variability and fishing pressure. An individual-based ecosystem model OSMOSE (Object-oriented Simulator of Marine ecOSystEms), including 100 marine species (fish, cephalopods and crustaceans) and representing about 95 % of the total declared catches, has been implemented for the first time at a high spatial resolution (400 km2) and at a large spatial scale (whole Mediterranean basin). The coupling of OSMOSE to the NEMOMED 12 physical model, and to the Eco3M-S biogeochemical and low trophic level model has been achieved to build the OSMOSE-MED end-to-end model. We fitted OSMOSE-MED to observed and estimated data of biomass and commercial catches using a likelihood approach and an evolutionary optimization algorithm. The outputs of OSMOSE-MED were then verified against observed biomass and catches, and confronted to independent datasets (MEDITS data, diet compositions and trophic levels). Although some improvements are suggested for future developments, the model results at different hierarchical levels, from individuals up to the ecosystem scale, were consistent with current knowledge and observations on the structure, the functioning and the dynamics of the ecosystems in the Mediterranean Sea. All the modelling steps, from the comprehensive representation of key ecological processes and feedbacks, the careful parameterization of the model, the confrontation to observed data, and the positive outcome from the validation process, allowed to strengthen the degree of realism of OSMOSE-MED and its relevance as an impact model to explore the futures of marine biodiversity under scenarios of global change, and as a tool to support the implementation of ecosystem-based fisheries management in the Mediterranean Sea." />
+<meta name="og-title" property="og:title" content="Catching the big picture of the Mediterranean Sea biodiversity with an end-to-end model of climate and fishing impacts" />
+<meta name="og-url" property="og:url" content="https://www.biorxiv.org/content/10.1101/593822v1" />
+<meta name="og-site-name" property="og:site_name" content="bioRxiv" />
+<meta name="og-description" property="og:description" content="The Mediterranean Sea is among the main hotspots of marine biodiversity in the world. Under combined pressures of fishing activities and climate change it has also become a hotspot of global change, with increased concern about the worsening status of marine exploited species. More integrated modelling approaches are needed to anticipate global change impacts in the Mediterranean Sea, in order to help decision makers prioritizing management actions and strategies, mitigating impacts and adapting to changes. Our challenge was to develop a holistic model of the marine biodiversity in the Mediterranean Sea with an explicit representation of the spatial multispecies dynamics of exploited resources under the combined influence of climate variability and fishing pressure. An individual-based ecosystem model OSMOSE (Object-oriented Simulator of Marine ecOSystEms), including 100 marine species (fish, cephalopods and crustaceans) and representing about 95 % of the total declared catches, has been implemented for the first time at a high spatial resolution (400 km2) and at a large spatial scale (whole Mediterranean basin). The coupling of OSMOSE to the NEMOMED 12 physical model, and to the Eco3M-S biogeochemical and low trophic level model has been achieved to build the OSMOSE-MED end-to-end model. We fitted OSMOSE-MED to observed and estimated data of biomass and commercial catches using a likelihood approach and an evolutionary optimization algorithm. The outputs of OSMOSE-MED were then verified against observed biomass and catches, and confronted to independent datasets (MEDITS data, diet compositions and trophic levels). Although some improvements are suggested for future developments, the model results at different hierarchical levels, from individuals up to the ecosystem scale, were consistent with current knowledge and observations on the structure, the functioning and the dynamics of the ecosystems in the Mediterranean Sea. All the modelling steps, from the comprehensive representation of key ecological processes and feedbacks, the careful parameterization of the model, the confrontation to observed data, and the positive outcome from the validation process, allowed to strengthen the degree of realism of OSMOSE-MED and its relevance as an impact model to explore the futures of marine biodiversity under scenarios of global change, and as a tool to support the implementation of ecosystem-based fisheries management in the Mediterranean Sea." />
+<meta name="og-type" property="og:type" content="article" />
+<meta name="og-image" property="og:image" content="https://www.biorxiv.org/sites/default/files/images/biorxiv_logo_homepage7-5-small.png" />
+<meta name="citation_date" content="2019-03-31" />
+<link rel="alternate" type="application/pdf" title="Full Text (PDF)" href="/content/10.1101/593822v1.full.pdf" />
+<link rel="alternate" type="text/plain" title="Full Text (Plain)" href="/content/10.1101/593822v1.full.txt" />
+<link rel="alternate" type="application/vnd.ms-powerpoint" title="Powerpoint" href="/content/10.1101/593822v1.ppt" />
+<meta name="description" content="bioRxiv - the preprint server for biology, operated by Cold Spring Harbor Laboratory, a research and educational institution" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://www.biorxiv.org/content/10.1101/593822v1" />
+<link rel="shortlink" href="https://www.biorxiv.org/node/436683" />
+    <title>Catching the big picture of the Mediterranean Sea biodiversity with an end-to-end model of climate and fishing impacts | bioRxiv</title>  
+    <link type="text/css" rel="stylesheet" href="https://www.biorxiv.org/sites/default/files/advagg_css/css__jMRAK66KMC1e4TQlwUNn3KiWVDC5AjueUAYEm1xBY_U__KSUjdT4jdcJ4qJz6fKY1K9WkYh1a5EcaWZxt_-zbTis__QJacVmveFyLIBSPkp21xL0ZvuDW9DMBrD2HB1P4Ry5I.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.biorxiv.org/sites/all/modules/highwire/highwire/highwire.style.highwire.css?q5p1rr" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.biorxiv.org/sites/default/files/advagg_css/css__qlYh2rDEXmsOlJKnxoaEiN2PoZU7YzDXSSTk6K1VAQE__XkaAZGAgxyDmOmv0mrGL0sA-jzEgAbgA12amvVPlIf0__QJacVmveFyLIBSPkp21xL0ZvuDW9DMBrD2HB1P4Ry5I.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.biorxiv.org/sites/default/files/advagg_css/css__uGxiwDeWBOA2NAqiRKvJS7CKqv2_wE38cKwCd6tvrVo__q-99VeFMO0TjW81QZWAbxukEzR2ASPltrvRTdHYG3vY__QJacVmveFyLIBSPkp21xL0ZvuDW9DMBrD2HB1P4Ry5I.css" media="all" />
+<style type="text/css" media="all">
+/* <![CDATA[ */
+#sliding-popup.sliding-popup-bottom,#sliding-popup.sliding-popup-bottom .eu-cookie-withdraw-banner,.eu-cookie-withdraw-tab{background:gray}#sliding-popup.sliding-popup-bottom.eu-cookie-withdraw-wrapper{background:transparent}#sliding-popup .popup-content #popup-text h1,#sliding-popup .popup-content #popup-text h2,#sliding-popup .popup-content #popup-text h3,#sliding-popup .popup-content #popup-text p,.eu-cookie-compliance-secondary-button,.eu-cookie-withdraw-tab{color:#fff !important}.eu-cookie-withdraw-tab{border-color:#fff}.eu-cookie-compliance-more-button{color:#fff !important}
+/* ]]> */
+</style>
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="https://www.biorxiv.org/sites/default/files/advagg_css/css__ElJr3PIJEvw3qLXc1cnYiLj2G4KgDPSXFOfm6Phf8hw__JdWGm15cDWjsK6KrFlQVXQix9YgNeYysf22XZHj-Y-c__QJacVmveFyLIBSPkp21xL0ZvuDW9DMBrD2HB1P4Ry5I.css" media="all" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://www.biorxiv.org/sites/default/files/advagg_css/css__B6tGdsQSt1vT8d8j-19-oS4FKJe83RrSNBkjPs9jfos__6VkE5WcQmmQpSVTQx-xS2-zn_nlwFlDm-EN1HLJNjrA__QJacVmveFyLIBSPkp21xL0ZvuDW9DMBrD2HB1P4Ry5I.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.biorxiv.org/sites/default/files/advagg_css/css__I6pBwZrmO51afTZVOjN83FdGH1QRb9t15lSLso0JVV4__F3sVKlGyHKCaAPI_WdiHD7l_-05B6b9bLdUwzi1me90__QJacVmveFyLIBSPkp21xL0ZvuDW9DMBrD2HB1P4Ry5I.css" media="all" />
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<link type="text/css" rel="stylesheet" href="https://www.biorxiv.org/sites/default/files/advagg_css/css__XH6bpcI0f2dImc-p674DLCZtWBGb-QwxJK1YexVGtno__vUceGprdo5nIhV6DH93X7fI3r8RcTJbChbas9TQXeW4__QJacVmveFyLIBSPkp21xL0ZvuDW9DMBrD2HB1P4Ry5I.css" media="all" />
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<link type="text/css" rel="stylesheet" href="https://www.biorxiv.org/sites/default/files/advagg_css/css__2WBMox6sOrN42ss5lCnH7WWVRdFdJCxtTKnQJYRwTE4__yqNvNYLvMpjy3ffuJrjjm9uW2i-Me1c23KLYuWHaqio__QJacVmveFyLIBSPkp21xL0ZvuDW9DMBrD2HB1P4Ry5I.css" media="all" />
+<!--<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://www.biorxiv.org/sites/default/files/advagg_css/css__CRdjIL0HKDL2T9slYvkTSTLypBBPjyoDhwBezBuDy7c__cHebPmPNdg2jyPmpyQpZWssJQ4cPrqfaabp5Or9KlkU__QJacVmveFyLIBSPkp21xL0ZvuDW9DMBrD2HB1P4Ry5I.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://d33xdlntwy0kbs.cloudfront.net/cshl_custom.css" media="all" />
+    <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+/*!
+ * yepnope1.5.4
+ * (c) WTFPL, GPLv2
+ */
+(function(a,b,c){function d(a){return"[object Function]"==o.call(a)}function e(a){return"string"==typeof a}function f(){}function g(a){return!a||"loaded"==a||"complete"==a||"uninitialized"==a}function h(){var a=p.shift();q=1,a?a.t?m(function(){("c"==a.t?B.injectCss:B.injectJs)(a.s,0,a.a,a.x,a.e,1)},0):(a(),h()):q=0}function i(a,c,d,e,f,i,j){function k(b){if(!o&&g(l.readyState)&&(u.r=o=1,!q&&h(),l.onload=l.onreadystatechange=null,b)){"img"!=a&&m(function(){t.removeChild(l)},50);for(var d in y[c])y[c].hasOwnProperty(d)&&y[c][d].onload()}}var j=j||B.errorTimeout,l=b.createElement(a),o=0,r=0,u={t:d,s:c,e:f,a:i,x:j};1===y[c]&&(r=1,y[c]=[]),"object"==a?l.data=c:(l.src=c,l.type=a),l.width=l.height="0",l.onerror=l.onload=l.onreadystatechange=function(){k.call(this,r)},p.splice(e,0,u),"img"!=a&&(r||2===y[c]?(t.insertBefore(l,s?null:n),m(k,j)):y[c].push(l))}function j(a,b,c,d,f){return q=0,b=b||"j",e(a)?i("c"==b?v:u,a,b,this.i++,c,d,f):(p.splice(this.i++,0,a),1==p.length&&h()),this}function k(){var a=B;return a.loader={load:j,i:0},a}var l=b.documentElement,m=a.setTimeout,n=b.getElementsByTagName("script")[0],o={}.toString,p=[],q=0,r="MozAppearance"in l.style,s=r&&!!b.createRange().compareNode,t=s?l:n.parentNode,l=a.opera&&"[object Opera]"==o.call(a.opera),l=!!b.attachEvent&&!l,u=r?"object":l?"script":"img",v=l?"script":u,w=Array.isArray||function(a){return"[object Array]"==o.call(a)},x=[],y={},z={timeout:function(a,b){return b.length&&(a.timeout=b[0]),a}},A,B;B=function(a){function b(a){var a=a.split("!"),b=x.length,c=a.pop(),d=a.length,c={url:c,origUrl:c,prefixes:a},e,f,g;for(f=0;f<d;f++)g=a[f].split("="),(e=z[g.shift()])&&(c=e(c,g));for(f=0;f<b;f++)c=x[f](c);return c}function g(a,e,f,g,h){var i=b(a),j=i.autoCallback;i.url.split(".").pop().split("?").shift(),i.bypass||(e&&(e=d(e)?e:e[a]||e[g]||e[a.split("/").pop().split("?")[0]]),i.instead?i.instead(a,e,f,g,h):(y[i.url]?i.noexec=!0:y[i.url]=1,f.load(i.url,i.forceCSS||!i.forceJS&&"css"==i.url.split(".").pop().split("?").shift()?"c":c,i.noexec,i.attrs,i.timeout),(d(e)||d(j))&&f.load(function(){k(),e&&e(i.origUrl,h,g),j&&j(i.origUrl,h,g),y[i.url]=2})))}function h(a,b){function c(a,c){if(a){if(e(a))c||(j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}),g(a,j,b,0,h);else if(Object(a)===a)for(n in m=function(){var b=0,c;for(c in a)a.hasOwnProperty(c)&&b++;return b}(),a)a.hasOwnProperty(n)&&(!c&&!--m&&(d(j)?j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}:j[n]=function(a){return function(){var b=[].slice.call(arguments);a&&a.apply(this,b),l()}}(k[n])),g(a[n],j,b,n,h))}else!c&&l()}var h=!!a.test,i=a.load||a.both,j=a.callback||f,k=j,l=a.complete||f,m,n;c(h?a.yep:a.nope,!!i),i&&c(i)}var i,j,l=this.yepnope.loader;if(e(a))g(a,0,l,0);else if(w(a))for(i=0;i<a.length;i++)j=a[i],e(j)?g(j,0,l,0):w(j)?B(j):Object(j)===j&&h(j,l);else Object(a)===a&&h(a,l)},B.addPrefix=function(a,b){z[a]=b},B.addFilter=function(a){x.push(a)},B.errorTimeout=1e4,null==b.readyState&&b.addEventListener&&(b.readyState="loading",b.addEventListener("DOMContentLoaded",A=function(){b.removeEventListener("DOMContentLoaded",A,0),b.readyState="complete"},0)),a.yepnope=k(),a.yepnope.executeStack=h,a.yepnope.injectJs=function(a,c,d,e,i,j){var k=b.createElement("script"),l,o,e=e||B.errorTimeout;k.src=a;for(o in d)k.setAttribute(o,d[o]);c=j?h:c||f,k.onreadystatechange=k.onload=function(){!l&&g(k.readyState)&&(l=1,c(),k.onload=k.onreadystatechange=null)},m(function(){l||(l=1,c(1))},e),i?k.onload():n.parentNode.insertBefore(k,n)},a.yepnope.injectCss=function(a,c,d,e,g,i){var e=b.createElement("link"),j,c=i?h:c||f;e.href=a,e.rel="stylesheet",e.type="text/css";for(j in d)e.setAttribute(j,d[j]);g||(n.parentNode.insertBefore(e,n),m(c,0))}})(this,document);
+
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.biorxiv.org/sites/all/libraries/modernizr/modernizr.min.js?q5p1rr"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+yepnope({
+  test: Modernizr.matchmedia,
+  nope: '/sites/all/libraries/media-match/media.match.min.js'
+});
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.biorxiv.org/sites/default/files/advagg_js/js__yOhrJUBmMpN-jsuQlJYmS8ovkQU6I6KInr295HrSTb0__c--zHhbuOWmkdWkJYXiNWDmkpDRPesmbBjGlQcyqBOY__QJacVmveFyLIBSPkp21xL0ZvuDW9DMBrD2HB1P4Ry5I.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _prum=[['id', '52e95df3abe53d2e33000000'], ['mark', 'firstbyte',
+      (new Date()).getTime()]]; (function() {
+      var s=document.getElementsByTagName('script')[0],
+      p=document.createElement('script');
+      p.async='async'; p.src='//rum-static.pingdom.net/prum.min.js';s.parentNode.insertBefore(p,s);})();
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.biorxiv.org/sites/default/files/advagg_js/js___KyvuEvfmewWxdOLBXTYsSUo8Pfm_DijV6fWtGvSL_k__HSKkTgIr7nDcdvQYewipf6v4ak6ZLUOQkwPj44wKouA__QJacVmveFyLIBSPkp21xL0ZvuDW9DMBrD2HB1P4Ry5I.js"></script>
+<script type="text/javascript" async="async" src="https://scholar.google.com/scholar_js/casa.js"></script>
+<script type="text/javascript" src="https://www.biorxiv.org/sites/default/files/advagg_js/js__OGPr3wJNGw2BAY3Tj6TjIBwKmjQh5i-7muOaPrr0MFA__fCWiU_pDm6xztXUSccH7zrf5422-kgOkuLdWyafrH_0__QJacVmveFyLIBSPkp21xL0ZvuDW9DMBrD2HB1P4Ry5I.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js"></script>
+<script type="text/javascript" src="https://www.biorxiv.org/sites/default/files/advagg_js/js__hqoKSXYZqkcZkXP--ltzsy0Y3txW5TJBw6HT1khr30Y__6_HqNYoBVMxlkWZwdscqCLCtCxpOhl9_rIOpTDdaI0k__QJacVmveFyLIBSPkp21xL0ZvuDW9DMBrD2HB1P4Ry5I.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+if(typeof window.MathJax === "undefined") window.MathJax = { menuSettings: { zoom: "Click" } };
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.biorxiv.org/sites/default/files/advagg_js/js__lrItkPGmrIuH-E_sdUWEK2i9eTqLar16BAHVxNTWqrc__FhtnljBrjuzYWWrT_f4OYV4jtMBituhMpusb3h0m0rY__QJacVmveFyLIBSPkp21xL0ZvuDW9DMBrD2HB1P4Ry5I.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-45638026-1", {"cookieDomain":"auto"});ga("set", "page", location.pathname + location.search + location.hash);ga("send", "pageview");ga('create', 'UA-189672-38', 'auto', {'name': 'hwTracker'});
+ga('set', 'anonymizeIp', true);
+ga('hwTracker.send', 'pageview');
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.biorxiv.org/sites/default/files/advagg_js/js__1PtAOZ8x7l6QAi8D7X6Kj_Y7HcUOFzvWRvvYHUcCT98__U8IB92u_CnnGwJ-X_xaUa9lzsC8OzUfN0WkK2JQfirg__QJacVmveFyLIBSPkp21xL0ZvuDW9DMBrD2HB1P4Ry5I.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings,{"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"jcore_1","theme_token":"JazGzOgreb--9ao5Hky9jMuq-alqkavIsc39x0bgI_o","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.button.css":1,"misc\/ui\/jquery.ui.resizable.css":1,"misc\/ui\/jquery.ui.dialog.css":1,"misc\/ui\/jquery.ui.tooltip.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/highwire\/highwire\/highwire_draw\/css\/highwire-draw.css":1,"sites\/all\/modules\/highwire\/highwire\/highwire_folders\/highwire_folders.css":1,"sites\/all\/modules\/highwire\/highwire\/highwire_responsive\/css\/highwire-responsive.css":1,"sites\/all\/modules\/highwire\/highwire\/highwire_saved_searches\/highwire_saved_searches.css":1,"sites\/all\/modules\/highwire\/highwire\/highwire_user\/highwire_user.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/highwire\/highwire\/highwire.style.highwire.css":1,"sites\/all\/modules\/highwire\/highwire\/css\/nlm-elements.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/default\/modules\/biorxiv\/css\/biorxiv.css":1,"public:\/\/ctools\/css\/263bfdb18936424f0ade19d6bd885f37.css":1,"\/\/cdn.jsdelivr.net\/qtip2\/2.2.1\/jquery.qtip.min.css":1,"sites\/all\/modules\/contrib\/panels_ajax_tab\/css\/panels_ajax_tab.css":1,"sites\/all\/modules\/highwire\/highwire\/plugins\/content_types\/css\/highwire_corrections.css":1,"sites\/all\/modules\/highwire\/highwire\/highwire.style.markup.css":1,"sites\/all\/modules\/highwire\/highwire\/plugins\/layouts\/highwire_2col_stacked\/highwire-2col-stacked.css":1,"sites\/all\/modules\/contrib\/forward\/forward.css":1,"sites\/all\/modules\/highwire\/highwire\/plugins\/content_types\/css\/highwire_share_link.css":1,"sites\/all\/modules\/highwire\/highwire\/plugins\/content_types\/css\/highwire_copy_permalink.css":1,"sites\/all\/modules\/contrib\/panels\/plugins\/layouts\/flexible\/flexible.css":1,"sites\/all\/modules\/highwire\/highwire\/highwire_collection\/css\/highwire_subject_collection.css":1,"sites\/all\/modules\/highwire\/highwire\/css\/highwire.highwire-list-expand.css":1,"public:\/\/ctools\/css\/bab59090150caf0c64e27afa1b36eef1.css":1,"sites\/all\/modules\/contrib\/panels\/plugins\/layouts\/onecol\/onecol.css":1,"sites\/all\/modules\/contrib\/eu_cookie_compliance\/css\/eu_cookie_compliance.css":1,"sites\/all\/modules\/highwire\/highwire\/highwire_theme_tools\/css\/font-hwicons.css":1,"sites\/all\/modules\/highwire\/highwire\/highwire_theme_tools\/css\/font-hwicons-glyphs.css":1,"0":1,"sites\/all\/themes\/highwire\/jcore_1\/eu_cookie_compliance.css":1,"sites\/all\/themes\/highwire\/jcore_1\/css\/font-awesome-ie7.css":1,"sites\/all\/themes\/contrib\/omega\/alpha\/css\/alpha-reset.css":1,"sites\/all\/themes\/contrib\/omega\/alpha\/css\/alpha-mobile.css":1,"sites\/all\/themes\/contrib\/omega\/alpha\/css\/alpha-alpha.css":1,"sites\/all\/themes\/contrib\/omega\/omega\/css\/formalize.css":1,"sites\/all\/themes\/contrib\/omega\/omega\/css\/omega-text.css":1,"sites\/all\/themes\/contrib\/omega\/omega\/css\/omega-branding.css":1,"sites\/all\/themes\/contrib\/omega\/omega\/css\/omega-menu.css":1,"sites\/all\/themes\/contrib\/omega\/omega\/css\/omega-forms.css":1,"sites\/all\/modules\/highwire\/highwire\/css\/highwire-forms.css":1,"sites\/all\/themes\/highwire\/jcore_1\/css\/mobile-reset.css":1,"sites\/all\/themes\/highwire\/jcore_1\/css\/font-awesome.css":1,"sites\/all\/themes\/highwire\/jcore_1\/css\/forms.css":1,"sites\/all\/themes\/highwire\/jcore_1\/css\/global.css":1,"sites\/all\/themes\/highwire\/jcore_1\/css\/jquery-ui-elements.css":1,"sites\/all\/themes\/highwire\/jcore_1\/css\/text.css":1,"sites\/all\/themes\/highwire\/jcore_1\/css\/colors.css.less":1,"ie::normal::sites\/all\/themes\/highwire\/jcore_1\/css\/jcore-1-jcore-default.css":1,"ie::normal::sites\/all\/themes\/highwire\/jcore_1\/css\/jcore-1-jcore-default-normal.css":1,"ie::normal::sites\/all\/themes\/highwire\/jcore_1\/css\/grid\/jcore_default\/normal\/jcore-default-normal-30.css":1,"narrow::sites\/all\/themes\/highwire\/jcore_1\/css\/jcore-1-jcore-default.css":1,"narrow::sites\/all\/themes\/highwire\/jcore_1\/css\/jcore-1-jcore-default-narrow.css":1,"sites\/all\/themes\/highwire\/jcore_1\/css\/grid\/jcore_default\/narrow\/jcore-default-narrow-30.css":1,"normal::sites\/all\/themes\/highwire\/jcore_1\/css\/jcore-1-jcore-default.css":1,"normal::sites\/all\/themes\/highwire\/jcore_1\/css\/jcore-1-jcore-default-normal.css":1,"sites\/all\/themes\/highwire\/jcore_1\/css\/grid\/jcore_default\/normal\/jcore-default-normal-30.css":1,"wide::sites\/all\/themes\/highwire\/jcore_1\/css\/jcore-1-jcore-default.css":1,"wide::sites\/all\/themes\/highwire\/jcore_1\/css\/jcore-1-jcore-default-wide.css":1,"sites\/all\/themes\/highwire\/jcore_1\/css\/grid\/jcore_default\/wide\/jcore-default-wide-30.css":1,"sites\/default\/modules\/jnl_biorxiv_styles\/css\/biorxiv-styles.css.less":1,"https:\/\/d33xdlntwy0kbs.cloudfront.net\/cshl_custom.css":1},"js":{"sites\/all\/libraries\/enquire.js\/enquire.min.js":1,"sites\/all\/modules\/highwire\/highwire\/plugins\/content_types\/js\/highwire_panels_ajax_tab.js":1,"sites\/all\/modules\/highwire\/highwire\/plugins\/highwire_markup_process\/js\/highwire_openurl.js":1,"sites\/all\/modules\/highwire\/highwire\/plugins\/highwire_markup_process\/js\/highwire_google_scholar_sprinkle.js":1,"http:\/\/d33xdlntwy0kbs.cloudfront.net\/cshl_custom.js":1,"sites\/all\/modules\/contrib\/eu_cookie_compliance\/js\/eu_cookie_compliance.js":1,"sites\/default\/modules\/jnl_biorxiv_styles\/js\/adv-search-collection-toggle.js":1,"sites\/all\/libraries\/modernizr\/modernizr.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.button.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.mouse.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.draggable.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.position.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.resizable.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.dialog.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.tooltip.min.js":1,"sites\/all\/modules\/contrib\/eu_cookie_compliance\/js\/jquery.cookie-1.4.1.min.js":1,"sites\/all\/modules\/highwire\/highwire\/js\/highwire.equal-heights.js":1,"sites\/all\/modules\/highwire\/highwire\/js\/highwire.panels-ajax-tab.js":1,"sites\/default\/modules\/jnl_biorxiv_styles\/js\/biorxiv-scripts.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.js":1,"https:\/\/scholar.google.com\/scholar_js\/casa.js":1,"sites\/all\/modules\/highwire\/highwire\/highwire_log\/highwire_log.js":1,"sites\/all\/modules\/highwire\/highwire\/highwire_nps_survey\/js\/nps_survey.js":1,"sites\/all\/modules\/highwire\/highwire\/highwire_user\/js\/highwire_user_meta.js":1,"sites\/all\/modules\/contrib\/panels\/js\/panels.js":1,"\/\/cdn.jsdelivr.net\/qtip2\/2.2.1\/jquery.qtip.min.js":1,"sites\/all\/modules\/highwire\/highwire\/js\/highwire.article-citation-author-tooltip.js":1,"sites\/all\/modules\/contrib\/panels_ajax_tab\/js\/panels_ajax_tab.js":1,"sites\/all\/modules\/highwire\/highwire\/plugins\/highwire_markup_process\/js\/highwire_article_reference_popup.js":1,"sites\/all\/modules\/highwire\/highwire\/plugins\/highwire_markup_process\/js\/highwire_at_symbol.js":1,"sites\/default\/modules\/contrib\/disqus\/disqus.js":1,"misc\/textarea.js":1,"sites\/all\/modules\/highwire\/highwire\/plugins\/content_types\/js\/highwire_share_dialog.js":1,"sites\/all\/modules\/highwire\/highwire\/plugins\/content_types\/js\/clipboard.min.js":1,"sites\/all\/modules\/highwire\/highwire\/plugins\/content_types\/js\/highwire_clipboard.js":1,"sites\/all\/modules\/highwire\/highwire\/highwire_citation\/plugins\/content_types\/js\/highwire_citation_export.js":1,"sites\/all\/modules\/highwire\/highwire\/plugins\/content_types\/js\/minipanel_dialog_link.js":1,"sites\/all\/modules\/contrib\/service_links\/js\/twitter_button.js":1,"sites\/all\/modules\/contrib\/service_links\/js\/facebook_like.js":1,"sites\/all\/modules\/contrib\/service_links\/js\/google_plus_one.js":1,"sites\/all\/modules\/highwire\/highwire\/js\/highwire.highwire-list-expand.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"sites\/all\/themes\/highwire\/jcore_1\/js\/theme-scripts.js":1,"sites\/all\/themes\/contrib\/omega\/omega\/js\/jquery.formalize.js":1,"sites\/all\/themes\/contrib\/omega\/omega\/js\/omega-mediaqueries.js":1,"sites\/all\/themes\/contrib\/omega\/omega\/js\/omega-equalheights.js":1,"sites\/all\/modules\/highwire\/highwire\/highwire_responsive\/js\/highwire-mediaqueries.js":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"highwire":{"nid":"436683","apath":"\/biorxiv\/early\/2019\/03\/31\/593822.atom","pisa":"biorxiv;593822v1","ac":{"\/biorxiv\/early\/2019\/03\/31\/593822.atom":{"access":{"full":true},"pisa_id":"","apath":"\/biorxiv\/early\/2019\/03\/31\/593822.atom","jcode":"biorxiv"}},"processed":["highwire_math"],"markup":[{"requested":"abstract","variant":"abstract","view":"abstract","pisa":"biorxiv;593822v1"}],"modal_window_width":"560","share_modal_width":"560","share_modal_title":"Share this Article"},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"instances":"{\u0022highwire_abstract_tooltip\u0022:{\u0022content\u0022:{\u0022text\u0022:\u0022\u0022},\u0022style\u0022:{\u0022tip\u0022:{\u0022width\u0022:20,\u0022height\u0022:20,\u0022border\u0022:1,\u0022offset\u0022:0,\u0022corner\u0022:true},\u0022classes\u0022:\u0022qtip-custom hw-tooltip hw-abstract-tooltip qtip-shadow qtip-rounded\u0022,\u0022classes_custom\u0022:\u0022hw-tooltip hw-abstract-tooltip\u0022},\u0022position\u0022:{\u0022at\u0022:\u0022right center\u0022,\u0022my\u0022:\u0022left center\u0022,\u0022viewport\u0022:true,\u0022adjust\u0022:{\u0022method\u0022:\u0022shift\u0022}},\u0022show\u0022:{\u0022event\u0022:\u0022mouseenter click \u0022,\u0022solo\u0022:true},\u0022hide\u0022:{\u0022event\u0022:\u0022mouseleave \u0022,\u0022fixed\u0022:1,\u0022delay\u0022:\u0022100\u0022}},\u0022highwire_author_tooltip\u0022:{\u0022content\u0022:{\u0022text\u0022:\u0022\u0022},\u0022style\u0022:{\u0022tip\u0022:{\u0022width\u0022:15,\u0022height\u0022:15,\u0022border\u0022:1,\u0022offset\u0022:0,\u0022corner\u0022:true},\u0022classes\u0022:\u0022qtip-custom hw-tooltip hw-author-tooltip qtip-shadow qtip-rounded\u0022,\u0022classes_custom\u0022:\u0022hw-tooltip hw-author-tooltip\u0022},\u0022position\u0022:{\u0022at\u0022:\u0022top center\u0022,\u0022my\u0022:\u0022bottom center\u0022,\u0022viewport\u0022:true,\u0022adjust\u0022:{\u0022method\u0022:\u0022\u0022}},\u0022show\u0022:{\u0022event\u0022:\u0022mouseenter \u0022,\u0022solo\u0022:true},\u0022hide\u0022:{\u0022event\u0022:\u0022mouseleave \u0022,\u0022fixed\u0022:1,\u0022delay\u0022:\u0022100\u0022}},\u0022highwire_reflinks_tooltip\u0022:{\u0022content\u0022:{\u0022text\u0022:\u0022\u0022},\u0022style\u0022:{\u0022tip\u0022:{\u0022width\u0022:15,\u0022height\u0022:15,\u0022border\u0022:1,\u0022mimic\u0022:\u0022top center\u0022,\u0022offset\u0022:0,\u0022corner\u0022:true},\u0022classes\u0022:\u0022qtip-custom hw-tooltip hw-ref-link-tooltip qtip-shadow qtip-rounded\u0022,\u0022classes_custom\u0022:\u0022hw-tooltip hw-ref-link-tooltip\u0022},\u0022position\u0022:{\u0022at\u0022:\u0022bottom left\u0022,\u0022my\u0022:\u0022top left\u0022,\u0022viewport\u0022:true,\u0022adjust\u0022:{\u0022method\u0022:\u0022flip\u0022}},\u0022show\u0022:{\u0022event\u0022:\u0022mouseenter \u0022,\u0022solo\u0022:true},\u0022hide\u0022:{\u0022event\u0022:\u0022mouseleave \u0022,\u0022fixed\u0022:1,\u0022delay\u0022:\u0022100\u0022}}}","qtipDebug":"{\u0022leaveElement\u0022:0}","panel_ajax_tab":{"path":"sites\/all\/modules\/contrib\/panels_ajax_tab"},"disqus":{"domain":"biorxivstage","url":"https:\/\/www.biorxiv.org\/content\/10.1101\/593822v1","title":"Catching the big picture of the Mediterranean Sea biodiversity with an end-to-end model of climate and fishing impacts","identifier":"node\/436683"},"panels_ajax_pane":{"new-41":"{\u0022encrypted\u0022:\u0022{\\\u0022encrypted\\\u0022:\\\u0022qgssQbsRMdRYFp2ixzSoZXOlAd2BiTYEkfWrtCSshEYpL85gdiqNUONjaoG2ahfxZjmfbbklRNonCG33x1acZspJdRghfTtqgJRgNHpCVdENV7tXGBzVgWOOEa5mAMMOSOFBD+W+\\\\\\\/G+FQVn8r5KzQim3fS2aAhw1+2OtKUgfDpWV+qWwAiiHPC3mh4LzAr77USOv5zFoVcoPlHZf1tCroH6eOYlU\\\\\\\/ZzHxQ9uIzrtychv0\\\\\\\/aYzNvAxKUAAu2TjmH+LrFyezV0zaiTMfwayxzR6OmATV1CRKSYWGQF2VrT7kL0lpkENdmohTiMG9UcukypgaphbFhLz4dcELezcL3QnpNUXz5ul78vqV+TG0+x4hAmC4YdC1c+9\\\\\\\/euVLPutO0T2tszSSOPoYHkZzR5k+iD7Q0uuVvO1MXGmWDaTLrtXedBSnUtg\\\\\\\/aznNo1V+gzAVTaLZ3ficIbPI0L\\\\\\\/wlqRb2tyHJnRE\\\\\\\/tn2\\\\\\\/AWR78olcE3dlkdda77NIwjPhd9x70gJZ7DKbv5Z2cPuq5ee0Oh+s4gDQZaz\\\\\\\/a9maj1MFp5OmKsX8EK2ZJSMAJY9Dq6kiLtQ1k66HRltmicjLcyG5OIWzharxPIodvsSZ+QL99D4dVti4dGjXBOe6kO9Srhk3OOeo4xnULEnuiM55VVrrHMeTSlFgLn7yzfGRVbAiidZNe4IakEbviWw2zVRYCO2LeuXjpXluTNuaNHN24DgCvFt3J6gEpZoharHMyxRDEOYFqeInH6A7DbVnBuejCPJXM+fXALnDlSai19VX1C8R6EQS8zI43Z0B2tTtBJ4TUt+GuDA6U\\\\\\\/TLXiIbnxE8XjbMlHd2L2UVjF3eJ3nJAgx7vvFiz9POm9SMmeq\\\\\\\/gvB2s5yGraXyEpfwYvM1V8FkN+DH9dcnpRYMRm\\\\\\\/VBmg2mwUY6JAYD+rA93NgfiQ3yJmaSALMlaiQDJZ6BTC9Ea+OTzY50Tr+JeczPgIFgUI3EGuh4EJs05YC4bCNPSGeGIRQH41fjd31w4IpMdu2JRkzQw50X9+63FQ2hS6B0iIkFDV7+Uce64T3sJsODfF0axe1XaEpkdR\\\\\\\/Pt\\\\\\\/8m9Tw\\\\\\\/6gh2uJfs9Qyc2GdoG+xLbgAX4vqsOdV4IACg5AwJN\\\\\\\/Q6E6MTAgfz6VHaHs0AubeFyS9J3wCarrmGvph5yT4mI0ChFChTCdvw7UIxcKgkvkUzuBaGsuWre6o7Y6Vl9rlTvYhH9HGAHAC+2lTiWOXz5dP948ES7JGF3I4mxBJx0AL8V+DVpPIMhqd6mrF5k26hcgsLPWhGisBq\\\u0022,\\\u0022iv\\\u0022:\\\u0022ASbwyWvinE7DrfZgGhrgdA==\\\u0022,\\\u0022salt\\\u0022:\\\u0022f9d8845712f72c9fee5db7d9ff111eab\\\u0022}\u0022,\u0022hmac\u0022:\u00221001a053090a0a90abc1cc3aa52b522cd0eba756cb0ee21e915521aa4137627b\u0022}"},"urlIsAjaxTrusted":{"\/content\/10.1101\/593822v1":true},"ws_fl":{"width":100,"height":21},"ws_gpo":{"size":"","annotation":"","lang":"","callback":"","width":300},"color":{"logo":"https:\/\/www.biorxiv.org\/sites\/default\/files\/bioRxiv_article.jpg"},"highwire_list_expand":{"is_collapsed":"1"},"highwireResponsive":{"enquire_enabled":1,"breakpoints_configured":1,"breakpoints":{"zero":"all and (min-width: 0px)","xsmall":"all and (min-width: 380px)","narrow":"all and (min-width: 768px) and (min-device-width: 768px), (max-device-width: 800px) and (min-width: 768px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)","wide":"all and (min-width: 1220px)"}},"eu_cookie_compliance":{"popup_enabled":1,"popup_agreed_enabled":0,"popup_hide_agreed":0,"popup_clicking_confirmation":1,"popup_scrolling_confirmation":false,"popup_html_info":"\u003Cdiv\u003E\n  \u003Cdiv class =\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Cp\u003EWe use cookies on this site to enhance your user experience. By clicking any link on this page you are giving your consent for us to set cookies.\u003C\/p\u003E\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-default-button\u0022\u003EContinue\u003C\/button\u003E\n                    \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EFind out more\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv\u003E\n  \u003Cdiv class =\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n          \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-default-button\u0022\u003EContinue\u003C\/button\u003E\n                    \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EFind out more\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","mobile_breakpoint":"768","popup_html_agreed":"\u003Cdiv\u003E\n  \u003Cdiv class=\u0022popup-content agreed\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Ch2\u003EThank you for accepting cookies\u003C\/h2\u003E\u003Cp\u003EYou can now hide this message or find out more about cookies.\u003C\/p\u003E    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022hide-popup-button eu-cookie-compliance-hide-button\u0022\u003EHide\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button-thank-you\u0022 \u003EMore info\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","popup_use_bare_css":false,"popup_height":"auto","popup_width":"100%","popup_delay":1000,"popup_link":"\/help\/cookie-policy","popup_link_new_window":1,"popup_position":null,"popup_language":"en","store_consent":false,"better_support_for_screen_readers":0,"reload_page":0,"domain":"","popup_eu_only_js":0,"cookie_lifetime":"365","cookie_session":false,"disagree_do_not_show_popup":0,"method":"default","whitelisted_cookies":"","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003EPrivacy settings\u003C\/button\u003E\n\u003Cdiv class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Cp\u003E\u0026lt;h2\u0026gt;We use cookies on this site to enhance your user experience\u0026lt;\/h2\u0026gt;\u0026lt;p\u0026gt;You have given your consent for us to set cookies.\u0026lt;\/p\u0026gt;\u003C\/p\u003E\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button\u0022\u003EWithdraw consent\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","withdraw_enabled":false},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1,"trackUrlFragments":1},"jnl_biorxiv_styles":{"defaultJCode":"biorxiv"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal","wide"],"queries":{"narrow":"all and (min-width: 768px) and (min-device-width: 768px), (max-device-width: 800px) and (min-width: 768px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)","wide":"all and (min-width: 1220px)"}}}});
+//--><!]]>
+</script>
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  </head>
+  <body class="html not-front not-logged-in page-node page-node- page-node-436683 node-type-highwire-article context-content hw-default-jcode-biorxiv hw-article-type-article hw-article-category-new-results">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M677548" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0];var j=d.createElement(s);var dl=l!='dataLayer'?'&l='+l:'';j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;j.type='text/javascript';j.async=true;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-M677548');</script>
+<!-- End Google Tag Manager -->
+    <div id="skip-link">
+      <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+    </div>
+        <div class="page clearfix page-box-shadows footer-borders panels-page panels-layout-jcore_2col" id="page">
+      <header id="section-header" class="section section-header">
+    
+  <div id="zone-branding" class="zone zone-branding clearfix print-display-block container-30">
+    <div class="grid-15 prefix-1 region region-branding print-display-block" id="region-branding">
+  <div class="region-inner region-branding-inner">
+        <div class="branding-data clearfix">
+            <div class="logo-img">
+        <a href="/" rel="home" class="" data-icon-position="" data-hide-link-title="0"><img alt="bioRxiv" src="https://www.biorxiv.org/sites/default/files/bioRxiv_article.jpg" /></a>      </div>
+                </div>
+          </div>
+</div><div class="grid-11 suffix-1 region region-branding-second print-hidden" id="region-branding-second">
+  <div class="region-inner region-branding-second-inner">
+    <div class="block block-system block-menu block-main-menu block-system-main-menu odd block-without-title" id="block-system-main-menu">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <nav class="menubar-nav"><ul class="menu" role="menu"><li class="first leaf" role="menuitem"><a href="/" title="" class="" data-icon-position="" data-hide-link-title="0">Home</a></li>
+<li class="leaf" role="menuitem"><a href="/about-biorxiv" class="" data-icon-position="" data-hide-link-title="0">About</a></li>
+<li class="leaf" role="menuitem"><a href="/submit-a-manuscript" class="" data-icon-position="" data-hide-link-title="0">Submit</a></li>
+<li class="last leaf" role="menuitem"><a href="/content/alertsrss" title="" class="" data-icon-position="" data-hide-link-title="0">ALERTS / RSS</a></li>
+</ul></nav>    </div>
+  </div>
+</div><div class="block block-panels-mini block-biorxiv-search-box block-panels-mini-biorxiv-search-box even block-without-title" id="block-panels-mini-biorxiv-search-box">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="panel-display panel-1col clearfix" id="mini-panel-biorxiv_search_box">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-highwire-seach-quicksearch" >
+  
+      
+  
+  <div class="pane-content">
+    <form class="highwire-quicksearch button-style-mini button-style-mini" action="/content/10.1101/593822v1" method="post" id="highwire-search-quicksearch-form-0" accept-charset="UTF-8"><div><div class="form-item form-item-label-invisible form-type-textfield form-item-keywords">
+  <label class="element-invisible" for="edit-keywords">Search for this keyword </label>
+ <input placeholder="Search" type="text" id="edit-keywords" name="keywords" value="" size="60" maxlength="128" class="form-text" />
+</div>
+<div class="button-wrapper button-mini"><i class="icon-search"></i><input data-icon-only="1" data-font-icon="icon-search" data-icon-position="after" type="submit" id="edit-submit--2" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-jSPqT_l2_V6E4SSTjYLQb3f5OEg0YNnuAZF5onvJIBg" />
+<input type="hidden" name="form_id" value="highwire_search_quicksearch_form_0" />
+</div></form>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-custom pane-2 advanced-search-link" >
+  
+      
+  
+  <div class="pane-content">
+    <a href="/search">Advanced Search</a>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>  </div>
+</div>  </div>
+  
+  <div id="zone-header" class="zone zone-header clearfix container-30">
+  	      </div>
+</header>    
+      <section id="section-content" class="section section-content">
+    
+  <div id="zone-content" class="zone zone-content clearfix container-30">    
+        
+    <div class="grid-28 suffix-1 prefix-1 region region-content" id="region-content">
+  <div class="region-inner region-content-inner">
+    <a id="main-content"></a>
+                        <div class="block block-system block-main block-system-main odd block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="panel-display panels-960-layout jcore-2col-layout" >
+	  
+  <div class="panel-row-wrapper clearfix">
+		
+		<div class="main-content-wrapper grid-17 suffix-1 alpha">
+			<div class="panel-panel panel-region-content">
+			  <div class="inside"><div class="panel-pane pane-highwire-article-citation" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="highwire-article-citation highwire-citation-type-highwire-article" data-node-nid="436683" id="node436683" data-pisa="biorxiv;593822v1" data-pisa-master="biorxiv;593822" data-apath="/biorxiv/early/2019/03/31/593822.atom" data-hw-author-tooltip-instance="highwire_author_tooltip"><div  class="highwire-cite highwire-cite-highwire-article highwire-citation-biorxiv-article-top clearfix has-author-tooltip" >
+
+      <span class="biorxiv-article-type">
+        New Results    </span>
+  
+        <h1 class="highwire-cite-title" id="page-title">Catching the big picture of the Mediterranean Sea biodiversity with an end-to-end model of climate and fishing impacts</h1>  
+      <div  class="highwire-cite-authors" ><span  class="highwire-citation-authors"><span class="highwire-citation-author first" data-delta="0"><span class="nlm-given-names">Fabien</span> <span class="nlm-surname">Moullec</span></span>, <span class="highwire-citation-author" data-delta="1"><span class="nlm-given-names">Laure</span> <span class="nlm-surname">Velez</span></span>, <span class="highwire-citation-author" data-delta="2"><span class="nlm-given-names">Philippe</span> <span class="nlm-surname">Verley</span></span>, <span class="highwire-citation-author" data-delta="3"><span class="nlm-given-names">Nicolas</span> <span class="nlm-surname">Barrier</span></span>, <span class="highwire-citation-author" data-delta="4"><span class="nlm-given-names">Caroline</span> <span class="nlm-surname">Ulses</span></span>, <span class="highwire-citation-author" data-delta="5"><span class="nlm-given-names">Pierluigi</span> <span class="nlm-surname">Carbonara</span></span>, <span class="highwire-citation-author" data-delta="6"><span class="nlm-given-names">Antonio</span> <span class="nlm-surname">Esteban</span></span>, <span class="highwire-citation-author" data-delta="7"><span class="nlm-given-names">Cristina</span> <span class="nlm-surname">Follesa</span></span>, <span class="highwire-citation-author" data-delta="8"><span class="nlm-given-names">Michele</span> <span class="nlm-surname">Gristina</span></span>, <span class="highwire-citation-author" data-delta="9"><span class="nlm-given-names">Angélique</span> <span class="nlm-surname">Jadaud</span></span>, <span class="highwire-citation-author" data-delta="10"><span class="nlm-given-names">Alessandro</span> <span class="nlm-surname">Ligas</span></span>, <span class="highwire-citation-author" data-delta="11"><span class="nlm-given-names">Eduardo</span> <span class="nlm-surname">López Díaz</span></span>, <span class="highwire-citation-author" data-delta="12"><span class="nlm-given-names">Porzia</span> <span class="nlm-surname">Maiorano</span></span>, <span class="highwire-citation-author" data-delta="13"><span class="nlm-given-names">Panagiota</span> <span class="nlm-surname">Peristeraki</span></span>, <span class="highwire-citation-author" data-delta="14"><span class="nlm-given-names">Maria Teresa</span> <span class="nlm-surname">Spedicato</span></span>, <span class="highwire-citation-author" data-delta="15"><span class="nlm-given-names">Ioannis</span> <span class="nlm-surname">Thasitis</span></span>, <span class="highwire-citation-author" data-delta="16"><span class="nlm-given-names">Maria</span> <span class="nlm-surname">Valls</span></span>, <span class="highwire-citation-author" data-delta="17"><span class="nlm-given-names">François</span> <span class="nlm-surname">Guilhaumon</span></span>, <span class="highwire-citation-author" data-delta="18"><span class="nlm-given-names">Yunne-Jai</span> <span class="nlm-surname">Shin</span></span></span></div>
+  
+      <div  class="highwire-cite-metadata" ><span  class="highwire-cite-metadata-doi highwire-cite-metadata"><span class="label">doi:</span> https://doi.org/10.1101/593822 </span></div>
+  
+  
+  </div>
+<div id="hw-article-author-popups-node436683" style="display: none;"><div class="author-tooltip-0"><div class="author-tooltip-name">Fabien Moullec </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-institution'>MARBEC, Université de Montpellier, IRD, CNRS</span>, Ifremer, Montpellier, <span class='nlm-country'>France</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Fabien%2BMoullec%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Moullec%20F&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="/search/author1%3AFabien%2BMoullec%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-corresp-email-link last"><span>For correspondence: 
+<a href="mailto:fabien.moullec@ird.fr" class="" data-icon-position="" data-hide-link-title="0">fabien.moullec@ird.fr</a></span></li></ul></div><div class="author-tooltip-1"><div class="author-tooltip-name">Laure Velez </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-institution'>MARBEC, Université de Montpellier, IRD, CNRS</span>, Ifremer, Montpellier, <span class='nlm-country'>France</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Laure%2BVelez%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Velez%20L&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3ALaure%2BVelez%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-2"><div class="author-tooltip-name">Philippe Verley </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-institution'>IRD, CIRAD, UMR AMAP, Boulevard de la Lironde</span>, 34398 Montpellier Cedex 5, <span class='nlm-country'>France</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Philippe%2BVerley%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Verley%20P&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3APhilippe%2BVerley%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-3"><div class="author-tooltip-name">Nicolas Barrier </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-institution'>MARBEC, Université de Montpellier, IRD, CNRS</span>, Ifremer, Sète, <span class='nlm-country'>France</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Nicolas%2BBarrier%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Barrier%20N&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3ANicolas%2BBarrier%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-4"><div class="author-tooltip-name">Caroline Ulses </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-institution'>Laboratoire d’Aérologie, Université de Toulouse, CNRS, UPS</span>, Toulouse, <span class='nlm-country'>France</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Caroline%2BUlses%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Ulses%20C&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3ACaroline%2BUlses%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-5"><div class="author-tooltip-name">Pierluigi Carbonara </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-institution'>COISPA Tecnologia and Ricerca, Stazione Sperimentale per lo Studio delle Risorse del Mare</span>, Bari, <span class='nlm-country'>Italy</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Pierluigi%2BCarbonara%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Carbonara%20P&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3APierluigi%2BCarbonara%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-6"><div class="author-tooltip-name">Antonio Esteban </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-institution'>Instituto Español de Oceanografía (IEO), Centro Oceanográfico de Murcia</span>, Murcia, <span class='nlm-country'>Spain</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Antonio%2BEsteban%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Esteban%20A&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3AAntonio%2BEsteban%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-7"><div class="author-tooltip-name">Cristina Follesa </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-institution'>Dipartimento di Biologia Animale ed Ecologia, Universita di Cagliari</span>, Cagliari, <span class='nlm-country'>Italy</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Cristina%2BFollesa%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Follesa%20C&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3ACristina%2BFollesa%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-8"><div class="author-tooltip-name">Michele Gristina </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-institution'>Institute for the Coastal Marine Environment (CNR)</span>, Mazara del Vallo, <span class='nlm-country'>Italy</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Michele%2BGristina%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Gristina%20M&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3AMichele%2BGristina%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-9"><div class="author-tooltip-name">Angélique Jadaud </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-institution'>MARBEC, Université de Montpellier, IRD, CNRS</span>, Ifremer, Sète, <span class='nlm-country'>France</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Ang%C3%A9lique%2BJadaud%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Jadaud%20A&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3AAng%25C3%25A9lique%2BJadaud%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-10"><div class="author-tooltip-name">Alessandro Ligas </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-institution'>Consorzio per il Centro Interuniversitario di Biologia Marina ed Ecologia Applicata ‘G. Bacci’</span>, viale N. Sauro 4, I-57128 Livorno, <span class='nlm-country'>Italy</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Alessandro%2BLigas%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Ligas%20A&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3AAlessandro%2BLigas%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-11"><div class="author-tooltip-name">Eduardo López Díaz </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-institution'>Instituto Español de Oceanografía (IEO), Centro Oceanográfico de Málaga</span>, Fuengirola, Málaga, <span class='nlm-country'>Spain</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Eduardo%2BL%C3%B3pez%2BD%C3%ADaz%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=L%C3%B3pez%20D%C3%ADaz%20E&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3AEduardo%2BL%25C3%25B3pez%2BD%25C3%25ADaz%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-12"><div class="author-tooltip-name">Porzia Maiorano </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-institution'>Department of Biology, University of Bari</span>, Bari, <span class='nlm-country'>Italy</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Porzia%2BMaiorano%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Maiorano%20P&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3APorzia%2BMaiorano%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-13"><div class="author-tooltip-name">Panagiota Peristeraki </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-institution'>Hellenic Center for Marine Research</span>, Iraklion, Crete, <span class='nlm-country'>Greece</span></div><div class='author-affiliation'><span class='nlm-institution'>University of Crete, Biology Department</span>, Stavrakia, Heraklion, Crete</div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Panagiota%2BPeristeraki%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Peristeraki%20P&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3APanagiota%2BPeristeraki%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-14"><div class="author-tooltip-name">Maria Teresa Spedicato </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-institution'>COISPA Tecnologia and Ricerca, Stazione Sperimentale per lo Studio delle Risorse del Mare</span>, Bari, <span class='nlm-country'>Italy</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Maria%2BTeresa%2BSpedicato%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Spedicato%20MT&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3AMaria%2BTeresa%2BSpedicato%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-15"><div class="author-tooltip-name">Ioannis Thasitis </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-institution'>Department of Fisheries and Marine Research, Ministry of Agriculture, Natural Resources and Environment</span>, Nicosia, <span class='nlm-country'>Cyprus</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Ioannis%2BThasitis%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Thasitis%20I&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3AIoannis%2BThasitis%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-16"><div class="author-tooltip-name">Maria Valls </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-institution'>Instituto Español de Oceanografía (IEO), Centre Oceanográfic de les Balears s/n</span>, 07015 Palma, <span class='nlm-country'>Spain</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Maria%2BValls%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Valls%20M&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3AMaria%2BValls%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-17"><div class="author-tooltip-name">François Guilhaumon </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-institution'>MARBEC, Université de Montpellier, IRD, CNRS</span>, Ifremer, Montpellier, <span class='nlm-country'>France</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Fran%C3%A7ois%2BGuilhaumon%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Guilhaumon%20F&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3AFran%25C3%25A7ois%2BGuilhaumon%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-18"><div class="author-tooltip-name">Yunne-Jai Shin </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-institution'>MARBEC, Université de Montpellier, IRD, CNRS</span>, Ifremer, Montpellier, <span class='nlm-country'>France</span></div><div class='author-affiliation'><span class='nlm-institution'>Marine Research (MA-RE) Institute and Department of Biological Sciences, University of Cape Town</span>, Private Bag X3, Rondebosch 7701, <span class='nlm-country'>South Africa</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Yunne-Jai%2BShin%2B" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Shin%20Y&amp;link_type=AUTHORSEARCH" target="_blank" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3AYunne-Jai%2BShin%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-panel-tabs pane-panels-ajax-tab-tabs" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="item-list"><ul class="tabs inline panels-ajax-tab"><li class="first"><a href="/content/10.1101/593822v1" class="panels-ajax-tab-tab" data-panel-name="biorxiv_tab_art" data-target-id="highwire_article_tabs" data-entity-context="node:436683" data-trigger="" data-url-enabled="1">Abstract</a><a href="/panels_ajax_tab/biorxiv_tab_art/node:436683/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li><a href="/content/10.1101/593822v1.full-text" class="panels-ajax-tab-tab" data-panel-name="article_tab_full_text" data-target-id="highwire_article_tabs" data-entity-context="node:436683" data-trigger="full-text" data-url-enabled="1">Full Text</a><a href="/panels_ajax_tab/article_tab_full_text/node:436683/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li><a href="/content/10.1101/593822v1.article-info" class="panels-ajax-tab-tab" data-panel-name="biorxiv_tab_info" data-target-id="highwire_article_tabs" data-entity-context="node:436683" data-trigger="article-info" data-url-enabled="1">Info/History</a><a href="/panels_ajax_tab/biorxiv_tab_info/node:436683/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li><a href="/content/10.1101/593822v1.article-metrics" class="panels-ajax-tab-tab" data-panel-name="article_tab_metrics" data-target-id="highwire_article_tabs" data-entity-context="node:436683" data-trigger="article-metrics" data-url-enabled="1">Metrics</a><a href="/panels_ajax_tab/article_tab_metrics/node:436683/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li><a href="/content/10.1101/593822v1.supplementary-material" class="panels-ajax-tab-tab" data-panel-name="biorxiv_tab_data" data-target-id="highwire_article_tabs" data-entity-context="node:436683" data-trigger="supplementary-material" data-url-enabled="1">Supplementary material</a><a href="/panels_ajax_tab/biorxiv_tab_data/node:436683/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li class="last"><a href="/content/10.1101/593822v1.full.pdf+html" class="panels-ajax-tab-tab" data-panel-name="biorxiv_tab_pdf" data-target-id="highwire_article_tabs" data-entity-context="node:436683" data-trigger="full.pdf+html" data-url-enabled="1"><i class="icon-file-alt"></i> Preview PDF</a><a href="/panels_ajax_tab/biorxiv_tab_pdf/node:436683/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li></ul></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-panel-tabs-container" >
+  
+      
+  
+  <div class="pane-content">
+    <div data-panels-ajax-tab-preloaded="biorxiv_tab_art" id="panels-ajax-tab-container-highwire_article_tabs" class="panels-ajax-tab-container"><div class="panels-ajax-tab-loading" style ="display:none"><img class="loading" src="https://www.biorxiv.org/sites/all/modules/contrib/panels_ajax_tab/images/loading.gif" alt="Loading" title="Loading" /></div><div class="panels-ajax-tab-wrap-biorxiv_tab_art"><div class="panel-display panel-1col clearfix" >
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-highwire-markup" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="highwire-markup"><div xmlns="http://www.w3.org/1999/xhtml" id="content-block-markup" data-highwire-cite-ref-tooltip-instance="highwire_reflinks_tooltip" xmlns:xhtml="http://www.w3.org/1999/xhtml"><div class="article abstract-view "><span class="highwire-journal-article-marker-start"></span><div class="section abstract" id="abstract-1"><h2 class="">Abstract</h2><p id="p-3">The Mediterranean Sea is among the main hotspots of marine biodiversity in the world. Under combined pressures of fishing activities and climate change it has also become a hotspot of global change, with increased concern about the worsening status of marine exploited species. More integrated modelling approaches are needed to anticipate global change impacts in the Mediterranean Sea, in order to help decision makers prioritizing management actions and strategies, mitigating impacts and adapting to changes. Our challenge was to develop a holistic model of the marine biodiversity in the Mediterranean Sea with an explicit representation of the spatial multispecies dynamics of exploited resources under the combined influence of climate variability and fishing pressure. An individual-based ecosystem model OSMOSE (Object-oriented Simulator of Marine ecOSystEms), including 100 marine species (fish, cephalopods and crustaceans) and representing about 95 % of the total declared catches, has been implemented for the first time at a high spatial resolution (400 km<sup>2</sup>) and at a large spatial scale (whole Mediterranean basin). The coupling of OSMOSE to the NEMOMED 12 physical model, and to the Eco3M-S biogeochemical and low trophic level model has been achieved to build the OSMOSE-MED end-to-end model. We fitted OSMOSE-MED to observed and estimated data of biomass and commercial catches using a likelihood approach and an evolutionary optimization algorithm. The outputs of OSMOSE-MED were then verified against observed biomass and catches, and confronted to independent datasets (MEDITS data, diet compositions and trophic levels). Although some improvements are suggested for future developments, the model results at different hierarchical levels, from individuals up to the ecosystem scale, were consistent with current knowledge and observations on the structure, the functioning and the dynamics of the ecosystems in the Mediterranean Sea. All the modelling steps, from the comprehensive representation of key ecological processes and feedbacks, the careful parameterization of the model, the confrontation to observed data, and the positive outcome from the validation process, allowed to strengthen the degree of realism of OSMOSE-MED and its relevance as an impact model to explore the futures of marine biodiversity under scenarios of global change, and as a tool to support the implementation of ecosystem-based fisheries management in the Mediterranean Sea.</p></div><span class="highwire-journal-article-marker-end"></span></div><span id="related-urls"></span></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-biorxiv-copyright" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="field field-name-field-highwire-copyright field-type-text field-label-inline clearfix"><div class="field-label">Copyright&nbsp;</div><div class="field-items"><div class="field-item even">The copyright holder for this preprint is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity.<span class="license-type-none"> All rights reserved. No reuse allowed without permission.</span></div></div></div>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-disqus-comment" >
+  
+      
+  
+  <div class="pane-content">
+    <div id="disqus_thread"><noscript><p><a href="http://biorxivstage.disqus.com/?url=https%3A%2F%2Fwww.biorxiv.org%2Fcontent%2F10.1101%2F593822v1" class="" data-icon-position="" data-hide-link-title="0">View the discussion thread.</a></p></noscript></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-back-to-top" >
+  
+      
+  
+  <div class="pane-content">
+    <a href="#page" class="back-to-top" data-icon-position="" data-hide-link-title="0"><i class="icon-chevron-up"></i> Back to top</a>  </div>
+
+  
+  </div>
+</div>
+			</div>
+		</div>
+		
+		<div class="sidebar-right-wrapper grid-10 omega">
+			<div class="panel-panel panel-region-sidebar-right">
+			  <div class="inside"><div class="panel-pane pane-highwire-node-pager" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="pager highwire-pager pager-mini clearfix highwire-node-pager highwire-article-pager"><span class="pager-prev"><a href="/content/10.1101/593665v1" title="Stress-induced neuronal hypertrophy decreases the intrinsic excitability in stress habituation" rel="prev" class="pager-link-prev link-icon"><i class="icon-circle-arrow-left"></i> <span class="title">Previous</span></a></span><span class="pager-next"><a href="/content/10.1101/283929v2-0" title="Cell-type heterogeneity in adipose tissue is associated with complex traits and reveals disease-relevant cell-specific eQTLs" rel="next" class="pager-link-next link-icon-right link-icon"><span class="title">Next</span> <i class="icon-circle-arrow-right"></i></a></span></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-custom pane-1" >
+  
+      
+  
+  <div class="pane-content">
+    Posted&nbsp;March 31, 2019.  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-biorxiv-art-tools" >
+  
+      
+  
+  <div class="pane-content">
+    <div id="mini-panel-biorxiv_art_tools" class="highwire-2col-stacked panel-display">
+	  
+  <div class="panel-row-wrapper clearfix">
+		<div class="content-left-wrapper content-column">
+          <div class="panel-panel panel-region-content-left">
+            <div class="inside"><div class="panel-pane pane-highwire-variant-link" >
+  
+      
+  
+  <div class="pane-content">
+    <a href="/content/10.1101/593822v1.full.pdf" target="_self" class="article-dl-pdf-link link-icon"><i class="icon-external-link-sign"></i> <span class="title">Download PDF</span></a>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-biorxiv-supplementary-fragment" >
+  
+      
+  
+  <div class="pane-content">
+    <p><a href="/content/10.1101/593822v1.supplementary-material"><i class="icon-file"></i>Supplementary Material </a></p>  </div>
+
+  
+  </div>
+</div>
+          </div>
+        </div>
+        
+        <div class="content-right-wrapper content-column">
+          <div class="panel-panel panel-region-content-right">
+            <div class="inside"><div class="panel-pane pane-minipanel-dialog-link pane-biorxiv-art-email" >
+  
+      
+  
+  <div class="pane-content">
+    <div class='minipanel-dialog-wrapper'><div class='minipanel-dialog-link-link'><a href="/" oncontextmenu="javascript: return false;" class="minipanel-dialog-link-trigger" title="Email this Article" data-icon-position="" data-hide-link-title="0"><i class = 'icon-envelope'></i> Email</a></div><div class='minipanel-dialog-link-mini' style='display:none'><div class="panel-display panel-1col clearfix" id="mini-panel-biorxiv_art_email">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-block pane-forward-form pane-forward" >
+  
+      
+  
+  <div class="pane-content">
+    <form action="/content/10.1101/593822v1" method="post" id="forward-form" accept-charset="UTF-8"><div><div id="edit-instructions" class="form-item form-item-label-before form-type-item">
+ <p>Thank you for your interest in spreading the word about bioRxiv.</p><p>NOTE: Your email address is requested solely to identify you as the sender of this article.</p>
+</div>
+<div class="form-item form-item-label-before form-type-textfield form-item-email">
+  <label for="edit-email">Your Email <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-email" name="email" value="" size="58" maxlength="256" class="form-text required" />
+</div>
+<div class="form-item form-item-label-before form-type-textfield form-item-name">
+  <label for="edit-name">Your Name <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-name" name="name" value="" size="58" maxlength="256" class="form-text required" />
+</div>
+<div class="form-item form-item-label-before form-type-textarea form-item-recipients">
+  <label for="edit-recipients">Send To <span class="form-required" title="This field is required.">*</span></label>
+ <div class="form-textarea-wrapper resizable"><textarea id="edit-recipients" name="recipients" cols="50" rows="5" class="form-textarea required"></textarea></div>
+<div class="description">Enter multiple addresses on separate lines or separate them with commas.</div>
+</div>
+<div id="edit-page" class="form-item form-item-label-before form-type-item">
+  <label for="edit-page">You are going to email the following </label>
+ <a href="/content/10.1101/593822v1" class="active" data-icon-position="" data-hide-link-title="0">Catching the big picture of the Mediterranean Sea biodiversity with an end-to-end model of climate and fishing impacts</a>
+</div>
+<div id="edit-subject" class="form-item form-item-label-before form-type-item">
+  <label for="edit-subject">Message Subject </label>
+ (Your Name) has forwarded a page to you from bioRxiv
+</div>
+<div id="edit-body" class="form-item form-item-label-before form-type-item">
+  <label for="edit-body">Message Body </label>
+ (Your Name) thought you would like to see this page from the bioRxiv website.
+</div>
+<div class="form-item form-item-label-before form-type-textarea form-item-message">
+  <label for="edit-message--2">Your Personal Message </label>
+ <div class="form-textarea-wrapper resizable"><textarea id="edit-message--2" name="message" cols="50" rows="10" class="form-textarea"></textarea></div>
+</div>
+<input type="hidden" name="path" value="node/436683" />
+<input type="hidden" name="path_cid" value="" />
+<input type="hidden" name="forward_footer" value=" " />
+<input type="hidden" name="form_build_id" value="form-xW_aDchzdIkS2VakxrSlfS9O-IRdICDB1FW0_b8OMBQ" />
+<input type="hidden" name="form_id" value="forward_form" />
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Send Message" class="form-submit" /></div></div></form>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-share-link highwire_clipboard_link_ajax"  id="shareit">
+  
+      
+  
+  <div class="pane-content">
+    <a href="/" class="link-icon"><i class="icon-share-alt"></i> <span class="title">Share</span></a>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-biorxiv-share highwire_clipboard_form_ajax_shareit" >
+  
+      
+  
+  <div class="pane-content">
+    
+<div class="panel-display omega-12-onecol" id="mini-panel-biorxiv_share">
+
+		  <div class="panel-panel grid-12 panel-region-preface">
+		  <div class="inside"><div class="panel-pane pane-highwire-article-citation" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="highwire-article-citation highwire-citation-type-highwire-article" data-node-nid="436683" id="node436683--2" data-pisa="biorxiv;593822v1" data-pisa-master="biorxiv;593822" data-seqnum="436683" data-apath="/biorxiv/early/2019/03/31/593822.atom"><div  class="highwire-cite highwire-cite-highwire-article highwire-citation-biorxiv-article-pap-list clearfix" >
+
+      <div class="highwire-cite-title" >
+      <div class="highwire-cite-title">Catching the big picture of the Mediterranean Sea biodiversity with an end-to-end model of climate and fishing impacts</div>    </div>
+  
+      <div  class="highwire-cite-authors" ><span  class="highwire-citation-authors"><span class="highwire-citation-author first" data-delta="0"><span class="nlm-given-names">Fabien</span> <span class="nlm-surname">Moullec</span></span>, <span class="highwire-citation-author" data-delta="1"><span class="nlm-given-names">Laure</span> <span class="nlm-surname">Velez</span></span>, <span class="highwire-citation-author" data-delta="2"><span class="nlm-given-names">Philippe</span> <span class="nlm-surname">Verley</span></span>, <span class="highwire-citation-author" data-delta="3"><span class="nlm-given-names">Nicolas</span> <span class="nlm-surname">Barrier</span></span>, <span class="highwire-citation-author" data-delta="4"><span class="nlm-given-names">Caroline</span> <span class="nlm-surname">Ulses</span></span>, <span class="highwire-citation-author" data-delta="5"><span class="nlm-given-names">Pierluigi</span> <span class="nlm-surname">Carbonara</span></span>, <span class="highwire-citation-author" data-delta="6"><span class="nlm-given-names">Antonio</span> <span class="nlm-surname">Esteban</span></span>, <span class="highwire-citation-author" data-delta="7"><span class="nlm-given-names">Cristina</span> <span class="nlm-surname">Follesa</span></span>, <span class="highwire-citation-author" data-delta="8"><span class="nlm-given-names">Michele</span> <span class="nlm-surname">Gristina</span></span>, <span class="highwire-citation-author" data-delta="9"><span class="nlm-given-names">Angélique</span> <span class="nlm-surname">Jadaud</span></span>, <span class="highwire-citation-author" data-delta="10"><span class="nlm-given-names">Alessandro</span> <span class="nlm-surname">Ligas</span></span>, <span class="highwire-citation-author" data-delta="11"><span class="nlm-given-names">Eduardo</span> <span class="nlm-surname">López Díaz</span></span>, <span class="highwire-citation-author" data-delta="12"><span class="nlm-given-names">Porzia</span> <span class="nlm-surname">Maiorano</span></span>, <span class="highwire-citation-author" data-delta="13"><span class="nlm-given-names">Panagiota</span> <span class="nlm-surname">Peristeraki</span></span>, <span class="highwire-citation-author" data-delta="14"><span class="nlm-given-names">Maria Teresa</span> <span class="nlm-surname">Spedicato</span></span>, <span class="highwire-citation-author" data-delta="15"><span class="nlm-given-names">Ioannis</span> <span class="nlm-surname">Thasitis</span></span>, <span class="highwire-citation-author" data-delta="16"><span class="nlm-given-names">Maria</span> <span class="nlm-surname">Valls</span></span>, <span class="highwire-citation-author" data-delta="17"><span class="nlm-given-names">François</span> <span class="nlm-surname">Guilhaumon</span></span>, <span class="highwire-citation-author" data-delta="18"><span class="nlm-given-names">Yunne-Jai</span> <span class="nlm-surname">Shin</span></span></span></div>
+  
+      <div  class="highwire-cite-metadata" ><span  class="highwire-cite-metadata-journal highwire-cite-metadata">bioRxiv </span><span  class="highwire-cite-metadata-pages highwire-cite-metadata">593822; </span><span  class="highwire-cite-metadata-doi highwire-cite-metadata"><span class="doi_label">doi:</span> https://doi.org/10.1101/593822 </span></div>
+  
+  
+  </div>
+</div>  </div>
+
+  
+  </div>
+</div>
+	  </div>
+	
+  <div class="panel-panel grid-12 panel-region-content">
+  	<div class="inside"><div class="panel-pane pane-highwire-article-clipboard-copy" >
+  
+      
+  
+  <div class="pane-content">
+    <div class = "clipboard-copy">
+  <span class="label-url">
+    <label for="dynamic">Share This Article:</label>
+  </span>
+  <span class="input-text-url">
+    <input type="text" id="dynamic" value="https://www.biorxiv.org/content/10.1101/593822v1" size="50"/>
+  </span>
+  <span class="copy-button button">
+    <button id="copy-dynamic" class="clipboardjs-button" data-clipboard-target="#dynamic" data-clipboard-alert-style="tooltip" data-clipboard-alert-text="Copied!">Copy</button>
+  </span>
+</div>
+  </div>
+
+  
+  </div>
+</div>
+  </div>
+	
+		  <div class="panel-panel grid-12 panel-region-postscript">
+	    <div class="inside"><div class="panel-pane pane-service-links" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="service-links"><a href="http://digg.com/submit?phase=2&amp;url=https%3A//www.biorxiv.org/content/10.1101/593822v1&amp;title=Catching%20the%20big%20picture%20of%20the%20Mediterranean%20Sea%20biodiversity%20with%20an%20end-to-end%20model%20of%20climate%20and%20fishing%20impacts" id="digg" title="Digg this post on digg.com" class="service-links-digg" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.biorxiv.org/sites/all/modules/highwire/highwire/images/digg.png" alt="Digg logo" /></a> <a href="http://reddit.com/submit?url=https%3A//www.biorxiv.org/content/10.1101/593822v1&amp;title=Catching%20the%20big%20picture%20of%20the%20Mediterranean%20Sea%20biodiversity%20with%20an%20end-to-end%20model%20of%20climate%20and%20fishing%20impacts" id="reddit" title="Submit this post on reddit.com" class="service-links-reddit" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.biorxiv.org/sites/all/modules/highwire/highwire/images/reddit.png" alt="Reddit logo" /></a> <a href="http://twitter.com/share?url=https%3A//www.biorxiv.org/content/10.1101/593822v1&amp;text=Catching%20the%20big%20picture%20of%20the%20Mediterranean%20Sea%20biodiversity%20with%20an%20end-to-end%20model%20of%20climate%20and%20fishing%20impacts" id="twitter" title="Share this on Twitter" class="service-links-twitter" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.biorxiv.org/sites/all/modules/highwire/highwire/images/twitter.png" alt="Twitter logo" /></a> <a href="http://www.citeulike.org/posturl?url=https%3A//www.biorxiv.org/content/10.1101/593822v1&amp;title=Catching%20the%20big%20picture%20of%20the%20Mediterranean%20Sea%20biodiversity%20with%20an%20end-to-end%20model%20of%20climate%20and%20fishing%20impacts" id="citeulike" title="Share on CiteULike" class="service-links-citeulike" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.biorxiv.org/sites/all/modules/highwire/highwire/images/citeyoulike.png" alt="CiteULike logo" /></a> <a href="http://www.facebook.com/sharer.php?u=https%3A//www.biorxiv.org/content/10.1101/593822v1&amp;t=Catching%20the%20big%20picture%20of%20the%20Mediterranean%20Sea%20biodiversity%20with%20an%20end-to-end%20model%20of%20climate%20and%20fishing%20impacts" id="facebook" title="Share on Facebook" class="service-links-facebook" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.biorxiv.org/sites/all/modules/highwire/highwire/images/fb-blue.png" alt="Facebook logo" /></a> <a href="http://www.google.com/bookmarks/mark?op=add&amp;bkmk=https%3A//www.biorxiv.org/content/10.1101/593822v1&amp;title=Catching%20the%20big%20picture%20of%20the%20Mediterranean%20Sea%20biodiversity%20with%20an%20end-to-end%20model%20of%20climate%20and%20fishing%20impacts" id="google" title="Bookmark this post on Google" class="service-links-google" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.biorxiv.org/sites/all/modules/highwire/highwire/images/google-32.png" alt="Google logo" /></a> <a href="http://www.mendeley.com/import/?url=https%3A//www.biorxiv.org/content/10.1101/593822v1&amp;title=Catching%20the%20big%20picture%20of%20the%20Mediterranean%20Sea%20biodiversity%20with%20an%20end-to-end%20model%20of%20climate%20and%20fishing%20impacts" id="mendeley" title="Share on Mendeley" class="service-links-mendeley" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.biorxiv.org/sites/all/modules/highwire/highwire/images/mendeley.png" alt="Mendeley logo" /></a></div>  </div>
+
+  
+  </div>
+</div>
+	  </div>
+	
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-minipanel-dialog-link pane-biorxiv-cite-tool" >
+  
+      
+  
+  <div class="pane-content">
+    <div class='minipanel-dialog-wrapper'><div class='minipanel-dialog-link-link'><a href="/" oncontextmenu="javascript: return false;" class="minipanel-dialog-link-trigger link-icon" title="Citation Tools"><i class="icon-globe"></i> <span class="title">Citation Tools</span></a></div><div class='minipanel-dialog-link-mini' style='display:none'><div class="panel-display panel-1col clearfix" id="mini-panel-biorxiv_cite_tool">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-highwire-citation-export" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="highwire-citation-export">  
+  <div class="highwire-citation-info">
+      <div class="highwire-article-citation highwire-citation-type-highwire-article" data-node-nid="436683" id="node436683--3" data-pisa="biorxiv;593822v1" data-pisa-master="biorxiv;593822" data-seqnum="436683" data-apath="/biorxiv/early/2019/03/31/593822.atom"><div  class="highwire-cite highwire-cite-highwire-article highwire-citation-biorxiv-article-pap-list clearfix" >
+
+      <div class="highwire-cite-title" >
+      <div class="highwire-cite-title">Catching the big picture of the Mediterranean Sea biodiversity with an end-to-end model of climate and fishing impacts</div>    </div>
+  
+      <div  class="highwire-cite-authors" ><span  class="highwire-citation-authors"><span class="highwire-citation-author first" data-delta="0"><span class="nlm-given-names">Fabien</span> <span class="nlm-surname">Moullec</span></span>, <span class="highwire-citation-author" data-delta="1"><span class="nlm-given-names">Laure</span> <span class="nlm-surname">Velez</span></span>, <span class="highwire-citation-author" data-delta="2"><span class="nlm-given-names">Philippe</span> <span class="nlm-surname">Verley</span></span>, <span class="highwire-citation-author" data-delta="3"><span class="nlm-given-names">Nicolas</span> <span class="nlm-surname">Barrier</span></span>, <span class="highwire-citation-author" data-delta="4"><span class="nlm-given-names">Caroline</span> <span class="nlm-surname">Ulses</span></span>, <span class="highwire-citation-author" data-delta="5"><span class="nlm-given-names">Pierluigi</span> <span class="nlm-surname">Carbonara</span></span>, <span class="highwire-citation-author" data-delta="6"><span class="nlm-given-names">Antonio</span> <span class="nlm-surname">Esteban</span></span>, <span class="highwire-citation-author" data-delta="7"><span class="nlm-given-names">Cristina</span> <span class="nlm-surname">Follesa</span></span>, <span class="highwire-citation-author" data-delta="8"><span class="nlm-given-names">Michele</span> <span class="nlm-surname">Gristina</span></span>, <span class="highwire-citation-author" data-delta="9"><span class="nlm-given-names">Angélique</span> <span class="nlm-surname">Jadaud</span></span>, <span class="highwire-citation-author" data-delta="10"><span class="nlm-given-names">Alessandro</span> <span class="nlm-surname">Ligas</span></span>, <span class="highwire-citation-author" data-delta="11"><span class="nlm-given-names">Eduardo</span> <span class="nlm-surname">López Díaz</span></span>, <span class="highwire-citation-author" data-delta="12"><span class="nlm-given-names">Porzia</span> <span class="nlm-surname">Maiorano</span></span>, <span class="highwire-citation-author" data-delta="13"><span class="nlm-given-names">Panagiota</span> <span class="nlm-surname">Peristeraki</span></span>, <span class="highwire-citation-author" data-delta="14"><span class="nlm-given-names">Maria Teresa</span> <span class="nlm-surname">Spedicato</span></span>, <span class="highwire-citation-author" data-delta="15"><span class="nlm-given-names">Ioannis</span> <span class="nlm-surname">Thasitis</span></span>, <span class="highwire-citation-author" data-delta="16"><span class="nlm-given-names">Maria</span> <span class="nlm-surname">Valls</span></span>, <span class="highwire-citation-author" data-delta="17"><span class="nlm-given-names">François</span> <span class="nlm-surname">Guilhaumon</span></span>, <span class="highwire-citation-author" data-delta="18"><span class="nlm-given-names">Yunne-Jai</span> <span class="nlm-surname">Shin</span></span></span></div>
+  
+      <div  class="highwire-cite-metadata" ><span  class="highwire-cite-metadata-journal highwire-cite-metadata">bioRxiv </span><span  class="highwire-cite-metadata-pages highwire-cite-metadata">593822; </span><span  class="highwire-cite-metadata-doi highwire-cite-metadata"><span class="doi_label">doi:</span> https://doi.org/10.1101/593822 </span></div>
+  
+  
+  </div>
+</div>  </div>
+  <div class="highwire-citation-formats">
+  	      <h2>Citation Manager Formats</h2>
+        <div class="highwire-citation-formats-links">
+      <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.spage&amp;rft.epage&amp;rft.atitle=Catching%20the%20big%20picture%20of%20the%20Mediterranean%20Sea%20biodiversity%20with%20an%20end-to-end%20model%20of%20climate%20and%20fishing%20impacts&amp;rft.volume&amp;rft.issue&amp;rft.date=2019-01-01%2000%3A00%3A00&amp;rft.stitle&amp;rft.jtitle=bioRxiv&amp;rft.au=Moullec%2C+Fabien&amp;rft.au=Velez%2C+Laure&amp;rft.au=Verley%2C+Philippe&amp;rft.au=Barrier%2C+Nicolas&amp;rft.au=Ulses%2C+Caroline&amp;rft.au=Carbonara%2C+Pierluigi&amp;rft.au=Esteban%2C+Antonio&amp;rft.au=Follesa%2C+Cristina&amp;rft.au=Gristina%2C+Michele&amp;rft.au=Jadaud%2C+Ang%C3%A9lique&amp;rft.au=Ligas%2C+Alessandro&amp;rft.au=L%C3%B3pez+D%C3%ADaz%2C+Eduardo&amp;rft.au=Maiorano%2C+Porzia&amp;rft.au=Peristeraki%2C+Panagiota&amp;rft.au=Spedicato%2C+Maria+Teresa&amp;rft.au=Thasitis%2C+Ioannis&amp;rft.au=Valls%2C+Maria&amp;rft.au=Guilhaumon%2C+Fran%C3%A7ois&amp;rft.au=Shin%2C+Yunne-Jai"></span><ul class="hw-citation-links inline button button-alt button-grid clearfix"><li class="bibtext first"><a href="/highwire/citation/436683/bibtext" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">BibTeX</a></li><li class="bookends"><a href="/highwire/citation/436683/bookends" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Bookends</a></li><li class="easybib"><a href="/highwire/citation/436683/easybib" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">EasyBib</a></li><li class="endnote-tagged"><a href="/highwire/citation/436683/endnote-tagged" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">EndNote (tagged)</a></li><li class="endnote-8-xml"><a href="/highwire/citation/436683/endnote-8-xml" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">EndNote 8 (xml)</a></li><li class="medlars"><a href="/highwire/citation/436683/medlars" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Medlars</a></li><li class="mendeley"><a href="/highwire/citation/436683/mendeley" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Mendeley</a></li><li class="papers"><a href="/highwire/citation/436683/papers" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Papers</a></li><li class="refworks-tagged"><a href="/highwire/citation/436683/refworks-tagged" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">RefWorks Tagged</a></li><li class="reference-manager"><a href="/highwire/citation/436683/reference-manager" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Ref Manager</a></li><li class="ris"><a href="/highwire/citation/436683/ris" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">RIS</a></li><li class="zotero last"><a href="/highwire/citation/436683/zotero" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Zotero</a></li></ul>    </div>
+  </div>
+</div>
+  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div></div>  </div>
+
+  
+  </div>
+</div>
+          </div>
+        </div>
+	</div> <!-- /.panel-row-wrapper -->	
+	
+	</div>
+
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-service-links" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="service-links"><div class="item-list"><ul><li class="first"><a href="http://twitter.com/share?url=https%3A//www.biorxiv.org/content/10.1101/593822v1&amp;count=horizontal&amp;via=&amp;text=Catching%20the%20big%20picture%20of%20the%20Mediterranean%20Sea%20biodiversity%20with%20an%20end-to-end%20model%20of%20climate%20and%20fishing%20impacts&amp;counturl=https%3A//www.biorxiv.org/content/10.1101/593822v1" class="twitter-share-button service-links-twitter-widget" id="twitter_widget" title="Tweet This" rel="nofollow" data-icon-position="" data-hide-link-title="0"><span class="element-invisible">Tweet Widget</span></a></li><li><a href="http://www.facebook.com/plugins/like.php?href=https%3A//www.biorxiv.org/content/10.1101/593822v1&amp;layout=button_count&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;width=100&amp;height=21&amp;font=&amp;locale=" id="facebook_like" title="I Like it" class="service-links-facebook-like" rel="nofollow" data-icon-position="" data-hide-link-title="0"><span class="element-invisible">Facebook Like</span></a></li><li class="last"><a href="https://www.biorxiv.org/content/10.1101/593822v1" id="google_plus_one" title="Plus it" class="service-links-google-plus-one" rel="nofollow" data-icon-position="" data-hide-link-title="0"><span class="element-invisible">Google Plus One</span></a></li></ul></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-article-collections" >
+  
+        <h2 class="pane-title">Subject Area</h2>
+    
+  
+  <div class="pane-content">
+    <div class="highwire-list-wrapper highwire-article-collections"><div class="highwire-list"><ul class="highwire-article-collection-term-list"><li class="first last odd"><span class="highwire-article-collection-term"><a href="/collection/ecology" class="highlight" data-icon-position="" data-hide-link-title="0">Ecology<i class="icon-caret-right"></i>
+</a></span></li></ul></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-biorxiv-subject-collections block-style-col2" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="panel-flexible panels-flexible-8 clearfix" id="mini-panel-biorxiv_subject_collections">
+<div class="panel-flexible-inside panels-flexible-8-inside">
+<div class="panels-flexible-region panels-flexible-region-8-center panels-flexible-region-first panels-flexible-region-last">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-8-center-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-snippet" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="snippet biorxiv-subject-areas-table-title" id="biorxiv-subject-areas-table-title">
+  
+      
+  <div class="snippet-content">
+    <b>Subject Areas</b>  </div>
+
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-snippet" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="snippet biorxiv-subject-areas-view-papers" id="biorxiv-subject-areas-view-papers">
+  
+      
+  <div class="snippet-content">
+    <a href="/content/early/recent"><strong>All Articles</strong></a>  </div>
+
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-subject-collections" >
+  
+      
+  
+  <div class="pane-content">
+    <ul id="collection" class="collection highwire-list-expand"><li class="outer collection depth-2  child first"><div class = "data-wrapper"><a href="/collection/animal-behavior-and-cognition" class="" data-icon-position="" data-hide-link-title="0">Animal Behavior and Cognition</a> <span class = "article-count">(1662)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/biochemistry" class="" data-icon-position="" data-hide-link-title="0">Biochemistry</a> <span class = "article-count">(2789)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/bioengineering" class="" data-icon-position="" data-hide-link-title="0">Bioengineering</a> <span class = "article-count">(1946)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/bioinformatics" class="" data-icon-position="" data-hide-link-title="0">Bioinformatics</a> <span class = "article-count">(10400)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/biophysics" class="" data-icon-position="" data-hide-link-title="0">Biophysics</a> <span class = "article-count">(4243)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/cancer-biology" class="" data-icon-position="" data-hide-link-title="0">Cancer Biology</a> <span class = "article-count">(3272)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/cell-biology" class="" data-icon-position="" data-hide-link-title="0">Cell Biology</a> <span class = "article-count">(4641)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/clinical-trials" class="" data-icon-position="" data-hide-link-title="0">Clinical Trials</a> <span class = "article-count">(135)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/developmental-biology" class="" data-icon-position="" data-hide-link-title="0">Developmental Biology</a> <span class = "article-count">(2889)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/ecology" class="" data-icon-position="" data-hide-link-title="0">Ecology</a> <span class = "article-count">(4544)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/epidemiology" class="" data-icon-position="" data-hide-link-title="0">Epidemiology</a> <span class = "article-count">(2041)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/evolutionary-biology" class="" data-icon-position="" data-hide-link-title="0">Evolutionary Biology</a> <span class = "article-count">(7288)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/genetics" class="" data-icon-position="" data-hide-link-title="0">Genetics</a> <span class = "article-count">(5540)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/genomics" class="" data-icon-position="" data-hide-link-title="0">Genomics</a> <span class = "article-count">(6893)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/immunology" class="" data-icon-position="" data-hide-link-title="0">Immunology</a> <span class = "article-count">(2434)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/microbiology" class="" data-icon-position="" data-hide-link-title="0">Microbiology</a> <span class = "article-count">(7616)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/molecular-biology" class="" data-icon-position="" data-hide-link-title="0">Molecular Biology</a> <span class = "article-count">(3051)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/neuroscience" class="" data-icon-position="" data-hide-link-title="0">Neuroscience</a> <span class = "article-count">(18885)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/paleontology" class="" data-icon-position="" data-hide-link-title="0">Paleontology</a> <span class = "article-count">(142)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/pathology" class="" data-icon-position="" data-hide-link-title="0">Pathology</a> <span class = "article-count">(477)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/pharmacology-and-toxicology" class="" data-icon-position="" data-hide-link-title="0">Pharmacology and Toxicology</a> <span class = "article-count">(791)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/physiology" class="" data-icon-position="" data-hide-link-title="0">Physiology</a> <span class = "article-count">(1178)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/plant-biology" class="" data-icon-position="" data-hide-link-title="0">Plant Biology</a> <span class = "article-count">(2771)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/scientific-communication-and-education" class="" data-icon-position="" data-hide-link-title="0">Scientific Communication and Education</a> <span class = "article-count">(686)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/synthetic-biology" class="" data-icon-position="" data-hide-link-title="0">Synthetic Biology</a> <span class = "article-count">(905)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/systems-biology" class="" data-icon-position="" data-hide-link-title="0">Systems Biology</a> <span class = "article-count">(2881)</span></div></li>
+<li class="outer collection depth-2  child last"><div class = "data-wrapper"><a href="/collection/zoology" class="" data-icon-position="" data-hide-link-title="0">Zoology</a> <span class = "article-count">(472)</span></div></li>
+</ul>  </div>
+
+  
+  </div>
+  </div>
+</div>
+</div>
+</div>
+  </div>
+
+  
+  </div>
+</div>
+			</div>
+		</div>
+	
+	</div> <!-- /.panel-row-wrapper -->	
+	
+	</div>
+
+    </div>
+  </div>
+</div>      </div>
+</div>  </div>
+</section>    
+  
+  </div>    <div class="region region-page-bottom" id="region-page-bottom">
+  <div class="region-inner region-page-bottom-inner">
+      </div>
+</div><script type="text/javascript" src="https://www.biorxiv.org/sites/default/files/advagg_js/js__Vh5BcRYb6VtLoN3uam6O4DIKltYUVMjVDWtakoysPq0__zA_9xHyAk-lRGLS85oOPfK7yEWnMzbYSmnTOXQEsvJw__QJacVmveFyLIBSPkp21xL0ZvuDW9DMBrD2HB1P4Ry5I.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function euCookieComplianceLoadScripts() {}
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var eu_cookie_compliance_cookie_name = "";
+//--><!]]>
+</script>
+<script type="text/javascript" src="//d33xdlntwy0kbs.cloudfront.net/cshl_custom.js"></script>
+<script type="text/javascript" src="https://www.biorxiv.org/sites/default/files/advagg_js/js__BmqjBnkz3MgYCAoc25s1lDRMEjLhC3mEPVonUFIHi08__Unwv5-ZIuHBfFwytsjEx1niBVJ7n1T4lPws7VrkHXM4__QJacVmveFyLIBSPkp21xL0ZvuDW9DMBrD2HB1P4Ry5I.js"></script>
+  </body>
+</html>

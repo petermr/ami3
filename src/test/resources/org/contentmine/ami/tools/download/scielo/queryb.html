@@ -1,0 +1,314 @@
+<html>
+<head>
+	<base href="http://www.scielo.br/"/>
+	<title>iAH Search interface 2.4 - Results of the search &lt;page  1&gt;
+	</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="STYLESHEET" type="text/css" href="/css/scielo.css">
+<script language="javascript" src="/article.js">
+</script>
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="blue">
+			<!--div class="scielo10bar">
+				<div>
+				<ul>
+					<li><a href="http://www.eventos.bvsalud.org/scielo10/?lang=en" border="0"><img src="/img/scielo.gif"/></a></li>
+					<li><a href="http://www.eventos.bvsalud.org/scielo10/?lang=en">SciELO 10 years</a></li>
+					<li><a href="http://www2.scielo.org/?lang=en">Access the new SciELO Network Portal</a></li>
+				</ul>
+				</div>
+			</div-->
+<!--
+limit:
+issn: 
+rep : 
+-->
+				<!--<center><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=7 WIDTH="600"><TR><TD WIDTH="26%" VALIGN="TOP" ALIGN="CENTER"><a href="http://www.scielo.br/scielo.php?script=sci_home&amp;lng=en&nrm=iso"><IMG SRC="http://www.scielo.br/img/en/fbpelogp.gif" border=0 alt=""></a><BR></TD><TD WIDTH="74%" VALIGN="TOP"><table><tr><td nowrap><IMG SRC="http://www.scielo.br/img/en/serbrow.gif">&nbsp;<IMG SRC="http://www.scielo.br/img/en/artbrow.gif"><BR><A href="http://www.scielo.br/scielo.php?script=sci_alphabetic&amp;lng=en&nrm=iso"><IMG SRC="http://www.scielo.br/img/en/alpha.gif" border=0 alt="alphabetic list of serials"></a><A href="http://www.scielo.br/scielo.php?script=sci_subject&amp;lng=en&nrm=iso"><IMG SRC="http://www.scielo.br/img/en/subject.gif" border=0 alt="subject list of serials"></a><A href="?IsisScript=iah/iah.xis&base=title&lang=i&fmt=iso.pft"><IMG SRC="http://www.scielo.br/img/en/search.gif" border=0 alt="serials search"></a>&nbsp;<a href="?IsisScript=iah/iah.xis&base=article^dlibrary&index=AU&lang=i&fmt=iso.pft&form=B"><IMG SRC="http://www.scielo.br/img/en/author.gif" border=0 alt="author index"></a><a href="http:?IsisScript=iah/iah.xis&base=article^dlibrary&index=KW&lang=i&fmt=iso.pft&form=B"><IMG SRC="http://www.scielo.br/img/en/subject.gif" border=0 alt="subject index"></a><a href="http:?IsisScript=iah/iah.xis&base=article^dlibrary&lang=i&fmt=iso.pft&form=A"><IMG SRC="http://www.scielo.br/img/en/search.gif" border=0></a></td></tr></table></TD></TR></TABLE><FONT SIZE=+1 COLOR="#000080"><B>Library collection</B></FONT><BR><BR></center>
+					-->
+
+<script>
+	function AnySelected(){			
+		var any = false;
+		var count = 0;		
+
+		while(!any && count < document.forms[0].listChecked.length) {			
+			any = (document.forms[0].listChecked[count].checked || document.forms[0].listChecked[count].type == "hidden");
+			count++;
+	    }
+		if (!any)
+		{
+			alert("No reference was selected");
+			return false;
+		}	
+		else{
+			document.forms[0].nextAction.value="your_selection";			
+			document.forms[0].submit();			
+			return true;
+		}		
+	}
+</script>
+
+<form action="/cgi-bin/wxis.exe/iah/" method="POST">
+	<input type="hidden" name="IsisScript" value="iah/iah.xis">
+<input type="hidden" name="environment" value="^d/iah/^c/var/www/scielo_br/cgi-bin/iah/^b/var/www/scielo_br/bases/^mOFF^siah/iah.xis^v2.4">
+<input type="hidden" name="avaibleFormats" value="^niso.pft^pISO 690^eISO 690^iISO 690">
+<input type="hidden" name="avaibleFormats" value="^nabn.pft^pABNT NBR 6023/89^eABNT NBR 6023/89^iABNT NBR 6023/89">
+<input type="hidden" name="avaibleFormats" value="^nvan.pft^pVancouver^eVancouver^iVancouver">
+<input type="hidden" name="avaibleFormats" value="^nDEFAULT^fiso.pft">
+<input type="hidden" name="apperance" value="^cwhite^i^tblack^lblue^b#B0C2D5^escielo@bireme.br^rON^mON">
+<input type="hidden" name="helpInfo" value="^nNOTE FORM F^vnota_form1_scielo.htm">
+<input type="hidden" name="gizmoDecod" value="">
+<input type="hidden" name="avaibleForms" value="B,F">
+<input type="hidden" name="logoImage" value="scielog.gif">
+<input type="hidden" name="logoURL" value="www.scielo.br">
+<input type="hidden" name="headerImage" value="^ponlinep.gif^eonlinee.gif^ionlinei.gif">
+<input type="hidden" name="headerURL" value="www.scielo.br">
+<input type="hidden" name="form" value="A">
+<input type="hidden" name="pathImages" value="/iah/I/image/">
+<input type="hidden" name="navBar" value="OFF">
+<input type="hidden" name="hits" value="10">
+<input type="hidden" name="format" value="iso.pft">
+<input type="hidden" name="lang" value="i">
+<input type="hidden" name="isisTotal" value="0">
+<input type="hidden" name="isisFrom" value="0">
+<input type="hidden" name="user" value="GUEST">
+<input type="hidden" name="index" value="KW">
+<input type="hidden" name="baseFeatures" value="^k_KEY^eON">
+
+
+	
+	<input type="hidden" name="nextAction" value="refine/resubmit">	
+	<center>
+	<table border="0" width="600" cellspacing="0" cellpadding="0" bgcolor="#B0C2D5">
+		<tr>
+			
+				<td>&nbsp;</td>
+				
+		</tr>
+	</table>
+
+<!--
+	<table border="0" width="600" cellspacing="0" cellpadding="0" align="center">	
+		<tr>
+			<td>
+			<table border="0" width="600">
+				<tr>
+					<td align="right" valign="top">
+						<font face="arial" size="2">Database :</font>
+					</td>
+					<td valign="top">
+						<font face="verdana" size="1"><b>article</b></font>
+					</td>		
+				</tr>
+				<tr>
+					<td align="right" width="35%" valign="top">
+						<font face="arial" size="2">Search on :</font>
+					</td>
+					<td width="65%" valign="top">
+						<font face="verdana" size="1"><b>
+										
+						</b></font>					
+					</td>
+				</tr>		
+				<tr>
+					<td align="right" valign="top">
+						<font face="arial" size="2">References found :</font>
+					</td>
+					<td>
+						<font face="verdana" size="1">
+						<b>0</b>
+						
+						</font>
+					</td>				
+				</tr>	
+				
+
+				
+				
+				
+				
+			</table>
+			</td>
+		</tr>
+	</table>
+	</center>
+	<br>
+	-->
+	<!-- monta navegacao entre as paginas do resultado -->
+		
+
+
+<br><br>
+<center>
+<table border="0" width="600" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<a name="refine"><font face="Verdana" size="1"><b><i>Refine the search</i></b></font></a>
+		</td>
+	</tr>
+</table>
+</center>
+
+
+<script>
+function changeForm(valor)
+{
+	document.forms[0].form.value=valor;
+	document.forms[0].nextAction.value="CHANGE FORM";
+	document.forms[0].submit();
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+	<!-- FORMULARIO AVANCADO -->
+<!--
+	<center>
+    <table border="0" width="600" cellspacing="0" cellpadding="0" align="center" bgcolor="#B0C2D5">
+	<tr>
+		<td width="80">&nbsp;
+			
+		</td>
+		<td><font face="verdana" size="1">Database : <b>
+			<input type="hidden" name="base" value="article^dlibrary">article</b></font>
+		</td>
+		<td align="right"><font face="verdana" size="1"><b>Advanced form</b></font>&nbsp;&nbsp;&nbsp;</td>
+	</tr>
+	</table>
+	</center>
+	-->
+
+	<!--
+		<center>
+	    <table border="0" width="600" cellspacing="0" align="center" cellpadding="0">
+        <tr>
+        	<td align="right"><font face="verdana" size="2"><small>
+				Search for :
+		   		
+					<a href="javascript:void(changeForm(&#39F&#39))">Free form</a>&nbsp;&nbsp;&nbsp;
+				
+				
+					<a href="javascript:void(changeForm(&#39B&#39))">Basic form</a>
+				
+				</font>
+			</td>
+        </tr>
+	    </table>
+		</center>
+-->	
+
+
+	<br><center>
+	<table border="0" width="600" align="center" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="30">&nbsp;</td>
+		<td width="80">&nbsp;</td>
+		<td width="270"><i><font face="verdana" size="2">Search</font></i></td>
+		<td width="235"><font face="verdana" size="2"><i>in field</i></font></td>
+		<td width="62">&nbsp;</td>
+	</tr>
+
+	
+	
+		
+    			<tr>
+          		<td width="30"><font face="Verdana" size="2"><b>1</b></font></td>
+				<td width="80">
+					
+        		   		<input type=hidden name="conectSearch" value="init">&nbsp;
+				    
+	      		</td>
+		        <td width="270" align="left">
+					<input type="text" size="32" maxlength="2048" name="exprSearch" value=''>
+		   	  	</td>
+				<td width="235">
+					<select name="indexSearch" size="1"><option value="^nTo^pTodos os índices^eTodos los indices^iAll indexes^d*^xTO ^yFULINV" >All indexes</option><option value="^nTi^pPalavras do título^ePalabras del título^iTitle words^xTI ^yPREINV^uTI_^mTI_" >Title words</option><option value="^nAu^pAutor^eAutor^iAuthor^xAU ^yPREINV^uAU_^mAU_" >Author</option><option value="^nEc^pRegistro de Ensaios Clínicos^eRegistros de Ensayos Clínicos^iClinical Trials Registry^xEC ^yPREINV^uEC_^mEC_" >Clinical Trials Registry</option><option value="^nKw^pAssunto^eMateria^iSubject^xKW ^yPREINV^uKW_^mKW_" selected>Subject</option><option value="^nAb^pResumo^eResumen^iAbstract^xAB ^yPREINV^uAB_^mAB_" >Abstract</option><option value="^nYr^pAno de publicação^eAño de publicación^iPublication year^xYR ^yPREINV^uYR_^mYR_^tshort" >Publication year</option><option value="^nTa^pTipo de artigo^eTipo de artículo^iArticle type^xTA ^yTIPART^mTA_^tshort^rCollection" >Article type</option><option value="^nOr^pAfiliação - Organização^eAfiliación - Organización^iAffiliation - Organization^xOR ^yAFORG^mOR_^rCollection" >Affiliation - Organization</option><option value="^nPp^pAfiliação - País, País^eAfiliación - Pais, Pais^iAffiliation - Country, Country^xPP ^yAFPAISPAIS^mPP_^rCollection" >Affiliation - Country, Country</option></select>
+				</td>
+          		<td width="62" align="left"><input type="image" src="/iah/I/image/indice.gif" name="index1" border="0"></td>
+            </tr>
+      
+    
+		
+    			<tr>
+          		<td width="30"><font face="Verdana" size="2"><b>2</b></font></td>
+				<td width="80">
+					
+         				<select name="conectSearch" size=1>
+	    	   				<option value="and" >and
+							<option value="or"  >or
+							<option value="and not" >and not
+						</select>
+					
+	      		</td>
+		        <td width="270" align="left">
+					<input type="text" size="32" maxlength="2048" name="exprSearch" value=''>
+		   	  	</td>
+				<td width="235">
+					<select name="indexSearch" size="1"><option value="^nTo^pTodos os índices^eTodos los indices^iAll indexes^d*^xTO ^yFULINV" >All indexes</option><option value="^nTi^pPalavras do título^ePalabras del título^iTitle words^xTI ^yPREINV^uTI_^mTI_" >Title words</option><option value="^nAu^pAutor^eAutor^iAuthor^xAU ^yPREINV^uAU_^mAU_" >Author</option><option value="^nEc^pRegistro de Ensaios Clínicos^eRegistros de Ensayos Clínicos^iClinical Trials Registry^xEC ^yPREINV^uEC_^mEC_" >Clinical Trials Registry</option><option value="^nKw^pAssunto^eMateria^iSubject^xKW ^yPREINV^uKW_^mKW_" >Subject</option><option value="^nAb^pResumo^eResumen^iAbstract^xAB ^yPREINV^uAB_^mAB_" >Abstract</option><option value="^nYr^pAno de publicação^eAño de publicación^iPublication year^xYR ^yPREINV^uYR_^mYR_^tshort" >Publication year</option><option value="^nTa^pTipo de artigo^eTipo de artículo^iArticle type^xTA ^yTIPART^mTA_^tshort^rCollection" >Article type</option><option value="^nOr^pAfiliação - Organização^eAfiliación - Organización^iAffiliation - Organization^xOR ^yAFORG^mOR_^rCollection" >Affiliation - Organization</option><option value="^nPp^pAfiliação - País, País^eAfiliación - Pais, Pais^iAffiliation - Country, Country^xPP ^yAFPAISPAIS^mPP_^rCollection" >Affiliation - Country, Country</option></select>
+				</td>
+          		<td width="62" align="left"><input type="image" src="/iah/I/image/indice.gif" name="index2" border="0"></td>
+            </tr>
+      
+    
+		
+    			<tr>
+          		<td width="30"><font face="Verdana" size="2"><b>3</b></font></td>
+				<td width="80">
+					
+         				<select name="conectSearch" size=1>
+	    	   				<option value="and" >and
+							<option value="or"  >or
+							<option value="and not" >and not
+						</select>
+					
+	      		</td>
+		        <td width="270" align="left">
+					<input type="text" size="32" maxlength="2048" name="exprSearch" value=''>
+		   	  	</td>
+				<td width="235">
+					<select name="indexSearch" size="1"><option value="^nTo^pTodos os índices^eTodos los indices^iAll indexes^d*^xTO ^yFULINV" >All indexes</option><option value="^nTi^pPalavras do título^ePalabras del título^iTitle words^xTI ^yPREINV^uTI_^mTI_" >Title words</option><option value="^nAu^pAutor^eAutor^iAuthor^xAU ^yPREINV^uAU_^mAU_" >Author</option><option value="^nEc^pRegistro de Ensaios Clínicos^eRegistros de Ensayos Clínicos^iClinical Trials Registry^xEC ^yPREINV^uEC_^mEC_" >Clinical Trials Registry</option><option value="^nKw^pAssunto^eMateria^iSubject^xKW ^yPREINV^uKW_^mKW_" >Subject</option><option value="^nAb^pResumo^eResumen^iAbstract^xAB ^yPREINV^uAB_^mAB_" >Abstract</option><option value="^nYr^pAno de publicação^eAño de publicación^iPublication year^xYR ^yPREINV^uYR_^mYR_^tshort" >Publication year</option><option value="^nTa^pTipo de artigo^eTipo de artículo^iArticle type^xTA ^yTIPART^mTA_^tshort^rCollection" >Article type</option><option value="^nOr^pAfiliação - Organização^eAfiliación - Organización^iAffiliation - Organization^xOR ^yAFORG^mOR_^rCollection" >Affiliation - Organization</option><option value="^nPp^pAfiliação - País, País^eAfiliación - Pais, Pais^iAffiliation - Country, Country^xPP ^yAFPAISPAIS^mPP_^rCollection" >Affiliation - Country, Country</option></select>
+				</td>
+          		<td width="62" align="left"><input type="image" src="/iah/I/image/indice.gif" name="index3" border="0"></td>
+            </tr>
+      
+    
+	<tr>
+		<td colspan="6">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="6" align="center">
+				<input type="image" name="config" src="/iah/I/image/config.gif" border="0" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="image" name="new search" src="/iah/I/image/limpa.gif" border="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="image" src="/iah/I/image/pesq.gif" border="0" >
+		</td>
+	</tr>
+	</table>
+	</center>
+
+
+
+<br><br>
+</form>
+
+
+
+<br>
+<table border="0" width="100%">
+	<tr>
+		<td align=center><font face="Verdana" size="1">Search engine: <a href="http://www.bireme.br/isis/P/iah.htm"><b>iAH</b></a> powered by <a href="http://www.bireme.br/wwwisis.htm">WWWISIS</a></b></a></font></td>
+	</tr>
+	<tr>
+		<td align=center><BR><font face="Verdana" size="1">BIREME/PAHO/WHO - Latin American and Caribbean Center on Health Sciences Information</font></td>
+	</tr>	
+</table>
+
+
+</body>
+</html>

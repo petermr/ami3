@@ -1,0 +1,1439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+ <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book#"> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=yes"/>
+  <meta name="article_thumbnail" content="https://www.biorxiv.org/content/biorxiv/early/2019/05/18/641183/embed/graphic-1.gif"/>
+  <meta name="type" content="article"/>
+  <meta name="category" content="article"/>
+  <meta name="HW.identifier" content="/biorxiv/early/2019/05/18/641183.atom"/>
+  <meta name="HW.pisa" content="biorxiv;641183v2"/>
+  <meta name="DC.Format" content="text/html"/>
+  <meta name="DC.Language" content="en"/>
+  <meta name="DC.Title" content="cRacle: R Tools for Estimating Climate from Vegetation"/>
+  <meta name="DC.Identifier" content="10.1101/641183"/>
+  <meta name="DC.Date" content="2019-05-18"/>
+  <meta name="DC.Publisher" content="Cold Spring Harbor Laboratory"/>
+  <meta name="DC.Rights" content="© 2019, Posted by Cold Spring Harbor Laboratory. This pre-print is available under a Creative Commons License (Attribution-NonCommercial 4.0 International), CC BY-NC 4.0, as described at http://creativecommons.org/licenses/by-nc/4.0/"/>
+  <meta name="DC.AccessRights" content="restricted"/>
+  <meta name="DC.Description" content="Premise of the study The Climate Reconstruction Analysis using Coexistence Likelihood Estimation (CRACLE) method for the estimation of climate from vegetation is a robust set of modeling tools for estimating climate and paleoclimate that makes use of large repositories of biodiversity data and open-access R software. Methods Here we implement a new R library for the estimation of climate from vegetation.The ‘cRacle’ library implements functions for data access, aggregation, and models to estimate climate from plant community composition. ‘cRacle’ is modular and features many best-practice features. Results Performance tests using modern vegetation survey data from North and South America shows that CRACLE outperforms alternative methods. CRACLE estimates of mean annual temperature (MAT) are usually within 1°C of the actual when optimal model parameters are used. Generalized Boosted Regression (GBR) model correction is also shown here to improve on CRACLE models by reducing bias. Discussion CRACLE provides accurate estimates of climate from modern plant communities. Non-parametric CRACLE modeling coupled to GBR model correction produces the most accurate results to date. The ‘cRacle’ R library streamlines the estimation of climate from plant community data, and will make this modeling more accessible to a wider range of users."/>
+  <meta name="DC.Contributor" content="Robert S. Harbert"/>
+  <meta name="DC.Contributor" content="Alex A. Baryiames"/>
+  <meta name="article:published_time" content="2019-05-18"/>
+  <meta name="article:section" content="New Results"/>
+  <meta name="citation_title" content="cRacle: R Tools for Estimating Climate from Vegetation"/>
+  <meta name="citation_abstract" lang="en" content="&lt;;h3&gt;;ABSTRACT&lt;;/h3&gt;; &lt;;h3&gt;;Premise of the study&lt;;/h3&gt;; &lt;;p&gt;;The Climate Reconstruction Analysis using Coexistence Likelihood Estimation (CRACLE) method for the estimation of climate from vegetation is a robust set of modeling tools for estimating climate and paleoclimate that makes use of large repositories of biodiversity data and open-access R software.&lt;;/p&gt;;&lt;;h3&gt;;Methods&lt;;/h3&gt;; &lt;;p&gt;;Here we implement a new R library for the estimation of climate from vegetation.The ‘cRacle’ library implements functions for data access, aggregation, and models to estimate climate from plant community composition. ‘cRacle’ is modular and features many best-practice features.&lt;;/p&gt;;&lt;;h3&gt;;Results&lt;;/h3&gt;; &lt;;p&gt;;Performance tests using modern vegetation survey data from North and South America shows that CRACLE outperforms alternative methods. CRACLE estimates of mean annual temperature (MAT) are usually within 1°C of the actual when optimal model parameters are used. Generalized Boosted Regression (GBR) model correction is also shown here to improve on CRACLE models by reducing bias.&lt;;/p&gt;;&lt;;h3&gt;;Discussion&lt;;/h3&gt;; &lt;;p&gt;;CRACLE provides accurate estimates of climate from modern plant communities. Non-parametric CRACLE modeling coupled to GBR model correction produces the most accurate results to date. The ‘cRacle’ R library streamlines the estimation of climate from plant community data, and will make this modeling more accessible to a wider range of users.&lt;;/p&gt;;"/>
+  <meta name="citation_journal_title" content="bioRxiv"/>
+  <meta name="citation_publisher" content="Cold Spring Harbor Laboratory"/>
+  <meta name="citation_publication_date" content="2019/01/01"/>
+  <meta name="citation_mjid" content="biorxiv;641183v2"/>
+  <meta name="citation_id" content="641183v2"/>
+  <meta name="citation_public_url" content="https://www.biorxiv.org/content/10.1101/641183v2"/>
+  <meta name="citation_abstract_html_url" content="https://www.biorxiv.org/content/10.1101/641183v2.abstract"/>
+  <meta name="citation_full_html_url" content="https://www.biorxiv.org/content/10.1101/641183v2.full"/>
+  <meta name="citation_pdf_url" content="https://www.biorxiv.org/content/biorxiv/early/2019/05/18/641183.full.pdf"/>
+  <meta name="citation_doi" content="10.1101/641183"/>
+  <meta name="citation_num_pages" content="21"/>
+  <meta name="citation_article_type" content="Article"/>
+  <meta name="citation_section" content="New Results"/>
+  <meta name="citation_firstpage" content="641183"/>
+  <meta name="citation_author" content="Robert S. Harbert"/>
+  <meta name="citation_author_institution" content="Department of Biology, Stonehill College"/>
+  <meta name="citation_author_institution" content="American Museum of Natural History"/>
+  <meta name="citation_author_email" content="rharbert@stonehill.edu"/>
+  <meta name="citation_author" content="Alex A. Baryiames"/>
+  <meta name="citation_author_institution" content="Department of Biology, Stonehill College"/>
+  <meta name="citation_reference" content="Aiello□Lammens, M.E., R.A. Boria, A. Radosavljevic, B. Vilela, and R.P. Anderson. 2015. spThin: an R package for spatial thinning of species occurrence records for use in ecological niche models. Ecography, 38(5): 541–545."/>
+  <meta name="citation_reference" content="Barve, V., and E. Hart. 2017. ‘rinat’: Access iNaturalist Data Through APIs. R package version 0.1.5. https://cran.r-project.org/package=rinat"/>
+  <meta name="citation_reference" content="Fick, S.E. and R.J. Hijmans. 2017. WorldClim 2: new 1□km spatial resolution climate surfaces for global land areas. International journal of climatology 37(12):4302–4315."/>
+  <meta name="citation_reference" content="Fletcher, T., R. Feng, A.M. Telka, J.V. Matthews Jr, and A. Ballantyne. 2017. Floral Dissimilarity and the Influence of Climate in the Pliocene High Arctic: Biotic and Abiotic Influences on Five Sites on the Canadian Arctic Archipelago. Frontiers in Ecology and Evolution 5:19."/>
+  <meta name="citation_reference" content="Fletcher, T.L., A.Z. Csank, and A.P. Ballantyne. 2018. Identifying bias in cold season temperature reconstructions by beetle mutual climatic range methods in the Pliocene Canadian High Arctic. Palaeogeography, Palaeoclimatology, Palaeoecology 514: 672–676."/>
+  <meta name="citation_reference" content="Greenwell, B., B. Boehmke, J. Cunningham, and GBM Developers. 2019. ‘gbm’: Generalized Boosted Regression Models. R package version 2.1.5 https://cran.r-project.org/package=gbm"/>
+  <meta name="citation_reference" content="Harbert, R.S. and K.C. Nixon. 2015. Climate reconstruction analysis using coexistence likelihood estimation (CRACLE): A method for the estimation of climate using vegetation. American Journal of Botany 102(8): 1277–1289."/>
+  <meta name="citation_reference" content="Harbert, R.S. and Nixon, K.C., 2018. Quantitative Late Quaternary Climate Reconstruction from Plant Macrofossil Communities in Western North America. Open Quaternary 4(1):8."/>
+  <meta name="citation_reference" content="Harris, A.J., Papeş, M., Gao, Y.D. and Watson, L., 2014. Estimating paleoenvironments using ecological niche models of nearest living relatives: A case study of Eocene Aesculus L. Journal of Systematics and Evolution, 52(1): 16–34."/>
+  <meta name="citation_reference" content="Hijmans, R.J., S.E. Cameron, J.L. Parra, P.G. Jones, A. Jarvis. 2005. Very high resolution interpolated climate surfaces for global land areas. International Journal of Climatology: A Journal of the Royal Meteorological Society 25(15):1965–1978."/>
+  <meta name="citation_reference" content="Hijmans, R.J. (2018). raster: Geographic Data Analysis and Modeling. R package version 2.8-4. https://CRAN.R-project.org/package=raster"/>
+  <meta name="citation_reference" content="Hyland, E.G., K.W. Huntington, N.D. Sheldon, and T. Reichgelt. 2018. Temperature seasonality in the North American continental interior during the Early Eocene Climatic Optimum. Climate of the Past 14(10): 1391–1404."/>
+  <meta name="citation_reference" content="Karger, D.N., O. Conrad, J. Böhner, T. Kawohl, H. Kreft, R.W. Soria-Auza, N.E. Zimmermann, H.P. Linder, and M. Kessler. 2017. Climatologies at high resolution for the earth’s land surface areas. Scientific Data 4:170122."/>
+  <meta name="citation_reference" content="Maitner, B.S., B. Boyle, N. Casler, R. Condit, J. Donoghue, S.M. Durán, D. Guaderrama, C.E. Hinchliff, P.M. Jørgensen, N.J. Kraft, and B. McGill. 2018. The bien r package: A tool to access the Botanical Information and Ecology Network (BIEN) database. Methods in Ecology and Evolution 9(2):373–379"/>
+  <meta name="citation_reference" content="Montade, V., O. Peyron, C. Favier, J.P Francois, and S.G. Haberle. 2019. A pollen– climate calibration from western Patagonia for palaeoclimatic reconstructions. Journal of Quaternary Science 34(1): 76–86."/>
+  <meta name="citation_reference" content="Mosbrugger, V. and T. Utescher. 1997. The coexistence approach—a method for quantitative reconstructions of Tertiary terrestrial palaeoclimate data using plant fossils. Palaeogeography, Palaeoclimatology, Palaeoecology 134(1-4):61–86."/>
+  <meta name="citation_reference" content="R Core Team (2018). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL https://www.R-project.org/."/>
+  <meta name="citation_reference" content="Silverman, BW. 1986. Density estimation for statistics and data analysis. Routledge. DOI: https://doi.org/10.1201/9781315140919"/>
+  <meta name="citation_reference" content="Thompson, R.S., K.H. Anderson, R.T. Pelltier, L.E. Strickland, P.J. Bartlein, and S.L. Shafer. 2012. Quantitative estimation of climatic parameters from vegetation data in North America by the mutual climatic range technique. Quaternary Science Reviews 51:18–39."/>
+  <meta name="citation_reference" content="Title, P.O. and J.B. Bemmels. 2018. ENVIREM: an expanded set of bioclimatic and topographic variables increases flexibility and improves performance of ecological niche modeling. Ecography 41(2):291–307."/>
+  <meta name="citation_reference" content="Utescher, T., A.A. Bruch, B. Erdei, L. François, D. Ivanov, F.M.B. Jacques, A.K. Kern, V. Mosbrugger, and R.A. Spicer. 2014. The Coexistence Approach—theoretical background and practical considerations of using plant fossils for climate quantification. Palaeogeography, Palaeoclimatology, Palaeoecology, 410: 58–73."/>
+  <meta name="citation_reference" content="Willard, D.A., T.H. Donders, T. Reichgelt, D.R. Greenwood, F. Sangiorgi, F. Peterse, K.G. Nierop, j. Frieling, S. Schouten, and A. Sluijs. 2019. Arctic vegetation, temperature, and hydrology during Early Eocene transient global warming events. Global and Planetary Change 178:139–152."/>
+  <meta name="citation_reference" content="Zaborac-Reed, S.J. and E.B. Leopold. 2016. Determining the paleoclimate and elevation of the late Eocene Florissant flora: support from the coexistence approach. Canadian Journal of Earth Sciences 53(6): 565–573."/>
+  <meta name="twitter:title" content="cRacle: R Tools for Estimating Climate from Vegetation"/>
+  <meta name="twitter:site" content="@biorxivpreprint"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:image" content="https://www.biorxiv.org/sites/default/files/images/biorxiv_logo_homepage7-5-small.png"/>
+  <meta name="twitter:description" content="Premise of the study The Climate Reconstruction Analysis using Coexistence Likelihood Estimation (CRACLE) method for the estimation of climate from vegetation is a robust set of modeling tools for estimating climate and paleoclimate that makes use of large repositories of biodiversity data and open-access R software. Methods Here we implement a new R library for the estimation of climate from vegetation.The ‘cRacle’ library implements functions for data access, aggregation, and models to estimate climate from plant community composition. ‘cRacle’ is modular and features many best-practice features. Results Performance tests using modern vegetation survey data from North and South America shows that CRACLE outperforms alternative methods. CRACLE estimates of mean annual temperature (MAT) are usually within 1°C of the actual when optimal model parameters are used. Generalized Boosted Regression (GBR) model correction is also shown here to improve on CRACLE models by reducing bias. Discussion CRACLE provides accurate estimates of climate from modern plant communities. Non-parametric CRACLE modeling coupled to GBR model correction produces the most accurate results to date. The ‘cRacle’ R library streamlines the estimation of climate from plant community data, and will make this modeling more accessible to a wider range of users."/>
+  <meta name="og-title" property="og:title" content="cRacle: R Tools for Estimating Climate from Vegetation"/>
+  <meta name="og-url" property="og:url" content="https://www.biorxiv.org/content/10.1101/641183v2"/>
+  <meta name="og-site-name" property="og:site_name" content="bioRxiv"/>
+  <meta name="og-description" property="og:description" content="Premise of the study The Climate Reconstruction Analysis using Coexistence Likelihood Estimation (CRACLE) method for the estimation of climate from vegetation is a robust set of modeling tools for estimating climate and paleoclimate that makes use of large repositories of biodiversity data and open-access R software. Methods Here we implement a new R library for the estimation of climate from vegetation.The ‘cRacle’ library implements functions for data access, aggregation, and models to estimate climate from plant community composition. ‘cRacle’ is modular and features many best-practice features. Results Performance tests using modern vegetation survey data from North and South America shows that CRACLE outperforms alternative methods. CRACLE estimates of mean annual temperature (MAT) are usually within 1°C of the actual when optimal model parameters are used. Generalized Boosted Regression (GBR) model correction is also shown here to improve on CRACLE models by reducing bias. Discussion CRACLE provides accurate estimates of climate from modern plant communities. Non-parametric CRACLE modeling coupled to GBR model correction produces the most accurate results to date. The ‘cRacle’ R library streamlines the estimation of climate from plant community data, and will make this modeling more accessible to a wider range of users."/>
+  <meta name="og-type" property="og:type" content="article"/>
+  <meta name="og-image" property="og:image" content="https://www.biorxiv.org/sites/default/files/images/biorxiv_logo_homepage7-5-small.png"/>
+  <meta name="citation_date" content="2019-05-18"/> 
+  <meta name="description" content="bioRxiv - the preprint server for biology, operated by Cold Spring Harbor Laboratory, a research and educational institution"/>
+  <meta name="generator" content="Drupal 7 (http://drupal.org)"/> 
+  <title>cRacle: R Tools for Estimating Climate from Vegetation | bioRxiv</title> 
+ </head>
+ <body class="html not-front not-logged-in page-node page-node- page-node-739126 node-type-highwire-article context-content hw-default-jcode-biorxiv hw-article-type-article hw-article-category-new-results"> 
+  <div class="article fulltext-view ">
+   <span class="highwire-journal-article-marker-start"/>
+   <div class="section abstract" id="abstract-1">
+    <h2 class="">ABSTRACT</h2>
+    <div id="sec-1" class="subsection">
+     <p id="p-2">
+      <strong>Premise of the study</strong> The Climate Reconstruction Analysis using Coexistence Likelihood Estimation (CRACLE) method for the estimation of climate from vegetation is a robust set of modeling tools for estimating climate and paleoclimate that makes use of large repositories of biodiversity data and open-access R software.
+     </p>
+    </div>
+    <div id="sec-2" class="subsection">
+     <p id="p-3">
+      <strong>Methods</strong> Here we implement a new R library for the estimation of climate from vegetation.The ‘cRacle’ library implements functions for data access, aggregation, and models to estimate climate from plant community composition. ‘cRacle’ is modular and features many best-practice features.
+     </p>
+    </div>
+    <div id="sec-3" class="subsection">
+     <p id="p-4">
+      <strong>Results</strong> Performance tests using modern vegetation survey data from North and South America shows that CRACLE outperforms alternative methods. CRACLE estimates of mean annual temperature (MAT) are usually within 1°C of the actual when optimal model parameters are used. Generalized Boosted Regression (GBR) model correction is also shown here to improve on CRACLE models by reducing bias.
+     </p>
+    </div>
+    <div id="sec-4" class="subsection">
+     <p id="p-5">
+      <strong>Discussion</strong> CRACLE provides accurate estimates of climate from modern plant communities. Non-parametric CRACLE modeling coupled to GBR model correction produces the most accurate results to date. The ‘cRacle’ R library streamlines the estimation of climate from plant community data, and will make this modeling more accessible to a wider range of users.
+     </p>
+    </div>
+   </div>
+   <div class="section" id="sec-5">
+    <h2 class="">INTRODUCTION</h2>
+    <p id="p-8">‘cRacle’ is an open-source R software package that performs the Climate Reconstruction Analysis using Coexistence Likelihood Estimation (CRACLE) model for the estimation of climate from biological community data (
+     <a id="xref-ref-7-1" class="xref-bibr" href="#ref-7">Harbert &amp;; Nixon, 2015</a>). CRACLE performs an empirical likelihood estimation of climatic parameters given a set of taxa (species, genera, or families) and their modern distributions via point-locality data from the Global Biodiversity Information Facility (GBIF) or similar primary biodiversity databases (e.g., iNaturalist, iDigBio, BIEN).
+    </p>
+    <p id="p-9">The primary application of CRACLE and related methods is in the reconstruction of paleoclimate from fossil floras. All current applications of CRACLE make assumptions about climatic niche stability through time because the rely on the Nearest Living Relative (NLR) approach to infer elements of fossil taxon niche dimensions by observing the niche space occupied by a closely related extant relative (
+     <a id="xref-ref-16-1" class="xref-bibr" href="#ref-16">Mosbrugger and Utescher, 1997</a>; Utescher, 2014; 
+     <a id="xref-ref-9-1" class="xref-bibr" href="#ref-9">Harris 
+      <em>et al</em>. 2014
+     </a>). The NLR assumptions will be most valid when the fossil taxa can be placed as members of extant species and least accurate when fossils are members of extinct lineages. For this reason, NLR and CRACLE will produce the most reliable reconstructions of relatively recent (e.g., Pleistocene and Pliocene) paleoclimate, but may produce reasonable results for much older fossil assemblages where the plant fossil taxa can be placed reliably in extant groups with well sampled modern distributions (e.g., 
+     <a id="xref-ref-9-2" class="xref-bibr" href="#ref-9">Harris 
+      <em>et al.</em> 2014
+     </a>).
+    </p>
+    <p id="p-10">CRACLE modeling was recently applied to the estimation of paleoclimate using Late Quaternary (&lt;;50ka – 
+     <em>kilo anuum</em>) plant macrofossils from packrat (
+     <em>Neotoma</em> spp.) middens in Western North America (
+     <a id="xref-ref-8-1" class="xref-bibr" href="#ref-8">Harbert, Nixon 2018</a>). Analysis of the packrat midden paleoclimate estimates revealed a history of rapid climate change during and just after the Late Pleistocene deglaciation, followed by Holocene warm and dry periods of 1-2°C above the modern (1950-2000) averages (
+     <a id="xref-ref-8-2" class="xref-bibr" href="#ref-8">Harbert and Nixon, 2018</a>)
+    </p>
+    <p id="p-11">Community assemblages from excavated permafrost at five Pliocene sites in the Canadian Arctic Archipelago analyzed with CRACLE (
+     <a id="xref-ref-4-1" class="xref-bibr" href="#ref-4">Fletcher 
+      <em>et al</em>., 2017
+     </a>). This work revealed that the Canadian arctic was up to 22°C warmer than today during the Early Pliocene (~3.6Ma – 
+     <em>mega anuum</em>) and supported many cool-temperate plant taxa. However, 
+     <a id="xref-ref-4-2" class="xref-bibr" href="#ref-4">Fletcher 
+      <em>et al.</em> (2017)
+     </a> carefully compared results derived from CRACLE estimates using species only identifications vs. generic level identifications and suggest that care must be taken when interpreting CRACLE results when generic level identifications are used to avoid being misled by model imprecision.
+    </p>
+    <p id="p-12">Modified bioclimatic envelope method that are closely related to CRACLE were recently used to reconstruct the Paleocene-Eocene Thermal Maximum (~55Ma) and the Eocene Thermal Maximum (53.5Ma) by way of plant macrofossils from the Green River Basin in southwestern Wyoming and plant microfossils found in Arctic marine sediment cores (
+     <a id="xref-ref-12-1" class="xref-bibr" href="#ref-12">Hyland et al., 2018</a>; 
+     <a id="xref-ref-22-1" class="xref-bibr" href="#ref-22">Willard et al., 2019</a>).
+    </p>
+    <p id="p-13">CRACLE models have been applied to non-plant communities as well. Pliocene Arctic climate estimates based on fossil beetle communities using CRACLE, revealed notable biases in beetle based climate reconstructions relative to plant proxy and stable isotope methods (
+     <a id="xref-ref-5-1" class="xref-bibr" href="#ref-5">Fletcher 
+      <em>et al</em>., 2018
+     </a>).
+    </p>
+    <p id="p-14">Despite CRACLE existing for the first four years as only a single R script published as a supplement to the original paper (
+     <a id="xref-ref-7-2" class="xref-bibr" href="#ref-7">Harbert and Nixon, 2015</a>) the method has proven to be a useful tool to the community (presently 16 Google Scholar citations), yielding informative results for several fossil systems. Here, we present the ‘cRacle’ R package. ‘cRacle’ is designed to streamline the process of CRACLE modeling, data acquisition and pre-processing of primary biodiversity data (from GBIF and other related databases), and CRACLE result visualization. The ‘cRacle’ R package is built from modular functions that perform segments of the modeling protocol that allow for easy to read R scripts as well as future modular developments of related methods.
+    </p>
+    <p id="p-15">For comparison with the CRACLE methods, we have also implemented the related Thompson’s Mutual Climatic Range (MCR; 
+     <a id="xref-ref-19-1" class="xref-bibr" href="#ref-19">Thompson et al., 2012</a>). We include both the weighted and unweighted MCR methods as representatives of the many available MCR or Coexistence Approach (CA) range-intersect methods (
+     <a id="xref-ref-16-2" class="xref-bibr" href="#ref-16">Mosbrugger and Utescher, 1997</a>; Sinka and Atkinson, 1999; 
+     <a id="xref-ref-21-1" class="xref-bibr" href="#ref-21">Utescher et al., 2014</a>) for the estimation of climate from vegetation (ECV) as part of the ‘cRacle’ R package. The ‘cRacle’ package is distributed under the open MIT License and all code is available on GitHub (
+     <a href="https://www.github.com/rsh249/cRacle">https://www.github.com/rsh249/cRacle</a>).
+    </p>
+   </div>
+   <div class="section" id="sec-6">
+    <h2 class="">METHODS</h2>
+    <p id="p-16">Full documentation of ‘cRacle’ R code is available with the package code (
+     <a href="https://github.com/rsh249/cRacle">https://github.com/rsh249/cRacle</a>). Below is an outline of the major functionality of the ‘cRacle’ package and explanation of many of the core functions available.
+    </p>
+    <div id="sec-7" class="subsection">
+     <h3>‘cRacle’ Package Functions – Data Acquisition</h3>
+     <p id="p-17">Downloading primary biodiversity data from GBIF (
+      <a href="http://www.gbif.org">www.gbif.org</a>), iNaturalist (
+      <a href="http://www.inaturalist.org">www.inaturalist.org</a>), and BISON (
+      <a href="http://www.bison.usgs.gov">www.bison.usgs.gov</a>) are supported in ‘cRacle’ through the functions 
+      <em>gbif_get(), get_bison()</em>, and 
+      <em>inat()</em>. Each of these functions accepts arguments for a single taxon (genus, species, or family) to query and a maximum number of records to return. Data pre-processing, cleaning for outliers, spatial bias reduction, and climate data extraction for a set of georeferenced occurrence data is done through the 
+      <em>extraction()</em> function. Data downloading for multiple taxa and preprocessing functionality can be done in one step using the 
+      <em>getextr()</em> function, which is implemented with parallel computing capability to reduce user wait time.
+     </p>
+    </div>
+    <div id="sec-8" class="subsection">
+     <h3>Likelihood Modeling</h3>
+     <p id="p-18">The primary modeling that CRACLE requires is the calculation of probability density functions using both parametric (Gaussian Normal) and non-parametric (Kernel Density) estimates. These calculations can be performed with ‘cRacle’ directly from the output of 
+      <em>extraction()</em> using the function(s) 
+      <em>dens_obj()</em> and 
+      <em>densform()</em> for multiple and single taxa respectively. Note that 
+      <em>dens_obj()</em> is simply a wrapper function for 
+      <em>densform()</em> designed to make multi-species likelihood model building simpler. Both parametric and non-parametric likelihood functions are always calculated and stored in the object produced by 
+      <em>densform()</em> and 
+      <em>dens_obj()</em>. This way all calculations are done in tandem for a dataset and results for both methods can be examined at the end of the CRACLE process.
+     </p>
+     <p id="p-19">The likelihood modeling carried out in the 
+      <em>densform()</em> function includes several options that can be manipulated by the user. The Kernel Density Estimation (KDE) employed by CRACLE can now be implemented with several kernel estimators including the standard Gaussian, Epanechnikov, cosine, optcosine, biweight, rectangular, and triangular kernels based on the R ‘stats’ package function 
+      <em>density()</em> (
+      <a id="xref-ref-17-1" class="xref-bibr" href="#ref-17">R Core Team, 2018</a>). The kernel bandwidth can be optimized using standard criteria via the argument ‘bw’ in the 
+      <em>densform()</em> and 
+      <em>dens_obj()</em> functions. Likelihoods can be calculated based on a standard or conditional probability via the ‘manip’ argument where conditional probabilities take into account the background distribution of each climate parameter using a set of randomly sampled points from within a normalized distance from each primary occurrence location or from a user defined set of climate data. Finally, the resulting likelihood distributions can be trimmed to empirical ranges or confidence intervals to avoid unintended extrapolation using the ‘clip’ argument.
+     </p>
+    </div>
+    <div id="sec-9" class="subsection">
+     <h3>CRACLE Joint Likelihood</h3>
+     <p id="p-20">After likelihood functions are estimated the next key CRACLE step is to calculate first the joint likelihood and then the maximum of the joint likelihood distribution. ‘cRacle’ implements the function 
+      <em>and_fun()</em> for calculating the joint likelihood and 
+      <em>or_fun()</em> for creating unions between taxa for merging likelihood features between groups (i.e., between species in a clade). The output of 
+      <em>and_fun()</em> is a set of joint likelihood features for all parameters, and this can be summarized by the function 
+      <em>get_optim()</em> which finds the optimal climate values for each parameter. The output of 
+      <em>get_optim()</em> provides the user with CRACLE results.
+     </p>
+    </div>
+    <div id="sec-10" class="subsection">
+     <h3>Example Pseudocode</h3>
+     <p id="p-21">The general CRACLE modeling flow will use the following functions in order: 
+      <em>getextr() -&gt;; dens_obj()-&gt;; and_fun()-&gt;; get_optim();</em> to produce climate estimates from a list of taxa. This code would: download data and extract climate data, estimate likelihood distributions, calculate the joint likelihood, and find the optimum of the joint likelihood for each climate variable analyzed.
+     </p>
+    </div>
+    <div id="sec-11" class="subsection">
+     <h3>Visualizing Likelihood and Joint Likelihood Functions</h3>
+     <p id="p-22">‘cRacle’ provides a set of functions for visualizing the likelihood functions as standard probability density distributions. These functions are 
+      <em>densplot()</em> for plotting single distribution objects (i.e., for one taxon/climate parameter pair), 
+      <em>addplot()</em> for adding to an existing 
+      <em>densplot()</em> figure, and 
+      <em>multiplot()</em> for plotting distributions for multiple taxa given a single climate parameter. For example, a user may plot the distributions for all taxa in their study for Mean Annual Temperature using 
+      <em>multiplot()</em> and the output from 
+      <em>dens_obj()</em>, and then add the joint likelihood function using 
+      <em>addplot()</em> and the model object output from 
+      <em>and_fun()</em>.
+     </p>
+    </div>
+    <div id="sec-12" class="subsection">
+     <h3>Issue Tracking and Versioning</h3>
+     <p id="p-23">The repository at 
+      <a href="https://github.com/rsh249/cRacle.git">https://github.com/rsh249/cRacle.git</a> will maintain the current development version of ‘cRacle’. Future major releases will be submitted to CRAN. Issues with running ‘cRacle’ code are accepted on the Git repository’s ‘Issues’ feature at 
+      <a href="https://github.com/rsh249/cRacle/issues">https://github.com/rsh249/cRacle/issues</a> or by email with the corresponding author of this publication.
+     </p>
+    </div>
+    <div id="sec-13" class="subsection">
+     <h3>Data access</h3>
+     <p id="p-24">Primary biodiversity data, occurrence coordinates for your target taxa, and climate data are required for CRACLE modeling. We recommend primary biodiversity data downloaded from the Global Biodiversity Information Facility (GBIF) and support data access through ‘cRacle’ functions. Climate data must be in the form of a raster object readable by the R ‘raster’ package (
+      <a id="xref-ref-11-1" class="xref-bibr" href="#ref-11">Hijmans, 2018</a>). Climate data from the WorldClim project (
+      <a id="xref-ref-10-1" class="xref-bibr" href="#ref-10">Hijmans et al., 2005</a>; 
+      <a id="xref-ref-3-1" class="xref-bibr" href="#ref-3">Fick and Hijmans, 2017</a>) are recommended, but users may also use raster data downloaded from other sources such as CHELSA (
+      <a id="xref-ref-13-1" class="xref-bibr" href="#ref-13">Karger et al., 2017</a>), and ENVIREM (
+      <a id="xref-ref-20-1" class="xref-bibr" href="#ref-20">Title and Bemmels, 2018</a>).
+     </p>
+    </div>
+    <div id="sec-14" class="subsection">
+     <h3>Estimation Climate from Vegetation – (ECV)</h3>
+     <p id="p-25">As originally described CRACLE consists of two methods for likelihood estimation: parametric and non-parametric probability functions. ‘cRacle’ implements these two approaches in tandem for each step of the likelihood analysis, and has implemented options about whether to calculate the likelihoods from standard probability or conditional probability. For comparison we have implemented calculations for the Mutual Climatic Range (MCR) method for ECV described by 
+      <a id="xref-ref-19-2" class="xref-bibr" href="#ref-19">Thompson 
+       <em>et al.</em> (2012)
+      </a>, though the unweighted MCR described is analogous to the Coexistence Approach (CA) described elsewhere (
+      <a id="xref-ref-16-3" class="xref-bibr" href="#ref-16">Mosbrugger and Utescher, 1997</a>)
+     </p>
+     <p id="p-26">CRACLE (
+      <a id="xref-ref-7-3" class="xref-bibr" href="#ref-7">Harbert and Nixon, 2015</a>) defines both a parametric and non-parametric probability density function for each taxon – climate parameter pair. CRACLE estimates likelihood for a set of taxa (t
+      <sub>1:i</sub>). The CRACLE Parametric –Normal – probabilities are estimated as: 
+      <span class="disp-formula" id="disp-formula-1">
+       <span class="highwire-responsive-lazyload">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="highwire-embed lazyload" alt="Embedded Image" data-src="https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/05/18/641183/embed/graphic-1.gif"/>
+        <noscript>
+         <img class="highwire-embed" alt="Embedded Image" src="https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/05/18/641183/embed/graphic-1.gif"/>
+        </noscript>
+       </span>
+      </span>
+     </p>
+     <p id="p-27">Whereas the CRACLE Non-Parametric – Kernel Density Estimation (KDE) – probabilities are estimated as: 
+      <span class="disp-formula" id="disp-formula-2">
+       <span class="highwire-responsive-lazyload">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="highwire-embed lazyload" alt="Embedded Image" data-src="https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/05/18/641183/embed/graphic-2.gif"/>
+        <noscript>
+         <img class="highwire-embed" alt="Embedded Image" src="https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/05/18/641183/embed/graphic-2.gif"/>
+        </noscript>
+       </span>
+      </span>
+     </p>
+     <p id="p-28">Where K is a Kernel function of properties XXXX, and ‘h’ is the kernel bandwidth, a smoothing parameter with value &gt;; 0. We recommend using either the “optcosine” or “gaussian” kernels and a bandwidth calculated using Silverman’s Rule of Thumb (
+      <a id="xref-ref-18-1" class="xref-bibr" href="#ref-18">Silverman, 1986</a>). ‘cRacle’ allows for the calculation of probability density functions conditioned by the probability density of a random background sample for each climate parameter defined as: 
+      <span class="disp-formula" id="disp-formula-3">
+       <span class="highwire-responsive-lazyload">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="highwire-embed lazyload" alt="Embedded Image" data-src="https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/05/18/641183/embed/graphic-3.gif"/>
+        <noscript>
+         <img class="highwire-embed" alt="Embedded Image" src="https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/05/18/641183/embed/graphic-3.gif"/>
+        </noscript>
+       </span>
+      </span>
+     </p>
+     <p id="p-29">Where ‘c’ is the set of background climate given by a sample of points from within the study area. The conditional probability for a taxon (t) is defined as: 
+      <span class="disp-formula" id="disp-formula-4">
+       <span class="highwire-responsive-lazyload">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="highwire-embed lazyload" alt="Embedded Image" data-src="https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/05/18/641183/embed/graphic-4.gif"/>
+        <noscript>
+         <img class="highwire-embed" alt="Embedded Image" src="https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/05/18/641183/embed/graphic-4.gif"/>
+        </noscript>
+       </span>
+      </span>
+     </p>
+     <p id="p-30">For the estimation of climate from vegetation CRACLE modeling calculates the joint likelihood for multiple taxon probability functions as: 
+      <span class="disp-formula" id="disp-formula-5">
+       <span class="highwire-responsive-lazyload">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="highwire-embed lazyload" alt="Embedded Image" data-src="https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/05/18/641183/embed/graphic-5.gif"/>
+        <noscript>
+         <img class="highwire-embed" alt="Embedded Image" src="https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/05/18/641183/embed/graphic-5.gif"/>
+        </noscript>
+       </span>
+      </span>
+     </p>
+     <p id="p-31">Where the maximum value of L(x| t
+      <sub>1:i</sub>)corresponds to the value of the climate parameter ‘x’ that is most likely to lead to the coexistence of that set of taxa (t
+      <sub>1:i</sub>).
+     </p>
+     <p id="p-32">Note that ‘cRacle’ also implements the calculation of a weighted mean by variance that can be substituted for the parametric CRACLE functions. Weighted means 
+      <span class="inline-formula" id="inline-formula-1">
+       <span class="highwire-responsive-lazyload">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="highwire-embed lazyload" alt="Embedded Image" data-src="https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/05/18/641183/embed/inline-graphic-1.gif"/>
+        <noscript>
+         <img class="highwire-embed" alt="Embedded Image" src="https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/05/18/641183/embed/inline-graphic-1.gif"/>
+        </noscript>
+       </span>
+      </span> is calculated given a set of taxon means (x
+      <sub>1:i</sub>) and standard deviations (σ
+      <sub>1:i</sub>): 
+      <span class="disp-formula" id="disp-formula-6">
+       <span class="highwire-responsive-lazyload">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="highwire-embed lazyload" alt="Embedded Image" data-src="https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/05/18/641183/embed/graphic-6.gif"/>
+        <noscript>
+         <img class="highwire-embed" alt="Embedded Image" src="https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/05/18/641183/embed/graphic-6.gif"/>
+        </noscript>
+       </span>
+      </span>
+     </p>
+    </div>
+    <div id="sec-15" class="subsection">
+     <h3>Modern Validation</h3>
+     <p id="p-33">To test the performance of CRACLE that can be expected for paleoclimate modeling we set two experimental analyses to test aspects of the CRACLE modeling process.</p>
+     <p id="p-34">First, we sample iNaturalist data (
+      <a href="http://www.inaturalist.org">www.inaturalist.org</a>) by a grid search of North America for plant species coexisting in 0.1×0.1 degree bounded search areas using the ‘rinat’ R package (
+      <a id="xref-ref-2-1" class="xref-bibr" href="#ref-2">Barve and Hart, 2017</a>). Then we build CRACLE estimates for Mean Annual Temperature using the WorldClim 2.0 dataset at 2.5 arcminutes resolution (
+      <a id="xref-ref-3-2" class="xref-bibr" href="#ref-3">Fick and Hijmans, 2017</a>) for parametric and non-parametric CRACLE as well as MCR and MCR un (unweighted) methods. Primary biodiversity data were obtained from GBIF (
+      <a href="http://www.gbif.org">www.gbif.org</a>) using the ‘cRacle’ 
+      <em>get_dist_all()</em> function and the GBIF RESTful JSON based API. Model overfitting for the iNaturalist dataset was tested by spatially thinning the raw GBIF data using the ‘cRacle’ 
+      <em>extraction()</em> function for factors of 2,4,6,8, and 10 times the dimensions of the 2.5 arcminute climate raster cells. The ‘cRacle’ thinning procedure is an imperfect, but efficient, spatial thinning method that is consistent with best-practices in Ecological Niche Modeling literature (
+      <a id="xref-ref-1-1" class="xref-bibr" href="#ref-1">Aiello-Lammens 
+       <em>et al.</em> 2015
+      </a>). CRACLE and MCR model output for each thinning level were summarized and reported for general guidance. The R code for the iNaturalist grid search test is available at 
+      <a href="https://github.com/rsh249/cracle_examples/inat_grid_search">https://github.com/rsh249/cracle_examples/inat_grid_search</a>.
+     </p>
+     <p id="p-35">Second, the Botanical Information and Ecology Network (BIEN 4.0) database was queried for published vegetation plot surveys from North and South America using the ‘rbien’ R package (
+      <a id="xref-ref-14-1" class="xref-bibr" href="#ref-14">Maitner 
+       <em>et al.</em> 2017
+      </a>). For plot surveys with &gt;;5 plant taxa with distribution data available from GBIF we estimated climate parameters for all 19 bioclimatic variables from the WorldClim 2.0 data (
+      <a id="xref-ref-3-3" class="xref-bibr" href="#ref-3">Fick and Hijmans, 2017</a>) using parametric CRACLE methods and spatial thinning to a factor of 2 times the 2.5 arcminute climate grid. Error in CRACLE are non-random (
+      <a id="xref-ref-7-4" class="xref-bibr" href="#ref-7">Harbert and Nixon, 2015</a>), therefore non-linear regression modeling may be able to account for and correct common CRACLE errors. CRACLE results for 70,391 plot surveys were then partitioned 50:50 into training and testing sets by random sampling with replacement and Generalized Boosted Regression (GBR) models were fit to the training data for each of the 19 climate parameters using the R ‘gbm’ package (
+      <a id="xref-ref-6-1" class="xref-bibr" href="#ref-6">Greenwell 
+       <em>et al.</em> 2019
+      </a>). The GBR models made adjusted climate estimates using the CRACLE results in the test set to determine whether error patterns in CRACLE can be predicted by GBR and therefore may be corrected for in independent analyses. The R code for the iNaturalist grid search is available: 
+      <a href="https://github.com/rsh249/cracle_examples/cracle_bien">https://github.com/rsh249/cracle_examples/cracle_bien</a>.
+     </p>
+    </div>
+   </div>
+   <div class="section" id="sec-16">
+    <h2 class="">RESULTS</h2>
+    <div id="sec-17" class="subsection">
+     <h3>Modern Validation</h3>
+     <div id="sec-18" class="subsection">
+      <h4>iNaturalist</h4>
+      <p id="p-36">The grid search of iNaturalist in North America yielded climate estimations by CRACLE (both parametric and non-parametric) and the Mutual Climatic Range (MCR) unweighted and weighted approaches for 285 sites at spatial thinning factors of 0, 2, 4, 6, 8, and 10 times the 2.5 arcminute climate raster. A total of 1,204,925 unique records were accessed from GBIF for this analysis for a total of 1541 species. The sampled localities ranged in mean annual temperature (MAT) from 0.4-26.1°C. The top performing (lowest error rates) estimates were the CRACLE non-parametric (‘kde’ in 
+       <a id="xref-fig-1-1" class="xref-fig" href="#F1">Figure 1</a>) and the MCR weighted (‘mcr.w’ in 
+       <a id="xref-fig-1-2" class="xref-fig" href="#F1">Figure 1</a>) methods. Mean errors for CRACLE were ~1°C and median errors were generally less than the means. Spatial thinning did not change mean or median error rates for any of the tested methods (
+       <a id="xref-fig-1-3" class="xref-fig" href="#F1">Fig. 1B,C</a>).
+      </p>
+      <div id="F1" class="fig pos-float type-figure odd">
+       <div class="highwire-figure">
+        <div class="fig-inline-img-wrapper">
+         <div class="fig-inline-img">
+          <a href="https://www.biorxiv.org/content/biorxiv/early/2019/05/18/641183/F1.large.jpg?width=800&amp;;height=600&amp;;carousel=1" title="iNaturalist Grid Search Climate Estimation Results. A) Geographic search area (shading) with successful climate estimation locations marked (black squares). B) Mean Anomaly Rates, and C) Median Anomaly Rates for CRACLE ([[#x2018]]kde[[#x2019]] non-parametric, and [[#x2018]]means[[#x2019]] parametric) and MCR ([[#x2018]]uw[[#x2019]] unweighted and [[#x2018]]w[[#x2019]] weighted) results for factor levels of 0 ([[#x2018]]raw[[#x2019]]), 2, 4, 6, 8, and 10 times the 2.5 arcminute climate raster." class="highwire-fragment fragment-images colorbox-load" rel="gallery-fragment-images-828798454" data-figure-caption="&lt;;div class=&quot;;highwire-markup&quot;;&gt;;iNaturalist Grid Search Climate Estimation Results. A) Geographic search area (shading) with successful climate estimation locations marked (black squares). B) Mean Anomaly Rates, and C) Median Anomaly Rates for CRACLE ([[#x2018]]kde[[#x2019]] non-parametric, and [[#x2018]]means[[#x2019]] parametric) and MCR ([[#x2018]]uw[[#x2019]] unweighted and [[#x2018]]w[[#x2019]] weighted) results for factor levels of 0 ([[#x2018]]raw[[#x2019]]), 2, 4, 6, 8, and 10 times the 2.5 arcminute climate raster.&lt;;/div&gt;;" data-icon-position="" data-hide-link-title="0">
+           <span class="hw-responsive-img">
+            <img class="highwire-fragment fragment-image lazyload" alt="Figure 1." src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://www.biorxiv.org/content/biorxiv/early/2019/05/18/641183/F1.medium.gif" width="196" height="440"/>
+            <noscript>
+             <img class="highwire-fragment fragment-image" alt="Figure 1." src="https://www.biorxiv.org/content/biorxiv/early/2019/05/18/641183/F1.medium.gif" width="196" height="440"/>
+            </noscript>
+           </span>
+          </a>
+         </div>
+        </div>
+        <ul class="highwire-figure-links inline">
+         <li class="download-fig first">
+          <a href="https://www.biorxiv.org/content/biorxiv/early/2019/05/18/641183/F1.large.jpg?download=true" class="highwire-figure-link highwire-figure-link-download" title="Download Figure 1." data-icon-position="" data-hide-link-title="0">Download figure</a>
+         </li>
+         <li class="new-tab last">
+          <a href="https://www.biorxiv.org/content/biorxiv/early/2019/05/18/641183/F1.large.jpg" class="highwire-figure-link highwire-figure-link-newtab" target="_blank" data-icon-position="" data-hide-link-title="0">Open in new tab</a>
+         </li>
+        </ul>
+       </div>
+       <div class="fig-caption">
+        <span class="fig-label">Figure 1.</span>
+        <p id="p-37" class="first-child">iNaturalist Grid Search Climate Estimation Results. A) Geographic search area (shading) with successful climate estimation locations marked (black squares). B) Mean Anomaly Rates, and C) Median Anomaly Rates for CRACLE (‘kde’ non-parametric, and ‘means’ parametric) and MCR (‘uw’ unweighted and ‘w’ weighted) results for factor levels of 0 (‘raw’), 2, 4, 6, 8, and 10 times the 2.5 arcminute climate raster.</p>
+        <div class="sb-div caption-clear"/>
+       </div>
+      </div>
+     </div>
+     <div id="sec-19" class="subsection">
+      <h4>BIEN</h4>
+      <p id="p-38">Non-parametric CRACLE estimates of all 19 WorldClim Bioclim variables (
+       <a href="http://www.worldclim.org/bioclim">www.worldclim.org/bioclim</a>) from the WorldClim 2.0 dataset (
+       <a id="xref-ref-3-4" class="xref-bibr" href="#ref-3">Fick and Hijmans, 2017</a>) were generated for 70,391 vegetation plot surveys accessed through the BIEN 4.0 database using a total of 2,560,261 georeferenced specimen records from GBIF.
+      </p>
+      <p id="p-39">Mean absolute anomaly rates for temperature parameters were between 1-2°C with Pearson’s Correlation coefficients greater than 0.9 in the best scenarios (
+       <a id="xref-table-wrap-1-1" class="xref-table" href="#T1">Table 1</a>), but up to 5°C and correlation coefficients &lt;;0.7 for estimates of mean temperature during the wettest and driest quarters of the year (BIO8 and BIO9). The mean absolute anomaly rates for mean annual precipitation (MAP – BIO12) was 179mm with a correlation of 0.79 (
+       <a id="xref-table-wrap-1-2" class="xref-table" href="#T1">Table 1</a>).
+      </p>
+      <div id="T1" class="table pos-float">
+       <div class="table-inline table-callout-links">
+        <div class="callout">
+         <span>View this table:</span>
+         <ul class="callout-links">
+          <li class="view-inline first">
+           <a href="##" class="table-expand-inline" data-table-url="/highwire/markup/741136/expansion?postprocessors=highwire_tables%2Chighwire_reclass%2Chighwire_figures%2Chighwire_math%2Chighwire_inline_linked_media%2Chighwire_embed&amp;;table-expand-inline=1" data-icon-position="" data-hide-link-title="0">View inline</a>
+          </li>
+          <li class="view-popup">
+           <a href="/highwire/markup/741136/expansion?width=1000&amp;;height=500&amp;;iframe=true&amp;;postprocessors=highwire_tables%2Chighwire_reclass%2Chighwire_figures%2Chighwire_math%2Chighwire_inline_linked_media%2Chighwire_embed" class="colorbox colorbox-load table-expand-popup" rel="gallery-fragment-tables" data-icon-position="" data-hide-link-title="0">View popup</a>
+          </li>
+          <li class="download-ppt last">
+           <a href="/highwire/powerpoint/741136" class="highwire-figure-link highwire-figure-link-ppt" data-icon-position="" data-hide-link-title="0">Download powerpoint</a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="table-caption">
+        <span class="table-label">Table 1:</span>
+        <p id="p-40" class="first-child">CRACLE performance statistics for 19 Bioclim parameters estimated for BIEN vegetation plot data (n=35,195 plots)</p>
+        <div class="sb-div caption-clear"/>
+       </div>
+      </div>
+      <p id="p-41">Generalized Boosted Regression (GBR) models were used to correct CRACLE estimates using independent random samples without replacement of 50% of the data for training and testing datasets. GBR correction improved CRACLE performance in the test set by 20-50% (
+       <a id="xref-table-wrap-1-3" class="xref-table" href="#T1">Table 1</a>, 
+       <a id="xref-table-wrap-2-1" class="xref-table" href="#T2">2</a>; 
+       <a id="xref-fig-2-1" class="xref-fig" href="#F2">Figure 2</a>). CRACLE+GBM corrected anomalies are smaller and more symmetrically distributed around ‘0’ than the non-corrected CRACLE results (
+       <a id="xref-fig-2-2" class="xref-fig" href="#F2">Figure 2D</a>), and CRACLE+GBM estimates are more strongly correlated with the WorldClim data than the raw CRACLE results (
+       <a id="xref-table-wrap-1-4" class="xref-table" href="#T1">Table 1</a>, 
+       <a id="xref-table-wrap-2-2" class="xref-table" href="#T2">2</a>).
+      </p>
+      <div id="T2" class="table pos-float">
+       <div class="table-inline table-callout-links">
+        <div class="callout">
+         <span>View this table:</span>
+         <ul class="callout-links">
+          <li class="view-inline first">
+           <a href="##" class="table-expand-inline" data-table-url="/highwire/markup/741139/expansion?postprocessors=highwire_tables%2Chighwire_reclass%2Chighwire_figures%2Chighwire_math%2Chighwire_inline_linked_media%2Chighwire_embed&amp;;table-expand-inline=1" data-icon-position="" data-hide-link-title="0">View inline</a>
+          </li>
+          <li class="view-popup last">
+           <a href="/highwire/markup/741139/expansion?width=1000&amp;;height=500&amp;;iframe=true&amp;;postprocessors=highwire_tables%2Chighwire_reclass%2Chighwire_figures%2Chighwire_math%2Chighwire_inline_linked_media%2Chighwire_embed" class="colorbox colorbox-load table-expand-popup" rel="gallery-fragment-tables" data-icon-position="" data-hide-link-title="0">View popup</a>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div class="table-caption">
+        <span class="table-label">Table 2:</span>
+        <p id="p-42" class="first-child">GBR Corrected CRACLE performance statistics for 19 Bioclim parameters estimated for BIEN vegetation plot data (n=35,195 plots)</p>
+        <div class="sb-div caption-clear"/>
+       </div>
+      </div>
+      <div id="F2" class="fig pos-float type-figure odd">
+       <div class="highwire-figure">
+        <div class="fig-inline-img-wrapper">
+         <div class="fig-inline-img">
+          <a href="https://www.biorxiv.org/content/biorxiv/early/2019/05/18/641183/F2.large.jpg?width=800&amp;;height=600&amp;;carousel=1" title="CRACLE estimates and GBR error correction demonstration for BIEN vegetation plot surveys and representative climate parameters. BIEN vegetation plot surveys from 70,391 unique localities (A) were analyzed with CRACLE (B) to estimate the 19 Bioclim variables (showing BIO1, 5, 6, 12, 17, and 18 here as top performing examples) from the WorldClim2.0 dataset (Fick and Hijmans, 2017). Generalized Boosted Regression error correction modeling was trained and tested (C) on independent subsets of plot data. GBR correction yielded overall reduced error rates and less biased estimates in many cases (D)." class="highwire-fragment fragment-images colorbox-load" rel="gallery-fragment-images-828798454" data-figure-caption="&lt;;div class=&quot;;highwire-markup&quot;;&gt;;&lt;;span xmlns=&quot;;http://www.w3.org/1999/xhtml&quot;; class=&quot;;caption-title&quot;;&gt;;CRACLE estimates and GBR error correction demonstration for BIEN vegetation plot surveys and representative climate parameters.&lt;;/span&gt;; BIEN vegetation plot surveys from 70,391 unique localities (A) were analyzed with CRACLE (B) to estimate the 19 Bioclim variables (showing BIO1, 5, 6, 12, 17, and 18 here as top performing examples) from the WorldClim2.0 dataset (Fick and Hijmans, 2017). Generalized Boosted Regression error correction modeling was trained and tested (C) on independent subsets of plot data. GBR correction yielded overall reduced error rates and less biased estimates in many cases (D).&lt;;/div&gt;;" data-icon-position="" data-hide-link-title="0">
+           <span class="hw-responsive-img">
+            <img class="highwire-fragment fragment-image lazyload" alt="Figure 2." src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://www.biorxiv.org/content/biorxiv/early/2019/05/18/641183/F2.medium.gif" width="379" height="440"/>
+            <noscript>
+             <img class="highwire-fragment fragment-image" alt="Figure 2." src="https://www.biorxiv.org/content/biorxiv/early/2019/05/18/641183/F2.medium.gif" width="379" height="440"/>
+            </noscript>
+           </span>
+          </a>
+         </div>
+        </div>
+        <ul class="highwire-figure-links inline">
+         <li class="download-fig first">
+          <a href="https://www.biorxiv.org/content/biorxiv/early/2019/05/18/641183/F2.large.jpg?download=true" class="highwire-figure-link highwire-figure-link-download" title="Download Figure 2." data-icon-position="" data-hide-link-title="0">Download figure</a>
+         </li>
+         <li class="new-tab last">
+          <a href="https://www.biorxiv.org/content/biorxiv/early/2019/05/18/641183/F2.large.jpg" class="highwire-figure-link highwire-figure-link-newtab" target="_blank" data-icon-position="" data-hide-link-title="0">Open in new tab</a>
+         </li>
+        </ul>
+       </div>
+       <div class="fig-caption">
+        <span class="fig-label">Figure 2.</span>
+        <span class="caption-title">CRACLE estimates and GBR error correction demonstration for BIEN vegetation plot surveys and representative climate parameters.</span>
+        <p id="p-43" class="first-child">BIEN vegetation plot surveys from 70,391 unique localities (A) were analyzed with CRACLE (B) to estimate the 19 Bioclim variables (showing BIO1, 5, 6, 12, 17, and 18 here as top performing examples) from the WorldClim2.0 dataset (
+         <a id="xref-ref-3-5" class="xref-bibr" href="#ref-3">Fick and Hijmans, 2017</a>). Generalized Boosted Regression error correction modeling was trained and tested (C) on independent subsets of plot data. GBR correction yielded overall reduced error rates and less biased estimates in many cases (D).
+        </p>
+        <div class="sb-div caption-clear"/>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="section" id="sec-20">
+    <h2 class="">DISCUSSION</h2>
+    <p id="p-44">The modern validation analyses conducted here should provide a good baseline for expected CRACLE performance going forward. More thorough testing in future studies is certainly welcome, but most modeling choices are should be made by the user to reflect any unique properties of their study system. The results we provide here indicate that the best estimates that are generated from the ‘cRacle’ software are the CRACLE non-parametric estimates with spatially thinned data, these yielding mean errors of approximately 0.5°C less than the Mutual Climatic Range (MCR) method, an analogous method to the widely used Coexistence Approach (
+     <a id="xref-ref-16-4" class="xref-bibr" href="#ref-16">Mosbrugger and Utescher, 1997</a>). Furthermore, CRACLE results presented here compare favorably, though indirectly, to recent applications of the Weighted Average – Partial Least Squares (WA-PLS) modeling that is common for analysis of fossil pollen samples that uses modern analog communities to build proxy models (
+     <a id="xref-ref-15-1" class="xref-bibr" href="#ref-15">Montade 
+      <em>et al.</em>, 2019
+     </a>). A direct comparison of CRACLE and WA-PLS methods is necessary future work.
+    </p>
+    <p id="p-45">Through our analysis of BIEN hosted vegetation plot surveys we show that CRACLE can produce accurate climate estimates for a variety of both temperature and precipitation parameters (
+     <a id="xref-fig-2-3" class="xref-fig" href="#F2">Figure 2</a>), though some parameters are better predicted than others (
+     <a id="xref-table-wrap-1-5" class="xref-table" href="#T1">Table 1</a>). Notably, BIO8 (Mean Temperature of the Warmest Quarter), BIO9 (Mean Temperature of the Coldest Quarter), BIO13 (Precipitation of the Wettest Month), and BIO15 (Precipitation Seasonality – Coeff. Var.) are relatively poorly predicted by CRACLE, likely due to less direct impact of those variables on plant distributions. Whereas estimates of BIO1 (MAT), BIO5 (Max Temperature), BIO6 (Min Temperature), and BIO18 (Precipitation of the Driest Quarter) yield the highest correlation with known values (
+     <a id="xref-table-wrap-1-6" class="xref-table" href="#T1">Table 1</a>). We also show that CRACLE model correction via Generalized Boosted Regression (GBR) can lower error rates from the CRACLE baseline (
+     <a id="xref-fig-2-4" class="xref-fig" href="#F2">Figure 2</a>; 
+     <a id="xref-table-wrap-2-3" class="xref-table" href="#T2">Table 2</a>). We expect that further regression model fitting on expanded datasets may yield further refinement, however, the GBR model correction is implemented in ‘cRacle’ 
+     <em>get_optim()</em> as an option for users to correct non-parameteric CRACLE estimates for the WorldClim 2.0 Bioclim variables only.
+    </p>
+    <div id="sec-21" class="subsection">
+     <h3>Resources and Tutorials</h3>
+     <p id="p-46">We are actively developing resources and tutorials in support of the ‘cRacle’ R package. Demonstration code and short projects will be maintained on a continuing basis at 
+      <a href="https://github.com/rsh249/cracle_examples">https://github.com/rsh249/cracle_examples</a>. We aim to provide a series of web tutorials for various CRACLE modeling tasks here to guide beginner users through the process. Tutorials, and issue tracking are distributed through the main ‘cRacle’ repository: 
+      <a href="https://github.com/rsh249/cRacle.git">https://github.com/rsh249/cRacle.git</a>.
+     </p>
+    </div>
+    <div id="sec-22" class="subsection">
+     <h3>Conclusion</h3>
+     <p id="p-47">‘cRacle’ is a new and actively maintained resource for climate estimation from biological community composition. These estimates are particularly relevant to the study of fossil systems where often the best indication of past climate is the community of plant and animal fossils. We show that users of ‘cRacle’ should expect estimates that are accurate (e.g., within 1°C for MAT) when applying best-practices.</p>
+    </div>
+   </div>
+   <div class="section" id="sec-23">
+    <h2 class="">AUTHOR CONTRIBUTIONS</h2>
+    <p id="p-49">AAB conceived of and implemented the iNaturalist grid search and CRACLE analysis and provided valuable testing, benchmarking, and feedback data on the ‘cRacle’ R library. RSH designed the BIEN vegetation plots CRACLE study and implemented the Generalized Boosted Regression model correction analysis. RSH designed and wrote the ‘cRacle’ R package code.</p>
+   </div>
+   <div class="section ack" id="ack-1">
+    <h2 class="">Acknowledgements</h2>
+    <p id="p-48">The authors would like to thank Stonehill College for their support of undergraduate research that made this study possible.</p>
+   </div>
+   <div class="section fn-group" id="fn-group-1">
+    <h2>Footnotes</h2>
+    <ul>
+     <li class="fn-update fn-group-summary-of-updates" id="fn-1">
+      <p id="p-6">An error in the abstract formatting to a paragraph format compatible with bioRxiv</p>
+     </li>
+     <li class="fn-dataset fn-group-external-links" id="fn-2">
+      <p id="p-7">
+       <a href="https://github.com/rsh249/cRacle.git">https://github.com/rsh249/cRacle.git</a>
+      </p>
+     </li>
+    </ul>
+   </div>
+   <div class="section ref-list" id="ref-list-1">
+    <h2 class="">LITERATURE CITED</h2>
+    <ol class="cit-list ref-use-labels">
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-1-1" title="View reference in text" id="ref-1">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-641183v2.1" data-doi="10.1111/ecog.01132">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Aiello□Lammens</span>, 
+          <span class="cit-name-given-names">M.E.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">R.A.</span>
+          <span class="cit-name-surname">Boria</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">A.</span>
+          <span class="cit-name-surname">Radosavljevic</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">B.</span>
+          <span class="cit-name-surname">Vilela</span>
+         </span>, and 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">R.P.</span>
+          <span class="cit-name-surname">Anderson</span>
+         </span>. 
+         <span class="cit-pub-date">2015</span>. 
+         <span class="cit-article-title">spThin: an R package for spatial thinning of species occurrence records for use in ecological niche models</span>. 
+         <abbr class="cit-jnl-abbrev">Ecography</abbr>, 
+         <span class="cit-vol">38</span>(
+         <span class="cit-issue">5</span>): 
+         <span class="cit-fpage">541</span>–
+         <span class="cit-lpage">545</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DEcography%26rft.volume%253D38%26rft.spage%253D541%26rft_id%253Dinfo%253Adoi%252F10.1111%252Fecog.01132%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1111/ecog.01132&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-2-1" title="View reference in text" id="ref-2">↵</a>
+      <div class="cit ref-cit ref-web" id="cit-641183v2.2">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Barve</span>, 
+          <span class="cit-name-given-names">V.</span>
+         </span>, and 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">E.</span>
+          <span class="cit-name-surname">Hart</span>
+         </span>. 
+         <span class="cit-pub-date">2017</span>. ‘
+         <span class="cit-article-title">rinat’: Access iNaturalist Data Through APIs</span>. R package version 0.1.5. 
+         <a href="https://cran.r-project.org/package=rinat">https://cran.r-project.org/package=rinat</a>
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-3-1" title="View reference in text" id="ref-3">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-641183v2.3">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Fick</span>, 
+          <span class="cit-name-given-names">S.E.</span>
+         </span> and 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">R.J.</span>
+          <span class="cit-name-surname">Hijmans</span>
+         </span>. 
+         <span class="cit-pub-date">2017</span>. 
+         <span class="cit-article-title">WorldClim 2: new 1□km spatial resolution climate surfaces for global land areas</span>. 
+         <abbr class="cit-jnl-abbrev">International journal of climatology</abbr>
+         <span class="cit-vol">37</span>(
+         <span class="cit-issue">12</span>):
+         <span class="cit-fpage">4302</span>–
+         <span class="cit-lpage">4315</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DInternational%2Bjournal%2Bof%2Bclimatology%26rft.volume%253D37%26rft.spage%253D4302%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-4-1" title="View reference in text" id="ref-4">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-641183v2.4">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Fletcher</span>, 
+          <span class="cit-name-given-names">T.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">R.</span>
+          <span class="cit-name-surname">Feng</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">A.M.</span>
+          <span class="cit-name-surname">Telka</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">J.V.</span>
+          <span class="cit-name-surname">Matthews</span>
+          <span class="cit-name-suffix">Jr</span>.
+         </span>, and 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">A.</span>
+          <span class="cit-name-surname">Ballantyne</span>
+         </span>. 
+         <span class="cit-pub-date">2017</span>. 
+         <span class="cit-article-title">Floral Dissimilarity and the Influence of Climate in the Pliocene High Arctic: Biotic and Abiotic Influences on Five Sites on the Canadian Arctic Archipelago</span>. 
+         <abbr class="cit-jnl-abbrev">Frontiers in Ecology and Evolution</abbr>
+         <span class="cit-vol">5</span>:
+         <span class="cit-fpage">19</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DFrontiers%2Bin%2BEcology%2Band%2BEvolution%26rft.volume%253D5%26rft.spage%253D19%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-5-1" title="View reference in text" id="ref-5">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-641183v2.5">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Fletcher</span>, 
+          <span class="cit-name-given-names">T.L.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">A.Z.</span>
+          <span class="cit-name-surname">Csank</span>
+         </span>, and 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">A.P.</span>
+          <span class="cit-name-surname">Ballantyne</span>
+         </span>. 
+         <span class="cit-pub-date">2018</span>. 
+         <span class="cit-article-title">Identifying bias in cold season temperature reconstructions by beetle mutual climatic range methods in the Pliocene Canadian High Arctic</span>. 
+         <abbr class="cit-jnl-abbrev">Palaeogeography, Palaeoclimatology, Palaeoecology</abbr>
+         <span class="cit-vol">514</span>: 
+         <span class="cit-fpage">672</span>–
+         <span class="cit-lpage">676</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DPalaeogeography%252C%2BPalaeoclimatology%252C%2BPalaeoecology%26rft.volume%253D514%26rft.spage%253D672%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-6-1" title="View reference in text" id="ref-6">↵</a>
+      <div class="cit ref-cit ref-web" id="cit-641183v2.6">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Greenwell</span>, 
+          <span class="cit-name-given-names">B.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">B.</span>
+          <span class="cit-name-surname">Boehmke</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">J.</span>
+          <span class="cit-name-surname">Cunningham</span>
+         </span>, and 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">GBM</span>
+          <span class="cit-name-surname">Developers</span>
+         </span>. 
+         <span class="cit-pub-date">2019</span>. ‘
+         <span class="cit-article-title">gbm’: Generalized Boosted Regression Models</span>. R package version 2.1.5 
+         <a href="https://cran.r-project.org/package=gbm">https://cran.r-project.org/package=gbm</a>
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-7-1" title="View reference in text" id="ref-7">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-641183v2.7" data-doi="10.3732/ajb.1400500">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Harbert</span>, 
+          <span class="cit-name-given-names">R.S.</span>
+         </span> and 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">K.C.</span>
+          <span class="cit-name-surname">Nixon</span>
+         </span>. 
+         <span class="cit-pub-date">2015</span>. 
+         <span class="cit-article-title">Climate reconstruction analysis using coexistence likelihood estimation (CRACLE): A method for the estimation of climate using vegetation</span>. 
+         <abbr class="cit-jnl-abbrev">American Journal of Botany</abbr>
+         <span class="cit-vol">102</span>(
+         <span class="cit-issue">8</span>): 
+         <span class="cit-fpage">1277</span>–
+         <span class="cit-lpage">1289</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DAmerican%2BJournal%2Bof%2BBotany%26rft_id%253Dinfo%253Adoi%252F10.3732%252Fajb.1400500%26rft_id%253Dinfo%253Apmid%252F26290551%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/ijlink/YTozOntzOjQ6InBhdGgiO3M6MTQ6Ii9sb29rdXAvaWpsaW5rIjtzOjU6InF1ZXJ5IjthOjQ6e3M6ODoibGlua1R5cGUiO3M6NDoiQUJTVCI7czoxMToiam91cm5hbENvZGUiO3M6NjoiYW1qYm90IjtzOjU6InJlc2lkIjtzOjEwOiIxMDIvOC8xMjc3IjtzOjQ6ImF0b20iO3M6Mzc6Ii9iaW9yeGl2L2Vhcmx5LzIwMTkvMDUvMTgvNjQxMTgzLmF0b20iO31zOjg6ImZyYWdtZW50IjtzOjA6IiI7fQ==" class="cit-ref-sprinkles cit-ref-sprinkles-ijlink">
+         <span>
+          <span class="cit-reflinks-abstract">Abstract</span>
+          <span class="cit-sep cit-reflinks-variant-name-sep">/</span>
+          <span class="cit-reflinks-full-text">
+           <span class="free-full-text">FREE </span>Full Text
+          </span>
+         </span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-8-1" title="View reference in text" id="ref-8">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-641183v2.8">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Harbert</span>, 
+          <span class="cit-name-given-names">R.S.</span>
+         </span> and 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Nixon</span>, 
+          <span class="cit-name-given-names">K.C.</span>
+         </span>, 
+         <span class="cit-pub-date">2018</span>. 
+         <span class="cit-article-title">Quantitative Late Quaternary Climate Reconstruction from Plant Macrofossil Communities in Western North America</span>. 
+         <abbr class="cit-jnl-abbrev">Open Quaternary</abbr>
+         <span class="cit-vol">4</span>(
+         <span class="cit-issue">1</span>):
+         <span class="cit-fpage">8</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DOpen%2BQuaternary%26rft.volume%253D4%26rft.spage%253D8%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-9-1" title="View reference in text" id="ref-9">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-641183v2.9">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Harris</span>, 
+          <span class="cit-name-given-names">A.J.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Papeş</span>, 
+          <span class="cit-name-given-names">M.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Gao</span>, 
+          <span class="cit-name-given-names">Y.D.</span>
+         </span> and 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Watson</span>, 
+          <span class="cit-name-given-names">L.</span>
+         </span>, 
+         <span class="cit-pub-date">2014</span>. 
+         <span class="cit-article-title">Estimating paleoenvironments using ecological niche models of nearest living relatives: A case study of Eocene Aesculus L</span>. 
+         <abbr class="cit-jnl-abbrev">Journal of Systematics and Evolution</abbr>, 
+         <span class="cit-vol">52</span>(
+         <span class="cit-issue">1</span>): 
+         <span class="cit-fpage">16</span>–
+         <span class="cit-lpage">34</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DJournal%2Bof%2BSystematics%2Band%2BEvolution%26rft.volume%253D52%26rft.spage%253D16%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-10-1" title="View reference in text" id="ref-10">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-641183v2.10">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Hijmans</span>, 
+          <span class="cit-name-given-names">R.J.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">S.E.</span>
+          <span class="cit-name-surname">Cameron</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">J.L.</span>
+          <span class="cit-name-surname">Parra</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">P.G.</span>
+          <span class="cit-name-surname">Jones</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">A.</span>
+          <span class="cit-name-surname">Jarvis</span>
+         </span>. 
+         <span class="cit-pub-date">2005</span>. 
+         <span class="cit-article-title">Very high resolution interpolated climate surfaces for global land areas</span>. 
+         <abbr class="cit-jnl-abbrev">International Journal of Climatology: A Journal of the Royal Meteorological Society</abbr>
+         <span class="cit-vol">25</span>(
+         <span class="cit-issue">15</span>):
+         <span class="cit-fpage">1965</span>–
+         <span class="cit-lpage">1978</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DInternational%2BJournal%2Bof%2BClimatology%253A%2BA%2BJournal%2Bof%2Bthe%2BRoyal%2BMeteorological%2BSociety%26rft.volume%253D25%26rft.spage%253D1965%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-11-1" title="View reference in text" id="ref-11">↵</a>
+      <div class="cit ref-cit ref-web" id="cit-641183v2.11">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Hijmans</span>, 
+          <span class="cit-name-given-names">R.J.</span>
+         </span> (
+         <span class="cit-pub-date">2018</span>). 
+         <span class="cit-article-title">raster: Geographic Data Analysis and Modeling</span>. R package version 2.8-4. 
+         <a href="https://CRAN.R-project.org/package=raster">https://CRAN.R-project.org/package=raster</a>
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-12-1" title="View reference in text" id="ref-12">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-641183v2.12">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Hyland</span>, 
+          <span class="cit-name-given-names">E.G.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">K.W.</span>
+          <span class="cit-name-surname">Huntington</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">N.D.</span>
+          <span class="cit-name-surname">Sheldon</span>
+         </span>, and 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">T.</span>
+          <span class="cit-name-surname">Reichgelt</span>
+         </span>. 
+         <span class="cit-pub-date">2018</span>. 
+         <span class="cit-article-title">Temperature seasonality in the North American continental interior during the Early Eocene Climatic Optimum</span>. 
+         <abbr class="cit-jnl-abbrev">Climate of the Past</abbr>
+         <span class="cit-vol">14</span>(
+         <span class="cit-issue">10</span>): 
+         <span class="cit-fpage">1391</span>–
+         <span class="cit-lpage">1404</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DClimate%2Bof%2Bthe%2BPast%26rft.volume%253D14%26rft.spage%253D1391%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-13-1" title="View reference in text" id="ref-13">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-641183v2.13">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Karger</span>, 
+          <span class="cit-name-given-names">D.N.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">O.</span>
+          <span class="cit-name-surname">Conrad</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">J.</span>
+          <span class="cit-name-surname">Böhner</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">T.</span>
+          <span class="cit-name-surname">Kawohl</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">H.</span>
+          <span class="cit-name-surname">Kreft</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">R.W.</span>
+          <span class="cit-name-surname">Soria</span>
+         </span>-
+         <span class="cit-auth">
+          <span class="cit-name-surname">Auza</span>, 
+          <span class="cit-name-given-names">N.</span>
+         </span>
+         <span class="cit-auth">
+          <span class="cit-name-given-names">E.</span>
+          <span class="cit-name-surname">Zimmermann</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">H.P.</span>
+          <span class="cit-name-surname">Linder</span>
+         </span>, and 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">M.</span>
+          <span class="cit-name-surname">Kessler</span>
+         </span>. 
+         <span class="cit-pub-date">2017</span>. 
+         <span class="cit-article-title">Climatologies at high resolution for the earth’s land surface areas</span>. 
+         <abbr class="cit-jnl-abbrev">Scientific Data</abbr>
+         <span class="cit-vol">4</span>:
+         <span class="cit-fpage">170122</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DScientific%2BData%26rft.volume%253D4%26rft.spage%253D170122%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-14-1" title="View reference in text" id="ref-14">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-641183v2.14">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Maitner</span>, 
+          <span class="cit-name-given-names">B.S.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">B.</span>
+          <span class="cit-name-surname">Boyle</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">N.</span>
+          <span class="cit-name-surname">Casler</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">R.</span>
+          <span class="cit-name-surname">Condit</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">J.</span>
+          <span class="cit-name-surname">Donoghue</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">S.M.</span>
+          <span class="cit-name-surname">Durán</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">D.</span>
+          <span class="cit-name-surname">Guaderrama</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">C.E.</span>
+          <span class="cit-name-surname">Hinchliff</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">P.M.</span>
+          <span class="cit-name-surname">Jørgensen</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">N.J.</span>
+          <span class="cit-name-surname">Kraft</span>
+         </span>, and 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">B.</span>
+          <span class="cit-name-surname">McGill</span>
+         </span>. 
+         <span class="cit-pub-date">2018</span>. 
+         <span class="cit-article-title">The bien r package: A tool to access the Botanical Information and Ecology Network (BIEN) database</span>. 
+         <abbr class="cit-jnl-abbrev">Methods in Ecology and Evolution</abbr>
+         <span class="cit-vol">9</span>(
+         <span class="cit-issue">2</span>):
+         <span class="cit-fpage">373</span>–
+         <span class="cit-lpage">379</span>
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DMethods%2Bin%2BEcology%2Band%2BEvolution%26rft.volume%253D9%26rft.spage%253D373%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-15-1" title="View reference in text" id="ref-15">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-641183v2.15">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Montade</span>, 
+          <span class="cit-name-given-names">V.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">O.</span>
+          <span class="cit-name-surname">Peyron</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">C.</span>
+          <span class="cit-name-surname">Favier</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">J.P</span>
+          <span class="cit-name-surname">Francois</span>
+         </span>, and 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">S.G.</span>
+          <span class="cit-name-surname">Haberle</span>
+         </span>. 
+         <span class="cit-pub-date">2019</span>. 
+         <span class="cit-article-title">A pollen– climate calibration from western Patagonia for palaeoclimatic reconstructions</span>. 
+         <abbr class="cit-jnl-abbrev">Journal of Quaternary Science</abbr>
+         <span class="cit-vol">34</span>(
+         <span class="cit-issue">1</span>): 
+         <span class="cit-fpage">76</span>–
+         <span class="cit-lpage">86</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DJournal%2Bof%2BQuaternary%2BScience%26rft.volume%253D34%26rft.spage%253D76%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-16-1" title="View reference in text" id="ref-16">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-641183v2.16" data-doi="10.1016/S0031-0182(96)00154-X">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Mosbrugger</span>, 
+          <span class="cit-name-given-names">V.</span>
+         </span> and 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">T.</span>
+          <span class="cit-name-surname">Utescher</span>
+         </span>. 
+         <span class="cit-pub-date">1997</span>. 
+         <span class="cit-article-title">The coexistence approach—a method for quantitative reconstructions of Tertiary terrestrial palaeoclimate data using plant fossils</span>. 
+         <abbr class="cit-jnl-abbrev">Palaeogeography, Palaeoclimatology, Palaeoecology</abbr>
+         <span class="cit-vol">134</span>(
+         <span class="cit-issue">1-4</span>):
+         <span class="cit-fpage">61</span>–
+         <span class="cit-lpage">86</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DPalaeogeography%252C%2BPalaeoclimatology%252C%2BPalaeoecology%26rft.stitle%253DPalaeogeography%252C%2BPalaeoclimatology%252C%2BPalaeoecology%26rft.volume%253D134%26rft.issue%253D1-4%26rft.spage%253D61%26rft.epage%253D86%26rft.atitle%253DThe%2Bcoexistence%2Bapproach%253B%2Ba%2Bmethod%2Bfor%2Bquantitative%2Breconstructions%2Bof%2BTertiary%2Bterrestrial%2Bpalaeoclimate%2Bdata%2Busing%2Bplant%2Bfossils%26rft_id%253Dinfo%253Adoi%252F10.1016%252FS0031-0182%252896%252900154-X%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1016/S0031-0182(96)00154-X&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=1997064755&amp;;link_type=GEOREF" class="cit-ref-sprinkles cit-ref-sprinkles-georef">
+         <span>GeoRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=A1997YK90800003&amp;;link_type=ISI" class="cit-ref-sprinkles cit-ref-sprinkles-newisilink cit-ref-sprinkles-webofscience">
+         <span>Web of Science</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-17-1" title="View reference in text" id="ref-17">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-641183v2.17">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth cit-collab">R Core Team</span> (
+         <span class="cit-pub-date">2018</span>). 
+         <span class="cit-article-title">R: A language and environment for statistical computing</span>. 
+         <abbr class="cit-jnl-abbrev">R Foundation for Statistical Computing, Vienna, Austria</abbr>. URL 
+         <a href="https://www.R-project.org/">https://www.R-project.org/</a>.
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-18-1" title="View reference in text" id="ref-18">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-641183v2.18">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Silverman</span>, 
+          <span class="cit-name-given-names">BW.</span>
+         </span>
+         <span class="cit-pub-date">1986</span>. 
+         <span class="cit-article-title">Density estimation for statistics and data analysis</span>. 
+         <abbr class="cit-jnl-abbrev">Routledge</abbr>. DOI: 
+         <a href="https://doi.org/10.1201/9781315140919">https://doi.org/10.1201/9781315140919</a>
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-19-1" title="View reference in text" id="ref-19">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-641183v2.19" data-doi="10.1016/j.quascirev.2012.07.003">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Thompson</span>, 
+          <span class="cit-name-given-names">R.S.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">K.H.</span>
+          <span class="cit-name-surname">Anderson</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">R.T.</span>
+          <span class="cit-name-surname">Pelltier</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">L.E.</span>
+          <span class="cit-name-surname">Strickland</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">P.J.</span>
+          <span class="cit-name-surname">Bartlein</span>
+         </span>, and 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">S.L.</span>
+          <span class="cit-name-surname">Shafer</span>
+         </span>. 
+         <span class="cit-pub-date">2012</span>. 
+         <span class="cit-article-title">Quantitative estimation of climatic parameters from vegetation data in North America by the mutual climatic range technique</span>. 
+         <abbr class="cit-jnl-abbrev">Quaternary Science Reviews</abbr>
+         <span class="cit-vol">51</span>:
+         <span class="cit-fpage">18</span>–
+         <span class="cit-lpage">39</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DQuaternary%2BScience%2BReviews%26rft.stitle%253DQuaternary%2BScience%2BReviews%26rft.aulast%253DThompson%26rft.auinit1%253DR.%2BS.%26rft.volume%253D51%26rft.spage%253D18%26rft.epage%253D39%26rft.atitle%253DQuantitative%2Bestimation%2Bof%2Bclimatic%2Bparameters%2Bfrom%2Bvegetation%2Bdata%2Bin%2BNorth%2BAmerica%2Bby%2Bthe%2Bmutual%2Bclimatic%2Brange%2Btechnique%26rft_id%253Dinfo%253Adoi%252F10.1016%252Fj.quascirev.2012.07.003%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1016/j.quascirev.2012.07.003&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=2013020637&amp;;link_type=GEOREF" class="cit-ref-sprinkles cit-ref-sprinkles-georef">
+         <span>GeoRef</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-20-1" title="View reference in text" id="ref-20">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-641183v2.20">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Title</span>, 
+          <span class="cit-name-given-names">P.O.</span>
+         </span> and 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">J.B.</span>
+          <span class="cit-name-surname">Bemmels</span>
+         </span>. 
+         <span class="cit-pub-date">2018</span>. 
+         <span class="cit-article-title">ENVIREM: an expanded set of bioclimatic and topographic variables increases flexibility and improves performance of ecological niche modeling</span>. 
+         <abbr class="cit-jnl-abbrev">Ecography</abbr>
+         <span class="cit-vol">41</span>(
+         <span class="cit-issue">2</span>):
+         <span class="cit-fpage">291</span>–
+         <span class="cit-lpage">307</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DEcography%26rft.volume%253D41%26rft.spage%253D291%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-21-1" title="View reference in text" id="ref-21">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-641183v2.21" data-doi="10.1016/j.palaeo.2014.05.031">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Utescher</span>, 
+          <span class="cit-name-given-names">T.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">A.A.</span>
+          <span class="cit-name-surname">Bruch</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">B.</span>
+          <span class="cit-name-surname">Erdei</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">L.</span>
+          <span class="cit-name-surname">François</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">D.</span>
+          <span class="cit-name-surname">Ivanov</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">F.M.B.</span>
+          <span class="cit-name-surname">Jacques</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">A.K.</span>
+          <span class="cit-name-surname">Kern</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">V.</span>
+          <span class="cit-name-surname">Mosbrugger</span>
+         </span>, and 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">R.A.</span>
+          <span class="cit-name-surname">Spicer</span>
+         </span>. 
+         <span class="cit-pub-date">2014</span>. 
+         <span class="cit-article-title">The Coexistence Approach—theoretical background and practical considerations of using plant fossils for climate quantification</span>. 
+         <abbr class="cit-jnl-abbrev">Palaeogeography, Palaeoclimatology, Palaeoecology</abbr>, 
+         <span class="cit-vol">410</span>: 
+         <span class="cit-fpage">58</span>–
+         <span class="cit-lpage">73</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DPalaeogeography%252C%2BPalaeoclimatology%252C%2BPalaeoecology%26rft.stitle%253DPalaeogeography%252C%2BPalaeoclimatology%252C%2BPalaeoecology%26rft.aulast%253DUtescher%26rft.auinit1%253DT.%26rft.volume%253D410%26rft.spage%253D58%26rft.epage%253D73%26rft.atitle%253DThe%2Bcoexistence%2Bapproach%253B%2Btheoretical%2Bbackground%2Band%2Bpractical%2Bconsiderations%2Bof%2Busing%2Bplant%2Bfossils%2Bfor%2Bclimate%2Bquantification%26rft_id%253Dinfo%253Adoi%252F10.1016%252Fj.palaeo.2014.05.031%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1016/j.palaeo.2014.05.031&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=2014071586&amp;;link_type=GEOREF" class="cit-ref-sprinkles cit-ref-sprinkles-georef">
+         <span>GeoRef</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-22-1" title="View reference in text" id="ref-22">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-641183v2.22">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Willard</span>, 
+          <span class="cit-name-given-names">D.A.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">T.H.</span>
+          <span class="cit-name-surname">Donders</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">T.</span>
+          <span class="cit-name-surname">Reichgelt</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">D.R.</span>
+          <span class="cit-name-surname">Greenwood</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">F.</span>
+          <span class="cit-name-surname">Sangiorgi</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">F.</span>
+          <span class="cit-name-surname">Peterse</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">K.G.</span>
+          <span class="cit-name-surname">Nierop</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">j.</span>
+          <span class="cit-name-surname">Frieling</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">S.</span>
+          <span class="cit-name-surname">Schouten</span>
+         </span>, and 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">A.</span>
+          <span class="cit-name-surname">Sluijs.</span>
+         </span>
+         <span class="cit-pub-date">2019</span>. 
+         <span class="cit-article-title">Arctic vegetation, temperature, and hydrology during Early Eocene transient global warming events</span>. 
+         <abbr class="cit-jnl-abbrev">Global and Planetary Change</abbr>
+         <span class="cit-vol">178</span>:
+         <span class="cit-fpage">139</span>–
+         <span class="cit-lpage">152</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DGlobal%2Band%2BPlanetary%2BChange%26rft.volume%253D178%26rft.spage%253D139%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <div class="cit ref-cit ref-journal no-rev-xref" id="cit-641183v2.23" data-doi="10.1139/cjes-2015-0165">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Zaborac-Reed</span>, 
+          <span class="cit-name-given-names">S.J.</span>
+         </span> and 
+         <span class="cit-auth">
+          <span class="cit-name-given-names">E.B.</span>
+          <span class="cit-name-surname">Leopold</span>
+         </span>. 
+         <span class="cit-pub-date">2016</span>. 
+         <span class="cit-article-title">Determining the paleoclimate and elevation of the late Eocene Florissant flora: support from the coexistence approach</span>. 
+         <abbr class="cit-jnl-abbrev">Canadian Journal of Earth Sciences</abbr>
+         <span class="cit-vol">53</span>(
+         <span class="cit-issue">6</span>): 
+         <span class="cit-fpage">565</span>–
+         <span class="cit-lpage">573</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DCanadian%2BJournal%2Bof%2BEarth%2BSciences%26rft.stitle%253DCan.%2BJ.%2BEarth%2BSci.%26rft.aulast%253DZaborac-Reed%26rft.auinit1%253DS.%2BJ.%26rft.volume%253D53%26rft.issue%253D6%26rft.spage%253D565%26rft.epage%253D573%26rft.atitle%253DDetermining%2Bthe%2Bpaleoclimate%2Band%2Belevation%2Bof%2Bthe%2Blate%2BEocene%2BFlorissant%2Bflora%253A%2Bsupport%2Bfrom%2Bthe%2Bcoexistence%2Bapproach%26rft_id%253Dinfo%253Adoi%252F10.1139%252Fcjes-2015-0165%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/ijlink/YTozOntzOjQ6InBhdGgiO3M6MTQ6Ii9sb29rdXAvaWpsaW5rIjtzOjU6InF1ZXJ5IjthOjQ6e3M6ODoibGlua1R5cGUiO3M6NDoiQUJTVCI7czoxMToiam91cm5hbENvZGUiO3M6NjoiZ3NjamVzIjtzOjU6InJlc2lkIjtzOjg6IjUzLzYvNTY1IjtzOjQ6ImF0b20iO3M6Mzc6Ii9iaW9yeGl2L2Vhcmx5LzIwMTkvMDUvMTgvNjQxMTgzLmF0b20iO31zOjg6ImZyYWdtZW50IjtzOjA6IiI7fQ==" class="cit-ref-sprinkles cit-ref-sprinkles-ijlink">
+         <span>
+          <span class="cit-reflinks-abstract">Abstract</span>
+          <span class="cit-sep cit-reflinks-variant-name-sep">/</span>
+          <span class="cit-reflinks-full-text">
+           <span class="free-full-text">FREE </span>Full Text
+          </span>
+         </span>
+        </a>
+       </div>
+      </div>
+     </li>
+    </ol>
+   </div>
+   <span class="highwire-journal-article-marker-end"/>
+  </div>
+ </body>
+</html>

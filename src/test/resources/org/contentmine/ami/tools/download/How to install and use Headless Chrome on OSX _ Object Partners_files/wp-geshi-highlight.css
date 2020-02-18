@@ -1,0 +1,99 @@
+/*
+   Copyright 2009-2015, Jan-Philip Gehrcke (http://gehrcke.de)
+
+   Tested with Firefox 39 and Chrome 43 on the following themes:
+
+    - Twenty Ten (version 1.9)
+    - Twenty Eleven (version 2.1)
+    - Twenty Twelve (version 1.7)
+    - Twenty Thirteen (version 1.5)
+    - Twenty Fourteen (version 1.4)
+    - Twenty Fifteen (version 1.2)
+
+   Also tested with a number of popular non-official themes, such as
+
+    - Vantage
+    - Customizr
+    - ColorWay
+    - Zerif Lite
+    - Responsive
+    - Storefront
+    - Virtue
+    - evolve
+    - Make
+    - Sparkling
+    - Spacious
+    - Enigma
+    - Sydney
+    - Point
+    - Interface
+    - SinglePage
+
+   Ensuring a nice and normalized visual appearance out-of-the-box with a
+   number of themes requires to make certain compromises. It turned out that
+   forcing the font size to an absolute value is key component, as well as
+   using the !important flag for crucial componenta like font-size, margins,
+   line-height (many themes apply id-based selectors to pre-blocks, which
+   have a significantly higher specificity than the class-based styles
+   applied here).
+
+   I tried to cover/normalize the style via many relevant selectors. However,
+   certain themes might define styles with a high specificity that affect the
+   code block appearance negatively. It is difficult to impossible to anticipate
+   these cases in advance, so I expect this to happen (and the past has proven
+   me right in this regard). So, I need you to look out for these situations!
+   In these cases, you need to identify the corresponding selectors and override
+   your theme's styles by adjusting this file (wp-geshi-highlight.css), and
+   placing it in your in your theme's directory. There, it survives updates of
+   this plugin. It would also be great if you could contact me in these cases,
+   so that I can improve this file in future releases.
+*/
+
+.wp-geshi-highlight pre, .wp-geshi-highlight span {
+    overflow: visible;
+    margin: 0 !important;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    background: none;
+    font-size: 12px !important;
+    line-height: 20px !important;
+    font-family: Consolas, Monaco, 'Lucida Console', monospace;
+    word-wrap: normal; /* Otherwise Chrome wraps lines */
+    white-space: pre;
+}
+
+.wp-geshi-highlight ol {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style-type: decimal !important;
+}
+
+.wp-geshi-highlight ol > li {
+    position: relative; /* Create a positioning context */
+    margin: 0 0 0 40px; /* Give each list item a left margin to make room for the numbers */
+}
+
+.wp-geshi-highlight li {
+    padding-left: 2px;
+    font-family: monospace;
+    font-size: 12px;
+    list-style: decimal !important;
+    }
+
+.wp-geshi-highlight {
+    padding: 7px 10px 7px 15px;
+    margin: 2px 0 30px 0;
+    overflow-x: auto;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    background-color: #fdfdfd;
+    box-shadow: 0 8px 7px -10px #CCC, 0 -8px 7px -10px #CCC;
+}
+
+/* Enforce background-color in some non-official themes when using numbering */
+.wp-geshi-highlight div ol li {
+    background-color: #fdfdfd;
+}
+
+

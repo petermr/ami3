@@ -1,0 +1,167 @@
+
+@import "screen/general.css";
+@import "screen/layout.css";
+@import "screen/styles.css";
+
+
+BODY {
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-size : 10pt;
+    font-weight : normal;
+    font-style : normal;
+}
+
+P {
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-size : 10pt;
+}
+
+TABLE {
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-size : 9pt;
+    font-weight : normal;
+    font-style : normal;
+}
+
+a {
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size : 9pt;
+    font-weight : normal;
+    font-style : normal;
+}
+
+a.email {
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-size : 9pt;
+    font-weight : normal;
+    font-style : normal;
+    text-decoration:underline;   
+    color: blue;
+}
+
+
+p.nomodel {
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+}
+
+TD {
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+}
+td.section {
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-weight : bold; 
+    font-size : 11pt;
+}
+TD.isoref {
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-size : 9pt;
+}
+	  
+font.normal {
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-size : 10pt;
+}
+
+font.negrito {
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-weight : bold;
+}
+
+font.nomodel {
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-weight : normal;
+    font-style : normal;
+}
+
+font.divisoria {
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-weight : normal;
+    font-size : 4pt;
+}
+
+FONT.linkado {
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-size : 9pt;
+    font-weight : normal;
+    font-style : normal;
+}
+
+font.linkado {
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-size : 9pt;
+    font-weight : normal;
+    font-style : normal;
+}
+
+BODY.isoref {
+font-family : Verdana, Arial, Helvetica, sans-serif;
+text-decoration: none;
+font-size:8pt;
+}
+font.title { font-size:10pt }
+font.subtitle {font-size:9pt }
+
+font.isoref {
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-size : 9pt;
+}
+
+a.isoref {
+font-family : Verdana, Arial, Helvetica, sans-serif;
+text-decoration: none;
+font-size:8pt;
+}
+
+
+/* RSS */
+A.rss {
+	background: url(../img/feed.gif) no-repeat;
+	display: block;
+	width: 16px;
+	height: 16px;
+	margin-bottom: 6px;
+}
+
+.rss SPAN {
+	display: none;
+}
+.optionsMenu {
+				font-size: 10pt;
+				color: #000;
+				text-decoration: none;
+				padding-left: 10px;
+				background: url(pointer.gif) left no-repeat;
+			}
+.optionsSubMenu {
+	margin: 4px 0px 0px 10px;
+}
+
+.optionsSubMenu DIV {
+	margin: 4 0px;
+}
+
+.optionsSubMenu div, .optionsSubMenu div A {
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 90%;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+.status-info-alphabetic-list {
+	font-size: 80%;
+	font-style: italic;
+}
+.status-info-alphabetic-list a {
+	font-style: italic;
+}
+
+.PressReleases a {
+    text-decoration: none;
+    color: gray;
+}
+
+.PressReleases a:hover {
+    text-decoration: none;
+    color: #444444;
+}

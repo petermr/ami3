@@ -1,0 +1,728 @@
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js  ie lt-ie9 lt-ie8 lt-ie7 
+institution-portal
+"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js  ie lt-ie9 lt-ie8 
+institution-portal
+"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js  ie lt-ie9 
+institution-portal
+"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js  ie ie9 
+institution-portal
+"> <![endif]-->
+<!--[if IE  ]>         <html class="no-js  ie 
+institution-portal
+"> <![endif]-->
+<!--[if IE]><!--> <html class="no-js  
+institution-portal
+" lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      
+  
+  ChemRxiv: the Preprint Server for Chemistry
+
+    </title>
+    <meta name="referrer" content="origin"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="csrf_token" content="e434a7ac-96ce-4a22-9089-b7441d871cfb" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="//website-p-eu.figstatic.com/assets/0c8f6d89df86e896e6a38b10c95fc3c95af03bd5/public/global/favicon/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//website-p-eu.figstatic.com/assets/0c8f6d89df86e896e6a38b10c95fc3c95af03bd5/public/global/favicon/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//website-p-eu.figstatic.com/assets/0c8f6d89df86e896e6a38b10c95fc3c95af03bd5/public/global/favicon/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//website-p-eu.figstatic.com/assets/0c8f6d89df86e896e6a38b10c95fc3c95af03bd5/public/global/favicon/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="//website-p-eu.figstatic.com/assets/0c8f6d89df86e896e6a38b10c95fc3c95af03bd5/public/global/favicon/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="//website-p-eu.figstatic.com/assets/0c8f6d89df86e896e6a38b10c95fc3c95af03bd5/public/global/favicon/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="//website-p-eu.figstatic.com/assets/0c8f6d89df86e896e6a38b10c95fc3c95af03bd5/public/global/favicon/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="//website-p-eu.figstatic.com/assets/0c8f6d89df86e896e6a38b10c95fc3c95af03bd5/public/global/favicon/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="//website-p-eu.figstatic.com/assets/0c8f6d89df86e896e6a38b10c95fc3c95af03bd5/public/global/favicon/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="//website-p-eu.figstatic.com/assets/0c8f6d89df86e896e6a38b10c95fc3c95af03bd5/public/global/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="//website-p-eu.figstatic.com/assets/0c8f6d89df86e896e6a38b10c95fc3c95af03bd5/public/global/favicon/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="//website-p-eu.figstatic.com/assets/0c8f6d89df86e896e6a38b10c95fc3c95af03bd5/public/global/favicon/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="//website-p-eu.figstatic.com/assets/0c8f6d89df86e896e6a38b10c95fc3c95af03bd5/public/global/favicon/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="//website-p-eu.figstatic.com/assets/0c8f6d89df86e896e6a38b10c95fc3c95af03bd5/public/global/favicon/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="//website-p-eu.figstatic.com/assets/0c8f6d89df86e896e6a38b10c95fc3c95af03bd5/public/global/favicon/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="//website-p-eu.figstatic.com/assets/0c8f6d89df86e896e6a38b10c95fc3c95af03bd5/public/global/favicon/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="//website-p-eu.figstatic.com/assets/0c8f6d89df86e896e6a38b10c95fc3c95af03bd5/public/global/favicon/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="//website-p-eu.figstatic.com/assets/0c8f6d89df86e896e6a38b10c95fc3c95af03bd5/public/global/favicon/mstile-310x310.png" />
+    
+    
+      <link rel="stylesheet" type="text/css" href="//website-p-eu.figstatic.com/assets/0c8f6d89df86e896e6a38b10c95fc3c95af03bd5/public/global/styles/main.css" />
+    
+    <link rel="stylesheet" type="text/css" href="//website-p-eu.figstatic.com/assets/0c8f6d89df86e896e6a38b10c95fc3c95af03bd5/public.css" />
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+<link rel="next" href="/?page=2">
+
+
+    
+    
+
+  </head>
+  <body>
+    <div class="translate-reset"></div>
+    <div id="global-messenger"></div>
+    <div id="global-overlays"></div>
+    <div id="ck-banner"></div>
+    <div id="main-container">
+    
+      
+
+
+<div id="main-header">
+    <header class="domain-header" role="banner">
+        <div class="dh-wrapper">
+            <div class="dh-column dh-left">
+                <a class="dh-home-button" role="button" href=https://chemrxiv.org/>
+                    <div class="inst-logo-component il-default">
+                        
+                            <img alt="https://s3-eu-west-1.amazonaws.com/876az-branding-figshare/chemrxiv/logo_header.png" class="il-image" src="https://s3-eu-west-1.amazonaws.com/876az-branding-figshare/chemrxiv/logo_header.png" title="https://s3-eu-west-1.amazonaws.com/876az-branding-figshare/chemrxiv/logo_header.png">
+                        
+                    </div>
+                </a>
+            </div>
+            <div class="dh-column dh-middle rd-hide-under-640">
+                
+                
+                    <form class="search-form dh-search-form" action="https://chemrxiv.org/search">
+                        <div class="text-input-component-wrapper sf-input">
+                            <input type="search" name="q" class="text-input-component" placeholder="Search on chemRxiv..." value="" />
+                        </div>
+                        <button class="sf-submit" type="submit" />
+                    </form>
+                
+            </div>
+            <div class="dh-column dh-right" />
+        </div>
+    </header>
+</div>
+    
+
+    
+
+    
+
+
+<div id="app-root" data-page-type="public"  data-app="institution_portal">
+<div>
+  <div class="page-wrap institution-page">
+    <div class="portal-header full-in has-logo has-cover">
+      <div class="portal-cover-wrap">
+        <div class="image-caption-wrap"></div>
+        <div class="centered-cover-wrap" style="background-image:url(https://s3-eu-west-1.amazonaws.com/876az-branding-figshare/chemrxiv/homepage.jpg);background-position:center center;background-size:100%;background-repeat:no-repeat;"><img src="https://s3-eu-west-1.amazonaws.com/876az-branding-figshare/chemrxiv/homepage.jpg" style="width:100%;visibility:hidden;max-height:100%;"></div>
+      </div>
+      <div class="univ-branding-wrap">
+        <div class="univ-branding">
+          <img src="https://s3-eu-west-1.amazonaws.com/876az-branding-figshare/chemrxiv/logo.png">
+        </div>
+      </div>
+    </div>
+    <div class="portal-mid-wrap">
+      <div>
+        <div class="group-selector-wrap">
+          <h2>ChemRxiv: The Preprint Server for Chemistry <a class="normal-link">ChemRxiv<span class="arrow hide"></span></a></h2>
+        </div>
+      </div>
+      
+  
+    <div class="full-filters">
+      <div class="search-bar-wrap">
+        <div class="mimic-input search-field">
+          <input type="search" value="essential oils" placeholder="">
+          <input type="submit">
+        </div>
+        <a class="hide-search-trigger" role="button" />
+        <a class="help-link" target="_blank" rel="noreferrer noopener" href="//knowledge.figshare.com/articles/item/how-to-find-and-reuse-data-on-figshare">
+          help?
+        </a>
+      </div>
+      <div class="filters-background">
+        <div class="filters-wrap">
+            <div class="filters-column">
+                <div></div>
+            </div>
+            <div class="filters-column middle-filters">
+                <div class="filter sort">
+                    <div class="dropdown has-dropdown sort-filter">
+                        <span class="normal-link drop-trigger" role="button" href="#">
+                        <span>
+                          <label>sort</label> NEW
+                        </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="filter types">
+                    <div class="dropdown has-dropdown multiple-select">
+                        <span class="normal-link drop-trigger" role="button" href="#">
+                      <span class="trigger-inner-wrap">
+                        <label>type</label> ANY
+                      </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="filter licenses">
+                    <div class="dropdown has-dropdown multiple-select">
+                        <span class="normal-link drop-trigger" role="button" href="#">
+                      <span class="trigger-inner-wrap">
+                        <label>licence</label> ANY
+                      </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="filters-column">
+                <div></div>
+            </div>
+        </div>
+      </div>
+    </div>
+  
+    </div>
+    <div class="listing-wrap">
+      
+      
+  
+
+  
+
+  
+
+  <div class="item-thumb-card">
+    <a href="https://chemrxiv.org/articles/A_Tale_of_Seemingly_Identical_Silicon_Quantum_Dot_Families_Structural_Insight_into_Silicon_Quantum_Dot_Photoluminescence/11852040" target="">
+      
+  
+    
+  
+
+
+<div class="card-item-thumbnail withPreview">
+  
+    <img
+      src="https://s3-eu-west-1.amazonaws.com/ppreviews-chemrxiv-7984736271254/21723045/thumb.png"
+      alt="Thumbnail"
+    />
+  
+</div>
+      <div class="itc-title" style="max-height:36px; overflow:hidden;">
+        
+        <span>A Tale of Seemingly “Identical” Silicon Quantum Dot Families: Structural Insight into Silicon Quantum Dot Photoluminescence</span>
+      </div>
+    </a>
+    <div class="itc-details">
+      
+        <div class="itc-authors" style="max-width: 50%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap">
+          
+  
+    
+  
+<a class="normal-link author" href="https://chemrxiv.org/authors/Alyxandra_Thiessen/8447970">
+  Alyxandra Thiessen
+</a>
+        </div>
+      
+      <span class="relative-date" style="max-width: 50%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap">
+        2020-02-14T12:54:45Z
+      </span>
+    </div>
+  </div>
+  
+
+  
+
+  
+
+  <div class="item-thumb-card">
+    <a href="https://chemrxiv.org/articles/Virtual_Screening_of_an_FDA_Approved_Drugs_Database_on_Two_COVID-19_Coronavirus_Proteins/11847381" target="">
+      
+  
+    
+  
+
+
+<div class="card-item-thumbnail withPreview">
+  
+    <img
+      src="https://s3-eu-west-1.amazonaws.com/ppreviews-chemrxiv-7984736271254/21713028/thumb.png"
+      alt="Thumbnail"
+    />
+  
+</div>
+      <div class="itc-title" style="max-height:36px; overflow:hidden;">
+        
+        <span>Virtual Screening of an FDA Approved Drugs Database on Two COVID-19 Coronavirus Proteins</span>
+      </div>
+    </a>
+    <div class="itc-details">
+      
+        <div class="itc-authors" style="max-width: 50%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap">
+          
+  
+    
+  
+<a class="normal-link author" href="https://chemrxiv.org/authors/Alessandro_Contini/4421419">
+  Alessandro Contini
+</a>
+        </div>
+      
+      <span class="relative-date" style="max-width: 50%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap">
+        2020-02-13T13:29:45Z
+      </span>
+    </div>
+  </div>
+  
+
+  
+
+  
+
+  <div class="item-thumb-card">
+    <a href="https://chemrxiv.org/articles/Hole-Hole_Tamm-Dancoff-Approximated_Density_Functional_Theory_A_Highly_Efficient_Electronic_Structure_Method_Incorporating_Dynamic_and_Static_Correlation/11828256" target="">
+      
+  
+    
+  
+
+
+<div class="card-item-thumbnail withPreview">
+  
+    <img
+      src="https://s3-eu-west-1.amazonaws.com/ppreviews-chemrxiv-7984736271254/21683106/thumb.png"
+      alt="Thumbnail"
+    />
+  
+</div>
+      <div class="itc-title" style="max-height:36px; overflow:hidden;">
+        
+        <span>Hole-Hole Tamm-Dancoff-Approximated Density Functional Theory: A Highly Efficient Electronic Structure Method Incorporating Dynamic and Static Correlation</span>
+      </div>
+    </a>
+    <div class="itc-details">
+      
+        <div class="itc-authors" style="max-width: 50%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap">
+          
+  
+    
+  
+<a class="normal-link author" href="https://chemrxiv.org/authors/Christoph_Bannwarth/5860385">
+  Christoph Bannwarth
+</a>
+        </div>
+      
+      <span class="relative-date" style="max-width: 50%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap">
+        2020-02-12T12:19:34Z
+      </span>
+    </div>
+  </div>
+  
+
+  
+
+  
+
+  <div class="item-thumb-card">
+    <a href="https://chemrxiv.org/articles/Highly_Basic_Solid_Catalyst_Obtained_by_Spray_Drying_of_a_NaAlO2_and_Boehmite_Suspension_for_the_Upgrading_of_Glycerol_to_Acetins/11826771" target="">
+      
+  
+    
+  
+
+
+<div class="card-item-thumbnail withPreview">
+  
+    <img
+      src="https://s3-eu-west-1.amazonaws.com/ppreviews-chemrxiv-7984736271254/21635019/thumb.png"
+      alt="Thumbnail"
+    />
+  
+</div>
+      <div class="itc-title" style="max-height:36px; overflow:hidden;">
+        
+        <span>Highly Basic Solid Catalyst Obtained by Spray Drying of a NaAlO2 and Boehmite Suspension for the Upgrading of Glycerol to Acetins</span>
+      </div>
+    </a>
+    <div class="itc-details">
+      
+        <div class="itc-authors" style="max-width: 50%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap">
+          
+  
+<a class="normal-link author" href="">
+  Sreerangappa Ramesh
+</a>
+        </div>
+      
+      <span class="relative-date" style="max-width: 50%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap">
+        2020-02-10T11:23:21Z
+      </span>
+    </div>
+  </div>
+  
+
+  
+
+  
+
+  <div class="item-thumb-card">
+    <a href="https://chemrxiv.org/articles/Rapidly_Forming_Early_Intermediate_Structures_Dictate_the_Pathway_of_Capsid_Assembly/11799573" target="">
+      
+  
+    
+  
+
+
+<div class="card-item-thumbnail withPreview">
+  
+    <img
+      src="https://s3-eu-west-1.amazonaws.com/ppreviews-chemrxiv-7984736271254/21532857/thumb.png"
+      alt="Thumbnail"
+    />
+  
+</div>
+      <div class="itc-title" style="max-height:36px; overflow:hidden;">
+        
+        <span>Rapidly Forming Early Intermediate Structures Dictate the Pathway of Capsid Assembly</span>
+      </div>
+    </a>
+    <div class="itc-details">
+      
+        <div class="itc-authors" style="max-width: 50%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap">
+          
+  
+    
+  
+<a class="normal-link author" href="https://chemrxiv.org/authors/Roi_Asor/8205066">
+  Roi Asor
+</a>
+        </div>
+      
+      <span class="relative-date" style="max-width: 50%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap">
+        2020-02-05T08:37:24Z
+      </span>
+    </div>
+  </div>
+  
+
+  
+
+  
+
+  <div class="item-thumb-card">
+    <a href="https://chemrxiv.org/articles/Elucidating_the_Doping_Mechanism_in_Fluorene-Dithiophene_Based_Hole_Selective_Layer_Employing_Ultra-Hydrophobic_Ionic_Liquid_Dopant/11734419" target="">
+      
+  
+    
+  
+
+
+<div class="card-item-thumbnail withPreview">
+  
+    <img
+      src="https://s3-eu-west-1.amazonaws.com/ppreviews-chemrxiv-7984736271254/21359649/thumb.png"
+      alt="Thumbnail"
+    />
+  
+</div>
+      <div class="itc-title" style="max-height:36px; overflow:hidden;">
+        
+        <span>Elucidating the Doping Mechanism in Fluorene-Dithiophene Based Hole Selective Layer Employing Ultra-Hydrophobic Ionic Liquid Dopant</span>
+      </div>
+    </a>
+    <div class="itc-details">
+      
+        <div class="itc-authors" style="max-width: 50%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap">
+          
+  
+<a class="normal-link author" href="">
+  Navind Harindu Hemasiri
+</a>
+        </div>
+      
+      <span class="relative-date" style="max-width: 50%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap">
+        2020-01-31T17:49:56Z
+      </span>
+    </div>
+  </div>
+  
+
+  
+
+  
+
+  <div class="item-thumb-card">
+    <a href="https://chemrxiv.org/articles/Cooperative_and_Synchronized_Rotation_in_Motorized_Porous_Frameworks_Impact_on_Local_and_Global_Transport_Properties_of_Confined_Fluids/11708844" target="">
+      
+  
+    
+  
+
+
+<div class="card-item-thumbnail withPreview">
+  
+    <img
+      src="https://s3-eu-west-1.amazonaws.com/ppreviews-chemrxiv-7984736271254/21298344/thumb.png"
+      alt="Thumbnail"
+    />
+  
+</div>
+      <div class="itc-title" style="max-height:36px; overflow:hidden;">
+        
+        <span>Cooperative and Synchronized Rotation in Motorized Porous Frameworks: Impact on Local and Global Transport Properties of Confined Fluids</span>
+      </div>
+    </a>
+    <div class="itc-details">
+      
+        <div class="itc-authors" style="max-width: 50%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap">
+          
+  
+    
+  
+<a class="normal-link author" href="https://chemrxiv.org/authors/Jack_D_Evans/4393258">
+  Jack D. Evans
+</a>
+        </div>
+      
+      <span class="relative-date" style="max-width: 50%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap">
+        2020-01-27T05:24:48Z
+      </span>
+    </div>
+  </div>
+  
+
+  
+
+  
+
+  <div class="item-thumb-card">
+    <a href="https://chemrxiv.org/articles/Pine_Rosin_as_a_Toxic_Cannabis_Extract_Adulterant/11634303" target="">
+      
+  
+    
+  
+
+
+<div class="card-item-thumbnail withPreview">
+  
+    <img
+      src="https://s3-eu-west-1.amazonaws.com/ppreviews-chemrxiv-7984736271254/21100641/thumb.png"
+      alt="Thumbnail"
+    />
+  
+</div>
+      <div class="itc-title" style="max-height:36px; overflow:hidden;">
+        
+        <span>Pine Rosin as a Toxic Cannabis Extract Adulterant</span>
+      </div>
+    </a>
+    <div class="itc-details">
+      
+        <div class="itc-authors" style="max-width: 50%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap">
+          
+  
+<a class="normal-link author" href="">
+  Jiries Meehan-Atrash
+</a>
+        </div>
+      
+      <span class="relative-date" style="max-width: 50%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap">
+        2020-01-20T12:03:35Z
+      </span>
+    </div>
+  </div>
+  
+
+  
+
+  
+
+  <div class="item-thumb-card">
+    <a href="https://chemrxiv.org/articles/Porphyrin_s_Ring_Current_as_a_Driving_Force_for_Halogen_Bond_Interactions_A_Computational_Study/8866397" target="">
+      
+  
+    
+  
+
+
+<div class="card-item-thumbnail withPreview">
+  
+    <img
+      src="https://s3-eu-west-1.amazonaws.com/ppreviews-chemrxiv-7984736271254/21188400/thumb.png"
+      alt="Thumbnail"
+    />
+  
+</div>
+      <div class="itc-title" style="max-height:36px; overflow:hidden;">
+        
+        <span>Computational insight into the halogen bonded self-assembly of hexa-coordinated metalloporphyrins</span>
+      </div>
+    </a>
+    <div class="itc-details">
+      
+        <div class="itc-authors" style="max-width: 50%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap">
+          
+  
+<a class="normal-link author" href="">
+  Jyoti Rani
+</a>
+        </div>
+      
+      <span class="relative-date" style="max-width: 50%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap">
+        2020-01-20T07:24:55Z
+      </span>
+    </div>
+  </div>
+  
+
+  
+
+  
+
+  <div class="item-thumb-card">
+    <a href="https://chemrxiv.org/articles/Using_Collective_Knowledge_to_Assign_Oxidation_States/11604129" target="">
+      
+  
+    
+  
+
+
+<div class="card-item-thumbnail withPreview">
+  
+    <img
+      src="https://s3-eu-west-1.amazonaws.com/ppreviews-chemrxiv-7984736271254/21000045/thumb.png"
+      alt="Thumbnail"
+    />
+  
+</div>
+      <div class="itc-title" style="max-height:36px; overflow:hidden;">
+        
+        <span>Using Collective Knowledge to Assign Oxidation States</span>
+      </div>
+    </a>
+    <div class="itc-details">
+      
+        <div class="itc-authors" style="max-width: 50%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap">
+          
+  
+    
+  
+<a class="normal-link author" href="https://chemrxiv.org/authors/Kevin_Maik_Jablonka/6330224">
+  Kevin Maik Jablonka
+</a>
+        </div>
+      
+      <span class="relative-date" style="max-width: 50%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap">
+        2020-01-17T17:28:40Z
+      </span>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+</div>
+
+    </div>
+
+    
+       <footer role="contentinfo">
+    <div class="f-sitemap">
+      <div class="center-layout">
+        
+            <ul class="fs-links">
+              
+                
+                  
+                  
+                    <li><a  href="/">Home</a></li>
+                  
+                
+                  
+                  
+                    <li><a  href="https://chemrxiv.org/f/about">About</a></li>
+                  
+                
+                  
+                  
+                    <li><a  href="/submit">Submit</a></li>
+                  
+                
+                  
+                  
+                    <li><a  href="https://chemrxiv.org/f/faqs">FAQs</a></li>
+                  
+                
+                  
+                  
+                    <li><a  href="https://chemrxiv.org/f/terms">Terms of Use</a></li>
+                  
+                
+                  
+                  
+                    <li><a  href="https://chemrxiv.org/f/privacy">Privacy statement</a></li>
+                  
+                
+                  
+                  
+                    <li><a  href="https://chemrxiv.org/f/contact">Contact</a></li>
+                  
+                
+              
+              <li><a target="_blank" href="https://figshare.com/disclaimer">Disclaimer</a></li>
+              
+                <li class="last"><a href="/sitemap/siteindex.xml">Sitemap</a></li>
+              
+            </ul>
+            
+        
+      </div>
+    </div>
+    <div class="f-informations">
+      <div class="center-layout">
+        <div class="fi-figshare">fig<strong>share</strong>. credit for <strong>all</strong> your research.</div>
+        
+
+        
+          
+        
+        
+        </div>
+    </div>
+  </footer>
+    
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-20427479-1', 'figshare.com');
+      ga('require', 'displayfeatures');
+      ga('send', 'pageview');
+      
+          ga('create', 'UA-24258338-10', 'auto', 'clientTracker');
+          ga('clientTracker.send', 'pageview');
+      
+    </script>
+    <script type="text/javascript" src="https://jsprodlogin.figstatic.com/control_cookie"></script>
+    
+<script type="text/json" id="app-data">
+{
+  "institution": {"domain": null, "description": "", "timelineSettings": {"enabled": ["curationDates"]}, "exportPdfEnabled": true, "headerText": "ChemRxiv: The Preprint Server for Chemistry", "smallLogo": "https://s3-eu-west-1.amazonaws.com/876az-branding-figshare/chemrxiv/logo_header.png", "mandatoryAccountFields": ["first_name"], "statsUrl": "https://chemrxiv.org/stats", "hideCategoriesListing": null, "logo": "https://s3-eu-west-1.amazonaws.com/876az-branding-figshare/chemrxiv/logo.png", "groupId": 10882, "browseItemTypes": ["articles"], "name": "ChemRxiv", "publicStats": true, "stringId": "chemrxiv", "id": 259, "pageTitle": "ChemRxiv: the Preprint Server for Chemistry", "backgroundImage": "https://s3-eu-west-1.amazonaws.com/876az-branding-figshare/chemrxiv/homepage.jpg", "googleTrackingCode": "UA-24258338-10"},
+  "items": [{"type": "article", "data": {"status": "public", "openInNewTab": false, "isEmbargoed": false, "embargoDate": null, "timeline": {"submission": "2020-02-13T20:30:32", "onlinePublication": "2020-02-14T12:54:45", "posted": "2020-02-14T12:54:45", "revision": "2020-02-14T12:54:47"}, "isPublic": true, "embargoType": 0, "modifiedDate": null, "authors": [{"name": "Alyxandra Thiessen", "openInNewTab": false, "urlName": "Alyxandra_Thiessen", "isPublic": true, "id": 8447970, "isActive": true, "publicUrl": "https://chemrxiv.org/authors/Alyxandra_Thiessen/8447970"}, {"name": "Lijuan Zhang", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 8447988, "isActive": false}, {"name": "Anton Oliynyk", "openInNewTab": false, "urlName": "Anton_Oliynyk", "isPublic": true, "id": 6199838, "isActive": true, "publicUrl": "https://chemrxiv.org/authors/Anton_Oliynyk/6199838"}, {"name": "Haoyang Yu", "openInNewTab": false, "urlName": "Haoyang_Yu", "isPublic": true, "id": 8393802, "isActive": true, "publicUrl": "https://chemrxiv.org/authors/Haoyang_Yu/8393802"}, {"name": "Kevin O'Connor", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 8447989, "isActive": false}, {"name": "Alkiviathes Meldrum", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 8447997, "isActive": false}, {"name": "Jonathan G.C. Veinot", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 8394459, "isActive": false}], "hasLinkedFile": false, "curationStatus": "na", "isConfidential": false, "id": 11852040, "isActive": false, "createdDate": "2020-02-14T12:54:45Z", "thumb": "https://s3-eu-west-1.amazonaws.com/ppreviews-chemrxiv-7984736271254/21723045/thumb.png", "isEmbargoedPublished": false, "title": "A Tale of Seemingly \u201cIdentical\u201d Silicon Quantum Dot Families: Structural Insight into Silicon Quantum Dot Photoluminescence", "isMetadataRecord": false, "publishedDate": "2020-02-14T12:54:45Z", "version": 1, "definedType": {"name": "preprint", "icon": "preprint", "id": 12, "publicDescription": "Preprints are manuscripts made publicly available before they have been submitted for formal peer review and publication. They might contain new research findings or data. Preprints can be a draft or final version of an author's research but must not have been accepted for publication at the time of submission.", "privateDescription": "Preprints are manuscripts made publicly available before they have been submitted for formal peer review and publication. They might contain new research findings or data. Preprints can be a draft or final version of an author's research but must not have been accepted for publication at the time of submission."}, "publicUrl": "https://chemrxiv.org/articles/A_Tale_of_Seemingly_Identical_Silicon_Quantum_Dot_Families_Structural_Insight_into_Silicon_Quantum_Dot_Photoluminescence/11852040"}}, {"type": "article", "data": {"status": "public", "openInNewTab": false, "isEmbargoed": false, "embargoDate": null, "timeline": {"submission": "2020-02-13T11:45:04", "onlinePublication": "2020-02-13T13:29:45", "posted": "2020-02-13T13:29:45", "revision": "2020-02-13T13:29:48"}, "isPublic": true, "embargoType": 0, "modifiedDate": null, "authors": [{"name": "Alessandro Contini", "openInNewTab": false, "urlName": "Alessandro_Contini", "isPublic": true, "id": 4421419, "isActive": true, "publicUrl": "https://chemrxiv.org/authors/Alessandro_Contini/4421419"}], "hasLinkedFile": false, "curationStatus": "na", "isConfidential": false, "id": 11847381, "isActive": false, "createdDate": "2020-02-13T13:29:45Z", "thumb": "https://s3-eu-west-1.amazonaws.com/ppreviews-chemrxiv-7984736271254/21713028/thumb.png", "isEmbargoedPublished": false, "title": "Virtual Screening of an FDA Approved Drugs Database on Two COVID-19 Coronavirus Proteins", "isMetadataRecord": false, "publishedDate": "2020-02-13T13:29:45Z", "version": 1, "definedType": {"name": "preprint", "icon": "preprint", "id": 12, "publicDescription": "Preprints are manuscripts made publicly available before they have been submitted for formal peer review and publication. They might contain new research findings or data. Preprints can be a draft or final version of an author's research but must not have been accepted for publication at the time of submission.", "privateDescription": "Preprints are manuscripts made publicly available before they have been submitted for formal peer review and publication. They might contain new research findings or data. Preprints can be a draft or final version of an author's research but must not have been accepted for publication at the time of submission."}, "publicUrl": "https://chemrxiv.org/articles/Virtual_Screening_of_an_FDA_Approved_Drugs_Database_on_Two_COVID-19_Coronavirus_Proteins/11847381"}}, {"type": "article", "data": {"status": "public", "openInNewTab": false, "isEmbargoed": false, "embargoDate": null, "timeline": {"submission": "2020-02-12T00:36:54", "onlinePublication": "2020-02-12T12:19:34", "posted": "2020-02-12T12:19:34", "revision": "2020-02-12T12:19:38"}, "isPublic": true, "embargoType": 2, "modifiedDate": null, "authors": [{"name": "Christoph Bannwarth", "openInNewTab": false, "urlName": "Christoph_Bannwarth", "isPublic": true, "id": 5860385, "isActive": true, "publicUrl": "https://chemrxiv.org/authors/Christoph_Bannwarth/5860385"}, {"name": "Jimmy K. Yu", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 8427356, "isActive": false}, {"name": "Edward G. Hohenstein", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 8432302, "isActive": false}, {"name": "Todd J. Mart\u00ednez", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 6581329, "isActive": false}], "hasLinkedFile": false, "curationStatus": "na", "isConfidential": false, "id": 11828256, "isActive": false, "createdDate": "2020-02-12T12:19:34Z", "thumb": "https://s3-eu-west-1.amazonaws.com/ppreviews-chemrxiv-7984736271254/21683106/thumb.png", "isEmbargoedPublished": false, "title": "Hole-Hole Tamm-Dancoff-Approximated Density Functional Theory: A Highly Efficient Electronic Structure Method Incorporating Dynamic and Static Correlation", "isMetadataRecord": false, "publishedDate": "2020-02-12T12:19:34Z", "version": 1, "definedType": {"name": "preprint", "icon": "preprint", "id": 12, "publicDescription": "Preprints are manuscripts made publicly available before they have been submitted for formal peer review and publication. They might contain new research findings or data. Preprints can be a draft or final version of an author's research but must not have been accepted for publication at the time of submission.", "privateDescription": "Preprints are manuscripts made publicly available before they have been submitted for formal peer review and publication. They might contain new research findings or data. Preprints can be a draft or final version of an author's research but must not have been accepted for publication at the time of submission."}, "publicUrl": "https://chemrxiv.org/articles/Hole-Hole_Tamm-Dancoff-Approximated_Density_Functional_Theory_A_Highly_Efficient_Electronic_Structure_Method_Incorporating_Dynamic_and_Static_Correlation/11828256"}}, {"type": "article", "data": {"status": "public", "openInNewTab": false, "isEmbargoed": false, "embargoDate": null, "timeline": {"submission": "2020-02-08T08:53:32", "onlinePublication": "2020-02-10T11:23:21", "posted": "2020-02-10T11:23:21", "revision": "2020-02-10T11:23:23"}, "isPublic": true, "embargoType": 2, "modifiedDate": null, "authors": [{"name": "Sreerangappa Ramesh", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 8425026, "isActive": false}, {"name": "Makhlouf Amoura", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 8425023, "isActive": false}, {"name": "Damien Debecker", "openInNewTab": false, "urlName": "Damien_Debecker", "isPublic": true, "id": 4977188, "isActive": true, "publicUrl": "https://chemrxiv.org/authors/Damien_Debecker/4977188"}], "hasLinkedFile": false, "curationStatus": "na", "isConfidential": false, "id": 11826771, "isActive": false, "createdDate": "2020-02-10T11:23:21Z", "thumb": "https://s3-eu-west-1.amazonaws.com/ppreviews-chemrxiv-7984736271254/21635019/thumb.png", "isEmbargoedPublished": false, "title": "Highly Basic Solid Catalyst Obtained by Spray Drying of a NaAlO2 and Boehmite Suspension for the Upgrading of Glycerol to Acetins", "isMetadataRecord": false, "publishedDate": "2020-02-10T11:23:21Z", "version": 1, "definedType": {"name": "preprint", "icon": "preprint", "id": 12, "publicDescription": "Preprints are manuscripts made publicly available before they have been submitted for formal peer review and publication. They might contain new research findings or data. Preprints can be a draft or final version of an author's research but must not have been accepted for publication at the time of submission.", "privateDescription": "Preprints are manuscripts made publicly available before they have been submitted for formal peer review and publication. They might contain new research findings or data. Preprints can be a draft or final version of an author's research but must not have been accepted for publication at the time of submission."}, "publicUrl": "https://chemrxiv.org/articles/Highly_Basic_Solid_Catalyst_Obtained_by_Spray_Drying_of_a_NaAlO2_and_Boehmite_Suspension_for_the_Upgrading_of_Glycerol_to_Acetins/11826771"}}, {"type": "article", "data": {"status": "public", "openInNewTab": false, "isEmbargoed": false, "embargoDate": null, "timeline": {"submission": "2020-02-04T13:39:05", "onlinePublication": "2020-02-05T08:37:24", "posted": "2020-02-05T08:37:24", "revision": "2020-02-05T08:37:28"}, "isPublic": true, "embargoType": 0, "modifiedDate": null, "authors": [{"name": "Roi Asor", "openInNewTab": false, "urlName": "Roi_Asor", "isPublic": true, "id": 8205066, "isActive": true, "publicUrl": "https://chemrxiv.org/authors/Roi_Asor/8205066"}, {"name": "Christopher John Schlicksup", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 8398137, "isActive": false}, {"name": "Zhongchao Zhao", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 8398149, "isActive": false}, {"name": "Adam Zlotnick", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 8398153, "isActive": false}, {"name": "Uri Raviv", "openInNewTab": false, "urlName": "Uri_Raviv", "isPublic": true, "id": 5687033, "isActive": true, "publicUrl": "https://chemrxiv.org/authors/Uri_Raviv/5687033"}], "hasLinkedFile": false, "curationStatus": "na", "isConfidential": false, "id": 11799573, "isActive": false, "createdDate": "2020-02-05T08:37:24Z", "thumb": "https://s3-eu-west-1.amazonaws.com/ppreviews-chemrxiv-7984736271254/21532857/thumb.png", "isEmbargoedPublished": false, "title": "Rapidly Forming Early Intermediate Structures Dictate the Pathway of Capsid Assembly", "isMetadataRecord": false, "publishedDate": "2020-02-05T08:37:24Z", "version": 1, "definedType": {"name": "preprint", "icon": "preprint", "id": 12, "publicDescription": "Preprints are manuscripts made publicly available before they have been submitted for formal peer review and publication. They might contain new research findings or data. Preprints can be a draft or final version of an author's research but must not have been accepted for publication at the time of submission.", "privateDescription": "Preprints are manuscripts made publicly available before they have been submitted for formal peer review and publication. They might contain new research findings or data. Preprints can be a draft or final version of an author's research but must not have been accepted for publication at the time of submission."}, "publicUrl": "https://chemrxiv.org/articles/Rapidly_Forming_Early_Intermediate_Structures_Dictate_the_Pathway_of_Capsid_Assembly/11799573"}}, {"type": "article", "data": {"status": "public", "openInNewTab": false, "isEmbargoed": false, "embargoDate": null, "timeline": {"submission": "2020-01-27T21:43:33", "onlinePublication": "2020-01-31T17:49:56", "posted": "2020-01-31T17:49:56", "revision": "2020-01-31T17:49:58"}, "isPublic": true, "embargoType": 2, "modifiedDate": null, "authors": [{"name": "Navind Harindu Hemasiri", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 8364163, "isActive": false}, {"name": "Samrana Kazim", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 7319334, "isActive": false}, {"name": "Laura Calio", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 8364164, "isActive": false}, {"name": "Sanghyun Paek", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 5785090, "isActive": false}, {"name": "Manuel Salado", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 7319329, "isActive": false}, {"name": "Gianluca Pozzi", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 8364167, "isActive": false}, {"name": "Luis Lezama", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 8362589, "isActive": false}, {"name": "Mohammad Khaja Nazeeruddin", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 5785104, "isActive": false}, {"name": "Shahzada Ahmad", "openInNewTab": false, "urlName": "Shahzada_Ahmad", "isPublic": true, "id": 7319291, "isActive": true, "publicUrl": "https://chemrxiv.org/authors/Shahzada_Ahmad/7319291"}], "hasLinkedFile": false, "curationStatus": "na", "isConfidential": false, "id": 11734419, "isActive": false, "createdDate": "2020-01-31T17:49:56Z", "thumb": "https://s3-eu-west-1.amazonaws.com/ppreviews-chemrxiv-7984736271254/21359649/thumb.png", "isEmbargoedPublished": false, "title": "Elucidating the Doping Mechanism in Fluorene-Dithiophene Based Hole Selective Layer Employing Ultra-Hydrophobic Ionic Liquid Dopant", "isMetadataRecord": false, "publishedDate": "2020-01-31T17:49:56Z", "version": 1, "definedType": {"name": "preprint", "icon": "preprint", "id": 12, "publicDescription": "Preprints are manuscripts made publicly available before they have been submitted for formal peer review and publication. They might contain new research findings or data. Preprints can be a draft or final version of an author's research but must not have been accepted for publication at the time of submission.", "privateDescription": "Preprints are manuscripts made publicly available before they have been submitted for formal peer review and publication. They might contain new research findings or data. Preprints can be a draft or final version of an author's research but must not have been accepted for publication at the time of submission."}, "publicUrl": "https://chemrxiv.org/articles/Elucidating_the_Doping_Mechanism_in_Fluorene-Dithiophene_Based_Hole_Selective_Layer_Employing_Ultra-Hydrophobic_Ionic_Liquid_Dopant/11734419"}}, {"type": "article", "data": {"status": "public", "openInNewTab": false, "isEmbargoed": false, "embargoDate": null, "timeline": {"submission": "2020-01-24T12:11:25", "onlinePublication": "2020-01-27T05:24:48", "posted": "2020-01-27T05:24:48", "revision": "2020-01-27T05:24:51"}, "isPublic": true, "embargoType": 1, "modifiedDate": null, "authors": [{"name": "Jack D. Evans", "openInNewTab": false, "urlName": "Jack_D_Evans", "isPublic": true, "id": 4393258, "isActive": true, "publicUrl": "https://chemrxiv.org/authors/Jack_D_Evans/4393258"}, {"name": "Simon Krause", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 8354748, "isActive": false}, {"name": "Ben L. Feringa", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 8354752, "isActive": false}], "hasLinkedFile": false, "curationStatus": "na", "isConfidential": false, "id": 11708844, "isActive": false, "createdDate": "2020-01-27T05:24:48Z", "thumb": "https://s3-eu-west-1.amazonaws.com/ppreviews-chemrxiv-7984736271254/21298344/thumb.png", "isEmbargoedPublished": false, "title": "Cooperative and Synchronized Rotation in Motorized Porous Frameworks: Impact on Local and Global Transport Properties of Confined Fluids", "isMetadataRecord": false, "publishedDate": "2020-01-27T05:24:48Z", "version": 1, "definedType": {"name": "preprint", "icon": "preprint", "id": 12, "publicDescription": "Preprints are manuscripts made publicly available before they have been submitted for formal peer review and publication. They might contain new research findings or data. Preprints can be a draft or final version of an author's research but must not have been accepted for publication at the time of submission.", "privateDescription": "Preprints are manuscripts made publicly available before they have been submitted for formal peer review and publication. They might contain new research findings or data. Preprints can be a draft or final version of an author's research but must not have been accepted for publication at the time of submission."}, "publicUrl": "https://chemrxiv.org/articles/Cooperative_and_Synchronized_Rotation_in_Motorized_Porous_Frameworks_Impact_on_Local_and_Global_Transport_Properties_of_Confined_Fluids/11708844"}}, {"type": "article", "data": {"status": "public", "openInNewTab": false, "isEmbargoed": false, "embargoDate": null, "timeline": {"submission": "2020-01-16T23:42:28", "onlinePublication": "2020-01-20T12:03:35", "posted": "2020-01-20T12:03:35", "revision": "2020-01-20T12:03:36"}, "isPublic": true, "embargoType": 0, "modifiedDate": null, "authors": [{"name": "Jiries Meehan-Atrash", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 8316579, "isActive": false}, {"name": "Robert Strongin", "openInNewTab": false, "urlName": "Robert_Strongin", "isPublic": true, "id": 8316444, "isActive": true, "publicUrl": "https://chemrxiv.org/authors/Robert_Strongin/8316444"}], "hasLinkedFile": false, "curationStatus": "na", "isConfidential": false, "id": 11634303, "isActive": false, "createdDate": "2020-01-20T12:03:35Z", "thumb": "https://s3-eu-west-1.amazonaws.com/ppreviews-chemrxiv-7984736271254/21100641/thumb.png", "isEmbargoedPublished": false, "title": "Pine Rosin as a Toxic Cannabis Extract Adulterant", "isMetadataRecord": false, "publishedDate": "2020-01-20T12:03:35Z", "version": 1, "definedType": {"name": "preprint", "icon": "preprint", "id": 12, "publicDescription": "Preprints are manuscripts made publicly available before they have been submitted for formal peer review and publication. They might contain new research findings or data. Preprints can be a draft or final version of an author's research but must not have been accepted for publication at the time of submission.", "privateDescription": "Preprints are manuscripts made publicly available before they have been submitted for formal peer review and publication. They might contain new research findings or data. Preprints can be a draft or final version of an author's research but must not have been accepted for publication at the time of submission."}, "publicUrl": "https://chemrxiv.org/articles/Pine_Rosin_as_a_Toxic_Cannabis_Extract_Adulterant/11634303"}}, {"type": "article", "data": {"status": "public", "openInNewTab": false, "isEmbargoed": false, "embargoDate": null, "timeline": {"submission": "2019-07-15T03:24:57", "onlinePublication": "2019-07-16T16:18:13", "posted": "2020-01-20T07:24:55", "revision": "2020-01-20T07:24:58"}, "isPublic": true, "embargoType": 2, "modifiedDate": null, "authors": [{"name": "Jyoti Rani", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 6952189, "isActive": false}, {"name": "Vratta Grover", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 8309375, "isActive": false}, {"name": "Swati Dhamija", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 8309379, "isActive": false}, {"name": "Hatem M. Titi", "openInNewTab": false, "urlName": "Hatem_M_Titi", "isPublic": true, "id": 6949271, "isActive": true, "publicUrl": "https://chemrxiv.org/authors/Hatem_M_Titi/6949271"}, {"name": "Ranjan Patra", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 6949367, "isActive": false}], "hasLinkedFile": false, "curationStatus": "na", "isConfidential": false, "id": 8866397, "isActive": false, "createdDate": "2020-01-20T07:24:55Z", "thumb": "https://s3-eu-west-1.amazonaws.com/ppreviews-chemrxiv-7984736271254/21188400/thumb.png", "isEmbargoedPublished": false, "title": "Computational insight into the halogen bonded self-assembly of hexa-coordinated metalloporphyrins", "isMetadataRecord": false, "publishedDate": "2020-01-20T07:24:55Z", "version": 2, "definedType": {"name": "preprint", "icon": "preprint", "id": 12, "publicDescription": "Preprints are manuscripts made publicly available before they have been submitted for formal peer review and publication. They might contain new research findings or data. Preprints can be a draft or final version of an author's research but must not have been accepted for publication at the time of submission.", "privateDescription": "Preprints are manuscripts made publicly available before they have been submitted for formal peer review and publication. They might contain new research findings or data. Preprints can be a draft or final version of an author's research but must not have been accepted for publication at the time of submission."}, "publicUrl": "https://chemrxiv.org/articles/Porphyrin_s_Ring_Current_as_a_Driving_Force_for_Halogen_Bond_Interactions_A_Computational_Study/8866397"}}, {"type": "article", "data": {"status": "public", "openInNewTab": false, "isEmbargoed": false, "embargoDate": null, "timeline": {"submission": "2020-01-14T13:21:39", "onlinePublication": "2020-01-17T17:28:40", "posted": "2020-01-17T17:28:40", "revision": "2020-01-17T17:28:42"}, "isPublic": true, "embargoType": 0, "modifiedDate": null, "authors": [{"name": "Kevin Maik Jablonka", "openInNewTab": false, "urlName": "Kevin_Maik_Jablonka", "isPublic": true, "id": 6330224, "isActive": true, "publicUrl": "https://chemrxiv.org/authors/Kevin_Maik_Jablonka/6330224"}, {"name": "Daniele Ongari", "openInNewTab": true, "urlName": "_", "isPublic": true, "id": 8214373, "isActive": false}, {"name": "Seyed Mohamad Moosavi", "openInNewTab": false, "urlName": "Seyed_Mohamad_Moosavi", "isPublic": true, "id": 8207925, "isActive": true, "publicUrl": "https://chemrxiv.org/authors/Seyed_Mohamad_Moosavi/8207925"}, {"name": "Berend Smit", "openInNewTab": false, "urlName": "Berend_Smit", "isPublic": true, "id": 8214372, "isActive": true, "publicUrl": "https://chemrxiv.org/authors/Berend_Smit/8214372"}], "hasLinkedFile": false, "curationStatus": "na", "isConfidential": false, "id": 11604129, "isActive": false, "createdDate": "2020-01-17T17:28:40Z", "thumb": "https://s3-eu-west-1.amazonaws.com/ppreviews-chemrxiv-7984736271254/21000045/thumb.png", "isEmbargoedPublished": false, "title": "Using Collective Knowledge to Assign Oxidation States", "isMetadataRecord": false, "publishedDate": "2020-01-17T17:28:40Z", "version": 1, "definedType": {"name": "preprint", "icon": "preprint", "id": 12, "publicDescription": "Preprints are manuscripts made publicly available before they have been submitted for formal peer review and publication. They might contain new research findings or data. Preprints can be a draft or final version of an author's research but must not have been accepted for publication at the time of submission.", "privateDescription": "Preprints are manuscripts made publicly available before they have been submitted for formal peer review and publication. They might contain new research findings or data. Preprints can be a draft or final version of an author's research but must not have been accepted for publication at the time of submission."}, "publicUrl": "https://chemrxiv.org/articles/Using_Collective_Knowledge_to_Assign_Oxidation_States/11604129"}}]
+}
+</script>
+<script type="text/javascript" src="//website-p-eu.figstatic.com/assets/0c8f6d89df86e896e6a38b10c95fc3c95af03bd5/public/index.js"></script>
+
+    
+      <script id="domain-data" type="text/json">
+      {"domain": "chemrxiv.org", "domainAccountId": null, "customizations": {"privacyUrl": "/f/privacy", "shareEmailType": "preprint", "headerActions": {"browse": {"hide": true}, "search": {"name": "Search on chemRxiv..."}, "extraGuestOption": {"route": {"handler": "account_login"}, "name": "Submit"}}, "htmlName": "<strong>Chem</strong>Rxiv", "menuData": {"createItem": {"route": {"handler": "virtual_institution_submit"}, "name": "Submit"}, "accountHome": {"route": {"handler": "account_home"}, "name": "My submissions"}}, "duplicateInstitutionalEmailError": "Your institutional domain is already in use on the figshare system and you may have an account already. Please sign up with a different email address", "doiExample": "10.26434/chemrxiv.1234567", "termsUrl": "/f/terms", "defaultItemType": 12, "linkBackTitle": "Read the published paper", "features": {"github": true, "footerPartners": false, "includeFigshareContent": false, "applications": true, "collections": false, "itemTypes": false, "projects": false}}, "dapTrackingCode": null, "actions": {"search": {"url": "https://chemrxiv.org/search", "name": "Search on chemRxiv..."}, "browse": null, "register": {"url": "https://chemrxiv.org/account/register", "name": "Sign up"}, "extraGuestOption": {"url": "https://chemrxiv.org/account/login", "name": "Submit"}, "home": {"url": "https://chemrxiv.org/", "name": "ChemRxiv"}, "login": {"url": "https://chemrxiv.org/account/login", "name": "Log in"}}, "cookieTest": {"set": "https://jsprodlogin.figstatic.com/control_cookie", "get": "https://jsprodlogin.figstatic.com/get_cookie"}, "baseDomain": "figshare.com", "mandatory_author_fields": ["email"], "branding": {"logo": "https://s3-eu-west-1.amazonaws.com/876az-branding-figshare/chemrxiv/logo_header.png", "name": "ChemRxiv"}, "isIsolatedDomain": true, "supportEmail": "support@figshare.com", "mandatory_account_fields": ["first_name"]}
+      </script>
+    
+  </body>
+</html>

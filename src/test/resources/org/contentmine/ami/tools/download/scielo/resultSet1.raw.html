@@ -1,0 +1,813 @@
+
+<html>
+<head>
+	<title>iAH Search interface 2.4 - Results of the search &lt;page  1&gt;
+	</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="STYLESHEET" type="text/css" href="/css/scielo.css">
+<script language="javascript" src="/article.js">
+</script>
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="blue">
+			<!--div class="scielo10bar">
+				<div>
+				<ul>
+					<li><a href="http://www.eventos.bvsalud.org/scielo10/?lang=en" border="0"><img src="/img/scielo.gif"/></a></li>
+					<li><a href="http://www.eventos.bvsalud.org/scielo10/?lang=en">SciELO 10 years</a></li>
+					<li><a href="http://www2.scielo.org/?lang=en">Access the new SciELO Network Portal</a></li>
+				</ul>
+				</div>
+			</div-->
+<!--
+limit:
+issn: 
+rep : 
+--><center><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=7 WIDTH="600"><TR><TD WIDTH="26%" VALIGN="TOP" ALIGN="CENTER"><a href="http://www.scielo.br/scielo.php?script=sci_home&amp;lng=en&nrm=iso"><IMG SRC="http://www.scielo.br/img/en/fbpelogp.gif" border=0 alt=""></a><BR></TD><TD WIDTH="74%" VALIGN="TOP"><table><tr><td nowrap><IMG SRC="http://www.scielo.br/img/en/serbrow.gif">&nbsp;<IMG SRC="http://www.scielo.br/img/en/artbrow.gif"><BR><A href="http://www.scielo.br/scielo.php?script=sci_alphabetic&amp;lng=en&nrm=iso"><IMG SRC="http://www.scielo.br/img/en/alpha.gif" border=0 alt="alphabetic list of serials"></a><A href="http://www.scielo.br/scielo.php?script=sci_subject&amp;lng=en&nrm=iso"><IMG SRC="http://www.scielo.br/img/en/subject.gif" border=0 alt="subject list of serials"></a><A href="?IsisScript=iah/iah.xis&base=title&lang=i&fmt=iso.pft"><IMG SRC="http://www.scielo.br/img/en/search.gif" border=0 alt="serials search"></a>&nbsp;<a href="?IsisScript=iah/iah.xis&base=article^dlibrary&index=AU&lang=i&fmt=iso.pft&form=B"><IMG SRC="http://www.scielo.br/img/en/author.gif" border=0 alt="author index"></a><a href="http:?IsisScript=iah/iah.xis&base=article^dlibrary&index=KW&lang=i&fmt=iso.pft&form=B"><IMG SRC="http://www.scielo.br/img/en/subject.gif" border=0 alt="subject index"></a><a href="http:?IsisScript=iah/iah.xis&base=article^dlibrary&lang=i&fmt=iso.pft&form=A"><IMG SRC="http://www.scielo.br/img/en/search.gif" border=0></a></td></tr></table></TD></TR></TABLE><FONT SIZE=+1 COLOR="#000080"><B>Library collection</B></FONT><BR><BR></center>
+
+<script>
+	function AnySelected(){			
+		var any = false;
+		var count = 0;		
+
+		while(!any && count < document.forms[0].listChecked.length) {			
+			any = (document.forms[0].listChecked[count].checked || document.forms[0].listChecked[count].type == "hidden");
+			count++;
+	    }
+		if (!any)
+		{
+			alert("No reference was selected");
+			return false;
+		}	
+		else{
+			document.forms[0].nextAction.value="your_selection";			
+			document.forms[0].submit();			
+			return true;
+		}		
+	}
+</script>
+
+<form action="/cgi-bin/wxis.exe/iah/" method="POST">
+	<input type="hidden" name="IsisScript" value="iah/iah.xis">
+<input type="hidden" name="environment" value="^d/iah/^c/var/www/scielo_br/cgi-bin/iah/^b/var/www/scielo_br/bases/^mOFF^siah/iah.xis^v2.4">
+<input type="hidden" name="avaibleFormats" value="^niso.pft^pISO 690^eISO 690^iISO 690">
+<input type="hidden" name="avaibleFormats" value="^nabn.pft^pABNT NBR 6023/89^eABNT NBR 6023/89^iABNT NBR 6023/89">
+<input type="hidden" name="avaibleFormats" value="^nvan.pft^pVancouver^eVancouver^iVancouver">
+<input type="hidden" name="avaibleFormats" value="^nDEFAULT^fiso.pft">
+<input type="hidden" name="apperance" value="^cwhite^i^tblack^lblue^b#B0C2D5^escielo@bireme.br^rON^mON">
+<input type="hidden" name="helpInfo" value="^nNOTE FORM F^vnota_form1_scielo.htm">
+<input type="hidden" name="gizmoDecod" value="">
+<input type="hidden" name="avaibleForms" value="B,F">
+<input type="hidden" name="logoImage" value="scielog.gif">
+<input type="hidden" name="logoURL" value="www.scielo.br">
+<input type="hidden" name="headerImage" value="^ponlinep.gif^eonlinee.gif^ionlinei.gif">
+<input type="hidden" name="headerURL" value="www.scielo.br">
+<input type="hidden" name="form" value="A">
+<input type="hidden" name="pathImages" value="/iah/I/image/">
+<input type="hidden" name="navBar" value="OFF">
+<input type="hidden" name="hits" value="10">
+<input type="hidden" name="format" value="iso.pft">
+<input type="hidden" name="lang" value="i">
+<input type="hidden" name="isisTotal" value="280">
+<input type="hidden" name="isisFrom" value="1">
+<input type="hidden" name="user" value="GUEST">
+<input type="hidden" name="index" value="KW">
+<input type="hidden" name="baseFeatures" value="^k_KEY^eON">
+
+
+	
+	<input type="hidden" name="nextAction" value="refine/resubmit">	
+	<center>
+	<table border="0" width="600" cellspacing="0" cellpadding="0" bgcolor="#B0C2D5">
+		<tr>
+				
+				<td align="center">
+					<a href="javascript:void(AnySelected())"><img src="/iah/I/image/yselect.gif" border="0"></a>
+				</td>
+				<td align="center">
+					<input type="image" src="/iah/I/image/sresult.gif" name="list" border="0"></a>					
+				</td>							
+				<td align="center">				
+					<input type="image" name="new search" src="/iah/I/image/npesq.gif" border="0">				
+				</td>
+				<td align="center">		
+					<input type="image" name="config" src="/iah/I/image/config.gif" border="0">			
+				</td>
+				<td align="center">			
+					<a href="#bottom"><img src="/iah/I/image/fim.gif" border="0"></a>
+				</td>	
+				
+		</tr>
+	</table>
+
+	<table border="0" width="600" cellspacing="0" cellpadding="0" align="center">	
+		<tr>
+			<td>
+			<table border="0" width="600">
+				<tr>
+					<td align="right" valign="top">
+						<font face="arial" size="2">Database :</font>
+					</td>
+					<td valign="top">
+						<font face="verdana" size="1"><b>article</b></font>
+					</td>		
+				</tr>
+				<tr>
+					<td align="right" width="35%" valign="top">
+						<font face="arial" size="2">Search on :</font>
+					</td>
+					<td width="65%" valign="top">
+						<font face="verdana" size="1"><b>
+						CLIMATE CHANGE [Subject]				
+						</b></font>					
+					</td>
+				</tr>		
+				<tr>
+					<td align="right" valign="top">
+						<font face="arial" size="2">References found :</font>
+					</td>
+					<td>
+						<font face="verdana" size="1">
+						<b>280</b>
+						[<a href="#refine">refine</a>]
+						</font>
+					</td>				
+				</tr>	
+				
+        		<tr>
+          			<td align="right">
+						<font face="Verdana" size="2">Displaying:</font>
+	          		</td>
+    	      		<td>
+						<font face="Verdana" size="1">
+						<b>1 .. 10</b>&nbsp;&nbsp;
+						in format  [<b>ISO 690</b>]
+						</font>
+						
+		 			</td>
+        		</tr>
+				
+
+				
+				
+				
+				
+			</table>
+			</td>
+		</tr>
+	</table>
+	</center>
+	<br>
+	<!-- monta navegacao entre as paginas do resultado -->
+	
+<center>
+<table border="0" width="600" cellspacing="0" cellpadding="0">		
+	<tr valign="top">		
+		<td>												
+			<font face="Verdana" size="2"><sup><b><i>page  1 of 28</b></i></sup></font>
+		</td>		
+		<td align="right" nowrap>			
+			<font face="Verdana" size="2"><sup><b><i>go to page &nbsp;&nbsp;&nbsp;</b></i></sup></font><input type="image" name="Page1" src="/iah/I/image/1red.gif" width="6" height="15" border="0">&nbsp;&nbsp;<input type="image" name="Page2" src="/iah/I/image/2.gif" width="6" height="15" border="0">&nbsp;&nbsp;<input type="image" name="Page3" src="/iah/I/image/3.gif" width="6" height="15" border="0">&nbsp;&nbsp;<input type="image" name="Page4" src="/iah/I/image/4.gif" width="6" height="15" border="0">&nbsp;&nbsp;<input type="image" name="Page5" src="/iah/I/image/5.gif" width="6" height="15" border="0">&nbsp;&nbsp;<input type="image" name="Page6" src="/iah/I/image/6.gif" width="6" height="15" border="0">&nbsp;&nbsp;<input type="image" name="Page7" src="/iah/I/image/7.gif" width="6" height="15" border="0">&nbsp;&nbsp;<input type="image" name="Page8" src="/iah/I/image/8.gif" width="6" height="15" border="0">&nbsp;&nbsp;<input type="image" name="Page9" src="/iah/I/image/9.gif" width="6" height="15" border="0">&nbsp;&nbsp;<input type="image" name="Page10" src="/iah/I/image/1.gif" width="6" height="15" border="0"><input type="image" name="Page10" src="/iah/I/image/0.gif" width="6" height="15" border="0">&nbsp;&nbsp;<input type="image" name="Page11" src="/iah/I/image/right.gif" border="0" width="17" height="17">&nbsp;<input type="image" name="Page28" src="/iah/I/image/last.gif" border="0" width="17" height="17">	
+		</td>				
+	</tr>
+</table>
+</center>
+	
+<br>
+
+  <center>
+  <table width="600"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<hr width="600">
+			<font face="Verdana" size="1">&nbsp;&nbsp;	
+			<b>1 / 280</b>
+			</font>			
+		</td>
+	</tr>
+  </table>			
+  </center>
+
+
+
+<center>
+<table width="600"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td align="left" width="115" valign="top" rowspan="6">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">       		   			
+			<tr>
+				<td width="28%">
+					<input type="checkbox" name="listChecked" value="^m13636594^h1" >
+				</td>	
+				<td width="72%">
+					<font face="verdana" size="1"><i>select</i></font>
+				</td>
+			</tr>
+				<td width="28%">
+					<input type="image" name="toprint^m13636594" src="/iah/I/image/toprint.gif" border="0">
+				</td>	
+				<td width="72%">
+					<font face="verdana" size="1"><i>to print</i></font>
+				</td>
+			</tr>
+					   
+			</table>
+		</td>
+		<td width="485">
+
+		<!-- formato de apresentacao da base -->
+<TABLE><TR><td width="15%">&nbsp;</td><TD><font class="isoref" size="-1">S&#357;ahel, Richard. <font class="negrito" size="-1">Sustainable development in the shadow of climate change</font>. <I>Civitas, Rev. Ciênc. Soc.</I>, Aug 2019, vol.19, no.2, p.337-353. ISSN 1519-6089<br><div align="left">&#160;&#160;&#160;&#160;<font face="Symbol" color="#000080" size=1>&#183;</font>&nbsp;<a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_abstract&amp;pid=S1519-60892019000200337&lng=en&nrm=iso&tlng=en">abstract in english</font></a> | <a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_abstract&amp;pid=S1519-60892019000200337&lng=en&nrm=iso&tlng=pt">portuguese</font></a> | <a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_abstract&amp;pid=S1519-60892019000200337&lng=en&nrm=iso&tlng=es">spanish</font></a>&#160;&#160;&#160;&#160;<font face="Symbol" color="#000080" size=1>&#183;</font>&nbsp;<a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S1519-60892019000200337&lng=en&nrm=iso">text in english</font></a></td></tr></TABLE></td></tr></table></center><br>
+
+  <center>
+  <table width="600"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<hr width="600">
+			<font face="Verdana" size="1">&nbsp;&nbsp;	
+			<b>2 / 280</b>
+			</font>			
+		</td>
+	</tr>
+  </table>			
+  </center>
+
+
+
+<center>
+<table width="600"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td align="left" width="115" valign="top" rowspan="6">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">       		   			
+			<tr>
+				<td width="28%">
+					<input type="checkbox" name="listChecked" value="^m13628927^h2" >
+				</td>	
+				<td width="72%">
+					<font face="verdana" size="1"><i>select</i></font>
+				</td>
+			</tr>
+				<td width="28%">
+					<input type="image" name="toprint^m13628927" src="/iah/I/image/toprint.gif" border="0">
+				</td>	
+				<td width="72%">
+					<font face="verdana" size="1"><i>to print</i></font>
+				</td>
+			</tr>
+					   
+			</table>
+		</td>
+		<td width="485">
+
+		<!-- formato de apresentacao da base -->
+<TABLE><TR><td width="15%">&nbsp;</td><TD><font class="isoref" size="-1">Escosteguy, Juliana Ribas, Beskow, Murilo and Sand, Cezar Roberto Van Der <font class="negrito" size="-1">The Influence of Seasonal Temperature Variation on Blood Pressure Behavior</font>. <I>Int. J. Cardiovasc. Sci.</I>, Dec 2019, vol.32, no.6, p.615-622. ISSN 2359-5647<br><div align="left">&#160;&#160;&#160;&#160;<font face="Symbol" color="#000080" size=1>&#183;</font>&nbsp;<a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_abstract&amp;pid=S2359-56472019000600615&lng=en&nrm=iso&tlng=en">abstract in english</font></a>&#160;&#160;&#160;&#160;<font face="Symbol" color="#000080" size=1>&#183;</font>&nbsp;<a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S2359-56472019000600615&lng=en&nrm=iso">text in english</font></a></td></tr></TABLE></td></tr></table></center><br>
+
+  <center>
+  <table width="600"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<hr width="600">
+			<font face="Verdana" size="1">&nbsp;&nbsp;	
+			<b>3 / 280</b>
+			</font>			
+		</td>
+	</tr>
+  </table>			
+  </center>
+
+
+
+<center>
+<table width="600"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td align="left" width="115" valign="top" rowspan="6">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">       		   			
+			<tr>
+				<td width="28%">
+					<input type="checkbox" name="listChecked" value="^m13563017^h3" >
+				</td>	
+				<td width="72%">
+					<font face="verdana" size="1"><i>select</i></font>
+				</td>
+			</tr>
+				<td width="28%">
+					<input type="image" name="toprint^m13563017" src="/iah/I/image/toprint.gif" border="0">
+				</td>	
+				<td width="72%">
+					<font face="verdana" size="1"><i>to print</i></font>
+				</td>
+			</tr>
+					   
+			</table>
+		</td>
+		<td width="485">
+
+		<!-- formato de apresentacao da base -->
+<TABLE><TR><td width="15%">&nbsp;</td><TD><font class="isoref" size="-1">Schuster, Raíza Cristóvão, Fan, Fernando Mainardi and Collischonn, Walter <font class="negrito" size="-1">Scenarios of climate change effects in water availability within the patos Lagoon&#8217;s Basin</font>. <I>RBRH</I>,  2020, vol.25. ISSN 2318-0331<br><div align="left">&#160;&#160;&#160;&#160;<font face="Symbol" color="#000080" size=1>&#183;</font>&nbsp;<a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_abstract&amp;pid=S2318-03312020000100208&lng=en&nrm=iso&tlng=en">abstract in english</font></a> | <a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_abstract&amp;pid=S2318-03312020000100208&lng=en&nrm=iso&tlng=pt">portuguese</font></a>&#160;&#160;&#160;&#160;<font face="Symbol" color="#000080" size=1>&#183;</font>&nbsp;<a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S2318-03312020000100208&lng=en&nrm=iso">text in english</font></a></td></tr></TABLE></td></tr></table></center><br>
+
+  <center>
+  <table width="600"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<hr width="600">
+			<font face="Verdana" size="1">&nbsp;&nbsp;	
+			<b>4 / 280</b>
+			</font>			
+		</td>
+	</tr>
+  </table>			
+  </center>
+
+
+
+<center>
+<table width="600"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td align="left" width="115" valign="top" rowspan="6">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">       		   			
+			<tr>
+				<td width="28%">
+					<input type="checkbox" name="listChecked" value="^m13555628^h4" >
+				</td>	
+				<td width="72%">
+					<font face="verdana" size="1"><i>select</i></font>
+				</td>
+			</tr>
+				<td width="28%">
+					<input type="image" name="toprint^m13555628" src="/iah/I/image/toprint.gif" border="0">
+				</td>	
+				<td width="72%">
+					<font face="verdana" size="1"><i>to print</i></font>
+				</td>
+			</tr>
+					   
+			</table>
+		</td>
+		<td width="485">
+
+		<!-- formato de apresentacao da base -->
+<TABLE><TR><td width="15%">&nbsp;</td><TD><font class="isoref" size="-1">Salgueiro, João Hipólito Paiva de Britto et al. <font class="negrito" size="-1">Influence of oceanic-atmospheric interactions on extreme events of daily rainfall in the Sub-basin 39 located in Northeastern Brazil</font>. <I>RBRH</I>, Dec 2016, vol.21, no.4, p.685-693. ISSN 2318-0331<br><div align="left">&#160;&#160;&#160;&#160;<font face="Symbol" color="#000080" size=1>&#183;</font>&nbsp;<a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_abstract&amp;pid=S2318-03312016000400685&lng=en&nrm=iso&tlng=en">abstract in english</font></a> | <a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_abstract&amp;pid=S2318-03312016000400685&lng=en&nrm=iso&tlng=pt">portuguese</font></a>&#160;&#160;&#160;&#160;<font face="Symbol" color="#000080" size=1>&#183;</font>&nbsp;<a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S2318-03312016000400685&lng=en&nrm=iso">text in english</font></a></td></tr></TABLE></td></tr></table></center><br>
+
+  <center>
+  <table width="600"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<hr width="600">
+			<font face="Verdana" size="1">&nbsp;&nbsp;	
+			<b>5 / 280</b>
+			</font>			
+		</td>
+	</tr>
+  </table>			
+  </center>
+
+
+
+<center>
+<table width="600"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td align="left" width="115" valign="top" rowspan="6">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">       		   			
+			<tr>
+				<td width="28%">
+					<input type="checkbox" name="listChecked" value="^m13554408^h5" >
+				</td>	
+				<td width="72%">
+					<font face="verdana" size="1"><i>select</i></font>
+				</td>
+			</tr>
+				<td width="28%">
+					<input type="image" name="toprint^m13554408" src="/iah/I/image/toprint.gif" border="0">
+				</td>	
+				<td width="72%">
+					<font face="verdana" size="1"><i>to print</i></font>
+				</td>
+			</tr>
+					   
+			</table>
+		</td>
+		<td width="485">
+
+		<!-- formato de apresentacao da base -->
+<TABLE><TR><td width="15%">&nbsp;</td><TD><font class="isoref" size="-1">Silveira, Cleiton da Silva et al. <font class="negrito" size="-1">Mudanças climáticas na bacia do rio São Francisco: Uma análise para precipitação e temperatura</font>. <I>RBRH</I>, Jun 2016, vol.21, no.2, p.416-428. ISSN 2318-0331<br><div align="left">&#160;&#160;&#160;&#160;<font face="Symbol" color="#000080" size=1>&#183;</font>&nbsp;<a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_abstract&amp;pid=S2318-03312016000200416&lng=en&nrm=iso&tlng=pt">abstract in portuguese</font></a> | <a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_abstract&amp;pid=S2318-03312016000200416&lng=en&nrm=iso&tlng=en">english</font></a>&#160;&#160;&#160;&#160;<font face="Symbol" color="#000080" size=1>&#183;</font>&nbsp;<a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S2318-03312016000200416&lng=en&nrm=iso">text in portuguese</font></a></td></tr></TABLE></td></tr></table></center><br>
+
+  <center>
+  <table width="600"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<hr width="600">
+			<font face="Verdana" size="1">&nbsp;&nbsp;	
+			<b>6 / 280</b>
+			</font>			
+		</td>
+	</tr>
+  </table>			
+  </center>
+
+
+
+<center>
+<table width="600"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td align="left" width="115" valign="top" rowspan="6">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">       		   			
+			<tr>
+				<td width="28%">
+					<input type="checkbox" name="listChecked" value="^m13520843^h6" >
+				</td>	
+				<td width="72%">
+					<font face="verdana" size="1"><i>select</i></font>
+				</td>
+			</tr>
+				<td width="28%">
+					<input type="image" name="toprint^m13520843" src="/iah/I/image/toprint.gif" border="0">
+				</td>	
+				<td width="72%">
+					<font face="verdana" size="1"><i>to print</i></font>
+				</td>
+			</tr>
+					   
+			</table>
+		</td>
+		<td width="485">
+
+		<!-- formato de apresentacao da base -->
+<TABLE><TR><td width="15%">&nbsp;</td><TD><font class="isoref" size="-1">BARROS, VIVIANE DA SILVA et al. <font class="negrito" size="-1">AGRONOMIC AND ENVIRONMENTAL PERFORMANCE OF MELON PRODUCED IN THE BRAZILIAN SEMIARID REGION</font>. <I>Rev. Caatinga</I>, Dec 2019, vol.32, no.4, p.877-888. ISSN 1983-2125<br><div align="left">&#160;&#160;&#160;&#160;<font face="Symbol" color="#000080" size=1>&#183;</font>&nbsp;<a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_abstract&amp;pid=S1983-21252019000400877&lng=en&nrm=iso&tlng=en">abstract in english</font></a> | <a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_abstract&amp;pid=S1983-21252019000400877&lng=en&nrm=iso&tlng=pt">portuguese</font></a>&#160;&#160;&#160;&#160;<font face="Symbol" color="#000080" size=1>&#183;</font>&nbsp;<a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S1983-21252019000400877&lng=en&nrm=iso">text in english</font></a></td></tr></TABLE></td></tr></table></center><br>
+
+  <center>
+  <table width="600"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<hr width="600">
+			<font face="Verdana" size="1">&nbsp;&nbsp;	
+			<b>7 / 280</b>
+			</font>			
+		</td>
+	</tr>
+  </table>			
+  </center>
+
+
+
+<center>
+<table width="600"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td align="left" width="115" valign="top" rowspan="6">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">       		   			
+			<tr>
+				<td width="28%">
+					<input type="checkbox" name="listChecked" value="^m13516298^h7" >
+				</td>	
+				<td width="72%">
+					<font face="verdana" size="1"><i>select</i></font>
+				</td>
+			</tr>
+				<td width="28%">
+					<input type="image" name="toprint^m13516298" src="/iah/I/image/toprint.gif" border="0">
+				</td>	
+				<td width="72%">
+					<font face="verdana" size="1"><i>to print</i></font>
+				</td>
+			</tr>
+					   
+			</table>
+		</td>
+		<td width="485">
+
+		<!-- formato de apresentacao da base -->
+<TABLE><TR><td width="15%">&nbsp;</td><TD><font class="isoref" size="-1">GONDIM, RUBENS SONSOL et al. <font class="negrito" size="-1">EXPLAINING THE WATER-HOLDING CAPACITY OF BIOCHAR BY SCANNING ELECTRON MICROSCOPE IMAGES</font>. <I>Rev. Caatinga</I>, Dec 2018, vol.31, no.4, p.972-979. ISSN 1983-2125<br><div align="left">&#160;&#160;&#160;&#160;<font face="Symbol" color="#000080" size=1>&#183;</font>&nbsp;<a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_abstract&amp;pid=S1983-21252018000400972&lng=en&nrm=iso&tlng=en">abstract in english</font></a> | <a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_abstract&amp;pid=S1983-21252018000400972&lng=en&nrm=iso&tlng=pt">portuguese</font></a>&#160;&#160;&#160;&#160;<font face="Symbol" color="#000080" size=1>&#183;</font>&nbsp;<a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S1983-21252018000400972&lng=en&nrm=iso">text in english</font></a></td></tr></TABLE></td></tr></table></center><br>
+
+  <center>
+  <table width="600"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<hr width="600">
+			<font face="Verdana" size="1">&nbsp;&nbsp;	
+			<b>8 / 280</b>
+			</font>			
+		</td>
+	</tr>
+  </table>			
+  </center>
+
+
+
+<center>
+<table width="600"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td align="left" width="115" valign="top" rowspan="6">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">       		   			
+			<tr>
+				<td width="28%">
+					<input type="checkbox" name="listChecked" value="^m13487354^h8" >
+				</td>	
+				<td width="72%">
+					<font face="verdana" size="1"><i>select</i></font>
+				</td>
+			</tr>
+				<td width="28%">
+					<input type="image" name="toprint^m13487354" src="/iah/I/image/toprint.gif" border="0">
+				</td>	
+				<td width="72%">
+					<font face="verdana" size="1"><i>to print</i></font>
+				</td>
+			</tr>
+					   
+			</table>
+		</td>
+		<td width="485">
+
+		<!-- formato de apresentacao da base -->
+<TABLE><TR><td width="15%">&nbsp;</td><TD><font class="isoref" size="-1">Fraga, Mari. <font class="negrito" size="-1">Tempo Fóssil: petróleo, arte e corpo na cosmopolítica do Antropoceno</font>. <I>Rev. Bras. Estud. Presença</I>, Mar 2018, vol.8, no.1, p.31-62. ISSN 2237-2660<br><div align="left">&#160;&#160;&#160;&#160;<font face="Symbol" color="#000080" size=1>&#183;</font>&nbsp;<a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_abstract&amp;pid=S2237-26602018000100031&lng=en&nrm=iso&tlng=pt">abstract in portuguese</font></a> | <a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_abstract&amp;pid=S2237-26602018000100031&lng=en&nrm=iso&tlng=fr">french</font></a> | <a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_abstract&amp;pid=S2237-26602018000100031&lng=en&nrm=iso&tlng=en">english</font></a>&#160;&#160;&#160;&#160;<font face="Symbol" color="#000080" size=1>&#183;</font>&nbsp;<a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S2237-26602018000100031&lng=en&nrm=iso">text in portuguese</font></a></td></tr></TABLE></td></tr></table></center><br>
+
+  <center>
+  <table width="600"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<hr width="600">
+			<font face="Verdana" size="1">&nbsp;&nbsp;	
+			<b>9 / 280</b>
+			</font>			
+		</td>
+	</tr>
+  </table>			
+  </center>
+
+
+
+<center>
+<table width="600"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td align="left" width="115" valign="top" rowspan="6">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">       		   			
+			<tr>
+				<td width="28%">
+					<input type="checkbox" name="listChecked" value="^m13435682^h9" >
+				</td>	
+				<td width="72%">
+					<font face="verdana" size="1"><i>select</i></font>
+				</td>
+			</tr>
+				<td width="28%">
+					<input type="image" name="toprint^m13435682" src="/iah/I/image/toprint.gif" border="0">
+				</td>	
+				<td width="72%">
+					<font face="verdana" size="1"><i>to print</i></font>
+				</td>
+			</tr>
+					   
+			</table>
+		</td>
+		<td width="485">
+
+		<!-- formato de apresentacao da base -->
+<TABLE><TR><td width="15%">&nbsp;</td><TD><font class="isoref" size="-1">Roquette, José Guilherme. <font class="negrito" size="-1">DISTRIBUIÇÃO DA BIOMASSA NO CERRADO E A SUA IMPORTÂNCIA NA ARMAZENAGEM DO CARBONO</font>. <I>Ciênc. Florest.</I>, Set 2018, vol.28, no.3, p.1350-1363. ISSN 1980-5098<br><div align="left">&#160;&#160;&#160;&#160;<font face="Symbol" color="#000080" size=1>&#183;</font>&nbsp;<a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_abstract&amp;pid=S1980-50982018000301350&lng=en&nrm=iso&tlng=pt">abstract in portuguese</font></a> | <a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_abstract&amp;pid=S1980-50982018000301350&lng=en&nrm=iso&tlng=en">english</font></a>&#160;&#160;&#160;&#160;<font face="Symbol" color="#000080" size=1>&#183;</font>&nbsp;<a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S1980-50982018000301350&lng=en&nrm=iso">text in portuguese</font></a></td></tr></TABLE></td></tr></table></center><br>
+
+  <center>
+  <table width="600"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<hr width="600">
+			<font face="Verdana" size="1">&nbsp;&nbsp;	
+			<b>10 / 280</b>
+			</font>			
+		</td>
+	</tr>
+  </table>			
+  </center>
+
+
+
+<center>
+<table width="600"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td align="left" width="115" valign="top" rowspan="6">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">       		   			
+			<tr>
+				<td width="28%">
+					<input type="checkbox" name="listChecked" value="^m13356243^h10" >
+				</td>	
+				<td width="72%">
+					<font face="verdana" size="1"><i>select</i></font>
+				</td>
+			</tr>
+				<td width="28%">
+					<input type="image" name="toprint^m13356243" src="/iah/I/image/toprint.gif" border="0">
+				</td>	
+				<td width="72%">
+					<font face="verdana" size="1"><i>to print</i></font>
+				</td>
+			</tr>
+					   
+			</table>
+		</td>
+		<td width="485">
+
+		<!-- formato de apresentacao da base -->
+<TABLE><TR><td width="15%">&nbsp;</td><TD><font class="isoref" size="-1">ROSSI, Sergio and SOARES, Marcelo de Oliveira <font class="negrito" size="-1">EFFECTS OF EL NIÑO ON THE COASTAL ECOSYSTEMS AND THEIR RELATED SERVICES</font>. <I>Mercator (Fortaleza)</I>,  2017, vol.16. ISSN 1984-2201<br><div align="left">&#160;&#160;&#160;&#160;<font face="Symbol" color="#000080" size=1>&#183;</font>&nbsp;<a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_abstract&amp;pid=S1984-22012017000100229&lng=en&nrm=iso&tlng=en">abstract in english</font></a> | <a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_abstract&amp;pid=S1984-22012017000100229&lng=en&nrm=iso&tlng=pt">portuguese</font></a> | <a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_abstract&amp;pid=S1984-22012017000100229&lng=en&nrm=iso&tlng=es">spanish</font></a>&#160;&#160;&#160;&#160;<font face="Symbol" color="#000080" size=1>&#183;</font>&nbsp;<a class="isoref" href="http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S1984-22012017000100229&lng=en&nrm=iso">text in english</font></a></td></tr></TABLE></td></tr></table></center>
+
+	<br>
+	<hr width="600" align="center">
+	<!-- monta navegacao entre as paginas do resultado -->
+	
+<center>
+<table border="0" width="600" cellspacing="0" cellpadding="0">		
+	<tr valign="top">		
+		<td>												
+			<font face="Verdana" size="2"><sup><b><i>page  1 of 28</b></i></sup></font>
+		</td>		
+		<td align="right" nowrap>			
+			<font face="Verdana" size="2"><sup><b><i>go to page &nbsp;&nbsp;&nbsp;</b></i></sup></font><input type="image" name="Page1" src="/iah/I/image/1red.gif" width="6" height="15" border="0">&nbsp;&nbsp;<input type="image" name="Page2" src="/iah/I/image/2.gif" width="6" height="15" border="0">&nbsp;&nbsp;<input type="image" name="Page3" src="/iah/I/image/3.gif" width="6" height="15" border="0">&nbsp;&nbsp;<input type="image" name="Page4" src="/iah/I/image/4.gif" width="6" height="15" border="0">&nbsp;&nbsp;<input type="image" name="Page5" src="/iah/I/image/5.gif" width="6" height="15" border="0">&nbsp;&nbsp;<input type="image" name="Page6" src="/iah/I/image/6.gif" width="6" height="15" border="0">&nbsp;&nbsp;<input type="image" name="Page7" src="/iah/I/image/7.gif" width="6" height="15" border="0">&nbsp;&nbsp;<input type="image" name="Page8" src="/iah/I/image/8.gif" width="6" height="15" border="0">&nbsp;&nbsp;<input type="image" name="Page9" src="/iah/I/image/9.gif" width="6" height="15" border="0">&nbsp;&nbsp;<input type="image" name="Page10" src="/iah/I/image/1.gif" width="6" height="15" border="0"><input type="image" name="Page10" src="/iah/I/image/0.gif" width="6" height="15" border="0">&nbsp;&nbsp;<input type="image" name="Page11" src="/iah/I/image/right.gif" border="0" width="17" height="17">&nbsp;<input type="image" name="Page28" src="/iah/I/image/last.gif" border="0" width="17" height="17">	
+		</td>				
+	</tr>
+</table>
+</center>
+	
+	<a name="bottom"></a>
+	<center>
+   	<table border="0" width="600" cellspacing="0" cellpadding="0" bgcolor="#B0C2D5">
+   		<tr>
+			<td align="center" width="25%">
+				
+					<a href="javascript:void(AnySelected())"><img src="/iah/I/image/yselect.gif" border="0"></a>
+				
+			</td>			
+			<td align="center" width="25%">&nbsp;</td>
+			<td align="center" width="25%">&nbsp;</td>		
+			<td  align="right">
+   				<a href="#top"><img src="/iah/I/image/inic.gif" border="0"></a>
+			</td>
+   		</tr>
+	</table>
+	</center>
+
+<br><br>
+<center>
+<table border="0" width="600" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<a name="refine"><font face="Verdana" size="1"><b><i>Refine the search</i></b></font></a>
+		</td>
+	</tr>
+</table>
+</center>
+
+
+<script>
+function changeForm(valor)
+{
+	document.forms[0].form.value=valor;
+	document.forms[0].nextAction.value="CHANGE FORM";
+	document.forms[0].submit();
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+	<!-- FORMULARIO AVANCADO -->
+	<center>
+    <table border="0" width="600" cellspacing="0" cellpadding="0" align="center" bgcolor="#B0C2D5">
+	<tr>
+		<td width="80">&nbsp;
+			
+		</td>
+		<td><font face="verdana" size="1">Database : <b>
+			<input type="hidden" name="base" value="article^dlibrary">article</b></font>
+		</td>
+		<td align="right"><font face="verdana" size="1"><b>Advanced form</b></font>&nbsp;&nbsp;&nbsp;</td>
+	</tr>
+	</table>
+	</center>
+
+	
+		<center>
+	    <table border="0" width="600" cellspacing="0" align="center" cellpadding="0">
+        <tr>
+        	<td align="right"><font face="verdana" size="2"><small>
+				Search for :
+		   		
+					<a href="javascript:void(changeForm(&#39F&#39))">Free form</a>&nbsp;&nbsp;&nbsp;
+				
+				
+					<a href="javascript:void(changeForm(&#39B&#39))">Basic form</a>
+				
+				</font>
+			</td>
+        </tr>
+	    </table>
+		</center>
+	
+
+
+	<br><center>
+	<table border="0" width="600" align="center" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="30">&nbsp;</td>
+		<td width="80">&nbsp;</td>
+		<td width="270"><i><font face="verdana" size="2">Search</font></i></td>
+		<td width="235"><font face="verdana" size="2"><i>in field</i></font></td>
+		<td width="62">&nbsp;</td>
+	</tr>
+
+	
+	
+		
+    			<tr>
+          		<td width="30"><font face="Verdana" size="2"><b>1</b></font></td>
+				<td width="80">
+					
+        		   		<input type=hidden name="conectSearch" value="init">&nbsp;
+				    
+	      		</td>
+		        <td width="270" align="left">
+					<input type="text" size="32" maxlength="2048" name="exprSearch" value='CLIMATE CHANGE'>
+		   	  	</td>
+				<td width="235">
+					<select name="indexSearch" size="1"><option value="^nTo^pTodos os índices^eTodos los indices^iAll indexes^d*^xTO ^yFULINV" >All indexes</option><option value="^nTi^pPalavras do título^ePalabras del título^iTitle words^xTI ^yPREINV^uTI_^mTI_" >Title words</option><option value="^nAu^pAutor^eAutor^iAuthor^xAU ^yPREINV^uAU_^mAU_" >Author</option><option value="^nEc^pRegistro de Ensaios Clínicos^eRegistros de Ensayos Clínicos^iClinical Trials Registry^xEC ^yPREINV^uEC_^mEC_" >Clinical Trials Registry</option><option value="^nKw^pAssunto^eMateria^iSubject^xKW ^yPREINV^uKW_^mKW_" selected>Subject</option><option value="^nAb^pResumo^eResumen^iAbstract^xAB ^yPREINV^uAB_^mAB_" >Abstract</option><option value="^nYr^pAno de publicação^eAño de publicación^iPublication year^xYR ^yPREINV^uYR_^mYR_^tshort" >Publication year</option><option value="^nTa^pTipo de artigo^eTipo de artículo^iArticle type^xTA ^yTIPART^mTA_^tshort^rCollection" >Article type</option><option value="^nOr^pAfiliação - Organização^eAfiliación - Organización^iAffiliation - Organization^xOR ^yAFORG^mOR_^rCollection" >Affiliation - Organization</option><option value="^nPp^pAfiliação - País, País^eAfiliación - Pais, Pais^iAffiliation - Country, Country^xPP ^yAFPAISPAIS^mPP_^rCollection" >Affiliation - Country, Country</option></select>
+				</td>
+          		<td width="62" align="left"><input type="image" src="/iah/I/image/indice.gif" name="index1" border="0"></td>
+            </tr>
+      
+    
+		
+    			<tr>
+          		<td width="30"><font face="Verdana" size="2"><b>2</b></font></td>
+				<td width="80">
+					
+         				<select name="conectSearch" size=1>
+	    	   				<option value="and" >and
+							<option value="or"  >or
+							<option value="and not" >and not
+						</select>
+					
+	      		</td>
+		        <td width="270" align="left">
+					<input type="text" size="32" maxlength="2048" name="exprSearch" value=''>
+		   	  	</td>
+				<td width="235">
+					<select name="indexSearch" size="1"><option value="^nTo^pTodos os índices^eTodos los indices^iAll indexes^d*^xTO ^yFULINV" >All indexes</option><option value="^nTi^pPalavras do título^ePalabras del título^iTitle words^xTI ^yPREINV^uTI_^mTI_" >Title words</option><option value="^nAu^pAutor^eAutor^iAuthor^xAU ^yPREINV^uAU_^mAU_" >Author</option><option value="^nEc^pRegistro de Ensaios Clínicos^eRegistros de Ensayos Clínicos^iClinical Trials Registry^xEC ^yPREINV^uEC_^mEC_" >Clinical Trials Registry</option><option value="^nKw^pAssunto^eMateria^iSubject^xKW ^yPREINV^uKW_^mKW_" >Subject</option><option value="^nAb^pResumo^eResumen^iAbstract^xAB ^yPREINV^uAB_^mAB_" >Abstract</option><option value="^nYr^pAno de publicação^eAño de publicación^iPublication year^xYR ^yPREINV^uYR_^mYR_^tshort" >Publication year</option><option value="^nTa^pTipo de artigo^eTipo de artículo^iArticle type^xTA ^yTIPART^mTA_^tshort^rCollection" >Article type</option><option value="^nOr^pAfiliação - Organização^eAfiliación - Organización^iAffiliation - Organization^xOR ^yAFORG^mOR_^rCollection" >Affiliation - Organization</option><option value="^nPp^pAfiliação - País, País^eAfiliación - Pais, Pais^iAffiliation - Country, Country^xPP ^yAFPAISPAIS^mPP_^rCollection" >Affiliation - Country, Country</option></select>
+				</td>
+          		<td width="62" align="left"><input type="image" src="/iah/I/image/indice.gif" name="index2" border="0"></td>
+            </tr>
+      
+    
+		
+    			<tr>
+          		<td width="30"><font face="Verdana" size="2"><b>3</b></font></td>
+				<td width="80">
+					
+         				<select name="conectSearch" size=1>
+	    	   				<option value="and" >and
+							<option value="or"  >or
+							<option value="and not" >and not
+						</select>
+					
+	      		</td>
+		        <td width="270" align="left">
+					<input type="text" size="32" maxlength="2048" name="exprSearch" value=''>
+		   	  	</td>
+				<td width="235">
+					<select name="indexSearch" size="1"><option value="^nTo^pTodos os índices^eTodos los indices^iAll indexes^d*^xTO ^yFULINV" >All indexes</option><option value="^nTi^pPalavras do título^ePalabras del título^iTitle words^xTI ^yPREINV^uTI_^mTI_" >Title words</option><option value="^nAu^pAutor^eAutor^iAuthor^xAU ^yPREINV^uAU_^mAU_" >Author</option><option value="^nEc^pRegistro de Ensaios Clínicos^eRegistros de Ensayos Clínicos^iClinical Trials Registry^xEC ^yPREINV^uEC_^mEC_" >Clinical Trials Registry</option><option value="^nKw^pAssunto^eMateria^iSubject^xKW ^yPREINV^uKW_^mKW_" >Subject</option><option value="^nAb^pResumo^eResumen^iAbstract^xAB ^yPREINV^uAB_^mAB_" >Abstract</option><option value="^nYr^pAno de publicação^eAño de publicación^iPublication year^xYR ^yPREINV^uYR_^mYR_^tshort" >Publication year</option><option value="^nTa^pTipo de artigo^eTipo de artículo^iArticle type^xTA ^yTIPART^mTA_^tshort^rCollection" >Article type</option><option value="^nOr^pAfiliação - Organização^eAfiliación - Organización^iAffiliation - Organization^xOR ^yAFORG^mOR_^rCollection" >Affiliation - Organization</option><option value="^nPp^pAfiliação - País, País^eAfiliación - Pais, Pais^iAffiliation - Country, Country^xPP ^yAFPAISPAIS^mPP_^rCollection" >Affiliation - Country, Country</option></select>
+				</td>
+          		<td width="62" align="left"><input type="image" src="/iah/I/image/indice.gif" name="index3" border="0"></td>
+            </tr>
+      
+    
+	<tr>
+		<td colspan="6">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="6" align="center">
+				<input type="image" name="config" src="/iah/I/image/config.gif" border="0" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="image" name="new search" src="/iah/I/image/limpa.gif" border="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="image" src="/iah/I/image/pesq.gif" border="0" >
+		</td>
+	</tr>
+	</table>
+	</center>
+
+
+
+<br><br>
+</form>
+
+
+
+<br>
+<table border="0" width="100%">
+	<tr>
+		<td align=center><font face="Verdana" size="1">Search engine: <a href="http://www.bireme.br/isis/P/iah.htm"><b>iAH</b></a> powered by <a href="http://www.bireme.br/wwwisis.htm">WWWISIS</a></b></a></font></td>
+	</tr>
+	<tr>
+		<td align=center><BR><font face="Verdana" size="1">BIREME/PAHO/WHO - Latin American and Caribbean Center on Health Sciences Information</font></td>
+	</tr>	
+</table>
+
+
+</body>
+</html>

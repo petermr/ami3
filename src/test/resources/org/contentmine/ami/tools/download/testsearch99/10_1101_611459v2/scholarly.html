@@ -1,0 +1,2114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+ <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book#"> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=yes"/>
+  <meta name="article_thumbnail" content="https://www.biorxiv.org/content/biorxiv/early/2020/01/15/611459/embed/graphic-2.gif"/>
+  <meta name="type" content="article"/>
+  <meta name="category" content="article"/>
+  <meta name="HW.identifier" content="/biorxiv/early/2020/01/15/611459.atom"/>
+  <meta name="HW.pisa" content="biorxiv;611459v2"/>
+  <meta name="DC.Format" content="text/html"/>
+  <meta name="DC.Language" content="en"/>
+  <meta name="DC.Title" content="Automated Change Detection Methods for Satellite Data that can Improve Conservation Implementation"/>
+  <meta name="DC.Identifier" content="10.1101/611459"/>
+  <meta name="DC.Date" content="2020-01-15"/>
+  <meta name="DC.Publisher" content="Cold Spring Harbor Laboratory"/>
+  <meta name="DC.Rights" content="© 2020, Posted by Cold Spring Harbor Laboratory. This pre-print is available under a Creative Commons License (Attribution-NonCommercial 4.0 International), CC BY-NC 4.0, as described at http://creativecommons.org/licenses/by-nc/4.0/"/>
+  <meta name="DC.AccessRights" content="restricted"/>
+  <meta name="DC.Description" content="A significant limitation in biodiversity conservation has been the effective implementation of laws and regulations that protect species habitats from degradation. Flexible, efficient, and effective monitoring and enforcement methods are needed to help conservation policies realize their full benefit. As remote sensing data become more numerous and accessible, they can be used to identify and quantify land cover changes and habitat loss. However, these data remain underused for systematic conservation monitoring in part because of a lack of simple tools. We adapted and developed two generalized methods that automatically detect land cover changes in a variety of habitat types using free and publicly available data and tools. We evaluated the performance of these algorithms in two ways. First, we tested the algorithms over 100 sites of known change in the United States, finding these approaches were effective (AUC &gt;; 0.90) at distinguishing between areas of land cover change and areas of no change. Second, we evaluated algorithm effectiveness by comparing results to manually identified areas of change in four case studies involving imperiled species habitat: oil and gas development in the range of the Greater Sage Grouse; sand mining operations in the range of the dunes sagebrush lizard; loss of Piping Plover coastal habitat in the wake of hurricane Michael (2018); and residential development in beach mouse habitat. The relative performance of each algorithm differed in each habitat type, but both provided effective means of detecting and delineating habitat loss. Our results show how these algorithms can be used to help close the implementation gap of monitoring and enforcement in biodiversity conservation and we provide a free online tool that can be used to run these analyses. Article impact statement Methods for automating the detection of habitat loss in satellite images that can be used to monitor and enforce conservation policy."/>
+  <meta name="DC.Contributor" content="Michael J. Evans"/>
+  <meta name="DC.Contributor" content="Jacob W. Malcom"/>
+  <meta name="article:published_time" content="2020-01-15"/>
+  <meta name="article:section" content="New Results"/>
+  <meta name="citation_title" content="Automated Change Detection Methods for Satellite Data that can Improve Conservation Implementation"/>
+  <meta name="citation_abstract" lang="en" content="&lt;;h3&gt;;Abstract&lt;;/h3&gt;; &lt;;p&gt;;A significant limitation in biodiversity conservation has been the effective implementation of laws and regulations that protect species habitats from degradation. Flexible, efficient, and effective monitoring and enforcement methods are needed to help conservation policies realize their full benefit. As remote sensing data become more numerous and accessible, they can be used to identify and quantify land cover changes and habitat loss. However, these data remain underused for systematic conservation monitoring in part because of a lack of simple tools. We adapted and developed two generalized methods that automatically detect land cover changes in a variety of habitat types using free and publicly available data and tools. We evaluated the performance of these algorithms in two ways. First, we tested the algorithms over 100 sites of known change in the United States, finding these approaches were effective (AUC &amp;;gt; 0.90) at distinguishing between areas of land cover change and areas of no change. Second, we evaluated algorithm effectiveness by comparing results to manually identified areas of change in four case studies involving imperiled species habitat: oil and gas development in the range of the Greater Sage Grouse; sand mining operations in the range of the dunes sagebrush lizard; loss of Piping Plover coastal habitat in the wake of hurricane Michael (2018); and residential development in beach mouse habitat. The relative performance of each algorithm differed in each habitat type, but both provided effective means of detecting and delineating habitat loss. Our results show how these algorithms can be used to help close the implementation gap of monitoring and enforcement in biodiversity conservation and we provide a free online tool that can be used to run these analyses.&lt;;/p&gt;;&lt;;h3&gt;;Article impact statement&lt;;/h3&gt;; &lt;;p&gt;;Methods for automating the detection of habitat loss in satellite images that can be used to monitor and enforce conservation policy.&lt;;/p&gt;;"/>
+  <meta name="citation_journal_title" content="bioRxiv"/>
+  <meta name="citation_publisher" content="Cold Spring Harbor Laboratory"/>
+  <meta name="citation_publication_date" content="2020/01/01"/>
+  <meta name="citation_mjid" content="biorxiv;611459v2"/>
+  <meta name="citation_id" content="611459v2"/>
+  <meta name="citation_public_url" content="https://www.biorxiv.org/content/10.1101/611459v2"/>
+  <meta name="citation_abstract_html_url" content="https://www.biorxiv.org/content/10.1101/611459v2.abstract"/>
+  <meta name="citation_full_html_url" content="https://www.biorxiv.org/content/10.1101/611459v2.full"/>
+  <meta name="citation_pdf_url" content="https://www.biorxiv.org/content/biorxiv/early/2020/01/15/611459.full.pdf"/>
+  <meta name="citation_doi" content="10.1101/611459"/>
+  <meta name="citation_num_pages" content="30"/>
+  <meta name="citation_article_type" content="Article"/>
+  <meta name="citation_section" content="New Results"/>
+  <meta name="citation_firstpage" content="611459"/>
+  <meta name="citation_author" content="Michael J. Evans"/>
+  <meta name="citation_author_institution" content="Defenders of Wildlife, Center for Conservation Innovation"/>
+  <meta name="citation_author_email" content="mevans@defenders.org"/>
+  <meta name="citation_author" content="Jacob W. Malcom"/>
+  <meta name="citation_author_institution" content="Defenders of Wildlife, Center for Conservation Innovation"/>
+  <meta name="citation_reference" content="Betts MG, Wolf C, Ripple WJ, Phalan B, Millers KA, Duarte A, Butchart SHM, Taal L. 2017. Global forest loss disproportionately erodes biodiversity in intact landscapes. Nature 547:441–444."/>
+  <meta name="citation_reference" content="Ceballos G, Ehrlich PR, Dirzo R. 2017. Biological annihilation via the ongoing sixth mass extinction signaled by vertebrate population losses and declines. Proceedings of the National Academy of Sciences 114:6089–6096."/>
+  <meta name="citation_reference" content="Chandra A, Idrisova A. 2011. Convention on Biological Diversity: a review of national challenges and opportunities for implementation. Biodiversity and Conservation 20:3295–3316."/>
+  <meta name="citation_reference" content="Chapron G. 2017. The environment needs cryptogovernance. Nature 545:403–405."/>
+  <meta name="citation_reference" content="Drusch M et al. 2012. Sentinel-2: ESA’s Optical High-Resolution Mission for GMES Operational Services. Remote Sensing of Environment 120:25–36."/>
+  <meta name="citation_reference" content="Farr TG et al. 2007. The Shuttle Radar Topography Mission. Reviews of Geophysics 45:RG2004."/>
+  <meta name="citation_reference" content="Fry JA, Xian G, Jin S, Dewitz JA, Homer CG, Limin Y, Barnes CA, Herold ND, Wickham JD. 2011. Completion of the 2006 national land cover database for the conterminous United States. Photogrammetric Engineering and Remote Sensing 77:858–864."/>
+  <meta name="citation_reference" content="Ghorbanzadeh O et al. 2019. Evaluation of Different Machine Learning Methods and Deep-Learning Convolutional Neural Networks for Landslide Detection. Remote Sensing 11:196."/>
+  <meta name="citation_reference" content="Gorelick N, Hancher M, Dixon M, Ilyushchenko S, Thau D, Moore R. 2017. Google Earth Engine: Planetary-scale geospatial analysis for everyone. Remote Sensing of Environment 202:18–27."/>
+  <meta name="citation_reference" content="Government Accountability Office. 2009. Endangered Species Act: The U.S. Fish and Wildlife Service has incomplete information about effects on listed species from section 7 consultations. Washington, DC."/>
+  <meta name="citation_reference" content="Hansen MC, Stehman S V, Potapov P V. 2010. Quantification of global gross forest cover loss. Proceedings of the National Academy of Sciences of the United States of America 107:8650–5."/>
+  <meta name="citation_reference" content="Hossain ANM, Barlow A, Barlow CG, Lynam AJ, Chakma S, Savini T. 2016. Assessing the efficacy of camera trapping as a tool for increasing detection rates of wildlife crime in tropical protected areas. Biological Conservation 201:314–319."/>
+  <meta name="citation_reference" content="Hussey NE et al. 2015. Aquatic animal telemetry: A panoramic window into the underwater world. Science 348:1255642."/>
+  <meta name="citation_reference" content="Jackman S. 2017. pscl: Classes and methods for R developed in the Political Science Computational laboratory. United States Studies Centre, University of Sydney, Sydney, New South Wales, AUstralia."/>
+  <meta name="citation_reference" content="Japan Naitonal Diet. 1972. Nature Conservation Law."/>
+  <meta name="citation_reference" content="Jin S, Yang L, Danielson P, Homer C, Fry J, Xian G. 2013. A comprehensive change detection method for updating the National Land Cover Database to circa 2011. Remote Sensing of Environment 132:159–175."/>
+  <meta name="citation_reference" content="Keane A, Jones JPG, Edwards-Jones G, Milner-Gulland EJ. 2008. The sleeping policeman: Understanding issues of enforcement and compliance in conservation. Animal Conservation 11:75–82."/>
+  <meta name="citation_reference" content="Lancaster HO, Seneta E. 2005. Chi-Square Distribution. Page Encyclopedia of Biostatistics. John Wiley &amp;; Sons, Ltd, Chichester, UK."/>
+  <meta name="citation_reference" content="López-Bao JV et al. 2015. Toothless wildlife protection laws. Biodiversity and Conservation 24:2105–2108."/>
+  <meta name="citation_reference" content="Malcom J. 2017. ESA Compliance Monitoring and the Langboard HCP. Washington, DC. https://defenders-cci.org/working_papers/Langboard_HCP/"/>
+  <meta name="citation_reference" content="Malcom J, Kim T, Li Y-W. 2017. Free Aerial Imagery as a Resource to Monitor Compliance with the Endangered Species Act. bioRxiv:204750."/>
+  <meta name="citation_reference" content="Malcom JW, Li YW. 2015. Data contradict common perceptions about a controversial provision of the US Endangered Species Act. Proceedings of the National Academy of Sciences of the United States of America 112:15844–15849."/>
+  <meta name="citation_reference" content="Malof JM, Bradbury K, Collins LM, Newell RG. 2016. Automatic detection of solar photovoltaic arrays in high resolution aerial imagery. Applied Energy 183:229–240."/>
+  <meta name="citation_reference" content="McCarthy DP et al. 2012. Financial costs of meeting global biodiversity conservation targets: current spending and unmet needs. Science 338:946–949."/>
+  <meta name="citation_reference" content="New Zealand Parliament. 1987. Conservation Act 1987."/>
+  <meta name="citation_reference" content="Newbold T et al. 2015. Global effects of land use on local terrestrial biodiversity. Nature 520:45–50."/>
+  <meta name="citation_reference" content="Nielsen AA. 2007. The regularized iteratively reweighted MAD method for change detection in multi- and hyperspectral data. IEEE Transactions on Image Processing 16:463–477."/>
+  <meta name="citation_reference" content="Nielsen AA, Canty MJ, Skriver H, Conradsen K. 2017. Change detection in multi-temporal dual polarization Sentinel-1 data. Pages 3901–3904 IEEE International Geoscience and Remote Sensing Symposium. Fort Worth, TX."/>
+  <meta name="citation_reference" content="Potapov P et al. 2008. Mapping the World’s Intact Forest Landscapes by Remote Sensing. Ecology and Society 13."/>
+  <meta name="citation_reference" content="Robin X, Turck N, Hainard A, Tiberti N, Lisacek F, Sanchez J-C, Muller M. 2011. pROC: an open-source package for R and S+ to analyze and compare ROC curves. BMC Bioinformatics 12:77."/>
+  <meta name="citation_reference" content="Rüetschi M, Small D, Waser L, Rüetschi M, Small D, Waser LT. 2019. Rapid Detection of Windthrows Using Sentinel-1 C-Band SAR Data. Remote Sensing 11:115."/>
+  <meta name="citation_reference" content="Salomon M, Markus T, Dross M. 2014. Masterstroke or paper tiger – The reform of the EU’s Common Fisheries Policy. Marine Policy 47:76–84."/>
+  <meta name="citation_reference" content="Sarabandi P, Yamazaki F, Matsuoka M, Kiremidjian A. 2004. Shadow detection and radiometric restoration in satellite high resolution images. Pages 3744–3747 International Geoscience and Remote Sensing Symposium (IGARSS)."/>
+  <meta name="citation_reference" content="Song X-P, Hansen MC, Stehman S V., Potapov P V., Tyukavina A, Vermote EF, Townshend JR. 2018. Global land change from 1982 to 2016. Nature 560:639–643."/>
+  <meta name="citation_reference" content="R Core Development Team. 2019. R: a languange and environmental for statistical computing. Version 3.5.1. R Foundation for Statistical Computing, Vienna, Austria."/>
+  <meta name="citation_reference" content="Teillet PM, Guindon B, Goodenough DG. 1982. On the Slope-Aspect Correction of Multispectral Scanner Data. Canadian Journal of Remote Sensing 8:84–106."/>
+  <meta name="citation_reference" content="Trouwborst A et al. 2017. International Wildlife Law: Understanding and Enhancing Its Role in Conservation. BioScience 67:784–790."/>
+  <meta name="citation_reference" content="Turner W, Spector S, Gardiner N, Fladeland M, Sterling E, Steininger M. 2003. Remote sensing for biodiversity science and conservation. TRENDS in Ecology and Evolution 18:306–314."/>
+  <meta name="citation_reference" content="UN Environment World Conservation Monitoring Centre, International Union for Conservation of Nature. 2017. World Database on Protected Areas. Available from http://www.protectedplanet.net"/>
+  <meta name="citation_reference" content="United States Congress. 1978. The Endangered Species Act Amendments of 1978."/>
+  <meta name="citation_reference" content="Waldron A, Mooers AO, Miller DC, Nibbelink N, Redding D, Kuhn TS, Timmons Roberts J, Gittleman JL. 2013. Targeting global conservation funding to limit immediate biodiversity declines. Proceedings of the National Academy of Science 110:12144–12148."/>
+  <meta name="citation_reference" content="Wiens JA, Stralberg D, Jongsomjit D, Howell CA, Snyder MA. 2009. Niches, models, and climate change: assessing the assumptions and uncertainties. Proceedings of the National Academy of Sciences of the United States of America 106:19729–36."/>
+  <meta name="citation_reference" content="Willis KS. 2015. Remote sensing change detection for ecological monitoring in United States protected areas. Biological Conservation 182. 233–244."/>
+  <meta name="citation_reference" content="Xu H. 2006. Modification of normalised difference water index (NDWI) to enhance open water features in remotely sensed imagery. International Journal of Remote Sensing 27:3025–3033."/>
+  <meta name="citation_reference" content="Zhu Z, Wang S, Woodcock CE. 2015. Improvement and expansion of the Fmask algorithm: Cloud, cloud shadow, and snow detection for Landsats 4-7, 8, and Sentinel 2 images. Remote Sensing of Environment 159:266–277."/>
+  <meta name="citation_reference" content="Zhu Z, Woodcock CE. 2012. Object-based cloud and cloud shadow detection in Landsat imagery. Remote Sensing of Environment:83–94."/>
+  <meta name="twitter:title" content="Automated Change Detection Methods for Satellite Data that can Improve Conservation Implementation"/>
+  <meta name="twitter:site" content="@biorxivpreprint"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:image" content="https://www.biorxiv.org/sites/default/files/images/biorxiv_logo_homepage7-5-small.png"/>
+  <meta name="twitter:description" content="A significant limitation in biodiversity conservation has been the effective implementation of laws and regulations that protect species habitats from degradation. Flexible, efficient, and effective monitoring and enforcement methods are needed to help conservation policies realize their full benefit. As remote sensing data become more numerous and accessible, they can be used to identify and quantify land cover changes and habitat loss. However, these data remain underused for systematic conservation monitoring in part because of a lack of simple tools. We adapted and developed two generalized methods that automatically detect land cover changes in a variety of habitat types using free and publicly available data and tools. We evaluated the performance of these algorithms in two ways. First, we tested the algorithms over 100 sites of known change in the United States, finding these approaches were effective (AUC &gt;; 0.90) at distinguishing between areas of land cover change and areas of no change. Second, we evaluated algorithm effectiveness by comparing results to manually identified areas of change in four case studies involving imperiled species habitat: oil and gas development in the range of the Greater Sage Grouse; sand mining operations in the range of the dunes sagebrush lizard; loss of Piping Plover coastal habitat in the wake of hurricane Michael (2018); and residential development in beach mouse habitat. The relative performance of each algorithm differed in each habitat type, but both provided effective means of detecting and delineating habitat loss. Our results show how these algorithms can be used to help close the implementation gap of monitoring and enforcement in biodiversity conservation and we provide a free online tool that can be used to run these analyses. Article impact statement Methods for automating the detection of habitat loss in satellite images that can be used to monitor and enforce conservation policy."/>
+  <meta name="og-title" property="og:title" content="Automated Change Detection Methods for Satellite Data that can Improve Conservation Implementation"/>
+  <meta name="og-url" property="og:url" content="https://www.biorxiv.org/content/10.1101/611459v2"/>
+  <meta name="og-site-name" property="og:site_name" content="bioRxiv"/>
+  <meta name="og-description" property="og:description" content="A significant limitation in biodiversity conservation has been the effective implementation of laws and regulations that protect species habitats from degradation. Flexible, efficient, and effective monitoring and enforcement methods are needed to help conservation policies realize their full benefit. As remote sensing data become more numerous and accessible, they can be used to identify and quantify land cover changes and habitat loss. However, these data remain underused for systematic conservation monitoring in part because of a lack of simple tools. We adapted and developed two generalized methods that automatically detect land cover changes in a variety of habitat types using free and publicly available data and tools. We evaluated the performance of these algorithms in two ways. First, we tested the algorithms over 100 sites of known change in the United States, finding these approaches were effective (AUC &gt;; 0.90) at distinguishing between areas of land cover change and areas of no change. Second, we evaluated algorithm effectiveness by comparing results to manually identified areas of change in four case studies involving imperiled species habitat: oil and gas development in the range of the Greater Sage Grouse; sand mining operations in the range of the dunes sagebrush lizard; loss of Piping Plover coastal habitat in the wake of hurricane Michael (2018); and residential development in beach mouse habitat. The relative performance of each algorithm differed in each habitat type, but both provided effective means of detecting and delineating habitat loss. Our results show how these algorithms can be used to help close the implementation gap of monitoring and enforcement in biodiversity conservation and we provide a free online tool that can be used to run these analyses. Article impact statement Methods for automating the detection of habitat loss in satellite images that can be used to monitor and enforce conservation policy."/>
+  <meta name="og-type" property="og:type" content="article"/>
+  <meta name="og-image" property="og:image" content="https://www.biorxiv.org/sites/default/files/images/biorxiv_logo_homepage7-5-small.png"/>
+  <meta name="citation_date" content="2020-01-15"/> 
+  <meta name="description" content="bioRxiv - the preprint server for biology, operated by Cold Spring Harbor Laboratory, a research and educational institution"/>
+  <meta name="generator" content="Drupal 7 (http://drupal.org)"/> 
+  <title>Automated Change Detection Methods for Satellite Data that can Improve Conservation Implementation | bioRxiv</title> 
+ </head>
+ <body class="html not-front not-logged-in page-node page-node- page-node-1106183 node-type-highwire-article context-content hw-default-jcode-biorxiv hw-article-type-article hw-article-category-new-results"> 
+  <div class="article fulltext-view ">
+   <span class="highwire-journal-article-marker-start"/>
+   <div class="section abstract" id="abstract-1">
+    <h2 class="">Abstract</h2>
+    <p id="p-2">A significant limitation in biodiversity conservation has been the effective implementation of laws and regulations that protect species habitats from degradation. Flexible, efficient, and effective monitoring and enforcement methods are needed to help conservation policies realize their full benefit. As remote sensing data become more numerous and accessible, they can be used to identify and quantify land cover changes and habitat loss. However, these data remain underused for systematic conservation monitoring in part because of a lack of simple tools. We adapted and developed two generalized methods that automatically detect land cover changes in a variety of habitat types using free and publicly available data and tools. We evaluated the performance of these algorithms in two ways. First, we tested the algorithms over 100 sites of known change in the United States, finding these approaches were effective (AUC &gt;; 0.90) at distinguishing between areas of land cover change and areas of no change. Second, we evaluated algorithm effectiveness by comparing results to manually identified areas of change in four case studies involving imperiled species habitat: oil and gas development in the range of the Greater Sage Grouse; sand mining operations in the range of the dunes sagebrush lizard; loss of Piping Plover coastal habitat in the wake of hurricane Michael (2018); and residential development in beach mouse habitat. The relative performance of each algorithm differed in each habitat type, but both provided effective means of detecting and delineating habitat loss. Our results show how these algorithms can be used to help close the implementation gap of monitoring and enforcement in biodiversity conservation and we provide a free online tool that can be used to run these analyses.</p>
+    <div id="sec-1" class="subsection">
+     <p id="p-3">
+      <strong>Article impact statement</strong> Methods for automating the detection of habitat loss in satellite images that can be used to monitor and enforce conservation policy.
+     </p>
+    </div>
+   </div>
+   <div class="section" id="sec-2">
+    <h2 class="">Introduction</h2>
+    <p id="p-6">Biodiversity around the world is threatened with annihilation (
+     <a id="xref-ref-2-1" class="xref-bibr" href="#ref-2">Ceballos et al. 2017</a>), and direct habitat loss is the leading cause of the loss of individuals and species extinctions (Newbold et al. 2015; 
+     <a id="xref-ref-1-1" class="xref-bibr" href="#ref-1">Betts et al. 2017</a>). To address this threat, biodiversity conservation is often focused on protecting species’ habitat through a variety of legal and policy mechanisms (
+     <a id="xref-ref-39-1" class="xref-bibr" href="#ref-39">UN Environment World Conservation Monitoring Centre &amp;; International Union for Conservation of Nature 2017</a>). However, there is reason to believe entities with regulatory authority may lack the means to monitor and enforce protections. Without regular monitoring and enforcement, conservation laws may be nothing more than paper tigers (
+     <a id="xref-ref-32-1" class="xref-bibr" href="#ref-32">Salomon et al. 2014</a>). Options for monitoring and enforcing laws that protect habitat have historically required time intensive efforts on the ground, and thus have been limited by funding and personnel availability. However, technological advances are expanding the options for cost effective monitoring efforts (e.g., aquatic telemetry; 
+     <a id="xref-ref-13-1" class="xref-bibr" href="#ref-13">Hussey et al. 2015</a>, remote cameras detecting poachers; 
+     <a id="xref-ref-12-1" class="xref-bibr" href="#ref-12">Hossain et al. 2016</a>). Given the central role that habitat conservation plays in conserving imperiled species, methods to automatically detect habitat loss in near real-time could significantly enhance compliance monitoring and enforcement capabilities, and substantially increase the effectiveness of conservation laws.
+    </p>
+    <p id="p-7">Many conservation laws include provisions to protect habitat. For example, the U.S. Endangered Species Act (ESA) is the primary tool for conserving imperiled species in the United States. Among its strengths are the requirement for identification of ‘critical habitat’ that is necessary for the conservation of listed species, and prohibitions against destroying or adversely modifying these habitats (
+     <a id="xref-ref-40-1" class="xref-bibr" href="#ref-40">United States Congress 1978</a>). Similarly, Japan’s Nature Conservation Law designates ‘Wilderness’ and ‘Nature Conservation’ areas (
+     <a id="xref-ref-15-1" class="xref-bibr" href="#ref-15">Japan National Diet 1972</a>); the New Zealand Conservation Act created several specially protected areas (
+     <a id="xref-ref-25-1" class="xref-bibr" href="#ref-25">New Zealand Parliament 1987</a>.); and various international agreements include provisions to reduce habitat loss (e.g. Convention on Biological Diversity; UN Sustainable Development Goals). As written, these laws, policies, and treaties should be stopping or significantly slowing habitat loss and degradation. But this conclusion depends heavily on a critical assumption: that these laws are implemented as written, including monitoring of conservation agreements and enforcement of prohibitions. That assumption is often not independently tested, and the continued loss of species and their habitats indicate there is a substantial implementation gap (López-Bao et al. 2015; 
+     <a id="xref-ref-4-1" class="xref-bibr" href="#ref-4">Chapron 2017</a>).
+    </p>
+    <p id="p-8">Enforcement is a critical component of any law. Without compliance monitoring and punishment of infractions there is little reason to think legal protections will be effective at changing outcomes (
+     <a id="xref-ref-17-1" class="xref-bibr" href="#ref-17">Keane et al. 2008</a>; 
+     <a id="xref-ref-37-1" class="xref-bibr" href="#ref-37">Trouwborst et al. 2017</a>). For example, if drivers believe there is little risk of punishment for exceeding a speed limit because there is no monitoring, there is every reason to believe they will. Currently, there is little research available on the extent of enforcement and compliance of habitat protection laws and policies (
+     <a id="xref-ref-21-1" class="xref-bibr" href="#ref-21">Malcom et al. 2017</a>), but there are many reasons to believe they are lacking. Staff at U.S. federal agencies have acknowledged that they lack the resources to carry out even basic compliance monitoring and are unable to read monitoring reports submitted by permittees, much less carry out independent monitoring (
+     <a id="xref-ref-10-1" class="xref-bibr" href="#ref-10">Government Accountability Office 2009</a>). Furthermore, the two federal agencies responsible for implementing the ESA, the U.S. Fish and Wildlife Service and National Marine Fisheries Service (hereafter ‘the Services’), have finalized over a thousand conservation agreements, many of which authorize limited habitat destruction in exchange for mitigation to offset some of those effects (
+     <a id="xref-ref-22-1" class="xref-bibr" href="#ref-22">Malcom &amp;; Li 2015</a>). Perennial funding shortages, however, have left the Services unable to monitor for compliance with many of those agreements; a shortcoming that threatens to undermine the potential benefits of the ESA. These basic examples of a lack of monitoring and enforcement highlight a critical weakness in the implementation of conservation law and consequently the protection of biodiversity.
+    </p>
+    <p id="p-9">Insufficient monitoring undermines imperiled species conservation in two ways. First, habitat protections may go unenforced. For example, satellite images revealed that under a habitat conservation plan for the eastern indigo snake (
+     <em>Drymarchon couperi</em>) in Georgia, USA, over half of a forest parcel had been cleared despite the requirement that the permittee manage the parcel for the species until at least 2027 (
+     <a id="xref-ref-20-1" class="xref-bibr" href="#ref-20">Malcom 2017</a>). Situations like this are a double blow for species: not only has authorized habitat loss occurred, but the conservation measures to minimize or offset those losses were never fully realized. Second, inadequate monitoring leaves conservationists in the dark about the status of species’ habitat. If 60 percent of a species’ habitat has been degraded, that knowledge should factor into decision making. Left unresolved, a lack of monitoring could negate the expensive and difficult work of securing legal protections for species and their habitats and negotiating conservation agreements.
+    </p>
+    <p id="p-10">Although the challenge of inadequate enforcement is not new, solutions to date have relied heavily on increased financial support for field work (
+     <a id="xref-ref-3-1" class="xref-bibr" href="#ref-3">Chandra &amp;; Idrisova 2011</a>). This strategy may be untenable at broad scales given inconsistent and decreasing political will and concomitant funding declines (McCarthy et al. 2012; 
+     <a id="xref-ref-41-1" class="xref-bibr" href="#ref-41">Waldron et al. 2013</a>). Even when government agencies monitor for compliance with certain projects, they may lack the ability to do so regularly. Monitoring that occurs intermittently leaves ample opportunities for noncompliance in the interim. By the time violations are identified, the environmental damage may be irreversible. Large-scale monitoring programs to efficiently and automatically detect disturbances to wildlife habitat are needed.
+    </p>
+    <p id="p-11">The growing availability of free satellite images and other remote-sensing data provide an efficient and effective solution for many biodiversity monitoring challenges (
+     <a id="xref-ref-38-1" class="xref-bibr" href="#ref-38">Turner et al. 2003</a>). When combined with information on species range and areas permitted for habitat disturbance or destruction, these data open a wealth of opportunities for compliance monitoring and enforcement. As remote sensing data has become more ubiquitous and accessible, so too have the number of approaches for change detection (
+     <a id="xref-ref-43-1" class="xref-bibr" href="#ref-43">Willis 2015</a>). Often these analyses focus on one land cover type, with most of the research focused on forest loss (Potapov et al. 2008; 
+     <a id="xref-ref-11-1" class="xref-bibr" href="#ref-11">Hansen et al. 2010</a>; 
+     <a id="xref-ref-34-1" class="xref-bibr" href="#ref-34">Song et al. 2018</a>). A significant challenge now is to expand the generality of algorithms to automate change detection across habitats, which would enable and simplify monitoring at regional and continental scales.
+    </p>
+    <p id="p-12">Here we report on two automated land cover change-detection algorithms developed to aid conservation compliance monitoring across different habitat types and at broad scale. We evaluate the utility of these methods using systematically collected validation data and four case studies. Both algorithms use data that is readily available online, meaning anyone, including government agencies, conservation organizations, and the public, can use them to improve conservation. We demonstrate that these approaches are sufficiently effective, efficient, and flexible for use in large- and small-scale systematic conservation monitoring efforts. Adoption of automated change detection can help close one of the biggest gaps in biodiversity conservation, and we discuss the potential for future technological and regulatory development to further leverage their potential.</p>
+   </div>
+   <div class="section" id="sec-3">
+    <h2 class="">Methods</h2>
+    <p id="p-13">We used the Google Earth Engine platform, which provides real-time access to terabytes of remote sensing data and the cloud computing capabilities to analyze them (
+     <a id="xref-ref-9-1" class="xref-bibr" href="#ref-9">Gorelick et al. 2017</a>), to create processes to automatically detect changes in land cover between satellite images collected over two time periods. We analyzed images from the Sentinel-2 satellite system. Sentinel-2 is deployed and maintained by the European Space Agency, providing global coverage of 10-meter resolution imagery every 12 days. Sentinel-2 images contain 13 bands that record reflectance values in the visible, near infrared, short-wave infrared, and near ultraviolet spectra (
+     <a id="xref-ref-5-1" class="xref-bibr" href="#ref-5">Drusch et al. 2012</a>).
+    </p>
+    <p id="p-14">The basic process (
+     <a id="xref-fig-1-1" class="xref-fig" href="#F1">Fig. 1</a>) involves the following steps:
+    </p>
+    <div id="F1" class="fig pos-float type-figure odd">
+     <div class="highwire-figure">
+      <div class="fig-inline-img-wrapper">
+       <div class="fig-inline-img">
+        <a href="https://www.biorxiv.org/content/biorxiv/early/2020/01/15/611459/F1.large.jpg?width=800&amp;;height=600&amp;;carousel=1" title="Conceptual model showing steps for processing and automatically detecting changes between two sets of satellite images used in this paper. Numbers correspond to the steps for selecting and preprocessing image collections and performing change detection between two time periods described in the text." class="highwire-fragment fragment-images colorbox-load" rel="gallery-fragment-images-1608108418" data-figure-caption="&lt;;div class=&quot;;highwire-markup&quot;;&gt;;Conceptual model showing steps for processing and automatically detecting changes between two sets of satellite images used in this paper. Numbers correspond to the steps for selecting and preprocessing image collections and performing change detection between two time periods described in the text.&lt;;/div&gt;;" data-icon-position="" data-hide-link-title="0">
+         <span class="hw-responsive-img">
+          <img class="highwire-fragment fragment-image lazyload" alt="Figure 1." src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://www.biorxiv.org/content/biorxiv/early/2020/01/15/611459/F1.medium.gif" width="440" height="329"/>
+          <noscript>
+           <img class="highwire-fragment fragment-image" alt="Figure 1." src="https://www.biorxiv.org/content/biorxiv/early/2020/01/15/611459/F1.medium.gif" width="440" height="329"/>
+          </noscript>
+         </span>
+        </a>
+       </div>
+      </div>
+      <ul class="highwire-figure-links inline">
+       <li class="download-fig first">
+        <a href="https://www.biorxiv.org/content/biorxiv/early/2020/01/15/611459/F1.large.jpg?download=true" class="highwire-figure-link highwire-figure-link-download" title="Download Figure 1." data-icon-position="" data-hide-link-title="0">Download figure</a>
+       </li>
+       <li class="new-tab last">
+        <a href="https://www.biorxiv.org/content/biorxiv/early/2020/01/15/611459/F1.large.jpg" class="highwire-figure-link highwire-figure-link-newtab" target="_blank" data-icon-position="" data-hide-link-title="0">Open in new tab</a>
+       </li>
+      </ul>
+     </div>
+     <div class="fig-caption">
+      <span class="fig-label">Figure 1.</span>
+      <p id="p-15" class="first-child">Conceptual model showing steps for processing and automatically detecting changes between two sets of satellite images used in this paper. Numbers correspond to the steps for selecting and preprocessing image collections and performing change detection between two time periods described in the text.</p>
+      <div class="sb-div caption-clear"/>
+     </div>
+    </div>
+    <ol class="list-ord " id="list-1">
+     <li id="list-item-1">
+      <p id="p-16">Define an area of interest and collect satellite images.</p>
+     </li>
+     <li id="list-item-2">
+      <p id="p-17">Process images (mask clouds, correct for terrain, etc.)</p>
+     </li>
+     <li id="list-item-3">
+      <p id="p-18">Divide images into before and after collections</p>
+     </li>
+     <li id="list-item-4">
+      <p id="p-19">Composite before and after collections into single images.</p>
+     </li>
+     <li id="list-item-5">
+      <p id="p-20">Calculate pixel-wise change metrics between images.</p>
+     </li>
+     <li id="list-item-6">
+      <p id="p-21">Identify minimum values that correspond to the change to be detected.</p>
+     </li>
+     <li id="list-item-7">
+      <p id="p-22">Select pixels exceeding these minimum change thresholds.</p>
+     </li>
+    </ol>
+    <div id="sec-4" class="subsection">
+     <h3>Image Processing</h3>
+     <p id="p-23">After defining an area of interest and collecting all the spatially overlapping Sentinel-2 images, we first removed cloud and cloud shadow pixels from each image in the collection. Built-in cloud masking is limited for Sentinel-2 imagery, because this system does not contain a thermal sensor measuring temperature, which is critical to common cloud masking procedures (
+      <a id="xref-ref-45-1" class="xref-bibr" href="#ref-45">Zhu et al. 2015</a>). We used the quality assurance bands included with all S2 images, and additionally calculated cloud and shadow probability metrics as follows.
+     </p>
+     <p id="p-24">To identify cloudy pixels, we implemented an adaptation of the simpleCloudScore algorithm developed for LandSat provided in Google Earth Engine, which uses a combination of indices to assign a per pixel cloud likelihood score from 0 to 1 (Supporting Information). We identified any pixels receiving a score of 0.15 or greater as cloud. We then calculated a set of likely cloud shadow locations by translating the location of cloud pixels in the 
+      <em>x</em> and 
+      <em>y</em> directions according to 
+      <span class="disp-formula" id="disp-formula-1">
+       <span class="highwire-responsive-lazyload">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="highwire-embed lazyload" alt="Embedded Image" data-src="https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2020/01/15/611459/embed/graphic-2.gif"/>
+        <noscript>
+         <img class="highwire-embed" alt="Embedded Image" src="https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2020/01/15/611459/embed/graphic-2.gif"/>
+        </noscript>
+       </span>
+      </span> where 
+      <em>h</em> is the cloud height, 
+      <em>zen</em> and 
+      <em>az</em> are the sun zenith and azimuth at the time and location of the image, as recorded by Sentinel-2. This translation is applied using a set of possible cloud heights (
+      <em>h</em>) to create a set of polygons encompassing possible cloud shadow locations (
+      <a id="xref-ref-46-1" class="xref-bibr" href="#ref-46">Zhu &amp;; Woodcock 2012</a>). We then calculated the RGB ratio shadow indices (
+      <a id="xref-ref-33-1" class="xref-bibr" href="#ref-33">Sarabandi et al. 2004</a>) for each pixel and classified those with a score over 0.25 as shadow (Supporting Information). Any of these shadow pixels that fell within the translated cloud locations were then labeled as cloud shadow. Finally, we identified water pixels using a set of water indices including a normalized difference water index (
+      <a id="xref-ref-44-1" class="xref-bibr" href="#ref-44">Xu 2006</a>), and darkness indices to obtain a 0 -1 water likelihood score (Supporting Information). We masked any pixels over 0.25. The set of cloud, shadow, and water pixels were then removed from each image.
+     </p>
+     <p id="p-25">After all images in the spatially filtered collection were masked for clouds, shadows, and water, we applied per-pixel terrain correction using the 
+      <em>c-correction</em> equation (
+      <a id="xref-ref-36-1" class="xref-bibr" href="#ref-36">Teillet et al. 1982</a>). This method standardizes the reflectance of sloped surfaces using the illuminance of each pixel as determined by a digital elevation model and the solar zenith and azimuth at the time and location of the image. We used the 30m resolution digital elevation model from the U.S. Geological Survey (
+      <a id="xref-ref-6-1" class="xref-bibr" href="#ref-6">Farr et al. 2007</a>) to determine slope and aspect.
+     </p>
+     <p id="p-26">Change detection was ultimately run between single before and after images. However, clouds, shadows and other artefacts can make detection difficult between any two images. Therefore, we compared two composites of all the masked and corrected images in before and after time periods. By default, the before period contained a year of images preceding the date after which we wanted to check for changes, and a three-month period following this date comprised the after period. Following cloud/shadow/water masking and terrain correction, we created a single-image composite for each time period by selecting the median value of each pixel stack. These single before and after images were then clipped to the exact geometry of the study area and used as inputs to automated change detection algorithms. Six bands corresponding to blue, green, red, near infrared, short-wave infrared 1, and short-wave infrared 2 were used in all calculations of change.</p>
+    </div>
+    <div id="sec-5" class="subsection">
+     <h3>Change Detection Algorithms</h3>
+     <p id="p-27">While a variety of algorithms have been developed to detect changes between satellite images (
+      <a id="xref-ref-43-2" class="xref-bibr" href="#ref-43">Willis 2015</a>) we started from two fundamentally different approaches. The first builds on the method used by the U.S Geological Survey to produce the National Land Cover Dataset land cover change (LCC) data (
+      <a id="xref-ref-16-1" class="xref-bibr" href="#ref-16">Jin et al. 2013</a>) and uses features that relate to real phenomena. We refer to this as the LCC algorithm. First, six spectral change metrics are calculated between before and after imagery on a per-pixel basis:
+     </p>
+     <ol class="list-ord " id="list-2">
+      <li id="list-item-8">
+       <p id="p-28">The Change Vector (
+        <em>CV</em>) measures the total change in reflectance values between two images across the visible and infrared spectrum.
+       </p>
+      </li>
+      <li id="list-item-9">
+       <p id="p-29">Relative CV Maximum (
+        <em>RCV</em>
+        <sub>
+         <em>MAX</em>
+        </sub>) measures the total change in each band scaled to their global maxima.
+       </p>
+      </li>
+      <li id="list-item-10">
+       <p id="p-30">Differences in Normalized Difference Vegetation Index (
+        <em>dNDVI</em>) uses ratios between near infrared and red reflectance to indicate changes in the concentration of vegetation.
+       </p>
+      </li>
+      <li id="list-item-11">
+       <p id="p-31">Ratio Normalized Difference Soil Index (
+        <em>dRNDSI</em>) uses ratios between short-wave infrared and green reflectance to indicate changes in the concentration of bare ground.
+       </p>
+      </li>
+      <li id="list-item-12">
+       <p id="p-32">Normalized Burn Ratio (
+        <em>dNBR</em>) is the normalized difference between the green and short-wave infrared bands, indicating the severity of burned areas of vegetation.
+       </p>
+      </li>
+      <li id="list-item-13">
+       <p id="p-33">Normalized Difference Water Index (
+        <em>dNDWI</em>) is the normalized difference between the near- and short-wave-infrared bands, indicating moisture.
+       </p>
+      </li>
+     </ol>
+     <p id="p-34">Calculating all six metrics at each pixel produces an unscaled change image with six bands (one band per metric). We then convert pixel values for each band to z-scores using the mean or minimum value and standard deviation of values across the image. We use global means for normalized indices (
+      <em>dNDVI, dRNDSI, dNBR, dNDWI</em>), and global minimums for scaled indices (
+      <em>CV</em> and 
+      <em>RCV</em>
+      <sub>
+       <em>MAX</em>
+      </sub>) as in 
+      <a id="xref-ref-16-2" class="xref-bibr" href="#ref-16">Jin et al. (2013)</a>. The output is a six-band image consisting of the standardized z-scores for each change metric. This transformation on the change image centers and scales per pixel changes relative to baseline changes in reflectance, brightness, etc. between the before and after images.
+     </p>
+     <p id="p-35">The output image is then iteratively re-weighted using the probability that a pixel represents no-change. We approximate this probability with 
+      <em>p-values</em> from the relevant distributions for each band. For normalized indices (
+      <em>dNBR, dNDSI, dNDVI, dNDWI</em>) we use the cumulative distribution function of a standard normal distribution ∼
+      <em>N(0, 1)</em>. The 
+      <em>CV</em> statistic is calculated as the sum of squared deviations for each image band, and therefore is approximately chi-square distributed (
+      <a id="xref-ref-18-1" class="xref-bibr" href="#ref-18">Lancaster &amp;; Seneta 2005</a>). We calculated 
+      <em>p-values</em> using the cumulative distribution function of a chi-square distribution with degrees of freedom equal to the number of image bands minus one.
+     </p>
+     <p id="p-36">The second algorithm is the multivariate alteration detection (MAD) algorithm (
+      <a id="xref-ref-27-1" class="xref-bibr" href="#ref-27">Nielsen 2007</a>). This approach uses canonical correspondence analysis to identify linear transformations that maximize correlation between two sets of variables, in this case, the bands of two images. Extreme deviations are identified by calculating the sum of squared deviations from the mean of each canonical variate, relative to its variance. We implement the MAD algorithm by performing singular value decomposition on a correlation matrix of the bands of two images. Singular value decomposition produces two orthogonal vectors, 
+      <strong>
+       <em>U</em>
+      </strong> and 
+      <strong>
+       <em>V</em>
+      </strong> which equate to the coefficients for the CCA linear transformation. Singular value decomposition also produces a diagonal vector 
+      <strong>
+       <em>S</em>
+      </strong>, equivalent to the correlation coefficients (
+      <em>ρ</em>
+      <sub>
+       <em>i</em>
+      </sub>) of canonical correlation. Canonical variates are then obtained as the difference between the bands of the first image transformed by 
+      <strong>
+       <em>U</em>
+      </strong> and the bands of the second image transformed by 
+      <strong>
+       <em>V</em>
+      </strong>.
+     </p>
+     <p id="p-37">The output of a single iteration of the MAD algorithm is an image with 
+      <em>min(m, n)</em> bands corresponding to the canonical variates 
+      <strong>
+       <em>V</em>
+      </strong>, a band containing the chi-square summary statistic at each pixel (
+      <em>χ</em>
+      <sup>
+       <em>2</em>
+      </sup>), and a band containing the corresponding 
+      <em>p-value</em> from a chi-square distribution with 
+      <em>min(m, n)</em> degrees of freedom. As with the LCC algorithm, we then recalculate the MAD variates using these 
+      <em>p-values</em> to weight the calculation of means and variances as in 
+      <a id="xref-ref-27-2" class="xref-bibr" href="#ref-27">Nielsen (2007)</a>. This procedure is performed iteratively until the output image has stabilized, or a maximum of 
+      <em>k =</em> 30 iterations has been reached (
+      <a id="xref-ref-27-3" class="xref-bibr" href="#ref-27">Nielsen 2007</a>). We use changes in the correlation coefficients between iterations, 
+      <em>c</em>
+      <sub>
+       <em>k</em>
+      </sub> = 
+      <em>abs</em>|
+      <em>max(</em>
+      <strong>
+       <em>S</em>
+      </strong>
+      <sub>
+       <strong>
+        <em>k</em>
+       </strong>
+      </sub>
+      <em>) – max(</em>
+      <strong>
+       <em>S</em>
+      </strong>
+      <sub>
+       <strong>
+        <em>k-1</em>
+       </strong>
+      </sub>
+      <em>)</em>| to evaluate convergence of the reweighting algorithm by inferring stability when 
+      <em>c</em>
+      <sub>
+       <em>k</em>
+      </sub> &lt;; 0.001. All image processing, calculations and transformations are performed in Google Earth Engine (Supporting Information).
+     </p>
+    </div>
+    <div id="sec-6" class="subsection">
+     <h3>Algorithm Validation</h3>
+     <p id="p-38">We collected algorithm output at 100 study sites across the continental United States that had been manually identified as undergoing habitat loss due to anthropogenic landscape modification since 2016 (Supporting Information). The predominant land cover undergoing change at each site was broadly categorized according to National Land Cover Dataset classes (
+      <a id="xref-ref-7-1" class="xref-bibr" href="#ref-7">Fry et al. 2011</a>) as either desert (
+      <em>n =</em> 12), forest (
+      <em>n =</em> 40), grassland (
+      <em>n =</em> 14), shrub/scrub (
+      <em>n =</em> 10), or wetland (
+      <em>n =</em> 14). Sites were chosen opportunistically while systematically balancing sample sizes among non-forested land cover types. At each study site, we manually delineated polygons in all areas of real change, and categorized observed changes as either bare ground, building (residential and commercial development), paved (roads, parking lots, etc.), or solar development. We then sampled the algorithm output values at all pixels within change area(s), and the maximum of either an equal number of random pixels or 1,000 random pixels within the study area not falling within areas of change and split these data into 70% training and 30% validation sets.
+     </p>
+     <p id="p-39">We used a combination of linear discriminant analysis and receiver operating characteristics to create sets of thresholds delineating changed and unchanged pixels based on algorithm outputs. First, we estimate the coefficients for a linear transformation of algorithm outputs (
+      <em>CV, dNDVI</em>, etc. for LCC; 
+      <em>V1, V2</em>, …, 
+      <em>X</em>
+      <sup>
+       <em>2</em>
+      </sup> for MAD) into a single discriminant score that maximized the differentiation between algorithm outputs in changed and unchanged pixels. Coefficients were estimated from training data for changes occurring in all habitats, and specific to major habitat types. We then used receiver operating characteristic curves to identify the discriminant score providing greatest separation between true and false positives among validation data and assessed the performance of each algorithm in terms of the area under the curve. We identified the discriminant score that maximized the ratio between true and false positive rates as a threshold for automatically identifying changes. Linear discriminant and receiver operating characteristic analyses were conducted in R (Team 2014) using the 
+      <em>pscl</em> (
+      <a id="xref-ref-14-1" class="xref-bibr" href="#ref-14">Jackman 2017</a>) and 
+      <em>pROC</em> (
+      <a id="xref-ref-30-1" class="xref-bibr" href="#ref-30">Robin et al. 2011</a>) packages (Supporting Information).
+     </p>
+    </div>
+    <div id="sec-7" class="subsection">
+     <h3>Case Studies</h3>
+     <p id="p-40">To demonstrate how these methods might be applied in situ, we evaluated the outputs from both change detection algorithms in each of four case studies (
+      <a id="xref-table-wrap-1-1" class="xref-table" href="#T1">Table 1</a>). These case studies were chosen as a sample of ongoing threats to imperiled species in a diversity of non-forested habitats. We focused outside of forested areas due to the extensive work and tools available for detecting deforestation (e.g., Global Forest Watch). Additionally, each case study represents a different potential use case for automated change detection; large-scale retrospective detection (dune sagebrush lizard); small-scale retrospective detection (beach mouse); rapid inventory after a natural disaster (Piping Plover); and active small-scale monitoring (Greater Sage Grouse).
+     </p>
+     <div id="T1" class="table pos-float">
+      <div class="table-inline table-callout-links">
+       <div class="callout">
+        <span>View this table:</span>
+        <ul class="callout-links">
+         <li class="view-inline first">
+          <a href="##" class="table-expand-inline" data-table-url="/highwire/markup/1109781/expansion?postprocessors=highwire_tables%2Chighwire_reclass%2Chighwire_figures%2Chighwire_math%2Chighwire_inline_linked_media%2Chighwire_embed&amp;;table-expand-inline=1" data-icon-position="" data-hide-link-title="0">View inline</a>
+         </li>
+         <li class="view-popup">
+          <a href="/highwire/markup/1109781/expansion?width=1000&amp;;height=500&amp;;iframe=true&amp;;postprocessors=highwire_tables%2Chighwire_reclass%2Chighwire_figures%2Chighwire_math%2Chighwire_inline_linked_media%2Chighwire_embed" class="colorbox colorbox-load table-expand-popup" rel="gallery-fragment-tables" data-icon-position="" data-hide-link-title="0">View popup</a>
+         </li>
+         <li class="download-ppt last">
+          <a href="/highwire/powerpoint/1109781" class="highwire-figure-link highwire-figure-link-ppt" data-icon-position="" data-hide-link-title="0">Download powerpoint</a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div class="table-caption">
+       <span class="table-label">Table 1.</span>
+       <p id="p-41" class="first-child">Study areas used in algorithm case studies covered a range of non-forested habitats and disturbances affecting imperiled species in the United States.</p>
+       <div class="sb-div caption-clear"/>
+      </div>
+     </div>
+     <p id="p-42">To evaluate algorithm effectiveness in these case studies, we compared algorithm outputs to changes identified by visual inspection of before and after images. Within each study area, an independent reviewer manually delineated all anthropogenic changes in the habitat type of interest. We refer to these polygons as ‘ground truth’ polygons. We then ran both the LCC and MAD algorithms within each study area, and delineated pixels representing change using the thresholds identified during LDA analysis. These areas representing change were then converted to polygons.</p>
+     <p id="p-43">We use two complementary metrics to assess the algorithms’ performance. First, the Jaccard index measures the area of overlap between two geometries as the intersection divided by the union; 
+      <em>J</em>(
+      <em>A,B</em>) = 
+      <em>A</em> ⋂ 
+      <em>B/A</em> ⋃ 
+      <em>B</em>. Second, we calculate the omission and commission error rates as the proportion of ground truth polygons that did not overlap algorithm output and the proportion of algorithm output that did not overlap any ground truth polygons, respectively.
+     </p>
+     <p id="p-44">In practice, we would apply a majority filter to these binary results to eliminate single, isolated pixels and create more contiguous areas of change or no change before conversion to polygons. However, to identify potential scale dependencies in algorithm performance, we converted to polygons all pixels identified as change. We then considered only sets of polygons greater than a sequence of minimum size {0 ac, 0.1 ac, 0.5 ac, 1 ac}, and calculate performance metrics within each of these subsets.</p>
+    </div>
+   </div>
+   <div class="section" id="sec-8">
+    <h2 class="">Results</h2>
+    <div id="sec-9" class="subsection">
+     <h3>Algorithm Validation</h3>
+     <p id="p-45">We collected algorithm output data from areas of real and no change at 100 locations (Supporting Information). Bare ground was the most common form of disturbance (86/100). Because bare ground preceded residential development and pavement, we did not detect these disturbance forms at any location. In 12 instances, solar fields were built directly over existing desert and grassland areas within the three-months comprising the ‘after’ image, and therefore appeared as a direct change from habitat to solar development.</p>
+     <p id="p-46">Overall, both algorithms effectively discriminated change from no-change among validation data, as indicated by AUC scores &gt;; 0.90 for all habitat types (
+      <a id="xref-fig-2-1" class="xref-fig" href="#F2">Fig. 2</a>). Generally, the MAD algorithm performed slightly better than the LCC algorithm, as indicated by higher AUC scores. This was especially true in detecting ‘generic’ change, when thresholds were not optimized to a specific habitat type (
+      <a id="xref-fig-2-2" class="xref-fig" href="#F2">Fig. 2</a>). The LCC algorithm was least successful at identifying changes in grassland habitats (
+      <em>AUC</em> = 0.95), and most successful in forested areas (
+      <em>AUC</em> = 0.99). The MAD algorithm was most successful in wetland habitats (
+      <em>AUC</em> = 1), and the least successful in forests (
+      <em>AUC</em> = 0.98).
+     </p>
+     <div id="F2" class="fig pos-float type-figure odd">
+      <div class="highwire-figure">
+       <div class="fig-inline-img-wrapper">
+        <div class="fig-inline-img">
+         <a href="https://www.biorxiv.org/content/biorxiv/early/2020/01/15/611459/F2.large.jpg?width=800&amp;;height=600&amp;;carousel=1" title="Receiver operating characteristic curves are used to identify thresholds for change detection. Curves plot the true and false positive rates for change detection among validation data as the linear discriminant analysis scores used as a delineating threshold increases. Curves constructed from the MAD algorithm outputs are shown in blue, and LCC algorithm outputs in orange. The values at which the rate of increase in detection rate relative to false positive rate decreases most rapidly are selected as threshold values. Curves are displayed for algorithm output data collected in different habitat types, and for all habitat types combined." class="highwire-fragment fragment-images colorbox-load" rel="gallery-fragment-images-1608108418" data-figure-caption="&lt;;div class=&quot;;highwire-markup&quot;;&gt;;Receiver operating characteristic curves are used to identify thresholds for change detection. Curves plot the true and false positive rates for change detection among validation data as the linear discriminant analysis scores used as a delineating threshold increases. Curves constructed from the MAD algorithm outputs are shown in blue, and LCC algorithm outputs in orange. The values at which the rate of increase in detection rate relative to false positive rate decreases most rapidly are selected as threshold values. Curves are displayed for algorithm output data collected in different habitat types, and for all habitat types combined.&lt;;/div&gt;;" data-icon-position="" data-hide-link-title="0">
+          <span class="hw-responsive-img">
+           <img class="highwire-fragment fragment-image lazyload" alt="Figure 2." src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://www.biorxiv.org/content/biorxiv/early/2020/01/15/611459/F2.medium.gif" width="440" height="225"/>
+           <noscript>
+            <img class="highwire-fragment fragment-image" alt="Figure 2." src="https://www.biorxiv.org/content/biorxiv/early/2020/01/15/611459/F2.medium.gif" width="440" height="225"/>
+           </noscript>
+          </span>
+         </a>
+        </div>
+       </div>
+       <ul class="highwire-figure-links inline">
+        <li class="download-fig first">
+         <a href="https://www.biorxiv.org/content/biorxiv/early/2020/01/15/611459/F2.large.jpg?download=true" class="highwire-figure-link highwire-figure-link-download" title="Download Figure 2." data-icon-position="" data-hide-link-title="0">Download figure</a>
+        </li>
+        <li class="new-tab last">
+         <a href="https://www.biorxiv.org/content/biorxiv/early/2020/01/15/611459/F2.large.jpg" class="highwire-figure-link highwire-figure-link-newtab" target="_blank" data-icon-position="" data-hide-link-title="0">Open in new tab</a>
+        </li>
+       </ul>
+      </div>
+      <div class="fig-caption">
+       <span class="fig-label">Figure 2.</span>
+       <p id="p-47" class="first-child">Receiver operating characteristic curves are used to identify thresholds for change detection. Curves plot the true and false positive rates for change detection among validation data as the linear discriminant analysis scores used as a delineating threshold increases. Curves constructed from the MAD algorithm outputs are shown in blue, and LCC algorithm outputs in orange. The values at which the rate of increase in detection rate relative to false positive rate decreases most rapidly are selected as threshold values. Curves are displayed for algorithm output data collected in different habitat types, and for all habitat types combined.</p>
+       <div class="sb-div caption-clear"/>
+      </div>
+     </div>
+    </div>
+    <div id="sec-10" class="subsection">
+     <h3>Case Studies</h3>
+     <p id="p-48">We found these change detection methods were effective for detecting habitat loss in important conservation areas in all four case studies. We detected 8.5 km
+      <sup>2</sup> of dune sagebrush lizard habitat removed by either sand mining or oil and gas well construction within the Permian Basin, TX case study area (797.8 km
+      <sup>2</sup>) between January 2017 and January 2018. The rapid appearance and expansion of large sand mines, in conjunction with ongoing oil and gas development identified by both algorithms (
+      <a id="xref-fig-3-1" class="xref-fig" href="#F3">Fig. 3</a>) indicated current protections for the imperiled lizard were insufficient to conserve the species.
+     </p>
+     <div id="F3" class="fig pos-float type-figure odd">
+      <div class="highwire-figure">
+       <div class="fig-inline-img-wrapper">
+        <div class="fig-inline-img">
+         <a href="https://www.biorxiv.org/content/biorxiv/early/2020/01/15/611459/F3.large.jpg?width=800&amp;;height=600&amp;;carousel=1" title="Habitat changes around a large dune complex in West Texas used by the dunes sagebrush lizard (Sceloporus arenicolus) were quickly identified by the LCC (red) and MAD (black) algorithms and align with those found by time-consuming manual delineation (blue). Changes were identified between pre-processed median composites from January 2018 as the before image, and January 2019 as the after image." class="highwire-fragment fragment-images colorbox-load" rel="gallery-fragment-images-1608108418" data-figure-caption="&lt;;div class=&quot;;highwire-markup&quot;;&gt;;&lt;;div xmlns=&quot;;http://www.w3.org/1999/xhtml&quot;;&gt;;Habitat changes around a large dune complex in West Texas used by the dunes sagebrush lizard (&lt;;em&gt;;Sceloporus arenicolus&lt;;/em&gt;;) were quickly identified by the LCC (red) and MAD (black) algorithms and align with those found by time-consuming manual delineation (blue). Changes were identified between pre-processed median composites from January 2018 as the before image, and January 2019 as the after image.&lt;;/div&gt;;&lt;;/div&gt;;" data-icon-position="" data-hide-link-title="0">
+          <span class="hw-responsive-img">
+           <img class="highwire-fragment fragment-image lazyload" alt="Figure 3." src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://www.biorxiv.org/content/biorxiv/early/2020/01/15/611459/F3.medium.gif" width="413" height="440"/>
+           <noscript>
+            <img class="highwire-fragment fragment-image" alt="Figure 3." src="https://www.biorxiv.org/content/biorxiv/early/2020/01/15/611459/F3.medium.gif" width="413" height="440"/>
+           </noscript>
+          </span>
+         </a>
+        </div>
+       </div>
+       <ul class="highwire-figure-links inline">
+        <li class="download-fig first">
+         <a href="https://www.biorxiv.org/content/biorxiv/early/2020/01/15/611459/F3.large.jpg?download=true" class="highwire-figure-link highwire-figure-link-download" title="Download Figure 3." data-icon-position="" data-hide-link-title="0">Download figure</a>
+        </li>
+        <li class="new-tab last">
+         <a href="https://www.biorxiv.org/content/biorxiv/early/2020/01/15/611459/F3.large.jpg" class="highwire-figure-link highwire-figure-link-newtab" target="_blank" data-icon-position="" data-hide-link-title="0">Open in new tab</a>
+        </li>
+       </ul>
+      </div>
+      <div class="fig-caption">
+       <span class="fig-label">Figure 3.</span>
+       <p id="p-49" class="first-child">Habitat changes around a large dune complex in West Texas used by the dunes sagebrush lizard (
+        <em>Sceloporus arenicolus</em>) were quickly identified by the LCC (red) and MAD (black) algorithms and align with those found by time-consuming manual delineation (blue). Changes were identified between pre-processed median composites from January 2018 as the before image, and January 2019 as the after image.
+       </p>
+       <div class="sb-div caption-clear"/>
+      </div>
+     </div>
+     <p id="p-50">We detected 0.85 km
+      <sup>2</sup> of Piping Plover habitat within 26.2 km
+      <sup>2</sup> of designated critical habitat lost in the wake of Hurricane Michael (between August and October 2018), illustrating the threat posed by natural disasters to already imperiled species. In the Gulf County, FL case study area (4.7 km
+      <sup>2</sup>), 0.03 km
+      <sup>2</sup> of potential beach mouse habitat were lost to residential development between January 2017 and January 2018. These areas of loss identified by automated change detection must be considered by the U.S. Fish and Wildlife Service when permitting future development in the species range. In the Wright, WY case study area (215.7 km
+      <sup>2</sup>) we detected 0.17 km
+      <sup>2</sup> of grassland habitat loss between June and September 2017. This loss was due to oil and gas drilling pad and road construction.
+     </p>
+     <p id="p-51">The MAD algorithm was more sensitive to landscape changes, but less specific than the LCC algorithm, as indicated by higher commission rates and lower omission rates (
+      <a id="xref-table-wrap-2-1" class="xref-table" href="#T2">Table 2</a>). Both algorithms had relatively high commission rates, indicating detection of changes not identified by manual inspection of before and after images. A post-hoc analysis of commission indicated ∼60% of these polygons represented real changes missed by manual inspection. Jaccard indices indicated low to moderate agreement in the area of overlap between change polygons delineated manually and those produced by both automated change detection algorithms (
+      <a id="xref-table-wrap-2-2" class="xref-table" href="#T2">Table 2</a>). Commission rates decreased substantially when the minimum polygon size considered as change was increased from zero.
+     </p>
+     <div id="T2" class="table pos-float">
+      <div class="table-inline table-callout-links">
+       <div class="callout">
+        <span>View this table:</span>
+        <ul class="callout-links">
+         <li class="view-inline first">
+          <a href="##" class="table-expand-inline" data-table-url="/highwire/markup/1109779/expansion?postprocessors=highwire_tables%2Chighwire_reclass%2Chighwire_figures%2Chighwire_math%2Chighwire_inline_linked_media%2Chighwire_embed&amp;;table-expand-inline=1" data-icon-position="" data-hide-link-title="0">View inline</a>
+         </li>
+         <li class="view-popup">
+          <a href="/highwire/markup/1109779/expansion?width=1000&amp;;height=500&amp;;iframe=true&amp;;postprocessors=highwire_tables%2Chighwire_reclass%2Chighwire_figures%2Chighwire_math%2Chighwire_inline_linked_media%2Chighwire_embed" class="colorbox colorbox-load table-expand-popup" rel="gallery-fragment-tables" data-icon-position="" data-hide-link-title="0">View popup</a>
+         </li>
+         <li class="download-ppt last">
+          <a href="/highwire/powerpoint/1109779" class="highwire-figure-link highwire-figure-link-ppt" data-icon-position="" data-hide-link-title="0">Download powerpoint</a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div class="table-caption">
+       <span class="table-label">Table 2.</span>
+       <p id="p-52" class="first-child">Metrics of agreement between areas of change delineated by human review and automated change detection algorithms, using different minimum size thresholds for change polygons.</p>
+       <div class="sb-div caption-clear"/>
+      </div>
+     </div>
+     <p id="p-53">Finally, algorithms detected changes between before and after images faster than human review. Both the LCC and MAD algorithms took &lt;; 40 min to produce change polygons in each study area. The time required for manual delineation of changes ranged from 6 hours in the Wright, WY case study area to several days in the Permian Basin, TX study area.</p>
+    </div>
+   </div>
+   <div class="section" id="sec-11">
+    <h2 class="">Discussion</h2>
+    <p id="p-54">The conservation of biodiversity has been limited, in part, by an inability to monitor and enforce conservation laws, regulations, and agreements. While remote sensing data have long held the promise of transforming environmental monitoring efforts, publicly accessible tools leveraging this data to achieve actionable insights have been lacking (
+     <a id="xref-ref-43-3" class="xref-bibr" href="#ref-43">Willis 2015</a>). In addition to cost, ease of use is critical if these tools are to be widely adopted for conservation monitoring and enforcement, as many land managers and regulators will not have expertise in ecology, policy, and remote sensing (
+     <a id="xref-ref-42-1" class="xref-bibr" href="#ref-42">Wiens et al. 2009</a>). In this paper we adapt and present two algorithms for automated habitat change detection using satellite imagery, and demonstrate their efficacy, efficiency, and flexibility in a variety of test areas and case studies. Built on publicly available data and technology, these tools can be used by anyone - from local property managers to government agencies charged with national monitoring programs - to automatically detect habitat loss (Supporting Information).
+    </p>
+    <p id="p-55">Both the MAD (
+     <a id="xref-ref-27-4" class="xref-bibr" href="#ref-27">Nielsen 2007</a>) and LCC (
+     <a id="xref-ref-16-3" class="xref-bibr" href="#ref-16">Jin et al. 2013</a>) algorithms exhibited excellent performance discriminating habitat loss from background changes between images in test cases (
+     <a id="xref-fig-1-2" class="xref-fig" href="#F1">Fig. 1</a>). Beyond performing well in forested landscapes, where many algorithms have been developed (
+     <a id="xref-ref-11-2" class="xref-bibr" href="#ref-11">Hansen et al. 2010</a>), both algorithms were effective in a variety of non-forest areas (
+     <a id="xref-fig-1-3" class="xref-fig" href="#F1">Fig. 1</a>). This flexibility is in part attributable to the use of land cover specific thresholds obtained from simple linear discriminant analysis using subsets of algorithm output data. We observed slightly lower AUC scores when receiver operating characteristic curves were produced using thresholds estimated from all data across land cover types. Specific thresholds were also important in detecting changes other than bare ground (e.g., solar energy development). The availability of a flexible tool that can be applied in a variety of contexts, rather than requiring a different tool for different ecosystems, should make automated change detection more readily adopted by entities with regulatory authority.
+    </p>
+    <p id="p-56">The ability of each algorithm to detect meaningful change was confirmed in case studies, where both methods identified nearly all instances of anthropogenic habitat loss that were manually delineated (i.e., low omission rates; 
+     <a id="xref-table-wrap-2-3" class="xref-table" href="#T2">Table 2</a>). The MAD algorithm appeared more sensitive and less specific than LCC as illustrated by outputs from case studies. Generally higher commission rates among MAD outputs reflect the tendency of this algorithm to detect all types of change - even those occurring naturally due to phenology and seasonality. The change metrics included in the LCC algorithm that related to real-world phenomena (e.g., 
+     <em>dNDVI, dNBR</em>, etc.) likely enabled better discrimination between generic and habitat-specific change. Commission occurred from one of two outcomes: instances of habitat loss missed by manual review, or natural changes to the landscape that were not of interest. Object oriented, or computer vision-based approaches may be helpful for distinguishing among these (
+     <a id="xref-ref-23-1" class="xref-bibr" href="#ref-23">Malof et al. 2016</a>; 
+     <a id="xref-ref-8-1" class="xref-bibr" href="#ref-8">Ghorbanzadeh et al. 2019</a>). Here, we present algorithms that are ready to be applied to a variety of habitats using only a Google Earth Engine account. Future work that integrates dynamically updated machine learning classification approaches, rather than a predefined set of thresholds, may also improve discrimination.
+    </p>
+    <p id="p-57">However, most instances of commission were not errors, illustrating a key advantage of automated change detection methods for conservation monitoring and enforcement: Both algorithms may be more effective than human review, particularly over large areas. The finding that ∼60% of instances of commission by both algorithms were in fact true cases of habitat loss demonstrates the potential for an automated change detection system to produce more complete result, especially over large areas, than manual inspection of before and after images. Furthermore, both algorithms were more efficient than manual inspection of satellite imagery. Human delineation of changes required several orders of magnitude more time to complete than automated algorithms and scaled with the size of the area of interest. Thus, automated change detection methods are vastly more time efficient, making them applicable and preferable in situations that require repeated or continuous monitoring. For entities wanting to use satellite imagery to implement a comprehensive conservation monitoring and enforcement program, this kind of efficiency is critical.</p>
+    <p id="p-58">In the context of environmental laws that protect habitat, these automated change detection approaches could be used by regulatory agencies to enforce prohibitions on habitat destruction. In the United States, federal agencies responsible for implementing the Endangered species Act might use tools like this to monitor and enforce compliance with the terms and conditions of federal consultations under section 7 of the ESA, or habitat management plans associated with conservation agreements under section 10. These potential applications are illustrated by our case studies. For example, Gulf County, Florida has been developing a Habitat Conservation Plan to offset harm to endangered St. Andrew beach mice due to residential construction. These algorithms can be used to measure past and ongoing development and inform the plan as it is developed, as well as to monitor for compliance in the future. Additionally, the extent of historic habitat loss must be considered in future permitting decisions. Similarly, the ability to identify and track the expansion of sand mines within the range of the dune sagebrush lizard provided evidence that a state-run voluntary conservation agreement was insufficient to minimize threats faced by the species, and informed a petition to list the species under the ESA (
+     <a href="https://ecos.fws.gov/docs/petitions/92210//1040.pdf">https://ecos.fws.gov/docs/petitions/92210//1040.pdf</a>). Finally, conservation agreements may often involve specifications of where development can and cannot occur within an area. The Wright, Wyoming case study provides a hypothetical example of how a small area could be monitored with relatively short (∼3 month) frequency to detect habitat destruction. Here, the changes detected here were legal, but in other instances might alert an enforcement agency to unauthorized activities.
+    </p>
+    <p id="p-59">Our results demonstrate the capability of both the MAD and LCC algorithms to automatically detect habitat loss, but those hoping to use these approaches should be aware of several caveats. First, both algorithms were more effective at identifying the occurrence of change than accurately delineating the extent of those changes. This was reflected by relatively low (&lt;; 0.5) Jaccard index scores. Change thresholds designed for specificity rather than sensitivity will invariably exclude some real changes, meaning the area of detected change will underestimate area changed. Additionally, the commission rates of both algorithms decreased as the minimum size of changes considered increased. This pattern suggests a minimum size of disturbance that can be regularly detected by these algorithms using Sentinel-2 data. If disturbances &lt;; 500 m
+     <sup>2</sup> need to be detected, users may experience a higher number of false positives.
+    </p>
+    <p id="p-60">While the algorithms presented here were run using Sentinel-2 data, they were written generically and can be applied to other passive remote sensing systems with the requisite bands and rigorous orthorectification and co-registration. For instance, Landsat 8, which provides global coverage of 30-meter resolution imagery every 16 days, contains analogous bands to Sentinel-2 as well as a thermal band measuring surface temperature allowing for more robust detection of clouds (
+     <a id="xref-ref-45-2" class="xref-bibr" href="#ref-45">Zhu et al. 2015</a>). Our cloud detection and masking approaches are imperfect with Sentinel-2 imagery and may not perform as well in very cloudy areas. While habitat specific parameters help, clouds may still occasionally be flagged as change. Using these algorithms with Landsat data may be useful in cases where some resolution can be sacrificed for more robust cloud removal. Generic change detection algorithms using SAR data, which is invariant to cloud cover, may also prove useful in future development (
+     <a id="xref-ref-28-1" class="xref-bibr" href="#ref-28">Nielsen et al. 2017</a>; 
+     <a id="xref-ref-31-1" class="xref-bibr" href="#ref-31">Rüetschi et al. 2019</a>).
+    </p>
+    <p id="p-61">By adapting two change detection algorithms and validating their efficacy across a variety of habitats, we have developed tools to help enforce conservation laws and agreements with remote sensing data (Supporting Information). The approaches described here do not require remote sensing expertise and can be used by local land managers, as well as federal agencies responsible for administering national and international laws. In addition, they are flexible, run much more quickly than manual delineation, and can be run repeatedly in many different contexts and at large spatial scales, making them suitable for the monitoring and enforcement of environmental laws. Most importantly, they are built using publicly available data and computing platforms. Many previous tools have been limited in their use in regulatory capacities because they are only available for a fee under pay-for-service structures. For remote sensing data to be used to improve conservation, it is critical that platforms like Google Earth Engine continue to provide open access. The continued improvement of automated change detection methods and adoption by regulatory authorities holds the potential to close a significant gap in the protection of biodiversity.</p>
+   </div>
+   <div class="section" id="sec-12">
+    <h2 class="">Supporting Information</h2>
+    <p id="p-62">A public app running change detection is available at 
+     <a href="https://defendersofwildlifegis.users.earthengine.app/view/dowacd">https://defendersofwildlifegis.users.earthengine.app/view/dowacd</a>. All code used for image processing and change detection in Google Earth Engine, R code used to perform statistical analyses, and algorithm output data used for validation are available in an Open Science Framework repository (DOI: 10.17605/OSF.IO/5QAD8). The authors are solely responsible for the content and functionality of these materials. Queries (other than absence of the material) should be directed to the corresponding author.
+    </p>
+   </div>
+   <div class="section ack" id="ack-1">
+    <h2 class="">Acknowledgements</h2>
+    <p id="p-63">The authors would like to thank K. Stewart, M. Evansen, K. Blongewicz, and S. Steingard for their help with data collection. Thanks to J. Miller, M. Evansen, S. Steingard, and S. Patsel for reviewing the manuscript draft.</p>
+   </div>
+   <div class="section fn-group" id="fn-group-1">
+    <h2>Footnotes</h2>
+    <ul>
+     <li class="fn-update fn-group-summary-of-updates" id="fn-1">
+      <p id="p-4">Additional algorithm testing locations have been included, and the manuscript was reformatted for submission to Conservation Biology.</p>
+     </li>
+     <li class="fn-dataset fn-group-external-links" id="fn-2">
+      <p id="p-5">
+       <a href="https://github.com/mjevans26/ACD_methods">https://github.com/mjevans26/ACD_methods</a>
+      </p>
+     </li>
+    </ul>
+   </div>
+   <div class="section ref-list" id="ref-list-1">
+    <h2 class="">Literature Cited</h2>
+    <ol class="cit-list ref-use-labels">
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-1-1" title="View reference in text" id="ref-1">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.1">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Betts</span>
+          <span class="cit-name-given-names">MG</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Wolf</span>
+          <span class="cit-name-given-names">C</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Ripple</span>
+          <span class="cit-name-given-names">WJ</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Phalan</span>
+          <span class="cit-name-given-names">B</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Millers</span>
+          <span class="cit-name-given-names">KA</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Duarte</span>
+          <span class="cit-name-given-names">A</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Butchart</span>
+          <span class="cit-name-given-names">SHM</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Taal</span>
+          <span class="cit-name-given-names">L.</span>
+         </span>
+         <span class="cit-pub-date">2017</span>. 
+         <span class="cit-article-title">Global forest loss disproportionately erodes biodiversity in intact landscapes</span>. 
+         <abbr class="cit-jnl-abbrev">Nature</abbr>
+         <span class="cit-vol">547</span>:
+         <span class="cit-fpage">441</span>–
+         <span class="cit-lpage">444</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DNature%26rft.volume%253D547%26rft.spage%253D441%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-2-1" title="View reference in text" id="ref-2">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.2">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Ceballos</span>
+          <span class="cit-name-given-names">G</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Ehrlich</span>
+          <span class="cit-name-given-names">PR</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Dirzo</span>
+          <span class="cit-name-given-names">R.</span>
+         </span>
+         <span class="cit-pub-date">2017</span>. 
+         <span class="cit-article-title">Biological annihilation via the ongoing sixth mass extinction signaled by vertebrate population losses and declines</span>. 
+         <abbr class="cit-jnl-abbrev">Proceedings of the National Academy of Sciences</abbr>
+         <span class="cit-vol">114</span>:
+         <span class="cit-fpage">6089</span>–
+         <span class="cit-lpage">6096</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DProceedings%2Bof%2Bthe%2BNational%2BAcademy%2Bof%2BSciences%26rft.volume%253D114%26rft.spage%253D6089%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-3-1" title="View reference in text" id="ref-3">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.3">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Chandra</span>
+          <span class="cit-name-given-names">A</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Idrisova</span>
+          <span class="cit-name-given-names">A.</span>
+         </span>
+         <span class="cit-pub-date">2011</span>. 
+         <span class="cit-article-title">Convention on Biological Diversity: a review of national challenges and opportunities for implementation</span>. 
+         <abbr class="cit-jnl-abbrev">Biodiversity and Conservation</abbr>
+         <span class="cit-vol">20</span>:
+         <span class="cit-fpage">3295</span>–
+         <span class="cit-lpage">3316</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DBiodiversity%2Band%2BConservation%26rft.volume%253D20%26rft.spage%253D3295%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-4-1" title="View reference in text" id="ref-4">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.4">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Chapron</span>
+          <span class="cit-name-given-names">G.</span>
+         </span>
+         <span class="cit-pub-date">2017</span>. 
+         <span class="cit-article-title">The environment needs cryptogovernance</span>. 
+         <abbr class="cit-jnl-abbrev">Nature</abbr>
+         <span class="cit-vol">545</span>:
+         <span class="cit-fpage">403</span>–
+         <span class="cit-lpage">405</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DNature%26rft.volume%253D545%26rft.spage%253D403%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-5-1" title="View reference in text" id="ref-5">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.5" data-doi="10.1016/j.rse.2011.11.026">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Drusch</span>
+          <span class="cit-name-given-names">M</span>
+         </span>
+         <span class="cit-etal">et al.</span>
+         <span class="cit-pub-date">2012</span>. 
+         <span class="cit-article-title">Sentinel-2: ESA’s Optical High-Resolution Mission for GMES Operational Services</span>. 
+         <abbr class="cit-jnl-abbrev">Remote Sensing of Environment</abbr>
+         <span class="cit-vol">120</span>:
+         <span class="cit-fpage">25</span>–
+         <span class="cit-lpage">36</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DRemote%2BSensing%2Bof%2BEnvironment%26rft.volume%253D120%26rft.spage%253D25%26rft_id%253Dinfo%253Adoi%252F10.1016%252Fj.rse.2011.11.026%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1016/j.rse.2011.11.026&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-6-1" title="View reference in text" id="ref-6">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.6" data-doi="10.1029/2005RG000183">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Farr</span>
+          <span class="cit-name-given-names">TG</span>
+         </span>
+         <span class="cit-etal">et al.</span>
+         <span class="cit-pub-date">2007</span>. 
+         <span class="cit-article-title">The Shuttle Radar Topography Mission</span>. 
+         <abbr class="cit-jnl-abbrev">Reviews of Geophysics</abbr>
+         <span class="cit-vol">45</span>:
+         <span class="cit-fpage">RG2004</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DReviews%2Bof%2BGeophysics%26rft.volume%253D45%26rft.spage%253DRG2004%26rft_id%253Dinfo%253Adoi%252F10.1029%252F2005RG000183%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1029/2005RG000183&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-7-1" title="View reference in text" id="ref-7">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.7">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Fry</span>
+          <span class="cit-name-given-names">JA</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Xian</span>
+          <span class="cit-name-given-names">G</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Jin</span>
+          <span class="cit-name-given-names">S</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Dewitz</span>
+          <span class="cit-name-given-names">JA</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Homer</span>
+          <span class="cit-name-given-names">CG</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Limin</span>
+          <span class="cit-name-given-names">Y</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Barnes</span>
+          <span class="cit-name-given-names">CA</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Herold</span>
+          <span class="cit-name-given-names">ND</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Wickham</span>
+          <span class="cit-name-given-names">JD</span>
+         </span>. 
+         <span class="cit-pub-date">2011</span>. 
+         <span class="cit-article-title">Completion of the 2006 national land cover database for the conterminous United States</span>. 
+         <abbr class="cit-jnl-abbrev">Photogrammetric Engineering and Remote Sensing</abbr>
+         <span class="cit-vol">77</span>:
+         <span class="cit-fpage">858</span>–
+         <span class="cit-lpage">864</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DPhotogrammetric%2BEngineering%2Band%2BRemote%2BSensing%26rft.volume%253D77%26rft.spage%253D858%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-8-1" title="View reference in text" id="ref-8">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.8">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Ghorbanzadeh</span>
+          <span class="cit-name-given-names">O</span>
+         </span>
+         <span class="cit-etal">et al.</span>
+         <span class="cit-pub-date">2019</span>. 
+         <span class="cit-article-title">Evaluation of Different Machine Learning Methods and Deep-Learning Convolutional Neural Networks for Landslide Detection</span>. 
+         <abbr class="cit-jnl-abbrev">Remote Sensing</abbr>
+         <span class="cit-vol">11</span>:
+         <span class="cit-fpage">196</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DRemote%2BSensing%26rft.volume%253D11%26rft.spage%253D196%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-9-1" title="View reference in text" id="ref-9">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.9">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Gorelick</span>
+          <span class="cit-name-given-names">N</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Hancher</span>
+          <span class="cit-name-given-names">M</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Dixon</span>
+          <span class="cit-name-given-names">M</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Ilyushchenko</span>
+          <span class="cit-name-given-names">S</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Thau</span>
+          <span class="cit-name-given-names">D</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Moore</span>
+          <span class="cit-name-given-names">R.</span>
+         </span>
+         <span class="cit-pub-date">2017</span>. 
+         <span class="cit-article-title">Google Earth Engine: Planetary-scale geospatial analysis for everyone</span>. 
+         <abbr class="cit-jnl-abbrev">Remote Sensing of Environment</abbr>
+         <span class="cit-vol">202</span>:
+         <span class="cit-fpage">18</span>–
+         <span class="cit-lpage">27</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DRemote%2BSensing%2Bof%2BEnvironment%26rft.volume%253D202%26rft.spage%253D18%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-10-1" title="View reference in text" id="ref-10">↵</a>
+      <div class="cit ref-cit ref-book" id="cit-611459v2.10">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth cit-collab">Government Accountability Office</span>. 
+         <span class="cit-pub-date">2009</span>. 
+         <span class="cit-source">Endangered Species Act: The U.S. Fish and Wildlife Service has incomplete information about effects on listed species from section 7 consultations</span>. 
+         <span class="cit-publ-loc">Washington, DC</span>.
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-11-1" title="View reference in text" id="ref-11">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.11" data-doi="10.1073/pnas.0912668107">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Hansen</span>
+          <span class="cit-name-given-names">MC</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Stehman</span>
+          <span class="cit-name-given-names">S V</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Potapov</span>
+          <span class="cit-name-given-names">P V.</span>
+         </span>
+         <span class="cit-pub-date">2010</span>. 
+         <span class="cit-article-title">Quantification of global gross forest cover loss</span>. 
+         <abbr class="cit-jnl-abbrev">Proceedings of the National Academy of Sciences of the United States of America</abbr>
+         <span class="cit-vol">107</span>:
+         <span class="cit-fpage">8650</span>–
+         <span class="cit-lpage">5</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DProceedings%2Bof%2Bthe%2BNational%2BAcademy%2Bof%2BSciences%2Bof%2Bthe%2BUnited%2BStates%2Bof%2BAmerica%26rft_id%253Dinfo%253Adoi%252F10.1073%252Fpnas.0912668107%26rft_id%253Dinfo%253Apmid%252F20421467%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/ijlink/YTozOntzOjQ6InBhdGgiO3M6MTQ6Ii9sb29rdXAvaWpsaW5rIjtzOjU6InF1ZXJ5IjthOjQ6e3M6ODoibGlua1R5cGUiO3M6NDoiQUJTVCI7czoxMToiam91cm5hbENvZGUiO3M6NDoicG5hcyI7czo1OiJyZXNpZCI7czoxMToiMTA3LzE5Lzg2NTAiO3M6NDoiYXRvbSI7czozNzoiL2Jpb3J4aXYvZWFybHkvMjAyMC8wMS8xNS82MTE0NTkuYXRvbSI7fXM6ODoiZnJhZ21lbnQiO3M6MDoiIjt9" class="cit-ref-sprinkles cit-ref-sprinkles-ijlink">
+         <span>
+          <span class="cit-reflinks-abstract">Abstract</span>
+          <span class="cit-sep cit-reflinks-variant-name-sep">/</span>
+          <span class="cit-reflinks-full-text">
+           <span class="free-full-text">FREE </span>Full Text
+          </span>
+         </span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-12-1" title="View reference in text" id="ref-12">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.12">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Hossain</span>
+          <span class="cit-name-given-names">ANM</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Barlow</span>
+          <span class="cit-name-given-names">A</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Barlow</span>
+          <span class="cit-name-given-names">CG</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Lynam</span>
+          <span class="cit-name-given-names">AJ</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Chakma</span>
+          <span class="cit-name-given-names">S</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Savini</span>
+          <span class="cit-name-given-names">T.</span>
+         </span>
+         <span class="cit-pub-date">2016</span>. 
+         <span class="cit-article-title">Assessing the efficacy of camera trapping as a tool for increasing detection rates of wildlife crime in tropical protected areas</span>. 
+         <abbr class="cit-jnl-abbrev">Biological Conservation</abbr>
+         <span class="cit-vol">201</span>:
+         <span class="cit-fpage">314</span>–
+         <span class="cit-lpage">319</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DBiological%2BConservation%26rft.volume%253D201%26rft.spage%253D314%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-13-1" title="View reference in text" id="ref-13">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.13" data-doi="10.1126/science.1255642">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Hussey</span>
+          <span class="cit-name-given-names">NE</span>
+         </span>
+         <span class="cit-etal">et al.</span>
+         <span class="cit-pub-date">2015</span>. 
+         <span class="cit-article-title">Aquatic animal telemetry: A panoramic window into the underwater world</span>. 
+         <abbr class="cit-jnl-abbrev">Science</abbr>
+         <span class="cit-vol">348</span>:
+         <span class="cit-fpage">1255642</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DScience%26rft.stitle%253DScience%26rft.aulast%253DHussey%26rft.auinit1%253DN.%2BE.%26rft.volume%253D348%26rft.issue%253D6240%26rft.spage%253D1255642%26rft.epage%253D1255642%26rft.atitle%253DAquatic%2Banimal%2Btelemetry%253A%2BA%2Bpanoramic%2Bwindow%2Binto%2Bthe%2Bunderwater%2Bworld%26rft_id%253Dinfo%253Adoi%252F10.1126%252Fscience.1255642%26rft_id%253Dinfo%253Apmid%252F26068859%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/ijlink/YTozOntzOjQ6InBhdGgiO3M6MTQ6Ii9sb29rdXAvaWpsaW5rIjtzOjU6InF1ZXJ5IjthOjQ6e3M6ODoibGlua1R5cGUiO3M6NDoiQUJTVCI7czoxMToiam91cm5hbENvZGUiO3M6Mzoic2NpIjtzOjU6InJlc2lkIjtzOjE2OiIzNDgvNjI0MC8xMjU1NjQyIjtzOjQ6ImF0b20iO3M6Mzc6Ii9iaW9yeGl2L2Vhcmx5LzIwMjAvMDEvMTUvNjExNDU5LmF0b20iO31zOjg6ImZyYWdtZW50IjtzOjA6IiI7fQ==" class="cit-ref-sprinkles cit-ref-sprinkles-ijlink">
+         <span>
+          <span class="cit-reflinks-abstract">Abstract</span>
+          <span class="cit-sep cit-reflinks-variant-name-sep">/</span>
+          <span class="cit-reflinks-full-text">
+           <span class="free-full-text">FREE </span>Full Text
+          </span>
+         </span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-14-1" title="View reference in text" id="ref-14">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.14">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Jackman</span>
+          <span class="cit-name-given-names">S.</span>
+         </span>
+         <span class="cit-pub-date">2017</span>. 
+         <abbr class="cit-jnl-abbrev">pscl: Classes and methods for R developed in the Political Science Computational laboratory. United States Studies Centre, University of Sydney, Sydney, New South Wales, AUstralia</abbr>.
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-15-1" title="View reference in text" id="ref-15">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.15">
+       <div class="cit-metadata">
+        <cite>Japan Naitonal Diet. 
+         <span class="cit-pub-date">1972</span>. 
+         <abbr class="cit-jnl-abbrev">Nature Conservation Law</abbr>.
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-16-1" title="View reference in text" id="ref-16">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.16" data-doi="10.1016/j.rse.2013.01.012">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Jin</span>
+          <span class="cit-name-given-names">S</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Yang</span>
+          <span class="cit-name-given-names">L</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Danielson</span>
+          <span class="cit-name-given-names">P</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Homer</span>
+          <span class="cit-name-given-names">C</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Fry</span>
+          <span class="cit-name-given-names">J</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Xian</span>
+          <span class="cit-name-given-names">G.</span>
+         </span>
+         <span class="cit-pub-date">2013</span>. 
+         <span class="cit-article-title">A comprehensive change detection method for updating the National Land Cover Database to circa 2011</span>. 
+         <abbr class="cit-jnl-abbrev">Remote Sensing of Environment</abbr>
+         <span class="cit-vol">132</span>:
+         <span class="cit-fpage">159</span>–
+         <span class="cit-lpage">175</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DRemote%2BSensing%2Bof%2BEnvironment%26rft.volume%253D132%26rft.spage%253D159%26rft_id%253Dinfo%253Adoi%252F10.1016%252Fj.rse.2013.01.012%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1016/j.rse.2013.01.012&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-17-1" title="View reference in text" id="ref-17">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.17">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Keane</span>
+          <span class="cit-name-given-names">A</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Jones</span>
+          <span class="cit-name-given-names">JPG</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Edwards-Jones</span>
+          <span class="cit-name-given-names">G</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Milner-Gulland</span>
+          <span class="cit-name-given-names">EJ</span>
+         </span>. 
+         <span class="cit-pub-date">2008</span>. 
+         <span class="cit-article-title">The sleeping policeman: Understanding issues of enforcement and compliance in conservation</span>. 
+         <abbr class="cit-jnl-abbrev">Animal Conservation</abbr>
+         <span class="cit-vol">11</span>:
+         <span class="cit-fpage">75</span>–
+         <span class="cit-lpage">82</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DAnimal%2BConservation%26rft.volume%253D11%26rft.spage%253D75%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-18-1" title="View reference in text" id="ref-18">↵</a>
+      <div class="cit ref-cit ref-book" id="cit-611459v2.18">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Lancaster</span>
+          <span class="cit-name-given-names">HO</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Seneta</span>
+          <span class="cit-name-given-names">E.</span>
+         </span>
+         <span class="cit-pub-date">2005</span>. 
+         <span class="cit-source">Chi-Square Distribution. Page Encyclopedia of Biostatistics</span>. 
+         <span class="cit-publ-name">John Wiley &amp;; Sons, Ltd, Chichester</span>, 
+         <span class="cit-publ-loc">UK</span>.
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <div class="cit ref-cit ref-journal no-rev-xref" id="cit-611459v2.19">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">López-Bao</span>
+          <span class="cit-name-given-names">JV</span>
+         </span>
+         <span class="cit-etal">et al.</span>
+         <span class="cit-pub-date">2015</span>. 
+         <span class="cit-article-title">Toothless wildlife protection laws</span>. 
+         <abbr class="cit-jnl-abbrev">Biodiversity and Conservation</abbr>
+         <span class="cit-vol">24</span>:
+         <span class="cit-fpage">2105</span>–
+         <span class="cit-lpage">2108</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DBiodiversity%2Band%2BConservation%26rft.volume%253D24%26rft.spage%253D2105%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-20-1" title="View reference in text" id="ref-20">↵</a>
+      <div class="cit ref-cit ref-book" id="cit-611459v2.20">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Malcom</span>
+          <span class="cit-name-given-names">J.</span>
+         </span>
+         <span class="cit-pub-date">2017</span>. 
+         <span class="cit-source">ESA Compliance Monitoring and the Langboard HCP</span>. 
+         <span class="cit-publ-loc">Washington, DC</span>. 
+         <a href="https://defenders-cci.org/working_papers/Langboard_HCP/">https://defenders-cci.org/working_papers/Langboard_HCP/</a>
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-21-1" title="View reference in text" id="ref-21">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.21">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Malcom</span>
+          <span class="cit-name-given-names">J</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Kim</span>
+          <span class="cit-name-given-names">T</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Li</span>
+          <span class="cit-name-given-names">Y-W.</span>
+         </span>
+         <span class="cit-pub-date">2017</span>. 
+         <abbr class="cit-jnl-abbrev">Free Aerial Imagery as a Resource to Monitor Compliance with the Endangered Species Act. bioRxiv:204750</abbr>.
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-22-1" title="View reference in text" id="ref-22">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.22" data-doi="10.1073/pnas.1516938112">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Malcom</span>
+          <span class="cit-name-given-names">JW</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Li</span>
+          <span class="cit-name-given-names">YW</span>
+         </span>. 
+         <span class="cit-pub-date">2015</span>. 
+         <span class="cit-article-title">Data contradict common perceptions about a controversial provision of the US Endangered Species Act</span>. 
+         <abbr class="cit-jnl-abbrev">Proceedings of the National Academy of Sciences of the United States of America</abbr>
+         <span class="cit-vol">112</span>:
+         <span class="cit-fpage">15844</span>–
+         <span class="cit-lpage">15849</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DProceedings%2Bof%2Bthe%2BNational%2BAcademy%2Bof%2BSciences%2Bof%2Bthe%2BUnited%2BStates%2Bof%2BAmerica%26rft_id%253Dinfo%253Adoi%252F10.1073%252Fpnas.1516938112%26rft_id%253Dinfo%253Apmid%252F26668392%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/ijlink/YTozOntzOjQ6InBhdGgiO3M6MTQ6Ii9sb29rdXAvaWpsaW5rIjtzOjU6InF1ZXJ5IjthOjQ6e3M6ODoibGlua1R5cGUiO3M6NDoiQUJTVCI7czoxMToiam91cm5hbENvZGUiO3M6NDoicG5hcyI7czo1OiJyZXNpZCI7czoxMjoiMTEyLzUyLzE1ODQ0IjtzOjQ6ImF0b20iO3M6Mzc6Ii9iaW9yeGl2L2Vhcmx5LzIwMjAvMDEvMTUvNjExNDU5LmF0b20iO31zOjg6ImZyYWdtZW50IjtzOjA6IiI7fQ==" class="cit-ref-sprinkles cit-ref-sprinkles-ijlink">
+         <span>
+          <span class="cit-reflinks-abstract">Abstract</span>
+          <span class="cit-sep cit-reflinks-variant-name-sep">/</span>
+          <span class="cit-reflinks-full-text">
+           <span class="free-full-text">FREE </span>Full Text
+          </span>
+         </span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-23-1" title="View reference in text" id="ref-23">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.23">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Malof</span>
+          <span class="cit-name-given-names">JM</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Bradbury</span>
+          <span class="cit-name-given-names">K</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Collins</span>
+          <span class="cit-name-given-names">LM</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Newell</span>
+          <span class="cit-name-given-names">RG</span>
+         </span>. 
+         <span class="cit-pub-date">2016</span>. 
+         <span class="cit-article-title">Automatic detection of solar photovoltaic arrays in high resolution aerial imagery</span>. 
+         <abbr class="cit-jnl-abbrev">Applied Energy</abbr>
+         <span class="cit-vol">183</span>:
+         <span class="cit-fpage">229</span>–
+         <span class="cit-lpage">240</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DApplied%2BEnergy%26rft.volume%253D183%26rft.spage%253D229%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <div class="cit ref-cit ref-journal no-rev-xref" id="cit-611459v2.24" data-doi="10.1126/science.1229803">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">McCarthy</span>
+          <span class="cit-name-given-names">DP</span>
+         </span>
+         <span class="cit-etal">et al.</span>
+         <span class="cit-pub-date">2012</span>. 
+         <span class="cit-article-title">Financial costs of meeting global biodiversity conservation targets: current spending and unmet needs</span>. 
+         <abbr class="cit-jnl-abbrev">Science</abbr>
+         <span class="cit-vol">338</span>:
+         <span class="cit-fpage">946</span>–
+         <span class="cit-lpage">949</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DScience%26rft_id%253Dinfo%253Adoi%252F10.1126%252Fscience.1229803%26rft_id%253Dinfo%253Apmid%252F23065904%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/ijlink/YTozOntzOjQ6InBhdGgiO3M6MTQ6Ii9sb29rdXAvaWpsaW5rIjtzOjU6InF1ZXJ5IjthOjQ6e3M6ODoibGlua1R5cGUiO3M6NDoiQUJTVCI7czoxMToiam91cm5hbENvZGUiO3M6Mzoic2NpIjtzOjU6InJlc2lkIjtzOjEyOiIzMzgvNjEwOS85NDYiO3M6NDoiYXRvbSI7czozNzoiL2Jpb3J4aXYvZWFybHkvMjAyMC8wMS8xNS82MTE0NTkuYXRvbSI7fXM6ODoiZnJhZ21lbnQiO3M6MDoiIjt9" class="cit-ref-sprinkles cit-ref-sprinkles-ijlink">
+         <span>
+          <span class="cit-reflinks-abstract">Abstract</span>
+          <span class="cit-sep cit-reflinks-variant-name-sep">/</span>
+          <span class="cit-reflinks-full-text">
+           <span class="free-full-text">FREE </span>Full Text
+          </span>
+         </span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-25-1" title="View reference in text" id="ref-25">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.25">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth cit-collab">New Zealand Parliament</span>. 
+         <span class="cit-pub-date">1987</span>. 
+         <abbr class="cit-jnl-abbrev">Conservation Act 1987</abbr>.
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <div class="cit ref-cit ref-journal no-rev-xref" id="cit-611459v2.26" data-doi="10.1038/nature14324">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Newbold</span>
+          <span class="cit-name-given-names">T</span>
+         </span>
+         <span class="cit-etal">et al.</span>
+         <span class="cit-pub-date">2015</span>. 
+         <span class="cit-article-title">Global effects of land use on local terrestrial biodiversity</span>. 
+         <abbr class="cit-jnl-abbrev">Nature</abbr>
+         <span class="cit-vol">520</span>:
+         <span class="cit-fpage">45</span>–
+         <span class="cit-lpage">50</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DNature%26rft.volume%253D520%26rft.spage%253D45%26rft_id%253Dinfo%253Adoi%252F10.1038%252Fnature14324%26rft_id%253Dinfo%253Apmid%252F25832402%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1038/nature14324&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=25832402&amp;;link_type=MED&amp;;atom=%2Fbiorxiv%2Fearly%2F2020%2F01%2F15%2F611459.atom" class="cit-ref-sprinkles cit-ref-sprinkles-medline">
+         <span>PubMed</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-27-1" title="View reference in text" id="ref-27">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.27">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Nielsen</span>
+          <span class="cit-name-given-names">AA</span>
+         </span>. 
+         <span class="cit-pub-date">2007</span>. 
+         <span class="cit-article-title">The regularized iteratively reweighted MAD method for change detection in multi- and hyperspectral data</span>. 
+         <abbr class="cit-jnl-abbrev">IEEE Transactions on Image Processing</abbr>
+         <span class="cit-vol">16</span>:
+         <span class="cit-fpage">463</span>–
+         <span class="cit-lpage">477</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DIEEE%2Btransactions%2Bon%2Bimage%2Bprocessing%2B%253A%2B%2Ba%2Bpublication%2Bof%2Bthe%2BIEEE%2BSignal%2BProcessing%2BSociety%26rft.stitle%253DIEEE%2BTrans%2BImage%2BProcess%26rft.aulast%253DNielsen%26rft.auinit1%253DA.%2BA.%26rft.volume%253D16%26rft.issue%253D2%26rft.spage%253D463%26rft.epage%253D478%26rft.atitle%253DThe%2Bregularized%2Biteratively%2Breweighted%2BMAD%2Bmethod%2Bfor%2Bchange%2Bdetection%2Bin%2Bmulti-%2Band%2Bhyperspectral%2Bdata.%26rft_id%253Dinfo%253Apmid%252F17269639%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=17269639&amp;;link_type=MED&amp;;atom=%2Fbiorxiv%2Fearly%2F2020%2F01%2F15%2F611459.atom" class="cit-ref-sprinkles cit-ref-sprinkles-medline">
+         <span>PubMed</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-28-1" title="View reference in text" id="ref-28">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.28">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Nielsen</span>
+          <span class="cit-name-given-names">AA</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Canty</span>
+          <span class="cit-name-given-names">MJ</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Skriver</span>
+          <span class="cit-name-given-names">H</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Conradsen</span>
+          <span class="cit-name-given-names">K.</span>
+         </span>
+         <span class="cit-pub-date">2017</span>. 
+         <span class="cit-article-title">Change detection in multi-temporal dual polarization Sentinel-1 data. Pages 3901–3904 IEEE International Geoscience and Remote Sensing Symposium</span>. 
+         <abbr class="cit-jnl-abbrev">Fort Worth, TX</abbr>.
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <div class="cit ref-cit ref-journal no-rev-xref" id="cit-611459v2.29">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Potapov</span>
+          <span class="cit-name-given-names">P</span>
+         </span>
+         <span class="cit-etal">et al.</span>
+         <span class="cit-pub-date">2008</span>. 
+         <span class="cit-article-title">Mapping the World’s Intact Forest Landscapes by Remote Sensing</span>. 
+         <abbr class="cit-jnl-abbrev">Ecology and Society</abbr>
+         <span class="cit-vol">13</span>.
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-30-1" title="View reference in text" id="ref-30">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.30" data-doi="10.1186/1471-2105-12-77">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Robin</span>
+          <span class="cit-name-given-names">X</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Turck</span>
+          <span class="cit-name-given-names">N</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Hainard</span>
+          <span class="cit-name-given-names">A</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Tiberti</span>
+          <span class="cit-name-given-names">N</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Lisacek</span>
+          <span class="cit-name-given-names">F</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Sanchez</span>
+          <span class="cit-name-given-names">J-C</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Muller</span>
+          <span class="cit-name-given-names">M.</span>
+         </span>
+         <span class="cit-pub-date">2011</span>. 
+         <span class="cit-article-title">pROC: an open-source package for R and S+ to analyze and compare ROC curves</span>. 
+         <abbr class="cit-jnl-abbrev">BMC Bioinformatics</abbr>
+         <span class="cit-vol">12</span>:
+         <span class="cit-fpage">77</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DBMC%2Bbioinformatics%2B%255Belectronic%2Bresource%255D%26rft.stitle%253DBMC%2BBioinformatics%26rft.aulast%253DRobin%26rft.auinit1%253DX.%26rft.volume%253D12%26rft.spage%253D77%26rft.epage%253D77%26rft.atitle%253DpROC%253A%2Ban%2Bopen-source%2Bpackage%2Bfor%2BR%2Band%2BS%252B%2Bto%2Banalyze%2Band%2Bcompare%2BROC%2Bcurves.%26rft_id%253Dinfo%253Adoi%252F10.1186%252F1471-2105-12-77%26rft_id%253Dinfo%253Apmid%252F21414208%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1186/1471-2105-12-77&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=21414208&amp;;link_type=MED&amp;;atom=%2Fbiorxiv%2Fearly%2F2020%2F01%2F15%2F611459.atom" class="cit-ref-sprinkles cit-ref-sprinkles-medline">
+         <span>PubMed</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-31-1" title="View reference in text" id="ref-31">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.31">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Rüetschi</span>
+          <span class="cit-name-given-names">M</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Small</span>
+          <span class="cit-name-given-names">D</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Waser</span>
+          <span class="cit-name-given-names">L</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Rüetschi</span>
+          <span class="cit-name-given-names">M</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Small</span>
+          <span class="cit-name-given-names">D</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Waser</span>
+          <span class="cit-name-given-names">LT</span>
+         </span>. 
+         <span class="cit-pub-date">2019</span>. 
+         <span class="cit-article-title">Rapid Detection of Windthrows Using Sentinel-1 C-Band SAR Data</span>. 
+         <abbr class="cit-jnl-abbrev">Remote Sensing</abbr>
+         <span class="cit-vol">11</span>:
+         <span class="cit-fpage">115</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DRemote%2BSensing%26rft.volume%253D11%26rft.spage%253D115%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-32-1" title="View reference in text" id="ref-32">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.32" data-doi="10.1016/j.marpol.2014.02.001">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Salomon</span>
+          <span class="cit-name-given-names">M</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Markus</span>
+          <span class="cit-name-given-names">T</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Dross</span>
+          <span class="cit-name-given-names">M.</span>
+         </span>
+         <span class="cit-pub-date">2014</span>. 
+         <span class="cit-article-title">Masterstroke or paper tiger – The reform of the EU’s Common Fisheries Policy</span>. 
+         <abbr class="cit-jnl-abbrev">Marine Policy</abbr>
+         <span class="cit-vol">47</span>:
+         <span class="cit-fpage">76</span>–
+         <span class="cit-lpage">84</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DMarine%2BPolicy%26rft.volume%253D47%26rft.spage%253D76%26rft_id%253Dinfo%253Adoi%252F10.1016%252Fj.marpol.2014.02.001%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1016/j.marpol.2014.02.001&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-33-1" title="View reference in text" id="ref-33">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.33">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Sarabandi</span>
+          <span class="cit-name-given-names">P</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Yamazaki</span>
+          <span class="cit-name-given-names">F</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Matsuoka</span>
+          <span class="cit-name-given-names">M</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Kiremidjian</span>
+          <span class="cit-name-given-names">A.</span>
+         </span>
+         <span class="cit-pub-date">2004</span>. 
+         <span class="cit-article-title">Shadow detection and radiometric restoration in satellite high resolution images</span>. Pages 
+         <span class="cit-fpage">3744</span>–
+         <span class="cit-lpage">3747</span>
+         <abbr class="cit-jnl-abbrev">International Geoscience and Remote Sensing Symposium (IGARSS)</abbr>.
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-34-1" title="View reference in text" id="ref-34">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.34" data-doi="10.1038/s41586-018-0411-9">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Song</span>
+          <span class="cit-name-given-names">X-P</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Hansen</span>
+          <span class="cit-name-given-names">MC</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Stehman</span>
+          <span class="cit-name-given-names">S V.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Potapov</span>
+          <span class="cit-name-given-names">P V.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Tyukavina</span>
+          <span class="cit-name-given-names">A</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Vermote</span>
+          <span class="cit-name-given-names">EF</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Townshend</span>
+          <span class="cit-name-given-names">JR</span>
+         </span>. 
+         <span class="cit-pub-date">2018</span>. 
+         <span class="cit-article-title">Global land change from 1982 to 2016</span>. 
+         <abbr class="cit-jnl-abbrev">Nature</abbr>
+         <span class="cit-vol">560</span>:
+         <span class="cit-fpage">639</span>–
+         <span class="cit-lpage">643</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DNature%26rft.volume%253D560%26rft.spage%253D639%26rft_id%253Dinfo%253Adoi%252F10.1038%252Fs41586-018-0411-9%26rft_id%253Dinfo%253Apmid%252F30089903%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1038/s41586-018-0411-9&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=30089903&amp;;link_type=MED&amp;;atom=%2Fbiorxiv%2Fearly%2F2020%2F01%2F15%2F611459.atom" class="cit-ref-sprinkles cit-ref-sprinkles-medline">
+         <span>PubMed</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <div class="cit ref-cit ref-journal no-rev-xref" id="cit-611459v2.35">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth cit-collab">R Core Development Team</span>. 
+         <span class="cit-pub-date">2019</span>. 
+         <abbr class="cit-jnl-abbrev">R: a languange and environmental for statistical computing. Version 3.5.1. R Foundation for Statistical Computing, Vienna, Austria</abbr>.
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-36-1" title="View reference in text" id="ref-36">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.36">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Teillet</span>
+          <span class="cit-name-given-names">PM</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Guindon</span>
+          <span class="cit-name-given-names">B</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Goodenough</span>
+          <span class="cit-name-given-names">DG</span>
+         </span>. 
+         <span class="cit-pub-date">1982</span>. 
+         <span class="cit-article-title">On the Slope-Aspect Correction of Multispectral Scanner Data</span>. 
+         <abbr class="cit-jnl-abbrev">Canadian Journal of Remote Sensing</abbr>
+         <span class="cit-vol">8</span>:
+         <span class="cit-fpage">84</span>–
+         <span class="cit-lpage">106</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DCanadian%2BJournal%2Bof%2BRemote%2BSensing%26rft.volume%253D8%26rft.spage%253D84%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-37-1" title="View reference in text" id="ref-37">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.37" data-doi="10.1093/biosci/bix086">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Trouwborst</span>
+          <span class="cit-name-given-names">A</span>
+         </span>
+         <span class="cit-etal">et al.</span>
+         <span class="cit-pub-date">2017</span>. 
+         <span class="cit-article-title">International Wildlife Law: Understanding and Enhancing Its Role in Conservation</span>. 
+         <abbr class="cit-jnl-abbrev">BioScience</abbr>
+         <span class="cit-vol">67</span>:
+         <span class="cit-fpage">784</span>–
+         <span class="cit-lpage">790</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DBioScience%26rft.volume%253D67%26rft.spage%253D784%26rft_id%253Dinfo%253Adoi%252F10.1093%252Fbiosci%252Fbix086%26rft_id%253Dinfo%253Apmid%252F29599544%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1093/biosci/bix086&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=29599544&amp;;link_type=MED&amp;;atom=%2Fbiorxiv%2Fearly%2F2020%2F01%2F15%2F611459.atom" class="cit-ref-sprinkles cit-ref-sprinkles-medline">
+         <span>PubMed</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-38-1" title="View reference in text" id="ref-38">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.38">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Turner</span>
+          <span class="cit-name-given-names">W</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Spector</span>
+          <span class="cit-name-given-names">S</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Gardiner</span>
+          <span class="cit-name-given-names">N</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Fladeland</span>
+          <span class="cit-name-given-names">M</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Sterling</span>
+          <span class="cit-name-given-names">E</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Steininger</span>
+          <span class="cit-name-given-names">M.</span>
+         </span>
+         <span class="cit-pub-date">2003</span>. 
+         <span class="cit-article-title">Remote sensing for biodiversity science and conservation</span>. 
+         <abbr class="cit-jnl-abbrev">TRENDS in Ecology and Evolution</abbr>
+         <span class="cit-vol">18</span>:
+         <span class="cit-fpage">306</span>–
+         <span class="cit-lpage">314</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DTRENDS%2Bin%2BEcology%2Band%2BEvolution%26rft.volume%253D18%26rft.spage%253D306%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-39-1" title="View reference in text" id="ref-39">↵</a>
+      <div class="cit ref-cit ref-web" id="cit-611459v2.39">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth cit-collab">UN Environment World Conservation Monitoring Centre</span>, 
+         <span class="cit-article-title">International Union for Conservation of Nature</span>. 
+         <span class="cit-pub-date">2017</span>. 
+         <span class="cit-source">World Database on Protected Areas</span>. Available from 
+         <a href="http://www.protectedplanet.net">http://www.protectedplanet.net</a>
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-40-1" title="View reference in text" id="ref-40">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.40">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth cit-collab">United States Congress</span>. 
+         <span class="cit-pub-date">1978</span>. 
+         <abbr class="cit-jnl-abbrev">The Endangered Species Act Amendments of</abbr> 1978.
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-41-1" title="View reference in text" id="ref-41">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.41" data-doi="10.1073/pnas.1221370110">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Waldron</span>
+          <span class="cit-name-given-names">A</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Mooers</span>
+          <span class="cit-name-given-names">AO</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Miller</span>
+          <span class="cit-name-given-names">DC</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Nibbelink</span>
+          <span class="cit-name-given-names">N</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Redding</span>
+          <span class="cit-name-given-names">D</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Kuhn</span>
+          <span class="cit-name-given-names">TS</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Timmons Roberts</span>
+          <span class="cit-name-given-names">J</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Gittleman</span>
+          <span class="cit-name-given-names">JL</span>
+         </span>. 
+         <span class="cit-pub-date">2013</span>. 
+         <span class="cit-article-title">Targeting global conservation funding to limit immediate biodiversity declines</span>. 
+         <abbr class="cit-jnl-abbrev">Proceedings of the National Academy of Science</abbr>
+         <span class="cit-vol">110</span>:
+         <span class="cit-fpage">12144</span>–
+         <span class="cit-lpage">12148</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DProceedings%2Bof%2Bthe%2BNational%2BAcademy%2Bof%2BScience%26rft_id%253Dinfo%253Adoi%252F10.1073%252Fpnas.1221370110%26rft_id%253Dinfo%253Apmid%252F23818619%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/ijlink/YTozOntzOjQ6InBhdGgiO3M6MTQ6Ii9sb29rdXAvaWpsaW5rIjtzOjU6InF1ZXJ5IjthOjQ6e3M6ODoibGlua1R5cGUiO3M6NDoiQUJTVCI7czoxMToiam91cm5hbENvZGUiO3M6NDoicG5hcyI7czo1OiJyZXNpZCI7czoxMjoiMTEwLzI5LzEyMTQ0IjtzOjQ6ImF0b20iO3M6Mzc6Ii9iaW9yeGl2L2Vhcmx5LzIwMjAvMDEvMTUvNjExNDU5LmF0b20iO31zOjg6ImZyYWdtZW50IjtzOjA6IiI7fQ==" class="cit-ref-sprinkles cit-ref-sprinkles-ijlink">
+         <span>
+          <span class="cit-reflinks-abstract">Abstract</span>
+          <span class="cit-sep cit-reflinks-variant-name-sep">/</span>
+          <span class="cit-reflinks-full-text">
+           <span class="free-full-text">FREE </span>Full Text
+          </span>
+         </span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-42-1" title="View reference in text" id="ref-42">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.42" data-doi="10.1073/pnas.0901639106">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Wiens</span>
+          <span class="cit-name-given-names">JA</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Stralberg</span>
+          <span class="cit-name-given-names">D</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Jongsomjit</span>
+          <span class="cit-name-given-names">D</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Howell</span>
+          <span class="cit-name-given-names">CA</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Snyder</span>
+          <span class="cit-name-given-names">MA</span>
+         </span>. 
+         <span class="cit-pub-date">2009</span>. 
+         <span class="cit-article-title">Niches, models, and climate change: assessing the assumptions and uncertainties</span>. 
+         <abbr class="cit-jnl-abbrev">Proceedings of the National Academy of Sciences of the United States of America</abbr>
+         <span class="cit-vol">106</span>:
+         <span class="cit-fpage">19729</span>–
+         <span class="cit-lpage">36</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DProceedings%2Bof%2Bthe%2BNational%2BAcademy%2Bof%2BSciences%2Bof%2Bthe%2BUnited%2BStates%2Bof%2BAmerica%26rft_id%253Dinfo%253Adoi%252F10.1073%252Fpnas.0901639106%26rft_id%253Dinfo%253Apmid%252F19822750%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/ijlink/YTozOntzOjQ6InBhdGgiO3M6MTQ6Ii9sb29rdXAvaWpsaW5rIjtzOjU6InF1ZXJ5IjthOjQ6e3M6ODoibGlua1R5cGUiO3M6NDoiQUJTVCI7czoxMToiam91cm5hbENvZGUiO3M6NDoicG5hcyI7czo1OiJyZXNpZCI7czoyMjoiMTA2L1N1cHBsZW1lbnRfMi8xOTcyOSI7czo0OiJhdG9tIjtzOjM3OiIvYmlvcnhpdi9lYXJseS8yMDIwLzAxLzE1LzYxMTQ1OS5hdG9tIjt9czo4OiJmcmFnbWVudCI7czowOiIiO30=" class="cit-ref-sprinkles cit-ref-sprinkles-ijlink">
+         <span>
+          <span class="cit-reflinks-abstract">Abstract</span>
+          <span class="cit-sep cit-reflinks-variant-name-sep">/</span>
+          <span class="cit-reflinks-full-text">
+           <span class="free-full-text">FREE </span>Full Text
+          </span>
+         </span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-43-1" title="View reference in text" id="ref-43">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.43" data-doi="10.1016/j.biocon.2014.12.006">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Willis</span>
+          <span class="cit-name-given-names">KS</span>
+         </span>. 
+         <span class="cit-pub-date">2015</span>. 
+         <span class="cit-article-title">Remote sensing change detection for ecological monitoring in United States protected areas</span>. 
+         <abbr class="cit-jnl-abbrev">Biological Conservation</abbr>
+         <span class="cit-vol">182</span>. 
+         <span class="cit-fpage">233</span>–
+         <span class="cit-lpage">244</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DBiological%2BConservation%26rft.volume%253D182%26rft.spage%253D233%26rft_id%253Dinfo%253Adoi%252F10.1016%252Fj.biocon.2014.12.006%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1016/j.biocon.2014.12.006&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-44-1" title="View reference in text" id="ref-44">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.44">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Xu</span>
+          <span class="cit-name-given-names">H.</span>
+         </span>
+         <span class="cit-pub-date">2006</span>. 
+         <span class="cit-article-title">Modification of normalised difference water index (NDWI) to enhance open water features in remotely sensed imagery</span>. 
+         <abbr class="cit-jnl-abbrev">International Journal of Remote Sensing</abbr>
+         <span class="cit-vol">27</span>:
+         <span class="cit-fpage">3025</span>–
+         <span class="cit-lpage">3033</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DInternational%2BJournal%2Bof%2BRemote%2BSensing%26rft.volume%253D27%26rft.spage%253D3025%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-45-1" title="View reference in text" id="ref-45">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.45">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Zhu</span>
+          <span class="cit-name-given-names">Z</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Wang</span>
+          <span class="cit-name-given-names">S</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Woodcock</span>
+          <span class="cit-name-given-names">CE</span>
+         </span>. 
+         <span class="cit-pub-date">2015</span>. 
+         <span class="cit-article-title">Improvement and expansion of the Fmask algorithm: Cloud, cloud shadow, and snow detection for Landsats 4-7, 8, and Sentinel 2 images</span>. 
+         <abbr class="cit-jnl-abbrev">Remote Sensing of Environment</abbr>
+         <span class="cit-vol">159</span>:
+         <span class="cit-fpage">266</span>–
+         <span class="cit-lpage">277</span>.
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DRemote%2BSensing%2Bof%2BEnvironment%26rft.volume%253D159%26rft.spage%253D266%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label ref-label-empty"/>
+      <a class="rev-xref-ref" href="#xref-ref-46-1" title="View reference in text" id="ref-46">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-611459v2.46">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Zhu</span>
+          <span class="cit-name-given-names">Z</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Woodcock</span>
+          <span class="cit-name-given-names">CE</span>
+         </span>. 
+         <span class="cit-pub-date">2012</span>. 
+         <span class="cit-article-title">Object-based cloud and cloud shadow detection in Landsat imagery</span>. 
+         <abbr class="cit-jnl-abbrev">Remote Sensing of Environment</abbr>:
+         <span class="cit-fpage">83</span>–
+         <span class="cit-lpage">94</span>.
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+    </ol>
+   </div>
+   <span class="highwire-journal-article-marker-end"/>
+  </div>
+ </body>
+</html>

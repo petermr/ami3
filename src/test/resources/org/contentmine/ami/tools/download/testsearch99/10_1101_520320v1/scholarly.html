@@ -1,0 +1,1541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+ <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book#"> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=yes"/>
+  <meta name="article_thumbnail" content="https://www.biorxiv.org/content/biorxiv/early/2019/01/15/520320/embed/graphic-3.gif"/>
+  <meta name="type" content="article"/>
+  <meta name="category" content="article"/>
+  <meta name="HW.identifier" content="/biorxiv/early/2019/01/15/520320.atom"/>
+  <meta name="HW.pisa" content="biorxiv;520320v1"/>
+  <meta name="DC.Format" content="text/html"/>
+  <meta name="DC.Language" content="en"/>
+  <meta name="DC.Title" content="Biotic interactions and climate in species distribution modelling"/>
+  <meta name="DC.Identifier" content="10.1101/520320"/>
+  <meta name="DC.Date" content="2019-01-15"/>
+  <meta name="DC.Publisher" content="Cold Spring Harbor Laboratory"/>
+  <meta name="DC.Rights" content="© 2019, Posted by Cold Spring Harbor Laboratory. The copyright holder for this pre-print is the author. All rights reserved. The material may not be redistributed, re-used or adapted without the author's permission."/>
+  <meta name="DC.AccessRights" content="restricted"/>
+  <meta name="DC.Description" content="Species have preferred environmental niches [1][1] and their geographical distributions respond to global climate change [2][2]. Predicting range shifts under climate change has profound implications for conservation of biodiversity [3][3], provision of ecosystem services, and in the management of invasive species [4][4]. Species distribution modelling (SDM) has largely focussed on climate variations, but biotic interactions, such as predation and competition, can alter potential distributions [5][5],[6][6] and affect migration rates [7][7]. However, a lack of data on biotic interactions has restricted consideration of these factors for many species [1][1]. Here, we compare the power of biotic and climatic factors as predictors of global distributions of hundreds of crop pests and pathogens (CPPs), for which host preferences are known. We show that host availability is a more important predictor of endobiotic pathogen distributions (fungi, oomycetes, bacteria, viruses and nematodes) than of epibiotic pest distributions (insect herbivores). Conversely, climatic variables are better predictors of epibiotic pest distributions. These results are robust to statistical controls for varying observational capacity among countries. Our findings demonstrate that life history affects global scale species distributions and that SDM should incorporate biotic interactions as well as climate. [1]: #ref-1 [2]: #ref-2 [3]: #ref-3 [4]: #ref-4 [5]: #ref-5 [6]: #ref-6 [7]: #ref-7"/>
+  <meta name="DC.Contributor" content="Daniel P. Bebber"/>
+  <meta name="DC.Contributor" content="Sarah J. Gurr"/>
+  <meta name="article:published_time" content="2019-01-15"/>
+  <meta name="article:section" content="New Results"/>
+  <meta name="citation_title" content="Biotic interactions and climate in species distribution modelling"/>
+  <meta name="citation_abstract" lang="en" content="&lt;;h3&gt;;Summary&lt;;/h3&gt;; &lt;;p&gt;;Species have preferred environmental niches &lt;;sup&gt;;1&lt;;/sup&gt;; and their geographical distributions respond to global climate change &lt;;sup&gt;;2&lt;;/sup&gt;;. Predicting range shifts under climate change has profound implications for conservation of biodiversity &lt;;sup&gt;;3&lt;;/sup&gt;;, provision of ecosystem services, and in the management of invasive species &lt;;sup&gt;;4&lt;;/sup&gt;;. Species distribution modelling (SDM) has largely focussed on climate variations, but biotic interactions, such as predation and competition, can alter potential distributions &lt;;sup&gt;;5,6&lt;;/sup&gt;; and affect migration rates &lt;;sup&gt;;7&lt;;/sup&gt;;. However, a lack of data on biotic interactions has restricted consideration of these factors for many species &lt;;sup&gt;;1&lt;;/sup&gt;;. Here, we compare the power of biotic and climatic factors as predictors of global distributions of hundreds of crop pests and pathogens (CPPs), for which host preferences are known. We show that host availability is a more important predictor of endobiotic pathogen distributions (fungi, oomycetes, bacteria, viruses and nematodes) than of epibiotic pest distributions (insect herbivores). Conversely, climatic variables are better predictors of epibiotic pest distributions. These results are robust to statistical controls for varying observational capacity among countries. Our findings demonstrate that life history affects global scale species distributions and that SDM should incorporate biotic interactions as well as climate.&lt;;/p&gt;;"/>
+  <meta name="citation_journal_title" content="bioRxiv"/>
+  <meta name="citation_publisher" content="Cold Spring Harbor Laboratory"/>
+  <meta name="citation_publication_date" content="2019/01/01"/>
+  <meta name="citation_mjid" content="biorxiv;520320v1"/>
+  <meta name="citation_id" content="520320v1"/>
+  <meta name="citation_public_url" content="https://www.biorxiv.org/content/10.1101/520320v1"/>
+  <meta name="citation_abstract_html_url" content="https://www.biorxiv.org/content/10.1101/520320v1.abstract"/>
+  <meta name="citation_full_html_url" content="https://www.biorxiv.org/content/10.1101/520320v1.full"/>
+  <meta name="citation_pdf_url" content="https://www.biorxiv.org/content/biorxiv/early/2019/01/15/520320.full.pdf"/>
+  <meta name="citation_doi" content="10.1101/520320"/>
+  <meta name="citation_num_pages" content="19"/>
+  <meta name="citation_article_type" content="Article"/>
+  <meta name="citation_section" content="New Results"/>
+  <meta name="citation_firstpage" content="520320"/>
+  <meta name="citation_author" content="Daniel P. Bebber"/>
+  <meta name="citation_author_institution" content="Department of Biosciences, University of Exeter"/>
+  <meta name="citation_author_email" content="D.Bebber@exeter.ac.uk"/>
+  <meta name="citation_author" content="Sarah J. Gurr"/>
+  <meta name="citation_author_orcid" content="http://orcid.org/0000-0002-4821-0635"/>
+  <meta name="citation_reference" content="Soberón, J. &amp;; Nakamura, M. Niches and distributional areas: concepts, methods, and assumptions. Proc. Natl. Acad. Sci. 106, 19644–19650 (2009)."/>
+  <meta name="citation_reference" content="Chen, I.-C., Hill, J. K., Ohlemüller, R., Roy, D. B. &amp;; Thomas, C. D. Rapid range shifts of species associated with high levels of climate warming. Science 333, 1024–1026 (2011)."/>
+  <meta name="citation_reference" content="Hannah, L. et al. Protected area needs in a changing climate. Front. Ecol. Environ. 5, 131–138 (2007)."/>
+  <meta name="citation_reference" content="Bebber, D. P., Ramotowski, M. A. T. &amp;; Gurr, S. J. Crop pests and pathogens move polewards in a warming world. Nat. Clim. Change 3, 985–988 (2013)."/>
+  <meta name="citation_reference" content="Araújo, M. B. &amp;; Luoto, M. The importance of biotic interactions for modelling species distributions under climate change. Glob. Ecol. Biogeogr. 16, 743–753 (2007)."/>
+  <meta name="citation_reference" content="Soberón, J. Grinnellian and Eltonian niches and geographic distributions of species. Ecol. Lett. 10, 1115–1123 (2007)."/>
+  <meta name="citation_reference" content="Svenning, J.-C. et al. The influence of interspecific interactions on species range expansion rates. Ecography 37, 1198–1209 (2014)."/>
+  <meta name="citation_reference" content="Dormann, C. F. et al. Correlation and process in species distribution models: bridging a dichotomy. J. Biogeogr. 39, 2119–2131 (2012)."/>
+  <meta name="citation_reference" content="Kriticos, D. J., Le Maitre, D. C. &amp;; Webber, B. L. Essential elements of discourse for advancing the modelling of species’ current and potential distributions. J. Biogeogr. 40, 608–611 (2013)."/>
+  <meta name="citation_reference" content="Schymanski, S. J. et al. Process, correlation and parameter fitting in species distribution models: a response to Kriticos et al. J. Biogeogr. 40, 612–613 (2013)."/>
+  <meta name="citation_reference" content="Bebber, D. P., Holmes, T. &amp;; Gurr, S. J. The global spread of crop pests and pathogens. Glob. Ecol. Biogeogr. 23, 1398–1407 (2014)."/>
+  <meta name="citation_reference" content="Devictor, V. et al. Differences in the climatic debts of birds and butterflies at a continental scale. Nat. Clim Change 2, 121–124 (2012)."/>
+  <meta name="citation_reference" content="Bebber, D. P., Holmes, T., Smith, D. &amp;; Gurr, S. J. Economic and physical determinants of the global distributions of crop pests and pathogens. New Phytol. 202, 901–910 (2014)."/>
+  <meta name="citation_reference" content="Portmann, F. T., Siebert, S. &amp;; Döll, P. MIRCA2000—Global monthly irrigated and rainfed crop areas around the year 2000: A new high-resolution data set for agricultural and hydrological modeling. Glob. Biogeochem. Cycles 24, 1–24 (2010)."/>
+  <meta name="citation_reference" content="Bernard, F., Sache, I., Suffert, F. &amp;; Chelle, M. The development of a foliar fungal pathogen does react to leaf temperature! New Phytol. 198, 232–240 (2013)."/>
+  <meta name="citation_reference" content="Sparks, A. H., Forbes, G. A., Hijmans, R. J. &amp;; Garrett, K. A. Climate change may have limited effect on global risk of potato late blight. Glob. Change Biol. 20, 3621–3631 (2014)."/>
+  <meta name="citation_reference" content="Sutherst, R. W. Pest species distribution modelling: origins and lessons from history. Biol. Invasions 16, 239–256 (2014)."/>
+  <meta name="citation_reference" content="Berzitis, E. A., Minigan, J. N., Hallett, R. H. &amp;; Newman, J. A. Climate and host plant availability impact the future distribution of the bean leaf beetle (Cerotoma trifurcata). Glob. Change Biol. n/a—n/a (2014). doi:10.1111/gcb.12557"/>
+  <meta name="citation_reference" content="Zhan, J. &amp;; McDonald, B. A. Thermal adaptation in the fungal pathogen Mycosphaerella graminicola. Mol. Ecol. 20, 1689–1701 (2011)."/>
+  <meta name="citation_reference" content="Gardner, B. R., Blad, B. L. &amp;; Watts, D. G. Plant and air temperatures in differentially-irrigated corn. Agric. Meteorol. 25, 207–217 (1981)."/>
+  <meta name="citation_reference" content="Booth, T. H., Nix, H. A., Busby, J. R. &amp;; Hutchinson, M. F. bioclim: the first species distribution modelling package, its early applications and relevance to most current MaxEnt studies. Divers. Distrib. 20, 1–9 (2014)."/>
+  <meta name="citation_reference" content="Kriticos, D. J. et al. CliMond: global high-resolution historical and future scenario climate surfaces for bioclimatic modelling. Methods Ecol. Evol. 3, 53–64 (2012)."/>
+  <meta name="citation_reference" content="Marçais, B., Dupuis, F. &amp;; Desprez-Loustau, M. L. Modelling the influence of winter frosts on the development of the stem canker of red oak, caused by Phytophthora cinnamomi. Ann. Sci. For. 53, 369–382 (1996)."/>
+  <meta name="citation_reference" content="Jones, R. A. C. Plant virus emergence and evolution: Origins, new encounter scenarios, factors driving emergence, effects of changing world conditions, and prospects for control. Virus Res. 141, 113–130 (2009)."/>
+  <meta name="citation_reference" content="Harrington, R. et al. Environmental change and the phenology of European aphids. Glob. Change Biol. 13, 1550–1564 (2007)."/>
+  <meta name="citation_reference" content="Bebber, D. P., Holmes, T. &amp;; Gurr, S. J. The global spread of crop pests and pathogens. Glob. Ecol. Biogeogr. n/a—n/a (2014). doi:10.1111/geb.12214"/>
+  <meta name="citation_reference" content="Thomson, L. J., Macfadyen, S. &amp;; Hoffmann, A. A. Predicting the effects of climate change on natural enemies of agricultural pests. Biol. Control 52, 296–306 (2010)."/>
+  <meta name="citation_reference" content="Bregaglio, S., Donatelli, M. &amp;; Confalonieri, R. Fungal infections of rice, wheat, and grape in Europe in 2030–2050. Agron. Sustain. Dev. 33, 767–776 (2013)."/>
+  <meta name="citation_reference" content="Elith, J., Kearney, M. &amp;; Phillips, S. The art of modelling range-shifting species. Methods Ecol. Evol. 1, 330–342 (2010)."/>
+  <meta name="citation_reference" content="Hijmans, R. J., Cameron, S. E., Parra, J. L., Jones, P. G. &amp;; Jarvis, A. Very high resolution interpolated climate surfaces for global land areas. Int. J. Climatol. 25, 1965–1978 (2005)."/>
+  <meta name="citation_reference" content="Wood, S. Generalized Additive Models: An Introduction with R. (CRC Press, 2006)."/>
+  <meta name="twitter:title" content="Biotic interactions and climate in species distribution modelling"/>
+  <meta name="twitter:site" content="@biorxivpreprint"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:image" content="https://www.biorxiv.org/sites/default/files/images/biorxiv_logo_homepage7-5-small.png"/>
+  <meta name="twitter:description" content="Species have preferred environmental niches [1][1] and their geographical distributions respond to global climate change [2][2]. Predicting range shifts under climate change has profound implications for conservation of biodiversity [3][3], provision of ecosystem services, and in the management of invasive species [4][4]. Species distribution modelling (SDM) has largely focussed on climate variations, but biotic interactions, such as predation and competition, can alter potential distributions [5][5],[6][6] and affect migration rates [7][7]. However, a lack of data on biotic interactions has restricted consideration of these factors for many species [1][1]. Here, we compare the power of biotic and climatic factors as predictors of global distributions of hundreds of crop pests and pathogens (CPPs), for which host preferences are known. We show that host availability is a more important predictor of endobiotic pathogen distributions (fungi, oomycetes, bacteria, viruses and nematodes) than of epibiotic pest distributions (insect herbivores). Conversely, climatic variables are better predictors of epibiotic pest distributions. These results are robust to statistical controls for varying observational capacity among countries. Our findings demonstrate that life history affects global scale species distributions and that SDM should incorporate biotic interactions as well as climate. [1]: #ref-1 [2]: #ref-2 [3]: #ref-3 [4]: #ref-4 [5]: #ref-5 [6]: #ref-6 [7]: #ref-7"/>
+  <meta name="og-title" property="og:title" content="Biotic interactions and climate in species distribution modelling"/>
+  <meta name="og-url" property="og:url" content="https://www.biorxiv.org/content/10.1101/520320v1"/>
+  <meta name="og-site-name" property="og:site_name" content="bioRxiv"/>
+  <meta name="og-description" property="og:description" content="Species have preferred environmental niches [1][1] and their geographical distributions respond to global climate change [2][2]. Predicting range shifts under climate change has profound implications for conservation of biodiversity [3][3], provision of ecosystem services, and in the management of invasive species [4][4]. Species distribution modelling (SDM) has largely focussed on climate variations, but biotic interactions, such as predation and competition, can alter potential distributions [5][5],[6][6] and affect migration rates [7][7]. However, a lack of data on biotic interactions has restricted consideration of these factors for many species [1][1]. Here, we compare the power of biotic and climatic factors as predictors of global distributions of hundreds of crop pests and pathogens (CPPs), for which host preferences are known. We show that host availability is a more important predictor of endobiotic pathogen distributions (fungi, oomycetes, bacteria, viruses and nematodes) than of epibiotic pest distributions (insect herbivores). Conversely, climatic variables are better predictors of epibiotic pest distributions. These results are robust to statistical controls for varying observational capacity among countries. Our findings demonstrate that life history affects global scale species distributions and that SDM should incorporate biotic interactions as well as climate. [1]: #ref-1 [2]: #ref-2 [3]: #ref-3 [4]: #ref-4 [5]: #ref-5 [6]: #ref-6 [7]: #ref-7"/>
+  <meta name="og-type" property="og:type" content="article"/>
+  <meta name="og-image" property="og:image" content="https://www.biorxiv.org/sites/default/files/images/biorxiv_logo_homepage7-5-small.png"/>
+  <meta name="citation_date" content="2019-01-15"/> 
+  <meta name="description" content="bioRxiv - the preprint server for biology, operated by Cold Spring Harbor Laboratory, a research and educational institution"/>
+  <meta name="generator" content="Drupal 7 (http://drupal.org)"/> 
+  <title>Biotic interactions and climate in species distribution modelling | bioRxiv</title> 
+ </head>
+ <body class="html not-front not-logged-in page-node page-node- page-node-153248 node-type-highwire-article context-content hw-default-jcode-biorxiv hw-article-type-article hw-article-category-new-results"> 
+  <div class="article fulltext-view ">
+   <span class="highwire-journal-article-marker-start"/>
+   <div class="section abstract" id="abstract-1">
+    <h2 class="">Summary</h2>
+    <p id="p-2">Species have preferred environmental niches 
+     <sup>
+      <a id="xref-ref-1-1" class="xref-bibr" href="#ref-1">1</a>
+     </sup> and their geographical distributions respond to global climate change 
+     <sup>
+      <a id="xref-ref-2-1" class="xref-bibr" href="#ref-2">2</a>
+     </sup>. Predicting range shifts under climate change has profound implications for conservation of biodiversity 
+     <sup>
+      <a id="xref-ref-3-1" class="xref-bibr" href="#ref-3">3</a>
+     </sup>, provision of ecosystem services, and in the management of invasive species 
+     <sup>
+      <a id="xref-ref-4-1" class="xref-bibr" href="#ref-4">4</a>
+     </sup>. Species distribution modelling (SDM) has largely focussed on climate variations, but biotic interactions, such as predation and competition, can alter potential distributions 
+     <sup>
+      <a id="xref-ref-5-1" class="xref-bibr" href="#ref-5">5</a>,
+      <a id="xref-ref-6-1" class="xref-bibr" href="#ref-6">6</a>
+     </sup> and affect migration rates 
+     <sup>
+      <a id="xref-ref-7-1" class="xref-bibr" href="#ref-7">7</a>
+     </sup>. However, a lack of data on biotic interactions has restricted consideration of these factors for many species 
+     <sup>
+      <a id="xref-ref-1-2" class="xref-bibr" href="#ref-1">1</a>
+     </sup>. Here, we compare the power of biotic and climatic factors as predictors of global distributions of hundreds of crop pests and pathogens (CPPs), for which host preferences are known. We show that host availability is a more important predictor of endobiotic pathogen distributions (fungi, oomycetes, bacteria, viruses and nematodes) than of epibiotic pest distributions (insect herbivores). Conversely, climatic variables are better predictors of epibiotic pest distributions. These results are robust to statistical controls for varying observational capacity among countries. Our findings demonstrate that life history affects global scale species distributions and that SDM should incorporate biotic interactions as well as climate.
+    </p>
+   </div>
+   <p id="p-3">The strong influence of climate on species distributions has motivated the field of Species Distribution Modelling (SDM)
+    <sup>
+     <a id="xref-ref-8-1" class="xref-bibr" href="#ref-8">8</a>
+    </sup>. In SDM, species’ climatic preferences and tolerances, derived by experiment or inferred from observed distributions, are used to project how the location of suitable habitat may change in the future 
+    <sup>
+     <a id="xref-ref-8-2" class="xref-bibr" href="#ref-8">8</a>
+    </sup>. While the methods and approaches for climate-driven SDM have invoked some controversy 
+    <sup>
+     <a id="xref-ref-9-1" class="xref-bibr" href="#ref-9">9</a>,
+     <a id="xref-ref-10-1" class="xref-bibr" href="#ref-10">10</a>
+    </sup>, there has been little discussion of the other factors that determine where species may be found 
+    <sup>
+     <a id="xref-ref-1-3" class="xref-bibr" href="#ref-1">1</a>,
+     <a id="xref-ref-6-2" class="xref-bibr" href="#ref-6">6</a>
+    </sup>. Among these are various biotic interactions, such as the availability of food or interference from competitors 
+    <sup>
+     <a id="xref-ref-1-4" class="xref-bibr" href="#ref-1">1</a>,
+     <a id="xref-ref-5-2" class="xref-bibr" href="#ref-5">5</a>
+    </sup>, and the ability of species to reach a suitable habitat - illustrated by the rapid global redistribution of species by human activities in recent times 
+    <sup>
+     <a id="xref-ref-11-1" class="xref-bibr" href="#ref-11">11</a>
+    </sup>.
+   </p>
+   <p id="p-4">The importance of biotic interactions and dispersal in determining species distributions has been distilled in the Biotic-Abiotic-Migration (BAM) framework
+    <sup>
+     <a id="xref-ref-1-5" class="xref-bibr" href="#ref-1">1</a>,
+     <a id="xref-ref-6-3" class="xref-bibr" href="#ref-6">6</a>
+    </sup>. Species dispersal limitation has received considerable attention, for example, certain species seem unable to keep up with the rate of climatic change 
+    <sup>
+     <a id="xref-ref-12-1" class="xref-bibr" href="#ref-12">12</a>
+    </sup>. In contrast, the role of biological factors in modifying distributions is poorly understood, because the complex network of interactions that could influence species distribution is largely unknown 
+    <sup>
+     <a id="xref-ref-1-6" class="xref-bibr" href="#ref-1">1</a>
+    </sup>. While examples of the roles that biotic factors can play in moderating migration rates, and thus non-equilibrium distributions, are beginning to accumulate 
+    <sup>
+     <a id="xref-ref-7-2" class="xref-bibr" href="#ref-7">7</a>
+    </sup>, there remains a lack of synthesis of the general patterns and principals governing the importance of biological interactions in SDM. Soberon and Nakamura 
+    <sup>
+     <a id="xref-ref-1-7" class="xref-bibr" href="#ref-1">1</a>
+    </sup> state that “Without a much larger empirical database about such [biotic] factors, the relative roles of [abiotic] and [biotic] factors in determining distributions would be difficult to assess”.
+   </p>
+   <p id="p-5">Here, we address this question using the distributions of the pests and pathogens that attack agricultural crops. Crop pests and pathogens (CPPs) comprise a diverse group of organisms, including thousands of species and pathotypes of fungi, oomycetes, bacteria, viruses, nematodes, insects and other arthropods 
+    <sup>
+     <a id="xref-ref-11-2" class="xref-bibr" href="#ref-11">11</a>,
+     <a id="xref-ref-13-1" class="xref-bibr" href="#ref-13">13</a>
+    </sup>. CPPs inhabit simplified agricultural ecosystems in which intensive management practices have reduced biological diversity and physical complexity. Therefore, the network of biotic interactions in which CPPs take part is also likely to be simplified and tractable. CPPs are of great socioeconomic importance, and hence attract research interest and efforts to catalogue their biology and monitor their distributions 
+    <sup>
+     <a id="xref-ref-11-3" class="xref-bibr" href="#ref-11">11</a>
+    </sup>. The distributions of many of their host plants are also known 
+    <sup>
+     <a id="xref-ref-14-1" class="xref-bibr" href="#ref-14">14</a>
+    </sup>. CPPs may therefore allow the relative importance of abiotic and biotic variables in determining distributions to be quantified.
+   </p>
+   <p id="p-6">Simply finding that host availability and climatic variables are predictors of CPP presence would be uninformative because CPPs are likely to have similar climatic niches to their hosts, and therefore the two predictors will be correlated. Rather, we compared the relative predictive power of abiotic and biotic variables for CPPs that are likely to differ in the strength of their biological interaction with, and dependence upon, their hosts. Invasive endobiotic pathogens such as the viruses, bacteria, oomycetes and fungi are “buffered” to some degree from the external environment by their respective hosts. Pathogen growth rates, for example, may be better described by temperatures within host plant tissues rather than by external air temperature 
+    <sup>
+     <a id="xref-ref-15-1" class="xref-bibr" href="#ref-15">15</a>
+    </sup>. Thus, their presence should be more dependent upon host distributions than are epibiotic arthropod pests, which are likely to be more directly exposed to the weather.
+   </p>
+   <p id="p-7">Generalized Additive Models (GAMs) fitted to presence/absence data explained a mean of 16.8 ± 0.3 % of the deviance using host availability, 27.8 ± 0.4 % using climatic variables, and 37.7 ± 0.5 % using both host and climate predictors. There was significant variation among CPP taxonomic groups, with biotic variables being better predictors for pathogens than for pests (
+    <a id="xref-fig-1-1" class="xref-fig" href="#F1">Fig. 1</a>). The difference D
+    <sub>diff</sub> in the fraction of deviance explained between climate (D
+    <sub>clim</sub>) and host (D
+    <sub>host</sub>) was 6.9 ± 1.5 % for pathogens, and 15.6 ± 0.9 % for pests (mixed effects model with random intercepts per taxonomic group, F
+    <sub>1,8</sub> = 17.54, p = 0.003). There was no significant influence of host number on the difference in D
+    <sub>diff</sub> between pests and pathogens (mixed effects model including log host number, F
+    <sub>1,1029</sub> = −0.49, p = 0.63).
+   </p>
+   <div id="F1" class="fig pos-float type-figure odd">
+    <div class="highwire-figure">
+     <div class="fig-inline-img-wrapper">
+      <div class="fig-inline-img">
+       <a href="https://www.biorxiv.org/content/biorxiv/early/2019/01/15/520320/F1.large.jpg?width=800&amp;;height=600&amp;;carousel=1" title="Explanatory power of GAMs. a. Deviance explained by host availability, Dhost, for each CPP category in order of mean. Pathogens are blue and pests pink. b. Deviance explained by the climate model, Dclim. c. Difference between Dclim and Dhost, Ddiff,. d. Deviance explained by all predictors combined, Dfull. Where notches in the boxes do not overlap between categories, this indicates a significant difference among at the 5% level. Box widths are proportional to the square root of sample size." class="highwire-fragment fragment-images colorbox-load" rel="gallery-fragment-images-365469874" data-figure-caption="&lt;;div class=&quot;;highwire-markup&quot;;&gt;;&lt;;div xmlns=&quot;;http://www.w3.org/1999/xhtml&quot;;&gt;;Explanatory power of GAMs. a. Deviance explained by host availability, D&lt;;sub&gt;;host&lt;;/sub&gt;;, for each CPP category in order of mean. Pathogens are blue and pests pink. b. Deviance explained by the climate model, D&lt;;sub&gt;;clim&lt;;/sub&gt;;. c. Difference between D&lt;;sub&gt;;clim&lt;;/sub&gt;; and D&lt;;sub&gt;;host&lt;;/sub&gt;;, D&lt;;sub&gt;;diff&lt;;/sub&gt;;,. d. Deviance explained by all predictors combined, D&lt;;sub&gt;;full&lt;;/sub&gt;;. Where notches in the boxes do not overlap between categories, this indicates a significant difference among at the 5% level. Box widths are proportional to the square root of sample size.&lt;;/div&gt;;&lt;;/div&gt;;" data-icon-position="" data-hide-link-title="0">
+        <span class="hw-responsive-img">
+         <img class="highwire-fragment fragment-image lazyload" alt="Fig 1." src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://www.biorxiv.org/content/biorxiv/early/2019/01/15/520320/F1.medium.gif" width="440" height="345"/>
+         <noscript>
+          <img class="highwire-fragment fragment-image" alt="Fig 1." src="https://www.biorxiv.org/content/biorxiv/early/2019/01/15/520320/F1.medium.gif" width="440" height="345"/>
+         </noscript>
+        </span>
+       </a>
+      </div>
+     </div>
+     <ul class="highwire-figure-links inline">
+      <li class="download-fig first">
+       <a href="https://www.biorxiv.org/content/biorxiv/early/2019/01/15/520320/F1.large.jpg?download=true" class="highwire-figure-link highwire-figure-link-download" title="Download Fig 1." data-icon-position="" data-hide-link-title="0">Download figure</a>
+      </li>
+      <li class="new-tab last">
+       <a href="https://www.biorxiv.org/content/biorxiv/early/2019/01/15/520320/F1.large.jpg" class="highwire-figure-link highwire-figure-link-newtab" target="_blank" data-icon-position="" data-hide-link-title="0">Open in new tab</a>
+      </li>
+     </ul>
+    </div>
+    <div class="fig-caption">
+     <span class="fig-label">Fig 1.</span>
+     <p id="p-8" class="first-child">Explanatory power of GAMs. a. Deviance explained by host availability, D
+      <sub>host</sub>, for each CPP category in order of mean. Pathogens are blue and pests pink. b. Deviance explained by the climate model, D
+      <sub>clim</sub>. c. Difference between D
+      <sub>clim</sub> and D
+      <sub>host</sub>, D
+      <sub>diff</sub>,. d. Deviance explained by all predictors combined, D
+      <sub>full</sub>. Where notches in the boxes do not overlap between categories, this indicates a significant difference among at the 5% level. Box widths are proportional to the square root of sample size.
+     </p>
+     <div class="sb-div caption-clear"/>
+    </div>
+   </div>
+   <p id="p-9">D
+    <sub>full</sub> declined with the number of host plants per CPP (
+    <a id="xref-fig-2-1" class="xref-fig" href="#F2">Fig. 2</a>; mixed effects model with random intercepts per taxonomic group, F
+    <sub>1,1028</sub> = 34.5, p &lt;; 0.001) and was greater for pests compared with pathogens (F
+    <sub>1,8</sub> = 8.0, p = 0.022), but there was no difference between pests and pathogens in the relationship to host number (F
+    <sub>1,1028</sub> = 0.022, p = 0.88). The full model explained nearly all the deviance (D
+    <sub>full</sub> &gt;; 0.95) for 75 CPPs with restricted distributions (mean of 21.1 presences). Similar results were obtained using models for which observational bias among countries was modelled as a modification of absence data related to national scientific output 
+    <sup>
+     <a id="xref-ref-13-2" class="xref-bibr" href="#ref-13">13</a>
+    </sup> (
+    <a id="xref-fig-3-1" class="xref-fig" href="#F3">Supplementary Fig. 1</a>).
+   </p>
+   <div id="F2" class="fig pos-float type-figure odd">
+    <div class="highwire-figure">
+     <div class="fig-inline-img-wrapper">
+      <div class="fig-inline-img">
+       <a href="https://www.biorxiv.org/content/biorxiv/early/2019/01/15/520320/F2.large.jpg?width=800&amp;;height=600&amp;;carousel=1" title="Model explanatory power declines with host range. Open circles show values for individual pests (pink) and pathogens (blue). Bold lines show linear model fits, with 95 % Confidence Limits shaded." class="highwire-fragment fragment-images colorbox-load" rel="gallery-fragment-images-365469874" data-figure-caption="&lt;;div class=&quot;;highwire-markup&quot;;&gt;;Model explanatory power declines with host range. Open circles show values for individual pests (pink) and pathogens (blue). Bold lines show linear model fits, with 95 % Confidence Limits shaded.&lt;;/div&gt;;" data-icon-position="" data-hide-link-title="0">
+        <span class="hw-responsive-img">
+         <img class="highwire-fragment fragment-image lazyload" alt="Fig. 2." src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://www.biorxiv.org/content/biorxiv/early/2019/01/15/520320/F2.medium.gif" width="440" height="329"/>
+         <noscript>
+          <img class="highwire-fragment fragment-image" alt="Fig. 2." src="https://www.biorxiv.org/content/biorxiv/early/2019/01/15/520320/F2.medium.gif" width="440" height="329"/>
+         </noscript>
+        </span>
+       </a>
+      </div>
+     </div>
+     <ul class="highwire-figure-links inline">
+      <li class="download-fig first">
+       <a href="https://www.biorxiv.org/content/biorxiv/early/2019/01/15/520320/F2.large.jpg?download=true" class="highwire-figure-link highwire-figure-link-download" title="Download Fig. 2." data-icon-position="" data-hide-link-title="0">Download figure</a>
+      </li>
+      <li class="new-tab last">
+       <a href="https://www.biorxiv.org/content/biorxiv/early/2019/01/15/520320/F2.large.jpg" class="highwire-figure-link highwire-figure-link-newtab" target="_blank" data-icon-position="" data-hide-link-title="0">Open in new tab</a>
+      </li>
+     </ul>
+    </div>
+    <div class="fig-caption">
+     <span class="fig-label">Fig. 2.</span>
+     <p id="p-10" class="first-child">Model explanatory power declines with host range. Open circles show values for individual pests (pink) and pathogens (blue). Bold lines show linear model fits, with 95 % Confidence Limits shaded.</p>
+     <div class="sb-div caption-clear"/>
+    </div>
+   </div>
+   <p id="p-11">We found that host availability is a better predictor of species distributions for endobiotic pathogens than it is for epibiotic pests. Thus, variation in the strength of interaction between consumers and their host plants translates to biogeographic patterns at the global scale. Araújo and Luoto 
+    <sup>
+     <a id="xref-ref-5-3" class="xref-bibr" href="#ref-5">5</a>
+    </sup> first tested the hypothesis that biotic interactions can limit species distributions at macroecological scales, showing that the distribution of the clouded Apollo butterfly (
+    <em>Parnassius mnemosyne</em>) in Europe is controlled by the distribution of host plants (
+    <em>Corydalis</em> spp.), as well as by climate. The butterfly is threatened across much of its geographic range and has been the subject of much conservation research, hence its biotic niche has been largely described. For many other wild species such information is unavailable, and so we turned to CPPs whose biotic interactions are better described. While SDM of CPPs in relation to climate is relatively common 
+    <sup>
+     <a id="xref-ref-16-1" class="xref-bibr" href="#ref-16">16</a>,
+     <a id="xref-ref-17-1" class="xref-bibr" href="#ref-17">17</a>
+    </sup>, combined modelling of both pest and hosts has been rarely attempted. For example, projections of future habitat suitability for the soybean (
+    <em>Glycine max</em>) and the bean leaf beetle (
+    <em>Cerotoma trifurcata</em>) indicate that host distribution will limit the potential pest distribution 
+    <sup>
+     <a id="xref-ref-18-1" class="xref-bibr" href="#ref-18">18</a>
+    </sup>. The soybean shows wide climatic tolerance, but the temperature range of the beetle, a generalist feeding on numerous hosts, is even wider.
+   </p>
+   <p id="p-12">Detecting any influence of host availability is perhaps surprising because we expect CPPs to be highly-adapted to their hosts and likely to evolve to match the host’s climatic niche. Therefore, the biotic and climatic predictors should be highly correlated. For example, populations of the temperate climate wheat pathogen 
+    <em>Zymoseptoria tritici</em> isolated from warmer regions show genetically-determined variation in optimal growth temperatures and temperature responses 
+    <sup>
+     <a id="xref-ref-19-1" class="xref-bibr" href="#ref-19">19</a>
+    </sup>, and are therefore able to match the local climate experienced by the host. However, crops are not grown in all areas that are climatically suitable, allowing statistical models to partition the influence of these predictors. In addition, the example of the bean leaf beetle illustrates that host and pest climatic niches may not correspond exactly 
+    <sup>
+     <a id="xref-ref-18-2" class="xref-bibr" href="#ref-18">18</a>
+    </sup>.
+   </p>
+   <p id="p-13">Host crops present a local environment that is substantially different from the external climate, represented by climatic variables used in SDM. Air temperature and moisture vary through a crop canopy, and leaf temperatures differ from air temperatures above the canopy depending upon insolation and leaf water status 
+    <sup>
+     <a id="xref-ref-20-1" class="xref-bibr" href="#ref-20">20</a>
+    </sup>. Thus, CPPs will experience different microclimates from those suggested by meteorological data, and endobiotic pathogens, in particular, will be influenced by 
+    <em>in planta</em> conditions 
+    <sup>
+     <a id="xref-ref-15-2" class="xref-bibr" href="#ref-15">15</a>
+    </sup>. SDMs utilize meteorological data and biologically relevant derivatives to estimate the climatic niche 
+    <sup>
+     <a id="xref-ref-21-1" class="xref-bibr" href="#ref-21">21</a>,
+     <a id="xref-ref-22-1" class="xref-bibr" href="#ref-22">22</a>
+    </sup>, but for endobiotic organisms it appears that the environment provided by the host crop is as good a predictor of presence, albeit at a global scale, as is climate. Some physiological models of pathogen risk explicitly consider the host environment. For example, a model of overwinter survival by 
+    <em>Phytophthora cinnamomi</em>, under oak bark, contains a transfer equation to calculate inner bark temperature from air temperature 
+    <sup>
+     <a id="xref-ref-23-1" class="xref-bibr" href="#ref-23">23</a>
+    </sup>.
+   </p>
+   <p id="p-14">There was no significant relationship between host specificity (the number of plant genera known to be attacked by a pest or pathogen) and the relative explanatory power of biotic versus climatic predictors of species distributions. We might expect that generalist CPPs would not be limited by host availability and therefore respond more strongly to climate than specialist CPPs. However, the area of agricultural land varies widely among countries, and even a generalist able to consume any plant would therefore still be more likely found in a country with a large cropping area. Therefore, climatic predictors need not be more important for generalist CPPs. We did find that the distributions of generalist CPPs are less predictable overall, which suggests that their establishment is less hindered by the physical environment and may be determined by other factors, such as anthropogenic dispersal.</p>
+   <p id="p-15">Our analysis supports the argument that biotic interactions should be included in SDM 
+    <sup>
+     <a id="xref-ref-1-8" class="xref-bibr" href="#ref-1">1</a>,
+     <a id="xref-ref-5-4" class="xref-bibr" href="#ref-5">5</a>,
+     <a id="xref-ref-18-3" class="xref-bibr" href="#ref-18">18</a>
+    </sup>, particularly where strong dependence on other species is known or suspected. Plant viruses are obligate parasites and arguably the most strongly host-dependent of all CPPs - viral distributions appeared to be most strongly determined by host availability. However, the expected role of climate versus host availability in determining viral distributions is complicated by the fact that many plant viruses are dependent upon insect vectors, particularly aphids, for transmission 
+    <sup>
+     <a id="xref-ref-24-1" class="xref-bibr" href="#ref-24">24</a>
+    </sup>. Aphids transmit nearly 300 plant viruses, and their populations respond strongly to weather 
+    <sup>
+     <a id="xref-ref-25-1" class="xref-bibr" href="#ref-25">25</a>
+    </sup>. Therefore the distribution of viruses could partly reflect the climatic controls on their vectors. However, Hemiptera are the most widespread of all insect pest groups 
+    <sup>
+     <a id="xref-ref-11-4" class="xref-bibr" href="#ref-11">11</a>
+    </sup>, with the cotton aphid 
+    <em>Aphis gossypii</em>, the green peach aphid 
+    <em>Myzus persicae</em>, and the silverleaf whitefly 
+    <em>Bemisia tabaci</em> most cosmopolitan. Each of these species transmits many viruses. Host crops may thus be the limiting factor in viral distributions where the vector is widespread.
+   </p>
+   <p id="p-16">We investigated only one biotic factor, host availability, which we propose is most important for CPPs. Predators of CPPs, for example, appear to be most important within the native range, their prey finding ‘enemy-free space’ upon dispersal 
+    <sup>
+     <a id="xref-ref-27-1" class="xref-bibr" href="#ref-27">27</a>
+    </sup>. For wild species, many other interactions will determine the rate and pattern of range shift in response to climate change 
+    <sup>
+     <a id="xref-ref-7-3" class="xref-bibr" href="#ref-7">7</a>
+    </sup>, and as empirical data accumulate, knowledge of general principles governing range shifts will improve.
+   </p>
+   <p id="p-17">The importance of weather in determining the risk of CPP outbreaks has long been recognized, resulting in numerous statistical and mechanistic models across a wide range of spatiotemporal scales 
+    <sup>
+     <a id="xref-ref-17-2" class="xref-bibr" href="#ref-17">17</a>
+    </sup>. Researchers have recently begun to investigate the distributional determinants of individual CPPs and how these might develop as the climate changes. In many cases, the response of the pest is modelled, but not the host crop 
+    <sup>
+     <a id="xref-ref-28-1" class="xref-bibr" href="#ref-28">28</a>
+    </sup>. This simplification could lead to serious errors in projections if, for example, the pest and host crop occupy different climatic niches 
+    <sup>
+     <a id="xref-ref-18-4" class="xref-bibr" href="#ref-18">18</a>
+    </sup>. Analyses incorporating both the pest and the host are rare, and even these do not attempt to estimate the influence of dispersal limitation. We have shown that fundamental differences in life history influence the relative importance of biotic and abiotic factors in determining global distributions for a class of organisms, CPPs, for which biotic niche information is available. Accumulation of such data for wild species will help to improve SDM for projections of how the biosphere is likely to change with global warming.
+   </p>
+   <div class="section" id="sec-1">
+    <h2 class="">Methods</h2>
+    <p id="p-18">We compared the relative predictive power of abiotic (climate) and biotic (host availability) variables on current species distributions by statistically modelling the current global distributions of CPPs at national scale. We employed the approach of ‘surrogate hypotheses’ 
+     <sup>
+      <a id="xref-ref-5-5" class="xref-bibr" href="#ref-5">5</a>
+     </sup>, whereby correlations in observational data are tested in lieu of controlled experiments, which are difficult to conduct for macroecological processes. We compared the goodness-of-fit of biotic (host availability) and abiotic (climate) variables to CPP presence-absence data at country level (state level for the USA, Brazil, India, China and Australia) using Generalized Additive Models (GAMs) with binomial errors 
+     <sup>
+      <a id="xref-ref-29-1" class="xref-bibr" href="#ref-29">29</a>
+     </sup>. The ‘biotic model’ used the log-transformed areas of host crops for the CPP as predictors 
+     <sup>
+      <a id="xref-ref-13-3" class="xref-bibr" href="#ref-13">13</a>
+     </sup>; the ‘climate model’ used the climate in areas where the host crops are grown. The ‘full model’ used both biotic and climate variables. We obtained CPP presence data, and known host plants, for each CPP from CABI with permission.
+    </p>
+    <p id="p-19">Taxonomic categories of CPPs for which fewer than twenty species were available (Psocoptera, Thysanoptera) were omitted, as were CPPs present in ten or fewer locations, leaving 1040 CPPs. We summed spatial distributions of major crops from the MIRCA2000 database 
+     <sup>
+      <a id="xref-ref-14-2" class="xref-bibr" href="#ref-14">14</a>
+     </sup> to country and state level, to match CPP distribution data. For each country/state, we calculated the total production area of each crop, and for each CPP we calculated the total production area for each host crop. Host crop areas were log-transformed for fitting. We selected four bioclimatic variables from the BIOCLIM database 
+     <sup>
+      <a id="xref-ref-30-1" class="xref-bibr" href="#ref-30">30</a>
+     </sup>: mean annual temperature; standard deviation of monthly temperature; mean annual rainfall; standard deviation of monthly rainfall. We omitted the other BIOCLIM variables (annual temperature range, precipitation of driest month, etc.) to avoid multi-collinearity, as these derived variables are strongly correlated with those we selected. Area-weighted means of these climatic variables were calculated for crop-growing areas per region. GAMs were fitted using splines for each predictor variable 
+     <sup>
+      <a id="xref-ref-31-1" class="xref-bibr" href="#ref-31">31</a>
+     </sup>. We analysed the difference between the fraction of deviance explained by the abiotic and biotic models to determine whether the relative importance of host availability varied between pests and pathogens.
+    </p>
+    <p id="p-20">Available global CPP distribution data are biased by the varying abilities of countries to detect, identify and report CPP presence. Richer countries at higher latitudes tend to have better plant health reporting systems, and there is a strong correlation between countries’ scientific output and reported pest incidence 
+     <sup>
+      <a id="xref-ref-4-2" class="xref-bibr" href="#ref-4">4</a>,
+      <a id="xref-ref-13-4" class="xref-bibr" href="#ref-13">13</a>
+     </sup>. While presences reported in the CABI databases are likely to be reliable due to stringent quality checking procedures, absences could be pseudo-absences where a CPP is present but unreported. Let 
+     <em>d</em>
+     <sub>
+      <em>n</em>
+     </sub> be the binary presence-absence data for a pest or pathogen in each of 
+     <em>n</em> geographical regions, and let 
+     <em>w</em>
+     <sub>
+      <em>n</em>
+     </sub> be the corresponding confidence weighting for that region. Then the confidence-weighted presence probabilities are 
+     <span class="disp-formula" id="disp-formula-1">
+      <span class="highwire-responsive-lazyload">
+       <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="highwire-embed lazyload" alt="Embedded Image" data-src="https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/01/15/520320/embed/graphic-3.gif"/>
+       <noscript>
+        <img class="highwire-embed" alt="Embedded Image" src="https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/01/15/520320/embed/graphic-3.gif"/>
+       </noscript>
+      </span>
+     </span>
+    </p>
+    <p id="p-21">Our confidence in presences is absolute, i.e. when 
+     <em>d</em>
+     <sub>
+      <em>n</em>
+     </sub> = 1, 
+     <em>w</em>
+     <sub>
+      <em>n</em>
+     </sub> = 1
+    </p>
+    <p id="p-22">Our confidence in absences varies as a fitted quadratic function of the number of scientific publications per country between 1996 and 2012 
+     <sup>
+      <a id="xref-ref-13-5" class="xref-bibr" href="#ref-13">13</a>
+     </sup>, 
+     <em>s</em>
+     <sub>
+      <em>n</em>
+     </sub>, such that when 
+     <em>d</em>
+     <sub>
+      <em>n</em>
+     </sub> = 0, 
+     <em>w</em>
+     <sub>
+      <em>n</em>
+     </sub> = −0.001085 ln(
+     <em>s</em>
+     <sub>
+      <em>n</em>
+     </sub> + 1) + 0.005074 ln(
+     <em>s</em>
+     <sub>
+      <em>n</em>
+     </sub> + 1)
+     <sup>2</sup>
+    </p>
+    <p id="p-23">Therefore, our confidence in absences from the USA is complete (the USA has the largest scientific output), 
+     <em>w</em>
+     <sub>
+      <em>n</em>
+     </sub> = 1, and 
+     <span class="inline-formula" id="inline-formula-1">
+      <span class="highwire-responsive-lazyload">
+       <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="highwire-embed lazyload" alt="Embedded Image" data-src="https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/01/15/520320/embed/inline-graphic-1.gif"/>
+       <noscript>
+        <img class="highwire-embed" alt="Embedded Image" src="https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/01/15/520320/embed/inline-graphic-1.gif"/>
+       </noscript>
+      </span>
+     </span> when 
+     <em>d</em>
+     <sub>
+      <em>n</em>
+     </sub> = 0. Our confidence in absences from the world’s least developed countries is near zero, and 
+     <span class="inline-formula" id="inline-formula-2">
+      <span class="highwire-responsive-lazyload">
+       <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="highwire-embed lazyload" alt="Embedded Image" data-src="https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/01/15/520320/embed/inline-graphic-2.gif"/>
+       <noscript>
+        <img class="highwire-embed" alt="Embedded Image" src="https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/01/15/520320/embed/inline-graphic-2.gif"/>
+       </noscript>
+      </span>
+     </span>. This method is not equivalent to weighting observations by confidence, nor including confidence as a predictor in the model, because the weighting only affects our treatment of absences. We fitted fourth-order polynomials of the predictor variables to 
+     <span class="inline-formula" id="inline-formula-3">
+      <span class="highwire-responsive-lazyload">
+       <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="highwire-embed lazyload" alt="Embedded Image" data-src="https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/01/15/520320/embed/inline-graphic-3.gif"/>
+       <noscript>
+        <img class="highwire-embed" alt="Embedded Image" src="https://www.biorxiv.org/sites/default/files/highwire/biorxiv/early/2019/01/15/520320/embed/inline-graphic-3.gif"/>
+       </noscript>
+      </span>
+     </span>, minimizing χ
+     <sup>2</sup> of the difference between observed and fitted values by optimization. Quadratic functions are often used in SDM 
+     <sup>29</sup>, but quartic functions allow a greater range of response profiles to be described, without over-fitting. Presence-absence data are often fitted using Generalized Linear Models or Generalized Additive Models 
+     <sup>
+      <a id="xref-ref-5-6" class="xref-bibr" href="#ref-5">5</a>
+     </sup>, but these methods require errors distributions in the exponential family for maximum likelihood estimation 
+     <sup>
+      <a id="xref-ref-31-2" class="xref-bibr" href="#ref-31">31</a>
+     </sup>. The data do not follow the binomial distribution, and we are therefore unable to calculate likelihoods for fitted models, nor the various model selection metrics based upon likelihood (e.g. AIC), using GLM or GAM. Instead, we obtained χ
+     <sup>2</sup> and AUC statistics for the biotic model, the climate model, and the combined model. These values were then compared using linear models to investigate the relative explanatory power of biotic and abiotic predictors.
+    </p>
+   </div>
+   <div class="section ack" id="ack-1">
+    <h2 class="">Acknowledgements</h2>
+    <p id="p-24">Data on pest and pathogen geographical distributions and host plants were obtained with permission from CABI.</p>
+   </div>
+   <div class="section ref-list" id="ref-list-1">
+    <h2 class="">References</h2>
+    <ol class="cit-list ref-use-labels">
+     <li>
+      <span class="ref-label">1.</span>
+      <a class="rev-xref-ref" href="#xref-ref-1-1" title="View reference 1. in text" id="ref-1">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.1" data-doi="10.1073/pnas.0901637106">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Soberón</span>, 
+          <span class="cit-name-given-names">J.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Nakamura</span>, 
+          <span class="cit-name-given-names">M.</span>
+         </span>
+         <span class="cit-article-title">Niches and distributional areas: concepts, methods, and assumptions</span>. 
+         <abbr class="cit-jnl-abbrev">Proc. Natl. Acad. Sci.</abbr>
+         <span class="cit-vol">106</span>, 
+         <span class="cit-fpage">19644</span>–
+         <span class="cit-lpage">19650</span> (
+         <span class="cit-pub-date">2009</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DProc.%2BNatl.%2BAcad.%2BSci.%26rft_id%253Dinfo%253Adoi%252F10.1073%252Fpnas.0901637106%26rft_id%253Dinfo%253Apmid%252F19805041%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/ijlink/YTozOntzOjQ6InBhdGgiO3M6MTQ6Ii9sb29rdXAvaWpsaW5rIjtzOjU6InF1ZXJ5IjthOjQ6e3M6ODoibGlua1R5cGUiO3M6NDoiQUJTVCI7czoxMToiam91cm5hbENvZGUiO3M6NDoicG5hcyI7czo1OiJyZXNpZCI7czoyMjoiMTA2L1N1cHBsZW1lbnRfMi8xOTY0NCI7czo0OiJhdG9tIjtzOjM3OiIvYmlvcnhpdi9lYXJseS8yMDE5LzAxLzE1LzUyMDMyMC5hdG9tIjt9czo4OiJmcmFnbWVudCI7czowOiIiO30=" class="cit-ref-sprinkles cit-ref-sprinkles-ijlink">
+         <span>
+          <span class="cit-reflinks-abstract">Abstract</span>
+          <span class="cit-sep cit-reflinks-variant-name-sep">/</span>
+          <span class="cit-reflinks-full-text">
+           <span class="free-full-text">FREE </span>Full Text
+          </span>
+         </span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">2.</span>
+      <a class="rev-xref-ref" href="#xref-ref-2-1" title="View reference 2. in text" id="ref-2">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.2" data-doi="10.1126/science.1206432">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Chen</span>, 
+          <span class="cit-name-given-names">I.-C.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Hill</span>, 
+          <span class="cit-name-given-names">J. K.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Ohlemüller</span>, 
+          <span class="cit-name-given-names">R.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Roy</span>, 
+          <span class="cit-name-given-names">D. B.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Thomas</span>, 
+          <span class="cit-name-given-names">C. D.</span>
+         </span>
+         <span class="cit-article-title">Rapid range shifts of species associated with high levels of climate warming</span>. 
+         <abbr class="cit-jnl-abbrev">Science</abbr>
+         <span class="cit-vol">333</span>, 
+         <span class="cit-fpage">1024</span>–
+         <span class="cit-lpage">1026</span> (
+         <span class="cit-pub-date">2011</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DScience%26rft.stitle%253DScience%26rft.aulast%253DChen%26rft.auinit1%253DI.-C.%26rft.volume%253D333%26rft.issue%253D6045%26rft.spage%253D1024%26rft.epage%253D1026%26rft.atitle%253DRapid%2BRange%2BShifts%2Bof%2BSpecies%2BAssociated%2Bwith%2BHigh%2BLevels%2Bof%2BClimate%2BWarming%26rft_id%253Dinfo%253Adoi%252F10.1126%252Fscience.1206432%26rft_id%253Dinfo%253Apmid%252F21852500%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/ijlink/YTozOntzOjQ6InBhdGgiO3M6MTQ6Ii9sb29rdXAvaWpsaW5rIjtzOjU6InF1ZXJ5IjthOjQ6e3M6ODoibGlua1R5cGUiO3M6NDoiQUJTVCI7czoxMToiam91cm5hbENvZGUiO3M6Mzoic2NpIjtzOjU6InJlc2lkIjtzOjEzOiIzMzMvNjA0NS8xMDI0IjtzOjQ6ImF0b20iO3M6Mzc6Ii9iaW9yeGl2L2Vhcmx5LzIwMTkvMDEvMTUvNTIwMzIwLmF0b20iO31zOjg6ImZyYWdtZW50IjtzOjA6IiI7fQ==" class="cit-ref-sprinkles cit-ref-sprinkles-ijlink">
+         <span>
+          <span class="cit-reflinks-abstract">Abstract</span>
+          <span class="cit-sep cit-reflinks-variant-name-sep">/</span>
+          <span class="cit-reflinks-full-text">
+           <span class="free-full-text">FREE </span>Full Text
+          </span>
+         </span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">3.</span>
+      <a class="rev-xref-ref" href="#xref-ref-3-1" title="View reference 3. in text" id="ref-3">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.3" data-doi="10.1890/1540-9295(2007)5[131:PANIAC]2.0.CO;2">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Hannah</span>, 
+          <span class="cit-name-given-names">L.</span>
+         </span>
+         <span class="cit-etal">et al.</span>
+         <span class="cit-article-title">Protected area needs in a changing climate</span>. 
+         <abbr class="cit-jnl-abbrev">Front. Ecol. Environ.</abbr>
+         <span class="cit-vol">5</span>, 
+         <span class="cit-fpage">131</span>–
+         <span class="cit-lpage">138</span> (
+         <span class="cit-pub-date">2007</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DFront.%2BEcol.%2BEnviron.%26rft.volume%253D5%26rft.spage%253D131%26rft_id%253Dinfo%253Adoi%252F10.1890%252F1540-9295%25282007%25295%255B131%253APANIAC%255D2.0.CO%253B2%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1890/1540-9295(2007)5[131:PANIAC]2.0.CO;2&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">4.</span>
+      <a class="rev-xref-ref" href="#xref-ref-4-1" title="View reference 4. in text" id="ref-4">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.4">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Bebber</span>, 
+          <span class="cit-name-given-names">D. P.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Ramotowski</span>, 
+          <span class="cit-name-given-names">M. A. T.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Gurr</span>, 
+          <span class="cit-name-given-names">S. J.</span>
+         </span>
+         <span class="cit-article-title">Crop pests and pathogens move polewards in a warming world</span>. 
+         <abbr class="cit-jnl-abbrev">Nat. Clim. Change</abbr>
+         <span class="cit-vol">3</span>, 
+         <span class="cit-fpage">985</span>–
+         <span class="cit-lpage">988</span> (
+         <span class="cit-pub-date">2013</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DNat.%2BClim.%2BChange%26rft.volume%253D3%26rft.spage%253D985%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">5.</span>
+      <a class="rev-xref-ref" href="#xref-ref-5-1" title="View reference 5. in text" id="ref-5">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.5">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Araújo</span>, 
+          <span class="cit-name-given-names">M. B.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Luoto</span>, 
+          <span class="cit-name-given-names">M.</span>
+         </span>
+         <span class="cit-article-title">The importance of biotic interactions for modelling species distributions under climate change</span>. 
+         <abbr class="cit-jnl-abbrev">Glob. Ecol. Biogeogr.</abbr>
+         <span class="cit-vol">16</span>, 
+         <span class="cit-fpage">743</span>–
+         <span class="cit-lpage">753</span> (
+         <span class="cit-pub-date">2007</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DGlob.%2BEcol.%2BBiogeogr.%26rft.volume%253D16%26rft.spage%253D743%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">6.</span>
+      <a class="rev-xref-ref" href="#xref-ref-6-1" title="View reference 6. in text" id="ref-6">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.6" data-doi="10.1111/j.1461-0248.2007.01107.x">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Soberón</span>, 
+          <span class="cit-name-given-names">J.</span>
+         </span>
+         <span class="cit-article-title">Grinnellian and Eltonian niches and geographic distributions of species</span>. 
+         <abbr class="cit-jnl-abbrev">Ecol. Lett.</abbr>
+         <span class="cit-vol">10</span>, 
+         <span class="cit-fpage">1115</span>–
+         <span class="cit-lpage">1123</span> (
+         <span class="cit-pub-date">2007</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.stitle%253DEcol%2BLett%26rft.aulast%253DSoberon%26rft.auinit1%253DJ.%26rft.volume%253D10%26rft.issue%253D12%26rft.spage%253D1115%26rft.epage%253D1123%26rft.atitle%253DGrinnellian%2Band%2BEltonian%2Bniches%2Band%2Bgeographic%2Bdistributions%2Bof%2Bspecies.%26rft_id%253Dinfo%253Adoi%252F10.1111%252Fj.1461-0248.2007.01107.x%26rft_id%253Dinfo%253Apmid%252F17850335%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1111/j.1461-0248.2007.01107.x&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=17850335&amp;;link_type=MED&amp;;atom=%2Fbiorxiv%2Fearly%2F2019%2F01%2F15%2F520320.atom" class="cit-ref-sprinkles cit-ref-sprinkles-medline">
+         <span>PubMed</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=000250700800001&amp;;link_type=ISI" class="cit-ref-sprinkles cit-ref-sprinkles-newisilink cit-ref-sprinkles-webofscience">
+         <span>Web of Science</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">7.</span>
+      <a class="rev-xref-ref" href="#xref-ref-7-1" title="View reference 7. in text" id="ref-7">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.7" data-doi="10.1111/j.1600-0587.2013.00574.x">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Svenning</span>, 
+          <span class="cit-name-given-names">J.-C.</span>
+         </span>
+         <span class="cit-etal">et al.</span>
+         <span class="cit-article-title">The influence of interspecific interactions on species range expansion rates</span>. 
+         <abbr class="cit-jnl-abbrev">Ecography</abbr>
+         <span class="cit-vol">37</span>, 
+         <span class="cit-fpage">1198</span>–
+         <span class="cit-lpage">1209</span> (
+         <span class="cit-pub-date">2014</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DEcography%26rft.volume%253D37%26rft.spage%253D1198%26rft_id%253Dinfo%253Adoi%252F10.1111%252Fj.1600-0587.2013.00574.x%26rft_id%253Dinfo%253Apmid%252F25722537%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1111/j.1600-0587.2013.00574.x&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=25722537&amp;;link_type=MED&amp;;atom=%2Fbiorxiv%2Fearly%2F2019%2F01%2F15%2F520320.atom" class="cit-ref-sprinkles cit-ref-sprinkles-medline">
+         <span>PubMed</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">8.</span>
+      <a class="rev-xref-ref" href="#xref-ref-8-1" title="View reference 8. in text" id="ref-8">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.8" data-doi="10.1111/j.1365-2699.2011.02659.x">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Dormann</span>, 
+          <span class="cit-name-given-names">C. F.</span>
+         </span>
+         <span class="cit-etal">et al.</span>
+         <span class="cit-article-title">Correlation and process in species distribution models: bridging a dichotomy</span>. 
+         <abbr class="cit-jnl-abbrev">J. Biogeogr.</abbr>
+         <span class="cit-vol">39</span>, 
+         <span class="cit-fpage">2119</span>–
+         <span class="cit-lpage">2131</span> (
+         <span class="cit-pub-date">2012</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DJ.%2BBiogeogr.%26rft.volume%253D39%26rft.spage%253D2119%26rft_id%253Dinfo%253Adoi%252F10.1111%252Fj.1365-2699.2011.02659.x%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1111/j.1365-2699.2011.02659.x&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=000311384100006&amp;;link_type=ISI" class="cit-ref-sprinkles cit-ref-sprinkles-newisilink cit-ref-sprinkles-webofscience">
+         <span>Web of Science</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">9.</span>
+      <a class="rev-xref-ref" href="#xref-ref-9-1" title="View reference 9. in text" id="ref-9">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.9">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Kriticos</span>, 
+          <span class="cit-name-given-names">D. J.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Le Maitre</span>, 
+          <span class="cit-name-given-names">D. C.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Webber</span>, 
+          <span class="cit-name-given-names">B. L.</span>
+         </span>
+         <span class="cit-article-title">Essential elements of discourse for advancing the modelling of species’ current and potential distributions</span>. 
+         <abbr class="cit-jnl-abbrev">J. Biogeogr.</abbr>
+         <span class="cit-vol">40</span>, 
+         <span class="cit-fpage">608</span>–
+         <span class="cit-lpage">611</span> (
+         <span class="cit-pub-date">2013</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DJ.%2BBiogeogr.%26rft.volume%253D40%26rft.spage%253D608%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">10.</span>
+      <a class="rev-xref-ref" href="#xref-ref-10-1" title="View reference 10. in text" id="ref-10">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.10">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Schymanski</span>, 
+          <span class="cit-name-given-names">S. J.</span>
+         </span>
+         <span class="cit-etal">et al.</span>
+         <span class="cit-article-title">Process, correlation and parameter fitting in species distribution models: a response to Kriticos et al</span>. 
+         <abbr class="cit-jnl-abbrev">J. Biogeogr.</abbr>
+         <span class="cit-vol">40</span>, 
+         <span class="cit-fpage">612</span>–
+         <span class="cit-lpage">613</span> (
+         <span class="cit-pub-date">2013</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DJ.%2BBiogeogr.%26rft.volume%253D40%26rft.spage%253D612%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">11.</span>
+      <a class="rev-xref-ref" href="#xref-ref-11-1" title="View reference 11. in text" id="ref-11">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.11">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Bebber</span>, 
+          <span class="cit-name-given-names">D. P.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Holmes</span>, 
+          <span class="cit-name-given-names">T.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Gurr</span>, 
+          <span class="cit-name-given-names">S. J.</span>
+         </span>
+         <span class="cit-article-title">The global spread of crop pests and pathogens</span>. 
+         <abbr class="cit-jnl-abbrev">Glob. Ecol. Biogeogr.</abbr>
+         <span class="cit-vol">23</span>, 
+         <span class="cit-fpage">1398</span>–
+         <span class="cit-lpage">1407</span> (
+         <span class="cit-pub-date">2014</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DGlob.%2BEcol.%2BBiogeogr.%26rft.volume%253D23%26rft.spage%253D1398%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">12.</span>
+      <a class="rev-xref-ref" href="#xref-ref-12-1" title="View reference 12. in text" id="ref-12">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.12">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Devictor</span>, 
+          <span class="cit-name-given-names">V.</span>
+         </span>
+         <span class="cit-etal">et al.</span>
+         <span class="cit-article-title">Differences in the climatic debts of birds and butterflies at a continental scale</span>. 
+         <abbr class="cit-jnl-abbrev">Nat. Clim Change</abbr>
+         <span class="cit-vol">2</span>, 
+         <span class="cit-fpage">121</span>–
+         <span class="cit-lpage">124</span> (
+         <span class="cit-pub-date">2012</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DNat.%2BClim%2BChange%26rft.volume%253D2%26rft.spage%253D121%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">13.</span>
+      <a class="rev-xref-ref" href="#xref-ref-13-1" title="View reference 13. in text" id="ref-13">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.13" data-doi="10.1111/nph.12722">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Bebber</span>, 
+          <span class="cit-name-given-names">D. P.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Holmes</span>, 
+          <span class="cit-name-given-names">T.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Smith</span>, 
+          <span class="cit-name-given-names">D.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Gurr</span>, 
+          <span class="cit-name-given-names">S. J.</span>
+         </span>
+         <span class="cit-article-title">Economic and physical determinants of the global distributions of crop pests and pathogens</span>. 
+         <abbr class="cit-jnl-abbrev">New Phytol.</abbr>
+         <span class="cit-vol">202</span>, 
+         <span class="cit-fpage">901</span>–
+         <span class="cit-lpage">910</span> (
+         <span class="cit-pub-date">2014</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DNew%2BPhytol.%26rft.volume%253D202%26rft.spage%253D901%26rft_id%253Dinfo%253Adoi%252F10.1111%252Fnph.12722%26rft_id%253Dinfo%253Apmid%252F24517626%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1111/nph.12722&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=24517626&amp;;link_type=MED&amp;;atom=%2Fbiorxiv%2Fearly%2F2019%2F01%2F15%2F520320.atom" class="cit-ref-sprinkles cit-ref-sprinkles-medline">
+         <span>PubMed</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">14.</span>
+      <a class="rev-xref-ref" href="#xref-ref-14-1" title="View reference 14. in text" id="ref-14">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.14">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Portmann</span>, 
+          <span class="cit-name-given-names">F. T.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Siebert</span>, 
+          <span class="cit-name-given-names">S.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Döll</span>, 
+          <span class="cit-name-given-names">P.</span>
+         </span>
+         <span class="cit-article-title">MIRCA2000—Global monthly irrigated and rainfed crop areas around the year 2000: A new high-resolution data set for agricultural and hydrological modeling</span>. 
+         <abbr class="cit-jnl-abbrev">Glob. Biogeochem. Cycles</abbr>
+         <span class="cit-vol">24</span>, 
+         <span class="cit-fpage">1</span>–
+         <span class="cit-lpage">24</span> (
+         <span class="cit-pub-date">2010</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DGlob.%2BBiogeochem.%2BCycles%26rft.volume%253D24%26rft.spage%253D1%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">15.</span>
+      <a class="rev-xref-ref" href="#xref-ref-15-1" title="View reference 15. in text" id="ref-15">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.15" data-doi="10.1111/nph.12134">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Bernard</span>, 
+          <span class="cit-name-given-names">F.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Sache</span>, 
+          <span class="cit-name-given-names">I.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Suffert</span>, 
+          <span class="cit-name-given-names">F.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Chelle</span>, 
+          <span class="cit-name-given-names">M.</span>
+         </span>
+         <span class="cit-article-title">The development of a foliar fungal pathogen does react to leaf temperature!</span>
+         <abbr class="cit-jnl-abbrev">New Phytol.</abbr>
+         <span class="cit-vol">198</span>, 
+         <span class="cit-fpage">232</span>–
+         <span class="cit-lpage">240</span> (
+         <span class="cit-pub-date">2013</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DNew%2BPhytol.%26rft.volume%253D198%26rft.spage%253D232%26rft_id%253Dinfo%253Adoi%252F10.1111%252Fnph.12134%26rft_id%253Dinfo%253Apmid%252F23373986%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1111/nph.12134&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=23373986&amp;;link_type=MED&amp;;atom=%2Fbiorxiv%2Fearly%2F2019%2F01%2F15%2F520320.atom" class="cit-ref-sprinkles cit-ref-sprinkles-medline">
+         <span>PubMed</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">16.</span>
+      <a class="rev-xref-ref" href="#xref-ref-16-1" title="View reference 16. in text" id="ref-16">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.16">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Sparks</span>, 
+          <span class="cit-name-given-names">A. H.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Forbes</span>, 
+          <span class="cit-name-given-names">G. A.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Hijmans</span>, 
+          <span class="cit-name-given-names">R. J.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Garrett</span>, 
+          <span class="cit-name-given-names">K. A.</span>
+         </span>
+         <span class="cit-article-title">Climate change may have limited effect on global risk of potato late blight</span>. 
+         <abbr class="cit-jnl-abbrev">Glob. Change Biol.</abbr>
+         <span class="cit-vol">20</span>, 
+         <span class="cit-fpage">3621</span>–
+         <span class="cit-lpage">3631</span> (
+         <span class="cit-pub-date">2014</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DGlob.%2BChange%2BBiol.%26rft.volume%253D20%26rft.spage%253D3621%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">17.</span>
+      <a class="rev-xref-ref" href="#xref-ref-17-1" title="View reference 17. in text" id="ref-17">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.17">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Sutherst</span>, 
+          <span class="cit-name-given-names">R. W.</span>
+         </span>
+         <span class="cit-article-title">Pest species distribution modelling: origins and lessons from history</span>. 
+         <abbr class="cit-jnl-abbrev">Biol. Invasions</abbr>
+         <span class="cit-vol">16</span>, 
+         <span class="cit-fpage">239</span>–
+         <span class="cit-lpage">256</span> (
+         <span class="cit-pub-date">2014</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DBiol.%2BInvasions%26rft.volume%253D16%26rft.spage%253D239%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">18.</span>
+      <a class="rev-xref-ref" href="#xref-ref-18-1" title="View reference 18. in text" id="ref-18">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.18" data-doi="10.1111/gcb.12557">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Berzitis</span>, 
+          <span class="cit-name-given-names">E. A.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Minigan</span>, 
+          <span class="cit-name-given-names">J. N.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Hallett</span>, 
+          <span class="cit-name-given-names">R. H.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Newman</span>, 
+          <span class="cit-name-given-names">J. A.</span>
+         </span>
+         <span class="cit-article-title">Climate and host plant availability impact the future distribution of the bean leaf beetle (Cerotoma trifurcata)</span>. 
+         <abbr class="cit-jnl-abbrev">Glob. Change Biol.</abbr>
+         <span class="cit-fpage">n/a</span>—
+         <span class="cit-lpage">n/a</span> (
+         <span class="cit-pub-date">2014</span>).
+         <span class="cit-pub-id-sep cit-pub-id-doi-sep"> </span>
+         <span class="cit-pub-id-scheme">doi:</span>
+         <span class="cit-pub-id cit-pub-id-doi">10.1111/gcb.12557</span>
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DGlob.%2BChange%2BBiol.%26rft_id%253Dinfo%253Adoi%252F10.1111%252Fgcb.12557%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1111/gcb.12557&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">19.</span>
+      <a class="rev-xref-ref" href="#xref-ref-19-1" title="View reference 19. in text" id="ref-19">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.19" data-doi="10.1111/j.1365-294X.2011.05023.x">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Zhan</span>, 
+          <span class="cit-name-given-names">J.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">McDonald</span>, 
+          <span class="cit-name-given-names">B. A.</span>
+         </span>
+         <span class="cit-article-title">Thermal adaptation in the fungal pathogen Mycosphaerella graminicola</span>. 
+         <abbr class="cit-jnl-abbrev">Mol. Ecol.</abbr>
+         <span class="cit-vol">20</span>, 
+         <span class="cit-fpage">1689</span>–
+         <span class="cit-lpage">1701</span> (
+         <span class="cit-pub-date">2011</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DMolecular%2BEcology%2B%2528Print%2529%26rft.stitle%253DMolecular%2BEcology%2B%2528Print%2529%26rft.aulast%253DZhan%26rft.auinit1%253DJ.%26rft.volume%253D20%26rft.issue%253D8%26rft.spage%253D1689%26rft.epage%253D1701%26rft.atitle%253DThermal%2Badaptation%2Bin%2Bthe%2Bfungal%2Bpathogen%2BMycosphaerella%2Bgraminicola.%26rft_id%253Dinfo%253Adoi%252F10.1111%252Fj.1365-294X.2011.05023.x%26rft_id%253Dinfo%253Apmid%252F21395890%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1111/j.1365-294X.2011.05023.x&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=21395890&amp;;link_type=MED&amp;;atom=%2Fbiorxiv%2Fearly%2F2019%2F01%2F15%2F520320.atom" class="cit-ref-sprinkles cit-ref-sprinkles-medline">
+         <span>PubMed</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">20.</span>
+      <a class="rev-xref-ref" href="#xref-ref-20-1" title="View reference 20. in text" id="ref-20">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.20">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Gardner</span>, 
+          <span class="cit-name-given-names">B. R.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Blad</span>, 
+          <span class="cit-name-given-names">B. L.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Watts</span>, 
+          <span class="cit-name-given-names">D. G.</span>
+         </span>
+         <span class="cit-article-title">Plant and air temperatures in differentially-irrigated corn</span>. 
+         <abbr class="cit-jnl-abbrev">Agric. Meteorol.</abbr>
+         <span class="cit-vol">25</span>, 
+         <span class="cit-fpage">207</span>–
+         <span class="cit-lpage">217</span> (
+         <span class="cit-pub-date">1981</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DAgric.%2BMeteorol.%26rft.volume%253D25%26rft.spage%253D207%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">21.</span>
+      <a class="rev-xref-ref" href="#xref-ref-21-1" title="View reference 21. in text" id="ref-21">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.21">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Booth</span>, 
+          <span class="cit-name-given-names">T. H.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Nix</span>, 
+          <span class="cit-name-given-names">H. A.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Busby</span>, 
+          <span class="cit-name-given-names">J. R.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Hutchinson</span>, 
+          <span class="cit-name-given-names">M. F.</span>
+         </span>
+         <span class="cit-article-title">bioclim: the first species distribution modelling package, its early applications and relevance to most current MaxEnt studies</span>. 
+         <abbr class="cit-jnl-abbrev">Divers. Distrib.</abbr>
+         <span class="cit-vol">20</span>, 
+         <span class="cit-fpage">1</span>–
+         <span class="cit-lpage">9</span> (
+         <span class="cit-pub-date">2014</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DDivers.%2BDistrib.%26rft.volume%253D20%26rft.spage%253D1%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">22.</span>
+      <a class="rev-xref-ref" href="#xref-ref-22-1" title="View reference 22. in text" id="ref-22">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.22" data-doi="10.1111/j.2041-210X.2011.00134.x">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Kriticos</span>, 
+          <span class="cit-name-given-names">D. J.</span>
+         </span>
+         <span class="cit-etal">et al.</span>
+         <span class="cit-article-title">CliMond: global high-resolution historical and future scenario climate surfaces for bioclimatic modelling</span>. 
+         <abbr class="cit-jnl-abbrev">Methods Ecol. Evol.</abbr>
+         <span class="cit-vol">3</span>, 
+         <span class="cit-fpage">53</span>–
+         <span class="cit-lpage">64</span> (
+         <span class="cit-pub-date">2012</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DMethods%2BEcol.%2BEvol.%26rft.volume%253D3%26rft.spage%253D53%26rft_id%253Dinfo%253Adoi%252F10.1111%252Fj.2041-210X.2011.00134.x%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1111/j.2041-210X.2011.00134.x&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">23.</span>
+      <a class="rev-xref-ref" href="#xref-ref-23-1" title="View reference 23. in text" id="ref-23">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.23">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Marçais</span>, 
+          <span class="cit-name-given-names">B.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Dupuis</span>, 
+          <span class="cit-name-given-names">F.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Desprez-Loustau</span>, 
+          <span class="cit-name-given-names">M. L.</span>
+         </span>
+         <span class="cit-article-title">Modelling the influence of winter frosts on the development of the stem canker of red oak, caused by Phytophthora cinnamomi</span>. 
+         <abbr class="cit-jnl-abbrev">Ann. Sci. For.</abbr>
+         <span class="cit-vol">53</span>, 
+         <span class="cit-fpage">369</span>–
+         <span class="cit-lpage">382</span> (
+         <span class="cit-pub-date">1996</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DAnn.%2BSci.%2BFor.%26rft.volume%253D53%26rft.spage%253D369%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">24.</span>
+      <a class="rev-xref-ref" href="#xref-ref-24-1" title="View reference 24. in text" id="ref-24">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.24" data-doi="10.1016/j.virusres.2008.07.028">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Jones</span>, 
+          <span class="cit-name-given-names">R. A. C.</span>
+         </span>
+         <span class="cit-article-title">Plant virus emergence and evolution: Origins, new encounter scenarios, factors driving emergence, effects of changing world conditions, and prospects for control</span>. 
+         <abbr class="cit-jnl-abbrev">Virus Res.</abbr>
+         <span class="cit-vol">141</span>, 
+         <span class="cit-fpage">113</span>–
+         <span class="cit-lpage">130</span> (
+         <span class="cit-pub-date">2009</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DVirus%2Bresearch%26rft.stitle%253DVirus%2BRes%26rft.aulast%253DJones%26rft.auinit1%253DR.%2BA.%26rft.volume%253D141%26rft.issue%253D2%26rft.spage%253D113%26rft.epage%253D130%26rft.atitle%253DPlant%2Bvirus%2Bemergence%2Band%2Bevolution%253A%2Borigins%252C%2Bnew%2Bencounter%2Bscenarios%252C%2Bfactors%2Bdriving%2Bemergence%252C%2Beffects%2Bof%2Bchanging%2Bworld%2Bconditions%252C%2Band%2Bprospects%2Bfor%2Bcontrol.%26rft_id%253Dinfo%253Adoi%252F10.1016%252Fj.virusres.2008.07.028%26rft_id%253Dinfo%253Apmid%252F19159652%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1016/j.virusres.2008.07.028&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=19159652&amp;;link_type=MED&amp;;atom=%2Fbiorxiv%2Fearly%2F2019%2F01%2F15%2F520320.atom" class="cit-ref-sprinkles cit-ref-sprinkles-medline">
+         <span>PubMed</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=000265735600002&amp;;link_type=ISI" class="cit-ref-sprinkles cit-ref-sprinkles-newisilink cit-ref-sprinkles-webofscience">
+         <span>Web of Science</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">25.</span>
+      <a class="rev-xref-ref" href="#xref-ref-25-1" title="View reference 25. in text" id="ref-25">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.25">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Harrington</span>, 
+          <span class="cit-name-given-names">R.</span>
+         </span>
+         <span class="cit-etal">et al.</span>
+         <span class="cit-article-title">Environmental change and the phenology of European aphids</span>. 
+         <abbr class="cit-jnl-abbrev">Glob. Change Biol.</abbr>
+         <span class="cit-vol">13</span>, 
+         <span class="cit-fpage">1550</span>–
+         <span class="cit-lpage">1564</span> (
+         <span class="cit-pub-date">2007</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DGlob.%2BChange%2BBiol.%26rft.volume%253D13%26rft.spage%253D1550%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">26.</span>
+      <div class="cit ref-cit ref-journal no-rev-xref" id="cit-520320v1.26" data-doi="10.1111/geb.12214">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Bebber</span>, 
+          <span class="cit-name-given-names">D. P.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Holmes</span>, 
+          <span class="cit-name-given-names">T.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Gurr</span>, 
+          <span class="cit-name-given-names">S. J.</span>
+         </span>
+         <span class="cit-article-title">The global spread of crop pests and pathogens</span>. 
+         <abbr class="cit-jnl-abbrev">Glob. Ecol. Biogeogr.</abbr>
+         <span class="cit-fpage">n/a</span>—
+         <span class="cit-lpage">n/a</span> (
+         <span class="cit-pub-date">2014</span>).
+         <span class="cit-pub-id-sep cit-pub-id-doi-sep"> </span>
+         <span class="cit-pub-id-scheme">doi:</span>
+         <span class="cit-pub-id cit-pub-id-doi">10.1111/geb.12214</span>
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DGlob.%2BEcol.%2BBiogeogr.%26rft.volume%253D23%26rft.spage%253D1398%26rft_id%253Dinfo%253Adoi%252F10.1111%252Fgeb.12214%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1111/geb.12214&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">27.</span>
+      <a class="rev-xref-ref" href="#xref-ref-27-1" title="View reference 27. in text" id="ref-27">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.27" data-doi="10.1016/j.biocontrol.2009.01.022">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Thomson</span>, 
+          <span class="cit-name-given-names">L. J.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Macfadyen</span>, 
+          <span class="cit-name-given-names">S.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Hoffmann</span>, 
+          <span class="cit-name-given-names">A. A.</span>
+         </span>
+         <span class="cit-article-title">Predicting the effects of climate change on natural enemies of agricultural pests</span>. 
+         <abbr class="cit-jnl-abbrev">Biol. Control</abbr>
+         <span class="cit-vol">52</span>, 
+         <span class="cit-fpage">296</span>–
+         <span class="cit-lpage">306</span> (
+         <span class="cit-pub-date">2010</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DBiol.%2BControl%26rft.volume%253D52%26rft.spage%253D296%26rft_id%253Dinfo%253Adoi%252F10.1016%252Fj.biocontrol.2009.01.022%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1016/j.biocontrol.2009.01.022&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=000274583000013&amp;;link_type=ISI" class="cit-ref-sprinkles cit-ref-sprinkles-newisilink cit-ref-sprinkles-webofscience">
+         <span>Web of Science</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">28.</span>
+      <a class="rev-xref-ref" href="#xref-ref-28-1" title="View reference 28. in text" id="ref-28">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.28" data-doi="10.1007/s13593-013-0149-6">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Bregaglio</span>, 
+          <span class="cit-name-given-names">S.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Donatelli</span>, 
+          <span class="cit-name-given-names">M.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Confalonieri</span>, 
+          <span class="cit-name-given-names">R.</span>
+         </span>
+         <span class="cit-article-title">Fungal infections of rice, wheat, and grape in Europe in 2030–2050</span>. 
+         <abbr class="cit-jnl-abbrev">Agron. Sustain. Dev.</abbr>
+         <span class="cit-vol">33</span>, 
+         <span class="cit-fpage">767</span>–
+         <span class="cit-lpage">776</span> (
+         <span class="cit-pub-date">2013</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DAgron.%2BSustain.%2BDev.%26rft.volume%253D33%26rft.spage%253D767%26rft_id%253Dinfo%253Adoi%252F10.1007%252Fs13593-013-0149-6%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1007/s13593-013-0149-6&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">29.</span>
+      <a class="rev-xref-ref" href="#xref-ref-29-1" title="View reference 29. in text" id="ref-29">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.29" data-doi="10.1111/j.2041-210X.2010.00036.x">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Elith</span>, 
+          <span class="cit-name-given-names">J.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Kearney</span>, 
+          <span class="cit-name-given-names">M.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Phillips</span>, 
+          <span class="cit-name-given-names">S.</span>
+         </span>
+         <span class="cit-article-title">The art of modelling range-shifting species</span>. 
+         <abbr class="cit-jnl-abbrev">Methods Ecol. Evol.</abbr>
+         <span class="cit-vol">1</span>, 
+         <span class="cit-fpage">330</span>–
+         <span class="cit-lpage">342</span> (
+         <span class="cit-pub-date">2010</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DMethods%2BEcol.%2BEvol.%26rft.volume%253D1%26rft.spage%253D330%26rft_id%253Dinfo%253Adoi%252F10.1111%252Fj.2041-210X.2010.00036.x%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1111/j.2041-210X.2010.00036.x&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">30.</span>
+      <a class="rev-xref-ref" href="#xref-ref-30-1" title="View reference 30. in text" id="ref-30">↵</a>
+      <div class="cit ref-cit ref-journal" id="cit-520320v1.30" data-doi="10.1002/joc.1276">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Hijmans</span>, 
+          <span class="cit-name-given-names">R. J.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Cameron</span>, 
+          <span class="cit-name-given-names">S. E.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Parra</span>, 
+          <span class="cit-name-given-names">J. L.</span>
+         </span>, 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Jones</span>, 
+          <span class="cit-name-given-names">P. G.</span>
+         </span> &amp;; 
+         <span class="cit-auth">
+          <span class="cit-name-surname">Jarvis</span>, 
+          <span class="cit-name-given-names">A.</span>
+         </span>
+         <span class="cit-article-title">Very high resolution interpolated climate surfaces for global land areas</span>. 
+         <abbr class="cit-jnl-abbrev">Int. J. Climatol.</abbr>
+         <span class="cit-vol">25</span>, 
+         <span class="cit-fpage">1965</span>–
+         <span class="cit-lpage">1978</span> (
+         <span class="cit-pub-date">2005</span>).
+        </cite>
+       </div>
+       <div class="cit-extra">
+        <a href="{openurl}?query=rft.jtitle%253DInt.%2BJ.%2BClimatol.%26rft.volume%253D25%26rft.spage%253D1965%26rft_id%253Dinfo%253Adoi%252F10.1002%252Fjoc.1276%26rft.genre%253Darticle%26rft_val_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal%26ctx_ver%253DZ39.88-2004%26url_ver%253DZ39.88-2004%26url_ctx_fmt%253Dinfo%253Aofi%252Ffmt%253Akev%253Amtx%253Actx" class="cit-ref-sprinkles cit-ref-sprinkles-openurl cit-ref-sprinkles-open-url">
+         <span>OpenUrl</span>
+        </a>
+        <a href="/lookup/external-ref?access_num=10.1002/joc.1276&amp;;link_type=DOI" class="cit-ref-sprinkles cit-ref-sprinkles-doi cit-ref-sprinkles-crossref">
+         <span>CrossRef</span>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li>
+      <span class="ref-label">31.</span>
+      <a class="rev-xref-ref" href="#xref-ref-31-1" title="View reference 31. in text" id="ref-31">↵</a>
+      <div class="cit ref-cit ref-book" id="cit-520320v1.31">
+       <div class="cit-metadata">
+        <cite>
+         <span class="cit-auth">
+          <span class="cit-name-surname">Wood</span>, 
+          <span class="cit-name-given-names">S.</span>
+         </span>
+         <span class="cit-source">Generalized Additive Models: An Introduction with R</span>. (
+         <span class="cit-publ-name">CRC Press</span>, 
+         <span class="cit-pub-date">2006</span>).
+        </cite>
+       </div>
+       <div class="cit-extra"/>
+      </div>
+     </li>
+    </ol>
+   </div>
+   <span class="highwire-journal-article-marker-end"/>
+  </div>
+ </body>
+</html>
