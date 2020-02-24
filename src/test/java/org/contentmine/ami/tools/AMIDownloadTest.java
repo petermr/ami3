@@ -8,13 +8,11 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.contentmine.ami.tools.download.AbstractDownloader;
 import org.contentmine.ami.tools.download.AbstractMetadataEntry;
-import org.contentmine.ami.tools.download.BiorxivDownloader;
-import org.contentmine.ami.tools.download.CurlDownloader;
-import org.contentmine.ami.tools.download.CurlPair;
 import org.contentmine.ami.tools.download.ResultSet;
+import org.contentmine.ami.tools.download.biorxiv.BiorxivDownloader;
 import org.contentmine.cproject.files.CProject;
+import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeList;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.cproject.util.CMineUtil;
@@ -96,60 +94,60 @@ public class AMIDownloadTest extends AbstractAMITest {
 
 	}
 
-	@Test 
-	/** downloads a single curlPair
-	 * 
-	 * @throws Exception
-	 */
-	public void testCurlDownloader() throws Exception {
-			
-		File downloadDir = new File("target/biorxiv/");
-		CurlDownloader curlDownloader = new CurlDownloader();
-		String fileroot = "10.1101/850289v1";
-		
-		CurlPair curlPair = new BiorxivDownloader().createCurlPair(downloadDir, fileroot);
-		curlDownloader.addCurlPair(curlPair);
-
-		String result = curlDownloader.run();
-		System.out.println("BIOX ["+result+"]");
-		Assert.assertTrue(curlPair.getFile().getAbsoluteFile()+" exists", curlPair.getFile().exists());
-
-	}
+//	@Test 
+//	/** downloads a single curlPair
+//	 * 
+//	 * @throws Exception
+//	 */
+//	public void testCurlDownloader() throws Exception {
+//			
+//		File downloadDir = new File("target/biorxiv/");
+//		CurlDownloader curlDownloader = new CurlDownloader();
+//		String fileroot = "10.1101/850289v1";
+//		
+//		CurlPair curlPair = new BiorxivDownloader().createLandingPageCurlPair(downloadDir, fileroot);
+//		curlDownloader.addCurlPair(curlPair);
+//
+//		String result = curlDownloader.run();
+//		System.out.println("BIOX ["+result+"]");
+//		Assert.assertTrue(curlPair.getFile().getAbsoluteFile()+" exists", curlPair.getFile().exists());
+//
+//	}
 	
 
-	@Test 
-	/** download multiple URLs in a single run.
-	 * Still appears to run each sequentially so relatively little performanace gain,
-	 * but maybe worthwhile.
-	 * 
-	 * @throws Exception
-	 */
-	public void testCurlDownloaderMultiple() throws Exception {
-		File downloadDir = new File("target/biorxiv/");
-		CurlDownloader curlDownloader = new CurlDownloader();
-		// these are verbatim from the resultSet file
-		String[] fileroots = {
-			       "/content/10.1101/2020.01.24.917864v1",
-			       "/content/10.1101/850289v1",
-			       "/content/10.1101/641399v2",
-			       "/content/10.1101/844886v1",
-			       "/content/10.1101/709089v1",
-			       "/content/10.1101/823724v1",
-			       "/content/10.1101/827196v1",
-			       "/content/10.1101/823930v1",
-			       "/content/10.1101/821561v1",
-			       "/content/10.1101/819326v1",
-			      };
-		for (String fileroot : fileroots) {
-			curlDownloader.addCurlPair(new BiorxivDownloader().createCurlPair(downloadDir, fileroot));
-		}
-		
-		curlDownloader.setTraceFile("target/trace.txt");
-		curlDownloader.setTraceTime(true);
-		String result = curlDownloader.run();
-		LOG.debug("result ["+result+"]");
-
-	}
+//	@Test 
+//	/** download multiple URLs in a single run.
+//	 * Still appears to run each sequentially so relatively little performanace gain,
+//	 * but maybe worthwhile.
+//	 * 
+//	 * @throws Exception
+//	 */
+//	public void testCurlDownloaderMultiple() throws Exception {
+//		File downloadDir = new File("target/biorxiv/");
+//		CurlDownloader curlDownloader = new CurlDownloader();
+//		// these are verbatim from the resultSet file
+//		String[] fileroots = {
+//			       "/content/10.1101/2020.01.24.917864v1",
+//			       "/content/10.1101/850289v1",
+//			       "/content/10.1101/641399v2",
+//			       "/content/10.1101/844886v1",
+//			       "/content/10.1101/709089v1",
+//			       "/content/10.1101/823724v1",
+//			       "/content/10.1101/827196v1",
+//			       "/content/10.1101/823930v1",
+//			       "/content/10.1101/821561v1",
+//			       "/content/10.1101/819326v1",
+//			      };
+//		for (String fileroot : fileroots) {
+//			curlDownloader.addCurlPair(new BiorxivDownloader().createLandingPageCurlPair(downloadDir, fileroot));
+//		}
+//		
+//		curlDownloader.setTraceFile("target/trace.txt");
+//		curlDownloader.setTraceTime(true);
+//		String result = curlDownloader.run();
+//		LOG.debug("result ["+result+"]");
+//
+//	}
 
 
 
@@ -182,32 +180,32 @@ public class AMIDownloadTest extends AbstractAMITest {
 		
 	}
 	
-	@Test
-	/**
-	 * as above, but download landing pages
-	 */
-	public void testCreateCTreeLandingPagesFromResultSetIT() throws IOException {
-		File targetDir = new File("target/biorxiv/climate");
-		CMineTestFixtures.cleanAndCopyDir(CLIMATE_DIR, targetDir);
-		
-		CProject cProject = new CProject(targetDir).cleanAllTrees();
-		File metadataDir = cProject.getOrCreateExistingMetadataDir();
-		AbstractDownloader biorxivDownloader = new BiorxivDownloader().setCProject(cProject);
-		ResultSet resultSet = biorxivDownloader.createResultSet(new File(metadataDir, "resultSet1.clean.html"));
-		List<String> fileroots = resultSet.getCitationLinks();
-		CurlDownloader curlDownloader = new CurlDownloader();
-		for (String fileroot : fileroots) {
-			curlDownloader.addCurlPair(biorxivDownloader.createCurlPair(cProject.getDirectory(), fileroot));
-		}
-		
-		curlDownloader.setTraceFile("target/trace.txt");
-		curlDownloader.setTraceTime(true);
-		String result = curlDownloader.run();
-		LOG.debug("result ["+result+"]");
-
-//		Assert.assertEquals("Ctree count", 10, cProject.getOrCreateCTreeList().size());
-		
-	}
+//	@Test
+//	/**
+//	 * as above, but download landing pages
+//	 */
+//	public void testCreateCTreeLandingPagesFromResultSetIT() throws IOException {
+//		File targetDir = new File("target/biorxiv/climate");
+//		CMineTestFixtures.cleanAndCopyDir(CLIMATE_DIR, targetDir);
+//		
+//		CProject cProject = new CProject(targetDir).cleanAllTrees();
+//		File metadataDir = cProject.getOrCreateExistingMetadataDir();
+//		AbstractDownloader biorxivDownloader = new BiorxivDownloader().setCProject(cProject);
+//		ResultSet resultSet = biorxivDownloader.createResultSet(new File(metadataDir, "resultSet1.clean.html"));
+//		List<String> fileroots = resultSet.getCitationLinks();
+//		CurlDownloader curlDownloader = new CurlDownloader();
+//		for (String fileroot : fileroots) {
+//			curlDownloader.addCurlPair(biorxivDownloader.createLandingPageCurlPair(cProject.getDirectory(), fileroot));
+//		}
+//		
+//		curlDownloader.setTraceFile("target/trace.txt");
+//		curlDownloader.setTraceTime(true);
+//		String result = curlDownloader.run();
+//		LOG.debug("result ["+result+"]");
+//
+////		Assert.assertEquals("Ctree count", 10, cProject.getOrCreateCTreeList().size());
+//		
+//	}
 	
 	@Test
 	/** issues a search  and turns results into resultSet
@@ -283,10 +281,11 @@ public class AMIDownloadTest extends AbstractAMITest {
 				+ " --site biorxiv"
 				+ " --query climate change"
 				+ " --metadata __metadata"
+// filetypes to download				
 				+ " --rawfiletypes html pdf"
 				+ " --pagesize " + pagesize
 				+ " --pages 1 " + pages
-				+ " --limit " + (pagesize * pages)
+//				+ " --limit " + (pagesize * pages)
 //				+ " --resultset resultSet1.clean.html"
 			;
 		AMIDownloadTool downloadTool = new AMIDownloadTool();
@@ -461,11 +460,6 @@ public class AMIDownloadTest extends AbstractAMITest {
 		}
 		XMLUtil.writeQuietly(resultSetUl, new File("target/scielo/ul.html"), 1);
 		
-		
-		
-		
-		
-		
 		System.out.println("B "+biblioList.size());
 		
 	}
@@ -473,8 +467,48 @@ public class AMIDownloadTest extends AbstractAMITest {
 //	https://www.infoq.com/articles/headless-selenium-browsers/
 		
 
-	
+	@Test
+	public void testAMISearch() {
+		File testSearch3Dir = new File(DOWNLOAD_DIR, "testsearch3");
+		Assert.assertTrue(testSearch3Dir.exists());
+		CProject cProject = new CProject(testSearch3Dir);
+		String cmd = ""
+				+ "-p " + cProject + ""
+				+ " --dictionary country"
+				+ "";
+		new AMISearchTool().runCommands(cmd);
+		CTree cTree = cProject.getCTreeByName("10_1101_2020_01_12_903427v1");
+		Assert.assertTrue(cTree.getDirectory().exists());
+	}
 
+
+	@Test
+	public void testDownloadAndSearchLongIT() {
+		File testSearch3Dir = new File(DOWNLOAD_DIR, "testsearch50");
+		CProject cProject = new CProject(testSearch3Dir);
+		int pagesize = 50;
+		int pages = 1;
+		String args = 
+				"-p " + cProject.toString()
+				+ " --site biorxiv"
+				+ " --query climate change"
+				+ " --metadata __metadata"
+				+ " --rawfiletypes html"
+				+ " --pagesize " + pagesize
+				+ " --pages 1 " + pages
+			;
+		AMIDownloadTool downloadTool = new AMIDownloadTool();
+		downloadTool.runCommands(args);
+		String cmd = ""
+				+ "-p " + cProject + ""
+				+ " --dictionary country disease funders"
+				+ "";
+		new AMISearchTool().runCommands(cmd);
+//		CTree cTree = cProject.getCTreeByName("10_1101_2020_01_12_903427v1");
+//		Assert.assertTrue(cTree.getDirectory().exists());
+	}
+
+	
 	
 
 

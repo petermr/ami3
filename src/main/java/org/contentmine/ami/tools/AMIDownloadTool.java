@@ -1,40 +1,35 @@
 package org.contentmine.ami.tools;
 
 import java.io.File;
-import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.IOUtils;
 import org.apache.http.client.HttpClient;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.ami.tools.AMIDictionaryTool.RawFileFormat;
 import org.contentmine.ami.tools.download.AbstractDownloader;
 import org.contentmine.ami.tools.download.AbstractLandingPage;
 import org.contentmine.ami.tools.download.AbstractMetadataEntry;
-import org.contentmine.ami.tools.download.BiorxivDownloader;
-import org.contentmine.ami.tools.download.BiorxivLandingPage;
-import org.contentmine.ami.tools.download.BiorxivMetadataEntry;
-import org.contentmine.ami.tools.download.CurlDownloader;
-import org.contentmine.ami.tools.download.HALDownloader;
-import org.contentmine.ami.tools.download.HALLandingPage;
-import org.contentmine.ami.tools.download.HALMetadataEntry;
-import org.contentmine.ami.tools.download.OSFDownloader;
-import org.contentmine.ami.tools.download.OSFLandingPage;
-import org.contentmine.ami.tools.download.OSFMetadataEntry;
-import org.contentmine.ami.tools.download.ResultSet;
-import org.contentmine.ami.tools.download.SDDownloader;
-import org.contentmine.ami.tools.download.SDLandingPage;
-import org.contentmine.ami.tools.download.SDMetadataEntry;
+import org.contentmine.ami.tools.download.FullFileManager;
+import org.contentmine.ami.tools.download.FulltextManager;
+import org.contentmine.ami.tools.download.LandingPageManager;
+import org.contentmine.ami.tools.download.QueryManager;
+import org.contentmine.ami.tools.download.biorxiv.BiorxivDownloader;
+import org.contentmine.ami.tools.download.biorxiv.BiorxivLandingPage;
+import org.contentmine.ami.tools.download.biorxiv.BiorxivMetadataEntry;
+import org.contentmine.ami.tools.download.hal.HALDownloader;
+import org.contentmine.ami.tools.download.hal.HALLandingPage;
+import org.contentmine.ami.tools.download.hal.HALMetadataEntry;
+import org.contentmine.ami.tools.download.osf.OSFDownloader;
+import org.contentmine.ami.tools.download.osf.OSFLandingPage;
+import org.contentmine.ami.tools.download.osf.OSFMetadataEntry;
+import org.contentmine.ami.tools.download.sd.SDDownloader;
+import org.contentmine.ami.tools.download.sd.SDLandingPage;
+import org.contentmine.ami.tools.download.sd.SDMetadataEntry;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
-import org.contentmine.cproject.files.CTreeList;
-import org.contentmine.cproject.util.CMineUtil;
-import org.contentmine.graphics.html.HtmlElement;
-import org.contentmine.graphics.html.HtmlHtml;
 
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
@@ -53,9 +48,6 @@ description = "downloads content from remote site. Maybe a wrapper for getpapers
 
 
 public class AMIDownloadTool extends AbstractAMITool {
-	private static final String GET = "GET";
-	private static final String CURL_X = "-X";
-	private static final String CURL = "curl";
 
 	private static final Logger LOG = Logger.getLogger(AMIDownloadTool.class);
 	static {
@@ -122,7 +114,7 @@ public class AMIDownloadTool extends AbstractAMITool {
 			return newMetadata;
 		}
 		
-		public AbstractLandingPage createLandingPage() {
+		public AbstractLandingPage createNewLandingPageObject() {
 			AbstractLandingPage newLandingPage = null;
 			try {
 				newLandingPage = (AbstractLandingPage) Class.forName(landingPage.getClass().getName()).newInstance();
@@ -161,8 +153,8 @@ public class AMIDownloadTool extends AbstractAMITool {
 
     @Option(names = {"--resultset"},
     		arity = "1..*",
-            description = "resultSets to download (experimental)")
-    private List<String> resultsSetList = new ArrayList<>();
+            description = "resultSets to download (filenames, experimental). If omitted, created by programs")
+	public List<String> resultSetList = new ArrayList<>();
 
     @Option(names = {"--site"},
     		arity = "1",
@@ -214,6 +206,7 @@ public class AMIDownloadTool extends AbstractAMITool {
     	if (pageList.size() > 0 && pagesize != null) {
     		limit = pageList.size() * pagesize;
     	}
+    	normalizePageList();
 		System.out.println("limit         " + limit);
 		System.out.println("pages         " + pageList);
 		System.out.println("pagesize      " + pagesize);
@@ -225,61 +218,28 @@ public class AMIDownloadTool extends AbstractAMITool {
     @Override
     protected void runSpecifics() {
 		downloader = createDownloader();
-		downloader.downloadResultSet();
-		try {
-			downloader.downloadPages();
-		} catch (IOException e) {
-			e.printStackTrace();
-			System.err.println("cannot load pages "+ e);
-		}
-		if (resultsSetList.size() > 0) {
-			for (String resultSetFilename : resultsSetList) {
-				System.out.println("download files in resultSet "+resultSetFilename);
-				extractResultSets(resultSetFilename);
-			}
-		}
-		if (rawFileFormats.size() > 0) {
-			try {
-				this.downloadCTrees();
-			} catch (IOException e) {
-				e.printStackTrace();
-				System.err.println("Cannot downloadTrees");
-			}
-		}
+
+		// Get and ouptut resultSets
+		QueryManager queryManager = downloader.getOrCreateQueryManager();
+		resultSetList = queryManager.searchAndDownloadResultSet();
+		
+		LandingPageManager landingPageManager = downloader.getOrCreateLandingPageManager();
+		landingPageManager.downloadLandingPages();
+		
+		FulltextManager fulltextManager = downloader.getOrCreateFulltextManager();
+		fulltextManager.downloadFullTextAndRelatedFiles();
+		
+		List<AbstractMetadataEntry> metadataEntryList = downloader.getMetadataEntryList();
+		FullFileManager fullFileManager = downloader.getOrCreateFullFileManager();
+		fullFileManager.downloadHtmlPages(metadataEntryList);
     }
 
 	private AbstractDownloader createDownloader() {
 		downloader = site.createDownloader(this);
-		downloader.setCProject(cProject)
-//			.setDownloadLimit(limit)
-//			.setPageList(pageList)
-//			.setPageSize(pagesize)
-//			.setQueryList(queryList)
-//			.setSite(site)
-//			.setMetadataDir(new File(cProject.getOrCreateDirectory(), metadata))
-			;
+		downloader.setCProject(cProject);
 		return downloader;
 	}
 	
-	public static String runCurlGet(String url) throws IOException {
-		String[] command = new String[] {CURL, CURL_X, GET, url};
-		String result = runCurl(command);
-		return result;
-	}
-
-	private static String runCurl(String[] command) throws IOException {
-		
-		System.out.println("running "+Arrays.asList(command));
-		ProcessBuilder processBuilder = new ProcessBuilder(command);
-		Process process = processBuilder.start();
-		String result = String.join("\n", IOUtils.readLines(process.getInputStream(), CMineUtil.UTF8_CHARSET));
-		int exitCode = process.exitValue();
-		if (exitCode != 0) {
-			System.err.println("EXITCode: "+exitCode);
-		}
-		return result;
-	}
-
 	public File getMetadataDir() {
 		return new File(cProject.getOrCreateDirectory(), metadata);
 	}
@@ -334,98 +294,16 @@ public class AMIDownloadTool extends AbstractAMITool {
 		return site;
 	}
 
-	private void extractResultSets(String filename) {
-		System.out.println("result set: " + filename);
-		downloader.setCProject(cProject);
-	
-		File metadataDir = cProject.getOrCreateExistingMetadataDir();
-		ResultSet resultSet = downloader.createResultSet(new File(metadataDir, filename));
-		List<String> fileroots = resultSet.getCitationLinks();
-		String result = null;
-		try {
-			result = downloadWithCurl(fileroots);
-		} catch (IOException e) {
-			throw new RuntimeException("Cannot extract resultSet "+filename);
-		}
-//		LOG.debug("downloaded  ["+result+"]");
-	}
-
-	private String downloadWithCurl(List<String> fileroots) throws IOException {
-		CurlDownloader curlDownloader = new CurlDownloader();
-		System.out.println("download with curl to <tree>scrapedMetadata.html" + fileroots);
-		int size = fileroots.size();
-		for (String fileroot : fileroots) {
-			curlDownloader.addCurlPair(downloader.createCurlPair(cProject.getDirectory(), fileroot));
-		}
-		
-		curlDownloader.setTraceFile("target/trace.txt");
-		curlDownloader.setTraceTime(true);
-		System.out.println("running curlDownloader for "+size+" landingPages, takes ca 1 sec/page ");
-		String result = curlDownloader.run();
-		System.out.println("ran curlDownloader for "+size+" landingPages ");
-		// normally empty
-		return result;
-	}
-
-	public HtmlHtml getLandingPageHtml(String content) {
-		System.out.println("content "+content.length());
-		HtmlHtml html = (HtmlHtml) HtmlElement.create(content);
-		return html;
-	}
-
-	private String getLandingPageText(CTree cTree) {
-		File landingPageFile = new File(cTree.getDirectory(), AbstractDownloader.LANDING_PAGE + "." + "html");
-		String content = null;
-		try {
-			content = FileUtils.readFileToString(landingPageFile, CMineUtil.UTF8_CHARSET);
-		} catch (IOException e) {
-			throw new RuntimeException("Cannot read "+landingPageFile, e);
-		}
-		return content;
-	}
-	
-	public AbstractLandingPage getLandingPage(CTree cTree) {
-		String content = getLandingPageText(cTree);
-		HtmlHtml landingPageHtml = null;
-		try {
-			content = downloader.clean(content);
-			landingPageHtml = getLandingPageHtml(content);
-		} catch (Exception e) {
-			System.err.println("Bad parse ("  +cTree + ")"+e);
-			return null;
-		}
-		AbstractLandingPage landingPage = downloader.createLandingPage();
-		landingPage.readHtml(landingPageHtml);
-		return landingPage;
-	}
-
 	public AbstractDownloader getDownloader() {
 		return downloader;
 	}
 	
-	public void downloadCTrees() throws IOException {
-		boolean force = true;
-		CTreeList treeList = cProject.getOrCreateCTreeList(force);
-		AbstractDownloader downloader = getDownloader();
-		for (CTree cTree : treeList) {
-			downloader.setCurrentTree(cTree);
-			AbstractLandingPage landingPage = null;
-			try {
-				landingPage = getLandingPage(cTree);
-			} catch (Exception e) {
-				System.err.println("Cannot get landing page: "+cTree);
-				continue;
-			}
-			if (landingPage != null) {
-				downloader.downloadLink(landingPage);
-			} else {
-				LOG.error("Cannot read CTree links for: " + cTree.getName());
-			}
-		}
+	public List<String> getResultsSetList() {
+		return resultSetList;
 	}
 
-	public List<String> getResultsSetList() {
-		return resultsSetList;
+	public List<RawFileFormat> getRawFileFormats() {
+		return rawFileFormats;
 	}
 
 }

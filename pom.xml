@@ -244,61 +244,6 @@
                         
                         
                         
-                        <!--  older AMI -->
-                        <!-- general -->
-						<!--
-                            <program>
-                                <mainClass>org.contentmine.ContentMine</mainClass>
-                              <!- -  description: exist??? - ->
-                                <id>contentMine</id>
-                            </program>
-						-->
-                        <!--  from Cephis -->
-						<!--
-                            <program>
-                                <mainClass>org.contentmine.cproject.files.CProject</mainClass>
-                              <!- -  description: runs "cproject [args] - ->
-                                <id>cproject</id>
-                            </program>
-						-->
-							<!--
-                            <program>
-                                <mainClass>org.contentmine.cproject.files.MakeProject</mainClass>
-                              <!- -  description:  runs - -makeProject (\\1)/fulltext.pdf - -fileFilter .*/(.*)\\.pdf" - ->
-                                <id>makeProject</id>
-                            </program>
-						-->
-                        <!-- norma -->  
-						<!--
-						
-                            <program>
-                                <mainClass>org.contentmine.norma.Norma</mainClass>
-                              <!- -  description: norma [args]
-                              but also runs makeProject (FIX this) - ->
-                              <id>norma</id>
-                            </program>
-						-->
-							<!--
-                            <program>
-                                <mainClass>org.contentmine.ami.AMIImageProcessor</mainClass>
-                              <!- - description: process images - ->
-                                <id>ami-image-old</id>
-                            </program>
-								-->
-								<!--
-                            <program>
-                                <mainClass>org.contentmine.ami.AMIProcessorPDF</mainClass>
-                              <!- - description: convert PDF into SVG and extract images - ->
-                                <id>ami-pdf-old</id>
-                            </program>
-						-->
-									<!--
-                            <program>
-                                <mainClass>org.contentmine.ami.AMIProcessorXML</mainClass>
-                              <!- - description: converts XML to HTML - ->
-                                <id>ami-xml</id>
-                            </program>
-						-->
                             <program>
                                 <mainClass>org.contentmine.ami.tools.AMITransformTool</mainClass>
                               <!-- description: transform with AMITransform mainly XML-->
@@ -331,13 +276,6 @@
                               <!--  description:  -->
                                 <id>ami-regex</id>
                             </program>
-							<!--
-                            <program>
-                                <mainClass>org.contentmine.ami.plugins.search.SearchPlugin</mainClass>
-                              <!- -  description:  - ->
-                                <id>ami-search-old</id>
-                            </program>
-						-->
                             <program>
                            <!--  will become a tool -->
                                 <mainClass>org.contentmine.ami.tools.AMISearch</mainClass>
@@ -354,13 +292,6 @@
                               <!--  description:  -->
                                 <id>ami-species</id>
                             </program>
-							<!--
-                            <program>
-                                <mainClass>org.contentmine.ami.plugins.word.WordPlugin</mainClass>
-                              <!- -  description:  - ->
-                                <id>ami-word-old</id>
-                            </program>
-						-->
                             <program>
                                 <mainClass>org.xmlcml.cproject.PMan</mainClass>
                                 <id>pman</id>
@@ -380,67 +311,7 @@
                     <version>2.0.1</version>
                 </plugin>  
 
-<!-- comment out as we don't use and it breaks docker -->
-                <!--Tool for building a Debian package (.deb) http://tech.ebuddy.com/2013/10/02/automating-debian-package-creation-and-management-with-mavenant/ 
-                    https://github.com/brndkfr/xmppbot/blob/master/xmppbot/pom.xml -->
-                    <!-- 
-                <plugin>
-                    <artifactId>jdeb</artifactId>
-                    <groupId>org.vafer</groupId>
-                    <version>1.3</version>
-                    <executions>
-                        <execution>
-                            <phase>package</phase>
-                            <goals>
-                                <goal>jdeb</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                    <configuration>
-                        <dataSet>
-                            <data>
-                                <src>${project.build.directory}/appassembler/</src>
-                                <type>directory</type>
-                                <mapper>
-                                    <type>perm</type>
-                                    <filemode>555</filemode>
-                                    <prefix>/usr/share/norma-repo</prefix>
-                                </mapper>
-                            </data>
-    
-    
-                            <data>
-                                <src>${basedir}/src/main/resources/org/contentmine/norma/pubstyle/plosone/htmlTagger.xml</src>
-                                <type>file</type>
-                                <mapper>
-                                    <type>perm</type>
-                                    <filemode>555</filemode>
-                                    <prefix>/usr/share/norma-repo/exampleData/html</prefix>
-                                </mapper>
-                            </data>
-                            <data>
-                                <src>${basedir}/src/test/resources/org/contentmine/norma/pubstyle/plosone/journal.pone.0111303/fulltext.html</src>
-                                <type>file</type>
-                                <mapper>
-                                    <type>perm</type>
-                                    <filemode>555</filemode>
-                                    <prefix>/usr/share/norma-repo/exampleData/html</prefix>
-                                </mapper>
-                            </data>
-    
-    
-                            <data>
-                                <type>link</type>
-                                <symlink>true</symlink>
-                                <linkName>/usr/bin/norma</linkName>
-                                <linkTarget>/usr/share/norma-repo/bin/norma</linkTarget>
-                            </data>
-    
-                        </dataSet>
-                    </configuration>
-                </plugin>
-                -->
-            
+
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
@@ -481,20 +352,6 @@
         </build>
 
         <dependencies>
-        <!-- https://mvnrepository.com/artifact/commons-cli/commons-cli -->
-        <!--  may get rid of this -->
-		<!--
-        <dependency>
-            <groupId>commons-cli</groupId>
-            <artifactId>commons-cli</artifactId>
-            <version>1.4</version>
-        </dependency>
-        <dependency>
-            <groupId>org.contentmine</groupId>
-            <artifactId>cephis</artifactId>
-            <version>${cephis.version}</version>
-        </dependency>
-			-->
             <dependency>
                 <groupId>net.sf.saxon</groupId>
                 <artifactId>Saxon-HE</artifactId>

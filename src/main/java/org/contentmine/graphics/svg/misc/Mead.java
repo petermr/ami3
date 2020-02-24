@@ -51,20 +51,72 @@ public class Mead {
 	public final static Double LUG_END = 3.0 * SCALE;
 	public final static Real2 VECT4 = new Real2(LUG_END, 0.0);
 	
-	public final static String QUOTE = ""
+	public final static String QUOTE0 = ""
 			+ "Never doubt that a small group of thoughtful, committed citizens can change the world;"
 			+ " indeed, it's the only thing that ever has. Margaret Mead.";
-	public static final int NX = 12;
+	public final static String QUOTE1 = ""
+   + "40"
+   + " Atholl"
+   + " LiverpoolFC"
+   + " Norbury"
+   + " HSYM"
+   + " Whitmore"
+   + " Immerse"
+   + " Araucaria"
+   + " Didgeridoo"
+   + " Robinson"
+   + " Balliol"
+   + " Benedict"
+   + " Holywell"
+   + " Wombat"
+   + " Essendon"
+   + " SouthYarra"
+   + " Thornbury"
+   + " CSL"
+   + " YarraValley"
+   + "";
+	
+	public final static String QUOTE2 = ""
+			+ "Dalglish"
+			+ " Gerrard"
+			+ " Barnes"
+			+ " Rush"
+			+ " Fowler"
+			+ " Smith"
+			+ " Carragher"
+			+ " Liddell"
+			+ " Keegan"
+			+ " Souness"
+			+ " Owen"
+			+ " Hanseh"
+			+ " Hughes"
+			+ " Salah"
+			+ " vanDijk"
+			+ " Shankly"
+			+ " Paisley"
+			+ " Watson"
+			+ " Fagan"
+			+ " Benitez"
+			+ " Houllier"
+			+ " Klopp"
+			+ "";
+
+	public final static String QUOTE = QUOTE1;
+
+//	public static final int NX = 12;
+	public static final int NX = 10;
 	public static final int OFFSETX = 50;
 	public static final int DX = 100;
-	public final static int NY = 6;
+//	public final static int NY = 6;
+	public final static int NY = 8;
 	public static final int OFFSETY = 50;
 	public static final int DY = 100;
 	
 	private Real2 currentPoint;
 	private SVGG box;
-	public double fontSize = 20;
+	public double fontSize = 30;
 	private int currentChar;
+	private Real2[][] xy = new Real2[NX + 1][];
 	
 	
 	public static void main(String[] args) {
@@ -73,8 +125,13 @@ public class Mead {
 	}
 
 	public Mead() {
+		for (int i = 0; i <= NX; i++) {
+			xy[i] = new Real2[NY];
+		}
 		drawRect();
-		SVGSVG.wrapAndWriteAsSVG(box, new File("target/puzzle/mead.svg"));
+//		String output = "target/puzzle/mead.svg";
+		String output = "target/puzzle/tom.svg";
+		SVGSVG.wrapAndWriteAsSVG(box, new File(output));
 	}
 	
 	private void drawRect() {
@@ -91,7 +148,7 @@ public class Mead {
 		rect.setStroke("black");
 		box.appendChild(rect); 
 		
-		for (int j = 0; j <NY; j++) {
+		for (int j = 0; j < NY; j++) {
 			for (int i = 0; i < NX; i++) {
 				// vertical
 				if (i < NX && j > 0) {
@@ -124,12 +181,16 @@ public class Mead {
 	}
 
 	private void drawLine(Real2 centre, Real2 dxy, double mult) {
-		SVGText text = new SVGText(centre.plus(dxy.multiplyBy(mult)), String.valueOf(QUOTE.charAt(currentChar++)));
-		text.setFontSize(fontSize);
+		Real2 xy2 = centre.plus(dxy.multiplyBy(mult));
+		double scale = -0.5;
+		Real2 delta = new Real2(fontSize * scale * 0.2,  -1.0 * fontSize * scale);
+		xy2 = xy2.plus(delta);
+		SVGText text = new SVGText(xy2, String.valueOf(QUOTE.charAt(currentChar++)));
+		text.setFontSize(fontSize );
 		text.setFontFamily("helvetica");
 		text.setFontWeight(FontWeight.BOLD);
-		text.setFill("none");
-//		text.setFill("red");
+//		text.setFill("none");
+		text.setFill("red");
 		text.setStrokeWidth(0.1);
 		text.setStroke("blue");
 		box.appendChild(text);
@@ -166,6 +227,7 @@ public class Mead {
 		AbstractCMElement g;
 		Real2Array horizontalEdge  = createHorizontalEdge();
 		if (direction == -1) {
+			// old
 			horizontalEdge = horizontalEdge.getRotatedAboutMidPoint();
 		}
 		horizontalEdge.multiplyBy(scale);
@@ -188,8 +250,12 @@ public class Mead {
 		path = createQuadPath(ra.get(3), ra.get(4), ra.get(5));
 //		path.setStroke("blue");
 		g.appendChild(path);
+		//orig
 		line = createLine(ra.get(5), ra.get(6));
 		g.appendChild(line);
+		// new
+//		path = createQuadPath(ra.get(5), ra.get(6));    // new
+//		g.appendChild(path);                        // new
 		path = createQuadPath(ra.get(6), ra.get(7), ra.get(8));
 		g.appendChild(path);
 		path = createQuadPath(ra.get(8), ra.get(9), ra.get(10));
@@ -213,6 +279,17 @@ public class Mead {
 		path.setStrokeWidth(1.0);
 		path.setFill("none");
 		return path;
+	}
+
+	private SVGPath createQuadPath(Real2 xy0, Real2 xy2) {
+		double deltax = xy0.getX() - xy2.getX();
+		double deltay = xy0.getY() - xy2.getY();
+		Real2 mid = xy0.getMidPoint(xy2);
+		Real2 delta = xy0.subtract(xy2);
+		delta = new Real2(delta.getY(), delta.getX()).multiplyBy(0.3);
+		mid = Math.abs(deltax) < Math.abs(deltay)? mid.plus(delta) : mid.subtract(delta);
+		return createQuadPath(xy0, mid, xy2);
+		
 	}
 
 	private SVGElement createLine(Real2 xy1, Real2 xy2) {

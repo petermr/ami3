@@ -3,6 +3,7 @@ package org.contentmine.ami.tools.download;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.apache.commons.io.IOUtils;
@@ -25,6 +26,8 @@ public class CurlDownloader {
 
 	public final static String CURL = "curl";
 	public final static String _OUT = "-o";
+	private static final String GET = "GET";
+	private static final String CURL_X = "-X";
 	
 	private String urlString;
 	private File outputFile;
@@ -124,5 +127,28 @@ public class CurlDownloader {
 		this.traceTime = traceTime;
 	}
 	
+	// CURL Runners
+	public static String runCurlGet(String url) throws IOException {
+		String[] command = new String[] {CURL, CURL_X, GET, url};
+		String result = runCurl(command);
+		return result;
+	}
+
+	private static String runCurl(String[] command) throws IOException {
+		
+		System.out.println("running "+Arrays.asList(command));
+		ProcessBuilder processBuilder = new ProcessBuilder(command);
+		Process process = processBuilder.start();
+		String result = String.join("\n", IOUtils.readLines(process.getInputStream(), CMineUtil.UTF8_CHARSET));
+		int exitCode = process.exitValue();
+		if (exitCode != 0) {
+			System.err.println("EXITCode: "+exitCode);
+		}
+		return result;
+	}
+
+	public List<String> getCommandList() {
+		return commandList;
+	}
 	
 }

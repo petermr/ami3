@@ -37,6 +37,7 @@ import org.apache.log4j.Logger;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.graphics.html.HtmlB;
 import org.contentmine.graphics.html.HtmlElement;
+import org.contentmine.graphics.html.HtmlHtml;
 import org.contentmine.graphics.html.HtmlI;
 import org.contentmine.graphics.html.HtmlSub;
 import org.contentmine.graphics.html.HtmlSup;
@@ -1776,6 +1777,18 @@ public abstract class XMLUtil implements XMLConstants {
 		sb.append("]");
 		return sb.toString();
 	}
+
+	public static void removeEmptyNodes(Element element, String... tags) {
+		for (String tag : tags) {
+			removeEmptyNodes(element, tag);
+		}
+	}
+
+	public static void removeEmptyNodes(Element element, String tag) {
+		List<Element> elements = XMLUtil.getQueryElements(element, ".//*[local-name()='"+tag+"' and count(node())=0]");
+		removeElements(elements);
+	}
+
 
 		
 }

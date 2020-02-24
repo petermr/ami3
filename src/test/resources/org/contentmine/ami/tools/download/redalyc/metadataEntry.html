@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="artjs" ng-controller="articleController"><head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Language" content="es,en" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta property="og:site_name" content="Redalyc.org" />
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="es_LA" />
+	<meta property="og:locale:alternate" content="en_US" />
+	<meta property="og:locale:alternate" content="es_ES" />	
+	<meta name="language" content="spanish" />
+	<title>Búsqueda de artículos</title>
+	<link rel="shortcut icon" href="img/r2020.ico" />
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+	<link rel="stylesheet" href="css/busquedaArticulo.css" />
+	
+	
+	<script src="js/angular.js"></script>
+	
+	<script src="js/jquery.min.js"></script>
+	
+	<script src="js/busquedaArticulo.js"></script></head>
+<body> 
+	<div class="todo">   
+		<main class="panelD">
+	 		<header>
+			  	<div>
+					<div id="redalyc-redes-idioma">
+						<a href="home.oa" class="tr"><img src="img/home-7-24.png" /></a>
+						<a href="https://twitter.com/Redalyc" target="_blank"><img src="img/twitter-24.png" /></a>
+						<a href="https://www.facebook.com/Redalyc/" target="_blank"><img src="img/facebook-24.png" /></a>
+						<span class="idioma" ng-click="traducir('es', true)"><b>{{t.languages.spa}}</b></span>
+						<span class="idioma" ng-click="traducir('en', true)"><b>{{t.languages.en}}</b></span>
+					</div>
+					<div id="redalyc-general">
+						<img id="logo-redalyc" src="img/logo-redalyc-fondo-oscuro.png" />
+						<div id="redalyc-nombre">
+							<b><span>{{t.redalyc.redalyc}}</span></b><br />
+							<b><span>{{t.redalyc.network}}</span></b><br />
+							<span>{{t.redalyc.oa}}</span>
+						</div>
+					</div>
+				</div>
+				<div id="titulo-pagina">
+					<span>{{t.redalyc.title_page}}</span>
+				</div>
+			</header>
+		  	<div class="plantilla" ng-include="'html/plantillaArticulos.html'"></div>  
+		</main>
+	</div>
+	
+	<div id="overlay" style="z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(0, 0, 0); opacity: 0.5; cursor: wait; position: fixed;"></div>
+	<div id="loading" style="z-index: 1011; position: fixed; padding: 15px; margin: 0px; width: 30%; top: 40%; left: 35%; text-align: center; color: rgb(255, 255, 255); border: none; background-color: rgb(0, 0, 0); cursor: wait; border-radius: 10px; opacity: 0.5; font-size: 20px; font-family: Helvetica;">
+		<img src="img/loading-2.gif" width="100" height="100" /> <br />Buscando artículos
+	</div>
+	
+	<footer id="pie-pagina">
+		<div id="pie-logos">
+			<img id="pie-uaemex" src="img/UAEMex.png" />
+			<img id="pie-redalyc" src="img/redalyc-footer.png" />
+			<img id="pie-oa" src="img/open-access-footer.png" />
+		</div>
+		<div id="informacion-redalyc">
+			<span>{{t.footer.redalyc}} ®</span><br />
+			<span>{{t.footer.network}}</span><br />
+			<span>{{t.footer.oa}}</span><br /><br /><br />
+			<span>{{t.footer.ver}}</span><br />
+			<span>redalyc@redalyc.org</span>			
+		</div>
+	</footer>
+</body> 
+</html>

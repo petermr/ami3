@@ -247,7 +247,7 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 			split = ",", 
 			description = "(A) suffixes of included files (${COMPLETION-CANDIDATES}): "
 					+ "can be concatenated with commas ")
-	protected List<RawFileFormat> rawFileFormats;
+	protected List<RawFileFormat> rawFileFormats = new ArrayList<>();
 
     @Option(names = {"--subdirectorytype"},
     		arity = "1",
@@ -281,7 +281,7 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 	protected static String CONTENT_MINE_HOME = "ContentMine";
 	protected static File DEFAULT_CONTENT_MINE_DIR = new File(HOME_DIR, CONTENT_MINE_HOME);
 	
-	protected CProject cProject;
+	public CProject cProject;
 	protected CTree cTree;
 	protected CTreeList cTreeList;
 	// needed for testing I think

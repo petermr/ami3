@@ -429,7 +429,8 @@ public class HtmlUtil {
 	}
 
 	public static Element parseCleanlyToXHTML(String result) {
-		result = HtmlUtil.removeScripts(result);		
+		result = HtmlUtil.removeScripts(result);	
+		result = HtmlUtil.removeFloatingAmpersand(result);
 		result = XMLUtil.replaceCharacterEntities(result);
 		Element element = null;
 		try {
@@ -441,6 +442,16 @@ public class HtmlUtil {
 		return element;
 	}
 
+	/** the string "& " is almost certainly an error 
+	 * replace by "&amp; "
+	 * 
+	 * @param result
+	 * @return
+	 */
+
+	private static String removeFloatingAmpersand(String result) {
+		return result.replaceAll("& ", "&amp; ");
+	}
 
 	/** cleans non-XML stuff from HTML file
 	 * e.g. <script> with non-compliant content

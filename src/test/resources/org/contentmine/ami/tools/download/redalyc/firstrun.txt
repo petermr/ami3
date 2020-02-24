@@ -1,0 +1,4 @@
+MacBook-Pro-3:ami3 pm286$ /Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary --headless --remote-debugging-port=9222 --disable-gpu https://osf.io/search/?q=climate%20change 
+[0218/174725.056037:ERROR:socket_posix.cc(148)] bind() failed: Address already in use (48)
+[0218/174725.056646:ERROR:socket_posix.cc(148)] bind() failed: Address already in use (48)
+[0218/174725.056678:ERROR:devtools_http_handler.cc(298)] Cannot start http server for devtools.

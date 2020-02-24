@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="artjs" ng-controller="articleController" class="ng-scope"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Language" content="es,en">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:site_name" content="Redalyc.org">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="es_LA">
+	<meta property="og:locale:alternate" content="en_US">
+	<meta property="og:locale:alternate" content="es_ES">	
+	<meta name="language" content="spanish">
+	<title>Búsqueda de artículos</title>
+	<link rel="shortcut icon" href="img/r2020.ico">
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/busquedaArticulo.css">
+	
+	
+	<script src="js/angular.js"></script>
+	
+	<script src="js/jquery.min.js"></script>
+	
+	<script src="js/busquedaArticulo.js"></script></head>
+<body> 
+	<div class="todo">   
+		<main class="panelD">
+	 		<header>
+			  	<div>
+					<div id="redalyc-redes-idioma">
+						<a href="home.oa" class="tr"><img src="img/home-7-24.png"></a>
+						<a href="https://twitter.com/Redalyc" target="_blank"><img src="img/twitter-24.png"></a>
+						<a href="https://www.facebook.com/Redalyc/" target="_blank"><img src="img/facebook-24.png"></a>
+						<span class="idioma" ng-click="traducir('es', true)"><b class="ng-binding">ESP</b></span>
+						<span class="idioma" ng-click="traducir('en', true)"><b class="ng-binding">ENG</b></span>
+					</div>
+					<div id="redalyc-general">
+						<img id="logo-redalyc" src="img/logo-redalyc-fondo-oscuro.png">
+						<div id="redalyc-nombre">
+							<b><span class="ng-binding">Sistema de Información Científica Redalyc</span></b><br>
+							<b><span class="ng-binding">Red de Revistas Científicas</span></b><br>
+							<span class="ng-binding">Acceso abierto sin fines de lucro propiedad de la academia</span>
+						</div>
+					</div>
+				</div>
+				<div id="titulo-pagina">
+					<span class="ng-binding">Búsqueda de artículos</span>
+				</div>
+			</header>
+		  	<!-- ngInclude: 'html/plantillaArticulos.html' --><div class="plantilla ng-scope" ng-include="'html/plantillaArticulos.html'"><!-- SIDEBAR -->
+<div id="sidebar" class="sidebar ng-scope">
+	<h4 style="text-align:left;font-weight:normal;text-indent:40px;" class="ng-binding">Filtros de búsqueda</h4>
+	<br> 
+	<div style="display: block; text-align:center;">
+		<!-- ngRepeat: filtro in filterData -->
+		<div class="container">
+   			<div class="row">
+    			<div ng-click="applyFilters()" class="btn-nav aplicar-filtro ng-binding" style="cursor:pointer;">Aplicar filtros</div>
+	    	</div>
+	 	</div>
+    </div>
+</div>    
+<!-- END SIDEBAR -->
+<div id="contenido" class="ng-scope">
+	<span class="content" id="content">
+	  	<a id="cerrar" class="abrir-cerrar" onclick="ocultar()"><i class="fas fa-bars"></i></a>
+		<a id="abrir" class="abrir-cerrar" onclick="mostrar()"><i class="fas fa-bars"></i></a>
+  	</span>
+  	<div class="searchBox">
+   		<form id="busqueda" class="ng-pristine ng-valid">
+			<label>
+				<input ng-model="busqueda.textoABuscar" type="text" class="ng-pristine ng-untouched ng-valid ng-empty">
+				<input ng-keypress="goEnter($event, busqueda.textoABuscar)" ng-click="go(busqueda.textoABuscar)" type="image" src="img/buscador-institucionmdpi.png" title="Buscar" style="width: 25px;height: 25px;border-bottom: none;position: relative;right: 35px;">
+			</label>
+		</form>
+   		<br>
+   		<h4 class="ng-binding">Resultados para  "<i class="ng-binding"></i>"</h4> 
+   		<br><br>
+		<span class="vistas border-red lista ng-binding" ng-click="cambiaVista('lista')" style="cursor: pointer;"><img src="img/lista.png" width="17px">  Lista</span>
+		<span class="vistas tabla ng-binding" ng-click="cambiaVista('tabla')" style="cursor: pointer;"><img src="img/tabla.png" width="15px">  Tabla</span>	
+		<!-- ngIf: data.length > 0 -->
+	</div>  
+  	<div id="filtros">
+	  	<!-- ngIf: cadenaYear.length != '' -->
+	  	<!-- ngIf: cadenaIdioma.length != '' -->
+	  	<!-- ngIf: cadenaDisciplina.length != '' -->
+	  	<!-- ngIf: cadenaPais.length != '' -->
+  	</div>
+  	<!-- NO RESULTS -->
+    <div id="ar-informe-no-resultados" style="text-align:center;margin-top: 20px; display: none;">
+  		<span>No se encontraron resultados para: <b class="ng-binding"></b>.</span><br><br>
+	</div>  
+	<!-- NO RESULTS END -->
+<div>
+<!-- GRID CARD VIEW -->
+	<!-- ngIf: tipoVista == 'lista' --><div class="content ng-scope" ng-if="tipoVista == 'lista'" style="background-color:#f5f5f5;"> 
+	   	<!-- ngRepeat: article in data -->
+	</div><!-- end ngIf: tipoVista == 'lista' -->
+<!-- END GRID CARD VIEW -->  
+<!-- TABLE VIEW -->
+	<!-- ngIf: tipoVista == 'tabla' -->
+<!-- END TABLE VIEW -->
+</div>
+<!-- ngIf: data.length > 0 -->
+</div></div>  
+		</main>
+	</div>
+	
+	<div id="overlay" style="z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(0, 0, 0); opacity: 0.5; cursor: wait; position: fixed;"></div>
+	<div id="loading" style="z-index: 1011; position: fixed; padding: 15px; margin: 0px; width: 30%; top: 40%; left: 35%; text-align: center; color: rgb(255, 255, 255); border: none; background-color: rgb(0, 0, 0); cursor: wait; border-radius: 10px; opacity: 0.5; font-size: 20px; font-family: Helvetica;">
+		<img src="img/loading-2.gif" width="100" height="100"> <br>Buscando artículos
+	</div>
+	
+	<footer id="pie-pagina">
+		<div id="pie-logos">
+			<img id="pie-uaemex" src="img/UAEMex.png">
+			<img id="pie-redalyc" src="img/redalyc-footer.png">
+			<img id="pie-oa" src="img/open-access-footer.png">
+		</div>
+		<div id="informacion-redalyc">
+			<span class="ng-binding">Sistema de Información Científica Redalyc ®</span><br>
+			<span class="ng-binding">Red de Revistas Científicas</span><br>
+			<span class="ng-binding">Acceso Abierto sin fines de lucro propiedad de la academia</span><br><br><br>
+			<span class="ng-binding">Redalyc 2019 Versión 5.0 | 2019</span><br>
+			<span>redalyc@redalyc.org</span>			
+		</div>
+	</footer>
+ 
+</body></html>

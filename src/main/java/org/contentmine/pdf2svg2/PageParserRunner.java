@@ -33,15 +33,8 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.rendering.PDFRenderer;
 import org.apache.pdfbox.rendering.PageDrawer;
 import org.apache.pdfbox.rendering.PageDrawerParameters;
-<<<<<<< HEAD:src/main/java/org/contentmine/pdf2svg2/PageDrawerRunner.java
-import org.contentmine.eucl.euclid.Real2;
-import org.contentmine.eucl.euclid.RealArray;
-import org.contentmine.graphics.svg.GraphicsElement.FontStyle;
-import org.contentmine.graphics.svg.GraphicsElement.FontWeight;
-=======
 import org.contentmine.ami.tools.AMIPDFTool;
 import org.contentmine.ami.tools.AMIPDFTool.PDFTidySVG;
->>>>>>> fa522a9c191089c912d5bb72e97445e58d0be1ff:src/main/java/org/contentmine/pdf2svg2/PageParserRunner.java
 import org.contentmine.graphics.svg.SVGConstants;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
@@ -501,17 +494,11 @@ public class PageParserRunner
 		this.setPageSerial(PageSerial.createFromZeroBasedPage(pageIndex));
 		processPage(pageIndex);
 		
-<<<<<<< HEAD:src/main/java/org/contentmine/pdf2svg2/PageDrawerRunner.java
-		outputDir = new File("/users/pm286/");
-//		AbstractAMITest.PDF2SVG2;
-		outputPng = new File(outputDir, root+"."+pageSerial+".png");
-=======
 //		outputDir = AbstractAMITest.PDF2SVG2;
 		outputDir = new File("target/pageParser/");
 		LOG.warn("creating target/pageParser/ dir - probably contains test data");
 		outputDir.mkdirs();
 		outputPngFile = new File(outputDir, root+"."+pageIndex+".png");
->>>>>>> fa522a9c191089c912d5bb72e97445e58d0be1ff:src/main/java/org/contentmine/pdf2svg2/PageParserRunner.java
 		
 		try {
 			ImageIO.write(getImage(), "PNG", outputPngFile);

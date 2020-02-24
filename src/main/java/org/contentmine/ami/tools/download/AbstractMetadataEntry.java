@@ -28,7 +28,8 @@ public abstract class AbstractMetadataEntry {
 //	private Element metadataElement;
 	protected HtmlElement metadataEntryElement;
 
-	protected AbstractMetadataEntry() {}
+	protected AbstractMetadataEntry() {
+	}
 	
 	protected AbstractMetadataEntry(AbstractDownloader downloader) {
 		this.downloader = downloader;
@@ -55,7 +56,7 @@ public abstract class AbstractMetadataEntry {
 		// this is currently the slow step because it's done for each page
 		String fullUrl = getFullUrl();
 		
-		String content = AMIDownloadTool.runCurlGet(fullUrl);
+		String content = CurlDownloader.runCurlGet(fullUrl);
 		Element contentElement = null;
 		try {
 			contentElement = HtmlUtil.parseCleanlyToXHTML(content);
@@ -102,5 +103,12 @@ public abstract class AbstractMetadataEntry {
 		extractMetadata();
 	}
 
-
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("u "+urlPath+"; d: "+doi+"; ");
+//		sb.append("\n");
+		sb.append("md "+metadataEntryElement.toXML().length());
+		return sb.toString();
+	}
 }

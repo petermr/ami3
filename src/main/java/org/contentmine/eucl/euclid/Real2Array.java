@@ -665,6 +665,13 @@ public class Real2Array implements EuclidConstants ,  Iterable<Real2>  {
 		}
 		return rowList;
 	}
+	// flip X and Y coords in this
+	public Real2Array flipXY() {
+		RealArray swap = xarr;
+		xarr = yarr;
+		yarr = swap;
+		return this;
+	}
 	
 	
 }
