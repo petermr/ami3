@@ -2,6 +2,7 @@ package org.contentmine.ami.tools;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
@@ -14,11 +15,13 @@ import org.contentmine.ami.tools.download.biorxiv.BiorxivDownloader;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeList;
+import org.contentmine.cproject.metadata.AbstractMetadata;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlLi;
 import org.contentmine.graphics.html.HtmlUl;
+import org.hamcrest.MatcherAssert;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -39,11 +42,65 @@ public class AMIDownloadTest extends AbstractAMITest {
 	private static File BIORXIV_DIR = new File(DOWNLOAD_DIR, "biorxiv");
 	private static File CLIMATE_DIR = new File(BIORXIV_DIR, "climate");
 	
+    private Object first;
+    private Object second;
+
+    private List<Object> list;
+    
+
+	@Test
+	/** 
+	 * run query
+	 */
+	public void testBiorxivSmall() throws Exception {
+		
+		File target = new File("target/biorxiv1");
+		FileUtils.deleteDirectory(target);
+		MatcherAssert.assertThat(target+" does not exist", !target.exists());
+		String args = 
+				"-p " + target
+				+ " --site biorxiv" // the type of site 
+				+ " --query coronavirus" // the query
+				+ " --pagesize 1" // size of remote pages (may not always work)
+				+ " --pages 1 1" // number of pages
+				+ " --resultset raw clean"
+				+ " --landingpage "
+				+ " --fulltext html pdf"
+//				+ " --limit 500"  // total number of downloaded results
+			;
+		new AMIDownloadTool().runCommands(args);
+		// check for reserved and non-reserved child files
+		long fileCount0 = Files.walk(target.toPath(), AbstractMetadata.CPROJECT_DEPTH)
+				.sorted()
+				.peek(System.out::println)
+				.count();
+		Assert.assertEquals("files", 1, fileCount0);
+		Assert.assertEquals("directory", 1, fileCount0);
+		
+		long fileCount = Files.walk(target.toPath(), AbstractMetadata.CTREE_DEPTH)
+			.sorted()
+			.count();
+		Assert.assertEquals("files", 3, fileCount); // project metadata and 2 CTrees
+		// files only
+		fileCount = Files.walk(target.toPath(), AbstractMetadata.CTREE_CHILD_DEPTH)
+				.sorted()
+				.filter(f -> !f.toFile().isDirectory())
+				.peek(System.out::println)
+				.count();
+		Assert.assertEquals("files", 8, fileCount); 
+		fileCount = Files.walk(target.toPath())
+				.sorted()
+				.filter(f -> f.toFile().isDirectory()) // biorxiv1/, __metadata/ and 1 ctree
+				.count();
+		Assert.assertEquals("files", 3, fileCount);
+	}
+
 	@Test
 	/** 
 	 * run query
 	 */
 	public void testBiorxiv() throws Exception {
+		
 		String args = 
 				"-p target/biorxiv"
 				+ " --site biorxiv"

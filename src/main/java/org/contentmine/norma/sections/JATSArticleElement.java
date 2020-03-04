@@ -49,6 +49,10 @@ public class JATSArticleElement extends JATSElement implements IsBlock, HasDirec
 	private JATSBodyElement body;
 	private JATSBackElement back;
 	
+	public JATSArticleElement() {
+		super(TAG);
+	}
+	
 	public JATSArticleElement(Element element) {
 		super(element);
 	}

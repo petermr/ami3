@@ -3,6 +3,7 @@ package org.contentmine.norma.sections;
 import java.util.Arrays;
 import java.util.List;
 
+import nu.xom.Attribute;
 import nu.xom.Element;
 
 public class JATSContribElement extends JATSElement implements IsBlock {
@@ -40,6 +41,7 @@ public class JATSContribElement extends JATSElement implements IsBlock {
 			JATSSpanFactory.EDITION,
 			JATSDivFactory.ADDRESS,
 	});
+	public static final String AUTHOR = "author";
 
 	@Override
 	protected List<String> getAllowedChildNames() {
@@ -48,18 +50,27 @@ public class JATSContribElement extends JATSElement implements IsBlock {
 
 	
 	private JATSNameElement name;
+	private JATSStringNameElement stringName;
 	private JATSXrefElement xref;
 	private String contribType;
 	private String role;
 	
-
+	public JATSContribElement() {
+		super(TAG);
+	}
+		
 	public JATSContribElement(Element element) {
-		super(element);
+			super(element);
 		this.contribType = element.getAttributeValue(CONTRIB_TYPE);
 		this.role = element.getAttributeValue(ROLE);
 	}
 
 	public String getContribType() {
 		return contribType;
+	}
+	
+	public JATSContribElement setContribType(String type) {
+		this.addAttribute(new Attribute(CONTRIB_TYPE, type));
+		return this;
 	}
 }

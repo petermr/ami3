@@ -12,6 +12,15 @@ public class JATSStringNameElement extends JATSElement {
 
     public static String TAG = "string-name";
 
+    public JATSStringNameElement() {
+        super(TAG);
+    }
+
+    public JATSStringNameElement(String content) {
+        this();
+        appendText(content);
+    }
+
     public JATSStringNameElement(Element element) {
         super(element);
     }

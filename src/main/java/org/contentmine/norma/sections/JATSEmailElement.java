@@ -12,6 +12,15 @@ public class JATSEmailElement extends JATSElement {
 
     public static String TAG = "email";
 
+    public JATSEmailElement() {
+        super(TAG);
+    }
+
+    public JATSEmailElement(String text) {
+    	this();
+    	this.appendText(text);
+    }
+
     public JATSEmailElement(Element element) {
         super(element);
     }

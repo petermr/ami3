@@ -14,12 +14,21 @@ public class JATSArticleTitleElement extends JATSElement implements IsBlock {
 	
 	static final String TAG = "article-title";
 
+	public JATSArticleTitleElement() {
+		super(TAG);
+	}
+
 	public JATSArticleTitleElement(Element element) {
 		super(element);
 	}
 
 	public String debugString(int level) {
 		return "t: "+this.getValue();
+	}
+
+	public JATSElement appendText(String content) {
+		this.appendChild(content);
+		return this;
 	}
 
 

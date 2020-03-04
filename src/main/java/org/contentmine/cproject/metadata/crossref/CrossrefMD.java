@@ -121,41 +121,6 @@ public class CrossrefMD extends AbstractMetadata {
 	public static final String TYPE_PATH = "$.type";
 	public static final String URL_PATH = "$.URL";
 
-//	public static List<String> getHeaders() {
-//		List<String> headers = Arrays.asList(
-//			new String[] {
-//				"URL",
-//				"Title",
-//				"Date",
-//				"PDFURL",
-//				"DownloadedPDF",
-//				"HTMLURL",
-//				"DownloadedHTML",
-//				"XMLURL",
-//				"DownloadedXML",
-//				"DOI",
-//				"Publisher",
-//				"Volume",
-//				"AuthorList",
-//				"Issue",
-//				"FirstPage",
-//				"Description",
-//				"Abstract",
-//				"Journal",
-//				"License",
-//				"Links",
-//				"Copyright",
-//				"ISSN",
-//				"Keywords",
-//				"QuickscrapeMD",
-//				"CrossrefMD",
-//				"PublisherMD",
-//			});
-//		return headers;
-//	}
-	
-
-
 
 	public static AbstractMetadata createMetadata() {
 		return new CrossrefMD();

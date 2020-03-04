@@ -44,8 +44,13 @@ name = "ami-download",
 aliases = "download",
 version = "ami-download 0.1",
 description = "downloads content from remote site. Maybe a wrapper for getpapers, curl, etc."
-)
+) 
 
+/** see org.contentmine.ami.tools.download.AbstractDownloader for mechanism and options
+ * 
+ * @author pm286
+ *
+ */
 
 public class AMIDownloadTool extends AbstractAMITool {
 
@@ -124,6 +129,16 @@ public class AMIDownloadTool extends AbstractAMITool {
 			return newLandingPage;
 		}
 	}
+	
+	public enum Cleanness {
+		raw,
+		clean
+	}
+
+    @Option(names = {"--landingpage"},
+    		arity = "1",
+            description = "")
+    private String landingPage;
 
     @Option(names = {"--limit"},
     		arity = "1",
@@ -153,7 +168,8 @@ public class AMIDownloadTool extends AbstractAMITool {
 
     @Option(names = {"--resultset"},
     		arity = "1..*",
-            description = "resultSets to download (filenames, experimental). If omitted, created by programs")
+            description = "resultSets to download (filenames, experimental). If omitted, "
+            		+ "created by programs")
 	public List<String> resultSetList = new ArrayList<>();
 
     @Option(names = {"--site"},
@@ -195,26 +211,30 @@ public class AMIDownloadTool extends AbstractAMITool {
     		output = "scraped/";
     		LOG.info("set output to: " + output);
     	}
-		System.out.println("fileformats     " + rawFileFormats);
+//		System.out.println("fileformats     " + rawFileFormats);
 		System.out.println("project         " + cProject);
 		System.out.println();
 		return true;
 	}
 
+
     @Override
 	protected void parseSpecifics() {
-    	if (pageList.size() > 0 && pagesize != null) {
-    		limit = pageList.size() * pagesize;
-    	}
-    	normalizePageList();
-		System.out.println("limit         " + limit);
-		System.out.println("pages         " + pageList);
-		System.out.println("pagesize      " + pagesize);
-		System.out.println("query         " + queryList);
-		System.out.println("site          " + site);
+		if (pageList.size() > 0 && pagesize != null) {
+			limit = pageList.size() * pagesize;
+		}
+		normalizePageList();
+		System.out.println("landingPage        " + landingPage);
+		System.out.println("limit              " + limit);
+		System.out.println("metadata           " + metadata);
+		System.out.println("pages              " + pageList);
+		System.out.println("pagesize           " + pagesize);
+		System.out.println("query              " + queryList);
+		System.out.println("resultSetList      " + resultSetList);
+		System.out.println("site               " + site);
 		System.out.println();
 	}
-    
+
     @Override
     protected void runSpecifics() {
 		downloader = createDownloader();

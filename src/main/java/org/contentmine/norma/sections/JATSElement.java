@@ -27,6 +27,7 @@ public class JATSElement extends Element {
 
 	public static final String CLASS = "class";
 	public static final String ID = "id";
+	public static final String URL = "url";
 	protected CTree cTree;
 	
 	/**
@@ -608,4 +609,31 @@ public class JATSElement extends Element {
 		}
 		return htmlElement;
 	}
+
+	/** wrapper for appendChild() so we can use fluent
+	 * 
+	 * @param element
+	 * @return
+	 */
+	public JATSElement appendElement(JATSElement element) {
+		this.appendChild(element);
+		return this;
+	}
+	
+	public JATSElement appendText(String text) {
+		this.appendChild(new Text(text));
+		return this;
+	}
+	
+	/** wrapper for addAttribute() so we can use fluent
+	 * 
+	 * @param element
+	 * @return
+	 */
+	public JATSElement setAttribute(String name, String value) {
+		this.addAttribute(new Attribute(name, value));
+		return this;
+	}
+
+
 }

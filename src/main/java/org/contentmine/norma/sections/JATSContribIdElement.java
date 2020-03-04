@@ -11,6 +11,12 @@ public class JATSContribIdElement extends JATSElement {
     }
 
     public static String TAG = "contrib-id";
+	public static final String CONTRIB_ID_TYPE = "contrib_id_type";
+	public static final String ORCID = "orcid";
+
+    public JATSContribIdElement() {
+        super(TAG);
+    }
 
     public JATSContribIdElement(Element element) {
         super(element);

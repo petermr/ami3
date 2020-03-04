@@ -48,6 +48,10 @@ public class JATSJournalMetaElement extends JATSElement implements IsBlock, HasD
 	}
 
 
+	public JATSJournalMetaElement() {
+		super(TAG);
+	}
+
 	public JATSJournalMetaElement(Element element) {
 		super(element);
 	}

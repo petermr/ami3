@@ -12,6 +12,10 @@ public class JATSInstitutionElement extends JATSElement {
 
     public static String TAG = "institution";
 
+    public JATSInstitutionElement() {
+        super(TAG);
+    }
+
     public JATSInstitutionElement(Element element) {
         super(element);
     }

@@ -22,7 +22,29 @@ import org.contentmine.graphics.html.util.HtmlUtil;
 
 import nu.xom.Element;
 
-/** superclass for all web and similar downloaderss
+/** superclass for all web and similar downloaders
+ * 
+ * downloading occurs in phases, varying according to the target.
+ * 
+ * 	public QueryManager getOrCreateQueryManager();
+	public LandingPageManager getOrCreateLandingPageManager();
+	public FulltextManager getOrCreateFulltextManager();
+	public FullFileManager getOrCreateFullFileManager();
+	
+	A QueryManagerissues a query to a remove API or similar search. The result is normally a list of
+	hits/results, formalised by a ResultSet class. The results are often in chunks (pages) determined by the
+	host API, sometimes settable by the client. QM can limit the pages and iterate over then or a subset.
+	Outcome is preserved by files in cProject/metadata. Thes can be interrogated later by LandingPageManager
+	
+	A LandingPageManager retrieves the landing page for a hit. Sometimes this is the whole document, but more
+	often a set of pointers to other documents (e.g. abstracts, fulltext, supplementary)
+	
+	A FulltextManager uses the landing page to get initial fulltext. This might be the text on the landing page
+	or more often from links on it. Sometimes the fulltext, rather than the landingPage, contains the further 
+	pointers, especially when these are in HTML <meta> elements.
+	
+	FullFileManager can select the various files pointed to from the Landing Page or from the fulltext.
+	 
  * 
  * @author pm286
  *

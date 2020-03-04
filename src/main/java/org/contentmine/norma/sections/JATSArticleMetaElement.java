@@ -197,8 +197,12 @@ public class JATSArticleMetaElement extends JATSElement implements IsBlock, HasD
 
 	private JATSAbstractElement abstractx;
 	private JATSHistoryElement history;
-	private JATSTitleGroupElement titleGroup;
-	private JATSContribGroupElement contribGroup;
+//	private JATSTitleGroupElement titleGroup;
+//	private JATSContribGroupElement contribGroup;
+	
+	public JATSArticleMetaElement() {
+		super(TAG);
+	}
 	
 	public JATSArticleMetaElement(Element element) {
 		super(element);
@@ -238,7 +242,7 @@ public String getPublisherID() {
 	
 	protected void applyNonXMLSemantics() {
 		makeAffListAndResolve();
-		history = (JATSHistoryElement) this.getSingleChild(JATSHistoryElement.TAG);
+		setHistory((JATSHistoryElement) this.getSingleChild(JATSHistoryElement.TAG));
 	}
 
 	private void makeAffListAndResolve() {
@@ -257,6 +261,14 @@ public String getPublisherID() {
 	
 	public String directoryName() {
 		return this.TAG;
+	}
+
+	public JATSHistoryElement getHistory() {
+		return history;
+	}
+
+	public void setHistory(JATSHistoryElement history) {
+		this.history = history;
 	}
 
 }
