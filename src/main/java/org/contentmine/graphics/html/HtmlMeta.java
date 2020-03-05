@@ -120,8 +120,8 @@ public class HtmlMeta extends HtmlElement {
 	}
 
 	/** translates HW metadata to JATS equivalent.
-	 * sometimes needs a compound element 
-	 * these may need to be stitched together later
+	 * 
+	 * the stream of these will be assembled into JATS later.
 	 * 
 	 * @return
 	 */
@@ -143,15 +143,6 @@ public class HtmlMeta extends HtmlElement {
 			jatsElement = new JATSAbstractElement().appendText(content); 
 			
         } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_AUTHOR)) {
-        	/**
-	<contrib contrib-type="author">
-		<name>
-			<surname>Huy</surname>
-			<given-names>Rekol</given-names>
-		</name>
-		<role>Editor</role>
-	</contrib>
-        	 */
 			jatsElement = new JATSContribElement().setContribType(JATSContribElement.AUTHOR).
 					appendElement(new JATSStringNameElement(content)); 
 			
@@ -225,7 +216,6 @@ public class HtmlMeta extends HtmlElement {
     		jatsElement = new JATSExtLinkElement()
     				.setExtLinkType(AbstractMetadata.FULLTEXT_PDF)
     				.setHref(content);
-
         	
         } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_PUBLIC_URL)) {
     		jatsElement = new JATSExtLinkElement()
@@ -233,7 +223,7 @@ public class HtmlMeta extends HtmlElement {
     				.setHref(content);
         	
         } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_PUBLICATION_DATE)) {
-    		jatsElement = new JATSDateElement(content);
+    		jatsElement = new JATSDateElement(content).setType(JATSDateElement.PUB);
         	
         } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_PUBLISHER)) {
     		jatsElement = new JATSPublisherElement()

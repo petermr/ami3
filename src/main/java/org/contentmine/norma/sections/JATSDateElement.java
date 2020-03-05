@@ -7,6 +7,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.eucl.euclid.JodaDate;
 
+import nu.xom.Attribute;
 import nu.xom.Element;
 
 public class JATSDateElement extends JATSElement implements IsBlock {
@@ -24,11 +25,14 @@ public class JATSDateElement extends JATSElement implements IsBlock {
 	}
 	
 	static final String TAG = "date";
+	public static final String DATE_TYPE = "date-type";
+
 	public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {
 			JATSSpanFactory.DAY,
 			JATSSpanFactory.MONTH,
 			JATSSpanFactory.YEAR,
 	});
+	public static final String PUB = "pub";
 	
 	@Override
 	protected List<String> getAllowedChildNames() {
@@ -60,6 +64,11 @@ public class JATSDateElement extends JATSElement implements IsBlock {
 		year = this.getSingleChildValue(JATSSpanFactory.YEAR);
 //		JodaDate.parseDate(date, format);
 		
+	}
+
+	public JATSElement setType(String type) {
+		this.addAttribute(new Attribute(DATE_TYPE, type));
+		return this;
 	}
 
 

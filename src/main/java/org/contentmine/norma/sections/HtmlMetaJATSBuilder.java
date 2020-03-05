@@ -13,11 +13,20 @@ import org.contentmine.graphics.html.HtmlMeta;
 
 import nu.xom.Element;
 
+/**
+ * creates a JATSArticleElement from the components produced by HtmlMeta (from HW, DC, etc.)
+ * 
+ * tries to gather them into structured JATS
+ * @author pm286
+ *
+ */
 public class HtmlMetaJATSBuilder extends JATSBuilder {
 	private static final Logger LOG = Logger.getLogger(HtmlMetaJATSBuilder.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
+	
+	private static final String ANONYMOUS = "anonymous";
 	
 	private Map<MetadataScheme, List<HtmlMeta>> metadataByScheme;
 	private List<HtmlMeta> dcList;
@@ -52,11 +61,9 @@ public class HtmlMetaJATSBuilder extends JATSBuilder {
 
 	public JATSArticleElement processHWList() {
 		List<JATSElement> jatsList = getOrCreateHWList().stream()
-				
 				.map(hw -> hw.toJATS())
 				.collect(Collectors.toList())
 				;
-//		jatsList.forEach(m -> System.out.println(m == null ? "null" : m.toXML()));
 		JATSArticleElement article = tidyJATS(jatsList);
 		return article;
 		
@@ -73,9 +80,11 @@ public class HtmlMetaJATSBuilder extends JATSBuilder {
             	getOrCreateArticleMetaElement().appendChild(element);
             	
             } else if (element instanceof JATSArticleElement) {
+            	// unlikely
             	getOrCreateArticleElement();
             	
             } else if (element instanceof JATSArticleIdElement) {
+            	// creates an article with this ID
             	getOrCreateArticleElement().appendChild(element);
             	
             } else if (element instanceof JATSArticleTitleElement) {
@@ -121,10 +130,11 @@ public class HtmlMetaJATSBuilder extends JATSBuilder {
             	getOrCreateBodyElement().appendChild(element);
             	
             } else {
-            	System.err.println("Unsupported "+element);
+            	System.err.println("HtmlMetaJATSBuilder Unsupported "+element);
             }
 		}
 		JATSArticleElement article = temp.getOrCreateSingleArticleChild();
+		article.detach();
 		return article;
 	}
 
@@ -135,7 +145,7 @@ public class HtmlMetaJATSBuilder extends JATSBuilder {
 		return (contribElements.size() == 0) ?
 			(JATSContribElement) new JATSContribElement()
 					.appendElement(new JATSContribElement()
-					.appendElement(new JATSStringNameElement("anonymous"))) :
+					.appendElement(new JATSStringNameElement(ANONYMOUS))) :
 		(JATSContribElement) contribElements.get(contribElements.size() - 1);
 	}
 

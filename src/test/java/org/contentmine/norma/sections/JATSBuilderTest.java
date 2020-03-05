@@ -78,7 +78,8 @@ public class JATSBuilderTest extends AbstractAMITest {
 		HtmlMetaJATSBuilder jatsBuilder = (HtmlMetaJATSBuilder) JATSBuilderFactory.createJATSBuilder(JATSBuilder.BuilderType.HTML);
 		Map<MetadataScheme, List<HtmlMeta>> map = jatsBuilder.readMetaListsByMetadataScheme(metaList);
 		JATSArticleElement article = jatsBuilder.processHWList();
-		XMLUtil.debug(article);
+		Assert.assertEquals("descendants", 99, XMLUtil.getQueryElements(article, "//*"));
+//		XMLUtil.debug(article);
 
 	}
 
