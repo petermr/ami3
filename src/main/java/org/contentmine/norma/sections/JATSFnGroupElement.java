@@ -36,9 +36,10 @@ public class JATSFnGroupElement extends JATSElement implements IsBlock {
 		return ALLOWED_CHILD_NAMES;
 	}
 
-//	private JATSJournalMetaElement journalMeta;
-//	private JATSArticleMetaElement articleMeta;
-	
+	public JATSFnGroupElement() {
+		super(TAG);
+	}
+
 	public JATSFnGroupElement(Element element) {
 		super(element);
 	}

@@ -19,6 +19,10 @@ public class JATSCountsElement extends JATSElement implements IsBlock {
  </counts>	 */
 	public static String TAG = "counts";
 
+	public JATSCountsElement() {
+		super(TAG);
+	}
+
 	public JATSCountsElement(Element element) {
 		super(element);
 	}

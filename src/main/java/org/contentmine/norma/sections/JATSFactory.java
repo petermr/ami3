@@ -953,8 +953,8 @@ disp-formula
 			((JATSElement)jatsElement).recurseThroughDescendants(element, this);
 			LOG.trace(((JATSRefElement)jatsElement).getPMID());
 			
-		} else if(JATSReflistElement.TAG.equals(tag)) {
-			jatsElement = new JATSReflistElement(element);
+		} else if(JATSRefListElement.TAG.equals(tag)) {
+			jatsElement = new JATSRefListElement(element);
 			((JATSElement)jatsElement).recurseThroughDescendants(element, this);
 
 		} else if(JATSRelatedArticleElement.TAG.equals(tag)) {

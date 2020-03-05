@@ -51,6 +51,10 @@ public class JATSContribGroupElement extends JATSElement implements IsBlock {
 	private List<JATSContribElement> contribList;
 	private String contribType;
 
+	public JATSContribGroupElement() {
+		super(TAG);
+	}
+	
 	public JATSContribGroupElement(Element element) {
 		super(element);
 	}

@@ -6,6 +6,10 @@ public class JATSIssnElement extends JATSElement implements IsInline {
 
 	static String TAG = "issn";
 
+	public JATSIssnElement() {
+		super(TAG);
+	}
+
 	public JATSIssnElement(Element element) {
 		super(element);
 	}

@@ -26,15 +26,19 @@ public class JATSBackElement extends JATSElement implements IsBlock, HasDirector
 		return ALLOWED_CHILD_NAMES;
 	}
 	
-	private JATSReflistElement reflist;
+	private JATSRefListElement refList;
 	private JATSFnGroupElement fnGroup;
+
+	public JATSBackElement() {
+		super(TAG);
+	}
 
 	public JATSBackElement(Element element) {
 		super(element);
 	}
 
-	public JATSReflistElement getReflist() {
-		return reflist;
+	public JATSRefListElement getRefList() {
+		return refList;
 	}
 
 	public JATSFnGroupElement getFnGroup() {
@@ -42,8 +46,30 @@ public class JATSBackElement extends JATSElement implements IsBlock, HasDirector
 	}
 
 	protected void applyNonXMLSemantics() {
+		fnGroup = getFnGroupElement();
+		refList = getRefList();
+	}
+
+	public JATSRefListElement getOrCreateSingleRefListChild() {
+		refList = (JATSRefListElement) getSingleChild(JATSRefListElement.TAG);
+		if (refList ==  null) {
+			refList = new JATSRefListElement();
+			this.appendElement(refList);
+		}
+		return refList;
+	}
+
+	public JATSFnGroupElement getFnGroupElement() {
+		return (JATSFnGroupElement) getSingleChild(JATSFnGroupElement.TAG);
+	}
+
+	public JATSFnGroupElement getOrCreateSingleFnGroupChild() {
 		fnGroup = (JATSFnGroupElement) getSingleChild(JATSFnGroupElement.TAG);
-		reflist = (JATSReflistElement) getSingleChild(JATSReflistElement.TAG);
+		if (fnGroup ==  null) {
+			fnGroup = new JATSFnGroupElement();
+			this.appendElement(fnGroup);
+		}
+		return fnGroup;
 	}
 
 	public String directoryName() {

@@ -6,6 +6,10 @@ public class JATSPublisherElement extends JATSElement implements IsBlock {
 
 	static String TAG = "publisher";
 
+	public JATSPublisherElement() {
+		super(TAG);
+	}
+
 	public JATSPublisherElement(Element element) {
 		super(element);
 	}

@@ -10,14 +10,14 @@ import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
 
-public class JATSReflistElement extends JATSElement implements IsBlock, HasDirectory {
+public class JATSRefListElement extends JATSElement implements IsBlock, HasDirectory {
 
 	/**
 		<ref-list>
 			<title>References</title>
 			<ref id="pntd.0001477-Thiel1">
 		 */
-	private static final Logger LOG = Logger.getLogger(JATSReflistElement.class);
+	private static final Logger LOG = Logger.getLogger(JATSRefListElement.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
@@ -38,7 +38,11 @@ public class JATSReflistElement extends JATSElement implements IsBlock, HasDirec
 	private List<String> pmidList;
 	private List<String> pmcidList;
 	
-	public JATSReflistElement(Element element) {
+	public JATSRefListElement() {
+		super(TAG);
+	}
+
+	public JATSRefListElement(Element element) {
 		super(element);
 	}
 

@@ -15,6 +15,15 @@ public class JATSPElement extends JATSElement implements HasMixedContent {
 
 	public static String TAG = "p";
 
+	public JATSPElement() {
+		super(TAG);
+	}
+	
+	public JATSPElement(String content) {
+		this();
+		this.appendText(content);
+	}
+	
 	public JATSPElement(Element element) {
 		super(element);
 	}

@@ -42,7 +42,7 @@ public class PMCitations {
 	public void extractCitations(JATSArticleElement jatsArticleElement) {
 		String pmcid = jatsArticleElement.getPMCID();
 		LOG.trace(pmcid);
-		JATSReflistElement reflist = jatsArticleElement.getReflistElement();
+		JATSRefListElement reflist = jatsArticleElement.getReflistElement();
 		if (reflist != null) {
 			List<String> pmidList = reflist.getNonNullPMIDList();
 			if (pmidList.size() > 0) {

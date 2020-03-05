@@ -462,7 +462,7 @@ public class SectionTest {
 		JATSSectionTagger tagger = new JATSSectionTagger();
 		tagger.getOrCreateJATSHtml(PMC3289602XML);
 		JATSArticleElement jatsArticleElement = tagger.getJATSArticleElement();
-		JATSReflistElement reflist = jatsArticleElement.getReflistElement();
+		JATSRefListElement reflist = jatsArticleElement.getReflistElement();
 		Assert.assertNotNull("reflist not null", reflist);
 		List<JATSRefElement> referenceList = reflist.getRefList();
 		Assert.assertEquals(57,  referenceList.size());

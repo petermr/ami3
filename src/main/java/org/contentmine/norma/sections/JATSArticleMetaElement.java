@@ -197,8 +197,9 @@ public class JATSArticleMetaElement extends JATSElement implements IsBlock, HasD
 
 	private JATSAbstractElement abstractx;
 	private JATSHistoryElement history;
-//	private JATSTitleGroupElement titleGroup;
-//	private JATSContribGroupElement contribGroup;
+	private JATSTitleGroupElement titleGroup;
+	private JATSContribGroupElement contribGroup;
+	private JATSCountsElement counts;
 	
 	public JATSArticleMetaElement() {
 		super(TAG);
@@ -225,14 +226,14 @@ public class JATSArticleMetaElement extends JATSElement implements IsBlock, HasD
 
 	/**
     <article-id pub-id-type="pmcid">3289602</article-id>
- * @return
- */
-public String getPublisherID() {
-	String xpath = "*[local-name()='"+JATSArticleIdElement.TAG+"' "
-			+ "and @"+JATSArticleIdElement.PUB_ID_TYPE+"='"+JATSArticleIdElement.PMCID+"']";
-	String val = XMLUtil.getSingleValue(this, xpath);
-	return val;
-}
+	 * @return
+	 */
+	public String getPublisherID() {
+		String xpath = "*[local-name()='"+JATSArticleIdElement.TAG+"' "
+				+ "and @"+JATSArticleIdElement.PUB_ID_TYPE+"='"+JATSArticleIdElement.PMCID+"']";
+		String val = XMLUtil.getSingleValue(this, xpath);
+		return val;
+	}
 
 /**
 	<article-id pub-id-type="publisher-id">PNTD-D-11-00811</article-id>
@@ -270,5 +271,35 @@ public String getPublisherID() {
 	public void setHistory(JATSHistoryElement history) {
 		this.history = history;
 	}
+
+	public JATSTitleGroupElement getOrCreateSingleTitleGroupChild() {
+		titleGroup = (JATSTitleGroupElement) getSingleChild(JATSTitleGroupElement.TAG);
+		if (titleGroup ==  null) {
+			titleGroup = new JATSTitleGroupElement();
+			this.appendElement(titleGroup);
+		}
+		return titleGroup;
+	}
+
+	public JATSContribGroupElement getOrCreateSingleContribGroupChild() {
+		contribGroup = (JATSContribGroupElement) getSingleChild(JATSContribGroupElement.TAG);
+		if (contribGroup ==  null) {
+			contribGroup = new JATSContribGroupElement();
+			this.appendElement(contribGroup);
+		}
+		return contribGroup;
+	}
+
+	public JATSCountsElement getOrCreateSingleCountsChild() {
+		counts = (JATSCountsElement) getSingleChild(JATSCountsElement.TAG);
+		if (counts ==  null) {
+			counts = new JATSCountsElement();
+			this.appendElement(counts);
+		}
+		return counts;
+	}
+
+
+
 
 }

@@ -15,6 +15,10 @@ public class JATSFpageElement extends JATSElement implements IsInline {
 		super(element);
 	}
 	
+	public JATSFpageElement() {
+		super(TAG);
+	}
+	
 	public String debugString(int level) {
 		return "f: "+this.getValue();
 	}

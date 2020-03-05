@@ -5,6 +5,13 @@ import java.util.List;
 
 import nu.xom.Element;
 
+/**
+ * content
+ * (journal-meta?, article-meta, (def-list | list | ack | bio | fn-group | glossary | notes)*)
+ * 
+ * @author pm286
+ *
+ */
 public class JATSFrontElement extends JATSElement implements IsBlock , HasDirectory {
 
 	static String TAG = "front";
@@ -20,15 +27,19 @@ public class JATSFrontElement extends JATSElement implements IsBlock , HasDirect
 		return ALLOWED_CHILD_NAMES;
 	}
 
-	private JATSElement journalMeta;
+	private JATSJournalMetaElement journalMeta;
 	private JATSArticleMetaElement articleMeta;
 	
+	public JATSFrontElement() {
+		super(TAG);
+	}
+
 	public JATSFrontElement(Element element) {
 		super(element);
 	}
 
 	protected void applyNonXMLSemantics() {
-		journalMeta = (JATSElement) this.getSingleChild(JATSJournalMetaElement.TAG);
+		journalMeta = (JATSJournalMetaElement) this.getSingleChild(JATSJournalMetaElement.TAG);
 		articleMeta = (JATSArticleMetaElement) this.getSingleChild(JATSArticleMetaElement.TAG);
 	}
 	
@@ -39,10 +50,29 @@ public class JATSFrontElement extends JATSElement implements IsBlock , HasDirect
 	public JATSElement getJournalMeta() {
 		return journalMeta;
 	}
+	
+	public JATSJournalMetaElement getOrCreateSingleJournalMetaChild() {
+		journalMeta = (JATSJournalMetaElement) getSingleChild(JATSJournalMetaElement.TAG);
+		if (journalMeta ==  null) {
+			journalMeta = new JATSJournalMetaElement();
+			this.appendElement(journalMeta);
+		}
+		return journalMeta;
+	}
 
 	public JATSArticleMetaElement getArticleMeta() {
 		return articleMeta;
 	}
+
+	public JATSArticleMetaElement getOrCreateSingleArticleMetaChild() {
+		articleMeta = (JATSArticleMetaElement) getSingleChild(JATSArticleMetaElement.TAG);
+		if (articleMeta ==  null) {
+			articleMeta = new JATSArticleMetaElement();
+			this.appendElement(articleMeta);
+		}
+		return articleMeta;
+	}
+
 
 	@Override
 	public String directoryName() {

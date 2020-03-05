@@ -6,6 +6,15 @@ public class JATSPublisherNameElement extends JATSElement implements IsInline {
 
 	static String TAG = "publisher-name";
 
+	public JATSPublisherNameElement() {
+		super(TAG);
+	}
+
+	public JATSPublisherNameElement(String content) {
+		this();
+		this.appendText(content);
+	}
+
 	public JATSPublisherNameElement(Element element) {
 		super(element);
 	}

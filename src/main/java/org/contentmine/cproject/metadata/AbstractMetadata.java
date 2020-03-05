@@ -706,6 +706,7 @@ public abstract class AbstractMetadata {
 	public static final String CITATION_DOI = "citation_doi";
 	public static final String CITATION_FIRSTPAGE = "citation_firstpage";
 	public static final String CITATION_FULLTEXT_HTML_URL = "citation_fulltext_html_url";
+	public static final String CITATION_FULL_HTML_URL = "citation_full_html_url";
 	public static final String CITATION_ID = "citation_id";
 	public static final String CITATION_ISSN = "citation_issn";
 	public static final String CITATION_JOURNAL_ABBREV = "citation_journal_abbrev";

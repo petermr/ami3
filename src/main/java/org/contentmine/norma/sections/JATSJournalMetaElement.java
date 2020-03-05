@@ -41,6 +41,7 @@ public class JATSJournalMetaElement extends JATSElement implements IsBlock, HasD
 			JATSSpanFactory.ISSN_L,
 	});
 
+	private JATSTitleGroupElement titleGroup;
 
 	@Override
 	protected List<String> getAllowedChildNames() {
@@ -78,6 +79,16 @@ public class JATSJournalMetaElement extends JATSElement implements IsBlock, HasD
 	public String directoryName() {
 		return this.TAG;
 	}
+
+	public JATSTitleGroupElement getOrCreateSingleTitleGroupChild() {
+		titleGroup = (JATSTitleGroupElement) getSingleChild(JATSTitleGroupElement.TAG);
+		if (titleGroup ==  null) {
+			titleGroup = new JATSTitleGroupElement();
+			this.appendElement(titleGroup);
+		}
+		return titleGroup;
+	}
+
 
 
 }

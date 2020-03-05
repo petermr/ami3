@@ -9,7 +9,8 @@ import org.apache.log4j.Logger;
 
 import nu.xom.Element;
 
-/**
+/**<back>
+ * <ref-list>
  *   <ref id='pntd.0001477-Olson1'>
 <label>13</label>
 <element-citation>
@@ -55,6 +56,10 @@ public class JATSRefElement extends JATSElement implements IsBlock {
 	private JATSElementCitationElement elementCitation;
 	private String label;
 
+	public JATSRefElement() {
+		super(TAG);
+	}
+	
 	public JATSRefElement(Element element) {
 		super(element);
 	}
@@ -111,7 +116,6 @@ public class JATSRefElement extends JATSElement implements IsBlock {
 	private JATSLabelElement getLabel() {
 		return (JATSLabelElement) getSingleChild(JATSLabelElement.TAG);
 	}
-	
 	
 
 }

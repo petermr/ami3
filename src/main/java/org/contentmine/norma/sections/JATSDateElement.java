@@ -41,6 +41,15 @@ public class JATSDateElement extends JATSElement implements IsBlock {
 	private JodaDate date; // created from day, month, year
 	protected String pubType;
 
+	public JATSDateElement() {
+		super(TAG);
+	}
+
+	public JATSDateElement(String content) {
+		this();
+		this.appendElement(new JATSStringDateElement(content));
+	}
+
 	public JATSDateElement(Element element) {
 		super(element);
 	}

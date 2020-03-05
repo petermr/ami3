@@ -11,6 +11,10 @@ public class JATSLpageElement extends JATSElement implements IsInline {
 
 	public static String TAG = "lpage";
 
+	public JATSLpageElement() {
+		super(TAG);
+	}
+	
 	public JATSLpageElement(Element element) {
 		super(element);
 	}

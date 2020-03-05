@@ -25,6 +25,10 @@ public class JATSBodyElement extends JATSElement implements IsBlock , HasDirecto
 		return ALLOWED_CHILD_NAMES;
 	}
 
+	public JATSBodyElement() {
+		super(TAG);
+	}
+	
 	public JATSBodyElement(Element element) {
 		super(element);
 	}

@@ -1,6 +1,7 @@
 package org.contentmine.norma.sections;
 
 import java.io.File;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -18,7 +19,12 @@ import nu.xom.Element;
 import nu.xom.Node;
 import nu.xom.Text;
 
-public class JATSElement extends Element {
+/**
+ * cannot be permanently instantiated. 
+ * @author pm286
+ *
+ */
+public abstract class JATSElement extends Element {
 
 	private static final Logger LOG = Logger.getLogger(JATSElement.class);
 	static {
@@ -331,12 +337,16 @@ public class JATSElement extends Element {
 			JATSFnGroupElement.TAG,
 			JATSNotesElement.TAG,
 		});
+	public static final String TAG = "_root";
 	
-//	protected File currentDir;
 	private JATSFloatsGroupElement floatsGroupElement;
 	
 	public JATSElement(Element element) {
 		super(element.getLocalName());
+	}
+	
+	public JATSElement() {
+		super(TAG);
 	}
 	
 	public JATSElement(String tag) {

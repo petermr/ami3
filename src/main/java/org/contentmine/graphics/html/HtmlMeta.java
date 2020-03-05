@@ -24,14 +24,26 @@ import org.apache.log4j.Logger;
 import org.contentmine.cproject.metadata.AbstractMetadata;
 import org.contentmine.graphics.html.util.HtmlUtil;
 import org.contentmine.norma.sections.JATSAbstractElement;
+import org.contentmine.norma.sections.JATSArticleElement;
 import org.contentmine.norma.sections.JATSArticleIdElement;
-import org.contentmine.norma.sections.JATSArticleMetaElement;
 import org.contentmine.norma.sections.JATSArticleTitleElement;
 import org.contentmine.norma.sections.JATSContribElement;
 import org.contentmine.norma.sections.JATSContribIdElement;
+import org.contentmine.norma.sections.JATSDateElement;
 import org.contentmine.norma.sections.JATSElement;
 import org.contentmine.norma.sections.JATSEmailElement;
+import org.contentmine.norma.sections.JATSExtLinkElement;
+import org.contentmine.norma.sections.JATSFpageElement;
 import org.contentmine.norma.sections.JATSInstitutionElement;
+import org.contentmine.norma.sections.JATSIssnElement;
+import org.contentmine.norma.sections.JATSJournalTitleElement;
+import org.contentmine.norma.sections.JATSLpageElement;
+import org.contentmine.norma.sections.JATSPElement;
+import org.contentmine.norma.sections.JATSPageCountElement;
+import org.contentmine.norma.sections.JATSPublisherElement;
+import org.contentmine.norma.sections.JATSPublisherNameElement;
+import org.contentmine.norma.sections.JATSRefElement;
+import org.contentmine.norma.sections.JATSSecElement;
 import org.contentmine.norma.sections.JATSStringNameElement;
 
 
@@ -121,7 +133,8 @@ public class HtmlMeta extends HtmlElement {
 		if (name == null) {
 			
         } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_ARTICLE_TYPE)) {
-        	System.out.println("no processing for "+AbstractMetadata.CITATION_ARTICLE_TYPE);
+			jatsElement = new JATSArticleElement()
+					.setArticleType(content); 
         	
         } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_ABSTRACT_HTML_URL)) {
 			jatsElement = new JATSAbstractElement().setUrl(content); 
@@ -154,70 +167,85 @@ public class HtmlMeta extends HtmlElement {
         	 */
 
 			jatsElement = new JATSContribIdElement()
-					.setAttribute(JATSContribIdElement.CONTRIB_ID_TYPE, JATSContribIdElement.ORCID); 
+					.setAttribute(JATSContribIdElement.CONTRIB_ID_TYPE, JATSContribIdElement.ORCID)
+					.appendText(content);
         	
         } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_AUTHORS)) {
         	// is this ever used?
         	System.out.println("no processing for "+AbstractMetadata.CITATION_AUTHORS);
         	
         } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_DATE)) {
-        	System.out.println("no processing for "+AbstractMetadata.CITATION_DATE);
-        	
+    		jatsElement = new JATSDateElement(content);
+    		
         } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_DOI)) {
         	/**
     		<article-meta>
 				<article-id pub-id-type="doi">10.1371/journal.pntd.0001477</article-id>
 				*/
 
-			jatsElement = new JATSArticleMetaElement()
-					.appendElement(new JATSArticleIdElement()
+        		jatsElement = new JATSArticleIdElement()
 					.setAttribute(JATSArticleIdElement.PUB_ID_TYPE, JATSArticleIdElement.DOI)
-					)
-					; 
+					.appendText(content); 
         } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_FIRSTPAGE)) {
-        	System.out.println("no processing for "+AbstractMetadata.CITATION_FIRSTPAGE);
+        	/**        	<fpage seq="1">1</fpage> */
+    		jatsElement = new JATSFpageElement().appendText(content);
         	
-        } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_FULLTEXT_HTML_URL)) {
-        	System.out.println("no processing for "+AbstractMetadata.CITATION_FULLTEXT_HTML_URL);
+        } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_FULL_HTML_URL) ||
+             name.equalsIgnoreCase(AbstractMetadata.CITATION_FULLTEXT_HTML_URL)) {
+        	/**
+        	<ext-link ext-link-type="gen"
+        			xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="Y18883"/>)*/
+    		jatsElement = new JATSExtLinkElement()
+    				.setExtLinkType(AbstractMetadata.FULLTEXT_HTML)
+    				.setHref(content);
         	
         } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_ID)) {
-        	System.out.println("no processing for "+AbstractMetadata.CITATION_ID + "("+content+")");
+    		jatsElement = new JATSArticleIdElement()
+				.setAttribute(JATSArticleIdElement.PUB_ID_TYPE, JATSArticleIdElement.DOI)
+				.appendText(content); 
         	
         } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_ISSN)) {
-        	System.out.println("no processing for "+AbstractMetadata.CITATION_ISSN + "("+content+")");
+        	jatsElement = new JATSIssnElement().appendText(content);
         	
         } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_JOURNAL_ABBREV)) {
         	System.out.println("no processing for "+AbstractMetadata.CITATION_JOURNAL_ABBREV + "("+content+")");
         	
         } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_JOURNAL_TITLE)) {
-        	System.out.println("no processing for "+AbstractMetadata.CITATION_JOURNAL_TITLE + "("+content+")");
+    		jatsElement = new JATSJournalTitleElement().appendText(content);
         	
         } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_LASTPAGE)) {
-        	System.out.println("no processing for "+AbstractMetadata.CITATION_LASTPAGE + "("+content+")");
-        	
-//        } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_MJID)) {
-//        	System.out.println("no processing for "+AbstractMetadata.CITATION_PDF_URL + "("+content+")");
+        	/**        	<lpage>11</lpage> */
+    		jatsElement = new JATSLpageElement().appendText(content);
         	
         } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_NUM_PAGES)) {
-        	System.out.println("no processing for "+AbstractMetadata.CITATION_NUM_PAGES + "("+content+")");
+        	/**        	<page-count count="6"/> */
+    		jatsElement = new JATSPageCountElement().setCount(content);
         	
         } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_PDF_URL)) {
-        	System.out.println("no processing for "+AbstractMetadata.CITATION_PDF_URL + "("+content+")");
+    		jatsElement = new JATSExtLinkElement()
+    				.setExtLinkType(AbstractMetadata.FULLTEXT_PDF)
+    				.setHref(content);
+
         	
         } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_PUBLIC_URL)) {
-        	System.out.println("no processing for "+AbstractMetadata.CITATION_PUBLIC_URL + "("+content+")");
+    		jatsElement = new JATSExtLinkElement()
+    				.setExtLinkType(AbstractMetadata.FULLTEXT_HTML)
+    				.setHref(content);
         	
         } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_PUBLICATION_DATE)) {
-        	System.out.println("no processing for "+AbstractMetadata.CITATION_PUBLIC_URL + "("+content+")");
+    		jatsElement = new JATSDateElement(content);
         	
         } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_PUBLISHER)) {
-        	System.out.println("no processing for "+AbstractMetadata.CITATION_PUBLISHER + "("+content+")");
+    		jatsElement = new JATSPublisherElement()
+    				.appendElement(new JATSPublisherNameElement(content));
         	
         } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_REFERENCE)) {
-        	System.out.println("no processing for "+AbstractMetadata.CITATION_REFERENCE + "("+content+")");
+    		jatsElement = new JATSRefElement()
+    				.appendElement(new JATSPElement(content));
         	
         } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_SECTION)) {
-        	System.out.println("no processing for "+AbstractMetadata.CITATION_SECTION + "("+content+")");
+    		jatsElement = new JATSSecElement()
+    				.appendElement(new JATSPElement(content));
         	
         } else if (name.equalsIgnoreCase(AbstractMetadata.CITATION_TITLE)) {
 			jatsElement = new JATSArticleTitleElement().appendText(content); 

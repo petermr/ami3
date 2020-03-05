@@ -35,6 +35,10 @@ public class JATSTitleGroupElement extends JATSElement implements IsBlock {
 	}
 
 
+	public JATSTitleGroupElement() {
+		super(TAG);
+	}
+
 	public JATSTitleGroupElement(Element element) {
 		super(element);
 	}

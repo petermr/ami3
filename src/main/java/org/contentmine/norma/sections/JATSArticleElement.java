@@ -6,6 +6,7 @@ import java.util.List;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
+import nu.xom.Attribute;
 import nu.xom.Element;
 
 /**
@@ -15,6 +16,7 @@ import nu.xom.Element;
  *
  */
 public class JATSArticleElement extends JATSElement implements IsBlock, HasDirectory {
+
 	/**
 		<article>
 		  <front>
@@ -31,6 +33,7 @@ public class JATSArticleElement extends JATSElement implements IsBlock, HasDirec
 		LOG.setLevel(Level.DEBUG);
 	}
 	static final String TAG = "article";
+	public static final String ARTICLE_TYPE = "article-type";
 	
 	public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {
 		JATSDivFactory.FRONT,
@@ -58,16 +61,48 @@ public class JATSArticleElement extends JATSElement implements IsBlock, HasDirec
 	}
 	
 	protected void applyNonXMLSemantics() {
-		front = (JATSFrontElement) getSingleChild(JATSFrontElement.TAG);
+		front = getOrCreateSingleFrontChild();
 		body = (JATSBodyElement) getSingleChild(JATSBodyElement.TAG);
 		back = (JATSBackElement) getSingleChild(JATSBackElement.TAG);
 	}
 
-	public JATSReflistElement getReflistElement() {
-		return back == null ? null : back.getReflist();
+	public JATSFrontElement getOrCreateSingleFrontChild() {
+		front = (JATSFrontElement) getSingleChild(JATSFrontElement.TAG);
+		if (front ==  null) {
+			front = new JATSFrontElement();
+			this.appendElement(front);
+		}
+		return front;
+	}
+
+	public JATSBodyElement getOrCreateSingleBodyChild() {
+		body = (JATSBodyElement) getSingleChild(JATSBodyElement.TAG);
+		if (body ==  null) {
+			body = new JATSBodyElement();
+			this.appendElement(body);
+		}
+		return body;
+	}
+
+	public JATSBackElement getOrCreateSingleBackChild() {
+		back = (JATSBackElement) getSingleChild(JATSBackElement.TAG);
+		if (back ==  null) {
+			back = new JATSBackElement();
+			this.appendElement(back);
+		}
+		return back;
+	}
+
+	public JATSRefListElement getReflistElement() {
+		return back == null ? null : back.getRefList();
 	}
 
 	public JATSFrontElement getFront() {
+		return front;
+	}
+
+	public JATSFrontElement addFront() {
+		
 		return front;
 	}
 
@@ -85,6 +120,11 @@ public class JATSArticleElement extends JATSElement implements IsBlock, HasDirec
 
 	public String directoryName() {
 		return this.TAG;
+	}
+
+	public JATSElement setArticleType(String content) {
+		this.addAttribute(new Attribute(ARTICLE_TYPE, content));
+		return this;
 	}
 
 }
