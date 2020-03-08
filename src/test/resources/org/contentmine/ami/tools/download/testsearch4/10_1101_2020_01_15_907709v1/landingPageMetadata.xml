@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article>
+ <front>
+  <article-meta>
+   <title-group>
+    <article-title>Genomic analyses provide insights into peach local adaptation and responses to climate change</article-title>
+   </title-group>
+   <abstract>&lt;;p&gt;;The environment has constantly shaped plant genomes, but the genetic bases underlying how plants adapt to environmental influences remain largely unknown. We constructed a high-density genomic variation map by re-sequencing genomes of 263 geographically representative peach landraces and wild relatives. A combination of whole-genome selection scans and genome-wide environmental association studies (GWEAS) was performed to reveal the genomic bases of peach local adaptation to diverse climates comprehensively. A total of 2,092 selective sweeps that underlie local adaptation to both mild and extreme climates were identified, including 339 sweeps conferring genomic pattern of adaptation to high altitudes. Using GWEAS, a total of 3,496 genomic loci strongly associated with 51 specific environmental variables were detected. The molecular mechanism underlying adaptive evolution of high drought, strong UV-B, cold hardiness, sugar content, flesh color, and bloom date were revealed. Finally, based on 30 years of observation, a candidate gene associated with bloom date advance, representing peach responses to global warming, was identified. Collectively, our study provides insights into molecular bases of how environments have shaped peach genomes by natural selection and adds valuable genome resources and candidate genes for future studies on evolutionary genetics, adaptation to climate changes, and future breeding.&lt;;/p&gt;;</abstract>
+   <date date-type="pub">
+    <string-date>2020/01/01</string-date>
+   </date>
+   <ext-link ext-link-type="fulltext_html" xlink:href="https://www.biorxiv.org/content/10.1101/2020.01.15.907709v1" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <abstract url="https://www.biorxiv.org/content/10.1101/2020.01.15.907709v1.abstract"/>
+   <ext-link ext-link-type="fulltext_html" xlink:href="https://www.biorxiv.org/content/10.1101/2020.01.15.907709v1.full" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <ext-link ext-link-type="fulltext_pdf" xlink:href="https://www.biorxiv.org/content/biorxiv/early/2020/01/15/2020.01.15.907709.full.pdf" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <counts>
+    <page-count count="32"/>
+   </counts>
+   <fpage>2020.01.15.907709</fpage>
+   <contrib-group>
+    <contrib contrib-type="author">
+     <string-name>Yong Li</string-name>
+     <institution>Zhengzhou Fruit Research Institute, Chinese Academy of Agricultural Sciences</institution>
+     <institution>Key Laboratory of Horticultural Plant Biology (Ministry of Education), College of Horticulture &amp;; Forestry Sciences, Huazhong Agricultural University</institution>
+    </contrib>
+    <contrib contrib-type="author">
+     <string-name>Ke Cao</string-name>
+     <institution>Zhengzhou Fruit Research Institute, Chinese Academy of Agricultural Sciences</institution>
+    </contrib>
+    <contrib contrib-type="author">
+     <string-name>Nan Li</string-name>
+     <institution>Agricultural Genome Institute at Shenzhen, Chinese Academy of Agricultural Sciences</institution>
+    </contrib>
+    <contrib contrib-type="author">
+     <string-name>Gengrui Zhu</string-name>
+     <institution>Zhengzhou Fruit Research Institute, Chinese Academy of Agricultural Sciences</institution>
+    </contrib>
+    <contrib contrib-type="author">
+     <string-name>Weichao Fang</string-name>
+     <institution>Zhengzhou Fruit Research Institute, Chinese Academy of Agricultural Sciences</institution>
+    </contrib>
+    <contrib contrib-type="author">
+     <string-name>Changwen Chen</string-name>
+     <institution>Zhengzhou Fruit Research Institute, Chinese Academy of Agricultural Sciences</institution>
+    </contrib>
+    <contrib contrib-type="author">
+     <string-name>Xinwei Wang</string-name>
+     <institution>Zhengzhou Fruit Research Institute, Chinese Academy of Agricultural Sciences</institution>
+    </contrib>
+    <contrib contrib-type="author">
+     <string-name>Xiuli Zeng</string-name>
+     <institution>Tibet Academy of Agricultural and Animal Husbandry Sciences</institution>
+    </contrib>
+    <contrib contrib-type="author">
+     <string-name>Jian Guo</string-name>
+     <institution>Zhengzhou Fruit Research Institute, Chinese Academy of Agricultural Sciences</institution>
+    </contrib>
+    <contrib contrib-type="author">
+     <string-name>Shanshan Zhang</string-name>
+     <institution>Tibet Academy of Agricultural and Animal Husbandry Sciences</institution>
+    </contrib>
+    <contrib contrib-type="author">
+     <string-name>Qi Wang</string-name>
+     <institution>Zhengzhou Fruit Research Institute, Chinese Academy of Agricultural Sciences</institution>
+    </contrib>
+    <contrib contrib-type="author">
+     <string-name>Tiyu Ding</string-name>
+     <institution>Zhengzhou Fruit Research Institute, Chinese Academy of Agricultural Sciences</institution>
+    </contrib>
+    <contrib contrib-type="author">
+     <string-name>Jiao Wang</string-name>
+     <institution>Zhengzhou Fruit Research Institute, Chinese Academy of Agricultural Sciences</institution>
+    </contrib>
+    <contrib contrib-type="author">
+     <string-name>Liping Guan</string-name>
+     <institution>Zhengzhou Fruit Research Institute, Chinese Academy of Agricultural Sciences</institution>
+    </contrib>
+    <contrib contrib-type="author">
+     <string-name>Junxiu Wang</string-name>
+     <institution>Zhengzhou Fruit Research Institute, Chinese Academy of Agricultural Sciences</institution>
+    </contrib>
+    <contrib contrib-type="author">
+     <string-name>Kuozhan Liu</string-name>
+     <institution>Zhengzhou Fruit Research Institute, Chinese Academy of Agricultural Sciences</institution>
+    </contrib>
+    <contrib contrib-type="author">
+     <string-name>Wenwu Guo</string-name>
+     <institution>Key Laboratory of Horticultural Plant Biology (Ministry of Education), College of Horticulture &amp;; Forestry Sciences, Huazhong Agricultural University</institution>
+    </contrib>
+    <contrib contrib-type="author">
+     <string-name>Pere Arús</string-name>
+     <institution>IRTA–Centre de Recerca en Agrigenòmica (CSIC-IRTA-UAB-UB)</institution>
+    </contrib>
+    <contrib contrib-type="author">
+     <string-name>Sanwen Huang</string-name>
+     <institution>Agricultural Genome Institute at Shenzhen, Chinese Academy of Agricultural Sciences</institution>
+    </contrib>
+    <contrib contrib-type="author">
+     <string-name>Zhangjun Fei</string-name>
+     <institution>Boyce Thompson Institute for Plant Research, Cornell University</institution>
+     <institution>U.S. Department of Agriculture-Agricultural Research Service, Robert W. Holley Center for Agriculture and Health</institution>
+     <email>wanglirong@caas.cn</email>
+     <email>zf25@cornell.edu</email>
+    </contrib>
+    <contrib contrib-type="author">
+     <string-name>Lirong Wang</string-name>
+     <institution>Zhengzhou Fruit Research Institute, Chinese Academy of Agricultural Sciences</institution>
+     <email>wanglirong@caas.cn</email>
+     <email>zf25@cornell.edu</email>
+    </contrib>
+   </contrib-group>
+   <date>
+    <string-date>2020-01-15</string-date>
+   </date>
+  </article-meta>
+  <journal-meta>
+   <title-group>
+    <journal-title>bioRxiv</journal-title>
+   </title-group>
+   <publisher>
+    <publisher-name>Cold Spring Harbor Laboratory</publisher-name>
+   </publisher>
+  </journal-meta>
+ </front>
+ <article-id pub-id-type="doi">2020.01.15.907709v1</article-id>
+ <article-id pub-id-type="doi">10.1101/2020.01.15.907709</article-id>
+ <body>
+  <sec>
+   <p>New Results</p>
+  </sec>
+ </body>
+ <back>
+  <ref-list>
+   <ref>
+    <p>Alachiotis N, Pavlidis P. 2018. RAiSD detects positive selection based on multiple signatures of a selective sweep and SNP vectors. Commun Biol 1: 79.</p>
+   </ref>
+   <ref>
+    <p>Blanquart F, Kaltz O, Nuismer SL, Gandon S. 2013. A practical guide to measuring local adaptation. Ecol Lett 16: 1195–1205.</p>
+   </ref>
+   <ref>
+    <p>Bolger A, Scossa F, Bolger ME, Lanz C, Maumus F, Tohge T, Quesneville H, Alseekh S, Sørensen I, Lichtenstein G, et al. 2014. The genome of the stress-tolerant wild tomato species Solanum pennellii. Nat Genet 46: 1034–1038.</p>
+   </ref>
+   <ref>
+    <p>Bolger AM, Lohse M, Usadel B. 2014. Trimmomatic: a flexible trimmer for Illumina sequence data. Bioinformatics 30: 2114–2120.</p>
+   </ref>
+   <ref>
+    <p>Cao K, Zheng Z, Wang L, Liu X, Zhu G, Fang W, Cheng S, Zeng P, Chen C, Wang X, et al. 2014. Comparative population genomics reveals the domestication history of the peach, Prunus persica, and human influences on perennial fruit crops. Genome Biol 15: 415.</p>
+   </ref>
+   <ref>
+    <p>Cao K, Zhou Z, Wang Q, Guo J, Zhao P, Zhu G, Fang W, Chen C, Wang X, Wang X, et al. 2016. Genome-wide association study of 12 agronomic traits in peach. Nat Commu 7: 13246.</p>
+   </ref>
+   <ref>
+    <p>Chen X, Schulz-Trieglaff O, Shaw R, Barnes B, Schlesinger F, Källberg M, Cox AJ, Kruglyak S, Saunders CT. 2016. Manta: rapid detection of structural variants and indels for germline and cancer sequencing applications. Bioinformatics 32: 1220–1222.</p>
+   </ref>
+   <ref>
+    <p>Chiang C, Layer RM, Faust GG, Lindberg MR, Rose DB, Garrison EP, Marth GT, Quinlan AR, Hall IM. 2015. SpeedSeq: ultra-fast personal genome analysis and interpretation. Nat Methods 12: 966–968.</p>
+   </ref>
+   <ref>
+    <p>Cingolani P, Platts A, Wang L, Coon M, Nguyen T, Wang L, Land SJ, Lu X, Ruden DM. 2012. A program for annotating and predicting the effects of single nucleotide polymorphisms, SnpEff. Fly 6: 80.</p>
+   </ref>
+   <ref>
+    <p>Danecek P, Auton A, Abecasis G, Albers CA, Banks E, DePristo MA, Handsaker RE, Lunter G, Marth GT, Sherry ST. 2011. The variant call format and VCFtools. Bioinformatics 27: 2156–2158.</p>
+   </ref>
+   <ref>
+    <p>Depristo MA, Banks E, Poplin R, Garimella KV, Maguire JR, Hartl C, Philippakis AA, del Angel G, Rivas MA, Hanna M, et al. 2011. A framework for variation discovery and genotyping using next-generation DNA sequencing data. Nat Genet 43: 491–498.</p>
+   </ref>
+   <ref>
+    <p>Falchi R, Vendramin E, Zanon L, Scalabrin S, Cipriani G, Verde I, Vizzotto G, Morgante M. 2013. Three distinct mutational mechanisms acting on a single gene underpin the origin of yellow flesh in peach. Plant J 76: 75–87.</p>
+   </ref>
+   <ref>
+    <p>Fan S, Bielenberg DG, Zhebentyayeva TN, Reighard GL, Okie WR, Holland D, Abbott AG. 2010. Mapping quantitative trait loci associated with chilling requirement, heat requirement and bloom date in peach (Prunus persica). New Phytol 185: 917–930.</p>
+   </ref>
+   <ref>
+    <p>Felsenstein J. 1989. PHYLIP-phylogeny inference package (version 3.2). Cladistics 5: 164–166.</p>
+   </ref>
+   <ref>
+    <p>Ferrer JL, Jez JM, Bowman ME, Dixon RA, Noel JP. 1999. Structure of chalcone synthase and the molecular basis of plant polyketide pathway. Nat Struct Biol 6: 775–784.</p>
+   </ref>
+   <ref>
+    <p>Fournier-Level A, Korte A, Cooper MD, Nordborg M, Schmitt J, Wilczek AM. 2011. A map of local adaptation in Arabidopsis thaliana. Science 334: 83–86.</p>
+   </ref>
+   <ref>
+    <p>Frazee AC, Pertea G, Jaffe AE, Langmead B, Salzberg SL, Leek JT. 2015. Ballgown bridges the gap between transcriptome assembly and expression analysis. Nat Biotech 33: 243–246.</p>
+   </ref>
+   <ref>
+    <p>Hancock AM, Brachi B, Faure N, Horton MW, Jarymowycz LB, Sperone FG, Toomajian C, Roux F, Bergelson J. 2011. Adaptation to climate across the Arabidopsis thaliana genome. Science 334: 83–86.</p>
+   </ref>
+   <ref>
+    <p>Hara K, Yokoo T, Kajita R, Onishi T, Yahata S, Peterson KM, Torii KU, Kakimoto T. 2009. Epidermal cell density is autoregulated via a secretory peptide, EPIDERMAL PATTERNING FACTOR 2 in Arabidopsis leaves. Plant Cell Physiol 50: 1019–1031.</p>
+   </ref>
+   <ref>
+    <p>Harter RD. 1983. Effect of soil pH on adsorption of lead, copper, zinc, and nickel. Soil Sci Soc Am J 47: 47–51.</p>
+   </ref>
+   <ref>
+    <p>Hu Y, Jiang L, Wang W, Yu D. 2013. Jasmonate regulates the INDUCER OF CBF EXPRESSION–C-REPEAT BINDING FACTOR/DRE BINDING FACTOR1 Cascade and freezing tolerance in Arabidopsis. Plant Cell 25: 2907–2924.</p>
+   </ref>
+   <ref>
+    <p>Huang DW, Sherman BT, Lempicki RA. 2009. Systematic and integrative analysis of large gene lists using DAVID Bioinformatics Resources. Nat Protoc 4: 44–57.</p>
+   </ref>
+   <ref>
+    <p>Jeffares DC, Jolly C, Hoti M, Speed D, Shaw L, Rallis C, Balloux F, Dessimoz C, Bähler J, Sedlazeck FJ. 2017. Transient structural variations have strong effects on quantitative traits and reproductive isolation in fission yeast. Nat Commun 8: 14061.</p>
+   </ref>
+   <ref>
+    <p>Jeon J, Kim J. 2013. Arabidopsis response regulator1 and Arabidopsis histidine phosphotransfer protein2 (AHP2), AHP3, and AHP5 function in cold signaling. Plant Physiol 161: 408–424.</p>
+   </ref>
+   <ref>
+    <p>Kim D, Langmead B, Salzberg SL. 2015. HISAT: a fast spliced aligner with low memory requirements. Nat Methods 12: 357–360.</p>
+   </ref>
+   <ref>
+    <p>Kobashi K, Gemma H, Iwahori S. 2000. Abscisic acid content and sugar metabolism of peaches grown under water stress. J Amer Soc Hort Sci 125: 425–428.</p>
+   </ref>
+   <ref>
+    <p>Kobashi K, Sugaya S, Gemma H, Iwahori S. 2001. Effect of abscisic acid (ABA) on sugar accumulation in the flesh tissue of peach fruit at the start of the maturation stage. Plant Growth Regul 35: 215–223.</p>
+   </ref>
+   <ref>
+    <p>Lasky JR, Upadhyaya HD, Ramu P, Deshpande S, Hash CT, Bonnette J, Juenger TE, Hyma K, Acharya C, Mitchell SE. 2015. Genome-environment associations in sorghum landraces predict adaptive traits. Sci Adv 1: e1400218.</p>
+   </ref>
+   <ref>
+    <p>Lastdrager J, Hanson J, Smeekens S. 2014. Sugar signals and the control of plant growth and development. J Exp Bot 65: 799–807.</p>
+   </ref>
+   <ref>
+    <p>Li H, Durbin R. 2009. Fast and accurate short read alignment with Burrows-Wheeler transform. Bioinformatics 25: 1754–1760.</p>
+   </ref>
+   <ref>
+    <p>Li H, Durbin R. 2011. Inference of human population history from individual whole-genome sequences. Nature 475: 493–496.</p>
+   </ref>
+   <ref>
+    <p>Li H, Handsaker B, Wysoker A, Fennell T, Ruan J, Homer N, Marth G, Abecasis G, Durbin R, 1000 Genome Project Data Processing Subgroup. 2009. The sequence alignment/map format and SAMtools. Bioinformatics 25: 2078–2079.</p>
+   </ref>
+   <ref>
+    <p>Li J, Oulee TM, Raba R, Amundson RG, Last RL. 1993. Arabidopsis Flavonoid Mutants Are Hypersensitive to UV-B Irradiation. Plant Cell 5: 71–179.</p>
+   </ref>
+   <ref>
+    <p>Li Y, Cao K, Zhu G, Fang W, Chen C, Wang X, Zhao P, Guo J, Ding T, Guan L, et al. 2019. Genomic analyses of an extensive collection of wild and cultivated accessions provide new insights into peach breeding history. Genome Biol 20(1): 36.</p>
+   </ref>
+   <ref>
+    <p>Li Y, Wang L, Zhu G, Fang W, Cao K, Chen C, Wang X, Wang, X. (2016). Phenological response of peach to climate change exhibits a relatively dramatic trend in China, 1983-2012. Sci Hortic-Amsterda 209:192–200.</p>
+   </ref>
+   <ref>
+    <p>Li Z, Reighard GL, Abbott AG, Bielenberg DG. 2009. Dormancy-associated MADS genes from the EVG locus of peach [Prunus persica (L.) Batsch] have distinct seasonal and photoperiodic expression patterns. J Exp Bot 60: 3521–3530.</p>
+   </ref>
+   <ref>
+    <p>Ma Q, Sun M, Lu J, Liu Y, Hu D, Hao Y. 2017. Transcription factor AREB2 is involved in soluble sugar accumulation by activating sugar transporter and amylase genes. Plant Physio 174: 2348–2362.</p>
+   </ref>
+   <ref>
+    <p>Martínez-García PJ, Parfitt DE, Ogundiwin EA, Fass J, Chan HM, Ahmad R, Lurie S, Dandekar A, Gradziel TM, Crisosto CH. 2013. High density SNP mapping and QTL analysis for fruit quality characteristics in peach (Prunus persica L.). Tree Genet &amp;; Genomes 9: 9–36.</p>
+   </ref>
+   <ref>
+    <p>McKenna A, Hanna M, Banks E, Sivachenko A, Cibulskis K, Kernytsky A, Garimella K, Altshuler D, Gabriel S, Daly M, et al. 2010. The Genome Analysis Toolkit: a MapReduce framework for analyzing next-generation DNA sequencing data. Genome Research 20: 1297–1303.</p>
+   </ref>
+   <ref>
+    <p>Menzel A, Sparks TH, Estrella N, Koch E, Aasa A, Ahas P, Alm-Kubler K, Bissolli P, Braslavska O, Briede A, et al. 2006. European phenological response to climate change matches the warming pattern. Glob Chang Biol 12: 1969–1976.</p>
+   </ref>
+   <ref>
+    <p>Mikkelsen MD, Thomashow MF. 2009. A role for circadian evening elements in cold-regulated gene expression in Arabidopsis. Plant J 60: 328–339.</p>
+   </ref>
+   <ref>
+    <p>Monihan SM, Magness CA, Yadegari R, Smith SE, Schumaker KS. 2016. Arabidopsis CALCINEURIN B-LIKE10 functions independently of the SOS pathway during reproductive development in saline conditions. Plant Physio 171: 369–379.</p>
+   </ref>
+   <ref>
+    <p>Murray M, Thompson WF. 1980. Rapid isolation of high molecular weight plant DNA. Nucleic Acids Res 8: 4321–4326.</p>
+   </ref>
+   <ref>
+    <p>Pertea M, Kim D, Pertea G, Leek JT, Salzberg SL. 2016. Transcript-level expression analysis of RNA-seq experiments with HISAT, StringTie and Ballgown. Nat Protoc 11: 1650–1667.</p>
+   </ref>
+   <ref>
+    <p>Pertea ML, Pertea GM, Antonescu CM, Chang TC, Mendell JT, Salzberg SL. 2015. StringTie enables improved reconstruction of a transcriptome from RNA-seq reads. Nat Biotech 33: 290–295.</p>
+   </ref>
+   <ref>
+    <p>Price AL, Patterson NJ, Plenge RM, Weinblatt ME, Shadick NA, Reich D. 2006. Principal components analysis corrects for stratification in genome-wide association studies. Na Genet 38: 904–909.</p>
+   </ref>
+   <ref>
+    <p>Pritchard J, Di Rienzo A. 2010. Adaptation-not by sweeps only. Nat Rev Genet 11: 665–667.</p>
+   </ref>
+   <ref>
+    <p>Rugnone ML, Faigón Soverna A, Sanchez SE, Schlaen RG, Hernando CE, Seymour DK, Mancini E, Chernomoretz A, Weigel D, Más P, et al. 2013. LNK genes integrate light and clock signaling networks at the core of the Arabidopsis oscillator. Proc Natl Acad Sci U S A 110: 12120–12125.</p>
+   </ref>
+   <ref>
+    <p>Sasaki R, Yamane H, Ooka T, Jotatsu H, Kitamura Y, Akagi T, Tao R. 2011. Functional and expressional analyses of PmDAM genes associated with endodormancy in Japanese apricot. Plant Physiol 157: 485–497.</p>
+   </ref>
+   <ref>
+    <p>Seguel A, Cumming JR, Klugh-Stewart K, Cornejo P, Borie F. 2013. The role of arbuscular mycorrhizas in decreasing aluminium phytotoxicity in acidic soils: a review. Mycorrhiza 23: 167–183.</p>
+   </ref>
+   <ref>
+    <p>Tang H, Peng J, Wang P, Risch N. 2005. Estimation of individual admixture: analytical and study design considerations. Genet Epidemiol 28: 289–301.</p>
+   </ref>
+   <ref>
+    <p>Tim W, Braun JV. 2013. Climate change impacts on global food security. Science 341: 508–513.</p>
+   </ref>
+   <ref>
+    <p>Tobias R, Zichner T, Schlattl A, Stütz AM, Benes V, Korbel JO. 2012. Delly: structural variant discovery by integrated paired-end and split-read analysis. Bioinformatics 28: i333–i339.</p>
+   </ref>
+   <ref>
+    <p>Verde I, Abbott AG, Scalabrin S, Jung S, Shu S, Marroni F, Zhebentyayeva T, Dettori MT, Grimwood J, Cattonaro F, et al. 2013. The high-quality draft genome of peach (Prunus persica) identifies unique patterns of genetic diversity, domestication and genome evolution. Nat Genet 45: 487–494.</p>
+   </ref>
+   <ref>
+    <p>Wang J, Ding J, Tan B, Robinson KM, Michelson IH, Johansson A, Nystedt B, Scofield DG, Nilsson O, Jansson S, Street NR, et al. 2018. A major locus controls local adaptation and adaptive life history variation in a perennial plant. Genome Bio 19: 72.</p>
+   </ref>
+   <ref>
+    <p>Wang L, Zhu GR, Fang WC. 2012. Peach genetic resource in China. China Agriculture Press.</p>
+   </ref>
+   <ref>
+    <p>Yan W, Liu H, Zhou X, Li Q, Zhang J, Lu L, Liu T, Liu H, Zhang C, Zhang Z, et al. 2013. Natural variation in Ghd7.1 plays an important role in grain yield and adaptation in rice. Cell Res 23(7): 969–971.</p>
+   </ref>
+   <ref>
+    <p>Zhang Q, Chen W, Sun L, Zhao F, Huang B, Yang W, Tao Y, Wang J, Yuan Z, Fan G, et al. (2012). The genome of Prunus mume. Nat Commun 3: 1318.</p>
+   </ref>
+   <ref>
+    <p>Zheng Y, Crawford GW, Chen X. 2014. Archaeological evidence for peach (Prunus persica) cultivation and domestication in China. PLoS ONE 9: e106595.</p>
+   </ref>
+   <ref>
+    <p>Zhou X, Stephens M. 2012. Genome-wide efficient mixed-model analysis for association studies. Nat Genet 44: 821–824.</p>
+   </ref>
+  </ref-list>
+ </back>
+</article>

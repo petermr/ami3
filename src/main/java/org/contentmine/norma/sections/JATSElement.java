@@ -623,11 +623,21 @@ public abstract class JATSElement extends Element {
 	/** wrapper for appendChild() so we can use fluent
 	 * 
 	 * @param element
-	 * @return
+	 * @return this
 	 */
 	public JATSElement appendElement(JATSElement element) {
 		this.appendChild(element);
 		return this;
+	}
+	
+	/** wrapper for appendChild() so we can use fluent
+	 * 
+	 * @param element
+	 * @return element
+	 */
+	public JATSElement appendAndReturnElement(JATSElement element) {
+		this.appendChild(element);
+		return element;
 	}
 	
 	public JATSElement appendText(String text) {

@@ -1,5 +1,7 @@
 package org.contentmine.norma.sections;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -7,6 +9,8 @@ import java.util.stream.Collectors;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.files.CProject;
+import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.metadata.AbstractMetadata.MetadataScheme;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlMeta;
@@ -21,6 +25,10 @@ import nu.xom.Element;
  *
  */
 public class HtmlMetaJATSBuilder extends JATSBuilder {
+
+	private static final String LANDING_PAGE_HTML = "landingPage.html";
+	private static final String LANDING_PAGE_METADATA_XML = "landingPageMetadata.xml";
+
 	private static final Logger LOG = Logger.getLogger(HtmlMetaJATSBuilder.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
@@ -33,11 +41,16 @@ public class HtmlMetaJATSBuilder extends JATSBuilder {
 	private List<HtmlMeta> hwList;
 	private JATS_TempElement temp;
 
+	CProject cProject;
+
+	private boolean outputLandingMetadata;
+
+	private CTree currentTree;
+
 	public Map<MetadataScheme, List<HtmlMeta>>  readMetaListsByMetadataScheme(List<HtmlMeta> metaList) {
 		metadataByScheme = metaList.stream()
 			.filter(meta -> Objects.nonNull(meta.getName()))
 			.filter(meta -> (MetadataScheme.getScheme(meta.getName()) != null))
-//				.peek(meta -> System.out.println(meta.getName()))
 			.collect(Collectors.groupingBy(
 			    meta -> MetadataScheme.getScheme(meta.getName())
 			    )
@@ -62,11 +75,26 @@ public class HtmlMetaJATSBuilder extends JATSBuilder {
 	public JATSArticleElement processHWList() {
 		List<JATSElement> jatsList = getOrCreateHWList().stream()
 				.map(hw -> hw.toJATS())
+//				.peek(jats -> debugPrint(jats, "email"))
+//				.peek(j -> debugPrint(j, "institution"))
+//				.peek(j -> debugPrint(j, "orcid"))
 				.collect(Collectors.toList())
 				;
 		JATSArticleElement article = tidyJATS(jatsList);
+		if (outputLandingMetadata) {
+			try {
+				XMLUtil.debug(article, new File(createLandingPageMetadataFilename(currentTree)), 1);
+			} catch (IOException e) {
+				throw new RuntimeException("cannot write landing page", e);
+			}
+		}
 		return article;
 		
+	}
+
+	private String createLandingPageMetadataFilename(CTree currentTree) {
+		File file = new File(currentTree.getDirectory(), LANDING_PAGE_METADATA_XML);
+		return file.getAbsolutePath();
 	}
 
 	private JATSArticleElement tidyJATS(List<JATSElement> jatsList) {
@@ -85,49 +113,49 @@ public class HtmlMetaJATSBuilder extends JATSBuilder {
             	
             } else if (element instanceof JATSArticleIdElement) {
             	// creates an article with this ID
-            	getOrCreateArticleElement().appendChild(element);
+            	getOrCreateArticleElement().appendElement(element);
             	
             } else if (element instanceof JATSArticleTitleElement) {
-            	getOrCreateArticleTitleGroupElement().appendChild(element);
+            	getOrCreateArticleTitleGroupElement().appendElement(element);
             	
             } else if (element instanceof JATSContribElement) {
-            	getOrCreateContribGroupElement().appendChild(element);
+            	getOrCreateContribGroupElement().appendElement(element);
             	
             } else if (element instanceof JATSContribIdElement) {
-            	getOrCreateLastContribElement().appendChild(element);
+            	getOrCreateLastContribElement().appendElement(element);
             	
             } else if (element instanceof JATSDateElement) {
-            	getOrCreateArticleMetaElement().appendChild(element);
+            	getOrCreateArticleMetaElement().appendElement(element);
 
             } else if (element instanceof JATSExtLinkElement) {
-            	getOrCreateArticleMetaElement().appendChild(element);
+            	getOrCreateArticleMetaElement().appendElement(element);
             	
             } else if (element instanceof JATSEmailElement) {
-            	getOrCreateLastContribElement().appendChild(element);
+            	getOrCreateLastContribElement().appendElement(element);
             	
             } else if (element instanceof JATSFpageElement) {
-            	getOrCreateArticleMetaElement().appendChild(element);
+            	getOrCreateArticleMetaElement().appendElement(element);
             	
             } else if (element instanceof JATSInstitutionElement) {
-            	getOrCreateLastContribElement().appendChild(element);
+            	getOrCreateLastContribElement().appendElement(element);
             	
             } else if (element instanceof JATSJournalTitleElement) {
-            	getOrCreateJournalTitleGroupElement().appendChild(element);
+            	getOrCreateJournalTitleGroupElement().appendElement(element);
             	
             } else if (element instanceof JATSLpageElement) {
-            	getOrCreateArticleMetaElement().appendChild(element);
+            	getOrCreateArticleMetaElement().appendElement(element);
             	
             } else if (element instanceof JATSPublisherElement) {
-            	getOrCreateJournalMetaElement().appendChild(element);
+            	getOrCreateJournalMetaElement().appendElement(element);
             	
             } else if (element instanceof JATSPageCountElement) {
-            	getOrCreateCountsElement().appendChild(element);
+            	getOrCreateCountsElement().appendElement(element);
             	
             } else if (element instanceof JATSRefElement) {
-            	getOrCreateRefListElement().appendChild(element);
+            	getOrCreateRefListElement().appendElement(element);
             	
             } else if (element instanceof JATSSecElement) {
-            	getOrCreateBodyElement().appendChild(element);
+            	getOrCreateBodyElement().appendElement(element);
             	
             } else {
             	System.err.println("HtmlMetaJATSBuilder Unsupported "+element);
@@ -138,15 +166,23 @@ public class HtmlMetaJATSBuilder extends JATSBuilder {
 		return article;
 	}
 
-	private JATSContribElement getOrCreateLastContribElement() {
-		List<Element> contribElements = 
-				XMLUtil.getQueryElements(getOrCreateArticleMetaElement(), 
-						"./*[local-name='"+JATSContribElement.TAG+"']");
-		return (contribElements.size() == 0) ?
-			(JATSContribElement) new JATSContribElement()
-					.appendElement(new JATSContribElement()
-					.appendElement(new JATSStringNameElement(ANONYMOUS))) :
-		(JATSContribElement) contribElements.get(contribElements.size() - 1);
+	/** get last contributor.
+	 * if it doesn't exist (probably an error in document) create one
+	 * with string-name = anonymous
+	 * 
+	 * @return
+	 */
+	public JATSContribElement getOrCreateLastContribElement() {
+		List<Element> contribElements = getOrCreateContribGroupElement().getContribChildElements();
+		JATSContribElement jce = (JATSContribElement) 
+			(
+				(contribElements.size() == 0) ? 
+						(JATSContribElement) getOrCreateContribGroupElement().appendAndReturnElement(
+						new JATSContribElement().appendElement(new JATSStringNameElement(ANONYMOUS))) :
+				(JATSContribElement) contribElements.get(contribElements.size() - 1)
+			);
+		return jce;
+
 	}
 
 	public JATSRefListElement getOrCreateRefListElement() {
@@ -192,6 +228,29 @@ public class HtmlMetaJATSBuilder extends JATSBuilder {
 	public JATSCountsElement getOrCreateCountsElement() {
 		return getOrCreateArticleMetaElement().getOrCreateSingleCountsChild();
 	}
+
+	public void setCProject(CProject cProject) {
+		this.cProject = cProject;
+	}
+
+	public void extractMetadataFromLandingPage() {
+		for (CTree cTree : cProject.getOrCreateCTreeList()) {
+			this.currentTree = cTree;
+			List<HtmlMeta> metaList = HtmlMeta.createMetaList(new File(cTree.getDirectory(), LANDING_PAGE_HTML));
+			Map<MetadataScheme, List<HtmlMeta>> map = readMetaListsByMetadataScheme(metaList);
+			processHWList();
+		}
+	}
+
+	// =====================
+	private void debugPrint(JATSElement jats, String content) {
+		System.out.print(jats != null && jats.toXML().trim().length() > 0 && jats.toXML().contains(content)? "HW "+content.toUpperCase()+" "+jats.toXML() + "\n": "");
+	}
+
+	public void setOutputLandingMetadata(boolean b) {
+		this.outputLandingMetadata = b;
+	}
+
 
 
 }

@@ -80,5 +80,12 @@ public class JATSContribGroupElement extends JATSElement implements IsBlock {
 		}
 	}
 
+	List<Element> getContribChildElements() {
+		List<Element> contribElements = 
+				XMLUtil.getQueryElements(this, 
+				"./*[local-name()='"+JATSContribElement.TAG+"']");
+		return contribElements;
+	}
+
 	
 }

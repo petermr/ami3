@@ -7,6 +7,7 @@ import java.util.Map;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.AbstractAMITest;
+import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.metadata.AbstractMetadata.MetadataScheme;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlElement;
@@ -26,6 +27,7 @@ public class JATSBuilderTest extends AbstractAMITest {
 	}
 	
 	private static File TESTSEARCH4 = new File(AbstractAMITest.SRC_TEST_DOWNLOAD, "testsearch4");
+	private static File TESTSEARCH50 = new File(AbstractAMITest.SRC_TEST_DOWNLOAD, "testsearch50");
 	private static File T_903427 = new File(TESTSEARCH4, "10_1101_2020_01_12_903427v1");
 	
 	@Test
@@ -64,7 +66,7 @@ public class JATSBuilderTest extends AbstractAMITest {
 
 	@Test
 	public void testExtractMetaLists() {
-		List<HtmlMeta> metaList = createMetaList(new File(T_903427, "landingPage.html"));
+		List<HtmlMeta> metaList = HtmlMeta.createMetaList(new File(T_903427, "landingPage.html"));
 		HtmlMetaJATSBuilder jatsBuilder = (HtmlMetaJATSBuilder) JATSBuilderFactory.createJATSBuilder(JATSBuilder.BuilderType.HTML);
 		Map<MetadataScheme, List<HtmlMeta>> map = jatsBuilder.readMetaListsByMetadataScheme(metaList);
 		Assert.assertEquals(80, map.get(MetadataScheme.HW).size());
@@ -73,8 +75,8 @@ public class JATSBuilderTest extends AbstractAMITest {
 	}
 
 	@Test
-	public void testProcessMetaLists() {
-		List<HtmlMeta> metaList = createMetaList(new File(T_903427, "landingPage.html"));
+	public void testProcessMeta() {
+		List<HtmlMeta> metaList = HtmlMeta.createMetaList(new File(T_903427, "landingPage.html"));
 		HtmlMetaJATSBuilder jatsBuilder = (HtmlMetaJATSBuilder) JATSBuilderFactory.createJATSBuilder(JATSBuilder.BuilderType.HTML);
 		Map<MetadataScheme, List<HtmlMeta>> map = jatsBuilder.readMetaListsByMetadataScheme(metaList);
 		JATSArticleElement article = jatsBuilder.processHWList();
@@ -83,11 +85,22 @@ public class JATSBuilderTest extends AbstractAMITest {
 
 	}
 
-	// ========= PRIVATE ==========
-	private List<HtmlMeta> createMetaList(File file) {
-		HtmlElement htmlElement = HtmlElement.create(file);
-		List<HtmlMeta> metaList = HtmlMeta.extractMetas(htmlElement, HtmlMeta.HEAD_META_XPATH);
-		return metaList;
+	@Test
+	public void testProcessMetaLists() {
+		HtmlMetaJATSBuilder jatsBuilder = (HtmlMetaJATSBuilder) JATSBuilderFactory.createJATSBuilder(JATSBuilder.BuilderType.HTML);
+		jatsBuilder.setCProject(new CProject(TESTSEARCH4));
+		jatsBuilder.setOutputLandingMetadata(true);
+		jatsBuilder.extractMetadataFromLandingPage();
+
 	}
+
+	@Test
+	public void testProcessMetaListsLarge() {
+		HtmlMetaJATSBuilder jatsBuilder = (HtmlMetaJATSBuilder) JATSBuilderFactory.createJATSBuilder(JATSBuilder.BuilderType.HTML);
+		jatsBuilder.setCProject(new CProject(TESTSEARCH50));
+		jatsBuilder.extractMetadataFromLandingPage();
+
+	}
+
 
 }

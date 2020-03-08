@@ -16,6 +16,7 @@
 
 package org.contentmine.graphics.html;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -245,4 +246,12 @@ public class HtmlMeta extends HtmlElement {
 		}
 		return jatsElement;
 	}
+	
+	public static List<HtmlMeta> createMetaList(File file) {
+		HtmlElement htmlElement = HtmlElement.create(file);
+		List<HtmlMeta> metaList = HtmlMeta.extractMetas(htmlElement, HtmlMeta.HEAD_META_XPATH);
+		return metaList;
+	}
+
+
 }

@@ -179,7 +179,7 @@ public class HtmlTr extends HtmlElement {
 
 	public List<String> getChildThTdValues() {
 		List<String> stringValues = XMLUtil.getQueryValues(
-				this, "./*[local-name()='"+HtmlTh.TAG+"' or local-name='"+HtmlTh.TAG+"']");
+				this, "./*[local-name()='"+HtmlTd.TAG+"' or local-name()='"+HtmlTh.TAG+"']");
 		return stringValues;
 	}
 
