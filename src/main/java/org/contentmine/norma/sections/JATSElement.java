@@ -548,7 +548,12 @@ public abstract class JATSElement extends Element {
 						childDir.mkdirs();
 						writeSections(jatsChildElement, childDir);
 					} else {
-						writeElement(currentDir, sec, title, jatsChildElement);						
+						try {
+							writeElement(currentDir, sec, title, jatsChildElement);	
+						} catch (Exception e) {
+							System.err.println("Cannot write "+e.getMessage());
+							continue;
+						}
 					}
 				} else if (jatsChildElement instanceof IsInline) {
 					writeElement(currentDir, sec, title, jatsChildElement);						

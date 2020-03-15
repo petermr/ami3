@@ -8,7 +8,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.lucene.util.packed.DirectMonotonicReader.Meta;
 import org.contentmine.cproject.files.CProject;
-import org.contentmine.cproject.metadata.AbstractMetadata.MetadataScheme;
+import org.contentmine.cproject.metadata.AbstractMetadata.HtmlMetadataScheme;
 
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
@@ -245,7 +245,7 @@ public class AMIMetadataTool extends AbstractAMITool {
 
 	private void runTools() {
 		if (metaList.size() == 0) {
-			System.out.println("enum "+Arrays.asList(MetadataScheme.values()));
+			System.out.println("enum "+Arrays.asList(HtmlMetadataScheme.values()));
 		} else {
 			metaList.forEach(System.out::println);
 		}

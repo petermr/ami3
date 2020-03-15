@@ -312,6 +312,12 @@ public class AMIDictionaryTool extends AbstractAMITool {
     		description = "list of terms (entries), comma-separated")
     private String[] terms;
 
+    @Option(names = {"--termfile"}, 
+    		arity="1",
+//    		split=",",
+    		description = "list of terms in file, line-separated")
+    private File termfile;
+
     @Option(names = {"--title"}, 
     		arity="1",
     		description = "title for dictionary to be used if not already in source")
@@ -534,6 +540,16 @@ public class AMIDictionaryTool extends AbstractAMITool {
     			return;
     		}
     	} else {
+    		if (termfile != null) {
+    			if (!termfile.exists()) {
+    				throw new RuntimeException("termfile does not exist: "+termfile);
+    			}
+    			try {
+					terms = FileUtils.readLines(termfile, "UTF-8").toArray(new String[0]);
+				} catch (IOException e) {
+					throw new RuntimeException("cannot read termfile: "+termfile, e);
+				}
+    		}
     		if (terms != null) {
     			createSortedTermList();
     		}
@@ -1019,6 +1035,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 		System.out.println("splitCol      "+splitCol);
 		System.out.println("termCol       "+termCol);
 		System.out.println("terms         "+(termList == null ? null : "("+termList.size()+") "+termList));
+		System.out.println("termfile      "+termfile);
 		System.out.println("wikiLinks     "+wikiLinkList);
 	}
 

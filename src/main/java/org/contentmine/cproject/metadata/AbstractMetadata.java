@@ -2,8 +2,6 @@ package org.contentmine.cproject.metadata;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.file.FileVisitOption;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -18,6 +16,7 @@ import org.apache.log4j.Logger;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.metadata.crossref.CrossrefMD;
 import org.contentmine.cproject.metadata.epmc.EpmcMD;
+import org.contentmine.cproject.metadata.html.HtmlMD;
 import org.contentmine.cproject.metadata.quickscrape.QuickscrapeMD;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -49,23 +48,24 @@ import net.minidev.json.JSONArray;
  */
 public abstract class AbstractMetadata {
 
-	public enum MetadataScheme {
+	public enum HtmlMetadataScheme {
 		DC("DublinCore", "dc"),
 		HW("Highwire", "citation"),
-		PRISM("Prism", "prism"),
+		PRISM("Prism", "prism"), 
+//		CROSSREF("Crossref", "crossref"),
 		;
 		private static final String SEPARATORS = ":|_|\\.";
 		private String name;
 		private String prefix;
 
-		private MetadataScheme(String name, String prefix) {
+		private HtmlMetadataScheme(String name, String prefix) {
 			this.name = name;
 			this.prefix = prefix;
 		}
 		
-		public static MetadataScheme getScheme(String name) {
+		public static HtmlMetadataScheme getScheme(String name) {
 			String prefix = getPrefix(name);
-			for (MetadataScheme scheme : values()) {
+			for (HtmlMetadataScheme scheme : values()) {
 				if (scheme.toString().equalsIgnoreCase(prefix)) {
 					return scheme;
 				}
@@ -127,6 +127,7 @@ public abstract class AbstractMetadata {
 		
 		CROSSREF(new CrossrefMD()),
 		EPMC(new EpmcMD()),
+		HTML(new HtmlMD()),
 		QUICKSCRAPE(new QuickscrapeMD()),
 		;
 		
@@ -701,7 +702,7 @@ public abstract class AbstractMetadata {
 	public static final String CITATION_AUTHOR_EMAIL = "citation_author_email";
 	public static final String CITATION_AUTHOR_INSTITUTION = "citation_author_institution";
 	public static final String CITATION_AUTHOR_ORCID = "citation_author_orcid";
-	public static final String CITATION_AUTHORS = "citation_authors";
+	public static final String CITATION_AUTHORS = "citation_authors";   // what's this? a string of authors?
 	public static final String CITATION_DATE = "citation_date";
 	public static final String CITATION_DOI = "citation_doi";
 	public static final String CITATION_FIRSTPAGE = "citation_firstpage";
@@ -720,6 +721,28 @@ public abstract class AbstractMetadata {
 	public static final String CITATION_REFERENCE = "citation_reference";
 	public static final String CITATION_SECTION = "citation_section";
 	public static final String CITATION_TITLE = "citation_title";
+	
+	/** not yet used
+    citation_conference_title
+    citation_issue
+    citation_volume
+    citation_id_from_sass_path
+    citation_collection_id
+    citation_pmid
+    citation_mjid
+    citation_year
+    citation_publication_date
+    citation_online_date
+    citation_price
+    citation_fulltext_world_readable[*3]
+    citation_isbn
+    citation_language
+    citation_keywords
+    citation_dissertation_institution
+    citation_technical_report_institution
+    citation_technical_report_number
+
+	 */
 	
 	public static final String CONTRIBUTORS     = "contributors";
 	public static final String COPYRIGHT        = "copyright";
@@ -1428,5 +1451,8 @@ ARRAY translator; [{"affiliation":[],"family":"Munder","given":"Marc"},{"affilia
 		return biblioSpan;
 	}
 
+	public void extractMetadataFromFile(File file) {
+		throw new RuntimeException("Must implement extractMetadataFromFile()");
+	}
 
 }

@@ -2,16 +2,17 @@ package org.contentmine.ami.tools;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.contentmine.ami.tools.AMIDictionaryTool;
 import org.contentmine.ami.tools.AMIDictionaryTool.DictionaryFileFormat;
-import org.contentmine.ami.tools.AbstractAMITool;
 import org.contentmine.norma.NAConstants;
+import org.junit.Assert;
 import org.junit.Test;
 
-import junit.framework.Assert;
 
 /** tests AMIDictinary
  * 
@@ -37,7 +38,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 	public void testListSome() {
 		String args =
 				"display " +
-				" --directory src/main/resources/org/contentmine/ami/plugins/dictionary " +
+		   " --directory src/main/resources/org/contentmine/ami/plugins/dictionary " +
            " --dictionary " + "country crispr disease"
 				;
 		AMIDictionaryTool.main(args);
@@ -45,66 +46,68 @@ public class AMIDictionaryTest extends AbstractAMITest {
 	
 	@Test
 	public void testCreateFungicideTerms() {
+		File directory = new File("/Users/pm286/ContentMine/dictionary/dictionaries/chem");
+		String dictionary = "fungicides2";
 		String args =
 				"create " +
-				" --directory /Users/pm286/ContentMine/dictionary/dictionaries/chem " +
-           " --dictionary " + "fungicides2 " +
+				" --directory " + directory + " " +
+           " --dictionary " + dictionary +
            " --outformats html,xml " +
-           " --terms " + "Abamectin Actinomycin Alexidine Amikacin Amphotericin B Ampicillin"
-           		+ " Anidulafungin Antimycin Aureobasidin Azithromycin Azoxystrobin Aztreonam"
-           		+ " Bacitracin Benomyl Benznidazole Bifonazole Bleomycin Boscalid"
-           		+ " Brassinin Brefeldin Calcofluor White Camptothecin Captan carbapenems Carbendazim Carbenicillin"
-           		+ " Carboxin Caspofungin Cefotaxime Ceftazidime Ceftriaxone Cefuroxime Cefuroximel Cephalexin"
-           		+ " Cercosporamide Chloramphenicol Chlorothalonil Ciprofloxacin Closantel Colistin Copper "
-           		+ " Copper_sulphate Cycloheximide Cyclosporine Cyproconazole Daptomycin Diethofencarb"
-           		+ " Difenoconazole Diniconazole Doxycycline Eflornithine Emamectin Epoxyconazole"
-           		+ " Ethambutol Farnesol Fenarimol Fenhexamid Fenpropidin Fluconazole Flucytosine"
-           		+ " Fludioxonil Flutriafol Gentamicin Gramicidin Hydrogen_peroxide Hygromycin"
-           		+ " Hymexazol Imipenem Iprodione Isoniazid Itraconazole Ketoconazole Latrunculin"
-           		+ " Leptomycin B Lincomycin Linezolid Mancozeb Mecillinam Meropenem Micafungin"
-           		+ " Miconazole Miltefosine Moxifloxacin Myriocin Naftifine Nalidixic_acid Neomycin"
-           		+ " Nifurtimox Nikkomycin Nisin nitrofurantoin Norfloxacin Novobiocin Nystatin"
-           		+ " Oligomycin Oxacillin Oxolinic_acid Oxytetracycline Paromomycin Penicillin"
-           		+ " Pentamidine Phenamacril phosphomycin Plumbagin Polymyxin_B1 posaconazole"
-           		+ " Prochloraz Propiconazole Pyrimethanil Rapamycin Resveratrol Rifampicin"
-           		+ " Rifampin Rose Bengal Rotenone Salicylhydroxamic Sordarin Spectinomycin"
-           		+ " Spiroxamine Streptomycin sulfate Strobilurin Sulbactam Tebuconazole"
-           		+ " Teicoplanin Telithromycin terbinafine Tetracycline Thiabendazole Thiophanate-methyl"
-           		+ " Tiamulin Ticarcillin Tigecycline Tobramycin Triadimefon Trichostatin Triclabendazole"
-           		+ " Triclosan Tricyclazole Tridemorph Trimethoprim Tunicamycin Tylosin Valinomycin Vancomycin"
+           " --terms " + ""
+           		+ "Abamectin Actinomycin Alexidine Amikacin Amphotericin B Ampicillin"
+//           		+ " Anidulafungin Antimycin Aureobasidin Azithromycin Azoxystrobin Aztreonam"
+//           		+ " Bacitracin Benomyl Benznidazole Bifonazole Bleomycin Boscalid"
+//           		+ " Brassinin Brefeldin Calcofluor White Camptothecin Captan carbapenems Carbendazim Carbenicillin"
+//           		+ " Carboxin Caspofungin Cefotaxime Ceftazidime Ceftriaxone Cefuroxime Cefuroximel Cephalexin"
+//           		+ " Cercosporamide Chloramphenicol Chlorothalonil Ciprofloxacin Closantel Colistin Copper "
+//           		+ " Copper_sulphate Cycloheximide Cyclosporine Cyproconazole Daptomycin Diethofencarb"
+//           		+ " Difenoconazole Diniconazole Doxycycline Eflornithine Emamectin Epoxyconazole"
+//           		+ " Ethambutol Farnesol Fenarimol Fenhexamid Fenpropidin Fluconazole Flucytosine"
+//           		+ " Fludioxonil Flutriafol Gentamicin Gramicidin Hydrogen_peroxide Hygromycin"
+//           		+ " Hymexazol Imipenem Iprodione Isoniazid Itraconazole Ketoconazole Latrunculin"
+//           		+ " Leptomycin B Lincomycin Linezolid Mancozeb Mecillinam Meropenem Micafungin"
+//           		+ " Miconazole Miltefosine Moxifloxacin Myriocin Naftifine Nalidixic_acid Neomycin"
+//           		+ " Nifurtimox Nikkomycin Nisin nitrofurantoin Norfloxacin Novobiocin Nystatin"
+//           		+ " Oligomycin Oxacillin Oxolinic_acid Oxytetracycline Paromomycin Penicillin"
+//           		+ " Pentamidine Phenamacril phosphomycin Plumbagin Polymyxin_B1 posaconazole"
+//           		+ " Prochloraz Propiconazole Pyrimethanil Rapamycin Resveratrol Rifampicin"
+//           		+ " Rifampin Rose Bengal Rotenone Salicylhydroxamic Sordarin Spectinomycin"
+//           		+ " Spiroxamine Streptomycin sulfate Strobilurin Sulbactam Tebuconazole"
+//           		+ " Teicoplanin Telithromycin terbinafine Tetracycline Thiabendazole Thiophanate-methyl"
+//           		+ " Tiamulin Ticarcillin Tigecycline Tobramycin Triadimefon Trichostatin Triclabendazole"
+//           		+ " Triclosan Tricyclazole Tridemorph Trimethoprim Tunicamycin Tylosin Valinomycin Vancomycin"
            		+ " Verapamil Vinclozolin Virginiamycin Voriconazole"
 				;
 		AMIDictionaryTool.main(args);
+//		Assert.assertTrue(""+directory, new directory.exists());
 	}
 	
-//		@Test
-//		public void testCreateWheatVarieties() {
-//			String args =
-//					"create " +
-//					"--directory /Users/pm286/ContentMine/dictionary/dictionaries/plants " +
-//           " --dictionary " + "wheatcultivars " +
-//           " --outformats html,xml " +
-//           " --terms Access Alchemy Ambrosia Amplify Arran Asagai Atlanta Bantam Battalion Belgrade Beluga Benedict Bennington Bentley Biscay Britannia Brompton Brunel Buchan Butler Buzzer Carlton Cassius Chardonnay Charger Chatsworth Chilton Chronicle Claire Cocoon Conqueror Consort Contender Cordiale Coronation Costello Cougar Crusoe Cubanita Dart Deben Defender Delphi Denman Dickens Dickson Director Dover Dunston Duxford Edmunds Einstein Elation Elicit Energise Equinox Evolution Exeter Fastnet Freiston Fugue Gallant Gatsby Gladiator Glasgow Gleam Goldengun Goodwill Grafton Graham Gravitas Gulliver Hardwicke Havana Hereford Hereward Heritage Horatio Humber Hurley Hyperion Icebreaker Icon Invicta Istabraq JB Diego Jorvik KWS Barrel KWS Basset KWS Bonham KWS Cashel KWS Cleveland KWS Crispin KWS Croft KWS Curlew KWS Dali KWS Evoke KWS Extase KWS Firefly KWS Gator KWS Gymnast KWS Horizon KWS Jackal KWS Kerrin KWS Kielder KWS Lili KWS Luther KWS Podium KWS Quartz KWS Rowan KWS Santiago KWS Saxtead KWS Silverstone KWS Siskin KWS Solo KWS Sterling KWS Target KWS Tempo KWS Trinity KWS Yaris KWS Zyatt Ketchum Kingdom Kipling LG Bletchley LG Cassidy LG Detroit LG Generation LG Interstellar LG Jigsaw LG Motown LG Rhythm LG Sabertooth LG Skyscraper LG Spotlight LG Sundance Lancaster Lear Leeds Limerick Macro Madrigal Malacca Marksman Marlowe Marston Mascot Monterey Monty Mosaic Moulton Musketeer Myriad Napier Nijinsky Oakley Option Orbit Panacea Panorama Pennant Phlebas Piranha QI Qplus Quest RGT Adventure RGT Conversion RGT Gravity RGT Illustrious RGT Knightsbridge RGT Marlborough RGT Paddington RGT Universe RGT Westminster Reflection Relay Revelation Riband Richmond Robigus Rocky Ruskin SW Tataros SY Epson SY Loki SY Medea Sahara Savannah Savello Scorpion 25 Scout Senator Shabras Shamrock Sherlock Shire Shogun Skyfall Smuggler Soissons Solace Solstice Spyder Steadfast Stigg Stratosphere Tanker Tellus Timber Torch Torphins Trident Tuxedo Twister Vector Velocity Verso Viscount Walpole Warlock 24 Warrior Weaver Welford Wizard Xi19 Zebedee",
-//
-//					;
-//			AMIDictionaryTool.main(args);
-//		}
-
-//		@Test
-//		public void testCreateWheatResistanceGenes() {
-//			String args =
-//					"create " +
-//					"--directory /Users/pm286/ContentMine/dictionary/dictionaries/plants " +
-//           " --dictionary " + "wheatrustresist " +
-//           " --outformats html,xml " +
-//           " --terms " +
-////					"Yr1(2AL)","Yr2(7B)","Yr3a-c(1B)","Yr4a-b(6B)","Yr6(7BS)","Yr7(2BL)","Yr11","Yr12","Yr13","Yr14","Yr16(2D)","Yr18(7DS)","Yr19(5B)","Yr20(6D)","Yr21(1B)","Yr22(4D)","Yr23(6D)","Yr24(1BS)","Yr25(1D)","Yr27+Lr13(2BS)","Yr29+Lr46(1BL)","Yr30+Sr2+Lr27(3BS)","Yr31(2BS)","Yr32(2BS)","Yr41(2B)"
-//					"Yr1","Yr2","Yr3a-c","Yr4a-b","Yr5","Yr6","Yr7","Yr11","Yr12","Yr13","Yr14","Yr16","Yr18","Yr19","Yr20","Yr21","Yr22","Yr23","Yr24","Yr25","Yr27","Lr13","Yr29","Lr46","Yr30","Yr31","Yr32","Yr41"
-//
-//					;
-//			AMIDictionaryTool.main(args);
-//		}
-
+	@Test
+	public void testCreateFungicideTermsFromFile() throws IOException {
+		File directory = new File("/Users/pm286/ContentMine/dictionary/dictionaries/chem");
+		String dictionary = "fungicides2a";
+		List<String> fungicides = Arrays.asList(new String[] {
+		   	"Abamectin",
+		   	"Actinomycin",
+		   	"Virginiamycin",
+		   	"Voriconazole"
+		   	}
+		);
+		File fungicideFile = new File("target/fungicides/fungicides.txt");
+		FileUtils.writeLines(fungicideFile, fungicides);
+		
+		String args =
+				"create " +
+				" --directory " + directory + " " +
+           " --dictionary " + dictionary +
+           " --outformats html,xml " +
+           " --termfile " + fungicideFile
+				;
+		AMIDictionaryTool.main(args);
+		File dictionaryFile = new File(directory, dictionary+"."+"xml");
+		Assert.assertTrue(""+dictionaryFile, dictionaryFile.exists());
+	}
+	
 
 	@Test
 	public void testWikipediaTables() throws IOException {
@@ -127,7 +130,9 @@ public class AMIDictionaryTest extends AbstractAMITest {
 	
 	@Test
 	public void testWikipediaTables2() throws IOException {
-		String dict = "soc.socialnetwork";
+		String dictname = "socialnetwork";
+		String dict = "soc." + dictname;
+		File dictFile = new File(DICTIONARY_DIR, dictname+".xml");
 		String args =
 			"create " +
            " --input https://en.wikipedia.org/wiki/List_of_social_networking_websites " +
@@ -135,21 +140,25 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --namecol Name " +
 			"--linkcol Name " +
            " --outformats xml,json,html " +
-           " --dictionary socialnetwork";
+           " --dictionary "+dictname;
 		AbstractAMITool amiDictionary = new AMIDictionaryTool();
 		amiDictionary.runCommands(args);
+		Assert.assertTrue(""+dictFile, dictFile.exists());
+
 	}
 	
 	@Test
 	public void testWikipediaPage() throws IOException {
-		String dict = "chem.proteinStructure";
+		String dict = "proteinStructure";
+		File dictFile = new File(DICTIONARY_DIR, dict+".xml");
 		String args =
 			"create " +
            " --input https://en.wikipedia.org/wiki/Protein_structure " +
            " --informat wikipage " +
            " --outformats xml,json,html " +
            " --dictionary " +dict;
-		new AMIDictionaryTool().runCommands(args);
+//		new AMIDictionaryTool().runCommands(args);
+		Assert.assertTrue(""+dictFile, dictFile.exists());
 	}
 
 	@Test
@@ -373,7 +382,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --dictionary " +dict +
            " --directory " +DICTIONARY_DIR.toString() +
            " --wikilinks wikidata"
-;
+          ;
 		new AMIDictionaryTool().runCommands(args);
 	}
 	
@@ -438,10 +447,14 @@ public class AMIDictionaryTest extends AbstractAMITest {
 	}
 
 	@Test
+	/** LONG! */
 	public void testListOfRiceVarieties() {
 		String args = "create"
 				+ " --input https://en.wikipedia.org/wiki/List_of_rice_varieties"
-				+ " --informat wikipage --hreftext --dictionary ricevarieties --outformats xml,json,html";
+				+ " --informat wikipage"
+//				+ " --hreftext"
+				+ " --dictionary ricevarieties"
+				+ " --outformats xml,json,html";
 		new AMIDictionaryTool().runCommands(args);
 	}
 	
