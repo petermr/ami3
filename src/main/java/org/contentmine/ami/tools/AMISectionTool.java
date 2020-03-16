@@ -68,9 +68,12 @@ description = "splits XML files into sections using XPath%n"
 		+ "optionally writes HTML (slow) using specified stylesheet%n"
 		+ "examples:%n"
 		+ "    --sections ALL --html nlm2html%n"
+		+ "         //not sure this works"
 		+ "    --sections ABSTRACT ACK_FUND --write false%n"
 		+ "%n"
 		+ "    --forcemake --extract table fig --summary figure table "
+		+ "        // this seems to create sections OK, use this?"
+		
 )
 
 public class AMISectionTool extends AbstractAMITool {
@@ -450,7 +453,12 @@ public class AMISectionTool extends AbstractAMITool {
 	}
 
 	private File getFloatsDir() {
-		List<File> floatsDirList = Util.listFilesFromPaths(cTree.getSectionsDirectory(), FLOATS_GROUP_REGEX);
+		List<File> floatsDirList = new ArrayList<>();
+		try {
+			floatsDirList = Util.listFilesFromPaths(cTree.getSectionsDirectory(), FLOATS_GROUP_REGEX);
+		} catch (Exception e) {
+			System.err.println("ERROR, skipped: "+e.getMessage());
+		}
 		return (floatsDirList.size() == 1) ? floatsDirList.get(0) : null;
 	}
 
@@ -460,11 +468,15 @@ public class AMISectionTool extends AbstractAMITool {
 		if (existingFulltextXML == null) {
 			System.err.println("No fulltext.xml");
 		} else {
-			JATSArticleElement articleElement = factory.readArticle(existingFulltextXML);
-			if (makeBoldSections) {
-				makeBoldSections(articleElement);
+			try {
+				JATSArticleElement articleElement = factory.readArticle(existingFulltextXML);
+				if (makeBoldSections) {
+					makeBoldSections(articleElement);
+				}
+				articleElement.writeSections(cTree);
+			} catch (Exception e) {
+				System.err.println("Cannot read article, SKIPPING "+e.getMessage());
 			}
-			articleElement.writeSections(cTree);
 		}
 	}
 

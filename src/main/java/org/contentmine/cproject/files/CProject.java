@@ -93,6 +93,7 @@ public class CProject extends CContainer {
 			AbstractMetadata.Type.CROSSREF.getCProjectMDFilename(),
 			AbstractMetadata.Type.EPMC.getCProjectMDFilename(),
 			AbstractMetadata.Type.QUICKSCRAPE.getCProjectMDFilename(),
+			AbstractMetadata.Type.HTML.getCProjectMDFilename(),
 	};
 
 	protected static final String[] ALLOWED_FILE_NAMES = new String[] {

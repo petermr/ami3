@@ -548,12 +548,7 @@ public abstract class JATSElement extends Element {
 						childDir.mkdirs();
 						writeSections(jatsChildElement, childDir);
 					} else {
-						try {
-							writeElement(currentDir, sec, title, jatsChildElement);	
-						} catch (Exception e) {
-							System.err.println("Cannot write "+e.getMessage());
-							continue;
-						}
+						writeElement(currentDir, sec, title, jatsChildElement);	
 					}
 				} else if (jatsChildElement instanceof IsInline) {
 					writeElement(currentDir, sec, title, jatsChildElement);						
@@ -575,7 +570,11 @@ public abstract class JATSElement extends Element {
 
 	private void writeElement(File currentDir, int sec, String title, JATSElement jatsChildElement) {
 		File childFile = new File(currentDir, sec+"_"+title+"."+CTree.XML);
-		XMLUtil.writeQuietly(jatsChildElement, childFile, 1);
+		try {
+			XMLUtil.writeQuietly(jatsChildElement, childFile, 1);
+		} catch (Exception e) {
+			System.err.println("SKIPPED, Cannot write "+e.getMessage());
+		}
 	}
 
 	private String createTitle(Element childElement) {

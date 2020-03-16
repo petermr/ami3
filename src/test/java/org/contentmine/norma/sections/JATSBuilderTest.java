@@ -93,7 +93,7 @@ public class JATSBuilderTest extends AbstractAMITest {
 		HtmlMetaJATSBuilder jatsBuilder = (HtmlMetaJATSBuilder) JATSBuilderFactory.createJATSBuilder(JATSBuilder.BuilderType.HTML);
 		jatsBuilder.setCProject(new CProject(TESTSEARCH4));
 		jatsBuilder.setOutputLandingMetadata(true);
-		jatsBuilder.extractMetadataFromCProject(new HtmlMD());
+		jatsBuilder.extractMetadataFromCProject(new HtmlMD(), HtmlMetadataScheme.HW);
 
 	}
 

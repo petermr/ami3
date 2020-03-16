@@ -84,8 +84,7 @@ public class HtmlMetaJATSBuilder extends JATSBuilder {
 	 * @param metadata
 	 * @param metadataScheme
 	 */
-	public void extractMetadataFromCProject(
-			AbstractMetadata metadata) {
+	public void extractMetadataFromCProject(AbstractMetadata metadata) {
 		extractMetadataFromCProject(metadata, null);
 	}
 
@@ -98,6 +97,10 @@ public class HtmlMetaJATSBuilder extends JATSBuilder {
 			AbstractMetadata metadata, HtmlMetadataScheme metadataScheme) {
 		for (CTree cTree : cProject.getOrCreateCTreeList()) {
 			this.currentTree = cTree;
+			if (metadataScheme == null) {
+				System.err.println("no metadata scheme; assume Highwire HW");
+				metadataScheme = HtmlMetadataScheme.HW;
+			} 
 			if (metadataScheme.equals(HtmlMetadataScheme.HW)) {
 				File file = new File(cTree.getDirectory(), LANDING_PAGE_HTML); 
 				metadata.extractMetadataFromFile(file);

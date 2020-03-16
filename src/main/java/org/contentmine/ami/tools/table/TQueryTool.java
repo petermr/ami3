@@ -10,13 +10,10 @@ import java.util.regex.Pattern;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
-import org.contentmine.ami.tools.AMIDictionaryTool;
-import org.contentmine.cproject.util.RectTabColumn;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.xml.XMLUtil;
 
-import nu.xom.Attribute;
 import nu.xom.Element;
 
 /**

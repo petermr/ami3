@@ -36,6 +36,9 @@ public class HtmlMD extends AbstractMetadata {
 
 	private static final String LANDING_PAGE_METADATA_XML = "landingPageMetadata.xml";
 
+	private static final String CTREE_RESULT_XML = "html_metadata.xml";
+	private static final String CPROJECT_RESULT_XML = "html_metadata.xml";
+
 	private boolean outputLandingMetadata = true;
 
 	private HtmlMetaJATSBuilder htmlMetaJATSBuilder;
@@ -135,6 +138,16 @@ public class HtmlMD extends AbstractMetadata {
 
 	public void setOutputLandingMetadata(boolean outputLandingMetadata) {
 		this.outputLandingMetadata = outputLandingMetadata;
+	}
+
+	@Override
+	protected String getCTreeMetadataFilename() {
+		return CTREE_RESULT_XML;
+	}
+
+	@Override
+	protected String getCProjectMetadataFilename() {
+		return CPROJECT_RESULT_XML;
 	}
 
 

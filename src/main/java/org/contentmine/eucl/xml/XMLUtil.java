@@ -1789,6 +1789,31 @@ public abstract class XMLUtil implements XMLConstants {
 		removeElements(elements);
 	}
 
+	/** use to skip occasional unexpected null values
+	 * probably should use Optional
+	 * 
+	 * @param element
+	 * @param name
+	 * @param value
+	 * @return
+	 */
+	public static boolean addNonNullAttribute(Element element, String name, String value) {
+		if (element == null) {
+			System.err.println("null element in addNonNullAttribute");
+			return false;
+		} else if (name == null) {
+			System.err.println("null name in addNonNullAttribute for "+element.getLocalName());
+			return false;
+		} else if (value == null) {
+			System.err.println("null value in addNonNullAttribute for "+name + " in "+element.getLocalName());
+			return false;
+		} else {
+			element.addAttribute(new Attribute(name, value));
+		}
+		return true;
+			
+	}
+
 
 		
 }

@@ -669,7 +669,9 @@ public class AMIDictionaryTool extends AbstractAMITool {
 		cmJsonDictionary = CMJsonDictionary.readJsonDictionary(inString);
 		xmlDictionary = CMJsonDictionary.convertJsonToXML(cmJsonDictionary);
 		if (xmlDictionary != null) {
-			addWikiLinksToDictionary(xmlDictionary);
+			try {
+				addWikiLinksToDictionary(xmlDictionary);
+			} catch 
 		}
 		outputXMLDictionary(outfile);
 	}
@@ -677,6 +679,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 	private void addWikiLinksToDictionary(DefaultAMIDictionary xmlDictionary) {
 		List<Element> entryList = xmlDictionary.getEntryList();
 		for (Element entry : entryList) {
+			
 			addWikiLinks(entry);
 		}
 	}
@@ -810,31 +813,35 @@ public class AMIDictionaryTool extends AbstractAMITool {
 	}
 
 	private void addWikiLinks(Element entry) {
-		WikipediaLookup wikipediaLookup = new WikipediaLookup();
-		HtmlElement wikipediaPage = null;
-		List<HtmlElement> wikidata = null;
-		String term = entry.getAttributeValue(DictionaryTerm.TERM);
 		try {
-			wikipediaPage = addWikipediaPage(entry, term);
-		} catch (RuntimeException e) {
-			LOG.error("cannot parse wikipedia page for: " + term + "; " + e.getMessage());
-		}
-		if (wikiLinkList.contains(WikiLink.wikidata)) {
-			if (term != null) {
-				wikidata = wikipediaLookup.queryWikidata(term);
-			} else if (wikipediaPage != null) {
-				wikidata = (wikidata != null) ? wikidata : wikipediaLookup.createWikidataFromTermLookup(wikipediaPage);
-				wikidata = (wikidata != null) ? wikidata : wikipediaLookup.queryWikidata(term);
+			WikipediaLookup wikipediaLookup = new WikipediaLookup();
+			HtmlElement wikipediaPage = null;
+			List<HtmlElement> wikidata = null;
+			String term = entry.getAttributeValue(DictionaryTerm.TERM);
+			try {
+				wikipediaPage = addWikipediaPage(entry, term);
+			} catch (RuntimeException e) {
+				LOG.error("cannot parse wikipedia page for: " + term + "; " + e.getMessage());
 			}
-			WikiResult wikiResult = WikipediaLookup.getFirstWikiResultFromSearchResults(wikidata);
-			if (wikiResult != null) {
-				entry.addAttribute(new Attribute(WIKIDATA, wikiResult.getQString()));
-				entry.addAttribute(new Attribute(DictionaryTerm.NAME, wikiResult.getLabel()));
-				entry.addAttribute(new Attribute(DictionaryTerm.DESCRIPTION, wikiResult.getDescription()));
-				LOG.debug("ENTRY "+entry.toXML());
-			} else {
-				missingWikidataSet.add(term);
+			if (wikiLinkList.contains(WikiLink.wikidata)) {
+				if (term != null) {
+					wikidata = wikipediaLookup.queryWikidata(term);
+				} else if (wikipediaPage != null) {
+					wikidata = (wikidata != null) ? wikidata : wikipediaLookup.createWikidataFromTermLookup(wikipediaPage);
+					wikidata = (wikidata != null) ? wikidata : wikipediaLookup.queryWikidata(term);
+				}
+				WikiResult wikiResult = WikipediaLookup.getFirstWikiResultFromSearchResults(wikidata);
+				if (wikiResult != null) {
+					entry.addAttribute(new Attribute(WIKIDATA, wikiResult.getQString()));
+					entry.addAttribute(new Attribute(DictionaryTerm.NAME, wikiResult.getLabel()));
+					entry.addAttribute(new Attribute(DictionaryTerm.DESCRIPTION, wikiResult.getDescription()));
+					LOG.debug("ENTRY "+entry.toXML());
+				} else {
+					missingWikidataSet.add(term);
+				}
 			}
+		} catch (Exception e) {
+			System.err.println("Cannot add entry: "+e.getMessage());
 		}
 	}
 
