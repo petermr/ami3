@@ -9,6 +9,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.AMIDictionaryTool.DictionaryFileFormat;
+import org.contentmine.graphics.html.HtmlA;
 import org.contentmine.norma.NAConstants;
 import org.junit.Assert;
 import org.junit.Test;
@@ -354,7 +355,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 	}
 	
 	@Test
-	public void testWikipediaPlantVirus() throws IOException {
+	public void testWikipediaWikipage() throws IOException {
 		String dict = "plants.virus";
 		String args =
 			"create " +
@@ -368,6 +369,107 @@ public class AMIDictionaryTest extends AbstractAMITest {
 		new AMIDictionaryTool().runCommands(args);
 	}
 
+	@Test
+	public void testWikipediaWikiTemplateOnline() throws IOException {
+		String dict = "respiratory_pathology";
+		
+		String args =
+			"create " +
+		   " --input https://en.wikipedia.org/wiki/Template:Respiratory_pathology " +
+           " --informat wikitemplate " +
+           " --dictionary " + dict +
+           " --outformats html,xml " +
+           " --wikilinks"
+			;
+		new AMIDictionaryTool().runCommands(args);
+//		Assert.assertTrue("file exists "+dictionaryFile, dictionaryFile.exists());
+	}
+
+	@Test
+	public void testWikipediaWikiTemplate() throws IOException {
+		String dict = "respiratory_pathology";
+/** this shows how awful the Mediawiki markup is; a mixture of table and dictionary
+ * the leaf nodes seem all to  be <dd>< href="...">...</a></dd> and this iw what we'll use
+ * 
+ * the other links are not leafs and not dictionary items.
+ * that may vary in other templates		
+ */
+		String htmlS = ""+
+"<tr>" +
+"<th scope='row' class='navbox-group' style='width:1%'><a href='https://en.wikipedia.org/wiki/Human_head' title='Human head'>Head</a></th>" +
+"<td class='navbox-list navbox-odd' style='text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px'>" +
+"<div style='padding:0em 0.25em'>" +
+"<dl>" +
+"<dt><i><a href='https://en.wikipedia.org/wiki/Paranasal_sinuses' title='Paranasal sinuses'>sinuses</a></i></dt>" +
+"<dd></dd>" +
+"<dd><a href='https://en.wikipedia.org/wiki/Sinusitis' title='Sinusitis'>Sinusitis</a></dd>" +
+"</dl>" +
+"<dl>" +
+"<dt><i><a href='https://en.wikipedia.org/wiki/Human_nose' title='Human nose'>nose</a></i></dt>" +
+"<dd></dd>" +
+"<dd><a href='https://en.wikipedia.org/wiki/Rhinitis' title='Rhinitis'>Rhinitis</a>" +
+"<dl>" +
+"<dd><a href='https://en.wikipedia.org/wiki/Nonallergic_rhinitis' title='Nonallergic rhinitis'>Vasomotor rhinitis</a></dd>" +
+"<dd><a href='https://en.wikipedia.org/wiki/Chronic_atrophic_rhinitis' title='Chronic atrophic rhinitis'>Atrophic rhinitis</a></dd>" +
+"<dd><a href='https://en.wikipedia.org/wiki/Allergic_rhinitis' title='Allergic rhinitis'>Hay fever</a></dd>" +
+"</dl>" +
+"</dd>" +
+"<dd><a href='https://en.wikipedia.org/wiki/Nasal_polyp' title='Nasal polyp'>Nasal polyp</a></dd>" +
+"<dd><a href='https://en.wikipedia.org/wiki/Rhinorrhea' title='Rhinorrhea'>Rhinorrhea</a></dd>" +
+"<dd><i><a href='https://en.wikipedia.org/wiki/Nasal_septum' title='Nasal septum'>nasal septum</a></i>" +
+"<dl>" +
+"<dd><a href='https://en.wikipedia.org/wiki/Nasal_septum_deviation' title='Nasal septum deviation'>Nasal septum deviation</a></dd>" +
+"<dd><a href='https://en.wikipedia.org/wiki/Nasal_septum_perforation' title='Nasal septum perforation'>Nasal septum perforation</a></dd>" +
+"<dd><a href='https://en.wikipedia.org/wiki/Nasal_septal_hematoma' title='Nasal septal hematoma'>Nasal septal hematoma</a></dd>" +
+"</dl>" +
+"</dd>" +
+"</dl>" +
+"<dl>" +
+"<dt><i><a href='https://en.wikipedia.org/wiki/Tonsil' title='Tonsil'>tonsil</a></i></dt>" +
+"<dd></dd>" +
+"<dd><a href='https://en.wikipedia.org/wiki/Tonsillitis' title='Tonsillitis'>Tonsillitis</a></dd>" +
+"<dd><a href='https://en.wikipedia.org/wiki/Adenoid_hypertrophy' title='Adenoid hypertrophy'>Adenoid hypertrophy</a></dd>" +
+"<dd><a href='https://en.wikipedia.org/wiki/Peritonsillar_abscess' title='Peritonsillar abscess'>Peritonsillar abscess</a></dd>" +
+"</dl>" +
+"</div>" +
+"</td>" +
+"</tr>" +
+"";
+		htmlS = htmlS.replaceAll(" ", "%20"); // escape with percentEncoding
+		
+		String args =
+			"create " +
+//		   " --input https://en.wikipedia.org/wiki/Template:Respiratory_pathology " +
+           " --informat wikitemplate " +
+           " --dictionary " + dict +
+           " --outformats html,xml " +
+           " --testString " + htmlS + " " +
+           " --wikilinks wikidata"
+			;
+		new AMIDictionaryTool().runCommands(args);
+//		Assert.assertTrue("file exists "+dictionaryFile, dictionaryFile.exists());
+	}
+	
+	@Test
+	public void testCreateFromWPTemplateFile() {
+		String fileTop = "/Users/pm286/projects/openVirus";
+		String dict = "viral_systemic_disease";
+		String fileroot = fileTop + "/" + "dictionaries"+ "/" + dict;
+		System.err.println("FILEROOT "+fileroot);
+		File dictionaryDir = new File(fileroot);
+		String htmlFilename = fileroot + ".html";
+		String args =
+				"create " +
+			   " --input " + htmlFilename +
+			   " --informat wikitemplate " +
+	           " --dictionary " + dict +
+	           " --directory " + dictionaryDir +
+	           " --outformats html,xml " +
+	           " --wikilinks wikidata"
+				;
+			new AMIDictionaryTool().runCommands(args);
+	}
+	
 	@Test
 	public void testCreateVirusesFromTerms() {
 		String dict = "plants.viruses";
@@ -481,5 +583,201 @@ public class AMIDictionaryTest extends AbstractAMITest {
 
 	}
 
+	@Test
+	public void testMediaWikiTemplate() {
+		String mw = ""
+				+ "{{Navbox\n" + 
+				" | name = Viral systemic diseases\n" + 
+				" | title = [[Infection|Infectious diseases]] – [[Viral disease|viral systemic diseases]] ([[ICD-10 Chapter I: Certain infectious and parasitic diseases#A80–B34 – Viral infections|A80–B34]], [[List of ICD-9 codes 001–139: infectious and parasitic diseases#Human immunodeficiency virus (HIV) infection (042–044)|042–079]])\n" + 
+				" | state = {{{state<includeonly>|autocollapse</includeonly>}}}\n" + 
+				" | listclass = hlist\n" + 
+				"\n" + 
+				" | group1 = [[Oncovirus]]\n" + 
+				" | list1 =\n" + 
+				"; [[DNA virus]]\n" + 
+				": ''[[Hepatitis B virus|HBV]]''\n" + 
+				":: [[Hepatocellular carcinoma]]\n" + 
+				": ''[[Papillomaviridae|HPV]]''\n" + 
+				":: [[Cervical cancer]]\n" + 
+				":: [[Anal cancer]]\n" + 
+				":: [[Penile cancer]]\n" + 
+				":: [[Vulvar cancer]]\n" + 
+				":: [[Vaginal cancer]]\n" + 
+				":: [[HPV-positive oropharyngeal cancer|Oropharyngeal cancer]]\n" + 
+				": ''[[Kaposi's sarcoma-associated herpesvirus|KSHV]]''\n" + 
+				":: [[Kaposi's sarcoma]]\n" + 
+				": ''[[Epstein–Barr virus|EBV]]''\n" + 
+				":: [[Nasopharyngeal carcinoma]]\n" + 
+				":: [[Burkitt's lymphoma]]\n" + 
+				":: [[Hodgkin's lymphoma]]\n" + 
+				":: [[Follicular dendritic cell sarcoma]]\n" + 
+				":: [[Extranodal NK/T-cell lymphoma, nasal type]]\n" + 
+				": ''[[Merkel cell polyomavirus|MCPyV]]''\n" + 
+				":: [[Merkel-cell carcinoma]]\n" + 
+				"\n" + 
+				"; [[RNA virus]]\n" + 
+				": ''[[Hepacivirus C|HCV]]''\n" + 
+				":: [[Hepatocellular carcinoma]]\n" + 
+				":: [[Splenic marginal zone lymphoma]]\n" + 
+				": ''[[Human T-lymphotropic virus 1|HTLV-I]]''\n" + 
+				":: [[Adult T-cell leukemia/lymphoma]]\n" + 
+				"\n" + 
+				" | group2 = [[Immune disorder]]s\n" + 
+				" | list2 =\n" + 
+				"* ''[[HIV]]''\n" + 
+				"** [[HIV/AIDS|AIDS]]\n" + 
+				"\n" + 
+				" | group3 = [[Central nervous system viral disease|Central<br /> nervous system]]\n" + 
+				" | list3 = {{Navbox|subgroup\n" + 
+				"\n" + 
+				"   | group1 = [[Viral encephalitis|Encephalitis]]/<br />[[Viral meningitis|meningitis]]\n" + 
+				"   | list1 =\n" + 
+				"; [[DNA virus]]\n" + 
+				": ''[[Human polyomavirus 2]]''\n" + 
+				":: [[Progressive multifocal leukoencephalopathy]]\n" + 
+				"\n" + 
+				"; [[RNA virus]]\n" + 
+				": ''[[Measles morbillivirus|MeV]]''\n" + 
+				":: [[Subacute sclerosing panencephalitis]]\n" + 
+				": ''[[Lymphocytic choriomeningitis|LCV]]''\n" + 
+				":: [[Lymphocytic choriomeningitis]]\n" + 
+				": [[Arbovirus encephalitis]]\n" + 
+				": ''[[Orthomyxoviridae]]'' (probable)\n" + 
+				":: [[Encephalitis lethargica]]\n" + 
+				": ''[[Rabies virus|RV]]''\n" + 
+				":: [[Rabies]]\n" + 
+				": [[Chandipura vesiculovirus]]\n" + 
+				": [[Herpesviral meningitis]]\n" + 
+				": [[Ramsay Hunt syndrome type 2]]\n" + 
+				"\n" + 
+				"   | group2 = [[Myelitis]]\n" + 
+				"   | list2 =\n" + 
+				"* ''[[Poliovirus]]''\n" + 
+				"** [[Polio|Poliomyelitis]]\n" + 
+				"** [[Post-polio syndrome]]\n" + 
+				"* ''[[Human T-lymphotropic virus 1|HTLV-I]]''\n" + 
+				"** [[Tropical spastic paraparesis]]\n" + 
+				"\n" + 
+				"   | group3 = [[Eye disease|Eye]]\n" + 
+				"   | list3 =\n" + 
+				"* ''[[Cytomegalovirus]]''\n" + 
+				"** [[Cytomegalovirus retinitis]]\n" + 
+				"* ''[[Herpes simplex virus|HSV]]''\n" + 
+				"** [[Herpes simplex keratitis|Herpes of the eye]]\n" + 
+				"\n" + 
+				" }}\n" + 
+				"\n" + 
+				" | group4 = [[Cardiovascular disease|Cardiovascular]]\n" + 
+				" | list4 =\n" + 
+				"* ''[[Coxsackie B virus|CBV]]''\n" + 
+				"** [[Pericarditis]]\n" + 
+				"** [[Myocarditis]]\n" + 
+				"\n" + 
+				" | group5 = [[Respiratory system]]/<br />[[Common cold|acute viral nasopharyngitis]]/<br />[[viral pneumonia]]\n" + 
+				" | list5 = {{Navbox|subgroup\n" + 
+				"\n" + 
+				"   | group1 = [[DNA virus]]\n" + 
+				"   | list1 =\n" + 
+				"* ''[[Epstein–Barr virus]]''\n" + 
+				"** [[Epstein–Barr virus infection|EBV infection]]/[[Infectious mononucleosis]]\n" + 
+				"* ''[[Cytomegalovirus]]''\n" + 
+				"\n" + 
+				"   | group2 = [[RNA virus]]\n" + 
+				"   | list2 =\n" + 
+				"* [[RNA virus#Group IV – positive-sense ssRNA viruses|IV]]: ''[[Severe acute respiratory syndrome coronavirus|SARS coronavirus]]''\n" + 
+				"** [[Severe acute respiratory syndrome]]\n" + 
+				"* ''[[Middle East respiratory syndrome-related coronavirus|MERS coronavirus]]''\n" + 
+				"** [[Middle East respiratory syndrome]]\n" + 
+				"* ''[[Severe acute respiratory syndrome coronavirus 2|SARS coronavirus 2]]''\n" + 
+				"** [[Coronavirus disease 2019]]\n" + 
+				"\n" + 
+				"* [[RNA virus#Group V – negative-sense ssRNA viruses|V]]: ''[[Orthomyxoviridae]]: [[Influenza A virus|Influenza virus A]]/[[Influenza B virus|B]]/[[Influenza C virus|C]]/[[Influenza D virus|D]]''\n" + 
+				"** [[Influenza]]/[[Avian influenza]]\n" + 
+				"\n" + 
+				"* V, ''[[Paramyxoviridae]]: [[Human parainfluenza viruses]]''\n" + 
+				"** [[Human parainfluenza viruses|Parainfluenza]]\n" + 
+				"* ''[[Human orthopneumovirus]]''\n" + 
+				"* ''[[Human metapneumovirus|hMPV]]''\n" + 
+				"\n" + 
+				" }}\n" + 
+				"\n" + 
+				" | group6 = [[Human digestive system]]\n" + 
+				" | list6 = {{Navbox|subgroup\n" + 
+				"\n" + 
+				"   | group1 = [[Pharynx]]/[[Esophagus]]\n" + 
+				"   | list1 =\n" + 
+				"* ''[[Mumps rubulavirus|MuV]]''\n" + 
+				"** [[Mumps]]\n" + 
+				"* ''[[Cytomegalovirus]]''\n" + 
+				"** [[Cytomegalovirus esophagitis]]\n" + 
+				"\n" + 
+				"   | group2 = [[Gastroenteritis#Viral|Gastroenteritis]]/<br />[[Gastroenteritis#Virus|diarrhea]]\n" + 
+				"   | list2 =\n" + 
+				"; [[DNA virus]]\n" + 
+				": ''[[Adenoviridae|Adenovirus]]''\n" + 
+				":: [[Adenovirus infection]]\n" + 
+				"\n" + 
+				"; [[RNA virus]]\n" + 
+				": ''[[Rotavirus]]''\n" + 
+				": ''[[Norovirus]]''\n" + 
+				": ''[[Astrovirus]]''\n" + 
+				": ''[[Coronavirus]]''\n" + 
+				"\n" + 
+				"   | group3 = [[Viral hepatitis|Hepatitis]]\n" + 
+				"   | list3 =\n" + 
+				"; [[DNA virus]]\n" + 
+				": ''[[Hepatitis B virus|HBV]]'' ([[Hepatitis B|B]])\n" + 
+				"\n" + 
+				"; [[RNA virus]]\n" + 
+				": ''[[Coxsackie B virus|CBV]]''\n" + 
+				": ''[[Hepatitis A#Virology|HAV]]'' ([[Hepatitis A|A]])\n" + 
+				": ''[[Hepacivirus C|HCV]]'' ([[Hepatitis C|C]])\n" + 
+				": ''[[Hepatitis D|HDV]]'' ([[Hepatitis D|D]])\n" + 
+				": ''[[Orthohepevirus A|HEV]]'' ([[Hepatitis E|E]])\n" + 
+				": ''[[GB virus C|HGV]]'' ([[GB virus C|G]])\n" + 
+				"\n" + 
+				"   | group4 = [[Pancreatitis]]\n" + 
+				"   | list4 =\n" + 
+				"* ''[[Coxsackie B virus|CBV]]''\n" + 
+				"\n" + 
+				" }}\n" + 
+				"\n" + 
+				" | group7 = [[Viral skin disease|Skin]] and<br /> [[mucous membrane]]<br />[[lesion]]s,<br /> including [[exanthem]]\n" + 
+				"\n" + 
+				" | group8 = [[Genitourinary system|Urogenital]]\n" + 
+				" | list8 =\n" + 
+				"* ''[[BK virus]]''\n" + 
+				"* ''[[Mumps rubulavirus|MuV]]''\n" + 
+				"** [[Mumps]]\n" + 
+				"\n" + 
+				"}}<noinclude>\n" + 
+				"{{Documentation}}\n" + 
+				"</noinclude>"
+				+ "";
+		
+		List<HtmlA> aList = AMIDictionaryTool.parseMediaWiki(mw);
+		System.err.println("AA "+aList.size()+"//"+aList);
+	}
 	
+	@Test
+	public void testCreateFromMediawikiTemplateFile() {
+		String fileTop = "/Users/pm286/projects/openVirus";
+		String dict = "viral_systemic_disease";
+		String fileroot = fileTop + "/" + "dictionaries"+ "/" + dict;
+		System.err.println("FILEROOT "+fileroot);
+		File dictionaryDir = new File(fileroot);
+		String inputFilename = fileroot + ".mediawiki";
+		String args =
+				"create " +
+			   " --input " + inputFilename +
+			   " --informat mediawikitemplate " +
+	           " --dictionary " + dict +
+	           " --directory " + dictionaryDir + "/" + "mw" +
+	           " --outformats html,xml " +
+	           " --wikilinks wikidata"
+				;
+			new AMIDictionaryTool().runCommands(args);
+	}
+	
+
 }

@@ -1,11 +1,14 @@
 package org.contentmine.ami.tools;
 
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.StringReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.Charset;
@@ -43,6 +46,7 @@ import org.contentmine.cproject.util.RectangularTable;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlA;
+import org.contentmine.graphics.html.HtmlDd;
 import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlLi;
@@ -173,9 +177,11 @@ public class AMIDictionaryTool extends AbstractAMITool {
 	
 	public enum InputFormat {
 		csv,
+		mediawikitemplate,
 		wikicategory,
 		wikipage,
-		wikitable
+		wikitable,
+		wikitemplate,
 	}
 	
 	public enum WikiLink {
@@ -408,6 +414,10 @@ public class AMIDictionaryTool extends AbstractAMITool {
 	
 	@Override
 	protected void parseSpecifics() {
+		if (testString != null) {
+			testString = testString.replaceAll("%20", " ");
+			System.out.println("testString      "+testString);
+		}
 		dictOutformat = (outformats == null || outformats.length != 1) ? null : outformats[0];
 		wikiLinkList = (wikiLinks == null) ? new ArrayList<WikiLink>() :
 		     new ArrayList<WikiLink>(Arrays.asList(wikiLinks));
@@ -520,21 +530,27 @@ public class AMIDictionaryTool extends AbstractAMITool {
 
 	private void createDictionary() {
 		InputStream inputStream = openInputStream();
+		if (inputStream == null) {
+			System.err.println("NO INPUT STREAM, check HTTP connection/target or file existence");
+			if (testString != null) {
+				inputStream = new ByteArrayInputStream(testString.getBytes());
+			}
+		}
+		
     	if (inputStream != null) {
     		if (informat == null) {
     			addLoggingLevel(Level.ERROR, "no input format given ");
     			return;
-    		} else if (InputFormat.wikicategory.equals(informat)) {
-	    		wikipediaDictionary = new WikipediaDictionary();
-	    		readWikipediaPage(wikipediaDictionary, inputStream);
-    		} else if (InputFormat.wikipage.equals(informat)) {
-	    		wikipediaDictionary = new WikipediaDictionary();
-	    		readWikipediaPage(wikipediaDictionary, inputStream);
-    		} else if (InputFormat.wikitable.equals(informat)) {
-	    		wikipediaDictionary = new WikipediaDictionary();
-	    		readWikipediaPage(wikipediaDictionary, inputStream);
     		} else if (InputFormat.csv.equals(informat)) {
     			readCSV(inputStream);
+    		} else if (InputFormat.mediawikitemplate.equals(informat) ||
+    				InputFormat.wikicategory.equals(informat) ||
+    				InputFormat.wikipage.equals(informat) ||
+    				InputFormat.wikitable.equals(informat) ||
+    				InputFormat.wikitemplate.equals(informat) 
+    				) {
+	    		wikipediaDictionary = new WikipediaDictionary();
+	    		readWikipediaPage(wikipediaDictionary, inputStream);
     		} else {
     			addLoggingLevel(Level.ERROR, "unknown inputformat: "+informat);
     			return;
@@ -641,7 +657,6 @@ public class AMIDictionaryTool extends AbstractAMITool {
 				continue;
 			}
 			File dictOutfile = new File(dictionaryFile.getParentFile(), basename + "." + dictOutformat);
-//			LOG.debug("DF "+dictionaryFile+"; "+dictInformat+" => "+dictOutformat+"; "+dictOutfile);
 			convertDictionaries(dictionaryFile, dictInformat, dictOutfile, dictOutformat);
 		}
 		
@@ -669,9 +684,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 		cmJsonDictionary = CMJsonDictionary.readJsonDictionary(inString);
 		xmlDictionary = CMJsonDictionary.convertJsonToXML(cmJsonDictionary);
 		if (xmlDictionary != null) {
-			try {
-				addWikiLinksToDictionary(xmlDictionary);
-			} catch 
+			addWikiLinksToDictionary(xmlDictionary);
 		}
 		outputXMLDictionary(outfile);
 	}
@@ -832,10 +845,9 @@ public class AMIDictionaryTool extends AbstractAMITool {
 				}
 				WikiResult wikiResult = WikipediaLookup.getFirstWikiResultFromSearchResults(wikidata);
 				if (wikiResult != null) {
-					entry.addAttribute(new Attribute(WIKIDATA, wikiResult.getQString()));
-					entry.addAttribute(new Attribute(DictionaryTerm.NAME, wikiResult.getLabel()));
-					entry.addAttribute(new Attribute(DictionaryTerm.DESCRIPTION, wikiResult.getDescription()));
-					LOG.debug("ENTRY "+entry.toXML());
+					XMLUtil.addNonNullAttribute(entry, WIKIDATA, wikiResult.getQString());
+					XMLUtil.addNonNullAttribute(entry, DictionaryTerm.NAME, wikiResult.getLabel());
+					XMLUtil.addNonNullAttribute(entry, DictionaryTerm.DESCRIPTION, wikiResult.getDescription());
 				} else {
 					missingWikidataSet.add(term);
 				}
@@ -913,7 +925,6 @@ public class AMIDictionaryTool extends AbstractAMITool {
 
 	private void addEntry(String dictionaryId, int serial, Element entry, String urlValue) {
 		String idValue = CM_PREFIX + dictionaryId + DOT + serial;
-//		System.out.print(">"+idValue);
 		System.out.print("+");
 		entry.addAttribute(new Attribute(DictionaryTerm.ID, idValue));
 		if (urlValue != null) {
@@ -1093,7 +1104,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 	 * @param htmlElement
 	 * @return
 	 */
-	private void createCategory(HtmlElement htmlElement) {
+	private void createFromCategory(HtmlElement htmlElement) {
 		nameList = new ArrayList<String>();
 		termList = new ArrayList<String>();
 		linkList = new ArrayList<String>();
@@ -1129,10 +1140,57 @@ public class AMIDictionaryTool extends AbstractAMITool {
 		}
 	}
 
+	private void createFromWikipediaTemplate(HtmlElement htmlElement) {
+		// very crude at present just look for dd
+		// other links are context (e.g. body parts for disease
+		/**
+<dd>
+<a href="https://en.wikipedia.org/wiki/Sinusitis" title="Sinusitis">Sinusitis</a>
+</dd>
+		 */
+		
+		List<String> excludeList = Arrays.asList(new String[] {"history", "purge", "navbar", "mirror", "create"});
+		List<Element> aList = XMLUtil.getQueryElements(htmlElement, 
+				".//*[local-name() = '"+HtmlDiv.TAG+"' and @id='bodyContent']" +
+				"//*[local-name()='"+HtmlA.TAG+"' and @href]");
+		System.err.println("number of links "+aList.size());
+		for (int i = aList.size() - 1; i >= 0; i--) {
+			HtmlA a = (HtmlA) aList.get(i);
+			String value = a.getValue();
+			if (excludeList.contains(value)) {
+				aList.remove(i);
+			}
+		}
+		addAHrefs(aList);
+	}
+
+	private void createFromMediawikiTemplate(String mwString) {
+		List<HtmlA> aList = AMIDictionaryTool.parseMediaWiki(mwString);
+		addAHrefs(aList);
+	}
+
+	private void addAHrefs(List<? extends Element> aList) {
+		nameList = new ArrayList<String>();
+		linkList = new ArrayList<String>();
+		for (Element a : aList) {
+			if (a != null) {
+				HtmlA aa = (HtmlA) a;
+				String href = aa.getHref();
+				String content = aa.getValue();
+				if (href != null) {
+					nameList.add(content);
+					linkList.add(href);
+				} else {
+					System.err.println("NO HREF");
+				}
+			}
+		}
+	}
+
 	private HtmlElement readHtmlElement(InputStream inputStream) {
 		HtmlElement htmlElement = null;
 		try {
-			Element rootElement = XMLUtil.parseQuietlyToRootElement(inputStream);
+			HtmlElement rootElement = HtmlUtil.readTidyAndCreateElement(inputStream);
 			boolean ignoreNamespaces = true;
 			htmlElement = HtmlElement.create(rootElement, false, ignoreNamespaces);
 		} catch (Exception e) {
@@ -1274,11 +1332,23 @@ public class AMIDictionaryTool extends AbstractAMITool {
 	}
 
 	public void readWikipediaPage(WikipediaDictionary wikipediaDictionary, InputStream inputStream) {
-		HtmlElement htmlElement = readHtmlElement(inputStream);
-		wikipediaDictionary.clean(htmlElement);
+		if (InputFormat.mediawikitemplate.equals(this.informat)) {
+			try {
+				createFromMediawikiTemplate(IOUtils.toString(inputStream, "UTF-8"));
+			} catch (IOException e) {
+				throw new RuntimeException("Cannot read stream", e);
+			}
+		} else {
+			HtmlElement htmlElement = readHtmlElement(inputStream);
+			wikipediaDictionary.clean(htmlElement);
+			readWikipediaPage(htmlElement);
+		}
+	}
+
+	private void readWikipediaPage(HtmlElement htmlElement) {
 		if (false) {
 		} else if (InputFormat.wikicategory.equals(this.informat)) {
-			createCategory(htmlElement);
+			createFromCategory(htmlElement);
 		} else if (InputFormat.wikitable.equals(this.informat)) {
 			if (this.nameCol == null) {
 				LOG.error("Must give 'nameCol' for wikitable");
@@ -1286,11 +1356,12 @@ public class AMIDictionaryTool extends AbstractAMITool {
 				linkCol = linkCol == null ? nameCol : linkCol;
 				createFromEmbeddedWikipediaTable(htmlElement);
 			}
+		} else if (InputFormat.wikitemplate.equals(this.informat)) {
+			createFromWikipediaTemplate(htmlElement);
 		} else {
 			LOG.debug("extracting hyperlinks");
 			createListOfHyperlinks(htmlElement);
 		}
-		
 	}
 
 	// ================== LIST ===================
@@ -1532,6 +1603,35 @@ public class AMIDictionaryTool extends AbstractAMITool {
 
 	public void setMaxEntries(int maxEntries) {
 		this.maxEntries = maxEntries;
+	}
+
+	/**
+				+ "{{Navbox\n" + 
+				" | name = Viral systemic diseases\n" + 
+				" | title = [[Infection|Infectious diseases]] – [[Viral disease|viral systemic diseases]] ([[ICD-10 Chapter I: Certain infectious and parasitic diseases#A80–B34 – Viral infections|A80–B34]], [[List of ICD-9 codes 001–139: infectious and parasitic diseases#Human immunodeficiency virus (HIV) infection (042–044)|042–079]])\n" + 
+				" | state = {{{state<includeonly>|autocollapse</includeonly>}}}\n" + 
+				" | listclass = hlist\n" + 
+	 * @param mw
+	 * @return
+	 */
+	public static List<HtmlA> parseMediaWiki(String mw) {
+		List<HtmlA> aList = new ArrayList<>();
+		Pattern pattern = Pattern.compile("\\[\\[([^\\]]*)\\]\\]");
+		Matcher m = pattern.matcher(mw);
+		int start = 0;
+
+		while (m.find(start)) {
+			String group = m.group(1).trim();
+			String[] aStrings = group.split("\\|");
+			String href = aStrings[0].trim();
+			href = href.replaceAll("\\s+", "_"); // Wikipedia's word separator
+			String content = aStrings.length == 1 ? href : aStrings[1].trim();
+			HtmlA a = new HtmlA();
+			a.setHref(href).setValue(content);
+			aList.add(a);
+			start = m.end();
+		}
+		return aList;
 	}
 
 //	public String getDirectory() {

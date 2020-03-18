@@ -260,6 +260,12 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
     protected Integer maxTreeCount = null;
 
 
+	@Option(names = { "--testString" }, 
+    		description = {
+        "(A) String input for debugging"
+        + "semantics depend on task" })
+    protected String testString = null;
+
 	@Option(names = { "-v", "--verbose" }, 
     		description = {
         "(A) Specify multiple -v options to increase verbosity.",
@@ -553,6 +559,7 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 	        System.out.println("log4j               " + (log4j == null ? "" : new ArrayList<String>(Arrays.asList(log4j))));
 	        System.out.println("logfile             " + logfile);
 	        System.out.println("subdirectoryType    " + subdirectoryType);
+	        System.out.println("testString          " + testString);
 	        System.out.println("verbose             " + verbosity.length);
         } else {
         	System.out.println("-v to see generic values");
@@ -781,9 +788,17 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 		InputStream inputStream = null;
 		if (input != null) {
 			try {
-				inputStream = input.startsWith("http") ? new URL(input).openStream() : new FileInputStream(new File(input));
+				if (input.startsWith("http")) {
+					inputStream = new URL(input).openStream();
+				} else {
+					File inputFile = new File(input);
+					if (!inputFile.exists()) {
+						throw new RuntimeException("inputFile does not exist: "+inputFile);
+					}
+					inputStream = new FileInputStream(inputFile);
+				}
 			} catch (IOException e) {
-				addLoggingLevel(Level.ERROR, "cannot read/open stream");
+				addLoggingLevel(Level.ERROR, "cannot read/open stream: "+input);
 			}
 		}
 		return inputStream;

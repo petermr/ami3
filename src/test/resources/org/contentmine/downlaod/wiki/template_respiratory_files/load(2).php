@@ -1,0 +1,1 @@
+span.updatedmarker{background-color:transparent;color:#006400}

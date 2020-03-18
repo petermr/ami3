@@ -1,6 +1,7 @@
 package org.contentmine.norma.download;
 
 import javax.ws.rs.client.Client;
+
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
@@ -170,5 +171,42 @@ https://alvinalexander.com/java/java-apache-httpclient-restful-client-examples
 //          httpclient.getConnectionManager().shutdown();
         }
       }
+	
+	public void testEPMC() {
+
+//		a typical Java code to call the service would be like the following:
+
+//		import org.springframework.http.HttpEntity;
+//		import org.springframework.http.HttpHeaders;
+//		import org.springframework.http.HttpMethod;
+//		import org.springframework.http.MediaType;
+//		import org.springframework.http.ResponseEntity;
+//		import org.springframework.util.LinkedMultiValueMap;
+//		import org.springframework.util.MultiValueMap;
+//		import org.springframework.web.client.RestTemplate;
+
+		// SPRING example
+//			RestTemplate restTemplate = new RestTemplate();
+//			
+//			HttpHeaders headers = new HttpHeaders();
+//			headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
+//			MultiValueMap<String, String> params = new LinkedMultiValueMap<>();
+//			params.add("query", "paracetamol");
+//			params.add("sort", "FIRST_PDATE_D desc");
+//			params.add("resultType", "core");
+//			params.add("pageSize", "50");
+//			params.add("format", "xml");
+//
+//	        HttpEntity<MultiValueMap<String,String>> entity = new HttpEntity<MultiValueMap<String,String>>(params, headers);
+//	               
+//	        ResponseEntity<String> response = null;
+//
+//	        String url="https://www.ebi.ac.uk/europepmc/webservices/rest/searchPOST";	
+//			response = restTemplate.exchange(url, HttpMethod.POST, entity, String.class);
+//			
+//			System.out.println(response.getBody().toString());
+				
+		}
+//	}
 
 }

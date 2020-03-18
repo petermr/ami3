@@ -13,12 +13,14 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLConstants;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlElement;
-import org.contentmine.graphics.html.HtmlMeta;
+import org.contentmine.graphics.html.HtmlFactory;
+import org.jsoup.Jsoup;
 
 import nu.xom.Element;
 import nu.xom.Nodes;
@@ -60,51 +62,29 @@ public class HtmlUtil {
 		return stringList;
 	}
 
-//	/** read file and subclass elements to HtmlElement.
-//	 * 
-//	 * @param file
-//	 * @return
-//	 * @throws Exception
-//	 */
-//	public static HtmlElement readAndCreateElementUsingJsoup(File file) throws Exception {
-//		InputStream is = new FileInputStream(file);
-//		return readAndCreateElementUsingJsoup(is);
-//	}
-//	
-//	/** read XML string and subclass elements to HtmlElement.
-//	 * 
-//	 * @param xmlString must be valid XHTML
-//	 * @return
-//	 * @throws Exception
-//	 */
-//	public static HtmlElement readAndCreateElementUsingJsoup(String xmlString) throws Exception {
-//		InputStream is = IOUtils.toInputStream(xmlString);
-//		return readAndCreateElementUsingJsoup(is);
-//	}
-	
 
-//	/** parses HTML into dom if possible.
-//	 * 
-//	 * @param is
-//	 * @return null if fails
-//	 * @throws Exception
-//	 */
-//	@Deprecated // use HtmlFactory
-//	public static HtmlElement readAndCreateElementUsingJsoup(InputStream is) throws Exception {
-//		String s = IOUtils.toString(is, "UTF-8");
-//		org.jsoup.nodes.Document doc = Jsoup.parse(s);
-//		String xmlDoc = doc.html();
-//		HtmlElement htmlElement = null;
-//		try {
-//			HtmlFactory htmlFactory = new HtmlFactory();
-////			htmlFactory.addReplacement(HtmlFactory.DEFAULT_REPLACEMENT_MAP);
-//			Element xmlElement = XMLUtil.stripDTDAndParse(xmlDoc);
-//			htmlElement = htmlFactory.parse(xmlElement);
-//		} catch (Exception e) {
-//			LOG.error("cannot parse HTML"+e+"; "+xmlDoc, e);
-//		}
-//		return htmlElement;
-//	}
+	/** parses HTML into dom if possible.
+	 * 
+	 * @param is
+	 * @return null if fails
+	 * @throws Exception
+	 */
+	@Deprecated // use HtmlFactory
+	public static HtmlElement readAndCreateElementUsingJsoup(InputStream is) throws Exception {
+		String s = IOUtils.toString(is, "UTF-8");
+		org.jsoup.nodes.Document doc = Jsoup.parse(s);
+		String xmlDoc = doc.html();
+		HtmlElement htmlElement = null;
+		try {
+			HtmlFactory htmlFactory = new HtmlFactory();
+//			htmlFactory.addReplacement(HtmlFactory.DEFAULT_REPLACEMENT_MAP);
+			Element xmlElement = XMLUtil.stripDTDAndParse(xmlDoc);
+			htmlElement = htmlFactory.parse(xmlElement);
+		} catch (Exception e) {
+			LOG.error("cannot parse HTML"+e+"; "+xmlDoc, e);
+		}
+		return htmlElement;
+	}
 
 	/** JSoup does not add XHTML namespace to all elements, so add it.
 	 * 
@@ -135,8 +115,13 @@ public class HtmlUtil {
 	 * @throws Exception
 	 */
 	public static HtmlElement readAndCreateElement(File file) throws Exception {
-		HtmlElement htmlElement = new HTMLTidy().createHtmlElement(new FileInputStream(file));
+		FileInputStream is = new FileInputStream(file);
+		HtmlElement htmlElement = readTidyAndCreateElement(is);
 		return htmlElement;
+	}
+
+	public static HtmlElement readTidyAndCreateElement(InputStream is) throws Exception {
+		return new HTMLTidy().createHtmlElement(is);
 	}
 	
 	/** read file and subclass elements to HtmlElement.
@@ -428,15 +413,15 @@ public class HtmlUtil {
 		return hocrElement;
 	}
 
-	public static Element parseCleanlyToXHTML(String result) {
-		result = HtmlUtil.removeScripts(result);	
-		result = HtmlUtil.removeFloatingAmpersand(result);
-		result = XMLUtil.replaceCharacterEntities(result);
+	public static Element parseCleanlyToXHTML(String input) {
+		input = HtmlUtil.removeScripts(input);	
+		input = HtmlUtil.removeFloatingAmpersand(input);
+		input = XMLUtil.replaceCharacterEntities(input);
 		Element element = null;
 		try {
-			element = XMLUtil.parseXML(result);
+			element = XMLUtil.parseXML(input);
 		} catch (Exception e) {
-			System.out.println("CANNOT PARSE:\n"+result.substring(0, Math.min(100, result.length())));
+			System.out.println("CANNOT PARSE:\n"+input.substring(0, Math.min(100, input.length())));
 			throw e;
 		}
 		return element;

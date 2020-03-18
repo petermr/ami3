@@ -128,7 +128,6 @@ public class WikiResult {
 	}
 
 	public String getLabel() {
-		LOG.debug("label: "+label+"/"+label.length());
 		return label;
 	}
 }
