@@ -9,6 +9,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.AMIDictionaryTool.DictionaryFileFormat;
+import org.contentmine.ami.tools.download.CurlDownloader;
 import org.contentmine.graphics.html.HtmlA;
 import org.contentmine.norma.NAConstants;
 import org.junit.Assert;
@@ -455,9 +456,9 @@ public class AMIDictionaryTest extends AbstractAMITest {
 		String fileTop = "/Users/pm286/projects/openVirus";
 		String dict = "viral_systemic_disease";
 		String fileroot = fileTop + "/" + "dictionaries"+ "/" + dict;
-		System.err.println("FILEROOT "+fileroot);
-		File dictionaryDir = new File(fileroot);
-		String htmlFilename = fileroot + ".html";
+		String type = "html";
+		File dictionaryDir = new File(new File(fileroot), type);
+		String htmlFilename = fileroot + "." + type;
 		String args =
 				"create " +
 			   " --input " + htmlFilename +
@@ -470,6 +471,47 @@ public class AMIDictionaryTest extends AbstractAMITest {
 			new AMIDictionaryTool().runCommands(args);
 	}
 	
+	@Test
+	public void testDownloadMediawiki() throws IOException {
+		downloadAndTest(new File("target/curl.mw.txt"), 
+				"https://en.wikipedia.org/w/index.php?title=Template:Viral_systemic_diseases", 50000, 51000);
+		downloadAndTest(new File("target/curl.mw.edit.txt"), 
+				"https://en.wikipedia.org/w/index.php?title=Template:Viral_systemic_diseases&action=edit", 44000, 45000);
+	}
+	
+	@Test
+	public void testCreateFromMediawikiTemplateURL() {
+		String fileTop = "/Users/pm286/projects/openVirus/dictionaries/";
+		String wptype = "mwk";
+		String template = "Viral_systemic_diseases";
+		createFromMediaWikiTemplate(template, fileTop, wptype);
+	}
+	
+	@Test
+	public void testCreateFromMediawikiTemplateListURLOld() {
+		String[] templates = {"Baltimore_(virus_classification)", "Antiretroviral_drug", "Virus_topics"};
+		String fileTop = "/Users/pm286/projects/openVirus/dictionaries/";
+		String wptype = "mwk";
+		for (String template : templates) {
+			createFromMediaWikiTemplate(template, fileTop, wptype);
+		}
+	}
+
+	@Test
+	public void testCreateFromMediawikiTemplateListURL() {
+		String dictionaryTop = "/Users/pm286/projects/openVirus/dictionaries/";
+		String wptype = "mwk";
+		String args =
+				"create " +
+		       " --directory " + dictionaryTop +
+		       " --outformats html,xml " +
+		       " --template " + " Virus_topics Baltimore_(virus_classification) Antiretroviral_drug" +
+		       " --wptype " + wptype +
+		       " --wikilinks wikidata"
+				;
+		new AMIDictionaryTool().runCommands(args);
+	}
+
 	@Test
 	public void testCreateVirusesFromTerms() {
 		String dict = "plants.viruses";
@@ -756,28 +798,30 @@ public class AMIDictionaryTest extends AbstractAMITest {
 				+ "";
 		
 		List<HtmlA> aList = AMIDictionaryTool.parseMediaWiki(mw);
-		System.err.println("AA "+aList.size()+"//"+aList);
+		Assert.assertEquals("aList "+aList.size(), 140, aList.size());
 	}
 	
-	@Test
-	public void testCreateFromMediawikiTemplateFile() {
-		String fileTop = "/Users/pm286/projects/openVirus";
-		String dict = "viral_systemic_disease";
-		String fileroot = fileTop + "/" + "dictionaries"+ "/" + dict;
-		System.err.println("FILEROOT "+fileroot);
-		File dictionaryDir = new File(fileroot);
-		String inputFilename = fileroot + ".mediawiki";
+	// PRIVATE
+	private void downloadAndTest(File outputFile, String urlString, int minsize, int maxsize) throws IOException {
+		new CurlDownloader().setUrlString(urlString).setOutputFile(outputFile).run();
+		Assert.assertTrue("outputfile exists "+outputFile, outputFile.exists());
+		long sizeOf = FileUtils.sizeOf(outputFile);
+		Assert.assertTrue("outputfile size "+sizeOf+" / "+outputFile, sizeOf > minsize && sizeOf < maxsize);
+	}
+
+	private void createFromMediaWikiTemplate(String template, String fileTop, String wptype) {
 		String args =
 				"create " +
-			   " --input " + inputFilename +
-			   " --informat mediawikitemplate " +
-	           " --dictionary " + dict +
-	           " --directory " + dictionaryDir + "/" + "mw" +
+	           " --directory " + fileTop +
 	           " --outformats html,xml " +
+	           " --template " + template +
+	           " --wptype " + wptype +
 	           " --wikilinks wikidata"
 				;
-			new AMIDictionaryTool().runCommands(args);
+		new AMIDictionaryTool().runCommands(args);
 	}
 	
+
+
 
 }

@@ -39,6 +39,7 @@ import org.contentmine.ami.dictionary.DictionaryTerm;
 import org.contentmine.ami.lookups.WikiResult;
 import org.contentmine.ami.lookups.WikipediaDictionary;
 import org.contentmine.ami.lookups.WikipediaLookup;
+import org.contentmine.ami.tools.download.CurlDownloader;
 import org.contentmine.cproject.files.DebugPrint;
 import org.contentmine.cproject.util.CMineGlobber;
 import org.contentmine.cproject.util.RectTabColumn;
@@ -189,6 +190,11 @@ public class AMIDictionaryTool extends AbstractAMITool {
 		wikipedia,
 	}
 
+	public enum WikiFormat {
+		html,
+		mwk,
+	}
+
 
     @Parameters(index = "0",
     		arity="0..*",
@@ -230,7 +236,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
     				+ "Names should be lowercase, unique. [a-z][a-z0-9._]. Dots can be used to structure dictionaries into"
     				+ "directories. Dictionary names are relative to 'directory'. If <directory> is absent then "
     				+ "dictionary names are absolute.")
-    private String[] dictionary = null;
+    private List<String> dictionaryList = null;
 
     @Option(names = {"--directory"}, 
     		arity="1",
@@ -306,6 +312,13 @@ public class AMIDictionaryTool extends AbstractAMITool {
     		)
     private String splitCol=",";
         
+    @Option(names = {"--template"}, 
+    		arity="1..*",
+    		description = "names of Wikipedia Templates, e.g. Viral_systemic_diseases "
+    				+ "(note underscores not spaces). Dictionaries will be created with lowercase"
+    				+ "names and all punctuation removed).")
+	public List<String> templateNames;
+    
     @Option(names = {"--termcol"}, 
     		arity="1",
     		description = "column(s) to extract term; use exact case (e.g. Term). Could be same as namecol"
@@ -342,6 +355,11 @@ public class AMIDictionaryTool extends AbstractAMITool {
     		description = "try to add link to Wikidata and/or Wikipedia page of same name. ")
     private WikiLink[] wikiLinks = null;/* new WikiLink[]{WikiLink.wikipedia, WikiLink.wikidata}*/;
 
+    @Option(names = {"--wptype"}, 
+    		arity="1",
+    		description = "type of input (HTML , mediawiki)")
+    private WikiFormat wptype;
+    
     @Mixin CProjectTreeMixin proTree;
 
     public final static List<String> WIKIPEDIA_STOP_WORDS = Arrays.asList(new String[]{
@@ -373,6 +391,8 @@ public class AMIDictionaryTool extends AbstractAMITool {
 	private HashSet<String> missingWikidataSet;
 	private List<String> descriptionList;
 	private Set<String> termSet;
+	private List<String> inputList;
+	private String currentTemplateName;
 
 
 	public AMIDictionaryTool() {
@@ -395,7 +415,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 		dictionaryData = new DictionaryData();
 		
         dictionaryData.dataCols    = dataCols;
-        dictionaryData.dictionary  = dictionary;
+        dictionaryData.dictionary  = dictionaryList;
         dictionaryData.dictionaryTopname   = dictionaryTopname;
 //        dictionaryData.href        = href;
         dictionaryData.hrefCols    = hrefCols;
@@ -414,6 +434,16 @@ public class AMIDictionaryTool extends AbstractAMITool {
 	
 	@Override
 	protected void parseSpecifics() {
+		if (templateNames != null) {
+//			dictionaryList = new ArrayList<>();
+			createTemplateNames();
+			informat = WikiFormat.mwk.equals(wptype) ? InputFormat.mediawikitemplate : InputFormat.wikitemplate;
+			if (dictionaryTopname == null) {
+				System.err.println("No directory given, using .");
+				dictionaryTopname = ".";
+			}
+//			createInputList();
+		}
 		if (testString != null) {
 			testString = testString.replaceAll("%20", " ");
 			System.out.println("testString      "+testString);
@@ -424,6 +454,33 @@ public class AMIDictionaryTool extends AbstractAMITool {
 		descriptionList = (description == null) ? new ArrayList<String>() :
 		     new ArrayList<String>(Arrays.asList(description));
 		printDebug();
+	}
+
+	private void createTemplateNames() {
+		for (int i = 0; i < templateNames.size(); i++) {
+			String t = templateNames.get(i).trim().replaceAll("\\s+", "_");
+			templateNames.set(i, t);
+		}
+	}
+	private String createDictionaryName(String templateName) {
+		return templateName.toLowerCase().replaceAll("[^A-Za-z0-9_]", "_");
+	}
+
+	private void createInputList() {
+		inputList = new ArrayList<>();
+		for (String templateName : templateNames) {
+			createInput(templateName);
+			inputList.add(input);
+		}
+		input = null;
+	}
+
+	private String createInput(String templateName) {
+		input = "https://en.wikipedia.org/w/index.php?title=Template:" + templateName;
+		if (WikiFormat.mwk.equals(wptype)) {
+			input = input + "&action=edit";
+		}
+		return input;
 	}
 
 	@Override
@@ -440,7 +497,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 		if (Operation.display.equals(operation)) {
 			displayDictionaries();
 		} else if (Operation.create.equals(operation)) {
-			createDictionary();
+			createDictionaryList();
 		} else if (Operation.search.equals(operation)) {
 			searchDictionary();
 		} else if (Operation.translate.equals(operation)) {
@@ -527,8 +584,50 @@ public class AMIDictionaryTool extends AbstractAMITool {
     	return newDictionaryDir;
     	
     }
+    
+    @Override
+    /**
+     * may need to use curl
+     */
+	protected InputStream openInputStream() {
+		InputStream inputStream = null;
+		if (currentTemplateName != null) {
+			input = createInput(currentTemplateName);
+		}
+		if (input != null) {
+			try {
+				if (input.startsWith("http")) {
+					String output = new CurlDownloader().setUrlString(input).run();
+					inputStream = new ByteArrayInputStream(output.getBytes());
+//					System.out.println(">> "+output);
+				} else {
+					inputStream = super.openInputStream();
+				}
+			} catch (IOException e) {
+				addLoggingLevel(Level.ERROR, "cannot read/open stream: "+input);
+			}
+		}
+		return inputStream;
+	}
+
+
+	private void createDictionaryList() {
+		if (templateNames != null) {
+			for (String templateName : templateNames) {
+				currentTemplateName = templateName;
+				input = createDictionaryName(currentTemplateName);
+				createDictionary();
+			}
+
+		} else {
+			// single input
+			createDictionary();
+		}
+	}
 
 	private void createDictionary() {
+		File fileroot = new File(dictionaryTopname, input);
+		dictionaryTopname = new File(fileroot, wptype.toString()).toString();
 		InputStream inputStream = openInputStream();
 		if (inputStream == null) {
 			System.err.println("NO INPUT STREAM, check HTTP connection/target or file existence");
@@ -571,7 +670,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
     		}
     	}
     	synchroniseTermsAndNames();
-    	dictionaryElement = DefaultAMIDictionary.createDictionaryWithTitle(dictionary[0]);
+    	dictionaryElement = DefaultAMIDictionary.createDictionaryWithTitle(/*dictionaryList.get(0)*/input);
     	
     	writeNamesAndLinks();
 		
@@ -589,7 +688,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 	}
 
 	private void searchDictionary() {
-		DefaultAMIDictionary amiDictionary = AMIDictionaryTool.readDictionary(new File(dictionary[0]));
+		DefaultAMIDictionary amiDictionary = AMIDictionaryTool.readDictionary(new File(dictionaryList.get(0)));
 		Set<String> rawTermSet = amiDictionary.getRawLowercaseTermSet();
 		
 		if (searchTerms != null) {
@@ -637,14 +736,14 @@ public class AMIDictionaryTool extends AbstractAMITool {
 		boolean useAbsoluteNames = false;
 		if (dictionaryTopname != null) {
 			directory = new File(dictionaryTopname);
-		} else if (dictionary != null && dictionary.length > 0){
-			directory = new File(dictionary[0]).getParentFile();
+		} else if (dictionaryList != null && dictionaryList.size() > 0){
+			directory = new File(dictionaryList.get(0)).getParentFile();
 			useAbsoluteNames = true;
 		} else {
 			addLoggingLevel(Level.ERROR, "Must give either 'directory' or existing absolute filenames of dictionaries");
 			return;
 		}
-		for (String dictionaryS : dictionary) {
+		for (String dictionaryS : dictionaryList) {
 			String basename = FilenameUtils.getBaseName(dictionaryS);
 			File dictionaryFile = (useAbsoluteNames) ? new File(dictionaryS) : new File(directory, dictionaryS);
 			if (!dictionaryFile.exists()) {
@@ -767,6 +866,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 			LOG.debug("no names to create dictionary");
 			return;
 		}
+		System.out.println("N "+nameList.size()+"; T "+termList.size());
 		addEntriesToDictionaryElement();
 		createAndAddQueryElement();
 		writeDictionary();
@@ -907,9 +1007,13 @@ public class AMIDictionaryTool extends AbstractAMITool {
 				Attribute urlAtt = entry.getAttribute(DictionaryTerm.URL);
 				if (urlAtt != null) {
 					String urlValue = urlAtt.getValue();
-					if (!urlValue.equals("") && 
-							(urlValue.startsWith(SLASH_WIKI_SLASH) || urlValue.startsWith(HTTPS_EN_WIKIPEDIA_ORG_WIKI))) {
-						addEntry(dictionaryId, i++, entry, urlValue);
+					if (!urlValue.equals("")) {
+						if (urlValue.startsWith(SLASH_WIKI_SLASH) || urlValue.startsWith(HTTPS_EN_WIKIPEDIA_ORG_WIKI)) {
+							addEntry(dictionaryId, i++, entry, urlValue);
+						} else if (InputFormat.mediawikitemplate.equals(informat)){
+							urlValue = "https://en.wikipedia.org/wiki/"+urlValue;
+							addEntry(dictionaryId, i++, entry, urlValue);
+						}
 					} else {
 						System.err.print(" !WP ");
 						LOG.trace("skipped non-wikipedia link: "+urlAtt);
@@ -945,7 +1049,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 	}
 
 	private String createDictionaryId() {
-		return dictionary == null || dictionary.length == 0 ? "null" : dictionary[0];
+		return dictionaryList == null || dictionaryList.size() == 0 ? "null" : dictionaryList.get(0);
 	}
 
 	/** writes the formatted versions of a single dictionary.
@@ -956,22 +1060,32 @@ public class AMIDictionaryTool extends AbstractAMITool {
 		if (dictionaryTop == null) {
 			throw new RuntimeException("must give directory for dictionaries");
 		}
-		if (outformats != null && dictionary != null && dictionary.length == 1) {
-			File subDirectory = getOrCreateExistingSubdirectory(dictionary[0]);
-			if (subDirectory != null) {
-				List<DictionaryFileFormat> outformatList = Arrays.asList(outformats);
-				for (DictionaryFileFormat outformat : outformatList) {
-					File outfile = getOrCreateDictionary(subDirectory, dictionary[0], outformat);
-					System.out.println("writing dictionary to "+outfile);
-					try {
-						outputDictionary(outfile, outformat);
-					} catch (IOException e) {
-						throw new RuntimeException("cannot write file "+outfile, e);
-					}
+		if (outformats != null/* && dictionaryList != null*/) {
+			String dictionaryName = createDictionaryName(currentTemplateName);
+			System.err.println(">> "+dictionaryName);
+			writeDictionary(dictionaryName);
+//			for (String dictionary : dictionaryList) {
+//				writeDictionary(dictionary);
+//			}
+//		} else {
+//			LOG.warn("no dictionary written");
+		}
+	}
+
+	private void writeDictionary(String dictionary) {
+		System.err.println(">> dict "+dictionary);
+		File subDirectory = getOrCreateExistingSubdirectory(dictionary);
+		if (subDirectory != null) {
+			List<DictionaryFileFormat> outformatList = Arrays.asList(outformats);
+			for (DictionaryFileFormat outformat : outformatList) {
+				File outfile = getOrCreateDictionary(subDirectory, dictionary, outformat);
+				System.out.println("writing dictionary to "+outfile);
+				try {
+					outputDictionary(outfile, outformat);
+				} catch (IOException e) {
+					throw new RuntimeException("cannot write file "+outfile, e);
 				}
 			}
-		} else {
-			LOG.warn("no dictionary written");
 		}
 	}
 	
@@ -1037,11 +1151,15 @@ public class AMIDictionaryTool extends AbstractAMITool {
 	}
     
 	private void printDebug() {
+		System.out.println("baseUrl       "+baseUrl);
+		System.out.println("booleanQuery  "+booleanQuery);
+		System.out.println("descriptions  "+description);
 		System.out.println("dataCols      "+dataCols);
-		System.out.println("dictionary    "+(dictionary == null ? "null" : Arrays.asList(dictionary)));
+		System.out.println("dictionary    "+(dictionaryList == null ? "null" : Arrays.asList(dictionaryList)));
 		System.out.println("dictionaryTop     "+dictionaryTopname);
 //		System.out.println("href          "+href);
 		System.out.println("hrefCols      "+hrefCols);
+		System.out.println("inputs        "+inputList);
 		System.out.println("input         "+input);
 		System.out.println("informat      "+informat);
 		System.out.println("dictInformat  "+dictInformat);
@@ -1050,11 +1168,19 @@ public class AMIDictionaryTool extends AbstractAMITool {
 		System.out.println("nameCol       "+nameCol);
 		System.out.println("operation     "+operation);
 		System.out.println("outformats    "+makeArrayList(outformats));
+		System.out.println("query         "+queryChunk);
+		System.out.println("search        "+searchTerms);
+		System.out.println("searchfile    "+searchTermFilenames);
 		System.out.println("splitCol      "+splitCol);
+		System.out.println("templatea     "+templateNames);
 		System.out.println("termCol       "+termCol);
 		System.out.println("terms         "+(termList == null ? null : "("+termList.size()+") "+termList));
 		System.out.println("termfile      "+termfile);
+		System.out.println("title         "+title);
+		System.out.println("urlref        "+urlref);
 		System.out.println("wikiLinks     "+wikiLinkList);
+		System.out.println("wptype        "+wptype);
+		
 	}
 
 	private List<?> makeArrayList(Object[] list) {
@@ -1165,7 +1291,9 @@ public class AMIDictionaryTool extends AbstractAMITool {
 	}
 
 	private void createFromMediawikiTemplate(String mwString) {
+		LOG.trace("mwstring :" +mwString);
 		List<HtmlA> aList = AMIDictionaryTool.parseMediaWiki(mwString);
+		System.err.println("read A's :" +aList.size());
 		addAHrefs(aList);
 	}
 
@@ -1185,6 +1313,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 				}
 			}
 		}
+		System.err.println("nameList "+nameList.size()+" // "+nameList+"\n>>> "+linkList);
 	}
 
 	private HtmlElement readHtmlElement(InputStream inputStream) {

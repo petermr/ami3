@@ -1,5 +1,7 @@
 package org.contentmine.ami.tools;
 
+import java.util.List;
+
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.AMIDictionaryTool.DictionaryFileFormat;
@@ -14,7 +16,7 @@ class DictionaryData {
 	}
 
     String[]                dataCols;
-    String[]                dictionary;
+    List<String>            dictionary;
     String                  dictionaryTopname;
 	String                  href;
     String[]                hrefCols;
