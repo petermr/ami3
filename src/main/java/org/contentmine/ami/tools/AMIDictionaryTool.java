@@ -463,7 +463,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 		}
 	}
 	private String createDictionaryName(String templateName) {
-		return templateName.toLowerCase().replaceAll("[^A-Za-z0-9_]", "_");
+		return templateName.toLowerCase().replaceAll("[^A-Za-z0-9_\\-]", "");
 	}
 
 	private void createInputList() {
@@ -473,7 +473,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 			inputList.add(input);
 		}
 		input = null;
-	}
+	} 
 
 	private String createInput(String templateName) {
 		input = "https://en.wikipedia.org/w/index.php?title=Template:" + templateName;
