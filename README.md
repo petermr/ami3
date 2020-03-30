@@ -1,19 +1,15 @@
 # AMI
 
-(The command `norma` is being obsoleted and most commands will be of the form `ami-*`)
+AMI is an **operating system (toolkit)** to manage (scholarly) documents; download, aggregate, transform, search, filter, index, annotate, re-use and republish.  It caters for a wide range of (awful) inputs, creates de facto semantics, an ontology (based on Wikidata). It is the basis for high-level science/tech applications including chemistry (molecules, spectra, reaction), Forest plots (metaanalyses of trials), phylogenetic trees (useful fo virus mutations), geographic maps, and basic plots (x/y, scatter, etc.). At present it's written in Java , but it is fundamentally a definition of a declarative system, with commands, and defined data modules. 
 
-**Note.** The commandline syntax is being migrated. See [AMI-STEM](./AMI-STEM.md)) and more recent docs [AMI-DOCS](./ami-docs/AMI.md)
+AMI turns documents into knowledge. Or at least the input for knowledge.
 
-A tool to convert a variety of inputs into normalized, tagged, XHTML (with embedded/linked SVG and PNG where
-appropriate). The initial emphasis is on scholarly publications but much of the technology is general.
-
-## Universal Search Tool (Citizen STEM Search; AMI-STEM)
-
-This is a bundle of all `norma` and `ami` functionality to transform PDFs and XML into structured semantic HTML. It's alpha (2018-09) and we have 4-6 testers each with different projects. This runs on a simple commandline ; see AMI-STEM page for more details.
+### Note 
+AMI has a 20-year history and has been modular in the past (`norma` , `cephis`, `pdf2svg` ...) but is now monolithic for ease of distribution and because the precise modularity is unclear. It might be broken up again into separate tools. 
 
 ## Installation
 
-For a simple introduction and a description of how to install binaries of the software please see: [here](http://contentmine.github.io)
+For a tutorial and a wide range of features see https://github.com/petermr/tigr2ess, which shows AMI being used on crop plants. 
 
 UPDATE 20190122)
 For simply running `AMI` (not building) use the repository [ami-jars](http://github.com/petermr/ami-jars). This repo will be updated frequently (at least till end 2019-02). If git is installed, a "git clone https://github.com/petermr/ami-jars.git" checks out the project.
