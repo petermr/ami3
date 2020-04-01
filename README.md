@@ -1,3 +1,6 @@
+[![GitHub Action Build Status](https://github.com/petermr/ami3/workflows/Java%20CI%20with%20Maven/badge.svg?branch=master)](https://github.com/petermr/ami3/actions) 
+
+
 # AMI
 
 AMI is an **operating system (toolkit)** to manage (scholarly) documents; download, aggregate, transform, search, filter, index, annotate, re-use and republish.  It caters for a wide range of (awful) inputs, creates de facto semantics, an ontology (based on Wikidata). It is the basis for high-level science/tech applications including chemistry (molecules, spectra, reaction), Forest plots (metaanalyses of trials), phylogenetic trees (useful fo virus mutations), geographic maps, and basic plots (x/y, scatter, etc.). At present it's written in Java , but it is fundamentally a definition of a declarative system, with commands, and defined data modules. 
