@@ -15,6 +15,8 @@ import org.contentmine.norma.NAConstants;
 import org.junit.Assert;
 import org.junit.Test;
 
+import static org.junit.Assert.*;
+
 
 /** tests AMIDictinary
  * 
@@ -481,35 +483,56 @@ public class AMIDictionaryTest extends AbstractAMITest {
 	
 	@Test
 	public void testCreateFromMediawikiTemplateURL() {
-		String fileTop = "/Users/pm286/projects/openVirus/dictionaries/";
-		String wptype = "mwk";
-		String template = "Viral_systemic_diseases";
-		createFromMediaWikiTemplate(template, fileTop, wptype);
+		runWithTimeout("testCreateFromMediawikiTemplateURL", 10, () -> {
+			String fileTop = "/Users/pm286/projects/openVirus/dictionaries/";
+			String wptype = "mwk";
+			String template = "Viral_systemic_diseases";
+			createFromMediaWikiTemplate(template, fileTop, wptype);
+		});
 	}
 	
 	@Test
 	public void testCreateFromMediawikiTemplateListURLOld() {
-		String[] templates = {"Baltimore_(virus_classification)", "Antiretroviral_drug", "Virus_topics"};
-		String fileTop = "/Users/pm286/projects/openVirus/dictionaries/";
-		String wptype = "mwk";
-		for (String template : templates) {
-			createFromMediaWikiTemplate(template, fileTop, wptype);
-		}
+		runWithTimeout("testCreateFromMediawikiTemplateListURLOld", 10, () -> {
+			String[] templates = {"Baltimore_(virus_classification)", "Antiretroviral_drug", "Virus_topics"};
+			String fileTop = "/Users/pm286/projects/openVirus/dictionaries/";
+			String wptype = "mwk";
+			for (String template : templates) {
+				createFromMediaWikiTemplate(template, fileTop, wptype);
+			}
+		});
 	}
 
 	@Test
 	public void testCreateFromMediawikiTemplateListURL() {
-		String dictionaryTop = "/Users/pm286/projects/openVirus/dictionaries/";
-		String wptype = "mwk";
-		String args =
-				"create " +
-		       " --directory " + dictionaryTop +
-		       " --outformats html,xml " +
-		       " --template " + " Virus_topics Baltimore_(virus_classification) Antiretroviral_drug" +
-		       " --wptype " + wptype +
-		       " --wikilinks wikidata"
-				;
-		new AMIDictionaryTool().runCommands(args);
+		runWithTimeout("testCreateFromMediawikiTemplateListURL", 10, () -> {
+			String dictionaryTop = "/Users/pm286/projects/openVirus/dictionaries/";
+			String wptype = "mwk";
+			String args =
+					"create " +
+					" --directory " + dictionaryTop +
+					" --outformats html,xml " +
+					" --template " + " Virus_topics Baltimore_(virus_classification) Antiretroviral_drug" +
+					" --wptype " + wptype +
+					" --wikilinks wikidata";
+			new AMIDictionaryTool().runCommands(args);
+		});
+	}
+
+	private static void runWithTimeout(String name, int maxSeconds, Runnable runnable) {
+		Thread t = new Thread(runnable, name);
+		t.setDaemon(true); // this thread may linger...
+		t.start();
+		try {
+			t.join(maxSeconds * 1000);
+		} catch (InterruptedException e) {
+			fail(name + " interrupted");
+			e.printStackTrace();
+		}
+		if (t.isAlive()) {
+			t.interrupt(); // signal the thread it should stop itself (only works if logic checks this)
+			fail(name + " timed out");
+		}
 	}
 
 	@Test
