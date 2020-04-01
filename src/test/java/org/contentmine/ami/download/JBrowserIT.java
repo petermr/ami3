@@ -8,7 +8,7 @@ import com.machinepublishers.jbrowserdriver.Settings;
 import com.machinepublishers.jbrowserdriver.Timezone;
     
 
-public class JBrowserTest {
+public class JBrowserIT {
 
 	@Test
 	/** from the developers
