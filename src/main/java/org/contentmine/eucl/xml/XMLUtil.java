@@ -1503,8 +1503,8 @@ public abstract class XMLUtil implements XMLConstants {
 
 	public static Document parseQuietlyToDocumentWithoutDTD(File file) {
 		Document doc = null;
-		try {
-			String s = IOUtils.toString(new FileInputStream(file));
+		try (FileInputStream fis = new FileInputStream(file)) {
+			String s = IOUtils.toString(fis);
 			doc = XMLUtil.stripDTDAndOtherProblematicXMLHeadings(s);
 		} catch (IOException e) {
 			throw new RuntimeException(e);
