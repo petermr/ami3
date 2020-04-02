@@ -37,7 +37,7 @@ public class TEX2HTMLConverterTest extends XMLTestCase {
         File texFile = new File(NormaFixtures.TEST_NORMA_DIR + "/tex/sample.tex");
         File expectedXMLFile = new File(NormaFixtures.TEST_NORMA_DIR + "/tex/sample.tex.xhtml");
         String actualXML = null;
-        Assert.assertTrue("text exists", texFile.exists());
+        Assert.assertTrue(texFile.getAbsolutePath() +" exists", texFile.exists());
     	actualXML = converter.convertTeXToHTML(texFile);
         if (actualXML != null) {
 	        String expectedXML = new String(IOUtils.toByteArray(new FileInputStream(expectedXMLFile)));
