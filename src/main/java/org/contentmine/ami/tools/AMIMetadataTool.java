@@ -172,15 +172,13 @@ It works best to provide the meta-tags for all versions of your paper, not just 
  */
 
 @Command(
-name = "ami-metadata", 
-aliases = "metadata",
-version = "ami-metadata 0.1",
-description = " manages metadata for both CProject and CTrees. Beacuse there are so many"
-		+ "different places that metadata can come from and because there are several "
-		+ "'standards' , inconsistently used the class will change fairly frequently."
-)
-
-
+name = "metadata",
+description = {
+		"Manages metadata for both CProject and CTrees.",
+		"Beacuse there are so many "
+				+ "different places that metadata can come from and because there are several "
+				+ "'standards', inconsistently used the class will change fairly frequently."
+})
 public class AMIMetadataTool extends AbstractAMITool {
 
 	private static final Logger LOG = Logger.getLogger(AMIMetadataTool.class);

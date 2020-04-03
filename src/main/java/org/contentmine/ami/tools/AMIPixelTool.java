@@ -71,12 +71,11 @@ import picocli.CommandLine.Option;
  *
  */
 @Command(
-name = "ami-pixel", 
-aliases = "pixel",
-version = "ami-pixel 0.1",
-description = "analyzes bitmaps - generally binary, but may be oligochrome. Creates pixelIslands "
-)
-
+name = "pixel",
+description = {
+		"Analyzes bitmaps - generally binary, but may be oligochrome.",
+		"Creates pixelIslands."
+})
 public class AMIPixelTool extends AbstractAMITool implements HasImageDir {
 
 

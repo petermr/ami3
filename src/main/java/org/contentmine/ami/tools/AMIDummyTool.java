@@ -18,13 +18,9 @@ import picocli.CommandLine.Option;
  */
 
 @Command(
-name = "ami-dummy", 
-aliases = "dummy",
-version = "ami-dummy 0.1",
-description = " minimal AMI Tool for editing into more powerful classes"
+name = "dummy",
+description = "Minimal AMI Tool for editing into more powerful classes."
 )
-
-
 public class AMIDummyTool extends AbstractAMITool {
 
 	private static final Logger LOG = Logger.getLogger(AMIDummyTool.class);

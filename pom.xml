@@ -39,7 +39,7 @@
         <junit.version>4.13</junit.version>
         
         <lucene.version>7.1.0</lucene.version>
-        <picocli.version>4.0.3</picocli.version>
+        <picocli.version>4.2.0</picocli.version>
         <log4j.version>1.2.16</log4j.version>
         <pdfbox2.version>2.0.17</pdfbox2.version>
         <resteasy.client>3.6.1.Final</resteasy.client>
@@ -148,118 +148,123 @@
                     <configuration>
                         <programs>
                       
-                      <!--  TOOLS -->  
+                      <!--  TOOLS -->
+                            <program>
+                                <mainClass>org.contentmine.ami.tools.AMI</mainClass>
+                                <!-- description: lists AMI commands (ami-*) -->
+                                <id>ami</id>
+                            </program>
                             <program>
                                  <mainClass>org.contentmine.ami.AMIProcessor</mainClass>
                             <!-- description: lists AMI commands (ami-*) -->
                                 <id>ami-all</id>
                             </program>
-                            <program>
-                                <mainClass>org.contentmine.ami.tools.AMICleanTool</mainClass>
-                            <!-- description: cleans some/all of project -->
-                                <id>ami-clean</id>
-                            </program>
-                            <program>
-                                <mainClass>org.contentmine.ami.tools.AMIDictionaryTool</mainClass>
-                            <!-- creates and manages dictionaries -->
-                                <id>ami-dictionary</id>
-                            </program>
-                            <program>
-                                <mainClass>org.contentmine.ami.tools.AMIDownloadTool</mainClass>
-                            <!-- download files  -->
-                                <id>ami-download</id>
-                            </program>
-                            <program>
-                               <mainClass>org.contentmine.ami.tools.AMIFilterTool</mainClass>
-                               <!-- description: filters images -->
-                               <id>ami-filter</id>
-                           </program>
-                            <program>
-                                <mainClass>org.contentmine.ami.tools.AMIForestPlotTool</mainClass>
-                            <!-- description: extract ForestPlots from images -->
-                                <id>ami-forestplot</id>
-                            </program>
-                             <program>
-                                <mainClass>org.contentmine.ami.tools.AMIGraphicsTool</mainClass>
-                                <!-- description: extract graphics primitives from SVG -->
-                                <id>ami-graphics</id>
-                            </program>
-                             <program>
-                                <mainClass>org.contentmine.ami.tools.AMIGrobidTool</mainClass>
-                                <!-- description: process PDF with Grobid -->
-                                <id>ami-grobid</id>
-                            </program>
-                             <program>
-                                <mainClass>org.contentmine.ami.tools.AMIImageTool</mainClass>
-                                <!-- description: process images -->
-                                <id>ami-image</id>
-                            </program>
-                             <program>
-                                <mainClass>org.contentmine.ami.tools.AMIImageFilterTool</mainClass>
-                                <!-- description: filters images DEPRECATED -->
-                                <id>ami-imagefilter</id>
-                            </program>
-                            <program>
-                                <mainClass>org.contentmine.ami.tools.AMIMakeProjectTool</mainClass>
-                                <!-- description: make project from a directory-->
-                                <id>ami-makeproject</id>
-                            </program>
-                             <program>
-                                <mainClass>org.contentmine.ami.tools.AMIOCRTool</mainClass>
-                                <!-- description: process images -->
-                                <id>ami-ocr</id>
-                            </program>
-                            <program>
-                                <mainClass>org.contentmine.ami.tools.AMIPixelTool</mainClass>
-                                <!-- description: process images -->
-                                <id>ami-pixel</id>
-                            </program>
-                            <program>
-                               <mainClass>org.contentmine.ami.tools.AMIPDFTool</mainClass>
-                            <!-- description: process images -->
-                                <id>ami-pdf</id>
-                            </program>
-                            <program>
-                                <mainClass>org.contentmine.ami.tools.AMISearchTool</mainClass>
-                            <!-- description: run AMI searches -->
-                                <id>ami-search</id>
-                            </program>
-                            <program>
-                                <mainClass>org.contentmine.ami.tools.AMISectionTool</mainClass>
-                            <!-- description: run AMI searches -->
-                                <id>ami-section</id>
-                            </program>
-    
-                            <program>
-                             <!--  now a tool -->
-                                <mainClass>org.contentmine.ami.tools.AMISummaryTool</mainClass>
-                                <!-- description: run AMI summary -->
-                                <id>ami-summary</id>
-                            </program>
-                            <program>
-                                <mainClass>org.contentmine.ami.tools.AMISVGTool</mainClass>
-                                <!-- description: processes SVG (e.g. created by ami-pdf -->
-                                <id>ami-svg</id>
-                            </program>
-                            <program>
-                                <mainClass>org.contentmine.ami.tools.AMITableTool</mainClass>
-                                <!-- description: extracts tables -->
-                                <id>ami-table</id>
-                            </program>
-                            <program>
-                                <mainClass>org.contentmine.ami.tools.AMIWordsTool</mainClass>
-                                <!-- description: runs word counts -->
-                                <id>ami-word</id>
-                            </program>
-                            
-                        
-                        
-                        
-                            <program>
-                                <mainClass>org.contentmine.ami.tools.AMITransformTool</mainClass>
-                              <!-- description: transform with AMITransform mainly XML-->
-                                <id>ami-transform</id>
-                            </program>
+<!--                            <program>-->
+<!--                                <mainClass>org.contentmine.ami.tools.AMICleanTool</mainClass>-->
+<!--                            &lt;!&ndash; description: cleans some/all of project &ndash;&gt;-->
+<!--                                <id>ami-clean</id>-->
+<!--                            </program>-->
+<!--                            <program>-->
+<!--                                <mainClass>org.contentmine.ami.tools.AMIDictionaryTool</mainClass>-->
+<!--                            &lt;!&ndash; creates and manages dictionaries &ndash;&gt;-->
+<!--                                <id>ami-dictionary</id>-->
+<!--                            </program>-->
+<!--                            <program>-->
+<!--                                <mainClass>org.contentmine.ami.tools.AMIDownloadTool</mainClass>-->
+<!--                            &lt;!&ndash; download files  &ndash;&gt;-->
+<!--                                <id>ami-download</id>-->
+<!--                            </program>-->
+<!--                            <program>-->
+<!--                               <mainClass>org.contentmine.ami.tools.AMIFilterTool</mainClass>-->
+<!--                               &lt;!&ndash; description: filters images &ndash;&gt;-->
+<!--                               <id>ami-filter</id>-->
+<!--                           </program>-->
+<!--                            <program>-->
+<!--                                <mainClass>org.contentmine.ami.tools.AMIForestPlotTool</mainClass>-->
+<!--                            &lt;!&ndash; description: extract ForestPlots from images &ndash;&gt;-->
+<!--                                <id>ami-forestplot</id>-->
+<!--                            </program>-->
+<!--                             <program>-->
+<!--                                <mainClass>org.contentmine.ami.tools.AMIGraphicsTool</mainClass>-->
+<!--                                &lt;!&ndash; description: extract graphics primitives from SVG &ndash;&gt;-->
+<!--                                <id>ami-graphics</id>-->
+<!--                            </program>-->
+<!--                             <program>-->
+<!--                                <mainClass>org.contentmine.ami.tools.AMIGrobidTool</mainClass>-->
+<!--                                &lt;!&ndash; description: process PDF with Grobid &ndash;&gt;-->
+<!--                                <id>ami-grobid</id>-->
+<!--                            </program>-->
+<!--                             <program>-->
+<!--                                <mainClass>org.contentmine.ami.tools.AMIImageTool</mainClass>-->
+<!--                                &lt;!&ndash; description: process images &ndash;&gt;-->
+<!--                                <id>ami-image</id>-->
+<!--                            </program>-->
+<!--                             <program>-->
+<!--                                <mainClass>org.contentmine.ami.tools.AMIImageFilterTool</mainClass>-->
+<!--                                &lt;!&ndash; description: filters images DEPRECATED &ndash;&gt;-->
+<!--                                <id>ami-imagefilter</id>-->
+<!--                            </program>-->
+<!--                            <program>-->
+<!--                                <mainClass>org.contentmine.ami.tools.AMIMakeProjectTool</mainClass>-->
+<!--                                &lt;!&ndash; description: make project from a directory&ndash;&gt;-->
+<!--                                <id>ami-makeproject</id>-->
+<!--                            </program>-->
+<!--                             <program>-->
+<!--                                <mainClass>org.contentmine.ami.tools.AMIOCRTool</mainClass>-->
+<!--                                &lt;!&ndash; description: process images &ndash;&gt;-->
+<!--                                <id>ami-ocr</id>-->
+<!--                            </program>-->
+<!--                            <program>-->
+<!--                                <mainClass>org.contentmine.ami.tools.AMIPixelTool</mainClass>-->
+<!--                                &lt;!&ndash; description: process images &ndash;&gt;-->
+<!--                                <id>ami-pixel</id>-->
+<!--                            </program>-->
+<!--                            <program>-->
+<!--                               <mainClass>org.contentmine.ami.tools.AMIPDFTool</mainClass>-->
+<!--                            &lt;!&ndash; description: process images &ndash;&gt;-->
+<!--                                <id>ami-pdf</id>-->
+<!--                            </program>-->
+<!--                            <program>-->
+<!--                                <mainClass>org.contentmine.ami.tools.AMISearchTool</mainClass>-->
+<!--                            &lt;!&ndash; description: run AMI searches &ndash;&gt;-->
+<!--                                <id>ami-search</id>-->
+<!--                            </program>-->
+<!--                            <program>-->
+<!--                                <mainClass>org.contentmine.ami.tools.AMISectionTool</mainClass>-->
+<!--                            &lt;!&ndash; description: run AMI searches &ndash;&gt;-->
+<!--                                <id>ami-section</id>-->
+<!--                            </program>-->
+<!--    -->
+<!--                            <program>-->
+<!--                             &lt;!&ndash;  now a tool &ndash;&gt;-->
+<!--                                <mainClass>org.contentmine.ami.tools.AMISummaryTool</mainClass>-->
+<!--                                &lt;!&ndash; description: run AMI summary &ndash;&gt;-->
+<!--                                <id>ami-summary</id>-->
+<!--                            </program>-->
+<!--                            <program>-->
+<!--                                <mainClass>org.contentmine.ami.tools.AMISVGTool</mainClass>-->
+<!--                                &lt;!&ndash; description: processes SVG (e.g. created by ami-pdf &ndash;&gt;-->
+<!--                                <id>ami-svg</id>-->
+<!--                            </program>-->
+<!--                            <program>-->
+<!--                                <mainClass>org.contentmine.ami.tools.AMITableTool</mainClass>-->
+<!--                                &lt;!&ndash; description: extracts tables &ndash;&gt;-->
+<!--                                <id>ami-table</id>-->
+<!--                            </program>-->
+<!--                            <program>-->
+<!--                                <mainClass>org.contentmine.ami.tools.AMIWordsTool</mainClass>-->
+<!--                                &lt;!&ndash; description: runs word counts &ndash;&gt;-->
+<!--                                <id>ami-word</id>-->
+<!--                            </program>-->
+<!--                            -->
+<!--                        -->
+<!--                        -->
+<!--                        -->
+<!--                            <program>-->
+<!--                                <mainClass>org.contentmine.ami.tools.AMITransformTool</mainClass>-->
+<!--                              &lt;!&ndash; description: transform with AMITransform mainly XML&ndash;&gt;-->
+<!--                                <id>ami-transform</id>-->
+<!--                            </program>-->
 							<!--
                             <program>
                                 <mainClass>org.contentmine.ami.plugins.CommandProcessor</mainClass>
@@ -287,12 +292,12 @@
                               <!--  description:  -->
                                 <id>ami-regex</id>
                             </program>
-                            <program>
-                           <!--  will become a tool -->
-                                <mainClass>org.contentmine.ami.tools.AMISearch</mainClass>
-                              <!-- description: run AMI searches and co-occurrence -->
-                                <id>ami-search-cooccur-old</id>
-                            </program>
+<!--                            <program>-->
+<!--                           &lt;!&ndash;  will become a tool &ndash;&gt;-->
+<!--                                <mainClass>org.contentmine.ami.tools.AMISearch</mainClass>-->
+<!--                              &lt;!&ndash; description: run AMI searches and co-occurrence &ndash;&gt;-->
+<!--                                <id>ami-search-cooccur-old</id>-->
+<!--                            </program>-->
                             <program>
                                 <mainClass>org.contentmine.ami.plugins.sequence.SequencePlugin</mainClass>
                               <!--  description:  -->

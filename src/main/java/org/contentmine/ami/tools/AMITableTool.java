@@ -39,12 +39,17 @@ import com.google.common.collect.HashMultiset;
 import com.google.common.collect.Multiset;
 import com.google.common.collect.Multiset.Entry;
 
+import picocli.CommandLine;
+import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 /**
  * 
  * @author pm286
  *
  */
+@Command(name = "table", description = {
+		"Writes cProject or cTree to summary table."
+})
 public class AMITableTool extends AbstractAMITool {
 	private static final Logger LOG = Logger.getLogger(AMITableTool.class);
 

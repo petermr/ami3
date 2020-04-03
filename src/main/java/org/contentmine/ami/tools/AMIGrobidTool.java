@@ -22,20 +22,19 @@ import picocli.CommandLine.Option;
  *
  */
 @Command(
-name = "ami-bitmap", 
-aliases = "bitmap",
-version = "ami-bitmap 0.1",
-description = "	Run grobid using:"
+name = "bitmap",
+description = {
+		"Runs grobid.",
+		"Internally, this uses:%n"
 		+ "java -jar /Users/pm286/workspace/grobid/grobid-0.5.3/grobid-core/build/libs/grobid-core-0.5.3-onejar.jar "
 		+ "  -gH /Users/pm286/workspace/grobid/grobid-0.5.3/grobid-home"
 		+ "  -teiCoordinates "
 		+ "  -exe processFullText"
-		+ ""
-		+ "This is very slow as grobid has to boot each time but it only has to be done once. "
+		,
+		"This is very slow as grobid has to boot each time but it only has to be done once. "
 		+ "We can set up a server if it becomes useful. "
 		+ ""
-)
-
+})
 public class AMIGrobidTool extends AbstractAMITool {
 	private static final String FULLTEXT_TEI_HTML = "fulltext.tei.html";
 

@@ -58,12 +58,10 @@ DefaultArgProcessor  - running method: finalDFFile
  *
  */
 @Command(
-name = "ami-words", 
-aliases = "words",
-version = "ami-words 0.1",
-description = "Analyze word frequencies"
-)
-
+name = "words",
+description = {
+		"Analyzes word frequencies."
+})
 public class AMIWordsTool extends AbstractAMISearchTool {
 //public class AMIWordsTool extends AMISearchTool {
 	private static final String OPTIONS_JOIN = "~";
