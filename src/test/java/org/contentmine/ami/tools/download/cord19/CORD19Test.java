@@ -180,7 +180,8 @@ public class CORD19Test extends AbstractAMITest {
 	@Test
 	public void testCORDtoHTML() {
 		JsonObject rootObject = readTestDoc();
-		CORD19Parser parser = new CORD19Parser();
+		org.contentmine.ami.tools.download.cord19.CORD19Parser parser =
+				new org.contentmine.ami.tools.download.cord19.CORD19Parser();
 		HtmlElement html = parser.parse(rootObject);
 		XMLUtil.writeQuietly(html, new File("target/cord19/test1.html"), 1);
 	}
