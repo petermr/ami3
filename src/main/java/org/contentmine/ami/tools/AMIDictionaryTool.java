@@ -635,41 +635,46 @@ public class AMIDictionaryTool extends AbstractAMITool {
 		dictionaryTopname = dictionaryTopname == null ?
 				new File(fileroot, wptype.toString()).toString() : dictionaryTopname;
 		InputStream inputStream = openInputStream();
-		if (inputStream == null) {
-			System.err.println("NO INPUT STREAM, check HTTP connection/target or file existence");
-			if (testString != null) {
-				inputStream = new ByteArrayInputStream(testString.getBytes());
+		try {
+			if (inputStream == null) {
+				System.err.println("NO INPUT STREAM, check HTTP connection/target or file existence");
+				if (testString != null) {
+					inputStream = new ByteArrayInputStream(testString.getBytes());
+				}
+			}
+
+			if (inputStream != null) {
+				if (informat == null) {
+					addLoggingLevel(Level.ERROR, "no input format given ");
+					return;
+				} else if (InputFormat.csv.equals(informat)) {
+					readCSV(inputStream);
+				} else if (InputFormat.list.equals(informat)) {
+					readList(inputStream);
+				} else if (InputFormat.mediawikitemplate.equals(informat) ||
+						InputFormat.wikicategory.equals(informat) ||
+						InputFormat.wikipage.equals(informat) ||
+						InputFormat.wikitable.equals(informat) ||
+						InputFormat.wikitemplate.equals(informat)
+				) {
+					wikipediaDictionary = new WikipediaDictionary();
+					readWikipediaPage(wikipediaDictionary, inputStream);
+				} else {
+					addLoggingLevel(Level.ERROR, "unknown inputformat: " + informat);
+					return;
+				}
+			} else {
+
+			}
+		} finally {
+			if (inputStream != null) {
+				try { inputStream.close(); } catch (IOException ignored) {}
 			}
 		}
-		
-    	if (inputStream != null) {
-    		if (informat == null) {
-    			addLoggingLevel(Level.ERROR, "no input format given ");
-    			return;
-    		} else if (InputFormat.csv.equals(informat)) {
-    			readCSV(inputStream);
-    		} else if (InputFormat.list.equals(informat)) {
-    			readList(inputStream);
-    		} else if (InputFormat.mediawikitemplate.equals(informat) ||
-    				InputFormat.wikicategory.equals(informat) ||
-    				InputFormat.wikipage.equals(informat) ||
-    				InputFormat.wikitable.equals(informat) ||
-    				InputFormat.wikitemplate.equals(informat) 
-    				) {
-	    		wikipediaDictionary = new WikipediaDictionary();
-	    		readWikipediaPage(wikipediaDictionary, inputStream);
-    		} else {
-    			addLoggingLevel(Level.ERROR, "unknown inputformat: "+informat);
-    			return;
-    		}
-    	} else {
-    		
-    	}
     	synchroniseTermsAndNames();
     	dictionaryElement = DefaultAMIDictionary.createDictionaryWithTitle(/*dictionaryList.get(0)*/input);
     	
     	writeNamesAndLinks();
-		
 	}
 
 	private void readList(InputStream inputStream) {
