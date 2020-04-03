@@ -77,16 +77,14 @@ import picocli.CommandLine.Parameters;
  */
 
 @Command(
-		description = "Manages AMI dictionaries%n"
-				+ "Create from Wikipedia:%n"
-				+ "   ami-dictionary create --informat wikipage%n"
+		name = "dictionary",
+		description = {
+				"Manages AMI dictionaries.",
+				"Create from Wikipedia:%n"
+				+ "   ${COMMAND-FULL-NAME} create --informat wikipage%n"
 				+ "    --input https://en.wikipedia.org/wiki/List_of_fish_common_names%n"
-				+ "    --dictionary commonfish --directory mydictionary --outformats xml,html%n",
-		name = "ami-dictionary",
-		mixinStandardHelpOptions = true,
-		version = "ami 0.1"
-		)
-
+				+ "    --dictionary commonfish --directory mydictionary --outformats xml,html%n"
+		})
 public class AMIDictionaryTool extends AbstractAMITool {
 	
 

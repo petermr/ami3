@@ -35,37 +35,24 @@ import picocli.CommandLine.Option;
  *
  */
 @Command(
-	addMethodSubcommands = false,
-			//String separator() default "=";
-	separator = "=",
-			//String[] version() default {};
-	mixinStandardHelpOptions = true,
-			//boolean helpCommand() default false;
-	helpCommand = true,
-			//String headerHeading() default "";
-	abbreviateSynopsis = true,
-			//String[] customSynopsis() default {};
-	descriptionHeading = "Description\n===========\n",
-			//String[] description() default {};
-	parameterListHeading  = "Parameters\n=========\n",
-			//String optionListHeading() default "";
-	optionListHeading  = "Options\n=======\n",
-			//boolean sortOptions() default true;
-	sortOptions = true,
-			//char requiredOptionMarker() default ' ';
-	requiredOptionMarker = '*',
-			//Class<? extends IDefaultValueProvider> defaultValueProvider() default NoDefaultProvider.class;
-	showDefaultValues = true,
-			//String commandListHeading() default "Commands:%n";
-	commandListHeading = "Commands:%n=========%n",
-			//String footerHeading() default "";
-	hidden = false,
-			//String resourceBundle() default "";
-	usageHelpWidth = 80,
-	
-	version = "ami20190228" // also edit ami-jars-sh
-	)
+		mixinStandardHelpOptions = true,
+		abbreviateSynopsis    = true, // because there are 21 common options defined in this class
+		descriptionHeading    = "Description%n===========%n",
+		parameterListHeading  = "Parameters%n=========%n",
+		optionListHeading     = "Options%n=======%n",
+		commandListHeading    = "Commands:%n=========%n",
+		requiredOptionMarker  = '*',
+		showDefaultValues     = true, // alternatively, we could switch this off and use ${DEFAULT-VALUE} in description text
+		//addMethodSubcommands = false, // TODO confirm with Peter
+		//separator = "=", // this is the default
+		//helpCommand = true, // this is a normal command, not a help command
+		//sortOptions = true, // this is the default
+		//hidden = false, // this is the default
+		//usageHelpWidth = 80, // this is the default
 
+		// TODO I would like to automate this
+		version = "${COMMAND-FULL-NAME} 20190228" // also edit ami-jars.sh
+	)
 public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 	private static final Logger LOG = Logger.getLogger(AbstractAMITool.class);
 	static {
@@ -93,8 +80,6 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 		public String getAbbrev() {
 			return abbrev;
 		}
-		
-		
 	}
 
 	/** subdirectories of CTree
@@ -103,7 +88,7 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 	 *
 	 */
 	public enum SubDirectoryType {
-		pdfimages("pdfimaages"),
+		pdfimages("pdfimaages"), // TODO check if this typo is intentional
 		svg("svg"),
 		;
 		public final String subdirname;
@@ -114,7 +99,7 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 		public String getSubdirectoryName() {
 			return subdirname;
 		}
-    }
+	}
 	
 	public enum Verbosity {
 		TRACE(3),
@@ -132,116 +117,116 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 	}
 	
 	@Option(names = {"--outputname"}, 
-    		arity="1",
-    		description = "(A) User's basename for outputfiles (e.g. foo/bar/<basename>.png or directories. By default this is computed by AMI."
-    				+ " This allows users to create their own variants, but they won't always be known by default to subsequent"
-    				+ "applications"
-    		)
+			//arity="1", // this is the default
+			description = "(A) User's basename for outputfiles (e.g. foo/bar/<basename>.png or directories. By default this is computed by AMI."
+					+ " This allows users to create their own variants, but they won't always be known by default to subsequent"
+					+ "applications"
+			)
 	protected String outputBasename;
 
-	@Option(names = {"--inputname"}, 
-    		arity="1",
-    		description = "(A) User's basename for inputfiles (e.g. foo/bar/<basename>.png) or directories. By default this is often computed by AMI."
-    				+ " However some files will have variable names (e.g. output of AMIImage) or from foreign sources or applications"
-    		)
+	@Option(names = {"--inputname"},
+			//arity="1", // this is the default
+			description = "(A) User's basename for inputfiles (e.g. foo/bar/<basename>.png) or directories. By default this is often computed by AMI."
+					+ " However some files will have variable names (e.g. output of AMIImage) or from foreign sources or applications"
+			)
 	protected String inputBasename;
 
-	@Option(names = {"--inputnamelist"}, 
-    		arity="1..*",
-    		description = "(A) list of inputnames; will iterate over them , eseentially compressing multiple commands into one. Experimental"
-    		)
+	@Option(names = {"--inputnamelist"},
+			arity="1..*",
+			description = "(A) list of inputnames; will iterate over them, essentially compressing multiple commands into one. Experimental"
+			)
 	protected List<String> inputBasenameList = null;
 
-    @Option(names = {"-p", "--cproject"}, 
-		arity = "1",
-		paramLabel="CProject",
-		description = "(A) CProject (directory) to process. This can be (a) a child directory of cwd (current working directory (b) cwd itself (use -p .) or (c) an absolute filename."
+	@Option(names = {"-p", "--cproject"},
+			//arity="1", // this is the default
+			paramLabel="CProject",
+			description = "(A) CProject (directory) to process. This can be (a) a child directory of cwd (current working directory (b) cwd itself (use -p .) or (c) an absolute filename."
 				+ " No defaults. The cProject name is the basename of the file."
-				)
-    protected String cProjectDirectory = null;
+			)
+	protected String cProjectDirectory = null;
 
-    @Option(names = {"-i", "--input"}, 
-		arity = "1",
-		paramLabel="input",
-		description = "(A) input filename (no defaults)"
-				)
-    protected String input = null;
+	@Option(names = {"-i", "--input"},
+			//arity="1", // this is the default
+			paramLabel="input",
+			description = "(A) input filename (no defaults)"
+			)
+	protected String input = null;
 
-    @Option(names = {"-o", "--output"}, 
-		arity = "1",
-		paramLabel="output",
-		description = "(A) output filename (no defaults)"
-				)
-    protected String output = null;
+	@Option(names = {"-o", "--output"},
+			//arity="1", // this is the default
+			paramLabel="output",
+			description = "(A) output filename (no defaults)"
+			)
+	protected String output = null;
 
-    @Option(names = {"-t", "--ctree"}, 
-		arity = "0..1",
-		paramLabel = "CTree",
-		interactive = false,
-		descriptionKey = "descriptionKey",
-		description = "(A) CTree (directory) to process. This can be (a) a child directory of cwd (current working directory, usually cProject) (b) cwd itself, usually cTree (use -t .) or (c) an absolute filename."
+	@Option(names = {"-t", "--ctree"},
+			arity = "0..1",
+			paramLabel = "CTree",
+			interactive = false,
+			descriptionKey = "descriptionKey",
+			description = "(A) CTree (directory) to process. This can be (a) a child directory of cwd (current working directory, usually cProject) (b) cwd itself, usually cTree (use -t .) or (c) an absolute filename."
 				+ " No defaults. The cTree name is the basename of the file."
-				)
-    protected String cTreeDirectory = null;
+			)
+	protected String cTreeDirectory = null;
 
-    @Option(names = {"--dryrun"}, 
-    		arity="1",
-    		description = "(A) for testing runs a single phase without output, deletion or transformation.(NYI)."
-    		)
+	@Option(names = {"--dryrun"},
+			arity="1",
+			description = "(A) for testing runs a single phase without output, deletion or transformation.(NYI)."
+			)
 	protected Boolean dryrun = false;
 
-    @Option(names = {"--forcemake"}, 
-    		arity="0",
-    		description = "(A) force 'make' regardless of file existence and dates."
-    		)
+	@Option(names = {"--forcemake"},
+			arity="0",
+			description = "(A) force 'make' regardless of file existence and dates."
+			)
 	protected Boolean forceMake = false;
 
-    @Option(names = {"--excludebase"}, 
-    		arity="1..*",
-    		description = "(A) exclude child files of cTree (only works with --ctree). "
-    				+ "Currently must be explicit or with trailing percent for truncated glob."
-    		)
+	@Option(names = {"--excludebase"},
+			arity="1..*",
+			description = "(A) exclude child files of cTree (only works with --ctree). "
+					+ "Currently must be explicit or with trailing percent for truncated glob."
+			)
 	public String[] excludeBase;
 
-    @Option(names = {"--excludetree"}, 
-    		arity="1..*",
-    		description = "(A) exclude the CTrees in the list. (only works with --cproject). "
-    				+ "Currently must be explicit but we'll add globbing later."
-    		)
+	@Option(names = {"--excludetree"},
+			arity="1..*",
+			description = "(A) exclude the CTrees in the list. (only works with --cproject). "
+					+ "Currently must be explicit but we'll add globbing later."
+			)
 	public String[] excludeTrees;
 
-    @Option(names = {"--includebase"}, 
-    		arity="1..*",
-    		description = "(A) include child files of cTree (only works with --ctree). "
-    				+ "Currently must be explicit or with trailing percent for truncated glob."
-    		)
+	@Option(names = {"--includebase"},
+			arity="1..*",
+			description = "(A) include child files of cTree (only works with --ctree). "
+					+ "Currently must be explicit or with trailing percent for truncated glob."
+			)
 	public String[] includeBase;
 
-    @Option(names = {"--includetree"}, 
-    		arity="1..*",
-    		description = "(A) include only the CTrees in the list. (only works with --cproject). "
-    				+ "Currently must be explicit but we'll add globbing later."
-    		)
+	@Option(names = {"--includetree"},
+			arity="1..*",
+			description = "(A) include only the CTrees in the list. (only works with --cproject). "
+					+ "Currently must be explicit but we'll add globbing later."
+			)
 	public String[] includeTrees;
 
-    @Option(names = {"--log4j"}, 
-    		arity="2..*",
-    		description = "(A) format: <classname> <level>; sets logging level of class, e.g. \n "
-    				+ "org.contentmine.ami.lookups.WikipediaDictionary INFO"
-    		)
+	@Option(names = {"--log4j"},
+			arity="2..*",
+			description = "(A) format: <classname> <level>; sets logging level of class, e.g. \n "
+					+ "org.contentmine.ami.lookups.WikipediaDictionary INFO"
+			)
 	public String[] log4j;
 
-    @Option(names = {"--logfile"}, 
-    		arity="1",
-    		description = "(A) log file for each tree/file/image analyzed. "
-    		)
+	@Option(names = {"--logfile"},
+			arity="1",
+			description = "(A) log file for each tree/file/image analyzed. "
+			)
 	public String logfile;
 
-    @Option(names = {"--oldstyle"},
-    		arity = "0",
-            description = "(A) use oldstyle style of processing (project based) for unconverted tools; new style is per tree")
+	@Option(names = {"--oldstyle"},
+			arity = "0",
+			description = "(A) use oldstyle style of processing (project based) for unconverted tools; new style is per tree")
 	protected boolean oldstyle = true;
-    
+
 
 	@Option(names = {"--rawfiletypes" }, 
 			arity = "1..*", 
@@ -250,30 +235,30 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 					+ "can be concatenated with commas ")
 	protected List<RawFileFormat> rawFileFormats = new ArrayList<>();
 
-    @Option(names = {"--subdirectorytype"},
-    		arity = "1",
-            description = "(A) use subdirectory of cTree")
-    protected SubDirectoryType subdirectoryType;
+	@Option(names = {"--subdirectorytype"},
+			arity = "1",
+			description = "(A) use subdirectory of cTree")
+	protected SubDirectoryType subdirectoryType;
 
-    @Option(names = {"--maxTrees"},
-    		arity = "1",
-            description = "(A) quit after given number of trees; null means infinite")
-    protected Integer maxTreeCount = null;
+	@Option(names = {"--maxTrees"},
+			arity = "1",
+			description = "(A) quit after given number of trees; null means infinite")
+	protected Integer maxTreeCount = null;
 
 
 	@Option(names = { "--testString" }, 
-    		description = {
-        "(A) String input for debugging"
-        + "semantics depend on task" })
+			description = {
+			"(A) String input for debugging"
+			+ "semantics depend on task" })
     protected String testString = null;
 
 	@Option(names = { "-v", "--verbose" }, 
-    		description = {
-        "(A) Specify multiple -v options to increase verbosity.",
-        "For example, `-v -v -v` or `-vvv`"
-        + "We map ERROR or WARN -> 0 (i.e. always print), INFO -> 1(-v), DEBUG->2 (-vv)" })
-    protected boolean[] verbosity = new boolean[0];
-    
+			description = {
+			"(A) Specify multiple -v options to increase verbosity.",
+			"For example, `-v -v -v` or `-vvv`. "
+			+ "We map ERROR or WARN -> 0 (i.e. always print), INFO -> 1(-v), DEBUG->2 (-vv)" })
+	protected boolean[] verbosity = new boolean[0];
+
 
 	
 	protected static final String NONE = "NONE";
@@ -323,10 +308,15 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 		init();
 		this.args = args;
 		// add help
-    	args = args.length == 0 ? new String[] {"--help"} : args;
+		args = args.length == 0 ? new String[] {"--help"} : args;
 		CommandLine.call(this, args);
-		
-    	runCommands(); 
+	}
+
+
+	@Override
+	public Void call() throws Exception {
+		runCommands();
+		return null;
 	}
 
 	/** assumes arguments have been preset (e.g. by set commands). 
@@ -390,11 +380,6 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 			}
 		}
 	}
-
-	@Override
-    public Void call() throws Exception {
-        return null;
-    }
 
     /** subclass this if you want to process CTree and CProject differently
      * 

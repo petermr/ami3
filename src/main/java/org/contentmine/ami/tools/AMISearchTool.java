@@ -35,13 +35,11 @@ import picocli.CommandLine.Option;
 //	    AMIRegexTool.class,
 //	    AMIWordsTool.class,
 //	},
-name = "ami-search", 
-aliases = "search",
-version = "ami-search 0.1",
-description = "searches text (and maybe SVG). Has specialist subcommands"
-)
-
-
+name = "search",
+description = {
+		"Searches text (and maybe SVG).",
+		//"Has specialist subcommands"
+})
 public class AMISearchTool extends AbstractAMISearchTool {
 	private static final Logger LOG = Logger.getLogger(AMISearchTool.class);
 	static {

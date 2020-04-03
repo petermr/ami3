@@ -44,11 +44,10 @@ import picocli.CommandLine.Option;
 
 
 @Command(
-name = "ami-filter", 
-aliases = "filter",
-version = "ami-filter 0.1",
-description = "	FILTERs images (initally from PDFimages), but does not transform the contents."
-		+ "Might later be extended to other data types."
+name = "filter",
+description = {
+		"FILTERs images (initally from PDFimages), but does not transform the contents.",
+		"Might later be extended to other data types."
 		+ "Works at level of raw *.png. Does not transform or split the png."
 		+ " Services include %n"
 		+ ""
@@ -56,10 +55,7 @@ description = "	FILTERs images (initally from PDFimages), but does not transform
 		+ "%n rejection of images less than gven size</li>"
 		+ "%n rejection of monochrome images (e.g. all white or all black) (NB black and white is 'binary/ized'"
 		+ ""
-		
-		
-)
-
+})
 public class AMIFilterTool extends AbstractAMITool /*implements HasImageDir*/ {
 	private static final String IMAGE = "image";
 

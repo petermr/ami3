@@ -36,25 +36,22 @@ import picocli.CommandLine.Option;
 
 
 @Command(
-name = "ami-image", 
-aliases = "image",
-version = "ami-image 0.1",
-description = "	transforms image contents but only provides basic filtering (see ami-filter)."
-		+ " Services include %n"
-		+ ""
-		+ "%n identification of duplicate images, and removal<.li>"
-		+ "%n rejection of images less than gven size</li>"
-		+ "%n rejection of monochrome images (e.g. all white or all black) (NB black and white is 'binary/ized'"
-		+ ""
+name = "image",
+description = {
+		"Transforms image contents but only provides basic filtering (see ami-filter).",
+		" Services include %n"
+				+ ""
+				+ "%n identification of duplicate images, and removal<.li>"
+				+ "%n rejection of images less than gven size</li>"
+				+ "%n rejection of monochrome images (e.g. all white or all black) (NB black and white is 'binary/ized'"
+				+ ""
 
-		+ "Then TRANSFORMS contents"
-		+ " geometric scaling of images using Imgscalr, with interpolation. Increasing scale on small fonts can help OCR, "
-		+ "decreasing scale on large pixel maps can help performance."
-		+ ""
-		+ "NOTE: a missing option means it is not applied (value null). Generally no defaults"
-		
-)
-
+				+ "Then TRANSFORMS contents"
+				+ " geometric scaling of images using Imgscalr, with interpolation. Increasing scale on small fonts can help OCR, "
+				+ "decreasing scale on large pixel maps can help performance."
+				+ ""
+				+ "NOTE: a missing option means it is not applied (value null). Generally no defaults"
+})
 public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 	private static final String IMAGE = "image";
 

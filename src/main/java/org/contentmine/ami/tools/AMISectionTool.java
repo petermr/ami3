@@ -60,22 +60,19 @@ import picocli.CommandLine.Option;
  *
  */
 @Command(
-name = "ami-section", 
-aliases = "section",
-version = "ami-section 0.1",
-description = "splits XML files into sections using XPath%n"
-		+ "creates names from titles of sections (or 'elem<num>.xml' if cannot)%n"
-		+ "optionally writes HTML (slow) using specified stylesheet%n"
-		+ "examples:%n"
-		+ "    --sections ALL --html nlm2html%n"
-		+ "         //not sure this works"
-		+ "    --sections ABSTRACT ACK_FUND --write false%n"
-		+ "%n"
-		+ "    --forcemake --extract table fig --summary figure table "
-		+ "        // this seems to create sections OK, use this?"
-		
-)
-
+name = "section",
+description = {
+		"Splits XML files into sections using XPath.",
+		"Creates names from titles of sections (or 'elem<num>.xml' if cannot)%n"
+				+ "optionally writes HTML (slow) using specified stylesheet%n"
+				+ "examples:%n"
+				+ "    --sections ALL --html nlm2html%n"
+				+ "         //not sure this works"
+				+ "    --sections ABSTRACT ACK_FUND --write false%n"
+				+ "%n"
+				+ "    --forcemake --extract table fig --summary figure table "
+				+ "        // this seems to create sections OK, use this?"
+})
 public class AMISectionTool extends AbstractAMITool {
 	
 	private static final String SUMMARY_HTML = "summary.html";

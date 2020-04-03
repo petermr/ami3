@@ -46,14 +46,12 @@ import picocli.CommandLine.Option;
 
 
 @Command(
-name = "ami-display", 
-aliases = "display",
-version = "ami-display 0.1",
-description = "	Displays files in CTree. Uses HTML to aggregate several files from (say) same imageDir."
+name = "display",
+description = {
+		"Displays files in CTree.",
+		"Uses HTML to aggregate several files from (say) same imageDir."
 		+ "Also creates aggregated links in parent directory."
-		
-)
-
+})
 public class AMIDisplayTool extends AbstractAMITool {
 	private static final String FAIL = "fail";
 

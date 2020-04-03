@@ -19,11 +19,9 @@ import picocli.CommandLine.Option;
  *
  */
 @Command(
-name = "ami-getpapers", 
-version = "ami-getpapers 0.1",
+name = "getpapers",
 description = "Runs getpapers in java environment."
 )
-
 public class AMIGetpapersTool extends AbstractAMITool {
 	private static final Logger LOG = Logger.getLogger(AMIGetpapersTool.class);
 	static {

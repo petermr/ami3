@@ -33,25 +33,19 @@ import org.contentmine.cproject.files.CTree;
 
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
-/**
- * 
+
+/** see org.contentmine.ami.tools.download.AbstractDownloader for mechanism and options
+ *
  * @author pm286
  *
  */
 
 @Command(
-name = "ami-download", 
-aliases = "download",
-version = "ami-download 0.1",
-description = "downloads content from remote site. Maybe a wrapper for getpapers, curl, etc."
-) 
-
-/** see org.contentmine.ami.tools.download.AbstractDownloader for mechanism and options
- * 
- * @author pm286
- *
- */
-
+name = "download",
+description = {
+		"Downloads content from remote site.",
+		"Maybe a wrapper for getpapers, curl, etc."
+})
 public class AMIDownloadTool extends AbstractAMITool {
 
 	private static final Logger LOG = Logger.getLogger(AMIDownloadTool.class);

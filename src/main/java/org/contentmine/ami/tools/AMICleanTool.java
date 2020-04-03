@@ -21,18 +21,16 @@ import picocli.CommandLine.Option;
  *
  */
 @Command(
-name = "ami-clean", 
-aliases = "clean",
-version = "ami-clean 0.1",
-description = "cleans specific files or directories in project, explicitly or by regex %n"
-		+ "	ami-clean -p /Users/pm286/workspace/tigr2ess --dir results cooccurrence%n"
-		+ "    deletes subdirectories results/ and cooccurrence/ in projcts tigr2ess%n"
-		+ " ami-clean -p /Users/pm286/workspace/tigr2ess --file commonest.dataTables.html\\%n"
+name = "clean",
+description = {
+		"Cleans specific files or directories in project.",
+		"Accepts explicit paths or regular expressions.",
+		"${COMMAND-FULL-NAME} -p /Users/pm286/workspace/tigr2ess --dir results cooccurrence%n"
+		+ "    deletes subdirectories results/ and cooccurrence/ in projcts tigr2ess",
+		"${COMMAND-FULL-NAME} -p /Users/pm286/workspace/tigr2ess --file commonest.dataTables.html\\%n"
 		+ "           count.dataTables.html entries.dataTables.html full.dataTables.html%n"
 		+ "    deletes 4 files by name%n"
-
-)
-
+})
 public class AMICleanTool extends AbstractAMITool {
 	private static final Logger LOG = Logger.getLogger(AMICleanTool.class);
 	static {

@@ -32,14 +32,11 @@ import picocli.CommandLine.Option;
 
 
 @Command(
-name = "ami-graphics", 
-aliases = "graphics",
-version = "ami-graphics 0.1",
-description = "	transforms graphics contents (often from PDF/SVG)"
-		+ "much is based on the Cache system"
-		
-)
-
+name = "graphics",
+description = {
+		"Transforms graphics contents (often from PDF/SVG).",
+		"Much is based on the Cache system."
+})
 public class AMIGraphicsTool extends AbstractAMITool {
 	private static final String FULLTEXT_PAGE_SVG_REGEX = ".*/fulltext\\-page\\.\\d+\\.svg";
 

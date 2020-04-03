@@ -26,12 +26,10 @@ import picocli.CommandLine.Option;
  *
  */
 @Command(
-name = "ami-transform", 
-aliases = "transform",
-version = "ami-transform 0.1",
-description = "Runs XSLT transformation on XML (NYFI)."
-)
-
+name = "transform",
+description = {
+		"Runs XSLT transformation on XML (NYFI)."
+})
 public class AMITransformTool extends AbstractAMITool {
 	private static final Logger LOG = Logger.getLogger(AMITransformTool.class);
 	static {

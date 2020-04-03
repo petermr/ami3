@@ -33,19 +33,16 @@ import picocli.CommandLine.Option;
  *
  */
 @Command(
-name = "ami-image", 
-aliases = "image",
-version = "ami-image 0.1",
-description = "FILTERs images (initally from PDFimages), but does not transform the contents."
-		+ " Services include"
-		+ "<ul>  "
-		+ "<li>identification of duplicate images, and removal<.li>"
-		+ "<li>rejection of images less than gven size</li>"
-		+ "<li>rejection of monochrome images (e.g. all white or all black) (NB black and white is 'binary/ized'"
-		+ "</ul>"
-
-)
-
+name = "image-filter",
+description = {
+		"FILTERs images (initally from PDFimages), but does not transform the contents.",
+		" Services include"
+				+ "<ul>  "
+				+ "<li>identification of duplicate images, and removal<.li>"
+				+ "<li>rejection of images less than gven size</li>"
+				+ "<li>rejection of monochrome images (e.g. all white or all black) (NB black and white is 'binary/ized'"
+				+ "</ul>"
+})
 public class AMIImageFilterTool extends AbstractAMITool {
 	private static final Logger LOG = Logger.getLogger(AMIImageFilterTool.class);
 	static {

@@ -50,12 +50,9 @@ import picocli.CommandLine.Option;
  *
  */
 @Command(
-name = "ami-ocr", 
-aliases = "ocr",
-version = "ami-ocr 0.1",
+name = "ocr",
 description = "Extracts text from OCR and (NYI) postprocesses HOCR output to create HTML."
 )
-
 public class AMIOCRTool extends AbstractAMITool implements HasImageDir {
 	public static final String RAW = "raw";
 	public static final String HOCR = "hocr";

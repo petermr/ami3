@@ -17,12 +17,18 @@ import com.google.common.collect.HashMultiset;
 import com.google.common.collect.Multiset;
 
 import nu.xom.Element;
+import picocli.CommandLine;
+import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 /**
  * 
  * @author pm286
  *
  */
+@Command(name = "summary",
+		description = {
+		"Summarizes the specified dictionaries, genes, species and words."
+})
 public class AMISummaryTool extends AbstractAMITool {
 	private static final String SNIPPETS_TREE = "snippetsTree";
 	private static final String SNIPPETS = "snippets";
@@ -85,7 +91,7 @@ public class AMISummaryTool extends AbstractAMITool {
             description = "species to summarize")
     private List<String> speciesList = new ArrayList<>();
     
-    @Option(names = {"--output"},
+    @Option(names = {"--output-types"},
     		arity = "1..*",
             description = "output type/s")
     private List<OutputType> outputTypes = new ArrayList<>();

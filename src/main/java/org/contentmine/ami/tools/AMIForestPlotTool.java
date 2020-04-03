@@ -42,12 +42,11 @@ import picocli.CommandLine.Option;
  *
  */
 @Command(
-name = "ami-forest", 
-aliases = "forest",
-version = "ami-forext 0.1",
-description = "analyzes ForestPlot images; uses template.xml to steer the operations "
-)
-
+name = "forest",
+description = {
+		"Analyzes ForestPlot images.",
+		"Uses template.xml to steer the operations."
+})
 public class AMIForestPlotTool extends AbstractAMITool implements HasImageDir {
 
 	static final Logger LOG = Logger.getLogger(AMIForestPlotTool.class);

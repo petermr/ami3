@@ -28,13 +28,9 @@ import picocli.CommandLine.Option;
 
 
 @Command(
-name = "ami-assert", 
-aliases = "assert",
-version = "ami-assert 0.1",
-description = "	Makes assertions about objects created by AMI. "
-		
+	name = "assert",
+	description = "Makes assertions about objects created by AMI. "
 )
-
 public class AMIAssertTool extends AbstractAMITool {
 
 	private static final Logger LOG = Logger.getLogger(AMIAssertTool.class);
@@ -82,7 +78,7 @@ public class AMIAssertTool extends AbstractAMITool {
     private List<Integer> sizes = new ArrayList<>();
 
     @Option(names = {"--type"},
-    		arity = "1",
+    		required = true,
             description = "type of object to assert")
     private AssertType assertType = null;
 

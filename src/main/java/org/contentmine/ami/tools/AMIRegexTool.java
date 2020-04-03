@@ -70,30 +70,23 @@ import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 
 /** analyses bitmaps
- * 
+ // regex
+ args="location [location ...]"
+ countRange="{1,*}"
+ parseMethod="parseRegex"
+ runMethod="runRegex"
+ outputMethod="outputResultElements"
+ *
  * @author pm286
  *
  */
 @Command(
-name = "ami-regex", 
-aliases = "regex",
-version = "ami-regex 0.1",
-description = "searches with regex, possibly subcommand of search "
-)
-
-/**
-		// regex
-		args="location [location ...]"
-		countRange="{1,*}"
-		parseMethod="parseRegex"
-		runMethod="runRegex"
-		outputMethod="outputResultElements"
- * 
- * @author pm286
- *
- */
+name = "regex",
+description = {
+		"Searches with regex.",
+		//"Possibly subcommand of search."
+})
 public class AMIRegexTool extends AbstractAMISearchTool {
-
 
 	private static final Logger LOG = Logger.getLogger(AMIRegexTool.class);
 	static {
