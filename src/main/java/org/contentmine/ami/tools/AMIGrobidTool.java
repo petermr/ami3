@@ -22,9 +22,9 @@ import picocli.CommandLine.Option;
  *
  */
 @Command(
-name = "ami-bitmap", 
-aliases = "bitmap",
-version = "ami-bitmap 0.1",
+name = "ami-grobid", 
+aliases = "grobid",
+version = "ami-grobid 0.1",
 description = "	Run grobid using:"
 		+ "java -jar /Users/pm286/workspace/grobid/grobid-0.5.3/grobid-core/build/libs/grobid-core-0.5.3-onejar.jar "
 		+ "  -gH /Users/pm286/workspace/grobid/grobid-0.5.3/grobid-home"

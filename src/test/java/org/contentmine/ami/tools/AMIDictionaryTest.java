@@ -16,7 +16,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
-/** tests AMIDictinary
+/** tests AMIDictionary
  * 
  * @author pm286
  *
@@ -51,11 +51,11 @@ public class AMIDictionaryTest extends AbstractAMITest {
 		File directory = new File("/Users/pm286/ContentMine/dictionary/dictionaries/chem");
 		String dictionary = "fungicides2";
 		String args =
-				"create " +
-				" --directory " + directory + " " +
-           " --dictionary " + dictionary +
-           " --outformats html,xml " +
-           " --terms " + ""
+			"create " +
+			" --directory " + directory + " " +
+            " --dictionary " + dictionary +
+            " --outformats html,xml " +
+            " --terms " + ""
            		+ "Abamectin Actinomycin Alexidine Amikacin Amphotericin B Ampicillin"
 //           		+ " Anidulafungin Antimycin Aureobasidin Azithromycin Azoxystrobin Aztreonam"
 //           		+ " Bacitracin Benomyl Benznidazole Bifonazole Bleomycin Boscalid"
@@ -100,16 +100,29 @@ public class AMIDictionaryTest extends AbstractAMITest {
 		
 		String args =
 				"create " +
-				" --directory " + directory + " " +
-           " --dictionary " + dictionary +
-           " --outformats html,xml " +
-           " --termfile " + fungicideFile
+		    " --informat list" +
+		    " --directory " + directory + " " +
+            " --dictionary " + dictionary +
+            " --outformats html,xml " +
+            " --input " + fungicideFile
 				;
 		AMIDictionaryTool.main(args);
 		File dictionaryFile = new File(directory, dictionary+"."+"xml");
 		Assert.assertTrue(""+dictionaryFile, dictionaryFile.exists());
 	}
-	
+
+	@Test
+	public void testTermfileBug() {
+		String args = ""
+				+ "create "
+				+ " --informat list"
+				+ " --input /Users/pm286/projects/open-battery/dictionaries/electrochem.txt"
+				+ " --directory dictionaries/"
+				+ " --dictionary electrochem"
+				+ " --outformats html,xml";
+		AbstractAMITool amiDictionary = new AMIDictionaryTool();
+		amiDictionary.runCommands(args);
+	}
 
 	@Test
 	public void testWikipediaTables() throws IOException {
@@ -598,6 +611,17 @@ public class AMIDictionaryTest extends AbstractAMITest {
 				+ " --informat wikipage"
 //				+ " --hreftext"
 				+ " --dictionary ricevarieties"
+				+ " --outformats xml,json,html";
+		new AMIDictionaryTool().runCommands(args);
+	}
+	
+	public void testCreateFromFileWithListOfTerms() {
+		String args = "create"
+				+ " --input dictionaries/electrochem.txt"
+//				+ " --informat wikipage"
+//				+ " --hreftext"
+				+ " --dictionary electrochem"
+				+ " --directory dictionaries"
 				+ " --outformats xml,json,html";
 		new AMIDictionaryTool().runCommands(args);
 	}

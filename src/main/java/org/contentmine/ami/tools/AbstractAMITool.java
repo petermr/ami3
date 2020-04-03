@@ -794,7 +794,7 @@ public abstract class AbstractAMITool implements Callable<Void> , AbstractTool {
 				} else {
 					File inputFile = new File(input);
 					if (!inputFile.exists()) {
-						throw new RuntimeException("inputFile does not exist: "+inputFile);
+						throw new RuntimeException("inputFile does not exist: "+inputFile.getAbsolutePath());
 					}
 					inputStream = new FileInputStream(inputFile);
 				}

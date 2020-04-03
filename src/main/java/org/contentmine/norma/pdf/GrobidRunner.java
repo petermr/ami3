@@ -118,7 +118,7 @@ java
 		this.option = exeOption == null ? null :exeOption.option;
 	}
 	
-    /** converts Image to HOCR.
+    /** converts PDF to Html.
      * relies on Grobid.
      * 
      * @param inputDir

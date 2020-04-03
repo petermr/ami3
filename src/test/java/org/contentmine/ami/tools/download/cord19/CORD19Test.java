@@ -2,17 +2,23 @@ package org.contentmine.ami.tools.download.cord19;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.util.Map.Entry;
+import java.util.Set;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.AbstractAMITest;
+import org.contentmine.eucl.xml.XMLUtil;
+import org.contentmine.graphics.html.HtmlElement;
+import org.junit.Assert;
 import org.junit.Test;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+
 
 
 /**
@@ -120,37 +126,75 @@ public class CORD19Test extends AbstractAMITest {
 	public void testReadJSON() {
 		 
 		File jsonFile = new File(BIORXIV_MEDRXIV, "b801b7f92cff2155d98f0e3404229c67b60e2f9f.json");
-		JsonObject oo = null;
+		JsonObject rootObject = null;
 		try {
 			String resultsJsonString = IOUtils.toString(new FileInputStream(jsonFile), "UTF-8");
 		    JsonParser parser = new JsonParser();
-		    oo = (JsonObject) parser.parse(resultsJsonString);
-		    
+		    rootObject = (JsonObject) parser.parse(resultsJsonString);
 		} catch (Exception e) {
 			throw new RuntimeException("Cannot read CORD19 file: "+jsonFile, e);
 		}
+		JsonObject oo = rootObject;
 		
-//		JsonObject response = (JsonObject) hgncJson.get("response");
-//		int numTerms = response.get("numFound").getAsInt();
-//		JsonArray docs = response.get("docs").getAsJsonArray();
-//		createIds(docs, numTerms);
-		
-	    
 	    String paperId = oo.get("paper_id").getAsString();
 	    System.out.println("id: "+paperId);
+	    
 	    JsonElement metadata = oo.get("metadata");
 	    JsonObject metadataObject = metadata.getAsJsonObject();
   	    String title = metadataObject.get("title").getAsString();
 	    System.out.println("title: "+title);
-  	    JsonArray authors = metadataObject.get("authors").getAsJsonArray();
-	    System.out.println("authors: "+authors);
-  	    JsonElement abstrakt = metadataObject.get("abstract");
+	    
+  	    JsonElement authorsObject = metadataObject.get("authors");
+  	    System.out.println("Auth: "+authorsObject);
+  	    JsonArray authors = authorsObject.getAsJsonArray();
+  	    for (int i = 0; i < authors.size(); i++) {
+  	    	System.out.println(authors.get(i));
+  	    }
+  	    
+  	    JsonElement abstrakt = oo.get("abstract");
 	    System.out.println("abstract: "+abstrakt);
-  	    JsonElement bodyText = metadataObject.get("body_text");
+  	    JsonArray texts = abstrakt.getAsJsonArray();
+  	    for (int i = 0; i < texts.size(); i++) {
+  	    	System.out.println(texts.get(i));
+  	    }
+	    
+  	    JsonElement bodyText = oo.get("body_text");
 	    System.out.println("bodyText: "+bodyText);
-  	    JsonElement boo = metadataObject.get("boo");
-	    System.out.println("bodyText: "+boo);
+  	    texts = bodyText.getAsJsonArray();
+  	    for (int i = 0; i < texts.size(); i++) {
+  	    	System.out.println(texts.get(i));
+  	    }
 
+  	    JsonElement bibEntries = oo.get("bib_entries");
+	    System.out.println("bibEntries: "+bibEntries.getClass()+bibEntries);
+        JsonObject obj = bibEntries.getAsJsonObject();
+        Set<Entry<String, JsonElement>> entrySet = obj.entrySet();
+        for (Entry<String, JsonElement> entry : entrySet) {
+        	System.out.println(entry.getKey() + "/" + entry.getValue());
+        }
+        Assert.assertEquals("size", 48, entrySet.size());
+        
 	}
-	 
+
+	@Test
+	public void testCORDtoHTML() {
+		JsonObject rootObject = readTestDoc();
+		CORD19Parser parser = new CORD19Parser();
+		HtmlElement html = parser.parse(rootObject);
+		XMLUtil.writeQuietly(html, new File("target/cord19/test1.html"), 1);
+	}
+
+	private JsonObject readTestDoc() {
+		File jsonFile = new File(BIORXIV_MEDRXIV, "b801b7f92cff2155d98f0e3404229c67b60e2f9f.json");
+		JsonObject rootObject = null;
+		try {
+			String resultsJsonString = IOUtils.toString(new FileInputStream(jsonFile), "UTF-8");
+		    JsonParser parser = new JsonParser();
+		    rootObject = (JsonObject) parser.parse(resultsJsonString);
+		} catch (Exception e) {
+			throw new RuntimeException("Cannot read CORD19 file: "+jsonFile, e);
+		}
+		return rootObject;
+	}
+
 }

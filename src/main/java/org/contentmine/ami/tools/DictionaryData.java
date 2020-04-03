@@ -29,7 +29,7 @@ class DictionaryData {
     DictionaryFileFormat[]  outformats;
     String                  splitCol=",";
 	String                  termCol;
-    String[]                terms;
+    List<String>            terms;
 	WikiLink[]              wikiLinks;
 
 }

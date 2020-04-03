@@ -178,6 +178,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 	
 	public enum InputFormat {
 		csv,
+		list,
 		mediawikitemplate,
 		wikicategory,
 		wikipage,
@@ -329,7 +330,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
     		arity="1..*",
     		split=",",
     		description = "list of terms (entries), comma-separated")
-    private String[] terms;
+    private List<String> terms;
 
     @Option(names = {"--termfile"}, 
     		arity="1",
@@ -626,8 +627,15 @@ public class AMIDictionaryTool extends AbstractAMITool {
 	}
 
 	private void createDictionary() {
+		if (dictionaryTopname == null) {
+			throw new RuntimeException("no directory given");
+		}
+		if (input == null) {
+			throw new RuntimeException("no input given");
+		}
 		File fileroot = new File(dictionaryTopname, input);
-		dictionaryTopname = new File(fileroot, wptype.toString()).toString();
+		dictionaryTopname = dictionaryTopname == null ?
+				new File(fileroot, wptype.toString()).toString() : dictionaryTopname;
 		InputStream inputStream = openInputStream();
 		if (inputStream == null) {
 			System.err.println("NO INPUT STREAM, check HTTP connection/target or file existence");
@@ -642,6 +650,8 @@ public class AMIDictionaryTool extends AbstractAMITool {
     			return;
     		} else if (InputFormat.csv.equals(informat)) {
     			readCSV(inputStream);
+    		} else if (InputFormat.list.equals(informat)) {
+    			readList(inputStream);
     		} else if (InputFormat.mediawikitemplate.equals(informat) ||
     				InputFormat.wikicategory.equals(informat) ||
     				InputFormat.wikipage.equals(informat) ||
@@ -655,25 +665,25 @@ public class AMIDictionaryTool extends AbstractAMITool {
     			return;
     		}
     	} else {
-    		if (termfile != null) {
-    			if (!termfile.exists()) {
-    				throw new RuntimeException("termfile does not exist: "+termfile);
-    			}
-    			try {
-					terms = FileUtils.readLines(termfile, "UTF-8").toArray(new String[0]);
-				} catch (IOException e) {
-					throw new RuntimeException("cannot read termfile: "+termfile, e);
-				}
-    		}
-    		if (terms != null) {
-    			createSortedTermList();
-    		}
+    		
     	}
     	synchroniseTermsAndNames();
     	dictionaryElement = DefaultAMIDictionary.createDictionaryWithTitle(/*dictionaryList.get(0)*/input);
     	
     	writeNamesAndLinks();
 		
+	}
+
+	private void readList(InputStream inputStream) {
+		try {
+			terms = IOUtils.readLines(inputStream, "UTF-8");
+		} catch (IOException e) {
+			throw new RuntimeException("cannot read termfile: "+termfile, e);
+		}
+		if (terms == null) {
+			throw new RuntimeException("Could not read terms");
+		}
+		createSortedTermList();
 	}
 
 	private void createSortedTermList() {
@@ -1060,15 +1070,15 @@ public class AMIDictionaryTool extends AbstractAMITool {
 		if (dictionaryTop == null) {
 			throw new RuntimeException("must give directory for dictionaries");
 		}
-		if (outformats != null/* && dictionaryList != null*/) {
-			String dictionaryName = createDictionaryName(currentTemplateName);
+		if (outformats != null) {
+			
+			String dictionaryName = dictionaryList != null && dictionaryList.size() == 1 ? dictionaryList.get(0) :
+				currentTemplateName != null ? createDictionaryName(currentTemplateName) : null;
+			if (dictionaryName == null) {
+				throw new RuntimeException("cannot create dictionaryName");
+			}
 			System.err.println(">> "+dictionaryName);
 			writeDictionary(dictionaryName);
-//			for (String dictionary : dictionaryList) {
-//				writeDictionary(dictionary);
-//			}
-//		} else {
-//			LOG.warn("no dictionary written");
 		}
 	}
 
@@ -1079,7 +1089,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 			List<DictionaryFileFormat> outformatList = Arrays.asList(outformats);
 			for (DictionaryFileFormat outformat : outformatList) {
 				File outfile = getOrCreateDictionary(subDirectory, dictionary, outformat);
-				System.out.println("writing dictionary to "+outfile);
+				System.out.println("writing dictionary to "+outfile.getAbsolutePath());
 				try {
 					outputDictionary(outfile, outformat);
 				} catch (IOException e) {
