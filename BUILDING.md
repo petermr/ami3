@@ -1,6 +1,8 @@
 # building
 
-`normami` requires Maven to build. It relies on a parent POM which should be used to edit resources uniformly (e.g. Java version, maven plugins, etc.). It has `cephis` as a dependency - if `cephis` is edited it must be recompiled and installed and then `normami` must be re-installed
+`normami` requires Maven to build.
+It relies on a parent POM which should be used to edit resources uniformly (e.g. Java version, maven plugins, etc.).
+It has `cephis` as a dependency - if `cephis` is edited it must be recompiled and installed and then `normami` must be re-installed
 
 ## POM file
 The POM file depends on a parent. 
