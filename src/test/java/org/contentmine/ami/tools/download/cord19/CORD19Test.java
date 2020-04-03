@@ -22,6 +22,7 @@ import com.google.gson.JsonParser;
 
 
 /**
+ * Tests parsing of CORD-19 dataset (bibliographic)
 # JSON schema of full text documents
 
 
