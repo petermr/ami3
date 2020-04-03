@@ -78,7 +78,7 @@ public class AMIAssertTool extends AbstractAMITool {
     private List<Integer> sizes = new ArrayList<>();
 
     @Option(names = {"--type"},
-    		arity = "1",
+    		required = true,
             description = "type of object to assert")
     private AssertType assertType = null;
 
