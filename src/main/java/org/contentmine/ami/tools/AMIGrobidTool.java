@@ -22,9 +22,7 @@ import picocli.CommandLine.Option;
  *
  */
 @Command(
-name = "ami-grobid", 
-aliases = "grobid",
-version = "ami-grobid 0.1",
+name = "grobid",
 description = {
 		"Runs grobid.",
 		"Internally, this uses:%n"
