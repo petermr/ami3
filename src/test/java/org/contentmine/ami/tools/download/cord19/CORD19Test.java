@@ -1,6 +1,7 @@
 package org.contentmine.ami.tools.download.cord19;
 
 import java.io.File;
+
 import java.io.FileInputStream;
 import java.util.Map.Entry;
 import java.util.Set;
@@ -13,6 +14,8 @@ import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlElement;
 import org.junit.Assert;
 import org.junit.Test;
+
+import 
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -180,8 +183,7 @@ public class CORD19Test extends AbstractAMITest {
 	@Test
 	public void testCORDtoHTML() {
 		JsonObject rootObject = readTestDoc();
-		org.contentmine.ami.tools.download.cord19.CORD19Parser parser =
-				new org.contentmine.ami.tools.download.cord19.CORD19Parser();
+		CORD19Parser parser = new CORD19Parser();
 		HtmlElement html = parser.parse(rootObject);
 		XMLUtil.writeQuietly(html, new File("target/cord19/test1.html"), 1);
 	}
