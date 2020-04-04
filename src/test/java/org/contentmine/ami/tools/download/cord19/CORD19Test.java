@@ -15,8 +15,6 @@ import org.contentmine.graphics.html.HtmlElement;
 import org.junit.Assert;
 import org.junit.Test;
 
-import 
-
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
