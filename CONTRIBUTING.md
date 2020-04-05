@@ -1,8 +1,8 @@
-# Contributing to norma
+# Contributing to ami
 
 Thank you for taking the time to contribute! :+1:
 
-This is a set of guidelines for contributing to norma. You don't need to follow them as strict rules, use your best judgement and feel free to propose changes to this document as well via a pull request.
+This is a set of guidelines for contributing to ami. You don't need to follow them as strict rules, use your best judgement and feel free to propose changes to this document as well via a pull request.
 
 #### Table of Contents
 
@@ -14,7 +14,7 @@ This is a set of guidelines for contributing to norma. You don't need to follow 
 
 ## Basics
 
-norma is built in Java. If you want an introduction on how to work on a project like this, you can find a beginners tutorial [here](https://www.codecademy.com/learn/learn-java).
+ami is built in Java. If you want an introduction on how to work on a project like this, you can find a beginners tutorial [here](https://www.codecademy.com/learn/learn-java).
 
 ## How can I contribute?
 
