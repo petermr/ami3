@@ -1,8 +1,7 @@
 # building
 
-`normami` requires Maven to build.
+`ami` requires Maven to build.
 It relies on a parent POM which should be used to edit resources uniformly (e.g. Java version, maven plugins, etc.).
-It has `cephis` as a dependency - if `cephis` is edited it must be recompiled and installed and then `normami` must be re-installed
 
 ## POM file
 The POM file depends on a parent. 
@@ -26,7 +25,7 @@ There are many main class entry points - the pom will show those mapped onto com
 ### appassembler
 This generates platform-independent scripts (UNIX, MACOSX, Windows) which run the different functions. The scripts are initially located in
 ```
-some/where/normami/target/appassembler/bin
+some/where/ami3/target/appassembler/bin
 ```
 and you probably want to copy them to your library directories.
 
@@ -61,19 +60,30 @@ Currently all versions are `SNAPSHOTS` and treated a such by Maven.
 
 ## full build
 
-Make sure `cephis` is sync'ed with the git repo, rebuilt and reinstalled.
+Make sure `ami3` is sync'ed with the git repo, rebuilt and reinstalled.
 
-This will clean, build, test and install `normami` in your personal `.m2` repository.
+The following command will clean, build, and install `org.contentmine:ami3` in your personal `.m2` repository.
 ```
-mvn clean install
+mvn clean install -DskipTests
 ```
-This takes 1-2 inutes as no test is greater than 5 secs.
-It does not run the Integration tests. For that we have
+
+## tests
+NOTE: Tests are a work in progress. 
+
+Tests are separated in unit tests and integration tests.
+Integration tests have names that end in `IT` and are run during a different Maven build phase:
+
+* Unit tests are run by the Maven Surefire plugin during the `test` phase (so included when you run `mvn package`) and failing unit tests fail the build.
+* Integration tests are run by the Maven Failsafe plugin during the `integration-test` and `verify` phases of the build, so included when you run `mvn verify`, or `mvn install`. Failing integration tests will not fail the build.
+
+There is a switch `skipITs` to disable the integration tests, but it is currently disabled:
 
 ```
+# currently does not work
 mvn clean install -DskipITs=false
 ```
-if you wish to skip the tests run:
+
+Finally, if you wish to skip compiling the tests, run:
 ```
 mvn install -Dmaven.test.skip=true
 ```

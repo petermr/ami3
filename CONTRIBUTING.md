@@ -43,7 +43,7 @@ Before creating a pull request, please raise an issue to discuss the proposed ch
 
 ## Local testing
 
-In order to set up your development environment for norma, you need a recent verion of [Java](https://www.java.com/) (at least 1.7), and [Maven 3](https://maven.apache.org/download.cgi).
+In order to set up your development environment for ami, you need a recent verion of [Java](https://www.java.com/) (at least 1.8), and [Maven 3](https://maven.apache.org/download.cgi).
 
 1. Create a fork on [github](https://help.github.com/articles/fork-a-repo/).
 1. Create a [new branch](https://www.atlassian.com/git/tutorials/using-branches/git-checkout) with a descriptive name.
