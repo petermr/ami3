@@ -55,7 +55,7 @@ public class AMIDownloadTest extends AbstractAMITest {
 	public void testBiorxivSmall() throws Exception {
 		
 		File target = new File("target/biorxiv1");
-		FileUtils.deleteDirectory(target);
+		if (target.exists()) {FileUtils.deleteDirectory(target);}
 		MatcherAssert.assertThat(target+" does not exist", !target.exists());
 		String args = 
 				"-p " + target
@@ -63,12 +63,12 @@ public class AMIDownloadTest extends AbstractAMITest {
 				+ " --query coronavirus" // the query
 				+ " --pagesize 1" // size of remote pages (may not always work)
 				+ " --pages 1 1" // number of pages
+				+ " --fulltext pdf html"
 				+ " --resultset raw clean"
-				+ " --landingpage "
-				+ " --fulltext html pdf"
 //				+ " --limit 500"  // total number of downloaded results
 			;
 		new AMIDownloadTool().runCommands(args);
+		Assert.assertTrue("target exists", target.exists());
 		// check for reserved and non-reserved child files
 		long fileCount0 = Files.walk(target.toPath(), AbstractMetadata.CPROJECT_DEPTH)
 				.sorted()

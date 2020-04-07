@@ -2,10 +2,10 @@
 
 # run from ami3
 
-VERSION=ami2020315
+VERSION=ami20200406
 PROGRAM=ami3
-# AMIJARS=ami-jars1
-AMIJARS=ami-jars
+ AMIJARS=ami-jars2
+# AMIJARS=ami-jars
 DIR=../${AMIJARS}/${VERSION}/
 mkdir ${DIR}
 cp -R target/appassembler/bin ${DIR}/bin

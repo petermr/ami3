@@ -136,9 +136,15 @@ public class TxtReaderTest {
 	}
 
 	private AnnotatedLineContainer createAnnotatedLineContainer(File file) throws IOException {
-		List<String> lines = FileUtils.readLines(file);
 		AnnotatedLineContainer annotatedLineContainer = new AnnotatedLineContainer();
-		annotatedLineContainer.addLines(lines);
+		if (file == null) {
+			LOG.warn("null input");
+		} else if (!file.exists()) {
+			LOG.warn("cannot find file");
+		} else {
+			List<String> lines = FileUtils.readLines(file);
+			annotatedLineContainer.addLines(lines);
+		}
 		return annotatedLineContainer;
 	}
 

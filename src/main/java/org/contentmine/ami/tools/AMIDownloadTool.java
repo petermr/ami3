@@ -129,11 +129,23 @@ public class AMIDownloadTool extends AbstractAMITool {
 		clean
 	}
 
-    @Option(names = {"--landingpage"},
-    		arity = "1",
-            description = "")
-    private String landingPage;
+	public enum FulltextFormat {
+		html,
+		pdf,
+		suppinfo,
+		xml,
+	}
 
+    @Option(names = {"--fulltext"},
+    		arity = "1..*",
+            description = "fulltext content (can include Supplemental Info")
+    private List<FulltextFormat> fulltextFormats = null;
+
+//    @Option(names = {"--landingpage"},
+//    		arity = "1",
+//            description = "")
+//    private String landingPage;
+//
     @Option(names = {"--limit"},
     		arity = "1",
             description = "max hits to download (default 200), set to (pages * pagesize) if both set ")
@@ -218,7 +230,8 @@ public class AMIDownloadTool extends AbstractAMITool {
 			limit = pageList.size() * pagesize;
 		}
 		normalizePageList();
-		System.out.println("landingPage        " + landingPage);
+//		System.out.println("landingPage        " + landingPage);
+		System.out.println("fulltext           " + fulltextFormats);
 		System.out.println("limit              " + limit);
 		System.out.println("metadata           " + metadata);
 		System.out.println("pages              " + pageList);
