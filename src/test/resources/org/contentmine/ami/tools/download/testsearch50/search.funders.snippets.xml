@@ -66,7 +66,7 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_043729v1/results/search/funders/results.xml">
-   <result pre="University of Oslo, PO Box 1066 Blindern, N-0316 Oslo, Norway." exact="Natural History Museum," post="University of Oslo, PO Box 1172 Blindern, N-0318 Oslo,"/>
+   <result pre="of Oslo, PO Box 1066 Blindern, N-0316 Oslo, Norway. 3" exact="Natural History Museum," post="University of Oslo, PO Box 1172 Blindern, N-0318 Oslo,"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Paleontology Subject Areas"/>
    <result pre="Ocean Drilling Program (IODP). IODP is sponsored by the U.S." exact="National Science Foundation" post="(NSF) and participating countries under the management of Joint"/>
    <result pre="Commonness and rarity in the marine biosphere. Proceedings of the" exact="National Academy of Sciences" post="111, 8524– 8529 ( 2014). OpenUrl Abstract / FREE"/>
@@ -77,12 +77,12 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_062646v1/results/search/funders/results.xml">
-   <result pre="D. Thomas doi: https://doi.org/10.1101/062646 Christopher J. Wheatley Department of Biology," exact="University of York," post="York, YO10 5DD Find this author on Google Scholar"/>
-   <result pre="author on this site Colin M. Beale Department of Biology," exact="University of York," post="York, YO10 5DD Find this author on Google Scholar"/>
-   <result pre="Street, Cambridge, CB2 3QZ Conservation Science Group, Department of Zoology," exact="University of Cambridge," post="Downing Street, Cambridge CB2 3EJ, UK Find this author"/>
-   <result pre="site James W. Pearce-Higgins Conservation Science Group, Department of Zoology," exact="University of Cambridge," post="Downing Street, Cambridge CB2 3EJ, UK BTO, The Nunnery,"/>
-   <result pre="this author on this site Rob Critchlow Department of Biology," exact="University of York," post="York, YO10 5DD Find this author on Google Scholar"/>
-   <result pre="author on this site Chris D. Thomas Department of Biology," exact="University of York," post="York, YO10 5DD Find this author on Google Scholar"/>
+   <result pre="Thomas doi: https://doi.org/10.1101/062646 Christopher J. Wheatley 1 Department of Biology," exact="University of York," post="York, YO10 5DD Find this author on Google Scholar"/>
+   <result pre="on this site Colin M. Beale 1 Department of Biology," exact="University of York," post="York, YO10 5DD Find this author on Google Scholar"/>
+   <result pre="Cambridge, CB2 3QZ 4 Conservation Science Group, Department of Zoology," exact="University of Cambridge," post="Downing Street, Cambridge CB2 3EJ, UK Find this author"/>
+   <result pre="James W. Pearce-Higgins 4 Conservation Science Group, Department of Zoology," exact="University of Cambridge," post="Downing Street, Cambridge CB2 3EJ, UK 5 BTO, The"/>
+   <result pre="author on this site Rob Critchlow 1 Department of Biology," exact="University of York," post="York, YO10 5DD Find this author on Google Scholar"/>
+   <result pre="on this site Chris D. Thomas 1 Department of Biology," exact="University of York," post="York, YO10 5DD Find this author on Google Scholar"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
    <result pre="species in England as a result of climate change. (" exact="Natural England," post="2015). ↵ Young, B. E. et al. in Wildlife"/>
    <result pre=", &amp;amp;; D.F. Doak ) Ch. 7, 129– 150 (" exact="University of Chicago" post="Press, 2012). OpenUrl ↵ Moyle, P. B. , Kiernan,"/>
@@ -100,13 +100,13 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_066696v3/results/search/funders/results.xml">
-   <result pre="doi: https://doi.org/10.1101/066696 Thomas Mattern Department of Zoology, PO Box 56," exact="University of Otago," post="Dunedin, New Zealand Department of Ecology, Environment and Evolution,"/>
-   <result pre="Otago, Dunedin, New Zealand Department of Ecology, Environment and Evolution," exact="La Trobe University," post="Melbourne, Australia Find this author on Google Scholar Find"/>
-   <result pre="correspondence: t.mattern@eudyptes.net Stefan Meyer Department of Zoology, PO Box 56," exact="University of Otago," post="Dunedin, New Zealand Find this author on Google Scholar"/>
-   <result pre="this site Ursula Ellenberg Department of Ecology, Environment and Evolution," exact="La Trobe University," post="Melbourne, Australia Find this author on Google Scholar Find"/>
-   <result pre="this site Melanie Young Department of Zoology, PO Box 56," exact="University of Otago," post="Dunedin, New Zealand Find this author on Google Scholar"/>
-   <result pre="site Yolanda van Heezik Department of Zoology, PO Box 56," exact="University of Otago," post="Dunedin, New Zealand Find this author on Google Scholar"/>
-   <result pre="site Philip J. Seddon Department of Zoology, PO Box 56," exact="University of Otago," post="Dunedin, New Zealand Find this author on Google Scholar"/>
+   <result pre="https://doi.org/10.1101/066696 Thomas Mattern 1 Department of Zoology, PO Box 56," exact="University of Otago," post="Dunedin, New Zealand 2 Department of Ecology, Environment and"/>
+   <result pre="Dunedin, New Zealand 2 Department of Ecology, Environment and Evolution," exact="La Trobe University," post="Melbourne, Australia Find this author on Google Scholar Find"/>
+   <result pre="t.mattern@eudyptes.net Stefan Meyer 1 Department of Zoology, PO Box 56," exact="University of Otago," post="Dunedin, New Zealand Find this author on Google Scholar"/>
+   <result pre="site Ursula Ellenberg 2 Department of Ecology, Environment and Evolution," exact="La Trobe University," post="Melbourne, Australia Find this author on Google Scholar Find"/>
+   <result pre="site Melanie Young 1 Department of Zoology, PO Box 56," exact="University of Otago," post="Dunedin, New Zealand Find this author on Google Scholar"/>
+   <result pre="Yolanda van Heezik 1 Department of Zoology, PO Box 56," exact="University of Otago," post="Dunedin, New Zealand Find this author on Google Scholar"/>
+   <result pre="Philip J. Seddon 1 Department of Zoology, PO Box 56," exact="University of Otago," post="Dunedin, New Zealand Find this author on Google Scholar"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Zoology Subject Areas"/>
    <result pre="of penguins in southern New Zealand. Proceedings. Biological sciences/ The" exact="Royal Society" post="276: 815– 821. OpenUrl ↵ Browne T. , Lalas"/>
    <result pre="PD eds. Penguins: Natural History and Conservation. Seattle &amp;amp;; London:" exact="University of Washington" post="Press, 304– 319. ↵ Darby JT. 1985. The great"/>
@@ -118,18 +118,18 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_075598v2/results/search/funders/results.xml">
-   <result pre="Robertson doi: https://doi.org/10.1101/075598 S. K. Hamilton W.K. Kellogg Biological Station," exact="Michigan State University," post="Hickory Corners, MI 49060 Great Lakes Bioenergy Research Center,"/>
-   <result pre="University, Hickory Corners, MI 49060 Great Lakes Bioenergy Research Center," exact="Michigan State University," post="East Lansing, MI 48824 Department of Integrative Biology, Michigan"/>
-   <result pre="State University, East Lansing, MI 48824 Department of Integrative Biology," exact="Michigan State University," post="East Lansing, MI 48824 Find this author on Google"/>
-   <result pre="For correspondence: hamilton@msu.edu M. Z. Hussain W.K. Kellogg Biological Station," exact="Michigan State University," post="Hickory Corners, MI 49060 Great Lakes Bioenergy Research Center,"/>
-   <result pre="University, Hickory Corners, MI 49060 Great Lakes Bioenergy Research Center," exact="Michigan State University," post="East Lansing, MI 48824 Find this author on Google"/>
-   <result pre="on this site C. Lowrie Great Lakes Bioenergy Research Center," exact="Michigan State University," post="East Lansing, MI 48824 Department of Mathematics, Michigan State"/>
-   <result pre="Michigan State University, East Lansing, MI 48824 Department of Mathematics," exact="Michigan State University," post="East Lansing, MI 48824 Find this author on Google"/>
-   <result pre="author on this site B. Basso W.K. Kellogg Biological Station," exact="Michigan State University," post="Hickory Corners, MI 49060 Department of Earth and Environmental"/>
-   <result pre="Hickory Corners, MI 49060 Department of Earth and Environmental Sciences," exact="Michigan State University," post="East Lansing, MI 48824 Find this author on Google"/>
-   <result pre="on this site G. P. Robertson W.K. Kellogg Biological Station," exact="Michigan State University," post="Hickory Corners, MI 49060 Great Lakes Bioenergy Research Center,"/>
-   <result pre="University, Hickory Corners, MI 49060 Great Lakes Bioenergy Research Center," exact="Michigan State University," post="East Lansing, MI 48824 Department of Plant, Soil, and"/>
-   <result pre="Lansing, MI 48824 Department of Plant, Soil, and Microbial Sciences," exact="Michigan State University," post="East Lansing, MI 48824 Find this author on Google"/>
+   <result pre="doi: https://doi.org/10.1101/075598 S. K. Hamilton a W.K. Kellogg Biological Station," exact="Michigan State University," post="Hickory Corners, MI 49060 b Great Lakes Bioenergy Research"/>
+   <result pre="Hickory Corners, MI 49060 b Great Lakes Bioenergy Research Center," exact="Michigan State University," post="East Lansing, MI 48824 c Department of Integrative Biology,"/>
+   <result pre="University, East Lansing, MI 48824 c Department of Integrative Biology," exact="Michigan State University," post="East Lansing, MI 48824 Find this author on Google"/>
+   <result pre="correspondence: hamilton@msu.edu M. Z. Hussain a W.K. Kellogg Biological Station," exact="Michigan State University," post="Hickory Corners, MI 49060 b Great Lakes Bioenergy Research"/>
+   <result pre="Hickory Corners, MI 49060 b Great Lakes Bioenergy Research Center," exact="Michigan State University," post="East Lansing, MI 48824 Find this author on Google"/>
+   <result pre="this site C. Lowrie b Great Lakes Bioenergy Research Center," exact="Michigan State University," post="East Lansing, MI 48824 d Department of Mathematics, Michigan"/>
+   <result pre="State University, East Lansing, MI 48824 d Department of Mathematics," exact="Michigan State University," post="East Lansing, MI 48824 Find this author on Google"/>
+   <result pre="on this site B. Basso a W.K. Kellogg Biological Station," exact="Michigan State University," post="Hickory Corners, MI 49060 e Department of Earth and"/>
+   <result pre="Corners, MI 49060 e Department of Earth and Environmental Sciences," exact="Michigan State University," post="East Lansing, MI 48824 Find this author on Google"/>
+   <result pre="this site G. P. Robertson a W.K. Kellogg Biological Station," exact="Michigan State University," post="Hickory Corners, MI 49060 b Great Lakes Bioenergy Research"/>
+   <result pre="Hickory Corners, MI 49060 b Great Lakes Bioenergy Research Center," exact="Michigan State University," post="East Lansing, MI 48824 f Department of Plant, Soil,"/>
+   <result pre="MI 48824 f Department of Plant, Soil, and Microbial Sciences," exact="Michigan State University," post="East Lansing, MI 48824 Find this author on Google"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
    <result pre="and National Weather Service stations, and the numerous people at" exact="Michigan State University" post="and the U.S. Geological Survey who helped maintain the"/>
    <result pre="and the numerous people at Michigan State University and the" exact="U.S. Geological Survey" post="who helped maintain the precipitation and stream discharge records"/>
@@ -146,8 +146,8 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_091686v1/results/search/funders/results.xml">
-   <result pre="this site Marie-Josée Fortin Dept. of Ecology and Evolutionary Biology," exact="University of Toronto," post="Toronto, ON M5S 3G5, Canada Find this author on"/>
-   <result pre="Picó Departamento de Ecología Integrativa, Estación Biológica de Doñana (EBD)," exact="Consejo Superior de Investigaciones Científicas" post="(CSIC), Sevilla, Spain Find this author on Google Scholar"/>
+   <result pre="site Marie-Josée Fortin c Dept. of Ecology and Evolutionary Biology," exact="University of Toronto," post="Toronto, ON M5S 3G5, Canada Find this author on"/>
+   <result pre="d Departamento de Ecología Integrativa, Estación Biológica de Doñana (EBD)," exact="Consejo Superior de Investigaciones Científicas" post="(CSIC), Sevilla, Spain Find this author on Google Scholar"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
    <result pre="the European 7FP. F.X.P. and A.M. were partially supported by" exact="Ministerio de Economía y Competitividad" post="of Spain (CGL2012-33220/) and the Agency for Management of"/>
    <result pre="Agency for Management of University and Research Grants of the" exact="Generalitat de Catalunya" post="(2014-SGR-913). F.X.P. acknowledges the Severo Ochoa Programme for Centres"/>
@@ -168,14 +168,31 @@
   </snippets>
  </snippetsTree>
  <snippetsTree>
+  <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_149617v4/results/search/funders/results.xml">
+   <result pre="https://doi.org/10.1101/149617 Joaquín Calatayud 1 Departamento de Ciencias de la Vida," exact="Universidad de Alcalá," post="Edificio de Ciencias, Ctra. Madrid-Barcelona km. 33,6, 28871 Alcalá"/>
+   <result pre="Miguel Ángel Rodríguez 1 Departamento de Ciencias de la Vida," exact="Universidad de Alcalá," post="Edificio de Ciencias, Ctra. Madrid-Barcelona km. 33,6, 28871 Alcalá"/>
+   <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
+   <result pre="members. JC was supported by a FPU-fellowship of the Spanish" exact="Ministry of Education" post="(FPU12/00575). This work is partly supported by the Spanish"/>
+   <result pre="Education (FPU12/00575). This work is partly supported by the Spanish" exact="Ministry of Economy," post="Industry and Competitiveness (MINECO) project SCARPO (CGL2011-29317) to JC"/>
+   <result pre="durations and Pleistocene effects on vertebrate phylogeography. Proceedings of the" exact="Royal Society" post="of London B: Biological Sciences 265: 1707– 1712. OpenUrl"/>
+   <result pre="shape the resource use of plant parasites. Proceedings of the" exact="National Academy of Sciences" post="USA 113: 9840– 9845. OpenUrl Abstract / FREE Full"/>
+   <result pre="linking phylogenetic community ecology with macroecology. Philosophical Transactions of the" exact="Royal Society" post="of London B 366: 2545– 2553. OpenUrl CrossRef PubMed"/>
+   <result pre="Global mosaics of the standard MODIS land cover type data." exact="University of Maryland" post="and the Pacific Northwest National Laboratory, College Park, Maryland,"/>
+   <result pre="Hutchinson’s duality: the once and future niche. Proceedings of the" exact="National Academy of Sciences" post="USA 106: 19651– 19658. OpenUrl Abstract / FREE Full"/>
+   <result pre="BioGeography with Bayesian (and Likelihood) Evolutionary Analysis in R Scripts." exact="University of California," post="Berkeley, Berkeley, CA. http://CRAN.R-project.org/package=BioGeoBEARS. 49. ↵ Matzke, N. J."/>
+   <result pre="to forest birds of eastern North America. Proceedings of the" exact="National Academy of Sciences" post="USA 108: 2300– 2305. OpenUrl Abstract / FREE Full"/>
+   <result pre="Region effects influence local tree species diversity. Proceedings of the" exact="National Academy of Sciences" post="USA 113: 674– 679. OpenUrl Abstract / FREE Full"/>
+  </snippets>
+ </snippetsTree>
+ <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_156026v2/results/search/funders/results.xml">
-   <result pre="Sinervo , Anthony I. Dell doi: https://doi.org/10.1101/156026 Jason R Rohr" exact="University of South Florida," post="Department of Integrative Biology, Tampa, FL 33620, USA. Find"/>
-   <result pre="Search for this author on this site David J. Civitello" exact="University of South Florida," post="Department of Integrative Biology, Tampa, FL 33620, USA. Emory"/>
-   <result pre="South Florida, Department of Integrative Biology, Tampa, FL 33620, USA." exact="Emory University," post="Department of Biology, Atlanta, GA 30322 Find this author"/>
-   <result pre="Search for this author on this site Jeremy M. Cohen" exact="University of South Florida," post="Department of Integrative Biology, Tampa, FL 33620, USA. Find"/>
-   <result pre="Search for this author on this site Elizabeth A. Roznik" exact="University of South Florida," post="Department of Integrative Biology, Tampa, FL 33620, USA. Find"/>
-   <result pre="PubMed Search for this author on this site Barry Sinervo" exact="University of California" post="at Santa Cruz, Department of Ecology and Evolutionary Biology,"/>
-   <result pre="and Education Centre (NGRREC), Alton, IL, USA. Department of Biology," exact="Washington University in St. Louis," post="St. Louis, MO, USA. Find this author on Google"/>
+   <result pre=", Anthony I. Dell doi: https://doi.org/10.1101/156026 Jason R Rohr *" exact="University of South Florida," post="Department of Integrative Biology, Tampa, FL 33620, USA. Find"/>
+   <result pre="for this author on this site David J. Civitello *" exact="University of South Florida," post="Department of Integrative Biology, Tampa, FL 33620, USA. †"/>
+   <result pre="Florida, Department of Integrative Biology, Tampa, FL 33620, USA. †" exact="Emory University," post="Department of Biology, Atlanta, GA 30322 Find this author"/>
+   <result pre="for this author on this site Jeremy M. Cohen *" exact="University of South Florida," post="Department of Integrative Biology, Tampa, FL 33620, USA. Find"/>
+   <result pre="for this author on this site Elizabeth A. Roznik *" exact="University of South Florida," post="Department of Integrative Biology, Tampa, FL 33620, USA. Find"/>
+   <result pre="Search for this author on this site Barry Sinervo ‡" exact="University of California" post="at Santa Cruz, Department of Ecology and Evolutionary Biology,"/>
+   <result pre="Education Centre (NGRREC), Alton, IL, USA. ζ Department of Biology," exact="Washington University in St. Louis," post="St. Louis, MO, USA. Find this author on Google"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
    <result pre="this manuscript. This research was supported by grants from the" exact="National Science Foundation" post="(EF-1241889, EID-1518681, EF-1241848), National Institutes of Health (R01GM109499, R01TW010286,"/>
    <result pre="by grants from the National Science Foundation (EF-1241889, EID-1518681, EF-1241848)," exact="National Institutes of Health" post="(R01GM109499, R01TW010286, F32AI112255), US Department of Agriculture (NRI 2006-01370,"/>
@@ -185,9 +202,9 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_164806v1/results/search/funders/results.xml">
-   <result pre="Rohr doi: https://doi.org/10.1101/164806 Jeremy M. Cohen Department of Integrative Biology," exact="University of South Florida," post="Tampa, FL, 33620 Find this author on Google Scholar"/>
-   <result pre="For correspondence: jcohen9@mail.usf.edu Marc J. Lajeunesse Department of Integrative Biology," exact="University of South Florida," post="Tampa, FL, 33620 Find this author on Google Scholar"/>
-   <result pre="on this site Jason R. Rohr Department of Integrative Biology," exact="University of South Florida," post="Tampa, FL, 33620 Find this author on Google Scholar"/>
+   <result pre="doi: https://doi.org/10.1101/164806 Jeremy M. Cohen 1 Department of Integrative Biology," exact="University of South Florida," post="Tampa, FL, 33620 Find this author on Google Scholar"/>
+   <result pre="correspondence: jcohen9@mail.usf.edu Marc J. Lajeunesse 1 Department of Integrative Biology," exact="University of South Florida," post="Tampa, FL, 33620 Find this author on Google Scholar"/>
+   <result pre="this site Jason R. Rohr 1 Department of Integrative Biology," exact="University of South Florida," post="Tampa, FL, 33620 Find this author on Google Scholar"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
    <result pre="manuscript comments. This research was supported by grants from the" exact="National Science Foundation" post="to M.J.L (DBI-1262545, DEB-1451031) and J.R.R. (EF-1241889, DEB-1518681), and"/>
    <result pre="Foundation to M.J.L (DBI-1262545, DEB-1451031) and J.R.R. (EF-1241889, DEB-1518681), and" exact="National Institutes of Health" post="(R01GM109499, R01TW010286), US Department of Agriculture (NRI 2006-01370, 2009-35102-0543),"/>
@@ -202,10 +219,10 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_164814v1/results/search/funders/results.xml">
-   <result pre="Rohr doi: https://doi.org/10.1101/164814 Jeremy M. Cohen Department of Integrative Biology," exact="University of South Florida," post="Tampa, FL 33620 Find this author on Google Scholar"/>
-   <result pre="site For correspondence: jcohen9@mail.usf.edu David J. Civitello Department of Biology," exact="Emory University," post="Atlanta, GA 30307 Find this author on Google Scholar"/>
-   <result pre="this author on this site Taegan A. McMahon Biology Department," exact="University of Tampa," post="Tampa, FL 33606 Find this author on Google Scholar"/>
-   <result pre="on this site Jason R. Rohr Department of Integrative Biology," exact="University of South Florida," post="Tampa, FL 33620 Find this author on Google Scholar"/>
+   <result pre="doi: https://doi.org/10.1101/164814 Jeremy M. Cohen 1 Department of Integrative Biology," exact="University of South Florida," post="Tampa, FL 33620 Find this author on Google Scholar"/>
+   <result pre="For correspondence: jcohen9@mail.usf.edu David J. Civitello 2 Department of Biology," exact="Emory University," post="Atlanta, GA 30307 Find this author on Google Scholar"/>
+   <result pre="author on this site Taegan A. McMahon 4 Biology Department," exact="University of Tampa," post="Tampa, FL 33606 Find this author on Google Scholar"/>
+   <result pre="this site Jason R. Rohr 1 Department of Integrative Biology," exact="University of South Florida," post="Tampa, FL 33620 Find this author on Google Scholar"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
    <result pre="manuscript. Funds were provided by grants to J.R.R. from the" exact="National Science Foundation" post="(EF-1241889), the National Institutes of Health (R01GM109499, R01TW010286-01), the"/>
    <result pre="grants to J.R.R. from the National Science Foundation (EF-1241889), the" exact="National Institutes of Health" post="(R01GM109499, R01TW010286-01), the US Department of Agriculture (2009-35102-0543), and"/>
@@ -217,7 +234,7 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_167973v1/results/search/funders/results.xml">
-   <result pre="Christian Hof doi: https://doi.org/10.1101/167973 Lauren B. Buckley Department of Biology," exact="University of Washington," post="Seattle, WA 98195 USA Find this author on Google"/>
+   <result pre="Hof doi: https://doi.org/10.1101/167973 Lauren B. Buckley 1 Department of Biology," exact="University of Washington," post="Seattle, WA 98195 USA Find this author on Google"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
    <result pre="on assessing data quality. This work was supported by the" exact="National Science Foundation" post="[DBI-1349865 to L.B.B. and OIA-1632810 to D.L.S.]. References ↵"/>
    <result pre="to thermal environment in birds and mammals. Proceedings of the" exact="National Academy of Sciences," post="112, 15934– 15939. OpenUrl Abstract / FREE Full Text"/>
@@ -230,9 +247,20 @@
   </snippets>
  </snippetsTree>
  <snippetsTree>
+  <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_172221v6/results/search/funders/results.xml">
+   <result pre="Johnson doi: https://doi.org/10.1101/172221 Sadie J. Ryan 1 Department of Geography," exact="University of Florida," post="Gainesville, Florida, United States of America 2 Emerging Pathogens"/>
+   <result pre="Gainesville, Florida, United States of America 2 Emerging Pathogens Institute," exact="University of Florida," post="Gainesville, Florida, United States of America 3 School of"/>
+   <result pre="For correspondence: sjryan@ufl.edu Colin J. Carlson 4 Department of Biology," exact="Georgetown University," post="Washington, DC 2007, U.S.A 5 National Socio-Environmental Synthesis Center,"/>
+   <result pre="University, Washington, DC 2007, U.S.A 5 National Socio-Environmental Synthesis Center," exact="University of Maryland," post="Annapolis, Maryland 21401, U.S.A Find this author on Google"/>
+   <result pre="Colin J. Carlson Erin A. Mordecai 6 Department of Biology," exact="Stanford University," post="371 Serra Mall, Stanford, California, United States of America"/>
+   <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Epidemiology Subject Areas"/>
+   <result pre="http://CRAN.R-project.org/package=raster 38. Center for International Earth Science Information Network (CIESIN)," exact="Columbia University." post="Gridded Population of the World, Version 4 (GPWv4). [Internet]."/>
+  </snippets>
+ </snippetsTree>
+ <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_173922v1/results/search/funders/results.xml">
-   <result pre="Rice , Rulon W. Clark doi: https://doi.org/10.1101/173922 Stephen E. Rice" exact="San Diego State University," post="Dept of Biology, 5500 Campanile Drive, San Diego, California,"/>
-   <result pre="site ORCID record for Stephen E. Rice Rulon W. Clark" exact="San Diego State University," post="Dept of Biology, 5500 Campanile Drive, San Diego, California,"/>
+   <result pre=", Rulon W. Clark doi: https://doi.org/10.1101/173922 Stephen E. Rice 1" exact="San Diego State University," post="Dept of Biology, 5500 Campanile Drive, San Diego, California,"/>
+   <result pre="ORCID record for Stephen E. Rice Rulon W. Clark 1" exact="San Diego State University," post="Dept of Biology, 5500 Campanile Drive, San Diego, California,"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
    <result pre="geographic distance between patches is considered. We recommend that the" exact="National Park Service," post="the managing entity of SBI, and other agencies continue"/>
    <result pre="Center (Award Number S18309). We would like to thank the" exact="National Park Service" post="for access to SBI, SCI Naval Base for access"/>
@@ -243,26 +271,26 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_180174v2/results/search/funders/results.xml">
-   <result pre="Joshua Ladau State Key Laboratory of Soil and Sustainable Agriculture," exact="Institute of Soil Science, Chinese Academy of Sciences," post="71 East Beijing Road, Nanjing 210008, China Gladstone Institutes,"/>
-   <result pre="Laboratory of Soil and Sustainable Agriculture, Institute of Soil Science," exact="Chinese Academy of Sciences," post="71 East Beijing Road, Nanjing 210008, China Gladstone Institutes,"/>
-   <result pre="Academy of Sciences, 71 East Beijing Road, Nanjing 210008, China" exact="Gladstone Institutes," post="San Francisco, CA 94158, USA Find this author on"/>
-   <result pre="Yu Shi State Key Laboratory of Soil and Sustainable Agriculture," exact="Institute of Soil Science, Chinese Academy of Sciences," post="71 East Beijing Road, Nanjing 210008, China Find this"/>
+   <result pre="Ladau 1 State Key Laboratory of Soil and Sustainable Agriculture," exact="Institute of Soil Science, Chinese Academy of Sciences," post="71 East Beijing Road, Nanjing 210008, China 2 Gladstone"/>
+   <result pre="Laboratory of Soil and Sustainable Agriculture, Institute of Soil Science," exact="Chinese Academy of Sciences," post="71 East Beijing Road, Nanjing 210008, China 2 Gladstone"/>
+   <result pre="of Sciences, 71 East Beijing Road, Nanjing 210008, China 2" exact="Gladstone Institutes," post="San Francisco, CA 94158, USA Find this author on"/>
+   <result pre="Shi 1 State Key Laboratory of Soil and Sustainable Agriculture," exact="Institute of Soil Science, Chinese Academy of Sciences," post="71 East Beijing Road, Nanjing 210008, China Find this"/>
    <result pre="Laboratory of Soil and Sustainable Agriculture, Institute of Soil Science," exact="Chinese Academy of Sciences," post="71 East Beijing Road, Nanjing 210008, China Find this"/>
    <result pre="Sciences and Key Laboratory for Earth Surface Processes of the" exact="Ministry of Education," post="Peking University, 5 Yiheyuan Road, Beijing 100871, China Find"/>
-   <result pre="Sciences and Key Laboratory for Earth Surface Processes of the" exact="Ministry of Education," post="Peking University, 5 Yiheyuan Road, Beijing 100871, China Key"/>
+   <result pre="Sciences and Key Laboratory for Earth Surface Processes of the" exact="Ministry of Education," post="Peking University, 5 Yiheyuan Road, Beijing 100871, China 4"/>
    <result pre="and Evolution of Plateau Biota, Northwest Institute of Plateau Biology," exact="Chinese Academy of Sciences," post="23 Xinning Road, Xining 810008, China Find this author"/>
    <result pre="and Evolution of Plateau Biota, Northwest Institute of Plateau Biology," exact="Chinese Academy of Sciences," post="23 Xinning Road, Xining 810008, China Find this author"/>
-   <result pre="Xiangui Lin State Key Laboratory of Soil and Sustainable Agriculture," exact="Institute of Soil Science, Chinese Academy of Sciences," post="71 East Beijing Road, Nanjing 210008, China Find this"/>
+   <result pre="Lin 1 State Key Laboratory of Soil and Sustainable Agriculture," exact="Institute of Soil Science, Chinese Academy of Sciences," post="71 East Beijing Road, Nanjing 210008, China Find this"/>
    <result pre="Laboratory of Soil and Sustainable Agriculture, Institute of Soil Science," exact="Chinese Academy of Sciences," post="71 East Beijing Road, Nanjing 210008, China Find this"/>
-   <result pre="this site Noah Fierer Department of Ecology and Evolutionary Biology," exact="University of Colorado, Boulder," post="CO 80309, USA Cooperative Institute for Research in Environmental"/>
-   <result pre="CO 80309, USA Cooperative Institute for Research in Environmental Sciences," exact="University of Colorado, Boulder," post="CO 80309, USA Find this author on Google Scholar"/>
-   <result pre="this site Jack A Gilbert Biosciences Division, The Microbiome Center," exact="Argonne National Laboratory," post="Argonne, Illinois, USA Department of Surgery, University of Chicago,"/>
-   <result pre="Division, The Microbiome Center, Argonne National Laboratory, Argonne, Illinois, USA" exact="Department of Surgery," post="University of Chicago, Chicago, Illinois, USA Marine Biological Laboratory,"/>
-   <result pre="Center, Argonne National Laboratory, Argonne, Illinois, USA Department of Surgery," exact="University of Chicago," post="Chicago, Illinois, USA Marine Biological Laboratory, 7 MBL Street,"/>
-   <result pre="USA Department of Surgery, University of Chicago, Chicago, Illinois, USA" exact="Marine Biological Laboratory," post="7 MBL Street, Woods Hole, MA 02543, USA Find"/>
-   <result pre="Search for this author on this site Katherine S Pollard" exact="Gladstone Institutes," post="San Francisco, CA 94158, USA Division of Biostatistics and"/>
-   <result pre="94158, USA Division of Biostatistics and Institute for Human Genetics," exact="University of California," post="San Francisco, CA, USA Chan-Zuckerberg Biohub, San Francisco, CA,"/>
-   <result pre="Haiyan Chu State Key Laboratory of Soil and Sustainable Agriculture," exact="Institute of Soil Science, Chinese Academy of Sciences," post="71 East Beijing Road, Nanjing 210008, China Find this"/>
+   <result pre="site Noah Fierer 5 Department of Ecology and Evolutionary Biology," exact="University of Colorado, Boulder," post="CO 80309, USA 6 Cooperative Institute for Research in"/>
+   <result pre="80309, USA 6 Cooperative Institute for Research in Environmental Sciences," exact="University of Colorado, Boulder," post="CO 80309, USA Find this author on Google Scholar"/>
+   <result pre="site Jack A Gilbert 7 Biosciences Division, The Microbiome Center," exact="Argonne National Laboratory," post="Argonne, Illinois, USA 8 Department of Surgery, University of"/>
+   <result pre="The Microbiome Center, Argonne National Laboratory, Argonne, Illinois, USA 8" exact="Department of Surgery," post="University of Chicago, Chicago, Illinois, USA 9 Marine Biological"/>
+   <result pre="Argonne National Laboratory, Argonne, Illinois, USA 8 Department of Surgery," exact="University of Chicago," post="Chicago, Illinois, USA 9 Marine Biological Laboratory, 7 MBL"/>
+   <result pre="Department of Surgery, University of Chicago, Chicago, Illinois, USA 9" exact="Marine Biological Laboratory," post="7 MBL Street, Woods Hole, MA 02543, USA Find"/>
+   <result pre="for this author on this site Katherine S Pollard 2" exact="Gladstone Institutes," post="San Francisco, CA 94158, USA 10 Division of Biostatistics"/>
+   <result pre="USA 10 Division of Biostatistics and Institute for Human Genetics," exact="University of California," post="San Francisco, CA, USA 11 Chan-Zuckerberg Biohub, San Francisco,"/>
+   <result pre="Chu 1 State Key Laboratory of Soil and Sustainable Agriculture," exact="Institute of Soil Science, Chinese Academy of Sciences," post="71 East Beijing Road, Nanjing 210008, China Find this"/>
    <result pre="Laboratory of Soil and Sustainable Agriculture, Institute of Soil Science," exact="Chinese Academy of Sciences," post="71 East Beijing Road, Nanjing 210008, China Find this"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
    <result pre="were amplified using the primer set: F515: GTGCCAGCMGCCGCGG with the" exact="Roche" post="454 ‘A’ pyrosequencing adapter and a unique 7-bp barcode"/>
@@ -278,11 +306,11 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_187021v1/results/search/funders/results.xml">
-   <result pre="M. Wadgymar Department of Genetics and Odum School of Ecology," exact="University of Georgia," post="Athens, GA, 30602, USA The Rocky Mountain Biological Laboratory,"/>
-   <result pre="Laboratory, Crested Butte, CO 81224, USA Department of Biological Science," exact="Florida State University," post="Tallahassee, FL, 32306, USA Find this author on Google"/>
-   <result pre="Biological Laboratory, Crested Butte, CO 81224, USA Department of Biology," exact="University of Maryland," post="College Park, MD, 20742, USA Find this author on"/>
-   <result pre="site Arthur E. Weis Department of Ecology and Evolutionary Biology," exact="University of Toronto," post="Ontario, M5S 3B2, Canada Find this author on Google"/>
-   <result pre="T. Anderson Department of Genetics and Odum School of Ecology," exact="University of Georgia," post="Athens, GA, 30602, USA The Rocky Mountain Biological Laboratory,"/>
+   <result pre="Wadgymar 1 Department of Genetics and Odum School of Ecology," exact="University of Georgia," post="Athens, GA, 30602, USA 2 The Rocky Mountain Biological"/>
+   <result pre="Crested Butte, CO 81224, USA 3 Department of Biological Science," exact="Florida State University," post="Tallahassee, FL, 32306, USA Find this author on Google"/>
+   <result pre="Laboratory, Crested Butte, CO 81224, USA 4 Department of Biology," exact="University of Maryland," post="College Park, MD, 20742, USA Find this author on"/>
+   <result pre="Arthur E. Weis 5 Department of Ecology and Evolutionary Biology," exact="University of Toronto," post="Ontario, M5S 3B2, Canada Find this author on Google"/>
+   <result pre="Anderson 1 Department of Genetics and Odum School of Ecology," exact="University of Georgia," post="Athens, GA, 30602, USA 2 The Rocky Mountain Biological"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
    <result pre="Mountain Biological Laboratory for logistical support. The authors thank the" exact="National Science Foundation" post="of the U.S. for funding these projects (DEB-9408382, IBN-9814509,"/>
    <result pre="dates and its response to temperature changes. Proceedings of the" exact="Royal Society" post="B, 277, 2451– 2457. OpenUrl CrossRef PubMed Web of"/>
@@ -299,17 +327,17 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_200352v1/results/search/funders/results.xml">
-   <result pre="doi: https://doi.org/10.1101/200352 Megan A. Supple Research School of Biology, The" exact="Australian National University," post="134 Linnaeus Way, Canberra, ACT 2601, Australia; Department of"/>
-   <result pre="Canberra, ACT 2601, Australia; Department of Ecology and Evolutionary Biology," exact="University of California" post="at Santa Cruz, 1156 High Street, Santa Cruz, CA"/>
-   <result pre="correspondence: megan.a.supple@gmail.com Jason G. Bragg Research School of Biology, The" exact="Australian National University," post="134 Linnaeus Way, Canberra, ACT 2601, Australia; National Herbarium"/>
-   <result pre="Search for this author on this site Linda M. Broadhurst" exact="Centre for Australian National Biodiversity Research," post="Commonwealth Scientific and Industrial Research Organisation (CSIRO) National Research"/>
-   <result pre="site Linda M. Broadhurst Centre for Australian National Biodiversity Research," exact="Commonwealth Scientific and Industrial Research Organisation" post="(CSIRO) National Research Collections and Facilities, PO Box1600, Canberra,"/>
-   <result pre="this site Adrienne B. Nicotra Research School of Biology, The" exact="Australian National University," post="134 Linnaeus Way, Canberra, ACT 2601, Australia; Find this"/>
-   <result pre="site Rose L. Andrew School of Environmental and Rural Science," exact="University of New England," post="W55 Geology Rd, Armidale, NSW 2351, Australia; Find this"/>
-   <result pre="on this site Abigail Widdup Research School of Biology, The" exact="Australian National University," post="134 Linnaeus Way, Canberra, ACT 2601, Australia; Find this"/>
-   <result pre="this site Nicola C. Aitken Research School of Biology, The" exact="Australian National University," post="134 Linnaeus Way, Canberra, ACT 2601, Australia; Find this"/>
-   <result pre="this site Justin O. Borevitz Research School of Biology, The" exact="Australian National University," post="134 Linnaeus Way, Canberra, ACT 2601, Australia; Centre of"/>
-   <result pre="2601, Australia; Centre of Excellence in Plant Energy Biology, The" exact="Australian National University," post="134 Linnaeus Way, Canberra, ACT 2601, Australia Find this"/>
+   <result pre="https://doi.org/10.1101/200352 Megan A. Supple a Research School of Biology, The" exact="Australian National University," post="134 Linnaeus Way, Canberra, ACT 2601, Australia; b Department"/>
+   <result pre="ACT 2601, Australia; b Department of Ecology and Evolutionary Biology," exact="University of California" post="at Santa Cruz, 1156 High Street, Santa Cruz, CA"/>
+   <result pre="megan.a.supple@gmail.com Jason G. Bragg a Research School of Biology, The" exact="Australian National University," post="134 Linnaeus Way, Canberra, ACT 2601, Australia; c National"/>
+   <result pre="for this author on this site Linda M. Broadhurst d" exact="Centre for Australian National Biodiversity Research," post="Commonwealth Scientific and Industrial Research Organisation (CSIRO) National Research"/>
+   <result pre="Linda M. Broadhurst d Centre for Australian National Biodiversity Research," exact="Commonwealth Scientific and Industrial Research Organisation" post="(CSIRO) National Research Collections and Facilities, PO Box1600, Canberra,"/>
+   <result pre="site Adrienne B. Nicotra a Research School of Biology, The" exact="Australian National University," post="134 Linnaeus Way, Canberra, ACT 2601, Australia; Find this"/>
+   <result pre="Rose L. Andrew f School of Environmental and Rural Science," exact="University of New England," post="W55 Geology Rd, Armidale, NSW 2351, Australia; Find this"/>
+   <result pre="this site Abigail Widdup a Research School of Biology, The" exact="Australian National University," post="134 Linnaeus Way, Canberra, ACT 2601, Australia; Find this"/>
+   <result pre="site Nicola C. Aitken a Research School of Biology, The" exact="Australian National University," post="134 Linnaeus Way, Canberra, ACT 2601, Australia; Find this"/>
+   <result pre="site Justin O. Borevitz a Research School of Biology, The" exact="Australian National University," post="134 Linnaeus Way, Canberra, ACT 2601, Australia; g Centre"/>
+   <result pre="Australia; g Centre of Excellence in Plant Energy Biology, The" exact="Australian National University," post="134 Linnaeus Way, Canberra, ACT 2601, Australia Find this"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Genomics Subject Areas"/>
    <result pre="bp paired-end protocol at the Biomolecular Resource Facility at the" exact="Australian National University," post="generating almost 260 million read pairs. We checked the"/>
    <result pre="2013). Adaptation to climate in widespread eucalypt species. Gold Coast:" exact="National Climate Change Adaptation Research Facility." post="↵ CGIAR-CSI. ( 2016). SRTM 90m Digital Elevation Data."/>
@@ -317,16 +345,16 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_2019_12_20_883363v1/results/search/funders/results.xml">
-   <result pre="Erin A. Mordecai doi: https://doi.org/10.1101/2019.12.20.883363 Nicole Nova Department of Biology," exact="Stanford University," post="Stanford, CA, USA Find this author on Google Scholar"/>
-   <result pre="For correspondence: nicole.nova@stanford.edu Ethan R. Deyle Scripps Institution of Oceanography," exact="University of California" post="San Diego, La Jolla, CA, USA Department of Biology,"/>
-   <result pre="California San Diego, La Jolla, CA, USA Department of Biology," exact="Boston University," post="Boston, MA, USA Find this author on Google Scholar"/>
-   <result pre="author on this site Marta S. Shocket Department of Biology," exact="Stanford University," post="Stanford, CA, USA Department of Ecology and Evolutionary Biology,"/>
-   <result pre="University, Stanford, CA, USA Department of Ecology and Evolutionary Biology," exact="University of California," post="Los Angeles, CA, USA Find this author on Google"/>
-   <result pre="author on this site Andrew J. MacDonald Department of Biology," exact="Stanford University," post="Stanford, CA, USA Earth Research Institute [[#38]] Bren School"/>
+   <result pre="A. Mordecai doi: https://doi.org/10.1101/2019.12.20.883363 Nicole Nova 1 Department of Biology," exact="Stanford University," post="Stanford, CA, USA Find this author on Google Scholar"/>
+   <result pre="correspondence: nicole.nova@stanford.edu Ethan R. Deyle 2 Scripps Institution of Oceanography," exact="University of California" post="San Diego, La Jolla, CA, USA 3 Department of"/>
+   <result pre="San Diego, La Jolla, CA, USA 3 Department of Biology," exact="Boston University," post="Boston, MA, USA Find this author on Google Scholar"/>
+   <result pre="on this site Marta S. Shocket 1 Department of Biology," exact="Stanford University," post="Stanford, CA, USA 4 Department of Ecology and Evolutionary"/>
+   <result pre="Stanford, CA, USA 4 Department of Ecology and Evolutionary Biology," exact="University of California," post="Los Angeles, CA, USA Find this author on Google"/>
+   <result pre="on this site Andrew J. MacDonald 1 Department of Biology," exact="Stanford University," post="Stanford, CA, USA 5 Earth Research Institute [[#38]] Bren"/>
    <result pre="Research Institute [[#38]] Bren School of Environmental Science and Management," exact="University of California" post="Santa Barbara, Santa Barbara, CA, USA Find this author"/>
-   <result pre="Marissa L. Childs Emmett Interdisciplinary Program in Environment and Resources," exact="Stanford University," post="Stanford, CA, USA Find this author on Google Scholar"/>
-   <result pre="author on this site George Sugihara Scripps Institution of Oceanography," exact="University of California" post="San Diego, La Jolla, CA, USA Find this author"/>
-   <result pre="author on this site Erin A. Mordecai Department of Biology," exact="Stanford University," post="Stanford, CA, USA Find this author on Google Scholar"/>
+   <result pre="L. Childs 6 Emmett Interdisciplinary Program in Environment and Resources," exact="Stanford University," post="Stanford, CA, USA Find this author on Google Scholar"/>
+   <result pre="on this site George Sugihara 2 Scripps Institution of Oceanography," exact="University of California" post="San Diego, La Jolla, CA, USA Find this author"/>
+   <result pre="on this site Erin A. Mordecai 1 Department of Biology," exact="Stanford University," post="Stanford, CA, USA Find this author on Google Scholar"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
    <result pre="San Juan, Puerto Rico, 1990–2009 ( Figure 1a–c) from the" exact="National Oceanic and Atmospheric Administration" post="on November 10, 2016 ( http://dengueforecasting.noaa.gov/). Direct measurement of"/>
    <result pre="of Paul Ehrlich. ERD and GS were supported by the" exact="National Science Foundation" post="(NSF) DEB-1655203, NSF-ABI-1667584, DoD-Strategic Environmental Research and Development Program"/>
@@ -355,8 +383,8 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_2020_01_16_908814v1/results/search/funders/results.xml">
-   <result pre="Upstate Medical University, Syracuse, NY, USA Department of Medical Geography," exact="University of Florida," post="Gainesville, FL, USA Find this author on Google Scholar"/>
-   <result pre="Upstate Medical University, Syracuse, NY, USA Department of Environmental Studies," exact="State University of New York" post="College of Environmental Science and Forestry (SUNY ESF), Syracuse,"/>
+   <result pre="Medical University, Syracuse, NY, USA 3 Department of Medical Geography," exact="University of Florida," post="Gainesville, FL, USA Find this author on Google Scholar"/>
+   <result pre="Medical University, Syracuse, NY, USA 9 Department of Environmental Studies," exact="State University of New York" post="College of Environmental Science and Forestry (SUNY ESF), Syracuse,"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
    <result pre="of the Epidemiology Area of the Zoonosis Program of the" exact="Ministry of Health" post="(MoH) of the province. The MoH began the Ae."/>
    <result pre="program of the Department of Epidemiology of the Córdoba Province" exact="Ministry of Health" post="in cooperation with the Córdoba Entomological Research Centre (CIEC)"/>
@@ -369,9 +397,27 @@
   </snippets>
  </snippetsTree>
  <snippetsTree>
+  <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_2020_02_25_964213v1/results/search/funders/results.xml">
+   <result pre="on this site Manuela Branco 8 Centro de Estudos Florestais," exact="Instituto Superior de Agronomia," post="Universidade de Lisboa, Portugal Find this author on Google"/>
+   <result pre="Branco 8 Centro de Estudos Florestais, Instituto Superior de Agronomia," exact="Universidade de Lisboa," post="Portugal Find this author on Google Scholar Find this"/>
+   <result pre="Genetics, Zürcherstrasse 111, 8903 Birmensdorf, Switzerland 26 Department of Ecology," exact="Philipps-Universität Marburg," post="Karl-von-Frisch Strasse 8, 35043 Marburg Find this author on"/>
+   <result pre="28 Research Unit &quot;Ecosystems, Biodiversity, Evolution&quot;; Université de Rennes 1/" exact="Centre National de la Recherche Scientifique;" post="Campus de Beaulieu, Bâtiment 14A, 35042 Rennes, France Find"/>
+   <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
+   <result pre="P in relation to temperature and latitude. Proceedings of the" exact="National Academy of Sciences" post="of the United States of America, 101, 11001– 11006."/>
+  </snippets>
+ </snippetsTree>
+ <snippetsTree>
+  <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_2020_04_03_024497v1/results/search/funders/results.xml">
+   <result pre="B. Bradford doi: https://doi.org/10.1101/2020.04.03.024497 Robert K. Shriver 1 Ecology Center," exact="Utah State University" post="2 Department of Natural Resources and Environmental Sciences, University"/>
+   <result pre="Robert K. Shriver 1 Ecology Center, Utah State University 2" exact="Department of Natural Resources" post="and Environmental Sciences, University of Nevada-Reno Find this author"/>
+   <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
+   <result pre="Climate variability, niche dimensions, and species distributions. Proceedings of the" exact="National Academy of Sciences" post="of the United States of America 106: 19685– 19692."/>
+  </snippets>
+ </snippetsTree>
+ <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_285361v2/results/search/funders/results.xml">
-   <result pre="this author on this site Rebecca Darbyshire New South Wales" exact="Department of Primary Industries," post="Wagga Wagga, Australia Faculty of Veterinary and Agricultural Sciences,"/>
-   <result pre="Industries, Wagga Wagga, Australia Faculty of Veterinary and Agricultural Sciences," exact="University of Melbourne," post="Melbourne, Australia Find this author on Google Scholar Find"/>
+   <result pre="author on this site Rebecca Darbyshire 3 New South Wales" exact="Department of Primary Industries," post="Wagga Wagga, Australia 4 Faculty of Veterinary and Agricultural"/>
+   <result pre="Wagga Wagga, Australia 4 Faculty of Veterinary and Agricultural Sciences," exact="University of Melbourne," post="Melbourne, Australia Find this author on Google Scholar Find"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Plant Biology Subject"/>
    <result pre="orchard management in the fruit tree experimental orchards of the" exact="Institut National de la Recherche Agronomique" post="(INRA)-Bordeaux research centre, located in Bourran, in Lot-et-Garonne (France,"/>
   </snippets>
@@ -389,10 +435,10 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_333237v1/results/search/funders/results.xml">
-   <result pre="Steven Lade , Rebecca Colvin doi: https://doi.org/10.1101/333237 Inez Harker-Schuch The" exact="Australian National University" post="(ANU) Find this author on Google Scholar Find this"/>
-   <result pre="this site ORCID record for Inez Harker-Schuch Frank Mills The" exact="Australian National University" post="(ANU) Find this author on Google Scholar Find this"/>
-   <result pre="this site ORCID record for Frank Mills Steven Lade The" exact="Australian National University" post="(ANU) Find this author on Google Scholar Find this"/>
-   <result pre="Search for this author on this site Rebecca Colvin The" exact="Australian National University" post="(ANU) Find this author on Google Scholar Find this"/>
+   <result pre="Lade , Rebecca Colvin doi: https://doi.org/10.1101/333237 Inez Harker-Schuch 1 The" exact="Australian National University" post="(ANU) Find this author on Google Scholar Find this"/>
+   <result pre="site ORCID record for Inez Harker-Schuch Frank Mills 1 The" exact="Australian National University" post="(ANU) Find this author on Google Scholar Find this"/>
+   <result pre="site ORCID record for Frank Mills Steven Lade 1 The" exact="Australian National University" post="(ANU) Find this author on Google Scholar Find this"/>
+   <result pre="for this author on this site Rebecca Colvin 1 The" exact="Australian National University" post="(ANU) Find this author on Google Scholar Find this"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Scientific Communication and"/>
    <result pre="the relevant education departments and the ethics committee at the" exact="Australian National University." post="All protocols were followed in accordance with the requirements"/>
    <result pre="everyday lives. Acknowledgements Dr Hwan-Jin Yoon, Statistical Consulting Unit, The" exact="Australian National University" post="Ms Michel Watson, CPAS, The Australian National University This"/>
@@ -442,7 +488,7 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_355875v2/results/search/funders/results.xml">
-   <result pre="Lennox Fish Ecology and Conservation Physiology Laboratory, Department of Biology," exact="Carleton University," post="Ottawa, Ontario, Canada Find this author on Google Scholar"/>
+   <result pre="4 Fish Ecology and Conservation Physiology Laboratory, Department of Biology," exact="Carleton University," post="Ottawa, Ontario, Canada Find this author on Google Scholar"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
    <result pre="by the Alexander von Humboldt Foundation and the German Federal" exact="Ministry of Education" post="and Research (BMBF). GK acknowledges funding from the BMBF"/>
    <result pre="2015-2016 BiodivERsA COFUND call for research proposals and the Spanish" exact="Ministry of Economy," post="Industry and Competitiveness (project ODYSSEUS, BiodivERsA3-2015-26, PCIN-2016-168). GC acknowledges"/>
@@ -464,15 +510,15 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_384115v3/results/search/funders/results.xml">
-   <result pre="Jennifer K. Balch doi: https://doi.org/10.1101/384115 Maxwell B. Joseph Earth Lab," exact="University of Colorado Boulder" post="Find this author on Google Scholar Find this author"/>
-   <result pre="record for Maxwell B. Joseph Matthew W. Rossi Earth Lab," exact="University of Colorado Boulder" post="Find this author on Google Scholar Find this author"/>
-   <result pre="record for Matthew W. Rossi Nathan P. Mietkiewicz Earth Lab," exact="University of Colorado Boulder" post="Find this author on Google Scholar Find this author"/>
-   <result pre="record for Nathan P. Mietkiewicz Adam L. Mahood Earth Lab," exact="University of Colorado Boulder" post="Find this author on Google Scholar Find this author"/>
-   <result pre="this author on this site Megan E. Cattau Earth Lab," exact="University of Colorado Boulder" post="Find this author on Google Scholar Find this author"/>
-   <result pre="for Megan E. Cattau Lise Ann St. Denis Earth Lab," exact="University of Colorado Boulder" post="Find this author on Google Scholar Find this author"/>
-   <result pre="this author on this site R. Chelsea Nagy Earth Lab," exact="University of Colorado Boulder" post="Find this author on Google Scholar Find this author"/>
-   <result pre="ORCID record for R. Chelsea Nagy Virginia Iglesias Earth Lab," exact="University of Colorado Boulder" post="Find this author on Google Scholar Find this author"/>
-   <result pre="record for John T. Abatzoglou Jennifer K. Balch Earth Lab," exact="University of Colorado Boulder" post="Find this author on Google Scholar Find this author"/>
+   <result pre="K. Balch doi: https://doi.org/10.1101/384115 Maxwell B. Joseph 1 Earth Lab," exact="University of Colorado Boulder" post="Find this author on Google Scholar Find this author"/>
+   <result pre="for Maxwell B. Joseph Matthew W. Rossi 1 Earth Lab," exact="University of Colorado Boulder" post="Find this author on Google Scholar Find this author"/>
+   <result pre="for Matthew W. Rossi Nathan P. Mietkiewicz 1 Earth Lab," exact="University of Colorado Boulder" post="Find this author on Google Scholar Find this author"/>
+   <result pre="for Nathan P. Mietkiewicz Adam L. Mahood 1 Earth Lab," exact="University of Colorado Boulder" post="Find this author on Google Scholar Find this author"/>
+   <result pre="author on this site Megan E. Cattau 1 Earth Lab," exact="University of Colorado Boulder" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Megan E. Cattau Lise Ann St. Denis 1 Earth Lab," exact="University of Colorado Boulder" post="Find this author on Google Scholar Find this author"/>
+   <result pre="author on this site R. Chelsea Nagy 1 Earth Lab," exact="University of Colorado Boulder" post="Find this author on Google Scholar Find this author"/>
+   <result pre="record for R. Chelsea Nagy Virginia Iglesias 1 Earth Lab," exact="University of Colorado Boulder" post="Find this author on Google Scholar Find this author"/>
+   <result pre="for John T. Abatzoglou Jennifer K. Balch 1 Earth Lab," exact="University of Colorado Boulder" post="Find this author on Google Scholar Find this author"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
    <result pre="averaged at a monthly time step for each of 84" exact="Environmental Protection Agency" post="level 3 (L3) ecoregions for each month from 1984"/>
    <result pre="( Allaire et al. 2018). Analyses were run on an" exact="Amazon Web Services" post="m5.2xlarge EC2 instance with four physical cores and 32"/>
@@ -489,8 +535,8 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_399469v2/results/search/funders/results.xml">
-   <result pre="Amy L. Angert doi: https://doi.org/10.1101/399469 Megan Bontrager Department of Botany," exact="University of British Columbia," post="Vancouver, British Columbia V6T 1Z4, Canada Find this author"/>
-   <result pre="correspondence: mgbontrager@gmail.com Amy L. Angert Departments of Botany and Zoology," exact="University of British Columbia," post="Vancouver, British Columbia V6T 1Z4, Canada Find this author"/>
+   <result pre="L. Angert doi: https://doi.org/10.1101/399469 Megan Bontrager 1 Department of Botany," exact="University of British Columbia," post="Vancouver, British Columbia V6T 1Z4, Canada Find this author"/>
+   <result pre="mgbontrager@gmail.com Amy L. Angert 2 Departments of Botany and Zoology," exact="University of British Columbia," post="Vancouver, British Columbia V6T 1Z4, Canada Find this author"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Evolutionary Biology Subject"/>
    <result pre="the Washington Native Plant Society. MB was supported by a" exact="University of British Columbia" post="Four-year Fellowship. The authors declare no conflicts of interest."/>
    <result pre="the range of Sitka spruce (Picea sitchensis). Proceedings of the" exact="Royal Society" post="of London B: Biological Sciences 279( 1734), 1675– 1683."/>
@@ -506,13 +552,13 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_404293v1/results/search/funders/results.xml">
-   <result pre="Disease Ecology and Conservation (QDEC) Lab Group, Department of Geography," exact="University of Florida," post="Gainesville, Florida, United States of America Emerging Pathogens Institute,"/>
-   <result pre="Florida, Gainesville, Florida, United States of America Emerging Pathogens Institute," exact="University of Florida," post="Gainesville, Florida, United States of America Find this author"/>
-   <result pre="site ORCID record for Catherine A. Lippi Anna M. Stewart-Ibarra" exact="Center for Global Health" post="and Translational Science, Upstate Medical University, Syracuse, New York,"/>
-   <result pre="author on this site Jason K. Blackburn Emerging Pathogens Institute," exact="University of Florida," post="Gainesville, Florida, United States of America Spatial Epidemiology and"/>
+   <result pre="Disease Ecology and Conservation (QDEC) Lab Group, Department of Geography," exact="University of Florida," post="Gainesville, Florida, United States of America 2 Emerging Pathogens"/>
+   <result pre="Gainesville, Florida, United States of America 2 Emerging Pathogens Institute," exact="University of Florida," post="Gainesville, Florida, United States of America Find this author"/>
+   <result pre="ORCID record for Catherine A. Lippi Anna M. Stewart-Ibarra 3" exact="Center for Global Health" post="and Translational Science, Upstate Medical University, Syracuse, New York,"/>
+   <result pre="on this site Jason K. Blackburn 2 Emerging Pathogens Institute," exact="University of Florida," post="Gainesville, Florida, United States of America 5 Spatial Epidemiology"/>
    <result pre="Spatial Epidemiology and Ecology Research (SEER) Laboratory, Department of Geography," exact="University of Florida," post="Gainesville, Florida, United States of America Find this author"/>
-   <result pre="Disease Ecology and Conservation (QDEC) Lab Group, Department of Geography," exact="University of Florida," post="Gainesville, Florida, United States of America Emerging Pathogens Institute,"/>
-   <result pre="Florida, Gainesville, Florida, United States of America Emerging Pathogens Institute," exact="University of Florida," post="Gainesville, Florida, United States of America Find this author"/>
+   <result pre="Disease Ecology and Conservation (QDEC) Lab Group, Department of Geography," exact="University of Florida," post="Gainesville, Florida, United States of America 2 Emerging Pathogens"/>
+   <result pre="Gainesville, Florida, United States of America 2 Emerging Pathogens Institute," exact="University of Florida," post="Gainesville, Florida, United States of America Find this author"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Epidemiology Subject Areas"/>
    <result pre="unique dataset of larval occurrence records provided by the Ecuadorian" exact="Ministry of Health," post="we used ecological niche models (ENMs) to estimate the"/>
    <result pre="preventing and managing outbreaks of arboviral disease. In Ecuador, the" exact="Ministry of Health" post="(Ministerio de Salud Pública (MSP)) oversees public health vector"/>
@@ -529,10 +575,10 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_429084v1/results/search/funders/results.xml">
-   <result pre="53 Alnarp, Sweden Department of Botany, School of Natural Sciences," exact="Trinity College Dublin," post="Dublin 2, Ireland Find this author on Google Scholar"/>
-   <result pre="site For correspondence: paul.egan@slu.se David Bourke School of Natural Sciences," exact="Liverpool John Moores University," post="Liverpool L3 3AF, UK Find this author on Google"/>
-   <result pre="Maude E.A. Baudraz Department of Zoology, School of Natural Sciences," exact="Trinity College Dublin," post="Dublin 2, Ireland Find this author on Google Scholar"/>
-   <result pre="Jane C. Stout Department of Botany, School of Natural Sciences," exact="Trinity College Dublin," post="Dublin 2, Ireland Find this author on Google Scholar"/>
+   <result pre="Alnarp, Sweden 2 Department of Botany, School of Natural Sciences," exact="Trinity College Dublin," post="Dublin 2, Ireland Find this author on Google Scholar"/>
+   <result pre="For correspondence: paul.egan@slu.se David Bourke 3 School of Natural Sciences," exact="Liverpool John Moores University," post="Liverpool L3 3AF, UK Find this author on Google"/>
+   <result pre="E.A. Baudraz 5 Department of Zoology, School of Natural Sciences," exact="Trinity College Dublin," post="Dublin 2, Ireland Find this author on Google Scholar"/>
+   <result pre="C. Stout 2 Department of Botany, School of Natural Sciences," exact="Trinity College Dublin," post="Dublin 2, Ireland Find this author on Google Scholar"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
    <result pre="D’ Bastiani for research assistance. This work was funded by" exact="Science Foundation Ireland" post="(10/RFP/EOB2842, to J.S.). References ↵ Abeli, T. , Dalrymple,"/>
    <result pre="the spread of an invasive woody taxon: Rhododendron ponticum L." exact="Durham University," post="↵ Guisan, A. &amp;amp;; Thuiller, W. ( 2005) Predicting"/>
@@ -559,15 +605,15 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_445866v1/results/search/funders/results.xml">
-   <result pre="https://doi.org/10.1101/445866 Ashish A. Malik Department of Ecology [[#38]] Evolutionary Biology," exact="University of California," post="Irvine, USA Find this author on Google Scholar Find"/>
-   <result pre="Jennifer B. H. Martiny Department of Ecology [[#38]] Evolutionary Biology," exact="University of California," post="Irvine, USA Find this author on Google Scholar Find"/>
-   <result pre="on this site Eoin L. Brodie Earth and Environmental Sciences," exact="Lawrence Berkeley National Laboratory," post="Berkeley, USA Department of Environmental Science, Policy and Management,"/>
-   <result pre="Laboratory, Berkeley, USA Department of Environmental Science, Policy and Management," exact="University of California," post="Berkeley, USA Find this author on Google Scholar Find"/>
-   <result pre="site Adam C. Martiny Department of Ecology [[#38]] Evolutionary Biology," exact="University of California," post="Irvine, USA Department of Earth System Science, University of"/>
-   <result pre="University of California, Irvine, USA Department of Earth System Science," exact="University of California," post="Irvine, USA Find this author on Google Scholar Find"/>
-   <result pre="site Kathleen K. Treseder Department of Ecology [[#38]] Evolutionary Biology," exact="University of California," post="Irvine, USA Find this author on Google Scholar Find"/>
-   <result pre="site Steven D. Allison Department of Ecology [[#38]] Evolutionary Biology," exact="University of California," post="Irvine, USA Department of Earth System Science, University of"/>
-   <result pre="University of California, Irvine, USA Department of Earth System Science," exact="University of California," post="Irvine, USA Find this author on Google Scholar Find"/>
+   <result pre="Ashish A. Malik 1 Department of Ecology [[#38]] Evolutionary Biology," exact="University of California," post="Irvine, USA Find this author on Google Scholar Find"/>
+   <result pre="B. H. Martiny 1 Department of Ecology [[#38]] Evolutionary Biology," exact="University of California," post="Irvine, USA Find this author on Google Scholar Find"/>
+   <result pre="this site Eoin L. Brodie 2 Earth and Environmental Sciences," exact="Lawrence Berkeley National Laboratory," post="Berkeley, USA 3 Department of Environmental Science, Policy and"/>
+   <result pre="Berkeley, USA 3 Department of Environmental Science, Policy and Management," exact="University of California," post="Berkeley, USA Find this author on Google Scholar Find"/>
+   <result pre="Adam C. Martiny 1 Department of Ecology [[#38]] Evolutionary Biology," exact="University of California," post="Irvine, USA 4 Department of Earth System Science, University"/>
+   <result pre="of California, Irvine, USA 4 Department of Earth System Science," exact="University of California," post="Irvine, USA Find this author on Google Scholar Find"/>
+   <result pre="Kathleen K. Treseder 1 Department of Ecology [[#38]] Evolutionary Biology," exact="University of California," post="Irvine, USA Find this author on Google Scholar Find"/>
+   <result pre="Steven D. Allison 1 Department of Ecology [[#38]] Evolutionary Biology," exact="University of California," post="Irvine, USA 4 Department of Earth System Science, University"/>
+   <result pre="of California, Irvine, USA 4 Department of Earth System Science," exact="University of California," post="Irvine, USA Find this author on Google Scholar Find"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
    <result pre="acknowledge funding from the US DOE Genomic Science Program, BER," exact="Office of Science" post="project DE-SC0016410. References ↵ Allison, S.D. , 2014. Modeling"/>
    <result pre="to tundra: Global convergence in plant functioning. Proceedings of the" exact="National Academy of Sciences" post="94, 13730– 13734. OpenUrl Abstract / FREE Full Text"/>
@@ -575,15 +621,15 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_462150v2/results/search/funders/results.xml">
-   <result pre="Lauren Gardner doi: https://doi.org/10.1101/462150 Ying Zhang Department of Civil Engineering," exact="Johns Hopkins University," post="Baltimore, MD 21218, USA Department of Earth and Planetary"/>
-   <result pre="Baltimore, MD 21218, USA Department of Earth and Planetary Sciences," exact="Johns Hopkins University," post="Baltimore, MD 21218, USA Find this author on Google"/>
-   <result pre="this site Jefferson Riera Department of Environmental Health and Engineering," exact="Johns Hopkins University," post="Baltimore, MD 21205, USA Find this author on Google"/>
-   <result pre="author on this site Kayla Ostrow Department of Civil Engineering," exact="Johns Hopkins University," post="Baltimore, MD 21218, USA Find this author on Google"/>
-   <result pre="author on this site Sauleh Siddiqui Department of Civil Engineering," exact="Johns Hopkins University," post="Baltimore, MD 21218, USA Department of Applied Mathematics and"/>
-   <result pre="Baltimore, MD 21218, USA Department of Applied Mathematics and Statistics," exact="Johns Hopkins University," post="Baltimore, MD 21218, USA Find this author on Google"/>
-   <result pre="site Sahotra Sarkar Department of Philosophy, Department of Integrative Biology," exact="University of Texas at Austin" post="Austin, TX, 78712 Find this author on Google Scholar"/>
-   <result pre="author on this site Lauren Gardner Department of Civil Engineering," exact="Johns Hopkins University," post="Baltimore, MD 21218, USA School of Civil and Environmental"/>
-   <result pre="Baltimore, MD 21218, USA School of Civil and Environmental Engineering," exact="University of New South Wales" post="(UNSW) Sydney, Sydney, NSW, 2052 Australia Find this author"/>
+   <result pre="Gardner doi: https://doi.org/10.1101/462150 Ying Zhang 1 Department of Civil Engineering," exact="Johns Hopkins University," post="Baltimore, MD 21218, USA 2 Department of Earth and"/>
+   <result pre="MD 21218, USA 2 Department of Earth and Planetary Sciences," exact="Johns Hopkins University," post="Baltimore, MD 21218, USA Find this author on Google"/>
+   <result pre="site Jefferson Riera 3 Department of Environmental Health and Engineering," exact="Johns Hopkins University," post="Baltimore, MD 21205, USA Find this author on Google"/>
+   <result pre="on this site Kayla Ostrow 1 Department of Civil Engineering," exact="Johns Hopkins University," post="Baltimore, MD 21218, USA Find this author on Google"/>
+   <result pre="on this site Sauleh Siddiqui 1 Department of Civil Engineering," exact="Johns Hopkins University," post="Baltimore, MD 21218, USA 4 Department of Applied Mathematics"/>
+   <result pre="MD 21218, USA 4 Department of Applied Mathematics and Statistics," exact="Johns Hopkins University," post="Baltimore, MD 21218, USA Find this author on Google"/>
+   <result pre="Sahotra Sarkar 6 Department of Philosophy, Department of Integrative Biology," exact="University of Texas at Austin" post="Austin, TX, 78712 Find this author on Google Scholar"/>
+   <result pre="on this site Lauren Gardner 1 Department of Civil Engineering," exact="Johns Hopkins University," post="Baltimore, MD 21218, USA 8 School of Civil and"/>
+   <result pre="MD 21218, USA 8 School of Civil and Environmental Engineering," exact="University of New South Wales" post="(UNSW) Sydney, Sydney, NSW, 2052 Australia Find this author"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Epidemiology Subject Areas"/>
    <result pre="to participate The protocol was reviewed and approved by the" exact="Johns Hopkins Bloomberg School of Public Health" post="Institutional Review Board (JHSPH IRB), #IRB00009485, as well as"/>
    <result pre="Fever who supervised the data collection and Benjamin Zaitchik at" exact="Johns Hopkins University" post="for advice on the climate data extraction. Footnotes Email"/>
@@ -622,15 +668,15 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_496463v1/results/search/funders/results.xml">
-   <result pre="Bart Kempenaers doi: https://doi.org/10.1101/496463 Kaspar Delhey School of Biological Sciences," exact="Monash University," post="Clayton, Victoria, Australia Find this author on Google Scholar"/>
-   <result pre="this site James Dale Institute of Natural and Mathematical Science," exact="Massey University," post="Auckland, New Zealand. E-mail: Find this author on Google"/>
+   <result pre="Kempenaers doi: https://doi.org/10.1101/496463 Kaspar Delhey 1 School of Biological Sciences," exact="Monash University," post="Clayton, Victoria, Australia Find this author on Google Scholar"/>
+   <result pre="site James Dale 2 Institute of Natural and Mathematical Science," exact="Massey University," post="Auckland, New Zealand. E-mail: Find this author on Google"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Evolutionary Biology Subject"/>
    <result pre="was supported by a Marsden Fund Grant (15-MAU-136) from the" exact="Royal Society" post="of New Zealand. Footnotes Authorship: KD conceived the study."/>
   </snippets>
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_506006v1/results/search/funders/results.xml">
-   <result pre="SW Jefferson Ave., Corvallis, Oregon, USA Washington Natural Heritage Program," exact="Department of Natural Resources," post="PO Box 47014, Olympia, WA, USA Find this author"/>
+   <result pre="Jefferson Ave., Corvallis, Oregon, USA 3 Washington Natural Heritage Program," exact="Department of Natural Resources," post="PO Box 47014, Olympia, WA, USA Find this author"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
    <result pre="favoured races in the struggle for life [reprinted 1964]. Cambridge:" exact="Harvard University" post="Press; 1859. 6. ↵ Koopowitz H. A stochastic model"/>
    <result pre=". Native orchids of North America north of Mexico. Standford:" exact="Stanford University" post="Press; 1978. 71. ↵ McCormick MK , Whigham DF"/>
@@ -654,10 +700,10 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_528893v1/results/search/funders/results.xml">
-   <result pre="doi: https://doi.org/10.1101/528893 Chloë Logar-Henderson Dalla Lana School of Public Health," exact="University of Toronto" post="Find this author on Google Scholar Find this author"/>
-   <result pre="this site Rebecca Ling Dalla Lana School of Public Health," exact="University of Toronto" post="Find this author on Google Scholar Find this author"/>
-   <result pre="site Ashleigh R. Tuite Dalla Lana School of Public Health," exact="University of Toronto" post="Find this author on Google Scholar Find this author"/>
-   <result pre="site David N. Fisman Dalla Lana School of Public Health," exact="University of Toronto" post="Division of Infectious Diseases, Department of Medicine, Faculty of"/>
+   <result pre="https://doi.org/10.1101/528893 Chloë Logar-Henderson 1 Dalla Lana School of Public Health," exact="University of Toronto" post="Find this author on Google Scholar Find this author"/>
+   <result pre="site Rebecca Ling 1 Dalla Lana School of Public Health," exact="University of Toronto" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Ashleigh R. Tuite 1 Dalla Lana School of Public Health," exact="University of Toronto" post="Find this author on Google Scholar Find this author"/>
+   <result pre="David N. Fisman 1 Dalla Lana School of Public Health," exact="University of Toronto" post="2 Division of Infectious Diseases, Department of Medicine, Faculty"/>
    <result pre="Division of Infectious Diseases, Department of Medicine, Faculty of Medicine," exact="University of Toronto" post="Find this author on Google Scholar Find this author"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Epidemiology Subject Areas"/>
    <result pre="in the United States [ 2]. In 1988, the US" exact="Centers for Disease Control and Prevention" post="(CDC) established the Cholera and Other Vibrio Illness Surveillance"/>
@@ -673,11 +719,54 @@
   </snippets>
  </snippetsTree>
  <snippetsTree>
+  <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_548420v1/results/search/funders/results.xml">
+   <result pre="doi: https://doi.org/10.1101/548420 Bryan Shuman 1 Department of Geology [[#38]] Geophysics," exact="University of Wyoming," post="Laramie WY 82071 Find this author on Google Scholar"/>
+   <result pre="for this author on this site David R. Foster 3" exact="Harvard Forest, Harvard University," post="Petersham MA 01366 Find this author on Google Scholar"/>
+   <result pre="author on this site David R. Foster 3 Harvard Forest," exact="Harvard University," post="Petersham MA 01366 Find this author on Google Scholar"/>
+   <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
+   <result pre="project was provided to BS, WWO, and DRF from the" exact="National Science Foundation" post="Ecosystem Science Program (DEB-1146297, DEB-1146207). We also benefited from"/>
+   <result pre="vegetation die-off in response to global-change-type drought: Proceedings of the" exact="National Academy of Sciences" post="of the United States of America, v. 102, p."/>
+   <result pre="Vegetation synchronously leans upslope as climate warms: Proceedings of the" exact="National Academy of Sciences," post="v. 105, p. 11591– 11592, doi:10.1073/pnas.0806579105. OpenUrl FREE Full"/>
+   <result pre="Robust Locally Weighted Regression and Smoothing Scatterplots: Journal of the" exact="American Statistical Association," post="v. 74, p. 829– 836, doi:10.1080/01621459.1979.10481038. OpenUrl CrossRef Web"/>
+   <result pre="D.R. , 2014, Hemlock: A Forest Giant on the Edge:" exact="Yale University" post="Press, 336 p. ↵ Foster, D.R. , Oswald, W.W."/>
+   <result pre="deposits in the Catskill Mountain region of New York: Dissertation." exact="New York University," post="New York, New York, USA. ↵ Ibe, R.A. ,"/>
+   <result pre="in the Catskill Mountain region of New York: Dissertation. New" exact="York University," post="New York, New York, USA. ↵ Ibe, R.A. ,"/>
+   <result pre="States inferred from modern calibrated stable oxygen and carbon isotopes:" exact="Geological Society of America" post="Bulletin, v. 114, p. 1326– 1340, doi:10.1130/0016-7606(2002)114&amp;lt;;1326:lghaca&amp;gt;;2.0.co;2. OpenUrl Abstract"/>
+   <result pre="M.B. , 2011, Ecological Niches and Geographic Distributions: Princeton, N.J," exact="Princeton University" post="Press, 328 p. ↵ Potter, K.M. , Jetton, R.M."/>
+   <result pre=", 1991, Vegetation history of western Ohio: Limnological Research Center," exact="University of Minnesota," post="Minneapolis, Minnesota. ↵ Shuman, B. , Bartlein, P. ,"/>
+   <result pre="ecological responses to Holocene North Atlantic variability: Proceedings of the" exact="National Academy of Sciences," post="in press. ↵ Shuman, B.N. , Newby, P. ,"/>
+   <result pre="P.J. eds., Global Climates Since the Last Glacial Maximum, Minneapolis," exact="University of Minnesota" post="Press, p. 415– 467. ↵ Whitmore, J. , Gajewski,"/>
+  </snippets>
+ </snippetsTree>
+ <snippetsTree>
+  <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_549675v1/results/search/funders/results.xml">
+   <result pre="Molecular y Experimental, Departamento de Ecología Evolutiva, Instituto de Ecología." exact="Universidad Nacional Autónoma de México," post="Circuito Exterior s/n, Ciudad de México, 04510, Mexico. Find"/>
+   <result pre="site Santiago Ramírez-Barahona 2 Departamento de Botánica, Instituto de Biología," exact="Universidad Nacional Autónoma de México," post="Circuito Exterior s/n, Ciudad de México, 04510, Mexico. Find"/>
+   <result pre="fruns@unam.mx Peter Tiffin 3 Department of Plant and Microbial Biology," exact="University of Minnesota," post="St. Paul, MN 55108, USA Find this author on"/>
+   <result pre="Molecular y Experimental, Departamento de Ecología Evolutiva, Instituto de Ecología." exact="Universidad Nacional Autónoma de México," post="Circuito Exterior s/n, Ciudad de México, 04510, Mexico. Find"/>
+   <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Evolutionary Biology Subject"/>
+   <result pre="AT , et al. 2011. Ecological niches and geographic distributions." exact="Princeton University" post="Press, New Jersey. 28. ↵ Pagel J , Schurr"/>
+  </snippets>
+ </snippetsTree>
+ <snippetsTree>
+  <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_567321v1/results/search/funders/results.xml">
+   <result pre="Beaumont doi: https://doi.org/10.1101/567321 Sabira Sultana 1 Department of Biological Sciences," exact="Macquarie University," post="North Ryde, New South Wales, 2109, Australia 2 Department"/>
+   <result pre="this site John B. Baumgartner 1 Department of Biological Sciences," exact="Macquarie University," post="North Ryde, New South Wales, 2109, Australia Find this"/>
+   <result pre="on this site Bernard C. Dominiak 3 New South Wales" exact="Department of Primary Industries," post="Locked Bag 21, Orange, New South Wales, 2800, Australia"/>
+   <result pre="this site Linda J. Beaumont 1 Department of Biological Sciences," exact="Macquarie University," post="North Ryde, New South Wales, 2109, Australia Find this"/>
+   <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
+   <result pre="data from various state government departments (Biosecurity and Food Safety," exact="Department of Primary Industries," post="NSW; Biosecurity Queensland and the Queensland Department of Agriculture"/>
+   <result pre="Department of Economic Development, Jobs, Transport and Resources, Victoria; and" exact="Department of Primary Industries" post="and Regions South Australia (PIRSA)). Trap data from these"/>
+   <result pre="their feedback and advice. SS was supported by an International" exact="Macquarie University" post="Research Excellence Scholarship (iMQRES). This research was conducted as"/>
+   <result pre="and host plants of fruit flies (Diptera: Tephritidae) in Australia:" exact="Department of Primary Industries," post="Queensland; 2000. 1– 75 p. 4. ↵ Horticultural Policy"/>
+  </snippets>
+ </snippetsTree>
+ <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_570275v2/results/search/funders/results.xml">
    <result pre="School of Environment and Sustainability, Global Institute for Water Security," exact="University of Saskatchewan," post="323 Kirk Hall, 117 Science Place, Saskatoon Saskatchewan Canada,"/>
-   <result pre="Baulch Sherry L. Schiff Department of Earth and Environmental Sciences," exact="University of Waterloo," post="200 University Avenue West, Waterloo, Ontario Canada N2L 3G1"/>
-   <result pre="author on this site Dana F. Simon Department of Chemistry," exact="Université de Montréal," post="2900 Édouard-Montpetit, Montréal, Québec Canada H3C 3J7 Find this"/>
-   <result pre="this author on this site Sébastien Sauvé Department of Chemistry," exact="Université de Montréal," post="2900 Édouard-Montpetit, Montréal, Québec Canada H3C 3J7 Find this"/>
+   <result pre="Sherry L. Schiff 3 Department of Earth and Environmental Sciences," exact="University of Waterloo," post="200 University Avenue West, Waterloo, Ontario Canada N2L 3G1"/>
+   <result pre="on this site Dana F. Simon 4 Department of Chemistry," exact="Université de Montréal," post="2900 Édouard-Montpetit, Montréal, Québec Canada H3C 3J7 Find this"/>
+   <result pre="author on this site Sébastien Sauvé 4 Department of Chemistry," exact="Université de Montréal," post="2900 Édouard-Montpetit, Montréal, Québec Canada H3C 3J7 Find this"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
    <result pre="°C, and analyzed at the Environmental Geochemistry Laboratory at the" exact="University of Waterloo" post="(Waterloo, ON) as per AHPA (1998; see Table S1"/>
    <result pre="the United States Geological Society, Statistics Canada, and the Ontario" exact="Ministry of Natural Resources" post="(land-use). Data analysis and statistics All data analysis was"/>
@@ -701,9 +790,17 @@
   </snippets>
  </snippetsTree>
  <snippetsTree>
+  <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_632976v1/results/search/funders/results.xml">
+   <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Plant Biology Subject"/>
+   <result pre="enhance the environmental performance of the EU agricultural system (" exact="European Commission," post="2013). Leguminous crops in arable rotations are encouraged to"/>
+   <result pre="Agric. For. Meteorol. 200, 222– 232. https://doi.org/ https://doi.org/10.1016/j.agrformet.2014.09.024 OpenUrl ↵" exact="European Commission," post="2013. Regulation (EU) No 1307/2013 establishing rules for direct"/>
+   <result pre="Soybean Development. Ames, IA: Agriculture and Home Economics Experiment Station," exact="Iowa State University" post="of Science and Technology. ↵ Gallardo-Carrera, A. , Léonard,"/>
+  </snippets>
+ </snippetsTree>
+ <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_634568v3/results/search/funders/results.xml">
-   <result pre="https://doi.org/10.1101/634568 Shawn D. Taylor School of Natural Resources and Environment," exact="University of Florida" post="Gainesville, FL, United States Find this author on Google"/>
-   <result pre="shawntaylor@weecology.org Ethan P. White Department of Wildlife Ecology and Conservation," exact="University of Florida," post="Gainesville, FL, United States Find this author on Google"/>
+   <result pre="Shawn D. Taylor 1 School of Natural Resources and Environment," exact="University of Florida" post="Gainesville, FL, United States Find this author on Google"/>
+   <result pre="Ethan P. White 2 Department of Wildlife Ecology and Conservation," exact="University of Florida," post="Gainesville, FL, United States Find this author on Google"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
    <result pre="near-term ecological forecasting: Needs, opportunities, and challenges. Proceedings of the" exact="National Academy of Sciences" post="115: 1424– 1432. OpenUrl Abstract / FREE Full Text"/>
    <result pre="Meteorology. ↵ PRISM Climate Group. 2004. Oregon state university. http://prism.oregonstate.edu;" exact="Oregon State University." post="↵ Python Software Foundation. 2003. Python language reference manual,"/>
@@ -713,35 +810,35 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_658872v1/results/search/funders/results.xml">
-   <result pre="Ko doi: https://doi.org/10.1101/658872 Marcelo Cunha Escola Nacional de Saúde Pública," exact="Fundação Oswaldo Cruz," post="Ministério da Saúde, Rio de Janeiro, Brazil Find this"/>
-   <result pre="Marcelo Cunha Escola Nacional de Saúde Pública, Fundação Oswaldo Cruz," exact="Ministério da Saúde," post="Rio de Janeiro, Brazil Find this author on Google"/>
-   <result pre="on this site Federico Costa Instituto de Pesquisas Gonçalo Moniz," exact="Fundação Oswaldo Cruz," post="Ministério da Saúde, Salvador, Brazil Instituto de Saúde Coletiva,"/>
-   <result pre="Federico Costa Instituto de Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz," exact="Ministério da Saúde," post="Salvador, Brazil Instituto de Saúde Coletiva, Universidade Federal da"/>
+   <result pre="doi: https://doi.org/10.1101/658872 Marcelo Cunha 1 Escola Nacional de Saúde Pública," exact="Fundação Oswaldo Cruz," post="Ministério da Saúde, Rio de Janeiro, Brazil Find this"/>
+   <result pre="Cunha 1 Escola Nacional de Saúde Pública, Fundação Oswaldo Cruz," exact="Ministério da Saúde," post="Rio de Janeiro, Brazil Find this author on Google"/>
+   <result pre="this site Federico Costa 2 Instituto de Pesquisas Gonçalo Moniz," exact="Fundação Oswaldo Cruz," post="Ministério da Saúde, Salvador, Brazil 3 Instituto de Saúde"/>
+   <result pre="Costa 2 Instituto de Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz," exact="Ministério da Saúde," post="Salvador, Brazil 3 Instituto de Saúde Coletiva, Universidade Federal"/>
    <result pre="Department of Epidemiology of Microbial Diseases, School of Public Health," exact="Yale University," post="New Heaven, USA Find this author on Google Scholar"/>
-   <result pre="correspondence: federico.costa@ufba.br Guilherme S. Ribeiro Instituto de Pesquisas Gonçalo Moniz," exact="Fundação Oswaldo Cruz," post="Ministério da Saúde, Salvador, Brazil Faculdade de Medicina, Universidade"/>
-   <result pre="S. Ribeiro Instituto de Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz," exact="Ministério da Saúde," post="Salvador, Brazil Faculdade de Medicina, Universidade Federal da Bahia,"/>
-   <result pre="S. Ribeiro Marília S. Carvalho Escola Nacional de Saúde Pública," exact="Fundação Oswaldo Cruz," post="Ministério da Saúde, Rio de Janeiro, Brazil Find this"/>
-   <result pre="S. Carvalho Escola Nacional de Saúde Pública, Fundação Oswaldo Cruz," exact="Ministério da Saúde," post="Rio de Janeiro, Brazil Find this author on Google"/>
-   <result pre="this site Renato B. Reis Instituto de Pesquisas Gonçalo Moniz," exact="Fundação Oswaldo Cruz," post="Ministério da Saúde, Salvador, Brazil Find this author on"/>
-   <result pre="B. Reis Instituto de Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz," exact="Ministério da Saúde," post="Salvador, Brazil Find this author on Google Scholar Find"/>
-   <result pre="this site Nivison N. Júnior Instituto de Pesquisas Gonçalo Moniz," exact="Fundação Oswaldo Cruz," post="Ministério da Saúde, Salvador, Brazil Instituto de Saúde Coletiva,"/>
-   <result pre="N. Júnior Instituto de Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz," exact="Ministério da Saúde," post="Salvador, Brazil Instituto de Saúde Coletiva, Universidade Federal da"/>
+   <result pre="federico.costa@ufba.br Guilherme S. Ribeiro 2 Instituto de Pesquisas Gonçalo Moniz," exact="Fundação Oswaldo Cruz," post="Ministério da Saúde, Salvador, Brazil 6 Faculdade de Medicina,"/>
+   <result pre="Ribeiro 2 Instituto de Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz," exact="Ministério da Saúde," post="Salvador, Brazil 6 Faculdade de Medicina, Universidade Federal da"/>
+   <result pre="Ribeiro Marília S. Carvalho 1 Escola Nacional de Saúde Pública," exact="Fundação Oswaldo Cruz," post="Ministério da Saúde, Rio de Janeiro, Brazil Find this"/>
+   <result pre="Carvalho 1 Escola Nacional de Saúde Pública, Fundação Oswaldo Cruz," exact="Ministério da Saúde," post="Rio de Janeiro, Brazil Find this author on Google"/>
+   <result pre="site Renato B. Reis 2 Instituto de Pesquisas Gonçalo Moniz," exact="Fundação Oswaldo Cruz," post="Ministério da Saúde, Salvador, Brazil Find this author on"/>
+   <result pre="Reis 2 Instituto de Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz," exact="Ministério da Saúde," post="Salvador, Brazil Find this author on Google Scholar Find"/>
+   <result pre="site Nivison N. Júnior 2 Instituto de Pesquisas Gonçalo Moniz," exact="Fundação Oswaldo Cruz," post="Ministério da Saúde, Salvador, Brazil 3 Instituto de Saúde"/>
+   <result pre="Júnior 2 Instituto de Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz," exact="Ministério da Saúde," post="Salvador, Brazil 3 Instituto de Saúde Coletiva, Universidade Federal"/>
    <result pre="Department of Epidemiology of Microbial Diseases, School of Public Health," exact="Yale University," post="New Heaven, USA Find this author on Google Scholar"/>
-   <result pre="this site Edilane L. Gouveia Instituto de Pesquisas Gonçalo Moniz," exact="Fundação Oswaldo Cruz," post="Ministério da Saúde, Salvador, Brazil Find this author on"/>
-   <result pre="L. Gouveia Instituto de Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz," exact="Ministério da Saúde," post="Salvador, Brazil Find this author on Google Scholar Find"/>
-   <result pre="this site Andreia C. Santos Instituto de Pesquisas Gonçalo Moniz," exact="Fundação Oswaldo Cruz," post="Ministério da Saúde, Salvador, Brazil Find this author on"/>
-   <result pre="C. Santos Instituto de Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz," exact="Ministério da Saúde," post="Salvador, Brazil Find this author on Google Scholar Find"/>
-   <result pre="on this site Adriano Queiroz Instituto de Pesquisas Gonçalo Moniz," exact="Fundação Oswaldo Cruz," post="Ministério da Saúde, Salvador, Brazil Find this author on"/>
-   <result pre="Adriano Queiroz Instituto de Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz," exact="Ministério da Saúde," post="Salvador, Brazil Find this author on Google Scholar Find"/>
-   <result pre="site Elsio A. Wunder Jr. Instituto de Pesquisas Gonçalo Moniz," exact="Fundação Oswaldo Cruz," post="Ministério da Saúde, Salvador, Brazil Department of Epidemiology of"/>
-   <result pre="Wunder Jr. Instituto de Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz," exact="Ministério da Saúde," post="Salvador, Brazil Department of Epidemiology of Microbial Diseases, School"/>
+   <result pre="site Edilane L. Gouveia 2 Instituto de Pesquisas Gonçalo Moniz," exact="Fundação Oswaldo Cruz," post="Ministério da Saúde, Salvador, Brazil Find this author on"/>
+   <result pre="Gouveia 2 Instituto de Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz," exact="Ministério da Saúde," post="Salvador, Brazil Find this author on Google Scholar Find"/>
+   <result pre="site Andreia C. Santos 2 Instituto de Pesquisas Gonçalo Moniz," exact="Fundação Oswaldo Cruz," post="Ministério da Saúde, Salvador, Brazil Find this author on"/>
+   <result pre="Santos 2 Instituto de Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz," exact="Ministério da Saúde," post="Salvador, Brazil Find this author on Google Scholar Find"/>
+   <result pre="this site Adriano Queiroz 2 Instituto de Pesquisas Gonçalo Moniz," exact="Fundação Oswaldo Cruz," post="Ministério da Saúde, Salvador, Brazil Find this author on"/>
+   <result pre="Queiroz 2 Instituto de Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz," exact="Ministério da Saúde," post="Salvador, Brazil Find this author on Google Scholar Find"/>
+   <result pre="Elsio A. Wunder Jr. 2 Instituto de Pesquisas Gonçalo Moniz," exact="Fundação Oswaldo Cruz," post="Ministério da Saúde, Salvador, Brazil 5 Department of Epidemiology"/>
+   <result pre="Jr. 2 Instituto de Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz," exact="Ministério da Saúde," post="Salvador, Brazil 5 Department of Epidemiology of Microbial Diseases,"/>
    <result pre="Department of Epidemiology of Microbial Diseases, School of Public Health," exact="Yale University," post="New Heaven, USA Find this author on Google Scholar"/>
-   <result pre="this site Mitermayer G. Reis Instituto de Pesquisas Gonçalo Moniz," exact="Fundação Oswaldo Cruz," post="Ministério da Saúde, Salvador, Brazil Department of Epidemiology of"/>
-   <result pre="G. Reis Instituto de Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz," exact="Ministério da Saúde," post="Salvador, Brazil Department of Epidemiology of Microbial Diseases, School"/>
-   <result pre="Department of Epidemiology of Microbial Diseases, School of Public Health," exact="Yale University," post="New Heaven, USA Faculdade de Medicina, Universidade Federal da"/>
+   <result pre="site Mitermayer G. Reis 2 Instituto de Pesquisas Gonçalo Moniz," exact="Fundação Oswaldo Cruz," post="Ministério da Saúde, Salvador, Brazil 5 Department of Epidemiology"/>
+   <result pre="Reis 2 Instituto de Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz," exact="Ministério da Saúde," post="Salvador, Brazil 5 Department of Epidemiology of Microbial Diseases,"/>
+   <result pre="Department of Epidemiology of Microbial Diseases, School of Public Health," exact="Yale University," post="New Heaven, USA 6 Faculdade de Medicina, Universidade Federal"/>
    <result pre="Department of Epidemiology of Microbial Diseases, School of Public Health," exact="Yale University," post="New Heaven, USA Find this author on Google Scholar"/>
-   <result pre="this site Albert I. Ko Instituto de Pesquisas Gonçalo Moniz," exact="Fundação Oswaldo Cruz," post="Ministério da Saúde, Salvador, Brazil Department of Epidemiology of"/>
-   <result pre="I. Ko Instituto de Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz," exact="Ministério da Saúde," post="Salvador, Brazil Department of Epidemiology of Microbial Diseases, School"/>
+   <result pre="site Albert I. Ko 2 Instituto de Pesquisas Gonçalo Moniz," exact="Fundação Oswaldo Cruz," post="Ministério da Saúde, Salvador, Brazil 5 Department of Epidemiology"/>
+   <result pre="Ko 2 Instituto de Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz," exact="Ministério da Saúde," post="Salvador, Brazil 5 Department of Epidemiology of Microbial Diseases,"/>
    <result pre="Department of Epidemiology of Microbial Diseases, School of Public Health," exact="Yale University," post="New Heaven, USA Find this author on Google Scholar"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Epidemiology Subject Areas"/>
    <result pre="Foundation, the Brazilian National Commission for Ethics in Research and" exact="Yale University." post="All adult participants provided written informed consent. Participants aged"/>
@@ -753,8 +850,8 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_711341v1/results/search/funders/results.xml">
-   <result pre="author on this site For correspondence: simontapper@trentu.ca Joseph J. Nocera" exact="University of New Brunswick," post="Forestry and Environmental Management, Fredericton NB, Canada Find this"/>
-   <result pre="record for Joseph J. Nocera Gary Burness Department of Biology," exact="Trent University," post="1600 West Bank Dr., Peterborough ON, Canada Find this"/>
+   <result pre="on this site For correspondence: simontapper@trentu.ca Joseph J. Nocera 2" exact="University of New Brunswick," post="Forestry and Environmental Management, Fredericton NB, Canada Find this"/>
+   <result pre="for Joseph J. Nocera Gary Burness 3 Department of Biology," exact="Trent University," post="1600 West Bank Dr., Peterborough ON, Canada Find this"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Zoology Subject Areas"/>
    <result pre="Study area and species All research was approved by the" exact="Trent University" post="Animal Care Committee, in accordance with the Canadian Council"/>
    <result pre="two nest-box breeding populations of tree swallows located at the" exact="Trent University" post="Nature Areas, Peterborough, Ontario, Canada (44°21′N, 78°17′W) and at"/>
@@ -766,8 +863,8 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_769232v2/results/search/funders/results.xml">
-   <result pre="Amsterdam, Amsterdam, The Netherlands Forest Ecology and Forest Management Group," exact="Wageningen University" post="and Research, Wageningen, the Netherlands Find this author on"/>
-   <result pre="04103 Leipzig, Germany Quantitative Assessment Methods Section, Pacific Biological Station," exact="Fisheries and Oceans Canada," post="Nanaimo, BC, Canada Find this author on Google Scholar"/>
+   <result pre="Amsterdam, The Netherlands 7 Forest Ecology and Forest Management Group," exact="Wageningen University" post="and Research, Wageningen, the Netherlands Find this author on"/>
+   <result pre="Leipzig, Germany 13 Quantitative Assessment Methods Section, Pacific Biological Station," exact="Fisheries and Oceans Canada," post="Nanaimo, BC, Canada Find this author on Google Scholar"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
    <result pre="Organisation for Scientific Research (NWO). CM acknowledges funding from the" exact="Volkswagen Foundation" post="through a Freigeist Fellowship. We thank John Kartesz and"/>
    <result pre="database description and user guide version 8.0 for Phase 2," exact="U.S. Department of Agriculture," post="Forest Service. ↵ Cadotte, M.W. ( 2015) Phylogenetic diversity"/>
@@ -779,10 +876,10 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_771279v1/results/search/funders/results.xml">
-   <result pre="Miranda Teboh-Ewungkem , Ming Li doi: https://doi.org/10.1101/771279 Samantha Roth The" exact="Pennsylvania State University" post="Department of Statistics, University Park, Pennsylvania, United States of"/>
-   <result pre="University Park, Pennsylvania, United States of America Department of Mathematics," exact="Lehigh University," post="Bethlehem, Pennsylvania, United States of America Find this author"/>
-   <result pre="ORCID record for Samantha Roth Miranda Teboh-Ewungkem Department of Mathematics," exact="Lehigh University," post="Bethlehem, Pennsylvania, United States of America Find this author"/>
-   <result pre="Teboh-Ewungkem For correspondence: mit703@lehigh.edu Ming Li Center for Environmental Science," exact="University of Maryland," post="Cambridge, Maryland, United States of America Find this author"/>
+   <result pre="Teboh-Ewungkem , Ming Li doi: https://doi.org/10.1101/771279 Samantha Roth 1 The" exact="Pennsylvania State University" post="Department of Statistics, University Park, Pennsylvania, United States of"/>
+   <result pre="Park, Pennsylvania, United States of America 2 Department of Mathematics," exact="Lehigh University," post="Bethlehem, Pennsylvania, United States of America Find this author"/>
+   <result pre="record for Samantha Roth Miranda Teboh-Ewungkem 2 Department of Mathematics," exact="Lehigh University," post="Bethlehem, Pennsylvania, United States of America Find this author"/>
+   <result pre="For correspondence: mit703@lehigh.edu Ming Li 3 Center for Environmental Science," exact="University of Maryland," post="Cambridge, Maryland, United States of America Find this author"/>
    <result pre="Mendeley Papers RefWorks Tagged Ref Manager RIS Zotero Tweet Widget" exact="Facebook" post="Like Google Plus One Subject Area Ecology Subject Areas"/>
    <result pre="for these two species of mosquitoes, as determined by the" exact="Centers for Disease Control and Prevention" post="(CDC), are provided ( Fig 1): ;These figures are"/>
    <result pre="in twenty cities [ 14]. The New York City (NYC)" exact="Department of Health" post="and Mental Hygiene applied a zero-inflated Poisson model to"/>

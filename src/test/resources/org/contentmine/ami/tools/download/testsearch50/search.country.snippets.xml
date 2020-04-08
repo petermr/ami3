@@ -69,12 +69,12 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_066696v3/results/search/country/results.xml">
-   <result pre="Department of Zoology, PO Box 56, University of Otago, Dunedin," exact="New Zealand" post="Department of Ecology, Environment and Evolution, La Trobe University,"/>
+   <result pre="Department of Zoology, PO Box 56, University of Otago, Dunedin," exact="New Zealand" post="2 Department of Ecology, Environment and Evolution, La Trobe"/>
    <result pre="Department of Ecology, Environment and Evolution, La Trobe University, Melbourne," exact="Australia" post="Find this author on Google Scholar Find this author"/>
    <result pre="Department of Zoology, PO Box 56, University of Otago, Dunedin," exact="New Zealand" post="Find this author on Google Scholar Find this author"/>
    <result pre="Department of Ecology, Environment and Evolution, La Trobe University, Melbourne," exact="Australia" post="Find this author on Google Scholar Find this author"/>
    <result pre="Group, Department of Conservation, Private Bag 68 908, Newton, Auckland," exact="New Zealand" post="Find this author on Google Scholar Find this author"/>
-   <result pre="site John T. Darby Otago Museum, PO Box 6202, Dunedin," exact="New Zealand" post="Find this author on Google Scholar Find this author"/>
+   <result pre="John T. Darby 4 Otago Museum, PO Box 6202, Dunedin," exact="New Zealand" post="Find this author on Google Scholar Find this author"/>
    <result pre="Department of Zoology, PO Box 56, University of Otago, Dunedin," exact="New Zealand" post="Find this author on Google Scholar Find this author"/>
    <result pre="Department of Zoology, PO Box 56, University of Otago, Dunedin," exact="New Zealand" post="Find this author on Google Scholar Find this author"/>
    <result pre="Department of Zoology, PO Box 56, University of Otago, Dunedin," exact="New Zealand" post="Find this author on Google Scholar Find this author"/>
@@ -130,8 +130,8 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_091686v1/results/search/country/results.xml">
-   <result pre="Picó doi: https://doi.org/10.1101/091686 Arnald Marcer CREAF, Cerdanyola del Vallès 08193," exact="Spain" post="Univ. Autònoma de Barcelona, Cerdanyola del Vallès 08193, Spain"/>
-   <result pre="08193, Spain Univ. Autònoma de Barcelona, Cerdanyola del Vallès 08193," exact="Spain" post="Find this author on Google Scholar Find this author"/>
+   <result pre="doi: https://doi.org/10.1101/091686 Arnald Marcer a CREAF, Cerdanyola del Vallès 08193," exact="Spain" post="b Univ. Autònoma de Barcelona, Cerdanyola del Vallès 08193,"/>
+   <result pre="Spain b Univ. Autònoma de Barcelona, Cerdanyola del Vallès 08193," exact="Spain" post="Find this author on Google Scholar Find this author"/>
    <result pre="and Evolutionary Biology, University of Toronto, Toronto, ON M5S 3G5," exact="Canada" post="Find this author on Google Scholar Find this author"/>
    <result pre="de Doñana (EBD), Consejo Superior de Investigaciones Científicas (CSIC), Sevilla," exact="Spain" post="Find this author on Google Scholar Find this author"/>
    <result pre="were partially supported by Ministerio de Economía y Competitividad of" exact="Spain" post="(CGL2012-33220/) and the Agency for Management of University and"/>
@@ -154,6 +154,13 @@
   </snippets>
  </snippetsTree>
  <snippetsTree>
+  <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_149617v4/results/search/country/results.xml">
+   <result pre="of Plant Sciences, University of Bern, Altenbergrain 21, Bern 3013," exact="Switzerland" post="Find this author on Google Scholar Find this author"/>
+   <result pre="an East Mediterranean region including the Italic Peninsula, part of" exact="Greece" post="and Turkey. This module holds 18 species and was"/>
+   <result pre="species richness values, holding 10 species each. The former comprised" exact="Iceland" post="and the British Isles and extended eastward up to"/>
+  </snippets>
+ </snippetsTree>
+ <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_164806v1/results/search/country/results.xml">
    <result pre="shifting their phenology faster in spring than in autumn in" exact="China" post="5 , and the strength of phenological responses to"/>
    <result pre="change. Proceedings of the National Academy of Sciences of the" exact="United States" post="of America 103, 6248 – 6251 , doi: 10.1073/pnas.0510397103"/>
@@ -173,9 +180,27 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_167973v1/results/search/country/results.xml">
-   <result pre="correspondence: lbuckley@uw.edu Imran Khaliq Zoology Department, Ghazi University, 32200 Punjab," exact="Pakistan" post="Find this author on Google Scholar Find this author"/>
+   <result pre="lbuckley@uw.edu Imran Khaliq 2 Zoology Department, Ghazi University, 32200 Punjab," exact="Pakistan" post="Find this author on Google Scholar Find this author"/>
    <result pre="and Climate Research Centre, Senckenberg Gesellschaft für Naturforschung, 60325 Frankfurt," exact="Germany" post="Find this author on Google Scholar Find this author"/>
    <result pre="of the water budget for the endangered night parrot of" exact="Australia" post="under recent and future climates. Climate Change Responses, 3,"/>
+  </snippets>
+ </snippetsTree>
+ <snippetsTree>
+  <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_172221v6/results/search/country/results.xml">
+   <result pre="Ryan 1 Department of Geography, University of Florida, Gainesville, Florida," exact="United States" post="of America 2 Emerging Pathogens Institute, University of Florida,"/>
+   <result pre="America 2 Emerging Pathogens Institute, University of Florida, Gainesville, Florida," exact="United States" post="of America 3 School of Life Sciences, University of"/>
+   <result pre="America 3 School of Life Sciences, University of KwaZulu-Natal, Durban," exact="South Africa" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Department of Biology, Stanford University, 371 Serra Mall, Stanford, California," exact="United States" post="of America Find this author on Google Scholar Find"/>
+   <result pre="Virginia Polytechnic and State University, 250 Drillfield Drive, Blacksburg, Virginia," exact="United States" post="of America Find this author on Google Scholar Find"/>
+   <result pre="suitable regions [ 17]; or in mid-latitude regions of the" exact="United States," post="where it has been suggested that traveler cases could"/>
+   <result pre="high-elevation parts of central America and east Africa, and the" exact="United States" post="and Canada. But increases are expected across the board"/>
+   <result pre="both mosquito species. As the 2005 epidemic of chikungunya in" exact="India" post="and the 2015 pandemic of Zika virus in the"/>
+   <result pre="tropics (eastern Africa and the northern Andes) and in the" exact="United States" post="and Canada. These increases are expected not only for"/>
+   <result pre="S , Jiolle D , et al. Zika Virus in" exact="Gabon" post="(Central Africa) – 2007: A New Threat from Aedes"/>
+   <result pre="of the probability of autochthonous transmission of Chikungunya virus in" exact="Canada" post="under recent and projected climate change. Environ Health Perspect."/>
+   <result pre="impact of climate change on dengue transmission in the southeastern" exact="United States." post="Environ Health Perspect. 2017; 125: 579. OpenUrl 52. ↵"/>
+   <result pre="The ecological consequences of socioeconomic and land-use changes in postagriculture" exact="Puerto Rico." post="AIBS Bull. 2003; 53: 1159– 1168. OpenUrl 67. ↵"/>
+   <result pre="conflict among ecological forecasts of Zika virus outbreaks in the" exact="United States." post="Sci Rep. 2018; 8: 4921. OpenUrl 81. ↵ Evans"/>
   </snippets>
  </snippetsTree>
  <snippetsTree>
@@ -191,10 +216,10 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_180174v2/results/search/country/results.xml">
-   <result pre="Chinese Academy of Sciences, 71 East Beijing Road, Nanjing 210008," exact="China" post="Gladstone Institutes, San Francisco, CA 94158, USA Find this"/>
+   <result pre="Chinese Academy of Sciences, 71 East Beijing Road, Nanjing 210008," exact="China" post="2 Gladstone Institutes, San Francisco, CA 94158, USA Find"/>
    <result pre="Chinese Academy of Sciences, 71 East Beijing Road, Nanjing 210008," exact="China" post="Find this author on Google Scholar Find this author"/>
    <result pre="Ministry of Education, Peking University, 5 Yiheyuan Road, Beijing 100871," exact="China" post="Find this author on Google Scholar Find this author"/>
-   <result pre="Ministry of Education, Peking University, 5 Yiheyuan Road, Beijing 100871," exact="China" post="Key Laboratory of Adaptation and Evolution of Plateau Biota,"/>
+   <result pre="Ministry of Education, Peking University, 5 Yiheyuan Road, Beijing 100871," exact="China" post="4 Key Laboratory of Adaptation and Evolution of Plateau"/>
    <result pre="Biology, Chinese Academy of Sciences, 23 Xinning Road, Xining 810008," exact="China" post="Find this author on Google Scholar Find this author"/>
    <result pre="Biology, Chinese Academy of Sciences, 23 Xinning Road, Xining 810008," exact="China" post="Find this author on Google Scholar Find this author"/>
    <result pre="Chinese Academy of Sciences, 71 East Beijing Road, Nanjing 210008," exact="China" post="Find this author on Google Scholar Find this author"/>
@@ -258,14 +283,14 @@
    <result pre="Institute for Global Change Research (IAI), Montevideo, Department of Montevideo," exact="Uruguay" post="Find this author on Google Scholar Find this author"/>
    <result pre="Naturales y Ciencias de la Salud, Sede Esquel. Esquel, Chubut," exact="Argentina" post="Find this author on Google Scholar Find this author"/>
    <result pre="Naturales, Universidad Nacional de Córdoba. Ciudad Universitaria, Córdoba Capital, Córdoba," exact="Argentina" post="Find this author on Google Scholar Find this author"/>
-   <result pre="Naturales, Universidad Nacional de Córdoba. Ciudad Universitaria, Córdoba Capital, Córdoba," exact="Argentina" post="Cátedra de Matemática (Cs. Biológicas), Facultad de Ciencias Exactas,"/>
+   <result pre="Naturales, Universidad Nacional de Córdoba. Ciudad Universitaria, Córdoba Capital, Córdoba," exact="Argentina" post="6 Cátedra de Matemática (Cs. Biológicas), Facultad de Ciencias"/>
    <result pre="Naturales, Universidad Nacional de Córdoba, Ciudad Universitaria, Córdoba Capital, Córdoba," exact="Argentina" post="Find this author on Google Scholar Find this author"/>
    <result pre="Córdoba-Dirección de Epidemiología, Hospital San Roque Viejo, Córdoba Capital, Córdoba," exact="Argentina" post="Find this author on Google Scholar Find this author"/>
    <result pre="Córdoba-Dirección de Epidemiología, Hospital San Roque Viejo, Córdoba Capital, Córdoba," exact="Argentina" post="Find this author on Google Scholar Find this author"/>
    <result pre="Naturales, Universidad Nacional de Córdoba. Ciudad Universitaria, Córdoba Capital, Córdoba," exact="Argentina" post="Find this author on Google Scholar Find this author"/>
    <result pre="South America: dengue, Aedes aegypti and climate dynamics in Córdoba," exact="Argentina" post="Elizabet L. Estallo , Rachel Sippy , Anna M."/>
    <result pre="South America: dengue, Aedes aegypti and climate dynamics in Córdoba," exact="Argentina" post="Elizabet L. Estallo , Rachel Sippy , Anna M."/>
-   <result pre="Synthetic Biology (919) Systems Biology (2898) Zoology (473) Abstract Background" exact="Argentina" post="is located at the southern range of arboviral transmission"/>
+   <result pre="Synthetic Biology (971) Systems Biology (3023) Zoology (502) Abstract Background" exact="Argentina" post="is located at the southern range of arboviral transmission"/>
    <result pre="is an increasing risk of arbovirus transmission in temperate regions." exact="Argentina" post="is located at the southern range of dengue virus"/>
    <result pre="vector dynamics in the southern cone of South America. Introduction" exact="Argentina" post="is located at the southern range of arboviral transmission"/>
    <result pre="to the Dengvaxia© DENV vaccine, which has been licensed in" exact="Argentina" post="[ 5]. During the 2015-2016 epidemic, ZIKV was of"/>
@@ -307,10 +332,75 @@
   </snippets>
  </snippetsTree>
  <snippetsTree>
+  <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_2020_02_25_964213v1/results/search/country/results.xml">
+   <result pre="https://doi.org/10.1101/2020.02.25.964213 Elena Valdés-Correcher 1 BIOGECO, INRAE, Univ. Bordeaux, 33610 Cestas," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Xoaquín Moreira 2 Misión Biológica de Galicia (MBG-CSIC), Pontevedra, Galicia," exact="Spain" post="Find this author on Google Scholar Find this author"/>
+   <result pre="INRAE, Bordeaux Sciences Agro, UMR 1391 ISPA, 33882 Villenave-d’Ornon Cedex," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="site Luc Barbaro 4 DYNAFOR, University of Toulouse, INRAE, Castanet-Tolosan," exact="France" post="5 CESCO, Sorbonne University, MNHN, CNRS, Paris, France Find"/>
+   <result pre="INRAE, Castanet-Tolosan, France 5 CESCO, Sorbonne University, MNHN, CNRS, Paris," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Suceava, Forestry Faculty, Applied Ecology Laboratory, Universităţii Street 13, Suceava," exact="Romania" post="Find this author on Google Scholar Find this author"/>
+   <result pre="de Estudos Florestais, Instituto Superior de Agronomia, Universidade de Lisboa," exact="Portugal" post="Find this author on Google Scholar Find this author"/>
+   <result pre="University of Padova, Viale dell’ Università 16, I-35020 Legnaro (PD)," exact="Italy" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Institute, Department of Forest Protection, Hegyalja str. 18, 3232 Mátrafüred," exact="Hungary" post="Find this author on Google Scholar Find this author"/>
+   <result pre="site Thomas Damestoy 1 BIOGECO, INRAE, Univ. Bordeaux, 33610 Cestas," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="of Belgrade, Faculty of Forestry, Kneza Višeslava 1, 11000 Belgrade," exact="Serbia" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Suceava, Forestry Faculty, Applied Ecology Laboratory, Universităţii Street 13, Suceava," exact="Romania" post="Find this author on Google Scholar Find this author"/>
+   <result pre="UniLaSalle, AGHYLE, UP.2018.C101, SFR Condorcet FR CNRS 3417, FR-60026 Beauvais," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Institute, Department of Forest Protection, Hegyalja str. 18, 3232 Mátrafüred," exact="Hungary" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Ecology, Environment and Plant Sciences, Stockholm University, SE-106 91 Stockholm," exact="Sweden" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Department of Agroecology, Aarhus University, Flakkebjerg Research Centre, DK-4200 Slagelse," exact="Denmark" post="15 cE3c – Centre for Ecology, Evolution and Environmental"/>
+   <result pre="Environmental Changes/Azorean Biodiversity Group and University of the Azores, Azores," exact="Portugal" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Institute, Department of Forest Protection, Hegyalja str. 18, 3232 Mátrafüred," exact="Hungary" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Andrea Galmán 2 Misión Biológica de Galicia (MBG-CSIC), Pontevedra, Galicia," exact="Spain" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Entomology, Swiss Federal Research Institute WSL, Zürcherstrasse 111, CH-8903 Birmensdorf," exact="Switzerland" post="Find this author on Google Scholar Find this author"/>
+   <result pre="site Arndt Hampe 1 BIOGECO, INRAE, Univ. Bordeaux, 33610 Cestas," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="of Geosciences and Natural Resource Management, University of Copenhagen, Frederiksberg," exact="Denmark" post="Find this author on Google Scholar Find this author"/>
+   <result pre="site Yasmine Kadiri 1 BIOGECO, INRAE, Univ. Bordeaux, 33610 Cestas," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Entomology, Swiss Federal Research Institute WSL, Zürcherstrasse 111, CH-8903 Birmensdorf," exact="Switzerland" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Forest Protection and Wood Science, Sverdlova str. 13a, 220006 Minsk," exact="Belarus" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Kozlov 20 Department of Biology, University of Turku, 20014 Turku," exact="Finland" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Department of Agroecology, Aarhus University, Flakkebjerg Research Centre, DK-4200 Slagelse," exact="Denmark" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Suceava, Forestry Faculty, Applied Ecology Laboratory, Universităţii Street 13, Suceava," exact="Romania" post="Find this author on Google Scholar Find this author"/>
+   <result pre="of Belgrade, Faculty of Forestry, Kneza Višeslava 1, 11000 Belgrade," exact="Serbia" post="22 Mendel University, Faculty of Forestry and Wood Technology,"/>
+   <result pre="of Forestry and Wood Technology, Zemedelska 3, 61 300 Brno," exact="Czech Republic" post="Find this author on Google Scholar Find this author"/>
+   <result pre="of Czech Academy of Sciences, Entomology Institute, Ceske Budejovice, 37005," exact="Czech Republic" post="24 University of South Bohemia, Faculty of Science, Ceske"/>
+   <result pre="University of South Bohemia, Faculty of Science, Ceske Budejovice, 37005," exact="Czech Republic" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Biodiversity and Conservation Biology, Ecological Genetics, Zürcherstrasse 111, 8903 Birmensdorf," exact="Switzerland" post="26 Department of Ecology, Philipps-Universität Marburg, Karl-von-Frisch Strasse 8,"/>
+   <result pre="Sciences, PO Box 27 (Latokartanonkaari 5), FI-00014 University of Helsinki," exact="Finland" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Popova 20 Department of Biology, University of Turku, 20014 Turku," exact="Finland" post="Find this author on Google Scholar Find this author"/>
+   <result pre="of Belgrade, Faculty of Forestry, Kneza Višeslava 1, 11000 Belgrade," exact="Serbia" post="Find this author on Google Scholar Find this author"/>
+   <result pre="la Recherche Scientifique; Campus de Beaulieu, Bâtiment 14A, 35042 Rennes," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Entomology, Swiss Federal Research Institute WSL, Zürcherstrasse 111, CH-8903 Birmensdorf," exact="Switzerland" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Box 7044, Swedish University of Agricultural Sciences, SE-750 07 Uppsala," exact="Sweden" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Ligneux et des Grandes Cultures, INRAE, Université d’Orléans, 45067, Orléans," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="of Czech Academy of Sciences, Entomology Institute, Ceske Budejovice, 37005," exact="Czech Republic" post="24 University of South Bohemia, Faculty of Science, Ceske"/>
+   <result pre="University of South Bohemia, Faculty of Science, Ceske Budejovice, 37005," exact="Czech Republic" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Faculty of Biology, University of Freiburg, Schaenzlestr. 1, 79104 Freiburg," exact="Germany" post="Find this author on Google Scholar Find this author"/>
+   <result pre="32 Georg-August-University Göttingen, Forest Nature Conservation, Büsgenweg 3, 37077 Göttingen," exact="Germany" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Suominen 35 Salo upper secondary school, Kaherinkatu 2, 24130 Salo," exact="Finland" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Ecology, Environment and Plant Sciences, Stockholm University, SE-106 91 Stockholm," exact="Sweden" post="Find this author on Google Scholar Find this author"/>
+   <result pre="of Czech Academy of Sciences, Entomology Institute, Ceske Budejovice, 37005," exact="Czech Republic" post="24 University of South Bohemia, Faculty of Science, Ceske"/>
+   <result pre="University of South Bohemia, Faculty of Science, Ceske Budejovice, 37005," exact="Czech Republic" post="Find this author on Google Scholar Find this author"/>
+   <result pre="site Bastien Castagneyrol 1 BIOGECO, INRAE, Univ. Bordeaux, 33610 Cestas," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Eaton et al., 2016 ). Its distribution ranges from Central" exact="Spain" post="(39°N) to southern Fennoscandia (62°N), thus experiencing variable climatic"/>
+   <result pre="latitude. Proceedings of the National Academy of Sciences of the" exact="United States" post="of America, 101, 11001– 11006. OpenUrl Abstract / FREE"/>
+  </snippets>
+ </snippetsTree>
+ <snippetsTree>
+  <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_2020_04_03_024497v1/results/search/country/results.xml">
+   <result pre="systematic and standardized survey of forested regions in the entire" exact="United States," post="including both public and private lands. Full details on"/>
+   <result pre="Nearly the entire ranges of both species are within the" exact="United States," post="thus FIA data provide a near complete survey of"/>
+   <result pre="between tree life stages imply range shifts in the western" exact="United States." post="Global Ecology and Biogeography 23: 168– 180. OpenUrl ↵"/>
+   <result pre="LeRoy . 2013. Assessment of Climate Change in the Southwest" exact="United States." post="National Climate Assessment. ↵ Jackson, S. T. , J."/>
+   <result pre="distributions. Proceedings of the National Academy of Sciences of the" exact="United States" post="of America 106: 19685– 19692. OpenUrl Abstract / FREE"/>
+   <result pre="a case study on invasive plant species in the northeastern" exact="United States." post="Ecology Letters 12: 144– 154. OpenUrl PubMed ↵ McDowell,"/>
+  </snippets>
+ </snippetsTree>
+ <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_285361v2/results/search/country/results.xml">
-   <result pre="UMR Biologie du Fruit et Pathologie, Univ. Bordeaux, Villenave d’Ornon," exact="France" post="Department of Plant Developmental Biology, Max Planck Institute for"/>
+   <result pre="UMR Biologie du Fruit et Pathologie, Univ. Bordeaux, Villenave d’Ornon," exact="France" post="2 Department of Plant Developmental Biology, Max Planck Institute"/>
    <result pre="Biology, Max Planck Institute for Plant Breeding Research, 50829 Cologne," exact="Germany" post="Find this author on Google Scholar Find this author"/>
-   <result pre="Darbyshire New South Wales Department of Primary Industries, Wagga Wagga," exact="Australia" post="Faculty of Veterinary and Agricultural Sciences, University of Melbourne,"/>
+   <result pre="3 New South Wales Department of Primary Industries, Wagga Wagga," exact="Australia" post="4 Faculty of Veterinary and Agricultural Sciences, University of"/>
    <result pre="Faculty of Veterinary and Agricultural Sciences, University of Melbourne, Melbourne," exact="Australia" post="Find this author on Google Scholar Find this author"/>
    <result pre="UMR Biologie du Fruit et Pathologie, Univ. Bordeaux, Villenave d’Ornon," exact="France" post="Find this author on Google Scholar Find this author"/>
    <result pre="UMR Biologie du Fruit et Pathologie, Univ. Bordeaux, Villenave d’Ornon," exact="France" post="Find this author on Google Scholar Find this author"/>
@@ -325,11 +415,11 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_289876v1/results/search/country/results.xml">
-   <result pre="Godefroid CBGP, INRA, CIRAD, IRD, Montpellier SupAgro, Univ. Montpellier Montpellier," exact="France" post="Fisheries [[#38]] Oceans Canada, Pacific Biological Station, Nanaimo, B.C"/>
-   <result pre="Cruaud CBGP, INRA, CIRAD, IRD, Montpellier SupAgro, Univ. Montpellier Montpellier," exact="France" post="Find this author on Google Scholar Find this author"/>
-   <result pre="Streito CBGP, INRA, CIRAD, IRD, Montpellier SupAgro, Univ. Montpellier Montpellier," exact="France" post="Find this author on Google Scholar Find this author"/>
-   <result pre="Rasplus CBGP, INRA, CIRAD, IRD, Montpellier SupAgro, Univ. Montpellier Montpellier," exact="France" post="Find this author on Google Scholar Find this author"/>
-   <result pre="Rossi CBGP, INRA, CIRAD, IRD, Montpellier SupAgro, Univ. Montpellier Montpellier," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="1 CBGP, INRA, CIRAD, IRD, Montpellier SupAgro, Univ. Montpellier Montpellier," exact="France" post="2 Fisheries [[#38]] Oceans Canada, Pacific Biological Station, Nanaimo,"/>
+   <result pre="1 CBGP, INRA, CIRAD, IRD, Montpellier SupAgro, Univ. Montpellier Montpellier," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="1 CBGP, INRA, CIRAD, IRD, Montpellier SupAgro, Univ. Montpellier Montpellier," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="1 CBGP, INRA, CIRAD, IRD, Montpellier SupAgro, Univ. Montpellier Montpellier," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="1 CBGP, INRA, CIRAD, IRD, Montpellier SupAgro, Univ. Montpellier Montpellier," exact="France" post="Find this author on Google Scholar Find this author"/>
    <result pre="two strains of Xf subsp. multiplex recently detected in southern" exact="France" post="(ST6 and ST7). We fitted bioclimatic species distribution models"/>
    <result pre="by Xf encompass the Mediterranean coastal areas of Spain, Greece," exact="Italy" post="and France, the Atlantic coastal areas of France, Portugal"/>
    <result pre="Greece, Italy and France, the Atlantic coastal areas of France," exact="Portugal" post="and Spain as well as the south-western regions of"/>
@@ -376,11 +466,11 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_323311v4/results/search/country/results.xml">
-   <result pre="https://doi.org/10.1101/323311 Adèle Mennerat Department of Biological Sciences, University of Bergen," exact="Norway" post="EDYSAN, Université de Picardie Jules Verne, CNRS, Amiens, France"/>
-   <result pre="Bergen, Norway EDYSAN, Université de Picardie Jules Verne, CNRS, Amiens," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Adèle Mennerat 1 Department of Biological Sciences, University of Bergen," exact="Norway" post="2 EDYSAN, Université de Picardie Jules Verne, CNRS, Amiens,"/>
+   <result pre="Norway 2 EDYSAN, Université de Picardie Jules Verne, CNRS, Amiens," exact="France" post="Find this author on Google Scholar Find this author"/>
    <result pre="CEFE, Univ Montpellier, CNRS, IRD, INRA, Montpellier SupAgro, EPHE, Montpellier," exact="France" post="Find this author on Google Scholar Find this author"/>
    <result pre="CEFE, Univ Montpellier, CNRS, IRD, INRA, Montpellier SupAgro, EPHE, Montpellier," exact="France" post="Find this author on Google Scholar Find this author"/>
-   <result pre="this site Sylvie Hurtrez-Boussès MIVEGEC, Univ Montpellier, CNRS, IRD, Montpellier," exact="France" post="Département de Biologie Écologie, Faculté des Sciences, Univ Montpellier,"/>
+   <result pre="site Sylvie Hurtrez-Boussès 4 MIVEGEC, Univ Montpellier, CNRS, IRD, Montpellier," exact="France" post="5 Département de Biologie Écologie, Faculté des Sciences, Univ"/>
    <result pre="Département de Biologie Écologie, Faculté des Sciences, Univ Montpellier, Montpellier," exact="France" post="Find this author on Google Scholar Find this author"/>
    <result pre="CEFE, Univ Montpellier, CNRS, IRD, INRA, Montpellier SupAgro, EPHE, Montpellier," exact="France" post="Find this author on Google Scholar Find this author"/>
    <result pre="2001, Matyukhin and Krivosheina 2008). P. azurea was reported from" exact="Spain" post="to Scandinavia ( Potti 2008, Eeva et al. 2015),"/>
@@ -456,7 +546,7 @@
    <result pre="and Sustainable Development (PaCE-SD), University of the South Pacific, Suva," exact="Fiji" post="Find this author on Google Scholar Find this author"/>
    <result pre="Division (GEMD), Pacific Community, SPC - Private Mail Bag, Suva," exact="Fiji" post="Find this author on Google Scholar Find this author"/>
    <result pre="Division (GEMD), Pacific Community, SPC - Private Mail Bag, Suva," exact="Fiji" post="Find this author on Google Scholar Find this author"/>
-   <result pre="Tagivetaua Tamani Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH, Suva," exact="Fiji" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Tamani 3 Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH, Suva," exact="Fiji" post="Find this author on Google Scholar Find this author"/>
    <result pre="Division (GEMD), Pacific Community, SPC - Private Mail Bag, Suva," exact="Fiji" post="Find this author on Google Scholar Find this author"/>
    <result pre="and Sustainable Development (PaCE-SD), University of the South Pacific, Suva," exact="Fiji" post="Find this author on Google Scholar Find this author"/>
    <result pre="the 15 Pacific – African Caribbean and Pacific (P-ACP) countries:" exact="Cook Islands," post="Federated States of Micronesia (FSM), Fiji, Kiribati, Nauru, Niue,"/>
@@ -510,16 +600,16 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_355875v2/results/search/country/results.xml">
-   <result pre="the Czech Academy of Sciences, Institute of Hydrobiology, Ceske Budejovice," exact="Czech Republic" post="Leibniz-Institute of Freshwater Ecology and Inland Fisheries, Berlin, Germany"/>
-   <result pre="Czech Republic Leibniz-Institute of Freshwater Ecology and Inland Fisheries, Berlin," exact="Germany" post="Institute for Multidisciplinary Research, University of Belgrade, Serbia Find"/>
-   <result pre="Fisheries, Berlin, Germany Institute for Multidisciplinary Research, University of Belgrade," exact="Serbia" post="Find this author on Google Scholar Find this author"/>
+   <result pre="the Czech Academy of Sciences, Institute of Hydrobiology, Ceske Budejovice," exact="Czech Republic" post="2 Leibniz-Institute of Freshwater Ecology and Inland Fisheries, Berlin,"/>
+   <result pre="Republic 2 Leibniz-Institute of Freshwater Ecology and Inland Fisheries, Berlin," exact="Germany" post="3 Institute for Multidisciplinary Research, University of Belgrade, Serbia"/>
+   <result pre="Berlin, Germany 3 Institute for Multidisciplinary Research, University of Belgrade," exact="Serbia" post="Find this author on Google Scholar Find this author"/>
    <result pre="Conservation Physiology Laboratory, Department of Biology, Carleton University, Ottawa, Ontario," exact="Canada" post="Find this author on Google Scholar Find this author"/>
-   <result pre="Gregor Kalinkat Leibniz-Institute of Freshwater Ecology and Inland Fisheries, Berlin," exact="Germany" post="Find this author on Google Scholar Find this author"/>
-   <result pre="the Czech Academy of Sciences, Institute of Hydrobiology, Ceske Budejovice," exact="Czech Republic" post="Institute for Multidisciplinary Research, University of Belgrade, Serbia Find"/>
-   <result pre="Budejovice, Czech Republic Institute for Multidisciplinary Research, University of Belgrade," exact="Serbia" post="Find this author on Google Scholar Find this author"/>
-   <result pre="the Czech Academy of Sciences, Institute of Hydrobiology, Ceske Budejovice," exact="Czech Republic" post="Leibniz-Institute of Freshwater Ecology and Inland Fisheries, Berlin, Germany"/>
-   <result pre="Czech Republic Leibniz-Institute of Freshwater Ecology and Inland Fisheries, Berlin," exact="Germany" post="GRECO, Institute of Aquatic Ecology, University of Girona, Spain"/>
-   <result pre="Berlin, Germany GRECO, Institute of Aquatic Ecology, University of Girona," exact="Spain" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Kalinkat 2 Leibniz-Institute of Freshwater Ecology and Inland Fisheries, Berlin," exact="Germany" post="Find this author on Google Scholar Find this author"/>
+   <result pre="the Czech Academy of Sciences, Institute of Hydrobiology, Ceske Budejovice," exact="Czech Republic" post="3 Institute for Multidisciplinary Research, University of Belgrade, Serbia"/>
+   <result pre="Czech Republic 3 Institute for Multidisciplinary Research, University of Belgrade," exact="Serbia" post="Find this author on Google Scholar Find this author"/>
+   <result pre="the Czech Academy of Sciences, Institute of Hydrobiology, Ceske Budejovice," exact="Czech Republic" post="2 Leibniz-Institute of Freshwater Ecology and Inland Fisheries, Berlin,"/>
+   <result pre="Republic 2 Leibniz-Institute of Freshwater Ecology and Inland Fisheries, Berlin," exact="Germany" post="5 GRECO, Institute of Aquatic Ecology, University of Girona,"/>
+   <result pre="Germany 5 GRECO, Institute of Aquatic Ecology, University of Girona," exact="Spain" post="Find this author on Google Scholar Find this author"/>
    <result pre="E. Purkyně Fellowship of the Academy of Sciences of the" exact="Czech Republic" post="and funding from the European Union’s Horizon 2020 research"/>
    <result pre="the Ministry of Education, Science and Technological Development, Republic of" exact="Serbia" post="(grant number 173045). Thanks are extended to Ryder Burt"/>
   </snippets>
@@ -576,16 +666,16 @@
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_404293v1/results/search/country/results.xml">
    <result pre=" Geographic shifts in Aedes aegypti habitat suitability in" exact="Ecuador" post="using larval surveillance data and ecological niche modeling: Implications"/>
    <result pre="New Results Geographic shifts in Aedes aegypti habitat suitability in" exact="Ecuador" post="using larval surveillance data and ecological niche modeling: Implications"/>
-   <result pre="Lab Group, Department of Geography, University of Florida, Gainesville, Florida," exact="United States" post="of America Emerging Pathogens Institute, University of Florida, Gainesville,"/>
-   <result pre="of America Emerging Pathogens Institute, University of Florida, Gainesville, Florida," exact="United States" post="of America Find this author on Google Scholar Find"/>
+   <result pre="Lab Group, Department of Geography, University of Florida, Gainesville, Florida," exact="United States" post="of America 2 Emerging Pathogens Institute, University of Florida,"/>
+   <result pre="America 2 Emerging Pathogens Institute, University of Florida, Gainesville, Florida," exact="United States" post="of America Find this author on Google Scholar Find"/>
    <result pre="Health and Translational Science, Upstate Medical University, Syracuse, New York," exact="United States" post="of America Find this author on Google Scholar Find"/>
-   <result pre="Stewart-Ibarra M.E. Franklin Bajaña Loor Ministerio de Salud Pública, Guayaquil," exact="Ecuador" post="Find this author on Google Scholar Find this author"/>
-   <result pre="site Jose E. Dueñas Zambrano Ministerio de Salud Pública, Guayaquil," exact="Ecuador" post="Find this author on Google Scholar Find this author"/>
-   <result pre="site Nelson A. Espinoza Lopez Ministerio de Salud Pública, Guayaquil," exact="Ecuador" post="Find this author on Google Scholar Find this author"/>
-   <result pre="K. Blackburn Emerging Pathogens Institute, University of Florida, Gainesville, Florida," exact="United States" post="of America Spatial Epidemiology and Ecology Research (SEER) Laboratory,"/>
+   <result pre="M.E. Franklin Bajaña Loor 4 Ministerio de Salud Pública, Guayaquil," exact="Ecuador" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Jose E. Dueñas Zambrano 4 Ministerio de Salud Pública, Guayaquil," exact="Ecuador" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Nelson A. Espinoza Lopez 4 Ministerio de Salud Pública, Guayaquil," exact="Ecuador" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Blackburn 2 Emerging Pathogens Institute, University of Florida, Gainesville, Florida," exact="United States" post="of America 5 Spatial Epidemiology and Ecology Research (SEER)"/>
    <result pre="(SEER) Laboratory, Department of Geography, University of Florida, Gainesville, Florida," exact="United States" post="of America Find this author on Google Scholar Find"/>
-   <result pre="Lab Group, Department of Geography, University of Florida, Gainesville, Florida," exact="United States" post="of America Emerging Pathogens Institute, University of Florida, Gainesville,"/>
-   <result pre="of America Emerging Pathogens Institute, University of Florida, Gainesville, Florida," exact="United States" post="of America Find this author on Google Scholar Find"/>
+   <result pre="Lab Group, Department of Geography, University of Florida, Gainesville, Florida," exact="United States" post="of America 2 Emerging Pathogens Institute, University of Florida,"/>
+   <result pre="America 2 Emerging Pathogens Institute, University of Florida, Gainesville, Florida," exact="United States" post="of America Find this author on Google Scholar Find"/>
    <result pre="Email Share Geographic shifts in Aedes aegypti habitat suitability in" exact="Ecuador" post="using larval surveillance data and ecological niche modeling: Implications"/>
    <result pre="Citation Tools Geographic shifts in Aedes aegypti habitat suitability in" exact="Ecuador" post="using larval surveillance data and ecological niche modeling: Implications"/>
    <result pre="reported for the first time in the city of Guayaquil," exact="Ecuador" post="[ 6]. Many of the diseases transmitted by Ae."/>
@@ -617,7 +707,7 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_429084v1/results/search/country/results.xml">
-   <result pre="of Plant Protection Biology, PO Box 102, SE-230 53 Alnarp," exact="Sweden" post="Department of Botany, School of Natural Sciences, Trinity College"/>
+   <result pre="of Plant Protection Biology, PO Box 102, SE-230 53 Alnarp," exact="Sweden" post="2 Department of Botany, School of Natural Sciences, Trinity"/>
    <result pre="Botany, School of Natural Sciences, Trinity College Dublin, Dublin 2," exact="Ireland" post="Find this author on Google Scholar Find this author"/>
    <result pre="CNRS, Univ. Savoie Mont-Blanc, Laboratoire d’Ecologie Alpine (LECA), F-38000 Grenoble," exact="France" post="Find this author on Google Scholar Find this author"/>
    <result pre="Zoology, School of Natural Sciences, Trinity College Dublin, Dublin 2," exact="Ireland" post="Find this author on Google Scholar Find this author"/>
@@ -645,7 +735,7 @@
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_462150v2/results/search/country/results.xml">
    <result pre="mobility, land-use and climate factors on dengue outbreak emergence in" exact="Sri Lanka" post="| bioRxiv Skip to main content Home About Submit"/>
    <result pre="mobility, land-use and climate factors on dengue outbreak emergence in" exact="Sri Lanka" post="Ying Zhang , Jefferson Riera , Kayla Ostrow ,"/>
-   <result pre="de Silva Department of Pediatrics, University of Colombo, Colombo, 00900," exact="Sri Lanka" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Silva 5 Department of Pediatrics, University of Colombo, Colombo, 00900," exact="Sri Lanka" post="Find this author on Google Scholar Find this author"/>
    <result pre="Clinical Management of Dengue and Dengue Haemorrhagic Fever, Negombo, 11500," exact="Sri Lanka" post="Find this author on Google Scholar Find this author"/>
    <result pre="University of New South Wales (UNSW) Sydney, Sydney, NSW, 2052" exact="Australia" post="Find this author on Google Scholar Find this author"/>
    <result pre="mobility, land-use and climate factors on dengue outbreak emergence in" exact="Sri Lanka" post="Ying Zhang , Jefferson Riera , Kayla Ostrow ,"/>
@@ -701,8 +791,8 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_496463v1/results/search/country/results.xml">
-   <result pre="Kaspar Delhey School of Biological Sciences, Monash University, Clayton, Victoria," exact="Australia" post="Find this author on Google Scholar Find this author"/>
-   <result pre="Dale Institute of Natural and Mathematical Science, Massey University, Auckland," exact="New Zealand." post="E-mail: Find this author on Google Scholar Find this"/>
+   <result pre="Delhey 1 School of Biological Sciences, Monash University, Clayton, Victoria," exact="Australia" post="Find this author on Google Scholar Find this author"/>
+   <result pre="2 Institute of Natural and Mathematical Science, Massey University, Auckland," exact="New Zealand." post="E-mail: Find this author on Google Scholar Find this"/>
    <result pre="lightness and temperature could be positive in places such as" exact="Australia" post="( Friedman &amp;amp;; Remeš 2017; Delhey 2018) or Spain"/>
    <result pre="as Australia ( Friedman &amp;amp;; Remeš 2017; Delhey 2018) or" exact="Spain" post="( Galván et al. 2018 ), where the need"/>
    <result pre="a Marsden Fund Grant (15-MAU-136) from the Royal Society of" exact="New Zealand." post="Footnotes Authorship: KD conceived the study. MV and KD"/>
@@ -711,7 +801,7 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_506006v1/results/search/country/results.xml">
-   <result pre="Waddell Wildlife/Botany [[#38]] Fisheries/Aquatics Data Coordinator, Branch of Biological Resources," exact="United States" post="Bureau of Land Management, Oregon State Office, 1220 SW"/>
+   <result pre="5 Wildlife/Botany [[#38]] Fisheries/Aquatics Data Coordinator, Branch of Biological Resources," exact="United States" post="Bureau of Land Management, Oregon State Office, 1220 SW"/>
    <result pre="same locations of multiple plant species over several years in" exact="Germany" post="[ 4] and the Swiss Jura Mountains [ 34],"/>
    <result pre="predominantly in the Klamath-Siskiyou Mountains and Sierra Nevada Mountains. The" exact="United States" post="Forest Service (USFS) considers it to be a Sensitive"/>
    <result pre="0.39). ;&amp;lt;;div xmlns=&quot;;http://www.w3.org/1999/xhtml&quot;;&amp;gt;;&amp;lt;;span class=&quot;;caption-title&quot;;&amp;gt;;Distribution of &amp;lt;;em&amp;gt;;Cypripedium fasciculatum&amp;lt;;/em&amp;gt;; in the western" exact="United States" post="(inset), with map of California and Oregon showing the"/>
@@ -726,11 +816,11 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_513515v1/results/search/country/results.xml">
-   <result pre="Gárate-Escamilla BIOGECO INRA UMR 1202 University of Bordeaux, Pessac, 33400," exact="France" post="Find this author on Google Scholar Find this author"/>
-   <result pre="Hampe BIOGECO INRA UMR 1202 University of Bordeaux, Pessac, 33400," exact="France" post="Find this author on Google Scholar Find this author"/>
-   <result pre="Vizcaíno-Palomar BIOGECO INRA UMR 1202 University of Bordeaux, Pessac, 33400," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="1 BIOGECO INRA UMR 1202 University of Bordeaux, Pessac, 33400," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="1 BIOGECO INRA UMR 1202 University of Bordeaux, Pessac, 33400," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="1 BIOGECO INRA UMR 1202 University of Bordeaux, Pessac, 33400," exact="France" post="Find this author on Google Scholar Find this author"/>
    <result pre="Biological and Environmental Sciences, University of Helsinki, P.O. Box 65," exact="Finland" post="00014. Find this author on Google Scholar Find this"/>
-   <result pre="Garzón BIOGECO INRA UMR 1202 University of Bordeaux, Pessac, 33400," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="1 BIOGECO INRA UMR 1202 University of Bordeaux, Pessac, 33400," exact="France" post="Find this author on Google Scholar Find this author"/>
    <result pre="Leon (I2T2), Mexico. TMR was funded by the Academy of" exact="Finland" post="(decision 304519). We thank the scientific network INRA-ACCAF. 1."/>
   </snippets>
  </snippetsTree>
@@ -790,7 +880,7 @@
    <result pre="INRA, Université Fédérale de Toulouse, UMR 1248 AGIR, F-31326 Castanet-Tolosan," exact="France" post="Find this author on Google Scholar Find this author"/>
    <result pre="INRA, Université Fédérale de Toulouse, UMR 1248 AGIR, F-31326 Castanet-Tolosan," exact="France" post="Find this author on Google Scholar Find this author"/>
    <result pre="INRA, Université Fédérale de Toulouse, UMR 1248 AGIR, F-31326 Castanet-Tolosan," exact="France" post="Find this author on Google Scholar Find this author"/>
-   <result pre="Dürr INRA, IRHS 1345, 42 rue George Morel, F-49071 Beaucouzé," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="2 INRA, IRHS 1345, 42 rue George Morel, F-49071 Beaucouzé," exact="France" post="Find this author on Google Scholar Find this author"/>
    <result pre="well as bolting rates of this crop. We chose Northern" exact="France" post="as an important study site, representative of sugar beet"/>
    <result pre="regions of Northern France, as study site. We chose Northern" exact="France" post="as representative sugar beet growing basin of Northern Europe."/>
    <result pre="March, mid-March, 1 st April, and mid-April. Farmers in Northern" exact="France" post="most often practice mid-March sowing of sugar beet crop"/>
@@ -802,6 +892,102 @@
    <result pre="option ( White et al. 2011). Sugar beet farmers in" exact="France" post="and Northern Europe, who currently practice the mid-March sowing,"/>
    <result pre="Rhizoctonia root rot and damping-off, have been reported in Northern" exact="France" post="( Motisi et al. 2009), the disease pressure is"/>
    <result pre="et al. ( 2003). Cartographie des risques de montées en" exact="France" post="en relation avec les températures de printemps et d’été"/>
+  </snippets>
+ </snippetsTree>
+ <snippetsTree>
+  <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_548420v1/results/search/country/results.xml">
+   <result pre="drought: Proceedings of the National Academy of Sciences of the" exact="United States" post="of America, v. 102, p. 15144– 15148. OpenUrl ↵"/>
+   <result pre="others, 2016, Novel and Lost Forests in the Upper Midwestern" exact="United States," post="from New Estimates of Settlement-Era Composition, Stem Density, and"/>
+   <result pre="on Sustainable Management of Hemlock Ecosystems in Eastern North America," exact="United States" post="Department of Agriculture, Forest Service, Northeastern Research Station, General"/>
+   <result pre="2002, Late glacial-Holocene atmospheric circulation and precipitation in the northeast" exact="United States" post="inferred from modern calibrated stable oxygen and carbon isotopes:"/>
+   <result pre="McLachlan, J.S. , 2016, Statistically-estimated tree composition for the northeastern" exact="United States" post="at Euro-American settlement: PloS one, v. 11, p. e0150087."/>
+   <result pre=", and Sachse, D. , 2014, Delayed hydrological response to" exact="Greenland" post="cooling at the onset of the Younger Dryas in"/>
+   <result pre="2017, Centennial to millennial hydroclimatic fluctuations in the humid northeast" exact="United States" post="during the Holocene: Quaternary Research, v. 88, p. 514–"/>
+   <result pre="O.K. , 2006, An Atlas of Pollen-Vegetation-Climate Relationships for the" exact="United States" post="and Canada.: American Association of Stratigraphic Palynologists Foundation, Dallas,"/>
+  </snippets>
+ </snippetsTree>
+ <snippetsTree>
+  <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_549675v1/results/search/country/results.xml">
+   <result pre=". Maize ( Zea mays ssp. mays) was domesticated in" exact="Mexico" post="from its wild relatives, the teosintes, nearly 9,000 years"/>
+   <result pre="Central Mexico, parviglumis is native to the lowlands of South-western" exact="Mexico" post="10, 16, 17, 25 . Materials and Methods Ecological"/>
+   <result pre="parviglumis than for mexicana, populations inhabiting the Central Highlands of" exact="Mexico" post="are expected to have the highest migratory constraints ("/>
+   <result pre="an uneven presence of adaptive alleles across distinct landraces in" exact="Mexico" post="( fig. 2a), with a positive trend of increasing"/>
+   <result pre="of adaptive scores for accessions of 46 maize landraces in" exact="Mexico" post="estimated from the climate-SNP models for the two teosintes"/>
+   <result pre="&amp;lt;;strong&amp;gt;;b&amp;lt;;/strong&amp;gt;;, Known geographic occurrences for the 46 maize landraces in" exact="Mexico" post="colored by mean annual temperature. Black stars represent accessions"/>
+   <result pre="offset in climate-related SNPs among landraces of maize accessions in" exact="Mexico" post="a, Distribution of adaptive scores for accessions of 46"/>
+   <result pre="of adaptive scores for accessions of 46 maize landraces in" exact="Mexico" post="estimated from the climate-SNP models for the two teosintes"/>
+   <result pre="b, Known geographic occurrences for the 46 maize landraces in" exact="Mexico" post="colored by mean annual temperature. Black stars represent accessions"/>
+   <result pre="was funded by CONACYT Investigación Científica Básica CB2011-167826 and SEP-CONACYT-ANUIES-ECOS" exact="France" post="M12-A03-CONACYT-ANUIES 207571 granted to L.E.E; and postdoctoral fellowship from"/>
+  </snippets>
+ </snippetsTree>
+ <snippetsTree>
+  <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_567321v1/results/search/country/results.xml">
+   <result pre="of climate change on high priority fruit fly species in" exact="Australia" post="| bioRxiv Skip to main content Home About Submit"/>
+   <result pre="of climate change on high priority fruit fly species in" exact="Australia" post="Sabira Sultana , John B. Baumgartner , Bernard C."/>
+   <result pre="Biological Sciences, Macquarie University, North Ryde, New South Wales, 2109," exact="Australia" post="2 Department of Zoology, Jahangirnagar University, Savar, Dhaka 1342,"/>
+   <result pre="Australia 2 Department of Zoology, Jahangirnagar University, Savar, Dhaka 1342," exact="Bangladesh" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Biological Sciences, Macquarie University, North Ryde, New South Wales, 2109," exact="Australia" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Primary Industries, Locked Bag 21, Orange, New South Wales, 2800," exact="Australia" post="Find this author on Google Scholar Find this author"/>
+   <result pre="and Fisheries, Biosecurity Queensland, GPO Box 267, Brisbane, Queensland, 4001," exact="Australia" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Biological Sciences, Macquarie University, North Ryde, New South Wales, 2109," exact="Australia" post="Find this author on Google Scholar Find this author"/>
+   <result pre="of climate change on high priority fruit fly species in" exact="Australia" post="Sabira Sultana , John B. Baumgartner , Bernard C."/>
+   <result pre="of climate change on high priority fruit fly species in" exact="Australia" post="Sabira Sultana , John B. Baumgartner , Bernard C."/>
+   <result pre="be vulnerable to all 11 species. The east coast of" exact="Australia" post="will likely remain vulnerable to multiple species until at"/>
+   <result pre="Australia. Of the 11 species that are currently present in" exact="Australia" post="[ 1- 3] ( Table 1), seven are reported"/>
+   <result pre="species also has the potential to establish elsewhere in northern" exact="Australia" post="[ 4]. The remaining species have substantially wider climate"/>
+   <result pre="in favourable years, may spread down the east coast of" exact="Australia" post="into northern coastal NSW [ 4, 9]. Hence, B."/>
+   <result pre="this species spread to NSW, Victoria, and other parts of" exact="Australia" post="[ 11]. However, for reasons that remain unclear, Qfly"/>
+   <result pre="is confined to Western Australia, with occasional detections in South" exact="Australia" post="[ 13]. Under current climate conditions, most of these"/>
+   <result pre="(APPD; http://www.planthealthaustralia.com.au/resources/australian-plant-pest-database, accessed 15th March 2017), the Atlas of Living" exact="Australia" post="(ALA; http://www.ala.org.au, 22nd December, 2016), the Global Biodiversity Information"/>
+   <result pre="Resources, Victoria; and Department of Primary Industries and Regions South" exact="Australia" post="(PIRSA)). Trap data from these sources were collected at"/>
+   <result pre="remain so until at least 2070. By 2030, 21.5% of" exact="Australia" post="(i.e. ∼1,600,100 km 2) is projected to be climatically"/>
+   <result pre="coastlines of Victoria and Western Australia. By 2030, 13.5% of" exact="Australia" post="(i.e. ∼1,038,000 km 2) is projected to be suitable"/>
+   <result pre="Tropics, although there are also small areas in northern Western" exact="Australia" post="and the Northern Territory that are classified as suitable,"/>
+   <result pre="is projected to become unsuitable (S2 Table). Overall, 3.3% of" exact="Australia" post="(i.e. ∼250,400 km 2) is projected to be suitable"/>
+   <result pre="expansions may exceed losses (S2 Table). By 2030, 6.9% of" exact="Australia" post="(i.e. ∼500,800 km 2) is projected to be suitable"/>
+   <result pre="Australia, the Top End of the Northern Territory, and eastern" exact="Australia" post="from Cape York to NSW (S5A-5B Figs). Annual mean"/>
+   <result pre="new areas by 2070 (S2 Table). By 2030, 25.8% of" exact="Australia" post="(i.e.∼1,980,000 km 2) is projected to be suitable for"/>
+   <result pre="the Top End of the Northern Territory, and in eastern" exact="Australia" post="from Cape York to New South Wales, may continue"/>
+   <result pre="kraussi is projected to occur across the northern tip of" exact="Australia" post="and northeast Queensland, as far south as Townsville (S6A-6B"/>
+   <result pre="be gained by 2070 (S2 Table). By 2030, 3.1% of" exact="Australia" post="(i.e.∼240,600 km 2) is projected to be suitable for"/>
+   <result pre="by ∼43.5% by 2070 (S2 Table). By 2030, 3.4% of" exact="Australia" post="(i.e.∼260,100 km 2) is projected to be suitable for"/>
+   <result pre="east, although limited gains in habitat may occur in northern" exact="Australia" post="(S8C-8E Figs; S2 Table). By 2030, ∼6.9% of Australia"/>
+   <result pre="northern Australia (S8C-8E Figs; S2 Table). By 2030, ∼6.9% of" exact="Australia" post="(i.e.∼500,500 km 2) is projected to be suitable for"/>
+   <result pre="along south-western Western Australia, south-eastern South Australia, Victoria, and eastern" exact="Australia" post="from Cape York to NSW (S9A-9B Figs). Coastal zones"/>
+   <result pre="projected for some regions (S2 Table). By 2030, 26.1% of" exact="Australia" post="(i.e.∼1,990,800 km 2) is projected to be suitable for"/>
+   <result pre="these crops in the Top End of Northern Territory, eastern" exact="Australia" post="from Cape York to NSW, Victoria, and some parts"/>
+   <result pre="until at least 2070. Major host-plant growing regions in South" exact="Australia" post="may also remain suitable for this species until 2070"/>
+   <result pre="Territory, the east coast of Queensland to NSW and South" exact="Australia" post="(S10A-10B Figs). Annual mean temperature (47.2%) and mean temperature"/>
+   <result pre="increase and shift south (S10C-10E Figs). By 2030, 28.3% of" exact="Australia" post="(i.e. ∼2,100,400 km 2) is projected to be suitable"/>
+   <result pre="∼1,000,000 km 2) to 17.3% (2070; ∼1,300,000 km 2) of" exact="Australia" post="is likely to be suitable for C. capitata (S3"/>
+   <result pre="is projected to occur along the northern region of Western" exact="Australia" post="and the Northern Territory, north-east Queensland, and south along"/>
+   <result pre="(MIROC5), a substantial westward range expansion is projected in eastern" exact="Australia" post="(S2 Table). Hence, although 35.4% (∼2,700,900 km 2) of"/>
+   <result pre="Australia (S2 Table). Hence, although 35.4% (∼2,700,900 km 2) of" exact="Australia" post="is projected to be suitable for this species under"/>
+   <result pre=". When regions containing novel climate are included, 31.6% of" exact="Australia" post="(i.e. ∼2,400,800 km 2) is projected to be currently"/>
+   <result pre="powerpoint Table 2. Area (km 2) and percentage (%) of" exact="Australia" post="projected to be suitable for the 11 fruit fly"/>
+   <result pre="https://www.R-project.org/). When novel environments are excluded from maps, 31.5% of" exact="Australia" post="is projected to be currently suitable for at least"/>
+   <result pre="to these conditions may be unreliable. The east coast of" exact="Australia" post="is also likely to remain suitable for multiple species"/>
+   <result pre="extend its range, potentially becoming a major pest in north-western" exact="Australia" post="[ 6, 36]. While widespread throughout Queensland, Z. cucumis"/>
+   <result pre="although there is a disputed single record from northern Western" exact="Australia" post="[ 61]. Both Fitt [ 62] and the Horticultural"/>
+   <result pre="northern Queensland, although it is presently only known from north-western" exact="Australia" post="[ 5]. The hosts of this species now include"/>
+   <result pre="species, or the growth of host plant industries in north-western" exact="Australia" post="may necessitate the development of new monitoring, control and"/>
+   <result pre="decrease). S3 Table. Area (km 2 ) and percentage of" exact="Australia" post="projected to be suitable for 11 fruit flies under"/>
+   <result pre="S5 Table. Area (km 2 ) and percentage (%) of" exact="Australia" post="projected to be suitable for the 11 fruit fly"/>
+   <result pre="jarvisi’ (Tyron)(Diptera: Tephritidae: Dacinae) and its likley southern distribution in" exact="Australia" post=". General and Applied Entomology: The Journal of the"/>
+   <result pre="). Proceedings of the 6th International Fruit Fly Symposium, Stellenbosch," exact="South Africa." post="2002: 45– 53. 11. ↵ White IM , Elson-Harris"/>
+   <result pre=", Mapson R. Revised distribution of Bactrocera tryoni in eastern" exact="Australia" post="and effect on possible incursions of Mediterranean fruit fly:"/>
+   <result pre="Queensland fruit fly, ‘ Bactrocera tryoni’(Froggatt)(Diptera: Tephritidae), for export to" exact="New Zealand." post="General and Applied Entomology : The Journal of the"/>
+   <result pre="↵ Kriticos D. Risks of establishment of fruit flies in" exact="New Zealand" post="under climate change. New Zealand Forest Research Institute, Rotorua;"/>
+   <result pre="establishment of fruit flies in New Zealand under climate change." exact="New Zealand" post="Forest Research Institute, Rotorua; 2007. 25. ↵ Vera MT"/>
+   <result pre="Mediterranean fruit fly, Ceratitis capitata (Diptera: Tephritidae), with emphasis on" exact="Argentina" post="and Australia . Environmental Entomology. 2002; 31( 6): 1009–"/>
+   <result pre="fly, Ceratitis capitata (Diptera: Tephritidae), with emphasis on Argentina and" exact="Australia" post=". Environmental Entomology. 2002; 31( 6): 1009– 22. OpenUrl"/>
+   <result pre="Wiedemann) and Queensland fruit fly ( Bactrocera tryoni Froggatt) in" exact="Australia" post=". Australian Journal of Entomology. 2012; 51( 2): 104–"/>
+   <result pre="DL. Bactrocera frauenfeldi (Diptera: Tephritidae), an invasive fruit fly in" exact="Australia" post="that may have reached the extent of its spread"/>
+   <result pre="46. OpenUrl 42. ↵ CSIRO &amp;amp;; BoM. Climate change in" exact="Australia" post="information for Australia’s natural resource management regions. Technical Report,"/>
+   <result pre="environment for statistical computing. R Foundation for Statistical Computing, Vienna," exact="Austria" post="2014. 54. ↵ Pebesma EJRSB. Classes and methods for"/>
+   <result pre="1979. 60. ↵ Cameron EC. Fruit Fly Pests of Northwestern" exact="Australia" post="[Thesis]: University of Sydney.; 2006. 61. ↵ Dominiak BC"/>
+   <result pre="of cucumber fruit fly, Bactrocera cucumis (French)(Diptera: Tephritidae: Dacinae) in" exact="Australia" post=": Part 1, host range, surveillance and distribution. Crop"/>
+   <result pre="records of Dacus (Austrodacus) cucumis French from the Northern Territory," exact="Australia" post="(Diptera: Tephritidae ). Australian Journal of Entomology. 1980; 19("/>
   </snippets>
  </snippetsTree>
  <snippetsTree>
@@ -834,6 +1020,29 @@
   </snippets>
  </snippetsTree>
  <snippetsTree>
+  <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_632976v1/results/search/country/results.xml">
+   <result pre="INRA, Université Fédérale de Toulouse, UMR 1248 AGIR, F-31326 Castanet-Tolosan," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="INRA, Université Fédérale de Toulouse, UMR 1248 AGIR, F-31326 Castanet-Tolosan," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="INRA, Université Fédérale de Toulouse, UMR 1248 AGIR, F-31326 Castanet-Tolosan," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Fédérale de Toulouse, UMR 1248 AGIR, INP, ENSAT, F-31326 Castanet-Tolosan," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="INRA, Université Fédérale de Toulouse, UMR 1248 AGIR, F-31326 Castanet-Tolosan," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="INRA, Université Fédérale de Toulouse, UMR 1248 AGIR, F-31326 Castanet-Tolosan," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="INRA, UMR 1345 IRHS, 42 rue George Morel, F-49071 Beaucouzé," exact="France" post="Find this author on Google Scholar Find this author"/>
+   <result pre="dates, from mid-March to mid-April, in the northern climate of" exact="France" post="to evaluate whether future climate change will help expand"/>
+   <result pre="will be suitable seedbed sowing conditions for soybean in Northern" exact="France" post="under future climate change. This simulation study is important"/>
+   <result pre="6-10 cm. We chose Estrées-Mons (49°52′44″N 3°00′27″E) located in Northern" exact="France" post="as representative area of North European climate. A detailed"/>
+   <result pre="mid-March, 1 st April, and mid-April. Although farmers in Northern" exact="France" post="currently practice late April sowing, we included earlier sowings"/>
+   <result pre="strong risks for a successful establishment of soybean in Northern" exact="France" post="in the coming decades for the simulated sowing dates"/>
+   <result pre="crop establishment in France. Indeed, currently, soybean is grown in" exact="France" post="without chemical seed dressing also because this practice is"/>
+   <result pre="this crop is still grown on a small surface in" exact="France" post="and it is often introduced in diversified cropping systems"/>
+   <result pre="Wagner, 2017). Moreover, the most important soybean basin is Southwestern" exact="France" post="where cool and moist seedbed conditions, favorable for soil-borne"/>
+   <result pre="biotic stresses have been reported from Northern Europe such as" exact="Belgium" post="( Pannecoucque et al., 2018). Likewise, soybean is one"/>
+   <result pre="irrigation before the crop establishment etc.) resulted favorable in Southwestern" exact="France" post="in terms of crop stand establishment. Results of field"/>
+   <result pre="in order to adapt to ongoing climate change. Farmers in" exact="France" post="and Northern Europe, who currently do not grow soybean"/>
+   <result pre="une stratégie agronomique pour améliorer les performances du soja en" exact="France" post="? OCL. https://doi.org/10.1051/ocl/2015028 ↵ Michel, B.E. , 1983. Evaluation"/>
+  </snippets>
+ </snippetsTree>
+ <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_634568v3/results/search/country/results.xml">
    <result pre=" Automated data-intensive forecasting of plant phenology throughout the" exact="United States" post="| bioRxiv Skip to main content Home About Submit"/>
    <result pre="New Results Automated data-intensive forecasting of plant phenology throughout the" exact="United States" post="Shawn D. Taylor , Ethan P. White doi: https://doi.org/10.1101/634568"/>
@@ -851,21 +1060,21 @@
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_658872v1/results/search/country/results.xml">
    <result pre="Pública, Fundação Oswaldo Cruz, Ministério da Saúde, Rio de Janeiro," exact="Brazil" post="Find this author on Google Scholar Find this author"/>
-   <result pre="Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz, Ministério da Saúde, Salvador," exact="Brazil" post="Instituto de Saúde Coletiva, Universidade Federal da Bahia, Salvador,"/>
-   <result pre="Brazil Instituto de Saúde Coletiva, Universidade Federal da Bahia, Salvador," exact="Brazil" post="Faculty of Health and Medicine, University of Lancaster, Lancaster,"/>
-   <result pre="Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz, Ministério da Saúde, Salvador," exact="Brazil" post="Faculdade de Medicina, Universidade Federal da Bahia, Salvador, Brazil"/>
-   <result pre="Salvador, Brazil Faculdade de Medicina, Universidade Federal da Bahia, Salvador," exact="Brazil" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz, Ministério da Saúde, Salvador," exact="Brazil" post="3 Instituto de Saúde Coletiva, Universidade Federal da Bahia,"/>
+   <result pre="3 Instituto de Saúde Coletiva, Universidade Federal da Bahia, Salvador," exact="Brazil" post="4 Faculty of Health and Medicine, University of Lancaster,"/>
+   <result pre="Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz, Ministério da Saúde, Salvador," exact="Brazil" post="6 Faculdade de Medicina, Universidade Federal da Bahia, Salvador,"/>
+   <result pre="Brazil 6 Faculdade de Medicina, Universidade Federal da Bahia, Salvador," exact="Brazil" post="Find this author on Google Scholar Find this author"/>
    <result pre="Pública, Fundação Oswaldo Cruz, Ministério da Saúde, Rio de Janeiro," exact="Brazil" post="Find this author on Google Scholar Find this author"/>
    <result pre="Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz, Ministério da Saúde, Salvador," exact="Brazil" post="Find this author on Google Scholar Find this author"/>
-   <result pre="Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz, Ministério da Saúde, Salvador," exact="Brazil" post="Instituto de Saúde Coletiva, Universidade Federal da Bahia, Salvador,"/>
-   <result pre="Brazil Instituto de Saúde Coletiva, Universidade Federal da Bahia, Salvador," exact="Brazil" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz, Ministério da Saúde, Salvador," exact="Brazil" post="3 Instituto de Saúde Coletiva, Universidade Federal da Bahia,"/>
+   <result pre="3 Instituto de Saúde Coletiva, Universidade Federal da Bahia, Salvador," exact="Brazil" post="Find this author on Google Scholar Find this author"/>
    <result pre="Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz, Ministério da Saúde, Salvador," exact="Brazil" post="Find this author on Google Scholar Find this author"/>
    <result pre="Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz, Ministério da Saúde, Salvador," exact="Brazil" post="Find this author on Google Scholar Find this author"/>
    <result pre="Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz, Ministério da Saúde, Salvador," exact="Brazil" post="Find this author on Google Scholar Find this author"/>
-   <result pre="Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz, Ministério da Saúde, Salvador," exact="Brazil" post="Department of Epidemiology of Microbial Diseases, School of Public"/>
-   <result pre="Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz, Ministério da Saúde, Salvador," exact="Brazil" post="Department of Epidemiology of Microbial Diseases, School of Public"/>
-   <result pre="Heaven, USA Faculdade de Medicina, Universidade Federal da Bahia, Salvador," exact="Brazil" post="Find this author on Google Scholar Find this author"/>
-   <result pre="Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz, Ministério da Saúde, Salvador," exact="Brazil" post="Department of Epidemiology of Microbial Diseases, School of Public"/>
+   <result pre="Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz, Ministério da Saúde, Salvador," exact="Brazil" post="5 Department of Epidemiology of Microbial Diseases, School of"/>
+   <result pre="Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz, Ministério da Saúde, Salvador," exact="Brazil" post="5 Department of Epidemiology of Microbial Diseases, School of"/>
+   <result pre="USA 6 Faculdade de Medicina, Universidade Federal da Bahia, Salvador," exact="Brazil" post="Find this author on Google Scholar Find this author"/>
+   <result pre="Pesquisas Gonçalo Moniz, Fundação Oswaldo Cruz, Ministério da Saúde, Salvador," exact="Brazil" post="5 Department of Epidemiology of Microbial Diseases, School of"/>
    <result pre="of leptospirosis and climatic variables in the city of Salvador," exact="Brazil" post="by using a dynamic generalized linear model that accounted"/>
    <result pre="largest city in the country - is located in north-eastern" exact="Brazil" post="and the capital of the state of Bahia. In"/>
    <result pre="Brazil and the capital of the state of Bahia. In" exact="Brazil" post="notification of leptospirosis cases is mandatory. At the time"/>
@@ -896,35 +1105,35 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_769232v2/results/search/country/results.xml">
-   <result pre="y Monitoreo de Ecosistemas, Facultad de Ciencias, Universidad Mayor, Santiago," exact="Chile" post="Biodiversity, Macroecology [[#38]] Biogeography, Faculty of Forest Sciences and"/>
-   <result pre="and Forest Ecology, University of Göttingen, Büsgenweg 1, 37077 Göttingen," exact="Germany" post="Department of Community Ecology, Helmholtz Centre for Environmental Research"/>
-   <result pre="Helmholtz Centre for Environmental Research – UFZ, 06120 Halle (Saale)," exact="Germany" post="German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, 04103"/>
+   <result pre="y Monitoreo de Ecosistemas, Facultad de Ciencias, Universidad Mayor, Santiago," exact="Chile" post="2 Biodiversity, Macroecology [[#38]] Biogeography, Faculty of Forest Sciences"/>
+   <result pre="and Forest Ecology, University of Göttingen, Büsgenweg 1, 37077 Göttingen," exact="Germany" post="3 Department of Community Ecology, Helmholtz Centre for Environmental"/>
+   <result pre="Helmholtz Centre for Environmental Research – UFZ, 06120 Halle (Saale)," exact="Germany" post="4 German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig,"/>
    <result pre="German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, 04103 Leipzig," exact="Germany" post="Find this author on Google Scholar Find this author"/>
-   <result pre="Helmholtz Centre for Environmental Research – UFZ, 06120 Halle (Saale)," exact="Germany" post="German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, 04103"/>
-   <result pre="German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, 04103 Leipzig," exact="Germany" post="Department of Biological Sciences, Florida Institute of Technology, Melbourne,"/>
-   <result pre="for Biodiversity [[#38]] Ecosystem Dynamics, University of Amsterdam, Amsterdam, The" exact="Netherlands" post="Forest Ecology and Forest Management Group, Wageningen University and"/>
+   <result pre="Helmholtz Centre for Environmental Research – UFZ, 06120 Halle (Saale)," exact="Germany" post="4 German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig,"/>
+   <result pre="German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, 04103 Leipzig," exact="Germany" post="5 Department of Biological Sciences, Florida Institute of Technology,"/>
+   <result pre="for Biodiversity [[#38]] Ecosystem Dynamics, University of Amsterdam, Amsterdam, The" exact="Netherlands" post="7 Forest Ecology and Forest Management Group, Wageningen University"/>
    <result pre="and Forest Management Group, Wageningen University and Research, Wageningen, the" exact="Netherlands" post="Find this author on Google Scholar Find this author"/>
-   <result pre="German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, 04103 Leipzig," exact="Germany" post="Institute of Biology, Leipzig University, Leipzig, Germany Institute of"/>
-   <result pre="Halle-Jena-Leipzig, 04103 Leipzig, Germany Institute of Biology, Leipzig University, Leipzig," exact="Germany" post="Institute of Geosciences and Geography, Martin Luther University Halle-Wittenberg,"/>
+   <result pre="German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, 04103 Leipzig," exact="Germany" post="8 Institute of Biology, Leipzig University, Leipzig, Germany 9"/>
+   <result pre="04103 Leipzig, Germany 8 Institute of Biology, Leipzig University, Leipzig," exact="Germany" post="9 Institute of Geosciences and Geography, Martin Luther University"/>
    <result pre="of Geosciences and Geography, Martin Luther University Halle-Wittenberg, Halle (Saale)," exact="Germany" post="Find this author on Google Scholar Find this author"/>
-   <result pre="German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, 04103 Leipzig," exact="Germany" post="Institute of Biology, Leipzig University, Leipzig, Germany Find this"/>
-   <result pre="Halle-Jena-Leipzig, 04103 Leipzig, Germany Institute of Biology, Leipzig University, Leipzig," exact="Germany" post="Find this author on Google Scholar Find this author"/>
-   <result pre="German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, 04103 Leipzig," exact="Germany" post="Institute of Biology, Martin Luther University Halle-Wittenberg, Halle (Saale),"/>
-   <result pre="Germany Institute of Biology, Martin Luther University Halle-Wittenberg, Halle (Saale)," exact="Germany" post="Find this author on Google Scholar Find this author"/>
-   <result pre="German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, 04103 Leipzig," exact="Germany" post="Institute of Biology, Leipzig University, Leipzig, Germany Institute of"/>
-   <result pre="Halle-Jena-Leipzig, 04103 Leipzig, Germany Institute of Biology, Leipzig University, Leipzig," exact="Germany" post="Institute of Ecology and Evolution, Friedrich Schiller University Jena,"/>
+   <result pre="German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, 04103 Leipzig," exact="Germany" post="8 Institute of Biology, Leipzig University, Leipzig, Germany Find"/>
+   <result pre="04103 Leipzig, Germany 8 Institute of Biology, Leipzig University, Leipzig," exact="Germany" post="Find this author on Google Scholar Find this author"/>
+   <result pre="German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, 04103 Leipzig," exact="Germany" post="10 Institute of Biology, Martin Luther University Halle-Wittenberg, Halle"/>
+   <result pre="10 Institute of Biology, Martin Luther University Halle-Wittenberg, Halle (Saale)," exact="Germany" post="Find this author on Google Scholar Find this author"/>
+   <result pre="German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, 04103 Leipzig," exact="Germany" post="8 Institute of Biology, Leipzig University, Leipzig, Germany 11"/>
+   <result pre="04103 Leipzig, Germany 8 Institute of Biology, Leipzig University, Leipzig," exact="Germany" post="11 Institute of Ecology and Evolution, Friedrich Schiller University"/>
    <result pre="Institute of Ecology and Evolution, Friedrich Schiller University Jena, Jena," exact="Germany" post="Find this author on Google Scholar Find this author"/>
-   <result pre="German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, 04103 Leipzig," exact="Germany" post="Institute of Biology, Leipzig University, Leipzig, Germany Find this"/>
-   <result pre="Halle-Jena-Leipzig, 04103 Leipzig, Germany Institute of Biology, Leipzig University, Leipzig," exact="Germany" post="Find this author on Google Scholar Find this author"/>
-   <result pre="German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, 04103 Leipzig," exact="Germany" post="Institute of Biology, Leipzig University, Leipzig, Germany Find this"/>
-   <result pre="Halle-Jena-Leipzig, 04103 Leipzig, Germany Institute of Biology, Leipzig University, Leipzig," exact="Germany" post="Find this author on Google Scholar Find this author"/>
-   <result pre="German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, 04103 Leipzig," exact="Germany" post="Methodology Centre and Institute of Ecology, Leuphana University Lüneburg,"/>
+   <result pre="German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, 04103 Leipzig," exact="Germany" post="8 Institute of Biology, Leipzig University, Leipzig, Germany Find"/>
+   <result pre="04103 Leipzig, Germany 8 Institute of Biology, Leipzig University, Leipzig," exact="Germany" post="Find this author on Google Scholar Find this author"/>
+   <result pre="German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, 04103 Leipzig," exact="Germany" post="8 Institute of Biology, Leipzig University, Leipzig, Germany Find"/>
+   <result pre="04103 Leipzig, Germany 8 Institute of Biology, Leipzig University, Leipzig," exact="Germany" post="Find this author on Google Scholar Find this author"/>
+   <result pre="German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, 04103 Leipzig," exact="Germany" post="12 Methodology Centre and Institute of Ecology, Leuphana University"/>
    <result pre="Methodology Centre and Institute of Ecology, Leuphana University Lüneburg, Lüneburg," exact="Germany" post="Find this author on Google Scholar Find this author"/>
-   <result pre="German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, 04103 Leipzig," exact="Germany" post="Quantitative Assessment Methods Section, Pacific Biological Station, Fisheries and"/>
+   <result pre="German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, 04103 Leipzig," exact="Germany" post="13 Quantitative Assessment Methods Section, Pacific Biological Station, Fisheries"/>
    <result pre="Section, Pacific Biological Station, Fisheries and Oceans Canada, Nanaimo, BC," exact="Canada" post="Find this author on Google Scholar Find this author"/>
-   <result pre="German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, 04103 Leipzig," exact="Germany" post="Department of Computer Sciences, Martin Luther University Halle-Wittenberg, Halle"/>
+   <result pre="German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, 04103 Leipzig," exact="Germany" post="14 Department of Computer Sciences, Martin Luther University Halle-Wittenberg,"/>
    <result pre="Department of Computer Sciences, Martin Luther University Halle-Wittenberg, Halle (Saale)," exact="Germany" post="Find this author on Google Scholar Find this author"/>
-   <result pre="German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, 04103 Leipzig," exact="Germany" post="Department of Computer Sciences, Martin Luther University Halle-Wittenberg, Halle"/>
+   <result pre="German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig, 04103 Leipzig," exact="Germany" post="14 Department of Computer Sciences, Martin Luther University Halle-Wittenberg,"/>
    <result pre="Department of Computer Sciences, Martin Luther University Halle-Wittenberg, Halle (Saale)," exact="Germany" post="Find this author on Google Scholar Find this author"/>
    <result pre="programme with project number 019.171LW.023, which is financed by the" exact="Netherlands" post="Organisation for Scientific Research (NWO). CM acknowledges funding from"/>
    <result pre="( 2012) NACP Forest Age Maps at 1-km Resolution for" exact="Canada" post="(2004) and the U.S.A. (2006) . Data set., ORNL"/>
@@ -932,10 +1141,10 @@
  </snippetsTree>
  <snippetsTree>
   <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_771279v1/results/search/country/results.xml">
-   <result pre="The Pennsylvania State University Department of Statistics, University Park, Pennsylvania," exact="United States" post="of America Department of Mathematics, Lehigh University, Bethlehem, Pennsylvania,"/>
-   <result pre="States of America Department of Mathematics, Lehigh University, Bethlehem, Pennsylvania," exact="United States" post="of America Find this author on Google Scholar Find"/>
-   <result pre="Roth Miranda Teboh-Ewungkem Department of Mathematics, Lehigh University, Bethlehem, Pennsylvania," exact="United States" post="of America Find this author on Google Scholar Find"/>
-   <result pre="Li Center for Environmental Science, University of Maryland, Cambridge, Maryland," exact="United States" post="of America Find this author on Google Scholar Find"/>
+   <result pre="The Pennsylvania State University Department of Statistics, University Park, Pennsylvania," exact="United States" post="of America 2 Department of Mathematics, Lehigh University, Bethlehem,"/>
+   <result pre="of America 2 Department of Mathematics, Lehigh University, Bethlehem, Pennsylvania," exact="United States" post="of America Find this author on Google Scholar Find"/>
+   <result pre="Miranda Teboh-Ewungkem 2 Department of Mathematics, Lehigh University, Bethlehem, Pennsylvania," exact="United States" post="of America Find this author on Google Scholar Find"/>
+   <result pre="3 Center for Environmental Science, University of Maryland, Cambridge, Maryland," exact="United States" post="of America Find this author on Google Scholar Find"/>
    <result pre="been thousands of autochthonous Zika cases in US territories like" exact="Puerto Rico," post="the US Virgin Islands, and American Samoa. In the"/>
    <result pre="US territories like Puerto Rico, the US Virgin Islands, and" exact="American Samoa." post="In the mainland US, there have been over two-hundred"/>
    <result pre="move, and above 40°C (104°F), they die [ 9]. In" exact="Japan" post="and Asia, the minimum mean temperatures in winter months"/>

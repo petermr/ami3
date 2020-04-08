@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <snippetsTree>
  <snippets file="/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/tools/download/testsearch50/10_1101_091686v1/results/search/country/results.xml">
-  <result pre="Picó doi: https://doi.org/10.1101/091686 Arnald Marcer CREAF, Cerdanyola del Vallès 08193," exact="Spain" post="Univ. Autònoma de Barcelona, Cerdanyola del Vallès 08193, Spain"/>
-  <result pre="08193, Spain Univ. Autònoma de Barcelona, Cerdanyola del Vallès 08193," exact="Spain" post="Find this author on Google Scholar Find this author"/>
+  <result pre="doi: https://doi.org/10.1101/091686 Arnald Marcer a CREAF, Cerdanyola del Vallès 08193," exact="Spain" post="b Univ. Autònoma de Barcelona, Cerdanyola del Vallès 08193,"/>
+  <result pre="Spain b Univ. Autònoma de Barcelona, Cerdanyola del Vallès 08193," exact="Spain" post="Find this author on Google Scholar Find this author"/>
   <result pre="and Evolutionary Biology, University of Toronto, Toronto, ON M5S 3G5," exact="Canada" post="Find this author on Google Scholar Find this author"/>
   <result pre="de Doñana (EBD), Consejo Superior de Investigaciones Científicas (CSIC), Sevilla," exact="Spain" post="Find this author on Google Scholar Find this author"/>
   <result pre="were partially supported by Ministerio de Economía y Competitividad of" exact="Spain" post="(CGL2012-33220/) and the Agency for Management of University and"/>

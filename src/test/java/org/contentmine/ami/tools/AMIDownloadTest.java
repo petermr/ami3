@@ -135,10 +135,10 @@ public class AMIDownloadTest extends AbstractAMITest {
 //		Assert.assertTrue(new File("target/biorxiv/climate/metadata/page1.html").exists());
 //		these should work
 		Assert.assertTrue(new File("target/biorxiv/climate/__metadata/resultSet3.html").exists());
-		Assert.assertTrue(new File("/ami3/target/biorxiv/climate/10_1101_2019_12_16_878348v1/landingPage.html").exists());
-		Assert.assertTrue(new File("/ami3/target/biorxiv/climate/10_1101_2019_12_16_878348v1/rawFullText.html").exists());
-		Assert.assertTrue(new File("/ami3/target/biorxiv/climate/10_1101_2019_12_16_878348v1/scholarly.html").exists());
-		Assert.assertTrue(new File("/ami3/target/biorxiv/climate/10_1101_2019_12_16_878348v1/scrapedMetadata.html").exists());
+		Assert.assertTrue(new File("target/biorxiv/climate/10_1101_2019_12_16_878348v1/landingPage.html").exists());
+		Assert.assertTrue(new File("target/biorxiv/climate/10_1101_2019_12_16_878348v1/rawFullText.html").exists());
+		Assert.assertTrue(new File("target/biorxiv/climate/10_1101_2019_12_16_878348v1/scholarly.html").exists());
+		Assert.assertTrue(new File("target/biorxiv/climate/10_1101_2019_12_16_878348v1/scrapedMetadata.html").exists());
 	}
 
 	// extract fulltext with div[class~="fulltext-view"]
@@ -367,6 +367,7 @@ public class AMIDownloadTest extends AbstractAMITest {
 	/** issues a search  and turns results into resultSet
 	 * 
 	 */
+	@Ignore // HTML DTD problem 
 	public void testHALSearchResultSet() throws IOException {
 		File targetDir = new File("target/hal/testsearch4");
 		FileUtils.deleteQuietly(targetDir);
