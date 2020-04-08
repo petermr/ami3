@@ -23,6 +23,7 @@ import org.contentmine.graphics.html.HtmlLi;
 import org.contentmine.graphics.html.HtmlUl;
 import org.hamcrest.MatcherAssert;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import nu.xom.Element;
@@ -98,6 +99,7 @@ public class AMIDownloadTest extends AbstractAMITest {
 	@Test
 	/** 
 	 * run query
+	 * VERY long
 	 */
 	public void testBiorxiv() throws Exception {
 		
@@ -116,6 +118,7 @@ public class AMIDownloadTest extends AbstractAMITest {
 	/** 
 	 * run query
 	 */
+//	@Ignore
 	public void testBiorxivClimate() throws Exception {
 		String args = 
 				"-p target/biorxiv/climate"
@@ -128,7 +131,14 @@ public class AMIDownloadTest extends AbstractAMITest {
 				+ " --limit 100"
 			;
 		new AMIDownloadTool().runCommands(args);
-		Assert.assertTrue(new File("target/biorxiv/climate/metadata/page1.html").exists());
+// I think this is an outdated Assert.
+//		Assert.assertTrue(new File("target/biorxiv/climate/metadata/page1.html").exists());
+//		these should work
+		Assert.assertTrue(new File("target/biorxiv/climate/__metadata/resultSet3.html").exists());
+		Assert.assertTrue(new File("/ami3/target/biorxiv/climate/10_1101_2019_12_16_878348v1/landingPage.html").exists());
+		Assert.assertTrue(new File("/ami3/target/biorxiv/climate/10_1101_2019_12_16_878348v1/rawFullText.html").exists());
+		Assert.assertTrue(new File("/ami3/target/biorxiv/climate/10_1101_2019_12_16_878348v1/scholarly.html").exists());
+		Assert.assertTrue(new File("/ami3/target/biorxiv/climate/10_1101_2019_12_16_878348v1/scrapedMetadata.html").exists());
 	}
 
 	// extract fulltext with div[class~="fulltext-view"]
@@ -267,6 +277,7 @@ public class AMIDownloadTest extends AbstractAMITest {
 	@Test
 	/** issues a search  and turns results into resultSet
 	 * 
+	 * LONG 68 s
 	 */
 	public void testBiorxivSearchResultSetIT() throws IOException {
 		File targetDir = new File("target/biorxiv/testsearch4");
@@ -324,6 +335,7 @@ public class AMIDownloadTest extends AbstractAMITest {
 	@Test
 	/** issues a search  and turns results into resultSet
 	 * 
+	 * LONG 60
 	 */
 	public void testBiorxivSearchResultSetLargeIT() throws IOException {
 		int pagesize = 3;

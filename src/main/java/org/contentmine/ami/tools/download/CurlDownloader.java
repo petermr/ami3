@@ -140,9 +140,15 @@ public class CurlDownloader {
 		ProcessBuilder processBuilder = new ProcessBuilder(command);
 		Process process = processBuilder.start();
 		String result = String.join("\n", IOUtils.readLines(process.getInputStream(), CMineUtil.UTF8_CHARSET));
-		int exitCode = process.exitValue();
-		if (exitCode != 0) {
-			System.err.println("EXITCode: "+exitCode);
+		try {
+			int exitCode = process.exitValue();
+			if (exitCode != 0) {
+				System.err.println("EXITCode: "+exitCode);
+			}
+		} catch (java.lang.IllegalThreadStateException itse) {
+			// not sure yet why this happens
+			System.err.println("Error after running curl, maybe: process hasn't exited");
+			itse.printStackTrace();
 		}
 		return result;
 	}
