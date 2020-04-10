@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<list list-type="simple" list-content="nomenclature-citation-list" class="list">
- <list-item class="list-item">
-  <p content-type="nomenclature-citation" class="p">
-   <named-content content-type="taxon-name" class="named-content">Ponceletia</named-content>
-   <named-content content-type="comment" class="named-content"> Thouars., Esquisse Fl. Tristan D’Acugna 36. 1808. Type: 
-    <italic class="italic">
-     <named-content content-type="taxon-name" class="named-content">Ponceletia arundinacea</named-content>
+<list list-type="simple" list-content="nomenclature-citation-list">
+ <list-item>
+  <p content-type="nomenclature-citation">
+   <named-content content-type="taxon-name">Ponceletia</named-content>
+   <named-content content-type="comment"> Thouars., Esquisse Fl. Tristan D’Acugna 36. 1808. Type: 
+    <italic>
+     <named-content content-type="taxon-name">Ponceletia arundinacea</named-content>
     </italic> Thouars.
    </named-content>
   </p>
  </list-item>
- <list-item class="list-item">
-  <p content-type="nomenclature-citation" class="p">
-   <named-content content-type="taxon-name" class="named-content">Solenachne</named-content>
-   <named-content content-type="comment" class="named-content"> Steud. Syn. Pl. Glumac. 1: 12. 1855. Type: 
-    <italic class="italic">
-     <named-content content-type="taxon-name" class="named-content">Solenachne phalaroides</named-content>
+ <list-item>
+  <p content-type="nomenclature-citation">
+   <named-content content-type="taxon-name">Solenachne</named-content>
+   <named-content content-type="comment"> Steud. Syn. Pl. Glumac. 1: 12. 1855. Type: 
+    <italic>
+     <named-content content-type="taxon-name">Solenachne phalaroides</named-content>
     </italic> Steud.
    </named-content>
   </p>

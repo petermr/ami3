@@ -168,7 +168,7 @@ public class AMIImageTest {
 //				"-t /Users/pm286/workspace/uclforest/devtest/zhengetal_2016"
 //				+ " --binarize xLOCAL_MEAN"
 				+ " --threshold 180"
-				+ " --sharpen x"
+//				+ " --sharpen x"
 				;
 		new AMIImageTool().runCommands(args);
 	}

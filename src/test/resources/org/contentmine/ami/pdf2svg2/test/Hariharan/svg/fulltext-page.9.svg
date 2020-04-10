@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg height="586.7" width="345.4326013" xmlns="http://www.w3.org/2000/svg">
+<svg height="586.7" width="348.0313" xmlns="http://www.w3.org/2000/svg">
  <g id="page" xmlns:svgx="http://www.xml-cml.org/schema/svgx">
   <g begin="text">
    <text y="18.075" x="34.016,38.624,67.064,73.591,78.711,83.319,86.923,91.531,95.115,103.31,110.221,114.828,118.433,120.993,126.113,130.72,134.325,138.933,144.053,149.679,155.699,160.307,165.427,167.987,175.661,182.571,186.176,191.556,195.655,198.215,198.214,202.822,206.921,211.017,216.644,223.427,228.035,231.67,238.38,245.611,248.171,251.776,255.411,260.531,263.09,266.926,271.79,277.425,282.16,284.72,288.304,292.403,297.523,302.643,306.248,313.922,322.368,326.976,329.536,332.096" svgx:width="0.51,0.51,0.73,0.57,0.51,0.4,0.51,0.4,0.57,0.77,0.51,0.4,0.29,0.57,0.51,0.4,0.51,0.57,0.29,0.7,0.51,0.57,0.29,0.51,0.77,0.4,0.57,0.46,0.29,0.51,0.51,0.46,0.46,0.29,0.76,0.51,0.41,0.41,0.81,0.29,0.4,0.41,0.57,0.29,0.46,0.54,0.29,0.53,0.29,0.4,0.46,0.57,0.57,0.4,0.51,0.94,0.51,0.29,0.29,0.54" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">10BharathHariharan,PabloArbel´aez,RossGirshick,JitendraMalik</text>
@@ -8,7 +8,7 @@
    <text y="41.334" x="177.737" svgx:width="0.58" style="fill:rgb(0,0,0);font-family:CMMI6;font-size:5.98px;stroke:none;">r</text>
    <text y="45.143" x="184.967,189.575,194.68789999999998,197.77,204.42,211.588,218.244,222.852,227.46,232.067,236.64170000000001,239.742,244.094,248.702,251.262,253.8633,256.897,263.808,266.368,268.9693,271.994,276.863,281.983,289.402,294.782,298.881,302.486,306.1637,309.187,313.795,317.4,321.52619999999996,324.575,332.254" svgx:width="0.51,0.57,0.55,0.77,0.8,0.74,0.51,0.51,0.51,0.51,0.55,0.54,0.51,0.29,0.29,0.55,0.77,0.29,0.29,0.55,0.57,0.57,0.86,0.57,0.46,0.4,0.41,0.55,0.51,0.4,0.46,0.55,0.86,0.29" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">on VOC2012 val. All numbers are %.</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:1.0;" d="M161.88 67.56 L161.88 56.6 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:1.0;" d="M161.880 67.560 L161.880 56.600 "/>
   <g begin="text">
    <text y="64.271" x="166.13" svgx:width="0.8" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">O</text>
    <text y="65.267" x="173.298" svgx:width="0.61" style="fill:rgb(0,0,0);font-family:CMR6;font-size:5.98px;stroke:none;">2</text>
@@ -16,137 +16,137 @@
    <text y="64.271" x="196.412,204.39530000000002,222.772,230.30679999999998,250.074,257.6985,271.841" svgx:width="0.89,0.55,0.84,0.55,0.85,0.55,0.85" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">A B C C</text>
    <text y="64.271" x="279.506,286.674,290.278,294.378" svgx:width="0.8,0.4,0.46,0.31" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">+ref</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M106.27 67.76 L301.45 67.76 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M106.270 67.760 L301.450 67.760 "/>
   <g begin="text">
    <text y="75.628" x="110.522,115.13,119.229,122.834,127.442,132.561,135.121,139.729,144.849" svgx:width="0.51,0.46,0.4,0.51,0.57,0.29,0.51,0.57,0.46" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">aeroplane</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.88 78.92 L161.88 67.96 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.880 78.920 L161.880 67.960 "/>
   <g begin="text">
    <text y="75.628" x="166.733,171.341,175.949,178.509,183.0837,192.226,196.834,201.442,204.002,208.57670000000002,218.347,222.955,227.563,230.123,234.6977,245.714,250.322,254.93,257.49" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">56.5 61.8 65.7 67.4</text>
    <text y="75.628" x="275.087,280.392,285.698,288.645" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">68.4</text>
    <text y="86.587" x="110.522,115.642,118.202,122.298,127.161,131.257,133.817" svgx:width="0.57,0.29,0.46,0.54,0.46,0.29,0.46" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">bicycle</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.88 89.88 L161.88 78.92 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.880 89.880 L161.880 78.920 "/>
   <g begin="text">
    <text y="86.587" x="166.733,171.341,175.949,178.509,183.0837,192.226,196.834,201.442,204.002" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">19.0 43.4</text>
    <text y="86.587" x="217.11,222.415,227.721,230.668,235.96030000000002,244.474,249.779,255.085,258.032" svgx:width="0.59,0.59,0.33,0.59,0.55,0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">49.6 49.6</text>
    <text y="86.587" x="276.326,280.934,285.542,288.102" svgx:width="0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">49.4</text>
    <text y="97.546" x="110.522,115.642,118.202,121.806" svgx:width="0.57,0.29,0.4,0.57" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">bird</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.88 100.83 L161.88 89.88 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.880 100.830 L161.880 89.880 "/>
   <g begin="text">
    <text y="97.546" x="166.733,171.341,175.949,178.509,183.0837,192.226,196.834,201.442,204.002,208.57670000000002,218.347,222.955,227.563,230.123,234.6977,245.714,250.322,254.93,257.49" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">23.0 46.6 47.2 49.1</text>
    <text y="97.546" x="275.087,280.392,285.698,288.645" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">52.1</text>
    <text y="108.505" x="110.522,115.902,120.51,125.118" svgx:width="0.57,0.51,0.51,0.4" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">boat</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.88 111.79 L161.88 100.83 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.880 111.790 L161.880 100.830 "/>
   <g begin="text">
    <text y="108.505" x="166.733,171.341,175.949,178.509,183.0837,192.226,196.834,201.442,204.002,208.57670000000002,218.347,222.955,227.563,230.123,234.6977,245.714,250.322,254.93,257.49" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">12.2 27.2 30.0 29.9</text>
    <text y="108.505" x="275.087,280.392,285.698,288.645" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">32.8</text>
    <text y="119.464" x="110.522,115.902,120.51,124.094,127.668,130.228" svgx:width="0.57,0.51,0.4,0.4,0.29,0.46" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">bottle</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.88 122.75 L161.88 111.79 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.880 122.750 L161.880 111.790 "/>
   <g begin="text">
    <text y="119.464" x="166.733,171.341,175.949,178.509,183.0837,192.226,196.834,201.442,204.002,208.57670000000002,218.347,222.955,227.563,230.123,234.6977,245.714,250.322,254.93,257.49" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">11.0 28.9 31.7 32.0</text>
    <text y="119.464" x="275.087,280.392,285.698,288.645" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">33.0</text>
    <text y="130.423" x="110.522,115.642,120.762" svgx:width="0.57,0.57,0.41" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">bus</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.88 133.71 L161.88 122.75 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.880 133.710 L161.880 122.750 "/>
   <g begin="text">
    <text y="130.423" x="166.733,171.341,175.949,178.509,183.0837,192.226,196.834,201.442,204.002,208.57670000000002,218.347,222.955,227.563,230.123,234.6977,245.714,250.322,254.93,257.49" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">48.8 61.7 66.9 65.9</text>
    <text y="130.423" x="275.087,280.392,285.698,288.645" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">67.8</text>
    <text y="141.382" x="110.522,114.618,119.226" svgx:width="0.46,0.51,0.4" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">car</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.88 144.67 L161.88 133.71 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.880 144.670 L161.880 133.710 "/>
   <g begin="text">
    <text y="141.382" x="166.733,171.341,175.949,178.509,183.0837,192.226,196.834,201.442,204.002,208.57670000000002,218.347,222.955,227.563,230.123,234.6977,245.714,250.322,254.93,257.49" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">26.0 46.9 50.9 51.4</text>
    <text y="141.382" x="275.087,280.392,285.698,288.645" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">53.6</text>
    <text y="152.341" x="110.522,114.618,119.226" svgx:width="0.46,0.51,0.4" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">cat</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.88 155.63 L161.88 144.67 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.880 155.630 L161.880 144.670 "/>
   <g begin="text">
    <text y="152.341" x="166.733,171.341,175.949,178.509,183.0837,192.226,196.834,201.442,204.002,208.57670000000002,218.347,222.955,227.563,230.123,234.6977,245.714,250.322,254.93,257.49" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">43.3 58.4 69.2 70.6</text>
    <text y="152.341" x="275.087,280.392,285.698,288.645" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">73.9</text>
    <text y="163.299" x="110.522,114.358,119.478,124.085,126.645" svgx:width="0.46,0.57,0.51,0.29,0.4" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">chair</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.88 166.59 L161.88 155.63 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.880 166.590 L161.880 155.630 "/>
   <g begin="text">
    <text y="163.299" x="169.037,173.645,176.205,180.77970000000002,192.227,196.835,201.442,204.002,208.57670000000002,218.348,222.956,227.563,230.123" svgx:width="0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">4.7 17.8 19.6</text>
    <text y="163.299" x="244.477,249.782,255.088,258.035" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">20.2</text>
    <text y="163.299" x="276.326,280.934,285.542,288.102" svgx:width="0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">19.9</text>
    <text y="174.258" x="110.522,114.618,118.966" svgx:width="0.46,0.51,0.74" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">cow</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.88 177.55 L161.88 166.59 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.880 177.550 L161.880 166.590 "/>
   <g begin="text">
    <text y="174.258" x="166.733,171.341,175.949,178.509,183.0837,192.226,196.834,201.442,204.002,208.57670000000002,218.347,222.955,227.563,230.123,234.6977,245.714,250.322,254.93,257.49" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">15.6 38.8 42.7 42.7</text>
    <text y="174.258" x="275.087,280.392,285.698,288.645" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">43.7</text>
    <text y="185.217" x="110.522,115.642,118.202,123.322,125.881,131.001,135.609,139.193,143.801,148.921,151.481" svgx:width="0.57,0.29,0.57,0.29,0.57,0.51,0.4,0.51,0.57,0.29,0.46" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">diningtable</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.88 188.5 L161.88 177.55 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.880 188.500 L161.880 177.550 "/>
   <g begin="text">
    <text y="185.217" x="169.037,173.645,176.205,180.77970000000002,192.227,196.835,201.442,204.002,208.57670000000002,218.348,222.956,227.563,230.123,234.6977,245.715,250.323,254.931,257.491" svgx:width="0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">7.8 18.6 22.8 22.9</text>
    <text y="185.217" x="275.087,280.392,285.698,288.645" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">25.7</text>
    <text y="196.176" x="110.522,115.642,120.25" svgx:width="0.57,0.51,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">dog</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.88 199.46 L161.88 188.51 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.880 199.460 L161.880 188.510 "/>
   <g begin="text">
    <text y="196.176" x="166.733,171.341,175.949,178.509,183.0837,192.226,196.834,201.442,204.002,208.57670000000002,218.347,222.955,227.563,230.123,234.6977,245.714,250.322,254.93,257.49" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">24.2 52.6 56.2 58.7</text>
    <text y="196.176" x="275.087,280.392,285.698,288.645" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">60.6</text>
    <text y="207.135" x="110.522,115.642,120.25,123.854,127.489" svgx:width="0.57,0.51,0.4,0.41,0.46" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">horse</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.88 210.42 L161.88 199.46 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.880 210.420 L161.880 199.460 "/>
   <g begin="text">
    <text y="207.135" x="166.733,171.341,175.949,178.509,183.0837,192.226,196.834,201.442,204.002,208.57670000000002,218.347,222.955,227.563,230.123,234.6977,245.714,250.322,254.93,257.49" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">27.5 44.3 51.9 54.4</text>
    <text y="207.135" x="275.087,280.392,285.698,288.645" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">55.9</text>
    <text y="218.094" x="110.522,118.202,122.81,126.393,131.001,134.606,139.726,142.285,146.889" svgx:width="0.86,0.51,0.4,0.51,0.4,0.57,0.29,0.54,0.46" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">motorbike</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.88 221.38 L161.88 210.42 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.880 221.380 L161.880 210.420 "/>
   <g begin="text">
    <text y="218.094" x="166.733,171.341,175.949,178.509,183.0837,192.226,196.834,201.442,204.002,208.57670000000002,218.347,222.955,227.563,230.123,234.6977,245.714,250.322,254.93,257.49" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">32.3 50.2 52.6 53.5</text>
    <text y="218.094" x="275.087,280.392,285.698,288.645" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">58.9</text>
    <text y="229.053" x="110.522,115.902,120.001,123.606,127.241,131.84" svgx:width="0.57,0.46,0.4,0.41,0.51,0.57" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">person</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.88 232.34 L161.88 221.38 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.880 232.340 L161.880 221.380 "/>
   <g begin="text">
    <text y="229.053" x="166.733,171.341,175.949,178.509,183.0837,192.226,196.834,201.442,204.002,208.57670000000002,218.347,222.955,227.563,230.123,234.6977,245.714,250.322,254.93,257.49" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">23.5 48.2 52.6 54.4</text>
    <text y="229.053" x="275.087,280.392,285.698,288.645" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">56.7</text>
    <text y="240.012" x="110.522,115.902,120.51,124.094,127.668,131.768,136.888,142.008,144.567,149.175,154.044" svgx:width="0.57,0.51,0.4,0.4,0.46,0.57,0.57,0.29,0.51,0.57,0.4" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">pottedplant</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.88 243.3 L161.88 232.34 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.880 243.300 L161.880 232.340 "/>
   <g begin="text">
    <text y="240.012" x="169.037,173.645,176.205,180.77970000000002,192.227,196.835,201.442,204.002,208.57670000000002,218.348,222.956,227.563,230.123,234.6977,245.715,250.323,254.931,257.491" svgx:width="0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">4.6 23.8 25.7 24.9</text>
    <text y="240.012" x="275.087,280.392,285.698,288.645" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">28.5</text>
    <text y="250.971" x="110.522,114.157,119.277,123.376,127.476" svgx:width="0.41,0.57,0.46,0.46,0.57" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">sheep</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.88 254.26 L161.88 243.3 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.880 254.260 L161.880 243.300 "/>
   <g begin="text">
    <text y="250.971" x="166.733,171.341,175.949,178.509,183.0837,192.226,196.834,201.442,204.002,208.57670000000002,218.347,222.955,227.563,230.123,234.6977,245.714,250.322,254.93,257.49" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">32.3 54.2 54.2 54.1</text>
    <text y="250.971" x="275.087,280.392,285.698,288.645" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">55.6</text>
    <text y="261.93" x="110.522,114.157,118.765,121.58" svgx:width="0.41,0.51,0.31,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">sofa</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.88 265.22 L161.88 254.26 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.880 265.220 L161.880 254.260 "/>
   <g begin="text">
    <text y="261.93" x="166.733,171.341,175.949,178.509,183.0837,192.226,196.834,201.442,204.002" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">20.7 26.0</text>
    <text y="261.93" x="217.11,222.415,227.721,230.668" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">32.2</text>
    <text y="261.93" x="245.716,250.324,254.932,257.492,262.0667,276.329,280.937,285.545,288.105" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">31.4 32.1</text>
    <text y="272.889" x="110.522,114.106,117.71,122.318,124.878" svgx:width="0.4,0.4,0.51,0.29,0.57" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">train</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.88 276.18 L161.88 265.22 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.880 276.180 L161.880 265.220 "/>
   <g begin="text">
    <text y="272.889" x="166.733,171.341,175.949,178.509,183.0837,192.226,196.834,201.442,204.002,208.57670000000002,218.347,222.955,227.563,230.123,234.6977,245.714,250.322,254.93,257.49" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">38.8 53.2 59.2 62.2</text>
    <text y="272.889" x="275.087,280.392,285.698,288.645" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">64.7</text>
    <text y="283.847" x="110.522,114.106,118.969,126.649,131.257,136.377,138.937,142.52,147.128" svgx:width="0.4,0.54,0.86,0.51,0.57,0.29,0.4,0.51,0.4" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">tvmonitor</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.88 287.13 L161.88 276.18 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.880 287.130 L161.880 276.180 "/>
   <g begin="text">
    <text y="283.847" x="166.733,171.341,175.949,178.509,183.0837,192.226,196.834,201.442,204.002,208.57670000000002,218.347,222.955,227.563,230.123,234.6977,245.714,250.322,254.93,257.49" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">32.3 55.3 58.7 59.3</text>
    <text y="283.847" x="275.087,280.392,285.698,288.645" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">60.0</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M106.27 287.33 L301.45 287.33 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M106.270 287.330 L301.450 287.330 "/>
   <g begin="text">
    <text y="295.205" x="110.522,118.968,123.068,127.676" svgx:width="0.94,0.46,0.51,0.57" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">Mean</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.88 298.49 L161.88 287.53 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M161.880 298.490 L161.880 287.530 "/>
   <g begin="text">
    <text y="295.205" x="166.733,171.341,175.949,178.509,183.0837,192.226,196.834,201.442,204.002,208.57670000000002,218.347,222.955,227.563,230.123,234.6977,245.714,250.322,254.93,257.49" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">25.2 42.9 47.0 47.7</text>
    <text y="295.205" x="275.087,280.392,285.698,288.645" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">49.7</text>
@@ -156,7 +156,7 @@
    <text y="323.848" x="174.561,178.512,182.173" svgx:width="0.63,0.61,0.4" style="fill:rgb(0,0,0);font-family:CMMI6;font-size:5.98px;stroke:none;">vol</text>
    <text y="321.992" x="188.143,192.751,197.8639,200.946,207.596,214.764,221.42,226.028,230.636,235.243,239.8177,242.918,247.27,251.878,254.438,257.03929999999997,260.073,266.984,269.544,272.14529999999996,275.179,280.039,285.159,292.578,297.958,302.057,305.662,309.3397,312.363,316.971,320.576,324.7022,327.751,335.43" svgx:width="0.51,0.57,0.55,0.77,0.8,0.74,0.51,0.51,0.51,0.51,0.55,0.54,0.51,0.29,0.29,0.55,0.77,0.29,0.29,0.55,0.57,0.57,0.86,0.57,0.46,0.4,0.41,0.55,0.51,0.4,0.46,0.55,0.86,0.29" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">on VOC2012 val. All numbers are %.</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.12 345.77 L163.12 334.81 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.120 345.770 L163.120 334.810 "/>
   <g begin="text">
    <text y="342.478" x="167.37" svgx:width="0.8" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">O</text>
    <text y="343.475" x="174.537" svgx:width="0.61" style="fill:rgb(0,0,0);font-family:CMR6;font-size:5.98px;stroke:none;">2</text>
@@ -164,136 +164,136 @@
    <text y="342.478" x="197.652,205.6353,222.775,230.3098,248.839,256.4635,270.606" svgx:width="0.89,0.55,0.84,0.55,0.85,0.55,0.85" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">A B C C</text>
    <text y="342.478" x="278.266,285.434,289.038,293.138" svgx:width="0.8,0.4,0.46,0.31" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">+ref</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M107.51 345.96 L300.21 345.96 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M107.510 345.960 L300.210 345.960 "/>
   <g begin="text">
    <text y="353.836" x="111.762,116.37,120.469,124.074,128.682,133.801,136.361,140.969,146.089" svgx:width="0.51,0.46,0.4,0.51,0.57,0.29,0.51,0.57,0.46" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">aeroplane</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.12 357.12 L163.12 346.16 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.120 357.120 L163.120 346.160 "/>
   <g begin="text">
    <text y="353.836" x="167.973,172.581,177.189,179.749,184.3237,193.466,198.074,202.682,205.242,209.8167,218.35,222.958,227.566,230.125" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">46.8 48.3 51.1</text>
    <text y="353.836" x="243.237,248.542,253.848,256.795" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">53.2</text>
    <text y="353.836" x="275.087,279.695,284.303,286.863" svgx:width="0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">52.3</text>
    <text y="364.795" x="111.762,116.882,119.442,123.538,128.401,132.497,135.057" svgx:width="0.57,0.29,0.46,0.54,0.46,0.29,0.46" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">bicycle</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.12 368.08 L163.12 357.12 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.120 368.080 L163.120 357.120 "/>
   <g begin="text">
    <text y="364.795" x="167.973,172.581,177.189,179.749,184.3237,193.466,198.074,202.682,205.242,209.8167,218.35,222.958,227.566,230.125,234.6997,244.48,249.088,253.695,256.255" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">21.2 39.8 42.1 42.1</text>
    <text y="364.795" x="273.847,279.152,284.458,287.405" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">42.6</text>
    <text y="375.754" x="111.762,116.882,119.442,123.046" svgx:width="0.57,0.29,0.4,0.57" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">bird</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.12 379.04 L163.12 368.08 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.120 379.040 L163.120 368.080 "/>
   <g begin="text">
    <text y="375.754" x="167.973,172.581,177.189,179.749,184.3237,193.466,198.074,202.682,205.242,209.8167,218.35,222.958,227.566,230.125,234.6997,244.48,249.088,253.695,256.255" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">22.1 39.2 40.8 42.1</text>
    <text y="375.754" x="273.847,279.152,284.458,287.405" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">42.2</text>
    <text y="386.712" x="111.762,117.142,121.741,126.349" svgx:width="0.57,0.51,0.51,0.4" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">boat</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.12 390.0 L163.12 379.04 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.120 390.000 L163.120 379.040 "/>
   <g begin="text">
    <text y="386.712" x="167.973,172.581,177.189,179.749,184.3237,193.466,198.074,202.682,205.242,209.8167,218.35,222.958,227.566,230.125,234.6997,244.48,249.088,253.695,256.255" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">13.0 25.1 27.5 27.1</text>
    <text y="386.712" x="273.847,279.152,284.458,287.405" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">28.6</text>
    <text y="397.671" x="111.762,117.142,121.741,125.325,128.908,131.468" svgx:width="0.57,0.51,0.4,0.4,0.29,0.46" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">bottle</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.12 400.96 L163.12 390.0 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.120 400.960 L163.120 390.000 "/>
   <g begin="text">
    <text y="397.671" x="167.973,172.581,177.189,179.749,184.3237,193.466,198.074,202.682,205.242,209.8167,218.35,222.958,227.566,230.125,234.6997,244.48,249.088,253.695,256.255" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">10.1 26.0 26.8 27.6</text>
    <text y="397.671" x="273.847,279.152,284.458,287.405" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">28.6</text>
    <text y="408.63" x="111.762,116.882,122.002" svgx:width="0.57,0.57,0.41" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">bus</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.12 411.92 L163.12 400.96 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.120 411.920 L163.120 400.960 "/>
   <g begin="text">
    <text y="408.63" x="167.973,172.581,177.189,179.749,184.3237,193.466,198.074,202.682,205.242,209.8167,218.35,222.958,227.566,230.125,234.6997,244.48,249.088,253.695,256.255" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">41.9 49.5 53.4 53.3</text>
    <text y="408.63" x="273.847,279.152,284.458,287.405" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">58.0</text>
    <text y="419.589" x="111.762,115.858,120.466" svgx:width="0.46,0.51,0.4" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">car</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.12 422.88 L163.12 411.92 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.120 422.880 L163.120 411.920 "/>
   <g begin="text">
    <text y="419.589" x="167.973,172.581,177.189,179.749,184.3237,193.466,198.074,202.682,205.242,209.8167,218.35,222.958,227.566,230.125,234.6997,244.48,249.088,253.695,256.255" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">24.0 39.5 42.6 42.7</text>
    <text y="419.589" x="273.847,279.152,284.458,287.405" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">45.4</text>
    <text y="430.548" x="111.762,115.858,120.466" svgx:width="0.46,0.51,0.4" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">cat</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.12 433.84 L163.12 422.88 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.120 433.840 L163.120 422.880 "/>
   <g begin="text">
    <text y="430.548" x="167.973,172.581,177.189,179.749,184.3237,193.466,198.074,202.682,205.242,209.8167,218.35,222.958,227.566,230.125,234.6997,244.48,249.088,253.695,256.255" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">39.2 50.7 56.3 57.3</text>
    <text y="430.548" x="273.847,279.152,284.458,287.405" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">58.9</text>
    <text y="441.507" x="111.762,115.598,120.718,125.325,127.885" svgx:width="0.46,0.57,0.51,0.29,0.4" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">chair</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.12 444.79 L163.12 433.84 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.120 444.790 L163.120 433.840 "/>
   <g begin="text">
    <text y="441.507" x="170.277,174.885,177.445,182.0197,193.467,198.075,202.682,205.242,209.8167,218.35,222.958,227.566,230.126,234.7007,244.48,249.088,253.696,256.256" svgx:width="0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">6.7 17.6 18.5 19.3</text>
    <text y="441.507" x="273.847,279.152,284.458,287.405" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">19.7</text>
    <text y="452.466" x="111.762,115.858,120.206" svgx:width="0.46,0.51,0.74" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">cow</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.12 455.75 L163.12 444.79 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.120 455.750 L163.120 444.790 "/>
   <g begin="text">
    <text y="452.466" x="167.973,172.581,177.189,179.749,184.3237,193.466,198.074,202.682,205.242,209.8167,218.35,222.958,227.566,230.125,234.6997,244.48,249.088,253.695,256.255" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">14.6 32.5 36.0 36.3</text>
    <text y="452.466" x="273.847,279.152,284.458,287.405" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">37.1</text>
    <text y="463.425" x="111.762,116.882,119.442,124.562,127.121,132.241,136.849,140.433,145.041,150.161,152.721" svgx:width="0.57,0.29,0.57,0.29,0.57,0.51,0.4,0.51,0.57,0.29,0.46" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">diningtable</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.12 466.71 L163.12 455.75 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.120 466.710 L163.120 455.750 "/>
   <g begin="text">
    <text y="463.425" x="170.277,174.885,177.445,182.0197,193.467,198.075,202.682,205.242,209.8167,218.35,222.958,227.566,230.126,234.7007,244.48,249.088,253.696,256.256" svgx:width="0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">9.9 18.5 20.6 21.4</text>
    <text y="463.425" x="273.847,279.152,284.458,287.405" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">22.8</text>
    <text y="474.384" x="111.762,116.882,121.49" svgx:width="0.57,0.51,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">dog</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.12 477.67 L163.12 466.71 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.120 477.670 L163.120 466.710 "/>
   <g begin="text">
    <text y="474.384" x="167.973,172.581,177.189,179.749,184.3237,193.466,198.074,202.682,205.242,209.8167,218.35,222.958,227.566,230.125,234.6997,244.48,249.088,253.695,256.255" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">24.0 46.8 48.9 49.0</text>
    <text y="474.384" x="273.847,279.152,284.458,287.405" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">49.5</text>
    <text y="485.343" x="111.762,116.882,121.49,125.094,128.729" svgx:width="0.57,0.51,0.4,0.41,0.46" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">horse</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.12 488.63 L163.12 477.67 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.120 488.630 L163.120 477.670 "/>
   <g begin="text">
    <text y="485.343" x="167.973,172.581,177.189,179.749,184.3237,193.466,198.074,202.682,205.242,209.8167,218.35,222.958,227.566,230.125" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">24.4 37.7 41.9</text>
    <text y="485.343" x="243.237,248.542,253.848,256.795" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">43.6</text>
    <text y="485.343" x="275.087,279.695,284.303,286.863" svgx:width="0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">42.9</text>
    <text y="496.302" x="111.762,119.442,124.05,127.633,132.241,135.846,140.966,143.525,148.129" svgx:width="0.86,0.51,0.4,0.51,0.4,0.57,0.29,0.54,0.46" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">motorbike</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.12 499.59 L163.12 488.63 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.120 499.590 L163.120 488.630 "/>
   <g begin="text">
    <text y="496.302" x="167.973,172.581,177.189,179.749,184.3237,193.466,198.074,202.682,205.242,209.8167,218.35,222.958,227.566,230.125,234.6997,244.48,249.088,253.695,256.255" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">28.6 41.1 43.2 43.5</text>
    <text y="496.302" x="273.847,279.152,284.458,287.405" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">45.9</text>
    <text y="507.26" x="111.762,117.142,121.232,124.837,128.472,133.08" svgx:width="0.57,0.46,0.4,0.41,0.51,0.57" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">person</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.12 510.55 L163.12 499.59 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.120 510.550 L163.120 499.590 "/>
   <g begin="text">
    <text y="507.26" x="167.973,172.581,177.189,179.749,184.3237,193.466,198.074,202.682,205.242,209.8167,218.35,222.958,227.566,230.125,234.6997,244.48,249.088,253.695,256.255" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">25.6 43.2 45.8 47.0</text>
    <text y="507.26" x="273.847,279.152,284.458,287.405" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">48.5</text>
    <text y="518.219" x="111.762,117.142,121.741,125.325,128.908,133.008,138.128,143.248,145.807,150.415,155.284" svgx:width="0.57,0.51,0.4,0.4,0.46,0.57,0.57,0.29,0.51,0.57,0.4" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">pottedplant</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.12 521.51 L163.12 510.55 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.120 521.510 L163.120 510.550 "/>
   <g begin="text">
    <text y="518.219" x="170.277,174.885,177.445,182.0197,193.467,198.075,202.682,205.242,209.8167,218.35,222.958,227.566,230.126,234.7007,244.48,249.088,253.696,256.256" svgx:width="0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">7.0 23.4 24.8 24.4</text>
    <text y="518.219" x="273.847,279.152,284.458,287.405" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">25.5</text>
    <text y="529.178" x="111.762,115.397,120.517,124.616,128.716" svgx:width="0.41,0.57,0.46,0.46,0.57" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">sheep</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.12 532.47 L163.12 521.51 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.120 532.470 L163.120 521.510 "/>
   <g begin="text">
    <text y="529.178" x="167.973,172.581,177.189,179.749,184.3237,193.466,198.074,202.682,205.242,209.8167,218.35,222.958,227.566,230.125,234.6997,244.48,249.088,253.695,256.255" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">29.0 43.0 44.2 44.0</text>
    <text y="529.178" x="273.847,279.152,284.458,287.405" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">44.5</text>
    <text y="540.137" x="111.762,115.397,120.005,122.82" svgx:width="0.41,0.51,0.31,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">sofa</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.12 543.42 L163.12 532.47 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.120 543.420 L163.120 532.470 "/>
   <g begin="text">
    <text y="540.137" x="167.973,172.581,177.189,179.749,184.3237,193.466,198.074,202.682,205.242,209.8167,218.35,222.958,227.566,230.125,234.6997,244.48,249.088,253.695,256.255" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">18.8 26.2 29.7 29.9</text>
    <text y="540.137" x="273.847,279.152,284.458,287.405" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">30.2</text>
    <text y="551.096" x="111.762,115.346,118.95,123.558,126.118" svgx:width="0.4,0.4,0.51,0.29,0.57" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">train</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.12 554.38 L163.12 543.42 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.120 554.380 L163.120 543.420 "/>
   <g begin="text">
    <text y="551.096" x="167.973,172.581,177.189,179.749,184.3237,193.466,198.074,202.682,205.242,209.8167,218.35,222.958,227.566,230.125,234.6997,244.48,249.088,253.695,256.255" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">34.6 45.1 48.9 49.9</text>
    <text y="551.096" x="273.847,279.152,284.458,287.405" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">52.6</text>
    <text y="562.055" x="111.762,115.346,120.209,127.889,132.497,137.617,140.177,143.76,148.368" svgx:width="0.4,0.54,0.86,0.51,0.57,0.29,0.4,0.51,0.4" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">tvmonitor</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.12 565.34 L163.12 554.38 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.120 565.340 L163.120 554.380 "/>
   <g begin="text">
    <text y="562.055" x="167.973,172.581,177.189,179.749,184.3237,193.466,198.074,202.682,205.242,209.8167,218.35,222.958,227.566,230.125,234.6997,244.48,249.088,253.695,256.255" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">25.9 47.7 48.8 49.4</text>
    <text y="562.055" x="273.847,279.152,284.458,287.405" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">51.4</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M107.51 565.54 L300.21 565.54 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M107.510 565.540 L300.210 565.540 "/>
   <g begin="text">
    <text y="573.412" x="111.762,120.208,124.308,128.916" svgx:width="0.94,0.46,0.51,0.57" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">Mean</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.12 576.7 L163.12 565.74 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M163.120 576.700 L163.120 565.740 "/>
   <g begin="text">
    <text y="573.412" x="167.973,172.581,177.189,179.749,184.3237,193.466,198.074,202.682,205.242,209.8167,218.35,222.958,227.566,230.125,234.6997,244.48,249.088,253.695,256.255" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">23.4 37.0 39.6 40.2</text>
    <text y="573.412" x="273.847,279.152,284.458,287.405" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">41.4</text>

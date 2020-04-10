@@ -9,13 +9,13 @@ import org.contentmine.ami.AMIFixtures;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
-import org.contentmine.graphics.html.HtmlFactory;
 import org.contentmine.graphics.html.util.JsoupWrapper;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class AMITransformToolTest {
@@ -66,6 +66,7 @@ public class AMITransformToolTest {
 	}
 	
 	@Test
+//	@Ignore // FILE NOT FOUND
 	public void testTidyToolFile() throws IOException {
 		String command = ""
 				+ "-p target"

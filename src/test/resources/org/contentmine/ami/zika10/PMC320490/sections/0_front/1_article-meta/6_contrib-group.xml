@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<contrib-group class="contrib-group">
- <contrib id="A1" corresp="yes" contrib-type="author" class="contrib">
-  <name class="name">
-   <surname class="surname">Zika</surname>
-   <given-names class="given-names">Chara A</given-names>
+<contrib-group>
+ <contrib id="A1" corresp="yes" contrib-type="author">
+  <name>
+   <surname>Zika</surname>
+   <given-names>Chara A</given-names>
   </name>
-  <xref ref-type="aff" rid="I1" class="xref">1</xref>
-  <email class="email">chzika@pharm.auth.gr</email>
+  <xref ref-type="aff" rid="I1">1</xref>
+  <email>chzika@pharm.auth.gr</email>
  </contrib>
- <contrib id="A2" contrib-type="author" class="contrib">
-  <name class="name">
-   <surname class="surname">Nicolaou</surname>
-   <given-names class="given-names">Ioannis</given-names>
+ <contrib id="A2" contrib-type="author">
+  <name>
+   <surname>Nicolaou</surname>
+   <given-names>Ioannis</given-names>
   </name>
-  <xref ref-type="aff" rid="I1" class="xref">1</xref>
-  <email class="email">Inicolao@pharm.auth.gr</email>
+  <xref ref-type="aff" rid="I1">1</xref>
+  <email>Inicolao@pharm.auth.gr</email>
  </contrib>
- <contrib id="A3" contrib-type="author" class="contrib">
-  <name class="name">
-   <surname class="surname">Gavalas</surname>
-   <given-names class="given-names">Antonis</given-names>
+ <contrib id="A3" contrib-type="author">
+  <name>
+   <surname>Gavalas</surname>
+   <given-names>Antonis</given-names>
   </name>
-  <xref ref-type="aff" rid="I1" class="xref">1</xref>
-  <email class="email">vdem@pharm.auth.gr</email>
+  <xref ref-type="aff" rid="I1">1</xref>
+  <email>vdem@pharm.auth.gr</email>
  </contrib>
- <contrib id="A4" contrib-type="author" class="contrib">
-  <name class="name">
-   <surname class="surname">Rekatas</surname>
-   <given-names class="given-names">George V</given-names>
+ <contrib id="A4" contrib-type="author">
+  <name>
+   <surname>Rekatas</surname>
+   <given-names>George V</given-names>
   </name>
-  <xref ref-type="aff" rid="I1" class="xref">1</xref>
-  <email class="email">vdem@pharm.auth.gr</email>
+  <xref ref-type="aff" rid="I1">1</xref>
+  <email>vdem@pharm.auth.gr</email>
  </contrib>
- <contrib id="A5" contrib-type="author" class="contrib">
-  <name class="name">
-   <surname class="surname">Tani</surname>
-   <given-names class="given-names">Ekaterini</given-names>
+ <contrib id="A5" contrib-type="author">
+  <name>
+   <surname>Tani</surname>
+   <given-names>Ekaterini</given-names>
   </name>
-  <xref ref-type="aff" rid="I1" class="xref">1</xref>
-  <email class="email">vdem@pharm.auth.gr</email>
+  <xref ref-type="aff" rid="I1">1</xref>
+  <email>vdem@pharm.auth.gr</email>
  </contrib>
- <contrib id="A6" contrib-type="author" class="contrib">
-  <name class="name">
-   <surname class="surname">Demopoulos</surname>
-   <given-names class="given-names">Vassilis J</given-names>
+ <contrib id="A6" contrib-type="author">
+  <name>
+   <surname>Demopoulos</surname>
+   <given-names>Vassilis J</given-names>
   </name>
-  <xref ref-type="aff" rid="I1" class="xref">1</xref>
-  <email class="email">vdem@pharm.auth.gr</email>
+  <xref ref-type="aff" rid="I1">1</xref>
+  <email>vdem@pharm.auth.gr</email>
  </contrib>
 </contrib-group>

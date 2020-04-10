@@ -190,7 +190,12 @@ public class AMIOCRTest {
 	}
 	
 	@Test
-	public void testBatteryGraph() {
+	/**
+	 * reads already processed images and extracts OCR labels
+	 * 
+	 *
+	 */
+	public void testBatteryGraph2018() {
 		CTree cTree = new CTree(new File(NormaFixtures.TEST_IMAGES_DIR, "ocr/battery"));
 		LOG.debug("ctree "+cTree);
 //		File plotImageFile = new File(batteryDir, "panel0_0_128_true.png");
@@ -352,4 +357,12 @@ public class AMIOCRTest {
 		}
 	}
 
+	/**
+	 * 
+	 */
+	@Test
+	public void testBattery2020() {
+//		PMC3776197
+		
+	}
 }

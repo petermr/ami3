@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg height="666.955" width="390.34" xmlns="http://www.w3.org/2000/svg">
+<svg height="666.955" width="4321.44" xmlns="http://www.w3.org/2000/svg">
  <g id="page" xmlns:svgx="http://www.xml-cml.org/schema/svgx">
   <g begin="text">
    <text y="18.075" x="34.016,38.624,67.064,73.591,78.711,83.319,86.923,91.531,95.115,103.31,110.221,114.828,118.433,120.993,126.113,130.72,134.325,138.933,144.053,149.679,155.699,160.307,165.427,167.987,175.661,182.571,186.176,191.556,195.655,198.215,198.214,202.822,206.921,211.017,216.644,223.427,228.035,231.67,238.38,245.611,248.171,251.776,255.411,260.531,263.09,266.926,271.79,277.425,282.16,284.72,288.304,292.403,297.523,302.643,306.248,313.922,322.368,326.976,329.536,332.096" svgx:width="0.51,0.51,0.73,0.57,0.51,0.4,0.51,0.4,0.57,0.77,0.51,0.4,0.29,0.57,0.51,0.4,0.51,0.57,0.29,0.7,0.51,0.57,0.29,0.51,0.77,0.4,0.57,0.46,0.29,0.51,0.51,0.46,0.46,0.29,0.76,0.51,0.41,0.41,0.81,0.29,0.4,0.41,0.57,0.29,0.46,0.54,0.29,0.53,0.29,0.4,0.46,0.57,0.57,0.4,0.51,0.94,0.51,0.29,0.29,0.54" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">14BharathHariharan,PabloArbel´aez,RossGirshick,JitendraMalik</text>
@@ -11,17 +11,17 @@
    <text y="43.832" x="199.676,203.627,207.288" svgx:width="0.63,0.61,0.4" style="fill:rgb(0,0,0);font-family:CMMI6;font-size:5.98px;stroke:none;">vol</text>
    <text y="41.976" x="213.258,217.866,222.9789,226.061,232.711,239.879,246.535,251.143,255.7177,258.826,263.169,267.777,270.337,272.93829999999997,275.973,282.883,285.443,288.04429999999996,291.078,295.938,301.058,308.478,313.857,317.957,321.561,325.2387,328.272,332.871,336.475,340.6012,343.65,351.33" svgx:width="0.51,0.57,0.55,0.77,0.8,0.74,0.51,0.51,0.55,0.54,0.51,0.29,0.29,0.55,0.77,0.29,0.29,0.55,0.57,0.57,0.86,0.57,0.46,0.4,0.41,0.55,0.51,0.4,0.46,0.55,0.86,0.29" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">on VOC12 val. All numbers are %.</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:1.0;" d="M142.69 65.75 L142.69 54.79 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:1.0;" d="M142.690 65.750 L142.690 54.790 "/>
   <g begin="text">
    <text y="62.462" x="144.082,150.865,153.937,160.593,167.503,174.414,176.973,181.581,186.189,188.7903,191.538,198.321,201.393,208.048,214.959,221.869,224.941,233.387,240.043" svgx:width="0.76,0.34,0.74,0.77,0.77,0.29,0.51,0.51,0.29,0.55,0.76,0.34,0.74,0.77,0.77,0.34,0.94,0.74,0.81" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">R-CNN[16] R-CNN-MCG</text>
    <text y="62.462" x="257.065,265.0483,283.345,290.87980000000005,306.504" svgx:width="0.89,0.55,0.84,0.55,0.85" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">A B C</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M90.86 65.95 L319.92 65.95 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M90.860 65.950 L319.920 65.950 "/>
   <g begin="text">
    <text y="74.109" x="92.256,100.702,104.802,109.41,114.52289999999999,117.605,124.515" svgx:width="0.94,0.46,0.51,0.57,0.55,0.77,0.7" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">Mean AP</text>
    <text y="70.3" x="130.782" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:CMMI6;font-size:5.98px;stroke:none;">b</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M142.69 77.4 L142.69 66.15 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M142.690 77.400 L142.690 66.150 "/>
   <g begin="text">
    <text y="74.109" x="158.223,162.831,167.439,169.999,174.5737,211.216,215.824,220.432,222.992,227.5667,250.06,254.668,259.276,261.836" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">51.0 51.7 51.9</text>
    <text y="74.109" x="274.865,280.17,285.476,288.423" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">53.9</text>
@@ -30,7 +30,7 @@
    <text y="81.547" x="130.782" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:CMMI6;font-size:5.98px;stroke:none;">b</text>
    <text y="87.213" x="130.782,134.733,138.394" svgx:width="0.63,0.61,0.4" style="fill:rgb(0,0,0);font-family:CMMI6;font-size:5.98px;stroke:none;">vol</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M142.69 88.64 L142.69 77.4 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M142.690 88.640 L142.690 77.400 "/>
   <g begin="text">
    <text y="85.356" x="158.223,162.831,167.439,169.999,174.5737,211.216,215.824,220.432,222.992,227.5667,250.06,254.668,259.276,261.836" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">41.9 42.4 43.2</text>
    <text y="85.356" x="274.865,280.17,285.476,288.423" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">44.6</text>
@@ -54,7 +54,7 @@
    <text y="268.19" x="105.568,112.061,117.218,123.113,126.06,130.9038,134.47,139.776" svgx:width="0.82,0.58,0.66,0.33,0.54,0.55,0.59,0.33" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">Table 5.</text>
    <text y="268.19" x="145.793,152.576,156.676,160.311,165.43,167.99,171.574,175.2517,178.285,182.892,188.0049,191.079,197.35,199.91,204.773,208.873,211.4743,214.508,217.834,224.745,227.3463,230.371,237.282,239.842,242.44330000000002,245.477,250.337,255.457,262.885,268.256,272.355,275.96,279.6377,282.67,287.278,290.883,295.00919999999996,298.049,305.728" svgx:width="0.76,0.46,0.41,0.57,0.29,0.4,0.41,0.55,0.51,0.57,0.55,0.7,0.29,0.54,0.46,0.29,0.55,0.37,0.77,0.29,0.55,0.77,0.29,0.29,0.55,0.57,0.57,0.86,0.57,0.46,0.4,0.41,0.55,0.51,0.4,0.46,0.55,0.86,0.29" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">Results on Pixel IU. All numbers are %.</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M213.54 290.61 L213.54 279.65 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M213.540 290.610 L213.540 279.650 "/>
   <g begin="text">
    <text y="287.318" x="214.94" svgx:width="0.8" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">O</text>
    <text y="288.314" x="222.108" svgx:width="0.61" style="fill:rgb(0,0,0);font-family:CMR6;font-size:5.98px;stroke:none;">2</text>
@@ -62,93 +62,57 @@
    <text y="287.318" x="298.645" svgx:width="0.85" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">C</text>
    <text y="287.318" x="306.308,313.476,317.08,321.18" svgx:width="0.8,0.4,0.46,0.31" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">+ref</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M82.32 290.8 L325.39 290.8 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M82.320 290.800 L325.390 290.800 "/>
   <g begin="text">
    <text y="298.675" x="83.72,92.166,96.266,100.874,105.98689999999999,109.06,115.331,117.891,122.754,126.854,129.4553,132.489,135.816,142.7229,145.802,149.385,156.036,163.204,169.859,174.467,179.075,183.683,188.2577,191.357,197.251,201.35,204.985,208.569" svgx:width="0.94,0.46,0.51,0.57,0.55,0.7,0.29,0.54,0.46,0.29,0.55,0.37,0.77,0.55,0.4,0.77,0.8,0.74,0.51,0.51,0.51,0.51,0.55,0.74,0.46,0.41,0.4,0.4" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">Mean Pixel IU (VOC2011 Test)</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M213.54 301.96 L213.54 291.0 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M213.540 301.960 L213.540 291.000 "/>
   <g begin="text">
    <text y="298.675" x="221.943,226.551,231.159,233.719,238.2937,263.791,268.399,273.007,275.567" svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">47.6 47.9</text>
    <text y="298.675" x="301.889,307.194,312.5,315.447" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">52.6</text>
    <text y="309.634" x="83.72,92.166,96.266,100.874,105.98689999999999,109.06,115.331,117.891,122.754,126.854,129.4553,132.489,135.816,142.7229,145.802,149.385,156.036,163.204,169.859,174.467,179.075,183.683,188.2577,191.357,197.251,201.35,204.985,208.569" svgx:width="0.94,0.46,0.51,0.57,0.55,0.7,0.29,0.54,0.46,0.29,0.55,0.37,0.77,0.55,0.4,0.77,0.8,0.74,0.51,0.51,0.51,0.51,0.55,0.74,0.46,0.41,0.4,0.4" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">Mean Pixel IU (VOC2012 Test)</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M213.54 312.92 L213.54 301.96 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.4;" d="M213.540 312.920 L213.540 301.960 "/>
   <g begin="text">
    <text y="309.634" x="221.943,226.551,231.159,233.719,238.2937,270.453" svgx:width="0.51,0.51,0.29,0.51,0.55,0.34" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">47.8 -</text>
    <text y="309.634" x="301.889,307.194,312.5,315.447" svgx:width="0.59,0.59,0.33,0.59" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">51.6</text>
   </g>
   <rect style="stroke:blue;stroke-width:0.3;" x="92.039" y="543.16" height="39.19" width="29.393" title="14"/>
   <text y="543.16" class="image" id="image.14.1" width="29" height="39" x="92.039">image.14.1.92_121.543_582</text>
-  <rect style="stroke:blue;stroke-width:0.3;" x="92.039" y="543.16" height="39.19" width="29.393" title="14"/>
-  <text y="543.16" class="image" id="image.14.2" width="29" height="39" x="92.039">image.14.2.92_121.543_582</text>
   <rect style="stroke:blue;stroke-width:0.3;" x="124.508" y="543.16" height="39.19" width="29.393" title="14"/>
-  <text y="543.16" class="image" id="image.14.3" width="29" height="39" x="124.508">image.14.3.125_154.543_582</text>
-  <rect style="stroke:blue;stroke-width:0.3;" x="124.508" y="543.16" height="39.19" width="29.393" title="14"/>
-  <text y="543.16" class="image" id="image.14.4" width="29" height="39" x="124.508">image.14.4.125_154.543_582</text>
+  <text y="543.16" class="image" id="image.14.2" width="29" height="39" x="124.508">image.14.2.125_154.543_582</text>
   <rect style="stroke:blue;stroke-width:0.3;" x="156.978" y="546.043" height="36.307" width="48.41" title="14"/>
-  <text y="546.043" class="image" id="image.14.5" width="48" height="36" x="156.978">image.14.5.157_205.546_582</text>
-  <rect style="stroke:blue;stroke-width:0.3;" x="156.978" y="546.043" height="36.307" width="48.41" title="14"/>
-  <text y="546.043" class="image" id="image.14.6" width="48" height="36" x="156.978">image.14.6.157_205.546_582</text>
+  <text y="546.043" class="image" id="image.14.3" width="48" height="36" x="156.978">image.14.3.157_205.546_582</text>
   <rect style="stroke:blue;stroke-width:0.3;" x="208.465" y="546.043" height="36.307" width="48.41" title="14"/>
-  <text y="546.043" class="image" id="image.14.7" width="48" height="36" x="208.465">image.14.7.208_257.546_582</text>
-  <rect style="stroke:blue;stroke-width:0.3;" x="208.465" y="546.043" height="36.307" width="48.41" title="14"/>
-  <text y="546.043" class="image" id="image.14.8" width="48" height="36" x="208.465">image.14.8.208_257.546_582</text>
+  <text y="546.043" class="image" id="image.14.4" width="48" height="36" x="208.465">image.14.4.208_257.546_582</text>
   <rect style="stroke:blue;stroke-width:0.3;" x="259.952" y="543.16" height="39.19" width="29.392" title="14"/>
-  <text y="543.16" class="image" id="image.14.9" width="29" height="39" x="259.952">image.14.9.260_289.543_582</text>
-  <rect style="stroke:blue;stroke-width:0.3;" x="259.952" y="543.16" height="39.19" width="29.392" title="14"/>
-  <text y="543.16" class="image" id="image.14.10" width="29" height="39" x="259.952">image.14.10.260_289.543_582</text>
+  <text y="543.16" class="image" id="image.14.5" width="29" height="39" x="259.952">image.14.5.260_289.543_582</text>
   <rect style="stroke:blue;stroke-width:0.3;" x="292.422" y="543.16" height="39.19" width="29.392" title="14"/>
-  <text y="543.16" class="image" id="image.14.11" width="29" height="39" x="292.422">image.14.11.292_322.543_582</text>
-  <rect style="stroke:blue;stroke-width:0.3;" x="292.422" y="543.16" height="39.19" width="29.392" title="14"/>
-  <text y="543.16" class="image" id="image.14.12" width="29" height="39" x="292.422">image.14.12.292_322.543_582</text>
+  <text y="543.16" class="image" id="image.14.6" width="29" height="39" x="292.422">image.14.6.292_322.543_582</text>
   <rect style="stroke:blue;stroke-width:0.3;" x="54.003" y="583.346" height="36.307" width="48.41" title="14"/>
-  <text y="583.346" class="image" id="image.14.13" width="48" height="36" x="54.003">image.14.13.54_102.583_620</text>
-  <rect style="stroke:blue;stroke-width:0.3;" x="54.003" y="583.346" height="36.307" width="48.41" title="14"/>
-  <text y="583.346" class="image" id="image.14.14" width="48" height="36" x="54.003">image.14.14.54_102.583_620</text>
+  <text y="583.346" class="image" id="image.14.7" width="48" height="36" x="54.003">image.14.7.54_102.583_620</text>
   <rect style="stroke:blue;stroke-width:0.3;" x="105.49" y="583.346" height="36.307" width="48.41" title="14"/>
-  <text y="583.346" class="image" id="image.14.15" width="48" height="36" x="105.49">image.14.15.105_154.583_620</text>
-  <rect style="stroke:blue;stroke-width:0.3;" x="105.49" y="583.346" height="36.307" width="48.41" title="14"/>
-  <text y="583.346" class="image" id="image.14.16" width="48" height="36" x="105.49">image.14.16.105_154.583_620</text>
+  <text y="583.346" class="image" id="image.14.8" width="48" height="36" x="105.49">image.14.8.105_154.583_620</text>
   <rect style="stroke:blue;stroke-width:0.3;" x="156.978" y="583.346" height="36.307" width="48.41" title="14"/>
-  <text y="583.346" class="image" id="image.14.17" width="48" height="36" x="156.978">image.14.17.157_205.583_620</text>
-  <rect style="stroke:blue;stroke-width:0.3;" x="156.978" y="583.346" height="36.307" width="48.41" title="14"/>
-  <text y="583.346" class="image" id="image.14.18" width="48" height="36" x="156.978">image.14.18.157_205.583_620</text>
+  <text y="583.346" class="image" id="image.14.9" width="48" height="36" x="156.978">image.14.9.157_205.583_620</text>
   <rect style="stroke:blue;stroke-width:0.3;" x="208.465" y="583.346" height="36.307" width="48.41" title="14"/>
-  <text y="583.346" class="image" id="image.14.19" width="48" height="36" x="208.465">image.14.19.208_257.583_620</text>
-  <rect style="stroke:blue;stroke-width:0.3;" x="208.465" y="583.346" height="36.307" width="48.41" title="14"/>
-  <text y="583.346" class="image" id="image.14.20" width="48" height="36" x="208.465">image.14.20.208_257.583_620</text>
+  <text y="583.346" class="image" id="image.14.10" width="48" height="36" x="208.465">image.14.10.208_257.583_620</text>
   <rect style="stroke:blue;stroke-width:0.3;" x="259.952" y="583.346" height="36.307" width="48.41" title="14"/>
-  <text y="583.346" class="image" id="image.14.21" width="48" height="36" x="259.952">image.14.21.260_308.583_620</text>
-  <rect style="stroke:blue;stroke-width:0.3;" x="259.952" y="583.346" height="36.307" width="48.41" title="14"/>
-  <text y="583.346" class="image" id="image.14.22" width="48" height="36" x="259.952">image.14.22.260_308.583_620</text>
+  <text y="583.346" class="image" id="image.14.11" width="48" height="36" x="259.952">image.14.11.260_308.583_620</text>
   <rect style="stroke:blue;stroke-width:0.3;" x="311.44" y="583.346" height="36.307" width="48.41" title="14"/>
-  <text y="583.346" class="image" id="image.14.23" width="48" height="36" x="311.44">image.14.23.311_360.583_620</text>
-  <rect style="stroke:blue;stroke-width:0.3;" x="311.44" y="583.346" height="36.307" width="48.41" title="14"/>
-  <text y="583.346" class="image" id="image.14.24" width="48" height="36" x="311.44">image.14.24.311_360.583_620</text>
+  <text y="583.346" class="image" id="image.14.12" width="48" height="36" x="311.44">image.14.12.311_360.583_620</text>
   <rect style="stroke:blue;stroke-width:0.3;" x="54.003" y="625.004" height="31.951" width="48.41" title="14"/>
-  <text y="625.004" class="image" id="image.14.25" width="48" height="31" x="54.003">image.14.25.54_102.625_657</text>
-  <rect style="stroke:blue;stroke-width:0.3;" x="54.003" y="625.004" height="31.951" width="48.41" title="14"/>
-  <text y="625.004" class="image" id="image.14.26" width="48" height="31" x="54.003">image.14.26.54_102.625_657</text>
+  <text y="625.004" class="image" id="image.14.13" width="48" height="31" x="54.003">image.14.13.54_102.625_657</text>
   <rect style="stroke:blue;stroke-width:0.3;" x="105.49" y="625.004" height="31.951" width="48.41" title="14"/>
-  <text y="625.004" class="image" id="image.14.27" width="48" height="31" x="105.49">image.14.27.105_154.625_657</text>
-  <rect style="stroke:blue;stroke-width:0.3;" x="105.49" y="625.004" height="31.951" width="48.41" title="14"/>
-  <text y="625.004" class="image" id="image.14.28" width="48" height="31" x="105.49">image.14.28.105_154.625_657</text>
+  <text y="625.004" class="image" id="image.14.14" width="48" height="31" x="105.49">image.14.14.105_154.625_657</text>
   <rect style="stroke:blue;stroke-width:0.3;" x="156.978" y="620.648" height="36.307" width="48.41" title="14"/>
-  <text y="620.648" class="image" id="image.14.29" width="48" height="36" x="156.978">image.14.29.157_205.621_657</text>
-  <rect style="stroke:blue;stroke-width:0.3;" x="156.978" y="620.648" height="36.307" width="48.41" title="14"/>
-  <text y="620.648" class="image" id="image.14.30" width="48" height="36" x="156.978">image.14.30.157_205.621_657</text>
+  <text y="620.648" class="image" id="image.14.15" width="48" height="36" x="156.978">image.14.15.157_205.621_657</text>
   <rect style="stroke:blue;stroke-width:0.3;" x="208.465" y="620.648" height="36.307" width="48.41" title="14"/>
-  <text y="620.648" class="image" id="image.14.31" width="48" height="36" x="208.465">image.14.31.208_257.621_657</text>
-  <rect style="stroke:blue;stroke-width:0.3;" x="208.465" y="620.648" height="36.307" width="48.41" title="14"/>
-  <text y="620.648" class="image" id="image.14.32" width="48" height="36" x="208.465">image.14.32.208_257.621_657</text>
+  <text y="620.648" class="image" id="image.14.16" width="48" height="36" x="208.465">image.14.16.208_257.621_657</text>
   <rect style="stroke:blue;stroke-width:0.3;" x="259.952" y="624.811" height="32.144" width="48.41" title="14"/>
-  <text y="624.811" class="image" id="image.14.33" width="48" height="32" x="259.952">image.14.33.260_308.625_657</text>
-  <rect style="stroke:blue;stroke-width:0.3;" x="259.952" y="624.811" height="32.144" width="48.41" title="14"/>
-  <text y="624.811" class="image" id="image.14.34" width="48" height="32" x="259.952">image.14.34.260_308.625_657</text>
+  <text y="624.811" class="image" id="image.14.17" width="48" height="32" x="259.952">image.14.17.260_308.625_657</text>
   <rect style="stroke:blue;stroke-width:0.3;" x="311.44" y="624.811" height="32.144" width="48.41" title="14"/>
-  <text y="624.811" class="image" id="image.14.35" width="48" height="32" x="311.44">image.14.35.311_360.625_657</text>
-  <rect style="stroke:blue;stroke-width:0.3;" x="311.44" y="624.811" height="32.144" width="48.41" title="14"/>
-  <text y="624.811" class="image" id="image.14.36" width="48" height="32" x="311.44">image.14.36.311_360.625_657</text>
+  <text y="624.811" class="image" id="image.14.18" width="48" height="32" x="311.44">image.14.18.311_360.625_657</text>
   <g begin="text">
    <text y="492.995" x="34.016,40.684,43.632,48.937,51.897099999999995,53.651,58.956" svgx:width="0.74,0.33,0.59,0.33,0.55,0.59,0.33" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:8.97px;stroke:none;">Fig. 7.</text>
    <text y="492.995" x="66.503,72.388,76.995,82.1079,84.42,89.539,93.639,97.223,101.322,105.418,109.002,111.562,116.17,121.289,124.924,127.5253,129.78,134.3547,136.683,142.063,146.162,149.767,153.402,158.01,163.129,166.764,169.36530000000002,171.62,176.1947,178.532,183.652,186.212,190.815,194.914,198.549,201.15030000000002,203.414,208.533,211.093,216.213,218.773,223.893,228.501,232.076,236.683,241.803,244.363,248.463,251.0643,253.327,256.962,262.082,266.181,270.281,275.4,278.00129999999996,280.256,284.1,289.22,293.828,296.388,299.992,302.5933,304.848,308.944,313.551,317.135,319.73629999999997,321.991,330.699,334.8252,337.094,341.19,345.797,350.90990000000005,353.221,358.332,362.94,368.06,373.18,375.74" svgx:width="0.74,0.51,0.57,0.55,0.57,0.46,0.4,0.46,0.46,0.4,0.29,0.51,0.57,0.41,0.29,0.55,0.51,0.55,0.57,0.46,0.4,0.41,0.51,0.57,0.41,0.29,0.55,0.51,0.55,0.57,0.29,0.54,0.46,0.41,0.29,0.55,0.57,0.29,0.57,0.29,0.57,0.51,0.4,0.51,0.57,0.29,0.46,0.29,0.55,0.41,0.57,0.46,0.46,0.57,0.29,0.55,0.46,0.57,0.51,0.29,0.4,0.29,0.55,0.46,0.51,0.4,0.29,0.55,1.06,0.46,0.55,0.46,0.51,0.57,0.55,0.57,0.51,0.57,0.57,0.29,0.46" style="fill:rgb(0,0,0);font-family:CMR9;font-size:8.97px;stroke:none;">Top detections: 3 persons, 2 bikes, diningtable, sheep, chair, cat. We can handle</text>
@@ -158,12 +122,12 @@
    <text y="542.377" x="34.016,40.18,43.293,47.265,51.449,54.585499999999996,57.024,60.996,65.396,69.7871,72.265,76.2379,78.699,85.866,88.122,91.664,94.777,98.748,101.905,105.876,108.346,111.4825,113.921,119.705,123.247,126.404,129.946,133.917,137.03,140.356,144.7471,147.218,149.688,153.237,155.493,157.748,161.503,167.19,170.347,174.747,177.003,181.403,183.6334,186.12,193.504,197.0587,199.508,202.621,207.021,210.993,215.393,219.575,222.041,225.154,229.554,233.1087,235.558,241.439,247.32,250.198,256.196,259.074,264.9288,267.417,273.104,277.076,280.189,284.806,288.777,291.89,295.862,298.975,301.23,305.202,309.5931,312.064,314.534,318.506,321.6425,324.081,328.481,331.594,335.357,339.542,341.798,346.198,348.454,352.854,356.82689999999997,359.287,365.452,370.807,376.688" svgx:width="0.88,0.45,0.57,0.63,0.45,0.55,0.57,0.63,0.63,0.55,0.57,0.55,1.03,0.32,0.51,0.45,0.57,0.45,0.57,0.35,0.45,0.55,0.83,0.51,0.45,0.51,0.57,0.45,0.51,0.63,0.55,0.35,0.51,0.32,0.32,0.57,0.82,0.45,0.63,0.32,0.63,0.32,0.55,1.15,0.51,0.55,0.45,0.63,0.57,0.63,0.6,0.55,0.45,0.63,0.51,0.55,0.84,0.84,0.41,0.86,0.41,0.84,0.55,0.82,0.57,0.45,0.63,0.57,0.45,0.57,0.45,0.32,0.57,0.63,0.55,0.35,0.57,0.45,0.55,0.63,0.45,0.57,0.6,0.32,0.63,0.32,0.63,0.57,0.55,0.88,0.77,0.84,0.45" style="fill:rgb(0,0,0);font-family:CMR7;font-size:6.97px;stroke:none;">Grant and a Microsoft Research fellowship. We thank the NVIDIA Corporation for providing GPUs</text>
    <text y="550.348" x="34.016,37.129,41.53,44.643,48.614,53.015,56.986,61.3771,64.072,67.185,71.585,75.127,77.383,80.5195,83.181,87.152,90.694,94.666,99.066,102.608,109.153,111.408,114.9627,117.635,122.036,125.149,129.12,133.092,136.205,140.177,146.722" svgx:width="0.45,0.63,0.45,0.57,0.63,0.57,0.63,0.55,0.45,0.63,0.51,0.32,0.45,0.55,0.57,0.51,0.57,0.63,0.51,0.94,0.32,0.51,0.55,0.63,0.45,0.57,0.57,0.45,0.57,0.94,0.32" style="fill:rgb(0,0,0);font-family:CMR7;font-size:6.97px;stroke:none;">through their academic program.</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,255,0);stroke-width:0.4;" d="M176.48 62.96 L186.68 62.96 L186.68 56.19 L176.48 56.19 Z"/>
-  <path style="fill:none;stroke:rgb(0,255,0);stroke-width:1.0;" d="M160.63 165.62 L166.61 165.62 L166.61 158.2 L160.63 158.2 Z"/>
-  <path style="fill:none;stroke:rgb(255,0,0);stroke-width:1.0;" d="M354.87 179.51 L360.84 179.51 L360.84 169.66 L354.87 169.66 Z"/>
-  <path style="fill:none;stroke:rgb(0,255,0);stroke-width:1.0;" d="M112.22 189.53 L118.2 189.53 L118.2 182.11 L112.22 182.11 Z"/>
-  <path style="fill:none;stroke:rgb(255,0,0);stroke-width:1.0;" d="M374.36 227.33 L380.34 227.33 L380.34 217.48 L374.36 217.48 Z"/>
-  <path style="fill:none;stroke:rgb(0,255,0);stroke-width:1.0;" d="M237.66 287.81 L243.26 287.81 L243.26 281.04 L237.66 281.04 Z"/>
-  <path style="fill:none;stroke:rgb(0,255,0);stroke-width:1.0;" d="M283.58 287.81 L293.79 287.81 L293.79 281.04 L283.58 281.04 Z"/>
+  <path style="fill:none;stroke:rgb(0,255,0);stroke-width:0.4;" d="M176.480 62.960 L186.680 62.960 L186.680 56.190 L176.480 56.190 Z"/>
+  <path style="fill:none;stroke:rgb(0,255,0);stroke-width:1.0;" d="M160.630 165.620 L166.610 165.620 L166.610 158.200 L160.630 158.200 Z"/>
+  <path style="fill:none;stroke:rgb(255,0,0);stroke-width:1.0;" d="M354.870 179.510 L360.840 179.510 L360.840 169.660 L354.870 169.660 Z"/>
+  <path style="fill:none;stroke:rgb(0,255,0);stroke-width:1.0;" d="M112.220 189.530 L118.200 189.530 L118.200 182.110 L112.220 182.110 Z"/>
+  <path style="fill:none;stroke:rgb(255,0,0);stroke-width:1.0;" d="M374.360 227.330 L380.340 227.330 L380.340 217.480 L374.360 217.480 Z"/>
+  <path style="fill:none;stroke:rgb(0,255,0);stroke-width:1.0;" d="M237.660 287.810 L243.260 287.810 L243.260 281.040 L237.660 281.040 Z"/>
+  <path style="fill:none;stroke:rgb(0,255,0);stroke-width:1.0;" d="M283.580 287.810 L293.790 287.810 L293.790 281.040 L283.580 281.040 Z"/>
  </g>
 </svg>

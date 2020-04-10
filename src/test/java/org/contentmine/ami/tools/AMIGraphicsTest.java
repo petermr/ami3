@@ -288,6 +288,7 @@ public class AMIGraphicsTest extends AbstractAMITest {
 	}
 	
 	@Test
+	@Ignore // 
 	public void testVeryLargeHangsIT() {
 		File testFile = new File(PDF2SVG2, "problems/PMC6364917");
 		String cmd = "-t "+testFile

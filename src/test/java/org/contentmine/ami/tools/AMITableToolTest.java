@@ -4,6 +4,7 @@ import java.io.File;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class AMITableToolTest extends AbstractAMITest {
@@ -13,6 +14,7 @@ public class AMITableToolTest extends AbstractAMITest {
 	}
 
 	@Test
+	@Ignore // phytomedchem.xml not found (See CEVOpen)
 	public void testSummaryTableOil() {
 		File dir = OIL5;
 //		File dir = OIL186;
@@ -30,6 +32,7 @@ public class AMITableToolTest extends AbstractAMITest {
 	}
 
 	@Test
+	@Ignore // phytomedchem.xml not found (actually in  CEVOpen)
 	public void testColumnTypesOil() {
 //		File dir = OIL5;
 		File dir = OIL186;
@@ -64,7 +67,10 @@ public class AMITableToolTest extends AbstractAMITest {
 
 
 	@Test
+//	@Ignore // phytomedchem.xml not found
 	public void testActivity() {
+		if (!CEV.exists()) LOG.error(CEV+": does not exist");
+		File f = new File((CEV+"/templates/phytomedchem.xml").toString());
 		File dir = OIL5;
 //		File dir = OIL186;
 //		File dir = OIL1000;

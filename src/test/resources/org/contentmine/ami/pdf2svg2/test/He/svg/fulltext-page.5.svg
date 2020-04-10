@@ -1,75 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg height="753.0" width="555.1338000000001" xmlns="http://www.w3.org/2000/svg">
  <g id="page" xmlns:svgx="http://www.xml-cml.org/schema/svgx">
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:1.0;" d="M88.46 72.2 L248.01 72.2 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:1.0;" d="M88.460 72.200 L248.010 72.200 "/>
   <g begin="text">
    <text y="80.837" x="96.431,102.632,106.617,110.602,114.14" svgx:width="0.78,0.5,0.5,0.44,0.28" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:7.97px;stroke:none;">model</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M157.5 84.45 L157.5 72.4 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M157.500 84.450 L157.500 72.400 "/>
   <g begin="text">
    <text y="80.837" x="165.667,167.883,171.868,175.853,178.507,182.49200000000002,184.483,188.021,190.675,192.891,194.8835,210.824,213.04,217.025,221.01,223.664,227.649,229.642,233.18,235.834,238.05" svgx:width="0.28,0.5,0.5,0.33,0.5,0.55,0.44,0.33,0.33,0.25,0.55,0.28,0.5,0.5,0.33,0.5,0.55,0.44,0.33,0.33,0.25" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:7.97px;stroke:none;">top-1 err. top-5 err.</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M88.46 84.65 L248.01 84.65 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M88.460 84.650 L248.010 84.650 "/>
   <g begin="text">
    <text y="93.29" x="96.431,102.066,107.82,113.574,116.229,120.214,124.199,126.191,128.845,132.83,136.815" svgx:width="0.72,0.72,0.72,0.33,0.5,0.5,0.55,0.33,0.5,0.5,0.33" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:7.97px;stroke:none;">VGG-16 [40]</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M157.5 96.91 L157.5 84.85 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M157.500 96.910 L157.500 84.850 "/>
   <g begin="text">
    <text y="93.29" x="170.189,174.672,179.155,181.397,185.88,190.365,217.584,222.068,224.309,228.792" svgx:width="0.5,0.5,0.25,0.5,0.5,0.55,0.5,0.25,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">28.07 9.33</text>
    <text y="105.345" x="96.431,102.185,106.17,110.155,114.14,119.01,122.549,128.303,131.842,134.0736,136.048,138.702,142.687,146.672" svgx:width="0.72,0.5,0.5,0.5,0.61,0.44,0.72,0.44,0.28,0.55,0.33,0.5,0.5,0.33" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:7.97px;stroke:none;">GoogLeNet [43]</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M157.5 108.96 L157.5 96.91 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M157.500 108.960 L157.500 96.910 "/>
   <g begin="text">
    <text y="105.345" x="178.783,181.7431,217.59,222.073,224.314,228.798" svgx:width="0.33,0.55,0.5,0.25,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">- 9.15</text>
    <text y="117.4" x="96.431,100.862,106.178,109.717,114.587,120.341,122.995,126.98,130.519,132.75060000000002,134.724,137.378,141.364,145.349" svgx:width="0.56,0.67,0.44,0.61,0.72,0.33,0.5,0.44,0.28,0.55,0.33,0.5,0.5,0.33" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:7.97px;stroke:none;">PReLU-net [12]</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M157.5 121.02 L157.5 108.96 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M157.500 121.020 L157.500 108.960 "/>
   <g begin="text">
    <text y="117.4" x="170.189,174.672,179.155,181.397,185.88,190.365,217.584,222.068,224.309,228.792" svgx:width="0.5,0.5,0.25,0.5,0.5,0.55,0.5,0.25,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">24.27 7.38</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M88.46 121.22 L248.01 121.22 "/>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M88.46 123.61 L248.01 123.61 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M88.460 121.220 L248.010 121.220 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M88.460 123.610 L248.010 123.610 "/>
   <g begin="text">
    <text y="132.244" x="96.431,100.416,102.632,106.17,108.386,112.371,115.025,119.01" svgx:width="0.5,0.28,0.44,0.28,0.5,0.33,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:7.97px;stroke:none;">plain-34</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M157.5 135.86 L157.5 123.81 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M157.500 135.860 L157.500 123.810 "/>
   <g begin="text">
    <text y="132.244" x="170.189,174.672,179.155,181.397,185.88,190.365,215.344,219.827,224.31,226.552,231.035" svgx:width="0.5,0.5,0.25,0.5,0.5,0.55,0.5,0.5,0.25,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">28.54 10.02</text>
    <text y="144.299" x="96.431,101.747,105.286,108.386,114.14,117.679,119.895,122.549,126.534,130.519,132.51" svgx:width="0.67,0.44,0.39,0.72,0.44,0.28,0.33,0.5,0.5,0.55,0.72" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:7.97px;stroke:none;">ResNet-34 A</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M157.5 147.92 L157.5 135.86 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M157.500 147.920 L157.500 135.860 "/>
   <g begin="text">
    <text y="144.299" x="170.189,174.672,179.155,181.397,185.88,190.365,217.584,222.068,224.309,228.792" svgx:width="0.5,0.5,0.25,0.5,0.5,0.55,0.5,0.25,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">25.03 7.76</text>
    <text y="156.354" x="96.431,101.747,105.286,108.386,114.14,117.679,119.895,122.549,126.534,130.519,132.51" svgx:width="0.67,0.44,0.39,0.72,0.44,0.28,0.33,0.5,0.5,0.55,0.67" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:7.97px;stroke:none;">ResNet-34 B</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M157.5 159.97 L157.5 147.91 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M157.500 159.970 L157.500 147.910 "/>
   <g begin="text">
    <text y="156.354" x="170.189,174.672,179.155,181.397,185.88,190.365,217.584,222.068,224.309,228.792" svgx:width="0.5,0.5,0.25,0.5,0.5,0.55,0.5,0.25,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">24.52 7.46</text>
    <text y="168.409" x="96.431,101.747,105.286,108.386,114.14,117.679,119.895,122.549,126.534,130.519,132.51" svgx:width="0.67,0.44,0.39,0.72,0.44,0.28,0.33,0.5,0.5,0.55,0.67" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:7.97px;stroke:none;">ResNet-34 C</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M157.5 172.02 L157.5 159.97 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M157.500 172.020 L157.500 159.970 "/>
   <g begin="text">
    <text y="168.409" x="170.189,174.672,179.155,181.397,185.88,190.365,217.584,222.068,224.309,228.792" svgx:width="0.5,0.5,0.25,0.5,0.5,0.55,0.5,0.25,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">24.19 7.40</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M88.46 172.22 L248.01 172.22 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M88.460 172.220 L248.010 172.220 "/>
   <g begin="text">
    <text y="180.862" x="96.431,101.747,105.286,108.386,114.14,117.679,119.895,122.549,126.534" svgx:width="0.67,0.44,0.39,0.72,0.44,0.28,0.33,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:7.97px;stroke:none;">ResNet-50</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M157.5 184.48 L157.5 172.42 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M157.500 184.480 L157.500 172.420 "/>
   <g begin="text">
    <text y="180.862" x="170.189,174.672,179.155,181.397,185.88,190.365,217.584,222.068,224.309,228.792" svgx:width="0.5,0.5,0.25,0.5,0.5,0.55,0.5,0.25,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">22.85 6.71</text>
    <text y="192.917" x="96.431,101.747,105.286,108.386,114.14,117.679,119.895,122.549,126.534,130.519" svgx:width="0.67,0.44,0.39,0.72,0.44,0.28,0.33,0.5,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:7.97px;stroke:none;">ResNet-101</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M157.5 196.53 L157.5 184.48 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M157.500 196.530 L157.500 184.480 "/>
   <g begin="text">
    <text y="192.917" x="170.189,174.672,179.155,181.397,185.88,190.365,217.584,222.068,224.309,228.792" svgx:width="0.5,0.5,0.25,0.5,0.5,0.55,0.5,0.25,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">21.75 6.05</text>
    <text y="204.972" x="96.431,101.747,105.286,108.386,114.14,117.679,119.895,122.549,126.534,130.519" svgx:width="0.67,0.44,0.39,0.72,0.44,0.28,0.33,0.5,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:7.97px;stroke:none;">ResNet-152</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M157.5 208.59 L157.5 196.53 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M157.500 208.590 L157.500 196.530 "/>
   <g begin="text">
    <text y="204.972" x="170.189,174.672,179.155,181.397,185.88,190.365,217.584,222.068,224.309,228.792" svgx:width="0.5,0.5,0.25,0.5,0.5,0.55,0.5,0.25,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Medi;font-size:8.97px;stroke:none;">21.43 5.71</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M88.46 208.79 L248.01 208.79 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M88.460 208.790 L248.010 208.790 "/>
   <g begin="text">
    <text y="221.142" x="50.112,54.873,58.855,63.338,65.83,69.7768,72.358,76.841,79.0835,81.62,87.098,90.084,93.07,97.553,100.5131,103.086,106.071,110.052,112.545,116.526,120.0243,122.552,125.537,133.006" svgx:width="0.61,0.44,0.5,0.28,0.44,0.55,0.5,0.25,0.55,0.61,0.33,0.33,0.5,0.33,0.55,0.33,0.44,0.28,0.44,0.39,0.55,0.33,0.83,0.25" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">Table 3. Error rates (%,</text>
    <text y="221.142" x="137.868,142.351,146.834,149.82,153.801,157.62,162.103" svgx:width="0.5,0.5,0.33,0.44,0.44,0.5,0.56" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Medi;font-size:8.97px;stroke:none;">10-crop</text>
@@ -77,76 +77,76 @@
    <text y="232.101" x="50.112,56.452,62.925,69.399,72.385,76.868,81.353,83.799,86.292,89.7903,92.228,96.711,100.692,104.18,108.161,112.646,115.101,119.584,124.069,126.515,130.998,135.482,138.4421,140.915,143.408,147.389,150.877,153.37,155.6125,159.018,164.999,168.98,172.468,178.942,182.923,185.415,188.401,192.884,197.368,199.86,204.343,208.827,213.31,215.803,220.286,224.769,229.25400000000002,231.7,235.681,238.667,242.6138,245.096,249.579,252.53910000000002,255.012,259.496,263.979,266.472,268.964,273.447,277.932,280.379" svgx:width="0.72,0.72,0.72,0.33,0.5,0.5,0.55,0.28,0.39,0.55,0.5,0.44,0.39,0.44,0.5,0.55,0.5,0.5,0.55,0.5,0.5,0.33,0.55,0.28,0.44,0.39,0.28,0.25,0.55,0.67,0.44,0.39,0.72,0.44,0.28,0.33,0.5,0.5,0.28,0.5,0.5,0.5,0.28,0.5,0.5,0.5,0.55,0.44,0.33,0.44,0.55,0.5,0.33,0.55,0.5,0.5,0.28,0.28,0.5,0.5,0.55,0.67" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">VGG-16 is based on our test. ResNet-50/101/152 are of option B</text>
    <text y="243.059" x="50.112,52.605,57.088,61.069,63.580600000000004,65.804,70.287,74.77,77.263,81.748,83.988,88.471,91.959,95.94,99.4383,101.669,106.152,109.138,113.621,116.114,120.095,124.076,126.569,129.061,133.545,138.028,141.5263,143.755,146.741,151.224,154.1841,156.452,158.945,163.428,167.409,170.395,174.376,178.357,181.845,184.337,188.821,193.306,195.544,200.027,202.52,209.495,213.477,217.96,221.448,223.94,228.424,232.907,236.395" svgx:width="0.28,0.5,0.44,0.28,0.55,0.5,0.5,0.28,0.5,0.55,0.5,0.39,0.44,0.39,0.55,0.5,0.33,0.5,0.28,0.44,0.44,0.28,0.28,0.5,0.5,0.39,0.55,0.33,0.5,0.33,0.55,0.28,0.5,0.44,0.33,0.44,0.44,0.39,0.28,0.5,0.5,0.55,0.5,0.28,0.78,0.44,0.5,0.39,0.28,0.5,0.5,0.39,0.25" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">that only uses projections for increasing dimensions.</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M59.13 255.07 L277.35 255.07 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M59.130 255.070 L277.350 255.070 "/>
   <g begin="text">
    <text y="263.704" x="67.1,73.301,76.839,79.055,83.04,87.025" svgx:width="0.78,0.44,0.28,0.5,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:7.97px;stroke:none;">method</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M186.83 267.32 L186.83 255.27 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M186.830 267.320 L186.830 255.270 "/>
   <g begin="text">
    <text y="263.704" x="194.997,197.213,201.198,205.183,207.837,211.822,213.814,217.352,220.007,222.222,224.21450000000002,240.155,242.371,246.356,250.341,252.995,256.98,258.973,262.511,265.166,267.381" svgx:width="0.28,0.5,0.5,0.33,0.5,0.55,0.44,0.33,0.33,0.25,0.55,0.28,0.5,0.5,0.33,0.5,0.55,0.44,0.33,0.33,0.25" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:7.97px;stroke:none;">top-1 err. top-5 err.</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M59.13 267.52 L277.35 267.52 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M59.130 267.520 L277.350 267.520 "/>
   <g begin="text">
    <text y="276.158" x="67.1,73.439,79.913,86.3714,88.628,91.614,96.097,100.58,103.5401,105.808,108.794,111.779,117.258,122.243,128.717,134.697,140.678,143.664,148.147,152.63" svgx:width="0.72,0.72,0.72,0.55,0.33,0.5,0.5,0.33,0.55,0.33,0.33,0.61,0.56,0.72,0.67,0.67,0.33,0.5,0.5,0.33" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">VGG [40] (ILSVRC’14)</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M186.83 279.77 L186.83 267.72 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M186.830 279.770 L186.830 267.720 "/>
   <g begin="text">
    <text y="276.158" x="208.114,211.07410000000002,244.957,249.44,251.682,256.165" svgx:width="0.33,0.55,0.5,0.25,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">- 8.43</text>
    <text y="272.349" x="260.646" svgx:width="0.57" style="fill:rgb(35,31,32);font-family:CMSY6;font-size:5.98px;stroke:none;">†</text>
    <text y="288.212" x="67.1,73.574,78.057,82.54,87.023,92.502,96.483,102.957,106.938,109.4496,111.671,114.657,119.14,123.623,126.5831,128.851,131.837,134.822,140.301,145.286,151.76,157.741,163.721,166.707,171.19,175.673" svgx:width="0.72,0.5,0.5,0.5,0.61,0.44,0.72,0.44,0.28,0.55,0.33,0.5,0.5,0.33,0.55,0.33,0.33,0.61,0.56,0.72,0.67,0.67,0.33,0.5,0.5,0.33" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">GoogLeNet [43] (ILSVRC’14)</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M186.83 291.83 L186.83 279.77 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M186.830 291.830 L186.830 279.770 "/>
   <g begin="text">
    <text y="288.212" x="208.114,211.07410000000002,246.921,251.404,253.645,258.129" svgx:width="0.33,0.55,0.5,0.25,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">- 7.89</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M59.13 292.03 L277.35 292.03 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M59.130 292.030 L277.350 292.030 "/>
   <g begin="text">
    <text y="300.666" x="67.1,73.439,79.913,86.3714,88.628,91.614,96.097,100.58" svgx:width="0.72,0.72,0.72,0.55,0.33,0.5,0.5,0.33" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">VGG [40]</text>
    <text y="300.666" x="105.808,108.462,112.447,116.432" svgx:width="0.33,0.5,0.5,0.33" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:7.97px;stroke:none;">(v5)</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M186.83 304.28 L186.83 292.23 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M186.830 304.280 L186.830 292.230 "/>
   <g begin="text">
    <text y="300.666" x="201.761,206.244,210.727,212.969,217.454,249.156,253.64,255.881" svgx:width="0.5,0.5,0.25,0.5,0.55,0.5,0.25,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">24.4 7.1</text>
    <text y="312.721" x="67.1,72.085,78.066,82.047,87.525,93.999,96.985,101.468,105.449,107.9606,110.182,113.167,117.651,122.134" svgx:width="0.56,0.67,0.44,0.61,0.72,0.33,0.5,0.44,0.28,0.55,0.33,0.5,0.5,0.33" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">PReLU-net [12]</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M186.83 316.34 L186.83 304.28 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M186.830 316.340 L186.830 304.280 "/>
   <g begin="text">
    <text y="312.721" x="199.519,204.002,208.485,210.727,215.21,219.69500000000002,246.914,251.398,253.639,258.122" svgx:width="0.5,0.5,0.25,0.5,0.5,0.55,0.5,0.25,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">21.59 5.71</text>
    <text y="324.776" x="67.099,73.08,79.553,82.539,85.032,89.515,93.496,97.477,101.96,104.453,106.946,111.429,115.914,118.153,121.139,125.622,130.105" svgx:width="0.67,0.72,0.33,0.28,0.5,0.44,0.44,0.5,0.28,0.28,0.5,0.5,0.55,0.33,0.5,0.5,0.33" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">BN-inception [16]</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M186.83 328.39 L186.83 316.34 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M186.830 328.390 L186.830 316.340 "/>
   <g begin="text">
    <text y="324.775" x="199.519,204.002,208.485,210.727,215.21,219.69500000000002,246.914,251.398,253.639,258.122" svgx:width="0.5,0.5,0.25,0.5,0.5,0.55,0.5,0.25,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">21.99 5.81</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M59.13 328.59 L277.35 328.59 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M59.130 328.590 L277.350 328.590 "/>
   <g begin="text">
    <text y="337.229" x="67.1,73.081,77.062,80.55,87.023,91.004,93.497,96.483,100.966,105.451,107.69" svgx:width="0.67,0.44,0.39,0.72,0.44,0.28,0.33,0.5,0.5,0.55,0.67" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">ResNet-34 B</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M186.83 340.85 L186.83 328.79 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M186.830 340.850 L186.830 328.790 "/>
   <g begin="text">
    <text y="337.229" x="199.519,204.002,208.485,210.727,215.21,219.69500000000002,246.914,251.398,253.639,258.122" svgx:width="0.5,0.5,0.25,0.5,0.5,0.55,0.5,0.25,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">21.84 5.71</text>
    <text y="349.285" x="67.099,73.08,77.061,80.549,87.022,91.003,93.496,96.482,100.965,105.45,107.689" svgx:width="0.67,0.44,0.39,0.72,0.44,0.28,0.33,0.5,0.5,0.55,0.67" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">ResNet-34 C</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M186.83 352.9 L186.83 340.85 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M186.830 352.900 L186.830 340.850 "/>
   <g begin="text">
    <text y="349.284" x="199.519,204.002,208.485,210.727,215.21,219.69500000000002,246.914,251.398,253.639,258.122" svgx:width="0.5,0.5,0.25,0.5,0.5,0.55,0.5,0.25,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">21.53 5.60</text>
    <text y="361.34" x="67.099,73.08,77.061,80.549,87.022,91.003,93.496,96.482,100.965" svgx:width="0.67,0.44,0.39,0.72,0.44,0.28,0.33,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">ResNet-50</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M186.83 364.95 L186.83 352.9 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M186.830 364.950 L186.830 352.900 "/>
   <g begin="text">
    <text y="361.339" x="199.519,204.002,208.485,210.727,215.21,219.69500000000002,246.914,251.398,253.639,258.122" svgx:width="0.5,0.5,0.25,0.5,0.5,0.55,0.5,0.25,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">20.74 5.25</text>
    <text y="373.392" x="67.099,73.08,77.061,80.549,87.022,91.003,93.496,96.482,100.965,105.448" svgx:width="0.67,0.44,0.39,0.72,0.44,0.28,0.33,0.5,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">ResNet-101</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M186.83 377.01 L186.83 364.95 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M186.830 377.010 L186.830 364.950 "/>
   <g begin="text">
    <text y="373.393" x="199.519,204.002,208.485,210.727,215.21,219.69500000000002,246.914,251.398,253.639,258.122" svgx:width="0.5,0.5,0.25,0.5,0.5,0.55,0.5,0.25,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">19.87 4.60</text>
    <text y="385.449" x="67.099,73.08,77.061,80.549,87.022,91.003,93.496,96.482,100.965,105.448" svgx:width="0.67,0.44,0.39,0.72,0.44,0.28,0.33,0.5,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">ResNet-152</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M186.83 389.06 L186.83 377.01 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M186.830 389.060 L186.830 377.010 "/>
   <g begin="text">
    <text y="385.448" x="199.519,204.002,208.485,210.727,215.21,219.69500000000002,246.914,251.398,253.639,258.122" svgx:width="0.5,0.5,0.25,0.5,0.5,0.55,0.5,0.25,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Medi;font-size:8.97px;stroke:none;">19.38 4.49</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M59.13 389.26 L277.35 389.26 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M59.130 389.260 L277.350 389.260 "/>
   <g begin="text">
    <text y="402.117" x="50.112,54.873,58.855,63.338,65.83,69.7768,72.421,76.904,79.1465,81.746,87.224,90.21,93.196,97.679,100.6391,103.274,106.26,110.241,112.734,116.715,120.2133,122.812,125.798,133.267,136.2271,138.853,143.336" svgx:width="0.61,0.44,0.5,0.28,0.44,0.55,0.5,0.25,0.55,0.61,0.33,0.33,0.5,0.33,0.55,0.33,0.44,0.28,0.44,0.39,0.55,0.33,0.83,0.33,0.55,0.5,0.33" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">Table 4. Error rates (%) of</text>
    <text y="402.117" x="148.93,152.418,154.91,159.896,164.379,166.871,170.853,173.838,181.307,185.791,190.776,194.757" svgx:width="0.39,0.28,0.56,0.5,0.28,0.44,0.33,0.83,0.5,0.56,0.44,0.28" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Medi;font-size:8.97px;stroke:none;">single-model</text>
@@ -155,57 +155,57 @@
    <text y="409.267" x="128.692" svgx:width="0.57" style="fill:rgb(35,31,32);font-family:CMSY6;font-size:5.98px;stroke:none;">†</text>
    <text y="413.076" x="134.864,137.85,141.831,146.314,150.798,153.783,156.276,160.257,164.74200000000002,166.982,171.465,175.95000000000002,178.19,180.682,185.166,189.1128,191.388,193.881,197.862,201.35,203.86159999999998,206.084,209.572,213.553,216.046,219.032" svgx:width="0.33,0.44,0.5,0.5,0.33,0.28,0.44,0.5,0.55,0.5,0.5,0.55,0.28,0.5,0.44,0.55,0.28,0.44,0.39,0.28,0.55,0.39,0.44,0.28,0.33,0.25" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">reported on the test set).</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M60.82 426.17 L275.66 426.17 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M60.820 426.170 L275.660 426.170 "/>
   <g begin="text">
    <text y="434.813" x="72.772,78.973,82.511,84.727,88.712,92.697" svgx:width="0.78,0.44,0.28,0.5,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:7.97px;stroke:none;">method</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M196.49 438.43 L196.49 426.37 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M196.490 438.430 L196.490 426.370 "/>
   <g begin="text">
    <text y="434.813" x="208.64,211.133,215.616,220.099,223.085,227.57000000000002,229.81,233.791,236.776,239.268,241.5105,244.289" svgx:width="0.28,0.5,0.5,0.33,0.5,0.55,0.44,0.33,0.33,0.25,0.55,0.33" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">top-5 err. (</text>
    <text y="434.813" x="247.276,250.262,254.243,257.731" svgx:width="0.33,0.44,0.39,0.33" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Medi;font-size:8.97px;stroke:none;">test</text>
    <text y="434.813" x="260.716" svgx:width="0.33" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">)</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M60.82 438.63 L275.66 438.63 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M60.820 438.630 L275.660 438.630 "/>
   <g begin="text">
    <text y="447.266" x="72.772,79.111,85.585,92.04339999999999,94.3,97.286,101.769,106.252,109.21209999999999,111.48,114.465,117.451,122.93,127.915,134.389,140.369,146.35,149.336,153.819,158.302" svgx:width="0.72,0.72,0.72,0.55,0.33,0.5,0.5,0.33,0.55,0.33,0.33,0.61,0.56,0.72,0.67,0.67,0.33,0.5,0.5,0.33" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">VGG [40] (ILSVRC’14)</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M196.49 450.88 L196.49 438.83 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M196.490 450.880 L196.490 438.830 "/>
   <g begin="text">
    <text y="447.266" x="228.325,232.808,235.05,239.533" svgx:width="0.5,0.25,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">7.32</text>
    <text y="459.322" x="72.772,79.246,83.729,88.212,92.695,98.174,102.155,108.629,112.61,115.1216,117.343,120.329,124.812,129.295,132.2551,134.523,137.509,140.494,145.973,150.958,157.432,163.413,169.393,172.379,176.862,181.345" svgx:width="0.72,0.5,0.5,0.5,0.61,0.44,0.72,0.44,0.28,0.55,0.33,0.5,0.5,0.33,0.55,0.33,0.33,0.61,0.56,0.72,0.67,0.67,0.33,0.5,0.5,0.33" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">GoogLeNet [43] (ILSVRC’14)</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M196.49 462.94 L196.49 450.88 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M196.490 462.940 L196.490 450.880 "/>
   <g begin="text">
    <text y="459.321" x="228.325,232.808,235.05,239.533" svgx:width="0.5,0.25,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">6.66</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M60.82 463.14 L275.66 463.14 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M60.820 463.140 L275.660 463.140 "/>
   <g begin="text">
    <text y="471.774" x="72.772,79.111,85.585,92.04339999999999,94.3,97.286,101.769,106.252" svgx:width="0.72,0.72,0.72,0.55,0.33,0.5,0.5,0.33" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">VGG [40]</text>
    <text y="471.774" x="111.48,114.134,118.119,122.104" svgx:width="0.33,0.5,0.5,0.33" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:7.97px;stroke:none;">(v5)</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M196.49 475.39 L196.49 463.34 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M196.490 475.390 L196.490 463.340 "/>
   <g begin="text">
    <text y="471.774" x="230.567,235.05,237.292" svgx:width="0.5,0.25,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">6.8</text>
    <text y="483.829" x="72.772,77.757,83.738,87.719,93.197,99.671,102.657,107.14,111.121,113.6326,115.854,118.839,123.323,127.806" svgx:width="0.56,0.67,0.44,0.61,0.72,0.33,0.5,0.44,0.28,0.55,0.33,0.5,0.5,0.33" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">PReLU-net [12]</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M196.49 487.44 L196.49 475.39 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M196.490 487.440 L196.490 475.390 "/>
   <g begin="text">
    <text y="483.829" x="228.325,232.808,235.05,239.533" svgx:width="0.5,0.25,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">4.94</text>
    <text y="495.885" x="72.772,78.753,85.226,88.212,90.705,95.188,99.169,103.15,107.633,110.126,112.619,117.102,121.587,123.826,126.812,131.295,135.778" svgx:width="0.67,0.72,0.33,0.28,0.5,0.44,0.44,0.5,0.28,0.28,0.5,0.5,0.55,0.33,0.5,0.5,0.33" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">BN-inception [16]</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M196.49 499.5 L196.49 487.44 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M196.490 499.500 L196.490 487.440 "/>
   <g begin="text">
    <text y="495.884" x="228.325,232.808,235.05,239.533" svgx:width="0.5,0.25,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">4.82</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M60.82 499.7 L275.66 499.7 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M60.820 499.700 L275.660 499.700 "/>
   <g begin="text">
    <text y="508.337" x="72.772,79.246,83.227,86.715,93.188,97.169,100.1291,102.396,105.382,108.87,114.85,119.836,126.309,132.783,139.257,142.243,146.726,151.209" svgx:width="0.72,0.44,0.39,0.72,0.44,0.33,0.55,0.33,0.39,0.67,0.56,0.72,0.72,0.72,0.33,0.5,0.5,0.33" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Medi;font-size:8.97px;stroke:none;">ResNet (ILSVRC’15)</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M196.49 511.95 L196.49 499.9 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M196.490 511.950 L196.490 499.900 "/>
   <g begin="text">
    <text y="508.337" x="228.325,232.808,235.05,239.533" svgx:width="0.5,0.25,0.5,0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Medi;font-size:8.97px;stroke:none;">3.57</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M60.82 512.15 L275.66 512.15 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.4;" d="M60.820 512.150 L275.660 512.150 "/>
   <g begin="text">
    <text y="524.943" x="50.112,54.873,58.855,63.338,65.83,69.7768,72.645,77.128,79.3705,82.212,87.691,90.676,93.662,98.145,101.1051,103.964,106.95,110.931,113.424,117.405,120.9033,123.736,126.721,134.19,137.1501,140.009,144.493" svgx:width="0.61,0.44,0.5,0.28,0.44,0.55,0.5,0.25,0.55,0.61,0.33,0.33,0.5,0.33,0.55,0.33,0.44,0.28,0.44,0.39,0.55,0.33,0.83,0.33,0.55,0.5,0.33" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:8.97px;stroke:none;">Table 5. Error rates (%) of</text>
    <text y="524.943" x="150.318,154.299,159.285,162.772,166.754,174.223,179.208,181.701,185.682" svgx:width="0.44,0.56,0.39,0.44,0.83,0.56,0.28,0.44,0.39" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Medi;font-size:8.97px;stroke:none;">ensembles</text>
@@ -237,29 +237,29 @@
   <g begin="text">
    <text y="92.093" x="470.332,473.384,476.003,479.128,480.585,481.966,485.018" svgx:width="0.51,0.43,0.51,0.25,0.23,0.51,0.51" style="fill:rgb(0,0,0);font-family:TT3Do00;font-size:6.04px;stroke:none;">1x1, 64</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M479.29 93.84 L479.29 98.94 "/>
-  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.46;" d="M479.29 100.9 L477.98 98.28 C478.78 98.72 479.8 98.72 480.6 98.28 L479.29 100.9 "/>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M479.29 75.71 L479.29 84.74 "/>
-  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.46;" d="M479.29 86.78 L477.98 84.08 C478.78 84.52 479.8 84.52 480.6 84.08 L479.29 86.78 "/>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M479.29 120.05 L479.29 125.29 "/>
-  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.46;" d="M479.29 127.33 L477.98 124.64 C478.78 125.07 479.8 125.07 480.6 124.64 L479.29 127.33 "/>
-  <path style="fill:rgb(255,255,255);stroke:none;stroke-width:0.46;" d="M482.93 130.97 C482.93 129.0 481.33 127.33 479.29 127.33 C477.25 127.33 475.57 129.0 475.57 130.97 C475.57 133.01 477.25 134.68 479.29 134.68 C481.33 134.68 482.93 133.01 482.93 130.97 "/>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M482.93 130.97 C482.93 129.0 481.33 127.33 479.29 127.33 C477.25 127.33 475.57 129.0 475.57 130.97 C475.57 133.01 477.25 134.68 479.29 134.68 C481.33 134.68 482.93 133.01 482.93 130.97 Z"/>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M477.47 130.97 L481.11 130.97 "/>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M479.29 132.86 L479.29 129.15 "/>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M479.29 134.68 L479.29 140.07 "/>
-  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.46;" d="M479.29 142.04 L477.98 139.41 C478.78 139.85 479.8 139.85 480.6 139.41 L479.29 142.04 "/>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M482.93 79.42 C528.5 79.42 535.93 92.97 533.23 111.9 C532.07 120.7 528.65 130.68 484.96 130.97 "/>
-  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.46;" d="M482.93 130.97 L485.62 132.35 C485.18 131.48 485.18 130.53 485.62 129.66 L482.93 130.97 "/>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M479.29 79.42 L482.93 79.42 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M479.290 93.840 L479.290 98.940 "/>
+  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.46;" d="M479.290 100.900 L477.980 98.280 C478.780 98.720 479.800 98.720 480.600 98.280 L479.290 100.900 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M479.290 75.710 L479.290 84.740 "/>
+  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.46;" d="M479.290 86.780 L477.980 84.080 C478.780 84.520 479.800 84.520 480.600 84.080 L479.290 86.780 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M479.290 120.050 L479.290 125.290 "/>
+  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.46;" d="M479.290 127.330 L477.980 124.640 C478.780 125.070 479.800 125.070 480.600 124.640 L479.290 127.330 "/>
+  <path style="fill:rgb(255,255,255);stroke:none;stroke-width:0.46;" d="M482.930 130.970 C482.930 129.000 481.330 127.330 479.290 127.330 C477.250 127.330 475.570 129.000 475.570 130.970 C475.570 133.010 477.250 134.680 479.290 134.680 C481.330 134.680 482.930 133.010 482.930 130.970 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M482.930 130.970 C482.930 129.000 481.330 127.330 479.290 127.330 C477.250 127.330 475.570 129.000 475.570 130.970 C475.570 133.010 477.250 134.680 479.290 134.680 C481.330 134.680 482.930 133.010 482.930 130.970 Z"/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M477.470 130.970 L481.110 130.970 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M479.290 132.860 L479.290 129.150 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M479.290 134.680 L479.290 140.070 "/>
+  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.46;" d="M479.290 142.040 L477.980 139.410 C478.780 139.850 479.800 139.850 480.600 139.410 L479.290 142.040 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M482.930 79.420 C528.500 79.420 535.930 92.970 533.230 111.900 C532.070 120.700 528.650 130.680 484.960 130.970 "/>
+  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.46;" d="M482.930 130.970 L485.620 132.350 C485.180 131.480 485.180 130.530 485.620 129.660 L482.930 130.970 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M479.290 79.420 L482.930 79.420 "/>
   <g begin="text">
    <text y="98.208" x="482.417,484.315,487.015,488.332" svgx:width="0.35,0.49,0.23,0.52" style="fill:rgb(0,0,0);font-family:TT3Eo00;font-size:5.46px;stroke:none;">relu</text>
   </g>
   <g begin="text">
    <text y="120.777" x="468.803,471.856,474.476,477.529,479.056,480.438,483.49,486.615" svgx:width="0.51,0.43,0.51,0.25,0.23,0.51,0.51,0.51" style="fill:rgb(0,0,0);font-family:TT3Do00;font-size:6.04px;stroke:none;">1x1, 256</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M479.29 108.25 L479.29 113.42 "/>
-  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.46;" d="M479.29 115.46 L477.98 112.77 C478.78 113.21 479.8 113.21 480.6 112.77 L479.29 115.46 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M479.290 108.250 L479.290 113.420 "/>
+  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.46;" d="M479.290 115.460 L477.980 112.770 C478.780 113.210 479.800 113.210 480.600 112.770 L479.290 115.460 "/>
   <g begin="text">
    <text y="112.623" x="482.417,484.315,487.015,488.332" svgx:width="0.35,0.49,0.23,0.52" style="fill:rgb(0,0,0);font-family:TT3Eo00;font-size:5.46px;stroke:none;">relu</text>
    <text y="139.196" x="482.417,484.315,487.015,488.332" svgx:width="0.35,0.49,0.23,0.52" style="fill:rgb(0,0,0);font-family:TT3Eo00;font-size:5.46px;stroke:none;">relu</text>
@@ -270,21 +270,21 @@
   <g begin="text">
    <text y="116.191" x="350.207,353.259,355.879,359.003,360.46,361.841,364.893" svgx:width="0.51,0.43,0.51,0.25,0.23,0.51,0.51" style="fill:rgb(0,0,0);font-family:TT3Do00;font-size:6.04px;stroke:none;">3x3, 64</text>
   </g>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M359.16 97.84 L359.16 106.87 "/>
-  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.46;" d="M359.16 108.91 L357.85 106.22 C358.65 106.65 359.67 106.65 360.47 106.22 L359.16 108.91 "/>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M359.16 75.71 L359.16 84.74 "/>
-  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.46;" d="M359.16 86.78 L357.85 84.08 C358.65 84.52 359.67 84.52 360.47 84.08 L359.16 86.78 "/>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M359.16 119.98 L359.16 125.29 "/>
-  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.46;" d="M359.16 127.33 L357.85 124.64 C358.65 125.07 359.67 125.07 360.47 124.64 L359.16 127.33 "/>
-  <path style="fill:rgb(255,255,255);stroke:none;stroke-width:0.46;" d="M362.8 130.97 C362.8 129.0 361.2 127.33 359.16 127.33 C357.12 127.33 355.45 129.0 355.45 130.97 C355.45 133.01 357.12 134.68 359.16 134.68 C361.2 134.68 362.8 133.01 362.8 130.97 "/>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M362.8 130.97 C362.8 129.0 361.2 127.33 359.16 127.33 C357.12 127.33 355.45 129.0 355.45 130.97 C355.45 133.01 357.12 134.68 359.16 134.68 C361.2 134.68 362.8 133.01 362.8 130.97 Z"/>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M357.34 130.97 L360.98 130.97 "/>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M359.16 132.86 L359.16 129.15 "/>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M359.16 134.68 L359.16 140.07 "/>
-  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.46;" d="M359.16 142.04 L357.85 139.41 C358.65 139.85 359.67 139.85 360.47 139.41 L359.16 142.04 "/>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M362.8 79.42 C408.38 79.42 415.8 92.97 413.11 111.9 C411.94 120.7 408.52 130.68 364.84 130.97 "/>
-  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.46;" d="M362.8 130.97 L365.5 132.35 C365.06 131.48 365.06 130.53 365.5 129.66 L362.8 130.97 "/>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M359.16 79.42 L362.8 79.42 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M359.160 97.840 L359.160 106.870 "/>
+  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.46;" d="M359.160 108.910 L357.850 106.220 C358.650 106.650 359.670 106.650 360.470 106.220 L359.160 108.910 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M359.160 75.710 L359.160 84.740 "/>
+  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.46;" d="M359.160 86.780 L357.850 84.080 C358.650 84.520 359.670 84.520 360.470 84.080 L359.160 86.780 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M359.160 119.980 L359.160 125.290 "/>
+  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.46;" d="M359.160 127.330 L357.850 124.640 C358.650 125.070 359.670 125.070 360.470 124.640 L359.160 127.330 "/>
+  <path style="fill:rgb(255,255,255);stroke:none;stroke-width:0.46;" d="M362.800 130.970 C362.800 129.000 361.200 127.330 359.160 127.330 C357.120 127.330 355.450 129.000 355.450 130.970 C355.450 133.010 357.120 134.680 359.160 134.680 C361.200 134.680 362.800 133.010 362.800 130.970 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M362.800 130.970 C362.800 129.000 361.200 127.330 359.160 127.330 C357.120 127.330 355.450 129.000 355.450 130.970 C355.450 133.010 357.120 134.680 359.160 134.680 C361.200 134.680 362.800 133.010 362.800 130.970 Z"/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M357.340 130.970 L360.980 130.970 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M359.160 132.860 L359.160 129.150 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M359.160 134.680 L359.160 140.070 "/>
+  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.46;" d="M359.160 142.040 L357.850 139.410 C358.650 139.850 359.670 139.850 360.470 139.410 L359.160 142.040 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M362.800 79.420 C408.380 79.420 415.800 92.970 413.110 111.900 C411.940 120.700 408.520 130.680 364.840 130.970 "/>
+  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.46;" d="M362.800 130.970 L365.500 132.350 C365.060 131.480 365.060 130.530 365.500 129.660 L362.800 130.970 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.46;" d="M359.160 79.420 L362.800 79.420 "/>
   <g begin="text">
    <text y="139.196" x="362.293,364.191,366.891,368.208" svgx:width="0.35,0.49,0.23,0.52" style="fill:rgb(0,0,0);font-family:TT3Eo00;font-size:5.46px;stroke:none;">relu</text>
    <text y="102.285" x="362.293,364.191,366.891,368.208" svgx:width="0.35,0.49,0.23,0.52" style="fill:rgb(0,0,0);font-family:TT3Eo00;font-size:5.46px;stroke:none;">relu</text>
@@ -354,7 +354,7 @@
    <text y="652.299" x="320.817,325.798,330.779,334.097,336.867,341.848,346.73,351.153,355.53540000000004,358.615,365.808,370.232,374.107,381.3,385.724,389.041" svgx:width="0.5,0.5,0.33,0.28,0.5,0.5,0.44,0.44,0.55,0.72,0.44,0.39,0.72,0.44,0.33,0.33" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Medi;font-size:9.96px;stroke:none;">50-layer ResNet:</text>
    <text y="652.299" x="396.548,405.156,409.5384,412.618,415.935,420.359,425.34,428.11,432.533,436.956,441.33840000000004,444.419,448.842,453.265,457.689,462.66900000000004,465.719,470.7,474.017,476.787,481.21,486.192,490.615,493.90180000000004,496.971,501.953,504.722,509.703,514.127,519.107,522.147,524.916,529.8960000000001,532.936,535.706,540.687" svgx:width="0.94,0.44,0.55,0.33,0.44,0.5,0.28,0.44,0.44,0.44,0.55,0.44,0.44,0.44,0.5,0.55,0.5,0.33,0.28,0.44,0.5,0.44,0.33,0.55,0.5,0.28,0.5,0.44,0.5,0.55,0.28,0.5,0.55,0.28,0.5,0.44" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:9.96px;stroke:none;">We replace each 2-layer block in the</text>
   </g>
-  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.46;" d="M308.86 663.46 L403.36 663.46 "/>
+  <path style="fill:none;stroke:rgb(35,31,32);stroke-width:0.46;" d="M308.860 663.460 L403.360 663.460 "/>
   <g begin="text">
    <text y="670.329" x="319.721" svgx:width="0.5" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:5.98px;stroke:none;">4</text>
    <text y="673.142" x="323.208,328.963,332.501,336.04,340.025,343.564" svgx:width="0.72,0.44,0.44,0.5,0.44,0.33" style="fill:rgb(35,31,32);font-family:NimbusRomNo9L-Regu;font-size:7.97px;stroke:none;">Deeper</text>
