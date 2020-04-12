@@ -39,7 +39,6 @@ import com.google.common.collect.HashMultiset;
 import com.google.common.collect.Multiset;
 import com.google.common.collect.Multiset.Entry;
 
-import picocli.CommandLine;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 /**
@@ -370,7 +369,7 @@ public class AMITableTool extends AbstractAMITool {
 		if (multisetList != null && multisetList.size() > 0) {
 			createAndOutputMultisets();
 		}
-		XMLUtil.writeQuietly(templateSummaryHtml, new File(cProjectDirectory, "__tables/"+templateName+"."+CTree.HTML), 1);
+		XMLUtil.writeQuietly(templateSummaryHtml, new File(getCProjectDirectory(), "__tables/"+templateName+"."+CTree.HTML), 1);
 		
 	}
 

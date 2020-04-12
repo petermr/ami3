@@ -7,25 +7,22 @@ import java.io.InputStream;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.concurrent.Callable;
 
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.AMIDictionaryTool.RawFileFormat;
-import org.contentmine.ami.tools.download.CurlDownloader;
 import org.contentmine.cproject.args.AbstractTool;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeList;
-import org.contentmine.eucl.euclid.Util;
 
 import picocli.CommandLine;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
+import picocli.CommandLine.ParentCommand;
 
 /**
  * Reusable Commands for picocli CommandLine
@@ -42,12 +39,13 @@ import picocli.CommandLine.Option;
 		commandListHeading = "Commands:%n=========%n",
 		requiredOptionMarker = '*',
 		showDefaultValues = true, // alternatively, we could switch this off and use ${DEFAULT-VALUE} in description text
+		usageHelpWidth = 120,
+		usageHelpAutoWidth = true,
 		//addMethodSubcommands = false, // TODO confirm with Peter
 		//separator = "=", // this is the default
 		//helpCommand = true, // this is a normal command, not a help command
 		//sortOptions = true, // this is the default
 		//hidden = false, // this is the default
-		//usageHelpWidth = 80, // this is the default
 
 		// TODO I would like to automate this
 		version = "${COMMAND-FULL-NAME} 20190228" // also edit ami-jars.sh
@@ -215,37 +213,9 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 		validateCProject();
 		validateCTree();
 		validateRawFormats();
-		setLogging();
+		parent.setLogging();
 		printGenericValues();
 		return true;
-	}
-
-	private void setLogging() {
-		if (log4j != null) {
-			if (log4j.length % 2 != 0) {
-				throw new RuntimeException("log4j must have even number of arguments");
-			}
-			Map<Class<?>, Level> levelByClass = new HashMap<Class<?>, Level>();
-			for (int i = 0; i < log4j.length; ) {
-				String className = log4j[i++];
-				Class<?> logClass = null;
-				try {
-					logClass = Class.forName(className);
-				} catch (ClassNotFoundException e) {
-					System.err.println("Cannot find logger Class: " + className);
-					i++;
-					continue;
-				}
-				String levelS = log4j[i++];
-				Level level = Level.toLevel(levelS);
-				if (level == null) {
-					LOG.error("cannot parse class/level: " + className + ":" + levelS);
-				} else {
-					levelByClass.put(logClass, level);
-					Logger.getLogger(logClass).setLevel(level);
-				}
-			}
-		}
 	}
 
 	/**
@@ -268,14 +238,14 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 	 */
 	protected void validateCProject() {
 
-		if (cProjectDirectory != null) {
+		if (getCProjectDirectory() != null) {
 			if (makeCProjectDirectory) {
-				new File(cProjectDirectory).mkdirs();
+				new File(getCProjectDirectory()).mkdirs();
 			}
-			File cProjectDir = new File(cProjectDirectory);
-			cProjectDirectory = checkDirExistenceAndGetAbsoluteName(cProjectDir, "cProject");
+			File cProjectDir = new File(getCProjectDirectory());
+			setCProjectDirectory(checkDirExistenceAndGetAbsoluteName(cProjectDir, "cProject"));
 
-			if (cProjectDirectory != null) {
+			if (getCProjectDirectory() != null) {
 				cProject = new CProject(cProjectDir);
 				cTreeList = generateCTreeList();
 			} else {
@@ -335,7 +305,7 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 				LOG.info("** using parentFile as " + type + ": " + directory);
 			} else {
 				System.err.println("not found: " + type + " must be existing directory or have directory parent: " +
-						cProjectDirectory + " (" + dir.getAbsolutePath());
+						getCProjectDirectory() + " (" + dir.getAbsolutePath());
 				directory = null;
 			}
 		}
@@ -346,9 +316,9 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 	private CTreeList generateCTreeList() {
 		cTreeList = new CTreeList();
 		if (cProject != null) {
-			checkIncludeExclude(excludeTrees, includeTrees);
-			List<String> includeTreeList = includeTrees == null ? new ArrayList<>() : new ArrayList<>(Arrays.asList(includeTrees));
-			List<String> excludeTreeList = excludeTrees == null ? new ArrayList<>() : new ArrayList<>(Arrays.asList(excludeTrees));
+			checkIncludeExclude(excludeTrees(), includeTrees());
+			List<String> includeTreeList = includeTrees() == null ? new ArrayList<>() : new ArrayList<>(Arrays.asList(includeTrees()));
+			List<String> excludeTreeList = excludeTrees() == null ? new ArrayList<>() : new ArrayList<>(Arrays.asList(excludeTrees()));
 			CTreeList pList = cProject == null ? new CTreeList() : cProject.getOrCreateCTreeList();
 			for (CTree ct : pList) {
 				String name = ct.getName();
@@ -375,11 +345,11 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 	 * checks it exists
 	 */
 	protected void validateCTree() {
-		checkIncludeExclude(excludeBase, includeBase); // check anyway
-		if (cTreeDirectory != null) {
-			File cTreeDir = new File(cTreeDirectory);
-			cTreeDirectory = checkDirExistenceAndGetAbsoluteName(cTreeDir, "cTree");
-			if (cTreeDirectory == null) {
+		checkIncludeExclude(excludeBase(), includeBase()); // check anyway
+		if (cTreeDirectory() != null) {
+			File cTreeDir = new File(cTreeDirectory());
+			cTreeDirectory(checkDirExistenceAndGetAbsoluteName(cTreeDir, "cTree"));
+			if (cTreeDirectory() == null) {
 				System.err.println("***Cannot find ctree/parent: " + cTreeDir + " ***");
 			} else {
 				cTree = new CTree(cTreeDir);
@@ -395,10 +365,9 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 	 * at present cproject, ctree and filetypes
 	 */
 	private void printGenericValues() {
-		if (verbosity.length > 0) {
-			System.out.println("output basename     " + outputBasename);
-			System.out.println("input basename      " + inputBasename);
-			System.out.println("input basename list " + inputBasenameList);
+		if (verbosity().length > 0) {
+			System.out.println("input basename      " + getInputBasename());
+			System.out.println("input basename list " + getInputBasenameList());
 			System.out.println("cproject            " + (cProject == null ? "" : cProject.getDirectory().getAbsolutePath()));
 			System.out.println("ctree               " + (cTree == null ? "" : cTree.getDirectory().getAbsolutePath()));
 			System.out.println("cTreeList           " + prettyPrint(cTreeList));
@@ -422,6 +391,54 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 			s = "" + cTreeList.size() + " trees " + s.substring(0, Math.min(50, s.length()));
 		}
 		return s;
+	}
+
+	protected String getCProjectDirectory() {
+		return parent.projectOrTreeOptions.cProjectOptions.cProjectDirectory;
+	}
+
+	protected void setCProjectDirectory(String newValue) {
+		parent.projectOrTreeOptions.cProjectOptions.cProjectDirectory = newValue;
+	}
+
+	protected String cTreeDirectory() {
+		return parent.projectOrTreeOptions.cTreeOptions.cTreeDirectory;
+	}
+
+	protected void cTreeDirectory(String newValue) {
+		parent.projectOrTreeOptions.cTreeOptions.cTreeDirectory = newValue;
+	}
+
+	protected String[] excludeTrees() {
+		return parent.projectOrTreeOptions.cProjectOptions.treeOptions.excludeTrees;
+	}
+
+	protected String[] includeTrees() {
+		return parent.projectOrTreeOptions.cProjectOptions.treeOptions.includeTrees;
+	}
+
+	protected String[] excludeBase() {
+		return parent.projectOrTreeOptions.cTreeOptions.baseOptions.excludeBase;
+	}
+
+	protected String[] includeBase() {
+		return parent.projectOrTreeOptions.cTreeOptions.baseOptions.includeBase;
+	}
+
+	protected String input() {
+		return parent.generalOptions.input;
+	}
+
+	protected void input(String newValue) {
+		parent.generalOptions.input = newValue;
+	}
+
+	protected boolean[] verbosity() {
+		return parent.loggingOptions.verbosity;
+	}
+
+	protected String[] log4j() {
+		return parent.loggingOptions.log4j;
 	}
 
 	public AbstractAMITool setCProject(CProject cProject) {
@@ -491,18 +508,18 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 	}
 
 	public int getVerbosityInt() {
-		return verbosity.length;
+		return verbosity().length;
 	}
 
 	public Level getVerbosity() {
-		if (verbosity.length == 0) {
+		if (verbosity().length == 0) {
 //			addLoggingLevel(Level.ERROR, "BUG?? in verbosity");
 			return Level.WARN;
-		} else if (verbosity.length == 1) {
-			return verbosity[0] ? Level.INFO : Level.WARN;
-		} else if (verbosity.length == 2) {
+		} else if (verbosity().length == 1) {
+			return verbosity()[0] ? Level.INFO : Level.WARN;
+		} else if (verbosity().length == 2) {
 			return Level.DEBUG;
-		} else if (verbosity.length == 3) {
+		} else if (verbosity().length == 3) {
 			return Level.TRACE;
 		}
 		return Level.ERROR;
@@ -541,7 +558,7 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 		int treeCount = 0;
 		if (cTreeList != null) {
 			for (CTree cTree : cTreeList) {
-				if (maxTreeCount != null && getOrCreateProcessedTrees().size() >= maxTreeCount) {
+				if (parent.generalOptions.maxTreeCount != null && getOrCreateProcessedTrees().size() >= parent.generalOptions.maxTreeCount) {
 					System.out.println("CTree limit reached: " + (--treeCount));
 					break;
 				}
@@ -574,10 +591,10 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 
 	protected boolean includeExclude(String basename) {
 		boolean include = true;
-		if (includeBase != null) {
-			include = incExclude(includeBase, basename);
-		} else if (excludeBase != null) {
-			include = !incExclude(excludeBase, basename);
+		if (includeBase() != null) {
+			include = incExclude(includeBase(), basename);
+		} else if (excludeBase() != null) {
+			include = !incExclude(excludeBase(), basename);
 		} else {
 			include = true;
 		}
@@ -601,11 +618,11 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 	}
 
 	public String getInputBasename() {
-		return inputBasename;
+		return parent.generalOptions.inputBasename;
 	}
 
 	public void setInputBasename(String inputBasename) {
-		this.inputBasename = inputBasename;
+		parent.generalOptions.inputBasename = inputBasename;
 	}
 
 	public List<String> getInputBasenameList() {
@@ -627,28 +644,28 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 	}
 
 	public Boolean getForceMake() {
-		return forceMake;
+		return parent.generalOptions.forceMake;
 	}
 
 	public void setForceMake(Boolean forceMake) {
-		this.forceMake = forceMake;
+		parent.generalOptions.forceMake = forceMake;
 	}
 
 	protected InputStream openInputStream() {
 		InputStream inputStream = null;
-		if (input != null) {
+		if (input() != null) {
 			try {
-				if (input.startsWith("http")) {
-					inputStream = new URL(input).openStream();
+				if (parent.generalOptions.input.startsWith("http")) {
+					inputStream = new URL(input()).openStream();
 				} else {
-					File inputFile = new File(input);
+					File inputFile = new File(input());
 					if (!inputFile.exists()) {
 						throw new RuntimeException("inputFile does not exist: " + inputFile.getAbsolutePath());
 					}
 					inputStream = new FileInputStream(inputFile);
 				}
 			} catch (IOException e) {
-				addLoggingLevel(Level.ERROR, "cannot read/open stream: " + input);
+				addLoggingLevel(Level.ERROR, "cannot read/open stream: " + input());
 			}
 		}
 		return inputStream;

@@ -143,8 +143,8 @@ public class AMIMakeProjectTool extends AbstractAMITool {
     
     @Override
 	protected void validateCTree() {
-		if (cTreeDirectory != null) {
-			addLoggingLevel(Level.WARN, "must not have --ctree: " + cTreeDirectory+"; IGNORED");
+		if (cTreeDirectory() != null) {
+			addLoggingLevel(Level.WARN, "must not have --ctree: " + cTreeDirectory() + "; IGNORED");
     	}
 	}
 	

@@ -333,7 +333,7 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 
     @Override
 	protected void parseSpecifics() {
-    	if (verbosity.length > 0) {
+    	if (verbosity().length > 0) {
 			System.out.println("minHeight           " + minHeight);
 			System.out.println("minWidth            " + minWidth);
 			System.out.println("smalldir            " + smallDirname);
@@ -407,7 +407,7 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 				processTemplate();
 			} else {
 				try {
-					runTransform(imageDir, inputBasename);
+					runTransform(imageDir, getInputBasename());
 				} catch (Exception e) {
 					e.printStackTrace();
 					LOG.error("Bad read: "+imageDir+" ("+e.getMessage()+")");
@@ -424,9 +424,9 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 			System.err.println("Cannot find pdfImages for cTree "+cTree.getName());
 			return;
 		}
-		if (inputBasename == null) {
+		if (getInputBasename() == null) {
 			System.out.println("Assuming base: "+RAW);
-			inputBasename = RAW;
+			setInputBasename(RAW);
 		}
 		List<File> imageDirs = CMineGlobber.listSortedChildDirectories(pdfImagesDir);
 		Collections.sort(imageDirs);
@@ -514,7 +514,7 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 
 	private BufferedImage erodeDilateAndSave(BufferedImage image, File imageDir) {
 		image = ImageUtil.thresholdBoofcv(image, erodeDilate);
-		if (verbosity.length > 1) {
+		if (verbosity().length > 1) {
 			File outputPng = new File(imageDir, "erodeDilate"+"."+CTree.PNG);
 			LOG.debug("writing "+outputPng);
 //			ImageUtil.writeImageQuietly(image, outputPng);
@@ -524,7 +524,7 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 
 	private BufferedImage despeckleAndSave(BufferedImage image, File imageDir) {
 		image = ImageUtil.despeckle(image);
-		if (verbosity.length > 1) {
+		if (verbosity().length > 1) {
 			File outputPng = new File(imageDir, "despeckle"+"."+CTree.PNG);
 			LOG.debug("writing "+outputPng);
 			ImageUtil.writeImageQuietly(image, outputPng);

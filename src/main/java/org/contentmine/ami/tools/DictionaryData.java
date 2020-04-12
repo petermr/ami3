@@ -23,7 +23,6 @@ class DictionaryData {
     InputFormat             informat;
     String                  input;
 	String                  linkCol;
-	String[]                log4j;
 	String                  nameCol;
     Operation               operation;
     DictionaryFileFormat[]  outformats;

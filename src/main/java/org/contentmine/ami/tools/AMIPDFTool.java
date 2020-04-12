@@ -209,7 +209,7 @@ public class AMIPDFTool extends AbstractAMITool {
 		pdfDocumentProcessor.setParserType(parserType);
 		pdfDocumentProcessor.setTidySVGList(tidySVGList);
         cTree.setPDFDocumentProcessor(pdfDocumentProcessor);
-        cTree.setForceMake(forceMake);
+        cTree.setForceMake(getForceMake());
 		processedTree = cTree.processPDFTree();
 		return processedTree;
     }

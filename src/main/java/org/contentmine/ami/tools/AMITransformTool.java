@@ -110,10 +110,10 @@ public class AMITransformTool extends AbstractAMITool {
 	
 	private void runTidy() {
 		Document doc = null;
-		System.out.println("reading "+input);
+		System.out.println("reading " + input());
 		try {
 //			doc = Jsoup.connect("https://en.wikipedia.org/").get();
-			doc = Jsoup.connect(input).get();
+			doc = Jsoup.connect(input()).get();
 		} catch (IOException e) {
 			e.printStackTrace();
 			return;
@@ -131,7 +131,7 @@ public class AMITransformTool extends AbstractAMITool {
 		File scholarlyHtmlFile = cTree.getOrCreateScholarlyHtmlFile();
 		NormaTransformer normaTransformer = new NormaTransformer(argProcessor);
 		normaTransformer.setCurrentCTree(cTree);
-		if (CMFileUtil.shouldMake(forceMake, scholarlyHtmlFile, existingFulltextXML)) {
+		if (CMFileUtil.shouldMake(getForceMake(), scholarlyHtmlFile, existingFulltextXML)) {
 			transformXML2Html(existingFulltextXML, scholarlyHtmlFile, normaTransformer);
 		}
 	}

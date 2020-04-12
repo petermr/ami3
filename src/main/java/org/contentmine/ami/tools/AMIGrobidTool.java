@@ -108,7 +108,7 @@ public class AMIGrobidTool extends AbstractAMITool {
 		outputDir.mkdirs();
 		File outputFile = new File(outputDir, FULLTEXT_TEI_XML);
 		boolean debug = false;
-		if (CMFileUtil.shouldMake(forceMake, outputFile, debug, inputFile)) {
+		if (CMFileUtil.shouldMake(getForceMake(), outputFile, debug, inputFile)) {
 			GrobidRunner grobidRunner = new GrobidRunner(grobidOptions);
 			grobidRunner.setTryCount(200); // fix this later
 			grobidRunner.convertPDFToTEI(inputDir, outputDir);
@@ -119,7 +119,7 @@ public class AMIGrobidTool extends AbstractAMITool {
 		File inputFile = new File(outputDir, FULLTEXT_TEI_XML);
 		File outputFile = new File(outputDir, FULLTEXT_TEI_HTML);
 		boolean debug = false;
-		if (true || CMFileUtil.shouldMake(forceMake, outputFile, debug, inputFile)) {
+		if (true || CMFileUtil.shouldMake(getForceMake(), outputFile, debug, inputFile)) {
 			TEI2HtmlConverter converter = new TEI2HtmlConverter();
 			HtmlHtml html = converter.createHtmlElement(inputFile);
 			if (html != null) {

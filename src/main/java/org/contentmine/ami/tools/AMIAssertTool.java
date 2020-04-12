@@ -158,7 +158,7 @@ public class AMIAssertTool extends AbstractAMITool {
 			iterateOverSVGFiles();
 		} else {
 			currentDir = cTree.getDirectory();
-			this.currentFile = new File(currentDir, inputBasename);
+			this.currentFile = new File(currentDir, getInputBasename());
 			this.runAssert();
 			
 		}
@@ -170,11 +170,11 @@ public class AMIAssertTool extends AbstractAMITool {
 		Collections.sort(imageDirs);
 		for (int i = 0; i < imageDirs.size(); i++) {
 			currentDir = imageDirs.get(i);
-			System.out.println("======>" + currentDir.getName()+"/"+inputBasename);
-			if (inputBasename== null) {
+			System.out.println("======>" + currentDir.getName() + "/" + getInputBasename());
+			if (getInputBasename() == null) {
 				System.err.println("No input basename");
 			} else {
-				this.currentFile = new File(currentDir, inputBasename);
+				this.currentFile = new File(currentDir, getInputBasename());
 				this.runAssert();
 			}
 		}
@@ -185,11 +185,11 @@ public class AMIAssertTool extends AbstractAMITool {
 		Collections.sort(imageDirs);
 		for (int i = 0; i < imageDirs.size(); i++) {
 			currentDir = imageDirs.get(i);
-			System.out.println("======>" + currentDir.getName()+"/"+inputBasename);
-			if (inputBasename== null) {
+			System.out.println("======>" + currentDir.getName() + "/" + getInputBasename());
+			if (getInputBasename() == null) {
 				System.err.println("No input basename");
 			} else {
-				this.currentFile = new File(currentDir, inputBasename);
+				this.currentFile = new File(currentDir, getInputBasename());
 				this.runAssert();
 			}
 		}

@@ -71,7 +71,7 @@ public class AMIGraphicsTool extends AbstractAMITool {
 
     @Override
 	protected void parseSpecifics() {
-    	if (verbosity.length > 0) {
+    	if (verbosity().length > 0) {
 			System.out.println("caches              " + cacheTypeList);
     	}
 		System.out.println();

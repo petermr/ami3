@@ -310,7 +310,7 @@ public class AMIOCRTool extends AbstractAMITool implements HasImageDir {
 	
 	private void merge() {
 		OcrMerger ocrMerger = new OcrMerger();
-		File imageSubDir = new File(imageDir, inputBasename);
+		File imageSubDir = new File(imageDir, getInputBasename());
 		ocrMerger.addFile(new File(imageSubDir, mergeNames.get(0)));
 		ocrMerger.addFile(new File(imageSubDir, mergeNames.get(1)));
 		ocrMerger.merge();

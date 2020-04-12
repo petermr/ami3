@@ -155,7 +155,7 @@ public class AMIDisplayTool extends AbstractAMITool {
 		for (int i = 0; i < imageDirs.size(); i++) {
 			imageDir = imageDirs.get(i);
 			this.basename = FilenameUtils.getBaseName(imageDir.toString());
-			System.out.println("======>"+imageDir.getName()+"/"+inputBasename);
+			System.out.println("======>" + imageDir.getName() + "/" + getInputBasename());
 
 			if (displayList != null && displayList.size() > 0) {
 				displayFiles();
@@ -207,7 +207,7 @@ public class AMIDisplayTool extends AbstractAMITool {
 
 	private void displayFiles() {
 		HtmlTable table = createDisplayTable();
-		String filename = inputBasename != null ? inputBasename+"."+CTree.HTML : summaryFilename;
+		String filename = getInputBasename() != null ? getInputBasename() + "." + CTree.HTML : summaryFilename;
 		File htmlFile = new File(imageDir, filename);
 		try {
 			XMLUtil.debug(table, htmlFile, 1);
@@ -258,21 +258,21 @@ public class AMIDisplayTool extends AbstractAMITool {
 		 */
 		File displayFile = null;
 		String displayFilename = imageDir+"/"+filename;
-		if (inputBasename == null) {
+		if (getInputBasename() == null) {
 			displayFile = new File(imageDir, filename);
 		} else {
-			File subdir = new File(imageDir, inputBasename);
+			File subdir = new File(imageDir, getInputBasename());
 		    if (filename.startsWith("../")) {
 		    	filename = filename.substring(3);
 		    	displayFile = new File(imageDir, filename);
 				displayFilename = filename;
 		    } else if (filename.startsWith(".")) {
-			    	String imageFilename = inputBasename+filename;
+			    	String imageFilename = getInputBasename() + filename;
 					displayFile = new File(imageDir, imageFilename);
 					displayFilename = imageFilename;
 		    } else {
 		    	displayFile = new File(subdir, filename);
-		    	displayFilename = inputBasename + "/" + filename;
+		    	displayFilename = getInputBasename() + "/" + filename;
 		    }
 		}
 		HtmlTd td = createCell(displayFilename, displayFile);
