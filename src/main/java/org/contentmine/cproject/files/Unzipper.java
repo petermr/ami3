@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.regex.Pattern;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
@@ -58,13 +59,13 @@ public class Unzipper {
 
 	/***
 	 * Extract zipfile to outdir with complete directory structure
-	 * 
+	 *
 	 * @param zipfile
 	 *            Input .zip file
 	 * @param outdir
 	 *            Output directory
-	 * @throws IOException 
-	 * @throws FileNotFoundException 
+	 * @throws IOException
+	 * @throws FileNotFoundException
 	 */
 	public void extract(File zipfile, File outdir) throws IOException {
 		setZipFile(zipfile);
@@ -72,31 +73,52 @@ public class Unzipper {
 		extractZip();
 	}
 
+	/***
+	 * Extract zip stream to outdir with complete directory structure.
+	 * 
+	 * @param inputStream
+	 *            Input zip stream
+	 * @param outdir
+	 *            Output directory
+	 * @throws IOException 
+	 */
+	public void extract(InputStream inputStream, File outdir) throws IOException {
+		setOutDir(outdir);
+		extractZip(inputStream);
+	}
+
 	public void extractZip() throws FileNotFoundException, IOException {
-		zin = new ZipInputStream(new FileInputStream(zipFile));
-		ZipEntry entry;
-		File file = null;
-		while ((entry = zin.getNextEntry()) != null) {
+		try (FileInputStream fin = new FileInputStream(zipFile)) {
+			extractZip(fin);
+		}
+	}
+
+	private void extractZip(InputStream in) throws IOException {
+		zin = new ZipInputStream(in);
+		try (ZipInputStream zipp = zin) { // auto-close
+			ZipEntry entry;
+			File file = null;
+			while ((entry = zin.getNextEntry()) != null) {
 //			LOG.debug("entry "+entry);
-			String name = entry.getName();
-			String zipRoot1 = dirpart(name);
-			if (zipRoot1 != null) {
-				if (zipRootName == null) {
-					zipRootName = zipRoot1;
-				} else if (zipRootName.equals(zipRoot1)) {
-					
-				} else {
-					throw new RuntimeException("duplicate zipRoot");
+				String name = entry.getName();
+				String zipRoot1 = dirpart(name);
+				if (zipRoot1 != null) {
+					if (zipRootName == null) {
+						zipRootName = zipRoot1;
+					} else if (zipRootName.equals(zipRoot1)) {
+
+					} else {
+						throw new RuntimeException("duplicate zipRoot");
+					}
+				}
+				if (matches(name)) {
+					file = extractFile(entry, name);
+				}
+				if (entry.isDirectory()) {
+//				LOG.debug("dir "+entry);
 				}
 			}
-			if (matches(name)) {
-				file = extractFile(entry, name);
-			}
-			if (entry.isDirectory()) {
-//				LOG.debug("dir "+entry);
-			}
 		}
-		zin.close();
 	}
 	
 	private boolean matches(String name) {
