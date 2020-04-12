@@ -69,23 +69,11 @@ import java.util.concurrent.Callable;
 				CommandLine.HelpCommand.class,
 				AutoComplete.GenerateCompletion.class,
 		})
-public class AMI implements Callable<Void> {
+public class AMI implements Runnable {
 	private static final Logger LOG = Logger.getLogger(AMI.class);
 
 	static {
 		LOG.setLevel(Level.DEBUG);
-	}
-	@Spec
-	CommandSpec spec;
-
-	static class ProjectOrTreeOptions {
-		@ArgGroup(exclusive = false, multiplicity = "0..1",
-				heading = "CProject Options:%n", order = 10)
-		CProjectOptions cProjectOptions = new CProjectOptions();
-
-		@ArgGroup(exclusive = false, multiplicity = "0..1",
-				heading = "CTree Options:%n", order = 20)
-		CTreeOptions cTreeOptions = new CTreeOptions();
 	}
 
 	@ArgGroup(exclusive = true, heading = "", order = 9)
@@ -97,13 +85,16 @@ public class AMI implements Callable<Void> {
 	@ArgGroup(validate = false, heading = "Logging Options:%n", order = 70)
 	LoggingOptions loggingOptions = new LoggingOptions();
 
-	protected void setLogging() {
-		loggingOptions.setLogging();
-	}
+	@Spec
+	CommandSpec spec;
 
 	@Override
-	public Void call() {
+	public void run() {
 		throw new ParameterException(spec.commandLine(), "Missing required subcommand");
+	}
+
+	protected void setLogging() {
+		loggingOptions.setLogging();
 	}
 
 	public static void main(String... args) {
@@ -112,7 +103,17 @@ public class AMI implements Callable<Void> {
 		System.exit(cmd.execute(args));
 	}
 
-	protected static class CProjectOptions {
+	static class ProjectOrTreeOptions {
+		@ArgGroup(exclusive = false, multiplicity = "0..1",
+				heading = "CProject Options:%n", order = 10)
+		CProjectOptions cProjectOptions = new CProjectOptions();
+
+		@ArgGroup(exclusive = false, multiplicity = "0..1",
+				heading = "CTree Options:%n", order = 20)
+		CTreeOptions cTreeOptions = new CTreeOptions();
+	}
+
+	static class CProjectOptions {
 		@Option(names = {"-p", "--cproject"}, paramLabel = "DIR",
 				description = "The CProject (directory) to process. This can be (a) a child directory of cwd (current working directory (b) cwd itself (use -p .) or (c) an absolute filename."
 						+ " No defaults. The cProject name is the basename of the file."
@@ -120,26 +121,26 @@ public class AMI implements Callable<Void> {
 		protected String cProjectDirectory = null;
 
 		protected static class TreeOptions {
-			@Option(names = {"--XT", "--excludetree"}, paramLabel = "DIR", order = 13,
-					arity = "1..*",
-					description = "Exclude the CTrees in the list. (only works with --cproject). "
-							+ "Currently must be explicit but we'll add globbing later."
-			)
-			protected String[] excludeTrees;
-
-			@Option(names = {"--IT", "--includetree"}, paramLabel = "DIR", order = 12,
+			@Option(names = {"-r", "--includetree"}, paramLabel = "DIR", order = 12,
 					arity = "1..*",
 					description = "Include only the CTrees in the list. (only works with --cproject). "
 							+ "Currently must be explicit but we'll add globbing later."
 			)
 			protected String[] includeTrees;
+
+			@Option(names = {"-R", "--excludetree"}, paramLabel = "DIR", order = 13,
+					arity = "1..*",
+					description = "Exclude the CTrees in the list. (only works with --cproject). "
+							+ "Currently must be explicit but we'll add globbing later."
+			)
+			protected String[] excludeTrees;
 		}
 
 		@ArgGroup(exclusive = true, multiplicity = "0..1", order = 11, heading = "")
 		TreeOptions treeOptions = new TreeOptions();
 	}
 
-	protected static class CTreeOptions {
+	static class CTreeOptions {
 		@Option(names = {"-t", "--ctree"}, paramLabel = "DIR",
 				description = "The CTree (directory) to process. This can be (a) a child directory of cwd (current working directory, usually cProject) (b) cwd itself, usually cTree (use -t .) or (c) an absolute filename."
 						+ " No defaults. The cTree name is the basename of the file."
@@ -148,20 +149,20 @@ public class AMI implements Callable<Void> {
 
 		protected static class BaseOptions {
 
-			@Option(names = {"--XB", "--excludebase"}, paramLabel = "PATH",
-					order = 22,
-					arity = "1..*",
-					description = "Exclude child files of cTree (only works with --ctree). "
-							+ "Currently must be explicit or with trailing percent for truncated glob."
-			)
-			protected String[] excludeBase;
-
-			@Option(names = {"--IB", "--includebase"}, paramLabel = "PATH", order = 23,
+			@Option(names = {"-b", "--includebase"}, paramLabel = "PATH", order = 22,
 					arity = "1..*",
 					description = "Include child files of cTree (only works with --ctree). "
 							+ "Currently must be explicit or with trailing percent for truncated glob."
 			)
 			protected String[] includeBase;
+
+			@Option(names = {"-B", "--excludebase"}, paramLabel = "PATH",
+					order = 23,
+					arity = "1..*",
+					description = "Exclude child files of cTree (only works with --ctree). "
+							+ "Currently must be explicit or with trailing percent for truncated glob."
+			)
+			protected String[] excludeBase;
 		}
 
 		@ArgGroup(exclusive = true, multiplicity = "0..1", heading = "", order = 21)
@@ -170,29 +171,28 @@ public class AMI implements Callable<Void> {
 
 	static class GeneralOptions {
 		@Option(names = {"-i", "--input"}, paramLabel = "FILE",
-				description = "(A) input filename (no defaults)"
+				description = "Input filename (no defaults)"
 		)
 		protected String input = null;
 
-		@Option(names = {"--inputname"}, paramLabel = "PATH",
+		@Option(names = {"-n", "--inputname"}, paramLabel = "PATH",
 				description = "User's basename for inputfiles (e.g. foo/bar/<basename>.png) or directories. By default this is often computed by AMI."
 						+ " However some files will have variable names (e.g. output of AMIImage) or from foreign sources or applications"
 		)
 		protected String inputBasename;
 
-		@Option(names = {"--inputnamelist"}, paramLabel = "PATH",
+		@Option(names = {"-L", "--inputnamelist"}, paramLabel = "PATH",
 				arity = "1..*",
 				description = "List of inputnames; will iterate over them, essentially compressing multiple commands into one. Experimental."
 		)
 		protected List<String> inputBasenameList = null;
 
-		@Option(names = {"--forcemake"},
-				arity = "0",
+		@Option(names = {"-f", "--forcemake"},
 				description = "Force 'make' regardless of file existence and dates."
 		)
 		protected Boolean forceMake = false;
 
-		@Option(names = {"--maxTrees"}, paramLabel = "COUNT",
+		@Option(names = {"-N", "--maxTrees"}, paramLabel = "COUNT",
 				description = "Quit after given number of trees; null means infinite.")
 		protected Integer maxTreeCount = null;
 	}
@@ -242,7 +242,7 @@ public class AMI implements Callable<Void> {
 	}
 
 	static class ShortErrorMessageHandler implements IParameterExceptionHandler {
-
+		@Override
 		public int handleParseException(ParameterException ex, String[] args) {
 			CommandLine cmd = ex.getCommandLine();
 			PrintWriter writer = cmd.getErr();
