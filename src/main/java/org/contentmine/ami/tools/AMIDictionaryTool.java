@@ -361,6 +361,11 @@ public class AMIDictionaryTool extends AbstractAMITool {
     
     @Mixin CProjectTreeMixin proTree;
 
+	@Option(names = {"--testString"},
+			description = {
+					"String input for debugging; semantics depend on task"})
+	protected String testString = null;
+
     public final static List<String> WIKIPEDIA_STOP_WORDS = Arrays.asList(new String[]{
         	"citation needed",
         	"full citation needed"

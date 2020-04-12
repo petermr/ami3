@@ -48,10 +48,16 @@ public class AMIRegexTool extends AbstractAMITool {
     		arity = "1",
             description = "xpath for sectioned documents")
     private String xpath = null;
-	
+
+	@Option(names = {"-o", "--output"},
+			paramLabel = "output",
+			description = "Output filename (no defaults)"
+	)
+	protected String output = null;
 
 
-    /** used by some non-picocli calls
+
+	/** used by some non-picocli calls
      * obsolete it
      * @param cProject
      */

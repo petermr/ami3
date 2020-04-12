@@ -91,6 +91,18 @@ public class AMIMakeProjectTool extends AbstractAMITool {
     		)
     private List<String> omitRegexList;
 
+	@Option(names = {"--rawfiletypes"},
+			arity = "1..*",
+			split = ",",
+			description = "Suffixes of included files (${COMPLETION-CANDIDATES}): "
+					+ "can be concatenated with commas ")
+	protected List<AMIDictionaryTool.RawFileFormat> rawFileFormats = new ArrayList<>();
+
+	@Option(names = {"--logfile"},
+			description = "(A) log file for each tree/file/image analyzed. "
+	)
+	public String logfile;
+
 	public AMIMakeProjectTool() {
 	}
 	
@@ -107,6 +119,8 @@ public class AMIMakeProjectTool extends AbstractAMITool {
     	addLoggingLevel(Level.INFO, "omit                "+omitRegexList);
     	System.out.println("compress            "+compress);
     	System.out.println("omit                "+omitRegexList);
+		System.out.println("file types          " + rawFileFormats);
+		System.out.println("logfile             " + logfile);
     }
 
 	protected void runSpecifics() {

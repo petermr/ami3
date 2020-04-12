@@ -115,6 +115,10 @@ public class AMIAssertTool extends AbstractAMITool {
     	new AMIAssertTool().runCommands(args);
     }
 
+	@Option(names = {"--subdirectorytype"},
+			description = "Use subdirectory of cTree (${COMPLETION-CANDIDATES})")
+	protected SubDirectoryType subdirectoryType;
+
     @Override
 	protected void parseSpecifics() {
     	if (assertType == null) {
@@ -123,6 +127,7 @@ public class AMIAssertTool extends AbstractAMITool {
     	messageString = String.join(" ", message);
     	xpath = unescape(xpath);
 		System.out.println("currentDirname      " + currentDirname);
+		System.out.println("subdirectoryType    " + subdirectoryType);
 		System.out.println("fail                " + fail);
 		System.out.println("currentFilename     " + currentFilename);
 		System.out.println("heights             " + heights);
