@@ -1,5 +1,6 @@
 package org.contentmine.ami.tools;
 
+import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import picocli.AutoComplete;
@@ -98,6 +99,7 @@ public class AMI implements Runnable {
 	}
 
 	public static void main(String... args) {
+		BasicConfigurator.configure(); // TBD not needed?
 		CommandLine cmd = new CommandLine(new AMI());
 		cmd.setParameterExceptionHandler(new ShortErrorMessageHandler());
 		System.exit(cmd.execute(args));
