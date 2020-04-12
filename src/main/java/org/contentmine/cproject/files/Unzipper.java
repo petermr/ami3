@@ -7,6 +7,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 import java.util.regex.Pattern;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
@@ -29,11 +30,14 @@ public class Unzipper {
 	private Pattern includePattern;
 	private Pattern excludePattern;
 	private String zipRootName;
-//	private List<File> zipRootList;
+	private List<File> unzippedList;
 
 	private void extractFile(String name) throws IOException {
 		byte[] buffer = new byte[BUFFER_SIZE];
 		File outfile = new File(outDir, name);
+		if (unzippedList != null) {
+			unzippedList.add(outfile);
+		}
 		if (!outfile.isDirectory()) {
 			BufferedOutputStream out = new BufferedOutputStream(new FileOutputStream(outfile));
 			int count = -1;
@@ -189,4 +193,19 @@ public class Unzipper {
 		return zipRootName;
 	}
 
+	/**
+	 * Returns the list of unzipped files, if this list was set prior to extracting the zip file or stream.
+	 * @return the list of unzipped files, or {@code null}
+	 */
+	public List<File> getUnzippedList() {
+		return unzippedList;
+	}
+
+	/**
+	 * Sets the list where to collect the unzipped files; must be set prior to extracting the zip file or stream.
+	 * @param unzippedList the list to add the unzipped files to; if {@code null} then unzipped files are not collected
+	 */
+	public void setUnzippedList(List<File> unzippedList) {
+		this.unzippedList = unzippedList;
+	}
 }

@@ -1,15 +1,28 @@
 package org.contentmine.ami.tools;
 
 import java.io.File;
+import java.nio.file.FileVisitResult;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.SimpleFileVisitor;
+import java.nio.file.attribute.BasicFileAttributes;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.AMICleanTool;
 import org.contentmine.cproject.files.CProject;
+import org.contentmine.cproject.files.DirectoryDeleter;
+import org.contentmine.cproject.files.Unzipper;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.junit.Test;
 
 import junit.framework.Assert;
+import picocli.CommandLine;
+
+import static java.nio.file.FileVisitResult.CONTINUE;
+import static org.junit.Assert.*;
 
 /** test cleaning.
  * 
@@ -27,19 +40,58 @@ public class AMICleanTest {
 		new AMICleanTool().runCommands(new String[]{});
 	}
 
-	@Test
-	/** 
+	/**
 	 * 
 	 */
+	@Test
 	public void testCleanForestPlotsSmall() throws Exception {
-		String args = 
-				"-p /Users/pm286/workspace/uclforest/forestplotssmall"
-				+ " --dir svg/ pdfimages/ --file scholarly.html"
-				;
-		AMICleanTool amiCleaner = new AMICleanTool();
-		amiCleaner.runCommands(args);
-		CProject cProject = amiCleaner.getCProject();
-		Assert.assertNotNull("CProject not null", cProject);
+		Unzipper unzipper = new Unzipper();
+		Path temp = Files.createTempDirectory("ami-forestplotssmall");
+		System.out.println(temp);
+		try {
+			unzipper.setUnzippedList(new ArrayList<>());
+			unzipper.extract(getClass().getResourceAsStream("/uclforest/forestplotssmall.zip"), temp.toFile());
+
+			// TODO count all files that are to be deleted
+			System.out.println("BEFORE");
+			unzipper.getUnzippedList().forEach(System.out::println);
+			String args =
+					"-p " + temp.toFile().getAbsolutePath()
+							+ " -vv clean"
+							+ " --dir svg/ pdfimages/ --file scholarly.html";
+			CommandLine cmd = new CommandLine(new AMI());
+			cmd.execute(args.split(" "));
+			AMICleanTool amiCleaner = (AMICleanTool) cmd.getParseResult().subcommand().commandSpec().userObject();
+			CProject cProject = amiCleaner.getCProject();
+			Assert.assertNotNull("CProject not null", cProject);
+
+			// TODO count all remaining files and assert the targers were deleted
+			System.out.println("AFTER");
+			List<File> after = new ArrayList<>();
+			Files.walkFileTree(temp, new SimpleFileVisitor<Path>() {
+				// Invoke the pattern matching method on each file.
+				@Override
+				public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) {
+					after.add(file.toFile());
+					System.out.println(file.toFile());
+					return CONTINUE;
+				}
+
+				// Invoke the pattern matching method on each directory.
+				@Override
+				public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) {
+					after.add(dir.toFile());
+					System.out.println(dir.toFile());
+					return CONTINUE;
+				}
+			});
+			unzipper.getUnzippedList().removeAll(after);
+			System.out.println("DIFF:");
+			unzipper.getUnzippedList().forEach(System.out::println);
+			assertFalse(unzipper.getUnzippedList().isEmpty()); // the clean tool should have made some difference
+		} finally {
+			Files.walkFileTree(temp, new DirectoryDeleter());
+		}
 	}
 
 	@Test
