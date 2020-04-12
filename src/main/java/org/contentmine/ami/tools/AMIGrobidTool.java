@@ -25,6 +25,7 @@ import java.io.IOException;
  */
 @Command(
 		name = "grobid",
+		sortOptions = false, // show in definition order
 		description = {
 				"Runs grobid.",
 				"Internally, this uses:%n"
