@@ -141,7 +141,6 @@ public class AMI implements Callable<Void> {
 
 	protected static class CTreeOptions {
 		@Option(names = {"-t", "--ctree"}, paramLabel = "DIR",
-				arity = "0..1",
 				description = "The CTree (directory) to process. This can be (a) a child directory of cwd (current working directory, usually cProject) (b) cwd itself, usually cTree (use -t .) or (c) an absolute filename."
 						+ " No defaults. The cTree name is the basename of the file."
 		)
