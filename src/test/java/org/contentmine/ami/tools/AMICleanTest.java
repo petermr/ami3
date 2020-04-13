@@ -55,13 +55,13 @@ public class AMICleanTest {
 			// TODO count all files that are to be deleted
 			System.out.println("BEFORE");
 			unzipper.getUnzippedList().forEach(System.out::println);
-			String args =
-					"-p " + temp.toFile().getAbsolutePath()
+
+			String[] args =
+					("-p " + temp.toFile().getAbsolutePath()
 							+ " -vv clean"
-							+ " --dir svg/ pdfimages/ --file scholarly.html";
-			CommandLine cmd = new CommandLine(new AMI());
-			cmd.execute(args.split(" "));
-			AMICleanTool amiCleaner = (AMICleanTool) cmd.getParseResult().subcommand().commandSpec().userObject();
+							+ " --dir svg/ pdfimages/ --file scholarly.html").split(" ");
+			AMICleanTool amiCleaner = AMI.execute(AMICleanTool.class, args);
+
 			CProject cProject = amiCleaner.getCProject();
 			Assert.assertNotNull("CProject not null", cProject);
 
@@ -99,8 +99,8 @@ public class AMICleanTest {
 	 * tests cleaning directories in a single CTree.
 	 */
 	public void testCleanSingleTree() {
-		String cmd = "-t /Users/pm286/workspace/uclforest/dev/higgins --dir pdfimages";
-		new AMICleanTool().runCommands(cmd);
+String cmd = "-t /Users/pm286/workspace/uclforest/dev/higgins clean --dir pdfimages";
+AMI.main(cmd.split(" "));
 	}
 
 	@Test

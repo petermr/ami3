@@ -99,10 +99,31 @@ public class AMI implements Runnable {
 	}
 
 	public static void main(String... args) {
+		System.exit(createCommandLine().execute(args));
+	}
+
+	/**
+	 * FOR TESTING PURPOSES.
+	 * <p>
+	 * Executes {@code ami} with the specified command line arguments, and returns the
+	 * specified {@code ami} subcommand.
+	 * </p>
+	 * @param subcommandClass the class of the {@code @Command}-annotated subcommand object to return.
+	 * @param args the command line arguments: optional global options followed by a required subcommand name and optional subcommand options
+	 * @param <T> the generic type of the object to return
+	 * @return the invoked subcommand instance
+	 */
+	static <T> T execute(Class<T> subcommandClass, String... args) {
+		CommandLine cmd = createCommandLine();
+		cmd.execute(args);
+		return (T) cmd.getParseResult().subcommand().commandSpec().userObject();
+	}
+
+	private static CommandLine createCommandLine() {
 		BasicConfigurator.configure(); // TBD not needed?
 		CommandLine cmd = new CommandLine(new AMI());
 		cmd.setParameterExceptionHandler(new ShortErrorMessageHandler());
-		System.exit(cmd.execute(args));
+		return cmd;
 	}
 
 	static class ProjectOrTreeOptions {
