@@ -6,6 +6,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.util.List;
 import java.util.regex.Pattern;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
@@ -28,11 +30,14 @@ public class Unzipper {
 	private Pattern includePattern;
 	private Pattern excludePattern;
 	private String zipRootName;
-//	private List<File> zipRootList;
+	private List<File> unzippedList;
 
 	private void extractFile(String name) throws IOException {
 		byte[] buffer = new byte[BUFFER_SIZE];
 		File outfile = new File(outDir, name);
+		if (unzippedList != null) {
+			unzippedList.add(outfile);
+		}
 		if (!outfile.isDirectory()) {
 			BufferedOutputStream out = new BufferedOutputStream(new FileOutputStream(outfile));
 			int count = -1;
@@ -58,13 +63,13 @@ public class Unzipper {
 
 	/***
 	 * Extract zipfile to outdir with complete directory structure
-	 * 
+	 *
 	 * @param zipfile
 	 *            Input .zip file
 	 * @param outdir
 	 *            Output directory
-	 * @throws IOException 
-	 * @throws FileNotFoundException 
+	 * @throws IOException
+	 * @throws FileNotFoundException
 	 */
 	public void extract(File zipfile, File outdir) throws IOException {
 		setZipFile(zipfile);
@@ -72,31 +77,52 @@ public class Unzipper {
 		extractZip();
 	}
 
+	/***
+	 * Extract zip stream to outdir with complete directory structure.
+	 * 
+	 * @param inputStream
+	 *            Input zip stream
+	 * @param outdir
+	 *            Output directory
+	 * @throws IOException 
+	 */
+	public void extract(InputStream inputStream, File outdir) throws IOException {
+		setOutDir(outdir);
+		extractZip(inputStream);
+	}
+
 	public void extractZip() throws FileNotFoundException, IOException {
-		zin = new ZipInputStream(new FileInputStream(zipFile));
-		ZipEntry entry;
-		File file = null;
-		while ((entry = zin.getNextEntry()) != null) {
+		try (FileInputStream fin = new FileInputStream(zipFile)) {
+			extractZip(fin);
+		}
+	}
+
+	private void extractZip(InputStream in) throws IOException {
+		zin = new ZipInputStream(in);
+		try (ZipInputStream zipp = zin) { // auto-close
+			ZipEntry entry;
+			File file = null;
+			while ((entry = zin.getNextEntry()) != null) {
 //			LOG.debug("entry "+entry);
-			String name = entry.getName();
-			String zipRoot1 = dirpart(name);
-			if (zipRoot1 != null) {
-				if (zipRootName == null) {
-					zipRootName = zipRoot1;
-				} else if (zipRootName.equals(zipRoot1)) {
-					
-				} else {
-					throw new RuntimeException("duplicate zipRoot");
+				String name = entry.getName();
+				String zipRoot1 = dirpart(name);
+				if (zipRoot1 != null) {
+					if (zipRootName == null) {
+						zipRootName = zipRoot1;
+					} else if (zipRootName.equals(zipRoot1)) {
+
+					} else {
+						throw new RuntimeException("duplicate zipRoot");
+					}
+				}
+				if (matches(name)) {
+					file = extractFile(entry, name);
+				}
+				if (entry.isDirectory()) {
+//				LOG.debug("dir "+entry);
 				}
 			}
-			if (matches(name)) {
-				file = extractFile(entry, name);
-			}
-			if (entry.isDirectory()) {
-//				LOG.debug("dir "+entry);
-			}
 		}
-		zin.close();
 	}
 	
 	private boolean matches(String name) {
@@ -167,4 +193,19 @@ public class Unzipper {
 		return zipRootName;
 	}
 
+	/**
+	 * Returns the list of unzipped files, if this list was set prior to extracting the zip file or stream.
+	 * @return the list of unzipped files, or {@code null}
+	 */
+	public List<File> getUnzippedList() {
+		return unzippedList;
+	}
+
+	/**
+	 * Sets the list where to collect the unzipped files; must be set prior to extracting the zip file or stream.
+	 * @param unzippedList the list to add the unzipped files to; if {@code null} then unzipped files are not collected
+	 */
+	public void setUnzippedList(List<File> unzippedList) {
+		this.unzippedList = unzippedList;
+	}
 }

@@ -76,24 +76,24 @@ public class GrobidRunner extends CommandRunner {
 		private static final String GROBID_VERSION = System.getProperty("grobid.version", GROBID_DEFAULT_VERSION);
 		private final static String JAVA_DEFAULT_EXE = System.getProperty("java.home") + "/bin/java";
 
-		@Option(names = {"--exe", "--grobid-exe-option"},
-				defaultValue = "processFullText",
-				description = {
-						"The value to pass to the Grobid `-exe` option. Valid values: ${COMPLETION-CANDIDATES}.",
-				})
-		ExeOption exeOption;
-
-		@Option(names = {"--grobid-version"}, paramLabel = "<X.Y.Z>",
+		@Option(names = {"-G", "--grobid-version"}, paramLabel = "<X.Y.Z>",
 				description = "The grobid version to use.")
 		String grobidVersion = GROBID_VERSION;
 
-		@Option(names = {"--grobid-install-dir"}, paramLabel = "<PATH>",
+		@Option(names = {"-g", "--grobid-install-dir"}, paramLabel = "<PATH>",
 				description = {
 						"Optionally, specify the location where grobid is installed. " +
 								"If not specified, the value is derived from the Grobid version as follows:",
 						"System.getProperty(\"user.home\") + \"/workspace/grobid/grobid-\" + <grobid-version>"
 				})
 		String grobidInstallLocation;
+
+		@Option(names = {"-X", "--exe", "--grobid-exe-option"},
+				defaultValue = "processFullText",
+				description = {
+						"The value to pass to the Grobid `-exe` option. Valid values: ${COMPLETION-CANDIDATES}.",
+				})
+		ExeOption exeOption;
 
 		@Option(names = {"--grobid-jar"}, paramLabel = "<PATH>",
 				description = "Optionally, specify the location of the Grobid jar. " +

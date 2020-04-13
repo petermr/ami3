@@ -361,6 +361,11 @@ public class AMIDictionaryTool extends AbstractAMITool {
     
     @Mixin CProjectTreeMixin proTree;
 
+	@Option(names = {"--testString"},
+			description = {
+					"String input for debugging; semantics depend on task"})
+	protected String testString = null;
+
     public final static List<String> WIKIPEDIA_STOP_WORDS = Arrays.asList(new String[]{
         	"citation needed",
         	"full citation needed"
@@ -419,9 +424,8 @@ public class AMIDictionaryTool extends AbstractAMITool {
 //        dictionaryData.href        = href;
         dictionaryData.hrefCols    = hrefCols;
         dictionaryData.informat    = informat;
-        dictionaryData.input       = input;
+        dictionaryData.input       = input();
         dictionaryData.linkCol     = linkCol;
-        dictionaryData.log4j       = log4j;
         dictionaryData.nameCol     = nameCol;
         dictionaryData.operation   = operation;
         dictionaryData.outformats  = outformats;
@@ -469,17 +473,17 @@ public class AMIDictionaryTool extends AbstractAMITool {
 		inputList = new ArrayList<>();
 		for (String templateName : templateNames) {
 			createInput(templateName);
-			inputList.add(input);
+			inputList.add(input());
 		}
-		input = null;
+		input(null);
 	} 
 
 	private String createInput(String templateName) {
-		input = "https://en.wikipedia.org/w/index.php?title=Template:" + templateName;
+		input("https://en.wikipedia.org/w/index.php?title=Template:" + templateName);
 		if (WikiFormat.mwk.equals(wptype)) {
-			input = input + "&action=edit";
+			input(input() + "&action=edit");
 		}
-		return input;
+		return input();
 	}
 
 	@Override
@@ -591,19 +595,19 @@ public class AMIDictionaryTool extends AbstractAMITool {
 	protected InputStream openInputStream() {
 		InputStream inputStream = null;
 		if (currentTemplateName != null) {
-			input = createInput(currentTemplateName);
+			input(createInput(currentTemplateName));
 		}
-		if (input != null) {
+		if (input() != null) {
 			try {
-				if (input.startsWith("http")) {
-					String output = new CurlDownloader().setUrlString(input).run();
+				if (input().startsWith("http")) {
+					String output = new CurlDownloader().setUrlString(input()).run();
 					inputStream = new ByteArrayInputStream(output.getBytes());
 //					System.out.println(">> "+output);
 				} else {
 					inputStream = super.openInputStream();
 				}
 			} catch (IOException e) {
-				addLoggingLevel(Level.ERROR, "cannot read/open stream: "+input);
+				addLoggingLevel(Level.ERROR, "cannot read/open stream: " + input());
 			}
 		}
 		return inputStream;
@@ -614,7 +618,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 		if (templateNames != null) {
 			for (String templateName : templateNames) {
 				currentTemplateName = templateName;
-				input = createDictionaryName(currentTemplateName);
+				input(createDictionaryName(currentTemplateName));
 				createDictionary();
 			}
 
@@ -628,10 +632,10 @@ public class AMIDictionaryTool extends AbstractAMITool {
 		if (dictionaryTopname == null) {
 			throw new RuntimeException("no directory given");
 		}
-		if (input == null) {
+		if (input() == null) {
 			throw new RuntimeException("no input given");
 		}
-		File fileroot = new File(dictionaryTopname, input);
+		File fileroot = new File(dictionaryTopname, input());
 		dictionaryTopname = dictionaryTopname == null ?
 				new File(fileroot, wptype.toString()).toString() : dictionaryTopname;
 		InputStream inputStream = openInputStream();
@@ -672,7 +676,7 @@ public class AMIDictionaryTool extends AbstractAMITool {
 			}
 		}
     	synchroniseTermsAndNames();
-    	dictionaryElement = DefaultAMIDictionary.createDictionaryWithTitle(/*dictionaryList.get(0)*/input);
+    	dictionaryElement = DefaultAMIDictionary.createDictionaryWithTitle(/*dictionaryList.get(0)*/input());
     	
     	writeNamesAndLinks();
 	}
@@ -1173,11 +1177,11 @@ public class AMIDictionaryTool extends AbstractAMITool {
 //		System.out.println("href          "+href);
 		System.out.println("hrefCols      "+hrefCols);
 		System.out.println("inputs        "+inputList);
-		System.out.println("input         "+input);
+		System.out.println("input         "+input());
 		System.out.println("informat      "+informat);
 		System.out.println("dictInformat  "+dictInformat);
 		System.out.println("linkCol       "+linkCol);
-		System.out.println("log4j         "+makeArrayList(log4j));
+		//System.out.println("log4j         "+makeArrayList(log4j));
 		System.out.println("nameCol       "+nameCol);
 		System.out.println("operation     "+operation);
 		System.out.println("outformats    "+makeArrayList(outformats));

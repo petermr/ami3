@@ -48,10 +48,16 @@ public class AMIRegexTool extends AbstractAMITool {
     		arity = "1",
             description = "xpath for sectioned documents")
     private String xpath = null;
-	
+
+	@Option(names = {"-o", "--output"},
+			paramLabel = "output",
+			description = "Output filename (no defaults)"
+	)
+	protected String output = null;
 
 
-    /** used by some non-picocli calls
+
+	/** used by some non-picocli calls
      * obsolete it
      * @param cProject
      */
@@ -70,7 +76,7 @@ public class AMIRegexTool extends AbstractAMITool {
 	protected void parseSpecifics() {
     	setDefaults();
 		System.out.println("context             " + contextList);
-		System.out.println("input               " + input);
+		System.out.println("input               " + input());
 		System.out.println("output              " + output);
 		System.out.println("regex               " + regexList);
 		System.out.println("xpath               " + xpath);
@@ -78,7 +84,7 @@ public class AMIRegexTool extends AbstractAMITool {
 	}
 
 	private void setDefaults() {
-		input = "scholarly.html";
+		input("scholarly.html");
     	output = "output.xml";
 	}
 
@@ -106,7 +112,7 @@ public class AMIRegexTool extends AbstractAMITool {
 		String args = 
 				""
 				+ "-q " + cTree.getDirectory()
-				+ " -i " + input
+				+ " -i " + input()
 				+ " -o "+output
 				+ " --context " + contextList.get(0) + " " + contextList.get(1)
 				+ " --r.regex " + regexS;

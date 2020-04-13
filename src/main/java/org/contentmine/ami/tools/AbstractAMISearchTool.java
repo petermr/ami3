@@ -123,6 +123,10 @@ public abstract class AbstractAMISearchTool extends AbstractAMITool {
             description = " lookup wikidata biblographic object")
     protected Boolean wikidataBiblio = false;
 
+	@Option(names = {"--oldstyle"},
+			description = "(A) use oldstyle style of processing (project based) for unconverted tools; new style is per tree")
+	protected boolean oldstyle = true;
+
 	protected AbstractSearchArgProcessor abstractSearchArgProcessor;
 	protected WordCollectionFactory wordCollectionFactory;
 	

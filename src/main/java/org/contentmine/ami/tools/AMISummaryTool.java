@@ -3,7 +3,6 @@ package org.contentmine.ami.tools;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import org.apache.log4j.Level;
@@ -17,7 +16,6 @@ import com.google.common.collect.HashMultiset;
 import com.google.common.collect.Multiset;
 
 import nu.xom.Element;
-import picocli.CommandLine;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 /**
@@ -191,7 +189,7 @@ public class AMISummaryTool extends AbstractAMITool {
 
 	private void summarize(String plugin, String facet, SummaryType summaryType) {
 		LOG.debug(">> "+plugin+"/"+facet);
-		File summaryFile = new File(cProjectDirectory, plugin + "." + facet +"." + summaryType + "." + "xml");
+		File summaryFile = new File(getCProjectDirectory(), plugin + "." + facet +"." + summaryType + "." + "xml");
 		if (!summaryFile.exists()) {
 			LOG.warn("no summary file: " + summaryFile);
 			return;

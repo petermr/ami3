@@ -423,10 +423,10 @@ public class AMIForestPlotTool extends AbstractAMITool implements HasImageDir {
 			createForestPlotFromImage(imageFile);
 		}
 		if (table != null) {
-			if (inputBasename == null) {
+			if (getInputBasename() == null) {
 				throw new RuntimeException("Must give inputbase");
 			}
-			File svgFile = new File(new File(imageDir, inputBasename), table);
+			File svgFile = new File(new File(imageDir, getInputBasename()), table);
 			if (!svgFile.exists()) {
 				LOG.warn("no file>"+svgFile);
 			} else {

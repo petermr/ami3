@@ -256,7 +256,7 @@ public class AMISectionTool extends AbstractAMITool {
 		processedTree = true;
 		sectionsDir = cTree.getSectionsDirectory();
 		boolean debug = false;
-		if (!CMFileUtil.shouldMake(forceMake, sectionsDir, debug, sectionsDir)) {
+		if (!CMFileUtil.shouldMake(getForceMake(), sectionsDir, debug, sectionsDir)) {
 			if (debug) LOG.debug("skipped: "+sectionsDir);
 			processedTree = false;
 			return processedTree;

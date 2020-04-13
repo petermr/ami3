@@ -236,7 +236,7 @@ public class AMISearchTool extends AbstractAMISearchTool {
 		/** this uses SearchArgProcessor.runSearch()
 		 * this should be called directly.
 		 */
-		if (verbosity.length > 0) {
+		if (verbosity().length > 0) {
 			LOG.debug("************************* search "+cmd);
 		}
 		runLegacyCommandProcessor(cmd);

@@ -131,6 +131,11 @@ public class AMISVGTool extends AbstractAMITool {
     		description = "output pages with SVG vectors to <directory>")
     private String vectorDirname;
 
+	@Option(names = {"--logfile"},
+			description = "(A) log file for each tree/file/image analyzed. "
+	)
+	public String logfile;
+
     public static Pattern PAGE_EXTRACT = Pattern.compile(".*\\/fulltext\\-page\\.(\\d+)\\.svg");
 
 	private List<Pattern> patternList;
@@ -164,6 +169,7 @@ public class AMISVGTool extends AbstractAMITool {
 		System.out.println("tidyList             " + tidyList);
 		System.out.println("vectorLogfilename    " + vectorLog);
 		System.out.println("vectorDir            " + vectorDirname);
+		System.out.println("logfile             " + logfile);
 		System.out.println();
 	}
 

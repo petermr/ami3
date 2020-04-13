@@ -183,6 +183,19 @@ public class AMIDownloadTool extends AbstractAMITool {
             description = "site to search")
     private SearchSite site = null;
 
+	@Option(names = {"--rawfiletypes"},
+			arity = "1..*",
+			split = ",",
+			description = "Suffixes of included files (${COMPLETION-CANDIDATES}): "
+					+ "can be concatenated with commas ")
+	protected List<RawFileFormat> rawFileFormats = new ArrayList<>();
+
+	@Option(names = {"-o", "--output"},
+			paramLabel = "output",
+			description = "Output filename (no defaults)"
+	)
+	protected String output = null;
+
     private File dictionaryFile;
 	private InputStream dictionaryInputStream;
 
@@ -203,7 +216,6 @@ public class AMIDownloadTool extends AbstractAMITool {
     public static void main(String[] args) throws Exception {
     	new AMIDownloadTool().runCommands(args);
     }
-
 
     @Override
 	protected boolean parseGenerics() {
@@ -239,6 +251,7 @@ public class AMIDownloadTool extends AbstractAMITool {
 		System.out.println("query              " + queryList);
 		System.out.println("resultSetList      " + resultSetList);
 		System.out.println("site               " + site);
+		System.out.println("file types          " + rawFileFormats);
 		System.out.println();
 	}
 
