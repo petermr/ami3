@@ -64,12 +64,17 @@ private static final Logger LOG = Logger.getLogger(QueryManager.class);
 			return new ArrayList<>();
 		}
 		downloadCount = 0;
-		for (Integer page = pageList.get(0); page <= pageList.get(1); page++) {
+		Integer page0 = pageList.get(0);
+		for (Integer page = page0; page <= pageList.get(1); page++) {
 			try {
 				searchAndDownloadMetadataResultSet(url, page);
 			} catch (IOException e) {
 				LOG.error("Could not download hitpages: " + page, e);
 				continue;
+			}
+			if (page == page0) {
+				System.out.println("calculating hits NYI");
+//				int totalHits = getTotalHits(resultSetList);
 			}
 		}
 		// clean the files
@@ -120,9 +125,10 @@ private static final Logger LOG = Logger.getLogger(QueryManager.class);
 	 * 
 	 * @param url
 	 * @param page
+	 * @return 
 	 * @throws IOException
 	 */
-	private void searchAndDownloadMetadataResultSet(String url, Integer page) throws IOException {
+	private ResultSet searchAndDownloadMetadataResultSet(String url, Integer page) throws IOException {
 		File resultSetFile = new File(metadataDir, RESULT_SET + page + "." + "html");
 		System.out.println("runing curl :" + url + " to " + resultSetFile);
 		url = addPageNumber(url, page);
@@ -137,7 +143,7 @@ private static final Logger LOG = Logger.getLogger(QueryManager.class);
 			resultSet.setUrl(url);
 			System.err.println("Results " + resultSet.size());
 		}
-		return;
+		return resultSet;
 	}
 
 	/**

@@ -135,23 +135,45 @@ running [curl, -X, GET, https://www.biorxiv.org/content/10.1101/455568v1]
 skipping existing : abstract.html
 skipping existing : fulltext.html
 skipping existing : fulltext.pdf
+
+likely to be edited frequently while debugging!
+
 	 * @throws Exception
 	 */
 	public void testBiorxivIT() throws Exception {
+		String biorxiv = "target/biorxiv";
+		String args = "-p " + "target" + " --dir biorxiv";
+		new AMICleanTool().runCommands(args);
 		
-		String args = 
-				"-p target/biorxiv"
+		args = 
+				"-p " + biorxiv
 				+ " --site biorxiv"
 				+ " --query coronavirus"
-				+ " --pagesize 40"
+				+ " --pagesize 100"
+//				+ " --pagesize 4"
 				+ " --pages 1 10"
-				+ " --limit 500"
+//				+ " --pages 1 3"
+				+ " --fulltext html"
+				+ " --limit 2000"
 			;
 		new AMIDownloadTool().runCommands(args);
-		Assert.assertTrue("target/biorxiv/10_1101_2020_02_24_962688v1", new File("target/biorxiv/10_1101_2020_02_24_962688v1").exists());
-		Assert.assertTrue("target/biorxiv/10_1101_2020_02_24_962688v1", new File("target/biorxiv/10_1101_2020_02_24_962688v1/fulltext.html").exists());
-		Assert.assertTrue("target/biorxiv/10_1101_2020_02_24_962688v1", new File("target/biorxiv/10_1101_2020_02_24_962688v1/fulltext.pdf").exists());
+// first creates the resultSets		
+
+//		File file962688v1 = new File(biorxiv, "10_1101_2020_02_24_962688v1");
+//		Assert.assertTrue(""+file962688v1, file962688v1.exists());
+//		Assert.assertTrue(""+file962688v1, new File(file962688v1, "abstract.html").exists());
+//		Assert.assertTrue(""+file962688v1, new File(file962688v1, "landingPage.html").exists());
+//		Assert.assertTrue(""+file962688v1, new File(file962688v1, "resultSet.html").exists());
+//		Assert.assertTrue(""+file962688v1, new File(file962688v1, "scrapedMetadata.html").exists());
+//		Assert.assertTrue(""+file962688v1, new File(file962688v1, "fulltext.html").exists());
+//		Assert.assertTrue(""+file962688v1, new File(file962688v1, "fulltext.pdf").exists());
 		
+		System.out.println("exited normally");
+		
+/**
+ * problem comes at		
+ *   
+ */
 	}
 
 	@Test

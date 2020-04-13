@@ -71,7 +71,7 @@ public class BiorxivMetadataEntry extends AbstractMetadataEntry {
 	}
 
 	protected List<String> getAuthors() {
-		System.err.println("getAuthors(); NYI");
+//		System.err.println("getAuthors(); NYI");
 		return null;
 	}
 	/**

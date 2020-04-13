@@ -27,8 +27,6 @@ public abstract class AbstractSubDownloader {
 
 	protected AbstractDownloader abstractDownloader;
 	protected AMIDownloadTool downloadTool;
-//	protected CProject cProject;
-//	protected CProject currentTree;
 	protected ResultSet resultSet;
 	protected int downloadCount;
 
@@ -37,6 +35,9 @@ public abstract class AbstractSubDownloader {
 		super();
 		this.abstractDownloader = abstractDownloader;
 		this.downloadTool = abstractDownloader.getDownloadTool();
+		if (downloadTool == null) {
+			throw new RuntimeException("null downloadTool");
+		}
 //		this.cProject = downloadTool.getCProject();
 	}
 

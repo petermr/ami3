@@ -135,16 +135,21 @@ Conclusion: Our analysis suggests that at least two different viral strains of 2
 public class LandingPageManager extends AbstractSubDownloader {
 
 
-private static final Logger LOG = Logger.getLogger(LandingPageManager.class);
+	private static final Logger LOG = Logger.getLogger(LandingPageManager.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
+
+	private List<String> landingPageFilerootList = new ArrayList<>();
+	private List<String> cTreeNameList;
 
 	public LandingPageManager(AbstractDownloader abstractDownloader) {
 		super(abstractDownloader);
 	}
 
 	public void downloadLandingPages() {
+		landingPageFilerootList = new ArrayList<>();
+		cTreeNameList = new ArrayList<>();
 		if (downloadTool.resultSetList.size() > 0) {
 			for (String resultSetFilename : downloadTool.resultSetList) {
 				System.out.println("download files in resultSet "+resultSetFilename);
@@ -165,13 +170,14 @@ private static final Logger LOG = Logger.getLogger(LandingPageManager.class);
 	
 		ResultSet resultSet = abstractDownloader.createResultSet(resultSetFile);
 		List<String> fileroots = resultSet.getCitationLinks();
+		landingPageFilerootList.addAll(fileroots);
 		String result = null;
 		try {
 			result = this.downloadLandingPagesWithCurl(fileroots);
 		} catch (IOException e) {
 			throw new RuntimeException("Cannot extract resultSet "+resultSetFile, e);
 		}
-		System.out.println("downloaded "+fileroots.size()+" files");
+		System.out.println("--------\n+downloaded "+fileroots.size()+" files for "+resultSetFile+"\n--------");
 	}
 
 	private HtmlHtml getLandingPageHtml(String content) {
@@ -183,10 +189,12 @@ private static final Logger LOG = Logger.getLogger(LandingPageManager.class);
 	private String getLandingPageText(CTree cTree) {
 		File landingPageFile = new File(cTree.getDirectory(), AbstractDownloader.LANDING_PAGE + "." + "html");
 		String content = null;
-		try {
-			content = FileUtils.readFileToString(landingPageFile, CMineUtil.UTF8_CHARSET);
-		} catch (IOException e) {
-			throw new RuntimeException("Cannot read "+landingPageFile, e);
+		if (landingPageFile.exists()) {
+			try {
+				content = FileUtils.readFileToString(landingPageFile, CMineUtil.UTF8_CHARSET);
+			} catch (IOException e) {
+				System.err.println("Cannot read "+landingPageFile + e.getMessage());
+			}
 		}
 		return content;
 	}
@@ -198,6 +206,11 @@ private static final Logger LOG = Logger.getLogger(LandingPageManager.class);
 	 */
 	AbstractLandingPage createCleanedLandingPage(CTree cTree) {
 		String content = getLandingPageText(cTree);
+		if (content == null) {
+			System.err.println("no landing page for: "+cTree);
+			return null;
+		}
+		AbstractLandingPage landingPage = null;
 		HtmlHtml landingPageHtml = null;
 		try {
 			content = abstractDownloader.clean(content);
@@ -206,7 +219,7 @@ private static final Logger LOG = Logger.getLogger(LandingPageManager.class);
 			System.err.println("Bad parse ("  +cTree + ")"+e);
 			return null;
 		}
-		AbstractLandingPage landingPage = this.createLandingPage();
+		landingPage = this.createLandingPage();
 		landingPage.readHtml(landingPageHtml);
 		return landingPage;
 	}
@@ -255,11 +268,24 @@ private static final Logger LOG = Logger.getLogger(LandingPageManager.class);
 
 	private File createLandingPageFile(File downloadDir, String fileroot) {
 		String localTreeName = abstractDownloader.createLocalTreeName(fileroot);
-		File cTreeDir = new File(downloadDir, 
-				AbstractDownloader.replaceDOIPunctuationByUnderscore(localTreeName));
+		String cTreeName = AbstractDownloader.replaceDOIPunctuationByUnderscore(localTreeName);
+		File cTreeDir = new File(downloadDir, cTreeName);
 		cTreeDir.mkdirs();
+		cTreeNameList.add(cTreeName);
 		File urlfile = new File(cTreeDir, AbstractDownloader.LANDING_PAGE + "." + "html");
 		return urlfile;
+	}
+
+//	public List<String> getLandingPageFilerootList() {
+//		return landingPageFilerootList;
+//	}
+	
+	public List<String> getCTreeNameList() {
+		return cTreeNameList;
+	}
+
+	public int size() {
+		return landingPageFilerootList == null ? 0 : landingPageFilerootList.size();
 	}
 
 

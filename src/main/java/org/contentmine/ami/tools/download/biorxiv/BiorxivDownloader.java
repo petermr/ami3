@@ -163,7 +163,8 @@ public class BiorxivDownloader extends AbstractDownloader {
 	
 	@Override
 	protected HtmlElement getArticleElement(HtmlHtml htmlHtml) {
-		return (HtmlElement) XMLUtil.getFirstElement(htmlHtml, ".//*[local-name()='"+HtmlDiv.TAG+"' and starts-with(@class, '"+ARTICLE+" "+"')]");
+		return (HtmlElement) XMLUtil.getFirstElement(htmlHtml, 
+				".//*[local-name()='"+HtmlDiv.TAG+"' and starts-with(@class, '"+ARTICLE+" "+"')]");
 	}
 	
 	@Override

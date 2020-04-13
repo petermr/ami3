@@ -25,6 +25,7 @@ public class FullFileManager extends AbstractSubDownloader {
 
 	public FullFileManager(AbstractDownloader abstractDownloader) {
 		super(abstractDownloader);
+		System.out.println("formats "+abstractDownloader.getDownloadTool().getFulltextFormats());
 	}
 	
 	/** ENTRY POINT */
@@ -62,8 +63,10 @@ public class FullFileManager extends AbstractSubDownloader {
 			
 			writeDownloadedHtmlFile(AbstractDownloader.CITATION_ABSTRACT_HTML_URL, AbstractDownloader.ABSTRACT );
 			writeDownloadedHtmlFile(AbstractDownloader.CITATION_FULL_HTML_URL, CTree.FULLTEXT);
-			File file1 = new File(abstractDownloader.currentTree.getDirectory(), CTree.FULLTEXT + "." + CTree.PDF);
-			downloadAndWriteFile(AbstractDownloader.CITATION_PDF_URL, file1);
+			if (true /*fulltextFormats.contains*/ ) {
+				File file1 = new File(abstractDownloader.currentTree.getDirectory(), CTree.FULLTEXT + "." + CTree.PDF);
+				downloadAndWriteFile(AbstractDownloader.CITATION_PDF_URL, file1);
+			}
 			//view-source:file:///Users/pm286/workspace/cmdev/ami3/target/biorxiv/testsearch3/10_1101_2020_01_16_909614v1/resultSet.html
 		}
 	}

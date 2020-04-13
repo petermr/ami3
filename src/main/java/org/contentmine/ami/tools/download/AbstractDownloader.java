@@ -256,7 +256,7 @@ public abstract class AbstractDownloader {
 		}
 	}
 
-	public CProject getcProject() {
+	public CProject getCProject() {
 		return cProject;
 	}
 

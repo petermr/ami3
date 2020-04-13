@@ -138,8 +138,8 @@ public class AMIDownloadTool extends AbstractAMITool {
 
     @Option(names = {"--fulltext"},
     		arity = "1..*",
-            description = "fulltext content (can include Supplemental Info")
-    private List<FulltextFormat> fulltextFormats = null;
+            description = "fulltext content (can include Supplemental Info (${COMPLETION-CANDIDATES})")
+    private List<FulltextFormat> fulltextFormats = new ArrayList<>();
 
 //    @Option(names = {"--landingpage"},
 //    		arity = "1",
@@ -249,16 +249,29 @@ public class AMIDownloadTool extends AbstractAMITool {
 		// Get and ouptut resultSets
 		QueryManager queryManager = downloader.getOrCreateQueryManager();
 		resultSetList = queryManager.searchAndDownloadResultSet();
+		int size = resultSetList.size();
+		System.out.println(""
+				+ "  ========\nResultSet: "+size+""
+				+ "\n creates resultSet[1.."+size+"][.clean].html"
+				+ "\n and <per-ctree>/scrapedMetadata.html"
+				+ "\n========");
 		
 		LandingPageManager landingPageManager = downloader.getOrCreateLandingPageManager();
 		landingPageManager.downloadLandingPages();
 		
-		FulltextManager fulltextManager = downloader.getOrCreateFulltextManager();
-		fulltextManager.downloadFullTextAndRelatedFiles();
+		System.out.println("========\nadds LandingPages: "+landingPageManager.size()+"\n========");
 		
-		List<AbstractMetadataEntry> metadataEntryList = downloader.getMetadataEntryList();
-		FullFileManager fullFileManager = downloader.getOrCreateFullFileManager();
-		fullFileManager.downloadHtmlPages(metadataEntryList);
+		FulltextManager fulltextManager = downloader.getOrCreateFulltextManager();
+		fulltextManager.downloadFullTextAndRelatedFilesFromLandingPages();
+		System.out.println("========\nFulltext: "+fulltextManager+"\n========");
+		
+		boolean downloadHtml = false;
+		if (downloadHtml) {
+			List<AbstractMetadataEntry> metadataEntryList = downloader.getMetadataEntryList();
+			FullFileManager fullFileManager = downloader.getOrCreateFullFileManager();
+			fullFileManager.downloadHtmlPages(metadataEntryList);
+			System.out.println("========\nFullfile / metadata: "+metadataEntryList.size()+"\n========");
+		}
     }
 
 	private AbstractDownloader createDownloader() {
@@ -327,6 +340,10 @@ public class AMIDownloadTool extends AbstractAMITool {
 	
 	public List<String> getResultsSetList() {
 		return resultSetList;
+	}
+
+	public List<FulltextFormat> getFulltextFormats() {
+		return fulltextFormats;
 	}
 
 	public List<RawFileFormat> getRawFileFormats() {

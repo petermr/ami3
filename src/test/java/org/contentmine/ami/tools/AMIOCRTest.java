@@ -100,7 +100,8 @@ public class AMIOCRTest {
 	 */
 	public void testForceScaleProject() throws Exception {
 		String args = ""
-				+ "-p /Users/pm286/workspace/uclforest/dev"
+//				+ "-p /Users/pm286/workspace/uclforest/dev"
+				+ "-p /Users/pm286/projects/uclforest/dev"
 				+ " --html true"
 				+ " --scalefactor 1.7"
 				+ " --filename scale1_7"
@@ -201,7 +202,8 @@ public class AMIOCRTest {
 //		File plotImageFile = new File(batteryDir, "panel0_0_128_true.png");
 //		Assert.assertTrue(plotImageFile.exists());
 		AbstractAMITool ocrTool = new AMIOCRTool();
-		String cmd = "--ctree "+cTree.getDirectory();
+		String cmd = "--ctree "+cTree.getDirectory()+""
+				+ " --";
 		LOG.debug(cmd);
 		ocrTool.runCommands(cmd);
 		
