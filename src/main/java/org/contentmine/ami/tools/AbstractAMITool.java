@@ -141,7 +141,9 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 	protected File cProjectOutputDir;
 	protected File cTreeOutputDir;
 
+	@Deprecated(/*forRemoval = true*/)
 	protected String[] args;
+
 	private Level level;
 	protected File contentMineDir = DEFAULT_CONTENT_MINE_DIR;
 
@@ -165,13 +167,14 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 	 * calls CommandLine.call(this, args)
 	 *
 	 * @param args
+	 * @deprecated TO BE REMOVED. Use
 	 */
 	public void runCommands(String[] args) {
 		init();
 		this.args = args;
 		// add help
 		args = args.length == 0 ? new String[]{"--help"} : args;
-		CommandLine.call(this, args);
+		new CommandLine(this).execute(args);
 	}
 
 
