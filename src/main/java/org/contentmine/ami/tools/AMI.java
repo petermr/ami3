@@ -99,7 +99,10 @@ public class AMI implements Runnable {
 	}
 
 	public static void main(String... args) {
-		System.exit(createCommandLine().execute(args));
+		int exitCode = createCommandLine().execute(args);
+		if (System.getProperty("ami.no.exit") == null) {
+			System.exit(exitCode);
+		}
 	}
 
 	/**
