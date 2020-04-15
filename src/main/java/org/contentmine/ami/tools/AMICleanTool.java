@@ -79,6 +79,11 @@ public class AMICleanTool extends AbstractAMITool {
         description = "files to delete by glob; use with care (I am still working this out")
     private String[] fileGlobs;
 
+    @Option(names = {"--fileregex"},
+		arity = "0..*",
+        description = "files to delete by regex; use with care (I am still working this out")
+    private String[] fileRegexes;
+
     @Option(names = {"--dir"},
 		arity = "0..*",
         description = "directories to delete by name, e.g. --dir svg deletes child directories <ctree>/svg"
@@ -89,6 +94,11 @@ public class AMICleanTool extends AbstractAMITool {
 		arity = "0..*",
         description = "directories to delete by glob; use with care (I am still working this out)")
     private String[] dirGlobs;
+
+    @Option(names = {"--dirregex"},
+		arity = "0..*",
+        description = "directories to delete by regex; use with care (I am still working this out)")
+    private String[] dirRegexes;
 
     /** used by some non-picocli calls
      * obsolete it
@@ -110,8 +120,9 @@ public class AMICleanTool extends AbstractAMITool {
 	protected void parseSpecifics() {
     	System.out.println("files         "+Util.toStringList(files));
     	System.out.println("fileGlobs     "+Util.toStringList(fileGlobs));
+    	System.out.println("fileRegexes   "+Util.toStringList(fileRegexes));
     	System.out.println("dirs          "+Util.toStringList(dirs));
-    	System.out.println("dirGlobs      "+Util.toStringList(dirGlobs));
+    	System.out.println("dirRegexes    "+Util.toStringList(dirRegexes));
 	}
 
     @Override
@@ -130,6 +141,15 @@ public class AMICleanTool extends AbstractAMITool {
     			CMFileUtil.forceDeleteQuietly(globList);
 	    		globList = CMineGlobber.listSortedChildFiles(cProject.getDirectory(), fileGlob);
 	    		LOG.debug("CHILD GLOB: " + fileGlob+" ==> "+globList);
+    		}
+    	}
+    	if (fileRegexes != null && getCProjectDirectory() != null) {
+    		for (String fileRegex : fileRegexes) {
+	    		List<File> regexList = CMineGlobber.listRegexedFilesQuietly(cProject.getDirectory(), fileRegex);
+	    		LOG.debug("REGEX: " + fileRegex + "(" + regexList.size() + ") ==> " + regexList);
+    			CMFileUtil.forceDeleteQuietly(regexList);
+	    		regexList = CMineGlobber.listSortedChildFiles(cProject.getDirectory(), fileRegex);
+	    		LOG.debug("CHILD REGEX: " + fileRegex+" ==> "+regexList);
     		}
     	}
     }

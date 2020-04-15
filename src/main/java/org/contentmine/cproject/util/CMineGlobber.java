@@ -255,6 +255,19 @@ public class CMineGlobber {
 		return files;
 	}
 
+	/** creates Globber from directory and regex. Fails quietly.
+	 * 
+	 * @param directory
+	 * @param regex 
+	 * @return
+	 */
+	public static List<File> listRegexedFilesQuietly(File directory, String regex) {
+		List<File> files = new ArrayList<File>();
+		CMineGlobber globber = new CMineGlobber().setRegex(regex).setLocation(directory);
+		files = globber.listFiles();
+		return files;
+	}
+
 	public String getLocation() {
 		return location;
 	}
