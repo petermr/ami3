@@ -1,6 +1,7 @@
 package org.contentmine.ami.tools;
 
 import java.io.File;
+import java.io.IOException;
 import java.nio.file.FileVisitResult;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -45,53 +46,58 @@ public class AMICleanTest {
 	 */
 	@Test
 	public void testCleanForestPlotsSmall() throws Exception {
-		Unzipper unzipper = new Unzipper();
 		Path temp = Files.createTempDirectory("ami-forestplotssmall");
 		System.out.println(temp);
 		try {
-			unzipper.setUnzippedList(new ArrayList<>());
-			unzipper.extract(getClass().getResourceAsStream("/uclforest/forestplotssmall.zip"), temp.toFile());
+			new Unzipper().extract(getClass().getResourceAsStream("/uclforest/forestplotssmall.zip"), temp.toFile());
 
-			// TODO count all files that are to be deleted
+			// gather all project files
 			System.out.println("BEFORE");
-			unzipper.getUnzippedList().forEach(System.out::println);
+			List<File> before = listFully(temp);
+			before.forEach(System.out::println);
 
-			String[] args =
+			String args =
 					("-p " + temp.toFile().getAbsolutePath()
 							+ " -vv clean"
-							+ " --dir svg/ pdfimages/ --file scholarly.html").split(" ");
+							+ " --dir svg/ pdfimages/ --file scholarly.html");
 			AMICleanTool amiCleaner = AMI.execute(AMICleanTool.class, args);
 
 			CProject cProject = amiCleaner.getCProject();
 			Assert.assertNotNull("CProject not null", cProject);
 
-			// TODO count all remaining files and assert the targers were deleted
+			// count all remaining files and assert the targers were deleted
 			System.out.println("AFTER");
-			List<File> after = new ArrayList<>();
-			Files.walkFileTree(temp, new SimpleFileVisitor<Path>() {
-				// Invoke the pattern matching method on each file.
-				@Override
-				public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) {
-					after.add(file.toFile());
-					System.out.println(file.toFile());
-					return CONTINUE;
-				}
+			List<File> after = listFully(temp);
+			after.forEach(System.out::println);
 
-				// Invoke the pattern matching method on each directory.
-				@Override
-				public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) {
-					after.add(dir.toFile());
-					System.out.println(dir.toFile());
-					return CONTINUE;
-				}
-			});
-			unzipper.getUnzippedList().removeAll(after);
+			before.removeAll(after);
+
 			System.out.println("DIFF:");
-			unzipper.getUnzippedList().forEach(System.out::println);
-			assertFalse(unzipper.getUnzippedList().isEmpty()); // the clean tool should have made some difference
+			before.forEach(System.out::println);
+			assertFalse(before.isEmpty()); // the clean tool should have made some difference
 		} finally {
 			Files.walkFileTree(temp, new DirectoryDeleter());
 		}
+	}
+
+	private List<File> listFully(Path temp) throws IOException {
+		List<File> after = new ArrayList<>();
+		Files.walkFileTree(temp, new SimpleFileVisitor<Path>() {
+			// Invoke the pattern matching method on each file.
+			@Override
+			public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) {
+				after.add(file.toFile());
+				return CONTINUE;
+			}
+
+			// Invoke the pattern matching method on each directory.
+			@Override
+			public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) {
+				after.add(dir.toFile());
+				return CONTINUE;
+			}
+		});
+		return after;
 	}
 
 	@Test
@@ -99,8 +105,8 @@ public class AMICleanTest {
 	 * tests cleaning directories in a single CTree.
 	 */
 	public void testCleanSingleTree() {
-String cmd = "-t /Users/pm286/workspace/uclforest/dev/higgins clean --dir pdfimages";
-AMI.main(cmd.split(" "));
+		String cmd = "-t /Users/pm286/workspace/uclforest/dev/higgins clean --dir pdfimages";
+		AMI.execute(cmd);
 	}
 
 	@Test
@@ -111,10 +117,12 @@ AMI.main(cmd.split(" "));
 		File targetDir = new File("target/cooccurrence/osanctum200");
 		CMineTestFixtures.cleanAndCopyDir(new File("/Users/pm286/workspace/tigr2ess/osanctum200"), targetDir);
 
-		String cmd = "-p " + targetDir + " --dir results cooccurrence";
-		new AMICleanTool().runCommands(cmd);
+		String cmd = "-p " + targetDir + " clean --dir results cooccurrence";
+		AMI.execute(cmd);
+
 		// delete children of ctrees
 		cmd = "-p " + targetDir + ""
+			+ " clean"
 			+ " --file "
 			+ " gene.human.count.xml"
 		    + " gene.human.snippets.xml"
@@ -139,7 +147,7 @@ AMI.main(cmd.split(" "));
 		    + " species.binomial.snippets.xml"
 		    + " word.frequencies.count.xml"
 		    + " word.frequencies.snippets.xml";
-		new AMICleanTool().runCommands(cmd);
+		AMI.execute(cmd);
 	}
 
 	@Test
@@ -154,12 +162,13 @@ AMI.main(cmd.split(" "));
 //		new AMICleanTool().runCommands(cmd);
 		// delete children of ctrees
 		cmd = "-p " + targetDir + ""
+			+ " clean "
 			+ " --fileglob "
 			+ " gene.**.xml"
 		    + " **/species.*"
 		    + " search.*"
 		    + " xml";
-		new AMICleanTool().runCommands(cmd);
+		AMI.execute(cmd);
 	}
 
 

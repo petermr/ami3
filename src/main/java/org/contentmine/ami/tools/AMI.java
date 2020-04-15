@@ -112,14 +112,32 @@ public class AMI implements Runnable {
 	 * specified {@code ami} subcommand.
 	 * </p>
 	 * @param subcommandClass the class of the {@code @Command}-annotated subcommand object to return.
-	 * @param args the command line arguments: optional global options followed by a required subcommand name and optional subcommand options
+	 * @param args the command line arguments: a single String containing whitespace-separated
+	 *               optional global options followed by a required subcommand name and
+	 *               optional subcommand options.
+	 *               This will be split into arguments with {@code args.split("\\s)}.
 	 * @param <T> the generic type of the object to return
 	 * @return the invoked subcommand instance
 	 */
-	static <T> T execute(Class<T> subcommandClass, String... args) {
+	static <T> T execute(Class<T> subcommandClass, String args) {
 		CommandLine cmd = createCommandLine();
-		cmd.execute(args);
+		cmd.execute(args.split("\\s"));
 		return (T) cmd.getParseResult().subcommand().commandSpec().userObject();
+	}
+
+	/**
+	 * FOR TESTING PURPOSES.
+	 * <p>
+	 * Executes {@code ami} with the specified command line arguments and returns the exit code.
+	 * </p>
+	 * @param args the command line arguments: a single String containing whitespace-separated
+	 *               optional global options followed by a required subcommand name and
+	 *               optional subcommand options.
+	 *               This will be split into arguments with {@code args.split("\\s)}.
+	 * @return the exit code
+	 */
+	static int execute(String args) {
+		return createCommandLine().execute(args.split("\\s"));
 	}
 
 	private static CommandLine createCommandLine() {
