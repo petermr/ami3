@@ -1,6 +1,10 @@
 package org.contentmine.ami.tools;
 
+import static java.nio.file.FileVisitResult.CONTINUE;
+import static org.junit.Assert.assertFalse;
+
 import java.io.File;
+import java.io.IOException;
 import java.nio.file.FileVisitResult;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -9,20 +13,20 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.contentmine.ami.tools.AMICleanTool;
+import org.contentmine.ami.tools.AMI.ShortErrorMessageHandler;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.DirectoryDeleter;
 import org.contentmine.cproject.files.Unzipper;
+import org.contentmine.cproject.util.CMineGlobber;
 import org.contentmine.cproject.util.CMineTestFixtures;
+import org.contentmine.eucl.euclid.util.CMFileUtil;
+import org.junit.Assert;
 import org.junit.Test;
 
-import junit.framework.Assert;
 import picocli.CommandLine;
-
-import static java.nio.file.FileVisitResult.CONTINUE;
-import static org.junit.Assert.*;
 
 /** test cleaning.
  * 
@@ -146,21 +150,40 @@ AMI.main(cmd.split(" "));
 	/**
 	 * tests cleaning directories in a project for ami-search
 	 */
-	public void testCleanResultsGlob() {
-		File targetDir = new File("target/cooccurrence/osanctum200");
-		CMineTestFixtures.cleanAndCopyDir(new File("/Users/pm286/workspace/tigr2ess/osanctum200"), targetDir);
-		String cmd;
-//		String cmd = "-p " + targetDir + " --dir results cooccurrence";
-//		new AMICleanTool().runCommands(cmd);
+	public void testCleanResultsGlob() throws IOException {
+		File sourceDir = new File("src/test/resources/org/contentmine/ami/oil5");
+		CMFileUtil.assertExistingDirectory(sourceDir);
+		File targetDir = new File("target/oil5");
+		CMFileUtil.forceDelete(targetDir);
+		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
+		CMFileUtil.assertExistingDirectory(targetDir);
+		// old style. we'll replace
+		List<File> files = new CMineGlobber().setRegex(".*\\.xml").setLocation(targetDir).setRecurse(true).listFiles();
+		Assert.assertEquals("xml "+files.size(), 792, files.size());
+		files = new CMineGlobber().setGlob("**/*.xml").setLocation(targetDir).setRecurse(true).listFiles();
+		Assert.assertEquals("xml "+files.size(), 792, files.size());
+
+		String args;
 		// delete children of ctrees
-		cmd = "-p " + targetDir + ""
+		args = ""
+			+ "-p " + targetDir + " clean"
 			+ " --fileglob "
-			+ " gene.**.xml"
+			+ " **/*.xml"
+ 			+ " gene.**.xml"
 		    + " **/species.*"
 		    + " search.*"
-		    + " xml";
-		new AMICleanTool().runCommands(cmd);
+//		    + " xml"
+		    + "";
+//		new AMICleanTool().runCommands(cmd);
+//		AMI.main(args.split("\\s+"));
+//		BasicConfigurator.configure(); // TBD not needed?
+		AbstractAMITool.runCommandsNew(args);
+		
+		files = new CMineGlobber().setGlob("**/*.xml").setLocation(targetDir).setRecurse(true).listFiles();
+		Assert.assertEquals("xml "+files.size(), 0, files.size());
+		System.out.println("files: "+files.size());
 	}
+
 
 
 }

@@ -369,7 +369,7 @@ public class CMFileUtil {
 	}
 
 	/**
-	 * force delete, avoidng message and exceptions
+	 * force delete, avoiding message and exceptions
 	 * @param file
 	 * @throws IOException
 	 */
@@ -379,6 +379,30 @@ public class CMFileUtil {
 		}
 	}
 
+	/**
+	 * force delete, avoiding message and exceptions
+	 * @param file
+	 */
+	public static void forceDeleteQuietly(File file) {
+		try {
+			forceDelete(file);
+		} catch (IOException e) {
+			System.err.println("cannot delete file: "+file+" ("+e.getMessage()+")");
+		}
+	}
+	
+	/**
+	 * force delete, avoiding message and exceptions
+	 * @param fileList
+	 */
+	public static void forceDeleteQuietly(List<File> fileList) {
+		if (fileList != null) {
+			for (File file : fileList) {
+				forceDeleteQuietly(file);
+			}
+		}
+	}
+	
 	/** force move, by testing for existence and copying/deleting
 	 * 
 	 * @param imageFile

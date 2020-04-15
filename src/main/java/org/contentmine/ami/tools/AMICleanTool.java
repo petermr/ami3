@@ -11,6 +11,7 @@ import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.DebugPrint;
 import org.contentmine.cproject.util.CMineGlobber;
 import org.contentmine.eucl.euclid.Util;
+import org.contentmine.eucl.euclid.util.CMFileUtil;
 
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
@@ -125,7 +126,8 @@ public class AMICleanTool extends AbstractAMITool {
     	if (fileGlobs != null && getCProjectDirectory() != null) {
     		for (String fileGlob : fileGlobs) {
 	    		List<File> globList = CMineGlobber.listGlobbedFilesQuietly(cProject.getDirectory(), fileGlob);
-	    		LOG.debug("GLOB: " + fileGlob+" ==> "+globList);
+	    		LOG.debug("GLOB: " + fileGlob + "(" + globList.size() + ") ==> " + globList);
+    			CMFileUtil.forceDeleteQuietly(globList);
 	    		globList = CMineGlobber.listSortedChildFiles(cProject.getDirectory(), fileGlob);
 	    		LOG.debug("CHILD GLOB: " + fileGlob+" ==> "+globList);
     		}

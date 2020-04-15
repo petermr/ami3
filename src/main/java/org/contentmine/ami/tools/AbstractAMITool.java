@@ -13,15 +13,15 @@ import java.util.concurrent.Callable;
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.contentmine.ami.tools.AMIDictionaryTool.RawFileFormat;
+import org.contentmine.ami.tools.AMI.ShortErrorMessageHandler;
 import org.contentmine.cproject.args.AbstractTool;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeList;
+import org.contentmine.eucl.euclid.Util;
 
 import picocli.CommandLine;
 import picocli.CommandLine.Command;
-import picocli.CommandLine.Option;
 import picocli.CommandLine.ParentCommand;
 
 /**
@@ -51,6 +51,11 @@ import picocli.CommandLine.ParentCommand;
 		version = "${COMMAND-FULL-NAME} 20190228" // also edit ami-jars.sh
 )
 public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
+	private static final String P = "-p";
+	private static final String PROJECT = "--project";
+	private static final String AMI = "AMI";
+	private static final String TOOL = "Tool";
+
 	private static final Logger LOG = Logger.getLogger(AbstractAMITool.class);
 
 	static {
@@ -68,7 +73,7 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 	 * @author pm286
 	 */
 	public enum Scope {
-		PROJECT("-p"),
+		PROJECT(P),
 		TREE("-t"),
 		;
 		private String abbrev;
@@ -724,6 +729,40 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 		if (reachesLevel(verbosity)) {
 			System.out.println("<" + verbosity + ">" + message);
 		}
+	}
+
+	/** newstyle commands
+	 * 
+	 * @param args
+	 */
+	protected void runCommandsNew(String args) {
+		runCommandsNew(args.split("\\s+"));
+	}
+
+	/**
+	 * new style commands
+	 * @param args
+	 */
+	protected void runCommandsNew(String[] args) {
+		String clazz = this.getClass().getSimpleName();
+		if (clazz.startsWith(AMI) && clazz.endsWith(TOOL)) {
+			clazz = clazz.substring(0, clazz.length() - TOOL.length());
+			clazz = clazz.substring(AMI.length());
+			clazz = clazz.toLowerCase();
+		} else {
+			System.err.println("Cannot create command for " + clazz);
+			return;
+		}
+		List<String> argList = new ArrayList<>(Arrays.asList(args));
+		if (argList.size() >= 2) {
+			String arg0 = argList.get(0);
+			if (arg0.equals(P) || arg0.contentEquals(PROJECT)) {
+				argList.add(2, clazz);
+			}
+		}
+		CommandLine cmd = new CommandLine(new AMI())
+			.setParameterExceptionHandler(new ShortErrorMessageHandler());
+			cmd.execute(argList.toArray(new String[0]));
 	}
 
 }
