@@ -1,10 +1,11 @@
 package org.contentmine.ami.tools;
 
 import static java.nio.file.FileVisitResult.CONTINUE;
-import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.*;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.nio.file.FileVisitResult;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -50,19 +51,31 @@ public class AMICleanTest {
 	@Test
 	public void testCleanForestPlotsSmall() throws Exception {
 		Path temp = Files.createTempDirectory("ami-forestplotssmall");
-		System.out.println(temp);
+		//System.out.println(temp);
 		try {
 			new Unzipper().extract(getClass().getResourceAsStream("/uclforest/forestplotssmall.zip"), temp.toFile());
 
 			// gather all project files
-			System.out.println("BEFORE");
-			List<File> before = listFully(temp);
-			before.forEach(System.out::println);
+			List<Path> before = listFully(temp);
+			//System.out.println("BEFORE");
+			//before.forEach(System.out::println);
+			long svgCount = before.stream()
+					.filter(f -> f.toString().contains(File.separator + "svg" + File.separator))
+					.count();
+			long pdfimagesCount = before.stream()
+					.filter(f -> f.toString().contains(File.separator + "pdfimages" + File.separator))
+					.count();
+			long scholarlyCount = before.stream()
+					.filter(f -> f.toString().contains(File.separator + "scholarly.html"))
+					.count();
+			assertNotEquals(0, svgCount);
+			assertNotEquals(0, pdfimagesCount);
+			assertNotEquals(0, scholarlyCount);
 
 			String args =
 					("-p " + temp.toFile().getAbsolutePath()
 							+ " -vv clean"
-							+ " --dir svg/ pdfimages/ --file scholarly.html");
+							+ " **/svg/* **/pdfimages/*  **/scholarly.html");
 			AMICleanTool amiCleaner = AMI.execute(AMICleanTool.class, args);
 
 			CProject cProject = amiCleaner.getCProject();
@@ -70,88 +83,50 @@ public class AMICleanTest {
 
 			// count all remaining files and assert the targers were deleted
 			System.out.println("AFTER");
-			List<File> after = listFully(temp);
-			after.forEach(System.out::println);
+			List<Path> after = listFully(temp);
+			//after.forEach(System.out::println);
 
-			before.removeAll(after);
+			long afterSvgCount = after.stream()
+					.filter(f -> f.toString().contains(File.separator + "svg" + File.separator))
+					.count();
+			long afterPdfimagesCount = after.stream()
+					.filter(f -> f.toString().contains(File.separator + "pdfimages" + File.separator))
+					.count();
+			long afterScholarlyCount = after.stream()
+					.filter(f -> f.toString().contains(File.separator + "scholarly.html"))
+					.count();
+			assertEquals(0, afterSvgCount);
+			assertEquals(0, afterPdfimagesCount);
+			assertEquals(0, afterScholarlyCount);
 
-			System.out.println("DIFF:");
-			before.forEach(System.out::println);
-			assertFalse(before.isEmpty()); // the clean tool should have made some difference
+			long removedCount = svgCount + pdfimagesCount + scholarlyCount;
+			assertEquals("Nothing else was deleted", after.size(), before.size() - removedCount);
+
 		} finally {
 			Files.walkFileTree(temp, new DirectoryDeleter());
 		}
 	}
 
-	private List<File> listFully(Path temp) throws IOException {
-		List<File> after = new ArrayList<>();
+	private List<Path> listFully(Path temp) throws IOException {
+		List<Path> after = new ArrayList<>();
 		Files.walkFileTree(temp, new SimpleFileVisitor<Path>() {
 			// Invoke the pattern matching method on each file.
 			@Override
 			public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) {
-				after.add(file.toFile());
+				after.add(file);
 				return CONTINUE;
 			}
 
 			// Invoke the pattern matching method on each directory.
 			@Override
 			public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) {
-				after.add(dir.toFile());
+				after.add(dir);
 				return CONTINUE;
 			}
 		});
 		return after;
 	}
 
-	@Test
-	/**
-	 * tests cleaning directories in a single CTree.
-	 */
-	public void testCleanSingleTree() {
-		String cmd = "-t /Users/pm286/workspace/uclforest/dev/higgins clean --dir pdfimages";
-		AMI.execute(cmd);
-	}
-
-	@Test
-	/**
-	 * tests cleaning directories in a project for ami-search
-	 */
-	public void testCleanResults() {
-		File targetDir = new File("target/cooccurrence/osanctum200");
-		CMineTestFixtures.cleanAndCopyDir(new File("/Users/pm286/workspace/tigr2ess/osanctum200"), targetDir);
-
-		String cmd = "-p " + targetDir + " clean --dir results cooccurrence";
-		AMI.execute(cmd);
-
-		// delete children of ctrees
-		cmd = "-p " + targetDir + ""
-			+ " clean"
-			+ " --file "
-			+ " gene.human.count.xml"
-		    + " gene.human.snippets.xml"
-		    + " scholarly.html"
-//		    + " search.country.count.xml"
-//		    + " search.country.snippets.xml"
-//		    + " search.disease.count.xml"
-//		    + " search.disease.snippets.xml"
-//		    + " search.diterpene.count.xml"
-//		    + " search.diterpene.snippets.xml"
-//		    + " search.drugs.count.xml"
-//		    + " search.drugs.snippets.xml"
-//		    + " search.monoterpene.count.xml"
-//		    + " search.monoterpene.snippets.xml"
-//		    + " search.monoterpenes.count.xml"
-//		    + " search.monoterpenes.snippets.xml"
-//		    + " search.plantparts.count.xml"
-//		    + " search.plantparts.snippets.xml"
-//		    + " search.spices.count.xml"
-//		    + " search.spices.snippets.xml"
-		    + " species.binomial.count.xml"
-		    + " species.binomial.snippets.xml"
-		    + " word.frequencies.count.xml"
-		    + " word.frequencies.snippets.xml";
-		AMI.execute(cmd);
-	}
 
 	@Test
 	/**
@@ -172,7 +147,7 @@ public class AMICleanTest {
 		// delete children of ctrees
 		args = ""
 			+ "-p " + targetDir + " clean"
-			+ " --fileglob "
+			//+ " --fileglob "
 			+ " **/*.xml"
  			+ " gene.**.xml"
 		    + " **/species.*"
@@ -185,40 +160,34 @@ public class AMICleanTest {
 		System.out.println("files: "+files.size());
 	}
 
-	@Test
-	/**
-	 * tests cleaning directories in a project for ami-search
-	 */
-	public void testCleanResultsRegex() throws IOException {
-		File sourceDir = new File("src/test/resources/org/contentmine/ami/oil5");
-		CMFileUtil.assertExistingDirectory(sourceDir);
-		File targetDir = new File("target/oil5");
-		CMFileUtil.forceDelete(targetDir);
-		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
-		CMFileUtil.assertExistingDirectory(targetDir);
-		// old style. we'll replace
-		List<File> files = new CMineGlobber().setRegex(".*\\.xml").setLocation(targetDir).setRecurse(true).listFiles();
-		Assert.assertEquals("xml "+files.size(), 792, files.size());
-
-		String args;
-		// delete children of ctrees
-		args = ""
-			+ "-p " + targetDir + " clean"
-			+ " --fileregex "
-			+ " .*\\.xml"
-		    + "";
-		AMI.execute(args);
-		
-		files = new CMineGlobber().setRegex(".*\\.xml").setLocation(targetDir).setRecurse(true).listFiles();
-		Assert.assertEquals("xml "+files.size(), 0, files.size());
-		System.out.println("files: "+files.size());
-	}
-
-	@Test
-	public void testCommandsNew() {
-//		AbstractAMITool.runCommandsNew(args);
-		
-	}
+//	@Test
+//	/**
+//	 * tests cleaning directories in a project for ami-search
+//	 */
+//	public void testCleanResultsRegex() throws IOException {
+//		File sourceDir = new File("src/test/resources/org/contentmine/ami/oil5");
+//		CMFileUtil.assertExistingDirectory(sourceDir);
+//		File targetDir = new File("target/oil5");
+//		CMFileUtil.forceDelete(targetDir);
+//		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
+//		CMFileUtil.assertExistingDirectory(targetDir);
+//		// old style. we'll replace
+//		List<File> files = new CMineGlobber().setRegex(".*\\.xml").setLocation(targetDir).setRecurse(true).listFiles();
+//		Assert.assertEquals("xml "+files.size(), 792, files.size());
+//
+//		String args;
+//		// delete children of ctrees
+//		args = ""
+//			+ "-p " + targetDir + " clean"
+//			+ " --fileregex "
+//			+ " .*\\.xml"
+//		    + "";
+//		AMI.execute(args);
+//
+//		files = new CMineGlobber().setRegex(".*\\.xml").setLocation(targetDir).setRecurse(true).listFiles();
+//		Assert.assertEquals("xml "+files.size(), 0, files.size());
+//		System.out.println("files: "+files.size());
+//	}
 
 
 }
