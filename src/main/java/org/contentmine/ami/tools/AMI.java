@@ -49,7 +49,7 @@ import java.util.concurrent.Callable;
 				AMIDummyTool.class,
 				AMIFilterTool.class,
 				AMIForestPlotTool.class,
-				AMIGetpapersTool.class,
+				//AMIGetpapersTool.class, // https://github.com/petermr/ami3/issues/29
 				AMIGraphicsTool.class,
 				AMIGrobidTool.class,
 				AMIImageFilterTool.class,
