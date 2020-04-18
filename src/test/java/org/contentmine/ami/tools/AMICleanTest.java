@@ -56,7 +56,7 @@ public class AMICleanTest {
 			new Unzipper().extract(getClass().getResourceAsStream("/uclforest/forestplotssmall.zip"), temp.toFile());
 
 			// gather all project files
-			List<Path> before = listFully(temp);
+			List<Path> before = CMFileUtil.listFully(temp);
 			//System.out.println("BEFORE");
 			//before.forEach(System.out::println);
 			long svgCount = before.stream()
@@ -83,7 +83,7 @@ public class AMICleanTest {
 
 			// count all remaining files and assert the targers were deleted
 			System.out.println("AFTER");
-			List<Path> after = listFully(temp);
+			List<Path> after = CMFileUtil.listFully(temp);
 			//after.forEach(System.out::println);
 
 			long afterSvgCount = after.stream()
@@ -105,26 +105,6 @@ public class AMICleanTest {
 		} finally {
 			Files.walkFileTree(temp, new DirectoryDeleter());
 		}
-	}
-
-	private List<Path> listFully(Path temp) throws IOException {
-		List<Path> after = new ArrayList<>();
-		Files.walkFileTree(temp, new SimpleFileVisitor<Path>() {
-			// Invoke the pattern matching method on each file.
-			@Override
-			public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) {
-				after.add(file);
-				return CONTINUE;
-			}
-
-			// Invoke the pattern matching method on each directory.
-			@Override
-			public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) {
-				after.add(dir);
-				return CONTINUE;
-			}
-		});
-		return after;
 	}
 
 

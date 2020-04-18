@@ -10,7 +10,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.download.AbstractDownloader;
 import org.contentmine.ami.tools.download.AbstractMetadataEntry;
-import org.contentmine.ami.tools.download.ResultSet;
+import org.contentmine.ami.tools.download.HitList;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -62,7 +62,7 @@ public class ScieloDownloader extends AbstractDownloader {
 	 */
 
 	@Override
-	protected ResultSet createResultSet(Element element) {
+	protected HitList createHitList(Element element) {
 //		<ul class="highwire-search-results-list">
 		List<Element> ulList = XMLUtil.getQueryElements(element, 
 				"//*[local-name()='ul' and @class='" + "JUNK" + "']");
@@ -70,17 +70,17 @@ public class ScieloDownloader extends AbstractDownloader {
 		if (ulList.size() == 0) {
 			LOG.debug(element.toXML());
 			System.err.println("empty array");
-			return new ResultSet();
+			return new HitList();
 		}
 		Element ul = ulList.get(0);
-		ResultSet createResultSet = super.createResultSet(ul);
-		return createResultSet;
+		HitList createHitList = super.createHitList(ul);
+		return createHitList;
 	}
 
 	
 	@Override
 	/** creates new MetadataEntry populated with contents of contentElement
-	 * called when creating (or extending) a ResultSet
+	 * called when creating (or extending) a HitList
 	 * 
 	 */
 	protected AbstractMetadataEntry createMetadataEntry(Element contentElement) {
@@ -119,8 +119,8 @@ public class ScieloDownloader extends AbstractDownloader {
 	}
 
 	@Override
-	protected String getResultSetXPath() {
-		throw new RuntimeException("SCIELO getResultSetXPath NYI");
+	protected String getHitListXPath() {
+		throw new RuntimeException("SCIELO getHitListXPath NYI");
 	}
 
 	@Override

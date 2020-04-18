@@ -8,6 +8,8 @@ import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 
 /**
+ * @author Remko Popka
+ * 
  * Utility that can be used with the
  * <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/FileVisitor.html">FileVisitor</a> NIO API.
  * <p>Example:</p>

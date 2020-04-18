@@ -22,12 +22,12 @@ public abstract class AbstractSubDownloader {
 		LOG.setLevel(Level.DEBUG);
 	}
 
-	public static final String RESULT_SET = "resultSet";
+	public static final String RESULT_SET = "hitList";
 	public static final String CLEAN = "clean";
 
 	protected AbstractDownloader abstractDownloader;
 	protected AMIDownloadTool downloadTool;
-	protected ResultSet resultSet;
+	protected HitList hitList;
 	protected int downloadCount;
 
 
@@ -51,7 +51,7 @@ public abstract class AbstractSubDownloader {
 	}
 
 
-	void replaceBodyChildrenByResultSet(HtmlBody body, HtmlElement searchResultsList) {
+	void replaceBodyChildrenByHitList(HtmlBody body, HtmlElement searchResultsList) {
 		XMLUtil.removeChildren(body);
 		body.appendChild(searchResultsList);
 	}

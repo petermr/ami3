@@ -24,7 +24,7 @@ import org.contentmine.graphics.html.util.HtmlUtil;
 
 import nu.xom.Element;
 
-/** downloads the immediate results of a search to a ResultSet
+/** downloads the immediate results of a search to a HitList
  * 
  * @author pm286
  *

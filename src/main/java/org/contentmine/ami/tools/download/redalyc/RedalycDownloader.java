@@ -6,7 +6,7 @@ import java.util.List;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.download.AbstractDownloader;
-import org.contentmine.ami.tools.download.ResultSet;
+import org.contentmine.ami.tools.download.HitList;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlBody;
@@ -58,7 +58,7 @@ public class RedalycDownloader extends AbstractDownloader {
 	}
 
 	@Override
-	protected String getResultSetXPath() {
+	protected String getHitListXPath() {
 		return "//*[local-name()='ul' and @class='" + HIGHWIRE_SEARCH_RESULTS_LIST + "']";
 	}
 
@@ -81,8 +81,8 @@ public class RedalycDownloader extends AbstractDownloader {
 	}
 
 //	@Override
-	protected void resultSetErrorMessage() {
-		System.err.println("Cannot find metadata list: "+getResultSetXPath());
+	protected void hitListErrorMessage() {
+		System.err.println("Cannot find metadata list: "+getHitListXPath());
 	}
 	
 	@Override
@@ -92,7 +92,7 @@ public class RedalycDownloader extends AbstractDownloader {
 	
 	@Override
 	protected HtmlElement getSearchResultsList(HtmlBody body) {
-		return (HtmlUl) XMLUtil.getFirstElement(body, getResultSetXPath());
+		return (HtmlUl) XMLUtil.getFirstElement(body, getHitListXPath());
 	}
 	
 	@Override
@@ -114,19 +114,19 @@ public class RedalycDownloader extends AbstractDownloader {
 	https://www.biorxiv.org/search/coronavirus%20numresults%3A75%20sort%3Arelevance-rank?page=1
 	 */
 	@Override
-	protected ResultSet createResultSet(Element element) {
+	protected HitList createHitList(Element element) {
 	//		<ul class="highwire-search-results-list">
 		List<Element> ulList = XMLUtil.getQueryElements(element, 
-				getResultSetXPath());
+				getHitListXPath());
 		
 		if (ulList.size() == 0) {
 			LOG.debug(element.toXML());
 			System.err.println("empty array");
-			return new ResultSet();
+			return new HitList();
 		}
 		Element ul = ulList.get(0);
-		ResultSet createResultSet = super.createResultSet(ul);
-		return createResultSet;
+		HitList createHitList = super.createHitList(ul);
+		return createHitList;
 	}
 
 

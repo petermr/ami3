@@ -21,7 +21,7 @@ import org.contentmine.graphics.html.util.HtmlUtil;
 
 import nu.xom.Element;
 
-/** downloads the immediate results of a search to a ResultSet
+/** downloads the immediate results of a search to a HitList
  * 
  * @author pm286
  *
@@ -46,7 +46,7 @@ private static final Logger LOG = Logger.getLogger(QueryManager.class);
 	 * @return 
 	 * 
 	 */
-	public List<String> searchAndDownloadResultSet() {
+	public List<String> searchAndDownloadHitList() {
 	/**
 	https://www.biorxiv.org/search/coronavirus%20numresults%3A75%20sort%3Arelevance-rank?page=1
 	 * @throws IOException 
@@ -67,23 +67,23 @@ private static final Logger LOG = Logger.getLogger(QueryManager.class);
 		Integer page0 = pageList.get(0);
 		for (Integer page = page0; page <= pageList.get(1); page++) {
 			try {
-				searchAndDownloadMetadataResultSet(url, page);
+				searchAndDownloadMetadataHitList(url, page);
 			} catch (IOException e) {
 				LOG.error("Could not download hitpages: " + page, e);
 				continue;
 			}
 			if (page == page0) {
 				System.out.println("calculating hits NYI");
-//				int totalHits = getTotalHits(resultSetList);
+//				int totalHits = getTotalHits(hitListList);
 			}
 		}
 		// clean the files
-		List<Path> resultSetCleanPaths = this.getResultSetCleanFiles(metadataDir.toString());
-		List<String> resultSetList = new ArrayList<>();
-		for (Path path : resultSetCleanPaths) {
-			resultSetList.add(path.toFile().toString());
+		List<Path> hitListCleanPaths = this.getHitListCleanFiles(metadataDir.toString());
+		List<String> hitListList = new ArrayList<>();
+		for (Path path : hitListCleanPaths) {
+			hitListList.add(path.toFile().toString());
 		}
-		return resultSetList;
+		return hitListList;
 
 		
 	}
@@ -120,7 +120,7 @@ private static final Logger LOG = Logger.getLogger(QueryManager.class);
 		return s;
 	}
 		
-	/** creates target/biorxiv/testsearch3/__metadata/resultSet1.html, etc. for each "page"
+	/** creates target/biorxiv/testsearch3/__metadata/hitList1.html, etc. for each "page"
 	 * 
 	 * 
 	 * @param url
@@ -128,34 +128,34 @@ private static final Logger LOG = Logger.getLogger(QueryManager.class);
 	 * @return 
 	 * @throws IOException
 	 */
-	private ResultSet searchAndDownloadMetadataResultSet(String url, Integer page) throws IOException {
-		File resultSetFile = new File(metadataDir, RESULT_SET + page + "." + "html");
-		System.out.println("runing curl :" + url + " to " + resultSetFile);
+	private HitList searchAndDownloadMetadataHitList(String url, Integer page) throws IOException {
+		File hitListFile = new File(metadataDir, RESULT_SET + page + "." + "html");
+		System.out.println("runing curl :" + url + " to " + hitListFile);
 		url = addPageNumber(url, page);
 		CurlDownloader curlDownloader = new CurlDownloader()
 				.setUrlString(url)
-				.setOutputFile(resultSetFile);
+				.setOutputFile(hitListFile);
 		curlDownloader.run();
-		File cleanResultSetfile = cleanAndOutputResultSetFile(resultSetFile);
-		if (cleanResultSetfile != null) {
-			String resultSetContent = FileUtils.readFileToString(cleanResultSetfile, CMineUtil.UTF8_CHARSET);
-			resultSet = this.createResultSet1(resultSetContent);
-			resultSet.setUrl(url);
-			System.err.println("Results " + resultSet.size());
+		File cleanHitListfile = cleanAndOutputHitListFile(hitListFile);
+		if (cleanHitListfile != null) {
+			String hitListContent = FileUtils.readFileToString(cleanHitListfile, CMineUtil.UTF8_CHARSET);
+			hitList = this.createHitList1(hitListContent);
+			hitList.setUrl(url);
+			System.err.println("Results " + hitList.size());
 		}
-		return resultSet;
+		return hitList;
 	}
 
 	/**
-	 * called from downloadMetadataResultSet
+	 * called from downloadMetadataHitList
 	 * 
 	 * <ul class="highwire-search-results-list">
 	 <li class="first odd search-result result-jcode-biorxiv search-result-highwire-citation">
 	 * @return 
 	 */
-	private ResultSet createResultSet1(String result) {
+	private HitList createHitList1(String result) {
 		Element element = HtmlUtil.parseCleanlyToXHTML(result);
-		return abstractDownloader.createResultSet(element);
+		return abstractDownloader.createHitList(element);
 	}
 
 	/** adds ?page=n at end
@@ -168,29 +168,29 @@ private static final Logger LOG = Logger.getLogger(QueryManager.class);
 		return url == null ? null : url + "?page=" + page;
 	}
 
-	protected File cleanAndOutputResultSetFile(File file) {
+	protected File cleanAndOutputHitListFile(File file) {
 		Element element = HtmlUtil.parseCleanlyToXHTML(file);
 		HtmlHtml htmlHtml = (HtmlHtml) HtmlElement.create(element);
 		HtmlBody body = htmlHtml.getBody();
 		if (body == null) {
-			System.err.println("null body in cleanAndOutputResultSetFile");
+			System.err.println("null body in cleanAndOutputHitListFile");
 			return null;
 		}
 		HtmlElement searchResultsList = cleanAndDetachSearchResults(body);
 		if (searchResultsList == null) {
-			resultSetErrorMessage();
+			hitListErrorMessage();
 			return null;
 		}
 		cleanHtmlRemoveLinkCommentEtc(htmlHtml);
-		replaceBodyChildrenByResultSet(body, searchResultsList);
+		replaceBodyChildrenByHitList(body, searchResultsList);
 		File cleanFile = new File(file.getAbsoluteFile().toString().replace(".html", "." + AbstractSubDownloader.CLEAN + ".html"));
-		System.out.println("wrote resultSet: "+cleanFile);
+		System.out.println("wrote hitList: "+cleanFile);
 		XMLUtil.writeQuietly(htmlHtml, cleanFile, 1);
 		return cleanFile;
 	}
 
-	protected void resultSetErrorMessage() {
-		System.err.println("Cannot write resultSet");
+	protected void hitListErrorMessage() {
+		System.err.println("Cannot write hitList");
 	}
 
 /** called from AMIDownloadTool
@@ -198,7 +198,7 @@ private static final Logger LOG = Logger.getLogger(QueryManager.class);
 	 * 
 	 * @throws IOException
 	 */
-	public List<Path> getResultSetCleanFiles(String metadataDir) {
+	public List<Path> getHitListCleanFiles(String metadataDir) {
 /**
  * @throws IOException 
  */

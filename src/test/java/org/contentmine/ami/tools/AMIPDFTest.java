@@ -1,7 +1,6 @@
 package org.contentmine.ami.tools;
 
 import java.io.File;
-
 import java.io.IOException;
 
 import org.apache.log4j.Appender;
@@ -10,8 +9,6 @@ import org.apache.log4j.Layout;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PatternLayout;
-import org.contentmine.ami.tools.AMICleanTool;
-import org.contentmine.ami.tools.AMIPDFTool;
 import org.contentmine.cproject.files.CProject;
 import org.junit.Assert;
 import org.junit.Test;
@@ -64,20 +61,41 @@ public class AMIPDFTest extends AbstractAMITest {
 	public void testForestPlotsSmallSVG() throws Exception {
 		String projectDir = "/Users/pm286/workspace/uclforest/forestplotssmall";
 		// delete the existing svg/ directories
-		new AMICleanTool().runCommands("-p " + projectDir + " --dir svg/");
+//		new AMICleanTool().runCommands("-p " + projectDir + " --dir svg/");
 		// and then recreate them
-		String[] args = {
-				"-p", projectDir,
-				"--rawfiletypes", "pdf",
-				"--maxpages", "20",
-				"--pdfimages", "false",
-				"--svgpages", "true",
-				};
-		Assert.assertTrue(new File(args[1]).exists());
-		AMIPDFTool amiProcessorPDF = new AMIPDFTool();
-		amiProcessorPDF.runCommands(args);
-		CProject cProject = amiProcessorPDF.getCProject();
-		Assert.assertNotNull("CProject not null", cProject);
+		String args = 
+				"-p " + projectDir
+				+ " pdf"
+				+ " --rawfiletypes pdf"
+				+ " --maxpages 20"
+				+ " --pdfimages false"
+				+ " --svgpages true"
+				;
+//		Assert.assertTrue(new File(args[1]).exists());
+		
+//		AMIPDFTool amiProcessorPDF = new AMIPDFTool();
+//		amiProcessorPDF.runCommands(args);
+		AMIPDFTool amiPdf = AMI.execute(AMIPDFTool.class, args);
+
+//		CProject cProject = amiProcessorPDF.getCProject();
+//		Assert.assertNotNull("CProject not null", cProject);
+	}
+
+	@Test
+	/** reads UCL corpus as PDFs and creates first pass SVG , images and scholarly html
+	 * 
+	 */
+	public void testForestPlotsSmallSVG1() throws Exception {
+		String projectDir = "/Users/pm286/workspace/uclforest/forestplotssmall";
+		String args = 
+				"-p " + projectDir
+				+ " pdf"
+				+ " --rawfiletypes pdf"
+				+ " --maxpages 20"
+				+ " --pdfimages false"
+				+ " --svgpages true"
+				;
+		AMIPDFTool amiPdf = AMI.execute(AMIPDFTool.class, args);
 	}
 
 	@Test

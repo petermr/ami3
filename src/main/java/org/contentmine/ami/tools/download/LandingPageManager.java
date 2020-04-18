@@ -24,7 +24,7 @@ import org.contentmine.graphics.html.util.HtmlUtil;
 
 import nu.xom.Element;
 
-/** downloads the entries of a search/ResultSet to individual landingPages
+/** downloads the entries of a search/HitList to individual landingPages
  * 
  * @author pm286
  *
@@ -150,10 +150,10 @@ public class LandingPageManager extends AbstractSubDownloader {
 	public void downloadLandingPages() {
 		landingPageFilerootList = new ArrayList<>();
 		cTreeNameList = new ArrayList<>();
-		if (downloadTool.resultSetList.size() > 0) {
-			for (String resultSetFilename : downloadTool.resultSetList) {
-				System.out.println("download files in resultSet "+resultSetFilename);
-				downloadLandingPagesForResultSet(new File(resultSetFilename));
+		if (downloadTool.hitListList.size() > 0) {
+			for (String hitListFilename : downloadTool.hitListList) {
+				System.out.println("download files in hitList "+hitListFilename);
+				downloadLandingPagesForHitList(new File(hitListFilename));
 			}
 		} else {
 			System.err.println("NO RESULT SETS");
@@ -164,20 +164,20 @@ public class LandingPageManager extends AbstractSubDownloader {
 	 * 
 	 * @param filename
 	 */
-	private void downloadLandingPagesForResultSet(File resultSetFile) {
-		System.out.println("result set: " + resultSetFile);
+	private void downloadLandingPagesForHitList(File hitListFile) {
+		System.out.println("result set: " + hitListFile);
 //		abstractDownloader.setCProject(cProject);
 	
-		ResultSet resultSet = abstractDownloader.createResultSet(resultSetFile);
-		List<String> fileroots = resultSet.getCitationLinks();
+		HitList hitList = abstractDownloader.createHitList(hitListFile);
+		List<String> fileroots = hitList.getCitationLinks();
 		landingPageFilerootList.addAll(fileroots);
 		String result = null;
 		try {
 			result = this.downloadLandingPagesWithCurl(fileroots);
 		} catch (IOException e) {
-			throw new RuntimeException("Cannot extract resultSet "+resultSetFile, e);
+			throw new RuntimeException("Cannot extract hitList "+hitListFile, e);
 		}
-		System.out.println("--------\n+downloaded "+fileroots.size()+" files for "+resultSetFile+"\n--------");
+		System.out.println("--------\n+downloaded "+fileroots.size()+" files for "+hitListFile+"\n--------");
 	}
 
 	private HtmlHtml getLandingPageHtml(String content) {

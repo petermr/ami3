@@ -13,7 +13,7 @@ import org.junit.Test;
 public class OSFTest {
 
 	@Test
-	/** issues a search  and turns results into resultSet
+	/** issues a search  and turns results into hitList
 	 * 
 	 */
 	public void testOSFIT() throws IOException {
@@ -30,12 +30,12 @@ public class OSFTest {
 				+ " --pagesize 4"
 				+ " --pages 1 1"
 				+ " --limit 4"
-				+ " --resultset resultSet1.clean.html"
+				+ " --resultset hitList1.clean.html"
 			;
 		AMIDownloadTool downloadTool = new AMIDownloadTool();
 		downloadTool.runCommands(args);
-		Assert.assertTrue(new File(targetDir, "__metadata/resultSet1.html").exists());
-		Assert.assertTrue(new File(targetDir, "__metadata/resultSet1.clean.html").exists());
+		Assert.assertTrue(new File(targetDir, "__metadata/hitList1.html").exists());
+		Assert.assertTrue(new File(targetDir, "__metadata/hitList1.clean.html").exists());
 		CTreeList cTreeList = new CProject(targetDir).getOrCreateCTreeList();
 		Assert.assertEquals(4, cTreeList.size());
 		File directory0 = cTreeList.get(0).getDirectory();

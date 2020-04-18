@@ -174,14 +174,14 @@ public class AMIDownloadTool extends AbstractAMITool {
 
     @Option(names = {"--resultset"},
     		arity = "1..*",
-            description = "resultSets to download (filenames, experimental). If omitted, "
+            description = "hitLists to download (filenames, experimental). If omitted, "
             		+ "created by programs")
-	public List<String> resultSetList = new ArrayList<>();
+	public List<String> hitListList = new ArrayList<>();
 
     @Option(names = {"--site"},
     		arity = "1",
             description = "site to search")
-    private SearchSite site = null;
+    private SearchSite site = SearchSite.biorxiv;
 
 	@Option(names = {"--rawfiletypes"},
 			arity = "1..*",
@@ -249,7 +249,7 @@ public class AMIDownloadTool extends AbstractAMITool {
 		System.out.println("pages              " + pageList);
 		System.out.println("pagesize           " + pagesize);
 		System.out.println("query              " + queryList);
-		System.out.println("resultSetList      " + resultSetList);
+		System.out.println("hitListList      " + hitListList);
 		System.out.println("site               " + site);
 		System.out.println("file types          " + rawFileFormats);
 		System.out.println();
@@ -259,13 +259,13 @@ public class AMIDownloadTool extends AbstractAMITool {
     protected void runSpecifics() {
 		downloader = createDownloader();
 
-		// Get and ouptut resultSets
+		// Get and ouptut hitLists
 		QueryManager queryManager = downloader.getOrCreateQueryManager();
-		resultSetList = queryManager.searchAndDownloadResultSet();
-		int size = resultSetList.size();
+		hitListList = queryManager.searchAndDownloadHitList();
+		int size = hitListList.size();
 		System.out.println(""
-				+ "  ========\nResultSet: "+size+""
-				+ "\n creates resultSet[1.."+size+"][.clean].html"
+				+ "  ========\nHitList: "+size+""
+				+ "\n creates hitList[1.."+size+"][.clean].html"
 				+ "\n and <per-ctree>/scrapedMetadata.html"
 				+ "\n========");
 		
@@ -352,7 +352,7 @@ public class AMIDownloadTool extends AbstractAMITool {
 	}
 	
 	public List<String> getResultsSetList() {
-		return resultSetList;
+		return hitListList;
 	}
 
 	public List<FulltextFormat> getFulltextFormats() {

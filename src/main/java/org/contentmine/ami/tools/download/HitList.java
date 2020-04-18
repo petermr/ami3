@@ -13,8 +13,8 @@ import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeList;
 import org.contentmine.eucl.xml.XMLUtil;
 
-public class ResultSet {
-	private static final Logger LOG = Logger.getLogger(ResultSet.class);
+public class HitList {
+	private static final Logger LOG = Logger.getLogger(HitList.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
@@ -24,11 +24,11 @@ public class ResultSet {
 	private String base;
 	private URL url;
 	
-	public ResultSet() {
+	public HitList() {
 		this.metadataEntryList = new ArrayList<>();
 	}
 
-	public ResultSet(List<AbstractMetadataEntry> metadataEntryList) {
+	public HitList(List<AbstractMetadataEntry> metadataEntryList) {
 		this.metadataEntryList = new ArrayList<>(metadataEntryList);
 	}
 

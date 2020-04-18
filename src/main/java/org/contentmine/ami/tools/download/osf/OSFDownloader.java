@@ -10,7 +10,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.download.AbstractDownloader;
 import org.contentmine.ami.tools.download.AbstractMetadataEntry;
-import org.contentmine.ami.tools.download.ResultSet;
+import org.contentmine.ami.tools.download.HitList;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -64,7 +64,7 @@ https://osf.io/preprints/discover?climate%252Bchange%20sort%3Arelevance-rank%20n
 	 */
 
 	@Override
-	protected ResultSet createResultSet(Element element) {
+	protected HitList createHitList(Element element) {
 //		<ul class="highwire-search-results-list">
 		List<Element> ulList = XMLUtil.getQueryElements(element, 
 				"//*[local-name()='ul' and @class='" + "junk" + "']");
@@ -72,17 +72,17 @@ https://osf.io/preprints/discover?climate%252Bchange%20sort%3Arelevance-rank%20n
 		if (ulList.size() == 0) {
 			LOG.debug(element.toXML());
 			System.err.println("empty array");
-			return new ResultSet();
+			return new HitList();
 		}
 		Element ul = ulList.get(0);
-		ResultSet createResultSet = super.createResultSet(ul);
-		return createResultSet;
+		HitList createHitList = super.createHitList(ul);
+		return createHitList;
 	}
 
 	
 	@Override
 	/** creates new MetadataEntry populated with contents of contentElement
-	 * called when creating (or extending) a ResultSet
+	 * called when creating (or extending) a HitList
 	 * 
 	 */
 	protected AbstractMetadataEntry createMetadataEntry(Element contentElement) {
@@ -123,8 +123,8 @@ https://osf.io/preprints/discover?climate%252Bchange%20sort%3Arelevance-rank%20n
 	}
 
 	@Override
-	protected String getResultSetXPath() {
-		throw new RuntimeException("OSF getResultSetXPath NYI");
+	protected String getHitListXPath() {
+		throw new RuntimeException("OSF getHitListXPath NYI");
 	}
 
 	@Override

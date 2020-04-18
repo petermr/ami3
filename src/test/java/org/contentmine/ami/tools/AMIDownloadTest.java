@@ -10,7 +10,7 @@ import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.download.AbstractMetadataEntry;
-import org.contentmine.ami.tools.download.ResultSet;
+import org.contentmine.ami.tools.download.HitList;
 import org.contentmine.ami.tools.download.biorxiv.BiorxivDownloader;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
@@ -107,13 +107,13 @@ public class AMIDownloadTest extends AbstractAMITest {
 	 * fails around
 	 * ...
 running [curl, -X, GET, https://www.biorxiv.org/content/10.1101/798546v1]
-.skipping (existing) resultSet: target/biorxiv/10_1101_798546v1
+.skipping (existing) hitList: target/biorxiv/10_1101_798546v1
 skipping existing : abstract.html
 skipping existing : fulltext.html
 skipping existing : fulltext.pdf
 skipped: 10_1101_2020_03_17_995209v1
 running [curl, -X, GET, https://www.biorxiv.org/content/10.1101/2020.03.17.995209v1]
-.skipping (existing) resultSet: target/biorxiv/10_1101_2020_03_17_995209v1
+.skipping (existing) hitList: target/biorxiv/10_1101_2020_03_17_995209v1
 skipping existing : abstract.html
 skipping existing : fulltext.html
 skipping existing : fulltext.pdf
@@ -131,7 +131,7 @@ CANNOT PARSE:
 1394887 [main] ERROR org.contentmine.ami.tools.download.AbstractMetadataEntry  - Cannot parse: java.lang.RuntimeException: nu.xom.ParsingException: The reference to entity "amp" must end with the ';' delimiter. at line 341, column 633
 .skipped: 10_1101_455568v1
 running [curl, -X, GET, https://www.biorxiv.org/content/10.1101/455568v1]
-.skipping (existing) resultSet: target/biorxiv/10_1101_455568v1
+.skipping (existing) hitList: target/biorxiv/10_1101_455568v1
 skipping existing : abstract.html
 skipping existing : fulltext.html
 skipping existing : fulltext.pdf
@@ -157,13 +157,13 @@ likely to be edited frequently while debugging!
 				+ " --limit 2000"
 			;
 		new AMIDownloadTool().runCommands(args);
-// first creates the resultSets		
+// first creates the hitLists		
 
 //		File file962688v1 = new File(biorxiv, "10_1101_2020_02_24_962688v1");
 //		Assert.assertTrue(""+file962688v1, file962688v1.exists());
 //		Assert.assertTrue(""+file962688v1, new File(file962688v1, "abstract.html").exists());
 //		Assert.assertTrue(""+file962688v1, new File(file962688v1, "landingPage.html").exists());
-//		Assert.assertTrue(""+file962688v1, new File(file962688v1, "resultSet.html").exists());
+//		Assert.assertTrue(""+file962688v1, new File(file962688v1, "hitList.html").exists());
 //		Assert.assertTrue(""+file962688v1, new File(file962688v1, "scrapedMetadata.html").exists());
 //		Assert.assertTrue(""+file962688v1, new File(file962688v1, "fulltext.html").exists());
 //		Assert.assertTrue(""+file962688v1, new File(file962688v1, "fulltext.pdf").exists());
@@ -176,6 +176,27 @@ likely to be edited frequently while debugging!
  */
 	}
 
+	@Test
+	public void testSmallMultipageSearch() {
+		String args;
+		String biorxiv = "target/biorxiv/aardvark";
+        args = "-p " + "target" + " --dir biorxiv";
+		new AMICleanTool().runCommands(args);
+		
+		args = 
+				"-p " + biorxiv +""
+				+ " download"
+				+ " --site biorxiv"
+				+ " --query aardvark"
+				+ " --pagesize 10"
+				+ " --pages 1 4"        // should leave page 4 blank
+				+ " --fulltext html"
+				+ " --limit 2000"
+			;
+//		new AMIDownloadTool().runCommands(args);
+		AMIDownloadTool amiDownload = AMI.execute(AMIDownloadTool.class, args);
+
+	}
 	@Test
 	/** 
 	 * run query
@@ -196,7 +217,7 @@ likely to be edited frequently while debugging!
 // I think this is an outdated Assert.
 //		Assert.assertTrue(new File("target/biorxiv/climate/metadata/page1.html").exists());
 //		these should work
-		Assert.assertTrue(new File("target/biorxiv/climate/__metadata/resultSet3.html").exists());
+		Assert.assertTrue(new File("target/biorxiv/climate/__metadata/hitList3.html").exists());
 		Assert.assertTrue(new File("target/biorxiv/climate/10_1101_2019_12_16_878348v1/landingPage.html").exists());
 		Assert.assertTrue(new File("target/biorxiv/climate/10_1101_2019_12_16_878348v1/rawFullText.html").exists());
 		Assert.assertTrue(new File("target/biorxiv/climate/10_1101_2019_12_16_878348v1/scholarly.html").exists());
@@ -254,7 +275,7 @@ likely to be edited frequently while debugging!
 //	public void testCurlDownloaderMultiple() throws Exception {
 //		File downloadDir = new File("target/biorxiv/");
 //		CurlDownloader curlDownloader = new CurlDownloader();
-//		// these are verbatim from the resultSet file
+//		// these are verbatim from the hitList file
 //		String[] fileroots = {
 //			       "/content/10.1101/2020.01.24.917864v1",
 //			       "/content/10.1101/850289v1",
@@ -284,16 +305,16 @@ likely to be edited frequently while debugging!
 	/**
 	 * 
 	 */
-	public void testCreateUnpopulatedCTreesFromResultSet() throws IOException {
+	public void testCreateUnpopulatedCTreesFromHitList() throws IOException {
 		File targetDir = new File("target/biorxiv/climate");
 		CMineTestFixtures.cleanAndCopyDir(CLIMATE_DIR, targetDir);
 		
 		CProject cProject = new CProject(targetDir);
 		File metadataDir = cProject.getOrCreateExistingMetadataDir();
-		/** reads existing resultSet file to create object */
-		ResultSet resultSet = new BiorxivDownloader().setCProject(cProject).createResultSet(new File(metadataDir, "resultSet1.clean.html"));
+		/** reads existing hitList file to create object */
+		HitList hitList = new BiorxivDownloader().setCProject(cProject).createHitList(new File(metadataDir, "hitList1.clean.html"));
 		// result set had default 10 entries
-		List<AbstractMetadataEntry> metadataEntryList = resultSet.getMetadataEntryList();
+		List<AbstractMetadataEntry> metadataEntryList = hitList.getMetadataEntryList();
 		Assert.assertEquals("metadata", 10, +metadataEntryList.size());
 		// metadata directory had 3 results sets, each raw and clean
 		Assert.assertEquals(6, metadataDir.listFiles().length);
@@ -303,7 +324,7 @@ likely to be edited frequently while debugging!
 		// this is the __metadata directory
 		Assert.assertEquals(1,  cProject.getDirectory().listFiles().length);
 		// create trees from result set
-		resultSet.createCTrees(cProject);
+		hitList.createCTrees(cProject);
 		Assert.assertEquals("Ctree count", 10, cProject.getOrCreateCTreeList().size());
 		
 		
@@ -313,15 +334,15 @@ likely to be edited frequently while debugging!
 //	/**
 //	 * as above, but download landing pages
 //	 */
-//	public void testCreateCTreeLandingPagesFromResultSetIT() throws IOException {
+//	public void testCreateCTreeLandingPagesFromHitListIT() throws IOException {
 //		File targetDir = new File("target/biorxiv/climate");
 //		CMineTestFixtures.cleanAndCopyDir(CLIMATE_DIR, targetDir);
 //		
 //		CProject cProject = new CProject(targetDir).cleanAllTrees();
 //		File metadataDir = cProject.getOrCreateExistingMetadataDir();
 //		AbstractDownloader biorxivDownloader = new BiorxivDownloader().setCProject(cProject);
-//		ResultSet resultSet = biorxivDownloader.createResultSet(new File(metadataDir, "resultSet1.clean.html"));
-//		List<String> fileroots = resultSet.getCitationLinks();
+//		HitList hitList = biorxivDownloader.createHitList(new File(metadataDir, "hitList1.clean.html"));
+//		List<String> fileroots = hitList.getCitationLinks();
 //		CurlDownloader curlDownloader = new CurlDownloader();
 //		for (String fileroot : fileroots) {
 //			curlDownloader.addCurlPair(biorxivDownloader.createLandingPageCurlPair(cProject.getDirectory(), fileroot));
@@ -337,11 +358,11 @@ likely to be edited frequently while debugging!
 //	}
 	
 	@Test
-	/** issues a search  and turns results into resultSet
+	/** issues a search  and turns results into hitList
 	 * 
 	 * LONG 68 s
 	 */
-	public void testBiorxivSearchResultSetIT() throws IOException {
+	public void testBiorxivSearchHitListIT() throws IOException {
 		File targetDir = new File("target/biorxiv/testsearch4");
 		FileUtils.deleteQuietly(targetDir);
 		CProject cProject = new CProject(targetDir).cleanAllTrees();
@@ -355,12 +376,12 @@ likely to be edited frequently while debugging!
 				+ " --pagesize 4"
 				+ " --pages 1 1"
 				+ " --limit 4"
-				+ " --resultset resultSet1.clean.html"
+				+ " --resultset hitList1.clean.html"
 			;
 		AMIDownloadTool downloadTool = new AMIDownloadTool();
 		downloadTool.runCommands(args);
-		Assert.assertTrue(new File(targetDir, "__metadata/resultSet1.html").exists());
-		Assert.assertTrue(new File(targetDir, "__metadata/resultSet1.clean.html").exists());
+		Assert.assertTrue(new File(targetDir, "__metadata/hitList1.html").exists());
+		Assert.assertTrue(new File(targetDir, "__metadata/hitList1.clean.html").exists());
 		CTreeList cTreeList = new CProject(targetDir).getOrCreateCTreeList();
 		Assert.assertEquals(4, cTreeList.size());
 		File directory0 = cTreeList.get(0).getDirectory();
@@ -396,11 +417,11 @@ likely to be edited frequently while debugging!
 	}
 
 	@Test
-	/** issues a search  and turns results into resultSet
+	/** issues a search  and turns results into hitList
 	 * 
 	 * LONG 60
 	 */
-	public void testBiorxivSearchResultSetLargeIT() throws IOException {
+	public void testBiorxivSearchHitListLargeIT() throws IOException {
 		int pagesize = 3;
 		int pages = 2;
 		File targetDir = new File("target/biorxiv/testsearch" + pagesize);
@@ -418,7 +439,7 @@ likely to be edited frequently while debugging!
 				+ " --pagesize " + pagesize
 				+ " --pages 1 " + pages
 //				+ " --limit " + (pagesize * pages)
-//				+ " --resultset resultSet1.clean.html"
+//				+ " --resultset hitList1.clean.html"
 			;
 		AMIDownloadTool downloadTool = new AMIDownloadTool();
 		downloadTool.runCommands(args);
@@ -427,11 +448,11 @@ likely to be edited frequently while debugging!
 
 	
 	@Test
-	/** issues a search  and turns results into resultSet
+	/** issues a search  and turns results into hitList
 	 * 
 	 */
 	@Ignore // HTML DTD problem 
-	public void testHALSearchResultSet() throws IOException {
+	public void testHALSearchHitList() throws IOException {
 		File targetDir = new File("target/hal/testsearch4");
 		FileUtils.deleteQuietly(targetDir);
 		CProject cProject = new CProject(targetDir).cleanAllTrees();
@@ -445,12 +466,12 @@ likely to be edited frequently while debugging!
 				+ " --pagesize 4"
 				+ " --pages 1 1"
 				+ " --limit 4"
-				+ " --resultset resultSet1.clean.html"
+				+ " --resultset hitList1.clean.html"
 			;
 		AMIDownloadTool downloadTool = new AMIDownloadTool();
 		downloadTool.runCommands(args);
-		Assert.assertTrue(new File(targetDir, "__metadata/resultSet1.html").exists());
-		Assert.assertTrue(new File(targetDir, "__metadata/resultSet1.clean.html").exists());
+		Assert.assertTrue(new File(targetDir, "__metadata/hitList1.html").exists());
+		Assert.assertTrue(new File(targetDir, "__metadata/hitList1.clean.html").exists());
 		CTreeList cTreeList = new CProject(targetDir).getOrCreateCTreeList();
 		Assert.assertEquals(4, cTreeList.size());
 		File directory0 = cTreeList.get(0).getDirectory();
@@ -554,10 +575,10 @@ likely to be edited frequently while debugging!
 	 */
 	
 	@Test 
-	public void testCreateResultSet() {
-		File resultSetClean1 = new File("src/test/resources/org/contentmine/ami/tools/download/scielo/resultSet1.mid.html");
-		Assert.assertTrue("resultSet1.mid", resultSetClean1.exists());
-		Element resultSet1mid = XMLUtil.parseQuietlyToRootElement(resultSetClean1);
+	public void testCreateHitList() {
+		File hitListClean1 = new File("src/test/resources/org/contentmine/ami/tools/download/scielo/hitList1.mid.html");
+		Assert.assertTrue("hitList1.mid", hitListClean1.exists());
+		Element hitList1mid = XMLUtil.parseQuietlyToRootElement(hitListClean1);
 /**
   <center>
     <table width="600" border="0" cellpadding="0" cellspacing="0">
@@ -582,16 +603,16 @@ likely to be edited frequently while debugging!
 //		    <td width="15%"> </td>
 //		    <td>
 //		     <font class="isoref" 
-		List<Element> biblioList = XMLUtil.getQueryElements(resultSet1mid, ".//tbody/tr/td//.[font[@class='negrito']]");
+		List<Element> biblioList = XMLUtil.getQueryElements(hitList1mid, ".//tbody/tr/td//.[font[@class='negrito']]");
 		Assert.assertEquals("biblio", 10, biblioList.size());
-		Element resultSetUl = new HtmlUl();
+		Element hitListUl = new HtmlUl();
 		for (Element biblio : biblioList) {
 			HtmlLi li = new HtmlLi();
-			resultSetUl.appendChild(li);
+			hitListUl.appendChild(li);
 			biblio.detach();
 			li.appendChild(biblio);
 		}
-		XMLUtil.writeQuietly(resultSetUl, new File("target/scielo/ul.html"), 1);
+		XMLUtil.writeQuietly(hitListUl, new File("target/scielo/ul.html"), 1);
 		
 		System.out.println("B "+biblioList.size());
 		

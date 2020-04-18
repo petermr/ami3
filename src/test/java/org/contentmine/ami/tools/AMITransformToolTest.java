@@ -71,9 +71,9 @@ public class AMITransformToolTest {
 		String command = ""
 				+ "-p target"
 				+ " --tidy jsoup"
-				+ " --input src/test/resoures/org/contentmine/ami/tools/download/scielo/resultSet1.html"
+				+ " --input src/test/resoures/org/contentmine/ami/tools/download/scielo/hitList1.html"
 				;
-		File file = new File("src/test/resoures/org/contentmine/ami/tools/download/scielo/resultSet1.html");
+		File file = new File("src/test/resoures/org/contentmine/ami/tools/download/scielo/hitList1.html");
 		Assert.assertTrue("file exists", file.exists());
 		Document jdoc = Jsoup.parse(file, CMineUtil.UTF_8.toString());
 //		System.out.println("DOC>"+JsoupWrapper.jSoupToXOM(jdoc).toXML());

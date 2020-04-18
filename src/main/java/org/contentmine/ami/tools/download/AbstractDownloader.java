@@ -32,7 +32,7 @@ import nu.xom.Element;
 	public FullFileManager getOrCreateFullFileManager();
 	
 	A QueryManagerissues a query to a remove API or similar search. The result is normally a list of
-	hits/results, formalised by a ResultSet class. The results are often in chunks (pages) determined by the
+	hits/results, formalised by a HitList class. The results are often in chunks (pages) determined by the
 	host API, sometimes settable by the client. QM can limit the pages and iterate over then or a subset.
 	Outcome is preserved by files in cProject/metadata. Thes can be interrogated later by LandingPageManager
 	
@@ -77,7 +77,7 @@ public abstract class AbstractDownloader {
 	private FulltextManager fulltextManager;
 	private FullFileManager fullFileManager;
 	
-	protected ResultSet resultSet;
+	protected HitList hitList;
 	
 	protected AbstractDownloader() {
 	}
@@ -101,7 +101,7 @@ public abstract class AbstractDownloader {
 	protected abstract void cleanSearchResultsList(HtmlElement searchResultsList);
 	/** the main article */
 	protected abstract HtmlElement getArticleElement(HtmlHtml htmlHtml);
-	protected abstract String getResultSetXPath();
+	protected abstract String getHitListXPath();
 	protected abstract AbstractMetadataEntry createSubclassedMetadataEntry();
 
 
@@ -131,12 +131,12 @@ public abstract class AbstractDownloader {
 	}
 
 	/** 
-	 * usually called by createResultSet in subclassed Downloader
+	 * usually called by createHitList in subclassed Downloader
 	 * 
 	 * @param containerElement
 	 * @return
 	 */
-	protected ResultSet createResultSet(Element containerElement) {
+	protected HitList createHitList(Element containerElement) {
 		metadataEntryList = new ArrayList<>();
 		List<Element> entryElementList = createEntryElementList(containerElement);
 		for (Element entryElement : entryElementList) {
@@ -146,11 +146,11 @@ public abstract class AbstractDownloader {
 			addMetadataToCTree(entryElement, doi);
 		}
 		System.out.println("metadataEntries "+metadataEntryList.size());
-		resultSet = new ResultSet(metadataEntryList);
-		return resultSet;
+		hitList = new HitList(metadataEntryList);
+		return hitList;
 	}
 
-	/** used in creating ResultSet
+	/** used in creating HitList
 	 * 
 	 * @param entryElement
 	 * @param doi
@@ -187,7 +187,7 @@ public abstract class AbstractDownloader {
 	 * Typically containerElement is a <ul> and the children are <li>
 	 * might be overridden
 	 * 
-	 * used in creating ResultSet
+	 * used in creating HitList
 	 * 
 	 * @param containerElement
 	 * @return
@@ -228,12 +228,12 @@ public abstract class AbstractDownloader {
 	 * @param file
 	 * @return
 	 */
-	public ResultSet createResultSet(File file) {
+	public HitList createHitList(File file) {
 		if (!file.exists()) {
 			throw new RuntimeException("file does not exist: "+file);
 		}
 		HtmlHtml html = (HtmlHtml) HtmlElement.create(HtmlUtil.parseCleanlyToXHTML(file));
-		return createResultSet(html);
+		return createHitList(html);
 	}
 
 	/** maybe move to DownloadTool
@@ -300,7 +300,7 @@ public abstract class AbstractDownloader {
 	}
 
 	protected List<String> getCitationLinks() {
-		return resultSet == null ? new ArrayList<>() : resultSet.getCitationLinks();
+		return hitList == null ? new ArrayList<>() : hitList.getCitationLinks();
 	}
 
 	protected AbstractMetadataEntry createMetadataEntry(Element contentElement) {
