@@ -126,7 +126,8 @@ public class AMICleanTest {
 		String args;
 		// delete children of ctrees
 		args = ""
-			+ "-p " + targetDir + " clean"
+			+ "-p " + targetDir
+			+ " clean"
 			//+ " --fileglob "
 			+ " **/*.xml"
  			+ " gene.**.xml"

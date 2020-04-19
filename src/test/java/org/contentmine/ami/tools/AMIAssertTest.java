@@ -26,7 +26,7 @@ public class AMIAssertTest {
 		LOG.debug("dir "+dir+" "+Arrays.asList(dir.listFiles()));
 
 		/** calculate projections and lines */
-		AMI.main("-p " + dir
+		AMI.execute("-p " + dir
 				+ " --inputname "+"raw.png"
 				+ " assert "
 				+ " --type image"

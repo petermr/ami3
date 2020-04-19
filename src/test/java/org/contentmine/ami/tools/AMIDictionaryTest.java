@@ -35,19 +35,20 @@ public class AMIDictionaryTest extends AbstractAMITest {
 
 	@Test
 	public void testHelp() {
-		String args = "--help";
-		AMIDictionaryTool.main(args);
+		String args = "dictionary --help";
+		AMI.execute(args);
 	}
 	
 	@Test
 	@Ignore // BAD DICTIONARIES?
 	public void testListSome() {
 		String args =
-				"display " +
-		   " --directory src/main/resources/org/contentmine/ami/plugins/dictionary " +
-           " --dictionary " + "country crispr disease"
+				"dictionary "
+						+ "display "
+						+ " --directory src/main/resources/org/contentmine/ami/plugins/dictionary "
+						+ " --dictionary " + "country crispr disease"
 				;
-		AMIDictionaryTool.main(args);
+		AMI.execute(args);
 	}
 	
 	@Test
@@ -57,6 +58,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 		File directory = new File("/Users/pm286/ContentMine/dictionary/dictionaries/chem");
 		String dictionary = "fungicides2";
 		String args =
+			"dictionary " +
 			"create " +
 			" --directory " + directory + " " +
             " --dictionary " + dictionary +
@@ -86,7 +88,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 //           		+ " Triclosan Tricyclazole Tridemorph Trimethoprim Tunicamycin Tylosin Valinomycin Vancomycin"
            		+ " Verapamil Vinclozolin Virginiamycin Voriconazole"
 				;
-		AMIDictionaryTool.main(args);
+		AMI.execute(args);
 //		Assert.assertTrue(""+directory, new directory.exists());
 	}
 	
@@ -105,14 +107,15 @@ public class AMIDictionaryTest extends AbstractAMITest {
 		FileUtils.writeLines(fungicideFile, fungicides);
 		
 		String args =
-				"create " +
+				"dictionary "
+						+ "create " +
 		    " --informat list" +
 		    " --directory " + directory + " " +
             " --dictionary " + dictionary +
             " --outformats html,xml " +
             " --input " + fungicideFile
 				;
-		AMIDictionaryTool.main(args);
+		AMI.execute(args);
 		File dictionaryFile = new File(directory, dictionary+"."+"xml");
 		Assert.assertTrue(""+dictionaryFile, dictionaryFile.exists());
 	}
@@ -121,20 +124,21 @@ public class AMIDictionaryTest extends AbstractAMITest {
 	@Ignore // FILE NOT FOUND
 	public void testTermfileBug() {
 		String args = ""
+				+ "dictionary "
 				+ "create "
 				+ " --informat list"
 				+ " --input /Users/pm286/projects/open-battery/dictionaries/electrochem.txt"
 				+ " --directory dictionaries/"
 				+ " --dictionary electrochem"
 				+ " --outformats html,xml";
-		AbstractAMITool amiDictionary = new AMIDictionaryTool();
-		amiDictionary.runCommands(args);
+		AMI.execute(args);
 	}
 
 	@Test
 	public void testWikipediaTables() throws IOException {
 		String dict = " chem.protpredict";
 		String args =
+			"dictionary " +
 			"create " +
            " --input https://en.wikipedia.org/wiki/List_of_protein_structure_prediction_software " +
            " --informat wikitable " +
@@ -144,8 +148,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --outformats xml,json,html " +
            " --dictionary " +dict
 			;
-		AbstractAMITool amiDictionary = new AMIDictionaryTool();
-		amiDictionary.runCommands(args);
+		AMI.execute(args);
 //		XMLUtil.debug(amiDictionary.getSimpleDictionary(), new File(DICTIONARY_DIR, dict+".html"), 1);
 		
 	}
@@ -157,6 +160,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 		String dict = "soc." + dictname;
 		File dictFile = new File(DICTIONARY_DIR, dictname+".xml");
 		String args =
+			"dictionary " +
 			"create " +
            " --input https://en.wikipedia.org/wiki/List_of_social_networking_websites " +
            " --informat wikitable " +
@@ -164,8 +168,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 			"--linkcol Name " +
            " --outformats xml,json,html " +
            " --dictionary "+dictname;
-		AbstractAMITool amiDictionary = new AMIDictionaryTool();
-		amiDictionary.runCommands(args);
+		AbstractAMITool amiDictionary = AMI.execute(AMIDictionaryTool.class, args);
 		Assert.assertTrue(""+dictFile, dictFile.exists());
 
 	}
@@ -176,12 +179,13 @@ public class AMIDictionaryTest extends AbstractAMITest {
 		String dict = "proteinStructure";
 		File dictFile = new File(DICTIONARY_DIR, dict+".xml");
 		String args =
+				"dictionary " +
 			"create " +
            " --input https://en.wikipedia.org/wiki/Protein_structure " +
            " --informat wikipage " +
            " --outformats xml,json,html " +
            " --dictionary " +dict;
-//		new AMIDictionaryTool().runCommands(args);
+//		AMI.execute(args);
 		Assert.assertTrue(""+dictFile, dictFile.exists());
 	}
 
@@ -190,6 +194,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 	public void testWikipediaPageAedesIT() throws IOException {
 		String dict = "animal.aedes";
 		String args =
+			"dictionary " +
 			"create " +
            " --input https://en.wikipedia.org/wiki/Aedes_aegypti " +
            " --informat wikipage " +
@@ -197,7 +202,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --outformats xml,json,html " +
            " --directory " +DICTIONARY_DIR.toString()
 			;
-		new AMIDictionaryTool().runCommands(args);
+		AMI.execute(args);
 	}
 
 	@Test
@@ -207,6 +212,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 		String dict = "med.childhoodobesity";
 		String col = "Condition";
 		String args =
+			"dictionary " +
 			"create " +
            " --input https://en.wikipedia.org/wiki/Childhood_obesity " +
            " --informat wikitable" +
@@ -216,13 +222,14 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --directory " +DICTIONARY_DIR.toString()
 			;
 		// ami-dictionaries create -i https://en.wikipedia.org/wiki/Aedes_aegypti --informat wikipage --hreftext --dictionary aedes0 --outformats xml --directory ~/ContentMine/dictionary/
-		new AMIDictionaryTool().runCommands(args);
+		AMI.execute(args);
 	}
 
 	@Test
 	public void testWikipediaPageReindeerIT() throws IOException {
 		String dict = "animal.reindeer";
 		String args =
+			"dictionary " +
 			"create " +
            " --input https://en.wikipedia.org/wiki/Category:Reindeer " +
 			"--informat wikipage " +
@@ -230,13 +237,14 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --dictionary " + dict +
            " --directory " +DICTIONARY_DIR.toString()
 			;
-		new AMIDictionaryTool().runCommands(args);
+		AMI.execute(args);
 	}
 	@Test
 	// LONG
 	public void testWikipediaPageMonoterpenesIT() throws IOException {
 		String dict = "chem.monoterpenes";
 		String args =
+			"dictionary " +
 			"create " +
            " --input https://en.wikipedia.org/wiki/Category:Monoterpenes " +
 			"--informat wikipage " +
@@ -244,7 +252,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --dictionary " + dict +
            " --directory " +DICTIONARY_DIR.toString()
 			;
-		new AMIDictionaryTool().runCommands(args);
+		AMI.execute(args);
 	}
 
 	@Test
@@ -252,6 +260,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 		String dict = "med.ntd";
 		String whoCol = ".*WHO.*CDC.*";
 		String args =
+				"dictionary " +
 			"create " +
            " --input https://en.wikipedia.org/wiki/Neglected_tropical_diseases " +
            " --informat wikitable " +
@@ -262,7 +271,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --dictionary " +dict +
            " --directory " +DICTIONARY_DIR.toString()
 			;
-		new AMIDictionaryTool().runCommands(args);
+		AMI.execute(args);
 	}
 	
 	@Test
@@ -271,6 +280,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 		String dict = "med.ntd1";
 		String searchCol = "PLOS.*";
 		String args =
+				"dictionary " +
 			"create " +
            " --input https://en.wikipedia.org/wiki/Neglected_tropical_diseases " +
            " --informat wikitable " +
@@ -280,13 +290,14 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --outformats xml,json,html " +
            " --directory " +DICTIONARY_DIR.toString()
 			;
-		new AMIDictionaryTool().runCommands(args);
+		AMI.execute(args);
 	}
 	
 	@Test
 	public void testWikipediaHumanInsectVectorsIT() throws IOException {
 		String dict = "animal.insectvectorshuman";
 		String args =
+				"dictionary " +
 			"create " +
            " --input https://en.wikipedia.org/wiki/Category:Insect_vectors_of_human_pathogens " +
            " --informat wikicategory " +
@@ -294,7 +305,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --outformats xml,json,html " +
            " --directory " +DICTIONARY_DIR.toString()
 			;
-		new AMIDictionaryTool().runCommands(args);
+		AMI.execute(args);
 	}
 	
 	
@@ -302,6 +313,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 	public void testWikipediaOcimumIT() throws IOException {
 		String dict = "plants.ocimumten";
 		String args =
+				"dictionary " +
 			"create " +
            " --input https://en.wikipedia.org/wiki/Ocimum_tenuiflorum " +
            " --informat wikipage " +
@@ -310,7 +322,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --outformats xml,json,html " +
            " --directory " +DICTIONARY_DIR.toString()
 			;
-		new AMIDictionaryTool().runCommands(args);
+		AMI.execute(args);
 	}
 	
 	@Test
@@ -318,11 +330,12 @@ public class AMIDictionaryTest extends AbstractAMITest {
 	public void testCreateFromTerms() {
 		String dict = "phys.crystalsystem";
 		String args =
+				"dictionary " +
 			"create " +
            " --terms cubic,tetragonal,hexagonal,trigonal,orthorhombic,monoclinic,triclinic " +
            " --dictionary " +dict +
            " --directory " +DICTIONARY_DIR.toString();
-		new AMIDictionaryTool().runCommands(args);
+		AMI.execute(args);
 	}
 	
 	@Test
@@ -331,6 +344,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 		
 		String dict = "animal.edgemammals";
 		String args =
+				"dictionary " +
 			"create " +
            " --input " +mammalsCSV.getAbsolutePath() +
            " --informat csv " +
@@ -343,7 +357,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --directory " +DICTIONARY_DIR.toString() +
            " --booleanquery"
 			;
-		new AMIDictionaryTool().runCommands(args);
+		AMI.execute(args);
 		
 	}
 
@@ -351,6 +365,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 	public void testWikipediaConservation1() throws IOException {
 		String dict = "bio.conservation";
 		String args =
+				"dictionary " +
 			"create " +
            " --hreftext " + // currently needed to enforce use of names
 			"--input https://en.wikipedia.org/wiki/Conservation_biology " +
@@ -361,7 +376,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --log4j org.contentmine.ami.lookups.WikipediaDictionary INFO " +
            " --log4j org.contentmine.norma.input.html.HtmlCleaner INFO"
 			;
-		new AMIDictionaryTool().runCommands(args);
+		AMI.execute(args);
 	}
 
 	@Test
@@ -369,6 +384,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 		String dict = "plants.spice";
 		String searchCol = "Standard English";
 		String args =
+				"dictionary " +
 			"create " +
            " --input https://en.wikipedia.org/wiki/List_of_Indian_spices " +
            " --informat wikitable " +
@@ -377,13 +393,14 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --outformats xml,json,html " +
            " --directory " +DICTIONARY_DIR.toString()
 			;
-		new AMIDictionaryTool().runCommands(args);
+		AMI.execute(args);
 	}
 	
 	@Test
 	public void testWikipediaWikipage() throws IOException {
 		String dict = "plants.virus";
 		String args =
+				"dictionary " +
 			"create " +
            " --hreftext " + // currently needed to enforce use of names
 			"--input https://en.wikipedia.org/wiki/Plant_virus " +
@@ -392,7 +409,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --outformats html,json,xml " +
            " --wikilinks"
 			;
-		new AMIDictionaryTool().runCommands(args);
+		AMI.execute(args);
 	}
 
 	@Test
@@ -401,6 +418,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 		String dict = "respiratory_pathology";
 		
 		String args =
+				"dictionary " +
 			"create " +
 		   " --input https://en.wikipedia.org/wiki/Template:Respiratory_pathology " +
            " --informat wikitemplate " +
@@ -408,7 +426,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --outformats html,xml " +
            " --wikilinks"
 			;
-		new AMIDictionaryTool().runCommands(args);
+		AMI.execute(args);
 //		Assert.assertTrue("file exists "+dictionaryFile, dictionaryFile.exists());
 	}
 
@@ -466,6 +484,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 		htmlS = htmlS.replaceAll(" ", "%20"); // escape with percentEncoding
 		
 		String args =
+				"dictionary " +
 			"create " +
 //		   " --input https://en.wikipedia.org/wiki/Template:Respiratory_pathology " +
            " --informat wikitemplate " +
@@ -474,7 +493,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --testString " + htmlS + " " +
            " --wikilinks wikidata"
 			;
-		new AMIDictionaryTool().runCommands(args);
+		AMI.execute(args);
 //		Assert.assertTrue("file exists "+dictionaryFile, dictionaryFile.exists());
 	}
 	
@@ -487,6 +506,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 		File dictionaryDir = new File(new File(fileroot), type);
 		String htmlFilename = fileroot + "." + type;
 		String args =
+				"dictionary " +
 				"create " +
 			   " --input " + htmlFilename +
 			   " --informat wikitemplate " +
@@ -495,7 +515,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 	           " --outformats html,xml " +
 	           " --wikilinks wikidata"
 				;
-			new AMIDictionaryTool().runCommands(args);
+		AMI.execute(args);
 	}
 	
 	@Test
@@ -537,13 +557,14 @@ public class AMIDictionaryTest extends AbstractAMITest {
 			String dictionaryTop = "/Users/pm286/projects/openVirus/dictionaries/";
 			String wptype = "mwk";
 			String args =
+					"dictionary " +
 					"create " +
 					" --directory " + dictionaryTop +
 					" --outformats html,xml " +
 					" --template " + " Virus_topics Baltimore_(virus_classification) Antiretroviral_drug" +
 					" --wptype " + wptype +
 					" --wikilinks wikidata";
-			new AMIDictionaryTool().runCommands(args);
+			AMI.execute(args);
 		});
 	}
 
@@ -568,6 +589,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 	public void testCreateVirusesFromTerms() {
 		String dict = "plants.viruses";
 		String args =
+			"dictionary " +
 			"create " +
            " --terms Cucumovirus,Tymovirus,Bromovirus,Potexvirus,Ilarvirus,Nepovirus,Carmovirus,Potyvirus,Potyvirus,"
 					+ "Badnavirus,Tymovirus,Tobravirus,Closterovirus,Necrovirus,TNsatV-like satellite,Nepovirus,Nepovirus,"
@@ -579,41 +601,44 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --directory " +DICTIONARY_DIR.toString() +
            " --wikilinks wikidata"
           ;
-		new AMIDictionaryTool().runCommands(args);
+		AMI.execute(args);
 	}
 	
 	@Test
 	public void testTranslateJSONtoXML() {
 		String args =
+			"dictionary " +
 			"translate " +
            " --directory src/test/resources/org/contentmine/ami/dictionary " +
            " --dictionary alliaceae.json buxales.json " +
            " --outformats xml"
 		;
-		new AMIDictionaryTool().runCommands(args);
+		AMI.execute(args);
 	}
 	
 	@Test
 	public void testTranslateJSONtoXMLAbsolute() {
 		String args =
+			"dictionary " +
 			"translate" +
            " --dictionary src/test/resources/org/contentmine/ami/dictionary/alliaceae.json " +
 			                "src/test/resources/org/contentmine/ami/dictionary/buxales.json " +
            " --outformats xml"
 		;
-		new AMIDictionaryTool().runCommands(args);
+		AMI.execute(args);
 	}
 	
 	@Test
 	public void testTranslateJSONtoXMLAbsoluteWikidata() {
 		String args =
+			"dictionary " +
 			"translate " +
            " --dictionary src/test/resources/org/contentmine/ami/dictionary/alliaceae.json " +
 			                "src/test/resources/org/contentmine/ami/dictionary/buxales.json " +
            " --outformats xml " +
            " --wikilinks wikidata wikipedia"
 		;
-		new AMIDictionaryTool().runCommands(args);
+		AMI.execute(args);
 	}
 	
 	@Test
@@ -621,61 +646,69 @@ public class AMIDictionaryTest extends AbstractAMITest {
 	public void testWikidataLookup() {
 		String dict = "plants.misc";
 		String args =
+			"dictionary " +
 			"create " +
            " --terms Buxus sempervirens " +
            " --dictionary " + dict +
            " --directory " + DICTIONARY_DIR.toString() +
            " --wikilinks wikidata"
 			;
-		new AMIDictionaryTool().runCommands(args);
+		AMI.execute(args);
 	}
 
 	@Test
 	/** LONG! */
 	@Ignore // DIRECTORY REQUIRED
 	public void testListOfRiceVarieties() {
-		String args = "create"
+		String args =
+				"dictionary " +
+				"create"
 				+ " --input https://en.wikipedia.org/wiki/List_of_rice_varieties"
 				+ " --informat wikipage"
 //				+ " --hreftext"
 				+ " --dictionary ricevarieties"
 				+ " --outformats xml,json,html";
-		new AMIDictionaryTool().runCommands(args);
+		AMI.execute(args);
 	}
 	
 	public void testCreateFromFileWithListOfTerms() {
-		String args = "create"
+		String args =
+				"dictionary " +
+				"create"
 				+ " --input dictionaries/electrochem.txt"
 //				+ " --informat wikipage"
 //				+ " --hreftext"
 				+ " --dictionary electrochem"
 				+ " --directory dictionaries"
 				+ " --outformats xml,json,html";
-		new AMIDictionaryTool().runCommands(args);
+		AMI.execute(args);
 	}
 	
 	@Test
 	public void testWikipediaPageOcimum() {
-		String args = "create"
+		String args =
+				"dictionary " +
+				"create"
 				+ " --informat wikipage"
 				+ " --hreftext"
 				+ " --input https://en.wikipedia.org/wiki/Ocimum_tenuiflorum"
 				+ " --dictionary otenuiflorum"
 				+ " --directory mydictionaries"
 				+ " --outformats xml,html";
-		new AMIDictionaryTool().runCommands(args);
-
+		AMI.execute(args);
 	}
+
 	@Test
 	@Ignore // CEVOpen
 	public void testDictionarySearch() {
-		String args = "search"
+		String args =
+				"dictionary " +
+				"search"
 				+ " --dictionary "+CEV+"/dictionary/compound/compound.xml"
 //				+ " --search thymol carvacrol"
 				+ " --searchfile "+CEV_SEARCH+"/oil186/__tables/compound_set.txt"
 				+ "";
-		new AMIDictionaryTool().runCommands(args);
-
+		AMI.execute(args);
 	}
 
 	@Test
@@ -864,6 +897,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 
 	private void createFromMediaWikiTemplate(String template, String fileTop, String wptype) {
 		String args =
+				"dictionary " +
 				"create " +
 	           " --directory " + fileTop +
 	           " --outformats html,xml " +
@@ -871,7 +905,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 	           " --wptype " + wptype +
 	           " --wikilinks wikidata"
 				;
-		new AMIDictionaryTool().runCommands(args);
+		AMI.execute(args);
 	}
 	
 

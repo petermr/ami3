@@ -62,6 +62,7 @@ public class AMIDownloadTest extends AbstractAMITest {
 		MatcherAssert.assertThat(target+" does not exist", !target.exists());
 		String args = 
 				"-p " + target
+				+ " download"
 				+ " --site biorxiv" // the type of site 
 				+ " --query coronavirus" // the query
 				+ " --pagesize 1" // size of remote pages (may not always work)
@@ -70,7 +71,7 @@ public class AMIDownloadTest extends AbstractAMITest {
 				+ " --resultset raw clean"
 //				+ " --limit 500"  // total number of downloaded results
 			;
-		new AMIDownloadTool().runCommands(args);
+		AMI.execute(args);
 		Assert.assertTrue("target exists", target.exists());
 		// check for reserved and non-reserved child files
 		long fileCount0 = Files.walk(target.toPath(), AbstractMetadata.CPROJECT_DEPTH)
@@ -142,11 +143,14 @@ likely to be edited frequently while debugging!
 	 */
 	public void testBiorxivIT() throws Exception {
 		String biorxiv = "target/biorxiv";
-		String args = "-p " + "target" + " --dir biorxiv";
-		new AMICleanTool().runCommands(args);
+		String args = "-p " + "target"
+				+ " clean"
+				+ " biorxiv/"; // TODO verify that this works as desired
+		AMI.execute(args);
 		
 		args = 
 				"-p " + biorxiv
+				+ " download"
 				+ " --site biorxiv"
 				+ " --query coronavirus"
 				+ " --pagesize 100"
@@ -156,7 +160,7 @@ likely to be edited frequently while debugging!
 				+ " --fulltext html"
 				+ " --limit 2000"
 			;
-		new AMIDownloadTool().runCommands(args);
+		AMI.execute(args);
 // first creates the hitLists		
 
 //		File file962688v1 = new File(biorxiv, "10_1101_2020_02_24_962688v1");
@@ -180,8 +184,10 @@ likely to be edited frequently while debugging!
 	public void testSmallMultipageSearch() {
 		String args;
 		String biorxiv = "target/biorxiv/aardvark";
-        args = "-p " + "target" + " --dir biorxiv";
-		new AMICleanTool().runCommands(args);
+        args = "-p " + "target"
+				+ " clean"
+				+ " biorxiv/";
+		AMI.execute(args);
 		
 		args = 
 				"-p " + biorxiv +""
@@ -205,6 +211,7 @@ likely to be edited frequently while debugging!
 	public void testBiorxivClimate() throws Exception {
 		String args = 
 				"-p target/biorxiv/climate"
+				+ " download"
 				+ " --site biorxiv"
 				+ " --query climate change"
 				+ " --metadata metadata"
@@ -213,7 +220,7 @@ likely to be edited frequently while debugging!
 				+ " --pages 1 3"
 				+ " --limit 100"
 			;
-		new AMIDownloadTool().runCommands(args);
+		AMI.execute(args);
 // I think this is an outdated Assert.
 //		Assert.assertTrue(new File("target/biorxiv/climate/metadata/page1.html").exists());
 //		these should work
@@ -369,6 +376,7 @@ likely to be edited frequently while debugging!
 		cProject.cleanAllTrees();
 		String args = 
 				"-p " + cProject.toString()
+				+ " download"
 				+ " --site biorxiv"
 				+ " --query climate change"
 				+ " --metadata __metadata"
@@ -378,8 +386,7 @@ likely to be edited frequently while debugging!
 				+ " --limit 4"
 				+ " --resultset hitList1.clean.html"
 			;
-		AMIDownloadTool downloadTool = new AMIDownloadTool();
-		downloadTool.runCommands(args);
+		AMIDownloadTool downloadTool = AMI.execute(AMIDownloadTool.class, args);
 		Assert.assertTrue(new File(targetDir, "__metadata/hitList1.html").exists());
 		Assert.assertTrue(new File(targetDir, "__metadata/hitList1.clean.html").exists());
 		CTreeList cTreeList = new CProject(targetDir).getOrCreateCTreeList();
@@ -397,10 +404,10 @@ likely to be edited frequently while debugging!
 		Assert.assertTrue(projectDir.toString(), projectDir.exists());
 		String command = ""
 				+ "-p "+projectDir+""
-				+ ""
+				+ " section"
 				;
-		AMISectionTool sectionTool = new AMISectionTool();
-		sectionTool.runCommands(command);
+		//AMISectionTool sectionTool = new AMISectionTool().runCommands(command);
+		AMI.execute(command);
 	}
 
 	@Test
@@ -410,10 +417,12 @@ likely to be edited frequently while debugging!
 		Assert.assertTrue(projectDir.toString(), projectDir.exists());
 		String command = ""
 				+ "-p "+projectDir+""
+				+ " search"
 				+ " --dictionary country disease funders species"
 				;
-		AMISearchTool searchTool = new AMISearchTool();
-		searchTool.runCommands(command);
+//		AMISearchTool searchTool = new AMISearchTool();
+//		searchTool.runCommands(command);
+		AMI.execute(command);
 	}
 
 	@Test
@@ -431,6 +440,7 @@ likely to be edited frequently while debugging!
 		cProject.getOrCreateExistingMetadataDir();
 		String args = 
 				"-p " + cProject.toString()
+				+ " download"
 				+ " --site biorxiv"
 				+ " --query climate change"
 				+ " --metadata __metadata"
@@ -441,9 +451,9 @@ likely to be edited frequently while debugging!
 //				+ " --limit " + (pagesize * pages)
 //				+ " --resultset hitList1.clean.html"
 			;
-		AMIDownloadTool downloadTool = new AMIDownloadTool();
-		downloadTool.runCommands(args);
-
+//		AMIDownloadTool downloadTool = new AMIDownloadTool();
+//		downloadTool.runCommands(args);
+		AMI.execute(args);
 	}
 
 	
@@ -459,6 +469,7 @@ likely to be edited frequently while debugging!
 		cProject.cleanAllTrees();
 		String args = 
 				"-p " + cProject.toString()
+				+ " download"
 				+ " --site hal"
 				+ " --query permafrost"
 				+ " --metadata __metadata"
@@ -468,8 +479,7 @@ likely to be edited frequently while debugging!
 				+ " --limit 4"
 				+ " --resultset hitList1.clean.html"
 			;
-		AMIDownloadTool downloadTool = new AMIDownloadTool();
-		downloadTool.runCommands(args);
+		AMIDownloadTool downloadTool = AMI.execute(AMIDownloadTool.class, args);
 		Assert.assertTrue(new File(targetDir, "__metadata/hitList1.html").exists());
 		Assert.assertTrue(new File(targetDir, "__metadata/hitList1.clean.html").exists());
 		CTreeList cTreeList = new CProject(targetDir).getOrCreateCTreeList();
@@ -628,9 +638,11 @@ likely to be edited frequently while debugging!
 		CProject cProject = new CProject(testSearch3Dir);
 		String cmd = ""
 				+ "-p " + cProject + ""
+				+ " search"
 				+ " --dictionary country"
 				+ "";
-		new AMISearchTool().runCommands(cmd);
+		//new AMISearchTool().runCommands(cmd);
+		AMI.execute(cmd);
 		CTree cTree = cProject.getCTreeByName("10_1101_2020_01_12_903427v1");
 		Assert.assertTrue(cTree.getDirectory().exists());
 	}
@@ -645,6 +657,7 @@ likely to be edited frequently while debugging!
 		int pages = 1;
 		String args = 
 				"-p " + cProject.toString()
+				+ " download"
 				+ " --site biorxiv"
 				+ " --query climate change"
 				+ " --metadata __metadata"
@@ -652,13 +665,14 @@ likely to be edited frequently while debugging!
 				+ " --pagesize " + pagesize
 				+ " --pages 1 " + pages
 			;
-		AMIDownloadTool downloadTool = new AMIDownloadTool();
-		downloadTool.runCommands(args);
+		AMI.execute(args);
 		String cmd = ""
 				+ "-p " + cProject + ""
+				+ " search"
 				+ " --dictionary country disease funders"
 				+ "";
-		new AMISearchTool().runCommands(cmd);
+		//new AMISearchTool().runCommands(cmd);
+		AMI.execute(cmd);
 //		CTree cTree = cProject.getCTreeByName("10_1101_2020_01_12_903427v1");
 //		Assert.assertTrue(cTree.getDirectory().exists());
 	}
