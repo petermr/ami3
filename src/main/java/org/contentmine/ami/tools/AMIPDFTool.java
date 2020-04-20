@@ -18,11 +18,15 @@ import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 
 	@Command(
-	name = "pdf",
+	name = "pdfbox",
 	description = {
 			"Convert PDFs to SVG-Text, SVG-graphics and Images.",
 			"Does not process images, graphics or text. "
 					+ "Often followed by ami-image and ami-xml."
+					+ "EXAMPLE%n"
+					+ "    ami -t /Users/pm286/projects/chess pdf%n"
+					+ "        processes the chess CTree (which must contain fulltext.pdf%n"
+					+ "        by default this produces svg/fulltext-page.<1...n>.svg and pdfimages/image.p.n.x_x.y_y.png%n"
 	})
 public class AMIPDFTool extends AbstractAMITool {
 	private static final Logger LOG = Logger.getLogger(AMIPDFTool.class);

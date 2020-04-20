@@ -12,6 +12,7 @@ import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeList;
 import org.contentmine.eucl.xml.XMLUtil;
+import org.contentmine.norma.tagger.MetadataElement;
 
 public class HitList {
 	private static final Logger LOG = Logger.getLogger(HitList.class);
@@ -121,13 +122,54 @@ public class HitList {
 	       <span class="highwire-citation-authors">
 	       ...
 		 */
-		public List<String> getCitationLinks() {
-			List<String> citationList = new ArrayList<>();
-			for (AbstractMetadataEntry metadataEntry : metadataEntryList) {
-				String citationLink = metadataEntry.getCitationLink();
-				citationList.add(citationLink);
-			}
-			return citationList;
+	public List<String> getCitationLinks() {
+		List<String> citationList = new ArrayList<>();
+		for (AbstractMetadataEntry metadataEntry : metadataEntryList) {
+			String citationLink = metadataEntry.getCitationLink();
+			citationList.add(citationLink);
 		}
+		return citationList;
+	}
+
+	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((metadataEntryList == null) ? 0 : metadataEntryList.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		HitList other = (HitList) obj;
+		if (metadataEntryList == null) {
+			if (other.metadataEntryList != null)
+				return false;
+		} else if (!metadataEntryList.equals(other.metadataEntryList))
+			return false;
+		return true;
+	}
+
+	public boolean isEqualTo(HitList otherHitList) {
+		if (otherHitList == null) return false;
+		if (otherHitList.size() != size()) return false;
+		for (int i = 0; i < size(); i++) {
+			AbstractMetadataEntry thisEntry = metadataEntryList.get(i);
+			AbstractMetadataEntry otherEntry = otherHitList.get(i);
+			if (!thisEntry.equals(otherEntry)) return false;
+		}
+		return true;
+	}
+
+	private AbstractMetadataEntry get(int i) {
+		return metadataEntryList == null ? null : metadataEntryList.get(i);
+	}
 
 }

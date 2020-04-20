@@ -240,8 +240,12 @@ public class LandingPageManager extends AbstractSubDownloader {
 		CurlDownloader curlDownloader = new CurlDownloader();
 		System.out.println("download with curl to <tree>scrapedMetadata.html" + fileroots);
 		int size = fileroots.size();
+		File directory = abstractDownloader.cProject.getDirectory();
+		LOG.debug(directory);
 		for (String fileroot : fileroots) {
-			curlDownloader.addCurlPair(this.createLandingPageCurlPair(abstractDownloader.cProject.getDirectory(), fileroot));
+			CurlPair curlPair = this.createLandingPageCurlPair(directory, fileroot);
+			System.out.println("curl pair: "+curlPair);
+			curlDownloader.addCurlPair(curlPair);
 		}
 		
 		curlDownloader.setTraceFile("target/trace.txt");

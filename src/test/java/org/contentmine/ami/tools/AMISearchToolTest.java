@@ -24,14 +24,15 @@ public class AMISearchToolTest {
 
 	@Test
 	public void testZikaSearch2() {
-//		String project = "zika2";
-		String project = "zika1";
+		String project = "zika2";
+//		String project = "zika1";
 		File rawDir = new File(NAConstants.TEST_AMI_DIR, project);
 		File targetDir = new File("target/cooccurrence/"+project);
 		CMineTestFixtures.cleanAndCopyDir(rawDir, targetDir);
 		String args = 
 				"-p "+targetDir
 //				"-t "+new File(targetDir, "PMC2640145")
+				+ " search"
 				+ " --dictionaryTop /Users/pm286/ContentMine/dictionary/dictionaries"
 				+ " --dictionary country "
 				+ " --oldstyle"  // old style
@@ -39,7 +40,8 @@ public class AMISearchToolTest {
 				+ " -v"
 			;
 		LOG.debug("args "+args);
-		new AMISearchTool().runCommands(args);
+//		new AMISearchTool().runCommands(args);
+		AMI.execute(args);
 	}
 	
 

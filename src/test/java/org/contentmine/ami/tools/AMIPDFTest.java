@@ -42,8 +42,8 @@ public class AMIPDFTest extends AbstractAMITest {
 		Appender appender = new FileAppender(layout, filename, append);
 		String args = 
 				"-p /Users/pm286/workspace/uclforest/forestplotssmall"
-				+ " pdf"
-				+ " --rawfiletypes pdf"
+				+ " pdfbox"
+				+ " --rawfiletypes pdfbox"
 				+ " --maxpages 20"
 				+ " --pdfimages false"
 				+ " --svgpages true"
@@ -65,8 +65,8 @@ public class AMIPDFTest extends AbstractAMITest {
 		// and then recreate them
 		String args = 
 				"-p " + projectDir
-				+ " pdf"
-				+ " --rawfiletypes pdf"
+				+ " pdfbox"
+				+ " --rawfiletypes pdfbox"
 				+ " --maxpages 20"
 				+ " --pdfimages false"
 				+ " --svgpages true"
@@ -89,8 +89,8 @@ public class AMIPDFTest extends AbstractAMITest {
 		String projectDir = "/Users/pm286/workspace/uclforest/forestplotssmall";
 		String args = 
 				"-p " + projectDir
-				+ " pdf"
-				+ " --rawfiletypes pdf"
+				+ " pdfbox"
+				+ " --rawfiletypes pdfbox"
 				+ " --maxpages 20"
 				+ " --pdfimages false"
 				+ " --svgpages true"
@@ -109,8 +109,8 @@ public class AMIPDFTest extends AbstractAMITest {
 		// and then recreate them
 		String args =
 				"-p " + projectDir
-				+ " pdf"
-				+ " --rawfiletypes pdf"
+				+ " pdfbox"
+				+ " --rawfiletypes pdfbox"
 				+ " --maxpages 20"
 				+ " --pdfimages true"
 				+ " --svgpages false"
@@ -125,7 +125,7 @@ public class AMIPDFTest extends AbstractAMITest {
 	public void testDevProject() throws Exception {
 		String args = ""
 				+ "-p /Users/pm286/workspace/uclforest/dev/"
-				+ " pdf"
+				+ " pdfbox"
 				+ " --forcemake"
 				+ " --pdfimages true"
 			;
@@ -141,7 +141,7 @@ public class AMIPDFTest extends AbstractAMITest {
 	public void testVectorBug() throws Exception {
 		String args = ""
 				+ "-t /Users/pm286/workspace/uclforest/dev/pearson"
-				+ " pdf"
+				+ " pdfbox"
 				+ " --forcemake"
 			;
 		AMI.execute(args);
@@ -154,7 +154,7 @@ public class AMIPDFTest extends AbstractAMITest {
 	public void testVectorBugCampbell() throws Exception {
 		String args = ""
 				+ "-t /Users/pm286/workspace/uclforest/dev/campbell"
-				+ " pdf"
+				+ " pdfbox"
 				+ " --forcemake"
 			;
 		AMI.execute(args);
@@ -171,7 +171,7 @@ public class AMIPDFTest extends AbstractAMITest {
 	public void testLargeVector() throws Exception {
 		String args = ""
 				+ "-p "+CANADA+"/test"
-				+ " pdf"
+				+ " pdfbox"
 				+ " --maxprimitives 10000"
 				+ " --forcemake"
 			;
@@ -186,7 +186,7 @@ public class AMIPDFTest extends AbstractAMITest {
 	public void testPDF2Framework() throws IOException {
 		
 		String args = "-p " + new File(PDF2SVG2, "test")
-				+ " pdf"
+				+ " pdfbox"
 				+ " --maxprimitives 10000"
 				+ " --debug AMI_TWO"
 				+ " --forcemake"
@@ -199,5 +199,23 @@ public class AMIPDFTest extends AbstractAMITest {
 //        runPageDrawer(root, file, pageSerial, parserDebug, true);
 
 	}
+
+	@Test
+	/** .
+	 * 
+	 * @throws IOException
+	 */
+	public void testPDFBookChess() throws IOException {
+		
+		String args = "-t " + new File(NEW_PROJECTS, "chess/")
+				+ " --forcemake"
+				+ " pdfbox"
+				+ " --maxprimitives 10000"
+				+ " --debug AMI_TWO"
+				;
+      
+		AMI.execute(args);
+	}
+
 
 }

@@ -94,7 +94,7 @@ public class FullFileManager extends AbstractSubDownloader {
 	}
 
 	private void writeHitListFileFOUR(HtmlHtml htmlPage) throws IOException {
-		File hitListFile = new File(abstractDownloader.currentTree.getOrCreateDirectory(), AbstractSubDownloader.RESULT_SET + "." + CTree.HTML);
+		File hitListFile = new File(abstractDownloader.currentTree.getOrCreateDirectory(), AbstractSubDownloader.HIT_LIST + "." + CTree.HTML);
 		downloadTool.getResultsSetList().add(hitListFile.toString());
 		if (htmlPage != null) {
 			if (hitListFile.exists()) {

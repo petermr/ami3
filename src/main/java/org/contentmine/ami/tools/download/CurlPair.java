@@ -49,5 +49,10 @@ public class CurlPair {
 		return outputFile;
 	}
 	
+	@Override
+	public String toString() {
+		String s = url+": "+outputFile;
+		return s;
+	}
 
 }

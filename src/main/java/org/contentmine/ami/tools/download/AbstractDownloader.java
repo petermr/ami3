@@ -345,4 +345,16 @@ public abstract class AbstractDownloader {
 		return downloadTool;
 	}
 
+	/** compute pagenumber to download.
+	 * This is because biorxiv uses ZERO counting. The default here is ONE-based counting
+	 * 
+	 * Override to return zero-based counting
+	 * 
+	 * @param page
+	 * @return
+	 */
+	public Integer computePageNumber(Integer page) {
+		return page;
+	}
+
 }

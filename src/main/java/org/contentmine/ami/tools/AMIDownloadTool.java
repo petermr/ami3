@@ -19,6 +19,7 @@ import org.contentmine.ami.tools.download.QueryManager;
 import org.contentmine.ami.tools.download.biorxiv.BiorxivDownloader;
 import org.contentmine.ami.tools.download.biorxiv.BiorxivLandingPage;
 import org.contentmine.ami.tools.download.biorxiv.BiorxivMetadataEntry;
+import org.contentmine.ami.tools.download.biorxiv.MedrxivDownloader;
 import org.contentmine.ami.tools.download.hal.HALDownloader;
 import org.contentmine.ami.tools.download.hal.HALLandingPage;
 import org.contentmine.ami.tools.download.hal.HALMetadataEntry;
@@ -63,6 +64,11 @@ public class AMIDownloadTool extends AbstractAMITool {
 				new HALDownloader(),
 				new HALMetadataEntry(),
 				new HALLandingPage()
+				),
+		medrxiv(
+				new MedrxivDownloader(),
+				new BiorxivMetadataEntry(),
+				new BiorxivLandingPage()
 				),
 		osf(
 				new OSFDownloader(),
@@ -131,7 +137,7 @@ public class AMIDownloadTool extends AbstractAMITool {
 
 	public enum FulltextFormat {
 		html,
-		pdf,
+		pdformat,  // because "pdf" clashes with command
 		suppinfo,
 		xml,
 	}
@@ -331,7 +337,7 @@ public class AMIDownloadTool extends AbstractAMITool {
 		return cTree;
 	}
 
-	public int getPageSize() {
+	public Integer getPageSize() {
 		return pagesize;
 	}
 

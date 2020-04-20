@@ -180,8 +180,42 @@ likely to be edited frequently while debugging!
  */
 	}
 
+	/**
+	 * Test the hitLists. These are wrong...
+	 * 
+	 * Query: aardvark%20sort%3Arelevance-rank%20numresults%3A10
+URL https://www.biorxiv.org/search/aardvark%20sort%3Arelevance-rank%20numresults%3A10
+runing curl :https://www.biorxiv.org/search/aardvark%20sort%3Arelevance-rank%20numresults%3A10 to target/biorxiv/aardvark/__metadata/hitList1.html
+wrote hitList: /Users/pm286/workspace/cmdev/ami3/target/biorxiv/aardvark/__metadata/hitList1.clean.html
+metadataEntries 10
+calculating hits NYI
+Results 10
+runing curl :https://www.biorxiv.org/search/aardvark%20sort%3Arelevance-rank%20numresults%3A10 to target/biorxiv/aardvark/__metadata/hitList2.html
+wrote hitList: /Users/pm286/workspace/cmdev/ami3/target/biorxiv/aardvark/__metadata/hitList2.clean.html
+metadataEntries 1
+Results 1
+runing curl :https://www.biorxiv.org/search/aardvark%20sort%3Arelevance-rank%20numresults%3A10 to target/biorxiv/aardvark/__metadata/hitList3.html
+wrote hitList: /Users/pm286/workspace/cmdev/ami3/target/biorxiv/aardvark/__metadata/hitList3.clean.html
+metadataEntries 10
+Results 10
+runing curl :https://www.biorxiv.org/search/aardvark%20sort%3Arelevance-rank%20numresults%3A10 to target/biorxiv/aardvark/__metadata/hitList4.html
+wrote hitList: /Users/pm286/workspace/cmdev/ami3/target/biorxiv/aardvark/__metadata/hitList4.clean.html
+metadataEntries 10
+Results 10
+[target/biorxiv/aardvark/__metadata/hitList1.clean.html, target/biorxiv/aardvark/__metadata/hitList2.clean.html, target/bi
+
+gives:
+-rw-r--r--@ 1 pm286  staff  23952 19 Apr 18:29 __metadata/hitList4.clean.html
+-rw-r--r--@ 1 pm286  staff  23952 19 Apr 18:29 __metadata/hitList3.clean.html
+-rw-r--r--@ 1 pm286  staff   3028 19 Apr 18:27 __metadata/hitList2.clean.html
+-rw-r--r--@ 1 pm286  staff  26641 19 Apr 18:27 __metadata/hitList1.clean.html
+
+hitList2 and hitList3 are the wrong way round.
+
+	 *
+	 */
 	@Test
-	public void testSmallMultipageSearch() {
+	public void testSmallMultipageDownload() {
 		String args;
 		String biorxiv = "target/biorxiv/aardvark";
         args = "-p " + "target"
@@ -199,10 +233,34 @@ likely to be edited frequently while debugging!
 				+ " --fulltext html"
 				+ " --limit 2000"
 			;
-//		new AMIDownloadTool().runCommands(args);
+		AMIDownloadTool amiDownload = AMI.execute(AMIDownloadTool.class, args);
+//		AMIDownloadTool amiDownload = AMI.execute(args);
+
+	}
+	
+	@Test
+	public void testMedrxivDownload() {
+		String args;
+		String biorxiv = "target/medrxiv/ebola";
+        args = "-p " + "target"
+				+ " clean"
+				+ " medrxiv/";
+		AMI.execute(args);
+		
+		args = 
+				"-p " + biorxiv +""
+				+ " download"
+				+ " --site medrxiv"
+				+ " --query \"ebola AND n95\""
+				+ " --pagesize 20"
+				+ " --pages 1 4"        
+				+ " --fulltext pdformat"
+				+ " --limit 2000"
+			;
 		AMIDownloadTool amiDownload = AMI.execute(AMIDownloadTool.class, args);
 
 	}
+
 	@Test
 	/** 
 	 * run query

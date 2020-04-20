@@ -63,19 +63,42 @@ private static final Logger LOG = Logger.getLogger(QueryManager.class);
 			System.out.println("No pages required");
 			return new ArrayList<>();
 		}
+		int pagesize = abstractDownloader.getDownloadTool().getPageSize();
+		int downloadLimit = abstractDownloader.getDownloadTool().getDownloadLimit();
 		downloadCount = 0;
 		Integer page0 = pageList.get(0);
+		int totalHits = 0;
+		HitList lastHitList = null;
+		HitList firstHitList = null;
 		for (Integer page = page0; page <= pageList.get(1); page++) {
+			
 			try {
-				searchAndDownloadMetadataHitList(url, page);
+				hitList = searchAndDownloadMetadataHitList(url, page);
+				int size = hitList.size();
+				totalHits += size;
 			} catch (IOException e) {
 				LOG.error("Could not download hitpages: " + page, e);
 				continue;
 			}
-			if (page == page0) {
-				System.out.println("calculating hits NYI");
-//				int totalHits = getTotalHits(hitListList);
+			if (hitList.size() < pagesize) {
+				System.out.println("page hits (" + hitList.size() + ") less than page size (" + pagesize + ") ; assumed termination");
+				break;
+				
 			}
+			if (totalHits >= downloadLimit) {
+				System.out.println("total hits (" + totalHits + ") exceeds limit (" + downloadLimit + ")");
+				break;
+			}
+			if (hitList.equals(lastHitList)) {
+				System.out.println("repeated hitList (== previous), break");
+				break;
+			}
+			if (hitList.equals(firstHitList)) {
+				System.out.println("repeated hitList (== first), break");
+				break;
+			}
+			lastHitList = hitList;
+			if (firstHitList == null) firstHitList = hitList;
 		}
 		// clean the files
 		List<Path> hitListCleanPaths = this.getHitListCleanFiles(metadataDir.toString());
@@ -122,6 +145,8 @@ private static final Logger LOG = Logger.getLogger(QueryManager.class);
 		
 	/** creates target/biorxiv/testsearch3/__metadata/hitList1.html, etc. for each "page"
 	 * 
+	 * NOTE: BIORXIV COUNTS FROM ZERO!
+	 * in common with most biblio we count from ONE
 	 * 
 	 * @param url
 	 * @param page
@@ -129,9 +154,9 @@ private static final Logger LOG = Logger.getLogger(QueryManager.class);
 	 * @throws IOException
 	 */
 	private HitList searchAndDownloadMetadataHitList(String url, Integer page) throws IOException {
-		File hitListFile = new File(metadataDir, RESULT_SET + page + "." + "html");
-		System.out.println("runing curl :" + url + " to " + hitListFile);
+		File hitListFile = new File(metadataDir, HIT_LIST + page + "." + "html");
 		url = addPageNumber(url, page);
+		System.out.println("running curl :" + url + " to " + hitListFile);
 		CurlDownloader curlDownloader = new CurlDownloader()
 				.setUrlString(url)
 				.setOutputFile(hitListFile);
@@ -159,13 +184,13 @@ private static final Logger LOG = Logger.getLogger(QueryManager.class);
 	}
 
 	/** adds ?page=n at end
-	 * 
+	 * NOTE BIORXIV count from ZERO, others may count from ONE
 	 * @param url
 	 * @param page
 	 * @return
 	 */
 	private String addPageNumber(String url, Integer page) {
-		return url == null ? null : url + "?page=" + page;
+		return url == null ? null : url + "?page=" + abstractDownloader.computePageNumber(page);
 	}
 
 	protected File cleanAndOutputHitListFile(File file) {
@@ -206,7 +231,7 @@ private static final Logger LOG = Logger.getLogger(QueryManager.class);
 		List<Path> paths = new ArrayList<>();
 		try {
 			paths = Files.list(p)
-			    .filter(f -> f.toString().matches(".*" + AbstractSubDownloader.RESULT_SET + "\\d+\\." + AbstractSubDownloader.CLEAN + "\\.html"))
+			    .filter(f -> f.toString().matches(".*" + AbstractSubDownloader.HIT_LIST + "\\d+\\." + AbstractSubDownloader.CLEAN + "\\.html"))
 			    .sorted()
 			    .collect(Collectors.toList());
 		} catch (IOException e) {

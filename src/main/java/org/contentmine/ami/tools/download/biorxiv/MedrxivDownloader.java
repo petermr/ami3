@@ -1,11 +1,21 @@
 package org.contentmine.ami.tools.download.biorxiv;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.download.AbstractDownloader;
+import org.contentmine.ami.tools.download.HitList;
 import org.contentmine.cproject.files.CProject;
+import org.contentmine.eucl.xml.XMLUtil;
+import org.contentmine.graphics.html.HtmlBody;
+import org.contentmine.graphics.html.HtmlDiv;
+import org.contentmine.graphics.html.HtmlElement;
+import org.contentmine.graphics.html.HtmlHtml;
+import org.contentmine.graphics.html.HtmlUl;
+
+import nu.xom.Element;
 
 /** extracts from biorxiv pages
  * 
@@ -91,50 +101,113 @@ LANDING PAGE
  * @author pm286
  *
  */
-public class BiorxivDownloader extends CSHRxivDownloader {
+public class MedrxivDownloader extends CSHRxivDownloader {
 
-//	private static final String ARTICLE = "article";
-//	private static final String CONTENT = "content/";
-//	private static final String HIGHWIRE_CITE_EXTRAS = "highwire-cite-extras";
-//	static final String CITE_EXTRAS_DIV = ".//*[local-name()='"+HtmlDiv.TAG+"' and @class='" + HIGHWIRE_CITE_EXTRAS + "']";
-
-	static final Logger LOG = Logger.getLogger(BiorxivDownloader.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-//	private static final String HIGHWIRE_SEARCH_RESULTS_LIST = "highwire-search-results-list";
 	
-	public static final String BIORXIV_HOST = "www.biorxiv.org";
-	public static final String BIORXIV_BASE = HTTPS + P2H + BIORXIV_HOST;
-	public static final String BIORXIV_SEARCH = BIORXIV_BASE + "/search/";
-	public BiorxivDownloader() {
-		super();
+	public static final String MEDRXIV_HOST = "www.medrxiv.org";
+	public static final String MEDRXIV_BASE = HTTPS + P2H + MEDRXIV_HOST;
+	public static final String MEDRXIV_SEARCH = MEDRXIV_BASE + "/search/";
+	public static final String BIORXIV_HEADER = "/content/";
+
+	
+	public MedrxivDownloader() {
 		init();
 	}
 
 	private void init() {
-		this.setBase(BIORXIV_BASE);
+		this.setBase(MEDRXIV_BASE);
 	}
 
-	public BiorxivDownloader(CProject cProject) {
+	public MedrxivDownloader(CProject cProject) {
 		super(cProject);
 		init();
 	}
 
+//	@Override
+//	protected String getHitListXPath() {
+//		return "//*[local-name()='ul' and @class='" + HIGHWIRE_SEARCH_RESULTS_LIST + "']";
+//	}
+
+	
 	@Override
 	protected BiorxivMetadataEntry createSubclassedMetadataEntry() {
 		return new BiorxivMetadataEntry(this);
 	}
 
+//	@Override
+//	protected String getDOIFromUrl(String fullUrl) {
+//		if (fullUrl == null) return null;
+//		String[] parts = fullUrl.split(CONTENT);
+//		return parts[1];
+//	}
+
 	@Override
 	public String getSearchUrl() {
-		return BIORXIV_SEARCH;
+		return MEDRXIV_SEARCH;
 	}
 
-@Override
+//	@Override
+//	protected void hitListErrorMessage() {
+//		System.err.println("Cannot find metadata list: "+getHitListXPath());
+//	}
+	
+//	@Override
+//	protected HtmlElement getArticleElement(HtmlHtml htmlHtml) {
+//		return (HtmlElement) XMLUtil.getFirstElement(htmlHtml, 
+//				".//*[local-name()='"+HtmlDiv.TAG+"' and starts-with(@class, '"+ARTICLE+" "+"')]");
+//	}
+	
+//	@Override
+//	protected HtmlElement getSearchResultsList(HtmlBody body) {
+//		return (HtmlUl) XMLUtil.getFirstElement(body, getHitListXPath());
+//	}
+	
+	@Override
 	protected String getHost() {
-		return BiorxivDownloader.BIORXIV_HOST;
+		return MedrxivDownloader.MEDRXIV_HOST;
 	}
+
+//	@Override
+//	protected String createLocalTreeName(String fileroot) {
+//		return fileroot.replace("/content/", "");
+//	}
+	
+//	@Override
+//	protected void cleanSearchResultsList(HtmlElement searchResultsList) {
+//		XMLUtil.removeElementsByXPath(searchResultsList, CITE_EXTRAS_DIV);
+//	}
+
+//	/**
+//	https://www.biorxiv.org/search/coronavirus%20numresults%3A75%20sort%3Arelevance-rank?page=1
+//	 */
+//	@Override
+//	protected HitList createHitList(Element element) {
+//	//		<ul class="highwire-search-results-list">
+//		List<Element> ulList = XMLUtil.getQueryElements(element, 
+//				getHitListXPath());
+//		
+//		if (ulList.size() == 0) {
+//			LOG.debug(element.toXML());
+//			System.err.println("empty array");
+//			return new HitList();
+//		}
+//		Element ul = ulList.get(0);
+//		HitList createHitList = super.createHitList(ul);
+//		return createHitList;
+//	}
+
+//	/** compute pagenumber to download.
+//	 * This is because biorxiv uses ZERO counting. The default here is ONE-based counting
+//	 * 
+//	 * Override to return zero-based counting
+//	 * 
+//	 * @param page
+//	 * @return
+//	 */
+//	@Override
+//	public Integer computePageNumber(Integer page) {
+//		return page - 1;
+//	}
 
 
 
