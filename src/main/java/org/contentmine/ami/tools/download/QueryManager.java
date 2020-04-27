@@ -2,6 +2,7 @@ package org.contentmine.ami.tools.download;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URLEncoder;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -18,6 +19,7 @@ import org.contentmine.graphics.html.HtmlBody;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlHtml;
 import org.contentmine.graphics.html.util.HtmlUtil;
+import org.contentmine.norma.NAConstants;
 
 import nu.xom.Element;
 
@@ -28,6 +30,10 @@ import nu.xom.Element;
  */
 public class QueryManager extends AbstractSubDownloader {
 
+	public enum QuerySyntax {
+		CSH,
+		AMP_PLUS,
+	}
 
 private static final Logger LOG = Logger.getLogger(QueryManager.class);
 	static {
@@ -122,20 +128,53 @@ private static final Logger LOG = Logger.getLogger(QueryManager.class);
 	 */
 	private String createQuery(List<String> queryList) {
 		String s = "";
+		QuerySyntax querySyntax = abstractDownloader.getQuerySyntax();
 		if (queryList != null) {
-			// originally a plus but will be encoded further
-			s = String.join("%2B", queryList);
-			s = addParameter("sort", sortOrder , s);
-			s = addParameter("numresults", String.valueOf(downloadTool.getPageSize()), s);
-			try {
-//				s = URLEncoder.encode(s, NAConstants.UTF_8);  / adds "+" instead of "%20"
-				s = AbstractDownloader.simpleEncode(s);
-			} catch (Exception e) {
-				throw new RuntimeException("cannot encode: ", e);
+			if (QuerySyntax.CSH.equals(querySyntax)) {
+				s = createUUEQuery(queryList);
+			} else if (QuerySyntax.AMP_PLUS.equals(querySyntax)) {
+				s = createAMPPlusQuery(queryList);
+			} else {
+				throw new RuntimeException("Bad querySyntax: "+querySyntax);
 			}
 		}
 		System.out.println("Query: "+s);
 		return s;
+	}
+
+	private String createUUEQuery(List<String> queryList) {
+		String s = "";
+		// originally a plus but will be encoded further
+		s = String.join("%2B", queryList);
+		s = addParameter("sort", sortOrder , s);
+		s = addParameter("numresults", String.valueOf(downloadTool.getPageSize()), s);
+		try {
+//				s = URLEncoder.encode(s, NAConstants.UTF_8);  / adds "+" instead of "%20"
+			s = AbstractDownloader.simpleEncode(s);
+		} catch (Exception e) {
+			throw new RuntimeException("cannot encode: ", e);
+		}
+		return s;
+	}
+
+	private String createAMPPlusQuery(List<String> queryList) {
+		String s = "q=";
+		// originally a plus but will be encoded further
+		s += String.join("+", queryList);
+//		s = addParameter("sort", sortOrder , s);
+//		s = addParameter("numresults", String.valueOf(downloadTool.getPageSize()), s);
+		try {
+			s = spaceToPlus(s);
+//			s = URLEncoder.encode(s, NAConstants.UTF_8);  // adds "+" instead of "%20"
+//			s = AbstractDownloader.simpleEncode(s);
+		} catch (Exception e) {
+			throw new RuntimeException("cannot encode: ", e);
+		}
+		return s;
+	}
+
+	private String spaceToPlus(String s) {
+		return s.replaceAll(" ", "+");
 	}
 
 	private String addParameter(String name, String value, String s) {
@@ -190,7 +229,18 @@ private static final Logger LOG = Logger.getLogger(QueryManager.class);
 	 * @return
 	 */
 	private String addPageNumber(String url, Integer page) {
-		return url == null ? null : url + "?page=" + abstractDownloader.computePageNumber(page);
+		String pageNumberString = "";
+		QuerySyntax querySyntax = abstractDownloader.getQuerySyntax();
+		if (url == null) {
+			
+		} else {
+			if (QuerySyntax.CSH.equals(querySyntax)) {
+				pageNumberString = url + "?page=" + abstractDownloader.computePageNumber(page);
+			} else if (QuerySyntax.AMP_PLUS.equals(querySyntax)) {
+				pageNumberString = url + "&page=" + abstractDownloader.computePageNumber(page);
+			}
+		}
+		return pageNumberString;
 	}
 
 	protected File cleanAndOutputHitListFile(File file) {

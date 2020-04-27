@@ -101,7 +101,7 @@ public class SVGPolygon extends SVGPoly {
      *
      * @return Node
      */
-    public Node copy() {
+    public nu.xom.Element copy() {
         return new SVGPolygon(this);
     }
 		

@@ -11,6 +11,7 @@ import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.download.AbstractDownloader;
 import org.contentmine.ami.tools.download.AbstractMetadataEntry;
 import org.contentmine.ami.tools.download.HitList;
+import org.contentmine.ami.tools.download.QueryManager.QuerySyntax;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -132,5 +133,10 @@ https://osf.io/preprints/discover?climate%252Bchange%20sort%3Arelevance-rank%20n
 		throw new RuntimeException("OSF createSubclassedMetadataEntry NYI");
 	}
 
+	@Override 
+	protected QuerySyntax getQuerySyntax() {
+		throw new RuntimeException ("OSFDownloader NYI");
+//		return QuerySyntax.url;
+	}
 
 }

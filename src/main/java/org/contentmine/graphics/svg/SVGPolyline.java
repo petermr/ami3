@@ -119,7 +119,7 @@ public class SVGPolyline extends SVGPoly {
      *
      * @return Node
      */
-    public Node copy() {
+    public nu.xom.Element copy() {
         return new SVGPolyline(this);
     }
     

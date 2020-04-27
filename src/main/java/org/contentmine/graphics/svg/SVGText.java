@@ -289,7 +289,7 @@ public class SVGText extends SVGElement {
      *
      * @return Node
      */
-    public Node copy() {
+    public nu.xom.Element copy() {
         return new SVGText(this, TAG);
     }
     

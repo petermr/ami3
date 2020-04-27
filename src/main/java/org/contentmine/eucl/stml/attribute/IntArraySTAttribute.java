@@ -79,7 +79,7 @@ public class IntArraySTAttribute extends STMLAttribute {
      * uses copy constructor.
      * @return copy 
      */
-    public Node copy() {
+    public Attribute copy() {
     	return new IntArraySTAttribute(this);
     }
 

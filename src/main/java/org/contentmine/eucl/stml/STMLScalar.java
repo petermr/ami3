@@ -70,7 +70,7 @@ public class STMLScalar extends STMLElement implements HasUnits, HasScalar, HasD
 	 * 
 	 * @return Node
 	 */
-	public Node copy() {
+	public nu.xom.Element copy() {
 		return new STMLScalar(this);
 
 	}

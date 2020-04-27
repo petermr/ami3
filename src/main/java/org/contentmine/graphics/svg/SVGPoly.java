@@ -115,7 +115,7 @@ public abstract class SVGPoly extends SVGShape {
      *
      * @return Node
      */
-    public Node copy() {
+    public nu.xom.Element copy() {
         return new SVGPolyline(this);
     }
 

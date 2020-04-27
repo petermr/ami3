@@ -153,7 +153,7 @@ public class SVGLine extends SVGShape {
      *
      * @return Node
      */
-    public Node copy() {
+    public nu.xom.Element copy() {
         return new SVGLine(this);
     }
 

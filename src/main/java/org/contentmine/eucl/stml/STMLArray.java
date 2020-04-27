@@ -83,7 +83,7 @@ public class STMLArray extends STMLElement implements HasUnits, HasArraySize,
 	 * @return Node
 	 */
 	@Override
-	public Node copy() {
+	public nu.xom.Element copy() {
 		return new STMLArray(this);
 	}
 

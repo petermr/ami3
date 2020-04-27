@@ -52,7 +52,7 @@ public class SVGDesc extends SVGElement {
      *
      * @return Node
      */
-    public Node copy() {
+    public nu.xom.Element copy() {
         return new SVGDesc(this);
     }
 

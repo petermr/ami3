@@ -92,7 +92,7 @@ public class SVGEllipse extends SVGShape {
      *
      * @return Node
      */
-    public Node copy() {
+    public nu.xom.Element copy() {
         return new SVGEllipse(this);
     }
 

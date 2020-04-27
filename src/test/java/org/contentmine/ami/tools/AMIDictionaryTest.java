@@ -40,19 +40,30 @@ public class AMIDictionaryTest extends AbstractAMITest {
 	}
 	
 	@Test
-	@Ignore // BAD DICTIONARIES?
+	/** VERY LONG (minutes)
+	 *  suggest find a much smaller one
+	 */
+	public void testCreateWikipediaListIT() {
+		String args = "--input https://en.wikipedia.org/wiki/List_of_fish_common_names" +
+				" dictionary create --informat wikipage" + 
+				"   --dictionary commonfish --directory mydictionary --outformats xml,html";
+		AMI.execute(args);
+	}
+	
+	@Test
+//	@Ignore // BAD DICTIONARIES?
 	public void testListSome() {
 		String args =
 				"dictionary "
-						+ "display "
+						+ "display"
 						+ " --directory src/main/resources/org/contentmine/ami/plugins/dictionary "
-						+ " --dictionary " + "country crispr disease"
+						+ " --dictionary " + "country disease"
 				;
 		AMI.execute(args);
 	}
 	
 	@Test
-	@Ignore // REQUIRE INPUT
+//	@Ignore // REQUIRE INPUT
 	public void testCreateFungicideTerms() {
 		
 		File directory = new File("/Users/pm286/ContentMine/dictionary/dictionaries/chem");

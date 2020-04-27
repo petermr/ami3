@@ -133,11 +133,11 @@ public class AMI implements Runnable {
 	 * @param args the command line arguments: a single String containing whitespace-separated
 	 *               optional global options followed by a required subcommand name and
 	 *               optional subcommand options.
-	 *               This will be split into arguments with {@code args.split("\\s)}.
+	 *               This will be split into arguments with {@code args.trim().split(\\s+)}.
 	 * @return the exit code
 	 */
 	static int execute(String args) {
-		return createCommandLine().execute(args.split("\\s"));
+		return createCommandLine().execute(args.trim().split("\\s+"));
 	}
 
 	private static CommandLine createCommandLine() {

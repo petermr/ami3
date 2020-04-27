@@ -21,10 +21,16 @@ import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlLi;
 import org.contentmine.graphics.html.HtmlUl;
+import org.contentmine.html.util.WebDriverXom;
 import org.hamcrest.MatcherAssert;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import nu.xom.Element;
 
@@ -34,6 +40,7 @@ import nu.xom.Element;
  *
  */
 public class AMIDownloadTest extends AbstractAMITest {
+	private static final String CHROMEDRIVER = "/usr/local/bin/chromedriver";
 	public static final Logger LOG = Logger.getLogger(AMIDownloadTest.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
@@ -254,7 +261,30 @@ hitList2 and hitList3 are the wrong way round.
 				+ " --query \"ebola AND n95\""
 				+ " --pagesize 20"
 				+ " --pages 1 4"        
-				+ " --fulltext pdformat"
+				+ " --fulltext pdf"
+				+ " --limit 2000"
+			;
+		AMIDownloadTool amiDownload = AMI.execute(AMIDownloadTool.class, args);
+
+	}
+
+	@Test
+	public void testHalDownload() {
+		String args;
+		String target = "target/hal/ebola";
+        args = "-p " + target
+				+ " clean"
+				+ " hal/";
+		AMI.execute(args);
+		
+		args = 
+				"-p " + target +""
+				+ " download"
+				+ " --site hal"
+				+ " --query ebola"
+				+ " --pagesize 20"
+				+ " --pages 1 4"        
+				+ " --fulltext pdf"
 				+ " --limit 2000"
 			;
 		AMIDownloadTool amiDownload = AMI.execute(AMIDownloadTool.class, args);
@@ -735,7 +765,20 @@ hitList2 and hitList3 are the wrong way round.
 //		Assert.assertTrue(cTree.getDirectory().exists());
 	}
 
-	
+	@Test
+	public void testChromeDriver() {
+		
+		String chromeDriverPath = CHROMEDRIVER ;
+		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors");
+		WebDriver driver = new ChromeDriver(options);	
+		driver.get("http://europepmc.org/article/MED/32211289");
+		WebElement webElement = driver.findElement(By.xpath("/*"));
+		Element root = new WebDriverXom().createXomElement(webElement);
+		System.out.println(root.toXML());
+		XMLUtil.writeQuietly(root, new File("target/junk.xml"), 1);
+	}
 	
 
 

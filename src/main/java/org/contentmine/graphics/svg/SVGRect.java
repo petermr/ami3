@@ -95,7 +95,7 @@ public class SVGRect extends SVGShape {
      *
      * @return Node
      */
-    public Node copy() {
+    public nu.xom.Element copy() {
         return new SVGRect(this);
     }
 

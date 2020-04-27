@@ -17,6 +17,7 @@
 package org.contentmine.eucl.stml;
 
 import java.io.File;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -197,7 +198,8 @@ public class STMLElement extends Element implements XMLConstants {
      * 
      * @return node
      */
-    public Node copy() {
+    @Override
+    public nu.xom.Element copy() {
         return new STMLElement(this);
     }
 

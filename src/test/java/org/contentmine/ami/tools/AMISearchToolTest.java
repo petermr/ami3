@@ -37,7 +37,7 @@ public class AMISearchToolTest {
 				+ " --dictionary country "
 				+ " --oldstyle"  // old style
 //				+ " --ignorePlugins word"
-				+ " -v"
+//				+ " -v"
 			;
 		LOG.debug("args "+args);
 //		new AMISearchTool().runCommands(args);

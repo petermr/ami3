@@ -1,8 +1,5 @@
 package org.contentmine.ami.tools.download.hal;
 
-import java.io.File;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.List;
 
 import org.apache.log4j.Level;
@@ -10,23 +7,35 @@ import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.download.AbstractDownloader;
 import org.contentmine.ami.tools.download.AbstractMetadataEntry;
 import org.contentmine.ami.tools.download.HitList;
+import org.contentmine.ami.tools.download.QueryManager.QuerySyntax;
 import org.contentmine.cproject.files.CProject;
-import org.contentmine.cproject.files.CTree;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlBody;
-import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlHtml;
-import org.contentmine.graphics.html.HtmlLink;
-import org.contentmine.graphics.html.HtmlStyle;
-import org.contentmine.graphics.html.HtmlUl;
-import org.contentmine.graphics.html.util.HtmlUtil;
 
 import nu.xom.Element;
 
 /** extracts from HAL pages
  * 
+ * NYI
  * 
+ *
+ *https://hal.archives-ouvertes.fr/search/index/?q=ebola
+ *    is simplest
+ *https://hal.archives-ouvertes.fr/search/index/?q=ebola&page=2
+ *    is simplest
+ *
+ * more complex
+ *https://hal.archives-ouvertes.fr/search/index/?
+ *q=ebola
+ *&docType_s=COMM+OR+DOUV+OR+OTHER+OR+UNDEFINED+OR+REPORT+OR+THESE+OR+HDR+OR+LECTURE+OR+COUV+OR+OUV+OR+POSTER+OR+ART
+ *&level0_domain_s=sdv+OR+chim+OR+shs+OR+sde+OR+phys+OR+nlin+OR+spi+OR+math+OR+scco+OR+stat+OR+info
+ *&language_s=en+OR+fr+OR+pt
+ *&keyword_t=Ebola
+ *&submitType_s=notice+OR+file
+ *&producedDateY_i=2019
+ *
   
  * @author pm286
  *
@@ -36,7 +45,7 @@ public class HALDownloader extends AbstractDownloader {
 	private static final String ARTICLE = "article";
 	private static final String CONTENT = "content/";
 	private static final String HIGHWIRE_CITE_EXTRAS = "highwire-cite-extras";
-	private static final String CITE_EXTRAS_DIV = ".//*[local-name()='"+HtmlDiv.TAG+"' and @class='" + HIGHWIRE_CITE_EXTRAS + "']";
+//	private static final String CITE_EXTRAS_DIV = ".//*[local-name()='"+HtmlDiv.TAG+"' and @class='" + HIGHWIRE_CITE_EXTRAS + "']";
 
 	static final Logger LOG = Logger.getLogger(HALDownloader.class);
 	static {
@@ -44,9 +53,9 @@ public class HALDownloader extends AbstractDownloader {
 	}
 	private static final String HIGHWIRE_SEARCH_RESULTS_LIST = "highwire-search-results-list";
 	
-	public static final String HAL_HOST = "www.HAL.org";
+	public static final String HAL_HOST = "hal.archives-ouvertes.fr";
 	public static final String HAL_BASE = HTTPS + P2H + HAL_HOST;
-	public static final String HAL_SEARCH = HAL_BASE + "/search/";
+	public static final String HAL_SEARCH = HAL_BASE + "/search/index/?";
 	public static final String HAL_HEADER = "/content/";
 
 	
@@ -134,5 +143,9 @@ public class HALDownloader extends AbstractDownloader {
 		throw new RuntimeException("HAL createSubclassedMetadataEntry NYI");
 	}
 
-	
+	@Override 
+	protected QuerySyntax getQuerySyntax() {
+		return QuerySyntax.AMP_PLUS;
+	}
+
 }

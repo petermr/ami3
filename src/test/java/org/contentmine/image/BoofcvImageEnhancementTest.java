@@ -11,6 +11,7 @@ import org.apache.log4j.Logger;
 
 import boofcv.alg.enhance.EnhanceImageOps;
 import boofcv.alg.misc.ImageStatistics;
+import boofcv.concurrency.IWorkArrays;
 import boofcv.io.image.ConvertBufferedImage;
 import boofcv.struct.image.GrayU8;
 
@@ -50,7 +51,10 @@ public class BoofcvImageEnhancementTest {
 		EnhanceImageOps.applyTransform(gray, transform, adjusted);
 //		panel.addImage(ConvertBufferedImage.convertTo(adjusted, null), "Global");
 
-		EnhanceImageOps.equalizeLocal(gray, 50, adjusted, /*size,*/ histogram, new int[0]);
+		/** API has changed */
+		IWorkArrays workArrays = new IWorkArrays();
+		EnhanceImageOps.equalizeLocal(gray, 50, adjusted, size, workArrays);
+//		EnhanceImageOps.equalizeLocal(gray, 50, adjusted, /*size,*/ histogram, new int[0]);
 //		panel.addImage(ConvertBufferedImage.convertTo(adjusted,null),"Local");
 
 //		panel.addImage(ConvertBufferedImage.convertTo(gray, null), "Original");

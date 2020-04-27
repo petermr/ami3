@@ -71,7 +71,7 @@ public abstract class AbstractLookup {
 
 	/** gets content of URL as a string.
 	 * 
-	 * @param url
+	 * @param ampplus
 	 * @return
 	 * @throws IOException
 	 */

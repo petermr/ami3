@@ -414,15 +414,17 @@ public class HtmlUtil {
 	}
 
 	public static Element parseCleanlyToXHTML(String input) {
+		HtmlFactory htmlFactory = new HtmlFactory();
 		input = HtmlUtil.removeScripts(input);	
 		input = HtmlUtil.removeFloatingAmpersand(input);
 		input = XMLUtil.replaceCharacterEntities(input);
 		Element element = null;
 		try {
-			element = XMLUtil.parseXML(input);
+			element = htmlFactory.parseRawHtml(input);
+//			element = XMLUtil.parseXML(input);
 		} catch (Exception e) {
 			System.out.println("CANNOT PARSE:\n"+input.substring(0, Math.min(100, input.length())));
-			throw e;
+			throw new RuntimeException("Cannot parse HTML", e);
 		}
 		return element;
 	}

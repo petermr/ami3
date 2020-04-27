@@ -357,4 +357,10 @@ public abstract class AbstractDownloader {
 		return page;
 	}
 
+	/** each subclass must set its query syntax.
+	 * 
+	 * @return
+	 */
+	protected abstract QueryManager.QuerySyntax getQuerySyntax();
+
 }

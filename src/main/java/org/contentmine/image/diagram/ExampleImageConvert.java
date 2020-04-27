@@ -118,7 +118,8 @@ public class ExampleImageConvert {
 		derivX = GeneralizedImageOps.createSingleBand(GrayS16.class, gray.getWidth(), gray.getHeight());
 		derivY = GeneralizedImageOps.createSingleBand(GrayS16.class, gray.getWidth(), gray.getHeight());
 
-		GImageDerivativeOps.gradient(DerivativeType.SOBEL, gray, derivX, derivY, BorderType.EXTENDED);
+		/** API has changed */
+//		GImageDerivativeOps.gradient(DerivativeType.SOBEL, gray., derivX, derivY, BorderType.EXTENDED);
 	}
 
 	public static void main( String args[] ) {

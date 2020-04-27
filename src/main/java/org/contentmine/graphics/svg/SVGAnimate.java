@@ -53,7 +53,7 @@ public class SVGAnimate extends AbstractAnimate {
      *
      * @return Node
      */
-    public Node copy() {
+    public nu.xom.Element copy() {
         return new SVGAnimate(this);
     }
 

@@ -11,6 +11,7 @@ import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.download.AbstractDownloader;
 import org.contentmine.ami.tools.download.AbstractMetadataEntry;
 import org.contentmine.ami.tools.download.HitList;
+import org.contentmine.ami.tools.download.QueryManager.QuerySyntax;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -128,5 +129,10 @@ public class ScieloDownloader extends AbstractDownloader {
 		throw new RuntimeException("SCIELO createSubclassedMetadataEntry NYI");
 	}
 
+	@Override 
+	protected QuerySyntax getQuerySyntax() {
+		throw new RuntimeException ("ScieloDownloader NYI");
+//		return QuerySyntax.url;
+	}
 
 }

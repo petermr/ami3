@@ -137,7 +137,7 @@ public class AMIDownloadTool extends AbstractAMITool {
 
 	public enum FulltextFormat {
 		html,
-		pdformat,  // because "pdf" clashes with command
+		pdf,  
 		suppinfo,
 		xml,
 	}
@@ -282,7 +282,8 @@ public class AMIDownloadTool extends AbstractAMITool {
 		
 		FulltextManager fulltextManager = downloader.getOrCreateFulltextManager();
 		fulltextManager.downloadFullTextAndRelatedFilesFromLandingPages();
-		System.out.println("========\nFulltext: "+fulltextManager+"\n========");
+//		System.out.println("========\nFulltext: "+fulltextManager+"\n========");
+		System.out.println("========\nFulltext: "+"finished"+"\n========");
 		
 		boolean downloadHtml = false;
 		if (downloadHtml) {

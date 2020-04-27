@@ -160,7 +160,7 @@ public class GraphicsElement extends AbstractCMElement implements SVGConstants {
      * 
      * @return node
      */
-    public Node copy() {
+    public nu.xom.Element copy() {
         return new GraphicsElement(this);
     }
 

@@ -74,7 +74,7 @@ public class IntSTAttribute extends STMLAttribute {
      * uses copy constructor.
      * @return copy 
      */
-    public Node copy() {
+    public Attribute copy() {
     	return new IntSTAttribute(this);
     }
 

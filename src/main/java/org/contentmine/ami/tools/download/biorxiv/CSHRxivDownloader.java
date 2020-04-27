@@ -6,6 +6,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.download.AbstractDownloader;
 import org.contentmine.ami.tools.download.HitList;
+import org.contentmine.ami.tools.download.QueryManager.QuerySyntax;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlBody;
@@ -105,5 +106,11 @@ public abstract class CSHRxivDownloader extends AbstractDownloader {
 	@Override
 	protected String createLocalTreeName(String fileroot) {
 		return fileroot.replace(URL_HEADER, "");
+	}
+	
+	@Override 
+	protected QuerySyntax getQuerySyntax() {
+		return QuerySyntax.CSH;
+		
 	}
 }

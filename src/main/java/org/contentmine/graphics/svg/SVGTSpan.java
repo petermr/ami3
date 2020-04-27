@@ -72,7 +72,7 @@ public class SVGTSpan extends SVGText {
      *
      * @return Node
      */
-    public Node copy() {
+    public nu.xom.Element copy() {
         return new SVGTSpan(this);
     }
 

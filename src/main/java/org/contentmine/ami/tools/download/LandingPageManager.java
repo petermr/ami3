@@ -244,7 +244,7 @@ public class LandingPageManager extends AbstractSubDownloader {
 		LOG.debug(directory);
 		for (String fileroot : fileroots) {
 			CurlPair curlPair = this.createLandingPageCurlPair(directory, fileroot);
-			System.out.println("curl pair: "+curlPair);
+//			System.out.println("curl pair: "+curlPair);
 			curlDownloader.addCurlPair(curlPair);
 		}
 		

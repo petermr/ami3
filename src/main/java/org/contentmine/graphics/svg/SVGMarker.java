@@ -143,7 +143,7 @@ public class SVGMarker extends SVGElement {
      *
      * @return Node
      */
-    public Node copy() {
+    public nu.xom.Element copy() {
         return new SVGMarker(this);
     }
 

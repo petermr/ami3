@@ -84,7 +84,7 @@ public class StringArraySTAttribute extends STMLAttribute {
      * uses copy constructor.
      * @return copy 
      */
-    public Node copy() {
+    public Attribute copy() {
     	return new StringArraySTAttribute(this);
     }
 

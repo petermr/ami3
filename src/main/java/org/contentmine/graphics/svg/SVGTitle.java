@@ -80,7 +80,7 @@ public class SVGTitle extends SVGElement {
      *
      * @return Node
      */
-    public Node copy() {
+    public nu.xom.Element copy() {
         return new SVGTitle(this);
     }
 	

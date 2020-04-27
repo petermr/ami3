@@ -128,10 +128,10 @@ public class STMLAttribute extends Attribute implements XMLConstants {
      * shallow copy as most fields are not mutable
      * @return copy of node
      */
-    public Node copy() {
+    public nu.xom.Attribute copy() {
     	STMLAttribute newAttribute = new STMLAttribute(this);
         newAttribute.setValue(this.getValue());
-        return newAttribute;
+        return (nu.xom.Attribute) newAttribute;
     }
     
     /**

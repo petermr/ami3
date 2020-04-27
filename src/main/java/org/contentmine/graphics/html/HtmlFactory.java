@@ -629,6 +629,10 @@ public class HtmlFactory {
 
 	public HtmlElement parse(InputStream is) throws Exception {
 		String ss = IOUtils.toString(is, CMineUtil.UTF8_CHARSET);
+		return parseRawHtml(ss);
+	}
+
+	public HtmlElement parseRawHtml(String ss) throws IOException {
 		ensureContentLists();
 		for (String remove : contentList) {
 			ss = XMLUtil.removeTags(remove, ss);

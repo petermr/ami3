@@ -87,7 +87,7 @@ public class SVGSVG extends SVGElement {
      *
      * @return Node
      */
-    public Node copy() {
+    public nu.xom.Element copy() {
         return new SVGSVG(this);
     }
 

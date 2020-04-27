@@ -49,7 +49,7 @@ public class HtmlUnitWrapper {
 	    	LOG.trace("Removed BMC Horror");
 	    }
 	    FileUtils.write(new File("target/pageAsXml.xml"), pageAsXml);
-	    webClient.closeAllWindows();
+//	    webClient.closeAllWindows();
 		htmlElement = null;
 		try {
 			HtmlFactory htmlFactory = new HtmlFactory();

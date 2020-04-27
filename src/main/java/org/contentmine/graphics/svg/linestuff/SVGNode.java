@@ -129,7 +129,7 @@ public class SVGNode extends SVGG {
 	}
 
 	@Override
-	public Node copy() {
+	public nu.xom.Element copy() {
 		SVGNode node = new SVGNode();
 		node.copyAttributesChildrenElements(this);
 		node.point = this.point;

@@ -7,6 +7,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.download.AbstractDownloader;
 import org.contentmine.ami.tools.download.HitList;
+import org.contentmine.ami.tools.download.QueryManager.QuerySyntax;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlBody;
@@ -127,6 +128,12 @@ public class RedalycDownloader extends AbstractDownloader {
 		Element ul = ulList.get(0);
 		HitList createHitList = super.createHitList(ul);
 		return createHitList;
+	}
+
+	@Override 
+	protected QuerySyntax getQuerySyntax() {
+		throw new RuntimeException ("RedalycDownloader NYI");
+//		return QuerySyntax.url;
 	}
 
 

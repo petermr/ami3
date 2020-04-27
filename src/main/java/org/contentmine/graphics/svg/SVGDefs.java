@@ -65,7 +65,7 @@ public class SVGDefs extends SVGElement {
      *
      * @return Node
      */
-    public Node copy() {
+    public nu.xom.Element copy() {
         return new SVGDefs(this);
     }
 

@@ -1,6 +1,7 @@
 package org.contentmine.norma;
 
 import java.io.File;
+
 import java.io.FileOutputStream;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
@@ -29,10 +30,10 @@ import org.junit.Test;
 
 public class MiscTest {
 
-	public void testXMLApis() {
-		org.w3c.dom.ElementTraversal e;
-		org.w3c.dom.Element e1;
-	}
+//	public void testXMLApis() {
+//		org.w3c.dom.ElementTraversal e;
+//		org.w3c.dom.Element e1;
+//	}
 
 	public void test() {
 		/** for example only
