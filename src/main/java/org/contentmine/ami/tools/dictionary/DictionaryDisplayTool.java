@@ -44,7 +44,8 @@ public class DictionaryDisplayTool extends AMIDictionaryTool {
 	// ================== LIST ===================
 	
 	// FILES
-	public void displayDictionaries() {
+	@Override
+	public void run() {
 		List<String> argList = Arrays.asList(LIST);
 		files = listDictionaryFiles(dictionaryTop);
 		Collections.sort(files);
@@ -56,11 +57,11 @@ public class DictionaryDisplayTool extends AMIDictionaryTool {
 			}
 		} else if (argList.size() >= 1 && argList.get(0).toUpperCase().equals(FULL)) {
 			argList.remove(0);
-			setMaxEntries(DEFAULT_MAX_ENTRIES);
+			maxEntries = DEFAULT_MAX_ENTRIES;
 			if (argList.size() >= 1) {
 				String arg = argList.get(0);
 				try {
-					setMaxEntries(Integer.parseInt(arg));
+					maxEntries = Integer.parseInt(arg);
 					argList.remove(0);
 				} catch (NumberFormatException nfe) {
 //					DebugPrint.debugPrintln(Level.ERROR, "Requires maxEntries, found: "+arg);
@@ -94,9 +95,9 @@ public class DictionaryDisplayTool extends AMIDictionaryTool {
 		}
 	}
 
-	public void setMaxEntries(int maxEntries) {
-		this.maxEntries = maxEntries;
-	}
+//	private void setMaxEntries(int maxEntries) {
+//		this.maxEntries = maxEntries;
+//	}
 
 	private List<File> listDictionaryFiles(File dictionaryHead) {
 		DebugPrint.debugPrint("dictionaries from "+dictionaryHead);
@@ -128,7 +129,7 @@ public class DictionaryDisplayTool extends AMIDictionaryTool {
 		
 	}
 
-	public void listHardcoded() {
+	private void listHardcoded() {
 		System.err.println("\n\nalso hardcoded functions (which resolve abbreviations):\n");
 		System.err.println("    gene    (relies on font/style) ");
 		System.err.println("    species (resolves abbreviations) ");
@@ -162,7 +163,7 @@ public class DictionaryDisplayTool extends AMIDictionaryTool {
 		
 		
 
-	private void help(List<String> argList) {
+	public void help(List<String> argList) {
 		LOG.error("shouldn't use this help?");
 		System.err.println("Dictionary processor");
 		System.err.println("    dictionaries are normally added as arguments to search "
