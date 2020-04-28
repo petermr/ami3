@@ -120,8 +120,11 @@ public class AMI implements Runnable {
 	 * @return the invoked subcommand instance
 	 */
 	static <T> T execute(Class<T> subcommandClass, String args) {
+		return execute(subcommandClass, args.trim().split("\\s+"));
+	}
+	static <T> T execute(Class<T> subcommandClass, String[] args) {
 		CommandLine cmd = createCommandLine();
-		cmd.execute(args.split("\\s"));
+		cmd.execute(args);
 		return (T) cmd.getParseResult().subcommand().commandSpec().userObject();
 	}
 
@@ -137,7 +140,10 @@ public class AMI implements Runnable {
 	 * @return the exit code
 	 */
 	static int execute(String args) {
-		return createCommandLine().execute(args.trim().split("\\s+"));
+		return execute(args.trim().split("\\s+"));
+	}
+	static int execute(String[] args) {
+		return createCommandLine().execute(args);
 	}
 
 	private static CommandLine createCommandLine() {

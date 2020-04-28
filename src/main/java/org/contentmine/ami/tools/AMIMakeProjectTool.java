@@ -150,7 +150,7 @@ public class AMIMakeProjectTool extends AbstractAMITool {
 	
     @Override
     protected void validateRawFormats() {
-		if (args.length > 0 && (rawFileFormats == null || rawFileFormats.size() == 0)) {
+		if (rawFileFormats == null || rawFileFormats.size() == 0) {
 			addLoggingLevel(Level.ERROR, "must give at least one filetype (e.g. html); NO ACTION");
 		}
     }
