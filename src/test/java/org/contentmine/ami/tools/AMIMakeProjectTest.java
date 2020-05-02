@@ -38,8 +38,9 @@ public class AMIMakeProjectTest {
 				new File(NormaFixtures.TEST_MAKEPROJECT_DIR, PROJECT1),
 				targetDir);
 		Assert.assertTrue(targetDir.exists());
-		String cmd = "-p " + targetDir +" --rawfiletypes html,pdf,xml";
-		AMIMakeProjectTool.main(cmd);
+		String cmd = "-p " + targetDir + " makeproject "+ " --rawfiletypes html,pdf,xml";
+		AMI.execute(cmd);
+		
 		List<File> childDirectories = CMineGlobber.listSortedChildDirectories(targetDir);
 		Assert.assertEquals("ergen_canagli_17_", FilenameUtils.getBaseName(childDirectories.get(0).toString()));
 		Assert.assertEquals("["

@@ -1,31 +1,47 @@
 package org.contentmine.ami.tools;
 
-import org.apache.log4j.BasicConfigurator;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
-import picocli.AutoComplete;
-import picocli.CommandLine;
-import picocli.CommandLine.ArgGroup;
-import picocli.CommandLine.Command;
-import picocli.CommandLine.IParameterExceptionHandler;
-import picocli.CommandLine.Model.CommandSpec;
-import picocli.CommandLine.Option;
-import picocli.CommandLine.ParameterException;
-import picocli.CommandLine.Spec;
-
+import java.io.File;
 import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.Callable;
 
-@Command(name = "ami",
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
+import org.contentmine.ami.CProjectTreeMixin;
+import org.contentmine.ami.tools.AMI.CProjectOptions;
+import org.contentmine.ami.tools.AMI.CTreeOptions;
+import org.contentmine.ami.tools.AMI.GeneralOptions;
+import org.contentmine.ami.tools.AMI.LoggingOptions;
+import org.contentmine.ami.tools.AMI.ProjectOrTreeOptions;
+import org.contentmine.ami.tools.AMI.ShortErrorMessageHandler;
+import org.contentmine.ami.tools.AbstractAMIDictTool.DictionaryFileFormat;
+import org.contentmine.ami.tools.AbstractAMIDictTool.InputFormat;
+import org.contentmine.ami.tools.AbstractAMIDictTool.Operation;
+import org.contentmine.ami.tools.AbstractAMIDictTool.WikiFormat;
+import org.contentmine.ami.tools.AbstractAMIDictTool.WikiLink;
+import org.contentmine.ami.tools.dictionary.DictionaryCreationTool;
+import org.contentmine.ami.tools.dictionary.DictionaryDisplayTool;
+import org.contentmine.ami.tools.dictionary.DictionarySearchTool;
+import org.contentmine.ami.tools.dictionary.DictionaryTranslateTool;
+
+import picocli.CommandLine;
+import picocli.CommandLine.ArgGroup;
+import picocli.CommandLine.Command;
+import picocli.CommandLine.IParameterExceptionHandler;
+import picocli.CommandLine.Mixin;
+import picocli.CommandLine.Model.CommandSpec;
+import picocli.CommandLine.Option;
+import picocli.CommandLine.ParameterException;
+import picocli.CommandLine.Parameters;
+import picocli.CommandLine.Spec;
+
+@Command(name = "amidict",
 		description = {
 				"",
-				"`${COMMAND-FULL-NAME}` is a command suite for managing (scholarly) documents: " +
-						"download, aggregate, transform, search, filter, index, annotate, re-use and republish.",
-				"It caters for a wide range of inputs (including some awful ones), and creates de facto semantics and an ontology (based on Wikidata).",
-				"`${COMMAND-FULL-NAME}` is the basis for high-level science/tech applications including chemistry (molecules, spectra, reaction), Forest plots (metaanalyses of trials), phylogenetic trees (useful for virus mutations), geographic maps, and basic plots (x/y, scatter, etc.).",
+				"`${COMMAND-FULL-NAME}` is a command suite for managing dictionary: " +
+						"",
 				"",
 				"Parameters:%n===========" // this is a hack to show a header for [@<filename>...] until https://github.com/remkop/picocli/issues/984 is fixed
 		},
@@ -41,45 +57,16 @@ import java.util.concurrent.Callable;
 		subcommandsRepeatable = true,
 		sortOptions = false,
 		subcommands = {
-				AMIAssertTool.class,
-				AMICleanTool.class,
-//				AMIDictionaryTool.class,
-//				AMIDict.class,
-				AMIDisplayTool.class,
-				AMIDownloadTool.class,
-				AMIDummyTool.class,
-				AMIFilterTool.class,
-				AMIForestPlotTool.class,
-				//AMIGetpapersTool.class, // https://github.com/petermr/ami3/issues/29
-				AMIGraphicsTool.class,
-				AMIGrobidTool.class,
-				AMIImageFilterTool.class,
-				AMIImageTool.class,
-				AMIMakeProjectTool.class,
-				AMIMetadataTool.class,
-				AMIOCRTool.class,
-				AMIPDFTool.class,
-				AMIPixelTool.class,
-				AMIRegexTool.class,
-				AMISearchTool.class,
-				AMISectionTool.class,
-				AMISummaryTool.class,
-				AMISVGTool.class,
-				AMITableTool.class,
-				AMITransformTool.class,
-				AMIWordsTool.class,
-				CommandLine.HelpCommand.class,
-				AutoComplete.GenerateCompletion.class,
+				DictionaryCreationTool.class,
+				DictionaryDisplayTool.class,
+				DictionarySearchTool.class,
+				DictionaryTranslateTool.class,
 		})
-public class AMI implements Runnable {
-	private static final Logger LOG = Logger.getLogger(AMI.class);
-
+public class AMIDict implements Runnable {
+	private static final Logger LOG = Logger.getLogger(AMIDict.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
-
-	@ArgGroup(exclusive = true, heading = "", order = 9)
-	ProjectOrTreeOptions projectOrTreeOptions = new ProjectOrTreeOptions();
 
 	@ArgGroup(validate = false, heading = "General Options:%n", order = 30)
 	GeneralOptions generalOptions = new GeneralOptions();
@@ -149,75 +136,9 @@ public class AMI implements Runnable {
 
 	private static CommandLine createCommandLine() {
 		BasicConfigurator.configure(); // TBD not needed?
-		CommandLine cmd = new CommandLine(new AMI());
+		CommandLine cmd = new CommandLine(new AMIDict());
 		cmd.setParameterExceptionHandler(new ShortErrorMessageHandler());
 		return cmd;
-	}
-
-	static class ProjectOrTreeOptions {
-		@ArgGroup(exclusive = false, multiplicity = "0..1",
-				heading = "CProject Options:%n", order = 10)
-		CProjectOptions cProjectOptions = new CProjectOptions();
-
-		@ArgGroup(exclusive = false, multiplicity = "0..1",
-				heading = "CTree Options:%n", order = 20)
-		CTreeOptions cTreeOptions = new CTreeOptions();
-	}
-
-	static class CProjectOptions {
-		@Option(names = {"-p", "--cproject"}, paramLabel = "DIR",
-				description = "The CProject (directory) to process. This can be (a) a child directory of cwd (current working directory (b) cwd itself (use -p .) or (c) an absolute filename."
-						+ " No defaults. The cProject name is the basename of the file."
-		)
-		protected String cProjectDirectory = null;
-
-		protected static class TreeOptions {
-			@Option(names = {"-r", "--includetree"}, paramLabel = "DIR", order = 12,
-					arity = "1..*",
-					description = "Include only the CTrees in the list. (only works with --cproject). "
-							+ "Currently must be explicit but we'll add globbing later."
-			)
-			protected String[] includeTrees;
-
-			@Option(names = {"-R", "--excludetree"}, paramLabel = "DIR", order = 13,
-					arity = "1..*",
-					description = "Exclude the CTrees in the list. (only works with --cproject). "
-							+ "Currently must be explicit but we'll add globbing later."
-			)
-			protected String[] excludeTrees;
-		}
-
-		@ArgGroup(exclusive = true, multiplicity = "0..1", order = 11, heading = "")
-		TreeOptions treeOptions = new TreeOptions();
-	}
-
-	static class CTreeOptions {
-		@Option(names = {"-t", "--ctree"}, paramLabel = "DIR",
-				description = "The CTree (directory) to process. This can be (a) a child directory of cwd (current working directory, usually cProject) (b) cwd itself, usually cTree (use -t .) or (c) an absolute filename."
-						+ " No defaults. The cTree name is the basename of the file."
-		)
-		protected String cTreeDirectory = null;
-
-		protected static class BaseOptions {
-
-			@Option(names = {"-b", "--includebase"}, paramLabel = "PATH", order = 22,
-					arity = "1..*",
-					description = "Include child files of cTree (only works with --ctree). "
-							+ "Currently must be explicit or with trailing percent for truncated glob."
-			)
-			protected String[] includeBase;
-
-			@Option(names = {"-B", "--excludebase"}, paramLabel = "PATH",
-					order = 23,
-					arity = "1..*",
-					description = "Exclude child files of cTree (only works with --ctree). "
-							+ "Currently must be explicit or with trailing percent for truncated glob."
-			)
-			protected String[] excludeBase;
-		}
-
-		@ArgGroup(exclusive = true, multiplicity = "0..1", heading = "", order = 21)
-		BaseOptions baseOptions = new BaseOptions();
 	}
 
 	static class GeneralOptions {
@@ -310,4 +231,8 @@ public class AMI implements Runnable {
 					: spec.exitCodeOnInvalidInput();
 		}
 	}
+
+
+
+
 }

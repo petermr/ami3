@@ -10,7 +10,7 @@ import java.util.List;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.contentmine.ami.tools.AMIDictionaryTool.DictionaryFileFormat;
+import org.contentmine.ami.tools.AMIDictionaryToolOLD.DictionaryFileFormat;
 import org.contentmine.ami.tools.download.CurlDownloader;
 import org.contentmine.graphics.html.HtmlA;
 import org.contentmine.norma.NAConstants;
@@ -36,7 +36,25 @@ public class AMIDictionaryTest extends AbstractAMITest {
 	@Test
 	public void testHelp() {
 		String args = "dictionary --help";
+		AMIDict.execute(args);
+	}
+	
+	@Test
+	public void testHelpSubcommands() {
+		String args = "dictionary --help";
 		AMI.execute(args);
+	}
+	
+	@Test
+	public void testSubcommands() {
+		String args = "dictionary create ";
+		AMI.execute(args);
+	}
+	
+	@Test
+	public void testSubcommands1() {
+		String args = "dictionary create";
+		AMIDict.execute(args);
 	}
 	
 	@Test
@@ -179,7 +197,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 			"--linkcol Name " +
            " --outformats xml,json,html " +
            " --dictionary "+dictname;
-		AbstractAMITool amiDictionary = AMI.execute(AMIDictionaryTool.class, args);
+		AbstractAMITool amiDictionary = AMI.execute(AMIDictionaryToolOLD.class, args);
 		Assert.assertTrue(""+dictFile, dictFile.exists());
 
 	}
@@ -894,7 +912,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 				"</noinclude>"
 				+ "";
 		
-		List<HtmlA> aList = AMIDictionaryTool.parseMediaWiki(mw);
+		List<HtmlA> aList = AMIDictionaryToolOLD.parseMediaWiki(mw);
 		Assert.assertEquals("aList "+aList.size(), 140, aList.size());
 	}
 	

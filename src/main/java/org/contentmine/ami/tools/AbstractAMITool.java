@@ -18,7 +18,6 @@ import org.contentmine.cproject.args.AbstractTool;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeList;
-import org.contentmine.eucl.euclid.Util;
 
 import picocli.CommandLine;
 import picocli.CommandLine.Command;
@@ -146,8 +145,8 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 	protected File cProjectOutputDir;
 	protected File cTreeOutputDir;
 
-	@Deprecated(/*forRemoval = true*/)
-	protected String[] args;
+//	@Deprecated(/*forRemoval = true*/)
+//	protected String[] args;
 
 	private Level level;
 	protected File contentMineDir = DEFAULT_CONTENT_MINE_DIR;
@@ -172,12 +171,10 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 	 * calls CommandLine.call(this, args)
 	 *
 	 * @param args
-	 * @deprecated TO BE REMOVED. Use
 	 */
 	public void runCommands(String[] args) {
 		init();
-		this.args = args;
-		// add help
+//		// add help
 		args = args.length == 0 ? new String[]{"--help"} : args;
 		new CommandLine(this).execute(args);
 	}

@@ -10,10 +10,21 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
-import org.contentmine.ami.tools.AMIDictionaryTool;
+import org.contentmine.ami.tools.AMIDictionaryToolOLD;
+import org.contentmine.ami.tools.AbstractAMIDictTool;
 import org.contentmine.eucl.euclid.Util;
 
-public class DictionarySearchTool extends AMIDictionaryTool {
+import picocli.CommandLine.Command;
+
+@Command(
+name = "search",
+description = {
+		"searches within dictionaries",
+		"TBD"
+		+ ""
+})
+
+public class DictionarySearchTool extends AbstractAMIDictTool {
 	private static final Logger LOG = Logger.getLogger(DictionarySearchTool.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
@@ -24,8 +35,8 @@ public class DictionarySearchTool extends AMIDictionaryTool {
 	}
 	
 	@Override
-	public void run() {
-		DefaultAMIDictionary amiDictionary = AMIDictionaryTool.readDictionary(new File(dictionaryList.get(0)));
+	public void runSub() {
+		DefaultAMIDictionary amiDictionary = AMIDictionaryToolOLD.readDictionary(new File(dictionaryList.get(0)));
 		Set<String> rawTermSet = amiDictionary.getRawLowercaseTermSet();
 		
 		if (searchTerms != null) {

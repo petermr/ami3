@@ -20,7 +20,8 @@ import org.contentmine.ami.dictionary.CMJsonDictionary;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
 import org.contentmine.ami.dictionary.DictionaryTerm;
 import org.contentmine.ami.lookups.WikipediaDictionary;
-import org.contentmine.ami.tools.AMIDictionaryTool;
+import org.contentmine.ami.tools.AMIDictionaryToolOLD;
+import org.contentmine.ami.tools.AbstractAMIDictTool;
 import org.contentmine.ami.tools.download.CurlDownloader;
 import org.contentmine.cproject.util.RectTabColumn;
 import org.contentmine.cproject.util.RectangularTable;
@@ -42,9 +43,17 @@ import com.google.gson.JsonParser;
 
 import nu.xom.Attribute;
 import nu.xom.Element;
+import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 
-public class DictionaryCreationTool extends AMIDictionaryTool {
+@Command(
+name = "create",
+description = {
+		"creates dictionaries from text, Wikimedia, etc..",
+		"TBD"
+		+ ""
+})
+public class DictionaryCreationTool extends AbstractAMIDictTool {
 
 	public static final Logger LOG = Logger.getLogger(DictionaryCreationTool.class);
 	static {
@@ -62,6 +71,7 @@ public class DictionaryCreationTool extends AMIDictionaryTool {
 	private WikipediaDictionary wikipediaDictionary;
 	private Element dictionaryElement;
 	private List<RectTabColumn> dataColList;
+	
 	@Option(names = {"--datacols"}, 
 			split=",",
 			arity="1..*",
@@ -103,7 +113,7 @@ public class DictionaryCreationTool extends AMIDictionaryTool {
 		
 	}
 
-	public void run() {
+	public void runSub() {
 		resetMissingLinks();
 
 		if (templateNames != null) {
@@ -459,7 +469,7 @@ public class DictionaryCreationTool extends AMIDictionaryTool {
 
 	private void createFromMediawikiTemplate(String mwString) {
 		LOG.trace("mwstring :" +mwString);
-		List<HtmlA> aList = AMIDictionaryTool.parseMediaWiki(mwString);
+		List<HtmlA> aList = AMIDictionaryToolOLD.parseMediaWiki(mwString);
 		System.err.println("read A's :" +aList.size());
 		addAHrefs(aList);
 	}

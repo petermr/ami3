@@ -19,7 +19,7 @@ import org.apache.commons.io.FilenameUtils;
 //import org.apache.commons.httpclient.params.HttpMethodParams;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.contentmine.ami.tools.AMIDictionaryTool.RawFileFormat;
+import org.contentmine.ami.tools.AMIDictionaryToolOLD.RawFileFormat;
 import org.contentmine.cproject.CProjectArgProcessor;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.cproject.args.FileXPathSearcher;

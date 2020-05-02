@@ -42,25 +42,6 @@ description = {
 				+ "%n"
 				+ "The directories can contain multiple filetypes%n"
 				+ "%n"
-				+ "Assuming a directory foo/ with files%n%n"
-				+ "  a.pdf%n"
-				+ "  b.pdf%n"
-				+ "  a.html%n"
-				+ "  b.xml%n"
-				+ "  c.pdf%n"
-				+ "%n"
-				+ "makeproject -p foo -f pdf,html,xml%n"
-				+ "will create:%n"
-				+ "foo/%n"
-				+ "  a/%n"
-				+ "    fulltext.pdf%n"
-				+ "    fulltext.html%n"
-				+ "  b/%n"
-				+ "    fulltext.pdf%n"
-				+ "    fulltext.xml%n"
-				+ "  c/%n"
-				+ "    fulltext.pdf%n"
-				+ "%n"
 				+ " raw filename changes occur in CProject.makeProject()"
 				+ "Files with uppercase characters, spaces, punctuation, long names, etc. may give problems. By default they %n"
 				+ "(a) are lowercased, %n"
@@ -70,6 +51,8 @@ description = {
 				+ ""
 				+ "By default a logfile of the conversions is created in make_project.json. "
 				+ "The name can be changed "
+				+ "The filenames are changed and the files moved."
+				
 })
 public class AMIMakeProjectTool extends AbstractAMITool {
 	private static final Logger LOG = Logger.getLogger(AMIMakeProjectTool.class);
@@ -96,7 +79,7 @@ public class AMIMakeProjectTool extends AbstractAMITool {
 			split = ",",
 			description = "Suffixes of included files (${COMPLETION-CANDIDATES}): "
 					+ "can be concatenated with commas ")
-	protected List<AMIDictionaryTool.RawFileFormat> rawFileFormats = new ArrayList<>();
+	protected List<AMIDictionaryToolOLD.RawFileFormat> rawFileFormats = new ArrayList<>();
 
 	@Option(names = {"--logfile"},
 			description = "(A) log file for each tree/file/image analyzed. "
@@ -117,8 +100,10 @@ public class AMIMakeProjectTool extends AbstractAMITool {
     protected void parseSpecifics() {
     	addLoggingLevel(Level.INFO, "compress            "+compress);
     	addLoggingLevel(Level.INFO, "omit                "+omitRegexList);
+    	addLoggingLevel(Level.INFO, "directory           "+cProject.getDirectory().getAbsolutePath());
     	System.out.println("compress            "+compress);
     	System.out.println("omit                "+omitRegexList);
+    	System.out.println("directory           "+cProject.getDirectory().getAbsolutePath());
 		System.out.println("file types          " + rawFileFormats);
 		System.out.println("logfile             " + logfile);
     }

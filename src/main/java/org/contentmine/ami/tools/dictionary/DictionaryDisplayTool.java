@@ -16,7 +16,8 @@ import java.util.List;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.contentmine.ami.tools.AMIDictionaryTool;
+import org.contentmine.ami.tools.AMIDictionaryToolOLD.Operation;
+import org.contentmine.ami.tools.AbstractAMIDictTool;
 import org.contentmine.cproject.files.DebugPrint;
 import org.contentmine.cproject.util.CMineGlobber;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -25,8 +26,20 @@ import org.contentmine.norma.NAConstants;
 import com.google.common.collect.Lists;
 
 import nu.xom.Element;
+import picocli.CommandLine.Command;
+import picocli.CommandLine.Option;
+import picocli.CommandLine.Parameters;
 
-public class DictionaryDisplayTool extends AMIDictionaryTool {
+@Command(
+		name = "display",
+		description = {
+				"Displays AMI dictionaries. (Under Development)",
+				"  Example (NYI):%n"
+				+ "   ${COMMAND-FULL-NAME} create --informat wikipage%n"
+				+ "    --input https://en.wikipedia.org/wiki/List_of_fish_common_names%n"
+				+ "    --dictionary commonfish --directory mydictionary --outformats xml,html%n"
+		})
+public class DictionaryDisplayTool extends AbstractAMIDictTool {
 
 	private static final Logger LOG = Logger.getLogger(DictionaryDisplayTool.class);
 	static {
@@ -35,17 +48,47 @@ public class DictionaryDisplayTool extends AMIDictionaryTool {
 
 	private static final int DEFAULT_MAX_ENTRIES = 20;
 	private static final String XML = "xml";
+	private static final String FULL = "FULL";
+	private static final String LIST = "LIST";
+
+
 	private List<Path> paths;
 	
+    @Parameters(index = "0",
+    		arity="0..*",
+//    		split=",",
+    		description = "primary operation: (${COMPLETION-CANDIDATES}); if no operation, runs help"
+    		)
+    private Operation operation = Operation.help;
+
+    @Option(names = {"--remote"}, 
+    		arity="1..*",
+   		    description = "list of remote dictionaries "
+    		)
+    private List<String> remoteUrls = new ArrayList<>(Arrays.asList(
+    		new String[] {"https://github.com/petermr/dictionary"}));
+
+
+    protected List<File> files;
+	protected int maxEntries = 0;
+
 	public DictionaryDisplayTool() {
 		super();
 	}
 
-	// ================== LIST ===================
-	
-	// FILES
 	@Override
-	public void run() {
+	protected void parseSpecifics() {
+		System.err.println("parseSpecifics NYI "+this.getClass());
+//		printDebug();
+	}
+
+	@Override
+	protected void runSpecifics() {
+		System.err.println("runSpecifics NYI "+this.getClass());
+        runSub();
+	}
+
+	public void runSub() {
 		List<String> argList = Arrays.asList(LIST);
 		files = listDictionaryFiles(dictionaryTop);
 		Collections.sort(files);
@@ -76,6 +119,10 @@ public class DictionaryDisplayTool extends AMIDictionaryTool {
 				listDictionaryInfo(arg);
 			}
 		}
+	}
+
+	public int getMaxEntries() {
+		return maxEntries;
 	}
 
 	/** uses directories */

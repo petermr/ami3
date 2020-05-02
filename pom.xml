@@ -155,6 +155,11 @@
                                 <id>ami</id>
                             </program>
                             <program>
+                                <mainClass>org.contentmine.ami.tools.AMIDict</mainClass>
+                                <!-- description: lists AMIDict commands (ami-*) -->
+                                <id>amidict</id>
+                            </program>
+                            <program>
                                  <mainClass>org.contentmine.ami.AMIProcessor</mainClass>
                             <!-- description: lists AMI commands (ami-*) -->
                                 <id>ami-all</id>
@@ -272,6 +277,9 @@
                                 <id>cmine</id>
                             </program>
 						-->
+						
+						org.contentmine.ami.tools.AMI
+						
                             <program>
                                 <mainClass>org.contentmine.ami.plugins.EntityAnalyzer</mainClass>
                               <!--  description:  -->
