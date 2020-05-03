@@ -18,13 +18,12 @@ import nu.xom.Element;
 import picocli.CommandLine.Command;
 
 @Command(
-name = "translate",
-description = {
-		"translates dictionaries between formats",
-		"(NOT natural languages)"
-		+ ""
-})
-
+		name = "translate",
+		description = {
+				"translates dictionaries between formats",
+				"(NOT natural languages)"
+				+ ""
+		})
 public class DictionaryTranslateTool extends AbstractAMIDictTool {
 	private static final Logger LOG = Logger.getLogger(DictionaryTranslateTool.class);
 	static {

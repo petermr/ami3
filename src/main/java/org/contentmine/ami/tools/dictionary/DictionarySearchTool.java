@@ -17,13 +17,12 @@ import org.contentmine.eucl.euclid.Util;
 import picocli.CommandLine.Command;
 
 @Command(
-name = "search",
-description = {
-		"searches within dictionaries",
-		"TBD"
-		+ ""
-})
-
+		name = "search",
+		description = {
+				"searches within dictionaries",
+				"TBD"
+				+ ""
+		})
 public class DictionarySearchTool extends AbstractAMIDictTool {
 	private static final Logger LOG = Logger.getLogger(DictionarySearchTool.class);
 	static {

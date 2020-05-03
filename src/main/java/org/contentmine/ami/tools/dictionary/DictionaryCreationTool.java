@@ -47,12 +47,12 @@ import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 
 @Command(
-name = "create",
-description = {
-		"creates dictionaries from text, Wikimedia, etc..",
-		"TBD"
-		+ ""
-})
+		name = "create",
+		description = {
+				"creates dictionaries from text, Wikimedia, etc..",
+				"TBD"
+				+ ""
+		})
 public class DictionaryCreationTool extends AbstractAMIDictTool {
 
 	public static final Logger LOG = Logger.getLogger(DictionaryCreationTool.class);

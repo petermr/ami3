@@ -29,6 +29,7 @@ import org.contentmine.graphics.html.HtmlElement;
 import nu.xom.Attribute;
 import nu.xom.Element;
 import picocli.CommandLine;
+import picocli.CommandLine.Command;
 import picocli.CommandLine.Mixin;
 import picocli.CommandLine.Option;
 import picocli.CommandLine.Parameters;
@@ -61,6 +62,7 @@ subcommands = {
 })
 */
 
+@Command(mixinStandardHelpOptions = true, version = "ami-dict 1.0.0")
 public class AbstractAMIDictTool implements Callable<Void> {
 	
 
