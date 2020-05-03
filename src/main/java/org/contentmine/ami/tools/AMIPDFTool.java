@@ -1,13 +1,17 @@
 package org.contentmine.ami.tools;
 
 import java.io.File;
-
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.text.PDFTextStripper;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.DebugPrint;
 import org.contentmine.pdf2svg2.PDFDocumentProcessor;
@@ -110,6 +114,12 @@ public class AMIPDFTool extends AbstractAMITool {
     		)
     private boolean outputPdfImages = true;
     
+    @Option(names = {"--pdf2html"}, 
+    		paramLabel="PDF2HTML",
+   		    description = "Use PDFBox pdf2Html to create automatic html (NYI)"
+    		)
+    private boolean pdf2html = false;
+    
     @Option(names = {"--svgdir"}, 
     		arity="0..1",
    		    description = "Directory for SVG files created from PDF. Do not use/change this unless you are testing "
@@ -156,6 +166,7 @@ public class AMIPDFTool extends AbstractAMITool {
 		System.out.println("maxpages            "+maxpages);
 		System.out.println("svgDirectoryName    "+svgDirectoryName);
 		System.out.println("outputSVG           "+outputSVG);
+		System.out.println("pdf2html            "+pdf2html);
 		System.out.println("imgDirectoryName    "+pdfImagesDirname);
 		System.out.println("outputPDFImages     "+outputPdfImages);
 		System.out.println("parserDebug         "+parserDebug);
@@ -166,6 +177,9 @@ public class AMIPDFTool extends AbstractAMITool {
 		processedTree = false;
 		System.out.println("cTree: "+cTree.getName());
 		File pdfImagesDir = cTree.getExistingPDFImagesDir();
+		if (pdf2html) {
+			pdf2html();
+		}
 //		if (ParserType.early.equals(parserType)) {
 		boolean processed = false;
 		if (ParserDebug.AMI_ZERO.equals(parserDebug)) {
@@ -181,6 +195,43 @@ public class AMIPDFTool extends AbstractAMITool {
 			processedTree = false;
 		}
 		return processedTree;
+	}
+
+	private void pdf2html() {
+		PDDocument pdDocument = null;
+		File inputPdf = cTree.getExistingFulltextPDF();
+		if (inputPdf == null || !inputPdf.exists()) {
+			throw new RuntimeException("PDF file does not exist: " + inputPdf);
+		}
+		try {
+			pdDocument = PDDocument.load(inputPdf);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		if (pdDocument != null) {
+			try {
+				System.err.println("DOC"+pdDocument.getDocumentInformation());
+				runPdf2Html(pdDocument);
+			} catch (IOException e) {
+				throw new RuntimeException("run pdf", e);
+			}
+		}
+	}
+
+	private void runPdf2Html(PDDocument document) throws IOException {
+//		AMIPDF2HTML pdf2HTML = AMIPDF2HTML.createAMIPDF2HTML();
+//		LOG.debug("runPDF "+document);
+//		pdf2HTML.readDocument(document);
+		PDFTextStripper textStripper = new PDFTextStripper();
+		String text = textStripper.getText(document);
+		File textFile = getTextFile();
+		IOUtils.write(text, new FileOutputStream(textFile), "UTF-8");
+		System.out.println("wrote "+textFile.getAbsoluteFile());
+	}
+
+	private File getTextFile() {
+		return new File(getCTree().getDirectory(), "fulltext.pdf.txt");
 	}
 
 	private boolean amiPDF() {

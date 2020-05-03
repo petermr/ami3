@@ -168,6 +168,7 @@ public class AMIDict implements Runnable {
 				description = "Quit after given number of trees; null means infinite.")
 		protected Integer maxTreeCount = null;
 	}
+	
 
 	static class LoggingOptions {
 		@Option(names = {"-v", "--verbose"},

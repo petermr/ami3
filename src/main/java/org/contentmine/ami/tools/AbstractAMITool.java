@@ -561,7 +561,7 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 	protected boolean processTrees() {
 		boolean processed = cTreeList != null && cTreeList.size() > 0;
 		int treeCount = 0;
-		if (cTreeList != null) {
+		if (cTreeList != null && cTreeList.size() > 0) {
 			for (CTree cTree : cTreeList) {
 				if (parent.generalOptions.maxTreeCount != null && getOrCreateProcessedTrees().size() >= parent.generalOptions.maxTreeCount) {
 					System.out.println("CTree limit reached: " + (--treeCount));

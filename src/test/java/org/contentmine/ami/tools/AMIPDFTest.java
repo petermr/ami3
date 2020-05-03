@@ -10,6 +10,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PatternLayout;
 import org.contentmine.cproject.files.CProject;
+import org.contentmine.cproject.util.CMineTestFixtures;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -215,7 +216,24 @@ public class AMIPDFTest extends AbstractAMITest {
 				;
       
 		AMI.execute(args);
+		
+	}
+	
+	@Test
+	public void testPDF2HTML() {
+		File targetDir = new File("target/medrxiv/project");
+		File sourceDir = new File(SRC_TEST_AMI, "medrxiv/project");
+		System.err.println(">>"+sourceDir.getAbsolutePath());
+		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
+		String args = "-p " + targetDir
+				+ " pdfbox"
+				+ " --pdf2html"
+				;
+      
+		AMI.execute(args);
+		
 	}
 
+	
 
 }

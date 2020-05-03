@@ -41,6 +41,7 @@
         <picocli.version>4.2.0</picocli.version>
         <log4j.version>1.2.17</log4j.version>
         <pdfbox2.version>2.0.19</pdfbox2.version>
+        <pdfbox-tools.version>2.0.19</pdfbox-tools.version>
         <resteasy.client>4.5.3.Final</resteasy.client>
         <Saxon-HE.version>10.0</Saxon-HE.version>
         <selenium-java.version>4.0.0-alpha-5</selenium-java.version>
@@ -519,7 +520,11 @@
                 <artifactId>pdfbox</artifactId>
                 <version>${pdfbox2.version}</version>
             </dependency>
-            
+            <dependency>
+			    <groupId>org.apache.pdfbox</groupId>
+			    <artifactId>pdfbox-tools</artifactId>
+			    <version>${pdfbox-tools.version}</version>
+			</dependency>
 			<dependency>
 			    <groupId>org.seleniumhq.selenium</groupId>
 			    <artifactId>selenium-java</artifactId>

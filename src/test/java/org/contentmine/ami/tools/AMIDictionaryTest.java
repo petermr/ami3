@@ -10,7 +10,7 @@ import java.util.List;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.contentmine.ami.tools.AMIDictionaryToolOLD.DictionaryFileFormat;
+import org.contentmine.ami.tools.AbstractAMIDictTool.DictionaryFileFormat;
 import org.contentmine.ami.tools.download.CurlDownloader;
 import org.contentmine.graphics.html.HtmlA;
 import org.contentmine.norma.NAConstants;
@@ -41,14 +41,14 @@ public class AMIDictionaryTest extends AbstractAMITest {
 	
 	@Test
 	public void testHelpSubcommands() {
-		String args = "dictionary --help";
-		AMI.execute(args);
+		String args = "dictionary create --help";
+		AMIDict.execute(args);
 	}
 	
 	@Test
 	public void testSubcommands() {
 		String args = "dictionary create ";
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 	
 	@Test
@@ -65,7 +65,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 		String args = "--input https://en.wikipedia.org/wiki/List_of_fish_common_names" +
 				" dictionary create --informat wikipage" + 
 				"   --dictionary commonfish --directory mydictionary --outformats xml,html";
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 	
 	@Test
@@ -77,7 +77,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 						+ " --directory src/main/resources/org/contentmine/ami/plugins/dictionary "
 						+ " --dictionary " + "country disease"
 				;
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 	
 	@Test
@@ -117,7 +117,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 //           		+ " Triclosan Tricyclazole Tridemorph Trimethoprim Tunicamycin Tylosin Valinomycin Vancomycin"
            		+ " Verapamil Vinclozolin Virginiamycin Voriconazole"
 				;
-		AMI.execute(args);
+		AMIDict.execute(args);
 //		Assert.assertTrue(""+directory, new directory.exists());
 	}
 	
@@ -144,7 +144,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
             " --outformats html,xml " +
             " --input " + fungicideFile
 				;
-		AMI.execute(args);
+		AMIDict.execute(args);
 		File dictionaryFile = new File(directory, dictionary+"."+"xml");
 		Assert.assertTrue(""+dictionaryFile, dictionaryFile.exists());
 	}
@@ -160,7 +160,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 				+ " --directory dictionaries/"
 				+ " --dictionary electrochem"
 				+ " --outformats html,xml";
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 
 	@Test
@@ -177,7 +177,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --outformats xml,json,html " +
            " --dictionary " +dict
 			;
-		AMI.execute(args);
+		AMIDict.execute(args);
 //		XMLUtil.debug(amiDictionary.getSimpleDictionary(), new File(DICTIONARY_DIR, dict+".html"), 1);
 		
 	}
@@ -197,7 +197,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 			"--linkcol Name " +
            " --outformats xml,json,html " +
            " --dictionary "+dictname;
-		AbstractAMITool amiDictionary = AMI.execute(AMIDictionaryToolOLD.class, args);
+		AbstractAMITool amiDictionary = AMIDict.execute(AMIDictionaryToolOLD.class, args);
 		Assert.assertTrue(""+dictFile, dictFile.exists());
 
 	}
@@ -214,7 +214,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --informat wikipage " +
            " --outformats xml,json,html " +
            " --dictionary " +dict;
-//		AMI.execute(args);
+//		AMIDict.execute(args);
 		Assert.assertTrue(""+dictFile, dictFile.exists());
 	}
 
@@ -231,7 +231,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --outformats xml,json,html " +
            " --directory " +DICTIONARY_DIR.toString()
 			;
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 
 	@Test
@@ -251,7 +251,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --directory " +DICTIONARY_DIR.toString()
 			;
 		// ami-dictionaries create -i https://en.wikipedia.org/wiki/Aedes_aegypti --informat wikipage --hreftext --dictionary aedes0 --outformats xml --directory ~/ContentMine/dictionary/
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 
 	@Test
@@ -266,7 +266,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --dictionary " + dict +
            " --directory " +DICTIONARY_DIR.toString()
 			;
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 	@Test
 	// LONG
@@ -281,7 +281,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --dictionary " + dict +
            " --directory " +DICTIONARY_DIR.toString()
 			;
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 
 	@Test
@@ -300,7 +300,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --dictionary " +dict +
            " --directory " +DICTIONARY_DIR.toString()
 			;
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 	
 	@Test
@@ -319,7 +319,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --outformats xml,json,html " +
            " --directory " +DICTIONARY_DIR.toString()
 			;
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 	
 	@Test
@@ -334,7 +334,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --outformats xml,json,html " +
            " --directory " +DICTIONARY_DIR.toString()
 			;
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 	
 	
@@ -351,7 +351,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --outformats xml,json,html " +
            " --directory " +DICTIONARY_DIR.toString()
 			;
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 	
 	@Test
@@ -364,7 +364,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --terms cubic,tetragonal,hexagonal,trigonal,orthorhombic,monoclinic,triclinic " +
            " --dictionary " +dict +
            " --directory " +DICTIONARY_DIR.toString();
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 	
 	@Test
@@ -386,7 +386,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --directory " +DICTIONARY_DIR.toString() +
            " --booleanquery"
 			;
-		AMI.execute(args);
+		AMIDict.execute(args);
 		
 	}
 
@@ -402,10 +402,10 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --dictionary " +dict +
            " --directory target/dictionary " +
            " --outformats " +DictionaryFileFormat.xml.toString() +
-           " --log4j org.contentmine.ami.lookups.WikipediaDictionary INFO " +
+           " --log4j org.contentmine.AMIDict.lookups.WikipediaDictionary INFO " +
            " --log4j org.contentmine.norma.input.html.HtmlCleaner INFO"
 			;
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 
 	@Test
@@ -422,7 +422,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --outformats xml,json,html " +
            " --directory " +DICTIONARY_DIR.toString()
 			;
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 	
 	@Test
@@ -438,7 +438,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --outformats html,json,xml " +
            " --wikilinks"
 			;
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 
 	@Test
@@ -455,7 +455,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --outformats html,xml " +
            " --wikilinks"
 			;
-		AMI.execute(args);
+		AMIDict.execute(args);
 //		Assert.assertTrue("file exists "+dictionaryFile, dictionaryFile.exists());
 	}
 
@@ -522,7 +522,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --testString " + htmlS + " " +
            " --wikilinks wikidata"
 			;
-		AMI.execute(args);
+		AMIDict.execute(args);
 //		Assert.assertTrue("file exists "+dictionaryFile, dictionaryFile.exists());
 	}
 	
@@ -544,7 +544,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 	           " --outformats html,xml " +
 	           " --wikilinks wikidata"
 				;
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 	
 	@Test
@@ -593,7 +593,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 					" --template " + " Virus_topics Baltimore_(virus_classification) Antiretroviral_drug" +
 					" --wptype " + wptype +
 					" --wikilinks wikidata";
-			AMI.execute(args);
+			AMIDict.execute(args);
 		});
 	}
 
@@ -630,7 +630,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --directory " +DICTIONARY_DIR.toString() +
            " --wikilinks wikidata"
           ;
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 	
 	@Test
@@ -642,7 +642,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --dictionary alliaceae.json buxales.json " +
            " --outformats xml"
 		;
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 	
 	@Test
@@ -654,7 +654,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 			                "src/test/resources/org/contentmine/ami/dictionary/buxales.json " +
            " --outformats xml"
 		;
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 	
 	@Test
@@ -667,7 +667,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --outformats xml " +
            " --wikilinks wikidata wikipedia"
 		;
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 	
 	@Test
@@ -682,7 +682,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
            " --directory " + DICTIONARY_DIR.toString() +
            " --wikilinks wikidata"
 			;
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 
 	@Test
@@ -697,7 +697,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 //				+ " --hreftext"
 				+ " --dictionary ricevarieties"
 				+ " --outformats xml,json,html";
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 	
 	public void testCreateFromFileWithListOfTerms() {
@@ -710,7 +710,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 				+ " --dictionary electrochem"
 				+ " --directory dictionaries"
 				+ " --outformats xml,json,html";
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 	
 	@Test
@@ -724,7 +724,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 				+ " --dictionary otenuiflorum"
 				+ " --directory mydictionaries"
 				+ " --outformats xml,html";
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 
 	@Test
@@ -737,7 +737,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 //				+ " --search thymol carvacrol"
 				+ " --searchfile "+CEV_SEARCH+"/oil186/__tables/compound_set.txt"
 				+ "";
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 
 	@Test
@@ -934,7 +934,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 	           " --wptype " + wptype +
 	           " --wikilinks wikidata"
 				;
-		AMI.execute(args);
+		AMIDict.execute(args);
 	}
 	
 
