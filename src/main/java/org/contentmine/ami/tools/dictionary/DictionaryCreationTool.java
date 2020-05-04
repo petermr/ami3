@@ -12,6 +12,8 @@ import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
@@ -22,6 +24,9 @@ import org.contentmine.ami.dictionary.DictionaryTerm;
 import org.contentmine.ami.lookups.WikipediaDictionary;
 import org.contentmine.ami.tools.AMIDictionaryToolOLD;
 import org.contentmine.ami.tools.AbstractAMIDictTool;
+import org.contentmine.ami.tools.AbstractAMIDictTool.InputFormat;
+import org.contentmine.ami.tools.AbstractAMIDictTool.WikiFormat;
+import org.contentmine.ami.tools.AbstractAMIDictTool.WikiLink;
 import org.contentmine.ami.tools.download.CurlDownloader;
 import org.contentmine.cproject.util.RectTabColumn;
 import org.contentmine.cproject.util.RectangularTable;
@@ -80,21 +85,49 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 				+ "foo='fooval1' bar='barval1' if present. No controlled use or vocabulary and no hyperlinks."
 			)
 	private String[] dataCols;
+	
 	// converted from args    
 	private List<RectTabColumn> hrefColList;
+	
 	@Option(names = {"--hrefcols"}, 
 			split=",",
 			arity="1..*",
 		 	paramLabel = "hrefcol",
 		description = "external hyperlink column from table; might be Wikidata or remote site(s)"
 			)
+	
+	
 	private String[] hrefCols;
-	@Option(names = {"--terms"}, 
-			arity="1..*",
-			split=",",
-			description = "list of terms (entries), comma-separated")
-	private List<String> terms;
-	private Set<String> termSet;
+
+	/** moved down */
+    @Option(names = {"--informat"}, 
+    		arity="1",
+    		paramLabel = "input format",
+    		description = "input format (${COMPLETION-CANDIDATES})"
+    		)
+    protected InputFormat informat;
+    
+    @Option(names = {"--linkcol"}, 
+    		arity="1",
+    		description = "column to extract link to internal pages. main use Wikipedia. Defaults to the 'name' column"
+    		)
+	public String linkCol;
+
+    @Option(names = {"--namecol"}, 
+//    		split=",",
+    		arity="1..*",
+    		description = "column(s) to extract name; use exact case (e.g. Common name)"
+    		)
+	public String nameCol;
+    
+    @Option(names = {"--outformats"}, 
+    		arity="1..*",
+    		split=",",
+    	    paramLabel = "output format",
+    		description = "output format (${COMPLETION-CANDIDATES})"
+    		)
+    protected DictionaryFileFormat[] outformats = new DictionaryFileFormat[] {DictionaryFileFormat.xml};
+
 	@Option(names = {"--query"}, 
 			arity="0..1",
 		    defaultValue="10",
@@ -103,6 +136,37 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 					+ "value sets size of chunks (too large crashes EPMC). If missing, no query generated."
 			)
 	private Integer queryChunk = null;
+    @Option(names = {"--template"}, 
+    		arity="1..*",
+    		description = "names of Wikipedia Templates, e.g. Viral_systemic_diseases "
+    				+ "(note underscores not spaces). Dictionaries will be created with lowercase"
+    				+ "names and all punctuation removed).")
+	public List<String> templateNames;
+
+    @Option(names = {"--termcol"}, 
+    		arity="1",
+    		description = "column(s) to extract term; use exact case (e.g. Term). Could be same as namecol"
+    		)
+	public String termCol;
+    
+    @Option(names = {"--termfile"}, 
+    		arity="1",
+//    		split=",",
+    		description = "list of terms in file, line-separated")
+    protected File termfile;
+
+	@Option(names = {"--terms"}, 
+			arity="1..*",
+			split=",",
+			description = "list of terms (entries), comma-separated")
+	private List<String> terms;
+	private Set<String> termSet;
+	
+    @Option(names = {"--wptype"}, 
+    		arity="1",
+    		description = "type of input (HTML , mediawiki)")
+    protected WikiFormat wptype;
+	
 	private HtmlTbody tBody;
 	private static final String HTTP = "http";
 	private static final String CM_PREFIX = "CM.";
@@ -111,6 +175,38 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 
 	public DictionaryCreationTool() {
 		
+	}
+
+//	@Override
+	protected void parseSpecifics() {
+		if (this.templateNames != null) {
+//			dictionaryList = new ArrayList<>();
+			createTemplateNames();
+			this.informat = WikiFormat.mwk.equals(this.wptype) ? InputFormat.mediawikitemplate : InputFormat.wikitemplate;
+			if (this.dictionaryTopname == null) {
+				System.err.println("No directory given, using .");
+				this.dictionaryTopname = ".";
+			}
+//			createInputList();
+		}
+		if (this.testString != null) {
+			this.testString = this.testString.replaceAll("%20", " ");
+			System.out.println("testString      "+this.testString);
+		}
+		dictOutformat = (this.outformats == null || this.outformats.length != 1) ? null : this.outformats[0];
+		wikiLinkList = (this.wikiLinks == null) ? new ArrayList<WikiLink>() :
+		     new ArrayList<WikiLink>(Arrays.asList(this.wikiLinks));
+//		descriptionList = (this.description == null) ? new ArrayList<String>() :
+//		     new ArrayList<String>(Arrays.asList(this.description));
+//		printDebug();
+	}
+
+	
+	private void createTemplateNames() {
+		for (int i = 0; i < this.templateNames.size(); i++) {
+			String t = this.templateNames.get(i).trim().replaceAll("\\s+", "_");
+			this.templateNames.set(i, t);
+		}
 	}
 
 	public void runSub() {
@@ -298,6 +394,35 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
     		termList = nameList;
     	}
 	}
+
+    /** creates subdirectories from filenames with dots.
+     *  foo.bar.plugh creates <directoryTop/foo/bar/
+     * @return
+     */
+    protected File getOrCreateExistingSubdirectory(String dictionaryName) {
+    	File newDictionaryDir = null;
+    	Pattern pattern = Pattern.compile("(.*)\\.[^\\.]*");
+    	if (dictionaryName == null) {
+    		throw new RuntimeException("null dictionaryName");
+    	}
+    	getOrCreateExistingDictionaryTop(this.dictionaryTopname);
+    	if (dictionaryTop != null) {
+    		Matcher matcher = pattern.matcher(dictionaryName);
+    		if (!matcher.matches()) {
+    			return dictionaryTop;
+    		}
+    		String newDictionaryName  = matcher.group(1).replace(DOT, SLASH);
+    		newDictionaryDir = new File(dictionaryTop, newDictionaryName);
+    		if (!newDictionaryDir.exists()) {
+    			newDictionaryDir.mkdirs();
+    		} else if (!newDictionaryDir.isDirectory()) {
+    			addLoggingLevel(Level.ERROR, newDictionaryDir + " must not be directory" );
+    		}
+    	}
+    	return newDictionaryDir;
+    	
+    }
+    
 
 	private void writeNamesAndLinks() {
 		if (nameList == null) {

@@ -127,8 +127,8 @@ public class AMIDict implements Runnable {
 	 *               This will be split into arguments with {@code args.trim().split(\\s+)}.
 	 * @return the exit code
 	 */
-	static int execute(String args) {
-		return execute(args.trim().split("\\s+"));
+	public static int execute(String args) {
+		return args == null ? -1 : execute(args.trim().split("\\s+"));
 	}
 	static int execute(String[] args) {
 		return createCommandLine().execute(args);
@@ -169,7 +169,6 @@ public class AMIDict implements Runnable {
 		protected Integer maxTreeCount = null;
 	}
 	
-
 	static class LoggingOptions {
 		@Option(names = {"-v", "--verbose"},
 				description = {

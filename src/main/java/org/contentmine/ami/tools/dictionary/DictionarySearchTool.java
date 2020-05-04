@@ -10,11 +10,11 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
-import org.contentmine.ami.tools.AMIDictionaryToolOLD;
 import org.contentmine.ami.tools.AbstractAMIDictTool;
 import org.contentmine.eucl.euclid.Util;
 
 import picocli.CommandLine.Command;
+import picocli.CommandLine.Option;
 
 @Command(
 		name = "search",
@@ -29,13 +29,27 @@ public class DictionarySearchTool extends AbstractAMIDictTool {
 		LOG.setLevel(Level.DEBUG);
 	}
 
+    @Option(names = {"--search"}, 
+    		arity="1..*",
+    	    paramLabel = "search",
+    		description = "search dictionary for these terms (experimental)"
+    		)
+    protected List<String> searchTerms;
+    
+    @Option(names = {"--searchfile"}, 
+    		arity="1..*",
+    	    paramLabel = "searchfile",
+    		description = "search dictionary for terms in these files (experimental)"
+    		)
+    protected List<String> searchTermFilenames;
+
 	public DictionarySearchTool() {
 		super();
 	}
 	
 	@Override
 	public void runSub() {
-		DefaultAMIDictionary amiDictionary = AMIDictionaryToolOLD.readDictionary(new File(dictionaryList.get(0)));
+		DefaultAMIDictionary amiDictionary = AbstractAMIDictTool.readDictionary(new File(dictionaryList.get(0)));
 		Set<String> rawTermSet = amiDictionary.getRawLowercaseTermSet();
 		
 		if (searchTerms != null) {

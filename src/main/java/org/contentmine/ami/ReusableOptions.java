@@ -15,11 +15,11 @@ public class ReusableOptions {
             "For example, `-v -v -v` or `-vvv`" })
         protected boolean[] verbosityx = new boolean[0];
     
-    @Option(
-    		names = {"--wombat" }, 
-    		arity="1",
-    		description = {
-            "a wombat" }
-    )
-        protected int vombatus;
+//    @Option(
+//    		names = {"--wombat" }, 
+//    		arity="1",
+//    		description = {
+//            "a wombat" }
+//    )
+//        protected int vombatus;
 }

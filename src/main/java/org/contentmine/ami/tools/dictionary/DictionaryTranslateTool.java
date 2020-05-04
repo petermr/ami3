@@ -32,7 +32,6 @@ public class DictionaryTranslateTool extends AbstractAMIDictTool {
 
 	private CMJsonDictionary cmJsonDictionary;
 	private DefaultAMIDictionary xmlDictionary;
-	
 	public DictionaryTranslateTool() {
 		super();
 	}
@@ -65,11 +64,8 @@ public class DictionaryTranslateTool extends AbstractAMIDictTool {
 
 	private void outputXMLDictionary(File outfile) {
 		if (xmlDictionary != null) {
-			try {
-				XMLUtil.debug(xmlDictionary.getDictionaryElement(), outfile, 1);
-			} catch (IOException e) {
-				throw new RuntimeException("Cannot write XML dictionary "+outfile, e);
-			}
+			XMLUtil.writeQuietly(xmlDictionary.getDictionaryElement(), outfile, 1);
+			LOG.debug("wrote dictionary: " + outfile);
 		}
 	}
 
@@ -82,17 +78,7 @@ public class DictionaryTranslateTool extends AbstractAMIDictTool {
 
 	@Override
 	public void runSub() {
-		File directory = null;
-		boolean useAbsoluteNames = false;
-		if (dictionaryTopname != null) {
-			directory = new File(dictionaryTopname);
-		} else if (dictionaryList != null && dictionaryList.size() > 0){
-			directory = new File(dictionaryList.get(0)).getParentFile();
-			useAbsoluteNames = true;
-		} else {
-			addLoggingLevel(Level.ERROR, "Must give either 'directory' or existing absolute filenames of dictionaries");
-			return;
-		}
+		File directory = createDirectory();
 		for (String dictionaryS : dictionaryList) {
 			String basename = FilenameUtils.getBaseName(dictionaryS);
 			File dictionaryFile = (useAbsoluteNames) ? new File(dictionaryS) : new File(directory, dictionaryS);
@@ -110,5 +96,4 @@ public class DictionaryTranslateTool extends AbstractAMIDictTool {
 		}
 		
 	}
-
 }

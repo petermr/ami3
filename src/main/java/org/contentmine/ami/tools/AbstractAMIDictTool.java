@@ -200,31 +200,38 @@ public class AbstractAMIDictTool implements Callable<Void> {
 		
 	}
 
+	/** NOT USED?
     @Parameters(index = "0"	,
     		arity="0..*",
-//    		split=",",
     		description = "primary operation: (${COMPLETION-CANDIDATES}); if no operation, runs help"
     		)
     protected Operation operation = Operation.help;
+    */
 
+	/** NOT used?
     @Option(names = {"--baseurl"}, 
     		arity="1",
    		    description = "base URL for all wikipedia links "
     		)
     protected String baseUrl = "https://en.wikipedia.org/wiki";
+    */
 
+	/**
     @Option(names = {"--booleanquery"}, 
     		arity="0..1",
    		    description = "generate query as series of chained OR phrases"
     		)
     protected boolean booleanQuery = false;
-    
+    */
+    /**
     @Option(names = {"--descriptions"}, 
     		arity="1..*",
    		description = "description fields (free form) such as source, author"
     		)
     protected String[] description;
+    */
     
+	/** Toplevel */
     @Option(names = {"-d", "--dictionary"}, 
     		arity="1..*",
     		description = "input or output dictionary name/s. for 'create' must be singular; when 'display' or 'translate', any number. "
@@ -232,7 +239,8 @@ public class AbstractAMIDictTool implements Callable<Void> {
     				+ "directories. Dictionary names are relative to 'directory'. If <directory> is absent then "
     				+ "dictionary names are absolute.")
     protected List<String> dictionaryList = null;
-
+	
+    /** both create and translate */
     @Option(names = {"--directory"}, 
     		arity="1",
     		description = "top directory containing dictionary/s. Subdirectories will use structured names (NYI). Thus "
@@ -240,92 +248,15 @@ public class AbstractAMIDictTool implements Callable<Void> {
     				+ "<directory>/plants/parts.xml. Required for relative dictionary names.")
     protected String dictionaryTopname = null;
 
-    @Option(names = {"--informat"}, 
-    		arity="1",
-    		paramLabel = "input format",
-    		description = "input format (${COMPLETION-CANDIDATES})"
-    		)
-    protected InputFormat informat;
-    
-    @Option(names = {"--linkcol"}, 
-    		arity="1",
-    		description = "column to extract link to internal pages. main use Wikipedia. Defaults to the 'name' column"
-    		)
-	public String linkCol;
-
-    @Option(names = {"--namecol"}, 
-//    		split=",",
-    		arity="1..*",
-    		description = "column(s) to extract name; use exact case (e.g. Common name)"
-    		)
-	public String nameCol;
-    
-    @Option(names = {"--outformats"}, 
-    		arity="1..*",
-    		split=",",
-    	    paramLabel = "output format",
-    		description = "output format (${COMPLETION-CANDIDATES})"
-    		)
-    protected DictionaryFileFormat[] outformats = new DictionaryFileFormat[] {DictionaryFileFormat.xml};
-
-    @Option(names = {"--search"}, 
-    		arity="1..*",
-    	    paramLabel = "search",
-    		description = "search dictionary for these terms (experimental)"
-    		)
-    protected List<String> searchTerms;
-        
-    @Option(names = {"--searchfile"}, 
-    		arity="1..*",
-    	    paramLabel = "searchfile",
-    		description = "search dictionary for terms in these files (experimental)"
-    		)
-    protected List<String> searchTermFilenames;
-        
-    @Option(names = {"--splitcol"}, 
-    		arity="1",
-    		paramLabel="input separator",
-    		defaultValue=",",
-    		description = "character to split input values; (default: ${DEFAULT-VALUE})"
-    		)
-    protected String splitCol=",";
-        
-    @Option(names = {"--template"}, 
-    		arity="1..*",
-    		description = "names of Wikipedia Templates, e.g. Viral_systemic_diseases "
-    				+ "(note underscores not spaces). Dictionaries will be created with lowercase"
-    				+ "names and all punctuation removed).")
-	public List<String> templateNames;
-    
-    @Option(names = {"--termcol"}, 
-    		arity="1",
-    		description = "column(s) to extract term; use exact case (e.g. Term). Could be same as namecol"
-    		)
-	public String termCol;
-    
-    @Option(names = {"--termfile"}, 
-    		arity="1",
-//    		split=",",
-    		description = "list of terms in file, line-separated")
-    protected File termfile;
-
-    @Option(names = {"--title"}, 
-    		arity="1",
-    		description = "title for dictionary to be used if not already in source")
-    protected String title;
-
+    /**
     @Option(names = {"--urlref"}, 
     		arity="1..*",
     		split=",",
     		description = "for non-structured pages I think")
     protected String[] urlref;
-
-    @Option(names = {"--wptype"}, 
-    		arity="1",
-    		description = "type of input (HTML , mediawiki)")
-    protected WikiFormat wptype;
+*/
     
-    @Mixin CProjectTreeMixin proTree;
+//    @Mixin CProjectTreeMixin proTree;
 
 	@Option(names = {"--testString"},
 			description = {
@@ -344,7 +275,7 @@ public class AbstractAMIDictTool implements Callable<Void> {
 	public static final String SEARCH = "search";
 	private static final String DICTIONARY_TOP_NAME = "dictionary/";
 	private static final String DICTIONARIES_NAME = DICTIONARY_TOP_NAME + "dictionaries";
-	private static final String SLASH = "/";
+	protected static final String SLASH = "/";
     public final static List<String> WIKIPEDIA_STOP_WORDS = Arrays.asList(new String[]{
         	"citation needed",
         	"full citation needed"
@@ -446,6 +377,7 @@ public class AbstractAMIDictTool implements Callable<Void> {
 	protected List<WikiLink> wikiLinkList;
 	protected File contentMineDir = DEFAULT_CONTENT_MINE_DIR;
 	private Level level;
+	protected boolean useAbsoluteNames;
 
 	public AbstractAMIDictTool() {
 		initDict();
@@ -472,8 +404,6 @@ public class AbstractAMIDictTool implements Callable<Void> {
 			this.level = level;
 		}
 	}
-
-
 	
 	protected void addLoggingLevel(Level level, String message) {
 		combineLevel(level);
@@ -482,64 +412,26 @@ public class AbstractAMIDictTool implements Callable<Void> {
 		}
 	}
 
-//	@Override
 	protected void parseSpecifics() {
-		if (this.templateNames != null) {
-//			dictionaryList = new ArrayList<>();
-			createTemplateNames();
-			this.informat = WikiFormat.mwk.equals(this.wptype) ? InputFormat.mediawikitemplate : InputFormat.wikitemplate;
-			if (this.dictionaryTopname == null) {
-				System.err.println("No directory given, using .");
-				this.dictionaryTopname = ".";
-			}
-//			createInputList();
-		}
-		if (this.testString != null) {
-			this.testString = this.testString.replaceAll("%20", " ");
-			System.out.println("testString      "+this.testString);
-		}
-		dictOutformat = (this.outformats == null || this.outformats.length != 1) ? null : this.outformats[0];
-		wikiLinkList = (this.wikiLinks == null) ? new ArrayList<WikiLink>() :
-		     new ArrayList<WikiLink>(Arrays.asList(this.wikiLinks));
-		descriptionList = (this.description == null) ? new ArrayList<String>() :
-		     new ArrayList<String>(Arrays.asList(this.description));
-		printDebug();
+		
 	}
 
 	protected void runSub() {
 		System.err.println("Overload this in subDictionaryTool "+this.getClass());
 	}
 	
-	private void createTemplateNames() {
-		for (int i = 0; i < this.templateNames.size(); i++) {
-			String t = this.templateNames.get(i).trim().replaceAll("\\s+", "_");
-			this.templateNames.set(i, t);
-		}
-	}
 //	@Override
 	protected void runSpecifics() {
         runDictionary();
 	}
 
 	private void runDictionary() {
-		if (getOrCreateExistingDictionaryTop() == null) {
-			LOG.warn("No dictionary directory; aborted");
-			return;
-		}
-		runSub();
-//		if (Operation.display.equals(this.operation)) {
-//			new DictionaryDisplayTool().runSub();
-//		} else if (Operation.help.equals(this.operation)) {
-//			new DictionaryDisplayTool().help(Arrays.asList(new String[] {}));
-//		} else if (Operation.create.equals(this.operation)) {
-//			new DictionaryCreationTool().runSub();
-//		} else if (Operation.search.equals(this.operation)) {
-//			new DictionarySearchTool().runSub();
-//		} else if (Operation.translate.equals(this.operation)) {
-//			new DictionaryTranslateTool().runSub();
-//		} else {
-//			System.err.println("no operation given: "+this.operation);
+//		if (getOrCreateExistingDictionaryTop() == null) {
+//			LOG.warn("No dictionary directory; aborted");
+//			return;
 //		}
+		// runs subCommands
+		runSub();
 	}
 
 	protected File getOrCreateExistingDictionaryTop(String dictionaryTopname) {
@@ -566,34 +458,6 @@ public class AbstractAMIDictTool implements Callable<Void> {
 	   	return dictionaryTop;
 	}
 
-    /** creates subdirectories from filenames with dots.
-     *  foo.bar.plugh creates <directoryTop/foo/bar/
-     * @return
-     */
-    protected File getOrCreateExistingSubdirectory(String dictionaryName) {
-    	File newDictionaryDir = null;
-    	Pattern pattern = Pattern.compile("(.*)\\.[^\\.]*");
-    	if (dictionaryName == null) {
-    		throw new RuntimeException("null dictionaryName");
-    	}
-    	getOrCreateExistingDictionaryTop(this.dictionaryTopname);
-    	if (dictionaryTop != null) {
-    		Matcher matcher = pattern.matcher(dictionaryName);
-    		if (!matcher.matches()) {
-    			return dictionaryTop;
-    		}
-    		String newDictionaryName  = matcher.group(1).replace(DOT, SLASH);
-    		newDictionaryDir = new File(dictionaryTop, newDictionaryName);
-    		if (!newDictionaryDir.exists()) {
-    			newDictionaryDir.mkdirs();
-    		} else if (!newDictionaryDir.isDirectory()) {
-    			addLoggingLevel(Level.ERROR, newDictionaryDir + " must not be directory" );
-    		}
-    	}
-    	return newDictionaryDir;
-    	
-    }
-    
 
 	public static DefaultAMIDictionary readDictionary(File file) {
 		DefaultAMIDictionary amiDictionary = new DefaultAMIDictionary();
@@ -602,35 +466,34 @@ public class AbstractAMIDictTool implements Callable<Void> {
 	}
 
 	private void printDebug() {
-		System.out.println("baseUrl       "+this.baseUrl);
-		System.out.println("booleanQuery  "+this.booleanQuery);
-		System.out.println("descriptions  "+this.description);
+//		System.out.println("baseUrl       "+this.baseUrl);
+//		System.out.println("booleanQuery  "+this.booleanQuery);
+//		System.out.println("descriptions  "+this.description);
 //		System.out.println("dataCols      "+dataCols);
 		System.out.println("dictionary    "+(this.dictionaryList == null ? "null" : Arrays.asList(this.dictionaryList)));
-		System.out.println("dictionaryTop     "+this.dictionaryTopname);
+//		System.out.println("dictionaryTop     "+this.dictionaryTopname);
 //		System.out.println("href          "+href);
 //		System.out.println("hrefCols      "+hrefCols);
 		System.out.println("inputs        "+inputList);
 		System.out.println("input         "+input());
-		System.out.println("informat      "+this.informat);
+//		System.out.println("informat      "+this.informat);
 		System.out.println("dictInformat  "+dictInformat);
-		System.out.println("linkCol       "+this.linkCol);
+//		System.out.println("linkCol       "+this.linkCol);
 		//System.out.println("log4j         "+makeArrayList(log4j));
-		System.out.println("nameCol       "+this.nameCol);
-		System.out.println("operation     "+this.operation);
-		System.out.println("outformats    "+makeArrayList(this.outformats));
+//		System.out.println("nameCol       "+this.nameCol);
+//		System.out.println("operation     "+this.operation);
+//		System.out.println("outformats    "+makeArrayList(this.outformats));
 //		System.out.println("query         "+queryChunk);
-		System.out.println("search        "+this.searchTerms);
-		System.out.println("searchfile    "+this.searchTermFilenames);
-		System.out.println("splitCol      "+this.splitCol);
-		System.out.println("templatea     "+this.templateNames);
-		System.out.println("termCol       "+this.termCol);
+//		System.out.println("search        "+this.searchTerms);
+//		System.out.println("searchfile    "+this.searchTermFilenames);
+//		System.out.println("splitCol      "+this.splitCol);
+//		System.out.println("templatea     "+this.templateNames);
+//		System.out.println("termCol       "+this.termCol);
 //		System.out.println("terms         "+(termList == null ? null : "("+termList.size()+") "+termList));
-		System.out.println("termfile      "+this.termfile);
-		System.out.println("title         "+this.title);
-		System.out.println("urlref        "+this.urlref);
+//		System.out.println("termfile      "+this.termfile);
+//		System.out.println("urlref        "+this.urlref);
 		System.out.println("wikiLinks     "+this.wikiLinks);
-		System.out.println("wptype        "+this.wptype);
+//		System.out.println("wptype        "+this.wptype);
 		
 	}
 
@@ -735,6 +598,20 @@ public class AbstractAMIDictTool implements Callable<Void> {
 			}
 		}
 		return inputStream;
+	}
+
+	protected File createDirectory() {
+		File directory = null;
+		useAbsoluteNames = false;
+		if (dictionaryTopname != null) {
+			directory = new File(dictionaryTopname);
+		} else if (dictionaryList != null && dictionaryList.size() > 0){
+			directory = new File(dictionaryList.get(0)).getParentFile();
+			useAbsoluteNames = true;
+		} else {
+			addLoggingLevel(Level.ERROR, "Must give either 'directory' or existing absolute filenames of dictionaries");
+		}
+		return directory;
 	}
 
 	/**
