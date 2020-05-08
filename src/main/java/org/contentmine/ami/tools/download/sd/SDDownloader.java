@@ -18,7 +18,7 @@ import org.contentmine.graphics.html.HtmlHtml;
 
 import nu.xom.Element;
 
-/** extracts from biorxiv pages
+/** extracts from sciencedirect pages
  * 
  * 
 
@@ -30,6 +30,7 @@ public class SDDownloader extends AbstractDownloader {
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
+	/**	https://www.sciencedirect.com/search?qs=n95 */
 	public static final String SD_BASE = "https://sciencedirect.com/";
 	public static final String SD_HOST = "https://sciencedirect.com/";
 	public static final String SD_SEARCH = SD_BASE+"/search/";  /* NOT YET CERTAIN */

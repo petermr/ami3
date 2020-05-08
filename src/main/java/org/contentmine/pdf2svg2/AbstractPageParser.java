@@ -521,6 +521,13 @@ public abstract class AbstractPageParser extends PageDrawer {
 		Int2Range box = new Int2Range(rect.getBoundingBox());
 		int width = (int)(double)rect.getWidth();
 		int height = (int)(double)rect.getHeight();
+		if (documentProcessor.isLargerThanImageBox(width, height)) {
+			addSVGImage(imageSerial, bufferedImage, rect, box, width, height);
+		}
+	}
+
+	private void addSVGImage(PageSerial imageSerial, BufferedImage bufferedImage, SVGRect rect, Int2Range box, int width,
+			int height) {
 		String oneBasedSerialString = imageSerial.getOneBasedSerialString();
 		String title = createTitle(box, oneBasedSerialString);
 		imageByTitle.put(title,bufferedImage);

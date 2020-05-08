@@ -183,9 +183,9 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 //			dictionaryList = new ArrayList<>();
 			createTemplateNames();
 			this.informat = WikiFormat.mwk.equals(this.wptype) ? InputFormat.mediawikitemplate : InputFormat.wikitemplate;
-			if (this.dictionaryTopname == null) {
+			if (parent.getDictionaryTopname() == null) {
 				System.err.println("No directory given, using .");
-				this.dictionaryTopname = ".";
+				parent.setDictionaryTopname(".");
 			}
 //			createInputList();
 		}
@@ -260,6 +260,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 
 
 	private void createDictionary() {
+		String dictionaryTopname = parent.getDictionaryTopname();
 		if (dictionaryTopname == null) {
 			throw new RuntimeException("no directory given");
 		}
@@ -405,7 +406,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
     	if (dictionaryName == null) {
     		throw new RuntimeException("null dictionaryName");
     	}
-    	getOrCreateExistingDictionaryTop(this.dictionaryTopname);
+    	getOrCreateExistingDictionaryTop(parent.getDictionaryTopname());
     	if (dictionaryTop != null) {
     		Matcher matcher = pattern.matcher(dictionaryName);
     		if (!matcher.matches()) {
@@ -710,7 +711,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		}
 		if (outformats != null) {
 			
-			String dictionaryName = dictionaryList != null && dictionaryList.size() == 1 ? dictionaryList.get(0) :
+			String dictionaryName = parent.getDictionaryList() != null && parent.getDictionaryList().size() == 1 ? parent.getDictionaryList().get(0) :
 				currentTemplateName != null ? createDictionaryName(currentTemplateName) : null;
 			if (dictionaryName == null) {
 				throw new RuntimeException("cannot create dictionaryName");
@@ -936,7 +937,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	}
 
 	private String createDictionaryId() {
-		return dictionaryList == null || dictionaryList.size() == 0 ? "null" : dictionaryList.get(0);
+		return parent.getDictionaryList() == null || parent.getDictionaryList().size() == 0 ? "null" : parent.getDictionaryList().get(0);
 	}
 
 	/**

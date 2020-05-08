@@ -74,7 +74,7 @@ public class AbstractAMIDictTool implements Callable<Void> {
 
 	// injected by picocli
 	@ParentCommand
-	AMIDict parent;
+	protected AMIDict parent;
 	
 	@Override
 	public Void call() throws Exception {
@@ -231,23 +231,6 @@ public class AbstractAMIDictTool implements Callable<Void> {
     protected String[] description;
     */
     
-	/** Toplevel */
-    @Option(names = {"-d", "--dictionary"}, 
-    		arity="1..*",
-    		description = "input or output dictionary name/s. for 'create' must be singular; when 'display' or 'translate', any number. "
-    				+ "Names should be lowercase, unique. [a-z][a-z0-9._]. Dots can be used to structure dictionaries into"
-    				+ "directories. Dictionary names are relative to 'directory'. If <directory> is absent then "
-    				+ "dictionary names are absolute.")
-    protected List<String> dictionaryList = null;
-	
-    /** both create and translate */
-    @Option(names = {"--directory"}, 
-    		arity="1",
-    		description = "top directory containing dictionary/s. Subdirectories will use structured names (NYI). Thus "
-    				+ "dictionary 'animals' is found in '<directory>/animals.xml', while 'plants.parts' is found in "
-    				+ "<directory>/plants/parts.xml. Required for relative dictionary names.")
-    protected String dictionaryTopname = null;
-
     /**
     @Option(names = {"--urlref"}, 
     		arity="1..*",
@@ -470,7 +453,7 @@ public class AbstractAMIDictTool implements Callable<Void> {
 //		System.out.println("booleanQuery  "+this.booleanQuery);
 //		System.out.println("descriptions  "+this.description);
 //		System.out.println("dataCols      "+dataCols);
-		System.out.println("dictionary    "+(this.dictionaryList == null ? "null" : Arrays.asList(this.dictionaryList)));
+		System.out.println("dictionary    "+(parent.getDictionaryList() == null ? "null" : Arrays.asList(parent.getDictionaryList())));
 //		System.out.println("dictionaryTop     "+this.dictionaryTopname);
 //		System.out.println("href          "+href);
 //		System.out.println("hrefCols      "+hrefCols);
@@ -492,7 +475,7 @@ public class AbstractAMIDictTool implements Callable<Void> {
 //		System.out.println("terms         "+(termList == null ? null : "("+termList.size()+") "+termList));
 //		System.out.println("termfile      "+this.termfile);
 //		System.out.println("urlref        "+this.urlref);
-		System.out.println("wikiLinks     "+this.wikiLinks);
+//		System.out.println("wikiLinks     "+this.wikiLinks);
 //		System.out.println("wptype        "+this.wptype);
 		
 	}
@@ -603,10 +586,10 @@ public class AbstractAMIDictTool implements Callable<Void> {
 	protected File createDirectory() {
 		File directory = null;
 		useAbsoluteNames = false;
-		if (dictionaryTopname != null) {
-			directory = new File(dictionaryTopname);
-		} else if (dictionaryList != null && dictionaryList.size() > 0){
-			directory = new File(dictionaryList.get(0)).getParentFile();
+		if (parent.dictionaryTopname != null) {
+			directory = new File(parent.dictionaryTopname);
+		} else if (parent.getDictionaryList() != null && parent.getDictionaryList().size() > 0){
+			directory = new File(parent.getDictionaryList().get(0)).getParentFile();
 			useAbsoluteNames = true;
 		} else {
 			addLoggingLevel(Level.ERROR, "Must give either 'directory' or existing absolute filenames of dictionaries");

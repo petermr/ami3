@@ -12,6 +12,8 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.CHESConstants;
+import org.contentmine.ami.tools.AMI;
+import org.contentmine.ami.tools.AbstractAMITest;
 import org.contentmine.cproject.CMineFixtures;
 import org.contentmine.cproject.CProjectArgProcessor;
 import org.contentmine.cproject.args.DefaultArgProcessor;
@@ -20,6 +22,7 @@ import org.contentmine.cproject.util.CMineGlobber;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.eucl.euclid.test.TestUtil;
 import org.contentmine.graphics.html.HtmlElement;
+import org.contentmine.norma.NAConstants;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -28,7 +31,7 @@ import com.google.common.collect.Multimap;
 
 import nu.xom.Element;
 
-public class CProjectTest {
+public class CProjectTest extends AbstractAMITest {
 
 	
 	private static final Logger LOG = Logger.getLogger(CProjectTest.class);
@@ -639,6 +642,65 @@ project2
 		Assert.assertTrue(cTreeList.containsName("PMC4417228"));
 		Assert.assertTrue(cTreeList.containsName("PMC4521097"));
 	}
+
+	@Test
+	public void testPicocliInjectparentOK() {
+		CProject project = new CProject(new File(NAConstants.TEST_AMI_DIR, "battery10"));
+		List<String> treeNames = Arrays.asList(new String[] {
+				"PMC3776197",
+				"PMC4062906",
+				});
+
+		String treeNamesString = String.join(" ", treeNames);
+		String command;
+		command = "clean";
+//		command = "display";
+//		command = "download";
+//		command = "filter";
+//		command = "graphics";
+//		command = "grobid";
+//		command = "grobid";
+//		command = "image-filter";
+//		command = "makeproject";
+//		command = "metadata";
+//		command = "ocr";
+//		command = "pdfbox";
+//		command = "pixel";
+//		command = "regex";
+//		command = "search";
+//		command = "section";
+//		command = "summary";
+//		command = "svg";
+//		command = "table";
+//		command = "transform";
+//		command = "words";
+//		command = "help";
+		String cmd = "-p " + project
+				+ " -v"
+				+ " --includetree " + treeNamesString
+				+ " " + command;
+		AMI.execute(cmd);
+				
+	}
+	@Test
+	public void testPicocliInjectParentNPEFail() {
+		CProject project = new CProject(new File(NAConstants.TEST_AMI_DIR, "battery10"));
+		List<String> treeNames = Arrays.asList(new String[] {
+				"PMC3776197",
+				"PMC4062906",
+				});
+
+		String treeNamesString = String.join(" ", treeNames);
+		String cmd = "-p " + project
+				+ " -v"
+				+ " --includetree " + String.join(" ", treeNamesString)
+				+ " image";
+		AMI.execute(cmd);
+				
+	}
+	
+	
+	
 
 
 	//==================================

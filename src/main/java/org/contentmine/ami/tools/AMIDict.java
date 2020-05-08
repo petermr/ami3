@@ -141,6 +141,40 @@ public class AMIDict implements Runnable {
 		return cmd;
 	}
 
+	public String getDictionaryTopname() {
+		return dictionaryTopname;
+	}
+
+	public void setDictionaryTopname(String dictionaryTopname) {
+		this.dictionaryTopname = dictionaryTopname;
+	}
+	public List<String> getDictionaryList() {
+		return dictionaryList;
+	}
+
+	public void setDictionaryList(List<String> dictionaryList) {
+		this.dictionaryList = dictionaryList;
+	}
+	/** Toplevel */
+    @Option(names = {"-d", "--dictionary"}, 
+    		arity="1..*",
+    		description = "input or output dictionary name/s. for 'create' must be singular; when 'display' or 'translate', any number. "
+    				+ "Names should be lowercase, unique. [a-z][a-z0-9._]. Dots can be used to structure dictionaries into"
+    				+ "directories. Dictionary names are relative to 'directory'. If <directory> is absent then "
+    				+ "dictionary names are absolute.")
+	private
+    List<String> dictionaryList = null;
+	
+    /** both create and translate */
+    @Option(names = {"--directory"}, 
+    		arity="1",
+    		description = "top directory containing dictionary/s. Subdirectories will use structured names (NYI). Thus "
+    				+ "dictionary 'animals' is found in '<directory>/animals.xml', while 'plants.parts' is found in "
+    				+ "<directory>/plants/parts.xml. Required for relative dictionary names.")
+    String dictionaryTopname = null;
+
+
+
 	static class GeneralOptions {
 		@Option(names = {"-i", "--input"}, paramLabel = "FILE",
 				description = "Input filename (no defaults)"

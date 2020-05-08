@@ -9,6 +9,8 @@ import org.apache.log4j.Logger;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.util.CMineGlobber;
 
+import jline.internal.Log;
+
 
 public class ImageDirProcessor {
 
@@ -92,6 +94,10 @@ public class ImageDirProcessor {
 
 	/** this calls back to amiTool */
 	private void processInputName(File imageDir, String inputname) {
+		if (inputname == null) {
+			Log.warn("no inputname to processImage");
+			return;
+		}
 		HasImageDir hasImageDir = (HasImageDir)amiTool;
 		File imageFile = hasImageDir.getImageFile(imageDir, inputname);
 		amiTool.setInputBasename(inputname);

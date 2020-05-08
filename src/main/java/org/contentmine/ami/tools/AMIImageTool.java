@@ -159,17 +159,14 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 	private static final String _DELETE = "_delete";
 
     // FILTER OPTIONS
-
+	
     @Option(names = {"--borders"},
     		arity = "1..2",
-//    		defaultValue = "10",
             description = "add borders: 1 == all; 2 : top/bottom, edges, "
             + "4 vals = top, right bottpm, left; default NONE")
-//	private List<Integer> borders = Arrays.asList(new Integer[] {10}) ;
 	private List<Integer> borders = null ;
 
     @Option(names = {"--duplicate"},
-    		arity = "0..1",
     		defaultValue = "duplicate",
             description = "FILTER: move duplicate images to <duplicate>; default = ${DEFAULT-VALUE}; "+_DELETE+" means delete"
             )
@@ -177,32 +174,32 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 
     @Option(names = {"--filter"},
     		arity = "0",
-    		defaultValue = "false",
+//    		defaultValue = "false",
             description = "pre-runs default FILTER (i.e. without args), duplicate, small, monochrome"
             )
 	private boolean filter;
 
     @Option(names = {"--minheight"},
-    		arity = "0..1",
+    		arity = "1",
     		defaultValue = "100",
             description = "minimum height (pixels) to accept")
     private int minHeight;
 
     @Option(names = {"--minwidth"},
-    		arity = "0..1",
+    		arity = "1",
     		defaultValue = "100",
             description = "minimum width (pixels) to accept")
     private int minWidth;
     
     @Option(names = {"--monochrome"},
-    		arity = "0..1",
+    		arity = "1",
     		defaultValue = "monochrome",
             description = "FILTER: move monochrome images to <monochrome>; default ${DEFAULT-VALUE}; "+_DELETE+" means delete"
             )
 	private MonochromeDest monochromeDirname;
 
     @Option(names = {"--small"},
-    		arity = "0..1",
+    		arity = "1",
     		defaultValue = "small",
             description = "FILTER: move small images to <monochrome>; default ${DEFAULT-VALUE}; "+_DELETE+" means delete"
             )
@@ -212,28 +209,21 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
     
     @Option(names = {"--binarize"},
     		arity = "1",
-//    		defaultValue = "LOCAL_MEAN",
             description = "TRANSFORM: create binary (normally black and white); methods local_mean ... (default: ${DEFAULT-VALUE})")
     private ThresholdMethod binarize = null;
 
     @Option(names = {"--despeckle"},
-    		arity = "0..1",
-//    		defaultValue = "false",
             description = "TRANSFORM: remove single pixels surrounded by whitespace "
             		+ "run AFTER any other image enhancement. default FALSE")
     private Boolean despeckle = false;
 
     @Option(names = {"--erodedilate"},
-    		arity = "0..1",
-//    		defaultValue = "false",
             description = "TRANSFORM: erode 1-pixel layer and then dilate. "
             		+ "Removes minor spikes (default: FALSE ${DEFAULT-VALUE}); generally destroys fine details."
             		+ "(currently doesn't work - wiped out most image")
-    
     private Boolean erodeDilate = false;
 
     @Option(names = {"--maxheight"},
-    		arity = "0..1",
     		defaultValue = "1000",
             description = "maximum height (pixels) to accept. If larger, scales the image (default: ${DEFAULT-VALUE})")
     private Integer maxHeight;
@@ -245,13 +235,11 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
     private Integer maxWidth;
     
     @Option(names = {"--posterize"},
-    		arity = "0",
-//    		defaultValue = "true",
             description = "create a map of colors including posterization. NYI")
     private boolean posterize = false;
 
     @Option(names = {"--priority"},
-    		arity = "0..1",
+    		arity = "1",
     		defaultValue = "RAW",
             description = "force transformations starting with the lowest priority (usually 'raw'). Probably obsolete")
     private AMIImageType priorityImage = AMIImageType.RAW;
@@ -267,27 +255,23 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 	private Double scalefactor = null;
 
     @Option(names = {"--sharpen"},
-    		arity = "0..1",
- //   		defaultValue = "sharpen4",
+    		arity = "1",
             description = "sharpen image using Laplacian kernel or sharpen4 or sharpen8 (BoofCV)..(default: NONE ${DEFAULT-VALUE})")
-//    private String sharpen = "sharpen4";
     private String sharpen = "none";
 
     @Option(names = {"--template"},
     		arity = "1",
-//    		defaultValue = "template.xml",
             description = "use template in each image.*/ dir to process image")
     private String templateFilename = null /*"template.xml"*/;
 
     @Option(names = {"--thinning"},
-    		arity = "0..1",
+    		arity = "1",
     		defaultValue = "null",
             description = "thinning algorithm. Currently under development. (default: ${DEFAULT-VALUE})")
     private String thinning = null;
 
     @Option(names = {"--threshold"},
     		arity = "1",
-//    		defaultValue = "180",
             description = "maximum value for black pixels (non-background) (default: NONE ${DEFAULT-VALUE})."
             		+ "between 120 and 180 (200 for lighter grey images) seems useful."
             )
@@ -296,10 +280,8 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 
     @Option(names = {"--toolkit"},
     		arity = "1",
-//    		defaultValue = "Boofcv",
             description = "Image toolkit to use., "
             		+ "Scalr (Imgscalr), simple but no longer developed. Pmr (my own) when all else fails.(default: ${DEFAULT-VALUE}) (not yet fully worked out)")
-//    private ImageToolkit toolkit = ImageToolkit.Boofcv;
     private ImageToolkit toolkit = null;
 
 	public static final String DUPLICATES = "duplicates/";

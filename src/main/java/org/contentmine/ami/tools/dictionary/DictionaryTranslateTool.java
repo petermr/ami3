@@ -79,7 +79,7 @@ public class DictionaryTranslateTool extends AbstractAMIDictTool {
 	@Override
 	public void runSub() {
 		File directory = createDirectory();
-		for (String dictionaryS : dictionaryList) {
+		for (String dictionaryS : parent.getDictionaryList()) {
 			String basename = FilenameUtils.getBaseName(dictionaryS);
 			File dictionaryFile = (useAbsoluteNames) ? new File(dictionaryS) : new File(directory, dictionaryS);
 			if (!dictionaryFile.exists()) {

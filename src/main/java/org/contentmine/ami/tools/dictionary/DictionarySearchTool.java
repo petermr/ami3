@@ -49,7 +49,7 @@ public class DictionarySearchTool extends AbstractAMIDictTool {
 	
 	@Override
 	public void runSub() {
-		DefaultAMIDictionary amiDictionary = AbstractAMIDictTool.readDictionary(new File(dictionaryList.get(0)));
+		DefaultAMIDictionary amiDictionary = AbstractAMIDictTool.readDictionary(new File(parent.getDictionaryList().get(0)));
 		Set<String> rawTermSet = amiDictionary.getRawLowercaseTermSet();
 		
 		if (searchTerms != null) {

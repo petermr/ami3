@@ -171,7 +171,7 @@ public class AMIDownloadTool extends AbstractAMITool {
     @Option(names = {"--pagesize"},
     		arity = "1",
             description = "size of hit page, no default (often set by service)")
-    private Integer pagesize = null;
+    private Integer pagesize = 20;
 
     @Option(names = {"--query"},
     		arity = "1..*",

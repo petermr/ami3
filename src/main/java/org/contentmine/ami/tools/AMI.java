@@ -140,7 +140,7 @@ public class AMI implements Runnable {
 	 *               This will be split into arguments with {@code args.trim().split(\\s+)}.
 	 * @return the exit code
 	 */
-	static int execute(String args) {
+	public static int execute(String args) {
 		return execute(args.trim().split("\\s+"));
 	}
 	static int execute(String[] args) {

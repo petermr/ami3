@@ -4,20 +4,13 @@ import java.io.File;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.contentmine.ami.tools.AMIImageTool;
-import org.contentmine.ami.tools.AMIOCRTool;
-import org.contentmine.ami.tools.AbstractAMITool;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
-import org.contentmine.eucl.euclid.IntRange;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.norma.NormaFixtures;
 import org.contentmine.norma.image.ocr.GOCRConverter;
-import org.contentmine.norma.image.ocr.TextLineAnalyzer;
 import org.junit.Test;
-
-import com.google.common.collect.Multiset;
 
 /** test OCR.
  * 
@@ -36,10 +29,10 @@ public class AMIOCRTest {
 	 */
 	public void testHelp() throws Exception {
 		String args = 
-				"-t /Users/pm286/workspace/uclforest/dev/shenderovich"
-				+ " --html true"
+				"-t /Users/pm286/workspace/uclforest/dev/shenderovich -v"
+				+ " ocr --html true"
 			;
-		new AMIOCRTool().runCommands(args);
+		AMI.execute(args);
 	}
 	
 	@Test
@@ -47,11 +40,9 @@ public class AMIOCRTest {
 	 * convert single (good) file
 	 */
 	public void testHOCR() throws Exception {
-		String[] args = {
-				"-t", "/Users/pm286/workspace/uclforest/dev/shenderovich",
-				"--html", "true"
-			};
-		new AMIOCRTool().runCommands(args);
+		String args = 
+				"-t /Users/pm286/workspace/uclforest/dev/shenderovich ocr ";
+		AMI.execute(args);
 	}
 	
 	@Test
@@ -60,10 +51,10 @@ public class AMIOCRTest {
 	 */
 	public void testHOCR1() throws Exception {
 		String args = 
-				"-t /Users/pm286/workspace/uclforest/dev/buzick"
+				"-t /Users/pm286/workspace/uclforest/dev/buzick ocr"
 				+ " --html true"
 			;
-		new AMIOCRTool().runCommands(args);
+		AMI.execute(args);
 	}
 	
 	@Test
@@ -74,9 +65,9 @@ public class AMIOCRTest {
 	 */
 	public void testHOCRProject() throws Exception {
 		String args = ""
-				+ "-p /Users/pm286/workspace/uclforest/dev --html true"
+				+ "-p /Users/pm286/workspace/uclforest/dev ocr --html true"
 				;
-		new AMIOCRTool().runCommands(args);
+		AMI.execute(args);
 	}
 	
 	@Test
@@ -86,11 +77,11 @@ public class AMIOCRTest {
 	 */
 	public void testForceScale() throws Exception {
 		String args = ""
-				+ "-t /Users/pm286/workspace/uclforest/dev/case"
+				+ "-t /Users/pm286/workspace/uclforest/dev/case ocr"
 				+ " --html true"
 				+ " --scalefactor 2.0"
 				;
-		new AMIOCRTool().runCommands(args);
+		AMI.execute(args);
 	}
 	
 	@Test
@@ -102,11 +93,12 @@ public class AMIOCRTest {
 		String args = ""
 //				+ "-p /Users/pm286/workspace/uclforest/dev"
 				+ "-p /Users/pm286/projects/uclforest/dev"
+				+ " ocr"
 				+ " --html true"
 				+ " --scalefactor 1.7"
 				+ " --filename scale1_7"
 				;
-		new AMIOCRTool().runCommands(args);
+		AMI.execute(args);
 	}
 	
 	@Test
@@ -121,7 +113,7 @@ public class AMIOCRTest {
 				+ " --maxsize 700"
 				+ " --scaled maxsize"
 				;
-		new AMIOCRTool().runCommands(args);
+		AMI.execute(args);
 	}
 	
 	@Test
@@ -132,11 +124,12 @@ public class AMIOCRTest {
 	public void testScaleMaxsizeProject() throws Exception {
 		String args = ""
 				+ "-p /Users/pm286/workspace/uclforest/dev/"
+				+ " ocr"
 				+ " --html true"
 				+ " --maxsize 700"
 				+ " --filename maxsize700"
 				;
-		new AMIOCRTool().runCommands(args);
+		AMI.execute(args);
 	}
 
 	
@@ -148,12 +141,13 @@ public class AMIOCRTest {
 	public void testScaleOCR() throws Exception {
 		String args = ""
 				+ "-t /Users/pm286/workspace/uclforest/devtest/case_systematic_review_ar"
+				+ " ocr"
 				+ " --html true"
 //				+ " --maxsize 700"
 //				+ " --filename maxsize700"
                 + " --scalefactor 2.0"
 				;
-		new AMIOCRTool().runCommands(args);
+		AMI.execute(args);
 	}
 	
 	@Test
@@ -164,6 +158,7 @@ public class AMIOCRTest {
 	public void testScaleOCRProject() throws Exception {
 		String args = ""
 				+ "-p /Users/pm286/workspace/uclforest/devtest/"
+				+ " ocr"
 				+ " --includetree"
 				+ " buzick%"
 				+ " case_systematic_review_ar"
@@ -187,7 +182,7 @@ public class AMIOCRTest {
 				+ " --html true"
                 + " --scalefactor 2.0"
 				;
-		new AMIOCRTool().runCommands(args);
+		AMI.execute(args);
 	}
 	
 	@Test
@@ -201,11 +196,12 @@ public class AMIOCRTest {
 		LOG.debug("ctree "+cTree);
 //		File plotImageFile = new File(batteryDir, "panel0_0_128_true.png");
 //		Assert.assertTrue(plotImageFile.exists());
-		AbstractAMITool ocrTool = new AMIOCRTool();
+//		AbstractAMITool ocrTool = new AMIOCRTool();
 		String cmd = "--ctree "+cTree.getDirectory()+""
-				+ " --";
+				+ " ocr";
 		LOG.debug(cmd);
-		ocrTool.runCommands(cmd);
+		AMI.execute(cmd);
+//		ocrTool.runCommands(cmd);
 		
 	
 	}
@@ -215,7 +211,7 @@ public class AMIOCRTest {
 		File projectDir = new File("/Users/pm286/projects/forestplots/spss");
 //		CTree cTree = new CTree(new File(projectDir, "PMC5502154"));
 		CProject cProject = new CProject(projectDir);
-		AbstractAMITool ocrTool = new AMIOCRTool();
+//		AbstractAMITool ocrTool = new AMIOCRTool();
 
 //		String cmd = "--ctree "+cTree.getDirectory();
 		String cmd = "--cproject "+cProject.getDirectory();
@@ -225,7 +221,8 @@ public class AMIOCRTest {
 		cmd += " --outputname raw_s4_b_10_thr_180";
 				
 //		LOG.debug(cmd);
-		ocrTool.runCommands(cmd);
+//		ocrTool.runCommands(cmd);
+		AMI.execute(cmd);
 	
 	}
 	
@@ -261,6 +258,7 @@ public class AMIOCRTest {
 		AbstractAMITool ocrTool = new AMIOCRTool();
 		String cmd = ""
 				+ "--cproject "+cProject.getDirectory()
+				+ " ocr"
 				+ " --gocr /usr/local/bin/gocr"
 				+ " --html false"
 		;

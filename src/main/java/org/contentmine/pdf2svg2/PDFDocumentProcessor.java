@@ -77,6 +77,7 @@ public class PDFDocumentProcessor {
 	private AMIPDFTool.ParserType parserType;
 	private List<PDFTidySVG> tidySVGList;
 	private int maxSVGChars = 8 * maxPrimitives;
+	private Int2 minimagesize;
 
 	public PDFDocumentProcessor() {
 		init();
@@ -244,8 +245,14 @@ public class PDFDocumentProcessor {
 		this.pdfImagesDirname =  pdfImagesDirname;
 	}
 
-	private boolean isLargerThanImageBox(BufferedImage image) {
-		return minImageBox == null || image.getHeight() >= minImageBox.getX() || image.getHeight() >= minImageBox.getY();
+	boolean isLargerThanImageBox(BufferedImage image) {
+		int width = image.getWidth();
+		int height = image.getHeight();
+		return isLargerThanImageBox(width, height);
+	}
+
+	boolean isLargerThanImageBox(int width, int height) {
+		return minImageBox == null || width >= minImageBox.getX() || height >= minImageBox.getY();
 	}
 	
 	/** this runs a test for sanity checking
@@ -352,6 +359,5 @@ public class PDFDocumentProcessor {
 	public List<PDFTidySVG> getTidySVGList() {
 		return tidySVGList;
 	}
-
 
 }

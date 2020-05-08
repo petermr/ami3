@@ -1,0 +1,348 @@
+{
+  "id": [
+    "25027190"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "25027190"
+  ],
+  "pmcid": [
+    "PMC4100024"
+  ],
+  "doi": [
+    "10.1038/srep05694"
+  ],
+  "title": [
+    "Chemical and structural stability of lithium-ion battery electrode materials under electron beam."
+  ],
+  "authorString": [
+    "Lin F, Markus IM, Doeff MM, Xin HL."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Lin F"
+          ],
+          "firstName": [
+            "Feng"
+          ],
+          "lastName": [
+            "Lin"
+          ],
+          "initials": [
+            "F"
+          ],
+          "affiliation": [
+            "Environmental Energy Technologies Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Markus IM"
+          ],
+          "firstName": [
+            "Isaac M"
+          ],
+          "lastName": [
+            "Markus"
+          ],
+          "initials": [
+            "IM"
+          ],
+          "affiliation": [
+            "1] Environmental Energy Technologies Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA [2] Department of Materials Science and Engineering, University of California, Berkeley, CA 94720, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Doeff MM"
+          ],
+          "firstName": [
+            "Marca M"
+          ],
+          "lastName": [
+            "Doeff"
+          ],
+          "initials": [
+            "MM"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-2148-8047",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Environmental Energy Technologies Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Xin HL"
+          ],
+          "firstName": [
+            "Huolin L"
+          ],
+          "lastName": [
+            "Xin"
+          ],
+          "initials": [
+            "HL"
+          ],
+          "affiliation": [
+            "Center for Functional Nanomaterials, Brookhaven National Laboratory, Upton, NY 11973, USA."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-2148-8047",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "4"
+      ],
+      "journalIssueId": [
+        "2111186"
+      ],
+      "dateOfPublication": [
+        "2014 "
+      ],
+      "monthOfPublication": [
+        "0"
+      ],
+      "yearOfPublication": [
+        "2014"
+      ],
+      "printPublicationDate": [
+        "2014-01-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Scientific reports"
+          ],
+          "ISOAbbreviation": [
+            "Sci Rep"
+          ],
+          "medlineAbbreviation": [
+            "Sci Rep"
+          ],
+          "NLMid": [
+            "101563288"
+          ],
+          "ISSN": [
+            "2045-2322"
+          ],
+          "ESSN": [
+            "2045-2322"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2014"
+  ],
+  "pageInfo": [
+    "5694"
+  ],
+  "abstractText": [
+    "The investigation of chemical and structural dynamics in battery materials is essential to elucidation of structure-property relationships for rational design of advanced battery materials. Spatially resolved techniques, such as scanning/transmission electron microscopy (S/TEM), are widely applied to address this challenge. However, battery materials are susceptible to electron beam damage, complicating the data interpretation. In this study, we demonstrate that, under electron beam irradiation, the surface and bulk of battery materials undergo chemical and structural evolution equivalent to that observed during charge-discharge cycling. In a lithiated NiO nanosheet, a Li2CO3-containing surface reaction layer (SRL) was gradually decomposed during electron energy loss spectroscopy (EELS) acquisition. For cycled LiNi(0.4)Mn(0.4)Co(0.18)Ti(0.02)O2 particles, repeated electron beam irradiation induced a phase transition from an layered structure to an rock-salt structure, which is attributed to the stoichiometric lithium and oxygen removal from 3a and 6c sites, respectively. Nevertheless, it is still feasible to preserve pristine chemical environments by minimizing electron beam damage, for example, using fast electron imaging and spectroscopy. Finally, the present study provides examples of electron beam damage on lithium-ion battery materials and suggests that special attention is necessary to prevent misinterpretation of experimental results."
+  ],
+  "affiliation": [
+    "Environmental Energy Technologies Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/25027190/pdf/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Free"
+          ],
+          "availabilityCode": [
+            "F"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "PubMedCentral"
+          ],
+          "url": [
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/25027190/?tool=EBI"
+          ]
+        },
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1038/srep05694"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4100024"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4100024?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "Y"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "7"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2015-05-11"
+  ],
+  "dateOfCreation": [
+    "2014-07-16"
+  ],
+  "firstIndexDate": [
+    "2014-07-17"
+  ],
+  "fullTextReceivedDate": [
+    "2014-07-18"
+  ],
+  "electronicPublicationDate": [
+    "2014-07-16"
+  ],
+  "firstPublicationDate": [
+    "2014-07-16"
+  ]
+}

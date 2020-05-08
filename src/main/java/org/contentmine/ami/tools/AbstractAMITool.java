@@ -155,6 +155,7 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 	// has processTree run OK? 
 	protected boolean processedTree = true;
 	protected boolean makeCProjectDirectory = false;
+	private int maxInPrettyList = 5;
 
 	public void init() {
 		// log4j configuration
@@ -351,7 +352,8 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 	 */
 	protected void validateCTree() {
 		checkIncludeExclude(excludeBase(), includeBase()); // check anyway
-		if (cTreeDirectory() != null) {
+		String cTreeDirectory = cTreeDirectory();
+		if (cTreeDirectory != null) {
 			File cTreeDir = new File(cTreeDirectory());
 			cTreeDirectory(checkDirExistenceAndGetAbsoluteName(cTreeDir, "cTree"));
 			if (cTreeDirectory() == null) {
@@ -380,12 +382,35 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 			System.out.println("excludeTrees        " + excludeTrees());
 			System.out.println("forceMake           " + getForceMake());
 			System.out.println("includeBase         " + includeBase());
-			System.out.println("includeTrees        " + includeTrees());
+			System.out.println("includeTrees        " + toString(includeTrees()));
 			System.out.println("log4j               " + (log4j() == null ? "" : new ArrayList<String>(Arrays.asList(log4j()))));
 			System.out.println("verbose             " + verbosity().length);
 		} else {
 			System.out.println("-v to see generic values");
 		}
+	}
+
+	private String toString(String[] strings) {
+		return strings == null ? "null" : prettyPrint(Arrays.asList(strings));
+	}
+
+	private String prettyPrint(List<String> strings) {
+		if (strings == null) return "null";
+		StringBuilder sb = new StringBuilder(String.valueOf(strings.size()));
+		sb.append( " [");
+		int count = 0;
+		for (String s : strings) {
+			sb.append(s);
+			if (count++ > maxInPrettyList ) {
+				sb.append(" ... ");
+				break;
+			}
+			if (count < strings.size()) {
+				sb.append(", ");
+			}
+		}
+		sb.append("]");
+		return sb.toString();
 	}
 
 	private String prettyPrint(CTreeList cTreeList) {

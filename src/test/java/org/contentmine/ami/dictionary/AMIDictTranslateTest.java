@@ -76,9 +76,8 @@ public class AMIDictTranslateTest extends AbstractAMITest {
 	}
 	
 	@Test
-	/** MANY redlinks cause errors
-	 * https://en.wikipedia.org/w/index.php?title=Buxus_pubiramea&action=edit&redlink=1
-	 * TRAP these!
+	/**
+	 * SMALL
 	 */
 	public void testTranslateJSONtoXMLAbsoluteWikidata() {
 		String args =
@@ -86,6 +85,24 @@ public class AMIDictTranslateTest extends AbstractAMITest {
 			"translate " +
            " --dictionary src/test/resources/org/contentmine/ami/dictionary/alliaceae.json " +
 //			                "src/test/resources/org/contentmine/ami/dictionary/buxales.json " +
+           " --outformats xml " +
+           " --wikilinks wikidata wikipedia"
+		;
+		AMIDict.execute(args);
+		
+	}
+	
+	@Test
+	/** MANY redlinks cause errors
+	 * https://en.wikipedia.org/w/index.php?title=Buxus_pubiramea&action=edit&redlink=1
+	 * TRAP these!
+	 */
+	public void testTranslateJSONtoXMLAbsoluteWikidataRedlinks() {
+		String args =
+//			"dictionary " +
+			"translate " +
+           " --dictionary src/test/resources/org/contentmine/ami/dictionary/alliaceae.json " +
+			                "src/test/resources/org/contentmine/ami/dictionary/buxalessmall.json " +
            " --outformats xml " +
            " --wikilinks wikidata wikipedia"
 		;

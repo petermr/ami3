@@ -368,11 +368,11 @@ public class CMineGlobber {
 	/** get sorted list of descendant files with given suffix.
 	 * 
 	 * @param dir
-	 * @param suffix (without '.')
+	 * @param noDotSuffix (without '.')
 	 * @return sorted list 
 	 */
-	public static List<File> listSortedDescendantFiles(File dir, String suffix) {
-		List<File> listFiles = new CMineGlobber().setGlob("**/*." + suffix).setRecurse(true).setLocation(dir).listFiles();
+	public static List<File> listSortedDescendantFiles(File dir, String noDotSuffix) {
+		List<File> listFiles = new CMineGlobber().setGlob("**/*." + noDotSuffix).setRecurse(true).setLocation(dir).listFiles();
 		Collections.sort(listFiles);
 		return listFiles;
 	}

@@ -14,6 +14,7 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.DebugPrint;
+import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.pdf2svg2.PDFDocumentProcessor;
 import org.contentmine.pdf2svg2.PageParserRunner;
 import org.contentmine.pdf2svg2.PageParserRunner.ParserDebug;
@@ -29,7 +30,7 @@ import picocli.CommandLine.Option;
 					+ "Often followed by ami-image and ami-xml."
 					+ "EXAMPLE%n"
 					+ "    ami -t /Users/pm286/projects/chess pdf%n"
-					+ "        processes the chess CTree (which must contain fulltext.pdf%n"
+					+ "        processes the CTree (which must contain fulltext.pdf%n"
 					+ "        by default this produces svg/fulltext-page.<1...n>.svg and pdfimages/image.p.n.x_x.y_y.png%n"
 	})
 public class AMIPDFTool extends AbstractAMITool {
@@ -75,7 +76,6 @@ public class AMIPDFTool extends AbstractAMITool {
     private String pdfImagesDirname = "pdfimages/";
     
 	@Option(names = {"--maxpages"}, 
-    		arity="0..1",
    		    description = "maximum PDF pages. If less than actual pages, will repeat untill all pages processed. "
    		    		+ "The normal reason is that lists get full (pseudo-memory leak, this is a bug). If you encounter "
    		    		+ "out of memory errors, try setting this lower."
@@ -83,13 +83,17 @@ public class AMIPDFTool extends AbstractAMITool {
     private int maxpages = 5;
     
 	@Option(names = {"--maxprimitives"}, 
-    		arity="0..1",
-   		    description = "maximum number pf SVG primitives. Some diagrams have hundreds of thousands of"
+   		    description = "maximum number of SVG primitives. Some diagrams have hundreds of thousands of"
    		    		+ " graphics primitives and create quadratic or memory problems. Setting maxprimitives"
    		    		+ " allows the job to continue but loses data. Some SVGs could be 150 Mbyte so selection"
    		    		+ " by user will be important"
     		)
     private int maxprimitives = 5000;
+    
+	@Option(names = {"--minimagesize"}, 
+   		    description = "minimum image size, useful when many small glyphs (e.g. for glyphs for text characters)"
+    		)
+    private Int2 minimagesize = new Int2(10,10);
     
     /** this should be a Mixin, with SVGTool
      * NYI
@@ -165,6 +169,7 @@ public class AMIPDFTool extends AbstractAMITool {
 	private void printDebug() {
 		System.out.println("maxpages            "+maxpages);
 		System.out.println("svgDirectoryName    "+svgDirectoryName);
+		System.out.println("minimagesize        "+minimagesize);
 		System.out.println("outputSVG           "+outputSVG);
 		System.out.println("pdf2html            "+pdf2html);
 		System.out.println("imgDirectoryName    "+pdfImagesDirname);
@@ -261,6 +266,7 @@ public class AMIPDFTool extends AbstractAMITool {
 		pdfDocumentProcessor.setOutputPDFImages(outputPdfImages);
 		pdfDocumentProcessor.setMaxPages(maxpages);
 		pdfDocumentProcessor.setMaxPrimitives(maxprimitives);
+		pdfDocumentProcessor.setMinimumImageBox(minimagesize.getX(), minimagesize.getY());
 		pdfDocumentProcessor.setParserType(parserType);
 		pdfDocumentProcessor.setTidySVGList(tidySVGList);
         cTree.setPDFDocumentProcessor(pdfDocumentProcessor);

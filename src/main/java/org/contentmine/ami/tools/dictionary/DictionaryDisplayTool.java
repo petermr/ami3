@@ -3,6 +3,7 @@ package org.contentmine.ami.tools.dictionary;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.net.URL;
 import java.nio.file.FileStore;
 import java.nio.file.FileSystem;
 import java.nio.file.Files;
@@ -16,7 +17,6 @@ import java.util.List;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.contentmine.ami.tools.AMIDictionaryToolOLD.Operation;
 import org.contentmine.ami.tools.AbstractAMIDictTool;
 import org.contentmine.cproject.files.DebugPrint;
 import org.contentmine.cproject.util.CMineGlobber;
@@ -35,9 +35,7 @@ import picocli.CommandLine.Parameters;
 		description = {
 				"Displays AMI dictionaries. (Under Development)",
 				"  Example (NYI):%n"
-				+ "   ${COMMAND-FULL-NAME} create --informat wikipage%n"
-				+ "    --input https://en.wikipedia.org/wiki/List_of_fish_common_names%n"
-				+ "    --dictionary commonfish --directory mydictionary --outformats xml,html%n"
+				+ "   ${COMMAND-FULL-NAME} display --informat wikipage%n"
 		})
 public class DictionaryDisplayTool extends AbstractAMIDictTool {
 
@@ -61,6 +59,13 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
     		)
     private Operation operation = Operation.help;
 
+    @Option(names = {"--full"}, 
+    		arity="1..*",
+   		    description = "list of remote dictionaries "
+    		)
+    private List<String> full = new ArrayList<>();
+
+
     @Option(names = {"--remote"}, 
     		arity="1..*",
    		    description = "list of remote dictionaries "
@@ -68,9 +73,17 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
     private List<String> remoteUrls = new ArrayList<>(Arrays.asList(
     		new String[] {"https://github.com/petermr/dictionary"}));
 
+    @Option(names = {"--maxEntries"}, 
+    		arity="1",
+   		    description = "max entries "
+    		)
+	protected int maxEntries = DEFAULT_MAX_ENTRIES;
 
-    protected List<File> files;
-	protected int maxEntries = 0;
+    @Option(names = {"--files"}, 
+    		arity="1..*",
+   		    description = "files"
+    		)
+	protected List<File> files = new ArrayList<>();
 
 	public DictionaryDisplayTool() {
 		super();
@@ -78,46 +91,54 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 
 	@Override
 	protected void parseSpecifics() {
-		System.err.println("parseSpecifics NYI "+this.getClass());
-//		printDebug();
+		System.out.println("full                " + full);
+		System.out.println("files               " + files);
+		System.out.println("maxEntries          " + maxEntries);
+		System.out.println("remote              " + remoteUrls);
 	}
 
 	@Override
 	protected void runSpecifics() {
-		System.err.println("runSpecifics NYI "+this.getClass());
         runSub();
 	}
 
 	public void runSub() {
-		List<String> argList = Arrays.asList(LIST);
+		getOrCreateExistingDictionaryTop();
+//		List<String> argList = Arrays.asList(LIST);
+		System.err.println(">"+dictionaryTop.getAbsolutePath());
 		files = listDictionaryFiles(dictionaryTop);
+		if (files == null) {
+			System.err.println("no files");
+			return;
+		} 
 		Collections.sort(files);
 		
-		if (argList.size() == 1 && argList.get(0).toUpperCase().equals(LIST)) {
-			DebugPrint.debugPrint("list all FILE dictionaries "+files.size());
-			for (File file : files) {
-				listDictionaryInfo(FilenameUtils.getBaseName(file.getName()));
-			}
-		} else if (argList.size() >= 1 && argList.get(0).toUpperCase().equals(FULL)) {
-			argList.remove(0);
-			maxEntries = DEFAULT_MAX_ENTRIES;
-			if (argList.size() >= 1) {
-				String arg = argList.get(0);
-				try {
-					maxEntries = Integer.parseInt(arg);
-					argList.remove(0);
-				} catch (NumberFormatException nfe) {
-//					DebugPrint.debugPrintln(Level.ERROR, "Requires maxEntries, found: "+arg);
-				}
-			}
-			for (String arg : argList) {
-				listDictionaryInfo(arg);
-			}
+		if (files.size() > 0) {
+			listFiles();
+		} else if (full.size() > 0) {
+			listFullDictionaryInfo();
 		} else {
-			listAllDictionariesBriefly();
-			for (String arg : argList) {
-				listDictionaryInfo(arg);
-			}
+			listDictionariesBriefly(files);
+		}
+	}
+
+	private void listDictionariesBriefly(List<File> files) {
+		listAllDictionariesBriefly();
+		for (File file : files) {
+			listDictionaryInfo(file.toString());
+		}
+	}
+
+	private void listFullDictionaryInfo() {
+		for (String fullx : full) {
+			listDictionaryInfo(full.toString());
+		}
+	}
+
+	private void listFiles() {
+		DebugPrint.debugPrint("list all FILE dictionaries "+files.size());
+		for (File file : files) {
+			listDictionaryInfo(FilenameUtils.getBaseName(file.getName()));
 		}
 	}
 
@@ -147,7 +168,13 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 //	}
 
 	private List<File> listDictionaryFiles(File dictionaryHead) {
+		if (dictionaryHead == null) {
+			System.err.println("null dictionaryhead");
+			return null;
+		}
+		
 		DebugPrint.debugPrint("dictionaries from "+dictionaryHead);
+		
 		List<File> newFiles = new ArrayList<File>();
 		File[] listFiles = dictionaryHead.listFiles();
 		if (listFiles == null) {
@@ -329,5 +356,37 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 			Collections.sort(files);
 			return files;
 		}
+		
+
+		/** TEST */
+		  private static File[] getResourceFolderFiles (String folder) {
+			  System.err.println("RESOURCE FOLDER "+folder);
+		    ClassLoader loader = Thread.currentThread().getContextClassLoader();
+		    URL url = loader.getResource(folder);
+		    if (url == null) {
+//		    	System.err.println("Null URL "+folder);
+		    	return new File[0];
+		    } else {
+			    String path = url.getPath();
+			    System.err.println(">> "+path);
+			    File[] fff = new File(path).listFiles();
+//			    System.err.println(fff.length);
+	        	for (File ffff : fff) {
+	        		getResourceFolderFiles(ffff.toString());
+	        	}
+			    return fff;
+		    }
+		  }
+
+		  public static void main (String[] args) {
+		    for (File f : getResourceFolderFiles("org/contentmine/ami/plugins/dictionary")) {
+  		        System.out.println(f);
+  		        if (f.isDirectory()) {
+  		        	String ff = f.getAbsolutePath();
+  		        	int idx = ff.indexOf("org/contentmine/ami");
+  		        	File[] fff = getResourceFolderFiles(ff.substring(idx));
+  		        }
+		    }
+		  }
 
 }

@@ -67,7 +67,7 @@ public class AMIPDFTest extends AbstractAMITest {
 		String args = 
 				"-p " + projectDir
 				+ " pdfbox"
-				+ " --rawfiletypes pdfbox"
+//				+ " --rawfiletypes pdfbox"
 				+ " --maxpages 20"
 				+ " --pdfimages false"
 				+ " --svgpages true"

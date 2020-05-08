@@ -16,6 +16,7 @@ import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeList;
 import org.contentmine.cproject.metadata.AbstractMetadata;
+import org.contentmine.cproject.util.CMineGlobber;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -264,8 +265,32 @@ hitList2 and hitList3 are the wrong way round.
 				+ " --fulltext pdf"
 				+ " --limit 2000"
 			;
-		AMIDownloadTool amiDownload = AMI.execute(AMIDownloadTool.class, args);
+		AMI.execute(args);
+		
+		List<File> files = CMineGlobber.listSortedDescendantFiles(new File(biorxiv), "pdf");
+		Assert.assertEquals("pdfs", 12, files.size());
+	}
 
+	@Test
+	public void testSDDownload() {
+		String args;
+		String sd = "target/sd/ebola";
+        args = "-p " + "target"
+				+ " clean"
+				+ " sd/";
+		AMI.execute(args);
+		
+		args = 
+				"-p " + sd +""
+				+ " download"
+				+ " --site sd"
+				+ " --query \"n95 AND ebola AND ghana\""
+				+ " --pagesize 20"
+				+ " --pages 1 4"        
+				+ " --fulltext pdf"
+				+ " --limit 2000"
+			;
+		AMIDownloadTool amiDownload = AMI.execute(AMIDownloadTool.class, args);
 	}
 
 	@Test

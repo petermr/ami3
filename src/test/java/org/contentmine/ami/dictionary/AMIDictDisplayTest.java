@@ -39,7 +39,7 @@ public class AMIDictDisplayTest extends AbstractAMITest {
 
 	@Test
 	public void testHelpSubcommands() {
-		String args = "display --help";
+		String args = "--help";
 		AMIDict.execute(args);
 	}
 		
@@ -48,6 +48,15 @@ public class AMIDictDisplayTest extends AbstractAMITest {
 		String args = "display";
 		AMIDict.execute(args);
 	}
+	
+	@Test
+	public void testDictionaryTop() {
+//		String args = "--dictionary src/main/resources/org/contentmine/ami/plugins/dictionary display ";
+		String args = "--dictionary /Users/pm286/ContentMine/dictionary/dictionaries display ";
+		AMIDict.execute(args);
+		
+	}
+	
 	
 
 }

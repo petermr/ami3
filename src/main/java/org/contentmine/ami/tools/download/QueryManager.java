@@ -2,7 +2,6 @@ package org.contentmine.ami.tools.download;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URLEncoder;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -19,7 +18,6 @@ import org.contentmine.graphics.html.HtmlBody;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlHtml;
 import org.contentmine.graphics.html.util.HtmlUtil;
-import org.contentmine.norma.NAConstants;
 
 import nu.xom.Element;
 
@@ -189,7 +187,7 @@ private static final Logger LOG = Logger.getLogger(QueryManager.class);
 	 * 
 	 * @param url
 	 * @param page
-	 * @return 
+	 * @return empty hitlist if no hits
 	 * @throws IOException
 	 */
 	private HitList searchAndDownloadMetadataHitList(String url, Integer page) throws IOException {
@@ -207,7 +205,7 @@ private static final Logger LOG = Logger.getLogger(QueryManager.class);
 			hitList.setUrl(url);
 			System.err.println("Results " + hitList.size());
 		}
-		return hitList;
+		return hitList == null ? new HitList() : hitList;
 	}
 
 	/**
