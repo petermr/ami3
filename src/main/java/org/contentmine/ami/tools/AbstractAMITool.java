@@ -243,7 +243,9 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 	 * checks it exists
 	 */
 	protected void validateCProject() {
-
+		if (cProject != null) {
+			return; // no need to create a CProject
+		}
 		if (getCProjectDirectory() != null) {
 			if (makeCProjectDirectory) {
 				new File(getCProjectDirectory()).mkdirs();

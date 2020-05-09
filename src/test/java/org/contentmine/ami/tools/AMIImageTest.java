@@ -80,7 +80,7 @@ public class AMIImageTest {
 	 * mainly for visual inspection of results
 	 */
 	public void testBinarizeMethods() throws Exception {
-		String args = "-t /Users/pm286/workspace/uclforest/devtest/case_systematic_review_ar --binarize ";
+		String args = "-t /Users/pm286/workspace/uclforest/devtest/case_systematic_review_ar image --binarize ";
 		String[] methods = {
 			"GLOBAL_MEAN",
 			"GLOBAL_ENTROPY",
@@ -133,7 +133,7 @@ public class AMIImageTest {
 		for (String name : names) {
 			String tree = "-t /Users/pm286/workspace/uclforest/devtest/";
 			String treename = tree + name;
-			String args = treename + "ocr --binarize ";
+			String args = treename + " image --binarize ";
 			for (String method : methods) {
 //				new AMIImageTool().runCommands(args + method);
 			}
@@ -194,7 +194,7 @@ public class AMIImageTest {
 				+ " --scalefactor 0.5"
 				+ " --maxwidth 100"
 				+ " --maxheight 100"
-						
+
 				+ " --basename scale0_5";
 		AMI.execute(args);
 	}
