@@ -53,7 +53,7 @@ import java.util.concurrent.Callable;
 				//AMIGetpapersTool.class, // https://github.com/petermr/ami3/issues/29
 				AMIGraphicsTool.class,
 				AMIGrobidTool.class,
-				AMIImageFilterTool.class,
+//				AMIImageFilterToolOLD.class, // replaced by AMIFilterTool
 				AMIImageTool.class,
 				AMIMakeProjectTool.class,
 				AMIMetadataTool.class,

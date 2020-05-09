@@ -43,8 +43,8 @@ description = {
 				+ "<li>rejection of monochrome images (e.g. all white or all black) (NB black and white is 'binary/ized'"
 				+ "</ul>"
 })
-public class AMIImageFilterTool extends AbstractAMITool {
-	private static final Logger LOG = Logger.getLogger(AMIImageFilterTool.class);
+class AMIImageFilterToolOLD extends AbstractAMITool {
+	private static final Logger LOG = Logger.getLogger(AMIImageFilterToolOLD.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
@@ -102,16 +102,16 @@ public class AMIImageFilterTool extends AbstractAMITool {
      * obsolete it
      * @param cProject
      */
-	public AMIImageFilterTool(CProject cProject) {
+	public AMIImageFilterToolOLD(CProject cProject) {
 		this.cProject = cProject;
 	}
 	
-	public AMIImageFilterTool() {
+	public AMIImageFilterToolOLD() {
 	}
 	
     public static void main(String[] args) throws Exception {
     	LOG.warn("Deprecated); use AMIFilterTool instead");
-    	AMIImageFilterTool amiFilter = new AMIImageFilterTool();
+    	AMIImageFilterToolOLD amiFilter = new AMIImageFilterToolOLD();
     	amiFilter.runCommands(args);
     }
 

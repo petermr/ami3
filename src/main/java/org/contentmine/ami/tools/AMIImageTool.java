@@ -163,7 +163,7 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
     @Option(names = {"--borders"},
     		arity = "1..2",
             description = "add borders: 1 == all; 2 : top/bottom, edges, "
-            + "4 vals = top, right bottpm, left; default NONE")
+            + "4 vals = top, right bottom, left; default NONE")
 	private List<Integer> borders = null ;
 
     @Option(names = {"--duplicate"},
@@ -173,8 +173,6 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 	private DuplicateDest duplicateDirname;
 
     @Option(names = {"--filter"},
-    		arity = "0",
-//    		defaultValue = "false",
             description = "pre-runs default FILTER (i.e. without args), duplicate, small, monochrome"
             )
 	private boolean filter;

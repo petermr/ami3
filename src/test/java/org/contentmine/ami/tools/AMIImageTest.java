@@ -492,6 +492,7 @@ public class AMIImageTest {
 
 	@Test
 	public void testTreeList() {
+		String cmd = null;
 		CProject project = new CProject(new File("/Users/pm286/projects/open-battery/liion"));
 		List<String> treeNames = Arrays.asList(new String[] {
 				"PMC3776197",
@@ -504,16 +505,24 @@ public class AMIImageTest {
 				"PMC5604389",
 				});
 
-		String treeNamesString = String.join(" ", treeNames);
-		String cmd = "-p " + project
-				+ " -v"
-				+ " --includetree " + treeNamesString
-				+ " pdfbox";
-//		AMI.execute(cmd);
 		cmd = "-p " + project
 				+ " -v"
-				+ " --includetree " + String.join(" ", treeNamesString)
-				+ " image";
+//				+ " --includetree " + treeNamesString
+				+ " clean */svg/*";
+		AMI.execute(cmd);
+//		if (true) return;
+		String treeNamesString = String.join(" ", treeNames);
+		cmd = "-p " + project
+				+ " -v"
+//				+ " --includetree " + treeNamesString
+				+ " pdfbox";
+		AMI.execute(cmd);
+		cmd = "-p " + project
+				+ " -v"
+//				+ " --includetree " + String.join(" ", treeNamesString)
+				+ " image"
+				+ " --small=small --monochrome=monochrome --duplicate=duplicate"
+				;
 		AMI.execute(cmd);
 				
 	}
