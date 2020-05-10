@@ -41,26 +41,6 @@ import picocli.CommandLine.ParentCommand;
  *
  */
 
-/**
-@Command(
-		name = "dictionary",
-		description = {
-				"Manages AMI dictionaries.",
-				"Create from Wikipedia:%n"
-				+ "   ${COMMAND-FULL-NAME} create --informat wikipage%n"
-				+ "    --input https://en.wikipedia.org/wiki/List_of_fish_common_names%n"
-				+ "    --dictionary commonfish --directory mydictionary --outformats xml,html%n"
-		},
-subcommands = {
-//		DictionaryCreationTool.class,
-//		DictionaryDisplayTool.class,
-//		DictionarySearchTool.class,
-//		DictionaryTranslateTool.class,
-
-//		CommandLine.HelpCommand.class,
-//		AutoComplete.GenerateCompletion.class,
-})
-*/
 
 @Command(mixinStandardHelpOptions = true, version = "ami-dict 1.0.0")
 public class AbstractAMIDictTool implements Callable<Void> {
@@ -200,44 +180,6 @@ public class AbstractAMIDictTool implements Callable<Void> {
 		
 	}
 
-	/** NOT USED?
-    @Parameters(index = "0"	,
-    		arity="0..*",
-    		description = "primary operation: (${COMPLETION-CANDIDATES}); if no operation, runs help"
-    		)
-    protected Operation operation = Operation.help;
-    */
-
-	/** NOT used?
-    @Option(names = {"--baseurl"}, 
-    		arity="1",
-   		    description = "base URL for all wikipedia links "
-    		)
-    protected String baseUrl = "https://en.wikipedia.org/wiki";
-    */
-
-	/**
-    @Option(names = {"--booleanquery"}, 
-    		arity="0..1",
-   		    description = "generate query as series of chained OR phrases"
-    		)
-    protected boolean booleanQuery = false;
-    */
-    /**
-    @Option(names = {"--descriptions"}, 
-    		arity="1..*",
-   		description = "description fields (free form) such as source, author"
-    		)
-    protected String[] description;
-    */
-    
-    /**
-    @Option(names = {"--urlref"}, 
-    		arity="1..*",
-    		split=",",
-    		description = "for non-structured pages I think")
-    protected String[] urlref;
-*/
     
 //    @Mixin CProjectTreeMixin proTree;
 
@@ -256,7 +198,7 @@ public class AbstractAMIDictTool implements Callable<Void> {
 	public static final String ALL = "ALL";
 	public static final String HELP = "HELP";
 	public static final String SEARCH = "search";
-	private static final String DICTIONARY_TOP_NAME = "dictionary/";
+	private static final String DICTIONARY_TOP_NAME = "";
 	private static final String DICTIONARIES_NAME = DICTIONARY_TOP_NAME + "dictionaries";
 	protected static final String SLASH = "/";
     public final static List<String> WIKIPEDIA_STOP_WORDS = Arrays.asList(new String[]{
@@ -348,6 +290,32 @@ public class AbstractAMIDictTool implements Callable<Void> {
 		html,
 		mwk,
 	}
+	
+	public enum FieldType {
+		ATTRIBUTE,
+		ELEMENT
+	}
+		
+	public enum DictionaryField {
+		description(FieldType.ELEMENT),
+		entry(FieldType.ELEMENT),
+		name(FieldType.ATTRIBUTE),
+		synonym(FieldType.ELEMENT),
+		term(FieldType.ATTRIBUTE),
+		title(FieldType.ATTRIBUTE),
+		wikidata(FieldType.ATTRIBUTE),
+		wikipedia(FieldType.ATTRIBUTE),;
+		
+		private FieldType fieldType;
+
+		private DictionaryField(FieldType fieldType) {
+			this.fieldType = fieldType;
+		}
+
+		public FieldType getType() {
+			return fieldType;
+		}
+	}
 
 
 	protected HashSet<String> missingWikidataSet;
@@ -426,9 +394,13 @@ public class AbstractAMIDictTool implements Callable<Void> {
 
     protected File getOrCreateExistingDictionaryTop() {
     	if (dictionaryTop == null) {
-    		getOrCreateExistingContentMineDir();
-			if (contentMineDir != null) {
-    			dictionaryTop = new File(contentMineDir, DICTIONARIES_NAME);
+    		if (parent.directory != null) {
+    			dictionaryTop = new File(parent.directory);
+    		} else {
+	    		getOrCreateExistingContentMineDir();
+				if (contentMineDir != null) {
+	    			dictionaryTop = new File(contentMineDir, DICTIONARIES_NAME);
+	    		}
     		}
     	}
 	   	if (dictionaryTop != null) {
@@ -449,34 +421,18 @@ public class AbstractAMIDictTool implements Callable<Void> {
 	}
 
 	private void printDebug() {
-//		System.out.println("baseUrl       "+this.baseUrl);
-//		System.out.println("booleanQuery  "+this.booleanQuery);
-//		System.out.println("descriptions  "+this.description);
-//		System.out.println("dataCols      "+dataCols);
+//		System.out.println("inputBasenameList        "+parent.inputBasenameList);
+//		System.out.println("inputs        "+parent.inputBasename);
+//
+		System.out.println("dictionaryTop        "+parent.directory);
 		System.out.println("dictionary    "+(parent.getDictionaryList() == null ? "null" : Arrays.asList(parent.getDictionaryList())));
-//		System.out.println("dictionaryTop     "+this.dictionaryTopname);
-//		System.out.println("href          "+href);
-//		System.out.println("hrefCols      "+hrefCols);
 		System.out.println("inputs        "+inputList);
 		System.out.println("input         "+input());
-//		System.out.println("informat      "+this.informat);
 		System.out.println("dictInformat  "+dictInformat);
-//		System.out.println("linkCol       "+this.linkCol);
-		//System.out.println("log4j         "+makeArrayList(log4j));
-//		System.out.println("nameCol       "+this.nameCol);
-//		System.out.println("operation     "+this.operation);
-//		System.out.println("outformats    "+makeArrayList(this.outformats));
-//		System.out.println("query         "+queryChunk);
-//		System.out.println("search        "+this.searchTerms);
-//		System.out.println("searchfile    "+this.searchTermFilenames);
-//		System.out.println("splitCol      "+this.splitCol);
-//		System.out.println("templatea     "+this.templateNames);
-//		System.out.println("termCol       "+this.termCol);
-//		System.out.println("terms         "+(termList == null ? null : "("+termList.size()+") "+termList));
-//		System.out.println("termfile      "+this.termfile);
-//		System.out.println("urlref        "+this.urlref);
-//		System.out.println("wikiLinks     "+this.wikiLinks);
-//		System.out.println("wptype        "+this.wptype);
+//		System.out.println("forceMake  "+parent.forceMake);
+//		System.out.println("verbosity  "+parent.verbosity);
+//		System.out.println("maxTree  "+parent.maxTreeCount);
+//		System.out.println("log4j  "+parent.log4j);
 		
 	}
 
@@ -586,8 +542,8 @@ public class AbstractAMIDictTool implements Callable<Void> {
 	protected File createDirectory() {
 		File directory = null;
 		useAbsoluteNames = false;
-		if (parent.dictionaryTopname != null) {
-			directory = new File(parent.dictionaryTopname);
+		if (parent.directory != null) {
+			directory = new File(parent.directory);
 		} else if (parent.getDictionaryList() != null && parent.getDictionaryList().size() > 0){
 			directory = new File(parent.getDictionaryList().get(0)).getParentFile();
 			useAbsoluteNames = true;

@@ -129,11 +129,11 @@ public class AMIDisplayTool extends AbstractAMITool {
 
     @Override
 	protected void parseSpecifics() {
-		System.out.println("aggregate           " + summaryFilename);
-		System.out.println("assert              " + assertList);
-		System.out.println("display             " + displayList);
-		System.out.println("orientation         " + orientation);
-		System.out.println();
+    	AMIUtil.printNameValue("aggregate", summaryFilename);
+    	AMIUtil.printNameValue("assert", assertList);
+    	AMIUtil.printNameValue("display", displayList);
+    	AMIUtil.printNameValue("orientation", orientation);
+    	System.out.println();
 	}
 
 

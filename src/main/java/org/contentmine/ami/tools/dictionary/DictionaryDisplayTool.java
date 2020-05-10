@@ -43,8 +43,8 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
-
-	private static final int DEFAULT_MAX_ENTRIES = 20;
+	
+	private static final int DEFAULT_MAX_ENTRIES = 3;
 	private static final String XML = "xml";
 	private static final String FULL = "FULL";
 	private static final String LIST = "LIST";
@@ -59,31 +59,33 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
     		)
     private Operation operation = Operation.help;
 
-    @Option(names = {"--full"}, 
-    		arity="1..*",
-   		    description = "list of remote dictionaries "
+    @Option(names = {"--fields"}, 
+    		arity="0..*",
+    	    split=",",
+   		    description = "list of fields to report 0 = (${COMPLETION-CANDIDATES})"
     		)
-    private List<String> full = new ArrayList<>();
+    private List<DictionaryField> fields = new ArrayList<>();
 
+    @Option(names = {"--files"}, 
+    		arity="1..*",
+   		    description = "files to list (paths may be added later)"
+    		)
+	protected List<File> files = new ArrayList<>();
+    
+    @Option(names = {"--maxEntries"}, 
+    		arity="1",
+//    		defaultValue = DEFAULT_MAX_ENTRIES,
+   		    description = "max entries to list (${DEFAULT-VALUE}) in dictionary"
+    		)
+	protected int maxEntries = DEFAULT_MAX_ENTRIES;
 
     @Option(names = {"--remote"}, 
     		arity="1..*",
-   		    description = "list of remote dictionaries "
+   		    description = "list of remote dictionaries (not sure of format yet!)"
     		)
     private List<String> remoteUrls = new ArrayList<>(Arrays.asList(
     		new String[] {"https://github.com/petermr/dictionary"}));
 
-    @Option(names = {"--maxEntries"}, 
-    		arity="1",
-   		    description = "max entries "
-    		)
-	protected int maxEntries = DEFAULT_MAX_ENTRIES;
-
-    @Option(names = {"--files"}, 
-    		arity="1..*",
-   		    description = "files"
-    		)
-	protected List<File> files = new ArrayList<>();
 
 	public DictionaryDisplayTool() {
 		super();
@@ -91,7 +93,7 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 
 	@Override
 	protected void parseSpecifics() {
-		System.out.println("full                " + full);
+		System.out.println("fields              " + fields);
 		System.out.println("files               " + files);
 		System.out.println("maxEntries          " + maxEntries);
 		System.out.println("remote              " + remoteUrls);
@@ -104,9 +106,52 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 
 	public void runSub() {
 		getOrCreateExistingDictionaryTop();
-//		List<String> argList = Arrays.asList(LIST);
-		System.err.println(">"+dictionaryTop.getAbsolutePath());
-		files = listDictionaryFiles(dictionaryTop);
+//		System.err.println(">"+dictionaryTop.getAbsolutePath());
+		List<File> fileList = (files.size() > 0) ? files : listDictionaryFiles(dictionaryTop);
+		listFiles(fileList);
+	}
+	
+	private List<File> listDictionaryFiles(File dictionaryHead) {
+		if (dictionaryHead == null) {
+			System.err.println("null dictionaryhead");
+			return null;
+		}
+		
+		System.out.println("dictionaries from "+dictionaryHead);
+		
+		File[] listFiles = dictionaryHead.listFiles();
+		if (listFiles == null) {
+			LOG.error("no dictionary files; terminated");
+			return new ArrayList<>();
+		}
+		List<File> newFiles = displayDictionaryFiles(listFiles);
+		return newFiles;
+	}
+
+	private List<File> displayDictionaryFiles(File[] listFiles) {
+		List<File> newFiles = new ArrayList<File>();
+		List<File> files = Arrays.asList(listFiles);
+		for (File file : files) {
+			String filename = file.toString();
+			if (XML.equals(FilenameUtils.getExtension(filename))) {
+				System.out.println("       <"+FilenameUtils.getName(file.toString())+">");
+				newFiles.add(file);
+			} else if (file.isDirectory()) {
+				System.out.println("\n[dir "+file+"]\n");
+				listDictionaryFiles(file);
+			}
+		}
+		Collections.sort(newFiles);
+		files = newFiles;
+		for (File file : files) {
+			listDictionaryInfo(file);
+		}
+		return newFiles;
+	}
+
+
+
+	private void listFiles(List<File> files) {
 		if (files == null) {
 			System.err.println("no files");
 			return;
@@ -114,31 +159,11 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 		Collections.sort(files);
 		
 		if (files.size() > 0) {
-			listFiles();
-		} else if (full.size() > 0) {
-			listFullDictionaryInfo();
-		} else {
-			listDictionariesBriefly(files);
-		}
-	}
-
-	private void listDictionariesBriefly(List<File> files) {
-		listAllDictionariesBriefly();
-		for (File file : files) {
-			listDictionaryInfo(file.toString());
-		}
-	}
-
-	private void listFullDictionaryInfo() {
-		for (String fullx : full) {
-			listDictionaryInfo(full.toString());
-		}
-	}
-
-	private void listFiles() {
-		DebugPrint.debugPrint("list all FILE dictionaries "+files.size());
-		for (File file : files) {
-			listDictionaryInfo(FilenameUtils.getBaseName(file.getName()));
+			DebugPrint.debugPrint("list all FILE dictionaries "+files.size());
+//			listAllDictionariesBriefly(files);
+			for (File file : files) {
+				listDictionaryInfo(file);
+			}
 		}
 	}
 
@@ -146,53 +171,30 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 		return maxEntries;
 	}
 
-	/** uses directories */
-	private void listDictionaryInfo(String dictionaryName) {
-		File dictionaryFile = null;
-		for (File file : files) {
-			String baseName = FilenameUtils.getBaseName(file.getName());
-			if (dictionaryName.equals(baseName)) {
-				listDictionaryInfo(file, baseName);
-				dictionaryFile = file;
-				break;
-			} else {
-			}
-		}
-		if (dictionaryFile == null) {
-			System.err.println("\nUnknown dictionary: "+dictionaryName);
-		}
-	}
-
-//	private void setMaxEntries(int maxEntries) {
-//		this.maxEntries = maxEntries;
+//	/** looks up dictionaries by name ? obsolete */
+//	private void listDictionaryInfoForName(String dictionaryName) {
+//		File dictionaryFile = null;
+//		for (File file : files) {
+//			String baseName = FilenameUtils.getBaseName(file.getName());
+//			if (dictionaryName.equals(baseName)) {
+//				listDictionaryInfo(baseName, file);
+//				dictionaryFile = file;
+//				break;
+//			} else {
+//			}
+//		}
+//		if (dictionaryFile == null) {
+//			System.err.println("\nUnknown dictionary: "+dictionaryName);
+//		}
 //	}
 
-	private List<File> listDictionaryFiles(File dictionaryHead) {
-		if (dictionaryHead == null) {
-			System.err.println("null dictionaryhead");
-			return null;
-		}
-		
-		DebugPrint.debugPrint("dictionaries from "+dictionaryHead);
-		
-		List<File> newFiles = new ArrayList<File>();
-		File[] listFiles = dictionaryHead.listFiles();
-		if (listFiles == null) {
-			LOG.error("cannot list dictionary files; terminated");
-		} else {
-			List<File> files = Arrays.asList(listFiles);
-			for (File file : files) {
-				String filename = file.toString();
-				if (XML.equals(FilenameUtils.getExtension(filename))) {
-					newFiles.add(file);
-				}
-			}
-			Collections.sort(newFiles);
-		}
-		return newFiles;
+	
+	private void listDictionaryInfo(File file) {
+		String filename = FilenameUtils.getBaseName(file.toString());
+		listDictionaryInfo(filename, file);
 	}
-
-	private void listDictionaryInfo(File file, String dictionaryName) {
+		
+	private void listDictionaryInfo(String dictionaryName, File file) {
 		Element dictionaryElement = null;
 		try {
 			dictionaryElement = XMLUtil.parseQuietlyToRootElement(new FileInputStream(file));
@@ -204,31 +206,46 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 	}
 
 	private void listHardcoded() {
-		System.err.println("\n\nalso hardcoded functions (which resolve abbreviations):\n");
-		System.err.println("    gene    (relies on font/style) ");
-		System.err.println("    species (resolves abbreviations) ");
+//		System.err.println("\n\nalso hardcoded functions (which resolve abbreviations):\n");
+//		System.err.println("    gene    (relies on font/style) ");
+//		System.err.println("    species (resolves abbreviations) ");
 	}
 
 	private void listDictionaryInfo(String dictionary, Element dictionaryElement) {
-		System.err.println("\nDictionary: "+dictionary);
+		System.out.println("\nDictionary: "+dictionary+"\n");
 		List<Element> entries = XMLUtil.getQueryElements(dictionaryElement, "./*[local-name()='entry']");
-		System.err.println("entries: "+entries.size());
+		System.out.println("entries: "+entries.size());
 		printDescs(dictionaryElement);
+		printFieldSummary(dictionaryElement);
 		printEntries(dictionaryElement);
+	}
+
+	private void printFieldSummary(Element dictionaryElement) {
+		for (DictionaryField field : fields) {
+			if (field.getType().equals(FieldType.ATTRIBUTE)) {
+				String xpath = ".//*[@*[name()='"+field.toString()+"' and not(.='')]]";
+				List<Element> elements = XMLUtil.getQueryElements(dictionaryElement, xpath);
+				System.out.println("@"+field+": "+elements.size());
+				for (Element element : elements) {
+//					System.out.println("> "+element.toXML());
+				}
+			}
+		}
 	}
 
 	private void printDescs(Element dictionaryElement) {
 		List<Element> descList = XMLUtil.getQueryElements(dictionaryElement, "./*[local-name()='desc']");
 		for (Element desc : descList) {
-			System.err.println(desc.getValue());
+			System.out.println("Desc: "+desc.getValue());
 		}
+		System.out.println();
 	}
 
 	private void printEntries(Element dictionaryElement) {
 		List<Element> entryList = XMLUtil.getQueryElements(dictionaryElement, "./*[local-name()='entry']");
 		for (int i = 0; i < Math.min(entryList.size(), maxEntries); i++) {
 			Element entry =  entryList.get(i);
-			System.err.println(entry.getAttributeValue("term"));
+			System.out.println("    "+entry.getAttributeValue("term"));
 		}
 	}
 
@@ -249,9 +266,9 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 			DebugPrint.debugPrint("\nlist of dictionaries taken from : "+argList+"\n");
 		}
 //		DictionaryDisplayTool dictionaries = new DictionaryTool();
-		files = this/*dictionaries*/.getDictionaries();
+		List<File> files = this/*dictionaries*/.getDictionaries();
 	//		paths = dictionaries.getDictionaryPaths();
-		listAllDictionariesBriefly();
+		listAllDictionariesBriefly(files);
 	//		listAllDictionariesBrieflyPaths();
 	}
 
@@ -277,13 +294,15 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 		}
 	}
 
-	protected void listAllDictionariesBriefly() {
+	/** is this ever used? */
+	protected void listAllDictionariesBriefly(List<File> files) {
+		System.out.println("LIST FILES BRIEFLY");
 		int count = 0;
 		int perLine = 5;
-		System.err.print("\n    ");
+		System.out.print("\n    ");
 		for (File file : files) {
 			String name = FilenameUtils.getBaseName(file.toString());
-			System.err.print((name + "                     ").substring(0, 20));
+			System.out.print((name + "                     ").substring(0, 20));
 			if (count++ %perLine == perLine - 1) System.err.print("\n    ");
 		}
 		listHardcoded();
@@ -321,7 +340,7 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 		for (File file : files) {
 			String baseName = FilenameUtils.getBaseName(file.getName());
 			if (dictionaryName.equals(baseName)) {
-				listDictionaryInfo(file, baseName);
+				listDictionaryInfo(baseName, file);
 				dictionaryFile = file;
 				break;
 			} else {

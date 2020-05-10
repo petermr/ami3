@@ -310,4 +310,10 @@ public class AMI implements Runnable {
 					: spec.exitCodeOnInvalidInput();
 		}
 	}
+	
+	public final static void printNameValue(String name, Object value) {
+		System.out.println((name + "                 ").substring(0,25) + value);
+	}
+
+
 }

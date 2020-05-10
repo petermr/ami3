@@ -7,6 +7,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -19,10 +20,12 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.lookups.WikipediaLookup;
 import org.contentmine.ami.lookups.WikipediaPageInfo;
+import org.contentmine.ami.tools.dictionary.DictionarySearchTool;
 import org.contentmine.cproject.lookup.DefaultStringDictionary;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlA;
@@ -664,6 +667,41 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 		List<DictionaryTerm> terms = getTermsSortedBySize();
 		LOG.debug("terms "+terms);
 		return null;
+	}
+
+	public Set<String> searchDictionaryForTerms(Set<String> searchTerms) {
+		Set<String> rawTermSet = getRawLowercaseTermSet();
+		Set<String> foundSet = new HashSet<>();
+		Set<String> missedSet = new HashSet<>();
+		for (String searchTerm : searchTerms) {
+			if (rawTermSet.contains(searchTerm)) {
+				foundSet.add(searchTerm);
+			} else {
+				missedSet.add(searchTerm);
+			}
+		}
+		return foundSet;
+	}
+
+	public Set<String> searchTermsInFiles(List<String> searchTermFilenames) {
+		Set<String> allSearchTerms = new HashSet<>();
+		for (String searchTermFilename : searchTermFilenames) {
+			allSearchTerms.addAll(extractSearchTerms(searchTermFilename));
+		}
+		Set<String> foundTerms = searchDictionaryForTerms(allSearchTerms);
+		return foundTerms;
+	}
+
+	private Set<String> extractSearchTerms(String searchTermFilename) {
+		Set<String> allSearchTerms = new HashSet<>();
+		File file = new File(searchTermFilename);
+		try {
+			List<String> searchTerms0 = FileUtils.readLines(file, Charset.forName(DictionarySearchTool.UTF_8));
+			allSearchTerms.addAll(searchTerms0);
+		} catch (Exception e) {
+			throw new RuntimeException("Cannot read "+file);
+		}
+		return allSearchTerms;
 	}
 	
 }

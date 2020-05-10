@@ -60,7 +60,7 @@
 	    Most plugins have options and these create sub-subdirectories. Not sure if this is a fixed format yet.</p>
 	    <!-- 
 	      <file name="results.xml" count="0,1">
-	      	<p>The results. The format will depend on the plugin, but a commone example is entity in context for each fact.</p>
+	      	<p>The results. The format will depend on the plugin, but a common example is entity in context for each fact.</p>
      	  </file>
 	      <file name="results.html" count="0,1">
 	      	 <p>Html transformation of XML, normally for easier viewing</p>

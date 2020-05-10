@@ -1,21 +1,9 @@
 package org.contentmine.ami.tools;
 
-import static org.junit.Assert.fail;
-
 import java.io.File;
-import java.io.IOException;
-import java.util.Arrays;
-import java.util.List;
 
-import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.contentmine.ami.tools.AbstractAMIDictTool.DictionaryFileFormat;
-import org.contentmine.ami.tools.download.CurlDownloader;
-import org.contentmine.graphics.html.HtmlA;
-import org.contentmine.norma.NAConstants;
-import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 
 
@@ -56,6 +44,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 		String args = "create ";
 		AMIDict.execute(args);
 	}
+	
 	
 
 }

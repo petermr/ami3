@@ -1,25 +1,13 @@
 package org.contentmine.ami.dictionary;
 
-import static org.junit.Assert.fail;
-
 import java.io.File;
-import java.io.IOException;
-import java.util.Arrays;
-import java.util.List;
 
-import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.ami.tools.AMI;
 import org.contentmine.ami.tools.AMIDict;
-import org.contentmine.ami.tools.AMIDictionaryToolOLD;
-import org.contentmine.ami.tools.AbstractAMIDictTool.DictionaryFileFormat;
 import org.contentmine.ami.tools.AbstractAMITest;
-import org.contentmine.ami.tools.AbstractAMITool;
-import org.contentmine.ami.tools.download.CurlDownloader;
-import org.contentmine.graphics.html.HtmlA;
-import org.contentmine.norma.NAConstants;
-import org.junit.Assert;
-import org.junit.Ignore;
+import org.contentmine.ami.tools.dictionary.DictionaryDisplayTool;
 import org.junit.Test;
 
 
@@ -50,9 +38,39 @@ public class AMIDictDisplayTest extends AbstractAMITest {
 	}
 	
 	@Test
-	public void testDictionaryTop() {
-//		String args = "--dictionary src/main/resources/org/contentmine/ami/plugins/dictionary display ";
-		String args = "--dictionary /Users/pm286/ContentMine/dictionary/dictionaries display ";
+	public void testMultipleSubcommands() {
+		String args = "search";
+		AMIDict.execute(args);
+	}
+	
+	@Test
+	public void testDictionaryDisplayHelp() {
+		String args = "display --help";
+		AMIDict.execute(args);
+		
+	}
+	
+	@Test
+	public void testDictionaryDisplayLocal() {
+		String dict = "--directory /Users/pm286/ContentMine/dictionaries";
+		String args = dict + " display";
+		AMIDict.execute(args);
+		
+	}
+	
+	
+	@Test
+	public void testDictionaryDisplayFieldsInFile() {
+		String dict = "--directory src/main/resources/org/contentmine/ami/plugins/dictionary";
+		String args = dict + " -v" + " display --fields=term,name,title,wikidata,wikipedia";
+		AMIDict.execute(args);
+		
+	}
+	
+	@Test
+	public void testDictionaryDisplayResource() {
+		String dict = "--dictionary /org/contentmine/ami/plugins/dictionary";
+		String args = dict + " -v" + " display";
 		AMIDict.execute(args);
 		
 	}

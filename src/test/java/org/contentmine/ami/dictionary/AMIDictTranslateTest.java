@@ -35,6 +35,7 @@ public class AMIDictTranslateTest extends AbstractAMITest {
 	}
 	private static final File TARGET = new File("target");
 	public static final File DICTIONARY_DIR = new File(TARGET, "dictionary");
+	public static final File SRC_TEST_DICTIONARY = new File(SRC_TEST_AMI, "dictionary");
 	
 
 	@Test
@@ -68,8 +69,8 @@ public class AMIDictTranslateTest extends AbstractAMITest {
 		String args =
 //			"dictionary " +
 			"translate" +
-           " --dictionary src/test/resources/org/contentmine/ami/dictionary/alliaceae.json " +
-			                "src/test/resources/org/contentmine/ami/dictionary/buxales.json " +
+           " --dictionary "+SRC_TEST_DICTIONARY+"/alliaceae.json " +
+//           "+SRC_TEST_DICTIONARY+"/buxales.json " +
            " --outformats xml"
 		;
 		AMIDict.execute(args);
@@ -83,8 +84,8 @@ public class AMIDictTranslateTest extends AbstractAMITest {
 		String args =
 //			"dictionary " +
 			"translate " +
-           " --dictionary src/test/resources/org/contentmine/ami/dictionary/alliaceae.json " +
-//			                "src/test/resources/org/contentmine/ami/dictionary/buxales.json " +
+           " --dictionary "+SRC_TEST_DICTIONARY+"/alliaceae.json " +
+//			                SRC_TEST_DICTIONARY+"/buxales.json " +
            " --outformats xml " +
            " --wikilinks wikidata wikipedia"
 		;
@@ -101,26 +102,12 @@ public class AMIDictTranslateTest extends AbstractAMITest {
 		String args =
 //			"dictionary " +
 			"translate " +
-           " --dictionary src/test/resources/org/contentmine/ami/dictionary/alliaceae.json " +
-			                "src/test/resources/org/contentmine/ami/dictionary/buxalessmall.json " +
+           " --dictionary "+SRC_TEST_DICTIONARY+"/alliaceae.json " +
+                            SRC_TEST_DICTIONARY+"/buxalessmall.json " +
            " --outformats xml " +
            " --wikilinks wikidata wikipedia"
 		;
 		AMIDict.execute(args);
 		
 	}
-	
-	@Test
-	@Ignore // CEVOpen
-	public void testDictionarySearch() {
-		String args =
-				"dictionary " +
-				"search"
-				+ " --dictionary "+CEV+"/dictionary/compound/compound.xml"
-//				+ " --search thymol carvacrol"
-				+ " --searchfile "+CEV_SEARCH+"/oil186/__tables/compound_set.txt"
-				+ "";
-		AMIDict.execute(args);
-	}
-
 }

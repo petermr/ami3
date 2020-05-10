@@ -24,7 +24,7 @@ public class AMITableToolTest extends AbstractAMITest {
 				+ " --summarytable __table/summary.html"
 				+ " --tabledir sections/tables"
 				
-				+ " --templatefile "+CEV+"/templates/phytomedchem.xml"
+				+ " --templatefile "+CEV_OPEN+"/templates/phytomedchem.xml"
 				+ " --template composition"
 				
 			;
@@ -45,8 +45,8 @@ public class AMITableToolTest extends AbstractAMITest {
 				+ "-p " + dir + ""
 				+ " --tabledir sections/tables"
 				+ " --columntypes"
-				+ " --templatefile "+CEV+"/templates/phytomedchem.xml"
-//				+ " --templatefile "+CEV+"/templates/phytomedchem1.xml"  // uses chemical lookup
+				+ " --templatefile "+CEV_OPEN+"/templates/phytomedchem.xml"
+//				+ " --templatefile "+CEV_OPEN+"/templates/phytomedchem1.xml"  // uses chemical lookup
 				+ " --template composition"
 				+ " --multiset compound"
 				
@@ -69,8 +69,8 @@ public class AMITableToolTest extends AbstractAMITest {
 	@Test
 //	@Ignore // phytomedchem.xml not found
 	public void testActivity() {
-		if (!CEV.exists()) LOG.error(CEV+": does not exist");
-		File f = new File((CEV+"/templates/phytomedchem.xml").toString());
+		if (!CEV_OPEN.exists()) LOG.error(CEV_OPEN+": does not exist");
+		File f = new File((CEV_OPEN+"/templates/phytomedchem.xml").toString());
 		File dir = OIL5;
 //		File dir = OIL186;
 //		File dir = OIL1000;
@@ -83,7 +83,7 @@ public class AMITableToolTest extends AbstractAMITest {
 				+ "-p " + dir + ""
 				+ " --tabledir sections/tables"
 				+ " --columntypes"
-				+ " --templatefile "+CEV+"/templates/phytomedchem.xml"
+				+ " --templatefile "+CEV_OPEN+"/templates/phytomedchem.xml"
 				+ " --template activity"
 				+ " --multiset activity"
 				+ " -vv"

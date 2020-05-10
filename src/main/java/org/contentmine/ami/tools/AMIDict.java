@@ -2,6 +2,7 @@ package org.contentmine.ami.tools;
 
 import java.io.File;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -9,18 +10,6 @@ import java.util.Map;
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.contentmine.ami.CProjectTreeMixin;
-import org.contentmine.ami.tools.AMI.CProjectOptions;
-import org.contentmine.ami.tools.AMI.CTreeOptions;
-import org.contentmine.ami.tools.AMI.GeneralOptions;
-import org.contentmine.ami.tools.AMI.LoggingOptions;
-import org.contentmine.ami.tools.AMI.ProjectOrTreeOptions;
-import org.contentmine.ami.tools.AMI.ShortErrorMessageHandler;
-import org.contentmine.ami.tools.AbstractAMIDictTool.DictionaryFileFormat;
-import org.contentmine.ami.tools.AbstractAMIDictTool.InputFormat;
-import org.contentmine.ami.tools.AbstractAMIDictTool.Operation;
-import org.contentmine.ami.tools.AbstractAMIDictTool.WikiFormat;
-import org.contentmine.ami.tools.AbstractAMIDictTool.WikiLink;
 import org.contentmine.ami.tools.dictionary.DictionaryCreationTool;
 import org.contentmine.ami.tools.dictionary.DictionaryDisplayTool;
 import org.contentmine.ami.tools.dictionary.DictionarySearchTool;
@@ -30,11 +19,9 @@ import picocli.CommandLine;
 import picocli.CommandLine.ArgGroup;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.IParameterExceptionHandler;
-import picocli.CommandLine.Mixin;
 import picocli.CommandLine.Model.CommandSpec;
 import picocli.CommandLine.Option;
 import picocli.CommandLine.ParameterException;
-import picocli.CommandLine.Parameters;
 import picocli.CommandLine.Spec;
 
 @Command(name = "amidict",
@@ -107,7 +94,7 @@ public class AMIDict implements Runnable {
 	 * @param <T> the generic type of the object to return
 	 * @return the invoked subcommand instance
 	 */
-	static <T> T execute(Class<T> subcommandClass, String args) {
+	public static <T> T execute(Class<T> subcommandClass, String args) {
 		return execute(subcommandClass, args.trim().split("\\s+"));
 	}
 	static <T> T execute(Class<T> subcommandClass, String[] args) {
@@ -142,11 +129,11 @@ public class AMIDict implements Runnable {
 	}
 
 	public String getDictionaryTopname() {
-		return dictionaryTopname;
+		return directory;
 	}
 
 	public void setDictionaryTopname(String dictionaryTopname) {
-		this.dictionaryTopname = dictionaryTopname;
+		this.directory = dictionaryTopname;
 	}
 	public List<String> getDictionaryList() {
 		return dictionaryList;
@@ -162,8 +149,7 @@ public class AMIDict implements Runnable {
     				+ "Names should be lowercase, unique. [a-z][a-z0-9._]. Dots can be used to structure dictionaries into"
     				+ "directories. Dictionary names are relative to 'directory'. If <directory> is absent then "
     				+ "dictionary names are absolute.")
-	private
-    List<String> dictionaryList = null;
+    List<String> dictionaryList = new ArrayList<>();
 	
     /** both create and translate */
     @Option(names = {"--directory"}, 
@@ -171,7 +157,7 @@ public class AMIDict implements Runnable {
     		description = "top directory containing dictionary/s. Subdirectories will use structured names (NYI). Thus "
     				+ "dictionary 'animals' is found in '<directory>/animals.xml', while 'plants.parts' is found in "
     				+ "<directory>/plants/parts.xml. Required for relative dictionary names.")
-    String dictionaryTopname = null;
+    String directory = null;
 
 
 
@@ -264,6 +250,11 @@ public class AMIDict implements Runnable {
 					? cmd.getExitCodeExceptionMapper().getExitCode(ex)
 					: spec.exitCodeOnInvalidInput();
 		}
+	}
+
+	public static File getDictionaryDirectory() {
+		File homeDir = new File(System.getProperty("user.home"));
+		return new File(homeDir, "ContentMine/dictionaries");
 	}
 
 

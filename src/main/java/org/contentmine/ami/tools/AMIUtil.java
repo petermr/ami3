@@ -1,6 +1,7 @@
 package org.contentmine.ami.tools;
 
 import java.io.File;
+import java.util.Collection;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -19,4 +20,21 @@ public class AMIUtil {
 		return file;
 	}
 	
+	private static int maxValueLength = 200;
+	public final static void printNameValue(String name, Object value) {
+		StringBuilder sb = new StringBuilder();
+		if (value ==  null) {
+			sb.append("null");
+		} else if (value instanceof Collection) {
+			for (Object object : (Collection) value) {
+				sb.append(object.toString() + " ");
+				if (sb.length() > maxValueLength) break;
+			}
+		} else {
+			sb = new StringBuilder(value.toString());
+		}
+		System.out.println((name + "                           ").substring(0,25) + sb.toString());
+	}
+
+
 }
