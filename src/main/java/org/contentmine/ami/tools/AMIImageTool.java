@@ -1,10 +1,7 @@
 package org.contentmine.ami.tools;
 
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.util.Collections;
-import java.util.List;
-
+import com.google.common.collect.Multiset;
+import nu.xom.Element;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -12,7 +9,6 @@ import org.contentmine.ami.tools.template.AbstractTemplateElement;
 import org.contentmine.ami.tools.template.ImageTemplateElement;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
-import org.contentmine.cproject.files.DebugPrint;
 import org.contentmine.cproject.util.CMineGlobber;
 import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -20,17 +16,13 @@ import org.contentmine.graphics.svg.util.ImageIOUtil;
 import org.contentmine.image.ImageUtil;
 import org.contentmine.image.ImageUtil.SharpenMethod;
 import org.contentmine.image.ImageUtil.ThresholdMethod;
-
-import com.google.common.collect.Multiset;
-
-import nu.xom.Element;
-import picocli.CommandLine;
 import picocli.CommandLine.Command;
-import picocli.CommandLine.Model.CommandSpec;
-import picocli.CommandLine.Model.OptionSpec;
 import picocli.CommandLine.Option;
-import picocli.CommandLine.ParseResult;
-import picocli.CommandLine.Spec;
+
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.util.Collections;
+import java.util.List;
 
 /** analyses bitmaps
  * 
@@ -316,17 +308,10 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
     	new AMIImageTool().runCommands(args);
     }
 
-	@Spec
-	CommandSpec spec; // injected by picocli
 	@Override
 	protected void parseSpecifics() {
-		ParseResult parseResult = spec.commandLine().getParseResult();
-		for (OptionSpec option : spec.options()) {
-			String label = parseResult.hasMatchedOption(option)
-					? "(matched)" : "(default)";
-			System.out.printf("%s: %s %s%n", option.longestName(), option.getValue(), label);
-		}
     	if (verbosity().length > 0) {
+			printOptionValues(System.out);
 			System.out.println("minHeight           " + minHeight);
 			System.out.println("minWidth            " + minWidth);
 			System.out.println("smalldir            " + smallDirname);
