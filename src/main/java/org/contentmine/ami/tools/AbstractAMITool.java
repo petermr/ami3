@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.PrintStream;
+import java.io.PrintWriter;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,7 +23,11 @@ import org.contentmine.cproject.files.CTreeList;
 
 import picocli.CommandLine;
 import picocli.CommandLine.Command;
+import picocli.CommandLine.Model.CommandSpec;
+import picocli.CommandLine.Model.OptionSpec;
 import picocli.CommandLine.ParentCommand;
+import picocli.CommandLine.ParseResult;
+import picocli.CommandLine.Spec;
 
 /**
  * Reusable Commands for picocli CommandLine
@@ -125,6 +131,8 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 	// injected by picocli
 	@ParentCommand
 	AMI parent;
+
+	@Spec CommandSpec spec; // injected by picocli
 
 	protected static final String NONE = "NONE";
 	protected static final String RAW = "raw";
@@ -236,6 +244,20 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 	 * Currently NOOP
 	 */
 	protected void validateRawFormats() {
+	}
+
+	/**
+	 * Prints all options for this command with their value (either user-specified or the default)
+	 * to the specified stream.
+	 * @param stream the stream to write options to
+	 */
+	protected void printOptionValues(PrintStream stream) {
+		ParseResult parseResult = spec.commandLine().getParseResult();
+		for (OptionSpec option : spec.options()) {
+			String label = parseResult.hasMatchedOption(option)
+					? "(matched)" : "(default)";
+			stream.printf("%s: %s %s%n", option.longestName(), option.getValue(), label);
+		}
 	}
 
 	/**
