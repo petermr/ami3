@@ -24,8 +24,13 @@ import org.contentmine.image.ImageUtil.ThresholdMethod;
 import com.google.common.collect.Multiset;
 
 import nu.xom.Element;
+import picocli.CommandLine;
 import picocli.CommandLine.Command;
+import picocli.CommandLine.Model.CommandSpec;
+import picocli.CommandLine.Model.OptionSpec;
 import picocli.CommandLine.Option;
+import picocli.CommandLine.ParseResult;
+import picocli.CommandLine.Spec;
 
 /** analyses bitmaps
  * 
@@ -311,8 +316,16 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
     	new AMIImageTool().runCommands(args);
     }
 
-    @Override
+	@Spec
+	CommandSpec spec; // injected by picocli
+	@Override
 	protected void parseSpecifics() {
+		ParseResult parseResult = spec.commandLine().getParseResult();
+		for (OptionSpec option : spec.options()) {
+			String label = parseResult.hasMatchedOption(option)
+					? "(matched)" : "(default)";
+			System.out.printf("%s: %s %s%n", option.longestName(), option.getValue(), label);
+		}
     	if (verbosity().length > 0) {
 			System.out.println("minHeight           " + minHeight);
 			System.out.println("minWidth            " + minWidth);
