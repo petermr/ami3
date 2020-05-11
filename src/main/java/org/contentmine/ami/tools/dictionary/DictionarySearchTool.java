@@ -1,6 +1,7 @@
 package org.contentmine.ami.tools.dictionary;
 
 import java.io.File;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -72,7 +73,10 @@ public class DictionarySearchTool extends AbstractAMIDictTool {
 		}
 	}
 
-	public Set<String> getFoundTerms() {
+	public Set<String> getOrCreateFoundTerms() {
+		if (foundTerms == null) {
+			foundTerms = new HashSet<>();
+		}
 		return foundTerms;
 	}
 

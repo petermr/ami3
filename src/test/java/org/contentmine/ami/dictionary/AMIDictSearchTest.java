@@ -96,7 +96,9 @@ public class AMIDictSearchTest extends AbstractAMITest {
 				+ " search"
 				+ " --search thymol carvacrol"
 				+ "";
-		AMIDict.execute(args);
+		DictionarySearchTool dictionarySearchTool = AMIDict.execute(DictionarySearchTool.class, args);
+		Assert.assertTrue("found", dictionarySearchTool.getFoundTerms().contains("thymol"));
+		Assert.assertFalse("found", dictionarySearchTool.getFoundTerms().contains("thymine"));
 	}
 
 	@Test
