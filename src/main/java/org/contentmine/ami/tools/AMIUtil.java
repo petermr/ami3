@@ -1,6 +1,7 @@
 package org.contentmine.ami.tools;
 
 import java.io.File;
+import java.io.PrintStream;
 import java.util.Collection;
 
 import org.apache.log4j.Level;
@@ -21,6 +22,7 @@ public class AMIUtil {
 	}
 	
 	private static int maxValueLength = 200;
+	
 	public final static void printNameValue(String name, Object value) {
 		StringBuilder sb = new StringBuilder();
 		if (value ==  null) {
@@ -35,6 +37,13 @@ public class AMIUtil {
 		}
 		System.out.println((name + "                           ").substring(0,25) + sb.toString());
 	}
+	
+	public static void printHeader(Object obj, PrintStream stream, String type) {
+		stream.println();
+		stream.println(type + " values (" + obj.getClass().getSimpleName() + ")");
+		stream.println("================================");
+	}
+
 
 
 }

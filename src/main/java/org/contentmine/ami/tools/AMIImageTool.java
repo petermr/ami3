@@ -312,26 +312,26 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 	protected void parseSpecifics() {
     	if (verbosity().length > 0) {
 			printOptionValues(System.out);
-			System.out.println("minHeight           " + minHeight);
-			System.out.println("minWidth            " + minWidth);
-			System.out.println("smalldir            " + smallDirname);
-			System.out.println("monochromeDir       " + monochromeDirname);
-			System.out.println("duplicateDir        " + duplicateDirname);
-	
-	    	
-			System.out.println("borders             " + borders);
-			System.out.println("binarize            " + binarize);
-			System.out.println("despeckle           " + despeckle);
-			System.out.println("erodeDilate         " + erodeDilate);
-			System.out.println("maxheight           " + maxHeight);
-			System.out.println("maxwidth            " + maxWidth);
-			System.out.println("posterize           " + posterize);
-			System.out.println("priority            " + priorityImage);
-			System.out.println("rotate              " + rotateAngle);
-			System.out.println("scalefactor         " + scalefactor);
-			System.out.println("sharpen             " + sharpen);
-			System.out.println("template            " + templateFilename);
-			System.out.println("threshold           " + threshold);
+//			System.out.println("minHeight           " + minHeight);
+//			System.out.println("minWidth            " + minWidth);
+//			System.out.println("smalldir            " + smallDirname);
+//			System.out.println("monochromeDir       " + monochromeDirname);
+//			System.out.println("duplicateDir        " + duplicateDirname);
+//	
+//	    	
+//			System.out.println("borders             " + borders);
+//			System.out.println("binarize            " + binarize);
+//			System.out.println("despeckle           " + despeckle);
+//			System.out.println("erodeDilate         " + erodeDilate);
+//			System.out.println("maxheight           " + maxHeight);
+//			System.out.println("maxwidth            " + maxWidth);
+//			System.out.println("posterize           " + posterize);
+//			System.out.println("priority            " + priorityImage);
+//			System.out.println("rotate              " + rotateAngle);
+//			System.out.println("scalefactor         " + scalefactor);
+//			System.out.println("sharpen             " + sharpen);
+//			System.out.println("template            " + templateFilename);
+//			System.out.println("threshold           " + threshold);
     	}
 		System.out.println();
 	}

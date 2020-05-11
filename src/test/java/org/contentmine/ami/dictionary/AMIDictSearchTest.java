@@ -85,8 +85,9 @@ public class AMIDictSearchTest extends AbstractAMITest {
 				+ " --searchfile "+SRC_TEST_DICTIONARY+"/compound_set.txt"
 				+ "";
 		DictionarySearchTool dictionarySearchTool = AMIDict.execute(DictionarySearchTool.class, args);
-		Assert.assertTrue("found", dictionarySearchTool.getFoundTerms().contains("pinocarvone"));
-		Assert.assertFalse("found", dictionarySearchTool.getFoundTerms().contains("Xinocarvone"));
+		Assert.assertEquals("found", 309, dictionarySearchTool.getOrCreateFoundTerms().size());
+		Assert.assertTrue("found", dictionarySearchTool.getOrCreateFoundTerms().contains("pinocarvone"));
+		Assert.assertFalse("found", dictionarySearchTool.getOrCreateFoundTerms().contains("Xinocarvone"));
 	}
 
 	@Test
@@ -94,11 +95,12 @@ public class AMIDictSearchTest extends AbstractAMITest {
 		String args = ""
 				+ "-v --directory "+AMIDict.getDictionaryDirectory()
 				+ " search"
-				+ " --search thymol carvacrol"
+				+ " --search abamectin ampicillin"
 				+ "";
 		DictionarySearchTool dictionarySearchTool = AMIDict.execute(DictionarySearchTool.class, args);
-		Assert.assertTrue("found", dictionarySearchTool.getFoundTerms().contains("thymol"));
-		Assert.assertFalse("found", dictionarySearchTool.getFoundTerms().contains("thymine"));
+		Assert.assertEquals("found", 2, dictionarySearchTool.getOrCreateFoundTerms().size());
+		Assert.assertTrue("found", dictionarySearchTool.getOrCreateFoundTerms().contains("abamectin"));
+		Assert.assertFalse("found", dictionarySearchTool.getOrCreateFoundTerms().contains("ivermectin"));
 	}
 
 	@Test

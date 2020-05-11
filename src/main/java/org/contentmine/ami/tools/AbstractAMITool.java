@@ -219,7 +219,11 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 		// override if you want previous Tools run
 	}
 
-	protected abstract void parseSpecifics();
+	protected void parseSpecifics() {
+    	if (verbosity().length > 0) {
+			printOptionValues(System.out);
+    	}
+	}
 
 	protected abstract void runSpecifics();
 
@@ -240,7 +244,7 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 	}
 
 	/**
-	 * validates the infput formats.
+	 * validates the input formats.
 	 * Currently NOOP
 	 */
 	protected void validateRawFormats() {

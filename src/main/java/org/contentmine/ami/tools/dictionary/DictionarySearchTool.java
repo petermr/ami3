@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
 import org.contentmine.ami.tools.AMIUtil;
 import org.contentmine.ami.tools.AbstractAMIDictTool;
+import org.openqa.selenium.devtools.memory.Memory.GetDOMCountersResponse;
 
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
@@ -49,25 +50,36 @@ public class DictionarySearchTool extends AbstractAMIDictTool {
 	
 	@Override
 	protected void parseSpecifics() {
-		AMIUtil.printNameValue("search", searchTerms);
-		AMIUtil.printNameValue("searchfile", searchTermFilenames);
-		System.out.println();
+		super.parseSpecifics();
+//		AMIUtil.printNameValue("search", searchTerms);
+//		AMIUtil.printNameValue("searchfile", searchTermFilenames);
+//		System.out.println();
 	}
 	
 	@Override
 	public void runSub() {
-		for (String filename : parent.getDictionaryList()) {
-			searchDictionaries(new File(filename));
+		if (parent.getDirectory() != null) {
+			List<File> fileList = collectDictionaryFiles(parent.getDirectory());
+//			System.out.println("files> "+fileList.size());
+			foundTerms = new HashSet<>();
+			for (File file : fileList) {
+				searchDictionaryForTerms(file);
+			}
+		} else {
+			for (String filename : parent.getDictionaryList()) {
+				searchDictionaryForTerms(new File(filename));
+			}
 		}
 	}
 
-	private void searchDictionaries(File file) {
-		DefaultAMIDictionary amiDictionary = file == null ? null : AbstractAMIDictTool.readDictionary(file);
+	private void searchDictionaryForTerms(File dictionaryFile) {
+		DefaultAMIDictionary amiDictionary = dictionaryFile == null ? 
+				null : AbstractAMIDictTool.readDictionary(dictionaryFile);
 		if (amiDictionary != null) {
 			if (searchTerms != null) {
-				foundTerms = amiDictionary.searchDictionaryForTerms(searchTerms);
+				foundTerms.addAll(amiDictionary.searchDictionaryForTerms(searchTerms));
 			} else if (searchTermFilenames != null) {
-				foundTerms = amiDictionary.searchTermsInFiles(searchTermFilenames);	
+				foundTerms.addAll(amiDictionary.searchTermsInFiles(searchTermFilenames));	
 			}
 //			System.out.println("\nfound "+foundTerms.size());
 		}

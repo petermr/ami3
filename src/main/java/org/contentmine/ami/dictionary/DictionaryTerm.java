@@ -62,10 +62,9 @@ public class DictionaryTerm implements Comparable<DictionaryTerm> {
 		}
 		dictionaryTerm.setTerm(term);
 		String name = element.getAttributeValue(NAME);
-		if (name == null) {
-			throw new RuntimeException("Null name "+element.toXML());
-		}
+//		if (name != null) {
 		dictionaryTerm.setName(name);
+//		}
 		dictionaryTerm.setURL(element.getAttributeValue(URL));
 		dictionaryTerm.setWikidata(element.getAttributeValue(WIKIDATA));
 		return dictionaryTerm;

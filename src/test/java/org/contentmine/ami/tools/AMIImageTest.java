@@ -29,6 +29,12 @@ public class AMIImageTest {
 	}
 	
 	@Test
+	public void testParseSpecifics() {
+		String cmd = "-v image --minwidth 20";
+		AMI.execute(cmd);
+	}
+	
+	@Test
 	/** 
 	 */
 	public void testFilterTrees() throws Exception {

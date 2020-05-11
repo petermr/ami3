@@ -129,11 +129,11 @@ public class AMIDict implements Runnable {
 	}
 
 	public String getDictionaryTopname() {
-		return directory;
+		return directory == null ? null : directory.toString();
 	}
 
 	public void setDictionaryTopname(String dictionaryTopname) {
-		this.directory = dictionaryTopname;
+		this.directory = new File(dictionaryTopname);
 	}
 	public List<String> getDictionaryList() {
 		return dictionaryList;
@@ -157,7 +157,7 @@ public class AMIDict implements Runnable {
     		description = "top directory containing dictionary/s. Subdirectories will use structured names (NYI). Thus "
     				+ "dictionary 'animals' is found in '<directory>/animals.xml', while 'plants.parts' is found in "
     				+ "<directory>/plants/parts.xml. Required for relative dictionary names.")
-    String directory = null;
+    File directory = null;
 
 
 
@@ -255,6 +255,10 @@ public class AMIDict implements Runnable {
 	public static File getDictionaryDirectory() {
 		File homeDir = new File(System.getProperty("user.home"));
 		return new File(homeDir, "ContentMine/dictionaries");
+	}
+
+	public File getDirectory() {
+		return directory;
 	}
 
 

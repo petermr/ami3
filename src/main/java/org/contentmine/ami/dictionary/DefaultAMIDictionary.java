@@ -296,8 +296,8 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 				String name = dictionaryTerm.getName();
 				if (name == null) {
 //					throw new RuntimeException("Null name: "+element.toXML());
-					System.err.print(" !0! ");
-					LOG.trace("Null name: "+element.toXML());
+//					System.err.print(" !0! ");
+//					LOG.trace("Null name: "+element.toXML());
 					continue;
 				}
 				namesByTerm.put(dictionaryTerm, name);
