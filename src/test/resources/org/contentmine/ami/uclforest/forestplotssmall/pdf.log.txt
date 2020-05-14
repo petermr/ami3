@@ -1,0 +1,331 @@
+Generic values (AMIPDFTool)
+================================
+basename            null
+cproject            /Users/pm286/workspace/uclforest/forestplotssmall
+ctree               
+cTreeList           [/Users/pm286/workspace/uclforest/forestplotssmall/buzick, /Users/pm286/workspace/uclforest/forestplotssmall/campbell, /Users/pm286/workspace/uclforest/forestplotssmall/case, /Users/pm286/workspace/uclforest/forestplotssmall/cole, /Users/pm286/workspace/uclforest/forestplotssmall/higgins]
+dryrun              false
+excludeTrees        null
+file types          [pdf]
+includeTrees        null
+log4j               
+logfile             null
+verbose             0
+
+Specific values (AMIPDFTool)
+================================
+maxpages            20
+svgDirectoryName    svg/
+outputSVG           true
+imgDirectoryName    pdfimages/
+outputPDFImages     false
+cTree: buzick
+ max pages: 20 0 
+pages include: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+[1]?[2]?[3]??????[4]????????[5][.0]?[6][.0]?[7]?[8]?[9]?[10]?[11]?[12]???????????????????[13]?[14]?0    [main] DEBUG org.contentmine.pdf2svg2.PDFDocumentProcessor  - 
+wrote SVG to: /Users/pm286/workspace/uclforest/forestplotssmall/buzick/svg
+cTree: campbell
+ max pages: 20 0 
+pages include: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+[1][.0][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17][18][19][.0][.1][.2][.3][.4][.5][.6][.7][20]4740 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C4.999 531.276 590.63 825.962 989.373 753.647 
+4741 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C4.03 543.102 579.845 820.156 976.447 746.871 
+4741 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C3.06 554.929 568.906 813.524 963.52 740.096 
+4741 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C2.091 566.755 558.114 807.688 950.594 733.32 
+4741 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C1.121 578.582 547.322 801.859 937.667 726.543 
+4741 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C0.151 590.409 536.531 796.038 924.74 719.768 
+4741 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C-0.817 602.235 525.742 790.223 911.814 712.992 
+4741 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C-1.787 614.062 514.954 784.416 898.887 706.216 
+4741 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C-2.756 625.888 504.168 778.617 885.96 699.441 
+4741 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C-3.726 637.714 493.384 772.825 873.034 692.665 
+4741 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C-4.696 649.541 482.601 767.043 860.107 685.89 
+4741 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C-5.665 661.367 471.821 761.267 847.181 679.113 
+4741 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C-6.635 673.193 461.043 755.501 834.255 672.337 
+4741 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C-7.604 685.021 450.266 749.744 821.328 665.562 
+4742 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C-8.573 696.847 439.652 744.683 808.401 658.786 
+4742 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C-9.543 708.673 428.867 738.878 795.475 652.011 
+4742 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C-10.512 720.5 418.083 733.072 782.548 645.235 
+4742 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C-11.482 732.326 407.299 727.266 769.622 638.459 
+4742 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C-12.451 744.153 396.515 721.461 756.695 631.684 
+4742 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C-13.421 755.979 385.731 715.655 743.768 624.907 
+4742 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C-14.391 767.805 374.946 709.849 730.842 618.131 
+4742 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C-15.36 779.632 364.162 704.044 717.915 611.356 
+4742 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C303.879 718.371 558.605 488.071 746.582 448.533 
+4742 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C167.975 777.924 240.074 734.293 314.141 683.96 C462.777 583.777 616.012 475.922 740.401 449.212 
+4742 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C167.975 777.924 240.074 734.293 314.141 683.96 C462.777 583.777 616.012 475.922 740.401 449.212 
+4742 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C160.488 768.259 232.401 730.097 306.662 681.236 C457.497 581.994 610.186 477.074 734.221 449.891 
+4742 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C160.488 768.259 232.401 730.097 306.662 681.236 C457.497 581.994 610.186 477.074 734.221 449.891 
+4742 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C153.145 758.573 224.836 726.057 299.182 678.514 C452.429 580.514 604.359 478.226 728.04 450.57 
+4742 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C153.145 758.573 224.836 726.057 299.182 678.514 C452.429 580.514 604.359 478.226 728.04 450.57 
+4742 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C145.961 748.894 217.285 722.031 291.703 675.79 C447.385 579.055 598.532 479.377 721.859 451.25 
+4742 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C145.961 748.894 217.285 722.031 291.703 675.79 C447.385 579.055 598.532 479.377 721.859 451.25 
+4742 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C138.941 739.255 209.746 718.02 284.225 673.067 C442.363 577.622 592.706 480.529 715.679 451.929 
+4742 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C138.941 739.255 209.746 718.02 284.225 673.067 C442.363 577.622 592.706 480.529 715.679 451.929 
+4742 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C132.079 729.692 202.217 714.021 276.745 670.343 C437.361 576.212 586.879 481.68 709.497 452.608 
+4743 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C132.079 729.692 202.217 714.021 276.745 670.343 C437.361 576.212 586.879 481.68 709.497 452.608 
+4743 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C124.37 732.467 194.7 710.039 269.266 667.621 C432.381 574.831 581.052 482.833 703.317 453.287 
+4743 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C124.37 732.467 194.7 710.039 269.266 667.621 C432.381 574.831 581.052 482.833 703.317 453.287 
+4743 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C116.469 724.199 187.192 706.07 261.787 664.897 C427.42 573.477 575.226 483.984 697.136 453.966 
+4743 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C116.469 724.199 187.192 706.07 261.787 664.897 C427.42 573.477 575.226 483.984 697.136 453.966 
+4743 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C112.196 701.884 179.693 702.116 254.308 662.174 C422.478 572.153 569.398 485.136 690.955 454.646 
+4743 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C112.196 701.884 179.693 702.116 254.308 662.174 C422.478 572.153 569.398 485.136 690.955 454.646 
+4743 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C105.653 693.018 172.203 698.175 246.829 659.45 C417.555 570.859 563.572 486.287 684.774 455.325 
+4743 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C105.653 693.018 172.203 698.175 246.829 659.45 C417.555 570.859 563.572 486.287 684.774 455.325 
+4743 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C99.057 684.38 164.72 694.25 239.35 656.728 C412.648 569.598 557.746 487.44 678.594 456.005 
+4743 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C99.057 684.38 164.72 694.25 239.35 656.728 C412.648 569.598 557.746 487.44 678.594 456.005 
+4743 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C92.352 675.957 157.243 690.337 231.87 654.004 C407.757 568.37 551.918 488.591 672.413 456.683 
+4743 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C92.352 675.957 157.243 690.337 231.87 654.004 C407.757 568.37 551.918 488.591 672.413 456.683 
+4743 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C85.495 667.724 149.774 686.44 224.392 651.281 C402.882 567.177 546.092 489.742 666.232 457.362 
+4743 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C85.495 667.724 149.774 686.44 224.392 651.281 C402.882 567.177 546.092 489.742 666.232 457.362 
+4743 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C78.453 659.645 142.31 682.556 216.913 648.558 C398.022 566.021 540.266 490.895 660.052 458.042 
+4743 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C78.453 659.645 142.31 682.556 216.913 648.558 C398.022 566.021 540.266 490.895 660.052 458.042 
+4743 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C71.212 651.674 134.849 678.686 209.433 645.834 C393.174 564.901 534.438 492.046 653.87 458.721 
+4743 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C71.212 651.674 134.849 678.686 209.433 645.834 C393.174 564.901 534.438 492.046 653.87 458.721 
+4743 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C63.774 643.767 127.394 674.83 201.954 643.111 C388.339 563.82 528.612 493.198 647.69 459.4 
+4743 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C63.774 643.767 127.394 674.83 201.954 643.111 C388.339 563.82 528.612 493.198 647.69 459.4 
+4744 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C56.152 635.882 119.941 670.987 194.476 640.387 C383.515 562.777 522.785 494.349 641.509 460.079 
+4744 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C56.152 635.882 119.941 670.987 194.476 640.387 C383.515 562.777 522.785 494.349 641.509 460.079 
+4744 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C48.368 627.989 112.491 667.159 186.996 637.665 C378.7 561.775 516.958 495.502 635.328 460.759 
+4744 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C48.368 627.989 112.491 667.159 186.996 637.665 C378.7 561.775 516.958 495.502 635.328 460.759 
+4744 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C40.447 620.06 105.044 663.342 179.517 634.941 C373.894 560.814 511.132 496.653 629.148 461.438 
+4744 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C40.447 620.06 105.044 663.342 179.517 634.941 C373.894 560.814 511.132 496.653 629.148 461.438 
+4744 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C32.415 612.081 97.647 659.675 172.037 632.218 C369.228 560.256 505.305 497.805 622.966 462.117 
+4744 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C32.415 612.081 97.647 659.675 172.037 632.218 C369.228 560.256 505.305 497.805 622.966 462.117 
+4749 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C29.437 265.038 616.832 608.34 999.707 544.012 
+4749 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C28.525 276.156 606.695 602.882 987.555 537.641 
+4749 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C16.678 420.675 474.738 531.127 829.594 454.843 
+4749 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C15.767 431.792 464.604 525.697 817.442 448.473 
+4749 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C14.855 442.908 454.472 520.278 805.292 442.104 
+4749 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C13.943 454.026 444.342 514.865 793.14 435.734 
+4750 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C13.032 465.142 434.365 510.108 780.989 429.365 
+4750 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C12.121 476.259 424.227 504.651 768.838 422.996 
+4750 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C11.21 487.376 414.09 499.194 756.687 416.627 
+4750 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C10.298 498.494 403.954 493.737 744.537 410.259 
+4750 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C9.388 509.61 393.817 488.28 732.386 403.889 
+4750 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C8.476 520.727 383.68 482.822 720.235 397.519 
+4750 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C7.564 531.844 373.542 477.365 708.084 391.15 
+4750 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C6.653 542.96 363.405 471.908 695.933 384.781 
+4750 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C306.739 485.375 546.182 268.893 722.88 231.727 
+4750 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C178.958 541.37 246.696 500.386 316.284 453.098 C456.049 358.902 600.138 257.469 717.098 232.357 
+4750 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C178.958 541.37 246.696 500.386 316.284 453.098 C456.049 358.902 600.138 257.469 717.098 232.357 
+4750 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C171.923 532.282 239.486 496.439 309.258 450.535 C451.102 357.215 594.683 258.542 711.315 232.986 
+4750 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C171.923 532.282 239.486 496.439 309.258 450.535 C451.102 357.215 594.683 258.542 711.315 232.986 
+4750 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C165.023 523.178 232.38 492.64 302.234 447.973 C446.358 355.816 589.229 259.616 705.534 233.617 
+4750 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C165.023 523.178 232.38 492.64 302.234 447.973 C446.358 355.816 589.229 259.616 705.534 233.617 
+4750 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C158.27 514.079 225.284 488.853 295.208 445.409 C441.635 354.436 583.774 260.689 699.751 234.247 
+4750 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C158.27 514.079 225.284 488.853 295.208 445.409 C441.635 354.436 583.774 260.689 699.751 234.247 
+4750 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C151.673 505.016 218.2 485.079 288.183 442.846 C436.933 353.079 578.32 261.762 693.97 234.877 
+4750 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C151.673 505.016 218.2 485.079 288.183 442.846 C436.933 353.079 578.32 261.762 693.97 234.877 
+4750 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C145.226 496.025 211.127 481.319 281.158 440.282 C432.251 351.745 572.867 262.833 688.188 235.507 
+4750 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C145.226 496.025 211.127 481.319 281.158 440.282 C432.251 351.745 572.867 262.833 688.188 235.507 
+4750 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C137.977 498.641 204.063 477.572 274.132 437.719 C427.589 350.437 567.412 263.906 682.406 236.136 
+4751 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C137.977 498.641 204.063 477.572 274.132 437.719 C427.589 350.437 567.412 263.906 682.406 236.136 
+4751 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C130.551 490.869 197.01 473.839 267.107 435.155 C422.945 349.156 561.958 264.979 676.624 236.766 
+4751 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C130.551 490.869 197.01 473.839 267.107 435.155 C422.945 349.156 561.958 264.979 676.624 236.766 
+4751 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C126.541 469.881 189.963 470.119 260.082 432.592 C418.318 347.902 556.502 266.052 670.841 237.396 
+4751 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C126.541 469.881 189.963 470.119 260.082 432.592 C418.318 347.902 556.502 266.052 670.841 237.396 
+4751 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C120.393 461.548 182.926 466.414 253.056 430.029 C413.71 346.679 551.048 267.126 665.059 238.026 
+4751 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C120.393 461.548 182.926 466.414 253.056 430.029 C413.71 346.679 551.048 267.126 665.059 238.026 
+4751 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C114.195 453.426 175.895 462.721 246.032 427.465 C409.117 345.485 545.595 268.198 659.278 238.656 
+4751 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C114.195 453.426 175.895 462.721 246.032 427.465 C409.117 345.485 545.595 268.198 659.278 238.656 
+4751 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C107.894 445.509 168.871 459.042 239.005 424.901 C404.539 344.324 540.14 269.27 653.495 239.286 
+4751 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C107.894 445.509 168.871 459.042 239.005 424.901 C404.539 344.324 540.14 269.27 653.495 239.286 
+4751 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C101.449 437.77 161.853 455.375 231.98 422.338 C399.976 343.194 534.686 270.343 647.713 239.915 
+4751 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C101.449 437.77 161.853 455.375 231.98 422.338 C399.976 343.194 534.686 270.343 647.713 239.915 
+4751 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C94.831 430.174 154.839 451.723 224.955 419.775 C395.427 342.098 529.231 271.416 641.93 240.545 
+4751 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C94.831 430.174 154.839 451.723 224.955 419.775 C395.427 342.098 529.231 271.416 641.93 240.545 
+4751 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C88.026 422.681 147.831 448.084 217.929 417.211 C390.889 341.038 523.777 272.489 636.15 241.175 
+4751 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C88.026 422.681 147.831 448.084 217.929 417.211 C390.889 341.038 523.777 272.489 636.15 241.175 
+4751 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C81.035 415.249 140.826 444.457 210.905 414.649 C386.364 340.015 518.323 273.563 630.368 241.806 
+4751 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C81.035 415.249 140.826 444.457 210.905 414.649 C386.364 340.015 518.323 273.563 630.368 241.806 
+4751 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C73.872 407.837 133.824 440.843 203.878 412.085 C381.849 339.028 512.869 274.634 624.585 242.436 
+4751 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C73.872 407.837 133.824 440.843 203.878 412.085 C381.849 339.028 512.869 274.634 624.585 242.436 
+4751 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C66.556 400.417 126.825 437.241 196.854 409.522 C377.343 338.079 507.415 275.707 618.803 243.065 
+4751 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C66.556 400.417 126.825 437.241 196.854 409.522 C377.343 338.079 507.415 275.707 618.803 243.065 
+4751 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C59.112 392.964 119.828 433.652 189.828 406.958 C372.846 337.167 501.961 276.78 613.022 243.695 
+4751 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C59.112 392.964 119.828 433.652 189.828 406.958 C372.846 337.167 501.961 276.78 613.022 243.695 
+4752 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C51.562 385.463 112.877 430.203 182.803 404.395 C368.48 336.637 496.506 277.853 607.239 244.325 
+4752 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C51.562 385.463 112.877 430.203 182.803 404.395 C368.48 336.637 496.506 277.853 607.239 244.325 
+4935 [main] DEBUG org.contentmine.pdf2svg2.PDFDocumentProcessor  - 
+wrote SVG to: /Users/pm286/workspace/uclforest/forestplotssmall/campbell/svg
+ 20 
+pages include: [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]
+[21][22][23][24][25][26][27][28][29][30][31][32][33][34][35][.0][36][37][38][39][40]8036 [main] DEBUG org.contentmine.pdf2svg2.PDFDocumentProcessor  - 
+wrote SVG to: /Users/pm286/workspace/uclforest/forestplotssmall/campbell/svg
+ 40 
+pages include: [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59]
+[41][.0][.1][.2][.3][.4][42][.0][.1][.2][.3][.4][43][.0][.1][.2][.3][44][.0][.1][.2][.3][.4][45][46][47][48][49][50][51][52][53][54][55][56][57][58][59][60]11315 [main] DEBUG org.contentmine.pdf2svg2.PDFDocumentProcessor  - 
+wrote SVG to: /Users/pm286/workspace/uclforest/forestplotssmall/campbell/svg
+ 60 
+pages include: [60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79]
+[61][62][63][64][65][66][67][68][69][70][71][72][.0][73][74][75][76][77][78][79][80]13566 [main] DEBUG org.contentmine.pdf2svg2.PDFDocumentProcessor  - 
+wrote SVG to: /Users/pm286/workspace/uclforest/forestplotssmall/campbell/svg
+ 80 
+pages include: [80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]
+[81][82][83][84][85][86][87][88][89][90][91][92][93][.0][94][95][96][97][98][99][100]15283 [main] DEBUG org.contentmine.pdf2svg2.PDFDocumentProcessor  - 
+wrote SVG to: /Users/pm286/workspace/uclforest/forestplotssmall/campbell/svg
+ 100 
+pages include: [100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119]
+[101][102][103][104][105][106][107][108][109][110][111][112][113][114][115][116][117][118][119][120]17016 [main] DEBUG org.contentmine.pdf2svg2.PDFDocumentProcessor  - 
+wrote SVG to: /Users/pm286/workspace/uclforest/forestplotssmall/campbell/svg
+ 120 
+pages include: [120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139]
+[121][122][123][124][125][126][127][128][129][130][131][132][133][134][135][136][137][138][139][140]18733 [main] DEBUG org.contentmine.pdf2svg2.PDFDocumentProcessor  - 
+wrote SVG to: /Users/pm286/workspace/uclforest/forestplotssmall/campbell/svg
+ 140 
+pages include: [140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159]
+[141][142][143][144][.0][145][.0][.1][146][.0][147]20336 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C30.456 360.39 579.761 738.77 917.299 688.468 
+20336 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C29.678 369.89 571.099 734.105 906.915 683.025 
+20336 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C28.899 379.391 562.434 729.441 896.53 677.581 
+20336 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C28.12 388.892 553.771 724.778 886.146 672.139 
+20336 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C27.341 398.392 545.109 720.114 875.761 666.696 
+20336 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C26.562 407.893 536.445 715.449 865.377 661.252 
+20336 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C25.784 417.395 527.781 710.785 854.992 655.81 
+20336 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C25.004 426.895 519.118 706.121 844.607 650.365 
+20336 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C24.226 436.395 510.454 701.457 834.223 644.922 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C23.447 445.896 501.792 696.794 823.839 639.479 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C22.668 455.397 493.128 692.13 813.454 634.036 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C21.889 464.897 484.464 687.465 803.07 628.593 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C21.11 474.398 475.676 682.138 792.685 623.15 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C20.332 483.898 467.007 677.449 782.302 617.707 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C19.553 493.4 458.338 672.767 771.917 612.262 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C18.773 502.901 449.669 668.091 761.532 606.82 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C17.995 512.401 441.001 663.419 751.148 601.377 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C17.216 521.901 432.335 658.754 740.764 595.933 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C16.438 531.403 423.671 654.096 730.379 590.491 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C15.658 540.903 415.007 649.443 719.995 585.047 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C14.879 550.403 406.345 644.797 709.61 579.604 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C14.101 559.904 397.684 640.158 699.226 574.16 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C13.322 569.405 389.026 635.526 688.842 568.717 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C12.542 578.906 380.368 630.9 678.457 563.274 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C11.764 588.406 371.841 626.835 668.072 557.831 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C10.985 597.907 363.177 622.171 657.688 552.388 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C10.207 607.407 354.515 617.507 647.304 546.944 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C9.427 616.908 345.851 612.843 636.92 541.502 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C8.649 626.409 337.188 608.18 626.535 536.058 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C7.87 635.909 328.526 603.515 616.151 530.614 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C7.091 645.41 319.861 598.852 605.767 525.171 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C6.312 654.911 311.198 594.188 595.382 519.728 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C262.77 605.697 467.402 420.688 618.411 388.926 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C153.593 653.539 211.513 618.489 271.014 578.054 C390.419 497.573 513.519 410.929 613.445 389.472 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C153.593 653.539 211.513 618.489 271.014 578.054 C390.419 497.573 513.519 410.929 613.445 389.472 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C147.578 645.774 205.348 615.117 265.005 575.865 C386.177 496.14 508.838 411.853 608.48 390.017 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C147.578 645.774 205.348 615.117 265.005 575.865 C386.177 496.14 508.838 411.853 608.48 390.017 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C141.68 637.993 199.272 611.872 258.998 573.679 C382.107 494.951 504.158 412.779 603.516 390.562 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C141.68 637.993 199.272 611.872 258.998 573.679 C382.107 494.951 504.158 412.779 603.516 390.562 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C135.909 630.218 193.206 608.638 252.989 571.491 C378.054 493.78 499.477 413.705 598.55 391.108 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C135.909 630.218 193.206 608.638 252.989 571.491 C378.054 493.78 499.477 413.705 598.55 391.108 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C130.269 622.475 187.149 605.416 246.981 569.303 C374.02 492.628 494.796 414.63 593.585 391.654 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C130.269 622.475 187.149 605.416 246.981 569.303 C374.02 492.628 494.796 414.63 593.585 391.654 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C124.757 614.792 181.101 602.203 240.972 567.114 C370.002 491.496 490.115 415.554 588.619 392.2 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C124.757 614.792 181.101 602.203 240.972 567.114 C370.002 491.496 490.115 415.554 588.619 392.2 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C118.563 617.021 175.062 599.004 234.964 564.927 C366.001 490.386 485.434 416.48 583.654 392.745 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C118.563 617.021 175.062 599.004 234.964 564.927 C366.001 490.386 485.434 416.48 583.654 392.745 
+20337 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C112.216 610.379 169.03 595.816 228.955 562.74 C362.015 489.299 480.753 417.405 578.688 393.291 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C112.216 610.379 169.03 595.816 228.955 562.74 C362.015 489.299 480.753 417.405 578.688 393.291 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C108.784 592.453 163.007 592.639 222.948 560.552 C358.046 488.235 476.073 418.33 573.724 393.837 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C108.784 592.453 163.007 592.639 222.948 560.552 C358.046 488.235 476.073 418.33 573.724 393.837 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C103.528 585.331 156.99 589.474 216.94 558.364 C354.091 487.196 471.392 419.256 568.758 394.383 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C103.528 585.331 156.99 589.474 216.94 558.364 C354.091 487.196 471.392 419.256 568.758 394.383 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C98.228 578.39 150.978 586.319 210.931 556.176 C350.148 486.182 466.711 420.181 563.793 394.928 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C98.228 578.39 150.978 586.319 210.931 556.176 C350.148 486.182 466.711 420.181 563.793 394.928 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C92.842 571.624 144.972 583.177 204.923 553.989 C346.22 485.196 462.03 421.106 558.828 395.473 C709.819 355.607 856.141 436.291 999.44 521.273 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C92.842 571.624 144.972 583.177 204.923 553.989 C346.22 485.196 462.03 421.106 558.828 395.473 C709.819 355.607 856.141 436.291 999.44 521.273 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C92.842 571.624 144.972 583.177 204.923 553.989 C346.22 485.196 462.03 421.106 558.828 395.473 C709.819 355.607 856.141 436.291 999.44 521.273 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C87.333 565.011 138.971 580.046 198.915 551.801 C342.303 484.238 457.349 422.031 553.862 396.019 C704.176 355.62 846.569 427.42 997.66 512.459 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C87.333 565.011 138.971 580.046 198.915 551.801 C342.303 484.238 457.349 422.031 553.862 396.019 C704.176 355.62 846.569 427.42 997.66 512.459 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C87.333 565.011 138.971 580.046 198.915 551.801 C342.303 484.238 457.349 422.031 553.862 396.019 C704.176 355.62 846.569 427.42 997.66 512.459 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C81.676 558.521 132.975 576.926 192.906 549.614 C338.398 483.309 452.668 422.957 548.897 396.565 C698.534 355.633 836.998 418.549 995.879 503.645 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C81.676 558.521 132.975 576.926 192.906 549.614 C338.398 483.309 452.668 422.957 548.897 396.565 C698.534 355.633 836.998 418.549 995.879 503.645 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C81.676 558.521 132.975 576.926 192.906 549.614 C338.398 483.309 452.668 422.957 548.897 396.565 C698.534 355.633 836.998 418.549 995.879 503.645 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C75.859 552.118 126.981 573.818 186.898 547.426 C334.505 482.41 447.987 423.882 543.932 397.111 C692.892 355.645 827.428 409.677 994.1 494.831 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C75.859 552.118 126.981 573.818 186.898 547.426 C334.505 482.41 447.987 423.882 543.932 397.111 C692.892 355.645 827.428 409.677 994.1 494.831 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C75.859 552.118 126.981 573.818 186.898 547.426 C334.505 482.41 447.987 423.882 543.932 397.111 C692.892 355.645 827.428 409.677 994.1 494.831 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C69.885 545.765 120.993 570.719 180.89 545.238 C330.62 481.54 443.307 424.807 538.967 397.655 C687.248 355.658 817.856 400.805 992.32 486.016 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C69.885 545.765 120.993 570.719 180.89 545.238 C330.62 481.54 443.307 424.807 538.967 397.655 C687.248 355.658 817.856 400.805 992.32 486.016 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C69.885 545.765 120.993 570.719 180.89 545.238 C330.62 481.54 443.307 424.807 538.967 397.655 C687.248 355.658 817.856 400.805 992.32 486.016 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C63.762 539.431 115.006 567.632 174.882 543.05 C326.745 480.703 438.627 425.732 534.001 398.202 C681.606 355.67 808.285 391.934 990.539 477.203 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C63.762 539.431 115.006 567.632 174.882 543.05 C326.745 480.703 438.627 425.732 534.001 398.202 C681.606 355.67 808.285 391.934 990.539 477.203 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C63.762 539.431 115.006 567.632 174.882 543.05 C326.745 480.703 438.627 425.732 534.001 398.202 C681.606 355.67 808.285 391.934 990.539 477.203 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C57.508 533.09 109.021 564.557 168.874 540.863 C322.877 479.898 433.945 426.658 529.036 398.748 C675.963 355.683 798.714 383.062 988.758 468.388 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C57.508 533.09 109.021 564.557 168.874 540.863 C322.877 479.898 433.945 426.658 529.036 398.748 C675.963 355.683 798.714 383.062 988.758 468.388 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C57.508 533.09 109.021 564.557 168.874 540.863 C322.877 479.898 433.945 426.658 529.036 398.748 C675.963 355.683 798.714 383.062 988.758 468.388 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C51.144 526.721 103.038 561.491 162.865 538.675 C319.016 479.126 429.264 427.583 524.071 399.294 C670.32 355.696 789.143 374.191 986.979 459.575 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C51.144 526.721 103.038 561.491 162.865 538.675 C319.016 479.126 429.264 427.583 524.071 399.294 C670.32 355.696 789.143 374.191 986.979 459.575 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C51.144 526.721 103.038 561.491 162.865 538.675 C319.016 479.126 429.264 427.583 524.071 399.294 C670.32 355.696 789.143 374.191 986.979 459.575 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C44.692 520.31 97.096 558.544 156.856 536.487 C315.268 478.677 424.584 428.507 519.105 399.838 C664.678 355.707 779.571 365.318 985.198 450.76 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C44.692 520.31 97.096 558.544 156.856 536.487 C315.268 478.677 424.584 428.507 519.105 399.838 C664.678 355.707 779.571 365.318 985.198 450.76 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C44.692 520.31 97.096 558.544 156.856 536.487 C315.268 478.677 424.584 428.507 519.105 399.838 C664.678 355.707 779.571 365.318 985.198 450.76 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C558.032 390.632 631.195 300.841 983.417 441.945 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C556.656 397.091 634.009 304.505 986.231 445.611 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C555.278 403.548 636.822 308.17 989.045 449.277 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C553.901 410.007 639.635 311.836 991.858 452.943 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C552.524 416.464 642.448 315.502 994.672 456.608 
+20338 [main] ERROR org.contentmine.graphics.svg.path.SVGPathParser  - M/m or absolute must be first in path; found C in C551.147 422.922 645.261 319.167 997.485 460.272 
+20339 [main] DEBUG org.contentmine.pdf2svg2.PDFDocumentProcessor  - 
+wrote SVG to: /Users/pm286/workspace/uclforest/forestplotssmall/campbell/svg
+cTree: case
+ max pages: 20 0 
+pages include: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+[1][.0][.1][.2][.3][.4][.5][.6][2][.0][3][4][5][6][.0][.1][.2][.3][.4][.5][.6][7][.0][.1][.2][.3][.4][.5][.6][.7][.8][.9][.10][8][9][10][.0][.1][.2][11][.0][12][13][14][15][.0][16][.0][.1][17][18][19][.0][20]23001 [main] DEBUG org.contentmine.pdf2svg2.PDFDocumentProcessor  - 
+wrote SVG to: /Users/pm286/workspace/uclforest/forestplotssmall/case/svg
+ 20 
+pages include: [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]
+[21][.0][22][.0][23][.0][24][.0][25][.0][.1][.2][.3][.4][.5][26][27][28][29][30][31][32][.0][.1][.2][.3][.4][.5][.6][.7][.8][.9][.10][.11][.12][.13][.14][.15][.16][33][.0][34][35][.0][.1][.2][36][.0][.1][.2][.3][.4][.5][.6][.7][.8][37][38][39][40]25469 [main] DEBUG org.contentmine.pdf2svg2.PDFDocumentProcessor  - 
+wrote SVG to: /Users/pm286/workspace/uclforest/forestplotssmall/case/svg
+ 40 
+pages include: [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59]
+[41][42][43][44][45][46][47][48][49][50][51][52][53][54][55][56][57][.0][.1][.2][58][59][60]27603 [main] DEBUG org.contentmine.pdf2svg2.PDFDocumentProcessor  - 
+wrote SVG to: /Users/pm286/workspace/uclforest/forestplotssmall/case/svg
+ 60 
+pages include: [60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79]
+[61][62][63][64][65][66][67][68]28523 [main] DEBUG org.contentmine.pdf2svg2.PDFDocumentProcessor  - 
+wrote SVG to: /Users/pm286/workspace/uclforest/forestplotssmall/case/svg
+cTree: cole
+ max pages: 20 0 
+pages include: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+[1][2][3][4][5][6][7][8][9][10][11][12][13][14][.0][.1][15][.0][16][17][18][19][20]31272 [main] DEBUG org.contentmine.pdf2svg2.PDFDocumentProcessor  - 
+wrote SVG to: /Users/pm286/workspace/uclforest/forestplotssmall/cole/svg
+ 20 
+pages include: [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]
+[21][22][23][24][25]32052 [main] DEBUG org.contentmine.pdf2svg2.PDFDocumentProcessor  - 
+wrote SVG to: /Users/pm286/workspace/uclforest/forestplotssmall/cole/svg
+cTree: higgins
+ max pages: 20 0 
+pages include: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+[1][.0][.1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17][18][19][20]34263 [main] DEBUG org.contentmine.pdf2svg2.PDFDocumentProcessor  - 
+wrote SVG to: /Users/pm286/workspace/uclforest/forestplotssmall/higgins/svg
+ 20 
+pages include: [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]
+[21][22][23][24][25][.0][26][27][28][29][30][31][32][33][.0][34][35][.0][36][.0][37][.0][.1][.2][.3][38][.0][39][40]36345 [main] DEBUG org.contentmine.pdf2svg2.PDFDocumentProcessor  - 
+wrote SVG to: /Users/pm286/workspace/uclforest/forestplotssmall/higgins/svg
+ 40 
+pages include: [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59]
+[41][42][43][44][45][46][47][48][49][50][51][52][53][54][55][56]38538 [main] WARN  org.contentmine.pdf2svg2.PageParser  - Rotated page: 90
+38633 [main] ERROR org.contentmine.graphics.svg.SVGText  - BUG in SVGText delete
+[57]39293 [main] WARN  org.contentmine.pdf2svg2.PageParser  - Rotated page: 90
+39336 [main] ERROR org.contentmine.graphics.svg.SVGText  - BUG in SVGText delete
+39339 [main] ERROR org.contentmine.graphics.svg.SVGText  - BUG in SVGText delete
+39343 [main] ERROR org.contentmine.graphics.svg.SVGText  - BUG in SVGText delete
+39346 [main] ERROR org.contentmine.graphics.svg.SVGText  - BUG in SVGText delete
+39347 [main] ERROR org.contentmine.graphics.svg.SVGText  - BUG in SVGText delete
+39347 [main] ERROR org.contentmine.graphics.svg.SVGText  - BUG in SVGText delete
+[58][59][60]40192 [main] WARN  org.contentmine.pdf2svg2.PageParser  - Rotated page: 90
+41002 [main] DEBUG org.contentmine.pdf2svg2.PDFDocumentProcessor  - 
+wrote SVG to: /Users/pm286/workspace/uclforest/forestplotssmall/higgins/svg
+ 60 
+pages include: [60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79]
+[61]41769 [main] WARN  org.contentmine.pdf2svg2.PageParser  - Rotated page: 90
+[62]42742 [main] WARN  org.contentmine.pdf2svg2.PageParser  - Rotated page: 90
+[63]43673 [main] WARN  org.contentmine.pdf2svg2.PageParser  - Rotated page: 90
+[64]44560 [main] WARN  org.contentmine.pdf2svg2.PageParser  - Rotated page: 90
+[65]45234 [main] WARN  org.contentmine.pdf2svg2.PageParser  - Rotated page: 90
+[66]46137 [main] WARN  org.contentmine.pdf2svg2.PageParser  - Rotated page: 90
+[67]47089 [main] WARN  org.contentmine.pdf2svg2.PageParser  - Rotated page: 90
+[68]48079 [main] WARN  org.contentmine.pdf2svg2.PageParser  - Rotated page: 90
+[69]48918 [main] WARN  org.contentmine.pdf2svg2.PageParser  - Rotated page: 90
+[70]49794 [main] WARN  org.contentmine.pdf2svg2.PageParser  - Rotated page: 90
+[71]50422 [main] WARN  org.contentmine.pdf2svg2.PageParser  - Rotated page: 90
+[72]51416 [main] WARN  org.contentmine.pdf2svg2.PageParser  - Rotated page: 90
+[73]52603 [main] WARN  org.contentmine.pdf2svg2.PageParser  - Rotated page: 90
+55498 [main] DEBUG org.contentmine.pdf2svg2.PDFDocumentProcessor  - 
+wrote SVG to: /Users/pm286/workspace/uclforest/forestplotssmall/higgins/svg

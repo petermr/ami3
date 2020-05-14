@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="1412.0" width="1316.45" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <g class="textLine">
+   <text x="0.0" y="21.0" class="text" style="fill:red;font-size:23.076923076923077px;opacity:0.553;">(P</text>
+   <text x="176.0" y="20.0" class="text" style="font-size:12.0px;">Non-needle</text>
+   <text x="264.0" y="18.5" class="text" style="font-size:11.538461538461538px;">acupoint</text>
+   <text x="332.0" y="21.0" class="text" style="font-size:13.0px;">stimulation</text>
+   <text x="458.0" y="20.0" class="text" style="font-size:12.0px;">Control</text>
+   <text x="653.0" y="21.0" class="text" style="font-size:13.0px;">Risk</text>
+   <text x="690.0" y="20.0" class="text" style="font-size:12.0px;">Ratio</text>
+   <text x="1018.0" y="21.0" class="text" style="font-size:13.0px;">Risk</text>
+   <text x="1055.0" y="20.0" class="text" style="font-size:12.0px;">Ratio</text>
+  </g>
+  <g class="textLine">
+   <text x="12.0" y="39.5" class="text" style="font-size:11.538461538461538px;">Study</text>
+   <text x="58.0" y="41.0" class="text" style="font-size:11.700000000000001px;">or</text>
+   <text x="77.0" y="39.5" class="text" style="font-size:11.538461538461538px;">Subgroup</text>
+   <text x="245.0" y="41.0" class="text" style="font-size:12.0px;">Events</text>
+   <text x="391.0" y="41.0" class="text" style="font-size:12.0px;">Total_Events</text>
+   <text x="504.0" y="41.0" class="text" style="fill:red;font-size:12.0px;opacity:0.294;">Total</text>
+   <text x="554.0" y="38.8" class="text" style="fill:red;font-size:10.769230769230768px;opacity:0.294;">Weight</text>
+   <text x="619.0" y="41.0" class="text" style="font-size:11.0px;">_M-H,</text>
+   <text x="656.0" y="41.0" class="text" style="font-size:12.0px;">Random,</text>
+   <text x="726.0" y="41.0" class="text" style="font-size:15.600000000000001px;">95%</text>
+   <text x="760.0" y="41.0" class="text" style="font-size:11.0px;">Cl</text>
+   <text x="977.0" y="41.0" class="text" style="fill:red;font-size:11.0px;opacity:0.266;">M.-H,</text>
+   <text x="1014.0" y="41.0" class="text" style="font-size:12.0px;">Random,</text>
+   <text x="1084.0" y="41.0" class="text" style="font-size:15.600000000000001px;">95%</text>
+   <text x="1118.0" y="41.0" class="text" style="font-size:12.0px;">Cl</text>
+  </g>
+  <g class="textLine">
+   <text x="13.0" y="64.0" class="text" style="font-size:12.0px;">Gu</text>
+   <text x="38.0" y="64.0" class="text" style="font-size:15.600000000000001px;">2009</text>
+   <text x="287.0" y="64.0" class="text" style="font-size:15.600000000000001px;">2</text>
+   <text x="410.0" y="64.0" class="text" style="font-size:15.600000000000001px;">29</text>
+   <text x="482.0" y="64.0" class="text" style="font-size:15.600000000000001px;">8</text>
+   <text x="523.0" y="64.0" class="text" style="fill:red;font-size:15.600000000000001px;opacity:0.301;">30</text>
+   <text x="562.0" y="64.0" class="text" style="font-size:15.600000000000001px;">26.3%</text>
+   <text x="661.0" y="64.0" class="text" style="font-size:15.600000000000001px;">0.26</text>
+   <text x="696.0" y="62.5" class="text" style="fill:red;font-size:11.538461538461538px;opacity:0.161;">(0.06,</text>
+   <text x="740.0" y="62.5" class="text" style="font-size:11.538461538461538px;">1.12]</text>
+  </g>
+  <g class="textLine">
+   <text x="12.0" y="85.0" class="text" style="font-size:12.0px;">Kim</text>
+   <text x="46.0" y="85.0" class="text" style="font-size:15.600000000000001px;">2004</text>
+   <text x="287.0" y="85.0" class="text" style="font-size:15.600000000000001px;">6</text>
+   <text x="410.0" y="85.0" class="text" style="font-size:15.600000000000001px;">33</text>
+   <text x="482.0" y="85.0" class="text" style="font-size:15.600000000000001px;">9</text>
+   <text x="523.0" y="85.0" class="text" style="font-size:15.600000000000001px;">33°</text>
+   <text x="561.0" y="81.4" class="text" style="fill:red;font-size:9.23076923076923px;opacity:0.322;">(67.4%</text>
+   <text x="661.0" y="85.0" class="text" style="font-size:15.600000000000001px;">0.67</text>
+   <text x="683.0" y="83.2" class="text" style="font-size:12.307692307692307px;">(0.27,</text>
+   <text x="732.0" y="83.5" class="text" style="font-size:11.538461538461538px;">1.66]</text>
+  </g>
+  <g class="textLine">
+   <text x="11.0" y="106.0" class="text" style="font-size:13.0px;">Zhou</text>
+   <text x="53.0" y="106.0" class="text" style="font-size:16.900000000000002px;">2017</text>
+   <text x="287.0" y="106.0" class="text" style="fill:red;font-size:16.900000000000002px;opacity:0.0;">o</text>
+   <text x="410.0" y="106.0" class="text" style="font-size:16.900000000000002px;">30</text>
+   <text x="483.0" y="106.0" class="text" style="font-size:16.900000000000002px;">2</text>
+   <text x="523.0" y="106.0" class="text" style="font-size:16.900000000000002px;">30</text>
+   <text x="570.0" y="106.0" class="text" style="font-size:16.900000000000002px;">6.3%</text>
+   <text x="661.0" y="106.0" class="text" style="font-size:16.900000000000002px;">0.20</text>
+   <text x="683.0" y="104.2" class="text" style="font-size:12.307692307692307px;">(0.01,</text>
+   <text x="732.0" y="109.0" class="text" style="font-size:20.8px;">4.00}</text>
+  </g>
+  <g class="textLine">
+   <text x="11.0" y="147.0" class="text" style="font-size:13.0px;">Total</text>
+   <text x="52.0" y="144.5" class="text" style="font-size:11.538461538461538px;">(95%</text>
+   <text x="92.0" y="144.5" class="text" style="font-size:11.538461538461538px;">Cl)</text>
+   <text x="409.0" y="147.0" class="text" style="font-size:16.900000000000002px;">92</text>
+   <text x="522.0" y="147.0" class="text" style="font-size:16.900000000000002px;">93</text>
+   <text x="555.0" y="147.0" class="text" style="font-size:16.900000000000002px;">100.0%</text>
+   <text x="657.0" y="147.0" class="text" style="font-size:16.900000000000002px;">0.48</text>
+   <text x="680.0" y="144.5" class="text" style="font-size:11.538461538461538px;">[0.23,</text>
+   <text x="739.0" y="144.5" class="text" style="font-size:11.538461538461538px;">1.02]</text>
+  </g>
+  <g class="textLine">
+   <text x="11.0" y="169.0" class="text" style="font-size:13.0px;">Total</text>
+   <text x="52.0" y="169.0" class="text" style="font-size:12.0px;">events</text>
+   <text x="287.0" y="169.0" class="text" style="font-size:16.900000000000002px;">8</text>
+   <text x="473.0" y="169.0" class="text" style="font-size:16.900000000000002px;">19</text>
+  </g>
+  <g class="textLine">
+   <text x="296.0" y="190.0" class="text" style="font-size:12.0px;">df=</text>
+   <text x="326.0" y="190.0" class="text" style="font-size:15.600000000000001px;">2</text>
+   <text x="340.0" y="187.8" class="text" style="font-size:10.769230769230768px;">(P</text>
+   <text x="358.0" y="187.0" class="text" style="font-size:6.500000000000001px;">=</text>
+   <text x="372.0" y="187.5" class="text" style="font-size:11.538461538461538px;">0.46);</text>
+   <text x="417.0" y="190.0" class="text" style="font-size:12.0px;">P=</text>
+   <text x="443.0" y="190.0" class="text" style="font-size:15.600000000000001px;">0%</text>
+  </g>
+  <g class="textLine">
+   <text x="52.0" y="199.0" class="text" style="fill:red;font-size:23.076923076923077px;opacity:0.0;">pusely</text>
+   <text x="113.0" y="198.0" class="text" style="fill:red;font-size:23.076923076923077px;opacity:0.0;">please</text>
+   <text x="257.0" y="199.0" class="text" style="fill:red;font-size:23.076923076923077px;opacity:0.091;">ys</text>
+   <text x="787.0" y="201.0" class="text" style="fill:red;font-size:27.0px;opacity:0.252;">ot</text>
+   <text x="912.0" y="201.0" class="text" style="fill:red;font-size:35.1px;opacity:0.28700000000000003;">07</text>
+   <text x="1052.0" y="200.0" class="text" style="font-size:15.600000000000001px;">7</text>
+   <text x="1182.0" y="200.0" class="text" style="font-size:15.600000000000001px;">70</text>
+   <text x="1298.0" y="201.0" class="text" style="font-size:16.900000000000002px;">700</text>
+  </g>
+  <g class="textLine">
+   <text x="11.0" y="208.0" class="text" style="fill:red;font-size:30.0px;opacity:0.126;">Madea</text>
+   <text x="52.0" y="211.0" class="text" style="font-size:10.0px;">for</text>
+   <text x="70.0" y="211.0" class="text" style="font-size:10.0px;">overall</text>
+   <text x="148.0" y="211.0" class="text" style="font-size:10.0px;">effect:</text>
+   <text x="207.0" y="207.0" class="text" style="fill:red;font-size:30.0px;opacity:0.161;">rial</text>
+   <text x="271.0" y="209.2" class="text" style="font-size:12.307692307692307px;">0.06)</text>
+  </g>
+  <g class="textLine">
+   <text x="745.0" y="220.0" class="text" style="font-size:12.0px;">Favours</text>
+   <text x="806.0" y="218.5" class="text" style="font-size:11.538461538461538px;">[non-needle</text>
+   <text x="901.0" y="217.8" class="text" style="font-size:10.769230769230768px;">acupoint</text>
+   <text x="967.0" y="218.5" class="text" style="font-size:11.538461538461538px;">stimulation]</text>
+   <text x="1064.0" y="220.0" class="text" style="font-size:12.0px;">Favours</text>
+   <text x="1126.0" y="218.5" class="text" style="fill:red;font-size:11.538461538461538px;opacity:0.28;">[control]</text>
+  </g>
+  <g class="textLine">
+   <text x="11.0" y="231.0" class="text" style="fill:red;font-size:39.0px;opacity:0.0;">‘</text>
+  </g>
+  <g class="textLine">
+   <text x="176.0" y="299.0" class="text" style="font-size:12.0px;">Non-needle</text>
+   <text x="264.0" y="296.5" class="text" style="font-size:11.538461538461538px;">acupoint</text>
+   <text x="332.0" y="299.0" class="text" style="font-size:13.0px;">stimulation</text>
+   <text x="458.0" y="299.0" class="text" style="font-size:12.0px;">Control</text>
+   <text x="653.0" y="299.0" class="text" style="font-size:13.0px;">Risk</text>
+   <text x="690.0" y="299.0" class="text" style="font-size:13.0px;">Ratio</text>
+   <text x="1018.0" y="299.0" class="text" style="font-size:13.0px;">Risk</text>
+   <text x="1055.0" y="299.0" class="text" style="font-size:13.0px;">Ratio</text>
+  </g>
+  <g class="textLine">
+   <text x="11.0" y="317.8" class="text" style="font-size:10.769230769230768px;">Study</text>
+   <text x="58.0" y="320.0" class="text" style="font-size:13.000000000000002px;">or</text>
+   <text x="77.0" y="317.8" class="text" style="font-size:10.769230769230768px;">Subgroup</text>
+   <text x="245.0" y="320.0" class="text" style="font-size:13.0px;">Events</text>
+   <text x="391.0" y="320.0" class="text" style="font-size:13.0px;">Total_Events</text>
+   <text x="504.0" y="320.0" class="text" style="fill:red;font-size:13.0px;opacity:0.245;">Total</text>
+   <text x="554.0" y="316.8" class="text" style="fill:red;font-size:10.769230769230768px;opacity:0.245;">Weight</text>
+   <text x="619.0" y="320.0" class="text" style="font-size:12.0px;">_M-H,</text>
+   <text x="656.0" y="320.0" class="text" style="font-size:12.0px;">Random,</text>
+   <text x="726.0" y="320.0" class="text" style="font-size:15.600000000000001px;">95%</text>
+   <text x="760.0" y="320.0" class="text" style="font-size:12.0px;">Cl</text>
+   <text x="977.0" y="320.0" class="text" style="fill:red;font-size:12.0px;opacity:0.14;">M.-H,</text>
+   <text x="1014.0" y="320.0" class="text" style="font-size:12.0px;">Random,</text>
+   <text x="1084.0" y="320.0" class="text" style="font-size:16.900000000000002px;">95%</text>
+   <text x="1118.0" y="320.0" class="text" style="font-size:12.0px;">Cl</text>
+  </g>
+  <g class="textLine">
+   <text x="13.0" y="342.0" class="text" style="font-size:12.0px;">Gu</text>
+   <text x="38.0" y="342.0" class="text" style="font-size:15.600000000000001px;">2009</text>
+   <text x="287.0" y="342.0" class="text" style="font-size:15.600000000000001px;">5</text>
+   <text x="410.0" y="342.0" class="text" style="font-size:15.600000000000001px;">29</text>
+   <text x="473.0" y="342.0" class="text" style="font-size:15.600000000000001px;">1</text>
+   <text x="523.0" y="342.0" class="text" style="font-size:15.600000000000001px;">30</text>
+   <text x="561.0" y="342.0" class="text" style="font-size:15.600000000000001px;">81.6%</text>
+   <text x="661.0" y="342.0" class="text" style="font-size:15.600000000000001px;">0.47</text>
+   <text x="696.0" y="340.5" class="text" style="fill:red;font-size:11.538461538461538px;opacity:0.301;">(0.19,</text>
+   <text x="740.0" y="340.5" class="text" style="font-size:11.538461538461538px;">1.19]</text>
+  </g>
+  <g class="textLine">
+   <text x="11.0" y="363.0" class="text" style="font-size:12.0px;">Zhou</text>
+   <text x="53.0" y="363.0" class="text" style="font-size:15.600000000000001px;">2017</text>
+   <text x="287.0" y="363.0" class="text" style="fill:red;font-size:12.0px;opacity:0.11900000000000001;">Qo</text>
+   <text x="410.0" y="363.0" class="text" style="font-size:15.600000000000001px;">30</text>
+   <text x="483.0" y="363.0" class="text" style="font-size:15.600000000000001px;">5</text>
+   <text x="523.0" y="363.0" class="text" style="font-size:15.600000000000001px;">30</text>
+   <text x="562.0" y="364.0" class="text" style="font-size:16.900000000000002px;">18.4%</text>
+   <text x="661.0" y="363.0" class="text" style="font-size:15.600000000000001px;">0.09</text>
+   <text x="696.0" y="361.5" class="text" style="font-size:11.538461538461538px;">(0.01,</text>
+   <text x="740.0" y="361.5" class="text" style="font-size:11.538461538461538px;">1.57]</text>
+  </g>
+  <g class="textLine">
+   <text x="11.0" y="404.0" class="text" style="font-size:13.0px;">Total</text>
+   <text x="52.0" y="401.5" class="text" style="font-size:11.538461538461538px;">(95%</text>
+   <text x="92.0" y="401.5" class="text" style="font-size:11.538461538461538px;">Cl)</text>
+   <text x="409.0" y="404.0" class="text" style="font-size:16.900000000000002px;">59</text>
+   <text x="522.0" y="404.0" class="text" style="font-size:16.900000000000002px;">60</text>
+   <text x="555.0" y="404.0" class="text" style="font-size:16.900000000000002px;">100.0%</text>
+   <text x="657.0" y="404.0" class="text" style="font-size:16.900000000000002px;">0.35</text>
+   <text x="693.0" y="401.5" class="text" style="font-size:11.538461538461538px;">[0.09,</text>
+   <text x="739.0" y="401.5" class="text" style="font-size:11.538461538461538px;">1.30]</text>
+  </g>
+  <g class="textLine">
+   <text x="11.0" y="426.0" class="text" style="font-size:12.0px;">Total</text>
+   <text x="52.0" y="426.0" class="text" style="font-size:12.0px;">events</text>
+   <text x="287.0" y="426.0" class="text" style="font-size:16.900000000000002px;">5</text>
+   <text x="473.0" y="426.0" class="text" style="font-size:15.600000000000001px;">16</text>
+  </g>
+  <g class="textLine">
+   <text x="12.0" y="445.5" class="text" style="font-size:11.538461538461538px;">Heterogeneity:</text>
+   <text x="119.0" y="447.0" class="text" style="fill:red;font-size:13.0px;opacity:0.329;">Tau?</text>
+   <text x="156.0" y="445.0" class="text" style="fill:red;font-size:9.100000000000001px;opacity:0.329;">=</text>
+   <text x="170.0" y="450.0" class="text" style="font-size:19.5px;">0.33;</text>
+   <text x="210.0" y="447.0" class="text" style="fill:red;font-size:12.0px;opacity:0.035;">Chi*=</text>
+   <text x="257.0" y="450.0" class="text" style="font-size:20.8px;">1.28,</text>
+   <text x="296.0" y="447.0" class="text" style="fill:red;font-size:12.0px;opacity:0.168;">df=</text>
+   <text x="326.0" y="447.0" class="text" style="fill:red;font-size:15.600000000000001px;opacity:0.168;">1</text>
+   <text x="340.0" y="445.2" class="text" style="font-size:12.307692307692307px;">(P</text>
+   <text x="358.0" y="445.0" class="text" style="font-size:9.100000000000001px;">=</text>
+   <text x="372.0" y="445.2" class="text" style="font-size:12.307692307692307px;">0.26);</text>
+   <text x="417.0" y="447.0" class="text" style="font-size:12.0px;">F=</text>
+   <text x="443.0" y="447.0" class="text" style="font-size:16.900000000000002px;">22%</text>
+  </g>
+  <g class="textLine">
+   <text x="788.0" y="458.0" class="text" style="font-size:16.900000000000002px;">0.01</text>
+   <text x="1298.0" y="458.0" class="text" style="font-size:16.900000000000002px;">100</text>
+  </g>
+  <g class="textLine">
+   <text x="70.0" y="468.0" class="text" style="fill:red;font-size:12.0px;opacity:0.0;">Svetall</text>
+   <text x="122.0" y="468.0" class="text" style="fill:red;font-size:12.0px;opacity:0.0;">eRact2</text>
+   <text x="194.0" y="468.0" class="text" style="fill:red;font-size:15.600000000000001px;opacity:0.343;">1,67</text>
+   <text x="229.0" y="466.5" class="text" style="fill:red;font-size:11.538461538461538px;opacity:0.189;">(P=.0.12)</text>
+   <text x="745.0" y="477.0" class="text" style="font-size:12.0px;">Favours</text>
+   <text x="806.0" y="475.5" class="text" style="font-size:11.538461538461538px;">[non-needle</text>
+   <text x="901.0" y="475.0" class="text" style="fill:red;font-size:30.0px;opacity:0.084;">above</text>
+   <text x="967.0" y="475.0" class="text" style="fill:red;font-size:39.0px;opacity:0.056;">sso</text>
+   <text x="1064.0" y="477.0" class="text" style="font-size:12.0px;">Favours</text>
+   <text x="1126.0" y="475.0" class="text" style="fill:red;font-size:39.0px;opacity:0.0;">rrorwea”</text>
+  </g>
+  <g class="textLine">
+   <text x="11.0" y="486.0" class="text" style="fill:red;font-size:39.0px;opacity:0.0;">eo</text>
+  </g>
+  <g class="textLine">
+   <text x="176.0" y="552.0" class="text" style="font-size:12.0px;">Non-needle</text>
+   <text x="264.0" y="550.2" class="text" style="font-size:12.307692307692307px;">acupoint</text>
+   <text x="332.0" y="552.0" class="text" style="font-size:13.0px;">stimulation</text>
+   <text x="458.0" y="552.0" class="text" style="font-size:12.0px;">Control</text>
+   <text x="653.0" y="552.0" class="text" style="font-size:13.0px;">Risk</text>
+   <text x="690.0" y="552.0" class="text" style="font-size:13.0px;">Ratio</text>
+   <text x="1018.0" y="552.0" class="text" style="font-size:13.0px;">Risk</text>
+   <text x="1055.0" y="552.0" class="text" style="font-size:13.0px;">Ratio</text>
+  </g>
+  <g class="textLine">
+   <text x="11.0" y="570.8" class="text" style="font-size:10.769230769230768px;">Study</text>
+   <text x="58.0" y="573.0" class="text" style="font-size:13.000000000000002px;">or</text>
+   <text x="77.0" y="570.8" class="text" style="font-size:10.769230769230768px;">Subgroup</text>
+   <text x="245.0" y="573.0" class="text" style="font-size:12.0px;">Events</text>
+   <text x="391.0" y="573.0" class="text" style="font-size:12.0px;">Total_Events</text>
+   <text x="504.0" y="569.8" class="text" style="font-size:10.769230769230768px;">Total_Weight_M-H,</text>
+   <text x="656.0" y="573.0" class="text" style="font-size:12.0px;">Random,</text>
+   <text x="726.0" y="573.0" class="text" style="font-size:15.600000000000001px;">95%</text>
+   <text x="760.0" y="573.0" class="text" style="font-size:12.0px;">Cl</text>
+   <text x="977.0" y="573.0" class="text" style="font-size:12.0px;">M-H,</text>
+   <text x="1014.0" y="573.0" class="text" style="font-size:12.0px;">Random,</text>
+   <text x="1084.0" y="573.0" class="text" style="font-size:16.900000000000002px;">95%</text>
+   <text x="1118.0" y="573.0" class="text" style="font-size:12.0px;">Cl</text>
+  </g>
+  <g class="textLine">
+   <text x="13.0" y="595.0" class="text" style="font-size:12.0px;">Gan</text>
+   <text x="47.0" y="595.0" class="text" style="font-size:15.600000000000001px;">2004</text>
+   <text x="287.0" y="595.0" class="text" style="font-size:15.600000000000001px;">5</text>
+   <text x="411.0" y="596.0" class="text" style="fill:red;font-size:16.900000000000002px;opacity:0.231;">2601124</text>
+   <text x="562.0" y="596.0" class="text" style="fill:red;font-size:16.900000000000002px;opacity:0.343;">10.9%</text>
+   <text x="661.0" y="596.0" class="text" style="font-size:16.900000000000002px;">0.42</text>
+   <text x="696.0" y="593.5" class="text" style="font-size:11.538461538461538px;">(0.17,</text>
+   <text x="740.0" y="593.5" class="text" style="font-size:11.538461538461538px;">1.03]</text>
+  </g>
+  <g class="textLine">
+   <text x="13.0" y="616.0" class="text" style="font-size:12.0px;">Gu</text>
+   <text x="38.0" y="616.0" class="text" style="font-size:15.600000000000001px;">2009</text>
+   <text x="287.0" y="616.0" class="text" style="font-size:15.600000000000001px;">8</text>
+   <text x="410.0" y="616.0" class="text" style="fill:red;font-size:15.600000000000001px;opacity:0.098;">29°</text>
+   <text x="473.0" y="616.0" class="text" style="fill:red;font-size:15.600000000000001px;opacity:0.0;">12:«</text>
+   <text x="523.0" y="616.0" class="text" style="fill:red;font-size:15.600000000000001px;opacity:0.007;">30</text>
+   <text x="561.0" y="616.0" class="text" style="fill:red;font-size:15.600000000000001px;opacity:0.315;">16.4%</text>
+   <text x="661.0" y="616.0" class="text" style="font-size:15.600000000000001px;">0.69</text>
+   <text x="696.0" y="614.5" class="text" style="font-size:11.538461538461538px;">(0.33,</text>
+   <text x="740.0" y="614.5" class="text" style="font-size:11.538461538461538px;">1.44]</text>
+  </g>
+  <g class="textLine">
+   <text x="12.0" y="637.0" class="text" style="font-size:12.0px;">Kirn</text>
+   <text x="45.0" y="637.0" class="text" style="font-size:15.600000000000001px;">2004</text>
+   <text x="287.0" y="637.0" class="text" style="font-size:15.600000000000001px;">6</text>
+   <text x="410.0" y="638.0" class="text" style="fill:red;font-size:16.900000000000002px;opacity:0.133;">33001133</text>
+   <text x="562.0" y="637.0" class="text" style="fill:red;font-size:15.600000000000001px;opacity:0.133;">11.7%</text>
+   <text x="661.0" y="638.0" class="text" style="font-size:16.900000000000002px;">0.55</text>
+   <text x="696.0" y="635.5" class="text" style="font-size:11.538461538461538px;">(0.23,</text>
+   <text x="740.0" y="635.5" class="text" style="font-size:11.538461538461538px;">1.30]</text>
+  </g>
+  <g class="textLine">
+   <text x="13.0" y="658.0" class="text" style="font-size:12.0px;">Liu</text>
+   <text x="39.0" y="658.0" class="text" style="font-size:15.600000000000001px;">2011</text>
+   <text x="287.0" y="658.0" class="text" style="font-size:15.600000000000001px;">6</text>
+   <text x="410.0" y="658.0" class="text" style="fill:red;font-size:15.600000000000001px;opacity:0.14;">47</text>
+   <text x="473.0" y="659.0" class="text" style="fill:red;font-size:16.900000000000002px;opacity:0.0;">12,-39.—«11.4%</text>
+   <text x="661.0" y="658.0" class="text" style="font-size:15.600000000000001px;">0.41</text>
+   <text x="696.0" y="656.5" class="text" style="font-size:11.538461538461538px;">(0.17,</text>
+   <text x="740.0" y="656.5" class="text" style="font-size:11.538461538461538px;">1.00]</text>
+  </g>
+  <g class="textLine">
+   <text x="13.0" y="677.5" class="text" style="font-size:11.538461538461538px;">Majholm</text>
+   <text x="78.0" y="680.0" class="text" style="font-size:16.900000000000002px;">2011</text>
+   <text x="278.0" y="679.0" class="text" style="font-size:16.900000000000002px;">15</text>
+   <text x="410.0" y="679.0" class="text" style="font-size:16.900000000000002px;">58</text>
+   <text x="473.0" y="679.0" class="text" style="fill:red;font-size:15.600000000000001px;opacity:0.21;">14</text>
+   <text x="523.0" y="680.0" class="text" style="fill:red;font-size:18.200000000000003px;opacity:0.0;">«§2-22.7%</text>
+   <text x="661.0" y="680.0" class="text" style="font-size:16.900000000000002px;">0.96</text>
+   <text x="696.0" y="677.2" class="text" style="font-size:12.307692307692307px;">(0.51,</text>
+   <text x="732.0" y="677.2" class="text" style="font-size:12.307692307692307px;">1.79]</text>
+  </g>
+  <g class="textLine">
+   <text x="13.0" y="700.0" class="text" style="font-size:12.0px;">Pan</text>
+   <text x="45.0" y="700.0" class="text" style="font-size:15.600000000000001px;">2014</text>
+   <text x="278.0" y="700.0" class="text" style="font-size:15.600000000000001px;">12</text>
+   <text x="410.0" y="701.0" class="text" style="fill:red;font-size:16.900000000000002px;opacity:0.23800000000000002;">53-21-53.</text>
+   <text x="561.0" y="700.0" class="text" style="fill:red;font-size:15.600000000000001px;opacity:0.0;">-24.8%</text>
+   <text x="661.0" y="700.0" class="text" style="font-size:15.600000000000001px;">0.57</text>
+   <text x="696.0" y="698.5" class="text" style="font-size:11.538461538461538px;">(0.31,</text>
+   <text x="740.0" y="698.5" class="text" style="font-size:11.538461538461538px;">1.04]</text>
+  </g>
+  <g class="textLine">
+   <text x="11.0" y="722.0" class="text" style="font-size:13.0px;">Zhou</text>
+   <text x="53.0" y="722.0" class="text" style="font-size:16.900000000000002px;">2017</text>
+   <text x="287.0" y="721.0" class="text" style="font-size:15.600000000000001px;">1</text>
+   <text x="410.0" y="722.0" class="text" style="font-size:16.900000000000002px;">30</text>
+   <text x="482.0" y="722.0" class="text" style="font-size:16.900000000000002px;">6</text>
+   <text x="523.0" y="722.0" class="text" style="font-size:16.900000000000002px;">30</text>
+   <text x="570.0" y="722.0" class="text" style="font-size:16.900000000000002px;">21%</text>
+   <text x="661.0" y="722.0" class="text" style="font-size:18.200000000000003px;">0.17</text>
+   <text x="696.0" y="719.5" class="text" style="font-size:11.538461538461538px;">(0.02,</text>
+   <text x="740.0" y="719.5" class="text" style="font-size:11.538461538461538px;">1.30]</text>
+  </g>
+  <g class="textLine">
+   <text x="11.0" y="762.0" class="text" style="font-size:12.0px;">Total</text>
+   <text x="52.0" y="759.8" class="text" style="font-size:10.769230769230768px;">(95%</text>
+   <text x="76.0" y="759.8" class="text" style="font-size:10.769230769230768px;">Cl)</text>
+   <text x="400.0" y="762.0" class="text" style="font-size:15.600000000000001px;">276</text>
+   <text x="513.0" y="762.0" class="text" style="font-size:15.600000000000001px;">261</text>
+   <text x="555.0" y="762.0" class="text" style="font-size:15.600000000000001px;">100.0%</text>
+   <text x="657.0" y="762.0" class="text" style="font-size:15.600000000000001px;">0.60</text>
+   <text x="693.0" y="759.8" class="text" style="font-size:10.769230769230768px;">[0.44,</text>
+   <text x="737.0" y="759.8" class="text" style="font-size:10.769230769230768px;">0.81]</text>
+  </g>
+  <g class="textLine">
+   <text x="11.0" y="784.0" class="text" style="font-size:12.0px;">Total</text>
+   <text x="52.0" y="784.0" class="text" style="font-size:12.0px;">events</text>
+   <text x="278.0" y="784.0" class="text" style="font-size:15.600000000000001px;">53</text>
+   <text x="473.0" y="784.0" class="text" style="font-size:15.600000000000001px;">a7</text>
+  </g>
+  <g class="textLine">
+   <text x="12.0" y="803.5" class="text" style="font-size:11.538461538461538px;">Heterogeneity:</text>
+   <text x="119.0" y="805.0" class="text" style="font-size:12.0px;">Tau*=</text>
+   <text x="170.0" y="808.0" class="text" style="font-size:19.5px;">0.00;</text>
+   <text x="210.0" y="805.0" class="text" style="fill:red;font-size:12.0px;opacity:0.154;">Chi*=</text>
+   <text x="257.0" y="808.0" class="text" style="font-size:19.5px;">5.21,</text>
+   <text x="296.0" y="805.0" class="text" style="font-size:12.0px;">df=</text>
+   <text x="326.0" y="805.0" class="text" style="font-size:15.600000000000001px;">6</text>
+   <text x="340.0" y="803.5" class="text" style="font-size:11.538461538461538px;">(P</text>
+   <text x="358.0" y="803.0" class="text" style="font-size:9.100000000000001px;">=</text>
+   <text x="372.0" y="803.5" class="text" style="font-size:11.538461538461538px;">0.52);</text>
+   <text x="417.0" y="805.0" class="text" style="font-size:12.0px;">F=</text>
+   <text x="443.0" y="805.0" class="text" style="font-size:15.600000000000001px;">0%</text>
+  </g>
+  <g class="textLine">
+   <text x="787.0" y="816.0" class="text" style="fill:red;font-size:27.0px;opacity:0.161;">bot</text>
+   <text x="1298.0" y="816.0" class="text" style="font-size:16.900000000000002px;">100</text>
+  </g>
+  <g class="textLine">
+   <text x="70.0" y="826.0" class="text" style="font-size:12.0px;">overall</text>
+   <text x="122.0" y="826.0" class="text" style="fill:red;font-size:12.0px;opacity:0.21;">efect:Z=</text>
+   <text x="194.0" y="826.0" class="text" style="font-size:15.600000000000001px;">3.37</text>
+   <text x="229.0" y="824.5" class="text" style="font-size:11.538461538461538px;">(P=</text>
+   <text x="262.0" y="824.5" class="text" style="font-size:11.538461538461538px;">0.0007)</text>
+   <text x="901.0" y="824.0" class="text" style="fill:red;font-size:23.076923076923077px;opacity:0.231;">seg</text>
+  </g>
+  <g class="textLine">
+   <text x="745.0" y="835.0" class="text" style="font-size:12.0px;">Favours</text>
+   <text x="807.0" y="833.5" class="text" style="font-size:11.538461538461538px;">[non-needle</text>
+   <text x="967.0" y="833.0" class="text" style="fill:red;font-size:39.0px;opacity:0.133;">ina</text>
+   <text x="1064.0" y="835.0" class="text" style="font-size:12.0px;">Favours</text>
+   <text x="1126.0" y="833.0" class="text" style="fill:red;font-size:39.0px;opacity:0.105;">rere</text>
+  </g>
+  <g class="textLine">
+   <text x="12.0" y="844.0" class="text" style="fill:red;font-size:39.0px;opacity:0.273;">=</text>
+  </g>
+  <g class="textLine">
+   <text x="176.0" y="915.0" class="text" style="font-size:12.0px;">Non-needle</text>
+   <text x="264.0" y="913.5" class="text" style="font-size:11.538461538461538px;">acupoint</text>
+   <text x="332.0" y="915.0" class="text" style="font-size:12.0px;">stimulation</text>
+   <text x="458.0" y="915.0" class="text" style="font-size:12.0px;">Control</text>
+   <text x="654.0" y="915.0" class="text" style="font-size:12.0px;">Risk</text>
+   <text x="690.0" y="915.0" class="text" style="font-size:12.0px;">Ratio</text>
+   <text x="1018.0" y="915.0" class="text" style="font-size:12.0px;">Risk</text>
+   <text x="1055.0" y="915.0" class="text" style="font-size:12.0px;">Ratio</text>
+  </g>
+  <g class="textLine">
+   <text x="12.0" y="934.5" class="text" style="font-size:11.538461538461538px;">Study</text>
+   <text x="58.0" y="936.0" class="text" style="font-size:11.700000000000001px;">or</text>
+   <text x="77.0" y="934.5" class="text" style="font-size:11.538461538461538px;">Subgroup</text>
+   <text x="245.0" y="936.0" class="text" style="font-size:12.0px;">Events</text>
+   <text x="391.0" y="936.0" class="text" style="font-size:12.0px;">Total_Events</text>
+   <text x="504.0" y="936.0" class="text" style="fill:red;font-size:12.0px;opacity:0.126;">Total</text>
+   <text x="553.0" y="933.1" class="text" style="fill:red;font-size:10.0px;opacity:0.126;">Weight</text>
+   <text x="619.0" y="936.0" class="text" style="font-size:12.0px;">_M-H,</text>
+   <text x="656.0" y="936.0" class="text" style="font-size:12.0px;">Random,</text>
+   <text x="726.0" y="936.0" class="text" style="font-size:15.600000000000001px;">95%</text>
+   <text x="760.0" y="936.0" class="text" style="font-size:12.0px;">Cl</text>
+   <text x="977.0" y="936.0" class="text" style="fill:red;font-size:12.0px;opacity:0.322;">M.-H,</text>
+   <text x="1014.0" y="936.0" class="text" style="font-size:12.0px;">Random,</text>
+   <text x="1084.0" y="936.0" class="text" style="font-size:15.600000000000001px;">95%</text>
+   <text x="1118.0" y="936.0" class="text" style="font-size:12.0px;">Cl</text>
+  </g>
+  <g class="textLine">
+   <text x="13.0" y="959.0" class="text" style="font-size:13.0px;">Gu</text>
+   <text x="38.0" y="959.0" class="text" style="font-size:16.900000000000002px;">2009</text>
+   <text x="287.0" y="959.0" class="text" style="font-size:16.900000000000002px;">8</text>
+   <text x="410.0" y="959.0" class="text" style="font-size:16.900000000000002px;">29</text>
+   <text x="473.0" y="959.0" class="text" style="font-size:16.900000000000002px;">12</text>
+   <text x="523.0" y="959.0" class="text" style="font-size:16.900000000000002px;">30</text>
+   <text x="561.0" y="959.0" class="text" style="font-size:16.900000000000002px;">38.8%</text>
+   <text x="661.0" y="959.0" class="text" style="font-size:16.900000000000002px;">0.69</text>
+   <text x="696.0" y="957.2" class="text" style="font-size:12.307692307692307px;">(0.33,</text>
+   <text x="740.0" y="957.2" class="text" style="font-size:12.307692307692307px;">1.44]</text>
+  </g>
+  <g class="textLine">
+   <text x="13.0" y="980.0" class="text" style="font-size:13.0px;">Pan</text>
+   <text x="45.0" y="980.0" class="text" style="font-size:16.900000000000002px;">2014</text>
+   <text x="278.0" y="980.0" class="text" style="font-size:16.900000000000002px;">12</text>
+   <text x="410.0" y="980.0" class="text" style="font-size:16.900000000000002px;">53</text>
+   <text x="473.0" y="980.0" class="text" style="font-size:16.900000000000002px;">21</text>
+   <text x="523.0" y="980.0" class="text" style="font-size:16.900000000000002px;">63</text>
+   <text x="561.0" y="980.0" class="text" style="font-size:16.900000000000002px;">56.7%</text>
+   <text x="661.0" y="980.0" class="text" style="font-size:16.900000000000002px;">0.57</text>
+   <text x="684.0" y="977.5" class="text" style="font-size:11.538461538461538px;">(0.31,</text>
+   <text x="732.0" y="977.5" class="text" style="font-size:11.538461538461538px;">1.04)</text>
+  </g>
+  <g class="textLine">
+   <text x="12.0" y="1001.0" class="text" style="font-size:13.0px;">Zhou</text>
+   <text x="53.0" y="1001.0" class="text" style="font-size:16.900000000000002px;">2017</text>
+   <text x="287.0" y="1000.0" class="text" style="font-size:15.600000000000001px;">1</text>
+   <text x="410.0" y="1001.0" class="text" style="font-size:16.900000000000002px;">30</text>
+   <text x="483.0" y="1000.0" class="text" style="font-size:15.600000000000001px;">7</text>
+   <text x="523.0" y="1001.0" class="text" style="font-size:16.900000000000002px;">30</text>
+   <text x="570.0" y="1001.0" class="text" style="fill:red;font-size:16.900000000000002px;opacity:0.23800000000000002;">65%</text>
+   <text x="661.0" y="1001.0" class="text" style="font-size:16.900000000000002px;">0.14</text>
+   <text x="696.0" y="998.5" class="text" style="font-size:11.538461538461538px;">(0.02,</text>
+   <text x="740.0" y="1003.0" class="text" style="font-size:19.5px;">1.09}</text>
+  </g>
+  <g class="textLine">
+   <text x="11.0" y="1041.0" class="text" style="font-size:12.0px;">Total</text>
+   <text x="52.0" y="1039.5" class="text" style="font-size:11.538461538461538px;">(95%</text>
+   <text x="92.0" y="1039.5" class="text" style="font-size:11.538461538461538px;">Cl)</text>
+   <text x="401.0" y="1041.0" class="text" style="font-size:15.600000000000001px;">112</text>
+   <text x="514.0" y="1041.0" class="text" style="font-size:15.600000000000001px;">113</text>
+   <text x="555.0" y="1041.0" class="text" style="font-size:15.600000000000001px;">100.0%</text>
+   <text x="657.0" y="1041.0" class="text" style="font-size:15.600000000000001px;">0.57</text>
+   <text x="693.0" y="1039.5" class="text" style="font-size:11.538461538461538px;">[0.35,</text>
+   <text x="737.0" y="1039.5" class="text" style="font-size:11.538461538461538px;">0.92]</text>
+  </g>
+  <g class="textLine">
+   <text x="11.0" y="1064.0" class="text" style="font-size:13.0px;">Total</text>
+   <text x="52.0" y="1064.0" class="text" style="font-size:13.0px;">events</text>
+   <text x="278.0" y="1064.0" class="text" style="font-size:16.900000000000002px;">2a</text>
+   <text x="473.0" y="1064.0" class="text" style="font-size:16.900000000000002px;">40</text>
+  </g>
+  <g class="textLine">
+   <text x="12.0" y="1083.2" class="text" style="font-size:12.307692307692307px;">Heterogeneity:</text>
+   <text x="119.0" y="1085.0" class="text" style="font-size:13.0px;">Tau?=</text>
+   <text x="170.0" y="1087.0" class="text" style="font-size:19.5px;">0.01;</text>
+   <text x="210.0" y="1085.0" class="text" style="fill:red;font-size:13.0px;opacity:0.0;">Chi*=</text>
+   <text x="257.0" y="1087.0" class="text" style="font-size:19.5px;">2.15,</text>
+   <text x="296.0" y="1085.0" class="text" style="font-size:13.0px;">df=</text>
+   <text x="326.0" y="1085.0" class="text" style="font-size:16.900000000000002px;">2</text>
+   <text x="340.0" y="1082.5" class="text" style="font-size:11.538461538461538px;">(P=</text>
+   <text x="372.0" y="1082.5" class="text" style="font-size:11.538461538461538px;">0.34);</text>
+   <text x="417.0" y="1085.0" class="text" style="font-size:13.0px;">F=</text>
+   <text x="443.0" y="1085.0" class="text" style="font-size:16.900000000000002px;">7%</text>
+  </g>
+  <g class="textLine">
+   <text x="788.0" y="1095.0" class="text" style="font-size:15.600000000000001px;">0.01</text>
+  </g>
+  <g class="textLine">
+   <text x="11.0" y="1106.0" class="text" style="fill:red;font-size:13.0px;opacity:0.0;">Tenromes</text>
+   <text x="122.0" y="1106.0" class="text" style="fill:red;font-size:16.900000000000002px;opacity:0.182;">eer</text>
+   <text x="155.0" y="1106.0" class="text" style="fill:red;font-size:16.900000000000002px;opacity:0.091;">22</text>
+   <text x="194.0" y="1106.0" class="text" style="fill:red;font-size:13.0px;opacity:0.154;">EN</text>
+   <text x="229.0" y="1108.0" class="text" style="fill:red;font-size:19.5px;opacity:0.14;">we</text>
+   <text x="262.0" y="1108.0" class="text" style="fill:red;font-size:19.5px;opacity:0.0;">0ae</text>
+   <text x="967.0" y="1104.0" class="text" style="fill:red;font-size:23.076923076923077px;opacity:0.315;">stimulation)</text>
+   <text x="1126.0" y="1104.0" class="text" style="fill:red;font-size:23.076923076923077px;opacity:0.063;">[contro</text>
+  </g>
+  <g class="textLine">
+   <text x="745.0" y="1115.0" class="text" style="font-size:13.0px;">Favours</text>
+   <text x="807.0" y="1112.5" class="text" style="font-size:11.538461538461538px;">[non-needle</text>
+   <text x="901.0" y="1113.0" class="text" style="fill:red;font-size:39.0px;opacity:0.0;">ainsi</text>
+   <text x="1064.0" y="1115.0" class="text" style="font-size:13.0px;">Favours</text>
+  </g>
+  <g class="textLine">
+   <text x="12.0" y="1135.0" class="text" style="font-size:17.0px;">D</text>
+  </g>
+  <g class="textLine">
+   <text x="176.0" y="1200.0" class="text" style="font-size:12.0px;">Non-needle</text>
+   <text x="264.0" y="1198.2" class="text" style="font-size:12.307692307692307px;">acupoint</text>
+   <text x="332.0" y="1200.0" class="text" style="font-size:12.0px;">stimulation</text>
+   <text x="458.0" y="1200.0" class="text" style="font-size:12.0px;">Control</text>
+   <text x="653.0" y="1200.0" class="text" style="font-size:13.0px;">Risk</text>
+   <text x="690.0" y="1200.0" class="text" style="font-size:12.0px;">Ratio</text>
+   <text x="1018.0" y="1200.0" class="text" style="font-size:12.0px;">Risk</text>
+   <text x="1055.0" y="1200.0" class="text" style="font-size:12.0px;">Ratio</text>
+  </g>
+  <g class="textLine">
+   <text x="12.0" y="1218.8" class="text" style="font-size:10.769230769230768px;">Study</text>
+   <text x="58.0" y="1221.0" class="text" style="font-size:13.000000000000002px;">or</text>
+   <text x="77.0" y="1218.8" class="text" style="font-size:10.769230769230768px;">Subgroup</text>
+   <text x="245.0" y="1221.0" class="text" style="font-size:12.0px;">Events</text>
+   <text x="391.0" y="1221.0" class="text" style="font-size:12.0px;">Total_Events</text>
+   <text x="504.0" y="1221.0" class="text" style="font-size:12.0px;">Total</text>
+   <text x="554.0" y="1218.1" class="text" style="font-size:10.0px;">Weight</text>
+   <text x="619.0" y="1221.0" class="text" style="fill:red;font-size:12.0px;opacity:0.049;">_M-H,</text>
+   <text x="656.0" y="1221.0" class="text" style="font-size:12.0px;">Random,</text>
+   <text x="726.0" y="1221.0" class="text" style="font-size:15.600000000000001px;">95%</text>
+   <text x="760.0" y="1221.0" class="text" style="font-size:12.0px;">Cl</text>
+   <text x="977.0" y="1221.0" class="text" style="fill:red;font-size:12.0px;opacity:0.196;">M.-H,</text>
+   <text x="1014.0" y="1221.0" class="text" style="font-size:12.0px;">Random,</text>
+   <text x="1084.0" y="1221.0" class="text" style="font-size:15.600000000000001px;">95%</text>
+   <text x="1118.0" y="1221.0" class="text" style="font-size:12.0px;">Cl</text>
+  </g>
+  <g class="textLine">
+   <text x="13.0" y="1241.5" class="text" style="font-size:11.538461538461538px;">Majhoim</text>
+   <text x="78.0" y="1244.0" class="text" style="font-size:16.900000000000002px;">2011</text>
+   <text x="278.0" y="1244.0" class="text" style="font-size:16.900000000000002px;">15</text>
+   <text x="410.0" y="1244.0" class="text" style="font-size:16.900000000000002px;">58</text>
+   <text x="473.0" y="1243.0" class="text" style="font-size:15.600000000000001px;">14</text>
+   <text x="523.0" y="1243.0" class="text" style="font-size:15.600000000000001px;">52</text>
+   <text x="561.0" y="1244.0" class="text" style="font-size:16.900000000000002px;">58.7%</text>
+   <text x="661.0" y="1244.0" class="text" style="font-size:16.900000000000002px;">0.96</text>
+   <text x="696.0" y="1241.5" class="text" style="font-size:11.538461538461538px;">(0.51,</text>
+   <text x="740.0" y="1241.5" class="text" style="font-size:11.538461538461538px;">1.79]</text>
+  </g>
+  <g class="textLine">
+   <text x="11.0" y="1262.5" class="text" style="font-size:11.538461538461538px;">Zhang</text>
+   <text x="62.0" y="1264.0" class="text" style="font-size:15.600000000000001px;">2014</text>
+   <text x="287.0" y="1264.0" class="text" style="font-size:15.600000000000001px;">4</text>
+   <text x="410.0" y="1264.0" class="text" style="font-size:15.600000000000001px;">33</text>
+   <text x="473.0" y="1264.0" class="text" style="font-size:15.600000000000001px;">11</text>
+   <text x="523.0" y="1264.0" class="text" style="fill:red;font-size:15.600000000000001px;opacity:0.224;">32°</text>
+   <text x="561.0" y="1264.0" class="text" style="fill:red;font-size:15.600000000000001px;opacity:0.28;">41.3%</text>
+   <text x="661.0" y="1264.0" class="text" style="font-size:15.600000000000001px;">0.35</text>
+   <text x="696.0" y="1262.5" class="text" style="fill:red;font-size:11.538461538461538px;opacity:0.308;">(0.13,</text>
+   <text x="740.0" y="1262.5" class="text" style="font-size:11.538461538461538px;">0.99]</text>
+  </g>
+  <g class="textLine">
+   <text x="11.0" y="1305.0" class="text" style="font-size:12.0px;">Total</text>
+   <text x="52.0" y="1303.5" class="text" style="font-size:11.538461538461538px;">(95%</text>
+   <text x="92.0" y="1302.8" class="text" style="font-size:10.769230769230768px;">Cl)</text>
+   <text x="409.0" y="1305.0" class="text" style="font-size:15.600000000000001px;">91</text>
+   <text x="522.0" y="1305.0" class="text" style="font-size:15.600000000000001px;">84</text>
+   <text x="555.0" y="1305.0" class="text" style="font-size:15.600000000000001px;">100.0%</text>
+   <text x="657.0" y="1305.0" class="text" style="font-size:15.600000000000001px;">0.64</text>
+   <text x="693.0" y="1303.5" class="text" style="font-size:11.538461538461538px;">[0.24,</text>
+   <text x="738.0" y="1303.5" class="text" style="font-size:11.538461538461538px;">1.68]</text>
+  </g>
+  <g class="textLine">
+   <text x="11.0" y="1328.0" class="text" style="font-size:13.0px;">Total</text>
+   <text x="52.0" y="1328.0" class="text" style="font-size:13.0px;">events</text>
+   <text x="278.0" y="1328.0" class="text" style="font-size:16.900000000000002px;">19</text>
+   <text x="473.0" y="1328.0" class="text" style="font-size:16.900000000000002px;">25</text>
+  </g>
+  <g class="textLine">
+   <text x="13.0" y="1346.5" class="text" style="font-size:11.538461538461538px;">Heterogeneity:</text>
+   <text x="119.0" y="1348.0" class="text" style="font-size:12.0px;">Tau=</text>
+   <text x="170.0" y="1351.0" class="text" style="font-size:19.5px;">0.32;</text>
+   <text x="210.0" y="1349.0" class="text" style="fill:red;font-size:13.0px;opacity:0.0;">Ch#=</text>
+   <text x="257.0" y="1351.0" class="text" style="font-size:19.5px;">2.67,</text>
+   <text x="296.0" y="1348.0" class="text" style="fill:red;font-size:12.0px;opacity:0.294;">df=</text>
+   <text x="326.0" y="1348.0" class="text" style="fill:red;font-size:15.600000000000001px;opacity:0.294;">1</text>
+   <text x="340.0" y="1346.5" class="text" style="font-size:11.538461538461538px;">(P=</text>
+   <text x="372.0" y="1346.5" class="text" style="font-size:11.538461538461538px;">0.10);</text>
+   <text x="417.0" y="1348.0" class="text" style="font-size:12.0px;">F=</text>
+   <text x="443.0" y="1348.0" class="text" style="font-size:15.600000000000001px;">63%</text>
+  </g>
+  <g class="textLine">
+   <text x="788.0" y="1359.0" class="text" style="fill:red;font-size:13.0px;opacity:0.231;">O01</text>
+   <text x="912.0" y="1359.0" class="text" style="fill:red;font-size:16.900000000000002px;opacity:0.217;">04</text>
+   <text x="1052.0" y="1359.0" class="text" style="font-size:15.600000000000001px;">1</text>
+   <text x="1182.0" y="1359.0" class="text" style="font-size:16.900000000000002px;">10</text>
+   <text x="1298.0" y="1359.0" class="text" style="font-size:16.900000000000002px;">100</text>
+  </g>
+  <g class="textLine">
+   <text x="11.0" y="1370.0" class="text" style="font-size:13.0px;">Test</text>
+   <text x="39.0" y="1370.0" class="text" style="font-size:13.0px;">for</text>
+   <text x="70.0" y="1370.0" class="text" style="font-size:13.0px;">overall</text>
+   <text x="122.0" y="1370.0" class="text" style="font-size:13.0px;">effect:</text>
+   <text x="166.0" y="1370.0" class="text" style="font-size:13.0px;">Z=</text>
+   <text x="194.0" y="1370.0" class="text" style="font-size:16.900000000000002px;">0.91</text>
+   <text x="229.0" y="1367.5" class="text" style="font-size:11.538461538461538px;">(P</text>
+   <text x="248.0" y="1367.0" class="text" style="font-size:7.800000000000001px;">=</text>
+   <text x="262.0" y="1367.5" class="text" style="font-size:11.538461538461538px;">0.35)</text>
+   <text x="745.0" y="1378.0" class="text" style="font-size:12.0px;">Favours</text>
+   <text x="807.0" y="1376.5" class="text" style="font-size:11.538461538461538px;">[non-needle</text>
+   <text x="901.0" y="1376.5" class="text" style="font-size:11.538461538461538px;">acupoint</text>
+   <text x="967.0" y="1376.5" class="text" style="font-size:11.538461538461538px;">stimulation]</text>
+   <text x="1064.0" y="1379.0" class="text" style="font-size:13.0px;">Favours</text>
+   <text x="1126.0" y="1376.5" class="text" style="font-size:11.538461538461538px;">[control]</text>
+  </g>
+  <g class="textLine">
+   <text x="12.0" y="1402.0" class="text" style="font-size:17.0px;">E</text>
+  </g>
+ </g>
+</svg>

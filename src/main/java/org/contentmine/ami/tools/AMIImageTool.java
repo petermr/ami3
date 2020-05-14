@@ -164,6 +164,7 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 	private List<Integer> borders = null ;
 
     @Option(names = {"--duplicate"},
+    		arity="0..1",
     		defaultValue = "duplicate",
             description = "FILTER: move duplicate images to <duplicate>; default = ${DEFAULT-VALUE}; "+_DELETE+" means delete"
             )
@@ -175,7 +176,7 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 	private boolean filter;
 
     @Option(names = {"--minheight"},
-    		arity = "1",
+    		arity="1",
     		defaultValue = "100",
             description = "minimum height (pixels) to accept")
     private int minHeight;
@@ -187,14 +188,14 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
     private int minWidth;
     
     @Option(names = {"--monochrome"},
-    		arity = "1",
+    		arity="0..1",
     		defaultValue = "monochrome",
             description = "FILTER: move monochrome images to <monochrome>; default ${DEFAULT-VALUE}; "+_DELETE+" means delete"
             )
 	private MonochromeDest monochromeDirname;
 
     @Option(names = {"--small"},
-    		arity = "1",
+    		arity="0..1",
     		defaultValue = "small",
             description = "FILTER: move small images to <monochrome>; default ${DEFAULT-VALUE}; "+_DELETE+" means delete"
             )

@@ -1,0 +1,1350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="776.086" width="562.2661" xmlns="http://www.w3.org/2000/svg">
+ <g id="page" xmlns:svgx="http://www.xml-cml.org/schema/svgx">
+  <g begin="text">
+   <text y="48.867" x="48.87,55.261,60.49,65.719,70.363,75.592,80.821,83.729,88.959,91.586" svgx:width="0.61,0.5,0.5,0.44,0.5,0.5,0.28,0.5,0.55,0.61" style="fill:rgb(0,0,0);font-family:Century-BoldCondensed;font-size:10.46px;stroke:none;">Appendix B</text>
+  </g>
+  <g begin="text">
+   <text y="64.806" x="60.048,67.987,72.5894,74.908,80.137,84.007,88.65,93.6708,95.968,103.519,106.228,110.683,114.364,119.008,122.877,127.521,130.428,133.6706,136.007,142.011,146.654,151.11,155.753,158.4726,160.739,163.646,168.289,171.95,174.248,178.891,181.6,184.3196,186.585,191.041,195.684,203.236,208.266,213.496,216.79,221.433,224.728,227.436,232.079,237.309,241.1792,243.465,246.173,251.403,253.688,256.982,262.212,266.8144,269.133,276.684,281.328,284.622,289.266" svgx:width="0.76,0.44,0.55,0.5,0.37,0.44,0.48,0.55,0.72,0.26,0.43,0.35,0.44,0.37,0.44,0.28,0.31,0.55,0.57,0.44,0.43,0.44,0.26,0.55,0.28,0.44,0.35,0.55,0.44,0.26,0.26,0.55,0.43,0.44,0.72,0.48,0.5,0.31,0.44,0.31,0.26,0.44,0.5,0.37,0.55,0.26,0.5,0.55,0.31,0.5,0.44,0.55,0.72,0.44,0.31,0.44,0.28" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">We used Microsoft Excel for all computations in the meta-</text>
+  </g>
+  <g begin="text">
+   <text y="75.768" x="50.086,54.73,59.961,64.605,67.314,71.384,75.254,77.964,81.834" svgx:width="0.44,0.5,0.44,0.26,0.39,0.37,0.26,0.37,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">analysis.</text>
+  </g>
+  <g begin="text">
+   <text y="92.706" x="48.871,55.262,58.169,63.398,67.4774,70.094,75.909,80.94,85.008,89.076,93.72,98.175,101.657,104.564,109.595" svgx:width="0.61,0.28,0.5,0.39,0.55,0.56,0.48,0.39,0.39,0.44,0.43,0.33,0.28,0.48,0.5" style="fill:rgb(0,0,0);font-family:Century-BoldCondensed;font-size:10.46px;stroke:none;">Bias Correction</text>
+  </g>
+  <g begin="text">
+   <text y="108.645" x="60.049,67.988,72.5904,76.673,84.224,89.454,92.162,95.456,98.164,103.195,105.903,108.612,113.255,118.27579999999999,122.336,126.98,131.623,136.079,141.309,145.349,149.992,152.9,155.807,160.45,164.905,168.1476,172.241,176.11,178.818,182.886,187.48839999999998,191.571,196.413,200.4924,204.523,207.817,213.046,217.64839999999998,221.731,226.374,231.405,236.435,240.116,244.76,249.404,252.112,259.664,264.307,267.601,270.309,274.953,280.183,284.232,287.526" svgx:width="0.76,0.44,0.55,0.72,0.5,0.26,0.31,0.26,0.48,0.26,0.26,0.44,0.48,0.55,0.44,0.44,0.43,0.5,0.55,0.44,0.28,0.28,0.44,0.43,0.31,0.55,0.37,0.26,0.39,0.44,0.55,0.46,0.39,0.55,0.31,0.5,0.44,0.55,0.44,0.48,0.48,0.35,0.44,0.44,0.26,0.72,0.44,0.31,0.26,0.44,0.5,0.55,0.31,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">We multiplied each effect size by the approximation to</text>
+  </g>
+  <g begin="text">
+   <text y="119.599" x="50.087,53.381,58.61,63.2124,66.432,71.462,76.106,80.561,84.242,88.886,93.529,97.3992,100.577,105.22,108.1488,111.295,114.202,117.883,122.527,127.17,132.201,136.844,144.3752,147.572" svgx:width="0.31,0.5,0.44,0.55,0.48,0.44,0.43,0.35,0.44,0.44,0.37,0.55,0.44,0.28,0.55,0.28,0.35,0.44,0.44,0.48,0.44,0.72,0.55,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">the degrees of freedom (</text>
+  </g>
+  <g begin="text">
+   <text y="119.599" x="152.219,157.448" svgx:width="0.5,0.26" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">df</text>
+  </g>
+  <g begin="text">
+   <text y="119.599" x="160.156,164.8,167.707,172.737,177.381,182.412,187.055,192.284,197.315,201.959,207.188,210.4306,213.668,218.511,221.219,225.863,229.732,232.639,237.094,241.738,245.419,249.1,253.744,258.199,261.493,264.201,268.845,274.07500000000005,277.26,280.167,284.81,289.265" svgx:width="0.44,0.28,0.48,0.44,0.48,0.44,0.5,0.48,0.44,0.5,0.31,0.55,0.46,0.26,0.44,0.37,0.28,0.43,0.44,0.35,0.35,0.44,0.43,0.31,0.26,0.44,0.5,0.55,0.28,0.44,0.43,0.28" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">)-dependent bias-correction fac-</text>
+  </g>
+  <g begin="text">
+   <text y="130.561" x="50.086,53.38,58.023,61.684000000000005,64.989,70.02,73.701,78.344,83.375,88.018,91.888,96.531,101.5518,104.848,109.69,113.7694,117.043,123.821,128.464,133.495,137.95,142.594,146.4642,149.749,154.392,159.036,163.679,168.323,172.967,177.5694,180.896,184.19,188.7924,192.11,197.14,200.822,205.465,210.496,215.725,220.18,224.7824,228.11,232.753,237.98299999999998,241.267,246.497,251.726,256.568,259.277,263.92,267.79,272.433,277.4538,280.749,285.393,289.262" svgx:width="0.31,0.44,0.35,0.55,0.48,0.35,0.44,0.48,0.44,0.37,0.44,0.48,0.55,0.46,0.39,0.55,0.65,0.44,0.48,0.43,0.44,0.37,0.55,0.44,0.44,0.44,0.44,0.44,0.44,0.55,0.31,0.44,0.55,0.48,0.35,0.44,0.48,0.5,0.43,0.44,0.55,0.44,0.5,0.55,0.5,0.5,0.46,0.26,0.44,0.37,0.44,0.48,0.55,0.44,0.37,0.28" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">tor proposed by Hedges (1981) to produce an unbiased es-</text>
+  </g>
+  <g begin="text">
+   <text y="141.522" x="50.086,53.38,56.088,63.64,68.283,71.577,76.221,79.882,83.034,87.677,90.6058,93.716,97.011,102.24,106.8424,110.015,115.046,119.69,124.72,129.95,132.658,137.301,140.596,143.304,147.947,153.177,156.309,160.952,163.859,166.766,171.41,175.865,179.10760000000002,182.291,186.161,188.869,192.937,197.581,199.88219999999998,203.035,208.651,213.881,218.4834,221.648,226.103,230.747,234.428,238.109,242.753,247.208,250.502,253.21,257.854,263.084,266.224,269.131,273.774,278.229,281.523,286.167,289.848" svgx:width="0.31,0.26,0.72,0.44,0.31,0.44,0.35,0.55,0.44,0.28,0.55,0.31,0.5,0.44,0.55,0.48,0.44,0.48,0.5,0.26,0.44,0.31,0.26,0.44,0.5,0.55,0.44,0.28,0.28,0.44,0.43,0.31,0.55,0.37,0.26,0.39,0.44,0.22,0.55,0.54,0.5,0.44,0.55,0.43,0.44,0.35,0.35,0.44,0.43,0.31,0.26,0.44,0.5,0.55,0.28,0.44,0.43,0.31,0.44,0.35,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">timator of the population effect size. The correction factor,</text>
+  </g>
+  <g begin="text">
+   <text y="153.798" x="50.086" svgx:width="0.39" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">c</text>
+  </g>
+  <g begin="text">
+   <text y="153.798" x="54.154" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">(</text>
+  </g>
+  <g begin="text">
+   <text y="153.798" x="58.797,64.027" svgx:width="0.5,0.26" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">df</text>
+  </g>
+  <g begin="text">
+   <text y="153.798" x="66.735,71.378,73.6792,76.149,78.857,82.7272,85.166,89.621,94.265,96.973,101.428,106.658,109.366,114.009,117.303,121.947,126.9678,129.417,134.061" svgx:width="0.44,0.22,0.55,0.26,0.37,0.55,0.43,0.44,0.26,0.43,0.5,0.26,0.44,0.31,0.44,0.48,0.55,0.44,0.37" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">), is calculated as</text>
+  </g>
+  <g begin="text">
+   <text y="153.798" x="140.373" svgx:width="0.39" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">c</text>
+  </g>
+  <g begin="text">
+   <text y="153.906" x="146.969" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">(</text>
+  </g>
+  <g begin="text">
+   <text y="153.798" x="151.613,156.843,158.669" svgx:width="0.5,0.55,0.26" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">d f</text>
+  </g>
+  <g begin="text">
+   <text y="153.906" x="163.763" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">)</text>
+  </g>
+  <g begin="text">
+   <text y="153.798" x="171.314" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">=</text>
+  </g>
+  <g begin="text">
+   <text y="153.798" x="182.375" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">1</text>
+  </g>
+  <g begin="text">
+   <text y="153.798" x="189.35" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">−</text>
+  </g>
+  <g begin="text">
+   <text y="149.577" x="209.763" svgx:width="0.44" style="fill:rgb(23,22,21);font-family:Century-LightCondensed;font-size:7.32px;stroke:none;">3</text>
+  </g>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:1.0;" d="M201.020 151.180 L221.740 151.180 "/>
+  <g begin="text">
+   <text y="157.515" x="201.024" svgx:width="0.44" style="fill:rgb(23,22,21);font-family:Century-LightCondensed;font-size:7.32px;stroke:none;">4</text>
+  </g>
+  <g begin="text">
+   <text y="157.515" x="204.273,207.933,209.214" svgx:width="0.5,0.55,0.26" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">d f</text>
+  </g>
+  <g begin="text">
+   <text y="157.515" x="212.778" svgx:width="0.78" style="fill:rgb(23,22,21);font-family:MTSY;font-size:7.32px;stroke:none;">−</text>
+  </g>
+  <g begin="text">
+   <text y="157.515" x="218.493" svgx:width="0.44" style="fill:rgb(23,22,21);font-family:Century-LightCondensed;font-size:7.32px;stroke:none;">1</text>
+  </g>
+  <g begin="text">
+   <text y="153.798" x="225.378,231.769,236.998,241.641,245.323" svgx:width="0.61,0.5,0.44,0.35,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">where</text>
+  </g>
+  <g begin="text">
+   <text y="153.798" x="252.406" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">n</text>
+  </g>
+  <g begin="text">
+   <text y="153.798" x="260.658" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">=</text>
+  </g>
+  <g begin="text">
+   <text y="153.798" x="271.26,276.489,281.719,289.27" svgx:width="0.5,0.5,0.72,0.28" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">num-</text>
+  </g>
+  <g begin="text">
+   <text y="167.487" x="50.085,54.928,59.571,63.232,65.755,70.398,73.32679999999999,75.807,79.677,82.971,88.2,93.231,97.874,103.104,106.398,110.2682,112.779,117.423,122.652" svgx:width="0.46,0.44,0.35,0.55,0.44,0.28,0.55,0.37,0.31,0.5,0.48,0.44,0.5,0.31,0.37,0.55,0.44,0.5,0.48" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">ber of students and</text>
+  </g>
+  <g begin="text">
+   <text y="167.487" x="130.176,135.406" svgx:width="0.5,0.26" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">df</text>
+  </g>
+  <g begin="text">
+   <text y="167.487" x="140.616" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">=</text>
+  </g>
+  <g begin="text">
+   <text y="167.487" x="151.281" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">n</text>
+  </g>
+  <g begin="text">
+   <text y="167.487" x="157.095,160.002,164.6044,167.148,170.055,174.699,178.36,180.882,184.563,189.207,194.237,198.881,203.524,206.818,211.462,216.493,219.4,226.951,231.595,236.238,240.108,245.337,249.018,253.662,257.5322,260.043,265.074,269.717,273.587,276.295,280.75,285.98,289.849" svgx:width="0.28,0.44,0.55,0.28,0.44,0.35,0.55,0.35,0.44,0.48,0.44,0.44,0.31,0.44,0.48,0.28,0.72,0.44,0.44,0.37,0.5,0.35,0.44,0.37,0.55,0.48,0.44,0.37,0.26,0.43,0.5,0.37,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">-1 for repeated-measures designs,</text>
+  </g>
+  <g begin="text">
+   <text y="178.449" x="50.085,54.729,59.958" svgx:width="0.44,0.5,0.48" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">and</text>
+  </g>
+  <g begin="text">
+   <text y="178.449" x="66.367" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">n</text>
+  </g>
+  <g begin="text">
+   <text y="178.449" x="74.98" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">=</text>
+  </g>
+  <g begin="text">
+   <text y="178.557" x="86.05" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">(</text>
+  </g>
+  <g begin="text">
+   <text y="178.449" x="90.693" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">n</text>
+  </g>
+  <g begin="text">
+   <text y="180.015" x="97.119" svgx:width="0.54" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">A</text>
+  </g>
+  <g begin="text">
+   <text y="178.449" x="102.231" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">n</text>
+  </g>
+  <g begin="text">
+   <text y="180.015" x="108.297" svgx:width="0.46" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">S</text>
+  </g>
+  <g begin="text">
+   <text y="178.557" x="112.797" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">)</text>
+  </g>
+  <g begin="text">
+   <text y="178.449" x="119.188" svgx:width="0.47" style="fill:rgb(0,0,0);font-family:RMTMI;font-size:10.46px;stroke:none;">/</text>
+  </g>
+  <g begin="text">
+   <text y="178.557" x="125.848" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">(</text>
+  </g>
+  <g begin="text">
+   <text y="178.449" x="130.491" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">n</text>
+  </g>
+  <g begin="text">
+   <text y="180.015" x="136.917" svgx:width="0.54" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">A</text>
+  </g>
+  <g begin="text">
+   <text y="178.449" x="144.36" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">+</text>
+  </g>
+  <g begin="text">
+   <text y="178.449" x="154.845" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">n</text>
+  </g>
+  <g begin="text">
+   <text y="180.015" x="160.911" svgx:width="0.46" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">S</text>
+  </g>
+  <g begin="text">
+   <text y="178.557" x="165.411" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">)</text>
+  </g>
+  <g begin="text">
+   <text y="178.449" x="171.432,176.076,181.305" svgx:width="0.44,0.5,0.48" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">and</text>
+  </g>
+  <g begin="text">
+   <text y="178.449" x="187.713,192.94299999999998,194.769" svgx:width="0.5,0.55,0.26" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">d f</text>
+  </g>
+  <g begin="text">
+   <text y="178.449" x="202.771" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">=</text>
+  </g>
+  <g begin="text">
+   <text y="178.449" x="213.84" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">n</text>
+  </g>
+  <g begin="text">
+   <text y="180.015" x="220.266" svgx:width="0.54" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">A</text>
+  </g>
+  <g begin="text">
+   <text y="178.449" x="227.709" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">+</text>
+  </g>
+  <g begin="text">
+   <text y="178.449" x="238.185" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">n</text>
+  </g>
+  <g begin="text">
+   <text y="180.015" x="244.251" svgx:width="0.46" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">S</text>
+  </g>
+  <g begin="text">
+   <text y="178.449" x="251.073" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">−</text>
+  </g>
+  <g begin="text">
+   <text y="178.449" x="261.558,266.1604,267.579,273.97,279.199,283.842,287.524" svgx:width="0.44,0.55,0.61,0.5,0.44,0.35,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">2 where</text>
+  </g>
+  <g begin="text">
+   <text y="189.411" x="50.084" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">n</text>
+  </g>
+  <g begin="text">
+   <text y="190.977" x="56.511" svgx:width="0.54" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">A</text>
+  </g>
+  <g begin="text">
+   <text y="189.411" x="61.632,64.34,68.2102,69.506,72.8,78.029,83.969,89.198,94.428,101.979,106.822,111.465,115.126,116.442,121.086,124.0148,125.289,129.159,132.453,137.682,142.713,147.356,152.586,155.88,159.7502,161.045,164.339,168.983,174.013,176.722,181.951,187.702,190.997,196.226,202.166,206.809,211.264,215.72,220.363,227.915,235.467,240.11,245.141,249.784,253.078,257.722,264.049,268.692,273.723,281.274,283.983,289.212" svgx:width="0.26,0.37,0.55,0.31,0.5,0.44,0.5,0.5,0.72,0.46,0.44,0.35,0.55,0.44,0.28,0.55,0.37,0.31,0.5,0.48,0.44,0.5,0.31,0.37,0.55,0.31,0.44,0.48,0.26,0.5,0.43,0.31,0.5,0.44,0.44,0.43,0.43,0.44,0.72,0.72,0.44,0.48,0.44,0.31,0.44,0.48,0.44,0.48,0.72,0.26,0.5,0.28" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">is thenumber of students takingtheaccommodatedadmin-</text>
+  </g>
+  <g begin="text">
+   <text y="200.364" x="50.085,52.794,56.663,59.957,63.638,68.282,71.576,74.284,78.928,84.158,85.894,90.537,95.767" svgx:width="0.26,0.37,0.31,0.35,0.44,0.31,0.26,0.44,0.5,0.55,0.44,0.5,0.48" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">istration and</text>
+  </g>
+  <g begin="text">
+   <text y="200.364" x="102.538" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">n</text>
+  </g>
+  <g begin="text">
+   <text y="201.93" x="108.603" svgx:width="0.46" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">S</text>
+  </g>
+  <g begin="text">
+   <text y="200.364" x="113.112,115.82,119.69019999999999,121.427,124.721,129.951,134.55339999999998,136.332,141.561,146.791,154.342,159.184,163.828,167.489,169.246,173.889,176.8178,178.533,182.402,185.696,190.926,195.956,200.6,205.829,209.123,212.9932,214.73,218.024,222.668,227.699,230.407,235.636,240.1338,241.828,245.122,250.351,254.9534,256.733,260.602,263.896,268.54,273.769,278.8,283.443,287.124" svgx:width="0.26,0.37,0.55,0.31,0.5,0.44,0.55,0.5,0.5,0.72,0.46,0.44,0.35,0.55,0.44,0.28,0.55,0.37,0.31,0.5,0.48,0.44,0.5,0.31,0.37,0.55,0.31,0.44,0.48,0.26,0.5,0.43,0.55,0.31,0.5,0.44,0.55,0.37,0.31,0.44,0.5,0.48,0.44,0.35,0.48" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">is the number of students taking the standard</text>
+  </g>
+  <g begin="text">
+   <text y="211.326" x="50.085,54.728,59.759,67.31,70.019,75.248,77.956,81.826,85.12,88.801,93.445,96.739,99.447,104.091,109.321,111.66,114.567,119.211,122.872,125.214,127.922,133.152,138.182,142.826,147.856,152.5,157.729,162.76,167.404,172.633,175.927,178.834,183.289,186.97,191.614,196.843,201.874,205.7442,208.084,213.114,217.758,221.627,224.335,228.791,234.02,237.889" svgx:width="0.44,0.48,0.72,0.26,0.5,0.26,0.37,0.31,0.35,0.44,0.31,0.26,0.44,0.5,0.55,0.28,0.44,0.35,0.55,0.26,0.5,0.48,0.44,0.48,0.44,0.5,0.48,0.44,0.5,0.31,0.28,0.43,0.35,0.44,0.5,0.48,0.37,0.55,0.48,0.44,0.37,0.26,0.43,0.5,0.37,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">administration for independent-groups designs.</text>
+  </g>
+  <g begin="text">
+   <text y="228.264" x="48.87,57.008,59.915,63.397,68.626,71.533,76.763,79.084,84.313,87.796,93.025,98.255,102.7528,105.347,110.576,115.806,123.169,128.398,131.305,134.212,139.442,144.0444,146.705,151.934,157.163,161.232,164.139,169.368,174.597,179.053" svgx:width="0.78,0.28,0.33,0.5,0.28,0.5,0.22,0.5,0.33,0.5,0.5,0.43,0.55,0.5,0.5,0.7,0.5,0.28,0.28,0.5,0.44,0.55,0.5,0.5,0.39,0.28,0.5,0.5,0.43,0.44" style="fill:rgb(0,0,0);font-family:Century-BoldCondensed;font-size:10.46px;stroke:none;">Within-Study Sampling Variance</text>
+  </g>
+  <g begin="text">
+   <text y="244.203" x="60.049,67.987,72.5894,74.674,79.129,83.773,91.324,96.355,101.584,104.878,109.522,114.5428,116.605,119.899,125.128,129.7304,131.815,138.205,140.914,144.208,149.437,152.145,157.375,160.282,164.151,167.445,172.675,177.705,181.7844,183.825,187.694,192.338,199.89,204.92,207.628,210.337,215.566,220.06380000000001,222.064,226.322,230.965,234.647,237.355,241.998,247.228,251.683,256.2854,258.379,261.286,265.93,269.591,271.654,274.362,279.591,284.622,289.266" svgx:width="0.76,0.44,0.55,0.43,0.44,0.72,0.48,0.5,0.31,0.44,0.48,0.55,0.31,0.5,0.44,0.55,0.61,0.26,0.31,0.5,0.26,0.5,0.28,0.37,0.31,0.5,0.48,0.39,0.55,0.37,0.44,0.72,0.48,0.26,0.26,0.5,0.43,0.55,0.41,0.44,0.35,0.26,0.44,0.5,0.43,0.44,0.55,0.28,0.44,0.35,0.55,0.26,0.5,0.48,0.44,0.28" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">We computed the within-study sampling variance for inde-</text>
+  </g>
+  <g begin="text">
+   <text y="255.157" x="50.086,55.116,59.76,64.989,70.02,74.663,79.893,83.1356,85.517,89.973,93.654,98.297,103.527,108.557,112.4272,114.759,119.402,126.18,130.823,135.854,140.309,144.953,148.822,151.1232,153.466,158.109,162.753,167.396,172.04,176.64239999999998,179.015,183.659" svgx:width="0.48,0.44,0.5,0.48,0.44,0.5,0.31,0.55,0.43,0.35,0.44,0.5,0.48,0.37,0.55,0.44,0.65,0.44,0.48,0.43,0.44,0.37,0.22,0.55,0.44,0.44,0.44,0.44,0.44,0.55,0.44,0.37" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">pendent groups (Hedges, 1981) as</text>
+  </g>
+  <g begin="text">
+   <text y="283.282" x="52.183" svgx:width="0.26" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">ˆ</text>
+  </g>
+  <g begin="text">
+   <text y="283.282" x="50.086" svgx:width="0.53" style="fill:rgb(0,0,0);font-family:RMTMI;font-size:10.46px;stroke:none;">σ</text>
+  </g>
+  <g begin="text">
+   <text y="278.961" x="57.033" svgx:width="0.44" style="fill:rgb(23,22,21);font-family:Century-LightCondensed;font-size:7.32px;stroke:none;">2</text>
+  </g>
+  <g begin="text">
+   <text y="286.089" x="55.674" svgx:width="0.39" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">e</text>
+  </g>
+  <g begin="text">
+   <text y="287.187" x="58.887" svgx:width="0.28" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:5.23px;stroke:none;">i</text>
+  </g>
+  <g begin="text">
+   <text y="283.281" x="64.755" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">=</text>
+  </g>
+  <g begin="text">
+   <text y="268.593" code="4" x="75.816" svgx:width="0.68" style="fill:rgb(0,0,0);font-family:MTEX;font-size:10.46px;stroke:none;">?</text>
+  </g>
+  <g begin="text">
+   <text y="275.946" x="84.6" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">1</text>
+  </g>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.49;" d="M84.070 280.660 L89.780 280.660 "/>
+  <g begin="text">
+   <text y="290.706" x="84.069" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">n</text>
+  </g>
+  <g begin="text">
+   <text y="268.593" code="4" x="92.709" svgx:width="0.68" style="fill:rgb(0,0,0);font-family:MTEX;font-size:10.46px;stroke:none;">?</text>
+  </g>
+  <g begin="text">
+   <text y="275.946" x="101.682" svgx:width="0.59" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">N</text>
+  </g>
+  <g begin="text">
+   <text y="275.946" x="112.194" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">−</text>
+  </g>
+  <g begin="text">
+   <text y="275.946" x="122.679" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">2</text>
+  </g>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.49;" d="M100.970 280.660 L127.330 280.660 "/>
+  <g begin="text">
+   <text y="290.706" x="101.682" svgx:width="0.59" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">N</text>
+  </g>
+  <g begin="text">
+   <text y="290.706" x="112.194" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">−</text>
+  </g>
+  <g begin="text">
+   <text y="290.706" x="122.679" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">4</text>
+  </g>
+  <g begin="text">
+   <text y="268.593" code="5" x="128.52" svgx:width="0.68" style="fill:rgb(0,0,0);font-family:MTEX;font-size:10.46px;stroke:none;">?</text>
+  </g>
+  <g begin="text">
+   <text y="274.866" code="6" x="137.322" svgx:width="0.4" style="fill:rgb(0,0,0);font-family:MTEX;font-size:10.46px;stroke:none;">?</text>
+  </g>
+  <g begin="text">
+   <text y="283.281" x="141.543" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">1</text>
+  </g>
+  <g begin="text">
+   <text y="283.281" x="148.509" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">+</text>
+  </g>
+  <g begin="text">
+   <text y="283.281" x="158.994" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">n</text>
+  </g>
+  <g begin="text">
+   <text y="283.281" x="164.691" svgx:width="0.69" style="fill:rgb(0,0,0);font-family:RMTMI;font-size:10.46px;stroke:none;">μ</text>
+  </g>
+  <g begin="text">
+   <text y="278.961" x="171.864" svgx:width="0.44" style="fill:rgb(23,22,21);font-family:Century-LightCondensed;font-size:7.32px;stroke:none;">2</text>
+  </g>
+  <g begin="text">
+   <text y="274.866" code="7" x="175.617" svgx:width="0.4" style="fill:rgb(0,0,0);font-family:MTEX;font-size:10.46px;stroke:none;">?</text>
+  </g>
+  <g begin="text">
+   <text y="268.593" code="5" x="179.838" svgx:width="0.68" style="fill:rgb(0,0,0);font-family:MTEX;font-size:10.46px;stroke:none;">?</text>
+  </g>
+  <g begin="text">
+   <text y="283.281" x="189.225" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">−</text>
+  </g>
+  <g begin="text">
+   <text y="275.946" x="223.075" svgx:width="0.69" style="fill:rgb(0,0,0);font-family:RMTMI;font-size:10.46px;stroke:none;">μ</text>
+  </g>
+  <g begin="text">
+   <text y="272.148" x="230.247" svgx:width="0.44" style="fill:rgb(23,22,21);font-family:Century-LightCondensed;font-size:7.32px;stroke:none;">2</text>
+  </g>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.49;" d="M200.900 280.660 L256.180 280.660 "/>
+  <g begin="text">
+   <text y="292.407" x="200.898" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">[</text>
+  </g>
+  <g begin="text">
+   <text y="292.191" x="205.542" svgx:width="0.39" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">c</text>
+  </g>
+  <g begin="text">
+   <text y="292.299" x="212.138" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">(</text>
+  </g>
+  <g begin="text">
+   <text y="292.191" x="217.493" svgx:width="0.59" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">N</text>
+  </g>
+  <g begin="text">
+   <text y="292.191" x="228.014" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">−</text>
+  </g>
+  <g begin="text">
+   <text y="292.191" x="238.499" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">2</text>
+  </g>
+  <g begin="text">
+   <text y="292.299" x="243.143" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">)</text>
+  </g>
+  <g begin="text">
+   <text y="292.407" x="247.786" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">]</text>
+  </g>
+  <g begin="text">
+   <text y="287.565" x="252.432" svgx:width="0.44" style="fill:rgb(23,22,21);font-family:Century-LightCondensed;font-size:7.32px;stroke:none;">2</text>
+  </g>
+  <g begin="text">
+   <text y="283.281" x="257.373" svgx:width="0.33" style="fill:rgb(0,0,0);font-family:RMTMI;font-size:10.46px;stroke:none;">,</text>
+  </g>
+  <g begin="text">
+   <text y="283.281" x="278.244,282.888,287.531" svgx:width="0.44,0.44,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">(3)</text>
+  </g>
+  <g begin="text">
+   <text y="311.523" x="50.085,56.475,61.705,66.348,70.029" svgx:width="0.61,0.5,0.44,0.35,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">where</text>
+  </g>
+  <g begin="text">
+   <text y="311.523" x="77.796" svgx:width="0.69" style="fill:rgb(0,0,0);font-family:RMTMI;font-size:10.46px;stroke:none;">μ</text>
+  </g>
+  <g begin="text">
+   <text y="311.523" x="88.091,90.799,94.6692,97.792,101.087,106.316,110.9184,114.074,118.717,122.974,127.617,131.298,135.942,138.65,141.36960000000002,144.482,149.126,152.033,154.94,159.583,164.039,167.333" svgx:width="0.26,0.37,0.55,0.31,0.5,0.44,0.55,0.44,0.41,0.44,0.35,0.44,0.26,0.26,0.55,0.44,0.28,0.28,0.44,0.43,0.31,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">is the overall effect,</text>
+  </g>
+  <g begin="text">
+   <text y="311.523" x="172.79" svgx:width="0.59" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">N</text>
+  </g>
+  <g begin="text">
+   <text y="311.523" x="182.105,184.814,188.6842,191.807,195.101,200.33,204.9324,208.097,212.553,217.196,224.748,229.59,232.298,237.528,242.171,247.1918,250.326,255.555,260.784,268.336,273.178,277.822,281.483,284.626,289.269" svgx:width="0.26,0.37,0.55,0.31,0.5,0.44,0.55,0.43,0.44,0.72,0.46,0.26,0.5,0.44,0.48,0.55,0.5,0.5,0.72,0.46,0.44,0.35,0.55,0.44,0.28" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">is the combined number of</text>
+  </g>
+  <g begin="text">
+   <text y="322.485" x="50.084,53.953,57.247,62.477,67.507,72.151,77.38,80.674,84.5442,86.803,89.512,94.742,97.0,100.294,105.523,110.1254,112.417,116.872,120.553,125.197,130.426,135.457,139.3272,141.586,146.229,151.458" svgx:width="0.37,0.31,0.5,0.48,0.44,0.5,0.31,0.37,0.55,0.26,0.5,0.55,0.31,0.5,0.44,0.55,0.43,0.35,0.44,0.5,0.48,0.37,0.55,0.44,0.5,0.48" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">students in the groups and</text>
+  </g>
+  <g begin="text">
+   <text y="322.485" x="158.751,162.819,166.887,172.116,174.825" svgx:width="0.39,0.39,0.5,0.26,0.39" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">c(df)</text>
+  </g>
+  <g begin="text">
+   <text y="322.485" x="181.143,185.787,191.016" svgx:width="0.44,0.5,0.48" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">and</text>
+  </g>
+  <g begin="text">
+   <text y="322.485" x="198.306" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">n</text>
+  </g>
+  <g begin="text">
+   <text y="322.485" x="206.37,211.014,214.88420000000002,217.143,222.173,225.855,230.498,234.755,237.463,242.107,247.336,251.205,253.914,257.9934,260.24,265.271,269.914,274.945,280.174,284.818,289.849" svgx:width="0.44,0.37,0.55,0.48,0.35,0.44,0.41,0.26,0.44,0.5,0.37,0.26,0.39,0.55,0.48,0.44,0.48,0.5,0.44,0.48,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">as previously deﬁned.</text>
+  </g>
+  <g begin="text">
+   <text y="333.438" x="50.085,58.024,63.973,68.428,73.071,80.623,85.654,90.883,94.177,98.821,105.157,108.451,113.68,119.629,126.02,128.728,132.022,137.252,139.96,145.189,148.096,151.966,155.26,160.489,165.52,169.5994,170.893,174.762,179.406,186.957,191.988,194.696,197.404,202.634,208.393,212.651,217.295,220.976,223.684,228.328,233.557,238.012,243.961,246.868,251.512,255.173,256.497,260.179,264.822,269.853,274.496,279.14,282.434,287.078" svgx:width="0.76,0.44,0.43,0.44,0.72,0.48,0.5,0.31,0.44,0.48,0.31,0.5,0.44,0.61,0.26,0.31,0.5,0.26,0.5,0.28,0.37,0.31,0.5,0.48,0.39,0.55,0.37,0.44,0.72,0.48,0.26,0.26,0.5,0.43,0.41,0.44,0.35,0.26,0.44,0.5,0.43,0.44,0.28,0.44,0.35,0.55,0.35,0.44,0.48,0.44,0.44,0.31,0.44,0.48" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">Wecomputedthewithin-study samplingvariancefor repeated</text>
+  </g>
+  <g begin="text">
+   <text y="344.4" x="50.085,57.637,62.28,66.924,70.793,76.022,79.704,84.347,88.21719999999999,90.548,95.192" svgx:width="0.72,0.44,0.44,0.37,0.5,0.35,0.44,0.37,0.55,0.44,0.37" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">measures as</text>
+  </g>
+  <g begin="text">
+   <text y="369.475" x="52.182" svgx:width="0.26" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">ˆ</text>
+  </g>
+  <g begin="text">
+   <text y="369.475" x="50.085" svgx:width="0.53" style="fill:rgb(0,0,0);font-family:RMTMI;font-size:10.46px;stroke:none;">σ</text>
+  </g>
+  <g begin="text">
+   <text y="365.154" x="57.033" svgx:width="0.44" style="fill:rgb(23,22,21);font-family:Century-LightCondensed;font-size:7.32px;stroke:none;">2</text>
+  </g>
+  <g begin="text">
+   <text y="372.291" x="55.674" svgx:width="0.39" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">e</text>
+  </g>
+  <g begin="text">
+   <text y="373.389" x="58.887" svgx:width="0.28" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:5.23px;stroke:none;">i</text>
+  </g>
+  <g begin="text">
+   <text y="369.474" x="64.836" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">=</text>
+  </g>
+  <g begin="text">
+   <text y="354.786" code="8" x="75.978" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:MTEX;font-size:10.46px;stroke:none;">?</text>
+  </g>
+  <g begin="text">
+   <text y="362.139" x="82.881" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">2</text>
+  </g>
+  <g begin="text">
+   <text y="362.247" x="89.271" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">(</text>
+  </g>
+  <g begin="text">
+   <text y="362.139" x="93.915" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">1</text>
+  </g>
+  <g begin="text">
+   <text y="362.139" x="100.881" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">−</text>
+  </g>
+  <g begin="text">
+   <text y="362.139" x="111.366" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:RMTMI;font-size:10.46px;stroke:none;">ρ</text>
+  </g>
+  <g begin="text">
+   <text y="362.247" x="117.692" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">)</text>
+  </g>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.49;" d="M82.880 366.860 L122.350 366.860 "/>
+  <g begin="text">
+   <text y="376.899" x="99.756" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">n</text>
+  </g>
+  <g begin="text">
+   <text y="354.786" code="9" x="123.534,130.977" svgx:width="0.55,0.68" style="fill:rgb(0,0,0);font-family:MTEX;font-size:10.46px;stroke:none;">??</text>
+  </g>
+  <g begin="text">
+   <text y="362.139" x="139.239" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">n</text>
+  </g>
+  <g begin="text">
+   <text y="362.139" x="147.258" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">−</text>
+  </g>
+  <g begin="text">
+   <text y="362.139" x="157.743" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">1</text>
+  </g>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.49;" d="M139.240 366.860 L162.400 366.860 "/>
+  <g begin="text">
+   <text y="376.899" x="139.239" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">n</text>
+  </g>
+  <g begin="text">
+   <text y="376.899" x="147.258" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">−</text>
+  </g>
+  <g begin="text">
+   <text y="376.899" x="157.743" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">3</text>
+  </g>
+  <g begin="text">
+   <text y="354.786" code="5" x="163.584,172.386" svgx:width="0.68,0.55" style="fill:rgb(0,0,0);font-family:MTEX;font-size:10.46px;stroke:none;">??</text>
+  </g>
+  <g begin="text">
+   <text y="369.474" x="178.092" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">1</text>
+  </g>
+  <g begin="text">
+   <text y="369.474" x="185.058" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">+</text>
+  </g>
+  <g begin="text">
+   <text y="362.139" x="213.615" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">n</text>
+  </g>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.49;" d="M196.740 366.860 L236.210 366.860 "/>
+  <g begin="text">
+   <text y="376.899" x="196.74" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">2</text>
+  </g>
+  <g begin="text">
+   <text y="377.007" x="203.13" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">(</text>
+  </g>
+  <g begin="text">
+   <text y="376.899" x="207.774" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">1</text>
+  </g>
+  <g begin="text">
+   <text y="376.899" x="214.74" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">−</text>
+  </g>
+  <g begin="text">
+   <text y="376.899" x="225.225" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:RMTMI;font-size:10.46px;stroke:none;">ρ</text>
+  </g>
+  <g begin="text">
+   <text y="377.007" x="231.551" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">)</text>
+  </g>
+  <g begin="text">
+   <text y="369.474" x="237.393" svgx:width="0.69" style="fill:rgb(0,0,0);font-family:RMTMI;font-size:10.46px;stroke:none;">μ</text>
+  </g>
+  <g begin="text">
+   <text y="365.154" x="244.566" svgx:width="0.44" style="fill:rgb(23,22,21);font-family:Century-LightCondensed;font-size:7.32px;stroke:none;">2</text>
+  </g>
+  <g begin="text">
+   <text y="354.786" code="9" x="248.319" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:MTEX;font-size:10.46px;stroke:none;">?</text>
+  </g>
+  <g begin="text">
+   <text y="402.738" x="75.978" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">−</text>
+  </g>
+  <g begin="text">
+   <text y="395.403" x="105.912" svgx:width="0.69" style="fill:rgb(0,0,0);font-family:RMTMI;font-size:10.46px;stroke:none;">μ</text>
+  </g>
+  <g begin="text">
+   <text y="391.605" x="113.085" svgx:width="0.44" style="fill:rgb(23,22,21);font-family:Century-LightCondensed;font-size:7.32px;stroke:none;">2</text>
+  </g>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.49;" d="M85.340 400.120 L137.420 400.120 "/>
+  <g begin="text">
+   <text y="411.756" x="85.338" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">[</text>
+  </g>
+  <g begin="text">
+   <text y="411.54" x="89.982" svgx:width="0.39" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">c</text>
+  </g>
+  <g begin="text">
+   <text y="411.648" x="96.578" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">(</text>
+  </g>
+  <g begin="text">
+   <text y="411.54" x="101.222" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">n</text>
+  </g>
+  <g begin="text">
+   <text y="411.54" x="109.249" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">−</text>
+  </g>
+  <g begin="text">
+   <text y="411.54" x="119.734" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">1</text>
+  </g>
+  <g begin="text">
+   <text y="411.648" x="124.378" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">)</text>
+  </g>
+  <g begin="text">
+   <text y="411.756" x="129.021" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">]</text>
+  </g>
+  <g begin="text">
+   <text y="407.022" x="133.668" svgx:width="0.44" style="fill:rgb(23,22,21);font-family:Century-LightCondensed;font-size:7.32px;stroke:none;">2</text>
+  </g>
+  <g begin="text">
+   <text y="402.738" x="138.609" svgx:width="0.33" style="fill:rgb(0,0,0);font-family:RMTMI;font-size:10.46px;stroke:none;">,</text>
+  </g>
+  <g begin="text">
+   <text y="402.738" x="278.244,282.887,287.531" svgx:width="0.44,0.44,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">(4)</text>
+  </g>
+  <g begin="text">
+   <text y="430.872" x="50.084,56.475,59.183,62.477" svgx:width="0.61,0.26,0.31,0.5" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">with</text>
+  </g>
+  <g begin="text">
+   <text y="430.872" x="71.361" svgx:width="0.69" style="fill:rgb(0,0,0);font-family:RMTMI;font-size:10.46px;stroke:none;">μ</text>
+  </g>
+  <g begin="text">
+   <text y="430.872" x="82.197,86.841,92.07" svgx:width="0.44,0.5,0.48" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">and</text>
+  </g>
+  <g begin="text">
+   <text y="430.872" x="100.756" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">n</text>
+  </g>
+  <g begin="text">
+   <text y="430.872" x="110.224,114.867,118.7372,122.382,127.413,131.094,135.738,139.994,142.702,147.346,152.575,156.445,159.153,163.23239999999998,166.883,171.914,176.558,181.588,186.818,191.461,196.492,198.79319999999998,202.468,207.112,212.341" svgx:width="0.44,0.37,0.55,0.48,0.35,0.44,0.41,0.26,0.44,0.5,0.37,0.26,0.39,0.55,0.48,0.44,0.48,0.5,0.44,0.48,0.22,0.55,0.44,0.5,0.48" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">as previously deﬁned, and</text>
+  </g>
+  <g begin="text">
+   <text y="430.872" x="221.032" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:RMTMI;font-size:10.46px;stroke:none;">ρ</text>
+  </g>
+  <g begin="text">
+   <text y="430.872" x="231.012,234.306,239.536,244.1384,247.833,252.289,256.932,260.613,264.294,268.938,271.646,276.29,279.584,282.292,286.936" svgx:width="0.31,0.5,0.44,0.55,0.43,0.44,0.35,0.35,0.44,0.26,0.44,0.31,0.26,0.44,0.5" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">the correlation</text>
+  </g>
+  <g begin="text">
+   <text y="441.834" x="50.084,54.927,59.57,62.864,69.255,73.898,78.542,83.772,87.749,91.618,96.073,100.717,104.398,109.042,112.9122,116.881,119.788,123.469,128.113,135.6442,139.633,142.927,148.157,152.7594,156.761,160.63,163.924,168.568,173.797,178.828,183.471,187.152,192.1728,196.161,200.805,206.034,211.0548,215.025,219.669,224.124,228.579,233.223,240.774,248.326,252.97,258.0,262.644,265.938,270.581,275.6018,279.59,284.234,289.264" svgx:width="0.46,0.44,0.31,0.61,0.44,0.44,0.5,0.55,0.37,0.43,0.44,0.35,0.44,0.37,0.55,0.28,0.35,0.44,0.72,0.55,0.31,0.5,0.44,0.55,0.37,0.31,0.44,0.5,0.48,0.44,0.35,0.48,0.55,0.44,0.5,0.48,0.55,0.44,0.43,0.43,0.44,0.72,0.72,0.44,0.48,0.44,0.31,0.44,0.48,0.55,0.44,0.48,0.28" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">between scores from the standard and accommodated ad-</text>
+  </g>
+  <g begin="text">
+   <text y="452.788" x="50.084,57.636,60.344,65.574,68.282,72.152,75.446,79.127,83.77,87.064,89.773,94.416,99.646,103.515,105.8162,108.303,114.694,119.337,122.631,127.2334,129.724,133.018,138.247,142.891,146.1336,148.642,151.936,157.165,161.76739999999998,164.266,167.173,171.817,175.498,183.05,188.279,190.987,195.58939999999998,198.088,200.797,204.6672,207.116,214.666,217.375,221.244,226.275,229.956,232.664,237.894,241.188,245.831,250.8518,253.319,256.027,261.257,263.713,269.716,274.36,278.815,283.846,288.489" svgx:width="0.72,0.26,0.5,0.26,0.37,0.31,0.35,0.44,0.31,0.26,0.44,0.5,0.37,0.22,0.55,0.61,0.44,0.31,0.44,0.55,0.31,0.5,0.44,0.31,0.55,0.31,0.5,0.44,0.55,0.28,0.44,0.35,0.72,0.5,0.26,0.44,0.55,0.26,0.37,0.55,0.72,0.26,0.37,0.48,0.35,0.26,0.5,0.31,0.44,0.48,0.55,0.26,0.5,0.55,0.57,0.44,0.43,0.48,0.44,0.35" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">ministrations. Note that the formula is misprinted in Becker</text>
+  </g>
+  <g begin="text">
+   <text y="463.749" x="50.084,54.728,59.372,64.015,68.659,73.302,77.946,80.24719999999999,82.041,89.98,94.5824,96.397,101.626,105.495,110.139,115.15979999999999,116.943,120.237,125.466,130.0684,131.883,136.338,140.982,144.663,148.344,152.987,157.443,160.68560000000002,162.518,165.425,170.069,173.75,181.302,186.531,189.239,193.8414,195.656,198.563,202.244,206.888,216.211,223.763,228.407,232.088,235.769,238.477,242.34720000000002,244.129,248.773,254.002,259.0228,260.806,267.196,271.84,277.069,282.299,286.942" svgx:width="0.44,0.44,0.44,0.44,0.44,0.44,0.22,0.55,0.76,0.44,0.55,0.5,0.37,0.44,0.48,0.55,0.31,0.5,0.44,0.55,0.43,0.44,0.35,0.35,0.44,0.43,0.31,0.55,0.28,0.44,0.35,0.72,0.5,0.26,0.44,0.55,0.28,0.35,0.44,0.72,0.72,0.44,0.35,0.35,0.26,0.37,0.55,0.44,0.5,0.48,0.55,0.61,0.44,0.5,0.5,0.44,0.5" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">(1988). We used the correct formula fromMorris and DeShon</text>
+  </g>
+  <g begin="text">
+   <text y="474.711" x="50.084,54.728,59.372,64.015,68.659,73.302,77.946" svgx:width="0.44,0.44,0.44,0.44,0.44,0.44,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">(2002).</text>
+  </g>
+  <g begin="text">
+   <text y="485.665" x="60.047,63.53,68.76,71.809,75.104,80.333,84.9354,88.028,92.284,96.928,100.609,103.317,107.961,113.19,117.646,122.2484,125.341,128.248,132.891,136.572,144.124,149.353,152.062,156.705,160.575,162.87619999999998,165.947,172.338,176.94039999999998,180.033,184.676,188.546,191.84,194.548,202.1,206.743,210.037,214.681,219.70180000000002,222.763,226.057,231.286,235.8884,238.981,243.625,247.882,252.525,256.206,260.85,263.558,266.2776,269.318,273.961,276.868,279.775,284.419,288.874" svgx:width="0.33,0.5,0.55,0.31,0.5,0.44,0.55,0.41,0.44,0.35,0.26,0.44,0.5,0.43,0.44,0.55,0.28,0.44,0.35,0.72,0.5,0.26,0.44,0.37,0.22,0.55,0.61,0.44,0.55,0.44,0.37,0.31,0.26,0.72,0.44,0.31,0.44,0.48,0.55,0.31,0.5,0.44,0.55,0.44,0.41,0.44,0.35,0.44,0.26,0.26,0.55,0.44,0.28,0.28,0.44,0.43,0.31" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">In the variance formulas, we estimated the overall effect</text>
+  </g>
+  <g begin="text">
+   <text y="496.627" x="50.084,53.954,56.662,60.73,65.374" svgx:width="0.37,0.26,0.39,0.44,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">size,</text>
+  </g>
+  <g begin="text">
+   <text y="496.627" x="69.47" svgx:width="0.69" style="fill:rgb(0,0,0);font-family:RMTMI;font-size:10.46px;stroke:none;">μ</text>
+  </g>
+  <g begin="text">
+   <text y="496.627" x="76.643,78.9442,80.729,87.12,89.828,93.122,98.352,100.125,103.419,108.648,113.2504,115.057,120.286,125.515,131.906,136.549,139.258,143.713,148.942,152.236,156.88,161.9008,163.684,168.327,172.584,177.227,180.908,185.552,190.007,194.6094,196.424,201.067,203.974,206.881,211.525,215.98,219.2226,221.047,224.917,227.625,231.693,236.2954,238.102,241.009,244.69,249.333,258.657,261.951,267.181,271.7834,273.589,276.297,281.527,286.557,289.266" svgx:width="0.22,0.55,0.61,0.26,0.31,0.5,0.55,0.31,0.5,0.44,0.55,0.5,0.5,0.61,0.44,0.26,0.43,0.5,0.31,0.44,0.48,0.55,0.44,0.41,0.44,0.35,0.44,0.43,0.44,0.55,0.44,0.28,0.28,0.44,0.43,0.31,0.55,0.37,0.26,0.39,0.44,0.55,0.28,0.35,0.44,0.72,0.31,0.5,0.44,0.55,0.26,0.5,0.48,0.26,0.28" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">, with the unweighted average effect size fromthe indi-</text>
+  </g>
+  <g begin="text">
+   <text y="507.589" x="50.084,54.341,57.049,62.08,67.309,71.953,74.6726,77.308,81.763,86.406,93.958,98.989,103.632,107.313,110.022,113.891,118.535,123.764,127.63419999999999,130.28,134.924,142.475,147.119,150.8,154.481,157.189,161.0592,163.705,170.0856,172.742,179.132,183.776,189.005,194.234,198.878,204.107,206.4082,209.075,213.719,218.362,223.006,227.649,232.2514,234.939,239.583,244.812,249.83280000000002,252.489,257.133,261.002,264.297,267.005,274.557,279.2,282.494,287.138" svgx:width="0.41,0.26,0.48,0.5,0.44,0.26,0.55,0.43,0.44,0.72,0.48,0.44,0.35,0.26,0.37,0.44,0.5,0.37,0.55,0.44,0.72,0.44,0.35,0.35,0.26,0.37,0.55,0.61,0.55,0.61,0.44,0.5,0.5,0.44,0.5,0.22,0.55,0.44,0.44,0.44,0.44,0.44,0.55,0.44,0.5,0.48,0.55,0.44,0.37,0.31,0.26,0.72,0.44,0.31,0.44,0.48" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">vidual comparisons (Morris &amp; DeShon, 2002) and estimated</text>
+  </g>
+  <g begin="text">
+   <text y="518.542" x="50.084,53.379,58.608,63.2104,66.438,71.468,76.112,81.143,86.372,89.08,93.724,97.018,99.726,104.37,109.60000000000001,112.794,117.249,121.893,125.574,129.255,133.898,136.607,141.25,144.544,147.253,151.896,157.126" svgx:width="0.31,0.5,0.44,0.55,0.48,0.44,0.48,0.5,0.26,0.44,0.31,0.26,0.44,0.5,0.55,0.43,0.44,0.35,0.35,0.44,0.26,0.44,0.31,0.26,0.44,0.5,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">the population correlation,</text>
+  </g>
+  <g begin="text">
+   <text y="518.542" x="162.648" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:RMTMI;font-size:10.46px;stroke:none;">ρ</text>
+  </g>
+  <g begin="text">
+   <text y="518.542" x="168.975,171.2762,174.482,179.325" svgx:width="0.22,0.55,0.46,0.39" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">, by</text>
+  </g>
+  <g begin="text">
+   <text y="518.542" x="186.579" svgx:width="0.39" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">r</text>
+  </g>
+  <g begin="text">
+   <text y="518.542" x="190.647,192.94819999999999,196.155,199.449,204.678,209.2804,212.508,217.936,222.58,227.224,230.905,234.774,239.418,244.648,247.832,252.288,256.931,260.612,264.293,268.937,271.645,276.289,279.583,282.291,286.935" svgx:width="0.22,0.55,0.31,0.5,0.44,0.55,0.52,0.44,0.44,0.35,0.37,0.44,0.5,0.55,0.43,0.44,0.35,0.35,0.44,0.26,0.44,0.31,0.26,0.44,0.5" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">, the Pearson correlation</text>
+  </g>
+  <g begin="text">
+   <text y="529.504" x="50.084,54.54,59.183,63.827,66.734,71.764,76.22,78.928,83.572,88.801,92.095" svgx:width="0.43,0.44,0.44,0.28,0.48,0.43,0.26,0.44,0.5,0.31,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">coefﬁcient.</text>
+  </g>
+  <g begin="text">
+   <text y="546.442" x="48.87,55.26,59.904,63.386,69.777,74.42,79.064,84.293,86.615,91.844,95.326,100.556,105.785,110.2828,112.878,118.107,123.336,130.7,135.929,138.836,141.743,146.972,151.5744,154.235,159.465,164.694,168.762,171.669,176.899,182.128,186.583" svgx:width="0.61,0.44,0.33,0.61,0.44,0.44,0.5,0.22,0.5,0.33,0.5,0.5,0.43,0.55,0.5,0.5,0.7,0.5,0.28,0.28,0.5,0.44,0.55,0.5,0.5,0.39,0.28,0.5,0.5,0.43,0.44" style="fill:rgb(0,0,0);font-family:Century-BoldCondensed;font-size:10.46px;stroke:none;">Between-Study Sampling Variance</text>
+  </g>
+  <g begin="text">
+   <text y="562.381" x="60.048,67.987,72.5894,80.254,84.898,88.767,92.062,94.77,102.322,106.965,110.259,114.903,119.9238,127.566,130.86,136.089,140.6914,148.365,153.207,157.851,161.145,167.535,172.179,176.822,182.052,184.959,188.828,192.122,197.352,202.382,206.4614,214.083,217.952,222.596,230.147,235.178,237.886,240.594,245.824,250.32180000000002,257.911,262.169,266.812,270.494,273.202,277.845,283.075,287.53" svgx:width="0.76,0.44,0.55,0.44,0.37,0.31,0.26,0.72,0.44,0.31,0.44,0.48,0.55,0.31,0.5,0.44,0.55,0.46,0.44,0.31,0.61,0.44,0.44,0.5,0.28,0.37,0.31,0.5,0.48,0.39,0.55,0.37,0.44,0.72,0.48,0.26,0.26,0.5,0.43,0.55,0.41,0.44,0.35,0.26,0.44,0.5,0.43,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">We estimated the between-study sampling variance</text>
+  </g>
+  <g begin="text">
+   <text y="575.107" x="50.086,54.729,60.733,65.376,69.057,73.701,78.93,82.8,86.094,90.737,93.446,98.676,103.058,107.702,110.9446,115.369,120.013,122.721,125.042,127.3432,131.738,136.382,141.025,145.669,150.313,154.91539999999998,159.339,163.983" svgx:width="0.44,0.57,0.44,0.35,0.44,0.5,0.37,0.31,0.44,0.26,0.5,0.55,0.44,0.31,0.55,0.44,0.26,0.22,0.22,0.55,0.44,0.44,0.44,0.44,0.44,0.55,0.44,0.37" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">(Borenstein et al., 2009) as</text>
+  </g>
+  <g begin="text">
+   <text y="575.107" x="172.225" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">=</text>
+  </g>
+  <g begin="text">
+   <text y="570.291" x="185.013" svgx:width="0.59" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">Q</text>
+  </g>
+  <g begin="text">
+   <text y="570.291" x="190.701" svgx:width="0.78" style="fill:rgb(23,22,21);font-family:MTSY;font-size:7.32px;stroke:none;">−</text>
+  </g>
+  <g begin="text">
+   <text y="570.291" x="196.416,200.076,201.348" svgx:width="0.5,0.55,0.26" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">d f</text>
+  </g>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.49;" d="M184.490 572.490 L204.920 572.490 "/>
+  <g begin="text">
+   <text y="578.823" x="191.925" svgx:width="0.56" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">C</text>
+  </g>
+  <g begin="text">
+   <text y="575.106" x="206.109,208.4102,212.805,219.195,224.425,229.068,232.75" svgx:width="0.22,0.55,0.61,0.5,0.44,0.35,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">, where</text>
+  </g>
+  <g begin="text">
+   <text y="575.106" x="241.767,246.996" svgx:width="0.5,0.26" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">df</text>
+  </g>
+  <g begin="text">
+   <text y="575.106" x="254.079" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">=</text>
+  </g>
+  <g begin="text">
+   <text y="575.106" x="266.616,271.26,276.489,281.719,289.27" svgx:width="0.44,0.5,0.5,0.72,0.28" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">(num-</text>
+  </g>
+  <g begin="text">
+   <text y="591.918" x="50.085,54.927,59.571,63.232,65.835,70.478,73.40679999999999,75.968,80.424,85.067,92.619,97.649,102.293,105.974,108.682,112.552,117.195,122.425,126.294,129.201,133.845,138.488" svgx:width="0.46,0.44,0.35,0.55,0.44,0.28,0.55,0.43,0.44,0.72,0.48,0.44,0.35,0.26,0.37,0.44,0.5,0.37,0.28,0.44,0.44,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">ber of comparisons-1),</text>
+  </g>
+  <g begin="text">
+   <text y="591.918" x="143.361" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">C</text>
+  </g>
+  <g begin="text">
+   <text y="591.918" x="154.161" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">=</text>
+  </g>
+  <g begin="text">
+   <text y="584.07" code="3" x="165.222" svgx:width="1.04" style="fill:rgb(0,0,0);font-family:MTEX;font-size:10.46px;stroke:none;">?</text>
+  </g>
+  <g begin="text">
+   <text y="601.296" x="169.29" svgx:width="0.28" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">i</text>
+  </g>
+  <g begin="text">
+   <text y="591.918" x="177.903" svgx:width="0.74" style="fill:rgb(0,0,0);font-family:RMTMI;font-size:10.46px;stroke:none;">w</text>
+  </g>
+  <g begin="text">
+   <text y="593.484" x="185.535" svgx:width="0.28" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">i</text>
+  </g>
+  <g begin="text">
+   <text y="591.918" x="191.106" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">−</text>
+  </g>
+  <g begin="text">
+   <text y="580.857" code="3" x="202.788" svgx:width="1.04" style="fill:rgb(23,22,21);font-family:MTEX;font-size:7.32px;stroke:none;">?</text>
+  </g>
+  <g begin="text">
+   <text y="588.435" x="210.402" svgx:width="0.28" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:5.23px;stroke:none;">i</text>
+  </g>
+  <g begin="text">
+   <text y="586.347" x="214.083" svgx:width="0.74" style="fill:rgb(23,22,21);font-family:RMTMI;font-size:7.32px;stroke:none;">w</text>
+  </g>
+  <g begin="text">
+   <text y="583.647" x="219.681" svgx:width="0.44" style="fill:rgb(23,22,21);font-family:Century-LightCondensed;font-size:5.23px;stroke:none;">2</text>
+  </g>
+  <g begin="text">
+   <text y="588.507" x="219.429" svgx:width="0.28" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:5.23px;stroke:none;">i</text>
+  </g>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.49;" d="M202.790 589.300 L222.510 589.300 "/>
+  <g begin="text">
+   <text y="590.136" code="3" x="203.094" svgx:width="1.04" style="fill:rgb(23,22,21);font-family:MTEX;font-size:7.32px;stroke:none;">?</text>
+  </g>
+  <g begin="text">
+   <text y="597.723" x="210.708" svgx:width="0.28" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:5.23px;stroke:none;">i</text>
+  </g>
+  <g begin="text">
+   <text y="595.635" x="214.389" svgx:width="0.74" style="fill:rgb(23,22,21);font-family:RMTMI;font-size:7.32px;stroke:none;">w</text>
+  </g>
+  <g begin="text">
+   <text y="596.733" x="219.735" svgx:width="0.28" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:5.23px;stroke:none;">i</text>
+  </g>
+  <g begin="text">
+   <text y="591.918" x="226.278,230.922,234.791,239.246,243.89,246.598,249.306,254.536,259.0338,261.583,264.49,269.134,273.589,276.883,281.527,285.208,289.851" svgx:width="0.44,0.37,0.43,0.44,0.26,0.26,0.5,0.43,0.55,0.28,0.44,0.43,0.31,0.44,0.35,0.44,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">(scaling factor),</text>
+  </g>
+  <g begin="text">
+   <text y="618.072" x="50.085,56.475,61.119,63.827,68.282,73.512" svgx:width="0.61,0.44,0.26,0.43,0.5,0.31" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">weight</text>
+  </g>
+  <g begin="text">
+   <text y="618.072" x="79.316" svgx:width="0.74" style="fill:rgb(0,0,0);font-family:RMTMI;font-size:10.46px;stroke:none;">w</text>
+  </g>
+  <g begin="text">
+   <text y="619.638" x="86.949" svgx:width="0.28" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">i</text>
+  </g>
+  <g begin="text">
+   <text y="618.072" x="93.105" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">=</text>
+  </g>
+  <g begin="text">
+   <text y="618.072" x="104.175" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">1</text>
+  </g>
+  <g begin="text">
+   <text y="618.072" x="108.818" svgx:width="0.47" style="fill:rgb(0,0,0);font-family:RMTMI;font-size:10.46px;stroke:none;">/</text>
+  </g>
+  <g begin="text">
+   <text y="618.072" x="115.821" svgx:width="0.26" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">ˆ</text>
+  </g>
+  <g begin="text">
+   <text y="618.072" x="113.733" svgx:width="0.53" style="fill:rgb(0,0,0);font-family:RMTMI;font-size:10.46px;stroke:none;">σ</text>
+  </g>
+  <g begin="text">
+   <text y="614.274" x="120.681" svgx:width="0.44" style="fill:rgb(23,22,21);font-family:Century-LightCondensed;font-size:7.32px;stroke:none;">2</text>
+  </g>
+  <g begin="text">
+   <text y="620.889" x="119.322" svgx:width="0.39" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">e</text>
+  </g>
+  <g begin="text">
+   <text y="621.987" x="122.535" svgx:width="0.28" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:5.23px;stroke:none;">i</text>
+  </g>
+  <g begin="text">
+   <text y="618.072" x="125.487" svgx:width="0.33" style="fill:rgb(0,0,0);font-family:RMTMI;font-size:10.46px;stroke:none;">,</text>
+  </g>
+  <g begin="text">
+   <text y="618.072" x="138.42" svgx:width="0.59" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">Q</text>
+  </g>
+  <g begin="text">
+   <text y="618.072" x="149.444" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">=</text>
+  </g>
+  <g begin="text">
+   <text y="610.233" code="3" x="160.514" svgx:width="1.04" style="fill:rgb(0,0,0);font-family:MTEX;font-size:10.46px;stroke:none;">?</text>
+  </g>
+  <g begin="text">
+   <text y="627.459" x="164.574" svgx:width="0.28" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">i</text>
+  </g>
+  <g begin="text">
+   <text y="618.072" x="173.187" svgx:width="0.74" style="fill:rgb(0,0,0);font-family:RMTMI;font-size:10.46px;stroke:none;">w</text>
+  </g>
+  <g begin="text">
+   <text y="619.638" x="180.819" svgx:width="0.28" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">i</text>
+  </g>
+  <g begin="text">
+   <text y="618.072" x="184.068" svgx:width="0.5" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">d</text>
+  </g>
+  <g begin="text">
+   <text y="614.229" x="190.08" svgx:width="0.44" style="fill:rgb(23,22,21);font-family:Century-LightCondensed;font-size:7.32px;stroke:none;">2</text>
+  </g>
+  <g begin="text">
+   <text y="621.051" x="189.243" svgx:width="0.28" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">i</text>
+  </g>
+  <g begin="text">
+   <text y="618.072" x="196.155" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">−</text>
+  </g>
+  <g begin="text">
+   <text y="612.726" x="207.837" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">(</text>
+  </g>
+  <g begin="text">
+   <text y="606.345" code="3" x="212.481" svgx:width="1.04" style="fill:rgb(23,22,21);font-family:MTEX;font-size:7.32px;stroke:none;">?</text>
+  </g>
+  <g begin="text">
+   <text y="613.932" x="220.095" svgx:width="0.28" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:5.23px;stroke:none;">i</text>
+  </g>
+  <g begin="text">
+   <text y="611.835" x="223.776" svgx:width="0.74" style="fill:rgb(23,22,21);font-family:RMTMI;font-size:7.32px;stroke:none;">w</text>
+  </g>
+  <g begin="text">
+   <text y="612.933" x="229.122" svgx:width="0.28" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:5.23px;stroke:none;">i</text>
+  </g>
+  <g begin="text">
+   <text y="611.835" x="231.579" svgx:width="0.5" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">d</text>
+  </g>
+  <g begin="text">
+   <text y="612.933" x="235.206" svgx:width="0.28" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:5.23px;stroke:none;">i</text>
+  </g>
+  <g begin="text">
+   <text y="612.726" x="237.663" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">)</text>
+  </g>
+  <g begin="text">
+   <text y="607.29" x="242.307" svgx:width="0.44" style="fill:rgb(23,22,21);font-family:Century-LightCondensed;font-size:5.23px;stroke:none;">2</text>
+  </g>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.49;" d="M207.840 615.450 L245.130 615.450 "/>
+  <g begin="text">
+   <text y="616.299" code="3" x="216.936" svgx:width="1.04" style="fill:rgb(23,22,21);font-family:MTEX;font-size:7.32px;stroke:none;">?</text>
+  </g>
+  <g begin="text">
+   <text y="623.877" x="224.55" svgx:width="0.28" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:5.23px;stroke:none;">i</text>
+  </g>
+  <g begin="text">
+   <text y="621.789" x="228.231" svgx:width="0.74" style="fill:rgb(23,22,21);font-family:RMTMI;font-size:7.32px;stroke:none;">w</text>
+  </g>
+  <g begin="text">
+   <text y="622.887" x="233.577" svgx:width="0.28" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:5.23px;stroke:none;">i</text>
+  </g>
+  <g begin="text">
+   <text y="618.072" x="248.832,251.54,255.4102,257.912,261.206,266.435,271.0374,273.591,276.885,281.528,284.822,289.466" svgx:width="0.26,0.37,0.55,0.31,0.5,0.44,0.55,0.31,0.44,0.31,0.44,0.26" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">is the total</text>
+  </g>
+  <g begin="text">
+   <text y="637.179" x="50.085,54.729,59.571,63.44,68.084,71.765,76.022,80.665,85.6858,88.028,92.284,96.928,100.609,103.317,107.961,113.19,117.645,122.289,124.5902,126.942,131.585,136.815" svgx:width="0.44,0.46,0.37,0.44,0.35,0.41,0.44,0.48,0.55,0.41,0.44,0.35,0.26,0.44,0.5,0.43,0.44,0.22,0.55,0.44,0.5,0.48" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">observed variance, and</text>
+  </g>
+  <g begin="text">
+   <text y="637.179" x="144.172" svgx:width="0.5" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">d</text>
+  </g>
+  <g begin="text">
+   <text y="638.745" x="149.4" svgx:width="0.28" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">i</text>
+  </g>
+  <g begin="text">
+   <text y="637.179" x="154.26,156.968,160.8382,163.16,166.454,171.684,176.2864,178.649,183.293,188.135,192.005,196.648,200.329,204.586,209.229,214.24980000000002,216.592,221.235,224.142,227.049,231.693,236.148,239.442" svgx:width="0.26,0.37,0.55,0.31,0.5,0.44,0.55,0.44,0.46,0.37,0.44,0.35,0.41,0.44,0.48,0.55,0.44,0.28,0.28,0.44,0.43,0.31,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">is the observed effect.</text>
+  </g>
+  <g begin="text">
+   <text y="648.132" x="60.048,66.25,69.1788,71.011,74.305,79.534,84.13640000000001,86.033,89.902,92.61,97.2124,99.109,103.564,108.207,115.759,120.79,125.433,129.114,131.823,135.692,140.336,145.565,149.4352,151.289,154.196,157.877,162.521,171.926,175.607,180.251,185.281,189.925,194.569,197.863,202.506,207.537,210.444,217.996,222.639,227.283,231.152,236.381,240.063,244.706,248.5762,250.439,254.308,257.602,262.832,267.862,270.571,275.214,279.0842,280.938,283.845,288.489" svgx:width="0.59,0.28,0.55,0.31,0.5,0.44,0.55,0.37,0.26,0.44,0.55,0.43,0.44,0.72,0.48,0.44,0.35,0.26,0.37,0.44,0.5,0.37,0.55,0.28,0.35,0.44,0.72,0.35,0.44,0.48,0.44,0.44,0.31,0.44,0.48,0.28,0.72,0.44,0.44,0.37,0.5,0.35,0.44,0.37,0.55,0.37,0.31,0.5,0.48,0.26,0.44,0.37,0.55,0.28,0.44,0.35" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">Of the six comparisons fromrepeated-measures studies for</text>
+  </g>
+  <g begin="text">
+   <text y="659.094" x="50.085,53.766,58.41,63.053,68.084,70.792,76.022,80.5198,83.374,86.282,90.925,94.586,97.496,101.365,104.659,109.888,114.919,119.563,124.792,128.086,131.95620000000002,134.845,141.235,143.944,147.238,152.468,155.365,160.395,163.104,166.973,171.617,176.459,179.167,181.875,184.584,187.878,190.586,195.23,199.099,201.40019999999998,204.31,207.604,212.833,216.514,221.158,225.76039999999998,228.7,232.381,237.025,242.055,246.699,250.38,253.674,258.318" svgx:width="0.35,0.44,0.44,0.48,0.26,0.5,0.43,0.55,0.28,0.44,0.35,0.55,0.37,0.31,0.5,0.48,0.44,0.5,0.31,0.37,0.55,0.61,0.26,0.31,0.5,0.55,0.48,0.26,0.37,0.44,0.46,0.26,0.26,0.26,0.31,0.26,0.44,0.37,0.22,0.55,0.31,0.5,0.35,0.44,0.44,0.55,0.35,0.44,0.48,0.44,0.35,0.31,0.44,0.48" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">reading for students with disabilities, three reported</text>
+  </g>
+  <g begin="text">
+   <text y="659.094" x="266.248" svgx:width="0.39" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">r</text>
+  </g>
+  <g begin="text">
+   <text y="659.094" x="270.316,272.61719999999997,275.527,281.143,287.534" svgx:width="0.22,0.55,0.54,0.61,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">. Two</text>
+  </g>
+  <g begin="text">
+   <text y="670.056" x="50.086,53.956,57.25,62.479,67.51,70.218,74.861,78.7312,81.071,84.752,89.396,94.426,99.07,102.751,106.045,110.689,115.70979999999999,118.051,120.759,125.989,128.896,133.539,137.22,144.772,149.416,152.71,155.418,160.062,165.292,167.631,170.925,175.5274,177.9,182.356,186.999,194.551,199.581,204.811,208.105" svgx:width="0.37,0.31,0.5,0.48,0.26,0.44,0.37,0.55,0.35,0.44,0.48,0.44,0.35,0.31,0.44,0.48,0.55,0.26,0.5,0.28,0.44,0.35,0.72,0.44,0.31,0.26,0.44,0.5,0.55,0.31,0.44,0.55,0.43,0.44,0.72,0.48,0.5,0.31,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">studies reported information to compute</text>
+  </g>
+  <g begin="text">
+   <text y="670.056" x="215.083" svgx:width="0.39" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">r</text>
+  </g>
+  <g begin="text">
+   <text y="670.056" x="221.482,226.712,230.581,233.289,238.519,243.01680000000002,245.314,248.608,253.837,258.4394,260.813,263.72,268.363,272.044,279.596,284.825,287.534" svgx:width="0.5,0.37,0.26,0.5,0.43,0.55,0.31,0.5,0.44,0.55,0.28,0.44,0.35,0.72,0.5,0.26,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">using the formula</text>
+  </g>
+  <g begin="text">
+   <text y="681.01" x="50.086,54.73,62.281,66.925,70.606,74.287,76.995,80.8652,83.197,89.5776,91.908,98.299,102.942,108.172,113.401,118.045,123.274,125.5752,127.927,132.571,137.214,141.858,146.501,151.145" svgx:width="0.44,0.72,0.44,0.35,0.35,0.26,0.37,0.55,0.61,0.55,0.61,0.44,0.5,0.5,0.44,0.5,0.22,0.55,0.44,0.44,0.44,0.44,0.44,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">(Morris &amp; DeShon, 2002),</text>
+  </g>
+  <g begin="text">
+   <text y="709.441" x="49.871" svgx:width="0.39" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">r</text>
+  </g>
+  <g begin="text">
+   <text y="709.441" x="57.898" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">=</text>
+  </g>
+  <g begin="text">
+   <text y="701.989" x="70.166,75.008" svgx:width="0.46,0.61" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">SD</text>
+  </g>
+  <g begin="text">
+   <text y="698.037" x="81.396" svgx:width="0.44" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">2</text>
+  </g>
+  <g begin="text">
+   <text y="705.039" x="81.396" svgx:width="0.46" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">S</text>
+  </g>
+  <g begin="text">
+   <text y="701.988" x="87.678" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">+</text>
+  </g>
+  <g begin="text">
+   <text y="701.988" x="98.163,103.005" svgx:width="0.46,0.61" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">SD</text>
+  </g>
+  <g begin="text">
+   <text y="698.037" x="109.395" svgx:width="0.44" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">2</text>
+  </g>
+  <g begin="text">
+   <text y="705.039" x="109.395" svgx:width="0.54" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">A</text>
+  </g>
+  <g begin="text">
+   <text y="701.988" x="116.154" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">−</text>
+  </g>
+  <g begin="text">
+   <text y="701.988" x="126.639,131.481" svgx:width="0.46,0.61" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">SD</text>
+  </g>
+  <g begin="text">
+   <text y="698.037" x="137.871" svgx:width="0.44" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">2</text>
+  </g>
+  <g begin="text">
+   <text y="705.039" x="137.871" svgx:width="0.61" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">D</text>
+  </g>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.49;" d="M70.160 706.820 L142.860 706.820 "/>
+  <g begin="text">
+   <text y="716.973" x="73.071" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">(</text>
+  </g>
+  <g begin="text">
+   <text y="716.865" x="77.715" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">2</text>
+  </g>
+  <g begin="text">
+   <text y="716.973" x="82.358,86.9604,88.749" svgx:width="0.44,0.55,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">) (</text>
+  </g>
+  <g begin="text">
+   <text y="716.865" x="93.392,98.234" svgx:width="0.46,0.61" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">SD</text>
+  </g>
+  <g begin="text">
+   <text y="718.431" x="104.625" svgx:width="0.46" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">S</text>
+  </g>
+  <g begin="text">
+   <text y="716.973" x="108.594,113.1964,114.975" svgx:width="0.44,0.55,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">) (</text>
+  </g>
+  <g begin="text">
+   <text y="716.865" x="119.619,124.461" svgx:width="0.46,0.61" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">SD</text>
+  </g>
+  <g begin="text">
+   <text y="718.431" x="130.851" svgx:width="0.54" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">A</text>
+  </g>
+  <g begin="text">
+   <text y="716.973" x="135.288" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">)</text>
+  </g>
+  <g begin="text">
+   <text y="709.44" x="278.244,282.888,287.531" svgx:width="0.44,0.44,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">(5)</text>
+  </g>
+  <g begin="text">
+   <text y="736.197" x="50.085,56.475,61.705,66.348,70.029" svgx:width="0.61,0.5,0.44,0.35,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">where</text>
+  </g>
+  <g begin="text">
+   <text y="736.197" x="77.157,82.0" svgx:width="0.46,0.61" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">SD</text>
+  </g>
+  <g begin="text">
+   <text y="737.763" x="89.118" svgx:width="0.54" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">A</text>
+  </g>
+  <g begin="text">
+   <text y="736.197" x="96.705,101.349,106.578" svgx:width="0.44,0.5,0.48" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">and</text>
+  </g>
+  <g begin="text">
+   <text y="736.197" x="114.085,118.927" svgx:width="0.46,0.61" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">SD</text>
+  </g>
+  <g begin="text">
+   <text y="737.763" x="125.694" svgx:width="0.46" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">S</text>
+  </g>
+  <g begin="text">
+   <text y="736.197" x="132.66,137.304,140.985,145.5874,148.103,151.397,156.627,161.2294,163.745,167.615,170.909,175.552,180.782,185.812,190.456,194.137,199.1578,201.652,206.683,211.326,215.583,218.291,222.935,226.229,228.937,233.581,238.81099999999998,241.285,245.929,248.8578,251.311,255.954,260.409,264.865,269.508,277.06,284.612,289.255" svgx:width="0.44,0.35,0.44,0.55,0.31,0.5,0.44,0.55,0.37,0.31,0.44,0.5,0.48,0.44,0.35,0.48,0.55,0.48,0.44,0.41,0.26,0.44,0.31,0.26,0.44,0.5,0.55,0.44,0.28,0.55,0.44,0.43,0.43,0.44,0.72,0.72,0.44,0.28" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">are the standard deviation of accommo-</text>
+  </g>
+  <g begin="text">
+   <text y="747.159" x="50.085,55.115,59.759,63.053,67.696,72.71679999999999,75.589,80.233,85.462,90.4828,93.346,97.216,100.51,105.153,110.383,115.413,120.057,123.738,128.7588,131.631,136.274,141.305,148.856,151.565,156.794,159.502,163.372,166.666,170.347,174.991,178.285,180.993,185.637,190.867,193.728,197.598,202.053,206.696,210.377,215.021,218.89,221.19119999999998,224.075,227.756,232.4,236.269,241.3,245.943,250.398,253.693,256.401,260.657,265.301,268.009,272.077,274.3782,277.262,281.905,287.135" svgx:width="0.48,0.44,0.31,0.44,0.48,0.55,0.44,0.5,0.48,0.55,0.37,0.31,0.44,0.5,0.48,0.44,0.35,0.48,0.55,0.44,0.48,0.72,0.26,0.5,0.26,0.37,0.31,0.35,0.44,0.31,0.26,0.44,0.5,0.55,0.37,0.43,0.44,0.35,0.44,0.37,0.22,0.55,0.35,0.44,0.37,0.48,0.44,0.43,0.31,0.26,0.41,0.44,0.26,0.39,0.22,0.55,0.44,0.5,0.48" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">dated and standard administration scores, respectively, and</text>
+  </g>
+  <g begin="text">
+   <text y="49.01" x="310.644,315.4556,317.142" svgx:width="0.46,0.55,0.61" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">S D</text>
+  </g>
+  <g begin="text">
+   <text y="50.577" x="325.278" svgx:width="0.61" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">D</text>
+  </g>
+  <g begin="text">
+   <text y="49.011" x="334.836" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">=</text>
+  </g>
+  <g begin="text">
+   <text y="49.011" x="346.464,350.334,353.628,358.271,363.501,368.531,373.175,376.856,381.8768,385.361,390.391,395.035,399.291,402.0,406.643,409.937,412.646,417.289,422.519,426.001,430.644,433.57280000000003,437.016,442.047,444.755,447.662,450.569,455.213,458.894,463.537,468.767,473.222,477.82439999999997,481.349,485.218,489.674,494.317,497.998,502.642,506.511,508.8122,512.308,516.763,521.407,528.958,533.989,539.218,542.512,547.156" svgx:width="0.37,0.31,0.44,0.5,0.48,0.44,0.35,0.48,0.55,0.48,0.44,0.41,0.26,0.44,0.31,0.26,0.44,0.5,0.55,0.44,0.28,0.55,0.48,0.26,0.28,0.28,0.44,0.35,0.44,0.5,0.43,0.44,0.55,0.37,0.43,0.44,0.35,0.44,0.37,0.22,0.55,0.43,0.44,0.72,0.48,0.5,0.31,0.44,0.48" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">standard deviation of difference scores, computed</text>
+  </g>
+  <g begin="text">
+   <text y="66.354" x="310.113,314.757" svgx:width="0.44,0.37" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">as</text>
+  </g>
+  <g begin="text">
+   <text y="66.354" x="321.354,326.1656,327.852" svgx:width="0.46,0.55,0.61" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">S D</text>
+  </g>
+  <g begin="text">
+   <text y="62.502" x="335.844" svgx:width="0.44" style="fill:rgb(23,22,21);font-family:Century-LightCondensed;font-size:7.32px;stroke:none;">2</text>
+  </g>
+  <g begin="text">
+   <text y="69.333" x="335.988" svgx:width="0.61" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">D</text>
+  </g>
+  <g begin="text">
+   <text y="66.354" x="344.979" svgx:width="0.78" style="fill:rgb(0,0,0);font-family:MTSY;font-size:10.46px;stroke:none;">=</text>
+  </g>
+  <g begin="text">
+   <text y="60.117" x="357.246" svgx:width="0.56" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">n</text>
+  </g>
+  <g begin="text">
+   <text y="61.008" x="361.233" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">(</text>
+  </g>
+  <g begin="text">
+   <text y="58.713" x="367.821" svgx:width="0.26" style="fill:rgb(23,22,21);font-family:Century-LightCondensed;font-size:7.32px;stroke:none;">¯</text>
+  </g>
+  <g begin="text">
+   <text y="60.117" x="366.444" svgx:width="0.52" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">X</text>
+  </g>
+  <g begin="text">
+   <text y="61.215" x="371.961" svgx:width="0.54" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:5.23px;stroke:none;">A</text>
+  </g>
+  <g begin="text">
+   <text y="60.117" x="375.759" svgx:width="0.78" style="fill:rgb(23,22,21);font-family:MTSY;font-size:7.32px;stroke:none;">−</text>
+  </g>
+  <g begin="text">
+   <text y="58.713" x="383.418" svgx:width="0.26" style="fill:rgb(23,22,21);font-family:Century-LightCondensed;font-size:7.32px;stroke:none;">¯</text>
+  </g>
+  <g begin="text">
+   <text y="60.117" x="382.041" svgx:width="0.52" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">X</text>
+  </g>
+  <g begin="text">
+   <text y="61.215" x="387.306" svgx:width="0.46" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:5.23px;stroke:none;">S</text>
+  </g>
+  <g begin="text">
+   <text y="61.008" x="390.654" svgx:width="0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">)</text>
+  </g>
+  <g begin="text">
+   <text y="55.572" x="395.298" svgx:width="0.44" style="fill:rgb(23,22,21);font-family:Century-LightCondensed;font-size:5.23px;stroke:none;">2</text>
+  </g>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.49;" d="M357.250 63.730 L398.120 63.730 "/>
+  <g begin="text">
+   <text y="70.881" x="371.898" svgx:width="0.28" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">t</text>
+  </g>
+  <g begin="text">
+   <text y="68.181" x="374.589" svgx:width="0.44" style="fill:rgb(23,22,21);font-family:Century-LightCondensed;font-size:5.23px;stroke:none;">2</text>
+  </g>
+  <g begin="text">
+   <text y="73.032" x="374.355,377.17920000000004,378.144" svgx:width="0.54,0.55,0.74" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:5.23px;stroke:none;">R M</text>
+  </g>
+  <g begin="text">
+   <text y="66.354" x="399.312,405.703,410.932,415.575,419.257" svgx:width="0.61,0.5,0.44,0.35,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">where</text>
+  </g>
+  <g begin="text">
+   <text y="64.346" x="428.877" svgx:width="0.26" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">¯</text>
+  </g>
+  <g begin="text">
+   <text y="66.354" x="426.907" svgx:width="0.52" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">X</text>
+  </g>
+  <g begin="text">
+   <text y="67.92" x="434.421" svgx:width="0.46" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">S</text>
+  </g>
+  <g begin="text">
+   <text y="66.354" x="441.108,443.816,447.6862,449.891,453.185,458.414,463.0164,465.255,472.806,477.45,482.093,487.32300000000004,489.518,493.388,497.843,502.487,506.168,510.7704,513.017,518.246,523.475,528.506,533.149,536.81,539.036,542.33,547.559" svgx:width="0.26,0.37,0.55,0.31,0.5,0.44,0.55,0.72,0.44,0.44,0.5,0.55,0.37,0.43,0.44,0.35,0.44,0.55,0.5,0.5,0.48,0.44,0.35,0.55,0.31,0.5,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">is the mean score under the</text>
+  </g>
+  <g begin="text">
+   <text y="82.608" x="310.113,313.982,317.276,321.92,327.149,332.18,336.823,340.504,345.5248,349.441,354.085,359.115,366.667,369.375,374.605,377.313,381.182,384.476,388.158,392.801,396.095,398.804,403.447,408.676" svgx:width="0.37,0.31,0.44,0.5,0.48,0.44,0.35,0.48,0.55,0.44,0.48,0.72,0.26,0.5,0.26,0.37,0.31,0.35,0.44,0.31,0.26,0.44,0.5,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">standard administration,</text>
+  </g>
+  <g begin="text">
+   <text y="80.6" x="417.689" svgx:width="0.26" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">¯</text>
+  </g>
+  <g begin="text">
+   <text y="82.608" x="415.709" svgx:width="0.52" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">X</text>
+  </g>
+  <g begin="text">
+   <text y="84.174" x="423.585" svgx:width="0.54" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">A</text>
+  </g>
+  <g begin="text">
+   <text y="82.608" x="432.603,435.311,439.1812,443.078,446.373,451.602,456.20439999999996,460.152,467.703,472.347,476.99,482.22,486.116,489.986,494.441,499.085,502.766,507.3684,511.315,516.545,521.774,526.805,531.448,535.1089999999999,539.035,542.33,547.559" svgx:width="0.26,0.37,0.55,0.31,0.5,0.44,0.55,0.72,0.44,0.44,0.5,0.55,0.37,0.43,0.44,0.35,0.44,0.55,0.5,0.5,0.48,0.44,0.35,0.55,0.31,0.5,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">is the mean score under the</text>
+  </g>
+  <g begin="text">
+   <text y="93.561" x="310.113,314.757,319.212,323.667,328.311,335.863,343.414,348.058,353.088,357.732,361.026,365.67,370.6908,374.049,378.692,383.723,391.275,393.983,399.212,401.921,405.79,409.084,412.765,417.409,420.703,423.411,428.055,433.284,435.5852,438.954,443.597,448.827" svgx:width="0.44,0.43,0.43,0.44,0.72,0.72,0.44,0.48,0.44,0.31,0.44,0.48,0.55,0.44,0.48,0.72,0.26,0.5,0.26,0.37,0.31,0.35,0.44,0.31,0.26,0.44,0.5,0.22,0.55,0.44,0.5,0.48" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">accommodated administration, and</text>
+  </g>
+  <g begin="text">
+   <text y="93.561" x="457.201" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">t</text>
+  </g>
+  <g begin="text">
+   <text y="95.127" x="460.701,464.65380000000005,466.02" svgx:width="0.54,0.55,0.74" style="fill:rgb(23,22,21);font-family:Century-LightCondensedItalic;font-size:7.32px;stroke:none;">R M</text>
+  </g>
+  <g begin="text">
+   <text y="93.561" x="473.247,475.955,479.8252,483.164,486.458,491.687" svgx:width="0.26,0.37,0.55,0.31,0.5,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">is the</text>
+  </g>
+  <g begin="text">
+   <text y="93.561" x="499.671" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">t</text>
+  </g>
+  <g begin="text">
+   <text y="93.561" x="502.578,505.485,509.355,512.649,517.292,520.586,523.295,527.164,530.458,533.167,537.6648,540.969,543.876,548.52" svgx:width="0.28,0.37,0.31,0.44,0.31,0.26,0.37,0.31,0.26,0.43,0.55,0.28,0.44,0.35" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">-statistic for</text>
+  </g>
+  <g begin="text">
+   <text y="104.523" x="310.113,314.7154,317.862,321.543,326.187,331.218,335.861,340.505,343.799,348.442,353.473,356.38,363.932,368.575,373.219,377.088,382.318,385.999,390.642" svgx:width="0.44,0.55,0.35,0.44,0.48,0.44,0.44,0.31,0.44,0.48,0.28,0.72,0.44,0.44,0.37,0.5,0.35,0.44,0.37" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">a repeated-measures</text>
+  </g>
+  <g begin="text">
+   <text y="104.523" x="397.629" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">t</text>
+  </g>
+  <g begin="text">
+   <text y="104.523" x="400.536,403.443,406.737,411.381,415.25,418.544,420.8452,423.981,430.183,435.412,440.01439999999997,443.162,446.843,451.486,456.13,461.161,463.869,469.098,473.5958,476.668,480.537,483.831,489.061,494.091,498.17040000000003,501.264,505.908,511.723,515.404,520.048,526.438,529.345,533.989,537.67,542.6908,545.815" svgx:width="0.28,0.31,0.44,0.37,0.31,0.22,0.55,0.59,0.5,0.44,0.55,0.35,0.44,0.44,0.48,0.26,0.5,0.43,0.55,0.37,0.31,0.5,0.48,0.39,0.55,0.44,0.56,0.35,0.44,0.61,0.28,0.44,0.35,0.48,0.55,0.61" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">-test. One reading study (Crawford &amp;</text>
+  </g>
+  <g begin="text">
+   <text y="115.485" x="310.113,315.729,318.438,323.667,328.698,333.341,336.049,338.3502,341.711,346.354,350.998,355.641,360.285,364.8874,368.277,373.308,376.016,381.0368,384.386,389.615,394.259,397.5016,400.892,404.573,409.216,414.247,418.891,422.572,425.8146,429.205,433.8074,437.188,441.643,446.286,449.968,453.649,458.292,461.001,465.644,468.938,471.647,476.29,481.52000000000004,484.867,490.096,494.74,498.401,501.76,506.791,509.499,514.5198,517.869,520.578,523.8206,527.211,530.892,535.536,540.567,545.21,548.891" svgx:width="0.54,0.26,0.5,0.48,0.44,0.26,0.22,0.55,0.44,0.44,0.44,0.44,0.44,0.55,0.48,0.26,0.48,0.55,0.5,0.44,0.31,0.55,0.35,0.44,0.48,0.44,0.35,0.31,0.55,0.44,0.55,0.43,0.44,0.35,0.35,0.44,0.26,0.44,0.31,0.26,0.44,0.5,0.55,0.5,0.44,0.35,0.55,0.48,0.26,0.48,0.55,0.26,0.31,0.55,0.35,0.44,0.48,0.44,0.35,0.31" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">Tindal, 2004) did not report a correlation nor did it report</text>
+  </g>
+  <g begin="text">
+   <text y="126.438" x="310.113,314.756,319.787,324.818,327.526,330.82,333.528,338.172,343.401,348.045,350.76460000000003,353.679,357.548,360.843,365.486,368.78,371.489,375.358,378.652,381.36,385.816,389.6862,392.602,395.896,400.4984,403.456,408.486,413.13,416.811,419.519,423.776,428.3784,431.345,434.639,439.869,444.4714,447.429,451.884,456.528,460.209,463.89,468.533,471.242,475.885,479.179,481.888,486.531,491.761,494.0622,497.008,504.946,509.5484,512.506,517.15,521.019,524.314,527.022,534.573,539.217,542.511,547.155" svgx:width="0.44,0.48,0.48,0.26,0.31,0.26,0.44,0.5,0.44,0.26,0.55,0.37,0.31,0.44,0.31,0.26,0.37,0.31,0.26,0.43,0.37,0.55,0.31,0.44,0.55,0.48,0.44,0.35,0.26,0.41,0.44,0.55,0.31,0.5,0.44,0.55,0.43,0.44,0.35,0.35,0.44,0.26,0.44,0.31,0.26,0.44,0.5,0.22,0.55,0.76,0.44,0.55,0.44,0.37,0.31,0.26,0.72,0.44,0.31,0.44,0.48" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">additional statistics to derive the correlation. We estimated</text>
+  </g>
+  <g begin="text">
+   <text y="137.4" x="310.113,313.407,318.636,323.2384,326.709,331.164,335.808,339.489,343.17,347.814,350.522,355.165,358.46,361.168,365.811,371.041,374.47,377.377,382.02,384.729,387.437,392.081,398.471,401.179,406.409,410.9068,414.293,421.071,425.714,430.745,435.2,439.844,443.7142,447.143,451.787,457.016,462.0368,465.476,471.678,474.386,479.417,482.125,487.355,490.784,495.427,500.071,504.714,509.358,514.001,516.3022,519.743,523.613,528.256,532.8584,536.329,540.972,543.681,547.55" svgx:width="0.31,0.5,0.44,0.55,0.43,0.44,0.35,0.35,0.44,0.26,0.44,0.31,0.26,0.44,0.5,0.55,0.28,0.44,0.26,0.26,0.44,0.61,0.26,0.5,0.43,0.55,0.65,0.44,0.48,0.43,0.44,0.37,0.55,0.44,0.5,0.48,0.55,0.59,0.26,0.48,0.26,0.5,0.55,0.44,0.44,0.44,0.44,0.44,0.22,0.55,0.37,0.44,0.44,0.55,0.44,0.26,0.37,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">the correlation following Hedges and Olkin (1985; see also</text>
+  </g>
+  <g begin="text">
+   <text y="148.362" x="310.113,317.665,322.308,325.989,329.67,332.379,336.24920000000003,338.715,345.0956,347.562,353.952,358.596,363.825,369.054,373.698,378.927,381.2282,383.725,388.368,393.012,397.655,402.299,406.942,409.2432,411.721,418.111,420.82,424.114,429.344,431.809,436.839,441.483,444.777,449.42,452.129,454.837,458.7072,461.173,465.817,470.073,474.717,477.425,480.133,484.777,489.619,492.328,496.93039999999996,499.438,502.345,506.026,510.67,518.2012,520.687,523.981,529.21,533.8124,536.321,541.351,545.032,548.902" svgx:width="0.72,0.44,0.35,0.35,0.26,0.37,0.55,0.61,0.55,0.61,0.44,0.5,0.5,0.44,0.5,0.22,0.55,0.44,0.44,0.44,0.44,0.44,0.22,0.55,0.61,0.26,0.31,0.5,0.55,0.48,0.44,0.31,0.44,0.26,0.26,0.37,0.55,0.44,0.41,0.44,0.26,0.26,0.44,0.46,0.26,0.44,0.55,0.28,0.35,0.44,0.72,0.55,0.31,0.5,0.44,0.55,0.48,0.35,0.37,0.31" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">Morris &amp; DeShon, 2002), with details available from the ﬁrst</text>
+  </g>
+  <g begin="text">
+   <text y="159.315" x="310.113,314.756,319.986,323.28,328.509,333.153,336.814,339.309,343.953,346.8818,349.335,352.629,357.858,360.566,364.4362,366.912,370.782,374.076,379.306,384.336,388.405,390.70619999999997,393.21,398.638,403.282,406.943,409.438,413.309,416.603,421.832,426.863,431.506,436.736,440.03,443.9002,446.375,452.766,455.474,458.768,463.997,468.641,473.87,477.1126,479.649,484.68,487.388,491.257,495.901,500.743,503.451,506.16,508.868,512.162,514.87,519.514,523.383,525.6842,528.181,532.636,537.28,540.961,544.642,549.285" svgx:width="0.44,0.5,0.31,0.5,0.44,0.35,0.55,0.44,0.28,0.55,0.31,0.5,0.26,0.37,0.55,0.37,0.31,0.5,0.48,0.39,0.22,0.55,0.52,0.44,0.35,0.55,0.37,0.31,0.5,0.48,0.44,0.5,0.31,0.37,0.55,0.61,0.26,0.31,0.5,0.44,0.5,0.31,0.55,0.48,0.26,0.37,0.44,0.46,0.26,0.26,0.26,0.31,0.26,0.44,0.37,0.22,0.55,0.43,0.44,0.35,0.35,0.44,0.28" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">author of this study. For students without disabilities, corre-</text>
+  </g>
+  <g begin="text">
+   <text y="170.277" x="310.113,312.821,317.465,320.759,323.467,328.111,333.34,337.2102,339.694,346.084,350.728,354.409,359.0114,361.547,366.19,370.447,375.09,377.799,380.507,385.15,389.993,392.701,397.3034,399.829,402.736,407.38,411.041,413.544,416.838,422.068,425.749,430.392,434.9944,437.52,441.976,446.619,454.171,459.201,463.845,467.526,470.234,474.104,478.747,483.977,487.846,490.1472,492.661,497.305,502.534,507.5548,510.059,513.353,519.743,524.3454,526.871,532.101,536.744,541.7648,544.259,547.553" svgx:width="0.26,0.44,0.31,0.26,0.44,0.5,0.37,0.55,0.61,0.44,0.35,0.44,0.55,0.44,0.41,0.44,0.26,0.26,0.44,0.46,0.26,0.44,0.55,0.28,0.44,0.35,0.55,0.31,0.5,0.35,0.44,0.44,0.55,0.43,0.44,0.72,0.48,0.44,0.35,0.26,0.37,0.44,0.5,0.37,0.22,0.55,0.44,0.5,0.48,0.55,0.31,0.61,0.44,0.55,0.5,0.44,0.48,0.55,0.31,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">lations were available for three comparisons, and two had to</text>
+  </g>
+  <g begin="text">
+   <text y="181.239" x="310.113,314.955,319.5574,321.921,326.565,330.434,333.728,336.436,343.988,348.632,351.926,356.569,361.6" svgx:width="0.46,0.44,0.55,0.44,0.37,0.31,0.26,0.72,0.44,0.31,0.44,0.48,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">be estimated.</text>
+  </g>
+  <g begin="text">
+   <text y="192.193" x="320.076,325.504,330.147,333.808,337.015,340.309,345.538,350.1404,353.368,360.92,365.564,368.858,374.088,377.272,381.142,384.436,389.665,394.696,397.404,402.048,405.917,408.21819999999997,411.425,417.815,422.4174,425.645,430.874,434.744,439.387" svgx:width="0.52,0.44,0.35,0.55,0.31,0.5,0.44,0.55,0.72,0.44,0.31,0.5,0.55,0.37,0.31,0.5,0.48,0.26,0.44,0.37,0.22,0.55,0.61,0.44,0.55,0.5,0.37,0.44,0.48" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">For the math studies, we used</text>
+  </g>
+  <g begin="text">
+   <text y="192.193" x="447.607" svgx:width="0.39" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:10.46px;stroke:none;">r</text>
+  </g>
+  <g begin="text">
+   <text y="192.193" x="454.86,459.504,463.37420000000003,466.551,470.232,474.876,479.906,484.55,488.231,491.525,496.169,501.1898,504.395,507.103,512.333,515.518,518.812,524.042,528.6444,531.871,535.741,539.035,544.264,549.295" svgx:width="0.44,0.37,0.55,0.35,0.44,0.48,0.44,0.35,0.31,0.44,0.48,0.55,0.26,0.5,0.55,0.31,0.5,0.44,0.55,0.37,0.31,0.5,0.48,0.28" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">as reported in the stud-</text>
+  </g>
+  <g begin="text">
+   <text y="203.155" x="310.113,312.821,317.465,321.3352,325.178,328.085,332.728,336.389,340.253,344.122,348.766,353.022,357.666,362.896,366.737,371.192,375.836,383.388,388.418,393.062,396.743,399.451,403.321,407.964,413.194,417.0642,420.906,425.55,430.779,434.0216,437.917,442.56,445.4888,449.311,453.954,458.5564,462.441,465.348,469.992,473.653,477.516,481.385,484.68,489.909,494.94,499.583,504.812,508.107,511.97720000000004,515.829,522.219,524.927,528.222,533.452,537.293,541.937,547.166" svgx:width="0.26,0.44,0.37,0.55,0.28,0.44,0.35,0.55,0.37,0.44,0.41,0.44,0.5,0.55,0.43,0.44,0.72,0.48,0.44,0.35,0.26,0.37,0.44,0.5,0.37,0.55,0.44,0.5,0.31,0.55,0.44,0.28,0.55,0.44,0.44,0.55,0.28,0.44,0.35,0.55,0.37,0.31,0.5,0.48,0.44,0.5,0.31,0.37,0.55,0.61,0.26,0.31,0.5,0.55,0.44,0.5,0.48" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">ies for seven comparisons out of 18 for students with and</text>
+  </g>
+  <g begin="text">
+   <text y="214.117" x="310.113,316.503,319.212,322.506,327.735,332.379,337.608,340.8506,343.188,348.218,350.927,354.796,359.44,364.282,366.99,369.699,372.407,375.701,378.409,383.053,386.922,389.2232,391.53,396.959,401.602,405.263,407.569,410.863,416.092,420.6944,423.023,426.704,431.347,438.899,443.543,446.251,451.48,454.189,459.418,463.9158,466.159,470.802,475.4044,477.733,484.123,486.831,490.126,495.355,498.063,503.293,505.578,510.223,514.866,519.322,524.552,526.827,531.283,534.964,539.607,544.837,549.867" svgx:width="0.61,0.26,0.31,0.5,0.44,0.5,0.31,0.55,0.48,0.26,0.37,0.44,0.46,0.26,0.26,0.26,0.31,0.26,0.44,0.37,0.22,0.55,0.52,0.44,0.35,0.55,0.31,0.5,0.44,0.55,0.35,0.44,0.72,0.44,0.26,0.5,0.26,0.5,0.43,0.55,0.44,0.44,0.55,0.61,0.26,0.31,0.5,0.26,0.5,0.55,0.44,0.44,0.43,0.5,0.55,0.43,0.35,0.44,0.5,0.48,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">without disabilities. For the remaining 11 within each group,</text>
+  </g>
+  <g begin="text">
+   <text y="225.07" x="310.113,313.407,318.636,323.2384,325.665,329.534,332.829,338.058,343.088,345.797,350.44,354.3102,356.696,361.727,364.435,369.4558,371.85,377.08,381.723,384.9656,387.403,392.433,396.114,400.758,405.014,407.723,412.753,417.3554,419.782,424.425,429.655,434.298,439.528,443.983,449.213,451.597,456.241,461.272,466.302,469.01,472.305,475.013,479.656,484.886,489.529,492.2486,494.624,497.332,502.561,505.468,510.112,513.793,521.345,525.988,529.282,531.991,536.634,541.864,544.257,547.551" svgx:width="0.31,0.5,0.44,0.55,0.37,0.31,0.5,0.48,0.26,0.44,0.37,0.55,0.48,0.26,0.48,0.55,0.5,0.44,0.31,0.55,0.48,0.35,0.44,0.41,0.26,0.48,0.44,0.55,0.44,0.5,0.44,0.5,0.43,0.5,0.55,0.44,0.48,0.48,0.26,0.31,0.26,0.44,0.5,0.44,0.26,0.55,0.26,0.5,0.28,0.44,0.35,0.72,0.44,0.31,0.26,0.44,0.5,0.55,0.31,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">the studies did not provide enough additional information to</text>
+  </g>
+  <g begin="text">
+   <text y="236.032" x="310.113,314.568,319.212,326.763,331.794,337.023,340.317,344.9194,348.12,351.414,356.644,361.2464,364.446,368.902,373.545,377.226,380.907,385.551,388.259,392.903,396.197,398.905,403.549,408.778,411.0792,414.268,422.207,426.8094,430.009,434.653,439.684,444.714,447.422,450.131,454.774,459.7948,462.964,466.258,471.488,476.0904,479.29,483.16,487.803,495.355,499.9574,503.158,507.801,512.832,517.862,521.543,526.187,530.831,535.286,540.516,543.683,548.326" svgx:width="0.43,0.44,0.72,0.48,0.5,0.31,0.44,0.55,0.31,0.5,0.44,0.55,0.43,0.44,0.35,0.35,0.44,0.26,0.44,0.31,0.26,0.44,0.5,0.22,0.55,0.76,0.44,0.55,0.44,0.48,0.48,0.26,0.26,0.44,0.48,0.55,0.31,0.5,0.44,0.55,0.37,0.44,0.72,0.44,0.55,0.44,0.48,0.48,0.35,0.44,0.44,0.43,0.5,0.55,0.44,0.37" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">compute the correlation. We applied the same approach as</text>
+  </g>
+  <g begin="text">
+   <text y="246.994" x="310.113,313.02,317.664,321.325,324.062,327.356,332.586,337.1884,339.948,343.629,348.273,352.916,357.947,360.655,365.885,370.3828,373.058,376.927,380.221,385.451,390.481,393.189,397.833,401.70320000000004,404.421,407.715,412.31739999999996,415.078,419.721,423.591,426.885,429.593,437.145,441.788,445.082,449.6844,452.453,455.747,460.976,465.5784,468.339,472.794,477.438,481.119,484.8,489.443,492.152,496.795,500.089,502.798,507.441,512.671,514.9722,517.711,523.138,527.781,531.4419999999999,534.189,539.032,543.675,546.969" svgx:width="0.28,0.44,0.35,0.55,0.31,0.5,0.44,0.55,0.35,0.44,0.44,0.48,0.26,0.5,0.43,0.55,0.37,0.31,0.5,0.48,0.26,0.44,0.37,0.55,0.31,0.44,0.55,0.44,0.37,0.31,0.26,0.72,0.44,0.31,0.44,0.55,0.31,0.5,0.44,0.55,0.43,0.44,0.35,0.35,0.44,0.26,0.44,0.31,0.26,0.44,0.5,0.22,0.55,0.52,0.44,0.35,0.55,0.46,0.44,0.31,0.5" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">for the reading studies to estimate the correlation. For both</text>
+  </g>
+  <g begin="text">
+   <text y="257.947" x="310.113,313.794,318.438,323.081,328.112,330.82,336.049,340.54679999999996,342.835,347.479,352.708,357.72880000000004,360.071,367.622,372.266,375.56,380.789,383.0902,385.452,388.746,393.975,398.5774,400.95,408.502,413.146,416.44,421.083,423.99,428.634,433.863,438.507,441.215,445.283,449.153,451.861,455.7312,458.072,461.753,466.396,470.266,475.495,478.203,481.497,485.3672,487.699,494.089,498.733,502.414,507.0164,509.397,513.079,517.722,522.565,527.794,531.663,534.9056,537.288,540.582,545.1844,547.558" svgx:width="0.35,0.44,0.44,0.48,0.26,0.5,0.43,0.55,0.44,0.5,0.48,0.55,0.72,0.44,0.31,0.5,0.22,0.55,0.31,0.5,0.44,0.55,0.72,0.44,0.31,0.44,0.28,0.44,0.5,0.44,0.26,0.39,0.37,0.26,0.37,0.55,0.35,0.44,0.37,0.5,0.26,0.31,0.37,0.55,0.61,0.44,0.35,0.44,0.55,0.35,0.44,0.46,0.5,0.37,0.31,0.55,0.31,0.44,0.55,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">reading and math, the meta-analysis results were robust to a</text>
+  </g>
+  <g begin="text">
+   <text y="268.909" x="310.113,316.503,319.212,324.242,328.8444,331.208,334.889,339.533,344.762,349.217,353.8194,356.193,360.836,363.76480000000004,366.066,370.322,374.966,377.674,382.903,387.547,391.41720000000004,393.748,396.655,401.299,404.96,407.302,411.946,415.815,419.109,421.818,429.369,434.013,437.307,441.95,445.8202,448.152,452.795" svgx:width="0.61,0.26,0.48,0.44,0.55,0.35,0.44,0.5,0.43,0.44,0.55,0.44,0.28,0.55,0.41,0.44,0.26,0.5,0.44,0.37,0.55,0.28,0.44,0.35,0.55,0.44,0.37,0.31,0.26,0.72,0.44,0.31,0.44,0.37,0.55,0.44,0.28" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">wide range of values for estimates of</text>
+  </g>
+  <g begin="text">
+   <text y="268.909" x="458.029" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:RMTMI;font-size:10.46px;stroke:none;">ρ</text>
+  </g>
+  <g begin="text">
+   <text y="268.909" x="464.355" svgx:width="0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:10.46px;stroke:none;">.</text>
+  </g>
+  <g begin="text">
+   <text y="291.823" x="310.113,316.702,321.346,324.64,329.283,333.352,337.995,343.224,347.68,352.323" svgx:width="0.63,0.44,0.31,0.44,0.39,0.44,0.5,0.43,0.44,0.39" style="fill:rgb(0,0,0);font-family:Century-BoldCondensed;font-size:10.46px;stroke:none;">References</text>
+  </g>
+  <g begin="text">
+   <text y="306.762" x="310.113,314.093,319.571,323.551,328.033,332.013,334.837,338.817,342.1359,344.136,347.291,351.272,355.583,359.564,362.719,365.542,368.86089999999996,370.852,373.679,378.161,382.141,384.92170000000004,386.956,390.934,394.09,398.03679999999997,400.057,402.378,406.861,410.679,413.001,417.483,421.795,425.775,430.0806,432.093,434.414,438.899,440.885,443.709,448.191,452.13779999999997,454.167,460.64,464.62,467.444,471.424,473.916,477.896,482.378,486.358,488.68,492.167,495.484,497.805,501.122" svgx:width="0.44,0.61,0.44,0.5,0.44,0.31,0.44,0.37,0.55,0.35,0.44,0.48,0.44,0.35,0.31,0.37,0.55,0.31,0.5,0.44,0.31,0.55,0.44,0.35,0.44,0.55,0.26,0.5,0.43,0.26,0.5,0.48,0.44,0.48,0.55,0.26,0.5,0.55,0.31,0.5,0.44,0.55,0.72,0.44,0.31,0.44,0.28,0.44,0.5,0.44,0.26,0.39,0.37,0.26,0.37,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">*Denotes reports that are included in the meta-analysis.</text>
+  </g>
+  <g begin="text">
+   <text y="316.725" x="310.113,314.927,319.409,321.731,325.711,328.866,331.188,335.67,337.64340000000004,339.954,342.939,344.91240000000005,347.214,351.194,355.175,359.155,363.135,367.115,371.095" svgx:width="0.54,0.5,0.26,0.44,0.35,0.26,0.5,0.22,0.55,0.33,0.22,0.55,0.44,0.44,0.44,0.44,0.44,0.44,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">Anjorin, I. (2009).</text>
+  </g>
+  <g begin="text">
+   <text y="316.725" x="375.392,381.042,383.535,387.517,392.001,393.993,396.979,399.473,403.957,407.939,411.428,414.3881,416.702,419.195,422.683,425.67,428.164,431.1241,433.438,435.761,439.743,443.2413,445.521,448.509,451.003,455.989,460.473,463.962,468.948,471.442,474.4021,476.716,482.697,485.191,487.684,492.16900000000004,494.452,497.439,502.093,505.582,509.071,511.565,516.219,519.7173,521.988,524.311,527.8,532.284,535.773,540.759,543.253,548.239" svgx:width="0.63,0.28,0.44,0.5,0.22,0.33,0.28,0.5,0.44,0.39,0.33,0.55,0.28,0.39,0.33,0.28,0.33,0.55,0.26,0.44,0.39,0.55,0.33,0.28,0.56,0.5,0.39,0.56,0.28,0.33,0.55,0.67,0.28,0.28,0.5,0.55,0.33,0.52,0.39,0.39,0.28,0.52,0.39,0.55,0.26,0.39,0.5,0.39,0.56,0.28,0.56,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:8.97px;stroke:none;">High-stakes tests for students with speciﬁc learning</text>
+  </g>
+  <g begin="text">
+   <text y="326.688" x="320.076,324.56,327.053,330.04,334.524,338.506,341.0,343.323,345.816,348.31,350.803,354.292,357.279,359.2524,360.627,366.106,368.6,371.587,376.071,380.053,382.546,384.869,387.363,389.857,394.341,396.332,400.314,404.798,407.785,411.274,415.759,417.114,421.598,424.092,426.415,428.738,432.227,435.716,439.205,444.191,446.685,449.178,453.662,455.9942,457.343,459.837,462.33,465.819,474.153,476.476,481.462,486.448,489.937,492.43,494.924,498.906,503.892,506.386,511.372" svgx:width="0.5,0.28,0.33,0.5,0.44,0.28,0.26,0.28,0.28,0.28,0.39,0.33,0.22,0.55,0.61,0.28,0.33,0.5,0.44,0.28,0.26,0.28,0.28,0.5,0.22,0.44,0.5,0.33,0.39,0.5,0.55,0.5,0.28,0.26,0.26,0.39,0.39,0.39,0.56,0.28,0.28,0.5,0.26,0.55,0.28,0.28,0.39,0.78,0.26,0.56,0.56,0.39,0.28,0.28,0.44,0.56,0.28,0.56,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:8.97px;stroke:none;">disabilities: Disability-based differential itemfunctioning</text>
+  </g>
+  <g begin="text">
+   <text y="326.688" x="515.338,517.3113999999999,518.686,522.664,528.142,532.122,535.941,538.764,542.744,545.9,549.88" svgx:width="0.22,0.55,0.44,0.61,0.44,0.43,0.31,0.44,0.35,0.44,0.26" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">. (Doctoral</text>
+  </g>
+  <g begin="text">
+   <text y="336.651" x="320.076,324.388,326.711,330.028,333.346,337.327,340.483,343.307,347.289,350.113,352.435,356.416,360.9,364.881,366.8544,370.596,375.582,379.563,382.387,385.544,387.866,391.847,395.496,399.477,403.7826,407.524,410.017,413.173,417.154,423.6124,427.351,432.005,435.161,439.142,444.459,448.942,452.923,456.241,459.0217,462.793,468.271,470.593,473.911,477.229,481.21,484.366,487.19,491.171,493.996,496.318,500.299,504.782,508.10089999999997,511.82,515.801,520.284,524.5896,528.322,533.137,537.62,541.601,544.919,548.9" svgx:width="0.48,0.26,0.37,0.37,0.44,0.35,0.31,0.44,0.31,0.26,0.44,0.5,0.44,0.22,0.55,0.56,0.44,0.31,0.35,0.26,0.44,0.41,0.44,0.48,0.55,0.28,0.35,0.44,0.72,0.55,0.52,0.35,0.44,0.59,0.5,0.44,0.37,0.31,0.55,0.61,0.26,0.37,0.37,0.44,0.35,0.31,0.44,0.31,0.26,0.44,0.5,0.37,0.55,0.44,0.5,0.48,0.55,0.54,0.5,0.44,0.37,0.44,0.37" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">dissertation). Retrieved from ProQuest Dissertations and Theses</text>
+  </g>
+  <g begin="text">
+   <text y="346.613" x="320.076,324.387,328.366,331.189,335.168,339.317,343.297,346.612,350.592,353.908,355.88140000000004,357.895,361.873,367.189,373.66,376.62010000000004,378.638,384.119,388.098,390.07140000000004,392.086,396.065,400.044,404.023,408.003,411.982,415.961,419.94" svgx:width="0.48,0.44,0.31,0.44,0.46,0.44,0.37,0.44,0.37,0.22,0.55,0.44,0.59,0.72,0.33,0.55,0.61,0.44,0.22,0.55,0.44,0.44,0.44,0.44,0.44,0.44,0.44,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">databases. (UMI No. 3390841)</text>
+  </g>
+  <g begin="text">
+   <text y="356.577" x="310.112,315.258,319.238,323.057,327.369,331.349,334.504,336.47740000000005,337.834,342.983,344.95640000000003,346.313,350.129,352.10240000000005,353.459,357.44,361.42,365.4,369.38,373.36,377.34,379.3134,380.671,385.153,388.64,393.122,395.946,400.428,404.408,407.725,410.046,413.533,415.855,420.337,424.1941,425.495,428.811,431.635,435.615,440.097,444.409,448.389,451.545,455.857,458.178,461.665,465.645,469.9506,471.298,477.771,481.751,485.731,491.554,495.372,499.855,503.835,508.317,512.136,516.0828,517.455,523.928,527.908,531.888,535.205,539.687,542.842,546.823,550.139" svgx:width="0.57,0.44,0.43,0.48,0.44,0.35,0.22,0.55,0.57,0.22,0.55,0.43,0.22,0.55,0.44,0.44,0.44,0.44,0.44,0.44,0.22,0.55,0.5,0.39,0.5,0.31,0.5,0.44,0.37,0.26,0.39,0.26,0.5,0.43,0.55,0.37,0.31,0.44,0.5,0.48,0.44,0.35,0.48,0.26,0.39,0.44,0.48,0.55,0.72,0.44,0.44,0.5,0.43,0.5,0.44,0.5,0.43,0.44,0.55,0.72,0.44,0.44,0.37,0.5,0.35,0.44,0.37,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">Becker, B. J. (1988). Synthesizing standardized meanchange measures.</text>
+  </g>
+  <g begin="text">
+   <text y="366.539" x="320.076,325.061,328.549,331.041,333.534,336.027,339.013,344.781,348.763,352.744,357.729,361.217,366.202,370.685,373.0172,374.294,378.275,380.6072,381.884,388.529,393.012,395.504,399.988,403.476,410.451,414.935,417.427,419.92,423.408,427.891,430.2232,431.5,435.983,440.968,446.737,450.886,453.379,457.862,460.355,462.847,465.833,468.326,470.818,474.306,478.789,481.1212,482.398,487.052,490.038,494.521,498.009,502.492,506.473,508.796,512.777,516.758" svgx:width="0.56,0.39,0.28,0.28,0.28,0.33,0.5,0.44,0.44,0.56,0.39,0.56,0.5,0.26,0.55,0.44,0.26,0.55,0.74,0.5,0.28,0.5,0.39,0.78,0.5,0.28,0.28,0.39,0.5,0.26,0.55,0.5,0.56,0.5,0.46,0.28,0.5,0.28,0.28,0.33,0.28,0.28,0.39,0.5,0.26,0.55,0.52,0.33,0.5,0.39,0.5,0.44,0.26,0.44,0.44,0.5" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:8.97px;stroke:none;">BritishJournal of Mathematical andStatistical Psychology</text>
+  </g>
+  <g begin="text">
+   <text y="366.539" x="521.25" svgx:width="0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">,</text>
+  </g>
+  <g begin="text">
+   <text y="366.539" x="524.527,528.505" svgx:width="0.44,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:8.97px;stroke:none;">41</text>
+  </g>
+  <g begin="text">
+   <text y="366.539" x="532.482,534.4553999999999,535.759,539.737,543.716,547.694" svgx:width="0.22,0.55,0.44,0.44,0.44,0.5" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">, 257–</text>
+  </g>
+  <g begin="text">
+   <text y="376.503" x="320.075,324.053,328.031,332.01" svgx:width="0.44,0.44,0.44,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">278.</text>
+  </g>
+  <g begin="text">
+   <text y="386.465" x="310.111,315.257,317.578,321.559,323.88,326.201,330.684,334.0,338.312,340.634,342.60740000000004,344.135,347.954,349.944,351.91740000000004,353.445,358.26,362.742,367.225,370.38,372.701,376.681,382.159,384.1324,385.651,392.124,394.114,396.0874,397.615,401.926,405.243,408.56,412.54,414.861,419.173,422.66,426.972,430.953,432.9264,434.454,438.273,440.262,442.2354,443.764,448.417,451.573,453.894,457.874,462.186,466.166,470.649,474.799,478.779,482.598,487.08,489.0534,490.6,494.419,496.408,498.38140000000004,499.91,506.894,511.546,514.702,517.023,521.003,525.315,529.295,533.778,537.928,541.908,545.727,550.209" svgx:width="0.57,0.26,0.44,0.26,0.26,0.5,0.37,0.48,0.26,0.22,0.55,0.43,0.22,0.22,0.55,0.54,0.5,0.5,0.35,0.26,0.44,0.61,0.22,0.55,0.72,0.22,0.22,0.55,0.48,0.37,0.37,0.44,0.26,0.48,0.39,0.48,0.44,0.22,0.55,0.43,0.22,0.22,0.55,0.52,0.35,0.26,0.44,0.48,0.44,0.5,0.46,0.44,0.43,0.5,0.22,0.55,0.43,0.22,0.22,0.55,0.61,0.52,0.35,0.26,0.44,0.48,0.44,0.5,0.46,0.44,0.43,0.5,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">Bielinski, J., Thurlow, M., Ysseldyke, J., Friedenbach, J., &amp;Friedenbach,</text>
+  </g>
+  <g begin="text">
+   <text y="396.429" x="320.075,326.546,328.5194,330.677,334.655,338.633,342.612,346.59,350.569,354.547" svgx:width="0.72,0.22,0.55,0.44,0.44,0.44,0.44,0.44,0.44,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">M. (2001).</text>
+  </g>
+  <g begin="text">
+   <text y="396.429" x="358.686,363.502,366.99,371.475,375.959,377.95,382.434,384.757,388.739,393.726,398.211,400.35,404.832,408.321,411.81,415.792,422.769,429.745,433.727,438.211,442.696,445.189,447.683,451.665,456.651,459.638,461.6114,463.768,468.755,471.078,473.401,476.89,480.379,482.872,485.8321,487.984,491.962,496.98519999999996,499.082,506.056,511.043,513.366,515.859,518.353,523.007,525.331,528.819,530.811,534.3,538.784,542.766,545.259,548.748" svgx:width="0.54,0.39,0.5,0.5,0.22,0.5,0.26,0.44,0.56,0.5,0.55,0.5,0.39,0.39,0.44,0.78,0.78,0.44,0.5,0.5,0.28,0.28,0.44,0.56,0.33,0.22,0.55,0.56,0.26,0.26,0.39,0.39,0.28,0.33,0.55,0.44,0.56,0.55,0.78,0.56,0.26,0.28,0.28,0.52,0.26,0.39,0.22,0.39,0.5,0.44,0.28,0.39,0.39" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:8.97px;stroke:none;">Read-aloud accommodations: Effects on multiple-choice</text>
+  </g>
+  <g begin="text">
+   <text y="406.392" x="320.075,323.564,327.052,331.536,336.021,338.514,343.5,347.4468,349.575,354.059,359.045,363.53000000000003,365.634,372.611,377.095,379.588,384.07300000000004,386.177,388.67,391.164,394.653,401.629" svgx:width="0.39,0.39,0.5,0.5,0.28,0.56,0.44,0.55,0.5,0.56,0.5,0.55,0.78,0.5,0.28,0.5,0.55,0.28,0.28,0.39,0.78,0.33" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:8.97px;stroke:none;">reading and math items</text>
+  </g>
+  <g begin="text">
+   <text y="406.392" x="404.614,406.5874,408.7,415.171,417.493,421.975,426.457,430.438,434.418,438.73,442.71,445.031,447.353,450.669,452.6424,454.773,460.092,464.575,466.896,470.544,474.525,477.68,480.997,483.318,486.142,489.6403,491.73,495.709,498.2206,500.308,506.779,509.1,513.582,518.065,522.045,525.361,529.342,532.165,536.145,538.1184,540.249,545.73,549.711" svgx:width="0.22,0.55,0.72,0.26,0.5,0.5,0.44,0.44,0.48,0.44,0.26,0.26,0.37,0.22,0.55,0.59,0.5,0.26,0.41,0.44,0.35,0.37,0.26,0.31,0.39,0.55,0.44,0.28,0.55,0.72,0.26,0.5,0.5,0.44,0.37,0.44,0.31,0.44,0.22,0.55,0.61,0.44,0.28" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">. Minneapolis: University of Minnesota, Na-</text>
+  </g>
+  <g begin="text">
+   <text y="416.355" x="320.075,322.898,325.22,329.2,333.682,337.662,339.9942,341.982,346.967,350.947,355.429,358.253,362.233,365.3725,367.381,371.362,375.84700000000004,377.842,382.987,387.299,391.782,395.6,399.581,402.404,404.726,408.706,413.188,417.168,419.5002,421.497,426.816,431.298,434.122,437.941,441.921,448.394,452.374,455.691" svgx:width="0.31,0.26,0.44,0.5,0.44,0.26,0.55,0.56,0.44,0.5,0.31,0.44,0.35,0.55,0.44,0.5,0.55,0.57,0.48,0.5,0.43,0.44,0.31,0.26,0.44,0.5,0.44,0.26,0.55,0.59,0.5,0.31,0.43,0.44,0.72,0.44,0.37,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">tional Center on Educational Outcomes.</text>
+  </g>
+  <g begin="text">
+   <text y="426.318" x="310.111,315.257,319.237,321.559,324.382,326.35540000000003,330.061,334.544,336.5174,340.232,345.381,347.37,349.34340000000003,353.059,358.5307,362.229,366.54,369.857,373.174,377.154,379.475,383.787,387.274,391.586,395.566,397.5394,401.246,405.065,407.0384,410.753,415.899,417.8724,421.578,425.558,429.538,433.519,437.499,441.479,445.459,447.43240000000003,451.165,456.15,460.13,466.603,470.915,474.895,478.05,480.372,484.854,488.7111,492.369,497.846,500.831,505.4954,509.175,513.155,516.974,520.129,524.109,527.426,530.7449,534.436,540.909,544.889,547.713" svgx:width="0.57,0.44,0.26,0.31,0.22,0.55,0.5,0.22,0.55,0.57,0.22,0.22,0.55,0.61,0.55,0.48,0.37,0.37,0.44,0.26,0.48,0.39,0.48,0.44,0.22,0.55,0.43,0.22,0.55,0.57,0.22,0.55,0.44,0.44,0.44,0.44,0.44,0.44,0.22,0.55,0.56,0.44,0.72,0.48,0.44,0.35,0.26,0.5,0.43,0.55,0.61,0.33,0.52,0.55,0.44,0.43,0.35,0.44,0.37,0.37,0.55,0.72,0.44,0.31,0.5" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">Bolt, S. E., &amp; Ysseldyke, J. E. (2006). Comparing DIF across math</text>
+  </g>
+  <g begin="text">
+   <text y="436.281" x="320.075,324.055,328.537,332.8426,335.206,338.365,342.345,346.326,350.638,352.959,357.441,361.26,363.752,366.073,370.053,374.536,378.355,382.837,386.817,390.636,394.5828,396.999,400.979,404.135,406.958,410.2769,412.629,415.452,419.432,422.749,425.573,428.89189999999996,431.243,433.736,437.716,440.8555,443.224,446.54,449.364,453.846,458.158,462.138,466.621,469.444,472.7629,475.124,478.279,482.259,486.078,490.058,492.379,496.028,498.349,502.832,506.6891,509.015,512.9618,515.351,518.507,522.487,526.467,530.7726,533.136,537.116,539.438,543.418,547.9" svgx:width="0.44,0.5,0.48,0.55,0.35,0.44,0.44,0.48,0.26,0.5,0.43,0.28,0.26,0.44,0.5,0.43,0.5,0.44,0.43,0.44,0.55,0.44,0.35,0.31,0.37,0.55,0.31,0.44,0.37,0.31,0.37,0.55,0.28,0.44,0.35,0.55,0.37,0.31,0.5,0.48,0.44,0.5,0.31,0.37,0.55,0.35,0.44,0.43,0.44,0.26,0.41,0.26,0.5,0.43,0.55,0.44,0.55,0.35,0.44,0.44,0.48,0.55,0.44,0.26,0.44,0.5,0.48" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">and reading/language arts tests for students receiving a read aloud</text>
+  </g>
+  <g begin="text">
+   <text y="446.243" x="320.075,324.054,327.872,331.69,335.669,342.141,348.613,352.592,356.903,360.883,363.705,366.026,370.005,374.486" svgx:width="0.44,0.43,0.43,0.44,0.72,0.72,0.44,0.48,0.44,0.31,0.26,0.44,0.5,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">accommodation.</text>
+  </g>
+  <g begin="text">
+   <text y="446.243" x="381.348,386.164,390.819,395.473,397.796,400.29,403.779,408.264,413.103,419.748,423.237,427.721,430.707,435.694,439.182,442.671,449.648,453.137,458.123,460.6346,465.441,467.933,472.95619999999997,477.761,482.748,487.232,492.218,495.707,500.191,502.684,505.178,509.16" svgx:width="0.54,0.52,0.52,0.26,0.28,0.39,0.5,0.55,0.74,0.39,0.5,0.33,0.56,0.39,0.39,0.78,0.39,0.56,0.28,0.55,0.28,0.56,0.55,0.56,0.5,0.56,0.39,0.5,0.28,0.28,0.44,0.56" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:8.97px;stroke:none;">Applied Measurement in Education</text>
+  </g>
+  <g begin="text">
+   <text y="446.243" x="514.148" svgx:width="0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">,</text>
+  </g>
+  <g begin="text">
+   <text y="446.243" x="520.988,524.967" svgx:width="0.44,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:8.97px;stroke:none;">19</text>
+  </g>
+  <g begin="text">
+   <text y="446.243" x="528.944,530.9173999999999,535.785,539.763,543.742,547.72" svgx:width="0.22,0.55,0.44,0.44,0.44,0.5" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">, 329–</text>
+  </g>
+  <g begin="text">
+   <text y="456.207" x="320.075,324.053,328.031,332.01" svgx:width="0.44,0.44,0.44,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">355.</text>
+  </g>
+  <g begin="text">
+   <text y="466.169" x="310.111,315.257,319.237,322.392,326.373,330.855,334.172,336.995,340.975,343.297,347.779,349.7524,352.099,358.57,360.56,362.53340000000003,364.889,370.698,374.678,378.99,382.809,386.789,390.106,392.0794,394.435,398.917,400.8904,403.237,407.891,409.88,411.8534,414.209,420.019,422.34,426.159,429.978,432.299,436.781,440.098,442.07140000000004,444.418,448.234,450.2074,452.563,457.217,459.206,461.17940000000004,463.535,469.0067,471.339,476.325,480.305,483.129,487.611,490.928,493.751,497.731,500.053,504.535,506.50840000000005,508.864,514.6945,517.009,521.994,523.9674,526.314,530.294,534.274,538.254,542.234,546.215,550.195" svgx:width="0.57,0.44,0.35,0.44,0.5,0.37,0.31,0.44,0.26,0.5,0.22,0.55,0.72,0.22,0.22,0.55,0.65,0.44,0.48,0.43,0.44,0.37,0.22,0.55,0.5,0.22,0.55,0.52,0.22,0.22,0.55,0.65,0.26,0.43,0.43,0.26,0.5,0.37,0.22,0.55,0.43,0.22,0.55,0.52,0.22,0.22,0.55,0.61,0.55,0.56,0.44,0.31,0.5,0.37,0.31,0.44,0.26,0.5,0.22,0.55,0.65,0.55,0.56,0.22,0.55,0.44,0.44,0.44,0.44,0.44,0.44,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">Borenstein, M., Hedges, L. V., Higgins, J. P., &amp; Rothstein, H R. (2009).</text>
+  </g>
+  <g begin="text">
+   <text y="476.133" x="320.075,322.899,327.884,330.377,333.865,337.846,342.329,347.315,350.802,353.295,355.788,359.769,364.7922,366.735,369.227,373.17379999999997,375.204,382.179,385.666,388.159,392.642,394.633,399.116,404.101,408.585,410.907,415.39,418.376,420.869" svgx:width="0.31,0.56,0.28,0.39,0.44,0.5,0.56,0.39,0.28,0.28,0.44,0.56,0.55,0.28,0.44,0.55,0.78,0.39,0.28,0.5,0.22,0.5,0.56,0.5,0.26,0.5,0.33,0.28,0.33" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:8.97px;stroke:none;">Introduction to meta-analysis</text>
+  </g>
+  <g begin="text">
+   <text y="476.133" x="423.866,425.8394,429.833,434.819,439.304,441.627,445.447,449.931,453.913,457.232,460.057,464.039,467.196,469.16940000000005,471.184,476.501,481.649,483.6224,485.628,492.434,494.757,497.08,501.062,504.551" svgx:width="0.22,0.55,0.56,0.5,0.26,0.43,0.5,0.44,0.37,0.31,0.44,0.35,0.22,0.55,0.59,0.57,0.22,0.55,0.76,0.26,0.26,0.44,0.39,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">. Chichester, UK: Wiley.</text>
+  </g>
+  <g begin="text">
+   <text y="486.095" x="310.111,314.09,319.235,323.717,326.871,330.689,335.171,337.1444,339.455,345.926,347.8994,350.21,355.025,356.9984,359.3,363.279,367.259,371.238,375.217,379.196,383.176" svgx:width="0.44,0.57,0.5,0.35,0.43,0.5,0.22,0.55,0.72,0.22,0.55,0.54,0.22,0.55,0.44,0.44,0.44,0.44,0.44,0.44,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">*Burch, M. A. (2002).</text>
+  </g>
+  <g begin="text">
+   <text y="486.095" x="388.963,393.949,396.272,398.595,402.084,405.573,408.066,411.0261,413.331,417.31,419.6422,421.927,425.419,429.401,436.378,441.032,446.018,448.512,452.001,455.49,457.481,461.463,465.947,468.934,472.423,476.908,479.182,481.675,485.164,488.151,490.6626,492.93,497.412,500.901,504.39,508.372,515.348,522.325,526.307,530.791,535.275,537.769,540.262,544.244,549.231" svgx:width="0.56,0.26,0.26,0.39,0.39,0.28,0.33,0.55,0.44,0.26,0.55,0.39,0.44,0.78,0.52,0.56,0.28,0.39,0.39,0.22,0.44,0.5,0.33,0.39,0.5,0.55,0.28,0.39,0.33,0.28,0.55,0.5,0.39,0.39,0.44,0.78,0.78,0.44,0.5,0.5,0.28,0.28,0.44,0.56,0.33" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:8.97px;stroke:none;">Effects of computer-based test accommodations</text>
+  </g>
+  <g begin="text">
+   <text y="496.058" x="320.074,324.055,330.346,332.838,337.322,340.8203,342.119,349.094,353.578,356.07,361.857,366.511,369.999,373.98,377.961,380.283,383.771,390.747,392.737,395.723,399.704,402.027,406.008,408.5,413.486,417.4328,418.769,423.422,426.91,430.398,432.72,436.701,440.189,447.165,451.648,456.634,460.122,463.62030000000004,464.919,468.9,471.2322,472.527,475.512,478.005,482.99,487.474,490.961,495.947,498.439,501.39910000000003,502.733,508.713,511.206,513.698,519.485,523.969,528.954,534.741,540.726,543.219,545.711,550.194" svgx:width="0.44,0.56,0.28,0.5,0.39,0.55,0.78,0.5,0.28,0.5,0.52,0.39,0.44,0.44,0.26,0.39,0.78,0.22,0.33,0.44,0.26,0.44,0.28,0.56,0.44,0.55,0.52,0.39,0.39,0.26,0.44,0.39,0.78,0.5,0.56,0.39,0.39,0.55,0.44,0.26,0.55,0.33,0.28,0.56,0.5,0.39,0.56,0.28,0.33,0.55,0.67,0.28,0.28,0.5,0.5,0.56,0.5,0.67,0.28,0.28,0.5,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:8.97px;stroke:none;">onthe mathproblem-solving performance of students withandwith-</text>
+  </g>
+  <g begin="text">
+   <text y="506.012" x="320.074,324.055,329.04,331.5516,335.17,339.652,342.145,345.13,349.614,353.595,356.087,358.41,360.902,363.395,365.887,369.375" svgx:width="0.44,0.56,0.28,0.55,0.5,0.28,0.33,0.5,0.44,0.28,0.26,0.28,0.28,0.28,0.39,0.33" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:8.97px;stroke:none;">out disabilities</text>
+  </g>
+  <g begin="text">
+   <text y="506.012" x="376.002,379.983,385.461,389.442,393.262,396.086,400.067,403.224,407.205,409.5372,413.172,417.483,419.805,423.123,426.44,430.421,433.578,436.402,440.383,443.207,445.53,449.511,453.994,457.975,459.94840000000005,463.601,468.587,472.568,475.392,478.548,480.871,484.852,488.501,492.482,496.78760000000005,500.438,502.931,506.087,510.068,516.5264,520.175,524.828,527.985,531.966,537.283,541.766,545.747,549.065" svgx:width="0.44,0.61,0.44,0.43,0.31,0.44,0.35,0.44,0.26,0.55,0.48,0.26,0.37,0.37,0.44,0.35,0.31,0.44,0.31,0.26,0.44,0.5,0.44,0.22,0.55,0.56,0.44,0.31,0.35,0.26,0.44,0.41,0.44,0.48,0.55,0.28,0.35,0.44,0.72,0.55,0.52,0.35,0.44,0.59,0.5,0.44,0.37,0.35" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">(Doctoral dissertation). Retrieved from ProQuesr</text>
+  </g>
+  <g begin="text">
+   <text y="515.975" x="320.074,325.551,327.873,331.189,334.506,338.486,341.642,344.465,348.445,351.269,353.59,357.57,362.053,365.3719,367.354,371.334,375.816,380.1216,382.125,386.94,391.422,395.402,398.719,402.699,406.0179,408.009,412.32,416.3,419.124,423.104,427.255,431.235,434.552,438.532,440.5054,442.528,446.508,451.824,458.297,461.25710000000004,463.275,468.752,472.732,474.70540000000005,476.72,480.7,484.68,488.66,492.64,496.621,500.601,504.581" svgx:width="0.61,0.26,0.37,0.37,0.44,0.35,0.31,0.44,0.31,0.26,0.44,0.5,0.37,0.55,0.44,0.5,0.48,0.55,0.54,0.5,0.44,0.37,0.44,0.37,0.55,0.48,0.44,0.31,0.44,0.46,0.44,0.37,0.44,0.22,0.55,0.44,0.59,0.72,0.33,0.55,0.61,0.44,0.22,0.55,0.44,0.44,0.44,0.44,0.44,0.44,0.44,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">Dissertations and Theses database. (UMI No. 3047429)</text>
+  </g>
+  <g begin="text">
+   <text y="525.938" x="310.11,315.095,319.075,323.557,327.537,329.859,333.839,338.321,340.813,345.295,349.276,351.597,354.421,358.903,362.22,364.541,367.858,369.83140000000003,373.078,378.064,380.03740000000005,383.266,387.247,391.227,395.207,399.187,403.167,407.148,409.12140000000005,412.377,417.029,421.01,423.331,425.652,429.964,432.286,435.109,438.6073,441.823,445.802,450.284,454.5896,457.818,461.798,465.617,469.435,473.416,479.888,486.361,490.341,494.653,498.634,501.457,503.779,507.759,512.241,515.558,517.5314,520.787,525.6308,528.824,532.473,536.453,539.608,541.93,545.91,548.733" svgx:width="0.56,0.44,0.5,0.44,0.26,0.44,0.5,0.28,0.5,0.44,0.26,0.31,0.5,0.37,0.26,0.37,0.22,0.55,0.56,0.22,0.55,0.44,0.44,0.44,0.44,0.44,0.44,0.22,0.55,0.52,0.44,0.26,0.26,0.48,0.26,0.31,0.39,0.55,0.44,0.5,0.48,0.55,0.44,0.43,0.43,0.44,0.72,0.72,0.44,0.48,0.44,0.31,0.26,0.44,0.5,0.37,0.22,0.55,0.54,0.55,0.41,0.44,0.35,0.26,0.44,0.31,0.39" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">Cahalan-Laitusis, C. (2007). Validity and accommodations: A variety</text>
+  </g>
+  <g begin="text">
+   <text y="535.902" x="320.074,324.054,326.56559999999996,329.364,333.344,337.656,341.968,345.123,349.103,353.084,356.902,361.385,365.365,368.6839,371.512,374.338,378.2848,381.133,385.112,388.93,392.749,396.729,400.046,403.363,405.684,409.835,412.156,416.1028,418.97,422.948,426.265,429.581,433.562,436.878,440.195,446.668,450.648,455.13,457.954,461.271,463.24440000000004,466.068,469.056,473.541,476.356,481.342,483.3154,486.148,491.134,495.114,499.597,503.577,505.898,509.878,514.361,516.852,521.335,525.315,527.636,530.46,534.942,538.259,540.58,543.8989,546.719" svgx:width="0.44,0.28,0.55,0.44,0.48,0.48,0.35,0.44,0.44,0.43,0.5,0.44,0.37,0.55,0.31,0.44,0.55,0.44,0.43,0.43,0.44,0.37,0.37,0.26,0.46,0.26,0.44,0.55,0.44,0.37,0.37,0.44,0.37,0.37,0.72,0.44,0.5,0.31,0.37,0.22,0.55,0.33,0.5,0.55,0.56,0.22,0.55,0.56,0.44,0.5,0.44,0.26,0.44,0.5,0.28,0.5,0.44,0.26,0.31,0.5,0.37,0.26,0.37,0.55,0.61" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">of approaches to accessible assessments. In C. Cahalan-Laitusis &amp;</text>
+  </g>
+  <g begin="text">
+   <text y="545.865" x="320.074,324.556,326.5294,329.974,334.457,336.4304,339.884,344.869,348.849,352.829,357.13460000000003,360.569,364.549,369.695,374.007,377.323,379.313,383.293" svgx:width="0.5,0.22,0.55,0.5,0.22,0.55,0.56,0.44,0.44,0.48,0.55,0.44,0.57,0.48,0.37,0.22,0.44,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">L. L. Cook (Eds.),</text>
+  </g>
+  <g begin="text">
+   <text y="545.865" x="388.719,393.203,397.687,401.176,405.158,408.6563,412.079,415.066,418.554,423.039,425.362,428.86030000000005,432.274,436.756,439.743,442.73,446.218,449.205,452.192,459.169,462.657,467.644,470.1556,473.548,478.03,483.017,487.502,490.937,495.421,498.909,502.398,506.38,513.357,520.334,524.316,528.8,533.284,535.777,538.271,542.253,547.239,550.226" svgx:width="0.5,0.5,0.39,0.44,0.39,0.55,0.33,0.39,0.5,0.26,0.39,0.55,0.5,0.33,0.33,0.39,0.33,0.33,0.78,0.39,0.56,0.28,0.55,0.5,0.56,0.5,0.55,0.5,0.39,0.39,0.44,0.78,0.78,0.44,0.5,0.5,0.28,0.28,0.44,0.56,0.33,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:8.97px;stroke:none;">Large scale assessment and accommodations:</text>
+  </g>
+  <g begin="text">
+   <text y="555.829" x="320.074,326.386,330.869,335.353,337.8646,340.455,346.436,350.417,353.905,357.886" svgx:width="0.7,0.5,0.5,0.28,0.55,0.67,0.44,0.39,0.44,0.33" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:8.97px;stroke:none;">What works</text>
+  </g>
+  <g begin="text">
+   <text y="555.829" x="363.473,367.452,371.763,376.074,378.04740000000004,380.673,384.652,388.632,393.113,397.092,401.072,405.051,407.0244,409.659,416.462,420.442,423.758,428.239,430.559,435.041,438.859,441.681,445.661,450.142,452.1154,454.75,460.231,465.215,467.1884,469.804,474.788,478.767,483.249,487.73,491.548,493.868,496.2002,498.81,501.301,505.28,508.41949999999997,511.04,516.189,520.168,523.986,527.965,532.276,535.099,537.419,541.398,545.88,549.859" svgx:width="0.44,0.48,0.48,0.22,0.55,0.44,0.44,0.5,0.44,0.44,0.44,0.22,0.55,0.76,0.44,0.37,0.5,0.26,0.5,0.43,0.31,0.44,0.5,0.22,0.55,0.61,0.56,0.22,0.55,0.56,0.44,0.5,0.5,0.43,0.26,0.26,0.55,0.28,0.44,0.35,0.55,0.57,0.44,0.43,0.44,0.48,0.31,0.26,0.44,0.5,0.44,0.26" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">(pp. 71–83). Washington, DC: Council for Exceptional</text>
+  </g>
+  <g begin="text">
+   <text y="565.792" x="320.074,325.059,329.542,331.865,334.187,338.5,341.656,345.637,350.12" svgx:width="0.56,0.5,0.26,0.26,0.48,0.35,0.44,0.5,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">Children.</text>
+  </g>
+  <g begin="text">
+   <text y="575.755" x="310.11,314.091,319.075,323.055,325.377,329.859,333.839,337.819,342.302,344.27540000000005,348.224,354.695,356.6684,360.617,365.766,367.755,369.7284,373.669,378.321,382.804,386.623,391.105,394.422,396.39540000000005,400.335,404.817,406.79040000000003,410.731,415.213,417.202,419.1754,423.116,428.5877,432.521,438.33,442.31,448.783,451.104,455.085,457.908,460.732,462.70540000000005,466.645,471.629,473.60240000000005,477.543,482.025,483.9984,487.939,491.919,495.899,499.879,503.859,507.839,511.82,513.7934,517.751,522.897,525.389,527.88,531.86,535.679,538.503,541.8219,545.748,549.726" svgx:width="0.44,0.56,0.44,0.26,0.5,0.44,0.44,0.5,0.22,0.55,0.72,0.22,0.55,0.57,0.22,0.22,0.55,0.52,0.5,0.43,0.5,0.37,0.22,0.55,0.5,0.22,0.55,0.5,0.22,0.22,0.55,0.61,0.55,0.65,0.44,0.72,0.26,0.44,0.31,0.31,0.22,0.55,0.56,0.22,0.55,0.5,0.22,0.55,0.44,0.44,0.44,0.44,0.44,0.44,0.22,0.55,0.57,0.28,0.28,0.44,0.43,0.31,0.37,0.55,0.44,0.28" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">*Calhoon, M. B., Fuchs, L. S., &amp; Hamlett, C. L. (2000). Effects of</text>
+  </g>
+  <g begin="text">
+   <text y="585.718" x="320.074,323.893,327.873,334.346,338.658,343.14,345.963,349.944,353.099,355.591,359.741,363.721,367.038,371.018,375.3236,377.228,380.052,384.032,387.349,390.1297,392.047,396.027,399.846,403.665,407.645,414.118,420.591,424.571,428.883,432.863,435.687,438.008,441.988,446.471,449.7899,451.7,455.68,460.165,462.043,468.516,472.496,475.32,479.802,483.782,490.255,494.235,497.059,499.38,503.199,506.5179,508.41,512.721,516.702,519.857,522.349,526.329,529.484,535.957,539.937,544.419,548.238" svgx:width="0.43,0.44,0.72,0.48,0.5,0.31,0.44,0.35,0.28,0.46,0.44,0.37,0.44,0.48,0.55,0.31,0.44,0.37,0.31,0.55,0.44,0.43,0.43,0.44,0.72,0.72,0.44,0.48,0.44,0.31,0.26,0.44,0.5,0.37,0.55,0.44,0.5,0.55,0.72,0.44,0.31,0.5,0.44,0.72,0.44,0.31,0.26,0.43,0.37,0.55,0.48,0.44,0.35,0.28,0.44,0.35,0.72,0.44,0.5,0.43,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">computer-based test accommodations on mathematics performance</text>
+  </g>
+  <g begin="text">
+   <text y="595.682" x="320.074,324.055,327.372,330.69,334.671,337.989,341.306,347.78,351.761,356.244,359.069,362.3879,363.83,366.322,370.303,373.4425,374.902,378.224,382.205,386.024,390.005,394.489,398.801,402.782,405.939,409.43730000000005,410.871,414.189,417.013,421.496,425.809,429.79,434.273,437.098,440.4169,441.859,447.337,449.66,452.484,456.969,458.406,460.729,464.71,468.691,471.847,476.33,478.652,483.136,486.9931,488.392,492.705,495.027,498.344,502.326,506.477,508.799,511.122,513.444,516.268,518.591,522.572,525.889" svgx:width="0.44,0.37,0.37,0.44,0.37,0.37,0.72,0.44,0.5,0.31,0.37,0.55,0.28,0.44,0.35,0.55,0.37,0.44,0.43,0.44,0.5,0.48,0.44,0.35,0.39,0.55,0.37,0.31,0.5,0.48,0.44,0.5,0.31,0.37,0.55,0.61,0.26,0.31,0.5,0.55,0.26,0.44,0.44,0.35,0.5,0.26,0.5,0.43,0.55,0.48,0.26,0.37,0.44,0.46,0.26,0.26,0.26,0.31,0.26,0.44,0.37,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">assessments for secondary students with learning disabilities.</text>
+  </g>
+  <g begin="text">
+   <text y="595.682" x="529.304,533.789,537.279,541.764,545.253,550.24" svgx:width="0.5,0.39,0.5,0.39,0.56,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:8.97px;stroke:none;">Learn-</text>
+  </g>
+  <g begin="text">
+   <text y="605.645" x="320.074,322.567,327.554,331.50079999999997,333.521,339.002,341.495,344.482,348.966,352.948,355.442,357.765,360.258,362.752,367.237,369.223,374.541,379.527,384.011,387.5,389.994,393.483,396.971,399.295" svgx:width="0.28,0.56,0.44,0.55,0.61,0.28,0.33,0.5,0.44,0.28,0.26,0.28,0.28,0.5,0.55,0.59,0.56,0.5,0.39,0.28,0.39,0.39,0.26,0.5" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:8.97px;stroke:none;">ing Disability Quarterly</text>
+  </g>
+  <g begin="text">
+   <text y="605.645" x="403.777" svgx:width="0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">,</text>
+  </g>
+  <g begin="text">
+   <text y="605.645" x="407.746,411.725" svgx:width="0.44,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:8.97px;stroke:none;">23</text>
+  </g>
+  <g begin="text">
+   <text y="605.645" x="415.702,417.6754,419.69,423.668,427.646,431.625,436.105,440.084,444.062,448.04" svgx:width="0.22,0.55,0.44,0.44,0.44,0.5,0.44,0.44,0.44,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">, 271–282.</text>
+  </g>
+  <g begin="text">
+   <text y="615.608" x="310.111,315.096,319.578,322.733,325.055,328.371,331.195,335.175,339.657,342.974,346.954,351.436,353.4094,355.919,360.401,362.37440000000004,364.892,369.375,371.364,373.3374,375.856,380.338,384.318,387.805,391.785,394.941,399.423,402.74,404.71340000000004,407.231,411.713,413.68640000000005,416.204,420.687,422.676,424.6494,427.168,432.152,435.307,439.288,443.77,447.75,449.7234,452.241,458.714,460.704,462.67740000000003,465.195,470.6667,473.169,477.983,482.465,486.948,490.103,492.424,496.404,501.882,503.85540000000003,506.373,512.846,514.8194,517.337,521.82,523.7934,526.311,530.291,534.271,538.251,542.232,546.212,550.192" svgx:width="0.56,0.5,0.35,0.26,0.37,0.31,0.44,0.5,0.37,0.44,0.5,0.22,0.55,0.5,0.22,0.55,0.5,0.22,0.22,0.55,0.5,0.44,0.39,0.44,0.35,0.5,0.37,0.22,0.55,0.5,0.22,0.55,0.5,0.22,0.22,0.55,0.56,0.35,0.44,0.5,0.44,0.22,0.55,0.72,0.22,0.22,0.55,0.61,0.55,0.54,0.5,0.5,0.35,0.26,0.44,0.61,0.22,0.55,0.72,0.22,0.55,0.5,0.22,0.55,0.44,0.44,0.44,0.44,0.44,0.44,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">Christensen, L. L., Lazarus, S. S., Crone, M., &amp; Thurlow, M. L. (2008).</text>
+  </g>
+  <g begin="text">
+   <text y="625.57" x="320.075,324.057,328.039,332.021,335.9678,339.238,342.225,344.719,349.203,351.696,355.1943,358.401,363.055,367.037,369.36,371.854,375.343,377.836,381.325,384.2851,387.535,391.513,396.53619999999995,399.721,404.204,407.19,410.177,413.666,416.652,419.639,426.616,430.105,435.091,437.6026,440.797,445.451,449.935,453.424,455.917,458.411,461.9,464.393,469.048,473.532,476.025,478.519,482.501,487.52419999999995,490.709,495.191,500.177,504.66200000000003,507.881,512.365,515.854,519.343,523.325,530.302,537.278,541.26,545.744,550.228" svgx:width="0.44,0.44,0.44,0.44,0.55,0.33,0.28,0.5,0.28,0.39,0.55,0.52,0.44,0.26,0.28,0.39,0.28,0.39,0.33,0.55,0.44,0.56,0.55,0.5,0.33,0.33,0.39,0.33,0.33,0.78,0.39,0.56,0.28,0.55,0.52,0.5,0.39,0.28,0.28,0.39,0.28,0.52,0.5,0.28,0.28,0.44,0.56,0.55,0.5,0.56,0.5,0.55,0.5,0.39,0.39,0.44,0.78,0.78,0.44,0.5,0.5,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:8.97px;stroke:none;">2007 state policies on assessment participation and accommoda-</text>
+  </g>
+  <g begin="text">
+   <text y="635.533" x="320.075,322.567,325.06,329.041,334.026,336.9861,338.698,341.02,345.001,348.49929999999995,350.186,353.174,355.667,360.652,365.135,368.623,373.608,376.101,379.0611,380.764,386.749,389.241,391.734,396.219,397.899,402.383,404.875,407.861,412.344,416.325,418.818,421.14,423.633,426.125,428.618,432.106" svgx:width="0.28,0.28,0.44,0.56,0.33,0.55,0.26,0.44,0.39,0.55,0.33,0.28,0.56,0.5,0.39,0.56,0.28,0.33,0.55,0.67,0.28,0.28,0.5,0.55,0.5,0.28,0.33,0.5,0.44,0.28,0.26,0.28,0.28,0.28,0.39,0.33" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:8.97px;stroke:none;">tions for students with disabilities</text>
+  </g>
+  <g begin="text">
+   <text y="635.533" x="436.781,440.762,445.244,448.731,453.213,456.037,460.519,464.499,467.816,470.137,473.4559,475.141,480.126,484.106,488.418,492.398,495.553,498.3337,500.072,504.052,508.032,512.012,513.9853999999999,515.693,522.166,524.487,528.969,533.452,537.432,541.412,545.724,549.704" svgx:width="0.44,0.5,0.39,0.5,0.31,0.5,0.44,0.37,0.26,0.37,0.55,0.56,0.44,0.48,0.44,0.35,0.31,0.55,0.44,0.44,0.44,0.22,0.55,0.72,0.26,0.5,0.5,0.44,0.44,0.48,0.44,0.28" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">(Synthesis Report 69). Minneapo-</text>
+  </g>
+  <g begin="text">
+   <text y="645.496" x="320.075,322.396,324.717,328.034,330.0074,333.146,338.465,342.947,345.269,348.917,352.897,356.052,359.369,361.691,364.514,368.0123,371.12,375.099,377.6106,380.715,387.186,389.508,393.99,398.472,402.453,405.769,409.75,412.573,416.553,418.5264,421.674,427.155,431.135,433.959,436.28,440.26,444.743,448.723,451.0552,454.177,459.163,463.144,467.626,470.449,474.43,477.5695,480.712,484.69,489.175,492.304,497.453,501.765,506.247,510.066,514.046,516.869,519.191,523.171,527.653,531.633,533.9652000000001,537.088,542.404,546.886,549.71" svgx:width="0.26,0.26,0.37,0.22,0.55,0.59,0.5,0.26,0.41,0.44,0.35,0.37,0.26,0.31,0.39,0.55,0.44,0.28,0.55,0.72,0.26,0.5,0.5,0.44,0.37,0.44,0.31,0.44,0.22,0.55,0.61,0.44,0.31,0.26,0.44,0.5,0.44,0.26,0.55,0.56,0.44,0.5,0.31,0.44,0.35,0.55,0.44,0.5,0.55,0.57,0.48,0.5,0.43,0.44,0.31,0.26,0.44,0.5,0.44,0.26,0.55,0.59,0.5,0.31,0.28" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">lis: University of Minnesota, National Center on Educational Out-</text>
+  </g>
+  <g begin="text">
+   <text y="655.458" x="320.075,323.893,327.872,334.344,338.323,341.639" svgx:width="0.43,0.44,0.72,0.44,0.37,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">comes.</text>
+  </g>
+  <g begin="text">
+   <text y="665.421" x="310.111,315.096,319.076,323.056,327.368,329.3414,332.111,336.594,338.583,340.55640000000005,343.326,348.472,350.794,354.612,359.095,363.075,366.23,368.20340000000004,370.973,376.455,378.444,380.41740000000004,383.178,387.661,391.641,397.119,401.099,405.411,407.732,409.70540000000005,412.475,416.787,418.777,420.7504,423.52,428.002,430.826,434.806,437.128,441.61,445.76,449.741,452.896,456.715,458.6884,461.467,465.286,467.275,469.2484,472.019,477.4907,480.244,485.229,487.55,489.872,494.354,498.334,500.30740000000003,503.077,507.73,509.70340000000004,512.464,516.444,520.425,524.405,528.385,532.365,536.345,538.3184,541.106,546.422,549.739" svgx:width="0.56,0.44,0.44,0.48,0.22,0.55,0.5,0.22,0.22,0.55,0.57,0.26,0.43,0.5,0.44,0.35,0.22,0.55,0.61,0.22,0.22,0.55,0.5,0.44,0.61,0.44,0.48,0.26,0.22,0.55,0.48,0.22,0.22,0.55,0.5,0.31,0.44,0.26,0.5,0.46,0.44,0.35,0.43,0.22,0.55,0.43,0.22,0.22,0.55,0.61,0.55,0.56,0.26,0.26,0.5,0.44,0.22,0.55,0.52,0.22,0.55,0.44,0.44,0.44,0.44,0.44,0.44,0.22,0.55,0.59,0.37,0.28" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">Cook, L., Eignor, D., Sawaki, Y., Steinberg, J., &amp; Cline, F. (2010). Us-</text>
+  </g>
+  <g begin="text">
+   <text y="675.383" x="320.075,322.396,326.878,330.7351,333.035,335.527,339.508,343.326,346.15,350.13,353.2695,355.629,359.608,364.09,368.07,370.391,373.878,377.195,379.517,382.8359,385.178,388.004,391.9508,394.313,396.635,401.118,404.766,408.746,412.063,414.886,417.208,421.027,425.007,427.83,431.7768,434.158,438.138,441.957,445.776,449.756,456.229,462.702,466.682,470.994,474.974,477.797,480.119,484.099,488.581,491.8999,494.27,498.752,502.069,506.049,510.3546,512.7,516.851,520.3493,522.673,525.99,528.814,533.296,537.608,541.588,546.07,548.894" svgx:width="0.26,0.5,0.43,0.55,0.28,0.44,0.43,0.31,0.44,0.35,0.55,0.44,0.5,0.44,0.26,0.39,0.37,0.26,0.37,0.55,0.31,0.44,0.55,0.26,0.5,0.41,0.44,0.37,0.31,0.26,0.43,0.44,0.31,0.44,0.55,0.44,0.43,0.43,0.44,0.72,0.72,0.44,0.48,0.44,0.31,0.26,0.44,0.5,0.37,0.55,0.5,0.37,0.44,0.48,0.55,0.46,0.39,0.55,0.37,0.31,0.5,0.48,0.44,0.5,0.31,0.37" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">ing factor analysis to investigate accommodations used by students</text>
+  </g>
+  <g begin="text">
+   <text y="685.346" x="320.075,325.553,327.875,330.7,335.185,338.341,342.654,344.976,348.294,352.275,356.426,358.749,361.071,363.393,366.217,368.54,372.521,375.8399,379.019,382.997,387.482,390.647,394.626,399.111,402.276,407.424,411.908,415.727,418.05,420.372,423.689,428.173,430.665,432.988,436.969,441.452,445.272,449.755,453.736,457.555,461.5018,464.72,468.701,471.857,474.681,477.99989999999997,481.17,485.151,488.469,491.786,495.768,499.085,502.403,508.876,512.857,517.341,520.165" svgx:width="0.61,0.26,0.31,0.5,0.55,0.48,0.26,0.37,0.44,0.46,0.26,0.26,0.26,0.31,0.26,0.44,0.37,0.55,0.44,0.5,0.55,0.44,0.5,0.55,0.57,0.5,0.43,0.26,0.26,0.37,0.5,0.28,0.26,0.44,0.5,0.43,0.5,0.44,0.43,0.44,0.55,0.44,0.35,0.31,0.37,0.55,0.44,0.37,0.37,0.44,0.37,0.37,0.72,0.44,0.5,0.31,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">with disabilities on an English-language arts assessment.</text>
+  </g>
+  <g begin="text">
+   <text y="685.346" x="525.299,530.115,534.77,539.424,541.747,544.241,547.73" svgx:width="0.54,0.52,0.52,0.26,0.28,0.39,0.5" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:8.97px;stroke:none;">Applied</text>
+  </g>
+  <g begin="text">
+   <text y="695.309" x="320.075,326.72,330.208,334.693,337.679,342.665,346.154,349.643,356.62,360.109,365.095,367.6066,369.559,372.052,377.0752,379.027,384.013,388.497,393.483,396.972,401.456,403.95,406.444,410.425" svgx:width="0.74,0.39,0.5,0.33,0.56,0.39,0.39,0.78,0.39,0.56,0.28,0.55,0.28,0.56,0.55,0.56,0.5,0.56,0.39,0.5,0.28,0.28,0.44,0.56" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:8.97px;stroke:none;">Measurement in Education</text>
+  </g>
+  <g begin="text">
+   <text y="695.309" x="415.415" svgx:width="0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">,</text>
+  </g>
+  <g begin="text">
+   <text y="695.309" x="419.394,423.372" svgx:width="0.44,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:8.97px;stroke:none;">23</text>
+  </g>
+  <g begin="text">
+   <text y="695.309" x="427.35,429.32340000000005,431.337,435.315,439.294,443.272,447.753,451.731,455.709,459.688" svgx:width="0.22,0.55,0.44,0.44,0.44,0.5,0.44,0.44,0.44,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">, 187–208.</text>
+  </g>
+  <g begin="text">
+   <text y="705.273" x="310.112,315.097,319.077,323.057,327.369,329.34240000000005,331.437,335.919,337.909,339.8824,341.968,347.114,349.435,353.254,357.736,361.716,364.872,366.84540000000004,368.94,374.421,376.411,378.3844,380.47,384.952,387.776,391.756,394.077,398.559,402.71,406.69,409.845,413.664,415.6374,417.732,421.551,423.541,425.5144,427.609,432.091,436.071,441.549,445.529,449.841,452.162,454.1354,456.23,460.542,462.532,464.5054,466.591,472.0627,474.143,479.129,481.45,483.772,488.254,492.234,494.2074,496.302,500.955,502.9284,505.014,508.994,512.974,516.955,520.935,524.915,528.895,530.8684,532.972,538.288,541.605,543.926,548.409" svgx:width="0.56,0.44,0.44,0.48,0.22,0.55,0.5,0.22,0.22,0.55,0.57,0.26,0.43,0.5,0.44,0.35,0.22,0.55,0.61,0.22,0.22,0.55,0.5,0.31,0.44,0.26,0.5,0.46,0.44,0.35,0.43,0.22,0.55,0.43,0.22,0.22,0.55,0.5,0.44,0.61,0.44,0.48,0.26,0.22,0.55,0.48,0.22,0.22,0.55,0.61,0.55,0.56,0.26,0.26,0.5,0.44,0.22,0.55,0.52,0.22,0.55,0.44,0.44,0.44,0.44,0.44,0.44,0.22,0.55,0.59,0.37,0.26,0.5,0.43" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">Cook, L., Eignor, D., Steinberg, J., Sawaki, Y., &amp; Cline, F. (2009). Using</text>
+  </g>
+  <g begin="text">
+   <text y="715.235" x="320.076,322.567,326.548,330.366,333.19,337.17,340.3095,342.705,346.685,351.167,355.148,357.469,360.956,364.273,366.594,369.9129,372.282,375.106,379.0528,381.46,383.782,388.264,391.913,395.893,399.21,402.033,404.354,408.173,412.153,414.977,418.92379999999997,421.34,424.167,428.649,432.5958,435.003,437.325,443.798,448.11,452.09,455.909,458.6897,461.111,465.091,467.6026,469.96,473.94,477.759,481.578,485.558,492.031,498.503,502.484,506.796,510.776,513.599,515.921,519.901,524.383,527.7019,530.107,534.087,538.572,540.946,543.769,548.252" svgx:width="0.28,0.44,0.43,0.31,0.44,0.35,0.55,0.44,0.5,0.44,0.26,0.39,0.37,0.26,0.37,0.55,0.31,0.44,0.55,0.26,0.5,0.41,0.44,0.37,0.31,0.26,0.43,0.44,0.31,0.44,0.55,0.31,0.5,0.44,0.55,0.26,0.72,0.48,0.44,0.43,0.31,0.55,0.44,0.28,0.55,0.44,0.43,0.43,0.44,0.72,0.72,0.44,0.48,0.44,0.31,0.26,0.44,0.5,0.37,0.55,0.44,0.5,0.55,0.31,0.5,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">factor analysis to investigate the impact of accommodations on the</text>
+  </g>
+  <g begin="text">
+   <text y="725.198" x="320.076,323.393,327.213,331.194,334.35,338.331,341.6499,343.966,347.947,350.4586,352.762,356.079,358.904,363.387,367.7,371.681,376.164,378.988,382.3069,384.632,390.11,392.433,395.257,399.742,402.053,406.365,408.688,412.005,415.986,420.138,422.46,424.782,427.105,429.929,432.251,436.232,439.5509,441.876,445.854,450.339,452.659,456.6058,458.959,462.115,466.096,470.077,474.39,476.712,481.195,485.0521,487.343,491.159,495.14,501.614,505.926,509.083,513.064,517.547,521.528,526.011,529.329,531.651,535.632,540.117,542.446,546.424,549.742" svgx:width="0.37,0.43,0.44,0.35,0.44,0.37,0.55,0.44,0.28,0.55,0.37,0.31,0.5,0.48,0.44,0.5,0.31,0.37,0.55,0.61,0.26,0.31,0.5,0.55,0.48,0.26,0.37,0.44,0.46,0.26,0.26,0.26,0.31,0.26,0.44,0.37,0.55,0.44,0.5,0.55,0.44,0.55,0.35,0.44,0.44,0.48,0.26,0.5,0.43,0.55,0.43,0.44,0.72,0.48,0.35,0.44,0.5,0.44,0.5,0.37,0.26,0.44,0.5,0.55,0.44,0.37,0.28" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">scores of students with disabilities on a reading comprehension as-</text>
+  </g>
+  <g begin="text">
+   <text y="735.16" x="320.076,323.394,327.376,330.694,334.013,340.488,344.469,348.954,351.779" svgx:width="0.37,0.44,0.37,0.37,0.72,0.44,0.5,0.31,0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">sessment.</text>
+  </g>
+  <g begin="text">
+   <text y="735.16" x="355.383,359.365,363.346,368.331,371.819,376.804,381.287,383.6192,385.239,389.22,391.5522,393.162,397.977,402.631,407.285,409.607,412.099,415.587,420.072,421.69,426.172,429.66,432.646,435.139,437.631,442.617,446.5638,448.215,452.698,456.186,459.674,464.157,469.143,473.124,475.446,479.427,483.408" svgx:width="0.44,0.44,0.56,0.39,0.56,0.5,0.26,0.55,0.44,0.26,0.55,0.54,0.52,0.52,0.26,0.28,0.39,0.5,0.55,0.5,0.39,0.33,0.28,0.28,0.56,0.44,0.55,0.5,0.39,0.39,0.5,0.56,0.44,0.26,0.44,0.44,0.5" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:8.97px;stroke:none;">Journal of Applied Testing Technology</text>
+  </g>
+  <g begin="text">
+   <text y="735.16" x="487.895" svgx:width="0.22" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">,</text>
+  </g>
+  <g begin="text">
+   <text y="735.16" x="491.513,495.492" svgx:width="0.44,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensedItalic;font-size:8.97px;stroke:none;">10</text>
+  </g>
+  <g begin="text">
+   <text y="735.16" x="499.469,503.448,507.428,511.407,513.3804,515.043,519.022,524.006,527.985,530.808,533.962,536.282,540.262,543.909,547.889" svgx:width="0.44,0.44,0.44,0.22,0.55,0.44,0.56,0.44,0.31,0.35,0.26,0.44,0.41,0.44,0.48" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">(2). (Retrieved</text>
+  </g>
+  <g begin="text">
+   <text y="745.124" x="320.075,322.566,325.722,329.702,336.1604,338.163,342.645,345.468,348.292,352.604,354.594,357.085,359.577,365.055,370.532,376.01,377.999,380.321,384.301,387.125,389.948,392.269,396.25,400.732,403.887,408.37,412.35,414.671,416.661,420.48,424.46,430.933,433.424,435.746,440.228,444.54,448.52,452.5,454.49,458.802,463.284,467.596,470.088,474.068,476.892,481.204,483.695,486.017,490.499,494.811,498.791" svgx:width="0.28,0.35,0.44,0.72,0.55,0.5,0.31,0.31,0.48,0.22,0.28,0.28,0.61,0.61,0.61,0.22,0.26,0.44,0.31,0.31,0.26,0.44,0.5,0.35,0.5,0.44,0.26,0.22,0.43,0.44,0.72,0.28,0.26,0.5,0.48,0.44,0.44,0.22,0.48,0.5,0.48,0.28,0.44,0.31,0.48,0.28,0.26,0.5,0.48,0.44,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:8.97px;stroke:none;">from http://www.jattjournal.com/index.php/atp/index</text>
+  </g>
+  <g begin="text">
+   <text y="766.086" x="50.085,54.288" svgx:width="0.44,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:9.46px;stroke:none;">28</text>
+  </g>
+  <g begin="text">
+   <text y="764.538" x="69.876" svgx:width="0.56" style="fill:rgb(23,22,21);font-family:Century-LightCondensed;font-size:5.26px;stroke:none;">C</text>
+  </g>
+  <g begin="text">
+   <text y="764.538" code="2" x="67.959" svgx:width="1.0" style="fill:rgb(23,22,21);font-family:MTSY;font-size:6.76px;stroke:none;">?</text>
+  </g>
+  <g begin="text">
+   <text y="765.852" x="76.815,81.017,85.219,89.422,93.5844,95.722,100.104,103.7934,105.892,108.873,113.605,117.76740000000001,119.906,125.693,129.896,132.877,135.328,139.531,144.263,148.465,150.9246,153.019,158.285,162.487,167.219,171.951,175.983,178.434,180.8936,182.979,187.182,191.91199999999998,194.013,200.846,205.049,209.251,212.753,217.485,220.816,225.019,231.852,236.054,240.787,243.7196,245.872,248.32,253.04999999999998,255.16,260.597,265.149,269.881,273.913,278.116,281.097,283.548,287.75" svgx:width="0.44,0.44,0.44,0.44,0.55,0.46,0.39,0.55,0.31,0.5,0.44,0.55,0.61,0.44,0.31,0.26,0.44,0.5,0.44,0.26,0.55,0.56,0.44,0.5,0.5,0.43,0.26,0.26,0.55,0.44,0.5,0.55,0.72,0.44,0.44,0.37,0.5,0.35,0.44,0.72,0.44,0.5,0.31,0.55,0.26,0.5,0.55,0.57,0.48,0.5,0.43,0.44,0.31,0.26,0.44,0.5" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:9.46px;stroke:none;">2014 by the National Council on Measurement in Education</text>
+  </g>
+  <g begin="text">
+   <text y="766.086" x="381.754,387.186,391.739,396.471,400.503,404.705,407.686,410.138,414.34,419.072,423.274,425.7336,427.819,434.651,438.853,443.055,446.557,451.289,454.621,458.823,465.656,469.859,474.591,477.572,479.6532,481.775,484.927,488.429,491.931,496.663,500.865,504.3652,506.472,510.674,515.406,519.9467999999999,522.057,526.971,530.303,534.505,538.537,541.518,543.969,548.001" svgx:width="0.57,0.48,0.5,0.43,0.44,0.31,0.26,0.44,0.5,0.44,0.26,0.55,0.72,0.44,0.44,0.37,0.5,0.35,0.44,0.72,0.44,0.5,0.31,0.22,0.55,0.33,0.37,0.37,0.5,0.44,0.37,0.55,0.44,0.5,0.48,0.55,0.52,0.35,0.44,0.43,0.31,0.26,0.43,0.44" style="fill:rgb(0,0,0);font-family:Century-LightCondensed;font-size:9.46px;stroke:none;">Educational Measurement: Issues and Practice</text>
+  </g>
+ </g>
+</svg>

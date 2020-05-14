@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="803.32" width="537.2556000000001" xmlns="http://www.w3.org/2000/svg">
+ <g id="page" xmlns:svgx="http://www.xml-cml.org/schema/svgx">
+  <g begin="text">
+   <text y="44.76" x="363.3,369.986,375.56,381.135,386.709,392.283,397.857,400.014,405.027,407.789,413.363,416.151,421.726,424.424,427.186,434.423,439.997,442.225,447.238,452.812,455.039,460.613,463.402,465.629,471.203,476.778,479.479,486.716,492.29,497.805,503.379,508.893,513.996,516.093,518.855,524.429" svgx:width="0.67,0.56,0.56,0.56,0.56,0.56,0.22,0.5,0.28,0.56,0.28,0.56,0.28,0.28,0.72,0.56,0.22,0.5,0.56,0.22,0.56,0.28,0.22,0.56,0.56,0.28,0.72,0.56,0.56,0.56,0.56,0.5,0.22,0.28,0.56,0.28" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:10.02px;stroke:none;">Appendix 2.4: Calculating Hedges’ g </text>
+  </g>
+  <g begin="text">
+   <text y="87.72" x="70.92,83.914,94.91,105.907,115.913,126.909,137.905,142.907,152.914,157.918,167.924,172.926,182.932,188.924,193.928,206.923,216.929,221.931,231.937,242.933,247.936,257.942,263.934,268.936,279.932,290.929,295.933,308.927,318.933,329.929,340.925,350.931,360.938,365.94" svgx:width="0.72,0.61,0.61,0.56,0.61,0.61,0.28,0.56,0.28,0.56,0.28,0.56,0.33,0.28,0.72,0.56,0.28,0.56,0.61,0.28,0.56,0.33,0.28,0.61,0.61,0.28,0.72,0.56,0.61,0.61,0.56,0.56,0.28,0.28" style="fill:rgb(0,0,0);font-family:Arial-BoldMT;font-size:18.0px;stroke:none;">Appendix 2.4: Calculating Hedges’ </text>
+   <text y="87.72" x="370.926" svgx:width="0.61" style="fill:rgb(0,0,0);font-family:Arial-BoldItalicMT;font-size:18.0px;stroke:none;">g</text>
+   <text y="87.72" x="381.906" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:Arial-BoldMT;font-size:18.0px;stroke:none;"> </text>
+  </g>
+  <g begin="text">
+   <text y="137.82" x="124.8,131.522,137.64,143.758,146.82,152.938,160.879,166.997,172.5,178.004,181.066,184.132,190.25,193.312,198.815,204.933,207.384,212.887,219.005,221.456,227.519,230.585,236.703,239.699,245.817,248.883,251.948,258.066,263.57,266.635,269.698,275.201,277.651,283.155,289.273,294.776,297.772,303.89,307.56,313.678,316.74,325.296,327.747,333.865,339.368,344.871,347.322,352.825,355.821,361.939,368.057,370.508,373.574,379.692,382.754,386.424,389.489,395.607,401.725,404.788,410.906,413.356,416.356,419.422,425.54,429.209,435.327,441.445,446.949,453.067,456.129,458.58,464.698,467.76,470.826,476.889,483.007,486.069,495.229,501.347,507.465,513.583,519.086" svgx:width="0.61,0.56,0.56,0.28,0.56,0.72,0.56,0.5,0.5,0.28,0.28,0.56,0.28,0.5,0.56,0.22,0.5,0.56,0.22,0.56,0.28,0.56,0.28,0.56,0.28,0.28,0.56,0.5,0.28,0.28,0.5,0.22,0.5,0.56,0.5,0.28,0.56,0.33,0.56,0.28,0.78,0.22,0.56,0.5,0.5,0.22,0.5,0.28,0.56,0.56,0.22,0.28,0.56,0.28,0.33,0.28,0.56,0.56,0.28,0.56,0.22,0.28,0.28,0.56,0.33,0.56,0.56,0.5,0.56,0.28,0.22,0.56,0.28,0.28,0.56,0.56,0.28,0.83,0.56,0.56,0.56,0.5,0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;">The uways to calculate effect sizes are Glass’s delta (the difference in the means </text>
+   <text y="150.414" x="124.8,130.916,133.979,137.042,140.105,146.221,152.337,155.399,158.462,166.401,172.517,175.579,181.695,185.362,191.478,197.594,203.71,209.211,212.273,218.389,220.838,226.339,228.787,234.903,240.964,247.08,250.142,256.258,261.759,264.821,267.885,274.001,280.116,283.179,288.68,291.743,297.859,303.975,310.091,316.206,319.874,325.99,329.052,335.168,341.284,346.785,349.233,355.349,358.412,360.861,366.977,373.093,376.155,382.271,385.334,388.397,391.46,397.576,403.692" svgx:width="0.56,0.28,0.28,0.28,0.56,0.56,0.28,0.28,0.72,0.56,0.28,0.56,0.33,0.56,0.56,0.56,0.5,0.28,0.56,0.22,0.5,0.22,0.56,0.56,0.56,0.28,0.56,0.5,0.28,0.28,0.56,0.56,0.28,0.5,0.28,0.56,0.56,0.56,0.56,0.33,0.56,0.28,0.56,0.56,0.5,0.22,0.56,0.28,0.22,0.56,0.56,0.28,0.56,0.28,0.28,0.28,0.56,0.56,0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;">of the two groups divided by the standard deviation of the </text>
+   <text y="150.414" x="406.744,412.25,418.304,424.424,427.492,431.164,437.284,439.737,442.799,448.92,452.591,458.712,464.832" svgx:width="0.5,0.56,0.56,0.28,0.33,0.56,0.22,0.28,0.56,0.33,0.56,0.56,0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:10.98px;stroke:none;">control group</text>
+   <text y="150.414" x="470.945,474.614,477.614,480.676,488.617,494.735,500.853,506.971,513.089,515.54,521.043" svgx:width="0.33,0.28,0.28,0.72,0.56,0.56,0.56,0.56,0.22,0.5,0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;">), Cohen’s </text>
+   <text y="163.074" x="124.8,130.916,133.978,137.646,140.709,146.825,152.941,156.003,162.119,164.567,167.631,170.694,176.81,180.412,186.527,192.643,198.144,204.26,207.322,209.771,215.887,218.949,222.013,228.128,234.244,237.241,246.398,252.514,258.63,264.746,270.247,273.309,279.425,282.488,285.55,288.614,294.73,300.846,303.908,306.971,314.91,321.026,324.088,330.204,333.871,339.987,346.103,352.219,357.72,360.782,366.898,369.346,374.847,377.296,383.412,389.528,395.643,398.706,404.822,410.323,413.385,416.448,422.564,428.68,431.742,437.243,440.307,446.423,452.538,458.654,464.77,468.437,474.498,477.561,483.676,489.792,495.293,497.742,503.858,506.921,509.37,515.486,521.601" svgx:width="0.56,0.28,0.33,0.28,0.56,0.56,0.28,0.56,0.22,0.28,0.28,0.56,0.33,0.56,0.56,0.5,0.56,0.28,0.22,0.56,0.28,0.28,0.56,0.56,0.28,0.83,0.56,0.56,0.56,0.5,0.28,0.56,0.28,0.28,0.28,0.56,0.56,0.28,0.28,0.72,0.56,0.28,0.56,0.33,0.56,0.56,0.56,0.5,0.28,0.56,0.22,0.5,0.22,0.56,0.56,0.56,0.28,0.56,0.5,0.28,0.28,0.56,0.56,0.28,0.5,0.28,0.56,0.56,0.56,0.56,0.33,0.56,0.28,0.56,0.56,0.5,0.22,0.56,0.28,0.22,0.56,0.56,0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;">d (the difference in the means of the two groups divided by the standard deviation </text>
+   <text y="175.734" x="124.8,130.916,133.979,137.041,140.104,146.22,152.336" svgx:width="0.56,0.28,0.28,0.28,0.56,0.56,0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;">of the </text>
+   <text y="175.734" x="155.397,161.509,167.622,173.735,179.847,182.292,188.405,191.465,193.91,200.023" svgx:width="0.56,0.56,0.56,0.56,0.22,0.56,0.28,0.22,0.56,0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:10.98px;stroke:none;">population</text>
+   <text y="175.734" x="206.162,209.829,212.893,215.955,222.071,228.187,234.302,237.299,245.237,251.353,257.469,263.585,269.701,275.202,278.264" svgx:width="0.33,0.28,0.28,0.56,0.56,0.56,0.28,0.72,0.56,0.56,0.56,0.56,0.5,0.28,0.22" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;">), and Hedges ‘</text>
+   <text y="175.734" x="280.738" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:10.98px;stroke:none;">g</text>
+   <text y="175.734" x="286.854,289.303,292.366,295.968,299.033,305.15,311.267,314.329,320.446,322.896,325.96,329.025,335.142,338.81,344.927,351.044,356.546,362.663,365.725,368.175,374.292,377.354,380.419,386.536,392.653,395.715,404.873,410.99,417.107,423.224,428.726,431.789,437.905,440.97,444.032,447.097,453.214,459.331,462.393,465.458,473.32,479.437,482.5,488.616,492.285,498.402,504.519,510.636,516.138" svgx:width="0.22,0.28,0.33,0.28,0.56,0.56,0.28,0.56,0.22,0.28,0.28,0.56,0.33,0.56,0.56,0.5,0.56,0.28,0.22,0.56,0.28,0.28,0.56,0.56,0.28,0.83,0.56,0.56,0.56,0.5,0.28,0.56,0.28,0.28,0.28,0.56,0.56,0.28,0.28,0.72,0.56,0.28,0.56,0.33,0.56,0.56,0.56,0.5,0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;">’ (the difference in the means of the two groups </text>
+   <text y="188.393" x="124.789,130.904,133.351,138.851,141.299,147.413,153.528,159.643,162.705,168.82,174.32,177.382,180.444,186.559,192.674,195.736,201.236,204.298,210.413,216.528,222.643,228.758,232.424,238.539,241.535,247.65,253.764,259.264,261.712,267.827,270.889,273.336,279.451,285.566,288.628,294.743,297.805,300.867,303.93,310.045,316.159" svgx:width="0.56,0.22,0.5,0.22,0.56,0.56,0.56,0.28,0.56,0.5,0.28,0.28,0.56,0.56,0.28,0.5,0.28,0.56,0.56,0.56,0.56,0.33,0.56,0.28,0.56,0.56,0.5,0.22,0.56,0.28,0.22,0.56,0.56,0.28,0.56,0.28,0.28,0.28,0.56,0.56,0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;">divided by the standard deviation of the </text>
+   <text y="188.393" x="319.245,324.756,330.881,339.939,346.054,348.512" svgx:width="0.5,0.56,0.83,0.56,0.22,0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:10.98px;stroke:none;">sample</text>
+   <text y="188.393" x="354.638,358.303,361.419,364.481,368.146,374.864,380.978,384.643,387.705,393.819,396.881,402.38,408.494,417.649,423.762,427.427,433.541,439.655,445.769,451.882,457.381,459.827,465.326,471.44" svgx:width="0.33,0.28,0.28,0.33,0.61,0.56,0.33,0.28,0.56,0.28,0.5,0.56,0.83,0.56,0.33,0.56,0.56,0.56,0.56,0.5,0.22,0.5,0.56,0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;">). (For a comprehensive </text>
+   <text y="201.053" x="124.789,130.905,133.353,138.854,144.355,150.471,155.972,161.473,163.922,170.038,176.153,179.216,185.277,188.34,191.402,194.466,200.582,206.698,209.76,215.876,218.324,221.388,224.451,230.567,234.234,240.35,246.411,251.934,258.05,263.551,266.613,272.729,281.886,288.002,294.118,300.234,303.296,308.797,314.913,318.58,321.029,327.145,333.261,338.762,341.824,349.762,355.878,361.379,366.88,369.943,376.058,379.122,382.184,388.3,393.801,396.864,399.313,408.47,414.586,417.65,420.098,426.214,432.33,435.392,441.508,444.571,447.635,453.751,459.252,462.315,465.377,470.878,473.327,478.828,484.944,490.445,493.508,496.57,502.071,508.187,514.303" svgx:width="0.56,0.22,0.5,0.5,0.56,0.5,0.5,0.22,0.56,0.56,0.28,0.56,0.28,0.28,0.28,0.56,0.56,0.28,0.56,0.22,0.28,0.28,0.56,0.33,0.56,0.56,0.5,0.56,0.5,0.28,0.56,0.83,0.56,0.56,0.56,0.28,0.5,0.56,0.33,0.22,0.56,0.56,0.5,0.28,0.72,0.56,0.5,0.5,0.28,0.56,0.28,0.28,0.56,0.5,0.28,0.22,0.83,0.56,0.28,0.22,0.56,0.56,0.28,0.56,0.28,0.28,0.56,0.5,0.28,0.28,0.5,0.22,0.5,0.56,0.5,0.28,0.28,0.5,0.56,0.56,0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;">discussion of the differences among various ways of estimating effect sizes, see </text>
+   <text y="213.779" x="124.789,132.728,138.843,144.959,151.075,157.191,162.692,165.753,171.869,177.985,184.101,187.162,195.715,198.164,203.665,206.113,212.229,215.293,218.354,224.47,230.586,236.702,242.763,245.826,249.493" svgx:width="0.72,0.56,0.56,0.56,0.56,0.5,0.28,0.56,0.56,0.56,0.28,0.78,0.22,0.5,0.22,0.56,0.28,0.28,0.56,0.56,0.56,0.56,0.28,0.33,0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;">Hedges and Olkin, 1985.) </text>
+  </g>
+  <g begin="text">
+   <text y="237.359" x="124.8,132.742,138.861,144.98,151.099,157.218,162.723,165.175" svgx:width="0.72,0.56,0.56,0.56,0.56,0.5,0.22,0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;">Hedges’ </text>
+   <text y="237.359" x="168.241" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:10.98px;stroke:none;">g</text>
+   <text y="237.359" x="174.364,177.426,179.872,185.371,188.433,194.547,200.661,203.723,206.169,212.283,215.344,221.458,225.123,231.237,237.35,240.412,242.858,248.972,251.418,254.48,263.635,269.749,275.863,281.362,287.475,291.14,297.254,300.315,303.378,306.439,309.5,312.562,315.009,320.508,323.57,329.684,335.797,339.462,348.617,354.731,357.177,359.624,365.123,368.185,373.684,379.797,388.953,395.066,401.18,404.241,410.355,416.468,419.586,425.699,431.198,434.26,440.374,445.873,448.319,454.433,460.547,463.609,466.67,472.784,478.897,481.96,487.459,493.572,499.686,505.8,509.465,515.578" svgx:width="0.28,0.22,0.5,0.28,0.56,0.56,0.28,0.22,0.56,0.28,0.56,0.33,0.56,0.56,0.28,0.22,0.56,0.22,0.28,0.83,0.56,0.56,0.5,0.56,0.33,0.56,0.28,0.28,0.28,0.28,0.28,0.22,0.5,0.28,0.56,0.56,0.33,0.83,0.56,0.22,0.22,0.5,0.28,0.5,0.56,0.83,0.56,0.56,0.28,0.56,0.56,0.28,0.56,0.5,0.28,0.56,0.5,0.22,0.56,0.56,0.28,0.28,0.56,0.56,0.28,0.5,0.56,0.56,0.56,0.33,0.56,0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;"> is an inferential measure. It is normally computed by using the square </text>
+   <text y="249.953" x="124.8,128.467,134.583,140.699,143.762,146.825,152.941,156.004,159.066,162.13,168.246,174.361,177.358,186.515,192.631,198.747,204.863,207.925,213.426,219.542,225.658,231.774,235.441,241.557,244.619,250.735,254.402,258.07,264.186,267.853,270.915,273.979,277.646,283.762,292.919,295.981,299.045,305.161,311.276,314.339,320.455,326.57,332.686,335.135,340.636,346.137,348.585,354.086,357.083,363.199,366.262,369.324,374.825,380.941,384.609,387.057,393.173,399.289,404.79,410.906,413.968,417.031,423.147,428.648,431.712,434.16,440.276,446.392,449.454,452.518,458.633,462.301,465.363,471.479,473.927,476.925,479.988,486.104,489.772,495.887,502.003,507.504,513.62,519.121" svgx:width="0.33,0.56,0.56,0.28,0.28,0.56,0.28,0.28,0.28,0.56,0.56,0.28,0.83,0.56,0.56,0.56,0.28,0.5,0.56,0.56,0.56,0.33,0.56,0.28,0.56,0.33,0.33,0.56,0.33,0.28,0.28,0.33,0.56,0.83,0.28,0.28,0.56,0.56,0.28,0.56,0.56,0.56,0.22,0.5,0.5,0.22,0.5,0.28,0.56,0.28,0.28,0.5,0.56,0.33,0.22,0.56,0.56,0.5,0.56,0.28,0.28,0.56,0.5,0.28,0.22,0.56,0.56,0.28,0.28,0.56,0.33,0.28,0.56,0.22,0.28,0.28,0.56,0.33,0.56,0.56,0.5,0.56,0.5,0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;">root of the mean square error from the analysis of variance testing for differences </text>
+   <text y="262.613" x="124.8,130.916,137.032,140.095,148.034,154.15,160.265,166.381,169.442,172.506,178.622,184.738,187.799,190.862,198.801,204.917,207.978,214.094,217.761,223.877,229.993,236.109,241.61,244.673,247.734,250.798,253.861,256.922,262.423,268.539,274.655,277.716,283.832,286.281,291.782,297.842,300.838,306.954,313.069,316.131,321.632,327.748,330.196,335.697,341.813,344.261,350.322,353.386,359.447,365.563,368.624,371.687,375.355,381.47,390.628,393.689,399.805,402.868,408.984,415.1,418.767,421.828,430.986,437.102,443.217,448.718,454.834,458.502,464.617,470.118,473.18,479.295,482.359,485.42,491.536,494.599,497.663,503.779,509.28,512.343" svgx:width="0.56,0.56,0.28,0.72,0.56,0.56,0.56,0.28,0.28,0.56,0.56,0.28,0.28,0.72,0.56,0.28,0.56,0.33,0.56,0.56,0.56,0.5,0.28,0.28,0.28,0.28,0.28,0.5,0.56,0.56,0.28,0.56,0.22,0.5,0.56,0.28,0.56,0.56,0.28,0.5,0.56,0.22,0.5,0.56,0.22,0.56,0.28,0.56,0.56,0.28,0.28,0.33,0.56,0.83,0.28,0.56,0.28,0.56,0.56,0.33,0.28,0.83,0.56,0.56,0.5,0.56,0.33,0.56,0.5,0.28,0.56,0.28,0.28,0.56,0.28,0.28,0.56,0.5,0.28,0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;">between the two groups. It can also be calculated from other measures of effect </text>
+   <text y="275.339" x="124.8,130.309,132.765,138.274,144.397,147.468" svgx:width="0.5,0.22,0.5,0.56,0.28,0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;">size. </text>
+  </g>
+  <g begin="text">
+   <text y="298.918" x="124.8,131.523,133.975,137.645,143.15,146.216,149.283" svgx:width="0.61,0.22,0.33,0.5,0.28,0.28,0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;">First, </text>
+   <text y="298.918" x="152.338" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:10.98px;stroke:none;">d</text>
+   <text y="298.918" x="158.454,161.516,165.183,170.684,173.748,179.864,185.925,192.04,198.156,201.824,207.939,210.388,215.889,222.005,228.121,231.183,240.34,246.456,252.572,258.688,261.75,267.866,270.315,273.378,276.441,282.557,286.225,292.34,298.456,303.957,310.073,313.74,316.803,319.251,324.752,327.815,333.316,339.431,341.88,347.381,353.497,355.945,362.061,365.059,371.175,377.29,380.353,383.416,387.083,393.199,402.357,405.419,408.482,414.598,420.714,423.776,432.934,439.05,445.165,451.281,456.782,459.846,462.908,468.409,471.472,477.588,483.704,489.82,495.936,499.603,505.719" svgx:width="0.28,0.33,0.5,0.28,0.56,0.56,0.56,0.56,0.33,0.56,0.22,0.5,0.56,0.56,0.28,0.83,0.56,0.56,0.56,0.28,0.56,0.22,0.28,0.28,0.56,0.33,0.56,0.56,0.5,0.56,0.33,0.28,0.22,0.5,0.28,0.5,0.56,0.22,0.5,0.56,0.22,0.56,0.28,0.56,0.56,0.28,0.28,0.33,0.56,0.83,0.28,0.28,0.56,0.56,0.28,0.83,0.56,0.56,0.56,0.5,0.28,0.28,0.5,0.28,0.56,0.56,0.56,0.56,0.33,0.56,0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;"> (standardised mean difference) is calculated from the means, standard </text>
+   <text y="311.644" x="124.789,130.905,137.021,142.522,144.97,151.086,154.15,156.598,162.714,168.83,174.331,177.392,183.453,189.569,195.685,198.746,204.247,210.363,219.52,225.636,228.084,234.2,237.262,242.763,245.211,250.712,256.828,262.329,265.392" svgx:width="0.56,0.56,0.5,0.22,0.56,0.28,0.22,0.56,0.56,0.5,0.28,0.56,0.56,0.56,0.28,0.5,0.56,0.83,0.56,0.22,0.56,0.28,0.5,0.22,0.5,0.56,0.5,0.28,0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;">deviations and sample sizes: </text>
+  </g>
+  <g begin="text">
+   <text y="335.22" x="142.92" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+  </g>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:1.0;" d="M163.260 327.540 L172.020 327.540 M187.260 327.540 L196.020 327.540 M162.300 342.540 L202.080 342.540 M144.840 395.460 L153.720 395.580 M144.840 414.540 L153.720 414.540 M167.820 452.880 L287.640 453.000 M160.680 455.400 L162.060 454.680 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.48;" d="M162.060 454.920 L163.980 467.640 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.96;" d="M164.220 467.640 L166.980 433.500 M166.980 433.500 L293.280 433.500 "/>
+  <g begin="text">
+   <text y="549.0" x="298.32,267.843,273.962,277.682,283.8,289.919,221.039,227.154,233.212,238.707,241.129,247.244,250.362,252.784,258.898,175.02,180.525,183.643,189.767,195.825,201.949,208.073,211.787" svgx:width="0.56,0.56,0.33,0.56,0.56,0.56,0.56,0.56,0.5,0.22,0.56,0.28,0.22,0.56,0.56,0.5,0.28,0.56,0.56,0.56,0.56,0.33,0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">2groupdeviationstandard</text>
+   <text y="549.0" x="217.911" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="549.0" x="144.124,151.444" svgx:width="0.67,0.72" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">SD</text>
+   <text y="549.0" x="159.367" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="532.319" x="295.689,266.473,272.536,276.256,282.374,288.493,219.735,225.849,231.908,237.403,239.825,245.939,249.058,251.48,257.594,173.716,179.221,182.338,188.462,194.586,200.644,206.768,210.482" svgx:width="0.56,0.56,0.33,0.56,0.56,0.56,0.56,0.56,0.5,0.22,0.56,0.28,0.22,0.56,0.56,0.5,0.28,0.56,0.56,0.56,0.56,0.33,0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">1groupdeviationstandard</text>
+   <text y="532.319" x="216.607" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="532.319" x="144.135,151.455" svgx:width="0.67,0.72" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">SD</text>
+   <text y="532.319" x="159.378" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="515.582" x="272.663,242.242,248.36,252.08,258.198,264.317,225.616,228.738,234.8" svgx:width="0.56,0.56,0.33,0.56,0.56,0.56,0.28,0.56,0.33" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">2groupfor</text>
+   <text y="515.582" x="238.516" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="515.582" x="204.137,209.658,212.172,217.449" svgx:width="0.5,0.22,0.5,0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">size</text>
+   <text y="515.582" x="223.582" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="515.582" x="166.52,172.022,178.144,187.328,193.45,195.88" svgx:width="0.5,0.56,0.83,0.56,0.22,0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">sample</text>
+   <text y="515.582" x="201.982" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="515.582" x="144.499" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">n</text>
+   <text y="515.582" x="150.623" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="498.902" x="270.143,240.926,247.045,250.764,256.883,263.001,224.19,227.312,233.374" svgx:width="0.56,0.56,0.33,0.56,0.56,0.56,0.28,0.56,0.33" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">1groupfor</text>
+   <text y="498.902" x="237.09" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="498.902" x="202.833,208.353,210.867,216.145" svgx:width="0.5,0.22,0.5,0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">size</text>
+   <text y="498.902" x="222.277" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="498.902" x="165.094,170.596,176.718,185.902,192.024,194.454" svgx:width="0.5,0.56,0.83,0.56,0.22,0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">sample</text>
+   <text y="498.902" x="200.556" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="498.902" x="144.522" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">n</text>
+   <text y="498.902" x="150.646" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="482.397" x="143.681,151.72,157.835,163.895,167.612,173.605" svgx:width="0.72,0.56,0.56,0.33,0.56,0.28" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">where:</text>
+   <text y="425.457" x="322.783,328.902,332.621,338.685,344.803,286.359,291.881,298.022,304.085,307.208,310.883,317.024,272.917,279.036,213.633,219.133,225.251,234.432,240.55,246.669,250.389,252.815,258.315,264.433,200.434,206.553" svgx:width="0.56,0.33,0.56,0.56,0.56,0.5,0.56,0.56,0.28,0.33,0.56,0.22,0.56,0.33,0.5,0.56,0.83,0.56,0.56,0.33,0.22,0.5,0.56,0.56,0.56,0.28" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">groupcontrolorcomparisonof</text>
+   <text y="425.457" x="209.676" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="425.457" x="170.499,179.735,185.854,191.972" svgx:width="0.83,0.56,0.56,0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">mean</text>
+   <text y="425.457" x="198.035" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+  </g>
+  <g begin="text">
+   <text y="425.46" x="145.56" svgx:width="0.67" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">X</text>
+  </g>
+  <g begin="text">
+   <text y="425.46" x="152.88" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="406.38" x="272.034,278.153,281.873,287.991,294.11,257.216,263.335,212.396,214.823,220.941,224.064,230.183,233.836,239.336,245.454,251.573,254.696,199.076,205.194" svgx:width="0.56,0.33,0.56,0.56,0.56,0.56,0.56,0.22,0.56,0.28,0.56,0.33,0.5,0.56,0.56,0.28,0.22,0.56,0.28" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">grouponinterventiof</text>
+   <text y="406.38" x="208.317" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="406.38" x="169.251,178.487,184.606,190.724" svgx:width="0.83,0.56,0.56,0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">mean</text>
+   <text y="406.38" x="196.788" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+  </g>
+  <g begin="text">
+   <text y="406.38" x="145.56" svgx:width="0.67" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">X</text>
+  </g>
+  <g begin="text">
+   <text y="406.38" x="152.88" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="387.355" x="143.639,151.677,157.793,163.852,167.569,173.563" svgx:width="0.72,0.56,0.56,0.33,0.56,0.28" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">where:</text>
+   <text y="551.64" x="159.12" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:6.97px;stroke:none;">2</text>
+   <text y="551.64" x="162.9" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="534.96" x="158.28" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:6.97px;stroke:none;">1</text>
+   <text y="534.96" x="162.06" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="518.22" x="150.6" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:6.97px;stroke:none;">2</text>
+   <text y="518.22" x="154.44" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="501.54" x="149.76" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:6.97px;stroke:none;">1</text>
+   <text y="501.54" x="153.6" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="425.94" x="154.56" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:6.97px;stroke:none;">2</text>
+   <text y="425.94" x="158.4" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="406.98" x="153.72" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:6.97px;stroke:none;">1</text>
+   <text y="406.98" x="157.56" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="548.641" x="166.857" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:SymbolMT;font-size:11.05px;stroke:none;">=</text>
+   <text y="548.641" x="172.981" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="531.96" x="165.541" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:SymbolMT;font-size:11.05px;stroke:none;">=</text>
+   <text y="531.96" x="171.665" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="515.223" x="158.411" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:SymbolMT;font-size:11.05px;stroke:none;">=</text>
+   <text y="515.223" x="164.469" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="498.542" x="157.096" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:SymbolMT;font-size:11.05px;stroke:none;">=</text>
+   <text y="498.542" x="163.153" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="464.285" x="237.074" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:SymbolMT;font-size:11.05px;stroke:none;">−</text>
+   <text y="464.285" x="243.198" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="464.285" x="216.015" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:SymbolMT;font-size:11.05px;stroke:none;">+</text>
+   <text y="464.285" x="222.139" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+  </g>
+  <g begin="text">
+   <text y="448.44" x="248.34" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:SymbolMT;font-size:11.05px;stroke:none;">−</text>
+  </g>
+  <g begin="text">
+   <text y="448.44" x="254.46" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="448.44" x="223.563" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:SymbolMT;font-size:11.05px;stroke:none;">+</text>
+   <text y="448.44" x="229.687" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+  </g>
+  <g begin="text">
+   <text y="448.44" x="183.66" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:SymbolMT;font-size:11.05px;stroke:none;">−</text>
+  </g>
+  <g begin="text">
+   <text y="448.44" x="189.78" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="455.514" x="151.797" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:SymbolMT;font-size:11.05px;stroke:none;">=</text>
+   <text y="455.514" x="157.922" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="424.971" x="162.177" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:SymbolMT;font-size:11.05px;stroke:none;">=</text>
+   <text y="424.971" x="168.301" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="406.013" x="160.917" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:SymbolMT;font-size:11.05px;stroke:none;">=</text>
+   <text y="406.013" x="166.975" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+  </g>
+  <g begin="text">
+   <text y="338.1" x="178.74" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:SymbolMT;font-size:11.05px;stroke:none;">−</text>
+  </g>
+  <g begin="text">
+   <text y="338.1" x="184.86" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="345.174" x="153.72" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:SymbolMT;font-size:11.05px;stroke:none;">=</text>
+   <text y="345.174" x="159.844" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="464.87" x="245.581" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;">2</text>
+   <text y="449.03" x="260.339,255.663,232.018,235.737,195.66,199.32,190.984,197.043,168.544,172.264" svgx:width="0.33,0.56,0.33,0.28,0.33,0.28,0.56,0.28,0.33,0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;">)1( ) 1 ( </text>
+   <text y="467.4" x="230.16" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:6.97px;stroke:none;">2</text>
+   <text y="467.4" x="233.94" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="467.4" x="209.52" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:6.97px;stroke:none;">1</text>
+   <text y="467.4" x="213.36" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="449.4" x="282.6" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:6.97px;stroke:none;">2</text>
+   <text y="443.762" x="278.523" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:6.97px;stroke:none;">2</text>
+   <text y="451.56" x="241.386" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:6.97px;stroke:none;">2</text>
+   <text y="451.56" x="245.22" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="449.4" x="217.08" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:6.97px;stroke:none;">1</text>
+   <text y="449.4" x="220.92" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="443.76" x="213.84" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:6.97px;stroke:none;">2</text>
+   <text y="443.76" x="217.68" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="451.56" x="177.18" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:6.97px;stroke:none;">1</text>
+   <text y="339.061" x="196.923" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:6.97px;stroke:none;">2</text>
+   <text y="339.06" x="200.76" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="339.06" x="172.26" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:6.97px;stroke:none;">1</text>
+   <text y="464.88" x="224.64" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">n</text>
+   <text y="464.88" x="230.764" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="464.88" x="204.963" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">n</text>
+   <text y="464.88" x="211.087" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="449.039" x="264.424,271.685,235.982" svgx:width="0.67,0.72,0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">SDn</text>
+   <text y="449.039" x="242.106" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="449.039" x="199.69,207.011" svgx:width="0.67,0.72" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">SD</text>
+   <text y="449.039" x="214.934" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="449.039" x="172.519" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">n</text>
+   <text y="456.114" x="144.861" svgx:width="0.5" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">s</text>
+   <text y="456.114" x="150.377" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="354.469" x="180.202" svgx:width="0.5" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">s</text>
+   <text y="354.469" x="185.718" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+  </g>
+  <g begin="text">
+   <text y="338.58" x="187.98" svgx:width="0.67" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">X</text>
+  </g>
+  <g begin="text">
+   <text y="338.58" x="195.3" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+  </g>
+  <g begin="text">
+   <text y="338.58" x="163.98" svgx:width="0.67" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">X</text>
+  </g>
+  <g begin="text">
+   <text y="338.58" x="171.3" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+   <text y="345.654" x="144.714" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.05px;stroke:none;">d</text>
+   <text y="345.654" x="150.839" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.05px;stroke:none;"> </text>
+  </g>
+  <g begin="text">
+   <text y="553.8" x="352.98" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;"> </text>
+  </g>
+  <g begin="text">
+   <text y="586.019" x="124.8" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:10.98px;stroke:none;">d</text>
+   <text y="586.019" x="130.916,133.978,136.428,141.93,144.992,148.057,154.174,160.291,166.408,169.47,174.972,181.089,184.692,188.349,194.466,199.968,203.033,209.15,215.267,218.329,221.393,227.51,231.179,234.241,239.743,245.805,254.964,261.081,263.53,269.647,272.709,278.212,280.661,286.163,292.28,295.343,301.459,306.962,309.411,315.528,321.645,324.707,327.772,333.889,340.006,343.068,346.133,352.25,355.918,365.076,371.193,373.643,379.76,382.824" svgx:width="0.28,0.22,0.5,0.28,0.28,0.56,0.56,0.56,0.28,0.5,0.56,0.33,0.33,0.56,0.5,0.28,0.56,0.56,0.28,0.28,0.56,0.33,0.28,0.5,0.56,0.83,0.56,0.22,0.56,0.28,0.5,0.22,0.5,0.56,0.28,0.56,0.5,0.22,0.56,0.56,0.28,0.28,0.56,0.56,0.28,0.28,0.56,0.33,0.83,0.56,0.22,0.56,0.28,0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;"> is then corrected for sample size using the formula: </text>
+  </g>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.48;" d="M196.740 615.300 L230.820 615.360 "/>
+  <g begin="text">
+   <text y="618.78" x="231.36" svgx:width="0.33" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:12.0px;stroke:none;">)</text>
+   <text y="628.08" x="224.4" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:12.0px;stroke:none;">9</text>
+   <text y="628.08" x="231.06" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;"> </text>
+   <text y="628.08" x="197.58" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:12.0px;stroke:none;">4</text>
+   <text y="611.28" x="210.96" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:12.0px;stroke:none;">3</text>
+   <text y="611.28" x="217.62" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;"> </text>
+   <text y="618.78" x="180.36" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:12.0px;stroke:none;">1</text>
+   <text y="618.78" x="187.02" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;"> </text>
+   <text y="618.78" x="177.36" svgx:width="0.33" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:12.0px;stroke:none;">(</text>
+   <text y="627.72" x="215.88" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:SymbolMT;font-size:12.0px;stroke:none;">−</text>
+   <text y="618.42" x="187.62" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:SymbolMT;font-size:12.0px;stroke:none;">−</text>
+   <text y="618.42" x="194.22" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;"> </text>
+   <text y="618.42" x="160.2" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:SymbolMT;font-size:12.0px;stroke:none;">=</text>
+  </g>
+  <g begin="text">
+   <text y="628.08" x="204.24" svgx:width="0.72" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:12.0px;stroke:none;">N</text>
+  </g>
+  <g begin="text">
+   <text y="628.08" x="212.88" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;"> </text>
+   <text y="618.78" x="170.46,145.26" svgx:width="0.56,0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:12.0px;stroke:none;">gg</text>
+   <text y="618.78" x="151.92" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;"> </text>
+   <text y="621.6" x="152.22" svgx:width="0.5" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:7.02px;stroke:none;">c</text>
+   <text y="621.6" x="155.76" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;"> </text>
+  </g>
+  <g begin="text">
+   <text y="633.0" x="236.701" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;"> </text>
+  </g>
+  <g begin="text">
+   <text y="654.239" x="124.8,130.918,137.036,143.154,146.217,148.667,151.733,157.236,160.299,165.802,168.867,174.985,181.049,187.167,193.285,196.954,203.072,206.135,212.253,215.922,219.592,225.71,229.379,232.441,234.892,240.395,243.458,248.961,255.079,257.53,263.033,269.151,271.602,277.72,280.719,286.837,292.955,295.955" svgx:width="0.56,0.56,0.56,0.28,0.22,0.28,0.5,0.28,0.5,0.28,0.56,0.56,0.56,0.56,0.33,0.56,0.28,0.56,0.33,0.33,0.56,0.33,0.28,0.22,0.5,0.28,0.5,0.56,0.22,0.5,0.56,0.22,0.56,0.28,0.56,0.56,0.28,0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.98px;stroke:none;">and its standard error is calculated: </text>
+  </g>
+  <g begin="text">
+   <text y="677.7" x="142.92" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+  </g>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.5;" d="M178.320 686.880 L209.520 686.880 M221.160 686.880 L265.680 686.880 M171.120 690.360 L172.440 689.520 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.48;" d="M172.440 689.760 L174.480 701.520 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.96;" d="M174.720 701.520 L177.480 669.960 M177.480 669.960 L266.760 669.960 "/>
+  <g begin="text">
+   <text y="752.46" x="271.56,241.079,247.197,250.92,257.038,263.156,227.764,233.883" svgx:width="0.56,0.56,0.33,0.56,0.56,0.56,0.56,0.28" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.04px;stroke:none;">2groupof</text>
+   <text y="752.46" x="236.994" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+   <text y="752.46" x="206.391,211.911,214.428,219.705" svgx:width="0.5,0.22,0.5,0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.04px;stroke:none;">size</text>
+   <text y="752.46" x="225.832" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+   <text y="752.46" x="168.711,174.214,180.334,189.513,195.633,198.067" svgx:width="0.5,0.56,0.83,0.56,0.22,0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.04px;stroke:none;">sample</text>
+   <text y="752.46" x="204.227" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+   <text y="754.44" x="150.48" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:6.96px;stroke:none;">2</text>
+   <text y="754.321" x="154.322" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:6.96px;stroke:none;"> </text>
+   <text y="752.46" x="144.6" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.04px;stroke:none;">n</text>
+   <text y="752.46" x="150.716" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+   <text y="732.654" x="315.356,321.474,327.592,307.561,278.283,284.402,288.124,294.243,300.361,264.969,271.088,243.607,249.127,251.644,256.921,205.927,211.43,217.55,226.729,232.849,235.283" svgx:width="0.56,0.56,0.56,0.56,0.56,0.33,0.56,0.56,0.56,0.56,0.28,0.5,0.22,0.5,0.56,0.5,0.56,0.83,0.56,0.22,0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.04px;stroke:none;">and1groupofsizesample</text>
+   <text y="732.654" x="241.443" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+   <text y="734.76" x="188.52" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:6.96px;stroke:none;">1</text>
+   <text y="734.641" x="192.362" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:6.96px;stroke:none;"> </text>
+   <text y="732.66" x="183.96" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.04px;stroke:none;">n</text>
+   <text y="732.66" x="190.076" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+   <text y="732.66" x="143.752,151.792,157.91,164.028,167.751,173.748" svgx:width="0.72,0.56,0.56,0.33,0.56,0.28" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.04px;stroke:none;">where:</text>
+   <text y="689.703" x="144.227,151.547" svgx:width="0.67,0.67" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.04px;stroke:none;">SE</text>
+   <text y="689.703" x="158.866" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+   <text y="752.223" x="160.544" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:SymbolMT;font-size:11.04px;stroke:none;">=</text>
+   <text y="752.101" x="166.66" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+   <text y="732.417" x="197.738" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:SymbolMT;font-size:11.04px;stroke:none;">=</text>
+   <text y="732.295" x="203.854" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+   <text y="698.215" x="242.616" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:SymbolMT;font-size:11.04px;stroke:none;">+</text>
+   <text y="698.093" x="248.732" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+   <text y="689.449" x="212.366" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:SymbolMT;font-size:11.04px;stroke:none;">+</text>
+   <text y="689.328" x="218.482" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+   <text y="682.372" x="190.286" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:SymbolMT;font-size:11.04px;stroke:none;">+</text>
+   <text y="682.251" x="196.402" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+   <text y="689.449" x="162.2" svgx:width="0.55" style="fill:rgb(0,0,0);font-family:SymbolMT;font-size:11.04px;stroke:none;">=</text>
+   <text y="689.328" x="168.316" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+   <text y="698.69" x="261.439,227.48,231.2,222.081,228.2" svgx:width="0.33,0.33,0.28,0.56,0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;">)( 2 </text>
+   <text y="682.847" x="246.557,231.675,235.394" svgx:width="0.33,0.33,0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;">)( </text>
+   <text y="701.16" x="256.8,236.282" svgx:width="0.56,0.56" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:6.96px;stroke:none;">21</text>
+   <text y="701.22" x="240.12" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+   <text y="677.64" x="250.8" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:6.96px;stroke:none;">2</text>
+   <text y="701.157" x="198.6" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:6.96px;stroke:none;">2</text>
+   <text y="701.22" x="202.44" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+   <text y="701.16" x="189.72" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:6.96px;stroke:none;">1</text>
+   <text y="701.22" x="193.56" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+   <text y="685.32" x="204.48" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:6.96px;stroke:none;">2</text>
+   <text y="685.38" x="208.32" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+   <text y="685.32" x="183.84" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:6.96px;stroke:none;">1</text>
+   <text y="685.38" x="187.68" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+   <text y="698.694" x="251.403,231.597" svgx:width="0.56,0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.04px;stroke:none;">nn</text>
+   <text y="698.694" x="237.724" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+   <text y="682.852" x="236.168" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.04px;stroke:none;">g</text>
+   <text y="682.852" x="242.284" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+   <text y="698.694" x="193.09" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.04px;stroke:none;">n</text>
+   <text y="698.694" x="199.206" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+   <text y="698.694" x="185.041" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.04px;stroke:none;">n</text>
+   <text y="698.694" x="191.158" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+   <text y="682.852" x="198.952" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.04px;stroke:none;">n</text>
+   <text y="682.852" x="205.068" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+   <text y="682.852" x="179.146" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:11.04px;stroke:none;">n</text>
+   <text y="682.852" x="185.262" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+   <text y="685.32" x="242.16" svgx:width="0.5" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:6.96px;stroke:none;">c</text>
+   <text y="685.26" x="245.64" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:11.04px;stroke:none;"> </text>
+   <text y="760.68" x="336.0" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.02px;stroke:none;"> </text>
+  </g>
+  <g begin="text">
+   <text y="793.32" x="70.92,77.6,80.361,88.644,94.221,97.002,102.57,105.902,111.469,117.036,122.604,124.824,129.83,134.836,137.056,142.062,144.824,150.391,153.173,155.934,158.716,164.283" svgx:width="0.67,0.28,0.83,0.56,0.28,0.56,0.33,0.56,0.56,0.56,0.22,0.5,0.5,0.22,0.5,0.28,0.56,0.28,0.28,0.28,0.56,0.56" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:10.02px;stroke:none;">A meta-analysis of the</text>
+   <text y="793.32" x="169.918" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.02px;stroke:none;"> </text>
+   <text y="793.32" x="172.673,174.898,183.174,188.746,194.317,199.327,202.112,204.874,210.445,213.23,215.992,218.777,224.349,229.92,232.681,234.906,243.182,248.753,250.978,256.549,264.825,270.396,275.968,278.753,284.324,287.11,289.334,294.905,300.476,303.238,308.809,311.595,314.356,317.142,322.713,324.937,330.508,335.518,337.743,343.314,348.885,351.646,356.656,361.666,363.891,366.115,368.27,373.28,376.041,381.612,387.183,392.704,396.041,401.612,407.133,412.173,417.694,423.275,428.285,431.047,436.618,442.189,444.951,450.522,456.093,461.664,463.888,466.043,471.023" svgx:width="0.22,0.83,0.56,0.56,0.5,0.28,0.28,0.56,0.28,0.28,0.28,0.56,0.56,0.28,0.22,0.83,0.56,0.22,0.56,0.83,0.56,0.56,0.28,0.56,0.28,0.22,0.56,0.56,0.28,0.56,0.28,0.28,0.28,0.56,0.22,0.56,0.5,0.22,0.56,0.56,0.28,0.5,0.5,0.22,0.22,0.22,0.5,0.28,0.56,0.56,0.56,0.33,0.56,0.56,0.5,0.56,0.56,0.5,0.28,0.56,0.56,0.28,0.56,0.56,0.56,0.22,0.22,0.5,0.28" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:10.02px;stroke:none;">impact of the implementation of thinking skills approaches on pupils </text>
+   <text y="793.32" x="513.293,518.872" svgx:width="0.56,0.56" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:10.02px;stroke:none;">52</text>
+   <text y="793.32" x="524.45" svgx:width="0.28" style="fill:rgb(0,0,0);font-family:Arial-ItalicMT;font-size:10.02px;stroke:none;"> </text>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,595 @@
+ Optical Character Recognition --- gocr 0.52 20181015
+ Copyright (C) 2001-2018 Joerg Schulenburg  GPG=1024D/53BDFBE3
+ released under the GNU General Public License
+# compiled: Apr  1 2019 GNUC-4.2 version 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.46.3)
+# options are: -l 0 -s 0 -v 32 -c _ -m 4 -d -1 -n 0 -a 95 -C "A-Za-z0-9--/%=[]();,."
+# file: raw_sc_2_s4_b_10_thr_180.png
+# using unicode
+# popen( pngtopnm "raw_sc_2_s4_b_10_thr_180.png" )
+# PNM P5 h*w=728*2554 c=255 head=-1 min=0 max=255
+# PNM EOF
+# thresholding new_threshold= 160
+# scan_boxes nC= 1048 avD= 14 17
+# remove.c remove_dust():
+#  dust size detection, vol num obj=1044 maxDust=7 mP= 157 mXY= 14 17
+#  dust size histogram   1     0 break
+#  dust size histogram   3     0
+#  dust size histogram   4    21
+#  dust size histogram   5     0
+#  dust size histogram   7     0
+#  dust size histogram   8     2
+#  dust size histogram   9     0
+#  dust size histogram  11     0
+#  dust size histogram  12    24
+#  dust size histogram  13     0
+#  dust size histogram  15     0
+#  dust size histogram  16    53
+#  dust size histogram  17     0
+#  dust size histogram  19     0
+#  dust size histogram  20    27
+#  dust size histogram  21     0
+#  dust size histogram  23     0
+#  dust size histogram  24    48
+#  dust size histogram  25     0
+#  dust size histogram  27     0
+#  dust size histogram  28    30
+#  dust size histogram  29     0
+#  auto dust size = 0 nC= 1044 .. 1048 avD= 14 17 .. 14 17
+# ...   0 white pixels removed, cs=160 nC= 1048
+# barcode.c detect_barcode 
+# ... boxes 1048 nC 1047
+# barcode.c detect_barcode search datamatrix #
+# barcode.c detect_barcode search qrcode 
+# ... boxes 1048 nC 1047
+# detect.c L1058 pictures, frames, mXmY= 12 17 ...  1 - boxes 1046
+# averages: mXmY= 12 18 nC= 946 n= 1046
+# remove.c L314: remove pictures
+# ... status: pictures= 2  other= 1046  nC= 946
+# ... deleted= 1 pictures (table frames)
+# ... deleted= 0 pictures (on border)
+# ... status: pictures= 1  other= 1046  nC= 946
+# ... deleted= 0 nested pictures
+# ... found picture at 1832  134 size  184   16
+# ... status: pictures= 1  other= 1046  nC= 946
+# count subboxes
+# ... 272 subboxes counted (mini=4, same=0) nC= 1047
+# glue_holes to chars nC= 946
+# ... joined: 272 holes,   0 same, nC= 674
+# rotation angle (x,y,maxr,num)  19809    141    256  522 pass 1
+# rotation angle (x,y,maxr,num)  20243    -58      4  511 pass 2
+# rotation angle (x,y,maxr,num)  26360      0      1  431 pass 3
+# rotation angle (x,y,maxr,num)  26473     -5      0  389 pass 4
+# detect.c detect_text_lines (vvv=16 for more info)
+# zoning
+# ... 
+# r= 0  i=1 divide at x x=1630 y= 513 dx=  94 dy=  36
+# r= 1  i=2 divide at y x=1133 y= 519 dx=  41 dy=  48
+# r= 2  i=1 divide at x x= 336 y=  86 dx=  53 dy=  17
+# r= 3  i=2 divide at y x= 286 y=  86 dx=  28 dy=  22
+# r= 4  i=1 divide at x x= 176 y=  76 dx=  65 dy=   3
+# r= 5  i=0 box detected at   41   61  104   18  L01 w=  56 y=  61 m=   61  +0 +11 +11 (H,x,base,p)
+#  L01        y=  61 i=    2   0   0   2 (counts)
+#  all boxes of same high! mi=7
+#  trying pxH-fix by Hxp -22 -10   0   5
+#       fixed by Hxp to   61   1  11  16
+## detect_lines1.num_lines= 1
+# r= 5  i=0 box detected at  177   54  134   25  L02 w=  56 y=  54 m=   54  +0 +44 +21 (H,x,base,p)
+#  L02        y=  54 i=    0   0   0   0 (counts)
+#  all boxes of same high! mi=22
+#  trying pxH-fix by Hxp -22 -11   0   5
+#       fixed by Hxp to   54  33  44  49
+## detect_lines1.num_lines= 2
+# r= 4  i=0 box detected at   36   98  228  398  L04 w=  75 y= 121 m=  138  +6 +23 +23 (H,x,base,p)
+#  L04        y= 121 i=    7   2   0   9 (counts)
+#  all boxes of same lower bound!
+#  L10 w=  75 y= 370 m=  384  +6 +23 +23 (H,x,base,p)
+#  L10        y= 370 i=    7   5   0  12 (counts)
+#  all boxes of same lower bound!
+## detect_lines1.num_lines= 12
+# r= 3  i=1 divide at x x=1132 y=  86 dx=  43 dy=  17
+# r= 4  i=0 box detected at  364   12  748  478  L14 w=  56 y=  39 m=   59  +2 +38 +19 (H,x,base,p)
+#  L14        y=  39 i=    0   0   0   0 (counts)
+#  all boxes of same high! mi=-7
+#  trying pxH-fix by Hxp -22 -11   0   5
+#       fixed by Hxp to   59  27  38  43
+#  L15 w=  56 y= 100 m=  138  +0 +23 +23 (H,x,base,p)
+#  L15        y= 100 i=   13   0   0  13 (counts)
+#  all boxes of same high! mi=-22
+#  trying pxH-fix by Hxp -22 -11   0   5
+#       fixed by Hxp to  138  12  23  28
+#  L17 w=  56 y= 203 m=  220  +0 +23 +23 (H,x,base,p)
+#  L17        y= 203 i=   10   0   0  10 (counts)
+#  all boxes of same high! mi=19
+#  trying pxH-fix by Hxp -22 -11   0   5
+#       fixed by Hxp to  220  12  23  28
+#  L19 w=  56 y= 285 m=  302  +0 +23 +23 (H,x,base,p)
+#  L19        y= 285 i=   12   0   0  12 (counts)
+#  all boxes of same high! mi=19
+#  trying pxH-fix by Hxp -22 -11   0   5
+#       fixed by Hxp to  302  12  23  28
+#  L21 w=  56 y= 367 m=  384  +0 +23 +23 (H,x,base,p)
+#  L21        y= 367 i=    9   0   0   9 (counts)
+#  all boxes of same high! mi=19
+#  trying pxH-fix by Hxp -22 -11   0   5
+#       fixed by Hxp to  384  12  23  28
+#  L23 w=  56 y= 449 m=  466  +0 +23 +23 (H,x,base,p)
+#  L23        y= 449 i=   10   0   0  10 (counts)
+#  all boxes of same high! mi=19
+#  trying pxH-fix by Hxp -22 -11   0   5
+#       fixed by Hxp to  466  12  23  28
+## detect_lines1.num_lines= 23
+# r= 4  i=0 box detected at 1155   12  347  484  L25 w=  56 y=  35 m=   61  +2 +44 +17 (H,x,base,p)
+#  L25        y=  35 i=    0   0   0   0 (counts)
+#  all boxes of same high! mi=-7
+#  trying pxH-fix by Hxp -22 -11   0   5
+#       fixed by Hxp to   61  33  44  49
+#  L26 w=  75 y= 108 m=  138  +0 +23 +29 (H,x,base,p)
+#  L26        y= 108 i=   15   0  13   2 (counts)
+#  all boxes of same upper bound!
+#  L27 w=  75 y= 165 m=  180  +0 +21 +27 (H,x,base,p)
+#  L27        y= 165 i=   15   0  13   2 (counts)
+#  all boxes of same upper bound!
+#  L28 w=  75 y= 205 m=  220  +0 +23 +29 (H,x,base,p)
+#  L28        y= 205 i=   16   0  14   2 (counts)
+#  all boxes of same upper bound!
+#  L29 w=  75 y= 247 m=  262  +0 +22 +27 (H,x,base,p)
+#  L29        y= 247 i=   15   0  13   2 (counts)
+#  all boxes of same upper bound!
+#  L30 w=  75 y= 287 m=  302  +0 +23 +29 (H,x,base,p)
+#  L30        y= 287 i=   15   0  13   2 (counts)
+#  all boxes of same upper bound!
+#  L31 w=  75 y= 329 m=  344  +0 +21 +28 (H,x,base,p)
+#  L31        y= 329 i=   16   0  14   2 (counts)
+#  all boxes of same upper bound!
+#  L32 w=  75 y= 369 m=  384  +0 +23 +29 (H,x,base,p)
+#  L32        y= 369 i=   14   0  12   2 (counts)
+#  all boxes of same upper bound!
+#  L33 w=  75 y= 411 m=  426  +0 +22 +27 (H,x,base,p)
+#  L33        y= 411 i=   15   0  13   2 (counts)
+#  all boxes of same upper bound!
+#  L34 w=  75 y= 451 m=  466  +0 +23 +29 (H,x,base,p)
+#  L34        y= 451 i=   15   0  13   2 (counts)
+#  all boxes of same upper bound!
+## detect_lines1.num_lines= 34
+# r= 2  i=0 box detected at   36  544 1548  156# detect_lines1.num_lines= 38
+# r= 1  i=0 box detected at 1678   12  836  706  L40 w=  56 y=  35 m=   61  +4 +40 +17 (H,x,base,p)
+#  L40        y=  35 i=    0   0   0   0 (counts)
+#  all boxes of same high! mi=-9
+#  trying pxH-fix by Hxp -23 -11   0   5
+#       fixed by Hxp to   61  29  40  45
+#  L41 w=  56 y= 104 m=  532  +0 +35 +35 (H,x,base,p)
+#  L41        y= 104 i=    1   0   0   1 (counts)
+#  all boxes of same high! mi=-110
+#  trying pxH-fix by Hxp -23 -11   0   5
+#  L42 w=  56 y= 570 m=  650  +2 +23 +23 (H,x,base,p)
+#  L42        y= 570 i=    6   2   0   8 (counts)
+#  all boxes of same high! mi=20
+#  trying pxH-fix by Hxp -23 -11   0   5
+#       fixed by Hxp to  650  12  23  28
+## detect_lines1.num_lines= 43
+# mark lines for out10.ppm
+# writing out10[.png] xy= 2554 728
+# divide vertical glued boxes, numC 674
+# searching melted serifs ...   1 cluster corrected, 1 new boxes
+# count subboxes
+# ...   0 subboxes counted (mini=0, same=0) nC= 776
+# glue broken chars nC= 675 avX= 12
+# ... joined:  41 fragments (found 134),   1 rest, nC= 674
+# remove_rest_of_dust (avX,nC), ... 
+#  remove1 2098  52 
+#  remove1 210  54 
+#  remove1 1360  54 
+#  remove1 1329  57 
+#  remove1 2067  57 
+#  remove1 1017  59 
+#  remove1 233  61 
+#  remove1 263  61 
+#  remove1 301  61 
+#  remove1 429  61 
+#  remove1 547  61 
+#  remove1 751  61 
+#  remove1 937  61 
+#  remove1 1069  61 
+#  remove1 1089  61 
+#  remove1 1155  61 
+#  remove1 1293  61 
+#  remove1 1895  61 
+#  remove1 1903  61 
+#  remove1 2031  61 
+#  remove1 1165  63 
+#  remove1 1191  65 
+#  remove1 1929  65 
+#  remove1 1377  67 
+#  remove1 1461  67 
+#  remove1 1477  67 
+#  remove1 2115  67 
+#  remove1 1257  71 
+#  remove1 1995  71 
+#  remove1  77  73 
+#  remove1  41  75 
+#  remove1  73  75 
+#  remove1 1092  96 
+#  remove1 1486  98 
+#  remove1 1062 116 
+#  remove1 1530 650 
+#  remove1 1554 650 
+#  remove1 1574 650   38 +   0 boxes deleted, nC= 636 ?
+# check for word pitch
+#  line  0
+# ... L00 mono:=0  15 - 8  pre1 38 55  58 71 y 104 DBG1592
+# ... L00 num_gaps= 549 x_width=  2 - 32 mono_em= 33 -  8  mono= 0
+# ... L00 mono:=0  33 - 8 DBG1670
+# ... L00 mono: num=549 min= 33 max=  8 pitch= 10
+# ... L00 prop: num=549 min=  1 max= 70 pitch=  6 @ 73%
+# ... L00 result: mono=0  distance >= 0 considered as space
+# ...
+#  line  1
+# ... L01 num_gaps=  0 x_width= 10 - 10 mono_em= 11 - 44  mono= 1
+#  line  2
+# ... L02 num_gaps=  2 x_width=  4 - 10 mono_em= 11 -  8  mono= 1
+# ... L02 mono:=0  11 - 8 DBG1670
+# ... L02 mono: num=  2 min= 11 max=  8 pitch= 10
+# ... L02 prop: num=  2 min=  2 max=  8 pitch=  6 @  0%
+# ... L02 result: mono=0  distance >= 6 considered as space
+# ...
+#  line  3
+# ... L03 mono:=0  15 - 20  pre1 38 55  58 71 y 104 DBG1592
+# ... L03 num_gaps=  6 x_width=  8 - 16 mono_em= 20 - 17  mono= 0
+# ... L03 mono: num=  6 min= 20 max= 17 pitch= 19
+# ... L03 prop: num=  6 min=  2 max= 12 pitch= 10 @ 66%
+# ... L03 result: mono=0  distance >= 10 considered as space
+# ...
+#  line  4
+# ... L04 mono:=0  15 - 20  pre1 38 55  58 71 y 144 DBG1592
+# ... L04 num_gaps=  8 x_width=  2 - 16 mono_em= 18 - 12  mono= 0
+# ... L04 mono:=0  18 - 12 DBG1670
+# ... L04 mono: num=  8 min= 18 max= 12 pitch= 19
+# ... L04 prop: num=  8 min=  2 max=  8 pitch=  7 @ 75%
+# ... L04 result: mono=0  distance >= 7 considered as space
+# ...
+#  line  5
+# ... L05 num_gaps= 11 x_width=  8 - 24 mono_em= 25 - 13  mono= 1
+# ... L05 mono:=0  25 - 13 DBG1670
+# ... L05 mono: num= 11 min= 25 max= 13 pitch= 19
+# ... L05 prop: num= 11 min=  2 max= 10 pitch=  8 @ 81%
+# ... L05 result: mono=0  distance >= 8 considered as space
+# ...
+#  line  6
+# ... L06 mono:=0  18 - 12  pre1 150 165  176 191 y 220 DBG1592
+# ... L06 num_gaps= 11 x_width=  4 - 16 mono_em= 18 - 12  mono= 0
+# ... L06 mono:=0  18 - 12 DBG1670
+# ... L06 mono: num= 11 min= 18 max= 12 pitch= 19
+# ... L06 prop: num= 11 min=  2 max= 10 pitch=  6 @ 72%
+# ... L06 result: mono=0  distance >= 6 considered as space
+# ...
+#  line  7
+# ... L07 mono:=0  5 - 8  pre1 58 61  66 69 y 262 DBG1592
+# ... L07 num_gaps=  9 x_width=  4 - 16 mono_em= 17 -  8  mono= 0
+# ... L07 mono:=0  17 - 8 DBG1670
+# ... L07 mono: num=  9 min= 17 max=  8 pitch= 19
+# ... L07 prop: num=  9 min=  2 max=  8 pitch=  6 @ 66%
+# ... L07 result: mono=0  distance >= 6 considered as space
+# ...
+#  line  8
+# ... L08 num_gaps=  7 x_width= 10 - 20 mono_em= 26 - 17  mono= 1
+# ... L08 mono:=0  26 - 17 DBG1670
+# ... L08 mono: num=  7 min= 26 max= 17 pitch= 19
+# ... L08 prop: num=  7 min=  2 max= 12 pitch=  9 @ 71%
+# ... L08 result: mono=0  distance >= 9 considered as space
+# ...
+#  line  9
+# ... L09 mono:=0  17 - 22  pre1 36 57  58 73 y 350 DBG1592
+# ... L09 num_gaps=  6 x_width= 10 - 16 mono_em= 26 - 17  mono= 0
+# ... L09 mono:=0  26 - 17 DBG1670
+# ... L09 mono: num=  6 min= 26 max= 17 pitch= 19
+# ... L09 prop: num=  6 min=  2 max= 12 pitch= 10 @ 66%
+# ... L09 result: mono=0  distance >= 10 considered as space
+# ...
+#  line 10
+# ... L10 num_gaps= 11 x_width=  4 - 14 mono_em= 18 - 12  mono= 1
+# ... L10 mono:=0  18 - 12 DBG1670
+# ... L10 mono: num= 11 min= 18 max= 12 pitch= 19
+# ... L10 prop: num= 11 min=  2 max= 10 pitch=  6 @ 72%
+# ... L10 result: mono=0  distance >= 6 considered as space
+# ...
+#  line 11
+# ... L11 num_gaps= 10 x_width=  4 - 22 mono_em= 23 - 16  mono= 1
+# ... L11 mono:=0  23 - 16 DBG1670
+# ... L11 mono: num= 10 min= 23 max= 16 pitch= 19
+# ... L11 prop: num= 10 min=  2 max= 12 pitch= 10 @ 80%
+# ... L11 result: mono=0  distance >= 10 considered as space
+# ...
+#  line 12
+# ... L12 mono:=0  15 - 20  pre1 38 55  58 71 y 472 DBG1592
+# ... L12 num_gaps= 11 x_width=  8 - 22 mono_em= 26 - 17  mono= 0
+# ... L12 mono:=0  26 - 17 DBG1670
+# ... L12 mono: num= 11 min= 26 max= 17 pitch= 19
+# ... L12 prop: num= 11 min=  2 max= 10 pitch=  9 @ 81%
+# ... L12 result: mono=0  distance >= 9 considered as space
+# ...
+#  line 13
+# ... L13 mono:=0  15 - 20  pre1 364 381  384 397 y 18 DBG1592
+# ... L13 num_gaps= 29 x_width=  4 - 26 mono_em= 27 - 10  mono= 0
+# ... L13 mono:=0  27 - 10 DBG1670
+# ... L13 mono: num= 29 min= 27 max= 10 pitch= 19
+# ... L13 prop: num= 29 min=  2 max= 12 pitch=  8 @ 89%
+# ... L13 result: mono=0  distance >= 8 considered as space
+# ...
+#  line 14
+# ... L14 num_gaps=  9 x_width=  4 - 21 mono_em= 34 - 16  mono= 1
+# ... L14 mono:=0  34 - 16 DBG1670
+# ... L14 mono: num=  9 min= 34 max= 16 pitch= 19
+# ... L14 prop: num=  9 min=  2 max= 31 pitch= 17 @ 44%
+# ... L14 result: mono=0  distance >= 17 considered as space
+# ...
+#  line 15
+# ... L15 num_gaps=  9 x_width=  4 - 18 mono_em= 19 - 13  mono= 1
+# ... L15 mono:=0  19 - 13 DBG1670
+# ... L15 mono: num=  9 min= 19 max= 13 pitch= 19
+# ... L15 prop: num=  9 min=  2 max= 42 pitch= 43 @ 88%
+# ... L15 result: mono=0  distance >= 43 considered as space
+# ...
+#  line 16
+# ... L16 num_gaps=  5 x_width=  4 - 20 mono_em= 21 - 13  mono= 1
+# ... L16 mono:=0  21 - 13 DBG1670
+# ... L16 mono: num=  5 min= 21 max= 13 pitch= 19
+# ... L16 prop: num=  5 min=  2 max=  4 pitch= 14 @ 80%
+# ... L16 result: mono=0  distance >= 14 considered as space
+# ...
+#  line 17
+# ... L17 num_gaps=  5 x_width=  4 - 18 mono_em= 19 - 15  mono= 1
+# ... L17 mono:=0  19 - 15 DBG1670
+# ... L17 mono: num=  5 min= 19 max= 15 pitch= 19
+# ... L17 prop: num=  5 min=  4 max=  8 pitch=  8 @ 60%
+# ... L17 result: mono=0  distance >= 8 considered as space
+# ...
+#  line 18
+# ... L18 num_gaps=  5 x_width=  4 - 16 mono_em= 17 - 14  mono= 1
+# ... L18 mono: num=  5 min= 17 max= 14 pitch= 16
+# ... L18 prop: num=  5 min=  2 max=  4 pitch= 14 @ 80%
+# ... L18 result: mono=1  distance >= 16 considered as space
+# ...
+#  line 19
+# ... L19 num_gaps=  8 x_width=  4 - 16 mono_em= 17 - 12  mono= 1
+# ... L19 mono:=0  17 - 12 DBG1670
+# ... L19 mono: num=  8 min= 17 max= 12 pitch= 16
+# ... L19 prop: num=  8 min=  2 max=  4 pitch= 14 @ 87%
+# ... L19 result: mono=0  distance >= 14 considered as space
+# ...
+#  line 20
+# ... L20 num_gaps=  5 x_width=  4 - 20 mono_em= 21 - 15  mono= 1
+# ... L20 mono:=0  21 - 15 DBG1670
+# ... L20 mono: num=  5 min= 21 max= 15 pitch= 16
+# ... L20 prop: num=  5 min=  2 max=  8 pitch=  7 @ 60%
+# ... L20 result: mono=0  distance >= 7 considered as space
+# ...
+#  line 21
+# ... L21 num_gaps=  5 x_width=  4 - 14 mono_em= 18 - 13  mono= 1
+# ... L21 mono:=0  18 - 13 DBG1670
+# ... L21 mono: num=  5 min= 18 max= 13 pitch= 16
+# ... L21 prop: num=  5 min=  2 max=  6 pitch=  6 @ 60%
+# ... L21 result: mono=0  distance >= 6 considered as space
+# ...
+#  line 22
+# ... L22 num_gaps=  8 x_width=  4 - 32 mono_em= 33 - 14  mono= 1
+# ... L22 mono:=0  33 - 14 DBG1670
+# ... L22 mono: num=  8 min= 33 max= 14 pitch= 16
+# ... L22 prop: num=  8 min=  2 max= 42 pitch= 26 @ 75%
+# ... L22 result: mono=0  distance >= 26 considered as space
+# ...
+#  line 23
+# ... L23 num_gaps=  6 x_width=  4 - 16 mono_em= 18 - 12  mono= 1
+# ... L23 mono:=0  18 - 12 DBG1670
+# ... L23 mono: num=  6 min= 18 max= 12 pitch= 16
+# ... L23 prop: num=  6 min=  2 max=  6 pitch=  6 @ 66%
+# ... L23 result: mono=0  distance >= 6 considered as space
+# ...
+#  line 24
+# ... L24 num_gaps=  8 x_width=  6 - 18 mono_em= 28 - 10  mono= 1
+# ... L24 mono:=0  28 - 10 DBG1670
+# ... L24 mono: num=  8 min= 28 max= 10 pitch= 16
+# ... L24 prop: num=  8 min=  2 max= 12 pitch=  9 @ 75%
+# ... L24 result: mono=0  distance >= 9 considered as space
+# ...
+#  line 25
+# ... L25 num_gaps= 11 x_width=  8 - 20 mono_em= 26 - 17  mono= 1
+# ... L25 mono:=0  26 - 17 DBG1670
+# ... L25 mono: num= 11 min= 26 max= 17 pitch= 16
+# ... L25 prop: num= 11 min=  2 max= 26 pitch= 13 @ 63%
+# ... L25 result: mono=0  distance >= 13 considered as space
+# ...
+#  line 26
+# ... L26 num_gaps= 18 x_width=  4 - 16 mono_em= 17 - 13  mono= 1
+# ... L26 mono:=0  17 - 13 DBG1670
+# ... L26 mono: num= 18 min= 17 max= 13 pitch= 16
+# ... L26 prop: num= 18 min=  2 max= 24 pitch=  9 @ 77%
+# ... L26 result: mono=0  distance >= 9 considered as space
+# ...
+#  line 27
+# ... L27 mono:=0  15 - 13  pre1 1232 1245  1258 1265 y 180 DBG1592
+# ... L27 num_gaps= 17 x_width=  4 - 16 mono_em= 17 - 13  mono= 0
+# ... L27 mono:=0  17 - 13 DBG1670
+# ... L27 mono: num= 17 min= 17 max= 13 pitch= 16
+# ... L27 prop: num= 17 min=  2 max= 26 pitch=  8 @ 76%
+# ... L27 result: mono=0  distance >= 8 considered as space
+# ...
+#  line 28
+# ... L28 num_gaps= 18 x_width=  4 - 16 mono_em= 17 - 13  mono= 1
+# ... L28 mono:=0  17 - 13 DBG1670
+# ... L28 mono: num= 18 min= 17 max= 13 pitch= 16
+# ... L28 prop: num= 18 min=  2 max= 24 pitch=  6 @ 66%
+# ... L28 result: mono=0  distance >= 6 considered as space
+# ...
+#  line 29
+# ... L29 mono:=0  15 - 13  pre1 1232 1245  1258 1265 y 262 DBG1592
+# ... L29 num_gaps= 17 x_width=  4 - 16 mono_em= 17 - 13  mono= 0
+# ... L29 mono:=0  17 - 13 DBG1670
+# ... L29 mono: num= 17 min= 17 max= 13 pitch= 16
+# ... L29 prop: num= 17 min=  2 max= 24 pitch=  6 @ 64%
+# ... L29 result: mono=0  distance >= 6 considered as space
+# ...
+#  line 30
+# ... L30 mono:=0  15 - 13  pre1 1232 1245  1258 1265 y 302 DBG1592
+# ... L30 num_gaps= 17 x_width=  4 - 16 mono_em= 17 - 13  mono= 0
+# ... L30 mono:=0  17 - 13 DBG1670
+# ... L30 mono: num= 17 min= 17 max= 13 pitch= 16
+# ... L30 prop: num= 17 min=  2 max= 24 pitch=  6 @ 64%
+# ... L30 result: mono=0  distance >= 6 considered as space
+# ...
+#  line 31
+# ... L31 num_gaps= 19 x_width=  4 - 16 mono_em= 17 - 13  mono= 1
+# ... L31 mono:=0  17 - 13 DBG1670
+# ... L31 mono: num= 19 min= 17 max= 13 pitch= 16
+# ... L31 prop: num= 19 min=  2 max= 24 pitch=  9 @ 78%
+# ... L31 result: mono=0  distance >= 9 considered as space
+# ...
+#  line 32
+# ... L32 num_gaps= 17 x_width=  4 - 16 mono_em= 17 - 13  mono= 1
+# ... L32 mono:=0  17 - 13 DBG1670
+# ... L32 mono: num= 17 min= 17 max= 13 pitch= 16
+# ... L32 prop: num= 17 min=  2 max= 26 pitch=  9 @ 76%
+# ... L32 result: mono=0  distance >= 9 considered as space
+# ...
+#  line 33
+# ... L33 mono:=0  15 - 13  pre1 1232 1245  1258 1265 y 426 DBG1592
+# ... L33 num_gaps= 17 x_width=  4 - 16 mono_em= 17 - 13  mono= 0
+# ... L33 mono:=0  17 - 13 DBG1670
+# ... L33 mono: num= 17 min= 17 max= 13 pitch= 16
+# ... L33 prop: num= 17 min=  2 max= 26 pitch=  9 @ 76%
+# ... L33 result: mono=0  distance >= 9 considered as space
+# ...
+#  line 34
+# ... L34 num_gaps= 17 x_width=  4 - 16 mono_em= 17 - 13  mono= 1
+# ... L34 mono:=0  17 - 13 DBG1670
+# ... L34 mono: num= 17 min= 17 max= 13 pitch= 16
+# ... L34 prop: num= 17 min=  2 max= 26 pitch=  9 @ 76%
+# ... L34 result: mono=0  distance >= 9 considered as space
+# ...
+#  line 35
+# ... L35 num_gaps= 33 x_width=  4 - 20 mono_em= 21 - 10  mono= 1
+# ... L35 mono:=0  21 - 10 DBG1670
+# ... L35 mono: num= 33 min= 21 max= 10 pitch= 16
+# ... L35 prop: num= 33 min=  2 max= 30 pitch=  9 @ 81%
+# ... L35 result: mono=0  distance >= 9 considered as space
+# ...
+#  line 36
+# ... L36 num_gaps=  8 x_width=  4 - 26 mono_em= 27 - 13  mono= 1
+# ... L36 mono:=0  27 - 13 DBG1670
+# ... L36 mono: num=  8 min= 27 max= 13 pitch= 16
+# ... L36 prop: num=  8 min=  1 max= 10 pitch=  9 @ 75%
+# ... L36 result: mono=0  distance >= 9 considered as space
+# ...
+#  line 37
+# ... L37 mono:=0  18 - 11  pre1 466 481  492 507 y 630 DBG1592
+# ... L37 num_gaps= 41 x_width=  4 - 18 mono_em= 19 - 11  mono= 0
+# ... L37 mono:=0  19 - 11 DBG1670
+# ... L37 mono: num= 41 min= 19 max= 11 pitch= 16
+# ... L37 prop: num= 41 min=  2 max= 12 pitch=  6 @ 63%
+# ... L37 result: mono=0  distance >= 6 considered as space
+# ...
+#  line 38
+# ... L38 num_gaps= 28 x_width=  4 - 30 mono_em= 31 -  6  mono= 1
+# ... L38 mono:=0  31 - 6 DBG1670
+# ... L38 mono: num= 28 min= 31 max=  6 pitch= 16
+# ... L38 prop: num= 28 min=  2 max= 12 pitch=  7 @ 64%
+# ... L38 result: mono=0  distance >= 7 considered as space
+# ...
+#  line 39
+# ... L39 mono:=0  17 - 24  pre1 1942 1963  1966 1981 y 12 DBG1592
+# ... L39 num_gaps=  7 x_width=  4 - 20 mono_em= 28 - 12  mono= 0
+# ... L39 mono:=0  28 - 12 DBG1670
+# ... L39 mono: num=  7 min= 28 max= 12 pitch= 16
+# ... L39 prop: num=  7 min=  2 max= 12 pitch=  9 @ 71%
+# ... L39 result: mono=0  distance >= 9 considered as space
+# ...
+#  line 40
+# ... L40 num_gaps=  5 x_width=  4 -  8 mono_em=  9 - 11  mono= 1
+# ... L40 mono: num=  5 min=  9 max= 11 pitch=  9
+# ... L40 prop: num=  5 min=  3 max= 15 pitch=  9 @ 20%
+# ... L40 result: mono=1  distance >= 9 considered as space
+# ...
+#  line 41
+# ... L41 num_gaps=  0 x_width= 1023 -  0 mono_em=  0 - 2047  mono= 1
+#  line 42
+# ... L42 num_gaps=  5 x_width=  6 - 16 mono_em= 17 - 14  mono= 1
+# ... L42 mono: num=  5 min= 17 max= 14 pitch= 16
+# ... L42 prop: num=  5 min=  2 max=  6 pitch=  6 @ 60%
+# ... L42 result: mono=1  distance >= 16 considered as space
+# ...
+#  line 43
+# ... L43 mono:=0  18 - 11  pre1 1888 1903  1914 1927 y 694 DBG1592
+# ... L43 num_gaps= 47 x_width=  4 - 22 mono_em= 23 -  8  mono= 0
+# ... L43 mono:=0  23 - 8 DBG1670
+# ... L43 mono: num= 47 min= 23 max=  8 pitch= 16
+# ... L43 prop: num= 47 min=  2 max= 36 pitch=  8 @ 87%
+# ... L43 result: mono=0  distance >= 8 considered as space
+# ... overall space width is 6 proportional
+# char recognition unknown= 695 picts= 1 boxes= 696
+#  77 of 695 chars unidentified
+# detect.c adjust_text_lines() 
+#  changed_chars= 0
+# debug: unknown= 54 picts= 1 boxes= 696
+# mark lines for out20.ppm
+# writing out20[.png] xy= 2554 728
+# try to compare unknown with known chars !(mode&8) - found 13 (nC=696)
+# try to divide unknown chars !(mode&16), numC 636
+# context correction if !(mode&32)
+# context correction Il1 O0
+# O0 num= 76 slashed0=0 mimaxW 4 34
+#  setc old nac=3 l I  98  97  to l  99 at   92  138
+#  setc old nac=2 O 0  99  99  to 0 100 at  140  138
+#  setc old nac=3 0 o  97  96  to 0  99 at  110  186
+#  setc old nac=2 O 0  99  99  to 0 100 at  214  180
+#  setc old nac=2 O 0  98  98  to 0  99 at  230  180
+#  setc old nac=2 O 0  99  99  to 0 100 at  228  220
+#  setc old nac=3 0 O  98  97  to 0  99 at  156  262
+#  setc old nac=2 0 O  98  96  to 0  99 at  158  302
+#  setc old nac=4 l I  99  99  to l 100 at   78  384
+#  setc old nac=2 O 0  99  99  to 0 100 at  182  384
+#  setc old nac=2 O 0  98  98  to 0  99 at  184  426
+#  setc old nac=3 l I  99  99  to l 100 at  446   12
+#  setc old nac=3 l I  99  99  to I 100 at  732   12
+#  setc old nac=3 O 0  99  99  to 0 100 at  953   75
+#  setc old nac=2 O 0  99  99  to 0 100 at 1086  138
+#  setc old nac=2 0 O  98  97  to 0  99 at 1086  262
+#  setc old nac=2 O 0  99  99  to 0 100 at 1086  302
+#  setc old nac=2 O 0  99  99  to 0 100 at 1086  384
+#  setc old nac=3 O 0  99  99  to 0 100 at 1070  426
+#  setc old nac=2 O 0  97  97  to 0  99 at 1086  426
+#  setc old nac=2 O 0  99  99  to 0 100 at 1086  466
+#  setc old nac=2 O 0  99  99  to O 100 at 1184   12
+#  setc old nac=2 O 0  99  98  to 0  99 at 1161   75
+#  setc old nac=2 1 q  99  95  to 1 100 at 1294  138
+#  setc old nac=2 I f  92  83  to l  50 at 1240  220
+#  setc old nac=2 1 J  99  97  to 1 100 at 1386  262
+#  setc old nac=2 1 q  99  95  to l  50 at 1472  344
+#  setc old nac=3 l I  98  98  to l  99 at  104  546
+#  setc old nac=2 O 0  99  99  to 0 100 at  164  544
+#  setc old nac=2 0 O  98  97  to 0  99 at  542  546
+#  setc old nac=2 0 O  98  97  to 0  99 at 1028  546
+#  setc old nac=2 O 0  97  97  to 0  99 at 1046  546
+#  setc old nac=2 O 0  99  99  to 0 100 at 1072  546
+#  setc old nac=2 O 0  99  99  to 0 100 at 1184  546
+#  setc old nac=2 0 O  98  97  to 0  99 at 1262  546
+#  setc old nac=3 0 D  98  96  to 0  99 at 1338  546
+#  setc old nac=2 O 0  99  99  to 0 100 at  584  630
+#  setc old nac=2 O 0  97  97  to 0  99 at  626  630
+#  setc old nac=3 l I  98  98  to I  99 at  228  672
+#  setc old nac=2 O 0  96  96  to 0  98 at  530  672
+#  setc old nac=2 O 0  96  96  to 0  98 at  556  672
+#  setc old nac=2 O 0  98  98  to 0  99 at  572  672
+#  setc old nac=2 O 0  98  98  to O  99 at 1942   12
+#  setc old nac=3 0 O  98  96  to 0  99 at 2268  650
+#  setc old nac=2 O 0  98  98  to 0  99 at 2498  650
+#  setc old nac=3 l I  99  99  to l 100 at 1882  688
+#  setc old nac=3 l I  98  98  to I  99 at 2262  688 num_corrected= 27 removed_spaces= 2
+get_least_line_indent: rot.vector dxdy 26473 -5
+# Line  0, unadjusted xy 1790 422, adjusted x 1790
+# Line  1, unadjusted xy  91  61, adjusted x 91
+# Line  3, unadjusted xy  38  98, adjusted x 38
+# Line  7, unadjusted xy  36 262, adjusted x 36
+# Minimum adjusted x: 36 (min_indent)
+# debug: (_)= 70 picts= 1 chars= 616 (0)=52 (1)=47 (2)=55 (3)=29 (4)=10 (5)=16 (6)=12 (7)=24 (8)=15 (9)=17 (C)=2 (D)=3 (E)=1 (F)=2 (H)=4 (I)=3 (J)=3
+# mark lines for out30.ppm
+# writing out30[.png] xy= 2554 728
+Elapsed time: 0:00:928.660.

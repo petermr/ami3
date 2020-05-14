@@ -1,0 +1,93 @@
+{
+	"project": "spss",
+	"documents": [
+		{
+			"id": "PMC5502154",
+			"plots": "ST,(X(E,T),Y(E,T),Wt,OR,MH,Fix,CI,Year)",
+			"numplots": "5",
+			"heterogeneity": "Chisq,df,P,Isq",
+			"overall": "Z,P",
+			"xscale": "log"
+		},
+		{
+			"id": "PMC5779749",
+			"plots": "?",
+			"overall": "Z,P",
+			"numplots": "?",
+			"hetereogenity": "Chisq,df,P,Isq",
+			"xscale": "log"
+		},
+		{
+			"id": "PMC5911624",
+			"plots": "?",
+			"overall": "Z,P",
+			"numplots": "?",
+			"hetereogenity": "Chisq,df,P,Isq",
+			"xscale": "log"
+		},
+		{
+			"id": "PMC6112962",
+			"plots": "?",
+			"overall": "Z,P",
+			"numplots": "?",
+			"hetereogenity": "Chisq,df,P,Isq",
+			"xscale": "log"
+		},
+		{
+			"id": "PMC6200462",
+			"plots": "?",
+			"overall": "Z,P",
+			"numplots": "?",
+			"hetereogenity": "Chisq,df,P,Isq",
+			"xscale": "log"
+		},
+		{
+			"id": "PMC6240187",
+			"plots": "?",
+			"overall": "Z,P",
+			"numplots": "?",
+			"hetereogenity": "Chisq,df,P,Isq",
+			"xscale": "log"
+		},
+		{
+			"id": "PMC6294855",
+			"plots": "?",
+			"overall": "Z,P",
+			"numplots": "?",
+			"hetereogenity": "Chisq,df,P,Isq",
+			"xscale": "log"
+		},
+		{
+			"id": "PMC6313124",
+			"plots": "?",
+			"overall": "Z,P",
+			"numplots": "?",
+			"hetereogenity": "Chisq,df,P,Isq",
+			"xscale": "log"
+		},
+		{
+			"id": "PMC6315527",
+			"plots": "?",
+			"overall": "Z,P",
+			"numplots": "?",
+			"hetereogenity": "Chisq,df,P,Isq",
+			"xscale": "log"
+		},
+		{
+			"id": "PMC6397911",
+			"plots": "?",
+			"overall": "Z,P",
+			"numplots": "?",
+			"hetereogenity": "Chisq,df,P,Isq",
+			"xscale": "log"
+		},
+		{
+			"id": "PMC6417514",
+			"plots": "?",
+			"overall": "Z,P",
+			"numplots": "?",
+			"hetereogenity": "Chisq,df,P,Isq",
+			"xscale": "log"
+		}
+	]
+}

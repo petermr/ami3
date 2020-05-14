@@ -1,0 +1,483 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.1 20151215//EN" "JATS-archivearticle1.dtd"> 
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Archiving and Interchange DTD v3.0 20080202//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName archivearticle3.dtd?><?SourceDTD.Version 3.0?><?ConverterInfo.XSLTName jp2nlmx2.xsl?><?ConverterInfo.Version 1?><front><journal-meta><journal-id journal-id-type="nlm-ta">Cancer Med</journal-id><journal-id journal-id-type="iso-abbrev">Cancer Med</journal-id><journal-id journal-id-type="doi">10.1002/(ISSN)2045-7634</journal-id><journal-id journal-id-type="publisher-id">CAM4</journal-id><journal-title-group><journal-title>Cancer Medicine</journal-title></journal-title-group><issn pub-type="epub">2045-7634</issn><publisher><publisher-name>John Wiley and Sons Inc.</publisher-name><publisher-loc>Hoboken</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">5911624</article-id><article-id pub-id-type="doi">10.1002/cam4.1306</article-id><article-id pub-id-type="publisher-id">CAM41306</article-id><article-categories><subj-group subj-group-type="overline"><subject>Original Research</subject></subj-group><subj-group subj-group-type="heading"><subject>Clinical Cancer Research</subject><subj-group subj-group-type="heading"><subject>Original Research</subject></subj-group></subj-group></article-categories><title-group><article-title>Meta&#x02010;analysis of whole&#x02010;brain radiotherapy plus temozolomide compared with whole&#x02010;brain radiotherapy for the treatment of brain metastases from non&#x02010;small&#x02010;cell lung cancer</article-title><alt-title alt-title-type="left-running-head">Y. Xin et&#x000a0;al.</alt-title></title-group><contrib-group><contrib id="cam41306-cr-0001" contrib-type="author"><name><surname>Xin</surname><given-names>Yong</given-names></name><xref ref-type="aff" rid="cam41306-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="author-notes" rid="cam41306-note-1002">
+<sup>&#x02020;</sup>
+</xref></contrib><contrib id="cam41306-cr-0002" contrib-type="author"><name><surname>Guo</surname><given-names>WenWen</given-names></name><xref ref-type="aff" rid="cam41306-aff-0001">
+<sup>1</sup>
+</xref><xref ref-type="author-notes" rid="cam41306-note-1002">
+<sup>&#x02020;</sup>
+</xref></contrib><contrib id="cam41306-cr-0003" contrib-type="author"><name><surname>Yang</surname><given-names>Chun Sheng</given-names></name><xref ref-type="aff" rid="cam41306-aff-0002">
+<sup>2</sup>
+</xref><xref ref-type="author-notes" rid="cam41306-note-1002">
+<sup>&#x02020;</sup>
+</xref></contrib><contrib id="cam41306-cr-0004" contrib-type="author"><name><surname>Huang</surname><given-names>Qian</given-names></name><xref ref-type="aff" rid="cam41306-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="cam41306-cr-0005" contrib-type="author"><name><surname>Zhang</surname><given-names>Pei</given-names></name><xref ref-type="aff" rid="cam41306-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="cam41306-cr-0006" contrib-type="author" corresp="yes"><name><surname>Zhang</surname><given-names>Long Zhen</given-names></name><address><email>823970070@qq.com</email></address><xref ref-type="aff" rid="cam41306-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="cam41306-cr-0007" contrib-type="author" corresp="yes"><name><surname>Jiang</surname><given-names>Guan</given-names></name><contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-0705-2386</contrib-id><address><email>dr.guanjiang@gmail.com</email></address><xref ref-type="aff" rid="cam41306-aff-0003">
+<sup>3</sup>
+</xref></contrib></contrib-group><aff id="cam41306-aff-0001">
+<label><sup>1</sup></label>
+<named-content content-type="organisation-division">Department of Radiotherapy</named-content>
+<institution>Affiliated Hospital of Xuzhou Medical University</institution>
+<named-content content-type="city">Xuzhou, Jiangsu</named-content>
+<named-content content-type="post-code">221002</named-content>
+<country country="CN">China</country>
+</aff><aff id="cam41306-aff-0002">
+<label><sup>2</sup></label>
+<named-content content-type="organisation-division">Department of Dermatology</named-content>
+<institution>Affiliated Huai'an Hospital of Xuzhou Medical University</institution>
+<named-content content-type="street">Huai'an</named-content>
+<named-content content-type="post-code">Jiangsu 223002</named-content>
+<country country="CN">China</country>
+</aff><aff id="cam41306-aff-0003">
+<label><sup>3</sup></label>
+<named-content content-type="organisation-division">Department of Dermatology</named-content>
+<institution>Affiliated Hospital of Xuzhou Medical University</institution>
+<named-content content-type="city">Xuzhou</named-content>
+<named-content content-type="post-code">Jiangsu 221002</named-content>
+<country country="CN">China</country>
+</aff><author-notes><corresp id="correspondenceTo"><label>*</label><bold>Correspondence</bold><break/>
+Guan Jiang, Department of Dermatology, Affiliated Hospital of Xuzhou Medical University, Xuzhou 221002, China. Tel: 13013941798; Fax: 0516&#x02010;83714443; E&#x02010;mail:<email>dr.guanjiang@gmail.com</email><break/>
+and<break/>
+Long Z. Zhang, Department of Radiotherapy, Affiliated Hospital of Xuzhou Medical University, Xuzhou, Jiangsu 221002, China. Tel: 15895236960; Fax: 0516&#x02010;85601527; E&#x02010;mail:<email>823970070@qq.com</email><break/></corresp><fn fn-type="equal" id="cam41306-note-1002"><label>&#x02020;</label><p>These authors contributed equally to this paper.</p></fn></author-notes><pub-date pub-type="epub"><day>07</day><month>3</month><year>2018</year></pub-date><pub-date pub-type="collection"><month>4</month><year>2018</year></pub-date><volume>7</volume><issue>4</issue><issue-id pub-id-type="doi">10.1002/cam4.2018.7.issue-4</issue-id><fpage>981</fpage><lpage>990</lpage><history><date date-type="received"><day>23</day><month>10</month><year>2017</year></date><date date-type="rev-recd"><day>27</day><month>11</month><year>2017</year></date><date date-type="accepted"><day>28</day><month>11</month><year>2017</year></date></history><permissions><!--<copyright-statement content-type="issue-copyright"> &#x000a9; 2018 Published by John Wiley & Sons Ltd. <copyright-statement>--><copyright-statement content-type="article-copyright">&#x000a9; 2018 The Authors. <italic>Cancer Medicine</italic> published by John Wiley &#x00026; Sons Ltd.</copyright-statement><license license-type="creativeCommonsBy"><license-p>This is an open access article under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri content-type="pdf" xlink:type="simple" xlink:href="file:CAM4-7-981.pdf"/><abstract id="cam41306-abs-0001"><title>Abstract</title><p>The aim of this meta&#x02010;analysis was to compare the efficiency of whole&#x02010;brain radiotherapy (WBRT) plus temozolomide (TMZ) with WBRT for the treatment of brain metastases from non&#x02010;small&#x02010;cell lung cancer (NSCLC). For dichotomous variables, outcomes were reported as relative risk ratio (RR) and 95% confidence interval (CI) was used to investigate the following outcome measures: overall response rate, headache, gastrointestinal adverse reactions, and hematological adverse reactions. Twelve randomized controlled trials involving 925 participants (480 received WBRT plus TMZ; 445 received WBRT) were included in the meta&#x02010;analysis. There was a significant difference between the overall response rate (RR&#x000a0;=&#x000a0;1.40, 95% CI 1.24&#x02013;1.57; <italic>Z</italic>&#x000a0;=&#x000a0;5.51; <italic>P</italic>&#x000a0;&#x0003c;&#x000a0;0.00001), gastrointestinal adverse reactions (RR&#x000a0;=&#x000a0;1.46, 95% CI 1.05&#x02013;2.04; <italic>Z</italic>&#x000a0;=&#x000a0;2.27; <italic>P</italic>&#x000a0;=&#x000a0;0.02), and hematological adverse reactions (RR&#x000a0;=&#x000a0;1.45, 95% CI 1.04&#x02013;2.02; <italic>Z</italic>&#x000a0;=&#x000a0;2.21; <italic>P</italic>&#x000a0;=&#x000a0;0.03) of patients treated with WBRT plus TMZ compared with patients treated with WBRT alone. There was no significant difference between headaches (RR&#x000a0;=&#x000a0;1.11, 95% CI 0.93&#x02013;1.02; <italic>Z</italic>&#x000a0;=&#x000a0;1.13; <italic>P</italic>&#x000a0;=&#x000a0;0.26) in patients treated with WBRT plus TMZ compared with patients treated with WBRT alone. In conclusion, the currently available evidence shows that WBRT plus TMZ increases the overall response rate in patients with brain metastases of NSCLC compared with WBRT alone.</p></abstract><kwd-group kwd-group-type="author-generated"><kwd id="cam41306-kwd-0001">brain metastases</kwd><kwd id="cam41306-kwd-0002"><styled-content style="fixed-case">NSCLC</styled-content></kwd><kwd id="cam41306-kwd-0003">radiotherapy</kwd><kwd id="cam41306-kwd-0004"><styled-content style="fixed-case">TMZ</styled-content></kwd></kwd-group><counts><fig-count count="7"/><table-count count="2"/><page-count count="10"/><word-count count="4411"/></counts><custom-meta-group><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>component-id</meta-name><meta-value>cam41306</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>April 2018</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_NLMPMC version:version=5.3.4 mode:remove_FC converted:23.04.2018</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="self-citation" id="cam41306-cit-2019">
+<source>Cancer Medicine</source>
+<year>2018</year>; 7(4):<fpage>981</fpage>&#x02013;<lpage>990</lpage>
+</mixed-citation>
+</p></notes></front><body><sec id="cam41306-sec-0001"><title>Introduction</title><p>Lung cancer is the most common malignant tumor worldwide; 85% of which is pathologically diagnosed as non&#x02013;small&#x02010;cell lung cancer (NSCLC) <xref rid="cam41306-bib-0001" ref-type="ref">1</xref>. The 5&#x02010;year survival rate of NSCLC is very low. Approximately, 15&#x02013;30% of NSCLC patients develop brain metastases <xref rid="cam41306-bib-0001" ref-type="ref">1</xref> with symptoms including headache, vomiting, and visual disturbances. The median survival time of untreated patients with brain metastases is &#x0003c;3&#x02013;6&#x000a0;months <xref rid="cam41306-bib-0002" ref-type="ref">2</xref>. The incidence of brain metastases has significantly increased because of the use of better diagnostic methods and the improvement of public health awareness. The main treatments for patients with NSCLC are surgery, radiotherapy, and chemotherapy <xref rid="cam41306-bib-0003" ref-type="ref">3</xref>. However, the efficacy of these traditional treatments in brain metastases is poor. Therefore, there is an urgent need to develop new strategies for the treatment of brain metastases from NSCLC.</p><p>Temozolomide (TMZ) is a second&#x02010;generation alkylating agent widely used for treating brain malignant tumors. TMZ enters the central nervous system (CNS) easily, and its plasma concentrations are increased easily, enhancing the antitumor activity <xref rid="cam41306-bib-0004" ref-type="ref">4</xref>, <xref rid="cam41306-bib-0005" ref-type="ref">5</xref>, <xref rid="cam41306-bib-0006" ref-type="ref">6</xref>. The main adverse reactions include nausea, vomiting, fatigue, and hematologic responses, which can be controlled with some drugs. TMZ combined with radiation therapy can be used to treat newly diagnosed pleomorphic glioblastoma tumors or recurrent malignant gliomas. Patients have good tolerance of TMZ and it achieves good clinical efficacy, improving patient quality of life.</p><p>At present, a few randomized controlled trials (RCTs) have shown that TMZ combined with whole&#x02010;brain radiotherapy (WBRT) can significantly improve the remission rate of brain metastases of NSCLC. In addition, TMZ can enhance the radiosensitizing effect of WBRT <xref rid="cam41306-bib-0007" ref-type="ref">7</xref>. As these RCTs only analyzed a relatively small number of patients and most were retrospective studies, large&#x02010;scale data are needed to confirm the effectiveness of this combination therapy. The aim of this meta&#x02010;analysis was to compare the efficiency and adverse reactions of WBRT plus TMZ with WBRT alone for the treatment of brain metastases from NSCLC.</p></sec><sec id="cam41306-sec-0002"><title>Materials and Methods</title><sec id="cam41306-sec-0003"><title>Data sources</title><p>We searched the Wanfang Database, PubMed, the Cochrane Library, Medline, and Elton B. Stephens Company (EBSCO) using the keywords &#x0201c;temozolomide OR TMZ&#x0201d; AND &#x0201c;radiotherapy&#x0201d; AND &#x0201c;brain metastases&#x0201d; AND &#x0201c;non&#x02010;small&#x02010;cell lung cancer OR NSCLC.&#x0201d; The publication dates were from 1 January 2002 to 1 June 2017 with no restrictions in language.</p></sec><sec id="cam41306-sec-0004"><title>Study selection</title><p>The inclusion criteria for the RCTs were: (i) pathologically confirmed NSCLC and diagnosed brain metastases with computed tomography (CT) or magnetic resonance imaging (MRI); (ii) aged over 18&#x000a0;years; (iii) radiotherapy and chemotherapy tolerance; (iv) expected lifetime of more than 3&#x000a0;months; (v) compared WBRT versus WBRT plus TMZ; and (vi) reported sufficient data on outcomes.</p><p>Exclusion criteria were: (i) nonrandomized and nonclinical controlled trials; (ii) trials with missing data; and (iii) duplicate reports, trials of poor methodological quality, and trials with obvious bias.</p><p>The authors carefully analyzed the methodology of the articles to select the qualified RCTs. With the keywords used, 91 papers (67 in Chinese and 24 in English) were identified. According to the inclusion and exclusion criteria, we independently examined the full text and discussed each article together.</p></sec><sec id="cam41306-sec-0005"><title>Data extraction and synthesis</title><p>The investigators carefully extracted data from the eligible studies. Data included the name of the first author, year of publication, journal name, quality of the study, intervention, number of patients in the study, dosage and duration of the two groups, median survival time, and the number of patients with adverse reactions.</p></sec><sec id="cam41306-sec-0006"><title>Main outcome(s) and measure(s)</title><p>The following outcomes were measured: overall response rate, headache, gastrointestinal adverse reactions, and hematologic adverse reactions. Overall response was defined as complete response and partial response which was measured by brain CT or MRI according to World Health Organization criteria. Toxicity was evaluated according to the National Cancer Institute Common Terminology Criteria for Adverse Events version 3.0. The number of patients with adverse reactions was collected directly from the published papers. Disagreement regarding data extraction was resolved by discussion and consensus among the investigators.</p></sec><sec id="cam41306-sec-0007"><title>Quality assessment</title><p>The authors used the &#x0201c;Cochrane handbook for systematic reviews of interventions version <xref rid="cam41306-bib-0008" ref-type="ref">8</xref> 5.0.0&#x0201d; to assess the methodological quality of the included RCTs, which assessed: (i) generation of the random allocation scheme (random sequence generation); (ii) allocation concealment; (iii) blinding of participants and personnel; (iv) blinding of outcome assessment; (v) incomplete outcome data; (vi) selective reporting; and (vii) other sources of bias.</p></sec><sec id="cam41306-sec-0008"><title>Statistical methods</title><p>The data were analyzed using Review Manager v.5.3 software (Cochrane Collaboration, Oxford, UK) and SPSS 16.0. For dichotomous variables, outcomes were reported as relative risk ratio (RR) and 95% confidence interval (CI). A <italic>P</italic>&#x02010;value of &#x0003c;0.05 was considered statistically significant. The heterogeneity test with inconsistency index (<italic>I</italic>
+<sup>2</sup>) statistic and <italic>Q</italic> statistic was performed <xref rid="cam41306-bib-0009" ref-type="ref">9</xref>. If the outcomes were found to have good homogeneity (<italic>P</italic>&#x000a0;&#x0003e;&#x000a0;0.1; <italic>I</italic>
+<sup>2</sup>&#x000a0;&#x02264;&#x000a0;50%), a fixed effect model was used for secondary analysis; if not (<italic>P</italic>&#x000a0;&#x0003c;&#x000a0;0.1; <italic>I</italic>
+<sup>2</sup>&#x000a0;&#x0003e;&#x000a0;50%), a random&#x02010;effect model was used <xref rid="cam41306-bib-0009" ref-type="ref">9</xref>.</p></sec></sec><sec id="cam41306-sec-0009"><title>Results</title><p>As mentioned above, we identified the eligible paper carefully. The literature selection process is presented in the PRISMA flow chart (Fig.&#x000a0;<xref rid="cam41306-fig-0001" ref-type="fig">1</xref>) according to the PRISMA guidelines. After comprehensive discussion and analysis, 12 RCTs were selected and included for final meta&#x02010;analysis.</p><fig fig-type="Figure" xml:lang="en" id="cam41306-fig-0001" orientation="portrait" position="float"><label>Figure 1</label><caption><p>Flowchart of article screening and selection process.</p></caption><graphic id="nlm-graphic-3" xlink:href="CAM4-7-981-g001"/></fig><sec id="cam41306-sec-0010"><title>Included studies</title><p>In total, 925 patients were enrolled in the 12 included RCTs. The patients all had pathologically confirmed NSCLC and brain metastases diagnosed with CT or MRI. Of the 925 patients, 480 received WBRT plus TMZ and 445 received WBRT. Radiation and drug dose varied in different studies. The characteristics of the 12 included RCTs are shown in Table&#x000a0;<xref rid="cam41306-tbl-0001" ref-type="table-wrap">1</xref>. Figure&#x000a0;<xref rid="cam41306-fig-0002" ref-type="fig">2</xref> depicts the assessment of the methodological quality of the 12 RCTs. The funnel plot, which was highly symmetrical, was used to analyze the publication bias (Fig.&#x000a0;<xref rid="cam41306-fig-0003" ref-type="fig">3</xref>).</p><table-wrap id="cam41306-tbl-0001" xml:lang="en" orientation="portrait" position="float"><label>Table 1</label><caption><p>Summary of the characteristics of the 12 trials included in the meta&#x02010;analysis (1 cycle&#x000a0;=&#x000a0;28&#x000a0;days)</p></caption><table frame="hsides" rules="groups"><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><thead valign="top"><tr style="border-bottom:solid 1px #000000"><th align="left" valign="top" rowspan="1" colspan="1">Author</th><th align="left" valign="top" rowspan="1" colspan="1">Groups</th><th align="left" valign="top" rowspan="1" colspan="1">No of patients (WBRT&#x000a0;+&#x000a0;TMZ/WBRT)</th><th align="left" valign="top" rowspan="1" colspan="1">Treatment</th><th align="left" valign="top" rowspan="1" colspan="1">Gender (Male/Female)</th><th align="left" valign="top" rowspan="1" colspan="1">Age (Average age OR Median age)</th><th align="left" valign="top" rowspan="1" colspan="1">Pathological type (Squamous cell carcinoma/Adenocarcinoma/Other)</th><th align="left" valign="top" rowspan="1" colspan="1">References</th></tr></thead><tbody><tr><td align="left" rowspan="2" colspan="1">Chua, et&#x000a0;al. (2010)</td><td align="left" rowspan="1" colspan="1">WBRT&#x000a0;+&#x000a0;TMZ</td><td align="left" rowspan="1" colspan="1">47</td><td align="left" rowspan="1" colspan="1">WBRT (30&#x000a0;Gy/10&#x000a0;f)&#x000a0;+&#x000a0;TMZ (75&#x000a0;mg/m<sup>2</sup>&#x000a0;*&#x000a0;21&#x000a0;d or 28&#x000a0;d)</td><td align="left" rowspan="1" colspan="1">30/17</td><td align="left" rowspan="1" colspan="1">38&#x02013;78 (59)</td><td align="left" rowspan="2" colspan="1">&#x02010;</td><td align="left" rowspan="2" colspan="1">
+<xref rid="cam41306-bib-0006" ref-type="ref">6</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">WBRT</td><td align="left" rowspan="1" colspan="1">48</td><td align="left" rowspan="1" colspan="1">WBRT (30&#x000a0;Gy/10&#x000a0;f)</td><td align="left" rowspan="1" colspan="1">32/16</td><td align="left" rowspan="1" colspan="1">43&#x02013;79 (62)</td></tr><tr><td align="left" rowspan="2" colspan="1">Hassler, et&#x000a0;al. (2013)</td><td align="left" rowspan="1" colspan="1">WBRT&#x000a0;+&#x000a0;TMZ</td><td align="left" rowspan="1" colspan="1">22</td><td align="left" rowspan="1" colspan="1">WBRT (30&#x000a0;Gy/10&#x000a0;f or 40&#x000a0;Gy/20&#x000a0;f)&#x000a0;+&#x000a0;TMZ (75&#x000a0;mg/m<sup>2</sup>&#x000a0;*&#x000a0;2&#x000a0;weeks&#x000a0;+&#x000a0;100&#x000a0;mg/m<sup>2</sup>*14&#x000a0;d*6&#x000a0;cycles)</td><td align="left" rowspan="1" colspan="1">13/9</td><td align="left" rowspan="1" colspan="1">36&#x02013;85 (69)</td><td align="left" rowspan="2" colspan="1">&#x02010;</td><td align="left" rowspan="2" colspan="1">
+<xref rid="cam41306-bib-0016" ref-type="ref">16</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">WBRT</td><td align="left" rowspan="1" colspan="1">13</td><td align="left" rowspan="1" colspan="1">WBRT (30&#x000a0;Gy/10&#x000a0;f or 40&#x000a0;Gy/20&#x000a0;f)</td><td align="left" rowspan="1" colspan="1">8/5</td><td align="left" rowspan="1" colspan="1">54&#x02013;78 (64)</td></tr><tr><td align="left" rowspan="2" colspan="1">Yong Peng, et&#x000a0;al. (2008)</td><td align="left" rowspan="1" colspan="1">WBRT&#x000a0;+&#x000a0;TMZ</td><td align="left" rowspan="1" colspan="1">19</td><td align="left" rowspan="1" colspan="1">WBRT (30&#x000a0;Gy/10&#x000a0;f or 40&#x000a0;Gy/20&#x000a0;f)&#x000a0;+&#x000a0;TMZ (200&#x000a0;mg/m<sup>2</sup>*5&#x000a0;d&#x000a0;*&#x000a0;3 cycles)</td><td align="left" rowspan="1" colspan="1">11/8</td><td align="left" rowspan="1" colspan="1">35&#x02013;71 (54)</td><td align="left" rowspan="2" colspan="1">&#x02010;</td><td align="left" rowspan="2" colspan="1">
+<xref rid="cam41306-bib-0023" ref-type="ref">23</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">WBRT</td><td align="left" rowspan="1" colspan="1">21</td><td align="left" rowspan="1" colspan="1">WBRT (30&#x000a0;Gy/10&#x000a0;f or 40&#x000a0;Gy/20&#x000a0;f)</td><td align="left" rowspan="1" colspan="1">14/7</td><td align="left" rowspan="1" colspan="1">32&#x02013;72 (52)</td></tr><tr><td align="left" rowspan="2" colspan="1">Shi, et&#x000a0;al. (2014)</td><td align="left" rowspan="1" colspan="1">WBRT&#x000a0;+&#x000a0;TMZ</td><td align="left" rowspan="1" colspan="1">43</td><td align="left" rowspan="1" colspan="1">WBRT (40&#x000a0;Gy/20&#x000a0;f)&#x000a0;+&#x000a0;TMZ (75&#x000a0;mg/m<sup>2</sup> during WBRT)</td><td align="left" rowspan="1" colspan="1">25/18</td><td align="left" rowspan="1" colspan="1">38&#x02013;72 (55)</td><td align="left" rowspan="1" colspan="1">12/29/2</td><td align="left" rowspan="2" colspan="1">21]</td></tr><tr><td align="left" rowspan="1" colspan="1">WBRT</td><td align="left" rowspan="1" colspan="1">41</td><td align="left" rowspan="1" colspan="1">WBRT (40&#x000a0;Gy/20&#x000a0;f)</td><td align="left" rowspan="1" colspan="1">24/17</td><td align="left" rowspan="1" colspan="1">38&#x02013;73 (56)</td><td align="left" rowspan="1" colspan="1">27/12/2</td></tr><tr><td align="left" rowspan="2" colspan="1">Cheng, et&#x000a0;al. (2013)</td><td align="left" rowspan="1" colspan="1">WBRT&#x000a0;+&#x000a0;TMZ</td><td align="left" rowspan="1" colspan="1">30</td><td align="left" rowspan="1" colspan="1">WBRT (40&#x000a0;Gy/20&#x000a0;f)&#x000a0;+&#x000a0;TMZ (200&#x000a0;mg/m<sup>2&#x000a0;</sup>*&#x000a0;5&#x000a0;d&#x000a0;*&#x000a0;6&#x000a0;cycles)</td><td align="left" rowspan="1" colspan="1">18/12</td><td align="left" rowspan="1" colspan="1">39&#x02013;70 (52)</td><td align="left" rowspan="2" colspan="1">&#x02010;</td><td align="left" rowspan="2" colspan="1">
+<xref rid="cam41306-bib-0019" ref-type="ref">19</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">WBRT</td><td align="left" rowspan="1" colspan="1">26</td><td align="left" rowspan="1" colspan="1">WBRT (40&#x000a0;Gy/20&#x000a0;f)</td><td align="left" rowspan="1" colspan="1">11/5</td><td align="left" rowspan="1" colspan="1">38&#x02013;71 (54)</td></tr><tr><td align="left" rowspan="2" colspan="1">Xie, et&#x000a0;al. (2007)</td><td align="left" rowspan="1" colspan="1">WBRT&#x000a0;+&#x000a0;TMZ</td><td align="left" rowspan="1" colspan="1">25</td><td align="left" rowspan="1" colspan="1">WBRT (40&#x000a0;Gy/20&#x000a0;f)&#x000a0;+&#x000a0;TMZ (200&#x000a0;mg/m<sup>2&#x000a0;</sup>*&#x000a0;5&#x000a0;d)</td><td align="left" rowspan="2" colspan="1">36/14</td><td align="left" rowspan="2" colspan="1">30&#x02013;70 (56)</td><td align="left" rowspan="2" colspan="1">20/28/2</td><td align="left" rowspan="2" colspan="1">[18]</td></tr><tr><td align="left" rowspan="1" colspan="1">WBRT</td><td align="left" rowspan="1" colspan="1">25</td><td align="left" rowspan="1" colspan="1">WBRT (40&#x000a0;Gy/20&#x000a0;f)</td></tr><tr><td align="left" rowspan="2" colspan="1">Fei, et&#x000a0;al. (2017)</td><td align="left" rowspan="1" colspan="1">WBRT&#x000a0;+&#x000a0;TMZ</td><td align="left" rowspan="1" colspan="1">26</td><td align="left" rowspan="1" colspan="1">WBRT (30&#x000a0;Gy/10&#x000a0;f or 40&#x000a0;Gy/20&#x000a0;f)&#x000a0;+&#x000a0;TMZ (75&#x000a0;mg/m<sup>2</sup> during WBRT)</td><td align="left" rowspan="1" colspan="1">16/10</td><td align="left" rowspan="2" colspan="1">&#x02010;</td><td align="left" rowspan="1" colspan="1">14/9/3</td><td align="left" rowspan="2" colspan="1">
+<xref rid="cam41306-bib-0024" ref-type="ref">24</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">WBRT</td><td align="left" rowspan="1" colspan="1">25</td><td align="left" rowspan="1" colspan="1">WBRT (30&#x000a0;Gy/10&#x000a0;f or 40&#x000a0;Gy/20&#x000a0;f)</td><td align="left" rowspan="1" colspan="1">14/11</td><td align="left" rowspan="1" colspan="1">13/8/4</td></tr><tr><td align="left" rowspan="2" colspan="1">Li, et&#x000a0;al. (2017)</td><td align="left" rowspan="1" colspan="1">WBRT&#x000a0;+&#x000a0;TMZ</td><td align="left" rowspan="1" colspan="1">39</td><td align="left" rowspan="1" colspan="1">WBRT (40&#x000a0;Gy/20&#x000a0;f)&#x000a0;+&#x000a0;TMZ (75&#x000a0;mg/m<sup>2</sup>*4&#x000a0;weeks +150&#x000a0;mg/m<sup>2</sup>*5&#x000a0;d&#x000a0;*&#x000a0;6&#x000a0;cycles)</td><td align="left" rowspan="1" colspan="1">19/20</td><td align="left" rowspan="2" colspan="1">21&#x02013;70 (47.37&#x000a0;&#x000b1;&#x000a0;4.56)</td><td align="left" rowspan="2" colspan="1">&#x02010;</td><td align="left" rowspan="2" colspan="1">
+<xref rid="cam41306-bib-0022" ref-type="ref">22</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">WBRT</td><td align="left" rowspan="1" colspan="1">39</td><td align="left" rowspan="1" colspan="1">WBRT (40&#x000a0;Gy/20&#x000a0;f)</td><td align="left" rowspan="1" colspan="1">21/18</td></tr><tr><td align="left" rowspan="2" colspan="1">Tian Lu (2015)</td><td align="left" rowspan="1" colspan="1">WBRT&#x000a0;+&#x000a0;TMZ</td><td align="left" rowspan="1" colspan="1">52</td><td align="left" rowspan="1" colspan="1">WBRT (40&#x000a0;Gy/20&#x000a0;f)&#x000a0;+&#x000a0;TMZ (200&#x000a0;mg/m<sup>2</sup>&#x000a0;*&#x000a0;5&#x000a0;d&#x000a0;*&#x000a0;4&#x000a0;cycles)</td><td align="left" rowspan="1" colspan="1">28/24</td><td align="left" rowspan="2" colspan="1">46&#x02013;65 (58.9&#x000a0;&#x000b1;&#x000a0;5.9)</td><td align="left" rowspan="2" colspan="1">47/55/0</td><td align="left" rowspan="2" colspan="1">
+<xref rid="cam41306-bib-0026" ref-type="ref">26</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">WBRT</td><td align="left" rowspan="1" colspan="1">50</td><td align="left" rowspan="1" colspan="1">WBRT (40&#x000a0;Gy/20&#x000a0;f)</td><td align="left" rowspan="1" colspan="1">23/27</td></tr><tr><td align="left" rowspan="2" colspan="1">Doudou, et&#x000a0;al. (2015)</td><td align="left" rowspan="1" colspan="1">WBRT&#x000a0;+&#x000a0;TMZ</td><td align="left" rowspan="1" colspan="1">18</td><td align="left" rowspan="1" colspan="1">WBRT (40&#x000a0;Gy/20&#x000a0;f)&#x000a0;+&#x000a0;TMZ (75&#x000a0;mg/m<sup>2</sup>*4&#x000a0;weeks&#x000a0;+&#x000a0;100&#x000a0;mg/m<sup>2</sup>&#x000a0;*&#x000a0;5&#x000a0;d&#x000a0;*&#x000a0;6&#x000a0;cycles)</td><td align="left" rowspan="1" colspan="1">10/8</td><td align="left" rowspan="1" colspan="1">39&#x02013;70 (54.5)</td><td align="left" rowspan="2" colspan="1">&#x02010;</td><td align="left" rowspan="2" colspan="1">
+<xref rid="cam41306-bib-0007" ref-type="ref">7</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">WBRT</td><td align="left" rowspan="1" colspan="1">18</td><td align="left" rowspan="1" colspan="1">WBRT (40&#x000a0;Gy/20&#x000a0;f)</td><td align="left" rowspan="1" colspan="1">11/7</td><td align="left" rowspan="1" colspan="1">37&#x02013;72 (53.5)</td></tr><tr><td align="left" rowspan="2" colspan="1">Zhao (2016)</td><td align="left" rowspan="1" colspan="1">WBRT&#x000a0;+&#x000a0;TMZ</td><td align="left" rowspan="1" colspan="1">30</td><td align="left" rowspan="1" colspan="1">WBRT (40&#x000a0;Gy/20&#x000a0;f)&#x000a0;+&#x000a0;TMZ (75&#x000a0;mg/m<sup>2</sup>*4&#x000a0;weeks&#x000a0;+&#x000a0;150&#x000a0;mg/m<sup>2&#x000a0;</sup>*&#x000a0;5&#x000a0;d&#x000a0;*&#x000a0;6&#x000a0;cycles)</td><td align="left" rowspan="1" colspan="1">16/14</td><td align="left" rowspan="1" colspan="1">38&#x02013;69 (58.1&#x000a0;&#x000b1;&#x000a0;3.3)</td><td align="left" rowspan="2" colspan="1">&#x02010;</td><td align="left" rowspan="2" colspan="1">
+<xref rid="cam41306-bib-0013" ref-type="ref">13</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">WBRT</td><td align="left" rowspan="1" colspan="1">30</td><td align="left" rowspan="1" colspan="1">WBRT (40&#x000a0;Gy/20&#x000a0;f)</td><td align="left" rowspan="1" colspan="1">17/13</td><td align="left" rowspan="1" colspan="1">36&#x02013;68 (57.6&#x000a0;&#x000b1;&#x000a0;3.3)</td></tr><tr><td align="left" rowspan="2" colspan="1">Deng (2017)</td><td align="left" rowspan="1" colspan="1">WBRT&#x000a0;+&#x000a0;TMZ</td><td align="left" rowspan="1" colspan="1">129</td><td align="left" rowspan="1" colspan="1">WBRT (30&#x000a0;Gy/10&#x000a0;f)+TMZ (75&#x000a0;mg/m<sup>2</sup> during WBRT&#x000a0;+&#x000a0;100&#x000a0;mg/m<sup>2&#x000a0;</sup>*&#x000a0;5&#x000a0;d&#x000a0;*&#x000a0;6 cycles)</td><td align="left" rowspan="1" colspan="1">69/60</td><td align="left" rowspan="2" colspan="1">34&#x02013;85 (60)</td><td align="left" rowspan="2" colspan="1">&#x02010;/227/&#x02010;</td><td align="left" rowspan="2" colspan="1">
+<xref rid="cam41306-bib-0025" ref-type="ref">25</xref>
+</td></tr><tr><td align="left" rowspan="1" colspan="1">WBRT</td><td align="left" rowspan="1" colspan="1">109</td><td align="left" rowspan="1" colspan="1">WBRT (30&#x000a0;Gy/10&#x000a0;f)</td><td align="left" rowspan="1" colspan="1">67/42</td></tr></tbody></table><table-wrap-foot><fn id="cam41306-note-0003"><p>WBRT, whole&#x02010;brain radiotherapy; TMZ, temozolomide.</p></fn></table-wrap-foot><permissions><copyright-holder>John Wiley &#x00026; Sons, Ltd</copyright-holder></permissions></table-wrap><fig fig-type="Figure" xml:lang="en" id="cam41306-fig-0002" orientation="portrait" position="float"><label>Figure 2</label><caption><p>Summary diagram of risk of bias percentile chart.</p></caption><graphic id="nlm-graphic-5" xlink:href="CAM4-7-981-g002"/></fig><fig fig-type="Figure" xml:lang="en" id="cam41306-fig-0003" orientation="portrait" position="float"><label>Figure 3</label><caption><p>Funnel plot of publication bias.</p></caption><graphic id="nlm-graphic-7" xlink:href="CAM4-7-981-g003"/></fig></sec><sec id="cam41306-sec-0011"><title>Overall response rate</title><p>Eleven RCTs that reported the overall response rate were selected in the analysis. The heterogeneity test for overall response rate was not statistically significant, allowing the data for each outcome to be calculated using the fixed effects model (<italic>I</italic>
+<sup>2</sup>&#x000a0;=&#x000a0;14%; <italic>P</italic>&#x000a0;=&#x000a0;0.31). The meta&#x02010;analysis indicated that there was a significant difference in the overall response rate in patients treated with WBRT plus TMZ compared with WBRT alone (RR&#x000a0;=&#x000a0;1.40, 95% CI 1.24&#x02013;1.57; <italic>Z</italic>&#x000a0;=&#x000a0;5.51; <italic>P</italic>&#x000a0;&#x0003c;&#x000a0;0.00001) (Fig.&#x000a0;<xref rid="cam41306-fig-0004" ref-type="fig">4</xref>).</p><fig fig-type="Figure" xml:lang="en" id="cam41306-fig-0004" orientation="portrait" position="float"><label>Figure 4</label><caption><p>Forest plot of overall response rate in whole&#x02010;brain radiotherapy (WBRT) plus TMZ compared with WBRT.</p></caption><graphic id="nlm-graphic-9" xlink:href="CAM4-7-981-g004"/></fig></sec><sec id="cam41306-sec-0012"><title>Median survival time</title><p>According to SPSS analysis, there was a significant difference about median survival time in patients between the two groups in relevant 10 RCTs (<italic>P</italic>&#x000a0;&#x0003c;&#x000a0;0.05) (Table&#x000a0;<xref rid="cam41306-tbl-0002" ref-type="table-wrap">2</xref>). And the median survival time of the WBRT plus TMZ was longer than that of the WBRT alone.</p><table-wrap id="cam41306-tbl-0002" xml:lang="en" orientation="portrait" position="float"><label>Table 2</label><caption><p>Median survival time in trials included in the meta&#x02010;analysis (*P&#x000a0;&#x0003c;&#x000a0;0.05)</p></caption><table frame="hsides" rules="groups"><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000" span="1"/><thead valign="top"><tr style="border-bottom:solid 1px #000000"><th align="left" valign="top" rowspan="1" colspan="1"/><th align="left" valign="top" rowspan="1" colspan="1">Chua (2010)</th><th align="left" valign="top" rowspan="1" colspan="1">Hassler (2013)</th><th align="left" valign="top" rowspan="1" colspan="1">Yong Peng (2008)</th><th valign="top" rowspan="1" colspan="1">Shi, et&#x000a0;al. (2014)</th><th valign="top" rowspan="1" colspan="1">Cheng, et&#x000a0;al. (2013)</th><th align="left" valign="top" rowspan="1" colspan="1">Xie, et&#x000a0;al. (2007)</th><th align="left" valign="top" rowspan="1" colspan="1">Fei, et&#x000a0;al. (2017)</th><th align="left" valign="top" rowspan="1" colspan="1">Li, et&#x000a0;al. (2017)</th><th align="left" valign="top" rowspan="1" colspan="1">Tian Lu. (2015)</th><th align="left" valign="top" rowspan="1" colspan="1">Doudou, et&#x000a0;al. (2015)</th><th valign="top" rowspan="1" colspan="1">Zhao (2016)</th><th align="left" valign="top" rowspan="1" colspan="1">Deng (2017)</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">WBRT&#x000a0;+&#x000a0;TMZ*</td><td align="left" rowspan="1" colspan="1">4.7</td><td align="left" rowspan="1" colspan="1">8.6</td><td align="left" rowspan="1" colspan="1">13</td><td align="left" rowspan="1" colspan="1">10.56</td><td align="left" rowspan="1" colspan="1">12.8</td><td align="left" rowspan="1" colspan="1">8.6</td><td align="left" rowspan="2" colspan="1">&#x02013;</td><td align="left" rowspan="2" colspan="1">&#x02013;</td><td align="left" rowspan="1" colspan="1">8.4</td><td align="left" rowspan="1" colspan="1">6.0</td><td align="left" rowspan="1" colspan="1">10.67</td><td align="left" rowspan="1" colspan="1">8.5</td></tr><tr><td align="left" rowspan="1" colspan="1">WBRT</td><td align="left" rowspan="1" colspan="1">4.3</td><td align="left" rowspan="1" colspan="1">7.0</td><td align="left" rowspan="1" colspan="1">11</td><td align="left" rowspan="1" colspan="1">6.24</td><td align="left" rowspan="1" colspan="1">8.2</td><td align="left" rowspan="1" colspan="1">4.5</td><td align="left" rowspan="1" colspan="1">7.8</td><td align="left" rowspan="1" colspan="1">4.9</td><td align="left" rowspan="1" colspan="1">6.18</td><td align="left" rowspan="1" colspan="1">5.9</td></tr></tbody></table><table-wrap-foot><fn id="cam41306-note-0004"><p>WBRT, whole&#x02010;brain radiotherapy; TMZ, temozolomide.</p></fn></table-wrap-foot><permissions><copyright-holder>John Wiley &#x00026; Sons, Ltd</copyright-holder></permissions></table-wrap></sec><sec id="cam41306-sec-0013"><title>Headache</title><p>Eleven RCTs that reported headache adverse reactions were selected in the analysis. The heterogeneity test for headache was not statistically significant, allowing the data for each outcome to be calculated using fixed effects models (<italic>I</italic>
+<sup>2</sup>&#x000a0;=&#x000a0;0%; <italic>P</italic>&#x000a0;=&#x000a0;1.00). The meta&#x02010;analysis indicated that there was no significant difference in the headache adverse reactions in patients treated with WBRT plus TMZ compared with WBRT alone (RR&#x000a0;=&#x000a0;1.11, 95% CI 0.93&#x02013;1.02; <italic>Z</italic>&#x000a0;=&#x000a0;1.13; <italic>P</italic>&#x000a0;=&#x000a0;0.26) (Fig.&#x000a0;<xref rid="cam41306-fig-0005" ref-type="fig">5</xref>).</p><fig fig-type="Figure" xml:lang="en" id="cam41306-fig-0005" orientation="portrait" position="float"><label>Figure 5</label><caption><p>Forest plot of headache in whole&#x02010;brain radiotherapy (WBRT) plus TMZ compared with WBRT.</p></caption><graphic id="nlm-graphic-11" xlink:href="CAM4-7-981-g005"/></fig></sec><sec id="cam41306-sec-0014"><title>Gastrointestinal adverse reactions</title><p>Twelve RCTs that reported gastrointestinal adverse reactions were selected in the analysis. The heterogeneity test for gastrointestinal adverse reactions was statistically significant, allowing the data for each outcome to be calculated using random effects models (<italic>I</italic>
+<sup>2</sup>&#x000a0;=&#x000a0;70%; <italic>P</italic>&#x000a0;=&#x000a0;0.0001). The meta&#x02010;analysis indicated that there was a significant difference in the gastrointestinal adverse reactions in patients treated with WBRT plus TMZ compared with WBRT alone (RR&#x000a0;=&#x000a0;1.46, 95% CI 1.05&#x02013;2.04; <italic>Z</italic>&#x000a0;=&#x000a0;2.27; <italic>P</italic>&#x000a0;=&#x000a0;0.02) (Fig.&#x000a0;<xref rid="cam41306-fig-0006" ref-type="fig">6</xref>).</p><fig fig-type="Figure" xml:lang="en" id="cam41306-fig-0006" orientation="portrait" position="float"><label>Figure 6</label><caption><p>Forest plot of gastrointestinal adverse reactions in whole&#x02010;brain radiotherapy (WBRT) plus TMZ compared with WBRT.</p></caption><graphic id="nlm-graphic-13" xlink:href="CAM4-7-981-g006"/></fig></sec><sec id="cam41306-sec-0015"><title>Hematologic adverse reactions</title><p>Twelve RCTs reporting on hematologic adverse reactions were selected in the analysis. The heterogeneity test for hematologic adverse reactions was statistically significant, allowing the data for each outcome to be calculated using random effects models (<italic>I</italic>
+<sup>2</sup>&#x000a0;=&#x000a0;64%; <italic>P</italic>&#x000a0;=&#x000a0;0.001). The meta&#x02010;analysis indicated that there was a significant difference in the hematologic adverse reactions in patients treated with WBRT plus TMZ compared with WBRT alone (RR&#x000a0;=&#x000a0;1.45, 95% CI 1.04&#x02013;2.02; <italic>Z</italic>&#x000a0;=&#x000a0;2.21; <italic>P</italic>&#x000a0;=&#x000a0;0.03) (Fig.&#x000a0;<xref rid="cam41306-fig-0007" ref-type="fig">7</xref>).</p><fig fig-type="Figure" xml:lang="en" id="cam41306-fig-0007" orientation="portrait" position="float"><label>Figure 7</label><caption><p>Forest plot of hematologic adverse reactions in whole&#x02010;brain radiotherapy (WBRT) plus TMZ compared with WBRT.</p></caption><graphic id="nlm-graphic-15" xlink:href="CAM4-7-981-g007"/></fig></sec></sec><sec id="cam41306-sec-0016"><title>Discussion</title><p>In this meta&#x02010;analysis, we compared WBRT plus TMZ with WBRT for the treatment of brain metastases of NSCLC. The meta&#x02010;analysis proved that there was a significant difference in the overall response rate in patients between WBRT plus TMZ and WBRT alone. Our findings indicate that the combination therapy can significantly increase the overall response rate, prolong the median survival time, and enhance the antitumor effect.</p><p>Approximately, 15&#x02013;30% of NSCLC patients develop brain metastases <xref rid="cam41306-bib-0001" ref-type="ref">1</xref>, which presents a particular challenge. In the past, the standard therapy for brain metastases was WBRT <xref rid="cam41306-bib-0010" ref-type="ref">10</xref>, which may provide local disease control, but only has a marginal survival benefit <xref rid="cam41306-bib-0006" ref-type="ref">6</xref>. Unfortunately, owing to the local disease control by WBRT, there is still a high risk in both CNS and systemic progression. The median survival time of patients having WBRT is only 3&#x02013;4&#x000a0;months after the diagnosis of the brain metastases <xref rid="cam41306-bib-0006" ref-type="ref">6</xref>. Therefore, radiotherapy is often combined with chemotherapy for patients with brain metastases <xref rid="cam41306-bib-0011" ref-type="ref">11</xref>, <xref rid="cam41306-bib-0012" ref-type="ref">12</xref>.</p><p>WBRT can prolong survival, but most patients survive less than half a year after radiation. It is difficult for many chemotherapeutic agents to reach the focus through the blood&#x02013;brain barrier, leading to poor efficacy <xref rid="cam41306-bib-0013" ref-type="ref">13</xref>. TMZ is a second&#x02010;generation, alkylating agent with antitumor activity in the brain tumor <xref rid="cam41306-bib-0014" ref-type="ref">14</xref>, <xref rid="cam41306-bib-0015" ref-type="ref">15</xref>. The role of chemotherapy for treating brain metastases from NSCLC remains controversial because of its chemical toxicity <xref rid="cam41306-bib-0016" ref-type="ref">16</xref>. Chemotherapy drugs can cross the blood&#x02013;brain barrier, leading to high concentrations in the CNS. Some past experiments indicate that the efficacy of TMZ is enhanced by radiotherapy <xref rid="cam41306-bib-0007" ref-type="ref">7</xref>, <xref rid="cam41306-bib-0016" ref-type="ref">16</xref>. However, the cytotoxic effect of TMZ might be enhanced by its radiosensitization during WBRT in brain metastases. Evidence concerning the efficacy of chemotherapy combined with radiotherapy in patients with brain metastases is accumulating <xref rid="cam41306-bib-0017" ref-type="ref">17</xref>. TMZ can act on various stages of tumor cell division and ultimately promote apoptosis <xref rid="cam41306-bib-0018" ref-type="ref">18</xref>, <xref rid="cam41306-bib-0019" ref-type="ref">19</xref>.</p><p>The important outcome of cancer treatment is overall response rate. According to Figure&#x000a0;<xref rid="cam41306-fig-0004" ref-type="fig">4</xref>, there was a significant difference in the overall response rate in patients treated with WBRT plus TMZ compared with WBRT alone. However, each RCT reported different radiotherapy doses and TMZ dosages. The overall response rate in the combination therapy group was still 1.4 times greater than that in the WBRT group, which indicates the positive effect of the combination therapy <xref rid="cam41306-bib-0020" ref-type="ref">20</xref>. Another important endpoint in oncology research is survival time. However, as each of the included studies did not provide sufficient data, we could not analyze the median survival time using the hazard ratio (HR). From the published articles, we extracted the relevant data for median survival time of the two comparison groups from 10 RCTs (Table&#x000a0;<xref rid="cam41306-tbl-0002" ref-type="table-wrap">2</xref>). Our findings indicate that the combination therapy prolongs the median survival relative to WBRT alone (Table&#x000a0;<xref rid="cam41306-tbl-0001" ref-type="table-wrap">1</xref>). The mechanism of the antitumor activity may be: (1) Chemotherapy drugs can control the development of the primary lesion and metastatic brain lesions; (2) WBRT disrupts the blood&#x02013;brain barrier function, rendering it easier for TMZ to cross the blood&#x02013;brain barrier, thereby improving the curative effect <xref rid="cam41306-bib-0021" ref-type="ref">21</xref>, <xref rid="cam41306-bib-0022" ref-type="ref">22</xref>. Although there were more adverse effects in the combined therapy group, they were resolved using medication <xref rid="cam41306-bib-0023" ref-type="ref">23</xref>, <xref rid="cam41306-bib-0024" ref-type="ref">24</xref>, <xref rid="cam41306-bib-0025" ref-type="ref">25</xref>. The patients did not discontinue the treatment because of the TMZ adverse effects. TMZ mainly causes nausea, vomiting, and fatigue, which most patients can tolerate <xref rid="cam41306-bib-0007" ref-type="ref">7</xref>. These results all prove that WBRT combined with TMZ is effective and safe.</p><p>The meta&#x02010;analysis had several limitations. As shown in Table&#x000a0;<xref rid="cam41306-tbl-0001" ref-type="table-wrap">1</xref>, the meta&#x02010;analysis still analyzed only a limited number of eligible studies and a relatively small number of patients. Of the nine Chinese&#x02010;language RCTs and the three English&#x02010;language RCTs, only four demonstrated random allocation methods such as the envelope method and the random number table, while the remaining studies did not specify the method of randomization. In addition, 11 RCTs did not mention the blinding of participants and personnel (Fig.&#x000a0;<xref rid="cam41306-fig-0002" ref-type="fig">2</xref>). Although the general characteristics of the patients, such as age and Karnofsky performance score (KPS), were roughly the same, the results still involved selection bias. Moreover, as positive results are more likely to be published, publication bias should also be taken into consideration. However, the standard of outcomes including overall response rate, headache, gastrointestinal adverse reactions, and hematologic adverse reactions are objective; therefore, the lack of blinding of observers would not have caused significant bias.</p><p>In conclusion, the currently available evidence shows that WBRT plus TMZ can increase the overall response rate in patients with brain metastases of NSCLC, compared with WBRT alone. TMZ can cause some adverse reactions, which are mostly self&#x02010;limiting and can be controlled with drugs. Large, high&#x02010;quality, double&#x02010;blind trials are needed to confirm the efficiency of WBRT plus TMZ <xref rid="cam41306-bib-0026" ref-type="ref">26</xref>. The optimal mode and dose of radiotherapy and chemotherapy also needs further research.</p></sec><sec id="cam41306-sec-0018"><title>Conflict of Interest</title><p>The authors declare that they have no competing interests.</p></sec><sec id="cam41306-sec-0019"><title>Declaration</title><p>Ethics approval and consent to participate: Not applicable; Consent for publication: Not applicable; Availability of data and material: All data generated or analyzed during this study are included in published article.</p></sec></body><back><ack id="cam41306-sec-0017"><title>Acknowledgments</title><p>We thank the native English&#x02010;speaking scientists of Elixigen Company (Huntington Beach, California) for editing our manuscript.</p></ack><ref-list content-type="cited-references" id="cam41306-bibl-0001"><title>References</title><ref id="cam41306-bib-0001"><label>1</label><mixed-citation publication-type="journal" id="cam41306-cit-0001">
+<string-name>
+<surname>Huang</surname>, <given-names>H.</given-names>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Liu</surname>
+</string-name>, <string-name>
+<given-names>Q.</given-names>
+<surname>Meng</surname>
+</string-name>, and <string-name>
+<given-names>G.</given-names>
+<surname>Niu</surname>
+</string-name>. <year>2015</year>
+<article-title>Multidrug resistance protein and topoisomerase 2 alpha expression in non&#x02010;small cell lung cancer are related with brain metastasis postoperatively</article-title>. <source>Int. J. Clin. Exp. Pathol.</source>
+<volume>8</volume>:<fpage>11537</fpage>&#x02013;<lpage>11542</lpage>.<pub-id pub-id-type="pmid">26617887</pub-id></mixed-citation></ref><ref id="cam41306-bib-0002"><label>2</label><mixed-citation publication-type="journal" id="cam41306-cit-0002">
+<string-name>
+<surname>Bai</surname>, <given-names>G. R.</given-names>
+</string-name>, <string-name>
+<given-names>J. B.</given-names>
+<surname>An</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Chu</surname>
+</string-name>, <string-name>
+<given-names>X. Y.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name>
+<given-names>S. M.</given-names>
+<surname>Li</surname>
+</string-name>, <string-name>
+<given-names>K. J.</given-names>
+<surname>Yan</surname>
+</string-name>, et&#x000a0;al. <year>2016</year>
+<article-title>Comparison of the effectiveness of whole&#x02010;brain radiotherapy plus temozolomide versus whole&#x02010;brain radiotherapy in treating brain metastases based on a systematic review of randomized controlled trials</article-title>. <source>Anticancer Drugs</source>
+<volume>27</volume>:<fpage>1</fpage>&#x02013;<lpage>8</lpage>.<pub-id pub-id-type="pmid">26426520</pub-id></mixed-citation></ref><ref id="cam41306-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="cam41306-cit-0003">
+<string-name>
+<surname>Siena</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>Crino</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Danova</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Del Prete</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Cascinu</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Salvagni</surname>
+</string-name>, et&#x000a0;al. <year>2010</year>
+<article-title>Dose&#x02010;dense temozolomide regimen for the treatment of brain metastases from melanoma, breast cancer, or lung cancer not amenable to surgery or radiosurgery: a multicenter phase II study</article-title>. <source>Ann. Oncol.</source>
+<volume>21</volume>:<fpage>655</fpage>&#x02013;<lpage>661</lpage>.<pub-id pub-id-type="pmid">19767314</pub-id></mixed-citation></ref><ref id="cam41306-bib-0004"><label>4</label><mixed-citation publication-type="journal" id="cam41306-cit-0004">
+<string-name>
+<surname>Athanassiou</surname>, <given-names>H.</given-names>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Synodinou</surname>
+</string-name>, <string-name>
+<given-names>E.</given-names>
+<surname>Maragoudakis</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Paraskevaidis</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Verigos</surname>
+</string-name>, <string-name>
+<given-names>D.</given-names>
+<surname>Misailidou</surname>
+</string-name>, et&#x000a0;al. <year>2005</year>
+<article-title>Randomized phase II study of temozolomide and radiotherapy compared with radiotherapy alone in newly diagnosed glioblastoma multiforme</article-title>. <source>J. Clin. Oncol.</source>
+<volume>23</volume>:<fpage>2372</fpage>&#x02013;<lpage>2377</lpage>.<pub-id pub-id-type="pmid">15800329</pub-id></mixed-citation></ref><ref id="cam41306-bib-0005"><label>5</label><mixed-citation publication-type="journal" id="cam41306-cit-0005">
+<string-name>
+<surname>Ostermann</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Csajka</surname>
+</string-name>, <string-name>
+<given-names>T.</given-names>
+<surname>Buclin</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Leyvraz</surname>
+</string-name>, <string-name>
+<given-names>F.</given-names>
+<surname>Lejeune</surname>
+</string-name>, <string-name>
+<given-names>L. A.</given-names>
+<surname>Decosterd</surname>
+</string-name>, et&#x000a0;al. <year>2004</year>
+<article-title>Plasma and cerebrospinal fluid population pharmacokinetics of temozolomide in malignant glioma patients</article-title>. <source>Clin. Cancer Res.</source>
+<volume>10</volume>:<fpage>3728</fpage>&#x02013;<lpage>3736</lpage>.<pub-id pub-id-type="pmid">15173079</pub-id></mixed-citation></ref><ref id="cam41306-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="cam41306-cit-0006">
+<string-name>
+<surname>Chua</surname>, <given-names>D.</given-names>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Krzakowski</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Chouaid</surname>
+</string-name>, <string-name>
+<given-names>M. G.</given-names>
+<surname>Pallotta</surname>
+</string-name>, <string-name>
+<given-names>J. I.</given-names>
+<surname>Martinez</surname>
+</string-name>, <string-name>
+<given-names>M.</given-names>
+<surname>Gottfried</surname>
+</string-name>, et&#x000a0;al. <year>2010</year>
+<article-title>Whole&#x02010;brain radiation therapy plus concomitant temozolomide for the treatment of brain metastases from non&#x02010;small&#x02010;cell lung cancer: a randomized, open&#x02010;label phase II study</article-title>. <source>Clin. Lung Cancer</source>
+<volume>11</volume>:<fpage>176</fpage>&#x02013;<lpage>181</lpage>.<pub-id pub-id-type="pmid">20439193</pub-id></mixed-citation></ref><ref id="cam41306-bib-0007"><label>7</label><mixed-citation publication-type="journal" id="cam41306-cit-0007">
+<string-name>
+<surname>Li</surname>, <given-names>Doudou</given-names>
+</string-name>, <string-name>
+<given-names>Zhuofei</given-names>
+<surname>Bi</surname>
+</string-name>, <string-name>
+<given-names>Yanhui</given-names>
+<surname>Jiang</surname>
+</string-name>, and <string-name>
+<given-names>Yimin</given-names>
+<surname>Liu</surname>
+</string-name>. <year>2015</year>
+<article-title>Effect of whole brain radiotherapy combined with temozolomide in the treatment of brain metastasis of non&#x02010;small cell lung cancer</article-title>. <source>Guangdong Med. J.</source>
+<volume>36</volume>:<fpage>1534</fpage>&#x02013;<lpage>1536</lpage>.</mixed-citation></ref><ref id="cam41306-bib-0008"><label>8</label><mixed-citation publication-type="miscellaneous" id="cam41306-cit-0008">
+<string-name>
+<surname>Higgins</surname>, <given-names>J. P. T.</given-names>
+</string-name>
+<string-name>
+<given-names>S.</given-names>
+<surname>Green</surname>
+</string-name> (eds). <article-title>Cochrane handbook for systematic reviews of interventions version 5.0.0 (updated February 2008) [EB/OL]</article-title>. [2008&#x02010;07&#x02010;7]. <ext-link ext-link-type="uri" xlink:href="http://www.cochran">http://www.cochran</ext-link> ehandbook.</mixed-citation></ref><ref id="cam41306-bib-0009"><label>9</label><mixed-citation publication-type="journal" id="cam41306-cit-0009">
+<string-name>
+<surname>Ioannidis</surname>, <given-names>J. P.</given-names>
+</string-name>, and <string-name>
+<given-names>N. A.</given-names>
+<surname>Patsopoulos</surname>
+</string-name>. <year>2007</year>
+<article-title>Uncertainty in heterogeneity estimates in meta&#x02010;analyses</article-title>. <source>BMJ</source>
+<volume>335</volume>:<fpage>914</fpage>&#x02013;<lpage>916</lpage>.<pub-id pub-id-type="pmid">17974687</pub-id></mixed-citation></ref><ref id="cam41306-bib-0010"><label>10</label><mixed-citation publication-type="journal" id="cam41306-cit-0010">
+<string-name>
+<surname>Addeo</surname>, <given-names>R.</given-names>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>De Rosa</surname>
+</string-name>, <string-name>
+<given-names>V.</given-names>
+<surname>Faiola</surname>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>Leo</surname>
+</string-name>, <string-name>
+<given-names>G.</given-names>
+<surname>Cennamo</surname>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>Montella</surname>
+</string-name>, et&#x000a0;al. <year>2008</year>
+<article-title>Phase 2 trial of temozolomide using protracted low&#x02010;dose and whole&#x02010;brain radiotherapy for nonsmall cell lung cancer and breast cancer patients with brain metastases</article-title>. <source>Cancer</source>
+<volume>113</volume>:<fpage>2524</fpage>&#x02013;<lpage>2531</lpage>.<pub-id pub-id-type="pmid">18798231</pub-id></mixed-citation></ref><ref id="cam41306-bib-0011"><label>11</label><mixed-citation publication-type="journal" id="cam41306-cit-0011">
+<string-name>
+<surname>Cortot</surname>, <given-names>A. B.</given-names>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>Geriniere</surname>
+</string-name>, <string-name>
+<given-names>G.</given-names>
+<surname>Robinet</surname>
+</string-name>, <string-name>
+<given-names>J. L.</given-names>
+<surname>Breton</surname>
+</string-name>, <string-name>
+<given-names>R.</given-names>
+<surname>Corre</surname>
+</string-name>, <string-name>
+<given-names>L.</given-names>
+<surname>Falchero</surname>
+</string-name>, et&#x000a0;al. <year>2006</year>
+<article-title>Phase II trial of temozolomide and cisplatin followed by whole brain radiotherapy in non&#x02010;small&#x02010;cell lung cancer patients with brain metastases: a GLOT&#x02010;GFPC study</article-title>. <source>Ann. Oncol.</source>
+<volume>17</volume>:<fpage>1412</fpage>&#x02013;<lpage>1417</lpage>.<pub-id pub-id-type="pmid">16790516</pub-id></mixed-citation></ref><ref id="cam41306-bib-0012"><label>12</label><mixed-citation publication-type="journal" id="cam41306-cit-0012">
+<string-name>
+<surname>Dziadziuszko</surname>, <given-names>R.</given-names>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Ardizzoni</surname>
+</string-name>, <string-name>
+<given-names>P. E.</given-names>
+<surname>Postmus</surname>
+</string-name>, <string-name>
+<given-names>E. F.</given-names>
+<surname>Smit</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Price</surname>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Debruyne</surname>
+</string-name>, et&#x000a0;al. <year>2003</year>
+<article-title>Temozolomide in patients with advanced non&#x02010;small cell lung cancer with and without brain metastases: a phase II study of the EORTC Lung Cancer Group (08965)</article-title>. <source>Eur. J. Cancer</source>
+<volume>39</volume>:<fpage>1271</fpage>&#x02013;<lpage>1276</lpage>.<pub-id pub-id-type="pmid">12763216</pub-id></mixed-citation></ref><ref id="cam41306-bib-0013"><label>13</label><mixed-citation publication-type="journal" id="cam41306-cit-0013">
+<string-name>
+<surname>Zhao</surname>, <given-names>S. J.</given-names>
+</string-name>
+<year>2016</year>
+<article-title>Clinical efficacy of Temozolomide Combined with whole brain radiotherapy in the treatment of non small cell lung cancer with brain metastasis</article-title>. <source>Chin J Clin Rational Drug Use</source>
+<volume>9</volume>:<fpage>102</fpage>&#x02013;<lpage>103</lpage>.</mixed-citation></ref><ref id="cam41306-bib-0014"><label>14</label><mixed-citation publication-type="journal" id="cam41306-cit-0014">
+<string-name>
+<surname>Minniti</surname>, <given-names>G.</given-names>
+</string-name>, <string-name>
+<given-names>C.</given-names>
+<surname>Scaringi</surname>
+</string-name>, <string-name>
+<given-names>G.</given-names>
+<surname>Lanzetta</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Bozzao</surname>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Romano</surname>
+</string-name>, <string-name>
+<given-names>V.</given-names>
+<surname>De Sanctis</surname>
+</string-name>, et&#x000a0;al. <year>2014</year>
+<article-title>Whole brain reirradiation and concurrent temozolomide in patients with brain metastases</article-title>. <source>J. Neurooncol.</source>
+<volume>118</volume>:<fpage>329</fpage>&#x02013;<lpage>334</lpage>.<pub-id pub-id-type="pmid">24718862</pub-id></mixed-citation></ref><ref id="cam41306-bib-0015"><label>15</label><mixed-citation publication-type="journal" id="cam41306-cit-0015">
+<string-name>
+<surname>Kouvaris</surname>, <given-names>J. R.</given-names>
+</string-name>, <string-name>
+<given-names>A.</given-names>
+<surname>Miliadou</surname>
+</string-name>, <string-name>
+<given-names>V. E.</given-names>
+<surname>Kouloulias</surname>
+</string-name>, <string-name>
+<given-names>D.</given-names>
+<surname>Kolokouris</surname>
+</string-name>, <string-name>
+<given-names>M. J.</given-names>
+<surname>Balafouta</surname>
+</string-name>, <string-name>
+<given-names>X. N.</given-names>
+<surname>Papacharalampous</surname>
+</string-name>, et&#x000a0;al. <year>2007</year>
+<article-title>Phase II study of temozolomide and concomitant whole&#x02010;brain radiotherapy in patients with brain metastases from solid tumors</article-title>. <source>Onkologie</source>
+<volume>30</volume>:<fpage>361</fpage>&#x02013;<lpage>366</lpage>.<pub-id pub-id-type="pmid">17596744</pub-id></mixed-citation></ref><ref id="cam41306-bib-0016"><label>16</label><mixed-citation publication-type="journal" id="cam41306-cit-0016">
+<string-name>
+<surname>Hassler</surname>, <given-names>M. R.</given-names>
+</string-name>, <string-name>
+<given-names>W.</given-names>
+<surname>Pfeifer</surname>
+</string-name>, <string-name>
+<given-names>T. H.</given-names>
+<surname>Knocke&#x02010;Abulesz</surname>
+</string-name>, <string-name>
+<given-names>K.</given-names>
+<surname>Geissler</surname>
+</string-name>, <string-name>
+<given-names>G.</given-names>
+<surname>Altorjai</surname>
+</string-name>, <string-name>
+<given-names>K.</given-names>
+<surname>Dieckmann</surname>
+</string-name>, et&#x000a0;al. <year>2013</year>
+<article-title>Temozolomide added to whole brain radiotherapy in patients with multiple brain metastases of non&#x02010;small&#x02010;cell lung cancer: a multicentric Austrian phase II study</article-title>. <source>Wien. Klin. Wochenschr.</source>
+<volume>125</volume>:<fpage>481</fpage>&#x02013;<lpage>486</lpage>.<pub-id pub-id-type="pmid">23907204</pub-id></mixed-citation></ref><ref id="cam41306-bib-0017"><label>17</label><mixed-citation publication-type="journal" id="cam41306-cit-0017">
+<string-name>
+<surname>Zhao</surname>, <given-names>Q.</given-names>
+</string-name>, <string-name>
+<given-names>Q.</given-names>
+<surname>Qin</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Sun</surname>
+</string-name>, <string-name>
+<given-names>D.</given-names>
+<surname>Han</surname>
+</string-name>, <string-name>
+<given-names>Z.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name>
+<given-names>J.</given-names>
+<surname>Teng</surname>
+</string-name>, et&#x000a0;al. <year>2016</year>
+<article-title>Brain radiotherapy plus concurrent temozolomide versus radiotherapy alone for patients with brain metastases: a meta&#x02010;analysis</article-title>. <source>PLoS ONE</source>
+<volume>11</volume>:<fpage>e0150419</fpage>.<pub-id pub-id-type="pmid">26930609</pub-id></mixed-citation></ref><ref id="cam41306-bib-0018"><label>18</label><mixed-citation publication-type="journal" id="cam41306-cit-0018">
+<string-name>
+<surname>Xie</surname>, <given-names>J. Y.</given-names>
+</string-name>, <string-name>
+<given-names>D. B.</given-names>
+<surname>Xiang</surname>
+</string-name>, <string-name>
+<given-names>G.</given-names>
+<surname>Wang</surname>
+</string-name>, <string-name>
+<given-names>Z. Z.</given-names>
+<surname>Yang</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>Li</surname>
+</string-name>, <string-name>
+<given-names>X.</given-names>
+<surname>Yu</surname>
+</string-name>, et&#x000a0;al. <year>2007</year>
+<article-title>Temozolomide Combined with whole brain radiotherapy for brain metastases from non&#x02010;small cell lung cancer clinical research</article-title>. <source>Chongqing Med.</source>
+<volume>36</volume>:<fpage>1941</fpage>&#x02013;<lpage>1942</lpage>.</mixed-citation></ref><ref id="cam41306-bib-0019"><label>19</label><mixed-citation publication-type="journal" id="cam41306-cit-0019">
+<string-name>
+<surname>Cheng</surname>, <given-names>W.</given-names>
+</string-name>, <string-name>
+<given-names>L. F.</given-names>
+<surname>Zhang</surname>
+</string-name>, and <string-name>
+<given-names>N.</given-names>
+<surname>Xiao</surname>
+</string-name>. <year>2013</year>
+<article-title>Efficacy of Temozolomide Combined with radiotherapy for non&#x02010;small cell lung cancer with brain metastasis</article-title>. <source>Hebei Med. J.</source>
+<volume>35</volume>:<fpage>2307</fpage>&#x02013;<lpage>2308</lpage>.</mixed-citation></ref><ref id="cam41306-bib-0020"><label>20</label><mixed-citation publication-type="journal" id="cam41306-cit-0020">
+<string-name>
+<surname>Liao</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<given-names>Z. F.</given-names>
+<surname>Bi</surname>
+</string-name>, <string-name>
+<given-names>Y.</given-names>
+<surname>He</surname>
+</string-name>, and <string-name>
+<given-names>Y. M.</given-names>
+<surname>Liu</surname>
+</string-name>. <year>2012</year>
+<article-title>Whole brain radiation therapy plus temozolomide in the treatment of brain metastases from non small cell lung cancer: a meta&#x02010;analysis</article-title>. <source>Zhonghua Yi Xue Za Zhi</source>
+<volume>92</volume>:<fpage>3199</fpage>&#x02013;<lpage>3203</lpage>.<pub-id pub-id-type="pmid">23328466</pub-id></mixed-citation></ref><ref id="cam41306-bib-0021"><label>21</label><mixed-citation publication-type="journal" id="cam41306-cit-0021">
+<string-name>
+<surname>Shi</surname>, <given-names>L.</given-names>
+</string-name>, <string-name>
+<given-names>J. L.</given-names>
+<surname>Xi</surname>
+</string-name>, and <string-name>
+<given-names>W.</given-names>
+<surname>Zeng</surname>
+</string-name>. <year>2014</year>
+<article-title>Temozolomide Combined with radiation therapy of non&#x02010;small cell lung cancer with brain metastases efficacy</article-title>. <source>Mod. J. Integ. Trad. Chin. Western Med.</source>
+<volume>23</volume>:<fpage>3002</fpage>&#x02013;<lpage>3003</lpage>.</mixed-citation></ref><ref id="cam41306-bib-0022"><label>22</label><mixed-citation publication-type="journal" id="cam41306-cit-0022">
+<string-name>
+<surname>Li</surname>, <given-names>G.</given-names>
+</string-name>
+<year>2017</year>
+<article-title>Comparative analysis of Temozolomide Combined with whole brain radiotherapy in patients with brain metastases from non&#x02010; small cell lung cancer</article-title>. <source>Front. Med.</source>
+<volume>7</volume>:<fpage>153</fpage>&#x02013;<lpage>154</lpage>.</mixed-citation></ref><ref id="cam41306-bib-0023"><label>23</label><mixed-citation publication-type="journal" id="cam41306-cit-0023">
+<string-name>
+<surname>Yong Peng</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<given-names>J. L.</given-names>
+<surname>Zeng</surname>
+</string-name>, <string-name>
+<given-names>Z. W.</given-names>
+<surname>Zhu</surname>
+</string-name>, <string-name>
+<given-names>M. W.</given-names>
+<surname>Chen</surname>
+</string-name>, and <string-name>
+<given-names>Z. Q.</given-names>
+<surname>Zhang</surname>
+</string-name>. <year>2008</year>
+<article-title>Oral temozolomide concurrent radiotherapy treatment of non&#x02010;small cell lung cancer with brain metastasis</article-title>. <source>Eval. Pract. Clin. Med.</source>
+<volume>9</volume>:<fpage>37</fpage>&#x02013;<lpage>38</lpage>.</mixed-citation></ref><ref id="cam41306-bib-0024"><label>24</label><mixed-citation publication-type="journal" id="cam41306-cit-0024">
+<string-name>
+<surname>Fei</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<given-names>G.</given-names>
+<surname>Cui</surname>
+</string-name>, <string-name>
+<given-names>H.</given-names>
+<surname>Shi</surname>
+</string-name>, et&#x000a0;al. <year>2017</year>
+<article-title>Clinical observation of radiotherapy combined with temozolomide in the treatment of brain metastasis of non&#x02010;small cell lung cancer</article-title>. <source>J. Int. Oncol.</source>
+<volume>44</volume>:<fpage>271</fpage>&#x02013;<lpage>273</lpage>.</mixed-citation></ref><ref id="cam41306-bib-0025"><label>25</label><mixed-citation publication-type="journal" id="cam41306-cit-0025">
+<string-name>
+<surname>Deng</surname>, <given-names>X.</given-names>
+</string-name>, <string-name>
+<given-names>Z.</given-names>
+<surname>Zheng</surname>
+</string-name>, <string-name>
+<given-names>B.</given-names>
+<surname>Lin</surname>
+</string-name>, <string-name>
+<given-names>H.</given-names>
+<surname>Su</surname>
+</string-name>, <string-name>
+<given-names>H.</given-names>
+<surname>Chen</surname>
+</string-name>, <string-name>
+<given-names>S.</given-names>
+<surname>Fei</surname>
+</string-name>, et&#x000a0;al. <year>2017</year>
+<article-title>The efficacy and roles of combining temozolomide with whole brain radiotherapy in protection neurocognitive function and improvement quality of life of non&#x02010;small&#x02010;cell lung cancer patients with brain metastases</article-title>. <source>BMC Cancer</source>
+<volume>17</volume>:<fpage>42</fpage>.<pub-id pub-id-type="pmid">28068937</pub-id></mixed-citation></ref><ref id="cam41306-bib-0026"><label>26</label><mixed-citation publication-type="journal" id="cam41306-cit-0026">
+<string-name>
+<surname>Tian&#x02010;lu</surname>, <given-names>G.</given-names>
+</string-name>
+<year>2015</year>
+<article-title>A randomized controlled study of Temozolomide Combined with whole brain radiotherapy for brain metastases from non&#x02010;small cell lung cancer</article-title>. <source>Mod. Instrum. Med</source>
+<volume>21</volume>:<fpage>36</fpage>&#x02013;<lpage>38</lpage>.</mixed-citation></ref></ref-list></back></article>

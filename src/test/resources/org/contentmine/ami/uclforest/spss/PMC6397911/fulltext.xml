@@ -1,0 +1,391 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.1 20151215//EN" "JATS-archivearticle1.dtd"> 
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Archiving and Interchange DTD v3.0 20080202//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName archivearticle3.dtd?><?SourceDTD.Version 3.0?><?ConverterInfo.XSLTName jp2nlmx2.xsl?><?ConverterInfo.Version 1?><front><journal-meta><journal-id journal-id-type="nlm-ta">Thorac Cancer</journal-id><journal-id journal-id-type="iso-abbrev">Thorac Cancer</journal-id><journal-id journal-id-type="doi">10.1111/(ISSN)1759-7714</journal-id><journal-id journal-id-type="publisher-id">TCA</journal-id><journal-title-group><journal-title>Thoracic Cancer</journal-title></journal-title-group><issn pub-type="ppub">1759-7706</issn><issn pub-type="epub">1759-7714</issn><publisher><publisher-name>John Wiley &#x00026; Sons Australia, Ltd</publisher-name><publisher-loc>Melbourne</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">6397911</article-id><article-id pub-id-type="doi">10.1111/1759-7714.12973</article-id><article-id pub-id-type="publisher-id">TCA12973</article-id><article-categories><subj-group subj-group-type="overline"><subject>Original Article</subject></subj-group><subj-group subj-group-type="heading"><subject>Original Articles</subject></subj-group></article-categories><title-group><article-title>Efficacy of radiofrequency ablation and microwave ablation in the treatment of thoracic cancer: A systematic review and meta&#x02010;analysis</article-title><alt-title alt-title-type="right-running-head">Comparison of RFA and MWA for thoracic cancer</alt-title><alt-title alt-title-type="left-running-head">Y.&#x02010;d. Sun <italic>et al.</italic></alt-title></title-group><contrib-group><contrib id="tca12973-cr-0001" contrib-type="author"><name><surname>Sun</surname><given-names>Yuan&#x02010;dong</given-names></name><xref ref-type="aff" rid="tca12973-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="tca12973-cr-0002" contrib-type="author"><name><surname>Zhang</surname><given-names>Hao</given-names></name><xref ref-type="aff" rid="tca12973-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="tca12973-cr-0003" contrib-type="author"><name><surname>Liu</surname><given-names>Jing&#x02010;zhou</given-names></name><xref ref-type="aff" rid="tca12973-aff-0002">
+<sup>2</sup>
+</xref></contrib><contrib id="tca12973-cr-0004" contrib-type="author"><name><surname>Xu</surname><given-names>Hui&#x02010;rong</given-names></name><xref ref-type="aff" rid="tca12973-aff-0003">
+<sup>3</sup>
+</xref></contrib><contrib id="tca12973-cr-0005" contrib-type="author"><name><surname>Wu</surname><given-names>Hui&#x02010;yong</given-names></name><xref ref-type="aff" rid="tca12973-aff-0002">
+<sup>2</sup>
+</xref></contrib><contrib id="tca12973-cr-0006" contrib-type="author"><name><surname>Zhai</surname><given-names>Hui&#x02010;zhuan</given-names></name><xref ref-type="aff" rid="tca12973-aff-0002">
+<sup>2</sup>
+</xref></contrib><contrib id="tca12973-cr-0007" contrib-type="author"><name><surname>Lu</surname><given-names>Chang&#x02010;yan</given-names></name><xref ref-type="aff" rid="tca12973-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="tca12973-cr-0008" contrib-type="author"><name><surname>Zhao</surname><given-names>Xia</given-names></name><xref ref-type="aff" rid="tca12973-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="tca12973-cr-0009" contrib-type="author"><name><surname>Chen</surname><given-names>Ye&#x02010;qiang</given-names></name><xref ref-type="aff" rid="tca12973-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="tca12973-cr-0010" contrib-type="author"><name><surname>Zhou</surname><given-names>Lin&#x02010;lin</given-names></name><xref ref-type="aff" rid="tca12973-aff-0001">
+<sup>1</sup>
+</xref></contrib><contrib id="tca12973-cr-0011" contrib-type="author" corresp="yes"><name><surname>Han</surname><given-names>Jian&#x02010;Jun</given-names></name><contrib-id contrib-id-type="orcid">https://orcid.org/0000-0001-9675-3354</contrib-id><address><email>jieruheweichuang@163.com</email></address><xref ref-type="aff" rid="tca12973-aff-0003">
+<sup>3</sup>
+</xref></contrib></contrib-group><aff id="tca12973-aff-0001">
+<label><sup>1</sup></label>
+<named-content content-type="organisation-division">School of Medicine and Life Sciences</named-content>
+<institution>Affiliated to University of Ji'nan&#x02010;Shandong Academy of Medical Sciences</institution>
+<named-content content-type="city">Jinan</named-content>
+<country country="CN">China</country>
+</aff><aff id="tca12973-aff-0002" content-type="private-address">
+<label><sup>2</sup></label>
+<institution>Shandong Tumor Hospital Affiliated to Shandong University</institution>
+<named-content content-type="city">Jinan</named-content>
+<country country="CN">China</country>
+</aff><aff id="tca12973-aff-0003">
+<label><sup>3</sup></label>
+<named-content content-type="organisation-division">Invasive Technology Department</named-content>
+<institution>Shandong Tumor Hospital Affiliated to Shandong University</institution>
+<named-content content-type="city">Jinan</named-content>
+<country country="CN">China</country>
+</aff><author-notes><corresp id="correspondenceTo"><label>*</label><bold>Correspondence</bold><break/>
+Jian&#x02010;Jun Han, Invasive Technology Department, Shandong Tumor Hospital Affiliated to Shandong University, No. 440, Jiyu Road, Jinan, Shandong Province, Jinan, Shandong 250117, China.<break/>
+Tel: +86 531 6762 6837<break/>
+Fax: +86 531 6762 6837<break/><email>jieruheweichuang@163.com</email><break/></corresp></author-notes><pub-date pub-type="epub"><day>24</day><month>1</month><year>2019</year></pub-date><pub-date pub-type="ppub"><month>3</month><year>2019</year></pub-date><volume>10</volume><issue>3</issue><issue-id pub-id-type="doi">10.1111/tca.2019.10.issue-3</issue-id><fpage>543</fpage><lpage>550</lpage><history><date date-type="received"><day>13</day><month>10</month><year>2018</year></date><date date-type="rev-recd"><day>20</day><month>12</month><year>2018</year></date><date date-type="accepted"><day>20</day><month>12</month><year>2018</year></date></history><permissions><!--<copyright-statement content-type="issue-copyright"> &#x000a9; 2019 China Lung Oncology Group and John Wiley & Sons Australia, Ltd <copyright-statement>--><copyright-statement content-type="article-copyright">&#x000a9; 2019 The Authors. Thoracic Cancer published by China Lung Oncology Group and John Wiley &#x00026; Sons Australia, Ltd</copyright-statement><license license-type="creativeCommonsBy-nc"><license-p>This is an open access article under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc/4.0/">http://creativecommons.org/licenses/by-nc/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited and is not used for commercial purposes.</license-p></license></permissions><self-uri content-type="pdf" xlink:type="simple" xlink:href="file:TCA-10-543.pdf"/><abstract><sec id="tca12973-sec-0001"><title>Background</title><p>Radiofrequency ablation and microwave ablation are frequently prescribed for thoracic cancer. However, few writers have been able to draw on any systematic research into the differences between the two ablation methods.</p></sec><sec id="tca12973-sec-0002"><title>Methods</title><p>A literature search was carried out using Embase, PUBMED, Web of Science, Cochrane Library, and CNKI databases, with additional searches carried out manually using terms associated with thoracic cancer and thermal ablation. Then we used Google Scholar for a complementary search. Data were extracted from studies of patients that underwent radiofrequency ablation or microwave ablation, and the investigator carried out efficacy evaluation and follow up. The data obtained from the literature were summarized and analyzed using Cochrane Revman software Version 5.3 and SPSS 22.0.</p></sec><sec id="tca12973-sec-0003"><title>Results</title><p>There were seven comparative studies, but no randomized studies identified for data extraction; 246 patients received radiofrequency ablation therapy and 319 controls received microwave ablation. There was no significant difference in the six&#x02010;month, one&#x02010;year, two&#x02010;year, and three&#x02010;year survival rates, and adverse reactions were found in the two treatments. For patients&#x02019; long&#x02010;term survival rate, the two treatments can achieve a similar survival time.</p></sec><sec id="tca12973-sec-0004"><title>Conclusion</title><p>In the treatment of thoracic cancer, microwave ablation can achieve the same efficacy as radiofrequency ablation.</p></sec></abstract><kwd-group kwd-group-type="author-generated"><kwd id="tca12973-kwd-0001">Microwave ablation</kwd><kwd id="tca12973-kwd-0002">overall survival</kwd><kwd id="tca12973-kwd-0003">pulmonary tumor</kwd><kwd id="tca12973-kwd-0004">radiofrequency ablation</kwd><kwd id="tca12973-kwd-0005">thoracic cancer</kwd></kwd-group><funding-group><award-group><funding-source>Natural Science Foundation of Shandong Province</funding-source><award-id>ZR2017MH095</award-id></award-group></funding-group><counts><fig-count count="4"/><table-count count="3"/><page-count count="8"/><word-count count="4314"/></counts><custom-meta-group><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>component-id</meta-name><meta-value>tca12973</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>March 2019</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_NLMPMC version:5.6.1 mode:remove_FC converted:04.03.2019</meta-value></custom-meta></custom-meta-group></article-meta></front><body><sec id="tca12973-sec-0005"><title>Introduction</title><p>Thoracic cancer includes lung cancer, lung metastasis, esophageal cancer, mediastinal tumor, bone tumors, and breast cancer. It is the most diagnosed cancer and the leading cause of cancer death.<xref rid="tca12973-bib-0001" ref-type="ref">1</xref> Clinicians can use surgery, radiotherapy, chemotherapy, and interventional treatment according to neoplasm staging and the clinical characteristics of the patient. Palussi&#x000e8;re pointed out that thermal ablation is highly suitable for locoregional therapy of thoracic cancer due to the thermal insulation of air.<xref rid="tca12973-bib-0002" ref-type="ref">2</xref> Ablation technology is an important component of the anticancer therapy system and plays a key role in interventional therapy. Thermal ablation, as a small trauma and restores rapid therapy, has great potential in the treatment of thoracic cancer and is frequently prescribed for combined treatment.<xref rid="tca12973-bib-0003" ref-type="ref">3</xref>, <xref rid="tca12973-bib-0004" ref-type="ref">4</xref> Ablation technology means a series of methods that cause coagulation and necrosis of tumor tissues by heating them.<xref rid="tca12973-bib-0005" ref-type="ref">5</xref> In particular, ablation therapy microwave ablation (MWA) can quickly relieve symptoms, improve the quality of life, and prolong survival time. Radiofrequency ablation (RFA) is generally considered to be one of the primary treatments for patients who are unsuitable for surgery or radiation therapy,<xref rid="tca12973-bib-0006" ref-type="ref">6</xref> and it can also be used to treat locally recurrent lesions after radiotherapy or limited surgery. As a classic method of ablation, it had been widely used for liver cancer,<xref rid="tca12973-bib-0007" ref-type="ref">7</xref> lung cancer, and bone metastases.<xref rid="tca12973-bib-0008" ref-type="ref">8</xref> Like RFA, MWA is an emerging ablation technology that has shown the advantages of short operation time, high power, and complete ablation.<xref rid="tca12973-bib-0009" ref-type="ref">9</xref> However, minimally invasive treatment of the tumor is full of unknowns. Extrapolation of these data to thoracic tumor is controversial. A much&#x02010;debated question is whether the benefits of several ablation methods for thoracic cancer are equal. To date there has been little agreement on this issue. Research on the subject has been mostly restricted to limited comparisons of a small scale. Finding the answers to questions requires more and more evidence to confirm.</p><p>Here in, information and databases were examined to provide the systematically analyzed results for the efficacy and safety of thermal ablation, aiming to provide further information to guide practice for the application of anticancer therapy in thoracic cancer. The specific objective of the present study was to investigate the differences between RFA and MWA. Our review focused on evaluating the difference in the overall survival (OS) rate and safety of thoracic cancer.</p></sec><sec id="tca12973-sec-0006"><title>Methods</title><p>We carried out this systematic literature review and meta&#x02010;analysis according to the Preferred Reporting of Systematic Reviews and Meta&#x02010;Analyses (PRISMA) recommendations. The primary research objective was to determine whether there is a significant difference in survival rate with RFA and MWA. The secondary objective was to determine which techniques have higher therapeutic safety.</p><sec id="tca12973-sec-0007"><title>Publication searches</title><p>A systematic literature search was carried out using Embase, PUBMED, Web of Science, Cochrane Library, and CNKI databases from inception to August 2018 including the terms: thoracic cancer, lung cancer, pulmonary tumor, radiofrequency ablation, microwave ablation, OS, and tumor interventional therapy. Then the researchers used Google Scholar for a supplementary search.</p><p>Relevant studies were identified sequentially by abstract scanning and full&#x02010;text browsing by three reviewers (Sun, Zhang, and Xu). All uncertainties and differences were resolved by consensus by re&#x02010;checking sources, and the conformity of data to the inclusion and exclusion criteria for this study.</p></sec><sec id="tca12973-sec-0008"><title>Exclusion criteria and quality evaluation</title><p>The criteria for inclusion of studies were as follows: (i) prospective or retrospective articles without ethical issues; (ii) the research content is consistent with our research topic; (iii) evaluate patient pain through internationally accepted pain scoring criteria (such as visual analog scale/score, numeric rating scales, verbal rating scales); and (iv) the required data results should be reported from the article or can be derived.</p><p>Exclusion criteria were as follows: (i) reviews, editorials, case reports, conference abstracts, and letters; (ii) the data contained in the article is duplicated; (iii) studies using animal models (such as swine and rabbit) or unrelated studies to the objectives of our analysis; (iv) missing data or insufficient data; and (v) when the same study was reported twice, we extracted data from the most recent study with the largest sample size for relevant results.</p><p>The methodological quality of the included studies was assessed using the six evaluation indicators on which three consequences of each eligible study were evaluated: &#x0201c;yes&#x0201d;, &#x0201c;no,&#x0201d; and &#x0201c;not clear&#x0201d;.</p><p>A study can be given a maximum of 1&#x02009;point for each item. Quality of bias assessment of the included studies is shown in the table <xref rid="tca12973-tbl-0002" ref-type="table">2</xref>.</p></sec><sec id="tca12973-sec-0009"><title>Data extraction</title><p>Reviewers (ZHANG, LIU, and SUN) independently extracted study characteristics from eligible publications by a standardized data extraction form. These were summarized in an orderly manner to facilitate comparison.</p><p>The following information was gathered from eligible articles: name of first author, year of publication, country of location of the patient, and number of patients. Patients&#x02019; detailed data included age, gender, primary or metastatic tumor, tumor size, disease stage, and therapies.</p></sec><sec id="tca12973-sec-0010"><title>Statistical analysis</title><p>The study was carried out in the form of a survey, with data being gathered through RevMan 5.3 (for Windows; Cochrane Community, Oxford, UK) and SPSS 22.0 (for Windows; IBM, Armonk, NY, USA) and results reflected through forest plots. Given that survival analysis has dichotomous outcomes, cumulative rates were calculated summing up the results gained in each study. For both the RFA and MWA arm, the number of patients&#x02019; survival (six&#x02009;months, one&#x02009;year, two&#x02009;years, and three&#x02009;years) was extracted from each article.</p><p>Data were pooled using odds ratios. A fixed effects model was used. Statistical heterogeneity between studies was examined utilizing the &#x003c7;<sup>2</sup>&#x02010;test and the <italic>I</italic>
+<sup>2</sup> statistic. Cochrane stipulates that 0&#x02013;40% is mild heterogeneity; 40&#x02013;60% is moderate heterogeneity; 50&#x02013;90% is relatively heterogeneous; and 75&#x02013;100% is highly heterogeneous.</p></sec></sec><sec id="tca12973-sec-0011"><title>Results</title><sec id="tca12973-sec-0012"><title>Search of literature</title><p>An outline of how data searches and selection of studies were executed is shown in a flow diagram (Fig <xref rid="tca12973-fig-0001" ref-type="fig">1</xref>). The database search yielded 275 studies, out of which 141 studies were excluded based on the inclusion eligibility after scanning titles and abstracts of studies. The further perusing of the full&#x02010;text of the remaining 71 articles resulted in the selection of seven studies for meta&#x02010;analysis. The remaining studies were excluded because there were not enough data presented to enable extraction for prognostic studies.</p><fig fig-type="Figure" xml:lang="en" id="tca12973-fig-0001" orientation="portrait" position="float"><label>Figure 1</label><caption><p>Flow diagram.</p></caption><graphic id="nlm-graphic-1" xlink:href="TCA-10-543-g002"/></fig><p>Eventually, seven eligible studies containing 565 patients (one patient was lost in the result of Maxwell <italic>et al.</italic> 2016.) that presented outcome data stratified by the OS rate amongst patients in five countries were used in this meta&#x02010;analysis.<xref rid="tca12973-bib-0010" ref-type="ref">10</xref>, <xref rid="tca12973-bib-0011" ref-type="ref">11</xref>, <xref rid="tca12973-bib-0012" ref-type="ref">12</xref>, <xref rid="tca12973-bib-0013" ref-type="ref">13</xref>, <xref rid="tca12973-bib-0014" ref-type="ref">14</xref>, <xref rid="tca12973-bib-0015" ref-type="ref">15</xref>, <xref rid="tca12973-bib-0016" ref-type="ref">16</xref> A total of 246 patients (43.54%) were receiving RFA therapy and 319 (56.46%) controls were receiving MWA. The studies included patients with primary and metastatic tumors, covering stages 1&#x02013;4, with 376 (66.43%) men and 190 (33.57%) women. All specific information is in Table <xref rid="tca12973-tbl-0001" ref-type="table">1</xref>.</p><table-wrap id="tca12973-tbl-0001" xml:lang="en" orientation="portrait" position="float"><label>Table 1</label><caption><p>Characteristics of the eligible trials</p></caption><table frame="hsides" rules="groups"><col align="left" span="1"/><col align="char" char="." span="1"/><col align="left" span="1"/><col align="char" char="." span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/><thead valign="bottom"><tr><th colspan="4" align="left" valign="bottom" rowspan="1"/><th colspan="2" style="border-bottom:solid 1px #000000" align="center" valign="bottom" rowspan="1">Mean age</th><th colspan="2" style="border-bottom:solid 1px #000000" align="char" valign="bottom" rowspan="1">Gender</th><th align="left" valign="bottom" rowspan="1" colspan="1"/><th align="center" valign="bottom" rowspan="1" colspan="1"/><th colspan="2" style="border-bottom:solid 1px #000000" align="center" valign="bottom" rowspan="1">Stage</th><th colspan="2" style="border-bottom:solid 1px #000000" align="char" valign="bottom" rowspan="1">Therapies</th></tr><tr style="border-bottom:solid 1px #000000"><th style="border-bottom:solid 1px #000000" align="left" valign="bottom" rowspan="1" colspan="1">Author</th><th align="center" style="border-bottom:solid 1px #000000" valign="bottom" rowspan="1" colspan="1">Year</th><th align="center" style="border-bottom:solid 1px #000000" valign="bottom" rowspan="1" colspan="1">Country</th><th align="center" style="border-bottom:solid 1px #000000" valign="bottom" rowspan="1" colspan="1">No. patients</th><th align="center" valign="bottom" rowspan="1" colspan="1">(years)</th><th align="center" valign="bottom" rowspan="1" colspan="1">Range</th><th align="center" valign="bottom" rowspan="1" colspan="1">Male</th><th align="center" valign="bottom" rowspan="1" colspan="1">Female</th><th align="center" style="border-bottom:solid 1px #000000" valign="bottom" rowspan="1" colspan="1">Tumor origin</th><th style="border-bottom:solid 1px #000000" align="center" valign="bottom" rowspan="1" colspan="1">Tumor size (cm)
+</th><th align="center" valign="bottom" rowspan="1" colspan="1">I&#x02010;II</th><th align="center" valign="bottom" rowspan="1" colspan="1">III&#x02010;IV</th><th align="center" valign="bottom" rowspan="1" colspan="1">RFA</th><th align="center" valign="bottom" rowspan="1" colspan="1">MWA</th></tr></thead><tbody valign="top"><tr><td align="left" valign="top" rowspan="1" colspan="1">Cheng</td><td align="char" valign="top" rowspan="1" colspan="1">2016</td><td align="left" valign="top" rowspan="1" colspan="1">Australia</td><td align="char" valign="top" rowspan="1" colspan="1">12</td><td align="center" valign="top" rowspan="1" colspan="1">71</td><td align="center" valign="top" rowspan="1" colspan="1">_</td><td align="char" valign="top" rowspan="1" colspan="1">8</td><td align="char" valign="top" rowspan="1" colspan="1">4</td><td align="left" valign="top" rowspan="1" colspan="1">Primary</td><td align="center" valign="top" rowspan="1" colspan="1">3.42&#x02009;&#x000b1;&#x02009;1.28</td><td align="center" valign="top" rowspan="1" colspan="1">10</td><td align="center" valign="top" rowspan="1" colspan="1">2</td><td align="char" valign="top" rowspan="1" colspan="1">2</td><td align="char" valign="top" rowspan="1" colspan="1">10</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Chi</td><td align="char" valign="top" rowspan="1" colspan="1">2018</td><td align="left" valign="top" rowspan="1" colspan="1">China</td><td align="char" valign="top" rowspan="1" colspan="1">238</td><td align="center" valign="top" rowspan="1" colspan="1">61&#x02009;&#x000b1;&#x02009;13 (MWA)<break/>
+61&#x02009;&#x000b1;&#x02009;12 (RFA)
+</td><td align="center" valign="top" rowspan="1" colspan="1">_</td><td align="char" valign="top" rowspan="1" colspan="1">178</td><td align="char" valign="top" rowspan="1" colspan="1">60</td><td align="left" valign="top" rowspan="1" colspan="1">Primary/metastasis</td><td align="center" valign="top" rowspan="1" colspan="1">2.87&#x02009;&#x000b1;&#x02009;1.76 (MWA)<break/>
+2.41&#x02009;&#x000b1;&#x02009;1.18 (RFA)
+</td><td align="center" valign="top" rowspan="1" colspan="1">78</td><td align="center" valign="top" rowspan="1" colspan="1">160</td><td align="char" valign="top" rowspan="1" colspan="1">99</td><td align="char" valign="top" rowspan="1" colspan="1">139</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Macchi</td><td align="char" valign="top" rowspan="1" colspan="1">2017</td><td align="left" valign="top" rowspan="1" colspan="1">Italy</td><td align="char" valign="top" rowspan="1" colspan="1">52</td><td align="center" valign="top" rowspan="1" colspan="1">69</td><td align="center" valign="top" rowspan="1" colspan="1">40&#x02013;87</td><td align="char" valign="top" rowspan="1" colspan="1">37</td><td align="char" valign="top" rowspan="1" colspan="1">15</td><td align="left" valign="top" rowspan="1" colspan="1">Primary</td><td align="center" valign="top" rowspan="1" colspan="1">_</td><td align="center" valign="top" rowspan="1" colspan="1">0</td><td align="center" valign="top" rowspan="1" colspan="1">52</td><td align="char" valign="top" rowspan="1" colspan="1">28</td><td align="char" valign="top" rowspan="1" colspan="1">24</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Maxwell</td><td align="char" valign="top" rowspan="1" colspan="1">2016</td><td align="left" valign="top" rowspan="1" colspan="1">USA</td><td align="char" valign="top" rowspan="1" colspan="1">9</td><td align="center" valign="top" rowspan="1" colspan="1">73.8&#x02009;&#x000b1;&#x02009;12.4</td><td align="center" valign="top" rowspan="1" colspan="1">50&#x02013;86</td><td align="char" valign="top" rowspan="1" colspan="1">5</td><td align="char" valign="top" rowspan="1" colspan="1">4</td><td align="left" valign="top" rowspan="1" colspan="1">Primary</td><td align="center" valign="top" rowspan="1" colspan="1">2.35&#x02009;&#x000b1;&#x02009;0.82 (RFA)<break/>
+2.38&#x02009;&#x000b1;&#x02009;1.40 (MWA)
+</td><td align="center" valign="top" rowspan="1" colspan="1">6</td><td align="center" valign="top" rowspan="1" colspan="1">3</td><td align="char" valign="top" rowspan="1" colspan="1">4</td><td align="char" valign="top" rowspan="1" colspan="1">5</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Nour&#x02010;Eldin</td><td align="char" valign="top" rowspan="1" colspan="1">2017</td><td align="left" valign="top" rowspan="1" colspan="1">Germany</td><td align="char" valign="top" rowspan="1" colspan="1">92</td><td align="center" valign="top" rowspan="1" colspan="1">59.6&#x02009;&#x000b1;&#x02009;11.9 (MWA)<break/>
+57.1&#x02009;&#x000b1;&#x02009;12.8 (RFA)
+</td><td align="center" valign="top" rowspan="1" colspan="1">39&#x02013;74</td><td align="char" valign="top" rowspan="1" colspan="1">33</td><td align="char" valign="top" rowspan="1" colspan="1">59</td><td align="left" valign="top" rowspan="1" colspan="1">Primary</td><td align="center" valign="top" rowspan="1" colspan="1">_</td><td align="center" valign="top" rowspan="1" colspan="1">_</td><td align="center" valign="top" rowspan="1" colspan="1">_</td><td align="char" valign="top" rowspan="1" colspan="1">29</td><td align="char" valign="top" rowspan="1" colspan="1">63</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Vogl</td><td align="char" valign="top" rowspan="1" colspan="1">2016</td><td align="left" valign="top" rowspan="1" colspan="1">Germany</td><td align="char" valign="top" rowspan="1" colspan="1">88</td><td align="center" valign="top" rowspan="1" colspan="1">64.6&#x02009;&#x000b1;&#x02009;11.5 (MWA)<break/>
+71&#x02009;&#x000b1;&#x02009;10 (RFA)
+</td><td align="center" valign="top" rowspan="1" colspan="1">34&#x02013;90</td><td align="char" valign="top" rowspan="1" colspan="1">57</td><td align="char" valign="top" rowspan="1" colspan="1">31</td><td align="left" valign="top" rowspan="1" colspan="1">Metastasis</td><td align="center" valign="top" rowspan="1" colspan="1">_</td><td align="center" valign="top" rowspan="1" colspan="1">0</td><td align="center" valign="top" rowspan="1" colspan="1">88</td><td align="char" valign="top" rowspan="1" colspan="1">41</td><td align="char" valign="top" rowspan="1" colspan="1">47</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Li</td><td align="char" valign="top" rowspan="1" colspan="1">2017</td><td align="left" valign="top" rowspan="1" colspan="1">China</td><td align="char" valign="top" rowspan="1" colspan="1">75</td><td align="center" valign="top" rowspan="1" colspan="1">58.2&#x02009;&#x000b1;&#x02009;16.2 (MWA)<break/>
+58.4&#x02009;&#x000b1;&#x02009;16.2 (RFA)
+</td><td align="center" valign="top" rowspan="1" colspan="1">12&#x02013;89</td><td align="char" valign="top" rowspan="1" colspan="1">58</td><td align="char" valign="top" rowspan="1" colspan="1">17</td><td align="left" valign="top" rowspan="1" colspan="1">Primary/metastasis</td><td align="center" valign="top" rowspan="1" colspan="1">29.98&#x02009;&#x000b1;&#x02009;17.46 (RFA)<break/>
+34.56&#x02009;&#x000b1;&#x02009;20.25 (MWA)
+</td><td align="center" valign="top" rowspan="1" colspan="1">53</td><td align="center" valign="top" rowspan="1" colspan="1">22</td><td align="char" valign="top" rowspan="1" colspan="1">43</td><td align="char" valign="top" rowspan="1" colspan="1">32</td></tr></tbody></table><table-wrap-foot><fn id="tca12973-note-0001"><p>&#x02013;, Not clear; MWA, microwave ablation; RFA, radiofrequency ablation.</p></fn></table-wrap-foot></table-wrap></sec><sec id="tca12973-sec-0013"><title>Quality of the literature</title><p>The methodological quality of the included studies was assessed using the eight evaluation indicators on which three results of each eligible study were evaluated: A, is the case definition adequate; B, representativeness of the cases; C, selection of controls; D, definition of controls; E, comparability of cases and controls on the basis of the design or analysis; F, ascertainment of exposure; G, same method of ascertaining for cases and control; and H, same non&#x02010;response rate.</p><p>A study can be awarded a maximum of 1&#x02009;point for each item. the quality of bias assessment of the included studies according to the evaluation indicators is detailed in Table <xref rid="tca12973-tbl-0002" ref-type="table">2</xref>.</p><table-wrap id="tca12973-tbl-0002" xml:lang="en" orientation="portrait" position="float"><label>Table 2</label><caption><p>Methodological quality of eligible trials</p></caption><table frame="hsides" rules="groups"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><thead valign="bottom"><tr style="border-bottom:solid 1px #000000"><th align="left" valign="bottom" rowspan="1" colspan="1">Study</th><th align="center" valign="bottom" rowspan="1" colspan="1">A</th><th align="center" valign="bottom" rowspan="1" colspan="1">B</th><th align="center" valign="bottom" rowspan="1" colspan="1">C</th><th align="center" valign="bottom" rowspan="1" colspan="1">D</th><th align="center" valign="bottom" rowspan="1" colspan="1">E</th><th align="center" valign="bottom" rowspan="1" colspan="1">F</th><th align="center" valign="bottom" rowspan="1" colspan="1">G</th><th align="center" valign="bottom" rowspan="1" colspan="1">H</th><th align="center" valign="bottom" rowspan="1" colspan="1">Total</th></tr></thead><tbody valign="top"><tr><td align="left" valign="top" rowspan="1" colspan="1">Cheng 2016</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">7</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Chi 2018</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">8</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Li 2017</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1"/><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">7</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Macchi 2017</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1"/><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1"/><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1"/><td align="center" valign="top" rowspan="1" colspan="1">5</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Maxwell 2016</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">8</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Nour&#x02010;Eldin 2017</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1"/><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">7</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Vogl 2016</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1"/><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">&#x0221a;</td><td align="center" valign="top" rowspan="1" colspan="1">7</td></tr></tbody></table><table-wrap-foot><fn id="tca12973-note-0002"><p>A: Is the case definition adequate? B: Representativeness of the cases. C: Selection of controls. D: Definition of controls. E: Comparability of cases and controls on the basis of the design or analysis. F: Ascertainment of exposure. G: Same method of ascertainment for cases and control. H: Same non&#x02010;Response rate.</p></fn></table-wrap-foot></table-wrap></sec><sec id="tca12973-sec-0014"><title>Overall analysis (OS)</title><p>There were a total of 203 patients who underwent RFA, and 288 who underwent MWA. Although some literature reported the results of metastasis&#x02010;free survival, progression&#x02010;free survival, and recurrence&#x02010;free survival, the reporting and occurrence of these events were rare. Therefore, we could only choose the results of OS to evaluate the survival outcomes. We found no significant heterogeneity between trials (Figs <xref rid="tca12973-fig-0002" ref-type="fig">2</xref>, <xref rid="tca12973-fig-0004" ref-type="fig">3</xref>).</p><fig fig-type="Figure" xml:lang="en" id="tca12973-fig-0002" orientation="portrait" position="float"><label>Figure 2</label><caption><p>Forest plot. MWA, microwave ablation; RFA, radiofrequency ablation.</p></caption><graphic id="nlm-graphic-3" xlink:href="TCA-10-543-g006"/></fig><fig fig-type="Figure" xml:lang="en" id="tca12973-fig-0004" orientation="portrait" position="float"><label>Figure 3</label><caption><p>Survival time comparison. MSE, Mean squared error; SND, Standard deviation. <inline-graphic xlink:href="TCA-10-543-g004.jpg" xlink:title="image"/>, 0.5 year RFA; <inline-graphic xlink:href="TCA-10-543-g009.jpg" xlink:title="image"/>, 0.5 year MWA; <inline-graphic xlink:href="TCA-10-543-g011.jpg" xlink:title="image"/>, 1 year RFA; <inline-graphic xlink:href="TCA-10-543-g005.jpg" xlink:title="image"/>, 1 year MWA; <inline-graphic xlink:href="TCA-10-543-g003.jpg" xlink:title="image"/>, 2 year RFA; <inline-graphic xlink:href="TCA-10-543-g014.jpg" xlink:title="image"/>, 2 year MWA; <inline-graphic xlink:href="TCA-10-543-g013.jpg" xlink:title="image"/>, 3 year RFA; <inline-graphic xlink:href="TCA-10-543-g010.jpg" xlink:title="image"/>, 3 year MWA.</p></caption><graphic id="nlm-graphic-5" xlink:href="TCA-10-543-g015"/></fig><sec id="tca12973-sec-0015"><title>0.5&#x02010;year OS</title><p>Survival rates of 385 patients from five studies were analyzed in this six&#x02010;month survival rate analysis (OR 0.99, 95% CI 0.52&#x02013;1.89). The study involved 147 patients (38.08%) in stage 1&#x02013;2, 239 patients (61.92%) in stage 3&#x02013;4, 176 patients treated with RFA (45.60%), and 209 patients received MWA (54.40%).</p></sec><sec id="tca12973-sec-0016"><title>One&#x02010;year OS</title><p>A total of 565 patients&#x02019; one&#x02010;year survival rates from seven studies were analyzed (OR 0.95, 95% CI 0.63&#x02013;1.44). Of these, 246(43.54%) patients were treated with RFA, and 319 (56.64%) received MWA.</p></sec><sec id="tca12973-sec-0017"><title>One&#x02010;year OS</title><p>Survival rates of 513 patients from six studies were analyzed in this two&#x02010;year survival rate analysis (OR 1.00, 95% CI 0.70&#x02013;1.44). A total of 218 (42.50%) tumor patients received RFA, and 295 (57.50%) patients were treated with MWA. In the figure <xref rid="tca12973-fig-0002" ref-type="fig">2</xref>, we can find that the heterogeneity of the two&#x02010;year survival rate reached 66%. Sensitivity analysis was carried out to exclude heterogeneous sources of research, and it was finally found that the heterogeneity reduction to 36% after the study of Nour&#x02010;Eldin in 2017 was eliminated.<sup>14</sup> The specific discussion of this problem is in the Discussion section.</p></sec><sec id="tca12973-sec-0018"><title>Three&#x02010;year OS</title><p>Five studies reported the three&#x02010;year survival period involving a total of 275 patients (OR 0.71, 95% CI 0.42&#x02013;1.18). A total of 119 (43.27%) tumor patients received RFA, and 156 (56.73%) patients were treated with MWA.</p></sec></sec><sec id="tca12973-sec-0019"><title>Publishing bias</title><p>Funnel plot analysis of publication bias of the literature was carried out, as shown in Figure <xref rid="tca12973-fig-0003" ref-type="fig">4</xref>. Linear regression analysis (Egger's test) of the funnel plot did not identify any significant graphics or statistical bias (<italic>P</italic>&#x02009;=&#x02009;0.872).</p><fig fig-type="Figure" xml:lang="en" id="tca12973-fig-0003" orientation="portrait" position="float"><label>Figure 4</label><caption><p>Publishing bias by Egger's test. Linear regression analysis (Egger's test) of the funnel plot did not identify any significant graphics or statistical bias. <inline-graphic xlink:href="TCA-10-543-g012.jpg" xlink:title="image"/>, Study; <inline-graphic xlink:href="TCA-10-543-g001.jpg" xlink:title="image"/>, regression line; <inline-graphic xlink:href="TCA-10-543-g008.jpg" xlink:title="image"/>, 95% CI for intercept.</p></caption><graphic id="nlm-graphic-7" xlink:href="TCA-10-543-g007"/></fig></sec><sec id="tca12973-sec-0020"><title>Safety</title><p>Two studies have reported postoperative complications, the most important of which are a pneumothorax, hemoptysis, pleural effusion, and subcutaneous emphysema. The specific situation can be seen in Table.<xref rid="tca12973-tbl-0003" ref-type="table">3</xref>. There was no significant difference in the incidence of complications between the two groups.</p><table-wrap id="tca12973-tbl-0003" xml:lang="en" orientation="portrait" position="float"><label>Table 3</label><caption><p>Incidence of treatment complications</p></caption><table frame="hsides" rules="groups"><col align="left" span="1"/><col align="char" char="." span="1"/><col align="center" span="1"/><col align="char" char="." span="1"/><col align="center" span="1"/><col align="char" char="." span="1"/><col align="center" span="1"/><col align="char" char="." span="1"/><col align="center" span="1"/><col align="char" char="." span="1"/><col align="center" span="1"/><thead valign="top"><tr><th align="left" valign="top" rowspan="1" colspan="1"/><th colspan="2" align="center" style="border-bottom:solid 1px #000000" valign="top" rowspan="1">Total Complications</th><th colspan="2" align="center" style="border-bottom:solid 1px #000000" valign="top" rowspan="1">Hemoptysis</th><th colspan="2" align="center" style="border-bottom:solid 1px #000000" valign="top" rowspan="1">Pleural effusion
+</th><th colspan="2" align="center" style="border-bottom:solid 1px #000000" valign="top" rowspan="1">Pneumothorax
+</th><th colspan="2" align="center" style="border-bottom:solid 1px #000000" valign="top" rowspan="1">Subcutaneous emphysema</th></tr><tr style="border-bottom:solid 1px #000000"><th align="center" style="border-bottom:solid 1px #000000" valign="top" rowspan="1" colspan="1">Treatment</th><th align="center" valign="top" rowspan="1" colspan="1">Rate</th><th align="center" valign="top" rowspan="1" colspan="1">
+<italic>P</italic>
+</th><th align="center" valign="top" rowspan="1" colspan="1">Rate</th><th align="center" valign="top" rowspan="1" colspan="1">
+<italic>P</italic>
+</th><th align="center" valign="top" rowspan="1" colspan="1">Rate</th><th align="center" valign="top" rowspan="1" colspan="1">
+<italic>P</italic>
+</th><th align="center" valign="top" rowspan="1" colspan="1">Rate</th><th align="center" valign="top" rowspan="1" colspan="1">
+<italic>P</italic>
+</th><th align="center" valign="top" rowspan="1" colspan="1">Rate</th><th align="center" valign="top" rowspan="1" colspan="1">
+<italic>P</italic>
+</th></tr></thead><tbody valign="top"><tr><td align="left" valign="top" rowspan="1" colspan="1">RFA (142)</td><td align="char" valign="top" rowspan="1" colspan="1">27.46%</td><td rowspan="2" align="center" valign="top" colspan="1">&#x003c7;<sup>2</sup>&#x02009;=&#x02009;0.987<break/>
+<italic>P</italic>&#x02009;=&#x02009;0.321
+</td><td align="char" valign="top" rowspan="1" colspan="1">6.34%</td><td rowspan="2" align="center" valign="top" colspan="1">&#x003c7;<sup>2</sup>&#x02009;=&#x02009;0.96<break/>
+<italic>P</italic>&#x02009;=&#x02009;0.756
+</td><td align="char" valign="top" rowspan="1" colspan="1">2.82%</td><td rowspan="2" align="center" valign="top" colspan="1">&#x003c7;<sup>2</sup>&#x02009;=&#x02009;0.205<break/>
+<italic>P</italic>&#x02009;=&#x02009;0.651
+</td><td align="char" valign="top" rowspan="1" colspan="1">19.72%</td><td rowspan="2" align="center" valign="top" colspan="1">&#x003c7;<sup>2</sup>&#x02009;=&#x02009;0.866<break/>
+<italic>P</italic>&#x02009;=&#x02009;0.352
+</td><td align="char" valign="top" rowspan="1" colspan="1">2.82%</td><td rowspan="2" align="center" valign="top" colspan="1">&#x003c7;<sup>2</sup>&#x02009;=&#x02009;0.205<break/>
+<italic>P</italic>&#x02009;=&#x02009;0.651
+</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">MWA (171)</td><td align="char" valign="top" rowspan="1" colspan="1">21.05%</td><td align="char" valign="top" rowspan="1" colspan="1">4.68%</td><td align="char" valign="top" rowspan="1" colspan="1">2.34%</td><td align="char" valign="top" rowspan="1" colspan="1">14.62%</td><td align="char" valign="top" rowspan="1" colspan="1">2.34%</td></tr></tbody></table><table-wrap-foot><fn id="tca12973-note-0003"><p>MWA, microwave ablation; RFA, radiofrequency ablation.</p></fn></table-wrap-foot></table-wrap></sec></sec><sec id="tca12973-sec-0021"><title>Discussion</title><p>In our practical application, it seems that MWA tends to perform worse than RFA on the safety of serious adverse reactions. However, our study has compared postoperative complications in RFA and MWA, and found that they are essentially identical. Analysis results of the cases in the study showed no statistical difference in the incidence of adverse reactions. However, with the small sample size of the safety study, caution must be applied, as the findings might not be accurate. We believe that because of the lack of research and sample size, it is necessary to draw a larger conclusion in order to reach a certain conclusion. RFA is currently the most successful thermal ablation method, and many studies have verified its effect in the treatment of liver cancer ablation. Compared with traditional palliative treatment, the quality of life and survival time are better than systemic chemotherapy,<xref rid="tca12973-bib-0017" ref-type="ref">17</xref>, <xref rid="tca12973-bib-0018" ref-type="ref">18</xref> which can effectively prolong the survival time of patients. Especially for patients with tumor invasion of the trachea leading to atelectasis or a severe cough, thermal ablation can immediately relieve symptoms and reduce pain. Pneumothorax was most commonly observed after thermal ablation, but only a small percentage of patients required percutaneous chest tube placement.<xref rid="tca12973-bib-0006" ref-type="ref">6</xref> Other complications might be caused by thermal damage to adjacent structures, resulting in pain and perforation, and intrapulmonary hemorrhage, hemoptysis, pleural effusion, and pleural inflammatory chest pain have been reported. Complications are usually mild and self&#x02010;healing. In our study, the incidence of a complication from RFA and MWA was similar, and not particularly serious complications occurred. The results showed that these two ablation methods are safe for lung tumors. As an emerging ablation method, MWA has the advantages of short operation time, high ablation power, and low price compared with traditional RFA.<xref rid="tca12973-bib-0009" ref-type="ref">9</xref> It has great potential for development in oncotherapy. The most recent meta&#x02010;analysis of RFA and MWA is about the effects of RFA versus other ablation techniques on hepatocellular carcinomas. Another study yielded an interesting result. Compared with RFA, identical effects were found in MWA and cryoablation.<xref rid="tca12973-bib-0019" ref-type="ref">19</xref> It showed that RFA appeared more effective, but with a higher rate of complications. This differs from the findings presented here.</p><p>One of the more significant findings to emerge from the present study is that MWA can achieve long&#x02010;term effects similar to RFA. Although this study focuses on differences in long&#x02010;term efficacy between RFA and MWA, the findings might well have a bearing on the application of MWA in the treatment of thoracic cancer. As a classic treatment, thermal ablation has been successfully applied to the palliative treatment of liver cancer, lung tumor, and others.<xref rid="tca12973-bib-0020" ref-type="ref">20</xref> A prospective, intention&#x02010;to&#x02010;treat, single&#x02010;arm, multicenter clinical trial from seven centers in Europe, the USA, and Australia showed RFA has been accepted as a viable therapeutic choice for non&#x02010;surgical patients with early&#x02010;stage hepatocellular carcinoma or limited hepatic metastatic disease from colorectal cancer.<xref rid="tca12973-bib-0021" ref-type="ref">21</xref> Many different modalities have been proposed and accepted for ablation procedures; these include RFA, MWA, percutaneous ethanol injection, laser ablation, cryoablation, and high&#x02010;intensity focused ultrasound. Thermal ablation uses radio frequency current, microwave, or ultrasound to directly heat the tumor tissue, and the local temperature can reach 90&#x02013;100&#x000b0;C, which leads to coagulative necrosis of tumor tissue and surrounding blood vessels.<xref rid="tca12973-bib-0020" ref-type="ref">20</xref> It causes irreversible thermal damage to tumor cells, directly kills tumor cells, stimulates the body to produce specific immunity,<xref rid="tca12973-bib-0022" ref-type="ref">22</xref> and also destroys the cell membrane of tumor cells, affecting the metabolic function of tumor cells. Ablation therapy can also improve the patient's immune ability, and kill small lesions that have not been discovered by medical imaging. Several ablation methods have their own advantages, and the safety of laser and percutaneous ethanol injection is the highest in the treatment of liver cancer.<xref rid="tca12973-bib-0019" ref-type="ref">19</xref> They can be the application in high&#x02010;risk areas for protecting the important organs. The effects of microwave ablation and cryoablation are similar. Mild, critical patients can be considered. RFA has the best therapeutic effect, but the incidence of serious complications can be relatively high. Tumor size seems to be an important determinant of long&#x02010;term tumor control in ablation therapy. The recurrence rate is higher when the tumor is &#x0003e;2&#x02013;3&#x02009;cm.<xref rid="tca12973-bib-0023" ref-type="ref">23</xref> MWA produces a thermal coagulated area that is smaller than that produced by RFA. The main performance of the MWA needle is outstanding, including consistently higher intratumoral temperatures, fast ablation times, and an improved convection profile versus those obtained with RFA. The MWA needle is heated very quickly and the temperature is stable, ensuring stable and efficient heating of the tissue in the area. MWA requires less treatment time and fewer treatments. Studies have shown that RFA and MWA have the same therapeutic effect, complication rate, and residual disease rate of untreated disease. Therefore, the effect of RFA can be achieved with fewer MWA sessions.<xref rid="tca12973-bib-0024" ref-type="ref">24</xref>
+</p><p>In the analysis of two&#x02010;year survival rate, the study of Nour&#x02010;Eldin <italic>et al.</italic>
+<xref rid="tca12973-bib-0014" ref-type="ref">14</xref> showed obvious heterogeneity. That study was a comparison of laser&#x02010;induced interstitial thermotherapy, RFA, and MWA in patients with lung metastases from non&#x02010;colon cancer, whereas other studies were aimed at primary lung cancer or colorectal cancer lung metastases. This might suggest that there are different possibilities for the long&#x02010;term effects of two ablations on non&#x02010;colon cancer metastatic tumors and other sources. Lung metastases have relatively little impact on the prognosis of patients with colorectal cancer, which could be the reason for explaining the difference. Due to the lack of raw data and the small sample size, we have not been able to carry out a subgroup analysis of primary and metastatic patients. There is always a question about whether RFA and MWA are different in treating both types of tumors. We require more research and samples to clarify the results.</p><p>Although the current study is based on a small sample of participants, the findings suggest MWA has the potential to become a new choice for thoracic cancer. The benefit of thermal ablation for cancer remains uncertain and will require randomized clinical trial data to confirm efficacy. More information on MWA and RFA would allow us to establish a greater degree of accuracy in this matter. The findings of this study include a number of important implications for future practice.</p></sec><sec id="tca12973-sec-0023"><title>Disclosure</title><p>No authors report any conflict of interest.</p></sec></body><back><ack id="tca12973-sec-0022"><title>Acknowledgment</title><p>Natural Science Foundation of Shandong Province (No. ZR2017MH095) funded this research.</p></ack><ref-list id="tca12973-bibl-0001" content-type="cited-references"><title>References</title><ref id="tca12973-bib-0001"><label>1</label><mixed-citation publication-type="journal" id="tca12973-cit-0001">
+<string-name>
+<surname>Bray</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Ferlay</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Soerjomataram</surname>
+<given-names>I</given-names>
+</string-name>, <string-name>
+<surname>Siegel</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Torre</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Jemal</surname>
+<given-names>A</given-names>
+</string-name>. <article-title>Global cancer statistics 2018: GLOBOCAN estimates of incidence and mortality worldwide for 36 cancers in 185 countries</article-title>. <source xml:lang="en">CA Cancer J Clin</source>
+<year>2018</year> Nov; <volume>68</volume> (<issue>6</issue>).</mixed-citation></ref><ref id="tca12973-bib-0002"><label>2</label><mixed-citation publication-type="journal" id="tca12973-cit-0002">
+<string-name>
+<surname>Palussi&#x000e8;re</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Catena</surname>
+<given-names>V</given-names>
+</string-name>, <string-name>
+<surname>Buy</surname>
+<given-names>X</given-names>
+</string-name>. <article-title>Percutaneous thermal ablation of lung tumors &#x02010; Radiofrequency, microwave and cryotherapy: Where are we going?</article-title>
+<source xml:lang="en">Diagn Interv Imaging</source>
+<year>2017</year>; <volume>98</volume> (<issue>9</issue>): <fpage>619</fpage>&#x02013;<lpage>25</lpage>.<pub-id pub-id-type="pmid">28844613</pub-id></mixed-citation></ref><ref id="tca12973-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="tca12973-cit-0003">
+<string-name>
+<surname>Rossi</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Dore</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Cascina</surname>
+<given-names>A</given-names>
+</string-name>
+<italic>et al</italic>
+<article-title>Percutaneous computed tomography&#x02010;guided radiofrequency thermal ablation of small unresectable lung tumours</article-title>. <source xml:lang="en">Eur Respir J</source>
+<year>2006</year>; <volume>27</volume> (<issue>3</issue>): <fpage>556</fpage>&#x02013;<lpage>63</lpage>.<pub-id pub-id-type="pmid">16507856</pub-id></mixed-citation></ref><ref id="tca12973-bib-0004"><label>4</label><mixed-citation publication-type="journal" id="tca12973-cit-0004">
+<string-name>
+<surname>Uhlig</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Kokabi</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Xing</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Kim</surname>
+<given-names>H</given-names>
+</string-name>. <article-title>Ablation versus resection for stage 1A renal cell carcinoma: National Variation in clinical management and selected outcomes</article-title>. <source xml:lang="en">Radiology</source>
+<year>2018</year>; <volume>288</volume> (<issue>3</issue>): <fpage>889</fpage>&#x02013;<lpage>97</lpage>.<pub-id pub-id-type="pmid">29969077</pub-id></mixed-citation></ref><ref id="tca12973-bib-0005"><label>5</label><mixed-citation publication-type="journal" id="tca12973-cit-0005">
+<string-name>
+<surname>Chu</surname>
+<given-names>KF</given-names>
+</string-name>, <string-name>
+<surname>Dupuy</surname>
+<given-names>DE</given-names>
+</string-name>. <article-title>Thermal ablation of tumours: Biological mechanisms and advances in therapy</article-title>. <source xml:lang="en">Nat Rev Cancer</source>
+<year>2014</year>; <volume>14</volume> (<issue>3</issue>): <fpage>199</fpage>&#x02013;<lpage>208</lpage>.<pub-id pub-id-type="pmid">24561446</pub-id></mixed-citation></ref><ref id="tca12973-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="tca12973-cit-0006">
+<string-name>
+<surname>Powell</surname>
+<given-names>JW</given-names>
+</string-name>, <string-name>
+<surname>Dexter</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Scalzetti</surname>
+<given-names>EM</given-names>
+</string-name>, <string-name>
+<surname>Bogart</surname>
+<given-names>JA</given-names>
+</string-name>. <article-title>Treatment advances for medically inoperable non&#x02010;small&#x02010;cell lung cancer: Emphasis on prospective trials</article-title>. <source xml:lang="en">Lancet Oncol</source>
+<year>2009</year>; <volume>10</volume> (<issue>9</issue>): <fpage>885</fpage>&#x02013;<lpage>94</lpage>.<pub-id pub-id-type="pmid">19717090</pub-id></mixed-citation></ref><ref id="tca12973-bib-0007"><label>7</label><mixed-citation publication-type="journal" id="tca12973-cit-0007">
+<string-name>
+<surname>Ahmed</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Goldberg</surname>
+<given-names>SN</given-names>
+</string-name>. <article-title>Thermal ablation therapy for hepatocellular carcinoma</article-title>. <source xml:lang="en">J Vascul Intervent Radiol</source>
+<year>2002</year>; <volume>13</volume> (<issue>9</issue>): <fpage>S231</fpage>&#x02013;<lpage>S43</lpage>.</mixed-citation></ref><ref id="tca12973-bib-0008"><label>8</label><mixed-citation publication-type="journal" id="tca12973-cit-0008">
+<string-name>
+<surname>Goetz</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Callstrom</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Charboneau</surname>
+<given-names>J</given-names>
+</string-name>
+<italic>et al</italic>
+<article-title>Percutaneous image&#x02010;guided radiofrequency ablation of painful metastases involving bone: A multicenter study</article-title>. <source xml:lang="en">J Clin Oncol</source>
+<year>2004</year>; <volume>22</volume> (<issue>2</issue>): <fpage>300</fpage>&#x02013;<lpage>6</lpage>.<pub-id pub-id-type="pmid">14722039</pub-id></mixed-citation></ref><ref id="tca12973-bib-0009"><label>9</label><mixed-citation publication-type="journal" id="tca12973-cit-0009">
+<string-name>
+<surname>Liapi</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Geschwind</surname>
+<given-names>JF</given-names>
+</string-name>. <article-title>Transcatheter and ablative therapeutic approaches for solid malignancies</article-title>. <source xml:lang="en">J Clin Oncol</source>
+<year>2007</year>; <volume>25</volume> (<issue>8</issue>): <fpage>978</fpage>&#x02013;<lpage>86</lpage>.<pub-id pub-id-type="pmid">17350947</pub-id></mixed-citation></ref><ref id="tca12973-bib-0010"><label>10</label><mixed-citation publication-type="journal" id="tca12973-cit-0010">
+<string-name>
+<surname>Cheng</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Fay</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Steinke</surname>
+<given-names>K</given-names>
+</string-name>. <article-title>Percutaneous CT&#x02010;guided thermal ablation as salvage therapy for recurrent non&#x02010;small cell lung cancer after external beam radiotherapy: A retrospective study</article-title>. <source xml:lang="en">Int J Hyperther</source>
+<year>2016</year>; <volume>32</volume> (<issue>3</issue>): <fpage>1</fpage>.</mixed-citation></ref><ref id="tca12973-bib-0011"><label>11</label><mixed-citation publication-type="journal" id="tca12973-cit-0011">
+<string-name>
+<surname>Chi</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Ding</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Shi</surname>
+<given-names>Y</given-names>
+</string-name>
+<italic>et al</italic>
+<article-title>Comparison study of computed tomography&#x02010;guided radiofrequency and microwave ablation for pulmonary tumors: A retrospective, case&#x02010;controlled observational study</article-title>. <source xml:lang="en">Thorac Cancer</source>
+<year>2018</year>; <volume>9</volume>: <fpage>1241</fpage>&#x02013;<lpage>8</lpage>.<pub-id pub-id-type="pmid">30070054</pub-id></mixed-citation></ref><ref id="tca12973-bib-0012"><label>12</label><mixed-citation publication-type="journal" id="tca12973-cit-0012">
+<string-name>
+<surname>Macchi</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Belfiore</surname>
+<given-names>MP</given-names>
+</string-name>, <string-name>
+<surname>Floridi</surname>
+<given-names>C</given-names>
+</string-name>
+<italic>et al</italic>
+<article-title>Radiofrequency versus microwave ablation for treatment of the lung tumours: LUMIRA (lung microwave radiofrequency) randomized trial</article-title>. <source xml:lang="en">Med Oncol</source>
+<year>2017</year>; <volume>34</volume> (<issue>5</issue>): <fpage>96</fpage>.<pub-id pub-id-type="pmid">28417355</pub-id></mixed-citation></ref><ref id="tca12973-bib-0013"><label>13</label><mixed-citation publication-type="journal" id="tca12973-cit-0013">
+<string-name>
+<surname>Maxwell</surname>
+<given-names>AW</given-names>
+</string-name>, <string-name>
+<surname>Healey</surname>
+<given-names>TT</given-names>
+</string-name>, <string-name>
+<surname>Dupuy</surname>
+<given-names>DE</given-names>
+</string-name>. <article-title>Percutaneous thermal ablation for small&#x02010;cell lung cancer: Initial experience with t\tumors in nine patients</article-title>. <source xml:lang="en">J Vascul Intervent Radiol</source>
+<year>2016</year>; <volume>27</volume> (<issue>12</issue>): <fpage>1815</fpage>&#x02013;<lpage>21</lpage>.</mixed-citation></ref><ref id="tca12973-bib-0014"><label>14</label><mixed-citation publication-type="journal" id="tca12973-cit-0014">
+<string-name>
+<surname>Nour&#x02010;Eldin</surname>
+<given-names>NA</given-names>
+</string-name>, <string-name>
+<surname>Exner</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Alsubhi</surname>
+<given-names>M</given-names>
+</string-name>
+<italic>et al</italic>
+<article-title>Ablation therapy of non&#x02010;colorectal cancer lung metastases: Retrospective analysis of tumour response post&#x02010;laser&#x02010;induced interstitial thermotherapy (LITT), radiofrequency ablation (RFA) and2 microwave ablation (MWA)</article-title>. <source xml:lang="en">Int J Hyperther</source>
+<year>2017</year>; <volume>33</volume> (<issue>7</issue>): <fpage>820</fpage>&#x02013;<lpage>9&#x02009;&#x02009;</lpage>.</mixed-citation></ref><ref id="tca12973-bib-0015"><label>15</label><mixed-citation publication-type="journal" id="tca12973-cit-0015">
+<string-name>
+<surname>Shi</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Li</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Zhou</surname>
+<given-names>Z</given-names>
+</string-name>
+<italic>et al</italic>
+<article-title>Microwave ablation radiofrequency ablation for the treatment of pulmonary tumors</article-title>. <source xml:lang="en">Oncotarget</source>
+<year>2017</year>; <volume>8</volume> (<issue>65</issue>): <fpage>109791</fpage>&#x02013;<lpage>8</lpage>.<pub-id pub-id-type="pmid">29312649</pub-id></mixed-citation></ref><ref id="tca12973-bib-0016"><label>16</label><mixed-citation publication-type="journal" id="tca12973-cit-0016">
+<string-name>
+<surname>Vogl</surname>
+<given-names>TJ</given-names>
+</string-name>, <string-name>
+<surname>Eckert</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Naguib</surname>
+<given-names>NN</given-names>
+</string-name>, <string-name>
+<surname>Beeres</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Gruber&#x02010;Rouh</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Nour&#x02010;Eldin</surname>
+<given-names>NA</given-names>
+</string-name>. <article-title>Thermal ablation of colorectal lung metastases: Retrospective comparison among laser&#x02010;induced thermotherapy, radiofrequency ablation, and microwave ablation</article-title>. <source xml:lang="en">AJR Am J Roentgenol</source>
+<year>2016</year>; <volume>207</volume> (<issue>6</issue>): <fpage>1</fpage>&#x02013;<lpage>10</lpage>.<pub-id pub-id-type="pmid">27337371</pub-id></mixed-citation></ref><ref id="tca12973-bib-0017"><label>17</label><mixed-citation publication-type="journal" id="tca12973-cit-0017">
+<string-name>
+<surname>Berber</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Pelley</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Siperstein</surname>
+<given-names>AE</given-names>
+</string-name>. <article-title>Predictors of survival after radiofrequency thermal ablation of colorectal cancer metastases to the liver: A prospective study</article-title>. <source xml:lang="en">J Clin Oncol</source>
+<year>2005</year>; <volume>23</volume> (<issue>7</issue>): <fpage>1358</fpage>&#x02013;<lpage>64</lpage>.<pub-id pub-id-type="pmid">15684312</pub-id></mixed-citation></ref><ref id="tca12973-bib-0018"><label>18</label><mixed-citation publication-type="journal" id="tca12973-cit-0018">
+<string-name>
+<surname>Shiina</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Teratani</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Obi</surname>
+<given-names>S</given-names>
+</string-name>
+<italic>et al</italic>
+<article-title>A randomized controlled trial of radiofrequency ablation with ethanol injection for small hepatocellular carcinoma</article-title>. <source xml:lang="en">Gastroenterology</source>
+<year>2005</year>; <volume>129</volume> (<issue>1</issue>): <fpage>122</fpage>&#x02013;<lpage>30</lpage>.<pub-id pub-id-type="pmid">16012942</pub-id></mixed-citation></ref><ref id="tca12973-bib-0019"><label>19</label><mixed-citation publication-type="journal" id="tca12973-cit-0019">
+<string-name>
+<surname>Luo</surname>
+<given-names>W</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>He</surname>
+<given-names>G</given-names>
+</string-name>
+<italic>et al</italic>
+<article-title>Effects of radiofrequency ablation versus other ablating techniques on hepatocellular carcinomas: A systematic review and meta&#x02010;analysis</article-title>. <source xml:lang="en">World J Surg Oncol</source>
+<year>2017</year>; <volume>15</volume> (<issue>1</issue>): <fpage>126</fpage>.<pub-id pub-id-type="pmid">28693505</pub-id></mixed-citation></ref><ref id="tca12973-bib-0020"><label>20</label><mixed-citation publication-type="journal" id="tca12973-cit-0020">
+<string-name>
+<surname>Jahangeer</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Forde</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Soden</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Hinchion</surname>
+<given-names>J</given-names>
+</string-name>. <article-title>Review of current thermal ablation treatment for lung cancer and the potential of electrochemotherapy as a means for treatment of lung tumours</article-title>. <source xml:lang="en">Cancer Treat Rev</source>
+<year>2013</year>; <volume>39</volume> (<issue>8</issue>): <fpage>862</fpage>&#x02013;<lpage>71</lpage>.<pub-id pub-id-type="pmid">23601905</pub-id></mixed-citation></ref><ref id="tca12973-bib-0021"><label>21</label><mixed-citation publication-type="journal" id="tca12973-cit-0021">
+<string-name>
+<surname>Lencioni</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Crocetti</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Cioni</surname>
+<given-names>R</given-names>
+</string-name>
+<italic>et al</italic>
+<article-title>Response to radiofrequency ablation of pulmonary tumours: A prospective, intention&#x02010;to&#x02010;treat, multicentre clinical trial (the RAPTURE study)</article-title>. <source xml:lang="en">Lancet Oncol</source>
+<year>2008</year>; <volume>9</volume> (<issue>7</issue>): <fpage>621</fpage>&#x02013;<lpage>8</lpage>.<pub-id pub-id-type="pmid">18565793</pub-id></mixed-citation></ref><ref id="tca12973-bib-0022"><label>22</label><mixed-citation publication-type="journal" id="tca12973-cit-0022">
+<string-name>
+<surname>Zerbini</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Pilli</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Laccabue</surname>
+<given-names>D</given-names>
+</string-name>
+<italic>et al</italic>
+<article-title>Radiofrequency thermal ablation for hepatocellular carcinoma stimulates autologous NK&#x02010;cell response</article-title>. <source xml:lang="en">Gastroenterology</source>
+<year>2010</year>; <volume>138</volume> (<issue>5</issue>): <fpage>1931</fpage>&#x02013;<lpage>42</lpage> e2.<pub-id pub-id-type="pmid">20060829</pub-id></mixed-citation></ref><ref id="tca12973-bib-0023"><label>23</label><mixed-citation publication-type="journal" id="tca12973-cit-0023">
+<string-name>
+<surname>Simon</surname>
+<given-names>CJ</given-names>
+</string-name>, <string-name>
+<surname>Dupuy</surname>
+<given-names>DE</given-names>
+</string-name>, <string-name>
+<surname>Dipetrillo</surname>
+<given-names>TA</given-names>
+</string-name>
+<italic>et al</italic>
+<article-title>Pulmonary radiofrequency ablation: Long&#x02010;term safety and efficacy in 153 patients</article-title>. <source xml:lang="en">Radiology</source>
+<year>2007</year>; <volume>243</volume> (<issue>1</issue>): <fpage>268</fpage>&#x02013;<lpage>75</lpage>.<pub-id pub-id-type="pmid">17392258</pub-id></mixed-citation></ref><ref id="tca12973-bib-0024"><label>24</label><mixed-citation publication-type="journal" id="tca12973-cit-0024">
+<string-name>
+<surname>Shibata</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Iimuro</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Yamamoto</surname>
+<given-names>Y</given-names>
+</string-name>
+<italic>et al</italic>
+<article-title>Small hepatocellular carcinoma: Comparison of radio&#x02010;frequency ablation and percutaneous microwave coagulation therapy</article-title>. <source xml:lang="en">Radiology</source>
+<year>2002</year>; <volume>223</volume> (<issue>2</issue>): <fpage>331</fpage>&#x02013;<lpage>7</lpage>.<pub-id pub-id-type="pmid">11997534</pub-id></mixed-citation></ref></ref-list></back></article>
