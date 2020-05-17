@@ -1,0 +1,15 @@
+LET baseUrl = "https://www.medrxiv.org"
+LET doc = DOCUMENT(@url, { driver: "cdp" })
+LET pdfLinkSelector = ".article-dl-pdf-link"
+FOR p, pageNum IN PAGINATION(doc, ".pager .pager-next")
+    // We need to wait till a new page gets loaded
+    // PAGINATION starts iteration from the current page
+    // So we do not need to wait on the frist iteeration
+    LET w = pageNum > 0 ? WAIT_NAVIGATION(doc) : false
+    // Make sure result list is available
+    WAIT_ELEMENT(doc, ".highwire-search-results-list")
+    FOR link IN ELEMENTS(doc, ".highwire-search-results-list a")
+        // Right now Ferret returns a link as it is, not calculated. It might change in future releases.
+        // Therefore, we have to calculate full url
+        LET url = baseUrl + link.attributes.href
+        RETURN url
