@@ -16,7 +16,7 @@ import net.minidev.json.JSONObject;
 
 public class Ferret_Example {
 	static String FERRET_CONTAINER = "https://ferret-worker-pucbyp2omq-ue.a.run.app/";
-    static String medrxiv_file = "org/contentmine/ami/tools/ferret/medrxiv_search_download.fql";
+    static String medrxiv_file = "org/contentmine/ami/tools/ferret/medrxiv_urls.fql";
     
 	public static File getFileFromResources(String fileName) {
 
