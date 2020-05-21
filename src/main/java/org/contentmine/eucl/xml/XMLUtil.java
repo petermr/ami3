@@ -1501,6 +1501,7 @@ public abstract class XMLUtil implements XMLConstants {
 		}
 	}
 
+	/** removes DTD so parsing doesn't fail. Normally recommended */
 	public static Document parseQuietlyToDocumentWithoutDTD(File file) {
 		Document doc = null;
 		try (FileInputStream fis = new FileInputStream(file)) {
@@ -1510,6 +1511,12 @@ public abstract class XMLUtil implements XMLConstants {
 			throw new RuntimeException(e);
 		}
 		return doc;
+	}
+
+	/** removes DTD so parsing doesn't fail. Normally recommended */
+	public static Element parseQuietlyToRootElementWithoutDTD(File file) {
+		Document doc = parseQuietlyToDocumentWithoutDTD(file);
+		return doc == null ? null : doc.getRootElement();
 	}
 
 	/** checks that attribute names are in allowed list.

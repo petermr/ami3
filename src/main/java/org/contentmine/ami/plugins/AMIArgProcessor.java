@@ -174,11 +174,11 @@ public class AMIArgProcessor extends NormaArgProcessor {
 
 	public void parseStopwords(ArgumentOption option, ArgIterator argIterator) {
 		List<String> stopwordLocations = argIterator.createTokenListUpToNextNonDigitMinus(option);
-		addStopwords(stopwordLocations);
+		populateStopwordSetList(stopwordLocations);
 	}
 
 	public AMIArgProcessor setStopwords(List<String> stopwordLocations) {
-		addStopwords(stopwordLocations);
+		populateStopwordSetList(stopwordLocations);
 		return this;
 	}
 
@@ -511,11 +511,12 @@ public class AMIArgProcessor extends NormaArgProcessor {
 		}
 	}
 
-	private void addStopwords(List<String> stopwordLocations) {
+	private List<WordSetWrapper> populateStopwordSetList(List<String> stopwordLocations) {
 		ensureStopwordSetList();
 		for (String stopwordLocation : stopwordLocations) {
 			addStopwords(stopwordLocation);
 		}
+		return stopwordSetList;
 	}
 
 	public boolean getStemming() {

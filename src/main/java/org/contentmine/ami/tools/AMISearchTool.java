@@ -9,6 +9,7 @@ import java.util.List;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.AMIProcessor;
+import org.contentmine.ami.plugins.AMISearcher;
 import org.contentmine.ami.plugins.AbstractSearchArgProcessor;
 import org.contentmine.ami.plugins.search.SearchArgProcessor;
 import org.contentmine.ami.plugins.search.SearchPluginOption;
@@ -152,15 +153,15 @@ public class AMISearchTool extends AbstractAMISearchTool {
     @Override
 	protected void parseSpecifics() {
     	super.parseSpecifics();
-		System.out.println("dictionaryList       " + dictionaryList);
-		System.out.println("dictionaryTop        " + dictionaryTopList);
-		System.out.println("dictionarySuffix     " + dictionarySuffix);
-		System.out.println();
+//		System.out.println("dictionaryList       " + dictionaryList);
+//		System.out.println("dictionaryTop        " + dictionaryTopList);
+//		System.out.println("dictionarySuffix     " + dictionarySuffix);
+//		System.out.println();
 	}
 
-    public void createOldStyleCmd() {
-    	// probably taken care of by 
-    }
+//    public void createOldStyleCmd() {
+//    	// probably taken care of by 
+//    }
 //    @Override
 //    protected void runSpecifics() {
 //    	abstractSearchArgProcessor = getOrCreateSearchProcessor();
@@ -191,11 +192,12 @@ public class AMISearchTool extends AbstractAMISearchTool {
 //	}
 
 	protected void populateArgProcessorFromCLI() {
-		abstractSearchArgProcessor.createSearcherList(dictionaryList);
+		List<AMISearcher> amiSearcherList = abstractSearchArgProcessor.createSearcherList(dictionaryList);
+		System.out.println("amiSearchers: "+amiSearcherList);
 	}
 
 	
-//	public AbstractSearchArgProcessor getOrCreateSearchProcessor() {
+//	public AbsectetractSearchArgProcessor getOrCreateSearchProcessor() {
 //		if (searchArgProcessor == null) {
 //			searchArgProcessor = new AbstractSearchArgProcessor(this);
 //		}
@@ -262,6 +264,7 @@ public class AMISearchTool extends AbstractAMISearchTool {
 				}
 			}
 		}
+		System.out.println("created COMMAND: "+cmd1);
 		return cmd1;
 	}
 

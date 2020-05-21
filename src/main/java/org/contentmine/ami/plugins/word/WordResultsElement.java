@@ -102,6 +102,7 @@ public class WordResultsElement extends ResultsElement {
 			HtmlElement html = createHtmlElement(wordArgProcessor, fontSizeIntArray, fontSizeSet);
 			try {
 				outputFile.getParentFile().mkdirs();
+				LOG.debug("font html "+outputFile);
 				XMLUtil.debug(html, new FileOutputStream(outputFile), 1);
 			} catch (IOException e) {
 				throw new RuntimeException("Cannot write file "+outputFile, e);
@@ -118,25 +119,27 @@ public class WordResultsElement extends ResultsElement {
 			String cssStyle = ".font"+fontSize+" { font-size : "+fontSize+"; }";
 			style.addCss(cssStyle);
 		}
-		HtmlP p = new HtmlP();
+		HtmlP p = addWordsWithFontSizesInSpans(fontSizeIntArray);
 		html.getOrCreateBody().appendChild(p);
-		addWordsWithFontSizesInSpans(fontSizeIntArray, p);
 		return html;
 	}
 
-	void addWordsWithFontSizesInSpans(IntArray fontSizeIntArray, HtmlP p) {
+	HtmlP addWordsWithFontSizesInSpans(IntArray fontSizeIntArray) {
+		HtmlP p = new HtmlP();
 		int i = 0;
 		for (ResultElement resultElement : this) {
 			WordResultElement wordResultElement = (WordResultElement) resultElement;
 			String word = wordResultElement.getWord();
-			int count = wordResultElement.getCount();
+			String length = String.valueOf(wordResultElement.getLength());
+//			int count = wordResultElement.getCount();
 			int fontSize = fontSizeIntArray.elementAt(i);
 			HtmlSpan span = new HtmlSpan();
 			span.setClassAttribute("font"+fontSize);
-			span.appendChild(word+" ");
+			span.appendChild(word != null ? word+" " : length);
 			p.appendChild(span);
 			i++;
 		}
+		return p;
 	}
 
 

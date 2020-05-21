@@ -9,6 +9,8 @@ import java.util.Map;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.plugins.AMIArgProcessor;
+import org.contentmine.ami.tools.AMIWordsTool;
+import org.contentmine.ami.tools.AMIWordsTool.WordMethod;
 import org.contentmine.ami.wordutil.LuceneUtils;
 import org.contentmine.ami.wordutil.WordSetWrapper;
 import org.contentmine.cproject.args.AbstractTool;
@@ -72,6 +74,7 @@ public class WordCollectionFactory {
 	private WordResultsElement booleanFrequenciesElement;
 	private boolean stripNumbers;
 	private List<String> rawWords;
+	private AMIWordsTool wordsTool;
 
 	public WordCollectionFactory(AMIArgProcessor argProcessor) {
 		this.amiArgProcessor = argProcessor;
@@ -98,21 +101,28 @@ public class WordCollectionFactory {
 		this.stripNumbers = stripNumbers;
 	}
 
+	/** entry point from WordArgProcessor but could be changed to AMIWordsTool */
 	void extractWords() {
+
 		List<String> words = createWordList();
 		if (words == null) {
 			LOG.debug("no words found to extract");
 			return;
 		}
 		WordArgProcessor wordArgProcessor = (WordArgProcessor) amiArgProcessor;
+		wordsTool = wordArgProcessor.getWordsTool();
 		List<String> chosenMethods = wordArgProcessor.getChosenWordAggregationMethods();
 		if (wordArgProcessor.getVerbosityInt() > 0) System.out.println("chosen methods: "+chosenMethods);
-		if (chosenMethods.contains(WordArgProcessor.WORD_LENGTHS)) {
+		if ((wordsTool != null && wordsTool.getWordMethods().contains(WordMethod.wordLengths)) ||
+				chosenMethods.contains(WordArgProcessor.WORD_LENGTHS)) {
+			LOG.debug("calculating word lengths");
 			ResultsElement resultsElement = createWordLengthsResultsElement(words);
 			wordArgProcessor.addResultsElement(resultsElement);
 		}
-		if (chosenMethods.contains(WordArgProcessor.WORD_FREQUENCIES) 
-				|| chosenMethods.contains(WordArgProcessor.FREQUENCIES)) {
+		if ((wordsTool != null && wordsTool.getWordMethods().contains(WordMethod.frequencies)) ||
+				chosenMethods.contains(WordArgProcessor.WORD_FREQUENCIES) ||
+				chosenMethods.contains(WordArgProcessor.FREQUENCIES)) {
+			LOG.debug("calculating word frequencies");
 			ResultsElement resultsElement = getWordFrequencies(words);
 			wordArgProcessor.addResultsElement(resultsElement);
 		}
@@ -124,7 +134,8 @@ public class WordCollectionFactory {
 		if (currentCTree == null) {
 			LOG.warn("No current tree");
 		} else {
-			List<String> rawWords = currentCTree.extractWords();
+			List<String> rawWords = 
+				currentCTree.extractWords();
 			words = (rawWords == null) ? null : transformWordStream(rawWords);
 		}
 //		AbstractTool.debug(amiArgProcessor.getAbstractTool(), 0, "createWordList "+words.size(), LOG);
@@ -134,19 +145,27 @@ public class WordCollectionFactory {
 	private List<String> transformWordStream(List<String> transformedWords) {
 //		AbstractTool.debug(amiArgProcessor.getAbstractTool(), 1, "transformWordStream", LOG);
 		AMIArgProcessor wordArgProcessor = (AMIArgProcessor) amiArgProcessor;
-		if (amiArgProcessor.getChosenWordTypes().contains(AMIArgProcessor.ABBREVIATION)) {
+		if ((wordsTool != null && wordsTool.isAbbreviation()) ||
+				amiArgProcessor.getChosenWordTypes().contains(AMIArgProcessor.ABBREVIATION)) {
+			
 			transformedWords = createAbbreviations(transformedWords);
 		}
-		if (amiArgProcessor.getChosenWordTypes().contains(AMIArgProcessor.CAPITALIZED)) {
+		if ((wordsTool != null && wordsTool.isCapital()) || 
+				amiArgProcessor.getChosenWordTypes().contains(AMIArgProcessor.CAPITALIZED)) {
 			transformedWords = createCapitalized(transformedWords);
 		} 
-		if (amiArgProcessor.getWordCaseList().contains(AMIArgProcessor.IGNORE)) {
+		if ((wordsTool != null && wordsTool.isIgnoreCase()) ||
+				amiArgProcessor.getWordCaseList().contains(AMIArgProcessor.IGNORE)) {
 			transformedWords = toLowerCase(transformedWords);
 		}
-		for (WordSetWrapper stopwordSet : wordArgProcessor.getStopwordSetList()) {
-			transformedWords = applyStopwordFilter(stopwordSet, transformedWords);
+		List<WordSetWrapper> stopWordSetList = 
+				(wordsTool != null) ? wordsTool.getStopWordsSetList() : 
+				wordArgProcessor.getStopwordSetList();
+		for (WordSetWrapper stopWordSet : stopWordSetList) {
+			transformedWords = applyStopwordFilter(stopWordSet, transformedWords);
 		}
-		if (amiArgProcessor.getStemming()) {
+		if ((wordsTool != null && wordsTool.isStemming()) ||
+				amiArgProcessor.getStemming()) {
 			transformedWords = LuceneUtils.applyPorterStemming(transformedWords);
 		}
 		return transformedWords;

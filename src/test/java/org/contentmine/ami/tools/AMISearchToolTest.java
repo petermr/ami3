@@ -46,21 +46,22 @@ public class AMISearchToolTest {
 	
 
 	@Test
+	/** this effectively runs
+	 * ami -p <targetDir> search --dictionary country
+	 */
 	public void testZikaCooccurrence0() {
+		System.out.println(AMIFixtures.TEST_ZIKA10_DIR);
 		File targetDir = new File("target/cooccurrence/zika10a");
-		CMineTestFixtures.cleanAndCopyDir(AMIFixtures.TEST_ZIKA10A_DIR, targetDir);
+		CMineTestFixtures.cleanAndCopyDir(AMIFixtures.TEST_ZIKA10_DIR, targetDir);
 		String args = 
-//				"-p /* /Users/pm286/workspace/cmdev/normami/target/cooccurrence/zika10a/"
-				"-p "+targetDir
-				+ " --dictionaryTop /Users/pm286/ContentMine/dictionary/dictionaries"
-				+ " --dictionary "
-				+ ""
-				+ "country species "
-				+ " --oldstyle"  // old style
-//				+ " --ignorePlugins word"
+				" -p "+targetDir
 				+ " -v"
+				+ " search"
+//				+ " --no-oldstyle"
+				+ " --dictionary "
+				+ " country disease"
 			;
-		new AMISearchTool().runCommands(args);
+		AMI.main(args);
 	}
 	
 	@Test
@@ -68,7 +69,7 @@ public class AMISearchToolTest {
 		File targetDir = new File("target/cooccurrence/zika10");
 		CMineTestFixtures.cleanAndCopyDir(AMIFixtures.TEST_ZIKA10_DIR, targetDir);
 		String args = 
-				"-p /Users/pm286/workspace/cmdev/normami/target/cooccurrence/zika10"
+				" -p /Users/pm286/workspace/cmdev/normami/target/cooccurrence/zika10"
 				+ " --dictionary species gene country disease funders "
 			;
 		new AMISearchTool().runCommands(args);

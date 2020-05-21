@@ -141,10 +141,15 @@ public class AMIOCRTest {
 	public void testScaleOCR() throws Exception {
 		String args = ""
 				+ "-t /Users/pm286/workspace/uclforest/devtest/case_systematic_review_ar"
+//				+ "-t /Users/pm286/workspace/uclforest/devtest/case_systematic_review_ar"
+				+ " --inputname raw"
 				+ " ocr"
+//				+ " --help"
 				+ " --html true"
 //				+ " --maxsize 700"
 //				+ " --filename maxsize700"
+//				+ " --filename=foobar"
+				+ " --tesseract=/usr/local/bin/tesseract"
                 + " --scalefactor 2.0"
 				;
 		AMI.execute(args);
@@ -194,16 +199,14 @@ public class AMIOCRTest {
 	public void testBatteryGraph2018() {
 		CTree cTree = new CTree(new File(NormaFixtures.TEST_IMAGES_DIR, "ocr/battery"));
 		LOG.debug("ctree "+cTree);
-//		File plotImageFile = new File(batteryDir, "panel0_0_128_true.png");
-//		Assert.assertTrue(plotImageFile.exists());
-//		AbstractAMITool ocrTool = new AMIOCRTool();
-		String cmd = "--ctree "+cTree.getDirectory()+""
-				+ " ocr";
-		LOG.debug(cmd);
-		AMI.execute(cmd);
-//		ocrTool.runCommands(cmd);
-		
-	
+		String cmd = " --ctree "+cTree.getDirectory()+""
+					+ " --inputname raw"
+					+ " ocr"
+					+ " --html true"
+					+ " --tesseract=/usr/local/bin/tesseract"
+	                + " --scalefactor 2.0"
+					;
+			AMI.execute(cmd);
 	}
 
 	@Test

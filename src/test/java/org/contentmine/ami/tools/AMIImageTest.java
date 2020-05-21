@@ -34,11 +34,18 @@ public class AMIImageTest extends AbstractAMITest {
 	@Before
 	public void startUp() {
 		if (!started) {
-			String cmd = "-p " + FOREST_PLOT_SMALL 
-					+ " pdfbox";
-			AMIPDFTool pdfTool = AMI.execute(AMIPDFTool.class, cmd);
+			ensurePdfImages(FOREST_PLOT_SMALL);
+			ensurePdfImages(OLD_DEVTEST);
+			ensurePdfImages(OLD_SPSS); 
+			ensurePdfImages(new File(SRC_TEST_AMI, "battery10")); 
 		}
 		started = true;
+	}
+
+	private void ensurePdfImages(File dir) {
+		String cmd = "-p " + dir 
+			+ " pdfbox";
+		AMIPDFTool pdfTool = AMI.execute(AMIPDFTool.class, cmd);
 	}
 	
 	@Test
@@ -526,36 +533,49 @@ public class AMIImageTest extends AbstractAMITest {
 		CProject project = new CProject(cProjectDir);
 		List<String> treeNames = Arrays.asList(new String[] {
 				"PMC3776197",
-//				"PMC4062906",
-//				"PMC4709726",
-//				"PMC5082456",
-//				"PMC5082892",
-//				"PMC5115307",
-//				"PMC5241879",
+				"PMC4062906",
+				"PMC4709726",
+				"PMC5082456",
+				"PMC5082892",
+				"PMC5115307",
+				"PMC5241879",
 				"PMC5604389",
 				});
 		String treeNamesString = String.join(" ", treeNames);
+		cmd = "-p " + project
+				+ " -v"
+				+ " clean */svg/*"
+				+ " clean */pdfimages/*"
+				 ;
+		AbstractAMITool imageTool = AMI.execute(AMICleanTool.class, cmd);
 
 		cmd = "-p " + project
 				+ " -v"
 				+ " --inputname raw"
 				+ " --includetree " + treeNamesString
+				+ " pdfbox"
 				+ " image"
+//								+ " --includetree " + treeNamesString
+
 //				+ " clean */svg/*"
 				;
-		AbstractAMITool imageTool = AMI.execute(AMIImageTool.class, cmd);
+		imageTool = AMI.execute(AMIImageTool.class, cmd);
 		System.out.println("imageTool? " + imageTool);
 //		Assert.assertEquals("class", imageTool.getClass(), AMIImageTool.class);
 		cmd = "-p " + project
 				+ " -v"
+				+ " --inputname raw"
+				+ " --includetree " + treeNamesString
 				+ " image"
+//				+ " pdfbox"
 //				+ " --includetree " + treeNamesString
-				+ " pdfbox";
+				;
 		imageTool = AMI.execute(AMIImageTool.class, cmd);
 		System.out.println("imageTool? " + imageTool);
 		cmd = "-p " + project
 				+ " -v"
-//				+ " --includetree " + String.join(" ", treeNamesString)
+				+ " --inputname raw"
+				+ " --includetree " + treeNamesString
 				+ " image"
 				+ " --small=small --monochrome=monochrome --duplicate=duplicate"
 				;

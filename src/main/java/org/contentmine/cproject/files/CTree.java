@@ -3,7 +3,6 @@ package org.contentmine.cproject.files;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -34,6 +33,7 @@ import org.contentmine.cproject.util.XMLUtils;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.IntRange;
+import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.euclid.util.CMFileUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlDiv;
@@ -1258,7 +1258,7 @@ public class CTree extends CContainer implements Comparable<CTree> {
 	public List<String> extractWordsFromScholarlyHtml() {
 		ensureScholarlyHtmlElement();
 		String value = htmlElement == null ? null : htmlElement.getValue();
-		return value == null ? new ArrayList<String>() :  new ArrayList<String>(Arrays.asList(value.split("\\s+")));
+		return Util.splitWords(value);
 	}
 
 	public List<Element> extractSectionsFromScholarlyHtml(String xpath) {

@@ -2,7 +2,7 @@
 
 # run from ami3
 
-VERSION=ami20200511
+VERSION=ami20200519
 PROGRAM=ami3
  AMIJARS=ami-jars2
 # AMIJARS=ami-jars

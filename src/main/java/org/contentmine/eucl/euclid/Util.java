@@ -45,6 +45,7 @@ import java.text.DecimalFormatSymbols;
 import java.text.NumberFormat;
 import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Enumeration;
@@ -3431,6 +3432,17 @@ s = s.replaceAll("(?U)\\s+", replace);
 		}
 		return sb.toString();
 	}
+
+	/** splits at whitespace 
+	 * 
+	 * @param value
+	 * @return empty list if null
+	 */
+	public static List<String> splitWords(String value) {
+		return value == null ? new ArrayList<String>() :
+			new ArrayList<String>(Arrays.asList(value.split("\\s+")));
+	}
+
 
 }
 

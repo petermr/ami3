@@ -1,10 +1,13 @@
 package org.contentmine.ami.tools;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -13,11 +16,19 @@ import org.contentmine.ami.plugins.CommandProcessor;
 import org.contentmine.ami.plugins.word.WordArgProcessor;
 import org.contentmine.ami.plugins.word.WordCollectionFactory;
 import org.contentmine.ami.plugins.word.WordPluginOption;
+import org.contentmine.ami.wordutil.WordSetWrapper;
 import org.contentmine.cproject.files.CProject;
+import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.OptionFlag;
-import org.contentmine.eucl.euclid.IntRange;
-import org.eclipse.jetty.util.log.Log;
+import org.contentmine.eucl.euclid.Util;
+import org.contentmine.eucl.xml.XMLUtil;
 
+import com.google.common.collect.HashMultimap;
+import com.google.common.collect.HashMultiset;
+import com.google.common.collect.Multimap;
+import com.google.common.collect.Multiset;
+
+import nu.xom.Element;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 
@@ -81,7 +92,6 @@ public class AMIWordsTool extends AbstractAMISearchTool {
 	 */
 	public enum WordMethod {
 		frequencies,
-//		wordFrequencies,
 		wordLengths,
 //		search,
 //		wordSearch
@@ -108,30 +118,29 @@ public class AMIWordsTool extends AbstractAMISearchTool {
 		}
 	}
 
-	/* historical 
-        finalMethod="finalSummary"
-        		pattern="(aggregateFrequencies|tfidf|foo)"
+    @Option(names = {"--abbreviation"},
+            description = "extract abbreviations")
+    private Boolean abbreviation = false;
 
-   		parseMethod="parseWordLengths"
-		pattern="(acronym|capitalized)"
-		parseMethod="parseWordTypes"
+    @Option(names = {"--capital"},
+            description = "extract capitalised words")
+    private Boolean capital = false;
 
-    */
-	
     @Option(names = {"--filter"},
-    		arity = "0..1",
             description = "run filter")
-    private Boolean filter;
+    private Boolean filter = false;
 
     @Option(names = {"--filterfinal"},
-    		arity = "0..1",
             description = "run filter final (reduce)")
-    private Boolean filterFinal;
+    private Boolean filterFinal = false;
 
     @Option(names = {"--filtersummary"},
-    		arity = "0..1",
             description = "run filter summary")
-    private Boolean filterSummary;
+    private Boolean filterSummary = false;
+
+    @Option(names = {"--ignorecase"},
+            description = "ignore case")
+    private Boolean ignoreCase = false;
 
     @Option(names = {"--methods"},
     		arity = "1..*",
@@ -140,12 +149,10 @@ public class AMIWordsTool extends AbstractAMISearchTool {
     private List<WordMethod> wordMethods = Arrays.asList(new WordMethod[]{WordMethod.frequencies});
 
     @Option(names = {"--processtree"},
-    		arity = "0",
             description = " use new processTree style of processing")
 	private boolean processTree = true;
 
     @Option(names = {"--stemming"},
-    		arity = "0",
             description = "apply stemming")
     private Boolean stemming = false;
 	
@@ -164,7 +171,10 @@ public class AMIWordsTool extends AbstractAMISearchTool {
             description = "methods for word transformation")
     private List<WordTransform> transformList = new ArrayList<>();
 
-
+    @Option(names = {"--xpath"},
+    		arity = "1..*",
+            description = "sections to analyze, name=xpath")
+    private Map<String, String> xpathMap = new HashMap<>();
     /**
     @Option(names = "-x", arity = "0..1",
             defaultValue = "-1", fallbackValue = "-2",
@@ -176,6 +186,7 @@ public class AMIWordsTool extends AbstractAMISearchTool {
 	private String wordCmd;
 	private WordArgProcessor wordArgProcessor;
 	private WordCollectionFactory wordCollectionFactory;
+	private List<WordSetWrapper> stopWordSetList;
 	
 
     /**
@@ -203,21 +214,32 @@ public class AMIWordsTool extends AbstractAMISearchTool {
 
     @Override
 	protected void parseSpecifics() {
-		System.out.println("filter               " + filter);
-		System.out.println("filterfinal          " + filterFinal);
-		System.out.println("filtersummary        " + filterSummary);
-		System.out.println("methods              " + wordMethods);
-		System.out.println("processTree          " + processTree);
-		System.out.println("stemming             " + stemming);
-		System.out.println("stopword directory   " + stopwordDir);
-		System.out.println("stopword files       " + stopwordLocations);
-		System.out.println("transform            " + transformList);
+//    	makeStopwordOptions();
+    	makeStopwordSetList();
+    	super.parseSpecifics();
+//		System.out.println("filter               " + filter);
+//		System.out.println("filterfinal          " + filterFinal);
+//		System.out.println("filtersummary        " + filterSummary);
+//		System.out.println("methods              " + wordMethods);
+//		System.out.println("processTree          " + processTree);
+//		System.out.println("stemming             " + stemming);
+//		System.out.println("stopword directory   " + stopwordDir);
+//		System.out.println("stopword files       " + stopwordLocations);
+//		System.out.println("transform            " + transformList);
 		System.out.println();
 	}
 
-    @Override
+    private List<WordSetWrapper> makeStopwordSetList() {
+		wordArgProcessor = getOrCreateSearchProcessor();
+    	wordArgProcessor.setStopwords(stopwordLocations);
+    	stopWordSetList = wordArgProcessor.getStopwordSetList();
+    	return stopWordSetList;
+	}
+
+	@Override
     protected void runSpecifics() {
 		wordArgProcessor = getOrCreateSearchProcessor();
+		wordArgProcessor.setWordsTool(this);
 		abstractSearchArgProcessor = wordArgProcessor;
 		
     	populateArgProcessorFromCLI();
@@ -408,6 +430,59 @@ WS: /
 			}
 		}
 		return stopwordOptions;
+	}
+
+	public List<WordMethod> getWordMethods() {
+		return wordMethods;
+	}
+
+	public boolean isAbbreviation() {
+		return abbreviation;
+	}
+
+	public boolean isCapital() {
+		return capital;
+	}
+
+	public boolean isIgnoreCase() {
+		return ignoreCase;
+	}
+
+	public List<String> getStopWordsLocationsList() {
+		return stopwordLocations;
+	}
+
+	public List<WordSetWrapper> getStopWordsSetList() {
+		getStopWordsLocationsList();
+		return stopWordSetList;
+	}
+
+	public boolean isStemming() {
+		return stemming;
+	}
+
+	public List<String> extractWords(CTree currentCTree) {
+		List<String> extractedWords = /*(xpathList.size() > 0) ? 
+				extractXPathWords(currentCTree) : */currentCTree.extractWords();
+		return extractedWords;
+	}
+
+	private Multimap<String, Multiset<String>> extractXPathWords(CTree currentCTree) {
+		FileInputStream fis = null;
+		File existingFulltextXML = currentCTree.getExistingFulltextXML();
+		Element fullTextXML = XMLUtil.parseQuietlyToRootElementWithoutDTD(existingFulltextXML);
+		Multimap<String, Multiset<String>> wordMultisetByKey = HashMultimap.create();
+		for (String key : xpathMap.keySet()) {
+			String xpath = xpathMap.get(key);
+			Multiset<String> wordMultiset = HashMultiset.create();
+			List<String> texts = XMLUtil.getQueryValues(fullTextXML, xpath);
+			for (String text : texts) {
+				List<String> words = Util.splitWords(text);  
+				wordMultiset.addAll(words);
+			}
+			wordMultisetByKey.put(key, wordMultiset);
+		}
+		return wordMultisetByKey;
 	}
 
 }

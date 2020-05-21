@@ -13,6 +13,7 @@ import org.apache.log4j.Logger;
 import org.contentmine.ami.plugins.AMISearcher;
 import org.contentmine.ami.plugins.AbstractSearchArgProcessor;
 import org.contentmine.ami.plugins.search.SearchSearcher;
+import org.contentmine.ami.tools.AMIWordsTool;
 import org.contentmine.ami.tools.AMIWordsTool.WordMethod;
 import org.contentmine.cproject.args.AbstractTool;
 import org.contentmine.cproject.args.ArgIterator;
@@ -33,7 +34,7 @@ import org.contentmine.eucl.xml.XMLUtil;
  */
 public class WordArgProcessor extends AbstractSearchArgProcessor {
 	
-	
+	/*** THIS FUNCTIONALITY IS BEING MOVED TO AMIWordsTool */
 	public static final Logger LOG = Logger.getLogger(WordArgProcessor.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
@@ -77,6 +78,7 @@ public class WordArgProcessor extends AbstractSearchArgProcessor {
 	private IntRange wordCountRange;
 	private WordResultsElement booleanFrequencyElement;
 	private Map<String, ResultsElement> resultsByDictionary;
+	private AMIWordsTool wordsTool;
 	
 	public WordArgProcessor() {
 		super();
@@ -158,11 +160,13 @@ public class WordArgProcessor extends AbstractSearchArgProcessor {
 	}
 
 	/** extracts words - currently crudely splits the contentstream
+	 * OBSOLETE - called from WordArgProcessor
+	 * NEW called from AMIWordsTool via WordArgProcessor
 	 */
 	public void extractWords() {
  		AbstractTool tool = this.getAbstractTool();
 		if (tool != null && tool.getVerbosityInt() > 0) {
-			LOG.debug("EXTRACT WORDS");
+			LOG.debug("OBSOLETE EXTRACT WORDS");
 		}
 		getOrCreateWordCollectionFactory();
 		wordCollectionFactory.extractWords();
@@ -197,6 +201,10 @@ public class WordArgProcessor extends AbstractSearchArgProcessor {
 //		AbstractTool.debug(abstractTool, 0, "outputWordsOld "+optionName, LOG);
 		ContentProcessor currentContentProcessor = getOrCreateContentProcessor();
 		ResultsElementList resultsElementList = currentContentProcessor.getOrCreateResultsElementList();
+		if (resultsElementList.size() == 0) {
+			LOG.warn("no words to output");
+			return;
+		}
 		for (int i = 0; i < resultsElementList.size(); i++) {
 			File outputDirectory = currentContentProcessor.createResultsDirectoryAndOutputResultsElement(
 					optionName, resultsElementList.get(i)/*, CTree.RESULTS_XML*/);
@@ -242,19 +250,6 @@ public class WordArgProcessor extends AbstractSearchArgProcessor {
 		}
 	}
 
-//	public void runSearch(ArgumentOption option) {
-//		LOG.warn("moved to wordSearch");
-////		ensureResultsByDictionary();
-////		ensureSearcherList();
-////		for (AMISearcher searcher : searcherList) {
-////			SearchSearcher wordSearcher = (SearchSearcher)searcher;
-////			String title = wordSearcher.getTitle();
-////			ResultsElement resultsElement = wordSearcher.searchWordList();
-////			resultsElement.setTitle(title);
-////			resultsByDictionary.put(title, resultsElement);
-////		}
-//	}
-	
 	public void outputSearch(ArgumentOption option) {
 		outputResultsElements(option.getName());
 //		LOG.debug("OUTPUT SEARCH");
@@ -286,13 +281,6 @@ public class WordArgProcessor extends AbstractSearchArgProcessor {
 	}
 	
 	// =============================
-
-//	private void ensureResultsByDictionary() {
-//		if (resultsByDictionary == null) {
-//			resultsByDictionary = new HashMap<String, ResultsElement>();
-//		}
-//	}
-
 
 	public WordResultsElementList aggregateOverCMDirList(String pluginName, String methodName) {
 		WordResultsElementList resultsElementList = new WordResultsElementList();
@@ -346,6 +334,14 @@ public class WordArgProcessor extends AbstractSearchArgProcessor {
 
 	public void addChosenMethod(WordMethod wordMethod) {
 		
+	}
+
+	public void setWordsTool(AMIWordsTool amiWordsTool) {
+		this.wordsTool = amiWordsTool;
+	}
+	
+	public AMIWordsTool getWordsTool() {
+		return this.wordsTool;
 	}
 
 }

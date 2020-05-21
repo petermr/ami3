@@ -94,11 +94,12 @@ public class AMISectionToolTest extends AbstractAMITest {
 		String args = ""
 //				+ "-t " + new File(AMIFixtures.TEST_ZIKA10_DIR, "PMC3113902") + ""
 				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
+				+ " --forcemake"
+				+ " section"
 				+ " --sections ALL"
 				+ " --sectiontype XML"
-				+ " --forcemake"
 			;
-		new AMISectionTool().runCommands(args);
+		AMI.execute(AMISectionTool.class, args);
 	}
 	
 	@Test

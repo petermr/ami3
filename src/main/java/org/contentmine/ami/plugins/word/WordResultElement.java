@@ -35,7 +35,8 @@ public class WordResultElement extends ResultElement {
 	}
 
 	public Integer getLength() {
-		return new Integer(this.getAttributeValue(LENGTH_ATT));
+		String lengthValue = this.getAttributeValue(LENGTH_ATT);
+		return lengthValue == null ? null : new Integer(lengthValue);
 	}
 
 	public void setWord(String word) {

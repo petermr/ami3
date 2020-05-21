@@ -99,6 +99,15 @@ public class AMI implements Runnable {
 		loggingOptions.setLogging();
 	}
 
+	
+	public static void main(String args) {
+		if (args != null) {
+			main(args.trim().split("\\s+"));
+		} else {
+			System.err.println("null args");
+		}
+	}
+	
 	public static void main(String... args) {
 		int exitCode = createCommandLine().execute(args);
 		if (System.getProperty("ami.no.exit") == null) {

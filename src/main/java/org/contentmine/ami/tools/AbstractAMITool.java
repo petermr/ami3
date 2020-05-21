@@ -260,7 +260,7 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 		for (OptionSpec option : spec.options()) {
 			String label = parseResult.hasMatchedOption(option)
 					? "(matched)" : "(default)";
-			stream.printf("%s: %s %s%n", option.longestName(), option.getValue(), label);
+			stream.printf("%-20s: %-20s %9s%n", option.longestName(), option.getValue(), label);
 		}
 	}
 
