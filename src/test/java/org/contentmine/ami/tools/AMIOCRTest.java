@@ -4,10 +4,13 @@ import java.io.File;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.ami.AMIFixtures;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
+import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGSVG;
+import org.contentmine.norma.NAConstants;
 import org.contentmine.norma.NormaFixtures;
 import org.contentmine.norma.image.ocr.GOCRConverter;
 import org.junit.Test;
@@ -17,11 +20,13 @@ import org.junit.Test;
  * @author pm286
  *
  */
-public class AMIOCRTest {
+public class AMIOCRTest extends AbstractAMITest {
 	public static final Logger LOG = Logger.getLogger(AMIOCRTest.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
+	
+	public static final File TEST_BATTERY10 = new File(NAConstants.TEST_AMI_DIR, "battery10");
 
 	@Test
 	/** 
@@ -365,7 +370,15 @@ public class AMIOCRTest {
 	 */
 	@Test
 	public void testBattery2020() {
-//		PMC3776197
-		
+		File targetDir = new File("target/battery10");
+		CMineTestFixtures.cleanAndCopyDir(TEST_BATTERY10, targetDir);
+		String cmd = " --cproject "+targetDir+""
+					+ " --inputname raw"
+					+ " ocr"
+					+ " --html true"
+					+ " --tesseract=/usr/local/bin/tesseract"
+	                + " --scalefactor 2.0"
+					;
+			AMI.execute(cmd);
 	}
 }
