@@ -53,9 +53,15 @@ public class AMIFilterTest {
 				"  generate-completion  Generate bash/zsh completion script for ami.",
 				abstractTool.getOptionsValue());
 */
-		/** fails with NPE */
-		abstractTool = AMI.execute(AbstractAMITool.class, " --help");
-		Assert.assertEquals("  assert               Makes assertions about objects created by AMI.\n" + 
+		// to get help for `ami filter`
+		// TODO check out https://stefanbirkner.github.io/system-rules/#SystemErrAndOutRule
+		//   for asserting on tool's output to system.out/system.err
+		abstractTool = AMI.execute(AbstractAMITool.class, "filter --help");
+
+		// to get help for `ami`
+		//AMI ami = AMI.execute(AMI.class, "--help");
+
+		Assert.assertEquals("  assert               Makes assertions about objects created by AMI.\n" +
 				"  clean                Cleans specific files or directories in project.\n" + 
 				"  display              Displays files in CTree.\n" + 
 				"  download             Downloads content from remote site.\n" + 
