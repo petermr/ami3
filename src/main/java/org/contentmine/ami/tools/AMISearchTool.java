@@ -250,6 +250,7 @@ public class AMISearchTool extends AbstractAMISearchTool {
 	}
 
 	protected String buildCommandFromBuiltinsAndFacets() {
+		
 		String cmd = "word(frequencies)xpath:@count>20~w.stopwords:pmcstop.txt_stopwords.txt";
 		String cmd1 = cmd;
 		if (dictionaryList != null) {
@@ -259,6 +260,7 @@ public class AMISearchTool extends AbstractAMISearchTool {
 				} else if (facet.equals("species")) {
 					cmd1 += " species(binomial)";
 				} else {
+					// add names dictionary
 					checkDictionaryExists(facet);
 					cmd1 += " "+AMIProcessor.SEARCH + "("+facet+")";
 				}

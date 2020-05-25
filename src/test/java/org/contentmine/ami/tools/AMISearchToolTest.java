@@ -32,10 +32,11 @@ public class AMISearchToolTest {
 		String args = 
 				"-p "+targetDir
 //				"-t "+new File(targetDir, "PMC2640145")
+				+ " -vv"
 				+ " search"
 				+ " --dictionaryTop /Users/pm286/ContentMine/dictionary/dictionaries"
 				+ " --dictionary country "
-				+ " --oldstyle"  // old style
+//				+ " --no-oldstyle"  // old style
 //				+ " --ignorePlugins word"
 //				+ " -v"
 			;

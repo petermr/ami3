@@ -6,6 +6,7 @@ import java.io.IOException;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.ami.tools.AMI.CTreeOptions.BaseOptions;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.util.CMineUtil;
@@ -17,7 +18,9 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import picocli.CommandLine.ArgGroup;
 import picocli.CommandLine.Command;
+import picocli.CommandLine.Mixin;
 import picocli.CommandLine.Option;
 
 /** transforms file using XSLT and maybe other things
@@ -40,17 +43,26 @@ public class AMITransformTool extends AbstractAMITool {
 		jsoup,
 		tidy,
 	}
-    @Option(names = {"--stylesheet"},
-    		arity = "1",
-    		defaultValue="nlm2html",
-            description = "XSLT stylesheet")
-    private String stylesheet;
-    
-    @Option(names = {"--tidy"},
-    		arity = "1",
-    		defaultValue="jsoup",
-            description = "HTML tidier")
-    private Tidier tidier = null;
+	
+
+	protected static class XSLOptions {
+	    @Option(names = {"-x", "--stylesheet"}, paramLabel = "XSL", order = 24,
+	    		arity = "1",
+	    		defaultValue="nlm2html",
+	            description = "XSLT stylesheet")
+	    protected String stylesheet;
+	    
+	    @Option(names = {"--tidy"}, paramLabel = "TIDY", order = 25,
+	    		arity = "0..1",
+	    		fallbackValue = "jsoup",
+	            description = "HTML tidier. The options tend to vary because new methods are developed and old ones stagnate")
+	    protected Tidier tidier = null;
+	    
+	}
+
+	@ArgGroup(exclusive = true, multiplicity = "0..1", heading = "", order = 21)
+	XSLOptions xslOptions = new XSLOptions();
+
     
     /** used by some non-picocli calls
      * obsolete it
@@ -69,8 +81,8 @@ public class AMITransformTool extends AbstractAMITool {
 
     @Override
 	protected void parseSpecifics() {
-		System.out.println("stylesheet          " + stylesheet);
-		System.out.println();
+    	
+    	super.parseSpecifics();
 	}
 
 
@@ -82,7 +94,7 @@ public class AMITransformTool extends AbstractAMITool {
     }
 
 	protected void processProject() {
-		if (tidier != null) {
+		if (xslOptions.tidier != null) {
 			runTidy();
 		} else {
 			runNorma();

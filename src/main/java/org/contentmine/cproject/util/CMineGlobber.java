@@ -250,7 +250,7 @@ public class CMineGlobber {
 	 */
 	public static List<File> listGlobbedFilesQuietly(File directory, String glob) {
 		List<File> files = new ArrayList<File>();
-		CMineGlobber globber = new CMineGlobber(glob, directory);
+		CMineGlobber globber = new CMineGlobber(glob, directory).setUseDirectories(true);
 		files = globber.listFiles();
 		return files;
 	}

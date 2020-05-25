@@ -9,6 +9,7 @@ import java.util.Map;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.plugins.AMIArgProcessor;
+import org.contentmine.ami.tools.AMITableTool;
 import org.contentmine.ami.tools.AMIWordsTool;
 import org.contentmine.ami.tools.AMIWordsTool.WordMethod;
 import org.contentmine.ami.wordutil.LuceneUtils;
@@ -109,6 +110,7 @@ public class WordCollectionFactory {
 			LOG.debug("no words found to extract");
 			return;
 		}
+		LOG.debug("created words: "+words.size());
 		WordArgProcessor wordArgProcessor = (WordArgProcessor) amiArgProcessor;
 		wordsTool = wordArgProcessor.getWordsTool();
 		List<String> chosenMethods = wordArgProcessor.getChosenWordAggregationMethods();
@@ -134,38 +136,55 @@ public class WordCollectionFactory {
 		if (currentCTree == null) {
 			LOG.warn("No current tree");
 		} else {
-			List<String> rawWords = 
-				currentCTree.extractWords();
+			List<String> rawWords = currentCTree.extractWords();
 			words = (rawWords == null) ? null : transformWordStream(rawWords);
+			if (wordsTool != null && wordsTool.getVerbosityInt() >= 2) {
+				LOG.debug("wordsTool " + words.size());
+			}
 		}
 //		AbstractTool.debug(amiArgProcessor.getAbstractTool(), 0, "createWordList "+words.size(), LOG);
 		return words;
 	}
 
+	// OLD version 
 	private List<String> transformWordStream(List<String> transformedWords) {
 //		AbstractTool.debug(amiArgProcessor.getAbstractTool(), 1, "transformWordStream", LOG);
 		AMIArgProcessor wordArgProcessor = (AMIArgProcessor) amiArgProcessor;
-		if ((wordsTool != null && wordsTool.isAbbreviation()) ||
-				amiArgProcessor.getChosenWordTypes().contains(AMIArgProcessor.ABBREVIATION)) {
-			
+		if (amiArgProcessor.getChosenWordTypes().contains(AMIArgProcessor.ABBREVIATION)) {
 			transformedWords = createAbbreviations(transformedWords);
 		}
-		if ((wordsTool != null && wordsTool.isCapital()) || 
-				amiArgProcessor.getChosenWordTypes().contains(AMIArgProcessor.CAPITALIZED)) {
+		if (amiArgProcessor.getChosenWordTypes().contains(AMIArgProcessor.CAPITALIZED)) {
 			transformedWords = createCapitalized(transformedWords);
 		} 
-		if ((wordsTool != null && wordsTool.isIgnoreCase()) ||
-				amiArgProcessor.getWordCaseList().contains(AMIArgProcessor.IGNORE)) {
+		if (amiArgProcessor.getWordCaseList().contains(AMIArgProcessor.IGNORE)) {
 			transformedWords = toLowerCase(transformedWords);
 		}
-		List<WordSetWrapper> stopWordSetList = 
-				(wordsTool != null) ? wordsTool.getStopWordsSetList() : 
-				wordArgProcessor.getStopwordSetList();
+		List<WordSetWrapper> stopWordSetList = wordArgProcessor.getStopwordSetList();
 		for (WordSetWrapper stopWordSet : stopWordSetList) {
 			transformedWords = applyStopwordFilter(stopWordSet, transformedWords);
 		}
-		if ((wordsTool != null && wordsTool.isStemming()) ||
-				amiArgProcessor.getStemming()) {
+		if (amiArgProcessor.getStemming()) {
+			transformedWords = LuceneUtils.applyPorterStemming(transformedWords);
+		}
+		return transformedWords;
+	}
+
+	/** AMIWordsTool version */
+	private List<String> transformWordStream(AMIWordsTool wordsTool, List<String> transformedWords) {
+		if (wordsTool.isAbbreviation()) {
+			transformedWords = createAbbreviations(transformedWords);
+		}
+		if (wordsTool.isCapital()) {
+			transformedWords = createCapitalized(transformedWords);
+		} 
+		if (wordsTool.isIgnoreCase()) {
+			transformedWords = toLowerCase(transformedWords);
+		}
+		List<WordSetWrapper> stopWordSetList = wordsTool.getStopWordsSetList();
+		for (WordSetWrapper stopWordSet : stopWordSetList) {
+			transformedWords = applyStopwordFilter(stopWordSet, transformedWords);
+		}
+		if (wordsTool.isStemming()) {
 			transformedWords = LuceneUtils.applyPorterStemming(transformedWords);
 		}
 		return transformedWords;
@@ -454,15 +473,18 @@ public class WordCollectionFactory {
 	 * Never used?
 	 * @param resultsElementList
 	 */
-	public void createAggregateFrequenciesElement(ResultsElementList resultsElementList) {
-		if (amiArgProcessor.getVerbosityInt() >= 2) System.out.println("createAggregateFrequenciesElement");
-		Multiset<String> aggregateSet = this.createAggregateSet(resultsElementList);
-		Iterable<Entry<String>> sortedEntries = getEntriesSortedByCount(aggregateSet);
-		this.createWordResultElementsAndAddToAggregateFrequenciesElement(sortedEntries);
-	}
+//	public void createAggregateFrequenciesElement(ResultsElementList resultsElementList) {
+//		LOG.debug("createAggregateFrequencies");
+//		if (amiArgProcessor.getVerbosityInt() >= 2) System.out.println("createAggregateFrequenciesElement");
+//		Multiset<String> aggregateSet = this.createAggregateSet(resultsElementList);
+//		Iterable<Entry<String>> sortedEntries = getEntriesSortedByCount(aggregateSet);
+//		this.createWordResultElementsAndAddToAggregateFrequenciesElement(sortedEntries);
+//	}
 
 	private Multiset<String> createAggregateSet(ResultsElementList resultsElementList) {
-		if (amiArgProcessor.getVerbosityInt() >= 2) System.out.println("createAggregateSet(ResultsElementList)");
+		if (amiArgProcessor.getVerbosityInt() >= 2) {
+			System.out.println("createAggregateSet(ResultsElementList)");
+		}
 		Multiset<String> aggregateSet = HashMultiset.create();
 		for (ResultsElement resultsElement : resultsElementList) {
 			String title = resultsElement.getTitle();

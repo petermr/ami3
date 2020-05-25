@@ -166,7 +166,7 @@ public class WordArgProcessor extends AbstractSearchArgProcessor {
 	public void extractWords() {
  		AbstractTool tool = this.getAbstractTool();
 		if (tool != null && tool.getVerbosityInt() > 0) {
-			LOG.debug("OBSOLETE EXTRACT WORDS");
+			LOG.debug(tool + " OBSOLETE EXTRACT WORDS");
 		}
 		getOrCreateWordCollectionFactory();
 		wordCollectionFactory.extractWords();

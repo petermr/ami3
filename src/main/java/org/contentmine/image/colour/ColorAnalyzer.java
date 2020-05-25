@@ -138,6 +138,25 @@ public class ColorAnalyzer {
 	private boolean includeGray;
 	private BufferedImage grayImage;
 
+	public ColorAnalyzer() {
+		setDefaults();
+	}
+	
+	private void setDefaults() {
+		// pixel-svg options 
+		// flattening
+		this.setStartPlot(1);
+		this.setMaxPixelSize(1000000);
+		this.setIntervalCount(4);
+		this.setEndPlot(15);
+		this.setMinPixelSize(300);
+		// saturate/gray
+		this.setMinGray(32);
+		this.setMaxGray(224);
+		this.setMaxGrayChroma(32);
+
+	}
+
 	public int getMinGray() {
 		return minGray;
 	}
@@ -172,25 +191,6 @@ public class ColorAnalyzer {
 	public ColorAnalyzer setIncludeGray(boolean includeGray) {
 		this.includeGray = includeGray;
 		return this;
-	}
-
-	public ColorAnalyzer() {
-		setDefaults();
-	}
-	
-	private void setDefaults() {
-		// pixel-svg options 
-		// flattening
-		this.setStartPlot(1);
-		this.setMaxPixelSize(1000000);
-		this.setIntervalCount(4);
-		this.setEndPlot(15);
-		this.setMinPixelSize(300);
-		// saturate/gray
-		this.setMinGray(32);
-		this.setMaxGray(224);
-		this.setMaxGrayChroma(32);
-
 	}
 
 	public int getMinChroma() {
@@ -414,9 +414,12 @@ public ColorAnalyzer setSaturate(boolean saturate) {
 	}
 
 	
+	/** very slow */
 	private void createPixelListsFromColorValues() {
 		pixelListList = new ArrayList<PixelList>();
+		System.out.println("colours: "+colorValues.size());
 		for (int i = 0; i < colorValues.size(); i++) {
+			/*if (i % 100 == 0 )*/ System.out.print(".");
 			int colorValue = colorValues.elementAt(i);
 			int colorCount = colorCounts.elementAt(i);
 			String hex = Integer.toHexString(colorValue);

@@ -196,11 +196,7 @@ public class AMIDownloadTool extends AbstractAMITool {
 					+ "can be concatenated with commas ")
 	protected List<RawFileFormat> rawFileFormats = new ArrayList<>();
 
-	@Option(names = {"-o", "--output"},
-			paramLabel = "output",
-			description = "Output filename (no defaults)"
-	)
-	protected String output = null;
+	/** moved to superclass */
 
     private File dictionaryFile;
 	private InputStream dictionaryInputStream;
@@ -231,9 +227,9 @@ public class AMIDownloadTool extends AbstractAMITool {
     		throw new RuntimeException("Must give project");
     	}
     	
-    	if (output == null) {
-    		output = "scraped/";
-    		LOG.info("set output to: " + output);
+    	if (output() == null) {
+    		output("scraped/");
+    		LOG.info("set output to: " + output());
     	}
 //		System.out.println("fileformats     " + rawFileFormats);
 		System.out.println("project         " + cProject);

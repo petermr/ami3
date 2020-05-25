@@ -24,6 +24,10 @@ public class AMITransformToolTest {
 		LOG.setLevel(Level.DEBUG);
 	}
 
+	@Test
+	public void testOptions() {
+		AMI.execute("-vv transform --tidy");
+	}
 	/** runs NormaTransformer
 	 * 
 	 */
@@ -31,10 +35,10 @@ public class AMITransformToolTest {
 	public void testZikaScholarlyHtml() {
 		File targetDir = new File("target/cooccurrence/zika10");
 		CMineTestFixtures.cleanAndCopyDir(AMIFixtures.TEST_ZIKA10_DIR, targetDir);
-		String args = 
-				"-p /Users/pm286/workspace/cmdev/normami/target/cooccurrence/zika10/"
+		String cmd = 
+				"-p " + targetDir + " -v " + " transform "
 			;
-		new AMITransformTool().runCommands(args);
+		AMI.execute(cmd);
 	}
 	
 	@Test
@@ -82,5 +86,6 @@ public class AMITransformToolTest {
 		XMLUtil.writeQuietly(xDoc.getRootElement(), new File("target/jsoup/test.xml"), 1);
 //		new AMITransformTool().runCommands(command);
 	}
+	
 	
 }

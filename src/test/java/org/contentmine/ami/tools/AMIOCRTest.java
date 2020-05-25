@@ -381,4 +381,71 @@ public class AMIOCRTest extends AbstractAMITest {
 					;
 			AMI.execute(cmd);
 	}
+	
+	/**
+	 * 
+	 */
+	@Test
+	public void testBattery2020PreIntegrationIT() {
+		File targetDir = new File("target/ocr/battery10/");
+		CMineTestFixtures.cleanAndCopyDir(TEST_BATTERY10, targetDir);
+		/** clean all previous searches */
+		boolean process = true;
+		if (process) {
+		AMI.execute("-p " + targetDir 
+				+ " clean"
+				+ " **/pdfimages **/svg **/results **/sections **/tei"
+				+ " **/search.* **/word.*"
+				+ " word.*"
+				);
+		AMI.execute("-p " + targetDir + " -v " + " pdfbox ");
+		AMI.execute("-p " + targetDir + " -v " + " filter --small small --duplicate duplicate --monochrome monochrome");
+		}
+		AMI.execute("-p " + targetDir + " -v " + " --inputname " + " raw " + " image --posterize 16"); 
+		
+		AMI.execute(" -p "+targetDir+""
+					+ " --inputname raw"
+					+ " ocr"
+					+ " --html true"
+					+ " --tesseract=/usr/local/bin/tesseract"
+	                + " --scalefactor 2.0")
+					;
+	}
+	
+	/**
+	 * 
+	 */
+	@Test
+	public void testBattery2020IntegrationIT() {
+		File targetDir = new File("target/ocr/battery10/");
+		CMineTestFixtures.cleanAndCopyDir(TEST_BATTERY10, targetDir);
+		/** clean all previous searches */
+		AMI.execute(""
+			+ "-p " + targetDir 
+			+ " --inputname " + " raw " // needed for posterize
+			+ "-v "
+			+ ""				// cleans all non-essential subdirectories and files
+			+ " clean"
+			+ " **/pdfimages **/svg **/results **/sections **/tei"
+			+ " **/search.* **/word.*"
+			+ " word.*"
+			+ ""				//extracts text and images
+			+ " pdfbox "
+			+ ""				// filters small and duplicate images
+			+ " filter --small small --duplicate duplicate --monochrome monochrome"
+			+ ""				// "flattens colours to 16
+			+ " image --posterize 16"
+			+ ""
+			+ " ocr"			// OCR using tesseract
+			+ " --html true --tesseract=/usr/local/bin/tesseract --scalefactor 2.0"
+			);
+		/** one the commandline, omitting "clean" and with defaults and properties/config 
+		 * this could be:
+ami -p <targetDir> --inputname raw -v pdfbox filter -sdm image --posterize 16 ocr "
+		 * 
+		 */
+	}
+
+	
+	
 }

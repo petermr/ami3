@@ -1,11 +1,12 @@
 package org.contentmine.ami.tools;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.io.PrintStream;
-import java.io.PrintWriter;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -260,8 +261,19 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 		for (OptionSpec option : spec.options()) {
 			String label = parseResult.hasMatchedOption(option)
 					? "(matched)" : "(default)";
-			stream.printf("%-20s: %-20s %9s%n", option.longestName(), option.getValue(), label);
+			stream.printf("%-20s: %1s %9s%n", option.longestName(), label.substring(1,  2), option.getValue());
 		}
+	}
+	
+	/** mainly for testing 
+	 * creates printOptionValues() as string
+	 */
+	public String getOptionsValue() {
+		ByteArrayOutputStream out = new ByteArrayOutputStream();
+		PrintStream stream = new PrintStream(out);
+		printOptionValues(stream);
+		stream.flush();
+		return out.toString();
 	}
 
 	/**
@@ -489,6 +501,14 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 
 	protected void input(String newValue) {
 		parent.generalOptions.input = newValue;
+	}
+
+	protected String output() {
+		return parent.generalOptions.output;
+	}
+
+	protected void output(String newValue) {
+		parent.generalOptions.output = newValue;
 	}
 
 	protected boolean[] verbosity() {

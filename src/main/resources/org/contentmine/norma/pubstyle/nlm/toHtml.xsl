@@ -18,6 +18,7 @@
     <xsl:variable name="under">_</xsl:variable>
     
 	<xsl:template match="/">
+  	  <xsl:message>nlm:toHtml.xsl</xsl:message>
 	  <html>
 		<xsl:apply-templates />
 	  </html>
@@ -483,8 +484,8 @@ UNKNOWN nlm: alt-text:
 	</xsl:template>
 
 	<xsl:template match="
-	    *[local-name()='article-title'] |
-		*[local-name()='alt-title']">
+	    *[local-name()='title-group']/*[local-name()='article-title'] |
+		*[local-name()='title-group']/*[local-name()='alt-title']">
 	  <div class="{local-name()}" title="{local-name()}"><xsl:apply-templates/></div>
 	</xsl:template>
 

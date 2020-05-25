@@ -16,6 +16,8 @@ import org.contentmine.graphics.svg.util.ImageIOUtil;
 import org.contentmine.image.ImageUtil;
 import org.contentmine.image.ImageUtil.SharpenMethod;
 import org.contentmine.image.ImageUtil.ThresholdMethod;
+import org.contentmine.image.colour.ColorAnalyzer;
+
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 
@@ -163,12 +165,12 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
             + "4 vals = top, right bottom, left; default NONE")
 	private List<Integer> borders = null ;
 
-    @Option(names = {"--duplicate"},
-    		arity="0..1",
-    		defaultValue = "duplicate",
-            description = "FILTER: move duplicate images to <duplicate>; default = ${DEFAULT-VALUE}; "+_DELETE+" means delete"
-            )
-	private DuplicateDest duplicateDirname;
+//    @Option(names = {"--duplicate"},
+//    		arity="0..1",
+//    		defaultValue = "duplicate",
+//            description = "FILTER: move duplicate images to <duplicate>; default = ${DEFAULT-VALUE}; "+_DELETE+" means delete"
+//            )
+//	private DuplicateDest duplicateDirname;
 
     @Option(names = {"--filter"},
             description = "pre-runs default FILTER (i.e. without args), duplicate, small, monochrome"
@@ -187,19 +189,19 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
             description = "minimum width (pixels) to accept")
     private int minWidth;
     
-    @Option(names = {"--monochrome"},
-    		arity="0..1",
-    		defaultValue = "monochrome",
-            description = "FILTER: move monochrome images to <monochrome>; default ${DEFAULT-VALUE}; "+_DELETE+" means delete"
-            )
-	private MonochromeDest monochromeDirname;
+//    @Option(names = {"--monochrome"},
+//    		arity="0..1",
+//    		defaultValue = "monochrome",
+//            description = "FILTER: move monochrome images to <monochrome>; default ${DEFAULT-VALUE}; "+_DELETE+" means delete"
+//            )
+//	private MonochromeDest monochromeDirname;
 
-    @Option(names = {"--small"},
-    		arity="0..1",
-    		defaultValue = "small",
-            description = "FILTER: move small images to <monochrome>; default ${DEFAULT-VALUE}; "+_DELETE+" means delete"
-            )
-	private SmallDest smallDirname;
+//    @Option(names = {"--small"},
+//    		arity="0..1",
+//    		defaultValue = "small",
+//            description = "FILTER: move small images to <small>; default ${DEFAULT-VALUE}; "+_DELETE+" means delete"
+//            )
+//	private SmallDest smallDirname;
     
     // TRANSFORM OPTIONS
     
@@ -231,8 +233,11 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
     private Integer maxWidth;
     
     @Option(names = {"--posterize"},
-            description = "create a map of colors including posterization. NYI")
-    private boolean posterize = false;
+    		arity = "1",
+    		defaultValue = "16",
+            description = "flatten colors to set number, must be power-of-2 (default: ${DEFAULT-VALUE}) "
+            		+ "to create a map of colors")
+    private Integer posterizeCount = null;
 
     @Option(names = {"--priority"},
     		arity = "1",
@@ -313,26 +318,6 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 	protected void parseSpecifics() {
     	if (verbosity().length > 0) {
 			printOptionValues(System.out);
-//			System.out.println("minHeight           " + minHeight);
-//			System.out.println("minWidth            " + minWidth);
-//			System.out.println("smalldir            " + smallDirname);
-//			System.out.println("monochromeDir       " + monochromeDirname);
-//			System.out.println("duplicateDir        " + duplicateDirname);
-//	
-//	    	
-//			System.out.println("borders             " + borders);
-//			System.out.println("binarize            " + binarize);
-//			System.out.println("despeckle           " + despeckle);
-//			System.out.println("erodeDilate         " + erodeDilate);
-//			System.out.println("maxheight           " + maxHeight);
-//			System.out.println("maxwidth            " + maxWidth);
-//			System.out.println("posterize           " + posterize);
-//			System.out.println("priority            " + priorityImage);
-//			System.out.println("rotate              " + rotateAngle);
-//			System.out.println("scalefactor         " + scalefactor);
-//			System.out.println("sharpen             " + sharpen);
-//			System.out.println("template            " + templateFilename);
-//			System.out.println("threshold           " + threshold);
     	}
 		System.out.println();
 	}
@@ -465,10 +450,11 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 				}
 				if (threshold != null) {
 					basename += "_thr_"+threshold.toString();
-				}
+				} 
 			}
-			if (posterize) {
+			if (posterizeCount != null) {
 				image = posterizeAndSave(image, imageDir);
+				basename += "_p"+posterizeCount;
 			}
 			if (despeckle) {
 				image = despeckleAndSave(image, imageDir);
@@ -485,8 +471,14 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 	}
 
 	private BufferedImage posterizeAndSave(BufferedImage image, File imageDir) {
-		if (posterize) {
-			LOG.warn("posterize NYI");
+		if (posterizeCount != null) {
+			ColorAnalyzer analyzer = new ColorAnalyzer(image);
+			analyzer.setIntervalCount(posterizeCount);
+//			analyzer.analyzeFlattenedColours();
+//			analyzer.flattenImage();
+			image = ImageUtil.flattenImage(image, posterizeCount);
+
+//			LOG.warn("posterize NYI");
 		}
 		return image;
 	}

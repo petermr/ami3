@@ -102,6 +102,7 @@ public class AMICleanTool extends AbstractAMITool {
     	if (files != null && getCProjectDirectory() != null) {
     		for (String fileGlob : files) {
 	    		List<File> globList = CMineGlobber.listGlobbedFilesQuietly(cProject.getDirectory(), fileGlob);
+//	    		List<File> dirList = CMineGlobber.listGlobbed(cProject.getDirectory(), fileGlob);
 	    		LOG.debug("GLOB: " + fileGlob + "(" + globList.size() + ") ==> " + globList);
     			CMFileUtil.forceDeleteQuietly(globList);
 //	    		globList = CMineGlobber.listSortedChildFiles(cProject.getDirectory(), fileGlob);

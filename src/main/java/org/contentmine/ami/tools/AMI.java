@@ -255,6 +255,13 @@ public class AMI implements Runnable {
 		@Option(names = {"-N", "--maxTrees"}, paramLabel = "COUNT",
 				description = "Quit after given number of trees; null means infinite.")
 		protected Integer maxTreeCount = null;
+		
+		@Option(names = {"-o", "--output"},
+				paramLabel = "output",
+				description = "Output filename (no defaults)"
+		)
+		protected String output = null;
+
 	}
 
 	static class LoggingOptions {

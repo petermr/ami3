@@ -8,6 +8,7 @@ import org.contentmine.ami.AMIFixtures;
 import org.contentmine.ami.tools.AMITransformTool;
 import org.contentmine.ami.tools.AMIWordsTool;
 import org.contentmine.cproject.util.CMineTestFixtures;
+import org.contentmine.norma.NAConstants;
 import org.junit.Test;
 
 public class AMIWordsToolTest extends AbstractAMITest {
@@ -85,17 +86,21 @@ public class AMIWordsToolTest extends AbstractAMITest {
 		
 	}
 
-//	+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
-//	+ " --forcemake"
-//	+ " section"
-//	+ " --sections ALL"
-//	+ " --sectiontype XML"
-//;
-//	+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
-//	+ " --forcemake"
-//	+ " section"
-//	+ " --sections ALL"
-//	+ " --sectiontype XML"
-//;
+	@Test
+	public void testZikaSearch2() {
+		String project = "zika2";
+		File rawDir = new File(NAConstants.TEST_AMI_DIR, project);
+		File targetDir = new File("target/words/"+project);
+		CMineTestFixtures.cleanAndCopyDir(rawDir, targetDir);
+		String args = 
+				"-p "+targetDir
+//				"-t "+new File(targetDir, "PMC2640145")
+				+ " -vv"
+				+ " words"
+			;
+		LOG.debug("args "+args);
+		AMI.execute(args);
+	}
+	
 
 }

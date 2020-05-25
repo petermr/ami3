@@ -178,7 +178,7 @@ public class CommandProcessor {
 					+ " -o scholarly.html"
 					+ " --transform nlm2html"
 					+ " --project "+projectDir;
-			LOG.trace("running NORMA "+args);
+			LOG.debug("running NORMA "+args);
 			new Norma().run(args);
 		}
 	}
@@ -301,7 +301,7 @@ public class CommandProcessor {
 		AMISearchTool amiSearchTool = (amiTool != null && amiTool instanceof AMISearchTool) ? (AMISearchTool) amiTool : null;
 		for (AMIPluginOption pluginOption : pluginOptions) {
 			String plugin = pluginOption.getPlugin();
-			LOG.trace("\n+++++++++++++++++++running: " + plugin + "; " + pluginOption);
+			LOG.debug("\n+++++++++++++++++++running: " + plugin + "; " + pluginOption);
 //			if (amiSearchTool != null /*&& amiSearchTool.getIgnorePluginList().contains(plugin)*/) {
 			if (false /*amiSearchTool != null && amiSearchTool.getIgnorePluginList().contains(plugin)*/) {
 				System.out.println("ignored: " + plugin);
