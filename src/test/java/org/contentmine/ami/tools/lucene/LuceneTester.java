@@ -6,6 +6,10 @@ import org.apache.lucene.document.Document;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.TopDocs;
+import org.contentmine.ami.tools.lucene.Indexer;
+import org.contentmine.ami.tools.lucene.LuceneConstants;
+import org.contentmine.ami.tools.lucene.Searcher;
+import org.contentmine.ami.tools.lucene.TextFileFilter;
 
 public class LuceneTester {
   

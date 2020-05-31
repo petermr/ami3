@@ -40,7 +40,6 @@ import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
-import org.contentmine.ami.tools.lucene.LengthFilter;
 
 /** from https://lucene.apache.org/core/8_0_0/core/org/apache/lucene/analysis/package-summary.html
  * 

@@ -86,19 +86,30 @@ public class AMILuceneTest {
 		File inputDir = ZIKA2INPUT;
 		File indexDir = ZIKA2INDEX;
 		String cmd = " -vv"
+				+ " -p " + ZIKA2INPUT
 				+ " lucene "
+				+ " --operations index"
 				+ " --skiptypes " + excludeTypes
-				+ " --inputdir " + inputDir  
-				+ " --index " + indexDir  
+//				+ " --inputdir " + inputDir  
+				+ " --index " + indexDir.getAbsolutePath()  
 				;
 		AMI.execute(AMILuceneTool.class, cmd);
+		
 		String query1 = "id id1";
 		String query2 = "id id2";
 		cmd = " -vv"
 				+ " lucene "
-				+ " --index " + indexDir  
+				+ " --operations query"
+				+ " --index " + indexDir.getAbsolutePath()  
 				+ " --query " + query1
 				+ " --query " + query2
+				;
+		AMI.execute(AMILuceneTool.class, cmd);
+		
+		cmd = " -vv"
+				+ " lucene "
+				+ " --operations fields"
+				+ " --index " + indexDir.getAbsolutePath()  
 				;
 		AMI.execute(AMILuceneTool.class, cmd);
 	}
@@ -377,11 +388,12 @@ public static void testFindDocument(String searchTerm)
 	 * */
 	@Test
 	public void testLuceneSearchDemo() throws Exception {
+		// this is legacy CLI from Lucene
+	    //" [-index dir] [-field f] [-repeat n] [-queries file] [-query string] [-raw] [-paging hitsPerPage]
+		// \n\nSee http://lucene.apache.org/core/4_1_0/demo/ for details.";
 		String index = "target/lucene/distrib";
 		String cmd = "-index " + index ;
-	    //" [-index dir] [-field f] [-repeat n] [-queries file] [-query string] [-raw] [-paging hitsPerPage]\n\nSee http://lucene.apache.org/core/4_1_0/demo/ for details.";
-
-		/*org.contentmine.ami.tools.lucene.demo.*/SearchFiles.main(cmd.split("\\s+"));
+		SearchFiles.main(cmd.split("\\s+"));
 	}
 
 	@Test

@@ -55,23 +55,25 @@ public class LuceneTools {
 	                                   int hitsPerPage) throws IOException {
 	
 	  // Collect enough docs to show 5 pages
-	  TopDocs results = searcher.search(query, 5 * hitsPerPage);
-	  ScoreDoc[] hits = results.scoreDocs;
+	    TopDocs results = searcher.search(query, 5 * hitsPerPage);
+	    ScoreDoc[] scoreDocs = results.scoreDocs;
 	  
-	  int numTotalHits = Math.toIntExact(results.totalHits.value);
-	  System.out.println(numTotalHits + " total matching documents");
+	    int numTotalHits = Math.toIntExact(results.totalHits.value);
+	    System.out.println(numTotalHits + " total matching documents");
 	
-	  int start = 0;
-	  int end = Math.min(numTotalHits, hitsPerPage);
-	  hits = searcher.search(query, numTotalHits).scoreDocs;
+	    int start = 0;
+	    int end = Math.min(numTotalHits, hitsPerPage);
+	    scoreDocs = searcher.search(query, numTotalHits).scoreDocs;
 	    
-		end = Math.min(hits.length, start + hitsPerPage);
+	    printScoreDocs(searcher, scoreDocs);
+	    
+        end = Math.min(scoreDocs.length, start + hitsPerPage);
 		
-		for (int i = start; i < end; i++) {
-			Document doc = searcher.doc(hits[i].doc);
-			System.out.println((i+1) + ". " + doc.get("path") + " Title: " + doc.get("title"));
+		  for (int i = start; i < end; i++) {
+		  	  Document doc = searcher.doc(scoreDocs[i].doc);
+			  System.out.println((i+1) + ". " + doc.get("path") + " Title: " + doc.get("title"));
 		}
-	}
+    }
 	
 	/** reads a directory contents and creates index
 	 * 
@@ -191,60 +193,59 @@ public class LuceneTools {
 	    doc.add(pathField);
 	    
 	    doc.add(new LongPoint("modified", lastModified));
-	    
 	    doc.add(new TextField("contents", new BufferedReader(new InputStreamReader(stream, StandardCharsets.UTF_8))));
 		return doc;
 	}
 
     
-    public static List<Element> searchForDocument(IndexSearcher searcher, List<String> searchVal)
-    {
-       List<Element> retVal = new ArrayList<Element>();
+    public static List<Element> searchForDocument(IndexSearcher searcher, List<String> searchVal) {
+        List<Element> retVal = new ArrayList<Element>();
 
-       try
-       {
+        try {
+            QueryBuilder bldr = new QueryBuilder(new StandardAnalyzer());
+            Query q1 = bldr.createPhraseQuery(searchVal.get(0), searchVal.get(1));
 
-          QueryBuilder bldr = new QueryBuilder(new StandardAnalyzer());
-          Query q1 = bldr.createPhraseQuery(searchVal.get(0), searchVal.get(1));
+            BooleanQuery.Builder chainQryBldr = new BooleanQuery.Builder();
+            chainQryBldr.add(q1, Occur.SHOULD);
 
-          BooleanQuery.Builder chainQryBldr = new BooleanQuery.Builder();
-          chainQryBldr.add(q1, Occur.SHOULD);
+            BooleanQuery finalQry = chainQryBldr.build();
+            System.out.println("FinalQuery "+finalQry);
+            if (searcher != null) {
+	            System.out.println("RefCount "+searcher.getIndexReader().getRefCount());
+	            System.out.println("SearcherStats "+searcher.collectionStatistics("id"));
+	            TopDocs allFound = searcher.search(finalQry, 100);
+	            System.out.println("AllHits "+allFound.totalHits);
+	            ScoreDoc[] scoreDocs = allFound.scoreDocs;
+	            
+				listScoreDocs(searcher, scoreDocs);
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
 
-          BooleanQuery finalQry = chainQryBldr.build();
-          System.out.println("FQ "+finalQry);
-          System.out.println("REF "+searcher.getIndexReader().getRefCount());
-          System.out.println("SS "+searcher.collectionStatistics("id"));
-          TopDocs allFound = searcher.search(finalQry, 100);
-          System.out.println("ALL "+allFound.totalHits);
-          if (allFound.scoreDocs != null)
-          {
-             for (ScoreDoc doc : allFound.scoreDocs)
-             {
-                System.out.println("Score: " + doc.score);
-
-                int docidx = doc.doc;
-                Document docRetrieved = searcher.doc(docidx);
-                if (docRetrieved != null)
-                {
-              	  List<IndexableField> fieldList = docRetrieved.getFields();
-      			  for (IndexableField field : fieldList) {
-      				  System.out.println("F "+field);
-      			  }
-                   Element resultsElement = new Element("results");
-
-                   addNonNullField(docRetrieved, resultsElement, "id");
-                   addNonNullField(docRetrieved, resultsElement, "path");
-                }
-             }
-          }
-       }
-       catch (Exception ex)
-       {
-          ex.printStackTrace();
-       }
-
-       return retVal;
+        return retVal;
     }
+
+	private static void listScoreDocs(IndexSearcher searcher, ScoreDoc[] scoreDocs) throws IOException {
+		if (scoreDocs != null) {
+		    for (ScoreDoc doc : scoreDocs) {
+		        System.out.println("Score: " + doc.score);
+
+		        int docidx = doc.doc;
+		        Document docRetrieved = searcher.doc(docidx);
+		        if (docRetrieved != null) { 
+		    	    List<IndexableField> fieldList = docRetrieved.getFields();
+				    for (IndexableField field : fieldList) {
+					    System.out.println("F "+field);
+				    }
+		            Element resultsElement = new Element("results");
+
+		            addNonNullField(docRetrieved, resultsElement, "id");
+		            addNonNullField(docRetrieved, resultsElement, "path");
+		        }
+		    }
+		}
+	}
 
 	private static void addNonNullField(Document docRetrieved, Element docToAdd, String name) {
 		IndexableField field;
@@ -254,6 +255,15 @@ public class LuceneTools {
 		 }
 	}
     
+	public static void printScoreDocs(IndexSearcher searcher, ScoreDoc[] scoreDocs) throws IOException {
+	    for (ScoreDoc sd : scoreDocs) {
+	        Document d = searcher.doc(sd.doc);
+	        System.out.println("Document Number : " + sd.doc + " :: Document Name : " + d.get("name")
+	                + "  :: Content : " + d.get("content") + "  :: Score : " + sd.score);
+	    }
+	}
+
+
 
 
 }

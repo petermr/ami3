@@ -3,6 +3,7 @@ package org.contentmine.ami.tools.lucene;
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.apache.lucene.util.Version;
+import org.contentmine.ami.tools.lucene.FilteringTokenFilter;
 
 public final class LengthFilter extends FilteringTokenFilter {
 	 
