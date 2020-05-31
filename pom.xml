@@ -38,10 +38,12 @@
         <jtidy.version>4aug2000r7-dev</jtidy.version>
         <junit.version>4.13</junit.version>
         <lucene.version>8.5.1</lucene.version>
-        <picocli.version>4.3.2</picocli.version>
+        <!-- is this necessary? -->
+<!--         <lucene-query.version>4.0.0-BETA</lucene-query.version>  -->
         <log4j.version>1.2.17</log4j.version>
         <pdfbox2.version>2.0.19</pdfbox2.version>
         <pdfbox-tools.version>2.0.19</pdfbox-tools.version>
+        <picocli.version>4.3.2</picocli.version>
         <resteasy.client>4.5.3.Final</resteasy.client>
         <Saxon-HE.version>10.0</Saxon-HE.version>
         <selenium-java.version>4.0.0-alpha-5</selenium-java.version>
@@ -389,6 +391,7 @@
                 <artifactId>xmlunit</artifactId>
                 <version>${xmlunit.version}</version>
             </dependency>
+<!--             https://stackoverflow.com/questions/62061712/examples-for-using-latest-version-of-lucene -->
             <dependency>
                 <groupId>org.apache.lucene</groupId>
                 <artifactId>lucene-core</artifactId>
@@ -396,9 +399,42 @@
             </dependency>
             <dependency>
                 <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-analyzers-icu</artifactId>
+                <version>${lucene.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
                 <artifactId>lucene-analyzers-common</artifactId>
                 <version>${lucene.version}</version>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-queryparser -->
+			<dependency>
+			    <groupId>org.apache.lucene</groupId>
+			    <artifactId>lucene-queryparser</artifactId>
+			    <version>${lucene.version}</version>
+			</dependency>
+			<!--  these may be useful -->
+			<dependency>
+			    <groupId>org.apache.lucene</groupId>
+			    <artifactId>lucene-facet</artifactId>
+			    <version>${lucene.version}</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.apache.lucene</groupId>
+			    <artifactId>lucene-suggest</artifactId>
+			    <version>${lucene.version}</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.apache.lucene</groupId>
+			    <artifactId>lucene-highlighter</artifactId>
+			    <version>${lucene.version}</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.apache.lucene</groupId>
+			    <artifactId>lucene-demo</artifactId>
+			    <version>${lucene.version}</version>
+			</dependency>
+            
             <dependency>
             <!-- https://github.com/uniVocity/univocity-parsers // needed for JAX -->
                 <groupId>com.univocity</groupId>

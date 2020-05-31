@@ -77,7 +77,7 @@ public class LargeTableTest {
 	
 	/** align rows and columns
 	 * 
-	 * @param inputFile
+	 * @param inputDir
 	 * @return
 	 * @throws IOException 
 	 */

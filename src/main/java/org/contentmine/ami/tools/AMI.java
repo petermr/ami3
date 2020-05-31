@@ -55,6 +55,7 @@ import java.util.concurrent.Callable;
 				AMIGrobidTool.class,
 //				AMIImageFilterToolOLD.class, // replaced by AMIFilterTool
 				AMIImageTool.class,
+				AMILuceneTool.class,
 				AMIMakeProjectTool.class,
 				AMIMetadataTool.class,
 				AMIOCRTool.class,

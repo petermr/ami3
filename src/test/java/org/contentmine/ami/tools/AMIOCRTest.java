@@ -414,6 +414,7 @@ public class AMIOCRTest extends AbstractAMITest {
 	
 	/**
 	 * 
+	 * single commandline to go from projects -> OCR
 	 */
 	@Test
 	public void testBattery2020IntegrationIT() {
@@ -434,7 +435,7 @@ public class AMIOCRTest extends AbstractAMITest {
 			+ ""				// filters small and duplicate images
 			+ " filter --small small --duplicate duplicate --monochrome monochrome"
 			+ ""				// "flattens colours to 16
-			+ " image --posterize 16"
+			+ " image --posterize 4"
 			+ ""
 			+ " ocr"			// OCR using tesseract
 			+ " --html true --tesseract=/usr/local/bin/tesseract --scalefactor 2.0"

@@ -24,7 +24,7 @@ public class TableIT {
 
 	/** align rows and columns
 	 * 
-	 * @param inputFile
+	 * @param inputDir
 	 * @return
 	 * @throws IOException 
 	 */
