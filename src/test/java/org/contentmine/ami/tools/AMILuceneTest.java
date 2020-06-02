@@ -12,6 +12,7 @@ import org.apache.lucene.demo.SearchFiles;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
+import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
@@ -25,7 +26,10 @@ import org.junit.Test;
 
 
 
-/** test cleaning.
+/** test Lucene.
+ * 
+ * https://lucene.apache.org/core/8_5_1/core/org/apache/lucene/analysis/package-summary.html#package.description
+ * 
  * 
  * @author pm286
  *
@@ -362,7 +366,7 @@ public static void testFindDocument(String searchTerm)
 	@Test
 	public void testLuceneIndexDemo() {
 		String docs = "src/test/resources/org/contentmine/ami/battery10";
-		String index = "target/lucene/distrib";
+		String index = "target/lucene/battery10";
 		String cmd = "-index " + index +" -docs "+docs;
 		/*org.contentmine.ami.tools.lucene.demo.*/IndexFiles.main(cmd.split("\\s+"));
 	}
@@ -376,7 +380,7 @@ public static void testFindDocument(String searchTerm)
 	@Test
 	public void testLuceneIndex() {
 		String inputDir = "src/test/resources/org/contentmine/ami/battery10";
-		String indexPath = "target/lucene/distrib";
+		String indexPath = "target/lucene/battery10";
 	    boolean create = true;
 	    LuceneTools.createDefaultLuceneIndex(inputDir, indexPath, create);
 	}
@@ -398,17 +402,16 @@ public static void testFindDocument(String searchTerm)
 
 	@Test
 	public void testLuceneSearch() throws Exception {
-		String index = "target/lucene/distrib";
+		String index = "target/lucene/battery10";
 		
 	    IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(index)));
+//	    reader.getDocCount(field);
 	    IndexSearcher searcher = new IndexSearcher(reader);
-	    Analyzer analyzer = new StandardAnalyzer();
-	
 	    String field = "contents";
 	    String line = "lithium";
 	    int hitsPerPage = 20;
-	    QueryParser parser = new QueryParser(field, analyzer);
-	    Query query = parser.parse(line);
+	    
+	    Query query = LuceneTools.createQuery(field, line);
 	      
 	    // Collect enough docs to show 5 pages
 		TopDocs results = searcher.search(query, 5 * hitsPerPage);
@@ -419,14 +422,19 @@ public static void testFindDocument(String searchTerm)
 		
 		hits = searcher.search(query, numTotalHits).scoreDocs;
 		
+		Document doc1 = searcher.doc(hits[0].doc);
+		System.out.println("fields "+doc1.getFields());
 		for (int i = 0; i < hits.length; i++) {
 	
 			Document doc = searcher.doc(hits[i].doc);
 			String path = doc.get("path");
 			String title = doc.get("title");
-			System.out.println(path+" | " + title);
+			String modified = doc.get("modified");
+			String contents = doc.get("contents");
+			System.out.println(path+" | " + title + " | " + contents + " | " + modified);
 		}
 	
 	}
+
 	
 }

@@ -19,6 +19,7 @@ import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.index.IndexWriterConfig.OpenMode;
 import org.apache.lucene.search.IndexSearcher;
+import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
@@ -41,7 +42,7 @@ import picocli.CommandLine.Option;
  * 
  * @author pm286
  *
- *https://cwiki.apache.org/confluence/display/LUCENE/LuceneFAQ
+ *https://cwiki.apache.org/confluence/display/LUCENE/LuceneFAQ  // VERY OUT-of-DATE
  */
 
 @Command(
@@ -222,10 +223,11 @@ public class AMILuceneTool extends AbstractAMITool {
 
       private void getFields() {
           IndexReader indexReader = getIndexReader();
+          IndexSearcher searcher = getIndexSearcher();
     	  
  		  int numDocs = indexReader.numDocs();
     	  System.out.println("n "+numDocs);
-    	  List<String> fields = Arrays.asList(new String[] {"id", "path"});
+    	  List<String> fields = Arrays.asList(new String[] {"id", "path", "contents"});
     	  for (String field : fields) {
 	    	  try {
 				summarizeFields(indexReader, field);
@@ -233,6 +235,36 @@ public class AMILuceneTool extends AbstractAMITool {
 				LOG.error("Cannot summarize: " + e.getMessage());
 			}
     	  }
+    	  String line = "method";
+    	  String field = "contents";
+    	  Query query = LuceneTools.createQuery(field, line);
+    	  int numTotalHits = 25;
+    	  Document doc1 = null;
+    	  ScoreDoc[] hits = null;
+    	  try {
+	  		hits = searcher.search(query, numTotalHits).scoreDocs;
+	  		doc1 = searcher.doc(hits[0].doc);
+    	  } catch (Exception e) {
+    		  throw new RuntimeException("cannot create hits", e);
+    	  }
+  		
+  		System.out.println("fields "+doc1.getFields());
+  		for (int i = 0; i < hits.length; i++) {
+  	
+  			Document doc;
+			try {
+				doc = searcher.doc(hits[i].doc);
+			} catch (IOException e) {
+				LOG.error("cannot search docs ", e);
+				continue;
+			}
+  			String path = doc.get("path");
+  			String title = doc.get("title");
+  			String modified = doc.get("modified");
+  			String contents = doc.get("contents");
+  			System.out.println(path+" | " + title + " | " + contents + " | " + modified);
+  		}
+
       }
 
   	private IndexSearcher getIndexSearcher() {

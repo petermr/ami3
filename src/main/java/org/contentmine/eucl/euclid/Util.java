@@ -3443,6 +3443,34 @@ s = s.replaceAll("(?U)\\s+", replace);
 			new ArrayList<String>(Arrays.asList(value.split("\\s+")));
 	}
 
+	/** heuristic to determine type of file
+	 * Uses Files.probeContentType()
+	 * from StackOverflow 
+	 * @param file
+	 * @return
+	 */
+	public static boolean isBinaryFile(File file) {
+		return file == null ? false : isBinaryPath(file.toPath());
+	}
+
+	public static boolean isBinaryPath(Path path) {
+        String type = null;
+		try {
+			type = Files.probeContentType(path);
+		} catch (IOException e) {
+			throw new RuntimeException("path has no type: "+path, e);
+		}
+        if (type == null) {
+            //type couldn't be determined, assume binary
+            return true;
+        } else if (type.startsWith("text")) {
+            return false;
+        } else {
+            //type isn't text
+            return true;
+        }
+	}
+
 
 }
 

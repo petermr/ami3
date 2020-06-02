@@ -2,18 +2,24 @@ package org.contentmine.ami.wordutil;
 
 import java.io.IOException;
 import java.io.StringReader;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.core.WhitespaceAnalyzer;
+import org.apache.lucene.analysis.en.PorterStemFilter;
 import org.apache.lucene.analysis.shingle.ShingleFilter;
+import org.apache.lucene.analysis.standard.StandardTokenizer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.contentmine.ami.dictionary.TermPhrase;
+import org.contentmine.eucl.euclid.Util;
 
 public class LuceneUtils {
 	
@@ -46,14 +52,9 @@ public class LuceneUtils {
 	public static TokenStream createWhitespaceTokenStreamQuietly(String string) {
 		Analyzer analyzer = new WhitespaceAnalyzer();
 		TokenStream tokenStream = null;
-//		try {
-			tokenStream = analyzer.tokenStream(null, new StringReader(string));
-			LuceneUtils.resetTokenStreamQuietly(tokenStream);
-			analyzer.close();
-//		} catch (IOException e) {
-//			analyzer.close();
-//			throw new RuntimeException("cannot create tokenStream", e);
-//		}
+		tokenStream = analyzer.tokenStream(null, new StringReader(string));
+		LuceneUtils.resetTokenStreamQuietly(tokenStream);
+		analyzer.close();
 		return tokenStream;
 	}
 
@@ -202,6 +203,36 @@ public class LuceneUtils {
 		return tokenList;
 	}
 
+	/** uses suffix to determine type of file
+	 * 
+	 * 		List<String> nonTexts = Arrays.asList(new String[] {
+				"png", "jpg", "pdf", "bin", "doc", "docx","zip", "gz", "ppt", "pptx"});
+		List<String> texts = Arrays.asList(new String[] {
+				"txt", "xml", "svg", "json", "csv"});
+
+	 * @param path
+	 * @return
+	 */
+	public static boolean isTextFile(Path path) {
+//		System.out.println(path+" | "+ Util.isBinaryPath(path)); // don't think this works
+		List<String> nonTexts = Arrays.asList(new String[] {
+				"bin", "doc", "docx", "gz", "html", "jpg", "pdf", "png", "ppt", "pptx", "zip"});
+		List<String> texts = Arrays.asList(new String[] {
+				"csv", "json", "log", "svg", "txt", "xml"});
+		String extension = FilenameUtils.getExtension(path.toString());
+		if (nonTexts.contains(extension)) {
+			return false;
+		}
+		if (texts.contains(extension)) {
+			return true;
+		}
+		if (true)throw new RuntimeException("Unknown suffix: "+extension);
+		// defaults to false
+		return false;
+	}
+	
+	
+
 //	/** concatenates words, uses StandardTokenizer, creates a TokenStream, and returns a list of stemmed words.
 //	 * 
 //	 * @param words
@@ -210,7 +241,7 @@ public class LuceneUtils {
 //	public static List<String> applyStandardTokenizedLucenePorterStemming(List<String> words) {
 //		String input = StringUtils.join(words.iterator(), " ");
 //	
-//	    TokenStream tokenStream = new StandardTokenizer(new StringReader(input));
+//	    TokenStream tokenStream = new StandardTokenizer(new StringReader(input)); // this doesm't compile
 //		LuceneUtils.resetTokenStreamQuietly(tokenStream);
 //	    tokenStream = new PorterStemFilter(tokenStream);
 //	

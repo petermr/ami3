@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.Reader;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.FileVisitResult;
 import java.nio.file.Files;
@@ -14,6 +15,7 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.io.IOUtils;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
@@ -23,23 +25,37 @@ import org.apache.lucene.document.StringField;
 import org.apache.lucene.document.TextField;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
+import org.apache.lucene.index.IndexWriterConfig.OpenMode;
 import org.apache.lucene.index.IndexableField;
 import org.apache.lucene.index.Term;
-import org.apache.lucene.index.IndexWriterConfig.OpenMode;
+import org.apache.lucene.queryparser.classic.ParseException;
+import org.apache.lucene.queryparser.classic.QueryParser;
+import org.apache.lucene.search.BooleanClause.Occur;
 import org.apache.lucene.search.BooleanQuery;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.TopDocs;
-import org.apache.lucene.search.BooleanClause.Occur;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.QueryBuilder;
+import org.contentmine.ami.wordutil.LuceneUtils;
 
 import nu.xom.Attribute;
 import nu.xom.Element;
 
+/**
+ * collection of useful Tools for Lucene operations
+ * 
+ * @author pm286
+ *
+ */
+
 public class LuceneTools {
+
+	private static final String MODIFIED = "modified";
+	private static final String CONTENTS = "contents";
+	private static final String PATH = "path";
 
 	/**
 	   * This demonstrates a typical paging search scenario, where the search engine presents 
@@ -71,7 +87,7 @@ public class LuceneTools {
 		
 		  for (int i = start; i < end; i++) {
 		  	  Document doc = searcher.doc(scoreDocs[i].doc);
-			  System.out.println((i+1) + ". " + doc.get("path") + " Title: " + doc.get("title"));
+			  System.out.println((i+1) + ". " + doc.get(PATH) + " Title: " + doc.get("title"));
 		}
     }
 	
@@ -145,14 +161,15 @@ public class LuceneTools {
 			
 			if (writer.getConfig().getOpenMode() == OpenMode.CREATE) {
 				// New index, so we just add the document (no old document can be there):
-				System.out.println("adding " + file);
+//				System.out.println("adding " + file);
+				System.out.print(".");
 				writer.addDocument(doc);
 			} else {
 				// Existing index (an old copy of this document may have been indexed) so 
 				// we use updateDocument instead to replace the old one matching the exact 
 				// path, if present:
 				System.out.println("updating " + file);
-				writer.updateDocument(new Term("path", file.toString()), doc);
+				writer.updateDocument(new Term(PATH, file.toString()), doc);
 			}
 		}
 	}
@@ -189,12 +206,43 @@ public class LuceneTools {
 	// make a new, empty document
 	    Document doc = new Document();
 	    
-	    Field pathField = new StringField("path", path.toString(), Field.Store.YES);
-	    doc.add(pathField);
-	    
-	    doc.add(new LongPoint("modified", lastModified));
-	    doc.add(new TextField("contents", new BufferedReader(new InputStreamReader(stream, StandardCharsets.UTF_8))));
+	    if (LuceneUtils.isTextFile(path)) {
+		    
+		    addPath(path, doc);
+		    addDateMillis(lastModified, doc);
+		    addTextField(CONTENTS, stream, doc);
+		    
+		    for (IndexableField field : doc.getFields()) {
+		    	System.out.println("Field "+field);
+		    }
+		    IndexableField field = doc.getField(CONTENTS);
+		    field = doc.getField(MODIFIED);
+	    }
 		return doc;
+	}
+
+	private static void addTextField(String field, InputStream stream, Document doc) {
+		Reader reader = new BufferedReader(new InputStreamReader(stream, StandardCharsets.UTF_8));
+		try {
+			doc.add(new TextField(field, IOUtils.toString(reader), Field.Store.YES));
+		} catch (IOException e) {
+			throw new RuntimeException("cannot read reader", e);
+		}
+	}
+
+	private static void addDateMillis(long lastModified, Document doc) {
+		doc.add(new LongPoint(MODIFIED, lastModified));
+	}
+
+	private static void addPath(Path path, Document doc) {
+		addStringField(PATH, path.toString(), doc, Field.Store.YES);
+			
+	}
+	
+	private static void addStringField(String field, String value, Document doc, Field.Store fieldStore) {
+		Field pathField = new StringField(field, value, fieldStore);
+		doc.add(pathField);
+		
 	}
 
     
@@ -241,7 +289,7 @@ public class LuceneTools {
 		            Element resultsElement = new Element("results");
 
 		            addNonNullField(docRetrieved, resultsElement, "id");
-		            addNonNullField(docRetrieved, resultsElement, "path");
+		            addNonNullField(docRetrieved, resultsElement, PATH);
 		        }
 		    }
 		}
@@ -263,6 +311,25 @@ public class LuceneTools {
 	    }
 	}
 
+	/**
+	 * creates a QueryParser from a filed and standardAnalyzer
+	 * 
+	 * @param field
+	 * @param line
+	 * @return
+	 * @throws ParseException
+	 */
+	public static Query createQuery(String field, String line) {
+		Analyzer analyzer = new StandardAnalyzer();
+	    QueryParser parser = new QueryParser(field, analyzer);
+	    Query query = null;
+	    try {
+			query = parser.parse(line);
+		} catch (ParseException e) {
+			throw new RuntimeException("cannot parse: " + line, e);
+		}
+		return query;
+	}
 
 
 
