@@ -160,6 +160,7 @@ public class DiagramAnalyzerIT {
 		String fileroot = "IMG_20131119a";
 		File indir = ImageAnalysisFixtures.LINES_DIR;
 		File targetDir = ImageAnalysisFixtures.TARGET_LINES_DIR;
+		System.out.println("target "+targetDir);
 		
 		DiagramAnalyzerTest.flattenAndWriteSubImages(fileroot, indir, targetDir, "jpg");
 		

@@ -7,6 +7,7 @@ import java.util.List;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.cproject.files.CProject;
+import org.contentmine.image.diagram.DiagramAnalyzerTest;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Ignore;
@@ -577,13 +578,62 @@ public class AMIImageTest extends AbstractAMITest {
 				+ " --inputname raw"
 				+ " --includetree " + treeNamesString
 				+ " image"
-				+ " --small=small --monochrome=monochrome --duplicate=duplicate"
+//				+ " --small=small --monochrome=monochrome --duplicate=duplicate"
+				+ " -s -m -d"
 				;
 		imageTool = AMI.execute(AMIImageTool.class, cmd);
 		System.out.println("imageTool? " + imageTool);
 				
 	}
-	
-	
+
+	@Test
+	public void testImageAnalysis() {
+		String cmd = null;
+		File cProjectDir = new File(SRC_TEST_AMI, "battery10");
+		CProject project = new CProject(cProjectDir);
+		List<String> treeNames = Arrays.asList(new String[] {
+//				"PMC3776197",
+				"PMC4062906",
+				"PMC4709726",
+//				"PMC5082456",
+//				"PMC5082892",
+//				"PMC5115307",
+//				"PMC5241879",
+//				"PMC5604389",
+				});
+		String treeNamesString = String.join(" ", treeNames);
+//		cmd = "-p " + project
+//				+ " -v"
+//				+ " clean */svg/*"
+//				+ " clean */pdfimages/*"
+//				 ;
+//		AbstractAMITool imageTool = AMI.execute(AMICleanTool.class, cmd);
+
+		cmd = "-p " + project
+				+ " -v"
+				+ " --inputname raw"
+				+ " --includetree " + treeNamesString
+				+ " --output postertest"
+				+ " image"
+				+ " --posterize 4"
+				+ " --outputfiles binary freqplot freqplot2 frequencies orig poster"
+				+ "";
+
+		AbstractAMITool imageTool = AMI.execute(AMIImageTool.class, cmd);
+
+				
+	}
+
+
+	/** write subimages
+	 * 
+	 */
+	@Test
+	public void testSubImages() {
+		String fileroot = "PMC4062906/pdfimages/image.5.1.66_281.517_691/raw";
+		File cProjectDir = new File(SRC_TEST_AMI, "battery10");
+
+		DiagramAnalyzerTest.flattenAndWriteSubImages(fileroot, cProjectDir, new File("target/image/subimage/"), "png");
+	}
 
 }

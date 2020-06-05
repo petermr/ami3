@@ -154,9 +154,6 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 	protected File cProjectOutputDir;
 	protected File cTreeOutputDir;
 
-//	@Deprecated(/*forRemoval = true*/)
-//	protected String[] args;
-
 	private Level level;
 	protected File contentMineDir = DEFAULT_CONTENT_MINE_DIR;
 
@@ -705,6 +702,10 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 
 	public List<String> getInputBasenameList() {
 		return parent.generalOptions.inputBasenameList;
+	}
+
+	public String getOutput() {
+		return parent.generalOptions.output;
 	}
 
 	/**

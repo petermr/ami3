@@ -18,13 +18,16 @@ import org.apache.lucene.index.IndexReader;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.index.IndexWriterConfig.OpenMode;
+import org.apache.lucene.index.IndexableField;
+import org.apache.lucene.index.IndexableFieldType;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
-import org.contentmine.ami.tools.lucene.LuceneTools;
+import org.contentmine.ami.tools.lucene.LuceneToolsOld;
+import org.contentmine.ami.tools.lucene.LuceneUtils;
 import org.contentmine.cproject.files.CProject;
 
 import nu.xom.Element;
@@ -42,6 +45,8 @@ import picocli.CommandLine.Option;
  * 
  * @author pm286
  *
+ * * https://lucene.apache.org/core/8_5_1/core/org/apache/lucene/analysis/package-summary.html#package.description
+
  *https://cwiki.apache.org/confluence/display/LUCENE/LuceneFAQ  // VERY OUT-of-DATE
  */
 
@@ -211,7 +216,7 @@ public class AMILuceneTool extends AbstractAMITool {
 	private void runQuery() {
         IndexSearcher searcher = getIndexSearcher();
 		try {
-			List<Element> results = LuceneTools.searchForDocument(searcher, query);
+			List<Element> results = LuceneUtils.searchForDocument(searcher, query);
 			for (Element result : results) {
 				System.out.println("result: "+result.toXML());
 			}
@@ -221,7 +226,26 @@ public class AMILuceneTool extends AbstractAMITool {
 	}
 
 
-      private void getFields() {
+    private void getFields() {
+        IndexReader indexReader = getIndexReader();
+	    for (int i = 0; i < indexReader.numDocs(); i++) {
+	        Document doc = null;
+			try {
+				doc = indexReader.document(i);
+			} catch (IOException e) {
+				LOG.error("Cannot read doc: " + doc, e);
+				continue;
+			}
+	        List<IndexableField> fields = doc.getFields();
+	        for (IndexableField field : fields) {
+	            // use these to get field-related data:
+	            IndexableFieldType fieldType = field.fieldType();
+				System.out.println("field: " + field.name()+" | "+fieldType.toString());
+	        }
+	    }
+    }
+
+      private void getFieldsOld() {
           IndexReader indexReader = getIndexReader();
           IndexSearcher searcher = getIndexSearcher();
     	  
@@ -237,7 +261,7 @@ public class AMILuceneTool extends AbstractAMITool {
     	  }
     	  String line = "method";
     	  String field = "contents";
-    	  Query query = LuceneTools.createQuery(field, line);
+    	  Query query = LuceneUtils.createQuery(field, line);
     	  int numTotalHits = 25;
     	  Document doc1 = null;
     	  ScoreDoc[] hits = null;
@@ -284,6 +308,7 @@ public class AMILuceneTool extends AbstractAMITool {
 	}
 
 	private void summarizeFields(IndexReader indexReader, String field) throws IOException {
+
 		System.out.println("DOCS for " + field + " " + indexReader.getDocCount(field));
 		System.out.println("LEAVES for " + field + " " + indexReader.leaves());
 		System.out.println("freq "+indexReader.getSumDocFreq(field));
@@ -297,7 +322,7 @@ public class AMILuceneTool extends AbstractAMITool {
 		iwc.setIndexCreatedVersionMajor(LUCENE851.major); 
 		iwc.setOpenMode(openMode);
 		IndexWriter writer = new IndexWriter(indexDir, iwc);
-		LuceneTools.indexDocs(writer, inputPath);
+		LuceneUtils.indexDocs(writer, inputPath);
 		writer.close();
 	}
 	

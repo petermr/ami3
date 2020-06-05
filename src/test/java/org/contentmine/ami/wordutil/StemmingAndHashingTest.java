@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.contentmine.ami.wordutil.LuceneUtils;
+import org.contentmine.ami.tools.lucene.LuceneUtils;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;

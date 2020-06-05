@@ -19,8 +19,6 @@ import org.contentmine.image.ImageAnalysisFixtures;
 import org.contentmine.image.ImageProcessor;
 import org.contentmine.image.ImageUtil;
 import org.contentmine.image.colour.ColorAnalyzer;
-import org.contentmine.image.colour.ColorFrequenciesMap;
-import org.contentmine.image.colour.RGBColor;
 import org.contentmine.image.pixel.Pixel;
 import org.contentmine.image.pixel.PixelEdge;
 import org.contentmine.image.pixel.PixelGraph;
@@ -262,17 +260,20 @@ sb.toString());
 
 	// =========================================
 	
-	static void flattenAndWriteSubImages(String fileroot, File indir, File targetDir, String suffix) {
+	public static void flattenAndWriteSubImages(String fileroot, File indir, File targetDir, String suffix) {
 		File imageFile = new File(indir, fileroot+"."+suffix);
 		File outdir = new File(targetDir, fileroot+"/");
 		Assert.assertTrue(""+imageFile+" exists", imageFile.exists());
-		int nvalues = 2;
+		
 		BufferedImage image = UtilImageIO.loadImage(imageFile.toString());
 		if (image == null) {
 			throw new RuntimeException("null image");
 		}
-		image = ImageUtil.flattenImage(image, nvalues);
+		
+		int planes = 2;		
+		image = ImageUtil.flattenImage(image, planes);
 		File poster0 = new File(outdir, "poster.orig.png");
+		System.out.println("writing "+poster0);
 		ImageIOUtil.writeImageQuietly(image, poster0);
 		
 		ColorAnalyzer colorAnalyzer = new ColorAnalyzer(image);
@@ -285,24 +286,22 @@ sb.toString());
 		SVGG g = colorAnalyzer.createColorFrequencyPlot();
 		SVGSVG.wrapAndWriteAsSVG(g, new File(outdir, "colors.orig.svg"));
 		
-		image = colorAnalyzer.mergeMinorColours(image);
-		image = colorAnalyzer.mergeMinorColours(image);
-		image = colorAnalyzer.mergeMinorColours(image);
+		int nMerge = 3;
+		for (int i = 0; i < nMerge; i++) {
+			image = colorAnalyzer.mergeMinorColours(image);
+		}
 		
 		colorAnalyzer = new ColorAnalyzer(image);
-		ColorFrequenciesMap colorFrequencies = colorAnalyzer.getOrCreateColorFrequenciesMap();
-		for (RGBColor color : colorFrequencies.keySet()) {
-			String hex = color.getHex();
-			LOG.trace(hex+": "+colorFrequencies.get(color));
-			BufferedImage image2 = colorAnalyzer.getImage(color);
-			File hexFile = new File(outdir, "poster."+hex+".png");
-			ImageIOUtil.writeImageQuietly(image2, hexFile);
-		}
+		colorAnalyzer.writeColorsByFrequency(outdir);
+		
 		g = colorAnalyzer.createColorFrequencyPlot();
 		SVGSVG.wrapAndWriteAsSVG(g, new File(outdir, "colors.svg"));
+		
 		file = new File(outdir, "poster.png");
 		ImageIOUtil.writeImageQuietly(image, file);
 	}
+
+	
 
 
 	//======================================

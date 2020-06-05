@@ -12,6 +12,8 @@ import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.util.CMineGlobber;
 import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.xml.XMLUtil;
+import org.contentmine.graphics.svg.SVGG;
+import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.graphics.svg.util.ImageIOUtil;
 import org.contentmine.image.ImageUtil;
 import org.contentmine.image.ImageUtil.SharpenMethod;
@@ -39,7 +41,7 @@ name = "image",
 description = {
 		"Transforms image contents but only provides basic filtering (see ami-filter).",
 		" Services include %n"
-				+ ""
+				+ " OBSOLETE - see ami-filter"
 				+ "%n identification of duplicate images, and removal<.li>"
 				+ "%n rejection of images less than gven size</li>"
 				+ "%n rejection of monochrome images (e.g. all white or all black) (NB black and white is 'binary/ized'"
@@ -49,10 +51,20 @@ description = {
 				+ " geometric scaling of images using Imgscalr, with interpolation. Increasing scale on small fonts can help OCR, "
 				+ "decreasing scale on large pixel maps can help performance."
 				+ ""
+				+ "subimages (e.g. colour layers)"
+				
 				+ "NOTE: a missing option means it is not applied (value null). Generally no defaults"
 })
 public class AMIImageTool extends AbstractAMITool implements HasImageDir {
+	private static final String DESPECKLE = "_ds";
+
+	private static final String BBB = "_b_";
+	private static final String ERODE = "_e";
 	private static final String IMAGE = "image";
+	private static final String POSTER = "_p";
+	private static final String SCALEFACTOR = "_sc_";
+	private static final String SHARP4 = "_s4";
+	private static final String THRESHOLD = "_thr_";
 
 	private static final Logger LOG = Logger.getLogger(AMIImageTool.class);
 	static {
@@ -65,26 +77,23 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 		Pmr,
 	}
 	
+	public enum OutputFile {
+		binary("save binary (b/w)"),
+		freqplot("frequencies"),
+		freqplot2("more frequencies"),
+		frequencies("actual frequencies"),
+		orig("save original"),
+		poster("save posterized"),
+		;
+		private String desc;
+
+		private OutputFile(String desc) {
+			this.desc = desc;
+		}
+		
+	}
+	
 	interface AbstractDest {}
-	
-	
-	public enum DuplicateDest implements AbstractDest {
-		_delete,
-		duplicate,
-		;
-	}
-	
-	public enum MonochromeDest implements AbstractDest {
-		_delete,
-		monochrome,
-		;
-	}
-	
-	public enum SmallDest implements AbstractDest {
-		_delete,
-		small,
-		;
-	}
 	
 	public enum AMIImageType {
 		NONE("none", 0, new AMIImageType[]{}),
@@ -165,13 +174,6 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
             + "4 vals = top, right bottom, left; default NONE")
 	private List<Integer> borders = null ;
 
-//    @Option(names = {"--duplicate"},
-//    		arity="0..1",
-//    		defaultValue = "duplicate",
-//            description = "FILTER: move duplicate images to <duplicate>; default = ${DEFAULT-VALUE}; "+_DELETE+" means delete"
-//            )
-//	private DuplicateDest duplicateDirname;
-
     @Option(names = {"--filter"},
             description = "pre-runs default FILTER (i.e. without args), duplicate, small, monochrome"
             )
@@ -188,21 +190,7 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
     		defaultValue = "100",
             description = "minimum width (pixels) to accept")
     private int minWidth;
-    
-//    @Option(names = {"--monochrome"},
-//    		arity="0..1",
-//    		defaultValue = "monochrome",
-//            description = "FILTER: move monochrome images to <monochrome>; default ${DEFAULT-VALUE}; "+_DELETE+" means delete"
-//            )
-//	private MonochromeDest monochromeDirname;
-
-//    @Option(names = {"--small"},
-//    		arity="0..1",
-//    		defaultValue = "small",
-//            description = "FILTER: move small images to <small>; default ${DEFAULT-VALUE}; "+_DELETE+" means delete"
-//            )
-//	private SmallDest smallDirname;
-    
+        
     // TRANSFORM OPTIONS
     
     @Option(names = {"--binarize"},
@@ -232,12 +220,29 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
             description = "maximum width (pixels) to accept. If larger, scales the image (default: ${DEFAULT-VALUE})")
     private Integer maxWidth;
     
+    @Option(names = {"--mediancut"},
+//    		arity = "1",
+//    		defaultValue = "1000",
+            description = "median cut (Heckbert)  NYI")
+    private Object what = null;
+    
+    @Option(names = {"--merge"},
+    		arity = "1",
+            description = "merge neighbouring map colours for (merge) cycles;"
+            		+ "experimental")
+	private Integer nMerge = 0;
+
     @Option(names = {"--posterize"},
     		arity = "1",
-    		defaultValue = "16",
+    		fallbackValue = "4",
             description = "flatten colors to set number, must be power-of-2 (default: ${DEFAULT-VALUE}) "
             		+ "to create a map of colors")
     private Integer posterizeCount = null;
+
+    @Option(names = {"--outputfiles"},
+    		arity = "1..*",
+            description = "output files related to posterization")
+    private List<OutputFile> outputFiles;
 
     @Option(names = {"--priority"},
     		arity = "1",
@@ -299,6 +304,8 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 	private SharpenMethod sharpenMethod;
 	private AbstractTemplateElement templateElement;
 
+	private File imageDir;
+
     /** used by some non-picocli calls
      * obsolete it
      * @param cProject
@@ -354,13 +361,13 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 		if (imageFile == null) {
 			LOG.debug("processSingleImageFile: null file");
 		} else {
-			File imageDir = imageFile.getParentFile();
-			processTransformImageDir(imageDir);
+			imageDir = imageFile.getParentFile();
+			processTransformImageDir();
 		}
 	}
 
 
-	private void processTransformImageDir(File imageDir) {
+	private void processTransformImageDir() {
 		if (!imageDir.exists()) {
 			LOG.debug("Dir does not exist: "+imageDir);
 		} else {
@@ -371,7 +378,7 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 				processTemplate();
 			} else {
 				try {
-					runTransform(imageDir, getInputBasename());
+					runTransform(getInputBasename());
 				} catch (Exception e) {
 					e.printStackTrace();
 					LOG.error("Bad read: "+imageDir+" ("+e.getMessage()+")");
@@ -397,13 +404,11 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 		for (File imageDir : imageDirs) {
 			if (imageDir.getName().startsWith(IMAGE)) {
 				System.err.print(".");
-				processTransformImageDir(imageDir);
+				processTransformImageDir();
 			}
 			continue;
 		}
 	}
-
-	
 
 	private void processTemplate() {
 		List<Element> imageElements = XMLUtil.getQueryElements(templateElement, "./*[local-name()='"+ImageTemplateElement.TAG+"']");
@@ -414,8 +419,8 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 
 	// ================= transform ===============
 	
-	private void runTransform(File imageDir, String inputBasename2) {
-		File imageFile = new File(imageDir, inputBasename2+"."+CTree.PNG);
+	private void runTransform(String inputBasename) {
+		File imageFile = new File(imageDir, inputBasename + "." + CTree.PNG);
 		if (!imageFile.exists()) {
 			System.out.println("non-existent image file: "+AMIImageTool.shortName(imageFile));
 			return;
@@ -425,40 +430,40 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 		String basename = FilenameUtils.getBaseName(imageFile.toString());
 		if (image != null) {
 			if (rotateAngle != null) {
-				image = rotateAndSave(image, imageDir);
+				image = rotateAndSave(image);
 			}
 			if (scalefactor != null) {
-				image = scaleAndSave(image, imageDir);
-				basename += "_sc_"+(int)(double)scalefactor;
+				image = scaleAndSave(image);
+				basename += SCALEFACTOR+(int)(double)scalefactor;
 			}
 			if (sharpen != null && !SharpenMethod.NONE.toString().contentEquals(sharpen)) {
-				image = sharpenAndSave(image, imageDir);
-				basename += "_s4";
+				image = sharpenAndSave(image);
+				basename += SHARP4;
 			}
 			if (borders != null) {
-				image = bordersAndSave(image, imageDir);
-				basename += "_b_"+borders.toString().replaceAll("(\\[|\\])", "");
+				image = bordersAndSave(image);
+				basename += BORDER +borders.toString().replaceAll("(\\[|\\])", "");
 			}
 			if (erodeDilate) {
-				image = erodeDilateAndSave(image, imageDir);
-				basename += "_e";
+				image = erodeDilateAndSave(image);
+				basename += ERODE;
 			}
 			if (binarize != null || threshold != null) {
-				image = binarizeAndSave(image, imageDir);
+				image = binarizeAndSave(image);
 				if (binarize != null) {
 					basename += binarize.name();
 				}
 				if (threshold != null) {
-					basename += "_thr_"+threshold.toString();
+					basename += THRESHOLD+threshold.toString();
 				} 
 			}
 			if (posterizeCount != null) {
-				image = posterizeAndSave(image, imageDir);
-				basename += "_p"+posterizeCount;
+				image = posterizeAndSave(image);
+				basename += POSTER+posterizeCount;
 			}
 			if (despeckle) {
-				image = despeckleAndSave(image, imageDir);
-				basename += "_ds".toString();
+				image = despeckleAndSave(image);
+				basename += DESPECKLE.toString();
 				
 			}
 			File outfile = new File(imageDir, basename+"."+CTree.PNG);
@@ -470,20 +475,17 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 		return imageFile.getParentFile().getName()+"/"+imageFile.getName();
 	}
 
-	private BufferedImage posterizeAndSave(BufferedImage image, File imageDir) {
+	private BufferedImage posterizeAndSave(BufferedImage image) {
 		if (posterizeCount != null) {
 			ColorAnalyzer analyzer = new ColorAnalyzer(image);
 			analyzer.setIntervalCount(posterizeCount);
-//			analyzer.analyzeFlattenedColours();
-//			analyzer.flattenImage();
 			image = ImageUtil.flattenImage(image, posterizeCount);
-
-//			LOG.warn("posterize NYI");
+			outputPlanes(image);
 		}
 		return image;
 	}
 
-	private BufferedImage erodeDilateAndSave(BufferedImage image, File imageDir) {
+	private BufferedImage erodeDilateAndSave(BufferedImage image) {
 		image = ImageUtil.thresholdBoofcv(image, erodeDilate);
 		if (verbosity().length > 1) {
 			File outputPng = new File(imageDir, "erodeDilate"+"."+CTree.PNG);
@@ -493,7 +495,7 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 		return image;
 	}
 
-	private BufferedImage despeckleAndSave(BufferedImage image, File imageDir) {
+	private BufferedImage despeckleAndSave(BufferedImage image) {
 		image = ImageUtil.despeckle(image);
 		if (verbosity().length > 1) {
 			File outputPng = new File(imageDir, "despeckle"+"."+CTree.PNG);
@@ -508,7 +510,7 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 	 * @param image
 	 * @return
 	 */
-	private BufferedImage binarizeAndSave(BufferedImage image, File imageDir) {
+	private BufferedImage binarizeAndSave(BufferedImage image) {
 		int[] oldRGB = {0x000d0d0d};
 		int[] newRGB = {0x00ffffff};
 		
@@ -541,7 +543,7 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 		return image;
 	}
 
-	private BufferedImage sharpenAndSave(BufferedImage image, File imageDir) {
+	private BufferedImage sharpenAndSave(BufferedImage image) {
 		BufferedImage resultImage = null;
 		if (ImageToolkit.Boofcv.equals(toolkit)) {
 			resultImage = ImageUtil.sharpenBoofcv(image, sharpenMethod);
@@ -560,7 +562,7 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 		return resultImage;
 	}
 
-	private BufferedImage rotateAndSave(BufferedImage image, File imageDir) {
+	private BufferedImage rotateAndSave(BufferedImage image) {
 		if (rotateAngle != null && rotateAngle % 90 == 0) {
 			// can't find a boofcv rotate
 			if (false && ImageToolkit.Boofcv.equals(toolkit)) {
@@ -573,7 +575,7 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 		return image;
 	}
 
-	private BufferedImage scaleAndSave(BufferedImage image, File imageDir) {
+	private BufferedImage scaleAndSave(BufferedImage image) {
 		Double scale = scalefactor != null ? scalefactor :
 			ImageUtil.getScaleToFitImageToLimits(image, maxWidth, maxHeight);
 		if (!Real.isEqual(scale,  1.0,  0.0000001)) {
@@ -591,7 +593,7 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 		return image;
 	}
 	
-	private BufferedImage bordersAndSave(BufferedImage image, File imageDir) {
+	private BufferedImage bordersAndSave(BufferedImage image) {
 		int color = 0x00FFFFFF;
 		int xBorder = borders.get(0);
 		int yBorder = borders.size() > 1 ? borders.get(1) : xBorder;
@@ -609,7 +611,7 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 	/** HasImageDir methods*/
 	@Override
 	public void processImageDir(File imageFile) {
-//		System.err.println("Single IMAGE FILE "+imageFile);
+		System.err.println("Single IMAGE FILE "+imageFile);
 		processSingleImageFile(imageFile);
 	}
 
@@ -626,8 +628,47 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 		return imageFile;
 	}
 
+	private void outputPlanes(BufferedImage image) {
+		image = ImageUtil.flattenImage(image, posterizeCount);
+		
+		if (outputFiles.contains(OutputFile.orig)) {
+			File poster0 = new File(getOutputDir(), "poster.orig.png");
+			System.out.println("writing "+poster0);
+			ImageIOUtil.writeImageQuietly(image, poster0);
+		}
+		
+		ColorAnalyzer colorAnalyzer = new ColorAnalyzer(image);
+		if (outputFiles.contains(OutputFile.binary)) {
+			colorAnalyzer.writeBinaryImage(getOutputDir());
+		}
+		
+		if (outputFiles.contains(OutputFile.freqplot)) {
+			colorAnalyzer.readImage(image);
+			colorAnalyzer.writeColourFrequencyPlot(getOutputDir());
+		}
+		
+		if (nMerge > 0) {
+			image = colorAnalyzer.repeatedlyMergeMinorColors(image, nMerge);
+		}
+		
+		if (outputFiles.contains(OutputFile.frequencies)) {
+			colorAnalyzer = new ColorAnalyzer(image);
+			colorAnalyzer.writeColorsByFrequency(getOutputDir());
+		}
+		
+		if (outputFiles.contains(OutputFile.freqplot2)) {
+			SVGG g = colorAnalyzer.createColorFrequencyPlot();
+			SVGSVG.wrapAndWriteAsSVG(g, new File(getOutputDir(), "colors.svg"));
+		}
+		
+		if (outputFiles.contains(OutputFile.poster)) {
+			File file = new File(getOutputDir(), "poster.png");
+			ImageIOUtil.writeImageQuietly(image, file);
+		}
+	}
 
-
-
+	private File getOutputDir() {
+		return new File(imageDir, getOutput());
+	}
 
 }

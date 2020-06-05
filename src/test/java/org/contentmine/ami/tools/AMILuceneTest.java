@@ -1,25 +1,42 @@
 package org.contentmine.ami.tools;
 
 import java.io.File;
+import java.io.StringReader;
 import java.nio.file.Paths;
+import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.StopFilter;
+import org.apache.lucene.analysis.TokenStream;
+import org.apache.lucene.analysis.core.DecimalDigitFilter;
+import org.apache.lucene.analysis.core.LowerCaseFilter;
+import org.apache.lucene.analysis.core.UpperCaseFilter;
+import org.apache.lucene.analysis.en.EnglishAnalyzer;
+import org.apache.lucene.analysis.en.PorterStemFilter;
+import org.apache.lucene.analysis.miscellaneous.CapitalizationFilter;
+import org.apache.lucene.analysis.miscellaneous.LimitTokenCountFilter;
+import org.apache.lucene.analysis.miscellaneous.RemoveDuplicatesTokenFilter;
+import org.apache.lucene.analysis.miscellaneous.TrimFilter;
+import org.apache.lucene.analysis.miscellaneous.TruncateTokenFilter;
+import org.apache.lucene.analysis.reverse.ReverseStringFilter;
+import org.apache.lucene.analysis.shingle.ShingleFilter;
+import org.apache.lucene.analysis.snowball.SnowballFilter;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
+import org.apache.lucene.analysis.tr.ApostropheFilter;
+import org.apache.lucene.analysis.util.ElisionFilter;
 import org.apache.lucene.demo.IndexFiles;
 import org.apache.lucene.demo.SearchFiles;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
-import org.apache.lucene.queryparser.classic.ParseException;
-import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.store.FSDirectory;
-import org.contentmine.ami.tools.lucene.LuceneTools;
+import org.contentmine.ami.tools.lucene.LuceneUtils;
 import org.contentmine.norma.NAConstants;
 import org.junit.Assert;
 import org.junit.Test;
@@ -42,15 +59,29 @@ public class AMILuceneTest {
 		LOG.setLevel(Level.DEBUG);
 	}
 	
+	public final static String CRICK_WATSON = ""
+			+ "It has not escaped our notice that the specific pairing we have postulated"
+			+ " immediately suggests a possible copying mechanism for the genetic material.";
+
+	/** apologies for converting apostrophe's to modern usage*/
+	public final static String TOBE = ""
+			+ "“To be, or not to be: that is the question:\n" + 
+			"Whether 'tis nobler in the mind to suffer\n" + 
+			"The slings and arrows of outrageous fortune,\n" + 
+			"Or to take arms against a sea of troubles,\n" + 
+			"And by opposing end them? To die: to sleep;\n" + 
+			"No more; and by a sleep to say we end\n" + 
+			"The heart-ache and the thousand natural shocks\n" + 
+			"That flesh is heir to, 'tis a consummation\n" + 
+			"Devoutly to be wish'd. To die, to sleep;";
 	String excludeTypes = "png";
 
 	private static final File ZIKA2INDEX = new File("target/lucene/zika2");
 	private static final File ZIKA2INPUT = new File(NAConstants.TEST_AMI_DIR, "zika2");
 	private static final File ZIKA10INDEX = new File("target/lucene/zika10");
 	private static final File ZIKA10INPUT = new File(NAConstants.TEST_AMI_DIR, "zika10");
-	File inputDir; 
+	File inputDir;
 
-	
 	@Test
 	public void testHelp() {
 		new AMILuceneTool().runCommands(new String[]{});
@@ -382,7 +413,7 @@ public static void testFindDocument(String searchTerm)
 		String inputDir = "src/test/resources/org/contentmine/ami/battery10";
 		String indexPath = "target/lucene/battery10";
 	    boolean create = true;
-	    LuceneTools.createDefaultLuceneIndex(inputDir, indexPath, create);
+	    LuceneUtils.createDefaultLuceneIndex(inputDir, indexPath, create);
 	}
 
 
@@ -411,7 +442,7 @@ public static void testFindDocument(String searchTerm)
 	    String line = "lithium";
 	    int hitsPerPage = 20;
 	    
-	    Query query = LuceneTools.createQuery(field, line);
+	    Query query = LuceneUtils.createQuery(field, line);
 	      
 	    // Collect enough docs to show 5 pages
 		TopDocs results = searcher.search(query, 5 * hitsPerPage);
@@ -436,5 +467,78 @@ public static void testFindDocument(String searchTerm)
 	
 	}
 
+	@Test
+	public void testPorterStemming() {
+		List<String> tokens = LuceneUtils.applyStandardTokenizedLucenePorterStemming(CRICK_WATSON);
+		Assert.assertEquals("stemmed", "["
+				+ "It, ha, not, escap, our, notic, that, the, specif, pair, we, have, postul, "
+				+ "immedi, suggest, a, possibl, copi, mechan, for, the, genet, materi]" + 
+				"", tokens.toString());
+		System.out.println(tokens);
+
+	}
+	
+	@Test
+	public void testChainedFilters() {
+		// not used
+		PorterStemFilter ff;
+		ApostropheFilter a;
+		DecimalDigitFilter d;
+		ElisionFilter e;
+		LimitTokenCountFilter l;
+		RemoveDuplicatesTokenFilter rr;
+		ShingleFilter sf;
+
+		StringReader reader = new StringReader(TOBE);
+		Analyzer analyzer = new StandardAnalyzer();
+		TokenStream tokenStream = analyzer.tokenStream("lowercase", reader);
+		
+		analyzer.close();
+		tokenStream = new LowerCaseFilter(tokenStream);
+		// remove stopwords
+		tokenStream = new StopFilter(tokenStream, EnglishAnalyzer.ENGLISH_STOP_WORDS_SET);
+		// convert to upper
+		tokenStream = new UpperCaseFilter(tokenStream);
+		// reverse
+		tokenStream = new ReverseStringFilter(tokenStream);
+		// reconvert to lower
+		tokenStream = new LowerCaseFilter(tokenStream);
+		// re-reverse, so back where started
+		tokenStream = new ReverseStringFilter(tokenStream);
+		// capitalize first character
+		tokenStream = new CapitalizationFilter(tokenStream);
+		// stem
+		tokenStream = new SnowballFilter(tokenStream, "English");
+		// trim tokens
+		tokenStream = new TrimFilter(tokenStream);
+		// truncate them
+		tokenStream = new TruncateTokenFilter(tokenStream, 6);
+
+		// can only call this once unless tokenStream is reset in
+		// some way I and others can't work
+		List<String> tokenList = LuceneUtils.extractStringList(tokenStream);
+		analyzer.close();
+		Assert.assertEquals("tokens", 
+				"[Questi, Whethe, Tis, Nobler, Mind, Suffer, Sling, Arrow, Outrag, Fortun, Take, Arms, Agains, Sea, Troubl, Oppose, End, Them, Die, Sleep, More, Sleep, Say, We, End, Heart, Ache, Thousa, Natur, Shock, Flesh, Heir, Tis, Consum, Devout, Wish'd, Die, Sleep]" + 
+				"", tokenList.toString());
+
+	}
+	
+//	https://howtodoinjava.com/lucene/lucene-search-highlight-example/
+		
+//	public static List<String> createStringList(TokenStream tokens) {
+//	        List<String> results = new ArrayList<>();
+////	        try (TokenStream tokens = analyzer.tokenStream("", value)) {
+//	            CharTermAttribute term = tokens.getAttribute(CharTermAttribute.class);
+//	            tokens.reset();
+//	            while (tokens.incrementToken()) {
+////	            	tokens.
+//	                String t = term.toString().trim();
+//	                if (t.length() > 0) {
+//	                    results.add(t);
+//	                }
+//	            }
+////	        }
+//	        return results.toArray(new String[results.size()]);
 	
 }

@@ -8,8 +8,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import javax.imageio.ImageIO;
-
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.eucl.euclid.Int2Range;
@@ -17,7 +15,6 @@ import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.IntRange;
 import org.contentmine.eucl.euclid.IntSet;
 import org.contentmine.eucl.euclid.RealArray;
-import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.euclid.RealArray.Filter;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGSVG;
@@ -813,6 +810,36 @@ public ColorAnalyzer setSaturate(boolean saturate) {
 			ImageIOUtil.writeImageQuietly(grayImage, outfile);
 			LOG.debug("wrote: "+outfile);
 		}
+	}
+
+	public void writeColorsByFrequency(File outdir) {
+		ColorFrequenciesMap colorFrequencies = getOrCreateColorFrequenciesMap();
+		for (RGBColor color : colorFrequencies.keySet()) {
+			String hex = color.getHex();
+			LOG.trace(hex+": "+colorFrequencies.get(color));
+			BufferedImage image2 = getImage(color);
+			File hexFile = new File(outdir, "poster."+hex+".png");
+			ImageIOUtil.writeImageQuietly(image2, hexFile);
+		}
+	}
+
+	public BufferedImage repeatedlyMergeMinorColors(BufferedImage image, int nMerge) {
+		for (int i = 0; i < nMerge; i++) {
+			image = mergeMinorColours(image);
+		}
+		return image;
+	}
+
+	public void writeColourFrequencyPlot(File output) {
+		SVGG g = createColorFrequencyPlot();
+		SVGSVG.wrapAndWriteAsSVG(g, new File(output, "colors.orig.svg"));
+	}
+
+	public void writeBinaryImage(File outputDir) {
+		// write binary image
+		BufferedImage image1 = getBinaryImage();
+		File file = new File(outputDir, "binary.png");
+		ImageIOUtil.writeImageQuietly(image1, file);
 	}
 
 

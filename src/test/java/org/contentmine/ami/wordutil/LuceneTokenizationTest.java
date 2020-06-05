@@ -10,7 +10,7 @@ import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.core.WhitespaceAnalyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.contentmine.ami.AMIFixtures;
-import org.contentmine.ami.wordutil.LuceneUtils;
+import org.contentmine.ami.tools.lucene.LuceneUtils;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.eucl.xml.XMLUtil;
