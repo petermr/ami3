@@ -60,7 +60,7 @@ public class CORD19Parser {
 		} else {
 			HtmlUl ul = new HtmlUl();
 			for (JsonElement element : array) {
-				HtmlLi li = new HtmlLi();
+				HtmlElement li = new HtmlLi();
 				ul.appendChild(li);
 				HtmlElement el = parse(element);
 				li.appendChild(el);

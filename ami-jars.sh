@@ -2,9 +2,9 @@
 
 # run from ami3
 
-VERSION=ami20200602
+VERSION=ami20200608
 PROGRAM=ami3
- AMIJARS=ami-jars2
+ AMIJARS=ami-jars3
 # AMIJARS=ami-jars
 DIR=../${AMIJARS}/${VERSION}/
 mkdir ${DIR}

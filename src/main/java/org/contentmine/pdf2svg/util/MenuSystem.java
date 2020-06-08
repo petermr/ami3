@@ -24,6 +24,7 @@ import org.apache.log4j.Logger;
 import org.contentmine.eucl.xml.XMLConstants;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlA;
+import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlFrame;
 import org.contentmine.graphics.html.HtmlFrameset;
 import org.contentmine.graphics.html.HtmlHtml;
@@ -138,7 +139,7 @@ public class MenuSystem {
 	}
 
 	private void addFilename(File relativeDir, String filename) {
-		HtmlLi li = new HtmlLi();
+		HtmlElement li = new HtmlLi();
 		ul.appendChild(li);
 		HtmlA a = new HtmlA();
 		li.appendChild(a);

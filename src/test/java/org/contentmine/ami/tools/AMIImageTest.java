@@ -7,10 +7,9 @@ import java.util.List;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.cproject.files.CProject;
+import org.contentmine.cproject.files.CTree;
 import org.contentmine.image.diagram.DiagramAnalyzerTest;
-import org.junit.Assert;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 
@@ -56,8 +55,13 @@ public class AMIImageTest extends AbstractAMITest {
 	
 	@Test
 	public void testParseSpecifics() {
-		String cmd = "-v image --minwidth 20";
-		AMIImageTool imageTool = AMI.execute(AMIImageTool.class, cmd);
+		String cmd = null;
+		AMIImageTool imageTool = null;
+		cmd = "-v image --minwidth 20";
+		imageTool = AMI.execute(AMIImageTool.class, cmd);
+		cmd = " -v image --include maxpixf=\"0.25\"|minpix=\"500\" ";
+		imageTool = AMI.execute(AMIImageTool.class, cmd);
+		System.out.println(imageTool.getIncludeMap());
 	}
 	
 	@Test
@@ -261,7 +265,7 @@ public class AMIImageTest extends AbstractAMITest {
 		AMIImageTool imageTool = AMI.execute(AMIImageTool.class, cmd);
 		cmd = 
 				"-t "+FOREST_PLOT_SMALL+"/cole"
-						+ " --inputname raw"
+				+ " --inputname raw"
 				+ " image"
 				+ " --rotate 180"
 				+ "";
@@ -610,7 +614,7 @@ public class AMIImageTest extends AbstractAMITest {
 //		AbstractAMITool imageTool = AMI.execute(AMICleanTool.class, cmd);
 
 		cmd = "-p " + project
-				+ " -v"
+				+ " -vv"
 				+ " --inputname raw"
 				+ " --includetree " + treeNamesString
 				+ " --output postertest"
@@ -624,7 +628,100 @@ public class AMIImageTest extends AbstractAMITest {
 				
 	}
 
+	@Test
+	public void testOctree() {
+		String cmd = null;
+		File cProjectDir = new File(SRC_TEST_AMI, "battery10");
+		CProject project = new CProject(cProjectDir);
+		List<String> treeNames = Arrays.asList(new String[] {
+//				"PMC3776197",
+				"PMC4062906",
+				"PMC4709726",
+//				"PMC5082456",
+//				"PMC5082892",
+//				"PMC5115307",
+//				"PMC5241879",
+//				"PMC5604389",
+				});
+		String treeNamesString = String.join(" ", treeNames);
+//		cmd = "-p " + project
+//				+ " -v"
+//				+ " clean */svg/*"
+//				+ " clean */pdfimages/*"
+//				 ;
+//		AbstractAMITool imageTool = AMI.execute(AMICleanTool.class, cmd);
 
+		cmd = "-p " + project
+				+ " -vv"
+				+ " --inputname raw"
+				+ " --includetree " + treeNamesString
+				+ " --output octree"
+				+ " image"
+				+ " --octree 8"
+//				+ " --merge 1"
+				+ " --outputfiles binary channels histogram "/*neighbours*/+ " octree"
+				+ "";
+
+		AbstractAMITool imageTool = (AbstractAMITool) AMI.execute(AMIImageTool.class, cmd);
+
+				
+	}
+
+	@Test
+	public void testOctreeAllIT() {
+		String cmd = null;
+		File cProjectDir = new File(SRC_TEST_AMI, "battery10");
+		CProject project = new CProject(cProjectDir);
+		cmd = "-p " + project
+				+ " -v"
+				+ " clean **/pdfimages/*/octree **/pdfimages/*/raw_onull.png"
+				 ;
+		AMI.execute(AMICleanTool.class, cmd);
+
+		cmd = "-p " + project
+				+ " -vv"
+				+ " --inputname raw"
+				+ " --output octree"
+				+ " image"
+				+ " --octree 8"
+				+ " --outputfiles binary channels histogram html octree"
+				+ "";
+
+		AbstractAMITool imageTool = (AbstractAMITool) AMI.execute(AMIImageTool.class, cmd);
+
+				
+	}
+
+	//probably move to Pixel
+	@Test
+	public void testExtractCurves() {
+//		PMC4062906/	
+//		image.4.2.66_281.103_251 // XRD
+//		image.5.1.66_281.517_691 // voltammogram
+		String cmd = null;
+		File cProjectDir = new File(SRC_TEST_AMI, "battery10");
+		CProject project = new CProject(cProjectDir);
+		CTree tree = project.getCTreeByName("PMC4062906");
+		cmd = "-t " + tree
+				+ " -v"
+				+ " clean **/pdfimages/*/octree **/pdfimages/*/raw_onull.png"
+				 ;
+		AMI.execute(AMICleanTool.class, cmd);
+
+		cmd = "-t " + tree
+				+ " -vv"
+				+ " --inputname raw"
+				+ " --output octree"
+				+ " image"
+				+ " --octree 8"
+				+ " --outputfiles binary channels histogram html octree"
+				+ " pixel"
+				+ "";
+
+		AbstractAMITool imageTool = (AbstractAMITool) AMI.execute(AMIPixelTool.class, cmd);
+
+	}
+	
 	/** write subimages
 	 * 
 	 */
@@ -636,4 +733,20 @@ public class AMIImageTest extends AbstractAMITest {
 		DiagramAnalyzerTest.flattenAndWriteSubImages(fileroot, cProjectDir, new File("target/image/subimage/"), "png");
 	}
 
+	@Test
+	public void testExclude() {
+		String cmd = null;
+		File cProjectDir = new File(SRC_TEST_AMI, "battery10");
+		CProject project = new CProject(cProjectDir);
+
+		cmd = "-p " + project
+				+ " -vv"
+				+ " --inputname raw"
+				+ " image"
+				+ " --exclude match=/Users/pm286/ContentMine/publishers/"
+				+ "";
+
+		AbstractAMITool imageTool = (AbstractAMITool) AMI.execute(AMIPixelTool.class, cmd);
+
+	}
 }

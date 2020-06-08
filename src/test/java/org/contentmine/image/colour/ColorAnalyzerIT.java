@@ -72,7 +72,7 @@ public class ColorAnalyzerIT {
 			colorAnalyzer.setMinPixelSize(3000);
 	//		colorAnalyzer.setMinPixelSize(300);
 			colorAnalyzer.flattenImage();
-			colorAnalyzer.analyzeFlattenedColours();
+			colorAnalyzer.analyzeTransformedColours();
 		}
 
 	@Test
@@ -89,7 +89,7 @@ public class ColorAnalyzerIT {
 				colorAnalyzer.setEndPlot(15);
 				colorAnalyzer.setMinPixelSize(3000);
 				colorAnalyzer.flattenImage();
-				colorAnalyzer.analyzeFlattenedColours();
+				colorAnalyzer.analyzeTransformedColours();
 			}
 		}
 	}

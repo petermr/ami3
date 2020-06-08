@@ -386,7 +386,7 @@ public class TextChunk extends SVGG implements Iterable<PhraseChunk> {
 	public HtmlUl toHtmlUL() {
 		HtmlUl ul = new HtmlUl();
 		for (PhraseChunk phraseChunk : this) {
-			HtmlLi li = new HtmlLi();
+			HtmlElement li = new HtmlLi();
 			li.appendChild(phraseChunk.toHtml());
 			ul.appendChild(li);
 		}
@@ -396,7 +396,7 @@ public class TextChunk extends SVGG implements Iterable<PhraseChunk> {
 	public HtmlUl getPhraseListUl() {
 		HtmlUl ul = new HtmlUl();
 		for (PhraseChunk phraseChunk : this) {
-			HtmlLi li = new HtmlLi();
+			HtmlElement li = new HtmlLi();
 			ul.appendChild(li);
 			li.appendChild(phraseChunk.toHtml().copy());
 		}

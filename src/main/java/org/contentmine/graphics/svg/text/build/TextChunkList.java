@@ -303,7 +303,7 @@ public class TextChunkList extends SVGG implements Iterable<TextChunk> {
 	public HtmlUl toHtmlUL() {
 		HtmlUl ul = new HtmlUl();
 		for (TextChunk textChunk : this) {
-			HtmlLi li = new HtmlLi();
+			HtmlElement li = new HtmlLi();
 			li.appendChild(textChunk.toHtml());
 			ul.appendChild(li);
 		}
@@ -313,7 +313,7 @@ public class TextChunkList extends SVGG implements Iterable<TextChunk> {
 	public HtmlUl getTextListUl() {
 		HtmlUl ul = new HtmlUl();
 		for (TextChunk textChunk : this) {
-			HtmlLi li = new HtmlLi();
+			HtmlElement li = new HtmlLi();
 			ul.appendChild(li);
 			li.appendChild(textChunk.toHtml().copy());
 		}

@@ -22,7 +22,7 @@ public class JATSListItemElement extends JATSElement {
 	 */
 	@Override
 	public HtmlElement createHTML() {
-		HtmlLi li = new HtmlLi();
+		HtmlElement li = new HtmlLi();
 		li.setClassAttribute(TAG);
 		return deepCopyAndTransform(li);
 	}

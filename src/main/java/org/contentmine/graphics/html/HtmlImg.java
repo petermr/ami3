@@ -42,28 +42,33 @@ public class HtmlImg extends HtmlElement {
 		super(TAG);
 	}
 
-	public void setAlt(String src) {
+	public HtmlImg setAlt(String src) {
 		this.addAttribute(new Attribute(ALT, src));
+		return this;
+
 	}
 
 	public String getAlt() {
 		return this.getAttributeValue(ALT);
 	}
 	
-	public void setSrc(String src) {
+	public HtmlImg setSrc(String src) {
 		this.addAttribute(new Attribute(SRC, src));
+		return this;
 	}
 
 	public String getSrc() {
 		return this.getAttributeValue(SRC);
 	}
 
-	public void setHeight(double imgHeight) {
+	public HtmlImg setHeight(double imgHeight) {
 		this.addAttribute(new Attribute(HEIGHT, String.valueOf(imgHeight)));
+		return this;
 	}
 
-	public void setWidth(double imgWidth) {
+	public HtmlImg setWidth(double imgWidth) {
 		this.addAttribute(new Attribute(WIDTH, String.valueOf(imgWidth)));
+		return this;
 	}
 
 }

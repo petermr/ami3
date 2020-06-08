@@ -9,6 +9,7 @@ import java.awt.image.BufferedImage;
 import java.awt.image.ColorModel;
 import java.awt.image.ConvolveOp;
 import java.awt.image.Kernel;
+import java.awt.image.Raster;
 import java.awt.image.WritableRaster;
 import java.io.File;
 import java.io.IOException;
@@ -956,7 +957,7 @@ public class ImageUtil {
 		} catch (IndexOutOfBoundsException e) {
 			throw new RuntimeException("Cannot read image, probably corrupt file: "+file);
 		} catch (IOException e) {
-			throw new RuntimeException("Cannot read image: "+file);
+			throw new RuntimeException("Cannot read image: "+file, e);
 		}
 		return image;
 	}
@@ -1012,15 +1013,20 @@ public class ImageUtil {
 		return color;
 	}
 
+	/** hash because I think equals() is not reliable
+	 * 
+	 * @param image
+	 * @return
+	 */
 	public static long createSimpleHash(BufferedImage image) {
-		long l = 0;
+		long lng = 0;
 		for (int i = 0; i < image.getWidth(); i++) {
 			for (int j = 0; j <image.getHeight(); j++) {
 				int rgb = image.getRGB(i, j);
-				l += rgb * 31 + i * 17 + j * 7;
+				lng += rgb * 31 + i * 17 + j * 7;
 			}
 		}
-		return l;
+		return lng;
 	}
 	
 	// from stackoverflow
@@ -1364,6 +1370,7 @@ public class ImageUtil {
 			return;
 		}
 		try {
+			outputPng.mkdirs();
 			ImageIO.write(image, CTree.PNG, outputPng);
 		} catch (IOException e) {
 			throw new RuntimeException("Cannot write image: "+outputPng, e);
@@ -1753,6 +1760,40 @@ public class ImageUtil {
 	    g.drawImage(source, 0, 0, null);
 	    g.dispose();
 	    return b;
+	}
+	
+	/** get pixels as row-wise raster
+	 * 
+	 * @param img
+	 * @return
+	 */
+	public static int[] getPixels(BufferedImage image) {
+		int width = image.getWidth();
+		int height = image.getHeight();
+		int[] pixels = new int[width * height];
+		int ipix = 0;
+		for (int irow = 0 ; irow < height; irow++) {
+			for (int jcol = 0 ; jcol < width; jcol++) {
+				pixels[ipix++] = image.getRGB(jcol, irow);
+			}
+		}
+		return pixels;
+	}
+
+	/** reads image from a y-first array of pixels */
+	public static BufferedImage create(int type, int[] pixels, int width, int height) {
+		BufferedImage image = ImageUtil.createImage(width, height, 0, type);
+		if (pixels.length != width * height) {
+			throw new RuntimeException(
+					"wrong dimensions: " + pixels.length + " != " + width + " * " + height);
+		}
+		int ipix = 0;
+		for (int irow = 0 ; irow < height; irow++) {
+			for (int jcol = 0 ; jcol < width; jcol++) {
+				image.setRGB(jcol, irow, pixels[ipix++]);
+			}
+		}
+		return image;
 	}
 	
 }

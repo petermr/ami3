@@ -777,8 +777,8 @@ Elementary
 	}
 
 
-	private HtmlLi processBiblStruct(Element biblStructElement) {
-		HtmlLi li = new HtmlLi();
+	private HtmlElement processBiblStruct(Element biblStructElement) {
+		HtmlElement li = new HtmlLi();
 		Elements childElements = biblStructElement.getChildElements();
 		for (int i = 0; i < childElements.size(); i++) {
 			Element childElement = childElements.get(i);

@@ -9,7 +9,6 @@ import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlA;
 import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.html.HtmlElement;
-import org.contentmine.graphics.html.HtmlLi;
 import org.contentmine.graphics.html.HtmlSpan;
 import org.contentmine.graphics.html.util.HtmlUtil;
 
@@ -53,7 +52,7 @@ public class WikiResult {
 	 * @param li
 	 * @return
 	 */
-	public static WikiResult extractWikiResult(HtmlLi li) {
+	public static WikiResult extractWikiResult(HtmlElement li) {
 		WikiResult wikiResult = new WikiResult();
 		wikiResult.extractResult(li);
 		return wikiResult;
@@ -62,7 +61,7 @@ public class WikiResult {
 	public static List<WikiResult> extractWikiResultList(List<HtmlElement> liList) {
 		List<WikiResult> resultList = new ArrayList<WikiResult>();
 		for (HtmlElement li : liList) {
-			WikiResult wikiResult = WikiResult.extractWikiResult((HtmlLi)li);
+			WikiResult wikiResult = WikiResult.extractWikiResult((HtmlElement)li);
 			resultList.add(wikiResult);
 		}
 		if (resultList.size() == 1) {
@@ -96,7 +95,7 @@ public class WikiResult {
 		return element;
 	}
 
-	public void extractResult(HtmlLi li) {
+	public void extractResult(HtmlElement li) {
 		HtmlDiv div0 = (HtmlDiv) XMLUtil.getQueryElements(li, 
 				"./"+HtmlUtil.elem(HtmlDiv.TAG)).get(0);
 		HtmlA a = (HtmlA) XMLUtil.getSingleElement(div0, 

@@ -519,7 +519,7 @@ species of bird
 				newDictionaryElement.removeAttribute(wikidata);
 			}
 		} else if (liList.size() == 1) {
-			WikiResult wikiResult = WikiResult.extractWikiResult((HtmlLi) liList.get(0));
+			WikiResult wikiResult = WikiResult.extractWikiResult((HtmlElement) liList.get(0));
 			newDictionaryElement.addAttribute(new Attribute(WikipediaLookup.WIKIDATA, wikiResult.getQString()));
 			LOG.debug("added single match: " + wikiResult.getQString());
 		} else {

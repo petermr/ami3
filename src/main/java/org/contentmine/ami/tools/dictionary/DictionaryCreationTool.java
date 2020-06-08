@@ -504,7 +504,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		for (HtmlA a : aList) {
 			nameList.add(a.getValue());
 			linkList.add(a.getHref());
-			HtmlLi li = new HtmlLi();
+			HtmlElement li = new HtmlLi();
 			li.appendChild(a.copy());
 			ul.appendChild(li);
 		}

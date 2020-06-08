@@ -20,6 +20,7 @@ import org.contentmine.cproject.util.CMineGlobber;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
+import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlLi;
 import org.contentmine.graphics.html.HtmlUl;
 import org.contentmine.html.util.WebDriverXom;
@@ -730,7 +731,7 @@ hitList2 and hitList3 are the wrong way round.
 		Assert.assertEquals("biblio", 10, biblioList.size());
 		Element hitListUl = new HtmlUl();
 		for (Element biblio : biblioList) {
-			HtmlLi li = new HtmlLi();
+			HtmlElement li = new HtmlLi();
 			hitListUl.appendChild(li);
 			biblio.detach();
 			li.appendChild(biblio);

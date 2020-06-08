@@ -91,7 +91,7 @@ public class DiagramAnalyzerIT {
 		SVGG g = colorAnalyzer.createColorFrequencyPlot();
 		SVGSVG.wrapAndWriteAsSVG(g, new File(ImageAnalysisFixtures.TARGET_BIO_DIR, fileroot+"/colors.orig.svg"));
 		
-		image = colorAnalyzer.mergeMinorColours(image);
+		image = colorAnalyzer.mergeMinorColoursFromNeighbouringMap(image);
 		
 		colorAnalyzer = new ColorAnalyzer(image);
 		g = colorAnalyzer.createColorFrequencyPlot();
@@ -100,9 +100,9 @@ public class DiagramAnalyzerIT {
 		ImageIOUtil.writeImageQuietly(image, file);
 		
 		//flatten color map
-		image = colorAnalyzer.mergeMinorColours(image);
-		image = colorAnalyzer.mergeMinorColours(image);
-		image = colorAnalyzer.mergeMinorColours(image);
+		image = colorAnalyzer.mergeMinorColoursFromNeighbouringMap(image);
+		image = colorAnalyzer.mergeMinorColoursFromNeighbouringMap(image);
+		image = colorAnalyzer.mergeMinorColoursFromNeighbouringMap(image);
 			
 		colorAnalyzer = new ColorAnalyzer(image);
 		g = colorAnalyzer.createColorFrequencyPlot();
@@ -182,9 +182,9 @@ public class DiagramAnalyzerIT {
 		SVGG g = colorAnalyzer.createColorFrequencyPlot();
 		SVGSVG.wrapAndWriteAsSVG(g, new File(ImageAnalysisFixtures.TARGET_BIO_DIR, fileroot+"/colors.orig.svg"));
 		
-		image = colorAnalyzer.mergeMinorColours(image);
-		image = colorAnalyzer.mergeMinorColours(image);
-		image = colorAnalyzer.mergeMinorColours(image);
+		image = colorAnalyzer.mergeMinorColoursFromNeighbouringMap(image);
+		image = colorAnalyzer.mergeMinorColoursFromNeighbouringMap(image);
+		image = colorAnalyzer.mergeMinorColoursFromNeighbouringMap(image);
 		
 		colorAnalyzer = new ColorAnalyzer(image);
 		ColorFrequenciesMap colorFrequencies = colorAnalyzer.getOrCreateColorFrequenciesMap();

@@ -1,35 +1,10 @@
 package org.contentmine.ami;
 
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.util.Collections;
-import java.util.List;
-
-import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.AbstractAMITool;
-import org.contentmine.cproject.files.CProject;
-import org.contentmine.cproject.files.CTree;
-import org.contentmine.cproject.files.DebugPrint;
-import org.contentmine.cproject.util.CMineGlobber;
-import org.contentmine.eucl.euclid.Int2;
-import org.contentmine.eucl.euclid.util.MultisetUtil;
-import org.contentmine.image.diagram.DiagramAnalyzer;
-import org.contentmine.image.pixel.PixelIsland;
-import org.contentmine.image.pixel.PixelIslandList;
-import org.contentmine.image.pixel.PixelRingList;
-import org.contentmine.image.processing.HilditchThinning;
-import org.contentmine.image.processing.Thinning;
-import org.contentmine.image.processing.ZhangSuenThinning;
 
-import com.google.common.collect.HashMultiset;
-import com.google.common.collect.Multiset;
-import com.google.common.collect.Multiset.Entry;
-
-import boofcv.io.image.UtilImageIO;
 import picocli.CommandLine.Command;
-import picocli.CommandLine.Option;
 
 /** analyses bitmaps
  * 

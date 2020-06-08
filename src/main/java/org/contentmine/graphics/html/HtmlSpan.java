@@ -41,9 +41,9 @@ public class HtmlSpan extends HtmlElement {
 		super(TAG);
 	}
 	
-	public HtmlSpan(String id1) {
+	public HtmlSpan(String text) {
 		this();
-		this.appendChild(id1);
+		this.appendChild(text);
 	}
 
 	/** makes a new list composed of the spans in the list

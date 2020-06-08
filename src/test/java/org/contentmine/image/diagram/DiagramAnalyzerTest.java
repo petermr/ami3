@@ -288,11 +288,11 @@ sb.toString());
 		
 		int nMerge = 3;
 		for (int i = 0; i < nMerge; i++) {
-			image = colorAnalyzer.mergeMinorColours(image);
+			image = colorAnalyzer.mergeMinorColoursFromNeighbouringMap(image);
 		}
 		
 		colorAnalyzer = new ColorAnalyzer(image);
-		colorAnalyzer.writeColorsByFrequency(outdir);
+		colorAnalyzer.writeImagesForColors(outdir, 100);
 		
 		g = colorAnalyzer.createColorFrequencyPlot();
 		SVGSVG.wrapAndWriteAsSVG(g, new File(outdir, "colors.svg"));

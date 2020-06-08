@@ -7,6 +7,7 @@ import java.util.Set;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.graphics.svg.SVGElement;
 
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
@@ -50,7 +51,7 @@ public class RGBNeighbourMap {
 	public void calculateRGBNeighbours() {
 		int maxStep = 0x7f;
 		getOrCreateRGBList();
-		ensureNeighbourMap();
+		getOrCreateNeighbourMap();
 		for (int i = 0; i < rgbList.size() - 1; i++) {
 			Entry<RGBColor> rgbEntryi = rgbList.get(i);
 			RGBColor rgbi = rgbEntryi.getElement();
@@ -74,10 +75,11 @@ public class RGBNeighbourMap {
 		}
 	}
 
-	private void ensureNeighbourMap() {
+	private Multimap<RGBColor, RGBColor> getOrCreateNeighbourMap() {
 		if (neighbourMap == null) {
 			neighbourMap = ArrayListMultimap.create();
 		}
+		return neighbourMap;
 	}
 
 	private List<Entry<RGBColor>> getOrCreateRGBList() {
@@ -166,6 +168,12 @@ public class RGBNeighbourMap {
 			}
 		}
 		return rgbColor;
+	}
+	
+	public SVGElement createColorNeighbourMap() {
+		SVGElement svgElement = null;
+		LOG.warn("createColorMap NYI");
+		return svgElement;
 	}
 
 	// these methods in the multimap interface aren't compatible with neighbourMap, no idea why

@@ -642,6 +642,16 @@ public abstract class HtmlElement extends AbstractCMElement {
 		LOG.debug("no tidy for: "+this.getClass()+" ; override");
 	}
 
+	/** wraps this.appendChild() allowing fluent code
+	 * 
+	 * @param child
+	 * @return this
+	 */
+	public HtmlElement addFluent(HtmlElement child) {
+		this.appendChild(child);
+		return this;
+	}
+
 	public static HtmlElement parseXML(String content) {
 		return HtmlElement.create(HtmlUtil.parseCleanlyToXHTML(content));
 	}

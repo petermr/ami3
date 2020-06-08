@@ -90,6 +90,7 @@ RGB to HSV:
  */
 public class ColorAnalyzer {
 
+	private static final String CHANNEL = "channel";
 	private static final Logger LOG = Logger.getLogger(ColorAnalyzer.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
@@ -370,7 +371,7 @@ public ColorAnalyzer setSaturate(boolean saturate) {
 		ImageIOUtil.writeImageQuietly(currentImage, new File("target/flatten/after.png"));
 	}
 	
-	public void analyzeFlattenedColours() {
+	public void analyzeTransformedColours() {
 		getOrCreateColorSet();
 		createSortedFrequencies();
 		createPixelListsFromColorValues();
@@ -381,14 +382,11 @@ public ColorAnalyzer setSaturate(boolean saturate) {
 		if (outputDirectory != null) {
 			writePixelListsAsSVG();
 			outputImageFilename = "main.png";
-			writeMainImage(outputImageFilename);
+			ImageIOUtil.writeImageQuietly(currentImage, new File(outputDirectory, outputImageFilename));
 		}
 	}
 
-	private void writeMainImage(String outputName) {
-		ImageIOUtil.writeImageQuietly(currentImage, new File(outputDirectory, outputName));
-	}
-
+	
 	private void writePixelListsAsSVG() {
 		for (int i = 0; i < pixelListList.size(); i++) {
 			String hexColorS = Integer.toHexString(colorValues.elementAt(i));
@@ -455,7 +453,7 @@ public ColorAnalyzer setSaturate(boolean saturate) {
 		setEndPlot(15);
 		setMinPixelSize(300);
 		flattenImage();
-		analyzeFlattenedColours();
+		analyzeTransformedColours();
 		return this;
 	}
 
@@ -485,7 +483,7 @@ public ColorAnalyzer setSaturate(boolean saturate) {
 			currentImage = ImageUtil.averageImageColors(currentImage);
 		}
 		this.flattenImage();
-		this.analyzeFlattenedColours();
+		this.analyzeTransformedColours();
 
 	}
 
@@ -528,15 +526,15 @@ public ColorAnalyzer setSaturate(boolean saturate) {
 		return colorFrequenciesMap;
 	}
 
-	public BufferedImage mergeMinorColours(BufferedImage image) {
+	public BufferedImage mergeMinorColoursFromNeighbouringMap(BufferedImage image) {
 		readImage(image);
 		getOrCreateNeighbouringColorMap();
 		BufferedImage newImage = ImageUtil.deepCopy(image);
-		for (int i = 0; i < width; i++) {
-			for (int j = 0; j < height; j++) {
-				RGBColor rgbColor = new RGBColor(image.getRGB(i, j));
+		for (int jcol = 0; jcol < width; jcol++) {
+			for (int irow = 0; irow < height; irow++) {
+				RGBColor rgbColor = new RGBColor(image.getRGB(jcol, irow));
 				RGBColor rgbColor1 = rgbNeighbourMap.getMoreFrequentRGBNeighbour(colorFrequenciesMap, rgbColor);
-				newImage.setRGB(i, j, rgbColor1.getRGBInteger());
+				newImage.setRGB(jcol, irow, rgbColor1.getRGBInteger());
 			}
 		}
 		return newImage;
@@ -812,20 +810,23 @@ public ColorAnalyzer setSaturate(boolean saturate) {
 		}
 	}
 
-	public void writeColorsByFrequency(File outdir) {
+	public void writeImagesForColors(File outdir, int minPixels) {
 		ColorFrequenciesMap colorFrequencies = getOrCreateColorFrequenciesMap();
 		for (RGBColor color : colorFrequencies.keySet()) {
-			String hex = color.getHex();
-			LOG.trace(hex+": "+colorFrequencies.get(color));
-			BufferedImage image2 = getImage(color);
-			File hexFile = new File(outdir, "poster."+hex+".png");
-			ImageIOUtil.writeImageQuietly(image2, hexFile);
+			String hex = color.getHex().replaceAll("#", "");
+			Integer count = colorFrequencies.get(color);
+			if (count > minPixels) {
+				System.out.println("Freq: "+hex+": "+count);
+				BufferedImage image = getImage(color);
+				File hexFile = new File(outdir, CHANNEL+"."+hex+".png");
+				ImageIOUtil.writeImageQuietly(image, hexFile);
+			}
 		}
 	}
 
 	public BufferedImage repeatedlyMergeMinorColors(BufferedImage image, int nMerge) {
 		for (int i = 0; i < nMerge; i++) {
-			image = mergeMinorColours(image);
+			image = mergeMinorColoursFromNeighbouringMap(image);
 		}
 		return image;
 	}

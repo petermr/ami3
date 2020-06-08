@@ -2,10 +2,14 @@ package org.contentmine.image.colour;
 
 import java.awt.Color;
 import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.awt.image.ColorModel;
 import java.awt.image.IndexColorModel;
+import java.awt.image.WritableRaster;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.image.ImageUtil;
 
 	/** Converts an RGB image to 8-bit index color using Heckbert's median-cut
 	    color quantization algorithm. Based on median.c by Anton Kruger from the
@@ -27,6 +31,10 @@ import org.apache.log4j.Logger;
 		private int width, height;
 		private IndexColorModel cm; 
 
+		public MedianCut(BufferedImage image) {
+			this(ImageUtil.getPixels(image), image.getWidth(), image.getHeight());
+		}
+		
 		public MedianCut(int[] pixels, int width, int height) {
 			int color16;
 
@@ -35,7 +43,6 @@ import org.apache.log4j.Logger;
 			this.height = height;
 			
 			//build 32x32x32 RGB histogram
-//			LOG.debug(0.3);
 			LOG.debug("Building 32x32x32 RGB histogram");
 			hist = new int[HSIZE];
 			for (int i = 0; i < width * height; i++) {
@@ -191,9 +198,8 @@ import org.apache.log4j.Logger;
 			// We have enough cubes, or we have split all we can. Now
 			// compute the color map, the inverse color map, and return
 			// an 8-bit image.
-			LOG.debug(0.9);
+			LOG.debug("makeInverseMap");
 			makeInverseMap(hist, ncubes);
-			LOG.debug(0.95);
 			return makeImage();
 		}
 		
@@ -382,6 +388,30 @@ import org.apache.log4j.Logger;
 			return ip;
 		}
 		
+		public static BufferedImage rgbaToIndexedBufferedImage(BufferedImage sourceBufferedImage) {
+		    //With this constructor we create an indexed bufferedimage with the same dimensiosn and with a default 256 color model
+		    BufferedImage indexedImage= new BufferedImage(sourceBufferedImage.getWidth(),sourceBufferedImage.getHeight(),BufferedImage.TYPE_BYTE_INDEXED);
+
+
+		    ColorModel cm = indexedImage.getColorModel();
+		    IndexColorModel icm=(IndexColorModel) cm;
+
+		    int size=icm.getMapSize();
+
+		    byte[] reds = new byte[size];
+		    byte[] greens = new byte[size];
+		    byte[] blues = new byte[size];
+		    icm.getReds(reds);
+		    icm.getGreens(greens);
+		    icm.getBlues(blues);
+
+		    WritableRaster raster=indexedImage.getRaster();
+		    int pixel = raster.getSample(0, 0, 0); 
+		    IndexColorModel icm2 = new IndexColorModel(8, size, reds, greens, blues,pixel);
+		    indexedImage=new BufferedImage(icm2, raster,sourceBufferedImage.isAlphaPremultiplied(), null);
+		    indexedImage.getGraphics().drawImage(sourceBufferedImage, 0, 0, null);
+		    return indexedImage;
+		}
 		
 	} //class MedianCut
 
@@ -413,8 +443,7 @@ import org.apache.log4j.Logger;
 	class MCImageProcessor {
 
 		public Image createImage() {
-			// TODO Auto-generated method stub
-			return null;
+			throw new RuntimeException("NYI");
 		}
 		
 	}
@@ -422,7 +451,46 @@ import org.apache.log4j.Logger;
 	class ByteProcessor extends MCImageProcessor {
 
 		public ByteProcessor(int width, int height, byte[] pixels8, IndexColorModel cm) {
-			// TODO Auto-generated constructor stub
+			System.out.println(width+"x"+height+"|"+pixels8.length);
+			System.out.println("map size "+cm.getMapSize());
+			int size = cm.getMapSize();
+			int[] map = new int [size];
+			cm.getRGBs(map);
+			for (int i = 0; i < size; i++) {
+				System.out.println(Integer.toHexString(map[i]));
+			}
+			byte[] b = new byte[8];
+			cm.getReds(b);
+			for (int i = 0; i < 8; i++) {
+				System.out.print(Byte.toUnsignedInt(b[i])+" ");
+			}
+			System.out.println();
+			b = new byte[8];
+			cm.getBlues(b);
+			for (int i = 0; i < 8; i++) {
+				System.out.print(Byte.toUnsignedInt(b[i])+" ");
+			}
+			System.out.println();
+			b = new byte[8];
+			cm.getGreens(b);
+			for (int i = 0; i < 8; i++) {
+				System.out.print(Byte.toUnsignedInt(b[i])+" ");
+			}
+			System.out.println();
+			int ipix = 0;
+			int[] counts = new int[size];
+			for (int irow = 0; irow < height; irow++) {
+				for (int jcol = 0; jcol < width; jcol++) {
+//					System.out.print(pixels8[ipix++]+ " ");
+					int pixel = pixels8[ipix++];
+					counts[pixel]++;
+				}
+//				System.out.println();
+			}
+			for (int i = 0; i < size; i++) {
+				System.out.println("count "+counts[i]);
+			}
+			throw new RuntimeException("NYI");
 		}
 		
 	}
@@ -430,18 +498,17 @@ import org.apache.log4j.Logger;
 	class ColorProcessor {
 
 		public int getHeight() {
-			// TODO Auto-generated method stub
-			return 0;
+			throw new RuntimeException("NYI");
+
 		}
 
 		public int[] getPixels() {
-			// TODO Auto-generated method stub
-			return null;
+			throw new RuntimeException("NYI");
+
 		}
 
 		public int getWidth() {
-			// TODO Auto-generated method stub
-			return 0;
+			throw new RuntimeException("NYI");
 		}
 		
 	}

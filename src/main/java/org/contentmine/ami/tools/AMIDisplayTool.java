@@ -18,6 +18,7 @@ import org.contentmine.eucl.euclid.Vector2;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlA;
 import org.contentmine.graphics.html.HtmlBody;
+import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlHtml;
 import org.contentmine.graphics.html.HtmlImg;
 import org.contentmine.graphics.html.HtmlLi;
@@ -196,7 +197,7 @@ public class AMIDisplayTool extends AbstractAMITool {
 
 	private void createAndAddLinkToFile(HtmlUl ul, File summaryFile) {
 		String imageDirname = summaryFile.getParentFile().getName();
-		HtmlLi li = new HtmlLi();
+		HtmlElement li = new HtmlLi();
 		ul.appendChild(li);
 		HtmlA a = new HtmlA();
 		a.setHref(""+imageDirname+"/"+summaryFile.getName());

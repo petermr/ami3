@@ -170,7 +170,7 @@ public class HtmlMenuSystem {
 
 	public HtmlElement addA(String href, Target target, String content) {
 		ensureUl();
-		HtmlLi li = new HtmlLi();
+		HtmlElement li = new HtmlLi();
 		ul.appendChild(li);
 		HtmlA a = new HtmlA();
 		a.setHref(href);
