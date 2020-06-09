@@ -702,19 +702,15 @@ public class AMIImageTest extends AbstractAMITest {
 		File cProjectDir = new File(SRC_TEST_AMI, "battery10");
 		CProject project = new CProject(cProjectDir);
 		CTree tree = project.getCTreeByName("PMC4062906");
-		cmd = "-t " + tree
-				+ " -v"
-				+ " clean **/pdfimages/*/octree **/pdfimages/*/raw_onull.png"
-				 ;
-		AMI.execute(AMICleanTool.class, cmd);
 
 		cmd = "-t " + tree
 				+ " -vv"
 				+ " --inputname raw"
 				+ " --output octree"
 				+ " image"
-				+ " --octree 8"
-				+ " --outputfiles binary channels histogram html octree"
+				+ "  --include maxpixf=\"0.25\"|minpix=\"500\" "
+//				+ " --octree 8"
+//				+ " --outputfiles binary channels histogram html octree"
 				+ " pixel"
 				+ "";
 
@@ -749,4 +745,41 @@ public class AMIImageTest extends AbstractAMITest {
 		AbstractAMITool imageTool = (AbstractAMITool) AMI.execute(AMIPixelTool.class, cmd);
 
 	}
+	
+	@Test
+	public void testInclude() {
+		String cmd = null;
+		File cProjectDir = new File(SRC_TEST_AMI, "battery10");
+		CProject project = new CProject(cProjectDir);
+
+		cmd = "-p " + project
+				+ " -vv"
+				+ " --inputname raw"
+				+ " image"
+				+ " --include minpix=500|maxpixf=0.1|graytol=20"
+				+ "";
+
+		AbstractAMITool imageTool = (AbstractAMITool) AMI.execute(AMIPixelTool.class, cmd);
+
+	}
+	
+	@Test
+	public void testGray() {
+		String cmd = null;
+		File cProjectDir = new File(SRC_TEST_AMI, "battery10");
+		CProject project = new CProject(cProjectDir);
+
+		CTree cTree = project.getCTreeByName("PMC3463005");
+		cmd = "-t " + cTree.getDirectory()
+				+ " -vv"
+				+ " --inputname raw"
+				+ " image"
+				+ " --exclude match=/Users/pm286/ContentMine/publishers/"
+				+ " --include graytol=20|whitethresh=230"
+				+ "";
+
+		AbstractAMITool imageTool = (AbstractAMITool) AMI.execute(AMIPixelTool.class, cmd);
+
+	}
+
 }

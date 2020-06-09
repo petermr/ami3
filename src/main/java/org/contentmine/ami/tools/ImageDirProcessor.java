@@ -58,9 +58,15 @@ public class ImageDirProcessor {
 			System.out.println(" >>>>> imageDirs: "+imageDirs.size());
 			Collections.sort(imageDirs);
 			for (File imageDir : imageDirs) {
-				if (excludeImages(imageDir)) {
+				// change this to be more general
+				File imageFile = new File(imageDir, "raw.png");
+				String fileString = imageFile.getParentFile().getParentFile().getParentFile().getName()+
+						"//"+imageFile.getParentFile().getName();
+				if (excludeImage(imageFile)) {
+					System.err.println("skipped: "+fileString);
 					continue;
 				}
+				System.err.println("*****OK..."+fileString);
 				try {
 					processImageDir(imageDir);
 				} catch (Exception e) {
@@ -75,8 +81,7 @@ public class ImageDirProcessor {
 		return true;
 	}
 
-	private boolean excludeImages(File imageDir) {
-		File imageFile = new File(imageDir, "raw.png");
+	private boolean excludeImage(File imageFile) {
 		BufferedImage image = null;
 		try {
 			image = ImageUtil.readImageQuietly(imageFile);
@@ -84,10 +89,27 @@ public class ImageDirProcessor {
 			System.err.println("Cannot read file: "+e.getMessage());
 			return false;
 		}
-		if (((AMIImageTool)amiTool).getOrCreateCommonImageSet()
-			.contains(ImageUtil.createSimpleHash(image))) {
-			System.out.println("Exclude common file: "+imageFile.getParentFile().getName());
-			return true;
+		// image in commonImageSet
+		AMIImageTool amiImageTool = (AMIImageTool)amiTool;
+		// exclude?
+		if (amiImageTool.getExcludeMap() != null) {
+			if (amiImageTool.getOrCreateCommonImageHashSet()
+				.contains(ImageUtil.createSimpleHash(image))) {
+				System.out.println("Exclude common file: "+imageFile.getParentFile().getName());
+				return true;
+			}
+			if (amiImageTool.fitsParameters(AMIImageTool.InExclusion.exclude, image)) {
+				System.out.println("Fit exclusion params: "+imageFile.getParentFile().getName());
+				return true;
+			}
+		}
+
+		// include?
+		if (amiImageTool.getIncludeMap() != null) {
+			if (amiImageTool.fitsParameters(AMIImageTool.InExclusion.include, image)) {
+				System.out.println("Fitted params: "+imageFile.getParentFile().getName());
+				return true;
+			}
 		}
 		return false;
 	}

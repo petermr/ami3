@@ -2,9 +2,6 @@ package org.contentmine.ami.tools;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
@@ -16,6 +13,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.ami.tools.ImageParameterAnalyzer.ImageParameters;
 import org.contentmine.ami.tools.template.AbstractTemplateElement;
 import org.contentmine.ami.tools.template.ImageTemplateElement;
 import org.contentmine.cproject.files.CProject;
@@ -111,26 +109,10 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 		}
 		
 	}
-	  
-    private enum ImageParameters {
-	    match("Directory with potential matches"),
-	  	minheight("Minimum height of image (pixels)"),
-	  	maxheight("Maximum height of image (pixels)"),
-	  	minwidth("Minimum width of image (pixels)"),
-	  	maxwidth("Maximum width of image (pixels)"),
-	  	minpixf("Minimum fraction of non-background pixels"),
-	  	maxpixf("Maximum fraction of non-background pixels"),
-	  	minpix("Minimum number of non-background pixels"),
-	  	maxpix("Maximum number of non-background pixels"),
-	  	strings("Strings in image"),
-	  	;
-	  	private String title;
-			private ImageParameters(String title) {
-	  		this.title = title;
-	  	}
-		public String getTitle() {
-			return title;
-		}
+
+	public enum InExclusion {
+		include,
+		exclude,
 	}
 
 
@@ -748,15 +730,14 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 				String basename = FilenameUtils.getBaseName(file.toString());
 				String color = basename.indexOf("channel.") == -1 ? "white" : "#" + basename.split("\\.")[1];
 				String grandparent = file.getParentFile().getParentFile().getName();
-				System.out.println(grandparent + " // " + basename);
-				String name = file.getName();
+//				System.out.println(grandparent + " // " + basename);
 				ul.addFluent(new HtmlLi()
 					.setAttribute("file",  file.getAbsolutePath().toString())
 					.addFluent(new HtmlP(basename)
 						.addFluent(new HtmlSpan("__")
 						.setStyle("background-color:"+color)))
 					.addFluent((HtmlImg) new HtmlImg()
-						.setSrc(name)
+						.setSrc(file.getName())
 						.setAttribute("width", "50%")
 						.setStyle("border:1px solid "+"black")));
 			}
@@ -805,27 +786,79 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 		return excludeMap;
 	}
 
-	public Set<Long> getOrCreateCommonImageSet() {
+	/** if either --include or --exclude has "match" key then create a CommonImageHashSet
+	 * the images are hashed because I don't think BufferedImages have a good equals()
+	 * 
+	 * The set can be used to compare an image for ex/inclusion
+	 * 
+	 * @return set of Hashes using ImageUtils.createSimpleHash(image)
+	 * 
+	 */ 
+	public Set<Long> getOrCreateCommonImageHashSet() {
 		if (commonImageHashSet == null) {
 			commonImageHashSet = new HashSet<>();
-			if (includeMap != null || excludeMap != null) {
-				Map<ImageParameters, String> map = includeMap != null ? includeMap : excludeMap;
-				if (map != null) {
-					String commonImageDir = map.get(ImageParameters.match);
-					File file = new File(commonImageDir);
-					System.out.println("ff "+file + "|"+file.exists()+"|"+ file.isDirectory());
-					if (file.isDirectory()) {
-						List<File> imageFiles = CMineGlobber.listGlobbedFilesQuietly(file, "**/*.png");
-						for (File imageFile : imageFiles) {
-							BufferedImage image = ImageUtil.readImageQuietly(imageFile);
-							commonImageHashSet.add(ImageUtil.createSimpleHash(image));
-						}
-					}
+			Map<ImageParameters, String> map = getParametersMap();
+			if (map != null) {
+				String commonImageDir = map.get(ImageParameters.match);
+				if (commonImageDir != null) {
+					addImagesInDirectoryToCommonImageHashSet(commonImageDir);
 				}
 			}
-			
 		}
 		return commonImageHashSet;
+	}
+
+	/** get either includeMap or excluseMap or null
+	 * 
+	 */
+	private Map<ImageParameters, String> getParametersMap() {
+		Map<ImageParameters, String> map = null;
+		if (includeMap != null || excludeMap != null) {
+			map = includeMap != null ? includeMap : excludeMap;
+		}
+		return map;
+	}
+
+	private void addImagesInDirectoryToCommonImageHashSet(String commonImageDir) {
+		File file = new File(commonImageDir);
+		System.out.println("ff "+file + "|"+file.exists()+"|"+ file.isDirectory());
+		if (file.isDirectory()) {
+			List<File> imageFiles = CMineGlobber.listGlobbedFilesQuietly(file, "**/*.png");
+			for (File imageFile : imageFiles) {
+				BufferedImage image = ImageUtil.readImageQuietly(imageFile);
+				commonImageHashSet.add(ImageUtil.createSimpleHash(image));
+			}
+		}
+	}
+
+	/** does an image fit parameters?
+	 * for filtering out/in images 
+	 * currently uses --include or --exclude arguments
+	 * and keys from ImageParameters enum
+	 *
+	  	minheight("Minimum height of image (pixels)"),
+	  	maxheight("Maximum height of image (pixels)"),
+	  	minwidth("Minimum width of image (pixels)"),
+	  	maxwidth("Maximum width of image (pixels)"),
+	  	minpixf("Minimum fraction of non-background pixels"),
+	  	maxpixf("Maximum fraction of non-background pixels"),
+	  	minpix("Minimum number of non-background pixels"),
+	  	maxpix("Maximum number of non-background pixels"),
+	  	strings("Strings in image"),
+
+	 * @param image
+	 * @return
+	 */
+	
+	public boolean fitsParameters(InExclusion inexclusion, BufferedImage image) {
+		if (inexclusion == null || image == null) return false;
+		boolean include = InExclusion.include.equals(inexclusion);
+		Map<ImageParameters, String> map = include ? includeMap : excludeMap;
+		if (map == null) return false;
+		ImageParameterAnalyzer imageParameterAnalyzer = new ImageParameterAnalyzer().setMap(map);
+		boolean matches = imageParameterAnalyzer.matches(image);
+		System.out.println("matches "+matches);
+		return include == matches;
 	}
 
 	

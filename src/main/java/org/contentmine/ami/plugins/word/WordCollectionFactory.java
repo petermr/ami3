@@ -108,21 +108,21 @@ public class WordCollectionFactory {
 			LOG.debug("no words found to extract");
 			return;
 		}
-		LOG.debug("created words: "+words.size());
+		LOG.trace("created words: "+words.size());
 		WordArgProcessor wordArgProcessor = (WordArgProcessor) amiArgProcessor;
 		wordsTool = wordArgProcessor.getWordsTool();
 		List<String> chosenMethods = wordArgProcessor.getChosenWordAggregationMethods();
 		if (wordArgProcessor.getVerbosityInt() > 0) System.out.println("chosen methods: "+chosenMethods);
 		if ((wordsTool != null && wordsTool.getWordMethods().contains(WordMethod.wordLengths)) ||
 				chosenMethods.contains(WordArgProcessor.WORD_LENGTHS)) {
-			LOG.debug("calculating word lengths");
+			LOG.trace("calculating word lengths");
 			ResultsElement resultsElement = createWordLengthsResultsElement(words);
 			wordArgProcessor.addResultsElement(resultsElement);
 		}
 		if ((wordsTool != null && wordsTool.getWordMethods().contains(WordMethod.frequencies)) ||
 				chosenMethods.contains(WordArgProcessor.WORD_FREQUENCIES) ||
 				chosenMethods.contains(WordArgProcessor.FREQUENCIES)) {
-			LOG.debug("calculating word frequencies");
+			LOG.trace("calculating word frequencies");
 			ResultsElement resultsElement = getWordFrequencies(words);
 			wordArgProcessor.addResultsElement(resultsElement);
 		}

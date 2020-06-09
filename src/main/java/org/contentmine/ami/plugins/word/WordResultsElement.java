@@ -102,7 +102,7 @@ public class WordResultsElement extends ResultsElement {
 			HtmlElement html = createHtmlElement(wordArgProcessor, fontSizeIntArray, fontSizeSet);
 			try {
 				outputFile.getParentFile().mkdirs();
-				LOG.debug("font html "+outputFile);
+				LOG.trace("font html "+outputFile);
 				XMLUtil.debug(html, new FileOutputStream(outputFile), 1);
 			} catch (IOException e) {
 				throw new RuntimeException("Cannot write file "+outputFile, e);
