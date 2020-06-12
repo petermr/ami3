@@ -502,6 +502,7 @@ public class PixelIslandList implements Iterable<PixelIsland> {
 			PixelIsland newIsland = new PixelIsland(island.getPixelList());
 			newIsland.setDiagonal(island.getDiagonal());
 			newIsland.doSuperThinning();
+			newIsland.removeCorners();
 			newIslandList.add(newIsland);
 		}
 		this.list = newIslandList;

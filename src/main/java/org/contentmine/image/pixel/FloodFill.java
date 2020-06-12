@@ -31,6 +31,9 @@ public abstract class FloodFill {
 	protected abstract boolean isBlack(int posX, int posY);
 	
 	public boolean fillIslands() {
+		if (islandList == null) {
+			return false;
+		}
 		painted = new boolean[height][width];
 
 		for (int i = 0; i < height; i++) {

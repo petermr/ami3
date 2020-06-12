@@ -216,7 +216,46 @@ public class PixelGraph {
 		this.removeEdge(oldEdge);
 		return midNode;
 	}
+	
+	private void removeEdgePixelsAndSinglyConnectedNodePixels(PixelEdge edge) {
 
+		/**
+		PixelList pixelList = edge.getPixelList();
+		for (int i = 0; i < pixelList.size(); i++) {
+			Pixel pixel = pixelList.get(i);
+			if (pixel.get)
+			this.removePixel(pixelList.get(i));
+		}
+		*/
+		removePixelFromSinglyConnectedNode(edge, 0); 
+		removePixelFromSinglyConnectedNode(edge, 1); 
+		PixelList pixelList = edge.getPixelList();
+		for (int i = 1; i < pixelList.size() - 1; i++) {
+			this.removePixel(pixelList.get(i));
+		}
+	}
+
+	private void removePixelFromSinglyConnectedNode(PixelEdge edge, int idx) {
+		PixelNode node = edge.getNodes().get(idx);
+		int size = node.getEdges().size();
+//		System.out.println("node size "+size);
+		if (size == 1) {
+			removeNodePixel(node);
+			System.out.println("removed node pixel: "+node.getCentrePixel());
+		}
+	}
+
+	private void removeNodePixel(PixelNode node) {
+		this.removePixel(node.getCentrePixel());
+	}
+
+	private void removePixel(Pixel pixel) {
+		this.pixelList.remove(pixel);
+	}
+
+	
+	/** remove edge without removing pixels 
+	 * */
 	private void removeEdge(PixelEdge edge) {
 		edgeList.remove(edge);
 		PixelNodeList nodeList = edge.getNodes();
@@ -225,6 +264,8 @@ public class PixelGraph {
 		}
 	}
 
+	/** remove node without removing pixels 
+	 * */
 	private void removeNode(PixelNode node) {
 		nodeList.remove(node);
 		PixelEdgeList edgeList = node.getEdges();
@@ -431,7 +472,7 @@ public class PixelGraph {
 		getOrCreateEdgeList();
 		SVGG g = new SVGG();
 		SVGG rawPixelG = pixelList.plotPixels("magenta");
-		g.appendChild(rawPixelG);
+//		g.appendChild(rawPixelG);
 		drawEdges(colours, g);
 		drawNodes(colours, g);
 		return g;
@@ -775,7 +816,10 @@ public class PixelGraph {
 		getOrCreateEdgeList();
 		getOrCreateNodeList();
 		tidyEdges(largestSmallEdgeAllowed);
+		this.removeShortTerminalEdges(largestSmallEdgeAllowed);
 		tidyNodes();
+//		System.out.println("n "+nodeList.size()+"/e "+edgeList.size());
+		return;
 	}
 
 	private void tidyEdges(int largestSmallEdgeAllowed) {
@@ -786,14 +830,26 @@ public class PixelGraph {
 			} else {
 				PixelNode first = edge.getNodes().get(0);
 				PixelNode last = edge.getNodes().get(1);
-				if ((first.getEdges().size() == 1 || last.getEdges().size() == 1) && edge.size() <= largestSmallEdgeAllowed) {
+				if ((first.getEdges().size() == 1 || last.getEdges().size() == 1) &&
+						edge.size() <= largestSmallEdgeAllowed) {
 					smallEdges.add(edge);
 				}
 			}
 		}
-		for (PixelEdge e : smallEdges) {
-			removeEdge(e);
+//		System.out.println("n "+nodeList.size()+"/e "+edgeList.size());
+		for (PixelEdge smallEdge : smallEdges) {
+			removeEdge(smallEdge);
+			removeEdgePixelsAndSinglyConnectedNodePixels(smallEdge);
 		}
+//		System.out.println("n "+nodeList.size()+"/e "+edgeList.size());
+		
+		this.edgeList = null;
+		this.nodeList = null;
+		this.createNodeList();
+		this.createNodesAndEdges();
+//		this.edgeList = null;
+		System.out.println(this.getOrCreateEdgeList());
+		return;
 	}
 
 	private void tidyNodes() {
@@ -1252,6 +1308,15 @@ public class PixelGraph {
 	}
 
 	/** replace node1 by node0 and tidy nodeLists and edgeLists
+	 * I think this means:
+	 *  N....N0....N1....N
+		is transformed to
+	 *  N.......N0.......N
+		
+		Use with care!
+		I don't know what happens to node1 edges!
+	 * 
+	 * I think it's for nodes very close together
 	 * 
 	 * @param edge
 	 */
@@ -1308,6 +1373,47 @@ public class PixelGraph {
 			lineList.add(line);
 		}
 		return lineList;
+	}
+
+	/** get short terminal edges (whiskers).
+	 * (does not deal with small loops)
+	 * exactly one node must have 1-connectedness
+	 * 
+	 * @param len
+	 * @return 
+	 */
+	public PixelEdgeList getShortTerminalEdges(int len) {
+		PixelEdgeList shortEdges = this.getShortEdges(len);
+		PixelEdgeList shortTerminalEdges = new PixelEdgeList();
+		for (PixelEdge shortEdge : shortEdges) {
+			int nterminal = 0;
+			if (shortEdge.getNodes().get(0).getConnectedNodes().size() == 1) nterminal = 1;
+			if (shortEdge.getNodes().get(1).getConnectedNodes().size() == 1) nterminal++;
+			if (nterminal != 1) {
+				shortTerminalEdges.add(shortEdge);
+			}
+		}
+		return shortTerminalEdges;
+	}
+	
+	public PixelEdgeList removeShortTerminalEdges(int len) {
+		PixelEdgeList pixelEdgeList = this.getShortTerminalEdges(len);
+		for (PixelEdge pixelEdge : pixelEdgeList) {
+			this.removeEdge(pixelEdge);
+			System.out.println(">edge> "+pixelEdge);
+		}
+		List<PixelNode> nodeList0 = new ArrayList<>(this.getOrCreateNodeList().getList());
+		for (PixelNode node : nodeList0) {
+			this.remove2ConnectedNode(node);
+		}
+		return pixelEdgeList;
+	}
+
+	public void repairEdges() {
+		PixelEdgeList edgeList = getOrCreateEdgeList();
+		for (PixelEdge pixelEdge : edgeList) {
+			pixelEdge.repair();
+		}
 	}
 
 

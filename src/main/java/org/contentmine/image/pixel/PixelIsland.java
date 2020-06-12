@@ -755,7 +755,7 @@ public class PixelIsland implements Iterable<Pixel> {
 		int count = 0;
 		while (true) {
 			makeCornerSet();
-			LOG.trace("cornerSet: "+cornerSet.size()+"; "+this.size());
+//			LOG.debug("cornerSet: "+cornerSet.size()+"; "+this.size());
 			if (cornerSet.size() == 0)
 				break;
 			removeCornerSet();
@@ -956,9 +956,22 @@ public class PixelIsland implements Iterable<Pixel> {
 		return emptyPixelList;
 	}
 
+	/** the first pass of this may not give complete thinning so 
+	 * repeat until it no more pixels removed.
+	 */
 	public void doSuperThinning() {
-		removeSteps();
-		doTJunctionThinning();
+		int size0 = this.size();
+		int i = 0;
+		int maxiter = 10; // just to stop infinite loops
+		while (i++ < maxiter) {
+			removeSteps();
+			removeCorners();
+			doTJunctionThinning();
+			if (this.size() == size0) {
+				break;
+			}
+			size0 = this.size();
+		}
 	}
 
 	public boolean getDiagonal() {

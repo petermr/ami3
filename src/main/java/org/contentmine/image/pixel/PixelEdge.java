@@ -714,6 +714,34 @@ public class PixelEdge {
 		}
 		return segmentedPixelList;
 	}
+
+	public void repair() {
+		for (int i = size() - 1; i >= 1; i--) {
+			Pixel pixel0 = this.get(i - 1);
+			Pixel pixel1 = this.get(i);
+			// pixels overlap
+			if (pixel0.equals(pixel1)) {
+				System.out.println("Overlap "+pixel0);
+				this.remove(pixel1);
+			} else if (pixel1.isNeighbour(pixel0)) {
+				// OK
+//				System.out.print(".");
+			} else {
+				Int2 dxy = pixel0.getInt2().subtract(pixel1.getInt2());
+				System.out.println(dxy+"/"+pixel0.getInt2()+"/"+pixel1.getInt2());
+				if (Math.abs(dxy.getX()) <= 2 && Math.abs(dxy.getY()) <= 2) {
+					Int2 mid = pixel0.getInt2().getMidPoint(pixel1.getInt2());
+					Pixel midPixel = new Pixel(mid);
+					pixelList.add(i, midPixel);
+				}
+			}
+		}
+		System.out.println();
+	}
+
+	private void remove(Pixel pixel) {
+		this.pixelList.remove(pixel);
+	}
 	
 
 }

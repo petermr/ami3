@@ -8,18 +8,21 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
-import org.contentmine.image.ImageAnalysisFixtures;
+import org.contentmine.graphics.svg.SVGG;
+import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.image.ImageUtil;
 import org.contentmine.image.pixel.FloodFill;
 import org.contentmine.image.pixel.ImageFloodFill;
 import org.contentmine.image.pixel.IslandRingList;
+import org.contentmine.image.pixel.PixelGraph;
 import org.contentmine.image.pixel.PixelIsland;
 import org.contentmine.image.pixel.PixelIslandList;
-import org.contentmine.image.pixel.PixelIslandTest;
+import org.contentmine.image.pixel.PixelList;
 import org.contentmine.image.pixel.PixelRingList;
+import org.contentmine.image.processing.HilditchThinning;
+import org.junit.Assert;
 import org.junit.Test;
 
-import junit.framework.Assert;
 
 /** test cleaning.
  * 
@@ -202,16 +205,43 @@ islands > (10,10): islands: 6
 	public void testCyclicVoltammograms() {
 		CTree cTree = new CProject(new File(SRC_TEST_AMI, "battery10")).getCTreeByName("PMC3463005");
 		List<File> files = cTree.getPDFImagesImageDirectories();
-		File voltammogram = new File(cTree.getDirectory(), "pdfimages/image.6.2.86_509.389_714/octree/channel.1d1ce2.png");
-		System.out.println(voltammogram);
-		AMIPixelTool pixelTool = new AMIPixelTool();
-		BufferedImage image = ImageUtil.readImage(voltammogram);
+		File imageFile = new File(cTree.getDirectory(), 
+				"pdfimages/image.6.2.86_509.389_714/octree/channel.1d1ce2.png");
+		System.out.println(imageFile);
+		int maxHairLength = 10;
+//		AMIPixelTool pixelTool = new AMIPixelTool();
+		BufferedImage image = ImageUtil.readImage(imageFile);
+		image = ImageUtil.boofCVBinarization(image, 200);
+		image = ImageUtil.thin(image, new HilditchThinning(image));
+		ImageUtil.writeImageQuietly(image, new File(imageFile.toString()+".thin.png"));
 		
 		FloodFill floodFill = new ImageFloodFill(image);
 		floodFill.setDiagonal(true);
 		floodFill.fillIslands();
-		PixelIsland island = floodFill.getIslandList().get(1);
-		Assert.assertEquals("size", 33, island.size());
+		PixelIslandList islandList = floodFill.getIslandList();
+		islandList.doSuperThinning();
+		islandList.sortBySizeDescending();
+		Assert.assertEquals("size", 147, islandList.size());
+		for (int ipix = 0; ipix < 10; ipix++) {
+			PixelIsland island = islandList.get(ipix);
+			int size = island.size();
+			BufferedImage imagex = island.createImage();
+			String filename = imageFile.toString()+"."+ipix;
+			ImageUtil.writeImageQuietly(imagex, 
+					new File(filename+"_"+size+".png"));
+			hairCutAndRepairPixelGraphAndPlot(filename, islandList.get(ipix), maxHairLength);
+		}
+	}
+
+	private void hairCutAndRepairPixelGraphAndPlot(String filename, PixelIsland island, int maxHairLength) {
+		PixelList pixelList = island.getPixelList();
+		PixelGraph pixelGraph = new PixelGraph(pixelList);
+		
+		pixelGraph.tidyNodesAndEdges(maxHairLength);
+		pixelGraph.repairEdges();
+		
+		SVGG svgg = pixelGraph.drawEdgesAndNodes();
+		SVGSVG.wrapAndWriteAsSVG(svgg, new File(filename+".1"+".svg"));
 	}
 
 
