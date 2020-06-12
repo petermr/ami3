@@ -7,6 +7,7 @@ import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.ami.tools.image.AnnotatedImage;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.util.CMineGlobber;
 import org.contentmine.image.ImageUtil;
@@ -58,27 +59,33 @@ public class ImageDirProcessor {
 			System.out.println(" >>>>> imageDirs: "+imageDirs.size());
 			Collections.sort(imageDirs);
 			for (File imageDir : imageDirs) {
-				// change this to be more general
-				File imageFile = new File(imageDir, "raw.png");
-				String fileString = imageFile.getParentFile().getParentFile().getParentFile().getName()+
-						"//"+imageFile.getParentFile().getName();
-				if (excludeImage(imageFile)) {
-					System.err.println("skipped: "+fileString);
-					continue;
-				}
-				System.err.println("*****OK..."+fileString);
-				try {
-					processImageDir(imageDir);
-				} catch (Exception e) {
-					e.printStackTrace();
-					LOG.error("Cannot process imageDir: "+imageDir + e.getMessage());
-					return false;
-				}
+				processDir(imageDir);
 			}
 		} else {
 			processRawImageDir(rawImageDir);
 		}
 		return true;
+	}
+
+	private void processDir(File imageDir) {
+		File imageFile = new File(imageDir, getInputFilename());
+		String fileString = imageFile.getParentFile().getParentFile().getParentFile().getName()+
+				"//"+imageFile.getParentFile().getName();
+		if (excludeImage(imageFile)) {
+			System.err.println("skipped: "+fileString);
+		} else {
+			System.err.println("*****OK..."+fileString);
+			try {
+				processImageDir(imageDir);
+			} catch (Exception e) {
+				e.printStackTrace();
+				LOG.error("Cannot process imageDir: "+imageDir + e.getMessage());
+			}
+		}
+	}
+
+	private String getInputFilename() {
+		return "raw" + "." + "png";
 	}
 
 	private boolean excludeImage(File imageFile) {
@@ -91,6 +98,8 @@ public class ImageDirProcessor {
 		}
 		// image in commonImageSet
 		AMIImageTool amiImageTool = (AMIImageTool)amiTool;
+		AnnotatedImage annotatedImage = amiImageTool.getOrCreateAnnotatedImage(image);
+		
 		// exclude?
 		if (amiImageTool.getExcludeMap() != null) {
 			if (amiImageTool.getOrCreateCommonImageHashSet()
@@ -107,7 +116,7 @@ public class ImageDirProcessor {
 		// include?
 		if (amiImageTool.getIncludeMap() != null) {
 			if (amiImageTool.fitsParameters(AMIImageTool.InExclusion.include, image)) {
-				System.out.println("Fitted params: "+imageFile.getParentFile().getName());
+				System.out.println("Fitted include params: "+imageFile.getParentFile().getName());
 				return true;
 			}
 		}
@@ -147,10 +156,8 @@ public class ImageDirProcessor {
 		amiTool.setInputBasename(inputname);
 		if (imageFile == null || !imageFile.exists()) {
 			LOG.error("BUG? image file does not exist: "+imageFile);
-//			hasImageDir.processImageDir();
 		} else {
 			hasImageDir.processImageDir(imageFile);
-//			hasImageDir.processImageFile(imageFile);
 		}
 	}
 

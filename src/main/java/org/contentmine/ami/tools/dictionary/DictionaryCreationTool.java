@@ -179,6 +179,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 
 //	@Override
 	protected void parseSpecifics() {
+		super.parseSpecifics();
 		if (this.templateNames != null) {
 //			dictionaryList = new ArrayList<>();
 			createTemplateNames();

@@ -4,6 +4,7 @@ import java.io.File;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.ami.tools.dictionary.DictionaryCreationTool;
 import org.junit.Test;
 
 
@@ -43,6 +44,14 @@ public class AMIDictionaryTest extends AbstractAMITest {
 	public void testSubcommands() {
 		String args = "create ";
 		AMIDict.execute(args);
+	}
+	
+	@Test
+	public void testCreateFromWikipediaCategory() {
+		String categoryString = "https://en.wikipedia.org/wiki/Category:Human_migration";
+		String cmd = "-v --dictionary hummig.xml --directory=target/dictionary/ "
+				+ "--input=" + categoryString + " create --informat=wikicategory";
+		DictionaryCreationTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
 	}
 	
 	

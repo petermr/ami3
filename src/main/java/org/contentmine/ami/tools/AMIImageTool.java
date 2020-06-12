@@ -2,8 +2,10 @@ package org.contentmine.ami.tools;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.IOException;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -14,6 +16,7 @@ import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.ImageParameterAnalyzer.ImageParameters;
+import org.contentmine.ami.tools.image.AnnotatedImage;
 import org.contentmine.ami.tools.template.AbstractTemplateElement;
 import org.contentmine.ami.tools.template.ImageTemplateElement;
 import org.contentmine.cproject.files.CProject;
@@ -87,38 +90,6 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 		LOG.setLevel(Level.DEBUG);
 	}
 
-	public enum ImageToolkit {
-		Boofcv,
-		Scalr,
-		Pmr,
-	}
-	
-	public enum OutputFile {
-		binary("save binary (b/w)"),
-		channels("write images for each colour channel"),
-		histogram("color frequency histogram"),
-		html("output html"),
-		neighbours("color neighbour map"),
-		octree("save octree"),
-		poster("save posterized"),
-		;
-		private String desc;
-
-		private OutputFile(String desc) {
-			this.desc = desc;
-		}
-		
-	}
-
-	public enum InExclusion {
-		include,
-		exclude,
-	}
-
-
-	
-	interface AbstractDest {}
-	
 	public enum AMIImageType {
 		NONE("none", 0, new AMIImageType[]{}),
 		RAW("raw", NONE.priority + 1, new AMIImageType[]{}),
@@ -188,6 +159,59 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 		}
 	}
 	
+	public enum ImageToolkit {
+		Boofcv,
+		Scalr,
+		Pmr,
+	}
+	public enum InExclusion {
+		include,
+		exclude,
+	}
+
+	
+	public enum OutputFile {
+		binary("save binary (b/w)"),
+		channels("write images for each colour channel"),
+		histogram("color frequency histogram"),
+		html("output html"),
+		neighbours("color neighbour map"),
+		octree("save octree"),
+		poster("save posterized"),
+		;
+		private String desc;
+
+		private OutputFile(String desc) {
+			this.desc = desc;
+		}
+		
+	}
+	
+	public enum PanelKey{
+		bback("blackbackground"),
+		bborder("blackborder"),
+		letter("index letter"),
+		maxx("max xcoord"),
+		maxy("max ycoord"),
+		minx("minimum x"),
+		miny("minimum y"),
+		number("index number"),
+		roman("index roman numeral"),
+		wback("white background"),
+		wgutter("white gutter"),
+		xlabel("x label"),
+		ylabel("y label"),
+		;
+		private String title;
+
+		private PanelKey(String title) {
+			this.title = title;
+		}
+		
+	}
+	
+	interface AbstractDest {}
+		
 	private static final String _DELETE = "_delete";
 
     // FILTER OPTIONS
@@ -229,6 +253,10 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
         
     // TRANSFORM OPTIONS
     
+    @Option(names = {"--annotate"},
+            description = "create AnnotatedImage for each image or panel")
+    private boolean annotate = false;
+
     @Option(names = {"--binarize"},
     		arity = "1",
             description = "TRANSFORM: create binary (normally black and white); methods local_mean ... (default: ${DEFAULT-VALUE})")
@@ -282,6 +310,11 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
     		arity = "1..*",
             description = "output files related to quantization (${COMPLETION-CANDIDATES})")
     private List<OutputFile> outputFiles;
+
+    @Option(names = {"--panels"},
+    		arity = "1..*",
+            description = "split images into panels")
+    private Map<PanelKey, String> panelMap;
 
     @Option(names = {"--posterize"},
     		arity = "1",
@@ -351,10 +384,11 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 	private AbstractTemplateElement templateElement;
 
 	private File imageDir;
-
 	private HtmlDiv imageDiv;
-
 	private Set<Long> commonImageHashSet;
+	private Map<BufferedImage, ImageParameterAnalyzer> parameterAnalyzerByImage;
+
+	private Map<BufferedImage, AnnotatedImage> annotatedImageByImage;
 
     /** used by some non-picocli calls
      * obsolete it
@@ -373,9 +407,10 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 
 	@Override
 	protected void parseSpecifics() {
-    	if (verbosity().length > 0) {
-			printOptionValues(System.out);
-    	}
+		super.parseSpecifics();
+//    	if (verbosity().length > 0) {
+//			printOptionValues(System.out);
+//    	}
 		System.out.println();
 	}
 
@@ -413,6 +448,16 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 		} else {
 			imageDir = imageFile.getParentFile();
 			processTransformImageDir();
+			if (annotate) {
+				AnnotatedImage a;
+				File annotateFile = new File(imageDir, FilenameUtils.getBaseName(imageFile.toString()) + ".annot" + "." + "html");
+				try {
+					FileUtils.write(annotateFile, "annotate", "UTF-8");
+					System.err.print(">ann>");
+				} catch (IOException e) {
+					LOG.error("cannot write "+annotateFile);
+				}
+			}
 		}
 	}
 
@@ -785,6 +830,10 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 	public Map<ImageParameters, String> getExcludeMap() {
 		return excludeMap;
 	}
+	
+	public boolean isAnnotate() {
+		return annotate;
+	}
 
 	/** if either --include or --exclude has "match" key then create a CommonImageHashSet
 	 * the images are hashed because I don't think BufferedImages have a good equals()
@@ -856,9 +905,34 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 		Map<ImageParameters, String> map = include ? includeMap : excludeMap;
 		if (map == null) return false;
 		ImageParameterAnalyzer imageParameterAnalyzer = new ImageParameterAnalyzer().setMap(map);
-		boolean matches = imageParameterAnalyzer.matches(image);
+		getOrCreateParameterAnalyzerByImage().put(image, imageParameterAnalyzer);
+		boolean matches = imageParameterAnalyzer.matches(getOrCreateAnnotatedImage(image));
 		System.out.println("matches "+matches);
 		return include == matches;
+	}
+
+	private Map<BufferedImage, ImageParameterAnalyzer> getOrCreateParameterAnalyzerByImage() {
+		if (parameterAnalyzerByImage == null) {
+			parameterAnalyzerByImage = new HashMap<>();
+		}
+		return parameterAnalyzerByImage;
+	}
+
+	public AnnotatedImage getOrCreateAnnotatedImage(BufferedImage image) {
+		AnnotatedImage annotatedImage = getOrCreateAnnotatedImageByImage().get(image);
+		if (annotatedImage == null) {
+			annotatedImage = AnnotatedImage.createAnnotatedImage(image);
+			annotatedImageByImage.put(image, annotatedImage);
+		}
+		return annotatedImage;
+				
+	}
+
+	private Map<BufferedImage, AnnotatedImage> getOrCreateAnnotatedImageByImage() {
+		if (annotatedImageByImage == null) {
+			annotatedImageByImage = new HashMap<>();
+		}
+		return annotatedImageByImage;
 	}
 
 	

@@ -1,15 +1,21 @@
 package org.contentmine.ami.tools;
 
+import java.awt.image.BufferedImage;
+import java.io.File;
 import java.util.List;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.contentmine.ami.tools.AMIImageTool;
-import org.contentmine.ami.tools.AMIPixelTool;
-import org.contentmine.ami.tools.AbstractAMITool;
+import org.contentmine.cproject.files.CProject;
+import org.contentmine.cproject.files.CTree;
+import org.contentmine.image.ImageAnalysisFixtures;
+import org.contentmine.image.ImageUtil;
+import org.contentmine.image.pixel.FloodFill;
+import org.contentmine.image.pixel.ImageFloodFill;
 import org.contentmine.image.pixel.IslandRingList;
 import org.contentmine.image.pixel.PixelIsland;
 import org.contentmine.image.pixel.PixelIslandList;
+import org.contentmine.image.pixel.PixelIslandTest;
 import org.contentmine.image.pixel.PixelRingList;
 import org.junit.Test;
 
@@ -20,7 +26,7 @@ import junit.framework.Assert;
  * @author pm286
  *
  */
-public class AMIPixelTest {
+public class AMIPixelTest extends AbstractAMITest {
 	private static final Logger LOG = Logger.getLogger(AMIPixelTest.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
@@ -190,6 +196,22 @@ islands > (10,10): islands: 6
 //				+ " --outputDirname pixels"
 			);
 		
+	}
+
+	@Test
+	public void testCyclicVoltammograms() {
+		CTree cTree = new CProject(new File(SRC_TEST_AMI, "battery10")).getCTreeByName("PMC3463005");
+		List<File> files = cTree.getPDFImagesImageDirectories();
+		File voltammogram = new File(cTree.getDirectory(), "pdfimages/image.6.2.86_509.389_714/octree/channel.1d1ce2.png");
+		System.out.println(voltammogram);
+		AMIPixelTool pixelTool = new AMIPixelTool();
+		BufferedImage image = ImageUtil.readImage(voltammogram);
+		
+		FloodFill floodFill = new ImageFloodFill(image);
+		floodFill.setDiagonal(true);
+		floodFill.fillIslands();
+		PixelIsland island = floodFill.getIslandList().get(1);
+		Assert.assertEquals("size", 33, island.size());
 	}
 
 

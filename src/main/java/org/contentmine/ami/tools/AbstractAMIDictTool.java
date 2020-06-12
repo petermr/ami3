@@ -197,7 +197,7 @@ public class AbstractAMIDictTool implements Callable<Void> {
 
 	@Option(names = {"--wikilinks"}, 
 			arity="0..*",
-			defaultValue = "wikipedia,wikidata",
+			defaultValue = "wikipedia",
 			split = ",",
 			description = "try to add link to Wikidata and/or Wikipedia page of same name. ")
 	protected WikiLink[] wikiLinks = null;/* new WikiLink[]{WikiLink.wikipedia, WikiLink.wikidata}*/
@@ -292,6 +292,13 @@ public class AbstractAMIDictTool implements Callable<Void> {
 	public enum WikiLink {
 		wikidata,
 		wikipedia,
+		;
+		private WikiLink() {
+			
+		}
+		public String toString() {
+			return ">>"+this.name();
+		}
 	}
 
 	public enum WikiFormat {
@@ -372,7 +379,9 @@ public class AbstractAMIDictTool implements Callable<Void> {
 	}
 
 	protected void parseSpecifics() {
-		
+    	if (verbosity().length > 0) {
+			printOptionValues(System.out);
+    	}
 	}
 
 	protected void runSub() {

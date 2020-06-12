@@ -782,4 +782,26 @@ public class AMIImageTest extends AbstractAMITest {
 
 	}
 
+	@Test
+	public void testCreateAnnotatedImages() {
+		String cmd = null;
+		File cProjectDir = new File(SRC_TEST_AMI, "battery10");
+		CProject project = new CProject(cProjectDir);
+
+		CTree cTree = project.getCTreeByName("PMC3463005");
+		cmd = ""
+				+ "-p " + project.getDirectory()
+//				+ "-t " + cTree.getDirectory()
+				+ " -vv"
+				+ " --inputname raw"
+				+ " image"
+				+ " --exclude match=/Users/pm286/ContentMine/publishers/"
+				+ " --include graytol=20|whitethresh=230"
+				+ " --annotate"
+				+ "";
+
+		AbstractAMITool imageTool = (AbstractAMITool) AMI.execute(AMIPixelTool.class, cmd);
+
+	}
+
 }
