@@ -714,7 +714,7 @@ public class AMIImageTest extends AbstractAMITest {
 				+ " pixel"
 				+ "";
 
-		AbstractAMITool imageTool = (AbstractAMITool) AMI.execute(AMIPixelTool.class, cmd);
+		AbstractAMITool imageTool = (AbstractAMITool) AMI.execute(AMIImageTool.class, cmd);
 
 	}
 	
@@ -742,7 +742,7 @@ public class AMIImageTest extends AbstractAMITest {
 				+ " --exclude match=/Users/pm286/ContentMine/publishers/"
 				+ "";
 
-		AbstractAMITool imageTool = (AbstractAMITool) AMI.execute(AMIPixelTool.class, cmd);
+		AbstractAMITool imageTool = (AbstractAMITool) AMI.execute(AMIImageTool.class, cmd);
 
 	}
 	
@@ -759,7 +759,7 @@ public class AMIImageTest extends AbstractAMITest {
 				+ " --include minpix=500|maxpixf=0.1|graytol=20"
 				+ "";
 
-		AbstractAMITool imageTool = (AbstractAMITool) AMI.execute(AMIPixelTool.class, cmd);
+		AbstractAMITool imageTool = (AbstractAMITool) AMI.execute(AMIImageTool.class, cmd);
 
 	}
 	
@@ -778,7 +778,7 @@ public class AMIImageTest extends AbstractAMITest {
 				+ " --include graytol=20|whitethresh=230"
 				+ "";
 
-		AbstractAMITool imageTool = (AbstractAMITool) AMI.execute(AMIPixelTool.class, cmd);
+		AbstractAMITool imageTool = (AbstractAMITool) AMI.execute(AMIImageTool.class, cmd);
 
 	}
 
