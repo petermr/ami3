@@ -202,7 +202,8 @@ public class WordArgProcessor extends AbstractSearchArgProcessor {
 		ContentProcessor currentContentProcessor = getOrCreateContentProcessor();
 		ResultsElementList resultsElementList = currentContentProcessor.getOrCreateResultsElementList();
 		if (resultsElementList.size() == 0) {
-			LOG.warn("no words to output");
+			System.out.print("!w");
+//			LOG.warn("no words to output");
 			return;
 		}
 		for (int i = 0; i < resultsElementList.size(); i++) {

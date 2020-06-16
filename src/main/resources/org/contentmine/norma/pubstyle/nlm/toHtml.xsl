@@ -135,11 +135,14 @@ UNKNOWN nlm: alt-text:
 		*[local-name()='boxed-text'] | 
 		*[local-name()='citation'] | 
 		*[local-name()='bio'] | 
+		*[local-name()='issue-part'] | 
 		*[local-name()='conference'] | 
 		*[local-name()='title'] | 
 		*[local-name()='floats-wrap'] | 
 	 	*[local-name()='journal-meta'] |
 	 	*[local-name()='journal-title-group'] |
+	 	*[local-name()='name-alternatives'] |
+	 	*[local-name()='title-group'] |
 	 	*[local-name()='table-wrap-group'] 
 		">
 		<div tagx="{local-name()}" class="{local-name()}" title="{local-name()}"><xsl:apply-templates select="*|text()" /></div>
@@ -147,11 +150,16 @@ UNKNOWN nlm: alt-text:
 
 <!--  SPANS, -->
 	<xsl:template match="
+	 	*[local-name()='abbrev-journal-title'] |
+	 	*[local-name()='access-date'] |
 	 	*[local-name()='article-title'] |
 	 	*[local-name()='attrib'] |
+	 	*[local-name()='author-comment'] |
 	 	*[local-name()='award-id'] |
 	 	*[local-name()='chapter-title'] |
 	 	*[local-name()='citation-author'] |
+	 	*[local-name()='city'] |
+	 	*[local-name()='conf-acronym'] |
 	 	*[local-name()='conf-date'] |
 	 	*[local-name()='conf-loc'] |
 	 	*[local-name()='conf-name'] |
@@ -167,15 +175,17 @@ UNKNOWN nlm: alt-text:
 	 	*[local-name()='edition'] |
 	 	*[local-name()='email'] |
 	 	*[local-name()='fax'] |
-	 	*[local-name()='phone'] |
-	 	*[local-name()='abbrev-journal-title'] |
+	 	*[local-name()='issue-sponsor'] |
 	 	*[local-name()='journal-title'] |
 	 	*[local-name()='mixed-citation'] |
-	 	*[local-name()='access-date'] |
+	 	*[local-name()='phone'] |
+	 	*[local-name()='postal-code'] |
 	 	*[local-name()='publisher-loc'] |
 	 	*[local-name()='related-article'] |
 	 	*[local-name()='related-object'] |
 	 	*[local-name()='role'] |
+	 	*[local-name()='state'] |
+	 	*[local-name()='statement'] |
 	 	
 	 	*[local-name()='day'] |
 	 	*[local-name()='month'] |
@@ -209,6 +219,7 @@ UNKNOWN nlm: alt-text:
 		*[local-name()='name'] | 
 	 	*[local-name()='surname'] |
 	 	*[local-name()='season'] |
+	 	*[local-name()='version'] |
 	 	*[local-name()='year'] |
 	 	
 	 	*[local-name()='inline-supplementary-material'] |
@@ -489,8 +500,8 @@ UNKNOWN nlm: alt-text:
 
 	<xsl:template match="
 	    *[local-name()='title-group']/*[local-name()='article-title'] |
-		*[local-name()='title-group']/*[local-name()='alt-title']">
-	  <div class="{local-name()}" title="{local-name()}" priority="0.61"><xsl:apply-templates/></div>
+		*[local-name()='title-group']/*[local-name()='alt-title']" priority="0.61">
+	  <div class="{local-name()}" title="{local-name()}" ><xsl:apply-templates/></div>
 	</xsl:template>
 
 <!-- 
