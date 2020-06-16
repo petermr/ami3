@@ -145,7 +145,8 @@ public class AMIDict implements Runnable {
 		this.dictionaryList = dictionaryList;
 	}
 	/** Toplevel */
-    @Option(names = {"-d", "--dictionary"}, 
+    @Option(names = {"-d", "--dictionary"},
+			scope = CommandLine.ScopeType.INHERIT, // this option can be used in all subcommands
     		arity="1..*",
     		description = "input or output dictionary name/s. for 'create' must be singular; when 'display' or 'translate', any number. "
     				+ "Names should be lowercase, unique. [a-z][a-z0-9._]. Dots can be used to structure dictionaries into"
@@ -154,7 +155,8 @@ public class AMIDict implements Runnable {
     List<String> dictionaryList = new ArrayList<>();
 	
     /** both create and translate */
-    @Option(names = {"--directory"}, 
+    @Option(names = {"--directory"},
+			scope = CommandLine.ScopeType.INHERIT, // this option can be used in all subcommands
     		arity="1",
     		description = "top directory containing dictionary/s. Subdirectories will use structured names (NYI). Thus "
     				+ "dictionary 'animals' is found in '<directory>/animals.xml', while 'plants.parts' is found in "
@@ -182,7 +184,63 @@ public class AMIDict implements Runnable {
 		protected List<String> inputBasenameList = null;
 
 	}
-	
+
+	/**
+	 * This class can be used as a mixin in subcommands of the {@code AMIDict} command.
+	 */
+	public static class GeneralOptionsMixin {
+		@Spec(Spec.Target.MIXEE)
+		CommandSpec mixeeSpec; // the CommandSpec of the command where this mixin is used
+
+		private GeneralOptions parentGeneralOptions() {
+			CommandSpec p = mixeeSpec.parent();
+			while (p != null && !(p.userObject() instanceof AMIDict)) {
+				p = p.parent();
+			}
+			if (p == null) {
+				throw new IllegalStateException("This mixin must only be used in a command that is a subcommand (or sub-subcommand, etc.) of AMIDict");
+			}
+			AMIDict amiDict = (AMIDict) p.userObject();
+			return amiDict.generalOptions;
+		}
+
+		@Option(names = {"-i", "--input"}, paramLabel = "FILE",
+				description = "Input filename (no defaults)"
+		)
+		protected void setInput(String input) {
+			parentGeneralOptions().input = input;
+		};
+
+		@Option(names = {"-n", "--inputname"}, paramLabel = "PATH",
+				description = "User's basename for inputfiles (e.g. foo/bar/<basename>.png) or directories. By default this is often computed by AMI."
+						+ " However some files will have variable names (e.g. output of AMIImage) or from foreign sources or applications"
+		)
+		protected void setInputBasename(String inputBasename) {
+			parentGeneralOptions().inputBasename = inputBasename;
+		}
+
+		@Option(names = {"-L", "--inputnamelist"}, paramLabel = "PATH",
+				arity = "1..*",
+				description = "List of inputnames; will iterate over them, essentially compressing multiple commands into one. Experimental."
+		)
+		protected void setInputBasenameList(List<String> inputBasenameList) {
+			parentGeneralOptions().inputBasenameList = inputBasenameList;
+		}
+
+		@Option(names = {"-f", "--forcemake"},
+				description = "Force 'make' regardless of file existence and dates."
+		)
+		protected void setForceMake(Boolean forceMake) {
+			parentGeneralOptions().forceMake = forceMake;
+		}
+
+		@Option(names = {"-N", "--maxTrees"}, paramLabel = "COUNT",
+				description = "Quit after given number of trees; null means infinite.")
+		protected void setMaxTreeCount(Integer maxTreeCount) {
+			parentGeneralOptions().maxTreeCount = maxTreeCount;
+		}
+	}
+
 	static class LoggingOptions {
 		@Option(names = {"-v", "--verbose"},
 				description = {

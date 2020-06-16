@@ -23,6 +23,7 @@ import org.contentmine.ami.dictionary.CMJsonDictionary;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
 import org.contentmine.ami.dictionary.DictionaryTerm;
 import org.contentmine.ami.lookups.WikipediaDictionary;
+import org.contentmine.ami.tools.AMIDict;
 import org.contentmine.ami.tools.AMIDictionaryToolOLD;
 import org.contentmine.ami.tools.AbstractAMIDictTool;
 import org.contentmine.ami.tools.AbstractAMIDictTool.InputFormat;
@@ -49,6 +50,7 @@ import com.google.gson.JsonParser;
 
 import nu.xom.Attribute;
 import nu.xom.Element;
+import picocli.CommandLine;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 
@@ -168,6 +170,9 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
     		arity="1",
     		description = "type of input (HTML , mediawiki)")
     protected WikiFormat wptype;
+
+    @CommandLine.Mixin
+	private AMIDict.GeneralOptionsMixin generalOptionsMixin;
 	
 	private HtmlTbody tBody;
 	private static final String HTTP = "http";
