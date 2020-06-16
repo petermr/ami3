@@ -226,19 +226,6 @@ public class AMIDict implements Runnable {
 		protected void setInputBasenameList(List<String> inputBasenameList) {
 			parentGeneralOptions().inputBasenameList = inputBasenameList;
 		}
-
-		@Option(names = {"-f", "--forcemake"},
-				description = "Force 'make' regardless of file existence and dates."
-		)
-		protected void setForceMake(Boolean forceMake) {
-			parentGeneralOptions().forceMake = forceMake;
-		}
-
-		@Option(names = {"-N", "--maxTrees"}, paramLabel = "COUNT",
-				description = "Quit after given number of trees; null means infinite.")
-		protected void setMaxTreeCount(Integer maxTreeCount) {
-			parentGeneralOptions().maxTreeCount = maxTreeCount;
-		}
 	}
 
 	static class LoggingOptions {
