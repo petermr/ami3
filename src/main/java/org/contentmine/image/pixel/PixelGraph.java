@@ -812,14 +812,13 @@ public class PixelGraph {
 		//nucleusFactory.getNucleusByPixel(line.get(line.size())).createSpikePixelList()
 	}
 
-	public void tidyNodesAndEdges(int largestSmallEdgeAllowed) {
+	public PixelGraph tidyNodesAndEdges(int largestSmallEdgeAllowed) {
 		getOrCreateEdgeList();
 		getOrCreateNodeList();
 		tidyEdges(largestSmallEdgeAllowed);
 		this.removeShortTerminalEdges(largestSmallEdgeAllowed);
 		tidyNodes();
-//		System.out.println("n "+nodeList.size()+"/e "+edgeList.size());
-		return;
+		return this;
 	}
 
 	private void tidyEdges(int largestSmallEdgeAllowed) {
@@ -1409,11 +1408,12 @@ public class PixelGraph {
 		return pixelEdgeList;
 	}
 
-	public void repairEdges() {
+	public PixelGraph repairEdges() {
 		PixelEdgeList edgeList = getOrCreateEdgeList();
 		for (PixelEdge pixelEdge : edgeList) {
 			pixelEdge.repair();
 		}
+		return this;
 	}
 
 

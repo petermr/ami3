@@ -50,6 +50,8 @@ import picocli.CommandLine.Spec;
 				DictionaryTranslateTool.class,
 		})
 public class AMIDict implements Runnable {
+	private static final String CONTENT_MINE_DICTIONARIES = "ContentMine/dictionaries";
+
 	private static final Logger LOG = Logger.getLogger(AMIDict.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
@@ -128,12 +130,12 @@ public class AMIDict implements Runnable {
 		return cmd;
 	}
 
-	public String getDictionaryTopname() {
+	public String getDirectoryTopname() {
 		return directory == null ? null : directory.toString();
 	}
 
-	public void setDictionaryTopname(String dictionaryTopname) {
-		this.directory = new File(dictionaryTopname);
+	public void setDirectoryTopname(String directoryTopname) {
+		this.directory = new File(directoryTopname);
 	}
 	public List<String> getDictionaryList() {
 		return dictionaryList;
@@ -163,13 +165,13 @@ public class AMIDict implements Runnable {
 
 	static class GeneralOptions {
 		@Option(names = {"-i", "--input"}, paramLabel = "FILE",
-				description = "Input filename (no defaults)"
+				description = "Input filename, containing input for dictionary. its basename becomes the inputname"
 		)
 		protected String input = null;
 
 		@Option(names = {"-n", "--inputname"}, paramLabel = "PATH",
-				description = "User's basename for inputfiles (e.g. foo/bar/<basename>.png) or directories. By default this is often computed by AMI."
-						+ " However some files will have variable names (e.g. output of AMIImage) or from foreign sources or applications"
+				description = "User's basename for inputfiles (e.g. foo/bar/<basename>.txt)."
+						+ " The default name for the dictionary; required for 'terms`"
 		)
 		protected String inputBasename;
 
@@ -179,14 +181,6 @@ public class AMIDict implements Runnable {
 		)
 		protected List<String> inputBasenameList = null;
 
-		@Option(names = {"-f", "--forcemake"},
-				description = "Force 'make' regardless of file existence and dates."
-		)
-		protected Boolean forceMake = false;
-
-		@Option(names = {"-N", "--maxTrees"}, paramLabel = "COUNT",
-				description = "Quit after given number of trees; null means infinite.")
-		protected Integer maxTreeCount = null;
 	}
 	
 	static class LoggingOptions {
@@ -254,7 +248,7 @@ public class AMIDict implements Runnable {
 
 	public static File getDictionaryDirectory() {
 		File homeDir = new File(System.getProperty("user.home"));
-		return new File(homeDir, "ContentMine/dictionaries");
+		return new File(homeDir, CONTENT_MINE_DICTIONARIES);
 	}
 
 	public File getDirectory() {

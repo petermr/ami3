@@ -50,10 +50,7 @@ public class DictionarySearchTool extends AbstractAMIDictTool {
 	
 	@Override
 	protected void parseSpecifics() {
-		super.parseSpecifics();
-//		AMIUtil.printNameValue("search", searchTerms);
-//		AMIUtil.printNameValue("searchfile", searchTermFilenames);
-//		System.out.println();
+		System.err.println("Not yet written");
 	}
 	
 	@Override

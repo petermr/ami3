@@ -229,6 +229,49 @@ public class Real2ArrayTest {
 		Assert.assertEquals("((8.0,6.0)(2.0,12.0)(7.0,7.0)(4.0,14.0)(5.0,8.0)(1.0,9.0))", rot.toString());
 	}
 	
+	@Test
+	public void testInterpolate() {
+		Real2Array r2a = createSubArray50();
+		Real2 r2 = r2a.interpolate(0.3).format(1);
+		Assert.assertEquals("interpolate", "(0.6,0.9)", r2.toString());
+		r2 = r2a.interpolate(1.2).format(1);
+		Assert.assertEquals("interpolate", "(2.4,3.6)", r2.toString());
+	}
+	
+	@Test
+	public void testSubArray() {
+		Real2Array r2a = createSubArray50();
+		Real2Array sub = r2a.createSubArray(0, 4, 5);
+		Assert.assertEquals("sub", "((0.0,0.0)(2.0,3.0)(4.0,6.0)(6.0,9.0)(8.0,12.0))", sub.toString());
+		sub = r2a.createSubArray(1, 5, 5);
+		Assert.assertEquals("sub", "((2.0,3.0)(4.0,6.0)(6.0,9.0)(8.0,12.0)(10.0,15.0))", sub.toString());
+		sub = r2a.createSubArray(1, 9, 5);
+		Assert.assertEquals("sub", "((2.0,3.0)(6.0,9.0)(10.0,15.0)(14.0,21.0)(18.0,27.0))", sub.toString());
+		try {
+			sub = r2a.createSubArray(1, 9, 4);
+			throw new RuntimeException(" should throw RTE");
+		} catch (RuntimeException e) {
+			// expected
+		}
+	}
+
+	private Real2Array createSubArray50() {
+		Real2Array r2a = new Real2Array(51);
+		for (int i = 0; i <= 50; i++) {
+			r2a.setElement(i, new Real2(i * 2, i * 3));
+		}
+		return r2a;
+	}
+	
+	@Test
+	public void testExtrapolate() {
+		Real2Array r2a = get60ElementSemiCircle();
+		System.out.println(r2a.format(1));
+		Real2Array r2asub = r2a.createSubArray(0, 40, 5);
+		RealArray r2acurve = r2asub.calculateDeviationsRadiansPerElement();
+		System.out.println("ra2 deviation "+r2acurve.format(2));
+	}
+	
 	// ======================================
 	private Real2Array get6ElementTestArray() {
 		Real2Array r2a = new Real2Array();
@@ -238,6 +281,54 @@ public class Real2ArrayTest {
 		r2a.addElement(new Real2(5.0, 1.0));
 		r2a.addElement(new Real2(4.0, 7.0));
 		r2a.addElement(new Real2(8.0, 6.0));
+		return r2a;
+	}
+	
+	/** 60 elements of semicircle radius 10.
+	 * 
+	 * @return
+	 */
+	private Real2Array get60ElementSemiCircle() {
+		Real2Array r2a = new Real2Array(60);
+		double r = 10.0;
+		for (int i = 0; i < 60; i++) {
+			double t = Math.PI * ((double) i) / 60.;
+			r2a.setElement(i, new Real2(r * Math.sin(t), r * Math.cos(t)));
+		}
+//		System.out.println(">sc >"+r2a.format(2));
+		return r2a;
+	}
+	
+	/** from an experimental curve
+	 * 
+	 * @return
+	 */
+	private Real2Array get100ElementTestArray() {
+		String s = ""
+				+ "((1638.0,71.0)(1637.0,72.0)(1636.0,73.0)(1635.0,73.0)(1634.0,74.0)(1633.0,74.0)(1632.0,75.0)(1631.0,75.0)"
+				+ "(1630.0,76.0)(1629.0,76.0)(1628.0,77.0)(1627.0,77.0)(1626.0,78.0)(1625.0,78.0)(1624.0,79.0)(1623.0,79.0)(1622.0,80.0)"
+				+ "(1621.0,80.0)(1620.0,80.0)(1619.0,81.0)(1618.0,82.0)(1617.0,82.0)(1616.0,83.0)(1615.0,84.0)(1614.0,84.0)(1613.0,85.0)"
+				+ "(1612.0,85.0)(1611.0,86.0)(1610.0,86.0)(1609.0,87.0)(1608.0,88.0)(1607.0,89.0)(1606.0,89.0)(1605.0,90.0)(1604.0,90.0)"
+				+ "(1603.0,91.0)(1602.0,92.0)(1601.0,92.0)(1600.0,93.0)(1599.0,94.0)(1598.0,95.0)(1597.0,95.0)"
+				+ "(1596.0,96.0)(1595.0,97.0)(1594.0,98.0)(1593.0,98.0)(1592.0,99.0)(1591.0,100.0)"
+				+ "(1590.0,101.0)(1589.0,102.0)(1588.0,102.0)(1587.0,103.0)(1586.0,104.0)(1585.0,105.0)"
+				+ "(1584.0,106.0)(1583.0,106.0)(1582.0,107.0)(1581.0,108.0)(1580.0,109.0)(1579.0,110.0)"
+				+ "(1578.0,111.0)(1577.0,111.0)(1576.0,112.0)(1576.0,113.0)(1575.0,114.0)(1574.0,114.0)(1573.0,115.0)"
+				+ "(1573.0,116.0)(1572.0,117.0)(1571.0,117.0)(1570.0,118.0)(1569.0,119.0)(1568.0,120.0)"
+				+ "(1567.0,121.0)(1566.0,122.0)(1565.0,123.0)(1564.0,124.0)(1563.0,125.0)"
+				+ "(1562.0,126.0)(1561.0,127.0)(1560.0,127.0)(1559.0,128.0)(1558.0,129.0)(1557.0,130.0)"
+				+ "(1556.0,131.0)(1555.0,132.0)(1555.0,133.0)(1554.0,134.0)(1553.0,134.0)(1552.0,135.0)"
+				+ "(1551.0,136.0)(1550.0,137.0)(1549.0,138.0)(1548.0,139.0)(1547.0,140.0)(1546.0,140.0)"
+				+ "(1545.0,141.0)(1545.0,142.0)(1544.0,143.0)(1543.0,143.0)(1542.0,144.0)(1541.0,145.0)"
+				+ "(1540.0,146.0)(1539.0,146.0)(1538.0,147.0)(1537.0,148.0)(1536.0,149.0)(1535.0,150.0)"
+				+ "(1534.0,151.0)(1533.0,152.0)(1532.0,153.0)(1531.0,153.0)(1530.0,154.0)(1529.0,155.0)"
+				+ "(1528.0,155.0)(1527.0,156.0)(1526.0,157.0)(1525.0,158.0)(1524.0,158.0)(1523.0,159.0)(1522.0,160.0)"
+				+ "(1521.0,161.0)(1520.0,162.0)(1519.0,162.0)(1518.0,163.0)(1517.0,164.0)(1516.0,164.0)(1515.0,164.0)(1514.0,165.0)"
+				+ "(1513.0,166.0)(1512.0,166.0)(1511.0,167.0)(1510.0,168.0)(1509.0,168.0)(1508.0,169.0)(1507.0,170.0)(1506.0,170.0))";
+		Real2Array r2a = Real2Array.createFromString(s);
+		RealArray ra = r2a.calculate4SegmentedCurvature();
+		System.out.println("curv: "+ra.format(3));
+//		System.out.println(r2a);
 		return r2a;
 	}
 

@@ -92,7 +92,7 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 
 	@Override
 	protected void parseSpecifics() {
-		super.parseSpecifics();
+		System.err.println("Not yet written");
 	}
 
 	@Override

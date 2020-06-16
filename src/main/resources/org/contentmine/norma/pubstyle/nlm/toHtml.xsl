@@ -370,13 +370,15 @@ UNKNOWN nlm: alt-text:
 	<xsl:template match="*[local-name()='journal-id']">
 	  <span class="{@journal-id-type}" title="{@journal-id-type}"><xsl:value-of select="."/></span>
 	</xsl:template>
-	
+
+<!-- 
 	<xsl:template match="
 	 	*[local-name()='journal-meta'] |
 	 	*[local-name()='journal-title-group'] 
 		">
 		<div tagx="{local-name()}" class="{local-name()}" title="{local-name()}"><xsl:apply-templates select="*|text()" /></div>
 	</xsl:template>
+-->
 
 	<xsl:template match="
 	 	*[local-name()='issn'] 
@@ -477,16 +479,18 @@ UNKNOWN nlm: alt-text:
 			Onchocerciasis</alt-title>
 	</title-group>
 	-->
+	<!-- 
 	<xsl:template match="*[local-name()='title-group']">
 	  <div class="title-group">
 	    <xsl:apply-templates/>
 	  </div>
 	</xsl:template>
+-->
 
 	<xsl:template match="
 	    *[local-name()='title-group']/*[local-name()='article-title'] |
 		*[local-name()='title-group']/*[local-name()='alt-title']">
-	  <div class="{local-name()}" title="{local-name()}"><xsl:apply-templates/></div>
+	  <div class="{local-name()}" title="{local-name()}" priority="0.61"><xsl:apply-templates/></div>
 	</xsl:template>
 
 <!-- 

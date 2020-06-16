@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -105,7 +106,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
     		paramLabel = "input format",
     		description = "input format (${COMPLETION-CANDIDATES})"
     		)
-    protected InputFormat informat;
+    protected InputFormat informat = InputFormat.list;
     
     @Option(names = {"--linkcol"}, 
     		arity="1",
@@ -152,13 +153,14 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
     @Option(names = {"--termfile"}, 
     		arity="1",
 //    		split=",",
-    		description = "list of terms in file, line-separated")
+    		description = "list of terms in file, line-separated. <basename> will become dictionary name,"
+    				+ " i.e. terpenes.txt creates basename=terpenes")
     protected File termfile;
 
 	@Option(names = {"--terms"}, 
 			arity="1..*",
 			split=",",
-			description = "list of terms (entries), comma-separated")
+			description = "list of terms (entries), space-separated. Requires `inputname`")
 	private List<String> terms;
 	private Set<String> termSet;
 	
@@ -171,6 +173,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	private static final String HTTP = "http";
 	private static final String CM_PREFIX = "CM.";
 	private static final String WIKITABLE = "wikitable";
+	private String dictionaryName;
 	
 
 	public DictionaryCreationTool() {
@@ -179,16 +182,8 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 
 //	@Override
 	protected void parseSpecifics() {
-		super.parseSpecifics();
 		if (this.templateNames != null) {
-//			dictionaryList = new ArrayList<>();
-			createTemplateNames();
-			this.informat = WikiFormat.mwk.equals(this.wptype) ? InputFormat.mediawikitemplate : InputFormat.wikitemplate;
-			if (parent.getDictionaryTopname() == null) {
-				System.err.println("No directory given, using .");
-				parent.setDictionaryTopname(".");
-			}
-//			createInputList();
+			createFilenamesForWikimediaInput();
 		}
 		if (this.testString != null) {
 			this.testString = this.testString.replaceAll("%20", " ");
@@ -197,9 +192,15 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		dictOutformat = (this.outformats == null || this.outformats.length != 1) ? null : this.outformats[0];
 		wikiLinkList = (this.wikiLinks == null) ? new ArrayList<WikiLink>() :
 		     new ArrayList<WikiLink>(Arrays.asList(this.wikiLinks));
-//		descriptionList = (this.description == null) ? new ArrayList<String>() :
-//		     new ArrayList<String>(Arrays.asList(this.description));
-//		printDebug();
+	}
+
+	private void createFilenamesForWikimediaInput() {
+		createTemplateNames();
+		this.informat = WikiFormat.mwk.equals(this.wptype) ? InputFormat.mediawikitemplate : InputFormat.wikitemplate;
+		if (parent.getDirectoryTopname() == null) {
+			System.err.println("No directory given, using .");
+			parent.setDirectoryTopname(".");
+		}
 	}
 
 	
@@ -253,65 +254,74 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
     	missingWikidataSet = new HashSet<String>();
 	}
 
-
-
 	private String createDictionaryName(String templateName) {
 		return templateName.toLowerCase().replaceAll("[^A-Za-z0-9_\\-]", "");
 	}
 
-
 	private void createDictionary() {
-		String dictionaryTopname = parent.getDictionaryTopname();
-		if (dictionaryTopname == null) {
-			throw new RuntimeException("no directory given");
+		String dictionaryName = null;
+		InputStream inputStream = null;
+		if (input() != null) {
+			inputStream = getInputStreamFromFile();
+			dictionaryName = input();
+		} else if (inputName() != null) {
+			inputStream = new ByteArrayInputStream(inputName().getBytes(Charset.forName("UTF-8")));
+			dictionaryName = inputName();
+		} else if (testString != null) {
+			inputStream = new ByteArrayInputStream(testString.getBytes());
+			dictionaryName = "test";
 		}
-		if (input() == null) {
-			throw new RuntimeException("no input given");
-		}
-		File fileroot = new File(dictionaryTopname, input());
-		dictionaryTopname = dictionaryTopname == null ?
-				new File(fileroot, wptype.toString()).toString() : dictionaryTopname;
-		InputStream inputStream = openInputStream();
-		try {
-			if (inputStream == null) {
-				System.err.println("NO INPUT STREAM, check HTTP connection/target or file existence");
-				if (testString != null) {
-					inputStream = new ByteArrayInputStream(testString.getBytes());
-				}
-			}
 	
-			if (inputStream != null) {
-				if (informat == null) {
-					addLoggingLevel(Level.ERROR, "no input format given ");
-					return;
-				} else if (InputFormat.csv.equals(informat)) {
-					readCSV(inputStream);
-				} else if (InputFormat.list.equals(informat)) {
-					readList(inputStream);
-				} else if (InputFormat.mediawikitemplate.equals(informat) ||
-						InputFormat.wikicategory.equals(informat) ||
-						InputFormat.wikipage.equals(informat) ||
-						InputFormat.wikitable.equals(informat) ||
-						InputFormat.wikitemplate.equals(informat)
-				) {
-					wikipediaDictionary = new WikipediaDictionary();
-					readWikipediaPage(wikipediaDictionary, inputStream);
-				} else {
-					addLoggingLevel(Level.ERROR, "unknown inputformat: " + informat);
-					return;
-				}
-			} else {
-	
-			}
-		} finally {
-			if (inputStream != null) {
-				try { inputStream.close(); } catch (IOException ignored) {}
-			}
+		if (inputStream == null) {
+			throw new RuntimeException("'input' or 'inputname' must be given");
 		}
+		
+		readTerms(inputStream);
+		if (informat == null) return;
+		try { inputStream.close(); } catch (IOException ignored) {}
 		synchroniseTermsAndNames();
-		dictionaryElement = DefaultAMIDictionary.createDictionaryWithTitle(/*dictionaryList.get(0)*/input());
+		dictionaryElement = DefaultAMIDictionary.createDictionaryWithTitle(dictionaryName);
 		
 		writeNamesAndLinks();
+	}
+
+	private void readTerms(InputStream inputStream) {
+		if (termList != null) {
+			LOG.debug("reading terms from CL "+termList);
+		} else if (informat == null) {
+			addLoggingLevel(Level.ERROR, "no input format given ");
+		} else if (InputFormat.csv.equals(informat)) {
+			readCSV(inputStream);
+		} else if (InputFormat.list.equals(informat)) {
+			readList(inputStream);
+		} else if (InputFormat.mediawikitemplate.equals(informat) ||
+				InputFormat.wikicategory.equals(informat) ||
+				InputFormat.wikipage.equals(informat) ||
+				InputFormat.wikitable.equals(informat) ||
+				InputFormat.wikitemplate.equals(informat)
+		) {
+			wikipediaDictionary = new WikipediaDictionary();
+			readWikipediaPage(wikipediaDictionary, inputStream);
+		} else {
+			addLoggingLevel(Level.ERROR, "unknown inputformat: " + informat);
+			informat = null;
+		}
+	}
+
+	private InputStream getInputStreamFromFile() {
+		InputStream inputStream;
+		String directoryTopname = parent.getDirectoryTopname();
+		if (directoryTopname == null) {
+			throw new RuntimeException("no directory for output given");
+		}
+		File fileroot = new File(directoryTopname, input());
+		directoryTopname = directoryTopname == null ?
+				new File(fileroot, wptype.toString()).toString() : directoryTopname;
+		inputStream = openInputStream();
+		if (inputStream == null) {
+			System.err.println("NO INPUT STREAM, check HTTP connection/target or file existence");
+		}
+		return inputStream;
 	}
 
 	private RectangularTable readCSV(InputStream inputStream) {
@@ -407,7 +417,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
     	if (dictionaryName == null) {
     		throw new RuntimeException("null dictionaryName");
     	}
-    	getOrCreateExistingDictionaryTop(parent.getDictionaryTopname());
+    	getOrCreateExistingDictionaryTop(parent.getDirectoryTopname());
     	if (dictionaryTop != null) {
     		Matcher matcher = pattern.matcher(dictionaryName);
     		if (!matcher.matches()) {

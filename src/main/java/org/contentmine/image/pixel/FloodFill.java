@@ -31,9 +31,7 @@ public abstract class FloodFill {
 	protected abstract boolean isBlack(int posX, int posY);
 	
 	public boolean fillIslands() {
-		if (islandList == null) {
-			return false;
-		}
+		ensureIslandList();
 		painted = new boolean[height][width];
 
 		for (int i = 0; i < height; i++) {
@@ -72,11 +70,11 @@ public abstract class FloodFill {
 		return new Pixel(p);
 	}
 
-	private void add(PixelIsland island) {
+	private FloodFill add(PixelIsland island) {
 		ensureIslandList();
 		islandList.add(island);
 		LOG.trace("islandList "+islandList.size());
-		return;
+		return this;
 	}
 
 	private void ensureIslandList() {
@@ -87,8 +85,11 @@ public abstract class FloodFill {
 	
 	public PixelIslandList getIslandList() {
 		ensureIslandList();
-		if (!fillIslands()) {
-			System.err.println(">island overflow> "+maxIslands /* + " maybe requires imageprocessing?"*/);
+		
+		if (islandList.size() == 0) {
+			if (!fillIslands()) {
+				System.err.println(">island overflow> "+maxIslands /* + " maybe requires imageprocessing?"*/);
+			}
 		}
 		for (PixelIsland island : islandList) {
 			island.setDiagonal(diagonal);
@@ -103,7 +104,7 @@ public abstract class FloodFill {
 		return (p.x >= 0) && (p.x < width && (p.y >= 0) && (p.y < height));
 	}
 
-	private void addNewPoints(Queue<Point> queue, Point p) {
+	private FloodFill addNewPoints(Queue<Point> queue, Point p) {
 		queue.add(new Point(p.x + 1, p.y));
 		queue.add(new Point(p.x - 1, p.y));
 		queue.add(new Point(p.x, p.y + 1));
@@ -114,18 +115,21 @@ public abstract class FloodFill {
 			queue.add(new Point(p.x - 1, p.y - 1));
 			queue.add(new Point(p.x + 1, p.y - 1));
 		}
+		return this;
 	}
 
-	public void setDiagonal(boolean b) {
+	public FloodFill setDiagonal(boolean b) {
 		this.diagonal = b;
+		return this;
 	}
 
 	public int getMaxIslands() {
 		return maxIslands;
 	}
 
-	public void setMaxIslands(int maxIslands) {
+	public FloodFill setMaxIslands(int maxIslands) {
 		this.maxIslands = maxIslands;
+		return this;
 	}
 
 }

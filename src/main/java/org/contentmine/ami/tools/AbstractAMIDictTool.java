@@ -48,7 +48,7 @@ import picocli.CommandLine.Spec;
 
 
 @Command(mixinStandardHelpOptions = true, version = "ami-dict 1.0.0")
-public class AbstractAMIDictTool implements Callable<Void> {
+public abstract class AbstractAMIDictTool implements Callable<Void> {
 	
 
 	public static final String UTF_8 = "UTF-8";
@@ -110,9 +110,12 @@ public class AbstractAMIDictTool implements Callable<Void> {
 		AMIUtil.printHeader(this, System.out, "Specific");
 	}
 
+	/** override */
+	protected abstract void parseSpecifics();
+	
 	/**
 	 * prints generic values from abstract superclass.
-	 * at present cproject, ctree and filetypes
+	 * at present 
 	 */
 	private void printGenericValues() {
     	if (verbosity().length > 0) {
@@ -122,6 +125,20 @@ public class AbstractAMIDictTool implements Callable<Void> {
 		}
 	}
 
+//	/**
+//	 * Prints all options for this command with their value (either user-specified or the default)
+//	 * to the specified stream.
+//	 * @param stream the stream to write options to
+//	 */
+//	protected void printOptionValues(PrintStream stream) {
+//		ParseResult parseResult = spec.commandLine().getParseResult();
+//		for (OptionSpec option : spec.options()) {
+//			String label = parseResult.hasMatchedOption(option)
+//					? "(matched)" : "(default)";
+//			stream.printf("%s: %s %s%n", option.longestName(), option.getValue(), label);
+//		}
+//	}
+//	
 	/**
 	 * Prints all options for this command with their value (either user-specified or the default)
 	 * to the specified stream.
@@ -132,10 +149,10 @@ public class AbstractAMIDictTool implements Callable<Void> {
 		for (OptionSpec option : spec.options()) {
 			String label = parseResult.hasMatchedOption(option)
 					? "(matched)" : "(default)";
-			stream.printf("%s: %s %s%n", option.longestName(), option.getValue(), label);
+			stream.printf("%-20s: %1s %9s%n", option.longestName(), label.substring(1,  2), option.getValue());
 		}
 	}
-
+	
 
 
 	/**
@@ -352,15 +369,6 @@ public class AbstractAMIDictTool implements Callable<Void> {
 	private void initDict() {
 	}
 	
-	public static void main(String args) {
-		main(args.trim().split("\\s+"));
-	}
-	
-	public static void main(String[] args) {
-        AbstractAMIDictTool amiDictionary = new AbstractAMIDictTool();
-		amiDictionary.runCommands(args);
-	}
-	
 	private void combineLevel(Level level) {
 		if (level == null) {
 			LOG.warn("null level");
@@ -376,12 +384,6 @@ public class AbstractAMIDictTool implements Callable<Void> {
 		if (level.isGreaterOrEqual(Level.WARN)) {
 			System.err.println(this.getClass().getSimpleName() + ": " + level + ": " + message);
 		}
-	}
-
-	protected void parseSpecifics() {
-    	if (verbosity().length > 0) {
-			printOptionValues(System.out);
-    	}
 	}
 
 	protected void runSub() {
@@ -432,14 +434,20 @@ public class AbstractAMIDictTool implements Callable<Void> {
 		return parent.loggingOptions.verbosity;
 	}
 
-
-
 	protected String input() {
 		return parent.generalOptions.input;
 	}
 
 	protected void input(String newValue) {
 		parent.generalOptions.input = newValue;
+	}
+
+	protected String inputName() {
+		return parent.generalOptions.inputBasename;
+	}
+
+	protected void inputName(String newValue) {
+		parent.generalOptions.inputBasename = newValue;
 	}
 
 	protected InputStream openInputStream() {
@@ -534,7 +542,6 @@ public class AbstractAMIDictTool implements Callable<Void> {
 		// NO-OP overridden in DisplayTool
 	}
 
-	
 	// WIKIMEDIA =========================
 	
 	protected void addWikiLinks(Element entry) {

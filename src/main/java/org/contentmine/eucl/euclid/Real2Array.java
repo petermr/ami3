@@ -1,5 +1,6 @@
 /**
  *    Copyright 2011 Peter Murray-Rust
+
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
  *    you may not use this file except in compliance with the License.
@@ -28,6 +29,7 @@ import java.util.regex.Pattern;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;
+import org.eclipse.jetty.io.RuntimeIOException;
 
 
 /**
@@ -235,6 +237,40 @@ public class Real2Array implements EuclidConstants ,  Iterable<Real2>  {
     		real2Array.nelem++;
     	}
     	return real2Array;
+    }
+    
+    /** of same format as output
+     * 
+     * @param s
+     * @return
+     */
+    public static Real2Array createFromString(String s) {
+    	Real2Array r2a = null;
+    	if (s == null) return r2a;
+    	s = s.trim();
+    	s = s.replaceAll("\\s+", "");
+    	if (!s.startsWith("((") || !s.endsWith("))")) {
+    		throw new RuntimeException("Real2Array must be of format '((...))'");
+    	}
+    	s = s.substring(2, s.length()-2);
+    	String[] ss = s.split("\\)\\(");
+    	RealArray xarr = new RealArray(ss.length);
+    	RealArray yarr = new RealArray(ss.length);
+    	for (int i = 0; i < ss.length; i++) {
+    		String[] sss = ss[i].split(",");
+    		if (sss.length != 2) {
+    			throw new RuntimeException("parse error near element ("+i+"): "+ss[i]);
+    		}
+    		try {
+	    		xarr.setElementAt(i, Double.parseDouble(sss[0]));
+	    		yarr.setElementAt(i, Double.parseDouble(sss[1]));
+    		} catch (NumberFormatException nfe) {
+    			throw new RuntimeException("parse error near element ("+i+"): "+ss[i]);
+    		}
+    	}
+    	r2a = new Real2Array(xarr, yarr);
+//    	System.out.println(ss.length);
+    	return r2a;
     }
     
     /**
@@ -611,6 +647,15 @@ public class Real2Array implements EuclidConstants ,  Iterable<Real2>  {
 	public Real2 getMidpointOfEnds() {
 		return (get(0).plus(get(size() - 1))).multiplyBy(0.5);
 	}
+	/** create array of angular deviations per element.
+	 * essentially the curvature.
+	 * 
+	 * for an array xy0, xy1, xy2, xy3
+	 * returns angular deviation for 0-1-2, 1-2-3
+	 * i.e. 2 fewer elements.
+	 * 
+	 * @return
+	 */
 	public RealArray calculateDeviationsRadiansPerElement() {
 		int size = size();
 		RealArray curvature = new RealArray(size - 2);
@@ -620,12 +665,16 @@ public class Real2Array implements EuclidConstants ,  Iterable<Real2>  {
 			Angle angle = Real2.getAngle(get(i), get(j), get(k));
 			angle.normalizeTo2Pi();
 			double ang = angle.getRadian() - Math.PI;
-			curvature. setElementAt(i, ang);
+			curvature.setElementAt(i, ang);
 		}
 		return curvature;
 	}
 	/** creates 4 roughly equal segments and calculates 3 values of curvature
+	 * essentially the angle of the tangent,
+	 * 
 	 * "units" are pixels per radian. 
+	 * 
+	 * requires at least 5 elements.
 	 * 
 	 * @return
 	 */
@@ -671,6 +720,64 @@ public class Real2Array implements EuclidConstants ,  Iterable<Real2>  {
 		xarr = yarr;
 		yarr = swap;
 		return this;
+	}
+	/** create a subArray of npoints equally spaced
+	 * note this gives npoints -1 segments
+	 * note end must be greater than start
+	 * and both must fit on array
+	 * 
+	 * no interpolation (may be added later), so results only useful if
+	 * (end - start) / (npoints - 1) is an integer
+	 *
+	 *@param start point
+	 *@param end point 
+	 *@param number of points in subarray
+	 *@return any error returns null
+	 *
+	 */
+	public Real2Array createSubArray(int start, int end, int npoints) {
+		Real2Array r2a = null;
+		if (start < 0 || start >= nelem) {
+			throw new RuntimeException("bad start point: "+start +" (size=" + nelem + ")");
+		}
+		if (end < 0 || end >= nelem) {
+			throw new RuntimeException("bad end point: "+end +" (size=" + nelem + ")");
+		}
+		if (end - start < npoints - 1 ) {
+			throw new RuntimeException("end: "+end +" not sufficiently larger than "+
+					start+"; npoints: "+npoints);
+		}
+		int range = end - start;
+		if ((range / (npoints - 1)) * (npoints - 1) != range) {
+			throw new RuntimeException (" end - start must be multiple of npoints - 1");
+		}
+		r2a = new Real2Array(npoints);
+		for (int i = 0; i < npoints; i++) {
+			int idx = ((i * range) / (npoints - 1)) + start; 
+			r2a.setElement(i, this.elementAt(idx));
+		}
+		return r2a;
+	}
+	/** interpolate between two adjacent elements floor and ceil of d
+	 * 
+	 * @param d
+	 * @return
+	 */
+	public Real2 interpolate(double d) {
+		int floor = (int)Math.floor(d);
+		int ceil = (int)Math.ceil(d);
+		if (floor < 0 || ceil < 0 || floor >= nelem || ceil >= nelem) {
+			throw new RuntimeException("bad floating index "+d +" not in 0 - "+nelem);
+		}
+		double x1 = xarr.get(ceil);
+		double x0 = xarr.get(floor);
+		double y1 = yarr.get(ceil);
+		double y0 = yarr.get(floor);
+		
+		double deltax = x1 - x0;
+		double deltay = y1 - y0;
+		double factor = d - floor;
+		return new Real2(x0 + deltax * factor, y0 + deltay * factor);
 	}
 	
 	

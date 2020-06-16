@@ -49,8 +49,30 @@ public class AMIDictionaryTest extends AbstractAMITest {
 	@Test
 	public void testCreateFromWikipediaCategory() {
 		String categoryString = "https://en.wikipedia.org/wiki/Category:Human_migration";
-		String cmd = "-v --dictionary hummig.xml --directory=target/dictionary/ "
-				+ "--input=" + categoryString + " create --informat=wikicategory";
+		String cmd = "-v"
+				+ " --dictionary hummig"
+				+ " --directory=target/dictionary/"
+				+ " --input=" + categoryString 
+				+ " create"
+				+ " --informat=wikicategory";
+		DictionaryCreationTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
+	}
+	
+	// CREATE
+	@Test
+	/** this command fails to read Wikipedia, perhaps because of a format change
+	 * 
+	 */
+	public void testCreateWikipedia() {
+		String cmd = " -v"
+				+ " --dictionary myterpenes"
+				+ " --directory=target/dictionary/create"
+//				+ " --input junkterms.txt"
+				+ " create"
+				+ " --terms thymol menthol"
+				+ " --informat list"
+				+ " --outformats xml"		
+				;
 		DictionaryCreationTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
 	}
 	

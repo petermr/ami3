@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.InputStream;
 
 import org.contentmine.cproject.files.CProject;
+import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.util.CMineUtil;
 import org.junit.Assert;
 import org.junit.Test;
@@ -39,6 +40,8 @@ public class AbstractAMITest {
 	public static File OIL186 = new File(CEV_SEARCH, "oil186/");
 	public static File OIL1000 = new File(CEV_SEARCH, "oil1000/");
 	public static CProject OIL186_PROJ = new CProject(OIL186);
+	private CProject cProject;
+	protected CTree cTree;
 
 	
 	@Test
@@ -69,5 +72,33 @@ public class AbstractAMITest {
 		Assert.assertNull("file", file);
 		file = tool.getFileRelativeToProject("/Users/");
 		Assert.assertNotNull("file", file);
+	}
+
+	protected AbstractAMITest setAMITestProjectName(String projectName) {
+		File cProjectDir = new File(SRC_TEST_AMI, projectName);
+		if (!cProjectDir.exists() || !cProjectDir.isDirectory()) {
+			throw new RuntimeException("not a project directory: "+cProjectDir);
+		}
+		this.cProject = new CProject(cProjectDir);
+		return this;
+	}
+
+	private void checkCProject() {
+		if (cProject == null) {
+			throw new RuntimeException("missing project directory: ");
+		}
+	}
+
+	protected AbstractAMITest setTreeName(String treeName) {
+		checkCProject();
+		cTree = cProject.getCTreeByName(treeName);
+		checkCTree();
+		return this;
+	}
+
+	protected void checkCTree() {
+		if (cTree == null) {
+			throw new RuntimeException("missing cTree directory: ");
+		}
 	}
 }

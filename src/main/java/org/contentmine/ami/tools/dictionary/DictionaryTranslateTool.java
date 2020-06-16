@@ -36,6 +36,11 @@ public class DictionaryTranslateTool extends AbstractAMIDictTool {
 		super();
 	}
 	
+	@Override
+	protected void parseSpecifics() {
+		System.err.println("Not yet written");
+	}
+
 	private void convertDictionaries(
 			File infile, DictionaryFileFormat informat, File outfile, DictionaryFileFormat outformat) {
 		if (DictionaryFileFormat.json.equals(informat)) {
