@@ -67,7 +67,7 @@ public class AMIDictionaryTest extends AbstractAMITest {
 		String cmd = " -v"
 				+ " --dictionary myterpenes"
 				+ " --directory=target/dictionary/create"
-//				+ " --input junkterms.txt"
+				+ " --inputname miniterpenes"
 				+ " create"
 				+ " --terms thymol menthol"
 				+ " --informat list"

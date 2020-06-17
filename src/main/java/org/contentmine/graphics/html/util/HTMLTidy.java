@@ -5,6 +5,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,6 +42,7 @@ public class HTMLTidy {
 	private boolean removeXMLLang;
 	private boolean flattenNewline;
 	private boolean removeForeignPrefixes;
+	private boolean removeTidyFails = true;
 
 	public HTMLTidy() {
 		tidy = createTidyWithOptions();
@@ -119,6 +121,12 @@ public class HTMLTidy {
 		return content2;
 	}
 
+	private static String removeTidyFails(String content) {
+		String content1 = content.replaceAll("<bdi>", "<span class='bdi'>"); // <xyz: ... />
+		String content2 = content1.replaceAll("</bdi>", "</span>"); // <xyz: ... />
+		return content2;
+	}
+
 	private static String normalizeWhitespace(String content) {
 		content = content.replaceAll(WHITESPACE, " ");
 		return content;
@@ -153,6 +161,9 @@ public class HTMLTidy {
 			}
 			if (removeForeignPrefixes) {
 				s = HTMLTidy.removeForeignNamespacePrefixes(s);
+			}
+			if (removeTidyFails) {
+				s = HTMLTidy.removeTidyFails(s);
 			}
 			sb.replace(0, sb.length(), s);
 		}
@@ -234,9 +245,9 @@ public class HTMLTidy {
 	}
 
 	public String tidy(InputStream is) throws IOException {
-		StringBuilder sb = new StringBuilder(IOUtils.toString(is));
+		StringBuilder sb = new StringBuilder(IOUtils.toString(is, Charset.forName("UTF-8")));
 		preTidy(sb);
-		is = IOUtils.toInputStream(sb.toString());
+		is = IOUtils.toInputStream(sb.toString(), Charset.forName("UTF-8"));
 		baos = new ByteArrayOutputStream();
 		node = tidy.parse(is, baos);
 		sb = new StringBuilder(baos.toString());
@@ -298,5 +309,6 @@ public class HTMLTidy {
 		setStripDoctype(true);
 		getTidy().setDocType(null);
 		setFlattenNewline(true);
+		removeTidyFails = true;
 	}
 }

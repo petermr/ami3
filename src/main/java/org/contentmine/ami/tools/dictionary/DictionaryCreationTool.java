@@ -1,5 +1,7 @@
 package org.contentmine.ami.tools.dictionary;
 
+import static org.junit.Assert.assertThrows;
+
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -270,20 +272,26 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 			inputStream = getInputStreamFromFile();
 			dictionaryName = input();
 		} else if (inputName() != null) {
-			inputStream = new ByteArrayInputStream(inputName().getBytes(Charset.forName("UTF-8")));
+//			inputStream = new ByteArrayInputStream(inputName().getBytes(Charset.forName("UTF-8")));
+			if (terms == null) {
+				throw new RuntimeException("'inputname' expects a 'terms' option");
+			}
+			termList = new ArrayList<>(terms);
 			dictionaryName = inputName();
 		} else if (testString != null) {
 			inputStream = new ByteArrayInputStream(testString.getBytes());
 			dictionaryName = "test";
 		}
 	
-		if (inputStream == null) {
+		if (inputStream == null && termList == null) {
 			throw new RuntimeException("'input' or 'inputname' must be given");
 		}
 		
 		readTerms(inputStream);
 		if (informat == null) return;
-		try { inputStream.close(); } catch (IOException ignored) {}
+		if (inputStream != null) {
+			try { inputStream.close(); } catch (IOException ignored) {}
+		}
 		synchroniseTermsAndNames();
 		dictionaryElement = DefaultAMIDictionary.createDictionaryWithTitle(dictionaryName);
 		

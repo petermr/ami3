@@ -28,6 +28,7 @@ import org.contentmine.ami.lookups.WikipediaLookup;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlA;
 import org.contentmine.graphics.html.HtmlElement;
+import org.contentmine.graphics.html.util.HtmlUtil;
 
 import nu.xom.Attribute;
 import nu.xom.Element;
@@ -593,19 +594,28 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 
 	public HtmlElement addWikipedia(Element entry) {
 		HtmlElement wikipediaPage = null;
+		URL wikipediaUrl = null;
 		try {
 			String name = entry.getAttributeValue("name");
 			if (name != null) {
 				name = name.replace(" ", "_");
-				URL wikipediaUrl = new URL(HTTPS_EN_WIKIPEDIA_ORG_WIKI + name);
+				wikipediaUrl = new URL(HTTPS_EN_WIKIPEDIA_ORG_WIKI + name);
 				InputStream is = wikipediaUrl.openStream();
-				Element element = XMLUtil.parseQuietlyToRootElement(is);
+				Element element = HtmlUtil.readTidyAndCreateElement(is);
+//				Element element = XMLUtil.parseQuietlyToRootElement(is);
 				wikipediaPage = element == null ? null : HtmlElement.create(element);
 			}
+		} catch (RuntimeException e) {
+			System.err.println("cannot parse "+wikipediaUrl);
+			throw e;
 		} catch (MalformedURLException e) {
 			throw new RuntimeException("bad URL ", e);
 		} catch (IOException e) {
-			// maybe skip? cannot find page
+			LOG.error("wikimedia IO exception");
+			throw new RuntimeException(e);
+		} catch (Exception e) {
+			LOG.error("wikimedia Exception");
+			throw new RuntimeException(e);
 		}
 		return wikipediaPage;
 	}
