@@ -1,6 +1,7 @@
 package org.contentmine.graphics.html;
 
 import java.io.File;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -461,6 +462,8 @@ public class HtmlFactory {
 			htmlElement = new HtmlBody();
 		} else if(HtmlBr.TAG.equalsIgnoreCase(tag)) {
 			htmlElement = new HtmlBr();
+		} else if(HtmlButton.TAG.equalsIgnoreCase(tag)) {
+			htmlElement = new HtmlButton();
 		} else if(HtmlCaption.TAG.equalsIgnoreCase(tag)) {
 			htmlElement = new HtmlCaption();
 		} else if(HtmlCode.TAG.equalsIgnoreCase(tag)) {
@@ -481,6 +484,8 @@ public class HtmlFactory {
 			htmlElement = new HtmlFigcaption();
 		} else if(HtmlFooter.TAG.equalsIgnoreCase(tag)) {
 			htmlElement = new HtmlFooter();
+		} else if(HtmlForm.TAG.equalsIgnoreCase(tag)) {
+			htmlElement = new HtmlForm();
 		} else if(HtmlFrame.TAG.equalsIgnoreCase(tag)) {
 			htmlElement = new HtmlFrame();
 		} else if(HtmlFrameset.TAG.equalsIgnoreCase(tag)) {
@@ -509,6 +514,8 @@ public class HtmlFactory {
 			htmlElement = new HtmlI();
 		} else if(HtmlImg.TAG.equalsIgnoreCase(tag)) {
 			htmlElement = new HtmlImg();
+		} else if(HtmlInput.TAG.equalsIgnoreCase(tag)) {
+			htmlElement = new HtmlInput();
 		} else if(HtmlLabel.TAG.equalsIgnoreCase(tag)) {
 			htmlElement = new HtmlLabel();
 		} else if(HtmlLi.TAG.equalsIgnoreCase(tag)) {
@@ -519,12 +526,16 @@ public class HtmlFactory {
 			htmlElement = new HtmlMeta();
 		} else if(HtmlNav.TAG.equalsIgnoreCase(tag)) {
 			htmlElement = new HtmlNav();
+		} else if(HtmlNoscript.TAG.equalsIgnoreCase(tag)) {
+			htmlElement = new HtmlNoscript();
 		} else if(HtmlOl.TAG.equalsIgnoreCase(tag)) {
 			htmlElement = new HtmlOl();
 		} else if(HtmlP.TAG.equalsIgnoreCase(tag)) {
 			htmlElement = new HtmlP();
 		} else if(HtmlS.TAG.equalsIgnoreCase(tag)) {
 			htmlElement = new HtmlS();
+		} else if(HtmlScript.TAG.equalsIgnoreCase(tag)) {
+			htmlElement = new HtmlScript();
 		} else if(HtmlSection.TAG.equalsIgnoreCase(tag)) {
 			htmlElement = new HtmlSection();
 		} else if(HtmlSmall.TAG.equalsIgnoreCase(tag)) {
@@ -585,7 +596,10 @@ public class HtmlFactory {
 		} else {
 			if (unknownTags == null) unknownTags = new HashSet<String>();
 			if (!unknownTags.contains(tag)) {
-//				LOG.error("unknown tag "+tag);
+				LOG.error("unknown tag "+tag);
+				if (tag.startsWith("ahref")) {
+					throw new RuntimeException("TRAP ahref");
+				}
 				unknownTags.add(tag);
 			}
 			htmlElement = new HtmlDiv();
@@ -615,7 +629,7 @@ public class HtmlFactory {
 	}
 
 	public HtmlElement parse(String xmlString) throws Exception {
-		InputStream is = IOUtils.toInputStream(xmlString);
+		InputStream is = IOUtils.toInputStream(xmlString, CMineUtil.UTF8_CHARSET);
 		return parse(is);
 	}
 	

@@ -171,7 +171,7 @@ public class DataTablesTool {
 	}
 
 	public void setTitle(String title) {
-		this.title = title;
+		this.title = title == null || title.trim().length() == 0 ? "??" : title;
 	}
 
 	public void setTableId(String id) {

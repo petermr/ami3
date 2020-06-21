@@ -5,13 +5,14 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.util.CMineUtil;
+import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlFactory;
@@ -43,6 +44,7 @@ public class HTMLTidy {
 	private boolean flattenNewline;
 	private boolean removeForeignPrefixes;
 	private boolean removeTidyFails = true;
+	private boolean removeInvisibleCharacters = true;
 
 	public HTMLTidy() {
 		tidy = createTidyWithOptions();
@@ -121,10 +123,31 @@ public class HTMLTidy {
 		return content2;
 	}
 
+	/** missing tags in HTMLTidy, convert to span 
+	 * 
+	 */
 	private static String removeTidyFails(String content) {
-		String content1 = content.replaceAll("<bdi>", "<span class='bdi'>"); // <xyz: ... />
-		String content2 = content1.replaceAll("</bdi>", "</span>"); // <xyz: ... />
-		return content2;
+		String[] tags = {"bdi", "nav", "footer"};
+		for (String tag : tags) {
+			content = convertToSpan(content, tag);
+		}
+		return content;
+	}
+
+	private static String convertToSpan(String content, String tag) {
+		int idx = -1;
+//		while (true) { // debug
+//			idx = content.indexOf(tag, idx + 1);
+//			if (idx == -1) break;
+//			System.err.println("?"+tag+"?"+idx+"?"+content.substring(idx-10, idx+10));
+//		}
+		// start tag - may have attributes and spaces
+		String content1 = content.replaceAll("<\\s*" + tag + "[^>]*>", "<span class='" + tag + "'>"); // <xyz: ... />
+		// end tag
+		String content2 = content1.replaceAll("</\\s*" + tag + "\\s*>", "</span>"); // <xyz: ... />
+		// start-end tag - may have attributes and spaces
+		String content3 = content2.replaceAll("<\\s*" + tag + "[^>]*>", "<span class='" + tag + "'/>"); // <xyz: ... />
+		return content3;
 	}
 
 	private static String normalizeWhitespace(String content) {
@@ -151,7 +174,12 @@ public class HTMLTidy {
 		if (stripDoctype) {
 			stripDoctype(sb);
 		}
-		if (removeXMLLang || flattenNewline || removeForeignPrefixes) {
+		if (removeXMLLang ||
+				flattenNewline ||
+				removeForeignPrefixes ||
+				removeTidyFails ||
+				removeInvisibleCharacters
+				) {
 			String s = sb.toString();
 			if (removeXMLLang) {
 				s = HTMLTidy.removeLangXMLLang(s);
@@ -165,10 +193,50 @@ public class HTMLTidy {
 			if (removeTidyFails) {
 				s = HTMLTidy.removeTidyFails(s);
 			}
+			if (removeInvisibleCharacters ) {
+				s = HTMLTidy.removeInvisibleCharacters(s);						
+			}
 			sb.replace(0, sb.length(), s);
 		}
 	}
-	
+
+	/**
+	 * 
+	 * Not sure this is true...
+	 * 
+	 * The â€Ž ( e2 20ac 17d ) is invisible in browsers and has no semantic role
+A <a href="/wiki/Q53997930" title="â€ŽMentholâ€Ž" data-serp-pos="1"><span class="wb-itemlink"><div class="spanclass=&quot;wb-itemlink-label&quot;_UNKNOWN" lang="en" dir="ltr"><div class="spanclass=&quot;searchmatch&quot;_UNKNOWN">
+Menthol</div></div></span> <div class="spanclass=&quot;wb-itemlink-id&quot;_UNKNOWN">
+(Q53997930)</div></a>?336?3c 61 20 68 72 65 66 3d 22 2f 77 69 6b 69 2f 51 35 33 39 39 37 39 33 30 22 20 74 69 74 6c 65 3d 22 e2 20ac 17d 4d 65 6e 74 68 6f 6c e2 20ac 17d 22 20 64 61 74 61 2d 73 65 72 70 2d 70 6f 73 3d 22 31 22 3e 3c 73 70 61 6e 20 63 6c 61 73 73 3d 22 77 62 2d 69 74 65 6d 6c 69 6e 6b 22 3e 3c 64 69 76 20 63 6c 61 73 73 3d 22 73 70 61 6e 63 6c 61 73 73 3d 26 71 75 6f 74 3b 77 62 2d 69 74 65 6d 6c 69 6e 6b 2d 6c 61 62 65 6c 26 71 75 6f 74 3b 5f 55 4e 4b 4e 4f 57 4e 22 20 6c 61 6e 67 3d 22 65 6e 22 20 64 69 72 3d 22 6c 74 72 22 3e 3c 64 69 76 20 63 6c 61 73 73 3d 22 73 70 61 6e 63 6c 61 73 73 3d 26 71 75 6f 74 3b 73 65 61 72 63 68 6d 61 74 63 68 26 71 75 6f 74 3b 5f 55 4e 4b 4e 4f 57 4e 22 3e a 4d 65 6e 74 68 6f 6c 3c 2f 64 69 76 3e 3c 2f 64 69 76 3e 3c 2f 73 70 61 6e 3e 20 3c 64 69 76 20 63 6c 61 73 73 3d 22 73 70 61 6e 63 6c 61 73 73 3d 26 71 75 6f 74 3b 77 62 2d 69 74 65 6d 6c 69 6e 6b 2d 69 64 26 71 75 6f 74 3b 5f 55 4e 4b 4e 4f 57 4e 22 3e a 28 51 35 33 39 39 37 39 33 30 29 3c 2f 64 69 76 3e 3c 2f 61 3e <a href="/wiki/Q53997930" title="â€ŽMentholâ€Ž" data-serp-pos="1"><span class="wb-itemlink"><div class="spanclass=&quot;wb-itemlink-label&quot;_UNKNOWN" lang="en" dir="ltr"><div class="spanclass=&quot;searchmatch&quot;_UNKNOWN">
+Menthol</div></div></span> <div class="spanclass=&quot;wb-itemlink-id&quot;_UNKNOWN">
+	 * @param s
+	 * @return
+	 */
+
+	/**
+	 * http://www.alanwood.net/unicode/general_punctuation.html
+	 * 
+	8203	‘​’	200B	 	ZERO WIDTH SPACE
+‌	8204	‌	200C	&zwnj;	ZERO WIDTH NON-JOINER
+‍	8205	‍	200D	&zwj;	ZERO WIDTH JOINER
+‎	8206	‎	200E	&lrm;	LEFT-TO-RIGHT MARK
+‏	8207	‏	200F	&rlm;	RIGHT-TO-LEFT MARK
+	 * @param s
+	 * @return
+	 */
+	private static String removeInvisibleCharacters(String s) {
+		String[] invisibles = {
+				String.valueOf((char) 8203),
+				String.valueOf((char) 8204),
+				String.valueOf((char) 8205),
+				String.valueOf((char) 8206),
+				String.valueOf((char) 8207),
+		};
+		for (String invis : invisibles) {
+			s = s.replaceAll(invis, "");
+		}
+		return s;
+	}
 
 	public boolean isRemoveForeignPrefixes() {
 		return removeForeignPrefixes;
@@ -245,31 +313,22 @@ public class HTMLTidy {
 	}
 
 	public String tidy(InputStream is) throws IOException {
-		StringBuilder sb = new StringBuilder(IOUtils.toString(is, Charset.forName("UTF-8")));
+		StringBuilder sb = new StringBuilder(IOUtils.toString(is, CMineUtil.UTF8_CHARSET));
 		preTidy(sb);
-		is = IOUtils.toInputStream(sb.toString(), Charset.forName("UTF-8"));
 		baos = new ByteArrayOutputStream();
-		node = tidy.parse(is, baos);
+		node = tidy.parse(CMineUtil.createUTF8Stream(sb.toString()), baos);
 		sb = new StringBuilder(baos.toString());
-		// currently postTidy repeats preTidy()
-		postTidy(sb);
 		String out = sb.toString();
-		LOG.trace("SB "+out);
-		baos = new ByteArrayOutputStream();
-		IOUtils.write(out.getBytes(), baos);
 		return out;
 	}
-	
+
 	public HtmlElement createHtmlElement(InputStream is) throws Exception {
 		String out = tidy(is);
+		FileUtils.write(new File("target/problem1.txt"), out,  CMineUtil.UTF8_CHARSET);
 		HtmlFactory htmlFactory = new HtmlFactory();
 		return htmlFactory.parse(out);
 	}
 	
-	private void postTidy(StringBuilder sb) {
-		preTidy(sb);
-	}
-
 	public void addTagReplacement(HTMLTagReplacement tagReplacement) {
 		if (tagReplacementList == null) {
 			tagReplacementList = new ArrayList<HTMLTagReplacement>();
@@ -310,5 +369,6 @@ public class HTMLTidy {
 		getTidy().setDocType(null);
 		setFlattenNewline(true);
 		removeTidyFails = true;
+		removeInvisibleCharacters = true;
 	}
 }

@@ -567,12 +567,16 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 				if (wikiResult != null) {
 					XMLUtil.addNonNullAttribute(entry, WIKIDATA, wikiResult.getQString());
 					XMLUtil.addNonNullAttribute(entry, DictionaryTerm.NAME, wikiResult.getLabel());
-					XMLUtil.addNonNullAttribute(entry, DictionaryTerm.DESCRIPTION, wikiResult.getDescription());
+					String description = wikiResult.getDescription();
+					if (description != null) {
+						XMLUtil.addNonNullAttribute(entry, DictionaryTerm.DESCRIPTION, description);
+					}
 				} else {
 					missingWikidataSet.add(term);
 				}
 			}
 		} catch (Exception e) {
+			e.printStackTrace();
 			System.err.println("Cannot add entry: "+e.getMessage());
 		}
 	}
@@ -583,7 +587,7 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 			wikipediaPage = addWikipedia(entry);
 		}
 		if (wikipediaPage == null) {
-			System.err.print("!");
+			System.err.print("!WP");
 			missingWikipediaSet.add(term);
 		} else {
 			entry.addAttribute(new Attribute(WIKIPEDIA, term));
@@ -597,11 +601,16 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 		URL wikipediaUrl = null;
 		try {
 			String name = entry.getAttributeValue("name");
+System.out.println(entry.toXML());			
 			if (name != null) {
 				name = name.replace(" ", "_");
 				wikipediaUrl = new URL(HTTPS_EN_WIKIPEDIA_ORG_WIKI + name);
+				System.out.println(wikipediaUrl);
 				InputStream is = wikipediaUrl.openStream();
 				Element element = HtmlUtil.readTidyAndCreateElement(is);
+				File xmlFile = new File("target/wikipedia/"+name+".html");
+				System.err.println("writing "+xmlFile);
+				XMLUtil.writeQuietly(element, xmlFile, 1);
 //				Element element = XMLUtil.parseQuietlyToRootElement(is);
 				wikipediaPage = element == null ? null : HtmlElement.create(element);
 			}

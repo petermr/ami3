@@ -59,6 +59,10 @@ public class CMineUtil {
 	public static final String PDF_TYPE = "text/pdf";
 	public static final String UTF_8 = "UTF-8";
 	public final static Charset UTF8_CHARSET = Charset.forName(UTF_8);
+	public static final String CP1252 = "CP1252";
+	public final static Charset CP1252_CHARSET = Charset.forName(CP1252);
+	public static final String ISO_8859_1 = "ISO-8859-1";
+	public final static Charset ISO_8859_1_CHARSET = Charset.forName(ISO_8859_1);
 
 	/** sort entrySet by count.
 	 * convenience method.
@@ -332,6 +336,15 @@ public class CMineUtil {
 		int idx = prefix.indexOf("/");
 		prefix = prefix.substring(0,  idx);
 		return prefix;
+	}
+
+	/** forces use of UTF-8
+	 * 
+	 * @param s
+	 * @return
+	 */
+	public static InputStream createUTF8Stream(String s) {
+		return IOUtils.toInputStream(s, CMineUtil.UTF8_CHARSET);
 	}
 	
 }

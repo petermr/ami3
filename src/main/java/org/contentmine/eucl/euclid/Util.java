@@ -54,7 +54,9 @@ import java.util.HashSet;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
+import java.util.Queue;
 import java.util.Set;
+import java.util.Stack;
 import java.util.StringTokenizer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -63,13 +65,10 @@ import java.util.stream.Collectors;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;
-import org.contentmine.eucl.xml.XMLUtil;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
-
-import nu.xom.Element;
 
 
 /**
@@ -1971,6 +1970,10 @@ s = s.replaceAll("(?U)\\s+", replace);
 			if (c == 8204 || c == 160) {
 				c = ' ';
 			} else if (c == 8205) {
+				// omit Zero width
+				c = -1;
+			} else if (c == 8206 || c == 8207) {
+				// omit LRM and RLM
 				c = -1;
 			} else if (c == 8211 || c == 8212) {
 				c = '-';
@@ -3471,9 +3474,50 @@ s = s.replaceAll("(?U)\\s+", replace);
         }
 	}
 
+	/** strip short substrings. 
+	 * DO NOT USE unless you are desperate
+	 * was created to look for bytes in bad encodings
+	 * @param s
+	 * @param toStrip
+	 * @return
+	 */
+	public static String stripString(String s, String toStrip) {
+		char[] stripChars = toStrip.toCharArray();
+		return stripChars(s, stripChars);
+	}
 
+	/** strip short substrings. 
+	 * DO NOT USE unless you are desperate
+	 * was created to look for bytes in bad encodings
+	 * @param s
+	 * @param toStrip
+	 * @return
+	 */
+	public static String stripChars(String s, char[] stripChars) {
+		int imain = 0;
+		StringBuilder sb = new StringBuilder();
+		while (imain < s.length()) {
+			if (match(s, imain, stripChars)) {
+				imain += stripChars.length;
+			} else {
+				sb.append(s.charAt(imain++));
+			}
+		}
+		return sb.toString();
+	}
+	
+	private static boolean match(String s, int imain, char[] chars) {
+		if (s.length() < imain + chars.length) return false;
+		for (int ptr = 0; ptr < chars.length; ptr++) {
+			if (s.charAt(imain + ptr) != (chars[ptr])) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	
 }
-
 
 class StringIntegerComparator implements Comparator<Object> {
 	public int compare(Object o1, Object o2) {

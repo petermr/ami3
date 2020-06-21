@@ -34,6 +34,7 @@ import java.util.List;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.CHESConstants;
+import org.contentmine.eucl.euclid.Converter1252UTF8;
 import org.contentmine.eucl.euclid.EuclidConstants;
 import org.contentmine.eucl.euclid.EuclidRuntimeException;
 import org.contentmine.eucl.euclid.Int;
@@ -50,6 +51,7 @@ import org.junit.Test;
  */
 public class UtilTest {
 	private static final Logger LOG = Logger.getLogger(UtilTest.class);
+//	private String s;
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
@@ -881,4 +883,39 @@ public class UtilTest {
 		Assert.assertEquals("abcDef", Util.hyphensToLowerCamelCase("abc-def"));
 		Assert.assertEquals("AbcDef", Util.hyphensToUpperCamelCase("abc-def"));
 	}
+	
+	@Test
+	/** don't use. This is only for me to fing my way through mojibake
+	 * 
+	 */
+	public void testStripString() {
+		Assert.assertEquals("strip",  "aef", Util.stripString("aef", "bcd"));
+		Assert.assertEquals("strip",  "aef", Util.stripString("abcdef", "bcd"));
+		Assert.assertEquals("strip",  "abcefg", Util.stripString("abcbcdxyzefg", "bcdxyz"));
+	}
+	
+	@Test
+	public void testStripChars() {
+		Assert.assertEquals("strip",  "aef", Util.stripChars("aef", "bcd".toCharArray()));
+		Assert.assertEquals("strip",  "aef", Util.stripChars("abcdef", "bcd".toCharArray()));
+		Assert.assertEquals("strip",  "abcefg", Util.stripChars("abcbcdxyzefg", "bcdxyz".toCharArray()));
+		Assert.assertEquals("strip",  "abcefg", Util.stripChars("abcbcdxyzefg", "bcdxyz".toCharArray()));
+		Assert.assertEquals("mojibake", "Thymol | german", 
+				Util.stripChars("â€ŽThymolâ€Ž | â€Žgerman", "â€Ž".toCharArray()));
+		Assert.assertEquals("mojibake", "Thymol | german", 
+				Util.stripChars("â€ŽThymolâ€Ž | â€Žgerman", 
+					new char[] {"â".charAt(0), "€".charAt(0), "Ž".charAt(0)}));
+	}
+
+	@Test
+	public void testGetEquivalenceByMultibyte() {
+		Assert.assertEquals("equiv", "", Converter1252UTF8.convertMultibyteToUTF8("â€Ž"));
+		Assert.assertEquals("equiv", "£", Converter1252UTF8.convertMultibyteToUTF8("Â£"));
+	}
+	
+	@Test void testGetLeadingCharacter() {
+		Assert.assertEquals("leading", "", Converter1252UTF8.getLeadingCharacters());
+	}
+		
+
 }

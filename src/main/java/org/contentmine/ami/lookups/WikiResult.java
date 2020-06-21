@@ -108,6 +108,7 @@ public class WikiResult {
 			} else {
 				item = qpString;
 			}
+//			System.out.println("WIKICHARS "+chars(a)+a.toXML());
 			title = a.getTitle();
 			int idx = title.indexOf("|");
 			label = idx == -1 ? "" : title.substring(0, idx).trim();
@@ -120,6 +121,15 @@ public class WikiResult {
 					"./" + HtmlUtil.elem(HtmlSpan.TAG));
 			description = (span == null) ? null : span.getValue();
 		}
+	}
+
+	private String chars(HtmlA a) {
+		String s = a.toXML();
+		StringBuilder sb = new StringBuilder(s+"?"+s.length()+"?");
+		for (int i = 0; i < s.length(); i++) {
+			sb.append(Integer.toHexString((int)s.charAt(i))+ " ");
+		}
+		return sb.toString();
 	}
 
 	public String getDescription() {

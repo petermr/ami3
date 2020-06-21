@@ -135,12 +135,14 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 
 	@Option(names = {"--query"}, 
 			arity="0..1",
-		    defaultValue="10",
+//		    defaultValue="10",
 		    paramLabel = "query",
 			description = "generate query for cut and paste into EPMC or similar. "
 					+ "value sets size of chunks (too large crashes EPMC). If missing, no query generated."
+					+ "Not very useful."
 			)
 	private Integer queryChunk = null;
+	
     @Option(names = {"--template"}, 
     		arity="1..*",
     		description = "names of Wikipedia Templates, e.g. Viral_systemic_diseases "

@@ -1,11 +1,14 @@
 package org.contentmine.graphics.html.util;
 
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.StringWriter;
 import java.net.URL;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -121,6 +124,11 @@ public class HtmlUtil {
 	}
 
 	public static HtmlElement readTidyAndCreateElement(InputStream is) throws Exception {
+		return new HTMLTidy().createHtmlElement(is);
+	}
+	
+	public static HtmlElement readTidyAndCreateElement(String s) throws Exception {
+		InputStream is = new ByteArrayInputStream(s.getBytes(CMineUtil.UTF8_CHARSET));
 		return new HTMLTidy().createHtmlElement(is);
 	}
 	
@@ -467,6 +475,14 @@ public class HtmlUtil {
 		return XMLUtil.removeTags("script", s);
 	}
 	
+	/**
+line 1 column 47,490 - Error: <bdi> is not recognized!
+line 1 column 52,091 - Error: <bdi> is not recognized!
+line 1 column 56,119 - Error: <bdi> is not recognized!
+line 1 column 57,388 - Error: <bdi> is not recognized!
+line 1 column 58,556 - Error: <bdi> is not recognized!
+This document has errors that must be fixed before
+using HTML Tidy to generate a tidied up version.	 */
 
 
 }

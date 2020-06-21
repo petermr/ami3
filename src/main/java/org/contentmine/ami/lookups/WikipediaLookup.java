@@ -2,15 +2,18 @@ package org.contentmine.ami.lookups;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
@@ -28,8 +31,8 @@ import org.contentmine.graphics.html.HtmlFactory;
 import org.contentmine.graphics.html.HtmlHtml;
 import org.contentmine.graphics.html.HtmlLi;
 import org.contentmine.graphics.html.HtmlUl;
+import org.contentmine.graphics.html.util.HtmlUtil;
 
-import com.google.common.collect.BiMap;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonSyntaxException;
@@ -387,8 +390,25 @@ species of bird
 	    return parser.parse(json);
 	}
 	private HtmlBody getHtmlBodyFromUrl(URL url) throws IOException {
-		String htmlS = this.getResponse(url);
-		HtmlHtml htmlElement = (HtmlHtml) new HtmlFactory().parse(XMLUtil.parseXML(htmlS));
+		boolean htmlFactory = true;
+		htmlFactory = false;
+		HtmlHtml htmlElement = null;
+		try {
+			if (htmlFactory) {
+				String htmlS = this.getResponse(url);
+				FileUtils.write(new File("target/dictionary/wikipedia/wikidata.txt"), htmlS, CMineUtil.UTF8_CHARSET);
+				htmlElement = (HtmlHtml) HtmlUtil.readTidyAndCreateElement(htmlS);
+	//			htmlElement = (HtmlHtml) new HtmlFactory().parse(XMLUtil.parseXML(htmlS));
+			} else {
+//				System.err.println("Reading from "+url);
+				InputStream is = url.openStream();
+				htmlElement = null;
+				htmlElement = (HtmlHtml) HtmlUtil.readTidyAndCreateElement(is);
+				is.close();
+			}
+		} catch (Exception e) {
+			throw new RuntimeException("cannot parse HTML "+e, e);
+		}
 		return htmlElement.getBody();
 	}
 
@@ -418,6 +438,13 @@ species of bird
 			LOG.debug("URL "+e);
 			return liList;
 		}
+		boolean outputQuery = false; // needs to link into Tools
+		if (outputQuery) {
+			String filename = query.replaceAll("\\s+", "_");
+			File file = new File("target/wikipedia/query/" + filename + ".html");
+			System.out.println("wrote query result (" + query + ") "+file);
+			XMLUtil.writeQuietly(htmlBody, file, 1);
+		}
 		/**
 	  <div class="searchresults">
 		  <p class="mw-search-createlink"> </p>
@@ -425,7 +452,8 @@ species of bird
 		 */
 		
 		List<Element> elements = XMLUtil.getQueryElements(htmlBody, 
-				".//*[local-name()='div' and @class='searchresults']/*[local-name()='ul' and @class='mw-search-results']");
+				".//*[local-name()='div' and @class='searchresults']"
+				+ "/*[local-name()='ul' and @class='mw-search-results']");
 		HtmlUl searchResultsUl = elements.size() == 0 ? null : (HtmlUl) elements.get(0);
 		
 		/**
@@ -450,7 +478,8 @@ species of bird
 		if (searchResultsUl != null) {
 			liList = AbstractCMElement.getChildElements(searchResultsUl, HtmlLi.TAG); 
 			for (HtmlElement li : liList) {
-				HtmlA a = (HtmlA)li.getChild(0).getChild(0);
+				// seems a no-op
+//				HtmlA a = (HtmlA)li.getChild(0).getChild(0);
 			}
 		} else {
 		}
