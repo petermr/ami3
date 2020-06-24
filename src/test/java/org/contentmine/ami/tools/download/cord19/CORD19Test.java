@@ -10,6 +10,7 @@ import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.AbstractAMITest;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlElement;
 import org.junit.Assert;
@@ -130,7 +131,7 @@ public class CORD19Test extends AbstractAMITest {
 		File jsonFile = new File(BIORXIV_MEDRXIV, "b801b7f92cff2155d98f0e3404229c67b60e2f9f.json");
 		JsonObject rootObject = null;
 		try {
-			String resultsJsonString = IOUtils.toString(new FileInputStream(jsonFile), "UTF-8");
+			String resultsJsonString = IOUtils.toString(new FileInputStream(jsonFile), CMineUtil.UTF8_CHARSET);
 		    JsonParser parser = new JsonParser();
 		    rootObject = (JsonObject) parser.parse(resultsJsonString);
 		} catch (Exception e) {
@@ -190,7 +191,7 @@ public class CORD19Test extends AbstractAMITest {
 		File jsonFile = new File(BIORXIV_MEDRXIV, "b801b7f92cff2155d98f0e3404229c67b60e2f9f.json");
 		JsonObject rootObject = null;
 		try {
-			String resultsJsonString = IOUtils.toString(new FileInputStream(jsonFile), "UTF-8");
+			String resultsJsonString = IOUtils.toString(new FileInputStream(jsonFile), CMineUtil.UTF8_CHARSET);
 		    JsonParser parser = new JsonParser();
 		    rootObject = (JsonObject) parser.parse(resultsJsonString);
 		} catch (Exception e) {

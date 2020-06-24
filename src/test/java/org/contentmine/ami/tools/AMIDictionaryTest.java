@@ -60,48 +60,44 @@ public class AMIDictionaryTest extends AbstractAMITest {
 				+ " --input=" + categoryString 
 				+ " create"
 				+ " --informat=wikicategory";
-		DictionaryCreationTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
+		AbstractAMIDictTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
 	}
 	
 	// CREATE
 	@Test
-	/** this command fails to read Wikipedia, perhaps because of a format change
+	/** creates  mini dictionary with wikipedia and wikidata links where possible
 	 * 
 	 */
 	public void testCreateWikipedia() {
-		String cmd = " -v"
+		String cmd = " -vv"
 				+ " --dictionary myterpenes"
 				+ " --directory=target/dictionary/create"
 				+ " --inputname miniterpenes"
 				+ " create"
 				+ " --wikilinks wikidata wikipedia"
-				+ " --terms thymol menthol borneol junkolol "
+				+ " --terms thymol "
+				+ " menthol borneol"
+				+ " junkolol "
 				+ " --informat list"
 				+ " --outformats xml"		
 				;
-		DictionaryCreationTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
+		AbstractAMIDictTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
 	}
 	
 	// *===============================
 	@Test
+	// debugging encoding - will probably scrap
 	public void testRawWikidata() throws Exception {
-//		URL url = new URL("https://www.wikidata.org/w/index.php?search=thymol&search=thymol&title=Special%3ASearch&go=Go&ns0=1&ns120=1");
 		URL url = new URL("https://www.wikidata.org/w/index.php?search=thymol");
 		InputStream is = url.openStream();
 		String s;
-//		s = IOUtils.toString(is);
 		s = IOUtils.toString(is, CMineUtil.UTF8_CHARSET);
+		// remove LRM character 
 		s = s.replaceAll(String.valueOf((char)8206), "");
-//		s = IOUtils.toString(is, CMineUtil.CP1252_CHARSET);
-//		s = IOUtils.toString(is, CMineUtil.ISO_8859_1_CHARSET);
-//		IOUtils.write(s, new FileOutputStream("target/wikipedia/wikidata.html"), CMineUtil.UTF8_CHARSET);
-//		IOUtils.write(s, new FileOutputStream("target/wikipedia/wikidata.txt"), CMineUtil.UTF8_CHARSET);
 		int idx0 = 0;
 		String f;
 		f = "â";
 		f = "hymol";
-//		System.out.println("l "+s.length());
-//		s = s.replaceAll(""+(char) 8206, "");
 		while (true) { 
 			int idx = s.substring(idx0).indexOf(f);
 			if (idx == -1) {

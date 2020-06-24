@@ -14,6 +14,7 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.DebugPrint;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.pdf2svg2.PDFDocumentProcessor;
 import org.contentmine.pdf2svg2.PageParserRunner;
@@ -231,7 +232,7 @@ public class AMIPDFTool extends AbstractAMITool {
 		PDFTextStripper textStripper = new PDFTextStripper();
 		String text = textStripper.getText(document);
 		File textFile = getTextFile();
-		IOUtils.write(text, new FileOutputStream(textFile), "UTF-8");
+		IOUtils.write(text, new FileOutputStream(textFile), CMineUtil.UTF8_CHARSET);
 		System.out.println("wrote "+textFile.getAbsoluteFile());
 	}
 

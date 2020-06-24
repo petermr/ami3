@@ -11,6 +11,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlFactory;
 import org.contentmine.graphics.html.util.JsoupWrapper;
@@ -91,7 +92,7 @@ public class JsoupWrapperTest {
 	@Test
 	@Ignore // entities
 	public void testBad1() throws Exception {
-		String ss = JsoupWrapper.parseAndCorrect(IOUtils.toString(new FileInputStream(new File(Fixtures.HTML_DIR, "badHtml1a.html"))));
+		String ss = JsoupWrapper.parseAndCorrect(IOUtils.toString(new FileInputStream(new File(Fixtures.HTML_DIR, "badHtml1a.html")), CMineUtil.UTF8_CHARSET));
 		ss = ss.replaceAll("&nbsp;", " ");
 		ss = ss.replaceAll("&aacute;", "#aacute");
 		ss = ss.replaceAll("&eacute;", "#eacute");
@@ -110,7 +111,7 @@ public class JsoupWrapperTest {
 	@Test
 	@Ignore
 	public void testXML() throws Exception {
-		String s = IOUtils.toString(new FileInputStream(new File(Fixtures.HTML_DIR, "badHtml1a.html")));
+		String s = IOUtils.toString(new FileInputStream(new File(Fixtures.HTML_DIR, "badHtml1a.html")), CMineUtil.UTF8_CHARSET);
 		String ss = Jsoup.parse(s).html();
 		FileUtils.writeStringToFile(new File("target/bad"+new DateTime().getMillisOfDay()+".html"), ss);
 		ss = ss.replaceAll("&nbsp;", " ");
@@ -138,7 +139,7 @@ public class JsoupWrapperTest {
 	@Ignore
 	public void testBMC() throws Exception {
 		URL url = new URL("http://www.biomedcentral.com/1471-2229/14/106");
-		String ss = IOUtils.toString(url.openStream());
+		String ss = IOUtils.toString(url.openStream(), CMineUtil.UTF8_CHARSET);
 		HtmlFactory htmlFactory = new HtmlFactory();
 		htmlFactory.addTagToDelete("script");
 		htmlFactory.addTagToDelete("button");

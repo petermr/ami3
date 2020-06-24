@@ -22,6 +22,7 @@ import org.contentmine.ami.tools.template.ImageTemplateElement;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.util.CMineGlobber;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlDiv;
@@ -452,7 +453,7 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 				AnnotatedImage a;
 				File annotateFile = new File(imageDir, FilenameUtils.getBaseName(imageFile.toString()) + ".annot" + "." + "html");
 				try {
-					FileUtils.write(annotateFile, "annotate", "UTF-8");
+					FileUtils.write(annotateFile, "annotate", CMineUtil.UTF_8);
 					System.err.print(">ann>");
 				} catch (IOException e) {
 					LOG.error("cannot write "+annotateFile);

@@ -374,7 +374,7 @@ public class DataTablesTool {
 				+ "var node = document.getElementById('footer-id');\n"
 				+ "node.innerHTML('<p>some dynamic html</p>');";
 		HtmlScript script = new HtmlScript();
-		script.setCharset("UTF-8");
+		script.setCharset(CMineUtil.UTF_8);
 		script.setType("text/javascript");
 		script.appendChild(scriptString);
 		body.appendChild(script);

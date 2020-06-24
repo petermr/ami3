@@ -8,6 +8,7 @@ import java.util.List;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlDiv;
@@ -124,7 +125,7 @@ public class HtmlTabbedButtonDisplay extends HtmlHtml {
 			throw new RuntimeException("null input stream: "+resource);
 		}
 		try {
-			buttonStyleContent = IOUtils.toString(buttonStyleStream);
+			buttonStyleContent = IOUtils.toString(buttonStyleStream, CMineUtil.UTF8_CHARSET);
 		} catch (IOException e) {
 			LOG.debug("Cannot read "+resource+" in "+HtmlTabbedButtonDisplay.class+"; "+e.getMessage());
 		}

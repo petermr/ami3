@@ -22,6 +22,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -34,10 +35,10 @@ import java.util.regex.Pattern;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.graphics.html.HtmlB;
 import org.contentmine.graphics.html.HtmlElement;
-import org.contentmine.graphics.html.HtmlHtml;
 import org.contentmine.graphics.html.HtmlI;
 import org.contentmine.graphics.html.HtmlSub;
 import org.contentmine.graphics.html.HtmlSup;
@@ -298,7 +299,7 @@ public abstract class XMLUtil implements XMLConstants {
 				Element copyElem = new Element(el);
 				document = new Document(copyElem);
 			}
-			Serializer serializer = new Serializer(os, "UTF-8");
+			Serializer serializer = new Serializer(os, CMineUtil.UTF_8);
 			if (indent >= 0) {
 				serializer.setIndent(indent);
 			}
@@ -1505,7 +1506,7 @@ public abstract class XMLUtil implements XMLConstants {
 	public static Document parseQuietlyToDocumentWithoutDTD(File file) {
 		Document doc = null;
 		try (FileInputStream fis = new FileInputStream(file)) {
-			String s = IOUtils.toString(fis);
+			String s = IOUtils.toString(fis, CMineUtil.UTF8_CHARSET);
 			doc = XMLUtil.stripDTDAndOtherProblematicXMLHeadings(s);
 		} catch (IOException e) {
 			throw new RuntimeException(e);

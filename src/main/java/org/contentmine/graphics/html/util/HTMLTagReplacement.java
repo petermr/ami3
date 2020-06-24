@@ -31,6 +31,7 @@ public class HTMLTagReplacement {
 		this(oldTag, null);
 	}
 	
+		
 	public void replaceAll(StringBuilder sb) {
 		this.sb = sb;
 		int ptr = 0;

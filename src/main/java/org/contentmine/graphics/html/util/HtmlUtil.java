@@ -74,7 +74,7 @@ public class HtmlUtil {
 	 */
 	@Deprecated // use HtmlFactory
 	public static HtmlElement readAndCreateElementUsingJsoup(InputStream is) throws Exception {
-		String s = IOUtils.toString(is, "UTF-8");
+		String s = IOUtils.toString(is, CMineUtil.UTF8_CHARSET);
 		org.jsoup.nodes.Document doc = Jsoup.parse(s);
 		String xmlDoc = doc.html();
 		HtmlElement htmlElement = null;

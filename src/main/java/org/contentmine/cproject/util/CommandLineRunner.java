@@ -31,7 +31,7 @@ public class CommandLineRunner {
         } catch (IOException e) {
         	CMineUtil.catchUninstalledProgram(e, command);
         }
-        return IOUtils.toString(process.getInputStream());
+        return IOUtils.toString(process.getInputStream(), CMineUtil.UTF8_CHARSET);
 
 	}
 

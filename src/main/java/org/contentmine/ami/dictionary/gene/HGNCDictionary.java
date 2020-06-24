@@ -16,6 +16,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
 import org.contentmine.ami.dictionary.DictionaryTerm;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.norma.NAConstants;
 
 import com.google.gson.JsonArray;
@@ -69,7 +70,7 @@ public class HGNCDictionary extends DefaultAMIDictionary {
 		try {
 			createFromInputStream(HGNC, this.getClass().getClassLoader().getResourceAsStream(
 					NAConstants.GENE_HGNC+"/hgnc_complete_set.json"));
-			String resultsJsonString = IOUtils.toString(inputStream, UTF_8);
+			String resultsJsonString = IOUtils.toString(inputStream, CMineUtil.UTF8_CHARSET);
 		    JsonParser parser = new JsonParser();
 		    hgncJson = (JsonObject) parser.parse(resultsJsonString);
 		    try {

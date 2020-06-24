@@ -20,6 +20,7 @@ import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.ResultElement;
 import org.contentmine.cproject.files.ResultsElement;
 import org.contentmine.cproject.util.CMineTestFixtures;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlA;
 import org.contentmine.graphics.html.HtmlElement;
@@ -93,7 +94,7 @@ public class RegexPluginTest {
 		CMineTestFixtures.cleanAndCopyDir(AMIFixtures.TEST_BMC_15_1_511_CMDIR, target);
 		File normaTemp = new File("target/bmc/regex/15_1_511_test");
 		String regexFile = NAConstants.MAIN_AMI_DIR+"/regex/common.xml";
-		LOG.debug(">"+regexFile+"/"+IOUtils.toString(new FileInputStream(regexFile)));
+		LOG.debug(">"+regexFile+"/"+IOUtils.toString(new FileInputStream(regexFile), CMineUtil.UTF8_CHARSET));
 		String args = 
 				"-q "+normaTemp.toString()
 				+" -i scholarly.html"

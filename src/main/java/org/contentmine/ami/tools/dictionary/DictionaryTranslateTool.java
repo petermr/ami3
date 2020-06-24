@@ -10,7 +10,6 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.dictionary.CMJsonDictionary;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
-import org.contentmine.ami.tools.AMIDictionaryToolOLD;
 import org.contentmine.ami.tools.AbstractAMIDictTool;
 import org.contentmine.eucl.xml.XMLUtil;
 

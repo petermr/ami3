@@ -92,7 +92,7 @@ public class ChromeHeadlessBrowser {
 
 	private void write(File file) {
 		try {
-			FileUtils.write(file, result, "UTF-8");
+			FileUtils.write(file, result,  CMineUtil.UTF_8);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

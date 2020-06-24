@@ -165,39 +165,42 @@ public class HTMLTidy {
 		return content;
 	}
 
-	private void preTidy(StringBuilder sb) {
+	private String preTidy(String s) {
+		StringBuilder sb = new StringBuilder(s);
 		if (tagReplacementList != null) {
 			for (HTMLTagReplacement tagReplacement : tagReplacementList) {
 				tagReplacement.replaceAll(sb);
 			}
 		}
+		s = sb.toString();
 		if (stripDoctype) {
-			stripDoctype(sb);
+			s = stripDoctype(s);
 		}
-		if (removeXMLLang ||
-				flattenNewline ||
-				removeForeignPrefixes ||
-				removeTidyFails ||
-				removeInvisibleCharacters
-				) {
-			String s = sb.toString();
-			if (removeXMLLang) {
-				s = HTMLTidy.removeLangXMLLang(s);
-			}
-			if (flattenNewline) {
-				s = HTMLTidy.flattenNewline(s);
-			}
-			if (removeForeignPrefixes) {
-				s = HTMLTidy.removeForeignNamespacePrefixes(s);
-			}
-			if (removeTidyFails) {
-				s = HTMLTidy.removeTidyFails(s);
-			}
-			if (removeInvisibleCharacters ) {
-				s = HTMLTidy.removeInvisibleCharacters(s);						
-			}
-			sb.replace(0, sb.length(), s);
+//		if (removeXMLLang ||
+//				flattenNewline ||
+//				removeForeignPrefixes ||
+//				removeTidyFails ||
+//				removeInvisibleCharacters
+//				) {
+//			String s = sb.toString();
+		if (removeXMLLang) {
+			s = HTMLTidy.removeLangXMLLang(s);
 		}
+		if (flattenNewline) {
+			s = HTMLTidy.flattenNewline(s);
+		}
+		if (removeForeignPrefixes) {
+			s = HTMLTidy.removeForeignNamespacePrefixes(s);
+		}
+		if (removeTidyFails) {
+			s = HTMLTidy.removeTidyFails(s);
+		}
+		if (removeInvisibleCharacters ) {
+			s = HTMLTidy.removeInvisibleCharacters(s);						
+		}
+//			sb.replace(0, sb.length(), s);
+//		
+		return s;
 	}
 
 	/**
@@ -258,6 +261,10 @@ Menthol</div></div></span> <div class="spanclass=&quot;wb-itemlink-id&quot;_UNKN
 		this.flattenNewline = flattenNewline;
 	}
 
+	public static String stripDoctype(String s) {
+		return s.replaceFirst("<!DOCTYPE[^>]*>", "");
+	}
+
 	public static void stripDoctype(StringBuilder sb) {
 		int idx0 = sb.indexOf("<!DOCTYPE");
 		if (idx0 != -1) {
@@ -313,18 +320,20 @@ Menthol</div></div></span> <div class="spanclass=&quot;wb-itemlink-id&quot;_UNKN
 	}
 
 	public String tidy(InputStream is) throws IOException {
-		StringBuilder sb = new StringBuilder(IOUtils.toString(is, CMineUtil.UTF8_CHARSET));
-		preTidy(sb);
+		String inputString = IOUtils.toString(is, CMineUtil.UTF8_CHARSET);
+//		StringBuilder sb = new StringBuilder(inputString);
+		inputString = preTidy(inputString);
 		baos = new ByteArrayOutputStream();
-		node = tidy.parse(CMineUtil.createUTF8Stream(sb.toString()), baos);
-		sb = new StringBuilder(baos.toString());
-		String out = sb.toString();
+		node = tidy.parse(CMineUtil.createUTF8Stream(inputString), baos);
+//		sb = new StringBuilder(baos.toString());
+		String out = baos.toString();
 		return out;
 	}
 
 	public HtmlElement createHtmlElement(InputStream is) throws Exception {
+		LOG.trace("createHtmlElement");
 		String out = tidy(is);
-		FileUtils.write(new File("target/problem1.txt"), out,  CMineUtil.UTF8_CHARSET);
+//		FileUtils.write(new File("target/problem1.txt"), out,  CMineUtil.UTF8_CHARSET);
 		HtmlFactory htmlFactory = new HtmlFactory();
 		return htmlFactory.parse(out);
 	}

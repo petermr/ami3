@@ -1,13 +1,11 @@
 package org.contentmine.ami.tools.dictionary;
 
-import static org.junit.Assert.assertThrows;
-
 import java.io.ByteArrayInputStream;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -19,19 +17,19 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.IOUtils;
+
 import org.apache.log4j.Level;
+import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+
 import org.contentmine.ami.dictionary.CMJsonDictionary;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
 import org.contentmine.ami.dictionary.DictionaryTerm;
 import org.contentmine.ami.lookups.WikipediaDictionary;
 import org.contentmine.ami.tools.AMIDict;
-import org.contentmine.ami.tools.AMIDictionaryToolOLD;
 import org.contentmine.ami.tools.AbstractAMIDictTool;
-import org.contentmine.ami.tools.AbstractAMIDictTool.InputFormat;
-import org.contentmine.ami.tools.AbstractAMIDictTool.WikiFormat;
-import org.contentmine.ami.tools.AbstractAMIDictTool.WikiLink;
 import org.contentmine.ami.tools.download.CurlDownloader;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.cproject.util.RectTabColumn;
 import org.contentmine.cproject.util.RectangularTable;
 import org.contentmine.eucl.euclid.Util;
@@ -65,7 +63,8 @@ import picocli.CommandLine.Option;
 		})
 public class DictionaryCreationTool extends AbstractAMIDictTool {
 
-	public static final Logger LOG = Logger.getLogger(DictionaryCreationTool.class);
+	public static final Logger LOG = LogManager.getLogger(DictionaryCreationTool.class);
+//	public static final Logger LOG = Logger.getLogger(DictionaryCreationTool.class);
 	static {
 		LOG.setLevel(Level.DEBUG);
 	}
@@ -196,7 +195,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		}
 		if (this.testString != null) {
 			this.testString = this.testString.replaceAll("%20", " ");
-			System.out.println("testString      "+this.testString);
+			amiDebug(Level.DEBUG, "testString      "+this.testString);
 		}
 		dictOutformat = (this.outformats == null || this.outformats.length != 1) ? null : this.outformats[0];
 		wikiLinkList = (this.wikiLinks == null) ? new ArrayList<WikiLink>() :
@@ -248,7 +247,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 			List<String> missingLinkList = new ArrayList<String>(missingLinkSet);
 			Collections.sort(missingLinkList);
 			int i = 0;
-			System.out.println("\n"+title + ":");
+			amiDebug(Level.DEBUG, "\n"+title + ":");
 			for (String missingLink : missingLinkList) {
 				if (i++ % 8 == 0) {
 					System.out.println();
@@ -274,7 +273,6 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 			inputStream = getInputStreamFromFile();
 			dictionaryName = input();
 		} else if (inputName() != null) {
-//			inputStream = new ByteArrayInputStream(inputName().getBytes(Charset.forName("UTF-8")));
 			if (terms == null) {
 				throw new RuntimeException("'inputname' expects a 'terms' option");
 			}
@@ -301,8 +299,9 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	}
 
 	private void readTerms(InputStream inputStream) {
+		amiDebug(Level.DEBUG, "readTerms");
 		if (termList != null) {
-			LOG.debug("reading terms from CL "+termList);
+			amiDebug(Level.INFO, "reading terms from CL "+termList);
 		} else if (informat == null) {
 			addLoggingLevel(Level.ERROR, "no input format given ");
 		} else if (InputFormat.csv.equals(informat)) {
@@ -334,7 +333,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 				new File(fileroot, wptype.toString()).toString() : directoryTopname;
 		inputStream = openInputStream();
 		if (inputStream == null) {
-			System.err.println("NO INPUT STREAM, check HTTP connection/target or file existence");
+			amiDebug(Level.ERROR, "NO INPUT STREAM, check HTTP connection/target or file existence");
 		}
 		return inputStream;
 	}
@@ -368,7 +367,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 
 	private void readList(InputStream inputStream) {
 		try {
-			terms = IOUtils.readLines(inputStream, "UTF-8");
+			terms = IOUtils.readLines(inputStream, CMineUtil.UTF8_CHARSET);
 		} catch (IOException e) {
 			throw new RuntimeException("cannot read termfile: "+termfile, e);
 		}
@@ -403,7 +402,6 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 				if (input().startsWith("http")) {
 					String output = new CurlDownloader().setUrlString(input()).run();
 					inputStream = new ByteArrayInputStream(output.getBytes());
-//					System.out.println(">> "+output);
 				} else {
 					inputStream = super.openInputStream();
 				}
@@ -456,7 +454,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 			LOG.debug("no names to create dictionary");
 			return;
 		}
-		System.out.println("N "+nameList.size()+"; T "+termList.size());
+		amiDebug(Level.INFO, "names "+nameList.size()+"; terms "+termList.size());
 		addEntriesToDictionaryElement();
 		createAndAddQueryElement();
 		writeDictionary();
@@ -621,7 +619,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 
 	private void createFromMediawikiTemplate(String mwString) {
 		LOG.trace("mwstring :" +mwString);
-		List<HtmlA> aList = AMIDictionaryToolOLD.parseMediaWiki(mwString);
+		List<HtmlA> aList = AbstractAMIDictTool.parseMediaWiki(mwString);
 		System.err.println("read A's :" +aList.size());
 		addAHrefs(aList);
 	}
@@ -684,7 +682,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	public void readWikipediaPage(WikipediaDictionary wikipediaDictionary, InputStream inputStream) {
 		if (InputFormat.mediawikitemplate.equals(this.informat)) {
 			try {
-				createFromMediawikiTemplate(IOUtils.toString(inputStream, "UTF-8"));
+				createFromMediawikiTemplate(IOUtils.toString(inputStream, CMineUtil.UTF8_CHARSET));
 			} catch (IOException e) {
 				throw new RuntimeException("Cannot read stream", e);
 			}
@@ -742,7 +740,6 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 			if (dictionaryName == null) {
 				throw new RuntimeException("cannot create dictionaryName");
 			}
-			System.err.println(">> "+dictionaryName);
 			writeDictionary(dictionaryName);
 		}
 	}
@@ -805,13 +802,12 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	}
 
 	private void writeDictionary(String dictionary) {
-		System.err.println(">> dict "+dictionary);
 		File subDirectory = getOrCreateExistingSubdirectory(dictionary);
 		if (subDirectory != null) {
 			List<DictionaryFileFormat> outformatList = Arrays.asList(outformats);
 			for (DictionaryFileFormat outformat : outformatList) {
 				File outfile = getOrCreateDictionary(subDirectory, dictionary, outformat);
-				System.out.println("writing dictionary to "+outfile.getAbsolutePath());
+				amiDebug(Level.INFO, "writing dictionary to "+outfile.getAbsolutePath());
 				try {
 					outputDictionary(outfile, outformat);
 				} catch (IOException e) {

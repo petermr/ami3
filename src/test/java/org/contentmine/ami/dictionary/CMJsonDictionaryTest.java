@@ -134,7 +134,7 @@ public class CMJsonDictionaryTest {
 		File jsonFile = new File(AMIFixtures.TEST_DICTIONARY_DIR, "cochrane.json");
 //		CMJsonDictionary cmJsonDictionary = CMJsonDictionary.readJsonDictionary(FileUtils.readFileToString(jsonFile, CMineUtil.UTF8_CHARSET));
 		CMJsonDictionary cmJsonDictionary = CMJsonDictionary.readJsonDictionary(
-				IOUtils.toString(new FileInputStream(jsonFile), NAConstants.UTF_8));
+				IOUtils.toString(new FileInputStream(jsonFile), CMineUtil.UTF8_CHARSET));
 		Assert.assertNotNull("null jsonDictionary", cmJsonDictionary);
 		DefaultAMIDictionary amiDictionary = CMJsonDictionary.convertJsonToXML(cmJsonDictionary);
 		Assert.assertNotNull("null amiDictionary", amiDictionary);

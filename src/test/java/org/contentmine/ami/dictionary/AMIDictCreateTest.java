@@ -11,10 +11,9 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.contentmine.ami.tools.AMIDict;
-import org.contentmine.ami.tools.AMIDictionaryToolOLD;
+import org.contentmine.ami.tools.AbstractAMIDictTool;
 import org.contentmine.ami.tools.AbstractAMIDictTool.DictionaryFileFormat;
 import org.contentmine.ami.tools.AbstractAMITest;
-import org.contentmine.ami.tools.AbstractAMITool;
 import org.contentmine.ami.tools.download.CurlDownloader;
 import org.contentmine.graphics.html.HtmlA;
 import org.contentmine.norma.NAConstants;
@@ -897,7 +896,7 @@ public class AMIDictCreateTest extends AbstractAMITest {
 				"</noinclude>"
 				+ "";
 		
-		List<HtmlA> aList = AMIDictionaryToolOLD.parseMediaWiki(mw);
+		List<HtmlA> aList = AbstractAMIDictTool.parseMediaWiki(mw);
 		Assert.assertEquals("aList "+aList.size(), 140, aList.size());
 	}
 	

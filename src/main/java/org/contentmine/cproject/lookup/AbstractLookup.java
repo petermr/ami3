@@ -13,6 +13,7 @@ import java.util.Map;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.IntArray;
 
 import com.google.gson.JsonArray;
@@ -101,7 +102,7 @@ public abstract class AbstractLookup {
 	        } catch (Error e) {
 	        	LOG.error("cannot connect: "+e+"; "+url);
 	        }
-	        return is == null ? null : IOUtils.toString(is);
+	        return is == null ? null : IOUtils.toString(is, CMineUtil.UTF8_CHARSET);
     	} else {
     		return null;
     	}

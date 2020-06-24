@@ -71,7 +71,7 @@ public class TEX2HTMLConverter {
         IOUtils.copy(latexMLProc.getInputStream(), latexMLPostProc.getOutputStream());
         latexMLPostProc.getOutputStream().close();
 
-        String html = IOUtils.toString(latexMLPostProc.getInputStream(), StandardCharsets.UTF_8);
+        String html = IOUtils.toString(latexMLPostProc.getInputStream(), CMineUtil.UTF8_CHARSET);
         return convertHTMLToXHTML(html);
     }
     

@@ -271,7 +271,7 @@ view-source:https://www.wikidata.org/w/api.php?action=query&list=search&srsearch
 			query = query.trim();
 			try {
 				// encode everything, spaces become "+"
-				query = URLEncoder.encode(query, /*CMineUtil.UTF8_CHARSET.toString()*/ "UTF-8");
+				query = URLEncoder.encode(query, CMineUtil.UTF_8);
 				// change + to %20
 				query = query.replaceAll("\\+", "%20");
 			} catch (UnsupportedEncodingException e) {

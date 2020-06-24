@@ -177,7 +177,7 @@ public class TransformerWrapper {
 	 * @throws IOException
 	 */
 	private InputStream removeDoctype(InputStream inputStream) throws IOException {
-		String inputString = IOUtils.toString(inputStream);
+		String inputString = IOUtils.toString(inputStream, CMineUtil.UTF8_CHARSET);
 		IOUtils.closeQuietly(inputStream);
 		int idx = inputString.indexOf(DOCTYPE);
 		if (idx != -1) {

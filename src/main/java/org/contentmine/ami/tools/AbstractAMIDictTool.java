@@ -113,7 +113,11 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 
 	/** override */
 	protected abstract void parseSpecifics();
-	
+
+	public int getVerbosityInt() {
+		return verbosity().length;
+	}
+
 	/**
 	 * prints generic values from abstract superclass.
 	 * at present 
@@ -601,17 +605,13 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 		URL wikipediaUrl = null;
 		try {
 			String name = entry.getAttributeValue("name");
-System.out.println(entry.toXML());			
 			if (name != null) {
 				name = name.replace(" ", "_");
 				wikipediaUrl = new URL(HTTPS_EN_WIKIPEDIA_ORG_WIKI + name);
-				System.out.println(wikipediaUrl);
+				amiDebug(Level.INFO, "WP url: " + wikipediaUrl);
 				InputStream is = wikipediaUrl.openStream();
 				Element element = HtmlUtil.readTidyAndCreateElement(is);
-				File xmlFile = new File("target/wikipedia/"+name+".html");
-				System.err.println("writing "+xmlFile);
-				XMLUtil.writeQuietly(element, xmlFile, 1);
-//				Element element = XMLUtil.parseQuietlyToRootElement(is);
+//				debugWikipediaPage(name, element);
 				wikipediaPage = element == null ? null : HtmlElement.create(element);
 			}
 		} catch (RuntimeException e) {
@@ -620,14 +620,51 @@ System.out.println(entry.toXML());
 		} catch (MalformedURLException e) {
 			throw new RuntimeException("bad URL ", e);
 		} catch (IOException e) {
-			LOG.error("wikimedia IO exception");
+			amiDebug(Level.ERROR, "wikimedia IO exception: " + e.getMessage());
 			throw new RuntimeException(e);
 		} catch (Exception e) {
-			LOG.error("wikimedia Exception");
+			amiDebug(Level.ERROR, "wikimedia Exception: " + e.getMessage());
 			throw new RuntimeException(e);
 		}
 		return wikipediaPage;
 	}
+
+	private void debugWikipediaPage(String name, Element element) {
+		File xmlFile = new File("target/wikipedia/"+name+".html");
+		amiDebug(Level.INFO, "writing debug wikipedia page "+xmlFile);
+		XMLUtil.writeQuietly(element, xmlFile, 1);
+	}
+	
+	public void amiDebug(Level level, String message) {
+		if (verbosity().length >= getEquivalentVerbosityInt(level)) {
+			PrintStream stream = level.isGreaterOrEqual(Level.WARN)  ? System.err : System.out;
+			String msg = level.toString() + ">" +
+				(Level.DEBUG.isGreaterOrEqual(level) ? (this.getClass().getSimpleName()+": ") : "") +
+				message;
+			stream.println(msg);
+		}
+	}
+
+	private static int getEquivalentVerbosityInt(Level level) {
+		int verbosityInt = -1;
+		if (level == null) {
+			verbosityInt = -1;
+		} else if (level.isGreaterOrEqual(Level.ERROR)) {
+			verbosityInt = -1;
+		} else if (level.isGreaterOrEqual(Level.WARN)) {
+			verbosityInt = 0;
+		} else if (level.isGreaterOrEqual(Level.INFO)) {
+			verbosityInt = 1;
+		} else if (level.isGreaterOrEqual(Level.DEBUG)) {
+			verbosityInt = 2;
+		} else if (level.isGreaterOrEqual(Level.TRACE)) {
+			verbosityInt = 3;
+		} else {
+			throw new RuntimeException("bad level: "+level);
+		}
+		return verbosityInt;
+	}
+
 	/**
 				+ "{{Navbox\n" + 
 				" | name = Viral systemic diseases\n" + 

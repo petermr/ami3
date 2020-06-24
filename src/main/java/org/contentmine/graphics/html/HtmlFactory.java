@@ -1,7 +1,6 @@
 package org.contentmine.graphics.html;
 
 import java.io.File;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -450,6 +449,8 @@ public class HtmlFactory {
 			htmlElement = new HtmlA();
 		} else if(HtmlAbbr.TAG.equalsIgnoreCase(tag)) {
 			htmlElement = new HtmlAbbr();
+		} else if(HtmlArea.TAG.equalsIgnoreCase(tag)) {
+			htmlElement = new HtmlArea();
 		} else if(HtmlArticle.TAG.equalsIgnoreCase(tag)) {
 			htmlElement = new HtmlArticle();
 		} else if(HtmlB.TAG.equalsIgnoreCase(tag)) {
@@ -466,6 +467,8 @@ public class HtmlFactory {
 			htmlElement = new HtmlButton();
 		} else if(HtmlCaption.TAG.equalsIgnoreCase(tag)) {
 			htmlElement = new HtmlCaption();
+		} else if(HtmlCite.TAG.equalsIgnoreCase(tag)) {
+			htmlElement = new HtmlCite();
 		} else if(HtmlCode.TAG.equalsIgnoreCase(tag)) {
 			htmlElement = new HtmlCode();
 		} else if(HtmlDd.TAG.equalsIgnoreCase(tag)) {
@@ -522,6 +525,8 @@ public class HtmlFactory {
 			htmlElement = new HtmlLi();
 		} else if(HtmlLink.TAG.equalsIgnoreCase(tag)) {
 			htmlElement = new HtmlLink();
+		} else if(HtmlMap.TAG.equalsIgnoreCase(tag)) {
+			htmlElement = new HtmlMap();
 		} else if(HtmlMeta.TAG.equalsIgnoreCase(tag)) {
 			htmlElement = new HtmlMeta();
 		} else if(HtmlNav.TAG.equalsIgnoreCase(tag)) {
@@ -532,6 +537,8 @@ public class HtmlFactory {
 			htmlElement = new HtmlOl();
 		} else if(HtmlP.TAG.equalsIgnoreCase(tag)) {
 			htmlElement = new HtmlP();
+		} else if(HtmlQ.TAG.equalsIgnoreCase(tag)) {
+			htmlElement = new HtmlQ();
 		} else if(HtmlS.TAG.equalsIgnoreCase(tag)) {
 			htmlElement = new HtmlS();
 		} else if(HtmlScript.TAG.equalsIgnoreCase(tag)) {
