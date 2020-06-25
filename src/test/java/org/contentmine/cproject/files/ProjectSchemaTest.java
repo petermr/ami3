@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.InputStream;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.CMineFixtures;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.cproject.files.schema.AbstractSchemaElement;
@@ -22,12 +22,8 @@ import org.junit.Test;
  *
  */
 public class ProjectSchemaTest {
-	private static final Logger LOG = Logger.getLogger(ProjectSchemaTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(ProjectSchemaTest.class);
+@Test
 	public void dummy() {
 		LOG.warn("Tests not working yet");
 	}

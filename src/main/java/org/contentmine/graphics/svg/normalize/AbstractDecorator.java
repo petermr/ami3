@@ -1,7 +1,7 @@
 package org.contentmine.graphics.svg.normalize;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGText;
 
 /** superclass for SVG Decorators
@@ -11,12 +11,8 @@ import org.contentmine.graphics.svg.SVGText;
  *
  */
 public abstract class AbstractDecorator {
-	static final Logger LOG = Logger.getLogger(AbstractDecorator.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	protected AttributeComparer attributeComparer;
+	static final Logger LOG = LogManager.getLogger(AbstractDecorator.class);
+protected AttributeComparer attributeComparer;
 	
 	protected AbstractDecorator() {
 		this.attributeComparer = new AttributeComparer();

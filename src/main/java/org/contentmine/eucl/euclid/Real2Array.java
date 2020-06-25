@@ -28,7 +28,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.eclipse.jetty.io.RuntimeIOException;
 
 
@@ -49,7 +50,7 @@ import org.eclipse.jetty.io.RuntimeIOException;
  */
 public class Real2Array implements EuclidConstants ,  Iterable<Real2>  {
 	@SuppressWarnings("unused")
-	private static Logger LOG = Logger.getLogger(Real2Array.class);
+	private static Logger LOG = LogManager.getLogger(Real2Array.class);
 	
     RealArray xarr;
     RealArray yarr;

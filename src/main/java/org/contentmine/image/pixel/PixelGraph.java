@@ -9,8 +9,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.Stack;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Angle.Units;
 import org.contentmine.eucl.euclid.Int2;
@@ -39,11 +39,7 @@ import com.google.common.collect.Multiset;
  */
 public class PixelGraph {
 
-	static final Logger LOG = Logger.getLogger(PixelGraph.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
+	static final Logger LOG = LogManager.getLogger(PixelGraph.class);
 //	static final double SEGMENT_EPS = 0.1;
 	private static final double DEFAULT_SEGMENT_CREATION_TOLERANCE = 1.0;
 	private static final int MIN_CYCLE = 6;

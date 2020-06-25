@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.IntRange;
@@ -43,12 +43,8 @@ import nu.xom.Element;
  */
 public class TextChunk extends SVGG implements Iterable<PhraseChunk> {
 	private static final double PARA_SPACING_FACTOR = 1.2;
-	public static final Logger LOG = Logger.getLogger(TextChunk.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final Double SUPERSCRIPT_Y_RATIO = 0.5;
+	public static final Logger LOG = LogManager.getLogger(TextChunk.class);
+public static final Double SUPERSCRIPT_Y_RATIO = 0.5;
 	public static final Double SUBSCRIPT_Y_RATIO = 0.75;
 //	private static final Double SUPERSCRIPT_FONT_RATIO = 1.05;
 

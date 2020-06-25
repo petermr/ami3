@@ -1,7 +1,7 @@
 package org.contentmine.ami.plugins.phylotree;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMIPlugin;
 import org.contentmine.ami.plugins.sequence.SequenceArgProcessor;
 
@@ -14,13 +14,8 @@ import org.contentmine.ami.plugins.sequence.SequenceArgProcessor;
  */
 public class PhyloTreePlugin extends AMIPlugin {
 
-	private static final Logger LOG = Logger.getLogger(PhyloTreePlugin.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	
-	@Deprecated // 
+	private static final Logger LOG = LogManager.getLogger(PhyloTreePlugin.class);
+@Deprecated //
 	public PhyloTreePlugin(String[] args) {
 		super();
 		this.argProcessor = new PhyloTreeArgProcessor(args);

@@ -7,8 +7,8 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.metadata.AbstractMetadata;
@@ -32,13 +32,8 @@ public class HtmlMetaJATSBuilder extends JATSBuilder {
 	private static final String LANDING_PAGE_HTML = "landingPage.html";
 	private static final String CROSSREF_XML = "crossref.xml";
 
-	private static final Logger LOG = Logger.getLogger(HtmlMetaJATSBuilder.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	
-	private Map<HtmlMetadataScheme, List<HtmlMeta>> metadataByScheme;
+	private static final Logger LOG = LogManager.getLogger(HtmlMetaJATSBuilder.class);
+private Map<HtmlMetadataScheme, List<HtmlMeta>> metadataByScheme;
 	private List<HtmlMeta> dcList;
 	private List<HtmlMeta> hwList;
 	JATS_TempElement temp;

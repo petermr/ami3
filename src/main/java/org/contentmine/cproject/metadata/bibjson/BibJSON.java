@@ -3,8 +3,8 @@ package org.contentmine.cproject.metadata.bibjson;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  * {
@@ -29,12 +29,8 @@ import org.apache.log4j.Logger;
 
 public class BibJSON extends AbstractBibJSON {
 
-	private static final Logger LOG = Logger.getLogger(BibJSON.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private String type;
+	private static final Logger LOG = LogManager.getLogger(BibJSON.class);
+private String type;
 	private List<BJAuthor> author;
 	private List<BJLink> link;
 	private BJJournal journal;

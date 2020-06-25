@@ -4,20 +4,16 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.xml.serialize.OutputFormat;
 import org.contentmine.cproject.lookup.AbstractLookup;
 
 public class GenbankLookup extends AbstractLookup {
 
 	
-	private static final Logger LOG = Logger.getLogger(GenbankLookup.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public GenbankLookup() {
+	private static final Logger LOG = LogManager.getLogger(GenbankLookup.class);
+public GenbankLookup() {
 	}
 
 	/*

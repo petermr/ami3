@@ -16,8 +16,8 @@
 
 package org.contentmine.eucl.euclid.euclid;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Angle.Units;
 import org.contentmine.eucl.euclid.Line2;
@@ -36,12 +36,8 @@ import org.junit.Test;
  * 
  */
 public class Line2Test {
-	private static final Logger LOG = Logger.getLogger(Line2Test.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	static double sqrt2 = Math.sqrt(2);
+	private static final Logger LOG = LogManager.getLogger(Line2Test.class);
+static double sqrt2 = Math.sqrt(2);
 	static double sqrt5 = Math.sqrt(5);
 	Real2 p00 = new Real2(0, 0);
 	Real2 p02 = new Real2(0, 2);

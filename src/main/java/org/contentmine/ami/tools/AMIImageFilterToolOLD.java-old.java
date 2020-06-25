@@ -12,8 +12,8 @@ import javax.imageio.ImageIO;
 import org.apache.commons.io.FileExistsException;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeList;
@@ -44,12 +44,8 @@ description = {
 				+ "</ul>"
 })
 class AMIImageFilterToolOLD extends AbstractAMITool {
-	private static final Logger LOG = Logger.getLogger(AMIImageFilterToolOLD.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-    @Option(names = {"--duplicates"},
+	private static final Logger LOG = LogManager.getLogger(AMIImageFilterToolOLD.class);
+@Option(names = {"--duplicates"},
     		arity = "1",
     		defaultValue = "true",
             description = "discard duplicate images ")

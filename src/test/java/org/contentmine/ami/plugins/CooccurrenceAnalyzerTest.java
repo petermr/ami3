@@ -3,8 +3,8 @@ package org.contentmine.ami.plugins;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.CooccurrenceAnalyzer;
 import org.contentmine.ami.plugins.EntityAnalyzer;
 import org.contentmine.ami.plugins.OccurrenceAnalyzer;
@@ -15,12 +15,8 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 public class CooccurrenceAnalyzerTest {
-	private static final Logger LOG = Logger.getLogger(CooccurrenceAnalyzerTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(CooccurrenceAnalyzerTest.class);
+@Test
 //	@Ignore
 	public void testColorMatrix() throws IOException {
 		String matrixS = "{25,18}\n" 

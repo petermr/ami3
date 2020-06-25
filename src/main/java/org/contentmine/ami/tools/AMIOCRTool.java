@@ -12,8 +12,8 @@ import java.util.List;
 import javax.imageio.ImageIO;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMIOCRTool.OcrType;
 import org.contentmine.ami.tools.ocr.OcrMerger;
 import org.contentmine.cproject.files.CProject;
@@ -70,7 +70,7 @@ public class AMIOCRTool extends AbstractAMITool implements HasImageDir {
 
 	public static final String IMAGE_DOT = "image.";
 	
-	private static final Logger LOG = Logger.getLogger(AMIOCRTool.class);
+	private static final Logger LOG = LogManager.getLogger(AMIOCRTool.class);
 
 	/** not yet used*/
 	public enum LineDir {
@@ -96,11 +96,7 @@ public class AMIOCRTool extends AbstractAMITool implements HasImageDir {
 	
 	public static final String GOCR_DIR = OcrType.gocr.toString();
 	public static final String HOCR_DIR = OcrType.hocr.toString();
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-    @Option(names = {"--disambiguate"},
+@Option(names = {"--disambiguate"},
     		arity = "0..1",
             description = "try to diambiguate characters "
             )
@@ -237,7 +233,7 @@ public class AMIOCRTool extends AbstractAMITool implements HasImageDir {
     protected void runSpecifics() {
     	if (processTrees()) { 
     	} else {
-			DebugPrint.debugPrint(Level.ERROR, "must give cProject or cTree");
+    		LOG.error(DebugPrint.MARKER, "must give cProject or cTree");
 	    }
     }
 

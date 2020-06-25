@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGCircle;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGLineList;
@@ -13,12 +13,8 @@ import org.contentmine.graphics.svg.SVGShape;
 
 public class SVGBarredPointList extends SVGG implements Iterable<SVGBarredPoint> {
 
-	private static Logger LOG = Logger.getLogger(SVGBarredPointList.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private List<SVGBarredPoint> points;
+	private static Logger LOG = LogManager.getLogger(SVGBarredPointList.class);
+private List<SVGBarredPoint> points;
 	
 	public Iterator<SVGBarredPoint> iterator() {
 		ensurePoints();

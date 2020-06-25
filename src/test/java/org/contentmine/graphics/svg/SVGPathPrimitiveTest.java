@@ -4,7 +4,8 @@ package org.contentmine.graphics.svg;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Angle.Range;
 import org.contentmine.eucl.euclid.Angle.Units;
@@ -20,7 +21,7 @@ import org.junit.Test;
 
 public class SVGPathPrimitiveTest {
 
-	private final static Logger LOG = Logger.getLogger(SVGPathPrimitiveTest.class);
+	private final static Logger LOG = LogManager.getLogger(SVGPathPrimitiveTest.class);
 
 	private static final Angle ANGLE_EPS = new Angle(0.0001, Units.RADIANS);
 	

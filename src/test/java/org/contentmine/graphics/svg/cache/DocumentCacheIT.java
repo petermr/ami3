@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeList;
@@ -19,13 +19,8 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 public class DocumentCacheIT {
-public static final Logger LOG = Logger.getLogger(DocumentCacheIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	
-	@Test
+public static final Logger LOG = LogManager.getLogger(DocumentCacheIT.class);
+@Test
 	/** 9-page article.
 	 * 
 	 */

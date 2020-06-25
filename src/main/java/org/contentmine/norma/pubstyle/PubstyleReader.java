@@ -11,8 +11,8 @@ import java.util.HashMap;
 import java.util.List;
 
 import org.apache.commons.lang3.tuple.Pair;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlFactory;
@@ -28,11 +28,8 @@ import nu.xom.Nodes;
 
 public abstract class PubstyleReader {
 
-	private static final Logger LOG = Logger.getLogger(PubstyleReader.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public final static String TEI_XSL_REOURCE = "/"+ NAConstants.ORG_CM_NORMA+"/"+"tei/";
+	private static final Logger LOG = LogManager.getLogger(PubstyleReader.class);
+public final static String TEI_XSL_REOURCE = "/"+ NAConstants.ORG_CM_NORMA+"/"+"tei/";
 
 	private URL url;
 	private RawInput rawInput;

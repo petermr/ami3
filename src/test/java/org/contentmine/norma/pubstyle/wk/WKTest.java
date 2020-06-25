@@ -3,8 +3,8 @@ package org.contentmine.norma.pubstyle.wk;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.norma.NormaFixtureRunner;
 import org.contentmine.norma.NormaFixtures;
 import org.junit.Ignore;
@@ -13,11 +13,8 @@ import org.junit.Test;
 @Ignore //open access
 public class WKTest {
 	
-	private static final Logger LOG = Logger.getLogger(WKTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	static String PUB0 = "wk";
+	private static final Logger LOG = LogManager.getLogger(WKTest.class);
+static String PUB0 = "wk";
 	static String PUB = "wk";
 	static String PUB1 = PUB+"/clean";
 	static File TARGET = new File(NormaFixtures.TARGET_PUBSTYLE_DIR, PUB);

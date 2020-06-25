@@ -18,7 +18,8 @@ package org.contentmine.eucl.euclid;
 import java.io.PrintStream;
 import java.util.StringTokenizer;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Axis.Axis3;
 /**
  * 3-D transformation matrix class Transform3 represents a transformation matrix
@@ -41,7 +42,7 @@ import org.contentmine.eucl.euclid.Axis.Axis3;
  */
 public class Transform3 extends RealSquareMatrix {
     private static final PrintStream SYSOUT = System.out;
-	final static Logger LOG = Logger.getLogger(Transform3.class);
+	final static Logger LOG = LogManager.getLogger(Transform3.class);
     /** type */
     public enum Type {
         /** */

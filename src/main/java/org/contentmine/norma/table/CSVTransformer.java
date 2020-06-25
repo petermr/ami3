@@ -9,8 +9,8 @@ import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVPrinter;
 import org.apache.commons.csv.CSVRecord;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.cproject.util.RectangularTable;
 import org.contentmine.graphics.html.HtmlElement;
@@ -29,13 +29,9 @@ import net.minidev.json.JSONObject;
  */
 public class CSVTransformer {
 
-	private static final Logger LOG = Logger.getLogger(CSVTransformer.class);
+	private static final Logger LOG = LogManager.getLogger(CSVTransformer.class);
 	private List<CSVRecord> recordList;
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private Charset charset = CMineUtil.UTF8_CHARSET;
+private Charset charset = CMineUtil.UTF8_CHARSET;
 	private CSVFormat csvFormat = CSVFormat.DEFAULT;
 	
 	public CSVTransformer() {

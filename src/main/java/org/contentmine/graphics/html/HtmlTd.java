@@ -19,7 +19,8 @@ package org.contentmine.graphics.html;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.util.HtmlUtil;
 
 import nu.xom.Attribute;
@@ -32,7 +33,7 @@ import nu.xom.Attribute;
  */
 public class HtmlTd extends HtmlTCell {
 	@SuppressWarnings("unused")
-	private final static Logger LOG = Logger.getLogger(HtmlTd.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlTd.class);
 	public final static String TAG = "td";
 	public final static String ALL_TD_XPATH = ".//h:td";
 

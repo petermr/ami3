@@ -11,8 +11,8 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 
 import com.google.gson.JsonArray;
@@ -24,12 +24,8 @@ public class DOIResolver {
 
 	private static final String URL = "URL";
 	private static final String TYPE = "type";
-	private static final Logger LOG = Logger.getLogger(DOIResolver.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String HTTP_DOI_ORG_API_HANDLES = "http://doi.org/api/handles/";
+	private static final Logger LOG = LogManager.getLogger(DOIResolver.class);
+private static final String HTTP_DOI_ORG_API_HANDLES = "http://doi.org/api/handles/";
 	private static final String HTTP_DX_DOI_ORG = "http://dx.doi.org/";
 	private static final String VALUE = "value";
 	private static final String DATA = "data";

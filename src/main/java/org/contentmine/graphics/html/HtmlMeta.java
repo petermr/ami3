@@ -20,8 +20,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.metadata.AbstractMetadata;
 import org.contentmine.graphics.html.util.HtmlUtil;
 import org.contentmine.norma.sections.JATSAbstractElement;
@@ -54,12 +54,8 @@ import org.contentmine.norma.sections.JATSStringNameElement;
  *
  */
 public class HtmlMeta extends HtmlElement {
-	private static final Logger LOG = Logger.getLogger(HtmlMeta.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public final static String TAG = "meta";
+	private static final Logger LOG = LogManager.getLogger(HtmlMeta.class);
+public final static String TAG = "meta";
 	public static final String CONTENT = "content";
 	public static final String NAME = "name";
 	public static final String HEAD_META_XPATH = ".//*[local-name()='"+HtmlHead.TAG+"']/*[local-name()='"+HtmlMeta.TAG+"']";

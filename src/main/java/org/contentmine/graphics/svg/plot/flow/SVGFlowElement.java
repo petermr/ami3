@@ -5,8 +5,8 @@ package org.contentmine.graphics.svg.plot.flow;
  *
  */
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGCircle;
 import org.contentmine.graphics.svg.SVGClipPath;
 import org.contentmine.graphics.svg.SVGDefs;
@@ -30,12 +30,8 @@ import org.contentmine.graphics.svg.SVGTitle;
 import nu.xom.Element;
 
 public abstract class SVGFlowElement extends SVGG {
-	private static final Logger LOG = Logger.getLogger(SVGFlowElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public SVGFlowElement(String tag) {
+	private static final Logger LOG = LogManager.getLogger(SVGFlowElement.class);
+public SVGFlowElement(String tag) {
 		super(tag);
 	}
 	

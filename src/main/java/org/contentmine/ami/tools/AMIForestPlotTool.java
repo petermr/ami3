@@ -9,8 +9,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.template.AbstractTemplateElement;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
@@ -49,14 +49,10 @@ description = {
 })
 public class AMIForestPlotTool extends AbstractAMITool implements HasImageDir {
 
-	static final Logger LOG = Logger.getLogger(AMIForestPlotTool.class);
+	static final Logger LOG = LogManager.getLogger(AMIForestPlotTool.class);
 	private static final String TEMPLATE_XML = "template.xml";
 
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public enum ForestPlotType {
+public enum ForestPlotType {
 		spss,
 		stata;
 		public static ForestPlotType getPlotType(String s) {
@@ -372,7 +368,7 @@ public class AMIForestPlotTool extends AbstractAMITool implements HasImageDir {
     protected void runSpecifics() {
     	if (processTrees()) { 
     	} else {
-			DebugPrint.debugPrint(Level.ERROR, "must give cProject or cTree ie imageFile");
+			LOG.error(DebugPrint.MARKER, "must give cProject or cTree ie imageFile");
 	    }
     }
 

@@ -1,6 +1,7 @@
 package org.contentmine.image.pixel;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.graphics.svg.SVGElement;
@@ -9,7 +10,7 @@ import org.contentmine.image.pixel.IntLine.ChangeDirection;
 
 public class IntLine {
 
-	private final static Logger LOG = Logger.getLogger(IntLine.class);
+	private final static Logger LOG = LogManager.getLogger(IntLine.class);
 	
 	public enum ChangeDirection {
 		LEFT,

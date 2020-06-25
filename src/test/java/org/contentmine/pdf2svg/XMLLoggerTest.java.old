@@ -16,7 +16,7 @@ import org.junit.Test;
 
 public class XMLLoggerTest {
 
-	// private final static Logger LOG = Logger.getLogger(XMLLogger.class);
+	// private final static Logger LOG = LogManager.getLogger(XMLLogger.class);
 //	private static final String page6pdf = "src/test/resources/page6.pdf";
 
 	@Test

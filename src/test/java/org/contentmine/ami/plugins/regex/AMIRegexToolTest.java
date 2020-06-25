@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIFixtures;
 import org.contentmine.ami.plugins.regex.AMIRegexTool;
 import org.contentmine.ami.plugins.regex.CompoundRegex;
@@ -35,12 +35,8 @@ import nu.xom.Text;
  *
  */
 public class AMIRegexToolTest {
-	private static final Logger LOG = Logger.getLogger(AMIRegexToolTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/** test generation of conformant regexes
+	private static final Logger LOG = LogManager.getLogger(AMIRegexToolTest.class);
+/** test generation of conformant regexes
 	 * 
 	 * desn't run anything
 	 * 

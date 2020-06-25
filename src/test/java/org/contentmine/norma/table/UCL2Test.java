@@ -2,8 +2,8 @@ package org.contentmine.norma.table;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.norma.Norma;
 import org.contentmine.norma.NormaFixtures;
@@ -13,12 +13,8 @@ import org.junit.Test;
 
 @Ignore // too long
 public class UCL2Test {
-	private static final Logger LOG = Logger.getLogger(UCL2Test.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(UCL2Test.class);
+@Test
 	/** iterate over whole CProject 
 	 * 
 	 */

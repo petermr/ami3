@@ -2,18 +2,14 @@ package org.contentmine.ami.plugins.sequence;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMIPluginOption;
 
 public class SequencePluginOption extends AMIPluginOption {
 
-	private static final Logger LOG = Logger.getLogger(SequencePluginOption.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final String TAG = "sequence";
+	private static final Logger LOG = LogManager.getLogger(SequencePluginOption.class);
+public static final String TAG = "sequence";
 
 	public SequencePluginOption() {
 		super(TAG);

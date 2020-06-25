@@ -2,8 +2,8 @@ package org.contentmine.graphics.svg.misc;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.graphics.svg.SVGG;
@@ -12,12 +12,8 @@ import org.contentmine.graphics.svg.SVGSVG;
 
 public class Jigsaw {
 
-	private static final Logger LOG = Logger.getLogger(Jigsaw.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private int rows = 10;
+	private static final Logger LOG = LogManager.getLogger(Jigsaw.class);
+private int rows = 10;
 	private int cols = 10;
 	private int width = 400;
 	private int height = 400;

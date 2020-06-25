@@ -17,7 +17,8 @@ package org.contentmine.font;
 
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.CHESConstants;
 import org.contentmine.eucl.euclid.Util;
 import org.junit.Assert;
@@ -28,7 +29,7 @@ import nu.xom.Element;
 
 public class CodePointSetTest {
 
-	private final static Logger LOG = Logger.getLogger(CodePointSet.class);
+	private final static Logger LOG = LogManager.getLogger(CodePointSet.class);
 	
 	
 	@Test

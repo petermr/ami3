@@ -4,7 +4,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeFiles;
 import org.contentmine.cproject.files.SnippetsTree;
@@ -22,12 +23,8 @@ import org.contentmine.cproject.files.XMLSnippets;
  */
 public class FileXPathSearcher {
 
-	private static final Logger LOG = Logger.getLogger(FileXPathSearcher.class);
-	static {
-		LOG.setLevel(org.apache.log4j.Level.DEBUG);
-	}
-
-	private static final String FILE = "file(";
+	private static final Logger LOG = LogManager.getLogger(FileXPathSearcher.class);
+private static final String FILE = "file(";
 	private static final String XPATH = "xpath(";
 	
 	private String searchExpression;

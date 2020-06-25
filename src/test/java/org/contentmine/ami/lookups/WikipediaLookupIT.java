@@ -6,8 +6,8 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIFixtures;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
 import org.contentmine.ami.lookups.WikipediaLookup;
@@ -32,13 +32,8 @@ import nu.xom.Element;
 public class WikipediaLookupIT {
 
 	
-	public static final Logger LOG = Logger.getLogger(WikipediaLookupIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-
-	@Test
+	public static final Logger LOG = LogManager.getLogger(WikipediaLookupIT.class);
+@Test
 //	@Ignore // LONG
 	public void testGetWikidataForDictionariesAndUpdate() throws Exception {
 		// /normami/src/main/resources/org/contentmine/ami/plugins/dictionary/invasive.xml

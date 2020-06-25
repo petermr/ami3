@@ -4,7 +4,8 @@ import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
@@ -30,7 +31,7 @@ public abstract class ChunkAnalyzer {
 	
 	private static final PrintStream SYSOUT = System.out;
 
-	private final static Logger LOG = Logger.getLogger(ChunkAnalyzer.class);
+	private final static Logger LOG = LogManager.getLogger(ChunkAnalyzer.class);
 
 	protected ChunkId chunkId;
 	protected SVGElement svgChunk;

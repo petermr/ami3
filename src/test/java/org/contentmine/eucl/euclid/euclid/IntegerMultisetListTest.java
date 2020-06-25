@@ -1,7 +1,7 @@
 package org.contentmine.eucl.euclid.euclid;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.IntegerMultisetList;
 import org.junit.Test;
@@ -9,13 +9,8 @@ import org.junit.Test;
 import junit.framework.Assert;
 
 public class IntegerMultisetListTest {
-	private static final Logger LOG = Logger.getLogger(IntegerMultisetListTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(IntegerMultisetListTest.class);
+@Test
 	public void testBins() {
 		IntArray intArray = new IntArray(new int[]{
 				4, 8, 6, 23, 24, 12, 24, 25, 17, 15, 12, 7, 4, 5, 9,

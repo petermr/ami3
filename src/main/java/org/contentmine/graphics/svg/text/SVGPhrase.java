@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealArray;
@@ -30,12 +30,8 @@ import nu.xom.Element;
 public class SVGPhrase extends SVGG {
 
 	
-	private static final Logger LOG = Logger.getLogger(SVGPhrase.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final String CLASS = "phrase";
+	private static final Logger LOG = LogManager.getLogger(SVGPhrase.class);
+public static final String CLASS = "phrase";
 
 	private static final boolean ROT0 = false;
 	private static final boolean ROT90 = true;

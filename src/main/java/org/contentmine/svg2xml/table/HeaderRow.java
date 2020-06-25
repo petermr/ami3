@@ -3,8 +3,8 @@ package org.contentmine.svg2xml.table;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** a horizontal row of ColumnGroups.
  * 
@@ -12,12 +12,8 @@ import org.apache.log4j.Logger;
  *
  */
 public class HeaderRow {
-	private static final Logger LOG = Logger.getLogger(HeaderRow.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private List<ColumnGroup> columnGroupList;
+	private static final Logger LOG = LogManager.getLogger(HeaderRow.class);
+private List<ColumnGroup> columnGroupList;
 	
 	public HeaderRow() {
 		

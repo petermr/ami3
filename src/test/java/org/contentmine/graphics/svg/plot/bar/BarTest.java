@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.plot.bar;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGHTMLFixtures;
@@ -16,12 +16,8 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 public class BarTest {
-	private static final Logger LOG = Logger.getLogger(BarTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(BarTest.class);
+@Test
 	public void testBar1() throws IOException {
 		String fileRoot = "../bar/art%3A10.1186%2Fs13148-016-0230-5/svg/fig3";
 		AbstractPlotBox plotBox = new XYPlotBox();

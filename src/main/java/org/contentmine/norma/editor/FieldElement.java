@@ -3,20 +3,16 @@ package org.contentmine.norma.editor;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
 
 public class FieldElement extends AbstractEditorElement implements IRegexComponent {
 
-	public static final Logger LOG = Logger.getLogger(FieldElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final String TAG = "field";
+	public static final Logger LOG = LogManager.getLogger(FieldElement.class);
+public static final String TAG = "field";
 	
 	private static final String NAME = "name";
 	private List<SubstitutionElement> substitutionList;

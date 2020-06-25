@@ -1,7 +1,7 @@
 package org.contentmine.graphics.svg;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.testutil.TestUtils;
 import org.junit.Assert;
@@ -10,12 +10,8 @@ import org.junit.Test;
 import nu.xom.Attribute;
 
 public class GraphicsElementTest {
-	private static final Logger LOG = Logger.getLogger(GraphicsElementTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(GraphicsElementTest.class);
+@Test
 	public void testUseStyleAttribute() {
 		SVGCircle circle = new SVGCircle(new Real2(10., 20.), 3.);
 		circle.setStroke("red");

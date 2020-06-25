@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIFixtures;
 import org.contentmine.ami.plugins.regex.RegexArgProcessor;
 import org.contentmine.ami.plugins.regex.RegexPlugin;
@@ -29,11 +29,7 @@ import org.junit.Test;
 public class RegressionDemoTest {
 
 	
-	private static final Logger LOG = Logger
-			.getLogger(RegressionDemoTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
+	private static final Logger LOG = LogManager.getLogger(RegressionDemoTest.class);
 //	@Test
 //	public void testIdentifiersArgProcessor() throws Exception {
 //		// SHOWCASE

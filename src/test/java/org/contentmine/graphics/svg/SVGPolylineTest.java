@@ -19,8 +19,8 @@ package org.contentmine.graphics.svg;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Array;
 import org.contentmine.eucl.euclid.Real2Range;
@@ -32,11 +32,8 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 public class SVGPolylineTest {
-	public static final Logger LOG = Logger.getLogger(SVGPolylineTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public final static String SVG_STRING =
+	public static final Logger LOG = LogManager.getLogger(SVGPolylineTest.class);
+public final static String SVG_STRING =
 			"<svg xmlns=\"http://www.w3.org/2000/svg\">"
 	 + "<polyline points=\""
 	 + " 96.071 211.257"

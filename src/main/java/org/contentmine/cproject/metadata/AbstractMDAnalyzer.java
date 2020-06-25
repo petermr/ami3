@@ -6,8 +6,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeList;
@@ -19,13 +19,8 @@ import com.google.common.collect.Multiset;
 
 public class AbstractMDAnalyzer {
 
-	private static final Logger LOG = Logger.getLogger(AbstractMDAnalyzer.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-
-	private CProject cProject;
+	private static final Logger LOG = LogManager.getLogger(AbstractMDAnalyzer.class);
+private CProject cProject;
 	private Multimap<CTree, File> reservedFileByCTree;
 	private HashMap<Type, Map<CTree, AbstractMetadata>> metadataMapByTypeMap;
 	protected Map<CTree, AbstractMetadata> metadataByCTreeMap;

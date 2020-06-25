@@ -5,8 +5,8 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.util.MultisetUtil;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGRect;
@@ -17,12 +17,8 @@ import com.google.common.collect.HashMultiset;
 import com.google.common.collect.Multiset;
 
 public class Real2RangeList extends BoundingBoxManager implements Iterable<Real2Range>, Collection<Real2Range> {
-	private static final Logger LOG = Logger.getLogger(Real2RangeList.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private Multiset<Integer> heightSet;
+	private static final Logger LOG = LogManager.getLogger(Real2RangeList.class);
+private Multiset<Integer> heightSet;
 	private Multiset<Integer> widthSet;
 	
 	private List<String> strokeList;

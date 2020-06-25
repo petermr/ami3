@@ -6,7 +6,8 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.IntRange;
@@ -17,7 +18,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ImagePanelTest {
-	private static Logger LOG = Logger.getLogger(ImagePanelTest.class);
+	private static Logger LOG = LogManager.getLogger(ImagePanelTest.class);
 
 	@Test
 	public void testMakePanels() throws IOException {

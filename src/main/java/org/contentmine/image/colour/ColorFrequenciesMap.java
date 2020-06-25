@@ -4,8 +4,8 @@ import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import com.google.common.collect.Multiset;
 
@@ -17,13 +17,9 @@ import com.google.common.collect.Multiset;
  *
  */
 public class ColorFrequenciesMap /*implements Map<RGBColor, Integer>*/ {
-	private static final Logger LOG = Logger.getLogger(ColorFrequenciesMap.class);
+	private static final Logger LOG = LogManager.getLogger(ColorFrequenciesMap.class);
 	
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	// might also use Entry<RGBColor> ???
+// might also use Entry<RGBColor> ???
 	private Map<RGBColor, Integer> frequenciesMap;
 
 	ColorFrequenciesMap() {

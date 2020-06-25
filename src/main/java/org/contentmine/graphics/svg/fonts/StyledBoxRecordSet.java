@@ -7,8 +7,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.Util;
@@ -36,14 +36,10 @@ import com.google.common.collect.Multiset.Entry;
  */
 public class StyledBoxRecordSet implements Iterable<StyleRecord> {
 	private static final String ITA = "#ffeeee";
-	private static final Logger LOG = Logger.getLogger(StyledBoxRecordSet.class);
+	private static final Logger LOG = LogManager.getLogger(StyledBoxRecordSet.class);
 	private static final double YMIN = 50;
 	private static final double YMAX = 750;
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private Map<String, StyleRecord> styleRecordByStyle;
+private Map<String, StyleRecord> styleRecordByStyle;
 	private Multimap<String, StyleRecord> styleRecordByFontName;
 	private Multimap<Double, StyleRecord> styleRecordByFontSize;
 	private Multimap<String, StyleRecord> styleRecordByFontWeight;

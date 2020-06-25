@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.DebugPrint;
 import org.contentmine.eucl.euclid.Real;
@@ -42,12 +42,8 @@ public class SVGDocumentProcessor {
 	private static final double DEFAULT_TAB_FONT_SIZE = 12.5;
 	private static final double DEFAULT_FIG_FONT_SIZE = 12.5;
 	private static final String RELATIVE_IMAGES_DIR = "./images";
-	private static final Logger LOG = Logger.getLogger(SVGDocumentProcessor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String SUB_SECTION = "subSection";
+	private static final Logger LOG = LogManager.getLogger(SVGDocumentProcessor.class);
+private static final String SUB_SECTION = "subSection";
 	private static final String RUNNING = "running";
 	private static final String PAGE = "page";
 	private static final String SECTION = "section";
@@ -323,7 +319,7 @@ public class SVGDocumentProcessor {
 			span.setClassAttribute(IMAGE);
 			HtmlImg img = new HtmlImg();
 			String textS = text.getText();
-			DebugPrint.debugPrint(Level.DEBUG, ">IMG>"+textS);
+			LOG.debug(DebugPrint.MARKER, ">IMG>"+textS);
 			// image.5.1[432*533]
 			String pageSerialS = textS.substring("image.".length(), textS.indexOf("["));
 			img.setSrc(RELATIVE_IMAGES_DIR + "/" + PAGE + CTree.DOT + pageSerialS + CTree.DOT + CTree.PNG);

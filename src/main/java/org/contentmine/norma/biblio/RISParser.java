@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.HtmlDiv;
 
 public class RISParser extends BiblioParser {
@@ -98,12 +98,8 @@ public class RISParser extends BiblioParser {
 	    main()
 }
 */
-	public static final Logger LOG = Logger.getLogger(RISParser.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	static Map<String, String> FIELD_MAP =  new HashMap<String, String>();
+	public static final Logger LOG = LogManager.getLogger(RISParser.class);
+static Map<String, String> FIELD_MAP =  new HashMap<String, String>();
 	static Set<String> UNKNOWN_KEYS =  new HashSet<String>();
 	public final static String SPACE_DASH = "  - ";
 	List<RISEntry> entryList;

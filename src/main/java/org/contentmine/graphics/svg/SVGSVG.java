@@ -22,8 +22,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.xml.XMLConstants;
@@ -42,13 +42,9 @@ import nu.xom.Node;
  */
 public class SVGSVG extends SVGElement {
 
-	private static final Logger LOG = Logger.getLogger(SVGSVG.class);
+	private static final Logger LOG = LogManager.getLogger(SVGSVG.class);
 	
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public final static String TAG = "svg";
+public final static String TAG = "svg";
 	private static String svgSuffix = "svg";
 	private static final Double BBOX_MARGIN_X = 10.0;
 	private static final Double BBOX_MARGIN_Y = 10.0;

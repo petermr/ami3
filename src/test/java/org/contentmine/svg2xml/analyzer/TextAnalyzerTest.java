@@ -4,7 +4,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealArray;
 import org.contentmine.eucl.euclid.test.StringTestBase;
@@ -25,7 +26,7 @@ import com.google.common.collect.Multiset;
 
 public class TextAnalyzerTest {
 
-	private final static Logger LOG = Logger.getLogger(TextAnalyzerTest.class);
+	private final static Logger LOG = LogManager.getLogger(TextAnalyzerTest.class);
 
 	private final static char MINUS = (char)8722;
 	private final static char WHITE_BULLET = (char)9702;

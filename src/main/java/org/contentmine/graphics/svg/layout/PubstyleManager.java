@@ -9,8 +9,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.svg.SVGElement;
@@ -29,11 +29,8 @@ import org.contentmine.graphics.util.FilePathGlobber;
  *
  */
 public class PubstyleManager {
-	public static final Logger LOG = Logger.getLogger(PubstyleManager.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final String RESOURCE_ROOT = "resourceRoot";
+	public static final Logger LOG = LogManager.getLogger(PubstyleManager.class);
+private static final String RESOURCE_ROOT = "resourceRoot";
 	private static final String PUBSTYLE_RESOURCE_ROOT = "pubstyle.resource.root";
 	private static final String PUBSTYLE_PROPERTIES = "pubstyle.properties";
 	private static final String PUBSTYLE_FILE_NAME = "pubstyle.file";

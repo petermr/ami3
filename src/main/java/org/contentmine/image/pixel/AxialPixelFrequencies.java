@@ -2,8 +2,8 @@ package org.contentmine.image.pixel;
 
 import java.awt.image.BufferedImage;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.RealArray;
 
@@ -15,11 +15,8 @@ import org.contentmine.eucl.euclid.RealArray;
 public class AxialPixelFrequencies {
     
 
-	private static final Logger LOG = Logger.getLogger(AxialPixelFrequencies.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private MainPixelProcessor mainPixelProcessor;
+	private static final Logger LOG = LogManager.getLogger(AxialPixelFrequencies.class);
+private MainPixelProcessor mainPixelProcessor;
 	private IntArray xFrequencies;
 	private IntArray yFrequencies;
 

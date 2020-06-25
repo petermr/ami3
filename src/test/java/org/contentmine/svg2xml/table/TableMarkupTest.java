@@ -3,8 +3,8 @@ package org.contentmine.svg2xml.table;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntRange;
 import org.contentmine.graphics.html.HtmlHtml;
 import org.contentmine.graphics.svg.SVGElement;
@@ -17,12 +17,8 @@ import org.junit.Test;
 @Ignore // old style
 public class TableMarkupTest {
 
-	public static final Logger LOG = Logger.getLogger(TableMarkupTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	public static final Logger LOG = LogManager.getLogger(TableMarkupTest.class);
+@Test
 	public void testHeaderRowList() {
 		File inputFile = new File(SVG2XMLFixtures.TABLE_DIR, "LWW61463_TABLE1..image.g.2.9.svg");
 		TableContentCreator tableContentCreator = new TableContentCreator(); 

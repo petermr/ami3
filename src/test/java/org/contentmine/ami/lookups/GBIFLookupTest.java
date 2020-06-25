@@ -5,8 +5,8 @@ import java.io.File;
 import java.io.FileOutputStream;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -18,12 +18,8 @@ public class GBIFLookupTest {
 
 	
 	private static final String CANONICAL_NAME_PATH = "$.results[0].canonicalName";
-	public static final Logger LOG = Logger.getLogger(GBIFLookupTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	public static final Logger LOG = LogManager.getLogger(GBIFLookupTest.class);
+@Test
 	@Ignore // LOOKUP // comment out if running offline or on Jenkins
 	public void testLookupCommonName() throws Exception {
 		AbstractLookup gbifLookup = new GBIFLookup();

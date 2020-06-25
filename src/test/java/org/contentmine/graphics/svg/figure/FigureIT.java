@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.figure;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGElement;
@@ -20,12 +20,8 @@ import org.junit.Test;
 
 //@Ignore("This really should be in POM or CL")
 public class FigureIT {
-	private static final Logger LOG = Logger.getLogger(FigureIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(FigureIT.class);
+@Test
 	/** figure has 2 subpanels (molecules).
 	 * NO separating lines - all done by whitespace
 	 * at this stage just simple horizontal and vertical lines

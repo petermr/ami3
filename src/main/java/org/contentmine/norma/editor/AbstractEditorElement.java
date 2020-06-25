@@ -2,8 +2,8 @@ package org.contentmine.norma.editor;
 
 import java.io.InputStream;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Comment;
@@ -102,12 +102,8 @@ and
 
 public abstract class AbstractEditorElement extends Element {
 
-	public static final Logger LOG = Logger.getLogger(AbstractEditorElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	protected AbstractEditorElement(String tag) {
+	public static final Logger LOG = LogManager.getLogger(AbstractEditorElement.class);
+protected AbstractEditorElement(String tag) {
 		super(tag);
 	}
 	

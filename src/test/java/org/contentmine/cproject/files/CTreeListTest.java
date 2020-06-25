@@ -1,7 +1,7 @@
 package org.contentmine.cproject.files;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.CHESConstants;
 import org.contentmine.cproject.CMineFixtures;
 import org.junit.Assert;
@@ -10,12 +10,8 @@ import org.junit.Test;
 
 public class CTreeListTest {
 
-	private static final Logger LOG = Logger.getLogger(CTreeListTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(CTreeListTest.class);
+@Test
 	public void testFileOrder() {
 		CProject cProject = new CProject(CMineFixtures.TEST_SAMPLE);
 		CTreeList cTreeList = cProject.getOrCreateCTreeList();

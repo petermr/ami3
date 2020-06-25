@@ -10,7 +10,8 @@ import java.util.Set;
 import nu.xom.Attribute;
 import nu.xom.Element;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.graphics.svg.SVGElement;
@@ -23,7 +24,7 @@ import com.google.common.collect.Multimap;
 public class NexmlTree extends NexmlElement {
 
 	private static final String TYPE = "type";
-	private final static Logger LOG = Logger.getLogger(NexmlTree.class);
+	private final static Logger LOG = LogManager.getLogger(NexmlTree.class);
 	public final static String TAG = "tree";
 	
 	private List<NexmlNode> nodeList;

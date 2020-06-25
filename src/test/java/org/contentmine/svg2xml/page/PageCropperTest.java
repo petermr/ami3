@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGSVG;
@@ -21,12 +21,8 @@ import org.junit.Test;
  *
  */
 public class PageCropperTest {
-	private static final Logger LOG = Logger.getLogger(PageCropperTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(PageCropperTest.class);
+@Test
 	public void testMaterialsCrop() {
 		PageCropper cropper = new PageCropper();
 		cropper.setTLBRUserMediaBox(new Real2(0, 800), new Real2(600, 0));

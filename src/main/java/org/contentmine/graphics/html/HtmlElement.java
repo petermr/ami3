@@ -25,7 +25,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.AbstractCMElement;
@@ -142,7 +143,7 @@ VAR 	  	  	  	  	  	instance of a variable or program argument
 public abstract class HtmlElement extends AbstractCMElement {
 
 
-	private final static Logger LOG = Logger.getLogger(HtmlElement.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlElement.class);
 
 
 

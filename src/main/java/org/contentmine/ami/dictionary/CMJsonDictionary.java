@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.cproject.util.RectTabColumn;
 import org.contentmine.cproject.util.RectangularTable;
@@ -60,12 +60,8 @@ import nu.xom.Element;
  */
 public class CMJsonDictionary {
 
-	private static final Logger LOG = Logger.getLogger(CMJsonDictionary.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String EXT_ID = "ext_id";
+	private static final Logger LOG = LogManager.getLogger(CMJsonDictionary.class);
+private static final String EXT_ID = "ext_id";
 	private static final String Q = "q";
 	private static final String DICTIONARY = "dictionary";
 	private static final String NAME = "name";

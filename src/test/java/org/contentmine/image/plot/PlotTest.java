@@ -6,7 +6,8 @@ import java.io.IOException;
 import java.util.List;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.Real2;
@@ -46,7 +47,7 @@ public class PlotTest {
 
 	private static final String CYAN = "cyan";
 
-	public final static Logger LOG = Logger.getLogger(PlotTest.class);
+	public final static Logger LOG = LogManager.getLogger(PlotTest.class);
 
 	public final static String SHARK = "0095565.g002";
 //	public final static File G002_DIR = new File(ImageAnalysisFixtures.COMPOUND_DIR,

@@ -9,8 +9,8 @@ import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.norma.NAConstants;
 import org.junit.Before;
 import org.junit.Test;
@@ -24,12 +24,8 @@ import org.junit.Test;
 public class TesseractTest {
 
 	
-	private static final Logger LOG = Logger.getLogger(TesseractTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private static final File TESSERACTED_DIR = new File(NAConstants.TEST_AMI_DIR+"/word/peterijsem/tesseracted/");
+	private static final Logger LOG = LogManager.getLogger(TesseractTest.class);
+private static final File TESSERACTED_DIR = new File(NAConstants.TEST_AMI_DIR+"/word/peterijsem/tesseracted/");
 	private static final File TESS_CLEAN_DIR = new File("target/peterijsem/tessclean/");
 //	private static final Pattern SPEC_STRAIN_ACCESS = Pattern.compile("([A-Z](?:\\.|[a-z]+)\\s*(.*)\\s*\\(([A-Z]{1,2}\\d{1,6})\\)\\s*");
 	private static final Pattern SPEC_STRAIN_ACCESS = Pattern.compile("([A-Z](?:\\.|[a-z]+)\\s+[a-z]+)\\s*(.*)\\s+\\(([A-Z]{1,2}\\d{5,6})\\)\\s*");

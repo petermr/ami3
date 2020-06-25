@@ -1,7 +1,7 @@
 package org.contentmine.ami.plugins.sequence;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMIArgProcessor;
 import org.contentmine.cproject.args.ArgIterator;
 import org.contentmine.cproject.args.ArgumentOption;
@@ -15,12 +15,8 @@ import org.contentmine.eucl.euclid.IntRange;
 public class SequenceArgProcessor extends AMIArgProcessor {
 	
 	
-	public static final Logger LOG = Logger.getLogger(SequenceArgProcessor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private IntRange lengthRange;
+	public static final Logger LOG = LogManager.getLogger(SequenceArgProcessor.class);
+private IntRange lengthRange;
 
 	public SequenceArgProcessor() {
 		super();

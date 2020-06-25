@@ -23,7 +23,8 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGImage;
@@ -32,7 +33,7 @@ import org.contentmine.image.ImageUtil;
 
 public class HiddenGraphics {
 
-	private final static Logger LOG = Logger.getLogger(HiddenGraphics.class);
+	private final static Logger LOG = LogManager.getLogger(HiddenGraphics.class);
 	
 	private static final String PNG = "png";
 	private Dimension dimension;

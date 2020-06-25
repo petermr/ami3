@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.graphics.svg.SVGElement;
 
@@ -17,11 +17,8 @@ import org.contentmine.graphics.svg.SVGElement;
  *
  */
 public class SVG2SVGConverter {
-	private static final Logger LOG = Logger.getLogger(SVG2SVGConverter.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final String ANTICLOCK90 = "anticlock90";
+	private static final Logger LOG = LogManager.getLogger(SVG2SVGConverter.class);
+private static final String ANTICLOCK90 = "anticlock90";
 	private static final String CLOCK90 = "clock90";
 	private static final String ROTATE = "rotate";
 	

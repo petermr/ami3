@@ -16,7 +16,8 @@
 
 package org.contentmine.eucl.euclid;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  * square matrix class
@@ -54,7 +55,7 @@ public class IntSquareMatrix extends IntMatrix {
             this.i = i;
         }
     }
-    final static Logger LOG = Logger.getLogger(IntSquareMatrix.class);
+    final static Logger LOG = LogManager.getLogger(IntSquareMatrix.class);
     /**
      * Constructor. This gives a default matrix with cols = rows = 0.
      */

@@ -7,8 +7,8 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.schema.FileSet;
 
 /** traverses the actual files in an existing CProject 
@@ -18,12 +18,8 @@ import org.contentmine.cproject.files.schema.FileSet;
  *
  */
 public class CContainerTraverser {
-	private static final Logger LOG = Logger.getLogger(CContainerTraverser.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private List<File> directoryList;
+	private static final Logger LOG = LogManager.getLogger(CContainerTraverser.class);
+private List<File> directoryList;
 	private List<File> fileList;
 	protected CContainer cContainer;
 

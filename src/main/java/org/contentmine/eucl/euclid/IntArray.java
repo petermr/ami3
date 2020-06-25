@@ -26,7 +26,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.util.MultisetUtil;
 
 import com.google.common.collect.HashMultiset;
@@ -49,7 +50,7 @@ import com.google.common.collect.Multiset.Entry;
  * @author (C) P. Murray-Rust, 1996
  */
 public class IntArray extends ArrayBase implements Iterable<Integer> {
-    final static Logger LOG = Logger.getLogger(IntArray.class);
+    final static Logger LOG = LogManager.getLogger(IntArray.class);
     /**
      * maximum number of elements (for bound checking)
      * 

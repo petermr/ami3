@@ -10,8 +10,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.norma.NAConstants;
 
 import com.google.common.collect.ArrayListMultimap;
@@ -19,12 +19,8 @@ import com.google.common.collect.Multimap;
 
 public class NameMultimap {
 
-	public static final Logger LOG = Logger.getLogger(NameMultimap.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String SPECIES_LIST = NAConstants.PLUGINS_SPECIES+"/speciesFromLinnaeus.tsv";
+	public static final Logger LOG = LogManager.getLogger(NameMultimap.class);
+private static final String SPECIES_LIST = NAConstants.PLUGINS_SPECIES+"/speciesFromLinnaeus.tsv";
 	
 	private Multimap<String, String> nameByKeyMap;
 	private Multimap<String, String> keyByNameMap;

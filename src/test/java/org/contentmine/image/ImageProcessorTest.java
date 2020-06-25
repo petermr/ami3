@@ -3,8 +3,8 @@ package org.contentmine.image;
 import java.io.File;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealRange;
 import org.contentmine.graphics.svg.util.ImageIOUtil;
@@ -20,12 +20,8 @@ public class ImageProcessorTest {
 
 	
 
-	private static final Logger LOG = Logger.getLogger(ImageProcessorTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private ImageProcessor PROCESSOR;
+	private static final Logger LOG = LogManager.getLogger(ImageProcessorTest.class);
+private ImageProcessor PROCESSOR;
 	
 	@Before
 	public void setUp() {

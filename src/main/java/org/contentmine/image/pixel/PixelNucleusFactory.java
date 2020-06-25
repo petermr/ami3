@@ -7,7 +7,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.image.pixel.PixelNucleus.PixelJunctionType;
 import org.contentmine.image.pixel.nucleus.CrossNucleus;
 import org.contentmine.image.pixel.nucleus.DotNucleus;
@@ -46,8 +47,7 @@ import org.contentmine.image.pixel.nucleus.TwoWayNucleus;
  */
 public class PixelNucleusFactory {
 
-	private final static Logger LOG = Logger
-			.getLogger(PixelNucleusFactory.class);
+	private final static Logger LOG = LogManager.getLogger(PixelNucleusFactory.class);
 
 	private PixelNucleusList fourWayJunctionList;
 	private PixelNucleusList eightPlusPixelJunctionList;

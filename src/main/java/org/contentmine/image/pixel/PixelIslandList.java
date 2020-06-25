@@ -10,7 +10,8 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.CHESConstants;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.Int2Range;
@@ -42,7 +43,7 @@ import com.google.common.collect.Multimap;
 public class PixelIslandList implements Iterable<PixelIsland> {
 
 	private static final int MAXPIXEL = 6000;
-	private final static Logger LOG = Logger.getLogger(PixelIslandList.class);
+	private final static Logger LOG = LogManager.getLogger(PixelIslandList.class);
 
 	public enum Operation {
 		BINARIZE, DEHYPOTENUSE, THIN

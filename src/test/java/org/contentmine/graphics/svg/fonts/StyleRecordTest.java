@@ -4,8 +4,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.RealArray;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGElement;
@@ -20,12 +20,8 @@ import com.google.common.collect.Multiset;
 import junit.framework.Assert;
 
 public class StyleRecordTest {
-	private static final Logger LOG = Logger.getLogger(StyleRecordTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(StyleRecordTest.class);
+@Test
 	/** get all italic styles (there are 3)
 	 * 
 	 */

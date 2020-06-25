@@ -6,8 +6,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.metadata.AbstractMetadata.Type;
 import org.contentmine.cproject.util.CMineUtil;
@@ -22,12 +22,8 @@ import net.minidev.json.JSONArray;
 
 public class GetPapers {
 
-	private static final Logger LOG = Logger.getLogger(GetPapers.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final String PMCID = ".pmcid";
+	private static final Logger LOG = LogManager.getLogger(GetPapers.class);
+public static final String PMCID = ".pmcid";
 	
 	private String jsonPath;
 

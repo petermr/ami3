@@ -10,7 +10,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.pdfbox.encoding.Encoding;
 import org.contentmine.graphics.svg.SVGPath;
 import org.contentmine.pdf2svg.AMIFont;
@@ -24,7 +25,7 @@ public class XMLLogger {
 
 
 
-	private final static Logger LOG = Logger.getLogger(XMLLogger.class);
+	private final static Logger LOG = LogManager.getLogger(XMLLogger.class);
 
 	private static final String BASEFONT = "basefont";
 	private static final String CHARACTER = "character";

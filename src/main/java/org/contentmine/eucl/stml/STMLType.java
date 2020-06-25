@@ -20,8 +20,8 @@ import java.text.NumberFormat;
 import java.text.ParseException;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.xml.XMLConstants;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -42,12 +42,8 @@ import nu.xom.Node;
  */
 public class STMLType implements XMLConstants {
 
-	private static final Logger LOG = Logger.getLogger(STMLType.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-    /** dewisott */
+	private static final Logger LOG = LogManager.getLogger(STMLType.class);
+/** dewisott */
 	public final static String NO_BASE = "Cannot find base: ";
 
 	protected String summary = "";

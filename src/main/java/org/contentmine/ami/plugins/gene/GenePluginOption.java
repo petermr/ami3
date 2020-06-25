@@ -2,19 +2,15 @@ package org.contentmine.ami.plugins.gene;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMIPluginOption;
 import org.contentmine.cproject.util.CellRenderer;
 
 public class GenePluginOption extends AMIPluginOption {
 
-	private static final Logger LOG = Logger.getLogger(GenePluginOption.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public final static String TAG = "gene";
+	private static final Logger LOG = LogManager.getLogger(GenePluginOption.class);
+public final static String TAG = "gene";
 
 	public GenePluginOption() {
 		super(TAG);

@@ -3,8 +3,8 @@ package org.contentmine.norma.sections;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlSpan;
 
@@ -12,12 +12,8 @@ import nu.xom.Element;
 
 public class JATSSpanFactory {
 
-	private static final Logger LOG = Logger.getLogger(JATSSpanFactory.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}  
-	
-	public final static String ACCESS_DATE = "access-date";
+	private static final Logger LOG = LogManager.getLogger(JATSSpanFactory.class);
+public final static String ACCESS_DATE = "access-date";
 	public final static String ALT_TEXT = "alt-text";
 	public final static String ANNOTATION = "annotation";
 	public final static String ARTICLE_ID = "article-id";

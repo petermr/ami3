@@ -1,12 +1,13 @@
 package org.contentmine.norma.tagger.bmc;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.norma.NAConstants;
 import org.contentmine.norma.tagger.PubstyleTagger;
 
 public class HTMLBmcTagger extends PubstyleTagger {
 
-	private final static Logger LOG = Logger.getLogger(HTMLBmcTagger.class);
+	private final static Logger LOG = LogManager.getLogger(HTMLBmcTagger.class);
 
 	public final static String BMC = "bmc";
 	

@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.RegexPathFilter;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlScript;
@@ -15,12 +15,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class HtmlButtonDisplayTest {
-	private static final Logger LOG = Logger.getLogger(HtmlButtonDisplayTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(HtmlButtonDisplayTest.class);
+@Test
 	public void testFiles() throws IOException {
 		String cTreeName = "html5/10.1016_j.pain.2014.08.023";
 		File file = new File(NormaFixtures.TEST_TABLE_DIR, cTreeName);

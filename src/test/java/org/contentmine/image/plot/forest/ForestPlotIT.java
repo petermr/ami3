@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.graphics.svg.util.ImageIOUtil;
@@ -25,12 +25,8 @@ import boofcv.io.image.UtilImageIO;
 import junit.framework.Assert;
 
 public class ForestPlotIT {
-	private static final Logger LOG = Logger.getLogger(ForestPlotIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(ForestPlotIT.class);
+@Test
 	/** blue posterized
 	 * 
 	 */

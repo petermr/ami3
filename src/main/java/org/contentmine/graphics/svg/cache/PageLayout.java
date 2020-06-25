@@ -4,8 +4,8 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.CHESConstants;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.graphics.AbstractCMElement;
@@ -19,12 +19,8 @@ import org.contentmine.graphics.svg.SVGUtil;
  *
  */
 public class PageLayout {
-	private static final Logger LOG = Logger.getLogger(PageLayout.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final String LAYOUT_TOP = "/" + CHESConstants.ORG_CM_GRAPHICS+"/"+ "layout";
+	private static final Logger LOG = LogManager.getLogger(PageLayout.class);
+public static final String LAYOUT_TOP = "/" + CHESConstants.ORG_CM_GRAPHICS+"/"+ "layout";
 	
 	public static final String MEDIABOX = "mediabox";
 	public static final String BODY = "body";

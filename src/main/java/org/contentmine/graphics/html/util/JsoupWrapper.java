@@ -1,16 +1,12 @@
 package org.contentmine.graphics.html.util;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.jsoup.Jsoup;
 
 public class JsoupWrapper {
-	private static final Logger LOG = Logger.getLogger(JsoupWrapper.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public JsoupWrapper() {
+	private static final Logger LOG = LogManager.getLogger(JsoupWrapper.class);
+public JsoupWrapper() {
 		
 	}
 	

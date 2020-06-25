@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
@@ -34,12 +34,8 @@ import nu.xom.Element;
  *
  */
 public class TTemplate extends AbstractTTElement {
-	private static final Logger LOG = Logger.getLogger(TTemplate.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private static final String OR = "OR";
+	private static final Logger LOG = LogManager.getLogger(TTemplate.class);
+private static final String OR = "OR";
 
 	public static String TAG = "template";
 	

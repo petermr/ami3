@@ -9,8 +9,8 @@ import java.util.List;
 import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 
 import com.google.common.collect.ArrayListMultimap;
@@ -20,12 +20,8 @@ import com.google.common.collect.Multiset;
 
 public class ObservationCollection {
 
-	private static final Logger LOG = Logger.getLogger(ObservationCollection.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private EssoilDB essoilDB;
+	private static final Logger LOG = LogManager.getLogger(ObservationCollection.class);
+private EssoilDB essoilDB;
 	private List<Observation> normalizedDataList;
 	private Multimap<String, Observation> observationByTrivialName;
 	private List<Observation> observationListWithUniqueTrivialNames;

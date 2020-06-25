@@ -16,14 +16,15 @@
 
 package org.contentmine.graphics.html;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 /** 
  *  @author pm286
  */
 public class HtmlH6 extends HtmlElement {
-	private final static Logger LOG = Logger.getLogger(HtmlH6.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlH6.class);
 	public final static String TAG = "h6";
 
 	/** constructor.

@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.lucene.util.packed.DirectMonotonicReader.Meta;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.metadata.AbstractMetadata.HtmlMetadataScheme;
@@ -181,11 +181,7 @@ description = {
 })
 public class AMIMetadataTool extends AbstractAMITool {
 
-	private static final Logger LOG = Logger.getLogger(AMIMetadataTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
+	private static final Logger LOG = LogManager.getLogger(AMIMetadataTool.class);
 //	interface ToolMethod {
 //		public void runMe();
 //	}

@@ -2,8 +2,8 @@ package org.contentmine.graphics.layout;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.cache.PageCache;
@@ -16,12 +16,8 @@ import org.contentmine.graphics.svg.util.SuperPixelArray;
  *
  */
 public class SuperPixelArrayManager {
-	private static final Logger LOG = Logger.getLogger(SuperPixelArrayManager.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private SuperPixelArray leftPageSPA;
+	private static final Logger LOG = LogManager.getLogger(SuperPixelArrayManager.class);
+private SuperPixelArray leftPageSPA;
 	private SuperPixelArray rightPageSPA;
 	private SuperPixelArray titlePageSPA;
 	private SuperPixelArray backPageSPA;

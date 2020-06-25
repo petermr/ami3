@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.CMineFixtures;
 import org.contentmine.cproject.util.RectangularTable;
 import org.junit.Assert;
@@ -25,12 +25,8 @@ import org.junit.Test;
 
 public class CrossrefQuickscrapeTest {
 
-	public static final Logger LOG = Logger.getLogger(CrossrefQuickscrapeTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static String CR = MetadataManager.CROSSREF;
+	public static final Logger LOG = LogManager.getLogger(CrossrefQuickscrapeTest.class);
+private static String CR = MetadataManager.CROSSREF;
 	private static String DOI = MetadataManager.DOI;
 	private static String QS = MetadataManager.QS;
 

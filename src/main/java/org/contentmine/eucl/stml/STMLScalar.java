@@ -18,7 +18,8 @@ package org.contentmine.eucl.stml;
 
 import java.text.ParseException;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.JodaDate;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.stml.attribute.DictRefAttribute;
@@ -38,7 +39,7 @@ import nu.xom.Node;
  */
 public class STMLScalar extends STMLElement implements HasUnits, HasScalar, HasDictRef, HasDataType {
 	@SuppressWarnings("unused")
-	private static Logger LOG = Logger.getLogger(STMLScalar.class);
+	private static Logger LOG = LogManager.getLogger(STMLScalar.class);
 	public final static String TAG = "scalar";
 
 	/**

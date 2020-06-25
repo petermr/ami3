@@ -1,6 +1,7 @@
 package org.contentmine.pdf2svg.cmap;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.font.UnicodePoint;
 
 /**
@@ -18,7 +19,7 @@ import org.contentmine.font.UnicodePoint;
  */
 public class CMapPoint {
 
-	private static final Logger LOG = Logger.getLogger(CMapPoint.class);
+	private static final Logger LOG = LogManager.getLogger(CMapPoint.class);
 	public static final CMapPoint NULL = new CMapPoint(0); // this is Unicode NULL
 	
 	private Integer unicodePointValue;

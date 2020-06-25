@@ -3,8 +3,8 @@ package org.contentmine.ami;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMIArgProcessor;
 import org.contentmine.ami.plugins.CommandProcessor;
 import org.contentmine.ami.plugins.species.SpeciesArgProcessor;
@@ -18,12 +18,8 @@ import org.junit.Test;
 public class TutorialIT {
 
 	;
-	private static final Logger LOG = Logger.getLogger(TutorialIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	/** for cleaning XSLT
+	private static final Logger LOG = LogManager.getLogger(TutorialIT.class);
+/** for cleaning XSLT
 	 * 
 	 * @throws IOException
 	 */

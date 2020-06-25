@@ -14,7 +14,8 @@ import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Angle.Units;
 import org.contentmine.eucl.euclid.Axis.Axis2;
@@ -81,7 +82,7 @@ public class DiagramAnalyzer {
 
 	private static final String ROOT_REGEX = "\\$\\{root\\}";
 
-	private final static Logger LOG = Logger.getLogger(DiagramAnalyzer.class);
+	private final static Logger LOG = LogManager.getLogger(DiagramAnalyzer.class);
 
 	private static final String TARGET = "target/";
 

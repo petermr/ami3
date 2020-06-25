@@ -5,7 +5,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.util.ImageIOUtil;
 import org.contentmine.image.ImageAnalysisFixtures;
 import org.contentmine.image.ImageProcessor;
@@ -23,7 +24,7 @@ public class PlotTestIT {
 
 	private static final String CYAN = "cyan";
 
-	public final static Logger LOG = Logger.getLogger(PlotTest.class);
+	public final static Logger LOG = LogManager.getLogger(PlotTest.class);
 
 	public final static String SHARK = "0095565.g002";
 //	public final static File G002_DIR = new File(ImageAnalysisFixtures.COMPOUND_DIR,

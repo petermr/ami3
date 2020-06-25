@@ -2,8 +2,8 @@ package org.contentmine.cproject.metadata.crossref;
 
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.metadata.JsonUtils;
 
 import com.google.gson.JsonElement;
@@ -32,12 +32,8 @@ public class CRFunder {
 	private static final String DOI = "DOI";
 	private static final String NAME = "name";
 	private static final String AWARD = "award";
-	private static final Logger LOG = Logger.getLogger(CRFunder.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private String award;
+	private static final Logger LOG = LogManager.getLogger(CRFunder.class);
+private String award;
 	private String name;
 	private String doi;
 	

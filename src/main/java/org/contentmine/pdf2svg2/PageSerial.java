@@ -1,7 +1,7 @@
 package org.contentmine.pdf2svg2;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** identifier for page and subcomponents
  * 
@@ -19,12 +19,8 @@ import org.apache.log4j.Logger;
  * */
 
 public class PageSerial implements Comparable {
-	private static final Logger LOG = Logger.getLogger(PageSerial.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private Integer zeroBasedPage;
+	private static final Logger LOG = LogManager.getLogger(PageSerial.class);
+private Integer zeroBasedPage;
 	private Integer zeroBasedSubPage;
 
 	private PageSerial() {

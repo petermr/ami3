@@ -1,7 +1,7 @@
 package org.contentmine.image.pixel;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** holds annotation data and methods for PixelIslands.
  * 
@@ -9,12 +9,8 @@ import org.apache.log4j.Logger;
  *
  */
 public class PixelIslandAnnotation {
-	private static final Logger LOG = Logger.getLogger(PixelIslandAnnotation.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private String internalRingName;
+	private static final Logger LOG = LogManager.getLogger(PixelIslandAnnotation.class);
+private String internalRingName;
 	private boolean plotInternalRings;
 	private String islandName;
 	private boolean plotIsland;

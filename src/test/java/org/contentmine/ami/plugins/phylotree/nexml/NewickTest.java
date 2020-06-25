@@ -3,8 +3,8 @@ package org.contentmine.ami.plugins.phylotree.nexml;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.phylotree.nexml.NWKTree;
 import org.contentmine.ami.plugins.phylotree.nexml.NewickFactory;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -17,13 +17,8 @@ import nu.xom.Element;
 
 public class NewickTest {
 
-	private static final Logger LOG = Logger.getLogger(NewickTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-
-	public final static String NEWICK = ""
+	private static final Logger LOG = LogManager.getLogger(NewickTest.class);
+public final static String NEWICK = ""
 			+ "((Pyramidobacter_piscolens:293,Thermotoga_maritime:349):11,(Synechocoocus_elongatus:350,((Chloroflexus_aurantiacus:363,"
 			+ "(((((Pseudomonas_aeruginosa:238,(Escherichia_coli:178,Haemophilus_influenzae:214):53):37,(Neisseria_gonorrhoeae:247,"
 			+ "Bordetella_pertussis:247):28):53,(Ehrlichia_chaffeensis:324,(Caulobacter_crescentus:259,Ochrobactrum_anthropi:246):58):40):16,"

@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.core.WhitespaceAnalyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
@@ -28,12 +28,8 @@ import org.junit.Test;
  */
 public class LuceneTokenizationTest {
 
-	private static final Logger LOG = Logger.getLogger(LuceneTokenizationTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	File targetDir = new File("target/plos10/e0115544/");
+	private static final Logger LOG = LogManager.getLogger(LuceneTokenizationTest.class);
+File targetDir = new File("target/plos10/e0115544/");
 	private String value;
 	private Analyzer whitespaceAnalyzer;
 	public static String goldilocks = "Goldilocks and the three bears";

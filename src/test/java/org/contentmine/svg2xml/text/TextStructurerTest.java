@@ -6,7 +6,8 @@ import java.util.List;
 import java.util.Set;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.graphics.AbstractCMElement;
@@ -36,7 +37,7 @@ public class TextStructurerTest {
 	public static File OUTPUT_TEXT_DIR = new File("target/text/");
 	private static final File ROTATED_PHRASE_FILE_1 = new File(OUTPUT_TEXT_DIR, "phraseRotate1.svg");
 
-	private final static Logger LOG = Logger.getLogger(TextStructurerTest.class);
+	private final static Logger LOG = LogManager.getLogger(TextStructurerTest.class);
 	
 	private static final String GEOTABLE_7 = "geotable-7.";
 	private List<File> geoFileList;

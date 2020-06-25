@@ -26,7 +26,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.ArrayBase;
 import org.contentmine.eucl.euclid.Axis.Axis2;
 import org.contentmine.eucl.euclid.Real;
@@ -62,7 +63,7 @@ public abstract class SVGPoly extends SVGShape {
 	private static final String Y2 = "y2";
 
 	@SuppressWarnings("unused")
-	private static Logger LOG = Logger.getLogger(SVGPoly.class);
+	private static Logger LOG = LogManager.getLogger(SVGPoly.class);
 	
 	public final static String MONOTONIC = "monotonic";
 	public final static String POINTS = "points";

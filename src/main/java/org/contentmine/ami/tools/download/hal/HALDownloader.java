@@ -2,8 +2,8 @@ package org.contentmine.ami.tools.download.hal;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.download.AbstractDownloader;
 import org.contentmine.ami.tools.download.AbstractMetadataEntry;
 import org.contentmine.ami.tools.download.HitList;
@@ -47,11 +47,8 @@ public class HALDownloader extends AbstractDownloader {
 	private static final String HIGHWIRE_CITE_EXTRAS = "highwire-cite-extras";
 //	private static final String CITE_EXTRAS_DIV = ".//*[local-name()='"+HtmlDiv.TAG+"' and @class='" + HIGHWIRE_CITE_EXTRAS + "']";
 
-	static final Logger LOG = Logger.getLogger(HALDownloader.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final String HIGHWIRE_SEARCH_RESULTS_LIST = "highwire-search-results-list";
+	static final Logger LOG = LogManager.getLogger(HALDownloader.class);
+private static final String HIGHWIRE_SEARCH_RESULTS_LIST = "highwire-search-results-list";
 	
 	public static final String HAL_HOST = "hal.archives-ouvertes.fr";
 	public static final String HAL_BASE = HTTPS + P2H + HAL_HOST;

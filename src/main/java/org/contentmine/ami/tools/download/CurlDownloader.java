@@ -7,8 +7,8 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 
 /** wraps curl in java process
@@ -19,12 +19,8 @@ import org.contentmine.cproject.util.CMineUtil;
 public class CurlDownloader {
 	private static final String TRACE_TIME = "--trace-time";
 	private static final String TRACE_ASCII = "--trace-ascii";
-	private static final Logger LOG = Logger.getLogger(CurlDownloader.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public final static String CURL = "curl";
+	private static final Logger LOG = LogManager.getLogger(CurlDownloader.class);
+public final static String CURL = "curl";
 	public final static String _OUT = "-o";
 	private static final String GET = "GET";
 	private static final String CURL_X = "-X";

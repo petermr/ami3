@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.text;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.svg.SVGG;
 
@@ -21,12 +21,8 @@ import nu.xom.Element;
 public class SVGWordPara extends SVGG {
 
 	
-	private static final Logger LOG = Logger.getLogger(SVGWordPara.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final String CLASS = "para";
+	private static final Logger LOG = LogManager.getLogger(SVGWordPara.class);
+public static final String CLASS = "para";
 	
 	public SVGWordPara() {
 		super();

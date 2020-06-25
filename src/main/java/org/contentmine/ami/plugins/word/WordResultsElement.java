@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMIArgProcessor;
 import org.contentmine.cproject.files.ResultElement;
 import org.contentmine.cproject.files.ResultsElement;
@@ -30,13 +30,8 @@ import org.contentmine.eucl.xml.XMLUtil;
 public class WordResultsElement extends ResultsElement {
 
 	
-	private static final Logger LOG = Logger
-			.getLogger(WordResultsElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private Set<String> wordSet;
+	private static final Logger LOG = LogManager.getLogger(WordResultsElement.class);
+private Set<String> wordSet;
 
 	public WordResultsElement(String title) {
 		super(title);

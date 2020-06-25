@@ -8,8 +8,8 @@ import java.io.InputStream;
 import java.util.HashMap;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
 import org.contentmine.ami.dictionary.DictionaryTerm;
 import org.contentmine.norma.NAConstants;
@@ -33,12 +33,8 @@ MGI:87854	Gene	Pzp	pregnancy zone protein	GRCm38	11287	6	128483567	128526720	-	E
  */
 public class JAXDictionary extends DefaultAMIDictionary {
 
-	private static final Logger LOG = Logger.getLogger(JAXDictionary.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private final static File JAX_DIR = new File(GENE_DIR, "jax");
+	private static final Logger LOG = LogManager.getLogger(JAXDictionary.class);
+private final static File JAX_DIR = new File(GENE_DIR, "jax");
 	private final static File JAX_TSV_FILE = new File(JAX_DIR, "MGI_Gene_Model_Coord.tsv");
 	private final static File JAX_XML_FILE = new File(JAX_DIR, "jax.xml");
 	

@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.joda.time.DateTime;
@@ -21,12 +21,8 @@ import nu.xom.Node;
 public class AbstractLogElement extends Element {
 
 	private static final String MILLIS = "millis";
-	private static final Logger LOG = Logger.getLogger(AbstractLogElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public enum LogLevel {
+	private static final Logger LOG = LogManager.getLogger(AbstractLogElement.class);
+public enum LogLevel {
 		ERROR(4),
 		WARN(3),
 		INFO(2),
@@ -203,6 +199,7 @@ public class AbstractLogElement extends Element {
 		return currentLevel;
 	}
 
+	@Deprecated
 	public void setLevel(LogLevel currentLevel) {
 		this.currentLevel = currentLevel;
 	}

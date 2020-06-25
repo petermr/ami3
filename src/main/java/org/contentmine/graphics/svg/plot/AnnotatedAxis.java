@@ -2,8 +2,8 @@ package org.contentmine.graphics.svg.plot;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealArray;
@@ -32,13 +32,9 @@ import com.google.common.collect.Multiset;
  */
 public class AnnotatedAxis {
 
-	private static final Logger LOG = Logger.getLogger(AnnotatedAxis.class);
+	private static final Logger LOG = LogManager.getLogger(AnnotatedAxis.class);
 	static final double AXIS_END_EPS = 1.0;
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static double EPS = 0.01;
+public static double EPS = 0.01;
 	LineDirection lineDirection;
 	RealRange range;
 	SVGLine singleLine;

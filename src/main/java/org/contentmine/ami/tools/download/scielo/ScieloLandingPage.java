@@ -2,8 +2,8 @@ package org.contentmine.ami.tools.download.scielo;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.download.AbstractLandingPage;
 import org.contentmine.eucl.xml.XMLUtil;
 
@@ -18,12 +18,8 @@ import org.contentmine.eucl.xml.XMLUtil;
  *
  */
 public class ScieloLandingPage extends AbstractLandingPage {
-	private static final Logger LOG = Logger.getLogger(ScieloLandingPage.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public ScieloLandingPage() {
+	private static final Logger LOG = LogManager.getLogger(ScieloLandingPage.class);
+public ScieloLandingPage() {
 		super();
 	}
 

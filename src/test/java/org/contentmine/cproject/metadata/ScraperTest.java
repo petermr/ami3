@@ -8,8 +8,8 @@ import java.util.Map;
 import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.CMineFixtures;
 import org.contentmine.cproject.util.RectangularTable;
 import org.junit.Assert;
@@ -21,13 +21,8 @@ import com.google.gson.JsonSyntaxException;
 
 public class ScraperTest {
 	
-	public static final Logger LOG = Logger.getLogger(ScraperTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-
-	/** EXTRACT SCRAPER KEYS FROM SCRAPER DIRECTORIES.
+	public static final Logger LOG = LogManager.getLogger(ScraperTest.class);
+/** EXTRACT SCRAPER KEYS FROM SCRAPER DIRECTORIES.
 	 * 
 	 * THIS SHOWS THE SCRAPER TERMS THAT AUTHORS USE
 	 * 

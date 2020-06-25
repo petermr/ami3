@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.cache;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.RealRange;
 import org.contentmine.eucl.euclid.RealRange.Direction;
 import org.contentmine.graphics.svg.SVGElement;
@@ -16,12 +16,8 @@ import org.contentmine.graphics.svg.SVGRect;
  *
  */
 public class RectCache extends AbstractCache {
-	static final Logger LOG = Logger.getLogger(RectCache.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private double panelEps = DEFAULT_PANEL_EPS = 3.0;
+	static final Logger LOG = LogManager.getLogger(RectCache.class);
+private double panelEps = DEFAULT_PANEL_EPS = 3.0;
 
 	private List<SVGRect> rectList;
 	private List<SVGRect> horizontalPanelList;

@@ -2,18 +2,14 @@ package org.contentmine.ami.tools.pdf;
 
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.tools.PDFText2HTML;
 
 public class AMIPDF2HTML extends PDFText2HTML {
-	private static final Logger LOG = Logger.getLogger(AMIPDF2HTML.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public AMIPDF2HTML() throws IOException {
+	private static final Logger LOG = LogManager.getLogger(AMIPDF2HTML.class);
+public AMIPDF2HTML() throws IOException {
 		super();
 	}
 	

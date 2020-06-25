@@ -2,7 +2,8 @@ package org.contentmine.graphics.svg.text.build;
 
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.graphics.svg.rule.horizontal.LineChunk;
 
@@ -10,7 +11,7 @@ import nu.xom.Element;
 
 public class Blank extends LineChunk {
 
-	private static final Logger LOG = Logger.getLogger(Blank.class);
+	private static final Logger LOG = LogManager.getLogger(Blank.class);
 	public final static String TAG = "blank";
 	
 	private Real2Range boundingBox;

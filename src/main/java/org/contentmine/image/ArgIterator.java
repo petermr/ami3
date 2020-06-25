@@ -3,11 +3,12 @@ package org.contentmine.image;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class ArgIterator {
 
-	private static final Logger LOG = Logger.getLogger(ArgIterator.class);
+	private static final Logger LOG = LogManager.getLogger(ArgIterator.class);
 	
 	private List<String> argList;
 	private int pointer;

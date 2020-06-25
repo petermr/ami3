@@ -7,7 +7,8 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Angle.Units;
 import org.contentmine.eucl.euclid.Line2;
@@ -103,7 +104,7 @@ public class SimpleBuilder {
 	private static final double CUT_OBJECT_SEWING_DEFAULT_MINIMUM_GAP = 1.3;//0.5;
 	private static final int POLYGON_ABSTRACTION_DEFAULT_MAXIMUM_NUMBER_OF_EDGES = 250;//200;
 
-	private final static Logger LOG = Logger.getLogger(SimpleBuilder.class);
+	private final static Logger LOG = LogManager.getLogger(SimpleBuilder.class);
 	
 	protected AbstractCMElement svgRoot;
 	

@@ -2,20 +2,16 @@ package org.contentmine.norma;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.args.CHESRunner;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.cproject.files.CProject;
 
 public class Norma implements CHESRunner {
 
-	private static final Logger LOG = Logger.getLogger(Norma.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public final static String NORMA_OUTPUT_RESOURCE = NAConstants.NORMA_RESOURCE + "/" +"output";
+	private static final Logger LOG = LogManager.getLogger(Norma.class);
+public final static String NORMA_OUTPUT_RESOURCE = NAConstants.NORMA_RESOURCE + "/" +"output";
 	private DefaultArgProcessor argProcessor;
 	public final static String MAKEPROJECT_PDF0 = "--project ";
 	public final static String MAKEPROJECT_PDF1 = " --makeProject (\\1)/fulltext.pdf --fileFilter .*/(.*)\\.pdf";

@@ -1,6 +1,7 @@
 package org.contentmine.image.pixel;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** coordination shell radiating from pixel or pixelList
  * 
@@ -9,7 +10,7 @@ import org.apache.log4j.Logger;
  */
 public class PixelShell {
 
-	private final static Logger LOG = Logger.getLogger(PixelShell.class);
+	private final static Logger LOG = LogManager.getLogger(PixelShell.class);
 	private PixelSet expandedShell;
 	private PixelIsland island;
 	private PixelSet seedSet = null;

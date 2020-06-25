@@ -5,7 +5,8 @@ import java.io.IOException;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.CHESConstants;
 import org.contentmine.cproject.CProjectArgProcessor;
 import org.contentmine.cproject.files.RegexPathFilter;
@@ -16,12 +17,8 @@ import org.junit.Test;
 
 public class DefaultArgProcessorTest {
 	
-	private static final Logger LOG = Logger.getLogger(DefaultArgProcessorTest.class);
-	static {
-		LOG.setLevel(org.apache.log4j.Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(DefaultArgProcessorTest.class);
+@Test
 	@Ignore // side-effects creates files
 	public void testArgs() {
 		String[] args = {

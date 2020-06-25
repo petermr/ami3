@@ -9,8 +9,8 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.norma.NormaFixtureRunner;
 import org.contentmine.norma.NormaFixtures;
 import org.junit.Ignore;
@@ -20,12 +20,8 @@ import net.sf.saxon.TransformerFactoryImpl;
 
 //@Ignore // no open -access papers
 public class RSTest {
-	private static final Logger LOG = Logger.getLogger(RSTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	static String PUB0 = "rs";
+	private static final Logger LOG = LogManager.getLogger(RSTest.class);
+static String PUB0 = "rs";
 	static String PUB = "rs";
 	static String PUB1 = PUB+"/clean";
 	static File TARGET = new File(NormaFixtures.TARGET_PUBSTYLE_DIR, PUB);

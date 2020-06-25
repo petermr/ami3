@@ -1,7 +1,7 @@
 package org.contentmine.graphics.svg.linestuff;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGLine.LineDirection;
 
 /** equals length lines aligned as a Ladder
@@ -21,12 +21,8 @@ import org.contentmine.graphics.svg.SVGLine.LineDirection;
  *
  */
 public class LadderLineList extends AxialLineList {
-	private static final Logger LOG = Logger.getLogger(LadderLineList.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public LadderLineList(LineDirection direction) {
+	private static final Logger LOG = LogManager.getLogger(LadderLineList.class);
+public LadderLineList(LineDirection direction) {
 		super(direction);
 	}
 

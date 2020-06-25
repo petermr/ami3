@@ -28,7 +28,8 @@ import java.util.Map;
 
 import javax.print.attribute.standard.PageRanges;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.pdfbox.exceptions.CryptographyException;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
@@ -52,7 +53,7 @@ public class PDF2SVGConverter extends PDFStreamEngine {
 
 	private static final String DEFAULT_OUTPUT_DIRECTORY = "target";
 
-	private final static Logger LOG = Logger.getLogger(PDF2SVGConverter.class);
+	private final static Logger LOG = LogManager.getLogger(PDF2SVGConverter.class);
 
 	private static final String PDF = ".pdf";
 	private static final double _DEFAULT_PAGE_WIDTH = 800.0;

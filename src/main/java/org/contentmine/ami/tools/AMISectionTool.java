@@ -15,8 +15,8 @@ import java.util.regex.Pattern;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.DebugPrint;
 import org.contentmine.cproject.util.CMineUtil;
@@ -104,12 +104,8 @@ public class AMISectionTool extends AbstractAMITool {
 	public static final String TABLE_SUMMARY_DIRNAME = "__tables";
 	
 
-	private static final Logger LOG = Logger.getLogger(AMISectionTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public enum SummaryType {
+	private static final Logger LOG = LogManager.getLogger(AMISectionTool.class);
+public enum SummaryType {
 		figure(FIGURES_DIR, FIGURE_SUMMARY_DIRNAME),
 		results(RESULTS_DIR, RESULTS_SUMMARY_DIRNAMR),
 		supplementary(SUPPLEMENTARY_DIR, SUPPLEMENTARY_SUMMARY_DIRNAME),
@@ -237,7 +233,7 @@ public class AMISectionTool extends AbstractAMITool {
 		} else if (processTrees()) {
 			writeSummaries();
     	} else {
-			DebugPrint.debugPrint(Level.ERROR, "must give cProject or cTree");
+			LOG.error(DebugPrint.MARKER, "must give cProject or cTree");
 	    }
     }
 
@@ -693,9 +689,9 @@ public class AMISectionTool extends AbstractAMITool {
 	}
 
 	private void runHelp() {
-		DebugPrint.debugPrint("sections recognized in documents");
+		LOG.debug(DebugPrint.MARKER,"sections recognized in documents");
 		for (SectionTag tag : JATSSectionTagger.SectionTag.values()) {
-			DebugPrint.debugPrint(tag.name()+": "+tag.getDescription());
+			LOG.debug(DebugPrint.MARKER, tag.name()+": "+tag.getDescription());
 		}
 	}
 

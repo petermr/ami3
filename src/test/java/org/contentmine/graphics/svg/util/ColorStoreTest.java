@@ -3,19 +3,15 @@ package org.contentmine.graphics.svg.util;
 import java.awt.Color;
 import java.util.Iterator;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.util.ColorStore.ColorizerType;
 import org.junit.Test;
 
 public class ColorStoreTest {
-	private static final Logger LOG = Logger.getLogger(ColorStoreTest.class);
+	private static final Logger LOG = LogManager.getLogger(ColorStoreTest.class);
 	
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+@Test
 	public void testColorStore() {
 		ColorStore colorStore = ColorStore.createColorizer(ColorizerType.CONTRAST);
 		Iterator<String> colorIterator = colorStore.getColorIterator();

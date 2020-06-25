@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.cache;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealRange;
 
@@ -14,11 +14,8 @@ import org.contentmine.eucl.euclid.RealRange;
  *
  */
 public class PageBodyCache extends PageComponentCache {
-	private static final Logger LOG = Logger.getLogger(PageBodyCache.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static String CYAN = "cyan";
+	private static final Logger LOG = LogManager.getLogger(PageBodyCache.class);
+private static String CYAN = "cyan";
 
 	private List<PageColumnCache> pageColumnList;
 

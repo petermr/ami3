@@ -6,8 +6,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Stack;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealRange;
 import org.contentmine.eucl.euclid.util.MultisetUtil;
@@ -48,11 +48,8 @@ import com.google.common.collect.Multiset;
 public class TextCache extends AbstractCache {
 	
 	private static final int MIN_DIFF_TEXT = 10;
-	static final Logger LOG = Logger.getLogger(TextCache.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	/** not sure what these are for ... */
+	static final Logger LOG = LogManager.getLogger(TextCache.class);
+/** not sure what these are for ... */
 	
 	private static final char BLACK_VERTICAL_RECTANGLE = (char)0x25AE;
 	private static final char WHITE_VERTICAL_RECTANGLE = (char)0x25AF;

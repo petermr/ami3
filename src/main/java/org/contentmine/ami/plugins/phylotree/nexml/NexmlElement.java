@@ -8,12 +8,13 @@ import nu.xom.Attribute;
 import nu.xom.Element;
 import nu.xom.Node;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 public class NexmlElement extends Element {
 
-	private final static Logger LOG = Logger.getLogger(NexmlElement.class);
+	private final static Logger LOG = LogManager.getLogger(NexmlElement.class);
 	
 	public static final String ID = "id";
 	private static final String LABEL = "label";

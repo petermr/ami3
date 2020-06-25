@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMIDownloadTool;
 import org.contentmine.cproject.files.CContainer;
 import org.contentmine.cproject.files.CProject;
@@ -16,12 +16,8 @@ import org.contentmine.graphics.html.HtmlHead;
 import org.contentmine.graphics.html.HtmlHtml;
 
 public class FullFileManager extends AbstractSubDownloader {
-	private static final Logger LOG = Logger.getLogger(FullFileManager.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private HtmlHead preloadHead;
+	private static final Logger LOG = LogManager.getLogger(FullFileManager.class);
+private HtmlHead preloadHead;
 
 	public FullFileManager(AbstractDownloader abstractDownloader) {
 		super(abstractDownloader);

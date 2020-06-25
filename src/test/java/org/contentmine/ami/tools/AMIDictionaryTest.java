@@ -6,8 +6,8 @@ import java.io.InputStream;
 import java.net.URL;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.dictionary.DictionaryCreationTool;
 import org.contentmine.cproject.util.CMineUtil;
 import org.junit.Test;
@@ -19,11 +19,8 @@ import org.junit.Test;
  *
  */
 public class AMIDictionaryTest extends AbstractAMITest {
-	private static final Logger LOG = Logger.getLogger(AMIDictionaryTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final File TARGET = new File("target");
+	private static final Logger LOG = LogManager.getLogger(AMIDictionaryTest.class);
+private static final File TARGET = new File("target");
 	public static final File DICTIONARY_DIR = new File(TARGET, "dictionary");
 	
 

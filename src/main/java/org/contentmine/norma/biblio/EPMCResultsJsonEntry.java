@@ -3,8 +3,8 @@ package org.contentmine.norma.biblio;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.metadata.AbstractMetadata;
 import org.contentmine.cproject.metadata.MetadataEntryOLD;
 import org.contentmine.cproject.util.CellRenderer;
@@ -29,12 +29,8 @@ import com.google.gson.JsonPrimitive;
  */
 public class EPMCResultsJsonEntry extends AbstractMetadata {
 	
-	private static final Logger LOG = Logger.getLogger(EPMCResultsJsonEntry.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final String FULL_TEXT_URL_LIST = "fullTextUrlList";
+	private static final Logger LOG = LogManager.getLogger(EPMCResultsJsonEntry.class);
+public static final String FULL_TEXT_URL_LIST = "fullTextUrlList";
 	public static final String AFFILIATION    = "affiliation";
 	public static final String PUB_MODEL      = "pubModel";
 	public static final String LANGUAGE       = "language";

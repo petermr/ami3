@@ -1,7 +1,7 @@
 package org.contentmine.graphics.svg.cache;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.RealArray;
 import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.html.HtmlElement;
@@ -26,12 +26,8 @@ import nu.xom.Text;
  *
  */
 public class TextLineFormatter {
-	private static final Logger LOG = Logger.getLogger(TextLineFormatter.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final String SPACE = " ";
+	private static final Logger LOG = LogManager.getLogger(TextLineFormatter.class);
+public static final String SPACE = " ";
 
 	private static final String HYPHEN = "-";
 

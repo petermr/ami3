@@ -2,8 +2,8 @@ package org.contentmine.cproject.files.schema;
 
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** matchesFies against schema.
  * supports either equality or regex match
@@ -14,13 +14,8 @@ import org.apache.log4j.Logger;
 public class SchemaFileMatcher {
     
 
-	private static final Logger LOG = Logger.getLogger(SchemaFileMatcher.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	
-	private AbstractSchemaElement schemaElement;
+	private static final Logger LOG = LogManager.getLogger(SchemaFileMatcher.class);
+private AbstractSchemaElement schemaElement;
 	private String schemaFilename;
 	private Pattern schemaPattern;
 	

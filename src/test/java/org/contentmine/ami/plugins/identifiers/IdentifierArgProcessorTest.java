@@ -6,8 +6,8 @@ import nu.xom.Builder;
 import nu.xom.Element;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -22,12 +22,8 @@ public class IdentifierArgProcessorTest {
 
 	
 	
-	private static final Logger LOG = Logger.getLogger(IdentifierArgProcessorTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(IdentifierArgProcessorTest.class);
+@Test
 	// TESTED 2016-01-12
 	public void testIdentifierArgProcessorBio() throws Exception {
 		File newDir = new File("target/plosone/identifier");

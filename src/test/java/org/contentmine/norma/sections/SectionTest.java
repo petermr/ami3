@@ -7,8 +7,8 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIFixtures;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -29,11 +29,7 @@ import nu.xom.Element;
 
 public class SectionTest {
 
-	private static final Logger LOG = Logger.getLogger(SectionTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
+	private static final Logger LOG = LogManager.getLogger(SectionTest.class);
 //	public final static String ZIKA10 = "zika10";
 //
 //	private static final File ZIKA10DIR = new File(NormaFixtures.TEST_SECTIONS_DIR, ZIKA10);

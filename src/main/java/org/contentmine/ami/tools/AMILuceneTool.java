@@ -8,8 +8,8 @@ import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
@@ -59,12 +59,8 @@ public class AMILuceneTool extends AbstractAMITool {
 
 	private static final Version LUCENE851 = Version.LUCENE_8_5_1;
 
-	private static final Logger LOG = Logger.getLogger(AMILuceneTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private enum LuceneOperation {
+	private static final Logger LOG = LogManager.getLogger(AMILuceneTool.class);
+private enum LuceneOperation {
 		fields("extract fields"),
 		index("make index"),
 		query("run query"),

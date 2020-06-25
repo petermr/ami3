@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.builder;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGElement;
@@ -16,14 +16,10 @@ import org.contentmine.graphics.svg.linestuff.SVGNode;
 
 public class SVGBond extends SVGEdge {
 	
-	private static final Logger LOG = Logger.getLogger(SVGBond.class);
+	private static final Logger LOG = LogManager.getLogger(SVGBond.class);
 	private List<SVGAtom> atomList;
 	private MoleculeBuilder moleculeBuilder;
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public SVGBond(SVGElement line) {
+public SVGBond(SVGElement line) {
 		super(line);
 	}
 	

@@ -9,8 +9,8 @@ import java.util.Collections;
 import java.util.List;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMIOCRTool;
 import org.contentmine.ami.tools.ocr.GOCRPageElement;
 import org.contentmine.cproject.files.CTree;
@@ -99,10 +99,8 @@ http://www-e.uni-magdeburg.de/jschulen/ocr/
 public class GOCRConverter  extends AbstractOCRConverter {
 
 
-	public final static Logger LOG = Logger.getLogger(GOCRConverter.class);
-	static {LOG.setLevel(Level.DEBUG);}
-
-	private static final String GOCR = "gocr";
+	public final static Logger LOG = LogManager.getLogger(GOCRConverter.class);
+private static final String GOCR = "gocr";
 	private static final String USR_LOCAL_BIN_GOCR = "/usr/local/bin/gocr";
 	private static final String PNM = "pnm";
 	private String gocrPath = USR_LOCAL_BIN_GOCR;
@@ -324,11 +322,9 @@ public class GOCRConverter  extends AbstractOCRConverter {
 		textLineAnalyzer.createMajorNonOverlappingTextLines(yRangeMultiset);
 		textLineAnalyzer.addCharBoxes(gocrCharBoxList);
 		textLineAnalyzer.disambiguateCharacters();
-		
-		if (Level.DEBUG.equals(amiOcrTool.getVerbosity())) {
-			System.out.println("TextLineAnalyzer> "+textLineAnalyzer);
-		}
-		
+
+		LOG.debug("TextLineAnalyzer> {}", textLineAnalyzer);
+
 		return textLineAnalyzer;   
 	}
 

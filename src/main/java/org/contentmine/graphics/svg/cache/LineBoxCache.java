@@ -9,8 +9,8 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
@@ -28,12 +28,8 @@ import org.contentmine.graphics.svg.SVGSVG;
  *
  */
 public class LineBoxCache extends ComponentCache {
-	private static final Logger LOG = Logger.getLogger(LineBoxCache.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private List<SVGLine> horizontalLines;
+	private static final Logger LOG = LogManager.getLogger(LineBoxCache.class);
+private List<SVGLine> horizontalLines;
 	private List<SVGLine> verticalLines;
 	private List<LineBox> lineBoxList;
 	private LineBox currentBox;
@@ -65,9 +61,6 @@ public class LineBoxCache extends ComponentCache {
 	}
 
 	public void createLineBoxes(List<SVGLine> horizLines, List<SVGLine> vertLines) {
-		Level level = LOG.getLevel();
-//		LOG.setLevel(Level.TRACE);
-		
 		LOG.trace("H/L: "+horizLines.size()+"/"+vertLines.size());
 	    totalLineSet = sortLinesByLengthCreateLineSet(horizLines, vertLines);
 		createBoxesFromHorizontalVerticalIntersection1();
@@ -95,7 +88,6 @@ public class LineBoxCache extends ComponentCache {
 //		}
 		
 		SVGSVG.wrapAndWriteAsSVG(g, new File("target/cache/lineBox.svg"));
-		LOG.setLevel(level);
 	}
 
 //	private List<SVGLine> addUnusedLinesToBoxes() {

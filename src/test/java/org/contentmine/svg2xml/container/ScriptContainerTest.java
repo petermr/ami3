@@ -7,7 +7,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.RealRange;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.svg.SVGElement;
@@ -26,7 +27,7 @@ import org.junit.Test;
 public class ScriptContainerTest {
 
 	private static final String[] STRINGS = {}; 
-	public final static Logger LOG = Logger.getLogger(ScriptContainerTest.class);
+	public final static Logger LOG = LogManager.getLogger(ScriptContainerTest.class);
 	
 	String lineSeparator = System.getProperty("line.separator");
 	

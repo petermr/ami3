@@ -6,8 +6,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Line2;
 import org.contentmine.eucl.euclid.Real2;
@@ -29,12 +29,9 @@ import org.contentmine.image.geom.DouglasPeucker;
  *
  */
 public class PixelSegmentList implements List<PixelSegment> {
-	private static final Logger LOG = Logger.getLogger(PixelSegmentList.class);
+	private static final Logger LOG = LogManager.getLogger(PixelSegmentList.class);
 
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final double DEFAULT_SEGMENT_JOINING_TOLERANCE = 0.1;
+private static final double DEFAULT_SEGMENT_JOINING_TOLERANCE = 0.1;
 
 	private List<PixelSegment> segmentList;
 	private Real2Array real2Array;

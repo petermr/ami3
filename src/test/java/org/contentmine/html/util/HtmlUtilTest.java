@@ -1,13 +1,14 @@
 package org.contentmine.html.util;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.util.HtmlUtil;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class HtmlUtilTest {
 
-	private final static Logger LOG = Logger.getLogger(HtmlUtilTest.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlUtilTest.class);
 	
 	@Test
 	public void testStripAttributeFromText() {

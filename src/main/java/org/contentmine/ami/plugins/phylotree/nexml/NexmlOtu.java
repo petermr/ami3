@@ -2,13 +2,14 @@ package org.contentmine.ami.plugins.phylotree.nexml;
 
 import nu.xom.Attribute;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.phylotree.PhyloConstants;
 import org.contentmine.norma.editor.EditList;
 
 public class NexmlOtu extends NexmlElement {
 
-	private final static Logger LOG = Logger.getLogger(NexmlOtu.class);
+	private final static Logger LOG = LogManager.getLogger(NexmlOtu.class);
 	public final static String TAG = "otu";
 
 	private static final String EDIT_RECORD = "editRecord";

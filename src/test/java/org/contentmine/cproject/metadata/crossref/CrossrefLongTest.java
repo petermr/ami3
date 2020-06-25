@@ -11,8 +11,8 @@ import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.CHESConstants;
 import org.contentmine.cproject.CMineFixtures;
 import org.contentmine.cproject.files.CProject;
@@ -33,12 +33,8 @@ import com.google.common.collect.Multiset;
 
 public class CrossrefLongTest {
 
-	private static final Logger LOG = Logger.getLogger(CrossrefLongTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/** ALTERNATIVE TO GETPAPERS */
+	private static final Logger LOG = LogManager.getLogger(CrossrefLongTest.class);
+/** ALTERNATIVE TO GETPAPERS */
 	@Test
 	@Ignore // NET
 	// uses net to call CrossRef

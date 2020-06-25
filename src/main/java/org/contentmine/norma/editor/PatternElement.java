@@ -5,19 +5,16 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
 
 public class PatternElement extends AbstractEditorElement {
 
-	public static final Logger LOG = Logger.getLogger(PatternElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public static final String TAG = "pattern";
+	public static final Logger LOG = LogManager.getLogger(PatternElement.class);
+public static final String TAG = "pattern";
 	
 	public final static String LEVEL = "level";
 	

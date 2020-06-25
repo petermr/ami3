@@ -5,14 +5,15 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.image.ImageAnalysisFixtures;
 import org.contentmine.image.ImageUtil;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class FloodFillTest {
-	private static final Logger LOG = Logger.getLogger(FloodFillTest.class);
+	private static final Logger LOG = LogManager.getLogger(FloodFillTest.class);
 
 	/** floodfill with explicit diagonals.
 	 * 

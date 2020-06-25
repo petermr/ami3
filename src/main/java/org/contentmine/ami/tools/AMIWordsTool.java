@@ -9,8 +9,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMIArgProcessor;
 import org.contentmine.ami.plugins.CommandProcessor;
 import org.contentmine.ami.plugins.word.WordArgProcessor;
@@ -80,12 +80,8 @@ public class AMIWordsTool extends AbstractAMISearchTool {
 	private static final String STOPWORD_JOIN = "_";
 	private static final String W_STOPWORDS = "w.stopwords:";
 
-	private static final Logger LOG = Logger.getLogger(AMIWordsTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/** I think only frequencies works!
+	private static final Logger LOG = LogManager.getLogger(AMIWordsTool.class);
+/** I think only frequencies works!
 	 * 
 	 * @author pm286
 	 *

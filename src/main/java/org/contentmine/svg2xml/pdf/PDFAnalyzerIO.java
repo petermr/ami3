@@ -9,8 +9,8 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.HtmlMenuSystem;
 import org.contentmine.svg2xml.util.NameComparator;
 import org.contentmine.svg2xml.util.SVG2XMLConstantsX;
@@ -22,10 +22,8 @@ import org.contentmine.svg2xml.util.SVG2XMLConstantsX;
  */
 public class PDFAnalyzerIO {
 	
-	private static final Logger LOG = Logger.getLogger(PDFAnalyzerIO.class);
-	static {LOG.setLevel(Level.DEBUG);}
-
-	public static final File TARGET_DIR = new File("target");
+	private static final Logger LOG = LogManager.getLogger(PDFAnalyzerIO.class);
+public static final File TARGET_DIR = new File("target");
 	public static final File TARGET_OUTPUT_DIR = new File(TARGET_DIR, "output");
 	public static final File TARGET_SVG_DIR = new File(TARGET_DIR, "svg");
 	public static final String HTTP = "http";

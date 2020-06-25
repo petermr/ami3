@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.Transform2;
@@ -41,12 +41,8 @@ import nu.xom.Attribute;
  */
 public class GlyphSet {
 	
-	private static final Logger LOG = Logger.getLogger(GlyphSet.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String GLYPH_LIST = "glyphList";
+	private static final Logger LOG = LogManager.getLogger(GlyphSet.class);
+private static final String GLYPH_LIST = "glyphList";
 	private static final String GLYPH_SET = "glyphSet";
 	private static String CHARACTER = "character";
 	public static final double CHARACTER_DY = -0.15;

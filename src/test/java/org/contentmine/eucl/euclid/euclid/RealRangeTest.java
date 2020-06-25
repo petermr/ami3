@@ -18,7 +18,8 @@ package org.contentmine.eucl.euclid.euclid;
 
 import static org.contentmine.eucl.euclid.EuclidConstants.EPS;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntRange;
 import org.contentmine.eucl.euclid.RealRange;
 import org.junit.Assert;
@@ -33,7 +34,7 @@ import org.junit.Test;
  */
 public class RealRangeTest {
 	@SuppressWarnings("unused")
-	private static Logger LOG = Logger.getLogger(RealRangeTest.class);
+	private static Logger LOG = LogManager.getLogger(RealRangeTest.class);
 	
 	RealRange r0;
 	RealRange r1;

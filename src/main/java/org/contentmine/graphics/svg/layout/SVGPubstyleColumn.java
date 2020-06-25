@@ -2,8 +2,8 @@ package org.contentmine.graphics.svg.layout;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGPath;
 import org.contentmine.graphics.svg.SVGShape;
@@ -21,11 +21,8 @@ import nu.xom.Attribute;
  */
 public class SVGPubstyleColumn extends AbstractPubstyle {
 
-	private static final Logger LOG = Logger.getLogger(SVGPubstyleColumn.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public enum ColumnPosition{
+	private static final Logger LOG = LogManager.getLogger(SVGPubstyleColumn.class);
+public enum ColumnPosition{
 		ANY,
 		LEFT,
 		MIDDLE,

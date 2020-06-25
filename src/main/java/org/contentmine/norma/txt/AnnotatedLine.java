@@ -7,18 +7,14 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntArray;
 
 public class AnnotatedLine {
 
-	private static final Logger LOG = Logger.getLogger(AnnotatedLine.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public final static Map<String, Pattern> PATTERN_MAP;
+	private static final Logger LOG = LogManager.getLogger(AnnotatedLine.class);
+public final static Map<String, Pattern> PATTERN_MAP;
 	public final static Pattern Li_PATTERN      = Pattern.compile("\\s*([ivxlc]+)\\s+.*");
 	public final static Pattern L1_PATTERN      = Pattern.compile("\\s*(\\d+)\\s+.*");
 	public final static Pattern L12_PATTERN     = Pattern.compile("\\s*(\\d+\\.\\d+)\\s+.*");

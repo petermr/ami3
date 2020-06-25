@@ -1,7 +1,7 @@
 package org.contentmine.ami;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AbstractAMITool;
 
 import picocli.CommandLine.Command;
@@ -19,13 +19,8 @@ description = "analyzes bitmaps - generally binary, but may be oligochrome. Crea
 )
 
 public class AMIForestPlot extends AbstractAMITool {
-	private static final Logger LOG = Logger.getLogger(AMIForestPlot.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	
-	protected void parseSpecifics() {
+	private static final Logger LOG = LogManager.getLogger(AMIForestPlot.class);
+protected void parseSpecifics() {
 		LOG.error("AMIForest NYI");
 //		System.out.println("maxislands           " + maxislands);
 //		System.out.println();

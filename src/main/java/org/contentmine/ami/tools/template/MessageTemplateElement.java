@@ -10,8 +10,8 @@ import java.util.List;
 import javax.imageio.ImageIO;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.IntRange;
@@ -26,11 +26,8 @@ import org.contentmine.image.ImageUtil;
 public class MessageTemplateElement extends AbstractTemplateElement {
 
 
-	private static final Logger LOG = Logger.getLogger(MessageTemplateElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public static final String TAG = "message";
+	private static final Logger LOG = LogManager.getLogger(MessageTemplateElement.class);
+public static final String TAG = "message";
 	
 //	private enum Direction {
 //		horizontal, 

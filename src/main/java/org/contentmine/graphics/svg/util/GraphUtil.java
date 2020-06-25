@@ -5,7 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Line2;
 import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.euclid.Real2;
@@ -28,7 +29,7 @@ import nu.xom.Element;
 import nu.xom.Nodes;
 
 public class GraphUtil {
-	private final static Logger LOG = Logger.getLogger(GraphUtil.class);
+	private final static Logger LOG = LogManager.getLogger(GraphUtil.class);
 	
 	private static final String SVG_PAN_JS = "../../SVGPan.js";
 	private static final String DTD_N = ".dtd'>";

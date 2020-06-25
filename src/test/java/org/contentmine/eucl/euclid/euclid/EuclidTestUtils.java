@@ -16,12 +16,13 @@
 
 package org.contentmine.eucl.euclid.euclid;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.CHESConstants;
 
 public class EuclidTestUtils {
 	/** logger */
-	private final static Logger LOG = Logger.getLogger(EuclidTestUtils.class);
+	private final static Logger LOG = LogManager.getLogger(EuclidTestUtils.class);
 	public final static String BASE_RESOURCE = CHESConstants.ORG_CM + "/eucl/euclid";
 
 }

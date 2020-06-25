@@ -2,8 +2,8 @@ package org.contentmine.norma;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.CHESConstants;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.cproject.util.CMineTestFixtures;
@@ -12,12 +12,8 @@ import org.contentmine.norma.NormaArgProcessor;
 public class NormaFixtures {
 	
 
-	private static final Logger LOG = Logger.getLogger(NormaFixtures.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public final static File EXAMPLES_DIR = new File("examples");
+	private static final Logger LOG = LogManager.getLogger(NormaFixtures.class);
+public final static File EXAMPLES_DIR = new File("examples");
 	
 	public final static File MAIN_PUBSTYLE_DIR = new File(NAConstants.MAIN_NORMA_DIR, "pubstyle");
 	public final static File MAIN_HINDAWI_DIR = new File(NormaFixtures.MAIN_PUBSTYLE_DIR, "hindawi");

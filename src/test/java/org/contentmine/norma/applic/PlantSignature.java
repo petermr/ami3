@@ -1,7 +1,7 @@
 package org.contentmine.norma.applic;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** plant with associated observation data (as signature).
  * 
@@ -10,12 +10,8 @@ import org.apache.log4j.Logger;
  */
 public class PlantSignature {
 
-	private static final Logger LOG = Logger.getLogger(PlantSignature.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public PlantSignature() {
+	private static final Logger LOG = LogManager.getLogger(PlantSignature.class);
+public PlantSignature() {
 	}
 	
 }

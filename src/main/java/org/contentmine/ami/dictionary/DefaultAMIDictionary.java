@@ -21,8 +21,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.lookups.WikipediaLookup;
 import org.contentmine.ami.lookups.WikipediaPageInfo;
 import org.contentmine.ami.tools.dictionary.DictionarySearchTool;
@@ -103,12 +103,8 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 	private static final int PAGE_IMAGE_LINK_COLUMN = 6;
 	private static final int CENTRAL_DESCRIPTION_COLUMN = 5;
 	private static final int WIKIDATA_LINK_COLUMN = 4;
-	public static final Logger LOG = Logger.getLogger(DefaultAMIDictionary.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final String WIKIPEDIA_BASE = "https://en.wikipedia.org";
+	public static final Logger LOG = LogManager.getLogger(DefaultAMIDictionary.class);
+public static final String WIKIPEDIA_BASE = "https://en.wikipedia.org";
 	public static final String ID = "id";
 	public static final String DICTIONARY = "dictionary";
 	private static final String DESC = "desc";

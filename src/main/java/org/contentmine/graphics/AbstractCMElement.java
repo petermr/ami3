@@ -3,8 +3,8 @@ package org.contentmine.graphics;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLConstants;
 import org.contentmine.graphics.html.HtmlElement;
 
@@ -22,12 +22,8 @@ import nu.xom.Nodes;
  */
 public abstract class AbstractCMElement extends Element implements XMLConstants {
 	
-	private static final Logger LOG = Logger.getLogger(AbstractCMElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final String ANCESTOR = "ancestor";
+	private static final Logger LOG = LogManager.getLogger(AbstractCMElement.class);
+public static final String ANCESTOR = "ancestor";
 	public static final String CLASS = "class";
 	public static final String ID = "id";
 	public static final String NAME = "name";

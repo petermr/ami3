@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.plot;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealRange;
 import org.contentmine.graphics.AbstractCMElement;
@@ -26,12 +26,8 @@ import org.contentmine.graphics.svg.plot.AbstractPlotBox.AxisType;
  */
 public class AxialBox {
 
-	private static final Logger LOG = Logger.getLogger(AxialBox.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/**
+	private static final Logger LOG = LogManager.getLogger(AxialBox.class);
+/**
 	 * default outside width of box (assumes ticks are on outside)
 	 */
 	public static final double DEFAULT_OUTSIDE_WIDTH = 18.0;

@@ -9,8 +9,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AbstractAMITest;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.eucl.euclid.Real2Range;
@@ -54,12 +54,8 @@ import com.google.common.collect.Multimap;
 public class PageCacheTest extends AbstractAMITest {
 	static final String FULLTEXT_PAGE = "fulltext-page";
 	static final String MAINTEXT = "maintext";
-	public static final Logger LOG = Logger.getLogger(PageCacheTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/** get boxes for different text styles
+	public static final Logger LOG = LogManager.getLogger(PageCacheTest.class);
+/** get boxes for different text styles
 	 * 
 	 */
 	@Test

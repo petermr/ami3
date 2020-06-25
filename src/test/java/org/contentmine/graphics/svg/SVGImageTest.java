@@ -13,7 +13,8 @@ import java.net.URL;
 
 import javax.imageio.ImageIO;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.RealArray;
@@ -26,7 +27,7 @@ import org.junit.Test;
 
 public class SVGImageTest {
 
-	private final static Logger LOG = Logger.getLogger(SVGImageTest.class);
+	private final static Logger LOG = LogManager.getLogger(SVGImageTest.class);
 	
 	private static final String CANNY = "Canny";
 	private static final String GRAYSCALE = "grayscale";

@@ -5,8 +5,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.graphics.svg.SVGElement;
@@ -25,12 +25,8 @@ import org.contentmine.graphics.svg.SVGRect;
  *
  */
 public class LineBox extends SVGG {
-	private static final Logger LOG = Logger.getLogger(LineBox.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private List<SVGLine> horizontalLineList;
+	private static final Logger LOG = LogManager.getLogger(LineBox.class);
+private List<SVGLine> horizontalLineList;
 	private List<SVGLine> verticalLineList;
 	private Real2Range boundingBox;
 	private double eps = 0.0001;

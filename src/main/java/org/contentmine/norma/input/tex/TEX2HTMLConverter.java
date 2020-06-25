@@ -7,8 +7,8 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Entities;
@@ -21,13 +21,9 @@ public class TEX2HTMLConverter {
 	
     public static final String LATEXMLPOST = "latexmlpost";
 	public static final String LATEXML = "latexml";
-	private static final Logger LOG = Logger.getLogger(TEX2HTMLConverter.class);
+	private static final Logger LOG = LogManager.getLogger(TEX2HTMLConverter.class);
 
-    static {
-        LOG.setLevel(Level.DEBUG);
-    }
-
-    private String convertHTMLToXHTML(String html) {
+private String convertHTMLToXHTML(String html) {
         Document htmlDocument = Parser.parse(html, "");
         Document.OutputSettings outputSettings = htmlDocument.outputSettings().clone();
         outputSettings.escapeMode(Entities.EscapeMode.xhtml);

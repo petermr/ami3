@@ -3,7 +3,8 @@ package org.contentmine.svg2xml.table;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealRange;
 import org.contentmine.eucl.euclid.RealRangeArray;
@@ -13,7 +14,7 @@ import org.contentmine.graphics.svg.SVGElement;
 
 public class TableBody extends TableChunk {
 
-	private final static Logger LOG = Logger.getLogger(TableBody.class);
+	private final static Logger LOG = LogManager.getLogger(TableBody.class);
 	private List<TableRow> rowList;
 	
 	public TableBody(RealRangeArray horizontalMask, RealRangeArray verticalMask) {

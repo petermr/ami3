@@ -2,8 +2,8 @@ package org.contentmine.ami;
 
 import java.net.URL;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIProcessor;
 import org.contentmine.norma.NAConstants;
 import org.junit.Assert;
@@ -16,12 +16,8 @@ import org.junit.Test;
  */
 
 public class AMIProcessorTest {
-	private static final Logger LOG = Logger.getLogger(AMIProcessorTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(AMIProcessorTest.class);
+@Test
 	public void testReadPOM() {
 		Assert.assertTrue("pom " + NAConstants.NORMAMI_DIR, NAConstants.NORMAMI_DIR.exists());
 		AMIProcessor.updatePOMinMainResources();

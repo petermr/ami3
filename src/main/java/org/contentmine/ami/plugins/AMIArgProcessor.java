@@ -6,8 +6,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
 import org.contentmine.ami.plugins.regex.CompoundRegexList;
 import org.contentmine.ami.plugins.regex.RegexComponent;
@@ -36,12 +36,8 @@ import nu.xom.Element;
  */
 public class AMIArgProcessor extends NormaArgProcessor {
 	
-	public static final Logger LOG = Logger.getLogger(AMIArgProcessor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private static final String AMI = "ami";
+	public static final Logger LOG = LogManager.getLogger(AMIArgProcessor.class);
+private static final String AMI = "ami";
 	private static final String ARG_PROCESSOR = "ArgProcessor";
 	protected static String RESOURCE_NAME_TOP = NAConstants.AMI_RESOURCE;
 	protected static String PLUGIN_RESOURCE = RESOURCE_NAME_TOP+"/plugins";

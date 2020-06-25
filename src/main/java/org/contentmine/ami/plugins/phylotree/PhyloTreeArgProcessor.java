@@ -6,8 +6,8 @@ import java.io.InputStream;
 import java.util.List;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMIArgProcessor;
 import org.contentmine.ami.plugins.phylotree.nexml.NWKTree;
 import org.contentmine.ami.plugins.phylotree.nexml.NexmlNEXML;
@@ -50,12 +50,8 @@ public class PhyloTreeArgProcessor extends AMIArgProcessor {
 		}
 
 	}
-	public static final Logger LOG = Logger.getLogger(PhyloTreeArgProcessor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private PhyloCore phyloCore;
+	public static final Logger LOG = LogManager.getLogger(PhyloTreeArgProcessor.class);
+private PhyloCore phyloCore;
 	private static final String TREES = "trees";
 
 	public PhyloTreeArgProcessor() {

@@ -1,7 +1,7 @@
 package org.contentmine.graphics.svg.layout;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.graphics.svg.SVGPath;
 import org.contentmine.graphics.svg.SVGText;
@@ -16,12 +16,8 @@ import org.contentmine.graphics.svg.StyleBundle;
  *
  */
 public class ElementSelector {
-	private static final Logger LOG = Logger.getLogger(ElementSelector.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public final static String LEVEL = "level";
+	private static final Logger LOG = LogManager.getLogger(ElementSelector.class);
+public final static String LEVEL = "level";
 	
 	private StyleBundle selectorStyleBundle;
 	private Real2Range bbox;

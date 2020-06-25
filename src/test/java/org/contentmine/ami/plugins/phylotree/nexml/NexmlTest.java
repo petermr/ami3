@@ -3,8 +3,8 @@ package org.contentmine.ami.plugins.phylotree.nexml;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.phylotree.nexml.NexmlEdge;
 import org.contentmine.ami.plugins.phylotree.nexml.NexmlNEXML;
 import org.contentmine.ami.plugins.phylotree.nexml.NexmlNode;
@@ -45,12 +45,8 @@ import org.junit.Test;
  */
 public class NexmlTest {
 
-	private final static Logger LOG = Logger.getLogger(NexmlTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	private final static Logger LOG = LogManager.getLogger(NexmlTest.class);
+@Test
 	public void testBuildTree() {
 		NexmlNEXML nexml1 = makeTree1();
 		Assert.assertEquals("xml", "<nexml xmlns=\"http://www.nexml.org/2009\" xmlns:nex=\"http://www.nexml.org/2009\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><otus><otu id=\"otu4\" /><otu id=\"otu5\" /><otu id=\"otu6\" /><otu id=\"otu7\" /></otus><trees><tree><node id=\"node1\" /><node id=\"node2\" /><node id=\"node3\" /><node id=\"node4\" otu=\"otu4\" /><node id=\"node5\" otu=\"otu5\" /><node id=\"node6\" otu=\"otu6\" /><node id=\"node7\" otu=\"otu7\" /><edge source=\"node1\" target=\"node2\" id=\"edge12\" /><edge source=\"node1\" target=\"node3\" id=\"edge13\" /><edge source=\"node2\" target=\"node4\" id=\"edge24\" /><edge source=\"node2\" target=\"node5\" id=\"edge25\" /><edge source=\"node3\" target=\"node6\" id=\"edge36\" /><edge source=\"node3\" target=\"node7\" id=\"edge37\" /></tree></trees></nexml>", nexml1.toXML());

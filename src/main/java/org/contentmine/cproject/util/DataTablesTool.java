@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.metadata.AbstractMetadata;
 import org.contentmine.cproject.metadata.DataTableLookup;
@@ -37,12 +37,8 @@ import nu.xom.Element;
 
 public class DataTablesTool {
 
-	private static final Logger LOG = Logger.getLogger(DataTablesTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public final static String ASPNET_AJAX = "http://ajax.aspnetcdn.com/ajax/";
+	private static final Logger LOG = LogManager.getLogger(DataTablesTool.class);
+public final static String ASPNET_AJAX = "http://ajax.aspnetcdn.com/ajax/";
 	public static final String JQUERY_DATA_TABLES_MIN_JS = ASPNET_AJAX+"jquery.dataTables/1.9.4/jquery.dataTables.min.js";
 	public static final String JQUERY_1_8_2_MIN_JS = ASPNET_AJAX+"jQuery/jquery-1.8.2.min.js";
 	public static final String JQUERY_DATA_TABLES_CSS = ASPNET_AJAX+"jquery.dataTables/1.9.4/css/jquery.dataTables.css";

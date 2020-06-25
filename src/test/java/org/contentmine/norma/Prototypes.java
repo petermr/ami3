@@ -1,18 +1,14 @@
 package org.contentmine.norma;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.norma.Norma;
 
 public class Prototypes {
 
 	
-	private static final Logger LOG = Logger.getLogger(Prototypes.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static void main(String[] args) {
+	private static final Logger LOG = LogManager.getLogger(Prototypes.class);
+public static void main(String[] args) {
 //		runHalThesis1();
 //		runHalThesis2();
 //		runHalThesis3();

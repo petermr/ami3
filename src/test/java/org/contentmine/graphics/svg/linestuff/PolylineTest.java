@@ -1,15 +1,11 @@
 package org.contentmine.graphics.svg.linestuff;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class PolylineTest {
-	private static final Logger LOG = Logger.getLogger(PolylineTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	// ===========================
+	private static final Logger LOG = LogManager.getLogger(PolylineTest.class);
+// ===========================
 
 
 

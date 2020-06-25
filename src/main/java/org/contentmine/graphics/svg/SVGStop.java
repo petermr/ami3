@@ -1,7 +1,7 @@
 package org.contentmine.graphics.svg;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import nu.xom.Attribute;
 
@@ -13,11 +13,8 @@ import nu.xom.Attribute;
  *
  */
 public class SVGStop extends SVGElement {
-	private static final Logger LOG = Logger.getLogger(SVGStop.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public final static String TAG = "stop";
+	private static final Logger LOG = LogManager.getLogger(SVGStop.class);
+public final static String TAG = "stop";
 	public final static String OFFSET = "offset";
 
 	public SVGStop() {

@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.cache;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.html.HtmlHtml;
@@ -24,12 +24,8 @@ import org.contentmine.graphics.svg.text.structure.TextStructurer;
  *
  */
 public class TextChunkCache extends AbstractCache {
-	static final Logger LOG = Logger.getLogger(TextChunkCache.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private List<SVGText> rawTextList;
+	static final Logger LOG = LogManager.getLogger(TextChunkCache.class);
+private List<SVGText> rawTextList;
 	private TextChunkList textChunkList;
 	private TextCache siblingTextCache;
 	private TextStructurer textStructurer;

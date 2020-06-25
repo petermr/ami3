@@ -3,8 +3,8 @@ package org.contentmine.norma.sections;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.JodaDate;
 
 import nu.xom.Attribute;
@@ -19,12 +19,8 @@ public class JATSDateElement extends JATSElement implements IsBlock {
 		<year>2011</year>
 	</date>
 	 */
-	private static final Logger LOG = Logger.getLogger(JATSDateElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	static final String TAG = "date";
+	private static final Logger LOG = LogManager.getLogger(JATSDateElement.class);
+static final String TAG = "date";
 	public static final String DATE_TYPE = "date-type";
 
 	public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {

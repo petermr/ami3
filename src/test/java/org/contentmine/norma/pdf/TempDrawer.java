@@ -34,8 +34,8 @@ import java.util.Map;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.pdfbox.cos.COSArray;
 import org.apache.pdfbox.cos.COSBase;
 import org.apache.pdfbox.cos.COSDictionary;
@@ -91,12 +91,8 @@ import org.contentmine.pdf2svg2.old.Glyph2D;
  * Example PageDrawer subclass with custom rendering.
  */
 public class TempDrawer extends PageDrawer {
-	private static final Logger LOG = Logger.getLogger(TempDrawer.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-    // parent document renderer - note: this is needed for not-yet-implemented resource caching
+	private static final Logger LOG = LogManager.getLogger(TempDrawer.class);
+// parent document renderer - note: this is needed for not-yet-implemented resource caching
     private final PDFRenderer renderer;
     
     private final boolean subsamplingAllowed;

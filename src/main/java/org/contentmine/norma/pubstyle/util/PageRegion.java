@@ -1,7 +1,7 @@
 package org.contentmine.norma.pubstyle.util;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGElement;
 
 /** a region of a page.
@@ -11,12 +11,8 @@ import org.contentmine.graphics.svg.SVGElement;
  *
  */
 public class PageRegion {
-	private static final Logger LOG = Logger.getLogger(PageRegion.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private int pageNumber;
+	private static final Logger LOG = LogManager.getLogger(PageRegion.class);
+private int pageNumber;
 	private int section;
 	private SVGElement svgElement;
 

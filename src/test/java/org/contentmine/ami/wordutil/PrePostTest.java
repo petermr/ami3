@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIFixtures;
 import org.contentmine.ami.wordutil.WordTree;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -18,12 +18,8 @@ import nu.xom.Node;
 public class PrePostTest {
 
 	private static final String MATCH = "match";
-	private static final Logger LOG = Logger.getLogger(PrePostTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(PrePostTest.class);
+@Test
 	public void testTree() {
 		Element snippetsElement = createSnippetsElement();
 		List<Element> resultElementList = XMLUtil.getQueryElements(snippetsElement, "//result");

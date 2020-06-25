@@ -1,16 +1,13 @@
 package org.contentmine.cproject.args.log;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 public class LogElement extends AbstractLogElement {
 
-	private static final Logger LOG = Logger.getLogger(LogElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public final static String TAG = "log";
+	private static final Logger LOG = LogManager.getLogger(LogElement.class);
+public final static String TAG = "log";
 	
 	protected LogElement() {
 		super(TAG);

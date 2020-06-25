@@ -1,17 +1,13 @@
 package org.contentmine.norma.sections;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.graphics.html.HtmlDiv;
 
 public class BodyExtractor extends SectionExtractor {
-	private static final Logger LOG = Logger.getLogger(BodyExtractor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private BodyExtractor() {
+	private static final Logger LOG = LogManager.getLogger(BodyExtractor.class);
+private BodyExtractor() {
 		super();
 	}
 	

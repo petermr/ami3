@@ -17,8 +17,8 @@ import java.util.List;
 
 import javax.imageio.ImageIO;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.Int2Range;
@@ -57,12 +57,8 @@ import boofcv.struct.image.GrayU8;
 
 public class ImageUtil {
 	private static final double NO_CORRELATION = -0.01;
-	private static final Logger LOG = Logger.getLogger(ImageUtil.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/** rotates round vertical axis
+	private static final Logger LOG = LogManager.getLogger(ImageUtil.class);
+/** rotates round vertical axis
 	 * rotations are ANTICLOCKWISE DEGREES
 	 * @author pm286
 	 *

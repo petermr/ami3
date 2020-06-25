@@ -3,8 +3,8 @@ package org.contentmine.norma.json;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.JodaDate;
 import org.joda.time.DateTime;
 
@@ -16,11 +16,8 @@ import com.google.gson.JsonPrimitive;
 public class ManifestElement {
 
 	
-	private static final Logger LOG = Logger.getLogger(ManifestElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final String ABSTRACT = "abstractText";
+	private static final Logger LOG = LogManager.getLogger(ManifestElement.class);
+private static final String ABSTRACT = "abstractText";
 	
 	
 	private ManifestString abstractText = new ManifestString(ABSTRACT); 

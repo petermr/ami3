@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.search.SearchSearcher;
 import org.contentmine.ami.plugins.word.WordResultsElement;
 import org.contentmine.ami.plugins.word.WordResultsElementList;
@@ -26,13 +26,8 @@ import org.contentmine.cproject.lookup.DefaultStringDictionary;
  */
 public abstract class AbstractSearchArgProcessor extends AMIArgProcessor {
 	
-	public static final Logger LOG = Logger.getLogger(AbstractSearchArgProcessor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-
-	static final double MIN_FONT = 10;
+	public static final Logger LOG = LogManager.getLogger(AbstractSearchArgProcessor.class);
+static final double MIN_FONT = 10;
 	static final double MAX_FONT = 30;
 	
 	private Map<String, ResultsElement> resultsByDictionary;

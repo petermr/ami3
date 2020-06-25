@@ -1,7 +1,7 @@
 package org.contentmine.cproject.files;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** largely a DataTransferObject
  * holds templates and switches for IO in CProject and CTrees
@@ -10,12 +10,8 @@ import org.apache.log4j.Logger;
  *
  */
 public class CProjectIO {
-	private static final Logger LOG = Logger.getLogger(CProjectIO.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private boolean writeSVGPages;
+	private static final Logger LOG = LogManager.getLogger(CProjectIO.class);
+private boolean writeSVGPages;
 	private boolean writeRawImages;
 
 	

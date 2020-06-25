@@ -22,7 +22,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Line2;
 import org.contentmine.eucl.euclid.Real2;
@@ -53,7 +54,7 @@ public class SVGPolyline extends SVGPoly {
 	private static final String Y1 = "y1";
 	private static final String Y2 = "y2";
 
-	private static Logger LOG = Logger.getLogger(SVGPolyline.class);
+	private static Logger LOG = LogManager.getLogger(SVGPolyline.class);
 	
 	public final static String TAG ="polyline";
 	

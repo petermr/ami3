@@ -1,7 +1,7 @@
 package org.contentmine.norma.applic;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** collection of BibliographicRecords from ESSoilDB.
  * 
@@ -10,12 +10,8 @@ import org.apache.log4j.Logger;
  */
 public class Bibliography {
 
-	private static final Logger LOG = Logger.getLogger(Bibliography.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public Bibliography() {
+	private static final Logger LOG = LogManager.getLogger(Bibliography.class);
+public Bibliography() {
 		
 	}
 

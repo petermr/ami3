@@ -1,6 +1,7 @@
 package org.contentmine.image.pixel;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -10,7 +11,7 @@ import org.junit.Test;
  *
  */
 public class NeighbourPixelTest {
-	private final static Logger LOG = Logger.getLogger(NeighbourPixelTest.class);
+	private final static Logger LOG = LogManager.getLogger(NeighbourPixelTest.class);
 
 	private static PixelIsland DOT1;
 	private static PixelIsland LINE2; // 2-pixel Line

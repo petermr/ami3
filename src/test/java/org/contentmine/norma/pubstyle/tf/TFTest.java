@@ -3,8 +3,8 @@ package org.contentmine.norma.pubstyle.tf;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.norma.NormaArgProcessor;
@@ -14,12 +14,8 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 public class TFTest {
-	private static final Logger LOG = Logger.getLogger(TFTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	static String PUB0 = "tf";
+	private static final Logger LOG = LogManager.getLogger(TFTest.class);
+static String PUB0 = "tf";
 	static String PUB = "tf";
 	static String PUB1 = PUB+"/clean";
 	static File TARGET = new File(NormaFixtures.TARGET_PUBSTYLE_DIR, PUB);

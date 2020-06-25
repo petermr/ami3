@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.util;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.IntMatrix;
@@ -28,13 +28,9 @@ import org.contentmine.graphics.svg.SVGSVG;
  *
  */
 public class SuperPixelArray {
-	private static final Logger LOG = Logger.getLogger(SuperPixelArray.class);
+	private static final Logger LOG = LogManager.getLogger(SuperPixelArray.class);
 
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static String[] COLOR = {
+private static String[] COLOR = {
 			"white",
 			"red",
 			"green",

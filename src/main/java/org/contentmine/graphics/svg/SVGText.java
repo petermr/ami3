@@ -14,8 +14,8 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Angle.Units;
 import org.contentmine.eucl.euclid.EuclidConstants;
@@ -62,12 +62,8 @@ public class SVGText extends SVGElement {
 
 	private static final String X = "x";
 
-	private static Logger LOG = Logger.getLogger(SVGText.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public enum RotateText {
+	private static Logger LOG = LogManager.getLogger(SVGText.class);
+public enum RotateText {
 		TRUE,
 		FALSE,
 		;

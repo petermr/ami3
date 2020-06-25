@@ -6,8 +6,8 @@ import java.io.InputStream;
 import java.util.List;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -68,13 +68,8 @@ getTitle() will look for (in order)
  *
  */
 public class HtmlTabbedButtonDisplay extends HtmlHtml {
-	private static final Logger LOG = Logger.getLogger(HtmlTabbedButtonDisplay.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	
-//	public final static String BUTTON_STYLE_RESOURCE = Norma.NORMA_OUTPUT_RESOURCE+"/"+"tabButton.css.xml"; 
+	private static final Logger LOG = LogManager.getLogger(HtmlTabbedButtonDisplay.class);
+//	public final static String BUTTON_STYLE_RESOURCE = Norma.NORMA_OUTPUT_RESOURCE+"/"+"tabButton.css.xml";
 //	public final static String BUTTON_SCRIPT_RESOURCE = Norma.NORMA_OUTPUT_RESOURCE+"/"+"tabButton.js.xml";
 	public final static String BUTTON_STYLE_RESOURCE = Norma.NORMA_OUTPUT_RESOURCE+"/"+"tabButton.css"; 
 	public final static String BUTTON_SCRIPT_RESOURCE = Norma.NORMA_OUTPUT_RESOURCE+"/"+"tabButton.js";

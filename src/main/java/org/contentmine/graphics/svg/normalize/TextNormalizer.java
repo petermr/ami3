@@ -1,7 +1,7 @@
 package org.contentmine.graphics.svg.normalize;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** normalizes (compacts) texts.
  * will extract common y coordinates  and create x-array
@@ -12,9 +12,5 @@ import org.apache.log4j.Logger;
  *
  */
 public class TextNormalizer {
-	private static final Logger LOG = Logger.getLogger(TextNormalizer.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
+	private static final Logger LOG = LogManager.getLogger(TextNormalizer.class);
 }

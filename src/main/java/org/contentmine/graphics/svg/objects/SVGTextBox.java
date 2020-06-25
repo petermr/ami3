@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.objects;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Line2;
 import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.euclid.Real2;
@@ -23,12 +23,8 @@ import org.contentmine.graphics.svg.SVGText;
 public class SVGTextBox extends SVGG {
 
 	public static final String TEXT_BOX = "textBox";
-	private static final Logger LOG = Logger.getLogger(SVGTextBox.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private SVGRect rect;
+	private static final Logger LOG = LogManager.getLogger(SVGTextBox.class);
+private SVGRect rect;
 	protected List<SVGText> textList;
 	private Real2Range bbox;
 	private Real2[] corners;

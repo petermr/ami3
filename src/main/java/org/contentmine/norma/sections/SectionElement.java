@@ -7,8 +7,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeList;
@@ -23,11 +23,8 @@ import nu.xom.Element;
  *
  */
 public class SectionElement extends Element {
-	private static final Logger LOG = Logger.getLogger(SectionElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final String COUNT = "count";
+	private static final Logger LOG = LogManager.getLogger(SectionElement.class);
+private static final String COUNT = "count";
 	private static final String ID = "id";
 	private static final String NODE = "node";
 	private static final String TITLE = "title";

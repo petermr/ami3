@@ -4,8 +4,8 @@ import java.io.File;
 import java.text.Normalizer;
 import java.text.Normalizer.Form;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.html.HtmlElement;
@@ -24,12 +24,8 @@ import org.junit.Test;
  *
  */
 public class SVGDocumentProcessorIT {
-	private static final Logger LOG = Logger.getLogger(SVGDocumentProcessorIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(SVGDocumentProcessorIT.class);
+@Test
 	public void testJoinSpans() throws Exception {
 		File joinSpansHtmlFile = new File(new File(SVG2XMLFixtures.SVG2XML_DIR, "pdf"), "joinSpans.html");
 		HtmlElement joinSpansElement = new HtmlFactory().parse(joinSpansHtmlFile);

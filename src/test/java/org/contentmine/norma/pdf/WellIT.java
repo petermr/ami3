@@ -8,8 +8,8 @@ import java.util.List;
 
 import javax.imageio.ImageIO;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeList;
@@ -58,15 +58,9 @@ import junit.framework.Assert;
 @Ignore // no longer working on this
 public class WellIT {
 	private static final File WELL_DIR = new File("/Users/pm286/ContentMine/well/testfiles");
-	public static final Logger LOG = Logger.getLogger(WellIT.class);
+	public static final Logger LOG = LogManager.getLogger(WellIT.class);
 	private static String TEST_FILES_ROOT;
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-
-
-	@Test
+@Test
 	public void testWell() throws Exception {
 		File sourceDir = WELL_DIR;
 		if (!sourceDir.exists()) {

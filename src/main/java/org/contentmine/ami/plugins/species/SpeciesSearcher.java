@@ -2,8 +2,8 @@ package org.contentmine.ami.plugins.species;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
 import org.contentmine.ami.plugins.AMIArgProcessor;
 import org.contentmine.ami.plugins.AMISearcher;
@@ -16,12 +16,8 @@ import nu.xom.Element;
 
 public class SpeciesSearcher extends AMISearcher {
 
-	private static final Logger LOG = Logger.getLogger(SpeciesSearcher.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public SpeciesSearcher(AMIArgProcessor argProcessor, NamedPattern namedPattern) {
+	private static final Logger LOG = LogManager.getLogger(SpeciesSearcher.class);
+public SpeciesSearcher(AMIArgProcessor argProcessor, NamedPattern namedPattern) {
 		super(argProcessor, namedPattern);
 	}
 

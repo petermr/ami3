@@ -1,10 +1,11 @@
 package org.contentmine.svg2xml.words;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class WordBuilderTest {
 
-	private static final Logger LOG = Logger.getLogger(WordBuilderTest.class);
+	private static final Logger LOG = LogManager.getLogger(WordBuilderTest.class);
 
 //	@Test
 //	public void testWordList() {

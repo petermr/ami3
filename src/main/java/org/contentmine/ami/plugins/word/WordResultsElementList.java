@@ -1,20 +1,15 @@
 package org.contentmine.ami.plugins.word;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.ResultsElement;
 import org.contentmine.cproject.files.ResultsElementList;
 
 public class WordResultsElementList extends ResultsElementList {
 
 	
-	private static final Logger LOG = Logger
-			.getLogger(WordResultsElementList.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public WordResultsElementList() {
+	private static final Logger LOG = LogManager.getLogger(WordResultsElementList.class);
+public WordResultsElementList() {
 		super();
 	}
 

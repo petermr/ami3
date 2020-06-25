@@ -4,8 +4,8 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntRange;
 import org.contentmine.eucl.euclid.util.MultisetUtil;
 
@@ -19,12 +19,8 @@ import com.google.common.collect.Multiset.Entry;
  * */
 
 public class FontGeometry {
-	private static final Logger LOG = Logger.getLogger(FontGeometry.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private TextLine textLine;
+	private static final Logger LOG = LogManager.getLogger(FontGeometry.class);
+private TextLine textLine;
 
 	private Multiset<Integer> upperLimits;
 	private Multiset<Integer> lowerLimits;

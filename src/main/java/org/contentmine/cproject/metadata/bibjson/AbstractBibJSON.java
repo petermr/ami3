@@ -1,7 +1,7 @@
 package org.contentmine.cproject.metadata.bibjson;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
@@ -14,12 +14,8 @@ import com.google.gson.GsonBuilder;
  */
 public abstract class AbstractBibJSON {
 
-	private static final Logger LOG = Logger.getLogger(AbstractBibJSON.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private transient Gson gson;
+	private static final Logger LOG = LogManager.getLogger(AbstractBibJSON.class);
+private transient Gson gson;
 	
 	public String toString() {
 		if (gson == null) {

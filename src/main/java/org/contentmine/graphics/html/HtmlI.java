@@ -19,7 +19,8 @@ package org.contentmine.graphics.html;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.util.HtmlUtil;
 
 
@@ -27,7 +28,7 @@ import org.contentmine.graphics.html.util.HtmlUtil;
  *  @author pm286
  */
 public class HtmlI extends HtmlElement {
-	private final static Logger LOG = Logger.getLogger(HtmlI.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlI.class);
 	public final static String TAG = "i";
 	public final static String ALL_I_XPATH = ".//h:i";
 

@@ -16,8 +16,8 @@ import java.util.Set;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.cproject.util.RectTabColumn;
 import org.contentmine.cproject.util.RectangularTable;
@@ -34,12 +34,8 @@ import com.google.common.collect.Multiset;
  */
 public class PlantCollection {
 
-	private static final Logger LOG = Logger.getLogger(PlantCollection.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	Map<String, PlantRecord> plantById;
+	private static final Logger LOG = LogManager.getLogger(PlantCollection.class);
+Map<String, PlantRecord> plantById;
 	Multiset<String> plantMultiset;
 	Set<String> duplicatePlantIds;
 	List<List<String>> plantValueListList;

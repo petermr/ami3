@@ -10,8 +10,8 @@ import java.util.Map;
 
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.table.ColumnMatcher;
 import org.contentmine.ami.tools.table.FileMatcher;
 import org.contentmine.ami.tools.table.TQueryTool;
@@ -50,13 +50,9 @@ import picocli.CommandLine.Option;
 		"Writes cProject or cTree to summary table."
 })
 public class AMITableTool extends AbstractAMITool {
-	private static final Logger LOG = Logger.getLogger(AMITableTool.class);
+	private static final Logger LOG = LogManager.getLogger(AMITableTool.class);
 
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final int INCONSISTENT_FOOTER = -2;
+public static final int INCONSISTENT_FOOTER = -2;
 	public static final int NO_FOOTER = -1;
 	public static final int NOT_FOUND = -1;
 	// use "1" to mark a match
@@ -172,7 +168,7 @@ public class AMITableTool extends AbstractAMITool {
 		} else if (processTrees()) {
 			summarize();
     	} else {
-			DebugPrint.debugPrint(Level.ERROR, "must give cProject or cTree");
+			LOG.error(DebugPrint.MARKER, "must give cProject or cTree");
 	    }
     	
     }

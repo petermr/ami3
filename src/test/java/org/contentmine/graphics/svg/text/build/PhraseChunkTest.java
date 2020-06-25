@@ -1,7 +1,7 @@
 package org.contentmine.graphics.svg.text.build;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  * 
@@ -12,9 +12,5 @@ import org.apache.log4j.Logger;
  *
  */
 public class PhraseChunkTest {
-	private static final Logger LOG = Logger.getLogger(PhraseChunkTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
+	private static final Logger LOG = LogManager.getLogger(PhraseChunkTest.class);
 }

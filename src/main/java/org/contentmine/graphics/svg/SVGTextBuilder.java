@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntRange;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.graphics.html.HtmlElement;
@@ -22,12 +22,8 @@ import com.google.common.collect.Multiset;
  *
  */
 public class SVGTextBuilder {
-	private static final Logger LOG = Logger.getLogger(SVGTextBuilder.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private List<SVGText> textList;
+	private static final Logger LOG = LogManager.getLogger(SVGTextBuilder.class);
+private List<SVGText> textList;
 	private HtmlElement htmlElement;
 	private Multiset<Double> deltaYMultiset; // will be formatted to 1 decimal
 	private Multiset<Integer> leftXMultiset;

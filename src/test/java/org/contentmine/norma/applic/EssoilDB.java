@@ -7,19 +7,16 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import com.google.common.collect.HashMultiset;
 import com.google.common.collect.Multiset;
 
 public class EssoilDB {
 
-	static final Logger LOG = Logger.getLogger(EssoilDB.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	final static File ESSOIL = new File(new File(System.getProperty("user.home")), "phyto/EssoilDB");
+	static final Logger LOG = LogManager.getLogger(EssoilDB.class);
+final static File ESSOIL = new File(new File(System.getProperty("user.home")), "phyto/EssoilDB");
 	
 	private List<String> signatureList;
 	private HashSet<String> unmatchedObservationIds;

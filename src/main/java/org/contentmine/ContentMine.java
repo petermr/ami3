@@ -1,7 +1,7 @@
 package org.contentmine;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  * toplevel main class to provide script documentation
@@ -9,12 +9,8 @@ import org.apache.log4j.Logger;
  *
  */
 public class ContentMine {
-	private static final Logger LOG = Logger.getLogger(ContentMine.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static void main(String[] args) {
+	private static final Logger LOG = LogManager.getLogger(ContentMine.class);
+public static void main(String[] args) {
 		if (args.length == 0) {
 			LOG.error("Programs are:");
 			LOG.error("    cproject  // runs cephis tools");

@@ -11,7 +11,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealRange;
@@ -31,7 +32,7 @@ import nu.xom.Nodes;
 public class SVGUtil {
 
 	private static final String TRANSFORMS_APPLIED = "transformsApplied";
-	private static final Logger LOG = Logger.getLogger(SVGUtil.class);
+	private static final Logger LOG = LogManager.getLogger(SVGUtil.class);
 
 	/**
 	 * adds a new svg:g between element and its children

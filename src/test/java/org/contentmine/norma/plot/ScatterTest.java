@@ -2,8 +2,8 @@ package org.contentmine.norma.plot;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGElement;
@@ -15,13 +15,9 @@ import org.junit.Test;
 
 @Ignore // TOO LONG
 public class ScatterTest {
-	private static final Logger LOG = Logger.getLogger(ScatterTest.class);
+	private static final Logger LOG = LogManager.getLogger(ScatterTest.class);
 
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	File SCATTERPLOT_DIR = new File("target/scatterplots"); 
+File SCATTERPLOT_DIR = new File("target/scatterplots"); 
 	
 	@Test
 	/** a single tree with a single figure file.

@@ -8,7 +8,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 
 import com.google.common.collect.ArrayListMultimap;
@@ -24,7 +25,7 @@ import com.google.common.collect.Multiset;
  */
 public class LinneanNamer {
 
-	private final static Logger LOG = Logger.getLogger(LinneanNamer.class);
+	private final static Logger LOG = LogManager.getLogger(LinneanNamer.class);
 
 	private Multimap<String, LinneanName> linneanNameByAbbreviationMap;
 	private Multimap<String, LinneanName> linneanNameBySpeciesMap;

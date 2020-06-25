@@ -3,17 +3,13 @@ package org.contentmine.ami.plugins.phylotree.nexml;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class NWKName {
 	
-	private static final Logger LOG = Logger.getLogger(NWKName.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public final static Pattern NAME_PATTERN = Pattern.compile("([a-zA-Z \\._]+).*");
+	private static final Logger LOG = LogManager.getLogger(NWKName.class);
+public final static Pattern NAME_PATTERN = Pattern.compile("([a-zA-Z \\._]+).*");
 	
 	private String nameString;
 

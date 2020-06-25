@@ -21,8 +21,8 @@ import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.norma.xsl.TransformerWrapper;
 import org.junit.Assert;
 import org.junit.Ignore;
@@ -273,10 +273,10 @@ I'd consider this answer an argument against the Java way of doing things.
 		}
 	}
 	
-	private static final Logger LOG = Logger.getLogger(MiscTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}	
+	private static final Logger LOG = LogManager.getLogger(MiscTest.class);
+//	static {
+//		LOG.setLevel(Level.DEBUG);
+//	}
 	
 	@Test
 	public void testReflection() throws Exception {

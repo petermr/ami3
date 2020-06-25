@@ -6,8 +6,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import com.google.common.collect.Multiset;
 import com.google.common.collect.Multiset.Entry;
@@ -21,12 +21,8 @@ import com.google.common.collect.Multisets;
  *
  */
 public class RGBColor {
-	private static final Logger LOG = Logger.getLogger(RGBColor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static int HEX_BLACK = 0x000000;
+	private static final Logger LOG = LogManager.getLogger(RGBColor.class);
+public static int HEX_BLACK = 0x000000;
 	public static RGBColor RGB_BLACK = new RGBColor(HEX_BLACK);
 	public static int HEX_WHITE = 0xffffff;
 	public static RGBColor RGB_WHITE = new RGBColor(HEX_WHITE);

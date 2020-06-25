@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.cache;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGLine;
 import org.contentmine.graphics.svg.SVGLineList;
@@ -19,12 +19,8 @@ import junit.framework.Assert;
  *
  */
 public class LineBoxCacheTest extends AbstractCacheTest {
-	private static final Logger LOG = Logger.getLogger(LineBoxCacheTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(LineBoxCacheTest.class);
+@Test
 	public void testDisplayLinesInPage() {
 		String root = "fullPageNestedPanels";
 		File pageFile = new File(CACHE_TEST, root+".svg");

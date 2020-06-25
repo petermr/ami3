@@ -18,8 +18,8 @@ import javax.xml.transform.stream.StreamSource;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -35,12 +35,8 @@ import nu.xom.Element;
 public class TransformerWrapper {
 	
 	
-	private static final Logger LOG = Logger.getLogger(TransformerWrapper.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final String NET_SF_SAXON_TRANSFORMER_FACTORY_IMPL = "net.sf.saxon.TransformerFactoryImpl";
+	private static final Logger LOG = LogManager.getLogger(TransformerWrapper.class);
+public static final String NET_SF_SAXON_TRANSFORMER_FACTORY_IMPL = "net.sf.saxon.TransformerFactoryImpl";
 	public static final String JAVAX_XML_TRANSFORM_TRANSFORMER_FACTORY = "javax.xml.transform.TransformerFactory";
 	public static final String DOCTYPE = "<!DOCTYPE";
 	

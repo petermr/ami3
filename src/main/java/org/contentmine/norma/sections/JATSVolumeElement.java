@@ -1,18 +1,14 @@
 package org.contentmine.norma.sections;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import nu.xom.Element;
 
 public class JATSVolumeElement extends JATSElement implements IsInline {
 
-	private static final Logger LOG = Logger.getLogger(JATSVolumeElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	static final String TAG = "volume";
+	private static final Logger LOG = LogManager.getLogger(JATSVolumeElement.class);
+static final String TAG = "volume";
 
 	public JATSVolumeElement(Element element) {
 		super(element);

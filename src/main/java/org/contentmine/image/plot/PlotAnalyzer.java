@@ -2,7 +2,8 @@ package org.contentmine.image.plot;
 
 import java.io.File;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.image.ArgIterator;
 import org.contentmine.image.ImageProcessor;
 import org.contentmine.image.diagram.DiagramAnalyzer;
@@ -16,7 +17,7 @@ import org.contentmine.image.pixel.PixelIslandList;
  *
  */
 public class PlotAnalyzer extends DiagramAnalyzer {
-	private final static Logger LOG = Logger.getLogger(PlotAnalyzer.class);
+	private final static Logger LOG = LogManager.getLogger(PlotAnalyzer.class);
 
 	public final static String CSV = "-c";
 	public final static String CSV1 = "--csv";

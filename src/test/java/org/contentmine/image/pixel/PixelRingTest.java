@@ -6,8 +6,8 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.CMineFixtures;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.IntRange;
@@ -26,12 +26,8 @@ import junit.framework.Assert;
  *
  */
 public class PixelRingTest {
-	private static final Logger LOG = Logger.getLogger(PixelRingTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static String PIXEL_RINGS = "pixelRings";
+	private static final Logger LOG = LogManager.getLogger(PixelRingTest.class);
+public static String PIXEL_RINGS = "pixelRings";
 	public static File TARGET_PIXEL_RINGS = new File(CMineFixtures.TARGET_DIR, PIXEL_RINGS+"/");
 
 	@Test

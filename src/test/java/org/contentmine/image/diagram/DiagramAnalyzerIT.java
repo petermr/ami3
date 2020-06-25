@@ -3,8 +3,8 @@ package org.contentmine.image.diagram;
 import java.awt.image.BufferedImage;
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.graphics.svg.util.ImageIOUtil;
@@ -29,12 +29,8 @@ import junit.framework.Assert;
  */
 @Ignore
 public class DiagramAnalyzerIT {
-	private static final Logger LOG = Logger.getLogger(DiagramAnalyzerIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(DiagramAnalyzerIT.class);
+@Test
 	public void testFunnelPixelRings() {
 		for (String filename : new String[] {
 				"funnel1.gif","funnel2.jpg","funnel3.png"		}) {

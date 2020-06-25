@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -21,12 +21,8 @@ import com.google.common.collect.Multiset.Entry;
  */
 public class CSVTableTest {
 
-	private static final Logger LOG = Logger.getLogger(CSVTableTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private final static List<String> HEADERS1 = new ArrayList<String>(Arrays.asList(new String[] {"A", "B", "C"})); 
+	private static final Logger LOG = LogManager.getLogger(CSVTableTest.class);
+private final static List<String> HEADERS1 = new ArrayList<String>(Arrays.asList(new String[] {"A", "B", "C"}));
 	private final static List<String> HEADERS2 = new ArrayList<String>(Arrays.asList(new String[] {"A", "D", "E"})); 
 	private final static List<String> HEADERS3 = new ArrayList<String>(Arrays.asList(new String[] {"D", "E"})); 
 

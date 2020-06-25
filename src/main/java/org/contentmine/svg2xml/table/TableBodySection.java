@@ -3,8 +3,8 @@ package org.contentmine.svg2xml.table;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealArray;
 import org.contentmine.eucl.euclid.RealRange;
@@ -29,12 +29,8 @@ public class TableBodySection extends TableSection {
 	static final String BODY_CELL_BOXES = "body.cellBoxes";
 	private static final String BODY_COLUMN_BOXES = "body.columnBoxes";
 	private static final String BODY_SUBTABLE_BOXES = "body.subtableBoxes";
-	static final Logger LOG = Logger.getLogger(TableBodySection.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private List<RealRange> indentRangeArray;
+	static final Logger LOG = LogManager.getLogger(TableBodySection.class);
+private List<RealRange> indentRangeArray;
 	private ColumnManager columnManager0;
 		
 	public TableBodySection(TableSection tableSection) {

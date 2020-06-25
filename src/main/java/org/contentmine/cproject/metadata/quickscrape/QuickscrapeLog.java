@@ -9,8 +9,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.CProjectArgProcessor;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -27,12 +27,8 @@ import nu.xom.Element;
 public class QuickscrapeLog {
 
 	
-	private static final Logger LOG = Logger.getLogger(QuickscrapeLog.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final String ERROR_PAGE_DID_NOT_RETURN_A_200 = "error: page did not return a 200 so moving on to next url in list";
+	private static final Logger LOG = LogManager.getLogger(QuickscrapeLog.class);
+public static final String ERROR_PAGE_DID_NOT_RETURN_A_200 = "error: page did not return a 200 so moving on to next url in list";
 	public static final String INFO_URL_PROCESSED = "info: URL processed: ";
 	public static final String INFO_PROCESSING_URL = "info: processing URL: ";
 

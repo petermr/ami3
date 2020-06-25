@@ -14,16 +14,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class CurlPair {
-	private static final Logger LOG = Logger.getLogger(CurlPair.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private URL url;
+	private static final Logger LOG = LogManager.getLogger(CurlPair.class);
+private URL url;
 	private File outputFile;
 
 	public CurlPair(File outputFile, URL url) {

@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -16,12 +16,8 @@ import org.contentmine.cproject.files.CTree;
 @Ignore("requires tesseract")
 public class PhyloArgProcessorTest {
 	
-	private static final Logger LOG = Logger.getLogger(PhyloArgProcessorTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(PhyloArgProcessorTest.class);
+@Test
 	public void testPhyloArgProcessor() throws Exception {
 		File newDir = new File("target/ijsem/phylo");
 	}

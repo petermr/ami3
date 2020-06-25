@@ -1,8 +1,14 @@
 package org.contentmine.ami.tools;
 
-import org.apache.log4j.BasicConfigurator;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.core.Appender;
+import org.apache.logging.log4j.core.LoggerContext;
+import org.apache.logging.log4j.core.appender.ConsoleAppender;
+import org.apache.logging.log4j.core.config.Configurator;
+import org.apache.logging.log4j.core.config.LoggerConfig;
+import org.apache.logging.log4j.spi.StandardLevel;
 import picocli.AutoComplete;
 import picocli.CommandLine;
 import picocli.CommandLine.ArgGroup;
@@ -11,13 +17,14 @@ import picocli.CommandLine.IParameterExceptionHandler;
 import picocli.CommandLine.Model.CommandSpec;
 import picocli.CommandLine.Option;
 import picocli.CommandLine.ParameterException;
+import picocli.CommandLine.ParseResult;
 import picocli.CommandLine.Spec;
 
 import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.Callable;
+import java.util.stream.Collectors;
 
 @Command(name = "ami",
 		description = {
@@ -73,13 +80,9 @@ import java.util.concurrent.Callable;
 				AutoComplete.GenerateCompletion.class,
 		})
 public class AMI implements Runnable {
-	private static final Logger LOG = Logger.getLogger(AMI.class);
+	private static final Logger LOG = LogManager.getLogger(AMI.class);
 
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@ArgGroup(exclusive = true, heading = "", order = 9)
+@ArgGroup(exclusive = true, heading = "", order = 9)
 	ProjectOrTreeOptions projectOrTreeOptions = new ProjectOrTreeOptions();
 
 	@ArgGroup(validate = false, heading = "General Options:%n", order = 30)
@@ -95,11 +98,6 @@ public class AMI implements Runnable {
 	public void run() {
 		throw new ParameterException(spec.commandLine(), "Missing required subcommand");
 	}
-
-	protected void setLogging() {
-		loggingOptions.setLogging();
-	}
-
 	
 	public static void main(String args) {
 		if (args != null) {
@@ -160,10 +158,16 @@ public class AMI implements Runnable {
 	}
 
 	private static CommandLine createCommandLine() {
-		BasicConfigurator.configure(); // TBD not needed?
 		CommandLine cmd = new CommandLine(new AMI());
 		cmd.setParameterExceptionHandler(new ShortErrorMessageHandler());
+		cmd.setExecutionStrategy(AMI::enhancedLoggingExecutionStrategy);
 		return cmd;
+	}
+
+	private static int enhancedLoggingExecutionStrategy(ParseResult parseResult) {
+		AMI ami = parseResult.commandSpec().commandLine().getCommand();
+		ami.loggingOptions.reconfigureLogging();
+		return new CommandLine.RunLast().execute(parseResult); // now delegate to the default execution strategy
 	}
 
 	static class ProjectOrTreeOptions {
@@ -264,7 +268,6 @@ public class AMI implements Runnable {
 				description = "Output filename (no defaults)"
 		)
 		protected String output = null;
-
 	}
 
 	static class LoggingOptions {
@@ -275,38 +278,49 @@ public class AMI implements Runnable {
 								+ "We map ERROR or WARN -> 0 (i.e. always print), INFO -> 1(-v), DEBUG->2 (-vv)"})
 		protected boolean[] verbosity = new boolean[0];
 
-		@Option(names = {"--log4j"}, paramLabel = "(CLASS LEVEL)...", hideParamSyntax = true,
-				arity = "2..*",
+		@Option(names = {"--log4j"}, paramLabel = "CLASS=LEVEL[,CLASS=LEVEL...]", split = ",", hideParamSyntax = true,
 				description = "Customize logging configuration. Format: <classname> <level>; sets logging level of class, e.g. \n "
 						+ "org.contentmine.ami.lookups.WikipediaDictionary INFO"
 		)
-		protected String[] log4j;
+		protected Map<Class, StandardLevel> log4j = new HashMap<>();
 
-		private void setLogging() {
-			if (log4j != null) {
-				if (log4j.length % 2 != 0) {
-					throw new RuntimeException("log4j must have even number of arguments");
+		/**
+		 * Updates the logging configuration with user-specified modifications:
+		 * <ul>
+		 *   <li>verbosity - may change how much output is printed by the CONSOLE appender</li>>
+		 *   <li>log4j - modify the log level for specific classes (without changing the log4j2.xml config file)</li>>
+		 * </ul>
+		 */
+		private void reconfigureLogging() {
+			Map<String, Level> levelByClass = log4j.entrySet().stream().collect(Collectors.toMap(
+					e -> e.getKey().getName(), // class name = logger name
+					e -> Level.toLevel(e.getValue().name()))); // StandardLevel (enum) -> Level
+			Configurator.setLevel(levelByClass); // apply the user-specified changes
+
+			Level level = verbosityToLogLevel();
+
+			// find the CONSOLE appender and set its log level to match the specified verbosity
+			LoggerContext loggerContext = LoggerContext.getContext(false);
+			LoggerConfig rootConfig = loggerContext.getConfiguration().getRootLogger();
+			for (Appender appender : rootConfig.getAppenders().values()) {
+				if (appender instanceof ConsoleAppender) {
+					rootConfig.removeAppender(appender.getName());
+					rootConfig.addAppender(appender, level, null);
 				}
-				Map<Class<?>, Level> levelByClass = new HashMap<Class<?>, Level>();
-				for (int i = 0; i < log4j.length; ) {
-					String className = log4j[i++];
-					Class<?> logClass = null;
-					try {
-						logClass = Class.forName(className);
-					} catch (ClassNotFoundException e) {
-						System.err.println("Cannot find logger Class: " + className);
-						i++;
-						continue;
-					}
-					String levelS = log4j[i++];
-					Level level = Level.toLevel(levelS);
-					if (level == null) {
-						LOG.error("cannot parse class/level: " + className + ":" + levelS);
-					} else {
-						levelByClass.put(logClass, level);
-						Logger.getLogger(logClass).setLevel(level);
-					}
-				}
+			}
+			// we may need to change the ROOT logger if it is stricter than the user-specified verbosity
+			if (rootConfig.getLevel().isMoreSpecificThan(level)) {
+				rootConfig.setLevel(level);
+			}
+			loggerContext.updateLoggers(); // apply the changes
+		}
+
+		private Level verbosityToLogLevel() {
+			switch (verbosity.length) {
+				case 0:  return Level.WARN;  // WARN, ERROR and FATAL messages are always printed to the console
+				case 1:  return Level.INFO;  // -v
+				case 2:  return Level.DEBUG; // -vv
+				default: return Level.TRACE; // -vvv (or more)
 			}
 		}
 	}

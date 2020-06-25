@@ -25,8 +25,8 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.filefilter.IOFileFilter;
 import org.apache.commons.lang3.exception.ExceptionUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.args.log.AbstractLogElement;
 import org.contentmine.cproject.args.log.AbstractLogElement.LogLevel;
 import org.contentmine.cproject.args.log.CMineLog;
@@ -126,11 +126,7 @@ import nu.xom.Node;
 public class DefaultArgProcessor {
 	
 	public static final String ORG_CONTENTMINE_CPROJECT = "/org/contentmine/cproject";
-	private static final Logger LOG = Logger.getLogger(DefaultArgProcessor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
+	private static final Logger LOG = LogManager.getLogger(DefaultArgProcessor.class);
 	private static String ARGS_TOP = ORG_CONTENTMINE_CPROJECT + "/args";
 	private static final String ARGS2HTML_XSL = ARGS_TOP+ "/args2html.xsl";
 	protected static final String ARGS_XML = "args.xml";
@@ -149,6 +145,10 @@ public class DefaultArgProcessor {
 	public static final String WHITESPACE = "\\s+";
 	public static final VersionManager DEFAULT_VERSION_MANAGER = new VersionManager();
 	public static final String LOGFILE = "target/log.xml";
+
+	public static enum ExceptionLevel {
+		ERROR, WARN, INFO
+	}
 	
 	/** creates a list of tokens that are found in an allowed list.
 	 * 
@@ -207,7 +207,7 @@ public class DefaultArgProcessor {
 	private CTreeFiles cTreeFiles;
 	protected XPathProcessor xPathProcessor;
 	private Multiset<String> documentMultiset;
-	private Level exceptionLevel;
+	private ExceptionLevel exceptionLevel;
 	protected Pattern fileFilterPattern;
 	private IOFileFilter ioFileFilter;
 	protected String outputFileRegex;
@@ -361,12 +361,12 @@ public class DefaultArgProcessor {
 
 	public void parseException(ArgumentOption option, ArgIterator argIterator) {
 		String levelS = argIterator.getString(option).toUpperCase();
-		if (levelS.equals(Level.ERROR.toString())) {
-			exceptionLevel = Level.ERROR;
-		} else if (levelS.equals(Level.WARN.toString())) {
-			exceptionLevel = Level.WARN;
-		} else if (levelS.equals(Level.INFO.toString())) {
-			exceptionLevel = Level.INFO;
+		if (levelS.equals(ExceptionLevel.ERROR.toString())) {
+			exceptionLevel = ExceptionLevel.ERROR;
+		} else if (levelS.equals(ExceptionLevel.WARN.toString())) {
+			exceptionLevel = ExceptionLevel.WARN;
+		} else if (levelS.equals(ExceptionLevel.INFO.toString())) {
+			exceptionLevel = ExceptionLevel.INFO;
 		} else {
 			throw new RuntimeException("Bad exception level: "+levelS);
 		}
@@ -1287,8 +1287,8 @@ public class DefaultArgProcessor {
 			projectLog.writeLog();
 		}
 	}
-	
-	public Level getExceptionLevel() {
+
+	public ExceptionLevel getExceptionLevel() {
 		return exceptionLevel;
 	}
 

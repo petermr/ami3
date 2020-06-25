@@ -1,13 +1,14 @@
 package org.contentmine.svg2xml.table;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlTd;
 import org.contentmine.svg2xml.util.SVG2XMLUtil;
 
 public class TableCell extends TableChunk {
 
-	private final static Logger LOG = Logger.getLogger(TableCell.class);
+	private final static Logger LOG = LogManager.getLogger(TableCell.class);
 	
 	public TableCell() {
 		super();

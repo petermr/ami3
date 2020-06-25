@@ -19,8 +19,8 @@ import java.util.Set;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang3.reflect.FieldUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
@@ -37,12 +37,8 @@ import junit.framework.Assert;
  *
  */
 public class CMFileUtil {
-	private static final Logger LOG = Logger.getLogger(CMFileUtil.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private BiMap<File, File> newFileByOldFile;
+	private static final Logger LOG = LogManager.getLogger(CMFileUtil.class);
+private BiMap<File, File> newFileByOldFile;
 	private List<File> fileList;
 	
 	public CMFileUtil() {

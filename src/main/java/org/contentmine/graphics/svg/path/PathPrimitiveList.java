@@ -5,8 +5,8 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Array;
@@ -32,12 +32,8 @@ import com.jayway.jsonpath.internal.PathRef;
  * @author pm286
  */
 public class PathPrimitiveList implements Iterable<SVGPathPrimitive> {
-	private static final Logger LOG = Logger.getLogger(PathPrimitiveList.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private final static int MAX_ARRAY = 100000;
+	private static final Logger LOG = LogManager.getLogger(PathPrimitiveList.class);
+private final static int MAX_ARRAY = 100000;
 
 	private List<SVGPathPrimitive> primitiveList;
 	private boolean isClosed;

@@ -34,8 +34,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.euclid.Real2;
@@ -84,13 +84,8 @@ public class SVGElement extends GraphicsElement {
 
 
 	private static final String PARENT_ID = "parentId";
-	public static final Logger LOG = Logger.getLogger(SVGElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-
-	private static final int EXTRA_TRANSFORM_PRECISION = 2;
+	public static final Logger LOG = LogManager.getLogger(SVGElement.class);
+private static final int EXTRA_TRANSFORM_PRECISION = 2;
 	private static final Double DEFAULT_FONT_SIZE = 8.0;
 
 	public final static String ALL_ELEMENT_XPATH = "//svg:*";

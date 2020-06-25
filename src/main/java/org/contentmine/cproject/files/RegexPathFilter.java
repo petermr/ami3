@@ -10,16 +10,12 @@ import java.util.regex.Pattern;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.filefilter.IOFileFilter;
 import org.apache.commons.io.filefilter.TrueFileFilter;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class RegexPathFilter implements IOFileFilter {
-	private static final Logger LOG = Logger.getLogger(RegexPathFilter.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private Pattern pattern;
+	private static final Logger LOG = LogManager.getLogger(RegexPathFilter.class);
+private Pattern pattern;
 
 	public RegexPathFilter(Pattern pattern) {
 		this.pattern = pattern;

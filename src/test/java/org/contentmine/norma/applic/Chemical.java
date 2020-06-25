@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** holds  chemical information for isolated compound.
  * 
@@ -14,12 +14,8 @@ import org.apache.log4j.Logger;
  */
 public class Chemical {
 
-	private static final Logger LOG = Logger.getLogger(Chemical.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private static final String NA = "NA";
+	private static final Logger LOG = LogManager.getLogger(Chemical.class);
+private static final String NA = "NA";
 
 	private String trivialName;
 	private String formula;

@@ -3,8 +3,8 @@ package org.contentmine.ami.tools;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.DebugPrint;
@@ -32,12 +32,8 @@ description = {
 		+ "    deletes 4 files by name%n"
 })
 public class AMICleanTool extends AbstractAMITool {
-	private static final Logger LOG = Logger.getLogger(AMICleanTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public enum Cleaner {
+	private static final Logger LOG = LogManager.getLogger(AMICleanTool.class);
+public enum Cleaner {
 		FULLTEXT_HTML("fulltext.html", "f", "remove fulltext.html (probably not recoverable without redownload)"),
 		FULLTEXT_PDF("fulltext.pdf", "f", "remove fulltext.pdf (probably not recoverable without redownload)"),
 		FULLTEXT_XML("fulltext.xml", "f", "remove fulltext.xml (probably not recoverable without redownload)"),
@@ -57,7 +53,7 @@ public class AMICleanTool extends AbstractAMITool {
 		}
 		
 		public void help() {
-			DebugPrint.debugPrint(file + ": " + message);
+			LOG.debug(DebugPrint.MARKER, file + ": " + message);
 		}
 
 		public void clean(CTree cTree, String arg) {
@@ -119,7 +115,8 @@ public class AMICleanTool extends AbstractAMITool {
 
 	public void cleanFileOrDirs(List<String> filenameList) {
 		if (filenameList == null) {
-			addLoggingLevel(Level.WARN,"No filenameList given");
+			LOG.warn("No filenameList given");
+			showstopperEncountered = true;
 			return;
 		}
 		if (cProject != null) {
@@ -138,7 +135,8 @@ public class AMICleanTool extends AbstractAMITool {
 //				}
 //			}
 		} else {
-			addLoggingLevel(Level.ERROR, "must give cProject or cTree");
+			LOG.error("must give cProject or cTree");
+			showstopperEncountered = true;
 		}
 	}
 

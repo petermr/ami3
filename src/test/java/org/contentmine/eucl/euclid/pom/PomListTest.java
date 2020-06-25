@@ -6,8 +6,8 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.EuclidTestFixtures;
 import org.contentmine.eucl.pom.Dependency;
 import org.contentmine.eucl.pom.Pom;
@@ -16,11 +16,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class PomListTest {
-	public static final Logger LOG = Logger.getLogger(PomListTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public final static List<String> PROJECTS = Arrays.asList(new String[] {
+	public static final Logger LOG = LogManager.getLogger(PomListTest.class);
+public final static List<String> PROJECTS = Arrays.asList(new String[] {
 			"cm-pom", "euclid", "svg", "html", "imageanalysis", "diagramanalyzer",
 			"pdf2svg", "svg2xml", "cproject", "norma", "ami"});
 

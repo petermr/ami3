@@ -1,7 +1,7 @@
 package org.contentmine.norma.sections;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import nu.xom.Attribute;
 import nu.xom.Element;
@@ -13,12 +13,8 @@ import nu.xom.Element;
  *
  */
 public class JATSExtLinkElement extends JATSElement implements IsInline {
-	private static final Logger LOG = Logger.getLogger(JATSExtLinkElement.class);
-    static {
-        LOG.setLevel(Level.DEBUG);
-    }
-
-    public static String TAG = "ext-link";
+	private static final Logger LOG = LogManager.getLogger(JATSExtLinkElement.class);
+public static String TAG = "ext-link";
     public static String XLINK = "http://www.w3.org/1999/xlink";
     private static final String EXT_LINK_TYPE = "ext-link-type";
     

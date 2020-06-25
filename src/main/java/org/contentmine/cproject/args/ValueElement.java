@@ -3,8 +3,8 @@ package org.contentmine.cproject.args;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
@@ -19,12 +19,8 @@ import nu.xom.Element;
  */
 public class ValueElement extends Element {
 
-	private static final Logger LOG = Logger.getLogger(ValueElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final String TAG = "value";
+	private static final Logger LOG = LogManager.getLogger(ValueElement.class);
+public static final String TAG = "value";
 	
 	public static final String CLASS_NAME_ATT = "className";
 	public static final String FIELDS_ATT = "fields";

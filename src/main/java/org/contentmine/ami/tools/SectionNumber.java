@@ -1,7 +1,7 @@
 package org.contentmine.ami.tools;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  * decimal section number
@@ -10,12 +10,8 @@ import org.apache.log4j.Logger;
  *
  */
 public class SectionNumber {
-	private static final Logger LOG = Logger.getLogger(SectionNumber.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private int serial;
+	private static final Logger LOG = LogManager.getLogger(SectionNumber.class);
+private int serial;
 	private SectionNumber parent;
 
 	public SectionNumber() {

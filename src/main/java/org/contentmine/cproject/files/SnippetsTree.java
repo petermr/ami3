@@ -7,19 +7,16 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
 
 public class SnippetsTree extends Element {
 
-	private static final Logger LOG = Logger.getLogger(SnippetsTree.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public static final String SNIPPETS_TREE = "snippetsTree";
+	private static final Logger LOG = LogManager.getLogger(SnippetsTree.class);
+public static final String SNIPPETS_TREE = "snippetsTree";
 	public static final Pattern FILE_PATTERN = Pattern.compile("(.*)/(.*)/results/(.*)/(.*)/results\\.xml");
 
 	private List<Element> snippetsElementList;

@@ -2,8 +2,8 @@ package org.contentmine.graphics.layout;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGHTMLFixtures;
 import org.contentmine.graphics.svg.cache.CorpusCache;
@@ -20,12 +20,8 @@ import junit.framework.Assert;
 @Ignore("This really should be in POM or CL")
 public class PubstyleIT {
 	
-	private static final Logger LOG = Logger.getLogger(PubstyleIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(PubstyleIT.class);
+@Test
 	public void testPubstyleCache() {
 		PubstyleManager pubstyleManager = new PubstyleManager();
 		SVGPubstyle pubstyle = pubstyleManager.getSVGPubstyleFromPubstyleName("bmc");

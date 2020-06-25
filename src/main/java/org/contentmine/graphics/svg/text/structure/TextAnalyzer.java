@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Polar;
 import org.contentmine.eucl.euclid.Real2;
@@ -34,13 +34,9 @@ import com.google.common.collect.Multiset;
  */
 public class TextAnalyzer /*extends ChunkAnalyzer*/ {
 
-	private final static Logger LOG = Logger.getLogger(TextAnalyzer.class);
+	private final static Logger LOG = LogManager.getLogger(TextAnalyzer.class);
 	
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public enum TextOrientation {
+public enum TextOrientation {
 		ANY,
 		IRREGULAR,
 		ROT_0,

@@ -2,8 +2,8 @@ package org.contentmine.ami.tools;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIFixtures;
 import org.contentmine.ami.tools.AMITransformTool;
 import org.contentmine.ami.tools.AMIWordsTool;
@@ -12,12 +12,8 @@ import org.contentmine.norma.NAConstants;
 import org.junit.Test;
 
 public class AMIWordsToolTest extends AbstractAMITest {
-	private static final Logger LOG = Logger.getLogger(AMIWordsToolTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(AMIWordsToolTest.class);
+@Test
 	/** a regression test. Uses conventional Old search */
 	public void testOilSearch() {
 //		File testFile = OIL5;

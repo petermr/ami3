@@ -15,7 +15,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.Stack;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.font.CodePoint;
 import org.contentmine.font.CodePointSet;
 import org.contentmine.font.UnicodePoint;
@@ -47,7 +48,7 @@ public class CMap {
 	private static final String BEGINCMAP = "begincmap";
 	private static final String ENDCMAP = "endcmap";
 
-	private static final Logger LOG = Logger.getLogger(CMap.class);
+	private static final Logger LOG = LogManager.getLogger(CMap.class);
 
 	public static final String PERCENT2 = "%%";
 	public static final String PERCENT = "%";

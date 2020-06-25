@@ -12,7 +12,8 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Axis.Axis2;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.Int2Range;
@@ -34,7 +35,7 @@ import org.contentmine.image.pixel.PixelComparator.ComparatorType;
  */
 public class PixelList implements Iterable<Pixel> {
 
-	final static Logger LOG = Logger.getLogger(PixelList.class);
+	final static Logger LOG = LogManager.getLogger(PixelList.class);
 
 	//These may not be needed
 	private static final String START_STRING = ":";

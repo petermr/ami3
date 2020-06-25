@@ -42,7 +42,8 @@ import java.text.AttributedCharacterIterator;
 import java.util.Arrays;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.RealArray;
@@ -58,7 +59,7 @@ import org.contentmine.graphics.svg.SVGPath;
  */
 public class PDFGraphics2D extends Graphics2D {
 
-	private final static Logger LOG = Logger.getLogger(PDFGraphics2D.class);
+	private final static Logger LOG = LogManager.getLogger(PDFGraphics2D.class);
 	private String currentPathString;
 	private AMIFont amiFont;
 	private SVGPath svgPath;

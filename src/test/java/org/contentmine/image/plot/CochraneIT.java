@@ -4,8 +4,8 @@ import java.io.File;
 import java.util.Collections;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.image.ImageAnalysisFixtures;
@@ -16,12 +16,8 @@ import org.contentmine.image.pixel.PixelRingList;
 import org.junit.Test;
 
 public class CochraneIT {
-	private static final Logger LOG = Logger.getLogger(CochraneIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(CochraneIT.class);
+@Test
 		/** create points
 		 * 
 		 */

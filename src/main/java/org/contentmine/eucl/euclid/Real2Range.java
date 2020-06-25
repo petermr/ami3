@@ -19,8 +19,8 @@ import java.awt.Dimension;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Axis.Axis2;
 import org.contentmine.eucl.euclid.RealRange.Direction;
 /**
@@ -34,12 +34,8 @@ import org.contentmine.eucl.euclid.RealRange.Direction;
  * @author (C) P. Murray-Rust, 1996
  */
 public class Real2Range implements EuclidConstants {
-	private static final Logger LOG = Logger.getLogger(Real2Range.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public enum BoxDirection {
+	private static final Logger LOG = LogManager.getLogger(Real2Range.class);
+public enum BoxDirection {
 		LEFT,
 		RIGHT,
 		TOP,

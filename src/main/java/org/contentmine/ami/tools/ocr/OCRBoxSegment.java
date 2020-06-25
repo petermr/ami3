@@ -2,8 +2,8 @@ package org.contentmine.ami.tools.ocr;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMIOCRTool;
 import org.contentmine.ami.tools.AMIOCRTool.OcrType;
 
@@ -13,12 +13,8 @@ import org.contentmine.ami.tools.AMIOCRTool.OcrType;
  *
  */
 public class OCRBoxSegment {
-	private static final Logger LOG = Logger.getLogger(OCRBoxSegment.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private OcrType ocrType;
+	private static final Logger LOG = LogManager.getLogger(OCRBoxSegment.class);
+private OcrType ocrType;
 	private File svgFile;
 
 	public OCRBoxSegment(OcrType ocrType) {

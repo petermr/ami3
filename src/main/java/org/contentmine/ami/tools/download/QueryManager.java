@@ -10,8 +10,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlBody;
@@ -33,12 +33,8 @@ public class QueryManager extends AbstractSubDownloader {
 		AMP_PLUS,
 	}
 
-private static final Logger LOG = Logger.getLogger(QueryManager.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private File metadataDir;
+private static final Logger LOG = LogManager.getLogger(QueryManager.class);
+private File metadataDir;
 	private String sortOrder = "relevance-rank"; // will be set by each engine
 	
 	public QueryManager(AbstractDownloader abstractDownloader) {

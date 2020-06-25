@@ -1,7 +1,7 @@
 package org.contentmine.norma.tagger;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** tags sections based on regex for titles and content.
  * 
@@ -12,12 +12,8 @@ import org.apache.log4j.Logger;
  */
 public class SectionTaggerX {
 
-	private static final Logger LOG = Logger.getLogger(SectionTaggerX.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private String filename;
+	private static final Logger LOG = LogManager.getLogger(SectionTaggerX.class);
+private String filename;
 
 	public SectionTaggerX(String filename) {
 		this.filename = filename;

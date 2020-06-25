@@ -5,7 +5,8 @@ import java.io.FileOutputStream;
 import java.net.URL;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlFactory;
@@ -18,7 +19,7 @@ import nu.xom.Element;
 public class HtmlUnitWrapper {
 
 	
-	private static final Logger LOG = Logger.getLogger(HtmlUnitWrapper.class);
+	private static final Logger LOG = LogManager.getLogger(HtmlUnitWrapper.class);
 	
 	private WebClient webClient;
 	private HtmlPage rawHtmlPage;

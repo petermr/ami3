@@ -7,8 +7,8 @@ import java.util.List;
 import junit.framework.Assert;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Test;
 import org.xmlcml.Fixtures;
 import org.xmlcml.args.DefaultArgProcessor;
@@ -16,12 +16,8 @@ import org.xmlcml.args.DefaultArgProcessor;
 public class QuickscrapeNormaTest {
 
 	
-	private static final Logger LOG = Logger.getLogger(QuickscrapeNormaTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public final static File QUICKSCRAPE_NORMA_DIR = new File("src/test/resources/org/xmlcml/files/");
+	private static final Logger LOG = LogManager.getLogger(QuickscrapeNormaTest.class);
+public final static File QUICKSCRAPE_NORMA_DIR = new File("src/test/resources/org/xmlcml/files/");
 	public final static File PLOS0115884_DIR = new File(QUICKSCRAPE_NORMA_DIR, "journal.pone.0115884");
 	
 	@Test

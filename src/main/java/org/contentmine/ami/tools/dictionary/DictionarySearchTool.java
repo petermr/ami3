@@ -5,8 +5,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
 import org.contentmine.ami.tools.AMIUtil;
 import org.contentmine.ami.tools.AbstractAMIDictTool;
@@ -23,12 +23,8 @@ import picocli.CommandLine.Option;
 				+ ""
 		})
 public class DictionarySearchTool extends AbstractAMIDictTool {
-	private static final Logger LOG = Logger.getLogger(DictionarySearchTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-    @Option(names = {"--search"}, 
+	private static final Logger LOG = LogManager.getLogger(DictionarySearchTool.class);
+@Option(names = {"--search"},
     		arity="1..*",
     	    paramLabel = "search",
     		description = "search dictionary for these terms (experimental)"

@@ -1,6 +1,7 @@
 package org.contentmine.ami.diagramAnalyzer;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.graphics.svg.SVGG;
@@ -18,7 +19,7 @@ import nu.xom.Element;
 public class DiagramTree {
 
 
-	private static final Logger LOG = Logger.getLogger(DiagramTree.class);
+	private static final Logger LOG = LogManager.getLogger(DiagramTree.class);
 	
 	private static final int OFFSET = 20;
 	static final String _ROOT = "_root";

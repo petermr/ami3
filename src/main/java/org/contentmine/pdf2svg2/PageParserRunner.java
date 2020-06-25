@@ -26,8 +26,8 @@ import java.util.List;
 
 import javax.imageio.ImageIO;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.pdfbox.contentstream.PDFGraphicsStreamEngine;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.rendering.PDFRenderer;
@@ -54,12 +54,8 @@ import org.contentmine.graphics.svg.SVGUtil;
  */
 public class PageParserRunner
 {
-	private static final Logger LOG = Logger.getLogger(PageParserRunner.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String TEST_PDFBOX_DIR = 
+	private static final Logger LOG = LogManager.getLogger(PageParserRunner.class);
+private static final String TEST_PDFBOX_DIR =
 			"src/test/resources/org/contentmine/graphics/svg/pdfbox";
 	private static final String PROJECTS_DIR = 
 			"src/test/resources/org/contentmine/projects";

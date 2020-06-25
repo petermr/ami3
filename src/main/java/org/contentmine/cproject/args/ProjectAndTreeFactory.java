@@ -14,8 +14,8 @@ import java.util.zip.ZipFile;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeList;
@@ -28,12 +28,8 @@ import org.contentmine.cproject.files.Unzipper;
  */
 public class ProjectAndTreeFactory {
 	
-	private static final Logger LOG = Logger.getLogger(ProjectAndTreeFactory.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private DefaultArgProcessor argProcessor;
+	private static final Logger LOG = LogManager.getLogger(ProjectAndTreeFactory.class);
+private DefaultArgProcessor argProcessor;
 	private File projectFile;
 	private boolean createdProjectDir;
 	private String zipRootName;

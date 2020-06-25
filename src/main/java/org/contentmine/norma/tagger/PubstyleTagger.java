@@ -8,8 +8,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.util.HtmlUtil;
 import org.contentmine.norma.NAConstants;
@@ -29,12 +29,8 @@ public class PubstyleTagger {
 
 	
 
-	private static final Logger LOG = Logger.getLogger(PubstyleTagger.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final String NAME = "name";
+	private static final Logger LOG = LogManager.getLogger(PubstyleTagger.class);
+public static final String NAME = "name";
 
 	private static final String OR = " | ";
 	private static final String OR1 = " or ";

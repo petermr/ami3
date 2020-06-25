@@ -9,8 +9,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMIOCRTool;
 import org.contentmine.ami.tools.AbstractAMITool;
 import org.contentmine.cproject.util.CMineUtil;
@@ -28,12 +28,8 @@ import com.google.common.collect.Multiset;
 import com.google.common.collect.Multiset.Entry;
 
 public class TextLineAnalyzer {
-	private static final Logger LOG = Logger.getLogger(TextLineAnalyzer.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private int minEntryCount = 8;
+	private static final Logger LOG = LogManager.getLogger(TextLineAnalyzer.class);
+private int minEntryCount = 8;
 	int minYRange = 2; // check this
 	private Multiset<IntRange> yRangeMultiset;
 	private Multimap<IntRange, Multiset.Entry<TextLine>> textLineEntriesByYRange;

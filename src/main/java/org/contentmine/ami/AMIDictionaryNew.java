@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  * runs ami-dictionary to manage dictionary creation
@@ -14,11 +14,8 @@ import org.apache.log4j.Logger;
  *
  */
 public class AMIDictionaryNew {
-	private static final Logger LOG = Logger.getLogger(AMIDictionaryNew.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static void runAMISearches(List<String> argList) {
+	private static final Logger LOG = LogManager.getLogger(AMIDictionaryNew.class);
+private static void runAMISearches(List<String> argList) {
 		String projectName = argList.get(0);
 		argList.remove(0);
 		if (argList.size() == 0) {

@@ -6,8 +6,8 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.download.AbstractDownloader;
 import org.contentmine.ami.tools.download.AbstractMetadataEntry;
 import org.contentmine.ami.tools.download.HitList;
@@ -35,11 +35,8 @@ import nu.xom.Element;
  */
 public class ScieloDownloader extends AbstractDownloader {
 
-	static final Logger LOG = Logger.getLogger(ScieloDownloader.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public static final String SCIELO_HOST = "www.scielo.org";
+	static final Logger LOG = LogManager.getLogger(ScieloDownloader.class);
+public static final String SCIELO_HOST = "www.scielo.org";
 	public static final String SCIELO_BASE = HTTPS + P2H + SCIELO_HOST;
 	public static final String SCIELO_SEARCH = SCIELO_BASE + "/search/";
 	public static final String SCIELO_HEADER = "/content/";

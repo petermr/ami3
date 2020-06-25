@@ -1,7 +1,7 @@
 package org.contentmine.norma.sections;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.html.HtmlElement;
 
@@ -13,12 +13,8 @@ import nu.xom.Element;
  *
  */
 public class JATSGraphicElement extends JATSElement implements IsAnchor {
-	private static final Logger LOG = Logger.getLogger(JATSGraphicElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	static String TAG = "graphic";
+	private static final Logger LOG = LogManager.getLogger(JATSGraphicElement.class);
+static String TAG = "graphic";
 
 //	public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {
 //	});

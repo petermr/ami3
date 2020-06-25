@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.objects;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGLine;
@@ -12,13 +12,9 @@ import org.contentmine.graphics.svg.SVGMarker;
 
 public class ArrowFactory {
 
-	private static final Logger LOG = Logger.getLogger(ArrowFactory.class);
+	private static final Logger LOG = LogManager.getLogger(ArrowFactory.class);
 
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private Double delta = 2.0;
+private Double delta = 2.0;
 	private List<SVGLine> lineList;
 	private List<SVGTriangle> triangleList;
 	private List<SVGLine> usedLineList;

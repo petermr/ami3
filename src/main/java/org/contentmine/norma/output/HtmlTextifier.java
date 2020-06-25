@@ -4,8 +4,8 @@ import java.io.IOException;
 import java.util.List;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlElement;
@@ -20,12 +20,8 @@ import nu.xom.Element;
  *
  */
 public class HtmlTextifier {
-	private static final Logger LOG = Logger.getLogger(HtmlTextifier.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public HtmlTextifier() {
+	private static final Logger LOG = LogManager.getLogger(HtmlTextifier.class);
+public HtmlTextifier() {
 		
 	}
 

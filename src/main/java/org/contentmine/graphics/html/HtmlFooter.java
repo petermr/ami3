@@ -16,14 +16,15 @@
 
 package org.contentmine.graphics.html;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 /** 
  *  @author pm286
  */
 public class HtmlFooter extends HtmlElement {
-	private final static Logger LOG = Logger.getLogger(HtmlFooter.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlFooter.class);
 	public final static String TAG = "footer";
 
 	/** constructor.

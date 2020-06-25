@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.image.ImageUtil;
 
 import com.google.common.collect.HashMultiset;
@@ -22,12 +22,8 @@ import com.google.common.collect.Multiset;
  *
  */
 public class ImageManager {
-	private static final Logger LOG = Logger.getLogger(ImageManager.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private CTree cTree;
+	private static final Logger LOG = LogManager.getLogger(ImageManager.class);
+private CTree cTree;
 	private Map<BufferedImage, File> filesByImage;
 	private Map<BufferedImage, ImageProperties> propertiesByImage;
 	private Map<File, BufferedImage> imagesByFile;

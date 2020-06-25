@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.Set;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMIArgProcessor;
 import org.contentmine.ami.plugins.AMIPlugin;
 import org.contentmine.cproject.files.ResourceLocation;
@@ -28,12 +28,8 @@ public class WordSetWrapper {
 	
 	private static final String DOT_TXT = ".txt";
 	private static final String DOT_XML = ".xml";
-	private static final Logger LOG = Logger.getLogger(WordSetWrapper.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private static WordSetWrapper COMMON_ENGLISH_STOPWORDS;
+	private static final Logger LOG = LogManager.getLogger(WordSetWrapper.class);
+private static WordSetWrapper COMMON_ENGLISH_STOPWORDS;
 	public static final String COMMON_ENGLISH_STOPWORDS_TXT = NAConstants.AMI_WORDUTIL+"/stopwords.txt";
 	
 	private Set<String> wordSet;

@@ -1,7 +1,7 @@
 package org.contentmine.norma.txt;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntArray;
 
 /** holds TableOfContents.
@@ -11,12 +11,8 @@ import org.contentmine.eucl.euclid.IntArray;
  */
 public class Toc extends AbstractSection {
 
-	private static final Logger LOG = Logger.getLogger(Toc.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public Toc() {
+	private static final Logger LOG = LogManager.getLogger(Toc.class);
+public Toc() {
 		
 	}
 	

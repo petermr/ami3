@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** holds symbolic variabls for processing input.
  * 
@@ -15,12 +15,8 @@ import org.apache.log4j.Logger;
 public class VariableProcessor {
 	
 	
-	private static final Logger LOG = Logger.getLogger(VariableProcessor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	// ${ ... }
+	private static final Logger LOG = LogManager.getLogger(VariableProcessor.class);
+// ${ ... }
 	private static final Pattern VARIABLE_PATTERN = Pattern.compile("\\$\\{[^\\}]*\\}");
 	private HashMap<String, String> variableByNameMap;
 

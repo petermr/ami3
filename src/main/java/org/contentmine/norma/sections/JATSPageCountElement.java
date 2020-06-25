@@ -1,7 +1,7 @@
 package org.contentmine.norma.sections;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import nu.xom.Attribute;
 import nu.xom.Element;
@@ -13,12 +13,8 @@ import nu.xom.Element;
  *
  */
 public class JATSPageCountElement extends JATSElement {
-	private static final Logger LOG = Logger.getLogger(JATSPageCountElement.class);
-    static {
-        LOG.setLevel(Level.DEBUG);
-    }
-
-    public static String TAG = "page-count";
+	private static final Logger LOG = LogManager.getLogger(JATSPageCountElement.class);
+public static String TAG = "page-count";
     public static final String COUNT = "count";
 
     public JATSPageCountElement() {

@@ -8,8 +8,8 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 
 /** wraps curl in java process
@@ -19,12 +19,8 @@ import org.contentmine.cproject.util.CMineUtil;
  */
 public class ChromeHeadlessBrowser {
 	
-	private static final Logger LOG = Logger.getLogger(ChromeHeadlessBrowser.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String DISABLE_GPU = "--disable-gpu";
+	private static final Logger LOG = LogManager.getLogger(ChromeHeadlessBrowser.class);
+private static final String DISABLE_GPU = "--disable-gpu";
 	private static final String DUMP_DOM = "--dump-dom=";
 	private static final String HEADLESS = "--headless";
 	private static final String GOOGLE_CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";

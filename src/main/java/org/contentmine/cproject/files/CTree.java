@@ -17,8 +17,8 @@ import java.util.stream.Stream;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.cproject.args.log.AbstractLogElement;
@@ -162,12 +162,8 @@ public class CTree extends CContainer implements Comparable<CTree> {
 		}
 	};
 	
-	private static final Logger LOG = Logger.getLogger(CTree.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public final static Pattern DOI_PREFIX = Pattern.compile("(10\\.[0-9]{3,}([\\.][0-9]+)*).*");
+	private static final Logger LOG = LogManager.getLogger(CTree.class);
+public final static Pattern DOI_PREFIX = Pattern.compile("(10\\.[0-9]{3,}([\\.][0-9]+)*).*");
 //	public final static Pattern DOI_PREFIX = Pattern.compile("(10\\.[0-9]{3,}).*");
 	public static final String DOT      = ".";
 	public static final String MINUS    = "-";
@@ -906,7 +902,7 @@ public class CTree extends CContainer implements Comparable<CTree> {
 	// this is a child directory of svg (svg/images)
 	public File getExistingSVGImagesDir() {
 		File svgDir = getExistingReservedDirectory(SVG_DIR, false);
-		DebugPrint.debugPrint(Level.DEBUG, "svgDir exists");
+		LOG.debug(DebugPrint.MARKER, "svgDir exists");
 		File svgImageDir = null;
 		if (svgDir != null) {
 			svgImageDir = new File(svgDir, SVG_IMAGES_DIR);
@@ -1738,12 +1734,10 @@ public class CTree extends CContainer implements Comparable<CTree> {
 
 	public boolean processPDFTree() {
 		boolean processedTree = true;
-		Level level = LOG.getLevel();
-//		LOG.setLevel(Level.TRACE);
 		int start = 0;
 		File existingFulltextPDF = getExistingFulltextPDF();
 		if (existingFulltextPDF == null) {
-			DebugPrint.warnPrintln(debugLevel, "null PDF for: "+this.getName());
+			LOG.log(debugLevel, DebugPrint.MARKER, "null PDF for: "+this.getName());
 			return false;
 		}
 		File svgDir = this.getExistingSVGDir();
@@ -1780,7 +1774,6 @@ public class CTree extends CContainer implements Comparable<CTree> {
 		    start += deltaPages;
 		}
 		System.out.println("end: ");
-		LOG.setLevel(level);
 		return processedTree;
 	}
 
@@ -1896,10 +1889,10 @@ public class CTree extends CContainer implements Comparable<CTree> {
 		boolean status = false;
 		if (filename.endsWith("/") || file.isDirectory()) {
 			status = FileUtils.deleteQuietly(file);
-			if (status) DebugPrint.debugPrintln("deleted directory: "+file.getAbsolutePath());
+			if (status) LOG.debug(DebugPrint.MARKER, "deleted directory: "+file.getAbsolutePath());
 		} else {
 			status = FileUtils.deleteQuietly(file);
-			if (status) DebugPrint.debugPrintln("deleted file: "+file.getAbsolutePath());
+			if (status) LOG.debug(DebugPrint.MARKER, "deleted file: "+file.getAbsolutePath());
 		}
 		return status;
 	}
@@ -1923,7 +1916,7 @@ public class CTree extends CContainer implements Comparable<CTree> {
 				}
 			} catch (IOException ioe) {
 				status = false;
-				DebugPrint.debugPrint("cannot delete: "+filex);
+				LOG.debug(DebugPrint.MARKER, "cannot delete: "+filex);
 			}
 		}
 		return status;

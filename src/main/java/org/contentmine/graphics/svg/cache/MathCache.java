@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.cache;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGText;
 import org.contentmine.graphics.svg.fonts.StyledBoxRecordSet;
@@ -18,12 +18,8 @@ import org.contentmine.graphics.svg.text.SVGTextLineList;
  *
  */
 public class MathCache extends AbstractCache {
-	static final Logger LOG = Logger.getLogger(MathCache.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private List<SVGText> horizontalTextList;
+	static final Logger LOG = LogManager.getLogger(MathCache.class);
+private List<SVGText> horizontalTextList;
 	private List<SVGMath> mathList;
 	private StyledBoxRecordSet horizontalStyleRecordSet;
 	private SVGTextLineList textLineList;

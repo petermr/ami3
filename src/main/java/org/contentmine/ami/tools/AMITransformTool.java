@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMI.CTreeOptions.BaseOptions;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
@@ -34,12 +34,8 @@ description = {
 		"Runs XSLT transformation on XML (NYFI)."
 })
 public class AMITransformTool extends AbstractAMITool {
-	private static final Logger LOG = Logger.getLogger(AMITransformTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public enum Tidier {
+	private static final Logger LOG = LogManager.getLogger(AMITransformTool.class);
+public enum Tidier {
 		jsoup,
 		tidy,
 	}

@@ -10,8 +10,8 @@ import java.util.Map;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.filefilter.NameFileFilter;
 import org.apache.commons.io.filefilter.WildcardFileFilter;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
@@ -32,12 +32,8 @@ import nu.xom.Element;
  */
 public class PublisherIndex {
 
-	private static final Logger LOG = Logger.getLogger(PublisherIndex.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private List<File> htmlXslFiles;
+	private static final Logger LOG = LogManager.getLogger(PublisherIndex.class);
+private List<File> htmlXslFiles;
 	private Map<String, PublisherSelector> selectorByPublisher;
 	private Map<String, PublisherSelector> selectorByPrefix;
 	

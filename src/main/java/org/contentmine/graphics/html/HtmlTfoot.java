@@ -19,7 +19,8 @@ package org.contentmine.graphics.html;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.util.HtmlUtil;
 
 
@@ -30,7 +31,7 @@ import org.contentmine.graphics.html.util.HtmlUtil;
  */
 public class HtmlTfoot extends HtmlElement {
 	@SuppressWarnings("unused")
-	private final static Logger LOG = Logger.getLogger(HtmlTfoot.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlTfoot.class);
 	public final static String TAG = "tfoot";
 
 	/** constructor.

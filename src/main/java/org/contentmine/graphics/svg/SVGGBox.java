@@ -18,17 +18,13 @@ package org.contentmine.graphics.svg;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.AbstractCMElement;
 
 public class SVGGBox extends SVGG {
-	private static final Logger LOG = Logger.getLogger(SVGGBox.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final String BOX = "box";
+	private static final Logger LOG = LogManager.getLogger(SVGGBox.class);
+public static final String BOX = "box";
 
 	public SVGGBox() {
 		this.setSVGClassName(BOX);

@@ -3,8 +3,8 @@ package org.contentmine.ami.tools;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.norma.getpapers.GetpapersRunner;
 
@@ -23,12 +23,8 @@ name = "getpapers",
 description = "Runs getpapers in java environment."
 )
 public class AMIGetpapersTool extends AbstractAMITool {
-	private static final Logger LOG = Logger.getLogger(AMIGetpapersTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/** already in parent
+	private static final Logger LOG = LogManager.getLogger(AMIGetpapersTool.class);
+/** already in parent
 	 * 
 	 */
 //    @Option(names = {"-o", "--output"},

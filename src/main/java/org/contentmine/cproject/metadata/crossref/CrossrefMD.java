@@ -9,8 +9,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CTreeList;
 import org.contentmine.cproject.metadata.AbstractMetadata;
 import org.contentmine.cproject.metadata.JsonUtils;
@@ -302,12 +302,8 @@ xref
 year
  */
 
-	private static final Logger LOG = Logger.getLogger(CrossrefMD.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/** this is a mess. the original name was too general.
+	private static final Logger LOG = LogManager.getLogger(CrossrefMD.class);
+/** this is a mess. the original name was too general.
 	 * 
 	 */
 	private static final String CTREE_RESULT_JSON = "crossref_result.json";

@@ -1,7 +1,7 @@
 package org.contentmine.cproject.files;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** searches a CTree or CTreeList for files or metadata.
  * 
@@ -10,12 +10,8 @@ import org.apache.log4j.Logger;
  */
 public class CTreeExplorer {
 	
-	private static final Logger LOG = Logger.getLogger(CTreeExplorer.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private String filename;
+	private static final Logger LOG = LogManager.getLogger(CTreeExplorer.class);
+private String filename;
 
 	public CTreeExplorer() {
 		

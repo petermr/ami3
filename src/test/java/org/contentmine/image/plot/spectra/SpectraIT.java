@@ -2,8 +2,8 @@ package org.contentmine.image.plot.spectra;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.test.TestUtil;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGHTMLFixtures;
@@ -17,12 +17,8 @@ import org.junit.Test;
 import junit.framework.Assert;
 
 public class SpectraIT {
-	private static final Logger LOG = Logger.getLogger(SpectraIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(SpectraIT.class);
+@Test
 	public void readSpectrum() {
 		String base = "page.110.image.0";
 		File sourceDir = new File(SVGHTMLFixtures.I_SPECTRA_DIR, "paper1");

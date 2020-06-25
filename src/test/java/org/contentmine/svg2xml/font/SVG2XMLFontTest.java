@@ -8,7 +8,8 @@ import java.awt.image.BufferedImage;
 import java.io.PrintStream;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGText;
@@ -19,7 +20,7 @@ import org.junit.Test;
 
 public class SVG2XMLFontTest {
 
-	private final static Logger LOG = Logger.getLogger(SVG2XMLFontTest.class);
+	private final static Logger LOG = LogManager.getLogger(SVG2XMLFontTest.class);
 
 	private static final PrintStream SYSOUT = System.out;
 

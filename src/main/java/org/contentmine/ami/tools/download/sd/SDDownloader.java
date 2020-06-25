@@ -4,8 +4,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.download.AbstractDownloader;
 import org.contentmine.ami.tools.download.AbstractMetadataEntry;
 import org.contentmine.ami.tools.download.HitList;
@@ -26,11 +26,8 @@ import nu.xom.Element;
  *
  */
 public class SDDownloader extends AbstractDownloader {
-	static final Logger LOG = Logger.getLogger(SDDownloader.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	/**	https://www.sciencedirect.com/search?qs=n95 */
+	static final Logger LOG = LogManager.getLogger(SDDownloader.class);
+/**	https://www.sciencedirect.com/search?qs=n95 */
 	public static final String SD_BASE = "https://sciencedirect.com/";
 	public static final String SD_HOST = "https://sciencedirect.com/";
 	public static final String SD_SEARCH = SD_BASE+"/search/";  /* NOT YET CERTAIN */

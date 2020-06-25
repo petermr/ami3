@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineGlobber;
 
 /** manages the processing of images in a Ctree.
@@ -18,12 +18,8 @@ public class TreeImageManager {
 	private static final String PIXEL = "pixel";
 	private static final String IMAGEDOT = "image.";
 	private static final String PAGEDOT = "page.";
-	private static final Logger LOG = Logger.getLogger(TreeImageManager.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	/** this is likely to evolve as more types have to be used
+	private static final Logger LOG = LogManager.getLogger(TreeImageManager.class);
+/** this is likely to evolve as more types have to be used
 	 * 
 	 * @author pm286
 	 *

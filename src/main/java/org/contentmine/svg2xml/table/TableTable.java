@@ -5,7 +5,8 @@ import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealRange;
 import org.contentmine.eucl.euclid.RealRange.Direction;
@@ -35,7 +36,7 @@ import nu.xom.Nodes;
  */
 public class TableTable extends TableChunk {
 
-	private final static Logger LOG = Logger.getLogger(TableTable.class);
+	private final static Logger LOG = LogManager.getLogger(TableTable.class);
 
 	public static final double HALF_SPACE = 2.0;
 	

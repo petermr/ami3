@@ -8,8 +8,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMISearcher;
 import org.contentmine.ami.plugins.AbstractSearchArgProcessor;
 import org.contentmine.ami.plugins.search.SearchSearcher;
@@ -35,12 +35,8 @@ import org.contentmine.eucl.xml.XMLUtil;
 public class WordArgProcessor extends AbstractSearchArgProcessor {
 	
 	/*** THIS FUNCTIONALITY IS BEING MOVED TO AMIWordsTool */
-	public static final Logger LOG = Logger.getLogger(WordArgProcessor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public final static String FREQUENCIES = "frequencies";
+	public static final Logger LOG = LogManager.getLogger(WordArgProcessor.class);
+public final static String FREQUENCIES = "frequencies";
 	public final static String WORD_LENGTHS = "wordLengths";
 	public final static String WORD_FREQUENCIES = "wordFrequencies"; // deprecated
 	public final static String SEARCH = "search";					

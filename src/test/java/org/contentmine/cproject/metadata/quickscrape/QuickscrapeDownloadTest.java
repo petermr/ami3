@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.CMineFixtures;
 import org.contentmine.cproject.files.CProject;
 import org.junit.Assert;
@@ -13,13 +13,8 @@ import org.junit.Test;
 
 public class QuickscrapeDownloadTest {
 	
-	private static final Logger LOG = Logger.getLogger(QuickscrapeDownloadTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-
-	/** THIS IS MERELY PREPARATORY.
+	private static final Logger LOG = LogManager.getLogger(QuickscrapeDownloadTest.class);
+/** THIS IS MERELY PREPARATORY.
 	 * 
 	 * @throws IOException
 	 */

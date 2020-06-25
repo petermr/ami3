@@ -3,8 +3,8 @@ package org.contentmine.norma.demos.jenny;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTreeList;
 import org.contentmine.cproject.util.CMineTestFixtures;
@@ -20,12 +20,8 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 public class MosquitoTest {
-	private static final Logger LOG = Logger.getLogger(MosquitoTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(MosquitoTest.class);
+@Test
 	/** creates a corpus of 10 papers about mosquitos.
 	 * mainly BMC (from Jenny Molloy)
 	 * initially creates both original and compact SVG forms

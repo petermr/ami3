@@ -19,7 +19,8 @@ package org.contentmine.graphics.html;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.util.HtmlUtil;
 
 import nu.xom.Node;
@@ -30,7 +31,7 @@ import nu.xom.Node;
  */
 public class HtmlSpan extends HtmlElement {
 	@SuppressWarnings("unused")
-	private final static Logger LOG = Logger.getLogger(HtmlSpan.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlSpan.class);
 	public final static String TAG = "span";
 	public final static String ALL_SPAN_XPATH = ".//h:span";
 

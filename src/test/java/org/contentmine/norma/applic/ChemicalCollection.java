@@ -7,8 +7,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import com.google.common.collect.HashMultiset;
 import com.google.common.collect.Multimap;
@@ -21,12 +21,8 @@ import com.google.common.collect.Multiset;
  */
 public class ChemicalCollection {
 
-	private static final Logger LOG = Logger.getLogger(ChemicalCollection.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private Map<String, Multiset<String>> iupacByTrivialName;
+	private static final Logger LOG = LogManager.getLogger(ChemicalCollection.class);
+private Map<String, Multiset<String>> iupacByTrivialName;
 	private Multiset<String> trivialNameSetAll;
 	private EssoilDB essoilDB;
 

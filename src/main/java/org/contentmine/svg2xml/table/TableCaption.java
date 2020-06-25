@@ -4,7 +4,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlB;
 import org.contentmine.graphics.html.HtmlCaption;
@@ -20,7 +21,7 @@ import nu.xom.Nodes;
 
 public class TableCaption extends TableChunk {
 
-	private final static Logger LOG = Logger.getLogger(TableCaption.class);
+	private final static Logger LOG = LogManager.getLogger(TableCaption.class);
 	
 	public static final Pattern PATTERN = Pattern.compile("^[Tt][Aa][Bb][Ll]?[Ee]?\\s*\\.?\\s*(\\d+).*", Pattern.DOTALL);
 

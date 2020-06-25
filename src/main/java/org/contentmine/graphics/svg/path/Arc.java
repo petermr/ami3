@@ -1,6 +1,7 @@
 package org.contentmine.graphics.svg.path;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Array;
@@ -14,7 +15,7 @@ public class Arc {
 		ANTIPARALLEL
 	}
 	
-	private final static Logger LOG = Logger.getLogger(Arc.class);
+	private final static Logger LOG = LogManager.getLogger(Arc.class);
 	
 	private Angle angle;
 	private Angle angleEps = new Angle(0.01); // radians

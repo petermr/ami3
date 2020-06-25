@@ -1,19 +1,15 @@
 package org.contentmine.norma.sections;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlLi;
 
 import nu.xom.Element;
 
 public class JATSListItemElement extends JATSElement {
-    private static final Logger LOG = Logger.getLogger(JATSListItemElement.class);
-    static {
-        LOG.setLevel(Level.DEBUG);
-    }
-
-    public static String TAG = "list-item";
+    private static final Logger LOG = LogManager.getLogger(JATSListItemElement.class);
+public static String TAG = "list-item";
 
     public JATSListItemElement(Element element) {
         super(element);

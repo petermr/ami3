@@ -1,7 +1,7 @@
 package org.contentmine.ami.plugins.gene;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMIPlugin;
 
 /** test plugin.
@@ -13,12 +13,8 @@ import org.contentmine.ami.plugins.AMIPlugin;
  */
 public class GenePlugin extends AMIPlugin {
 
-	private static final Logger LOG = Logger.getLogger(GenePlugin.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public GenePlugin() {
+	private static final Logger LOG = LogManager.getLogger(GenePlugin.class);
+public GenePlugin() {
 		this.argProcessor = new GeneArgProcessor();
 	}
 

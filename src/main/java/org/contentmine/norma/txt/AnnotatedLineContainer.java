@@ -4,17 +4,13 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class AnnotatedLineContainer implements Iterable<AnnotatedLine> {
 
-	private static final Logger LOG = Logger.getLogger(AnnotatedLineContainer.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private List<AnnotatedLine> annotatedLinesList;
+	private static final Logger LOG = LogManager.getLogger(AnnotatedLineContainer.class);
+private List<AnnotatedLine> annotatedLinesList;
 	private AnnotatedLineContainer pageHeadingList;
 	private Toc toc;
 	private AnnotatedLineContainer chapterHeadingList;

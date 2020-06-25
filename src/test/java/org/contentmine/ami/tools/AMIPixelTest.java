@@ -5,8 +5,8 @@ import java.io.File;
 import java.util.List;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.graphics.svg.SVGG;
@@ -30,12 +30,8 @@ import org.junit.Test;
  *
  */
 public class AMIPixelTest extends AbstractAMITest {
-	private static final Logger LOG = Logger.getLogger(AMIPixelTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private File pdfImageDir;
+	private static final Logger LOG = LogManager.getLogger(AMIPixelTest.class);
+private File pdfImageDir;
 	private File imageDir;
 	private File layerDir;
 	private File imageFile;

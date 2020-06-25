@@ -8,8 +8,8 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
@@ -36,11 +36,8 @@ import nu.xom.Element;
  *
  */
 public class TTemplateList extends AbstractTTElement {
-	private static final Logger LOG = Logger.getLogger(TTemplateList.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final String COLUMN = "column";
+	private static final Logger LOG = LogManager.getLogger(TTemplateList.class);
+private static final String COLUMN = "column";
 	private static final String TEMPLATE = "template";
 	private static final Pattern VARIABLE_PATTERN = Pattern.compile("@[^@]+@");
 	public static String TAG = "templateList";

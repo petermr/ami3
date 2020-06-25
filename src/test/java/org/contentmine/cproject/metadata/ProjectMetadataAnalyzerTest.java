@@ -6,8 +6,8 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.math.stat.inference.TestUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.CMineFixtures;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.eucl.euclid.test.TestUtil;
@@ -19,12 +19,8 @@ import com.google.common.collect.Multiset;
 
 public class ProjectMetadataAnalyzerTest {
 
-	private static final Logger LOG = Logger.getLogger(ProjectMetadataAnalyzerTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(ProjectMetadataAnalyzerTest.class);
+@Test
 	/** CREATE List OF CROSSREF METADATA ITEMS.
 	 * 
 	 * @throws IOException

@@ -4,7 +4,8 @@ import java.awt.geom.GeneralPath;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Array;
@@ -19,7 +20,7 @@ import org.contentmine.graphics.svg.path.SVGPathParser;
  *
  */
 public abstract class SVGPathPrimitive {
-	private static Logger LOG = Logger.getLogger(SVGPathPrimitive.class);
+	private static Logger LOG = LogManager.getLogger(SVGPathPrimitive.class);
 
 	public static final char ARC              = 'A';
 	public static final char CLOSE        = 'Z';

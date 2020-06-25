@@ -11,8 +11,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.IntArray;
 
@@ -24,12 +24,8 @@ import nu.xom.Element;
 
 public abstract class AbstractLookup {
 	
-	private static final Logger LOG = Logger.getLogger(AbstractLookup.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private HashMap<String, String> lookupRefByMatch;
+	private static final Logger LOG = LogManager.getLogger(AbstractLookup.class);
+private HashMap<String, String> lookupRefByMatch;
 	private String name = "MUST_SET_THIS";
 	protected String outputFormat;
 	protected URL url;

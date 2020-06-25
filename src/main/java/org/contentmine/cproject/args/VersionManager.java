@@ -1,6 +1,7 @@
 package org.contentmine.cproject.args;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import nu.xom.Element;
 
@@ -13,10 +14,8 @@ import nu.xom.Element;
  */
 public class VersionManager {
 
-	private static final Logger LOG = Logger.getLogger(VersionManager.class);
-	static {LOG.setLevel(org.apache.log4j.Level.DEBUG);}
-
-	private static final String VERSION = "version";
+	private static final Logger LOG = LogManager.getLogger(VersionManager.class);
+private static final String VERSION = "version";
 	private static final String NAME    = "name";
 	
 	// these are private so each level can have its own version and name

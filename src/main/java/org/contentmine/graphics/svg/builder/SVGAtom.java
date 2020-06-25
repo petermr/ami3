@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Array;
@@ -21,12 +21,8 @@ import org.contentmine.graphics.svg.linestuff.SVGEdge;
 import org.contentmine.graphics.svg.linestuff.SVGNode;
 
 public class SVGAtom extends SVGNode {
-	private static final Logger LOG = Logger.getLogger(SVGAtom.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static Map<String, String> atomColorMap = new HashMap<String, String>();
+	private static final Logger LOG = LogManager.getLogger(SVGAtom.class);
+private static Map<String, String> atomColorMap = new HashMap<String, String>();
 	static {
 		atomColorMap.put("C", "black");
 		atomColorMap.put("N", "blue");

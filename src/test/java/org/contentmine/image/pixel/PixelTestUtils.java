@@ -1,12 +1,13 @@
 package org.contentmine.image.pixel;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntArray;
 import org.junit.Assert;
 
 public class PixelTestUtils {
 	
-	private static Logger LOG = Logger.getLogger(PixelTestUtils.class);
+	private static Logger LOG = LogManager.getLogger(PixelTestUtils.class);
 
 	public static void assertNeighbourCounts(PixelIslandList pixelIslandList, IntArray[] neighbourCounts) {
 		int i = 0;

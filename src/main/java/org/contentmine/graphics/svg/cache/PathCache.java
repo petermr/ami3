@@ -6,8 +6,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.util.MultisetUtil;
@@ -30,13 +30,9 @@ import com.google.common.collect.Multiset.Entry;
 public class PathCache extends AbstractCache{
 
 	private static final String ID_PREFIX = "p";
-	private static final Logger LOG = Logger.getLogger(PathCache.class);
+	private static final Logger LOG = LogManager.getLogger(PathCache.class);
 	private static final int MAX_TOTAL_DSTRING = 1000000; // characters in DString
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private List<SVGPath> pathList;
+private List<SVGPath> pathList;
 	private Multiset<String> sigSet;
 	private Map<String, SVGPath> pathBySig;
 	private Map<String, String> charBySig;
@@ -65,8 +61,6 @@ public class PathCache extends AbstractCache{
 	 * @param svgElement
 	 */
 	public void extractPaths(AbstractCMElement svgElement) {
-		Level level = LOG.getLevel();
-//		LOG.setLevel(Level.TRACE);
 		int factor = 1 /* 1000 */;
 		long millis = System.currentTimeMillis();
 		this.originalPathList = SVGPath.extractPaths(svgElement);
@@ -78,7 +72,6 @@ public class PathCache extends AbstractCache{
 			}
 			if (totalDStringLength > MAX_TOTAL_DSTRING) {
 				System.err.println( " too many SVG objects: "+totalDStringLength+" ");
-				LOG.setLevel(level);
 				currentPathList = new ArrayList<>();
 				return;
 			}
@@ -99,7 +92,6 @@ public class PathCache extends AbstractCache{
 		currentPathList = SVGPath.removeShadowedPaths(currentPathList);
 //		LOG.trace("Paths time shadowed: "+(System.currentTimeMillis() - millis)/factor);
 		LOG.trace("Paths time: "+(System.currentTimeMillis() - millis)/factor);
-		LOG.setLevel(level);
 		return;
 	}
 

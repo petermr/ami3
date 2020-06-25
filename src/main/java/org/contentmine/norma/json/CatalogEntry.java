@@ -2,20 +2,16 @@ package org.contentmine.norma.json;
 
 import java.util.Collection;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import com.google.gson.JsonObject;
 
 public class CatalogEntry {
 
 	
-	private static final Logger LOG = Logger.getLogger(CatalogEntry.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private Hits hits;
+	private static final Logger LOG = LogManager.getLogger(CatalogEntry.class);
+private Hits hits;
 	private Collection<Shard> _shards;
 	private Integer took;
 	private Boolean timed_out;

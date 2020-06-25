@@ -4,8 +4,8 @@ package org.contentmine.svg2xml.table;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  * Normalise numerical values from visual to semantic form.
@@ -28,12 +28,8 @@ public class ValueNormaliser {
     //    \d--\.
 
 
-	private static final Logger LOG = Logger.getLogger(ValueNormaliser.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-    
-    // Use the Unicode regex for Punctuation dash and also \u2212 Unicode minus
+	private static final Logger LOG = LogManager.getLogger(ValueNormaliser.class);
+// Use the Unicode regex for Punctuation dash and also \u2212 Unicode minus
     private static final Pattern MINUS_EQUIVALENTS_PREFIX = Pattern.compile("([\\D])([\\p{IsPd}\u2212])([.\\d]?\\d+)");
     private static final Pattern UNUSUAL_CHAR_TOOLTIP = Pattern.compile("char: \\S+; name: \\S+; f: \\S+; fn: \\S+; e: \\S+\\R?");
     private static final String HTML_UNICODE_UNKNOWN_CHAR_SYMBOL = "\uFFFD";

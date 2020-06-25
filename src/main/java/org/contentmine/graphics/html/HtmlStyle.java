@@ -16,12 +16,13 @@
 
 package org.contentmine.graphics.html;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class HtmlStyle  extends HtmlElement {
 
 	@SuppressWarnings("unused")
-	private final static Logger LOG = Logger.getLogger(HtmlStyle.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlStyle.class);
 	public final static String TAG = "style";
 	private static final String TYPE = "type";
 	private static final String TEXT_CSS = "text/css";

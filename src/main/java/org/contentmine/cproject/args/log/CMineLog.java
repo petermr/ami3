@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.cproject.util.XMLUtils;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -66,11 +66,8 @@ public class CMineLog extends AbstractLogElement {
 	private static final String DELETED_NODE_XPATH = "info[starts-with(@message,'deleted node')]";
 	
 	
-	static final Logger LOG = Logger.getLogger(CMineLog.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private final static String TAG = "log";
+	static final Logger LOG = LogManager.getLogger(CMineLog.class);
+private final static String TAG = "log";
 	private static final String LOG_ELEMENT = "log";
 	
 	public static final String LOG_XML = "log.xml";

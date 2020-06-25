@@ -1,15 +1,11 @@
 package org.contentmine.cproject.files.schema;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class PSchema extends AbstractSchemaElement {
-	private static final Logger LOG = Logger.getLogger(PSchema.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public final static String TAG = "p";
+	private static final Logger LOG = LogManager.getLogger(PSchema.class);
+public final static String TAG = "p";
 	
 	public PSchema() {
 		super(TAG);

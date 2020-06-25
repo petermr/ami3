@@ -26,8 +26,8 @@ import java.util.List;
  * axial extension. (This might be a tick on the perpendicular axis).
  */
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
@@ -44,12 +44,8 @@ import com.google.common.collect.Multiset;
 
 public class AxisTickBox extends AxialBox {
 	
-	static final Logger LOG = Logger.getLogger(AxisTickBox.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/**
+	static final Logger LOG = LogManager.getLogger(AxisTickBox.class);
+/**
 	 * default max tickLength (to filter out axes)
 	 */
 	public static final double DEFAULT_MAX_TICKLENGTH = 25.0;

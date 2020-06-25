@@ -2,8 +2,8 @@ package org.contentmine.norma.editor;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** holds name-value from Editor matching.
  * 
@@ -12,12 +12,8 @@ import org.apache.log4j.Logger;
  */
 public class Extraction {
 
-	private static final Logger LOG = Logger.getLogger(Extraction.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private String name;
+	private static final Logger LOG = LogManager.getLogger(Extraction.class);
+private String name;
 	public String getName() {
 		return name;
 	}

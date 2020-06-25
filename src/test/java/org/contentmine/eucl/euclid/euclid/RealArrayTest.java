@@ -21,7 +21,8 @@ import static org.contentmine.eucl.euclid.EuclidConstants.EPS;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.ArrayBase.Trim;
 import org.contentmine.eucl.euclid.EuclidConstants;
 import org.contentmine.eucl.euclid.EuclidRuntimeException;
@@ -50,7 +51,7 @@ import com.google.common.collect.Multiset;
  */
 public class RealArrayTest {
 
-	private final static Logger LOG = Logger.getLogger(RealArrayTest.class);
+	private final static Logger LOG = LogManager.getLogger(RealArrayTest.class);
 	RealArray a0;
 	RealArray a1;
 

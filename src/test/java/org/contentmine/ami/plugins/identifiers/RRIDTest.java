@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -19,12 +19,8 @@ import org.contentmine.norma.NormaArgProcessor;
 
 public class RRIDTest {
 
-	public static final Logger LOG = Logger.getLogger(RRIDTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	public static final Logger LOG = LogManager.getLogger(RRIDTest.class);
+@Test
 	@Ignore // uses lookup
 	public void testAny() throws IOException {
 		AbstractLookup rridLookup = new RRIDLookup();

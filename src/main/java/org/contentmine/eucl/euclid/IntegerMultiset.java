@@ -5,8 +5,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.eclipse.jetty.util.log.Log;
 
 import com.google.common.collect.BoundType;
@@ -26,12 +26,8 @@ import com.google.common.collect.TreeMultiset;
 public class IntegerMultiset implements Comparable<IntegerMultiset> {
 
 
-	private static final Logger LOG = Logger.getLogger(IntegerMultiset.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private TreeMultiset<Integer> multiset;
+	private static final Logger LOG = LogManager.getLogger(IntegerMultiset.class);
+private TreeMultiset<Integer> multiset;
 	private IntRange intRange;
 	
 	private IntegerMultiset() {

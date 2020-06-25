@@ -3,8 +3,8 @@ package org.contentmine.ami.tools;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMIOCRTool.OcrType;
 import org.contentmine.eucl.euclid.Axis.Axis2;
 import org.contentmine.eucl.euclid.Real2;
@@ -22,12 +22,8 @@ import com.google.common.collect.Multiset;
 import com.google.common.collect.Multiset.Entry;
 
 public class TableExtractor {
-	private static final Logger LOG = Logger.getLogger(TableExtractor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private List<String> tableTypeList;
+	private static final Logger LOG = LogManager.getLogger(TableExtractor.class);
+private List<String> tableTypeList;
 	private SVGElement svgElement;
 	private File svgFile;
 	private Multiset<Double> left;

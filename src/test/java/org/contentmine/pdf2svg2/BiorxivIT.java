@@ -3,8 +3,8 @@ package org.contentmine.pdf2svg2;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeList;
@@ -18,12 +18,8 @@ import org.junit.Test;
 import junit.framework.Assert;
 
 public class BiorxivIT {
-	private static final Logger LOG = Logger.getLogger(BiorxivIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(BiorxivIT.class);
+@Test
 	public void testBiorxivMarchantiaAll() throws Exception {
 		File sourceDir = SVGHTMLFixtures.BIORXIV_DIR;
 		File targetDir = SVGHTMLFixtures.BIORXIV_TARGET_DIR;

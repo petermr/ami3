@@ -5,7 +5,8 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Array;
 import org.contentmine.graphics.svg.SVGG;
@@ -18,7 +19,7 @@ import org.contentmine.graphics.svg.SVGG;
  */
 public class PixelRingList implements Iterable<PixelRing> {
 
-	private final Logger LOG = Logger.getLogger(PixelRingList.class);
+	private final Logger LOG = LogManager.getLogger(PixelRingList.class);
 	
 	public static final String[] DEFAULT_COLOURS = {"red", "cyan", "orange", "green", "magenta", "blue"};
 	private List<PixelRing> ringList;

@@ -1,7 +1,7 @@
 package org.contentmine.svg2xml.text;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGText;
@@ -17,12 +17,8 @@ import org.junit.Test;
 
 public class SuscriptEditorTest {
 
-	private static final Logger LOG = Logger.getLogger(SuscriptEditorTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private TextChunk H3OPLUS;
+	private static final Logger LOG = LogManager.getLogger(SuscriptEditorTest.class);
+private TextChunk H3OPLUS;
 	private TextChunk H3OPLUS_SO4;
 	private PhraseChunk PLUS;
 	private PhraseChunk H_SPACE_O;

@@ -3,8 +3,8 @@ package org.contentmine.ami.lookups;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlA;
 import org.contentmine.graphics.html.HtmlDiv;
@@ -16,12 +16,8 @@ import nu.xom.Attribute;
 import nu.xom.Element;
 
 public class WikiResult {
-	private static final Logger LOG = Logger.getLogger(WikiResult.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final String WIKIDATA = "wikidata";
+	private static final Logger LOG = LogManager.getLogger(WikiResult.class);
+public static final String WIKIDATA = "wikidata";
 	public static final String PROPERTY2 = "Property:";
 
 	private String href;

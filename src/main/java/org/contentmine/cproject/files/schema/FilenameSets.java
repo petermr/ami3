@@ -9,8 +9,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.SimpleContainer;
 import org.contentmine.cproject.files.schema.AbstractSchemaElement.IteratorType;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -24,12 +24,8 @@ import nu.xom.Element;
  *
  */
 public class FilenameSets  {
-	private static final Logger LOG = Logger.getLogger(FilenameSets.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private IteratorType iteratorType;
+	private static final Logger LOG = LogManager.getLogger(FilenameSets.class);
+private IteratorType iteratorType;
 	private List<Element> childElements;
 	private Map<String, AbstractSchemaElement> schemaElementSetByName;
 	private Set<AbstractSchemaElement> regexSchemaElementSet;

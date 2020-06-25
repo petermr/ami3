@@ -23,8 +23,8 @@ import java.awt.geom.Rectangle2D;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.IntRange;
@@ -45,12 +45,8 @@ import nu.xom.Node;
  */
 public class SVGRect extends SVGShape {
 
-	private static final Logger LOG = Logger.getLogger(SVGRect.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public final static String ALL_RECT_XPATH = ".//svg:rect";
+	private static final Logger LOG = LogManager.getLogger(SVGRect.class);
+public final static String ALL_RECT_XPATH = ".//svg:rect";
 
 	public static final String HEIGHT = "height";
 	public static final String WIDTH = "width";

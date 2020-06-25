@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.CMineFixtures;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
@@ -41,11 +41,7 @@ public class QuickscrapeMDTest {
 	private static final String HYPERLINK_1 = "\")";
 	private static final String HYPERLINK_0 = "=HYPERLINK(\"";
 	
-	public static final Logger LOG = Logger.getLogger(QuickscrapeMDTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
+	public static final Logger LOG = LogManager.getLogger(QuickscrapeMDTest.class);
 //	public static File GETPAPERS = new File("../getpapers");
 //	public static File GETPAPERS_20160601 = new File(GETPAPERS, "20160601");
 //	public static File GETPAPERS_20160601SCRAPED = new File(GETPAPERS_20160601, "quickscrape");

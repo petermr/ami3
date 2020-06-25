@@ -1,16 +1,12 @@
 package org.contentmine.norma.editor;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class PatternListElement extends AbstractEditorElement {
 
-	public static final Logger LOG = Logger.getLogger(PatternListElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final String TAG = "patternList";
+	public static final Logger LOG = LogManager.getLogger(PatternListElement.class);
+public static final String TAG = "patternList";
 
 	public PatternListElement() {
 		super(TAG);

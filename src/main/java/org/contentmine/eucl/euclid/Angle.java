@@ -16,7 +16,8 @@
 
 package org.contentmine.eucl.euclid;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  * Angle object
@@ -40,7 +41,7 @@ import org.apache.log4j.Logger;
  * @author (C) P. Murray-Rust, 1996
  */
 public class Angle {
-	private final static Logger LOG = Logger.getLogger(Angle.class);
+	private final static Logger LOG = LogManager.getLogger(Angle.class);
 	
     /** units */
     public enum Units {

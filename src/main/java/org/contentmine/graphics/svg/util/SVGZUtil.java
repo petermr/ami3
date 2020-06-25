@@ -3,7 +3,8 @@ package org.contentmine.graphics.svg.util;
 import java.io.File;
 import java.io.FileOutputStream;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.svg.SVGConstants;
@@ -18,7 +19,7 @@ import nu.xom.Text;
 
 public class SVGZUtil {
 
-	private final static Logger LOG = Logger.getLogger(SVGZUtil.class);
+	private final static Logger LOG = LogManager.getLogger(SVGZUtil.class);
 	
 	public static void replaceNodeByChildren(Element node) {
 		Element spanParent = (Element) node.getParent();

@@ -6,7 +6,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.html.HtmlElement;
@@ -32,7 +33,7 @@ import nu.xom.Nodes;
  */
 public abstract class AbstractContainer {
 
-	public final static Logger LOG = Logger.getLogger(AbstractContainer.class);
+	public final static Logger LOG = LogManager.getLogger(AbstractContainer.class);
 
 	public enum ContainerType {
 		ACKNOWLEDGMENT,

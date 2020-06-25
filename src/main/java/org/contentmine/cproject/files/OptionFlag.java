@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** flags to add options or qualifucations to default PluginOptions.
  * 
@@ -15,12 +15,8 @@ import org.apache.log4j.Logger;
  */
 public class OptionFlag {
 	
-	private static final Logger LOG = Logger.getLogger(OptionFlag.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private final static Pattern FLAG_PATTERN = Pattern.compile("([a-zA-Z\\.]+):(.*)");
+	private static final Logger LOG = LogManager.getLogger(OptionFlag.class);
+private final static Pattern FLAG_PATTERN = Pattern.compile("([a-zA-Z\\.]+):(.*)");
 	private String key;
 	private String value;
 	

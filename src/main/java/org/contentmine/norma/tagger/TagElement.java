@@ -2,11 +2,12 @@ package org.contentmine.norma.tagger;
 
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class TagElement extends AbstractTElement {
 
-	private static final Logger LOG = Logger.getLogger(TagElement.class);
+	private static final Logger LOG = LogManager.getLogger(TagElement.class);
 	
 	public static final String TAG_NAME = "name";
 	public static final String TAG = "tag";

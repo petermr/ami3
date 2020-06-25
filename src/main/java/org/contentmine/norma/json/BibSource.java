@@ -2,8 +2,8 @@ package org.contentmine.norma.json;
 
 import java.util.Collection;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.norma.util.JsonUtil;
 
 import com.google.gson.JsonObject;
@@ -17,12 +17,8 @@ import com.google.gson.JsonObject;
  */
 public class BibSource {
 		
-		private static final Logger LOG = Logger.getLogger(BibSource.class);
-		static {
-			LOG.setLevel(Level.DEBUG);
-		}
-		
-		private String doi;
+		private static final Logger LOG = LogManager.getLogger(BibSource.class);
+	private String doi;
 		private String last_updated;
 		private String description;
 		private Collection<String> author;

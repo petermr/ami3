@@ -9,8 +9,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntRange;
 import org.contentmine.eucl.euclid.IntRangeArray;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -36,12 +36,8 @@ import nu.xom.Element;
 import nu.xom.Node;
 
 public class TableStructurerTest {
-	private static final Logger LOG = Logger.getLogger(TableStructurerTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String AA_KRANKE_G_2_3_SVG = "AA_Kranke.g.2.3.svg";
+	private static final Logger LOG = LogManager.getLogger(TableStructurerTest.class);
+private static final String AA_KRANKE_G_2_3_SVG = "AA_Kranke.g.2.3.svg";
 	private static final String ACR_G_7_2_SVG = "ACR.g.7.2.svg";
 	private static final String ADA1_G_4_0_SVG = "ADA1.g.4.0.svg";
 	private static final String ADA2_G_4_3_SVG = "ADA2.g.4.3.svg";

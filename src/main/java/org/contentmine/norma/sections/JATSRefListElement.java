@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
@@ -17,12 +17,8 @@ public class JATSRefListElement extends JATSElement implements IsBlock, HasDirec
 			<title>References</title>
 			<ref id="pntd.0001477-Thiel1">
 		 */
-	private static final Logger LOG = Logger.getLogger(JATSRefListElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public final static String TAG = "ref-list";
+	private static final Logger LOG = LogManager.getLogger(JATSRefListElement.class);
+public final static String TAG = "ref-list";
 	
 	public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {
 		JATSDivFactory.TITLE,

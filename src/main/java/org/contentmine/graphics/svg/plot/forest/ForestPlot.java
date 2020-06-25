@@ -2,8 +2,8 @@ package org.contentmine.graphics.svg.plot.forest;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.RangeScaler;
 import org.contentmine.eucl.euclid.RealRange;
 import org.contentmine.graphics.AbstractCMElement;
@@ -19,13 +19,8 @@ import org.contentmine.graphics.svg.plot.AbstractPlotBox;
  */
 public class ForestPlot extends AbstractPlotBox {
 
-	private static final Logger LOG = Logger.getLogger(ForestPlot.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	
-	// most variables are in superclass
+	private static final Logger LOG = LogManager.getLogger(ForestPlot.class);
+// most variables are in superclass
 	
 	public ForestPlot() {
 		setDefaults();

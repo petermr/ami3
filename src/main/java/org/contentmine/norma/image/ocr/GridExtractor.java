@@ -3,8 +3,8 @@ package org.contentmine.norma.image.ocr;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 
 public class GridExtractor {
@@ -14,12 +14,8 @@ public class GridExtractor {
 		Y,
 	};
 	
-	private static final Logger LOG = Logger.getLogger(GridExtractor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private Real2 deltaXY;
+	private static final Logger LOG = LogManager.getLogger(GridExtractor.class);
+private Real2 deltaXY;
 	
 	public GridExtractor(Real2 deltaXY) {
 		this.deltaXY = deltaXY;

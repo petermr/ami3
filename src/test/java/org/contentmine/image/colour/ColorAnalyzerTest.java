@@ -4,7 +4,8 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.graphics.svg.util.ImageIOUtil;
@@ -26,7 +27,7 @@ import junit.framework.Assert;
  */
 public class ColorAnalyzerTest {
 
-	private final static Logger LOG = Logger.getLogger(ColorAnalyzerTest.class);
+	private final static Logger LOG = LogManager.getLogger(ColorAnalyzerTest.class);
 	
 	
 	@Test

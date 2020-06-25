@@ -16,8 +16,8 @@
 
 package org.contentmine.eucl.euclid.euclid;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.IntMatrix;
@@ -34,7 +34,7 @@ import org.junit.Test;
  */
 public class IntSquareMatrixTest extends MatrixTest {
 
-    static Logger LOG = Logger.getLogger(IntSquareMatrixTest.class);
+    static Logger LOG = LogManager.getLogger(IntSquareMatrixTest.class);
 
     IntSquareMatrix m0;
 
@@ -50,7 +50,6 @@ public class IntSquareMatrixTest extends MatrixTest {
     @Before
     public void setUp() throws Exception {
         super.setUp();
-        LOG.setLevel(Level.WARN);
         m0 = new IntSquareMatrix();
         m1 = new IntSquareMatrix(3);
         m2 = new IntSquareMatrix(3, new int[] { 11, 12, 13, 21, 22, 23, 31, 32,

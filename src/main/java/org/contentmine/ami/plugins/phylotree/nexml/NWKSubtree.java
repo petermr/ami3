@@ -2,8 +2,8 @@ package org.contentmine.ami.plugins.phylotree.nexml;
 
 import nu.xom.Element;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.Transform2;
 import org.contentmine.eucl.euclid.Util;
@@ -13,12 +13,8 @@ import org.contentmine.graphics.svg.SVGG;
 
 public class NWKSubtree {
 
-	private static final Logger LOG = Logger.getLogger(NWKSubtree.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private NWKBranchSet branchSet;
+	private static final Logger LOG = LogManager.getLogger(NWKSubtree.class);
+private NWKBranchSet branchSet;
 	private NWKLeaf leaf;
 
 	/**

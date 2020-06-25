@@ -19,7 +19,8 @@ package org.contentmine.graphics.html;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.util.HtmlUtil;
 
 import nu.xom.Attribute;
@@ -28,7 +29,7 @@ import nu.xom.Text;
 public class HtmlScript  extends HtmlElement {
 
 	@SuppressWarnings("unused")
-	private final static Logger LOG = Logger.getLogger(HtmlScript.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlScript.class);
 	public final static String TAG = "script";
 	
 	private static final String SRC = "src";

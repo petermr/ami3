@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.norma.NormaFixtures;
 import org.junit.Test;
@@ -18,11 +18,8 @@ import com.jayway.jsonpath.ReadContext;
 public class JsonPathTest {
 
 	
-	private static final Logger LOG = Logger.getLogger(JsonPathTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	@Test
+	private static final Logger LOG = LogManager.getLogger(JsonPathTest.class);
+@Test
 	public void testExample0() throws IOException {
 		String json = FileUtils.readFileToString(new File(NormaFixtures.TEST_JSON_DIR, "jsonpathExample.json"), CMineUtil.UTF8_CHARSET);
 		ReadContext ctx = JsonPath.parse(json);

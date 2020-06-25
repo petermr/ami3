@@ -1,7 +1,7 @@
 package org.contentmine.ami.tools.ocr;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
@@ -11,11 +11,8 @@ import nu.xom.Element;
 import nu.xom.Elements;
 
 public abstract class AbstractGOCRElement extends Element {
-	private static final Logger LOG = Logger.getLogger(AbstractGOCRElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public static String TAG = "page";
+	private static final Logger LOG = LogManager.getLogger(AbstractGOCRElement.class);
+public static String TAG = "page";
 
 //	public static final String X = "x";
 //	public static final String Y = "y";

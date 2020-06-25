@@ -5,8 +5,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.CMineFixtures;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.junit.Assert;
@@ -21,12 +21,8 @@ public class SnippetsTreeTest {
 
 	
 	
-	private static final Logger LOG = Logger.getLogger(SnippetsTreeTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(SnippetsTreeTest.class);
+@Test
 	public void testCreateSnippetsTree() throws FileNotFoundException {
 		Element element = XMLUtil.parseQuietlyToDocument(new FileInputStream(UNIXSNIPPETFILE)).getRootElement();
 		SnippetsTree snippetsTree = SnippetsTree.createSnippetsTree(element);

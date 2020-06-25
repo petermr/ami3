@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.ResultElement;
 import org.contentmine.cproject.files.ResultsElement;
 
@@ -19,12 +19,8 @@ import nu.xom.IllegalNameException;
 public class MatcherResult {
 
 	
-	private static final Logger LOG = Logger.getLogger(MatcherResult.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private List<String> groupList;
+	private static final Logger LOG = LogManager.getLogger(MatcherResult.class);
+private List<String> groupList;
 	private List<String> fieldList;
 	private List<NamedGroupList> namedGroupListList;
 

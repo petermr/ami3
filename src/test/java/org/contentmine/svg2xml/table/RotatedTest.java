@@ -4,8 +4,8 @@ package org.contentmine.svg2xml.table;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
@@ -23,11 +23,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class RotatedTest {
-	private static final Logger LOG = Logger.getLogger(RotatedTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final File ROTATED_DIR = new File(SVG2XMLFixtures.TABLE_DIR, "rotated/");
+	private static final Logger LOG = LogManager.getLogger(RotatedTest.class);
+private static final File ROTATED_DIR = new File(SVG2XMLFixtures.TABLE_DIR, "rotated/");
 	
 	private static final File ROTATED1186_1 = new File(ROTATED_DIR, "10.1186.s12966-017-0535-6/tables/table1/table.svg");
 	private static final File ROTATED1186_2 = new File(ROTATED_DIR, "10.1186.s12966-017-0535-6/tables/table2/table.svg");

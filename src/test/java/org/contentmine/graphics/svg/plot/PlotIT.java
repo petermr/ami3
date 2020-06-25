@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.plot;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AbstractAMITest;
 import org.contentmine.graphics.svg.SVGHTMLFixtures;
 import org.junit.Ignore;
@@ -12,12 +12,8 @@ import org.junit.Test;
 
 //@Ignore("This really should be in POM or CL")
 public class PlotIT extends AbstractAMITest {
-	private static final Logger LOG = Logger.getLogger(PlotIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(PlotIT.class);
+@Test
 	//	@Ignore // too long
 	public void testConvertAllSVG2CSV() throws IOException {
 		String[] fileRoots = {

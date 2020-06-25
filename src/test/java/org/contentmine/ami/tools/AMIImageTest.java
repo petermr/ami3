@@ -4,8 +4,8 @@ import java.io.File;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.image.diagram.DiagramAnalyzerTest;
@@ -24,12 +24,8 @@ public class AMIImageTest extends AbstractAMITest {
 	private static final File OLD_SPSS = new File(SRC_TEST_AMI, "uclforest/spss/");
 	
 	
-	private static final Logger LOG = Logger.getLogger(AMIImageTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	boolean started = false;
+	private static final Logger LOG = LogManager.getLogger(AMIImageTest.class);
+boolean started = false;
 
 	@Before
 	public void startUp() {

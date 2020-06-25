@@ -6,8 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.CProjectArgProcessor;
 import org.contentmine.eucl.xml.XMLUtil;
 
@@ -20,12 +21,8 @@ import nu.xom.Element;
  */
 public abstract class CContainer {
 
-	private static final Logger LOG = Logger.getLogger(CContainer.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final String FILES_RESOURCE = CProjectArgProcessor.RESOURCE_NAME_TOP + "/files";
+	private static final Logger LOG = LogManager.getLogger(CContainer.class);
+public static final String FILES_RESOURCE = CProjectArgProcessor.RESOURCE_NAME_TOP + "/files";
 
 	protected static final String MANIFEST_XML = "manifest.xml";
 	protected static final String LOG_XML = "log.xml";
@@ -291,7 +288,6 @@ public abstract class CContainer {
 		allowedChildFileList = null;
 		unknownChildDirectoryList = null;
 		unknownChildFileList = null;
-		
 	}
 
 	public Level getDebugLevel() {

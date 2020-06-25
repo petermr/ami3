@@ -17,14 +17,15 @@
 
 package org.contentmine.graphics.html;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 /** 
  *  @author pm286
  */
 public class HtmlCaption extends HtmlElement {
-	private final static Logger LOG = Logger.getLogger(HtmlCaption.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlCaption.class);
 	public final static String TAG = "caption";
 
 	/** constructor.

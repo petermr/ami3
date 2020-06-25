@@ -3,8 +3,8 @@ package org.contentmine.ami.plugins.species;
 import java.io.File;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIFixtures;
 import org.contentmine.ami.plugins.AMIArgProcessor;
 import org.contentmine.ami.plugins.species.SpeciesArgProcessor;
@@ -23,12 +23,8 @@ public class SpeciesArgProcessorTest {
 
 	
 	
-	private static final Logger LOG = Logger.getLogger(SpeciesArgProcessorTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	static File SPECIES_DIR = new File(NAConstants.TEST_AMI_DIR, "species/");
+	private static final Logger LOG = LogManager.getLogger(SpeciesArgProcessorTest.class);
+static File SPECIES_DIR = new File(NAConstants.TEST_AMI_DIR, "species/");
 
 	
 	@Test

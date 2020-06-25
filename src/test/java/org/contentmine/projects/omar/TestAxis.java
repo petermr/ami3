@@ -3,8 +3,8 @@ package org.contentmine.projects.omar;
 import java.io.File;
 import java.io.FileNotFoundException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGSVG;
@@ -14,11 +14,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class TestAxis {
-	private static final Logger LOG = Logger.getLogger(TestAxis.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
+	private static final Logger LOG = LogManager.getLogger(TestAxis.class);
 //	private static File OMAR_DIR = new File("src/test/resources/org/contentmine/projects/omar/test/lichtenburg19a/svg/");
 	private static File OMAR_DIR = new File("src/test/resources/org/contentmine/ami/omar/test/lichtenburg19a/svg/");
 	private static File PROBLEMS_DIR = new File("src/test/resources/org/contentmine/ami/pdf2svg2/problems/");

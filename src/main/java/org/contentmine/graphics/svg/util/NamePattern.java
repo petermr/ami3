@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** manages named capture groups as Java can't
  * see https://stackoverflow.com/questions/15588903/get-group-names-in-java-regex
@@ -17,11 +17,8 @@ import org.apache.log4j.Logger;
  *
  */
 public class NamePattern {
-	private static final Logger LOG = Logger.getLogger(NamePattern.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public static Pattern NAME_REGEX_PATTERN = Pattern.compile("\\?<([A-Za-z]+)>");
+	private static final Logger LOG = LogManager.getLogger(NamePattern.class);
+public static Pattern NAME_REGEX_PATTERN = Pattern.compile("\\?<([A-Za-z]+)>");
 
 	private Pattern pattern;
 	private List<String> nameList;

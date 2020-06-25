@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.eucl.euclid.Real2;
@@ -39,12 +39,8 @@ public class BMCTest {
 
 	
 	private static final String SRC_MAIN_RESOURCES = "src/main/resources";
-	private static final Logger LOG = Logger.getLogger(BMCTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(BMCTest.class);
+@Test
 	@Ignore // too long
 	public void readProvisionalPDFTest() throws Exception {
 		PDF2XHTMLConverter converter = new PDF2XHTMLConverter();

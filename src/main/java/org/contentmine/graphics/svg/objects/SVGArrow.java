@@ -1,7 +1,7 @@
 package org.contentmine.graphics.svg.objects;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGLine;
@@ -12,12 +12,8 @@ import org.contentmine.graphics.svg.SVGUtil;
 
 public class SVGArrow extends SVGLine {
 
-private static final Logger LOG = Logger.getLogger(SVGArrow.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final String ARROW = "arrow";
+private static final Logger LOG = LogManager.getLogger(SVGArrow.class);
+public static final String ARROW = "arrow";
 	public final static SVGMarker ARROWHEAD;
 	public final static SVGPath TRIANGLE;
 	static {

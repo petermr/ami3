@@ -2,8 +2,8 @@ package org.contentmine.ami.plugins.word;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMIPluginOption;
 import org.contentmine.ami.plugins.AbstractSearchArgProcessor;
 import org.contentmine.cproject.args.DefaultArgProcessor;
@@ -11,12 +11,8 @@ import org.contentmine.cproject.util.CellRenderer;
 
 public class WordPluginOption extends AMIPluginOption {
 
-	private static final Logger LOG = Logger.getLogger(WordPluginOption.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final String TAG = "word";
+	private static final Logger LOG = LogManager.getLogger(WordPluginOption.class);
+public static final String TAG = "word";
 
 	public WordPluginOption() {
 		super(TAG);

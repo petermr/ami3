@@ -8,8 +8,8 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
 import org.contentmine.cproject.files.CProject;
@@ -35,12 +35,8 @@ import picocli.CommandLine.Option;
 					+ "        by default this produces svg/fulltext-page.<1...n>.svg and pdfimages/image.p.n.x_x.y_y.png%n"
 	})
 public class AMIPDFTool extends AbstractAMITool {
-	private static final Logger LOG = Logger.getLogger(AMIPDFTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public enum ParserType {
+	private static final Logger LOG = LogManager.getLogger(AMIPDFTool.class);
+public enum ParserType {
 		early,
 		ami,
 		zero,
@@ -163,7 +159,7 @@ public class AMIPDFTool extends AbstractAMITool {
 	protected void runSpecifics() {
     	if (processTrees()) { 
     	} else {
-			DebugPrint.debugPrint(Level.ERROR, "must give cProject or cTree");
+    		LOG.error(DebugPrint.MARKER, "must give cProject or cTree");
 	    }
     }
 

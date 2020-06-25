@@ -9,8 +9,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.lookups.WikipediaLookup;
 import org.contentmine.ami.plugins.phylotree.nexml.NexmlElement;
 import org.contentmine.ami.plugins.phylotree.nexml.NexmlNEXML;
@@ -30,12 +30,8 @@ import com.google.common.collect.Multiset.Entry;
  */
 public class SpeciesAnalyzer {
 
-	private static final Logger LOG = Logger.getLogger(SpeciesAnalyzer.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private Multiset<String> binomialSet;
+	private static final Logger LOG = LogManager.getLogger(SpeciesAnalyzer.class);
+private Multiset<String> binomialSet;
 	private Multiset<String> genusSet;
 	private Iterable<Entry<String>> genusByValues;
 	private Iterable<Entry<String>> genusByCount;

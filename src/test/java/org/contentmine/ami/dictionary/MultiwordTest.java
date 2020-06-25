@@ -4,8 +4,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.lucene.LuceneUtils;
 import org.junit.Assert;
 import org.junit.Test;
@@ -17,12 +17,8 @@ import org.junit.Test;
  */
 public class MultiwordTest {
 
-	private static final Logger LOG = Logger.getLogger(MultiwordTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public final static File MULTIWORD_SYNBIO = new File(DefaultAMIDictionary.SYNBIO_DIR, "synbio.xml");
+	private static final Logger LOG = LogManager.getLogger(MultiwordTest.class);
+public final static File MULTIWORD_SYNBIO = new File(DefaultAMIDictionary.SYNBIO_DIR, "synbio.xml");
 	public final static String EXAMPLE = ""
 			+ "This is rubbish for a bacterial article about an "
 			  + "artificial gene with a biological circuit and some dna synthesis with a riboswitch for photosynthesis";

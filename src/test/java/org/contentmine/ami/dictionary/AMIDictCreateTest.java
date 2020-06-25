@@ -8,8 +8,8 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMIDict;
 import org.contentmine.ami.tools.AbstractAMIDictTool;
 import org.contentmine.ami.tools.AbstractAMIDictTool.DictionaryFileFormat;
@@ -28,11 +28,8 @@ import org.junit.Test;
  *
  */
 public class AMIDictCreateTest extends AbstractAMITest {
-	private static final Logger LOG = Logger.getLogger(AMIDictCreateTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final File TARGET = new File("target");
+	private static final Logger LOG = LogManager.getLogger(AMIDictCreateTest.class);
+private static final File TARGET = new File("target");
 	public static final File DICTIONARY_DIR = new File(TARGET, "dictionary");
 	
 

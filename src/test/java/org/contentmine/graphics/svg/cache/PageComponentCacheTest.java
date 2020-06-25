@@ -1,7 +1,7 @@
 package org.contentmine.graphics.svg.cache;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** tests all page companents (Top, Bottom, etc.).
  * May change later
@@ -9,10 +9,5 @@ import org.apache.log4j.Logger;
  *
  */
 public class PageComponentCacheTest {
-	private static final Logger LOG = Logger.getLogger(PageComponentCacheTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	
+	private static final Logger LOG = LogManager.getLogger(PageComponentCacheTest.class);
 }

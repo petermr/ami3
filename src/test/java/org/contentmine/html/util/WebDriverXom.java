@@ -3,8 +3,8 @@ package org.contentmine.html.util;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -17,11 +17,8 @@ import nu.xom.Element;
  *
  */
 public class WebDriverXom {
-	private static final Logger LOG = Logger.getLogger(WebDriverXom.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static String[] ATTNAMES = {
+	private static final Logger LOG = LogManager.getLogger(WebDriverXom.class);
+private static String[] ATTNAMES = {
 		"alt",
 //		"class",
 		"content",

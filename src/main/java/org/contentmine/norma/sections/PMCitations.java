@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.HashMultiset;
@@ -15,12 +15,8 @@ import com.google.common.collect.Multisets;
 
 public class PMCitations {
 
-	private static final Logger LOG = Logger.getLogger(PMCitations.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private Multiset<String> citedSet;
+	private static final Logger LOG = LogManager.getLogger(PMCitations.class);
+private Multiset<String> citedSet;
 	ListMultimap<String, String> pmcidListByPmid;
 	private Double nodesep = 0.4;
 	private Double ranksep = 3.7;

@@ -13,8 +13,8 @@ import java.util.Map;
 import javax.imageio.ImageIO;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.eucl.euclid.Axis.Axis2;
 import org.contentmine.eucl.euclid.Int2Range;
@@ -29,12 +29,8 @@ import org.junit.Test;
 import com.google.common.collect.Multiset;
 
 public class ImageUtilTest {
-	private static final Logger LOG = Logger.getLogger(ImageUtilTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(ImageUtilTest.class);
+@Test
 	/** clip rectangle out of image.
 	 * 
 	 * @throws IOException

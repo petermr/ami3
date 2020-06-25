@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.linestuff;
 import java.util.Collections;
 import java.util.Comparator;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGLine;
 import org.contentmine.graphics.svg.SVGLine.LineDirection;
 import org.contentmine.graphics.svg.SVGLineList;
@@ -15,12 +15,8 @@ import org.contentmine.graphics.svg.SVGLineList;
  *
  */
 public class AxialLineList extends SVGLineList {
-	private static final Logger LOG = Logger.getLogger(AxialLineList.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private LineDirection direction;
+	private static final Logger LOG = LogManager.getLogger(AxialLineList.class);
+private LineDirection direction;
 	private double eps = SVGLine.EPS;
 
 	public AxialLineList(LineDirection direction) {

@@ -11,8 +11,8 @@ import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.metadata.crossref.CrossrefMD;
 import org.contentmine.cproject.metadata.epmc.EpmcMD;
@@ -118,12 +118,8 @@ public abstract class AbstractMetadata {
 	public static final String HEAD_VOLUME          = "Volume";
 	public static final String HEAD_XMLURL          = "XMLURL";
 
-	public static final Logger LOG = Logger.getLogger(AbstractMetadata.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public enum Type {
+	public static final Logger LOG = LogManager.getLogger(AbstractMetadata.class);
+public enum Type {
 		
 		CROSSREF(new CrossrefMD()),
 		EPMC(new EpmcMD()),

@@ -14,18 +14,14 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Ignore;
 import org.junit.Test;
 
 public class EPMCDownloadTest {
-	private static final Logger LOG = Logger.getLogger(EPMCDownloadTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private Client client;
+	private static final Logger LOG = LogManager.getLogger(EPMCDownloadTest.class);
+private Client client;
 	private WebTarget target;
 
 	/**

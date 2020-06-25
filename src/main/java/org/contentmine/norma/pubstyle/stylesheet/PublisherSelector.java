@@ -2,8 +2,8 @@ package org.contentmine.norma.pubstyle.stylesheet;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
@@ -26,12 +26,8 @@ import nu.xom.Node;
  */
 public class PublisherSelector {
 
-	private static final Logger LOG = Logger.getLogger(PublisherSelector.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final String GET_PUBLISHER = "/*/*[local-name()='variable' and @name='publisher']/text()";
+	private static final Logger LOG = LogManager.getLogger(PublisherSelector.class);
+public static final String GET_PUBLISHER = "/*/*[local-name()='variable' and @name='publisher']/text()";
 	public static final String GET_PREFIX = "/*/*[local-name()='variable' and @name='prefix']/text()";
 	public static final String GET_XPATH = "/*/*[local-name()='variable' and @name='publisherSelector']/text()";
 

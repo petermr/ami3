@@ -5,16 +5,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class AMIProcessorXML {
-	private static final Logger LOG = Logger.getLogger(AMIProcessorXML.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static void main(String[] args) {
+	private static final Logger LOG = LogManager.getLogger(AMIProcessorXML.class);
+public static void main(String[] args) {
 		List<String> argList = new ArrayList<String>(Arrays.asList(args));
 		if (argList.size() == 0 || AMIProcessor.HELP.equals(argList.get(0))) {
 			if (argList.size() > 0) argList.remove(0);

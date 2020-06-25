@@ -2,7 +2,8 @@ package org.contentmine.svg2xml.table;
 
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -13,7 +14,7 @@ import org.junit.Test;
  */
 public class TableBodyTest {
 
-	private final static Logger LOG = Logger.getLogger(TableBodyTest.class);
+	private final static Logger LOG = LogManager.getLogger(TableBodyTest.class);
 	
 	private final static String TABLE = "target/table";
 

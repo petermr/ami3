@@ -9,8 +9,8 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
@@ -29,12 +29,8 @@ import org.contentmine.graphics.svg.plot.AbstractPlotBox;
  *
  */
 public class PlotCache extends ComponentCache {
-	private static final Logger LOG = Logger.getLogger(PlotCache.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private List<AbstractPlotBox> plotBoxList;
+	private static final Logger LOG = LogManager.getLogger(PlotCache.class);
+private List<AbstractPlotBox> plotBoxList;
 	private List<SVGElement> elementList;
 	
 	public PlotCache() {

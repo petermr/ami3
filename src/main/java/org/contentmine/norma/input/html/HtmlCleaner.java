@@ -4,8 +4,8 @@ import java.io.File;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlElement;
@@ -17,12 +17,8 @@ import nu.xom.Element;
 public class HtmlCleaner {
 
 	
-	private static final Logger LOG = Logger.getLogger(HtmlCleaner.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public enum TagPosition {
+	private static final Logger LOG = LogManager.getLogger(HtmlCleaner.class);
+public enum TagPosition {
 		ANYWHERE("//"),
 		CHILD("./"),
 		DESCENDANT(".//"),;

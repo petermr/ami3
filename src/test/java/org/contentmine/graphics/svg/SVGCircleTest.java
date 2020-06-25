@@ -1,7 +1,7 @@
 package org.contentmine.graphics.svg;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealRange;
@@ -16,13 +16,9 @@ import org.junit.Test;
  *
  */
 public class SVGCircleTest {
-private static final Logger LOG = Logger.getLogger(SVGCircleTest.class);
+private static final Logger LOG = LogManager.getLogger(SVGCircleTest.class);
 
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private double epsilon = 0.01;
+private double epsilon = 0.01;
 
 	@Test
 	public void testCreateHW() {

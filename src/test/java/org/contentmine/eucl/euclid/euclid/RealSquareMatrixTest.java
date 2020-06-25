@@ -18,8 +18,8 @@ package org.contentmine.eucl.euclid.euclid;
 
 import static org.contentmine.eucl.euclid.EuclidConstants.EPS;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.EC;
 import org.contentmine.eucl.euclid.EuclidTestUtils;
 import org.contentmine.eucl.euclid.RealArray;
@@ -38,7 +38,7 @@ import org.junit.Test;
  */
 public class RealSquareMatrixTest extends MatrixTest {
 
-	private final static Logger LOG = Logger.getLogger(RealSquareMatrixTest.class);
+	private final static Logger LOG = LogManager.getLogger(RealSquareMatrixTest.class);
 
 	RealSquareMatrix m0;
 	RealSquareMatrix m1;
@@ -52,7 +52,6 @@ public class RealSquareMatrixTest extends MatrixTest {
 	@Before
 	public void setUp() throws Exception {
 		super.setUp();
-		LOG.setLevel(Level.WARN);
 		m0 = new RealSquareMatrix();
 		m1 = new RealSquareMatrix(3);
 		m2 = new RealSquareMatrix(3, new double[] { 11., 12., 13., 21., 22.,

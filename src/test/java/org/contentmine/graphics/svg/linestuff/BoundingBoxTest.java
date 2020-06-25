@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.linestuff;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGElement;
@@ -18,12 +18,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class BoundingBoxTest {
-	private static final Logger LOG = Logger.getLogger(BoundingBoxTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(BoundingBoxTest.class);
+@Test
 	/* line is vertical - should create a bbox
 	 * 
 	 */

@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.text;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -23,12 +23,8 @@ import nu.xom.Element;
 public class SVGWordLine extends SVGG {
 
 	
-	private static final Logger LOG = Logger.getLogger(SVGWordLine.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final String CLASS = "line";
+	private static final Logger LOG = LogManager.getLogger(SVGWordLine.class);
+public static final String CLASS = "line";
 	private List<SVGPhrase> phraseList;
 	private List<SVGWord> wordList;
 	

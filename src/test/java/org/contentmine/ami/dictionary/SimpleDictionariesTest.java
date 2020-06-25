@@ -1,7 +1,7 @@
 package org.contentmine.ami.dictionary;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIProcessor;
 import org.junit.Test;
 
@@ -12,11 +12,7 @@ import org.junit.Test;
  *
  */
 public class SimpleDictionariesTest {
-	private static final Logger LOG = Logger.getLogger(SimpleDictionariesTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
+	private static final Logger LOG = LogManager.getLogger(SimpleDictionariesTest.class);
 //	@Test
 //	public void testResources() {
 //		AMIDictionary dictionaries = new AMIDictionary();

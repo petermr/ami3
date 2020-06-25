@@ -5,8 +5,8 @@ import java.util.List;
 
 import org.apache.commons.lang3.tuple.MutablePair;
 import org.apache.commons.lang3.tuple.Pair;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.JodaDate;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGPath;
@@ -19,13 +19,9 @@ import org.joda.time.DateTime;
  *
  */
 public class SVGLogger {
-	private static final Logger LOG = Logger.getLogger(SVGLogger.class);
+	private static final Logger LOG = LogManager.getLogger(SVGLogger.class);
 	
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private SVGG topG;
+private SVGG topG;
 	private List<Pair<String, Object>> nvList;
 
 	public SVGLogger() {

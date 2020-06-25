@@ -9,8 +9,8 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIFixtures;
 import org.contentmine.ami.plugins.phylotree.PhyloConstants;
 import org.contentmine.ami.plugins.phylotree.PhyloTreeArgProcessor;
@@ -31,11 +31,8 @@ import org.junit.Test;
 @Ignore("remove Ignore for development")
 public class LongRunningTests {
 
-	public static final Logger LOG = Logger.getLogger(LongRunningTests.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	//????????
+	public static final Logger LOG = LogManager.getLogger(LongRunningTests.class);
+//????????
 	public final static String PHYLO = "./target/appassembler/bin/ami-phylotree";
 
 	public final static String SUFFIX = ".pbm.png";

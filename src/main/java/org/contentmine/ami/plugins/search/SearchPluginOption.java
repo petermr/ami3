@@ -2,8 +2,8 @@ package org.contentmine.ami.plugins.search;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
 import org.contentmine.ami.plugins.AMIArgProcessor;
 import org.contentmine.ami.plugins.AMIPluginOption;
@@ -15,12 +15,8 @@ import org.contentmine.cproject.util.CellRenderer;
 
 public class SearchPluginOption extends AMIPluginOption {
 
-	private static final Logger LOG = Logger.getLogger(SearchPluginOption.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final String TAG = "search";
+	private static final Logger LOG = LogManager.getLogger(SearchPluginOption.class);
+public static final String TAG = "search";
 	private String searchDictionary;
 	private String dictionary;
 

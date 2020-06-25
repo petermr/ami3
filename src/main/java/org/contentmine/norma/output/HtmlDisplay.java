@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.RegexPathFilter;
 import org.contentmine.cproject.util.Utils;
@@ -28,13 +28,9 @@ import org.contentmine.graphics.svg.SVGElement;
  *
  */
 public class HtmlDisplay {
-	private static final Logger LOG = Logger.getLogger(HtmlDisplay.class);
+	private static final Logger LOG = LogManager.getLogger(HtmlDisplay.class);
 
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	protected String output;
+protected String output;
 	private List<RegexPathFilter> displayFilters;
 	protected CTree cTree;
 	protected Pattern fileFilterPattern;

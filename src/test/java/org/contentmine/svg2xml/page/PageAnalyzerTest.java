@@ -3,7 +3,8 @@ package org.contentmine.svg2xml.page;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.text.line.ScriptLine;
 import org.contentmine.graphics.svg.text.structure.AbstractContainer;
 import org.contentmine.svg2xml.pdf.PDFAnalyzer;
@@ -14,7 +15,7 @@ import org.junit.Test;
 
 public class PageAnalyzerTest {
 
-	private final static Logger LOG = Logger.getLogger(PageAnalyzerTest.class);
+	private final static Logger LOG = LogManager.getLogger(PageAnalyzerTest.class);
 	
 	public final static String BMC_GEOTABLE = "geotable-1471-2148-11-310";
 

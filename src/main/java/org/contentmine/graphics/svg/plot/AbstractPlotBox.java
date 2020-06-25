@@ -11,8 +11,8 @@ import java.util.List;
 
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.RangeScaler;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Array;
@@ -44,13 +44,9 @@ import org.contentmine.graphics.svg.objects.SVGRhomb;
  *
  */
 public abstract class AbstractPlotBox {
-	protected static final Logger LOG = Logger.getLogger(AbstractPlotBox.class);
+	protected static final Logger LOG = LogManager.getLogger(AbstractPlotBox.class);
 	public static int FORMAT_NDEC = 3;
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public enum AxisType {
+public enum AxisType {
 		BOTTOM(0, LineDirection.HORIZONTAL, 1),
 		LEFT(1, LineDirection.VERTICAL, -1),
 		TOP(2, LineDirection.HORIZONTAL, -1),

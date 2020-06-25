@@ -11,8 +11,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.DebugPrint;
@@ -45,12 +45,8 @@ description = {
 		"Takes raw SVG from PDF2SVG and converts into structured HTML and higher graphics primitives."
 })
 public class AMISVGTool extends AbstractAMITool {
-	private static final Logger LOG = Logger.getLogger(AMISVGTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-    public enum TidySVG {
+	private static final Logger LOG = LogManager.getLogger(AMISVGTool.class);
+public enum TidySVG {
 	    emptypath,     // has no primitives
 	    nomove,        // has no initial M command
 	    nullmove,;     // M without further primitives
@@ -178,7 +174,7 @@ public class AMISVGTool extends AbstractAMITool {
     	createPatterns();
     	if (processTrees()) { 
     	} else {
-			DebugPrint.debugPrint(Level.ERROR, "must give cProject or cTree");
+    		LOG.error(DebugPrint.MARKER, "must give cProject or cTree");
 	    }
     }
 

@@ -10,8 +10,8 @@ import nu.xom.Attribute;
 import nu.xom.Element;
 import nu.xom.Text;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMIArgProcessor;
 import org.contentmine.ami.plugins.MatcherResult;
 import org.contentmine.cproject.args.DefaultArgProcessor;
@@ -26,12 +26,8 @@ import org.contentmine.cproject.args.VariableProcessor;
  */
 public class RegexComponent {
 
-	private static final Logger LOG = Logger.getLogger(RegexComponent.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final String FIELDS = "fields";
+	private static final Logger LOG = LogManager.getLogger(RegexComponent.class);
+public static final String FIELDS = "fields";
 	private static final String WEIGHT = "weight";
 	private static final String PATTERN = "pattern";
 	public static final String REGEX = "regex";

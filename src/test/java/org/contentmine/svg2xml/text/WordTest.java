@@ -2,8 +2,8 @@ package org.contentmine.svg2xml.text;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.Util;
@@ -17,13 +17,9 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class WordTest {
-	private static final Logger LOG = Logger.getLogger(WordTest.class);
+	private static final Logger LOG = LogManager.getLogger(WordTest.class);
 
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static Word WORD0 = RawWordsTest.RAW_WORDS.get(0);
+public static Word WORD0 = RawWordsTest.RAW_WORDS.get(0);
 	public static Word WORD1 = RawWordsTest.RAW_WORDS.get(1);
 	public static Word WORD2 = RawWordsTest.RAW_WORDS.get(2);
 	

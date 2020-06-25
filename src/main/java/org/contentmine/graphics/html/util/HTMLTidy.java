@@ -10,7 +10,8 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -34,7 +35,7 @@ public class HTMLTidy {
 	private static final String WHITESPACE = "[\\r\\n\\t]+";
 	private static final String ENDTAG_PREFIX = "(</[A-Za-z_][A-Za-z_0-9]*:)";
 	private static final String STARTTAG_PREFIX = "(<[A-Za-z_][A-Za-z_0-9]*:)";
-	private final static Logger LOG = Logger.getLogger(HTMLTidy.class);
+	private final static Logger LOG = LogManager.getLogger(HTMLTidy.class);
 	private Tidy tidy;
 	private List<HTMLTagReplacement> tagReplacementList;
 	private ByteArrayOutputStream baos;

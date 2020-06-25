@@ -23,8 +23,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.ArrayBase.Trim;
 import org.contentmine.eucl.euclid.EuclidRuntimeException;
 import org.contentmine.eucl.euclid.Int;
@@ -44,12 +44,8 @@ import org.junit.Test;
  * 
  */
 public class IntArrayTest {
-	private static final Logger LOG = Logger.getLogger(IntArrayTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	IntArray a0;
+	private static final Logger LOG = LogManager.getLogger(IntArrayTest.class);
+IntArray a0;
 
 	IntArray a1;
 

@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.CMineFixtures;
 import org.contentmine.cproject.CProjectArgProcessor;
 import org.contentmine.cproject.args.DefaultArgProcessor;
@@ -15,12 +15,8 @@ import org.junit.Test;
 
 public class CProjectUnzipTest {
 
-	private static final Logger LOG = Logger.getLogger(CProjectUnzipTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private File zipsDir;
+	private static final Logger LOG = LogManager.getLogger(CProjectUnzipTest.class);
+private File zipsDir;
 	private File targetZips;
 
 	@Test

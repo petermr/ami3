@@ -2,7 +2,8 @@ package org.contentmine.svg2xml.text;
 
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.rule.horizontal.LineChunk;
 import org.contentmine.graphics.svg.text.line.TextLine;
 import org.contentmine.graphics.svg.text.structure.TextStructurer;
@@ -13,7 +14,7 @@ import org.junit.Test;
 
 public class LineChunkTest {
 
-	private static Logger LOG = Logger.getLogger(LineChunkTest.class);
+	private static Logger LOG = LogManager.getLogger(LineChunkTest.class);
 	
 	private TextLine BERICHT_PAGE6_34_TEXTLINE = null;
 

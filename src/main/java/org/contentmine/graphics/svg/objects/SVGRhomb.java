@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.objects;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Array;
 import org.contentmine.graphics.AbstractCMElement;
@@ -20,13 +20,8 @@ import org.contentmine.graphics.svg.SVGPolyline;
  */
 public class SVGRhomb extends AbstractSubtypedPolygon {
 	
-	private static final Logger LOG = Logger.getLogger(SVGRhomb.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	
-	public static final String RHOMB = "rhomb";
+	private static final Logger LOG = LogManager.getLogger(SVGRhomb.class);
+public static final String RHOMB = "rhomb";
 	
 	public SVGRhomb() {
 		super();

@@ -1,19 +1,15 @@
 package org.contentmine.norma.sections;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.html.HtmlElement;
 
 import nu.xom.Element;
 
 public class JATSUriElement extends JATSElement {
-    private static final Logger LOG = Logger.getLogger(JATSUriElement.class);
-    static {
-        LOG.setLevel(Level.DEBUG);
-    }
-
-    public static String TAG = "uri";
+    private static final Logger LOG = LogManager.getLogger(JATSUriElement.class);
+public static String TAG = "uri";
 
     public JATSUriElement(Element element) {
         super(element);

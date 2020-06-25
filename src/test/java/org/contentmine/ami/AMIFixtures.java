@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.CHESConstants;
 import org.contentmine.ami.plugins.AMIArgProcessor;
 import org.contentmine.ami.plugins.AMIPlugin;
@@ -25,12 +25,8 @@ import org.junit.Assert;
 public class AMIFixtures {
 
 	
-	private static final Logger LOG = Logger.getLogger(AMIFixtures.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public final static File TEST_RESOURCES_DIR    = new File(CHESConstants.SRC_TEST_RESOURCES);
+	private static final Logger LOG = LogManager.getLogger(AMIFixtures.class);
+public final static File TEST_RESOURCES_DIR    = new File(CHESConstants.SRC_TEST_RESOURCES);
 	public final static File TARGET_DIR    = new File("target");
 	
 	public static final String AMISTACK       = "amistack/";

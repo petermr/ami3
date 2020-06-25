@@ -3,7 +3,8 @@ package org.contentmine.graphics.svg.plot;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGLine;
 import org.contentmine.graphics.svg.linestuff.ComplexLine;
@@ -12,7 +13,7 @@ import org.contentmine.graphics.svg.linestuff.ComplexLine.LineOrientation;
 
 public class AxisAnalyzer {
 
-	static final Logger LOG = Logger.getLogger(AxisAnalyzer.class);
+	static final Logger LOG = LogManager.getLogger(AxisAnalyzer.class);
 
 	public static final double _MAJOR_MINOR_TICK_RATIO = 1.1;
 

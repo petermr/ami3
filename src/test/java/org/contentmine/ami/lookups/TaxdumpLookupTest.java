@@ -2,8 +2,8 @@ package org.contentmine.ami.lookups;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.lookups.TaxdumpLookup;
 import org.junit.Assert;
 import org.junit.Test;
@@ -11,12 +11,8 @@ import org.junit.Test;
 public class TaxdumpLookupTest {
 
 	
-	private static final Logger LOG = Logger.getLogger(TaxdumpLookupTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(TaxdumpLookupTest.class);
+@Test
 	public void testGenus() throws Exception {
 		TaxdumpLookup taxdumpLookup = new TaxdumpLookup();
 		Assert.assertTrue("Mus", taxdumpLookup.isValidGenus("Mus"));

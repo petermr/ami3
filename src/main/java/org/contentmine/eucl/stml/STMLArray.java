@@ -20,7 +20,8 @@ import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.EuclidRuntimeException;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.JodaDate;
@@ -48,7 +49,7 @@ import nu.xom.Node;
 public class STMLArray extends STMLElement implements HasUnits, HasArraySize,
 		HasDataType, HasDictRef, HasDelimiter {
 
-	private static Logger logger = Logger.getLogger(STMLArray.class);
+	private static Logger logger = LogManager.getLogger(STMLArray.class);
 	
 	public final static String TAG = "array";
 	/** namespaced element name. */

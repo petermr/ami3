@@ -1,17 +1,13 @@
 package org.contentmine.ami.plugins.gene;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.ResultElement;
 
 public class GeneResultElement extends ResultElement {
 
-	private static final Logger LOG = Logger.getLogger(GeneResultElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public GeneResultElement() {
+	private static final Logger LOG = LogManager.getLogger(GeneResultElement.class);
+public GeneResultElement() {
 		super();
 	}
 	

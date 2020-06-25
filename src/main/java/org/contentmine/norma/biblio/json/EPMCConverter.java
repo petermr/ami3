@@ -10,8 +10,8 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.metadata.AbstractMetadata;
@@ -37,12 +37,8 @@ import net.minidev.json.JSONArray;
 
 public class EPMCConverter implements CellCalculator, MetadataReader {
 
-	private static final Logger LOG = Logger.getLogger(EPMCConverter.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final String HTTP_EUROPEPMC_ORG_ARTICLES = "http://europepmc.org/articles/";
+	private static final Logger LOG = LogManager.getLogger(EPMCConverter.class);
+public static final String HTTP_EUROPEPMC_ORG_ARTICLES = "http://europepmc.org/articles/";
 
 	private InputStream jsonInputStream;
 	private File cProjectDir;

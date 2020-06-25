@@ -2,8 +2,8 @@ package org.contentmine.norma.transform;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.norma.Norma;
@@ -15,13 +15,8 @@ public class TransformTest {
 
 	
 
-	private static final Logger LOG = Logger.getLogger(TransformTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(TransformTest.class);
+@Test
 	public void testMissingFiles() throws Exception {
 		
 		File sourceDir = new File(NormaFixtures.TEST_NORMA_DIR, "transform/biserrula");

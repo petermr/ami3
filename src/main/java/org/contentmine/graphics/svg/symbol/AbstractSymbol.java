@@ -1,6 +1,7 @@
 package org.contentmine.graphics.svg.symbol;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.graphics.svg.GraphicsElement;
 import org.contentmine.graphics.svg.SVGG;
@@ -27,7 +28,7 @@ import org.contentmine.graphics.svg.SVGText;
  */
 public abstract class AbstractSymbol extends SVGG {
 
-	private final static Logger LOG = Logger.getLogger(AbstractSymbol.class);
+	private final static Logger LOG = LogManager.getLogger(AbstractSymbol.class);
 	
 	public enum SymbolOrientation {
 		NONE,

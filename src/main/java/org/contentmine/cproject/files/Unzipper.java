@@ -12,18 +12,13 @@ import java.util.regex.Pattern;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class Unzipper {
 
-	private static final Logger LOG = Logger.getLogger(Unzipper.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-
-	private static final int BUFFER_SIZE = 4096;
+	private static final Logger LOG = LogManager.getLogger(Unzipper.class);
+private static final int BUFFER_SIZE = 4096;
 	private File zipFile;
 	private File outDir;
 	private ZipInputStream zin;

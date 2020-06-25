@@ -9,8 +9,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Angle.Units;
 import org.contentmine.eucl.euclid.Int2;
@@ -40,18 +40,14 @@ import nu.xom.Element;
 import nu.xom.Node;
 
 public class ContourTest {
-	private static final Logger LOG = Logger.getLogger(ContourTest.class);
+	private static final Logger LOG = LogManager.getLogger(ContourTest.class);
 	private static final int NSEG = 100;
 	private static final int POINTS_PER_SEG = 10;
 	private Map<Integer, SVGPolyline> polylinesByIndex;
 	private List<Int2> origins;
 	private List<SVGG> boxList;
 	private Map<Integer, List<Integer>> childIdsById;
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	/** an unthinned set of contours on a single diagram.
+/** an unthinned set of contours on a single diagram.
 	 * contours of Arthur's seat Edinburgh, thankx Alf Eaton.
 	 * 
 	 * 

@@ -3,8 +3,8 @@ package org.contentmine.norma;
 import java.io.File;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.norma.NormaArgProcessor;
 import org.junit.Ignore;
@@ -17,13 +17,8 @@ import org.junit.Test;
  */
 public class IssueTest {
 	
-	private static final Logger LOG = Logger.getLogger(IssueTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-
-	/**
+	private static final Logger LOG = LogManager.getLogger(IssueTest.class);
+/**
 	 * #3
 if --xsl <code> - where code = 'bmc2html', etc fails to resolve the error is not trapped. This causes serious downstream confusion (suggesting there is no input file)
 	 */

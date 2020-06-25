@@ -1,10 +1,11 @@
 package org.contentmine.graphics.svg.symbol;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class Diamond extends AbstractSymbol {
 
-	private final static Logger LOG = Logger.getLogger(Diamond.class);
+	private final static Logger LOG = LogManager.getLogger(Diamond.class);
 	
 	public final static String BLACK_DIAMOND = "\u25c6";
 	public final static String WHITE_DIAMOND = "\u25c7";

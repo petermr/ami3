@@ -1,7 +1,7 @@
 package org.contentmine.cproject.metadata.epmc;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.metadata.AbstractMetadata;
 
 /**
@@ -382,12 +382,8 @@ from eupmc_result.json:
  */
 public class EpmcMD extends AbstractMetadata {
 	
-	static final Logger LOG = Logger.getLogger(EpmcMD.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/**
+	static final Logger LOG = LogManager.getLogger(EpmcMD.class);
+/**
 KEYS deliberately staggered to reflect nesting
 */
   public final static String ID = "id";

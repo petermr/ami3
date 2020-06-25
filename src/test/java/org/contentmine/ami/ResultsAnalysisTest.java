@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.ResultsAnalysisImpl;
 import org.contentmine.cproject.files.ProjectSnippetsTree;
 import org.contentmine.cproject.util.CMineTestFixtures;
@@ -30,12 +30,8 @@ import nu.xom.Element;
  */
 public class ResultsAnalysisTest {
 
-	private static final Logger LOG = Logger.getLogger(ResultsAnalysisTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final File ZIKA_DIR = new File(AMIFixtures.TEST_RESULTS_DIR, "zika");
+	private static final Logger LOG = LogManager.getLogger(ResultsAnalysisTest.class);
+public static final File ZIKA_DIR = new File(AMIFixtures.TEST_RESULTS_DIR, "zika");
 	
 	/** summarizes counts of all terms.
 	 * @throws IOException 

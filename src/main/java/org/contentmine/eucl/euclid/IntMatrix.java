@@ -25,7 +25,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.ArrayBase.Trim;
 
 /**
@@ -42,7 +43,7 @@ import org.contentmine.eucl.euclid.ArrayBase.Trim;
  * @author (C) P. Murray-Rust, 1996
  */
 public class IntMatrix implements EuclidConstants {
-    final static Logger LOG = Logger.getLogger(IntMatrix.class);
+    final static Logger LOG = LogManager.getLogger(IntMatrix.class);
     /**
      * number of rows
      */

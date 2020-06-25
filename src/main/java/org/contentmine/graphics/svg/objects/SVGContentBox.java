@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.objects;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
@@ -34,12 +34,8 @@ import org.contentmine.graphics.svg.text.build.TextChunk;
 public class SVGContentBox extends SVGG {
 
 	public static final String CONTENT_BOX = "contentBox";
-	private static final Logger LOG = Logger.getLogger(SVGContentBox.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private SVGRect rect = null;
+	private static final Logger LOG = LogManager.getLogger(SVGContentBox.class);
+private SVGRect rect = null;
 	private TextChunk textChunk;
 	private SVGLineList lineList;
 	private SVGG svgElement;

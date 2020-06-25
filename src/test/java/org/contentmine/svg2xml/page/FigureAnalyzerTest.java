@@ -1,13 +1,14 @@
 package org.contentmine.svg2xml.page;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Test;
 
 import nu.xom.Element;
 
 public class FigureAnalyzerTest {
 
-	private final static Logger LOG = Logger.getLogger(FigureAnalyzerTest.class);
+	private final static Logger LOG = LogManager.getLogger(FigureAnalyzerTest.class);
 	
 //	@Test
 //	public void testMatchShort() {

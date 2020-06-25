@@ -7,8 +7,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.JodaDate;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.joda.time.DateTime;
@@ -25,12 +25,8 @@ import nu.xom.Element;
 public class Pom extends Element {
 	
 	private static final String PROPERTIES = "properties";
-	private static final Logger LOG = Logger.getLogger(Pom.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String DEPENDENCY = "dependency";
+	private static final Logger LOG = LogManager.getLogger(Pom.class);
+private static final String DEPENDENCY = "dependency";
 	private static final String DEPENDENCIES = "dependencies";
 	private static final String POM = "pom";
 	private static final String PARENT = "parent";

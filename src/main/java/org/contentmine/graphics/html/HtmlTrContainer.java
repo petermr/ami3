@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.RectangularTable;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -20,11 +20,7 @@ import nu.xom.Element;
  *
  */
 public abstract class HtmlTrContainer extends HtmlElement {
-	private static final Logger LOG = Logger.getLogger(HtmlTrContainer.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
+	private static final Logger LOG = LogManager.getLogger(HtmlTrContainer.class);
 //	private static final String COLOR = {
 //			"fdd", ""
 //	}

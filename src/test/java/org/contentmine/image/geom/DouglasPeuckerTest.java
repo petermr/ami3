@@ -5,7 +5,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Array;
 import org.contentmine.graphics.svg.SVGElement;
@@ -18,7 +19,7 @@ import org.junit.Test;
 
 public class DouglasPeuckerTest {
 	
-	private final static Logger LOG = Logger.getLogger(DouglasPeuckerTest.class);
+	private final static Logger LOG = LogManager.getLogger(DouglasPeuckerTest.class);
 	@Test
 	public void testLine() {
 		DouglasPeucker douglasPeucker = new DouglasPeucker(1.0);

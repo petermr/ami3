@@ -20,7 +20,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.Transform2;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -47,7 +48,7 @@ public class SVGG extends SVGElement {
 	private static final String STRING_VALUE = "string-value";
 
 	@SuppressWarnings("unused")
-	private static Logger LOG = Logger.getLogger(SVGG.class);
+	private static Logger LOG = LogManager.getLogger(SVGG.class);
 
 	public final static String TAG ="g";
 	public final static String ALL_G_XPATH = ".//svg:g";

@@ -16,8 +16,8 @@ import javax.imageio.ImageIO;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMIArgProcessor;
 import org.contentmine.cproject.CProjectArgProcessor;
 import org.contentmine.cproject.args.AbstractTool;
@@ -54,12 +54,8 @@ public class NormaArgProcessor extends CProjectArgProcessor {
 	private static final String IMAGE = "image";
 	private static final String PNG = "png";
 
-	public static final Logger LOG = Logger.getLogger(NormaArgProcessor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String XML = "xml";
+	public static final Logger LOG = LogManager.getLogger(NormaArgProcessor.class);
+private static final String XML = "xml";
 
 	public final static String HELP_NORMA = "Norma help";
 

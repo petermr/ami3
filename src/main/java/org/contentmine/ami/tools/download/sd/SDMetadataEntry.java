@@ -2,8 +2,8 @@ package org.contentmine.ami.tools.download.sd;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.download.AbstractDownloader;
 import org.contentmine.ami.tools.download.AbstractMetadataEntry;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -21,12 +21,8 @@ import nu.xom.Element;
  */
 public class SDMetadataEntry extends AbstractMetadataEntry {
 	
-	private static final Logger LOG = Logger.getLogger(SDMetadataEntry.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public SDMetadataEntry() {
+	private static final Logger LOG = LogManager.getLogger(SDMetadataEntry.class);
+public SDMetadataEntry() {
 		super();
 	}
 

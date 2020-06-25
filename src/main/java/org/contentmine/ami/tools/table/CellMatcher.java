@@ -1,7 +1,7 @@
 package org.contentmine.ami.tools.table;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
 	<tableTemplate name="composition">
@@ -17,12 +17,8 @@ import org.apache.log4j.Logger;
  *
  */
 public class CellMatcher extends AbstractTTElement implements HasQuery {
-	private static final Logger LOG = Logger.getLogger(CellMatcher.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static String TAG = "cell";
+	private static final Logger LOG = LogManager.getLogger(CellMatcher.class);
+public static String TAG = "cell";
 	private TQueryTool queryTool;
 	
 	public CellMatcher(TTemplateList templateList) {

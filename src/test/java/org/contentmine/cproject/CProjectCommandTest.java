@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTreeList;
 import org.contentmine.cproject.metadata.quickscrape.QSRecord;
@@ -30,12 +30,8 @@ import nu.xom.Element;
  */
 public class CProjectCommandTest {
 
-	public static final Logger LOG = Logger.getLogger(CProjectCommandTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	/** EXTRACTS URLS FROM GETPAPERS AND SHUFFLES THEM.
+	public static final Logger LOG = LogManager.getLogger(CProjectCommandTest.class);
+/** EXTRACTS URLS FROM GETPAPERS AND SHUFFLES THEM.
 	 * 
 	 * @throws IOException
 	 */

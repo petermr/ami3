@@ -6,10 +6,17 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
-import org.apache.log4j.BasicConfigurator;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.core.Appender;
+import org.apache.logging.log4j.core.LoggerContext;
+import org.apache.logging.log4j.core.appender.ConsoleAppender;
+import org.apache.logging.log4j.core.config.Configurator;
+import org.apache.logging.log4j.core.config.LoggerConfig;
+import org.apache.logging.log4j.spi.StandardLevel;
 import org.contentmine.ami.tools.dictionary.DictionaryCreationTool;
 import org.contentmine.ami.tools.dictionary.DictionaryDisplayTool;
 import org.contentmine.ami.tools.dictionary.DictionarySearchTool;
@@ -52,12 +59,8 @@ import picocli.CommandLine.Spec;
 public class AMIDict implements Runnable {
 	private static final String CONTENT_MINE_DICTIONARIES = "ContentMine/dictionaries";
 
-	private static final Logger LOG = Logger.getLogger(AMIDict.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@ArgGroup(validate = false, heading = "General Options:%n", order = 30)
+	private static final Logger LOG = LogManager.getLogger(AMIDict.class);
+@ArgGroup(validate = false, heading = "General Options:%n", order = 30)
 	GeneralOptions generalOptions = new GeneralOptions();
 
 	@ArgGroup(validate = false, heading = "Logging Options:%n", order = 70)
@@ -69,10 +72,6 @@ public class AMIDict implements Runnable {
 	@Override
 	public void run() {
 		throw new ParameterException(spec.commandLine(), "Missing required subcommand");
-	}
-
-	protected void setLogging() {
-		loggingOptions.setLogging();
 	}
 
 	public static void main(String... args) {
@@ -124,10 +123,16 @@ public class AMIDict implements Runnable {
 	}
 
 	private static CommandLine createCommandLine() {
-		BasicConfigurator.configure(); // TBD not needed?
 		CommandLine cmd = new CommandLine(new AMIDict());
 		cmd.setParameterExceptionHandler(new ShortErrorMessageHandler());
+		cmd.setExecutionStrategy(AMIDict::enhancedLoggingExecutionStrategy);
 		return cmd;
+	}
+
+	private static int enhancedLoggingExecutionStrategy(CommandLine.ParseResult parseResult) {
+		AMIDict dict = parseResult.commandSpec().commandLine().getCommand();
+		dict.loggingOptions.reconfigureLogging();
+		return new CommandLine.RunLast().execute(parseResult); // now delegate to the default execution strategy
 	}
 
 	public String getDirectoryTopname() {
@@ -241,33 +246,45 @@ public class AMIDict implements Runnable {
 				description = "Customize logging configuration. Format: <classname> <level>; sets logging level of class, e.g. \n "
 						+ "org.contentmine.ami.lookups.WikipediaDictionary INFO"
 		)
-		protected String[] log4j;
+		protected Map<Class, StandardLevel> log4j = new HashMap<>();
 
-		private void setLogging() {
-			if (log4j != null) {
-				if (log4j.length % 2 != 0) {
-					throw new RuntimeException("log4j must have even number of arguments");
+		/**
+		 * Updates the logging configuration with user-specified modifications:
+		 * <ul>
+		 *   <li>verbosity - may change how much output is printed by the CONSOLE appender</li>>
+		 *   <li>log4j - modify the log level for specific classes (without changing the log4j2.xml config file)</li>>
+		 * </ul>
+		 */
+		private void reconfigureLogging() {
+			Map<String, Level> levelByClass = log4j.entrySet().stream().collect(Collectors.toMap(
+					e -> e.getKey().getName(), // class name = logger name
+					e -> Level.toLevel(e.getValue().name()))); // StandardLevel (enum) -> Level
+			Configurator.setLevel(levelByClass); // apply the user-specified changes
+
+			Level level = verbosityToLogLevel();
+
+			// find the CONSOLE appender and set its log level to match the specified verbosity
+			LoggerContext loggerContext = LoggerContext.getContext(false);
+			LoggerConfig rootConfig = loggerContext.getConfiguration().getRootLogger();
+			for (Appender appender : rootConfig.getAppenders().values()) {
+				if (appender instanceof ConsoleAppender) {
+					rootConfig.removeAppender(appender.getName());
+					rootConfig.addAppender(appender, level, null);
 				}
-				Map<Class<?>, Level> levelByClass = new HashMap<Class<?>, Level>();
-				for (int i = 0; i < log4j.length; ) {
-					String className = log4j[i++];
-					Class<?> logClass = null;
-					try {
-						logClass = Class.forName(className);
-					} catch (ClassNotFoundException e) {
-						System.err.println("Cannot find logger Class: " + className);
-						i++;
-						continue;
-					}
-					String levelS = log4j[i++];
-					Level level = Level.toLevel(levelS);
-					if (level == null) {
-						LOG.error("cannot parse class/level: " + className + ":" + levelS);
-					} else {
-						levelByClass.put(logClass, level);
-						Logger.getLogger(logClass).setLevel(level);
-					}
-				}
+			}
+			// we may need to change the ROOT logger if it is stricter than the user-specified verbosity
+			if (rootConfig.getLevel().isMoreSpecificThan(level)) {
+				rootConfig.setLevel(level);
+			}
+			loggerContext.updateLoggers(); // apply the changes
+		}
+
+		private Level verbosityToLogLevel() {
+			switch (verbosity.length) {
+				case 0:  return Level.WARN;  // WARN, ERROR and FATAL messages are always printed to the console
+				case 1:  return Level.INFO;  // -v
+				case 2:  return Level.DEBUG; // -vv
+				default: return Level.TRACE; // -vvv (or more)
 			}
 		}
 	}

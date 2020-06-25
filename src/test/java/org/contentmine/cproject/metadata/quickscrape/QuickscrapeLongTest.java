@@ -9,8 +9,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.CMineFixtures;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
@@ -28,12 +28,8 @@ import com.google.common.collect.Multiset;
 
 public class QuickscrapeLongTest {
 
-	public static final Logger LOG = Logger.getLogger(QuickscrapeLongTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	public static final Logger LOG = LogManager.getLogger(QuickscrapeLongTest.class);
+@Test
 		// SHOWCASE
 	@Ignore // until we have some HTML files
 		public void testCreateWriteQuickscrapeCSV() throws IOException {

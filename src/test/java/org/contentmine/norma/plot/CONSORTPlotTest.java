@@ -2,8 +2,8 @@ package org.contentmine.norma.plot;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.norma.Norma;
 import org.contentmine.norma.NormaFixtures;
@@ -12,13 +12,8 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 public class CONSORTPlotTest {
-	private static final Logger LOG = Logger.getLogger(CONSORTPlotTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(CONSORTPlotTest.class);
+@Test
 	@Ignore // as PDF converter is broken
 	public void testPDF2SVG() {
 		String project = "consort";

@@ -2,8 +2,8 @@ package org.contentmine.ami.tools.download.biorxiv;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.download.AbstractDownloader;
 import org.contentmine.ami.tools.download.HitList;
 import org.contentmine.ami.tools.download.QueryManager.QuerySyntax;
@@ -19,12 +19,8 @@ import nu.xom.Element;
 
 public abstract class CSHRxivDownloader extends AbstractDownloader {
 
-	private static final Logger LOG = Logger.getLogger(CSHRxivDownloader.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	protected static final String ARTICLE = "article";
+	private static final Logger LOG = LogManager.getLogger(CSHRxivDownloader.class);
+protected static final String ARTICLE = "article";
 	protected static final String CONTENT = "content/";
 	protected static final String HIGHWIRE_CITE_EXTRAS = "highwire-cite-extras";
 	static final String CITE_EXTRAS_DIV = ".//*[local-name()='"+HtmlDiv.TAG+"' and @class='" + HIGHWIRE_CITE_EXTRAS + "']";

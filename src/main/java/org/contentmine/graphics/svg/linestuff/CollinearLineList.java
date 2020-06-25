@@ -1,7 +1,7 @@
 package org.contentmine.graphics.svg.linestuff;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGLine.LineDirection;
 
 /** lines (strictly segments) all falling on a common (axial) line.
@@ -14,12 +14,8 @@ import org.contentmine.graphics.svg.SVGLine.LineDirection;
  *
  */
 public class CollinearLineList extends AxialLineList {
-	private static final Logger LOG = Logger.getLogger(CollinearLineList.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public CollinearLineList(LineDirection direction) {
+	private static final Logger LOG = LogManager.getLogger(CollinearLineList.class);
+public CollinearLineList(LineDirection direction) {
 		super(direction);
 	}
 

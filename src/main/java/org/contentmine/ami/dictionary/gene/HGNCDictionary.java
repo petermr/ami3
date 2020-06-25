@@ -12,8 +12,8 @@ import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
 import org.contentmine.ami.dictionary.DictionaryTerm;
 import org.contentmine.cproject.util.CMineUtil;
@@ -35,12 +35,8 @@ import com.google.gson.stream.JsonWriter;
 public class HGNCDictionary extends DefaultAMIDictionary {
 
 	private static final String HGNC = "hgnc";
-	private static final Logger LOG = Logger.getLogger(HGNCDictionary.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private final static File HGNC_DIR = new File(GENE_DIR, HGNC);
+	private static final Logger LOG = LogManager.getLogger(HGNCDictionary.class);
+private final static File HGNC_DIR = new File(GENE_DIR, HGNC);
 	private final static File HGNC_JSON_FILE = new File(HGNC_DIR, "hgnc_complete_set.json");
 	private final static File HGNC_JSON_FILE1 = new File(HGNC_DIR, "hgnc_complete_set_readable.json");
 	private final static File HGNC_XML_FILE = new File(HGNC_DIR, "hgnc.xml");

@@ -3,17 +3,13 @@ package org.contentmine.norma.pdf;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.pdfbox.pdmodel.PDDocument;
 
 public class PDFSplitter {
-	private static final Logger LOG = Logger.getLogger(PDFSplitter.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private PDDocument document;
+	private static final Logger LOG = LogManager.getLogger(PDFSplitter.class);
+private PDDocument document;
 	private int noOfPages;
 	private File file;
 	private String fileRoot;

@@ -7,8 +7,8 @@ import java.util.Map.Entry;
 import java.util.Set;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AbstractAMITest;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -116,11 +116,8 @@ import com.google.gson.JsonParser;
  *
  */
 public class CORD19Test extends AbstractAMITest {
-	private static final Logger LOG = Logger.getLogger(CORD19Test.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public static File PROJECTS = new File("/Users/pm286/projects");
+	private static final Logger LOG = LogManager.getLogger(CORD19Test.class);
+public static File PROJECTS = new File("/Users/pm286/projects");
 	public static File OPEN_VIRUS = new File(PROJECTS, "openVirus");
 	public static File CORD19 = new File(OPEN_VIRUS, "cord19");
 	public static File BIORXIV_MEDRXIV = new File(CORD19, "biorxiv_medrxiv");

@@ -1,7 +1,7 @@
 package org.contentmine.ami.tools;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMIGrobidTool;
 import org.contentmine.ami.tools.AMIOCRTool;
 import org.contentmine.norma.pdf.GrobidRunner;
@@ -19,13 +19,9 @@ import static org.junit.Assert.*;
  * @author pm286
  */
 public class AMIGROBIDTest {
-	private static final Logger LOG = Logger.getLogger(AMIGROBIDTest.class);
+	private static final Logger LOG = LogManager.getLogger(AMIGROBIDTest.class);
 
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/**
+/**
 	 * convert single (good) file
 	 */
 	@Test

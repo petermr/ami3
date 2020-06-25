@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.AbstractCMElement;
@@ -30,13 +30,8 @@ import org.junit.Test;
 public class Path2ShapeConverterTest {
 
 	private static final String[] COLORS = {"red", "yellow", "green", "cyan", "blue", "magenta", "brown", "black"};
-	private static final Logger LOG = Logger.getLogger(Path2ShapeConverterTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-		
-		@Test
+	private static final Logger LOG = LogManager.getLogger(Path2ShapeConverterTest.class);
+@Test
 		public void nopathTest() {
 			List<SVGShape> shapeList = createShapeList(SVGHTMLFixtures.PATHS_NOPATH_SVG);
 			Assert.assertEquals("converted", 0, shapeList.size());

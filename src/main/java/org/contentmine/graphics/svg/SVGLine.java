@@ -23,7 +23,8 @@ import java.awt.geom.Line2D;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.EuclidConstants;
 import org.contentmine.eucl.euclid.Line2;
@@ -49,7 +50,7 @@ import nu.xom.Nodes;
  */
 public class SVGLine extends SVGShape {
 
-	private static Logger LOG = Logger.getLogger(SVGLine.class);
+	private static Logger LOG = LogManager.getLogger(SVGLine.class);
 	
 	public enum LineDirection {
 		HORIZONTAL(RealRange.Direction.HORIZONTAL),

@@ -3,17 +3,13 @@ package org.contentmine.cproject.args.log;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class CMineLogRecord {
 
-	private static final Logger LOG = Logger.getLogger(CMineLogRecord.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private List<String> values;
+	private static final Logger LOG = LogManager.getLogger(CMineLogRecord.class);
+private List<String> values;
 	private List<String> headers;
 	
 	public CMineLogRecord(final List<String> headers) {

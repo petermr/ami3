@@ -7,13 +7,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGText;
 
 public class SVG2XMLFont {
 	
-	private final static Logger LOG = Logger.getLogger(SVG2XMLFont.class);
+	private final static Logger LOG = LogManager.getLogger(SVG2XMLFont.class);
 	private static final PrintStream SYSOUT = System.out;
 	public final static String TAG = "svgFont";
 

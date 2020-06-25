@@ -7,8 +7,8 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -26,12 +26,8 @@ import com.google.gson.JsonParser;
 
 public class EPMCResultsJsonTest {
 	
-	private static final Logger LOG = Logger.getLogger(EPMCResultsJsonTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(EPMCResultsJsonTest.class);
+@Test
 	public void testReadEpmcMD() throws IOException {
 		String resultsJsonString = FileUtils.readFileToString(new File(NormaFixtures.TEST_BIBLIO_DIR, "json/eupmc_results.json"), CMineUtil.UTF8_CHARSET);
 	    JsonParser parser = new JsonParser();

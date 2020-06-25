@@ -1,7 +1,7 @@
 package org.contentmine.norma.sections;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlTable;
 
@@ -42,12 +42,8 @@ import nu.xom.Element;
  */
 public class JATSTableElement extends AbstractJATSHtmlElement implements IsBlock, IsFloat {
 
-	private static final Logger LOG = Logger.getLogger(JATSTableElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	static String TAG = "table";
+	private static final Logger LOG = LogManager.getLogger(JATSTableElement.class);
+static String TAG = "table";
 	
 	public JATSTableElement(Element element) {
 		super(element);

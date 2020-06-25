@@ -13,8 +13,8 @@ import javax.imageio.ImageIO;
 import org.apache.commons.io.FileExistsException;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AbstractAMITool;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
@@ -57,11 +57,7 @@ description = "Requires a CProject containing fulltext.pdf. (see makeProject). a
 
 @Deprecated // use AMIImageTool 
 public class AMIImageProcessor  extends AbstractAMITool {
-	private static final Logger LOG = Logger.getLogger(AMIImageProcessor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
+	private static final Logger LOG = LogManager.getLogger(AMIImageProcessor.class);
 //    @Option(names = {"-mh", "--minheight"},
 //    		arity = "0..1",
 //    		defaultValue = "100",

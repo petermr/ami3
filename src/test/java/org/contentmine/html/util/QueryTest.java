@@ -2,7 +2,8 @@ package org.contentmine.html.util;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.util.StyledText;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlFactory;
@@ -13,7 +14,7 @@ import org.junit.Test;
 
 public class QueryTest {
 
-	public final static Logger LOG = Logger.getLogger(QueryTest.class);
+	public final static Logger LOG = LogManager.getLogger(QueryTest.class);
 	@Test
 //	@Ignore // Jsoup fails on entities and namespaces 
 	

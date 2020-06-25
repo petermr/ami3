@@ -4,18 +4,14 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.norma.Norma;
 
 public class ClinicalTrialsDemo {
 
-	private static final Logger LOG = Logger.getLogger(ClinicalTrialsDemo.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static void main(String[] args) throws IOException {
+	private static final Logger LOG = LogManager.getLogger(ClinicalTrialsDemo.class);
+public static void main(String[] args) throws IOException {
 		runSingleFile();
 		runManyFiles();
 	}

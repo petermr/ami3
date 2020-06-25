@@ -2,13 +2,14 @@ package org.contentmine.ami.plugins.phylotree.nexml;
 
 import nu.xom.Attribute;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.graphics.svg.SVGLine;
 
 public class NexmlEdge extends NexmlElement {
 
-	private final static Logger LOG = Logger.getLogger(NexmlEdge.class);
+	private final static Logger LOG = LogManager.getLogger(NexmlEdge.class);
 	
 	public final static String TAG = "edge";
 	

@@ -5,8 +5,8 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -19,12 +19,8 @@ import com.google.gson.JsonObject;
 public class ManifestMap {
 
 	
-	private static final Logger LOG = Logger.getLogger(ManifestMap.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private Set<Map.Entry<String, JsonElement>> keyValueMap;
+	private static final Logger LOG = LogManager.getLogger(ManifestMap.class);
+private Set<Map.Entry<String, JsonElement>> keyValueMap;
 	private Map.Entry<String, JsonElement> singleElement;
 	private Map<String, JsonElement> elementByKeyMap;
 

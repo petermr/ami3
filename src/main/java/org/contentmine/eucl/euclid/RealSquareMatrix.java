@@ -19,8 +19,8 @@ package org.contentmine.eucl.euclid;
 import org.apache.commons.math.linear.Array2DRowRealMatrix;
 import org.apache.commons.math.linear.EigenDecompositionImpl;
 import org.apache.commons.math.linear.InvalidMatrixException;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  * square matrix class
@@ -35,7 +35,7 @@ import org.apache.log4j.Logger;
  * @author (C) P. Murray-Rust, 1996
  */
 public class RealSquareMatrix extends RealMatrix {
-    final static Logger LOG = Logger.getLogger(RealSquareMatrix.class);
+    final static Logger LOG = LogManager.getLogger(RealSquareMatrix.class);
 
     /**
      * helper class to provide types of matrix.
@@ -856,12 +856,8 @@ public class RealSquareMatrix extends RealMatrix {
 }
 /* in separate class because jvc bombs on compiling this */
 class Diagonalise implements EuclidConstants {
-	private static final Logger LOG = Logger.getLogger(Diagonalise.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-    final static double ZERO = 0.0;
+	private static final Logger LOG = LogManager.getLogger(Diagonalise.class);
+final static double ZERO = 0.0;
     final static double ONE = 1.0;
     final static double TWO = 2.0;
     final static double SQRT2 = Math.sqrt(TWO);

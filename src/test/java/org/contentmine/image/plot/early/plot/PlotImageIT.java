@@ -7,8 +7,8 @@ import java.util.List;
 
 import javax.imageio.ImageIO;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.IntegerMultisetList;
@@ -54,12 +54,8 @@ import junit.framework.Assert;
  */
 @Ignore
 public class PlotImageIT {
-	private static final Logger LOG = Logger.getLogger(PlotImageIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(PlotImageIT.class);
+@Test
 	@Ignore // long and just finds thresholds
 	public void testBrominePlotRead() {
 		String base = "brominePlot";

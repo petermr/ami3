@@ -3,7 +3,8 @@ package org.contentmine.eucl.euclid;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  * Parses common crystallographic representations of a single component of a symmetry operator
@@ -18,7 +19,7 @@ import org.apache.log4j.Logger;
  */
 public class ParsedSymop {
 
-	private final static Logger LOG = Logger.getLogger(ParsedSymop.class);
+	private final static Logger LOG = LogManager.getLogger(ParsedSymop.class);
     /** use regex
      * 
      * ([\+\-]?)(x|y|z)                 x,+y,-z

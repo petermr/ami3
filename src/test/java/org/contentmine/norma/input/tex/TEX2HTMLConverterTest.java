@@ -5,8 +5,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.norma.NormaFixtures;
 import org.contentmine.norma.input.tex.TEX2HTMLConverter;
 import org.custommonkey.xmlunit.Diff;
@@ -20,13 +20,8 @@ import org.xml.sax.SAXException;
 public class TEX2HTMLConverterTest extends XMLTestCase {
 	
 	
-	private static final Logger LOG = Logger
-			.getLogger(TEX2HTMLConverterTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-    @Test
+	private static final Logger LOG = LogManager.getLogger(TEX2HTMLConverterTest.class);
+@Test
 //    @Ignore // till we install LatexML
     public void testConvertTex() throws InterruptedException, IOException, SAXException {
         // LaTeXML includes comments about the generator which vary on each run.

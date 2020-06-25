@@ -3,14 +3,15 @@ package org.contentmine.norma.tagger;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
 
 public class TagListElement extends AbstractTElement {
 
-	private static final Logger LOG = Logger.getLogger(TagListElement.class);
+	private static final Logger LOG = LogManager.getLogger(TagListElement.class);
 	
 	public static final String TAG_DEFINITION_NAME = "name";
 	public static final String TAG = "tagList";

@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** list of Poms.
  * 
@@ -14,11 +14,8 @@ import org.apache.log4j.Logger;
  *
  */
 public class PomList {
-	private static final Logger LOG = Logger.getLogger(PomList.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private final static File NULL = new File("null");
+	private static final Logger LOG = LogManager.getLogger(PomList.class);
+private final static File NULL = new File("null");
 
 
 	private List<String> projectNames;

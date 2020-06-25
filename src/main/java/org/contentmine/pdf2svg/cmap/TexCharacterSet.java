@@ -9,7 +9,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.font.CodePointSet;
 
@@ -21,7 +22,7 @@ public class TexCharacterSet {
 	private static final String $$CARET0 = "$$CARET";
 	public final static String LATEX2UNICODE = "src/main/resources/org/contentmine/pdf2svg/codepoints/latex/unimathsymbols.txt";
 	public final static String LATEX2UNICODE_XML = "src/main/resources/org/contentmine/pdf2svg/codepoints/latex/unimathsymbols.xml";
-	private static final Logger LOG = Logger.getLogger(TexCharacterSet.class);
+	private static final Logger LOG = LogManager.getLogger(TexCharacterSet.class);
 	public static TexCharacterSet MILDE_SET = null;
 	/*
 # Unicode characters and corresponding LaTeX math mode commands

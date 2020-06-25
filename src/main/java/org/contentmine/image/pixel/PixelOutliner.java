@@ -3,7 +3,8 @@ package org.contentmine.image.pixel;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Array;
@@ -12,7 +13,7 @@ import org.contentmine.image.pixel.IntLine.ChangeDirection;
 
 public class PixelOutliner {
 
-	private static Logger LOG = Logger.getLogger(PixelOutliner.class);
+	private static Logger LOG = LogManager.getLogger(PixelOutliner.class);
 
 	private final static ChangeDirection[] DIRECTIONS = { ChangeDirection.LEFT,
 			ChangeDirection.AHEAD, ChangeDirection.RIGHT };

@@ -1,7 +1,7 @@
 package org.contentmine.eucl.xml;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import nu.xom.Attribute;
 import nu.xom.Element;
@@ -31,12 +31,8 @@ import nu.xom.ParentNode;
 public class XPathGenerator {
 
 	
-	private static final Logger LOG = Logger.getLogger(XPathGenerator.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private static final String NAME = "name";
+	private static final Logger LOG = LogManager.getLogger(XPathGenerator.class);
+private static final String NAME = "name";
 	private static final String ID = "id";
 	private static final String TAGX = "tagx";
 	private static final String[] TAGS = {ID, NAME, TAGX};

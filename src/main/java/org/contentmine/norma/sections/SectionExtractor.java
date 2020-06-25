@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlDiv;
@@ -16,12 +16,8 @@ import com.google.common.collect.HashMultiset;
 import com.google.common.collect.Multiset;
 
 public abstract class SectionExtractor {
-	private static final Logger LOG = Logger.getLogger(SectionExtractor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	protected CTree cTree;
+	private static final Logger LOG = LogManager.getLogger(SectionExtractor.class);
+protected CTree cTree;
 
 	protected abstract HtmlDiv getSingleDiv(JATSSectionTagger tagger);
 	protected String getControlledTitle(String title) {return null;}

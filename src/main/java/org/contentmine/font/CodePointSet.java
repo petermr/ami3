@@ -22,7 +22,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.pdf2svg.util.PConstants;
 
@@ -44,7 +45,7 @@ import nu.xom.Elements;
 public class CodePointSet extends Element {
 
 	public static final String TAG = "codePointSet";
-	private final static Logger LOG = Logger.getLogger(CodePointSet.class);
+	private final static Logger LOG = LogManager.getLogger(CodePointSet.class);
 
 	public static final String ENCODING = "encoding";
 	public static final String HREF =   "href";

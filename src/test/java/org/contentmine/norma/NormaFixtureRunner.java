@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
@@ -22,12 +22,8 @@ import org.junit.Assert;
 public class NormaFixtureRunner {
 
 
-private static final Logger LOG = Logger.getLogger(NormaFixtureRunner.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public NormaFixtureRunner() {
+private static final Logger LOG = LogManager.getLogger(NormaFixtureRunner.class);
+public NormaFixtureRunner() {
 	}
 	
 	private static File shtmlFile;

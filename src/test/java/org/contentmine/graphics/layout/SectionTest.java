@@ -3,8 +3,8 @@ package org.contentmine.graphics.layout;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
@@ -18,12 +18,8 @@ import org.junit.Test;
 import junit.framework.Assert;
 
 public class SectionTest {
-	private static final Logger LOG = Logger.getLogger(SectionTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(SectionTest.class);
+@Test
 	public void testCaptureMarkedSections() {
 		File targetDir = new File("target/layout/bmc");
 		SVGHTMLFixtures.cleanAndCopyDir(new File(SVGHTMLFixtures.GR_LAYOUT_DIR, "bmc/"), targetDir);

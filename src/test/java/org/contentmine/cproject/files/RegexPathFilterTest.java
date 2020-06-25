@@ -7,8 +7,8 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.filefilter.TrueFileFilter;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.CHESConstants;
 import org.contentmine.cproject.CMineFixtures;
 import org.junit.Ignore;
@@ -22,12 +22,8 @@ import junit.framework.Assert;
  *
  */
 public class RegexPathFilterTest {
-	private static final Logger LOG = Logger.getLogger(RegexPathFilterTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(RegexPathFilterTest.class);
+@Test
 	public void testRegexPathFilterCrude() {
 		RegexPathFilter regexPathFilter = new RegexPathFilter(".*project.*");
 		List<File> files = new ArrayList<File>(FileUtils.listFiles(CMineFixtures.TEST_PROJECTS_DIR, regexPathFilter, TrueFileFilter.TRUE));

@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -26,12 +26,8 @@ import nu.xom.Text;
  */
 public abstract class JATSElement extends Element {
 
-	private static final Logger LOG = Logger.getLogger(JATSElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final String CLASS = "class";
+	private static final Logger LOG = LogManager.getLogger(JATSElement.class);
+public static final String CLASS = "class";
 	public static final String ID = "id";
 	public static final String URL = "url";
 	protected CTree cTree;

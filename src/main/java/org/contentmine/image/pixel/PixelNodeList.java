@@ -8,7 +8,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.graphics.svg.SVGG;
@@ -20,7 +21,7 @@ import com.google.common.collect.Multiset.Entry;
 
 public class PixelNodeList implements Iterable<PixelNode> {
 
-	private final static Logger LOG = Logger.getLogger(PixelNodeList.class);
+	private final static Logger LOG = LogManager.getLogger(PixelNodeList.class);
 	private List<PixelNode> nodeList;
 	private SVGG svgg;
 	

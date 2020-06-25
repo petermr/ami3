@@ -3,7 +3,8 @@ package org.contentmine.svg2xml.table;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.RealRangeArray;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.AbstractCMElement;
@@ -22,7 +23,7 @@ import nu.xom.Element;
  */
 public class TableTableTest {
 
-	private final static Logger LOG = Logger.getLogger(TableTableTest.class);
+	private final static Logger LOG = LogManager.getLogger(TableTableTest.class);
 	
 	@Test
 	public void testTable0() {

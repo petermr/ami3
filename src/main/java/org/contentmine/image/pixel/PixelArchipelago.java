@@ -3,7 +3,8 @@ package org.contentmine.image.pixel;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** a collection of PixelIslands and/or PixelArchipelagos.
  * 
@@ -13,7 +14,7 @@ import org.apache.log4j.Logger;
  */
 public class PixelArchipelago {
 
-	private final static Logger LOG = Logger.getLogger(PixelArchipelago.class);
+	private final static Logger LOG = LogManager.getLogger(PixelArchipelago.class);
 	
 	private PixelIslandList islandList;
 	private List<PixelArchipelago> archipelagoList;

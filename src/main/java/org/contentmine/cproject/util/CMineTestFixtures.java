@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.ProjectSnippetsTree;
 import org.contentmine.eucl.xml.XMLUtil;
 
@@ -13,12 +13,8 @@ import nu.xom.Element;
 
 public class CMineTestFixtures {
 
-	private static final Logger LOG = Logger.getLogger(CMineTestFixtures.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	/** copies source onto target after cleaning
+	private static final Logger LOG = LogManager.getLogger(CMineTestFixtures.class);
+/** copies source onto target after cleaning
 	 * if copy fails, writes error message and returns false
 	 * 
 	 * recommended

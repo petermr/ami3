@@ -16,8 +16,8 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.pdfbox.pdmodel.PDResources;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.font.PDFont;
@@ -62,12 +62,8 @@ import nu.xom.Attribute;
  *
  */
 public abstract class AbstractPageParser extends PageDrawer {
-	private static final Logger LOG = Logger.getLogger(AbstractPageParser.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final String ILLEGAL_CHAR = "?";
+	private static final Logger LOG = LogManager.getLogger(AbstractPageParser.class);
+public static final String ILLEGAL_CHAR = "?";
 	protected static final String CODE = "code";
 	private static final String UNICODE = "unicode";
 	protected static final String MATRIX = "matrix";

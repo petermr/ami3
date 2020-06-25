@@ -5,7 +5,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.text.TextCoordinate;
@@ -25,7 +26,7 @@ import nu.xom.Element;
 
 public class TextLineTest {
 
-	private final static Logger LOG = Logger.getLogger(TextLineTest.class);
+	private final static Logger LOG = LogManager.getLogger(TextLineTest.class);
 
 	// ==========================================================================
 	

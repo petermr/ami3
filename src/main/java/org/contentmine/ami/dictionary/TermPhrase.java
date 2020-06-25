@@ -5,18 +5,14 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.wordutil.PorterStemmer;
 
 public class TermPhrase implements Comparable<TermPhrase> {
 	
-	private static final Logger LOG = Logger.getLogger(TermPhrase.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private List<String> wordList;
+	private static final Logger LOG = LogManager.getLogger(TermPhrase.class);
+private List<String> wordList;
 	
 	public static TermPhrase createTermPhrase(List<String> wordList) {
 		if (wordList == null) return null;

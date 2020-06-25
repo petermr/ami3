@@ -2,8 +2,8 @@ package org.contentmine.ami;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTreeList;
 import org.contentmine.cproject.util.CMineTestFixtures;
@@ -14,13 +14,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class WorkbenchTest {
-	private static final Logger LOG = Logger.getLogger(WorkbenchTest.class);
+	private static final Logger LOG = LogManager.getLogger(WorkbenchTest.class);
 	private File targetDir;
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Before
+@Before
 	public void setup() {
 		targetDir = CMineTestFixtures.createCleanedCopiedDirectory(
 			AMIFixtures.TEST_WORKBENCH_MOSQUITO, new File("target/workbench/mosquitos"));

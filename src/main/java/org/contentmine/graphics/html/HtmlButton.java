@@ -16,7 +16,8 @@
 
 package org.contentmine.graphics.html;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import nu.xom.Attribute;
 
@@ -29,7 +30,7 @@ import nu.xom.Attribute;
 public class HtmlButton extends HtmlElement {
 
 	private static final String ON_CLICK = "onClick";
-	private final static Logger LOG = Logger.getLogger(HtmlButton.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlButton.class);
 	public final static String TAG = "button";
 	/** constructor.
 	 * 

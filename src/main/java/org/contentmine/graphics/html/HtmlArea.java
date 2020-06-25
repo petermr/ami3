@@ -16,7 +16,8 @@
 
 package org.contentmine.graphics.html;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 /** HTML area element 
@@ -24,7 +25,7 @@ import org.apache.log4j.Logger;
  *
  */
 public class HtmlArea extends HtmlElement {
-	private final static Logger LOG = Logger.getLogger(HtmlArea.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlArea.class);
 	public final static String TAG = "area";
 
 	/** constructor.

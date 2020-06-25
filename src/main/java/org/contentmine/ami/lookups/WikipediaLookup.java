@@ -14,8 +14,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
 import org.contentmine.ami.dictionary.DictionaryTerm;
 import org.contentmine.cproject.lookup.AbstractLookup;
@@ -188,13 +188,9 @@ Mar 14 (9 days ago)
 
 view-source:https://www.wikidata.org/w/api.php?action=query&list=search&srsearch=Cryptogenic%20species&format=xml	 */
 	
-	private static final Logger LOG = Logger.getLogger(WikipediaLookup.class);
+	private static final Logger LOG = LogManager.getLogger(WikipediaLookup.class);
 	private DefaultAMIDictionary dictionary;
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private int start = 0;
+private int start = 0;
 	private int end = Integer.MAX_VALUE;
 	private int maxAlternative = 3;
 	

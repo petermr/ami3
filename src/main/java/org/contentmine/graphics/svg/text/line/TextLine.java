@@ -11,7 +11,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.euclid.Real2;
@@ -60,7 +61,7 @@ public class TextLine implements Iterable<SVGText> {
     //current guess (number of partial spaces to trigger full space)
 	private static final double SPACE_FACTOR1 = 0.2;  
 	private static final String SERIF = "Serif";
-	private final static Logger LOG = Logger.getLogger(TextLine.class);
+	private final static Logger LOG = LogManager.getLogger(TextLine.class);
 	private final static PrintStream SYSOUT = System.out;
 
 	private static final double ITALIC = -0.18;

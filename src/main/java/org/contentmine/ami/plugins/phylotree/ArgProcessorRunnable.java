@@ -1,7 +1,7 @@
 package org.contentmine.ami.plugins.phylotree;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 
 /** Runs argProcessor in thread.
@@ -13,12 +13,8 @@ import org.contentmine.cproject.args.DefaultArgProcessor;
  */
 public class ArgProcessorRunnable implements Runnable {
 
-	private final static Logger LOG = Logger.getLogger(ArgProcessorRunnable.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private String cmd;
+	private final static Logger LOG = LogManager.getLogger(ArgProcessorRunnable.class);
+private String cmd;
 	
 	private DefaultArgProcessor argProcessor;
 

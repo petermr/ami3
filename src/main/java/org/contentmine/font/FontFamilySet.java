@@ -18,7 +18,8 @@ package org.contentmine.font;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.pdf2svg.util.PConstants;
 
@@ -33,7 +34,7 @@ import nu.xom.Elements;
  */
 public class FontFamilySet {
 
-	private final static Logger LOG = Logger.getLogger(FontFamilySet.class);
+	private final static Logger LOG = LogManager.getLogger(FontFamilySet.class);
 	
 	private static final String FONT_FAMILY_SET = "fontFamilySet";
 	public static final String FONT_FAMILY_DIR = PConstants.PDF2SVG_ROOT+"/"+"fontFamilySets";

@@ -2,8 +2,8 @@ package org.contentmine.image.plot.early.chem;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGHTMLFixtures;
 import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.image.diagram.DiagramAnalyzer;
@@ -18,12 +18,8 @@ import junit.framework.Assert;
  *
  */
 public class ChemImageTest {
-	private static final Logger LOG = Logger.getLogger(ChemImageTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(ChemImageTest.class);
+@Test
 	public void testAdrenaline() {
 		String fileRoot = "adrenaline";
 		File targetDir = SVGHTMLFixtures.EARLY_CHEM_TARGET_DIR;

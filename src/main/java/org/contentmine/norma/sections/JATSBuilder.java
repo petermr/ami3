@@ -2,8 +2,8 @@ package org.contentmine.norma.sections;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import nu.xom.Element;
 
@@ -14,11 +14,8 @@ import nu.xom.Element;
  *
  */
 public class JATSBuilder {
-	private static final Logger LOG = Logger.getLogger(JATSBuilder.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	static final String ANONYMOUS = "anonymous";
+	private static final Logger LOG = LogManager.getLogger(JATSBuilder.class);
+static final String ANONYMOUS = "anonymous";
 
 	public enum BuilderType {
 		HTML,

@@ -5,7 +5,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Stack;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.euclid.Real2;
@@ -28,7 +29,7 @@ import org.contentmine.graphics.svg.util.SVGZUtil;
  */
 public class ScriptLine implements Iterable<TextLine> {
 
-	private final static Logger LOG = Logger.getLogger(ScriptLine.class);
+	private final static Logger LOG = LogManager.getLogger(ScriptLine.class);
 	
 	private static final double X_CHARACTER_TOL = 0.45;  // heuristic
 	private static final double FONT_SIZE_EPS = 0.02;  // heuristic

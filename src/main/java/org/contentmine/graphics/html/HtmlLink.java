@@ -16,7 +16,8 @@
 
 package org.contentmine.graphics.html;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import nu.xom.Attribute;
 
@@ -29,7 +30,7 @@ import nu.xom.Attribute;
 public class HtmlLink extends HtmlElement {
 	private static final String REL = "rel";
 	private static final String HREF = "href";
-	private final static Logger LOG = Logger.getLogger(HtmlLink.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlLink.class);
 	public final static String TAG = "link";
 
 	private HtmlStyle style;

@@ -2,8 +2,8 @@ package org.contentmine.ami.tools.download;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.HtmlHtml;
 
 /** the first page a user/agent sees gievn a citation link
@@ -17,12 +17,8 @@ import org.contentmine.graphics.html.HtmlHtml;
  *
  */
 public abstract class AbstractLandingPage {
-	private static final Logger LOG = Logger.getLogger(AbstractLandingPage.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/**
+	private static final Logger LOG = LogManager.getLogger(AbstractLandingPage.class);
+/**
 	<meta name="citation_public_url" content="https://www.biorxiv.org/content/10.1101/864827v1" />
 	<meta name="citation_abstract_html_url" content="https://www.biorxiv.org/content/10.1101/864827v1.abstract" />
 	<meta name="citation_full_html_url" content="https://www.biorxiv.org/content/10.1101/864827v1.full" />

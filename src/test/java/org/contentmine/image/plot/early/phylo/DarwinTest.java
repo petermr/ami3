@@ -3,8 +3,8 @@ package org.contentmine.image.plot.early.phylo;
 import java.awt.image.BufferedImage;
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGHTMLFixtures;
 import org.contentmine.graphics.svg.SVGSVG;
@@ -21,12 +21,8 @@ import org.junit.Test;
 import junit.framework.Assert;
 
 public class DarwinTest {
-	private static final Logger LOG = Logger.getLogger(DarwinTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/** original plot with sepia tones and bleed through.
+	private static final Logger LOG = LogManager.getLogger(DarwinTest.class);
+/** original plot with sepia tones and bleed through.
 	 * 
 	 */
 	@Test

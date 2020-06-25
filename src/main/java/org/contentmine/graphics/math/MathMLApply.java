@@ -16,8 +16,8 @@
 
 package org.contentmine.graphics.math;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** draws a straight line.
  * 
@@ -25,12 +25,8 @@ import org.apache.log4j.Logger;
  *
  */
 public class MathMLApply extends MathMLElement {
-	private static final Logger LOG = Logger.getLogger(MathMLApply.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public final static String TAG = "apply";
+	private static final Logger LOG = LogManager.getLogger(MathMLApply.class);
+public final static String TAG = "apply";
 
 	/** constructor
 	 */

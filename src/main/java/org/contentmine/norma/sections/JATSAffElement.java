@@ -3,8 +3,8 @@ package org.contentmine.norma.sections;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import nu.xom.Element;
 
@@ -18,12 +18,8 @@ public class JATSAffElement extends JATSElement implements IsBlock {
 			Medical Branch, Galveston, Texas, United States of America</addr-line>
 	</aff>
 	 */
-	private static final Logger LOG = Logger.getLogger(JATSAffElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public final static String TAG = "aff";
+	private static final Logger LOG = LogManager.getLogger(JATSAffElement.class);
+public final static String TAG = "aff";
 	public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {
 			JATSSpanFactory.LABEL,
 			JATSSpanFactory.SUP,

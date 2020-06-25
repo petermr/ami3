@@ -22,8 +22,8 @@ import javax.xml.transform.stream.StreamSource;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AbstractSearchArgProcessor;
 import org.contentmine.ami.plugins.regex.RegexArgProcessor;
 import org.contentmine.cproject.files.CProject;
@@ -88,13 +88,8 @@ description = {
 })
 public class AMIRegexTool extends AbstractAMISearchTool {
 
-	private static final Logger LOG = Logger.getLogger(AMIRegexTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	
-    @Option(names = {"--dummy"},
+	private static final Logger LOG = LogManager.getLogger(AMIRegexTool.class);
+@Option(names = {"--dummy"},
     		arity = "1",
             description = "dummy")
 	public String dummy = "default";
@@ -135,7 +130,7 @@ public class AMIRegexTool extends AbstractAMISearchTool {
     	} else if (processTrees()) { 
     		
     	} else {
-			DebugPrint.debugPrint(Level.ERROR, "must give cProject or cTree ie imageFile");
+			LOG.error(DebugPrint.MARKER, "must give cProject or cTree ie imageFile");
 	    }
     }
 

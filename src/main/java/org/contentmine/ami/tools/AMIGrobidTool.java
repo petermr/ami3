@@ -1,7 +1,7 @@
 package org.contentmine.ami.tools;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.DebugPrint;
@@ -42,13 +42,9 @@ public class AMIGrobidTool extends AbstractAMITool {
 
 	private static final String FULLTEXT_TEI_XML = "fulltext.tei.xml";
 
-	private static final Logger LOG = Logger.getLogger(AMIGrobidTool.class);
+	private static final Logger LOG = LogManager.getLogger(AMIGrobidTool.class);
 
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Mixin
+@Mixin
     GrobidOptions grobidOptions = new GrobidOptions();
 
 	private File pdfImagesDir;
@@ -83,7 +79,7 @@ public class AMIGrobidTool extends AbstractAMITool {
 	protected void runSpecifics() {
 		if (processTrees()) {
 		} else {
-			DebugPrint.debugPrint(Level.ERROR, "must give cProject or cTree");
+			LOG.error(DebugPrint.MARKER, "must give cProject or cTree");
 		}
 	}
 

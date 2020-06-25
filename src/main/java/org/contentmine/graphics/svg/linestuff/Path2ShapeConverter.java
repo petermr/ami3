@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Angle.Units;
 import org.contentmine.eucl.euclid.Real2;
@@ -58,10 +58,8 @@ public class Path2ShapeConverter {
 
 	public static final String Z_COORDINATE = "z";
 
-	private final static Logger LOG = Logger.getLogger(Path2ShapeConverter.class);
-	static {LOG.setLevel(Level.DEBUG);}
-	
-	private static final String MLCCLCC = "MLCCLCC";
+	private final static Logger LOG = LogManager.getLogger(Path2ShapeConverter.class);
+private static final String MLCCLCC = "MLCCLCC";
 	private static final String MLCCLCCZ = "MLCCLCCZ";
 	private static final String MLLLL = "MLLLL";
 	private static final String MLLL = "MLLL";

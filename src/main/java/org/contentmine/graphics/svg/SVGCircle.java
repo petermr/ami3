@@ -21,7 +21,8 @@ import java.awt.geom.Ellipse2D;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.euclid.Real2;
@@ -43,7 +44,7 @@ import nu.xom.Node;
  */
 public class SVGCircle extends SVGShape {
 
-	private final static Logger LOG = Logger.getLogger(SVGCircle.class);
+	private final static Logger LOG = LogManager.getLogger(SVGCircle.class);
 
 	public final static String ALL_CIRCLE_XPATH = ".//svg:circle";
 	

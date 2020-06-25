@@ -8,8 +8,8 @@ import java.util.Collections;
 import java.util.List;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.util.CSVUtil;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGElement;
@@ -34,12 +34,8 @@ import junit.framework.Assert;
  */
 //@Ignore // too long
 public class ComponentCacheTest {
-	private static final Logger LOG = Logger.getLogger(ComponentCacheTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private static final String DOT_SVG = ".svg";
+	private static final Logger LOG = LogManager.getLogger(ComponentCacheTest.class);
+private static final String DOT_SVG = ".svg";
 	private static final String TABLE_SVG = "table.svg";
 	private static final String TARGET_TABLE_TYPES_DIR = "target/table/types";
 

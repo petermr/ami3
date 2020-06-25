@@ -2,8 +2,8 @@ package org.contentmine.svg2xml.text;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.graphics.svg.SVGText;
@@ -14,13 +14,9 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class PhraseListTest {
-	private static final Logger LOG = Logger.getLogger(PhraseListTest.class);
+	private static final Logger LOG = LogManager.getLogger(PhraseListTest.class);
 
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+@Test
 	public void testCreatePhraseList() {
 		SVGText t11 = new SVGText(new Real2(25., 16.), "+");
 		t11.setFontSize(8.0);

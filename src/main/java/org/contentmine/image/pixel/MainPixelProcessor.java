@@ -3,7 +3,8 @@ package org.contentmine.image.pixel;
 import java.awt.image.BufferedImage;
 import java.io.File;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Axis.Axis2;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.image.ArgIterator;
@@ -26,7 +27,7 @@ import org.contentmine.image.processing.Thinning;
  */
 public class MainPixelProcessor {
 
-	private final static Logger LOG = Logger.getLogger(MainPixelProcessor.class);
+	private final static Logger LOG = LogManager.getLogger(MainPixelProcessor.class);
 
 	public static final String ISLAND = "-y";
 	public static final String ISLAND1 = "--island";

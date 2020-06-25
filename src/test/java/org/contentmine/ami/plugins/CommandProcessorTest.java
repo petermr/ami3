@@ -3,8 +3,8 @@ package org.contentmine.ami.plugins;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.CHESConstants;
 import org.contentmine.ami.plugins.CommandProcessor;
 import org.contentmine.cproject.testutil.DataTablesToolAnalyzer;
@@ -14,12 +14,8 @@ import org.junit.Test;
 
 public class CommandProcessorTest {
 
-	private static final Logger LOG = Logger.getLogger(CommandProcessorTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private final static String DICTIONARY_RESOURCE = CHESConstants.ORG_CM+"/"+NAConstants.AMI+"/plugins/dictionary";
+	private static final Logger LOG = LogManager.getLogger(CommandProcessorTest.class);
+private final static String DICTIONARY_RESOURCE = CHESConstants.ORG_CM+"/"+NAConstants.AMI+"/plugins/dictionary";
 	
 	
 	@Test

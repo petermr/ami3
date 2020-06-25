@@ -2,8 +2,8 @@ package org.contentmine.svg2xml.page;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.svg2xml.page.PageCropper.Units;
 
@@ -13,12 +13,8 @@ import org.contentmine.svg2xml.page.PageCropper.Units;
  *
  */
 public class BoxProcessor {
-	private static final Logger LOG = Logger.getLogger(BoxProcessor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String X0 = "x0";
+	private static final Logger LOG = LogManager.getLogger(BoxProcessor.class);
+private static final String X0 = "x0";
 	private static final String Y0 = "y0";
 	private static final String X1 = "x1";
 	private static final String Y1 = "y1";

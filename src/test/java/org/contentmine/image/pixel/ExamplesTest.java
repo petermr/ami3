@@ -4,7 +4,8 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.Iterator;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Array;
 import org.contentmine.eucl.euclid.RealArray;
@@ -33,7 +34,7 @@ public class ExamplesTest {
 
 	private ImageProcessor DEFAULT_PROCESSOR;
 
-	private final static Logger LOG = Logger.getLogger(ExamplesTest.class);
+	private final static Logger LOG = LogManager.getLogger(ExamplesTest.class);
 	private static File EXAMPLE_DIR = new File("target/examples/");
 	
 	@Before

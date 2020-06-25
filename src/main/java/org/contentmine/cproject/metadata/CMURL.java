@@ -5,17 +5,13 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class CMURL extends AbstractCM {
 
-	private static final Logger LOG = Logger.getLogger(CMURL.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/**
+	private static final Logger LOG = LogManager.getLogger(CMURL.class);
+/**
 	 * 
 http://cancerandmetabolism.biomedcentral.com/articles/10.1186/s40170-016-0148-6
 http://www.ans.org/pubs/journals/fst/a_38355

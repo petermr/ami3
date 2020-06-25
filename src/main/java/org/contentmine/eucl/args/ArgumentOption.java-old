@@ -14,8 +14,8 @@ import java.util.regex.Pattern;
 import nu.xom.Attribute;
 import nu.xom.Element;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.xmlcml.euclid.IntRange;
 import org.xmlcml.euclid.RealRange;
 import org.xmlcml.xml.XMLUtil;
@@ -54,12 +54,8 @@ public class ArgumentOption {
 
 	public static String CLASSNAME = "className";
 
-	private static final Logger LOG = Logger.getLogger(ArgumentOption.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private static Set<String> MANDATORY_ATTRIBUTES;
+	private static final Logger LOG = LogManager.getLogger(ArgumentOption.class);
+private static Set<String> MANDATORY_ATTRIBUTES;
 	static {
 		MANDATORY_ATTRIBUTES = new HashSet<String>();
 		MANDATORY_ATTRIBUTES.add(NAME);

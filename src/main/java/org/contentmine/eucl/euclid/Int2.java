@@ -25,15 +25,11 @@ import java.util.Arrays;
  * @author (C) P. Murray-Rust, 1996
  */
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 public class Int2 implements EuclidConstants {
-	private static final Logger LOG = Logger.getLogger(Int2.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-    public static final Int2 ZERO = new Int2(0, 0);
+	private static final Logger LOG = LogManager.getLogger(Int2.class);
+public static final Int2 ZERO = new Int2(0, 0);
     
 	/** the first integer value */
     int x;

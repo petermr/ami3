@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -18,12 +18,8 @@ import org.junit.Test;
 
 @Ignore
 public class LargeTableTest {
-	private static final Logger LOG = Logger.getLogger(LargeTableTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(LargeTableTest.class);
+@Test
 	/** just to recap how iteration works
 	 * 
 	 */

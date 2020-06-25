@@ -19,7 +19,8 @@ package org.contentmine.graphics.html;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
@@ -33,7 +34,7 @@ import nu.xom.Element;
 public class HtmlHead extends HtmlElement {
 	
 	private static final String NAME = "name";
-	private final static Logger LOG = Logger.getLogger(HtmlHead.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlHead.class);
 	public final static String TAG = "head";
 
 	private HtmlStyle style;

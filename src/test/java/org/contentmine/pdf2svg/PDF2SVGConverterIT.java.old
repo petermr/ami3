@@ -18,7 +18,8 @@ package org.contentmine.pdf2svg;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGPath;
 import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.graphics.svg.SVGText;
@@ -36,7 +37,7 @@ import org.junit.Test;
 public class PDF2SVGConverterIT {
 
 	public static final String PAGE6_PDF = "src/test/resources"+"/org/contentmine/pdf2svg/"+"page6.pdf";
-	public final static Logger LOG = Logger.getLogger(PDF2SVGConverterIT.class);
+	public final static Logger LOG = LogManager.getLogger(PDF2SVGConverterIT.class);
 
 	@Test
 	@Ignore

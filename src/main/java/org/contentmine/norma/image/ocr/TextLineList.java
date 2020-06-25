@@ -11,8 +11,8 @@ import java.util.function.Predicate;
 import java.util.function.UnaryOperator;
 import java.util.stream.Stream;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntRange;
 
 /** manages  a list of TextLines
@@ -21,12 +21,8 @@ import org.contentmine.eucl.euclid.IntRange;
  *
  */
 public class TextLineList implements Iterable<TextLine> {
-	private static final Logger LOG = Logger.getLogger(TextLineList.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private List<TextLine> textLineList;
+	private static final Logger LOG = LogManager.getLogger(TextLineList.class);
+private List<TextLine> textLineList;
 	
 	private List<TextLine> getOrCreateTextLineList() {
 		if (textLineList == null) {

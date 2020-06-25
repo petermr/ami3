@@ -5,17 +5,13 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class CMDOI extends AbstractCM {
 
-	private static final Logger LOG = Logger.getLogger(CMDOI.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/**
+	private static final Logger LOG = LogManager.getLogger(CMDOI.class);
+/**
 	 * 
 http://dx.doi.org/10.5539/cis.v9n2p126
 http://dx.doi.org/10.1530/edm-16-0003

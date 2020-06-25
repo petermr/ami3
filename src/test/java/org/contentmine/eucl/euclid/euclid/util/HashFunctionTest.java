@@ -1,19 +1,15 @@
 package org.contentmine.eucl.euclid.euclid.util;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.util.HashFunction;
 import org.junit.Test;
 
 import junit.framework.Assert;
 
 public class HashFunctionTest {
-	private static final Logger LOG = Logger.getLogger(HashFunctionTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(HashFunctionTest.class);
+@Test
 	public void testGetHashSHA512() {
 		String out = HashFunction.getSHA512Hash("in");
 		Assert.assertEquals(""

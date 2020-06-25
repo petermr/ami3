@@ -3,7 +3,8 @@ package org.contentmine.svg2xml;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGSVG;
@@ -13,7 +14,7 @@ import nu.xom.Builder;
 
 public class SVG2XMLFixtures {
 
-	private static final Logger LOG = Logger.getLogger(SVG2XMLFixtures.class);
+	private static final Logger LOG = LogManager.getLogger(SVG2XMLFixtures.class);
 	
 	public static final File TEST_RESOURCES_DIR = new File("src/test/resources");
 	public static final File SVG2XML_DIR = new File(TEST_RESOURCES_DIR, "org/contentmine/svg2xml/");

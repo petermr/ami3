@@ -3,20 +3,16 @@ package org.contentmine.graphics.svg.cache;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealRange;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGSVG;
 
 public class PageColumnCache extends PageComponentCache {
-	private static final Logger LOG = Logger.getLogger(PageColumnCache.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static Double YPAGE_MAX = 800.;
+	private static final Logger LOG = LogManager.getLogger(PageColumnCache.class);
+private static Double YPAGE_MAX = 800.;
 	private static Double YMIN = YPAGE_MAX - 100.; // I think this is a good start
 	private static String BLUE = "blue";
 	

@@ -2,7 +2,8 @@ package org.contentmine.svg2xml.words;
 
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.xml.XMLConstants;
 import org.contentmine.graphics.svg.SVGElement;
@@ -14,7 +15,7 @@ import nu.xom.Attribute;
 /** may be obsolete, but not checked */
 public class TypedNumber {
 
-	private final static Logger LOG = Logger.getLogger(TypedNumber.class);
+	private final static Logger LOG = LogManager.getLogger(TypedNumber.class);
 	
 	Number number = null;
 	private List<Number> numberList = null;

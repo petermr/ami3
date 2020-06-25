@@ -4,8 +4,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMITableTool;
 import org.contentmine.cproject.util.RectTabColumn;
 import org.contentmine.cproject.util.RectangularTable;
@@ -32,12 +32,8 @@ import org.contentmine.eucl.xml.XMLUtil;
  *
  */
 public class ColumnMatcher extends AbstractTTElement {
-	private static final Logger LOG = Logger.getLogger(ColumnMatcher.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static String TAG = "column";
+	private static final Logger LOG = LogManager.getLogger(ColumnMatcher.class);
+public static String TAG = "column";
 	
 	private HasQuery titleMatcher;
 	private CellMatcher cellMatcher;

@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.Real2Range;
@@ -23,10 +23,8 @@ public class ImageToHOCRConverterOLD {
 
 	private static final int NTRIES = 20;
 
-	private final static Logger LOG = Logger.getLogger(ImageToHOCRConverterOLD.class);
-	static {LOG.setLevel(Level.DEBUG);}
-
-	private static final String HOCR = "hocr";
+	private final static Logger LOG = LogManager.getLogger(ImageToHOCRConverterOLD.class);
+private static final String HOCR = "hocr";
 	private static final String USR_LOCAL_BIN_TESSERACT = "/usr/local/bin/tesseract";
 	private final static String TESS_CONFIG = "phylo";
 //	private static final String ENCODING = "-Dfile.encoding=UTF8";

@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.RealArray;
 import org.contentmine.eucl.euclid.Util;
@@ -24,7 +25,7 @@ import org.contentmine.graphics.svg.text.build.Word;
  */
 public class RawWords implements Iterable<Word> {
 
-	private final static Logger LOG = Logger.getLogger(RawWords.class);
+	private final static Logger LOG = LogManager.getLogger(RawWords.class);
 	
 	private List<Word> wordList;
 

@@ -6,8 +6,8 @@ import java.util.List;
 import nu.xom.Attribute;
 import nu.xom.ParentNode;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.graphics.svg.SVGCircle;
@@ -18,12 +18,8 @@ public class NexmlNode extends NexmlElement {
 
 	private static final double FONTSIZE = 20.0;
 
-	private final static Logger LOG = Logger.getLogger(NexmlNode.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public final static String TAG = "node";
+	private final static Logger LOG = LogManager.getLogger(NexmlNode.class);
+public final static String TAG = "node";
 	
 	private static final String LABEL = "label";
 	private static final String ROOT = "root";

@@ -19,7 +19,8 @@
  */
 package org.contentmine.eucl.stml.attribute;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.stml.STMLAttribute;
 import org.contentmine.eucl.stml.STMLConstants;
 
@@ -35,7 +36,7 @@ public class AttributeFactory implements STMLConstants {
 	private static final String SCALAR = "scalar";
 	private static final String ARRAY = "array";
 	
-	final static Logger LOG = Logger.getLogger(AttributeFactory.class);
+	final static Logger LOG = LogManager.getLogger(AttributeFactory.class);
 	
     // singleton
     /** singleton attribute factory */

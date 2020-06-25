@@ -10,8 +10,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.norma.NormaFixtures;
@@ -24,13 +24,8 @@ import org.junit.Test;
 
 public class TxtReaderTest {
 	
-	public static final Logger LOG = Logger.getLogger(TxtReaderTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-
-	@Test
+	public static final Logger LOG = LogManager.getLogger(TxtReaderTest.class);
+@Test
 	public void testReadHal2() throws Exception {
 		File file = new File(NormaFixtures.TEST_NORMA_DIR, "txt/hal2.pdf.txt");
 		List<String> lines = FileUtils.readLines(file);

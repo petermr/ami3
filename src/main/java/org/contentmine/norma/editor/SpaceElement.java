@@ -1,17 +1,13 @@
 package org.contentmine.norma.editor;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class SpaceElement extends AbstractEditorElement implements IRegexComponent {
 
 	private static final String COUNT = "count";
-	public static final Logger LOG = Logger.getLogger(SpaceElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final String TAG = "space";
+	public static final Logger LOG = LogManager.getLogger(SpaceElement.class);
+public static final String TAG = "space";
 
 	public SpaceElement() {
 		super(TAG);

@@ -2,16 +2,12 @@ package org.contentmine.eucl.euclid.test;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class TestUtil {
-	private static final Logger LOG = Logger.getLogger(TestUtil.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/** mainly used for tests with rough answers.
+	private static final Logger LOG = LogManager.getLogger(TestUtil.class);
+/** mainly used for tests with rough answers.
 	 * returns true if abs(expected - actual) / expected < maxErrorRatio
 	 * @param expected
 	 * @param actual

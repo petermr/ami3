@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.plot.timecourse;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Array;
 import org.contentmine.eucl.euclid.RealArray;
@@ -62,13 +62,8 @@ intervals around the least-square means.
  *
  */
 public class TimecourseTest {
-	private static final Logger LOG = Logger.getLogger(TimecourseTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-
-	/** Figure 2 A from Bel2014 is an effect/dose/time plot 
+	private static final Logger LOG = LogManager.getLogger(TimecourseTest.class);
+/** Figure 2 A from Bel2014 is an effect/dose/time plot
 	 * I have hacked by hand, later I will use Caches
 	 */
 	@Test

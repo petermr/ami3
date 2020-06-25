@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.graphics.AbstractCMElement;
@@ -29,13 +29,9 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class FigureTest {
-	private static final Logger LOG = Logger.getLogger(FigureTest.class);
+	private static final Logger LOG = LogManager.getLogger(FigureTest.class);
 	private static final double DISTANCE_DELTA = 1.0;
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+@Test
 	/** complete page with several typefaces and 2 separate diagrams.
 	 * 
 	 */

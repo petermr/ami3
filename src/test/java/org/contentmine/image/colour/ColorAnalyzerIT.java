@@ -6,7 +6,8 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.graphics.svg.util.ImageIOUtil;
@@ -22,7 +23,7 @@ import boofcv.struct.image.Planar;
 import georegression.metric.UtilAngle;
 
 public class ColorAnalyzerIT {
-	private static Logger LOG = Logger.getLogger(ColorAnalyzerIT.class);
+	private static Logger LOG = LogManager.getLogger(ColorAnalyzerIT.class);
 
 	@Test
 	public void testPosterizeMadagascar() throws IOException {

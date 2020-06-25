@@ -2,8 +2,8 @@ package org.contentmine.ami.plugins.simple;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMIArgProcessor;
 import org.contentmine.cproject.args.ArgIterator;
 import org.contentmine.cproject.args.ArgumentOption;
@@ -18,12 +18,8 @@ import org.contentmine.cproject.files.ResultsElement;
  */
 public class SimpleArgProcessor extends AMIArgProcessor {
 	
-	public static final Logger LOG = Logger.getLogger(SimpleArgProcessor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	protected List<String> words;
+	public static final Logger LOG = LogManager.getLogger(SimpleArgProcessor.class);
+protected List<String> words;
 
 	public SimpleArgProcessor() {
 		super();

@@ -3,20 +3,16 @@ package org.contentmine.graphics.svg.cache;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.graphics.svg.text.SVGTextLine;
 import org.contentmine.graphics.svg.text.SVGTextLineList;
 
 public class SuscriptFormatter {
 
-	private static final Logger LOG = Logger.getLogger(SuscriptFormatter.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/** merges lines to create subscripted lines
+	private static final Logger LOG = LogManager.getLogger(SuscriptFormatter.class);
+/** merges lines to create subscripted lines
 	 * removes any lines merged as suscripts
 	 * @param textCache TODO
 	 */

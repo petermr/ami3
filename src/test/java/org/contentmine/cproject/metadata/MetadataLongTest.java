@@ -7,8 +7,8 @@ import java.util.Collections;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.CMineFixtures;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
@@ -22,12 +22,8 @@ import com.google.common.collect.Multimap;
 
 public class MetadataLongTest {
 
-	private static final Logger LOG = Logger.getLogger(MetadataLongTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(MetadataLongTest.class);
+@Test
 	/** reads a getpapers project and extracts the shuffled urls.
 	 * 
 	 * shuffledUrls.txt is in cProject directory

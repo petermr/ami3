@@ -8,8 +8,8 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.CHESConstants;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.metadata.AbstractMetadata;
@@ -18,12 +18,8 @@ import org.contentmine.cproject.metadata.AbstractMetadata;
 public class CMineFixtures {
 	
 	private static final String SRC_TEST_RESOURCES = "src/test/resources";
-	public static final Logger LOG = Logger.getLogger(CMineFixtures.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public final static File TEST_CMINE_DIR = new File(SRC_TEST_RESOURCES + "/" + CHESConstants.ORG_CM +"/"+"cproject");
+	public static final Logger LOG = LogManager.getLogger(CMineFixtures.class);
+public final static File TEST_CMINE_DIR = new File(SRC_TEST_RESOURCES + "/" + CHESConstants.ORG_CM +"/"+"cproject");
 	public final static File TEST_FILES_DIR = new File(TEST_CMINE_DIR, "files");
 	public final static File TEST_OPEN_DIR = new File(TEST_CMINE_DIR, "open");
 	

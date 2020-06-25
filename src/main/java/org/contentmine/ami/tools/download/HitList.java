@@ -6,8 +6,8 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeList;
@@ -15,12 +15,8 @@ import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.norma.tagger.MetadataElement;
 
 public class HitList {
-	private static final Logger LOG = Logger.getLogger(HitList.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private List<AbstractMetadataEntry> metadataEntryList;
+	private static final Logger LOG = LogManager.getLogger(HitList.class);
+private List<AbstractMetadataEntry> metadataEntryList;
 	private String urlString;
 	private String base;
 	private URL url;

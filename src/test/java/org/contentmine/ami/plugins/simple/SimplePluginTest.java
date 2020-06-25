@@ -6,8 +6,8 @@ import java.io.IOException;
 import nu.xom.Element;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -20,12 +20,8 @@ import org.contentmine.eucl.xml.XMLUtil;
 public class SimplePluginTest {
 
 	
-	private static final Logger LOG = Logger.getLogger(SimplePluginTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(SimplePluginTest.class);
+@Test
 	public void testReadCMDir() {
 		CTree cTree = new CTree(AMIFixtures.TEST_BMC_15_1_511_CMDIR);
 		Assert.assertTrue("fulltext.xml", cTree.hasExistingFulltextXML());

@@ -4,8 +4,8 @@ import java.io.File;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AbstractAMITest;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
@@ -20,12 +20,8 @@ import org.junit.Test;
 import junit.framework.Assert;
 
 public class CorpusCacheTest extends AbstractAMITest {
-	private static final Logger LOG = Logger.getLogger(CorpusCacheTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(CorpusCacheTest.class);
+@Test
 	public void testMLCorpusCache() {
 		File corpusDir = new File(PDF2SVG2, "test/");
 		if (!corpusDir.exists()) {

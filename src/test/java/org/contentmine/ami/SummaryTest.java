@@ -3,8 +3,8 @@ package org.contentmine.ami;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.word.WordArgProcessor;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.cproject.util.CMineTestFixtures;
@@ -18,12 +18,8 @@ import org.junit.Test;
  */
 public class SummaryTest {
 
-	private static final Logger LOG = Logger.getLogger(SummaryTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(SummaryTest.class);
+@Test
 	public void testSummarizeSpecies() throws IOException {
 		String args;
 		File targetDir = new File("target/tutorial/summary");

@@ -24,8 +24,8 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntRangeComparator.End;
 
 import com.google.common.collect.Lists;
@@ -46,12 +46,8 @@ import com.google.common.collect.Multisets;
 public class IntRange implements EuclidConstants, Comparable<IntRange> {
 	
 	
-	private static final Logger LOG = Logger.getLogger(IntRange.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private final static Pattern CURLY_PATTERN1 = Pattern.compile("\\{([^,]+)\\}");
+	private static final Logger LOG = LogManager.getLogger(IntRange.class);
+private final static Pattern CURLY_PATTERN1 = Pattern.compile("\\{([^,]+)\\}");
 	private final static Pattern CURLY_PATTERN2 = Pattern.compile("\\{([^,]+),([^,]+)\\}");
 	private final static Pattern WILD_PATTERN2 = Pattern.compile("\\s*[\\(\\{]?\\s*(\\-?\\d+)[,|\\s+]\\s*(\\-?\\d+)\\s*[\\)\\}]?\\s*"); // crude
 	private final static String ANY = "*";

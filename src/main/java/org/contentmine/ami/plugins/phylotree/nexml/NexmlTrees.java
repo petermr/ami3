@@ -6,20 +6,16 @@ import java.util.List;
 import nu.xom.Attribute;
 import nu.xom.Element;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.eucl.xml.XMLUtil;
 
 public class NexmlTrees extends NexmlElement {
 
-	private final static Logger LOG = Logger.getLogger(NexmlTrees.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public final static String TAG = "trees";
+	private final static Logger LOG = LogManager.getLogger(NexmlTrees.class);
+public final static String TAG = "trees";
 	private List<NexmlTree> treeList;
 	private NexmlTree firstTree;
 

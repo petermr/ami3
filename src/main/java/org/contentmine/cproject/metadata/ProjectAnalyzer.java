@@ -9,8 +9,8 @@ import java.util.List;
 import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CContainer;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
@@ -30,12 +30,8 @@ import com.google.common.collect.Multiset;
  */
 public class ProjectAnalyzer {
 	
-	private static final Logger LOG = Logger.getLogger(ProjectAnalyzer.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
- 	private List<AbstractMetadata> metadataList;
+	private static final Logger LOG = LogManager.getLogger(ProjectAnalyzer.class);
+private List<AbstractMetadata> metadataList;
 	private CTreeList cTreeList;
 	private CProject cProject;
 	private String jsonType;

@@ -16,7 +16,8 @@
 
 package org.contentmine.graphics.html;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 /** HTML q element 
@@ -24,7 +25,7 @@ import org.apache.log4j.Logger;
  *
  */
 public class HtmlQ extends HtmlElement {
-	private final static Logger LOG = Logger.getLogger(HtmlQ.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlQ.class);
 	public final static String TAG = "q";
 
 	/** constructor.

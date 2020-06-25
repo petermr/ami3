@@ -4,20 +4,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
 
 public class JATSContribGroupElement extends JATSElement implements IsBlock {
 
-	private static final Logger LOG = Logger.getLogger(JATSContribGroupElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	/**
+	private static final Logger LOG = LogManager.getLogger(JATSContribGroupElement.class);
+/**
 			<contrib-group>
 				<contrib contrib-type="author">
 					<name>

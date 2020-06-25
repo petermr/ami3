@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.Stack;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.IntRange;
 import org.contentmine.eucl.euclid.RealArray;
@@ -49,11 +49,8 @@ public class PageLayoutAnalyzerNEW {
 	private static final String X = "X";
 	private static final String T = "T";
 
-	private static final Logger LOG = Logger.getLogger(PageLayoutAnalyzerNEW.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public final static Pattern TABLE_N = Pattern.compile("T[Aa][Bb][Ll][Ee]\\s+(\\d+)\\s+(\\(cont(inued)?\\.?\\))?(.{0,500})");
+	private static final Logger LOG = LogManager.getLogger(PageLayoutAnalyzerNEW.class);
+public final static Pattern TABLE_N = Pattern.compile("T[Aa][Bb][Ll][Ee]\\s+(\\d+)\\s+(\\(cont(inued)?\\.?\\))?(.{0,500})");
 
 
 	protected TextStructurer textStructurer;

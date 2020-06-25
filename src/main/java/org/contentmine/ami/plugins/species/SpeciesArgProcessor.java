@@ -1,7 +1,7 @@
 package org.contentmine.ami.plugins.species;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
 import org.contentmine.ami.dictionary.gene.HGNCDictionary;
 import org.contentmine.ami.dictionary.species.TaxDumpGenusDictionary;
@@ -20,13 +20,9 @@ import org.contentmine.cproject.files.ResultsElement;
 public class SpeciesArgProcessor extends AMIArgProcessor {
 	
 	
-	public static final Logger LOG = Logger.getLogger(SpeciesArgProcessor.class);
+	public static final Logger LOG = LogManager.getLogger(SpeciesArgProcessor.class);
 	private Boolean expandAbbreviations;
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public SpeciesArgProcessor() {
+public SpeciesArgProcessor() {
 		super();
 	}
 

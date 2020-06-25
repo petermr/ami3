@@ -18,7 +18,8 @@ package org.contentmine.eucl.euclid;
 
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  * Real supports various utilities for real numbers Use Double where you want a
@@ -27,7 +28,7 @@ import org.apache.log4j.Logger;
  * @author (C) P. Murray-Rust, 1996
  */
 public abstract class Real implements EuclidConstants {
-    final static Logger LOG = Logger.getLogger(Real.class);
+    final static Logger LOG = LogManager.getLogger(Real.class);
     /** standard for equality of numbers */
     static double epsx = 0.0000000001;
     /**

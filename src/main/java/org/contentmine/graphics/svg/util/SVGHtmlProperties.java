@@ -5,17 +5,13 @@ import java.io.InputStream;
 import java.util.InvalidPropertiesFormatException;
 import java.util.Properties;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.CHESConstants;
 
 public class SVGHtmlProperties extends Properties {
-	private static final Logger LOG = Logger.getLogger(SVGHtmlProperties.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public final static String SVGHTML_PROPERTIES = "/"+CHESConstants.ORG_CM + "/svghtml.properties";
+	private static final Logger LOG = LogManager.getLogger(SVGHtmlProperties.class);
+public final static String SVGHTML_PROPERTIES = "/"+CHESConstants.ORG_CM + "/svghtml.properties";
 	static {
 		LOG.debug("properties: "+SVGHTML_PROPERTIES);;
 	}

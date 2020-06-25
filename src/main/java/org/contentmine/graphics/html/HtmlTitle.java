@@ -16,7 +16,8 @@
 
 package org.contentmine.graphics.html;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** 
  <thead>
@@ -31,7 +32,7 @@ import org.apache.log4j.Logger;
  */
 public class HtmlTitle extends HtmlElement {
 	@SuppressWarnings("unused")
-	private final static Logger LOG = Logger.getLogger(HtmlTitle.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlTitle.class);
 	public final static String TAG = "title";
 
 	/** constructor.

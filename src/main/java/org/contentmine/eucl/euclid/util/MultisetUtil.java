@@ -10,8 +10,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -33,12 +33,8 @@ import nu.xom.Node;
  *
  */
 public class MultisetUtil<T extends Object> {
-	private static final Logger LOG = Logger.getLogger(MultisetUtil.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static <T> Iterable<Entry<T>> getEntriesSortedByValue(Multiset<T> set) {
+	private static final Logger LOG = LogManager.getLogger(MultisetUtil.class);
+public static <T> Iterable<Entry<T>> getEntriesSortedByValue(Multiset<T> set) {
 		return  ImmutableSortedMultiset.copyOf(set).entrySet();		
 	}
 	

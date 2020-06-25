@@ -3,8 +3,8 @@ package org.contentmine.norma.pubstyle.ieee;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.norma.NormaFixtureRunner;
 import org.contentmine.norma.NormaFixtures;
 import org.junit.Ignore;
@@ -13,11 +13,8 @@ import org.junit.Test;
 @Ignore // closed access
 public class IEEETest {
 	
-	private static final Logger LOG = Logger.getLogger(IEEETest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	static String PUB0 = "ieee";
+	private static final Logger LOG = LogManager.getLogger(IEEETest.class);
+static String PUB0 = "ieee";
 	static String PUB = "ieee";
 	static String PUB1 = PUB+"/clean";
 	static File TARGET = new File(NormaFixtures.TARGET_PUBSTYLE_DIR, PUB);

@@ -3,8 +3,8 @@ package org.contentmine.ami.tools.download.redalyc;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.download.AbstractDownloader;
 import org.contentmine.ami.tools.download.HitList;
 import org.contentmine.ami.tools.download.QueryManager.QuerySyntax;
@@ -32,11 +32,8 @@ public class RedalycDownloader extends AbstractDownloader {
 	private static final String HIGHWIRE_CITE_EXTRAS = "highwire-cite-extras";
 	static final String CITE_EXTRAS_DIV = ".//*[local-name()='"+HtmlDiv.TAG+"' and @class='" + HIGHWIRE_CITE_EXTRAS + "']";
 
-	static final Logger LOG = Logger.getLogger(RedalycDownloader.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final String HIGHWIRE_SEARCH_RESULTS_LIST = "highwire-search-results-list";
+	static final Logger LOG = LogManager.getLogger(RedalycDownloader.class);
+private static final String HIGHWIRE_SEARCH_RESULTS_LIST = "highwire-search-results-list";
 	
 	public static final String REDALYC_HOST = "www.redalyc.org";
 	public static final String REDALYC_BASE = HTTPS + P2H + REDALYC_HOST;

@@ -13,7 +13,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.Real;
@@ -58,7 +59,7 @@ import com.google.common.collect.Multiset.Entry;
  */
 public class TextStructurer {
 
-	private static final Logger LOG = Logger.getLogger(TextStructurer.class);
+	private static final Logger LOG = LogManager.getLogger(TextStructurer.class);
 
 	/** 
 	 * Used for splitting between lineGroups

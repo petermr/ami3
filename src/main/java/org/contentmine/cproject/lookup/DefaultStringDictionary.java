@@ -7,20 +7,16 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
 
 public class DefaultStringDictionary {
 
-	private static final Logger LOG = Logger.getLogger(DefaultStringDictionary.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	protected String title;
+	private static final Logger LOG = LogManager.getLogger(DefaultStringDictionary.class);
+protected String title;
 	protected Map<String, List<List<String>>> trailingWordsByLeadWord;
 	
 	

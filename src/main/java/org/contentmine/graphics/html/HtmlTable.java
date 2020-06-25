@@ -20,7 +20,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.util.HtmlUtil;
@@ -62,7 +63,7 @@ import nu.xom.Text;
 </table>
  */
 public class HtmlTable extends HtmlElement {
-	private final static Logger LOG = Logger.getLogger(HtmlTable.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlTable.class);
 	public final static String TAG = "table";
 	public final static String ALL_TABLE_XPATH = ".//h:table";
 

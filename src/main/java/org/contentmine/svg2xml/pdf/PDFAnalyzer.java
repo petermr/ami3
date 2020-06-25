@@ -16,8 +16,8 @@ import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.svg.SVGSVG;
@@ -45,10 +45,8 @@ import com.google.common.collect.Multimap;
 
 public class PDFAnalyzer {
 
-	private final static Logger LOG = Logger.getLogger(PDFAnalyzer.class);
-	static {LOG.setLevel(Level.DEBUG);}
-	
-	final static PrintStream SYSOUT = System.out;
+	private final static Logger LOG = LogManager.getLogger(PDFAnalyzer.class);
+final static PrintStream SYSOUT = System.out;
 	public static final String Z_CHUNK = "z_";
 	
 	private PDFAnalyzerIO pdfIo;

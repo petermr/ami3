@@ -5,7 +5,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** "flattens" numbers and dates in text to canonical forms.
  * Used for comparing strings which differ only be nunbers ands dates
@@ -15,7 +16,7 @@ import org.apache.log4j.Logger;
  */
 public class TextFlattener {
 
-	private final static Logger LOG = Logger.getLogger(TextFlattener.class);
+	private final static Logger LOG = LogManager.getLogger(TextFlattener.class);
 	
 	public final static String META = "\\(){}[]?-+*|&^.$\"\'#";
 	

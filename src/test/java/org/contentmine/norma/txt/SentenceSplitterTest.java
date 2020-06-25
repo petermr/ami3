@@ -3,8 +3,8 @@ package org.contentmine.norma.txt;
 import java.util.List;
 
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.norma.txt.SentenceSplitter;
 import org.junit.Assert;
 import org.junit.Test;
@@ -12,13 +12,9 @@ import org.junit.Test;
 public class SentenceSplitterTest {
 
 	;
-	private static final Logger LOG = Logger.getLogger(SentenceSplitterTest.class);
+	private static final Logger LOG = LogManager.getLogger(SentenceSplitterTest.class);
 
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+@Test
 	public void testSplit() {
 		String test = ""
 				+ "Hello World! And hello.\n"

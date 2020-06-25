@@ -12,8 +12,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeList;
@@ -62,12 +62,8 @@ public class JATSSectionTagger implements HtmlTagger {
 	}
 
 	private static final String TAG = "tag";
-	private static final Logger LOG = Logger.getLogger(JATSSectionTagger.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public enum SectionType {
+	private static final Logger LOG = LogManager.getLogger(JATSSectionTagger.class);
+public enum SectionType {
 		HTML,
 		XML
 	}

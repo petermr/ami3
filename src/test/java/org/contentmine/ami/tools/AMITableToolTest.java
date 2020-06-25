@@ -2,18 +2,14 @@ package org.contentmine.ami.tools;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Ignore;
 import org.junit.Test;
 
 public class AMITableToolTest extends AbstractAMITest {
-	private static final Logger LOG = Logger.getLogger(AMITableToolTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(AMITableToolTest.class);
+@Test
 	@Ignore // phytomedchem.xml not found (See CEVOpen)
 	public void testSummaryTableOil() {
 		File dir = OIL5;

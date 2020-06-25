@@ -1,7 +1,7 @@
 package org.contentmine.norma;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** manages convenience methods for (chained) Norma operations.
  * 
@@ -9,12 +9,8 @@ import org.apache.log4j.Logger;
  *
  */
 public class NormaRunner {
-	private static final Logger LOG = Logger.getLogger(NormaRunner.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public NormaRunner() {
+	private static final Logger LOG = LogManager.getLogger(NormaRunner.class);
+public NormaRunner() {
 		
 	}
 // OBSOLETE

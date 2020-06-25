@@ -3,8 +3,8 @@ package org.contentmine.image.pixel;
 import java.io.File;
 import java.util.Stack;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGSVG;
 /** a ring of pixels around another ring or point.
  * 
@@ -12,12 +12,8 @@ import org.contentmine.graphics.svg.SVGSVG;
  *
  */
 public class PixelRing extends PixelList {
-	private static final Logger LOG = Logger.getLogger(PixelRing.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public PixelRing() {
+	private static final Logger LOG = LogManager.getLogger(PixelRing.class);
+public PixelRing() {
 	}
 	
 	public PixelRing(PixelList pixelList) {

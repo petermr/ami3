@@ -5,8 +5,8 @@ import java.net.URL;
 import java.text.Normalizer.Form;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.xml.serialize.OutputFormat;
 import org.contentmine.cproject.lookup.AbstractLookup;
 
@@ -15,12 +15,8 @@ public class RRIDLookup extends AbstractLookup {
 	
 	private static final String HTTPS_SCICRUNCH_ORG_RESOURCES_ANTIBODIES_SEARCH_Q = "https://scicrunch.org/resources/Antibodies/search?q=";
 	private static final String HTTPS_SCICRUNCH_ORG_RESOLVER = "https://scicrunch.org/resolver/";
-	private static final Logger LOG = Logger.getLogger(RRIDLookup.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public RRIDLookup() {
+	private static final Logger LOG = LogManager.getLogger(RRIDLookup.class);
+public RRIDLookup() {
 	}
 
 	/*

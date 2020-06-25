@@ -11,7 +11,8 @@ import java.util.List;
 import javax.imageio.IIOException;
 import javax.imageio.ImageIO;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.IntRange;
@@ -36,7 +37,7 @@ import com.google.common.collect.Multimap;
 
 public class PixelIslandTest {
 
-	private final static Logger LOG = Logger.getLogger(PixelIslandTest.class);
+	private final static Logger LOG = LogManager.getLogger(PixelIslandTest.class);
 
 	private static final int MAX_PIXEL_ITER = 20;
 	private static final double DP_EPSILON = 1.5;

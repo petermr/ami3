@@ -9,8 +9,8 @@ import java.util.List;
 import org.apache.commons.io.FileExistsException;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGSVG;
 
 /** dummy class to enable new PDF2SVG to be slotted in.
@@ -21,14 +21,10 @@ import org.contentmine.graphics.svg.SVGSVG;
  *
  */
 public class PDF2SVGConverterWrapper {
-	private static final Logger LOG = Logger.getLogger(PDF2SVGConverterWrapper.class);
+	private static final Logger LOG = LogManager.getLogger(PDF2SVGConverterWrapper.class);
 	private PDF2SVGConverter converter;
 	
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public PDF2SVGConverterWrapper() {
+public PDF2SVGConverterWrapper() {
 		converter = new PDF2SVGConverter();
 	}
 

@@ -2,8 +2,8 @@ package org.contentmine.norma.image.ocr;
 
 import java.awt.image.BufferedImage;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.IntRange;
@@ -26,12 +26,8 @@ import org.contentmine.graphics.svg.SVGText;
 public class CharBox {
 
 	
-	private static final Logger LOG = Logger.getLogger(CharBox.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private Int2 bboxSize;
+	private static final Logger LOG = LogManager.getLogger(CharBox.class);
+private Int2 bboxSize;
 	private SVGG parentG;
 	private SVGText svgText;
 	private SVGRect svgRect;

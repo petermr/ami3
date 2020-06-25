@@ -1,7 +1,7 @@
 package org.contentmine.ami.tools;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMISVGTool;
 import org.contentmine.ami.tools.AMISVGTool.TidySVG;
 import org.junit.Test;
@@ -12,12 +12,8 @@ import org.junit.Test;
  *
  */
 public class AMISVGTest {
-	private static final Logger LOG = Logger.getLogger(AMISVGTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(AMISVGTest.class);
+@Test
 	/** 
 	 * convert single file
 	 */

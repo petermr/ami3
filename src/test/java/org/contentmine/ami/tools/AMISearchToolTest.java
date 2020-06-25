@@ -2,8 +2,8 @@ package org.contentmine.ami.tools;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIFixtures;
 import org.contentmine.ami.tools.AMISearchTool;
 import org.contentmine.cproject.files.CProject;
@@ -12,12 +12,8 @@ import org.contentmine.norma.NAConstants;
 import org.junit.Test;
 
 public class AMISearchToolTest {
-	private static final Logger LOG = Logger.getLogger(AMISearchToolTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	static File TIGR2ESS = new File("/Users/pm286/workspace/Tigr2essDistrib/tigr2ess");
+	private static final Logger LOG = LogManager.getLogger(AMISearchToolTest.class);
+static File TIGR2ESS = new File("/Users/pm286/workspace/Tigr2essDistrib/tigr2ess");
 	private static final File DICTIONARY_EXAMPLES = new File(TIGR2ESS, "dictionaries/examples/");
 	static File OSANCTUM200 = new File(TIGR2ESS, "osanctum200");
 	static File OSANCTUM2000 = new File(TIGR2ESS, "scratch/ocimum2019027");

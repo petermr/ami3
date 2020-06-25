@@ -1,17 +1,13 @@
 package org.contentmine.graphics.svg.pubstyle;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import nu.xom.Element;
 
 public class Publisher {
-	private static final Logger LOG = Logger.getLogger(Publisher.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private String doi;
+	private static final Logger LOG = LogManager.getLogger(Publisher.class);
+private String doi;
 	private String pubstyle;
 	private String name;
 

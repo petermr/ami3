@@ -3,8 +3,8 @@ package org.contentmine.norma.table;
 import java.io.File;
 import java.io.FileOutputStream;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlBody;
 import org.contentmine.graphics.html.HtmlElement;
@@ -15,13 +15,9 @@ import org.contentmine.graphics.svg.text.structure.TextStructurer;
 import org.contentmine.svg2xml.table.TableContentCreator;
 
 public class SVGTable2HTMLConverter {
-	private static final Logger LOG = Logger.getLogger(SVGTable2HTMLConverter.class);
+	private static final Logger LOG = LogManager.getLogger(SVGTable2HTMLConverter.class);
 
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private File inputFile;
+private File inputFile;
 	private File outputFile;
 	private TableContentCreator tableContentCreator;
 	private File outputDir;

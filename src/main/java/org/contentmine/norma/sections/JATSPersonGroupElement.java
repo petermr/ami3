@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
@@ -26,12 +26,8 @@ import nu.xom.Element;
  */
 public class JATSPersonGroupElement extends JATSElement implements IsBlock {
 
-	private static final Logger LOG = Logger.getLogger(JATSPersonGroupElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	final static String TAG = "person-group";
+	private static final Logger LOG = LogManager.getLogger(JATSPersonGroupElement.class);
+final static String TAG = "person-group";
 
 	public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {
 			JATSDivFactory.NAME,

@@ -22,7 +22,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLConstants;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlElement.Target;
@@ -37,7 +38,7 @@ import nu.xom.Elements;
  *
  */
 public class HtmlMenuSystem {
-	private static Logger LOG = Logger.getLogger(HtmlMenuSystem.class);
+	private static Logger LOG = LogManager.getLogger(HtmlMenuSystem.class);
 
 	public final static String DEFAULT_HTML_SUFFIX = "html";
 	public final static String DEFAULT_MENU_ROOT = "menu";

@@ -6,18 +6,14 @@ import java.awt.Graphics2D;
 import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class SVG2XMLFontIT {
-	private static final Logger LOG = Logger.getLogger(SVG2XMLFontIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(SVG2XMLFontIT.class);
+@Test
 		/**
 		 * list a few common fonts and metrics.
 		 * not sure I believe all of them.

@@ -12,8 +12,8 @@ import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.diagramAnalyzer.PhyloTreePixelAnalyzer;
 import org.contentmine.ami.plugins.phylotree.nexml.NexmlElement;
 import org.contentmine.ami.plugins.phylotree.nexml.NexmlNEXML;
@@ -39,14 +39,8 @@ import org.contentmine.norma.util.CommandRunner;
  */
 public class PhyloCore {
 
-	public static final Logger LOG = Logger.getLogger(PhyloCore.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	
-
-	private PhyloTreeArgProcessor argProcessor;
+	public static final Logger LOG = LogManager.getLogger(PhyloCore.class);
+private PhyloTreeArgProcessor argProcessor;
 	private String hocrHtmlFilename;
 	private HOCRReaderOLD hocrReader;
 	private String hocrSvgFilename;

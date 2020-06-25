@@ -5,8 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGElement;
@@ -25,12 +25,8 @@ import org.junit.Test;
 
 public class FlowStructurerTest {
 	
-	public static final Logger LOG = Logger.getLogger(FlowStructurerTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String AMA_FIG_1_SVG = "AMA_Dobson.fig.1.svg";
+	public static final Logger LOG = LogManager.getLogger(FlowStructurerTest.class);
+private static final String AMA_FIG_1_SVG = "AMA_Dobson.fig.1.svg";
 	private static final String LANCETMICRO_SVG = "LANCETMicro.svg";
 	private static final String LANCETMINI0_SVG = "LANCETMini0.svg";
 	private static final String LANCETMINI_SVG = "LANCETMini.svg";

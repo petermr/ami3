@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Axis.Axis2;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.Real2;
@@ -19,12 +19,8 @@ import org.contentmine.eucl.euclid.RealArray;
  *
  */
 public class LocalSummitList implements Iterable<PixelRingList> {
-	private static final Logger LOG = Logger.getLogger(LocalSummitList.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private List<PixelRingList> prlList;
+	private static final Logger LOG = LogManager.getLogger(LocalSummitList.class);
+private List<PixelRingList> prlList;
 	private PixelRingList localSummitList;
 	private Real2Array centreArray;
 	private RealArithmeticProgression xArithProg;

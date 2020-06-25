@@ -5,8 +5,8 @@ import java.util.List;
 
 import nu.xom.Element;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.Transform2;
 import org.contentmine.eucl.euclid.Vector2;
@@ -23,12 +23,8 @@ Branch --> Subtree Length
 
 public class NWKBranchSet {
 	
-	private static final Logger LOG = Logger.getLogger(NWKBranchSet.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-   private List<NWKBranch> branchList;
+	private static final Logger LOG = LogManager.getLogger(NWKBranchSet.class);
+private List<NWKBranch> branchList;
 
 	public NWKBranchSet(String s) {
 		

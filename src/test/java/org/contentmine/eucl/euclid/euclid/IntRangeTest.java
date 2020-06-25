@@ -19,8 +19,8 @@ package org.contentmine.eucl.euclid.euclid;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.IntRange;
 import org.junit.Assert;
@@ -34,12 +34,8 @@ import org.junit.Test;
  * 
  */
 public class IntRangeTest {
-	private static final Logger LOG = Logger.getLogger(IntRangeTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	IntRange i0;
+	private static final Logger LOG = LogManager.getLogger(IntRangeTest.class);
+IntRange i0;
 	IntRange i1;
 	IntRange i2;
 

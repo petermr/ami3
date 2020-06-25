@@ -8,8 +8,8 @@ import java.util.Set;
 
 import org.apache.commons.lang3.tuple.MutablePair;
 import org.apache.commons.lang3.tuple.Pair;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGConstants;
 import org.contentmine.graphics.svg.SVGText;
 
@@ -24,13 +24,7 @@ import nu.xom.Element;
  *
  */
 public class AttributeComparer {
-	private static final Logger LOG = Logger.getLogger(AttributeComparer.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-
-
+	private static final Logger LOG = LogManager.getLogger(AttributeComparer.class);
 public static String[] FONT = {
     "font",
     "font-family",

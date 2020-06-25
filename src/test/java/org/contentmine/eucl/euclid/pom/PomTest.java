@@ -4,8 +4,8 @@ import java.io.File;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.EuclidTestFixtures;
 import org.contentmine.eucl.pom.MvnProject;
 import org.contentmine.eucl.pom.Pom;
@@ -14,12 +14,8 @@ import org.junit.Test;
 
 
 public class PomTest {
-	private static final Logger LOG = Logger.getLogger(PomTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(PomTest.class);
+@Test
 	public void testCreatePom() {
 		File file = new File(EuclidTestFixtures.POM_DIR, "euclid/pom.xml");
 		Pom pom = new Pom(file);

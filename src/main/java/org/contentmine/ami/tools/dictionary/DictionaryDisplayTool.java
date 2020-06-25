@@ -15,8 +15,8 @@ import java.util.Collections;
 import java.util.List;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AbstractAMIDictTool;
 import org.contentmine.cproject.files.DebugPrint;
 import org.contentmine.cproject.util.CMineGlobber;
@@ -39,12 +39,8 @@ import picocli.CommandLine.Parameters;
 		})
 public class DictionaryDisplayTool extends AbstractAMIDictTool {
 
-	public static final Logger LOG = Logger.getLogger(DictionaryDisplayTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private static final int DEFAULT_MAX_ENTRIES = 3;
+	public static final Logger LOG = LogManager.getLogger(DictionaryDisplayTool.class);
+private static final int DEFAULT_MAX_ENTRIES = 3;
 	private static final String FULL = "FULL";
 	private static final String LIST = "LIST";
 
@@ -115,7 +111,7 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 		Collections.sort(files);
 		
 		if (files.size() > 0) {
-			DebugPrint.debugPrint("list all FILE dictionaries "+files.size());
+			LOG.debug(DebugPrint.MARKER, "list all FILE dictionaries "+files.size());
 			for (File file : files) {
 				listDictionaryInfo(file);
 			}
@@ -200,9 +196,9 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 				+ "(e.g. ami-search-cooccur [dictionary [dictionary ...]]");
 		if (argList.size() == 0) {
 			File parentFile = files == null || files.size() == 0 ? null : files.get(0).getParentFile();
-			DebugPrint.debugPrint("\nlist of dictionaries taken from AMI dictionary list (" + parentFile + "):\n");
+			LOG.debug(DebugPrint.MARKER,"\nlist of dictionaries taken from AMI dictionary list (" + parentFile + "):\n");
 		} else {
-			DebugPrint.debugPrint("\nlist of dictionaries taken from : "+argList+"\n");
+			LOG.debug(DebugPrint.MARKER, "\nlist of dictionaries taken from : "+argList+"\n");
 		}
 		List<File> files = this/*dictionaries*/.getDictionaries();
 		listAllDictionariesBriefly(files);
@@ -296,7 +292,7 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 	//	}
 		
 		private List<File> getDictionaries() {
-			DebugPrint.debugPrint(" * dictionaries from: "+getOrCreateExistingDictionaryTop());
+			LOG.debug(DebugPrint.MARKER, " * dictionaries from: "+getOrCreateExistingDictionaryTop());
 			// not sure we use this
 			File xmlDictionaryDir = dictionaryTop;
 			files = new CMineGlobber().setRegex(".*\\.xml").setLocation(xmlDictionaryDir).setRecurse(true).listFiles();

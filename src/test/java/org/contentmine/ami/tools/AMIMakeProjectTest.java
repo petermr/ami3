@@ -6,8 +6,8 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMIMakeProjectTool;
 import org.contentmine.ami.tools.AbstractAMITool;
 import org.contentmine.cproject.files.CProject;
@@ -25,11 +25,8 @@ import org.junit.Test;
  *
  */
 public class AMIMakeProjectTest {
-	private static final Logger LOG = Logger.getLogger(AMIMakeProjectTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final String PROJECT1 = "project1/";
+	private static final Logger LOG = LogManager.getLogger(AMIMakeProjectTest.class);
+private static final String PROJECT1 = "project1/";
 
 	@Test
 	public void testMakeProject1long() throws Exception {

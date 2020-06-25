@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 
 import picocli.CommandLine.Command;
@@ -23,12 +23,8 @@ description = "Minimal AMI Tool for editing into more powerful classes."
 )
 public class AMIDummyTool extends AbstractAMITool {
 
-	private static final Logger LOG = Logger.getLogger(AMIDummyTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	interface ToolMethod {
+	private static final Logger LOG = LogManager.getLogger(AMIDummyTool.class);
+interface ToolMethod {
 		public void runMe();
 	}
 	

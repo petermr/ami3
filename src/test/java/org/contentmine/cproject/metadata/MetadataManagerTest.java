@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.CMineFixtures;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
@@ -16,11 +16,7 @@ import org.junit.Test;
 
 public class MetadataManagerTest {
 
-	private static final Logger LOG = Logger.getLogger(MetadataManagerTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
+	private static final Logger LOG = LogManager.getLogger(MetadataManagerTest.class);
 //	private static final String GETPAPERS_NEW = "../getpapersNew";
 
 	/** EXTRACTS SINGLE COLUMN FROM TABLE AND WRITES TO NEW CSV.

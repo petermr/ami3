@@ -1,7 +1,7 @@
 package org.contentmine.norma.sections;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.HtmlCaption;
 import org.contentmine.graphics.html.HtmlElement;
 
@@ -19,12 +19,8 @@ zone for each of the nine repeated measurements
 
  */
 public class JATSCaptionElement extends JATSElement implements IsBlock {
-	private static final Logger LOG = Logger.getLogger(JATSFigElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static String TAG = "caption";
+	private static final Logger LOG = LogManager.getLogger(JATSFigElement.class);
+public static String TAG = "caption";
 
 	public JATSCaptionElement(Element element) {
 		super(element);

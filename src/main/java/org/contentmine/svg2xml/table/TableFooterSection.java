@@ -1,7 +1,7 @@
 package org.contentmine.svg2xml.table;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGTitle;
@@ -14,12 +14,8 @@ import org.contentmine.svg2xml.util.GraphPlot;
  */
 public class TableFooterSection extends TableSection {
 	static final String FOOTER_TITLE = "footer.title";
-	static final Logger LOG = Logger.getLogger(TableFooterSection.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public TableFooterSection() {
+	static final Logger LOG = LogManager.getLogger(TableFooterSection.class);
+public TableFooterSection() {
 		super(TableSectionType.FOOTER);
 	}
 	

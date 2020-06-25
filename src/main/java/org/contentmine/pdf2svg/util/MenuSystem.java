@@ -20,7 +20,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLConstants;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlA;
@@ -36,7 +37,7 @@ import nu.xom.Attribute;
 
 public class MenuSystem {
 
-	private final static Logger LOG = Logger.getLogger(MenuSystem.class);
+	private final static Logger LOG = LogManager.getLogger(MenuSystem.class);
 	
 	private static final String INDEX_HTML = "index.html";
 	private static final String MENU_HTML = "menu.html";

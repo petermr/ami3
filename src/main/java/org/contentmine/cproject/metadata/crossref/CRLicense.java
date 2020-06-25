@@ -2,8 +2,8 @@ package org.contentmine.cproject.metadata.crossref;
 
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -48,12 +48,8 @@ import com.google.gson.JsonObject;
  */
 public class CRLicense {
 
-	private static final Logger LOG = Logger.getLogger(CRLicense.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private String url;
+	private static final Logger LOG = LogManager.getLogger(CRLicense.class);
+private String url;
 	public CRLicense() {
 		
 	}

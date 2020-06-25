@@ -5,8 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.ListIterator;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.IntRange;
 import org.contentmine.eucl.euclid.RealArray;
@@ -23,12 +23,8 @@ import org.contentmine.eucl.euclid.RealRange;
 public class ArgIterator {
 
 	
-	private static final Logger LOG = Logger.getLogger(ArgIterator.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private final static char MINUS = '-';
+	private static final Logger LOG = LogManager.getLogger(ArgIterator.class);
+private final static char MINUS = '-';
 	
 	private ListIterator<String> listIterator;
 //	private RealArray doubleArray;

@@ -30,7 +30,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Transform2;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -53,7 +54,7 @@ import nu.xom.Nodes;
  */
 public class GraphicsElement extends AbstractCMElement implements SVGConstants {
 
-	private final static Logger LOG = Logger.getLogger(GraphicsElement.class);
+	private final static Logger LOG = LogManager.getLogger(GraphicsElement.class);
 
 	public static final String NONE = "none";
 	public static final String FILL = "fill";

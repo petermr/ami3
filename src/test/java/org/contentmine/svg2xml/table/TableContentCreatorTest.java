@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.svg.text.build.TextChunk;
 import org.contentmine.graphics.svg.text.line.SuscriptEditor;
@@ -17,11 +17,8 @@ import org.junit.Test;
 //@Ignore
 public class TableContentCreatorTest {
 	
-	static final Logger LOG = Logger.getLogger(TableContentCreatorTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final double IMG_XSCALE = 700.0;
+	static final Logger LOG = LogManager.getLogger(TableContentCreatorTest.class);
+private static final double IMG_XSCALE = 700.0;
 	@Test
 	/** simple rectangular Table.
 	 * No subtables or split columns

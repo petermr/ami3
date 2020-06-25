@@ -4,8 +4,8 @@ import java.io.File;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AbstractAMITest;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.metadata.AbstractMetadata.HtmlMetadataScheme;
@@ -22,12 +22,8 @@ import org.junit.Test;
  *
  */
 public class JATSBuilderTest extends AbstractAMITest {
-	private static final Logger LOG = Logger.getLogger(JATSBuilderTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private static File TESTSEARCH4 = new File(AbstractAMITest.SRC_TEST_DOWNLOAD, "testsearch4");
+	private static final Logger LOG = LogManager.getLogger(JATSBuilderTest.class);
+private static File TESTSEARCH4 = new File(AbstractAMITest.SRC_TEST_DOWNLOAD, "testsearch4");
 	private static File TESTSEARCH50 = new File(AbstractAMITest.SRC_TEST_DOWNLOAD, "testsearch50");
 	private static File T_903427 = new File(TESTSEARCH4, "10_1101_2020_01_12_903427v1");
 	

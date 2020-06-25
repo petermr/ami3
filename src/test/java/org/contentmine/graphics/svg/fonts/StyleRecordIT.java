@@ -4,8 +4,8 @@ import java.io.File;
 import java.util.Collections;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.CHESConstants;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGElement;
@@ -20,11 +20,8 @@ import com.google.common.collect.Multiset;
 import junit.framework.Assert;
 @Ignore("should be replaced by maven controls")
 public class StyleRecordIT {
-	private static final Logger LOG = Logger.getLogger(StyleRecordIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final String BAKKER_SVG_DIR = CHESConstants.SRC_TEST_TOP+"/graphics/svg/bar/BakkerVanDijkWicherts2012/svg/";
+	private static final Logger LOG = LogManager.getLogger(StyleRecordIT.class);
+private static final String BAKKER_SVG_DIR = CHESConstants.SRC_TEST_TOP+"/graphics/svg/bar/BakkerVanDijkWicherts2012/svg/";
 	@Test
 		public void testCreateStyleRecordsFromPage() {
 			File infile = new File(SVGHTMLFixtures.G_S_TEXT_DIR, "CM_pdf2svg_BMCCancer_9_page4.svg");

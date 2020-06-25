@@ -4,8 +4,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.RealRange.Direction;
 import org.contentmine.graphics.AbstractCMElement;
@@ -23,12 +23,8 @@ import junit.framework.Assert;
 
 @Ignore("This really should be in POM or CL")
 public class MoleculeBuilderIT {
-	private static final Logger LOG = Logger.getLogger(MoleculeBuilderIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(MoleculeBuilderIT.class);
+@Test
 		public void testMoleculesInBoxes() {
 	//		MoleculeBuilder moleculeBuilder = new MoleculeBuilder();
 			String dirRoot = "molecules/cypMolecules";

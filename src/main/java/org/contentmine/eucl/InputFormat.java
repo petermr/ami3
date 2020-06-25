@@ -1,7 +1,7 @@
 package org.contentmine.eucl;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** input types (not all are implemented yet)
  * 
@@ -21,12 +21,8 @@ public enum InputFormat {
 	XHTML,
 	XML;
 	
-	private static final Logger LOG = Logger.getLogger(InputFormat.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static boolean is(InputFormat type, String name) {
+	private static final Logger LOG = LogManager.getLogger(InputFormat.class);
+public static boolean is(InputFormat type, String name) {
 		return name.toLowerCase().endsWith(type.toString().toLowerCase());
 	}
 	

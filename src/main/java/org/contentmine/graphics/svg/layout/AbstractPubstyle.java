@@ -7,8 +7,8 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
@@ -23,11 +23,8 @@ import org.contentmine.graphics.svg.util.NamePattern;
  *
  */
 public abstract class AbstractPubstyle extends SVGG {
-	private static final Logger LOG = Logger.getLogger(AbstractPubstyle.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	static final String NEW_FILL = "newFill";
+	private static final Logger LOG = LogManager.getLogger(AbstractPubstyle.class);
+static final String NEW_FILL = "newFill";
 
 	private List<NamePattern> namePatternList;
 	private List<SVGText> templateTexts;

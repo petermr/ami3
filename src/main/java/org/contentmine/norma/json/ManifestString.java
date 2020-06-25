@@ -1,7 +1,7 @@
 package org.contentmine.norma.json;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** holds a string value with a key.
  *  
@@ -11,12 +11,8 @@ import org.apache.log4j.Logger;
 public class ManifestString {
 
 	
-	private static final Logger LOG = Logger.getLogger(ManifestString.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private String key;
+	private static final Logger LOG = LogManager.getLogger(ManifestString.class);
+private String key;
 	private String value;
 
 	public ManifestString(String key) {

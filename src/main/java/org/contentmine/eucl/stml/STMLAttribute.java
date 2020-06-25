@@ -16,7 +16,8 @@
 
 package org.contentmine.eucl.stml;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLConstants;
 
 import nu.xom.Attribute;
@@ -38,7 +39,7 @@ import nu.xom.Node;
  */
 public class STMLAttribute extends Attribute implements XMLConstants {
 
-    final static Logger logger = Logger.getLogger(STMLAttribute.class);
+    final static Logger logger = LogManager.getLogger(STMLAttribute.class);
 
 	public static final String CONSTANT_TO_SI = "constantToSI";
     public final static String CONVENTION = "convention";

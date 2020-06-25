@@ -5,8 +5,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealArray;
 import org.contentmine.eucl.euclid.RealRange.Direction;
@@ -27,11 +27,8 @@ import org.junit.Test;
 import com.google.common.collect.Multiset;
 
 public class RuledTest {
-	private static final Logger LOG = Logger.getLogger(RuledTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final String RULED = "ruled";
+	private static final Logger LOG = LogManager.getLogger(RuledTest.class);
+private static final String RULED = "ruled";
 	private static final File RULED_DIR = new File(SVG2XMLFixtures.TABLE_DIR, RULED);
 	private static final File RULED2001_1 = new File(RULED_DIR, "/_bmj.2001.323.1–5/tables/table1/table.svg");
 	private static final File RULED2001_1MICRO = new File(RULED_DIR, "/_bmj.2001.323.1–5/tables/table1/tablemicro.svg");

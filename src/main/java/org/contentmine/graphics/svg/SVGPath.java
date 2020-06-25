@@ -28,8 +28,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Angle.Units;
 import org.contentmine.eucl.euclid.Real2;
@@ -60,12 +60,8 @@ import nu.xom.Node;
 public class SVGPath extends SVGShape {
 
 	private static final String M_NULL = "M";
-	private static Logger LOG = Logger.getLogger(SVGPath.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final String SIGNATURE = "signature";
+	private static Logger LOG = LogManager.getLogger(SVGPath.class);
+public static final String SIGNATURE = "signature";
 	private static final String MZ = "MZ";
 	private static final String ML = "ML";
 	private static final String NOT_L = "[^L]";

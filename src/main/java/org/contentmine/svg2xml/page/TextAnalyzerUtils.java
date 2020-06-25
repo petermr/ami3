@@ -2,7 +2,8 @@ package org.contentmine.svg2xml.page;
 
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealRange;
@@ -17,7 +18,7 @@ import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
 
 public class TextAnalyzerUtils {
-	private static final Logger LOG = Logger.getLogger(TextAnalyzerUtils.class);
+	private static final Logger LOG = LogManager.getLogger(TextAnalyzerUtils.class);
 
 	public static Double getCommonLeftXCoordinate(List<SVGText> texts, double eps) {
 		Double dubble = null;

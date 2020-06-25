@@ -1,6 +1,7 @@
 package org.contentmine.image.pixel;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Axis.Axis2;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.IntArray;
@@ -10,7 +11,7 @@ import org.contentmine.graphics.svg.SVGG;
 
 public class PixelNode implements Comparable<PixelNode> {
 
-	private final static Logger LOG = Logger.getLogger(PixelNode.class);
+	private final static Logger LOG = LogManager.getLogger(PixelNode.class);
 
 	private static final String START_STRING = "<";
 	private static final String END_STRING = ">";

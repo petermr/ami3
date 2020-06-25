@@ -3,7 +3,8 @@ package org.contentmine.graphics.svg.text.line;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlSpan;
@@ -16,7 +17,7 @@ import org.contentmine.graphics.svg.util.SVGZUtil;
  */
 public class StyleSpans {
 
-	private final static Logger LOG = Logger.getLogger(StyleSpans.class);
+	private final static Logger LOG = LogManager.getLogger(StyleSpans.class);
 	public static final double EPS = 0.01;
 	
 	private List<StyleSpan> ssList;

@@ -2,16 +2,12 @@ package org.contentmine.norma.input.pdf;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class PDF2TEIConverter {
-	private static final Logger LOG = Logger.getLogger(PDF2TEIConverter.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public PDF2TEIConverter() {
+	private static final Logger LOG = LogManager.getLogger(PDF2TEIConverter.class);
+public PDF2TEIConverter() {
 		
 	}
 	

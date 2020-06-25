@@ -10,8 +10,8 @@ import java.util.List;
 import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.lookup.AbstractLookup;
 import org.contentmine.eucl.sternLibrary.string.DamerauLevenshteinAlgorithm;
 import org.contentmine.norma.NAConstants;
@@ -27,12 +27,8 @@ import com.google.common.collect.Multimap;
 public class TaxdumpLookup extends AbstractLookup {
 
 	
-	private static final Logger LOG = Logger.getLogger(TaxdumpLookup.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public enum TaxonType {
+	private static final Logger LOG = LogManager.getLogger(TaxdumpLookup.class);
+public enum TaxonType {
 		GENUS,
 		BINOMIAL,
 	}

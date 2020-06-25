@@ -3,8 +3,8 @@ package org.contentmine.ami.plugins.phylotree.nexml;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** edits Nexml Files
  * 
@@ -13,12 +13,8 @@ import org.apache.log4j.Logger;
  */
 public class NexmlEditor {
 
-	private final static Logger LOG = Logger.getLogger(NexmlEditor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private NexmlNEXML nexml;
+	private final static Logger LOG = LogManager.getLogger(NexmlEditor.class);
+private NexmlNEXML nexml;
 	private NexmlTrees trees;
 	private NexmlTree firstTree;
 	private List<NexmlNode> nodeList;

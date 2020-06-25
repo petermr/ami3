@@ -5,18 +5,15 @@ import java.util.HashMap;
 
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.norma.NAConstants;
 
 public class AMIPlugin {
 
 	
-	private static final Logger LOG = Logger.getLogger(AMIPlugin.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
+	private static final Logger LOG = LogManager.getLogger(AMIPlugin.class);
 //	public final static String VERSION = "2.0.1"; // arbitrary
 	public static final String ORG_XMLCML_AMI_PLUGIN = NAConstants.AMI_RESOURCE+ "/plugins/";
 	public static final String ORG_XMLCML_AMI_CLASSNAME = "org.contentmine.ami.plugins";

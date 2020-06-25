@@ -10,8 +10,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMIDownloadTool;
 import org.contentmine.ami.tools.AMIDownloadTool.FulltextFormat;
 import org.contentmine.cproject.files.CTree;
@@ -32,12 +32,8 @@ import nu.xom.Element;
  */
 public class FulltextManager extends AbstractSubDownloader {
 
-	private static final Logger LOG = Logger.getLogger(FulltextManager.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public FulltextManager(AbstractDownloader abstractDownloader) {
+	private static final Logger LOG = LogManager.getLogger(FulltextManager.class);
+public FulltextManager(AbstractDownloader abstractDownloader) {
 		super(abstractDownloader);
 	}
 

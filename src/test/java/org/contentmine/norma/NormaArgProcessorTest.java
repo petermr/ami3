@@ -6,8 +6,8 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.exception.ExceptionUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.args.ArgumentOption;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.cproject.files.CProject;
@@ -23,12 +23,8 @@ import org.junit.Test;
 public class NormaArgProcessorTest {
 
 	
-	private static final Logger LOG = Logger.getLogger(NormaArgProcessorTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(NormaArgProcessorTest.class);
+@Test
 	@Ignore // as this just prints help
 	public void testNoArgs() {
 		String[] args = {

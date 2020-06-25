@@ -1,7 +1,7 @@
 package org.contentmine.eucl.pom;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import nu.xom.Element;
 
@@ -11,12 +11,8 @@ import nu.xom.Element;
  *
  */
 public class MvnProject {
-	private static final Logger LOG = Logger.getLogger(MvnProject.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String GROUP_ID = "groupId";
+	private static final Logger LOG = LogManager.getLogger(MvnProject.class);
+private static final String GROUP_ID = "groupId";
 	private static final String VERSION = "version";
 	private static final String ARTIFACT_ID = "artifactId";
 	

@@ -2,8 +2,8 @@ package org.contentmine.norma.tagger;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.norma.Norma;
 import org.contentmine.norma.NormaArgProcessor;
 import org.contentmine.norma.NormaFixtures;
@@ -19,12 +19,8 @@ import org.junit.Test;
  */
 public class SectionTaggerTest {
 
-	private static final Logger LOG = Logger.getLogger(SectionTaggerTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/** iterates over two taggers.
+	private static final Logger LOG = LogManager.getLogger(SectionTaggerTest.class);
+/** iterates over two taggers.
 	 * FIXME don't know if this works
 	 */
 	@Test

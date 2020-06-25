@@ -2,19 +2,15 @@ package org.contentmine.ami.plugins.word;
 
 import nu.xom.Attribute;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.ResultElement;
 import org.contentmine.eucl.xml.XMLUtil;
 
 public class WordResultElement extends ResultElement {
 
-	private static final Logger LOG = Logger.getLogger(WordResultElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final String COUNT_ATT  = "count";
+	private static final Logger LOG = LogManager.getLogger(WordResultElement.class);
+public static final String COUNT_ATT  = "count";
 	public static final String LENGTH_ATT = "length";
 	public static final String WORD_ATT   = "word";
 

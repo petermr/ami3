@@ -3,8 +3,8 @@ package org.contentmine.norma.util;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -13,11 +13,8 @@ import com.google.gson.JsonObject;
 public class JsonUtil {
 
 	
-	private static final Logger LOG = Logger.getLogger(JsonUtil.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	/** extract an array of strings from a Json object.
+	private static final Logger LOG = LogManager.getLogger(JsonUtil.class);
+/** extract an array of strings from a Json object.
 	 * 
 	 * @param jsonObject
 	 * @param name

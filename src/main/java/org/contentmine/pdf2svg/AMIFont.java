@@ -24,7 +24,8 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.pdfbox.cos.COSArray;
 import org.apache.pdfbox.cos.COSBase;
 import org.apache.pdfbox.cos.COSDictionary;
@@ -60,7 +61,7 @@ import org.contentmine.font.NonStandardFontManager;
  */
 public class AMIFont {
 
-	private final static Logger LOG = Logger.getLogger(AMIFont.class);
+	private final static Logger LOG = LogManager.getLogger(AMIFont.class);
 	
 	private static final String SYMBOL = "Symbol";
 	public static final String N_NAME = "Name";

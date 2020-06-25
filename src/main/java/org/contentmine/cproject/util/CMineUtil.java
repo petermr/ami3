@@ -14,8 +14,8 @@ import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlHtml;
@@ -38,12 +38,8 @@ import nu.xom.Node;
  *
  */
 public class CMineUtil {
-	private static final Logger LOG = Logger.getLogger(CMineUtil.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String HTTP_DX_DOI_ORG2 = "http://dx.doi.org/";
+	private static final Logger LOG = LogManager.getLogger(CMineUtil.class);
+private static final String HTTP_DX_DOI_ORG2 = "http://dx.doi.org/";
 	private static final String HTML_START = "<";
 	private static final String PDF_START = "%PDF";
 	private static final String URL_PUNCT = "[\\/\\$\\%\\*\\(\\)\\[\\]]";

@@ -1,7 +1,7 @@
 package org.contentmine.graphics.svg.layout;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGElement;
 
 /** right column of 2 or 3
@@ -10,11 +10,8 @@ import org.contentmine.graphics.svg.SVGElement;
  *
  */
 public class SVGPubstyleRightColumnOLD extends AbstractPubstyle {
-	private static final Logger LOG = Logger.getLogger(SVGPubstyleRightColumnOLD.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public final static String SVG_CLASSNAME = "rightColumn";
+	private static final Logger LOG = LogManager.getLogger(SVGPubstyleRightColumnOLD.class);
+public final static String SVG_CLASSNAME = "rightColumn";
 
 	public SVGPubstyleRightColumnOLD() {
 		super();

@@ -12,7 +12,8 @@ import java.util.Set;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.AbstractCMElement;
@@ -63,7 +64,7 @@ import nu.xom.ParentNode;
 public class PageAnalyzer /*extends PageChunkAnalyzer*/ {
 
 
-	private static final Logger LOG = Logger.getLogger(PageAnalyzer.class);
+	private static final Logger LOG = LogManager.getLogger(PageAnalyzer.class);
 	
 	public final static Pattern PATTERN = null;
 	public final static String TITLE = "PAGE";

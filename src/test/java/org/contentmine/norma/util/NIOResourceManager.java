@@ -13,8 +13,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.norma.NAConstants;
 import org.junit.Test;
 
@@ -27,12 +27,8 @@ import org.junit.Test;
  *
  */
 public class NIOResourceManager {
-	private static final Logger LOG = Logger.getLogger(NIOResourceManager.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public NIOResourceManager() {
+	private static final Logger LOG = LogManager.getLogger(NIOResourceManager.class);
+public NIOResourceManager() {
 		
 	}
 	

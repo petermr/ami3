@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -21,12 +21,8 @@ import org.contentmine.eucl.xml.XMLUtil;
  */
 public class WikidataPlacesDictionary extends DefaultAMIDictionary {
 	
-	private static final Logger LOG = Logger.getLogger(WikidataPlacesDictionary.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private final static File WIKIPLACES_RAW_FILE = new File(PLACES_DIR, "raw.txt.xml");
+	private static final Logger LOG = LogManager.getLogger(WikidataPlacesDictionary.class);
+private final static File WIKIPLACES_RAW_FILE = new File(PLACES_DIR, "raw.txt.xml");
 	private final static File WIKIPLACES_XML_FILE = new File(PLACES_DIR, "wikiplaces.xml");
 	private String raw;
 	

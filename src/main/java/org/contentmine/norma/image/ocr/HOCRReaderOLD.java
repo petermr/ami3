@@ -15,8 +15,8 @@ import java.util.regex.Pattern;
 import javax.imageio.ImageIO;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
@@ -62,12 +62,8 @@ import nu.xom.Elements;
 public class HOCRReaderOLD extends InputReader {
 
 
-	public static final Logger LOG = Logger.getLogger(HOCRReaderOLD.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String POTENTIAL_LABEL = "potential_label";
+	public static final Logger LOG = LogManager.getLogger(HOCRReaderOLD.class);
+private static final String POTENTIAL_LABEL = "potential_label";
 
 	private static final int TESSERACT_SLEEP = 200;
 	private static final int TESSERACT_TRIES = 10;

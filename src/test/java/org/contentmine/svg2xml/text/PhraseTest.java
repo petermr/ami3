@@ -2,8 +2,8 @@ package org.contentmine.svg2xml.text;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.graphics.svg.SVGText;
 import org.contentmine.graphics.svg.text.build.Phrase;
@@ -16,12 +16,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class PhraseTest {
-	private static final Logger LOG = Logger.getLogger(PhraseTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private TextLine BERICHT_PAGE6_34_TEXTLINE = null;
+	private static final Logger LOG = LogManager.getLogger(PhraseTest.class);
+private TextLine BERICHT_PAGE6_34_TEXTLINE = null;
 
 	@Before
 	public void setup() {

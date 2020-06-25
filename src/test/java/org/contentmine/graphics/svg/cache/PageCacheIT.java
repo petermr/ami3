@@ -5,8 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeList;
@@ -33,11 +33,8 @@ import org.junit.Test;
 
 //@Ignore("This really should be in POM or CL")
 public class PageCacheIT {
-	private static final Logger LOG = Logger.getLogger(PageCacheIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final double PARALLEL_DSPLAY_X = 550.;
+	private static final Logger LOG = LogManager.getLogger(PageCacheIT.class);
+private static final double PARALLEL_DSPLAY_X = 550.;
 	boolean rightPage;
 	boolean leftPage;
 	/** a page with a page header, two tables and some text

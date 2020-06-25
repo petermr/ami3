@@ -2,8 +2,8 @@ package org.contentmine.graphics.svg.path;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGHTMLFixtures;
@@ -13,12 +13,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class LinePrimitiveTest {
-	private static final Logger LOG = Logger.getLogger(LinePrimitiveTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(LinePrimitiveTest.class);
+@Test
 	public void testLinePrimitive() {
 		AbstractCMElement svgElement = SVGElement.readAndCreateSVG(new File(SVGHTMLFixtures.G_S_PATHS_DIR, "hollowcorner.svg"));
 		SVGPath svgPath = SVGPath.extractSelfAndDescendantPaths(svgElement).get(0);

@@ -3,21 +3,16 @@ package org.contentmine.ami.tools.table;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
 import nu.xom.Node;
 
 public abstract class AbstractTTElement extends Element {
-	private static final Logger LOG = Logger.getLogger(AbstractTTElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	
-	public static final String NAME = "name";
+	private static final Logger LOG = LogManager.getLogger(AbstractTTElement.class);
+public static final String NAME = "name";
 	public static final String ID = "id";
 
 	

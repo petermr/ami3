@@ -2,21 +2,17 @@ package org.contentmine.norma.sections;
 
 import java.util.ArrayList;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.norma.sections.JATSSectionTagger.SectionTag;
 
 import nu.xom.Element;
 
 public class TagElement {
 
-	private static final Logger LOG = Logger.getLogger(TagElement.class);
+	private static final Logger LOG = LogManager.getLogger(TagElement.class);
 
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String ID = "id";
+private static final String ID = "id";
 	private static final String REGEX = "regex";
 	private static final String TITLE = "title";
 	private static final String XPATH = "xpath";

@@ -4,17 +4,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class PlantRecord {
 
-	private static final Logger LOG = Logger.getLogger(PlantRecord.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	/**
+	private static final Logger LOG = LogManager.getLogger(PlantRecord.class);
+/**
 	 * 
 	 */
 

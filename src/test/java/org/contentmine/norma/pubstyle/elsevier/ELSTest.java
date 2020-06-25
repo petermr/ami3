@@ -3,19 +3,16 @@ package org.contentmine.norma.pubstyle.elsevier;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.norma.NormaFixtureRunner;
 import org.contentmine.norma.NormaFixtures;
 import org.junit.Test;
 
 public class ELSTest {
 	
-	private static final Logger LOG = Logger.getLogger(ELSTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	static String PUB0 = "els";
+	private static final Logger LOG = LogManager.getLogger(ELSTest.class);
+static String PUB0 = "els";
 	static String PUB = "elsevier";
 	static String PUB1 = "elsevier/clean";
 	static File TARGET1 = new File(NormaFixtures.TARGET_PUBSTYLE_DIR, PUB1);

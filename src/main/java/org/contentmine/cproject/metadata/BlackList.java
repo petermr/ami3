@@ -7,17 +7,13 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class BlackList {
 
-	private static final Logger LOG = Logger.getLogger(BlackList.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private List<Pattern> omitRegexList;
+	private static final Logger LOG = LogManager.getLogger(BlackList.class);
+private List<Pattern> omitRegexList;
 	public BlackList() {
 		
 	}

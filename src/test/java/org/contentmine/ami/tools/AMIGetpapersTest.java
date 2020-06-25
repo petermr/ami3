@@ -1,7 +1,7 @@
 package org.contentmine.ami.tools;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMIGetpapersTool;
 import org.contentmine.ami.tools.AMIOCRTool;
 import org.junit.Test;
@@ -12,12 +12,8 @@ import org.junit.Test;
  *
  */
 public class AMIGetpapersTest {
-	private static final Logger LOG = Logger.getLogger(AMIGetpapersTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(AMIGetpapersTest.class);
+@Test
 	/** 
 	 * run query
 	 */

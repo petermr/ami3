@@ -6,8 +6,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.image.AnnotatedImage;
 import org.contentmine.image.ImageUtil;
 
@@ -27,12 +27,8 @@ import org.contentmine.image.ImageUtil;
  */
 
 public class ImageParameterAnalyzer {
-	private static final Logger LOG = Logger.getLogger(ImageParameterAnalyzer.ImageParameters.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-    public enum ImageParameters {
+	private static final Logger LOG = LogManager.getLogger(ImageParameterAnalyzer.ImageParameters.class);
+public enum ImageParameters {
 	    match("Directory with potential matches"),
 	  	minheight("Minimum height of image (pixels)"),
 	  	maxheight("Maximum height of image (pixels)"),

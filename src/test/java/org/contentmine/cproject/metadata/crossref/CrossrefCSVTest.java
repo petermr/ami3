@@ -3,8 +3,8 @@ package org.contentmine.cproject.metadata.crossref;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.CMineFixtures;
 import org.contentmine.cproject.util.RectTabColumn;
 import org.contentmine.cproject.util.RectangularTable;
@@ -23,12 +23,8 @@ import com.google.common.collect.Multiset;
  */
 public class CrossrefCSVTest {
 
-	private static final Logger LOG = Logger.getLogger(CrossrefCSVTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/** GET HEADERS FROM CROSSREF SPREADSHEET.
+	private static final Logger LOG = LogManager.getLogger(CrossrefCSVTest.class);
+/** GET HEADERS FROM CROSSREF SPREADSHEET.
 	 * 
 	 * @throws IOException
 	 */

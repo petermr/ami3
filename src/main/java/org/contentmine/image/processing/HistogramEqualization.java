@@ -8,7 +8,8 @@ import java.util.ArrayList;
 
 import javax.imageio.ImageIO;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.util.ImageIOUtil;
 import org.contentmine.image.ImageUtil;
  
@@ -27,7 +28,7 @@ References:
  
 public class HistogramEqualization {
 
-	private static final Logger LOG = Logger.getLogger(HistogramEqualization.class);
+	private static final Logger LOG = LogManager.getLogger(HistogramEqualization.class);
 
     private BufferedImage originalImage, equalizedImage;
 

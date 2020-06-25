@@ -10,7 +10,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.regex.Matcher;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.IntRange;
@@ -47,7 +48,7 @@ import org.contentmine.image.ImageUtil;
  */
 public class PixelIsland implements Iterable<Pixel> {
 
-	private final static Logger LOG = Logger.getLogger(PixelIsland.class);
+	private final static Logger LOG = LogManager.getLogger(PixelIsland.class);
 
 	public enum PlotType {
 		INTERNAL_RINGS,

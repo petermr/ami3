@@ -16,7 +16,8 @@
 
 package org.contentmine.graphics.html;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 /** 
@@ -24,7 +25,7 @@ import org.apache.log4j.Logger;
  */
 public class HtmlH1 extends HtmlElement {
 	
-	private final static Logger LOG = Logger.getLogger(HtmlH1.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlH1.class);
 	public final static String TAG = "h1";
 
 	/** constructor.

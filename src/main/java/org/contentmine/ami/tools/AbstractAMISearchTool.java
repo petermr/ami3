@@ -4,8 +4,8 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AbstractSearchArgProcessor;
 import org.contentmine.ami.plugins.CommandProcessor;
 import org.contentmine.ami.plugins.word.WordCollectionFactory;
@@ -30,12 +30,8 @@ description = "toplevel for all searches"
 )
 
 public abstract class AbstractAMISearchTool extends AbstractAMITool {
-	private static final Logger LOG = Logger.getLogger(AbstractAMISearchTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	// These may be required in subclasses
+	private static final Logger LOG = LogManager.getLogger(AbstractAMISearchTool.class);
+// These may be required in subclasses
 //    @Mixin DictionaryOption dictionaryOption = new DictionaryOption();
 //    @Mixin DictionaryTopOption dictionaryTopOption = new DictionaryTopOption();
 //    @Mixin DictionarySuffixOption dictionarySuffixOption = new DictionarySuffixOption();
@@ -177,7 +173,7 @@ public abstract class AbstractAMISearchTool extends AbstractAMITool {
     	} else if (oldstyle) {
     		LOG.debug("old style search command); to be changed");
 			if (cProject == null) {
-				DebugPrint.errorPrintln(Level.ERROR, "requires cProject");
+				LOG.error(DebugPrint.MARKER, "requires cProject");
 			} else if (projectExists(cProject)) {
 				processProject();
 			}

@@ -1,6 +1,7 @@
 package org.contentmine.eucl.euclid.euclid;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.RealRange;
 import org.contentmine.eucl.euclid.RealRangeList;
 import org.junit.Assert;
@@ -13,7 +14,7 @@ import org.junit.Test;
  */
 public class RealRangeListTest {
 
-	private final static Logger LOG = Logger.getLogger(RealRangeListTest.class);
+	private final static Logger LOG = LogManager.getLogger(RealRangeListTest.class);
 	
 	@Test
 	public void testAddInitialRange() {

@@ -1,6 +1,5 @@
 package org.contentmine.ami.plugins.gene;
 
-import org.apache.log4j.Level;
 import org.contentmine.ami.plugins.AMIArgProcessor;
 import org.contentmine.ami.plugins.AMISearcher;
 import org.contentmine.ami.plugins.NamedPattern;
@@ -12,11 +11,7 @@ import nu.xom.Element;
 public class GeneSearcher extends AMISearcher {
 
 	
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public GeneSearcher(AMIArgProcessor argProcessor, NamedPattern namedPattern) {
+public GeneSearcher(AMIArgProcessor argProcessor, NamedPattern namedPattern) {
 		super(argProcessor, namedPattern);
 	}
 

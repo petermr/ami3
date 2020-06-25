@@ -11,8 +11,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.Real2;
@@ -46,12 +46,8 @@ import org.contentmine.graphics.svg.util.SuperPixelArray;
  *
  */
 public class ComponentCache extends AbstractCache {
-	public static final Logger LOG = Logger.getLogger(ComponentCache.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public enum Feature {
+	public static final Logger LOG = LogManager.getLogger(ComponentCache.class);
+public enum Feature {
 		// texts
 		HORIZONTAL_TEXT_COUNT("htxt"),
 		HORIZONTAL_TEXT_STYLE_COUNT("htsty"),
@@ -395,8 +391,6 @@ public class ComponentCache extends AbstractCache {
 	}
 
 	public TextChunkCache getOrCreateTextChunkCache() {
-		Level level = LOG.getLevel();
-//		LOG.setLevel(Level.TRACE);
 		if (textChunkCache == null) {
 			LOG.trace("t0");
 			this.textChunkCache = new TextChunkCache(this);
@@ -417,7 +411,6 @@ public class ComponentCache extends AbstractCache {
 			cacheByType.put(CacheType.textchunk, this.textChunkCache);
 
 		}
-		LOG.setLevel(level);
 		return textChunkCache;
 	}
 
@@ -738,9 +731,6 @@ public class ComponentCache extends AbstractCache {
 	 * 
 	 */
 	public List<AbstractCache> getOrCreateCascadingCaches() {
-		Level level = LOG.getLevel();
-//		LOG.setLevel(Level.TRACE);
-
 		if (cascadingCacheList == null) {
 			systemTime = System.currentTimeMillis();
 			cascadingCacheList = new ArrayList<AbstractCache>();
@@ -792,7 +782,6 @@ public class ComponentCache extends AbstractCache {
 				}
 			}
 		}
-		LOG.setLevel(level);
 		return cascadingCacheList;
 	}
 

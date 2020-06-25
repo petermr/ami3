@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.euclid.Real2;
@@ -43,11 +43,8 @@ import com.google.common.collect.Multiset;
  */
 public class LineCache extends AbstractCache {
 	private static final String BLACK = "black";
-	static final Logger LOG = Logger.getLogger(LineCache.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static Double STROKE_WIDTH_FACTOR = 5.0;
+	static final Logger LOG = LogManager.getLogger(LineCache.class);
+private static Double STROKE_WIDTH_FACTOR = 5.0;
 
 	private List<SVGLine> horizontalLines/* = new ArrayList<>()*/;
 	private List<SVGLine> verticalLines/* = new ArrayList<>()*/;
@@ -572,8 +569,6 @@ public class LineCache extends AbstractCache {
 
 	/** lineBoxCache requires lineCaches first */
 	public LineBoxCache getOrCreateLineBoxCache() {
-		Level level = LOG.getLevel();
-//		LOG.setLevel(Level.TRACE);
 		if (lineBoxCache == null) {
 			lineBoxCache = new LineBoxCache();
 			getOrCreateHorizontalLineList();
@@ -586,7 +581,6 @@ public class LineCache extends AbstractCache {
 			SVGSVG.wrapAndWriteAsSVG(horizontalLines, new File("target/cache/horizontal.svg"));
 			SVGSVG.wrapAndWriteAsSVG(verticalLines, new File("target/cache/vertical.svg"));			
 		}
-		LOG.setLevel(level);
 		return lineBoxCache;
 	}
 

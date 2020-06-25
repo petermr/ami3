@@ -2,8 +2,8 @@ package org.contentmine.cproject.metadata.quickscrape;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.metadata.AbstractMetadata;
 
 public class QuickscrapeMD extends AbstractMetadata {
@@ -12,13 +12,8 @@ public class QuickscrapeMD extends AbstractMetadata {
 
 //	citation_springer_api_url x 117
 
-	static final Logger LOG = Logger.getLogger(QuickscrapeMD.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-
-	static {
+	static final Logger LOG = LogManager.getLogger(QuickscrapeMD.class);
+static {
         TERMS.add(ABSTRACT);
         TERMS.add(ABSTRACT_HTML);
         TERMS.add(AUTHOR);

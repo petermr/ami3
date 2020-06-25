@@ -7,8 +7,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.lookup.AbstractLookup;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -29,12 +29,8 @@ import nu.xom.Text;
 
 public class ResultsElement extends Element implements Iterable<ResultElement> {
 	
-	private static final Logger LOG = Logger.getLogger(ResultsElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final String TAG = "results";
+	private static final Logger LOG = LogManager.getLogger(ResultsElement.class);
+public static final String TAG = "results";
 	
 	public static final String DOCUMENTS = "documents";
 	public static final String FREQUENCIES = "frequencies";

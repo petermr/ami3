@@ -5,8 +5,8 @@ import java.io.StringReader;
 import java.nio.file.Paths;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.StopFilter;
 import org.apache.lucene.analysis.TokenStream;
@@ -54,12 +54,8 @@ import org.junit.Test;
 public class AMILuceneTest {
 	
 
-	private static final Logger LOG = Logger.getLogger(AMILuceneTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public final static String CRICK_WATSON = ""
+	private static final Logger LOG = LogManager.getLogger(AMILuceneTest.class);
+public final static String CRICK_WATSON = ""
 			+ "It has not escaped our notice that the specific pairing we have postulated"
 			+ " immediately suggests a possible copying mechanism for the genetic material.";
 

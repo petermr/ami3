@@ -2,8 +2,8 @@ package org.contentmine.ami.plugins.identifier;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.NamedPattern;
 import org.contentmine.ami.plugins.regex.RegexArgProcessor;
 import org.contentmine.cproject.args.ArgIterator;
@@ -19,12 +19,8 @@ import nu.xom.Element;
 public class IdentifierArgProcessor extends RegexArgProcessor {
 	
 	
-	public static final Logger LOG = Logger.getLogger(IdentifierArgProcessor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public IdentifierArgProcessor() {
+	public static final Logger LOG = LogManager.getLogger(IdentifierArgProcessor.class);
+public IdentifierArgProcessor() {
 		super();
 	}
 

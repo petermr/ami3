@@ -2,8 +2,8 @@ package org.contentmine.ami.tools.download.biorxiv;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.download.AbstractDownloader;
 import org.contentmine.ami.tools.download.AbstractMetadataEntry;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -47,12 +47,8 @@ public class BiorxivMetadataEntry extends AbstractMetadataEntry {
 	
 	
 	private static final String HIGHWIRE_CITE_TITLE = "highwire-cite-title";
-	private static final Logger LOG = Logger.getLogger(BiorxivMetadataEntry.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public BiorxivMetadataEntry() {
+	private static final Logger LOG = LogManager.getLogger(BiorxivMetadataEntry.class);
+public BiorxivMetadataEntry() {
 		super();
 	}
 		

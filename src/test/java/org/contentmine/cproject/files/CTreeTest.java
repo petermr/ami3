@@ -6,8 +6,8 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.CMineFixtures;
 import org.contentmine.cproject.CProjectArgProcessor;
 import org.contentmine.cproject.args.DefaultArgProcessor;
@@ -27,12 +27,8 @@ public class CTreeTest {
 	private static final String TEST_CREATE = "target/testcreate";
 	private static final String TARGET_THESES = TEST_CREATE+"/theses/";
 	
-	private static final Logger LOG = Logger.getLogger(CTreeTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public final static File PLOS0115884_DIR = new File(CMineFixtures.TEST_FILES_DIR, "journal.pone.0115884");
+	private static final Logger LOG = LogManager.getLogger(CTreeTest.class);
+public final static File PLOS0115884_DIR = new File(CMineFixtures.TEST_FILES_DIR, "journal.pone.0115884");
 	
 	@Test
 	public void testReadCTree() {

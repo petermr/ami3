@@ -16,14 +16,15 @@
 
 package org.contentmine.graphics.html;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 /** 
  *  @author pm286
  */
 public class HtmlBig extends HtmlElement {
-	private final static Logger LOG = Logger.getLogger(HtmlBig.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlBig.class);
 	public final static String TAG = "big";
 
 	/** constructor.

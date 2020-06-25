@@ -19,7 +19,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -29,7 +30,7 @@ import nu.xom.Serializer;
 
 public class SVGSerializerTest {
 
-	private final static Logger LOG = Logger.getLogger(SVGSerializerTest.class);
+	private final static Logger LOG = LogManager.getLogger(SVGSerializerTest.class);
 	
 	private final static String SCRIPT_O = new String(Character.toChars(120030));
 	@Test

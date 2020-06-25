@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.plot;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealArray;
 import org.contentmine.eucl.euclid.RealRange;
@@ -25,13 +25,9 @@ import org.contentmine.graphics.svg.text.SVGWord;
  *
  */
 public class AxisScaleBox extends AxialBox {
-	private static final Logger LOG = Logger.getLogger(AxisScaleBox.class);
+	private static final Logger LOG = LogManager.getLogger(AxisScaleBox.class);
 
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	List<SVGText> textList;
+List<SVGText> textList;
 	private List<SVGText> horizontalTexts;
 	private List<SVGText> rot90Texts;
 

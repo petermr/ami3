@@ -2,7 +2,8 @@ package org.contentmine.image.moments;
 
 import java.awt.image.BufferedImage;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Array;
 import org.contentmine.eucl.euclid.RealArray;
 import org.contentmine.image.pixel.MainPixelProcessor;
@@ -39,7 +40,7 @@ The central moments of order up to 3 are:
  */
 public class ImageMomentGenerator {
 
-	private final static Logger LOG = Logger.getLogger(ImageMomentGenerator.class);
+	private final static Logger LOG = LogManager.getLogger(ImageMomentGenerator.class);
 
 	private static final int PMAX = 2;
 	private static final int QMAX = 2;

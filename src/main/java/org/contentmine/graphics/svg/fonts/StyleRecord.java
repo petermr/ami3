@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealArray;
 import org.contentmine.eucl.euclid.RealRange;
@@ -32,13 +32,9 @@ import com.google.common.collect.Multiset;
  *
  */
 public class StyleRecord {
-	private static final Logger LOG = Logger.getLogger(StyleRecord.class);
+	private static final Logger LOG = LogManager.getLogger(StyleRecord.class);
 
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private Multiset<String> characterSet;
+private Multiset<String> characterSet;
 	private StyledFont styledFont;
 	private StyleBundle styleBundle;
 	private Multiset<Double> yCoordinateSet;

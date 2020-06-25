@@ -18,7 +18,8 @@ package org.contentmine.eucl.euclid;
 import java.awt.geom.Point2D;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 /**
  * A pair of FPt numbers with no other assumptions
  * 
@@ -29,7 +30,7 @@ import org.apache.log4j.Logger;
  * @author (C) P. Murray-Rust, 1996
  */
 public class Real2 implements EuclidConstants {
-	private static Logger LOG = Logger.getLogger(Real2.class);
+	private static Logger LOG = LogManager.getLogger(Real2.class);
     /** the first floating point value */
     public double x;
     /** the second floating point value */

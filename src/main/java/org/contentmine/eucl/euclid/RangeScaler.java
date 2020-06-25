@@ -1,16 +1,12 @@
 package org.contentmine.eucl.euclid;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class RangeScaler {
 
-	private static final Logger LOG = Logger.getLogger(RangeScaler.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private RealRange inputRange;
+	private static final Logger LOG = LogManager.getLogger(RangeScaler.class);
+private RealRange inputRange;
 	private RealRange outputRange;
 	private Double scaleToOutput;
 	private Double constantToOutput;

@@ -10,8 +10,8 @@ import java.util.List;
 import javax.imageio.ImageIO;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.template.AbstractTemplateElement;
 import org.contentmine.ami.tools.template.ImageTemplateElement;
 import org.contentmine.cproject.files.CProject;
@@ -59,12 +59,8 @@ description = {
 public class AMIFilterTool extends AbstractAMITool /*implements HasImageDir*/ {
 	private static final String IMAGE = "image";
 
-	private static final Logger LOG = Logger.getLogger(AMIFilterTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public enum ImageToolkit {
+	private static final Logger LOG = LogManager.getLogger(AMIFilterTool.class);
+public enum ImageToolkit {
 		Boofcv,
 		Scalr,
 		Pmr,
@@ -242,7 +238,7 @@ public class AMIFilterTool extends AbstractAMITool /*implements HasImageDir*/ {
     protected void runSpecifics() {
     	if (processTrees()) { 
     	} else {
-			DebugPrint.debugPrint(Level.ERROR, "must give cProject or cTree");
+			LOG.error(DebugPrint.MARKER, "must give cProject or cTree");
 	    }
     }
 

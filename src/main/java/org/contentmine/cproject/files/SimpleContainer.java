@@ -2,8 +2,8 @@ package org.contentmine.cproject.files;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** simple container to manage branches of the CProject and CTree
  * 
@@ -11,12 +11,8 @@ import org.apache.log4j.Logger;
  *
  */
 public class SimpleContainer extends CContainer {
-	private static final Logger LOG = Logger.getLogger(SimpleContainer.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public SimpleContainer(File directory) {
+	private static final Logger LOG = LogManager.getLogger(SimpleContainer.class);
+public SimpleContainer(File directory) {
 		this.directory = directory;
 	}
 

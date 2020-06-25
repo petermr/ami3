@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMIAssertTool;
 import org.contentmine.ami.tools.AMIDisplayTool;
 import org.contentmine.ami.tools.AMIFilterTool;
@@ -32,11 +32,8 @@ import junit.framework.Assert;
  *
  */
 public class AMIForestPlotTest {
-	private static final Logger LOG = Logger.getLogger(AMIForestPlotTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final File FOREST_PLOT_DIR = new File("/Users/pm286/projects/forestplots");
+	private static final Logger LOG = LogManager.getLogger(AMIForestPlotTest.class);
+private static final File FOREST_PLOT_DIR = new File("/Users/pm286/projects/forestplots");
 	private static final File STATA_FOREST_PLOT_DIR = new File(FOREST_PLOT_DIR, "stataforestplots");
 	private final static String SPSS = "spss";
 	private static final File SPSS_DIR = new File(FOREST_PLOT_DIR, SPSS);

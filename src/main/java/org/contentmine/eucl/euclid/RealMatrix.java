@@ -19,7 +19,8 @@ import java.io.IOException;
 import java.io.Writer;
 import java.text.DecimalFormat;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  * rectangular real number matrix class RealMatrix represents a rectangular
@@ -35,7 +36,7 @@ import org.apache.log4j.Logger;
  * @author (C) P. Murray-Rust, 1996
  */
 public class RealMatrix implements EuclidConstants {
-    final static Logger LOG = Logger.getLogger(RealMatrix.class);
+    final static Logger LOG = LogManager.getLogger(RealMatrix.class);
     /**
      * number of rows
      */

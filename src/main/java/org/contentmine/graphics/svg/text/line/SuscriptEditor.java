@@ -1,7 +1,7 @@
 package org.contentmine.graphics.svg.text.line;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.text.build.Phrase;
 import org.contentmine.graphics.svg.text.build.PhraseChunk;
@@ -17,12 +17,8 @@ import org.contentmine.graphics.svg.text.build.TextChunk;
  */
 public class SuscriptEditor {
 
-	private static final Logger LOG = Logger.getLogger(SuscriptEditor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private TextChunk textChunk;
+	private static final Logger LOG = LogManager.getLogger(SuscriptEditor.class);
+private TextChunk textChunk;
 	private double minSubFontRatio = 0.4;
 	private double maxSubFontRatio = 0.8;
 	private double minSubOffsetRatio = 0.2;

@@ -5,7 +5,8 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.image.pixel.PixelComparator.ComparatorType;
 
@@ -13,7 +14,7 @@ public class PixelNucleusList implements Iterable<PixelNucleus> {
 
 	private static final String END_STRING= "]";
 	private static final String START_STRING = "[";
-	private final static Logger LOG = Logger.getLogger(PixelNucleusList.class);
+	private final static Logger LOG = LogManager.getLogger(PixelNucleusList.class);
 	private List<PixelNucleus> list;
 
 	public PixelNucleusList() {

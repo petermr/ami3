@@ -3,8 +3,8 @@ package org.contentmine.ami.tools.download;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMIDownloadTool;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.util.HtmlUtil;
@@ -17,12 +17,8 @@ import nu.xom.Element;
  *
  */
 public abstract class AbstractMetadataEntry {
-	private static final Logger LOG = Logger.getLogger(AbstractMetadataEntry.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	protected AbstractDownloader downloader;
+	private static final Logger LOG = LogManager.getLogger(AbstractMetadataEntry.class);
+protected AbstractDownloader downloader;
 	protected String urlPath;
 	protected String doi;
 //	private Element metadataElement;

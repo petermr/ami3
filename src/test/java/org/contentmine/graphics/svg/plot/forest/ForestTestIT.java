@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.util.Iterator;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGHTMLFixtures;
 import org.contentmine.graphics.svg.SVGSVG;
@@ -26,11 +26,8 @@ import org.junit.Test;
 import junit.framework.Assert;
 
 public class ForestTestIT {
-	public static final Logger LOG = Logger.getLogger(ForestTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static File inputDir = SVGHTMLFixtures.FOREST_DIR;
+	public static final Logger LOG = LogManager.getLogger(ForestTest.class);
+private static File inputDir = SVGHTMLFixtures.FOREST_DIR;
 	private static File targetDir = new File("target/forest/");
 	private static String[] FILL = new String[] { "orange", "green", "blue", "red", "cyan" };
 	private File outputFile;

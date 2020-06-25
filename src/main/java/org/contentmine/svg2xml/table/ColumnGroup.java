@@ -3,8 +3,8 @@ package org.contentmine.svg2xml.table;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.rule.horizontal.HorizontalRule;
@@ -19,12 +19,8 @@ import org.contentmine.graphics.svg.text.build.Phrase;
  */
 public class ColumnGroup {
 
-	private static final Logger LOG = Logger.getLogger(ColumnGroup.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private List<Phrase> phrases;
+	private static final Logger LOG = LogManager.getLogger(ColumnGroup.class);
+private List<Phrase> phrases;
 	private HorizontalRule ruler;
 	private Real2Range boundingBox;
 	

@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMIOCRTool.OcrType;
 
 /** merges contents of boxes fond after OCR .
@@ -15,12 +15,8 @@ import org.contentmine.ami.tools.AMIOCRTool.OcrType;
  *
  */
 public class OcrBoxMerger extends OcrMerger {
-	private static final Logger LOG = Logger.getLogger(OcrBoxMerger.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private List<OCRBoxSegment> ocrBoxesList;
+	private static final Logger LOG = LogManager.getLogger(OcrBoxMerger.class);
+private List<OCRBoxSegment> ocrBoxesList;
 	
 	public OcrBoxMerger() {
 		

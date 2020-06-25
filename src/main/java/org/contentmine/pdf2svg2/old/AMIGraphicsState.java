@@ -5,8 +5,8 @@ import java.awt.Graphics2D;
 import java.awt.Shape;
 import java.awt.Stroke;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.pdfbox.pdmodel.graphics.PDLineDashPattern;
 import org.apache.pdfbox.pdmodel.graphics.state.PDGraphicsState;
 import org.apache.pdfbox.pdmodel.graphics.state.PDTextState;
@@ -18,12 +18,8 @@ import org.apache.pdfbox.pdmodel.graphics.state.PDTextState;
  *
  */
 public class AMIGraphicsState {
-	private static final Logger LOG = Logger.getLogger(AMIGraphicsState.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private Color textColor;
+	private static final Logger LOG = LogManager.getLogger(AMIGraphicsState.class);
+private Color textColor;
 	private Stroke textStroke;
 	private Shape textClip;
 	

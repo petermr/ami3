@@ -1,16 +1,12 @@
 package org.contentmine.norma.editor;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class SubstitutionElement extends AbstractEditorElement {
 
-	public static final Logger LOG = Logger.getLogger(SubstitutionElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String ORIGINAL = "original";
+	public static final Logger LOG = LogManager.getLogger(SubstitutionElement.class);
+private static final String ORIGINAL = "original";
 	private static final String EDITED = "edited";
 
 	public static final String TAG = "substitution";

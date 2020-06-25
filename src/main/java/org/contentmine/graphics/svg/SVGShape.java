@@ -5,8 +5,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.graphics.AbstractCMElement;
 
@@ -20,12 +20,8 @@ import nu.xom.Attribute;
  *
  */
 public abstract class SVGShape extends /*GraphicsElement*/ SVGElement {
-	private static final Logger LOG = Logger.getLogger(SVGShape.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final String ALL_SHAPE_XPATH = "" +
+	private static final Logger LOG = LogManager.getLogger(SVGShape.class);
+public static final String ALL_SHAPE_XPATH = "" +
 			".//svg:circle[not(ancestor::svg:defs)] | " +
 			".//svg:ellipse[not(ancestor::svg:defs)] | " +
 			".//svg:image[not(ancestor::svg:defs)] | " +

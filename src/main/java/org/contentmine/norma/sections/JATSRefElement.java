@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import nu.xom.Element;
 
@@ -42,12 +42,8 @@ import nu.xom.Element;
 */
 public class JATSRefElement extends JATSElement implements IsBlock {
 
-	static final Logger LOG = Logger.getLogger(JATSRefElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	static final String TAG = "ref";
+	static final Logger LOG = LogManager.getLogger(JATSRefElement.class);
+static final String TAG = "ref";
 	public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {
 			JATSSpanFactory.LABEL,
 			JATSDivFactory.ELEMENT_CITATION,

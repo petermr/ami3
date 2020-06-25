@@ -5,8 +5,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIFixtures;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
@@ -65,13 +65,8 @@ import nu.xom.Element;
 public class AMISectionToolTest extends AbstractAMITest {
 	
 
-	private static final Logger LOG = Logger.getLogger(AMISectionToolTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(AMISectionToolTest.class);
+@Test
 	public void testHelp() {
 		String args = ""
 			;
@@ -375,7 +370,7 @@ public class AMISectionToolTest extends AbstractAMITest {
 		Multiset<String> tagClassSet = tagger.getOrCreateTagClassMultiset();
 		
 		Iterable<Entry<String>> entriesSortedByCount = MultisetUtil.getEntriesSortedByCount(tagClassSet);
-		DebugPrint.debugPrint("tags "+entriesSortedByCount);
+		LOG.debug(DebugPrint.MARKER, "tags "+entriesSortedByCount);
 		/**
 		Assert.assertEquals("["
 				+ "surname x 1863, given-names x 1857, name x 1688, italic x 952, named-content x 717, year x 485, ref x 464, source x 461,"

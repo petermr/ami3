@@ -8,8 +8,8 @@ import java.net.URL;
 import java.util.Map;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** gets InputStream from string.
  * 
@@ -38,12 +38,8 @@ import org.apache.log4j.Logger;
  */
 public class ResourceLocation {
 
-	private static final Logger LOG = Logger.getLogger(ResourceLocation.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	enum ResourceType {
+	private static final Logger LOG = LogManager.getLogger(ResourceLocation.class);
+enum ResourceType {
 		URL,
 		FILE,
 		RESOURCE,

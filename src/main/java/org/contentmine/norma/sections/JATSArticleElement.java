@@ -3,8 +3,8 @@ package org.contentmine.norma.sections;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import nu.xom.Attribute;
 import nu.xom.Element;
@@ -28,11 +28,8 @@ public class JATSArticleElement extends JATSElement implements IsBlock, HasDirec
 		  </article>
 	 */
 
-	static final Logger LOG = Logger.getLogger(JATSArticleElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	static final String TAG = "article";
+	static final Logger LOG = LogManager.getLogger(JATSArticleElement.class);
+static final String TAG = "article";
 	public static final String ARTICLE_TYPE = "article-type";
 	
 	public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {

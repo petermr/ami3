@@ -1,6 +1,7 @@
 package org.contentmine.ami.diagramAnalyzer;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.graphics.svg.SVGCircle;
@@ -16,7 +17,7 @@ public class XMLNode extends Element {
 
 	private static final String DIST_SEP = ":";
 
-	private final static Logger LOG = Logger.getLogger(XMLNode.class);
+	private final static Logger LOG = LogManager.getLogger(XMLNode.class);
 	
 	static final String XY2 = "xy2";
 	static final String LABEL = "label";

@@ -1,7 +1,7 @@
 package org.contentmine.graphics.svg.text;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGG;
 
 /** holds a phrase within a line.
@@ -17,12 +17,8 @@ import org.contentmine.graphics.svg.SVGG;
 public class SVGWordPhrase extends SVGG {
 
 	
-	private static final Logger LOG = Logger.getLogger(SVGWordPhrase.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final String CLASS = "wordPhrase";
+	private static final Logger LOG = LogManager.getLogger(SVGWordPhrase.class);
+public static final String CLASS = "wordPhrase";
 	
 	/**
 	 * TESSERACT O/P

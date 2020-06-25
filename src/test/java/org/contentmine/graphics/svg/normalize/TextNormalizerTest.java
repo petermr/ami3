@@ -4,8 +4,8 @@ import java.io.File;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGHTMLFixtures;
@@ -16,14 +16,9 @@ import org.junit.Test;
 import junit.framework.Assert;
 
 public class TextNormalizerTest {
-	private static final Logger LOG = Logger.getLogger(TextNormalizerTest.class);
+	private static final Logger LOG = LogManager.getLogger(TextNormalizerTest.class);
 	
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-
-	@Test
+@Test
 	/** compact y coords in a single line
 	 * 
 	 */

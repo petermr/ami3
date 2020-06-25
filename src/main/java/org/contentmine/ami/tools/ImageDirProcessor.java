@@ -5,8 +5,8 @@ import java.io.File;
 import java.util.Collections;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.image.AnnotatedImage;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.util.CMineGlobber;
@@ -17,12 +17,8 @@ import jline.internal.Log;
 
 public class ImageDirProcessor {
 
-	public static final Logger LOG = Logger.getLogger(ImageDirProcessor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private CTree cTree;
+	public static final Logger LOG = LogManager.getLogger(ImageDirProcessor.class);
+private CTree cTree;
 	public AbstractAMITool amiTool;
 	private List<File> imageDirs;
 

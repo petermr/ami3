@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineGlobber;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.eucl.euclid.Real2;
@@ -26,11 +26,8 @@ import org.junit.Test;
  */
 public class TableClippingDemoTest {
 	private static final String LANCET_BOX_FILL = "#b30838";
-	public static final Logger LOG = Logger.getLogger(TableClippingDemoTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public static final String FULLTEXT_PAGE = "fulltext-page";
+	public static final Logger LOG = LogManager.getLogger(TableClippingDemoTest.class);
+public static final String FULLTEXT_PAGE = "fulltext-page";
 	
 	@Test
 	@Ignore

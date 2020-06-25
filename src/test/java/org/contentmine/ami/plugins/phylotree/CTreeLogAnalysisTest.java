@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -21,12 +21,8 @@ import org.contentmine.cproject.args.log.CMineLog;
 @Ignore("long and uses foreign directories")
 public class CTreeLogAnalysisTest {
 
-	public static final Logger LOG = Logger.getLogger(CTreeLogAnalysisTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public final static File BATCH1 = new File(AMIFixtures.TEST_PHYLO_DIR, "batch1/");
+	public static final Logger LOG = LogManager.getLogger(CTreeLogAnalysisTest.class);
+public final static File BATCH1 = new File(AMIFixtures.TEST_PHYLO_DIR, "batch1/");
 	public final static File IJSEM = new File(AMIFixtures.TEST_PHYLO_DIR, "phylotree");
 	
 	@Test

@@ -2,8 +2,8 @@ package org.contentmine.cproject.metadata.bibjson;
 
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,12 +13,8 @@ import com.google.gson.GsonBuilder;
 
 public class BibJSONTest {
 	
-	private static final Logger LOG = Logger.getLogger(BibJSONTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	Gson gson;
+	private static final Logger LOG = LogManager.getLogger(BibJSONTest.class);
+Gson gson;
 	@Before
 	public void setup() {
 		gson = new GsonBuilder()

@@ -6,8 +6,8 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.eucl.euclid.RealRange;
 import org.contentmine.eucl.euclid.util.CMFileUtil;
@@ -36,12 +36,8 @@ import nu.xom.Comment;
  */
 public class DocumentCache extends ComponentCache {
 	
-	private static final Logger LOG = Logger.getLogger(DocumentCache.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String BOX = ".box";
+	private static final Logger LOG = LogManager.getLogger(DocumentCache.class);
+private static final String BOX = ".box";
 	// we will drop this very shortly, maybe even now
 	private static final String OPTIONAL_SVG_COMPACT = "(\\.svg\\.compact)?";
 	// note we have to have leading .* to match whole name

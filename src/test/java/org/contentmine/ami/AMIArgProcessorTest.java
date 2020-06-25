@@ -2,8 +2,9 @@ package org.contentmine.ami;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIProcessor;
 import org.contentmine.ami.plugins.AMIArgProcessor;
 import org.junit.Ignore;
@@ -16,13 +17,8 @@ import org.junit.Test;
  */
 public class AMIArgProcessorTest {
 
-	private static final Logger LOG = Logger.getLogger(AMIArgProcessorTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(AMIArgProcessorTest.class);
+@Test
 	public void testVersion() {
 		AMIArgProcessor argProcessor = new AMIArgProcessor();
 		argProcessor.parseArgs("--version");

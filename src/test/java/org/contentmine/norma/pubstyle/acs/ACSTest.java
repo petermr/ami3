@@ -3,19 +3,16 @@ package org.contentmine.norma.pubstyle.acs;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.norma.NormaFixtureRunner;
 import org.contentmine.norma.NormaFixtures;
 import org.junit.Test;
 
 public class ACSTest {
 	
-	private static final Logger LOG = Logger.getLogger(ACSTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	static String PUB0 = "acs";
+	private static final Logger LOG = LogManager.getLogger(ACSTest.class);
+static String PUB0 = "acs";
 	static String PUB = "acs";
 	static String PUB1 = "acs/clean";
 	static File TARGET = new File(NormaFixtures.TARGET_PUBSTYLE_DIR, PUB);

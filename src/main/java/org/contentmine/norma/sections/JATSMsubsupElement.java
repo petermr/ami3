@@ -1,16 +1,12 @@
 package org.contentmine.norma.sections;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import nu.xom.Element;
 
 public class JATSMsubsupElement extends AbstractJATSMathmlElement {
-    private static final Logger LOG = Logger.getLogger(JATSMsubsupElement.class);
-    static {
-        LOG.setLevel(Level.DEBUG);
-    }
-
-    public static String TAG = "msubsup";
+    private static final Logger LOG = LogManager.getLogger(JATSMsubsupElement.class);
+public static String TAG = "msubsup";
 
     public JATSMsubsupElement(Element element) {
         super(element);

@@ -9,8 +9,8 @@ import java.util.Iterator;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.norma.NormaFixtures;
@@ -32,12 +32,8 @@ import com.google.common.collect.Multiset.Entry;
  */
 public class PMIDParserTest {
 
-	public static final Logger LOG = Logger.getLogger(PMIDParserTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	public static final Logger LOG = LogManager.getLogger(PMIDParserTest.class);
+@Test
 	public void testRISParserPubMed() throws FileNotFoundException, IOException {
 		RISParser parser = new RISParser();
 		parser.read(new FileInputStream(new File(NormaFixtures.TEST_BIBLIO_DIR, "pmid/pmidsmall.txt")));

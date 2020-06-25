@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIProcessor;
 import org.contentmine.ami.plugins.CommandProcessor;
 import org.contentmine.ami.plugins.EntityAnalyzer;
@@ -26,12 +26,8 @@ import org.junit.Test;
  */
 // @Ignore // FOR TESTS, REMOVE LATER
 public class AMIIntegrationDemosIT {
-	public static final Logger LOG = Logger.getLogger(AMIIntegrationDemosIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	public static final Logger LOG = LogManager.getLogger(AMIIntegrationDemosIT.class);
+@Test
 	public void testMakeBiorxiv() {
 		
 		boolean skipCleanCopy = true;

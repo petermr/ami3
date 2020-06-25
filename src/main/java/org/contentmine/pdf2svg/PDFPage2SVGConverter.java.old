@@ -35,8 +35,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.pdfbox.cos.COSName;
 import org.apache.pdfbox.encoding.DictionaryEncoding;
 import org.apache.pdfbox.encoding.Encoding;
@@ -95,15 +95,11 @@ public class PDFPage2SVGConverter extends PageDrawer {
 	private static final String ITALIC = "italic";
 	private static final String CLIP_PATH = "clipPath";
 
-	private final static Logger LOG = Logger.getLogger(PDFPage2SVGConverter.class);
+	private final static Logger LOG = LogManager.getLogger(PDFPage2SVGConverter.class);
 
 	// only use if mediaBox fails to give dimension
 	private static final Dimension DEFAULT_DIMENSION = new Dimension(800, 800);
 	private static final int BADCHAR = (char)0X2775;
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
 //	private static double eps = 0.001;
 
 	private BasicStroke basicStroke;

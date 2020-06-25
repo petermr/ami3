@@ -3,8 +3,8 @@ package org.contentmine.norma.sections;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlCaption;
 import org.contentmine.graphics.html.HtmlDiv;
@@ -75,12 +75,8 @@ import nu.xom.Element;
  */
 public class JATSTableWrapElement extends JATSElement implements IsBlock, IsFloat, HasTitle {
 
-	private static final Logger LOG = Logger.getLogger(JATSTableWrapElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	static String TAG = "table-wrap";
+	private static final Logger LOG = LogManager.getLogger(JATSTableWrapElement.class);
+static String TAG = "table-wrap";
 	private HtmlTable htmlTable;
 	
 	public JATSTableWrapElement(Element element) {

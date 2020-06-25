@@ -10,8 +10,8 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIImageProcessor;
 import org.contentmine.ami.tools.AMIPDFTool;
 import org.contentmine.ami.tools.AbstractAMITool;
@@ -60,12 +60,7 @@ public class AMIImageProcessorIT {
 	public static final File FORESTPLOT_CONVERTED_DIR = new File(UCLFOREST_DIR, "forestplotsConverted/");
 	public static final File FORESTPLOT_IMAGES_DIR = new File(UCLFOREST_DIR, "forestplotsImages/");
 	private static final String TARGET_UCLFOREST = "target/uclforest/";
-	public static final Logger  LOG = Logger.getLogger(AMIImageProcessorIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	
+	public static final Logger  LOG = LogManager.getLogger(AMIImageProcessorIT.class);
 //	@Test
 //	/** reads images in UCL corpus and excludes small/narroe
 //	 * 

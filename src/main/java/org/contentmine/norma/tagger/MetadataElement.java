@@ -1,6 +1,7 @@
 package org.contentmine.norma.tagger;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import nu.xom.Attribute;
 
@@ -8,7 +9,7 @@ public class MetadataElement extends AbstractTElement {
 	
 	private static final String NAME = "name";
 
-	private static final Logger LOG = Logger.getLogger(MetadataElement.class);
+	private static final Logger LOG = LogManager.getLogger(MetadataElement.class);
 
 	public final static String TAG = "metadata";
 	

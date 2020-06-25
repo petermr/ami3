@@ -37,7 +37,8 @@ import javax.imageio.ImageReader;
 import javax.imageio.ImageWriter;
 import javax.imageio.stream.ImageOutputStream;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.xerces.impl.dv.util.Base64;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.Real;
@@ -59,7 +60,7 @@ import nu.xom.Node;
  */
 public class SVGImage extends SVGShape {
 
-	private final static Logger LOG = Logger.getLogger(SVGImage.class);
+	private final static Logger LOG = LogManager.getLogger(SVGImage.class);
 	
 	private static final String DATA = "data";
 	private static final String BASE64 = "base64";

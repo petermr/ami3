@@ -4,8 +4,8 @@ import java.io.InputStream;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMIPluginOption;
 import org.contentmine.cproject.files.ResourceLocation;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -14,12 +14,8 @@ import nu.xom.Document;
 
 public class RegexPluginOption extends AMIPluginOption {
 
-	private static final Logger LOG = Logger.getLogger(RegexPluginOption.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final String TAG = "regex";
+	private static final Logger LOG = LogManager.getLogger(RegexPluginOption.class);
+public static final String TAG = "regex";
 	private CompoundRegex compoundRegex;
 
 	public RegexPluginOption() {

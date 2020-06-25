@@ -1,13 +1,14 @@
 package org.contentmine.html.util;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.util.HTMLTagReplacement;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class HtmlTagReplacementTest {
 
-	private final static Logger LOG = Logger.getLogger(HtmlTagReplacementTest.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlTagReplacementTest.class);
 	
 	@Test
 	public void testReplace() {

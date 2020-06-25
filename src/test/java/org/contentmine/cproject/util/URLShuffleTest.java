@@ -6,21 +6,16 @@ import java.util.List;
 
 import org.apache.commons.math.distribution.ZipfDistribution;
 import org.apache.commons.math.distribution.ZipfDistributionImpl;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class URLShuffleTest {
 
-	public static final Logger LOG = Logger.getLogger(URLShuffleTest.class);
+	public static final Logger LOG = LogManager.getLogger(URLShuffleTest.class);
 	private int testCount;
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-
-	public List<String> createURLs() {
+public List<String> createURLs() {
 		List<String> domains = Arrays.asList(new String[] {
 				"http://a.com",
 				"http://b.com",

@@ -11,8 +11,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.pdfbox.cos.COSDictionary;
 import org.apache.pdfbox.cos.COSName;
 import org.apache.pdfbox.pdmodel.graphics.PDLineDashPattern;
@@ -45,12 +45,8 @@ import org.contentmine.graphics.svg.SVGUtil;
  *
  */
 public class PageParserTwo extends AbstractPageParser {
-	static final Logger LOG = Logger.getLogger(PageParserTwo.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String CLIP_PATH = "clipPath";
+	static final Logger LOG = LogManager.getLogger(PageParserTwo.class);
+private static final String CLIP_PATH = "clipPath";
 	private static final Graphics2D TEXT = null;
 	private static final String SVG_RHMARGIN = "svg_rhmargin";
 	//	private SVGG svgg;

@@ -18,7 +18,8 @@ package org.contentmine.graphics.html;
 
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.util.HtmlUtil;
 
 
@@ -26,7 +27,7 @@ import org.contentmine.graphics.html.util.HtmlUtil;
  *  @author pm286
  */
 public class HtmlColgroup extends HtmlElement implements HasColspan {
-	private final static Logger LOG = Logger.getLogger(HtmlColgroup.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlColgroup.class);
 	
 	public final static String TAG = "colgroup";
 

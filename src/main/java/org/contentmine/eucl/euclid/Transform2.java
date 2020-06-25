@@ -18,8 +18,8 @@ package org.contentmine.eucl.euclid;
 
 import java.awt.geom.AffineTransform;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  * 2-D transformation matrix class
@@ -49,12 +49,8 @@ import org.apache.log4j.Logger;
  * @author PMR 20 August 2003
  */
 public class Transform2 extends RealSquareMatrix {
-	private static final Logger LOG = Logger.getLogger(Transform2.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-    /** type */
+	private static final Logger LOG = LogManager.getLogger(Transform2.class);
+/** type */
     public enum Type {
         /** */
         NULL(1, "none"),

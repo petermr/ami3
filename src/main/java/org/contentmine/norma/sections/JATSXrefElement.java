@@ -1,7 +1,7 @@
 package org.contentmine.norma.sections;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.HtmlA;
 import org.contentmine.graphics.html.HtmlElement;
 
@@ -22,12 +22,8 @@ public class JATSXrefElement extends JATSElement implements IsInline {
 	<xref ref-type="fn" rid="t3-fn2" class="xref">b</xref>
 	<xref ref-type="table-fn" rid="t3f2" class="xref">**</xref>
 	 */
-	private static final Logger LOG = Logger.getLogger(JATSXrefElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final String TAG = "xref";
+	private static final Logger LOG = LogManager.getLogger(JATSXrefElement.class);
+public static final String TAG = "xref";
 	
 	private String refType; 
 	private String rid; 

@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.linestuff;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGG;
@@ -20,12 +20,8 @@ import nu.xom.Node;
  *
  */
 public class SVGNode extends SVGG {
-	private static final Logger LOG = Logger.getLogger(SVGNode.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private List<SVGEdge> edges;
+	private static final Logger LOG = LogManager.getLogger(SVGNode.class);
+private List<SVGEdge> edges;
 	private Real2 point;
 	protected String label;
 	private double radius = 5.0;

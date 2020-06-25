@@ -7,8 +7,8 @@ import java.util.HashMap;
 import java.util.List;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMIOCRTool;
 import org.contentmine.ami.tools.AMIOCRTool.OcrType;
 import org.contentmine.ami.tools.ocr.OcrMerger.MeanType;
@@ -31,12 +31,8 @@ import com.google.common.collect.Multiset;
  *
  */
 public class OcrSegment {
-	private static final Logger LOG = Logger.getLogger(OcrSegment.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private static final String BOXES = "boxes";
+	private static final Logger LOG = LogManager.getLogger(OcrSegment.class);
+private static final String BOXES = "boxes";
 	private File svgFile;
 	private OcrType ocrType;
 	private boolean hasBoxFilename;

@@ -4,7 +4,6 @@ import java.util.List;
 
 import nu.xom.Element;
 
-import org.apache.log4j.Level;
 import org.contentmine.ami.plugins.AMIArgProcessor;
 import org.contentmine.ami.plugins.AMISearcher;
 import org.contentmine.ami.plugins.NamedPattern;
@@ -14,11 +13,7 @@ import org.contentmine.cproject.files.ResultsElement;
 public class DummySearcher extends AMISearcher {
 
 	
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public DummySearcher(AMIArgProcessor argProcessor, NamedPattern namedPattern) {
+public DummySearcher(AMIArgProcessor argProcessor, NamedPattern namedPattern) {
 		super(argProcessor, namedPattern);
 	}
 

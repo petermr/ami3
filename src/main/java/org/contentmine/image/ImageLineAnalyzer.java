@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.lang3.tuple.Pair;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Axis.Axis2;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.IntArray;
@@ -18,12 +18,8 @@ import org.contentmine.eucl.euclid.IntRange;
 public class ImageLineAnalyzer {
 
 
-	private static final Logger LOG = Logger.getLogger(ImageLineAnalyzer.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private int extent0;
+	private static final Logger LOG = LogManager.getLogger(ImageLineAnalyzer.class);
+private int extent0;
 	private int extent1;
 	private BufferedImage image;
 	private Axis2 axis;

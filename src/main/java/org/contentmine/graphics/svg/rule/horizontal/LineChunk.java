@@ -2,8 +2,8 @@ package org.contentmine.graphics.svg.rule.horizontal;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
@@ -26,13 +26,9 @@ import nu.xom.Attribute;
 public abstract class LineChunk extends SVGG implements HorizontalElement {
 	
 	private static final String TRUE = "true";
-	private static final Logger LOG = Logger.getLogger(LineChunk.class);
+	private static final Logger LOG = LogManager.getLogger(LineChunk.class);
 
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String SUPERSCRIPT = "superscript";
+private static final String SUPERSCRIPT = "superscript";
 	private static final String SUBSCRIPT = "subscript";
 	protected static final String SPACE = " ";
 	protected static final double SPACE_OFFSET = 1.0;

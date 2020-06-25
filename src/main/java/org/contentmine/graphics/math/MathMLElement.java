@@ -23,7 +23,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.AbstractCMElement;
 
@@ -172,7 +173,7 @@ import nu.xom.Nodes;
 public class MathMLElement extends AbstractCMElement implements MathMLConstants {
 
 
-	private final static Logger LOG = Logger.getLogger(MathMLElement.class);
+	private final static Logger LOG = LogManager.getLogger(MathMLElement.class);
 
 	private static final String CLASS = "class";
 	private static final String ID = "id";

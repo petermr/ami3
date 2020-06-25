@@ -6,8 +6,8 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.download.AbstractDownloader;
 import org.contentmine.ami.tools.download.AbstractMetadataEntry;
 import org.contentmine.ami.tools.download.HitList;
@@ -38,11 +38,8 @@ public class OSFDownloader extends AbstractDownloader {
 /**
 https://osf.io/preprints/discover?climate%252Bchange%20sort%3Arelevance-rank%20numresults%3A4 */
 	
-	static final Logger LOG = Logger.getLogger(OSFDownloader.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public static final String OSF_HOST = "osf.io";
+	static final Logger LOG = LogManager.getLogger(OSFDownloader.class);
+public static final String OSF_HOST = "osf.io";
 	public static final String OSF_BASE = HTTPS + P2H + OSF_HOST;
 	public static final String OSF_SEARCH = OSF_BASE + "/preprints/discover?";
 	public static final String OSF_HEADER = "/content/";

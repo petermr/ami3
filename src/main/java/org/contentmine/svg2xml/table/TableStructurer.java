@@ -7,8 +7,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntRange;
 import org.contentmine.eucl.euclid.IntRangeArray;
 import org.contentmine.eucl.euclid.Line2;
@@ -62,12 +62,8 @@ import nu.xom.Attribute;
 
 public class TableStructurer {
 	private static final String XY = "xy";
-	private static final Logger LOG = Logger.getLogger(TableStructurer.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final double PIXEL_GAP = 1.5;
+	private static final Logger LOG = LogManager.getLogger(TableStructurer.class);
+private static final double PIXEL_GAP = 1.5;
 	private static final String EMPTY_CHILD = "";
 	private static final String WIDE = "w";
 	private static final String LONG = "b";

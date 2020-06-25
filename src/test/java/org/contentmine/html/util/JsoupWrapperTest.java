@@ -9,8 +9,8 @@ import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlFactory;
@@ -27,11 +27,8 @@ import nu.xom.Builder;
 
 public class JsoupWrapperTest {
 
-	private static final Logger LOG = Logger.getLogger(JsoupWrapperTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	@Test
+	private static final Logger LOG = LogManager.getLogger(JsoupWrapperTest.class);
+@Test
 	public void testJsoupClean() {
 		String s = "<html><body></html>";
 		String ss = Jsoup.clean(s, Whitelist.basic());

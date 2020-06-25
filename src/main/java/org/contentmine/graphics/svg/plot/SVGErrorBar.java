@@ -1,7 +1,7 @@
 package org.contentmine.graphics.svg.plot;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Vector2;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGElement;
@@ -23,12 +23,8 @@ import org.contentmine.graphics.svg.SVGLine;
  */
 public class SVGErrorBar extends SVGG {
 
-	private static Logger LOG = Logger.getLogger(SVGErrorBar.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public enum BarDirection {
+	private static Logger LOG = LogManager.getLogger(SVGErrorBar.class);
+public enum BarDirection {
 		TOP("TOP", new Vector2(0, 1)),
 		RIGHT("RIGHT", new Vector2(1, 0)),
 		BOTTOM("BOTTOM", new Vector2(0, -1)),

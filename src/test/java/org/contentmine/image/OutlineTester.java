@@ -2,8 +2,8 @@ package org.contentmine.image;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.image.pixel.PixelEdge;
@@ -19,12 +19,8 @@ import org.contentmine.image.plot.PlotTest;
 import org.junit.Assert;
 
 public class OutlineTester {
-	private static final Logger LOG = Logger.getLogger(OutlineTester.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	/** parameters*/
+	private static final Logger LOG = LogManager.getLogger(OutlineTester.class);
+/** parameters*/
     public int[][] expectedRingSizes;
     public int[] nodes;
     public int[] edges;

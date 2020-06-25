@@ -64,7 +64,8 @@ import java.util.stream.Collectors;
 
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -81,7 +82,7 @@ import com.google.gson.JsonObject;
 public class Util implements EuclidConstants {
 	private static final PrintStream SYSOUT = System.out;
 
-	final static Logger LOG = Logger.getLogger(Util.class);
+	final static Logger LOG = LogManager.getLogger(Util.class);
 
 	/** messages */
 	public enum Message {

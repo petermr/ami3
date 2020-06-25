@@ -2,11 +2,12 @@ package org.contentmine.image.processing;
 
 import java.io.File;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class BoofCVTest {
 
-	private static Logger LOG = Logger.getLogger(BoofCVTest.class);
+	private static Logger LOG = LogManager.getLogger(BoofCVTest.class);
 
 	private File BOOFCV_OUT_DIR;
 //	

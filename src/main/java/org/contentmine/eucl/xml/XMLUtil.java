@@ -34,7 +34,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.graphics.html.HtmlB;
@@ -77,7 +78,7 @@ public abstract class XMLUtil implements XMLConstants {
 
 	private static final String OR = "or";
 
-	private static Logger LOG = Logger.getLogger(XMLUtil.class);
+	private static Logger LOG = LogManager.getLogger(XMLUtil.class);
 
 	private static final  String DOCTYPE = "\\<\\!DOCTYPE[^\\>]*\\>";
 	public  final  static String DTD     = ".dtd\">";

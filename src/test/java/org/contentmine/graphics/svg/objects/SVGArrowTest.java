@@ -5,8 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
@@ -20,12 +20,8 @@ import org.junit.Test;
 
 public class SVGArrowTest {
 
-	private static final Logger LOG = Logger.getLogger(SVGArrowTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	// these files already have triangles
+	private static final Logger LOG = LogManager.getLogger(SVGArrowTest.class);
+// these files already have triangles
 	@Test
 	public void testArrowFactory() throws FileNotFoundException {
 		AbstractCMElement g = (AbstractCMElement) SVGElement.readAndCreateSVG(new File(SVGHTMLFixtures.G_S_OBJECTS_DIR, "arrows.svg")).getChildElements().get(0);

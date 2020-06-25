@@ -5,7 +5,8 @@ import java.io.IOException;
 import java.io.InputStream;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.util.HTMLTidy;
 import org.junit.Assert;
 import org.junit.Test;
@@ -14,7 +15,7 @@ import org.w3c.tidy.Tidy;
 
 public class HtmlTidyTest {
 
-	private final static Logger LOG = Logger.getLogger(HtmlTidyTest.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlTidyTest.class);
 	
 	@Test
 	public void test1() throws IOException {

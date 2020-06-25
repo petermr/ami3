@@ -1,16 +1,12 @@
 package org.contentmine.norma.editor;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class Substitution {
 
-	public static final Logger LOG = Logger.getLogger(Substitution.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private String original;
+	public static final Logger LOG = LogManager.getLogger(Substitution.class);
+private String original;
 	private String edited;
 
 	public Substitution() {

@@ -1,7 +1,8 @@
 package org.contentmine.eucl.euclid.euclid;
 
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.ParsedSymop;
 import org.contentmine.eucl.euclid.Transform3;
 import org.junit.Assert;
@@ -9,7 +10,7 @@ import org.junit.Test;
 
 public class ParsedSymopTest {
 
-	private final static Logger LOG = Logger.getLogger(ParsedSymopTest.class);
+	private final static Logger LOG = LogManager.getLogger(ParsedSymopTest.class);
 
 	@Test
 	public void parseXYZ() {

@@ -1,7 +1,7 @@
 package org.contentmine.cproject.files;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.lookup.DefaultStringDictionary;
 import org.contentmine.eucl.xml.XMLUtil;
 
@@ -17,12 +17,8 @@ import nu.xom.Element;
  */
 public class ResultElement extends Element {
 	
-	private static final Logger LOG = Logger.getLogger(ResultElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private static final String COUNT      = "count";
+	private static final Logger LOG = LogManager.getLogger(ResultElement.class);
+private static final String COUNT      = "count";
 	private static final String DICTIONARY = "dictionary";
 	private static final String DICTIONARY_CHECK = "dictionaryCheck";
 	private static final String EXACT     = "exact";

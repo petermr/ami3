@@ -4,10 +4,7 @@ public class PDF2SVGArgProcessor {
 	
 	
 //public class PDF2SVGArgProcessor extends DefaultArgProcessor {
-//	private static final Logger LOG = Logger.getLogger(PDF2SVGArgProcessor.class);
-//	static {
-//		LOG.setLevel(Level.DEBUG);
-//	}
+//	private static final Logger LOG = LogManager.getLogger(PDF2SVGArgProcessor.class);
 //
 //	
 //	private static String RESOURCE_NAME_TOP = "/org/contentmine/pdf2svg";

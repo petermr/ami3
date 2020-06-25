@@ -5,8 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.Transform2;
@@ -30,12 +30,8 @@ public class PageCropper {
 	private static final int MIN_Y = 0;
 	private static final int MAX_X = 600;
 	private static final int MAX_Y = 800;
-	private static final Logger LOG = Logger.getLogger(PageCropper.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public enum Units {
+	private static final Logger LOG = LogManager.getLogger(PageCropper.class);
+public enum Units {
 		INCH("in", PageCropper.DPI),
 		MM("mm", PageCropper.DPI * PageCropper.MM2INCH),
 		PX("px", 1.0);

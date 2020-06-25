@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Vector2;
 import org.contentmine.graphics.AbstractCMElement;
@@ -15,7 +16,7 @@ import com.google.common.collect.Multimap;
 
 public class SVGLineAnalyzer {
 
-	private final static Logger LOG = Logger.getLogger(SVGLineAnalyzer.class);
+	private final static Logger LOG = LogManager.getLogger(SVGLineAnalyzer.class);
 
 	private final static Double EPS = 0.0001;
 	private final static Vector2 XAXIS = new Vector2(1.0, 0.0);

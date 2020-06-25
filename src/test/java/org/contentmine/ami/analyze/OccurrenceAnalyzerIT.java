@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIFixtures;
 import org.contentmine.ami.AMIProcessor;
 import org.contentmine.ami.plugins.CommandProcessor;
@@ -21,12 +21,8 @@ import org.junit.Test;
 
 // @Ignore // uncomment for development
 public class OccurrenceAnalyzerIT {
-	private static final Logger LOG = Logger.getLogger(OccurrenceAnalyzerIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	List<String> OBESITY_DICTIONARIES = Arrays.asList(
+	private static final Logger LOG = LogManager.getLogger(OccurrenceAnalyzerIT.class);
+List<String> OBESITY_DICTIONARIES = Arrays.asList(
 			"word", "gene", "country", "disease", "funders", "inn", "obesity", "poverty");
 
 	/** complete AMI run over full Marchantia set.

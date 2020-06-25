@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+# Copyright (C) 2012 pm286 <peter.murray.rust@googlemail.com>
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#         http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+-->
+<!-- Log4j2 configuration: see https://logging.apache.org/log4j/2.x/manual/configuration.html for details -->
+<!-- Log4j internal logging: only Log4j problems (WARN/ERROR/FATAL-level messages) -->
+<Configuration status="WARN">
+  <Appenders>
+    <!-- Console appender: print message only (no timestamp, log level etc.) to STDERR. -->
+    <!-- see https://logging.apache.org/log4j/2.x/manual/appenders.html#ConsoleAppender for details -->
+    <Console name="Console" target="SYSTEM_ERR">
+      <PatternLayout pattern="%msg%n"/>
+    </Console>
+    <!-- File appender: by default, overwrite logs/ami.log, but location can be overridden via system property 'logfile'; -->
+    <!-- see https://logging.apache.org/log4j/2.x/manual/appenders.html#FileAppender for details -->
+    <File name="File" fileName="${logfile:-logs/ami.log}" append="false">
+      <!-- see https://logging.apache.org/log4j/2.x/manual/layouts.html#PatternLayout for details -->
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} %x - %msg%n%n" />
+    </File>
+  </Appenders>
+  <Loggers>
+    <!-- reduce verbosity of logging output by libraries  -->
+    <Logger name="uk.ac.cam" level="DEBUG" />
+    <Logger name="org.contentmine.pdf2svg.PDFPage2SVGConverter" level="INFO" />
+    <Logger name="org.contentmine.cml.converters.molecule.cml.CML2CMLConverter" level="ALL" />
+    <Logger name="org.apache.fontbox.ttf.CmapSubtable" level="ERROR" />
+    <Logger name="org.apache.fontbox.ttf.GlyphSubstitutionTable" level="INFO" />
+    <Logger name="org.apache.fontbox.ttf.PostScriptTable" level="INFO" />
+    <Logger name="org.apache.fontbox.util.autodetect.FontFileFinder" level="INFO" />
+    <Logger name="org.apache.pdfbox.util" level="INFO" />
+    <Logger name="org.apache.pdfbox.util.PDFStreamEngine" level="WARN" />
+    <Logger name="org.apache.pdfbox.pdfparser.PDFObjectStreamParser" level="INFO" />
+    <Logger name="org.apache.pdfbox.cos.COSDocument" level="ERROR" />
+    <Logger name="org.apache.pdfbox.io.ScratchFileBuffer" level="INFO" />
+    <Logger name="org.apache.pdfbox.pdmodel.font.PDSimpleFont" level="ERROR" />
+    <Logger name="org.apache.pdfbox.pdmodel.font.FileSystemFontProvider" level="INFO" />
+    <Logger name="org.apache.pdfbox.pdmodel.font.PDType0Font" level="ERROR" />
+    <Logger name="org.apache.pdfbox.pdmodel.graphics.xobject.PDPixelMap" level="INFO" />
+    <Logger name="org.apache.pdfbox.pdmodel.graphics.color.PDSeparation" level="OFF" />
+    <Logger name="org.apache.pdfbox.pdmodel.graphics.color.PDColorState" level="ERROR" />
+    <Logger name="org.apache.pdfbox.pdmodel.graphics.color.PDICCBased" level="ERROR" />
+    <Logger name="org.apache.pdfbox.rendering.PDFRenderer" level="WARN" />
+    <Logger name="org.apache.pdfbox.rendering.TTFGlyph2D" level="ERROR" />
+    <Logger name="org.apache.pdfbox.rendering.Type1Glyph2D" level="ERROR" />
+    <Logger name="org.apache.pdfbox.pdfparser.COSParser" level="INFO" />
+
+    <Root level="trace">
+      <AppenderRef ref="Console" level="warn"/>
+      <AppenderRef ref="File" level="trace"/>
+    </Root>
+  </Loggers>
+</Configuration>
+

@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  * a sorted list of ranges.
@@ -26,7 +27,7 @@ import org.apache.log4j.Logger;
 public class RealRangeList {
 
 	private static final long serialVersionUID = 1L;
-	private final static Logger LOG = Logger.getLogger(RealRangeList.class);
+	private final static Logger LOG = LogManager.getLogger(RealRangeList.class);
 
 	private List<RealRange> rangeList;
 	private int pointer;

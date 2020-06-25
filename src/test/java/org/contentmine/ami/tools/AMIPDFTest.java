@@ -3,12 +3,8 @@ package org.contentmine.ami.tools;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Appender;
-import org.apache.log4j.FileAppender;
-import org.apache.log4j.Layout;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PatternLayout;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.junit.Assert;
@@ -20,12 +16,8 @@ import org.junit.Test;
  *
  */
 public class AMIPDFTest extends AbstractAMITest {
-	private static final Logger LOG = Logger.getLogger(AMIPDFTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public final static File PDF2SVG2TEST = new File(PDF2SVG2, "text");
+	private static final Logger LOG = LogManager.getLogger(AMIPDFTest.class);
+public final static File PDF2SVG2TEST = new File(PDF2SVG2, "text");
 	
 	@Test
 	/** reads UCL corpus as PDFs and creates first pass SVG , images and scholarly html
@@ -37,10 +29,10 @@ public class AMIPDFTest extends AbstractAMITest {
 //				log4j.appender.file.File=${user.home}/logs/app.log
 //				log4j.appender.file.layout=org.apache.log4j.PatternLayout
 //				log4j.appender.file.layout.ConversionPattern=%d [%t] %c %p %m%n
-		String filename = "foo";
-		boolean append = true;
-		Layout layout = new PatternLayout();
-		Appender appender = new FileAppender(layout, filename, append);
+//		String filename = "foo";
+//		boolean append = true;
+//		Layout layout = new PatternLayout();
+//		Appender appender = new FileAppender(layout, filename, append);
 		String args = 
 				"-p /Users/pm286/workspace/uclforest/forestplotssmall"
 				+ " pdfbox"

@@ -6,8 +6,8 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.CHESConstants;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.Real2RangeList;
@@ -25,12 +25,8 @@ import junit.framework.Assert;
 
 
 public class HOCRTestIT {
-	public static final Logger LOG = Logger.getLogger(HOCRTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	public static final Logger LOG = LogManager.getLogger(HOCRTest.class);
+@Test
 	public void testText() throws IOException {
 		String fileRoot = "introText";
 		File targetDir = new File(SVGHTMLFixtures.EARLY_CHEM_TARGET_DIR, fileRoot);

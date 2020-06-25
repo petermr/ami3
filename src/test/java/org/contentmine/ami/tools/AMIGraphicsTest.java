@@ -5,8 +5,8 @@ import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGSVG;
@@ -25,14 +25,10 @@ import org.junit.Test;
 
 public class AMIGraphicsTest extends AbstractAMITest {
 
-	private static final Logger LOG = Logger.getLogger(AMIGraphicsTest.class);
+	private static final Logger LOG = LogManager.getLogger(AMIGraphicsTest.class);
 	private static File PROBLEMS_DIR = new File(PDF2SVG2, "problems/");
 
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+@Test
 	/** mainly for development of code*/
 	public void testMujaSinglePage1() {
 		File svgDir = new File(PROBLEMS_DIR, "Muja_Lowe/svg/");

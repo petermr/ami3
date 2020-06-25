@@ -3,8 +3,8 @@ package org.contentmine.norma.pubstyle.plosone;
 import java.io.File;
 import java.io.FileOutputStream;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.norma.Norma;
 import org.contentmine.norma.NormaFixtures;
@@ -20,12 +20,7 @@ import nu.xom.Element;
 
 public class PlosoneTaggerTest {
 	
-	private static final Logger LOG = Logger.getLogger(PlosoneTaggerTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	
+	private static final Logger LOG = LogManager.getLogger(PlosoneTaggerTest.class);
 //    
 //    
 //	public final static String ABSTRACT = "abstract";

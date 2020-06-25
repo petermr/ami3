@@ -19,7 +19,8 @@ package org.contentmine.graphics.html;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
@@ -43,7 +44,7 @@ In general only the first <tr> will be used
  */
 public class HtmlThead extends HtmlTrContainer {
 	@SuppressWarnings("unused")
-	public final static Logger LOG = Logger.getLogger(HtmlThead.class);
+	public final static Logger LOG = LogManager.getLogger(HtmlThead.class);
 	public final static String TAG = "thead";
 	private static final String COL = "col";
 	

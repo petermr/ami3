@@ -19,8 +19,8 @@ package org.contentmine.graphics.svg;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.graphics.AbstractCMElement;
 
@@ -33,12 +33,8 @@ import nu.xom.Node;
  *
  */
 public class SVGDefs extends SVGElement {
-	private static final Logger LOG = Logger.getLogger(SVGDefs.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public final static String ALL_DEFS_XPATH = ".//svg:defs";
+	private static final Logger LOG = LogManager.getLogger(SVGDefs.class);
+public final static String ALL_DEFS_XPATH = ".//svg:defs";
 
 	public final static String TAG ="defs";
 	/** constructor

@@ -11,11 +11,12 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.Callable;
 
-import org.apache.log4j.BasicConfigurator;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.spi.StandardLevel;
 import org.contentmine.ami.tools.AMI.ShortErrorMessageHandler;
 import org.contentmine.cproject.args.AbstractTool;
 import org.contentmine.cproject.files.CProject;
@@ -62,13 +63,9 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 	private static final String AMI = "AMI";
 	private static final String TOOL = "Tool";
 
-	private static final Logger LOG = Logger.getLogger(AbstractAMITool.class);
+	private static final Logger LOG = LogManager.getLogger(AbstractAMITool.class);
 
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public enum IncExc {
+public enum IncExc {
 		INCLUDE,
 		EXCLUDE
 	}
@@ -154,7 +151,6 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 	protected File cProjectOutputDir;
 	protected File cTreeOutputDir;
 
-	private Level level;
 	protected File contentMineDir = DEFAULT_CONTENT_MINE_DIR;
 
 	protected CTreeList processedTreeList;
@@ -163,9 +159,9 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 	protected boolean makeCProjectDirectory = false;
 	private int maxInPrettyList = 5;
 
+	protected boolean showstopperEncountered = false;
+
 	public void init() {
-		// log4j configuration
-		BasicConfigurator.configure();
 	}
 
 	public void runCommands(String cmd) {
@@ -204,8 +200,8 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 		printSpecificHeader();
 		parseSpecifics();
 
-		if (level != null && !Level.WARN.isGreaterOrEqual(level)) {
-			System.err.println("processing halted due to argument errors, level:" + level);
+		if (showstopperEncountered) {
+			LOG.fatal("processing halted due to argument errors");
 		} else {
 			runPrevious();
 			runGenerics();
@@ -229,7 +225,6 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 		validateCProject();
 		validateCTree();
 		validateRawFormats();
-		parent.setLogging();
 		printGenericValues();
 		return true;
 	}
@@ -420,7 +415,7 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 			System.out.println("forceMake           " + getForceMake());
 			System.out.println("includeBase         " + includeBase());
 			System.out.println("includeTrees        " + toString(includeTrees()));
-			System.out.println("log4j               " + (log4j() == null ? "" : new ArrayList<String>(Arrays.asList(log4j()))));
+			System.out.println("log4j               " + log4j());
 			System.out.println("verbose             " + verbosity().length);
 		} else {
 			System.out.println("-v to see generic values");
@@ -512,7 +507,7 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 		return parent.loggingOptions.verbosity;
 	}
 
-	protected String[] log4j() {
+	protected Map<Class, StandardLevel> log4j() {
 		return parent.loggingOptions.log4j;
 	}
 
@@ -565,40 +560,8 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 		System.out.println("================================");
 	}
 
-	protected void addLoggingLevel(Level level, String message) {
-		combineLevel(level);
-		if (level.isGreaterOrEqual(Level.WARN)) {
-			System.err.println(this.getClass().getSimpleName() + ": " + level + ": " + message);
-		}
-	}
-
-	private void combineLevel(Level level) {
-		if (level == null) {
-			LOG.warn("null level");
-		} else if (this.level == null) {
-			this.level = level;
-		} else if (level.isGreaterOrEqual(this.level)) {
-			this.level = level;
-		}
-	}
-
 	public int getVerbosityInt() {
 		return verbosity().length;
-	}
-
-	public Level getVerbosity() {
-		if (verbosity().length == 0) {
-//			addLoggingLevel(Level.ERROR, "BUG?? in verbosity");
-			return Level.WARN;
-		} else if (verbosity().length == 1) {
-			return verbosity()[0] ? Level.INFO : Level.WARN;
-		} else if (verbosity().length == 2) {
-			return Level.DEBUG;
-		} else if (verbosity().length == 3) {
-			return Level.TRACE;
-		}
-		return Level.ERROR;
-
 	}
 
 	/**
@@ -744,7 +707,8 @@ public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 					inputStream = new FileInputStream(inputFile);
 				}
 			} catch (IOException e) {
-				addLoggingLevel(Level.ERROR, "cannot read/open stream: " + input());
+				LOG.error("cannot read/open stream: " + input());
+				showstopperEncountered = true;
 			}
 		}
 		return inputStream;

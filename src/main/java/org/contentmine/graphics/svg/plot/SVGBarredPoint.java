@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.plot;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Point2;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
@@ -26,12 +26,8 @@ import org.contentmine.graphics.svg.plot.SVGErrorBar.BarDirection;
  */
 public class SVGBarredPoint extends SVGG {
 
-	private static Logger LOG = Logger.getLogger(SVGBarredPoint.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final double POINT_RADIUS = 1.0;
+	private static Logger LOG = LogManager.getLogger(SVGBarredPoint.class);
+private static final double POINT_RADIUS = 1.0;
 
 	private SVGShape shape;
 	private List<SVGErrorBar> errorBars;

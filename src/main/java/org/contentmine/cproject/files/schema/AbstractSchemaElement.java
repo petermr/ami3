@@ -7,8 +7,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.html.HtmlA;
@@ -63,12 +63,8 @@ import nu.xom.Node;
  *
  */
 public abstract class AbstractSchemaElement extends AbstractCMElement {
-	private static final Logger LOG = Logger.getLogger(AbstractSchemaElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public enum IteratorType {
+	private static final Logger LOG = LogManager.getLogger(AbstractSchemaElement.class);
+public enum IteratorType {
 		NONDIRECTORY("file"),
 		DIRECTORY("dir");
 		

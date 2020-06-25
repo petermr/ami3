@@ -1,15 +1,11 @@
 package org.contentmine.norma.picocli;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class DictionaryCreator {
-	private static final Logger LOG = Logger.getLogger(DictionaryCreator.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public DictionaryCreator() {
+	private static final Logger LOG = LogManager.getLogger(DictionaryCreator.class);
+public DictionaryCreator() {
 		
 	}
 	

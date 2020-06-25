@@ -3,7 +3,8 @@ package org.contentmine.svg2xml.text;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.text.line.StyleSpans;
 import org.contentmine.graphics.svg.text.structure.TextStructurer;
 import org.contentmine.svg2xml.SVG2XMLFixtures;
@@ -13,7 +14,7 @@ import org.junit.Test;
 
 public class ScriptLineTest {
 
-	private final static Logger LOG = Logger.getLogger(ScriptLineTest.class);
+	private final static Logger LOG = LogManager.getLogger(ScriptLineTest.class);
 	@Test
 	public void testFixtures() {
 		TextStructurer textContainer = null;

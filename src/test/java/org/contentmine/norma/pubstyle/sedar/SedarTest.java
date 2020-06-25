@@ -2,8 +2,8 @@ package org.contentmine.norma.pubstyle.sedar;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.svg.SVGElement;
@@ -16,10 +16,10 @@ import org.junit.Test;
 
 public class SedarTest {
 
-	private static final Logger LOG = Logger.getLogger(SedarTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-}
+	private static final Logger LOG = LogManager.getLogger(SedarTest.class);
+//	static {
+//		LOG.setLevel(Level.DEBUG);
+//}
 
 	@Test
 	@Ignore // too long

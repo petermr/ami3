@@ -6,8 +6,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.graphics.html.HtmlElement;
@@ -19,10 +19,8 @@ import org.junit.Test;
 
 public class PDFTest {
 
-	private static Logger LOG = Logger.getLogger(PDFTest.class);
-	static {LOG.setLevel(Level.DEBUG);}
-	
-	@Test
+	private static Logger LOG = LogManager.getLogger(PDFTest.class);
+@Test
 	// 16 pp
 	@Ignore // too long
 	public void testReadPDFNoTag() {

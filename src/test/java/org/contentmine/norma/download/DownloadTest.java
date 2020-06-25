@@ -2,8 +2,8 @@ package org.contentmine.norma.download;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.norma.NAConstants;
 import org.contentmine.norma.Norma;
 import org.junit.Ignore;
@@ -11,12 +11,8 @@ import org.junit.Test;
 
 public class DownloadTest {
 	
-	private static final Logger LOG = Logger.getLogger(DownloadTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(DownloadTest.class);
+@Test
 	@Ignore //non-public content
 	public void testTransformDownloads() {
 		File targetDir = new File("xref/sage");

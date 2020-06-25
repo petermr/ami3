@@ -4,8 +4,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.norma.pubstyle.DefaultPubstyleReader;
 import org.contentmine.norma.pubstyle.PubstyleReader;
@@ -25,13 +25,9 @@ import org.contentmine.norma.tagger.PubstyleTagger;
  */
 public class Pubstyle {
 
-	private static final Logger LOG = Logger.getLogger(Pubstyle.class);
+	private static final Logger LOG = LogManager.getLogger(Pubstyle.class);
 	
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public final static Pubstyle BMC     = new Pubstyle(
+public final static Pubstyle BMC     = new Pubstyle(
 			"bmc", 
 			NAConstants.MAIN_NORMA_DIR+"/"+"document/bmc/",
 			new BmcReader());

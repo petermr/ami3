@@ -9,8 +9,8 @@ import java.util.List;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.filefilter.NameFileFilter;
 import org.apache.commons.io.filefilter.WildcardFileFilter;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.norma.NormaFixtures;
 import org.contentmine.norma.pubstyle.stylesheet.PublisherIndex;
@@ -23,12 +23,8 @@ import nu.xom.Element;
 
 public class PublisherIndexTest {
 
-	private static final Logger LOG = Logger.getLogger(PublisherIndexTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(PublisherIndexTest.class);
+@Test
 	public void testFindPublisher() {
 		PublisherIndex publisherIndex = new PublisherIndex();
 		List<File> files = publisherIndex.readHtmlXslDirectory(NormaFixtures.MAIN_PUBSTYLE_DIR);

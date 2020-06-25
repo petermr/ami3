@@ -3,7 +3,8 @@ package org.contentmine.pdf2svg.xmllog;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.pdf2svg.xmllog.model.PDFChar;
 import org.contentmine.pdf2svg.xmllog.model.PDFCharPath;
 import org.contentmine.pdf2svg.xmllog.model.PDFFile;
@@ -22,7 +23,7 @@ import nu.xom.ValidityException;
 
 public class XMLLog {
 
-	private final static Logger LOG = Logger.getLogger(XMLLog.class);
+	private final static Logger LOG = LogManager.getLogger(XMLLog.class);
 
 	private static final String BASEFONT = "basefont";
 	private static final String BOLD = "bold";

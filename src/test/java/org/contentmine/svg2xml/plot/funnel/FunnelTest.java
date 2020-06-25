@@ -3,8 +3,8 @@ package org.contentmine.svg2xml.plot.funnel;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.svg2xml.SVG2XMLFixtures;
 import org.contentmine.svg2xml.plot.PlotStructurerTest;
 import org.junit.Ignore;
@@ -13,13 +13,8 @@ import org.junit.Test;
 public class FunnelTest {
 	
 	private static final String SVG_SUFFIX = "a.svg";
-	public static final Logger LOG = Logger.getLogger(FunnelTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-
-	@Test
+	public static final Logger LOG = LogManager.getLogger(FunnelTest.class);
+@Test
 	public void testBakker_Funnel() throws IOException {
 		String fileRoot = "bakker2014-page11";
 		File svgFile = PlotStructurerTest.createSVGPathsAndWriteToSVGPathFile(

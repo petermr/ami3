@@ -21,8 +21,8 @@ import static org.contentmine.eucl.euclid.EuclidConstants.S_EMPTY;
 import static org.contentmine.eucl.euclid.EuclidConstants.S_RBRAK;
 import static org.contentmine.eucl.euclid.test.EuclidTestBase.getAssertFormat;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int;
 import org.contentmine.eucl.euclid.IntMatrix;
 import org.contentmine.eucl.euclid.Real;
@@ -39,7 +39,7 @@ import org.junit.Test;
  */
 public class MatrixTest {
 
-	private final static Logger LOG = Logger.getLogger(MatrixTest.class);
+	private final static Logger LOG = LogManager.getLogger(MatrixTest.class);
 
 	/**
 	 * setup.
@@ -48,7 +48,7 @@ public class MatrixTest {
 	 */
 	@Before
 	public void setUp() throws Exception {
-		LOG.setLevel(Level.WARN);
+		//LOG.setLevel(Level.WARN);
 	}
 
 	/**

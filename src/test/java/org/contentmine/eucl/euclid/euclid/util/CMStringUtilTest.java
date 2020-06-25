@@ -3,19 +3,15 @@ package org.contentmine.eucl.euclid.euclid.util;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.util.CMStringUtil;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class CMStringUtilTest {
-	private static final Logger LOG = Logger.getLogger(CMStringUtilTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(CMStringUtilTest.class);
+@Test
 	public void testSortUniqueStringsByEmbeddedIntegers() {
 		List<String> strings = Arrays.asList(new String[] {
 				"foo5bar",

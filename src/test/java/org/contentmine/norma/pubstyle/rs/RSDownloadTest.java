@@ -8,8 +8,8 @@ import java.net.URL;
 import java.util.List;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.metadata.crossref.CrossrefDownloader;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.cproject.util.CMineUtil;
@@ -26,12 +26,8 @@ import com.google.gson.JsonParser;
 @Ignore // uses net
 public class RSDownloadTest {
 	
-	private static final Logger LOG = Logger.getLogger(RSDownloadTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(RSDownloadTest.class);
+@Test
 	public void testCreateDownloadUrl() throws IOException {
 		CrossrefDownloader rsDownLoader = new RSDownloader();
 		rsDownLoader.getOrCreateFilter().setISSN(RSDownloader.PRSB_1471_2954);

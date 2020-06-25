@@ -3,8 +3,8 @@ package org.contentmine.ami.tools.download.cord19;
 import java.util.Map.Entry;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.graphics.html.HtmlBr;
 import org.contentmine.graphics.html.HtmlDiv;
@@ -20,11 +20,8 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonPrimitive;
 
 public class CORD19Parser {
-	private static final Logger LOG = Logger.getLogger(CORD19Parser.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	int level = 0;
+	private static final Logger LOG = LogManager.getLogger(CORD19Parser.class);
+int level = 0;
 	private HtmlElement currentElement;
 	
 	public CORD19Parser() {

@@ -5,8 +5,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntRange;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGLine;
@@ -14,13 +14,9 @@ import org.contentmine.graphics.svg.rule.Rule;
 import org.contentmine.graphics.svg.text.build.Word;
 public class HorizontalRule extends Rule {
 
-	private static final Logger LOG = Logger.getLogger(HorizontalRule.class);
+	private static final Logger LOG = LogManager.getLogger(HorizontalRule.class);
 
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/** allowed misalignment for "same Y"*/
+/** allowed misalignment for "same Y"*/
 	public static final double Y_TOLERANCE = 2.0;
 	
 	private List<Word> wordList;

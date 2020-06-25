@@ -6,8 +6,8 @@ import nu.xom.Builder;
 import nu.xom.Element;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -18,12 +18,8 @@ import org.contentmine.cproject.args.DefaultArgProcessor;
 
 public class SequenceArgProcessorTest {
 	
-	private static final Logger LOG = Logger.getLogger(SequenceArgProcessorTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(SequenceArgProcessorTest.class);
+@Test
 	@Ignore // mend the test
 	public void testSequenceArgProcessor() throws Exception {
 		File newDir = new File("target/plosone/sequences/");

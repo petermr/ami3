@@ -4,7 +4,8 @@ import java.io.File;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.IntMatrix;
 import org.contentmine.eucl.euclid.Real2;
@@ -26,7 +27,7 @@ import org.junit.Test;
 
 public class PixelListTest {
 
-	private final static Logger LOG = Logger.getLogger(PixelListTest.class);
+	private final static Logger LOG = LogManager.getLogger(PixelListTest.class);
 	
 	private static PixelList CREATE_TEST_ISLAND() {
 		PixelList pixelList = new PixelList();

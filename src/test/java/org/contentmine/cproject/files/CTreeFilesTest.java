@@ -3,8 +3,8 @@ package org.contentmine.cproject.files;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.CMineFixtures;
 import org.contentmine.cproject.files.CTree.TableFormat;
 import org.contentmine.cproject.util.CMineTestFixtures;
@@ -24,12 +24,8 @@ import org.junit.Test;
 public class CTreeFilesTest {
 
 	;
-	private static final Logger LOG = Logger.getLogger(CTreeFilesTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(CTreeFilesTest.class);
+@Test
 	public void testAddFile() {
 		CTree cTree = new CTree(new File("zz/cTree"));
 		CTreeFiles cTreeFiles = new CTreeFiles(cTree);

@@ -2,7 +2,8 @@ package org.contentmine.image.pixel;
 
 import java.awt.Point;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2Range;
 
 /** used for filling a PixelList exterior and interior.
@@ -12,7 +13,7 @@ import org.contentmine.eucl.euclid.Int2Range;
  */
 public class PixelListFloodFill extends FloodFill {
 
-	private final static Logger LOG = Logger.getLogger(PixelListFloodFill.class);
+	private final static Logger LOG = LogManager.getLogger(PixelListFloodFill.class);
 	
 	private PixelList pixelList;
 	private int xMin;

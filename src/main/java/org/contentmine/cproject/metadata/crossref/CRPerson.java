@@ -2,8 +2,8 @@ package org.contentmine.cproject.metadata.crossref;
 
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -17,12 +17,8 @@ public class CRPerson {
 	private static final String FAMILY = "family";
 	private static final String AFFILIATION = "affiliation";
 	
-	private static final Logger LOG = Logger.getLogger(CRPerson.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private JsonArray affiliation;
+	private static final Logger LOG = LogManager.getLogger(CRPerson.class);
+private JsonArray affiliation;
 	private String family;
 	private String given;
 	private String orcid;

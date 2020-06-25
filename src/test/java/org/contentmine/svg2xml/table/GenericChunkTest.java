@@ -1,7 +1,7 @@
 package org.contentmine.svg2xml.table;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealArray;
 import org.contentmine.eucl.euclid.RealRangeArray;
@@ -12,12 +12,8 @@ import org.junit.Test;
 
 
 public class GenericChunkTest {
-	private static final Logger LOG = Logger.getLogger(GenericChunkTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(GenericChunkTest.class);
+@Test
 	public void testTDBlockBBox() {
 		TableChunk genericChunk = TableFixtures.createGenericChunkFromElements(TableFixtures.TDBLOCKFILE);
 		Real2Range bbox = genericChunk.getBoundingBox();

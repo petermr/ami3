@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** contains the regexLists to use.
  * 
@@ -15,12 +15,8 @@ import org.apache.log4j.Logger;
 public class CompoundRegexList implements Iterable<CompoundRegex> {
 
 	
-	private static final Logger LOG = Logger.getLogger(CompoundRegexList.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private List<CompoundRegex> compoundRegexList;
+	private static final Logger LOG = LogManager.getLogger(CompoundRegexList.class);
+private List<CompoundRegex> compoundRegexList;
 
 	public CompoundRegexList() {
 	}

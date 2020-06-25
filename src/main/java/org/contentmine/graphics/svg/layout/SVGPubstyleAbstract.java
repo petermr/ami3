@@ -1,7 +1,7 @@
 package org.contentmine.graphics.svg.layout;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGElement;
 
 /** an abstract (normally on page 1)
@@ -10,11 +10,8 @@ import org.contentmine.graphics.svg.SVGElement;
  *
  */
 public class SVGPubstyleAbstract extends AbstractPubstyle {
-	private static final Logger LOG = Logger.getLogger(SVGPubstyleAbstract.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public final static String SVG_CLASSNAME = "abstract";
+	private static final Logger LOG = LogManager.getLogger(SVGPubstyleAbstract.class);
+public final static String SVG_CLASSNAME = "abstract";
 
 	public SVGPubstyleAbstract() {
 		super();

@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.plot;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.RealArray;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGElement;
@@ -29,12 +29,8 @@ import org.contentmine.graphics.svg.cache.TextCache;
  */
 public class XPlotBox extends AbstractPlotBox {
 	
-	public static final Logger LOG = Logger.getLogger(XPlotBox.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	static final String MINOR_CHAR = "i";
+	public static final Logger LOG = LogManager.getLogger(XPlotBox.class);
+static final String MINOR_CHAR = "i";
 	static final String MAJOR_CHAR = "I";
 	
 	public XPlotBox() {

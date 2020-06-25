@@ -16,14 +16,15 @@
 package org.contentmine.font;
 
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import nu.xom.Attribute;
 import nu.xom.Element;
 
 public class CodePoint extends Element {
 
-	private final static Logger LOG = Logger.getLogger(CodePoint.class);
+	private final static Logger LOG = LogManager.getLogger(CodePoint.class);
 	
 	// XML
 	static final String TAG = "codePoint";

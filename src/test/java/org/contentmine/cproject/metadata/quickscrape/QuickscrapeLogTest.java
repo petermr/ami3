@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.CMineFixtures;
 import org.contentmine.cproject.util.CMineUtil;
 import org.junit.Assert;
@@ -16,12 +16,8 @@ import com.google.common.collect.Multimap;
 public class QuickscrapeLogTest {
 
 	private static final String TOTAL_LOG = "total.log";
-	private static final Logger LOG = Logger.getLogger(QuickscrapeLogTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String QUICKSCRAPE_2016_08_25_22_54_LOG = "quickscrape.2016-08-25-22-54.log";
+	private static final Logger LOG = LogManager.getLogger(QuickscrapeLogTest.class);
+private static final String QUICKSCRAPE_2016_08_25_22_54_LOG = "quickscrape.2016-08-25-22-54.log";
 	private static final String QUICKSCRAPE_2016_08_26_09_44_LOG = "quickscrape.2016-08-26-09-44.log";
 	
 	@Test

@@ -6,19 +6,15 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.RectTabColumn;
 import org.contentmine.cproject.util.RectangularTable;
 
 public class MetadataManager  {
 
-	private static final Logger LOG = Logger.getLogger(MetadataManager.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final String DOI = "DOI";
+	private static final Logger LOG = LogManager.getLogger(MetadataManager.class);
+public static final String DOI = "DOI";
 	public static final String CROSSREF = "CR";
 	public static final String QS = "QS";
 	public static final String SHUFFLED_URLS_TXT = "shuffledUrls.txt";

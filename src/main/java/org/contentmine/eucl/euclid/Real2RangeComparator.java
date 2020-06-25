@@ -2,7 +2,8 @@ package org.contentmine.eucl.euclid;
 
 import java.util.Comparator;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** comparator for use with TreeSet<Double> and other tools which normally require equals().
  * 
@@ -11,7 +12,7 @@ import org.apache.log4j.Logger;
  */
 public class Real2RangeComparator implements Comparator<Real2Range> {
 
-	private final static Logger LOG = Logger.getLogger(Real2RangeComparator.class);
+	private final static Logger LOG = LogManager.getLogger(Real2RangeComparator.class);
 
 	private RealRangeComparator comparatorx;
 	private RealRangeComparator comparatory;

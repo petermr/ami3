@@ -4,8 +4,8 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
@@ -16,12 +16,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class PageParserTest extends AbstractAMITest {
-	public static final Logger LOG = Logger.getLogger(PageParserTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	public static final Logger LOG = LogManager.getLogger(PageParserTest.class);
+@Test
 	public void testCustom() throws IOException {
       String root = "custom-render-demo"; // pageSserial=0
 	  File file = new File(PDF2SVG2, root + ".pdf");

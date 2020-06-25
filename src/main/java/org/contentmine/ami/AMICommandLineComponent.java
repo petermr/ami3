@@ -1,16 +1,12 @@
 package org.contentmine.ami;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.util.CMStringUtil;
 
 public class AMICommandLineComponent {
-	private static final Logger LOG = Logger.getLogger(AMICommandLineComponent.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private String id;
+	private static final Logger LOG = LogManager.getLogger(AMICommandLineComponent.class);
+private String id;
 	private String classname;
 	private String description;
 	

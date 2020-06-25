@@ -18,7 +18,8 @@ package org.contentmine.graphics.svg;
 
 import java.awt.Graphics2D;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Array;
 
 import nu.xom.Element;
@@ -32,7 +33,7 @@ import nu.xom.Text;
  */
 public class SVGTitle extends SVGElement {
 	
-	private final static Logger LOG = Logger.getLogger(SVGTitle.class);
+	private final static Logger LOG = LogManager.getLogger(SVGTitle.class);
 
 	public final static String TAG ="title";
 

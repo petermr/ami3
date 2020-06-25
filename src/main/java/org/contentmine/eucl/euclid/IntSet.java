@@ -23,7 +23,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 
@@ -48,7 +49,7 @@ import org.apache.log4j.Logger;
  */
 public class IntSet implements EuclidConstants {
 
-    final static Logger LOG = Logger.getLogger(IntSet.class);
+    final static Logger LOG = LogManager.getLogger(IntSet.class);
     private int array[];
     private int nelem = 0;
     private int min = Integer.MIN_VALUE;

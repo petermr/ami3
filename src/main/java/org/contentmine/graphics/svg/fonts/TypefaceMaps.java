@@ -10,8 +10,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
@@ -24,12 +24,8 @@ import com.google.common.collect.Multimap;
  *
  */
 public class TypefaceMaps implements Set<Typeface> {
-	private static final Logger LOG = Logger.getLogger(TypefaceMaps.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private Set<Typeface> typefaceSet;
+	private static final Logger LOG = LogManager.getLogger(TypefaceMaps.class);
+private Set<Typeface> typefaceSet;
 	private Map<String, Typeface> typefaceByName;
 	private Multimap<String, Typeface> typefaceByFontStyle;
 	private Multimap<String, Typeface> typefaceByFontWeight;

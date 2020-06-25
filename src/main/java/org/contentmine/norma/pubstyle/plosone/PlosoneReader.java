@@ -3,19 +3,15 @@ package org.contentmine.norma.pubstyle.plosone;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.norma.InputFormat;
 import org.contentmine.norma.pubstyle.PubstyleReader;
 
 public class PlosoneReader extends PubstyleReader {
 
-	private static final Logger LOG = Logger.getLogger(PlosoneReader.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static List<String> EXTRANEOUS_XPATHS = Arrays.asList(new String[] {
+	private static final Logger LOG = LogManager.getLogger(PlosoneReader.class);
+public static List<String> EXTRANEOUS_XPATHS = Arrays.asList(new String[] {
 		   "//*[local-name()='div' and @id='topbanner']", 
 		   "//*[local-name()='div' and @id='pagehdr-wrap']", 
 		   "//*[local-name()='div' and @id='nav-article']", 

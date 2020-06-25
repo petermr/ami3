@@ -3,8 +3,8 @@ package org.contentmine.ami.tools;
 import java.io.File;
 
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.html.HtmlElement;
@@ -54,13 +54,8 @@ public class TEI2HtmlConverter {
 	private static final String BIBL_STRUCT = "biblStruct";
 	private static final String LIST_BIBL = "listBibl";
 	private static final String HEAD = "head";
-	private static final Logger LOG = Logger.getLogger(TEI2HtmlConverter.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-
-	private static final String REFERENCES = "references";
+	private static final Logger LOG = LogManager.getLogger(TEI2HtmlConverter.class);
+private static final String REFERENCES = "references";
 	private static final String DIV = "div";
 	private static final String BACK = "back";
 	private static final String SOURCE_DESC = "sourceDesc";

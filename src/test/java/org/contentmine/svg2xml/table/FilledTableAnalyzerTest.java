@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.IntRange;
 import org.contentmine.eucl.euclid.Real2;
@@ -33,12 +33,8 @@ import com.google.common.collect.Multimap;
 import com.google.common.collect.Multiset;
 
 public class FilledTableAnalyzerTest {
-	private static final Logger LOG = Logger.getLogger(FilledTableAnalyzerTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	static final String FILLED = "filled";
+	private static final Logger LOG = LogManager.getLogger(FilledTableAnalyzerTest.class);
+static final String FILLED = "filled";
 	private static final File FILLED_DIR = new File(SVG2XMLFixtures.TABLE_DIR, FILLED);
 	private static final File FILLED1007_2 = new File(FILLED_DIR, "/_10.1007.s00038-009-8028-2/tables/table2/table.svg");
 	private static final File FILLED1007_3 = new File(FILLED_DIR, "/_10.1007.s00038-009-8028-2/tables/table3/table.svg");

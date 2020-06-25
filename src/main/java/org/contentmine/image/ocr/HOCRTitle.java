@@ -3,8 +3,8 @@ package org.contentmine.image.ocr;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealRange;
@@ -19,12 +19,8 @@ import nu.xom.Attribute;
 public class HOCRTitle {
 	
 	private static final double TEXT_SIZE_ANNOT = 7.0;
-	private static final Logger LOG = Logger.getLogger(HOCRTitle.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private static final String BASELINE = "baseline";
+	private static final Logger LOG = LogManager.getLogger(HOCRTitle.class);
+private static final String BASELINE = "baseline";
 	private static final String BBOX = "bbox";
 	private static final String IMAGE = "image";
 	private static final String PPAGENO = "ppageno";

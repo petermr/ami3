@@ -1,16 +1,12 @@
 package org.contentmine.norma.sections;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import nu.xom.Element;
 
 public class JATSIssueSponsorElement extends JATSElement implements IsInline {
-    private static final Logger LOG = Logger.getLogger(JATSIssueSponsorElement.class);
-    static {
-        LOG.setLevel(Level.DEBUG);
-    }
-
-    public static String TAG = "issue-sponsor";
+    private static final Logger LOG = LogManager.getLogger(JATSIssueSponsorElement.class);
+public static String TAG = "issue-sponsor";
 
     public JATSIssueSponsorElement(Element element) {
         super(element);

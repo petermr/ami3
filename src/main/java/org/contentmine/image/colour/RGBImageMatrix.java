@@ -2,8 +2,8 @@ package org.contentmine.image.colour;
 
 import java.awt.image.BufferedImage;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.ArrayBase.Trim;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.IntMatrix;
@@ -16,12 +16,8 @@ import org.contentmine.image.ImageUtil;
  *
  */
 public class RGBImageMatrix {
-	private static final Logger LOG = Logger.getLogger(RGBImageMatrix.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static int TYPE13 = 13;  // no idea what is does but it works
+	private static final Logger LOG = LogManager.getLogger(RGBImageMatrix.class);
+public static int TYPE13 = 13;  // no idea what is does but it works
 	
 	/** matrices are m[x][y] , i.e. m[cols][rows]
 	 * 

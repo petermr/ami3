@@ -6,8 +6,8 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.RealMatrix;
 import org.contentmine.graphics.svg.SVGHTMLFixtures;
@@ -19,12 +19,8 @@ import org.junit.Test;
 import junit.framework.Assert;
 
 public class RGBMatrixTest {
-	private static final Logger LOG = Logger.getLogger(RGBMatrixTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test 
+	private static final Logger LOG = LogManager.getLogger(RGBMatrixTest.class);
+@Test
 	/** rgb values
 	 * 
 	 */

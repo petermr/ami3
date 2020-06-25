@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.CMineFixtures;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
@@ -36,12 +36,8 @@ import com.google.gson.JsonParser;
  */
 public class MetadataTest {
 	
-	public static final Logger LOG = Logger.getLogger(MetadataTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private static final String HYPERLINK_1 = "\")";
+	public static final Logger LOG = LogManager.getLogger(MetadataTest.class);
+private static final String HYPERLINK_1 = "\")";
 	private static final String HYPERLINK_0 = "=HYPERLINK(\"";
 	
 	private static final String FILES_CSV = "files.csv";

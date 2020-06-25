@@ -3,8 +3,8 @@ package org.contentmine.ami.tools;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
@@ -51,13 +51,9 @@ description = {
 				
 })
 public class AMIMakeProjectTool extends AbstractAMITool {
-	private static final Logger LOG = Logger.getLogger(AMIMakeProjectTool.class);
+	private static final Logger LOG = LogManager.getLogger(AMIMakeProjectTool.class);
 
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-    @Option(names = {"--compress"},
+@Option(names = {"--compress"},
     		arity="0..1",
     		description = "compress and lowercase names. "
     		)
@@ -93,47 +89,48 @@ public class AMIMakeProjectTool extends AbstractAMITool {
     	new AMIMakeProjectTool().runCommands(args);
     }
 
-    protected void parseSpecifics() {
-    	addLoggingLevel(Level.INFO, "compress            "+compress);
-    	addLoggingLevel(Level.INFO, "omit                "+omitRegexList);
-    	addLoggingLevel(Level.INFO, "directory           "+cProject.getDirectory().getAbsolutePath());
-    	System.out.println("compress            "+compress);
-    	System.out.println("omit                "+omitRegexList);
-    	System.out.println("directory           "+cProject.getDirectory().getAbsolutePath());
-		System.out.println("file types          " + rawFileFormats);
-		System.out.println("logfile             " + logfile);
-    }
+	protected void parseSpecifics() {
+		LOG.info("compress            "+compress);
+		LOG.info("omit                "+omitRegexList);
+		LOG.info("directory           "+cProject.getDirectory().getAbsolutePath());
+		LOG.info("compress            "+compress);
+		LOG.info("omit                "+omitRegexList);
+		LOG.info("directory           "+cProject.getDirectory().getAbsolutePath());
+		LOG.info("file types          " + rawFileFormats);
+		LOG.info("logfile             " + logfile);
+	}
 
 	protected void runSpecifics() {
 		if (cProject != null) {
 			cProject.setOmitRegexList(omitRegexList);
-	        cProject.makeProjectRaw(rawFileFormats, compress);
-	        addMakeProjectLogfile();
+			cProject.makeProjectRaw(rawFileFormats, compress);
+			addMakeProjectLogfile();
 		}
-    }
+	}
 
 	private void addMakeProjectLogfile() {
 		if (logfile == null) {
-        	cProject.getMakeProjectLogfile();
-        } else if (NONE.equalsIgnoreCase(logfile.toString())) {
-        	LOG.warn("omitting logfile");
-        } else {
-        	cProject.getMakeProjectLogfile(logfile);
-        }
+			cProject.getMakeProjectLogfile();
+		} else if (NONE.equalsIgnoreCase(logfile.toString())) {
+			LOG.warn("omitting logfile");
+		} else {
+			cProject.getMakeProjectLogfile(logfile);
+		}
 	}
     
-    @Override
+	@Override
 	protected void validateCTree() {
 		if (cTreeDirectory() != null) {
-			addLoggingLevel(Level.WARN, "must not have --ctree: " + cTreeDirectory() + "; IGNORED");
-    	}
+			LOG.warn("must not have --ctree: " + cTreeDirectory() + "; IGNORED");
+			showstopperEncountered = true;
+		}
 	}
 	
-    @Override
-    protected void validateRawFormats() {
+	@Override
+	protected void validateRawFormats() {
 		if (rawFileFormats == null || rawFileFormats.size() == 0) {
-			addLoggingLevel(Level.ERROR, "must give at least one filetype (e.g. html); NO ACTION");
+			LOG.error("must give at least one filetype (e.g. html); NO ACTION");
+			showstopperEncountered = true;
 		}
-    }
-
+	}
 }

@@ -17,8 +17,8 @@ import org.apache.commons.io.FilenameUtils;
 //import org.apache.http.HttpStatus;
 //import org.apache.http.client.HttpClient;
 //import org.apache.commons.httpclient.params.HttpMethodParams;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AbstractAMIDictTool.RawFileFormat;
 import org.contentmine.cproject.CProjectArgProcessor;
 import org.contentmine.cproject.args.DefaultArgProcessor;
@@ -50,12 +50,8 @@ import nu.xom.Node;
 
 public class CProject extends CContainer {
 
-	public static final Logger LOG = Logger.getLogger(CProject.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final String PROJECT_TEMPLATE_XML = "cProjectTemplate.xml";
+	public static final Logger LOG = LogManager.getLogger(CProject.class);
+public static final String PROJECT_TEMPLATE_XML = "cProjectTemplate.xml";
 	public static final String TREE_TEMPLATE_XML    = "cTreeTemplate.xml";
 	public static final String URL_LIST             = "urlList.txt";
 	// attempt to capture history
@@ -995,7 +991,7 @@ public class CProject extends CContainer {
 	public void convertPSVGandWriteHtml() {
 		CTreeList cTreeList = getOrCreateCTreeList();
 		for (CTree cTree : cTreeList) {
-			DebugPrint.debugPrint(Level.INFO, "cTree: "+cTree);
+			LOG.info(DebugPrint.MARKER, "cTree: "+cTree);
 			cTree.createAndWriteScholorlyHtml();
 		}
 	}

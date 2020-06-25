@@ -6,7 +6,8 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.graphics.svg.util.ImageIOUtil;
 import org.contentmine.image.ImageAnalysisFixtures;
@@ -18,7 +19,7 @@ import org.junit.Test;
 
 public class PixelGraphTest {
 
-	private final static Logger LOG = Logger.getLogger(PixelGraphTest.class);
+	private final static Logger LOG = LogManager.getLogger(PixelGraphTest.class);
 	
 	@Test
 	public void testSingleCycle() {

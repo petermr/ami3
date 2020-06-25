@@ -2,7 +2,8 @@ package org.contentmine.svg2xml.analyzer;
 
 import java.io.File;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.svg2xml.SVG2XMLFixtures;
 import org.contentmine.svg2xml.page.PageAnalyzerTest;
 import org.junit.Ignore;
@@ -10,7 +11,7 @@ import org.junit.Test;
 
 public class SampleTest {
 
-	private final static Logger LOG = Logger.getLogger(SampleTest.class);
+	private final static Logger LOG = LogManager.getLogger(SampleTest.class);
 
 	public final static File AJCINDIR = new File(SVG2XMLFixtures.EXT_PDFTOP, "ajc");
 	public final static File AJCSVGDIR = new File(SVG2XMLFixtures.TARGET, "ajc");

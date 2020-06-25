@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.norma.NormaArgProcessor;
 import org.contentmine.norma.NormaFixtures;
@@ -13,12 +13,8 @@ import org.junit.Test;
 
 public class NCBIHtmlTest {
 
-	private static final Logger LOG = Logger.getLogger(NCBIHtmlTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(NCBIHtmlTest.class);
+@Test
 	public void testNCBIProject() throws IOException {
 		File ursus = new File(NormaFixtures.TEST_NORMA_DIR, "shtml/ursus");
 		File shtml = new File("target/ursus1/");

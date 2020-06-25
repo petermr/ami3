@@ -2,8 +2,8 @@ package org.contentmine.cproject.metadata.crossref;
 
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -21,12 +21,8 @@ import com.google.gson.JsonObject;
  */
 public class CRLink {
 
-	private static final Logger LOG = Logger.getLogger(CRLink.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public final static String INTENDED_APPLICATION = "intended-application";
+	private static final Logger LOG = LogManager.getLogger(CRLink.class);
+public final static String INTENDED_APPLICATION = "intended-application";
 	public final static String CONTENT_VERSION = "content-version";
 	public final static String CONTENT_TYPE = "content-type";
 	public final static String URL = "URL";

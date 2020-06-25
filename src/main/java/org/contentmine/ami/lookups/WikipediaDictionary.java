@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AbstractAMITool;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlA;
@@ -29,12 +29,8 @@ import nu.xom.Element;
  *
  */
 public class WikipediaDictionary {
-	public static final Logger LOG = Logger.getLogger(WikipediaDictionary.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final String AMBOX_REFIMPROVE = "ambox-Refimprove";
+	public static final Logger LOG = LogManager.getLogger(WikipediaDictionary.class);
+public static final String AMBOX_REFIMPROVE = "ambox-Refimprove";
 	public static final String CATLINKS = "catlinks";
 	public static final String CITE_REF = "cite_ref";
 	public static final String EDIT_SECTION = "Edit section: ";

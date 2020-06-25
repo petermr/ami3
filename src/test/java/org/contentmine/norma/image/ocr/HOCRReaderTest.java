@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -28,11 +28,8 @@ import org.junit.Test;
 public class HOCRReaderTest {
 	
 	
-	private static final Logger LOG = Logger.getLogger(HOCRReaderTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public final static File OCR_DIR = new File(NormaFixtures.TEST_IMAGES_DIR, "ocr/");
+	private static final Logger LOG = LogManager.getLogger(HOCRReaderTest.class);
+public final static File OCR_DIR = new File(NormaFixtures.TEST_IMAGES_DIR, "ocr/");
 	public final static Pattern IJSEM = Pattern.compile("(?:([0-9]+[^~]*)~)*"
 			+ "(?:(‘?[A-Z](?:[a-z]{2,}|[a-z]?\\.))~)"
 			+ "(?:([a-z]+’?)~)"

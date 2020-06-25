@@ -5,8 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.TreeSet;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntRange;
 
 /** manages in/exclusion of page numbers
@@ -17,12 +17,8 @@ import org.contentmine.eucl.euclid.IntRange;
 public class PageIncluder {
     
 
-	private static final Logger LOG = Logger.getLogger(PageIncluder.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private TreeSet<Integer> includeZeroBasedSortedPageNumbers;
+	private static final Logger LOG = LogManager.getLogger(PageIncluder.class);
+private TreeSet<Integer> includeZeroBasedSortedPageNumbers;
 	private TreeSet<Integer> excludeZeroBasedSortedPageNumbers;
 
 	public PageIncluder() {

@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 
 import nu.xom.Attribute;
@@ -20,12 +20,8 @@ import nu.xom.Element;
 public class QSRecord {
 
 	private static final String HTTP_DX_DOI_ORG = "http://dx.doi.org/";
-	private static final Logger LOG = Logger.getLogger(QSRecord.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private String url;
+	private static final Logger LOG = LogManager.getLogger(QSRecord.class);
+private String url;
 	private String end;
 	private List<String> middle;
 	private int captured;

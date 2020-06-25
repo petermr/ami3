@@ -1,7 +1,7 @@
 package org.contentmine.norma.sections;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.html.HtmlElement;
@@ -24,12 +24,8 @@ zone for each of the nine repeated measurements
 
  */
 public class JATSFigElement extends JATSElement implements IsBlock, IsFloat, HasTitle {
-	private static final Logger LOG = Logger.getLogger(JATSFigElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	static String TAG = "fig";
+	private static final Logger LOG = LogManager.getLogger(JATSFigElement.class);
+static String TAG = "fig";
 
 	public JATSFigElement(Element element) {
 		super(element);

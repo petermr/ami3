@@ -2,8 +2,8 @@ package org.contentmine.ami.plugins.species;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMIPluginOption;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.cproject.util.CellRenderer;
@@ -11,13 +11,8 @@ import org.contentmine.cproject.util.CellRenderer;
 public class SpeciesPluginOption extends AMIPluginOption {
 
 	public static final String TAG = "species";
-	private static final Logger LOG = Logger.getLogger(SpeciesPluginOption.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-
-	public SpeciesPluginOption() {
+	private static final Logger LOG = LogManager.getLogger(SpeciesPluginOption.class);
+public SpeciesPluginOption() {
 		super(TAG);
 	}
 

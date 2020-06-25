@@ -3,8 +3,8 @@ package org.contentmine.norma.sections;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.xml.XMLUtil;
 
@@ -41,12 +41,8 @@ public class JATSElementCitationElement extends JATSElement {
 	 */
 	
 	
-	private static final Logger LOG = Logger.getLogger(JATSElementCitationElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {
+	private static final Logger LOG = LogManager.getLogger(JATSElementCitationElement.class);
+public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {
 			JATSDivFactory.PERSON_GROUP,
 			JATSDivFactory.ARTICLE_TITLE,
 			JATSDivFactory.SOURCE,

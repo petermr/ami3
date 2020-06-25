@@ -2,7 +2,8 @@ package org.contentmine.svg2xml.text;
 
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.graphics.svg.text.line.TextLine;
 import org.contentmine.graphics.svg.text.structure.TextStructurer;
@@ -11,7 +12,7 @@ import org.junit.Test;
 
 public class TextContainerTest {
 
-	private final static Logger LOG = Logger.getLogger(TextContainerTest.class);
+	private final static Logger LOG = LogManager.getLogger(TextContainerTest.class);
 
 	@Test
 	public void testTextContainerRead() {

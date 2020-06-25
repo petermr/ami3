@@ -4,8 +4,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Array;
 import org.contentmine.graphics.AbstractCMElement;
@@ -23,11 +23,8 @@ import org.junit.Test;
  *
  */
 public class SVGPathDStringParserTest {
-	private static final Logger LOG = Logger.getLogger(SVGPathDStringParserTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	File TARGET_PATH = new File("target/path/");
+	private static final Logger LOG = LogManager.getLogger(SVGPathDStringParserTest.class);
+File TARGET_PATH = new File("target/path/");
 
 
 	public final static String dString = 

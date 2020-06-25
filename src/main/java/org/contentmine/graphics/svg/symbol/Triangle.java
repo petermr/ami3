@@ -1,10 +1,11 @@
 package org.contentmine.graphics.svg.symbol;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class Triangle extends AbstractSymbol {
 
-	private final static Logger LOG = Logger.getLogger(Triangle.class);
+	private final static Logger LOG = LogManager.getLogger(Triangle.class);
 
 	public final static String WHITE_UP_POINTING_TRIANGLE = "\u25b3";
 	public final static String BLACK_UP_POINTING_TRIANGLE = "\u25b2";

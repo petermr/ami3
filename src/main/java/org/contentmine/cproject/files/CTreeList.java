@@ -12,8 +12,8 @@ import java.util.Map;
 import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.graphics.svg.cache.GenericAbstractList;
 
@@ -30,12 +30,8 @@ import com.google.common.collect.Multiset;
 public class CTreeList extends GenericAbstractList<CTree> {
 	
 	public static final String FORBIDDEN_PREFIX = "__";
-	private static final Logger LOG = Logger.getLogger(CTreeList.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private Map<String, CTree> cTreeByName;
+	private static final Logger LOG = LogManager.getLogger(CTreeList.class);
+private Map<String, CTree> cTreeByName;
 	
 	public CTreeList() {
 		ensureCTreeList();

@@ -5,8 +5,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.util.MultisetUtil;
 import org.contentmine.graphics.svg.util.ImageIOUtil;
 import org.contentmine.image.ImageAnalysisFixtures;
@@ -23,12 +23,8 @@ import boofcv.io.image.UtilImageIO;
 import junit.framework.Assert;
 
 public class ForestPlotTest {
-	private static final Logger LOG = Logger.getLogger(ForestPlotTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(ForestPlotTest.class);
+@Test
 	/** gray - will need some processing
 	 * 
 	 */

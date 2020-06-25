@@ -2,8 +2,8 @@ package org.xmlcml.args.sandpit;
 
 import junit.framework.Assert;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Test;
 import org.xmlcml.euclid.RealArray;
 
@@ -12,11 +12,7 @@ public class SandpitArgProcessorDoubleTest {
 	
 	private static final Logger LOG = Logger
 			.getLogger(SandpitArgProcessorDoubleTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+@Test
 	public void testDouble() {
 		String args[] = {"--double", "4.5"};
 		SandpitArgProcessor sandpitArgProcessor = new SandpitArgProcessor(args);

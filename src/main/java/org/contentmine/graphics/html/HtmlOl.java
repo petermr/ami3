@@ -16,7 +16,8 @@
 
 package org.contentmine.graphics.html;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 /** base class for lightweight generic SVG element.
@@ -25,7 +26,7 @@ import org.apache.log4j.Logger;
  *
  */
 public class HtmlOl extends HtmlElement {
-	private final static Logger LOG = Logger.getLogger(HtmlOl.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlOl.class);
 	public final static String TAG = "ol";
 
 	/** constructor.

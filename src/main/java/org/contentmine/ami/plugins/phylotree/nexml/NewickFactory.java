@@ -4,19 +4,16 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.graphics.svg.SVGG;
 
 public class NewickFactory {
 
-	private static final Logger LOG = Logger.getLogger(NewickFactory.class);
+	private static final Logger LOG = LogManager.getLogger(NewickFactory.class);
 	private NWKTree nwkTree;
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	/**
+/**
 		 * from Wikpedia 
 	   Tree --> Subtree ";" | Branch ";"
 	   Subtree --> Leaf | Internal

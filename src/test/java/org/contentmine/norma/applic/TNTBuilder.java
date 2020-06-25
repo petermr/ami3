@@ -9,8 +9,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 
 import com.google.common.collect.HashMultiset;
@@ -24,12 +24,8 @@ public class TNTBuilder {
 
 	private Map<String, Integer> serialByTrivialName;
 
-	private static final Logger LOG = Logger.getLogger(TNTBuilder.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public TNTBuilder(EssoilDB essoilDB) {
+	private static final Logger LOG = LogManager.getLogger(TNTBuilder.class);
+public TNTBuilder(EssoilDB essoilDB) {
 		this.essoilDB = essoilDB;
 	}
 

@@ -4,8 +4,8 @@ import java.io.File;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Attribute;
@@ -26,12 +26,8 @@ import nu.xom.Node;
 public class XMLSnippets extends Element implements Iterable<Element>{
 
 
-	private static final Logger LOG = Logger.getLogger(XMLSnippets.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final String SNIPPETS = "snippets";
+	private static final Logger LOG = LogManager.getLogger(XMLSnippets.class);
+public static final String SNIPPETS = "snippets";
 	public static final String FILE = "file";
 	private static final String TITLE = "title";
 	

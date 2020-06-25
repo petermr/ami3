@@ -2,8 +2,8 @@ package org.contentmine.norma.util;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
@@ -14,14 +14,8 @@ import org.contentmine.norma.NormaArgProcessor;
 import nu.xom.Document;
 
 public class NormaTestFixtures {
-	private static final Logger LOG = Logger.getLogger(NormaTestFixtures.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-
-
-	public static void checkScholarlyHtml(File target, String start) {
+	private static final Logger LOG = LogManager.getLogger(NormaTestFixtures.class);
+public static void checkScholarlyHtml(File target, String start) {
 		CTree cTree = new CTree(target);
 		File shtml = cTree.getExistingScholarlyHTML();
 		if (shtml == null || !shtml.exists()) {

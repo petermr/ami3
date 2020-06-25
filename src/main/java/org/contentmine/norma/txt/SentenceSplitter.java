@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** very simple sentence splitter.
  * punctuation with following space.
@@ -19,12 +19,8 @@ import org.apache.log4j.Logger;
 public class SentenceSplitter {
 
 	;
-	private static final Logger LOG = Logger.getLogger(SentenceSplitter.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public final static Pattern SPLIT = Pattern.compile("[\\.\\?\\!][\\s+|\\n|\\r][A-Z]", Pattern.MULTILINE);
+	private static final Logger LOG = LogManager.getLogger(SentenceSplitter.class);
+public final static Pattern SPLIT = Pattern.compile("[\\.\\?\\!][\\s+|\\n|\\r][A-Z]", Pattern.MULTILINE);
 
 	private String rawText;
 	private List<String> sentenceList;

@@ -10,8 +10,8 @@ import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.word.WordCollectionFactory;
 import org.contentmine.norma.NAConstants;
 import org.eclipse.jetty.util.log.Log;
@@ -26,12 +26,8 @@ import com.google.common.collect.Multiset.Entry;
 public class DigramTest {
 
 	
-	private static final Logger LOG = Logger.getLogger(DigramTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private static final File TESSERACTED_DIR = new File("examples/peterijsem/tesseracted/");
+	private static final Logger LOG = LogManager.getLogger(DigramTest.class);
+private static final File TESSERACTED_DIR = new File("examples/peterijsem/tesseracted/");
 	private static final String TESSERACTED = ""+NAConstants.SLASH_AMI_RESOURCE+"/word/peterijsem/tesseracted/";
 	private static String PNG_TXT =TESSERACTED+"pngs.txt";
 	private List<String> files;

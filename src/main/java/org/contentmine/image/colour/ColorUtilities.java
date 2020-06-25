@@ -6,7 +6,8 @@ import java.awt.image.ColorConvertOp;
 import java.awt.image.Raster;
 import java.awt.image.WritableRaster;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** not yet working
  * 
@@ -14,7 +15,7 @@ import org.apache.log4j.Logger;
  *
  */
 public class ColorUtilities {
-	private final static Logger LOG = Logger.getLogger(ColorUtilities.class);
+	private final static Logger LOG = LogManager.getLogger(ColorUtilities.class);
 
 
 	public static final int ARGB_WHITE = 0xffffffff;

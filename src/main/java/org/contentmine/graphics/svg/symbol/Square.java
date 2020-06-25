@@ -1,10 +1,11 @@
 package org.contentmine.graphics.svg.symbol;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class Square extends AbstractSymbol {
 
-	private final static Logger LOG = Logger.getLogger(Square.class);
+	private final static Logger LOG = LogManager.getLogger(Square.class);
 	
 	public final static String WHITE_SQUARE = "\u25a1";
 	public final static String BLACK_SQUARE = "\u25a0";

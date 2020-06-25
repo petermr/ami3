@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.cache;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGCircle;
@@ -28,12 +28,8 @@ import org.contentmine.graphics.svg.objects.SVGTriangle;
  *
  */
 public class ShapeCache extends AbstractCache {
-	private static final Logger LOG = Logger.getLogger(ShapeCache.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private List<SVGPath> originalPathList;
+	private static final Logger LOG = LogManager.getLogger(ShapeCache.class);
+private List<SVGPath> originalPathList;
 	// this holds any paths that we can't convert
 	private List<SVGPath> pathList;
 	// derived

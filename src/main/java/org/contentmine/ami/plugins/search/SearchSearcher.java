@@ -2,8 +2,8 @@ package org.contentmine.ami.plugins.search;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMIArgProcessor;
 import org.contentmine.ami.plugins.AMISearcher;
 import org.contentmine.ami.plugins.AbstractSearchArgProcessor;
@@ -19,12 +19,8 @@ import nu.xom.Element;
 public class SearchSearcher extends AMISearcher {
 
 	
-	public static final Logger LOG = Logger.getLogger(SearchSearcher.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	List<RegexComponent> componentList;
+	public static final Logger LOG = LogManager.getLogger(SearchSearcher.class);
+List<RegexComponent> componentList;
 	private CompoundRegex compoundRegex;
 	Element resultElement;
 	private List<String> searchWords;

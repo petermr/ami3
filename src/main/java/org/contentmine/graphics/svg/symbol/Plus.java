@@ -1,10 +1,11 @@
 package org.contentmine.graphics.svg.symbol;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class Plus extends AbstractSymbol {
 
-	private final static Logger LOG = Logger.getLogger(Plus.class);
+	private final static Logger LOG = LogManager.getLogger(Plus.class);
 	
 	public final static String PLUS_SIGN = "+"; 
 	

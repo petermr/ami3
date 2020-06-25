@@ -1,7 +1,7 @@
 package org.contentmine.graphics.svg.builder;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGElement;
 
 /** holds multiple bond partners until we can sort them out later.
@@ -10,13 +10,9 @@ import org.contentmine.graphics.svg.SVGElement;
  *
  */
 public class MultipleBond {
-	private static final Logger LOG = Logger.getLogger(MultipleBond.class);
+	private static final Logger LOG = LogManager.getLogger(MultipleBond.class);
 	
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private SVGElement linei;
+private SVGElement linei;
 	private SVGElement linej;
 
 	public MultipleBond(SVGElement linei, SVGElement linej) {

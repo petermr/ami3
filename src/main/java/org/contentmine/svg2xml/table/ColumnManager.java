@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntRange;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
@@ -22,12 +22,8 @@ import com.google.common.collect.HashMultiset;
 import com.google.common.collect.Multiset;
 
 public class ColumnManager {
-	private static final Logger LOG = Logger.getLogger(ColumnManager.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public final static Comparator<ColumnManager> X_COMPARATOR;
+	private static final Logger LOG = LogManager.getLogger(ColumnManager.class);
+public final static Comparator<ColumnManager> X_COMPARATOR;
 	static {
 		X_COMPARATOR = new Comparator<ColumnManager>() {
 			public int compare(ColumnManager colManager1, ColumnManager colManager2 ) {

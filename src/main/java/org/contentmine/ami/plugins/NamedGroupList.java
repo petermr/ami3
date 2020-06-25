@@ -5,8 +5,8 @@ import java.util.List;
 
 import nu.xom.Attribute;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.ResultElement;
 
 /** the fields matched in a regex mapped to the field names.
@@ -17,11 +17,8 @@ import org.contentmine.cproject.files.ResultElement;
 public class NamedGroupList {
 
 	
-	private static final Logger LOG = Logger.getLogger(NamedGroupList.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final String POST = "post";
+	private static final Logger LOG = LogManager.getLogger(NamedGroupList.class);
+private static final String POST = "post";
 	private static final String PRE = "pre";
 	private static final String NAME = "name";
 	private static final String VALUE = "value";

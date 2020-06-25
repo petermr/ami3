@@ -7,7 +7,8 @@ import java.util.List;
 import javax.imageio.ImageIO;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.graphics.svg.util.ImageIOUtil;
@@ -39,7 +40,7 @@ public class ImageProcessor {
 
 	private static final int DEFAULT_THRESHOLD = 129;
 
-	private static final Logger LOG = Logger.getLogger(ImageProcessor.class);
+	private static final Logger LOG = LogManager.getLogger(ImageProcessor.class);
 
 	public static final String DEBUG = "-d";
 	public static final String DEBUG1 = "--debug";

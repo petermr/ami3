@@ -8,8 +8,8 @@ import java.util.Map;
 import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 
 import com.google.gson.JsonElement;
@@ -24,12 +24,8 @@ import com.google.gson.JsonParser;
 public class ManifestJson {
 
 	
-	private static final Logger LOG = Logger.getLogger(ManifestJson.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private JsonElement rootElement;
+	private static final Logger LOG = LogManager.getLogger(ManifestJson.class);
+private JsonElement rootElement;
 	private JsonObject rootObject;
 	private Set<Map.Entry<String,JsonElement>> objectSet;
 	private Map<String, ManifestElement> elementByKeyMap;

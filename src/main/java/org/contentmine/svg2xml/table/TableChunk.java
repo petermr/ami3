@@ -4,7 +4,8 @@ import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealRange;
 import org.contentmine.eucl.euclid.RealRange.Direction;
@@ -22,7 +23,7 @@ import org.contentmine.graphics.svg.text.structure.TextStructurer;
  */
 public class TableChunk {
 
-	private final static Logger LOG = Logger.getLogger(TableChunk.class);
+	private final static Logger LOG = LogManager.getLogger(TableChunk.class);
 	private final static PrintStream SYSOUT = System.out;
 
 	protected List<SVGElement> elementList;

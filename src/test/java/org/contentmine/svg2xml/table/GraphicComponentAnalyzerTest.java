@@ -1,7 +1,7 @@
 package org.contentmine.svg2xml.table;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** tests the detection of graphics components (rects, lines, etc.) and
  * maybe makes decisions on processing.
@@ -11,11 +11,8 @@ import org.apache.log4j.Logger;
  */
 @Deprecated //"move to package svg";
 public class GraphicComponentAnalyzerTest {
-	private static final Logger LOG = Logger.getLogger(GraphicComponentAnalyzerTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final String FILE = "file";
+	private static final Logger LOG = LogManager.getLogger(GraphicComponentAnalyzerTest.class);
+private static final String FILE = "file";
 
 //	@Test
 //	public void testSummarizeGraphicsComponents() throws IOException {

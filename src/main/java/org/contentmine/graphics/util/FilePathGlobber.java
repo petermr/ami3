@@ -23,8 +23,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** uses java NIO PathMatcher to glob files
  * 
@@ -100,11 +100,8 @@ public class FilePathGlobber {
 		URI
 	}
 
-	private static final Logger LOG = Logger.getLogger(FilePathGlobber.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private final static String JAR_STRING = "jar";
+	private static final Logger LOG = LogManager.getLogger(FilePathGlobber.class);
+private final static String JAR_STRING = "jar";
 	
 	private static final String GLOB = "glob:";
 	private static final String REGEX = "regex:";

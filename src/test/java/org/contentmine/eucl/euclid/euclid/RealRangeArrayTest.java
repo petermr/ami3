@@ -3,20 +3,16 @@ package org.contentmine.eucl.euclid.euclid;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.RealRange;
 import org.contentmine.eucl.euclid.RealRangeArray;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class RealRangeArrayTest {
-	private static final Logger LOG = Logger.getLogger(RealRangeArrayTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private RealRange rr10_25 = new RealRange(10.1, 25.1);
+	private static final Logger LOG = LogManager.getLogger(RealRangeArrayTest.class);
+private RealRange rr10_25 = new RealRange(10.1, 25.1);
 	private RealRange rr10_20 = new RealRange(10.1, 20.1);
 	private RealRange rr30_40 = new RealRange(30.1, 40.1);
 	private RealRange rr15_25 = new RealRange(15.1, 25.1);

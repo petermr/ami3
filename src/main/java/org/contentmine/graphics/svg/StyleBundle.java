@@ -21,7 +21,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLConstants;
 
 import nu.xom.Attribute;
@@ -30,7 +31,7 @@ import nu.xom.Element;
 public class StyleBundle implements XMLConstants {
 
 
-	private static Logger LOG = Logger.getLogger(StyleBundle.class);
+	private static Logger LOG = LogManager.getLogger(StyleBundle.class);
 
 	public static final String CLIP_PATH = "clip-path";
 	public static final String DASHARRAY = "stroke-dasharray";

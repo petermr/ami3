@@ -2,8 +2,8 @@ package org.contentmine.ami.tools.template;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
@@ -18,11 +18,8 @@ import nu.xom.Node;
 public abstract class AbstractTemplateElement extends Element {
 
 
-	private static final Logger LOG = Logger.getLogger(AbstractTemplateElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public static String TAG = "template";
+	private static final Logger LOG = LogManager.getLogger(AbstractTemplateElement.class);
+public static String TAG = "template";
 	
 	protected File currentDir;
 

@@ -7,8 +7,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.util.CMineGlobber;
 import org.contentmine.cproject.util.CMineUtil;
@@ -40,12 +40,8 @@ import nu.xom.Node;
 // FIXME put this into CorpusCache
 
 public class OccurrenceAnalyzer {
-	private static final Logger LOG = Logger.getLogger(OccurrenceAnalyzer.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/** mess.
+	private static final Logger LOG = LogManager.getLogger(OccurrenceAnalyzer.class);
+/** mess.
 	 * Species defaults to binomial
 	 * @author pm286
 	 *

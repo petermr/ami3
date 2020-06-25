@@ -19,8 +19,8 @@ package org.contentmine.graphics.svg;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Array;
 import org.contentmine.eucl.euclid.Real2Range;
@@ -32,12 +32,8 @@ import org.junit.Test;
 
 public class SVGPolygonTest {
 
-	private static final Logger LOG = Logger.getLogger(SVGPolygonTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public final static String ARROWHEAD_S = "<polygon  points=\"178.9 130.294 175.648 122.336 178.9 124.225 182.152 122.336\"/>";
+	private static final Logger LOG = LogManager.getLogger(SVGPolygonTest.class);
+public final static String ARROWHEAD_S = "<polygon  points=\"178.9 130.294 175.648 122.336 178.9 124.225 182.152 122.336\"/>";
 	public final static SVGPolygon ARROWHEAD;
 	static {
 		ARROWHEAD = (SVGPolygon) SVGElement.readAndCreateSVG(XMLUtil.parseXML(ARROWHEAD_S));

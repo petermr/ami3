@@ -17,7 +17,8 @@ import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLConstants;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -31,7 +32,7 @@ import nu.xom.XPathContext;
 
 public class HtmlUtil {
 
-	private final static Logger LOG = Logger.getLogger(HtmlUtil.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlUtil.class);
 	
     /** XPathContext for Html.
      */

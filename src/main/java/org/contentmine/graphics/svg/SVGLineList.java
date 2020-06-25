@@ -8,8 +8,8 @@ import java.util.Iterator;
 import java.util.List;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Array;
@@ -27,12 +27,8 @@ public class SVGLineList extends SVGG implements Iterable<SVGLine> {
 		VERTICAL_SIBLINGS, // with common X
 	}
 	
-	private static Logger LOG = Logger.getLogger(SVGLineList.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private double siblingEps = 0.2; // difference in common coordinate
+	private static Logger LOG = LogManager.getLogger(SVGLineList.class);
+private double siblingEps = 0.2; // difference in common coordinate
 	protected List<SVGLine> lineList;
 	private SiblingType type;
 

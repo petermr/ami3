@@ -2,17 +2,13 @@ package org.contentmine.svg2xml.cmucl;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Test;
 
 public class CMUCLIT {
-	private static final Logger LOG = Logger.getLogger(CMUCLIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(CMUCLIT.class);
+@Test
 	public void Nature_SciRep_1() {
 		String root = "Nature_SciRep_1";
 		CMUCLTest.markupAndOutputTables(root);

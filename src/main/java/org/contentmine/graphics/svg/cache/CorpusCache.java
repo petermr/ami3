@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeList;
@@ -29,12 +29,8 @@ import org.contentmine.graphics.util.FilePathGlobber;
  */
 public class CorpusCache extends ComponentCache {
 	
-	private static final Logger LOG = Logger.getLogger(CorpusCache.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static String DIR_REGEX = "(.*)/fulltext\\.(pdf|xml)";
+	private static final Logger LOG = LogManager.getLogger(CorpusCache.class);
+public static String DIR_REGEX = "(.*)/fulltext\\.(pdf|xml)";
 
 	private CProject cProject;
 	// documents and cTrees should be in sync

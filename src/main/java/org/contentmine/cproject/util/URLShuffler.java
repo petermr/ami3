@@ -7,20 +7,16 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import com.google.common.collect.HashMultiset;
 import com.google.common.collect.Multiset;
 
 public class URLShuffler {
 
-	public static final Logger LOG = Logger.getLogger(URLShuffler.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String SEP = "___"; // 
+	public static final Logger LOG = LogManager.getLogger(URLShuffler.class);
+private static final String SEP = "___"; // 
 	
 	// allows for pigeon holes larger than required. Not currently used.
 	private static int TOL = 1;

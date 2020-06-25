@@ -2,8 +2,8 @@ package org.contentmine.image.pixel;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.graphics.svg.SVGG;
@@ -13,12 +13,8 @@ import org.junit.Test;
 
 public class PixelListFloodFillTest {
 
-	private static final Logger LOG = Logger.getLogger(PixelListFloodFillTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private static String FILL[] ={
+	private static final Logger LOG = LogManager.getLogger(PixelListFloodFillTest.class);
+private static String FILL[] ={
 			"black", "red", "green", "blue", "yellow", "cyan", "magenta", "brown", "pink"
 	};
 	@Test

@@ -22,8 +22,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.pdfbox.contentstream.PDContentStream;
 import org.apache.pdfbox.contentstream.PDFGraphicsStreamEngine;
 import org.apache.pdfbox.contentstream.PDFStreamEngine;
@@ -56,12 +56,8 @@ import org.contentmine.eucl.euclid.Util;
  */
 public class CustomGraphicsStreamEngine extends PDFGraphicsStreamEngine
 {
-	private static final Logger LOG = Logger.getLogger(CustomGraphicsStreamEngine.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-    public static void main(String[] args) throws IOException
+	private static final Logger LOG = LogManager.getLogger(CustomGraphicsStreamEngine.class);
+public static void main(String[] args) throws IOException
     {
 //        File file = new File("src/main/resources/org/apache/pdfbox/examples/rendering/",
 //                "custom-render-demo.pdf");

@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.linestuff;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
@@ -19,12 +19,8 @@ import org.junit.Test;
 
 @Ignore("This really should be in POM or CL")
 public class PolylineIT {
-	private static final Logger LOG = Logger.getLogger(PolylineIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(PolylineIT.class);
+@Test
 	public void testFigure2b() {
 		String fileroot = "figure2b";
 		String dirRoot = "glyphs";

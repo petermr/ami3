@@ -3,17 +3,13 @@ package org.contentmine.norma.util;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AbstractAMITool;
 import org.contentmine.cproject.util.CMineUtil;
 
 public abstract class CommandRunner {
-	private static final Logger LOG = Logger.getLogger(CommandRunner.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
+	private static final Logger LOG = LogManager.getLogger(CommandRunner.class);
 //	protected static final String TESS_CONFIG = "replaceme";
 	protected static final String ENCODING = "UTF-8";
 	protected static final int SLEEP_TIME = 1500;

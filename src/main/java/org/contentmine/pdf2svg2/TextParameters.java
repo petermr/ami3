@@ -3,8 +3,8 @@ package org.contentmine.pdf2svg2;
 import java.awt.geom.AffineTransform;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.pdfbox.pdmodel.font.PDFont;
 import org.apache.pdfbox.pdmodel.font.PDFontDescriptor;
 import org.apache.pdfbox.util.Matrix;
@@ -17,11 +17,8 @@ import org.contentmine.eucl.euclid.Transform2;
 import org.contentmine.graphics.svg.SVGText;
 
 public class TextParameters {
-	private static final Logger LOG = Logger.getLogger(TextParameters.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public final static double EPS = 1e-10;
+	private static final Logger LOG = LogManager.getLogger(TextParameters.class);
+public final static double EPS = 1e-10;
 	public final static double SCALE_EPS = 1e-5;
 
 	private Matrix matrix;

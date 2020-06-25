@@ -1,7 +1,7 @@
 package org.contentmine.ami.dictionary;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -21,12 +21,8 @@ import com.google.gson.JsonPrimitive;
  */
 public class CMJsonTerm {
 
-	private static final Logger LOG = Logger.getLogger(CMJsonTerm.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String CONTENTMINE = "contentmine";
+	private static final Logger LOG = LogManager.getLogger(CMJsonTerm.class);
+private static final String CONTENTMINE = "contentmine";
 	private static final String IDENTIFIERS = "identifiers";
 	private static final String NAME = "name";
 	private static final String TERM = "term";

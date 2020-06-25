@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.text.build;
 import java.text.Normalizer;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGText;
@@ -12,14 +12,10 @@ import org.contentmine.graphics.svg.SVGText;
 public class TextUtil {
 
 	private static final double LIGATURE_SCALE = 0.7;
-	private static final Logger LOG = Logger.getLogger(TextUtil.class);
+	private static final Logger LOG = LogManager.getLogger(TextUtil.class);
 	private static final Double MIN_FONT_WIDTH = 1.0; // in units of 1000.
 	private static final Double DEFAULT_FONT_WIDTH = 750.0; /*500.0*/
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/** works but not in this context.
+/** works but not in this context.
 	 * 
 	 * @param s
 	 * @return

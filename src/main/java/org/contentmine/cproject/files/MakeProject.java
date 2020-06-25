@@ -3,8 +3,8 @@ package org.contentmine.cproject.files;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** runs the CProject "makeProject" command with default files and regex.
  * 
@@ -12,12 +12,8 @@ import org.apache.log4j.Logger;
  *
  */
 public class MakeProject {
-	private static final Logger LOG = Logger.getLogger(MakeProject.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static void main(String[] args) throws Exception {
+	private static final Logger LOG = LogManager.getLogger(MakeProject.class);
+public static void main(String[] args) throws Exception {
 		if (args.length == 0) {
 			help();
 		} else if (args.length > 1) {

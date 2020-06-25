@@ -6,8 +6,8 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.euclid.RealArray;
 import org.contentmine.graphics.svg.SVGElement;
@@ -19,12 +19,8 @@ import org.contentmine.graphics.svg.SVGUtil;
  *
  */
 public class OcrMerger {
-	private static final Logger LOG = Logger.getLogger(OcrMerger.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public enum MeanType {
+	private static final Logger LOG = LogManager.getLogger(OcrMerger.class);
+public enum MeanType {
 		arithmetic,
 		geometric,
 	}

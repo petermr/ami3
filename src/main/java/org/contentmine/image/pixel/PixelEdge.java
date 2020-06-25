@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.IntArray;
@@ -19,7 +20,7 @@ import org.contentmine.image.geom.DouglasPeucker;
 
 public class PixelEdge {
 
-	private final static Logger LOG = Logger.getLogger(PixelEdge.class);
+	private final static Logger LOG = LogManager.getLogger(PixelEdge.class);
 	
 	static Pattern EDGE_PATTERN = Pattern.compile("\\{([^\\}]*)\\}\\/\\[([^\\]]*)\\]");
 

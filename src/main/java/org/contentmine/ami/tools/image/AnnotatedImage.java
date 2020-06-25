@@ -2,8 +2,8 @@ package org.contentmine.ami.tools.image;
 
 import java.awt.image.BufferedImage;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.image.ImageUtil;
@@ -14,12 +14,8 @@ import org.contentmine.image.ImageUtil;
  *
  */
 public class AnnotatedImage {
-	private static final Logger LOG = Logger.getLogger(AnnotatedImage.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private BufferedImage image;
+	private static final Logger LOG = LogManager.getLogger(AnnotatedImage.class);
+private BufferedImage image;
 	private int width;
 	private int height;
 	private int pixelCount;

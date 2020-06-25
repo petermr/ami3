@@ -16,7 +16,8 @@
 
 package org.contentmine.eucl.euclid;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 
@@ -40,7 +41,7 @@ import org.apache.log4j.Logger;
  */
 
 public class Plane3 implements EuclidConstants {
-    final static Logger LOG = Logger.getLogger(Plane3.class);
+    final static Logger LOG = LogManager.getLogger(Plane3.class);
 
     /**
      * vector of plane (normalised)

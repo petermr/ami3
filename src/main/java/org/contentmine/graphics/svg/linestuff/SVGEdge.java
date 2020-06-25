@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.linestuff;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
@@ -12,12 +12,8 @@ import org.contentmine.graphics.svg.SVGLine;
 import org.contentmine.graphics.svg.SVGText;
 
 public class SVGEdge extends SVGLine {
-	private static final Logger LOG = Logger.getLogger(SVGEdge.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/** each node has a list of edges.
+	private static final Logger LOG = LogManager.getLogger(SVGEdge.class);
+/** each node has a list of edges.
 	 * ethene has 0,0
 	 * propene has 0,1
 	 * but-2-ene has 0,2

@@ -4,13 +4,14 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class VariableElement extends AbstractTElement {
 	
 	private static final String NAME = "name";
 
-	private static final Logger LOG = Logger.getLogger(VariableElement.class);
+	private static final Logger LOG = LogManager.getLogger(VariableElement.class);
 
 	public final static String TAG = "variable";
 

@@ -16,8 +16,8 @@ import nu.xom.Element;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.exception.ExceptionUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.xmlcml.files.QuickscrapeNorma;
 import org.xmlcml.files.QuickscrapeNormaList;
 import org.xmlcml.xml.XMLUtil;
@@ -27,12 +27,8 @@ import org.xmlcml.xml.XMLUtil;
 public class DefaultArgProcessor {
 
 	
-	private static final Logger LOG = Logger.getLogger(DefaultArgProcessor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final String MINUS = "-";
+	private static final Logger LOG = LogManager.getLogger(DefaultArgProcessor.class);
+public static final String MINUS = "-";
 	public static final String[] DEFAULT_EXTENSIONS = {"html", "xml", "pdf"};
 	public final static String H = "-h";
 	public final static String HELP = "--help";

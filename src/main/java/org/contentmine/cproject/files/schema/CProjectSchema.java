@@ -1,15 +1,11 @@
 package org.contentmine.cproject.files.schema;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class CProjectSchema extends AbstractSchemaElement {
-	private static final Logger LOG = Logger.getLogger(CProjectSchema.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public final static String TAG = "cProject";
+	private static final Logger LOG = LogManager.getLogger(CProjectSchema.class);
+public final static String TAG = "cProject";
 	
 	public CProjectSchema() {
 		super(TAG);

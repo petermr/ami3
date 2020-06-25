@@ -19,8 +19,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Marker;
+import org.apache.logging.log4j.MarkerManager;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
 import org.contentmine.ami.dictionary.DictionaryTerm;
 import org.contentmine.ami.lookups.WikiResult;
@@ -53,10 +55,10 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 	
 
 	public static final String UTF_8 = "UTF-8";
-	private static final Logger LOG = Logger.getLogger(AbstractAMIDictTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
+
+	/** Marker used to mark log statements that replaced call to the (now removed) `amiDebug` method. */
+	public static final Marker SPECIAL = MarkerManager.getMarker("amiDebug");
+	private static final Logger LOG = LogManager.getLogger(AbstractAMIDictTool.class);
 
 	// injected by picocli
 	@ParentCommand
@@ -82,8 +84,8 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 		printSpecificHeader();
 		parseSpecifics();
 
-		if (level != null && !Level.WARN.isGreaterOrEqual(level)) {
-			System.err.println("processing halted due to argument errors, level:" + level);
+		if (showstopperEncountered) {
+			LOG.fatal("processing halted due to argument errors");
 		} else {
 			runGenerics();
 			runSpecifics();
@@ -91,7 +93,6 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 	}
 
 	protected boolean parseGenerics() {
-		parent.setLogging();
 		printGenericValues();
 		return true;
 	}
@@ -364,7 +365,7 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 	protected File dictionaryTop;
 	protected List<WikiLink> wikiLinkList;
 	protected File contentMineDir = DEFAULT_CONTENT_MINE_DIR;
-	private Level level;
+	protected boolean showstopperEncountered;
 	protected boolean useAbsoluteNames;
 
 	public AbstractAMIDictTool() {
@@ -372,23 +373,6 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 	}
 	
 	private void initDict() {
-	}
-	
-	private void combineLevel(Level level) {
-		if (level == null) {
-			LOG.warn("null level");
-		} else if (this.level == null) {
-			this.level = level;
-		} else if (level.isGreaterOrEqual(this.level)) {
-			this.level = level;
-		}
-	}
-	
-	protected void addLoggingLevel(Level level, String message) {
-		combineLevel(level);
-		if (level.isGreaterOrEqual(Level.WARN)) {
-			System.err.println(this.getClass().getSimpleName() + ": " + level + ": " + message);
-		}
 	}
 
 	protected void runSub() {
@@ -422,7 +406,8 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 	    	if (!dictionaryTop.exists()) {
 	    		dictionaryTop.mkdirs();
 	    	} else if (!dictionaryTop.isDirectory()) {
-	    		addLoggingLevel(Level.ERROR, dictionaryTop + " must be a directory");
+	    		LOG.error(dictionaryTop + " must be a directory");
+				showstopperEncountered = true;
 	    	}
     	}
 	   	return dictionaryTop;
@@ -469,7 +454,8 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 					inputStream = new FileInputStream(inputFile);
 				}
 			} catch (IOException e) {
-				addLoggingLevel(Level.ERROR, "cannot read/open stream: " + input());
+				LOG.error("cannot read/open stream: " + input());
+				showstopperEncountered = true;
 			}
 		}
 		return inputStream;
@@ -484,7 +470,8 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 			directory = new File(parent.getDictionaryList().get(0)).getParentFile();
 			useAbsoluteNames = true;
 		} else {
-			addLoggingLevel(Level.ERROR, "Must give either 'directory' or existing absolute filenames of dictionaries");
+			LOG.error("Must give either 'directory' or existing absolute filenames of dictionaries");
+			showstopperEncountered = true;
 		}
 		return directory;
 	}
@@ -608,7 +595,7 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 			if (name != null) {
 				name = name.replace(" ", "_");
 				wikipediaUrl = new URL(HTTPS_EN_WIKIPEDIA_ORG_WIKI + name);
-				amiDebug(Level.INFO, "WP url: " + wikipediaUrl);
+				LOG.info(SPECIAL, "WP url: " + wikipediaUrl);
 				InputStream is = wikipediaUrl.openStream();
 				Element element = HtmlUtil.readTidyAndCreateElement(is);
 //				debugWikipediaPage(name, element);
@@ -620,10 +607,10 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 		} catch (MalformedURLException e) {
 			throw new RuntimeException("bad URL ", e);
 		} catch (IOException e) {
-			amiDebug(Level.ERROR, "wikimedia IO exception: " + e.getMessage());
+			LOG.error(SPECIAL, "wikimedia IO exception: " + e.getMessage());
 			throw new RuntimeException(e);
 		} catch (Exception e) {
-			amiDebug(Level.ERROR, "wikimedia Exception: " + e.getMessage());
+			LOG.error(SPECIAL, "wikimedia Exception: " + e.getMessage());
 			throw new RuntimeException(e);
 		}
 		return wikipediaPage;
@@ -631,38 +618,8 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 
 	private void debugWikipediaPage(String name, Element element) {
 		File xmlFile = new File("target/wikipedia/"+name+".html");
-		amiDebug(Level.INFO, "writing debug wikipedia page "+xmlFile);
+		LOG.info(SPECIAL, "writing debug wikipedia page "+xmlFile);
 		XMLUtil.writeQuietly(element, xmlFile, 1);
-	}
-	
-	public void amiDebug(Level level, String message) {
-		if (verbosity().length >= getEquivalentVerbosityInt(level)) {
-			PrintStream stream = level.isGreaterOrEqual(Level.WARN)  ? System.err : System.out;
-			String msg = level.toString() + ">" +
-				(Level.DEBUG.isGreaterOrEqual(level) ? (this.getClass().getSimpleName()+": ") : "") +
-				message;
-			stream.println(msg);
-		}
-	}
-
-	private static int getEquivalentVerbosityInt(Level level) {
-		int verbosityInt = -1;
-		if (level == null) {
-			verbosityInt = -1;
-		} else if (level.isGreaterOrEqual(Level.ERROR)) {
-			verbosityInt = -1;
-		} else if (level.isGreaterOrEqual(Level.WARN)) {
-			verbosityInt = 0;
-		} else if (level.isGreaterOrEqual(Level.INFO)) {
-			verbosityInt = 1;
-		} else if (level.isGreaterOrEqual(Level.DEBUG)) {
-			verbosityInt = 2;
-		} else if (level.isGreaterOrEqual(Level.TRACE)) {
-			verbosityInt = 3;
-		} else {
-			throw new RuntimeException("bad level: "+level);
-		}
-		return verbosityInt;
 	}
 
 	/**

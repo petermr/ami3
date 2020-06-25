@@ -1,6 +1,7 @@
 package org.contentmine.cproject.args;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** for communication between Tool family and ArgProcessor  objects.
  * ArgProcessors provide functionality for some tools, especially Words and Search

@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.http.client.HttpClient;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AbstractAMIDictTool.RawFileFormat;
 import org.contentmine.ami.tools.download.AbstractDownloader;
 import org.contentmine.ami.tools.download.AbstractLandingPage;
@@ -49,12 +49,8 @@ description = {
 })
 public class AMIDownloadTool extends AbstractAMITool {
 
-	private static final Logger LOG = Logger.getLogger(AMIDownloadTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public enum SearchSite {
+	private static final Logger LOG = LogManager.getLogger(AMIDownloadTool.class);
+public enum SearchSite {
 		biorxiv(
 				new BiorxivDownloader(),
 				new BiorxivMetadataEntry(),

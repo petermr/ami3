@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.diagramAnalyzer.DiagramTree;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.eucl.euclid.Int2;
@@ -25,12 +25,8 @@ import org.contentmine.image.pixel.PixelNodeList;
 public class NexmlFactory {
 
 	
-	private static final Logger LOG = Logger.getLogger(NexmlFactory.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	static final String TRUE = "true";
+	private static final Logger LOG = LogManager.getLogger(NexmlFactory.class);
+static final String TRUE = "true";
 	private static final String TREE_ID = "T";
 	private static final String OTU = "otu";
 

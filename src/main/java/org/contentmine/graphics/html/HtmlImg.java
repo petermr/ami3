@@ -16,7 +16,8 @@
 
 package org.contentmine.graphics.html;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import nu.xom.Attribute;
 
@@ -27,7 +28,7 @@ import nu.xom.Attribute;
  */
 public class HtmlImg extends HtmlElement {
 
-	private final static Logger LOG = Logger.getLogger(HtmlImg.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlImg.class);
 	public final static String TAG = "img";
 	
 	private static final String ALT = "alt";

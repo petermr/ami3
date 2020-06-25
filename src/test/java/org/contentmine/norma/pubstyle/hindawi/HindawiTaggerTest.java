@@ -4,7 +4,8 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.norma.NormaFixtures;
 import org.contentmine.norma.tagger.AbstractTElement;
@@ -21,7 +22,7 @@ import nu.xom.Element;
 
 public class HindawiTaggerTest {
 
-	private static final Logger LOG = Logger.getLogger(HindawiTaggerTest.class);
+	private static final Logger LOG = LogManager.getLogger(HindawiTaggerTest.class);
 	
 	@Test
 	public void testMetadataDefinitions() {

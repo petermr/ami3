@@ -20,8 +20,8 @@ import java.util.List;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.StringUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.Tokenizer;
@@ -71,12 +71,8 @@ import nu.xom.Element;
  */
 public class LuceneUtils {
 	
-	private static final Logger LOG = Logger.getLogger(LuceneUtils.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private static final String MODIFIED = "modified";
+	private static final Logger LOG = LogManager.getLogger(LuceneUtils.class);
+private static final String MODIFIED = "modified";
 	private static final String CONTENTS = "contents";
 	private static final String PATH = "path";
 

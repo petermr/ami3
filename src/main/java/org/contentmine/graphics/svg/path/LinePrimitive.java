@@ -2,7 +2,8 @@ package org.contentmine.graphics.svg.path;
 
 import java.awt.geom.GeneralPath;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Array;
@@ -11,7 +12,7 @@ import org.contentmine.graphics.svg.path.Arc.Direction;
 
 public class LinePrimitive extends SVGPathPrimitive {
 
-	private final static Logger LOG = Logger.getLogger(LinePrimitive.class);
+	private final static Logger LOG = LogManager.getLogger(LinePrimitive.class);
 	
 	public final static String TAG = "L";
 

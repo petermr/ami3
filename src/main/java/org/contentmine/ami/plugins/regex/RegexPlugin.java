@@ -1,7 +1,7 @@
 package org.contentmine.ami.plugins.regex;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMIPlugin;
 
 /** RegexPlugin
@@ -12,12 +12,8 @@ import org.contentmine.ami.plugins.AMIPlugin;
  */
 public class RegexPlugin extends AMIPlugin {
 
-	private static final Logger LOG = Logger.getLogger(RegexPlugin.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public RegexPlugin() {
+	private static final Logger LOG = LogManager.getLogger(RegexPlugin.class);
+public RegexPlugin() {
 		this.argProcessor = new RegexArgProcessor();
 	}
 

@@ -1,16 +1,13 @@
 package org.contentmine.graphics.svg.objects;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.AbstractCMElement;
 
 public class SVGBoxChart extends SVGDiagram {
 	
-	private static final Logger LOG = Logger.getLogger(SVGBoxChart.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public static final String BOX_CHART = "boxChart";
+	private static final Logger LOG = LogManager.getLogger(SVGBoxChart.class);
+public static final String BOX_CHART = "boxChart";
 
 	public SVGBoxChart() {
 		super();

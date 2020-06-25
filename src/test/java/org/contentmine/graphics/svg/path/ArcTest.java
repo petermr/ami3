@@ -2,7 +2,8 @@ package org.contentmine.graphics.svg.path;
 
 import java.io.File;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.graphics.svg.SVGElement;
@@ -14,7 +15,7 @@ import org.junit.Test;
 
 public class ArcTest {
 
-	private final static Logger LOG = Logger.getLogger(ArcTest.class);
+	private final static Logger LOG = LogManager.getLogger(ArcTest.class);
 
 	@Test
 	public void testArc() {

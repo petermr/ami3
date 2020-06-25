@@ -3,8 +3,8 @@ package org.contentmine.svg2xml.table;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntSet;
 import org.contentmine.eucl.euclid.RealArray;
 import org.contentmine.eucl.euclid.RealArray.Monotonicity;
@@ -23,12 +23,8 @@ import junit.framework.Assert;
  *
  */
 public class ShuffledColumnsTest {
-	private static final Logger LOG = Logger.getLogger(ShuffledColumnsTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(ShuffledColumnsTest.class);
+@Test
 	public void testShuffledColumns() {
 		File infile = new File(SVG2XMLFixtures.TABLE_TYPE_TEXT_DIR, "shuffledColumns.svg");
 		Assert.assertTrue(infile.exists());

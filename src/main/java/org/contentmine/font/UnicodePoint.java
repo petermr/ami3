@@ -1,6 +1,7 @@
 package org.contentmine.font;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLConstants;
 
 /** represent a Unicode codepoint.
@@ -17,7 +18,7 @@ public class UnicodePoint {
 	private static final int D800 = 0xD800;
 	private static final int _0400 = 0x0400;
 	private static final int _10000 = 0x10000;
-	private static final Logger LOG = Logger.getLogger(UnicodePoint.class);
+	private static final Logger LOG = LogManager.getLogger(UnicodePoint.class);
 	/** this displays a filled glyph so that it stands out as an error */
 	private static final String POINT_REPRESENTING_UNKNOWN = "U+274E"; // negative square cross 
 	

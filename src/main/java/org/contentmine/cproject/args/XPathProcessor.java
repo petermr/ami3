@@ -1,7 +1,7 @@
 package org.contentmine.cproject.args;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
@@ -9,11 +9,8 @@ import nu.xom.Element;
 public class XPathProcessor {
 
 	
-	private static final Logger LOG = Logger.getLogger(XPathProcessor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private String xpath;
+	private static final Logger LOG = LogManager.getLogger(XPathProcessor.class);
+private String xpath;
 
 	public XPathProcessor(String xpath) {
 		this.xpath = xpath;

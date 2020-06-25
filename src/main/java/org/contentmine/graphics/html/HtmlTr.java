@@ -19,7 +19,8 @@ package org.contentmine.graphics.html;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.util.HtmlUtil;
@@ -35,7 +36,7 @@ import nu.xom.Element;
  */
 public class HtmlTr extends HtmlElement {
 	@SuppressWarnings("unused")
-	private final static Logger LOG = Logger.getLogger(HtmlTr.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlTr.class);
 	public final static String TAG = "tr";
 	public final static String ALL_TR_XPATH = ".//h:tr";
 

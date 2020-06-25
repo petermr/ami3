@@ -16,7 +16,8 @@
 
 package org.contentmine.eucl.euclid;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 
@@ -42,7 +43,7 @@ import org.apache.log4j.Logger;
  */
 
 public class Point3 implements EuclidConstants {
-    final static Logger LOG = Logger.getLogger(Point3.class);
+    final static Logger LOG = LogManager.getLogger(Point3.class);
 
     /**
      * tolerance between crystal fractional coordinates. allows for 1/3 being

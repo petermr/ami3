@@ -16,7 +16,8 @@
 
 package org.contentmine.graphics.html;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 /** HTML map element 
@@ -24,7 +25,7 @@ import org.apache.log4j.Logger;
  *
  */
 public class HtmlMap extends HtmlElement {
-	private final static Logger LOG = Logger.getLogger(HtmlMap.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlMap.class);
 	public final static String TAG = "map";
 
 	/** constructor.

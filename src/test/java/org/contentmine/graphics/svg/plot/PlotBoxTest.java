@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.plot;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGHTMLFixtures;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -18,12 +18,8 @@ import junit.framework.Assert;
  */
 public class PlotBoxTest {
 	static final String TARGET_PLOT = "target/plot/";
-	private static final Logger LOG = Logger.getLogger(PlotBoxTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(PlotBoxTest.class);
+@Test
 	public void testBakker() throws IOException {
 		if (1 == 1) {
 			LOG.error("FIXME");

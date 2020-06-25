@@ -15,8 +15,8 @@ import java.util.List;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.filefilter.TrueFileFilter;
 import org.apache.commons.io.filefilter.WildcardFileFilter;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -48,12 +48,8 @@ import nu.xom.Attribute;
 //@Ignore // LONG TEST
 public class CMUCLTest {
 
-	public static final Logger LOG = Logger.getLogger(CMUCLTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	final static File CMUCL0 = new File(SVG2XMLFixtures.TABLE_DIR, "cmucl0/");
+	public static final Logger LOG = LogManager.getLogger(CMUCLTest.class);
+final static File CMUCL0 = new File(SVG2XMLFixtures.TABLE_DIR, "cmucl0/");
 	private static final File CMUCL_OUT_DIR = new File("target/table/cmucl0");
 	private static final String BORDER = "border";
 	public final static String TABLE = "table";
@@ -193,12 +189,8 @@ public class CMUCLTest {
 }
 
 class CopyFileVisitor extends SimpleFileVisitor<Path> {
-	private static final Logger LOG = Logger.getLogger(CopyFileVisitor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-    private final Path targetPath;
+	private static final Logger LOG = LogManager.getLogger(CopyFileVisitor.class);
+private final Path targetPath;
     private Path sourcePath = null;
 	private String srcRoot;
 	private StringBuilder csvBuilder;

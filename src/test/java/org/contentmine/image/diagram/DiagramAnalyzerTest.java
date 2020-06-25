@@ -4,8 +4,8 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.Iterator;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.CMineFixtures;
 import org.contentmine.graphics.svg.SVGCircle;
 import org.contentmine.graphics.svg.SVGElement;
@@ -35,11 +35,8 @@ import boofcv.io.image.UtilImageIO;
 import junit.framework.Assert;
 
 public class DiagramAnalyzerTest {
-	public static final Logger LOG = Logger.getLogger(DiagramAnalyzerTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public static String FUNNEL = "funnel";
+	public static final Logger LOG = LogManager.getLogger(DiagramAnalyzerTest.class);
+public static String FUNNEL = "funnel";
 	public static File TARGET_FUNNEL = new File(CMineFixtures.TARGET_DIR, FUNNEL+"/");
 	public static String ELECTRONIC = "electronic";
 	public static File TARGET_ELECTRONIC = new File(CMineFixtures.TARGET_DIR, ELECTRONIC+"/");

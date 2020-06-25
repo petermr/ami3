@@ -5,20 +5,16 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.Objects;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.norma.util.CommandRunner;
 import picocli.CommandLine;
 import picocli.CommandLine.Option;
 
 public class GrobidRunner extends CommandRunner {
 
-	public final static Logger LOG = Logger.getLogger(GrobidRunner.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/**
+	public final static Logger LOG = LogManager.getLogger(GrobidRunner.class);
+/**
 	 exe options
 
 	 close,

@@ -2,8 +2,8 @@ package org.contentmine.ami.plugins.gene;
 
 import java.util.ArrayList;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
 import org.contentmine.ami.dictionary.gene.HGNCDictionary;
 import org.contentmine.ami.plugins.AMIArgProcessor;
@@ -22,13 +22,9 @@ import org.contentmine.cproject.lookup.DefaultStringDictionary;
 public class GeneArgProcessor extends AMIArgProcessor {
 	
 	
-	public static final Logger LOG = Logger.getLogger(GeneArgProcessor.class);
+	public static final Logger LOG = LogManager.getLogger(GeneArgProcessor.class);
 	
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public GeneArgProcessor() {
+public GeneArgProcessor() {
 		super();
 	}
 

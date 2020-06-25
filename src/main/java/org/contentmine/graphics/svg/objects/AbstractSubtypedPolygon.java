@@ -1,18 +1,14 @@
 package org.contentmine.graphics.svg.objects;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Array;
 import org.contentmine.graphics.svg.SVGPolygon;
 import org.contentmine.graphics.svg.SVGPolyline;
 
 public abstract class AbstractSubtypedPolygon extends SVGPolygon {
-	private static final Logger LOG = Logger.getLogger(AbstractSubtypedPolygon.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	protected SVGPolyline polyline;
+	private static final Logger LOG = LogManager.getLogger(AbstractSubtypedPolygon.class);
+protected SVGPolyline polyline;
 
 	protected AbstractSubtypedPolygon() {
 		super();

@@ -1,7 +1,7 @@
 package org.contentmine.graphics.svg.pubstyle;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** a pubstyle 
  * usually but not alawys associated with a Publisher
@@ -10,9 +10,5 @@ import org.apache.log4j.Logger;
  *
  */
 public class PubStyle {
-	private static final Logger LOG = Logger.getLogger(PubStyle.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
+	private static final Logger LOG = LogManager.getLogger(PubStyle.class);
 }

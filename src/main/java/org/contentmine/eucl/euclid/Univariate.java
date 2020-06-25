@@ -19,7 +19,8 @@ package org.contentmine.eucl.euclid;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  * 
@@ -30,7 +31,7 @@ import org.apache.log4j.Logger;
 
 public class Univariate {
 
-	private static Logger LOG = Logger.getLogger(Univariate.class);
+	private static Logger LOG = LogManager.getLogger(Univariate.class);
 
 	RealArray realArray;
 	double[] array;

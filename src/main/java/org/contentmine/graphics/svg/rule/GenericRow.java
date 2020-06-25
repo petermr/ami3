@@ -1,7 +1,7 @@
 package org.contentmine.graphics.svg.rule;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealRange;
@@ -45,12 +45,8 @@ public class GenericRow {
 		}
 	}
 	
-	private static final Logger LOG = Logger.getLogger(GenericRow.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public final static double LINE_DELTA_Y = 0.5; // make lines at least 1 pixel thick
+	private static final Logger LOG = LogManager.getLogger(GenericRow.class);
+public final static double LINE_DELTA_Y = 0.5; // make lines at least 1 pixel thick
 	private static final double LINE_THICKNESS_FACTOR  = (1.0 + 1.0) + 0.1;
 	private SVGLine line;
 	private RowType type;

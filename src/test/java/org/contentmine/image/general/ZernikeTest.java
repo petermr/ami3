@@ -1,11 +1,12 @@
 package org.contentmine.image.general;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.image.ImageUtil;
 
 public class ZernikeTest {
 
-	private final static Logger LOG = Logger.getLogger(ZernikeTest.class);
+	private final static Logger LOG = LogManager.getLogger(ZernikeTest.class);
 	
 //	@Test
 //	public void testZernikeOrig1() throws Exception {

@@ -1,19 +1,14 @@
 package org.contentmine.ami.plugins.search;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.ResultsElement;
 
 public class SearchResultsElement extends ResultsElement {
 
 	
-	private static final Logger LOG = Logger
-			.getLogger(SearchResultsElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private static final String GENE = "gene";
+	private static final Logger LOG = LogManager.getLogger(SearchResultsElement.class);
+private static final String GENE = "gene";
 	private SearchResultsElement(String title) {
 		super(title);
 	}

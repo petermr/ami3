@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.normalize.AttributeComparer;
 
 import nu.xom.Attribute;
@@ -35,11 +35,8 @@ import nu.xom.Node;
  *
  */
 public class StyleAttributeFactory {
-	private static final Logger LOG = Logger.getLogger(StyleAttributeFactory.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public enum AttributeStrategy {
+	private static final Logger LOG = LogManager.getLogger(StyleAttributeFactory.class);
+public enum AttributeStrategy {
 		KEEP,
 		REMOVE,
 		OVERWRITE,

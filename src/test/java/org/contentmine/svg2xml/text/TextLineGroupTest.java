@@ -2,7 +2,8 @@ package org.contentmine.svg2xml.text;
 
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.graphics.svg.text.line.ScriptLine;
 import org.contentmine.graphics.svg.text.line.TextLine;
@@ -13,7 +14,7 @@ import org.junit.Test;
 public class TextLineGroupTest {
 
 	private static final String TERM = ScriptLine.TERM;
-	private final static Logger LOG = Logger.getLogger(TextLineGroupTest.class);
+	private final static Logger LOG = LogManager.getLogger(TextLineGroupTest.class);
 	
 	String lineSeparator = System.getProperty("line.separator");
 	

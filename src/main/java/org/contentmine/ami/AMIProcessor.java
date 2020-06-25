@@ -8,8 +8,9 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.CommandProcessor;
 import org.contentmine.ami.plugins.EntityAnalyzer;
 import org.contentmine.cproject.files.CProject;
@@ -39,11 +40,8 @@ public class AMIProcessor {
 	private static final String ARTIFACT_ID = "artifactId";
 	private static final String PLUGIN = "plugin";
 	private static final String LOCAL_NAME_BR = "local-name()";
-	private static final Logger LOG = Logger.getLogger(AMIProcessor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	// move to AMISearch...
+	private static final Logger LOG = LogManager.getLogger(AMIProcessor.class);
+// move to AMISearch...
 	public static final String SEARCH = "search";
 	public static final String HELP = "help";
 	private static final String MAIN_CLASS = "mainClass";
@@ -142,7 +140,6 @@ public class AMIProcessor {
 // flush old CProject as CTreeList needs to be reset		
 		cProject = new CProject(cProject.getDirectory());
 		cProject.setDebugLevel(debugLevel);
-
 	}
 
 	public void convertPDFOutputSVGFilesImageFiles() {
@@ -330,6 +327,7 @@ public class AMIProcessor {
 		}
 	}
 
+	@Deprecated
 	public void setDebugLevel(Level debug) {
 		this.debugLevel = debug;
 	}

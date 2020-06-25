@@ -12,8 +12,8 @@ import java.util.List;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.metadata.BlackList;
 import org.contentmine.cproject.metadata.DOIResolver;
@@ -39,12 +39,8 @@ public class CrossrefDownloader {
 	private static final String OFFSET = "&offset=";
 	private static final String ROWS = "&rows=";
 	
-	private static final Logger LOG = Logger.getLogger(CrossrefDownloader.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public enum Type {
+	private static final Logger LOG = LogManager.getLogger(CrossrefDownloader.class);
+public enum Type {
 		JOURNAL_ARTICLE("journal-article"),
 		;
 		private String name;

@@ -7,8 +7,8 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Attribute;
@@ -19,12 +19,8 @@ public class WordTree extends Element {
 
 	private static final String WORD = "word";
 	private static final String WORD_TREE = "wordTree";
-	private static final Logger LOG = Logger.getLogger(WordTree.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public WordTree() {
+	private static final Logger LOG = LogManager.getLogger(WordTree.class);
+public WordTree() {
 		this("Unknown");
 	}
 	

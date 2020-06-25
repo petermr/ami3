@@ -6,8 +6,8 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.IntRange;
 import org.contentmine.eucl.euclid.util.MultisetUtil;
@@ -27,12 +27,8 @@ import com.google.common.collect.Multiset.Entry;
  *
  */
 public class TextLine {
-	static final Logger LOG = Logger.getLogger(TextLine.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private IntRange yRange;
+	static final Logger LOG = LogManager.getLogger(TextLine.class);
+private IntRange yRange;
 	private List<Entry<IntRange>> yRangeMultisetEntryList;
 
 	private CharBoxList charBoxList;

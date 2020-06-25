@@ -3,7 +3,8 @@ package org.contentmine.graphics.svg.plot;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.euclid.Real2;
@@ -45,7 +46,7 @@ import nu.xom.Attribute;
  */
 public class Axis {
 
-	private final static Logger LOG = Logger.getLogger(Axis.class);
+	private final static Logger LOG = LogManager.getLogger(Axis.class);
 
 	public enum Direction {
 		BELOW,

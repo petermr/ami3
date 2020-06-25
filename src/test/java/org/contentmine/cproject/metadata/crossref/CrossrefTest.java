@@ -11,8 +11,8 @@ import java.util.regex.Pattern;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.tuple.MutablePair;
 import org.apache.commons.lang3.tuple.Pair;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.CMineFixtures;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTreeList;
@@ -38,11 +38,8 @@ import com.google.gson.JsonParser;
 public class CrossrefTest {
 
 	
-	private static final Logger LOG = Logger.getLogger(CrossrefTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final String QUICKSCRAPE = //  /Users/pm286/.nvm/v0.10.38/bin/quickscrape
+	private static final Logger LOG = LogManager.getLogger(CrossrefTest.class);
+private static final String QUICKSCRAPE = //  /Users/pm286/.nvm/v0.10.38/bin/quickscrape
 			"/usr/local/n/versions/node/6.2.1/bin/quickscrape";
 	private static final String GETPAPERS = //  /usr/local/n/versions/node/6.2.1/bin/getpapers
 			"/usr/local/n/versions/node/6.2.1/bin/getpapers";

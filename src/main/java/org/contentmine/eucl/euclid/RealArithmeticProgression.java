@@ -1,7 +1,7 @@
 package org.contentmine.eucl.euclid;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** an arithmetic progression generator.
  * 
@@ -14,12 +14,8 @@ import org.apache.log4j.Logger;
  *
  */
 public class RealArithmeticProgression {
-	private static final Logger LOG = Logger.getLogger(RealArithmeticProgression.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private Double start;
+	private static final Logger LOG = LogManager.getLogger(RealArithmeticProgression.class);
+private Double start;
 	private Integer size;
 	private Double delta;
 	

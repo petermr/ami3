@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealRange;
 import org.contentmine.eucl.euclid.RealRange.Direction;
@@ -33,11 +33,8 @@ import org.contentmine.graphics.svg.text.build.PhraseChunk;
 public class RowManager {
 
 
-	static final Logger LOG = Logger.getLogger(RowManager.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private double lineEps = 0.2; // are lines at same height?
+	static final Logger LOG = LogManager.getLogger(RowManager.class);
+private double lineEps = 0.2; // are lines at same height?
 
 	/** at some stage the objects need interfaces.
 	 * 

@@ -1,7 +1,7 @@
 package org.contentmine.ami.tools.ocr;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
@@ -18,11 +18,8 @@ import nu.xom.Element;
  *
  */
 public class GOCRBoxElement extends AbstractGOCRElement {
-	private static final Logger LOG = Logger.getLogger(GOCRBoxElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public static String TAG = "box";
+	private static final Logger LOG = LogManager.getLogger(GOCRBoxElement.class);
+public static String TAG = "box";
 	private static final String VALUE = "value";
 	private static final String ACHARS = "achars";
 	private double fontSize = 10;

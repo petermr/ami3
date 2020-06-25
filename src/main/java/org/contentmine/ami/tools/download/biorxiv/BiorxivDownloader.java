@@ -2,8 +2,8 @@ package org.contentmine.ami.tools.download.biorxiv;
 
 import java.util.ArrayList;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.download.AbstractDownloader;
 import org.contentmine.cproject.files.CProject;
 
@@ -98,10 +98,7 @@ public class BiorxivDownloader extends CSHRxivDownloader {
 //	private static final String HIGHWIRE_CITE_EXTRAS = "highwire-cite-extras";
 //	static final String CITE_EXTRAS_DIV = ".//*[local-name()='"+HtmlDiv.TAG+"' and @class='" + HIGHWIRE_CITE_EXTRAS + "']";
 
-	static final Logger LOG = Logger.getLogger(BiorxivDownloader.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
+	static final Logger LOG = LogManager.getLogger(BiorxivDownloader.class);
 //	private static final String HIGHWIRE_SEARCH_RESULTS_LIST = "highwire-search-results-list";
 	
 	public static final String BIORXIV_HOST = "www.biorxiv.org";

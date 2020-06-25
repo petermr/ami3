@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.cache;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.RealArray;
 import org.contentmine.graphics.svg.SVGHTMLFixtures;
 import org.contentmine.graphics.svg.fonts.StyleRecord;
@@ -25,12 +25,8 @@ import junit.framework.Assert;
  */
 public class MathCacheTest {
 	private static final File OUTDIR = new File("target/demos/varga/");
-	public static final Logger LOG = Logger.getLogger(MathCacheTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/** these are text processing initially but will turn into math later.
+	public static final Logger LOG = LogManager.getLogger(MathCacheTest.class);
+/** these are text processing initially but will turn into math later.
 	 * 
 	 */
 	

@@ -1,7 +1,7 @@
 package org.contentmine.ami.tools.table;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 /**
@@ -27,12 +27,8 @@ import org.contentmine.eucl.xml.XMLUtil;
  *
  */
 public class VariableMatcher extends AbstractTTElement {
-	private static final Logger LOG = Logger.getLogger(VariableMatcher.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static String TAG = "variable";
+	private static final Logger LOG = LogManager.getLogger(VariableMatcher.class);
+public static String TAG = "variable";
 	private static final String NAME = "name";
 	
 	public VariableMatcher(TTemplateList templateList) {

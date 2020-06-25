@@ -2,8 +2,8 @@ package org.contentmine.graphics.svg.misc;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Array;
@@ -25,11 +25,8 @@ import org.contentmine.graphics.svg.path.PathPrimitiveList;
 import org.contentmine.graphics.svg.path.QuadPrimitive;
 
 public class RandomJigsaw {
-	private static final Logger LOG = Logger.getLogger(RandomJigsaw.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public final static Double SCALE = 10.0;
+	private static final Logger LOG = LogManager.getLogger(RandomJigsaw.class);
+public final static Double SCALE = 10.0;
 	public final static Double TWOPI5 = 2 * Math.PI / 5.0;
 	public final static Double PHI = (1.0 + Math.sqrt(5.0)) / 2.0;
 	

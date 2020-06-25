@@ -5,8 +5,8 @@ import java.io.InputStream;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.XMLUtils;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.AbstractCMElement;
@@ -37,12 +37,8 @@ import nu.xom.Node;
 
 public class JATSFactory {
 
-	private static final Logger LOG = Logger.getLogger(JATSFactory.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public final static String P = "p";
+	private static final Logger LOG = LogManager.getLogger(JATSFactory.class);
+public final static String P = "p";
 	public final static String SEC = "sec";
 	public final static List<String> STRUCTURE_LIST = Arrays.asList(
 		new String[] {

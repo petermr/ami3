@@ -2,8 +2,8 @@ package org.contentmine.ami.tools.download.hal;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.download.AbstractLandingPage;
 import org.contentmine.eucl.xml.XMLUtil;
 
@@ -19,12 +19,8 @@ import org.contentmine.eucl.xml.XMLUtil;
  *
  */
 public class HALLandingPage extends AbstractLandingPage {
-	private static final Logger LOG = Logger.getLogger(HALLandingPage.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public HALLandingPage() {
+	private static final Logger LOG = LogManager.getLogger(HALLandingPage.class);
+public HALLandingPage() {
 		super();
 	}
 

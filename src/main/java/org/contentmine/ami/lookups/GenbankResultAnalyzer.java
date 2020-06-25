@@ -4,8 +4,8 @@ import java.util.List;
 
 import nu.xom.Element;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.eclipse.jetty.util.log.Log;
 import org.contentmine.eucl.xml.XMLUtil;
 
@@ -18,12 +18,8 @@ import org.contentmine.eucl.xml.XMLUtil;
  */
 public class GenbankResultAnalyzer {
 
-	private static final Logger LOG = Logger.getLogger(GenbankResultAnalyzer.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public final static String GBSEQ_TAXON_XPATH = "//GBSet/GBSeq/GBSeq_feature-table/GBFeature/GBFeature_quals/GBQualifier/GBQualifier_value[starts-with(.,'taxon:')]";
+	private static final Logger LOG = LogManager.getLogger(GenbankResultAnalyzer.class);
+public final static String GBSEQ_TAXON_XPATH = "//GBSet/GBSeq/GBSeq_feature-table/GBFeature/GBFeature_quals/GBQualifier/GBQualifier_value[starts-with(.,'taxon:')]";
 	public final static String GBSEQ_ORGANISM_XPATH = "//GBSet/GBSeq/GBSeq_organism";
 	public final static String ESEARCH_ID_XPATH = "//eSearchResult/IdList/Id";
 

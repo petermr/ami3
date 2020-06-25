@@ -2,8 +2,8 @@ package org.contentmine.ami.tools;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIFixtures;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
@@ -21,12 +21,8 @@ import org.junit.Test;
  *
  */
 public class AMIOCRTest extends AbstractAMITest {
-	public static final Logger LOG = Logger.getLogger(AMIOCRTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final File TEST_BATTERY10 = new File(NAConstants.TEST_AMI_DIR, "battery10");
+	public static final Logger LOG = LogManager.getLogger(AMIOCRTest.class);
+public static final File TEST_BATTERY10 = new File(NAConstants.TEST_AMI_DIR, "battery10");
 
 	@Test
 	/** 

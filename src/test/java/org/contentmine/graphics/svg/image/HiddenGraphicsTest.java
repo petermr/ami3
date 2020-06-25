@@ -5,7 +5,8 @@ import java.awt.Graphics2D;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.AbstractCMElement;
@@ -23,7 +24,7 @@ import nu.xom.Document;
 
 public class HiddenGraphicsTest {
 
-	private final static Logger LOG = Logger.getLogger(HiddenGraphicsTest.class);
+	private final static Logger LOG = LogManager.getLogger(HiddenGraphicsTest.class);
 	
 	@Test
 	public void testHiddenGraphics() throws IOException {

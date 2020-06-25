@@ -2,8 +2,8 @@ package org.contentmine.norma.sections;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIFixtures;
 import org.contentmine.cproject.util.XMLUtils;
 import org.contentmine.graphics.html.HtmlElement;
@@ -18,12 +18,8 @@ import nu.xom.Element;
  *
  */
 public class JATSSectionTaggerTest {
-	private static final Logger LOG = Logger.getLogger(JATSSectionTaggerTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(JATSSectionTaggerTest.class);
+@Test
 	public void readHTML0() {
 		Assert.assertTrue(AMIFixtures.TEST_SET_MARCHANTIA20_DIR + " should exist", AMIFixtures.TEST_SET_MARCHANTIA20_DIR.exists());
 		

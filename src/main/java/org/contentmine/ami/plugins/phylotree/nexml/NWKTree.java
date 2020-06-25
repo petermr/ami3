@@ -9,8 +9,8 @@ import nu.xom.Attribute;
 import nu.xom.Element;
 import nu.xom.Elements;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Transform2;
 import org.contentmine.eucl.euclid.Vector2;
@@ -28,12 +28,8 @@ public class NWKTree {
 	private static final String BSET = "bset";
 	private static final String WIDTH = "width";
 	
-	private static final Logger LOG = Logger.getLogger(NWKTree.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private NWKSubtree subtree;
+	private static final Logger LOG = LogManager.getLogger(NWKTree.class);
+private NWKSubtree subtree;
 	private NWKBranch branch;
 	private Element treeXML;
 

@@ -2,8 +2,8 @@ package org.contentmine.graphics.svg.misc;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Transform2;
@@ -16,12 +16,9 @@ import org.contentmine.graphics.svg.SVGSVG;
 
 public class Snowflake {
 
-	private static final Logger LOG = Logger.getLogger(Snowflake.class);
+	private static final Logger LOG = LogManager.getLogger(Snowflake.class);
 
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public final static Transform2 ROT300 = new Transform2(new Angle( 5. * Math.PI / 3.));
+public final static Transform2 ROT300 = new Transform2(new Angle( 5. * Math.PI / 3.));
 
 	private double scale = 400.0;
 	private Real2 points[] = new Real2[] {

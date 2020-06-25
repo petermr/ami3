@@ -8,8 +8,8 @@ import java.util.Collections;
 import java.util.List;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeList;
@@ -23,13 +23,8 @@ import org.junit.Test;
 import junit.framework.Assert;
 
 public class VectorSpectraIT {
-	private static final Logger LOG = Logger.getLogger(VectorSpectraIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(VectorSpectraIT.class);
+@Test
 	public void testCopyPDF2Target() {
 		String fileroot = "rsc";
 		File sourceDir = new File(SVGHTMLFixtures.G_SPECTRA_PLOT_DIR, fileroot);

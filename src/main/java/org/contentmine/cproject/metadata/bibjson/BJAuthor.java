@@ -1,16 +1,12 @@
 package org.contentmine.cproject.metadata.bibjson;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class BJAuthor {
 
-	private static final Logger LOG = Logger.getLogger(BJAuthor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private String name;
+	private static final Logger LOG = LogManager.getLogger(BJAuthor.class);
+private String name;
 	public BJAuthor() {
 		
 	}

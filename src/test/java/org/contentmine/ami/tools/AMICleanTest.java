@@ -9,8 +9,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.DirectoryDeleter;
 import org.contentmine.cproject.files.Unzipper;
@@ -26,12 +26,8 @@ import org.junit.Test;
  *
  */
 public class AMICleanTest {
-	private static final Logger LOG = Logger.getLogger(AMICleanTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(AMICleanTest.class);
+@Test
 	public void testHelp() {
 		new AMICleanTool().runCommands(new String[]{});
 	}

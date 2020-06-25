@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.Util;
@@ -23,12 +23,8 @@ import nu.xom.Element;
  */
 public class TQueryTool {
 	
-	private static final Logger LOG = Logger.getLogger(TQueryTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final String QUERY = "query";
+	private static final Logger LOG = LogManager.getLogger(TQueryTool.class);
+public static final String QUERY = "query";
 	private static final String FIND = "find";
 	private static final String MATCH = "match";
 	private static final String AND = "AND";

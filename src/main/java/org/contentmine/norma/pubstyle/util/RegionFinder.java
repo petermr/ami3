@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineGlobber;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.graphics.svg.SVGElement;
@@ -20,12 +20,8 @@ import org.contentmine.svg2xml.page.PageCropper;
  *
  */
 public class RegionFinder {
-	private static final Logger LOG = Logger.getLogger(RegionFinder.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String BLOCK_ROOT = "block";
+	private static final Logger LOG = LogManager.getLogger(RegionFinder.class);
+private static final String BLOCK_ROOT = "block";
 	private static final String BLOCKS_BLOCK = "blocks/block";
 	private static final String FULLTEXT_SVG_REGEX = ".*/svg/fulltext\\-page\\d+\\.svg";
 	private static final String FULLTEXT_PAGE = "fulltext-page";

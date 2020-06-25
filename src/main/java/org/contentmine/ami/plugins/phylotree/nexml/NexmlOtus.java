@@ -7,12 +7,13 @@ import java.util.Map;
 
 import nu.xom.Element;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 public class NexmlOtus extends NexmlElement {
 
-	private final static Logger LOG = Logger.getLogger(NexmlOtus.class);
+	private final static Logger LOG = LogManager.getLogger(NexmlOtus.class);
 	public final static String TAG = "otus";
 	private Map<String, NexmlOtu> otuByIdMap;
 	private List<NexmlOtu> otuList;

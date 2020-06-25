@@ -7,8 +7,8 @@ import java.util.Collections;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.DebugPrint;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -33,12 +33,8 @@ import picocli.CommandLine.Option;
 )
 public class AMIAssertTool extends AbstractAMITool {
 
-	private static final Logger LOG = Logger.getLogger(AMIAssertTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private static final String FAIL = "fail";
+	private static final Logger LOG = LogManager.getLogger(AMIAssertTool.class);
+private static final String FAIL = "fail";
 
 	public enum AssertType {
 		file,
@@ -137,7 +133,6 @@ public class AMIAssertTool extends AbstractAMITool {
 		System.out.println("widths              " + widths);
 		System.out.println("xpath               " + xpath);
 		System.out.println();
-
 	}
 
 
@@ -145,7 +140,7 @@ public class AMIAssertTool extends AbstractAMITool {
     protected void runSpecifics() {
     	if (processTrees()) { 
     	} else {
-			DebugPrint.debugPrint(Level.ERROR, "must give cProject or cTree");
+			LOG.error(DebugPrint.MARKER, "must give cProject or cTree");
 	    }
     }
 

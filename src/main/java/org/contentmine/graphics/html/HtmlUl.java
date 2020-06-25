@@ -16,7 +16,8 @@
 
 package org.contentmine.graphics.html;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import nu.xom.Elements;
 
@@ -27,7 +28,7 @@ import nu.xom.Elements;
  *
  */
 public class HtmlUl extends HtmlElement {
-	private final static Logger LOG = Logger.getLogger(HtmlUl.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlUl.class);
 	public final static String TAG = "ul";
 
 	/** constructor.

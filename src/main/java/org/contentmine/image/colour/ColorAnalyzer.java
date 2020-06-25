@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.IntRange;
@@ -91,12 +91,8 @@ RGB to HSV:
 public class ColorAnalyzer {
 
 	private static final String CHANNEL = "channel";
-	private static final Logger LOG = Logger.getLogger(ColorAnalyzer.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String COUNT = "count";
+	private static final Logger LOG = LogManager.getLogger(ColorAnalyzer.class);
+private static final String COUNT = "count";
 	private static final String AVERAGE = "average";
 	private static final String MINPIXEL = "minpixel";
 	private static final String MAXPIXEL = "maxpixel";

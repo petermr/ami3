@@ -5,8 +5,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGCircle;
 import org.contentmine.graphics.svg.SVGElement;
@@ -22,12 +22,8 @@ import org.junit.Test;
 
 public class SVGBarredPointTest {
 
-	private static final Logger LOG = Logger.getLogger(SVGBarredPointTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private final static double RAD = 5.0;
+	private static final Logger LOG = LogManager.getLogger(SVGBarredPointTest.class);
+private final static double RAD = 5.0;
 	
 	@Test
 	public void testBarredPoint() throws IOException {

@@ -2,17 +2,13 @@ package org.contentmine.norma.txt;
 
 import java.util.Iterator;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public abstract class AbstractSection implements Iterable<AnnotatedLine> {
 
-	private static final Logger LOG = Logger.getLogger(AbstractSection.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public AnnotatedLineContainer localLineContainer;
+	private static final Logger LOG = LogManager.getLogger(AbstractSection.class);
+public AnnotatedLineContainer localLineContainer;
 	protected AnnotatedLineContainer parentLineContainer;
 
 	public Iterator<AnnotatedLine> iterator() {

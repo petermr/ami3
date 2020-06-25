@@ -5,8 +5,8 @@ import java.util.regex.Pattern;
 
 import nu.xom.Element;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.Transform2;
 import org.contentmine.eucl.euclid.Vector2;
@@ -20,12 +20,8 @@ Branch --> Subtree Length
  */
 public class NWKBranch {
 
-	private static final Logger LOG = Logger.getLogger(NWKBranch.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private final static Pattern BRANCH_SEPARATOR_PATTERN = Pattern.compile("\\s*,\\s*");
+	private static final Logger LOG = LogManager.getLogger(NWKBranch.class);
+private final static Pattern BRANCH_SEPARATOR_PATTERN = Pattern.compile("\\s*,\\s*");
 	
 	private NWKSubtree subtree;
 	private NWKLength length;

@@ -9,7 +9,8 @@ import nu.xom.Attribute;
 import nu.xom.Element;
 import nu.xom.Elements;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.phylotree.nexml.NexmlEdge;
 import org.contentmine.ami.plugins.phylotree.nexml.NexmlNEXML;
 import org.contentmine.ami.plugins.phylotree.nexml.NexmlNode;
@@ -41,7 +42,7 @@ public class SVGXTree extends SVGG {
 
 	private static final String LENGTH = "length";
 
-	private final static Logger LOG = Logger.getLogger(SVGXTree.class);
+	private final static Logger LOG = LogManager.getLogger(SVGXTree.class);
 	
 	private static final String ID = "id";
 	private static final String LABEL = "label";

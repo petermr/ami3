@@ -6,7 +6,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.CHESConstants;
 import org.contentmine.cproject.CProjectArgProcessor;
 import org.contentmine.cproject.lookup.DefaultStringDictionary;
@@ -17,12 +18,8 @@ import org.junit.Test;
 @Ignore // moved to AMI
 public class DictionaryTest {
 
-	private static final Logger LOG = Logger.getLogger(DictionaryTest.class);
-	static {
-		LOG.setLevel(org.apache.log4j.Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(DictionaryTest.class);
+@Test
 	public void testDictionaries() throws IOException {
 		DefaultArgProcessor argProcessor = new CProjectArgProcessor();
 		File targetFile = new File("target/test/log/");

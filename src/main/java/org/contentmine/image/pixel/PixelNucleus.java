@@ -3,7 +3,8 @@ package org.contentmine.image.pixel;
 import java.util.Iterator;
 import java.util.Set;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.Real2;
@@ -21,7 +22,7 @@ public class PixelNucleus implements Comparable<PixelNucleus> {
 
 	private static final String END_STRING = "}";
 	private static final String START_STRING = "{";
-	private static Logger LOG = Logger.getLogger(PixelNucleus.class);
+	private static Logger LOG = LogManager.getLogger(PixelNucleus.class);
 
 	public enum PixelJunctionType {
 		CROSS,

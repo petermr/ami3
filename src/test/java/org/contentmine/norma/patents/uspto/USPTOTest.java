@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.util.CMineTestFixtures;
@@ -18,13 +18,8 @@ import org.junit.Test;
 
 
 public class USPTOTest {
-	private static final Logger LOG = Logger.getLogger(USPTOTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(USPTOTest.class);
+@Test
 	@Ignore // something wrong with scholarly html
 	public void testReadCTree() throws IOException {
 		File target = new File("target/us08978/US08978162-20150317");

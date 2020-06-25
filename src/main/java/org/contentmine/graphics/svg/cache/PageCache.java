@@ -6,8 +6,8 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.Real2Range;
@@ -41,12 +41,8 @@ import com.google.common.collect.Multiset;
  *
  */
 public class PageCache extends ComponentCache {
-	private static final Logger LOG = Logger.getLogger(PageCache.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public final static Double DEFAULT_XMAX = 600.0;
+	private static final Logger LOG = LogManager.getLogger(PageCache.class);
+public final static Double DEFAULT_XMAX = 600.0;
 	public final static Double DEFAULT_YMAX = 800.0;
 
 	private File inputSvgFile;

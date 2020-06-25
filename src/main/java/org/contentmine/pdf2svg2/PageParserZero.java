@@ -16,8 +16,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.font.PDFont;
 import org.apache.pdfbox.pdmodel.font.PDFontDescriptor;
@@ -82,12 +82,8 @@ import nu.xom.Attribute;
  *
  */
 public class PageParserZero extends AbstractPageParser {
-	private static final Logger LOG = Logger.getLogger(PageParserZero.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String CLIP_PATH = "clipPath";
+	private static final Logger LOG = LogManager.getLogger(PageParserZero.class);
+private static final String CLIP_PATH = "clipPath";
 	private static final Graphics2D TEXT = null;
 	private static final String SVG_RHMARGIN = "svg_rhmargin";
 	private SVGG svgg;

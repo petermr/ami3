@@ -8,8 +8,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
 import org.contentmine.ami.plugins.word.WordCollectionFactory;
 import org.contentmine.cproject.files.AbstractSearcher;
@@ -25,12 +25,8 @@ import nu.xom.Element;
 public class AMISearcher extends AbstractSearcher {
 
 	private static final String NOT_FOUND = "NOT_FOUND";
-	public static final Logger LOG = Logger.getLogger(AMISearcher.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private String exactMatch;
+	public static final Logger LOG = LogManager.getLogger(AMISearcher.class);
+private String exactMatch;
 	private AbstractLookup lookup;
 	private NamedPattern namedPattern;
 	private AMIArgProcessor amiArgProcessor;
@@ -47,11 +43,7 @@ public class AMISearcher extends AbstractSearcher {
 	public Pattern pattern;
 	public List<String> stringList;
 	
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public AMISearcher(AMIArgProcessor argProcessor) {
+public AMISearcher(AMIArgProcessor argProcessor) {
 		this.amiArgProcessor = argProcessor;
 		contextCounts = argProcessor.getContextCount();
 		if (this.amiArgProcessor == null) {

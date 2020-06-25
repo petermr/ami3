@@ -16,7 +16,8 @@
 
 package org.contentmine.eucl.euclid;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  * Int supports various utilities for integers Use Integer where you want a
@@ -25,7 +26,7 @@ import org.apache.log4j.Logger;
  * @author (C) P. Murray-Rust, 1996
  */
 public abstract class Int implements EuclidConstants {
-    final static Logger LOG = Logger.getLogger(Int.class);
+    final static Logger LOG = LogManager.getLogger(Int.class);
     /**
      * set an array to zero
      * 

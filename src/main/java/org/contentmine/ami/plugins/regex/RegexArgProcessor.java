@@ -6,8 +6,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMIArgProcessor;
 import org.contentmine.ami.plugins.AMISearcher;
 import org.contentmine.ami.plugins.AbstractSearchArgProcessor;
@@ -29,12 +29,8 @@ import nu.xom.Element;
  */
 public class RegexArgProcessor extends AbstractSearchArgProcessor {
 	
-	public static final Logger LOG = Logger.getLogger(RegexArgProcessor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	static final String TILDE = "~";
+	public static final Logger LOG = LogManager.getLogger(RegexArgProcessor.class);
+static final String TILDE = "~";
 	static final String TILDE_SUFFIX = "(?:[^\\\\s]*\\\\p{Punct}?)";
 	
 	private Map<String, ResultsElement> resultsByCompoundRegex;

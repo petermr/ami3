@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.norma.Norma;
@@ -26,11 +26,8 @@ import org.junit.Test;
 public class TutorialTest {
 	
 	
-	private static final Logger LOG = Logger.getLogger(TutorialTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	/**
+	private static final Logger LOG = LogManager.getLogger(TutorialTest.class);
+/**
 	# single XML file
 	rm -rf cmdir_xml
 	norma -i singleFiles/test_xml_1471-2148-14-70.xml -o cmdir_xml

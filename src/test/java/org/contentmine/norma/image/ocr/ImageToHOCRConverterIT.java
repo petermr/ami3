@@ -6,8 +6,8 @@ import java.io.FileInputStream;
 import java.util.List;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGSVG;
@@ -21,10 +21,8 @@ import org.junit.Test;
 @Ignore("long")
 public class ImageToHOCRConverterIT {
 
-	private final static Logger LOG = Logger.getLogger(ImageToHOCRConverterIT.class);
-	static {LOG.setLevel(Level.DEBUG);}
-	
-	@Test
+	private final static Logger LOG = LogManager.getLogger(ImageToHOCRConverterIT.class);
+@Test
 	public void testConvert() throws Exception {
 		HOCRConverter converter = new HOCRConverter();
 		File infile = new File(NormaFixtures.TEST_PUBSTYLE_DIR, "neuro/image.2.1.Im0.png.png");

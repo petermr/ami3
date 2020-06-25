@@ -9,20 +9,15 @@ import javax.imageio.ImageIO;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Assert;
 
 public class SVGHTMLFixtures {
 	
 
-	private static final Logger LOG = Logger.getLogger(SVGHTMLFixtures.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-
-	public static final File RESOURCES_DIR = new File("src/test/resources/");
+	private static final Logger LOG = LogManager.getLogger(SVGHTMLFixtures.class);
+public static final File RESOURCES_DIR = new File("src/test/resources/");
 	public static final File TARGET_DIR = new File("target/");
 	public static final File ORG_CONTENTMINE = new File(RESOURCES_DIR, "org/contentmine/");
 	

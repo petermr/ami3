@@ -3,8 +3,8 @@ package org.contentmine.cproject.files;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Attribute;
@@ -18,11 +18,8 @@ import nu.xom.Element;
  */
 public class ProjectFilesTree extends Element {
 	
-	private static final Logger LOG = Logger.getLogger(ProjectFilesTree.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final String C_TREE_FILES_TREE = "cTreeFilesTree";
+	private static final Logger LOG = LogManager.getLogger(ProjectFilesTree.class);
+private static final String C_TREE_FILES_TREE = "cTreeFilesTree";
 	
 	private CContainer cProject;
 

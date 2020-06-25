@@ -1,7 +1,7 @@
 package org.contentmine.ami.plugins.word;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMIPlugin;
 
 /** test plugin.
@@ -13,13 +13,8 @@ import org.contentmine.ami.plugins.AMIPlugin;
  */
 public class WordPlugin extends AMIPlugin {
 
-	private static final Logger LOG = Logger.getLogger(WordPlugin.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	
-	public WordPlugin() {
+	private static final Logger LOG = LogManager.getLogger(WordPlugin.class);
+public WordPlugin() {
 		this.argProcessor = new WordArgProcessor();
 	}
 

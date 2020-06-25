@@ -3,8 +3,8 @@ package org.contentmine.ami.lookups;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlHtml;
 import org.contentmine.graphics.html.HtmlMeta;
@@ -32,12 +32,8 @@ import org.contentmine.graphics.html.util.HtmlUtil;
 </ul>
  */
 public class WikidataPage {
-	private static final Logger LOG = Logger.getLogger(WikidataPage.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private HtmlHtml html;
+	private static final Logger LOG = LogManager.getLogger(WikidataPage.class);
+private HtmlHtml html;
 
 	public static WikidataPage createPage(HtmlHtml html) {
 		WikidataPage wikidataPage = null;

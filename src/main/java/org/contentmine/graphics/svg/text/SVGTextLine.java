@@ -10,8 +10,8 @@ import java.util.ListIterator;
 import java.util.Map;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
@@ -38,13 +38,8 @@ import nu.xom.Elements;
  *
  */
 public class SVGTextLine extends SVGG implements List<SVGText> {
-	private static final Logger LOG = Logger.getLogger(SVGTextLine.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	
-	public final static String TAG = "textLine";
+	private static final Logger LOG = LogManager.getLogger(SVGTextLine.class);
+public final static String TAG = "textLine";
 	private final static double YEPS = 0.0001;
 	private static final double FONT_EPS = 0.1;
 	private static final double SUS_EPS = 0.1;

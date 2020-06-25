@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeList;
@@ -27,12 +27,8 @@ import org.junit.Test;
 public class InputTest {
 
 	
-	private static final Logger LOG = Logger.getLogger(InputTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(InputTest.class);
+@Test
 	public void testFilesAndDirectoriesInMiscDirectory() {
 		// non-recursive; all includes 3 XML and 1 HTML
 		List<File> topLevelFiles = new ArrayList<File>(FileUtils.listFiles(NormaFixtures.TEST_MISC_DIR, null, false));

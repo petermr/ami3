@@ -2,19 +2,15 @@ package org.contentmine.norma.editor;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class CombineElement extends AbstractEditorElement {
 
 	private static final String TARGET = "target";
 	private static final String SOURCE = "source";
-	public static final Logger LOG = Logger.getLogger(CombineElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final String TAG = "combine";
+	public static final Logger LOG = LogManager.getLogger(CombineElement.class);
+public static final String TAG = "combine";
 
 	public CombineElement() {
 		super(TAG);

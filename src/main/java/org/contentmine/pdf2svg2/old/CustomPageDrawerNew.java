@@ -52,8 +52,8 @@ import javax.imageio.ImageIO;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.pdfbox.contentstream.PDFGraphicsStreamEngine;
 import org.apache.pdfbox.cos.COSArray;
 import org.apache.pdfbox.cos.COSBase;
@@ -99,12 +99,8 @@ import org.apache.pdfbox.util.Vector;
  */
 public class CustomPageDrawerNew extends PageDrawer
 {
-		private static final Logger LOG = Logger.getLogger(CustomPageDrawerNew.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public CustomPageDrawerNew(PageDrawerParameters parameters) throws IOException {
+		private static final Logger LOG = LogManager.getLogger(CustomPageDrawerNew.class);
+public CustomPageDrawerNew(PageDrawerParameters parameters) throws IOException {
 		super(parameters);
 	}
 	

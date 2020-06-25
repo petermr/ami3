@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.gene.GenePluginOption;
 import org.contentmine.ami.plugins.regex.RegexPluginOption;
 import org.contentmine.ami.plugins.search.SearchPluginOption;
@@ -29,12 +29,8 @@ private static final String RESULT_XPATH_ROOT = "//result";
 	//	private static final String WORD = "word";
 //	private static final String SPECIES = "species";
 //	private static final String SEQUENCE = "sequence";
-	private static final Logger LOG = Logger.getLogger(AMIPluginOption.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static Pattern COMMAND = Pattern.compile("(.*)\\((.*)\\)(.*)");
+	private static final Logger LOG = LogManager.getLogger(AMIPluginOption.class);
+public static Pattern COMMAND = Pattern.compile("(.*)\\((.*)\\)(.*)");
 	
 	public final static List<String> COMMANDS = Arrays.asList( new String[] {
 	GenePluginOption.TAG,

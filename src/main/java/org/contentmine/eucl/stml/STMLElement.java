@@ -23,7 +23,8 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.Writer;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.stml.attribute.AttributeFactory;
 import org.contentmine.eucl.stml.attribute.DelimiterAttribute;
@@ -56,7 +57,7 @@ import nu.xom.Text;
  */
 public class STMLElement extends Element implements XMLConstants {
 
-	private final static Logger LOG = Logger.getLogger(STMLElement.class);
+	private final static Logger LOG = LogManager.getLogger(STMLElement.class);
 	
     final static String ID = "id";
 

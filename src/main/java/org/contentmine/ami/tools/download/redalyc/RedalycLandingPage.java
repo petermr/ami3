@@ -3,8 +3,8 @@ package org.contentmine.ami.tools.download.redalyc;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.download.AbstractLandingPage;
 import org.contentmine.eucl.xml.XMLUtil;
 
@@ -20,12 +20,8 @@ import org.contentmine.eucl.xml.XMLUtil;
  *
  */
 public class RedalycLandingPage extends AbstractLandingPage {
-	private static final Logger LOG = Logger.getLogger(RedalycLandingPage.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public RedalycLandingPage() {
+	private static final Logger LOG = LogManager.getLogger(RedalycLandingPage.class);
+public RedalycLandingPage() {
 		super();
 		System.err.println(RedalycDownloader.REDALYC_NOT_YET_IMPLEMENTED);
 	}

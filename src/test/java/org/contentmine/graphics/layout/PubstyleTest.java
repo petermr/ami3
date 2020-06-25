@@ -4,8 +4,8 @@ import java.io.File;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.CHESConstants;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.graphics.svg.SVGElement;
@@ -26,12 +26,8 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 public class PubstyleTest {
-	public static final Logger LOG = Logger.getLogger(PubstyleTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	public static final Logger LOG = LogManager.getLogger(PubstyleTest.class);
+@Test
 	public void testPubstyleAttributes() {
 		PubstyleManager pubstyleManager = new PubstyleManager();
 		SVGElement svgElement = SVGElement.readAndCreateSVG(new File(CHESConstants.SRC_GRAPHICS_RESOURCES+"/pubstyle/bmc/pubstyle.svg"));

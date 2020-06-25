@@ -2,8 +2,8 @@ package org.contentmine.ami.dictionary;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMI;
 import org.contentmine.ami.tools.AMIDict;
 import org.contentmine.ami.tools.AbstractAMITest;
@@ -17,11 +17,8 @@ import org.junit.Test;
  *
  */
 public class AMIDictDisplayTest extends AbstractAMITest {
-	private static final Logger LOG = Logger.getLogger(AMIDictDisplayTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final File TARGET = new File("target");
+	private static final Logger LOG = LogManager.getLogger(AMIDictDisplayTest.class);
+private static final File TARGET = new File("target");
 	public static final File DICTIONARY_DIR = new File(TARGET, "dictionary");
 	
 

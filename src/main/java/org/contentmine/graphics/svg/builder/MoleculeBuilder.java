@@ -10,8 +10,8 @@ import java.util.Map;
 import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Angle.Units;
@@ -36,11 +36,8 @@ import nu.xom.Element;
  *
  */
 public class MoleculeBuilder {
-	private static final Logger LOG = Logger.getLogger(MoleculeBuilder.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final String BOND_ID = "e";
+	private static final Logger LOG = LogManager.getLogger(MoleculeBuilder.class);
+private static final String BOND_ID = "e";
 	private static final String NODE_ID = "n";
 
 	private static final String C = "C";

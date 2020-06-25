@@ -3,8 +3,8 @@ package org.contentmine.ami;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMIArgProcessor;
 import org.contentmine.ami.plugins.CommandProcessor;
 import org.contentmine.ami.plugins.ResultsAnalysisImpl;
@@ -29,12 +29,8 @@ import org.junit.Test;
 public class TutorialTest {
 
 	;
-	private static final Logger LOG = Logger.getLogger(TutorialTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(TutorialTest.class);
+@Test
 	@Ignore // uses net
 	public void testSpeciesLookup() throws Exception {
 		CMineTestFixtures.cleanAndCopyDir(new File(NAConstants.TEST_AMI_DIR+"/tutorial/plos10"), new File("target/specieslook10"));

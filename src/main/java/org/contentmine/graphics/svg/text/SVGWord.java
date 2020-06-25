@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.text;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.Util;
@@ -29,12 +29,8 @@ public class SVGWord extends SVGG {
 	private static final String FULL_MINUS = "\\u2212";
 	public final static List<String> NON_STANDARD_MINUS = Arrays.asList(new String[]{ENDASH, FULL_MINUS});
 	private static final double DELTA_Y_TEXT = 0.3;
-	private static final Logger LOG = Logger.getLogger(SVGWord.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final String CLASS = "word";
+	private static final Logger LOG = LogManager.getLogger(SVGWord.class);
+public static final String CLASS = "word";
 	private double interCharacterFactor = 0.1;
 	private boolean isRot90 = false; // simple approach avoiding rotating the whole text
 	

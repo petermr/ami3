@@ -25,8 +25,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.EC;
 import org.contentmine.eucl.euclid.EuclidRuntimeException;
 import org.contentmine.eucl.euclid.IntArray;
@@ -80,12 +80,8 @@ import nu.xom.tests.XOMTestCase;
  */
 public final class TestUtils implements STMLConstants {
 
-	private static final Logger LOG = Logger.getLogger(TestUtils.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final String OUTPUT_DIR_NAME = "target/test-outputs";
+	private static final Logger LOG = LogManager.getLogger(TestUtils.class);
+public static final String OUTPUT_DIR_NAME = "target/test-outputs";
 
 	/**
 	 * tests 2 XML objects for equality using canonical XML. uses

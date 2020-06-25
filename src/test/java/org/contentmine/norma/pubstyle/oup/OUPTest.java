@@ -3,19 +3,16 @@ package org.contentmine.norma.pubstyle.oup;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.norma.NormaFixtureRunner;
 import org.contentmine.norma.NormaFixtures;
 import org.junit.Test;
 
 public class OUPTest {
 	
-	private static final Logger LOG = Logger.getLogger(OUPTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	static String PUB0 = "oup";
+	private static final Logger LOG = LogManager.getLogger(OUPTest.class);
+static String PUB0 = "oup";
 	static String PUB = "oup";
 	static String PUB1 = PUB+"/clean";
 	static File TARGET = new File(NormaFixtures.TARGET_PUBSTYLE_DIR, PUB);

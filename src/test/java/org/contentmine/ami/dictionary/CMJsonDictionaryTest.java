@@ -6,8 +6,8 @@ import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIFixtures;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.cproject.util.RectTabColumn;
@@ -18,12 +18,8 @@ import org.junit.Test;
 
 public class CMJsonDictionaryTest {
 
-	private static final Logger LOG = Logger.getLogger(CMJsonDictionaryTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(CMJsonDictionaryTest.class);
+@Test
 	public void testCreateJsonDictionary() {
 		CMJsonDictionary cmJsonDictionary = new CMJsonDictionary();
 		cmJsonDictionary.setId("dictid");

@@ -2,8 +2,8 @@ package org.contentmine.ami.tools.test;
 
 import java.util.concurrent.Callable;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.DebugPrint;
 
@@ -26,13 +26,8 @@ description = "test subcommand2 "
 public class SubCommand2Tool implements Callable<Void> {
 
 
-	private static final Logger LOG = Logger.getLogger(SubCommand2Tool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	
-    @Option(names = {"--value2"},
+	private static final Logger LOG = LogManager.getLogger(SubCommand2Tool.class);
+@Option(names = {"--value2"},
     		arity = "1",
             description = "value2")
 	public String value2 = "defaultValue2";

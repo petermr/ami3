@@ -3,8 +3,8 @@ package org.contentmine.ami.plugins.phylotree.nexml;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIFixtures;
 import org.contentmine.ami.plugins.phylotree.nexml.NWKTree;
 import org.contentmine.ami.plugins.phylotree.nexml.NewickFactory;
@@ -18,12 +18,8 @@ import nu.xom.Element;
 
 @Ignore("long")
 public class NewickIT {
-	private static final Logger LOG = Logger.getLogger(NewickIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(NewickIT.class);
+@Test
 	public void testReadLargeTree() throws IOException {
 		NewickFactory factory = new NewickFactory();
 		NWKTree tree = factory.readNewick(new File(AMIFixtures.TEST_PHYLO_DIR, "supertree-analysis/strict1.tre"));

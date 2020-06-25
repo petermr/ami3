@@ -4,8 +4,8 @@ import java.util.regex.Pattern;
 
 import nu.xom.Element;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.regex.RegexComponent;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 
@@ -21,12 +21,9 @@ import org.contentmine.cproject.args.DefaultArgProcessor;
 public class NamedPattern {
 
 	
-	private static final Logger LOG = Logger.getLogger(NamedPattern.class);
+	private static final Logger LOG = LogManager.getLogger(NamedPattern.class);
 	private static final String NAME = "name";
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	protected String name;
+protected String name;
 	protected Pattern pattern;
 
 	public NamedPattern(String name, String patternString) {

@@ -3,8 +3,8 @@ package org.contentmine.ami.plugins.regex;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMIPlugin;
 import org.contentmine.ami.tools.AbstractAMITool;
 import org.contentmine.cproject.files.CProject;
@@ -27,13 +27,8 @@ description = "runs regex on HTML or XML files "
 )
 
 public class AMIRegexTool extends AbstractAMITool {
-	private static final Logger LOG = Logger.getLogger(AMIRegexTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	
-    @Option(names = {"--context"},
+	private static final Logger LOG = LogManager.getLogger(AMIRegexTool.class);
+@Option(names = {"--context"},
     		arity = "2",
 //    		defaultValue = "[40,40]",
             description = "characters before and after regex")
@@ -92,7 +87,7 @@ public class AMIRegexTool extends AbstractAMITool {
     protected void runSpecifics() {
     	if (processTrees()) { 
     	} else {
-			DebugPrint.debugPrint(Level.ERROR, "must give cProject or cTree ");
+    		LOG.error(DebugPrint.MARKER, "must give cProject or cTree ");
 	    }
     }
 

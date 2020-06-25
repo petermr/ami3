@@ -21,7 +21,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Line2;
 import org.contentmine.eucl.euclid.Line2AndReal2Calculator;
 import org.contentmine.eucl.euclid.Real;
@@ -43,7 +44,7 @@ import nu.xom.Node;
  */
 public class SVGPolygon extends SVGPoly {
 	
-	private static Logger LOG = Logger.getLogger(SVGPolygon.class);
+	private static Logger LOG = LogManager.getLogger(SVGPolygon.class);
 
 	public final static String ALL_POLYGON_XPATH = ".//svg:polygon";
 	public final static String TAG ="polygon";

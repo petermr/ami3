@@ -8,20 +8,16 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Ignore;
 import org.junit.Test;
 
 @Ignore("online")
 public class ChemQueryTest {
 
-	private static final Logger LOG = Logger.getLogger(ChemQueryTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(ChemQueryTest.class);
+@Test
 	public void testRSCAPI() throws IOException {
 		String s = "http://pubs.rsc.org/en/results/journals?Category=Journal&AllText=rhodium&IncludeReference=true&SelectJournal=false&DateRange=false&SelectDate=false&Type=Months&DateFromMonth=Months&DateToMonth=Months&PriceCode=False&OpenAccess=false";
 		URL url= new URL(s);

@@ -1,7 +1,7 @@
 package org.contentmine.norma.image.ocr;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.graphics.svg.SVGG;
 
@@ -13,10 +13,8 @@ import org.contentmine.graphics.svg.SVGG;
  */
 public class HOCRPhrase extends HOCRChunk {
 
-	final static Logger LOG = Logger.getLogger(HOCRPhrase.class);
-	static {LOG.setLevel(Level.DEBUG);}
-
-	public HOCRPhrase() {
+	final static Logger LOG = LogManager.getLogger(HOCRPhrase.class);
+public HOCRPhrase() {
 		super();
 	}
 

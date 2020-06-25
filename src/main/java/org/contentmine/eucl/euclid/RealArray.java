@@ -20,7 +20,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.util.MultisetUtil;
 
 import com.google.common.collect.HashMultiset;
@@ -51,7 +52,7 @@ import com.google.common.collect.Multiset;
  */
 public class RealArray extends ArrayBase implements Iterable<Double> {
 	
-    final static Logger LOG = Logger.getLogger(RealArray.class);
+    final static Logger LOG = LogManager.getLogger(RealArray.class);
     /** filter */
     public enum Filter {
         /** */

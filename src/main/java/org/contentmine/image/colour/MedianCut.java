@@ -7,8 +7,8 @@ import java.awt.image.ColorModel;
 import java.awt.image.IndexColorModel;
 import java.awt.image.WritableRaster;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.image.ImageUtil;
 
 	/** Converts an RGB image to 8-bit index color using Heckbert's median-cut
@@ -17,12 +17,8 @@ import org.contentmine.image.ImageUtil;
 	*/
 	public class MedianCut {
 
-		private static final Logger LOG = Logger.getLogger(MedianCut.class);
-		static {
-			LOG.setLevel(Level.DEBUG);
-		}
-		
-		static final int MAXCOLORS = 256;	// maximum # of output colors
+		private static final Logger LOG = LogManager.getLogger(MedianCut.class);
+	static final int MAXCOLORS = 256;	// maximum # of output colors
 		static final int HSIZE = 32768;		// size of image histogram
 		private int[] hist;					// RGB histogram and reverse color lookup table
 		private int[] histPtr;				// points to colors in "hist"

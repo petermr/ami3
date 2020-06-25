@@ -1,7 +1,7 @@
 package org.contentmine.ami.tools.download;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMIDownloadTool;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlB;
@@ -17,12 +17,8 @@ import org.contentmine.graphics.html.HtmlUl;
 
 
 public abstract class AbstractSubDownloader {
-	private static final Logger LOG = Logger.getLogger(AbstractSubDownloader.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final String HIT_LIST = "hitList";
+	private static final Logger LOG = LogManager.getLogger(AbstractSubDownloader.class);
+public static final String HIT_LIST = "hitList";
 	public static final String CLEAN = "clean";
 
 	protected AbstractDownloader abstractDownloader;

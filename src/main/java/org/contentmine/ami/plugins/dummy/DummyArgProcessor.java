@@ -1,7 +1,7 @@
 package org.contentmine.ami.plugins.dummy;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMIArgProcessor;
 import org.contentmine.ami.plugins.AMISearcher;
 import org.contentmine.ami.plugins.NamedPattern;
@@ -18,13 +18,9 @@ import org.contentmine.cproject.args.ArgumentOption;
 public class DummyArgProcessor extends AMIArgProcessor {
 	
 	
-	public static final Logger LOG = Logger.getLogger(DummyArgProcessor.class);
+	public static final Logger LOG = LogManager.getLogger(DummyArgProcessor.class);
 	
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/** CONSTRUCTORS - generally leave untouched */
+/** CONSTRUCTORS - generally leave untouched */
 	
 	public DummyArgProcessor() {
 		super();

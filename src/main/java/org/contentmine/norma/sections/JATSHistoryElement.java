@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
@@ -26,12 +26,8 @@ public class JATSHistoryElement extends JATSElement implements IsBlock {
 		</date>
 	</history>
 	 */
-	private static final Logger LOG = Logger.getLogger(JATSHistoryElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	static final String TAG = "history";
+	private static final Logger LOG = LogManager.getLogger(JATSHistoryElement.class);
+static final String TAG = "history";
 	public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {
 			JATSDivFactory.DATE,
 	});

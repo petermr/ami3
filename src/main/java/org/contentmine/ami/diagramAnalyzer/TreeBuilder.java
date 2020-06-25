@@ -3,7 +3,8 @@ package org.contentmine.ami.diagramAnalyzer;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.IntRange;
@@ -23,7 +24,7 @@ import org.contentmine.image.pixel.PixelNodeList;
  */
 public class TreeBuilder {
 
-	private final static Logger LOG = Logger.getLogger(TreeBuilder.class);
+	private final static Logger LOG = LogManager.getLogger(TreeBuilder.class);
 	
 	private final static int OFFSET = 20;
 	private PixelGraph graph;

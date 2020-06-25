@@ -2,8 +2,8 @@ package org.contentmine.image.colour;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGRect;
@@ -18,12 +18,8 @@ import com.google.common.collect.Multiset.Entry;
  *
  */
 public class RGBHistogram {
-	private static final Logger LOG = Logger.getLogger(RGBHistogram.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private double x0 ;
+	private static final Logger LOG = LogManager.getLogger(RGBHistogram.class);
+private double x0 ;
 	private double y0;
 	private double ydelta;
 	private double xscale = 50.;

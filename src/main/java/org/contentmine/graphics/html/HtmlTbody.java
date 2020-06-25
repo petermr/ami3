@@ -20,7 +20,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Elements;
@@ -33,7 +34,7 @@ import nu.xom.Elements;
  */
 public class HtmlTbody extends HtmlElement {
 	@SuppressWarnings("unused")
-	private final static Logger LOG = Logger.getLogger(HtmlTbody.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlTbody.class);
 	public final static String TAG = "tbody";
 	private HtmlTr headerRow;
 	private List<HtmlTr> rowList;

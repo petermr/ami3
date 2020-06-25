@@ -1,7 +1,7 @@
 package org.contentmine.graphics.svg.layout;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGElement;
 
 /** table that spans the whole page
@@ -10,11 +10,8 @@ import org.contentmine.graphics.svg.SVGElement;
  *
  */
 public class SVGPubstyleWideTable extends AbstractPubstyle {
-	private static final Logger LOG = Logger.getLogger(SVGPubstyleWideTable.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public final static String SVG_CLASSNAME = "wide.table";
+	private static final Logger LOG = LogManager.getLogger(SVGPubstyleWideTable.class);
+public final static String SVG_CLASSNAME = "wide.table";
 
 	public SVGPubstyleWideTable() {
 		super();

@@ -4,8 +4,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.svg.SVGDefs;
 import org.contentmine.graphics.svg.SVGElement;
@@ -130,12 +130,8 @@ public class SVGPubstyle extends AbstractPubstyle {
 		P2,
 		PN
 	}
-	private static final Logger LOG = Logger.getLogger(SVGPubstyle.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private static final String PUBSTYLE = "pubstyle";
+	private static final Logger LOG = LogManager.getLogger(SVGPubstyle.class);
+private static final String PUBSTYLE = "pubstyle";
 	private static final String PUBSTYLE_NAME = "pubstyleName";
 	public final static String CLASSNAME = PUBSTYLE;
 	// CLASS, ID defined above

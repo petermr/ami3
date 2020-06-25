@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.contentmine.ami.AMIFixtures;
@@ -21,12 +21,8 @@ public class WordTest {
 
 	
 	private static final String CLINICAL_STOPWORDS_TXT = NAConstants.PLUGINS_WORD+"/clinicaltrials200.txt";
-	private static final Logger LOG = Logger.getLogger(WordTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private static final String DATA_16_1_1 = 
+	private static final Logger LOG = LogManager.getLogger(WordTest.class);
+private static final String DATA_16_1_1 =
 			new File(AMIFixtures.TEST_BMC_DIR, "http_www.trialsjournal.com_content_16_1_1").toString();
 	private static final String DATA_16_1_1A = 
 			new File(AMIFixtures.TEST_BMC_DIR, "http_www.trialsjournal.com_content_16_1_1a").toString();

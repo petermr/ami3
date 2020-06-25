@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** bibliography from ESSoilDB.
  * 
@@ -19,12 +19,8 @@ import org.apache.log4j.Logger;
  */
 public class BibliographicRecord {
 
-	private static final Logger LOG = Logger.getLogger(BibliographicRecord.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/**
+	private static final Logger LOG = LogManager.getLogger(BibliographicRecord.class);
+/**
 VOL. 14, 366-368 (Sep/Oct 2002)
 VOL. 15, 313-318 (Sep/Oct 2003)
 VOL. 18, 18-20 (2003)

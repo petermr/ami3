@@ -8,15 +8,12 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class CMStringUtil {
-	private static final Logger LOG = Logger.getLogger(CMStringUtil.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	/** pattern of type foo1234plugh.bar */
+	private static final Logger LOG = LogManager.getLogger(CMStringUtil.class);
+/** pattern of type foo1234plugh.bar */
 	public static Pattern EMBEDDED_NUMERIC = Pattern.compile("([^\\d]*)(\\d+)(([^\\d].*)?)");
 
 	/** sorts unique strings by embedded integers.

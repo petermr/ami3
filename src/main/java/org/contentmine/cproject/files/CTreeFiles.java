@@ -6,8 +6,8 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Attribute;
@@ -22,11 +22,8 @@ public class CTreeFiles extends Element implements Iterable<File>{
 
 
 
-	private static final Logger LOG = Logger.getLogger(CTreeFiles.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	public static final String C_TREE_FILES = "cTreeFiles";
+	private static final Logger LOG = LogManager.getLogger(CTreeFiles.class);
+public static final String C_TREE_FILES = "cTreeFiles";
 	private static final String FILE = "file";
 	private static final String NAME = "name";
 	private static final String C_TREE = "cTree";

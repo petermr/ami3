@@ -15,7 +15,8 @@
  */
 package org.contentmine.font;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import nu.xom.Attribute;
 import nu.xom.Element;
@@ -35,7 +36,7 @@ import nu.xom.Element;
  */
 public class NonStandardFontFamily {
 
-	public final static Logger LOG = Logger.getLogger(NonStandardFontFamily.class);
+	public final static Logger LOG = LogManager.getLogger(NonStandardFontFamily.class);
 	// XML
 	public static final String CODE_POINT_SET = "codePointSet";
 	public final static String FONT_FAMILY = "fontFamily";

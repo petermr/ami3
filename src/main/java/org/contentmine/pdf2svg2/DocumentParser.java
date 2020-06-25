@@ -8,8 +8,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.encryption.InvalidPasswordException;
 import org.apache.pdfbox.rendering.PDFRenderer;
@@ -31,12 +31,8 @@ import nu.xom.IllegalCharacterDataException;
  *
  */
 public class DocumentParser extends PDFRenderer {
-	private static final Logger LOG = Logger.getLogger(DocumentParser.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private AbstractPageParser currentPageParser;
+	private static final Logger LOG = LogManager.getLogger(DocumentParser.class);
+private AbstractPageParser currentPageParser;
 	private SVGG currentSVGG;
 	private Map<PageSerial, SVGG> svgPageBySerial;
 	private Map<PageSerial, BufferedImage> renderedImageBySerial;

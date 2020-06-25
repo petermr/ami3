@@ -3,8 +3,8 @@ package org.contentmine.ami.plugins.search;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIFixtures;
 import org.contentmine.ami.plugins.AMIArgProcessor;
 import org.contentmine.ami.plugins.AbstractSearchArgProcessor;
@@ -17,12 +17,8 @@ import nu.xom.Element;
 
 public class SearchTest {
 
-	private static final Logger LOG = Logger.getLogger(SearchTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(SearchTest.class);
+@Test
 	public void testWordSearch() throws IOException {
 		File projectDir = new File("target/word/");
 		CMineTestFixtures.cleanAndCopyDir(AMIFixtures.TEST_WORD_EXAMPLES, projectDir);

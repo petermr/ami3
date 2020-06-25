@@ -3,8 +3,8 @@ package org.contentmine.norma.sections;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Util;
 
 import nu.xom.Element;
@@ -19,12 +19,8 @@ import nu.xom.Element;
  */
 public class JATSNameElement extends JATSElement implements IsBlock {
 
-	private static final Logger LOG = Logger.getLogger(JATSNameElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	static final String TAG = "name";
+	private static final Logger LOG = LogManager.getLogger(JATSNameElement.class);
+static final String TAG = "name";
 
 	public final static List<String> ALLOWED_CHILD_NAMES = Arrays.asList(new String[] {
 			JATSSpanFactory.SURNAME,

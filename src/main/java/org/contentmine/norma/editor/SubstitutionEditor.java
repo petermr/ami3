@@ -6,8 +6,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.svg.SVGShape;
 import org.contentmine.graphics.svg.text.SVGWord;
@@ -26,12 +26,8 @@ import nu.xom.Elements;
  */
 public class SubstitutionEditor {
 
-	public static final Logger LOG = Logger.getLogger(SubstitutionEditor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String EDITS = "edits";
+	public static final Logger LOG = LogManager.getLogger(SubstitutionEditor.class);
+private static final String EDITS = "edits";
 	private static final String EDITED_COL = "pink";
 	private static final String EDITED = "edited";
 	private static final String SUBSTITUTION = "substitution";

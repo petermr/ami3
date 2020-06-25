@@ -7,8 +7,8 @@ import java.util.Collections;
 import java.util.List;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.DebugPrint;
@@ -58,12 +58,8 @@ public class AMIDisplayTool extends AbstractAMITool {
 
 	private static final String IMAGE = "image";
 
-	private static final Logger LOG = Logger.getLogger(AMIDisplayTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private enum Orientation {
+	private static final Logger LOG = LogManager.getLogger(AMIDisplayTool.class);
+private enum Orientation {
 		horizontal,
 		overlap,
 		vertical,
@@ -142,7 +138,7 @@ public class AMIDisplayTool extends AbstractAMITool {
     protected void runSpecifics() {
     	if (processTrees()) { 
     	} else {
-			DebugPrint.debugPrint(Level.ERROR, "must give cProject or cTree");
+			LOG.error(DebugPrint.MARKER, "must give cProject or cTree");
 	    }
     }
 

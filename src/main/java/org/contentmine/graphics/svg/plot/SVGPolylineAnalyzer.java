@@ -7,7 +7,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Axis.Axis2;
 import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.euclid.Real2;
@@ -37,7 +38,7 @@ import nu.xom.Element;
 
 public class SVGPolylineAnalyzer {
 
-	private final static Logger LOG = Logger.getLogger(SVGPolylineAnalyzer.class);
+	private final static Logger LOG = LogManager.getLogger(SVGPolylineAnalyzer.class);
 
 	private static final String VERT = "VERT";
 	private static final String HOR = "HOR";

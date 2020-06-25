@@ -10,8 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.graphics.svg.SVGElement;
@@ -42,13 +42,8 @@ public class AMIGraphicsTool extends AbstractAMITool {
 
 	private static final String IMAGE = "graphics";
 
-	private static final Logger LOG = Logger.getLogger(AMIGraphicsTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-
-    @Option(names = {"--cache"},
+	private static final Logger LOG = LogManager.getLogger(AMIGraphicsTool.class);
+@Option(names = {"--cache"},
     		arity = "1..*",
             description = "caches to use")
 	private List<CacheType> cacheTypeList = new ArrayList<>() ;
@@ -118,8 +113,6 @@ public class AMIGraphicsTool extends AbstractAMITool {
 	}
 
 	private void displayCaches(File svgFile) {
-		Level level = LOG.getLevel();
-//		LOG.setLevel(Level.TRACE);
 		ComponentCache componentCache = ComponentCache.readAndCreateComponentCache(svgFile);
 		List<AbstractCache> cacheList = componentCache.getCaches(cacheTypeList);
 		for (AbstractCache cache : cacheList) {
@@ -132,7 +125,6 @@ public class AMIGraphicsTool extends AbstractAMITool {
 				SVGSVG.wrapAndWriteAsSVG(svgElement, outSvgFile);
 			}
 		}
-		LOG.setLevel(level);
 	}
 
 

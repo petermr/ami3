@@ -1,19 +1,15 @@
 package org.contentmine.graphics.svg.objects;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGPath;
 
 public class SVGRoundedBox extends SVGG {
 	
 	public static final String ROUNDED_BOX = "roundedBox";
-	private static final Logger LOG = Logger.getLogger(SVGRoundedBox.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private SVGPath path;
+	private static final Logger LOG = LogManager.getLogger(SVGRoundedBox.class);
+private SVGPath path;
 	
 	public SVGRoundedBox() {
 		super();

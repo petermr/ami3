@@ -3,7 +3,8 @@ package org.contentmine.graphics.svg.linestuff;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.graphics.AbstractCMElement;
@@ -29,7 +30,7 @@ public class LineMerger extends ElementMerger {
 		TOUCHING_LINES, 
 	}
 
-	private final static Logger LOG = Logger.getLogger(LineMerger.class);
+	private final static Logger LOG = LogManager.getLogger(LineMerger.class);
 	private Direction direction; 
 	private LineOrientation orientation;
 	private MergeMethod method = MergeMethod.OVERLAP; // why is this the default?

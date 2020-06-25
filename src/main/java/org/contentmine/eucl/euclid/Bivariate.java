@@ -1,10 +1,11 @@
 package org.contentmine.eucl.euclid;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class Bivariate {
 
-	private final static Logger LOG = Logger.getLogger(Bivariate.class);
+	private final static Logger LOG = LogManager.getLogger(Bivariate.class);
 	
 	private Real2Array real2Array;
 	private Double slope;

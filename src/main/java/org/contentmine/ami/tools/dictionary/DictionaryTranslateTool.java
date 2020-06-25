@@ -6,8 +6,8 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.dictionary.CMJsonDictionary;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
 import org.contentmine.ami.tools.AbstractAMIDictTool;
@@ -24,12 +24,8 @@ import picocli.CommandLine.Command;
 				+ ""
 		})
 public class DictionaryTranslateTool extends AbstractAMIDictTool {
-	private static final Logger LOG = Logger.getLogger(DictionaryTranslateTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private CMJsonDictionary cmJsonDictionary;
+	private static final Logger LOG = LogManager.getLogger(DictionaryTranslateTool.class);
+private CMJsonDictionary cmJsonDictionary;
 	private DefaultAMIDictionary xmlDictionary;
 	public DictionaryTranslateTool() {
 		super();
@@ -87,12 +83,14 @@ public class DictionaryTranslateTool extends AbstractAMIDictTool {
 			String basename = FilenameUtils.getBaseName(dictionaryS);
 			File dictionaryFile = (useAbsoluteNames) ? new File(dictionaryS) : new File(directory, dictionaryS);
 			if (!dictionaryFile.exists()) {
-				addLoggingLevel(Level.ERROR, "File does not exist: "+dictionaryFile);
+				LOG.error("File does not exist: "+dictionaryFile);
+				showstopperEncountered = true;
 				continue;
 			}
 			dictInformat = DictionaryFileFormat.getFormat(FilenameUtils.getExtension(dictionaryS));
 			if (dictInformat.equals(dictOutformat)) {
-				addLoggingLevel(Level.WARN, "dictionary input and output formats identical; no action");
+				LOG.warn("dictionary input and output formats identical; no action");
+				showstopperEncountered = true;
 				continue;
 			}
 			File dictOutfile = new File(dictionaryFile.getParentFile(), basename + "." + dictOutformat);

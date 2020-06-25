@@ -11,8 +11,8 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntRange;
 import org.contentmine.eucl.euclid.RealRange;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -50,12 +50,8 @@ public class ArgumentOption {
 	private static final Pattern INT_RANGE = Pattern.compile("\\{(\\*|\\-?\\d+),(\\-?\\d*|\\*)\\}");
 	private static final Pattern DOUBLE_RANGE = Pattern.compile("\\{(\\-?\\+?\\d+\\.?\\d*|\\*),(\\-?\\+?\\d+\\.?\\d*|\\*)\\}");
 
-	private static final Logger LOG = Logger.getLogger(ArgumentOption.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private static Set<String> MANDATORY_ATTRIBUTES;
+	private static final Logger LOG = LogManager.getLogger(ArgumentOption.class);
+private static Set<String> MANDATORY_ATTRIBUTES;
 	static {
 		MANDATORY_ATTRIBUTES = new HashSet<String>();
 		MANDATORY_ATTRIBUTES.add(NAME);

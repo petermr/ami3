@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  * manages the pipeline for running Tesseract and creating HTML and SVG Documents.
@@ -15,12 +15,8 @@ import org.apache.log4j.Logger;
  *
  */
 public class OCRProcessor {
-	private static final Logger LOG = Logger.getLogger(OCRProcessor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private ImageToHOCRConverterOLD imageToHOCRConverter;
+	private static final Logger LOG = LogManager.getLogger(OCRProcessor.class);
+private ImageToHOCRConverterOLD imageToHOCRConverter;
 	
 	public OCRProcessor() {
 		

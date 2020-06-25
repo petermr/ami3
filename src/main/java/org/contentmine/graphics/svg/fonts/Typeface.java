@@ -3,8 +3,8 @@ package org.contentmine.graphics.svg.fonts;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** a typeface.
  * "font" is often confused with "typeface". 
@@ -27,12 +27,8 @@ import org.apache.log4j.Logger;
  *
  */
 public class Typeface implements Comparable<Typeface> {
-	private static final Logger LOG = Logger.getLogger(Typeface.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private String typefaceName;
+	private static final Logger LOG = LogManager.getLogger(Typeface.class);
+private String typefaceName;
 	private List<String> fontStyles;
 	private List<String> fontWeights;
 	private List<String> fills;

@@ -4,7 +4,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGHTMLFixtures;
@@ -16,7 +17,7 @@ import org.junit.Test;
 
 public class AxisAnalyzerTest {
 
-	private static final Logger LOG = Logger.getLogger(AxisAnalyzerTest.class);
+	private static final Logger LOG = LogManager.getLogger(AxisAnalyzerTest.class);
 
 	@Test
 	@Ignore // until we write the axis stuff

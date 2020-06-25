@@ -20,8 +20,8 @@ import javax.xml.transform.stream.StreamSource;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.DebugPrint;
@@ -79,11 +79,8 @@ description = {
 public class AMIPixelTool extends AbstractAMITool implements HasImageDir {
 
 
-	private static final Logger LOG = Logger.getLogger(AMIPixelTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final String LAST = "LAST";
+	private static final Logger LOG = LogManager.getLogger(AMIPixelTool.class);
+private static final String LAST = "LAST";
 	private static final String WIDTH = "width";
 	private static final String HEIGHT = "height";
 	
@@ -353,7 +350,7 @@ public class AMIPixelTool extends AbstractAMITool implements HasImageDir {
 //    			runPixel(new File(imageFilename));
 //    		}
     	} else {
-			DebugPrint.debugPrint(Level.ERROR, "must give cProject or cTree ie imageFile");
+			LOG.error(DebugPrint.MARKER, "must give cProject or cTree ie imageFile");
 	    }
     }
 

@@ -1,7 +1,7 @@
 package org.contentmine.norma.sections;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import nu.xom.Element;
 
@@ -18,12 +18,8 @@ import nu.xom.Element;
  */
 public class JATSAlternativesElement extends JATSElement implements IsBlock {
 
-	private static final Logger LOG = Logger.getLogger(JATSAlternativesElement.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	static final String TAG = "alternatives";
+	private static final Logger LOG = LogManager.getLogger(JATSAlternativesElement.class);
+static final String TAG = "alternatives";
 
 	public JATSAlternativesElement(Element element) {
 		super(element);

@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** processes arguments (expand wildcards and/or replace variables)
  * 
@@ -16,12 +16,8 @@ import org.apache.log4j.Logger;
  */
 public class ArgumentExpander {
 
-	public static final Logger LOG = Logger.getLogger(ArgumentExpander.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private DefaultArgProcessor argProcessor;
+	public static final Logger LOG = LogManager.getLogger(ArgumentExpander.class);
+private DefaultArgProcessor argProcessor;
 	private static final Pattern INTEGER_RANGE_PATTERN = Pattern.compile("(\\d+):(\\d+)");
 	public static Pattern GENERAL_PATTERN = Pattern.compile("\\{([^\\}]*)\\}");
 	private static Pattern INTEGER_RANGE = Pattern.compile("(.*)\\{(\\d+),(\\d+)\\}(.*)");

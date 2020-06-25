@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.norma.image.ocr.HOCRConverter;
 import org.contentmine.norma.util.CommandRunner;
@@ -13,11 +13,7 @@ import org.contentmine.norma.util.CommandRunner;
 public class GetpapersRunner extends CommandRunner {
 
 	private static final String NODE = "/usr/local/n/versions/node/6.2.1/bin/node";
-	public final static Logger LOG = Logger.getLogger(GetpapersRunner.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
+	public final static Logger LOG = LogManager.getLogger(GetpapersRunner.class);
 /**
 /usr/local/n/versions/node/6.2.1/bin/getpapers
  */

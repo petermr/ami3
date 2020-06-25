@@ -7,20 +7,16 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
 
 public class ProjectSnippetsTree extends Element {
 
-	private static final Logger LOG = Logger.getLogger(ProjectSnippetsTree.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final String PROJECT_SNIPPETS_TREE = "projectSnippetsTree";
+	private static final Logger LOG = LogManager.getLogger(ProjectSnippetsTree.class);
+public static final String PROJECT_SNIPPETS_TREE = "projectSnippetsTree";
 
 	private List<Element> snippetsElementList;
 	private CContainer cProject;

@@ -9,7 +9,7 @@ public class OpenNLPTest {
 
 	/** comment out because too big --- */
 	
-//	public static final Logger LOG = Logger.getLogger(OpenNLPTest.class);
+//	public static final Logger LOG = LogManager.getLogger(OpenNLPTest.class);
 //	static {
 //		LOG.setLevel(Level.DEBUG);
 //	}

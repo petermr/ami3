@@ -2,8 +2,8 @@ package org.contentmine.ami.lookups;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.HtmlA;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlImg;
@@ -67,11 +67,8 @@ https://en.wikipedia.org/w/index.php?title=Black_fly&action=info
  */
 public class WikipediaPageInfo {
 	private static final String HTTPS = "https://";
-	private static final Logger LOG = Logger.getLogger(WikipediaPageInfo.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final String T_INFO = "t-info";
+	private static final Logger LOG = LogManager.getLogger(WikipediaPageInfo.class);
+private static final String T_INFO = "t-info";
 	public final static String WIKIDATA_BASE = "https://www.wikidata.org";
 	public final static String WIKIPEDIA_BASE = "https://en.wikipedia.org";
 	

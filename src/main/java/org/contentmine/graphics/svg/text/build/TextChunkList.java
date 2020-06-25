@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
@@ -35,12 +35,8 @@ import nu.xom.Element;
  * @author pm286
  */
 public class TextChunkList extends SVGG implements Iterable<TextChunk> {
-	public static final Logger LOG = Logger.getLogger(TextChunkList.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public final static String TAG = "textChunkList";
+	public static final Logger LOG = LogManager.getLogger(TextChunkList.class);
+public final static String TAG = "textChunkList";
 	private static final int EPS = 5;
 
 	private List<TextChunk> childTextChunkList;

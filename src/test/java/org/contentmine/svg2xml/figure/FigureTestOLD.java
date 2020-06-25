@@ -4,8 +4,8 @@ import java.io.File;
 import java.util.Collections;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.graphics.AbstractCMElement;
 import org.contentmine.graphics.svg.SVGElement;
@@ -26,13 +26,9 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 public class FigureTestOLD {
-	private static final Logger LOG = Logger.getLogger(FigureTestOLD.class);
+	private static final Logger LOG = LogManager.getLogger(FigureTestOLD.class);
 	private static final double DISTANCE_DELTA = 1.0;
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+@Test
 	@Ignore // input files missing
 	public void testFigure() {
 		String fileroot = "page";

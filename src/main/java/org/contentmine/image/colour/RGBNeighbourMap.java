@@ -5,8 +5,8 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGElement;
 
 import com.google.common.collect.ArrayListMultimap;
@@ -20,12 +20,8 @@ import com.google.common.collect.Multiset.Entry;
  *
  */
 public class RGBNeighbourMap {
-	private static final Logger LOG = Logger.getLogger(RGBNeighbourMap.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private Multimap<RGBColor, RGBColor> neighbourMap;
+	private static final Logger LOG = LogManager.getLogger(RGBNeighbourMap.class);
+private Multimap<RGBColor, RGBColor> neighbourMap;
 	private List<Entry<RGBColor>> rgbList;
 	private Multiset<RGBColor> colorSet;
 

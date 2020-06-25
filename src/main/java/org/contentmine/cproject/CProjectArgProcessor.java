@@ -15,8 +15,8 @@ import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.CHESConstants;
 import org.contentmine.cproject.args.AbstractTool;
 import org.contentmine.cproject.args.ArgIterator;
@@ -51,12 +51,8 @@ import nu.xom.Element;
  */
 public class CProjectArgProcessor extends DefaultArgProcessor {
 
-	public static final Logger LOG = Logger.getLogger(CProjectArgProcessor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static String RESOURCE_NAME_TOP = "/" + CHESConstants.ORG_CM + "/cproject";
+	public static final Logger LOG = LogManager.getLogger(CProjectArgProcessor.class);
+public static String RESOURCE_NAME_TOP = "/" + CHESConstants.ORG_CM + "/cproject";
 	private static String ARGS_RESOURCE = RESOURCE_NAME_TOP+"/"+"args.xml";
 	private static final String SHUFFLE = "shuffle";
 	private static final String URLS_TXT = "urls.txt";

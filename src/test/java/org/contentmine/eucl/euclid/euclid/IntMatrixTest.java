@@ -21,8 +21,8 @@ import static org.contentmine.eucl.euclid.EuclidConstants.S_RBRAK;
 import java.io.IOException;
 import java.io.StringWriter;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.EuclidRuntimeException;
 import org.contentmine.eucl.euclid.Int;
 import org.contentmine.eucl.euclid.Int2;
@@ -42,7 +42,7 @@ import org.junit.Test;
  */
 public class IntMatrixTest {
 
-	final static Logger LOG = Logger.getLogger(IntMatrixTest.class);
+	final static Logger LOG = LogManager.getLogger(IntMatrixTest.class);
 
 	IntMatrix m0;
 
@@ -57,7 +57,6 @@ public class IntMatrixTest {
 	 */
 	@Before
 	public void setUp() throws Exception {
-		LOG.setLevel(Level.WARN);
 		m0 = new IntMatrix();
 		m1 = new IntMatrix(3, 4);
 		m2 = new IntMatrix(3, 4, new int[] { 11, 12, 13, 14, 21, 22, 23, 24,

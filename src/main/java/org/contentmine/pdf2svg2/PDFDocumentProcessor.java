@@ -27,8 +27,8 @@ import java.util.Set;
 
 import javax.imageio.ImageIO;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.pdfbox.contentstream.PDFGraphicsStreamEngine;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.contentmine.ami.tools.AMIPDFTool;
@@ -54,13 +54,8 @@ import org.contentmine.graphics.svg.SVGText;
  */
 public class PDFDocumentProcessor {
 	private static final String PAGES = "pages";
-	public static final Logger LOG = Logger.getLogger(PDFDocumentProcessor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	
-	private static final int SVG_CHAR_FACTOR = 40; // rough guess (M ddd.ddd ddd.ddd)
+	public static final Logger LOG = LogManager.getLogger(PDFDocumentProcessor.class);
+private static final int SVG_CHAR_FACTOR = 40; // rough guess (M ddd.ddd ddd.ddd)
 	
 	private PDDocument currentDoc;
 	private DocumentParser documentParser;
@@ -140,8 +135,6 @@ public class PDFDocumentProcessor {
 	}
 
 	public void writeSVGPages(File parent) {
-		Level level = LOG.getLevel();
-//		LOG.setLevel(Level.TRACE);
 		File svgDir = getOutputSVGDirectory(parent);
 		if (documentParser != null && outputSVG) {
 			LOG.trace("\nwriting SVG to: "+svgDir);
@@ -168,7 +161,6 @@ public class PDFDocumentProcessor {
 				}
 			}
 		}
-		LOG.setLevel(level);
 	}
 
 	public File getOutputSVGDirectory(File parent) {

@@ -12,8 +12,8 @@ import java.util.List;
 import org.apache.commons.io.FileExistsException;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMIOCRTool;
 import org.contentmine.ami.tools.AMIOCRTool.LineDir;
 import org.contentmine.ami.tools.AMIOCRTool.OcrType;
@@ -31,10 +31,8 @@ import org.contentmine.norma.util.CommandRunner;
 public class HOCRConverter /*extends CommandRunner*/ extends AbstractOCRConverter {
 
 
-	public final static Logger LOG = Logger.getLogger(HOCRConverter.class);
-	static {LOG.setLevel(Level.DEBUG);}
-
-	private static final String HOCR = "hocr";
+	public final static Logger LOG = LogManager.getLogger(HOCRConverter.class);
+private static final String HOCR = "hocr";
 	private static final String USR_LOCAL_BIN_TESSERACT = "/usr/local/bin/tesseract";
 	private final static String TESS_CONFIG = "phylo";
 	private String tesseractPath = USR_LOCAL_BIN_TESSERACT;

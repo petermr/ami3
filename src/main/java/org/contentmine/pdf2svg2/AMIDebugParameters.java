@@ -1,7 +1,7 @@
 package org.contentmine.pdf2svg2;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** DTO parameters for debugging
  * 
@@ -9,12 +9,8 @@ import org.apache.log4j.Logger;
  *
  */
 public class AMIDebugParameters {
-	private static final Logger LOG = Logger.getLogger(AMIDebugParameters.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	// default - show everything
+	private static final Logger LOG = LogManager.getLogger(AMIDebugParameters.class);
+// default - show everything
 	public boolean showAnnotation = true;
 	public boolean showAppendRectangle = true;
 	public boolean showBeginMarked = true;

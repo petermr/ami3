@@ -3,19 +3,16 @@ package org.contentmine.norma.pubstyle.sage;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.norma.NormaFixtureRunner;
 import org.contentmine.norma.NormaFixtures;
 import org.junit.Test;
 
 public class SageTest {
 	
-	private static final Logger LOG = Logger.getLogger(SageTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	static String PUB0 = "sage";
+	private static final Logger LOG = LogManager.getLogger(SageTest.class);
+static String PUB0 = "sage";
 	static String PUB = "sage";
 	static String PUB1 = "sage/clean";
 	static File TARGET = new File(NormaFixtures.TARGET_PUBSTYLE_DIR, PUB);

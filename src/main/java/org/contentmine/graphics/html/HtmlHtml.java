@@ -20,7 +20,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 
@@ -30,7 +31,7 @@ import org.contentmine.eucl.xml.XMLUtil;
  *
  */
 public class HtmlHtml extends HtmlElement {
-	private final static Logger LOG = Logger.getLogger(HtmlHtml.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlHtml.class);
 	public final static String TAG = "html";
 
 	private HtmlBody body;

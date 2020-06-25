@@ -6,8 +6,8 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import boofcv.alg.enhance.EnhanceImageOps;
 import boofcv.alg.misc.ImageStatistics;
@@ -16,12 +16,8 @@ import boofcv.io.image.ConvertBufferedImage;
 import boofcv.struct.image.GrayU8;
 
 public class BoofcvImageEnhancementTest {
-	private static final Logger LOG = Logger.getLogger(BoofcvImageEnhancementTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	/**
+	private static final Logger LOG = LogManager.getLogger(BoofcvImageEnhancementTest.class);
+/**
 	 * Demonstration of various ways an image can be "enhanced".  Image enhancement typically refers to making it easier
 	 * for people to view the image and pick out its details.
 	 *

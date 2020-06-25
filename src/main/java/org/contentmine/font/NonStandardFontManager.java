@@ -20,7 +20,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.apache.pdfbox.cos.COSArray;
 import org.apache.pdfbox.cos.COSDictionary;
 import org.apache.pdfbox.cos.COSName;
@@ -39,7 +40,7 @@ import nu.xom.Element;
 public class NonStandardFontManager {
 
 
-	private final static Logger LOG = Logger.getLogger(NonStandardFontManager.class);
+	private final static Logger LOG = LogManager.getLogger(NonStandardFontManager.class);
 	
 	
 	public static final String FONT_TRUE_TYPE = "TrueType";

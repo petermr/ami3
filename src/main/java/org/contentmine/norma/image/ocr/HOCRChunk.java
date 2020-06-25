@@ -1,7 +1,7 @@
 package org.contentmine.norma.image.ocr;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.graphics.svg.SVGConstants;
@@ -13,10 +13,8 @@ import org.contentmine.norma.image.ocr.GridExtractor.Coord;
 
 public class HOCRChunk {
 
-	final static Logger LOG = Logger.getLogger(HOCRChunk.class);
-	static {LOG.setLevel(Level.DEBUG);}
-	
-	protected SVGRect bboxRect;
+	final static Logger LOG = LogManager.getLogger(HOCRChunk.class);
+protected SVGRect bboxRect;
 	protected SVGText text;
 	
 	public HOCRChunk() {

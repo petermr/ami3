@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealRange;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -21,11 +21,8 @@ import org.junit.Test;
 @Ignore("This really should be in POM or CL")
 
 public class CacheIT {
-	private static final Logger LOG = Logger.getLogger(CacheIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	/** multiple blocks of rects
+	private static final Logger LOG = LogManager.getLogger(CacheIT.class);
+/** multiple blocks of rects
 	 * based on a 5-col grid, with some ragged ends.
 	 * most span the table and several are in blocks  which could make a spanned table
 	 * 

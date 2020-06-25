@@ -16,14 +16,15 @@
 
 package org.contentmine.graphics.html;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 /** 
  *  @author pm286
  */
 public class HtmlCol extends HtmlElement implements HasColspan {
-	private final static Logger LOG = Logger.getLogger(HtmlCol.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlCol.class);
 	public final static String TAG = "col";
 
 	/** constructor.

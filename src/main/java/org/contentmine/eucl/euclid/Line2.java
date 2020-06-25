@@ -16,7 +16,8 @@
 
 package org.contentmine.eucl.euclid;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** line
  * determined by one point (R) and a vector (V)
@@ -27,7 +28,7 @@ import org.apache.log4j.Logger;
  *
  */
 public class Line2 implements EuclidConstants {
-	private static Logger LOG = Logger.getLogger(Line2.class);
+	private static Logger LOG = LogManager.getLogger(Line2.class);
 
 	public final static Line2 XAXIS = new Line2(new Real2(0.0, 0.0), new Real2(1.0, 0.0));
 	public final static Line2 YAXIS = new Line2(new Real2(0.0, 0.0), new Real2(0.0, 1.0));

@@ -5,7 +5,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.IntRange;
@@ -27,7 +28,7 @@ public class NodesAndEdgesTest {
 
 	private ImageProcessor DEFAULT_PROCESSOR;
 
-	private final static Logger LOG = Logger.getLogger(NodesAndEdgesTest.class);
+	private final static Logger LOG = LogManager.getLogger(NodesAndEdgesTest.class);
 	
 	private final static PixelIsland A12 = NeighbourPixelTest.A12;
 	private final static PixelIsland A14 = NeighbourPixelTest.A14;

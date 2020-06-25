@@ -1,16 +1,12 @@
 package org.contentmine.norma.sections;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import nu.xom.Element;
 
 public class JATSPartTitleElement extends JATSElement {
-    private static final Logger LOG = Logger.getLogger(JATSPartTitleElement.class);
-    static {
-        LOG.setLevel(Level.DEBUG);
-    }
-
-    public static String TAG = "part-title";
+    private static final Logger LOG = LogManager.getLogger(JATSPartTitleElement.class);
+public static String TAG = "part-title";
 
     public JATSPartTitleElement(Element element) {
         super(element);

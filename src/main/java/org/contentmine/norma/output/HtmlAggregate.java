@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.RegexPathFilter;
 import org.contentmine.eucl.euclid.Util;
 
@@ -19,13 +19,9 @@ import org.contentmine.eucl.euclid.Util;
  *
  */
 public class HtmlAggregate extends HtmlDisplay {
-	private static final Logger LOG = Logger.getLogger(HtmlAggregate.class);
+	private static final Logger LOG = LogManager.getLogger(HtmlAggregate.class);
 	
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public HtmlAggregate() {
+public HtmlAggregate() {
 		super();
 	}
 

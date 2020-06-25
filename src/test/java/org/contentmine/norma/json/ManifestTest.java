@@ -6,8 +6,8 @@ import java.util.Map;
 import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.norma.NormaFixtures;
 import org.junit.Assert;
@@ -30,12 +30,8 @@ import com.jayway.jsonpath.ReadContext;
 public class ManifestTest {
 
 	
-	private static final Logger LOG = Logger.getLogger(ManifestTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(ManifestTest.class);
+@Test
 	public void testReadManifestArray() throws IOException {
 		String resultsJsonString = FileUtils.readFileToString(new File(NormaFixtures.TEST_JSON_DIR, "all_results.json"));
 	    JsonParser parser = new JsonParser();

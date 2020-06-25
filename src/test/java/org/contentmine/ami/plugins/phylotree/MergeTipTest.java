@@ -10,8 +10,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIFixtures;
 import org.contentmine.ami.lookups.ENALookup;
 import org.contentmine.ami.plugins.phylotree.PhyloTreeArgProcessor;
@@ -33,12 +33,8 @@ public class MergeTipTest {
 
 	static final String X15GOODTREE = "target/phylo/combined/15goodtree/";
 
-	public static final Logger LOG = Logger.getLogger(HOCRPhyloTreeTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	static String[] ROOTS = {
+	public static final Logger LOG = LogManager.getLogger(HOCRPhyloTreeTest.class);
+static String[] ROOTS = {
 			"ijs.0.000174-0-000",
 			"ijs.0.000364-0-004",
 			"ijs.0.000406-0-000",

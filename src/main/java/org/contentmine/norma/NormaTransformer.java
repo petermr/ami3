@@ -22,8 +22,9 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.filefilter.IOFileFilter;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.ResourceLocation;
 import org.contentmine.cproject.util.CMineUtil;
@@ -145,11 +146,8 @@ public class NormaTransformer {
 		}
 	}
 
-	private static final Logger LOG = Logger.getLogger(NormaTransformer.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final String STYLESHEET_BY_NAME_XML = NAConstants.PUBSTYLE_RESOURCE+ "/" + "stylesheetByName.xml";
+	private static final Logger LOG = LogManager.getLogger(NormaTransformer.class);
+private static final String STYLESHEET_BY_NAME_XML = NAConstants.PUBSTYLE_RESOURCE+ "/" + "stylesheetByName.xml";
 	public static final String NLM2HTML = "nlm2html";
 	private static final String NAME = "name";
 
@@ -257,9 +255,9 @@ public class NormaTransformer {
 					}
 				}
 			} catch (RuntimeException e) {
-				if (Level.ERROR.equals(normaArgProcessor.getExceptionLevel())) {
+				if (DefaultArgProcessor.ExceptionLevel.ERROR.equals(normaArgProcessor.getExceptionLevel())) {
 					throw e;
-				} else if (Level.INFO.equals(normaArgProcessor.getExceptionLevel())) {
+				} else if (DefaultArgProcessor.ExceptionLevel.INFO.equals(normaArgProcessor.getExceptionLevel())) {
 					System.out.print("?@?");
 				} else {
 					e.printStackTrace();
@@ -409,9 +407,9 @@ public class NormaTransformer {
 			transformSingleInput0(inputFile);
 		} catch (RuntimeException e) {
 			e.printStackTrace();
-			if (Level.ERROR.equals(normaArgProcessor.getExceptionLevel())) {
+			if (DefaultArgProcessor.ExceptionLevel.ERROR.equals(normaArgProcessor.getExceptionLevel())) {
 				throw e;
-			} else if (Level.INFO.equals(normaArgProcessor.getExceptionLevel())) {
+			} else if (DefaultArgProcessor.ExceptionLevel.INFO.equals(normaArgProcessor.getExceptionLevel())) {
 				System.out.print("?@?");
 			} else {
 				e.printStackTrace();

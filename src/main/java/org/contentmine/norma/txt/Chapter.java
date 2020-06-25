@@ -5,19 +5,15 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.graphics.html.HtmlDiv;
 
 public class Chapter extends AbstractSection {
 
-	private static final Logger LOG = Logger.getLogger(Chapter.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private HtmlDiv chapterElement;
+	private static final Logger LOG = LogManager.getLogger(Chapter.class);
+private HtmlDiv chapterElement;
 	private List<AnnotatedLine> localSectionHeadings;
 	private List<Section> localSections;
 	private Section firstSection;

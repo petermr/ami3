@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMIDownloadTool;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
@@ -51,12 +51,8 @@ import nu.xom.Element;
  */
 public abstract class AbstractDownloader {
 	
-	static final Logger LOG = Logger.getLogger(AbstractDownloader.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public static final String CITATION_PDF_URL = "citation_pdf_url";
+	static final Logger LOG = LogManager.getLogger(AbstractDownloader.class);
+public static final String CITATION_PDF_URL = "citation_pdf_url";
 	public static final String ABSTRACT  = "abstract";
 	public static final String CITATION_ABSTRACT_HTML_URL = "citation_abstract_html_url";
 	public static final String CITATION_FULL_HTML_URL = "citation_full_html_url";

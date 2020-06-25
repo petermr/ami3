@@ -1,8 +1,8 @@
 package org.contentmine.cproject.util;
 
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.PluginOption;
 import org.contentmine.graphics.html.HtmlA;
 import org.contentmine.graphics.html.HtmlElement;
@@ -13,12 +13,8 @@ import nu.xom.Attribute;
 
 public class CellRenderer {
 
-	private static final Logger LOG = Logger.getLogger(CellRenderer.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private String flag;
+	private static final Logger LOG = LogManager.getLogger(CellRenderer.class);
+private String flag;
 	private String value;
 	private int characterCount;
 	private boolean wordCount;

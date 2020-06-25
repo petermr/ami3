@@ -3,8 +3,8 @@ package org.contentmine.norma.json;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
@@ -16,12 +16,8 @@ import com.google.gson.JsonObject;
  */
 public class Hit {
 
-	private static final Logger LOG = Logger.getLogger(Hit.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private Double _score;
+	private static final Logger LOG = LogManager.getLogger(Hit.class);
+private Double _score;
     private String _type;
     private String _id;
     private BibSource _source;

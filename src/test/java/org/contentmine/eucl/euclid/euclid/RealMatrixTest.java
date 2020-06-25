@@ -20,8 +20,8 @@ package org.contentmine.eucl.euclid.euclid;
 import java.io.IOException;
 import java.io.StringWriter;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.EC;
 import org.contentmine.eucl.euclid.EuclidRuntimeException;
 import org.contentmine.eucl.euclid.Int;
@@ -45,13 +45,9 @@ import org.junit.Test;
  */
 public class RealMatrixTest{
 
-	private final static Logger LOG = Logger.getLogger(RealMatrixTest.class);
+	private final static Logger LOG = LogManager.getLogger(RealMatrixTest.class);
 	
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	RealMatrix m0;
+RealMatrix m0;
 	RealMatrix m1;
 	RealMatrix m2;
 
@@ -62,7 +58,6 @@ public class RealMatrixTest{
 	 */
 	@Before
 	public void setUp() throws Exception {
-		LOG.setLevel(Level.WARN);
 		m0 = new RealMatrix();
 		m1 = new RealMatrix(3, 4);
 		m2 = new RealMatrix(3, 4, new double[] { 11., 12., 13., 14., 21., 22.,

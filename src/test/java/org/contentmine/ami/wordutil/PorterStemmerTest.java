@@ -3,8 +3,8 @@ package org.contentmine.ami.wordutil;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.wordutil.PorterStemmer;
 import org.junit.Assert;
 import org.junit.Test;
@@ -12,12 +12,8 @@ import org.junit.Test;
 
 public class PorterStemmerTest {
 
-	private static final Logger LOG = Logger.getLogger(PorterStemmerTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(PorterStemmerTest.class);
+@Test
 	public void testPorterStemmer1() {
 		PorterStemmer porterStemmer = new PorterStemmer();
 		String result = porterStemmer.stem("cats");

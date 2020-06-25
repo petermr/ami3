@@ -8,7 +8,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
@@ -29,7 +30,7 @@ import nu.xom.Element;
 
 public class Word extends LineChunk implements Iterable<SVGText> {
 
-	private final static Logger LOG = Logger.getLogger(Word.class);
+	private final static Logger LOG = LogManager.getLogger(Word.class);
 
 	public final static String TAG = "word";
 	public static String SPACE_SYMBOL = " ";

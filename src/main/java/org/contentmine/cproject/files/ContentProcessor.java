@@ -8,8 +8,8 @@ import java.util.HashMap;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -26,12 +26,8 @@ import nu.xom.Element;
 public class ContentProcessor {
 
 	
-	private static final Logger LOG = Logger.getLogger(ContentProcessor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String OVERWRITE = "overwrite";
+	private static final Logger LOG = LogManager.getLogger(ContentProcessor.class);
+private static final String OVERWRITE = "overwrite";
 	private static final String NO_DUPLICATES = "noDuplicates";
 	private static final String MERGE = "merge";
 

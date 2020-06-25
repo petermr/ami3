@@ -8,8 +8,8 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIFixtures;
 import org.contentmine.ami.plugins.AMIPlugin;
 import org.contentmine.ami.plugins.regex.CompoundRegex;
@@ -35,14 +35,8 @@ import nu.xom.Text;
 
 public class RegexPluginTest {
 	
-	private static final Logger LOG = Logger.getLogger(RegexPluginTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	
-	
-	/** test help
+	private static final Logger LOG = LogManager.getLogger(RegexPluginTest.class);
+/** test help
 	 * 
 	 * desn't run anything
 	 * 

@@ -11,8 +11,8 @@ import java.util.Map;
 import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 
 import com.google.common.collect.HashMultiset;
@@ -23,12 +23,8 @@ import com.google.gson.JsonParser;
 
 public class ScraperSet {
 
-	public static final Logger LOG = Logger.getLogger(ScraperSet.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final String JSON = ".json";
+	public static final Logger LOG = LogManager.getLogger(ScraperSet.class);
+public static final String JSON = ".json";
 	public static final String ELEMENTS = "elements";
 
 	public static final String SCRAPERS_CSV = "scrapers.csv";

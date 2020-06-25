@@ -3,8 +3,8 @@ package org.contentmine.norma.table;
 import java.io.File;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -18,12 +18,8 @@ import net.minidev.json.JSONObject;
 
 public class CSVTest {
 	
-	public static final Logger LOG = Logger.getLogger(CSVTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	public static final Logger LOG = LogManager.getLogger(CSVTest.class);
+@Test
 	public void testReadCSV() throws Exception {
 		CSVTransformer csvTransformer = new CSVTransformer();
 		csvTransformer.readFile(new File(NormaFixtures.TEST_TABLE_DIR, "table.csv"));

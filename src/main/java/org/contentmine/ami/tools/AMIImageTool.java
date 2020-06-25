@@ -13,8 +13,8 @@ import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.ImageParameterAnalyzer.ImageParameters;
 import org.contentmine.ami.tools.image.AnnotatedImage;
 import org.contentmine.ami.tools.template.AbstractTemplateElement;
@@ -86,12 +86,8 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 	private static final String SHARP4 = "_s4";
 	private static final String THRESHOLD = "_thr_";
 
-	private static final Logger LOG = Logger.getLogger(AMIImageTool.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public enum AMIImageType {
+	private static final Logger LOG = LogManager.getLogger(AMIImageTool.class);
+public enum AMIImageType {
 		NONE("none", 0, new AMIImageType[]{}),
 		RAW("raw", NONE.priority + 1, new AMIImageType[]{}),
 		BORDER("border", RAW.priority + 1, AMIImageType.RAW),

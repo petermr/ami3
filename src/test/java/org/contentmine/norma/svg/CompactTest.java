@@ -3,8 +3,8 @@ package org.contentmine.norma.svg;
 import java.io.File;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.norma.Norma;
 import org.contentmine.norma.NormaFixtures;
@@ -18,12 +18,8 @@ import junit.framework.Assert;
  *
  */
 public class CompactTest {
-private static final Logger LOG = Logger.getLogger(CompactTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+private static final Logger LOG = LogManager.getLogger(CompactTest.class);
+@Test
 	// FIXME TEST
 	public void testCompact() {
 		String cprojectName = "singleTreeSingleFigure";

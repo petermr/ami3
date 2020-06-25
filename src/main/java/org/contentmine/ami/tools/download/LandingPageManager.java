@@ -11,8 +11,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMIDownloadTool;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.util.CMineUtil;
@@ -135,12 +135,8 @@ Conclusion: Our analysis suggests that at least two different viral strains of 2
 public class LandingPageManager extends AbstractSubDownloader {
 
 
-	private static final Logger LOG = Logger.getLogger(LandingPageManager.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private List<String> landingPageFilerootList = new ArrayList<>();
+	private static final Logger LOG = LogManager.getLogger(LandingPageManager.class);
+private List<String> landingPageFilerootList = new ArrayList<>();
 	private List<String> cTreeNameList;
 
 	public LandingPageManager(AbstractDownloader abstractDownloader) {

@@ -1,10 +1,11 @@
 package org.contentmine.pdf2svg.cmap;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class CharMapEntry {
 
-	private static final Logger LOG = Logger.getLogger(CharMapEntry.class);
+	private static final Logger LOG = LogManager.getLogger(CharMapEntry.class);
 	
 	private Integer serial;
 	private Integer unicodePointValue;

@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.RealArray;
 import org.contentmine.eucl.euclid.RealRange;
 import org.contentmine.eucl.euclid.test.TestUtil;
@@ -33,13 +33,8 @@ import com.google.common.collect.Multimap;
 public class TextCacheTest extends AbstractCacheTest {
 
 
-private static final Logger LOG = Logger.getLogger(TextCacheTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-
-	/**
+private static final Logger LOG = LogManager.getLogger(TextCacheTest.class);
+/**
 	 * bug where svgx:char changes, hopefully now fixed.
 	 * 
 	 */

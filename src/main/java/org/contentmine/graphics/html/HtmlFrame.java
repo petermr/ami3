@@ -16,7 +16,8 @@
 
 package org.contentmine.graphics.html;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 /** base class for lightweight generic SVG element.
@@ -26,7 +27,7 @@ import org.apache.log4j.Logger;
  */
 public class HtmlFrame extends HtmlElement {
 
-	private final static Logger LOG = Logger.getLogger(HtmlFrame.class);
+	private final static Logger LOG = LogManager.getLogger(HtmlFrame.class);
 	public final static String TAG = "frame";
 	/** constructor.
 	 * 

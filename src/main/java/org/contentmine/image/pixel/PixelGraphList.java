@@ -3,8 +3,8 @@ package org.contentmine.image.pixel;
 import java.io.File;
 import java.util.ArrayList;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Axis.Axis2;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.graphics.svg.SVGG;
@@ -15,12 +15,8 @@ import org.contentmine.graphics.svg.cache.GenericAbstractList;
 import net.sourceforge.htmlunit.corejs.javascript.NativeGenerator.GeneratorClosedException;
 
 public class PixelGraphList extends GenericAbstractList<PixelGraph> {
-	private static final Logger LOG = Logger.getLogger(PixelGraphList.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public PixelGraphList() {
+	private static final Logger LOG = LogManager.getLogger(PixelGraphList.class);
+public PixelGraphList() {
 		init();
 	}
 

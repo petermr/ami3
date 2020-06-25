@@ -2,8 +2,8 @@ package org.contentmine.ami.tools.download.osf;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.download.AbstractLandingPage;
 import org.contentmine.eucl.xml.XMLUtil;
 
@@ -19,12 +19,8 @@ import org.contentmine.eucl.xml.XMLUtil;
  *
  */
 public class OSFLandingPage extends AbstractLandingPage {
-	private static final Logger LOG = Logger.getLogger(OSFLandingPage.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public OSFLandingPage() {
+	private static final Logger LOG = LogManager.getLogger(OSFLandingPage.class);
+public OSFLandingPage() {
 		super();
 	}
 

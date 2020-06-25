@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.metadata.AbstractMetadata;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -29,12 +29,8 @@ The whole thing is a mess.
  */
 public class HtmlMD extends AbstractMetadata {
 	
-	static final Logger LOG = Logger.getLogger(HtmlMD.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String LANDING_PAGE_METADATA_XML = "landingPageMetadata.xml";
+	static final Logger LOG = LogManager.getLogger(HtmlMD.class);
+private static final String LANDING_PAGE_METADATA_XML = "landingPageMetadata.xml";
 
 	private static final String CTREE_RESULT_XML = "html_metadata.xml";
 	private static final String CPROJECT_RESULT_XML = "html_metadata.xml";

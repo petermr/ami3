@@ -2,8 +2,8 @@ package org.contentmine.ami.plugins.search;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMISearcher;
 import org.contentmine.ami.plugins.AbstractSearchArgProcessor;
 import org.contentmine.cproject.args.AbstractTool;
@@ -20,13 +20,8 @@ public class SearchArgProcessor extends AbstractSearchArgProcessor {
 	
 	// Dummy at present
 	
-	public static final Logger LOG = Logger.getLogger(SearchArgProcessor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	
-	public SearchArgProcessor() {
+	public static final Logger LOG = LogManager.getLogger(SearchArgProcessor.class);
+public SearchArgProcessor() {
 		super();
 	}
 

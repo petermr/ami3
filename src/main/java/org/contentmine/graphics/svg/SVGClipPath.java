@@ -23,8 +23,8 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.graphics.AbstractCMElement;
 
@@ -41,12 +41,8 @@ import nu.xom.Node;
  */
 public class SVGClipPath extends SVGElement {
 
-	private static Logger LOG = Logger.getLogger(SVGClipPath.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String CLIP_PATH_ATT = "clip-path";
+	private static Logger LOG = LogManager.getLogger(SVGClipPath.class);
+private static final String CLIP_PATH_ATT = "clip-path";
 	public final static String TAG = "clipPath";
 	public final static String ALL_SVG_PATH_XPATH = ".//svg:clipPath";
 //	clip-path="url(#clipPath1)"

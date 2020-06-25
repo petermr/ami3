@@ -1,7 +1,7 @@
 package org.contentmine.graphics.svg;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import nu.xom.Attribute;
 
@@ -11,12 +11,8 @@ public class AbstractSVGGradient extends SVGElement {
 	private static final String Y1 = "y1";
 	private static final String X2 = "x2";
 	private static final String X1 = "x1";
-	private static final Logger LOG = Logger.getLogger(AbstractSVGGradient.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public AbstractSVGGradient(String tag) {
+	private static final Logger LOG = LogManager.getLogger(AbstractSVGGradient.class);
+public AbstractSVGGradient(String tag) {
 		super(tag);
 	}
 

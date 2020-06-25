@@ -1,13 +1,14 @@
 package org.contentmine.image.pixel;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.image.ImageAnalysisFixtures;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class PixelNucleusFactoryAndSpikesTest {
 	
-	private final static Logger LOG = Logger.getLogger(PixelNucleusFactoryAndSpikesTest.class);
+	private final static Logger LOG = LogManager.getLogger(PixelNucleusFactoryAndSpikesTest.class);
 
 	@Test
 	public void testPixelNucleusListDot() {

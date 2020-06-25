@@ -9,8 +9,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Assert;
 import org.junit.Test;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -24,12 +24,8 @@ import nu.xom.Element;
 
 public class AbstractEditorElementTest {
 	
-	public static final Logger LOG = Logger.getLogger(AbstractEditorElementTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	public static final Logger LOG = LogManager.getLogger(AbstractEditorElementTest.class);
+@Test
 	public void testReadEditor() {
 		InputStream is = this.getClass().getResourceAsStream(NAConstants.NORMA_RESOURCE+"/editor/speciesEditor.xml");
 		EditorElement editorElement = (EditorElement) AbstractEditorElement.createEditorElement(is);

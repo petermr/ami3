@@ -2,8 +2,8 @@ package org.contentmine.cproject.metadata.crossref;
 
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.metadata.JsonUtils;
 
 import com.google.gson.JsonArray;
@@ -12,12 +12,8 @@ import com.google.gson.JsonObject;
 
 public class CrossrefDateTime {
 
-	private static final Logger LOG = Logger.getLogger(CrossrefDateTime.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private JsonObject jsonObject;
+	private static final Logger LOG = LogManager.getLogger(CrossrefDateTime.class);
+private JsonObject jsonObject;
 
 	public CrossrefDateTime() {
 		

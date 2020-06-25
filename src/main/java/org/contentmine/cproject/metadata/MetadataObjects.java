@@ -9,8 +9,8 @@ import java.util.List;
 import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.metadata.crossref.CRPerson;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.cproject.util.RectangularTable;
@@ -25,12 +25,8 @@ import com.google.common.collect.Multiset;
  */
 public class MetadataObjects {
 
-	private static final Logger LOG = Logger.getLogger(MetadataObjects.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private Set<String> stringKeys;
+	private static final Logger LOG = LogManager.getLogger(MetadataObjects.class);
+private Set<String> stringKeys;
 	private Set<String> stringListKeys;
 	private Multiset<String> licenseMultiset;
 	private Multiset<String> finalLicenseMultiset;

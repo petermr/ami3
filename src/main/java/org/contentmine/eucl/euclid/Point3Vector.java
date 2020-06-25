@@ -18,7 +18,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Axis.Axis3;
 /**
  * a (Java) Vector of Point3s (Note that 'Vector' is used by Java to describe an
@@ -41,7 +42,7 @@ import org.contentmine.eucl.euclid.Axis.Axis3;
  * @author (C) P. Murray-Rust, 1996
  */
 public class Point3Vector implements EuclidConstants {
-    final static Logger LOG = Logger.getLogger(Point3Vector.class);
+    final static Logger LOG = LogManager.getLogger(Point3Vector.class);
     protected List<Point3> vector;
     /**
      * Comment for <code>serialVersionUID</code>

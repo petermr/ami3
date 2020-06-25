@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
 	<tableTemplate name="composition">
@@ -25,12 +25,8 @@ import org.apache.log4j.Logger;
  */
 public class QueryMatcher extends AbstractTTElement {
 
-	private static final Logger LOG = Logger.getLogger(QueryMatcher.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static String TAG = "query";
+	private static final Logger LOG = LogManager.getLogger(QueryMatcher.class);
+public static String TAG = "query";
 	
 	public static String AND = "and";
 	public static String NOT = "not";

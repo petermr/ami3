@@ -3,8 +3,8 @@ package org.contentmine.norma.pubstyle.nature;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.norma.NormaFixtureRunner;
 import org.contentmine.norma.NormaFixtures;
 import org.junit.Ignore;
@@ -13,11 +13,8 @@ import org.junit.Test;
 @Ignore // closed access
 public class NatureTest {
 	
-	private static final Logger LOG = Logger.getLogger(NatureTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	static String PUB0 = "nature";
+	private static final Logger LOG = LogManager.getLogger(NatureTest.class);
+static String PUB0 = "nature";
 	static String PUB = "nature";
 	static String PUB1 = PUB+"/clean";
 	static File TARGET = new File(NormaFixtures.TARGET_PUBSTYLE_DIR, PUB);

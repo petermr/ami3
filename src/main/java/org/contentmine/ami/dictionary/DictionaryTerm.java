@@ -4,8 +4,8 @@ import java.util.List;
 
 import javax.management.RuntimeErrorException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.dictionary.places.WikidataPlacesDictionary;
 
 import nu.xom.Element;
@@ -17,12 +17,8 @@ import nu.xom.Element;
  */
 public class DictionaryTerm implements Comparable<DictionaryTerm> {
 
-	private static final Logger LOG = Logger.getLogger(DictionaryTerm.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private TermPhrase termPhrase;
+	private static final Logger LOG = LogManager.getLogger(DictionaryTerm.class);
+private TermPhrase termPhrase;
 	private TermPhrase lowerCaseTermPhrase;
 	private TermPhrase stemmedTermPhrase;
 	private TermPhrase lowerCaseStemmedTermPhrase;

@@ -3,14 +3,15 @@ package org.contentmine.norma.tagger;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
 
 public class MetadataListElement extends AbstractTElement {
 
-	private static final Logger LOG = Logger.getLogger(MetadataListElement.class);
+	private static final Logger LOG = LogManager.getLogger(MetadataListElement.class);
 	
 	public static final String TAG_DEFINITION_NAME = "name";
 	public static final String TAG = "metadataList";

@@ -3,14 +3,15 @@ package org.contentmine.svg2xml.util;
 import java.util.List;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 
 public class TextFlattenerTest {
 
-	private final static Logger LOG = Logger.getLogger(TextFlattenerTest.class);
+	private final static Logger LOG = LogManager.getLogger(TextFlattenerTest.class);
 
 	@Test
 	public void testFlattenDigitsNull() {

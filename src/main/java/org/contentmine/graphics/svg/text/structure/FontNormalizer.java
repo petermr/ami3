@@ -2,8 +2,8 @@ package org.contentmine.graphics.svg.text.structure;
 
 import java.awt.Color;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** attempts to normalize fonts to make postprocessing easier.
  * 
@@ -11,12 +11,8 @@ import org.apache.log4j.Logger;
  *
  */
 public class FontNormalizer {
-	private static final Logger LOG = Logger.getLogger(FontNormalizer.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public final static FontNormalizer DEFAULT_NORMALIZER;
+	private static final Logger LOG = LogManager.getLogger(FontNormalizer.class);
+public final static FontNormalizer DEFAULT_NORMALIZER;
 	private static final int DEFAULT_THRESHOLD = 240;
 	static {
 		DEFAULT_NORMALIZER = new FontNormalizer();

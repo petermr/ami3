@@ -7,7 +7,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.eucl.euclid.RealRange;
@@ -43,7 +44,7 @@ public class ScriptContainer extends AbstractContainer implements Iterable<Scrip
 		RIGHT,
 	};
 
-	public final static Logger LOG = Logger.getLogger(ScriptContainer.class);
+	public final static Logger LOG = LogManager.getLogger(ScriptContainer.class);
 
 	private static final double FONT_EPS = 0.01;
 	private static final String SOFT_HYPHEN = "~";

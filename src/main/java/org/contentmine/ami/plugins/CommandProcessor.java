@@ -9,8 +9,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.lookups.WikipediaLookup;
 import org.contentmine.ami.tools.AMISearchTool;
 import org.contentmine.ami.tools.AbstractAMITool;
@@ -37,12 +37,8 @@ import nu.xom.Element;
 public class CommandProcessor {
 
 
-	public static final Logger LOG = Logger.getLogger(CommandProcessor.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public final static String SYMBOLS = NAConstants.PLUGINS_RESOURCE+"/symbols.xml";
+	public static final Logger LOG = LogManager.getLogger(CommandProcessor.class);
+public final static String SYMBOLS = NAConstants.PLUGINS_RESOURCE+"/symbols.xml";
 	private static final String EXPAND = "expand";
 	private static final String ABBREVIATION = "abbreviation";
 	private static final String ARTICLES = "articles";

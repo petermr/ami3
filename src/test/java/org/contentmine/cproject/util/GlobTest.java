@@ -5,19 +5,15 @@ import java.io.IOException;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class GlobTest {
 
-	private static final Logger LOG = Logger.getLogger(GlobTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	@Test
+	private static final Logger LOG = LogManager.getLogger(GlobTest.class);
+@Test
 	public void testGlob() throws IOException {
 		CMineGlobber globber = new CMineGlobber();
 		globber.setLocation("src/test/resources");

@@ -22,8 +22,8 @@ import org.apache.commons.csv.CSVPrinter;
 import org.apache.commons.csv.CSVRecord;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.HtmlTable;
 import org.contentmine.graphics.html.HtmlTbody;
 import org.contentmine.graphics.html.HtmlTfoot;
@@ -36,12 +36,8 @@ import com.google.common.collect.Multiset.Entry;
 
 public class RectangularTable {
 
-	private static final Logger LOG = Logger.getLogger(RectangularTable.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String NEW_LINE_SEPARATOR = "\n";
+	private static final Logger LOG = LogManager.getLogger(RectangularTable.class);
+private static final String NEW_LINE_SEPARATOR = "\n";
 	
 	private List<String> header;
 	private List<List<String>> rows;

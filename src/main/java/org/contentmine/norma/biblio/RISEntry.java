@@ -3,8 +3,8 @@ package org.contentmine.norma.biblio;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.html.HtmlDiv;
 
 import com.google.common.collect.ArrayListMultimap;
@@ -12,12 +12,8 @@ import com.google.common.collect.Multimap;
 
 public class RISEntry {
 
-	public static final Logger LOG = Logger.getLogger(RISEntry.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static final String AB = "AB";
+	public static final Logger LOG = LogManager.getLogger(RISEntry.class);
+private static final String AB = "AB";
 	private static final String ER = "ER";
 	public static final String TY = "TY";
 	

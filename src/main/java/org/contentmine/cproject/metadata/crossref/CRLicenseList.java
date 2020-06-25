@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineUtil;
 
 import com.google.common.collect.HashMultiset;
@@ -16,12 +16,8 @@ import com.google.gson.JsonObject;
 
 public class CRLicenseList implements Iterable<CRLicense> {
 
-	private static final Logger LOG = Logger.getLogger(CRLicenseList.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private List<CRLicense> licenseList;
+	private static final Logger LOG = LogManager.getLogger(CRLicenseList.class);
+private List<CRLicense> licenseList;
 	
 	public CRLicenseList() {
 		this.licenseList = new ArrayList<CRLicense>();

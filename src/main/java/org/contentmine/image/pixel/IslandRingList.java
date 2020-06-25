@@ -3,8 +3,8 @@ package org.contentmine.image.pixel;
 import java.util.List;
 import java.util.Stack;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** manages island subrings within a single PixelRing
  * 
@@ -12,12 +12,8 @@ import org.apache.log4j.Logger;
  *
  */
 public class IslandRingList extends PixelRingList {
-	private static final Logger LOG = Logger.getLogger(IslandRingList.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public IslandRingList() {
+	private static final Logger LOG = LogManager.getLogger(IslandRingList.class);
+public IslandRingList() {
 		super();
 	}
 

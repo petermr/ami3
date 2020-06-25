@@ -3,7 +3,8 @@ package org.contentmine.ami.plugins.phylotree;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
 import org.contentmine.graphics.svg.SVGCircle;
@@ -23,7 +24,7 @@ import nu.xom.Nodes;
  */
 public class SVGXTreeNode extends SVGG {
 
-	private final static Logger LOG = Logger.getLogger(SVGG.class);
+	private final static Logger LOG = LogManager.getLogger(SVGG.class);
 	
 	private static final String CHILD = "child";
 	private static final String CHILD_EDGE = "childEdge";

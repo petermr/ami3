@@ -3,8 +3,8 @@ package org.contentmine.norma.pdf;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeList;
@@ -22,11 +22,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class NewForestIT {
-	private static final Logger LOG = Logger.getLogger(NewForestIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	private static final File PLOTS_DIR = new File("/Users/pm286/workspace/projects/forest/plots/");
+	private static final Logger LOG = LogManager.getLogger(NewForestIT.class);
+private static final File PLOTS_DIR = new File("/Users/pm286/workspace/projects/forest/plots/");
 	private static final CProject PLOTS_PROJECT = new CProject(PLOTS_DIR);
 
 	@Test

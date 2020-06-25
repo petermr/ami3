@@ -1,16 +1,12 @@
 package org.contentmine.svg2xml.table;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class TableTitle {
 
-	private static final Logger LOG = Logger.getLogger(TableTitle.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private String title;
+	private static final Logger LOG = LogManager.getLogger(TableTitle.class);
+private String title;
 	private String chunkName;
 
 	public TableTitle(String title, String chunkName) {

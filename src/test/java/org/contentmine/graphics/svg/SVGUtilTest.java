@@ -11,7 +11,8 @@ import java.util.List;
 
 import javax.imageio.ImageIO;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
@@ -25,7 +26,7 @@ import org.junit.Test;
 
 public class SVGUtilTest {
 
-	private final static Logger LOG = Logger.getLogger(SVGUtilTest.class);
+	private final static Logger LOG = LogManager.getLogger(SVGUtilTest.class);
 
 	@Test
 	public void testInterposeGBetweenChildren() {

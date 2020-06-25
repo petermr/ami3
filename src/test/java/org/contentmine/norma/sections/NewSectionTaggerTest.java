@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.norma.sections.JATSSectionTagger.SectionTag;
 import org.junit.Assert;
@@ -16,14 +16,9 @@ import nu.xom.Element;
 
 public class NewSectionTaggerTest {
 
-	public static final Logger LOG = Logger.getLogger(NewSectionTaggerTest.class);
+	public static final Logger LOG = LogManager.getLogger(NewSectionTaggerTest.class);
 
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-
-	@Test
+@Test
 	public void testReadSectionTags() throws IOException {
 		JATSSectionTagger tagger = new JATSSectionTagger();
 		String defaultSectionTaggerResourceName = JATSSectionTagger.DEFAULT_SECTION_TAGGER_RESOURCE;

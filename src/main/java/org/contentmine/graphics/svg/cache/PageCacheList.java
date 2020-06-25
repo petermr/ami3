@@ -2,16 +2,12 @@ package org.contentmine.graphics.svg.cache;
 
 import java.util.ArrayList;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class PageCacheList extends GenericAbstractList<PageCache> {
-	private static final Logger LOG = Logger.getLogger(PageCacheList.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public PageCacheList() {
+	private static final Logger LOG = LogManager.getLogger(PageCacheList.class);
+public PageCacheList() {
 		init();
 	}
 

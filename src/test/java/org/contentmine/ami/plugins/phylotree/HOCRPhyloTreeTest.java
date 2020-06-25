@@ -5,8 +5,8 @@ import java.io.FileInputStream;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -39,13 +39,8 @@ import org.contentmine.norma.image.ocr.HOCRReaderOLD;
 public class HOCRPhyloTreeTest {
 
 	
-	public static final Logger LOG = Logger.getLogger(HOCRPhyloTreeTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	
-	public final static File HOCR_364_HTML = new File(AMIFixtures.TEST_PHYLO_DIR, "ijs_0_000364_0/image/003.pbm.png.hocr.html");
+	public static final Logger LOG = LogManager.getLogger(HOCRPhyloTreeTest.class);
+public final static File HOCR_364_HTML = new File(AMIFixtures.TEST_PHYLO_DIR, "ijs_0_000364_0/image/003.pbm.png.hocr.html");
 	private final static File PHYLOTREE_364_NEXML = new File(AMIFixtures.TEST_PHYLO_DIR, "ijs_0_000364_0/image/003.pbm.png.phylotree.nexml");
 
 	@Test

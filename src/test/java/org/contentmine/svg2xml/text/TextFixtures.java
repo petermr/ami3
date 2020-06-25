@@ -3,7 +3,8 @@ package org.contentmine.svg2xml.text;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.graphics.svg.text.line.StyleSpans;
@@ -89,7 +90,7 @@ public class TextFixtures {
 		{"Hla, ","<I>H. lar</I>","; Hpi, ","<I>H. pileatus</I>","; Nle, ","<I>N. leucogenys</I>","; Ssy, ","<I>S. syndactylus</I>",".",}, 
 	};	
 	// ==========================================================================================
-	private static final Logger LOG = Logger.getLogger(TextFixtures.class);
+	private static final Logger LOG = LogManager.getLogger(TextFixtures.class);
 	
 	
 	public static void testSpans(String[][] values, File file) {

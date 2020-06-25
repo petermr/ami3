@@ -2,12 +2,13 @@ package org.contentmine.image.diagram;
 
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.EuclidConstants;
 
 public class SVGParameters {
 
-	private final static Logger LOG = Logger.getLogger(SVGParameters.class);
+	private final static Logger LOG = LogManager.getLogger(SVGParameters.class);
 	
 	private static final String EDGES = "edges";
 	private static final String PIXELS = "pixels";

@@ -4,8 +4,8 @@ import java.io.IOException;
 
 import nu.xom.Element;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -17,12 +17,8 @@ import org.contentmine.eucl.xml.XMLUtil;
 @Ignore // lookup
 public class GenbankLookupTest {
 
-	private static final Logger LOG = Logger.getLogger(GenbankLookupTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(GenbankLookupTest.class);
+@Test
 	@Ignore("Not yet working") // LOOKUP 
 	public void getGenbankForTaxon() throws Exception {
 		

@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.Queue;
 import java.util.regex.Pattern;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Angle;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.IntRange;
@@ -26,12 +26,8 @@ import nu.xom.Element;
 public class PhraseChunk extends LineChunk implements Iterable<Phrase> {
 	
 
-	private static final Logger LOG = Logger.getLogger(PhraseChunk.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	public final static String TAG = "phraseChunk";
+	private static final Logger LOG = LogManager.getLogger(PhraseChunk.class);
+public final static String TAG = "phraseChunk";
 
 	// this is not exposed
 	private List<Phrase> childPhraseList; 

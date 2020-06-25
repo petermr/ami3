@@ -1,7 +1,7 @@
 package org.contentmine.ami.plugins.simple;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMIPlugin;
 import org.contentmine.ami.plugins.sequence.SequenceArgProcessor;
 
@@ -14,11 +14,7 @@ import org.contentmine.ami.plugins.sequence.SequenceArgProcessor;
  */
 public class SimplePlugin extends AMIPlugin {
 
-	private static final Logger LOG = Logger.getLogger(SimplePlugin.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
+	private static final Logger LOG = LogManager.getLogger(SimplePlugin.class);
 //	private SimpleArgProcessor argProcessor;
 	
 	public SimplePlugin(String[] args) {

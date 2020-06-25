@@ -2,8 +2,8 @@ package org.contentmine.pdf2svg2;
 
 import java.io.File;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.svg.SVGHTMLFixtures;
@@ -12,12 +12,8 @@ import org.junit.Test;
 import junit.framework.Assert;
 
 public class BiorxivTest {
-	private static final Logger LOG = Logger.getLogger(BiorxivTest.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	@Test
+	private static final Logger LOG = LogManager.getLogger(BiorxivTest.class);
+@Test
 	public void testBiorxivMarchantia1() throws Exception {
 		File sourceDir = SVGHTMLFixtures.BIORXIV_DIR;
 		File targetDir = SVGHTMLFixtures.BIORXIV_TARGET_DIR;

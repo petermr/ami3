@@ -19,7 +19,8 @@ package org.contentmine.graphics.svg;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.graphics.AbstractCMElement;
 
@@ -35,7 +36,7 @@ import nu.xom.Node;
  *
  */
 public class SVGTSpan extends SVGText {
-	private static Logger LOG = Logger.getLogger(SVGTSpan.class);
+	private static Logger LOG = LogManager.getLogger(SVGTSpan.class);
 	public final static String TAG = "tspan";
 	
 	

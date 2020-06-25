@@ -5,8 +5,8 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.args.DefaultArgProcessor;
 import org.contentmine.cproject.files.CContainer;
 import org.contentmine.cproject.files.CContainerTraverser;
@@ -18,12 +18,8 @@ import org.contentmine.eucl.xml.XMLUtil;
  *
  */
 public class ContainerCheck {
-	private static final Logger LOG = Logger.getLogger(ContainerCheck.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private AbstractSchemaElement schema;
+	private static final Logger LOG = LogManager.getLogger(ContainerCheck.class);
+private AbstractSchemaElement schema;
 	private CContainerTraverser containerTraverser;
 	private List<File> sortedDirectories;
 	private List<File> sortedFiles;

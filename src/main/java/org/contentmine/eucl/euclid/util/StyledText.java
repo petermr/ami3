@@ -1,7 +1,7 @@
 package org.contentmine.eucl.euclid.util;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /** styles text (e.g. on sysout).
  * 
@@ -9,12 +9,8 @@ import org.apache.log4j.Logger;
  *
  */
 public class StyledText {
-	private static final Logger LOG = Logger.getLogger(StyledText.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public enum SysoutStyle {
+	private static final Logger LOG = LogManager.getLogger(StyledText.class);
+public enum SysoutStyle {
 		RESET("0"),
 		BOLD("1"),
 		UNDERLINE("4"),

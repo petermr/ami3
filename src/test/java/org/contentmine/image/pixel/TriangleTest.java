@@ -3,7 +3,8 @@ package org.contentmine.image.pixel;
 import java.awt.Point;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.euclid.Int2;
 import org.junit.Assert;
 import org.junit.Before;
@@ -11,7 +12,7 @@ import org.junit.Test;
 
 public class TriangleTest {
 
-	private final static Logger LOG = Logger.getLogger(TriangleTest.class);
+	private final static Logger LOG = LogManager.getLogger(TriangleTest.class);
 	
 	private PixelIsland island;
 	private Pixel[] pixel;

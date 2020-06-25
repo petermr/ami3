@@ -3,8 +3,8 @@ package org.contentmine.ami.plugins.regex;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.plugins.AMIArgProcessor;
 
 import nu.xom.Attribute;
@@ -21,12 +21,8 @@ import nu.xom.Element;
 public class CompoundRegex {
 
 	
-	private static final Logger LOG = Logger.getLogger(CompoundRegex.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-	
-	private static final String COMPOUND_REGEX = "compoundRegex";
+	private static final Logger LOG = LogManager.getLogger(CompoundRegex.class);
+private static final String COMPOUND_REGEX = "compoundRegex";
 	private static final String REGEX_OR = "|";
 	private static final String REGEX_CLOSE = ")";
 	private static final String REGEX_OPEN = "(";

@@ -9,8 +9,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeList;
 import org.contentmine.eucl.euclid.Angle;
@@ -33,12 +33,8 @@ import com.google.common.collect.Multiset.Entry;
 public class CooccurrenceAnalyzer {
 	private static final String COOCCUR_CSV = "cooccur.csv";
 
-	private static final Logger LOG = Logger.getLogger(CooccurrenceAnalyzer.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	public static final String COOCCURRENCE = CTreeList.FORBIDDEN_PREFIX + "cooccurrence";
+	private static final Logger LOG = LogManager.getLogger(CooccurrenceAnalyzer.class);
+public static final String COOCCURRENCE = CTreeList.FORBIDDEN_PREFIX + "cooccurrence";
 	
 	private OccurrenceAnalyzer rowAnalyzer;
 	private OccurrenceAnalyzer colAnalyzer;

@@ -16,7 +16,8 @@
 
 package org.contentmine.eucl.euclid;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  * super class of array methods
@@ -24,7 +25,7 @@ import org.apache.log4j.Logger;
  * @author (C) P. Murray-Rust, 1996
  */
 public abstract class ArrayBase implements EuclidConstants {
-    final static Logger LOG = Logger.getLogger(ArrayBase.class);
+    final static Logger LOG = LogManager.getLogger(ArrayBase.class);
     /** */
     public enum Trim {
         /** */

@@ -4,8 +4,8 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.List;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMIOCRTool;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.norma.util.CommandRunner;
@@ -13,12 +13,8 @@ import org.contentmine.norma.util.CommandRunner;
 import com.google.common.collect.Multimap;
 
 public abstract class AbstractOCRConverter extends CommandRunner {
-	private static final Logger LOG = Logger.getLogger(AbstractOCRConverter.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private String configName;
+	private static final Logger LOG = LogManager.getLogger(AbstractOCRConverter.class);
+private String configName;
 	protected AMIOCRTool amiOcrTool;
 	protected File imageFile;
 	protected TextLineAnalyzer textLineAnalyzer;

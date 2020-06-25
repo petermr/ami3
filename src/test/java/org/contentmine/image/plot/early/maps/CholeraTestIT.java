@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGHTMLFixtures;
 import org.contentmine.graphics.svg.SVGSVG;
@@ -31,12 +31,8 @@ import junit.framework.Assert;
  *
  */
 public class CholeraTestIT {
-	private static final Logger LOG = Logger.getLogger(CholeraTestIT.class);
-	static {
-		LOG.setLevel(Level.DEBUG);
-	}
-
-	private static String[] FILL = new String[] { "orange", "green", "blue", "red", "cyan" };
+	private static final Logger LOG = LogManager.getLogger(CholeraTestIT.class);
+private static String[] FILL = new String[] { "orange", "green", "blue", "red", "cyan" };
 
 	@Test
 	public void testSnow() {
