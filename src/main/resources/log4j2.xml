@@ -27,7 +27,7 @@
     <!-- see https://logging.apache.org/log4j/2.x/manual/appenders.html#FileAppender for details -->
     <File name="File" fileName="${logfile:-logs/ami.log}" append="false">
       <!-- see https://logging.apache.org/log4j/2.x/manual/layouts.html#PatternLayout for details -->
-      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} %x - %msg%n%n" />
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %logger{36} - %msg%n" />
     </File>
   </Appenders>
   <Loggers>

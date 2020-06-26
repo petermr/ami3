@@ -23,127 +23,126 @@ import org.contentmine.pdf2svg2.PageParserRunner.ParserDebug;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 
-	@Command(
-	name = "pdfbox",
-	description = {
-			"Convert PDFs to SVG-Text, SVG-graphics and Images.",
-			"Does not process images, graphics or text. "
-					+ "Often followed by ami-image and ami-xml."
-					+ "EXAMPLE%n"
-					+ "    ami -t /Users/pm286/projects/chess pdf%n"
-					+ "        processes the CTree (which must contain fulltext.pdf%n"
-					+ "        by default this produces svg/fulltext-page.<1...n>.svg and pdfimages/image.p.n.x_x.y_y.png%n"
-	})
+@Command(
+		name = "pdfbox",
+		description = {
+				"Convert PDFs to SVG-Text, SVG-graphics and Images.",
+				"Does not process images, graphics or text. "
+						+ "Often followed by ami-image and ami-xml."
+						+ "EXAMPLE%n"
+						+ "    ami -t /Users/pm286/projects/chess pdf%n"
+						+ "        processes the CTree (which must contain fulltext.pdf%n"
+						+ "        by default this produces svg/fulltext-page.<1...n>.svg and pdfimages/image.p.n.x_x.y_y.png%n"
+		})
 public class AMIPDFTool extends AbstractAMITool {
 	private static final Logger LOG = LogManager.getLogger(AMIPDFTool.class);
-public enum ParserType {
+
+	public enum ParserType {
 		early,
 		ami,
 		zero,
 		one,
 		two;
 	}
-	
+
 	public enum PDFTidySVG {
 		concat, // concatenate characters (maybe in beginText...endText)
 		spaces, // add spaces using character widths
 		styles, // add empirical styles
 	}
-	
+
 	public AMIPDFTool() {
 	}
-	
-    public AMIPDFTool(CProject cProject) {
-    	this.cProject = cProject;
+
+	public AMIPDFTool(CProject cProject) {
+		this.cProject = cProject;
 	}
 
-    @Option(names = {"--debug"}, 
-    		arity="0",
-    		paramLabel="DEBUG",
-   		    description = "debug level (experimental, AMI_ZERO, AMI_ONE, AMI_TWO)"
-    		)
-    private ParserDebug parserDebug = ParserDebug.AMI_BRIEF;
+	@Option(names = {"--debug"},
+			arity = "0",
+			paramLabel = "DEBUG",
+			description = "debug level (experimental, AMI_ZERO, AMI_ONE, AMI_TWO)"
+	)
+	private ParserDebug parserDebug = ParserDebug.AMI_BRIEF;
 
-    @Option(names = {"--imagedir"}, 
-    		arity="0..1",
-    		paramLabel="IMAGE_DIR",
-   		    description = "Directory for Image files created from PDF. Do not use/change this unless you are testing "
-   		    		+ "or developing AMI as other components rely on this."
-    		)
-    private String pdfImagesDirname = "pdfimages/";
-    
-	@Option(names = {"--maxpages"}, 
-   		    description = "maximum PDF pages. If less than actual pages, will repeat untill all pages processed. "
-   		    		+ "The normal reason is that lists get full (pseudo-memory leak, this is a bug). If you encounter "
-   		    		+ "out of memory errors, try setting this lower."
-    		)
-    private int maxpages = 5;
-    
-	@Option(names = {"--maxprimitives"}, 
-   		    description = "maximum number of SVG primitives. Some diagrams have hundreds of thousands of"
-   		    		+ " graphics primitives and create quadratic or memory problems. Setting maxprimitives"
-   		    		+ " allows the job to continue but loses data. Some SVGs could be 150 Mbyte so selection"
-   		    		+ " by user will be important"
-    		)
-    private int maxprimitives = 5000;
-    
-	@Option(names = {"--minimagesize"}, 
-   		    description = "minimum image size, useful when many small glyphs (e.g. for glyphs for text characters)"
-    		)
-    private Int2 minimagesize = new Int2(10,10);
-    
-    /** this should be a Mixin, with SVGTool
-     * NYI
-     */
-    @Option(names = {"--pages"},
-    		arity = "1..*",
-            description = "pages to extract; if omitted processes all")
-    private List<Integer> pages = null;
+	@Option(names = {"--imagedir"},
+			arity = "0..1",
+			paramLabel = "IMAGE_DIR",
+			description = "Directory for Image files created from PDF. Do not use/change this unless you are testing "
+					+ "or developing AMI as other components rely on this."
+	)
+	private String pdfImagesDirname = "pdfimages/";
 
-    @Option(names = {"--parser"}, 
-    		arity="1",
-   		    description = "Parser type (early or ami). early is being phased out."
-    		)
-    private ParserType parserType = 
+	@Option(names = {"--maxpages"},
+			description = "maximum PDF pages. If less than actual pages, will repeat untill all pages processed. "
+					+ "The normal reason is that lists get full (pseudo-memory leak, this is a bug). If you encounter "
+					+ "out of memory errors, try setting this lower."
+	)
+	private int maxpages = 5;
+
+	@Option(names = {"--maxprimitives"},
+			description = "maximum number of SVG primitives. Some diagrams have hundreds of thousands of"
+					+ " graphics primitives and create quadratic or memory problems. Setting maxprimitives"
+					+ " allows the job to continue but loses data. Some SVGs could be 150 Mbyte so selection"
+					+ " by user will be important"
+	)
+	private int maxprimitives = 5000;
+
+	@Option(names = {"--minimagesize"},
+			description = "minimum image size, useful when many small glyphs (e.g. for glyphs for text characters)"
+	)
+	private Int2 minimagesize = new Int2(10, 10);
+
+	/**
+	 * this should be a Mixin, with SVGTool
+	 * NYI
+	 */
+	@Option(names = {"--pages"},
+			arity = "1..*",
+			description = "pages to extract; if omitted processes all")
+	private List<Integer> pages = null;
+
+	@Option(names = {"--parser"},
+			arity = "1",
+			description = "Parser type (early or ami). early is being phased out."
+	)
+	private ParserType parserType =
 //        	ParserType.ami
-        	ParserType.two
-    	;
-    
-    @Option(names = {"--pdfimages"}, 
-    		arity="0..1",
-   		    description = "output PDFImages pages. Default true "
-    		)
-    private boolean outputPdfImages = true;
-    
-    @Option(names = {"--pdf2html"}, 
-    		paramLabel="PDF2HTML",
-   		    description = "Use PDFBox pdf2Html to create automatic html (NYI)"
-    		)
-    private boolean pdf2html = false;
-    
-    @Option(names = {"--svgdir"}, 
-    		arity="0..1",
-   		    description = "Directory for SVG files created from PDF. Do not use/change this unless you are testing "
-   		    		+ "or developing AMI as other components rely on this."
-    		)
-    private String svgDirectoryName = "svg/";
+			ParserType.two;
 
-    @Option(names = {"--svgpages"}, 
-    		arity="0..1",
-   		    description = "output SVG pages. Default true"
-    		)
-    private boolean outputSVG = true;
-    
-    @Option(names = {"--tidysvg"}, 
-    		arity="0..1",
-   		    description = "Tidy SVG (currently text, default concat spaces"
-    		)
-    private List<PDFTidySVG> tidySVGList = Arrays.asList(new PDFTidySVG[]{PDFTidySVG.concat, PDFTidySVG.spaces});
-    
-    public static void main(String[] args) throws Exception {
-    	AMIPDFTool amiProcessorPDF = new AMIPDFTool();
-    	amiProcessorPDF.runCommands(args);
-    }
+	@Option(names = {"--no-pdfimages"}, negatable = true,
+			description = "Whether to output PDFImages. Default: output PDF images."
+	)
+	private boolean outputPdfImages = true;
+
+	@Option(names = {"--pdf2html"},
+			paramLabel = "PDF2HTML",
+			description = "Use PDFBox pdf2Html to create automatic html (NYI)"
+	)
+	private boolean pdf2html = false;
+
+	@Option(names = {"--svgdir"},
+			arity = "0..1",
+			description = "Directory for SVG files created from PDF. Do not use/change this unless you are testing "
+					+ "or developing AMI as other components rely on this."
+	)
+	private String svgDirectoryName = "svg/";
+
+	@Option(names = {"--no-svgpages"}, negatable = true,
+			description = "Whether to output SVG pages. Default: output SVG."
+	)
+	private boolean outputSVG = true;
+
+	@Option(names = {"--tidysvg"},
+			arity = "0..1",
+			description = "Tidy SVG (currently text, default concat spaces"
+	)
+	private List<PDFTidySVG> tidySVGList = Arrays.asList(new PDFTidySVG[]{PDFTidySVG.concat, PDFTidySVG.spaces});
+
+	public static void main(String[] args) throws Exception {
+		AMIPDFTool amiProcessorPDF = new AMIPDFTool();
+		amiProcessorPDF.runCommands(args);
+	}
 
 	@Override
 	protected void parseSpecifics() {
@@ -157,27 +156,27 @@ public enum ParserType {
 
 	@Override
 	protected void runSpecifics() {
-    	if (processTrees()) { 
-    	} else {
-    		LOG.error(DebugPrint.MARKER, "must give cProject or cTree");
-	    }
-    }
+		if (processTrees()) {
+		} else {
+			LOG.error(DebugPrint.MARKER, "must give cProject or cTree");
+		}
+	}
 
 	private void printDebug() {
-		System.out.println("maxpages            "+maxpages);
-		System.out.println("svgDirectoryName    "+svgDirectoryName);
-		System.out.println("minimagesize        "+minimagesize);
-		System.out.println("outputSVG           "+outputSVG);
-		System.out.println("pdf2html            "+pdf2html);
-		System.out.println("imgDirectoryName    "+pdfImagesDirname);
-		System.out.println("outputPDFImages     "+outputPdfImages);
-		System.out.println("parserDebug         "+parserDebug);
+		System.out.println("maxpages            " + maxpages);
+		System.out.println("svgDirectoryName    " + svgDirectoryName);
+		System.out.println("minimagesize        " + minimagesize);
+		System.out.println("outputSVG           " + outputSVG);
+		System.out.println("pdf2html            " + pdf2html);
+		System.out.println("imgDirectoryName    " + pdfImagesDirname);
+		System.out.println("outputPDFImages     " + outputPdfImages);
+		System.out.println("parserDebug         " + parserDebug);
 		return;
 	}
 
 	protected boolean processTree() {
 		processedTree = false;
-		System.out.println("cTree: "+cTree.getName());
+		System.out.println("cTree: " + cTree.getName());
 		File pdfImagesDir = cTree.getExistingPDFImagesDir();
 		if (pdf2html) {
 			pdf2html();
@@ -213,7 +212,7 @@ public enum ParserType {
 		}
 		if (pdDocument != null) {
 			try {
-				System.err.println("DOC"+pdDocument.getDocumentInformation());
+				System.err.println("DOC" + pdDocument.getDocumentInformation());
 				runPdf2Html(pdDocument);
 			} catch (IOException e) {
 				throw new RuntimeException("run pdf", e);
@@ -229,7 +228,7 @@ public enum ParserType {
 		String text = textStripper.getText(document);
 		File textFile = getTextFile();
 		IOUtils.write(text, new FileOutputStream(textFile), CMineUtil.UTF8_CHARSET);
-		System.out.println("wrote "+textFile.getAbsoluteFile());
+		System.out.println("wrote " + textFile.getAbsoluteFile());
 	}
 
 	private File getTextFile() {
@@ -240,7 +239,7 @@ public enum ParserType {
 		processedTree = true;
 		File inputPdf = cTree.getExistingFulltextPDF();
 		if (inputPdf == null || !inputPdf.exists()) {
-			LOG.warn("file does not exist: "+inputPdf);
+			LOG.warn("file does not exist: " + inputPdf);
 			processedTree = false;
 		} else {
 			boolean debug = false; // change 
@@ -248,16 +247,17 @@ public enum ParserType {
 			pageParserRunner.setTidySVGList(tidySVGList);
 			for (int pageIndex : pages) {
 				pageParserRunner.runPages(cTree.getName(), pageIndex);
-				System.out.println(">finished: "+pageIndex);
+				System.out.println(">finished: " + pageIndex);
 			}
 		}
 		return processedTree;
 	}
 
-	/** early approach from PDFBox1
+	/**
+	 * early approach from PDFBox1
 	 * now uses PDFBox2 but soon to be obsoleted
 	 */
-    public boolean docProcRunPDF() {
+	public boolean docProcRunPDF() {
 		PDFDocumentProcessor pdfDocumentProcessor = cTree.getOrCreatePDFDocumentProcessor();
 		pdfDocumentProcessor.setOutputSVG(outputSVG);
 		pdfDocumentProcessor.setOutputPDFImages(outputPdfImages);
@@ -266,11 +266,11 @@ public enum ParserType {
 		pdfDocumentProcessor.setMinimumImageBox(minimagesize.getX(), minimagesize.getY());
 		pdfDocumentProcessor.setParserType(parserType);
 		pdfDocumentProcessor.setTidySVGList(tidySVGList);
-        cTree.setPDFDocumentProcessor(pdfDocumentProcessor);
-        cTree.setForceMake(getForceMake());
+		cTree.setPDFDocumentProcessor(pdfDocumentProcessor);
+		cTree.setForceMake(getForceMake());
 		processedTree = cTree.processPDFTree();
 		return processedTree;
-    }
+	}
 
 
 }
