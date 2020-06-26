@@ -73,8 +73,12 @@ import picocli.CommandLine.Option;
 @Command(
 name = "pixel",
 description = {
-		"Analyzes bitmaps - generally binary, but may be oligochrome.",
-		"Creates pixelIslands."
+		"Analyzes bitmaps - both binary (black/white), but may be oligochrome.",
+		"Creates and analyzes pixelIslands (regions of connect pixels). Islands can be analyzed as graphs from "
+		+ "which SVG primitives can be extracted%n"
+		+ "wiki page: https://github.com/petermr/ami3/wiki/tool:AMIPixelTool"
+		
+		
 })
 public class AMIPixelTool extends AbstractAMITool implements HasImageDir {
 

@@ -439,6 +439,13 @@ private static Map<String, String> DEFAULT_REPLACEMENT_MAP = null;
 		return htmlElement;
 	}
 
+	/*
+	 */
+
+	/*
+unknown tag graphic
+unknown tag italic
+	 */
 	public HtmlElement createElementFromTag(String tag) {
 		HtmlElement htmlElement = null;
 		if(HtmlA.TAG.equalsIgnoreCase(tag)) {
@@ -467,6 +474,10 @@ private static Map<String, String> DEFAULT_REPLACEMENT_MAP = null;
 			htmlElement = new HtmlCite();
 		} else if(HtmlCode.TAG.equalsIgnoreCase(tag)) {
 			htmlElement = new HtmlCode();
+		} else if(HtmlCol.TAG.equalsIgnoreCase(tag)) {
+			htmlElement = new HtmlCol();
+		} else if(HtmlColgroup.TAG.equalsIgnoreCase(tag)) {
+			htmlElement = new HtmlColgroup();
 		} else if(HtmlDd.TAG.equalsIgnoreCase(tag)) {
 			htmlElement = new HtmlDd();
 		} else if(HtmlDiv.TAG.equalsIgnoreCase(tag)) {
@@ -579,7 +590,7 @@ private static Map<String, String> DEFAULT_REPLACEMENT_MAP = null;
 			htmlElement = new HtmlUl();
 			
 		} else if(HTML_SET.contains(tag)) {
-			LOG.warn("unsupported HTML5 tag "+tag);
+			LOG.debug("unsupported HTML5 tag "+tag);
 			htmlElement = new HtmlDiv();
 			htmlElement.setClassAttribute(tag);
 	/** HTML5
@@ -600,9 +611,9 @@ private static Map<String, String> DEFAULT_REPLACEMENT_MAP = null;
 			if (unknownTags == null) unknownTags = new HashSet<String>();
 			if (!unknownTags.contains(tag)) {
 				LOG.error("unknown tag "+tag);
-				if (tag.startsWith("ahref")) {
-					throw new RuntimeException("TRAP ahref");
-				}
+//				if (tag.startsWith("ahref")) {
+//					throw new RuntimeException("TRAP ahref");
+//				}
 				unknownTags.add(tag);
 			}
 			htmlElement = new HtmlDiv();
@@ -809,7 +820,6 @@ private static Map<String, String> DEFAULT_REPLACEMENT_MAP = null;
 				continue;
 			}
 			String name = childNode.nodeName();
-			LOG.trace("> "+name);
 			if ("#text".equals(name)) {
 				htmlElement.appendChild(childNode.toString());
 			} else if ("#document".equals(name)) {

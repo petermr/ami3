@@ -66,7 +66,8 @@ private static final File TARGET = new File("target");
 	 * 
 	 */
 	public void testCreateWikipedia() {
-		String cmd = " -vv"
+		String cmd = " "
+				+ " -vvvv"
 				+ " --dictionary myterpenes"
 				+ " --directory=target/dictionary/create"
 				+ " --inputname miniterpenes"

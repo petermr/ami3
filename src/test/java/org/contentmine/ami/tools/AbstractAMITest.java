@@ -1,13 +1,17 @@
 package org.contentmine.ami.tools;
 
 import java.io.File;
+import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Files;
 
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.util.CMineUtil;
 import org.junit.Assert;
 import org.junit.Test;
+
+import nonapi.io.github.classgraph.utils.FileUtils;
 
 public class AbstractAMITest {
 	
@@ -100,5 +104,26 @@ public class AbstractAMITest {
 		if (cTree == null) {
 			throw new RuntimeException("missing cTree directory: ");
 		}
+	}
+
+	protected AbstractAMITest assertTrue(String msg, boolean condition) {
+		Assert.assertTrue(msg, condition);
+		return this;
+	}
+
+	protected AbstractAMITest assertEquals(String msg, Object expected, Object actual) {
+		Assert.assertEquals(msg, expected, actual);
+		return this;
+	}
+
+	protected AbstractAMITest assertCanReadFile(String msg, File file, long minFileSize) {
+		Assert.assertNotNull("msg" + " not null" + file, file);
+		try {
+			FileUtils.checkCanReadAndIsFile(file);
+			Assert.assertTrue(Files.size(file.toPath()) > minFileSize);
+		} catch (IOException e) {
+			Assert.assertFalse(msg + "; cannot read file " + e.getMessage(), true);
+		}
+		return this;
 	}
 }

@@ -5,15 +5,14 @@ import java.io.File;
 import java.util.List;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.image.ImageUtil;
 import org.contentmine.image.pixel.IslandRingList;
-import org.contentmine.image.pixel.PixelEdgeList;
 import org.contentmine.image.pixel.PixelGraph;
 import org.contentmine.image.pixel.PixelIsland;
 import org.contentmine.image.pixel.PixelIslandList;
@@ -31,178 +30,20 @@ import org.junit.Test;
  */
 public class AMIPixelTest extends AbstractAMITest {
 	private static final Logger LOG = LogManager.getLogger(AMIPixelTest.class);
-private File pdfImageDir;
+	private File pdfImageDir;
 	private File imageDir;
 	private File layerDir;
 	private File imageFile;
+	private File outputFile;
 	private BufferedImage image;
 	private PixelIslandList islandList;
 	private int minHairLength;
 	private int maxIslands;
+	private File svgFile;
 	
 	public AMIPixelTest() {
 		setDefaults();
 	}
-	
-	private void setDefaults() {
-		minHairLength = 10; //pixels
-		maxIslands = 10;
-	}
-
-	private AMIPixelTest setImageDirName(String imageDirName) {
-		checkCTree();
-		pdfImageDir = cTree.getExistingPDFImagesDir();
-		checkPDFImagesDir();
-		imageDir = new File(pdfImageDir, imageDirName);
-		checkImageDir();
-		return this;
-	}
-
-	private void checkPDFImagesDir() {
-		if (pdfImageDir == null) {
-			throw new RuntimeException("missing pdfImages directory under " + cTree.getDirectory());
-		}
-	}
-
-	private void checkImageDir() {
-		if (imageDir == null) {
-			throw new RuntimeException("missing image directory under " + pdfImageDir);
-		}
-	}
-
-	private AMIPixelTest setLayer(String layer) {
-		checkImageDir();
-		this.layerDir = new File(imageDir, layer);
-		checkLayerDir();
-		return this;
-	}
-
-	private void checkLayerDir() {
-		if (layerDir == null || !layerDir.exists() || !layerDir.isDirectory()) {
-			throw new RuntimeException("missing layer directory under " + imageDir);
-		}
-	}
-
-	private AMIPixelTest setChannel(String channel) {
-		checkLayerDir();
-		this.imageFile = new File(layerDir, channel + ".png");
-		checkImageFile();
-		return this;
-	}
-
-	private void checkImageFile() {
-		if (!imageFile.exists() || imageFile.isDirectory()) {
-			throw new RuntimeException("missing image file under " + layerDir);
-		}
-	}
-
-	private File getImageFile() {
-		checkImageFile();
-		return imageFile;
-	}
-
-	private AMIPixelTest readImage() {
-		checkImageFile();
-		image = ImageUtil.readImage(imageFile);
-		checkImage();
-		return this;
-	}
-
-	private void checkImage() {
-		if (image == null) {
-			throw new RuntimeException(" no image");
-		}
-	}
-
-	private AMIPixelTest setMaxIslands(int maxIslands) {
-		this.maxIslands = maxIslands;
-		return this;
-	}
-
-	private AMIPixelTest setMinHairLength(int minHairLength) {
-		this.minHairLength = minHairLength;
-		return this;
-	}
-
-	private AMIPixelTest writeImage(String type) {
-		checkImage();
-		ImageUtil.writeImageQuietly(image, 
-				new File(imageFile.toString()+"."+type+".png"));
-		return this;
-	}
-
-	private AMIPixelTest createTidiedPixelIslandList() {
-		checkImage();
-		islandList = PixelIslandList.createTidiedPixelIslandList(image);
-		return this;
-	}
-
-	private AMIPixelTest binarize(int thresh) {
-		checkImage();
-		image = ImageUtil.boofCVBinarization(image, thresh);
-		return this;
-	}
-
-	private AMIPixelTest hilditchThin() {
-		checkImage();
-		image = ImageUtil.thin(image, new HilditchThinning(image));
-		return this;
-	}
-
-	private AMIPixelTest zhangSuenThin() {
-		checkImage();
-		image = ImageUtil.thin(image, new ZhangSuenThinning(image));
-		return this;
-	}
-
-	private AMIPixelTest tidyAndAnalyzeLargestIslands() {
-		checkImageFile();
-		checkPixelIslandList();
-		tidyAndAnalyzeLargestIslands(imageFile, minHairLength, islandList, maxIslands);
-		return this;
-	}
-	
-	private void checkPixelIslandList() {
-		if (islandList == null || islandList.size() == 0) {
-			throw new RuntimeException("no pixelIslandList");
-		}
-	}
-	
-	private AMIPixelTest removeIslandsWithLessThanPixelCount(int pixelCount) {
-		checkPixelIslandList();
-		islandList.removeIslandsWithLessThanPixelCount(pixelCount);
-		return this;
-	}
-
-	private static void tidyAndAnalyzeLargestIslands(File imageFile, int minHairLength, PixelIslandList islandList, int maxIslands) {
-		for (int isl = 0; isl < Math.min(maxIslands, islandList.size()) ; isl++) {
-			PixelIsland island = islandList.get(isl);
-			String filename = imageFile.toString()+"."+isl;
-			ImageUtil.writeImageQuietly(island.createImage(), new File(FilenameUtils.getBaseName(filename) + ".png"));
-			
-			PixelGraph pixelGraph = new PixelGraph(island)
-					.tidyNodesAndEdges(minHairLength)
-					.repairEdges();
-			
-			SVGG svgg = pixelGraph.drawEdgesAndNodes();
-			SVGSVG.wrapAndWriteAsSVG(svgg, new File(filename+".svg"));
-		}
-	}
-
-
-	private static File createChannelImageFile(String amiDir, String cTreeName, String imageDirName, String layerName, String channelName) {
-		CTree cTree = new CProject(new File(SRC_TEST_AMI, amiDir)).getCTreeByName(cTreeName);
-		File pdfDir = cTree.getExistingPDFImagesDir();
-		File imageDir = new File(pdfDir, imageDirName);
-		File layerDir = new File(imageDir, layerName);
-		File imageFile = new File(layerDir, channelName+".png");
-		return imageFile;
-	}
-
-
-
-// ======================================
-	
 	
 	@Test
 	public void testPixelForestPlotsSmallTree() throws Exception {
@@ -400,50 +241,229 @@ islands > (10,10): islands: 6
 
 	@Test
 	public void testTraceIntersectingLines() {
-		AMIPixelTest amiPixelTest = new AMIPixelTest();
-		amiPixelTest
+				this
 				.setAMITestProjectName("battery10")
-				.setTreeName("PMC3463005");
-		amiPixelTest
+				.setTreeName("PMC3463005")
 				.setImageDirName("image.6.2.86_509.389_714")
 				.setLayer("octree")
 				.setChannel("channel.ce4dd2")
+				.assertCanReadFile(this.getImageFile() + " input", this.getImageFile(), 100)
+				.assertTrue("msg",getImageFile().toString().endsWith(
+					"ami3/src/test/resources/org/contentmine/ami/battery10/PMC3463005/"
+					+ "pdfimages/image.6.2.86_509.389_714/octree/channel.ce4dd2.png"))
 				.readImage()
 				.binarize(200)
 				.zhangSuenThin()
 				.writeImage("zsthin")
+				.assertCanReadFile("after thinning", getOutputFile(), 100)
 				.createTidiedPixelIslandList()
 				.setMinHairLength(10)
 				.setMaxIslands(10)
 				.removeIslandsWithLessThanPixelCount(8)
 				.tidyAndAnalyzeLargestIslands()
 				.writePixelIslandList("zsthin1")
-
+				.assertCanReadFile("after more thinning", this.getSVGFile(), 100)
+				.assertTrue(""+getSVGFile(), getSVGFile().toString().endsWith(
+						"ami3/src/test/resources/org/contentmine/ami/battery10/PMC3463005/"
+						+ "pdfimages/image.6.2.86_509.389_714/octree/channel.ce4dd2.png.zsthin1.svg"))
 				;
-		PixelIslandList islandList = amiPixelTest.getPixelIslandList();
-		System.out.println("islands "+islandList.size());
-		
-		PixelEdgeList edgeList = amiPixelTest.getPixelEdgeList();
-//		System.out.println(imageFile);
-		
-//		BufferedImage image = ImageUtil.readImage(imageFile);
-//		image = ImageUtil.thin(image, new HilditchThinning(image));
-		
-//		ImageUtil.writeImageQuietly(image, new File(imageFile.toString()+".thin.png"));
-		
-//		PixelIslandList islandList = PixelIslandList.createTidiedPixelIslandList(image);
-//		Assert.assertNotNull(islandList);
-//		Assert.assertEquals("size", 721, islandList.size());
-		
-//		int maxIslands = 10;
-//		int maxHairLength = 10;
-//		AMIPixelTest.tidyAndAnalyzeLargestIslands(imageFile, maxHairLength, islandList, maxIslands);
+	}
+	
+	// ============================================
+
+	private File getOutputFile() {
+		return outputFile;
 	}
 
-	private AMIPixelTest writePixelIslandList(String type) {
-		checkPixelIslandList();
-		SVGSVG.wrapAndWriteAsSVG(islandList.getOrCreateSVGG(), new File(imageFile.toString()+"."+type+".svg"));
+	private void setDefaults() {
+		minHairLength = 10; //pixels
+		maxIslands = 10;
+	}
+
+	private AMIPixelTest setImageDirName(String imageDirName) {
+		checkCTree();
+		pdfImageDir = cTree.getExistingPDFImagesDir();
+		checkPDFImagesDir();
+		imageDir = new File(pdfImageDir, imageDirName);
+		checkImageDir();
 		return this;
+	}
+
+	private void checkPDFImagesDir() {
+		if (pdfImageDir == null) {
+			throw new RuntimeException("missing pdfImages directory under " + cTree.getDirectory());
+		}
+	}
+
+	private void checkImageDir() {
+		if (imageDir == null) {
+			throw new RuntimeException("missing image directory under " + pdfImageDir);
+		}
+	}
+
+	private AMIPixelTest setLayer(String layer) {
+		checkImageDir();
+		this.layerDir = new File(imageDir, layer);
+		checkLayerDir();
+		return this;
+	}
+
+	private void checkLayerDir() {
+		if (layerDir == null || !layerDir.exists() || !layerDir.isDirectory()) {
+			throw new RuntimeException("missing layer directory under " + imageDir);
+		}
+	}
+
+	private AMIPixelTest setChannel(String channel) {
+		checkLayerDir();
+		imageFile = new File(layerDir, channel + ".png");
+		System.err.println("imageFile "+imageFile);
+		checkImageFile();
+		return this;
+	}
+
+	private void checkImageFile() {
+		if (!imageFile.exists() || imageFile.isDirectory()) {
+			throw new RuntimeException("missing image file under " + layerDir);
+		}
+	}
+
+	private AMIPixelTest readImage() {
+		checkImageFile();
+		image = ImageUtil.readImage(imageFile);
+		checkImage();
+		return this;
+	}
+
+	private void checkImage() {
+		if (image == null) {
+			throw new RuntimeException(" no image");
+		}
+	}
+
+	private AMIPixelTest setMaxIslands(int maxIslands) {
+		this.maxIslands = maxIslands;
+		return this;
+	}
+
+	private AMIPixelTest setMinHairLength(int minHairLength) {
+		this.minHairLength = minHairLength;
+		return this;
+	}
+
+	private AMIPixelTest writeImage(String type) {
+		checkImage();
+		outputFile = new File(imageFile.toString()+"."+type+".png");
+		ImageUtil.writeImageQuietly(image, outputFile);
+		return this;
+	}
+
+	private AMIPixelTest createTidiedPixelIslandList() {
+		checkImage();
+		islandList = PixelIslandList.createTidiedPixelIslandList(image);
+		return this;
+	}
+
+	private AMIPixelTest binarize(int thresh) {
+		checkImage();
+		image = ImageUtil.boofCVBinarization(image, thresh);
+		return this;
+	}
+
+	private AbstractAMITest hilditchThin() {
+		checkImage();
+		image = ImageUtil.thin(image, new HilditchThinning(image));
+		return this;
+	}
+
+	private AMIPixelTest zhangSuenThin() {
+		checkImage();
+		image = ImageUtil.thin(image, new ZhangSuenThinning(image));
+		return this;
+	}
+
+	private AMIPixelTest tidyAndAnalyzeLargestIslands() {
+		checkImageFile();
+		checkPixelIslandList();
+		tidyAndAnalyzeLargestIslands(imageFile, minHairLength, islandList, maxIslands);
+		return this;
+	}
+	
+	private void checkPixelIslandList() {
+		if (islandList == null || islandList.size() == 0) {
+			throw new RuntimeException("no pixelIslandList");
+		}
+	}
+	
+	private AMIPixelTest removeIslandsWithLessThanPixelCount(int pixelCount) {
+		checkPixelIslandList();
+		islandList.removeIslandsWithLessThanPixelCount(pixelCount);
+		return this;
+	}
+
+	private static void tidyAndAnalyzeLargestIslands(File imageFile, int minHairLength, PixelIslandList islandList, int maxIslands) {
+		for (int isl = 0; isl < Math.min(maxIslands, islandList.size()) ; isl++) {
+			PixelIsland island = islandList.get(isl);
+			String filename = imageFile.toString()+"."+isl;
+			ImageUtil.writeImageQuietly(island.createImage(), new File(FilenameUtils.getBaseName(filename) + ".png"));
+			
+			PixelGraph pixelGraph = new PixelGraph(island)
+					.tidyNodesAndEdges(minHairLength)
+					.repairEdges();
+			
+			SVGG svgg = pixelGraph.drawEdgesAndNodes();
+			SVGSVG.wrapAndWriteAsSVG(svgg, new File(filename+".svg"));
+		}
+	}
+
+
+	private static File createChannelImageFile(String amiDir, String cTreeName, String imageDirName, String layerName, String channelName) {
+		CTree cTree = new CProject(new File(SRC_TEST_AMI, amiDir)).getCTreeByName(cTreeName);
+		File pdfDir = cTree.getExistingPDFImagesDir();
+		File imageDir = new File(pdfDir, imageDirName);
+		File layerDir = new File(imageDir, layerName);
+		File imageFile = new File(layerDir, channelName+".png");
+		return imageFile;
+	}
+	
+	
+	private AbstractAMITest writePixelIslandList(String type) {
+		checkPixelIslandList();
+		svgFile = new File(imageFile.toString()+"."+type+".svg");
+		SVGSVG.wrapAndWriteAsSVG(islandList.getOrCreateSVGG(), svgFile);
+		return this;
+	}
+
+	// ======================================
+
+	public File getPdfImageDir() {
+		return pdfImageDir;
+	}
+
+	public File getImageDir() {
+		return imageDir;
+	}
+
+	private File getImageFile() {
+		checkImageFile();
+		return imageFile;
+	}
+
+
+	public BufferedImage getImage() {
+		return image;
+	}
+
+	public PixelIslandList getIslandList() {
+		return islandList;
+	}
+
+	public File getLayerDir() {
+		return layerDir;
+	}
+	
+	public File getSVGFile() {
+		return svgFile;
 	}
 
 	private PixelIslandList getPixelIslandList() {
@@ -451,10 +471,40 @@ islands > (10,10): islands: 6
 		return islandList;
 	}
 
+/** no edges yet
 	private PixelEdgeList getPixelEdgeList() {
-		return null;
+		return edgeList;
+	}
+*/
+// =================delegates=====================
+	@Override
+	protected AMIPixelTest setAMITestProjectName(String projectName) {
+		return (AMIPixelTest) super.setAMITestProjectName(projectName);
 	}
 
-	// ============================================
+	@Override
+	protected AMIPixelTest setTreeName(String treeName) {
+		return (AMIPixelTest) super.setTreeName(treeName);
+	}
+
+	@Override
+	protected AMIPixelTest assertTrue(String msg, boolean condition) {
+		return (AMIPixelTest) super.assertTrue(msg, condition);
+	}
+
+	@Override
+	protected AMIPixelTest assertEquals(String msg, Object expected, Object actual) {
+		return (AMIPixelTest) super.assertEquals(msg, expected, actual);
+	}
+
+	@Override
+	protected AMIPixelTest assertCanReadFile(String msg, File file, long minFileSize) {
+		return (AMIPixelTest) super.assertCanReadFile(msg, file, minFileSize);
+	}
+
+
+	// ======================================
+	
+	
 	
 }
