@@ -83,7 +83,7 @@ import java.util.stream.Collectors;
 public class AMI implements Runnable {
 	private static final Logger LOG = LogManager.getLogger(AMI.class);
 
-	@ArgGroup(exclusive = true, heading = "", order = 9)
+	@ArgGroup(exclusive = true, order = 9)
 	ProjectOrTreeOptions projectOrTreeOptions = new ProjectOrTreeOptions();
 
 	@ArgGroup(validate = false, heading = "General Options:%n", order = 30)
@@ -213,7 +213,7 @@ public class AMI implements Runnable {
 			protected String[] excludeTrees;
 		}
 
-		@ArgGroup(exclusive = true, multiplicity = "0..1", order = 11, heading = "")
+		@ArgGroup(exclusive = true, multiplicity = "0..1", order = 11)
 		TreeOptions treeOptions = new TreeOptions();
 	}
 
@@ -242,7 +242,7 @@ public class AMI implements Runnable {
 			protected String[] excludeBase;
 		}
 
-		@ArgGroup(exclusive = true, multiplicity = "0..1", heading = "", order = 21)
+		@ArgGroup(exclusive = true, multiplicity = "0..1", order = 21)
 		BaseOptions baseOptions = new BaseOptions();
 	}
 
@@ -285,12 +285,14 @@ public class AMI implements Runnable {
 				description = {
 						"Specify multiple -v options to increase verbosity. " +
 								"For example, `-v -v -v` or `-vvv`. "
-								+ "We map ERROR or WARN -> 0 (i.e. always print), INFO -> 1(-v), DEBUG->2 (-vv)"})
+								+ "We map ERROR or WARN -> 0 (i.e. always print), INFO -> 1 (-v), DEBUG -> 2 (-vv)"})
 		protected boolean[] verbosity = new boolean[0];
 
 		@Option(names = {"--log4j"}, paramLabel = "CLASS=LEVEL[,CLASS=LEVEL...]", split = ",", hideParamSyntax = true,
-				description = "Customize logging configuration. Format: <classname> <level>; sets logging level of class, e.g. \n "
-						+ "org.contentmine.ami.lookups.WikipediaDictionary INFO"
+				description = {
+						"Customize logging configuration. Format: <classname>=<level>; sets logging level of class;",
+						"  e.g. org.contentmine.ami.lookups.WikipediaDictionary=INFO",
+						"This option may be specified multiple times and accepts multiple values."}
 		)
 		protected Map<Class, StandardLevel> log4j = new HashMap<>();
 
