@@ -14,35 +14,35 @@ import org.contentmine.eucl.euclid.Util;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 
-/** analyses bitmaps
- * 
- * @author pm286
+/**
+ * analyses bitmaps
  *
+ * @author pm286
  */
 @Command(
-name = "ami-regex", 
-aliases = "regex",
-version = "ami-regex 0.1",
-description = "runs regex on HTML or XML files "
+		name = "ami-regex",
+		aliases = "regex",
+		version = "ami-regex 0.1",
+		description = "runs regex on HTML or XML files "
 )
 
 public class AMIRegexTool extends AbstractAMITool {
 	private static final Logger LOG = LogManager.getLogger(AMIRegexTool.class);
-@Option(names = {"--context"},
-    		arity = "2",
+	@Option(names = {"--context"},
+			arity = "2",
 //    		defaultValue = "[40,40]",
-            description = "characters before and after regex")
-    private List<Integer> contextList = Arrays.asList(new Integer[] {30, 40});
-	
-    @Option(names = {"--regex"},
-    		arity = "1..*",
-            description = "List of regex files (hardcoded, local, relative, absolute.")
-    private List<String> regexList;
-	
-    @Option(names = {"--xpath"},
-    		arity = "1",
-            description = "xpath for sectioned documents")
-    private String xpath = null;
+			description = "characters before and after regex")
+	private List<Integer> contextList = Arrays.asList(new Integer[]{30, 40});
+
+	@Option(names = {"--regex"},
+			arity = "1..*",
+			description = "List of regex files (hardcoded, local, relative, absolute.")
+	private List<String> regexList;
+
+	@Option(names = {"--xpath"},
+			arity = "1",
+			description = "xpath for sectioned documents")
+	private String xpath = null;
 
 	@Option(names = {"-o", "--output"},
 			paramLabel = "output",
@@ -51,67 +51,66 @@ public class AMIRegexTool extends AbstractAMITool {
 	protected String output = null;
 
 
-
-	/** used by some non-picocli calls
-     * obsolete it
-     * @param cProject
-     */
+	/**
+	 * used by some non-picocli calls
+	 * obsolete it
+	 *
+	 * @param cProject
+	 */
 	public AMIRegexTool(CProject cProject) {
 		this.cProject = cProject;
 	}
-	
+
 	public AMIRegexTool() {
 	}
-	
-    public static void main(String[] args) throws Exception {
-    	new AMIRegexTool().runCommands(args);
-    }
 
-    @Override
+	public static void main(String[] args) throws Exception {
+		new AMIRegexTool().runCommands(args);
+	}
+
+	@Override
 	protected void parseSpecifics() {
-    	setDefaults();
-		System.out.println("context             " + contextList);
-		System.out.println("input               " + input());
-		System.out.println("output              " + output);
-		System.out.println("regex               " + regexList);
-		System.out.println("xpath               " + xpath);
-		System.out.println();
+		setDefaults();
+		LOG.info("context             {}", contextList);
+		LOG.info("input               {}", input());
+		LOG.info("output              {}", output);
+		LOG.info("regex               {}", regexList);
+		LOG.info("xpath               {}", xpath);
 	}
 
 	private void setDefaults() {
 		input("scholarly.html");
-    	output = "output.xml";
+		output = "output.xml";
 	}
 
-    @Override
-    protected void runSpecifics() {
-    	if (processTrees()) { 
-    	} else {
-    		LOG.error(DebugPrint.MARKER, "must give cProject or cTree ");
-	    }
-    }
+	@Override
+	protected void runSpecifics() {
+		if (processTrees()) {
+		} else {
+			LOG.error(DebugPrint.MARKER, "must give cProject or cTree ");
+		}
+	}
 
 	public boolean processTree() {
-		
-		System.out.println("cTree: "+cTree.getName());
+
+		LOG.warn("cTree: {}", cTree.getName());
 		processedTree = runRegex();
 		return processedTree;
-		
+
 	}
 
 	private boolean runRegex() {
 		processedTree = true;
-	    LOG.debug("running regex");
-	    String regexS = Util.createWhitespaceSeparatedTokens(regexList);
-//	    System.out.println(">ss>"+ss);
-		String args = 
+		LOG.debug("running regex");
+		String regexS = Util.createWhitespaceSeparatedTokens(regexList);
+		String args =
 				""
-				+ "-q " + cTree.getDirectory()
-				+ " -i " + input()
-				+ " -o "+output
-				+ " --context " + contextList.get(0) + " " + contextList.get(1)
-				+ " --r.regex " + regexS;
-		LOG.debug("args: "+args);
+						+ "-q " + cTree.getDirectory()
+						+ " -i " + input()
+						+ " -o " + output
+						+ " --context " + contextList.get(0) + " " + contextList.get(1)
+						+ " --r.regex " + regexS;
+		LOG.debug("args: " + args);
 		AMIPlugin regexPlugin = new RegexPlugin(args);
 		RegexArgProcessor argProcessor = (RegexArgProcessor) regexPlugin.getArgProcessor();
 		argProcessor.runAndOutput();

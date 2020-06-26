@@ -118,9 +118,8 @@ public class AMIRegexTool extends AbstractAMISearchTool {
     @Override
 	protected void parseSpecifics() {
     	LOG.debug("parseSpecifics");
-		System.out.println("dummy               " + dummy);
-		System.out.println("oldstyle            " + oldstyle);
-		System.out.println();
+		LOG.info("dummy               {}", dummy);
+		LOG.info("oldstyle            {}", oldstyle);
 	}
 
     @Override

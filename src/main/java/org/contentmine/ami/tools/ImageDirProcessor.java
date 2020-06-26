@@ -52,7 +52,7 @@ private CTree cTree;
 		}
 			
 		if (imageDirs != null) {
-			System.out.println(" >>>>> imageDirs: "+imageDirs.size());
+			LOG.warn(" >>>>> imageDirs: "+imageDirs.size());
 			Collections.sort(imageDirs);
 			for (File imageDir : imageDirs) {
 				processDir(imageDir);

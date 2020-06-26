@@ -405,10 +405,6 @@ public enum AMIImageType {
 	@Override
 	protected void parseSpecifics() {
 		super.parseSpecifics();
-//    	if (verbosity().length > 0) {
-//			printOptionValues(System.out);
-//    	}
-		System.out.println();
 	}
 
 
@@ -417,7 +413,7 @@ public enum AMIImageType {
     	getSharpenMethod();
     	if (processTrees()) { 
     	} else {
-//			DebugPrint.debugPrint(Level.ERROR, "must give cProject or cTree");
+//			LOG.error("must give cProject or cTree");
 	    }
     }
 
@@ -433,7 +429,7 @@ public enum AMIImageType {
 
 	protected boolean processTree() {
 		processedTree = true;
-		if (getVerbosityInt() > 0) System.out.println("AMIImageTool processTree");
+		LOG.info("AMIImageTool processTree");
 		ImageDirProcessor imageDirProcessor = new ImageDirProcessor(this, cTree);
 		processedTree = imageDirProcessor.processImageDirs();
 		return processedTree;
@@ -450,7 +446,7 @@ public enum AMIImageType {
 				File annotateFile = new File(imageDir, FilenameUtils.getBaseName(imageFile.toString()) + ".annot" + "." + "html");
 				try {
 					FileUtils.write(annotateFile, "annotate", CMineUtil.UTF_8);
-					System.err.print(">ann>");
+					LOG.info(">ann>");
 				} catch (IOException e) {
 					LOG.error("cannot write "+annotateFile);
 				}
@@ -465,7 +461,7 @@ public enum AMIImageType {
 		} else {
 			String filename = imageDir.getName();
 			String grandParentName = imageDir.getParentFile().getParentFile().getName();
-			System.out.println(grandParentName+"//"+filename);
+			LOG.warn("{}//{}", grandParentName, filename);
 			if (templateFilename != null) {
 				templateElement = AbstractTemplateElement.readTemplateElement(imageDir, templateFilename);
 			}
@@ -484,21 +480,21 @@ public enum AMIImageType {
 	
 
 	protected void processTreeTransform() {
-		System.out.println("transformImages cTree: "+cTree.getName());
+		LOG.warn("transformImages cTree: {}", cTree.getName());
 		File pdfImagesDir = cTree.getExistingPDFImagesDir();
 		if (pdfImagesDir == null) {
-			System.err.println("Cannot find pdfImages for cTree "+cTree.getName());
+			LOG.warn("Cannot find pdfImages for cTree {}", cTree.getName());
 			return;
 		}
 		if (getInputBasename() == null) {
-			System.out.println("Assuming base: "+RAW);
+			LOG.warn("Assuming base: {}", RAW);
 			setInputBasename(RAW);
 		}
 		List<File> imageDirs = CMineGlobber.listSortedChildDirectories(pdfImagesDir);
 		Collections.sort(imageDirs);
 		for (File imageDir : imageDirs) {
 			if (imageDir.getName().startsWith(IMAGE)) {
-				System.err.print(".");
+				System.err.print("."); // TODO progress indicator util
 				processTransformImageDir();
 			}
 			continue;
@@ -517,10 +513,10 @@ public enum AMIImageType {
 	private void runTransform(String inputBasename) {
 		File imageFile = new File(imageDir, inputBasename + "." + CTree.PNG);
 		if (!imageFile.exists()) {
-			System.out.println("non-existent image file: "+AMIImageTool.shortName(imageFile));
+			LOG.warn("non-existent image file: {}", AMIImageTool.shortName(imageFile));
 			return;
 		}
-		System.out.println("transforming: "+AMIImageTool.shortName(imageFile));
+		LOG.warn("transforming: {}", AMIImageTool.shortName(imageFile));
 		BufferedImage image = ImageUtil.readImageQuietly(imageFile);
 		String basename = FilenameUtils.getBaseName(imageFile.toString());
 		if (image != null) {
@@ -577,7 +573,7 @@ public enum AMIImageType {
 			ImageIOUtil.writeImageQuietly(image, outfile);
 			File htmlFile = new File(imageDir, "images" + "." + CTree.HTML);
 			
-			System.out.println("htmlFile " + htmlFile);
+			LOG.warn("htmlFile {}", htmlFile);
 			XMLUtil.writeQuietly(imageDiv, htmlFile, 1);
 		}
 	}
@@ -614,7 +610,7 @@ public enum AMIImageType {
 		image = ImageUtil.thresholdBoofcv(image, erodeDilate);
 		if (verbosity().length > 1) {
 			File outputPng = new File(imageDir, "erodeDilate"+"."+CTree.PNG);
-			LOG.debug("writing "+outputPng);
+			LOG.debug("writing {}", outputPng);
 //			ImageUtil.writeImageQuietly(image, outputPng);
 		}
 		return image;
@@ -624,7 +620,7 @@ public enum AMIImageType {
 		image = ImageUtil.despeckle(image);
 		if (verbosity().length > 1) {
 			File outputPng = new File(imageDir, "despeckle"+"."+CTree.PNG);
-			LOG.debug("writing "+outputPng);
+			LOG.debug("writing {}", outputPng);
 			ImageUtil.writeImageQuietly(image, outputPng);
 		}
 		return image;
@@ -648,11 +644,11 @@ public enum AMIImageType {
 			image = ImageUtil.thresholdBoofcv(image, erodeDilate);
 			image = ImageUtil.removeAlpha(image);
 			image = ImageUtil.magnifyToWhite(image);
-			LOG.debug("colors0 "+ImageUtil.createHexMultiset(image));
+			LOG.debug("colors0 {}", ImageUtil.createHexMultiset(image));
 			image = ImageUtil.convertRGB(image, oldRGB, newRGB);
 			
 			Integer color = ImageUtil.getSingleColor(image);
-			LOG.debug("colors "+ImageUtil.createHexMultiset(image));
+			LOG.debug("colors {}", ImageUtil.createHexMultiset(image));
 			if (color != null) {
 				throw new RuntimeException("Single color: "+color+" Corrupt conversion?");
 			}
@@ -750,7 +746,7 @@ public enum AMIImageType {
 		if (outputFiles.contains(OutputFile.neighbours)) {
 			ColorAnalyzer colorAnalyzer = new ColorAnalyzer(image);
 			RGBNeighbourMap neighbourMap = colorAnalyzer.getOrCreateNeighbouringColorMap();
-			System.out.println("neighbours: "+neighbourMap);
+			LOG.warn("neighbours: {}", neighbourMap);
 //			SVGG g = colorAnalyzer.getOrCreateNeighbouringColorMap();
 //			SVGSVG.wrapAndWriteAsSVG(g, new File(getOutputDir(), "neighbours.svg"));
 		}
@@ -772,7 +768,7 @@ public enum AMIImageType {
 				String basename = FilenameUtils.getBaseName(file.toString());
 				String color = basename.indexOf("channel.") == -1 ? "white" : "#" + basename.split("\\.")[1];
 				String grandparent = file.getParentFile().getParentFile().getName();
-//				System.out.println(grandparent + " // " + basename);
+				LOG.debug(grandparent + " // " + basename);
 				ul.addFluent(new HtmlLi()
 					.setAttribute("file",  file.getAbsolutePath().toString())
 					.addFluent(new HtmlP(basename)
@@ -798,7 +794,7 @@ public enum AMIImageType {
 	/** HasImageDir methods*/
 	@Override
 	public void processImageDir(File imageFile) {
-//		System.err.println("Single IMAGE FILE "+imageFile);
+//		LOG.info("Single IMAGE FILE "+imageFile);
 		processSingleImageFile(imageFile);
 	}
 
@@ -867,7 +863,7 @@ public enum AMIImageType {
 
 	private void addImagesInDirectoryToCommonImageHashSet(String commonImageDir) {
 		File file = new File(commonImageDir);
-		System.out.println("ff "+file + "|"+file.exists()+"|"+ file.isDirectory());
+		LOG.warn("ff {}|{}|{}", file, file.exists(), file.isDirectory());
 		if (file.isDirectory()) {
 			List<File> imageFiles = CMineGlobber.listGlobbedFilesQuietly(file, "**/*.png");
 			for (File imageFile : imageFiles) {
@@ -904,7 +900,7 @@ public enum AMIImageType {
 		ImageParameterAnalyzer imageParameterAnalyzer = new ImageParameterAnalyzer().setMap(map);
 		getOrCreateParameterAnalyzerByImage().put(image, imageParameterAnalyzer);
 		boolean matches = imageParameterAnalyzer.matches(getOrCreateAnnotatedImage(image));
-		System.out.println("matches "+matches);
+		LOG.warn("matches {}", matches);
 		return include == matches;
 	}
 

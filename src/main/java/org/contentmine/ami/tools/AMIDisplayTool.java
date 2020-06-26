@@ -130,7 +130,6 @@ private enum Orientation {
     	AMIUtil.printNameValue("assert", assertList);
     	AMIUtil.printNameValue("display", displayList);
     	AMIUtil.printNameValue("orientation", orientation);
-    	System.out.println();
 	}
 
 
@@ -144,7 +143,7 @@ private enum Orientation {
 
 	protected boolean processTree() {
 		processedTree = true;
-		System.out.println("cTree>> "+cTree.getName());
+		LOG.warn("cTree>> "+cTree.getName());
 		summaryFileList = new ArrayList<>();
 
 		List<File> imageDirs = cTree.getPDFImagesImageDirectories();
@@ -152,7 +151,7 @@ private enum Orientation {
 		for (int i = 0; i < imageDirs.size(); i++) {
 			imageDir = imageDirs.get(i);
 			this.basename = FilenameUtils.getBaseName(imageDir.toString());
-			System.out.println("======>" + imageDir.getName() + "/" + getInputBasename());
+			LOG.warn("======>" + imageDir.getName() + "/" + getInputBasename());
 
 			if (displayList != null && displayList.size() > 0) {
 				displayFiles();
@@ -183,7 +182,7 @@ private enum Orientation {
 				createAndAddLinkToFile(ul, summarizedFile);
 			}
 			if (summaryFilename == null) {
-//				System.out.println(">> null summary");
+//				LOG.warn(">> null summary");
 			} else {
 				File summaryHtmlFile = new File(imageDir.getParent(), summaryFilename);
 				XMLUtil.writeQuietly(html, summaryHtmlFile, 1);
@@ -292,7 +291,7 @@ private enum Orientation {
 //				try {
 //					offset = Integer.parseInt(s);
 //				} catch (NumberFormatException nfe) {
-//					System.out.println("Cannot parse "+Arrays.asList(borders));
+//					LOG.warn("Cannot parse "+Arrays.asList(borders));
 //				}
 //			}
 //		}

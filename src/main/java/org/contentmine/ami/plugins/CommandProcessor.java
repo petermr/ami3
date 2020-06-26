@@ -215,7 +215,7 @@ public final static String SYMBOLS = NAConstants.PLUGINS_RESOURCE+"/symbols.xml"
 	 * @throws IOException
 	 */
 	public DataTablesTool createDataTables(boolean wikidataBiblio) throws IOException {
-		System.out.println("\ncreate data tables");
+		LOG.warn("\ncreate data tables");
 		if (projectDir == null) {
 			throw new RuntimeException("projectDir must be set");
 		}

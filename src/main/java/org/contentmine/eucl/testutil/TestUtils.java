@@ -1432,13 +1432,13 @@ public static final String OUTPUT_DIR_NAME = "target/test-outputs";
 	static protected void reportXMLDiffInFull(String message,
 			String errorMessage, Node refNode, Node testNode) {
 		try {
-			System.err.println("Error: "+errorMessage);
-			System.err.println("==========XMLDIFF reference=========");
+			LOG.error("Error: "+errorMessage);
+			LOG.error("==========XMLDIFF reference=========");
 			XMLUtil.debug((Element) refNode, System.err, 2);
-			System.err.println("------------test---------------------");
+			LOG.error("------------test---------------------");
 			String s = testNode.toXML().replace("><", ">\n<");
-			System.err.println(s);
-			System.err.println("==============" + message
+			LOG.error(s);
+			LOG.error("==============" + message
 					+ "===================");
 		} catch (Exception e) {
 			throw new RuntimeException(e);

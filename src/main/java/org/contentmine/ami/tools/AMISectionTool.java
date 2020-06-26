@@ -215,21 +215,20 @@ public enum SummaryType {
     @Override
 	protected void parseSpecifics() {
 		normalizeSectionTags();
-		System.out.println("xslt                    " + xsltName);
-		System.out.println("boldSections            " + makeBoldSections);
-		System.out.println("extract                 " + extractList);
-		System.out.println("sectionList             " + sectionTagList);
-		System.out.println("sectiontype             " + sectionType);
-		System.out.println("summaryList             " + summaryList);
-		System.out.println("write                   " + writeFiles);
-		System.out.println();
+		LOG.info("xslt                    {}", xsltName);
+		LOG.info("boldSections            {}", makeBoldSections);
+		LOG.info("extract                 {}", extractList);
+		LOG.info("sectionList             {}", sectionTagList);
+		LOG.info("sectiontype             {}", sectionType);
+		LOG.info("summaryList             {}", summaryList);
+		LOG.info("write                   {}", writeFiles);
 	}
 
 
     @Override
     protected void runSpecifics() {
 		if (sectionTagList.size() == 0) {
-			System.err.println("section values: "+Arrays.asList(SectionTag.values()));
+			LOG.info("section values: "+Arrays.asList(SectionTag.values()));
 		} else if (processTrees()) {
 			writeSummaries();
     	} else {
@@ -259,7 +258,7 @@ public enum SummaryType {
 		}
 		boolean deleteExisting = false;
 		if (cTree == null || !cTree.hasExistingFulltextXML()) {
-			System.err.println("no fulltext.xml");
+			LOG.warn("no fulltext.xml");
 		} else if (sectionTagList.size() == 1 && SectionTag.AUTO.equals(sectionTagList.get(0))) {
 			createSections();
 		} else {
@@ -450,7 +449,7 @@ public enum SummaryType {
 		try {
 			floatsDirList = Util.listFilesFromPaths(cTree.getSectionsDirectory(), FLOATS_GROUP_REGEX);
 		} catch (Exception e) {
-			System.err.println("ERROR, skipped: "+e.getMessage());
+			LOG.error("ERROR, skipped: {}", e.getMessage());
 		}
 		return (floatsDirList.size() == 1) ? floatsDirList.get(0) : null;
 	}
@@ -459,7 +458,7 @@ public enum SummaryType {
 		JATSFactory factory = new JATSFactory();
 		existingFulltextXML = cTree.getExistingFulltextXML();
 		if (existingFulltextXML == null) {
-			System.err.println("No fulltext.xml");
+			LOG.warn("No fulltext.xml");
 		} else {
 			try {
 				JATSArticleElement articleElement = factory.readArticle(existingFulltextXML);
@@ -468,7 +467,7 @@ public enum SummaryType {
 				}
 				articleElement.writeSections(cTree);
 			} catch (Exception e) {
-				System.err.println("Cannot read article, SKIPPING "+e.getMessage());
+				LOG.error("Cannot read article, SKIPPING {}", e.getMessage());
 			}
 		}
 	}
@@ -487,7 +486,7 @@ public enum SummaryType {
 		cTree.setHtmlTagger(tagger);
 		for (SectionTag sectionTag : sectionTagList) {
 			if (sectionTag == null) {
-				System.err.println("AMISectionTool null section tag");
+				LOG.warn("AMISectionTool null section tag");
 			} else {
 //				writeXMLSectionComponents(deleteExisting, sectionTag);
 				writeSectionComponents(deleteExisting, sectionTag);
@@ -499,14 +498,14 @@ public enum SummaryType {
 
 	private void writeSectionComponents(boolean deleteExisting, SectionTag sectionTag) {
 		List<Element> sectionList = tagger.getSections(sectionTag);
-//		System.err.println("section: "+sectionTag);
+//		LOG.warn("section: "+sectionTag);
 		sectionNumber = new SectionNumber();
 		if (writeFiles && sectionList != null && sectionList.size() > 0) {
 //			LOG.debug("tag> "+sectionTag+": "+sectionList.size());
 			File sectionDir = cTree.makeSectionDir(sectionTag.getName(), deleteExisting);
 			for (int serial = 0; serial < sectionList.size(); serial++) {
 				Element section = sectionList.get(serial);
-				System.out.println("SECT "+section.toXML());
+				LOG.warn("SECT "+section.toXML());
 				writeSection(section, sectionDir);
 				sectionNumber.incrementSerial();
 			}
@@ -549,7 +548,7 @@ public enum SummaryType {
 			xmlFile = createFileDescriptor(sectionDir, title, suffix);
 			XMLUtil.debug(section, xmlFile, 1);
 		} catch (IOException e) {
-			System.err.println(">cannot write file> "+e.getMessage());
+			LOG.error(">cannot write file> {}", e.getMessage());
 		}
 		return xmlFile;
 	}
@@ -585,7 +584,7 @@ public enum SummaryType {
 				: ".//*[local-name()='title']";
 		List<Element> titleElements = XMLUtil.getQueryElements(section, xpath);
 		if (titleElements.size() == 0) {
-//			System.err.println("no title in: "+section.toXML());
+//			LOG.warn("no title in: "+section.toXML());
 		} else if (titleElements.size() == 1) {
 			Element titleElement = titleElements.get(0);
 			title = createTitleFromElement(titleElement);
@@ -593,9 +592,9 @@ public enum SummaryType {
 			Element titleElement = titleElements.get(0);
 			title = createTitleFromElement(titleElement);
 			title += "__"+titleElements.size();
-//			System.err.println(">multiple titles: "+section.toXML());
+//			LOG.warn(">multiple titles: "+section.toXML());
 //			for (Element titleElementx : titleElements) {
-//				System.err.println(">>"+titleElementx.getValue());
+//				LOG.warn(">>"+titleElementx.getValue());
 //			}
 		}
 		title = Util.makeLowercaseAndDespace(title, 15);

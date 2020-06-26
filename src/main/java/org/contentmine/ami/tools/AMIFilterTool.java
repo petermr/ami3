@@ -256,7 +256,7 @@ public enum ImageToolkit {
 			List<File> imageFiles = CMineGlobber.listSortedChildFiles(pdfImagesDir, CTree.PNG);
 			Collections.sort(imageFiles);
 			for (File imageFile : imageFiles) {
-				System.err.print(".");
+				System.err.print("."); // TODO progress indicator
 				processImageFileFilter(pdfImagesDir, imageFile);
 			}
 		}
@@ -271,11 +271,11 @@ public enum ImageToolkit {
 			// this has to cascade in order; they can be reordered if required
 			if (false) {
 			} else if (moveSmallImageTo(image, imageFile, smallDirname, pdfImagesDir)) {
-				System.out.println("small: "+basename);
+				LOG.debug("small: {}", basename);
 			} else if (moveMonochromeImagesTo(image, imageFile, monochromeDirname, pdfImagesDir)) {
-				System.out.println("monochrome: "+basename);
+				LOG.debug("monochrome: {}", basename);
 			} else if (moveDuplicateImagesTo(image, imageFile, duplicateDirname, pdfImagesDir)) {
-				System.out.println("duplicate: "+basename);
+				LOG.debug("duplicate: {}", basename);
 			} else {
 				// move file to <pdfImagesDir>/<basename>/raw.png
 				moveImageToRawPng(pdfImagesDir, imageFile, basename);

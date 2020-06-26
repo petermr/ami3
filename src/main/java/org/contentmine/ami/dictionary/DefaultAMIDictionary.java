@@ -292,7 +292,7 @@ public static final String WIKIPEDIA_BASE = "https://en.wikipedia.org";
 				String name = dictionaryTerm.getName();
 				if (name == null) {
 //					throw new RuntimeException("Null name: "+element.toXML());
-//					System.err.print(" !0! ");
+//					LOG.trace(" !0! ");
 //					LOG.trace("Null name: "+element.toXML());
 					continue;
 				}
@@ -505,7 +505,7 @@ public static final String WIKIPEDIA_BASE = "https://en.wikipedia.org";
 			List<String> nonReservedAttNames) {
 		HtmlTbody tBody = table.getOrCreateTbody();
 		for (Element entry : entryList) {
-			System.out.print("+");
+			System.err.print("+"); // TODO progress indicator
 			HtmlTr tr = new HtmlTr();
 			tBody.appendChild(tr);
 			List<HtmlTd> tdList = addEmptyHeader(reservedAttNames, nonReservedAttNames, tr);
@@ -585,7 +585,7 @@ public static final String WIKIPEDIA_BASE = "https://en.wikipedia.org";
 //				    <img alt="Simulium trifasciatum adult (British Entomology by John Curtis- 765).png" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/76/Simulium_trifasciatum_adult_%28British_Entomology_by_John_Curtis-_765%29.png/220px-Simulium_trifasciatum_adult_%28British_Entomology_by_John_Curtis-_765%29.png" width="220" height="178" data-file-width="333" data-file-height="270" /></a></td></tr>
 				
 			} catch (Exception e) {
-				System.err.print(" !! ");
+				System.err.print(" !! "); // TODO progress indicator
 				LOG.trace("Cannot create page: "+urlS+" "+e.getMessage());
 			}
 		}

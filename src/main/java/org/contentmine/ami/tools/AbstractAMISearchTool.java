@@ -148,12 +148,6 @@ public abstract class AbstractAMISearchTool extends AbstractAMITool {
     @Override
 	protected void parseSpecifics() {
     	super.parseSpecifics();
-////		System.out.println("dictionaryList       " + dictionaryOption.getDictionaryList());
-//		System.out.println("oldstyle             " + oldstyle);
-//		System.out.println("strip numbers        " + stripNumbers);
-//		System.out.println("wordCountRange       " + wordCountRange);
-//		System.out.println("wordLengthRange      " + wordLengthRange);
-//		System.out.println();
 	}
 
     @Override
@@ -213,13 +207,13 @@ public abstract class AbstractAMISearchTool extends AbstractAMITool {
  * @param cmd
  */
 	protected void runLegacyCommandProcessor(String cmd) {
-//		System.out.println("SEARCH running legacy processors");
+		LOG.debug("SEARCH running legacy processors");
 		try {
 			
 			CommandProcessor commandProcessor = new CommandProcessor(cProject.getDirectory());
 			List<String> cmdList = Arrays.asList(cmd.trim().split("\\s+"));
 			for (String cmd0 : cmdList) {
-				System.out.println("legacy cmd> "+cmd0);
+				LOG.warn("legacy cmd> "+cmd0);
 			}
 			commandProcessor.parseCommands(cmdList);
 			commandProcessor.runNormaIfNecessary();

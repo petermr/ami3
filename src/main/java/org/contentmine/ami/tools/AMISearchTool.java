@@ -148,10 +148,6 @@ public class AMISearchTool extends AbstractAMISearchTool {
     @Override
 	protected void parseSpecifics() {
     	super.parseSpecifics();
-//		System.out.println("dictionaryList       " + dictionaryList);
-//		System.out.println("dictionaryTop        " + dictionaryTopList);
-//		System.out.println("dictionarySuffix     " + dictionarySuffix);
-//		System.out.println();
 	}
 
 //    public void createOldStyleCmd() {
@@ -188,7 +184,7 @@ public class AMISearchTool extends AbstractAMISearchTool {
 
 	protected void populateArgProcessorFromCLI() {
 		List<AMISearcher> amiSearcherList = abstractSearchArgProcessor.createSearcherList(dictionaryList);
-		System.out.println("amiSearchers: "+amiSearcherList);
+		LOG.warn("amiSearchers: "+amiSearcherList);
 	}
 
 	
@@ -208,7 +204,7 @@ public class AMISearchTool extends AbstractAMISearchTool {
 	 * @return */
 	protected boolean processTree() {
 		processedTree = false;
-		if (getVerbosityInt() > 0) System.out.println("AMIWords processTree");
+		LOG.info("AMIWords processTree");
 		abstractSearchArgProcessor.setCTree(cTree);
 		processedTree = runTreeSearch();
 		return processedTree;
@@ -221,7 +217,7 @@ public class AMISearchTool extends AbstractAMISearchTool {
 	}
 
 	public void processProject() {
-		System.out.println("cProject: "+cProject.getName());
+		LOG.warn("cProject: "+cProject.getName());
 		runProjectSearch();
 	}
 
@@ -261,7 +257,7 @@ public class AMISearchTool extends AbstractAMISearchTool {
 				}
 			}
 		}
-		System.out.println("created COMMAND: "+cmd1);
+		LOG.warn("created COMMAND: {}", cmd1);
 		return cmd1;
 	}
 
@@ -271,7 +267,7 @@ public class AMISearchTool extends AbstractAMISearchTool {
 		} else if (getLocalDictionaryInputStream(facet) != null) {
 		} else if (getBuiltinDictionaryInputStream(facet) != null) {
 		} else {
-//			System.err.println("cannot find dictionary: "+facet);
+			LOG.info("cannot find dictionary: "+facet);
 		}
 	}
 

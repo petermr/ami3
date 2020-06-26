@@ -33,13 +33,4 @@ public static String CM_HOME = System.getProperty("user.home");
 		}
 		System.out.println((name + "                           ").substring(0,25) + sb.toString());
 	}
-	
-	public static void printHeader(Object obj, PrintStream stream, String type) {
-		stream.println();
-		stream.println(type + " values (" + obj.getClass().getSimpleName() + ")");
-		stream.println("================================");
-	}
-
-
-
 }

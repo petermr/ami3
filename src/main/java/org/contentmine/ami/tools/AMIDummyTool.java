@@ -41,13 +41,13 @@ interface ToolMethod {
 		public void runMe() {
 			switch (this) {
 	        case date:
-	        	System.out.println("Date: "+LocalDate.now());
+	        	LOG.warn("Date: "+LocalDate.now());
 	        	break;				
 	        case hello:
-				System.out.println("Hello AMI");
+				LOG.warn("Hello AMI");
 	        	break;				
 	        default:
-				System.out.println("Missed "+this);
+				LOG.warn("Missed "+this);
 			}
 		}
 	}
@@ -77,15 +77,13 @@ interface ToolMethod {
 
     @Override
 	protected boolean parseGenerics() {
-		System.out.println("project         " + cProject);
-		System.out.println();
+		LOG.info("project         " + cProject);
 		return true;
 	}
 
     @Override
 	protected void parseSpecifics() {
-		System.out.println("tools         " + toolList);
-		System.out.println();
+		LOG.info("tools         " + toolList);
 	}
     
     @Override
@@ -95,7 +93,7 @@ interface ToolMethod {
 
 	private void runTools() {
 		if (toolList.size() == 0) {
-			System.out.println("enum "+Arrays.asList(Tool.values()));
+			LOG.warn("enum "+Arrays.asList(Tool.values()));
 		} else {
 			toolList.forEach(t -> t.runMe());
 		}

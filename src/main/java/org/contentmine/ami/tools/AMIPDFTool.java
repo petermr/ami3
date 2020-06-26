@@ -163,20 +163,19 @@ public class AMIPDFTool extends AbstractAMITool {
 	}
 
 	private void printDebug() {
-		System.out.println("maxpages            " + maxpages);
-		System.out.println("svgDirectoryName    " + svgDirectoryName);
-		System.out.println("minimagesize        " + minimagesize);
-		System.out.println("outputSVG           " + outputSVG);
-		System.out.println("pdf2html            " + pdf2html);
-		System.out.println("imgDirectoryName    " + pdfImagesDirname);
-		System.out.println("outputPDFImages     " + outputPdfImages);
-		System.out.println("parserDebug         " + parserDebug);
-		return;
+		LOG.info("maxpages            {}", maxpages);
+		LOG.info("svgDirectoryName    {}", svgDirectoryName);
+		LOG.info("minimagesize        {}", minimagesize);
+		LOG.info("outputSVG           {}", outputSVG);
+		LOG.info("pdf2html            {}", pdf2html);
+		LOG.info("imgDirectoryName    {}", pdfImagesDirname);
+		LOG.info("outputPDFImages     {}", outputPdfImages);
+		LOG.info("parserDebug         {}", parserDebug);
 	}
 
 	protected boolean processTree() {
 		processedTree = false;
-		System.out.println("cTree: " + cTree.getName());
+		LOG.warn("cTree: " + cTree.getName());
 		File pdfImagesDir = cTree.getExistingPDFImagesDir();
 		if (pdf2html) {
 			pdf2html();
@@ -212,7 +211,7 @@ public class AMIPDFTool extends AbstractAMITool {
 		}
 		if (pdDocument != null) {
 			try {
-				System.err.println("DOC" + pdDocument.getDocumentInformation());
+				LOG.warn("DOC{}", pdDocument.getDocumentInformation());
 				runPdf2Html(pdDocument);
 			} catch (IOException e) {
 				throw new RuntimeException("run pdf", e);
@@ -228,7 +227,7 @@ public class AMIPDFTool extends AbstractAMITool {
 		String text = textStripper.getText(document);
 		File textFile = getTextFile();
 		IOUtils.write(text, new FileOutputStream(textFile), CMineUtil.UTF8_CHARSET);
-		System.out.println("wrote " + textFile.getAbsoluteFile());
+		LOG.warn("wrote {}", textFile.getAbsoluteFile());
 	}
 
 	private File getTextFile() {
@@ -247,7 +246,7 @@ public class AMIPDFTool extends AbstractAMITool {
 			pageParserRunner.setTidySVGList(tidySVGList);
 			for (int pageIndex : pages) {
 				pageParserRunner.runPages(cTree.getName(), pageIndex);
-				System.out.println(">finished: " + pageIndex);
+				LOG.warn(">finished: {}", pageIndex);
 			}
 		}
 		return processedTree;

@@ -4,6 +4,8 @@ import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.contentmine.eucl.euclid.IntRange;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.graphics.svg.SVGG;
@@ -15,6 +17,7 @@ import org.contentmine.graphics.svg.SVGRect;
  *
  */
 public class XSlice {
+	private static Logger LOG = LogManager.getLogger();
 
 	private List<IntRange> ranges;
 	private int x;
@@ -134,7 +137,7 @@ public class XSlice {
 				slice.addClosedRange(current, rangeYMin, y);
 				current = 0;
 			} else {
-				System.out.print(Integer.toHexString(rgb)+" "+x+" "+y+" "+rgb);
+				LOG.warn(Integer.toHexString(rgb)+" "+x+" "+y+" "+rgb);
 			}
 		}
 		slice.addClosedRange(current, rangeYMin, y - 1);

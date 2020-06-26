@@ -37,185 +37,191 @@ import com.google.common.collect.Multiset;
 import nu.xom.Element;
 
 /**
- * 
  * Optical Character Recognition --- gocr 0.52 20181015
- Copyright (C) 2001-2018 Joerg Schulenburg  GPG=1024D/53BDFBE3
- released under the GNU General Public License
- using: gocr [options] pnm_file_name  # use - for stdin
- options (see gocr manual pages for more details):
- -h, --help, -V --version
- -i name   - input image file (pnm,pgm,pbm,ppm,pcx,...)
- -o name   - output file  (redirection of stdout)
- -e name   - logging file (redirection of stderr)
- -x name   - progress output to fifo (see manual)
- -p name   - database path including final slash (default is ./db/)
- -f fmt    - output format (ISO8859_1 TeX HTML XML UTF8 ASCII)
- -l num    - threshold grey level 0<160<=255 (0 = autodetect)
- -d num    - dust_size (remove small clusters, -1 = autodetect)
- -s num    - spacewidth/dots (0 = autodetect)
- -v num    - verbose (see manual page)
- -c string - list of chars (debugging, see manual)
- -C string - char filter (ex. hexdigits: 0-9A-Fx, only ASCII)
- -m num    - operation modes (bitpattern, see manual)
- -a num    - value of certainty (in percent, 0..100, default=95)
- -u string - output this string for every unrecognized character
- examples:
-	gocr -m 4 text1.pbm                   # do layout analyzis
-	gocr -m 130 -p ./database/ text1.pbm  # extend database
-	djpeg -pnm -gray text.jpg | gocr -    # use jpeg-file via pipe
-
- website: http://www-e.uni-magdeburg.de/jschulen/ocr/
- 
- 
-       The verbosity is specified as a bitfield:
-
-       1         print more info
-       2         list shapes of boxes (see -c) to stderr
-       4         list pattern of boxes (see -c) to stderr
-       8         print pattern after recognition for debugging
-       16        print debug information about recognition of lines to stderr
-       32        create outXX.png with boxes and lines marked on each general OCR-step
-
-       The operation modes are:
-
-       2         use database to recognize characters which are not recognized by other algorithms, (early  develop-
-                 ment)
-       4         switching on layout analysis or zoning (development)
-       8         don't compare unrecognized characters to recognized one
-       16        don't try to divide overlapping characters to two or three single characters
-       32        don't do context correction
-       64        character  packing, before recognition starts, similar characters are searched and only one of this
-                 characters will be send to the recognition engine (development)
-       130       extend database, prompts user for unidentified characters  and  extends  the  database  with  users
-                 answer (128+2, early development)
-       256       switch off the recognition engine (makes sense together with -m 2)
-
-http://www-e.uni-magdeburg.de/jschulen/ocr/
-
-
- * @author pm286
+ * Copyright (C) 2001-2018 Joerg Schulenburg  GPG=1024D/53BDFBE3
+ * released under the GNU General Public License
+ * using: gocr [options] pnm_file_name  # use - for stdin
+ * options (see gocr manual pages for more details):
+ * -h, --help, -V --version
+ * -i name   - input image file (pnm,pgm,pbm,ppm,pcx,...)
+ * -o name   - output file  (redirection of stdout)
+ * -e name   - logging file (redirection of stderr)
+ * -x name   - progress output to fifo (see manual)
+ * -p name   - database path including final slash (default is ./db/)
+ * -f fmt    - output format (ISO8859_1 TeX HTML XML UTF8 ASCII)
+ * -l num    - threshold grey level 0<160<=255 (0 = autodetect)
+ * -d num    - dust_size (remove small clusters, -1 = autodetect)
+ * -s num    - spacewidth/dots (0 = autodetect)
+ * -v num    - verbose (see manual page)
+ * -c string - list of chars (debugging, see manual)
+ * -C string - char filter (ex. hexdigits: 0-9A-Fx, only ASCII)
+ * -m num    - operation modes (bitpattern, see manual)
+ * -a num    - value of certainty (in percent, 0..100, default=95)
+ * -u string - output this string for every unrecognized character
+ * examples:
+ * gocr -m 4 text1.pbm                   # do layout analyzis
+ * gocr -m 130 -p ./database/ text1.pbm  # extend database
+ * djpeg -pnm -gray text.jpg | gocr -    # use jpeg-file via pipe
+ * <p>
+ * website: http://www-e.uni-magdeburg.de/jschulen/ocr/
+ * <p>
+ * <p>
+ * The verbosity is specified as a bitfield:
+ * <p>
+ * 1         print more info
+ * 2         list shapes of boxes (see -c) to stderr
+ * 4         list pattern of boxes (see -c) to stderr
+ * 8         print pattern after recognition for debugging
+ * 16        print debug information about recognition of lines to stderr
+ * 32        create outXX.png with boxes and lines marked on each general OCR-step
+ * <p>
+ * The operation modes are:
+ * <p>
+ * 2         use database to recognize characters which are not recognized by other algorithms, (early  develop-
+ * ment)
+ * 4         switching on layout analysis or zoning (development)
+ * 8         don't compare unrecognized characters to recognized one
+ * 16        don't try to divide overlapping characters to two or three single characters
+ * 32        don't do context correction
+ * 64        character  packing, before recognition starts, similar characters are searched and only one of this
+ * characters will be send to the recognition engine (development)
+ * 130       extend database, prompts user for unidentified characters  and  extends  the  database  with  users
+ * answer (128+2, early development)
+ * 256       switch off the recognition engine (makes sense together with -m 2)
+ * <p>
+ * http://www-e.uni-magdeburg.de/jschulen/ocr/
  *
+ * @author pm286
  */
-public class GOCRConverter  extends AbstractOCRConverter {
+public class GOCRConverter extends AbstractOCRConverter {
 
 
 	public final static Logger LOG = LogManager.getLogger(GOCRConverter.class);
-private static final String GOCR = "gocr";
+	private static final String GOCR = "gocr";
 	private static final String USR_LOCAL_BIN_GOCR = "/usr/local/bin/gocr";
 	private static final String PNM = "pnm";
 	private String gocrPath = USR_LOCAL_BIN_GOCR;
 	private static final String PNGTOPNM = "/usr/local/bin/pngtopnm";
 	public static final String GOCR_XML = "gocr.xml";
-	public static final String DOT_GOCR_XML = "."+GOCR_XML;
+	public static final String DOT_GOCR_XML = "." + GOCR_XML;
 	private static final String GOCR_SVG = "gocr.svg";
-	private static final String DOT_GOCR_SVG = "."+GOCR_SVG;
+	private static final String DOT_GOCR_SVG = "." + GOCR_SVG;
 	private static final String GLYPH_DIR = "glyphDir";
-	
+
 	/**
 	 * These bits can be added as long as they are not repeated and 2 /130 are not both present
 	 */
-  // 2        use database to recognize characters which are not recognized by other algorithms, (early  development)
-    public final static int USE_DATABASE = 2; 
-  // 4         switching on layout analysis or zoning (development)
-    public final static int LAYOUT = 4;
-  // 8         don't compare unrecognized characters to recognized one
-    public final static int DONT_COMPARE_UNRECOGNISED = 8;
-  // 16        don't try to divide overlapping characters to two or three single characters
-    public final static int DONT_DIVIDE_OVERLAPPING = 16;
-  //  32        don't do context correction
-    public final static int DONT_CONTEXT_CORRECT = 32;
-  // 64        character  packing, before recognition starts, similar characters are searched and only one of this
-  // characters will be send to the recognition engine (development)
-    public final static int CHARACTER_PACKING = 64;
-  // 130       extend database, prompts user for unidentified characters  and  extends  the  database  with  users
-  //          answer (128+2, early development)
-    public final static int EXTEND_DATABASE = 130;
-  // 256       switch off the recognition engine (makes sense together with -m 2)
-    public final static int SWITCH_OFF_RECOGNITION = 256;
-    
+	// 2        use database to recognize characters which are not recognized by other algorithms, (early  development)
+	public final static int USE_DATABASE = 2;
+	// 4         switching on layout analysis or zoning (development)
+	public final static int LAYOUT = 4;
+	// 8         don't compare unrecognized characters to recognized one
+	public final static int DONT_COMPARE_UNRECOGNISED = 8;
+	// 16        don't try to divide overlapping characters to two or three single characters
+	public final static int DONT_DIVIDE_OVERLAPPING = 16;
+	//  32        don't do context correction
+	public final static int DONT_CONTEXT_CORRECT = 32;
+	// 64        character  packing, before recognition starts, similar characters are searched and only one of this
+	// characters will be send to the recognition engine (development)
+	public final static int CHARACTER_PACKING = 64;
+	// 130       extend database, prompts user for unidentified characters  and  extends  the  database  with  users
+	//          answer (128+2, early development)
+	public final static int EXTEND_DATABASE = 130;
+	// 256       switch off the recognition engine (makes sense together with -m 2)
+	public final static int SWITCH_OFF_RECOGNITION = 256;
+
 	CharBoxList gocrCharBoxList;
-	
+
 	private GOCRPageElement gocrElement;
 	private int minYRange;
 	int minEntryCount;
 	private File gocrSVGFile;
-	private GOCRConverter () {
+
+	private GOCRConverter() {
 		setDefaults();
 	}
-	
+
 	public GOCRConverter(AMIOCRTool amiOcrTool) {
 		this();
 		this.amiOcrTool = amiOcrTool;
 	}
-	
+
 	protected void setDefaults() {
 		super.setDefaults();
 		minYRange = 8;
 		minEntryCount = 2;
 	}
-	/** converts Image to GOCR
-     * relies on GOCR.
-     * 
-     * Note - creates a *.html and *.svg file
-     * 
-     * @param inputImageFile
-     * @param outputGocrFile
-     * @throws IOException // if Tesseract not present
-     * @throws InterruptedException ??
-     */
-    public void convertImageToGOCR(File inputImageFile, File outputGocrFile) throws FileNotFoundException, InterruptedException {
+
+	/**
+	 * converts Image to GOCR
+	 * relies on GOCR.
+	 * <p>
+	 * Note - creates a *.html and *.svg file
+	 *
+	 * @param inputImageFile
+	 * @param outputGocrFile
+	 * @throws IOException          // if Tesseract not present
+	 * @throws InterruptedException ??
+	 */
+	public void convertImageToGOCR(File inputImageFile, File outputGocrFile) throws FileNotFoundException, InterruptedException {
 
 		if (!amiOcrTool.getForceMake() && !CMFileUtil.shouldMake(outputGocrFile, imageFile)) {
-			System.out.println(">skip gocr>"+imageFile.getName());
+			LOG.warn(">skip gocr>{}", imageFile.getName());
 			return;
 		}
-    	inputFilename = inputImageFile.getAbsolutePath();
-    	if (!inputImageFile.exists()) {
-    		throw new FileNotFoundException("inoput image: "+inputImageFile);
-    	}
+		inputFilename = inputImageFile.getAbsolutePath();
+		if (!inputImageFile.exists()) {
+			throw new FileNotFoundException("inoput image: " + inputImageFile);
+		}
 		inputImage = ImageUtil.readImage(inputImageFile);
-		
-    	this.outputFileRoot = outputGocrFile;
+
+		this.outputFileRoot = outputGocrFile;
 		outputGocrFile.getParentFile().mkdirs();
 		String fmt = PNM;
-		File outputFile = new File(inputImageFile.getParentFile(), 
+		File outputFile = new File(inputImageFile.getParentFile(),
 				FilenameUtils.getBaseName(inputFilename) + "." + fmt);
 		String fmtFilename = outputFile.getAbsolutePath();
 		File fmtFile = new File(fmtFilename);
 		/** convert to intermediate format (e.g. PNM) and write file */
 		if (!ImageUtil.writeImageQuietly(inputImage, fmtFile, fmt)) {
-			throw new RuntimeException("Cannot write format: "+fmt);
-		};
+			throw new RuntimeException("Cannot write format: " + fmt);
+		}
+		;
 		/** now run GOCR */
-		System.out.println(">gocr>" /*+imageFile.getName()*/ );
+		LOG.warn(">gocr>" /*+imageFile.getName()*/);
 		runGocr(fmtFilename, outputGocrFile.getAbsolutePath());
 
-    }
+	}
 
 	private void runGocr(String inputFilename, String outputFilename) throws InterruptedException {
 		List<String> gocrConfig = new ArrayList<>();
 		gocrConfig.add(getProgram());
-		
-		gocrConfig.add("-o");		gocrConfig.add(outputFilename);
-		gocrConfig.add("-f");		gocrConfig.add("XML");
-		gocrConfig.add("-C"); /* gocrConfig.add("0-9A-Za-z--[]().,%'="); */	gocrConfig.add("0123456789"); // don't think this works
-		gocrConfig.add("-m");		gocrConfig.add(String.valueOf(
+
+		gocrConfig.add("-o");
+		gocrConfig.add(outputFilename);
+		gocrConfig.add("-f");
+		gocrConfig.add("XML");
+		gocrConfig.add("-C"); /* gocrConfig.add("0-9A-Za-z--[]().,%'="); */
+		gocrConfig.add("0123456789"); // don't think this works
+		gocrConfig.add("-m");
+		gocrConfig.add(String.valueOf(
 				/*DONT_DIVIDE_OVERLAPPING + */DONT_CONTEXT_CORRECT + CHARACTER_PACKING));
-		
-		gocrConfig.add("-i");		gocrConfig.add(inputFilename);
+
+		gocrConfig.add("-i");
+		gocrConfig.add(inputFilename);
 //		System.out.println("GOCR command: "+gocrConfig);
-			
+
 		builder = new ProcessBuilder(gocrConfig);
-        runBuilderAndCleanUp();
+		runBuilderAndCleanUp();
 	}
 
-    protected String getPngtopnmPath() {
-    	return PNGTOPNM ;
-    }
+	protected String getPngtopnmPath() {
+		return PNGTOPNM;
+	}
 
-    protected String getProgram() {
-    	return gocrPath ;
-    }
+	protected String getProgram() {
+		return gocrPath;
+	}
 
 	public String getGocrPath() {
 		return gocrPath;
@@ -225,10 +231,11 @@ private static final String GOCR = "gocr";
 		this.gocrPath = gocrPath;
 	}
 
-	/** converts infile (maybe PNG) to gocrXML.
+	/**
+	 * converts infile (maybe PNG) to gocrXML.
 	 * hass to write the outpust to disk at present
 	 * then read it in again
-	 * 
+	 *
 	 * @param infile
 	 * @param gocrXmlFile
 	 * @return
@@ -251,11 +258,11 @@ private static final String GOCR = "gocr";
 			if (newValueList != null) {
 				if (newValueList.size() == 0) {
 				} else if (newValueList.size() > 1) {
-					System.out.println("ambiguous replacment: "+textValue+" => "+newValueList);
+					LOG.warn("ambiguous replacement: {} => {}", textValue , newValueList);
 				} else {
 					String newText = newValueList.get(0);
 					text.setText(newText);
-					System.out.println("replaced "+textValue+"=>"+newText);
+					LOG.info("replaced {}=>{}", textValue, newText);
 				}
 			}
 		}
@@ -274,12 +281,12 @@ private static final String GOCR = "gocr";
 		for (SVGRect rect : rectList) {
 			if (SVGText.TAG.contentEquals(SVGRect.getClassAttributeValue(rect))) {
 				SVGG parentG = (SVGG) rect.getParent();
-				SVGImage svgImage = (SVGImage) XMLUtil.getSingleElement(parentG, "*[local-name()='"+SVGImage.TAG+"']");
+				SVGImage svgImage = (SVGImage) XMLUtil.getSingleElement(parentG, "*[local-name()='" + SVGImage.TAG + "']");
 				if (svgImage == null && inputImage != null) {
 					svgImage = createAndAddGlyphImage(rect, parentG);
 				}
 				if (svgImage == null) {
-//					System.out.println("NULL SVG Image");
+					LOG.info("NULL SVG Image");
 					return;
 				}
 				if (svgImage != null) {
@@ -290,7 +297,7 @@ private static final String GOCR = "gocr";
 			}
 		}
 	}
-	
+
 	private SVGImage createAndAddGlyphImage(SVGRect rect, SVGG parentG) {
 		SVGImage svgImage;
 		Int2Range boundingBox = rect.createIntBoundingBox();
@@ -299,7 +306,7 @@ private static final String GOCR = "gocr";
 		parentG.appendChild(svgImage);
 		return svgImage;
 	}
-	
+
 	public static void addGlyphsToRectsInG(SVGElement svgElement, BufferedImage inputImage) throws IOException {
 		List<SVGRect> rectList = SVGRect.extractSelfAndDescendantRects(svgElement);
 		for (SVGRect rect : rectList) {
@@ -311,13 +318,13 @@ private static final String GOCR = "gocr";
 			}
 		}
 	}
-	
+
 	public TextLineAnalyzer createMaps(SVGElement svgElement) {
 		createCharBoxList(svgElement);
 		textLineAnalyzer = new TextLineAnalyzer(amiOcrTool);
 		textLineAnalyzer.setDisambiguate(disambiguate);
 		Multiset<IntRange> yRangeMultiset = textLineAnalyzer.createYRangeMultiset(gocrCharBoxList);
-		
+
 		textLineAnalyzer.setMinYRange(minYRange);
 		textLineAnalyzer.createMajorNonOverlappingTextLines(yRangeMultiset);
 		textLineAnalyzer.addCharBoxes(gocrCharBoxList);
@@ -325,7 +332,7 @@ private static final String GOCR = "gocr";
 
 		LOG.debug("TextLineAnalyzer> {}", textLineAnalyzer);
 
-		return textLineAnalyzer;   
+		return textLineAnalyzer;
 	}
 
 
@@ -351,7 +358,7 @@ private static final String GOCR = "gocr";
 		return imagejx;
 	}
 
-	private SVGImage createSVGImage(int x,int y, SVGImage imagej) {
+	private SVGImage createSVGImage(int x, int y, SVGImage imagej) {
 		SVGImage image = (SVGImage) imagej.copy();
 		image.setX(x);
 		image.setY(y);
@@ -362,7 +369,7 @@ private static final String GOCR = "gocr";
 		RealSquareMatrix rsm = new RealSquareMatrix(glyphList.size());
 		for (int i = 0; i < glyphList.size(); i++) {
 			SVGImage svgImage = glyphList.get(i);
-			if(svgImage != null) {
+			if (svgImage != null) {
 				BufferedImage imagei = svgImage.getBufferedImage();
 				for (int j = 0; j < glyphList.size(); j++) {
 					BufferedImage imagej = glyphList.get(j).getBufferedImage();
@@ -397,17 +404,17 @@ private static final String GOCR = "gocr";
 		}
 		return svgElement;
 	}
-	
+
 	public void readSVGElementWithGlyphs(SVGElement svgElement) {
-		
+
 	}
-			
-	
+
+
 	public void runGOCR() throws IOException, InterruptedException {
-		ocrBaseDir = new File(imageFile.getParentFile(),FilenameUtils.getBaseName(imageFile.getAbsolutePath()));
+		ocrBaseDir = new File(imageFile.getParentFile(), FilenameUtils.getBaseName(imageFile.getAbsolutePath()));
 		ocrBaseDir.mkdirs();
 		File gocrXmlFile = new File(getGocrBase(), GOCR_XML);
-//		LOG.debug("gocr >"+gocrXmlFile);
+		LOG.debug("gocr >{}", gocrXmlFile);
 		createGOCRElement(imageFile, gocrXmlFile);
 		svgElement = createSVGElementWithGlyphs(gocrXmlFile, amiOcrTool.isGlyphs());
 		if (replaceList != null && replaceList.size() > 0) {
@@ -421,7 +428,7 @@ private static final String GOCR = "gocr";
 	}
 
 	public void outputGOCR(SVGElement svgElement) {
-		
+
 		File gocrDir = createGocrDir();
 		File svgFile = new File(gocrDir, GOCR_SVG);
 		addOpacity(svgElement, 0.3);
@@ -430,7 +437,7 @@ private static final String GOCR = "gocr";
 
 	private void addOpacity(SVGElement svgElement, double opacity) {
 		List<SVGImage> imageList = SVGImage.extractSelfAndDescendantImages(svgElement);
-		for (SVGImage image :imageList) {
+		for (SVGImage image : imageList) {
 			image.setOpacity(opacity);
 		}
 	}
@@ -446,11 +453,11 @@ private static final String GOCR = "gocr";
 			if (SVGText.TAG.contentEquals(SVGRect.getClassAttributeValue(rect))) {
 				Int2Range boundingBox = rect.createIntBoundingBox();
 				SVGImage svgImage = SVGImage.createSVGSubImage(inputImage, boundingBox);
-				String  filename = boundingBox.toString().replaceAll("(\\(|\\)|\\,)", "_")+".png";
+				String filename = boundingBox.toString().replaceAll("(\\(|\\)|\\,)", "_") + ".png";
 				glyphDir.mkdirs();
 				File glyphFile = new File(glyphDir, filename);
 				ImageUtil.writeImageQuietly(svgImage.getBufferedImage(), glyphFile);
-        				
+
 			}
 		}
 		return glyphFileList;
@@ -459,7 +466,7 @@ private static final String GOCR = "gocr";
 	public void setImageFile(File imageFile) {
 		this.imageFile = imageFile;
 	}
-	
+
 	public void correlateImagesForGlyphs(Multimap<String, CharBox> charBoxByText) {
 		List<String> charList = new ArrayList<String>(charBoxByText.keySet());
 		Collections.sort(charList);
@@ -467,12 +474,14 @@ private static final String GOCR = "gocr";
 			List<CharBox> charBoxList = new ArrayList<CharBox>(charBoxByText.get(s));
 			List<SVGImage> glyphList = getGlyphList(charBoxList);
 			RealSquareMatrix correlation = getGlyphMatrix(glyphList);
-			System.out.println(" "+s+"\n"+correlation);
+			LOG.debug(" {}{}{}", s, System.getProperty("line.separator"), correlation);
 			SVGG g = createCorrelationMap(s, glyphList, correlation);
 			char ch = s.charAt(0);
-			SVGSVG.wrapAndWriteAsSVG(g, new File("target/gocr/correlation_"+ch+"_"+(int)ch+".svg"));
+			SVGSVG.wrapAndWriteAsSVG(g, new File("target/gocr/correlation_" + ch + "_" + (int) ch + ".svg"));
 		}
-	}	private SVGG createCorrelationMap(String s, List<SVGImage> glyphList, RealSquareMatrix correlation) {
+	}
+
+	private SVGG createCorrelationMap(String s, List<SVGImage> glyphList, RealSquareMatrix correlation) {
 		SVGG g = new SVGG();
 		int dx = 20;
 		int dy = 20;
@@ -492,7 +501,7 @@ private static final String GOCR = "gocr";
 				}
 				Real2 deltaCofG = new Real2(ImageUtil.deltaCofG(imagei.getBufferedImage(), imagej.getBufferedImage()));
 				double cc = correlation.elementAt(new Int2(irow, jcol));
-				Real2 xy = new Real2((double)x, (double)y);
+				Real2 xy = new Real2((double) x, (double) y);
 				SVGText text = new SVGText(xy, String.valueOf(cc));
 				double fontSize = 7.;
 				text.setFontSize(fontSize);
@@ -513,10 +522,11 @@ private static final String GOCR = "gocr";
 		return g;
 	}
 
-	/** list of paired characters to substitute.
-	 * a b c d 
+	/**
+	 * list of paired characters to substitute.
+	 * a b c d
 	 * replaces a by b, c with d ...
-	 * 
+	 *
 	 * @param replaceList
 	 */
 	public void setReplaceList(List<String> replaceList) {
@@ -524,14 +534,14 @@ private static final String GOCR = "gocr";
 			replaceList = new ArrayList<>();
 		}
 		if (replaceList.size() % 2 != 0) {
-			throw new RuntimeException("raplaceList must have even numbers of characters: "+replaceList);
+			throw new RuntimeException("replaceList must have even numbers of characters: " + replaceList);
 		}
 		this.replaceList = replaceList;
 		this.replaceMap = ArrayListMultimap.create();
 		for (int i = 0; i < replaceList.size(); i += 2) {
 			replaceMap.put(replaceList.get(i), replaceList.get(i + 1));
 		}
-		System.out.println("replacements: "+replaceMap);
+		LOG.info("replacements: {}", replaceMap);
 	}
 
 	public void processGOCR(File processedImageDir) {
@@ -541,14 +551,14 @@ private static final String GOCR = "gocr";
 		TextLineAnalyzer textLineAnalyzer = createMaps(gocrSvgElement);
 		File gocrTextFile = AMIOCRTool.makeOcrOutputFilename(processedImageDir, amiOcrTool.getInputBasename(), AMIOCRTool.GOCR, CTree.TXT);
 		textLineAnalyzer.outputText(gocrTextFile);
-		
+
 		CharBoxList gocrCharBoxList = createCharBoxList(gocrSvgElement);
-	//		LOG.debug("cb "+gocrCharBoxList);
+		//		LOG.debug("cb "+gocrCharBoxList);
 		getTextLineAnalyzer().makeTable(0);
-		
+
 		List<SVGImage> gocrImages = SVGImage.extractSelfAndDescendantImages(gocrSvgElement);
 	}
-	
+
 	public File getSVGFile() {
 		return gocrSVGFile;
 	}

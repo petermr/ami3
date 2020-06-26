@@ -69,7 +69,7 @@ private SuperPixelArray leftPageSPA;
 	}
 
 	public void aggregatePixelArrays(File svgFile) {
-		System.out.print(".");
+		System.err.print(".");
 		PageCache pageCache = new PageCache();
 		pageCache.setSvgFile(svgFile);
 		SuperPixelArray superPixelArray = pageCache.createSuperpixelArray();

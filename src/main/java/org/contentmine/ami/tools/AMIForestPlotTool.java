@@ -346,22 +346,19 @@ public enum ForestPlotType {
 
     @Override
 	protected void parseSpecifics() {
-		System.out.println("color of lines      " + color);
-		System.out.println("files to display    " + displayList);
-		System.out.println("min line length     " + minline);
-		System.out.println("min nested rings    " + minNestedRings);
-		System.out.println("radius of contours  " + radius);
-		System.out.println("plot type           " + plotType);
-		System.out.println("use Hocr            " + useHocr);
-		System.out.println("offsets             " + offsets);
-		System.out.println("scaledFilename      " + basename);
-		System.out.println("segment             " + segment);
-		System.out.println("table               " + table);
-		System.out.println("tableType           " + tableTypeList);
-		System.out.println("template            " + templateFilename);
-		System.out.println();
-
-		System.out.println();
+		LOG.info("color of lines      {}", color);
+		LOG.info("files to display    {}", displayList);
+		LOG.info("min line length     {}", minline);
+		LOG.info("min nested rings    {}", minNestedRings);
+		LOG.info("radius of contours  {}", radius);
+		LOG.info("plot type           {}", plotType);
+		LOG.info("use Hocr            {}", useHocr);
+		LOG.info("offsets             {}", offsets);
+		LOG.info("scaledFilename      {}", basename);
+		LOG.info("segment             {}", segment);
+		LOG.info("table               {}", table);
+		LOG.info("tableType           {}", tableTypeList);
+		LOG.info("template            {}", templateFilename);
 	}
 
     @Override
@@ -453,22 +450,21 @@ public enum ForestPlotType {
 		textLineList.splitAtCharacters("[]{}(),<>");
 		for (SVGTextLine textLine : textLineList) {
 			String abb = textLine.getOrCreateTypeAnnotatedString();
-			System.out.println("tl: "+abb+";"+textLine);
+			LOG.debug("tl: {};{}", abb, textLine);
 			List<SVGPhrase> phraseList = textLine.createPhraseList();
 			textLine.annotateWith(phraseListList);
 		}
 		List<String> textLineAbbs = textLineList.getOrCreateTypeAnnotations();
-//		System.out.println("typeLines");
+//		LOG.debug("typeLines");
 		for (String tl : textLineAbbs) {
-			System.out.print(tl);
+			LOG.debug(tl);
 			String lineType = lineTypeByAbbrev.get(tl);
 			if (lineType != null) {
-//				System.out.print(" "+lineType);
-				
+//				LOG.debug(" "+lineType);
+
 			} else {
 				abbrevSet.add(tl);
 			}
-//			System.out.println();
 		}
 		return;
 	}

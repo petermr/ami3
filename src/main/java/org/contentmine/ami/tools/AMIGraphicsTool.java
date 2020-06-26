@@ -23,67 +23,65 @@ import org.contentmine.graphics.svg.cache.ComponentCache;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 
-/** analyses vector graphics
- * 
- * @author pm286
+/**
+ * analyses vector graphics
  *
+ * @author pm286
  */
 
 
-
 @Command(
-name = "graphics",
-description = {
-		"Transforms graphics contents (often from PDF/SVG).",
-		"Much is based on the Cache system."
-})
+		name = "graphics",
+		description = {
+				"Transforms graphics contents (often from PDF/SVG).",
+				"Much is based on the Cache system."
+		})
 public class AMIGraphicsTool extends AbstractAMITool {
 	private static final String FULLTEXT_PAGE_SVG_REGEX = ".*/fulltext\\-page\\.\\d+\\.svg";
 
 	private static final String IMAGE = "graphics";
 
 	private static final Logger LOG = LogManager.getLogger(AMIGraphicsTool.class);
-@Option(names = {"--cache"},
-    		arity = "1..*",
-            description = "caches to use")
-	private List<CacheType> cacheTypeList = new ArrayList<>() ;
+
+	@Option(names = {"--cache"},
+			arity = "1..*",
+			description = "caches to use")
+	private List<CacheType> cacheTypeList = new ArrayList<>();
 
 
-    /** used by some non-picocli calls
-     * obsolete it
-     * @param cProject
-     */
+	/**
+	 * used by some non-picocli calls
+	 * obsolete it
+	 *
+	 * @param cProject
+	 */
 	public AMIGraphicsTool(CProject cProject) {
 		this.cProject = cProject;
 	}
-	
+
 	public AMIGraphicsTool() {
 	}
-	
-    public static void main(String[] args) throws Exception {
-    	new AMIGraphicsTool().runCommands(args);
-    }
 
-    @Override
-	protected void parseSpecifics() {
-    	if (verbosity().length > 0) {
-			System.out.println("caches              " + cacheTypeList);
-    	}
-		System.out.println();
+	public static void main(String[] args) throws Exception {
+		new AMIGraphicsTool().runCommands(args);
 	}
 
+	@Override
+	protected void parseSpecifics() {
+		LOG.info("caches              {}", cacheTypeList);
+	}
 
-    @Override
-    protected void runSpecifics() {
-    	if (processTrees()) { 
-    	} else {
-//			DebugPrint.debugPrint(Level.ERROR, "must give cProject or cTree");
-	    }
-    }
+	@Override
+	protected void runSpecifics() {
+		if (processTrees()) {
+		} else {
+//			LOG.error("must give cProject or cTree");
+		}
+	}
 
 
 	protected boolean processTree() {
-		if (getVerbosityInt() > 0) System.out.println("AMIGraphicsTool processTree");
+		LOG.info("AMIGraphicsTool processTree");
 		runGraphics();
 		return processedTree;
 	}
@@ -92,19 +90,18 @@ public class AMIGraphicsTool extends AbstractAMITool {
 		File svgDir = cTree.getExistingSVGDir();
 		processedTree = false;
 		try {
-			LOG.trace(">>>"+svgDir);
+			LOG.trace(">>>{}", svgDir);
 			if (svgDir != null) {
 				List<Path> filesWithName = Files.walk(Paths.get(svgDir.toString()))
-			            .filter(s -> s.toString().endsWith("."+CTree.SVG))
-			            .filter(s -> s.toString().matches(FULLTEXT_PAGE_SVG_REGEX))
-			            .map(Path::getFileName).sorted().collect(Collectors.toList());
-	
-			    for (Path path : filesWithName) {
+						.filter(s -> s.toString().endsWith("." + CTree.SVG))
+						.filter(s -> s.toString().matches(FULLTEXT_PAGE_SVG_REGEX))
+						.map(Path::getFileName).sorted().collect(Collectors.toList());
+
+				for (Path path : filesWithName) {
 					File file = new File(svgDir, path.toString());
-					System.out.print(" "+path.toString().replaceAll("(fulltext\\-page|\\.svg)", ""));
-			    	displayCaches(file);
-			        
-			    }
+					LOG.warn(" {}", path.toString().replaceAll("(fulltext\\-page|\\.svg)", ""));
+					displayCaches(file);
+				}
 			}
 			processedTree = true;
 		} catch (IOException e) {
@@ -116,17 +113,14 @@ public class AMIGraphicsTool extends AbstractAMITool {
 		ComponentCache componentCache = ComponentCache.readAndCreateComponentCache(svgFile);
 		List<AbstractCache> cacheList = componentCache.getCaches(cacheTypeList);
 		for (AbstractCache cache : cacheList) {
-			File outDir = new File(svgFile.toString().replace(".svg", "").replace("fulltext-",  ""));
+			File outDir = new File(svgFile.toString().replace(".svg", "").replace("fulltext-", ""));
 			outDir.mkdirs();
-			File outSvgFile = new File(outDir, cache.getOrCreateCacheType()+".svg");
-			LOG.trace(cache.getOrCreateCacheType()+"/"+outDir);
+			File outSvgFile = new File(outDir, cache.getOrCreateCacheType() + ".svg");
+			LOG.trace("{}/{}", cache.getOrCreateCacheType(), outDir);
 			SVGElement svgElement = cache.getOrCreateConvertedSVGElement();
 			if (svgElement.getChildElements().size() > 0) {
 				SVGSVG.wrapAndWriteAsSVG(svgElement, outSvgFile);
 			}
 		}
 	}
-
-
-
 }

@@ -198,7 +198,7 @@ public final static String FREQUENCIES = "frequencies";
 		ContentProcessor currentContentProcessor = getOrCreateContentProcessor();
 		ResultsElementList resultsElementList = currentContentProcessor.getOrCreateResultsElementList();
 		if (resultsElementList.size() == 0) {
-			System.out.print("!w");
+			System.err.print("!w"); // TODO progress indicator
 //			LOG.warn("no words to output");
 			return;
 		}

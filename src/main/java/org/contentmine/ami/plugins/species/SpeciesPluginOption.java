@@ -27,8 +27,8 @@ public SpeciesPluginOption() {
 	public void run() {
 		String cmd = "--project "+projectDir+" -i scholarly.html --sp.species --sp.type "+optionString;
 		DefaultArgProcessor.CM_LOG.debug(cmd);
-//		System.out.print("S: "+cmd);
-		System.out.print("SP: "+projectDir);
+//		LOG.warn("S: "+cmd);
+		LOG.warn("SP: "+projectDir);
 		new SpeciesArgProcessor(cmd).runAndOutput();
 	}
 

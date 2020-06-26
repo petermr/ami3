@@ -59,7 +59,7 @@ protected AbstractDownloader downloader;
 		} catch (RuntimeException e) {
 			LOG.error("Cannot parse: "+e);
 		}
-		System.out.print(".");
+		System.err.print("."); // TODO progress util
 		htmlElement = (contentElement == null) ? null : HtmlElement.create(contentElement);
 		return htmlElement;
 	}

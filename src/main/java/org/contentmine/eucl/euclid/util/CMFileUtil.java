@@ -112,13 +112,13 @@ private BiMap<File, File> newFileByOldFile;
 	 * 
 	 * @param forceMake forces return true
 	 * @param fileToBeCreated if null return true as process may create it
-	 * @param debug if true log progress
+	 * @param ignored (was `debug` switch. Ignored now.) // FIXME remove this parameter
 	 * @param existingEarlierFiles if null throw exception
 	 * 
 	 * @return whether file should be "maked"
 	 * @throws RuntimeException if existingEarlierFiles are null
 	 */
-	public static boolean shouldMake(boolean forceMake, File fileToBeCreated, boolean debug, File... existingEarlierFiles) {
+	public static boolean shouldMake(boolean forceMake, File fileToBeCreated, boolean ignored, File... existingEarlierFiles) {
 		if (forceMake) {
 			return true;
 		}
@@ -129,26 +129,26 @@ private BiMap<File, File> newFileByOldFile;
 			LOG.debug("null target file); assume it will be created");
 			return true;
 		}
-		if (debug) LOG.debug("MAKE "+fileToBeCreated+" "+fileToBeCreated.exists()+" from "+existingEarlierFiles);
+		LOG.trace("MAKE {} {} from {}", fileToBeCreated, fileToBeCreated.exists(), existingEarlierFiles);
 		if (!fileToBeCreated.exists()) {
-			if (debug) LOG.debug("Target "+fileToBeCreated+" does not exist");
+			LOG.trace("Target {} does not exist", fileToBeCreated);
 			return true;
 		}
 		if (existingEarlierFiles.length == 1 && existingEarlierFiles[0].equals(fileToBeCreated)) {
-			if (debug) LOG.debug("depends on single file "+fileToBeCreated);
+			LOG.trace("depends on single file {}", fileToBeCreated);
 			return false;
 		}
 			
 		for (File existingFile : existingEarlierFiles) {
 			if (existingFile != null && !existingFile.exists()) {
 				if (FileUtils.isFileNewer(existingFile, fileToBeCreated)) {
-					LOG.debug("exist: "+existingFile.lastModified()+"; new "+fileToBeCreated.lastModified());
-					if (debug) LOG.debug("Target "+existingFile+" newer than "+fileToBeCreated);
+					LOG.debug("exist: {}; new {}", existingFile.lastModified(), fileToBeCreated.lastModified());
+					LOG.trace("Target {} newer than {}", existingFile, fileToBeCreated);
 					return true;
 				}
 			}
 		}
-		if (debug) LOG.debug("Target "+(Arrays.asList(existingEarlierFiles))+" all older than "+fileToBeCreated);
+		LOG.trace("Target {} all older than {}", (Arrays.asList(existingEarlierFiles)), fileToBeCreated);
 		return false;
 	}
 

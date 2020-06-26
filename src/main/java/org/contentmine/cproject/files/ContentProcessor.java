@@ -124,7 +124,7 @@ private static final String OVERWRITE = "overwrite";
 	 * @param resultsDirectoryName
 	 */
 	public List<File> createResultsDirectoriesAndOutputResultsElement(String name) {
-//		System.out.println("createResultsDirectoryAndOutputResultsElement: "+name);
+//		LOG.warn("createResultsDirectoryAndOutputResultsElement: "+name);
 		File optionDirectory = new File(cmTree.getResultsDirectory(), name);
 		List<File> outputDirectoryList = new ArrayList<File>();
 		for (ResultsElement resultsElement : resultsElementList) {
@@ -137,7 +137,7 @@ private static final String OVERWRITE = "overwrite";
 
 	public File createResultsDirectoryAndOutputResultsElement(
 			 String optionName,  ResultsElement resultsElement) {
-//		System.out.println("createResultsDirectoryAndOutputResultsElement: "+optionName);
+//		LOG.warn("createResultsDirectoryAndOutputResultsElement: "+optionName);
 		File optionDirectory = new File(cmTree.getResultsDirectory(), optionName);
 		File outputDirectory = createResultsDirectoryAndOutputResultsElement(optionDirectory, resultsElement);
 		return outputDirectory;
@@ -145,7 +145,7 @@ private static final String OVERWRITE = "overwrite";
 	}
 
 	private File createResultsDirectoryAndOutputResultsElement(File optionDirectory, ResultsElement resultsElement) {
-//		System.out.println("createResultsDirectoryAndOutputResultsElement: dir "+optionDirectory);
+//		LOG.warn("createResultsDirectoryAndOutputResultsElement: dir "+optionDirectory);
 		File resultsSubDirectory = null;
 		String title = resultsElement.getTitle();
 		if (title == null) {

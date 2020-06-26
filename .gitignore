@@ -13,4 +13,7 @@ src/main/resources/org/xmlcml/ami2/plugins/phylotree/taxdump/
 izpackhelp.txt
 .idea
 *.iml
+logs/
+logs/*
+
 

@@ -70,8 +70,7 @@ public class AMIGrobidTool extends AbstractAMITool {
 
 	@Override
 	protected void parseSpecifics() {
-		System.out.println("grobidOptions            " + grobidOptions);
-		System.out.println();
+		LOG.info("grobidOptions            {}", grobidOptions);
 	}
 
 
@@ -85,7 +84,7 @@ public class AMIGrobidTool extends AbstractAMITool {
 
 	protected boolean processTree() {
 //		this.cTree = cTree;
-		System.out.println("\n" + "grobid CTree: " + cTree.getName());
+		LOG.warn("\n" + "grobid CTree: " + cTree.getName());
 		processedTree = false;
 		try {
 			runGrobid();
@@ -123,7 +122,7 @@ public class AMIGrobidTool extends AbstractAMITool {
 				try {
 					XMLUtil.debug(html, outputFile, 1);
 				} catch (IOException e) {
-					System.err.println("Cannot write Html from TEI");
+					LOG.error("Cannot write Html from TEI", e);
 				}
 			}
 		}

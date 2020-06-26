@@ -179,7 +179,7 @@ private enum LuceneOperation {
     }
 
 	protected boolean processTree() {
-		System.out.println("Not yet implemented; may not be rekevant");
+		LOG.warn("Not yet implemented; may not be rekevant");
 		return true;
 	}
 
@@ -188,7 +188,7 @@ private enum LuceneOperation {
 			throw new RuntimeException("Cannot read input: " + inputPath);
 		}
         try {
-            System.out.println("Indexing to directory '" + luceneIndexPath + "'...");
+			LOG.warn("Indexing to directory '" + luceneIndexPath + "'...");
             createOrAppendIndex(update ? OpenMode.CREATE : OpenMode.CREATE_OR_APPEND);
     
         } catch (IOException e) {
@@ -201,7 +201,7 @@ private enum LuceneOperation {
 			throw new RuntimeException("Cannot read index: " + luceneIndexPath);
 		}
         try {
-            System.out.println("Indexing to directory '" + luceneIndexPath + "'...");
+			LOG.warn("Indexing to directory '" + luceneIndexPath + "'...");
             createOrAppendIndex(OpenMode.CREATE_OR_APPEND);
 
         } catch (IOException e) {
@@ -214,7 +214,7 @@ private enum LuceneOperation {
 		try {
 			List<Element> results = LuceneUtils.searchForDocument(searcher, query);
 			for (Element result : results) {
-				System.out.println("result: "+result.toXML());
+				LOG.warn("result: "+result.toXML());
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -236,7 +236,7 @@ private enum LuceneOperation {
 	        for (IndexableField field : fields) {
 	            // use these to get field-related data:
 	            IndexableFieldType fieldType = field.fieldType();
-				System.out.println("field: " + field.name()+" | "+fieldType.toString());
+				LOG.warn("field: " + field.name()+" | "+fieldType.toString());
 	        }
 	    }
     }
@@ -246,7 +246,7 @@ private enum LuceneOperation {
           IndexSearcher searcher = getIndexSearcher();
     	  
  		  int numDocs = indexReader.numDocs();
-    	  System.out.println("n "+numDocs);
+		  LOG.warn("n "+numDocs);
     	  List<String> fields = Arrays.asList(new String[] {"id", "path", "contents"});
     	  for (String field : fields) {
 	    	  try {
@@ -267,8 +267,8 @@ private enum LuceneOperation {
     	  } catch (Exception e) {
     		  throw new RuntimeException("cannot create hits", e);
     	  }
-  		
-  		System.out.println("fields "+doc1.getFields());
+
+		  LOG.warn("fields "+doc1.getFields());
   		for (int i = 0; i < hits.length; i++) {
   	
   			Document doc;
@@ -282,7 +282,7 @@ private enum LuceneOperation {
   			String title = doc.get("title");
   			String modified = doc.get("modified");
   			String contents = doc.get("contents");
-  			System.out.println(path+" | " + title + " | " + contents + " | " + modified);
+			LOG.warn(path+" | " + title + " | " + contents + " | " + modified);
   		}
 
       }
@@ -305,10 +305,9 @@ private enum LuceneOperation {
 
 	private void summarizeFields(IndexReader indexReader, String field) throws IOException {
 
-		System.out.println("DOCS for " + field + " " + indexReader.getDocCount(field));
-		System.out.println("LEAVES for " + field + " " + indexReader.leaves());
-		System.out.println("freq "+indexReader.getSumDocFreq(field));
-		   
+		LOG.warn("DOCS for " + field + " " + indexReader.getDocCount(field));
+		LOG.warn("LEAVES for " + field + " " + indexReader.leaves());
+		LOG.warn("freq "+indexReader.getSumDocFreq(field));
 	}
 	
 	private void createOrAppendIndex(OpenMode openMode) throws IOException {
@@ -325,7 +324,7 @@ private enum LuceneOperation {
 	private boolean canRead(String type, Path path) {
 		boolean readable = true;
 		if (!Files.isReadable(path)) {
-            System.out.println(type + " directory '" +path+ "' does"
+            LOG.warn(type + " directory '" +path+ "' does"
           		+ " not exist or is not readable");
             readable = false;
         }

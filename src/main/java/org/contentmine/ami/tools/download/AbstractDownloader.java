@@ -141,7 +141,7 @@ public static final String CITATION_PDF_URL = "citation_pdf_url";
 			String doi = metadataEntry.getCleanedDOIFromURL();
 			addMetadataToCTree(entryElement, doi);
 		}
-		System.out.println("metadataEntries "+metadataEntryList.size());
+		LOG.warn("metadataEntries {}", metadataEntryList.size());
 		hitList = new HitList(metadataEntryList);
 		return hitList;
 	}

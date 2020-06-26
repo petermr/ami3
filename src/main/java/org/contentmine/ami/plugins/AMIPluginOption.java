@@ -213,7 +213,7 @@ String cmd0 ="	--project /Users/pm286/workspace/cmdev/normami/target/cooccurrenc
 				+ " --dffile "+createDocumentCountFilename(option)
 				;
 		DefaultArgProcessor.CM_LOG.debug("runMatchSummaryAndCount: "+cmd);
-//		System.out.print("C: "+option+"; ");
+//		LOG.warn("C: "+option+"; ");
 		new DefaultArgProcessor(cmd).runAndOutput();
 //		LOG.debug("end summary "+option);
 		return;

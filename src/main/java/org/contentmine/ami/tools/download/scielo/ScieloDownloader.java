@@ -67,7 +67,7 @@ public static final String SCIELO_HOST = "www.scielo.org";
 		
 		if (ulList.size() == 0) {
 			LOG.debug(element.toXML());
-			System.err.println("empty array");
+			LOG.info("empty array");
 			return new HitList();
 		}
 		Element ul = ulList.get(0);

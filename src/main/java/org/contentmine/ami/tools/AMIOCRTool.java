@@ -212,20 +212,19 @@ public class AMIOCRTool extends AbstractAMITool implements HasImageDir {
 
     @Override
 	protected void parseSpecifics() {
-		System.out.println("disambiguate        " + disambiguate);
-		System.out.println("extractlines        " + extractLines);
-		System.out.println("glyphs              " + glyphs);
-		System.out.println("gocr                " + gocrPath);
-		System.out.println("html                " + outputHtml);
-		System.out.println("maxsize             " + maxsize);
-		System.out.println("mergeNames          " + mergeNames);
-//		System.out.println("mergeBoxes          " + mergeBoxes);
-		System.out.println("replace             " + replaceList);
-		System.out.println("scale               " + applyScale);
-		System.out.println("scalefactor         " + scalefactor);
-		System.out.println("scaledFilename      " + basename);
-		System.out.println("tesseractPath       " + tesseractPath);
-		System.out.println();
+		LOG.info("disambiguate        {}", disambiguate);
+		LOG.info("extractlines        {}", extractLines);
+		LOG.info("glyphs              {}", glyphs);
+		LOG.info("gocr                {}", gocrPath);
+		LOG.info("html                {}", outputHtml);
+		LOG.info("maxsize             {}", maxsize);
+		LOG.info("mergeNames          {}", mergeNames);
+//		LOG.info("mergeBoxes          {}", mergeBoxes);
+		LOG.info("replace             {}", replaceList);
+		LOG.info("scale               {}", applyScale);
+		LOG.info("scalefactor         {}", scalefactor);
+		LOG.info("scaledFilename      {}", basename);
+		LOG.info("tesseractPath       {}", tesseractPath);
 	}
 
 
@@ -248,16 +247,16 @@ public class AMIOCRTool extends AbstractAMITool implements HasImageDir {
 	 * @param imageFile
 	 */
 	void runOCR(File imageFile) {
-//		System.out.println("image file "+imageFile.getParentFile().getName()+"/"+imageFile.getName());
+//		LOG.info("image file "+imageFile.getParentFile().getName()+"/"+imageFile.getName());
 		
 		this.imageFile = imageFile;
 		basename = FilenameUtils.getBaseName(imageFile.toString());
 		newbasename = FilenameUtils.getBaseName(imageFile.getParentFile().toString());
 		if (!imageFile.exists()) { 
-			System.err.println("image file does not exist "+newbasename);
+			LOG.warn("image file does not exist {}", newbasename);
 			return;
 		}
-		System.out.println(">"+newbasename+"/"+basename+">");
+		LOG.warn(">{}/{}>", newbasename, basename);
 		imageDir = imageFile.getParentFile();
 		if (gocrPath != null) {
 			GOCRConverter gocrConverter = new GOCRConverter(this);

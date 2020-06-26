@@ -21,7 +21,7 @@ private HtmlHead preloadHead;
 
 	public FullFileManager(AbstractDownloader abstractDownloader) {
 		super(abstractDownloader);
-		System.out.println("formats "+abstractDownloader.getDownloadTool().getFulltextFormats());
+		LOG.warn("formats "+abstractDownloader.getDownloadTool().getFulltextFormats());
 	}
 	
 	/** ENTRY POINT */

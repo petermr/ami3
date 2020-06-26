@@ -104,7 +104,7 @@ public static final String WIKIDATA = "wikidata";
 			} else {
 				item = qpString;
 			}
-//			System.out.println("WIKICHARS "+chars(a)+a.toXML());
+//			LOG.warn("WIKICHARS "+chars(a)+a.toXML());
 			title = a.getTitle();
 			int idx = title.indexOf("|");
 			label = idx == -1 ? "" : title.substring(0, idx).trim();

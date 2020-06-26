@@ -105,11 +105,17 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 	}
 
 	protected void printGenericHeader() {
-		AMIUtil.printHeader(this, System.out, "Generic");
+		printHeader(this, System.out, "Generic");
 	}
 
 	protected void printSpecificHeader() {
-		AMIUtil.printHeader(this, System.out, "Specific");
+		printHeader(this, System.out, "Specific");
+	}
+
+	private static void printHeader(Object obj, PrintStream stream, String type) {
+		stream.println();
+		stream.println(type + " values (" + obj.getClass().getSimpleName() + ")");
+		stream.println("================================");
 	}
 
 	/** override */
@@ -500,7 +506,7 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 		for (File file : files) {
 			String filename = file.toString();
 			if (XML.equals(FilenameUtils.getExtension(filename))) {
-				System.out.println("       <"+FilenameUtils.getName(file.toString())+">");
+				LOG.warn("       <"+FilenameUtils.getName(file.toString())+">");
 				newFiles.add(file);
 			} else if (file.isDirectory()) {
 				System.out.println("\n[dir "+file+"]\n");
@@ -567,8 +573,7 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 				}
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
-			System.err.println("Cannot add entry: "+e.getMessage());
+			LOG.error("Cannot add entry: {}, ", e.getMessage(), e);
 		}
 	}
 
@@ -578,11 +583,11 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 			wikipediaPage = addWikipedia(entry);
 		}
 		if (wikipediaPage == null) {
-			System.err.print("!WP");
+			System.err.print("!WP"); // TODO progress indicator
 			missingWikipediaSet.add(term);
 		} else {
 			entry.addAttribute(new Attribute(WIKIPEDIA, term));
-			System.out.print(".");
+			System.err.print("."); // TODO progress indicator
 		}
 		return wikipediaPage;
 	}
@@ -602,7 +607,7 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 				wikipediaPage = element == null ? null : HtmlElement.create(element);
 			}
 		} catch (RuntimeException e) {
-			System.err.println("cannot parse "+wikipediaUrl);
+			LOG.error("cannot parse "+wikipediaUrl);
 			throw e;
 		} catch (MalformedURLException e) {
 			throw new RuntimeException("bad URL ", e);

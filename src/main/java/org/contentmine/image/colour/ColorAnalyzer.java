@@ -408,9 +408,9 @@ public ColorAnalyzer setSaturate(boolean saturate) {
 	/** very slow */
 	private void createPixelListsFromColorValues() {
 		pixelListList = new ArrayList<PixelList>();
-		System.out.println("colours: "+colorValues.size());
+		LOG.info("colours: "+colorValues.size());
 		for (int i = 0; i < colorValues.size(); i++) {
-			/*if (i % 100 == 0 )*/ System.out.print(".");
+			/*if (i % 100 == 0 )*/ System.err.print("."); // TODO progress indicator
 			int colorValue = colorValues.elementAt(i);
 			int colorCount = colorCounts.elementAt(i);
 			String hex = Integer.toHexString(colorValue);
@@ -687,7 +687,7 @@ public ColorAnalyzer setSaturate(boolean saturate) {
 		int b = rgb & 0xFF;
 //		int rgbnew = ImageUtil.setRgb(r, g, b);
 //		if(rgb != rgbnew) {
-//			System.out.println(Integer.toHexString(rgb)+" != "+Integer.toHexString(rgbnew));
+//			LOG.info(Integer.toHexString(rgb)+" != "+Integer.toHexString(rgbnew));
 //		}
 		ColorHsv.rgbToHsv(r, g, b, hsv);
 		float[] rgbf = new float[3];
@@ -747,7 +747,7 @@ public ColorAnalyzer setSaturate(boolean saturate) {
 				ColorHsv.hsvToRgb(hsvpoint[0], hsvpoint[1], hsvpoint[2], rgbf);
 				int rgbnew = ImageUtil.setRgb(rgbf);
 				if (rgb != rgbnew) {
-//					System.out.println(Integer.toHexString(rgb)+" "+Integer.toHexString(rgbnew));
+//					LOG.info(Integer.toHexString(rgb)+" "+Integer.toHexString(rgbnew));
 				}
 				saturateImage.setRGB(x, y, rgbnew);
 			}
@@ -812,7 +812,7 @@ public ColorAnalyzer setSaturate(boolean saturate) {
 			String hex = color.getHex().replaceAll("#", "");
 			Integer count = colorFrequencies.get(color);
 			if (count > minPixels) {
-				System.out.println("Freq: "+hex+": "+count);
+				LOG.info("Freq: "+hex+": "+count);
 				BufferedImage image = getImage(color);
 				File hexFile = new File(outdir, CHANNEL+"."+hex+".png");
 				ImageIOUtil.writeImageQuietly(image, hexFile);

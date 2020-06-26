@@ -48,7 +48,7 @@ protected static final String ARTICLE = "article";
 	}
 
 	protected void hitListErrorMessage() {
-		System.err.println("Cannot find metadata list: "+getHitListXPath());
+		LOG.warn("Cannot find metadata list: "+getHitListXPath());
 	}
 
 	@Override
@@ -73,7 +73,7 @@ protected static final String ARTICLE = "article";
 		
 		if (ulList.size() == 0) {
 			LOG.debug(element.toXML());
-			System.err.println("empty array");
+			LOG.warn("empty array");
 			return new HitList();
 		}
 		Element ul = ulList.get(0);

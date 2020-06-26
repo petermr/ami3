@@ -137,14 +137,13 @@ public static final int INCONSISTENT_FOOTER = -2;
 
     @Override
 	protected void parseSpecifics() {
-		System.out.println("multisetList         " + multisetList);
-		System.out.println("summaryTable         " + summaryTableName);
-		System.out.println("tableDirName         " + tableDirName);
-		System.out.println("templateFile         " + templateFile);
-		System.out.println("templateName         " + templateName);
-		System.out.println();
+		LOG.info("multisetList         {}", multisetList);
+		LOG.info("summaryTable         {}", summaryTableName);
+		LOG.info("tableDirName         {}", tableDirName);
+		LOG.info("templateFile         {}", templateFile);
+		LOG.info("templateName         {}", templateName);
 		if (tableDirName == null) {
-			System.err.println("must have tableDirname");
+			LOG.error("must have tableDirname");
 		}
 
 	} 
@@ -208,7 +207,7 @@ public static final int INCONSISTENT_FOOTER = -2;
 		}
 		tableDir = new File(cTree.getDirectory(), tableDirName);
 		if (!tableDir.exists()) {
-			System.err.println("table dir does not exist: "+tableDir);
+			LOG.warn("table dir does not exist: "+tableDir);
 			processedTree = false;
 			return processedTree;
 		}
@@ -386,7 +385,7 @@ public static final int INCONSISTENT_FOOTER = -2;
 				IOUtils.write(sb.toString(), fos);
 				fos.close();
 			} catch (Exception e) {
-				System.err.println("cannot write multiset: "+e);
+				LOG.error("cannot write multiset: {}", e);
 			}
 		}
 	}

@@ -174,7 +174,7 @@ public abstract class SVGPathPrimitive {
 	}
 
 	public void setFirstPoint(Real2 lastPoint) {
-//		System.out.println("avoid calling this?");
+//		LOG.warn("avoid calling this?");
 		this.zerothCoord = lastPoint;
 	}
 	

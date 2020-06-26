@@ -53,7 +53,7 @@ public class DictionarySearchTool extends AbstractAMIDictTool {
 	public void runSub() {
 		if (parent.getDirectory() != null) {
 			List<File> fileList = collectDictionaryFiles(parent.getDirectory());
-//			System.out.println("files> "+fileList.size());
+//			LOG.warn("files> "+fileList.size());
 			foundTerms = new HashSet<>();
 			for (File file : fileList) {
 				searchDictionaryForTerms(file);
@@ -74,7 +74,7 @@ public class DictionarySearchTool extends AbstractAMIDictTool {
 			} else if (searchTermFilenames != null) {
 				foundTerms.addAll(amiDictionary.searchTermsInFiles(searchTermFilenames));	
 			}
-//			System.out.println("\nfound "+foundTerms.size());
+//			LOG.warn("\nfound "+foundTerms.size());
 		}
 	}
 

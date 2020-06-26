@@ -13,10 +13,10 @@ import com.google.common.collect.Multimap;
 public class RISEntry {
 
 	public static final Logger LOG = LogManager.getLogger(RISEntry.class);
-private static final String AB = "AB";
+	private static final String AB = "AB";
 	private static final String ER = "ER";
 	public static final String TY = "TY";
-	
+
 	public final static String START_DASH_SPACE = "^[A-Z][A-Z][A-Z ][A-Z ]\\- .*"; // PMID breaks the rules, this covers it
 	public final static String DASH_SPACE = "- "; // PMID breaks the rules, this covers it
 	public static final String PMID = "PMID";
@@ -26,19 +26,19 @@ private static final String AB = "AB";
 	private boolean canAdd;
 	private List<String> fieldList;
 	String abstractx;
-	
+
 	public RISEntry() {
 		canAdd = true;
 		fieldList = new ArrayList<String>();
 	}
-	
+
 	public String getType() {
 		return type;
 	}
 
 	public String addLine(String line) {
 		if (!canAdd) {
-			System.err.println("Cannot add line: "+line);
+			LOG.warn("Cannot add line: " + line);
 		}
 		String field = null;
 		if (line.matches(START_DASH_SPACE)) {
@@ -61,12 +61,12 @@ private static final String AB = "AB";
 			String v = line.trim();
 			if (canAdd) {
 				if (currentValue != null) {
-					currentValue.append(" "+v);
+					currentValue.append(" " + v);
 				} else {
-					System.err.println("Cannot add "+line);
+					LOG.warn("Cannot add {}", line);
 				}
 			} else {
-				System.err.println("Cannot add: "+line);
+				LOG.warn("Cannot add: {}", line);
 			}
 		}
 		return field;
@@ -76,11 +76,11 @@ private static final String AB = "AB";
 		if (!RISParser.FIELD_MAP.containsKey(field)) {
 			if (!RISParser.UNKNOWN_KEYS.contains(field)) {
 				RISParser.addUnknownKey(field);
-				LOG.trace("Unknown Key: "+field);
+				LOG.trace("Unknown Key: {}", field);
 			}
 		}
 	}
-	
+
 	public HtmlDiv createAbstractHtml() {
 		List<StringBuilder> abstracts = new ArrayList<StringBuilder>(valuesByField.get(AB));
 		HtmlDiv abstractDiv = null;
@@ -89,21 +89,21 @@ private static final String AB = "AB";
 			BiblioAbstractAnalyzer abstractAnalyzer = new BiblioAbstractAnalyzer();
 			abstractDiv = abstractAnalyzer.createAndAnalyzeSections(abstractx);
 		}
-		
+
 		return abstractDiv;
 	}
 
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		for (String key : fieldList) {
-			sb.append(key+": ");
+			sb.append(key + ": ");
 			List<StringBuilder> values = new ArrayList<StringBuilder>(valuesByField.get(key));
 			if (values.size() == 1) {
-				sb.append(values.get(0).toString()+"\n");
+				sb.append(values.get(0).toString() + "\n");
 			} else {
 				sb.append("\n");
 				for (StringBuilder sb0 : values) {
-					sb.append("    "+sb0.toString()+"\n");
+					sb.append("    " + sb0.toString() + "\n");
 				}
 			}
 		}

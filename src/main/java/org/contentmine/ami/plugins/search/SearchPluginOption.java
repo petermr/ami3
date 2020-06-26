@@ -50,12 +50,12 @@ public static final String TAG = "search";
 		String sw = getOptionFlagString("w.stopwords", " ");
 		commandStringBuilder.append(sw);
 		LOG.debug("WORD "+commandStringBuilder);
-		//System.out.print("WS: "+projectDir+"  ");
+		//LOG.warn("WS: "+projectDir+"  ");
 		String commandString = commandStringBuilder.toString();
 		WordArgProcessor argProcessor = new WordArgProcessor(commandString);
 		argProcessor.setDebug(true);
 		argProcessor.runAndOutput();
-//		System.out.println("running command second time? "+commandString);
+//		LOG.warn("running command second time? "+commandString);
 //		new WordArgProcessor(commandString).runAndOutput();
 		return;
 

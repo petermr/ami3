@@ -227,9 +227,8 @@ public enum SearchSite {
     		output("scraped/");
     		LOG.info("set output to: " + output());
     	}
-//		System.out.println("fileformats     " + rawFileFormats);
-		System.out.println("project         " + cProject);
-		System.out.println();
+//		LOG.warn("fileformats     " + rawFileFormats);
+		LOG.info("project         " + cProject);
 		return true;
 	}
 
@@ -240,17 +239,16 @@ public enum SearchSite {
 			limit = pageList.size() * pagesize;
 		}
 		normalizePageList();
-//		System.out.println("landingPage        " + landingPage);
-		System.out.println("fulltext           " + fulltextFormats);
-		System.out.println("limit              " + limit);
-		System.out.println("metadata           " + metadata);
-		System.out.println("pages              " + pageList);
-		System.out.println("pagesize           " + pagesize);
-		System.out.println("query              " + queryList);
-		System.out.println("hitListList      " + hitListList);
-		System.out.println("site               " + site);
-		System.out.println("file types          " + rawFileFormats);
-		System.out.println();
+//		LOG.info("landingPage        " + landingPage);
+		LOG.info("fulltext           {}", fulltextFormats);
+		LOG.info("limit              {}", limit);
+		LOG.info("metadata           {}", metadata);
+		LOG.info("pages              {}", pageList);
+		LOG.info("pagesize           {}", pagesize);
+		LOG.info("query              {}", queryList);
+		LOG.info("hitListList        {}", hitListList);
+		LOG.info("site               {}", site);
+		LOG.info("file types         {}", rawFileFormats);
 	}
 
     @Override
@@ -261,7 +259,7 @@ public enum SearchSite {
 		QueryManager queryManager = downloader.getOrCreateQueryManager();
 		hitListList = queryManager.searchAndDownloadHitList();
 		int size = hitListList.size();
-		System.out.println(""
+		LOG.warn(""
 				+ "  ========\nHitList: "+size+""
 				+ "\n creates hitList[1.."+size+"][.clean].html"
 				+ "\n and <per-ctree>/scrapedMetadata.html"
@@ -270,19 +268,19 @@ public enum SearchSite {
 		LandingPageManager landingPageManager = downloader.getOrCreateLandingPageManager();
 		landingPageManager.downloadLandingPages();
 		
-		System.out.println("========\nadds LandingPages: "+landingPageManager.size()+"\n========");
+		LOG.warn("========\nadds LandingPages: "+landingPageManager.size()+"\n========");
 		
 		FulltextManager fulltextManager = downloader.getOrCreateFulltextManager();
 		fulltextManager.downloadFullTextAndRelatedFilesFromLandingPages();
-//		System.out.println("========\nFulltext: "+fulltextManager+"\n========");
-		System.out.println("========\nFulltext: "+"finished"+"\n========");
+//		LOG.warn("========\nFulltext: "+fulltextManager+"\n========");
+		LOG.warn("========\nFulltext: "+"finished"+"\n========");
 		
 		boolean downloadHtml = false;
 		if (downloadHtml) {
 			List<AbstractMetadataEntry> metadataEntryList = downloader.getMetadataEntryList();
 			FullFileManager fullFileManager = downloader.getOrCreateFullFileManager();
 			fullFileManager.downloadHtmlPages(metadataEntryList);
-			System.out.println("========\nFullfile / metadata: "+metadataEntryList.size()+"\n========");
+			LOG.warn("========\nFullfile / metadata: "+metadataEntryList.size()+"\n========");
 		}
     }
 
@@ -315,11 +313,11 @@ public enum SearchSite {
 		// first page <= 0, set to 1
 		if (pageList.get(0) <= 0) {
 			pageList.set(0,  1);
-			System.err.println("page list must start from >= 1");
+			LOG.warn("page list must start from >= 1");
 		}
 		// upper limit less than start, set to start
 		if (pageList.get(1) < pageList.get(0)) {
-			System.err.println("page list out of order: "+pageList);
+			LOG.warn("page list out of order: "+pageList);
 			pageList.set(1, pageList.get(0));
 		}
 	}

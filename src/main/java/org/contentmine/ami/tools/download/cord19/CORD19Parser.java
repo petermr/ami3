@@ -111,7 +111,7 @@ int level = 0;
 	
 	private void printLevel(String string) {
 		int l2 = level * 4;
-		System.out.println(Util.spaces(l2) + string);
+		LOG.debug(Util.spaces(l2) + string);
 		
 	}
 

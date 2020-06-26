@@ -54,7 +54,7 @@ private static final String HTTP_DOI_ORG_API_HANDLES = "http://doi.org/api/handl
 			if (urlString != null) {
 				urlStrings.add(urlString);
 			}
-			if (i++ % 10 == 0) System.out.print(".");
+			if (i++ % 10 == 0) System.err.print("."); // TODO progress indicator
 		}
 		return urlStrings;
 	}

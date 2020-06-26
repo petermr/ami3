@@ -100,7 +100,7 @@ public enum Tidier {
 		
 //		NormaArgProcessor argProcessor = new NormaArgProcessor();
 //		NormaTransformer normaTransformer = new NormaTransformer(argProcessor);
-//		System.out.println("cTree: "+cTree.getName());
+//		LOG.warn("cTree: "+cTree.getName());
 	}
 	
 	private void runNorma() {
@@ -118,7 +118,7 @@ public enum Tidier {
 	
 	private void runTidy() {
 		Document doc = null;
-		System.out.println("reading " + input());
+		LOG.warn("reading " + input());
 		try {
 //			doc = Jsoup.connect("https://en.wikipedia.org/").get();
 			doc = Jsoup.connect(input()).get();
@@ -126,10 +126,10 @@ public enum Tidier {
 			e.printStackTrace();
 			return;
 		}
-		System.out.println("D "+doc.title());
+		LOG.warn("D "+doc.title());
 		Elements newsHeadlines = doc.select("#mp-itn b a");
 		for (Element headline : newsHeadlines) {
-		  System.out.println("%s\n\t%s" + 
+			LOG.warn("%s\n\t%s" +
 		    headline.attr("title") + headline.absUrl("href"));
 		}	
 	}

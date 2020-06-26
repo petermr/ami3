@@ -104,7 +104,7 @@ public class AMI implements Runnable {
 		if (args != null) {
 			main(args.trim().split("\\s+"));
 		} else {
-			System.err.println("null args");
+			LOG.error("null args - no action");
 		}
 	}
 
@@ -355,10 +355,4 @@ public class AMI implements Runnable {
 					: spec.exitCodeOnInvalidInput();
 		}
 	}
-
-	public final static void printNameValue(String name, Object value) {
-		System.out.println((name + "                 ").substring(0, 25) + value);
-	}
-
-
 }

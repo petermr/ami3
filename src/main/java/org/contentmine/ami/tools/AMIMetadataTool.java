@@ -220,16 +220,13 @@ public class AMIMetadataTool extends AbstractAMITool {
 
     @Override
 	protected boolean parseGenerics() {
-		System.out.println("project         " + cProject);
-		System.out.println("tree            " + cTree);
-		System.out.println();
+		LOG.info("project         " + cProject);
 		return true;
 	}
 
     @Override
 	protected void parseSpecifics() {
-		System.out.println("meta            " + metaList);
-		System.out.println();
+		LOG.info("meta            " + metaList);
 	}
     
     @Override
@@ -239,9 +236,9 @@ public class AMIMetadataTool extends AbstractAMITool {
 
 	private void runTools() {
 		if (metaList.size() == 0) {
-			System.out.println("enum "+Arrays.asList(HtmlMetadataScheme.values()));
+			LOG.warn("enum "+Arrays.asList(HtmlMetadataScheme.values()));
 		} else {
-			metaList.forEach(System.out::println);
+			metaList.forEach(LOG::warn);
 		}
 	}
 

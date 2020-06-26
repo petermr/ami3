@@ -53,14 +53,14 @@ private File metadataDir;
 	 */
 		List<Integer> pageList = downloadTool.getPageList();
 		String url = downloadTool.getSite().getSite() + this.createQuery(downloadTool.getQueryList()); // testing
-		System.out.println("URL "+url);
+		LOG.info("URL {}", url);
 		metadataDir = abstractDownloader.cProject.getOrCreateExistingMetadataDir();
 		if (metadataDir == null) {
 			throw new RuntimeException("no output directory");
 		}
 		metadataDir.mkdirs();
 		if (pageList.get(0).equals(0)) {
-			System.out.println("No pages required");
+			LOG.info("No pages required");
 			return new ArrayList<>();
 		}
 		int pagesize = abstractDownloader.getDownloadTool().getPageSize();
@@ -77,24 +77,24 @@ private File metadataDir;
 				int size = hitList.size();
 				totalHits += size;
 			} catch (IOException e) {
-				LOG.error("Could not download hitpages: " + page, e);
+				LOG.error("Could not download hitpages: {}", page, e);
 				continue;
 			}
 			if (hitList.size() < pagesize) {
-				System.out.println("page hits (" + hitList.size() + ") less than page size (" + pagesize + ") ; assumed termination");
+				LOG.warn("page hits ({}) less than page size ({}) ; assumed termination", hitList.size(), pagesize);
 				break;
 				
 			}
 			if (totalHits >= downloadLimit) {
-				System.out.println("total hits (" + totalHits + ") exceeds limit (" + downloadLimit + ")");
+				LOG.warn("total hits ({}) exceeds limit ({})", totalHits, downloadLimit);
 				break;
 			}
 			if (hitList.equals(lastHitList)) {
-				System.out.println("repeated hitList (== previous), break");
+				LOG.warn("repeated hitList (== previous), break");
 				break;
 			}
 			if (hitList.equals(firstHitList)) {
-				System.out.println("repeated hitList (== first), break");
+				LOG.warn("repeated hitList (== first), break");
 				break;
 			}
 			lastHitList = hitList;

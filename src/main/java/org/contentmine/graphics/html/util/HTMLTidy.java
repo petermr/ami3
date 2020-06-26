@@ -140,7 +140,7 @@ public class HTMLTidy {
 //		while (true) { // debug
 //			idx = content.indexOf(tag, idx + 1);
 //			if (idx == -1) break;
-//			System.err.println("?"+tag+"?"+idx+"?"+content.substring(idx-10, idx+10));
+//			LOG.warn("?"+tag+"?"+idx+"?"+content.substring(idx-10, idx+10));
 //		}
 		// start tag - may have attributes and spaces
 		String content1 = content.replaceAll("<\\s*" + tag + "[^>]*>", "<span class='" + tag + "'>"); // <xyz: ... />

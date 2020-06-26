@@ -396,7 +396,7 @@ species of bird
 				htmlElement = (HtmlHtml) HtmlUtil.readTidyAndCreateElement(htmlS);
 	//			htmlElement = (HtmlHtml) new HtmlFactory().parse(XMLUtil.parseXML(htmlS));
 			} else {
-//				System.err.println("Reading from "+url);
+//				LOG.warn("Reading from "+url);
 				InputStream is = url.openStream();
 				htmlElement = null;
 				htmlElement = (HtmlHtml) HtmlUtil.readTidyAndCreateElement(is);
@@ -438,7 +438,7 @@ species of bird
 		if (outputQuery) {
 			String filename = query.replaceAll("\\s+", "_");
 			File file = new File("target/wikipedia/query/" + filename + ".html");
-			System.out.println("wrote query result (" + query + ") "+file);
+			LOG.warn("wrote query result ({}) {}", query, file);
 			XMLUtil.writeQuietly(htmlBody, file, 1);
 		}
 		/**

@@ -108,13 +108,13 @@ public class ImageMomentGenerator {
 	 * 
 	 */
 	public void printMoments(double[][] moment, String title) {
-		System.out.println(title);
+		LOG.warn(title);
 		for (int i = 0; i <= PMAX; i++) {
-			System.out.print(i+": ");
+			LOG.warn(i+": ");
 			for (int j = 0; j <= QMAX; j++) {
-				System.out.print((long)moment[i][j]+ " ");
+				LOG.warn((long)moment[i][j]+ " ");
 			}
-			System.out.println();
+			LOG.warn("");
 		}
 	}
 

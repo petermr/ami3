@@ -196,7 +196,7 @@ private static final String HTTPS_EN_WIKIPEDIA_ORG = "https://en.wikipedia.org";
 		createTemplateNames();
 		this.informat = WikiFormat.mwk.equals(this.wptype) ? InputFormat.mediawikitemplate : InputFormat.wikitemplate;
 		if (parent.getDirectoryTopname() == null) {
-			System.err.println("No directory given, using .");
+			LOG.warn("No directory given, using .");
 			parent.setDirectoryTopname(".");
 		}
 	}
@@ -240,9 +240,9 @@ private static final String HTTPS_EN_WIKIPEDIA_ORG = "https://en.wikipedia.org";
 			LOG.debug(SPECIAL, "\n"+title + ":");
 			for (String missingLink : missingLinkList) {
 				if (i++ % 8 == 0) {
-					System.out.println();
+					System.out.println(); // ? TODO progress?
 				}
-				System.out.print(missingLink + "; ");
+				LOG.warn(missingLink + "; ");
 			}
     	}
 	}
@@ -580,11 +580,11 @@ private static final String HTTPS_EN_WIKIPEDIA_ORG = "https://en.wikipedia.org";
 					nameList.add(content);
 					linkList.add(href);
 				} else {
-					System.err.println("NO HREF");
+					LOG.warn("NO HREF");
 				}
 			}
 		}
-		System.err.println("nameList "+nameList.size()+" // "+nameList+"\n>>> "+linkList);
+		LOG.warn("nameList "+nameList.size()+" // "+nameList+"\n>>> "+linkList);
 	}
 
 	private void createFromWikipediaTemplate(HtmlElement htmlElement) {
@@ -600,7 +600,7 @@ private static final String HTTPS_EN_WIKIPEDIA_ORG = "https://en.wikipedia.org";
 		List<Element> aList = XMLUtil.getQueryElements(htmlElement, 
 				".//*[local-name() = '"+HtmlDiv.TAG+"' and @id='bodyContent']" +
 				"//*[local-name()='"+HtmlA.TAG+"' and @href]");
-		System.err.println("number of links "+aList.size());
+		LOG.warn("number of links "+aList.size());
 		for (int i = aList.size() - 1; i >= 0; i--) {
 			HtmlA a = (HtmlA) aList.get(i);
 			String value = a.getValue();
@@ -614,7 +614,7 @@ private static final String HTTPS_EN_WIKIPEDIA_ORG = "https://en.wikipedia.org";
 	private void createFromMediawikiTemplate(String mwString) {
 		LOG.trace("mwstring :" +mwString);
 		List<HtmlA> aList = AbstractAMIDictTool.parseMediaWiki(mwString);
-		System.err.println("read A's :" +aList.size());
+		LOG.warn("read A's :" +aList.size());
 		addAHrefs(aList);
 	}
 
@@ -740,7 +740,7 @@ private static final String HTTPS_EN_WIKIPEDIA_ORG = "https://en.wikipedia.org";
 
 	private void addEntry(String dictionaryId, int serial, Element entry, String urlValue) {
 		String idValue = CM_PREFIX + dictionaryId + DOT + serial;
-		System.out.print("+");
+		System.err.print("+"); // TODO progress indicator
 		entry.addAttribute(new Attribute(DictionaryTerm.ID, idValue));
 		if (urlValue != null) {
 			urlValue = trimWikipediaUrlBase(urlValue);
@@ -773,7 +773,7 @@ private static final String HTTPS_EN_WIKIPEDIA_ORG = "https://en.wikipedia.org";
 							addEntry(dictionaryId, i++, entry, urlValue);
 						}
 					} else {
-						System.err.print(" !WP ");
+						System.err.print(" !WP "); // TODO progress indicator
 						LOG.trace("skipped non-wikipedia link: "+urlAtt);
 					}
 				} else {
@@ -944,10 +944,9 @@ private static final String HTTPS_EN_WIKIPEDIA_ORG = "https://en.wikipedia.org";
 				List<String> linkFields = addValueFromContentOrHref((HtmlElement)cellChildren.get(colIndex), field, base);
 				valueList.addAll(linkFields);
 			}
-			System.out.print("\nrows: "+rowList.size()+" ");
-			System.out.print((fusedrow > 0) ? "fused rows: "+fusedrow+" " : "");
-			System.out.print((splitrow > 0) ? "split rows: "+splitrow+" " : "");
-			System.out.println();
+			LOG.warn("\nrows: "+rowList.size()+" " +
+					((fusedrow > 0) ? "fused rows: "+fusedrow+" " : "") +
+					((splitrow > 0) ? "split rows: "+splitrow+" " : ""));
 		}
 		return valueList;
 	}

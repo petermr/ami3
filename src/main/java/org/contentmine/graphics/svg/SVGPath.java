@@ -671,10 +671,10 @@ public static final String SIGNATURE = "signature";
 		String d = "";
 		PathIterator pathIterator = generalPath.getPathIterator(/*new AffineTransform()*/null);
 		if (pathIterator.isDone()) {
-			System.out.println("DONE");
+			LOG.debug("DONE");
 //			pathIterator = generalPath.getPathIterator(/*new AffineTransform()*/null);
 //			if (pathIterator.isDone()) {
-//				System.out.println("STILL DONE");
+//				LOG.debug("STILL DONE");
 //			}
 		} else {
 			d = SVGPathPrimitive.formatDString(getPathAsDString(pathIterator), places);
@@ -688,12 +688,12 @@ public static final String SIGNATURE = "signature";
 		// This kludge allows us to navigate to the first Z and hope
 		boolean kludgeIterate = pathIterator.isDone();
 		if (kludgeIterate) {
-			System.err.print("KLUGE ITER");
+			LOG.debug("KLUGE ITER");
 			return createKludgedDString(pathIterator);
 			
 //			return createDString(pathIterator);
 		} else {
-//			System.err.println("OKIterator");
+//			LOG.debug("OKIterator");
 			return createDString(pathIterator);
 		}
 	}

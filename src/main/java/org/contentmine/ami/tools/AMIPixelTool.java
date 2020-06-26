@@ -321,28 +321,27 @@ private static final String LAST = "LAST";
     @Override
 	protected void parseSpecifics() {
     	outputDirname = outputDirname.endsWith("/") ? outputDirname : outputDirname + "/";
-		System.out.println("basename             " + basename);
-		System.out.println("lines                " + lines);
-		System.out.println("lineLengths          " + lineLengths);
-		System.out.println("maxislands           " + maxislands);
-		System.out.println("mingap               " + mingap);
-		System.out.println("minwidth             " + minwidth);
-		System.out.println("minheight            " + minheight);
-		System.out.println("maxIslandCount       " + maxIslandCount);
-		System.out.println("minRingCount         " + minRingCount);
-		System.out.println("outputDirname        " + outputDirname);
-		System.out.println("overlap              " + overlap);
-		System.out.println("projections          " + projections);
-		System.out.println("projectionsName      " + projectionsName);
-		System.out.println("removelinesFilename  " + removeLinesFilename);
-		System.out.println("subimageTokens       " + subimageTokens);
-		System.out.println("templateInput        " + templateInput);
-		System.out.println("templateOutput       " + templateOutput);
-		System.out.println("templateXsl          " + templateXsl);
-		System.out.println("thinning             " + thinningName);
-		System.out.println("xProjectionFactor    " + xProjectionFactor);
-		System.out.println("yProjectionFactor    " + yProjectionFactor);
-		System.out.println();
+		LOG.info("basename             {}", basename);
+		LOG.info("lines                {}", lines);
+		LOG.info("lineLengths          {}", lineLengths);
+		LOG.info("maxislands           {}", maxislands);
+		LOG.info("mingap               {}", mingap);
+		LOG.info("minwidth             {}", minwidth);
+		LOG.info("minheight            {}", minheight);
+		LOG.info("maxIslandCount       {}", maxIslandCount);
+		LOG.info("minRingCount         {}", minRingCount);
+		LOG.info("outputDirname        {}", outputDirname);
+		LOG.info("overlap              {}", overlap);
+		LOG.info("projections          {}", projections);
+		LOG.info("projectionsName      {}", projectionsName);
+		LOG.info("removelinesFilename  {}", removeLinesFilename);
+		LOG.info("subimageTokens       {}", subimageTokens);
+		LOG.info("templateInput        {}", templateInput);
+		LOG.info("templateOutput       {}", templateOutput);
+		LOG.info("templateXsl          {}", templateXsl);
+		LOG.info("thinning             {}", thinningName);
+		LOG.info("xProjectionFactor    {}", xProjectionFactor);
+		LOG.info("yProjectionFactor    {}", yProjectionFactor);
 	}
 
     @Override
@@ -366,12 +365,12 @@ private static final String LAST = "LAST";
 
 	private void runPixel(File imageFile) {
 		imageDir = imageFile.getParentFile();
-		System.out.println(">imageDir> "+imageDir.getName());
+		LOG.warn(">imageDir> {}", imageDir.getName());
 		outputDirectory = new File(imageDir, outputDirname+"/");
 		outputDirectory.mkdirs();
 		basename = FilenameUtils.getBaseName(imageFile.toString());
 		if (includeExclude(basename)) {
-			System.out.println(">basename> "+basename);
+			LOG.warn(">basename> {}", basename);
 		}
 		if (!imageFile.exists()) {
 			throw new RuntimeException("Image file does not exist: "+imageFile);
@@ -382,7 +381,7 @@ private static final String LAST = "LAST";
 			image = UtilImageIO.loadImage(imageFile.toString());
 		} catch (IndexOutOfBoundsException ioobe) {
 			/** deep java image exception */
-			System.err.println("cannot read image: "+ioobe+" "+ioobe.getMessage()+" "+imageFile);
+			LOG.error("cannot read image: "+ioobe+" "+ioobe.getMessage()+" "+imageFile);
 		}
 		if (image == null) {
 			LOG.error("Null image for: "+imageFile );
@@ -397,7 +396,7 @@ private static final String LAST = "LAST";
 		Thinning thinning = thinningName == null ? null : ThinningMethod.getThinning(thinningName);
 		diagramAnalyzer.setThinning(thinning);
 		pixelIslandList = diagramAnalyzer.getOrCreateSortedPixelIslandList();
-//		System.out.println("pixel island sizes "+pixelIslandList.size());
+		LOG.debug("pixel island sizes "+pixelIslandList.size());
 		if (maxIslandCount > 0) {
 			analyzeIslandSizes();
 		}
@@ -438,7 +437,7 @@ private static final String LAST = "LAST";
 	private void removeLines() {
 		File removeFile = new File(imageDir, removeLinesFilename);
 		if (!removeFile.exists()) {
-			System.err.println("Remove file non-existent: "+removeFile);
+			LOG.warn("Remove file non-existent: {}", removeFile);
 		} else {
 			SVGElement svg = SVGElement.readAndCreateSVG(removeFile);
 			List<SVGLine> lineList = SVGLine.extractSelfAndDescendantLines(svg);
@@ -459,13 +458,13 @@ private static final String LAST = "LAST";
 		int y0 = (int) xy0.getY();
 		int y1 = (int) xy1.getY();
 		int width = (int) (double)line.getStrokeWidth();
-//		System.out.println(x0+","+y0+" / "+x1+","+y1 + "; " + width + " "+image.getWidth()+"/"+image.getHeight());
+		LOG.trace(x0+","+y0+" / "+x1+","+y1 + "; " + width + " "+image.getWidth()+"/"+image.getHeight());
 		if (y0 == y1) { // horizontal
 			removePixels(y0, width, x0, x1, Axis2.Y);
 		} else if (x0 == x1) {
 			removePixels(x0, width, y0, y1, Axis2.X);
 		} else {
-			System.err.println("not horizontal");
+			LOG.warn("not horizontal");
 		}
 	}
 
@@ -493,9 +492,9 @@ private static final String LAST = "LAST";
 				int y = (Axis2.X.equals(axis)) ? j : i;
 				if (!overlap || !hasBlackNeighbours) {
 					if (x < 0 || x >= image.getWidth()) {
-						System.out.println("x "+x);
+						LOG.warn("x {}", x);
 					} else if (y < 0 || y >= image.getHeight()) {
-						System.out.println("y "+y);
+						LOG.warn("y {}", y);
 					} else {
 						int origRgb = image.getRGB(x, y) & 0x00ffffff;
 						if (origRgb == BLACK) {
@@ -871,18 +870,18 @@ private static final String LAST = "LAST";
 			pixelIslandYSet.add(box.getY());
 		}
 		List<Entry<Int2>> boxes = MultisetUtil.createListSortedByCount(pixelIslandBoxSet);
-		System.out.println("boxes "+boxes);
+		LOG.warn("boxes {}", boxes);
 		List<Entry<Integer>> xx = MultisetUtil.createListSortedByCount(pixelIslandXSet);
-		System.out.println("commonest x "+xx);
+		LOG.warn("commonest x {}", xx);
 		List<Entry<Integer>> yy = MultisetUtil.createListSortedByCount(pixelIslandYSet);
-		System.out.println("commonest y "+yy);
+		LOG.warn("commonest y {}", yy);
 		
 //		List<Entry<Int2>> boxes1 = MultisetUtil.createListSortedByValue(pixelIslandBoxSet);
-//		System.out.println("boxes "+boxes1);
+//		LOG.warn("boxes {}", boxes1);
 		List<Entry<Integer>> xx1 = MultisetUtil.createListSortedByValue(pixelIslandXSet);
-		System.out.println("increasing x "+xx1);
+		LOG.warn("increasing x {}", xx1);
 		List<Entry<Integer>> yy1 = MultisetUtil.createListSortedByValue(pixelIslandYSet);
-		System.out.println("increasing y "+yy1);
+		LOG.warn("increasing y {}", yy1);
 	}
 
 	private void selectIslands() {
@@ -904,7 +903,7 @@ private static final String LAST = "LAST";
 		// analyze first island
 		SVGG g = new SVGG();
 		for (int islandx = 0; islandx < 20; islandx++) {
-			System.out.print("I");
+			System.err.print("I"); // TODO progress util
 			SVGG gg = this.findBoxesAndPlotSubIslands(islandx);
 			g.appendChild(gg);
 		}
@@ -915,7 +914,7 @@ private static final String LAST = "LAST";
 		SVGG g = new SVGG();
 		PixelIsland pixelIsland = pixelIslandList.get(island);
 		if (pixelIsland != null) {
-			System.out.print(" "+pixelIsland.size()+" ");
+			LOG.warn(" "+pixelIsland.size()+" ");
 			List<IslandRingList> islandRingListListx = pixelIsland.getOrCreateIslandRingListList();
 			SVGRect box = SVGRect.createFromReal2Range(Real2Range.createReal2Range(pixelIsland.getIntBoundingBox()));
 			String boxColor = COLORS[island % COLORS.length];

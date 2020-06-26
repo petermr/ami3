@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Callable;
 
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.spi.StandardLevel;
@@ -214,9 +215,7 @@ public enum IncExc {
 	}
 
 	protected void parseSpecifics() {
-    	if (verbosity().length > 0) {
-			printOptionValues(System.out);
-    	}
+		printOptionValues(null);
 	}
 
 	protected abstract void runSpecifics();
@@ -245,15 +244,19 @@ public enum IncExc {
 
 	/**
 	 * Prints all options for this command with their value (either user-specified or the default)
-	 * to the specified stream.
-	 * @param stream the stream to write options to
+	 * to the log file and optionally to the specified stream.
+	 * @param stream (optional, for testing) the stream to write options to; if {@code null}, the options are logged only
 	 */
 	protected void printOptionValues(PrintStream stream) {
 		ParseResult parseResult = spec.commandLine().getParseResult();
+		LOG.info("Command line options for '{}':", spec.qualifiedName());
 		for (OptionSpec option : spec.options()) {
 			String label = parseResult.hasMatchedOption(option)
 					? "(matched)" : "(default)";
-			stream.printf("%-20s: %1s %9s%n", option.longestName(), label.substring(1,  2), option.getValue());
+			LOG.printf(Level.INFO, "%-20s: %1s %9s%n", option.longestName(), label.substring(1,  2), option.getValue());
+			if (stream != null) {
+				stream.printf("%-20s: %1s %9s%n", option.longestName(), label.substring(1,  2), option.getValue());
+			}
 		}
 	}
 	
@@ -287,7 +290,7 @@ public enum IncExc {
 				cProject = new CProject(cProjectDir);
 				cTreeList = generateCTreeList();
 			} else {
-				System.err.println(""
+				LOG.warn(""
 						+ "************************\n"
 						+ "WARNING: CProject directory does not exist\n"
 						+ "************************\n");
@@ -342,7 +345,7 @@ public enum IncExc {
 				dir = parentFile;
 				LOG.info("** using parentFile as " + type + ": " + directory);
 			} else {
-				System.err.println("not found: " + type + " must be existing directory or have directory parent: " +
+				LOG.warn("not found: " + type + " must be existing directory or have directory parent: " +
 						getCProjectDirectory() + " (" + dir.getAbsolutePath());
 				directory = null;
 			}
@@ -389,7 +392,7 @@ public enum IncExc {
 			File cTreeDir = new File(cTreeDirectory());
 			cTreeDirectory(checkDirExistenceAndGetAbsoluteName(cTreeDir, "cTree"));
 			if (cTreeDirectory() == null) {
-				System.err.println("***Cannot find ctree/parent: " + cTreeDir + " ***");
+				LOG.warn("***Cannot find ctree/parent: " + cTreeDir + " ***");
 			} else {
 				cTree = new CTree(cTreeDir);
 				cTreeList = new CTreeList();
@@ -404,22 +407,18 @@ public enum IncExc {
 	 * at present cproject, ctree and filetypes
 	 */
 	private void printGenericValues() {
-		if (verbosity().length > 0) {
-			System.out.println("input basename      " + getInputBasename());
-			System.out.println("input basename list " + getInputBasenameList());
-			System.out.println("cproject            " + (cProject == null ? "" : cProject.getDirectory().getAbsolutePath()));
-			System.out.println("ctree               " + (cTree == null ? "" : cTree.getDirectory().getAbsolutePath()));
-			System.out.println("cTreeList           " + prettyPrint(cTreeList));
-			System.out.println("excludeBase         " + excludeBase());
-			System.out.println("excludeTrees        " + excludeTrees());
-			System.out.println("forceMake           " + getForceMake());
-			System.out.println("includeBase         " + includeBase());
-			System.out.println("includeTrees        " + toString(includeTrees()));
-			System.out.println("log4j               " + log4j());
-			System.out.println("verbose             " + verbosity().length);
-		} else {
-			System.out.println("-v to see generic values");
-		}
+		LOG.info("input basename      {}", getInputBasename());
+		LOG.info("input basename list {}", getInputBasenameList());
+		LOG.info("cproject            {}", (cProject == null ? "" : cProject.getDirectory().getAbsolutePath()));
+		LOG.info("ctree               {}", (cTree == null ? "" : cTree.getDirectory().getAbsolutePath()));
+		LOG.info("cTreeList           {}", prettyPrint(cTreeList));
+		LOG.info("excludeBase         {}", excludeBase());
+		LOG.info("excludeTrees        {}", excludeTrees());
+		LOG.info("forceMake           {}", getForceMake());
+		LOG.info("includeBase         {}", includeBase());
+		LOG.info("includeTrees        {}", toString(includeTrees()));
+		LOG.info("log4j               {}", log4j());
+		LOG.info("verbose             {}", verbosity().length);
 	}
 
 	private String toString(String[] strings) {
@@ -549,15 +548,15 @@ public enum IncExc {
 	}
 
 	protected void printGenericHeader() {
-		System.out.println();
-		System.out.println("Generic values (" + this.getClass().getSimpleName() + ")");
-		System.out.println("================================");
+		LOG.warn("");
+		LOG.warn("Generic values ({})", this.getClass().getSimpleName());
+		LOG.warn("================================");
 	}
 
 	protected void printSpecificHeader() {
-		System.out.println();
-		System.out.println("Specific values (" + this.getClass().getSimpleName() + ")");
-		System.out.println("================================");
+		LOG.warn("");
+		LOG.warn("Specific values ({})", this.getClass().getSimpleName());
+		LOG.warn("================================");
 	}
 
 	public int getVerbosityInt() {
@@ -597,7 +596,7 @@ public enum IncExc {
 		if (cTreeList != null && cTreeList.size() > 0) {
 			for (CTree cTree : cTreeList) {
 				if (parent.generalOptions.maxTreeCount != null && getOrCreateProcessedTrees().size() >= parent.generalOptions.maxTreeCount) {
-					System.out.println("CTree limit reached: " + (--treeCount));
+					LOG.warn("CTree limit reached: {}", (--treeCount));
 					break;
 				}
 				this.cTree = cTree;
@@ -608,7 +607,7 @@ public enum IncExc {
 				;
 			}
 		} else {
-			System.err.println("no trees");
+			LOG.warn("no trees");
 //			LOG.warn("No trees to process");
 		}
 		return processed;
@@ -682,7 +681,7 @@ public enum IncExc {
 	}
 
 	protected void outputCTreeName() {
-		System.out.println(this.getClass().getSimpleName() + " cTree: " + cTree.getName());
+		LOG.warn(this.getClass().getSimpleName() + " cTree: " + cTree.getName());
 	}
 
 	public Boolean getForceMake() {
@@ -740,26 +739,38 @@ public enum IncExc {
 		return file1;
 	}
 
+	/** @deprecated use LOG.trace instead */
+	@Deprecated
 	public static boolean isTrace(AbstractAMITool amiTool) {
 		return isLevel(amiTool, AbstractAMITool.Verbosity.TRACE);
 	}
 
+	/** @deprecated use LOG.debug instead */
+	@Deprecated
 	public static boolean isDebug(AbstractAMITool amiTool) {
 		return isLevel(amiTool, AbstractAMITool.Verbosity.DEBUG);
 	}
 
+	/** @deprecated use LOG.info instead */
+	@Deprecated
 	public static boolean isInfo(AbstractAMITool amiTool) {
 		return isLevel(amiTool, AbstractAMITool.Verbosity.INFO);
 	}
 
+	/** @deprecated use LOG.debug instead */
+	@Deprecated
 	private static boolean isLevel(AbstractAMITool amiTool, Verbosity verbosity) {
 		return (amiTool == null) ? false : verbosity.getVerbosity() == amiTool.getVerbosityInt();
 	}
 
+	/** @deprecated use LOG.debug instead */
+	@Deprecated
 	protected boolean reachesLevel(Verbosity verbosity) {
 		return verbosity.getVerbosity() <= this.getVerbosityInt();
 	}
 
+	/** @deprecated use LOG.debug instead */
+	@Deprecated
 	public void debugPrint(Verbosity verbosity, String message) {
 		if (reachesLevel(verbosity)) {
 			System.out.println("<" + verbosity + ">" + message);
@@ -785,7 +796,7 @@ public enum IncExc {
 			clazz = clazz.substring(AMI.length());
 			clazz = clazz.toLowerCase();
 		} else {
-			System.err.println("Cannot create command for " + clazz);
+			LOG.warn("Cannot create command for " + clazz);
 			return;
 		}
 		List<String> argList = new ArrayList<>(Arrays.asList(args));

@@ -108,11 +108,10 @@ public enum SummaryType {
 
     @Override
 	protected void parseSpecifics() {
-		System.out.println("dictionaryList       " + dictionaryList);
-		System.out.println("geneList             " + geneList);
-		System.out.println("speciesList          " + speciesList);
-		System.out.println("word                 " + word);
-		System.out.println();
+		LOG.info("dictionaryList       {}", dictionaryList);
+		LOG.info("geneList             {}", geneList);
+		LOG.info("speciesList          {}", speciesList);
+		LOG.info("word                 {}", word);
 	}
 
     @Override
@@ -129,7 +128,7 @@ public enum SummaryType {
 	}
 
 	public void processProject() {
-		System.out.println("cProject: "+cProject.getName());
+		LOG.info("cProject: "+cProject.getName());
 		runSummary();
 		outputTables();
 	}

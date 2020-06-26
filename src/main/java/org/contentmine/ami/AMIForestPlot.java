@@ -22,8 +22,7 @@ public class AMIForestPlot extends AbstractAMITool {
 	private static final Logger LOG = LogManager.getLogger(AMIForestPlot.class);
 protected void parseSpecifics() {
 		LOG.error("AMIForest NYI");
-//		System.out.println("maxislands           " + maxislands);
-//		System.out.println();
+//		LOG.warn("maxislands           " + maxislands);
 	}
 //
 //    @Override

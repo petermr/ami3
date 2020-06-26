@@ -159,14 +159,13 @@ public enum TidySVG {
 
     @Override
 	protected void parseSpecifics() {
-		System.out.println("pages                " + pageList);
-		System.out.println("regexes              " + regexList);
-		System.out.println("regexfile            " + regexFilename);
-		System.out.println("tidyList             " + tidyList);
-		System.out.println("vectorLogfilename    " + vectorLog);
-		System.out.println("vectorDir            " + vectorDirname);
-		System.out.println("logfile             " + logfile);
-		System.out.println();
+		LOG.info("pages                {}", pageList);
+		LOG.info("regexes              {}", regexList);
+		LOG.info("regexfile            {}", regexFilename);
+		LOG.info("tidyList             {}", tidyList);
+		LOG.info("vectorLogfilename    {}", vectorLog);
+		LOG.info("vectorDir            {}", vectorDirname);
+		LOG.info("logfile              {}", logfile);
 	}
 
     @Override
@@ -202,7 +201,7 @@ public enum TidySVG {
 			while (i < regexList.size()) {
 				ws = regexList.get(i++);
 				if (i == regexList.size() || !Character.isDigit(ws.charAt(0))) {
-					System.err.println("badly formatted regexList at "+ws+" | "+regex);
+					LOG.warn("badly formatted regexList at "+ws+" | "+regex);
 					break;
 				}
 				int weight = Integer.parseInt(ws);
@@ -217,7 +216,7 @@ public enum TidySVG {
 
 	protected boolean processTree() {
 		processedTree = true;
-		System.out.println("cTree: "+cTree.getName());
+		LOG.warn("cTree: {}", cTree.getName());
 		svgDir = cTree.getExistingSVGDir();
 		if (svgDir == null || !svgDir.exists()) {
 			LOG.warn("no svg/ dir");
@@ -240,7 +239,7 @@ public enum TidySVG {
 			Matcher pageMatcher = PAGE_EXTRACT.matcher(svgFile.toString());
 			int page = pageMatcher.matches() ? Integer.parseInt(pageMatcher.group(1)): -1;
 			if ((pageList == null || pageList.size() == 0) || pageList.contains(new Integer(page))) {
-				if (pageList != null) System.err.print(" p"+page);
+				if (pageList != null) LOG.warn(" p{}", page);
 				try {
 					runSVG(svgFile);
 				} catch (IOException e) {
@@ -291,7 +290,7 @@ public enum TidySVG {
 	private void runSVG(File svgFile) throws IOException {
 		String basename = FilenameUtils.getBaseName(svgFile.toString());
 		if (!svgFile.exists()) {
-			System.err.println("!not exist "+basename+"!");
+			LOG.warn("!not exist {}!", basename);
 		} else {
 			ensureVectorDirectory();
 			currentSvg = (SVGSVG) SVGUtil.parseToSVGElement(new FileInputStream(svgFile));
@@ -350,7 +349,7 @@ public enum TidySVG {
 					}
 				}
 			} catch (IOException e) {
-				System.err.println("Cannot write to writer");
+				LOG.error("Cannot write to writer", e);
 			}
 		}
 	}
@@ -390,7 +389,7 @@ public enum TidySVG {
 						try {
 							logWriter.write("\n" + page + ":: " + pattern + ": " + s);
 						} catch (IOException e) {
-							System.err.println("Cannot write to writer");
+							LOG.error("Cannot write to writer", e);
 						}
 					}
 				}

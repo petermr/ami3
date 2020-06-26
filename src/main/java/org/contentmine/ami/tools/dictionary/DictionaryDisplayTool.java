@@ -88,7 +88,7 @@ private static final int DEFAULT_MAX_ENTRIES = 3;
 
 	@Override
 	protected void parseSpecifics() {
-		System.err.println("Not yet written");
+		System.err.println("FIXME Not yet written"); //
 	}
 
 	@Override
@@ -98,14 +98,14 @@ private static final int DEFAULT_MAX_ENTRIES = 3;
 
 	public void runSub() {
 		getOrCreateExistingDictionaryTop();
-//		System.err.println(">"+dictionaryTop.getAbsolutePath());
+//		LOG.info(">"+dictionaryTop.getAbsolutePath());
 		List<File> fileList = (files.size() > 0) ? files : collectDictionaryFiles(dictionaryTop);
 		listFiles(fileList);
 	}
 	
 	private void listFiles(List<File> files) {
 		if (files == null) {
-			System.err.println("no files");
+			LOG.warn("no files");
 			return;
 		} 
 		Collections.sort(files);
@@ -135,21 +135,21 @@ private static final int DEFAULT_MAX_ENTRIES = 3;
 //			}
 //		}
 //		if (dictionaryFile == null) {
-//			System.err.println("\nUnknown dictionary: "+dictionaryName);
+//			LOG.warn("\nUnknown dictionary: "+dictionaryName);
 //		}
 //	}
 
 	
 	private void listHardcoded() {
-//		System.err.println("\n\nalso hardcoded functions (which resolve abbreviations):\n");
-//		System.err.println("    gene    (relies on font/style) ");
-//		System.err.println("    species (resolves abbreviations) ");
+//		LOG.warn("\n\nalso hardcoded functions (which resolve abbreviations):\n");
+//		LOG.warn("    gene    (relies on font/style) ");
+//		LOG.warn("    species (resolves abbreviations) ");
 	}
 
 	public void listDictionaryInfo(String dictionary, Element dictionaryElement) {
-		System.out.println("\nDictionary: "+dictionary+"\n");
+		LOG.warn("\nDictionary: "+dictionary+"\n");
 		List<Element> entries = XMLUtil.getQueryElements(dictionaryElement, "./*[local-name()='entry']");
-		System.out.println("entries: "+entries.size());
+		LOG.warn("entries: "+entries.size());
 		printDescs(dictionaryElement);
 		printFieldSummary(dictionaryElement);
 		printEntries(dictionaryElement);
@@ -160,9 +160,9 @@ private static final int DEFAULT_MAX_ENTRIES = 3;
 			if (field.getType().equals(FieldType.ATTRIBUTE)) {
 				String xpath = ".//*[@*[name()='"+field.toString()+"' and not(.='')]]";
 				List<Element> elements = XMLUtil.getQueryElements(dictionaryElement, xpath);
-				System.out.println("@"+field+": "+elements.size());
+				LOG.warn("@"+field+": "+elements.size());
 				for (Element element : elements) {
-//					System.out.println("> "+element.toXML());
+//					LOG.warn("> "+element.toXML());
 				}
 			}
 		}
@@ -171,16 +171,15 @@ private static final int DEFAULT_MAX_ENTRIES = 3;
 	private void printDescs(Element dictionaryElement) {
 		List<Element> descList = XMLUtil.getQueryElements(dictionaryElement, "./*[local-name()='desc']");
 		for (Element desc : descList) {
-			System.out.println("Desc: "+desc.getValue());
+			LOG.warn("Desc: "+desc.getValue());
 		}
-		System.out.println();
 	}
 
 	private void printEntries(Element dictionaryElement) {
 		List<Element> entryList = XMLUtil.getQueryElements(dictionaryElement, "./*[local-name()='entry']");
 		for (int i = 0; i < Math.min(entryList.size(), maxEntries); i++) {
 			Element entry =  entryList.get(i);
-			System.out.println("    "+entry.getAttributeValue("term"));
+			LOG.warn("    "+entry.getAttributeValue("term"));
 		}
 	}
 

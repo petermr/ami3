@@ -209,7 +209,7 @@ public final static String ASPNET_AJAX = "http://ajax.aspnetcdn.com/ajax/";
 	 */
 	public void addRows(HtmlTbody htmlTbody) {
 		for (int iRow = 0; iRow < rowHeadingList.size(); iRow++) {
-			if (iRow % 10 == 0) System.out.print("r");
+			if (iRow % 10 == 0) System.err.print("r"); // TODO progress indicator
 			String rowHeading = rowHeadingList.get(iRow);
 			HtmlTr htmlTr = new HtmlTr();
 			htmlTbody.appendChild(htmlTr);

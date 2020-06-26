@@ -6,12 +6,12 @@ public class RunPhylo {
 
 	public static void main(String[] args) throws Exception {
 		if (args.length != 2) {
-			System.err.println(""
-					+ "RunPhylo infile outdir\n"
-					+ "   if infile is png convert it into outdir\n"
+			System.err.printf(""
+					+ "Usage: RunPhylo <infile> <outdir>%n"
+					+ "   if infile is png convert it into outdir%n"
 					+ "      e.g foo/bar.png target/test"
-					+ "   if infile is directory, convert all files into subdirs of outdir\n"
-					+ "      e.g. NAConstants.TEST_AMI_DIR+\"/phylo/15goodtree target/phylo/test1");
+					+ "   if infile is directory, convert all files into subdirs of outdir%n"
+					+ "      e.g. NAConstants.TEST_AMI_DIR+\"/phylo/15goodtree target/phylo/test1%n");
 			
 		} else {
 			// args0 = input file

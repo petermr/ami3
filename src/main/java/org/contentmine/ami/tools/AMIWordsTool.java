@@ -213,16 +213,6 @@ public class AMIWordsTool extends AbstractAMISearchTool {
 //    	makeStopwordOptions();
     	makeStopwordSetList();
     	super.parseSpecifics();
-//		System.out.println("filter               " + filter);
-//		System.out.println("filterfinal          " + filterFinal);
-//		System.out.println("filtersummary        " + filterSummary);
-//		System.out.println("methods              " + wordMethods);
-//		System.out.println("processTree          " + processTree);
-//		System.out.println("stemming             " + stemming);
-//		System.out.println("stopword directory   " + stopwordDir);
-//		System.out.println("stopword files       " + stopwordLocations);
-//		System.out.println("transform            " + transformList);
-		System.out.println();
 	}
 
     private List<WordSetWrapper> makeStopwordSetList() {
@@ -273,7 +263,7 @@ public class AMIWordsTool extends AbstractAMISearchTool {
 
 	protected boolean processTree() {
 		processedTree = true;
-		if (getVerbosityInt() > 0) System.out.println("AMIWords processTree");
+		LOG.info("AMIWords processTree");
 		wordArgProcessor.setCTree(cTree);
 		processedTree = extractWords();
 		// this is the original, phased out; will run twice unnecessarily because runs project
@@ -332,7 +322,7 @@ public class AMIWordsTool extends AbstractAMISearchTool {
 			
 			CommandProcessor commandProcessor = new CommandProcessor(cProject.getDirectory());
 			List<String> cmdList = Arrays.asList(wordCmd.trim().split("\\s+"));
-			if (getVerbosityInt() >= 2) System.err.println("cmdList "+cmdList);
+			LOG.debug("cmdList {}", cmdList);
 			commandProcessor.parseCommands(cmdList);
 			// this runs commands and filters results
 			LOG.debug("running command: "+wordCmd);
@@ -354,7 +344,7 @@ public class AMIWordsTool extends AbstractAMISearchTool {
 	/**
 			commandProcessor.runNormaIfNecessary();
 			for (AMIPluginOption pluginOption : commandProcessor.pluginOptions) {
-				System.out.println("running: "+pluginOption);
+				LOG.info("running: "+pluginOption);
 				try {
 					pluginOption.run();
 //	protected void run() {
@@ -363,7 +353,7 @@ public class AMIWordsTool extends AbstractAMISearchTool {
 //		String sw = getOptionFlagString("w.stopwords", " ");
 //		commandString.append(sw);
 //		LOG.debug("WORD "+commandString);
-//		System.out.print("WS: "+projectDir+"  ");
+//		LOG.warn("WS: "+projectDir+"  ");
  // --project /Users/pm286/workspace/cmdev/normami/target/cooccurrence/zika10 -i scholarly.html --w.words frequencies --w.stopwords pmcstop.txt stopwords.txt
 WS: /
 //		new WordArgProcessor(commandString.toString()).runAndOutput();
@@ -373,9 +363,9 @@ WS: /
 					LOG.error("cannot run command: "+pluginOption +"; " + e.getMessage());
 					continue;
 				}
-				System.out.println("filter: "+pluginOption);
+				LOG.warn("filter: "+pluginOption);
 				pluginOption.runFilterResultsXMLOptions();
-				System.out.println("summary: "+pluginOption);
+				LOG.warn("summary: "+pluginOption);
 				pluginOption.runSummaryAndCountOptions(); 
 			}
 			LOG.trace(commandProcessor.pluginOptions);	 

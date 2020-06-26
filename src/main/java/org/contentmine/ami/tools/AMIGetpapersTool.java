@@ -24,13 +24,6 @@ description = "Runs getpapers in java environment."
 )
 public class AMIGetpapersTool extends AbstractAMITool {
 	private static final Logger LOG = LogManager.getLogger(AMIGetpapersTool.class);
-/** already in parent
-	 * 
-	 */
-//    @Option(names = {"-o", "--output"},
-//    		arity = "1",
-//            description = "output directory")
-//    private List<Integer> output = null;
 
     @Option(names = {"-q", "--query"},
     		arity = "1",
@@ -63,10 +56,8 @@ public class AMIGetpapersTool extends AbstractAMITool {
 
     @Override
 	protected void parseSpecifics() {
-//		System.out.println("pages                " + pages);
-//		System.out.println("regexes              " + regexList);
-//		System.out.println("regexfile            " + regexFilename);
-		System.out.println();
+		LOG.info("query                {}", query);
+		LOG.info("limit                {}", limit);
 	}
 
 

@@ -67,7 +67,7 @@ public ScieloMetadataEntry() {
 	}
 
 	protected List<String> getAuthors() {
-		System.err.println("getAuthors(); NYI");
+		LOG.warn("getAuthors(); NYI");
 		return null;
 	}
 	/**
@@ -82,7 +82,7 @@ public ScieloMetadataEntry() {
 	private void getTitleAndContentLink() {
 		HtmlSpan span = (HtmlSpan) XMLUtil.getFirstElement(metadataEntryElement, ".//*[local-name()='span' and @class='" + HIGHWIRE_CITE_TITLE + "']");
 		if (span == null) {
-			System.out.println("null span "+metadataEntryElement.toXML());
+			LOG.warn("null span "+metadataEntryElement.toXML());
 		} else {
 			urlPath = ((HtmlA) XMLUtil.getSingleChild(span, HtmlA.TAG)).getHref();
 		}

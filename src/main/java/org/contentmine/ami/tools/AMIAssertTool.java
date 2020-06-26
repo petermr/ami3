@@ -122,17 +122,16 @@ private static final String FAIL = "fail";
     	}
     	messageString = String.join(" ", message);
     	xpath = unescape(xpath);
-		System.out.println("currentDirname      " + currentDirname);
-		System.out.println("subdirectoryType    " + subdirectoryType);
-		System.out.println("fail                " + fail);
-		System.out.println("currentFilename     " + currentFilename);
-		System.out.println("heights             " + heights);
-		System.out.println("messageString       " + messageString);
-		System.out.println("sizes               " + sizes);
-		System.out.println("assertType          " + assertType);
-		System.out.println("widths              " + widths);
-		System.out.println("xpath               " + xpath);
-		System.out.println();
+		LOG.info("currentDirname      {}", currentDirname);
+		LOG.info("subdirectoryType    {}", subdirectoryType);
+		LOG.info("fail                {}", fail);
+		LOG.info("currentFilename     {}", currentFilename);
+		LOG.info("heights             {}", heights);
+		LOG.info("messageString       {}", messageString);
+		LOG.info("sizes               {}", sizes);
+		LOG.info("assertType          {}", assertType);
+		LOG.info("widths              {}", widths);
+		LOG.info("xpath               {}", xpath);
 	}
 
 
@@ -146,7 +145,7 @@ private static final String FAIL = "fail";
 
 	protected boolean processTree() {
 		boolean processed = true;
-		System.out.println("cTree>> "+cTree.getName());
+		LOG.warn("cTree>> "+cTree.getName());
 		if (SubDirectoryType.pdfimages.equals(subdirectoryType)) {
 			iterateOverPDFImageDirs();
 		} else if (SubDirectoryType.svg.equals(subdirectoryType)) {
@@ -165,9 +164,9 @@ private static final String FAIL = "fail";
 		Collections.sort(imageDirs);
 		for (int i = 0; i < imageDirs.size(); i++) {
 			currentDir = imageDirs.get(i);
-			System.out.println("======>" + currentDir.getName() + "/" + getInputBasename());
+			LOG.warn("======>" + currentDir.getName() + "/" + getInputBasename());
 			if (getInputBasename() == null) {
-				System.err.println("No input basename");
+				LOG.warn("No input basename");
 			} else {
 				this.currentFile = new File(currentDir, getInputBasename());
 				this.runAssert();
@@ -180,9 +179,9 @@ private static final String FAIL = "fail";
 		Collections.sort(imageDirs);
 		for (int i = 0; i < imageDirs.size(); i++) {
 			currentDir = imageDirs.get(i);
-			System.out.println("======>" + currentDir.getName() + "/" + getInputBasename());
+			LOG.warn("======>" + currentDir.getName() + "/" + getInputBasename());
 			if (getInputBasename() == null) {
-				System.err.println("No input basename");
+				LOG.warn("No input basename");
 			} else {
 				this.currentFile = new File(currentDir, getInputBasename());
 				this.runAssert();
@@ -216,7 +215,7 @@ private static final String FAIL = "fail";
 			if (assertFail) {
 				throw new RuntimeException(assertMessage);
 			} else {
-				System.err.println("**WARN**: "+assertMessage);
+				LOG.warn("**WARN**: "+assertMessage);
 			}
 		}
 	}
