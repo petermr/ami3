@@ -21,6 +21,7 @@ import picocli.CommandLine.ParseResult;
 import picocli.CommandLine.Spec;
 
 import java.io.PrintWriter;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -108,7 +109,7 @@ public class AMI implements Runnable {
 	}
 	
 	public static void main(String... args) {
-		int exitCode = createCommandLine().execute(args);
+		int exitCode = createCommandLine().execute(logArgs(args));
 		if (System.getProperty("ami.no.exit") == null) {
 			System.exit(exitCode);
 		}
@@ -133,7 +134,7 @@ public class AMI implements Runnable {
 	}
 	static <T> T execute(Class<T> subcommandClass, String[] args) {
 		CommandLine cmd = createCommandLine();
-		cmd.execute(args);
+		cmd.execute(logArgs(args));
 		return cmd.getParseResult().hasSubcommand()
 				? (T) cmd.getParseResult().subcommand().commandSpec().userObject()
 				: (T) cmd.getParseResult().commandSpec().userObject();
@@ -154,7 +155,7 @@ public class AMI implements Runnable {
 		return execute(args.trim().split("\\s+"));
 	}
 	static int execute(String[] args) {
-		return createCommandLine().execute(args);
+		return createCommandLine().execute(logArgs(args));
 	}
 
 	private static CommandLine createCommandLine() {
@@ -168,6 +169,11 @@ public class AMI implements Runnable {
 		AMI ami = parseResult.commandSpec().commandLine().getCommand();
 		ami.loggingOptions.reconfigureLogging();
 		return new CommandLine.RunLast().execute(parseResult); // now delegate to the default execution strategy
+	}
+
+	private static String[] logArgs(String[] args) {
+		LOG.info("args: {}", Arrays.toString(args));
+		return args;
 	}
 
 	static class ProjectOrTreeOptions {

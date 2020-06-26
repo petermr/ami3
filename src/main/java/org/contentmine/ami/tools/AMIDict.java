@@ -3,6 +3,7 @@ package org.contentmine.ami.tools;
 import java.io.File;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -60,7 +61,8 @@ public class AMIDict implements Runnable {
 	private static final String CONTENT_MINE_DICTIONARIES = "ContentMine/dictionaries";
 
 	private static final Logger LOG = LogManager.getLogger(AMIDict.class);
-@ArgGroup(validate = false, heading = "General Options:%n", order = 30)
+
+	@ArgGroup(validate = false, heading = "General Options:%n", order = 30)
 	GeneralOptions generalOptions = new GeneralOptions();
 
 	@ArgGroup(validate = false, heading = "Logging Options:%n", order = 70)
@@ -75,7 +77,7 @@ public class AMIDict implements Runnable {
 	}
 
 	public static void main(String... args) {
-		int exitCode = createCommandLine().execute(args);
+		int exitCode = createCommandLine().execute(logArgs(args));
 		if (System.getProperty("ami.no.exit") == null) {
 			System.exit(exitCode);
 		}
@@ -100,7 +102,7 @@ public class AMIDict implements Runnable {
 	}
 	static <T> T execute(Class<T> subcommandClass, String[] args) {
 		CommandLine cmd = createCommandLine();
-		cmd.execute(args);
+		cmd.execute(logArgs(args));
 		return (T) cmd.getParseResult().subcommand().commandSpec().userObject();
 	}
 
@@ -119,7 +121,7 @@ public class AMIDict implements Runnable {
 		return args == null ? -1 : execute(args.trim().split("\\s+"));
 	}
 	static int execute(String[] args) {
-		return createCommandLine().execute(args);
+		return createCommandLine().execute(logArgs(args));
 	}
 
 	private static CommandLine createCommandLine() {
@@ -133,6 +135,11 @@ public class AMIDict implements Runnable {
 		AMIDict dict = parseResult.commandSpec().commandLine().getCommand();
 		dict.loggingOptions.reconfigureLogging();
 		return new CommandLine.RunLast().execute(parseResult); // now delegate to the default execution strategy
+	}
+
+	private static String[] logArgs(String[] args) {
+		LOG.info("args: {}", Arrays.toString(args));
+		return args;
 	}
 
 	public String getDirectoryTopname() {
