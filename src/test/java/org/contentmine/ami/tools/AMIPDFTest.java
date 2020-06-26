@@ -36,10 +36,10 @@ public final static File PDF2SVG2TEST = new File(PDF2SVG2, "text");
 		String args = 
 				"-p /Users/pm286/workspace/uclforest/forestplotssmall"
 				+ " pdfbox"
-				+ " --rawfiletypes pdfbox"
+				//+ " --rawfiletypes pdfbox" // --rawfiletypes is an option in `ami download`, not of `ami pdfbox`
 				+ " --maxpages 20"
-				+ " --pdfimages false"
-				+ " --svgpages true"
+				+ " --no-pdfimages"
+				+ " --svgpages"  // no parameter, use --no-svgpages to switch this off
 				;
 //		Assert.assertTrue(new File(args[1]).exists());
 		AMIPDFTool amiProcessorPDF = AMI.execute(AMIPDFTool.class, args);
@@ -61,8 +61,8 @@ public final static File PDF2SVG2TEST = new File(PDF2SVG2, "text");
 				+ " pdfbox"
 //				+ " --rawfiletypes pdfbox"
 				+ " --maxpages 20"
-				+ " --pdfimages false"
-				+ " --svgpages true"
+				+ " --no-pdfimages"
+				+ " --svgpages"  // no parameter, use --no-svgpages to switch this off
 				;
 //		Assert.assertTrue(new File(args[1]).exists());
 		
@@ -83,10 +83,10 @@ public final static File PDF2SVG2TEST = new File(PDF2SVG2, "text");
 		String args = 
 				"-p " + projectDir
 				+ " pdfbox"
-				+ " --rawfiletypes pdfbox"
+				//+ " --rawfiletypes pdfbox" // --rawfiletypes is an option in `ami download`, not of `ami pdfbox`
 				+ " --maxpages 20"
-				+ " --pdfimages false"
-				+ " --svgpages true"
+				+ " --no-pdfimages"
+				+ " --svgpages"  // no parameter, use --no-svgpages to switch this off
 				;
 		AMIPDFTool amiPdf = AMI.execute(AMIPDFTool.class, args);
 	}
@@ -103,10 +103,10 @@ public final static File PDF2SVG2TEST = new File(PDF2SVG2, "text");
 		String args =
 				"-p " + projectDir
 				+ " pdfbox"
-				+ " --rawfiletypes pdfbox"
+				//+ " --rawfiletypes pdfbox" // --rawfiletypes is an option in `ami download`, not of `ami pdfbox`
 				+ " --maxpages 20"
-				+ " --pdfimages true"
-				+ " --svgpages false"
+				+ " --pdfimages"  // no parameter, use --no-pdfimages to switch this off
+				+ " --no-svgpages"
 				;
 		AMI.execute(args);
 	}
@@ -119,8 +119,7 @@ public final static File PDF2SVG2TEST = new File(PDF2SVG2, "text");
 		String args = ""
 				+ "-p /Users/pm286/workspace/uclforest/dev/"
 				+ " pdfbox"
-				+ " --forcemake"
-				+ " --pdfimages true"
+				+ " --pdfimages" // no parameter, use --no-pdfimages to switch this off
 			;
 		AMI.execute(args);
 	}
@@ -134,8 +133,8 @@ public final static File PDF2SVG2TEST = new File(PDF2SVG2, "text");
 	public void testVectorBug() throws Exception {
 		String args = ""
 				+ "-t /Users/pm286/workspace/uclforest/dev/pearson"
-				+ " pdfbox"
 				+ " --forcemake"
+				+ " pdfbox"
 			;
 		AMI.execute(args);
 	}
@@ -147,8 +146,8 @@ public final static File PDF2SVG2TEST = new File(PDF2SVG2, "text");
 	public void testVectorBugCampbell() throws Exception {
 		String args = ""
 				+ "-t /Users/pm286/workspace/uclforest/dev/campbell"
-				+ " pdfbox"
 				+ " --forcemake"
+				+ " pdfbox"
 			;
 		AMI.execute(args);
 	}
@@ -164,9 +163,9 @@ public final static File PDF2SVG2TEST = new File(PDF2SVG2, "text");
 	public void testLargeVector() throws Exception {
 		String args = ""
 				+ "-p "+CANADA+"/test"
+				+ " --forcemake"
 				+ " pdfbox"
 				+ " --maxprimitives 10000"
-				+ " --forcemake"
 			;
 		AMI.execute(args);
 	}
@@ -179,10 +178,10 @@ public final static File PDF2SVG2TEST = new File(PDF2SVG2, "text");
 	public void testPDF2Framework() throws IOException {
 		
 		String args = "-p " + new File(PDF2SVG2, "test")
+				+ " --forcemake"
 				+ " pdfbox"
 				+ " --maxprimitives 10000"
 				+ " --debug AMI_TWO"
-				+ " --forcemake"
 				;
       
 		AMI.execute(args);

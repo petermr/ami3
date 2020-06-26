@@ -110,9 +110,8 @@ public class AMIPDFTool extends AbstractAMITool {
 //        	ParserType.ami
 			ParserType.two;
 
-	@Option(names = {"--pdfimages"},
-			arity = "0..1",
-			description = "output PDFImages pages. Default true "
+	@Option(names = {"--no-pdfimages"}, negatable = true,
+			description = "Whether to output PDFImages. Default: output PDF images."
 	)
 	private boolean outputPdfImages = true;
 
@@ -129,9 +128,8 @@ public class AMIPDFTool extends AbstractAMITool {
 	)
 	private String svgDirectoryName = "svg/";
 
-	@Option(names = {"--svgpages"},
-			arity = "0..1",
-			description = "output SVG pages. Default true"
+	@Option(names = {"--no-svgpages"}, negatable = true,
+			description = "Whether to output SVG pages. Default: output SVG."
 	)
 	private boolean outputSVG = true;
 
