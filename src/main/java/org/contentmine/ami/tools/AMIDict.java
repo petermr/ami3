@@ -89,17 +89,19 @@ public class AMIDict implements Runnable {
 	 * Executes {@code ami} with the specified command line arguments, and returns the
 	 * specified {@code ami} subcommand.
 	 * </p>
+	 *
 	 * @param subcommandClass the class of the {@code @Command}-annotated subcommand object to return.
-	 * @param args the command line arguments: a single String containing whitespace-separated
-	 *               optional global options followed by a required subcommand name and
-	 *               optional subcommand options.
-	 *               This will be split into arguments with {@code args.split("\\s)}.
-	 * @param <T> the generic type of the object to return
+	 * @param args            the command line arguments: a single String containing whitespace-separated
+	 *                        optional global options followed by a required subcommand name and
+	 *                        optional subcommand options.
+	 *                        This will be split into arguments with {@code args.split("\\s)}.
+	 * @param <T>             the generic type of the object to return
 	 * @return the invoked subcommand instance
 	 */
 	public static <T> T execute(Class<T> subcommandClass, String args) {
 		return execute(subcommandClass, args.trim().split("\\s+"));
 	}
+
 	static <T> T execute(Class<T> subcommandClass, String[] args) {
 		CommandLine cmd = createCommandLine();
 		cmd.execute(logArgs(args));
@@ -111,15 +113,17 @@ public class AMIDict implements Runnable {
 	 * <p>
 	 * Executes {@code ami} with the specified command line arguments and returns the exit code.
 	 * </p>
+	 *
 	 * @param args the command line arguments: a single String containing whitespace-separated
-	 *               optional global options followed by a required subcommand name and
-	 *               optional subcommand options.
-	 *               This will be split into arguments with {@code args.trim().split(\\s+)}.
+	 *             optional global options followed by a required subcommand name and
+	 *             optional subcommand options.
+	 *             This will be split into arguments with {@code args.trim().split(\\s+)}.
 	 * @return the exit code
 	 */
 	public static int execute(String args) {
 		return args == null ? -1 : execute(args.trim().split("\\s+"));
 	}
+
 	static int execute(String[] args) {
 		return createCommandLine().execute(logArgs(args));
 	}
@@ -149,6 +153,7 @@ public class AMIDict implements Runnable {
 	public void setDirectoryTopname(String directoryTopname) {
 		this.directory = new File(directoryTopname);
 	}
+
 	public List<String> getDictionaryList() {
 		return dictionaryList;
 	}
@@ -156,25 +161,29 @@ public class AMIDict implements Runnable {
 	public void setDictionaryList(List<String> dictionaryList) {
 		this.dictionaryList = dictionaryList;
 	}
-	/** Toplevel */
-    @Option(names = {"-d", "--dictionary"},
-			scope = CommandLine.ScopeType.INHERIT, // this option can be used in all subcommands
-    		arity="1..*",
-    		description = "input or output dictionary name/s. for 'create' must be singular; when 'display' or 'translate', any number. "
-    				+ "Names should be lowercase, unique. [a-z][a-z0-9._]. Dots can be used to structure dictionaries into"
-    				+ "directories. Dictionary names are relative to 'directory'. If <directory> is absent then "
-    				+ "dictionary names are absolute.")
-    List<String> dictionaryList = new ArrayList<>();
-	
-    /** both create and translate */
-    @Option(names = {"--directory"},
-			scope = CommandLine.ScopeType.INHERIT, // this option can be used in all subcommands
-    		arity="1",
-    		description = "top directory containing dictionary/s. Subdirectories will use structured names (NYI). Thus "
-    				+ "dictionary 'animals' is found in '<directory>/animals.xml', while 'plants.parts' is found in "
-    				+ "<directory>/plants/parts.xml. Required for relative dictionary names.")
-    File directory = null;
 
+	/**
+	 * Toplevel
+	 */
+	@Option(names = {"-d", "--dictionary"},
+			scope = CommandLine.ScopeType.INHERIT, // this option can be used in all subcommands
+			arity = "1..*",
+			description = "input or output dictionary name/s. for 'create' must be singular; when 'display' or 'translate', any number. "
+					+ "Names should be lowercase, unique. [a-z][a-z0-9._]. Dots can be used to structure dictionaries into"
+					+ "directories. Dictionary names are relative to 'directory'. If <directory> is absent then "
+					+ "dictionary names are absolute.")
+	List<String> dictionaryList = new ArrayList<>();
+
+	/**
+	 * both create and translate
+	 */
+	@Option(names = {"--directory"},
+			scope = CommandLine.ScopeType.INHERIT, // this option can be used in all subcommands
+			arity = "1",
+			description = "top directory containing dictionary/s. Subdirectories will use structured names (NYI). Thus "
+					+ "dictionary 'animals' is found in '<directory>/animals.xml', while 'plants.parts' is found in "
+					+ "<directory>/plants/parts.xml. Required for relative dictionary names.")
+	File directory = null;
 
 
 	static class GeneralOptions {
@@ -221,7 +230,9 @@ public class AMIDict implements Runnable {
 		)
 		protected void setInput(String input) {
 			parentGeneralOptions().input = input;
-		};
+		}
+
+		;
 
 		@Option(names = {"-n", "--inputname"}, paramLabel = "PATH",
 				description = "User's basename for inputfiles (e.g. foo/bar/<basename>.png) or directories. By default this is often computed by AMI."
@@ -323,8 +334,6 @@ public class AMIDict implements Runnable {
 	public File getDirectory() {
 		return directory;
 	}
-
-
 
 
 }

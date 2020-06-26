@@ -83,7 +83,7 @@ import java.util.stream.Collectors;
 public class AMI implements Runnable {
 	private static final Logger LOG = LogManager.getLogger(AMI.class);
 
-@ArgGroup(exclusive = true, heading = "", order = 9)
+	@ArgGroup(exclusive = true, heading = "", order = 9)
 	ProjectOrTreeOptions projectOrTreeOptions = new ProjectOrTreeOptions();
 
 	@ArgGroup(validate = false, heading = "General Options:%n", order = 30)
@@ -99,7 +99,7 @@ public class AMI implements Runnable {
 	public void run() {
 		throw new ParameterException(spec.commandLine(), "Missing required subcommand");
 	}
-	
+
 	public static void main(String args) {
 		if (args != null) {
 			main(args.trim().split("\\s+"));
@@ -107,7 +107,7 @@ public class AMI implements Runnable {
 			System.err.println("null args");
 		}
 	}
-	
+
 	public static void main(String... args) {
 		int exitCode = createCommandLine().execute(logArgs(args));
 		if (System.getProperty("ami.no.exit") == null) {
@@ -121,17 +121,19 @@ public class AMI implements Runnable {
 	 * Executes {@code ami} with the specified command line arguments, and returns the
 	 * specified {@code ami} subcommand.
 	 * </p>
+	 *
 	 * @param subcommandClass the class of the {@code @Command}-annotated subcommand object to return.
-	 * @param args the command line arguments: a single String containing whitespace-separated
-	 *               optional global options followed by a required subcommand name and
-	 *               optional subcommand options.
-	 *               This will be split into arguments with {@code args.split("\\s)}.
-	 * @param <T> the generic type of the object to return
+	 * @param args            the command line arguments: a single String containing whitespace-separated
+	 *                        optional global options followed by a required subcommand name and
+	 *                        optional subcommand options.
+	 *                        This will be split into arguments with {@code args.split("\\s)}.
+	 * @param <T>             the generic type of the object to return
 	 * @return the invoked subcommand instance
 	 */
 	static <T> T execute(Class<T> subcommandClass, String args) {
 		return execute(subcommandClass, args.trim().split("\\s+"));
 	}
+
 	static <T> T execute(Class<T> subcommandClass, String[] args) {
 		CommandLine cmd = createCommandLine();
 		cmd.execute(logArgs(args));
@@ -145,15 +147,17 @@ public class AMI implements Runnable {
 	 * <p>
 	 * Executes {@code ami} with the specified command line arguments and returns the exit code.
 	 * </p>
+	 *
 	 * @param args the command line arguments: a single String containing whitespace-separated
-	 *               optional global options followed by a required subcommand name and
-	 *               optional subcommand options.
-	 *               This will be split into arguments with {@code args.trim().split(\\s+)}.
+	 *             optional global options followed by a required subcommand name and
+	 *             optional subcommand options.
+	 *             This will be split into arguments with {@code args.trim().split(\\s+)}.
 	 * @return the exit code
 	 */
 	public static int execute(String args) {
 		return execute(args.trim().split("\\s+"));
 	}
+
 	static int execute(String[] args) {
 		return createCommandLine().execute(logArgs(args));
 	}
@@ -268,7 +272,7 @@ public class AMI implements Runnable {
 		@Option(names = {"-N", "--maxTrees"}, paramLabel = "COUNT",
 				description = "Quit after given number of trees; null means infinite.")
 		protected Integer maxTreeCount = null;
-		
+
 		@Option(names = {"-o", "--output"},
 				paramLabel = "output",
 				description = "Output filename (no defaults)"
@@ -349,9 +353,9 @@ public class AMI implements Runnable {
 					: spec.exitCodeOnInvalidInput();
 		}
 	}
-	
+
 	public final static void printNameValue(String name, Object value) {
-		System.out.println((name + "                 ").substring(0,25) + value);
+		System.out.println((name + "                 ").substring(0, 25) + value);
 	}
 
 
