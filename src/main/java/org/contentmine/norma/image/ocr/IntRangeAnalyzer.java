@@ -39,9 +39,7 @@ private List<IntRange> yRangeList;
 		yRangeList = createYRangeListFromYRangeMultisets();
 		yRangeList = excludeMinorComponents();
 		yRangeList = mergeEquivalentYRanges(1);
-		if (AbstractAMITool.isDebug(textLineAnalyzer.getAmiocrTool())) {
-			LOG.debug("yRangeList: "+yRangeList.size()+": "+yRangeList);
-		}
+		LOG.debug("yRangeList: "+yRangeList.size()+": "+yRangeList);
 		return yRangeList;
 	}
 	

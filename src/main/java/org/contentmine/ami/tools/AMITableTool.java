@@ -183,7 +183,7 @@ public static final int INCONSISTENT_FOOTER = -2;
 			LOG.warn("Cannot find template for "+templateName);
 			return;
 		} else {
-			debugPrint(Verbosity.DEBUG, "found template for : "+templateName);
+			LOG.debug( "found template for : "+templateName);
 			templateSummaryHtml = HtmlHtml.createUTF8Html();
 			templateSummaryTable = new HtmlTable();
 			templateSummaryHtml.getOrCreateBody().appendChild(templateSummaryTable);
@@ -221,9 +221,9 @@ public static final int INCONSISTENT_FOOTER = -2;
 		if (fileMatcher != null) {
 			String tableFileRegex = fileMatcher.getOrCreateQueryTool().getSingleRegex();
 			List<File> listFilesFromPaths = Util.listFilesFromPaths(tableDir, tableFileRegex);
-			debugPrint(Verbosity.DEBUG, "files to analyze: "+listFilesFromPaths.size()+"; "+tableFileRegex+" / "+listFilesFromPaths);
+			LOG.debug("files to analyze: "+listFilesFromPaths.size()+"; "+tableFileRegex+" / "+listFilesFromPaths);
 			List<HtmlTable> rawXhtmlTableList = makeRawXhtmlTables(listFilesFromPaths);
-			debugPrint(Verbosity.DEBUG, "raw tables: "+rawXhtmlTableList.size());
+			LOG.debug("raw tables: "+rawXhtmlTableList.size());
 			for (HtmlTable rawXhtmlTable : rawXhtmlTableList) {
 				createSubTable(rawXhtmlTable);
 			}
@@ -321,12 +321,12 @@ public static final int INCONSISTENT_FOOTER = -2;
 		currentCaption = rawXhtmlTable.getCaptionValue();
 		TQueryTool queryTool = currentTemplate.getTitleMatcher().getOrCreateQueryTool();
 		HtmlTable htmlSubTable = null;
-		debugPrint(Verbosity.DEBUG, "queryTool "+queryTool.getSingleRegex());
+		LOG.debug("queryTool "+queryTool.getSingleRegex());
 		if (queryTool.matches(currentCaption)) {
-			debugPrint(Verbosity.DEBUG, "matched table caption "+currentCaption);
+			LOG.debug("matched table caption "+currentCaption);
 			htmlSubTable = createHtmlSubTable(rawXhtmlTable);
 		} else {
-			debugPrint(Verbosity.DEBUG, "failed match caption "+currentCaption);
+			LOG.debug("failed match caption "+currentCaption);
 		}
 		return htmlSubTable;
 	}

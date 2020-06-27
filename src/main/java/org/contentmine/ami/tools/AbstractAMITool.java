@@ -111,22 +111,6 @@ public enum IncExc {
 		}
 	}
 
-	public enum Verbosity {
-		TRACE(3),
-		DEBUG(2),
-		INFO(3),
-		;
-		private int verbosity;
-
-		private Verbosity(int v) {
-			this.verbosity = v;
-		}
-
-		public int getVerbosity() {
-			return verbosity;
-		}
-	}
-
 	// injected by picocli
 	@ParentCommand
 	AMI parent;
@@ -737,44 +721,6 @@ public enum IncExc {
 			}
 		}
 		return file1;
-	}
-
-	/** @deprecated use LOG.trace instead */
-	@Deprecated
-	public static boolean isTrace(AbstractAMITool amiTool) {
-		return isLevel(amiTool, AbstractAMITool.Verbosity.TRACE);
-	}
-
-	/** @deprecated use LOG.debug instead */
-	@Deprecated
-	public static boolean isDebug(AbstractAMITool amiTool) {
-		return isLevel(amiTool, AbstractAMITool.Verbosity.DEBUG);
-	}
-
-	/** @deprecated use LOG.info instead */
-	@Deprecated
-	public static boolean isInfo(AbstractAMITool amiTool) {
-		return isLevel(amiTool, AbstractAMITool.Verbosity.INFO);
-	}
-
-	/** @deprecated use LOG.debug instead */
-	@Deprecated
-	private static boolean isLevel(AbstractAMITool amiTool, Verbosity verbosity) {
-		return (amiTool == null) ? false : verbosity.getVerbosity() == amiTool.getVerbosityInt();
-	}
-
-	/** @deprecated use LOG.debug instead */
-	@Deprecated
-	protected boolean reachesLevel(Verbosity verbosity) {
-		return verbosity.getVerbosity() <= this.getVerbosityInt();
-	}
-
-	/** @deprecated use LOG.debug instead */
-	@Deprecated
-	public void debugPrint(Verbosity verbosity, String message) {
-		if (reachesLevel(verbosity)) {
-			System.out.println("<" + verbosity + ">" + message);
-		}
 	}
 
 	/** newstyle commands
