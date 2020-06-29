@@ -234,7 +234,7 @@ public class AMIWordsTool extends AbstractAMISearchTool {
     	if (processTree && processTrees()) { 
     	} else {
     		buildCommandFromBuiltinsAndFacets();
-//			DebugPrint.debugPrint(Level.ERROR, "must give cProject or cTree");
+//			LOG.debug("must give cProject or cTree");
 	    }
 
     }
