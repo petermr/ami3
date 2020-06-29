@@ -5,6 +5,7 @@ import java.io.File;
 import java.util.List;
 
 import org.apache.commons.io.FilenameUtils;
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.contentmine.cproject.files.CProject;
@@ -28,18 +29,11 @@ import org.junit.Test;
  * @author pm286
  *
  */
-public class AMIPixelTest extends AbstractAMITest {
+public class AMIPixelTest extends AbstractAMIImageTest /*AbstractAMITest*/ {
 	private static final Logger LOG = LogManager.getLogger(AMIPixelTest.class);
-	private File pdfImageDir;
-	private File imageDir;
-	private File layerDir;
-	private File imageFile;
-	private File outputFile;
-	private BufferedImage image;
 	private PixelIslandList islandList;
 	private int minHairLength;
 	private int maxIslands;
-	private File svgFile;
 	
 	public AMIPixelTest() {
 		setDefaults();
@@ -241,6 +235,8 @@ islands > (10,10): islands: 6
 
 	@Test
 	public void testTraceIntersectingLines() {
+			org.apache.logging.log4j.core.config.Configurator.setLevel("org.contentmine.ami.tools.AMIPixelTest", Level.DEBUG);
+
 				this
 				.setAMITestProjectName("battery10")
 				.setTreeName("PMC3463005")
@@ -271,34 +267,9 @@ islands > (10,10): islands: 6
 	
 	// ============================================
 
-	private File getOutputFile() {
-		return outputFile;
-	}
-
 	private void setDefaults() {
 		minHairLength = 10; //pixels
 		maxIslands = 10;
-	}
-
-	private AMIPixelTest setImageDirName(String imageDirName) {
-		checkCTree();
-		pdfImageDir = cTree.getExistingPDFImagesDir();
-		checkPDFImagesDir();
-		imageDir = new File(pdfImageDir, imageDirName);
-		checkImageDir();
-		return this;
-	}
-
-	private void checkPDFImagesDir() {
-		if (pdfImageDir == null) {
-			throw new RuntimeException("missing pdfImages directory under " + cTree.getDirectory());
-		}
-	}
-
-	private void checkImageDir() {
-		if (imageDir == null) {
-			throw new RuntimeException("missing image directory under " + pdfImageDir);
-		}
 	}
 
 	private AMIPixelTest setLayer(String layer) {
@@ -316,31 +287,14 @@ islands > (10,10): islands: 6
 
 	private AMIPixelTest setChannel(String channel) {
 		checkLayerDir();
+		LOG.debug("debug channel");
+		LOG.trace("trace channel");
 		imageFile = new File(layerDir, channel + ".png");
 		System.err.println("imageFile "+imageFile);
 		checkImageFile();
 		return this;
 	}
-
-	private void checkImageFile() {
-		if (!imageFile.exists() || imageFile.isDirectory()) {
-			throw new RuntimeException("missing image file under " + layerDir);
-		}
-	}
-
-	private AMIPixelTest readImage() {
-		checkImageFile();
-		image = ImageUtil.readImage(imageFile);
-		checkImage();
-		return this;
-	}
-
-	private void checkImage() {
-		if (image == null) {
-			throw new RuntimeException(" no image");
-		}
-	}
-
+	
 	private AMIPixelTest setMaxIslands(int maxIslands) {
 		this.maxIslands = maxIslands;
 		return this;
@@ -351,34 +305,9 @@ islands > (10,10): islands: 6
 		return this;
 	}
 
-	private AMIPixelTest writeImage(String type) {
-		checkImage();
-		outputFile = new File(imageFile.toString()+"."+type+".png");
-		ImageUtil.writeImageQuietly(image, outputFile);
-		return this;
-	}
-
 	private AMIPixelTest createTidiedPixelIslandList() {
 		checkImage();
 		islandList = PixelIslandList.createTidiedPixelIslandList(image);
-		return this;
-	}
-
-	private AMIPixelTest binarize(int thresh) {
-		checkImage();
-		image = ImageUtil.boofCVBinarization(image, thresh);
-		return this;
-	}
-
-	private AbstractAMITest hilditchThin() {
-		checkImage();
-		image = ImageUtil.thin(image, new HilditchThinning(image));
-		return this;
-	}
-
-	private AMIPixelTest zhangSuenThin() {
-		checkImage();
-		image = ImageUtil.thin(image, new ZhangSuenThinning(image));
 		return this;
 	}
 
@@ -427,7 +356,7 @@ islands > (10,10): islands: 6
 	}
 	
 	
-	private AbstractAMITest writePixelIslandList(String type) {
+	private AMIPixelTest writePixelIslandList(String type) {
 		checkPixelIslandList();
 		svgFile = new File(imageFile.toString()+"."+type+".svg");
 		SVGSVG.wrapAndWriteAsSVG(islandList.getOrCreateSVGG(), svgFile);
@@ -435,24 +364,6 @@ islands > (10,10): islands: 6
 	}
 
 	// ======================================
-
-	public File getPdfImageDir() {
-		return pdfImageDir;
-	}
-
-	public File getImageDir() {
-		return imageDir;
-	}
-
-	private File getImageFile() {
-		checkImageFile();
-		return imageFile;
-	}
-
-
-	public BufferedImage getImage() {
-		return image;
-	}
 
 	public PixelIslandList getIslandList() {
 		return islandList;
@@ -462,30 +373,12 @@ islands > (10,10): islands: 6
 		return layerDir;
 	}
 	
-	public File getSVGFile() {
-		return svgFile;
-	}
-
 	private PixelIslandList getPixelIslandList() {
 		checkPixelIslandList();
 		return islandList;
 	}
-
-/** no edges yet
-	private PixelEdgeList getPixelEdgeList() {
-		return edgeList;
-	}
-*/
-// =================delegates=====================
-	@Override
-	protected AMIPixelTest setAMITestProjectName(String projectName) {
-		return (AMIPixelTest) super.setAMITestProjectName(projectName);
-	}
-
-	@Override
-	protected AMIPixelTest setTreeName(String treeName) {
-		return (AMIPixelTest) super.setTreeName(treeName);
-	}
+	
+	// ===== overridden to change return type ===
 
 	@Override
 	protected AMIPixelTest assertTrue(String msg, boolean condition) {
@@ -500,6 +393,51 @@ islands > (10,10): islands: 6
 	@Override
 	protected AMIPixelTest assertCanReadFile(String msg, File file, long minFileSize) {
 		return (AMIPixelTest) super.assertCanReadFile(msg, file, minFileSize);
+	}
+
+	@Override
+	protected AMIPixelTest setAMITestProjectName(String projectName) {
+		return (AMIPixelTest) super.setAMITestProjectName(projectName);
+	}
+
+	@Override
+	protected AMIPixelTest setTreeName(String treeName) {
+		return (AMIPixelTest) super.setTreeName(treeName);
+	}
+
+	@Override
+	protected AMIPixelTest setImageName(String treeName) {
+		return (AMIPixelTest) super.setImageName(treeName);
+	}
+
+	@Override
+	protected AMIPixelTest setImageDirName(String imageDirName) {
+		return (AMIPixelTest) super.setImageDirName(imageDirName);
+	}
+	
+	@Override
+	protected AMIPixelTest readImage() {
+		return (AMIPixelTest) super.readImage();
+	}
+	
+	@Override
+	protected AMIPixelTest writeImage(String type) {
+		return (AMIPixelTest) super.writeImage(type);
+	}
+
+	@Override
+	protected AMIPixelTest binarize(int thresh) {
+		return (AMIPixelTest) super.binarize(thresh);
+	}
+	
+	@Override
+	protected AMIPixelTest hilditchThin() {
+		return (AMIPixelTest) super.hilditchThin();
+	}
+	
+	@Override
+	protected AMIPixelTest zhangSuenThin() {
+		return (AMIPixelTest) super.zhangSuenThin();
 	}
 
 

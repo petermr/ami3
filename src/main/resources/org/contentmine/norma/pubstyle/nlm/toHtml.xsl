@@ -70,7 +70,6 @@ UNKNOWN nlm: alt-text:
 		*[local-name()='colgroup'] |
 		*[local-name()='div'] |
 		*[local-name()='form'] | 
-		*[local-name()='graphic'] | 
 		*[local-name()='h1'] | 
 		*[local-name()='h2'] | 
 		*[local-name()='h3'] | 
@@ -112,6 +111,9 @@ UNKNOWN nlm: alt-text:
         </xsl:copy>
     </xsl:template>
 		
+<!--  HTML-like -->
+	<xsl:template match="
+		*[local-name()='graphic'] 
 
 <!--  SVG -->
 	<xsl:template match="
@@ -132,16 +134,16 @@ UNKNOWN nlm: alt-text:
 <!--  NON-HTML DIV -->
 	<xsl:template match="
 	 	*[local-name()='article-meta'] |
+		*[local-name()='bio'] | 
 		*[local-name()='boxed-text'] | 
 		*[local-name()='citation'] | 
-		*[local-name()='bio'] | 
-		*[local-name()='issue-part'] | 
 		*[local-name()='conference'] | 
-		*[local-name()='title'] | 
 		*[local-name()='floats-wrap'] | 
+		*[local-name()='issue-part'] | 
 	 	*[local-name()='journal-meta'] |
 	 	*[local-name()='journal-title-group'] |
 	 	*[local-name()='name-alternatives'] |
+		*[local-name()='title'] | 
 	 	*[local-name()='title-group'] |
 	 	*[local-name()='table-wrap-group'] 
 		">
@@ -240,7 +242,9 @@ UNKNOWN nlm: alt-text:
 	 	*[local-name()='array'] |
 	 	
 	 	*[local-name()='lpage']" >
-		<span tagx="{local-name()}" class="{local-name()}" title="{local-name()}"><xsl:apply-templates select="*|text()" /></span>
+		<span tagx="{local-name()}" class="{local-name()}" title="{local-name()}"
+		  ><xsl:apply-templates select="*|text()" 
+		/></span>
 	</xsl:template>
 
 	<xsl:template match="*[local-name()='art']">

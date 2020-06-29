@@ -82,4 +82,5 @@ public class PageParserTest extends AbstractAMITest {
 		pageParserRunner.setTidySVG(true);
 		pageParserRunner.runPages(root, pageIndex);
 	}
+
 }

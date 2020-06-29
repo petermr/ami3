@@ -24,7 +24,7 @@ description = "Minimal AMI Tool for editing into more powerful classes."
 public class AMIDummyTool extends AbstractAMITool {
 
 	private static final Logger LOG = LogManager.getLogger(AMIDummyTool.class);
-interface ToolMethod {
+	interface ToolMethod {
 		public void runMe();
 	}
 	
@@ -77,13 +77,14 @@ interface ToolMethod {
 
     @Override
 	protected boolean parseGenerics() {
+		super.parseGenerics();
 		LOG.info("project         " + cProject);
 		return true;
 	}
 
     @Override
 	protected void parseSpecifics() {
-		LOG.info("tools         " + toolList);
+		super.parseSpecifics();
 	}
     
     @Override

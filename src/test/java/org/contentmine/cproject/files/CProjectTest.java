@@ -1,5 +1,6 @@
 package org.contentmine.cproject.files;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -720,6 +721,7 @@ project2
 		projectNameSet.addAll(CMineTestFixtures.createProjectSnippetsTree(ZIKA_DIR, CProject.SPECIES_GENUS_SNIPPETS_XML).getCTreeNameList());
 		Assert.assertEquals("all files", 90, projectNameSet.size());
 	}
+
 
 
 

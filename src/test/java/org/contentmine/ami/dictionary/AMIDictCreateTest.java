@@ -2,6 +2,7 @@ package org.contentmine.ami.dictionary;
 
 import static org.junit.Assert.fail;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
@@ -917,8 +918,5 @@ private static final File TARGET = new File("target");
 				;
 		AMIDict.execute(args);
 	}
-	
-
-
 
 }

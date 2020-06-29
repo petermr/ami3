@@ -1,5 +1,6 @@
 package org.contentmine.ami.dictionary;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 
 import org.apache.logging.log4j.Logger;
@@ -71,7 +72,5 @@ private static final File TARGET = new File("target");
 		AMIDict.execute(args);
 		
 	}
-	
-	
 
 }

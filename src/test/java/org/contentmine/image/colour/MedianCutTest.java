@@ -21,6 +21,6 @@ public class MedianCutTest extends AbstractAMITest {
 		MedianCut medianCut = new MedianCut(image);
 		medianCut.convert(8);
 	}
-	
+
 	
 }

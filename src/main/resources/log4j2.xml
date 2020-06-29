@@ -58,7 +58,7 @@
 
     <Root level="trace">
       <AppenderRef ref="Console" level="warn"/>
-      <AppenderRef ref="File" level="trace"/>
+      <AppenderRef ref="File" level="debug"/>
     </Root>
   </Loggers>
 </Configuration>

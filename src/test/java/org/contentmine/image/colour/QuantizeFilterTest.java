@@ -22,4 +22,5 @@ public class QuantizeFilterTest extends AbstractAMITest {
 		
 		
 	}
+
 }

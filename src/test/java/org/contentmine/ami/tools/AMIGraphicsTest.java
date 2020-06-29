@@ -1,5 +1,6 @@
 package org.contentmine.ami.tools;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Arrays;
@@ -308,7 +309,7 @@ public class AMIGraphicsTest extends AbstractAMITest {
 		new AMIPDFTool().runCommands(cmd);
 
 	}
-	
+
 	/** rotation bug
 	 * 
 	file:///Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/pdf2svg2/test/He/svg/page.0/text.svg

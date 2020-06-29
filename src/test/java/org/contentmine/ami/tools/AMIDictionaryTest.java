@@ -1,5 +1,6 @@
 package org.contentmine.ami.tools;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
@@ -114,5 +115,6 @@ private static final File TARGET = new File("target");
 		}
 //		System.out.println(s);
 	}
+
 
 }

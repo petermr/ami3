@@ -685,7 +685,7 @@ public enum IncExc {
 	}
 
 	public Boolean getForceMake() {
-		return parent.generalOptions.forceMake;
+		return parent == null ? true : parent.generalOptions.forceMake;
 	}
 
 	public void setForceMake(Boolean forceMake) {

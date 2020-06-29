@@ -58,5 +58,14 @@ public class GlobTest {
 		globber.deleteFiles();
 		Assert.assertEquals(0,  FileUtils.listFiles(targetTempDir, new String[]{}, false).size());
 	}
+	
+	@Test
+	public void testRegexOrGlob() {
+//		List<File> xsl = CMineGlobber.listRegexedFilesQuietly(new File("src/main"), ".*/tools/.*/*.xsl");
+		List<File> pmc = CMineGlobber.listRegexedFilesQuietly(new File("src/test/resources"), ".*/battery10/PMC.*/fulltext\\.xml");
+		Assert.assertEquals("pmc "+pmc, 10, pmc.size());
+		List<File> pmc0 = CMineGlobber.listGlobbedFilesQuietly(new File("src/test/resources"), "**/battery10/PMC*/fulltext.xml");
+		Assert.assertEquals("pmc "+pmc0, 10, pmc0.size());
+	}
 
 }

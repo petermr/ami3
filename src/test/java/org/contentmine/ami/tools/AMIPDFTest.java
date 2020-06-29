@@ -1,5 +1,6 @@
 package org.contentmine.ami.tools;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
@@ -225,6 +226,5 @@ public final static File PDF2SVG2TEST = new File(PDF2SVG2, "text");
 		
 	}
 
-	
 
 }

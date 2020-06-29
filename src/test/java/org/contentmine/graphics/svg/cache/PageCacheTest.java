@@ -1,5 +1,6 @@
 package org.contentmine.graphics.svg.cache;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -415,4 +416,5 @@ public class PageCacheTest extends AbstractAMITest {
 		}
 		return fontSize;
 	}
+
 }

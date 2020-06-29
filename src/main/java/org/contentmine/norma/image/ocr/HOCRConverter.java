@@ -258,7 +258,7 @@ private static final String HOCR = "hocr";
 	}
 
 	public void runTesseract(AMIOCRTool amiocrTool, File imageFile, String basename, String newbasename) {
-		if (amiocrTool.scalefactor != null || Boolean.TRUE.equals(amiocrTool.applyScale)) {
+		if (amiocrTool.scale != null || Boolean.TRUE.equals(amiocrTool.applyScale)) {
 			imageFile = amiocrTool.scaleAndWriteFile(imageFile, newbasename);
 		}
 		File outputDir = HOCRConverter.getHocrDirectory(imageFile);
@@ -266,7 +266,7 @@ private static final String HOCR = "hocr";
 		amiocrTool.outputHOCRFile = createOutputHtmlFileDescriptorForHOCR_HTML(outputDir);
 		this.setTesseractPath(amiocrTool.tesseractPath);
 		if (!amiocrTool.getForceMake() && !CMFileUtil.shouldMake(amiocrTool.outputHOCRFile, imageFile)) {
-			System.out.println(">skip hocr>");
+			System.out.println(">skip hocr ; output exists: >"+amiocrTool.outputHOCRFile);
 			return;
 		}
 		

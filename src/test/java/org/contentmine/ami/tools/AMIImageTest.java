@@ -1,5 +1,6 @@
 package org.contentmine.ami.tools;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.Arrays;
 import java.util.List;
@@ -18,7 +19,7 @@ import org.junit.Test;
  * @author pm286
  *
  */
-public class AMIImageTest extends AbstractAMITest {
+public class AMIImageTest extends AbstractAMIImageTest {
 	private static final File OLD_DEVTEST = new File(SRC_TEST_AMI, "uclforest/devtest/");
 	private static final File FOREST_PLOT_SMALL = new File(SRC_TEST_AMI, "uclforest/forestplotssmall/");
 	private static final File OLD_SPSS = new File(SRC_TEST_AMI, "uclforest/spss/");

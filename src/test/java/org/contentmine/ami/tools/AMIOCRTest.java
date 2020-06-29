@@ -1,16 +1,16 @@
 package org.contentmine.ami.tools;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
+import java.util.List;
 
-import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
-import org.contentmine.ami.AMIFixtures;
+import org.apache.logging.log4j.Logger;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGSVG;
-import org.contentmine.norma.NAConstants;
 import org.contentmine.norma.NormaFixtures;
 import org.contentmine.norma.image.ocr.GOCRConverter;
 import org.junit.Test;
@@ -20,18 +20,18 @@ import org.junit.Test;
  * @author pm286
  *
  */
-public class AMIOCRTest extends AbstractAMITest {
+public class AMIOCRTest extends AbstractAMIImageTest /*AbstractAMITest*/ {
 	public static final Logger LOG = LogManager.getLogger(AMIOCRTest.class);
-public static final File TEST_BATTERY10 = new File(NAConstants.TEST_AMI_DIR, "battery10");
-
+	AMIOCRTool amiOCRTool;
+	
 	@Test
 	/** 
 	 * convert single (good) file
 	 */
 	public void testHelp() throws Exception {
 		String args = 
-				"-t /Users/pm286/workspace/uclforest/dev/shenderovich -v"
-				+ " ocr --html true"
+			"-t /Users/pm286/workspace/uclforest/dev/shenderovich -v"
+			+ " ocr --html true"
 			;
 		AMI.execute(args);
 	}
@@ -208,7 +208,29 @@ public static final File TEST_BATTERY10 = new File(NAConstants.TEST_AMI_DIR, "ba
 	                + " --scalefactor 2.0"
 					;
 			AMI.execute(cmd);
+			
 	}
+
+//	@Test
+//	/**
+//	 * reads already processed images and extracts OCR labels
+//	 * 
+//	 *
+//	 */
+//	public void testBatteryGraph2020() {
+//		CTree cTree = new CTree(new File(NormaFixtures.TEST_IMAGES_DIR, "ocr/battery"));
+//		LOG.debug("ctree "+cTree);
+//		String cmd = " --ctree "+cTree.getDirectory()+""
+//					+ " --inputname raw"
+//					+ " ocr"
+//					+ " --html true"
+//					+ " --tesseract=/usr/local/bin/tesseract"
+//	                + " --scalefactor 2.0"
+//					;
+//			AMI.execute(cmd);
+//			
+//	}
+
 
 	@Test
 	public void testSPSS() {
@@ -443,6 +465,233 @@ ami -p <targetDir> --inputname raw -v pdfbox filter -sdm image --posterize 16 oc
 		 */
 	}
 
+	@Test
+	public void testObjectOCR() {
+		// this is roughly equivalent to:
+// ami 
+//	--input src/test/resources/org/contentmine/ami/battery10/PMC3463005/pdfimages/image.3.2.81_514.571_735/raw.png 
+// ocr		
+//	 --html true --tesseract=/usr/local/bin/tesseract --scalefactor 2.0
+		
+				 
+		this
+		.setAMITestProjectName("battery10")
+		.setTreeName("PMC3463005")
+		.setImageDirName("image.3.2.81_514.571_735")
+		.setImageName("raw")
+		.assertCanReadFile(this.getImageFile() + " input", this.getImageFile(), 100)
+		.assertTrue("msg",getImageFile().toString().endsWith(
+			"battery10/PMC3463005/pdfimages/image.3.2.81_514.571_735/raw90.png"))
+		.readImage()
+		.ocr()
+		    .setTesseractPath("/usr/local/bin/tesseract")
+		    .setScale(2.0)
+		    .run()
+		.assertCanReadFile("hocr.html", new File(this.getImageDir(), "raw/hocr/hocr.html"), 100)
+		;
+	}
+	
+	@Test
+	public void testReviewOCR1() {
+		this.createHocr("battery10", "PMC3463005", "image.6.2.86_509.389_714", "raw", 1.0);
+	}
+
+	@Test
+	public void testReviewOCRCorner() {
+		this.createHocr("battery10", "PMC3463005", "image.6.2.corner", "raw", 1.0);
+	}
+
+	@Test
+	public void testReviewOCRCTree() {
+		this.createHocrGlob("battery10", "**/*/image*/raw.png", 1.0);
+		// and create captions?
+		AMI.execute(""
+			+ "-p " + TEST_BATTERY10
+			+ " section")
+			;
+
+		
+	}
+	
+	
+
+	// =====================================================
+	private void createHocrGlob(String projectName, String fileGlob, double scale) {
+		List<File> imageFiles = 
+		this
+		.setAMITestProjectName(projectName)
+		.runFileGlob(fileGlob);
+		for (File file : imageFiles) {
+			this.setImageFile(file)
+//			.assertCanReadFile(this.getImageFile() + " input", this.getImageFile(), 100)
+			.readImage() 
+			.ocr()
+			    .setTesseractPath("/usr/local/bin/tesseract")
+			    .setScale(scale)
+			    .run()
+//			.assertCanReadFile("hocr.html", new File(this.getImageDir(), "raw/hocr/hocr.html"), 100)
+			;
+			LOG.info(this.getOutputFile());
+		}
+	}
+	
+	private void createHocr(String projectName, String treeName, String imageDirName, String root, double scale) {
+		this
+		.setAMITestProjectName(projectName)
+		.setTreeName(treeName)
+		.setImageDirName(imageDirName)
+		.setImageName(root)
+		.assertCanReadFile(this.getImageFile() + " input", this.getImageFile(), 100)
+		.assertTrue("msg",getImageFile().toString().endsWith(imageDirName+"/raw.png"))
+		.readImage()
+		.ocr()
+		    .setTesseractPath("/usr/local/bin/tesseract")
+		    .setScale(scale)
+		    .run()
+		.assertCanReadFile("hocr.html", new File(this.getImageDir(), "raw/hocr/hocr.html"), 100)
+		;
+		LOG.info(this.getOutputFile());
+	}
+	
+	// =======================================
+	
+	private AMIOCRTest setScale(double scale) {
+		checkAMIOCRTool();
+		amiOCRTool.setScale(scale);
+		return this;
+	}
+
+	private AbstractAMITest run() {
+		checkAMIOCRTool();
+		amiOCRTool.runOCR(imageFile);
+		return this;
+	}
+
+	private AbstractAMITest setHtml(boolean b) {
+		checkAMIOCRTool();
+		amiOCRTool.setHtml(b);
+		return this;
+	}
+
+	private AMIOCRTest setTesseractPath(String tesseractPath) {
+		checkAMIOCRTool();
+		amiOCRTool.setTesseractPath(tesseractPath);
+		return this;
+	}
+
+	protected AbstractAMITest forcemake() {
+		checkAMIOCRTool();
+		amiOCRTool.setForceMake(true);
+		return this;
+	}
+
+	// ======================================
+	
+	
+
+	private AbstractAMITest setMethod(String path) {
+		checkAMIOCRTool();
+		if (path.indexOf("tesseract") != 1) {
+			amiOCRTool.setTesseractPath(path);
+		}
+		return (AbstractAMITest) this;
+	}
+	
+	void checkAMIOCRTool() {
+		if (amiOCRTool == null) {
+			throw new RuntimeException(" must create OCRTool (use ocr())");
+		}
+	}
+
+
+
+	// =================delegates=====================
+	@Override
+	protected AMIOCRTest setAMITestProjectName(String projectName) {
+		return (AMIOCRTest) super.setAMITestProjectName(projectName);
+	}
+
+	@Override
+	protected AMIOCRTest setTreeName(String treeName) {
+		return (AMIOCRTest) super.setTreeName(treeName);
+	}
+
+	protected AMIOCRTest setImageName(String root) {
+		return (AMIOCRTest) super.setImageName(root);
+	}
+
+	@Override
+	protected AMIOCRTest assertTrue(String msg, boolean condition) {
+		return (AMIOCRTest) super.assertTrue(msg, condition);
+	}
+
+	@Override
+	protected AMIOCRTest assertEquals(String msg, Object expected, Object actual) {
+		return (AMIOCRTest) super.assertEquals(msg, expected, actual);
+	}
+
+	@Override
+	protected AMIOCRTest assertCanReadFile(String msg, File file, long minFileSize) {
+		return (AMIOCRTest) super.assertCanReadFile(msg, file, minFileSize);
+	}
+
+	@Override
+	protected AMIOCRTest setImageDirName(String imageDirName) {
+		return (AMIOCRTest) super.setImageDirName(imageDirName);
+	}
+	
+	@Override
+	protected AMIOCRTest readImage() {
+		return (AMIOCRTest) super.readImage();
+	}
+	
+	@Override
+	protected AMIOCRTest writeImage(String type) {
+		return (AMIOCRTest) super.writeImage(type);
+	}
+
+	@Override
+	protected AMIOCRTest setImageFile(File file) {
+		return (AMIOCRTest) super.setImageFile(file);
+	}
+
+
+//	@Override
+//	protected AMIOCRTest runFileGlob(String glob) {
+//		return (AMIOCRTest) super.runFileGlob(glob);
+//	}
+
+	// ====== local ===========
+//	--html true --tesseract=/usr/local/bin/tesseract --scalefactor 2.0"
+	protected AMIOCRTest ocr() {
+		checkImage();
+		amiOCRTool = new AMIOCRTool();
+		return (AMIOCRTest) this;
+	}
+
+	
+	// ===============================
+	
+	public File getPdfImageDir() {
+		return pdfImageDir;
+	}
+
+	public File getImageDir() {
+		return imageDir;
+	}
+
+	protected File getImageFile() {
+		checkImageFile();
+		return imageFile;
+	}
+
+	public BufferedImage getImage() {
+		return image;
+	}
+
+
+	// ======================================
+	
 	
 	
 }

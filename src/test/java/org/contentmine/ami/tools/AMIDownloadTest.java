@@ -1,5 +1,6 @@
 package org.contentmine.ami.tools;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -814,6 +815,5 @@ hitList2 and hitList3 are the wrong way round.
 		int exitCode = process.exitValue();
 		return result;
 	}
-	
 
 }

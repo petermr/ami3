@@ -1,5 +1,6 @@
 package org.contentmine.ami.tools;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 
 import org.apache.logging.log4j.Logger;
@@ -97,6 +98,6 @@ public class AMIWordsToolTest extends AbstractAMITest {
 		LOG.debug("args "+args);
 		AMI.execute(args);
 	}
-	
+
 
 }

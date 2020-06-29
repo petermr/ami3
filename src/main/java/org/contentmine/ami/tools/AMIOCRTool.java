@@ -97,15 +97,13 @@ public class AMIOCRTool extends AbstractAMITool implements HasImageDir {
 	public static final String GOCR_DIR = OcrType.gocr.toString();
 	public static final String HOCR_DIR = OcrType.hocr.toString();
 @Option(names = {"--disambiguate"},
-    		arity = "0..1",
             description = "try to diambiguate characters "
             )
 	public boolean disambiguate = false; 
 
     @Option(names = {"--extractlines"},
     		arity = "1..*",
-            description = "extracts textlines from gocr and/or hocr "
-//            defaultValue = "none"
+            description = "extracts textlines from gocr and/or hocr (${COMPLETION-CANDIDATES})"
             )
 	public List<OcrType> extractLines = new ArrayList<OcrType>(); 
 
@@ -122,7 +120,6 @@ public class AMIOCRTool extends AbstractAMITool implements HasImageDir {
     @Option(names = {"--gocr"},
     		arity = "1",
             description = "path for running gocr"
-//            defaultValue = "/usr/local/bin/gocr"
             )
     private String gocrPath = null;
     
@@ -133,7 +130,6 @@ public class AMIOCRTool extends AbstractAMITool implements HasImageDir {
     private String gocrConfig = null;
     
     @Option(names = {"--html"},
-    		arity = "0..1",
             description = "create structured html") 
     boolean outputHtml = true;
 
@@ -162,17 +158,15 @@ public class AMIOCRTool extends AbstractAMITool implements HasImageDir {
     		arity = "1",
             description = "increase geometric scale - helps tesseract. Normally '--maxize' will autoscale, "
             		+ "but this alternative allows forcing scale")
-	public Double scalefactor;
+	public Double scale;
 
     @Option(names = {"--scale"},
-    		arity = "0..1",
             description = "apply - helps tesseract to have larger images")
-	public Boolean applyScale;
+	public Boolean applyScale = false;
 
     @Option(names = {"--tesseract"},
     		arity = "1",
             description = "path for tesseract binary e.g. /usr/local/tesseract/"
-//            defaultValue = "/usr/local/bin/tesseract"
             )
 	public String tesseractPath = null;
     
@@ -222,7 +216,7 @@ public class AMIOCRTool extends AbstractAMITool implements HasImageDir {
 //		LOG.info("mergeBoxes          {}", mergeBoxes);
 		LOG.info("replace             {}", replaceList);
 		LOG.info("scale               {}", applyScale);
-		LOG.info("scalefactor         {}", scalefactor);
+		LOG.info("scalefactor         {}", scale);
 		LOG.info("scaledFilename      {}", basename);
 		LOG.info("tesseractPath       {}", tesseractPath);
 	}
@@ -328,9 +322,9 @@ public class AMIOCRTool extends AbstractAMITool implements HasImageDir {
 				double width = image.getWidth();
 				double scalex = maxsize / width;
 				double scaley = maxsize / width;
-				scalefactor = Math.max(scalex,  scaley);
+				scale = Math.max(scalex,  scaley);
 			}
-			image = ImageUtil.scaleImageScalr(scalefactor, image);
+			image = ImageUtil.scaleImageScalr(scale, image);
 			File parentFile = imageFile.getParentFile();
 			File scaledDir  = new File(parentFile, basename);
 			scaledDir.mkdirs();
@@ -477,10 +471,29 @@ public class AMIOCRTool extends AbstractAMITool implements HasImageDir {
 		return glyphs;
 	}
 
-	public void setGlyphs(boolean glyphs) {
+	public AMIOCRTool setGlyphs(boolean glyphs) {
 		this.glyphs = glyphs;
+		return this;
 	}
 
+	public AMIOCRTool setTesseractPath(String path) {
+		this.tesseractPath = path;
+		return this;
+	}
 
+	public AMIOCRTool setGOCRPath(String path) {
+		this.gocrPath = path;
+		return this;
+	}
+
+	public AMIOCRTool setHtml(boolean b) {
+		this.outputHtml = b;
+		return this;
+	}
+
+	public AMIOCRTool setScale(double scale) {
+		this.scale = scale; 
+		return this;
+	}
 
 }

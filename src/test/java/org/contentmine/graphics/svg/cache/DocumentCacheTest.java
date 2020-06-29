@@ -1,5 +1,6 @@
 package org.contentmine.graphics.svg.cache;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.List;
 
@@ -65,7 +66,6 @@ public class DocumentCacheTest extends AbstractAMITest {
 			.forEach(l -> System.out.println(l))
 			;
 	}
-
 
 
 }

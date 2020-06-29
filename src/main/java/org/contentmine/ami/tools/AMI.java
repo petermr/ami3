@@ -56,6 +56,7 @@ import java.util.stream.Collectors;
 				AMIDisplayTool.class,
 				AMIDownloadTool.class,
 				AMIDummyTool.class,
+				AMIFigureTool.class,
 				AMIFilterTool.class,
 				AMIForestPlotTool.class,
 				//AMIGetpapersTool.class, // https://github.com/petermr/ami3/issues/29

@@ -93,6 +93,10 @@ private CTree cTree;
 			return false;
 		}
 		// image in commonImageSet
+		if (!(amiTool instanceof AMIImageTool)) {
+			LOG.warn("amiOCR does not exclude images");
+			return false;
+		}
 		AMIImageTool amiImageTool = (AMIImageTool)amiTool;
 		AnnotatedImage annotatedImage = amiImageTool.getOrCreateAnnotatedImage(image);
 		
