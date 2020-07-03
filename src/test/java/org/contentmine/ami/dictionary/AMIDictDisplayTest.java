@@ -58,7 +58,7 @@ private static final File TARGET = new File("target");
 	
 	
 	@Test
-	public void testDictionaryDisplayFieldsInFile() {
+	public void testDictionaryDisplayFieldsInFileIT() {
 		String dict = "--directory src/main/resources/org/contentmine/ami/plugins/dictionary";
 		String args = dict + " -v" + " display --fields=term,name,title,wikidata,wikipedia";
 		AMIDict.execute(args);

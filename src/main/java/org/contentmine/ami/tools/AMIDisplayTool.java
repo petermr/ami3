@@ -149,17 +149,20 @@ private enum Orientation {
 		List<File> imageDirs = cTree.getPDFImagesImageDirectories();
 		Collections.sort(imageDirs);
 		for (int i = 0; i < imageDirs.size(); i++) {
-			imageDir = imageDirs.get(i);
-			this.basename = FilenameUtils.getBaseName(imageDir.toString());
-			LOG.warn("======>" + imageDir.getName() + "/" + getInputBasename());
-
-			if (displayList != null && displayList.size() > 0) {
-				displayFiles();
-				addSummaryFile();
-			}
+			displayImageDir(imageDirs.get(i));
 		}
 		summarizeFiles();
 		return processedTree;
+	}
+
+	private void displayImageDir(File imageDir) {
+		this.basename = FilenameUtils.getBaseName(imageDir.toString());
+		LOG.warn("======>" + imageDir.getName() + "/" + getInputBasename());
+
+		if (displayList != null && displayList.size() > 0) {
+			displayFiles();
+			addSummaryFile();
+		}
 	}
 
 	

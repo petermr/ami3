@@ -1,12 +1,11 @@
 package org.contentmine.ami.tools;
 
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.image.diagram.DiagramAnalyzerTest;
@@ -665,6 +664,34 @@ boolean started = false;
 	}
 
 	@Test
+	public void testOctreeThin() {
+		String cmd = null;
+		File cProjectDir = new File(SRC_TEST_AMI, "battery10");
+		CProject project = new CProject(cProjectDir);
+		List<String> treeNames = Arrays.asList(new String[] {
+				"PMC4062906",
+				"PMC4709726",
+				});
+		String treeNamesString = String.join(" ", treeNames);
+		cmd = "-p " + project
+				+ " -vv"
+				+ " --inputname raw"
+				+ " --includetree " + treeNamesString
+				+ " --output octree"
+				+ " image"
+				+ " --octree 8"
+				+ " --thin"
+//				+ " --merge 1"
+				+ " --outputfiles binary channels histogram "/*neighbours*/+ " octree"
+				+ "";
+
+		AbstractAMITool imageTool = (AbstractAMITool) AMI.execute(AMIImageTool.class, cmd);
+
+				
+	}
+
+
+	@Test
 	public void testOctreeAllIT() {
 		String cmd = null;
 		File cProjectDir = new File(SRC_TEST_AMI, "battery10");
@@ -689,6 +716,7 @@ boolean started = false;
 				
 	}
 
+	
 	//probably move to Pixel
 	@Test
 	public void testExtractCurves() {

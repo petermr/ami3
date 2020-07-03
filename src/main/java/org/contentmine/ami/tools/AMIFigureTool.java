@@ -14,6 +14,7 @@ import org.apache.logging.log4j.Logger;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.util.CMineGlobber;
 import org.contentmine.eucl.xml.XMLUtil;
+import org.contentmine.graphics.html.HtmlDiv;
 import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlImg;
 import org.contentmine.graphics.html.HtmlLi;
@@ -93,6 +94,10 @@ public class AMIFigureTool extends AbstractAMITool {
 		List<File> ocrFiles = CMineGlobber.listGlobbedFilesQuietly(cTree.getDirectory(), "**/pdfimages/image*/image*/image*/hocr/hocr.svg");
 		Collections.sort(ocrFiles, new ImageFileComparator(".*/pdfimages/image\\.(\\d+)\\.(\\d+)\\..*"));
 		
+		// OCR by page.serial
+		List<File> octreeFiles = CMineGlobber.listGlobbedFilesQuietly(cTree.getDirectory(), "**/pdfimages/image*/octree/channel.*.png");
+		Collections.sort(octreeFiles, new ImageFileComparator(".*/pdfimages/image\\.(\\d+)\\.(\\d+)\\..*"));
+		
 		if (captionByInt.size() != imgFiles.size() || captionByInt.size() != ocrFiles.size()) {
 			LOG.info(" bad sizes: captions: "+captionByInt.size()+"; img: " + imgFiles.size()+"; ocrs: " + ocrFiles.size());
 			for (File ocr : ocrFiles) {
@@ -103,11 +108,31 @@ public class AMIFigureTool extends AbstractAMITool {
 		
 		HtmlOl ol=  new HtmlOl();
 		for (int i = 1; i <= captionByInt.size(); i++ ) {
-			HtmlLi li = combineFigureInfo(captionByInt.get(i), imgFiles.get(i - 1), ocrFiles.get(i - 1).toString());
+			File imgFile = imgFiles.get(i - 1);
+			List<File> channels = CMineGlobber.listGlobbedFilesQuietly(
+					new File(imgFile.getParentFile(), "octree"), "**/channel.*.png");
+			HtmlLi li = combineFigureInfo(captionByInt.get(i), imgFile, ocrFiles.get(i - 1).toString());
+			addChannels(li, channels);
 			ol.addFluent(li);
 		}
 		File listFile = new File(imgFiles.get(0).getParentFile().getParentFile(), "images.html");
 		XMLUtil.writeQuietly(ol, listFile, 1);
+	}
+
+	private void addChannels(HtmlLi li, List<File> channels) {
+//		HtmlDiv div = new HtmlDiv();
+		HtmlTr tr = new HtmlTr();
+//		div.addFluent(tr);
+		for (File channel : channels) {
+			HtmlTd td = new HtmlTd();
+			tr.addFluent(td);
+			HtmlImg img = new HtmlImg();
+			img.setStyle("border : 1px solid red;");
+			img.setSrc(channel.toString().split(".*pdfimages/")[1]);
+			img.setHeight(300);
+			td.appendChild(img);
+		}
+		li.addFluent(tr);
 	}
 
 	private HtmlLi combineFigureInfo(File captionFile, File imgFile, String ocrFilename) {

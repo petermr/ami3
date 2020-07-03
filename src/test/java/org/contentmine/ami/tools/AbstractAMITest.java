@@ -26,7 +26,6 @@ public abstract class AbstractAMITest {
 	public static File CMDEV = new File(_HOME, "workspace/cmdev");
 	public static final String CONTENTMINE = "ami3/src/test/resources/org/contentmine";
 
-	public static final File TEST_BATTERY10 = new File(NAConstants.TEST_AMI_DIR, "battery10");
 	public static File CMINE = new File(CMDEV, CONTENTMINE);
 	public static File SRC_TEST_AMI = new File(CMINE, "ami");
 	public static File SRC_TEST_GRAPHICS = new File(CMINE, "graphics");
@@ -37,6 +36,8 @@ public abstract class AbstractAMITest {
 	public static File PDF2SVG2 = new File(SRC_TEST_AMI, "pdf2svg2");
 	public static File OIL5 = new File(SRC_TEST_AMI, "oil5/");
 	
+	public static final File TEST_BATTERY10 = new File(SRC_TEST_AMI, "battery10");
+	public static final File TEST_BATTERY10COMPUTE = new File(SRC_TEST_AMI, "battery10compute");
 	
 	public static File WORKSPACE = new File(_HOME, "workspace/");
 	public static File PROJECTS = WORKSPACE.exists() ? new File(WORKSPACE, "projects/") : NEW_PROJECTS;

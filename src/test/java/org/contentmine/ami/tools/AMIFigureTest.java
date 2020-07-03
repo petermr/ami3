@@ -23,5 +23,9 @@ public class AMIFigureTest extends AbstractAMITest {
 		AMI.execute(cmd);
 
 	}
+	
+	
+	
+	
 
 }

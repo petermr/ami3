@@ -1,25 +1,24 @@
 package org.contentmine.ami.tools;
 
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.graphics.svg.SVGUtil;
 import org.contentmine.graphics.svg.cache.AbstractCache;
 import org.contentmine.graphics.svg.cache.AbstractCache.CacheType;
-import org.contentmine.graphics.svg.plot.AnnotatedAxis;
-import org.contentmine.graphics.svg.plot.AnnotatedAxisTest;
 import org.contentmine.graphics.svg.cache.ComponentCache;
 import org.contentmine.graphics.svg.cache.LineBox;
 import org.contentmine.graphics.svg.cache.LineBoxCache;
 import org.contentmine.graphics.svg.cache.LineCache;
+import org.contentmine.graphics.svg.plot.AnnotatedAxis;
+import org.contentmine.graphics.svg.plot.AnnotatedAxisTest;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -227,18 +226,23 @@ public class AMIGraphicsTest extends AbstractAMITest {
 	@Test
 	public void testSingleTreeCache() {
 		File testProject = new File(PDF2SVG2, "problems/lichtenburg19a");
+//		LOG.warn(PDF2SVG2);
 		File file = new File(testProject, "svg/page.1/line.svg");
 		file.delete();
 		Assert.assertTrue(file+" deleted", !file.exists());
-		String cmd = "-t "+testProject
+		String cmd = " -t "+testProject
 				+ " --forcemake"
 				+ " -v"
+				+ " graphics"
 	//			+ " --log4j org.contentmine.graphics.svg.cache.LineBoxCache Level.INFO"
 				+ " --cache line polyline polygon shape text linebox"
 				;
-		new AMIGraphicsTool().runCommands(cmd);
+//		LOG.warn("cmd "+cmd);
+		AMI.execute(cmd);
+//		new AMIGraphicsTool().runCommands(cmd);
 //		System.out.println("created file "+file);
-		Assert.assertTrue(file+" exists", file.exists() && file.getAbsolutePath().endsWith("src/test/resources/org/contentmine/ami/pdf2svg2/problems/lichtenburg19a/svg/page.1/line.svg"));
+		Assert.assertTrue(file+" exists", file.exists() &&
+				file.getAbsolutePath().endsWith("src/test/resources/org/contentmine/ami/pdf2svg2/problems/lichtenburg19a/svg/page.1/line.svg"));
 	}
 
 	@Test
@@ -247,10 +251,13 @@ public class AMIGraphicsTest extends AbstractAMITest {
 		String cmd = "-p "+testProject
 				+ " --forcemake"
 				+ " -v"
-				+ " --log4j org.contentmine.graphics.svg.cache.LineBoxCache Level.INFO"
+//				+ " --log4j org.contentmine.graphics.svg.cache.LineBoxCache=Level.INFO"
+				+ " --log4j org.contentmine.graphics.svg.cache.LineBoxCache=INFO"
+				+ " graphics"
 				+ " --cache line polyline polygon shape text linebox"
 				;
-		new AMIGraphicsTool().runCommands(cmd);
+		AMI.execute(cmd);
+//		new AMIGraphicsTool().runCommands(cmd);
 		assertExists(new File(PDF2SVG2, "test/lichtenburg19a/svg/page.1/linebox.svg"));
 		assertExists(new File(PDF2SVG2, "test/lichtenburg19a/svg/page.4/polygon.svg"));
 	}
@@ -268,10 +275,12 @@ public class AMIGraphicsTest extends AbstractAMITest {
 		File testProject = AbstractAMITest.OIL186;
 		String cmd = "-p "+testProject
 				+ " -v"
-				+ " --log4j org.contentmine.ami.tools.AMIGraphicsTool INFO"
+				+ " --log4j org.contentmine.ami.tools.AMIGraphicsTool=INFO"
+				+ " graphics"
 				+ " --cache line polyline polygon shape text linebox"
 				;
-		new AMIGraphicsTool().runCommands(cmd);
+		AMI.execute(cmd);
+//		new AMIGraphicsTool().runCommands(cmd);
 	}
 	
 	@Test

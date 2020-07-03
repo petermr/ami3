@@ -257,7 +257,7 @@ private static final String HTTPS_EN_WIKIPEDIA_ORG = "https://en.wikipedia.org";
 	}
 
 	private void createDictionary() {
-		String dictionaryName = null;
+		dictionaryName = null;
 		InputStream inputStream = null;
 		if (input() != null) {
 			inputStream = getInputStreamFromFile();
@@ -728,11 +728,12 @@ private static final String HTTPS_EN_WIKIPEDIA_ORG = "https://en.wikipedia.org";
 			throw new RuntimeException("must give directory for dictionaries");
 		}
 		if (outformats != null) {
-			
-			String dictionaryName = parent.getDictionaryList() != null && parent.getDictionaryList().size() == 1 ? parent.getDictionaryList().get(0) :
-				currentTemplateName != null ? createDictionaryName(currentTemplateName) : null;
 			if (dictionaryName == null) {
-				throw new RuntimeException("cannot create dictionaryName");
+				dictionaryName = parent.getDictionaryList() != null && parent.getDictionaryList().size() == 1 ? parent.getDictionaryList().get(0) :
+					currentTemplateName != null ? createDictionaryName(currentTemplateName) : null;
+				if (dictionaryName == null) {
+					throw new RuntimeException("cannot create dictionaryName");
+				}
 			}
 			writeDictionary(dictionaryName);
 		}

@@ -232,9 +232,38 @@ islands > (10,10): islands: 6
 		AMIPixelTest.tidyAndAnalyzeLargestIslands(imageFile, maxHairLength, islandList, maxIslands);
 	}
 
+	@Test
+	/** refactor this */
+	
+	public void testSingleOctreeLayerDemo() {
+		String amiDir = "battery10";
+		String cTreeName = "PMC4062906";
+		String imageDirName = "image.5.1.66_281.517_691";
+		String layerName = "octree";
+//		String channelName = "channel.f51d1d";
+		String channelName = "channel.181616";
+//		channel.f51d1d.png
+//		channel.181616.png
+		File imageFile = createChannelImageFile(amiDir, cTreeName, imageDirName, layerName, channelName);
+		System.out.println(imageFile);
+		
+		BufferedImage image = ImageUtil.readImage(imageFile);
+		image = ImageUtil.boofCVBinarization(image, 200);
+		image = ImageUtil.thin(image, new HilditchThinning(image));
+		
+		ImageUtil.writeImageQuietly(image, new File(imageFile.toString()+".thin.png"));
+		
+		PixelIslandList islandList = PixelIslandList.createTidiedPixelIslandList(image);
+//		Assert.assertEquals("size", 147, islandList.size());
+		
+		int maxIslands = 10;
+		int maxHairLength = 10;
+		AMIPixelTest.tidyAndAnalyzeLargestIslands(imageFile, maxHairLength, islandList, maxIslands);
+	}
+
 
 	@Test
-	public void testTraceIntersectingLines() {
+	public void testTraceIntersectingLinesNotCompleted() {
 			org.apache.logging.log4j.core.config.Configurator.setLevel("org.contentmine.ami.tools.AMIPixelTest", Level.DEBUG);
 
 				this

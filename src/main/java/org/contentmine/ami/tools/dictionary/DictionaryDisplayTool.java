@@ -44,6 +44,39 @@ private static final int DEFAULT_MAX_ENTRIES = 3;
 	private static final String FULL = "FULL";
 	private static final String LIST = "LIST";
 
+	public enum DescAttributeName {
+		author("name, free form"),
+		date("as ISO 8601"),
+		type("free form"),
+		;
+		private String description;
+
+		private DescAttributeName(String description) {
+			this.description = description; 
+		}
+
+		public static String getType(Element desc) {
+			return desc == null ? null : desc.getAttributeValue("type");
+		}
+	}
+
+	public enum EntryAttributeName {
+		author("name of who added this"),
+		date("when added"),
+		provenance("how created? use "),
+		id("local id name of the entry"),
+		name("fuller name of the entry"),
+		term("the search term"),
+		term_lang("language equivalent (lang == 2-letter lowercase code)"),
+		wikidata("wikidata id"),
+		wikipedia("wikipedia page name"),
+		;
+		private String description;
+
+		private EntryAttributeName(String description) {
+			this.description = description; 
+		}
+	}
 
 	private List<Path> paths;
 	
@@ -81,6 +114,11 @@ private static final int DEFAULT_MAX_ENTRIES = 3;
     private List<String> remoteUrls = new ArrayList<>(Arrays.asList(
     		new String[] {"https://github.com/petermr/dictionary"}));
 
+    @Option(names = {"--validate"}, 
+ //   		arity="1..*",
+   		    description = "add validation annotation)"
+    		)
+    private boolean validate = true;
 
 	public DictionaryDisplayTool() {
 		super();
@@ -150,6 +188,7 @@ private static final int DEFAULT_MAX_ENTRIES = 3;
 		LOG.warn("\nDictionary: "+dictionary+"\n");
 		List<Element> entries = XMLUtil.getQueryElements(dictionaryElement, "./*[local-name()='entry']");
 		LOG.warn("entries: "+entries.size());
+		LOG.warn("validate "+validate);
 		printDescs(dictionaryElement);
 		printFieldSummary(dictionaryElement);
 		printEntries(dictionaryElement);
@@ -172,7 +211,18 @@ private static final int DEFAULT_MAX_ENTRIES = 3;
 		List<Element> descList = XMLUtil.getQueryElements(dictionaryElement, "./*[local-name()='desc']");
 		for (Element desc : descList) {
 			LOG.warn("Desc: "+desc.getValue());
+			if (validate) {
+				validateDesc(desc);
+			}
 		}
+	}
+
+	private String validateDesc(Element desc) {
+		String type = DescAttributeName.getType(desc);
+		if (type == null) {
+			LOG.error("No type for: " + desc.toXML());
+		}
+		return type;
 	}
 
 	private void printEntries(Element dictionaryElement) {
@@ -180,7 +230,22 @@ private static final int DEFAULT_MAX_ENTRIES = 3;
 		for (int i = 0; i < Math.min(entryList.size(), maxEntries); i++) {
 			Element entry =  entryList.get(i);
 			LOG.warn("    "+entry.getAttributeValue("term"));
+			if (validate) {
+				validateEntry(entry);
+			}
 		}
+		if (maxEntries < entryList.size()) {
+			LOG.warn("    " + "....");
+		}
+	}
+
+	private String validateEntry(Element entry) {
+		if 
+		String type = DescAttributeName.getType(entry);
+		if (type == null) {
+			LOG.error("No type for: " + desc.toXML());
+		}
+		return type;
 	}
 
 	// ================== LIST ===================

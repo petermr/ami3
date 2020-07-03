@@ -300,7 +300,7 @@ public enum AMIImageType {
 
     @Option(names = {"--octree"},
     		arity = "1",
-            description = "levels of quantization using Octree (power of 2)")
+            description = "levels of quantization using Octree (power of 2) - 8 is good")
     private Integer octreeCount;
 
     @Option(names = {"--outputfiles"},
@@ -310,7 +310,7 @@ public enum AMIImageType {
 
     @Option(names = {"--panels"},
     		arity = "1..*",
-            description = "split images into panels")
+            description = "split images into panels NYI ")
     private Map<PanelKey, String> panelMap;
 
     @Option(names = {"--posterize"},
