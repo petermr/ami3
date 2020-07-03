@@ -240,7 +240,6 @@ private static final int DEFAULT_MAX_ENTRIES = 3;
 	}
 
 	private String validateEntry(Element entry) {
-		if 
 		String type = DescAttributeName.getType(entry);
 		if (type == null) {
 			LOG.error("No type for: " + desc.toXML());
