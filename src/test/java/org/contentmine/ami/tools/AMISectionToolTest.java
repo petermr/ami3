@@ -99,6 +99,48 @@ public class AMISectionToolTest extends AbstractAMITest {
 	}
 	
 	@Test
+	public void testSectionsSummaryBug() {
+		String args;
+		args = ""
+				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
+				+ " --forcemake"
+				+ " section"
+				+ " --sections ALL"
+			;
+		AMI.execute(AMISectionTool.class, args);
+		System.err.println("=======end 1 runs OK ========");
+		args = ""
+				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
+				+ " --forcemake"
+				+ " section"
+				+ " --sections ALL"
+				+ " --summary foo"
+			;
+		AMI.execute(AMISectionTool.class, args);
+		System.err.println("=======end 2 runs OK, detects bad arg 'foo' ========\n"
+				+ "Invalid value for option '--summary' at index 0 (<summaryList>): "
+				+ "    expected one of [figure, results, supplementary, table] (case-sensitive) but was 'foo'\n" + 
+				"Usage: ami section [OPTIONS]\n" + 
+				"Try 'ami section --help' for more information.\n"
+				+ "===============================" + 
+				"");
+		args = ""
+				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
+				+ " --forcemake"
+				+ " section"
+				+ " --sections ALL"
+				+ " --summary figure"
+			;
+		AMI.execute(AMISectionTool.class, args);
+		System.err.println("=======end 3 fails========\n"
+				+ "Expected parameter for option '--summary' but found 'figure'\n" + 
+				"Usage: ami section [OPTIONS]\n" + 
+				"Try 'ami section --help' for more information.\n" + 
+				"==============================");
+		
+	}
+	
+	@Test
 	/** selects some of the sections and then cut out the XML sections
 	 * 
 	 */
@@ -108,19 +150,16 @@ public class AMISectionToolTest extends AbstractAMITest {
 //				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
 				+ " -v"
 				+ " --forcemake"
+				+ " section"
 				+ " --sections "
 				+ " " + SectionTag.ALL
-//				+ " " + SectionTag.ARTICLE
-//				+ " " + SectionTag.AUTO
-//				+ " " + SectionTag.TITLE
-//				+ " " + SectionTag.ABSTRACT
-//				+ " " + SectionTag.METHODS
-//				+ " --sectiontype HTML"
 				+ " --sectiontype XML"
+				+ " --summary figure"
 				+ " --html nlm2html"
 //				+ " --write false"
 			;
-		new AMISectionTool().runCommands(args);
+		AMI.execute(AMISectionTool.class, args);
+//		new AMISectionTool().runCommands(args);
 	}
 
 
@@ -139,11 +178,13 @@ public class AMISectionToolTest extends AbstractAMITest {
 //		File dir = CMIP200;
 		File dir = OIL186;
 		String args = ""
-				+ "-p " + dir 
+				+ " -p " + dir 
+				+ " section"
 				+ " --summary table figure supplementary"
 				+ " --forcemake"
 			;
-		new AMISectionTool().runCommands(args);
+//		new AMISectionTool().runCommands(args);
+		AMI.execute(args);
 	}
 	
 	@Test
@@ -220,13 +261,29 @@ public class AMISectionToolTest extends AbstractAMITest {
 //				+ "-p " + "/Users/pm286/workspace/projects/climate/searches/climatechange"
 //				+ " -v"
 				+ " --forcemake"
-				+ " --extract table fig"
+				+ " section"
+				+ " --extract table figure"
 //				+ " --sections "
 //				+ " " + SectionTag.ARTICLE
 //				+ " --write false
 
 			;
-		new AMISectionTool().runCommands(args);
+		AMI.execute(args);
+//		new AMISectionTool().runCommands(args);
+	}
+
+	@Test
+	public void testAUTO1() {
+		String args = ""
+				+ "-p " + TEST_BATTERY10
+				+ " -v"
+				+ " --forcemake"
+				+ " section"
+//				+ " --extract table figure"
+				+ " --summary figure table"  
+			;
+		AMI.execute(args);
+//		new AMISectionTool().runCommands(args);
 	}
 
 	@Test
@@ -244,17 +301,13 @@ public class AMISectionToolTest extends AbstractAMITest {
 	@Test
 	public void testSummary() {
 		String args = ""
-//				+ "-t " + new File(AMIFixtures.TEST_OIL5_DIR, "PMC4391421")
-//				+ "-p " + AMIFixtures.TEST_OIL5_DIR
-//				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
-//				+ "-p " + "/Users/pm286/workspace/projects/climate/searches/clim107"
 				+ "-p " + "/Users/pm286/workspace/projects/CEV/searches/oil186"
-//				+ "-p " + "/Users/pm286/workspace/projects/CEV/searches/oil1000"
-//				+ "-p " + "/Users/pm286/workspace/projects/climate/searches/climatechange"
 				+ " --forcemake"
+				+ " sections"
 				+ " --extract table fig"
 				+ " --summary figure table "
 			;
+
 		new AMISectionTool().runCommands(args);
 	}
 
@@ -624,6 +677,8 @@ public class AMISectionToolTest extends AbstractAMITest {
 		XMLUtil.debug(hypertree, new File(AbstractAMITest.OIL186, "hypertree.xml"), 1);
 	}
 
+	// ================= BUGS ===========
+	
 }
 		
 	

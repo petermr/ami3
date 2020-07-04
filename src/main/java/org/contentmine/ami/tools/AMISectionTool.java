@@ -182,7 +182,7 @@ public enum SummaryType {
 
     @Option(names = {"--summary"},
     		arity = "1..*",
-            description = "create summary files for sections")
+            description = "create summary files for sections (${COMPLETION-CANDIDATES})")
     private List<SummaryType> summaryList = new ArrayList<>();
 
 //    @Option(names = {"--tables"},

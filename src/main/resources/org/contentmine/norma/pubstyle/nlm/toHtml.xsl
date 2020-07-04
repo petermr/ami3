@@ -50,14 +50,14 @@ UNKNOWN nlm: alt-text:
 <!-- unmatched, ignore -->
 	<xsl:template match="
 		*[local-name()='data-title'] | 
-		*[local-name()='data-title'] | 
 		*[local-name()='license_ref'] | 
 		*[local-name()='sans-serif'] |
 		*[local-name()='chem-struct'] |
 		*[local-name()='term-head'] | 
 		*[local-name()='def-head'] |
 		*[local-name()='alt-text']
-	" >[<xsl:value-of select='local-name()'/>] <xsl:apply-templates/></xsl:template> 
+	" ><div tag="{local-name()}"><xsl:apply-templates/></div></xsl:template> 
+	
 
 
 <!--  HTML5 -->
@@ -113,7 +113,14 @@ UNKNOWN nlm: alt-text:
 		
 <!--  HTML-like -->
 	<xsl:template match="
-		*[local-name()='graphic'] 
+		*[local-name()='graphic']
+		">
+		<div class="{local-name()}">
+		   <xsl:copy-of select="@*"/>
+          <xsl:apply-templates/>
+        </div>
+		
+	</xsl:template> 
 
 <!--  SVG -->
 	<xsl:template match="
