@@ -1,9 +1,20 @@
 package org.contentmine.ami.tools.dictionary;
 
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-import nu.xom.Attribute;
-import nu.xom.Element;
+import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import org.apache.commons.io.IOUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -29,24 +40,15 @@ import org.contentmine.graphics.html.HtmlTbody;
 import org.contentmine.graphics.html.HtmlTr;
 import org.contentmine.graphics.html.HtmlUl;
 import org.contentmine.graphics.html.util.HtmlUtil;
+
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+
+import nu.xom.Attribute;
+import nu.xom.Element;
 import picocli.CommandLine;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
-
-import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 @Command(
 		name = "create",
@@ -56,11 +58,18 @@ import java.util.regex.Pattern;
 				+ ""
 		})
 public class DictionaryCreationTool extends AbstractAMIDictTool {
-
 	public static final Logger LOG = LogManager.getLogger(DictionaryCreationTool.class);
-//	public static final Logger LOG = LogManager.getLogger(DictionaryCreationTool.class);
-private static final String HTTPS_EN_WIKIPEDIA_ORG = "https://en.wikipedia.org";
+
+	private static final String HTTPS_EN_WIKIPEDIA_ORG = "https://en.wikipedia.org";
+	private static final String LITERAL = "literal";
+	private static final String NAME = "name";
 	private static final String SLASH_WIKI_SLASH = "/wiki/";
+	private static final String SYNONYMS = "synonyms";
+	private static final String URI = "uri";
+	private static final String WIKIDATA = "wikidata";
+	private static final String WIKIDATA_ALT_LABEL = "wikidataAltLabel";
+	private static final String WIKIDATA_LABEL = "wikidataLabel";
+	private static final String WIKIPEDIA = "wikipedia";
 	private final static String WIKIPEDIA_BASE = HTTPS_EN_WIKIPEDIA_ORG + SLASH_WIKI_SLASH;
 
 	private List<String> termList;
@@ -273,19 +282,28 @@ private static final String HTTPS_EN_WIKIPEDIA_ORG = "https://en.wikipedia.org";
 			dictionaryName = "test";
 		}
 	
+		if (informat == null) {
+			LOG.error("no input format given ");
+			showstopperEncountered = true;
+			return;
+		}
+
 		if (inputStream == null && termList == null) {
 			throw new RuntimeException("'input' or 'inputname' must be given");
 		}
-		
-		readTerms(inputStream);
-		if (informat == null) return;
+		dictionaryElement = DefaultAMIDictionary.createDictionaryWithTitle(dictionaryName);
+		if (InputFormat.wikisparqlxml.equals(informat)) {
+			readSparqlXml(inputStream);
+			writeDictionary();
+		} else {
+			readTerms(inputStream);
+			synchroniseTermsAndNames();
+			writeNamesAndLinks();
+		}
 		if (inputStream != null) {
 			try { inputStream.close(); } catch (IOException ignored) {}
 		}
-		synchroniseTermsAndNames();
-		dictionaryElement = DefaultAMIDictionary.createDictionaryWithTitle(dictionaryName);
 		
-		writeNamesAndLinks();
 	}
 
 	private void readTerms(InputStream inputStream) {
@@ -299,6 +317,8 @@ private static final String HTTPS_EN_WIKIPEDIA_ORG = "https://en.wikipedia.org";
 			readCSV(inputStream);
 		} else if (InputFormat.list.equals(informat)) {
 			readList(inputStream);
+		} else if (InputFormat.wikisparqlxml.equals(informat)) {
+			readSparqlXml(inputStream);
 		} else if (InputFormat.mediawikitemplate.equals(informat) ||
 				InputFormat.wikicategory.equals(informat) ||
 				InputFormat.wikipage.equals(informat) ||
@@ -368,6 +388,125 @@ private static final String HTTPS_EN_WIKIPEDIA_ORG = "https://en.wikipedia.org";
 		}
 		createSortedTermList();
 	}
+
+	// ============= SPARQL INPUT ============
+	private void readSparqlXml(InputStream inputStream) {
+		/**
+<sparql xmlns='http://www.w3.org/2005/sparql-results#'>
+	<head>
+		<variable name='wikidata'/>
+		<variable name='wikidataLabel'/>
+		<variable name='wikipedia'/>
+		<variable name='wikidataAltLabel'/>
+		<variable name='synonyms'/>
+	</head>
+	<results>
+		<result>
+			<binding name='wikidata'>
+				<uri>http://www.wikidata.org/entity/Q16</uri>
+			</binding>
+			<binding name='synonyms'>
+				<literal>🇨🇦</literal>
+			</binding>
+			<binding name='wikipedia'>
+				<uri>https://en.wikipedia.org/wiki/Canada</uri>
+			</binding>
+			<binding name='wikidataLabel'>
+				<literal xml:lang='en'>Canada</literal>
+			</binding>
+			<binding name='wikidataAltLabel'>
+				<literal xml:lang='en'>CA, ca, CDN, can, CAN, British North America, 🇨🇦, Dominion of Canada</literal>
+			</binding>
+		</result>		 
+		...
+		*/
+		Element desc = new Element(DefaultAMIDictionary.DESC);
+		desc.appendChild("Created from SPARQL query");
+		dictionaryElement.appendChild(desc);
+		Element sparqlXml = XMLUtil.parseQuietlyToRootElement(inputStream, CMineUtil.UTF8_CHARSET);
+		Element headElement = XMLUtil.getFirstElement(sparqlXml, "./*[local-name() = 'head']");
+		List<String> variables = XMLUtil.getQueryValues(headElement, "./*[local-name()='variable']/@name");
+		LOG.info("names " + variables);
+		List<Element> resultList = XMLUtil.getQueryElements(sparqlXml, "./*[local-name()='results']/*[local-name()='result']");
+		LOG.info("results " + resultList.size());
+		
+		for (Element result : resultList) {
+			Element entry = new Element(DefaultAMIDictionary.ENTRY);
+			addWikidataID(entry, result);
+			addSynonyms(entry, result);
+			addWikipediaName(entry, result);
+			addWikidataLabelName(entry, result);
+			dictionaryElement.appendChild(entry);
+		}
+	}
+	private void addWikidataLabelName(Element entry, Element result) {
+		/**
+			<binding name='wikidataLabel'>
+				<literal xml:lang='en'>Canada</literal>
+			</binding>
+		 */
+		String literal = getValue(result, WIKIDATA_LABEL, LITERAL);
+		if (literal != null) {
+			entry.addAttribute(new Attribute(NAME, literal));
+		}
+	}
+
+	private static String getValue(Element result, String bindingName, String childName) {
+		String xpath = "./*[local-name()='binding' and @name='" + bindingName + "']/*[local-name()='" + childName + "']";
+		return XMLUtil.getSingleValue(result, xpath);
+	}
+
+	private void addWikipediaName(Element entry, Element result) {
+		/**
+			<binding name='wikipedia'>
+				<uri>https://en.wikipedia.org/wiki/Canada</uri>
+			</binding>
+		 */
+		String name = getValue(result, WIKIPEDIA, URI);
+		if (name != null) {
+			name = name.substring(name.lastIndexOf("/") + 1);
+			entry.addAttribute(new Attribute(WIKIPEDIA, name));
+		}
+	}
+
+	private void addSynonyms(Element entry, Element result) {
+		/**
+		<binding name='synonyms'>
+			<literal>🇨🇦</literal>
+		</binding>
+		<binding name='wikidataAltLabel'>
+		  <literal xml:lang='en'>CA, ca, CDN, can, CAN, British North America, 🇨🇦, Dominion of Canada</literal>
+		</binding>
+		*/
+		splitAndAdd(result, entry, SYNONYMS);
+		splitAndAdd(result, entry, WIKIDATA_ALT_LABEL);
+
+	}
+
+	private void splitAndAdd(Element result, Element entry, String bindingName) {
+		String literal = getValue(result, bindingName, LITERAL);
+		if (literal != null) {
+			List<String> synonyms = Arrays.asList(literal.split("\\s*,\\s*"));
+			for (String synonym : synonyms) {
+				Element synonymElement = new Element(DefaultAMIDictionary.SYNONYM);
+				synonymElement.appendChild(synonym);
+				entry.appendChild(synonymElement);
+			}
+		}
+	}
+
+	private static void addWikidataID(Element entry, Element result) {
+		/**
+			<binding name='wikidata'>
+				<uri>http://www.wikidata.org/entity/Q16</uri>
+			</binding>
+		 */
+		String id = DictionaryCreationTool.getValue(result, WIKIDATA, URI);
+		id = id.substring(id.lastIndexOf("/") + 1);
+		entry.addAttribute(new Attribute(DefaultAMIDictionary.WIKIDATA, id));
+	}
+
+	// ============= END SPARQL INPUT ============
 
 	private void createSortedTermList() {
 		if (termSet == null || termList == null) {
@@ -450,7 +589,7 @@ private static final String HTTPS_EN_WIKIPEDIA_ORG = "https://en.wikipedia.org";
 		}
 		LOG.info(SPECIAL, "names "+nameList.size()+"; terms "+termList.size());
 		addEntriesToDictionaryElement();
-		createAndAddQueryElement();
+//		createAndAddQueryElement();
 		writeDictionary();
 		return;
 	}
@@ -723,18 +862,25 @@ private static final String HTTPS_EN_WIKIPEDIA_ORG = "https://en.wikipedia.org";
 	 *  
 	 */
 	private void writeDictionary() {
+		String dictionaryNameRoot = parent.getDictionaryList() != null && parent.getDictionaryList().size() == 1 ?
+				parent.getDictionaryList().get(0) :
+				currentTemplateName != null ? createDictionaryName(currentTemplateName) : null;
+				
 		getOrCreateExistingDictionaryTop();
 		if (dictionaryTop == null) {
 			throw new RuntimeException("must give directory for dictionaries");
+		} else {
+			dictionaryName = dictionaryNameRoot;
 		}
 		if (outformats != null) {
 			if (dictionaryName == null) {
-				dictionaryName = parent.getDictionaryList() != null && parent.getDictionaryList().size() == 1 ? parent.getDictionaryList().get(0) :
+				dictionaryName = parent.getDictionaryList() != null && parent.getDictionaryList().size() == 1 ?
+					parent.getDictionaryList().get(0) :
 					currentTemplateName != null ? createDictionaryName(currentTemplateName) : null;
 				if (dictionaryName == null) {
 					throw new RuntimeException("cannot create dictionaryName");
 				}
-			}
+			} 
 			writeDictionary(dictionaryName);
 		}
 	}
@@ -743,11 +889,15 @@ private static final String HTTPS_EN_WIKIPEDIA_ORG = "https://en.wikipedia.org";
 		String idValue = CM_PREFIX + dictionaryId + DOT + serial;
 		System.err.print("+"); // TODO progress indicator
 		entry.addAttribute(new Attribute(DictionaryTerm.ID, idValue));
+		addTrimmedWikipediaURL(entry, urlValue);
+		dictionaryElement.appendChild(entry);
+	}
+
+	private static void addTrimmedWikipediaURL(Element entry, String urlValue) {
 		if (urlValue != null) {
 			urlValue = trimWikipediaUrlBase(urlValue);
 			entry.addAttribute(new Attribute(DictionaryTerm.WIKIPEDIA, urlValue));
 		}
-		dictionaryElement.appendChild(entry);
 	}
 
 	private void removeEntriesWithEmptyIdsSortRemoveDuplicates(List<Element> entryList) {
@@ -786,7 +936,7 @@ private static final String HTTPS_EN_WIKIPEDIA_ORG = "https://en.wikipedia.org";
 		}
 	}
 	
-	private String trimWikipediaUrlBase(String urlValue) {
+	private static String trimWikipediaUrlBase(String urlValue) {
 		if (urlValue.startsWith(SLASH_WIKI_SLASH)) {
 			urlValue = urlValue.substring(SLASH_WIKI_SLASH.length());
 		} 
@@ -797,6 +947,8 @@ private static final String HTTPS_EN_WIKIPEDIA_ORG = "https://en.wikipedia.org";
 	}
 
 	private void writeDictionary(String dictionary) {
+		// this is slightly messy - 
+		dictionaryElement.addAttribute(new Attribute(DefaultAMIDictionary.TITLE, dictionary));
 		File subDirectory = getOrCreateExistingSubdirectory(dictionary);
 		if (subDirectory != null) {
 			List<DictionaryFileFormat> outformatList = Arrays.asList(outformats);

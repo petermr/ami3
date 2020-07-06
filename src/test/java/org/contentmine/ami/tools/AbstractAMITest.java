@@ -38,6 +38,7 @@ public abstract class AbstractAMITest {
 	
 	public static final File TEST_BATTERY10 = new File(SRC_TEST_AMI, "battery10");
 	public static final File TEST_BATTERY10COMPUTE = new File(SRC_TEST_AMI, "battery10compute");
+	public static final File TEST_DICTIONARY = new File(SRC_TEST_AMI, "dictionary");
 	
 	public static File WORKSPACE = new File(_HOME, "workspace/");
 	public static File PROJECTS = WORKSPACE.exists() ? new File(WORKSPACE, "projects/") : NEW_PROJECTS;

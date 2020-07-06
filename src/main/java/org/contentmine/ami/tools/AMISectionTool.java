@@ -106,7 +106,7 @@ public class AMISectionTool extends AbstractAMITool {
 
 	private static final Logger LOG = LogManager.getLogger(AMISectionTool.class);
 public enum SummaryType {
-		figure(FIGURES_DIR, FIGURE_SUMMARY_DIRNAME),
+		fig(FIGURES_DIR, FIGURE_SUMMARY_DIRNAME),
 		results(RESULTS_DIR, RESULTS_SUMMARY_DIRNAMR),
 		supplementary(SUPPLEMENTARY_DIR, SUPPLEMENTARY_SUMMARY_DIRNAME),
 		table(TABLES_DIR, TABLE_SUMMARY_DIRNAME),;
@@ -153,7 +153,7 @@ public enum SummaryType {
     private String xsltName = null;
 
     @Option(names = {"--extract"},
-    		arity = "0..*",
+//    		arity = "0..*",
             description = "extract float elements to subdirectory,"
             		+ "default table, fig, supplementary) ")
     private List<FloatType> extractList = new ArrayList<FloatType>(
@@ -165,8 +165,7 @@ public enum SummaryType {
 //    private List<String> figureList = null;
 
     @Option(names = {"--sections"},
-    		arity = "0..*",
-//    		required = true,
+    		arity = "1..*",
             description = "sections to extract (uses JATSSectionTagger) %n"
             		+ "if none, lists Tagger tags%n"
             		+ "ALL selects all tags in Tagger%n"
@@ -239,6 +238,7 @@ public enum SummaryType {
 	private void writeSummaries() {
 		if (cProject != null) {
 			for (SummaryType summaryType : summaryList) {
+				LOG.info("making summary: " + summaryType);
 				HtmlTable totalSummaryTable = createTotalSummary(summaryType);
 				File summaryDir = new File(cProject.getDirectory(), summaryType.getSummaryPath());
 				summaryDir.mkdirs();

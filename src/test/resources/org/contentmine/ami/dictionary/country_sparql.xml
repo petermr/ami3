@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<sparql xmlns='http://www.w3.org/2005/sparql-results#'>
+	<head>
+		<variable name='wikidata'/>
+		<variable name='wikidataLabel'/>
+		<variable name='wikipedia'/>
+		<variable name='wikidataAltLabel'/>
+		<variable name='synonyms'/>
+	</head>
+	<results>
+		<result>
+			<binding name='wikidata'>
+				<uri>http://www.wikidata.org/entity/Q16</uri>
+			</binding>
+			<binding name='synonyms'>
+				<literal>🇨🇦</literal>
+			</binding>
+			<binding name='wikipedia'>
+				<uri>https://en.wikipedia.org/wiki/Canada</uri>
+			</binding>
+			<binding name='wikidataLabel'>
+				<literal xml:lang='en'>Canada</literal>
+			</binding>
+			<binding name='wikidataAltLabel'>
+				<literal xml:lang='en'>CA, ca, CDN, can, CAN, British North America, 🇨🇦, Dominion of Canada</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='wikidata'>
+				<uri>http://www.wikidata.org/entity/Q258</uri>
+			</binding>
+			<binding name='synonyms'>
+				<literal>🇿🇦</literal>
+			</binding>
+			<binding name='wikipedia'>
+				<uri>https://en.wikipedia.org/wiki/South_Africa</uri>
+			</binding>
+			<binding name='wikidataLabel'>
+				<literal xml:lang='en'>South Africa</literal>
+			</binding>
+			<binding name='wikidataAltLabel'>
+				<literal xml:lang='en'>SA, za, Republic of South Africa, RSA, 🇿🇦, zaf</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='wikidata'>
+				<uri>http://www.wikidata.org/entity/Q30</uri>
+			</binding>
+			<binding name='synonyms'>
+				<literal>🇺🇸</literal>
+			</binding>
+			<binding name='wikipedia'>
+				<uri>https://en.wikipedia.org/wiki/United_States</uri>
+			</binding>
+			<binding name='wikidataLabel'>
+				<literal xml:lang='en'>United States of America</literal>
+			</binding>
+			<binding name='wikidataAltLabel'>
+				<literal xml:lang='en'>America, United States, USA, US, the United States, the United States of America, the US, the USA, U.S., U.S.A., US of A, U. S., U. S. A., the States</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='wikidata'>
+				<uri>http://www.wikidata.org/entity/Q419</uri>
+			</binding>
+			<binding name='synonyms'>
+				<literal>🇵🇪</literal>
+			</binding>
+			<binding name='wikipedia'>
+				<uri>https://en.wikipedia.org/wiki/Peru</uri>
+			</binding>
+			<binding name='wikidataLabel'>
+				<literal xml:lang='en'>Peru</literal>
+			</binding>
+			<binding name='wikidataAltLabel'>
+				<literal xml:lang='en'>pe, 🇵🇪, Republic of Peru, Republica del Peru, República del Perú</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='wikidata'>
+				<uri>http://www.wikidata.org/entity/Q262</uri>
+			</binding>
+			<binding name='synonyms'>
+				<literal>🇩🇿</literal>
+			</binding>
+			<binding name='wikipedia'>
+				<uri>https://en.wikipedia.org/wiki/Algeria</uri>
+			</binding>
+			<binding name='wikidataLabel'>
+				<literal xml:lang='en'>Algeria</literal>
+			</binding>
+			<binding name='wikidataAltLabel'>
+				<literal xml:lang='en'>ALG, dz, 🇩🇿, People’s Democratic Republic of Algeria</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='wikidata'>
+				<uri>http://www.wikidata.org/entity/Q17</uri>
+			</binding>
+			<binding name='synonyms'>
+				<literal>🇯🇵</literal>
+			</binding>
+			<binding name='wikipedia'>
+				<uri>https://en.wikipedia.org/wiki/Japan</uri>
+			</binding>
+			<binding name='wikidataLabel'>
+				<literal xml:lang='en'>Japan</literal>
+			</binding>
+			<binding name='wikidataAltLabel'>
+				<literal xml:lang='en'>JAP, JP, jp, JA, Land of the Rising Sun, Nippon, JPN, Nihon, Nihon-koku, Nippon-koku, State of Japan</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='wikidata'>
+				<uri>http://www.wikidata.org/entity/Q334</uri>
+			</binding>
+			<binding name='synonyms'>
+				<literal>🇸🇬</literal>
+			</binding>
+			<binding name='wikipedia'>
+				<uri>https://en.wikipedia.org/wiki/Singapore</uri>
+			</binding>
+			<binding name='wikidataLabel'>
+				<literal xml:lang='en'>Singapore</literal>
+			</binding>
+			<binding name='wikidataAltLabel'>
+				<literal xml:lang='en'>SG, Garden City, SGP, sg, Singapore City, Lion City, Republic of Singapore, 🇸🇬</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='wikidata'>
+				<uri>http://www.wikidata.org/entity/Q27</uri>
+			</binding>
+			<binding name='synonyms'>
+				<literal>🇮🇪</literal>
+			</binding>
+			<binding name='wikipedia'>
+				<uri>https://en.wikipedia.org/wiki/Republic_of_Ireland</uri>
+			</binding>
+			<binding name='wikidataLabel'>
+				<literal xml:lang='en'>Ireland</literal>
+			</binding>
+			<binding name='wikidataAltLabel'>
+				<literal xml:lang='en'>Southern Ireland, Eire, Éire, IRL, Hibernia, IE, ie, 🇮🇪, ireland, Ireland, Republic of, Republic of Ireland</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='wikidata'>
+				<uri>http://www.wikidata.org/entity/Q265</uri>
+			</binding>
+			<binding name='synonyms'>
+				<literal>🇺🇿</literal>
+			</binding>
+			<binding name='wikipedia'>
+				<uri>https://en.wikipedia.org/wiki/Uzbekistan</uri>
+			</binding>
+			<binding name='wikidataLabel'>
+				<literal xml:lang='en'>Uzbekistan</literal>
+			</binding>
+			<binding name='wikidataAltLabel'>
+				<literal xml:lang='en'>Republic of Uzbekistan, uz, 🇺🇿, UZB</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='wikidata'>
+				<uri>http://www.wikidata.org/entity/Q298</uri>
+			</binding>
+			<binding name='synonyms'>
+				<literal>🇨🇱</literal>
+			</binding>
+			<binding name='wikipedia'>
+				<uri>https://en.wikipedia.org/wiki/Chile</uri>
+			</binding>
+			<binding name='wikidataLabel'>
+				<literal xml:lang='en'>Chile</literal>
+			</binding>
+			<binding name='wikidataAltLabel'>
+				<literal xml:lang='en'>CHI, cl, 🇨🇱, Republic of Chile, Republica de Chile, República de Chile</literal>
+			</binding>
+		</result>
+	</results>
+</sparql>
+		

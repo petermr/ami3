@@ -22,11 +22,11 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.StringReader;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -34,8 +34,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.graphics.html.HtmlB;
@@ -1262,9 +1262,20 @@ public abstract class XMLUtil implements XMLConstants {
 		return doc == null ? null : doc.getRootElement();
 	}
 	
+	@Deprecated //"use encoding"
 	public static Element parseQuietlyToRootElement(InputStream is) {
 		Document doc = parseQuietlyToDocument(is);
 		return doc == null ? null : doc.getRootElement();
+	}
+		
+	public static Element parseQuietlyToRootElement(InputStream is, Charset encoding) {
+		String input = null;
+		try {
+			input = IOUtils.toString(is, encoding);
+		} catch (IOException e) {
+			throw new RuntimeException("cannot parse", e);
+		}
+		return XMLUtil.stripDTDAndParse(input);
 	}
 		
 	public static Document parseQuietlyToDocument(InputStream is) {

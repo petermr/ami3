@@ -1,13 +1,12 @@
 package org.contentmine.ami.tools;
 
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.contentmine.ami.AMIFixtures;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
@@ -51,6 +50,7 @@ import org.contentmine.norma.sections.SupplementalExtractor;
 import org.contentmine.norma.sections.TablesExtractor;
 import org.contentmine.norma.sections.TitlesExtractor;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import com.google.common.collect.Multiset;
@@ -99,16 +99,17 @@ public class AMISectionToolTest extends AbstractAMITest {
 	}
 	
 	@Test
+	@Ignore // FIXED
 	public void testSectionsSummaryBug() {
 		String args;
-		args = ""
-				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
-				+ " --forcemake"
-				+ " section"
-				+ " --sections ALL"
-			;
-		AMI.execute(AMISectionTool.class, args);
-		System.err.println("=======end 1 runs OK ========");
+//		args = ""
+//				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
+//				+ " --forcemake"
+//				+ " section"
+//				+ " --sections ALL"
+//			;
+//		AMI.execute(AMISectionTool.class, args);
+//		System.err.println("=======end 1 runs OK ========");
 		args = ""
 				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
 				+ " --forcemake"
@@ -117,26 +118,20 @@ public class AMISectionToolTest extends AbstractAMITest {
 				+ " --summary foo"
 			;
 		AMI.execute(AMISectionTool.class, args);
-		System.err.println("=======end 2 runs OK, detects bad arg 'foo' ========\n"
-				+ "Invalid value for option '--summary' at index 0 (<summaryList>): "
-				+ "    expected one of [figure, results, supplementary, table] (case-sensitive) but was 'foo'\n" + 
-				"Usage: ami section [OPTIONS]\n" + 
-				"Try 'ami section --help' for more information.\n"
-				+ "===============================" + 
-				"");
+		System.err.println(""
+				+ "=======2 runs OK: --summary detects bad arg 'foo' ========\n"
+				);
 		args = ""
 				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
 				+ " --forcemake"
 				+ " section"
 				+ " --sections ALL"
-				+ " --summary figure"
+				+ " --summary fig"
 			;
 		AMI.execute(AMISectionTool.class, args);
-		System.err.println("=======end 3 fails========\n"
-				+ "Expected parameter for option '--summary' but found 'figure'\n" + 
-				"Usage: ami section [OPTIONS]\n" + 
-				"Try 'ami section --help' for more information.\n" + 
-				"==============================");
+		System.err.println(""
+				+ "=======3 fails: Expected parameter for option '--summary' but found 'figure'========\n"
+				);
 		
 	}
 	

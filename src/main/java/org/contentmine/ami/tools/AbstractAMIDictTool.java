@@ -312,6 +312,7 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 		csv,
 		list,
 		mediawikitemplate,
+		wikisparqlxml,
 		wikicategory,
 		wikipage,
 		wikitable,
@@ -336,19 +337,25 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 	}
 	
 	public enum FieldType {
+		ALL,
 		ATTRIBUTE,
-		ELEMENT
+		ELEMENT,
 	}
 		
 	public enum DictionaryField {
-		description(FieldType.ELEMENT),
-		entry(FieldType.ELEMENT),
+		description(FieldType.ATTRIBUTE),
+		id(FieldType.ATTRIBUTE),
 		name(FieldType.ATTRIBUTE),
-		synonym(FieldType.ELEMENT),
 		term(FieldType.ATTRIBUTE),
 		title(FieldType.ATTRIBUTE),
 		wikidata(FieldType.ATTRIBUTE),
-		wikipedia(FieldType.ATTRIBUTE),;
+		wikipedia(FieldType.ATTRIBUTE),
+		
+		desc(FieldType.ELEMENT),
+		entry(FieldType.ELEMENT),
+		synonym(FieldType.ELEMENT),
+
+		;
 		
 		private FieldType fieldType;
 
@@ -358,6 +365,21 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 
 		public FieldType getType() {
 			return fieldType;
+		}
+		/**
+		 * gets field names of given FieldType
+		 * 
+		 * @param fieldType ATTRIBUTE, ELEMENT or ALL
+		 * @return
+		 */
+		public static List<String> getFieldNames(FieldType fieldType) {
+			List<String> fieldNames = new ArrayList<>();
+			for (DictionaryField dictionaryField : values()) {
+				if (dictionaryField.fieldType.equals(fieldType) || fieldType.equals(FieldType.ALL)) {
+					fieldNames.add(dictionaryField.toString());
+				}
+			}
+			return fieldNames;
 		}
 	}
 

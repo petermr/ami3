@@ -1,30 +1,22 @@
 package org.contentmine.ami.tools.dictionary;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.net.URL;
-import java.nio.file.FileStore;
-import java.nio.file.FileSystem;
-import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.contentmine.ami.tools.AbstractAMIDictTool;
 import org.contentmine.cproject.files.DebugPrint;
 import org.contentmine.cproject.util.CMineGlobber;
 import org.contentmine.eucl.xml.XMLUtil;
-import org.contentmine.norma.NAConstants;
 
-import com.google.common.collect.Lists;
-
+import nu.xom.Attribute;
 import nu.xom.Element;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
@@ -40,9 +32,34 @@ import picocli.CommandLine.Parameters;
 public class DictionaryDisplayTool extends AbstractAMIDictTool {
 
 	public static final Logger LOG = LogManager.getLogger(DictionaryDisplayTool.class);
-private static final int DEFAULT_MAX_ENTRIES = 3;
+
+	private static final String AUTHORS = "authors";
+	private static final String DATE = "date";
+	private static final String DESCRIPTION = "description";
+	private static final String ID = "id";
 	private static final String FULL = "FULL";
 	private static final String LIST = "LIST";
+	private static final String NAME = "name";
+	private static final String TERM = "term";
+	private static final String TITLE = "title";
+	private static final String URL = "url";
+	private static final String WIKIDATA = "wikidata";
+	private static final String WIKIPEDIA = "wikipedia";
+	private static final int    DEFAULT_MAX_ENTRIES = 3;
+	
+	private static List<String> ALLOWED_DICTIONARY_ATTRIBUTES = new ArrayList<>(Arrays.asList(
+			new String[]{}));
+	private static List<String> MANDATORY_DICTIONARY_ATTRIBUTES = new ArrayList<>(Arrays.asList(
+			new String[]{TITLE}));
+	private static List<String> ALLOWED_DESC_ATTRIBUTES = new ArrayList<>(Arrays.asList(
+			new String[]{AUTHORS, DATE}));
+	private static List<String> MANDATORY_DESC_ATTRIBUTES = new ArrayList<>(Arrays.asList(
+			new String[]{}));
+	private static List<String> ALLOWED_ENTRY_ATTRIBUTES = new ArrayList<>(Arrays.asList(
+			new String[]{ID, DESCRIPTION, NAME, TERM, URL, WIKIPEDIA, WIKIDATA }));
+	private static List<String> MANDATORY_ENTRY_ATTRIBUTES = new ArrayList<>(Arrays.asList(
+			new String[]{TERM}));
+
 
 	public enum DescAttributeName {
 		author("name, free form"),
@@ -55,12 +72,25 @@ private static final int DEFAULT_MAX_ENTRIES = 3;
 			this.description = description; 
 		}
 
-		public static String getType(Element desc) {
-			return desc == null ? null : desc.getAttributeValue("type");
+		/** gets DescAttributeName by value
+		 * @param val
+		 * @return
+		 */
+		public static List<String> getDescAttributeNames(Element desc) {
+			List<String> attNames = new ArrayList<>();
+			for (DescAttributeName value : values()) {
+				String attName = value.toString();
+				if (desc.getAttributeValue(attName) != null) {
+					attNames.add(attName);
+				}
+			}
+			return attNames;
 		}
+		
 	}
-
-	public enum EntryAttributeName {
+/**
+  	public enum EntryAttributeName {
+ 
 		author("name of who added this"),
 		date("when added"),
 		provenance("how created? use "),
@@ -77,7 +107,7 @@ private static final int DEFAULT_MAX_ENTRIES = 3;
 			this.description = description; 
 		}
 	}
-
+*/
 	private List<Path> paths;
 	
     @Parameters(index = "0",
@@ -90,7 +120,7 @@ private static final int DEFAULT_MAX_ENTRIES = 3;
     @Option(names = {"--fields"}, 
     		arity="0..*",
     	    split=",",
-   		    description = "list of fields to report 0 = (${COMPLETION-CANDIDATES})"
+   		    description = "list of fields to report 0 = (${COMPLETION-CANDIDATES}); 0 parameters lists all"
     		)
     private List<DictionaryField> fields = new ArrayList<>();
 
@@ -102,7 +132,6 @@ private static final int DEFAULT_MAX_ENTRIES = 3;
     
     @Option(names = {"--maxEntries"}, 
     		arity="1",
-//    		defaultValue = DEFAULT_MAX_ENTRIES,
    		    description = "max entries to list (${DEFAULT-VALUE}) in dictionary"
     		)
 	protected int maxEntries = DEFAULT_MAX_ENTRIES;
@@ -115,10 +144,13 @@ private static final int DEFAULT_MAX_ENTRIES = 3;
     		new String[] {"https://github.com/petermr/dictionary"}));
 
     @Option(names = {"--validate"}, 
- //   		arity="1..*",
    		    description = "add validation annotation)"
     		)
-    private boolean validate = true;
+    private boolean validate = false;
+    
+
+    private String dictionary;
+
 
 	public DictionaryDisplayTool() {
 		super();
@@ -126,7 +158,11 @@ private static final int DEFAULT_MAX_ENTRIES = 3;
 
 	@Override
 	protected void parseSpecifics() {
-		System.err.println("FIXME Not yet written"); //
+//		super.parseSpecifics();
+		if (fields.size() == 0) {
+			fields = new ArrayList<>(Arrays.asList(DictionaryField.values()));
+			LOG.info("list all fields ");
+		}
 	}
 
 	@Override
@@ -185,12 +221,14 @@ private static final int DEFAULT_MAX_ENTRIES = 3;
 	}
 
 	public void listDictionaryInfo(String dictionary, Element dictionaryElement) {
+		this.dictionary = dictionary;
 		LOG.warn("\nDictionary: "+dictionary+"\n");
 		List<Element> entries = XMLUtil.getQueryElements(dictionaryElement, "./*[local-name()='entry']");
 		LOG.warn("entries: "+entries.size());
 		LOG.warn("validate "+validate);
-		printDescs(dictionaryElement);
 		printFieldSummary(dictionaryElement);
+		printDictionary(dictionaryElement);
+		printDescs(dictionaryElement);
 		printEntries(dictionaryElement);
 	}
 
@@ -207,10 +245,31 @@ private static final int DEFAULT_MAX_ENTRIES = 3;
 		}
 	}
 
+	private void printDictionary(Element dictionaryElement) {
+		LOG.warn("dictionary: " + dictionary);
+		for (int i = 0; i < dictionaryElement.getAttributeCount(); i++) {
+			Attribute attribute = dictionaryElement.getAttribute(i);
+			String attName = attribute.getLocalName();
+			LOG.info("dictionary@" + attName + ": " + dictionaryElement.getAttributeValue(attName));
+		}
+		if (validate) {
+			validateDictionary(dictionaryElement);
+		}
+	}
+
+	private String validateDictionary(Element dictionaryElement) {
+		for (int i = 0; i < dictionaryElement.getAttributeCount(); i++) {
+			Attribute attribute = dictionaryElement.getAttribute(i);
+			String attName = attribute.getLocalName();
+			LOG.info("dictionary@" + attName + ": " + dictionaryElement.getAttributeValue(attName));
+		}
+		return null;
+	}
+
 	private void printDescs(Element dictionaryElement) {
 		List<Element> descList = XMLUtil.getQueryElements(dictionaryElement, "./*[local-name()='desc']");
 		for (Element desc : descList) {
-			LOG.warn("Desc: "+desc.getValue());
+			LOG.info("Desc: "+desc.getValue());
 			if (validate) {
 				validateDesc(desc);
 			}
@@ -218,20 +277,27 @@ private static final int DEFAULT_MAX_ENTRIES = 3;
 	}
 
 	private String validateDesc(Element desc) {
-		String type = DescAttributeName.getType(desc);
-		if (type == null) {
-			LOG.error("No type for: " + desc.toXML());
+		List<String> attNames = DescAttributeName.getDescAttributeNames(desc);
+		for (String attName : attNames) {
+			LOG.info(attName + ": " + desc.getAttributeValue(attName));
 		}
-		return type;
+		return null;
 	}
 
 	private void printEntries(Element dictionaryElement) {
 		List<Element> entryList = XMLUtil.getQueryElements(dictionaryElement, "./*[local-name()='entry']");
-		for (int i = 0; i < Math.min(entryList.size(), maxEntries); i++) {
+		for (int i = 0; i < entryList.size(); i++) {
 			Element entry =  entryList.get(i);
-			LOG.warn("    "+entry.getAttributeValue("term"));
-			if (validate) {
-				validateEntry(entry);
+			if (i < maxEntries) {
+				String term = entry.getAttributeValue(TERM);
+				LOG.warn("    "+term);
+				if (validate) {
+					String message = validateAttributes(entry, MANDATORY_ENTRY_ATTRIBUTES, ALLOWED_ENTRY_ATTRIBUTES);
+//					message += validateChildren(entry, MANDATORY_ENTRY_CHILDREN, ALLOWED_ENTRY_CHILDREN);
+					if (message.trim().length() != 0) {
+						LOG.warn("**** " + term + ": " + message);
+					}
+				}
 			}
 		}
 		if (maxEntries < entryList.size()) {
@@ -239,12 +305,71 @@ private static final int DEFAULT_MAX_ENTRIES = 3;
 		}
 	}
 
-	private String validateEntry(Element entry) {
-		String type = DescAttributeName.getType(entry);
-		if (type == null) {
-			LOG.error("No type for: " + entry.toXML());
+	private String validateChildren(Element entry, List<String> mandatoryChildren, List<String> allowedChildren) {
+		StringBuilder sb = new StringBuilder();
+		sb.append(checkMandatoryChildren(entry, mandatoryChildren));
+		sb.append(checkAllowedChildren(entry, allowedChildren));
+		return sb.toString();
+	}
+
+	private String checkMandatoryChildren(Element entry, List<String> mandatoryList) {
+		StringBuilder sb = new StringBuilder("missing children");
+		boolean ok = true;
+		for (String mandatory : mandatoryList) {
+			String term = entry.getAttributeValue(mandatory);
+			if (term == null) {
+				LOG.error("No "  + mandatory + " for: " + entry.toXML());
+				sb.append(" " + mandatory);
+				ok = false;
+			}
 		}
-		return type;
+		return ok ? "" : sb.toString();
+	}
+	
+	private String checkAllowedChildren(Element entry, List<String> allowedList) {
+		StringBuilder sb = new StringBuilder("unknown attributes");
+		boolean ok = true;
+		for (int i = 0; i < entry.getAttributeCount(); i++) {
+			String attName = entry.getAttribute(i).getLocalName();
+			if (!allowedList.contains(attName)) {
+				ok = false;
+				sb .append(" " + attName);
+			}
+		}
+		return ok ? "" : sb.toString();
+	}
+	private String validateAttributes(Element entry, List<String> mandatoryAttributes, List<String> allowedAttributes) {
+		StringBuilder sb = new StringBuilder();
+		sb.append(checkMandatoryAttributes(entry, mandatoryAttributes));
+		sb.append(checkAllowedAttributes(entry, allowedAttributes));
+		return sb.toString();
+	}
+
+	private String checkMandatoryAttributes(Element entry, List<String> mandatoryList) {
+		StringBuilder sb = new StringBuilder("missing attributes");
+		boolean ok = true;
+		for (String mandatory : mandatoryList) {
+			String term = entry.getAttributeValue(mandatory);
+			if (term == null) {
+				LOG.error("No "  + mandatory + " for: " + entry.toXML());
+				sb.append(" " + mandatory);
+				ok = false;
+			}
+		}
+		return ok ? "" : sb.toString();
+	}
+	
+	private String checkAllowedAttributes(Element entry, List<String> allowedList) {
+		StringBuilder sb = new StringBuilder("unknown attributes");
+		boolean ok = true;
+		for (int i = 0; i < entry.getAttributeCount(); i++) {
+			String attName = entry.getAttribute(i).getLocalName();
+			if (!allowedList.contains(attName)) {
+				ok = false;
+				sb .append(" " + attName);
+			}
+		}
+		return ok ? "" : sb.toString();
 	}
 
 	// ================== LIST ===================

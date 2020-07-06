@@ -72,5 +72,18 @@ private static final File TARGET = new File("target");
 		AMIDict.execute(args);
 		
 	}
+	
+	@Test
+	public void testDictionaryValidateResource() {
+		String dict = "--dictionary /org/contentmine/ami/plugins/dictionary";
+//		String args = dict + " -v" + " display";
+		String args = " -v" + " display"
+//				+ " --fields term name"
+				+ " --fields"
+				+ " --validate"
+				;
+		AMIDict.execute(args);
+		
+	}
 
 }

@@ -99,15 +99,15 @@ import nu.xom.Elements;
  *
  */
 public class DefaultAMIDictionary extends DefaultStringDictionary {
+	public static final Logger LOG = LogManager.getLogger(DefaultAMIDictionary.class);
 
 	private static final int PAGE_IMAGE_LINK_COLUMN = 6;
 	private static final int CENTRAL_DESCRIPTION_COLUMN = 5;
 	private static final int WIKIDATA_LINK_COLUMN = 4;
-	public static final Logger LOG = LogManager.getLogger(DefaultAMIDictionary.class);
-public static final String WIKIPEDIA_BASE = "https://en.wikipedia.org";
+	public static final String WIKIPEDIA_BASE = "https://en.wikipedia.org";
 	public static final String ID = "id";
 	public static final String DICTIONARY = "dictionary";
-	private static final String DESC = "desc";
+	public static final String DESC = "desc";
 	public static final String ENTRY = "entry";
 	private static final String REGEX = "regex";
 	public static final String TITLE = "title";
@@ -124,9 +124,11 @@ public static final String WIKIPEDIA_BASE = "https://en.wikipedia.org";
 	public static final File SYNBIO_DIR     = new File(AMI_DIR, "synbio");
 	protected static final String UTF_8        = "UTF-8";
 	
-	private static final String WIKIDATA = "wikidata";
+	public static final String WIKIDATA = "wikidata";
 	private static final String PAGE_CONTENT = "content";
 	private static final String IMAGE = "image";
+
+	public static final String SYNONYM = "synonym";
 	
 	private String dictionaryName;
 	protected Map<DictionaryTerm, String> namesByTerm;

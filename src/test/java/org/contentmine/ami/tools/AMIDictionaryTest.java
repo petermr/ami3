@@ -21,7 +21,7 @@ import org.junit.Test;
  */
 public class AMIDictionaryTest extends AbstractAMITest {
 	private static final Logger LOG = LogManager.getLogger(AMIDictionaryTest.class);
-private static final File TARGET = new File("target");
+	private static final File TARGET = new File("target");
 	public static final File DICTIONARY_DIR = new File(TARGET, "dictionary");
 	
 
@@ -58,6 +58,17 @@ private static final File TARGET = new File("target");
 				+ " --input=" + categoryString 
 				+ " create"
 				+ " --informat=wikicategory";
+		AbstractAMIDictTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
+	}
+	
+	@Test
+	public void testCreateFromWikidataSparqlXml() {
+		String cmd = "-v"
+				+ " --dictionary country"
+				+ " --directory=target/dictionary/"
+				+ " --input=" + new File(TEST_DICTIONARY, "country_sparql.xml")
+				+ " create"
+				+ " --informat=wikisparqlxml";
 		AbstractAMIDictTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
 	}
 	
