@@ -58,7 +58,7 @@
 
         <pdfbox2.version>2.0.19</pdfbox2.version>
         <pdfbox-tools.version>2.0.19</pdfbox-tools.version>
-        <picocli.version>4.3.2</picocli.version>
+        <picocli.version>4.4.0</picocli.version>
         <resteasy.client>4.5.3.Final</resteasy.client>
         <Saxon-HE.version>10.0</Saxon-HE.version>
         <selenium-java.version>4.0.0-alpha-5</selenium-java.version>
@@ -115,6 +115,16 @@
                 <configuration>
                     <source>${java.source.version}</source>
                     <target>${java.target.version}</target>
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>info.picocli</groupId>
+                            <artifactId>picocli-codegen</artifactId>
+                            <version>${picocli.version}</version>
+                        </path>
+                    </annotationProcessorPaths>
+                    <compilerArgs>
+                        <arg>-Aproject=${project.groupId}/${project.artifactId}</arg>
+                    </compilerArgs>
                 </configuration>
             </plugin>
 

@@ -167,6 +167,7 @@ public class AMI implements Runnable {
 		CommandLine cmd = new CommandLine(new AMI());
 		cmd.setParameterExceptionHandler(new ShortErrorMessageHandler());
 		cmd.setExecutionStrategy(AMI::enhancedLoggingExecutionStrategy);
+		cmd.setUnmatchedOptionsAllowedAsOptionParameters(false);
 		return cmd;
 	}
 

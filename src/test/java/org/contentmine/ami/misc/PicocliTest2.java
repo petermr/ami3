@@ -100,12 +100,12 @@ public class PicocliTest2 implements Callable<Void> {
 //  String descriptionKey() default "";
     @Parameters(index = "0", 
     		description = "An integer",
-    		arity="1",
+    		//arity="1", // picocli does not allow having an `arity="1"` attribute for interactive options
     		paramLabel="arg for algorithm",
     		hideParamSyntax=false,
     		type=Integer.class,
 //    		converter=MyConverter.class, // doesn't yet exist
-    		split="#",
+    		//split="#", // picocli does not allow having a `split` attribute on a single-value option
     		hidden=false,
     		defaultValue="-99",
     		showDefaultValue=Help.Visibility.ALWAYS,
