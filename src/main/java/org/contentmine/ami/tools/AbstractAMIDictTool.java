@@ -27,6 +27,7 @@ import org.contentmine.ami.dictionary.DefaultAMIDictionary;
 import org.contentmine.ami.dictionary.DictionaryTerm;
 import org.contentmine.ami.lookups.WikiResult;
 import org.contentmine.ami.lookups.WikipediaLookup;
+import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlA;
 import org.contentmine.graphics.html.HtmlElement;
@@ -550,7 +551,8 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 		String dictionaryName = FilenameUtils.getBaseName(file.toString());
 		Element dictionaryElement = null;
 		try {
-			dictionaryElement = XMLUtil.parseQuietlyToRootElement(new FileInputStream(file));
+			dictionaryElement = XMLUtil.parseQuietlyToRootElement(
+					new FileInputStream(file), CMineUtil.UTF8_CHARSET);
 		} catch (FileNotFoundException e) {
 			throw new RuntimeException("Cannot find "+file);
 		}

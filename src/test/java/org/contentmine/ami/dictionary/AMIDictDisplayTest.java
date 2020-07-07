@@ -76,8 +76,7 @@ private static final File TARGET = new File("target");
 	@Test
 	public void testDictionaryValidateResource() {
 		String dict = "--dictionary /org/contentmine/ami/plugins/dictionary";
-//		String args = dict + " -v" + " display";
-		String args = " -v" + " display"
+		String args = dict + " -v" + " display"
 //				+ " --fields term name"
 				+ " --fields"
 				+ " --validate"

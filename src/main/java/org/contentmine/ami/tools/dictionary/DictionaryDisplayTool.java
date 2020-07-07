@@ -18,6 +18,7 @@ import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Attribute;
 import nu.xom.Element;
+import nu.xom.Node;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 import picocli.CommandLine.Parameters;
@@ -88,26 +89,7 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 		}
 		
 	}
-/**
-  	public enum EntryAttributeName {
- 
-		author("name of who added this"),
-		date("when added"),
-		provenance("how created? use "),
-		id("local id name of the entry"),
-		name("fuller name of the entry"),
-		term("the search term"),
-		term_lang("language equivalent (lang == 2-letter lowercase code)"),
-		wikidata("wikidata id"),
-		wikipedia("wikipedia page name"),
-		;
-		private String description;
-
-		private EntryAttributeName(String description) {
-			this.description = description; 
-		}
-	}
-*/
+	
 	private List<Path> paths;
 	
     @Parameters(index = "0",
@@ -150,6 +132,8 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
     
 
     private String dictionary;
+
+	private Element dictionaryElement;
 
 
 	public DictionaryDisplayTool() {
@@ -195,24 +179,6 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 	public int getMaxEntries() {
 		return maxEntries;
 	}
-
-//	/** looks up dictionaries by name ? obsolete */
-//	private void listDictionaryInfoForName(String dictionaryName) {
-//		File dictionaryFile = null;
-//		for (File file : files) {
-//			String baseName = FilenameUtils.getBaseName(file.getName());
-//			if (dictionaryName.equals(baseName)) {
-//				listDictionaryInfo(baseName, file);
-//				dictionaryFile = file;
-//				break;
-//			} else {
-//			}
-//		}
-//		if (dictionaryFile == null) {
-//			LOG.warn("\nUnknown dictionary: "+dictionaryName);
-//		}
-//	}
-
 	
 	private void listHardcoded() {
 //		LOG.warn("\n\nalso hardcoded functions (which resolve abbreviations):\n");
@@ -222,17 +188,67 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 
 	public void listDictionaryInfo(String dictionary, Element dictionaryElement) {
 		this.dictionary = dictionary;
+		this.dictionaryElement = dictionaryElement;
 		LOG.warn("\nDictionary: "+dictionary+"\n");
 		List<Element> entries = XMLUtil.getQueryElements(dictionaryElement, "./*[local-name()='entry']");
 		LOG.warn("entries: "+entries.size());
 		LOG.warn("validate "+validate);
-		printFieldSummary(dictionaryElement);
-		printDictionary(dictionaryElement);
-		printDescs(dictionaryElement);
-		printEntries(dictionaryElement);
+		validateWithXPath();
+		printFieldSummary();
+		printDictionary();
+		printDescs();
+		printEntries();
 	}
 
-	private void printFieldSummary(Element dictionaryElement) {
+	private void validateWithXPath() {
+		validateDictionaryAttributes();
+		validateDictionaryChildren();
+		validateDescAttributes();
+		validateDescChildren();
+		validateEntryAttributes();
+		validateEntryChildren();
+	}
+
+	private void validateDictionaryAttributes() {
+		validate("./*[@title and not(@title='"+dictionary+"')]", 
+				"******Bad dictionary attributes ****** ", dictionaryElement);
+	}
+
+	private void validateDictionaryChildren() {
+		validate("./*[local-name()!='desc' and local-name()!='entry']", 
+				"******Bad dictionary children****** ", dictionaryElement);
+	}
+
+	private void validateDescAttributes() {
+		validate("./*[local-name()='desc' and @* and not(@date) and not(@author)]", 
+				"******Bad desc attributes****** ", dictionaryElement);
+	}
+
+	private void validateDescChildren() {
+		validate("./*[local-name()='desc' and count(*) > 0]",
+				"******Bad desc children ****** ", dictionaryElement);
+	}
+
+	private void validateEntryAttributes() {
+		validate("./*[local-name()='entry']/@*"
+//				+  and not(@term) and not(@name)"
+//				+ "]",
+				,
+				"******Bad entry attributes ****** ", dictionaryElement);
+	}
+	private void validateEntryChildren() {
+		validate("./*[local-name()='entry']/*[not(local-name()='synonym')]",
+				"******Bad entry children ****** ", dictionaryElement);
+	}
+
+	private void validate(String xpath, String message, Element element) {
+		List<Node> nodes = XMLUtil.getQueryNodes(element, xpath);
+		if (nodes.size() != 0) {
+			LOG.error(message + nodes.get(0).toXML());
+		}
+	}
+
+	private void printFieldSummary() {
 		for (DictionaryField field : fields) {
 			if (field.getType().equals(FieldType.ATTRIBUTE)) {
 				String xpath = ".//*[@*[name()='"+field.toString()+"' and not(.='')]]";
@@ -245,7 +261,7 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 		}
 	}
 
-	private void printDictionary(Element dictionaryElement) {
+	private void printDictionary() {
 		LOG.warn("dictionary: " + dictionary);
 		for (int i = 0; i < dictionaryElement.getAttributeCount(); i++) {
 			Attribute attribute = dictionaryElement.getAttribute(i);
@@ -253,11 +269,11 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 			LOG.info("dictionary@" + attName + ": " + dictionaryElement.getAttributeValue(attName));
 		}
 		if (validate) {
-			validateDictionary(dictionaryElement);
+			validateDictionary();
 		}
 	}
 
-	private String validateDictionary(Element dictionaryElement) {
+	private String validateDictionary() {
 		for (int i = 0; i < dictionaryElement.getAttributeCount(); i++) {
 			Attribute attribute = dictionaryElement.getAttribute(i);
 			String attName = attribute.getLocalName();
@@ -266,7 +282,7 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 		return null;
 	}
 
-	private void printDescs(Element dictionaryElement) {
+	private void printDescs() {
 		List<Element> descList = XMLUtil.getQueryElements(dictionaryElement, "./*[local-name()='desc']");
 		for (Element desc : descList) {
 			LOG.info("Desc: "+desc.getValue());
@@ -284,7 +300,7 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 		return null;
 	}
 
-	private void printEntries(Element dictionaryElement) {
+	private void printEntries() {
 		List<Element> entryList = XMLUtil.getQueryElements(dictionaryElement, "./*[local-name()='entry']");
 		for (int i = 0; i < entryList.size(); i++) {
 			Element entry =  entryList.get(i);
