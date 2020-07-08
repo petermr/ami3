@@ -349,6 +349,7 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 		name(FieldType.ATTRIBUTE),
 		term(FieldType.ATTRIBUTE),
 		title(FieldType.ATTRIBUTE),
+		url(FieldType.ATTRIBUTE),
 		wikidata(FieldType.ATTRIBUTE),
 		wikipedia(FieldType.ATTRIBUTE),
 		

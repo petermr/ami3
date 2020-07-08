@@ -192,7 +192,7 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 		LOG.warn("\nDictionary: "+dictionary+"\n");
 		List<Element> entries = XMLUtil.getQueryElements(dictionaryElement, "./*[local-name()='entry']");
 		LOG.warn("entries: "+entries.size());
-		LOG.warn("validate "+validate);
+		LOG.trace("validate "+validate);
 		validateWithXPath();
 		printFieldSummary();
 		printDictionary();
@@ -211,7 +211,7 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 
 	private void validateDictionaryAttributes() {
 		validate("./*[@title and not(@title='"+dictionary+"')]", 
-				"******Bad dictionary attributes ****** ", dictionaryElement);
+				"******Bad dictionary title (" + dictionary + ") ****** ", dictionaryElement);
 	}
 
 	private void validateDictionaryChildren() {
@@ -230,10 +230,26 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 	}
 
 	private void validateEntryAttributes() {
-		validate("./*[local-name()='entry']/@*"
-//				+  and not(@term) and not(@name)"
-//				+ "]",
-				,
+		// unusual attributes?
+		validate("./*[local-name()='entry' and @*["
+				+ " not("
+				+ "    name()='term'"
+				+ " or name()='name'"
+				+ " or name()='description'"
+				+ " or name()='id'"
+				+ " or name()='url'"
+				+ " or name()='wikipedia'"
+				+ " or name()='wikidata'"
+				+ ")"
+				+ "]"
+				
+//				+ " and not(@term)"
+//				+ " and not(@name)"
+//				+ " and not(@id)"
+//				+ " and not(@wikipedia)"
+//				+ " and not(@wikidata)"
+				+ " "
+				+ "]",
 				"******Bad entry attributes ****** ", dictionaryElement);
 	}
 	private void validateEntryChildren() {
@@ -248,17 +264,23 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 		}
 	}
 
+	/** counts the predefined attributes
+	 * 
+	 */
 	private void printFieldSummary() {
+		StringBuilder sb = new StringBuilder();
 		for (DictionaryField field : fields) {
 			if (field.getType().equals(FieldType.ATTRIBUTE)) {
 				String xpath = ".//*[@*[name()='"+field.toString()+"' and not(.='')]]";
 				List<Element> elements = XMLUtil.getQueryElements(dictionaryElement, xpath);
-				LOG.warn("@"+field+": "+elements.size());
+				String fieldS = field.toString();
+				sb.append("@" + fieldS + ": " + elements.size() + " ");
 				for (Element element : elements) {
-//					LOG.warn("> "+element.toXML());
+					LOG.trace(fieldS + "> "+element.getAttributeValue(fieldS));
 				}
 			}
 		}
+		LOG.info("Attributes: "+sb);
 	}
 
 	private void printDictionary() {
