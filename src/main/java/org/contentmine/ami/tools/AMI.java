@@ -27,7 +27,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-@Command(name = "ami",
+@Command(name = "ami", version = AMI.VERSION,
 		description = {
 				"",
 				"`${COMMAND-FULL-NAME}` is a command suite for managing (scholarly) documents: " +
@@ -83,6 +83,8 @@ import java.util.stream.Collectors;
 		})
 public class AMI implements Runnable {
 	private static final Logger LOG = LogManager.getLogger(AMI.class);
+
+	public static final String VERSION = "2020-07-09"; // update this with each change
 
 	@ArgGroup(exclusive = true, order = 9)
 	ProjectOrTreeOptions projectOrTreeOptions = new ProjectOrTreeOptions();
