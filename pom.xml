@@ -383,6 +383,12 @@
                         </execution>
                     </executions>
                 </plugin>
+                <!-- to enable `mvn deploy` to publish packages -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>3.0.0-M1</version>
+                </plugin>
            </plugins>
         </build>
 
@@ -647,4 +653,12 @@
             </snapshots>
         </repository>
     </repositories>
+    <!-- see https://docs.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-apache-maven-for-use-with-github-packages -->
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub petermr Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/petermr/ami3</url>
+        </repository>
+    </distributionManagement>
 </project>
