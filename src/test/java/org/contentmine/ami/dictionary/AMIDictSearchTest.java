@@ -18,9 +18,9 @@ import org.junit.Test;
  *
  */
 public class AMIDictSearchTest extends AbstractAMITest {
-	private static final String CEV_OPEN = "/Users/pm286/projects/CEVOpen";
 	private static final Logger LOG = LogManager.getLogger(AMIDictSearchTest.class);
-private static final File TARGET = new File("target");
+	private static final String CEV_OPEN = "/Users/pm286/projects/CEVOpen";
+	private static final File TARGET = new File("target");
 	public static final File DICTIONARY_DIR = new File(TARGET, "dictionary");
 	public static final File SRC_TEST_DICTIONARY = new File(SRC_TEST_AMI, "dictionary");
 

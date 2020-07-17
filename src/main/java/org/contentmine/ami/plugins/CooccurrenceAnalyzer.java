@@ -34,7 +34,7 @@ public class CooccurrenceAnalyzer {
 	private static final String COOCCUR_CSV = "cooccur.csv";
 
 	private static final Logger LOG = LogManager.getLogger(CooccurrenceAnalyzer.class);
-public static final String COOCCURRENCE = CTreeList.FORBIDDEN_PREFIX + "cooccurrence";
+	public static final String COOCCURRENCE = CTreeList.FORBIDDEN_PREFIX + "cooccurrence";
 	
 	private OccurrenceAnalyzer rowAnalyzer;
 	private OccurrenceAnalyzer colAnalyzer;
@@ -68,23 +68,23 @@ public static final String COOCCURRENCE = CTreeList.FORBIDDEN_PREFIX + "cooccurr
 	}
 
 	public IntMatrix analyze() { // new 
-		LOG.trace("rowA number of elements "+rowAnalyzer.getOrCreateSerialByTermImportance().size());
-		LOG.trace("colA number of elements "+colAnalyzer.getOrCreateSerialByTermImportance().size());
+		LOG.debug("rowA number of elements "+rowAnalyzer.getOrCreateSerialByTermImportance().size());
+		LOG.debug("colA number of elements "+colAnalyzer.getOrCreateSerialByTermImportance().size());
 		
 		List<File> rowCTreeFiles = rowAnalyzer.getOrCreateCTreeFiles();
 		List<File> colCTreeFiles = colAnalyzer.getOrCreateCTreeFiles();
-		LOG.trace("rows trees> "+rowCTreeFiles.size()+" / "+rowCTreeFiles);
-		LOG.trace("cols trees> "+colCTreeFiles.size()+" / "+colCTreeFiles);
+		LOG.debug("rows trees> "+rowCTreeFiles.size()+" / "+rowCTreeFiles);
+		LOG.debug("cols trees> "+colCTreeFiles.size()+" / "+colCTreeFiles);
 		
 		Map<File, List<Entry<String>>> rowEntryListByCTreeFile = rowAnalyzer.getOrCreateEntryListByCTreeFile();
 		Map<File, List<Entry<String>>> colEntryListByCTreeFile = colAnalyzer.getOrCreateEntryListByCTreeFile();
-		LOG.trace("rows "+rowAnalyzer.getName()+" / "+rowEntryListByCTreeFile);
-		LOG.trace("cols "+colAnalyzer.getName()+" / "+colEntryListByCTreeFile);
+		LOG.debug("rows "+rowAnalyzer.getName()+" / "+rowEntryListByCTreeFile);
+		LOG.debug("cols "+colAnalyzer.getName()+" / "+colEntryListByCTreeFile);
 		
 		Map<String, Set<File>> fileSetByRowEntryValue = createFileSetByEntryString(rowEntryListByCTreeFile);
 		Map<String, Set<File>> fileSetByColEntryValue = createFileSetByEntryString(colEntryListByCTreeFile);
-		LOG.trace("files by rows "+rowAnalyzer.getName()+" / "+fileSetByRowEntryValue);
-		LOG.trace("files by cols "+colAnalyzer.getName()+" / "+fileSetByColEntryValue);
+		LOG.debug("files by rows "+rowAnalyzer.getName()+" / "+fileSetByRowEntryValue);
+		LOG.debug("files by cols "+colAnalyzer.getName()+" / "+fileSetByColEntryValue);
 		
 		int rowCount = Math.min(rowAnalyzer.getMaxCount(), rowAnalyzer.getOrCreateEntriesSortedByImportance().size());
 		int colCount = Math.min(colAnalyzer.getMaxCount(), colAnalyzer.getOrCreateEntriesSortedByImportance().size());
@@ -92,7 +92,7 @@ public static final String COOCCURRENCE = CTreeList.FORBIDDEN_PREFIX + "cooccurr
 			rowCount,
 			colCount
 			);
-		LOG.trace("COOC: "+cooccurrenceMatrix);
+		LOG.debug("COOC: "+cooccurrenceMatrix);
 
 		List<Entry<String>> rowList = rowAnalyzer.getOrCreateEntriesSortedByImportance();
 		for (int irow = 0; irow < rowCount; irow++) {

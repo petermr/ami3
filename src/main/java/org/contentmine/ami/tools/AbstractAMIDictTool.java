@@ -19,14 +19,15 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.Marker;
 import org.apache.logging.log4j.MarkerManager;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
 import org.contentmine.ami.dictionary.DictionaryTerm;
 import org.contentmine.ami.lookups.WikiResult;
 import org.contentmine.ami.lookups.WikipediaLookup;
+import org.contentmine.ami.tools.dictionary.SimpleDictionary;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlA;
@@ -265,6 +266,7 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 		help,
 		search,
 		translate,
+		update,
 		;
 		public static Operation getOperation(String operationS) {
 			for (int i = 0; i < values().length; i++) {
@@ -398,6 +400,12 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 	protected boolean showstopperEncountered;
 	protected boolean useAbsoluteNames;
 
+	protected SimpleDictionary /*Element*/ simpleDictionary;
+
+	private File directory;
+
+	protected String dictionaryName;
+
 	public AbstractAMIDictTool() {
 		initDict();
 	}
@@ -462,14 +470,6 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 		parent.generalOptions.input = newValue;
 	}
 
-	protected String inputName() {
-		return parent.generalOptions.inputBasename;
-	}
-
-	protected void inputName(String newValue) {
-		parent.generalOptions.inputBasename = newValue;
-	}
-
 	protected InputStream openInputStream() {
 		InputStream inputStream = null;
 		if (input() != null) {
@@ -492,7 +492,7 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 	}
 
 	protected File createDirectory() {
-		File directory = null;
+		directory = null;
 		useAbsoluteNames = false;
 		if (parent.directory != null) {
 			directory = parent.directory;
@@ -557,12 +557,16 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 		} catch (FileNotFoundException e) {
 			throw new RuntimeException("Cannot find "+file);
 		}
-		listDictionaryInfo(dictionaryName, dictionaryElement);
+		simpleDictionary = new SimpleDictionary(dictionaryName, dictionaryElement);
+		listDictionaryInfo();
 		return dictionaryElement;
 	}
 
-	protected void listDictionaryInfo(String dictionaryName, Element dictionaryElement) {
-		// NO-OP overridden in DisplayTool
+	/**
+	 */
+	protected void listDictionaryInfo() {
+//		simpleDictionary.listDictionaryInfo();
+		throw new RuntimeException("override in subclass");
 	}
 
 	// WIKIMEDIA =========================
@@ -650,6 +654,15 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 		File xmlFile = new File("target/wikipedia/"+name+".html");
 		LOG.info(SPECIAL, "writing debug wikipedia page "+xmlFile);
 		XMLUtil.writeQuietly(element, xmlFile, 1);
+	}
+
+	protected void getDictionaryName() {
+		dictionaryName = parent.getDictionaryList() != null && parent.getDictionaryList().size() == 1 ?
+			parent.getDictionaryList().get(0) : null;
+	}
+
+	protected List<String> getDictionaryNameList() {
+		return parent.getDictionaryList() == null ? new ArrayList<>() : parent.getDictionaryList() ;
 	}
 
 	/**

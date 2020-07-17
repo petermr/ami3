@@ -130,7 +130,7 @@ public class AMISectionToolTest extends AbstractAMITest {
 			;
 		AMI.execute(AMISectionTool.class, args);
 		System.err.println(""
-				+ "=======3 fails: Expected parameter for option '--summary' but found 'figure'========\n"
+				+ "=======3 fails: Expected parameter for option '--summary' but found 'fig'========\n"
 				);
 		
 	}
@@ -149,7 +149,7 @@ public class AMISectionToolTest extends AbstractAMITest {
 				+ " --sections "
 				+ " " + SectionTag.ALL
 				+ " --sectiontype XML"
-				+ " --summary figure"
+				+ " --summary fig"
 				+ " --html nlm2html"
 //				+ " --write false"
 			;
@@ -175,7 +175,7 @@ public class AMISectionToolTest extends AbstractAMITest {
 		String args = ""
 				+ " -p " + dir 
 				+ " section"
-				+ " --summary table figure supplementary"
+				+ " --summary table fig supplementary"
 				+ " --forcemake"
 			;
 //		new AMISectionTool().runCommands(args);
@@ -254,10 +254,10 @@ public class AMISectionToolTest extends AbstractAMITest {
 				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
 //				+ "-p " + "/Users/pm286/workspace/projects/climate/searches/clim107"
 //				+ "-p " + "/Users/pm286/workspace/projects/climate/searches/climatechange"
-//				+ " -v"
+				+ " -vv"
 				+ " --forcemake"
 				+ " section"
-				+ " --extract table figure"
+				+ " --extract table fig"
 //				+ " --sections "
 //				+ " " + SectionTag.ARTICLE
 //				+ " --write false
@@ -274,8 +274,8 @@ public class AMISectionToolTest extends AbstractAMITest {
 				+ " -v"
 				+ " --forcemake"
 				+ " section"
-//				+ " --extract table figure"
-				+ " --summary figure table"  
+//				+ " --extract table fig"
+				+ " --summary fig table"  
 			;
 		AMI.execute(args);
 //		new AMISectionTool().runCommands(args);
@@ -300,7 +300,7 @@ public class AMISectionToolTest extends AbstractAMITest {
 				+ " --forcemake"
 				+ " sections"
 				+ " --extract table fig"
-				+ " --summary figure table "
+				+ " --summary fig table "
 			;
 
 		new AMISectionTool().runCommands(args);

@@ -108,9 +108,9 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 	public static final String ID = "id";
 	public static final String DICTIONARY = "dictionary";
 	public static final String DESC = "desc";
-	public static final String ENTRY = "entry";
+//	public static final String ENTRY = "entry";
 	private static final String REGEX = "regex";
-	public static final String TITLE = "title";
+//	public static final String TITLE = "title";
 	private static final String WIKIPEDIA = "wikipedia";
 
 	/** later these should be read in from args.xml ...
@@ -219,19 +219,17 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 	}
 
 	public Element createDictionaryElement(String title) {
-		dictionaryElement = createDictionaryWithTitle(title);
+		dictionaryElement = createDictionaryElementWithTitle(title);
 		return dictionaryElement;
 	}
 
-	public static Element createDictionaryWithTitle(String title) {
+	public static Element createDictionaryElementWithTitle(String title) {
 		Element dictionaryElement = new Element(DICTIONARY);
 		if (title != null) {
 			dictionaryElement.addAttribute(new Attribute(TITLE, title));
 		}
 		return dictionaryElement;
 	}
-	
-	
 
 	protected void writeXMLFile(File file) {
 		try {

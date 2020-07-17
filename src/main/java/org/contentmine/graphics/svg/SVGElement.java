@@ -1681,7 +1681,7 @@ private static final int EXTRA_TRANSFORM_PRECISION = 2;
 		this.convertOldStyleToStyle();
 		Double value = StyleBundle.getFontSize(this);
 		if (value == null) {
-			LOG.trace("missing font-size: "+this.getStyle());
+			LOG.trace("svg>t>missing font-size: "+this.getStyle());
 			String attVal = getAttributeFromStyle(StyleBundle.FONT_SIZE);
 			if (attVal == null) {
 				attVal = this.getAttributeValue(StyleBundle.FONT_SIZE);

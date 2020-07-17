@@ -16,7 +16,13 @@ import nu.xom.Element;
 public class DefaultStringDictionary {
 
 	private static final Logger LOG = LogManager.getLogger(DefaultStringDictionary.class);
-protected String title;
+	
+	public static final String ENTRY = "entry";
+	public static final String TERM = "term";
+	public static final String TITLE = "title";
+
+	
+	protected String title;
 	protected Map<String, List<List<String>>> trailingWordsByLeadWord;
 	
 	
@@ -48,18 +54,18 @@ protected String title;
 		createDictionaryFromXML(dictionaryElement);
 	}
 	private void createDictionaryFromXML(Element dictionaryElement) {
-		title = dictionaryElement.getAttributeValue("title");
+		title = dictionaryElement.getAttributeValue(TITLE);
 		if (title == null || title.trim().equals("")) {
 			throw new RuntimeException("dictionary must have title");
 		}
-		List<Element> entryList = XMLUtil.getQueryElements(dictionaryElement, "entry");
+		List<Element> entryList = XMLUtil.getQueryElements(dictionaryElement, ENTRY);
 		if (entryList.size() == 0) {
 			throw new RuntimeException("dictionary must have entries");
 		}
 		LOG.trace("creating dictionary "+title+" / "+entryList.size());
 		trailingWordsByLeadWord = new HashMap<String, List<List<String>>>();
 		for (Element entry : entryList) {
-			String term = entry.getAttributeValue("term");
+			String term = entry.getAttributeValue(TERM);
 			if (term == null) {
 				throw new RuntimeException("missing term attribute");
 			}

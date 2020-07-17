@@ -77,7 +77,6 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	private List<String> linkList;
 	private String currentTemplateName;
 	private WikipediaDictionary wikipediaDictionary;
-	private Element dictionaryElement;
 	private List<RectTabColumn> dataColList;
 	
 	@Option(names = {"--datacols"}, 
@@ -127,7 +126,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
     		arity="1..*",
     		split=",",
     	    paramLabel = "output format",
-    		description = "output format (${COMPLETION-CANDIDATES})"
+    		description = "output format (${COMPLETION-CANDIDATES}); default XML"
     		)
     protected DictionaryFileFormat[] outformats = new DictionaryFileFormat[] {DictionaryFileFormat.xml};
 
@@ -164,8 +163,9 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	@Option(names = {"--terms"}, 
 			arity="1..*",
 			split=",",
-			description = "list of terms (entries), space-separated. Requires `inputname`")
+			description = "list of terms (entries), space-separated. Requires `inputname` or `dictionary`")
 	private List<String> terms;
+	
 	private Set<String> termSet;
 	
     @Option(names = {"--wptype"}, 
@@ -180,15 +180,14 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	private static final String HTTP = "http";
 	private static final String CM_PREFIX = "CM.";
 	private static final String WIKITABLE = "wikitable";
-	private String dictionaryName;
 	
-
 	public DictionaryCreationTool() {
 		
 	}
 
 //	@Override
 	protected void parseSpecifics() {
+		getDictionaryName();
 		if (this.templateNames != null) {
 			createFilenamesForWikimediaInput();
 		}
@@ -196,28 +195,14 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 			this.testString = this.testString.replaceAll("%20", " ");
 			LOG.debug(SPECIAL, "testString      "+this.testString);
 		}
+		if (terms != null) termList = new ArrayList<>(terms);
+		
 		dictOutformat = (this.outformats == null || this.outformats.length != 1) ? null : this.outformats[0];
 		wikiLinkList = (this.wikiLinks == null) ? new ArrayList<WikiLink>() :
 		     new ArrayList<WikiLink>(Arrays.asList(this.wikiLinks));
 	}
-
-	private void createFilenamesForWikimediaInput() {
-		createTemplateNames();
-		this.informat = WikiFormat.mwk.equals(this.wptype) ? InputFormat.mediawikitemplate : InputFormat.wikitemplate;
-		if (parent.getDirectoryTopname() == null) {
-			LOG.warn("No directory given, using .");
-			parent.setDirectoryTopname(".");
-		}
-	}
-
 	
-	private void createTemplateNames() {
-		for (int i = 0; i < this.templateNames.size(); i++) {
-			String t = this.templateNames.get(i).trim().replaceAll("\\s+", "_");
-			this.templateNames.set(i, t);
-		}
-	}
-
+	@Override
 	public void runSub() {
 		resetMissingLinks();
 
@@ -236,6 +221,24 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 
 	}
 	
+
+	private void createFilenamesForWikimediaInput() {
+		createTemplateNames();
+		this.informat = WikiFormat.mwk.equals(this.wptype) ? InputFormat.mediawikitemplate : InputFormat.wikitemplate;
+		if (parent.getDirectoryTopname() == null) {
+			LOG.warn("No directory given, using .");
+			parent.setDirectoryTopname(".");
+		}
+	}
+
+	
+	private void createTemplateNames() {
+		for (int i = 0; i < this.templateNames.size(); i++) {
+			String t = this.templateNames.get(i).trim().replaceAll("\\s+", "_");
+			this.templateNames.set(i, t);
+		}
+	}
+
     private void printMissingLinks() {
        	printMissingLinks("\nMissing wikipedia: ", missingWikipediaSet);
        	printMissingLinks("\nMissing wikidata: ", missingWikidataSet);
@@ -266,17 +269,15 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	}
 
 	private void createDictionary() {
-		dictionaryName = null;
 		InputStream inputStream = null;
 		if (input() != null) {
 			inputStream = getInputStreamFromFile();
 			dictionaryName = input();
-		} else if (inputName() != null) {
-			if (terms == null) {
-				throw new RuntimeException("'inputname' expects a 'terms' option");
+		} else if (terms != null) {
+			if (dictionaryName == null) {
+				throw new RuntimeException("'terms' requires a 'dictionary' option");
 			}
 			termList = new ArrayList<>(terms);
-			dictionaryName = inputName();
 		} else if (testString != null) {
 			inputStream = new ByteArrayInputStream(testString.getBytes());
 			dictionaryName = "test";
@@ -291,7 +292,8 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		if (inputStream == null && termList == null) {
 			throw new RuntimeException("'input' or 'inputname' must be given");
 		}
-		dictionaryElement = DefaultAMIDictionary.createDictionaryWithTitle(dictionaryName);
+//		simpleDictionary = DefaultAMIDictionary.createDictionaryElementWithTitle(dictionaryName);
+		simpleDictionary = new SimpleDictionary(dictionaryName);
 		if (InputFormat.wikisparqlxml.equals(informat)) {
 			readSparqlXml(inputStream);
 			writeDictionary();
@@ -309,7 +311,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	private void readTerms(InputStream inputStream) {
 		LOG.debug(SPECIAL, "readTerms");
 		if (termList != null) {
-			LOG.info(SPECIAL, "reading terms from CL "+termList);
+			LOG.info(SPECIAL, "reading terms from CL "+termList.size());
 		} else if (informat == null) {
 			LOG.error("no input format given ");
 			showstopperEncountered = true;
@@ -422,7 +424,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		*/
 		Element desc = new Element(DefaultAMIDictionary.DESC);
 		desc.appendChild("Created from SPARQL query");
-		dictionaryElement.appendChild(desc);
+		simpleDictionary.getDictionaryElement().appendChild(desc);
 		Element sparqlXml = XMLUtil.parseQuietlyToRootElement(inputStream, CMineUtil.UTF8_CHARSET);
 		Element headElement = XMLUtil.getFirstElement(sparqlXml, "./*[local-name() = 'head']");
 		List<String> variables = XMLUtil.getQueryValues(headElement, "./*[local-name()='variable']/@name");
@@ -436,7 +438,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 			addSynonyms(entry, result);
 			addWikipediaName(entry, result);
 			addWikidataLabelName(entry, result);
-			dictionaryElement.appendChild(entry);
+			simpleDictionary.getDictionaryElement().appendChild(entry);
 		}
 	}
 	private void addWikidataLabelName(Element entry, Element result) {
@@ -602,7 +604,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 				String name = nameList.get(i);
 				if (i % queryChunk == 0) {
 					query = new Element("query");
-					dictionaryElement.appendChild(query);
+					simpleDictionary.getDictionaryElement().appendChild(query);
 					if (sb != null) {
 						query.appendChild(sb.toString());
 					}
@@ -862,8 +864,8 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	 *  
 	 */
 	private void writeDictionary() {
-		String dictionaryNameRoot = parent.getDictionaryList() != null && parent.getDictionaryList().size() == 1 ?
-				parent.getDictionaryList().get(0) :
+		String dictionaryNameRoot = getDictionaryNameList() != null && getDictionaryNameList().size() == 1 ?
+				getDictionaryNameList().get(0) :
 				currentTemplateName != null ? createDictionaryName(currentTemplateName) : null;
 				
 		getOrCreateExistingDictionaryTop();
@@ -874,9 +876,12 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		}
 		if (outformats != null) {
 			if (dictionaryName == null) {
-				dictionaryName = parent.getDictionaryList() != null && parent.getDictionaryList().size() == 1 ?
-					parent.getDictionaryList().get(0) :
-					currentTemplateName != null ? createDictionaryName(currentTemplateName) : null;
+				
+//				dictionaryName = parent.getDictionaryList() != null && parent.getDictionaryList().size() == 1 ?
+//					parent.getDictionaryList().get(0) :
+//					currentTemplateName != null ? createDictionaryName(currentTemplateName) : null;
+					
+				dictionaryName = currentTemplateName != null ? createDictionaryName(currentTemplateName) : null;
 				if (dictionaryName == null) {
 					throw new RuntimeException("cannot create dictionaryName");
 				}
@@ -885,12 +890,18 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		}
 	}
 
+	
+
+//	protected List<String> getDictionaryList() {
+//		return getDictionaryList() == null ? null : getDictionaryList();
+//	}
+
 	private void addEntry(String dictionaryId, int serial, Element entry, String urlValue) {
 		String idValue = CM_PREFIX + dictionaryId + DOT + serial;
 		System.err.print("+"); // TODO progress indicator
 		entry.addAttribute(new Attribute(DictionaryTerm.ID, idValue));
 		addTrimmedWikipediaURL(entry, urlValue);
-		dictionaryElement.appendChild(entry);
+		simpleDictionary.getDictionaryElement().appendChild(entry);
 	}
 
 	private static void addTrimmedWikipediaURL(Element entry, String urlValue) {
@@ -948,7 +959,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 
 	private void writeDictionary(String dictionary) {
 		// this is slightly messy - 
-		dictionaryElement.addAttribute(new Attribute(DefaultAMIDictionary.TITLE, dictionary));
+		simpleDictionary.getDictionaryElement().addAttribute(new Attribute(DefaultAMIDictionary.TITLE, dictionary));
 		File subDirectory = getOrCreateExistingSubdirectory(dictionary);
 		if (subDirectory != null) {
 			List<DictionaryFileFormat> outformatList = Arrays.asList(outformats);
@@ -978,9 +989,9 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		LOG.trace("writing dictionary to "+outfile.getAbsolutePath());
 		FileOutputStream fos = new FileOutputStream(outfile);
 		if (outformat.equals(DictionaryFileFormat.xml)) {
-			XMLUtil.debug(dictionaryElement, fos, 1);
+			XMLUtil.debug(simpleDictionary.getDictionaryElement(), fos, 1);
 		} else if (outformat.equals(DictionaryFileFormat.json)) {
-			String jsonS = createJson(dictionaryElement);
+			String jsonS = createJson(simpleDictionary.getDictionaryElement());
 			IOUtils.write(jsonS, fos, UTF_8);
 		} else if (outformat.equals(DictionaryFileFormat.html)) {
 			HtmlDiv div = createHtml();
@@ -1004,7 +1015,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	 */
 	private HtmlDiv createHtml() {
 		DefaultAMIDictionary dictionary = new DefaultAMIDictionary();
-		dictionary.readDictionaryElement(dictionaryElement);
+		dictionary.readDictionaryElement(simpleDictionary.getDictionaryElement());
 		HtmlDiv div = dictionary.createHtmlElement();
 		return div;
 	}
@@ -1105,7 +1116,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	}
 
 	private String createDictionaryId() {
-		return parent.getDictionaryList() == null || parent.getDictionaryList().size() == 0 ? "null" : parent.getDictionaryList().get(0);
+		return getDictionaryNameList() == null || getDictionaryNameList().size() == 0 ? "null" : getDictionaryNameList().get(0);
 	}
 
 	/**

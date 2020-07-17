@@ -10,18 +10,20 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 import org.apache.logging.log4j.Level;
-import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.core.Appender;
 import org.apache.logging.log4j.core.LoggerContext;
 import org.apache.logging.log4j.core.appender.ConsoleAppender;
 import org.apache.logging.log4j.core.config.Configurator;
 import org.apache.logging.log4j.core.config.LoggerConfig;
 import org.apache.logging.log4j.spi.StandardLevel;
+import org.contentmine.ami.tools.AbstractAMIDictTool.DictionaryFileFormat;
 import org.contentmine.ami.tools.dictionary.DictionaryCreationTool;
 import org.contentmine.ami.tools.dictionary.DictionaryDisplayTool;
 import org.contentmine.ami.tools.dictionary.DictionarySearchTool;
 import org.contentmine.ami.tools.dictionary.DictionaryTranslateTool;
+import org.contentmine.ami.tools.dictionary.DictionaryUpdateTool;
 
 import picocli.CommandLine;
 import picocli.CommandLine.ArgGroup;
@@ -56,6 +58,7 @@ import picocli.CommandLine.Spec;
 				DictionaryDisplayTool.class,
 				DictionarySearchTool.class,
 				DictionaryTranslateTool.class,
+				DictionaryUpdateTool.class,
 		})
 public class AMIDict implements Runnable {
 	private static final String CONTENT_MINE_DICTIONARIES = "ContentMine/dictionaries";
@@ -168,6 +171,7 @@ public class AMIDict implements Runnable {
 	@Option(names = {"-d", "--dictionary"},
 			scope = CommandLine.ScopeType.INHERIT, // this option can be used in all subcommands
 			arity = "1..*",
+			split=",",
 			description = "input or output dictionary name/s. for 'create' must be singular; when 'display' or 'translate', any number. "
 					+ "Names should be lowercase, unique. [a-z][a-z0-9._]. Dots can be used to structure dictionaries into"
 					+ "directories. Dictionary names are relative to 'directory'. If <directory> is absent then "
@@ -194,15 +198,22 @@ public class AMIDict implements Runnable {
 
 		@Option(names = {"-n", "--inputname"}, paramLabel = "PATH",
 				description = "User's basename for inputfiles (e.g. foo/bar/<basename>.txt)."
-						+ " The default name for the dictionary; required for 'terms`"
+						+ " The default name for the dictionary; "
+						+ " but may be obsolete and superseded by `dictionary`"
 		)
-		protected String inputBasename;
+		protected String inputBasenameOld;
 
 		@Option(names = {"-L", "--inputnamelist"}, paramLabel = "PATH",
 				arity = "1..*",
 				description = "List of inputnames; will iterate over them, essentially compressing multiple commands into one. Experimental."
 		)
 		protected List<String> inputBasenameList = null;
+
+		@Option(names = {"-x", "--informat"}, paramLabel = "PATH",
+				arity = "1",
+				description = "extension for dictionary file , default: " + "xml"
+		)
+		protected DictionaryFileFormat inputFormat = DictionaryFileFormat.xml;
 
 	}
 
@@ -231,16 +242,11 @@ public class AMIDict implements Runnable {
 		protected void setInput(String input) {
 			parentGeneralOptions().input = input;
 		}
+//		protected void get(String input) {
+//			parentGeneralOptions().input = input;
+//		}
 
 		;
-
-		@Option(names = {"-n", "--inputname"}, paramLabel = "PATH",
-				description = "User's basename for inputfiles (e.g. foo/bar/<basename>.png) or directories. By default this is often computed by AMI."
-						+ " However some files will have variable names (e.g. output of AMIImage) or from foreign sources or applications"
-		)
-		protected void setInputBasename(String inputBasename) {
-			parentGeneralOptions().inputBasename = inputBasename;
-		}
 
 		@Option(names = {"-L", "--inputnamelist"}, paramLabel = "PATH",
 				arity = "1..*",

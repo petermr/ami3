@@ -11,10 +11,13 @@ import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.norma.NAConstants;
 import org.junit.Test;
 
-public class AMISearchToolTest {
+public class AMISearchToolTest extends AbstractAMITest {
+	private static final String MAIN_AMI_DIR = "src/main/resources/org/contentmine/ami";
+
 	private static final Logger LOG = LogManager.getLogger(AMISearchToolTest.class);
-static File TIGR2ESS = new File("/Users/pm286/workspace/Tigr2essDistrib/tigr2ess");
-	private static final File DICTIONARY_EXAMPLES = new File(TIGR2ESS, "dictionaries/examples/");
+	
+	static File TIGR2ESS = new File("/Users/pm286/workspace/Tigr2essDistrib/tigr2ess");
+	private static final File TIGR2ESS_DICTIONARY_EXAMPLES = new File(TIGR2ESS, "dictionaries/examples/");
 	static File OSANCTUM200 = new File(TIGR2ESS, "osanctum200");
 	static File OSANCTUM2000 = new File(TIGR2ESS, "scratch/ocimum2019027");
 
@@ -30,14 +33,28 @@ static File TIGR2ESS = new File("/Users/pm286/workspace/Tigr2essDistrib/tigr2ess
 //				"-t "+new File(targetDir, "PMC2640145")
 				+ " -vv"
 				+ " search"
-				+ " --dictionaryTop /Users/pm286/ContentMine/dictionary/dictionaries"
+//				+ " --dictionaryTop /Users/pm286/ContentMine/dictionary/dictionaries"
 				+ " --dictionary country "
-//				+ " --no-oldstyle"  // old style
-//				+ " --ignorePlugins word"
-//				+ " -v"
 			;
 		LOG.debug("args "+args);
-//		new AMISearchTool().runCommands(args);
+		AMI.execute(args);
+	}
+	
+	
+	@Test
+	public void testZikaSearch2Dictionary() {
+		String project = "zika2";
+		File rawDir = new File(NAConstants.TEST_AMI_DIR, project);
+		File targetDir = new File("target/cooccurrence/"+project);
+		CMineTestFixtures.cleanAndCopyDir(rawDir, targetDir);
+		String args = 
+				"-p "+targetDir
+				+ " -vv"
+				+ " search"
+				+ " --dictionary country "
+				+ " " + MAIN_AMI_DIR + "/plugins/dictionary/disease.xml"
+			;
+		LOG.debug("args "+args);
 		AMI.execute(args);
 	}
 	
@@ -52,9 +69,8 @@ static File TIGR2ESS = new File("/Users/pm286/workspace/Tigr2essDistrib/tigr2ess
 		CMineTestFixtures.cleanAndCopyDir(AMIFixtures.TEST_ZIKA10_DIR, targetDir);
 		String args = 
 				" -p "+targetDir
-				+ " -v"
+				+ " -vvv"
 				+ " search"
-//				+ " --no-oldstyle"
 				+ " --dictionary "
 				+ " country disease"
 			;
@@ -62,32 +78,55 @@ static File TIGR2ESS = new File("/Users/pm286/workspace/Tigr2essDistrib/tigr2ess
 	}
 	
 	@Test
+	/** this effectively runs
+	 * ami -p <targetDir> search --dictionary country
+	 */
+	public void testZikaCooccurrence1() {
+		System.out.println(AMIFixtures.TEST_ZIKA1_DIR);
+		File targetDir = new File("target/cooccurrence/zika10a");
+		CMineTestFixtures.cleanAndCopyDir(AMIFixtures.TEST_ZIKA1_DIR, targetDir);
+		String args = 
+				" -p "+targetDir
+				+ " -vv"
+				+ " search"
+				+ " --dictionary "
+				+ " country disease"
+			;
+		AMI.main(args);
+	}
+	
+	
+	@Test
+	// OK
 	public void testZikaCooccurrence() {
 		File targetDir = new File("target/cooccurrence/zika10");
 		CMineTestFixtures.cleanAndCopyDir(AMIFixtures.TEST_ZIKA10_DIR, targetDir);
 		String args = 
-				" -p /Users/pm286/workspace/cmdev/normami/target/cooccurrence/zika10"
+//				" -p /Users/pm286/workspace/cmdev/normami/target/cooccurrence/zika10"
+				" -p " + AMIFixtures.TEST_ZIKA10_DIR 
+				+ " search"
 				+ " --dictionary species gene country disease funders "
 			;
-		new AMISearchTool().runCommands(args);
+		AMI.execute(args);
+//		new AMISearchTool().runCommands(args);
 	}
 
 	@Test
-	public void testAMISearchNew() {
+	public void testAMISearchNewIT() {
 		File targetDir = new File("target/cooccurrence/ocimum");
 		CMineTestFixtures.cleanAndCopyDir(OSANCTUM200, targetDir);
 		String args = ""
 				+ " -p "+targetDir 
+				+ " search"
 				+ " --ignorePlugins word"
 				+ " --dictionary "+TIGR2ESS.toString()+"/dictionaries/examples/monoterpenes"
 				;
+		AMI.execute(args);
 		new AMISearchTool().runCommands(args);
 	}
 	
 	@Test
-	public void testAMISearchLarge() {
-//		File targetDir = new File("target/cooccurrence/ocimum");
-//		CMineTestFixtures.cleanAndCopyDir(OSANCTUM2000, targetDir);
+	public void testAMISearchLargeIT() {
 		File targetDir = OSANCTUM2000;
 //		CMineTestFixtures.cleanAndCopyDir(OSANCTUM2000, targetDir);
 		LOG.debug(OSANCTUM2000 + "; "+new CProject(targetDir).getOrCreateCTreeList().size());
@@ -101,7 +140,7 @@ static File TIGR2ESS = new File("/Users/pm286/workspace/Tigr2essDistrib/tigr2ess
 	
 	@Test
 	/** serious performance problems on PMC3390897 - */
-	public void testAMISearchNewSpecies() {
+	public void testAMISearchNewSpeciesIT() {
 		File targetDir = new File("target/cooccurrence/species");
 		CMineTestFixtures.cleanAndCopyDir(new File("/Users/pm286/workspace/tigr2ess/scratch/centaurea"), targetDir);
 		String args = /*ami-search-new*/""
@@ -121,7 +160,7 @@ static File TIGR2ESS = new File("/Users/pm286/workspace/Tigr2essDistrib/tigr2ess
 		String args = /*ami-search-new*/""
 				+ " -p "+targetDir 
 				+ " --ignorePlugins word"//				
-				+ " --dictionary "+DICTIONARY_EXAMPLES+"/monoterpenes country species plantparts" 
+				+ " --dictionary "+TIGR2ESS_DICTIONARY_EXAMPLES+"/monoterpenes country species plantparts" 
 				;
 		new AMISearchTool().runCommands(args);
 	}

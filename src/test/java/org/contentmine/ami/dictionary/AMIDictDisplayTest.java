@@ -69,8 +69,7 @@ private static final File TARGET = new File("target");
 	public void testDictionaryDisplayResource() {
 		String dict = "--dictionary /org/contentmine/ami/plugins/dictionary";
 		String args = dict + " -v" + " display";
-		AMIDict.execute(args);
-		
+		AMIDict.execute(args);		
 	}
 	
 	@Test
@@ -78,7 +77,7 @@ private static final File TARGET = new File("target");
 		String dict = "--dictionary /org/contentmine/ami/plugins/dictionary";
 		String args = dict + " -v" + " display"
 //				+ " --fields term name"
-				+ " --fields"
+				+ " --fields description"
 				+ " --validate"
 				;
 		AMIDict.execute(args);

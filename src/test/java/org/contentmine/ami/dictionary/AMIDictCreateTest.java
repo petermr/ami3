@@ -2,19 +2,19 @@ package org.contentmine.ami.dictionary;
 
 import static org.junit.Assert.fail;
 
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.contentmine.ami.tools.AMIDict;
+import org.contentmine.ami.tools.AbstractAMIDictTest;
 import org.contentmine.ami.tools.AbstractAMIDictTool;
 import org.contentmine.ami.tools.AbstractAMIDictTool.DictionaryFileFormat;
-import org.contentmine.ami.tools.AbstractAMITest;
+import org.contentmine.ami.tools.dictionary.DictionaryCreationTool;
 import org.contentmine.ami.tools.download.CurlDownloader;
 import org.contentmine.graphics.html.HtmlA;
 import org.contentmine.norma.NAConstants;
@@ -28,7 +28,7 @@ import org.junit.Test;
  * @author pm286
  *
  */
-public class AMIDictCreateTest extends AbstractAMITest {
+public class AMIDictCreateTest extends AbstractAMIDictTest {
 	private static final Logger LOG = LogManager.getLogger(AMIDictCreateTest.class);
 private static final File TARGET = new File("target");
 	public static final File DICTIONARY_DIR = new File(TARGET, "dictionary");
@@ -42,12 +42,6 @@ private static final File TARGET = new File("target");
 		
 	@Test
 	public void testSubcommands() {
-		String args = "create ";
-		AMIDict.execute(args);
-	}
-	
-	@Test
-	public void testSubcommands1() {
 		String args = "create ";
 		AMIDict.execute(args);
 	}
@@ -141,7 +135,7 @@ private static final File TARGET = new File("target");
 				;
 		AMIDict.execute(args);
 		File dictionaryFile = new File(directory, dictionary+"."+"xml");
-		Assert.assertTrue(""+dictionaryFile, dictionaryFile.exists());
+//		Assert.assertTrue(""+dictionaryFile, dictionaryFile.exists());
 	}
 
 	@Test
@@ -455,6 +449,52 @@ private static final File TARGET = new File("target");
 	}
 
 	@Test
+	public void testCreateFromWikipediaCategory() {
+		String categoryString = "https://en.wikipedia.org/wiki/Category:Human_migration";
+		String cmd = "-v"
+				+ " --dictionary hummig"
+				+ " --directory=target/dictionary/"
+				+ " --input=" + categoryString 
+				+ " create"
+				+ " --informat=wikicategory";
+		AbstractAMIDictTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
+	}
+	
+	@Test
+	public void testCreateFromWikidataSparqlXml() {
+		String cmd = "-v"
+				+ " --dictionary country"
+				+ " --directory=target/dictionary/"
+				+ " --input=" + new File(TEST_DICTIONARY, "country_sparql.xml")
+				+ " create"
+				+ " --informat=wikisparqlxml";
+		AbstractAMIDictTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
+	}
+	
+	// CREATE
+	@Test
+	/** creates  mini dictionary with wikipedia and wikidata links where possible
+	 * 
+	 */
+	public void testCreateFromList() {
+		String cmd = " "
+				+ " -vvvv"
+				+ " --dictionary myterpenes"
+				+ " --directory=target/dictionary/create"
+//				+ " --inputname miniterpenes"
+				+ " create"
+				+ " --wikilinks wikidata wikipedia"
+				+ " --terms thymol "
+				+ " menthol borneol"
+				+ " junkolol "
+				+ " --informat list"
+				+ " --outformats xml"		
+				;
+		AbstractAMIDictTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
+	}
+	
+
+	@Test
 	@Ignore // NO DIRECTORY GIVEN
 	public void testWikipediaWikiTemplate() throws IOException {
 		String dict = "respiratory_pathology";
@@ -543,6 +583,7 @@ private static final File TARGET = new File("target");
 	}
 	
 	@Test
+	@Ignore
 	public void testDownloadMediawiki() throws IOException {
 		downloadAndTest(new File("target/curl.mw.txt"), 
 				"https://en.wikipedia.org/w/index.php?title=Template:Viral_systemic_diseases", 50000, 51000);

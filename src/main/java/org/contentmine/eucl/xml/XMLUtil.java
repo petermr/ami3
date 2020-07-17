@@ -1261,11 +1261,14 @@ public abstract class XMLUtil implements XMLConstants {
 		}
 		return doc == null ? null : doc.getRootElement();
 	}
-	
-	@Deprecated //"use encoding"
+
+	/** uses Charset.UTF-8
+	 * 
+	 * @param is
+	 * @return
+	 */
 	public static Element parseQuietlyToRootElement(InputStream is) {
-		Document doc = parseQuietlyToDocument(is);
-		return doc == null ? null : doc.getRootElement();
+		return parseQuietlyToRootElement(is, Charset.forName("UTF-8"));
 	}
 		
 	public static Element parseQuietlyToRootElement(InputStream is, Charset encoding) {

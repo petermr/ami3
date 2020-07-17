@@ -104,13 +104,13 @@ private List<OccurrenceAnalyzer> occurrenceAnalyzerList;
 	 * all methods come through this
 	 * 
 	 * @param occurrenceType
-	 * @param resultsXMLFile
+	 * @param resultsXMLFileRegex
 	 * @return
 	 */
-	private OccurrenceAnalyzer createOccurrenceAnalyzerAndAdd(OccurrenceType occurrenceType, String resultsXMLFile) {
+	private OccurrenceAnalyzer createOccurrenceAnalyzerAndAdd(OccurrenceType occurrenceType, String resultsXMLFileRegex) {
 		OccurrenceAnalyzer occurrenceAnalyzer = new OccurrenceAnalyzer();
 		occurrenceAnalyzer.setType(occurrenceType);
-		occurrenceAnalyzer.setResultsDirRegex(resultsXMLFile);
+		occurrenceAnalyzer.setResultsDirRegex(resultsXMLFileRegex);
 		occurrenceAnalyzer.setEntityAnalyzer(this);
 		ensureOccurrenceAnalyzerLists();
 		occurrenceAnalyzerList.add(occurrenceAnalyzer);

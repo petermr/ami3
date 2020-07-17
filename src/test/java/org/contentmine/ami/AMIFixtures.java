@@ -73,6 +73,7 @@ public final static File TEST_RESOURCES_DIR    = new File(CHESConstants.SRC_TEST
 	public final static File TEST_OIL5_DIR           = new File(NAConstants.TEST_AMI_DIR, "oil5/");
 	public final static File TEST_OMAR_DIR           = new File(NAConstants.TEST_AMI_DIR, "omar/");
 	public final static File TEST_TOOLS_DIR           = new File(NAConstants.TEST_AMI_DIR, "tools/");
+	public final static File TEST_ZIKA1_DIR           = new File(NAConstants.TEST_AMI_DIR, "zika1/");
 	public final static File TEST_ZIKA2_DIR           = new File(NAConstants.TEST_AMI_DIR, "zika2/");
 	public final static File TEST_ZIKA10_DIR           = new File(NAConstants.TEST_AMI_DIR, "zika10/");
 	public final static File TEST_ZIKA10A_DIR           = new File(NAConstants.TEST_AMI_DIR, "zika10a/");

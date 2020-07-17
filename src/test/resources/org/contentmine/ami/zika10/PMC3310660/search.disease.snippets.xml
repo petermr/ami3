@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snippetsTree>
+ <snippets file="src/test/resources/org/contentmine/ami/zika10/PMC3310660/results/search/disease/results.xml">
+  <result pre="limit the relevance of mice to some human diseases, e.g." exact="cardiomyopathy" post="[27] or cystic fibrosis [12]. Other mammals, notably rabbit"/>
+  <result pre="of mice to some human diseases, e.g. cardiomyopathy [27] or" exact="cystic fibrosis" post="[12]. Other mammals, notably rabbit and pig, are increasingly"/>
+  <result pre="are widely used in the study of lipid metabolism and" exact="atherosclerosis" post="[30]. Pronuclear microinjection of DNA is as facile in"/>
+  <result pre="rabbits have been generated as models for retinal degeneration [31]," exact="cardiomyopathy" post="[32], inflammation [33], hyperlipidemia [34] and for the evaluation"/>
+  <result pre="H et al. 2010 Generation of knockout rats with X-linked" exact="severe combined immunodeficiency" post="(X-SCID) using zinc-finger nucleases. PLoS One Jan 25; 5"/>
+  <result pre="of systolic dysfunction in a transgenic rabbit model of human" exact="cardiomyopathy" post="through thiol-sensitive mechanisms. Circulation 119 1398 1407 19255346 33"/>
+ </snippets>
+</snippetsTree>

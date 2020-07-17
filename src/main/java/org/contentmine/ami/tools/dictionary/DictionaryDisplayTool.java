@@ -14,7 +14,12 @@ import org.apache.logging.log4j.Logger;
 import org.contentmine.ami.tools.AbstractAMIDictTool;
 import org.contentmine.cproject.files.DebugPrint;
 import org.contentmine.cproject.util.CMineGlobber;
+import org.contentmine.eucl.euclid.util.MultisetUtil;
 import org.contentmine.eucl.xml.XMLUtil;
+
+import com.google.common.collect.HashMultiset;
+import com.google.common.collect.Multiset;
+import com.google.common.collect.Multiset.Entry;
 
 import nu.xom.Attribute;
 import nu.xom.Element;
@@ -131,10 +136,7 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
     private boolean validate = false;
     
 
-    private String dictionary;
-
-	private Element dictionaryElement;
-
+//    private String dictionary;
 
 	public DictionaryDisplayTool() {
 		super();
@@ -186,11 +188,9 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 //		LOG.warn("    species (resolves abbreviations) ");
 	}
 
-	public void listDictionaryInfo(String dictionary, Element dictionaryElement) {
-		this.dictionary = dictionary;
-		this.dictionaryElement = dictionaryElement;
-		LOG.warn("\nDictionary: "+dictionary+"\n");
-		List<Element> entries = XMLUtil.getQueryElements(dictionaryElement, "./*[local-name()='entry']");
+	public void listDictionaryInfo() {
+		LOG.warn("\nDictionary: " + simpleDictionary.getDictionaryName()+"\n");
+		List<Element> entries = XMLUtil.getQueryElements(simpleDictionary.getDictionaryElement(), "./*[local-name()='entry']");
 		LOG.warn("entries: "+entries.size());
 		LOG.trace("validate "+validate);
 		validateWithXPath();
@@ -210,23 +210,24 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 	}
 
 	private void validateDictionaryAttributes() {
-		validate("./*[@title and not(@title='"+dictionary+"')]", 
-				"******Bad dictionary title (" + dictionary + ") ****** ", dictionaryElement);
+		String dictionaryName = simpleDictionary.getDictionaryName();
+		validate("./*[@title and not(@title='"+dictionaryName+"')]", 
+				"******Bad dictionary title (" + dictionaryName + ") ****** ");
 	}
 
 	private void validateDictionaryChildren() {
 		validate("./*[local-name()!='desc' and local-name()!='entry']", 
-				"******Bad dictionary children****** ", dictionaryElement);
+				"******Bad dictionary children****** ");
 	}
 
 	private void validateDescAttributes() {
 		validate("./*[local-name()='desc' and @* and not(@date) and not(@author)]", 
-				"******Bad desc attributes****** ", dictionaryElement);
+				"******Bad desc attributes****** ");
 	}
 
 	private void validateDescChildren() {
 		validate("./*[local-name()='desc' and count(*) > 0]",
-				"******Bad desc children ****** ", dictionaryElement);
+				"******Bad desc children ****** ");
 	}
 
 	private void validateEntryAttributes() {
@@ -250,11 +251,11 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 //				+ " and not(@wikidata)"
 				+ " "
 				+ "]",
-				"******Bad entry attributes ****** ", dictionaryElement);
+				"******Bad entry attributes ****** ");
 	}
 	private void validateEntryChildren() {
 		validate("./*[local-name()='entry']/*[not(local-name()='synonym')]",
-				"******Bad entry children ****** ", dictionaryElement);
+				"******Bad entry children ****** ");
 	}
 
 	private void validate(String xpath, String message, Element element) {
@@ -264,31 +265,41 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 		}
 	}
 
+	private void validate(String xpath, String message) {
+		validate(xpath, message, simpleDictionary.getDictionaryElement());
+	}
+
 	/** counts the predefined attributes
 	 * 
 	 */
 	private void printFieldSummary() {
+		LOG.info("> fieldSummary: ");
 		StringBuilder sb = new StringBuilder();
 		for (DictionaryField field : fields) {
+			Multiset<String> fieldSet = HashMultiset.create();
 			if (field.getType().equals(FieldType.ATTRIBUTE)) {
 				String xpath = ".//*[@*[name()='"+field.toString()+"' and not(.='')]]";
-				List<Element> elements = XMLUtil.getQueryElements(dictionaryElement, xpath);
+				List<Element> elements = XMLUtil.getQueryElements(simpleDictionary.getDictionaryElement(), xpath);
 				String fieldS = field.toString();
 				sb.append("@" + fieldS + ": " + elements.size() + " ");
 				for (Element element : elements) {
-					LOG.trace(fieldS + "> "+element.getAttributeValue(fieldS));
+					String fieldValue = element.getAttributeValue(fieldS);
+					LOG.info(fieldS + "> "+fieldValue);
+					fieldSet.add(fieldValue);
 				}
 			}
+			List<Entry<String>> fieldList = MultisetUtil.createListSortedByCount(fieldSet);
+			LOG.info(field+": "+fieldList);
 		}
 		LOG.info("Attributes: "+sb);
 	}
 
 	private void printDictionary() {
-		LOG.warn("dictionary: " + dictionary);
-		for (int i = 0; i < dictionaryElement.getAttributeCount(); i++) {
-			Attribute attribute = dictionaryElement.getAttribute(i);
+		LOG.warn("dictionary: " + simpleDictionary.getDictionaryName());
+		for (int i = 0; i < simpleDictionary.getDictionaryElement().getAttributeCount(); i++) {
+			Attribute attribute = simpleDictionary.getDictionaryElement().getAttribute(i);
 			String attName = attribute.getLocalName();
-			LOG.info("dictionary@" + attName + ": " + dictionaryElement.getAttributeValue(attName));
+			LOG.info("dictionary@" + attName + ": " + simpleDictionary.getDictionaryElement().getAttributeValue(attName));
 		}
 		if (validate) {
 			validateDictionary();
@@ -296,16 +307,16 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 	}
 
 	private String validateDictionary() {
-		for (int i = 0; i < dictionaryElement.getAttributeCount(); i++) {
-			Attribute attribute = dictionaryElement.getAttribute(i);
+		for (int i = 0; i < simpleDictionary.getDictionaryElement().getAttributeCount(); i++) {
+			Attribute attribute = simpleDictionary.getDictionaryElement().getAttribute(i);
 			String attName = attribute.getLocalName();
-			LOG.info("dictionary@" + attName + ": " + dictionaryElement.getAttributeValue(attName));
+			LOG.info("dictionary@" + attName + ": " + simpleDictionary.getDictionaryElement().getAttributeValue(attName));
 		}
 		return null;
 	}
 
 	private void printDescs() {
-		List<Element> descList = XMLUtil.getQueryElements(dictionaryElement, "./*[local-name()='desc']");
+		List<Element> descList = XMLUtil.getQueryElements(simpleDictionary.getDictionaryElement(), "./*[local-name()='desc']");
 		for (Element desc : descList) {
 			LOG.info("Desc: "+desc.getValue());
 			if (validate) {
@@ -323,7 +334,7 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 	}
 
 	private void printEntries() {
-		List<Element> entryList = XMLUtil.getQueryElements(dictionaryElement, "./*[local-name()='entry']");
+		List<Element> entryList = XMLUtil.getQueryElements(simpleDictionary.getDictionaryElement(), "./*[local-name()='entry']");
 		for (int i = 0; i < entryList.size(); i++) {
 			Element entry =  entryList.get(i);
 			if (i < maxEntries) {
