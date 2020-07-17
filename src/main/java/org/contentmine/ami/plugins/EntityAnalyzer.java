@@ -141,7 +141,11 @@ public class EntityAnalyzer {
 	}
 
 	private String createResultsXMLFileRegex(String code, String subCode) {
+		// Horrible but I think necessary
 		String separator = File.separator;
+		if (separator.contentEquals("\\")) {
+			separator = "\\" + separator;
+		}
 		String s = ANCESTORS;
 		s += code + separator;
 		if (subCode != null) {
