@@ -183,7 +183,7 @@ public class OccurrenceAnalyzer {
 	public List<File> getOrCreateResultsFiles() {
 		if (resultsFiles == null) {
 			resultsFiles = new CMineGlobber().setRegex(resultsDirRegex).setLocation(getProjectDir()).listFiles();
-			LOG.debug("Globbed "+resultsFiles.size()+"results files under ("+getProjectDir()+") with ("+resultsDirRegex+")");
+			LOG.debug("Globbed "+resultsFiles.size()+" results files under ("+getProjectDir()+") with regex ("+resultsDirRegex+")");
 		}
 		return resultsFiles;
 	}

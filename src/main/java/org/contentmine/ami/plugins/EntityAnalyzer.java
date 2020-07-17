@@ -25,7 +25,8 @@ import org.contentmine.norma.Norma;
  *
  */
 public class EntityAnalyzer {
-	private static final String ANCESTORS = ".*/";
+	private static final String ANCESTORS0 = ".*";
+//	private static final String ANCESTORS = ".*/";
 	private static final String RESULTS_XML = "results\\.xml";
 	private static final Logger LOG = LogManager.getLogger(EntityAnalyzer.class);
 	private static final Object MOSQUITO = "mosquito";
@@ -143,10 +144,11 @@ public class EntityAnalyzer {
 	private String createResultsXMLFileRegex(String code, String subCode) {
 		// Horrible but I think necessary
 		String separator = File.separator;
+		// Windows needs escaping
 		if (separator.contentEquals("\\")) {
 			separator = "\\" + separator;
 		}
-		String s = ANCESTORS;
+		String s = ANCESTORS0 + separator;
 		s += code + separator;
 		if (subCode != null) {
 			s += subCode + separator;
