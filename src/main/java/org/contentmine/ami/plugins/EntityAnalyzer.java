@@ -142,12 +142,7 @@ public class EntityAnalyzer {
 	}
 
 	private String createResultsXMLFileRegex(String code, String subCode) {
-		// Horrible but I think necessary
-		String separator = File.separator;
-		// Windows needs escaping
-		if (separator.contentEquals("\\")) {
-			separator = "\\" + separator;
-		}
+		String separator = fileSeparatorRegex();
 		String s = ANCESTORS0 + separator;
 		s += code + separator;
 		if (subCode != null) {
@@ -155,6 +150,11 @@ public class EntityAnalyzer {
 		}
 		s += RESULTS_XML;
 		return s;
+	}
+
+	private static String fileSeparatorRegex() {
+		// Windows file separator needs escaping
+		return File.separator.contentEquals("\\") ? "\\" + File.separator : File.separator;
 	}
 
 	private void ensureOccurrenceAnalyzerLists() {
