@@ -14,10 +14,14 @@ public class AMIFigureTest extends AbstractAMITest {
 	@Test
 	public void testCreate() {
 		CTree tree = new CProject(TEST_BATTERY10).getCTreeByName("PMC3463005");
-		String cmd = "-p "+TEST_BATTERY10
-//		String cmd = "-t "+tree.getDirectory()
+//		String cmd = "-p "+TEST_BATTERY10
+		String cmd = "-t "+tree.getDirectory()
 				+ " -v"
 				+ " figure"
+				+ " --panels grey,white border "
+				+ " --gutter x,10,y,10"
+				+ " --letters top.left.white.50.75"
+				+ " --caption "
 				;
 		LOG.warn("fig "+cmd);
 		AMI.execute(cmd);

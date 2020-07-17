@@ -183,12 +183,13 @@ public class OccurrenceAnalyzer {
 	public List<File> getOrCreateResultsFiles() {
 		if (resultsFiles == null) {
 			resultsFiles = new CMineGlobber().setRegex(resultsDirRegex).setLocation(getProjectDir()).listFiles();
+			LOG.debug("Globbed "+resultsFiles.size()+"results files under ("+getProjectDir()+") with ("+resultsDirRegex+")");
 		}
 		return resultsFiles;
 	}
 
 	private File getProjectDir() {
-		return entityAnalyzer == null ? null : entityAnalyzer.getProjectDir();
+		return entityAnalyzer == null ? null :  entityAnalyzer.getProjectDir();
 	}
 
 	public List<Multiset.Entry<String>> getOrCreateEntriesSortedByImportance() {

@@ -31,7 +31,7 @@ public class EntityAnalyzer {
 	private static final Object MOSQUITO = "mosquito";
 	private static final String PLANT = "plant";
 	
-private List<OccurrenceAnalyzer> occurrenceAnalyzerList; 
+	private List<OccurrenceAnalyzer> occurrenceAnalyzerList; 
 	private List<CooccurrenceAnalyzer> cooccurrenceAnalyzerList;
 	private File projectDir; 
 	private String code;
@@ -59,7 +59,7 @@ private List<OccurrenceAnalyzer> occurrenceAnalyzerList;
 	}
 	
 	public OccurrenceAnalyzer createOccurrenceAnalyzer(OccurrenceType occurrenceType, String name) {
-		String resultsXMLFile = createResultsXMLFile(occurrenceType, (SubType) null, name);
+		String resultsXMLFile = createResultsXMLFileRegex(occurrenceType, (SubType) null, name);
 		return createOccurrenceAnalyzerAndAdd(occurrenceType, resultsXMLFile);
 	}
 
@@ -80,7 +80,7 @@ private List<OccurrenceAnalyzer> occurrenceAnalyzerList;
 	 * @return
 	 */
 	public OccurrenceAnalyzer createAndAddOccurrenceAnalyzer(OccurrenceType type, SubType subType) {
-		String resultsXMLFile = createResultsXMLFile(type, subType, null);
+		String resultsXMLFile = createResultsXMLFileRegex(type, subType, null);
 		OccurrenceAnalyzer occurrenceAnalyzer = createOccurrenceAnalyzerAndAdd(type, resultsXMLFile);
 		occurrenceAnalyzer.setSubType(subType);
 		return occurrenceAnalyzer;
@@ -95,7 +95,7 @@ private List<OccurrenceAnalyzer> occurrenceAnalyzerList;
 	 * @return
 	 */
 	private OccurrenceAnalyzer createOccurrenceAnalyzer(OccurrenceType occurrenceType, SubType subType, String name) {
-		String resultsXMLFile = createResultsXMLFile(occurrenceType, subType, name);
+		String resultsXMLFile = createResultsXMLFileRegex(occurrenceType, subType, name);
 		OccurrenceAnalyzer occurrenceAnalyzer = createOccurrenceAnalyzerAndAdd(occurrenceType, resultsXMLFile).setSubType(subType);
 		return occurrenceAnalyzer;
 	}
@@ -117,7 +117,7 @@ private List<OccurrenceAnalyzer> occurrenceAnalyzerList;
 		return occurrenceAnalyzer;
 	}
 
-	/** create filename for xmlFile to be read.
+	/** create filename regex for xmlFile to be read.
 	 * Everything is routed through this
 	 * 
 	 * @param type
@@ -125,26 +125,27 @@ private List<OccurrenceAnalyzer> occurrenceAnalyzerList;
 	 * @param name
 	 * @return
 	 */
-	private String createResultsXMLFile(OccurrenceType type, SubType subType, String name) {
-		String xmlFile = null;
+	private String createResultsXMLFileRegex(OccurrenceType type, SubType subType, String name) {
+		String xmlFileRegex = null;
 		if (OccurrenceType.STRING.equals(type)) {
 			if (name == null) {
 				throw new RuntimeException("name must not be null for STRING");
 			}
-			xmlFile = createResultsXMLFile(name, (String)null);
+			xmlFileRegex = createResultsXMLFileRegex(name, (String)null);
 		} else if (subType != null) {
-			xmlFile = createResultsXMLFile(type.getName(), subType.getName());
+			xmlFileRegex = createResultsXMLFileRegex(type.getName(), subType.getName());
 		} else {
-			xmlFile = createResultsXMLFile(type.getName(), (String) null);
+			xmlFileRegex = createResultsXMLFileRegex(type.getName(), (String) null);
 		}
-		return xmlFile;
+		return xmlFileRegex;
 	}
 
-	private String createResultsXMLFile(String code, String subCode) {
+	private String createResultsXMLFileRegex(String code, String subCode) {
+		String separator = File.separator;
 		String s = ANCESTORS;
-		s += code + "/";
+		s += code + separator;
 		if (subCode != null) {
-			s += subCode + "/";
+			s += subCode + separator;
 		}
 		s += RESULTS_XML;
 		return s;
