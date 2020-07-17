@@ -6,6 +6,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Appender;
 import org.apache.logging.log4j.core.LoggerContext;
 import org.apache.logging.log4j.core.appender.ConsoleAppender;
+import org.apache.logging.log4j.core.appender.FileAppender;
+import org.apache.logging.log4j.core.appender.RandomAccessFileAppender;
+import org.apache.logging.log4j.core.appender.RollingFileAppender;
+import org.apache.logging.log4j.core.appender.RollingRandomAccessFileAppender;
 import org.apache.logging.log4j.core.config.Configurator;
 import org.apache.logging.log4j.core.config.LoggerConfig;
 import org.apache.logging.log4j.spi.StandardLevel;
@@ -20,7 +24,9 @@ import picocli.CommandLine.ParameterException;
 import picocli.CommandLine.ParseResult;
 import picocli.CommandLine.Spec;
 
+import java.io.File;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -314,14 +320,26 @@ public class AMI implements Runnable {
 			Configurator.setLevel(levelByClass); // apply the user-specified changes
 
 			Level level = verbosityToLogLevel();
+			LOG.debug("Specified verbosity={}, this translates to level={}", verbosity.length, level);
 
 			// find the CONSOLE appender and set its log level to match the specified verbosity
+			List<File> logFiles = new ArrayList<>();
 			LoggerContext loggerContext = LoggerContext.getContext(false);
 			LoggerConfig rootConfig = loggerContext.getConfiguration().getRootLogger();
 			for (Appender appender : rootConfig.getAppenders().values()) {
 				if (appender instanceof ConsoleAppender) {
+					LOG.debug("Reconfiguring {} appender with {}", appender, level);
 					rootConfig.removeAppender(appender.getName());
 					rootConfig.addAppender(appender, level, null);
+				}
+				if (appender instanceof FileAppender) {
+					logFiles.add(new File(((FileAppender) appender).getFileName()));
+				} else if (appender instanceof RollingFileAppender) {
+					logFiles.add(new File(((RollingFileAppender) appender).getFileName()));
+				} else if (appender instanceof RandomAccessFileAppender) {
+					logFiles.add(new File(((RandomAccessFileAppender) appender).getFileName()));
+				} else if (appender instanceof RollingRandomAccessFileAppender) {
+					logFiles.add(new File(((RollingRandomAccessFileAppender) appender).getFileName()));
 				}
 			}
 			// we may need to change the ROOT logger if it is stricter than the user-specified verbosity
@@ -329,6 +347,10 @@ public class AMI implements Runnable {
 				rootConfig.setLevel(level);
 			}
 			loggerContext.updateLoggers(); // apply the changes
+			LOG.info("(The console will show {} level messages)", level);
+			for (File logFile : logFiles) {
+				LOG.info("(Logs will also be printed to {})", logFile.getAbsolutePath());
+			}
 		}
 
 		private Level verbosityToLogLevel() {
