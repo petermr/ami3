@@ -90,7 +90,7 @@ import java.util.stream.Collectors;
 public class AMI implements Runnable {
 	private static final Logger LOG = LogManager.getLogger(AMI.class);
 
-	public static final String VERSION = "2020-07-09"; // update this with each change
+	public static final String VERSION = "2020-07-18"; // update this with each change
 
 	@ArgGroup(exclusive = true, order = 9)
 	ProjectOrTreeOptions projectOrTreeOptions = new ProjectOrTreeOptions();
