@@ -16,11 +16,8 @@
         <!-- 
         <skipITs>true</skipITs>
         -->
-       
-        
-    
+
         <!-- dependencies -->
-        
         <boofcv-all.version>0.33.1</boofcv-all.version>
         <boofcv-core.version>0.35</boofcv-core.version>
         <boofcv-swing.version>0.32</boofcv-swing.version>
@@ -37,7 +34,6 @@
         <htmlunit.version>[2.41.0,)</htmlunit.version>
         <imgscalr-lib.version>4.2</imgscalr-lib.version>
         <jai-imageio-core.version>1.4.0</jai-imageio-core.version>
-        
         <javax.media.version>1.1.3</javax.media.version>
         <javax.ws.rs.version>2.1.1</javax.ws.rs.version>
         <jbrowser.version>1.1.1</jbrowser.version>
@@ -68,17 +64,13 @@
         <xom.version>1.3.4</xom.version>
         <xml-apis.version>2.0.2</xml-apis.version>
         <xmlunit.version>1.6</xmlunit.version>
-        
-<!--
-        <opennlp.version>1.6.0</opennlp.version>       
-        <json-path.version>2.0.0</json-path.version>
-        <jsoup.version>1.8.2</jsoup.version>
-        <jdeb.version>1.3</jdeb.version>
--->
+
+        <!-- maven plugin versions -->
         <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
         <maven-failsafe-plugin.version>2.22.0</maven-failsafe-plugin.version>
         <maven-assembly-plugin.version>2.4</maven-assembly-plugin.version>
-       
+        <maven-deploy-plugin.version>3.0.0-M1</maven-deploy-plugin.version>
+        <maven-release-plugin.version>3.0.0-M1</maven-release-plugin.version>
     </properties>
 
     <parent>
@@ -298,9 +290,6 @@
                                 <id>cmine</id>
                             </program>
 						-->
-						
-						org.contentmine.ami.tools.AMI
-						
                             <program>
                                 <mainClass>org.contentmine.ami.plugins.EntityAnalyzer</mainClass>
                               <!--  description:  -->
@@ -387,9 +376,18 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-deploy-plugin</artifactId>
-                    <version>3.0.0-M1</version>
+                    <version>${maven-deploy-plugin.version}</version>
                 </plugin>
-           </plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>${maven-release-plugin.version}</version>
+                <!-- see https://maven.apache.org/maven-release/maven-release-plugin/examples/prepare-release.html -->
+                <configuration>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
+                </configuration>
+            </plugin>
+        </plugins>
         </build>
 
         <dependencies>
