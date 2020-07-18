@@ -60,8 +60,8 @@ public class EntityAnalyzer {
 	}
 	
 	public OccurrenceAnalyzer createOccurrenceAnalyzer(OccurrenceType occurrenceType, String name) {
-		String resultsXMLFile = createResultsXMLFileRegex(occurrenceType, (SubType) null, name);
-		return createOccurrenceAnalyzerAndAdd(occurrenceType, resultsXMLFile);
+		String resultsXMLFileRegex = createResultsXMLFileRegex(occurrenceType, (SubType) null, name);
+		return createOccurrenceAnalyzerAndAdd(occurrenceType, resultsXMLFileRegex);
 	}
 
 	/** create {@link OccurrenceAnalyzer} for types without subType or name
@@ -81,8 +81,8 @@ public class EntityAnalyzer {
 	 * @return
 	 */
 	public OccurrenceAnalyzer createAndAddOccurrenceAnalyzer(OccurrenceType type, SubType subType) {
-		String resultsXMLFile = createResultsXMLFileRegex(type, subType, null);
-		OccurrenceAnalyzer occurrenceAnalyzer = createOccurrenceAnalyzerAndAdd(type, resultsXMLFile);
+		String resultsXMLFileRegex = createResultsXMLFileRegex(type, subType, null);
+		OccurrenceAnalyzer occurrenceAnalyzer = createOccurrenceAnalyzerAndAdd(type, resultsXMLFileRegex);
 		occurrenceAnalyzer.setSubType(subType);
 		return occurrenceAnalyzer;
 	}
@@ -96,6 +96,7 @@ public class EntityAnalyzer {
 	 * @return
 	 */
 	private OccurrenceAnalyzer createOccurrenceAnalyzer(OccurrenceType occurrenceType, SubType subType, String name) {
+		LOG.debug("OccAnn>"+name);
 		String resultsXMLFile = createResultsXMLFileRegex(occurrenceType, subType, name);
 		OccurrenceAnalyzer occurrenceAnalyzer = createOccurrenceAnalyzerAndAdd(occurrenceType, resultsXMLFile).setSubType(subType);
 		return occurrenceAnalyzer;
@@ -137,6 +138,9 @@ public class EntityAnalyzer {
 			xmlFileRegex = createResultsXMLFileRegex(type.getName(), subType.getName());
 		} else {
 			xmlFileRegex = createResultsXMLFileRegex(type.getName(), (String) null);
+		}
+		if (!File.separator.contentEquals("/") && xmlFileRegex.indexOf("/") != -1) {
+			LOG.error("regex not normalised for non-/ syntax "+xmlFileRegex);
 		}
 		return xmlFileRegex;
 	}

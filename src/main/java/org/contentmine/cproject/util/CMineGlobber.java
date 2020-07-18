@@ -197,6 +197,9 @@ private static final String GLOB = "glob:";
 	}
 
 	public CMineGlobber setRegex(String pathString) {
+		if (!File.separator.contentEquals("/") && pathString.indexOf("/") != -1) {
+			LOG.error("regex/glob contains / on non-NIX system; will probably fail");
+		}
 		if (pathString == null) {
 			LOG.warn("null pathString");
 		} else if (pathString.startsWith(GLOB)) {
