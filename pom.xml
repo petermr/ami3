@@ -94,7 +94,9 @@
             <name>Peter Murray-Rust</name>
         </developer>
     </developers>
-
+    <scm>
+        <developerConnection>scm:git:https://github.com/petermr/ami3.git</developerConnection>
+    </scm>
     <inceptionYear>1994-2020</inceptionYear>
 
 
