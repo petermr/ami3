@@ -73,11 +73,12 @@
         <maven-release-plugin.version>3.0.0-M1</maven-release-plugin.version>
     </properties>
 
-    <parent>
-        <groupId>org.contentmine</groupId>
-        <artifactId>cm-parent</artifactId>
-        <version>7.1.0</version>
-    </parent>
+    <!-- The parent POM causes problems for the maven-release-plugin: it has hg (mercurial) configured as SCM, preventing us from using git... -->
+<!--    <parent>-->
+<!--        <groupId>org.contentmine</groupId>-->
+<!--        <artifactId>cm-parent</artifactId>-->
+<!--        <version>7.1.0</version>-->
+<!--    </parent>-->
 
     
 
@@ -95,6 +96,7 @@
         </developer>
     </developers>
     <scm>
+        <connection>scm:git:https://github.com/petermr/ami3.git</connection>
         <developerConnection>scm:git:https://github.com/petermr/ami3.git</developerConnection>
     </scm>
     <inceptionYear>1994-2020</inceptionYear>
