@@ -9,7 +9,10 @@
         <java.version>1.8</java.version>
         <java.source.version>1.8</java.source.version>
         <java.target.version>1.8</java.target.version>
-    <!-- if this is uncommented the tests are all skipped
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <!-- if this is uncommented the tests are all skipped
         <skipTests>true</skipTests>
         -->
         <!--  maybe uncomment this generally? -->
