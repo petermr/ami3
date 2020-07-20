@@ -671,6 +671,28 @@ public class AMISectionToolTest extends AbstractAMITest {
 		SectionElement hypertree = SectionElement.createAndPopulateHypertree(cProject);
 		XMLUtil.debug(hypertree, new File(AbstractAMITest.OIL186, "hypertree.xml"), 1);
 	}
+	
+	@Test
+	/** overlap all sectionTrees.
+	 * 
+	 */
+	public void testViralEpidem950IT() throws IOException {
+		
+		LOG.debug(AbstractAMITest.VIRAL950);
+		CProject cProject = new CProject(AbstractAMITest.VIRAL950);
+		String cmd;
+		cmd = "-v -p " + cProject.getDirectory()
+		        + " search"
+		        + " --dictionary country funders drugs"
+		        ;
+//		AMI.execute(cmd);
+		cmd = "-v -p " + cProject.getDirectory() + ""
+				+ " section"
+				+ " --summary all"
+				+ " --hypertree mincount=2"
+				;
+		AMI.execute(cmd);
+	}
 
 	// ================= BUGS ===========
 	

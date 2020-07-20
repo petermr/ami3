@@ -41,6 +41,7 @@ private static final String COUNT = "count";
 	
 	public SectionElement(File file) {
 		this();
+		// remove trailing serial numbers and leading/trailing underscores
 		String title = file.getName().replaceAll("\\d+_", "");
 		title = title.replaceAll("^_*", "");
 		title = title.replaceAll("_*$", "");
@@ -168,18 +169,47 @@ private static final String COUNT = "count";
 	}
 
 	/** top entry point for creating hypertrees.
-	 * 
+	 * WRONG PLACE
 	 */
+	@Deprecated
 	public static SectionElement createAndPopulateHypertree(CProject cProject) {
+		LOG.trace("sec>"+cProject);
 		CTreeList cTreeList = cProject.getOrCreateCTreeList();
+		LOG.trace("sec>"+cTreeList.size());
 		SectionElement hypertree = new SectionElement(C_PROJECT);
+		int count = 0;
 		for (CTree cTree : cTreeList) {
 			hypertree.addToTree(new SectionElement(CTree.C_TREE), cTree.getDirectory());
+			if (count++ %10 ==0) System.err.print(".");
 			hypertree.mergeDescendants();
 			hypertree.sortDescendantsByCount();
 		}
 		return hypertree;
 	}
+
+	/**
+	 * 
+	 * @param countS
+	 * @return true if any elements removed
+	 */
+	public boolean removeLowCounts(String countS) {
+		Integer count = null;
+		try {
+			count = Integer.parseInt(countS);
+		} catch (NumberFormatException nfe) {
+			LOG.error("sec>" + nfe + ": " + countS);
+		}
+		List<Element> lowCountElements = XMLUtil.getQueryElements(
+				this, ".//*[@count <= '" + count+ "' or not(@count) and not(*)]");
+//		LOG.info("sec>"+lowCountElements.size());
+		for (Element lowCountElement : lowCountElements) {
+			lowCountElement.detach();
+		}
+		return lowCountElements.size() > 0;
+		
+	}
+
+
 	
 }
 class CountComparator implements Comparator<SectionElement> {

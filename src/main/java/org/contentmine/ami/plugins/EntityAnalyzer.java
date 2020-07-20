@@ -26,7 +26,6 @@ import org.contentmine.norma.Norma;
  */
 public class EntityAnalyzer {
 	private static final String ANCESTORS0 = ".*";
-//	private static final String ANCESTORS = ".*/";
 	private static final String RESULTS_XML = "results\\.xml";
 	private static final Logger LOG = LogManager.getLogger(EntityAnalyzer.class);
 	private static final Object MOSQUITO = "mosquito";

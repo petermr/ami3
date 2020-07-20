@@ -3,35 +3,43 @@ package org.contentmine.ami.tools;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
-import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.contentmine.cproject.files.CTree;
+import org.contentmine.cproject.files.CTreeList;
 import org.contentmine.cproject.files.DebugPrint;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.euclid.util.CMFileUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlA;
+import org.contentmine.graphics.html.HtmlBody;
 import org.contentmine.graphics.html.HtmlCaption;
 import org.contentmine.graphics.html.HtmlElement;
+import org.contentmine.graphics.html.HtmlHtml;
 import org.contentmine.graphics.html.HtmlLabel;
+import org.contentmine.graphics.html.HtmlLi;
+import org.contentmine.graphics.html.HtmlP;
+import org.contentmine.graphics.html.HtmlSpan;
 import org.contentmine.graphics.html.HtmlTable;
 import org.contentmine.graphics.html.HtmlTd;
 import org.contentmine.graphics.html.HtmlTh;
 import org.contentmine.graphics.html.HtmlThead;
 import org.contentmine.graphics.html.HtmlTr;
+import org.contentmine.graphics.html.HtmlUl;
 import org.contentmine.graphics.html.util.HtmlUtil;
 import org.contentmine.norma.NormaTransformer;
 import org.contentmine.norma.sections.JATSArticleElement;
@@ -46,10 +54,9 @@ import org.contentmine.norma.sections.JATSSecElement;
 import org.contentmine.norma.sections.JATSSectionTagger;
 import org.contentmine.norma.sections.JATSSectionTagger.SectionTag;
 import org.contentmine.norma.sections.JATSSectionTagger.SectionType;
-import org.eclipse.jetty.util.log.Log;
+import org.contentmine.norma.sections.SectionElement;
 import org.w3c.dom.Document;
 
-import nu.xom.Attribute;
 import nu.xom.Element;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
@@ -75,6 +82,7 @@ description = {
 })
 public class AMISectionTool extends AbstractAMITool {
 	
+	private static final String MINCOUNT = "mincount";
 	private static final String SUMMARY_HTML = "summary.html";
 	private static final String BOLD_FIRST_CHILD_OF_PARA_IN_SEC =
 			".//*[local-name()='"+JATSSecElement.TAG+"' "
@@ -103,15 +111,26 @@ public class AMISectionTool extends AbstractAMITool {
 	private static final String TABLE_FILE_REGEX = ".*/\\d+_tab(le)?_+(\\d+)\\.xml";
 	public static final String TABLE_SUMMARY_DIRNAME = "__tables";
 	
-
 	private static final Logger LOG = LogManager.getLogger(AMISectionTool.class);
-public enum SummaryType {
+	public enum SummaryType {
+		all(null, null),
 		fig(FIGURES_DIR, FIGURE_SUMMARY_DIRNAME),
 		results(RESULTS_DIR, RESULTS_SUMMARY_DIRNAMR),
 		supplementary(SUPPLEMENTARY_DIR, SUPPLEMENTARY_SUMMARY_DIRNAME),
-		table(TABLES_DIR, TABLE_SUMMARY_DIRNAME),;
+		table(TABLES_DIR, TABLE_SUMMARY_DIRNAME),
+		;
 		private String path;
 		private String summaryPath;
+		
+		private static List<SummaryType> allTypes = new ArrayList<>();
+		static {
+			for (SummaryType summaryType : values()) {
+				if (!all.equals(summaryType)) {
+					allTypes.add(summaryType);
+				}
+			}
+		}
+
 		private SummaryType(String path, String summaryPath) {
 			this.path = path;
 			this.summaryPath = summaryPath;
@@ -122,6 +141,22 @@ public enum SummaryType {
 		public String getSummaryPath() {
 			return summaryPath;
 		}
+		public static List<SummaryType> getTypes() {
+			return Arrays.asList(values());
+		}
+		public final static List<String> typeNames() {
+			List<String> typeNames = new ArrayList<>();
+			for (SummaryType type : values()) {
+				typeNames.add(type.toString());
+			}
+			return typeNames;
+		}
+		public static List<SummaryType> getAllTypes() {
+			return allTypes;
+		}
+		
+
+		public final static String allString = all.toString();
 	}
 	
 	private enum FloatType {
@@ -151,6 +186,12 @@ public enum SummaryType {
             		+ " currently 201909 very slow since XSLT seems to be slow, "
             		+ " seems to be size related (references can take 1 sec)")
     private String xsltName = null;
+
+    @Option(names = {"--hypertree"},
+    		arity = "1",
+            description = "create hypertree from "
+            		)
+    private Map<String, String> hypertreeMap = new HashMap<>();
 
     @Option(names = {"--extract"},
 //    		arity = "0..*",
@@ -202,6 +243,7 @@ public enum SummaryType {
 	private File existingFulltextXML;
 	private int maxrows = 10;
 	private int currentSerial;
+	private SectionElement hypertree;
 		
 	public AMISectionTool() {
 		
@@ -213,7 +255,7 @@ public enum SummaryType {
 
     @Override
 	protected void parseSpecifics() {
-		normalizeSectionTags();
+		normalizeArgumentLists();
 		LOG.info("xslt                    {}", xsltName);
 		LOG.info("boldSections            {}", makeBoldSections);
 		LOG.info("extract                 {}", extractList);
@@ -226,6 +268,7 @@ public enum SummaryType {
 
     @Override
     protected void runSpecifics() {
+    	LOG.debug("sec>"+summaryList);
 		if (sectionTagList.size() == 0) {
 			LOG.info("section values: "+Arrays.asList(SectionTag.values()));
 		} else if (processTrees()) {
@@ -238,13 +281,71 @@ public enum SummaryType {
 	private void writeSummaries() {
 		if (cProject != null) {
 			for (SummaryType summaryType : summaryList) {
-				LOG.info("making summary: " + summaryType);
-				HtmlTable totalSummaryTable = createTotalSummary(summaryType);
-				File summaryDir = new File(cProject.getDirectory(), summaryType.getSummaryPath());
-				summaryDir.mkdirs();
-				XMLUtil.writeQuietly(totalSummaryTable, new File(summaryDir, SUMMARY_HTML), 1);
+				summarizeByType(summaryType);
+			}
+			createAndPopulateHypertree();
+			File xmlFile = new File(getCProjectDirectory(), "hypertree.xml");
+			XMLUtil.writeQuietly(hypertree, xmlFile, 3);
+			HtmlElement hyperTreeHtml = makeHtml();
+			File htmlFile = new File(getCProjectDirectory(), "hypertree.html");
+			XMLUtil.writeQuietly(hyperTreeHtml, htmlFile, 3);
+			
+		}
+	}
+
+	private HtmlElement makeHtml() {
+		HtmlHtml htmlElement = HtmlHtml.createUTF8Html();
+		HtmlBody bodyElement = htmlElement.getOrCreateBody();
+		addChildren(hypertree, bodyElement);
+		return htmlElement;
+	}
+
+	private void addChildren(SectionElement sectionElement, HtmlElement htmlElement) {
+		List<Element> sectionChildElements = XMLUtil.getChildElements(sectionElement);
+		if (sectionChildElements.size() > 0) {
+			HtmlUl ul = new HtmlUl();
+			ul.setTitle(sectionElement.getTitle());
+			htmlElement.appendChild(ul);
+			for (Element sce : sectionChildElements) {
+				HtmlLi li = new HtmlLi();
+				ul.appendChild(li);
+				SectionElement sectionChildElement = (SectionElement) sce;
+				HtmlSpan span = new HtmlSpan(sectionChildElement.getTitle() + " " + sectionChildElement.getCount());
+				li.appendChild(span);
+				addChildren(sectionChildElement, li);
 			}
 		}
+	}
+
+	private SectionElement createAndPopulateHypertree() {
+		hypertree = new SectionElement(SectionElement.C_PROJECT);
+		if (hypertreeMap.size() > 0) {
+			LOG.info("sec>"+hypertreeMap);
+			LOG.trace("sec>"+cProject);
+			CTreeList cTreeList = cProject.getOrCreateCTreeList();
+			LOG.trace("sec>"+cTreeList.size());
+			int count = 0;
+			for (CTree cTree : cTreeList) {
+				hypertree.addToTree(new SectionElement(CTree.C_TREE), cTree.getDirectory());
+				if (count++ %10 ==0) System.err.print(".");
+				hypertree.mergeDescendants();
+				hypertree.sortDescendantsByCount();
+			}
+			while (true) {
+				if (!hypertree.removeLowCounts(hypertreeMap.get(MINCOUNT))) break;
+			}
+		}
+		return hypertree;
+	}
+	
+
+	private void summarizeByType(SummaryType summaryType) {
+		LOG.info("making summary: " + summaryType);
+		HtmlTable totalSummaryTable = createTotalSummary(summaryType);
+		File summaryDir = new File(cProject.getDirectory(), summaryType.getSummaryPath());
+		LOG.debug("sec>"+summaryDir);
+		summaryDir.mkdirs();
+		XMLUtil.writeQuietly(totalSummaryTable, new File(summaryDir, SUMMARY_HTML), 1);
 	}
 
 	public boolean processTree() {
@@ -560,7 +661,7 @@ public enum SummaryType {
 		return xmlFile;
 	}
 
-	private void normalizeSectionTags() {
+	private void normalizeArgumentLists() {
 		if (sectionTagList.size() == 0) {
 			List<JATSSectionTagger.SectionTag> tags = SectionTag.getAllTags();
 			int i = 1;
@@ -571,6 +672,10 @@ public enum SummaryType {
 			System.out.println();
 		} else if (sectionTagList.size() == 1 && SectionTag.ALL.equals(sectionTagList.get(0))) {
 			sectionTagList = SectionTag.getAllTags();
+		}
+		if (summaryList.size() == 0) {
+		} else if (summaryList.size() == 1 && SummaryType.all.equals(summaryList.get(0))) {
+			summaryList = SummaryType.getAllTypes();
 		}
 	}
 

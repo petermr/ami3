@@ -41,7 +41,9 @@ public abstract class AbstractAMITest {
 	public static final File TEST_DICTIONARY = new File(SRC_TEST_AMI, "dictionary");
 	
 	public static File WORKSPACE = new File(_HOME, "workspace/");
-	public static File PROJECTS = WORKSPACE.exists() ? new File(WORKSPACE, "projects/") : NEW_PROJECTS;
+
+//	WORKSPACE.exists() ? new File(WORKSPACE, "projects/") : NEW_PROJECTS;
+	public static File PROJECTS = NEW_PROJECTS.exists() ? NEW_PROJECTS: new File(WORKSPACE, "projects/") ;
 	public static File CANADA = new File(PROJECTS, "canada/");
 	public static File CEV_OPEN = new File(PROJECTS, "CEVOpen/").exists() ? new File(PROJECTS, "CEVOpen/") : new File(PROJECTS, "CEV/");
 	public static File CEV_SEARCH = new File(CEV_OPEN, "searches/");
@@ -54,7 +56,9 @@ public abstract class AbstractAMITest {
 	public static File OIL186 = new File(CEV_SEARCH, "oil186/");
 	public static File OIL1000 = new File(CEV_SEARCH, "oil1000/");
 	public static CProject OIL186_PROJ = new CProject(OIL186);
-	
+
+	public static File VIRAL950 = new File(PROJECTS, "viral_epidemics/");
+
 	protected CProject cProject;
 	protected CTree cTree;
 	protected File outputFile;
