@@ -266,6 +266,7 @@ public static final int INCONSISTENT_FOOTER = -2;
   <td>Chemical composition of thyme EO</td>
  </tr>
 		 */
+		System.out.println("tab>"+subTableHtml.toXML());
 		String id = subTableHtml.getId();
 		String serial = id == null ? "" : id.replaceAll(".*_", "");
 		File subTableFile = new File(tableDir,  templateName+"_" + (serial) + "."+CTree.HTML);

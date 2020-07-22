@@ -57,7 +57,8 @@ public abstract class AbstractAMITest {
 	public static File OIL1000 = new File(CEV_SEARCH, "oil1000/");
 	public static CProject OIL186_PROJ = new CProject(OIL186);
 
-	public static File VIRAL950 = new File(PROJECTS, "viral_epidemics/");
+	public static File OPEN_VIRUS = new File(PROJECTS, "openVirus/");
+	public static File VIRAL950 = new File(OPEN_VIRUS, "viral_epidemics/");
 
 	protected CProject cProject;
 	protected CTree cTree;

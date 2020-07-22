@@ -678,20 +678,27 @@ public class AMISectionToolTest extends AbstractAMITest {
 	 */
 	public void testViralEpidem950IT() throws IOException {
 		
-		LOG.debug(AbstractAMITest.VIRAL950);
+		LOG.info(AbstractAMITest.VIRAL950);
 		CProject cProject = new CProject(AbstractAMITest.VIRAL950);
 		String cmd;
 		cmd = "-v -p " + cProject.getDirectory()
 		        + " search"
 		        + " --dictionary country funders drugs"
 		        ;
-//		AMI.execute(cmd);
-		cmd = "-v -p " + cProject.getDirectory() + ""
+		AMI.execute(cmd);
+		cmd = "-v -p " + cProject.getDirectory()
 				+ " section"
 				+ " --summary all"
 				+ " --hypertree mincount=2"
 				;
+//		AMI.execute(cmd);
+		cmd = " -vvv -p " + cProject.getDirectory()
+			+ " table"
+			+ " --summarytable __table/summary.html"
+			+ " --tabledir sections/tables"
+			;
 		AMI.execute(cmd);
+
 	}
 
 	// ================= BUGS ===========

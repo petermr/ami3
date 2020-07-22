@@ -16,11 +16,15 @@ import org.contentmine.ami.tools.AbstractAMIDictTool;
 import org.contentmine.ami.tools.AbstractAMIDictTool.DictionaryFileFormat;
 import org.contentmine.ami.tools.dictionary.DictionaryCreationTool;
 import org.contentmine.ami.tools.download.CurlDownloader;
+import org.contentmine.eucl.testutil.TestUtils;
+import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlA;
 import org.contentmine.norma.NAConstants;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
+
+import nu.xom.Element;
 
 
 /** tests AMIDictionary
@@ -461,6 +465,17 @@ private static final File TARGET = new File("target");
 	}
 	
 	@Test
+	public void testCreateFromWikidataSparqlCSV() {
+		String cmd = "-v"
+				+ " --dictionary chemcompound"
+				+ " --directory=target/dictionary/"
+				+ " --input=" + new File(TEST_DICTIONARY, "chemistry.csv")
+				+ " create"
+				+ " --informat=wikisparqlcsv";
+		AbstractAMIDictTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
+	}
+	
+	@Test
 	public void testCreateFromWikidataSparqlXml() {
 		String cmd = "-v"
 				+ " --dictionary country"
@@ -470,6 +485,27 @@ private static final File TARGET = new File("target");
 				+ " --informat=wikisparqlxml";
 		AbstractAMIDictTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
 	}
+	
+	@Test
+	public void testCreateFromWikidataSparqlTDD() {
+		File inputFile = new File(TEST_DICTIONARY, "country_sparql1.xml");
+		File outputDir = new File("target/dictionary/");
+		System.out.println("input "+inputFile);
+		String cmd = "-vvv"
+				+ " --dictionary country"
+				+ " --directory=" + outputDir
+				+ " --input=" + inputFile
+				+ " create"
+				+ " --informat=wikisparqlxml";
+		AbstractAMIDictTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
+		double eps = 0.001;
+		boolean stripWhite = true;
+		Element dictExpected = XMLUtil.parseQuietlyToRootElement(new File(TEST_DICTIONARY, "country1.dict.expected.xml"));
+		Element dictActual = XMLUtil.parseQuietlyToRootElement(new File(outputDir, "country.xml"));
+		TestUtils.assertEqualsIncludingFloat("country dict", dictExpected, dictActual, stripWhite, eps);
+	}
+	
+	
 	
 	// CREATE
 	@Test

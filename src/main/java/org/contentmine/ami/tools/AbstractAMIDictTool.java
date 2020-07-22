@@ -315,6 +315,7 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 		csv,
 		list,
 		mediawikitemplate,
+		wikisparqlcsv,
 		wikisparqlxml,
 		wikicategory,
 		wikipage,

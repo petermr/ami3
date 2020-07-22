@@ -58,10 +58,13 @@ import picocli.CommandLine.Option;
 				+ ""
 		})
 public class DictionaryCreationTool extends AbstractAMIDictTool {
+	private static final String BINDING = "binding";
+	private static final String FLAG_A_Z = ":flag-[a-z]+:";
 	public static final Logger LOG = LogManager.getLogger(DictionaryCreationTool.class);
 
 	private static final String HTTPS_EN_WIKIPEDIA_ORG = "https://en.wikipedia.org";
 	private static final String LITERAL = "literal";
+	private static final String TERM = "term";
 	private static final String NAME = "name";
 	private static final String SLASH_WIKI_SLASH = "/wiki/";
 	private static final String SYNONYMS = "synonyms";
@@ -71,6 +74,9 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	private static final String WIKIDATA_LABEL = "wikidataLabel";
 	private static final String WIKIPEDIA = "wikipedia";
 	private final static String WIKIPEDIA_BASE = HTTPS_EN_WIKIPEDIA_ORG + SLASH_WIKI_SLASH;
+	private final static List<String> ALLOWED_NAMES =  Arrays.asList(new String[] {
+			NAME,TERM,WIKIPEDIA,WIKIDATA_ALT_LABEL,WIKIDATA_LABEL 
+	});
 
 	private List<String> termList;
 	private List<String> nameList;
@@ -297,6 +303,9 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		if (InputFormat.wikisparqlxml.equals(informat)) {
 			readSparqlXml(inputStream);
 			writeDictionary();
+		} else if (InputFormat.wikisparqlcsv.equals(informat)) {
+				readSparqlCsv(inputStream);
+				writeDictionary();
 		} else {
 			readTerms(inputStream);
 			synchroniseTermsAndNames();
@@ -432,25 +441,72 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		List<Element> resultList = XMLUtil.getQueryElements(sparqlXml, "./*[local-name()='results']/*[local-name()='result']");
 		LOG.info("results " + resultList.size());
 		
+		
 		for (Element result : resultList) {
 			Element entry = new Element(DefaultAMIDictionary.ENTRY);
 			addWikidataID(entry, result);
 			addSynonyms(entry, result);
 			addWikipediaName(entry, result);
-			addWikidataLabelName(entry, result);
+			addWikidataLabel(entry, result);
+			addName(entry, result);
+			addTerm(entry, result);
+			System.out.println(entry.toXML());
+			addUnknownAttributes(entry, result);
 			simpleDictionary.getDictionaryElement().appendChild(entry);
 		}
 	}
-	private void addWikidataLabelName(Element entry, Element result) {
+	
+	private void addUnknownAttributes(Element entry, Element result) {
+		for (Element el : result.getChildElements()) {
+//			<binding name='iso3166_code'>
+//			<literal>AL</literal>
+//		</binding>
+			if (el.getLocalName().contentEquals(BINDING)) {
+				String newAttName = el.getAttributeValue(NAME);
+				if (ALLOWED_NAMES.contains(newAttName)) {
+					LOG.info("skipped "+newAttName);
+				} else {
+					LOG.info("copied unknown attribute "+newAttName);
+					String val = el.getValue().trim();
+					entry.addAttribute(new Attribute(newAttName, val));
+					addSynonym(entry, val);
+				}
+			}
+		}
+	}
+
+	private void addName(Element entry, Element result) {
 		/**
-			<binding name='wikidataLabel'>
+			<binding name='name' >
 				<literal xml:lang='en'>Canada</literal>
 			</binding>
 		 */
-		String literal = getValue(result, WIKIDATA_LABEL, LITERAL);
-		if (literal != null) {
-			entry.addAttribute(new Attribute(NAME, literal));
+		addWikidataLabelOverride(entry, result, NAME);
+	}
+
+	/** defaults to wikidataLabel if absent
+	 * 
+	 * @param entry
+	 * @param result
+	 * @param attName
+	 */
+	private void addWikidataLabelOverride(Element entry, Element result, String attName) {
+		String name = getValue(result, attName, LITERAL);
+		if (name == null ) {
+			name = getValue(result, WIKIDATA_LABEL, LITERAL);
 		}
+		if (name != null) {
+			entry.addAttribute(new Attribute(attName, name));
+		}
+	}
+
+	private void addTerm(Element entry, Element result) {
+		/**
+			<binding name='term' >
+				<literal xml:lang='en'>Canada</literal>
+			</binding>
+		 */
+		addWikidataLabelOverride(entry, result, TERM);
 	}
 
 	private static String getValue(Element result, String bindingName, String childName) {
@@ -471,6 +527,19 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		}
 	}
 
+	private void addWikidataLabel(Element entry, Element result) {
+		/**
+			<binding name='wikidataLabel'>
+				<uri>https://en.wikipedia.org/wiki/Canada</uri>
+			</binding>
+		 */
+		String name = getValue(result, WIKIDATA_LABEL, URI);
+		if (name != null) {
+			entry.addAttribute(new Attribute(WIKIDATA_LABEL, name));
+		}
+	}
+
+
 	private void addSynonyms(Element entry, Element result) {
 		/**
 		<binding name='synonyms'>
@@ -490,11 +559,29 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		if (literal != null) {
 			List<String> synonyms = Arrays.asList(literal.split("\\s*,\\s*"));
 			for (String synonym : synonyms) {
-				Element synonymElement = new Element(DefaultAMIDictionary.SYNONYM);
-				synonymElement.appendChild(synonym);
-				entry.appendChild(synonymElement);
+				if (!acceptableSynonym(synonym)) {
+					continue;
+				}
+				Element synonymElement = addSynonym(entry, synonym);
 			}
 		}
+	}
+
+	private Element addSynonym(Element entry, String synonym) {
+		Element synonymElement = new Element(DefaultAMIDictionary.SYNONYM);
+		synonymElement.appendChild(synonym);
+		entry.appendChild(synonymElement);
+		return synonymElement;
+	}
+
+	private static Pattern flagPattern = Pattern.compile(FLAG_A_Z);
+	private boolean acceptableSynonym(String synonym) {
+//		System.out.println(":"+synonym+":"+synonym.length());
+		if (Pattern.matches(FLAG_A_Z, synonym)) {
+			System.out.println("IGNORED "+synonym);
+			return false;
+		}
+		return true;
 	}
 
 	private static void addWikidataID(Element entry, Element result) {
@@ -507,6 +594,49 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		id = id.substring(id.lastIndexOf("/") + 1);
 		entry.addAttribute(new Attribute(DefaultAMIDictionary.WIKIDATA, id));
 	}
+	
+	private void readSparqlCsv(InputStream inputStream) {
+		/**
+item,itemLabel,chebiId
+http://www.wikidata.org/entity/Q4015903,Voacamine,10014
+http://www.wikidata.org/entity/Q27176808,LSM-12060,100686
+		...
+		*/
+		RectangularTable rectangularTable = null;
+		boolean useHeader = true;
+		try {
+			rectangularTable = RectangularTable.readCSVTable(inputStream, useHeader);
+		} catch (IOException e) {
+			throw new RuntimeException("cannot read table", e);
+		}
+		termCol = "itemLabel";
+		if (termCol == null) {
+			throw new RuntimeException("must give termCol");
+		}
+		termList = rectangularTable.getColumn(termCol).getValues();
+		if (termList == null) {
+			throw new RuntimeException("Cannot find term column");
+		}
+		String wikidataIDCol = "item";
+		List<String> wikidataIDList = rectangularTable.getColumn(wikidataIDCol).getValues();
+
+		Element desc = new Element(DefaultAMIDictionary.DESC);
+		desc.appendChild("Created from SPARQL query");
+		simpleDictionary.getDictionaryElement().appendChild(desc);
+		
+		
+		for (int i = 0; i < rectangularTable.size(); i++) {
+			Element entry = new Element(DefaultAMIDictionary.ENTRY);
+			String wikidataId = wikidataIDList.get(i);
+			wikidataId = wikidataId.substring(wikidataId.lastIndexOf("/") + 1);
+			entry.addAttribute(new Attribute(WIKIDATA, wikidataId));
+			entry.addAttribute(new Attribute(TERM, termList.get(i)));
+			System.out.println(entry.toXML());
+//			addUnknownAttributes(entry, result);
+			simpleDictionary.getDictionaryElement().appendChild(entry);
+		}
+	}
+
 
 	// ============= END SPARQL INPUT ============
 
