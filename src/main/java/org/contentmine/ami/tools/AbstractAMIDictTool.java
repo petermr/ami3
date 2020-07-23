@@ -52,7 +52,7 @@ import picocli.CommandLine.Spec;
  */
 
 
-@Command(mixinStandardHelpOptions = true, version = "ami-dict 1.0.0")
+@Command(mixinStandardHelpOptions = true, versionProvider = ManifestVersionProvider.class)
 public abstract class AbstractAMIDictTool implements Callable<Void> {
 	
 

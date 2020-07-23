@@ -33,7 +33,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-@Command(name = "ami", version = AMI.VERSION,
+@Command(name = "ami", versionProvider = ManifestVersionProvider.class,
 		description = {
 				"",
 				"`${COMMAND-FULL-NAME}` is a command suite for managing (scholarly) documents: " +

@@ -40,6 +40,7 @@ import picocli.CommandLine.Spec;
  */
 @Command(
 		mixinStandardHelpOptions = true,
+		versionProvider = ManifestVersionProvider.class,
 		abbreviateSynopsis = true, // because there are 21 common options defined in this class
 		descriptionHeading = "Description%n===========%n",
 		parameterListHeading = "Parameters%n=========%n",
@@ -48,15 +49,12 @@ import picocli.CommandLine.Spec;
 		requiredOptionMarker = '*',
 		showDefaultValues = true, // alternatively, we could switch this off and use ${DEFAULT-VALUE} in description text
 		usageHelpWidth = 120,
-		usageHelpAutoWidth = true,
+		usageHelpAutoWidth = true
 		//addMethodSubcommands = false, // TODO confirm with Peter
 		//separator = "=", // this is the default
 		//helpCommand = true, // this is a normal command, not a help command
 		//sortOptions = true, // this is the default
 		//hidden = false, // this is the default
-
-		// TODO I would like to automate this
-		version = "${COMMAND-FULL-NAME} 20190228" // also edit ami-jars.sh
 )
 public abstract class AbstractAMITool implements Callable<Void>, AbstractTool {
 	private static final String P = "-p";
