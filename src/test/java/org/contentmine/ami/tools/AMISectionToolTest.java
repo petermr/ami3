@@ -701,6 +701,38 @@ public class AMISectionToolTest extends AbstractAMITest {
 
 	}
 
+	private static final File PRIYA_1_PART = new File("/Users/pm286/projects/openVirus/miniproject/disease/1-part");
+	@Test
+	/** overlap all sectionTrees.
+	 * 
+	 */
+	public void testViralEpidemPriyaIT() throws IOException {
+		
+		LOG.info(PRIYA_1_PART);
+		CProject cProject = new CProject(PRIYA_1_PART);
+		String cmd;
+		cmd = "-v -p " + cProject.getDirectory()
+		        + " search"
+		        + " --dictionary country funders drugs"
+		        ;
+//		AMI.execute(cmd);
+		cmd = "-v -p " + cProject.getDirectory()
+				+ " section"
+				+ " --summary all"
+				+ " --hypertree mincount=2"
+				;
+		System.out.println(cmd);
+		AMI.execute(cmd);
+		cmd = " -vvv -p " + cProject.getDirectory()
+			+ " table"
+			+ " --summarytable __table/summary.html"
+			+ " --tabledir sections/tables"
+			;
+		AMI.execute(cmd);
+
+	}
+
+
 	// ================= BUGS ===========
 	
 }

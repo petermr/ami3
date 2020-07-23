@@ -483,6 +483,9 @@ private static final File TARGET = new File("target");
 				+ " --input=" + new File(TEST_DICTIONARY, "country_sparql.xml")
 				+ " create"
 				+ " --informat=wikisparqlxml";
+		System.out.println("cmd>"+cmd);
+		Assert.assertEquals("cmd",  "-v --dictionary country --directory=target/dictionary/ --input=/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/dictionary/country_sparql.xml create --informat=wikisparqlxml",
+				cmd);
 		AbstractAMIDictTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
 	}
 	

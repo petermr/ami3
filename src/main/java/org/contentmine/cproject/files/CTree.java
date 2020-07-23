@@ -1750,7 +1750,7 @@ public final static Pattern DOI_PREFIX = Pattern.compile("(10\\.[0-9]{3,}([\\.][
 		try {
 			document = PDDocument.load(existingFulltextPDF);
 		} catch (Exception e) {
-			throw new RuntimeException("Cannot load PDF "+existingFulltextPDF, e);
+			throw new RuntimeException("Cannot load PDF "+existingFulltextPDF +" | " + e.getMessage(), e);
 		}
 		int pageCount = document.getNumberOfPages();
 		int deltaPages = pdfDocumentProcessor.getMaxPages();
