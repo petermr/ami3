@@ -18,7 +18,7 @@ import java.util.regex.Pattern;
  * {@link CommandLine.IVersionProvider} implementation that returns version information
  * from the ami-x.x.jar file's {@code /META-INF/MANIFEST.MF} file.
  * If not found, it tries to obtain the version from the `pom.xml` file in the current
- * directory, specifically from the first line containing `<version>` in that file.
+ * directory, specifically from the first line containing `&lt;version&gt;` in that file.
  */
 public class ManifestVersionProvider implements CommandLine.IVersionProvider {
 
