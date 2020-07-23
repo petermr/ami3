@@ -28,7 +28,7 @@ then
         #mvn -Darguments=-DskipTests -DskipTests -Dmaven.test.skip=true clean package  deploy
 
         echo "Updating to v${DEVELOPMENT_VERSION} for next development cycle..."
-        sed -i'' "s/<version>${RELEASE_VERSION}</<version>${DEVELOPMENT_VERSION}</g" pom.xml
+        sed -i '' "s/<version>${RELEASE_VERSION}</<version>${DEVELOPMENT_VERSION}</g" pom.xml
         # mvn scm:checkin -Dmessage="Updating ami version to ${DEVELOPMENT_VERSION} for next development cycle" -Dincludes=pom.xml -DpushChanges=true
         git commit -m "Setting ami version to ${DEVELOPMENT_VERSION} for next development cycle" --verbose pom.xml
         git push --tags --progress --porcelain origin master
