@@ -108,7 +108,14 @@ public class AMIDict implements Runnable {
 	static <T> T execute(Class<T> subcommandClass, String[] args) {
 		CommandLine cmd = createCommandLine();
 		cmd.execute(logArgs(args));
-		return (T) cmd.getParseResult().subcommand().commandSpec().userObject();
+		CommandLine.ParseResult parseResult = cmd.getParseResult();
+		if (parseResult == null) {
+			return null;
+		}
+		if (parseResult.hasSubcommand()) {
+			return (T) parseResult.subcommand().commandSpec().userObject();
+		}
+		return null;
 	}
 
 	/**
