@@ -146,6 +146,9 @@ public class AMI implements Runnable {
 	static <T> T execute(Class<T> subcommandClass, String[] args) {
 		CommandLine cmd = createCommandLine();
 		cmd.execute(logArgs(args));
+		if (cmd.getParseResult() == null) {
+			return null;
+		}
 		return cmd.getParseResult().hasSubcommand()
 				? (T) cmd.getParseResult().subcommand().commandSpec().userObject()
 				: (T) cmd.getParseResult().commandSpec().userObject();
