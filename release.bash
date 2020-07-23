@@ -8,7 +8,7 @@ RELEASE_VERSION="$(date -u +%Y.%m.%d_%H.%M.%S)"
 DEVELOPMENT_VERSION="$(date -u +%Y.%m.%d_%H.%M)-NEXT-SNAPSHOT"
 echo "Releasing v${RELEASE_VERSION}"
 
-sed -i'' "s/<version>[0-9][0-9][0-9][0-9]\.[0-9][0-9]\.[0-9][0-9]_[0-9][0-9].*</<version>${RELEASE_VERSION}</g" pom.xml
+sed -i '' "s/<version>[0-9][0-9][0-9][0-9]\.[0-9][0-9]\.[0-9][0-9]_[0-9][0-9].*</<version>${RELEASE_VERSION}</g" pom.xml
 
 # The maven scm:checkin goal commits ALL modified files, not just pom.xml...
 # see https://stackoverflow.com/questions/48947392/commit-multiple-files-with-maven-scm-plugin
