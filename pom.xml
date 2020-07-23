@@ -4,23 +4,50 @@
 
     <modelVersion>4.0.0</modelVersion>
 
+    <artifactId>ami3</artifactId>
+    <version>2020.07.23_10.44-NEXT-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>ami3</name>
+    <description>A Java tool for turning scientific literature into semantic form</description>
+
+    <!-- Note: the parent POM causes problems for the maven-release-plugin: it has hg (mercurial) configured as SCM, preventing us from using git... -->
+    <parent>
+        <groupId>org.contentmine</groupId>
+        <artifactId>cm-parent</artifactId>
+        <version>7.1.0</version>
+    </parent>
+
+    <developers>
+        <developer>
+            <id>pm286</id>
+            <name>Peter Murray-Rust</name>
+        </developer>
+    </developers>
+    <inceptionYear>1994-2020</inceptionYear>
+    <scm>
+        <connection>scm:git:https://github.com/petermr/ami3.git</connection>
+        <developerConnection>scm:git:https://github.com/petermr/ami3.git</developerConnection>
+    </scm>
+
     <properties>
-    <!-- java version -->
-        <java.version>1.8</java.version>
-        <java.source.version>1.8</java.source.version>
-        <java.target.version>1.8</java.target.version>
-    <!-- if this is uncommented the tests are all skipped
+
+        <!-- if this is uncommented the tests are all skipped
         <skipTests>true</skipTests>
         -->
         <!--  maybe uncomment this generally? -->
-        <!-- 
+        <!--
         <skipITs>true</skipITs>
         -->
-       
-        
-    
+
+        <!-- java version -->
+        <java.version>1.8</java.version>
+        <java.source.version>1.8</java.source.version>
+        <java.target.version>1.8</java.target.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
         <!-- dependencies -->
-        
         <boofcv-all.version>0.33.1</boofcv-all.version>
         <boofcv-core.version>0.35</boofcv-core.version>
         <boofcv-swing.version>0.32</boofcv-swing.version>
@@ -30,21 +57,18 @@
         <commons-math.version>2.2</commons-math.version>
         <commons-csv.version>1.8</commons-csv.version>
         <com.google.code.gson.version>2.3.1</com.google.code.gson.version>
-        <ejml-all.version> 0.39</ejml-all.version>
+        <ejml-all.version>0.39</ejml-all.version>
         <gson.version>2.8.6</gson.version>
-<!--        <guava.version>29.0-jre</guava.version> -->
-        <guava.version>[24.1.1,)</guava.version> <!-- security fix -->
-        <htmlunit.version>[2.41.0,)</htmlunit.version>
+        <guava.version>29.0-jre</guava.version>
+        <htmlunit.version>2.42.0</htmlunit.version>
         <imgscalr-lib.version>4.2</imgscalr-lib.version>
         <jai-imageio-core.version>1.4.0</jai-imageio-core.version>
-        
         <javax.media.version>1.1.3</javax.media.version>
         <javax.ws.rs.version>2.1.1</javax.ws.rs.version>
         <jbrowser.version>1.1.1</jbrowser.version>
         <joda-time.version>2.10.5</joda-time.version>
         <json-path.version>2.4.0</json-path.version>
-<!--         <jsoup.version>1.9.2</jsoup.version> -->
-        <jsoup.version>[1.13.1,)</jsoup.version>
+        <jsoup.version>1.13.1</jsoup.version>
         <jtidy.version>4aug2000r7-dev</jtidy.version>
         <jbig2-imageio.version>3.0.3</jbig2-imageio.version>
         <json-path.version>2.4.0</json-path.version>
@@ -53,58 +77,30 @@
         <lucene.version>8.5.1</lucene.version>
         <!-- is this necessary? -->
 <!--         <lucene-query.version>4.0.0-BETA</lucene-query.version>  -->
-
         <log4j.version>2.13.3</log4j.version>
-
         <pdfbox2.version>2.0.19</pdfbox2.version>
         <pdfbox-tools.version>2.0.19</pdfbox-tools.version>
         <picocli.version>4.4.0</picocli.version>
         <resteasy.client>4.5.3.Final</resteasy.client>
         <Saxon-HE.version>10.0</Saxon-HE.version>
         <selenium-java.version>4.0.0-alpha-5</selenium-java.version>
-        <surefire.version>2.12.4</surefire.version>
         <tagsoup.version>1.2.1</tagsoup.version>
         <univocity.version>2.8.4</univocity.version>
         <xom.version>1.3.4</xom.version>
         <xml-apis.version>2.0.2</xml-apis.version>
         <xmlunit.version>1.6</xmlunit.version>
-        
-<!--
-        <opennlp.version>1.6.0</opennlp.version>       
-        <json-path.version>2.0.0</json-path.version>
-        <jsoup.version>1.8.2</jsoup.version>
-        <jdeb.version>1.3</jdeb.version>
--->
-        <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
-        <maven-failsafe-plugin.version>2.22.0</maven-failsafe-plugin.version>
+
+        <!-- maven plugin versions -->
+        <appassembler-maven-plugin.version>1.8.1</appassembler-maven-plugin.version>
+        <depgraph-maven-plugin.version>2.0.1</depgraph-maven-plugin.version>
         <maven-assembly-plugin.version>2.4</maven-assembly-plugin.version>
-       
+        <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
+        <maven-deploy-plugin.version>3.0.0-M1</maven-deploy-plugin.version>
+        <maven-failsafe-plugin.version>2.22.0</maven-failsafe-plugin.version>
+        <maven-jar-plugin.version>2.1</maven-jar-plugin.version>
+        <maven-scm-plugin.version>1.11.2</maven-scm-plugin.version>
+        <maven-surefire-plugin.version>2.12.4</maven-surefire-plugin.version>
     </properties>
-
-    <parent>
-        <groupId>org.contentmine</groupId>
-        <artifactId>cm-parent</artifactId>
-        <version>7.1.0</version>
-    </parent>
-
-    
-
-    <groupId>org.contentmine</groupId>
-    <artifactId>ami3</artifactId>
-    <!-- to sync with new cproject-norma-ami versions -->
-    <version>0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
-    <name>ami3</name>
-    <description>A Java tool for turning scientific literature into semantic form</description>
-    <developers>
-        <developer>
-            <id>pm286</id>
-            <name>Peter Murray-Rust</name>
-        </developer>
-    </developers>
-
-    <inceptionYear>1994-2020</inceptionYear>
-
 
     <build>
         <plugins>
@@ -131,7 +127,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>${surefire.version}</version>
+                <version>${maven-surefire-plugin.version}</version>
                 <configuration>
                     <forkCount>3</forkCount>
                     <reuseForks>true</reuseForks>
@@ -157,7 +153,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>appassembler-maven-plugin</artifactId>
-                <version>1.8.1</version>
+                <version>${appassembler-maven-plugin.version}</version>
                     <executions>
                         <execution>
                             <phase>package</phase>
@@ -167,238 +163,134 @@
                         </execution>
                     </executions>
                     <configuration>
-                        <programs>
-                      
-                      <!--  TOOLS -->
-                            <program>
-                                <mainClass>org.contentmine.ami.tools.AMI</mainClass>
-                                <!-- description: lists AMI commands (ami-*) -->
-                                <id>ami</id>
-                            </program>
-                            <program>
-                                <mainClass>org.contentmine.ami.tools.AMIDict</mainClass>
-                                <!-- description: lists AMIDict commands (ami-*) -->
-                                <id>amidict</id>
-                            </program>
-                            <program>
-                                 <mainClass>org.contentmine.ami.AMIProcessor</mainClass>
+                    <programs>
+
+                  <!--  TOOLS -->
+                        <program>
+                            <mainClass>org.contentmine.ami.tools.AMI</mainClass>
                             <!-- description: lists AMI commands (ami-*) -->
-                                <id>ami-all</id>
-                            </program>
-<!--                            <program>-->
-<!--                                <mainClass>org.contentmine.ami.tools.AMICleanTool</mainClass>-->
-<!--                            &lt;!&ndash; description: cleans some/all of project &ndash;&gt;-->
-<!--                                <id>ami-clean</id>-->
-<!--                            </program>-->
-<!--                            <program>-->
-<!--                                <mainClass>org.contentmine.ami.tools.AMIDictionaryTool</mainClass>-->
-<!--                            &lt;!&ndash; creates and manages dictionaries &ndash;&gt;-->
-<!--                                <id>ami-dictionary</id>-->
-<!--                            </program>-->
-<!--                            <program>-->
-<!--                                <mainClass>org.contentmine.ami.tools.AMIDownloadTool</mainClass>-->
-<!--                            &lt;!&ndash; download files  &ndash;&gt;-->
-<!--                                <id>ami-download</id>-->
-<!--                            </program>-->
-<!--                            <program>-->
-<!--                               <mainClass>org.contentmine.ami.tools.AMIFilterTool</mainClass>-->
-<!--                               &lt;!&ndash; description: filters images &ndash;&gt;-->
-<!--                               <id>ami-filter</id>-->
-<!--                           </program>-->
-<!--                            <program>-->
-<!--                                <mainClass>org.contentmine.ami.tools.AMIForestPlotTool</mainClass>-->
-<!--                            &lt;!&ndash; description: extract ForestPlots from images &ndash;&gt;-->
-<!--                                <id>ami-forestplot</id>-->
-<!--                            </program>-->
-<!--                             <program>-->
-<!--                                <mainClass>org.contentmine.ami.tools.AMIGraphicsTool</mainClass>-->
-<!--                                &lt;!&ndash; description: extract graphics primitives from SVG &ndash;&gt;-->
-<!--                                <id>ami-graphics</id>-->
-<!--                            </program>-->
-<!--                             <program>-->
-<!--                                <mainClass>org.contentmine.ami.tools.AMIGrobidTool</mainClass>-->
-<!--                                &lt;!&ndash; description: process PDF with Grobid &ndash;&gt;-->
-<!--                                <id>ami-grobid</id>-->
-<!--                            </program>-->
-<!--                             <program>-->
-<!--                                <mainClass>org.contentmine.ami.tools.AMIImageTool</mainClass>-->
-<!--                                &lt;!&ndash; description: process images &ndash;&gt;-->
-<!--                                <id>ami-image</id>-->
-<!--                            </program>-->
-<!--                             <program>-->
-<!--                                <mainClass>org.contentmine.ami.tools.AMIImageFilterTool</mainClass>-->
-<!--                                &lt;!&ndash; description: filters images DEPRECATED &ndash;&gt;-->
-<!--                                <id>ami-imagefilter</id>-->
-<!--                            </program>-->
-<!--                            <program>-->
-<!--                                <mainClass>org.contentmine.ami.tools.AMIMakeProjectTool</mainClass>-->
-<!--                                &lt;!&ndash; description: make project from a directory&ndash;&gt;-->
-<!--                                <id>ami-makeproject</id>-->
-<!--                            </program>-->
-<!--                             <program>-->
-<!--                                <mainClass>org.contentmine.ami.tools.AMIOCRTool</mainClass>-->
-<!--                                &lt;!&ndash; description: process images &ndash;&gt;-->
-<!--                                <id>ami-ocr</id>-->
-<!--                            </program>-->
-<!--                            <program>-->
-<!--                                <mainClass>org.contentmine.ami.tools.AMIPixelTool</mainClass>-->
-<!--                                &lt;!&ndash; description: process images &ndash;&gt;-->
-<!--                                <id>ami-pixel</id>-->
-<!--                            </program>-->
-<!--                            <program>-->
-<!--                               <mainClass>org.contentmine.ami.tools.AMIPDFTool</mainClass>-->
-<!--                            &lt;!&ndash; description: process images &ndash;&gt;-->
-<!--                                <id>ami-pdf</id>-->
-<!--                            </program>-->
-<!--                            <program>-->
-<!--                                <mainClass>org.contentmine.ami.tools.AMISearchTool</mainClass>-->
-<!--                            &lt;!&ndash; description: run AMI searches &ndash;&gt;-->
-<!--                                <id>ami-search</id>-->
-<!--                            </program>-->
-<!--                            <program>-->
-<!--                                <mainClass>org.contentmine.ami.tools.AMISectionTool</mainClass>-->
-<!--                            &lt;!&ndash; description: run AMI searches &ndash;&gt;-->
-<!--                                <id>ami-section</id>-->
-<!--                            </program>-->
-<!--    -->
-<!--                            <program>-->
-<!--                             &lt;!&ndash;  now a tool &ndash;&gt;-->
-<!--                                <mainClass>org.contentmine.ami.tools.AMISummaryTool</mainClass>-->
-<!--                                &lt;!&ndash; description: run AMI summary &ndash;&gt;-->
-<!--                                <id>ami-summary</id>-->
-<!--                            </program>-->
-<!--                            <program>-->
-<!--                                <mainClass>org.contentmine.ami.tools.AMISVGTool</mainClass>-->
-<!--                                &lt;!&ndash; description: processes SVG (e.g. created by ami-pdf &ndash;&gt;-->
-<!--                                <id>ami-svg</id>-->
-<!--                            </program>-->
-<!--                            <program>-->
-<!--                                <mainClass>org.contentmine.ami.tools.AMITableTool</mainClass>-->
-<!--                                &lt;!&ndash; description: extracts tables &ndash;&gt;-->
-<!--                                <id>ami-table</id>-->
-<!--                            </program>-->
-<!--                            <program>-->
-<!--                                <mainClass>org.contentmine.ami.tools.AMIWordsTool</mainClass>-->
-<!--                                &lt;!&ndash; description: runs word counts &ndash;&gt;-->
-<!--                                <id>ami-word</id>-->
-<!--                            </program>-->
-<!--                            -->
-<!--                        -->
-<!--                        -->
-<!--                        -->
-<!--                            <program>-->
-<!--                                <mainClass>org.contentmine.ami.tools.AMITransformTool</mainClass>-->
-<!--                              &lt;!&ndash; description: transform with AMITransform mainly XML&ndash;&gt;-->
-<!--                                <id>ami-transform</id>-->
-<!--                            </program>-->
-							<!--
-                            <program>
-                                <mainClass>org.contentmine.ami.plugins.CommandProcessor</mainClass>
-                              <!- -  description:  - ->
-                                <id>cmine</id>
-                            </program>
-						-->
-						
-						org.contentmine.ami.tools.AMI
-						
-                            <program>
-                                <mainClass>org.contentmine.ami.plugins.EntityAnalyzer</mainClass>
-                              <!--  description:  -->
-                                <id>ami-frequencies</id>
-                            </program>
-                            <program>
-                                <mainClass>org.contentmine.ami.plugins.gene.GenePlugin</mainClass>
-                              <!--  description:  -->
-                                <id>ami-gene</id>
-                            </program>
-                            <program>
-                                <mainClass>org.contentmine.ami.plugins.identifier.IdentifierPlugin</mainClass>
-                              <!--  description:  -->
-                                <id>ami-identifier</id>
-                            </program>
-                            <program>
-                                <mainClass>org.contentmine.ami.plugins.regex.RegexPlugin</mainClass>
-                              <!--  description:  -->
-                                <id>ami-regex</id>
-                            </program>
-<!--                            <program>-->
-<!--                           &lt;!&ndash;  will become a tool &ndash;&gt;-->
-<!--                                <mainClass>org.contentmine.ami.tools.AMISearch</mainClass>-->
-<!--                              &lt;!&ndash; description: run AMI searches and co-occurrence &ndash;&gt;-->
-<!--                                <id>ami-search-cooccur-old</id>-->
-<!--                            </program>-->
-                            <program>
-                                <mainClass>org.contentmine.ami.plugins.sequence.SequencePlugin</mainClass>
-                              <!--  description:  -->
-                                <id>ami-sequence</id>
-                            </program>
-                            <program>
-                                <mainClass>org.contentmine.ami.plugins.species.SpeciesPlugin</mainClass>
-                              <!--  description:  -->
-                                <id>ami-species</id>
-                            </program>
-                            <program>
-                                <mainClass>org.xmlcml.cproject.PMan</mainClass>
-                                <id>pman</id>
-                            </program>
-                        </programs>
-  
+                            <id>ami</id>
+                        </program>
+                        <program>
+                            <mainClass>org.contentmine.ami.tools.AMIDict</mainClass>
+                            <!-- description: lists AMIDict commands (ami-*) -->
+                            <id>amidict</id>
+                        </program>
+                        <!-- Legacy tools. TODO remove? -->
+                        <program>
+                             <mainClass>org.contentmine.ami.AMIProcessor</mainClass>
+                             <!-- description: lists AMI commands (ami-*) -->
+                            <id>ami-all</id>
+                        </program>
+                        <program>
+                            <mainClass>org.contentmine.ami.plugins.EntityAnalyzer</mainClass>
+                          <!--  description:  -->
+                            <id>ami-frequencies</id>
+                        </program>
+                        <program>
+                            <mainClass>org.contentmine.ami.plugins.gene.GenePlugin</mainClass>
+                          <!--  description:  -->
+                            <id>ami-gene</id>
+                        </program>
+                        <program>
+                            <mainClass>org.contentmine.ami.plugins.identifier.IdentifierPlugin</mainClass>
+                          <!--  description:  -->
+                            <id>ami-identifier</id>
+                        </program>
+                        <program>
+                            <mainClass>org.contentmine.ami.plugins.regex.RegexPlugin</mainClass>
+                          <!--  description:  -->
+                            <id>ami-regex</id>
+                        </program>
+                        <program>
+                            <mainClass>org.contentmine.ami.plugins.sequence.SequencePlugin</mainClass>
+                          <!--  description:  -->
+                            <id>ami-sequence</id>
+                        </program>
+                        <program>
+                            <mainClass>org.contentmine.ami.plugins.species.SpeciesPlugin</mainClass>
+                          <!--  description:  -->
+                            <id>ami-species</id>
+                        </program>
+                        <program>
+                            <mainClass>org.xmlcml.cproject.PMan</mainClass>
+                            <id>pman</id>
+                        </program>
+                    </programs>
+
                     <!-- Prevent long directories -->
-                        <repositoryLayout>flat</repositoryLayout>
+                    <repositoryLayout>flat</repositoryLayout>
                     <!-- short names for Windows -->
-                        <useWildcardClassPath>true</useWildcardClassPath>
+                    <useWildcardClassPath>true</useWildcardClassPath>
 
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>com.github.ferstl</groupId>
-                    <artifactId>depgraph-maven-plugin</artifactId>
-                    <version>2.0.1</version>
-                </plugin>  
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.github.ferstl</groupId>
+                <artifactId>depgraph-maven-plugin</artifactId>
+                <version>${depgraph-maven-plugin.version}</version>
+            </plugin>
 
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>${maven-jar-plugin.version}</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>org.contentmine.ami.tools.AMI</mainClass>
+                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                            <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+            <!-- Create distribution archives from the result of appassembler. -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>${maven-assembly-plugin.version}</version>
+                <configuration>
+                    <descriptors>
+                        <descriptor>src/assembly/distribution.xml</descriptor>
+                    </descriptors>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- to enable `mvn deploy` to publish packages -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>${maven-deploy-plugin.version}</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-scm-plugin</artifactId>
+                <version>${maven-scm-plugin.version}</version>
+                <configuration>
+                    <!-- <tag>${project.artifactId}-${project.version}</tag>-->
+                    <tag>v${project.version}</tag>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
-                <!-- giant jar -->
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-assembly-plugin</artifactId>
-                    <version>${maven-assembly-plugin.version}</version>
-                    <configuration>
-                        <descriptorRefs>
-                            <descriptorRef>jar-with-dependencies</descriptorRef>
-                        </descriptorRefs>
-                        <archive>
-                            <manifest>
-                                <addClasspath>true</addClasspath>
-                                <mainClass>org.contentmine.norma.Norma</mainClass>
-                            </manifest>
-                        </archive>
-                    </configuration>
-                    <executions>
-                        <execution>
-                            <id>make-assembly</id>
-                            <phase>package</phase>
-                            <goals>
-                                <goal>single</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
-                <!-- to enable `mvn deploy` to publish packages -->
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-deploy-plugin</artifactId>
-                    <version>3.0.0-M1</version>
-                </plugin>
-           </plugins>
-        </build>
-
-        <dependencies>
-            <dependency>
-                <groupId>net.sf.saxon</groupId>
-                <artifactId>Saxon-HE</artifactId>
-                <version>${Saxon-HE.version}</version>
-            </dependency>        
-        <!--  to avoid Xerces Hell? 
+    <dependencies>
+        <dependency>
+            <groupId>net.sf.saxon</groupId>
+            <artifactId>Saxon-HE</artifactId>
+            <version>${Saxon-HE.version}</version>
+        </dependency>
+        <!--  to avoid Xerces Hell?
         http://stackoverflow.com/questions/17777821/maven-dependency-conflict-org-w3c-dom-elementtraversal
          -->
         <!--
@@ -410,241 +302,236 @@
             <scope>provided</scope>
         </dependency>
         -->
-            <dependency>
-                <groupId>xmlunit</groupId>
-                <artifactId>xmlunit</artifactId>
-                <version>${xmlunit.version}</version>
-            </dependency>
-<!--             https://stackoverflow.com/questions/62061712/examples-for-using-latest-version-of-lucene -->
-            <dependency>
-                <groupId>org.apache.lucene</groupId>
-                <artifactId>lucene-core</artifactId>
-                <version>${lucene.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.lucene</groupId>
-                <artifactId>lucene-analyzers-icu</artifactId>
-                <version>${lucene.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.lucene</groupId>
-                <artifactId>lucene-analyzers-common</artifactId>
-                <version>${lucene.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-queryparser -->
-			<dependency>
-			    <groupId>org.apache.lucene</groupId>
-			    <artifactId>lucene-queryparser</artifactId>
-			    <version>${lucene.version}</version>
-			</dependency>
-			<!--  these may be useful -->
-			<dependency>
-			    <groupId>org.apache.lucene</groupId>
-			    <artifactId>lucene-facet</artifactId>
-			    <version>${lucene.version}</version>
-			</dependency>
-			<dependency>
-			    <groupId>org.apache.lucene</groupId>
-			    <artifactId>lucene-suggest</artifactId>
-			    <version>${lucene.version}</version>
-			</dependency>
-			<dependency>
-			    <groupId>org.apache.lucene</groupId>
-			    <artifactId>lucene-highlighter</artifactId>
-			    <version>${lucene.version}</version>
-			</dependency>
-			<dependency>
-			    <groupId>org.apache.lucene</groupId>
-			    <artifactId>lucene-demo</artifactId>
-			    <version>${lucene.version}</version>
-			</dependency>
-            
-            <dependency>
-            <!-- https://github.com/uniVocity/univocity-parsers // needed for JAX -->
-                <groupId>com.univocity</groupId>
-                <artifactId>univocity-parsers</artifactId>
-                <version>${univocity.version}</version>
-                <type>jar</type>
-            </dependency>        
-            <!-- https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api -->
-            <dependency>
-                <groupId>javax.ws.rs</groupId>
-                <artifactId>javax.ws.rs-api</artifactId>
-                <version>${javax.ws.rs.version}</version>
-            </dependency>        
-            <dependency>
-                <groupId>org.jboss.resteasy</groupId>
-                <artifactId>resteasy-client</artifactId>
-                <version>${resteasy.client}</version>
-            </dependency>        
-            <dependency>
-                <groupId>info.picocli</groupId>
-                <artifactId>picocli</artifactId>
-                <version>${picocli.version}</version>
-            </dependency>
-            <!--  
-			<dependency>
-			  <groupId>javax.media</groupId>
-			  <artifactId>jai_core</artifactId>
- 			  <version>${javax.media.version}</version> 
-			</dependency>            
-			-->
-			<!-- https://mvnrepository.com/artifact/javax.media.jai/com.springsource.javax.media.jai.core -->
+        <dependency>
+            <groupId>xmlunit</groupId>
+            <artifactId>xmlunit</artifactId>
+            <version>${xmlunit.version}</version>
+        </dependency>
+        <!-- https://stackoverflow.com/questions/62061712/examples-for-using-latest-version-of-lucene -->
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-core</artifactId>
+            <version>${lucene.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-analyzers-icu</artifactId>
+            <version>${lucene.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-analyzers-common</artifactId>
+            <version>${lucene.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-queryparser -->
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-queryparser</artifactId>
+            <version>${lucene.version}</version>
+        </dependency>
+        <!--  these may be useful -->
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-facet</artifactId>
+            <version>${lucene.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-suggest</artifactId>
+            <version>${lucene.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-highlighter</artifactId>
+            <version>${lucene.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-demo</artifactId>
+            <version>${lucene.version}</version>
+        </dependency>
 
-            <dependency>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
-                <version>${junit.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>commons-io</groupId>
-                <artifactId>commons-io</artifactId>
-                <version>${commons-io.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.jai-imageio</groupId>
-                <artifactId>jai-imageio-core</artifactId>
-                <version>${jai-imageio-core.version}</version>
-            </dependency>
-<!--            <dependency>-->
-<!--                <groupId>log4j</groupId>-->
-<!--                <artifactId>log4j</artifactId>-->
-<!--                <version>${log4j.version}</version>-->
-<!--            </dependency>-->
-            <dependency>
-                <groupId>org.apache.logging.log4j</groupId>
-                <artifactId>log4j-api</artifactId>
-                <version>${log4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.logging.log4j</groupId>
-                <artifactId>log4j-core</artifactId>
-                <version>${log4j.version}</version>
-            </dependency>
+        <dependency>
+        <!-- https://github.com/uniVocity/univocity-parsers // needed for JAX -->
+            <groupId>com.univocity</groupId>
+            <artifactId>univocity-parsers</artifactId>
+            <version>${univocity.version}</version>
+            <type>jar</type>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api -->
+        <dependency>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>javax.ws.rs-api</artifactId>
+            <version>${javax.ws.rs.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-client</artifactId>
+            <version>${resteasy.client}</version>
+        </dependency>
+        <dependency>
+            <groupId>info.picocli</groupId>
+            <artifactId>picocli</artifactId>
+            <version>${picocli.version}</version>
+        </dependency>
+        <!--
+        <dependency>
+          <groupId>javax.media</groupId>
+          <artifactId>jai_core</artifactId>
+           <version>${javax.media.version}</version>
+        </dependency>
+        -->
+        <!-- https://mvnrepository.com/artifact/javax.media.jai/com.springsource.javax.media.jai.core -->
 
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-lang3</artifactId>
-                <version>${commons-lang3.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-math</artifactId>
-                <version>${commons-math.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-csv</artifactId>
-                <version>${commons-csv.version}</version>
-            </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commons-io.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.jai-imageio</groupId>
+            <artifactId>jai-imageio-core</artifactId>
+            <version>${jai-imageio-core.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
 
-            <dependency>
-                <groupId>joda-time</groupId>
-                <artifactId>joda-time</artifactId>
-                <version>${joda-time.version}</version>
-            </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-math</artifactId>
+            <version>${commons-math.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-csv</artifactId>
+            <version>${commons-csv.version}</version>
+        </dependency>
 
-            <dependency>
-                <groupId>xom</groupId>
-                <artifactId>xom</artifactId>
-                <version>${xom.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.guava</groupId>
-                <artifactId>guava</artifactId>
-                <version>${guava.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>jtidy</groupId>
-                <artifactId>jtidy</artifactId>
-                <version>${jtidy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.ccil.cowan.tagsoup</groupId>
-                <artifactId>tagsoup</artifactId>
-                <version>${tagsoup.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.jsoup</groupId>
-                <artifactId>jsoup</artifactId>
-                <version>${jsoup.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>net.sourceforge.htmlunit</groupId>
-                <artifactId>htmlunit</artifactId>
-                <version>${htmlunit.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>xml-apis</groupId>
-                <artifactId>xml-apis</artifactId>
-                <version>${xml-apis.version}</version>
-            </dependency>
-            <!-- this should not be necessary There seems to be a rogue version of 
-                guava somewhere (http://stackoverflow.com/questions/28978277/guava-multisets-copyhighestcountfirst-method-suddenly-not-working) -->
-            <dependency>
-                <groupId>com.google.code.gson</groupId>
-                <artifactId>gson</artifactId>
-                <version>${gson.version}</version>
-            </dependency>
-            <!-- https://github.com/jayway/JsonPath/blob/master/README.md -->
-            <dependency>
-                <groupId>com.jayway.jsonpath</groupId>
-                <artifactId>json-path</artifactId>
-                <version>${json-path.version}</version>
-            </dependency>
-            <!--  usePDFBox 2 from here -->
-            <dependency>
-                <groupId>org.apache.pdfbox</groupId>
-                <artifactId>pdfbox</artifactId>
-                <version>${pdfbox2.version}</version>
-            </dependency>
-            <dependency>
-			    <groupId>org.apache.pdfbox</groupId>
-			    <artifactId>pdfbox-tools</artifactId>
-			    <version>${pdfbox-tools.version}</version>
-			</dependency>
-			<dependency>
-			    <groupId>org.seleniumhq.selenium</groupId>
-			    <artifactId>selenium-java</artifactId>
-			    <version>${selenium-java.version}</version>
-			</dependency>            
-             <dependency>
-                <groupId>org.boofcv</groupId>
-                <artifactId>boofcv-core</artifactId>
-                <version>${boofcv-core.version}</version>
-            
-            </dependency>
-           <!-- https://mvnrepository.com/artifact/org.boofcv/visualize -->
-            <dependency>
-                <groupId>org.boofcv</groupId>
-                <artifactId>visualize</artifactId>
-                <version>${boofcv-visualize.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.imgscalr</groupId>
-                <artifactId>imgscalr-lib</artifactId>
-                <version>${imgscalr-lib.version}</version>
-            </dependency>
-        
-            <dependency>
-                <groupId>org.apache.pdfbox</groupId>
-                <artifactId>jbig2-imageio</artifactId>
-                <version>${jbig2-imageio.version}</version>
-            </dependency>
-        
-            <dependency>
-                <groupId>org.ejml</groupId>
-                <artifactId>ejml-all</artifactId>
-                <version>${ejml-all.version}</version>
-            </dependency>
-            <dependency>
-				<groupId>com.machinepublishers</groupId>
-				<artifactId>jbrowserdriver</artifactId>
-				<version>${jbrowser.version}</version>
-			</dependency>
-        </dependencies>
-        <repositories>
-            <repository>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>${joda-time.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>xom</groupId>
+            <artifactId>xom</artifactId>
+            <version>${xom.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>jtidy</groupId>
+            <artifactId>jtidy</artifactId>
+            <version>${jtidy.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ccil.cowan.tagsoup</groupId>
+            <artifactId>tagsoup</artifactId>
+            <version>${tagsoup.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>${jsoup.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sourceforge.htmlunit</groupId>
+            <artifactId>htmlunit</artifactId>
+            <version>${htmlunit.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>xml-apis</groupId>
+            <artifactId>xml-apis</artifactId>
+            <version>${xml-apis.version}</version>
+        </dependency>
+        <!-- this should not be necessary There seems to be a rogue version of
+            guava somewhere (http://stackoverflow.com/questions/28978277/guava-multisets-copyhighestcountfirst-method-suddenly-not-working) -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${gson.version}</version>
+        </dependency>
+        <!-- https://github.com/jayway/JsonPath/blob/master/README.md -->
+        <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+            <version>${json-path.version}</version>
+        </dependency>
+        <!--  usePDFBox 2 from here -->
+        <dependency>
+            <groupId>org.apache.pdfbox</groupId>
+            <artifactId>pdfbox</artifactId>
+            <version>${pdfbox2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.pdfbox</groupId>
+            <artifactId>pdfbox-tools</artifactId>
+            <version>${pdfbox-tools.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium-java.version}</version>
+        </dependency>
+         <dependency>
+            <groupId>org.boofcv</groupId>
+            <artifactId>boofcv-core</artifactId>
+            <version>${boofcv-core.version}</version>
+        </dependency>
+       <!-- https://mvnrepository.com/artifact/org.boofcv/visualize -->
+        <dependency>
+            <groupId>org.boofcv</groupId>
+            <artifactId>visualize</artifactId>
+            <version>${boofcv-visualize.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.imgscalr</groupId>
+            <artifactId>imgscalr-lib</artifactId>
+            <version>${imgscalr-lib.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.pdfbox</groupId>
+            <artifactId>jbig2-imageio</artifactId>
+            <version>${jbig2-imageio.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.ejml</groupId>
+            <artifactId>ejml-all</artifactId>
+            <version>${ejml-all.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.machinepublishers</groupId>
+            <artifactId>jbrowserdriver</artifactId>
+            <version>${jbrowser.version}</version>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
             <id>cm-pom</id>
             <url>https://raw.github.com/ContentMine/cm-pom/mvn-repo/</url>
             <snapshots>
