@@ -112,10 +112,9 @@ public class AMIDict implements Runnable {
 		if (parseResult == null) {
 			return null;
 		}
-		if (parseResult.hasSubcommand()) {
-			return (T) parseResult.subcommand().commandSpec().userObject();
-		}
-		return null;
+		return parseResult.hasSubcommand()
+				? (T) parseResult.subcommand().commandSpec().userObject()
+				: (T) parseResult.commandSpec().userObject();
 	}
 
 	/**
