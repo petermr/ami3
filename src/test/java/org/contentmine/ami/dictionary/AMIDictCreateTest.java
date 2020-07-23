@@ -513,24 +513,26 @@ private static final File TARGET = new File("target");
 		File inputFile = new File(TEST_DICTIONARY, "disease3.sparql.xml");
 		File outputDir = new File("target/dictionary/");
 		System.out.println("input "+inputFile);
+		String dictionary = "disease";
 		String cmd = "-vvv"
-				+ " --dictionary disease"
+				+ " --dictionary " + dictionary
 				+ " --directory=" + outputDir
 				+ " --input=" + inputFile
 				+ " create"
 				+ " --informat=wikisparqlxml"
 				+ " --map "
-				+ "wikidataID=DiseaseLabel,"
+				+ "wikidata=DiseaseLabel,"
 				+ "w_instanceOf=instanceof,"
 				+ "wikidataAltLabel=DiseaseAltLabel,"
 				+ "term=DiseaseLabel,"
 				+ "name=DiseaseLabel,"
 				+ "_ICDCode=ICDCode";
-		AbstractAMIDictTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
+//		AbstractAMIDictTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
+		/*AbstractAMIDictTool dictionaryTool = */AMIDict.execute(cmd);
 		double eps = 0.001;
 		boolean stripWhite = true;
-		Element dictExpected = XMLUtil.parseQuietlyToRootElement(new File(TEST_DICTIONARY, "country1.dict.expected.xml"));
-		Element dictActual = XMLUtil.parseQuietlyToRootElement(new File(outputDir, "country.xml"));
+		Element dictExpected = XMLUtil.parseQuietlyToRootElement(new File(TEST_DICTIONARY, dictionary + ".dict.expected.xml"));
+		Element dictActual = XMLUtil.parseQuietlyToRootElement(new File(outputDir, dictionary + ".xml"));
 		TestUtils.assertEqualsIncludingFloat("country dict", dictExpected, dictActual, stripWhite, eps);
 	}
 	

@@ -9,8 +9,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -146,6 +148,15 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 			)
 	private Integer queryChunk = null;
 	
+	@Option(names = {"--sparqlmap"}, 
+			description = "maps wikidata/SPARQL name onto AMIDict names. "
+			+ "builtin names = term, name, wikidata, wikipedia, description, "
+			+ " wikidata names are w_* , other names are _* , everything else is an error."
+			+ "Mandatory for wikisparql inputs"
+			
+			)
+	private Map<String, String> sparqlmap = new HashMap<>();
+	
     @Option(names = {"--template"}, 
     		arity="1..*",
     		description = "names of Wikipedia Templates, e.g. Viral_systemic_diseases "
@@ -194,6 +205,11 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 //	@Override
 	protected void parseSpecifics() {
 		getDictionaryName();
+		if (informat != null && informat.toString().startsWith("wikisparql")) {
+			if (sparqlmap == null) {
+				throw new RuntimeException("Must give --sparqlmap for " + informat);
+			}
+		}
 		if (this.templateNames != null) {
 			createFilenamesForWikimediaInput();
 		}
@@ -584,15 +600,25 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		return true;
 	}
 
-	private static void addWikidataID(Element entry, Element result) {
+	private void addWikidataID(Element entry, Element result) {
 		/**
 			<binding name='wikidata'>
 				<uri>http://www.wikidata.org/entity/Q16</uri>
 			</binding>
 		 */
-		String id = DictionaryCreationTool.getValue(result, WIKIDATA, URI);
-		id = id.substring(id.lastIndexOf("/") + 1);
-		entry.addAttribute(new Attribute(DefaultAMIDictionary.WIKIDATA, id));
+		addMappedFieldsToDictionary(entry, result, WIKIDATA, DefaultAMIDictionary.WIKIDATA, true);
+	}
+
+	private void addMappedFieldsToDictionary(Element entry, Element result, String sparqlName, String nameInDictionary, boolean lastField) {
+		String amiName = sparqlmap.get(sparqlName);
+		if (amiName == null) {
+			LOG.error("cannot find mapping for " + sparqlName);
+		}
+		String value = DictionaryCreationTool.getValue(result, amiName, URI);
+		if (lastField) {
+			value = value.substring(value.lastIndexOf("/") + 1);
+		}
+		entry.addAttribute(new Attribute(nameInDictionary, value));
 	}
 	
 	private void readSparqlCsv(InputStream inputStream) {
