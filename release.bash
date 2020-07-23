@@ -4,8 +4,8 @@ if [[ debug == "$1" ]]; then
   set -xv   # this line will enable debug
 fi
 
-RELEASE_VERSION="$(date --utc +%Y.%m.%d_%H.%M.%S)"
-DEVELOPMENT_VERSION="$(date --utc +%Y.%m.%d_%H.%M)-NEXT-SNAPSHOT"
+RELEASE_VERSION="$(date -u +%Y.%m.%d_%H.%M.%S)"
+DEVELOPMENT_VERSION="$(date -u +%Y.%m.%d_%H.%M)-NEXT-SNAPSHOT"
 echo "Releasing v${RELEASE_VERSION}"
 
 sed -i'' "s/<version>[0-9][0-9][0-9][0-9]\.[0-9][0-9]\.[0-9][0-9]_[0-9][0-9].*</<version>${RELEASE_VERSION}</g" pom.xml
