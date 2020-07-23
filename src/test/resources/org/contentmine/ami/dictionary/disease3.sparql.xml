@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<sparql xmlns='http://www.w3.org/2005/sparql-results#'>
+	<head>
+		<variable name='DiseaseLabel'/>
+		<variable name='instanceofLabel'/>
+		<variable name='DiseaseAltLabel'/>
+		<variable name='Disease'/>
+		<variable name='ICDcode'/>
+	</head>
+	<results>
+		<result>
+			<binding name='Disease'>
+				<uri>http://www.wikidata.org/entity/Q12135</uri>
+			</binding>
+			<binding name='ICDcode'>
+				<literal>F00-F99</literal>
+			</binding>
+			<binding name='DiseaseLabel'>
+				<literal xml:lang='en'>mental disorder</literal>
+			</binding>
+			<binding name='instanceofLabel'>
+				<literal xml:lang='en'>disease</literal>
+			</binding>
+			<binding name='DiseaseAltLabel'>
+				<literal xml:lang='en'>disease of mental health, disorder of mental process, mental dysfunction, mental illness, mental or behavioural disorder, psychiatric condition, psychiatric disease, psychiatric disorder, mental disorders</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='Disease'>
+				<uri>http://www.wikidata.org/entity/Q12198</uri>
+			</binding>
+			<binding name='ICDcode'>
+				<literal>A64</literal>
+			</binding>
+			<binding name='DiseaseLabel'>
+				<literal xml:lang='en'>sexually transmitted infection</literal>
+			</binding>
+			<binding name='instanceofLabel'>
+				<literal xml:lang='en'>type of pathogen transmission</literal>
+			</binding>
+			<binding name='DiseaseAltLabel'>
+				<literal xml:lang='en'>sexually transmitted disease, sexually transmitted diseases, STD, STI, VD, venereal disease</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='Disease'>
+				<uri>http://www.wikidata.org/entity/Q16495</uri>
+			</binding>
+			<binding name='ICDcode'>
+				<literal>E06.5</literal>
+			</binding>
+			<binding name='DiseaseLabel'>
+				<literal xml:lang='en'>Riedel's fibrosing thyroiditis</literal>
+			</binding>
+			<binding name='instanceofLabel'>
+				<literal xml:lang='en'>disease</literal>
+			</binding>
+			<binding name='DiseaseAltLabel'>
+				<literal xml:lang='en'>Riedel disease, Riedel fibrosing thyroiditis, Riedel thyroiditis, Riedel's struma, Riedel's thyroiditis</literal>
+			</binding>
+		</result>
+	</results>
+</sparql>

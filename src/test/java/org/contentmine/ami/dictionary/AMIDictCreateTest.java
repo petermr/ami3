@@ -508,6 +508,33 @@ private static final File TARGET = new File("target");
 		TestUtils.assertEqualsIncludingFloat("country dict", dictExpected, dictActual, stripWhite, eps);
 	}
 	
+	@Test
+	public void testCreateFromWikidataSparqlMap() {
+		File inputFile = new File(TEST_DICTIONARY, "disease3.sparql.xml");
+		File outputDir = new File("target/dictionary/");
+		System.out.println("input "+inputFile);
+		String cmd = "-vvv"
+				+ " --dictionary disease"
+				+ " --directory=" + outputDir
+				+ " --input=" + inputFile
+				+ " create"
+				+ " --informat=wikisparqlxml"
+				+ " --map "
+				+ "wikidataID=DiseaseLabel,"
+				+ "w_instanceOf=instanceof,"
+				+ "wikidataAltLabel=DiseaseAltLabel,"
+				+ "term=DiseaseLabel,"
+				+ "name=DiseaseLabel,"
+				+ "_ICDCode=ICDCode";
+		AbstractAMIDictTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
+		double eps = 0.001;
+		boolean stripWhite = true;
+		Element dictExpected = XMLUtil.parseQuietlyToRootElement(new File(TEST_DICTIONARY, "country1.dict.expected.xml"));
+		Element dictActual = XMLUtil.parseQuietlyToRootElement(new File(outputDir, "country.xml"));
+		TestUtils.assertEqualsIncludingFloat("country dict", dictExpected, dictActual, stripWhite, eps);
+	}
+	
+	
 	
 	
 	// CREATE
