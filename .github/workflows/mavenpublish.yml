@@ -17,13 +17,21 @@ jobs:
     - uses: actions/checkout@v2
     - name: Set up JDK 1.8
       uses: actions/setup-java@v1 # installs the JDK, and generates a Maven settings.xml for publishing the package to GitHub Packages
+      # creating settings.xml with server-id: github; environment variables: username=$GITHUB_ACTOR, password=$GITHUB_TOKEN, and gpg-passphrase=null
+      # https://github.com/actions/setup-java
       with:
         java-version: 1.8
         #server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         #settings-path: ${{ github.workspace }} # location for the settings.xml file
 
-    - name: Publish to GitHub Packages Apache Maven
-      #run: mvn -DskipTests deploy -s $GITHUB_WORKSPACE/settings.xml
-      run: mvn -DskipTests -B deploy
+#    - name: Publish to GitHub Packages Apache Maven
+#      #run: mvn -DskipTests deploy -s $GITHUB_WORKSPACE/settings.xml
+#      run: mvn -DskipTests -B deploy
+#      env:
+#        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - run: echo $GITHUB_ACTOR
+    - name: upload artifact
+      run: mvn -DskipTests -B deploy --settings settings.xml
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_USERNAME: x-access-token
+        GITHUB_PASSWORD: ${{ secrets.GITHUB_ACCESS_TOKEN }}
