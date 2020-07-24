@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.concurrent.Callable;
 
 import org.apache.logging.log4j.Level;
@@ -24,6 +25,7 @@ import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.CTreeList;
 
+import org.jetbrains.annotations.NotNull;
 import picocli.CommandLine;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Model.CommandSpec;
@@ -31,6 +33,8 @@ import picocli.CommandLine.Model.OptionSpec;
 import picocli.CommandLine.ParentCommand;
 import picocli.CommandLine.ParseResult;
 import picocli.CommandLine.Spec;
+
+import static java.util.Objects.requireNonNull;
 
 /**
  * Reusable Commands for picocli CommandLine
@@ -439,59 +443,69 @@ public enum IncExc {
 	}
 
 	protected String getCProjectDirectory() {
-		return parent.projectOrTreeOptions.cProjectOptions.cProjectDirectory;
+		return getParentCProjectOptions().cProjectDirectory;
 	}
 
 	protected void setCProjectDirectory(String newValue) {
-		parent.projectOrTreeOptions.cProjectOptions.cProjectDirectory = newValue;
+		getParentCProjectOptions().cProjectDirectory = newValue;
 	}
 
 	protected String cTreeDirectory() {
-		return parent.projectOrTreeOptions.cTreeOptions.cTreeDirectory;
+		return getParentCTreeOptions().cTreeDirectory;
 	}
 
 	protected void cTreeDirectory(String newValue) {
-		parent.projectOrTreeOptions.cTreeOptions.cTreeDirectory = newValue;
+		getParentCTreeOptions().cTreeDirectory = newValue;
 	}
 
 	protected String[] excludeTrees() {
-		return parent.projectOrTreeOptions.cProjectOptions.treeOptions.excludeTrees;
+		return requireNonNull(getParentCProjectOptions().treeOptions, "treeOptions").excludeTrees;
 	}
 
 	protected String[] includeTrees() {
-		return parent.projectOrTreeOptions.cProjectOptions.treeOptions.includeTrees;
+		return requireNonNull(getParentCProjectOptions().treeOptions, "treeOptions").includeTrees;
 	}
 
 	protected String[] excludeBase() {
-		return parent.projectOrTreeOptions.cTreeOptions.baseOptions.excludeBase;
+		return requireNonNull(getParentCTreeOptions().baseOptions, "baseOptions").excludeBase;
 	}
 
 	protected String[] includeBase() {
-		return parent.projectOrTreeOptions.cTreeOptions.baseOptions.includeBase;
+		return requireNonNull(getParentCTreeOptions().baseOptions, "baseOptions").includeBase;
+	}
+
+	@NotNull
+	private AMI.CProjectOptions getParentCProjectOptions() {
+		return requireNonNull(requireNonNull(requireNonNull(parent, "parent").projectOrTreeOptions, "projectOrTreeOptions").cProjectOptions, "cProjectOptions");
+	}
+
+	@NotNull
+	private AMI.CTreeOptions getParentCTreeOptions() {
+		return requireNonNull(requireNonNull(requireNonNull(parent, "parent").projectOrTreeOptions, "projectOrTreeOptions").cTreeOptions, "cTreeOptions");
 	}
 
 	protected String input() {
-		return parent.generalOptions.input;
+		return getParentGeneralOptions().input;
 	}
 
 	protected void input(String newValue) {
-		parent.generalOptions.input = newValue;
+		getParentGeneralOptions().input = newValue;
 	}
 
 	protected String output() {
-		return parent.generalOptions.output;
+		return getParentGeneralOptions().output;
 	}
 
 	protected void output(String newValue) {
-		parent.generalOptions.output = newValue;
+		getParentGeneralOptions().output = newValue;
 	}
 
 	protected boolean[] verbosity() {
-		return parent.loggingOptions.verbosity;
+		return requireNonNull(requireNonNull(parent, "parent").loggingOptions, "loggingOptions").verbosity;
 	}
 
 	protected Map<Class, StandardLevel> log4j() {
-		return parent.loggingOptions.log4j;
+		return requireNonNull(requireNonNull(parent, "parent").loggingOptions, "loggingOptions").log4j;
 	}
 
 	public AbstractAMITool setCProject(CProject cProject) {
@@ -579,7 +593,7 @@ public enum IncExc {
 		int treeCount = 0;
 		if (cTreeList != null && cTreeList.size() > 0) {
 			for (CTree cTree : cTreeList) {
-				if (parent.generalOptions.maxTreeCount != null && getOrCreateProcessedTrees().size() >= parent.generalOptions.maxTreeCount) {
+				if (getParentGeneralOptions().maxTreeCount != null && getOrCreateProcessedTrees().size() >= getParentGeneralOptions().maxTreeCount) {
 					LOG.warn("CTree limit reached: {}", (--treeCount));
 					break;
 				}
@@ -646,19 +660,19 @@ public enum IncExc {
 	}
 
 	public String getInputBasename() {
-		return parent.generalOptions.inputBasename;
+		return getParentGeneralOptions().inputBasename;
 	}
 
 	public void setInputBasename(String inputBasename) {
-		parent.generalOptions.inputBasename = inputBasename;
+		getParentGeneralOptions().inputBasename = inputBasename;
 	}
 
 	public List<String> getInputBasenameList() {
-		return parent.generalOptions.inputBasenameList;
+		return getParentGeneralOptions().inputBasenameList;
 	}
 
 	public String getOutput() {
-		return parent.generalOptions.output;
+		return getParentGeneralOptions().output;
 	}
 
 	/**
@@ -676,18 +690,23 @@ public enum IncExc {
 	}
 
 	public Boolean getForceMake() {
-		return parent == null ? true : parent.generalOptions.forceMake;
+		return parent == null ? true : getParentGeneralOptions().forceMake;
 	}
 
 	public void setForceMake(Boolean forceMake) {
-		parent.generalOptions.forceMake = forceMake;
+		getParentGeneralOptions().forceMake = forceMake;
+	}
+
+	@NotNull
+	private AMI.GeneralOptions getParentGeneralOptions() {
+		return requireNonNull(requireNonNull(parent, "parent").generalOptions, "generalOptions");
 	}
 
 	protected InputStream openInputStream() {
 		InputStream inputStream = null;
 		if (input() != null) {
 			try {
-				if (parent.generalOptions.input.startsWith("http")) {
+				if (getParentGeneralOptions().input.startsWith("http")) {
 					inputStream = new URL(input()).openStream();
 				} else {
 					File inputFile = new File(input());
