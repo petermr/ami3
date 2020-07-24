@@ -2,6 +2,7 @@ package org.contentmine.ami.tools;
 
 import java.io.File;
 import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -147,6 +148,11 @@ public class AMIDict implements Runnable {
 	private static int enhancedLoggingExecutionStrategy(CommandLine.ParseResult parseResult) {
 		AMIDict dict = parseResult.commandSpec().commandLine().getCommand();
 		dict.loggingOptions.reconfigureLogging();
+
+		StringWriter sw = new StringWriter();
+		parseResult.commandSpec().commandLine().printVersionHelp(new PrintWriter(sw, true), CommandLine.Help.Ansi.OFF);
+		LOG.debug("Version: {}", sw);
+
 		return new CommandLine.RunLast().execute(parseResult); // now delegate to the default execution strategy
 	}
 

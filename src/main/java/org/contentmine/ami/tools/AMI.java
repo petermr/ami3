@@ -26,6 +26,7 @@ import picocli.CommandLine.Spec;
 
 import java.io.File;
 import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -185,6 +186,11 @@ public class AMI implements Runnable {
 	private static int enhancedLoggingExecutionStrategy(ParseResult parseResult) {
 		AMI ami = parseResult.commandSpec().commandLine().getCommand();
 		ami.loggingOptions.reconfigureLogging();
+
+		StringWriter sw = new StringWriter();
+		parseResult.commandSpec().commandLine().printVersionHelp(new PrintWriter(sw, true), CommandLine.Help.Ansi.OFF);
+		LOG.debug("Version: {}", sw);
+
 		return new CommandLine.RunLast().execute(parseResult); // now delegate to the default execution strategy
 	}
 
