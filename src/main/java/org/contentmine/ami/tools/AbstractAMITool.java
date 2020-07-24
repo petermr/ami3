@@ -590,9 +590,12 @@ public enum IncExc {
 						getOrCreateProcessedTrees().add(cTree);
 					}
 				} catch (Exception e) {
-					LOG.error("cannot process tree: "+cTree.getName(), e);
+					// log one line at ERROR level (this is displayed to the user)
+					LOG.error("Ignoring error that occurred while process tree: " + cTree.getName() + ": " + e);
+
+					// log the stack trace at info level so it is captured in the log
+					LOG.debug("Details of the problem processing tree " + cTree.getName(), e);
 				}
-				;
 			}
 		} else {
 			LOG.warn("no trees");
