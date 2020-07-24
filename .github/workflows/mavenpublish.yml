@@ -24,15 +24,15 @@ jobs:
         #server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         #settings-path: ${{ github.workspace }} # location for the settings.xml file
 
-#    - name: Publish to GitHub Packages Apache Maven
-#      #run: mvn -DskipTests deploy -s $GITHUB_WORKSPACE/settings.xml
-#      run: mvn -DskipTests -B deploy
-#      env:
-#        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - run: echo $GITHUB_ACTOR
-    - name: upload artifact
-      run: mvn --debug -DskipTests -B deploy --settings github_packages_settings.xml
+    - name: Publish to GitHub Packages Apache Maven
+      #run: mvn -DskipTests deploy -s $GITHUB_WORKSPACE/settings.xml
+      run: mvn --debug -DskipTests -B deploy
       env:
-        GITHUB_USERNAME: x-access-token
-#        GITHUB_PASSWORD: ${{ secrets.GITHUB_ACCESS_TOKEN }}
-        GITHUB_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#    - run: echo $GITHUB_ACTOR
+#    - name: upload artifact
+#      run: mvn --debug -DskipTests -B deploy --settings github_packages_settings.xml
+#      env:
+#        GITHUB_USERNAME: x-access-token
+##        GITHUB_PASSWORD: ${{ secrets.GITHUB_ACCESS_TOKEN }}
+#        GITHUB_PASSWORD: ${{ secrets.GITHUB_TOKEN }}

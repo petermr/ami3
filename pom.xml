@@ -12,11 +12,11 @@
     <description>A Java tool for turning scientific literature into semantic form</description>
 
     <!-- Note: the parent POM causes problems for the maven-release-plugin: it has hg (mercurial) configured as SCM, preventing us from using git... -->
-    <parent>
-        <groupId>org.contentmine</groupId>
-        <artifactId>cm-parent</artifactId>
-        <version>7.1.0</version>
-    </parent>
+<!--    <parent>-->
+<!--        <groupId>org.contentmine</groupId>-->
+<!--        <artifactId>cm-parent</artifactId>-->
+<!--        <version>7.1.0</version>-->
+<!--    </parent>-->
 
     <developers>
         <developer>
@@ -530,16 +530,16 @@
         </dependency>
     </dependencies>
 
-    <repositories>
-        <repository>
-            <id>cm-pom</id>
-            <url>https://raw.github.com/ContentMine/cm-pom/mvn-repo/</url>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-            </snapshots>
-        </repository>
-    </repositories>
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>cm-pom</id>-->
+<!--            <url>https://raw.github.com/ContentMine/cm-pom/mvn-repo/</url>-->
+<!--            <snapshots>-->
+<!--                <enabled>true</enabled>-->
+<!--                <updatePolicy>always</updatePolicy>-->
+<!--            </snapshots>-->
+<!--        </repository>-->
+<!--    </repositories>-->
     <!-- see https://docs.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-apache-maven-for-use-with-github-packages -->
     <distributionManagement>
         <repository>
