@@ -8,7 +8,9 @@ RELEASE_VERSION="$(date -u +%Y.%m.%d_%H.%M.%S)"
 DEVELOPMENT_VERSION="$(date -u +%Y.%m.%d_%H.%M)-NEXT-SNAPSHOT"
 echo "Releasing v${RELEASE_VERSION}"
 
-sed -i '' "s/<version>[0-9][0-9][0-9][0-9]\.[0-9][0-9]\.[0-9][0-9]_[0-9][0-9].*</<version>${RELEASE_VERSION}</g" pom.xml
+# This `sed` syntax works on both GNU and BSD/macOS, due to a *non-empty* option-argument:
+# Create a backup file *temporarily* and remove it on success.
+sed -i.bak "s/<version>[0-9][0-9][0-9][0-9]\.[0-9][0-9]\.[0-9][0-9]_[0-9][0-9].*</<version>${RELEASE_VERSION}</g" pom.xml && rm pom.xml.bak
 
 # The maven scm:checkin goal commits ALL modified files, not just pom.xml...
 # see https://stackoverflow.com/questions/48947392/commit-multiple-files-with-maven-scm-plugin
@@ -28,7 +30,7 @@ then
         #mvn -Darguments=-DskipTests -DskipTests -Dmaven.test.skip=true clean package  deploy
 
         echo "Updating to v${DEVELOPMENT_VERSION} for next development cycle..."
-        sed -i '' "s/<version>${RELEASE_VERSION}</<version>${DEVELOPMENT_VERSION}</g" pom.xml
+        sed -i.bak "s/<version>${RELEASE_VERSION}</<version>${DEVELOPMENT_VERSION}</g" pom.xml && rm pom.xml.bak
         # mvn scm:checkin -Dmessage="Updating ami version to ${DEVELOPMENT_VERSION} for next development cycle" -Dincludes=pom.xml -DpushChanges=true
         git commit -m "Setting ami version to ${DEVELOPMENT_VERSION} for next development cycle" --verbose pom.xml
         git push --tags --progress --porcelain origin master
