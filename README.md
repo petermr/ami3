@@ -145,6 +145,14 @@ Commands:
 ## Tutorial
 
 For a tutorial and a wide range of features see https://github.com/petermr/tigr2ess, which shows AMI being used on crop plants. 
+The documentation that resulted from Peter's Tigr3ess workshop in Delhi may be useful. For example:
+
+* [Quick overview](https://github.com/petermr/tigr2ess/blob/master/search/ami.md)
+* [AMI installation](https://github.com/petermr/tigr2ess/tree/master/installation) - for Windows, Unix, MacOS. Detailed steps with screenshots.
+* [AMI getpapers tutorial](https://github.com/petermr/tigr2ess/blob/master/getpapers/TUTORIAL.md)
+* [AMI search tutorial](https://github.com/petermr/tigr2ess/blob/master/search/TUTORIAL.md)
+* [AMI dictionaries tutorial](https://github.com/petermr/tigr2ess/blob/master/dictionaries/TUTORIAL.md)
+* [AMI clean](https://github.com/petermr/tigr2ess/blob/master/installation/WORKING.md) to clean an AMI corpus and start again, without deleting the files you downloaded
 
 Also, see the wiki of the ami3 project: https://github.com/petermr/ami3/wiki
 
