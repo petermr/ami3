@@ -12,6 +12,8 @@ AMI turns documents into knowledge. Or at least the input for knowledge.
 As of July 24, 2020, binary distributions of AMI are hosted on GitHub Packages.
 Obtain the latest version here: https://github.com/petermr/ami3/packages/
 
+See also [INSTALL.md](INSTALL.md) for details.
+
 * Select the latest version, click on the associated `org.contentmine.ami3` link
 * Find the `.bz2` or `.zip` distribution archive under the **Assets** heading on the right-hand side of the page. The link will look something like [`ami3-2020.07.24_07.23.42-distribution.zip`]().
 * Download the archive and unzip it somewhere. The result will look something like this:
@@ -51,7 +53,7 @@ Good starting points are the `ami` and `amidict` commands.
 Try the online help to get an overview of the available options and subcommands:
 
 ```bash
-cd ami3-2020.07.24_07.23.42/bin/ami --help
+ami3-2020.07.24_07.23.42/bin/ami --help
 ```
 
 This will print the usage help to the console.

@@ -57,7 +57,7 @@ Good starting points are the `ami` and `amidict` commands.
 Try the online help to get an overview of the available options and subcommands:
 
 ```bash
-cd ami3-2020.07.25_09.02.10/bin/ami --help
+ami3-2020.07.25_09.02.10/bin/ami --help
 ```
 
 This will print the usage help to the console.
@@ -65,7 +65,7 @@ This will print the usage help to the console.
 Another useful option is `--version` (or `-V`) to display version information:
 
 ```bash
-cd ami3-2020.07.25_09.02.10/bin/ami --version
+ami3-2020.07.25_09.02.10/bin/ami --version
 ```
 
 ## path
