@@ -106,6 +106,8 @@ The version string is managed in a single place: the Maven `pom.xml`:
 This version string can be updated manually, or automatically with the `release.bash` script (details follow below).
 Please follow the above timestamp format conventions if you update the version manually.
 
+This version string is what is printed at runtime when executing `ami [COMMAND] --version`.
+The `maven-jar-plugin` in `pom.xml` is configured to include this information in the `/META-INF/MANIFEST.MF` in `ami.jar`, and `ami` reads this at runtime. 
 
 ## (For Developers) Creating a Release in GitHub
 
