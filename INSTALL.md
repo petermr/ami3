@@ -1,45 +1,72 @@
 # Installing/running AMI
 
-## building from code
-see [building](BUILDING.md). The rest of this document relates to running the prebuilt downloaded jars ("ami-jars").
+## Building from source
+See [BUILDING.md](BUILDING.md).
+The rest of this document relates to running the prebuilt package.
 
-## downloading
-AMI has two main approaches for downloading/running (`jar-with-dependencies` and `repo`/`bin`. Both are contained in the [AMI JAR repository](http://github.com/petermr/ami-jars) as `ami<date>` directories (e.g. `ami20190115/`). We shall describe the `repo`/`bin` approach.
+## Downloading
+As of July 24, 2020, binary distributions of AMI are hosted on GitHub Packages.
+Obtain the latest version here: https://github.com/petermr/ami3/packages/
 
-## git
- * You require `git` installed on your machine and should know how to `clone` a repository. 
- * Decide where you want to put `ami` (e.g. `$HOME/Software/ami` (where `$HOME` is your home directory) or in your unix libraries e.g. `/usr/local/bin`).
- * clone the repo into this area. GitHub has a button ("Clone or download") which exposes the URL:
- ```
- https://github.com/petermr/ami-jars.git
- ```
-Go to your AMI directory and type:
-```
-git clone https://github.com/petermr/ami-jars.git
-```
-This should download about 100 files, with the structure:
+This is the [Packages](https://github.com/petermr/ami3/packages) link on the project page right-hand side.
+
+![Packages link on project page right-hand side](doc/img/project-packages.png)
+
+The `ami` project currently only publishes one package.
+
+![The ami package](doc/img/packages.png)
+
+
+Click on the `org.contentmine.ami3` link to see the package details.
+Find the `.bz2` or `.zip` distribution archive under the **Assets** heading on the right-hand side of the page. The link will look something like [`ami3-2020.07.25_09.02.10-distribution.zip`]().
+
+![View package details](doc/img/package-details.png)
+
+
+Download the archive and unzip it somewhere. The result will look something like this:
+
 ```
 .
-├── LICENSE
-├── README.md
-├── ami20190109
-│   ├── ami20190109-jar-with-dependencies.jar
-│   ├── bin
-│   │   ├── ami-all
-│   │   ├── ami-all.bat
-... snipped for clarity
-│   │   ├── makeProject
-│   │   ├── makeProject.bat
-│   │   ├── norma
-│   │   └── norma.bat
-│   └── repo
-│       ├── Saxon-HE-9.6.0-3.jar
-│       ├── activation-1.1.1.jar
-... snipped
-│       ├── xz-1.4.jar
-│       └── zip4j-1.3.2.jar
+└── ami3-2020.07.25_09.02.10
+    ├── LICENSE
+    ├── README.md
+    ├── bin
+    │   ├── ami
+    │   ├── ami-all
+    │   ├── ami-all.bat
+    │   ├── ...
+    │   ├── ami.bat
+    │   ├── amidict
+    │   ├── amidict.bat
+    │   ├── pman
+    │   └── pman.bat
+    └── repo
+        ├── ...
+        ├── ami3-2020.07.25_09.02.10.jar
+        ├── ...
 ```
-The actual names (based on dates) will changed as we add more releases.
+
+## Running AMI
+
+The distribution has two directories:
+
+ * `bin` which contains the launcher scripts for running `ami` commands.
+ * `repo` which contains all the required jar library files. 
+
+Good starting points are the `ami` and `amidict` commands.
+Try the online help to get an overview of the available options and subcommands:
+
+```bash
+cd ami3-2020.07.25_09.02.10/bin/ami --help
+```
+
+This will print the usage help to the console.
+
+Another useful option is `--version` (or `-V`) to display version information:
+
+```bash
+cd ami3-2020.07.25_09.02.10/bin/ami --version
+```
 
 ## path
  * edit your `PATH` to include this directory. There are many tutorials on this (e.g. 
@@ -70,7 +97,7 @@ which should reply something like:
 ```
 /some/where/bin/ami-pdf
 ```
-If either of these gives an error or blank you have probaably got the path wrong.
+If either of these gives an error or blank you have probably got the path wrong.
 
 
 

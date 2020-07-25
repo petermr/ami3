@@ -131,13 +131,52 @@ Alternatively, you can perform the same steps manually:
 
 ### Convert the git tag to a GitHub Release
 
-See https://docs.github.com/en/github/administering-a-repository/managing-releases-in-a-repository
+> NOTE: This is currently still a manual step.
+
+Find the [Releases](https://github.com/petermr/ami3/releases) link on the project page right-hand side.
+
+![Releases link on project page right-hand side](doc/img/project-releases.png)
+
+This opens the Releases page, showing the new git tag we just pushed.
+
+![the Releases page shows the new git tag](doc/img/releases.png)
+
+Clicking this git tag opens a page where we can edit the tag to convert it into a GitHub Release.
+
+![Edit the tag](doc/img/release-create-new.png)
+
+Edit the release name and release notes.
+
+![Edit the release name and release notes](doc/img/release-edit-name-and-notes.png)
+
+Publish the release when we are done.
+
+![Publish the release](doc/img/release-publish.png)
+
+Our release now shows up as a GitHub Release instead of just a git tag.
+
+![GitHub Release done](doc/img/release-publish-done.png)
+
+See also the [GitHub documentation](https://docs.github.com/en/github/administering-a-repository/managing-releases-in-a-repository).
 
 
 ## (For Developers) Publishing to GitHub Packages
 The act of creating a GitHub Release automatically results in the distribution archives being published to the GitHub Packages repository.
 
 The binary release artifacts can be downloaded from https://github.com/petermr/ami3/packages
+
+This is the [Packages](https://github.com/petermr/ami3/packages) link on the project page right-hand side.
+
+![Packages link on project page right-hand side](doc/img/project-packages.png)
+
+We may want to also update the package description.
+
+![Edit package description](doc/img/package-edit-description.png)
+
+Copy the Release Notes into the package description.
+
+![Put release notes in package description](doc/img/package-description.png)
+
 
 ### Under the hood
 
