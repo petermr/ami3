@@ -12,11 +12,14 @@ import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.util.CMineGlobber;
 import org.contentmine.cproject.util.CMineUtil;
+import org.contentmine.eucl.testutil.TestUtils;
+import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.norma.NAConstants;
 import org.junit.Assert;
 import org.junit.Test;
 
 import nonapi.io.github.classgraph.utils.FileUtils;
+import nu.xom.Element;
 
 public abstract class AbstractAMITest {
 	private static final Logger LOG = LogManager.getLogger(AbstractAMITest.class);
@@ -59,6 +62,23 @@ public abstract class AbstractAMITest {
 
 	public static File OPEN_VIRUS = new File(PROJECTS, "openVirus/");
 	public static File VIRAL950 = new File(OPEN_VIRUS, "viral_epidemics/");
+
+	/**
+	 * tests XML output.
+	 * requires <testDirectory>/<root>.expected.xml
+	 * output to <outputDir>/<root>.xml 
+	 * 
+	 * @param testDirectory
+	 * @param root name of test file 
+	 * @param outputDir such as target/whatever/ 
+	 */
+	public static final void writeOutputAndCompare(File testDirectory, String root, File outputDir) {
+		double eps = 0.001;
+		boolean stripWhite = true;
+		Element dictExpected = XMLUtil.parseQuietlyToRootElement(new File(testDirectory, root + ".expected.xml"));
+		Element dictActual = XMLUtil.parseQuietlyToRootElement(new File(outputDir, root + ".xml"));
+		TestUtils.assertEqualsIncludingFloat(root, dictExpected, dictActual, stripWhite, eps);
+	}
 
 	protected CProject cProject;
 	protected CTree cTree;

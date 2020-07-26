@@ -43,6 +43,8 @@ import org.contentmine.graphics.html.HtmlTr;
 import org.contentmine.graphics.html.HtmlUl;
 import org.contentmine.graphics.html.util.HtmlUtil;
 
+import com.google.common.collect.ArrayListMultimap;
+import com.google.common.collect.Multimap;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
@@ -148,14 +150,24 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 			)
 	private Integer queryChunk = null;
 	
-	@Option(names = {"--sparqlmap"}, 
+	@Option(names = {"--sparqlmap"},
+			split=",",
 			description = "maps wikidata/SPARQL name onto AMIDict names. "
 			+ "builtin names = term, name, wikidata, wikipedia, description, "
-			+ " wikidata names are w_* , other names are _* , everything else is an error."
+			+ "wikidata names are p_* (properties)  and q_* (items), "
+			+ "other names are _* , everything else is an error."
 			+ "Mandatory for wikisparql inputs"
 			
 			)
-	private Map<String, String> sparqlmap = new HashMap<>();
+	private Map<String, String> sparqlNameByAmiName = new HashMap<>();
+	
+	@Option(names = {"--synonyms"},
+			description = "synonyms retrived from source. Syntax depends on source type."
+					+ "for `sparql` `AltLabels` this is a single String with comma-separated "
+					+ "synonyms (and maybe extraneous commas)"
+					
+			)
+	private List<String> synonymList = null;
 	
     @Option(names = {"--template"}, 
     		arity="1..*",
@@ -197,6 +209,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	private static final String HTTP = "http";
 	private static final String CM_PREFIX = "CM.";
 	private static final String WIKITABLE = "wikitable";
+	private static final String CL = "dicc>";
 	
 	public DictionaryCreationTool() {
 		
@@ -206,9 +219,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	protected void parseSpecifics() {
 		getDictionaryName();
 		if (informat != null && informat.toString().startsWith("wikisparql")) {
-			if (sparqlmap == null) {
-				throw new RuntimeException("Must give --sparqlmap for " + informat);
-			}
+			parseSparql();
 		}
 		if (this.templateNames != null) {
 			createFilenamesForWikimediaInput();
@@ -222,6 +233,18 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		dictOutformat = (this.outformats == null || this.outformats.length != 1) ? null : this.outformats[0];
 		wikiLinkList = (this.wikiLinks == null) ? new ArrayList<WikiLink>() :
 		     new ArrayList<WikiLink>(Arrays.asList(this.wikiLinks));
+	}
+
+	private void parseSparql() {
+		if (sparqlNameByAmiName == null) {
+			throw new RuntimeException("Must give --sparqlmap for " + informat);
+		}
+		Multimap<String, String> amiListBySparqlName = ArrayListMultimap.create();
+		for (String amiName : sparqlNameByAmiName.keySet()) {
+			String sparqlName = sparqlNameByAmiName.get(amiName);
+			amiListBySparqlName.put(sparqlName, amiName);
+		}
+		System.out.println(amiListBySparqlName);
 	}
 	
 	@Override
@@ -453,25 +476,80 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		Element sparqlXml = XMLUtil.parseQuietlyToRootElement(inputStream, CMineUtil.UTF8_CHARSET);
 		Element headElement = XMLUtil.getFirstElement(sparqlXml, "./*[local-name() = 'head']");
 		List<String> variables = XMLUtil.getQueryValues(headElement, "./*[local-name()='variable']/@name");
+		reportUndeclaredAttributes(variables);
 		LOG.info("names " + variables);
-		List<Element> resultList = XMLUtil.getQueryElements(sparqlXml, "./*[local-name()='results']/*[local-name()='result']");
-		LOG.info("results " + resultList.size());
+		List<Element> sparqlResultList = XMLUtil.getQueryElements(sparqlXml, "./*[local-name()='results']/*[local-name()='result']");
+		LOG.info("results " + sparqlResultList.size());
 		
 		
-		for (Element result : resultList) {
-			Element entry = new Element(DefaultAMIDictionary.ENTRY);
-			addWikidataID(entry, result);
-			addSynonyms(entry, result);
-			addWikipediaName(entry, result);
-			addWikidataLabel(entry, result);
-			addName(entry, result);
-			addTerm(entry, result);
-			System.out.println(entry.toXML());
-			addUnknownAttributes(entry, result);
-			simpleDictionary.getDictionaryElement().appendChild(entry);
+		for (Element sparqlResult : sparqlResultList) {
+			Element amiEntry = new Element(DefaultAMIDictionary.ENTRY);
+			if (addRequiredAttributes()) {
+				continue;
+			}
+			addAllowedAttributes();
+			addForeignAttributes();
+			/**
+				<binding name='wikidata'>
+					<uri>http://www.wikidata.org/entity/Q16</uri>
+				</binding>
+			 */
+			addNonNullAttribute(amiEntry, sparqlResult, WIKIDATA);
+			/**
+				<binding name='wikipedia'>
+					<uri>https://en.wikipedia.org/wiki/Canada</uri>
+				</binding>
+			 */
+			addNonNullAttribute(amiEntry, sparqlResult, WIKIPEDIA);
+			/**
+				<binding name='wikidataLabel'>
+					<uri>https://en.wikipedia.org/wiki/Canada</uri>
+				</binding>
+			 */
+			addNonNullAttribute(amiEntry, sparqlResult, WIKIDATA_LABEL);
+			/**
+				<binding name='name' >
+					<literal xml:lang='en'>Canada</literal>
+				</binding>
+			 */
+			addNonNullAttribute(amiEntry, sparqlResult, NAME);
+			/**
+				<binding name='term' >
+					<literal xml:lang='en'>Canada</literal>
+				</binding>
+			 */
+			if (!addNonNullAttribute(amiEntry, sparqlResult, TERM)) {
+				LOG.error("Cannot find term, ignored");
+				continue;
+			}
+			addSynonyms(amiEntry, sparqlResult);
+			System.out.println(amiEntry.toXML());
+			addUnknownAttributes(amiEntry, sparqlResult);
+			simpleDictionary.getDictionaryElement().appendChild(amiEntry);
 		}
 	}
 	
+	private void addForeignAttributes() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void addAllowedAttributes() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private boolean addRequiredAttributes() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	private void reportUndeclaredAttributes(List<String> variables) {
+		for (String variable : variables) {
+//			if (ALLOWED)
+		}
+	}
+
 	private void addUnknownAttributes(Element entry, Element result) {
 		for (Element el : result.getChildElements()) {
 //			<binding name='iso3166_code'>
@@ -491,68 +569,66 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		}
 	}
 
-	private void addName(Element entry, Element result) {
-		/**
-			<binding name='name' >
-				<literal xml:lang='en'>Canada</literal>
+	/**
+		<result>
+			<binding name='Disease'>
+				<uri>http://www.wikidata.org/entity/Q12135</uri>
 			</binding>
-		 */
-		addWikidataLabelOverride(entry, result, NAME);
-	}
-
-	/** defaults to wikidataLabel if absent
-	 * 
-	 * @param entry
-	 * @param result
-	 * @param attName
+			<binding name='ICDcode'>
+				<literal>F00-F99</literal>
+			</binding>
+			<binding name='DiseaseLabel'>
+				<literal xml:lang='en'>mental disorder</literal>
+			</binding>
+			<binding name='instanceofLabel'>
+				<literal xml:lang='en'>disease</literal>
+			</binding>
+			<binding name='DiseaseAltLabel'>
+				<literal xml:lang='en'>disease of mental health, disorder of mental process, mental dysfunction, mental illness, mental or behavioural disorder, psychiatric condition, psychiatric disease, psychiatric disorder, mental disorders</literal>
+			</binding>
+		</result>
+	 * @param sparqlResult
+	 * @param bindingName
+	 * @return
 	 */
-	private void addWikidataLabelOverride(Element entry, Element result, String attName) {
-		String name = getValue(result, attName, LITERAL);
-		if (name == null ) {
-			name = getValue(result, WIKIDATA_LABEL, LITERAL);
+	private static String getValueByBindingName(Element sparqlResult, String bindingName) {
+		String value = null;
+		String xpath = "./*[local-name()='" + BINDING + "' and @name='" + bindingName + "']";
+		Element bindingElement = XMLUtil.getFirstElement(sparqlResult, xpath);
+		if (bindingElement == null) {
+			LOG.error(CL + " cannot find binding: " + bindingName);
+			return value;
 		}
-		if (name != null) {
-			entry.addAttribute(new Attribute(attName, name));
+		Element child = XMLUtil.getFirstElement(bindingElement, "./*");
+		if (child == null) {
+			LOG.error(CL + " null value of child: " + sparqlResult.toXML());
+		} else {
+			value = child.getValue();
+			String childName = child.getLocalName();
+			if (childName.contentEquals(URI)) {
+				// last field in URI
+				value = value.substring(value.lastIndexOf("/") + 1);
+			} else if (childName.contentEquals(LITERAL)) {
+				// copy direct
+			} else {
+				LOG.error(CL + " unknown child: " + child.toXML());
+			}
 		}
+		return value;
 	}
 
-	private void addTerm(Element entry, Element result) {
-		/**
-			<binding name='term' >
-				<literal xml:lang='en'>Canada</literal>
-			</binding>
-		 */
-		addWikidataLabelOverride(entry, result, TERM);
-	}
-
-	private static String getValue(Element result, String bindingName, String childName) {
-		String xpath = "./*[local-name()='binding' and @name='" + bindingName + "']/*[local-name()='" + childName + "']";
-		return XMLUtil.getSingleValue(result, xpath);
-	}
-
-	private void addWikipediaName(Element entry, Element result) {
-		/**
-			<binding name='wikipedia'>
-				<uri>https://en.wikipedia.org/wiki/Canada</uri>
-			</binding>
-		 */
-		String name = getValue(result, WIKIPEDIA, URI);
-		if (name != null) {
-			name = name.substring(name.lastIndexOf("/") + 1);
-			entry.addAttribute(new Attribute(WIKIPEDIA, name));
+	private boolean addNonNullAttribute(Element amiEntry, Element sparqlResult, String amiName) {
+		String value = null;
+		String bindingName = sparqlNameByAmiName.get(amiName);
+		if (bindingName == null) {
+			LOG.error(CL + "cannot resolve amiName to sparqlName " + amiName);
+		} else {
+			value = getValueByBindingName(sparqlResult, bindingName);
+			if (value != null) {
+				amiEntry.addAttribute(new Attribute(bindingName, value));
+			}
 		}
-	}
-
-	private void addWikidataLabel(Element entry, Element result) {
-		/**
-			<binding name='wikidataLabel'>
-				<uri>https://en.wikipedia.org/wiki/Canada</uri>
-			</binding>
-		 */
-		String name = getValue(result, WIKIDATA_LABEL, URI);
-		if (name != null) {
-			entry.addAttribute(new Attribute(WIKIDATA_LABEL, name));
-		}
+		return value != null;
 	}
 
 
@@ -571,7 +647,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	}
 
 	private void splitAndAdd(Element result, Element entry, String bindingName) {
-		String literal = getValue(result, bindingName, LITERAL);
+		String literal = getValueByBindingName(result, bindingName);
 		if (literal != null) {
 			List<String> synonyms = Arrays.asList(literal.split("\\s*,\\s*"));
 			for (String synonym : synonyms) {
@@ -591,30 +667,25 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	}
 
 	private static Pattern flagPattern = Pattern.compile(FLAG_A_Z);
+//	private HashBiMap<String, String> sparqlByAmiBiMap;
 	private boolean acceptableSynonym(String synonym) {
 //		System.out.println(":"+synonym+":"+synonym.length());
 		if (Pattern.matches(FLAG_A_Z, synonym)) {
-			System.out.println("IGNORED "+synonym);
+			System.out.println("IGNORED FLAG"+synonym);
 			return false;
 		}
 		return true;
 	}
 
-	private void addWikidataID(Element entry, Element result) {
-		/**
-			<binding name='wikidata'>
-				<uri>http://www.wikidata.org/entity/Q16</uri>
-			</binding>
-		 */
-		addMappedFieldsToDictionary(entry, result, WIKIDATA, DefaultAMIDictionary.WIKIDATA, true);
-	}
-
-	private void addMappedFieldsToDictionary(Element entry, Element result, String sparqlName, String nameInDictionary, boolean lastField) {
-		String amiName = sparqlmap.get(sparqlName);
-		if (amiName == null) {
-			LOG.error("cannot find mapping for " + sparqlName);
+	private void addMappedFieldsToDictionary(Element entry, Element sparqlResult, String amiName, String nameInDictionary, boolean lastField) {
+		String sparqlName = sparqlNameByAmiName.get(amiName);
+		if (sparqlName == null) {
+			LOG.error("cannot find mapping for " + amiName);
 		}
-		String value = DictionaryCreationTool.getValue(result, amiName, URI);
+		String value = DictionaryCreationTool.getValueByBindingName(sparqlResult, sparqlName);
+		if (value == null) {
+			throw new RuntimeException("Cannot find value for " + sparqlName + " in " + sparqlResult.toXML());
+		}
 		if (lastField) {
 			value = value.substring(value.lastIndexOf("/") + 1);
 		}

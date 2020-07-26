@@ -14,6 +14,7 @@ import org.contentmine.ami.tools.AMIDict;
 import org.contentmine.ami.tools.AbstractAMIDictTest;
 import org.contentmine.ami.tools.AbstractAMIDictTool;
 import org.contentmine.ami.tools.AbstractAMIDictTool.DictionaryFileFormat;
+import org.contentmine.ami.tools.AbstractAMITest;
 import org.contentmine.ami.tools.dictionary.DictionaryCreationTool;
 import org.contentmine.ami.tools.download.CurlDownloader;
 import org.contentmine.eucl.testutil.TestUtils;
@@ -508,37 +509,62 @@ private static final File TARGET = new File("target");
 		TestUtils.assertEqualsIncludingFloat("country dict", dictExpected, dictActual, stripWhite, eps);
 	}
 	
+	/**
+<sparql xmlns='http://www.w3.org/2005/sparql-results#'>
+	<head>
+		<variable name='DiseaseLabel'/>
+		<variable name='instanceofLabel'/>
+		<variable name='DiseaseAltLabel'/>
+		<variable name='Disease'/>
+		<variable name='ICDcode'/>
+	</head>
+	<results>
+		<result>
+			<binding name='Disease'>
+			    <!-- map to 'wikidata' -->
+				<uri>http://www.wikidata.org/entity/Q12135</uri>
+			</binding>
+			<binding name='ICDcode'>
+			    <!-- map to '_ICD10' -->
+				<literal>F00-F99</literal>
+			</binding>
+			<binding name='DiseaseLabel'>
+			    <!-- map to 'term' -->
+				<literal xml:lang='en'>mental disorder</literal>
+			</binding>
+			<binding name='instanceofLabel'>
+			    <!-- map to 'w_instanceOf' -->
+				<literal xml:lang='en'>disease</literal>
+			</binding>
+			<binding name='DiseaseAltLabel'>
+			    <!-- map to 'synonyms' -->
+				<literal xml:lang='en'>disease of mental health, disorder of mental process, mental dysfunction, mental illness, mental or behavioural disorder, psychiatric condition, psychiatric disease, psychiatric disorder, mental disorders</literal>
+			</binding>
+		</result>...	 */
 	@Test
 	public void testCreateFromWikidataSparqlMap() {
-		File inputFile = new File(TEST_DICTIONARY, "disease3.sparql.xml");
+		String dictionary = "disease3";
+		File inputFile = new File(TEST_DICTIONARY, dictionary + ".sparql.xml");
 		File outputDir = new File("target/dictionary/");
-		System.out.println("input "+inputFile);
-		String dictionary = "disease";
 		String cmd = "-vvv"
 				+ " --dictionary " + dictionary
 				+ " --directory=" + outputDir
 				+ " --input=" + inputFile
 				+ " create"
 				+ " --informat=wikisparqlxml"
-				+ " --map "
-				+ "wikidata=DiseaseLabel,"
+				+ " --sparqlmap "
+				+ "wikidata=Disease,"
 				+ "w_instanceOf=instanceof,"
-				+ "wikidataAltLabel=DiseaseAltLabel,"
+//				+ "wikidataAltLabel=DiseaseAltLabel,"
 				+ "term=DiseaseLabel,"
 				+ "name=DiseaseLabel,"
-				+ "_ICDCode=ICDCode";
-//		AbstractAMIDictTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
-		/*AbstractAMIDictTool dictionaryTool = */AMIDict.execute(cmd);
-		double eps = 0.001;
-		boolean stripWhite = true;
-		Element dictExpected = XMLUtil.parseQuietlyToRootElement(new File(TEST_DICTIONARY, dictionary + ".dict.expected.xml"));
-		Element dictActual = XMLUtil.parseQuietlyToRootElement(new File(outputDir, dictionary + ".xml"));
-		TestUtils.assertEqualsIncludingFloat("country dict", dictExpected, dictActual, stripWhite, eps);
+				+ "_ICD10=ICDCode"
+				+ " --synonyms=DiseaseAltLabel"
+				;
+		AbstractAMIDictTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
+		AbstractAMITest.writeOutputAndCompare(TEST_DICTIONARY, dictionary, outputDir);
 	}
-	
-	
-	
-	
+
 	// CREATE
 	@Test
 	/** creates  mini dictionary with wikipedia and wikidata links where possible
