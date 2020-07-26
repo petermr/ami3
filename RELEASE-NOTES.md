@@ -1,3 +1,9 @@
+# v2020.07.26_11.27.57
+
+## Summary
+
+This release is another test release for the combined Create Release and Publish Packages action.
+
 # v2020.07.26_11.19.44
 
 ## Summary
