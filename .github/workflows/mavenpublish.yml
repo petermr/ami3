@@ -1,18 +1,44 @@
 # This workflow will build a package using Maven and then publish it to GitHub packages when a release is created
 # For more information see: https://github.com/actions/setup-java#apache-maven-with-a-settings-path
 # Also see: https://docs.github.com/en/actions/language-and-framework-guides/publishing-java-packages-with-maven#publishing-packages-to-github-packages
-
-name: Publish package to GitHub Packages
-
+# See https://github.com/actions/create-release
 on:
-  release:
-    types: [published]
+  push:
+    # Sequence of patterns matched against refs/tags
+    tags:
+      - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
+
+name: Create Release and Publish package to GitHub Packages
+
+#on:
+#  release:
+#    types: [published]
 
 jobs:
-  publish:
-
+  build:
+    name: Create Release
     runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: ami ${{ github.ref }}
+          body_path: RELEASE-NOTES-NEXT.md
+          #          body: |
+          #            Changes in this Release
+          #            - First Change
+          #            - Second Change
+          draft: false
+          prerelease: false
 
+  publish:
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Set up JDK 1.8
