@@ -46,6 +46,19 @@ Download the archive and unzip it somewhere. The result will look something like
         ├── ...
 ```
 
+## Dependencies
+Some `ami` commands invoke external programs.
+These must be installed separately (although they may be included if you are running `ami` in a Docker container).
+
+* `tesseract` for character recognition in bitmaps ([tesseract-ocr GitHub project](https://github.com/tesseract-ocr/tesseract), expected to be installed in `/usr/local/bin/tesseract`). Used by `ami-image`, `ami ocr`, `ami forest`.
+* `gocr` which is an alternative for character recognition ([GOCR sourceforge project](http://jocr.sourceforge.net/), expected to be installed in `/usr/local/bin/gocr`). Used by `ami ocr`.
+* `grobid` to convert PDF streams to HTML ([GROBID docs](https://grobid.readthedocs.io/en/latest/)). Used by `ami grobid`.
+* `latexml` and `latexmlpost` to converts TeX input to HTML 5 ([LaTeXML home](https://dlmf.nist.gov/LaTeXML/))
+* `curl` and other unix-like utilities. On Windows, [git for windows](https://gitforwindows.org/) includes `curl`. You may also be interested in Windows Subsystem for Linux. Used by `ami download`.
+
+The `getpapers` program is often used together with `ami`: 
+* `getpapers` gets metadata, fulltexts or fulltext URLs of papers matching a search query ([ContentMine getpapers GitHub project](https://github.com/ContentMine/getpapers))
+
 ## Running AMI
 
 The distribution has two directories:
@@ -68,7 +81,7 @@ Another useful option is `--version` (or `-V`) to display version information:
 ami3-2020.07.25_09.02.10/bin/ami --version
 ```
 
-## path
+## Path
  * edit your `PATH` to include this directory. There are many tutorials on this (e.g. 
    - Windows (https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/)
    - Unix (https://kb.iu.edu/d/acar).
@@ -84,7 +97,8 @@ ami3-2020.07.25_09.02.10/bin/ami --version
 C:\Program Files;C:\Winnt;C:\Winnt\System32;C:\Program Files\normami
 ```
 
-### test/run 
+
+## test/run 
  * If you have edited your path correctly, then type:
 ```
 ami-pdf
