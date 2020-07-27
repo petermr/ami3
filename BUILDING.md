@@ -210,7 +210,7 @@ Make sure this file has a relevant and up-to-date description of the changes bef
 
 #### Manually converting the git tag to a GitHub Release
 
-This used to be a series of manual steps, but has been automated.
+Creating a GitHub Release from the git tag used to be a series of manual steps, but has been automated.
 If you ever need to do this manually, the steps are described in the [GitHub documentation](https://docs.github.com/en/github/administering-a-repository/managing-releases-in-a-repository).
 
 ## Building Docker image
