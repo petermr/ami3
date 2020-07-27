@@ -24,7 +24,7 @@ echo "Checking for uncommitted changes..."
 if ! mvn scm:check-local-modification; then
     error "There are uncommitted changes. Please revert or commit them before releasing."
 fi
-echo "OK. The workspace is clean."
+echo "... OK. The workspace is clean."
 
 echo "Checking Release Notes for this release (RELEASE-NOTES-NEXT.md)..."
 read -r -d '' RELEASE_NOTES_TEMPLATE << EOD
@@ -52,7 +52,7 @@ fi
 if [ "${ACTUAL_RELEASE_NOTES}" == "${RELEASE_NOTES_TEMPLATE}" ]; then
     error "The Release Notes are just the template. Please update ${RELEASE_NOTES_FILE}."
 fi
-echo "OK. Release Notes exist."
+echo "... OK. Release Notes exist."
 
 echo "Prepending ${RELEASE_NOTES_FILE} to ${RELEASE_NOTES_HISTORY_FILE}..."
 # Copy the contents of `RELEASE-NOTES-NEXT.md` to the top of `RELEASE-NOTES.md`, with the tag name as a level-1 header.
@@ -62,7 +62,7 @@ echo ""                             >> "${RELEASE_NOTES_TEMP_HISTORY_FILE}"
 echo ""                             >> "${RELEASE_NOTES_TEMP_HISTORY_FILE}"
 cat "${RELEASE_NOTES_HISTORY_FILE}" >> "${RELEASE_NOTES_TEMP_HISTORY_FILE}"
 mv "${RELEASE_NOTES_TEMP_HISTORY_FILE}" "${RELEASE_NOTES_HISTORY_FILE}"
-echo "Updated ${RELEASE_NOTES_HISTORY_FILE} OK."
+echo "... Updated ${RELEASE_NOTES_HISTORY_FILE} OK."
 
 echo "Updating release version in pom.xml to ${RELEASE_VERSION}..."
 # This `sed` syntax works on both GNU and BSD/macOS, due to a *non-empty* option-argument:
@@ -70,23 +70,24 @@ echo "Updating release version in pom.xml to ${RELEASE_VERSION}..."
 sed -i.bak "s/<version>[0-9][0-9][0-9][0-9]\.[0-9][0-9]\.[0-9][0-9]_[0-9][0-9].*</<version>${RELEASE_VERSION}</g" pom.xml && rm pom.xml.bak
 
 echo "Committing pom.xml and RELEASE-NOTES.md..."
-if ! git commit -m "Release ami version ${RELEASE_VERSION}" --verbose pom.xml RELEASE-NOTES.md
+if ! git commit --quiet -m "Release ami version ${RELEASE_VERSION}" pom.xml RELEASE-NOTES.md
 then
     error "Unable to commit pom.xml and RELEASE-NOTES.md"
 fi
-echo "Committed OK."
+echo "... Committed OK."
 
-echo "Tagging last commit..."
+echo "Tagging last commit with v${RELEASE_VERSION}..."
 if ! git tag -m "Release ami version ${RELEASE_VERSION}" "v${RELEASE_VERSION}"
 then
     error "Unable to tag the last commit"
 fi
-echo "Tagged last commit OK."
+echo "... Tagged last commit OK."
 
 # If we wanted to run `mvn deploy` to publish to GitHub Packages, this is where we would do it.
 # see https://docs.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-apache-maven-for-use-with-github-packages
 #mvn -Darguments=-DskipTests -DskipTests -Dmaven.test.skip=true clean package  deploy
 
+echo ""
 echo "Preparing for next development cycle..."
 
 echo "Resetting ${RELEASE_NOTES_FILE} to template..."
@@ -96,18 +97,19 @@ echo "Updating version in pom.xml to v${DEVELOPMENT_VERSION}..."
 sed -i.bak "s/<version>${RELEASE_VERSION}</<version>${DEVELOPMENT_VERSION}</g" pom.xml && rm pom.xml.bak
 
 echo "Committing pom.xml and ${RELEASE_NOTES_FILE}..."
-if ! git commit -m "Setting ami version to ${DEVELOPMENT_VERSION} for next development cycle" --verbose pom.xml "${RELEASE_NOTES_FILE}"
+if ! git commit --quiet -m "Preparing for next development cycle" pom.xml "${RELEASE_NOTES_FILE}"
 then
     error "Unable to commit pom.xml and ${RELEASE_NOTES_FILE}"
 fi
-echo "Committed SNAPSHOT version and reset Release Notes OK."
+echo "... Committed SNAPSHOT version and reset Release Notes OK."
 
 echo "Pushing changes..."
-if ! git push --tags --progress --porcelain origin master
+if ! git push --tags --progress origin master
 then
     error "Unable push changes to master branch in origin repository"
 fi
-echo "Pushed changes OK."
+echo "... Pushed changes OK."
+echo ""
 
 echo "Release ${RELEASE_VERSION} completed successfully."
 echo "See https://github.com/petermr/ami3/actions to monitor the GitHub Actions triggered by this tag."
