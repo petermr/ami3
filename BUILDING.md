@@ -148,15 +148,6 @@ This is the [Packages](https://github.com/petermr/ami3/packages) link on the pro
 ![Packages link on project page right-hand side](doc/img/project-packages.png)
 
 
-I have not figured out yet how to set the package description automatically, so you may want to do this manually after each release.
-
-![Edit package description](doc/img/package-edit-description.png)
-
-Copy the Release Notes into the package description.
-
-![Put release notes in package description](doc/img/package-description.png)
-
-
 ### Under the hood
 
 The `maven-deploy-plugin` plugin takes the distribution archives created by the `mvn package` phase and uploads them to the artifact repository configured in the `<distributionManagement>` section in the `pom.xml`.
