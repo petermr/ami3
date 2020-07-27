@@ -109,5 +109,6 @@ then
 fi
 echo "Pushed changes OK."
 
-echo "Done."
+echo "Release ${RELEASE_VERSION} completed successfully."
+echo "See https://github.com/petermr/ami3/actions to monitor the GitHub Actions triggered by this tag."
 
