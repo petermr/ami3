@@ -54,7 +54,7 @@ if [ "${ACTUAL_RELEASE_NOTES}" == "${RELEASE_NOTES_TEMPLATE}" ]; then
 fi
 echo "OK. Release Notes exist."
 
-echo "Prepending ${RELEASE_NOTES_FILE} to ${RELEASE_NOTES_HISTORY_FILE}.."
+echo "Prepending ${RELEASE_NOTES_FILE} to ${RELEASE_NOTES_HISTORY_FILE}..."
 # Copy the contents of `RELEASE-NOTES-NEXT.md` to the top of `RELEASE-NOTES.md`, with the tag name as a level-1 header.
 echo "# ami v${RELEASE_VERSION}"     > "${RELEASE_NOTES_TEMP_HISTORY_FILE}"
 echo "${ACTUAL_RELEASE_NOTES}"      >> "${RELEASE_NOTES_TEMP_HISTORY_FILE}"
@@ -64,7 +64,7 @@ cat "${RELEASE_NOTES_HISTORY_FILE}" >> "${RELEASE_NOTES_TEMP_HISTORY_FILE}"
 mv "${RELEASE_NOTES_TEMP_HISTORY_FILE}" "${RELEASE_NOTES_HISTORY_FILE}"
 echo "Updated ${RELEASE_NOTES_HISTORY_FILE} OK."
 
-echo "Updating release version in pom.xml..."
+echo "Updating release version in pom.xml to ${RELEASE_VERSION}..."
 # This `sed` syntax works on both GNU and BSD/macOS, due to a *non-empty* option-argument:
 # Create a backup file *temporarily* and remove it on success.
 sed -i.bak "s/<version>[0-9][0-9][0-9][0-9]\.[0-9][0-9]\.[0-9][0-9]_[0-9][0-9].*</<version>${RELEASE_VERSION}</g" pom.xml && rm pom.xml.bak
@@ -74,14 +74,14 @@ if ! git commit -m "Release ami version ${RELEASE_VERSION}" --verbose pom.xml RE
 then
     error "Unable to commit pom.xml and RELEASE-NOTES.md"
 fi
-echo "OK."
+echo "Committed OK."
 
 echo "Tagging last commit..."
-if ! git tag -m "Release ami version ${RELEASE_VERSION}"
+if ! git tag -m "Release ami version ${RELEASE_VERSION}" "v${RELEASE_VERSION}"
 then
     error "Unable to tag the last commit"
 fi
-echo "OK."
+echo "Tagged last commit OK."
 
 # If we wanted to run `mvn deploy` to publish to GitHub Packages, this is where we would do it.
 # see https://docs.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-apache-maven-for-use-with-github-packages
