@@ -30,7 +30,7 @@ echo "Checking Release Notes for this release (RELEASE-NOTES-NEXT.md)..."
 read -r -d '' RELEASE_NOTES_TEMPLATE << EOD
 ## Summary
 
-This is a bugfix release...
+This is a template and should be replaced by actual release notes...
 
 ## Changes in this Release
 - First Change
