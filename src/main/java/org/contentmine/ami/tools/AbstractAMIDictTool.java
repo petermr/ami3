@@ -401,7 +401,7 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 	protected boolean showstopperEncountered;
 	protected boolean useAbsoluteNames;
 
-	protected SimpleDictionary /*Element*/ simpleDictionary;
+	public SimpleDictionary /*Element*/ simpleDictionary;
 
 	private File directory;
 

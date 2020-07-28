@@ -108,10 +108,14 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 	public static final String ID = "id";
 	public static final String DICTIONARY = "dictionary";
 	public static final String DESC = "desc";
+	public static final String DESCRIPTION = "description";
 //	public static final String ENTRY = "entry";
+	public static final String NAME = "name";
 	private static final String REGEX = "regex";
+	public static final String SYNONYM = "synonym";
 //	public static final String TITLE = "title";
-	private static final String WIKIPEDIA = "wikipedia";
+	public static final String WIKIDATA = "wikidata";
+	public static final String WIKIPEDIA = "wikipedia";
 
 	/** later these should be read in from args.xml ...
 	 * 
@@ -124,11 +128,9 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 	public static final File SYNBIO_DIR     = new File(AMI_DIR, "synbio");
 	protected static final String UTF_8        = "UTF-8";
 	
-	public static final String WIKIDATA = "wikidata";
 	private static final String PAGE_CONTENT = "content";
 	private static final String IMAGE = "image";
 
-	public static final String SYNONYM = "synonym";
 	
 	private String dictionaryName;
 	protected Map<DictionaryTerm, String> namesByTerm;

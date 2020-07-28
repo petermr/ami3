@@ -62,27 +62,33 @@ import picocli.CommandLine.Option;
 				+ ""
 		})
 public class DictionaryCreationTool extends AbstractAMIDictTool {
-	private static final String BINDING = "binding";
-	private static final String FLAG_A_Z = ":flag-[a-z]+:";
+	static final String BINDING = "binding";
+	static final String FLAG_A_Z = ":flag-[a-z]+:";
 	public static final Logger LOG = LogManager.getLogger(DictionaryCreationTool.class);
 
 	private static final String HTTPS_EN_WIKIPEDIA_ORG = "https://en.wikipedia.org";
-	private static final String LITERAL = "literal";
-	private static final String TERM = "term";
-	private static final String NAME = "name";
+	static final String LITERAL = "literal";
+	static final String TERM = "term";
+	static final String NAME = "name";
 	private static final String SLASH_WIKI_SLASH = "/wiki/";
-	private static final String SYNONYMS = "synonyms";
-	private static final String URI = "uri";
-	private static final String WIKIDATA = "wikidata";
-	private static final String WIKIDATA_ALT_LABEL = "wikidataAltLabel";
-	private static final String WIKIDATA_LABEL = "wikidataLabel";
-	private static final String WIKIPEDIA = "wikipedia";
+	static final String SYNONYMS = "synonyms";
+	static final String URI = "uri";
+	static final String WIKIDATA = "wikidata";
+	static final String WIKIDATA_ALT_LABEL = "wikidataAltLabel";
+	static final String WIKIDATA_LABEL = "wikidataLabel";
+	static final String WIKIPEDIA = "wikipedia";
+	
 	private final static String WIKIPEDIA_BASE = HTTPS_EN_WIKIPEDIA_ORG + SLASH_WIKI_SLASH;
-	private final static List<String> ALLOWED_NAMES =  Arrays.asList(new String[] {
-			NAME,TERM,WIKIPEDIA,WIKIDATA_ALT_LABEL,WIKIDATA_LABEL 
-	});
+	
+	private static final String HTTP = "http";
+	private static final String CM_PREFIX = "CM.";
+	private static final String WIKITABLE = "wikitable";
 
-	private List<String> termList;
+//	final static List<String> ALLOWED_NAMES =  Arrays.asList(new String[] {
+//			NAME,TERM,WIKIPEDIA,WIKIDATA_ALT_LABEL,WIKIDATA_LABEL 
+//	});
+
+	List<String> termList;
 	private List<String> nameList;
 	private List<String> linkList;
 	private String currentTemplateName;
@@ -158,16 +164,15 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 			+ "other names are _* , everything else is an error."
 			+ "Mandatory for wikisparql inputs"
 			
-			)
-	private Map<String, String> sparqlNameByAmiName = new HashMap<>();
+			) 
+	Map<String, String> sparqlNameByAmiName = new HashMap<>();
 	
 	@Option(names = {"--synonyms"},
 			description = "synonyms retrived from source. Syntax depends on source type."
 					+ "for `sparql` `AltLabels` this is a single String with comma-separated "
 					+ "synonyms (and maybe extraneous commas)"
 					
-			)
-	private List<String> synonymList = null;
+			) List<String> synonymList = null;
 	
     @Option(names = {"--template"}, 
     		arity="1..*",
@@ -206,20 +211,19 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	private AMIDict.GeneralOptionsMixin generalOptionsMixin;
 	
 	private HtmlTbody tBody;
-	private static final String HTTP = "http";
-	private static final String CM_PREFIX = "CM.";
-	private static final String WIKITABLE = "wikitable";
-	private static final String CL = "dicc>";
+	static final String CL = "dicc>";
 	
+	private WikidataSparql wikidataSparql;
+
 	public DictionaryCreationTool() {
-		
 	}
 
 //	@Override
 	protected void parseSpecifics() {
 		getDictionaryName();
 		if (informat != null && informat.toString().startsWith("wikisparql")) {
-			parseSparql();
+			getOrCreateWikidataSparql();
+			parseSparql(wikidataSparql);
 		}
 		if (this.templateNames != null) {
 			createFilenamesForWikimediaInput();
@@ -235,7 +239,13 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		     new ArrayList<WikiLink>(Arrays.asList(this.wikiLinks));
 	}
 
-	private void parseSparql() {
+private void getOrCreateWikidataSparql() {
+	if (wikidataSparql == null) {
+		wikidataSparql = new WikidataSparql(this);
+	}
+}
+
+	private void parseSparql(WikidataSparql wikidataSparql) {
 		if (sparqlNameByAmiName == null) {
 			throw new RuntimeException("Must give --sparqlmap for " + informat);
 		}
@@ -340,10 +350,10 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 //		simpleDictionary = DefaultAMIDictionary.createDictionaryElementWithTitle(dictionaryName);
 		simpleDictionary = new SimpleDictionary(dictionaryName);
 		if (InputFormat.wikisparqlxml.equals(informat)) {
-			readSparqlXml(inputStream);
+			wikidataSparql.readSparqlXml(inputStream);
 			writeDictionary();
 		} else if (InputFormat.wikisparqlcsv.equals(informat)) {
-				readSparqlCsv(inputStream);
+				wikidataSparql.readSparqlCsv(inputStream);
 				writeDictionary();
 		} else {
 			readTerms(inputStream);
@@ -368,7 +378,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		} else if (InputFormat.list.equals(informat)) {
 			readList(inputStream);
 		} else if (InputFormat.wikisparqlxml.equals(informat)) {
-			readSparqlXml(inputStream);
+			wikidataSparql.readSparqlXml(inputStream);
 		} else if (InputFormat.mediawikitemplate.equals(informat) ||
 				InputFormat.wikicategory.equals(informat) ||
 				InputFormat.wikipage.equals(informat) ||
@@ -440,299 +450,9 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	}
 
 	// ============= SPARQL INPUT ============
-	private void readSparqlXml(InputStream inputStream) {
-		/**
-<sparql xmlns='http://www.w3.org/2005/sparql-results#'>
-	<head>
-		<variable name='wikidata'/>
-		<variable name='wikidataLabel'/>
-		<variable name='wikipedia'/>
-		<variable name='wikidataAltLabel'/>
-		<variable name='synonyms'/>
-	</head>
-	<results>
-		<result>
-			<binding name='wikidata'>
-				<uri>http://www.wikidata.org/entity/Q16</uri>
-			</binding>
-			<binding name='synonyms'>
-				<literal>🇨🇦</literal>
-			</binding>
-			<binding name='wikipedia'>
-				<uri>https://en.wikipedia.org/wiki/Canada</uri>
-			</binding>
-			<binding name='wikidataLabel'>
-				<literal xml:lang='en'>Canada</literal>
-			</binding>
-			<binding name='wikidataAltLabel'>
-				<literal xml:lang='en'>CA, ca, CDN, can, CAN, British North America, 🇨🇦, Dominion of Canada</literal>
-			</binding>
-		</result>		 
-		...
-		*/
-		Element desc = new Element(DefaultAMIDictionary.DESC);
-		desc.appendChild("Created from SPARQL query");
-		simpleDictionary.getDictionaryElement().appendChild(desc);
-		Element sparqlXml = XMLUtil.parseQuietlyToRootElement(inputStream, CMineUtil.UTF8_CHARSET);
-		Element headElement = XMLUtil.getFirstElement(sparqlXml, "./*[local-name() = 'head']");
-		List<String> variables = XMLUtil.getQueryValues(headElement, "./*[local-name()='variable']/@name");
-		reportUndeclaredAttributes(variables);
-		LOG.info("names " + variables);
-		List<Element> sparqlResultList = XMLUtil.getQueryElements(sparqlXml, "./*[local-name()='results']/*[local-name()='result']");
-		LOG.info("results " + sparqlResultList.size());
-		
-		
-		for (Element sparqlResult : sparqlResultList) {
-			Element amiEntry = new Element(DefaultAMIDictionary.ENTRY);
-			if (addRequiredAttributes()) {
-				continue;
-			}
-			addAllowedAttributes();
-			addForeignAttributes();
-			/**
-				<binding name='wikidata'>
-					<uri>http://www.wikidata.org/entity/Q16</uri>
-				</binding>
-			 */
-			addNonNullAttribute(amiEntry, sparqlResult, WIKIDATA);
-			/**
-				<binding name='wikipedia'>
-					<uri>https://en.wikipedia.org/wiki/Canada</uri>
-				</binding>
-			 */
-			addNonNullAttribute(amiEntry, sparqlResult, WIKIPEDIA);
-			/**
-				<binding name='wikidataLabel'>
-					<uri>https://en.wikipedia.org/wiki/Canada</uri>
-				</binding>
-			 */
-			addNonNullAttribute(amiEntry, sparqlResult, WIKIDATA_LABEL);
-			/**
-				<binding name='name' >
-					<literal xml:lang='en'>Canada</literal>
-				</binding>
-			 */
-			addNonNullAttribute(amiEntry, sparqlResult, NAME);
-			/**
-				<binding name='term' >
-					<literal xml:lang='en'>Canada</literal>
-				</binding>
-			 */
-			if (!addNonNullAttribute(amiEntry, sparqlResult, TERM)) {
-				LOG.error("Cannot find term, ignored");
-				continue;
-			}
-			addSynonyms(amiEntry, sparqlResult);
-			System.out.println(amiEntry.toXML());
-			addUnknownAttributes(amiEntry, sparqlResult);
-			simpleDictionary.getDictionaryElement().appendChild(amiEntry);
-		}
-	}
 	
-	private void addForeignAttributes() {
-		// TODO Auto-generated method stub
-		
-	}
+//	private static Pattern flagPattern = Pattern.compile(FLAG_A_Z);
 
-	private void addAllowedAttributes() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private boolean addRequiredAttributes() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	private void reportUndeclaredAttributes(List<String> variables) {
-		for (String variable : variables) {
-//			if (ALLOWED)
-		}
-	}
-
-	private void addUnknownAttributes(Element entry, Element result) {
-		for (Element el : result.getChildElements()) {
-//			<binding name='iso3166_code'>
-//			<literal>AL</literal>
-//		</binding>
-			if (el.getLocalName().contentEquals(BINDING)) {
-				String newAttName = el.getAttributeValue(NAME);
-				if (ALLOWED_NAMES.contains(newAttName)) {
-					LOG.info("skipped "+newAttName);
-				} else {
-					LOG.info("copied unknown attribute "+newAttName);
-					String val = el.getValue().trim();
-					entry.addAttribute(new Attribute(newAttName, val));
-					addSynonym(entry, val);
-				}
-			}
-		}
-	}
-
-	/**
-		<result>
-			<binding name='Disease'>
-				<uri>http://www.wikidata.org/entity/Q12135</uri>
-			</binding>
-			<binding name='ICDcode'>
-				<literal>F00-F99</literal>
-			</binding>
-			<binding name='DiseaseLabel'>
-				<literal xml:lang='en'>mental disorder</literal>
-			</binding>
-			<binding name='instanceofLabel'>
-				<literal xml:lang='en'>disease</literal>
-			</binding>
-			<binding name='DiseaseAltLabel'>
-				<literal xml:lang='en'>disease of mental health, disorder of mental process, mental dysfunction, mental illness, mental or behavioural disorder, psychiatric condition, psychiatric disease, psychiatric disorder, mental disorders</literal>
-			</binding>
-		</result>
-	 * @param sparqlResult
-	 * @param bindingName
-	 * @return
-	 */
-	private static String getValueByBindingName(Element sparqlResult, String bindingName) {
-		String value = null;
-		String xpath = "./*[local-name()='" + BINDING + "' and @name='" + bindingName + "']";
-		Element bindingElement = XMLUtil.getFirstElement(sparqlResult, xpath);
-		if (bindingElement == null) {
-			LOG.error(CL + " cannot find binding: " + bindingName);
-			return value;
-		}
-		Element child = XMLUtil.getFirstElement(bindingElement, "./*");
-		if (child == null) {
-			LOG.error(CL + " null value of child: " + sparqlResult.toXML());
-		} else {
-			value = child.getValue();
-			String childName = child.getLocalName();
-			if (childName.contentEquals(URI)) {
-				// last field in URI
-				value = value.substring(value.lastIndexOf("/") + 1);
-			} else if (childName.contentEquals(LITERAL)) {
-				// copy direct
-			} else {
-				LOG.error(CL + " unknown child: " + child.toXML());
-			}
-		}
-		return value;
-	}
-
-	private boolean addNonNullAttribute(Element amiEntry, Element sparqlResult, String amiName) {
-		String value = null;
-		String bindingName = sparqlNameByAmiName.get(amiName);
-		if (bindingName == null) {
-			LOG.error(CL + "cannot resolve amiName to sparqlName " + amiName);
-		} else {
-			value = getValueByBindingName(sparqlResult, bindingName);
-			if (value != null) {
-				amiEntry.addAttribute(new Attribute(bindingName, value));
-			}
-		}
-		return value != null;
-	}
-
-
-	private void addSynonyms(Element entry, Element result) {
-		/**
-		<binding name='synonyms'>
-			<literal>🇨🇦</literal>
-		</binding>
-		<binding name='wikidataAltLabel'>
-		  <literal xml:lang='en'>CA, ca, CDN, can, CAN, British North America, 🇨🇦, Dominion of Canada</literal>
-		</binding>
-		*/
-		splitAndAdd(result, entry, SYNONYMS);
-		splitAndAdd(result, entry, WIKIDATA_ALT_LABEL);
-
-	}
-
-	private void splitAndAdd(Element result, Element entry, String bindingName) {
-		String literal = getValueByBindingName(result, bindingName);
-		if (literal != null) {
-			List<String> synonyms = Arrays.asList(literal.split("\\s*,\\s*"));
-			for (String synonym : synonyms) {
-				if (!acceptableSynonym(synonym)) {
-					continue;
-				}
-				Element synonymElement = addSynonym(entry, synonym);
-			}
-		}
-	}
-
-	private Element addSynonym(Element entry, String synonym) {
-		Element synonymElement = new Element(DefaultAMIDictionary.SYNONYM);
-		synonymElement.appendChild(synonym);
-		entry.appendChild(synonymElement);
-		return synonymElement;
-	}
-
-	private static Pattern flagPattern = Pattern.compile(FLAG_A_Z);
-//	private HashBiMap<String, String> sparqlByAmiBiMap;
-	private boolean acceptableSynonym(String synonym) {
-//		System.out.println(":"+synonym+":"+synonym.length());
-		if (Pattern.matches(FLAG_A_Z, synonym)) {
-			System.out.println("IGNORED FLAG"+synonym);
-			return false;
-		}
-		return true;
-	}
-
-	private void addMappedFieldsToDictionary(Element entry, Element sparqlResult, String amiName, String nameInDictionary, boolean lastField) {
-		String sparqlName = sparqlNameByAmiName.get(amiName);
-		if (sparqlName == null) {
-			LOG.error("cannot find mapping for " + amiName);
-		}
-		String value = DictionaryCreationTool.getValueByBindingName(sparqlResult, sparqlName);
-		if (value == null) {
-			throw new RuntimeException("Cannot find value for " + sparqlName + " in " + sparqlResult.toXML());
-		}
-		if (lastField) {
-			value = value.substring(value.lastIndexOf("/") + 1);
-		}
-		entry.addAttribute(new Attribute(nameInDictionary, value));
-	}
-	
-	private void readSparqlCsv(InputStream inputStream) {
-		/**
-item,itemLabel,chebiId
-http://www.wikidata.org/entity/Q4015903,Voacamine,10014
-http://www.wikidata.org/entity/Q27176808,LSM-12060,100686
-		...
-		*/
-		RectangularTable rectangularTable = null;
-		boolean useHeader = true;
-		try {
-			rectangularTable = RectangularTable.readCSVTable(inputStream, useHeader);
-		} catch (IOException e) {
-			throw new RuntimeException("cannot read table", e);
-		}
-		termCol = "itemLabel";
-		if (termCol == null) {
-			throw new RuntimeException("must give termCol");
-		}
-		termList = rectangularTable.getColumn(termCol).getValues();
-		if (termList == null) {
-			throw new RuntimeException("Cannot find term column");
-		}
-		String wikidataIDCol = "item";
-		List<String> wikidataIDList = rectangularTable.getColumn(wikidataIDCol).getValues();
-
-		Element desc = new Element(DefaultAMIDictionary.DESC);
-		desc.appendChild("Created from SPARQL query");
-		simpleDictionary.getDictionaryElement().appendChild(desc);
-		
-		
-		for (int i = 0; i < rectangularTable.size(); i++) {
-			Element entry = new Element(DefaultAMIDictionary.ENTRY);
-			String wikidataId = wikidataIDList.get(i);
-			wikidataId = wikidataId.substring(wikidataId.lastIndexOf("/") + 1);
-			entry.addAttribute(new Attribute(WIKIDATA, wikidataId));
-			entry.addAttribute(new Attribute(TERM, termList.get(i)));
-			System.out.println(entry.toXML());
-//			addUnknownAttributes(entry, result);
-			simpleDictionary.getDictionaryElement().appendChild(entry);
-		}
-	}
 
 
 	// ============= END SPARQL INPUT ============

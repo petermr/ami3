@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dictionary title="country">
- <desc>Created from SPARQL query</desc>
- <entry iso3166_code = "AF" term = "Afghanistan" wikidata="Q889" wikipedia="Afghanistan" name="Afghanistan">
-  <synonym>AFG</synonym>
-  <synonym>af</synonym>
-  <synonym>AF</synonym>
-  <synonym>Islamic Republic of Afghanistan</synonym>
- </entry>
- <entry iso3166_code = "AL" term = "Albania" wikidata="Q222" wikipedia="Albania" name="Albania">
-  <synonym>ALB</synonym>
-  <synonym>al</synonym>
-  <synonym>Al</synonym>
-  <synonym>Republic of Albania</synonym>
-  <synonym>Republika e Shqipërisë</synonym>
-  <synonym>Shqipërisë</synonym>
- </entry>
+<dictionary title="disease3">
+	<desc>Created from SPARQL query</desc>
+	<entry _icd10="F00-F99" name="mental disorder" p_31_instanceOf="disease" term="mental disorder" wikidata="Q12135">
+		<synonym>disease of mental health</synonym>
+		<synonym>disorder of mental process</synonym>
+		<synonym>mental dysfunction</synonym>
+		<synonym>mental illness</synonym>
+		<synonym>mental or behavioural disorder</synonym>
+		<synonym>psychiatric condition</synonym>
+		<synonym>psychiatric disease</synonym>
+		<synonym>psychiatric disorder</synonym>
+		<synonym>mental disorders</synonym>
+	</entry>
+	<entry _icd10="A64" name="sexually transmitted infection" p_31_instanceOf="type of pathogen transmission" term="sexually transmitted infection" wikidata="Q12198">
+		<synonym>sexually transmitted disease</synonym>
+		<synonym>sexually transmitted diseases</synonym>
+		<synonym>STD</synonym>
+		<synonym>STI</synonym>
+		<synonym>VD</synonym>
+		<synonym>venereal disease</synonym>
+	</entry>
+	<entry _icd10="E06.5" name="Riedel's fibrosing thyroiditis" p_31_instanceOf="disease" term="Riedel's fibrosing thyroiditis" wikidata="Q16495">
+		<synonym>Riedel disease</synonym>
+		<synonym>Riedel fibrosing thyroiditis</synonym>
+		<synonym>Riedel thyroiditis</synonym>
+		<synonym>Riedel's struma</synonym>
+		<synonym>Riedel's thyroiditis</synonym>
+	</entry>
 </dictionary>

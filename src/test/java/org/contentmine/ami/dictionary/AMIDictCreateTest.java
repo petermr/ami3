@@ -554,15 +554,28 @@ private static final File TARGET = new File("target");
 				+ " --informat=wikisparqlxml"
 				+ " --sparqlmap "
 				+ "wikidata=Disease,"
-				+ "w_instanceOf=instanceof,"
-//				+ "wikidataAltLabel=DiseaseAltLabel,"
+				+ "p_31_instanceOf=instanceofLabel,"
 				+ "term=DiseaseLabel,"
 				+ "name=DiseaseLabel,"
-				+ "_ICD10=ICDCode"
+				+ "_icd10=ICDcode"
 				+ " --synonyms=DiseaseAltLabel"
 				;
 		AbstractAMIDictTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
 		AbstractAMITest.writeOutputAndCompare(TEST_DICTIONARY, dictionary, outputDir);
+		
+		/**
+		 * 		String cmd = "
+		 * -vvv --dictionary mydictionary --directory= myOutputDir --input= + myinputFile \
+				 create \
+				 --informat=wikisparqlxml \
+				 --sparqlmap \
+				wikidata=Disease,p31_instanceOf=instance%20of,wikidataAltLabel=DiseaseAltLabel,\
+				term=DiseaseLabel,name=DiseaseLabel,_icd10=ICDCode\
+				 --synonyms=DiseaseAltLabel
+				 "
+				;
+
+		 */
 	}
 
 	// CREATE
