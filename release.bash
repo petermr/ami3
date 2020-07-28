@@ -52,6 +52,11 @@ fi
 if [ "${ACTUAL_RELEASE_NOTES}" == "${RELEASE_NOTES_TEMPLATE}" ]; then
     error "The Release Notes are just the template. Please update ${RELEASE_NOTES_FILE}."
 fi
+
+# Verify that the summary of `RELEASE-NOTES-NEXT.md` is not just the template summary.
+if grep "This is a template and should be replaced by actual release notes" "${RELEASE_NOTES_FILE}" >> /dev/null; then
+    error "The Release Notes summary is just the template. Please update ${RELEASE_NOTES_FILE}."
+fi
 echo "... OK. Release Notes exist."
 
 echo "Prepending ${RELEASE_NOTES_FILE} to ${RELEASE_NOTES_HISTORY_FILE}..."
