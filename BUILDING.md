@@ -109,11 +109,15 @@ Please follow the above timestamp format conventions if you update the version m
 This version string is what is printed at runtime when executing `ami [COMMAND] --version`.
 The `maven-jar-plugin` in `pom.xml` is configured to include this information in the `/META-INF/MANIFEST.MF` in `ami.jar`, and `ami` reads this at runtime. 
 
-## (For Developers) Creating a Release in GitHub
+## (For Developers) Creating a GitHub Release and Publishing to GitHub Packages
 
-The `ami` project uses GitHub's [concept of releases](https://docs.github.com/en/github/administering-a-repository/about-releases) to keep track of packages, along with release notes and links to binary files.
+The `ami` project uses GitHub Releases to keep track of packages, along with release notes and links to binary files.
+Archive files containing binary distributions of `ami` are published to GitHub Packages for easy [download](https://github.com/petermr/ami3/packages) by users.
+(You can learn more about GitHub Releases [here](https://docs.github.com/en/github/administering-a-repository/about-releases).)
 
 The release process starts by incrementing the version and creating a git tag.
+By convention, release tags start with the letter 'v'.
+Our release automation uses and depends on this convention: the `release.bash` script creates such tags and our GitHub Action workflow is triggered by such tags.
 
 Executing the `release.bash` script is the recommended way to increase the version and create a git tag.
 
@@ -123,61 +127,25 @@ The `release.bash` script updates the version string in the `pom.xml`, creates a
 
 Alternatively, you can perform the same steps manually:
 
-* update the version string in `pom.xml` to the current time in UTC using the `yyyy.MM.dd_HH.mm.ss` format
-* commit the change to `pom.xml` (suggested commit message: `"Releasing ami yyyy.MM.dd_HH.mm.ss"`)
-* run `git status` to ensure there are no uncommitted changes
-* tag the last commit with `v + version`. For example: `v2020.07.24_07.23.42`.
-* update the version string in `pom.xml` to the current time in UTC using the `yyyy.MM.dd_HH.mm-NEXT-SNAPSHOT` format
-* commit the change to `pom.xml` (suggested commit message: `"Preparing for next release cycle"`)
-* push the changes (including the tags)
+* Run `git status` to ensure there are no uncommitted changes.
+* Verify that `RELEASE-NOTES-NEXT.md` has release notes describing this release.
+* Update the version string in `pom.xml` to the current time in UTC using the `yyyy.MM.dd_HH.mm.ss` format.
+* Copy the contents of `RELEASE-NOTES-NEXT.md` to the top of `RELEASE-NOTES.md`, with the tag name as a level-1 header.
+* Commit the changes to `pom.xml` and `RELEASE-NOTES.md` (suggested commit message: `"Releasing ami yyyy.MM.dd_HH.mm.ss"`).
+* Tag the last commit with `v + version`. For example: `v2020.07.24_07.23.42`.
+* Reset `RELEASE-NOTES-NEXT.md` to be blank (or empty template).
+* Update the version string in `pom.xml` to the current time in UTC using the `yyyy.MM.dd_HH.mm-NEXT-SNAPSHOT` format.
+* Commit the change to `pom.xml` and `RELEASE-NOTES-NEXT.md` (suggested commit message: `"Preparing for next release cycle"`).
+* Push the changes (including the tags).
 
-### Convert the git tag to a GitHub Release
-
-> NOTE: This is currently still a manual step.
-
-Find the [Releases](https://github.com/petermr/ami3/releases) link on the project page right-hand side.
-
-![Releases link on project page right-hand side](doc/img/project-releases.png)
-
-This opens the Releases page, showing the new git tag we just pushed.
-
-![the Releases page shows the new git tag](doc/img/releases.png)
-
-Clicking this git tag opens a page where we can edit the tag to convert it into a GitHub Release.
-
-![Edit the tag](doc/img/release-create-new.png)
-
-Edit the release name and release notes.
-
-![Edit the release name and release notes](doc/img/release-edit-name-and-notes.png)
-
-Publish the release when we are done.
-
-![Publish the release](doc/img/release-publish.png)
-
-Our release now shows up as a GitHub Release instead of just a git tag.
-
-![GitHub Release done](doc/img/release-publish-done.png)
-
-See also the [GitHub documentation](https://docs.github.com/en/github/administering-a-repository/managing-releases-in-a-repository).
-
-
-## (For Developers) Publishing to GitHub Packages
-The act of creating a GitHub Release automatically results in the distribution archives being published to the GitHub Packages repository.
+### Publishing a distribution archive to GitHub Packages
+The act of pushing a git tag whose name starts with 'v' automatically results in a GitHub Release being created, as well as the distribution archives being published to the GitHub Packages repository.
 
 The binary release artifacts can be downloaded from https://github.com/petermr/ami3/packages
 
 This is the [Packages](https://github.com/petermr/ami3/packages) link on the project page right-hand side.
 
 ![Packages link on project page right-hand side](doc/img/project-packages.png)
-
-We may want to also update the package description.
-
-![Edit package description](doc/img/package-edit-description.png)
-
-Copy the Release Notes into the package description.
-
-![Put release notes in package description](doc/img/package-description.png)
 
 
 ### Under the hood
@@ -196,10 +164,10 @@ In our `pom.xml` we have the following section to upload our archives to GitHub 
 </distributionManagement>
 ```
 
-#### Automatic Publishing with GitHub Action
+#### Automatic Publishing to GitHub Packages with GitHub Action
 
-We have a GitHub Action workflow configured in [`.github/workflows/mavenpublish.yml`](.github/workflows/mavenpublish.yml).
-This workflow is triggered by a GitHub Release, and will build the project and finally call the Maven `deploy` goal:
+We have a GitHub Action workflow configured in [`.github/workflows/create-release-and-publish-packages.yml`](.github/workflows/create-release-and-publish-packages.yml).
+This workflow is triggered by a git tag being pushed that starts with 'v', and will build the project and finally call the Maven `deploy` goal:
 
 ```bash
 mvn -DskipTests -B deploy
@@ -210,13 +178,31 @@ There is no chance that the published artifacts contain files that were not chec
 
 #### Manually publishing directly to GitHub Packages
 
-We can also manually publish to GitHub Packages by running `mvn -B deploy -DskipTests` on our local machine.
+We can also manually publish to GitHub Packages by running `mvn -DskipTests -B deploy` on our local machine.
 
-To publish to GitHub Packages from our local machine, we need to:
+To publish to GitHub Packages from your local machine, you need to:
 * [Create a personal access token](https://docs.github.com/en/packages/publishing-and-managing-packages/about-github-packages#about-tokens) to authenticate to GitHub Packages with Apache Maven.
-* Edit our `~/.m2/settings.xml` file to [include our personal access token](https://docs.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-apache-maven-for-use-with-github-packages).
+* Edit your `~/.m2/settings.xml` file to [include your personal access token](https://docs.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-apache-maven-for-use-with-github-packages).
 
 > NOTE: I have not tested this.
+
+#### Automatically creating a GitHub Release with GitHub Action
+A GitHub Release is essentially a git tag, with some extras:
+* it is marked as a "Release", and looks different from a plain git tag in the GitHub web site
+* a Release has a name (which can be different from the git tag name)
+* a Release has a description (Release Notes)
+* a Release has "assets" associated with it that can be downloaded (this is separate from GitHub Packages for historical reasons)
+
+The same GitHub Action workflow configured in [`.github/workflows/create-release-and-publish-packages.yml`](.github/workflows/create-release-and-publish-packages.yml) mentioned above is also responsible for creating a GitHub Release from the git tag.
+
+The main point of interest is the **Release Notes**:
+the workflow takes the contents of the `RELEASE-NOTES-NEXT.md` file and uses that as the Release description.
+Make sure this file has a relevant and up-to-date description of the changes before pushing a tag whose name starts with 'v'.
+
+#### Manually converting the git tag to a GitHub Release
+
+Creating a GitHub Release from the git tag used to be a series of manual steps, but has been automated.
+If you ever need to do this manually, the steps are described in the [GitHub documentation](https://docs.github.com/en/github/administering-a-repository/managing-releases-in-a-repository).
 
 ## Building Docker image
 

@@ -1,0 +1,60 @@
+# This GitHub Action workflow is triggered by a git tag being pushed where the tag name starts with 'v'.
+# The workflow runs two jobs:
+# - create a GitHub Release from the git tag, using RELEASE-NOTES-NEXT.md as the relese notes
+# - build a package using Maven and then publish it to GitHub packages
+on:
+  push:
+    # Sequence of patterns matched against refs/tags
+    tags:
+      - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
+
+# (Previously, we expected the GitHub Release to be created manually, which would then trigger the `publish` job.)
+#on:
+#  release:
+#    types: [created]
+
+name: Create Release and Publish to GitHub Packages
+
+jobs:
+  build:
+    # See https://github.com/actions/create-release
+    name: Create GitHub Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: ami ${{ github.ref }}
+          body_path: RELEASE-NOTES-NEXT.md
+          #          body: |
+          #            Changes in this Release
+          #            - First Change
+          #            - Second Change
+          draft: false
+          prerelease: false
+
+  publish:
+    # See: https://github.com/actions/setup-java#publishing-using-apache-maven
+    # See: https://docs.github.com/en/actions/language-and-framework-guides/publishing-java-packages-with-maven#publishing-packages-to-github-packages
+    name: Publish to GitHub packages
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up JDK 1.8
+      uses: actions/setup-java@v1 # installs the JDK, and generates a Maven settings.xml for publishing the package to GitHub Packages
+      # creating settings.xml with server-id: github; environment variables: username=$GITHUB_ACTOR, password=$GITHUB_TOKEN, and gpg-passphrase=null
+      # See: https://github.com/actions/setup-java
+      with:
+        java-version: 1.8
+
+    - name: Publish to GitHub Packages Apache Maven
+      #run: mvn --debug -DskipTests -B deploy # use this when troubleshooting
+      run: mvn -DskipTests -B deploy
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
