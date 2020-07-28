@@ -1,3 +1,13 @@
+# ami v2020.07.28_20.33.15
+## Summary
+
+This is a template and should be replaced by actual release notes...
+
+## Changes in this Release
+- [#57] Add RELEASE-NOTES.md in the distribution
+- Second Change
+
+
 # ami v2020.07.27_01.47.40
 ## Summary
 
