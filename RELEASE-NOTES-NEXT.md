@@ -1,7 +1,7 @@
 ## Summary
 
-Added WikidataSparql queries to `amidict`
+This is a template and should be replaced by actual release notes...
 
 ## Changes in this Release
-- Added WikidataSparql queries to `amidict`
-- slowly linking `picocli` help to Wiki
+- First Change
+- Second Change
