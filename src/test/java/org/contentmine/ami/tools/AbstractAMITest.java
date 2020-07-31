@@ -1,6 +1,7 @@
 package org.contentmine.ami.tools;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
@@ -14,7 +15,6 @@ import org.contentmine.cproject.util.CMineGlobber;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.testutil.TestUtils;
 import org.contentmine.eucl.xml.XMLUtil;
-import org.contentmine.norma.NAConstants;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -75,9 +75,15 @@ public abstract class AbstractAMITest {
 	public static final void writeOutputAndCompare(File testDirectory, String root, File outputDir) {
 		double eps = 0.001;
 		boolean stripWhite = true;
-		Element dictExpected = XMLUtil.parseQuietlyToRootElement(new File(testDirectory, root + ".expected.xml"));
-		Element dictActual = XMLUtil.parseQuietlyToRootElement(new File(outputDir, root + ".xml"));
-		TestUtils.assertEqualsIncludingFloat(root, dictExpected, dictActual, stripWhite, eps);
+		File expectedFile = new File(testDirectory, root + ".expected.xml");
+		if (!expectedFile.exists()) {
+			String message = "must provide an 'expected' file: "+expectedFile;
+			LOG.error(message);
+			throw new RuntimeException(message);
+		}
+		Element expectedElement = XMLUtil.parseQuietlyToRootElement(expectedFile);
+		Element actualElement = XMLUtil.parseQuietlyToRootElement(new File(outputDir, root + ".xml"));
+		TestUtils.assertEqualsIncludingFloat(root, expectedElement, actualElement, stripWhite, eps);
 	}
 
 	protected CProject cProject;

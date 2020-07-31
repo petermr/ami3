@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dictionary title="country">
- <desc>Created from SPARQL query</desc>
- <entry iso3166_code = "AF" term = "Afghanistan" wikidata="Q889" wikipedia="Afghanistan" name="Afghanistan">
-  <synonym>AFG</synonym>
-  <synonym>af</synonym>
-  <synonym>AF</synonym>
-  <synonym>Islamic Republic of Afghanistan</synonym>
- </entry>
- <entry iso3166_code = "AL" term = "Albania" wikidata="Q222" wikipedia="Albania" name="Albania">
-  <synonym>ALB</synonym>
-  <synonym>al</synonym>
-  <synonym>Al</synonym>
-  <synonym>Republic of Albania</synonym>
-  <synonym>Republika e Shqipërisë</synonym>
-  <synonym>Shqipërisë</synonym>
- </entry>
+<dictionary title="country1">
+<desc>Created from SPARQL query</desc>
+<entry wikidata="Q889" wikidataLabel="Afghanistan" iso3166_code="AF" wikipedia="Afghanistan" wikidataAltLabel="AFG, af, :flag-af:, Islamic Republic of Afghanistan" term="Afghanistan" />
+<entry wikidata="Q222" wikidataLabel="Albania" iso3166_code="AL" wikipedia="Albania" wikidataAltLabel="ALB, al, :flag-al:, Republic of Albania, Republika e Shqipërisë, Shqipërisë" term="Albania" />
 </dictionary>

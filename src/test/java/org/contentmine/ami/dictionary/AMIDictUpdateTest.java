@@ -1,9 +1,12 @@
 package org.contentmine.ami.dictionary;
 
+import java.io.File;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.contentmine.ami.tools.AMIDict;
 import org.contentmine.ami.tools.AbstractAMIDictTest;
+import org.contentmine.ami.tools.AbstractAMITest;
 import org.junit.Test;
 
 import nu.xom.Element;
@@ -50,14 +53,18 @@ public class AMIDictUpdateTest extends AbstractAMIDictTest {
 	
 	@Test
 	public void testDelete() {
-		String args = "-vv update"
+		String dictionary = "testa";
+		File outputDir = new File("target/dictionary/update");
+		String args = "-vv --outputDir="+outputDir
+				+ " update"
 				+ " --delete"
 				+ " entry@wikidata=Q123456781,@wikidata,@description"
 				+ " entry@wikidata=Q123456782,@wikidata"
 				+ " entry@wikidata=Q123456783,entry"
 				+ " entry@term=term5,@term,@description"
-				+ " --dictionary=testa --directory=" + TEST_DICTIONARY + "";
+				+ " --dictionary="+dictionary+" --directory=" + TEST_DICTIONARY + "";
 		AMIDict.execute(args);
+		AbstractAMITest.writeOutputAndCompare(TEST_DICTIONARY, dictionary, outputDir);
 	}
 	
 	@Test

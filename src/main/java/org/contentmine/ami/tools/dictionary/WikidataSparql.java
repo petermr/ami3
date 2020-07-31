@@ -2,17 +2,24 @@ package org.contentmine.ami.tools.dictionary;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.regex.Pattern;
 
+import org.apache.commons.io.IOUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.contentmine.ami.dictionary.DefaultAMIDictionary;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.cproject.util.RectangularTable;
+import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Attribute;
@@ -26,6 +33,9 @@ import nu.xom.Element;
  */
 public class WikidataSparql {
 
+	private static final String PERSONAL = "_";
+	private static final String Q = "q_";
+	private static final String P = "p_";
 	private static final Logger LOG = LogManager.getLogger(WikidataSparql.class);
 	private static final String MUST = "must";
 	private static final String SHOULD = "should";
@@ -56,12 +66,13 @@ public class WikidataSparql {
 	private List<String> amiNames;
 	private List<String> amiValues;
 	private Element amiEntry;
+	private Map<String, String> sparqlNameByAmiName;
 	
 	public WikidataSparql(DictionaryCreationTool dictionaryCreationTool) {
 		this.dictionaryCreationTool = dictionaryCreationTool;
 	}
 	private void checkNameMappings() {
-		amiNames = new ArrayList<String>(dictionaryCreationTool.sparqlNameByAmiName.keySet());
+		amiNames = new ArrayList<String>(this.sparqlNameByAmiName.keySet());
 		Collections.sort(amiNames);
 		checkAmiNamesContain(MUST_AMI, MUST);
 		checkAmiNamesContain(SHOULD_AMI, SHOULD);
@@ -71,7 +82,7 @@ public class WikidataSparql {
 	}
 
 	private void checkWikidataVariables() {
-		amiValues = new ArrayList<String>(dictionaryCreationTool.sparqlNameByAmiName.values());
+		amiValues = new ArrayList<String>(this.sparqlNameByAmiName.values());
 		searchValuesInTarget(amiValues, "sparqlVariables", sparqlVariables);
 		// __synonyms also create amiValues
 		amiValues.addAll(dictionaryCreationTool.synonymList);
@@ -90,9 +101,9 @@ public class WikidataSparql {
 		for (String amiName : amiNames) {
 			if (ALL_AMI.contains(amiName)) {
 				// OK
-			} else if (amiName.startsWith("p_") || amiName.startsWith("q_")) {
+			} else if (amiName.startsWith(P) || amiName.startsWith(Q)) {
 				// OK
-			} else if (amiName.startsWith("_")) {
+			} else if (amiName.startsWith(PERSONAL)) {
 				// OK
 			} else {
 				LOG.warn("unknown ami name: " + amiName);
@@ -149,8 +160,13 @@ public class WikidataSparql {
 		sparqlXml = XMLUtil.parseQuietlyToRootElement(inputStream, CMineUtil.UTF8_CHARSET);
 		sparqlVariables = XMLUtil.getQueryValues(sparqlXml, 
 				"./*[local-name() = 'head']/*[local-name()='variable']/@name");
-		checkNameMappings();
-		DictionaryCreationTool.LOG.info("sparql names " + sparqlVariables);
+		if (this.sparqlNameByAmiName.size() > 0) {
+			checkNameMappings();
+			DictionaryCreationTool.LOG.info("sparql names " + sparqlVariables);
+		} else {
+			LOG.warn("no --wikidatasparqlmap: Relying on user names for mapping");
+			createIdentityMapping();
+		}
 		sparqlResultList = XMLUtil.getQueryElements(sparqlXml, "./*[local-name()='results']/*[local-name()='result']");
 		DictionaryCreationTool.LOG.info("results " + sparqlResultList.size());
 		
@@ -161,7 +177,7 @@ public class WikidataSparql {
 				if (amiName.contentEquals(DefaultAMIDictionary.SYNONYM)) {
 					continue;
 				}
-				String sparqlName = dictionaryCreationTool.sparqlNameByAmiName.get(amiName);
+				String sparqlName = this.sparqlNameByAmiName.get(amiName);
 				if (sparqlName != null) {
 					String sparqlValue = getValueByBindingName(sparqlResult, sparqlName);
 					if (sparqlValue != null) {
@@ -174,30 +190,23 @@ public class WikidataSparql {
 		}
 	}
 
+	/** creates map with keys identical to sparqlVariables.
+	 * Useful when --wikidataSparqlmap is not given;
+	 */
+	private void createIdentityMapping() {
+		sparqlNameByAmiName = new HashMap<>();
+		amiNames = new ArrayList<>();
+		for (String sparqlVariable : sparqlVariables) {
+			sparqlNameByAmiName.put(sparqlVariable, sparqlVariable);
+			amiNames.add(sparqlVariable);
+		}
+	}
+	
 	private void addDesc() {
 		Element desc = new Element(DefaultAMIDictionary.DESC);
 		desc.appendChild("Created from SPARQL query");
 		dictionaryCreationTool.simpleDictionary.getDictionaryElement().appendChild(desc);
 	}
-
-//	private void addUnknownAttributes(DictionaryCreationTool dictionaryCreationTool, Element entry, Element result) {
-//		for (Element el : result.getChildElements()) {
-//	//			<binding name='iso3166_code'>
-//	//			<literal>AL</literal>
-//	//		</binding>
-//			if (el.getLocalName().contentEquals(DictionaryCreationTool.BINDING)) {
-//				String newAttName = el.getAttributeValue(DictionaryCreationTool.NAME);
-//				if (DictionaryCreationTool.ALLOWED_NAMES.contains(newAttName)) {
-//					DictionaryCreationTool.LOG.info("skipped "+newAttName);
-//				} else {
-//					DictionaryCreationTool.LOG.info("copied unknown attribute "+newAttName);
-//					String val = el.getValue().trim();
-//					entry.addAttribute(new Attribute(newAttName, val));
-//					addSynonym(entry, val);
-//				}
-//			}
-//		}
-//	}
 
 	/**
 		<result>
@@ -270,8 +279,10 @@ public class WikidataSparql {
 		  <literal xml:lang='en'>CA, ca, CDN, can, CAN, British North America, 🇨🇦, Dominion of Canada</literal>
 		</binding>
 		*/
-		for (String synonymRef : dictionaryCreationTool.synonymList) {
-			splitAndAdd(result, synonymRef);
+		if (dictionaryCreationTool.synonymList != null) {
+			for (String synonymRef : dictionaryCreationTool.synonymList) {
+				splitAndAdd(result, synonymRef);
+			}
 		}
 	}
 
@@ -301,20 +312,6 @@ public class WikidataSparql {
 		return true;
 	}
 
-//	private void addMappedFieldsToDictionary(DictionaryCreationTool dictionaryCreationTool, Element entry, Element sparqlResult, String amiName, String nameInDictionary, boolean lastField) {
-//			String sparqlName = dictionaryCreationTool.sparqlNameByAmiName.get(amiName);
-//			if (sparqlName == null) {
-//				DictionaryCreationTool.LOG.error("cannot find mapping for " + amiName);
-//			}
-//			String value = getValueByBindingName(sparqlResult, sparqlName);
-//			if (value == null) {
-//				throw new RuntimeException("Cannot find value for " + sparqlName + " in " + sparqlResult.toXML());
-//			}
-//			if (lastField) {
-//				value = value.substring(value.lastIndexOf("/") + 1);
-//			}
-//			entry.addAttribute(new Attribute(nameInDictionary, value));
-//		}
 
 	void readSparqlCsv(InputStream inputStream) {
 		/**
@@ -350,9 +347,30 @@ http://www.wikidata.org/entity/Q27176808,LSM-12060,100686
 			wikidataId = wikidataId.substring(wikidataId.lastIndexOf("/") + 1);
 			entry.addAttribute(new Attribute(DictionaryCreationTool.WIKIDATA, wikidataId));
 			entry.addAttribute(new Attribute(DictionaryCreationTool.TERM, dictionaryCreationTool.termList.get(i)));
-			System.out.println(entry.toXML());
-//			addUnknownAttributes(entry, result);
+			LOG.trace(entry.toXML());
 			dictionaryCreationTool.simpleDictionary.getDictionaryElement().appendChild(entry);
 		}
 	}
+	public void copy(Map<String, String> sparqlNameByAmiName) {
+		this.sparqlNameByAmiName = new HashMap<>();
+		for (String key : sparqlNameByAmiName.keySet()) {
+			this.sparqlNameByAmiName.put(key, sparqlNameByAmiName.get(key));
+		}
+		// TODO Auto-generated method stub
+		
+	}
+	
+	/** queries Wikidata/Sparql 
+	 * 
+	 * @param sparqQuery as entered in GUI
+	 * @return
+	 * @throws MalformedURLException
+	 * @throws IOException
+	 */
+	public static String queryWikidata(String sparqQuery) throws MalformedURLException, IOException {
+		String urlS = DictionaryCreationTool.WIKIDATA_SPARQL_ENDPOINT + Util.URLEncode(sparqQuery);
+		return IOUtils.toString(new URL(urlS).openStream(), Charset.forName("UTF-8"));
+	}
+	
+
 }

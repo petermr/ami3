@@ -69,8 +69,12 @@ import picocli.CommandLine.Option;
 @Command(
 name = "section",
 description = {
-		"Splits XML files into sections using XPath.",
-		"Creates names from titles of sections (or 'elem<num>.xml' if cannot)%n"
+		"Splits all divisions in XML files into sections <using XPath.",
+		"`front` and `back` uses JATS markup; `body` uses HTML. Main elements are `div` and `p`. "
+		+ "Titles are heuristic: `@class`, `./<title>` `@id` are all used. Sometimes leading bold sentences "
+		+ " or phrases can be used."
+		
+		+ "Creates names from titles of sections (or 'elem<num>.xml' if cannot)%n"
 				+ "optionally writes HTML (slow) using specified stylesheet%n"
 				+ "examples:%n"
 				+ "    --sections ALL --html nlm2html%n"
@@ -79,6 +83,9 @@ description = {
 				+ "%n"
 				+ "    --forcemake --extract table fig --summary figure table "
 				+ "        // this seems to create sections OK, use this?"
+				+ "%n%n"
+				+ "Wiki Documentation: https://github.com/petermr/ami3/wiki/ami-section"
+				
 })
 public class AMISectionTool extends AbstractAMITool {
 	

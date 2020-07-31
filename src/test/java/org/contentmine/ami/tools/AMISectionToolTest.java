@@ -69,9 +69,9 @@ public class AMISectionToolTest extends AbstractAMITest {
 	private static final Logger LOG = LogManager.getLogger(AMISectionToolTest.class);
 @Test
 	public void testHelp() {
-		String args = ""
+		String args = " section --help";
 			;
-		new AMISectionTool().runCommands(args);
+		AMI.execute(AMISectionTool.class, args);
 	}
 	
 	@Test
@@ -82,7 +82,7 @@ public class AMISectionToolTest extends AbstractAMITest {
 				+ " " + SectionTag.ABSTRACT
 				+ " " + SectionTag.METHODS
 			;
-		new AMISectionTool().runCommands(args);
+		AMI.execute(AMISectionTool.class, args);
 	}
 	
 	@Test
@@ -154,7 +154,7 @@ public class AMISectionToolTest extends AbstractAMITest {
 //				+ " --write false"
 			;
 		AMI.execute(AMISectionTool.class, args);
-//		new AMISectionTool().runCommands(args);
+//		AMI.execute(AMISectionTool.class, args);
 	}
 
 
@@ -165,7 +165,7 @@ public class AMISectionToolTest extends AbstractAMITest {
 				+ "-p " + testZikaDir
 				+" --sections ALL"
 			;
-		new AMISectionTool().runCommands(args);
+		AMI.execute(AMISectionTool.class, args);
 	}
 	
 	@Test
@@ -178,7 +178,7 @@ public class AMISectionToolTest extends AbstractAMITest {
 				+ " --summary table fig supplementary"
 				+ " --forcemake"
 			;
-//		new AMISectionTool().runCommands(args);
+//		AMI.execute(AMISectionTool.class, args);
 		AMI.execute(args);
 	}
 	
@@ -244,7 +244,7 @@ public class AMISectionToolTest extends AbstractAMITest {
 				+ " --html nlm2html"
 //				+ " --write false"
 			;
-		new AMISectionTool().runCommands(args);
+		AMI.execute(AMISectionTool.class, args);
 	}
 
 	@Test
@@ -264,7 +264,7 @@ public class AMISectionToolTest extends AbstractAMITest {
 
 			;
 		AMI.execute(args);
-//		new AMISectionTool().runCommands(args);
+//		AMI.execute(AMISectionTool.class, args);
 	}
 
 	@Test
@@ -278,7 +278,7 @@ public class AMISectionToolTest extends AbstractAMITest {
 				+ " --summary fig table"  
 			;
 		AMI.execute(args);
-//		new AMISectionTool().runCommands(args);
+//		AMI.execute(AMISectionTool.class, args);
 	}
 
 	@Test
@@ -290,7 +290,7 @@ public class AMISectionToolTest extends AbstractAMITest {
 				+ " --boldsections"
 
 			;
-		new AMISectionTool().runCommands(args);
+		AMI.execute(AMISectionTool.class, args);
 	}
 
 	@Test
@@ -303,7 +303,7 @@ public class AMISectionToolTest extends AbstractAMITest {
 				+ " --summary fig table "
 			;
 
-		new AMISectionTool().runCommands(args);
+		AMI.execute(AMISectionTool.class, args);
 	}
 
 
@@ -320,7 +320,7 @@ public class AMISectionToolTest extends AbstractAMITest {
 				+" --sections ALL"
 //				+ " -v"
 			;
-		new AMISectionTool().runCommands(args);
+		AMI.execute(AMISectionTool.class, args);
 	}
 	
 

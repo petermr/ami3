@@ -32,9 +32,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
+import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.net.URLEncoder;
+import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -3505,6 +3508,16 @@ s = s.replaceAll("(?U)\\s+", replace);
 			}
 		}
 		return sb.toString();
+	}
+
+	/** uses URLEncode and assumes UTF-8 */
+	
+	public static String URLEncode(String s) {
+		try {
+			return URLEncoder.encode(s, "UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			throw new RuntimeException("bad encoding", e);
+		}
 	}
 	
 	private static boolean match(String s, int imain, char[] chars) {

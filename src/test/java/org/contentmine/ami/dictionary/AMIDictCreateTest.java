@@ -10,22 +10,21 @@ import java.util.List;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.contentmine.ami.dictionary.WikidataSparqlBuilder.WikidataLabel;
 import org.contentmine.ami.tools.AMIDict;
 import org.contentmine.ami.tools.AbstractAMIDictTest;
 import org.contentmine.ami.tools.AbstractAMIDictTool;
 import org.contentmine.ami.tools.AbstractAMIDictTool.DictionaryFileFormat;
+import org.contentmine.ami.tools.AbstractAMIDictTool.InputFormat;
 import org.contentmine.ami.tools.AbstractAMITest;
 import org.contentmine.ami.tools.dictionary.DictionaryCreationTool;
+import org.contentmine.ami.tools.dictionary.WikidataSparql;
 import org.contentmine.ami.tools.download.CurlDownloader;
-import org.contentmine.eucl.testutil.TestUtils;
-import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlA;
 import org.contentmine.norma.NAConstants;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-
-import nu.xom.Element;
 
 
 /** tests AMIDictionary
@@ -81,7 +80,7 @@ private static final File TARGET = new File("target");
 		File directory = new File("/Users/pm286/ContentMine/dictionary/dictionaries/chem");
 		String dictionary = "fungicides2";
 		String args =
-			"dictionary " +
+			" -v " +
 			"create " +
 			" --directory " + directory + " " +
             " --dictionary " + dictionary +
@@ -161,7 +160,7 @@ private static final File TARGET = new File("target");
 	public void testWikipediaTables() throws IOException {
 		String dict = " chem.protpredict";
 		String args =
-			"dictionary " +
+			" -v " +
 			"create " +
            " --input https://en.wikipedia.org/wiki/List_of_protein_structure_prediction_software " +
            " --informat wikitable " +
@@ -183,7 +182,7 @@ private static final File TARGET = new File("target");
 		String dict = "soc." + dictname;
 		File dictFile = new File(DICTIONARY_DIR, dictname+".xml");
 		String args =
-			"dictionary " +
+			" -v " +
 			"create " +
            " --input https://en.wikipedia.org/wiki/List_of_social_networking_websites " +
            " --informat wikitable " +
@@ -202,7 +201,7 @@ private static final File TARGET = new File("target");
 		String dict = "proteinStructure";
 		File dictFile = new File(DICTIONARY_DIR, dict+".xml");
 		String args =
-				"dictionary " +
+				" -v " +
 			"create " +
            " --input https://en.wikipedia.org/wiki/Protein_structure " +
            " --informat wikipage " +
@@ -217,7 +216,7 @@ private static final File TARGET = new File("target");
 	public void testWikipediaPageAedesIT() throws IOException {
 		String dict = "animal.aedes";
 		String args =
-			"dictionary " +
+			" -vv  " +
 			"create " +
            " --input https://en.wikipedia.org/wiki/Aedes_aegypti " +
            " --informat wikipage " +
@@ -235,7 +234,7 @@ private static final File TARGET = new File("target");
 		String dict = "med.childhoodobesity";
 		String col = "Condition";
 		String args =
-			"dictionary " +
+			" -v " +
 			"create " +
            " --input https://en.wikipedia.org/wiki/Childhood_obesity " +
            " --informat wikitable" +
@@ -252,7 +251,7 @@ private static final File TARGET = new File("target");
 	public void testWikipediaPageReindeerIT() throws IOException {
 		String dict = "animal.reindeer";
 		String args =
-			"dictionary " +
+			" -v " +
 			"create " +
            " --input https://en.wikipedia.org/wiki/Category:Reindeer " +
 			"--informat wikipage " +
@@ -267,7 +266,7 @@ private static final File TARGET = new File("target");
 	public void testWikipediaPageMonoterpenesIT() throws IOException {
 		String dict = "chem.monoterpenes";
 		String args =
-			"dictionary " +
+			" -v " +
 			"create " +
            " --input https://en.wikipedia.org/wiki/Category:Monoterpenes " +
 			"--informat wikipage " +
@@ -283,7 +282,7 @@ private static final File TARGET = new File("target");
 		String dict = "med.ntd";
 		String whoCol = ".*WHO.*CDC.*";
 		String args =
-				"dictionary " +
+				" -v " +
 			"create " +
            " --input https://en.wikipedia.org/wiki/Neglected_tropical_diseases " +
            " --informat wikitable " +
@@ -303,7 +302,7 @@ private static final File TARGET = new File("target");
 		String dict = "med.ntd1";
 		String searchCol = "PLOS.*";
 		String args =
-				"dictionary " +
+				" -v " +
 			"create " +
            " --input https://en.wikipedia.org/wiki/Neglected_tropical_diseases " +
            " --informat wikitable " +
@@ -320,7 +319,7 @@ private static final File TARGET = new File("target");
 	public void testWikipediaHumanInsectVectorsIT() throws IOException {
 		String dict = "animal.insectvectorshuman";
 		String args =
-				"dictionary " +
+				" -v " +
 			"create " +
            " --input https://en.wikipedia.org/wiki/Category:Insect_vectors_of_human_pathogens " +
            " --informat wikicategory " +
@@ -336,7 +335,7 @@ private static final File TARGET = new File("target");
 	public void testWikipediaOcimumIT() throws IOException {
 		String dict = "plants.ocimumten";
 		String args =
-				"dictionary " +
+				" -v " +
 			"create " +
            " --input https://en.wikipedia.org/wiki/Ocimum_tenuiflorum " +
            " --informat wikipage " +
@@ -353,7 +352,7 @@ private static final File TARGET = new File("target");
 	public void testCreateFromTerms() {
 		String dict = "phys.crystalsystem";
 		String args =
-				"dictionary " +
+				" -v " +
 			"create " +
            " --terms cubic,tetragonal,hexagonal,trigonal,orthorhombic,monoclinic,triclinic " +
            " --dictionary " +dict +
@@ -367,7 +366,7 @@ private static final File TARGET = new File("target");
 		
 		String dict = "animal.edgemammals";
 		String args =
-				"dictionary " +
+				" -v " +
 			"create " +
            " --input " +mammalsCSV.getAbsolutePath() +
            " --informat csv " +
@@ -385,10 +384,10 @@ private static final File TARGET = new File("target");
 	}
 
 	@Test
-	public void testWikipediaConservation1() throws IOException {
+	public void testWikipediaConservationLOG4J() throws IOException {
 		String dict = "bio.conservation";
 		String args =
-				"dictionary " +
+				" -v " +
 			"create " +
            " --hreftext " + // currently needed to enforce use of names
 			"--input https://en.wikipedia.org/wiki/Conservation_biology " +
@@ -405,9 +404,9 @@ private static final File TARGET = new File("target");
 	@Test
 	public void testWikipediaIndianSpice() throws IOException {
 		String dict = "plants.spice";
-		String searchCol = "Standard English";
+		String searchCol = "Standard\\sEnglish";
 		String args =
-				"dictionary " +
+				"-vv " +
 			"create " +
            " --input https://en.wikipedia.org/wiki/List_of_Indian_spices " +
            " --informat wikitable " +
@@ -423,7 +422,7 @@ private static final File TARGET = new File("target");
 	public void testWikipediaWikipage() throws IOException {
 		String dict = "plants.virus";
 		String args =
-				"dictionary " +
+				" -v " +
 			"create " +
            " --hreftext " + // currently needed to enforce use of names
 			"--input https://en.wikipedia.org/wiki/Plant_virus " +
@@ -438,75 +437,75 @@ private static final File TARGET = new File("target");
 	@Test
 	@Ignore // MUST GIVE OUTPUT DIRECTORY
 	public void testWikipediaWikiTemplateOnline() throws IOException {
-		String dict = "respiratory_pathology";
-		
-		String args =
-				"dictionary " +
+		String dictionary = "respiratory_pathology";
+		File outputDir = createOutputDir(dictionary);
+		String args = " -vv" +
 			"create " +
+	       " --dictionary " + dictionary +
 		   " --input https://en.wikipedia.org/wiki/Template:Respiratory_pathology " +
            " --informat wikitemplate " +
-           " --dictionary " + dict +
            " --outformats html,xml " +
            " --wikilinks"
 			;
 		AMIDict.execute(args);
-//		Assert.assertTrue("file exists "+dictionaryFile, dictionaryFile.exists());
+		AbstractAMITest.writeOutputAndCompare(TEST_DICTIONARY, dictionary, outputDir);
 	}
 
-	@Test
-	public void testCreateFromWikipediaCategory() {
-		String categoryString = "https://en.wikipedia.org/wiki/Category:Human_migration";
-		String cmd = "-v"
-				+ " --dictionary hummig"
-				+ " --directory=target/dictionary/"
-				+ " --input=" + categoryString 
-				+ " create"
-				+ " --informat=wikicategory";
-		AbstractAMIDictTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
-	}
+//	@Test
+//	public void testCreateFromWikipediaCategory() {
+//		String categoryString = "https://en.wikipedia.org/wiki/Category:Human_migration";
+//		String cmd = "-v"
+//				+ " --dictionary hummig"
+//				+ " --directory=target/dictionary/"
+//				+ " --input=" + categoryString 
+//				+ " create"
+//				+ " --informat=wikicategory";
+//		AbstractAMIDictTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
+//	}
 	
 	@Test
+	/** WORKS 2020-07 */
 	public void testCreateFromWikidataSparqlCSV() {
-		String cmd = "-v"
-				+ " --dictionary chemcompound"
-				+ " --directory=target/dictionary/"
-				+ " --input=" + new File(TEST_DICTIONARY, "chemistry.csv")
-				+ " create"
-				+ " --informat=wikisparqlcsv";
-		AbstractAMIDictTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
+		String dictionary = "chemistry10";
+		String informat = "wikisparqlcsv";
+		testWikidataSparql(dictionary, informat);
 	}
-	
+
+//	@Test
+//	@Ignore
+//	public void testCreateFromWikidataSparqlXml() {
+//		String string = "country";
+//		String outputDir = "target/dictionary/";
+//		String cmd = "-v"
+//				+ " --dictionary " + string
+//				+ " --directory=" + outputDir
+//				+ " --input=" + new File(TEST_DICTIONARY, "country_sparql.xml")
+//				+ " create"
+//				+ " --informat=wikisparqlxml";
+//		System.out.println("cmd>"+cmd);
+//		Assert.assertEquals("cmd",  "-v --dictionary country --directory=target/dictionary/ --input=/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/dictionary/country_sparql.xml create --informat=wikisparqlxml",
+//				cmd);
+//		AbstractAMIDictTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
+//	}
+
+	/** no wikidatasparqlmap given so dictionary names not checked.
+	 * NOT recommended
+	 * 
+	 */
 	@Test
-	public void testCreateFromWikidataSparqlXml() {
-		String cmd = "-v"
-				+ " --dictionary country"
-				+ " --directory=target/dictionary/"
-				+ " --input=" + new File(TEST_DICTIONARY, "country_sparql.xml")
-				+ " create"
-				+ " --informat=wikisparqlxml";
-		System.out.println("cmd>"+cmd);
-		Assert.assertEquals("cmd",  "-v --dictionary country --directory=target/dictionary/ --input=/Users/pm286/workspace/cmdev/ami3/src/test/resources/org/contentmine/ami/dictionary/country_sparql.xml create --informat=wikisparqlxml",
-				cmd);
-		AbstractAMIDictTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
-	}
-	
-	@Test
-	public void testCreateFromWikidataSparqlTDD() {
-		File inputFile = new File(TEST_DICTIONARY, "country_sparql1.xml");
+	public void testCreateFromWikidataSparqlNoMap() {
+		String dictionary = "country1";
+		File inputFile = new File(TEST_DICTIONARY, dictionary + ".sparql.xml");
 		File outputDir = new File("target/dictionary/");
-		System.out.println("input "+inputFile);
 		String cmd = "-vvv"
-				+ " --dictionary country"
+				+ " --dictionary " + dictionary
 				+ " --directory=" + outputDir
 				+ " --input=" + inputFile
 				+ " create"
-				+ " --informat=wikisparqlxml";
-		AbstractAMIDictTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
-		double eps = 0.001;
-		boolean stripWhite = true;
-		Element dictExpected = XMLUtil.parseQuietlyToRootElement(new File(TEST_DICTIONARY, "country1.dict.expected.xml"));
-		Element dictActual = XMLUtil.parseQuietlyToRootElement(new File(outputDir, "country.xml"));
-		TestUtils.assertEqualsIncludingFloat("country dict", dictExpected, dictActual, stripWhite, eps);
+				+ " --informat=wikisparqlxml"
+				;
+		AMIDict.execute(cmd);
+		AbstractAMITest.writeOutputAndCompare(TEST_DICTIONARY, dictionary, outputDir);
 	}
 	
 	/**
@@ -560,18 +559,18 @@ private static final File TARGET = new File("target");
 				+ "_icd10=ICDcode"
 				+ " --synonyms=DiseaseAltLabel"
 				;
-		AbstractAMIDictTool dictionaryTool = AMIDict.execute(DictionaryCreationTool.class, cmd);
+		AMIDict.execute(cmd);
 		AbstractAMITest.writeOutputAndCompare(TEST_DICTIONARY, dictionary, outputDir);
 		
 		/**
 		 * 		String cmd = "
-		 * -vvv --dictionary mydictionary --directory= myOutputDir --input= + myinputFile \
-				 create \
-				 --informat=wikisparqlxml \
-				 --sparqlmap \
-				wikidata=Disease,p31_instanceOf=instance%20of,wikidataAltLabel=DiseaseAltLabel,\
-				term=DiseaseLabel,name=DiseaseLabel,_icd10=ICDCode\
-				 --synonyms=DiseaseAltLabel
+ --dictionary mydictionary --directory= myOutputDir --input= + myinputFile \
+	 create \
+	 --informat=wikisparqlxml \
+	 --sparqlmap \
+	wikidata=Disease,p31_instanceOf=instanceofLabel,wikidataAltLabel=DiseaseAltLabel,\
+	term=DiseaseLabel,name=DiseaseLabel,_icd10=ICDCode\
+	 --synonyms=DiseaseAltLabel
 				 "
 				;
 
@@ -655,7 +654,7 @@ private static final File TARGET = new File("target");
 		htmlS = htmlS.replaceAll(" ", "%20"); // escape with percentEncoding
 		
 		String args =
-				"dictionary " +
+				" -v " +
 			"create " +
 //		   " --input https://en.wikipedia.org/wiki/Template:Respiratory_pathology " +
            " --informat wikitemplate " +
@@ -677,7 +676,7 @@ private static final File TARGET = new File("target");
 		File dictionaryDir = new File(new File(fileroot), type);
 		String htmlFilename = fileroot + "." + type;
 		String args =
-				"dictionary " +
+				" -v " +
 				"create " +
 			   " --input " + htmlFilename +
 			   " --informat wikitemplate " +
@@ -729,7 +728,7 @@ private static final File TARGET = new File("target");
 			String dictionaryTop = "/Users/pm286/projects/openVirus/dictionaries/";
 			String wptype = "mwk";
 			String args =
-					"dictionary " +
+					" -v " +
 					"create " +
 					" --directory " + dictionaryTop +
 					" --outformats html,xml " +
@@ -761,7 +760,7 @@ private static final File TARGET = new File("target");
 	public void testCreateVirusesFromTerms() {
 		String dict = "plants.viruses";
 		String args =
-			"dictionary " +
+			" -v " +
 			"create " +
            " --terms Cucumovirus,Tymovirus,Bromovirus,Potexvirus,Ilarvirus,Nepovirus,Carmovirus,Potyvirus,Potyvirus,"
 					+ "Badnavirus,Tymovirus,Tobravirus,Closterovirus,Necrovirus,TNsatV-like satellite,Nepovirus,Nepovirus,"
@@ -779,7 +778,7 @@ private static final File TARGET = new File("target");
 	@Test
 	public void testTranslateJSONtoXML() {
 		String args =
-			"dictionary " +
+			" -v " +
 			"translate " +
            " --directory src/test/resources/org/contentmine/ami/dictionary " +
            " --dictionary alliaceae.json buxales.json " +
@@ -791,7 +790,7 @@ private static final File TARGET = new File("target");
 	@Test
 	public void testTranslateJSONtoXMLAbsolute() {
 		String args =
-			"dictionary " +
+			" -v " +
 			"translate" +
            " --dictionary src/test/resources/org/contentmine/ami/dictionary/alliaceae.json " +
 			                "src/test/resources/org/contentmine/ami/dictionary/buxales.json " +
@@ -803,7 +802,7 @@ private static final File TARGET = new File("target");
 	@Test
 	public void testTranslateJSONtoXMLAbsoluteWikidata() {
 		String args =
-			"dictionary " +
+			" -v " +
 			"translate " +
            " --dictionary src/test/resources/org/contentmine/ami/dictionary/alliaceae.json " +
 			                "src/test/resources/org/contentmine/ami/dictionary/buxales.json " +
@@ -818,7 +817,7 @@ private static final File TARGET = new File("target");
 	public void testWikidataLookup() {
 		String dict = "plants.misc";
 		String args =
-			"dictionary " +
+			" -v " +
 			"create " +
            " --terms Buxus sempervirens " +
            " --dictionary " + dict +
@@ -833,7 +832,7 @@ private static final File TARGET = new File("target");
 	@Ignore // DIRECTORY REQUIRED
 	public void testListOfRiceVarieties() {
 		String args =
-				"dictionary " +
+				" -v " +
 				"create"
 				+ " --input https://en.wikipedia.org/wiki/List_of_rice_varieties"
 				+ " --informat wikipage"
@@ -845,7 +844,7 @@ private static final File TARGET = new File("target");
 	
 	public void testCreateFromFileWithListOfTerms() {
 		String args =
-				"dictionary " +
+				" -v " +
 				"create"
 				+ " --input dictionaries/electrochem.txt"
 //				+ " --informat wikipage"
@@ -859,7 +858,7 @@ private static final File TARGET = new File("target");
 	@Test
 	public void testWikipediaPageOcimum() {
 		String args =
-				"dictionary " +
+				" -v " +
 				"create"
 				+ " --informat wikipage"
 				+ " --hreftext"
@@ -1046,17 +1045,113 @@ private static final File TARGET = new File("target");
 		Assert.assertEquals("aList "+aList.size(), 140, aList.size());
 	}
 	
+	/** direct query of wikidata
+	 * 
+	 */
+	@Test
+	public void testWikidataQuery0() throws Exception {
+		String query = "SELECT ?dob WHERE {wd:Q42 wdt:P569 ?dob.}";
+		String out = WikidataSparql.queryWikidata(query);
+		out = out.replaceAll("\\t", "").replaceAll("\n", ""); // remove non-significant whitespace
+		Assert.assertEquals("<?xml version='1.0' encoding='UTF-8'?><sparql xmlns='http://www.w3.org/2005/sparql-results#'>"
+				+ "<head><variable name='dob'/></head>"
+				+ "<results><result><binding name='dob'>"
+				+ "<literal datatype='http://www.w3.org/2001/XMLSchema#dateTime'>1952-03-11T00:00:00Z</literal>"
+				+ "</binding></result></results></sparql>", out);
+	}
+	
+	/** direct query of wikidata
+	 * needs to be online
+	 */
+	@Test
+	public void testSimpleWikidataQuery() throws Exception {
+		String query = "SELECT ?dob WHERE {wd:Q42 wdt:P569 ?dob.}";
+		
+		String out = WikidataSparql.queryWikidata(query);
+		out = out.replaceAll("\\t", "").replaceAll("\n", ""); // remove non-significant whitespace
+		Assert.assertEquals("<?xml version='1.0' encoding='UTF-8'?><sparql xmlns='http://www.w3.org/2005/sparql-results#'>"
+				+ "<head><variable name='dob'/></head>"
+				+ "<results><result><binding name='dob'>"
+				+ "<literal datatype='http://www.w3.org/2001/XMLSchema#dateTime'>1952-03-11T00:00:00Z</literal>"
+				+ "</binding></result></results></sparql>", out);
+	}
+	
+	/**
+SELECT ?wikidata ?wikidataLabel ?wikidataDescription ?article WHERE {
+    ?wikidata wdt:P31 wd:Q3624078 .
+    SERVICE wikibase:label { 
+		bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en,hi"
+	}
+    OPTIONAL {
+      ?article schema:about ?wikidata .
+      ?article schema:inLanguage "en" .
+      ?article schema:isPartOf <https://en.wikipedia.org/> .
+
+    }
+} 
+LIMIT 10	 
+*/
+	/** direct query of wikidata
+	 * needs to be online
+	 */
+	@Test
+	public void testWikidataQuery() throws Exception {
+		WikidataSparqlBuilder wikidataSparqlBuilder = new WikidataSparqlBuilder();
+		wikidataSparqlBuilder.addSelect("?wikidata", 
+			WikidataLabel.DESCRIPTION, WikidataLabel.LABEL, WikidataLabel.ALT_LABEL);
+		wikidataSparqlBuilder.addSelect("?wikipedia");
+		
+		wikidataSparqlBuilder.addTriple("?wikidata", "P31", "Q3624078");
+		wikidataSparqlBuilder.addWikidataLink("?wikipedia", "?wikidata", "en");
+		wikidataSparqlBuilder.setLabelService("AUTO", "en");
+		wikidataSparqlBuilder.setLimit(3);
+		String query0 = wikidataSparqlBuilder.createQuery();
+		System.out.println(query0);
+		
+		String query = "SELECT ?wikidata ?wikidataLabel ?wikidataAltLabel ?wikidataDescription ?wikipedia WHERE {\n" + 
+				"    ?wikidata wdt:P31 wd:Q3624078 .\n" + 
+				"    SERVICE wikibase:label { \n" + 
+				"		bd:serviceParam wikibase:language \"[AUTO_LANGUAGE],en,hi\"\n" + 
+				"	}\n" + 
+				"    OPTIONAL {\n" + 
+				"      ?wikipedia schema:about ?wikidata .\n" + 
+				"      ?wikipedia schema:inLanguage \"en\" .\n" + 
+				"      ?wikipedia schema:isPartOf <https://en.wikipedia.org/> .\n" + 
+				"    }\n" + 
+				"} \n"
+				+ "LIMIT 3" + 
+				
+				
+				"";
+		
+		query = query0;
+		
+		String out = WikidataSparql.queryWikidata(query);
+		System.out.println(out);
+		out = out.replaceAll("\\t", "").replaceAll("\n", ""); // remove non-significant whitespace
+//		Assert.assertEquals("<?xml version='1.0' encoding='UTF-8'?><sparql xmlns='http://www.w3.org/2005/sparql-results#'>"
+//				+ "<head><variable name='dob'/></head>"
+//				+ "<results><result><binding name='dob'>"
+//				+ "<literal datatype='http://www.w3.org/2001/XMLSchema#dateTime'>1952-03-11T00:00:00Z</literal>"
+//				+ "</binding></result></results></sparql>", out);
+	}
+
+
+
+
+	// ============================== HELPERS ========================
+	// ============================== HELPERS ========================
 	// PRIVATE
-	private void downloadAndTest(File outputFile, String urlString, int minsize, int maxsize) throws IOException {
+	private static void downloadAndTest(File outputFile, String urlString, int minsize, int maxsize) throws IOException {
 		new CurlDownloader().setUrlString(urlString).setOutputFile(outputFile).run();
 		Assert.assertTrue("outputfile exists "+outputFile, outputFile.exists());
 		long sizeOf = FileUtils.sizeOf(outputFile);
 		Assert.assertTrue("outputfile size "+sizeOf+" / "+outputFile, sizeOf > minsize && sizeOf < maxsize);
 	}
 
-	private void createFromMediaWikiTemplate(String template, String fileTop, String wptype) {
+	private static void createFromMediaWikiTemplate(String template, String fileTop, String wptype) {
 		String args =
-				"dictionary " +
+				" -v " +
 				"create " +
 	           " --directory " + fileTop +
 	           " --outformats html,xml " +
@@ -1066,5 +1161,54 @@ private static final File TARGET = new File("target");
 				;
 		AMIDict.execute(args);
 	}
+	
+	/** convenience tester for creating Dictionaries from WikidataSparql
+	 * 
+	 * @param dictionary
+	 * @param informat
+	 */
+	private static void testWikidataSparql(String dictionary, String informat) {
+		String suffix = getInputSuffix(informat);
+		File inputFile = new File(TEST_DICTIONARY, dictionary + "." + suffix);
+		File outputDir = new File("target/dictionary/"+dictionary+"/");
+		String cmd = "-v"
+				+ " --dictionary "+dictionary
+				+ " --directory=" + outputDir
+				+ " --input=" + inputFile
+				+ " create"
+				+ " --informat=" + informat;
+		AMIDict.execute(cmd);
+		AbstractAMITest.writeOutputAndCompare(TEST_DICTIONARY, dictionary, outputDir);
+	}
+
+	private static String getInputSuffix(String informat) {
+/**		csv,
+		list,
+		mediawikitemplate,
+		wikisparqlcsv,
+		wikisparqlxml,
+		wikicategory,
+		wikipage,
+		wikitable,
+		wikitemplate,
+		*/
+
+		if (InputFormat.csv.toString().contentEquals(informat)) {
+			return "csv";
+		}
+		if (InputFormat.wikisparqlcsv.toString().contentEquals(informat)) {
+			return "csv";
+		}
+		if (InputFormat.wikisparqlxml.toString().contentEquals(informat)) {
+			return "xml";
+		}
+		return null;
+	}
+	
+	private File createOutputDir(String dictionary) {
+		return new File("target/dictionary/", dictionary+"/");
+	}
+
+
 
 }

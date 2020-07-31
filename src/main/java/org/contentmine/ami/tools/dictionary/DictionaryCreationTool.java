@@ -84,6 +84,8 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	private static final String CM_PREFIX = "CM.";
 	private static final String WIKITABLE = "wikitable";
 
+	public final static String WIKIDATA_SPARQL_ENDPOINT = "https://query.wikidata.org/sparql?query=";
+
 //	final static List<String> ALLOWED_NAMES =  Arrays.asList(new String[] {
 //			NAME,TERM,WIKIPEDIA,WIKIDATA_ALT_LABEL,WIKIDATA_LABEL 
 //	});
@@ -165,7 +167,9 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 			+ "Mandatory for wikisparql inputs"
 			
 			) 
-	Map<String, String> sparqlNameByAmiName = new HashMap<>();
+	/** WikidataSparql may modify this, so force it to copy it */
+	private Map<String, String> sparqlNameByAmiName = new HashMap<>();
+	
 	
 	@Option(names = {"--synonyms"},
 			description = "synonyms retrived from source. Syntax depends on source type."
@@ -239,11 +243,12 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		     new ArrayList<WikiLink>(Arrays.asList(this.wikiLinks));
 	}
 
-private void getOrCreateWikidataSparql() {
-	if (wikidataSparql == null) {
-		wikidataSparql = new WikidataSparql(this);
+	private void getOrCreateWikidataSparql() {
+		if (wikidataSparql == null) {
+			wikidataSparql = new WikidataSparql(this);
+			wikidataSparql.copy(sparqlNameByAmiName);
+		}
 	}
-}
 
 	private void parseSparql(WikidataSparql wikidataSparql) {
 		if (sparqlNameByAmiName == null) {

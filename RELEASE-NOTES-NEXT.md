@@ -1,7 +1,8 @@
 ## Summary
 
-This is a template and should be replaced by actual release notes...
+Addition of `amidict create` from Wikidata SPARQL
 
 ## Changes in this Release
-- First Change
-- Second Change
+- added submission of Wikidata queries the retrieve dictionary items and their labels
+- added `AbstractAMITest.writeOutputAndCompare(` XML comparison test (mainly regression test)
+
