@@ -1,3 +1,13 @@
+# ami v2020.07.31_13.04.35
+## Summary
+
+Added WikidataSparql queries to `amidict`
+
+## Changes in this Release
+- Added WikidataSparql queries to `amidict`
+- slowly linking `picocli` help to Wiki
+
+
 # ami v2020.07.31_12.59.11
 ## Summary
 
