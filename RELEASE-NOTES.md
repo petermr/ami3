@@ -1,3 +1,13 @@
+# ami v2020.07.31_12.59.11
+## Summary
+
+Addition of `amidict create` from Wikidata SPARQL
+
+## Changes in this Release
+- added submission of Wikidata queries the retrieve dictionary items and their labels
+- added `AbstractAMITest.writeOutputAndCompare(` XML comparison test (mainly regression test)
+
+
 # ami v2020.07.28_20.33.15
 ## Summary
 
