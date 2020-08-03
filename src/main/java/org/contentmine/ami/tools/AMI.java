@@ -23,6 +23,7 @@ import picocli.CommandLine.Option;
 import picocli.CommandLine.ParameterException;
 import picocli.CommandLine.ParseResult;
 import picocli.CommandLine.Spec;
+import picocli.jansi.graalvm.AnsiConsole;
 
 import java.io.File;
 import java.io.PrintWriter;
@@ -119,7 +120,10 @@ public class AMI implements Runnable {
 	}
 
 	public static void main(String... args) {
-		int exitCode = createCommandLine().execute(logArgs(args));
+		int exitCode;
+		try (AnsiConsole ansi = AnsiConsole.windowsInstall()) { // enable colors on Windows
+			exitCode = createCommandLine().execute(logArgs(args));
+		}
 		if (System.getProperty("ami.no.exit") == null) {
 			System.exit(exitCode);
 		}

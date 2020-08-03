@@ -34,6 +34,7 @@ import picocli.CommandLine.Model.CommandSpec;
 import picocli.CommandLine.Option;
 import picocli.CommandLine.ParameterException;
 import picocli.CommandLine.Spec;
+import picocli.jansi.graalvm.AnsiConsole;
 
 @Command(name = "amidict",
 		description = {
@@ -81,7 +82,10 @@ public class AMIDict implements Runnable {
 	}
 
 	public static void main(String... args) {
-		int exitCode = createCommandLine().execute(logArgs(args));
+		int exitCode;
+		try (AnsiConsole ansi = AnsiConsole.windowsInstall()) { // enable colors on Windows
+			exitCode = createCommandLine().execute(logArgs(args));
+		}
 		if (System.getProperty("ami.no.exit") == null) {
 			System.exit(exitCode);
 		}
