@@ -20,6 +20,7 @@ import org.contentmine.ami.tools.AbstractAMITest;
 import org.contentmine.ami.tools.dictionary.DictionaryCreationTool;
 import org.contentmine.ami.tools.dictionary.WikidataSparql;
 import org.contentmine.ami.tools.download.CurlDownloader;
+import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.graphics.html.HtmlA;
 import org.contentmine.norma.NAConstants;
 import org.junit.Assert;
@@ -33,6 +34,7 @@ import org.junit.Test;
  *
  */
 public class AMIDictCreateTest extends AbstractAMIDictTest {
+	private static final File TARGET_DICTIONARY = new File("target/dictionary/");
 	private static final Logger LOG = LogManager.getLogger(AMIDictCreateTest.class);
 private static final File TARGET = new File("target");
 	public static final File DICTIONARY_DIR = new File(TARGET, "dictionary");
@@ -496,7 +498,7 @@ private static final File TARGET = new File("target");
 	public void testCreateFromWikidataSparqlNoMap() {
 		String dictionary = "country1";
 		File inputFile = new File(TEST_DICTIONARY, dictionary + ".sparql.xml");
-		File outputDir = new File("target/dictionary/");
+		File outputDir = TARGET_DICTIONARY;
 		String cmd = "-vvv"
 				+ " --dictionary " + dictionary
 				+ " --directory=" + outputDir
@@ -544,19 +546,21 @@ private static final File TARGET = new File("target");
 	public void testCreateFromWikidataSparqlMap() {
 		String dictionary = "disease3";
 		File inputFile = new File(TEST_DICTIONARY, dictionary + ".sparql.xml");
-		File outputDir = new File("target/dictionary/");
+		File outputDir = TARGET_DICTIONARY;
 		String cmd = "-vvv"
 				+ " --dictionary " + dictionary
 				+ " --directory=" + outputDir
 				+ " --input=" + inputFile
 				+ " create"
 				+ " --informat=wikisparqlxml"
+				+ ""
 				+ " --sparqlmap "
 				+ "wikidata=Disease,"
 				+ "p_31_instanceOf=instanceofLabel,"
 				+ "term=DiseaseLabel,"
 				+ "name=DiseaseLabel,"
 				+ "_icd10=ICDcode"
+				+ ""
 				+ " --synonyms=DiseaseAltLabel"
 				;
 		AMIDict.execute(cmd);

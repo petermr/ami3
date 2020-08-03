@@ -7,19 +7,20 @@ import java.util.regex.Pattern;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
+
+//	<tableTemplate name="composition">
+//		<column name="compound" find="
+//		    [Cc]onstituent _OR
+//		    [Cc]ompound _OR
+//		    [Cc]omponent
+//		    ">
+//		    <find .../>
+//		    </column>
+//	</tableTemplate>
+//	
+//	NYI
+
 /**
-	<tableTemplate name="composition">
-		<column name="compound" find="
-		    [Cc]onstituent _OR
-		    [Cc]ompound _OR
-		    [Cc]omponent
-		    ">
-		    <find .../>
-		    </column>
-	</tableTemplate>
-	
-	NYI
-	
  * @author pm286
  *
  */

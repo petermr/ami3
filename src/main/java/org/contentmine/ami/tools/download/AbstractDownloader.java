@@ -41,7 +41,7 @@ import nu.xom.Element;
 	
 	A FulltextManager uses the landing page to get initial fulltext. This might be the text on the landing page
 	or more often from links on it. Sometimes the fulltext, rather than the landingPage, contains the further 
-	pointers, especially when these are in HTML <meta> elements.
+	pointers, especially when these are in HTML meta elements.
 	
 	FullFileManager can select the various files pointed to from the Landing Page or from the fulltext.
 	 

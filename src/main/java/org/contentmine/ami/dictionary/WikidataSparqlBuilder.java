@@ -65,7 +65,13 @@ public class WikidataSparqlBuilder {
 	 * @param container
 	 * @param item
 	 * @param lang
-	 * 
+
+	 * 		
+	OPTIONAL {
+				?wikipedia schema:about ?molecule . 
+				?wikipedia schema:inLanguage "en" .
+				?wikipedia schema:isPartOf <https://en.wikipedia.org/> .
+}
 	 * 
 	 */
 	public void addWikidataLink(String container, String item, String lang) {

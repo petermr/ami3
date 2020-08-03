@@ -4,25 +4,27 @@ import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 import org.contentmine.eucl.xml.XMLUtil;
 
+
+//	<tableTemplate name="composition">
+//		<title match="
+//		     [Cc]omposition|
+//			 \\b[Oo]il
+//			 EO
+//			 [Pp]ercentage
+//			 "
+//			 exclude=""
+//			 />
+//			 
+//>>>		<table regex=".* /table_\\d+\\.xml"/> <<<
+//		<column name="compound" match="
+//		    \\b[Cc]onstituent.*\\b|
+//		    \\b[Cc]ompound.*\\b|
+//		    \\b[Cc]omponent.*\\b
+//		    "/>
+//		<column name="percentage" match=".*[Pp]ercentage.*|.*Area.*|.*%.*"/>
+//	</tableTemplate>
+//	
 /**
-	<tableTemplate name="composition">
-		<title match="
-		     [Cc]omposition|
-			 \\b[Oo]il
-			 EO
-			 [Pp]ercentage
-			 "
-			 exclude=""
-			 />
-			 
->>>		<table regex=".* /table_\\d+\\.xml"/> <<<
-		<column name="compound" match="
-		    \\b[Cc]onstituent.*\\b|
-		    \\b[Cc]ompound.*\\b|
-		    \\b[Cc]omponent.*\\b
-		    "/>
-		<column name="percentage" match=".*[Pp]ercentage.*|.*Area.*|.*%.*"/>
-	</tableTemplate>
  * @author pm286
  *
  */

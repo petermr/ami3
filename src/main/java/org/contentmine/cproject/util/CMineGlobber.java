@@ -88,7 +88,7 @@ public class CMineGlobber {
 
 
 	private static final Logger LOG = LogManager.getLogger(CMineGlobber.class);
-private static final String GLOB = "glob:";
+	private static final String GLOB = "glob:";
 	private static final String REGEX = "regex:";
 		
 	private String location;

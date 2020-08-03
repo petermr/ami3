@@ -450,7 +450,7 @@ public class HtmlUtil {
 	}
 
 	/** cleans non-XML stuff from HTML file
-	 * e.g. <script> with non-compliant content
+	 * e.g. script with non-compliant content
 	 * 
 	 * @param file
 	 * @return
@@ -466,7 +466,7 @@ public class HtmlUtil {
 		return element;
 	}
 	
-	/** removes <script> elements 
+	/** removes script elements 
 	 * used when HTML script content will not parse as XML
 	 * 
 	 * @param s

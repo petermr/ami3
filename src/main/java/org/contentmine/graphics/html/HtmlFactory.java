@@ -338,7 +338,7 @@ private static Map<String, String> DEFAULT_REPLACEMENT_MAP = null;
 	
 	/** remove any tags causing problems.
 	 * 
-	 * typical examples are those that contain Javascript (e.g. <script> or <button>
+	 * typical examples are those that contain Javascript (e.g. script or button
 	 * 
 	 * @param tag
 	 */

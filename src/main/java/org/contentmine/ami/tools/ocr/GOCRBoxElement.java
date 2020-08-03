@@ -12,8 +12,8 @@ import nu.xom.Attribute;
 import nu.xom.Element;
 
 /**
- <box x="1002" y="25" dx="5" dy="4" value="o" numac="3" weights="95,94,94" achars="o,O,0" />
- <box x="1010" y="25" dx="6" dy="7" value="o" numac="3" weights="97,93,93" achars="o,O,0" />
+ &lt;box x="1002" y="25" dx="5" dy="4" value="o" numac="3" weights="95,94,94" achars="o,O,0" /&gt;
+ &lt;box x="1010" y="25" dx="6" dy="7" value="o" numac="3" weights="97,93,93" achars="o,O,0" /&gt;
  * @author pm286
  *
  */

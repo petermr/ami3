@@ -6,7 +6,7 @@ import java.util.*;
  * Distance and aligment of strings based on Levenshtein edit distances using the
  * standard <b>Dynamic Programming</b> algorithm. Standard Levenshtein distance is
  * implemented, i.e. without transpose!
- * <p/>
+ * 
  * Based on algorithm at
  * - http://www.csse.monash.edu.au/~lloyd/tildeStrings/Alignment/92.IPL.html
  * - http://www.csse.monash.edu.au/~lloyd/tildeFP/Haskell/1998/Edit01/

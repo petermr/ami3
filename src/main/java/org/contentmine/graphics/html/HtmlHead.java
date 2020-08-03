@@ -95,14 +95,14 @@ public class HtmlHead extends HtmlElement {
 		script.setSrc(src);
 		script.setCharset(UTF_8);
 		script.setType(TEXT_JAVASCRIPT);
-		script.appendChild(" "); // bug in Chrome which doesnt like <script .../>
+		script.appendChild(" "); // bug in Chrome which doesnt like script .../>
 		this.appendChild(script);
 		return script;
 	}
 
 	public void addScript(String content) {
 		HtmlScript script = getOrCreateScript();
-		// bug in Chrome which doesnt like <script .../>
+		// bug in Chrome which doesnt like script ...
 		if (content.equals("")) content = " ";
 		script.setContent(content);
 		script.setCharset(UTF_8);

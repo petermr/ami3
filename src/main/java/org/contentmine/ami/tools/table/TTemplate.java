@@ -12,25 +12,26 @@ import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
 
-/**
-	<tableTemplate name="composition">
-		<title find="
-		     [Cc]omposition _OR
-			 \\b[Oo]il _OR
-			 EO _OR
-			 [Pp]ercentage
-			 "
-			 exclude=""
-			 />
-		<table regex=".* /table_\\d+\\.xml"/>
-		<column name="compound" find="
-		    [Cc]onstituent _OR
-		    [Cc]ompound _OR
-		    [Cc]omponent 
-		    "/>
-		<column name="percentage" match=".*[Pp]ercentage.*|.*Area.*|.*%.*"/>
-	</tableTemplate>
- * @author pm286
+
+//	<tableTemplate name="composition">
+//		<title find="
+//		     [Cc]omposition _OR
+//			 \\b[Oo]il _OR
+//			 EO _OR
+//			 [Pp]ercentage
+//			 "
+//			 exclude=""
+//			 />
+//		<table regex=".* /table_\\d+\\.xml"/>
+//		<column name="compound" find="
+//		    [Cc]onstituent _OR
+//		    [Cc]ompound _OR
+//		    [Cc]omponent 
+//		    "/>
+//		<column name="percentage" match=".*[Pp]ercentage.*|.*Area.*|.*%.*"/>
+//	</tableTemplate>
+//
+	/** @author pm286
  *
  */
 public class TTemplate extends AbstractTTElement {

@@ -97,15 +97,11 @@ public class AMICleanTool extends AbstractAMITool {
 	}
 
 	private void runClean() {
-		//   	if (files != null) cleanFiles(Arrays.asList(files));
 		if (files != null && getCProjectDirectory() != null) {
 			for (String fileGlob : files) {
 				List<File> globList = CMineGlobber.listGlobbedFilesQuietly(cProject.getDirectory(), fileGlob);
-//	    		List<File> dirList = CMineGlobber.listGlobbed(cProject.getDirectory(), fileGlob);
-				LOG.debug("GLOB: {}({}) ==> {}", fileGlob, globList.size(), globList);
+				LOG.trace("GLOB: {}({}) ==> {}", fileGlob, globList.size(), globList);
 				CMFileUtil.forceDeleteQuietly(globList);
-//	    		globList = CMineGlobber.listSortedChildFiles(cProject.getDirectory(), fileGlob);
-//	    		LOG.debug("CHILD GLOB: " + fileGlob+" ==> "+globList);
 			}
 		}
 	}

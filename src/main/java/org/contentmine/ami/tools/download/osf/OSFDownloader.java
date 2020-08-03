@@ -28,15 +28,16 @@ import nu.xom.Element;
 
 /** extracts from OSF pages
  * 
- * 
-https://osf.io/preprints/discover?page=1001&q=climate%20change
- * @author pm286
+ */ 
+ // https://osf.io/preprints/discover?page=1001&q=climate%20change ;
+ /** @author pm286
  *
  */
 public class OSFDownloader extends AbstractDownloader {
 
 /**
-https://osf.io/preprints/discover?climate%252Bchange%20sort%3Arelevance-rank%20numresults%3A4 */
+https://osf.io/preprints/discover?climate%252Bchange%20sort%3Arelevance-rank%20numresults%3A4 ;
+*/
 	
 	static final Logger LOG = LogManager.getLogger(OSFDownloader.class);
 public static final String OSF_HOST = "osf.io";

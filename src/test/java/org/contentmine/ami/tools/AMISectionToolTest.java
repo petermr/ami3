@@ -66,28 +66,54 @@ import nu.xom.Element;
 public class AMISectionToolTest extends AbstractAMITest {
 	
 
+	private static final File TARGET_SECTION = new File("target/section/");
 	private static final Logger LOG = LogManager.getLogger(AMISectionToolTest.class);
 @Test
 	public void testHelp() {
-		String args = " section --help";
+		String cmd = " section --help";
 			;
-		AMI.execute(AMISectionTool.class, args);
+		AMI.execute(AMISectionTool.class, cmd);
 	}
 	
+
+@Test
+public void testAllSections() {
+
+	File targetDir = TARGET_SECTION;
+	CMineTestFixtures.cleanAndCopyDir(AMIFixtures.TEST_ZIKA10_DIR, targetDir);
+	String cmd = "-vv -p "+targetDir+" clean **/sections/**";
+	AMI.execute(cmd);
+	
+	cmd = ""
+			+ "-vv -p " + targetDir
+			+ " section"
+			+ " --sections ALL "
+		;
+	AMI.execute(AMISectionTool.class, cmd);
+}
+
 	@Test
 	public void testAbstractMethods() {
-		String args = ""
-				+ "-t " + new File(AMIFixtures.TEST_ZIKA10_DIR, "PMC3289602") + ""
+
+		CTree cTree = new CTree(new File(AMIFixtures.TEST_ZIKA10_DIR, "PMC3289602"));
+		File targetDir = new File(TARGET_SECTION, cTree.getName());
+		CMineTestFixtures.cleanAndCopyDir(cTree.getDirectory(), targetDir);
+		String cmd = "-vv clean **/PMC*/sections/**";
+		AMI.execute(cmd);
+		
+		cmd = ""
+				+ "-t " + targetDir
+				+ " section"
 				+ " --sections "
 				+ " " + SectionTag.ABSTRACT
 				+ " " + SectionTag.METHODS
 			;
-		AMI.execute(AMISectionTool.class, args);
+		AMI.execute(AMISectionTool.class, cmd);
 	}
 	
 	@Test
 	public void testALLSections() {
-		String args = ""
+		String cmd = ""
 //				+ "-t " + new File(AMIFixtures.TEST_ZIKA10_DIR, "PMC3113902") + ""
 				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
 				+ " --forcemake"
@@ -95,52 +121,16 @@ public class AMISectionToolTest extends AbstractAMITest {
 				+ " --sections ALL"
 				+ " --sectiontype XML"
 			;
-		AMI.execute(AMISectionTool.class, args);
+		AMI.execute(AMISectionTool.class, cmd);
 	}
 	
-	@Test
-	@Ignore // FIXED
-	public void testSectionsSummaryBug() {
-		String args;
-//		args = ""
-//				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
-//				+ " --forcemake"
-//				+ " section"
-//				+ " --sections ALL"
-//			;
-//		AMI.execute(AMISectionTool.class, args);
-//		System.err.println("=======end 1 runs OK ========");
-		args = ""
-				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
-				+ " --forcemake"
-				+ " section"
-				+ " --sections ALL"
-				+ " --summary foo"
-			;
-		AMI.execute(AMISectionTool.class, args);
-		System.err.println(""
-				+ "=======2 runs OK: --summary detects bad arg 'foo' ========\n"
-				);
-		args = ""
-				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
-				+ " --forcemake"
-				+ " section"
-				+ " --sections ALL"
-				+ " --summary fig"
-			;
-		AMI.execute(AMISectionTool.class, args);
-		System.err.println(""
-				+ "=======3 fails: Expected parameter for option '--summary' but found 'fig'========\n"
-				);
-		
-	}
 	
 	@Test
 	/** selects some of the sections and then cut out the XML sections
 	 * 
 	 */
 	public void testTransformToHtml() {
-		String args = ""
+		String cmd = ""
 				+ "-t " + new File(AMIFixtures.TEST_ZIKA10_DIR, "PMC3289602") + ""
 //				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
 				+ " -v"
@@ -153,33 +143,34 @@ public class AMISectionToolTest extends AbstractAMITest {
 				+ " --html nlm2html"
 //				+ " --write false"
 			;
-		AMI.execute(AMISectionTool.class, args);
-//		AMI.execute(AMISectionTool.class, args);
+		AMI.execute(AMISectionTool.class, cmd);
+//		AMI.execute(AMISectionTool.class, cmd);
 	}
 
 
 	@Test
 	public void testALL() {
 		File testZikaDir = AMIFixtures.TEST_ZIKA10_DIR;
-		String args = ""
-				+ "-p " + testZikaDir
-				+" --sections ALL"
+		String cmd = ""
+				+ " -p " + testZikaDir
+				+ " --outputDir foo "
+				+ " section"
+				+ " --sections ALL"
 			;
-		AMI.execute(AMISectionTool.class, args);
+		AMI.execute(AMISectionTool.class, cmd);
 	}
 	
 	@Test
 	public void testCMIP_OILSummary() {
 //		File dir = CMIP200;
 		File dir = OIL186;
-		String args = ""
+		String cmd = ""
 				+ " -p " + dir 
 				+ " section"
 				+ " --summary table fig supplementary"
 				+ " --forcemake"
 			;
-//		AMI.execute(AMISectionTool.class, args);
-		AMI.execute(args);
+		AMI.execute(cmd);
 	}
 	
 	@Test
@@ -230,7 +221,7 @@ public class AMISectionToolTest extends AbstractAMITest {
 
 	@Test
 	public void testFrontBodyBackProject() {
-		String args = ""
+		String cmd = ""
 				+ "-t " + new File(AMIFixtures.TEST_ZIKA10_DIR, "PMC320490") + ""
 //				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
 				+ " -v"
@@ -244,12 +235,12 @@ public class AMISectionToolTest extends AbstractAMITest {
 				+ " --html nlm2html"
 //				+ " --write false"
 			;
-		AMI.execute(AMISectionTool.class, args);
+		AMI.execute(AMISectionTool.class, cmd);
 	}
 
 	@Test
 	public void testAUTO() {
-		String args = ""
+		String cmd = ""
 //				+ "-t " + new File(AMIFixtures.TEST_ZIKA10_DIR, "PMC320490") + ""
 				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
 //				+ "-p " + "/Users/pm286/workspace/projects/climate/searches/clim107"
@@ -263,13 +254,13 @@ public class AMISectionToolTest extends AbstractAMITest {
 //				+ " --write false
 
 			;
-		AMI.execute(args);
-//		AMI.execute(AMISectionTool.class, args);
+		AMI.execute(cmd);
+//		AMI.execute(AMISectionTool.class, cmd);
 	}
 
 	@Test
 	public void testAUTO1() {
-		String args = ""
+		String cmd = ""
 				+ "-p " + TEST_BATTERY10
 				+ " -v"
 				+ " --forcemake"
@@ -277,25 +268,25 @@ public class AMISectionToolTest extends AbstractAMITest {
 //				+ " --extract table fig"
 				+ " --summary fig table"  
 			;
-		AMI.execute(args);
-//		AMI.execute(AMISectionTool.class, args);
+		AMI.execute(cmd);
+//		AMI.execute(AMISectionTool.class, cmd);
 	}
 
 	@Test
 	public void testBoldParas() {
-		String args = ""
+		String cmd = ""
 //				+ "-t " + new File(AMIFixtures.TEST_OIL5_DIR, "PMC4391421")
 				+ "-p " + AMIFixtures.TEST_OIL5_DIR
 				+ " --forcemake"
 				+ " --boldsections"
 
 			;
-		AMI.execute(AMISectionTool.class, args);
+		AMI.execute(AMISectionTool.class, cmd);
 	}
 
 	@Test
 	public void testSummary() {
-		String args = ""
+		String cmd = ""
 				+ "-p " + "/Users/pm286/workspace/projects/CEV/searches/oil186"
 				+ " --forcemake"
 				+ " sections"
@@ -303,7 +294,7 @@ public class AMISectionToolTest extends AbstractAMITest {
 				+ " --summary fig table "
 			;
 
-		AMI.execute(AMISectionTool.class, args);
+		AMI.execute(AMISectionTool.class, cmd);
 	}
 
 
@@ -314,13 +305,13 @@ public class AMISectionToolTest extends AbstractAMITest {
 		File testDir = new File("/Users/pm286/workspace/projects/CEV/oil186");
 //		File testDir = new File("/Users/pm286/workspace/projects/quantumchem/qchem100");
 		CMineTestFixtures.cleanAndCopyDir(testDir, targetDir);
-		String args = ""
+		String cmd = ""
 				+ "-p " + targetDir
 				+ " --maxTrees 25"
 				+" --sections ALL"
 //				+ " -v"
 			;
-		AMI.execute(AMISectionTool.class, args);
+		AMI.execute(AMISectionTool.class, cmd);
 	}
 	
 

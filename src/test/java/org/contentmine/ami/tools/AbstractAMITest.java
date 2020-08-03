@@ -36,8 +36,8 @@ public abstract class AbstractAMITest {
 	public static File SRC_TEST_PLOT = new File(SRC_TEST_SVG, "plot");
 	public static File SRC_TEST_TOOLS = new File(SRC_TEST_AMI, "tools");
 	public static File SRC_TEST_DOWNLOAD = new File(SRC_TEST_TOOLS, "download");
-	public static File PDF2SVG2 = new File(SRC_TEST_AMI, "pdf2svg2");
-	public static File OIL5 = new File(SRC_TEST_AMI, "oil5/");
+	public static final File PDF2SVG2 = new File(SRC_TEST_AMI, "pdf2svg2");
+	public static final File OIL5 = new File(SRC_TEST_AMI, "oil5/");
 	
 	public static final File TEST_BATTERY10 = new File(SRC_TEST_AMI, "battery10");
 	public static final File TEST_BATTERY10COMPUTE = new File(SRC_TEST_AMI, "battery10compute");
@@ -84,6 +84,12 @@ public abstract class AbstractAMITest {
 		Element expectedElement = XMLUtil.parseQuietlyToRootElement(expectedFile);
 		Element actualElement = XMLUtil.parseQuietlyToRootElement(new File(outputDir, root + ".xml"));
 		TestUtils.assertEqualsIncludingFloat(root, expectedElement, actualElement, stripWhite, eps);
+	}
+
+	protected static void echoAndExecute(String args, String  expected) {
+		System.out.println("Running: "+args);
+		Assert.assertEquals(args.trim(), expected.trim());
+		AMI.execute(AMICleanTool.class, args);
 	}
 
 	protected CProject cProject;

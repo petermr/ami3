@@ -11,10 +11,10 @@ import nu.xom.Element;
 
 /**
  * 
- <space x="876" y="28" dx="2" dy="2" />
- <space x="902" y="28" dx="0" dy="2" />
- <space x="921" y="28" dx="-1" dy="2" />
- <space x="935" y="28" dx="-2" dy="2" />
+ &lt;space x="876" y="28" dx="2" dy="2" /&gt;
+ &lt;space x="902" y="28" dx="0" dy="2" /&gt;
+ &lt;space x="921" y="28" dx="-1" dy="2" /&gt;
+ &lt;space x="935" y="28" dx="-2" dy="2" /&gt;
  
  * @author pm286
  *

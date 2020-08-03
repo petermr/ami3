@@ -591,8 +591,9 @@ public enum Type {
 			
 	/** HTML Meta */
 	/** typical HTML landing page (BioRxiv)
-	 * <script> and <style> and <link> largely ==SNIP=='ed for clarity
+	 * script and style and link largely ==SNIP=='ed for clarity
 	 * 
+	 <![CDATA[
 	<!DOCTYPE html>
 	<html lang="en" dir="ltr";
 	  xmlns="http://www.w3.org/1999/xhtml";
@@ -682,7 +683,7 @@ public enum Type {
 	/ * <![CDATA[ * / SNIPPED
 	 </style>
 	  </head>
-	
+	]]>
 		/** terms in current scrapers */
 	public static final String ABSTRACT         = "abstract";
 	public static final String ABSTRACT_HTML    = "abstract_html";

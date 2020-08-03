@@ -85,6 +85,7 @@ description = {
 				+ "        // this seems to create sections OK, use this?"
 				+ "%n%n"
 				+ "Wiki Documentation: https://github.com/petermr/ami3/wiki/ami-section"
+				+ "%n"
 				
 })
 public class AMISectionTool extends AbstractAMITool {
@@ -124,7 +125,7 @@ public class AMISectionTool extends AbstractAMITool {
 		fig(FIGURES_DIR, FIGURE_SUMMARY_DIRNAME),
 		results(RESULTS_DIR, RESULTS_SUMMARY_DIRNAMR),
 		supplementary(SUPPLEMENTARY_DIR, SUPPLEMENTARY_SUMMARY_DIRNAME),
-		table(TABLES_DIR, TABLE_SUMMARY_DIRNAME),
+		tab(TABLES_DIR, TABLE_SUMMARY_DIRNAME),
 		;
 		private String path;
 		private String summaryPath;
@@ -169,7 +170,7 @@ public class AMISectionTool extends AbstractAMITool {
 	private enum FloatType {
 		fig("fig"),
 		supplementary("supplementary-material"),
-		table("table-wrap"),
+		tab("table-wrap"),
 		;
 		private String path;
 		private FloatType(String path) {
@@ -205,7 +206,7 @@ public class AMISectionTool extends AbstractAMITool {
             description = "extract float elements to subdirectory,"
             		+ "default table, fig, supplementary) ")
     private List<FloatType> extractList = new ArrayList<FloatType>(
-    		Arrays.asList(new FloatType[]{FloatType.table, FloatType.fig, FloatType.supplementary}));
+    		Arrays.asList(new FloatType[]{FloatType.tab, FloatType.fig, FloatType.supplementary}));
 
 //    @Option(names = {"--figures"},
 //    		arity = "0..*",
@@ -384,7 +385,7 @@ public class AMISectionTool extends AbstractAMITool {
 		if (extractList.contains(FloatType.supplementary)) {
 			renameFloatsFilesAndCreateSummary(SUPPLEMENTARY_FILE_REGEX, SUPPLEMENTARY_DIR, SUPPLEMENTARY_);
 		}
-		if (extractList.contains(FloatType.table)) {
+		if (extractList.contains(FloatType.tab)) {
 			renameFloatsFilesAndCreateSummary(TABLE_FILE_REGEX, TABLES_DIR, TABLE_);
 		}
 	}

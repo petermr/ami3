@@ -140,7 +140,7 @@ public class AMI implements Runnable {
 	 * @param <T>             the generic type of the object to return
 	 * @return the invoked subcommand instance
 	 */
-	static <T> T execute(Class<T> subcommandClass, String args) {
+	public static <T> T execute(Class<T> subcommandClass, String args) {
 		return execute(subcommandClass, args.trim().split("\\s+"));
 	}
 

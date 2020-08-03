@@ -375,7 +375,7 @@ public static final int INCONSISTENT_FOOTER = -2;
 			List<Entry<String>> listByCount = MultisetUtil.createListSortedByCount(words);
 			try {
 				File summaryTableDir = new File(cProject.getDirectory(), 
-						AMISectionTool.SummaryType.table.getSummaryPath());
+						AMISectionTool.SummaryType.tab.getSummaryPath());
 				File file = new File(summaryTableDir, colName+"_"+"multiset"+"."+CTree.TXT);
 //					LOG.debug("writing to "+file);
 				OutputStream fos = new FileOutputStream(file);

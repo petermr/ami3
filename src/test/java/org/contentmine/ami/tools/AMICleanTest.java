@@ -25,8 +25,20 @@ import org.junit.Test;
  * @author pm286
  *
  */
-public class AMICleanTest {
-	private static final Logger LOG = LogManager.getLogger(AMICleanTest.class);
+public class AMICleanTest extends AbstractAMITest {
+	
+	private static final String TARGET_CLEAN = new AMICleanTest().createTargetDirname();
+
+	private String createTargetDirname() {
+		return "target/" + createAmiModuleName()+"/";
+	}
+	private String createAmiModuleName() {
+		String shortClassName = this.getClass().getSimpleName();
+		String moduleName = shortClassName.replaceAll("(Tool|Test|AMI)", "").toLowerCase();
+		return moduleName;
+	}
+	static final Logger LOG = LogManager.getLogger(AMICleanTest.class);
+	
 @Test
 	public void testHelp() {
 		new AMICleanTool().runCommands(new String[]{});
@@ -55,9 +67,9 @@ public class AMICleanTest {
 			long scholarlyCount = before.stream()
 					.filter(f -> f.toString().contains(File.separator + "scholarly.html"))
 					.count();
-			assertNotEquals(0, svgCount);
-			assertNotEquals(0, pdfimagesCount);
-			assertNotEquals(0, scholarlyCount);
+			Assert.assertNotEquals(0, svgCount);
+			Assert.assertNotEquals(0, pdfimagesCount);
+			Assert.assertNotEquals(0, scholarlyCount);
 
 			String args =
 					("-p " + temp.toFile().getAbsolutePath()
@@ -68,7 +80,7 @@ public class AMICleanTest {
 			CProject cProject = amiCleaner.getCProject();
 			Assert.assertNotNull("CProject not null", cProject);
 
-			// count all remaining files and assert the targers were deleted
+			// count all remaining files and assert the targets were deleted
 			System.out.println("AFTER");
 			List<Path> after = CMFileUtil.listFully(temp);
 			//after.forEach(System.out::println);
@@ -82,12 +94,12 @@ public class AMICleanTest {
 			long afterScholarlyCount = after.stream()
 					.filter(f -> f.toString().contains(File.separator + "scholarly.html"))
 					.count();
-			assertEquals(0, afterSvgCount);
-			assertEquals(0, afterPdfimagesCount);
-			assertEquals(0, afterScholarlyCount);
+			Assert.assertEquals(0, afterSvgCount);
+			Assert.assertEquals(0, afterPdfimagesCount);
+			Assert.assertEquals(0, afterScholarlyCount);
 
 			long removedCount = svgCount + pdfimagesCount + scholarlyCount;
-			assertEquals("Nothing else was deleted", after.size(), before.size() - removedCount);
+			Assert.assertEquals("Nothing else was deleted", after.size(), before.size() - removedCount);
 
 		} finally {
 			Files.walkFileTree(temp, new DirectoryDeleter());
@@ -97,9 +109,61 @@ public class AMICleanTest {
 
 	@Test
 	/**
+	 * tests cleaning XML files in a project
+	 */
+	public void testCleanXMLWithAncestor() throws IOException {
+		File sourceDir = OIL5;
+		File targetDir = createTargetDir(sourceDir);
+		String glob = "**/sections/**/*.xml";
+//		List<File> files = new CMineGlobber().setGlob(glob).setLocation(targetDir).setRecurse(true).listFiles();
+		List<File> files = new CMineGlobber().setGlob(glob).setLocation(targetDir).setRecurse(true).listFiles();
+		Assert.assertEquals("section directories", 630, files.size());
+
+		String args = " -vv "
+			+ "-p " + targetDir
+			+ " clean"
+			+ " " + glob
+			;
+		echoAndExecute("-vv -p target/clean/oil5 clean "+glob, args);
+		
+		files = new CMineGlobber().setGlob(glob).setLocation(targetDir).setRecurse(true).listFiles();
+		Assert.assertEquals("xml files", 0, files.size());
+	}
+
+	private File createTargetDir(File sourceDir) {
+		File targetDir = new File(createTargetDirname(), sourceDir.getName()+"/");
+		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
+		return targetDir;
+	}
+
+	@Test
+	/**
+	 * tests cleaning XML files in a project
+	 */
+	public void testCleanXML() throws IOException {
+		File targetDir = new File(TARGET_CLEAN, "oil5/");
+		CMineTestFixtures.cleanAndCopyDir(OIL5, targetDir);
+		
+		List<File> files = new CMineGlobber().setGlob("**/*.xml").setLocation(targetDir).setRecurse(true).listFiles();
+		Assert.assertEquals("xml files", 792, files.size());
+
+		String args = " -vv "
+			+ "-p " + targetDir
+			+ " clean"
+			+ " **/*.xml"
+			;
+		echoAndExecute("-vv -p target/clean/oil5 clean **/*.xml", args);
+		
+		files = new CMineGlobber().setGlob("**/*.xml").setLocation(targetDir).setRecurse(true).listFiles();
+		Assert.assertEquals("xml files", 0, files.size());
+	}
+
+	@Test
+	/**
 	 * tests cleaning directories in a project for ami-search
 	 */
 	public void testCleanResultsGlob() throws IOException {
+//		AMI
 		File sourceDir = new File("src/test/resources/org/contentmine/ami/oil5");
 		CMFileUtil.assertExistingDirectory(sourceDir);
 		File targetDir = new File("target/oil5");
@@ -126,37 +190,5 @@ public class AMICleanTest {
 		
 		files = new CMineGlobber().setGlob("**/*.xml").setLocation(targetDir).setRecurse(true).listFiles();
 		Assert.assertEquals("xml "+files.size(), 0, files.size());
-		System.out.println("files: "+files.size());
 	}
-
-//	@Test
-//	/**
-//	 * tests cleaning directories in a project for ami-search
-//	 */
-//	public void testCleanResultsRegex() throws IOException {
-//		File sourceDir = new File("src/test/resources/org/contentmine/ami/oil5");
-//		CMFileUtil.assertExistingDirectory(sourceDir);
-//		File targetDir = new File("target/oil5");
-//		CMFileUtil.forceDelete(targetDir);
-//		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
-//		CMFileUtil.assertExistingDirectory(targetDir);
-//		// old style. we'll replace
-//		List<File> files = new CMineGlobber().setRegex(".*\\.xml").setLocation(targetDir).setRecurse(true).listFiles();
-//		Assert.assertEquals("xml "+files.size(), 792, files.size());
-//
-//		String args;
-//		// delete children of ctrees
-//		args = ""
-//			+ "-p " + targetDir + " clean"
-//			+ " --fileregex "
-//			+ " .*\\.xml"
-//		    + "";
-//		AMI.execute(args);
-//
-//		files = new CMineGlobber().setRegex(".*\\.xml").setLocation(targetDir).setRecurse(true).listFiles();
-//		Assert.assertEquals("xml "+files.size(), 0, files.size());
-//		System.out.println("files: "+files.size());
-//	}
-
-
 }

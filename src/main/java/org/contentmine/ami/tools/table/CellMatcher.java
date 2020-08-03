@@ -3,17 +3,16 @@ package org.contentmine.ami.tools.table;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
-/**
-	<tableTemplate name="composition">
-		<title find="
-		     composition OR
-			 oil OR
-			 EO OR
-			 "
-			 >
-		</title>
-	</tableTemplate>
- * @author pm286
+//	<tableTemplate name="composition">
+//		<title find="
+//		     composition OR
+//			 oil OR
+//			 EO OR
+//			 "
+//			 >
+//		</title>
+//	</tableTemplate>
+/** @author pm286
  *
  */
 public class CellMatcher extends AbstractTTElement implements HasQuery {

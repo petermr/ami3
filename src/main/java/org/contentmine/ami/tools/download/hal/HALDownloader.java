@@ -20,26 +20,27 @@ import nu.xom.Element;
  * 
  * NYI
  * 
- *
- *https://hal.archives-ouvertes.fr/search/index/?q=ebola
- *    is simplest
- *https://hal.archives-ouvertes.fr/search/index/?q=ebola&page=2
- *    is simplest
- *
- * more complex
- *https://hal.archives-ouvertes.fr/search/index/?
- *q=ebola
- *&docType_s=COMM+OR+DOUV+OR+OTHER+OR+UNDEFINED+OR+REPORT+OR+THESE+OR+HDR+OR+LECTURE+OR+COUV+OR+OUV+OR+POSTER+OR+ART
- *&level0_domain_s=sdv+OR+chim+OR+shs+OR+sde+OR+phys+OR+nlin+OR+spi+OR+math+OR+scco+OR+stat+OR+info
- *&language_s=en+OR+fr+OR+pt
- *&keyword_t=Ebola
- *&submitType_s=notice+OR+file
- *&producedDateY_i=2019
- *
-  
- * @author pm286
- *
  */
+ //https://hal.archives-ouvertes.fr/search/index/?q=ebola
+ //    is simplest
+ //https://hal.archives-ouvertes.fr/search/index/?q=ebola&page=2
+ //    is simplest
+ //
+ // more complex
+ //https://hal.archives-ouvertes.fr/search/index/?
+ //q=ebola
+ //&docType_s=COMM+OR+DOUV+OR+OTHER+OR+UNDEFINED+OR+REPORT+OR+THESE+OR+HDR+OR+LECTURE+OR+COUV+OR+OUV+OR+POSTER+OR+ART
+ //&level0_domain_s=sdv+OR+chim+OR+shs+OR+sde+OR+phys+OR+nlin+OR+spi+OR+math+OR+scco+OR+stat+OR+info
+ //&language_s=en+OR+fr+OR+pt
+ //&keyword_t=Ebola
+ //&submitType_s=notice+OR+file
+ //&producedDateY_i=2019
+ //
+  
+/**
+  @author pm286
+  */
+ 
 public class HALDownloader extends AbstractDownloader {
 
 	private static final String ARTICLE = "article";

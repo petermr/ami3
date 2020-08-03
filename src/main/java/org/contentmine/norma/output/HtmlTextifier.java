@@ -41,7 +41,7 @@ public HtmlTextifier() {
 		int i0 = 0;
 		int is = 0;
 		while (true) {
-			int i1 = content.indexOf("<script", i0);
+			int i1 = content.indexOf("<"+"script", i0);
 			if (i1 == -1) break;
 			String ss = content.substring(i0, i1);
 			sb.append(ss);

@@ -17,22 +17,25 @@ import nu.xom.Element;
 /**
  * extractor from JATS and other tables
  * 
- * <templateList>
-	<template name="composition">
-		<title regex="composition oil"/>
-		<table regex=".* /table_\\d+\\.xml"/>
-		<column name="compound" regex="[Cc]onstituent.*|[Cc]ompound.*|[Cc]omponent.*"/>
-		<column name="percentage" regex=".*[Pp]ercentage.*|.*Area.*|.*%.*"/>
-	</template>
-	<template name="activity">
-		<title regex="activity target"/>
-		<table regex=".* /table_\\d+\\.xml"/>
-		<column name="activity" regex="activity.*"/>
-		<column name="target" regex=".*target"/>
-	</template>
-</templateList>
-
- * @author pm286
+ */
+//<templateList>
+// 
+//	<template name="composition">
+//		<title regex="composition oil"/>
+//		<table regex=".* /table_\\d+\\.xml"/>
+//		<column name="compound" regex="[Cc]onstituent.*|[Cc]ompound.*|[Cc]omponent.*"/>
+//		<column name="percentage" regex=".*[Pp]ercentage.*|.*Area.*|.*%.*"/>
+//	</template>
+//	<template name="activity">
+//		<title regex="activity target"/>
+//		<table regex=".* /table_\\d+\\.xml"/>
+//		<column name="activity" regex="activity.*"/>
+//		<column name="target" regex=".*target"/>
+//	</template>
+//</templateList>
+//
+ /**
+  *  @author pm286
  *
  */
 public class TTemplateList extends AbstractTTElement {

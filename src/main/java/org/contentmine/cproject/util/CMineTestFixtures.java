@@ -7,6 +7,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.ProjectSnippetsTree;
+import org.contentmine.eucl.euclid.util.CMFileUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
@@ -39,6 +40,7 @@ public class CMineTestFixtures {
 			LOG.trace(sourceDir.getAbsolutePath());
 			
 			FileUtils.copyDirectory(sourceDir, targetDir);
+			CMFileUtil.assertExistingDirectory(targetDir);
 			return true;
 		} catch (IOException ioe) {
 			LOG.error("failed to clean and copy: "+sourceDir+" @ "+targetDir +": "+ioe, ioe);
@@ -46,9 +48,8 @@ public class CMineTestFixtures {
 		}
 	}
 
-
-	public static ProjectSnippetsTree createProjectSnippetsTree(File testZikaFile, String snippetsName) throws IOException {
-		File targetDir = createCleanedCopiedDirectory(testZikaFile, new File("target/relevance/zika"));
+	public static ProjectSnippetsTree createProjectSnippetsTree(File testFile, String snippetsName) throws IOException {
+		File targetDir = createCleanedCopiedDirectory(testFile, new File("target/relevance/zika"));
 		Element snippetsTreeXML = XMLUtil.parseQuietlyToDocument(new File(targetDir, snippetsName)).getRootElement();;
 		ProjectSnippetsTree projectsSnippetsTree = ProjectSnippetsTree.createProjectSnippetsTree(snippetsTreeXML);
 		return projectsSnippetsTree;

@@ -67,11 +67,13 @@ import nu.xom.Elements;
  *     {"ABI3BP", "ABI family member 3 binding protein"}
  *     
  * The dictionary is stored as XML:
- *  <dictionary title="hgnc">
-      <entry term="A1BG" name="alpha-1-B glycoprotein"/>
-      <entry term="A1BG-AS1" name="A1BG antisense RNA 1"/>
-      ...
-      
+ */
+//<dictionary title="hgnc">
+ 
+//      <entry term="A1BG" name="alpha-1-B glycoprotein"/>
+//      <entry term="A1BG-AS1" name="A1BG antisense RNA 1"/>
+
+/**
  * it is assumed all terms are distinct. Case matters.
  * 
  * Initially the dictionaries are formed from JSON, TSV,  text files etc., but normallised to 
@@ -86,15 +88,16 @@ import nu.xom.Elements;
 
 /**
  * 
- * <?xml version="1.0" encoding="UTF-8"?>
-<dictionary title="cochrane">
-<entry term="Cochrane Library" name="cochrane library" />
-<entry term="Cochrane Reviews" name="cochrane reviews" />
-...
-<entry term="adverse events" name="adverse events"/>
+ */
+//<?xml version="1.0" encoding="UTF-8"?>
+//<dictionary title="cochrane">
+//<entry term="Cochrane Library" name="cochrane library" />
+//<entry term="Cochrane Reviews" name="cochrane reviews" />
+//
+//<entry term="adverse events" name="adverse events"/>
 
-</dictionary>
-
+//</dictionary>
+/**
  * @author pm286
  *
  */

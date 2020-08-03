@@ -16,21 +16,22 @@ import org.contentmine.graphics.html.util.HtmlUtil;
  * @author pm286
  *
 ** metadata
-<meta property="og:title" content="Asian tiger mosquito"/>
-<meta name="description" content="species of insect"/>
-<meta property="og:description" content="species of insect"/>
-<meta name="twitter:card" content="summary"/>
-<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Aedes_Albopictus.jpg/1200px-Aedes_Albopictus.jpg"/>
- *
- ** aliases in table. Note en only. There are different aliases in different languages
- *
- *<td class="wikibase-entitytermsforlanguageview-aliases"><div class="wikibase-aliasesview ">
-<ul class="wikibase-aliasesview-list" dir="ltr" lang="en">
-  <li class="wikibase-aliasesview-list-item">Stegomyia albopicta</li>
-  <li class="wikibase-aliasesview-list-item">Forest day mosquito</li>
-  <li class="wikibase-aliasesview-list-item">Aedes albopictus</li>
-</ul>
- */
+*/
+//<meta property="og:title" content="Asian tiger mosquito"/>
+//<meta name="description" content="species of insect"/>
+//<meta property="og:description" content="species of insect"/>
+//<meta name="twitter:card" content="summary"/>
+//<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Aedes_Albopictus.jpg/1200px-Aedes_Albopictus.jpg"/>
+// *
+// ** aliases in table. Note en only. There are different aliases in different languages
+// *
+// *<td class="wikibase-entitytermsforlanguageview-aliases"><div class="wikibase-aliasesview ">
+//<ul class="wikibase-aliasesview-list" dir="ltr" lang="en">
+//  <li class="wikibase-aliasesview-list-item">Stegomyia albopicta</li>
+//  <li class="wikibase-aliasesview-list-item">Forest day mosquito</li>
+//  <li class="wikibase-aliasesview-list-item">Aedes albopictus</li>
+//</ul>
+// 
 public class WikidataPage {
 	private static final Logger LOG = LogManager.getLogger(WikidataPage.class);
 private HtmlHtml html;
