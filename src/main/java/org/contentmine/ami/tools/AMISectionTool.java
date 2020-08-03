@@ -202,7 +202,7 @@ public class AMISectionTool extends AbstractAMITool {
     private Map<String, String> hypertreeMap = new HashMap<>();
 
     @Option(names = {"--extract"},
-//    		arity = "0..*",
+    		arity = "0..*",
             description = "extract float elements to subdirectory,"
             		+ "default table, fig, supplementary) ")
     private List<FloatType> extractList = new ArrayList<FloatType>(

@@ -241,21 +241,13 @@ public void testAllSections() {
 	@Test
 	public void testAUTO() {
 		String cmd = ""
-//				+ "-t " + new File(AMIFixtures.TEST_ZIKA10_DIR, "PMC320490") + ""
 				+ "-p " + AMIFixtures.TEST_ZIKA10_DIR
-//				+ "-p " + "/Users/pm286/workspace/projects/climate/searches/clim107"
-//				+ "-p " + "/Users/pm286/workspace/projects/climate/searches/climatechange"
 				+ " -vv"
 				+ " --forcemake"
 				+ " section"
-				+ " --extract table fig"
-//				+ " --sections "
-//				+ " " + SectionTag.ARTICLE
-//				+ " --write false
-
+				+ " --extract tab fig"
 			;
 		AMI.execute(cmd);
-//		AMI.execute(AMISectionTool.class, cmd);
 	}
 
 	@Test
