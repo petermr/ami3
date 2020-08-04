@@ -40,7 +40,10 @@ import picocli.CommandLine.Option;
  * @author pm286
  *
  */
-
+// try out https://www.scrapingbee.com/blog/introduction-to-chrome-headless/ sometime (2019)
+// https://github.com/ksahin/introWebScraping
+//https://www.scrapingbee.com/blog/web-scraping-without-getting-blocked/
+	
 @Command(
 name = "download",
 description = {

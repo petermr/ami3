@@ -17,6 +17,7 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -170,6 +171,11 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	/** WikidataSparql may modify this, so force it to copy it */
 	private Map<String, String> sparqlNameByAmiName = new HashMap<>();
 	
+	@Option(names = {"--sparqlquery"},
+			description = "File with wikidata query"
+			) 
+	private File sparqlQueryFile = null;
+	
 	
 	@Option(names = {"--synonyms"},
 			description = "synonyms retrived from source. Syntax depends on source type."
@@ -218,6 +224,8 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	static final String CL = "dicc>";
 	
 	private WikidataSparql wikidataSparql;
+	private String sparqlQuery;
+//	private Element sparqlXml;
 
 	public DictionaryCreationTool() {
 	}
@@ -225,6 +233,11 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 //	@Override
 	protected void parseSpecifics() {
 		getDictionaryName();
+		dictOutformat = (this.outformats == null || this.outformats.length != 1) ? null : this.outformats[0];
+		if (sparqlQueryFile != null) {
+			getOrCreateWikidataSparql();
+			wikidataSparql.sparqlXml = readQuerySearchWikidataForSparqlXml();
+		}
 		if (informat != null && informat.toString().startsWith("wikisparql")) {
 			getOrCreateWikidataSparql();
 			parseSparql(wikidataSparql);
@@ -238,9 +251,20 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		}
 		if (terms != null) termList = new ArrayList<>(terms);
 		
-		dictOutformat = (this.outformats == null || this.outformats.length != 1) ? null : this.outformats[0];
 		wikiLinkList = (this.wikiLinks == null) ? new ArrayList<WikiLink>() :
 		     new ArrayList<WikiLink>(Arrays.asList(this.wikiLinks));
+	}
+
+	private Element readQuerySearchWikidataForSparqlXml() {
+		Element sparqlXml = null;
+		try {
+			sparqlQuery = FileUtils.readFileToString(sparqlQueryFile, "UTF-8");
+			String sparqlXmlString = WikidataSparql.queryWikidata(sparqlQuery);
+			sparqlXml = XMLUtil.parseXML(sparqlXmlString);
+		} catch (IOException e) {
+			throw new RuntimeException("cannot read query file: "+sparqlQueryFile, e);
+		}
+		return sparqlXml;
 	}
 
 	private void getOrCreateWikidataSparql() {
@@ -349,17 +373,22 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 			return;
 		}
 
-		if (inputStream == null && termList == null) {
-			throw new RuntimeException("'input' or 'inputname' must be given");
+		if (inputStream == null && termList == null && sparqlQuery == null) {
+			throw new RuntimeException("'input' or 'inputname' or 'sparqlquery' must be given");
 		}
 //		simpleDictionary = DefaultAMIDictionary.createDictionaryElementWithTitle(dictionaryName);
 		simpleDictionary = new SimpleDictionary(dictionaryName);
-		if (InputFormat.wikisparqlxml.equals(informat)) {
-			wikidataSparql.readSparqlXml(inputStream);
+		if (sparqlQuery != null) {
+			wikidataSparql.readSparqlCreateDictionary(inputStream);
 			writeDictionary();
+		} else if (InputFormat.wikisparqlxml.equals(informat)) {
+			wikidataSparql.readSparqlCreateDictionary(inputStream);
+			System.err.println("FIX OUTPUT");
+			writeDictionary(dictionaryName);
+			
 		} else if (InputFormat.wikisparqlcsv.equals(informat)) {
-				wikidataSparql.readSparqlCsv(inputStream);
-				writeDictionary();
+			wikidataSparql.readSparqlCsv(inputStream);
+			writeDictionary();
 		} else {
 			readTerms(inputStream);
 			synchroniseTermsAndNames();
@@ -383,7 +412,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		} else if (InputFormat.list.equals(informat)) {
 			readList(inputStream);
 		} else if (InputFormat.wikisparqlxml.equals(informat)) {
-			wikidataSparql.readSparqlXml(inputStream);
+			wikidataSparql.readSparqlCreateDictionary(inputStream);
 		} else if (InputFormat.mediawikitemplate.equals(informat) ||
 				InputFormat.wikicategory.equals(informat) ||
 				InputFormat.wikipage.equals(informat) ||

@@ -20,7 +20,6 @@ import org.contentmine.ami.tools.AbstractAMITest;
 import org.contentmine.ami.tools.dictionary.DictionaryCreationTool;
 import org.contentmine.ami.tools.dictionary.WikidataSparql;
 import org.contentmine.ami.tools.download.CurlDownloader;
-import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.graphics.html.HtmlA;
 import org.contentmine.norma.NAConstants;
 import org.junit.Assert;
@@ -543,7 +542,7 @@ private static final File TARGET = new File("target");
 			</binding>
 		</result>...	 */
 	@Test
-	public void testCreateFromWikidataSparqlMap() {
+	public void testCreateFromWikidataSparqlOutputAndMap() {
 		String dictionary = "disease3";
 		File inputFile = new File(TEST_DICTIONARY, dictionary + ".sparql.xml");
 		File outputDir = TARGET_DICTIONARY;
@@ -555,7 +554,7 @@ private static final File TARGET = new File("target");
 				+ " --informat=wikisparqlxml"
 				+ ""
 				+ " --sparqlmap "
-				+ "wikidata=Disease,"
+				+ "wikidataURL=Disease,"
 				+ "p_31_instanceOf=instanceofLabel,"
 				+ "term=DiseaseLabel,"
 				+ "name=DiseaseLabel,"
@@ -579,6 +578,50 @@ private static final File TARGET = new File("target");
 				;
 
 		 */
+	}
+
+	/** submits wikidata query directly to SPARQL endpoint.
+	 * 
+	 * queryFile contains:
+	@code{
+		SELECT ?wikidata ?wikidataLabel ?wikidataAltLabel ?wikidataDescription ?wikipedia WHERE {
+	        ?wikidata wdt:P31 wd:Q12136 .
+		    SERVICE wikibase:label {
+	   		    bd:serviceParam wikibase:language "en"
+		    }
+		    OPTIONAL {
+			    ?wikipedia schema:about ?wikidata .
+			    ?wikipedia schema:inLanguage "en" . 
+			    ?wikipedia schema:isPartOf <https://en.wikipedia.org/> .
+		    } 
+	    }
+	    LIMIT 4
+	 }
+	 * @throws IOException
+	 */
+	@Test
+	public void testCreateFromWikidataQueryMap() throws IOException {
+		String dictionary = "disease4";
+		File queryFile = new File(TEST_DICTIONARY, dictionary + ".sparql");
+		File outputDir = TARGET_DICTIONARY;
+		String cmd = "-vvv"
+				+ " --dictionary " + dictionary
+				+ " --directory=" + outputDir
+				+ " create"
+				+ " --informat=wikisparqlxml"
+				+ " --sparqlquery "+queryFile
+				+ " --sparqlmap "
+				+ "wikidata=wikidata,"
+				+ "wikipedia=wikipedia,"
+				+ "description=wikidataDescription,"
+				+ "wikidataAltLabel=wikidataAltLabel,"
+				+ "term=wikidataLabel,"
+				+ "name=wikidataLabel"
+				+ ""
+				+ " --synonyms=wikidataAltLabel"
+				;
+		AMIDict.execute(cmd);
+		AbstractAMITest.writeOutputAndCompare(TEST_DICTIONARY, dictionary, outputDir);
 	}
 
 	// CREATE

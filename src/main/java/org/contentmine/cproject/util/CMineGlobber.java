@@ -140,8 +140,10 @@ public class CMineGlobber {
 				if (debug) {
 					LOG.debug("dir "+finalPathString+"; p "+path);
 				}
-				if (pathMatcher.matches(path) && useDirectories) {
-					fileList.add(path.toFile());
+				if (pathMatcher.matches(path)) {
+					if (useDirectories) {
+						fileList.add(path.toFile());
+					}
 				}
 				return recurse ? FileVisitResult.CONTINUE : FileVisitResult.TERMINATE;
 		    }
@@ -183,10 +185,15 @@ public class CMineGlobber {
 		return this;
 	}
 
+	/** 
+	 * 
+	 * @param pathString if ends with "/" , sets useDirectories and removes slash
+	 * 
+	 * @return
+	 */
 	public CMineGlobber setGlob(String pathString) {
-		if (pathString == null) {
-			LOG.warn("null pathString");
-		} else if (pathString.startsWith(REGEX)) {
+		pathString = slashSetsDirectories(pathString);
+		if (pathString.startsWith(REGEX)) {
 			setRegex(pathString);
 		} else if (!pathString.startsWith(GLOB)) {
 			this.pathString = GLOB + pathString;
@@ -195,12 +202,25 @@ public class CMineGlobber {
 		}
 		return this;
 	}
+	
+
+	private String slashSetsDirectories(String pathString) {
+		if (pathString.endsWith("/")) {
+			setUseDirectories(true);
+			pathString = pathString.substring(0, pathString.length() - 1);
+		}
+		return pathString;
+	}
+
+	/** 
+	 * 
+	 * @param pathString if ends with "/" , sets useDirectories and removes slash
+	 * 
+	 * @return
+	 */
 
 	public CMineGlobber setRegex(String pathString) {
-		if (pathString == null) {
-			LOG.warn("null pathString");
-			return this;
-		}
+		pathString = slashSetsDirectories(pathString);
 		if (!File.separator.contentEquals("/") && pathString.indexOf("/") != -1) {
 			LOG.error("regex/glob contains / on non-NIX system; have changed to \\; might fail");
 			pathString = pathString.replaceAll("/", "\\"+"\\");

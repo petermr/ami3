@@ -1,0 +1,12 @@
+SELECT ?wikidata ?wikidataLabel ?wikidataAltLabel ?wikidataDescription ?wikipedia WHERE {
+    ?wikidata wdt:P31 wd:Q12136 .
+	SERVICE wikibase:label {
+		bd:serviceParam wikibase:language "en"
+	}
+	OPTIONAL {
+		?wikipedia schema:about ?wikidata .
+		?wikipedia schema:inLanguage "en" . 
+		?wikipedia schema:isPartOf <https://en.wikipedia.org/> .
+	} 
+}
+LIMIT 4

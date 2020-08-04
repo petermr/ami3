@@ -130,6 +130,29 @@ public class AMICleanTest extends AbstractAMITest {
 		Assert.assertEquals("xml files", 0, files.size());
 	}
 
+
+	@Test
+	/**
+	 * tests cleaning XML files in a project
+	 */
+	public void testCleanDirectory() throws IOException {
+		File sourceDir = OIL5;
+		File targetDir = createTargetDir(sourceDir);
+		String glob = "**/sections/";
+		List<File> files = new CMineGlobber().setGlob(glob).setLocation(targetDir).setRecurse(true).listFiles();
+		Assert.assertEquals("section directories", 5, files.size());
+
+		String args = " -vv "
+			+ "-p " + targetDir
+			+ " clean"
+			+ " " + glob
+			;
+		echoAndExecute("-vv -p target/clean/oil5 clean "+glob, args);
+		
+		files = new CMineGlobber().setGlob(glob).setLocation(targetDir).setRecurse(true).listFiles();
+		Assert.assertEquals("xml files", 0, files.size());
+	}
+
 	private File createTargetDir(File sourceDir) {
 		File targetDir = new File(createTargetDirname(), sourceDir.getName()+"/");
 		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);

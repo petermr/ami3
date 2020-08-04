@@ -257,11 +257,10 @@ public void testAllSections() {
 				+ " -v"
 				+ " --forcemake"
 				+ " section"
-//				+ " --extract table fig"
-				+ " --summary fig table"  
+				+ " --extract tab fig"
+				+ " --summary fig tab"  
 			;
 		AMI.execute(cmd);
-//		AMI.execute(AMISectionTool.class, cmd);
 	}
 
 	@Test

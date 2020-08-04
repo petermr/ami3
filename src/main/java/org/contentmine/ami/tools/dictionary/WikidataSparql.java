@@ -60,7 +60,7 @@ public class WikidataSparql {
 	private static final String ITEM_LABEL = "itemLabel";
 	
 	private DictionaryCreationTool dictionaryCreationTool;
-	private Element sparqlXml; 
+	Element sparqlXml; 
 	private List<String> sparqlVariables;
 	private List<Element> sparqlResultList;
 	private List<String> amiNames;
@@ -73,6 +73,7 @@ public class WikidataSparql {
 	}
 	private void checkNameMappings() {
 		amiNames = new ArrayList<String>(this.sparqlNameByAmiName.keySet());
+		LOG.info("WS>"+amiNames);
 		Collections.sort(amiNames);
 		checkAmiNamesContain(MUST_AMI, MUST);
 		checkAmiNamesContain(SHOULD_AMI, SHOULD);
@@ -125,7 +126,46 @@ public class WikidataSparql {
 		}
 	}
 
-	void readSparqlXml(InputStream inputStream) {
+	void readSparqlCreateDictionary(InputStream inputStream) {
+		if (sparqlXml == null) {
+			readSparqlXml(inputStream);
+		}
+		readSparqlVariablesAndCreateMapping();
+		addSparqlResultsToDictionry();
+	}
+	private void readSparqlVariablesAndCreateMapping() {
+		sparqlVariables = XMLUtil.getQueryValues(sparqlXml, 
+				"./*[local-name() = 'head']/*[local-name()='variable']/@name");
+		if (this.sparqlNameByAmiName.size() > 0) {
+			checkNameMappings();
+			DictionaryCreationTool.LOG.info("sparql names " + sparqlVariables);
+		} else {
+			LOG.warn("no --wikidatasparqlmap: Relying on user names for mapping");
+			createIdentityMapping();
+		}
+	}
+	private void addSparqlResultsToDictionry() {
+		sparqlResultList = XMLUtil.getQueryElements(sparqlXml, "./*[local-name()='results']/*[local-name()='result']");
+		DictionaryCreationTool.LOG.info("results " + sparqlResultList.size());
+		for (Element sparqlResult : sparqlResultList) {
+			amiEntry = new Element(DefaultAMIDictionary.ENTRY);
+			for (String amiName : amiNames) {
+				if (amiName.contentEquals(DefaultAMIDictionary.SYNONYM)) {
+					continue;
+				}
+				String sparqlName = this.sparqlNameByAmiName.get(amiName);
+				if (sparqlName != null) {
+					String sparqlValue = getValueByBindingName(sparqlResult, sparqlName);
+					if (sparqlValue != null) {
+						amiEntry.addAttribute(new Attribute(amiName, sparqlValue));
+					}
+				}
+			}
+			addSynonyms(sparqlResult);
+			dictionaryCreationTool.simpleDictionary.getDictionaryElement().appendChild(amiEntry);
+		}
+	}
+	private void readSparqlXml(InputStream inputStream) {
 		/**
 	<sparql xmlns='http://www.w3.org/2005/sparql-results#'>
 	<head>
@@ -156,38 +196,7 @@ public class WikidataSparql {
 		...
 		*/
 		addDesc();
-		
 		sparqlXml = XMLUtil.parseQuietlyToRootElement(inputStream, CMineUtil.UTF8_CHARSET);
-		sparqlVariables = XMLUtil.getQueryValues(sparqlXml, 
-				"./*[local-name() = 'head']/*[local-name()='variable']/@name");
-		if (this.sparqlNameByAmiName.size() > 0) {
-			checkNameMappings();
-			DictionaryCreationTool.LOG.info("sparql names " + sparqlVariables);
-		} else {
-			LOG.warn("no --wikidatasparqlmap: Relying on user names for mapping");
-			createIdentityMapping();
-		}
-		sparqlResultList = XMLUtil.getQueryElements(sparqlXml, "./*[local-name()='results']/*[local-name()='result']");
-		DictionaryCreationTool.LOG.info("results " + sparqlResultList.size());
-		
-		
-		for (Element sparqlResult : sparqlResultList) {
-			amiEntry = new Element(DefaultAMIDictionary.ENTRY);
-			for (String amiName : amiNames) {
-				if (amiName.contentEquals(DefaultAMIDictionary.SYNONYM)) {
-					continue;
-				}
-				String sparqlName = this.sparqlNameByAmiName.get(amiName);
-				if (sparqlName != null) {
-					String sparqlValue = getValueByBindingName(sparqlResult, sparqlName);
-					if (sparqlValue != null) {
-						amiEntry.addAttribute(new Attribute(amiName, sparqlValue));
-					}
-				}
-			}
-			addSynonyms(sparqlResult);
-			dictionaryCreationTool.simpleDictionary.getDictionaryElement().appendChild(amiEntry);
-		}
 	}
 
 	/** creates map with keys identical to sparqlVariables.
@@ -363,7 +372,7 @@ http://www.wikidata.org/entity/Q27176808,LSM-12060,100686
 	/** queries Wikidata/Sparql 
 	 * 
 	 * @param sparqQuery as entered in GUI
-	 * @return
+	 * @return xml result of query
 	 * @throws MalformedURLException
 	 * @throws IOException
 	 */
