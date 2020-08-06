@@ -1,9 +1,7 @@
 ## Summary
 
-Enhancement to Dictionaries 
+This is a template and should be replaced by actual release notes...
 
 ## Changes in this Release
-- amidict can submit SPARQL queries to Wikidata
-- amidict translates wikidataAltLabel to synonyms
-- DSL for transforming dictionaries (EXTRACT, DELETE, etc.)
-
+- First Change
+- Second Change
