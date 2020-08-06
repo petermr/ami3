@@ -209,8 +209,17 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 			split=",",
 			description = "list of terms (entries), space-separated. Requires `inputname` or `dictionary`")
 	private List<String> terms;
-	
 	private Set<String> termSet;
+	
+
+	@Option(names= {"--transformName"},
+			split="@",
+			description="create new attribute name (key) and populate  transformed map value. Syntax:"
+					+ "newAttName@operation(oldAttName,operationValue) where 'operation' is REGEX and operationValue "
+					+ "is a regex with captures. More operations may be added later (e.g. delete and append)"
+			)
+	private Map<String, String> transformationByAmiName = new HashMap<>();
+			
 	
     @Option(names = {"--wptype"}, 
     		arity="1",
@@ -294,15 +303,25 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 			for (String templateName : templateNames) {
 				currentTemplateName = templateName;
 				input(createDictionaryName(currentTemplateName));
-				createDictionary();
+				createAndWriteDictionary();
 			}
 	
 		} else {
 			// single input
-			createDictionary();
+			createAndWriteDictionary();
 		}
 		printMissingLinks();
 
+	}
+
+	private void transformValues() {
+		if (transformationByAmiName.size() > 0) {
+			for (String amiName : transformationByAmiName.keySet()) {
+				DictionaryTransformer dictionaryTransformer = 
+						new DictionaryTransformer(amiName, transformationByAmiName.get(amiName));
+				dictionaryTransformer.transform(simpleDictionary);
+			}
+		}
 	}
 	
 
@@ -352,7 +371,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		return templateName.toLowerCase().replaceAll("[^A-Za-z0-9_\\-]", "");
 	}
 
-	private void createDictionary() {
+	private void createAndWriteDictionary() {
 		InputStream inputStream = null;
 		if (input() != null) {
 			inputStream = getInputStreamFromFile();
@@ -940,6 +959,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 
 	private void writeDictionary(String dictionary) {
 		// this is slightly messy - 
+		transformValues();
 		simpleDictionary.getDictionaryElement().addAttribute(new Attribute(DefaultAMIDictionary.TITLE, dictionary));
 		File subDirectory = getOrCreateExistingSubdirectory(dictionary);
 		if (subDirectory != null) {

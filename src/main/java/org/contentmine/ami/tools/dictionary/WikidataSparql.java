@@ -255,7 +255,8 @@ public class WikidataSparql {
 			String childName = child.getLocalName();
 			if (childName.contentEquals(DictionaryCreationTool.URI)) {
 				// last field in URI
-				value = value.substring(value.lastIndexOf("/") + 1);
+//				value = value.substring(value.lastIndexOf("/") + 1);
+				value = value;
 			} else if (childName.contentEquals(DictionaryCreationTool.LITERAL)) {
 				// copy direct
 			} else {

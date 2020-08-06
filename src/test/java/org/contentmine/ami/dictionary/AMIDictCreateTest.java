@@ -624,6 +624,33 @@ private static final File TARGET = new File("target");
 		AbstractAMITest.writeOutputAndCompare(TEST_DICTIONARY, dictionary, outputDir);
 	}
 
+	@Test
+	public void testCreateFromWikidataQueryMapTransform() throws IOException {
+		String dictionary = "disease4";
+		File queryFile = new File(TEST_DICTIONARY, dictionary + ".sparql");
+		File outputDir = TARGET_DICTIONARY;
+		String cmd = "-vvv"
+				+ " --dictionary " + dictionary
+				+ " --directory=" + outputDir
+				+ " create"
+				+ " --informat=wikisparqlxml"
+				+ " --sparqlquery "+queryFile
+				+ " --sparqlmap "
+				+ "wikidataURL=wikidata,"
+				+ "wikipediaURL=wikipedia,"
+				+ "description=wikidataDescription,"
+				+ "wikidataAltLabel=wikidataAltLabel,"
+				+ "term=wikidataLabel,"
+				+ "name=wikidataLabel"
+				+ " --transformName wikidataID=EXTRACT(wikidataURL,.*/(.*))"
+				+ ""
+				+ " --synonyms=wikidataAltLabel"
+				;
+		AMIDict.execute(cmd);
+		AbstractAMITest.writeOutputAndCompare(TEST_DICTIONARY, dictionary, outputDir);
+	}
+
+
 	// CREATE
 	@Test
 	/** creates  mini dictionary with wikipedia and wikidata links where possible
