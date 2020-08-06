@@ -1,3 +1,14 @@
+# ami v2020.08.06_07.01.42
+## Summary
+
+Enhancement to Dictionaries 
+
+## Changes in this Release
+- amidict can submit SPARQL queries to Wikidata
+- amidict translates wikidataAltLabel to synonyms
+- DSL for transforming dictionaries (EXTRACT, DELETE, etc.)
+
+
 # ami v2020.08.03_12.52.50
 ## Summary
 
