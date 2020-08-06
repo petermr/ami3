@@ -11,6 +11,7 @@ import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -481,6 +482,54 @@ private BiMap<File, File> newFileByOldFile;
 		});
 		return after;
 	}
+
+	/** create a string representation of a directory tree
+	 * ignores hidden files
+	 * @param directory
+	 * @return representation
+	 */
+	public static String createTree(File directory) {
+		return createTree(directory, true);
+	}
+	
+	/** create a string representation of a directory tree
+	 * 
+	 * @param directory
+	 * @param ignoreHidden ignore hidden files (e.g. start with ".")
+	 * @return representation
+	 */
+	public static String createTree(File directory, boolean ignoreHidden) {
+		StringBuilder sb = new StringBuilder();
+		createTree(sb, directory, 0, ignoreHidden);
+		return sb.toString();
+	}
+	private static void createTree(StringBuilder sb, File directory, int level, boolean ignoreHidden) {
+		addSpaces(sb, level);
+		level++;
+		sb.append(directory.getName()+"/\n");
+		File[] fileArray = directory.listFiles();
+		if (fileArray != null) {
+			List<File> files = Arrays.asList(fileArray);
+			Collections.sort(files);
+			for (File file : files) {
+				if (!file.isHidden() || ignoreHidden) {
+					if (file.isDirectory()) {
+						createTree(sb, file, level, ignoreHidden);
+					} else {
+						addSpaces(sb, level);
+						sb.append(file.getName()+"\n");
+					}
+				}
+			}
+		}
+	}
+	
+	private static void addSpaces(StringBuilder sb, int count) {
+		for (int i = 0; i < count; i++) {
+			sb.append(".");
+		}
+	}
+
 
 
 

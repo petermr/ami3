@@ -33,9 +33,8 @@ import org.junit.Test;
  *
  */
 public class AMIDictCreateTest extends AbstractAMIDictTest {
-	private static final File TARGET_DICTIONARY = new File("target/dictionary/");
 	private static final Logger LOG = LogManager.getLogger(AMIDictCreateTest.class);
-private static final File TARGET = new File("target");
+	private static final File TARGET = new File("target");
 	public static final File DICTIONARY_DIR = new File(TARGET, "dictionary");
 	
 

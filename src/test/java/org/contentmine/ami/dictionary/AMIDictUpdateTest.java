@@ -1,6 +1,7 @@
 package org.contentmine.ami.dictionary;
 
 import java.io.File;
+import java.io.IOException;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -86,6 +87,24 @@ public class AMIDictUpdateTest extends AbstractAMIDictTest {
 	AMIDict.execute(args);
 	}
 	
+	
+	@Test
+	public void testCreateFromWikidataQueryMapTransform() throws IOException {
+		String dictionary = "disease4out";
+		File outputDir = TARGET_DICTIONARY;
+		String cmd = "-vvv"
+				+ " --dictionary " + dictionary
+				+ " --directory=" + outputDir
+				+ " update"
+				+ " --transformName wikidataID=EXTRACT(wikidataURL,.*/(.*))"
+				+ ""
+				+ " --synonyms=wikidataAltLabel"
+				;
+		AMIDict.execute(cmd);
+		AbstractAMITest.writeOutputAndCompare(TEST_DICTIONARY, dictionary, outputDir);
+	}
+
+
 	/** flags
 <U+E0066><U+E0072><U+E0072><U+E0065><U+E007F>
 https://en.wikipedia.org/wiki/Tags_(Unicode_block)

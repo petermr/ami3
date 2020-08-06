@@ -6,9 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.logging.log4j.Logger;
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.DebugPrint;
+import org.contentmine.cproject.util.CMineGlobber;
 import org.contentmine.cproject.util.RectangularTable;
 import org.contentmine.eucl.xml.XMLUtil;
 
@@ -28,6 +30,7 @@ import picocli.CommandLine.Option;
 		"Summarizes the specified dictionaries, genes, species and words."
 })
 public class AMISummaryTool extends AbstractAMITool {
+	private static final String _SUMMARY = "_summary";
 	private static final String SNIPPETS_TREE = "snippetsTree";
 	private static final String SNIPPETS = "snippets";
 	private static final String RESULT = "result";
@@ -63,11 +66,6 @@ public enum SummaryType {
 		private OutputType() {
 		}
 	}
-    @Option(names = {"--word"},
-    		arity = "0",
-            description = "analyze word frequencies")
-    private boolean word = false;
-
     @Option(names = {"--dictionary"},
     		arity = "1..*",
             description = "dictionaries to summarize")
@@ -79,17 +77,27 @@ public enum SummaryType {
             description = "genes to summarize")
     private List<String> geneList = new ArrayList<>();
 
-    @Option(names = {"--species"},
-    		arity = "0..*",
-    		defaultValue = "binomial",
-            description = "species to summarize")
-    private List<String> speciesList = new ArrayList<>();
+    @Option(names = {"--glob"},
+    		split=",",
+            description = "files to summarize (as glob)")
+    private List<String> globList = new ArrayList<>();
     
     @Option(names = {"--output-types"},
     		arity = "1..*",
             description = "output type/s")
     private List<OutputType> outputTypes = new ArrayList<>();
     
+    @Option(names = {"--species"},
+    		arity = "0..*",
+    		defaultValue = "binomial",
+            description = "species to summarize")
+    private List<String> speciesList = new ArrayList<>();
+    
+    @Option(names = {"--word"},
+    		arity = "0",
+            description = "analyze word frequencies")
+    private boolean word = false;
+
 	private RectangularTable table;
 	private Multiset<String> totalWordSet;
 	private Multiset<String> documentWordSet;
@@ -139,6 +147,7 @@ public enum SummaryType {
 		summarizeGenes();
 		summarizeSpecies();
 		summarizeWords();
+		analyzePaths();
 	}
 
 	private void initializeTable() {
@@ -245,6 +254,31 @@ public enum SummaryType {
 		return value;
 	}
 
+	private void analyzePaths() {
+		for (String glob : globList) {
+			summarizeGlob(glob);
+		}
+
+	}
+
+	private void summarizeGlob(String glob) {
+		File outputDir = new File(cProject.getDirectory(), _SUMMARY+"/"+output());
+		outputDir.mkdirs();
+		List<File> pathList = new CMineGlobber().setGlob(glob)
+				.setLocation(cProject.getDirectory()).setRecurse(true).listFiles();
+		LOG.info("Sum>files: "+pathList.size());
+		int count = 1;
+		for (File file : pathList) {
+			File newFile = new File(outputDir, (count++)+"_"+file.getName());
+			try {
+				System.out.println(">>"+newFile);
+				FileUtils.copyFile(file, newFile);
+			} catch (IOException e) {
+				throw new RuntimeException("cannot copy", e);
+			}
+		}
+		
+	}
 
 	private void outputTables() {
 		if (outputTypes.contains(OutputType.table)) {

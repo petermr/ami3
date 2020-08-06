@@ -17,6 +17,8 @@ public class AbstractAMIDictTest extends AbstractAMITest {
 	
 	public static final File TARGET = new File("target");
 	public static final File DICTIONARY_DIR = new File(TARGET, "dictionary");
+
+	protected static final File TARGET_DICTIONARY = new File("target/dictionary/");
 	
 
 	@Test

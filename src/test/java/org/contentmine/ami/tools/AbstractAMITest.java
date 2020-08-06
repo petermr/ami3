@@ -1,24 +1,27 @@
 package org.contentmine.ami.tools;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.contentmine.cproject.CMineFixtures;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.util.CMineGlobber;
 import org.contentmine.cproject.util.CMineUtil;
+import org.contentmine.eucl.euclid.util.CMFileUtil;
 import org.contentmine.eucl.testutil.TestUtils;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.junit.Assert;
 import org.junit.Test;
 
-import nonapi.io.github.classgraph.utils.FileUtils;
 import nu.xom.Element;
 
 public abstract class AbstractAMITest {
@@ -84,6 +87,19 @@ public abstract class AbstractAMITest {
 		Element expectedElement = XMLUtil.parseQuietlyToRootElement(expectedFile);
 		Element actualElement = XMLUtil.parseQuietlyToRootElement(new File(outputDir, root + ".xml"));
 		TestUtils.assertEqualsIncludingFloat(root, expectedElement, actualElement, stripWhite, eps);
+	}
+
+	/**
+	 * tests Directories
+	 * 
+	 * @param expectedDirectory
+	 * @param actualDirectory
+	 * 
+	 */
+	public static final void compareDirectories(File expectedDirectory, File actualDirectory) {
+		String expectedTree = CMFileUtil.createTree(expectedDirectory);
+		String actualTree = CMFileUtil.createTree(actualDirectory);
+		Assert.assertEquals("trees not equal", expectedTree, actualTree);
 	}
 
 	protected static void echoAndExecute(String args, String  expected) {
@@ -171,8 +187,7 @@ public abstract class AbstractAMITest {
 	protected AbstractAMITest assertCanReadFile(String msg, File file, long minFileSize) {
 		Assert.assertNotNull(msg + "; cannot read file " + file, file);
 		try {
-//			Files.isReadable(file.toPath()) && Files.isDirectory(path, options);
-			FileUtils.checkCanReadAndIsFile(file);
+			Assert.assertTrue("readable", file != null && file.exists() && !file.isDirectory());
 			Assert.assertTrue(Files.size(file.toPath()) > minFileSize);
 		} catch (IOException e) {
 			Assert.assertFalse(msg + "; cannot read file " + e.getMessage(), true);

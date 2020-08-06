@@ -115,7 +115,6 @@ public class AMICleanTest extends AbstractAMITest {
 		File sourceDir = OIL5;
 		File targetDir = createTargetDir(sourceDir);
 		String glob = "**/sections/**/*.xml";
-//		List<File> files = new CMineGlobber().setGlob(glob).setLocation(targetDir).setRecurse(true).listFiles();
 		List<File> files = new CMineGlobber().setGlob(glob).setLocation(targetDir).setRecurse(true).listFiles();
 		Assert.assertEquals("section directories", 630, files.size());
 
