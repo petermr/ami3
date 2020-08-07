@@ -1,3 +1,16 @@
+# ami v2020.08.07_07.13.18
+## Summary
+
+AMI summary: Aggregating sections over corpus
+
+## Changes in this Release
+- ami `summary` accepts --glob to identify (sub)sections
+- ami `summary` creates a new toplevel directory `_summary` with aggregated subtrees. The
+directory structure tries to mirror the original structures. See AMISummaryTest for
+example.
+ 
+
+
 # ami v2020.08.06_07.01.42
 ## Summary
 
