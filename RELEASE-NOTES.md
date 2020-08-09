@@ -1,3 +1,14 @@
+# ami v2020.08.09_09.54.10
+## Summary
+
+AMISummary 
+
+## Changes in this Release
+- ami summary uses globs to extract leaf nodes into List<File>. 
+- leafNode lists can be aggregated as a subtree (directories are preserved) or flattened into single directory for interfacing to machine-earning tools
+- at alpha level.
+
+
 # ami v2020.08.07_07.13.18
 ## Summary
 
