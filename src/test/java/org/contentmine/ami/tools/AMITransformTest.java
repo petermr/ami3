@@ -18,8 +18,8 @@ import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 
-public class AMITransformToolTest {
-	private static final Logger LOG = LogManager.getLogger(AMITransformToolTest.class);
+public class AMITransformTest {
+	private static final Logger LOG = LogManager.getLogger(AMITransformTest.class);
 @Test
 	public void testOptions() {
 		AMI.execute("-vv transform --tidy");

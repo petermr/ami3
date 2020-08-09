@@ -8,8 +8,8 @@ import org.apache.logging.log4j.LogManager;
 import org.junit.Ignore;
 import org.junit.Test;
 
-public class AMITableToolTest extends AbstractAMITest {
-	private static final Logger LOG = LogManager.getLogger(AMITableToolTest.class);
+public class AMITableTest extends AbstractAMITest {
+	private static final Logger LOG = LogManager.getLogger(AMITableTest.class);
 @Test
 	@Ignore // phytomedchem.xml not found (See CEVOpen)
 	public void testSummaryTableOil() {

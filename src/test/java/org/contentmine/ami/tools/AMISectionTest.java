@@ -63,11 +63,12 @@ import nu.xom.Element;
  * @author pm286
  *
  */
-public class AMISectionToolTest extends AbstractAMITest {
+public class AMISectionTest extends AbstractAMITest {
 	
 
 	private static final File TARGET_SECTION = new File("target/section/");
-	private static final Logger LOG = LogManager.getLogger(AMISectionToolTest.class);
+	private static final Logger LOG = LogManager.getLogger(AMISectionTest.class);
+	
 @Test
 	public void testHelp() {
 		String cmd = " section --help";

@@ -10,9 +10,9 @@ import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.junit.Test;
 
-public class AMISummaryToolTest extends AbstractAMITest {
+public class AMISummaryTest extends AbstractAMITest {
 	private static final String SUMMARY_CONST = "_summary";
-	private static final Logger LOG = LogManager.getLogger(AMISummaryToolTest.class);
+	private static final Logger LOG = LogManager.getLogger(AMISummaryTest.class);
 	static File TIGR2ESS = new File("/Users/pm286/workspace/Tigr2essDistrib/tigr2ess");
 	private static final File DICTIONARY_EXAMPLES = new File(TIGR2ESS, "dictionaries/examples/");
 	static File OSANCTUM200 = new File(TIGR2ESS, "/osanctum200");
@@ -33,7 +33,7 @@ public class AMISummaryToolTest extends AbstractAMITest {
 	}
 	
 	@Test
-	public void summarizeMethods() {
+	public void testSummarizeMethods() {
 		String root = "methods";
 		String project = "summarizeProject/";
 		File expectedDir = new File(TEST_BATTERY10+"."+"expected", project);
@@ -44,10 +44,36 @@ public class AMISummaryToolTest extends AbstractAMITest {
 				+ " --output " + "/sections/body/"+root
 				+ " summary "
 				+ " --glob **/PMC*/sections/*_body/*_methods/**/*_p.xml"
+				+ " --flatten"
 			;
 		AMI.execute(cmd);
 		AbstractAMITest.compareDirectories(targetDir, expectedDir);
 		
 	}
+
+	/** extracts the unflattened subtree with a globbed set of leafnodes
+	 * This creates a glob'ed list of results files and then creates a subtree of
+	 * the project (see target/<project>
+	 * Still a prototype
+	 * 
+	 * */
+	@Test
+	public void testSummarizeSearchResults() {
+		String root = "search";
+		String project = "summarizeProject/";
+		File expectedDir = new File(TEST_BATTERY10+"."+"expected", project);
+		File targetDir = new File("target/"+project);
+		CMineTestFixtures.cleanAndCopyDir(TEST_BATTERY10, targetDir);
+		String cmd = "-vvv"
+				+ " -p "+targetDir
+				+ " --output " + "/results/"+root
+				+ " summary "
+				+ " --glob **/PMC*/results/search/*/results.xml"
+			;
+		AMI.execute(cmd);
+		AbstractAMITest.compareDirectories(targetDir, expectedDir);
+		
+	}
+
 
 }

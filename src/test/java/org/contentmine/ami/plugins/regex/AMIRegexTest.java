@@ -34,8 +34,8 @@ import nu.xom.Text;
  * @author pm286
  *
  */
-public class AMIRegexToolTest {
-	private static final Logger LOG = LogManager.getLogger(AMIRegexToolTest.class);
+public class AMIRegexTest {
+	private static final Logger LOG = LogManager.getLogger(AMIRegexTest.class);
 /** test generation of conformant regexes
 	 * 
 	 * desn't run anything

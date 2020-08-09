@@ -12,27 +12,8 @@ import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.norma.NAConstants;
 import org.junit.Test;
 
-public class AMIWordsToolTest extends AbstractAMITest {
-	private static final Logger LOG = LogManager.getLogger(AMIWordsToolTest.class);
-@Test
-	/** a regression test. Uses conventional Old search */
-	public void testOilSearch() {
-//		File testFile = OIL5;
-//		String name = testFile.getName();
-//		File targetDir = new File("target/cooccurrence/", name);
-//		CMineTestFixtures.cleanAndCopyDir(testFile, targetDir);
-//		/** need HTML */
-//		String args = 
-//				"-p /Users/pm286/workspace/cmdev/normami/target/cooccurrence/"+name+"/";
-//			;
-//		new AMITransformTool().runCommands(args);
-//		// transformed norma
-		System.out.println("output "+OIL5);
-		String cmd = ""
-				+ " -p " + OIL5
-			;
-//		AMISearchToolTest. cmd);
-	}
+public class AMIWordsTest extends AbstractAMITest {
+	private static final Logger LOG = LogManager.getLogger(AMIWordsTest.class);
 	
 
 	@Test

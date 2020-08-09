@@ -180,12 +180,14 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	@Option(names = {"--synonyms"},
 			description = "synonyms retrived from source. Syntax depends on source type."
 					+ "for `sparql` `AltLabels` this is a single String with comma-separated "
-					+ "synonyms (and maybe extraneous commas)"
+					+ "synonyms (and maybe extraneous commas)."
+					+ " DEPRECATED - will move to `ami update`"
 					
 			) List<String> synonymList = null;
 	
     @Option(names = {"--template"}, 
     		arity="1..*",
+    		
     		description = "names of Wikipedia Templates, e.g. Viral_systemic_diseases "
     				+ "(note underscores not spaces). Dictionaries will be created with lowercase"
     				+ "names and all punctuation removed).")
@@ -216,7 +218,8 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 			split="@",
 			description="create new attribute name (key) and populate  transformed map value. Syntax:"
 					+ "newAttName@operation(oldAttName,operationValue) where 'operation' is REGEX and operationValue "
-					+ "is a regex with captures. More operations may be added later (e.g. delete and append)"
+					+ "is a regex with captures. More operations may be added later (e.g. delete and append)."
+					+ " DEPRECATED. Will move to ami update"
 			)
 	private Map<String, String> transformationByAmiName = new HashMap<>();
 			

@@ -27,7 +27,9 @@ import picocli.CommandLine.Option;
  */
 @Command(name = "summary",
 		description = {
-		"Summarizes the specified dictionaries, genes, species and words."
+		"Summarizes the CTree files into a single toplevel CProject directory tree."
+		+ "Used to be hardcoded , but now can be controlled by glob "
+				
 })
 public class AMISummaryTool extends AbstractAMITool {
 	private static final String _SUMMARY = "_summary";
@@ -68,13 +70,18 @@ public enum SummaryType {
 	}
     @Option(names = {"--dictionary"},
     		arity = "1..*",
-            description = "dictionaries to summarize")
+            description = "dictionaries to summarize. Probably OBSOLETE")
     private List<String> dictionaryList = new ArrayList<>();
+
+    @Option(names = {"--flatten"},
+    	    defaultValue = "false",
+            description = "collect all leaf nodes in single directory")
+    private boolean flatten = false;
 
     @Option(names = {"--gene"},
     		arity = "0..*",
     	    defaultValue = "human",
-            description = "genes to summarize")
+            description = "genes to summarize. OBSOLETE")
     private List<String> geneList = new ArrayList<>();
 
     @Option(names = {"--glob"},
@@ -84,18 +91,18 @@ public enum SummaryType {
     
     @Option(names = {"--output-types"},
     		arity = "1..*",
-            description = "output type/s")
+            description = "output type/s. Not sure how useful this is. `table` creates a CSV table")
     private List<OutputType> outputTypes = new ArrayList<>();
     
     @Option(names = {"--species"},
     		arity = "0..*",
     		defaultValue = "binomial",
-            description = "species to summarize")
+            description = "species to summarize. OBSOLETE")
     private List<String> speciesList = new ArrayList<>();
     
     @Option(names = {"--word"},
     		arity = "0",
-            description = "analyze word frequencies")
+            description = "analyze word frequencies. Probably OBSOLETE.")
     private boolean word = false;
 
 	private RectangularTable table;

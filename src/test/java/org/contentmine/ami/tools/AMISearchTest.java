@@ -10,10 +10,10 @@ import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.norma.NAConstants;
 import org.junit.Test;
 
-public class AMISearchToolTest extends AbstractAMITest {
+public class AMISearchTest extends AbstractAMITest {
 	private static final String MAIN_AMI_DIR = "src/main/resources/org/contentmine/ami";
 
-	private static final Logger LOG = LogManager.getLogger(AMISearchToolTest.class);
+	private static final Logger LOG = LogManager.getLogger(AMISearchTest.class);
 	
 	static File TIGR2ESS = new File("/Users/pm286/workspace/Tigr2essDistrib/tigr2ess");
 	private static final File TIGR2ESS_DICTIONARY_EXAMPLES = new File(TIGR2ESS, "dictionaries/examples/");

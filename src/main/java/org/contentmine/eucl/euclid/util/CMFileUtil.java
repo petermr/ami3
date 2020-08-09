@@ -530,6 +530,23 @@ private BiMap<File, File> newFileByOldFile;
 		}
 	}
 
+	/** 
+	 * for file /a/b/c/d.e return ["a", "b", "c", "d.e"]
+	 * @param file
+	 * @return
+	 */
+	public static List<String> getFileComponents(File file) {
+		List<String> components = new ArrayList<>();
+		components.add(file.getName());
+		File parent = file.getParentFile();
+		while (parent != null) {
+			components.add(parent.getName());
+			parent = parent.getParentFile();
+		}
+		Collections.reverse(components);
+		return components;
+			
+	}
 
 
 
