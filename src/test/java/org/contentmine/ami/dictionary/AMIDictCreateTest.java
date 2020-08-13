@@ -1220,32 +1220,6 @@ LIMIT 10
 //				+ "</binding></result></results></sparql>", out);
 	}
 
-
-
-
-	// ============================== HELPERS ========================
-	// ============================== HELPERS ========================
-	// PRIVATE
-	private static void downloadAndTest(File outputFile, String urlString, int minsize, int maxsize) throws IOException {
-		new CurlDownloader().setUrlString(urlString).setOutputFile(outputFile).run();
-		Assert.assertTrue("outputfile exists "+outputFile, outputFile.exists());
-		long sizeOf = FileUtils.sizeOf(outputFile);
-		Assert.assertTrue("outputfile size "+sizeOf+" / "+outputFile, sizeOf > minsize && sizeOf < maxsize);
-	}
-
-	private static void createFromMediaWikiTemplate(String template, String fileTop, String wptype) {
-		String args =
-				" -v " +
-				"create " +
-	           " --directory " + fileTop +
-	           " --outformats html,xml " +
-	           " --template " + template +
-	           " --wptype " + wptype +
-	           " --wikilinks wikidata"
-				;
-		AMIDict.execute(args);
-	}
-	
 	@Test
 	public void testMultipleLanguage() {
 		String cmd = ""
@@ -1270,10 +1244,36 @@ LIMIT 10
 				+ "Tamil_description=tamil,"
 				+ "Tamil_altName=tamilAltLabel"
 				+ ""
-				+ " --transformName=EXTRACT(wikipediaURL,.*(.*))"
+				+ " --transformName wikipediaID=EXTRACT(wikipediaURL,.*/(.*))"
 				+ "	--synonyms=wikidataAltLabel"
 				;
 		AMIDict.execute(cmd);
+	}
+	
+
+
+
+	// ============================== HELPERS ========================
+	// ============================== HELPERS ========================
+	// PRIVATE
+	private static void downloadAndTest(File outputFile, String urlString, int minsize, int maxsize) throws IOException {
+		new CurlDownloader().setUrlString(urlString).setOutputFile(outputFile).run();
+		Assert.assertTrue("outputfile exists "+outputFile, outputFile.exists());
+		long sizeOf = FileUtils.sizeOf(outputFile);
+		Assert.assertTrue("outputfile size "+sizeOf+" / "+outputFile, sizeOf > minsize && sizeOf < maxsize);
+	}
+
+	private static void createFromMediaWikiTemplate(String template, String fileTop, String wptype) {
+		String args =
+				" -v " +
+				"create " +
+	           " --directory " + fileTop +
+	           " --outformats html,xml " +
+	           " --template " + template +
+	           " --wptype " + wptype +
+	           " --wikilinks wikidata"
+				;
+		AMIDict.execute(args);
 	}
 	
 	
