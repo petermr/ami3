@@ -1270,7 +1270,7 @@ LIMIT 10
 				+ "Tamil_description=tamil,"
 				+ "Tamil_altName=tamilAltLabel"
 				+ ""
-				+ " --transformname=EXTRACT(wikipediaURL,.*(.*))"
+				+ " --transformName=EXTRACT(wikipediaURL,.*(.*))"
 				+ "	--synonyms=wikidataAltLabel"
 				;
 		AMIDict.execute(cmd);
