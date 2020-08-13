@@ -1280,7 +1280,7 @@ public final static Pattern DOI_PREFIX = Pattern.compile("(10\\.[0-9]{3,}([\\.][
 			title = titleList.get(0).getValue();
 			LOG.trace("title: "+title);
 		} else {
-			LOG.trace("NO NO NO");
+			LOG.trace("NO citation-title");
 		}
 	}
 

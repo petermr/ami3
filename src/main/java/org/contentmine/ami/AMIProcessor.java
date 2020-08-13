@@ -97,6 +97,7 @@ public class AMIProcessor {
 		}
 		EntityAnalyzer entityAnalyzer = EntityAnalyzer.createEntityAnalyzer(cProject.getDirectory());
 	
+		LOG.debug("Analysing facets: "+facets);
 		for (String facet : facets) {
 			entityAnalyzer.createAndAddOccurrenceAnalyzer(facet).setMaxCount(25);
 		}

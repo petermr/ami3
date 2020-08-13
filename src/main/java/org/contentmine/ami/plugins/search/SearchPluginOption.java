@@ -38,7 +38,7 @@ public static final String TAG = "search";
 		commandStringBuilder.append(" --sr.search");		
 		commandStringBuilder.append(" "+createSearchDictionaryResourceString(searchDictionary));
 		plugin = "search";
-		LOG.trace("SEARCH "+commandStringBuilder);
+		LOG.debug("SEARCH "+commandStringBuilder);
 		String commandString = commandStringBuilder.toString();
 		SearchArgProcessor searchArgProcessor = new SearchArgProcessor(commandString);
 		searchArgProcessor.runAndOutput();

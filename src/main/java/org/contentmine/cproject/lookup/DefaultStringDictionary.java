@@ -7,11 +7,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.contentmine.eucl.xml.XMLUtil;
 
 import nu.xom.Element;
+import nu.xom.Elements;
 
 public class DefaultStringDictionary {
 
@@ -19,12 +20,26 @@ public class DefaultStringDictionary {
 	
 	public static final String ENTRY = "entry";
 	public static final String TERM = "term";
+	public static final String SYNONYM = "synonym";
 	public static final String TITLE = "title";
 
 	
 	protected String title;
-	protected Map<String, List<List<String>>> trailingWordsByLeadWord;
+	protected boolean addSynonyms = 
+			true
+//			false
+			;
 	
+	/** all words or phrases indexed by lead word.
+	 * Thus (I think)
+	 * University of Cambridge
+	 * University of East Anglia
+	 * 
+	 * creates two phrases indexed by "University" 
+	 * 
+	 */
+	protected Map<String, List<List<String>>> trailingWordsByLeadWord;
+	private int minSynonymLength = 5;
 	
 	public static DefaultStringDictionary createDictionary(String dictionarySource, InputStream is) {
 		DefaultStringDictionary dictionary = null;
@@ -65,29 +80,50 @@ public class DefaultStringDictionary {
 		LOG.trace("creating dictionary "+title+" / "+entryList.size());
 		trailingWordsByLeadWord = new HashMap<String, List<List<String>>>();
 		for (Element entry : entryList) {
-			String term = entry.getAttributeValue(TERM);
-			if (term == null) {
-				throw new RuntimeException("missing term attribute");
+			addEntryToDictionary(entry);
+		}
+	}
+
+	private void addEntryToDictionary(Element entry) {
+		String term = entry.getAttributeValue(TERM);
+		if (term == null) {
+			throw new RuntimeException("missing term attribute");
+		}
+		term = term.trim();
+//		System.out.println("V "+term);
+		if (term.length() > 0) {
+			addStringToTrailingWordsMap(term);
+		}
+		if (addSynonyms) {
+			addSynonyms(entry);
+		}
+	}
+
+	private void addSynonyms(Element entry) {
+		Elements synonymElements = entry.getChildElements(SYNONYM);
+		for (Element synonym : synonymElements) {
+			String value = synonym.getValue();
+			if (value.length() >= minSynonymLength) {
+				addStringToTrailingWordsMap(value);
 			}
-			term = term.trim();
-			LOG.trace("V "+term);
-			if (term.length() == 0) {
-				continue;
-			}
-			String[] wordList = term.split("\\s+");
-			String key = wordList[0];
-			LOG.trace("K "+key);
-			List<List<String>> lists = trailingWordsByLeadWord.get(key);
-			if (lists == null) {
-				lists = new ArrayList<List<String>>();
-				trailingWordsByLeadWord.put(key, lists);
-				LOG.trace("added: "+key);
-			}
-			List<String> trailingList = new ArrayList<String>();
-			lists.add(trailingList);
-			for (int i = 1; i < wordList.length; i++) {
-				trailingList.add(wordList[i]);
-			}
+		}
+	}
+
+	private void addStringToTrailingWordsMap(String term) {
+		if (term == null) return;
+		String[] wordList = term.split("\\s+");
+		String key = wordList[0];
+		System.out.println("K "+key);
+		List<List<String>> lists = trailingWordsByLeadWord.get(key);
+		if (lists == null) {
+			lists = new ArrayList<List<String>>();
+			trailingWordsByLeadWord.put(key, lists);
+			LOG.debug("added: "+key);
+		}
+		List<String> trailingList = new ArrayList<String>();
+		lists.add(trailingList);
+		for (int i = 1; i < wordList.length; i++) {
+			trailingList.add(wordList[i]);
 		}
 	}
 	
@@ -99,4 +135,22 @@ public class DefaultStringDictionary {
 	public List<List<String>> getTrailingWords(String headWord) {
 		return trailingWordsByLeadWord != null ? trailingWordsByLeadWord.get(headWord) : null;
 	}
+	
+	public boolean isAddSynonyms() {
+		return addSynonyms;
+	}
+
+	public void setAddSynonyms(boolean addSynonyms) {
+		this.addSynonyms = addSynonyms;
+	}
+	
+	public int getMinSynonymLength() {
+		return minSynonymLength;
+	}
+
+	public void setMinSynonymLength(int minSynonymLength) {
+		this.minSynonymLength = minSynonymLength;
+	}
+
+
 }

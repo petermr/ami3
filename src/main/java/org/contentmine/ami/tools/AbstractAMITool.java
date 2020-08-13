@@ -241,7 +241,8 @@ public enum IncExc {
 		for (OptionSpec option : spec.options()) {
 			String label = parseResult.hasMatchedOption(option)
 					? "(matched)" : "(default)";
-			LOG.printf(Level.INFO, "%-20s: %1s %9s%n", option.longestName(), label.substring(1,  2), option.getValue());
+//			LOG.printf(Level.INFO, "%-20s: %1s %9s%n", option.longestName(), label.substring(1,  2), option.getValue());
+			LOG.printf(Level.INFO, "%-20s: %1s %9s", option.longestName(), label.substring(1,  2), option.getValue());
 			if (stream != null) {
 				stream.printf("%-20s: %1s %9s%n", option.longestName(), label.substring(1,  2), option.getValue());
 			}

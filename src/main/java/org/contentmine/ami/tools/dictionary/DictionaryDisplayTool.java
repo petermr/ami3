@@ -158,19 +158,20 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 
 	public void runSub() {
 		getOrCreateExistingDictionaryTop();
-//		LOG.info(">"+dictionaryTop.getAbsolutePath());
-		List<File> fileList = (files.size() > 0) ? files : collectDictionaryFiles(dictionaryTop);
-		listFiles(fileList);
+		LOG.info(">"+dictionaryTop.getAbsolutePath());
+		if (dictionaryName != null) {
+			listDictionaryInfo(new File(dictionaryTop, dictionaryName));
+		} else {
+			List<File> fileList = (files.size() > 0) ? files : collectDictionaryFiles(dictionaryTop);
+			listFiles(fileList);
+		}
 	}
 	
 	private void listFiles(List<File> files) {
-		if (files == null) {
+		if (files.size() == 0) {
 			LOG.warn("no files");
-			return;
-		} 
-		Collections.sort(files);
-		
-		if (files.size() > 0) {
+		} else {
+			Collections.sort(files);
 			LOG.debug(DebugPrint.MARKER, "list all FILE dictionaries "+files.size());
 			for (File file : files) {
 				listDictionaryInfo(file);
@@ -238,9 +239,14 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 				+ " or name()='name'"
 				+ " or name()='description'"
 				+ " or name()='id'"
-				+ " or name()='url'"
-				+ " or name()='wikipedia'"
-				+ " or name()='wikidata'"
+				+ " or name()='wikipediaURL'"
+				+ " or name()='wikidataID'"
+				+ " or name()='wikidataURL'"
+				+ " or name()='wikidataAltLabel'"
+
+				+ " or starts-with(name(),'_p')"
+				+ " or starts-with(name(),'_q')"
+				+ " or starts-with(name(),'_')"
 				+ ")"
 				+ "]"
 				

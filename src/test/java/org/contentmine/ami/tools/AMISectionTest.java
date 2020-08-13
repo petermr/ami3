@@ -123,6 +123,7 @@ public void testAllSections() {
 				+ " --sectiontype XML"
 			;
 		AMI.execute(AMISectionTool.class, cmd);
+		String command = "ami -p <myproject> --forcemake section --sections ALL --sectiontype XML";
 	}
 	
 	

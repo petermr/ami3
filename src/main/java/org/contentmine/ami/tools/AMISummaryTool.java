@@ -2,12 +2,14 @@ package org.contentmine.ami.tools;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.logging.log4j.Logger;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.DebugPrint;
 import org.contentmine.cproject.util.CMineGlobber;
@@ -51,7 +53,7 @@ public class AMISummaryTool extends AbstractAMITool {
 	private static final String WORD        = "word";
 
 	private static final Logger LOG = LogManager.getLogger(AMISummaryTool.class);
-public enum SummaryType {
+	public enum SummaryType {
 		count,
 		documents,
 		snippets,
@@ -68,21 +70,21 @@ public enum SummaryType {
 		private OutputType() {
 		}
 	}
-    @Option(names = {"--dictionary"},
-    		arity = "1..*",
-            description = "dictionaries to summarize. Probably OBSOLETE")
-    private List<String> dictionaryList = new ArrayList<>();
+//    @Option(names = {"--dictionary"},
+//    		arity = "1..*",
+//            description = "dictionaries to summarize. Probably OBSOLETE")
+//    private List<String> dictionaryList = new ArrayList<>();
 
     @Option(names = {"--flatten"},
     	    defaultValue = "false",
-            description = "collect all leaf nodes in single directory")
-    private boolean flatten = false;
+            description = "collect all leaf nodes in single directory; default=true")
+    private boolean flatten = true;
 
-    @Option(names = {"--gene"},
-    		arity = "0..*",
-    	    defaultValue = "human",
-            description = "genes to summarize. OBSOLETE")
-    private List<String> geneList = new ArrayList<>();
+//    @Option(names = {"--gene"},
+//    		arity = "0..*",
+//    	    defaultValue = "human",
+//            description = "genes to summarize. OBSOLETE")
+//    private List<String> geneList = new ArrayList<>();
 
     @Option(names = {"--glob"},
     		split=",",
@@ -94,11 +96,11 @@ public enum SummaryType {
             description = "output type/s. Not sure how useful this is. `table` creates a CSV table")
     private List<OutputType> outputTypes = new ArrayList<>();
     
-    @Option(names = {"--species"},
-    		arity = "0..*",
-    		defaultValue = "binomial",
-            description = "species to summarize. OBSOLETE")
-    private List<String> speciesList = new ArrayList<>();
+//    @Option(names = {"--species"},
+//    		arity = "0..*",
+//    		defaultValue = "binomial",
+//            description = "species to summarize. OBSOLETE")
+//    private List<String> speciesList = new ArrayList<>();
     
     @Option(names = {"--word"},
     		arity = "0",
@@ -123,10 +125,11 @@ public enum SummaryType {
 
     @Override
 	protected void parseSpecifics() {
-		LOG.info("dictionaryList       {}", dictionaryList);
-		LOG.info("geneList             {}", geneList);
-		LOG.info("speciesList          {}", speciesList);
-		LOG.info("word                 {}", word);
+    	super.parseSpecifics();
+//		LOG.info("dictionaryList       {}", dictionaryList);
+//		LOG.info("geneList             {}", geneList);
+//		LOG.info("speciesList          {}", speciesList);
+//		LOG.info("word                 {}", word);
 	}
 
     @Override
@@ -150,9 +153,6 @@ public enum SummaryType {
 
 	private void runSummary() {
 		initializeTable();
-		summarizeDictionaries();
-		summarizeGenes();
-		summarizeSpecies();
 		summarizeWords();
 		analyzePaths();
 	}
@@ -174,23 +174,23 @@ public enum SummaryType {
 		table.setHeader(header);
 	}
 
-	private void summarizeDictionaries() {
-		for (String dictionary : dictionaryList) {
-			summarize(SEARCH, dictionary, SummaryType.snippets);
-		}
-	}
+//	private void summarizeDictionaries() {
+//		for (String dictionary : dictionaryList) {
+//			summarize(SEARCH, dictionary, SummaryType.snippets);
+//		}
+//	}
 
-	private void summarizeGenes() {
-		for (String gene : geneList) {
-			summarize(GENE, gene, SummaryType.snippets);
-		}
-	}
+//	private void summarizeGenes() {
+//		for (String gene : geneList) {
+//			summarize(GENE, gene, SummaryType.snippets);
+//		}
+//	}
 
-	private void summarizeSpecies() {
-		for (String species : speciesList) {
-			summarize(SPECIES, species, SummaryType.snippets);
-		}
-	}
+//	private void summarizeSpecies() {
+//		for (String species : speciesList) {
+//			summarize(SPECIES, species, SummaryType.snippets);
+//		}
+//	}
 
 	private void summarizeWords() {
 		if (word) {
@@ -269,22 +269,41 @@ public enum SummaryType {
 	}
 
 	private void summarizeGlob(String glob) {
-		File outputDir = new File(cProject.getDirectory(), _SUMMARY+"/"+output());
+		File outputDir = flatten ? new File(cProject.getDirectory(), _SUMMARY+"/"+output()) :
+			new File(cProject.getDirectory(), _SUMMARY);
+		Path outputDirPath = Paths.get(outputDir.getAbsolutePath());
 		outputDir.mkdirs();
-		List<File> pathList = new CMineGlobber().setGlob(glob)
+		List<File> fileList = new CMineGlobber().setGlob(glob)
 				.setLocation(cProject.getDirectory()).setRecurse(true).listFiles();
-		LOG.info("Sum>files: "+pathList.size());
-		int count = 1;
-		for (File file : pathList) {
-			File newFile = new File(outputDir, (count++)+"_"+file.getName());
+		LOG.info("Sum>files: "+fileList.size());
+//		System.out.println(fileList);
+		makeSubtreeFiles(outputDir, outputDirPath, fileList);
+		
+	}
+
+	private List<File> makeSubtreeFiles(File outputDir, Path outputDirPath, List<File> fileList) {
+		List<File> subtreeFileList = new ArrayList<>();
+		for (int count = 0; count < fileList.size(); count++) {
+			File file = fileList.get(count);
+			File subTreeFile = makeSubtreeFile(outputDir, outputDirPath, count, file);
 			try {
-				System.out.println(">>"+newFile);
-				FileUtils.copyFile(file, newFile);
+				FileUtils.copyFile(file, subTreeFile);
 			} catch (IOException e) {
 				throw new RuntimeException("cannot copy", e);
 			}
+			count++;
 		}
-		
+		return subtreeFileList;
+	}
+
+	private File makeSubtreeFile(File outputDir, Path outputDirPath, int count, File file) {
+		Path filePath = Paths.get(file.getAbsolutePath());
+		Path invRelPath = outputDirPath.relativize(filePath);
+		Path invRelPath1 = invRelPath.subpath(1, invRelPath.getNameCount());
+		Path resolvePath = outputDirPath.resolve(invRelPath1);
+
+		File subtreeFile = flatten ? new File(outputDir, count+"_"+file.getName()) : resolvePath.toFile();
+		return subtreeFile;
 	}
 
 	private void outputTables() {

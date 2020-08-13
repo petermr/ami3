@@ -21,7 +21,7 @@ public class SearchArgProcessor extends AbstractSearchArgProcessor {
 	// Dummy at present
 	
 	public static final Logger LOG = LogManager.getLogger(SearchArgProcessor.class);
-public SearchArgProcessor() {
+	public SearchArgProcessor() {
 		super();
 	}
 

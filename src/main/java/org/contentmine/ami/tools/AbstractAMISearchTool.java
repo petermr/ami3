@@ -121,7 +121,7 @@ public abstract class AbstractAMISearchTool extends AbstractAMITool {
 
 	@Option(names = {"--no-oldstyle"},
 			description = "(A) use oldstyle style of processing (project based) for unconverted tools; "
-					+ "new style is per tree")
+					+ "new style is per tree default is true (this may be changed later)")
 	protected boolean oldstyle = true;
 
 	protected AbstractSearchArgProcessor abstractSearchArgProcessor;
@@ -172,7 +172,7 @@ public abstract class AbstractAMISearchTool extends AbstractAMITool {
 				processProject();
 			}
     	} else if (processTrees()) { 
-    		LOG.debug("New style, processTrees()");
+    		LOG.debug("New style, processTrees() NYI");
     		// 
     	}
     }

@@ -623,6 +623,17 @@ public class AMIDictCreateTest extends AbstractAMIDictTest {
 		AbstractAMITest.writeOutputAndCompare(TEST_DICTIONARY, dictionary, outputDir);
 	}
 
+	/**
+	 * 
+	<entry term="Ebola hemorrhagic fever" name="Ebola hemorrhagic fever" wikidataID="Q51993" 
+	_pP828_hasCause="Q5331908" description="human disease">
+  	    <synonym>EVD</synonym>
+	    <synonym>EHF</synonym>
+	    <synonym>Ebola</synonym>
+	    <synonym>Ebola fever</synonym>
+	    <synonym>Ebola virus disease</synonym>
+	</entry>
+*/	
 	@Test
 	public void testCreateFromWikidataQueryMapTransform() throws IOException {
 		String dictionary = "disease4";
@@ -1234,6 +1245,41 @@ LIMIT 10
 				;
 		AMIDict.execute(args);
 	}
+	
+	@Test
+	public void testMultipleLanguage() {
+		String cmd = ""
+//				+ "amidict"
+				+ " -vv "
+				+ " --dictionary disease"
+				+ " --directory dictionary"
+				+ " --input disease_multi"
+				+ " create"
+				+ " --informat wikisparqlxml"
+				+ " --sparqlmap "
+				+ " wikidataURL=wikidata,"
+				+ "wikipediaURL=wikipedia,"
+				+ "name=wikidataLabel,"
+				+ "term=wikidataLabel,"
+				+ "description=wikidataDescription,"
+				+ "ICD-10_code=ICD_10,"
+				+ "Hindi=hindiLabel,"
+				+ "Hindi_description=hindi,"
+				+ "Hindi_altName=hindiAltLabel,"
+				+ "Tami=tamiLabel,"
+				+ "Tamil_description=tamil,"
+				+ "Tamil_altName=tamilAltLabel"
+				+ ""
+				+ " --transformname=EXTRACT(wikipediaURL,.*(.*))"
+				+ "	--synonyms=wikidataAltLabel"
+				;
+		AMIDict.execute(cmd);
+	}
+	
+	
+	
+	// ============== PRIVATE HELPERS ================
+	
 	
 	/** convenience tester for creating Dictionaries from WikidataSparql
 	 * 

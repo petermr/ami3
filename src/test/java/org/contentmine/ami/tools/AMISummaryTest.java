@@ -69,6 +69,7 @@ public class AMISummaryTest extends AbstractAMITest {
 				+ " --output " + "/results/"+root
 				+ " summary "
 				+ " --glob **/PMC*/results/search/*/results.xml"
+//				+ " --merge=1"
 			;
 		AMI.execute(cmd);
 		AbstractAMITest.compareDirectories(targetDir, expectedDir);

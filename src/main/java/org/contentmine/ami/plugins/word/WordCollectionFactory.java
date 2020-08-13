@@ -36,8 +36,10 @@ import nu.xom.IllegalCharacterDataException;
  *
  */
 public class WordCollectionFactory {
-	public static final Logger LOG = LogManager.getLogger(WordCollectionFactory.class);
-private static final String COUNT2 = "count";
+	private static final Logger LOG = LogManager.getLogger(WordCollectionFactory.class);
+	
+	private static final String _PR = "WCF>";
+	private static final String COUNT = "count";
 	private static final String VALUE = "value";
 	private static final String LENGTH = "length";
 	private static final String LENGTHS = "lengths";
@@ -61,7 +63,7 @@ private static final String COUNT2 = "count";
 	private int minCountInSet;
 	private int minRawWordLength;
 	private int maxRawWordLength;
-	private String sortControl = COUNT2;
+	private String sortControl = COUNT;
 	private Iterable<Multiset.Entry<String>> entriesSortedByCount;
 	private Iterable<Multiset.Entry<String>> entriesSortedByValue;
 	private WordResultsElement frequenciesElement;
@@ -71,8 +73,15 @@ private static final String COUNT2 = "count";
 	private List<String> rawWords;
 	private AMIWordsTool wordsTool;
 
+	private WordArgProcessor wordArgProcessor;
+
+	private List<String> wordList;
+
 	public WordCollectionFactory(AMIArgProcessor argProcessor) {
 		this.amiArgProcessor = argProcessor;
+		if (amiArgProcessor instanceof WordArgProcessor) {
+			this.wordArgProcessor = (WordArgProcessor) amiArgProcessor;
+		}
 		setDefaults();
 	}
 
@@ -99,45 +108,52 @@ private static final String COUNT2 = "count";
 	/** entry point from WordArgProcessor but could be changed to AMIWordsTool */
 	void extractWords() {
 
-		List<String> words = createWordList();
-		if (words == null) {
+		wordList = createWordList();
+		if (wordList == null) {
 			LOG.debug("no words found to extract");
 			return;
 		}
-		LOG.trace("created words: "+words.size());
-		WordArgProcessor wordArgProcessor = (WordArgProcessor) amiArgProcessor;
+		LOG.debug(_PR+"created words: "+wordList.size());
 		wordsTool = wordArgProcessor.getWordsTool();
 		List<String> chosenMethods = wordArgProcessor.getChosenWordAggregationMethods();
-		if (wordArgProcessor.getVerbosityInt() > 0) System.out.println("chosen methods: "+chosenMethods);
-		if ((wordsTool != null && wordsTool.getWordMethods().contains(WordMethod.wordLengths)) ||
-				chosenMethods.contains(WordArgProcessor.WORD_LENGTHS)) {
-			LOG.trace("calculating word lengths");
-			ResultsElement resultsElement = createWordLengthsResultsElement(words);
-			wordArgProcessor.addResultsElement(resultsElement);
-		}
+		if (wordArgProcessor.getVerbosityInt() > 0) System.out.println("chosen createWordmethods: "+chosenMethods);
+		writeWordLengthsToResultsElement(chosenMethods);
+		writeWordFrequenciesToResultsElement(chosenMethods);
+	}
+
+	private void writeWordFrequenciesToResultsElement( List<String> chosenMethods) {
 		if ((wordsTool != null && wordsTool.getWordMethods().contains(WordMethod.frequencies)) ||
 				chosenMethods.contains(WordArgProcessor.WORD_FREQUENCIES) ||
 				chosenMethods.contains(WordArgProcessor.FREQUENCIES)) {
 			LOG.trace("calculating word frequencies");
-			ResultsElement resultsElement = getWordFrequencies(words);
+			ResultsElement resultsElement = getWordFrequencies(wordList);
+			wordArgProcessor.addResultsElement(resultsElement);
+		}
+	}
+
+	private void writeWordLengthsToResultsElement(List<String> chosenMethods) {
+		if ((wordsTool != null && wordsTool.getWordMethods().contains(WordMethod.wordLengths)) ||
+				chosenMethods.contains(WordArgProcessor.WORD_LENGTHS)) {
+			LOG.trace("calculating word lengths");
+			ResultsElement resultsElement = createWordLengthsResultsElement(wordList);
 			wordArgProcessor.addResultsElement(resultsElement);
 		}
 	}
 
 	public List<String> createWordList() {
 		CTree currentCTree = amiArgProcessor.getCurrentCTree();
-		List<String> words = null;
+		wordList = null;
 		if (currentCTree == null) {
 			LOG.warn("No current tree");
 		} else {
 			List<String> rawWords = currentCTree.extractWords();
-			words = (rawWords == null) ? null : transformWordStream(rawWords);
+			wordList = (rawWords == null) ? null : transformWordStream(rawWords);
 			if (wordsTool != null && wordsTool.getVerbosityInt() >= 2) {
-				LOG.debug("wordsTool " + words.size());
+				LOG.debug("wordsTool " + wordList.size());
 			}
 		}
 //		AbstractTool.debug(amiArgProcessor.getAbstractTool(), 0, "createWordList "+words.size(), LOG);
-		return words;
+		return wordList;
 	}
 
 	// OLD version 
@@ -345,7 +361,7 @@ private static final String COUNT2 = "count";
 			frequencyElement.addAttribute(new Attribute(WordResultElement.COUNT_ATT, String.valueOf(count)));
 			frequenciesElementList.add(frequencyElement);
 		}
-		if (COUNT2.equals(sortControl)) {
+		if (COUNT.equals(sortControl)) {
 			frequenciesElementList = sortByValue(frequenciesElementList);
 		}
 		for (WordResultElement frequencyElement : frequenciesElementList) {
@@ -415,7 +431,7 @@ private static final String COUNT2 = "count";
 	 */
 	private Iterable<Multiset.Entry<String>> getSortedEntries() {
 		Iterable<Multiset.Entry<String>> sortedEntries = null;
-		if (sortControl.equals(COUNT2)) {
+		if (sortControl.equals(COUNT)) {
 			sortedEntries = entriesSortedByCount;
 		} else if (sortControl.equals(VALUE)) {
 			sortedEntries = entriesSortedByValue;

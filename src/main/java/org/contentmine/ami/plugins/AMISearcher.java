@@ -26,7 +26,7 @@ public class AMISearcher extends AbstractSearcher {
 
 	private static final String NOT_FOUND = "NOT_FOUND";
 	public static final Logger LOG = LogManager.getLogger(AMISearcher.class);
-private String exactMatch;
+	private String exactMatch;
 	private AbstractLookup lookup;
 	private NamedPattern namedPattern;
 	private AMIArgProcessor amiArgProcessor;
@@ -43,7 +43,7 @@ private String exactMatch;
 	public Pattern pattern;
 	public List<String> stringList;
 	
-public AMISearcher(AMIArgProcessor argProcessor) {
+	public AMISearcher(AMIArgProcessor argProcessor) {
 		this.amiArgProcessor = argProcessor;
 		contextCounts = argProcessor.getContextCount();
 		if (this.amiArgProcessor == null) {
@@ -316,17 +316,17 @@ public AMISearcher(AMIArgProcessor argProcessor) {
 		return resultsElement;
 	}
 
-	public ResultsElement searchWithDictionary(List<String> strings) {
-		LOG.trace("SEARCH with dictionary");
+	public ResultsElement searchWithDictionary(List<String> wordsToSearch) {
+		LOG.debug("SEARCH with dictionary");
 		ResultsElement resultsElement = new ResultsElement();
-		if (strings != null) {
-			for (int pos = 0; pos < strings.size(); pos++) {
-				String firstword = strings.get(pos);
+		if (wordsToSearch != null) {
+			for (int pos = 0; pos < wordsToSearch.size(); pos++) {
+				String firstword = wordsToSearch.get(pos);
 				List<List<String>> trailingListList = dictionary.getTrailingWords(firstword);
 				if (trailingListList != null) {
-					int trailingOffset = canFitTrailing(trailingListList, strings, pos);
+					int trailingOffset = canFitTrailing(trailingListList, wordsToSearch, pos);
 					if (trailingOffset != -1) {
-						ResultElement resultElement = createResultElement(strings, pos, trailingOffset);
+						ResultElement resultElement = createResultElement(wordsToSearch, pos, trailingOffset);
 						resultsElement.appendChild(resultElement);
 					}
 				}
@@ -336,12 +336,12 @@ public AMISearcher(AMIArgProcessor argProcessor) {
 	}
 
 	private ResultsElement searchWithDictionary(String value) {
-			ResultsElement resultsElement = new ResultsElement();
-			WordCollectionFactory wordCollectionFactory = amiArgProcessor.getOrCreateWordCollectionFactory();
-			List<String> stringList = wordCollectionFactory.createWordList();
-			resultsElement = searchWithDictionary(stringList);
-			return resultsElement;
-		}
+		ResultsElement resultsElement = new ResultsElement();
+		WordCollectionFactory wordCollectionFactory = amiArgProcessor.getOrCreateWordCollectionFactory();
+		List<String> stringList = wordCollectionFactory.createWordList();
+		resultsElement = searchWithDictionary(stringList);
+		return resultsElement;
+	}
 
 	private ResultsElement searchWithPattern(String value) {
 		ResultsElement resultsElement = new ResultsElement();

@@ -45,8 +45,8 @@ List<RegexComponent> componentList;
 	 * @return resultsElements 
 	 */
 	public ResultsElement searchWordList() {
-		List<String> strings = new WordCollectionFactory((AbstractSearchArgProcessor)this.getArgProcessor()).createWordList();
-		ResultsElement resultsElement = searchWithDictionary(strings);
+		List<String> wordsToSearch = new WordCollectionFactory((AbstractSearchArgProcessor)this.getArgProcessor()).createWordList();
+		ResultsElement resultsElement = searchWithDictionary(wordsToSearch);
 		return resultsElement;
 	}
 

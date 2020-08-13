@@ -94,7 +94,6 @@ public class AMISearchTest extends AbstractAMITest {
 		AMI.main(args);
 	}
 	
-	
 	@Test
 	// OK
 	public void testZikaCooccurrence() {
@@ -105,6 +104,23 @@ public class AMISearchTest extends AbstractAMITest {
 				" -p " + AMIFixtures.TEST_ZIKA10_DIR 
 				+ " search"
 				+ " --dictionary species gene country disease funders "
+			;
+		AMI.execute(args);
+//		new AMISearchTool().runCommands(args);
+	}
+
+	@Test
+	// OK
+	public void testZikaCooccurrenceSmall() {
+		File targetDir = new File("target/cooccurrence/zika10");
+		CMineTestFixtures.cleanAndCopyDir(AMIFixtures.TEST_ZIKA10_DIR, targetDir);
+		String args = 
+				" -p " + AMIFixtures.TEST_ZIKA10_DIR 
+				+ " search"
+//				+ " --dictionary /Users/pm286/projects/openVirus/dictionaries/country/country-final.xml"
+				+ " --dictionary "
+//				+ " /Users/pm286/ContentMine/dictionaries/geo/country.xml"
+				+ " disease funders"
 			;
 		AMI.execute(args);
 //		new AMISearchTool().runCommands(args);

@@ -43,6 +43,7 @@ description = {
 })
 public class AMISearchTool extends AbstractAMISearchTool {
 	private static final Logger LOG = LogManager.getLogger(AMISearchTool.class);
+	private static final String _PR = "AST";
 /** historical
 	 * // search
 		parseMethod="parseSearch"
@@ -232,6 +233,7 @@ public class AMISearchTool extends AbstractAMISearchTool {
 		if (verbosity().length > 0) {
 			LOG.debug("************************* search "+cmd);
 		}
+		LOG.info(_PR+"running search: "+cmd);
 		runLegacyCommandProcessor(cmd);
 		amiProcessor.defaultAnalyzeCooccurrence(dictionaryList);
 	}
