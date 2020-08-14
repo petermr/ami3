@@ -245,6 +245,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 //	@Override
 	protected void parseSpecifics() {
 		getDictionaryName();
+		LOG.info("dictionaryName: "+dictionaryName);
 		dictOutformat = (this.outformats == null || this.outformats.length != 1) ? null : this.outformats[0];
 		if (sparqlQueryFile != null) {
 			getOrCreateWikidataSparql();
@@ -378,7 +379,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		InputStream inputStream = null;
 		if (input() != null) {
 			inputStream = getInputStreamFromFile();
-			dictionaryName = input();
+			if (dictionaryName == null) dictionaryName = input();
 		} else if (terms != null) {
 			if (dictionaryName == null) {
 				throw new RuntimeException("'terms' requires a 'dictionary' option");
@@ -960,15 +961,16 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 		return urlValue;
 	}
 
-	private void writeDictionary(String dictionary) {
+	private void writeDictionary(String dictionaryName) {
 		// this is slightly messy - 
 		transformValues();
-		simpleDictionary.getDictionaryElement().addAttribute(new Attribute(DefaultAMIDictionary.TITLE, dictionary));
-		File subDirectory = getOrCreateExistingSubdirectory(dictionary);
+		simpleDictionary.getDictionaryElement().addAttribute(new Attribute(DefaultAMIDictionary.TITLE, dictionaryName));
+		File subDirectory = getOrCreateExistingSubdirectory(dictionaryName);
 		if (subDirectory != null) {
 			List<DictionaryFileFormat> outformatList = Arrays.asList(outformats);
 			for (DictionaryFileFormat outformat : outformatList) {
-				File outfile = getOrCreateDictionary(subDirectory, dictionary, outformat);
+//				File outfile = getOrCreateDictionary(subDirectory, dictionary, outformat);
+				File outfile = getOrCreateDictionary(subDirectory, dictionaryName, outformat);
 				LOG.info(SPECIAL, "writing dictionary to "+outfile.getAbsolutePath());
 				try {
 					outputDictionary(outfile, outformat);

@@ -11,6 +11,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.contentmine.ami.dictionary.WikidataSparqlBuilder.WikidataLabel;
+import org.contentmine.ami.tools.AMI;
 import org.contentmine.ami.tools.AMIDict;
 import org.contentmine.ami.tools.AbstractAMIDictTest;
 import org.contentmine.ami.tools.AbstractAMIDictTool;
@@ -20,11 +21,14 @@ import org.contentmine.ami.tools.AbstractAMITest;
 import org.contentmine.ami.tools.dictionary.DictionaryCreationTool;
 import org.contentmine.ami.tools.dictionary.WikidataSparql;
 import org.contentmine.ami.tools.download.CurlDownloader;
+import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlA;
 import org.contentmine.norma.NAConstants;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
+
+import nu.xom.Element;
 
 
 /** tests AMIDictionary
@@ -35,7 +39,6 @@ import org.junit.Test;
 public class AMIDictCreateTest extends AbstractAMIDictTest {
 	private static final Logger LOG = LogManager.getLogger(AMIDictCreateTest.class);
 	private static final File TARGET = new File("target");
-	public static final File DICTIONARY_DIR = new File(TARGET, "dictionary");
 	
 
 	@Test
@@ -1250,6 +1253,41 @@ LIMIT 10
 		AMIDict.execute(cmd);
 	}
 	
+	/** dictionary name and filename are wrong
+https://github.com/petermr/openVirus/issues/81
+	 */ 
+	@Test
+	public void testCreateDictionaryFileAndName() {
+		File targetDir = new File(TARGET_DICTIONARY, "create/");
+		File disease_icd = new File(DICTIONARY_DIR, "disease_icd.sparql.xml");
+		String cmd = ""
+//				+ "	amidict"
+				+ " -vv" + 
+				"	 --dictionary disease" + 
+				"	 --directory  " + targetDir + 
+				"	 --input " + disease_icd + 
+				"	create " + 
+				"	 --informat wikisparqlxml " + 
+				"	 --sparqlmap " + 
+				"wikidataURL=wikidata," + 
+				"wikipediaURL=wikipedia," + 
+				"wikidataAltNames=wikidataAltLabel," + 
+				"name=wikidataLabel," + 
+				"term=wikidataLabel," + 
+				"Description=wikidataDescription," + 
+				"ICD-10_codes=ICD_10" + 
+				"	 --transformName wikidataID=EXTRACT(wikidataURL,.*/(.*)) " + 
+				"	 --synonyms=wikidataAltLabel " 
+				;
+			AMIDict.execute(cmd);
+			File dictionaryFile = new File(targetDir, "disease.xml");
+			Assert.assertTrue(""+dictionaryFile, dictionaryFile.exists());
+			Element dictionary = XMLUtil.parseQuietlyToRootElement(dictionaryFile);
+			Assert.assertEquals("title",  "disease", dictionary.getAttributeValue("title"));
+					
+			Assert.assertFalse(new File(targetDir, "disease_icd.xml").exists());
+			
+	}
 
 
 
@@ -1276,9 +1314,6 @@ LIMIT 10
 		AMIDict.execute(args);
 	}
 	
-	
-	
-	// ============== PRIVATE HELPERS ================
 	
 	
 	/** convenience tester for creating Dictionaries from WikidataSparql

@@ -198,5 +198,21 @@ public class AMISearchTest extends AbstractAMITest {
 		new AMISearchTool().runCommands(args);
 	}
 	
+//	@Test
+/**
+	// https://github.com/petermr/openVirus/issues/80 
+	 * ami search is giving empty files for histogram.csv and some xml files but I am getting other html files like full.dataTables.html, etc just fine for my latest dictionary and the error I am getting is:
 
+Cannot read stopword stream: /org/contentmine/ami/wordutil, ami3, 
+version 2020/08/09_09/54-NEXT-SNAPSHOT/pmcstop.txt 
+Cannot read stopword stream: /org/contentmine/ami/wordutil, 
+ami3, version 2020/08/09_09/54-NEXT-SNAPSHOT/stopwords.txt 
+PMC3561042 .PMC6517453 !wPMC6695746 PMC7102705 PMC7119083 PMC7120695 
+PMC7197577 PMC7241517 PMC7341712 !wPMC7395586 
+..... create data tables Null pluginOption'
+
+ */
+//	public void testEmptyCooccurrenceBug() {
+//		amidict -vv --dictionary country --directory ami_12_08_2020/amidict1 --input ami_12_08_2020/country.xml create --informat=wikisparqlxml --sparqlmap wikidata=wikidata,term=term,name=wikidataLabel,description=wikidataDescription,wikipedia=wikipedia, --synonyms=synonym
+//	}
 }

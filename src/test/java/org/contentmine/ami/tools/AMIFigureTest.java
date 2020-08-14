@@ -12,6 +12,7 @@ public class AMIFigureTest extends AbstractAMITest {
 	private static final Logger LOG = LogManager.getLogger(AMIFigureTest.class);
 
 	@Test
+	// NYI
 	public void testCreate() {
 		CTree tree = new CProject(TEST_BATTERY10).getCTreeByName("PMC3463005");
 //		String cmd = "-p "+TEST_BATTERY10

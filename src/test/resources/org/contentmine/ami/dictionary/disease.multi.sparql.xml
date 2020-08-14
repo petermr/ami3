@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dictionary title="disease_multi">
  <desc>Created from SPARQL query</desc>
- <entry Hindi="सर्पदंश" ICD-10_code="T63.0" Tamil="பாம்புக் கடி" altNames="snake bite, snake bites, snake envenomation, snake envenoming" decription="injury caused by a bite from a snake" name="snakebite" term="snakebite" wikidataURL="http://www.wikidata.org/entity/Q68854" wikipediaURL="https://en.wikipedia.org/wiki/Snakebite" wikidataID="Q68854">
+ <entry Hindi="सर्पदंश" ICD-10_code="T63.0" Tamil="பாம்புக் கடி" 
+ altNames="snake bite, snake bites, snake envenomation, snake envenoming" 
+ decription="injury caused by a bite from a snake" name="snakebite" term="snakebite" 
+ wikidataURL="http://www.wikidata.org/entity/Q68854" 
+ wikipediaURL="https://en.wikipedia.org/wiki/Snakebite" wikidataID="Q68854">
   <synonym>snake bite</synonym>
   <synonym>snake bites</synonym>
   <synonym>snake envenomation</synonym>
@@ -13,13 +17,28 @@
   <synonym>human necrobacillosis</synonym>
   <synonym>postanginal sepsis</synonym>
  </entry>
- <entry Hindi="Q73518" ICD-10_code="I38" Tamil="Q73518" altNames="non-bacterial thrombotic endocarditis, non-infective endocarditis, nonbacterial thrombotic endocarditis" decription="endocarditis that results from the deposition of small sterile vegetations on valve leaflets" name="marantic endocarditis" term="marantic endocarditis" wikidataURL="http://www.wikidata.org/entity/Q73518" wikipediaURL="https://en.wikipedia.org/wiki/Nonbacterial_thrombotic_endocarditis" wikidataID="Q73518">
+ <entry Hindi="Q73518" ICD-10_code="I38" Tamil="Q73518" 
+ altNames="non-bacterial thrombotic endocarditis, non-infective endocarditis, nonbacterial thrombotic endocarditis" 
+ decription="endocarditis that results from the deposition of small sterile vegetations on valve leaflets" 
+ name="marantic endocarditis" term="marantic endocarditis" 
+ wikidataURL="http://www.wikidata.org/entity/Q73518" 
+ wikipediaURL="https://en.wikipedia.org/wiki/Nonbacterial_thrombotic_endocarditis"
+  wikidataID="Q73518">
   <synonym>non-bacterial thrombotic endocarditis</synonym>
   <synonym>non-infective endocarditis</synonym>
   <synonym>nonbacterial thrombotic endocarditis</synonym>
  </entry>
- <entry Hindi="Q73828" ICD-10_code="G24.4" Tamil="Q73828" decription="focal dystonia that is characterized by distortions of the mouth and tongue." name="oromandibular dystonia" term="oromandibular dystonia" wikidataURL="http://www.wikidata.org/entity/Q73828" wikipediaURL="https://en.wikipedia.org/wiki/Oromandibular_dystonia" wikidataID="Q73828"/>
- <entry Hindi="Q76973" Tamil="Q76973" altNames="bouba, Endemic treponematoses, frambesia, frambesia tropica, frambosie, polypapilloma tropicum, thymosis, Treponema pertenue infection" decription="Human disease: tropical infection of the skin, bones and joints caused by the spirochete bacterium Treponema pallidum pertenue" name="yaws" term="yaws" wikidataURL="http://www.wikidata.org/entity/Q76973" wikipediaURL="https://en.wikipedia.org/wiki/Yaws" wikidataID="Q76973">
+ <entry Hindi="Q73828" ICD-10_code="G24.4" Tamil="Q73828" 
+     decription="focal dystonia that is characterized by distortions of the mouth and tongue." 
+     name="oromandibular dystonia" term="oromandibular dystonia" 
+     wikidataURL="http://www.wikidata.org/entity/Q73828" 
+     wikipediaURL="https://en.wikipedia.org/wiki/Oromandibular_dystonia" 
+     wikidataID="Q73828"/>
+ <entry Hindi="Q76973" Tamil="Q76973" 
+ altNames="bouba, Endemic treponematoses, frambesia, frambesia tropica, frambosie, polypapilloma tropicum, thymosis, Treponema pertenue infection" 
+ decription="Human disease: tropical infection of the skin, bones and joints caused by the spirochete bacterium Treponema pallidum pertenue" 
+ name="yaws" term="yaws" wikidataURL="http://www.wikidata.org/entity/Q76973" 
+ wikipediaURL="https://en.wikipedia.org/wiki/Yaws" wikidataID="Q76973">
   <synonym>bouba</synonym>
   <synonym>Endemic treponematoses</synonym>
   <synonym>frambesia</synonym>
@@ -29,22 +48,40 @@
   <synonym>thymosis</synonym>
   <synonym>Treponema pertenue infection</synonym>
  </entry>
- <entry Hindi="निकटदृष्टि" Tamil="கிட்டப்பார்வை" altNames="near vision, near-sightedness, short-sightedness" decription="problem with distance vision" name="myopia" term="myopia" wikidataURL="http://www.wikidata.org/entity/Q168403" wikipediaURL="https://en.wikipedia.org/wiki/Near-sightedness" wikidataID="Q168403">
+ <entry Hindi="निकटदृष्टि" Tamil="கிட்டப்பார்வை" 
+    altNames="near vision, near-sightedness, short-sightedness" 
+    decription="problem with distance vision" name="myopia" term="myopia" 
+    wikidataURL="http://www.wikidata.org/entity/Q168403"
+     wikipediaURL="https://en.wikipedia.org/wiki/Near-sightedness" wikidataID="Q168403">
   <synonym>near vision</synonym>
   <synonym>near-sightedness</synonym>
   <synonym>short-sightedness</synonym>
  </entry>
- <entry Hindi="मनोविक्षिप्ति" Hindi_description="सचीज़ोफ्रेनिया के बारे में मेरा विचार" ICD-10_code="F20" Tamil="Q170082" altNames="mental or behavioural disorder, psychotic disorder, psychotic disorders" decription="abnormal condition of the mind that involves a loss of contact with reality" name="psychosis" term="psychosis" wikidataURL="http://www.wikidata.org/entity/Q170082" wikipediaURL="https://en.wikipedia.org/wiki/Psychosis" wikidataID="Q170082">
+ <entry Hindi="मनोविक्षिप्ति" Hindi_description="सचीज़ोफ्रेनिया के बारे में मेरा विचार" 
+ ICD-10_code="F20" Tamil="Q170082" altNames="mental or behavioural disorder, psychotic disorder, psychotic disorders" 
+ decription="abnormal condition of the mind that involves a loss of contact with reality" 
+ name="psychosis" term="psychosis" wikidataURL="http://www.wikidata.org/entity/Q170082" 
+ wikipediaURL="https://en.wikipedia.org/wiki/Psychosis" wikidataID="Q170082">
   <synonym>mental or behavioural disorder</synonym>
   <synonym>psychotic disorder</synonym>
   <synonym>psychotic disorders</synonym>
  </entry>
- <entry Hindi="मनोविक्षिप्ति" Hindi_description="सचीज़ोफ्रेनिया के बारे में मेरा विचार" ICD-10_code="F21" Tamil="Q170082" altNames="mental or behavioural disorder, psychotic disorder, psychotic disorders" decription="abnormal condition of the mind that involves a loss of contact with reality" name="psychosis" term="psychosis" wikidataURL="http://www.wikidata.org/entity/Q170082" wikipediaURL="https://en.wikipedia.org/wiki/Psychosis" wikidataID="Q170082">
+ <entry Hindi="मनोविक्षिप्ति" Hindi_description="सचीज़ोफ्रेनिया के बारे में मेरा विचार" 
+ ICD-10_code="F21" Tamil="Q170082" 
+ altNames="mental or behavioural disorder, psychotic disorder, psychotic disorders" 
+ decription="abnormal condition of the mind that involves a loss of contact with reality" 
+ name="psychosis" term="psychosis" wikidataURL="http://www.wikidata.org/entity/Q170082" 
+ wikipediaURL="https://en.wikipedia.org/wiki/Psychosis" wikidataID="Q170082">
   <synonym>mental or behavioural disorder</synonym>
   <synonym>psychotic disorder</synonym>
   <synonym>psychotic disorders</synonym>
  </entry>
- <entry Hindi="मनोविक्षिप्ति" Hindi_description="सचीज़ोफ्रेनिया के बारे में मेरा विचार" ICD-10_code="F22" Tamil="Q170082" altNames="mental or behavioural disorder, psychotic disorder, psychotic disorders" decription="abnormal condition of the mind that involves a loss of contact with reality" name="psychosis" term="psychosis" wikidataURL="http://www.wikidata.org/entity/Q170082" wikipediaURL="https://en.wikipedia.org/wiki/Psychosis" wikidataID="Q170082">
+ <entry Hindi="मनोविक्षिप्ति" Hindi_description="सचीज़ोफ्रेनिया के बारे में मेरा विचार" 
+ ICD-10_code="F22" Tamil="Q170082" 
+ altNames="mental or behavioural disorder, psychotic disorder, psychotic disorders" 
+ decription="abnormal condition of the mind that involves a loss of contact with reality" 
+ name="psychosis" term="psychosis" wikidataURL="http://www.wikidata.org/entity/Q170082" 
+ wikipediaURL="https://en.wikipedia.org/wiki/Psychosis" wikidataID="Q170082">
   <synonym>mental or behavioural disorder</synonym>
   <synonym>psychotic disorder</synonym>
   <synonym>psychotic disorders</synonym>
