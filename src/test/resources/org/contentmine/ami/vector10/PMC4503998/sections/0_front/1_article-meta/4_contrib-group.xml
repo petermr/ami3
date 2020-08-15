@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contrib-group>
+ <contrib contrib-type="author">
+  <name>
+   <surname>Varzi</surname>
+   <given-names>Alberto</given-names>
+  </name>
+  <xref ref-type="aff" rid="au1"/>
+ </contrib>
+ <contrib contrib-type="author">
+  <name>
+   <surname>Bresser</surname>
+   <given-names>Dominic</given-names>
+  </name>
+  <xref ref-type="aff" rid="au1"/>
+ </contrib>
+ <contrib contrib-type="author">
+  <name>
+   <surname>von Zamory</surname>
+   <given-names>Jan</given-names>
+  </name>
+  <xref ref-type="aff" rid="au1"/>
+ </contrib>
+ <contrib contrib-type="author">
+  <name>
+   <surname>Müller</surname>
+   <given-names>Franziska</given-names>
+  </name>
+  <xref ref-type="aff" rid="au1"/>
+ </contrib>
+ <contrib contrib-type="author">
+  <name>
+   <surname>Passerini</surname>
+   <given-names>Stefano</given-names>
+  </name>
+  <xref ref-type="aff" rid="au1"/>
+  <xref ref-type="aff" rid="au2"/>
+  <xref ref-type="corresp" rid="cor1">*</xref>
+ </contrib>
+ <aff id="au1">
+  <institution>Institute of Physical Chemistry &amp;, MEET Battery Research Center University of Muenster</institution>
+  <addr-line>Corrensstrasse 28/30 &amp; 46, 48149, Münster, Germany</addr-line>
+ </aff>
+ <aff id="au2">
+  <institution>Helmholtz Institute Ulm</institution>
+  <addr-line>Albert Einstein Allee 11, 89097, Ulm, Germany</addr-line>
+ </aff>
+</contrib-group>

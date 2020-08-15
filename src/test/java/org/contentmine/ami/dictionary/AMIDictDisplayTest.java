@@ -19,8 +19,8 @@ import org.junit.Test;
  */
 public class AMIDictDisplayTest extends AbstractAMITest {
 	private static final Logger LOG = LogManager.getLogger(AMIDictDisplayTest.class);
-private static final File TARGET = new File("target");
-	public static final File DICTIONARY_DIR = new File(TARGET, "dictionary");
+//private static final File TARGET = new File("target");
+//	public static final File DICTIONARY_DIR = new File(TARGET, "dictionary");
 	
 
 	@Test
@@ -73,9 +73,13 @@ private static final File TARGET = new File("target");
 	}
 	
 	@Test
-	public void testDictionaryValidateResource() {
-		String dict = "--dictionary /org/contentmine/ami/plugins/dictionary";
-		String args = dict + " -v"
+	public void testDictionaryValidate() {
+		String dictionary = "country";
+		File directory = TEST_DICTIONARY;
+		String args = ""
+				+ " --dictionary " + dictionary
+				+ " --directory " + directory
+				+ " -vv"
 				+ " display"
 //				+ " --fields term name"
 				+ " --fields description"

@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import jline.internal.Log;
 import nu.xom.Attribute;
 import nu.xom.Element;
 
@@ -55,13 +56,17 @@ public class DictionaryTransformer {
 		for (Element entry : entryList) {
 //			System.out.println(variableName + ": "+entry.toXML());
 			String value = entry.getAttributeValue(variableName);
-//			System.out.println("pattern: "+pattern+" value: "+value);
-			Matcher matcher = pattern.matcher(value);
-			if (matcher.matches()) {
-				String newValue = matcher.group(1);
-//				System.out.println("g "+newValue);
-				entry.addAttribute(new Attribute(newVariableName, newValue));
-				System.out.println(entry.toXML());
+			if (value == null) {
+				Log.error("Null value for: " + variableName + "; " + entry.toXML());
+			} else {
+	//			System.out.println("pattern: "+pattern+" value: "+value);
+				Matcher matcher = pattern.matcher(value);
+				if (matcher.matches()) {
+					String newValue = matcher.group(1);
+	//				System.out.println("g "+newValue);
+					entry.addAttribute(new Attribute(newVariableName, newValue));
+					System.out.println(entry.toXML());
+				}
 			}
 		}
 	}

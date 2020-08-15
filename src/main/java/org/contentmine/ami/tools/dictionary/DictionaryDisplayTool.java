@@ -144,7 +144,7 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 
 	@Override
 	protected void parseSpecifics() {
-//		super.parseSpecifics();
+		super.parseSpecifics();
 		if (fields.size() == 0) {
 			fields = new ArrayList<>(Arrays.asList(DictionaryField.values()));
 			LOG.info("list all fields ");

@@ -15,10 +15,8 @@ import org.junit.Test;
 public class AbstractAMIDictTest extends AbstractAMITest {
 	private static final Logger LOG = LogManager.getLogger(AbstractAMIDictTest.class);
 	
-	public static final File TARGET = new File("target");
 	public static final File DICTIONARY_DIR = new File(SRC_TEST_AMI, "dictionary");
-
-	protected static final File TARGET_DICTIONARY = new File("target/dictionary/");
+	protected static final File TARGET_DICTIONARY = new File(TARGET, "dictionary/");
 	
 
 	@Test

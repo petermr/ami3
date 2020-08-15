@@ -117,8 +117,10 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 	private static final String REGEX = "regex";
 	public static final String SYNONYM = "synonym";
 //	public static final String TITLE = "title";
-	public static final String WIKIDATA = "wikidata";
-	public static final String WIKIPEDIA = "wikipedia";
+	public static final String WIKIDATA_ID = "wikidataID";
+	public static final String WIKIDATA_URL = "wikidataURL";
+	public static final String WIKIPEDIA_PAGE = "wikipediaPage";
+	public static final String WIKIPEDIA_URL = "wikipediaURL";
 
 	/** later these should be read in from args.xml ...
 	 * 
@@ -489,7 +491,7 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 				DictionaryTerm.TERM,
 				DictionaryTerm.NAME,
 				DictionaryTerm.URL,
-				WIKIDATA,
+				WIKIDATA_URL,
 				PAGE_CONTENT,
 				IMAGE
 				);

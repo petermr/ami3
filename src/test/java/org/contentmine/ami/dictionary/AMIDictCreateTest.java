@@ -11,7 +11,6 @@ import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.contentmine.ami.dictionary.WikidataSparqlBuilder.WikidataLabel;
-import org.contentmine.ami.tools.AMI;
 import org.contentmine.ami.tools.AMIDict;
 import org.contentmine.ami.tools.AbstractAMIDictTest;
 import org.contentmine.ami.tools.AbstractAMIDictTool;
@@ -37,9 +36,8 @@ import nu.xom.Element;
  *
  */
 public class AMIDictCreateTest extends AbstractAMIDictTest {
-	private static final Logger LOG = LogManager.getLogger(AMIDictCreateTest.class);
-	private static final File TARGET = new File("target");
 	
+	private static final Logger LOG = LogManager.getLogger(AMIDictCreateTest.class);	
 
 	@Test
 	public void testHelpSubcommands() {
@@ -1271,12 +1269,17 @@ https://github.com/petermr/openVirus/issues/81
 				"	 --sparqlmap " + 
 				"wikidataURL=wikidata," + 
 				"wikipediaURL=wikipedia," + 
-				"wikidataAltNames=wikidataAltLabel," + 
+//				"wikidataAltLabel=wikidataAltLabel," + 
 				"name=wikidataLabel," + 
 				"term=wikidataLabel," + 
-				"Description=wikidataDescription," + 
-				"ICD-10_codes=ICD_10" + 
-				"	 --transformName wikidataID=EXTRACT(wikidataURL,.*/(.*)) " + 
+				"description=wikidataDescription," + 
+				
+				"_p494_ICD-10=ICD_10" + 
+				
+				"	 --transformName"
+				+ " wikidataID=EXTRACT(wikidataURL,.*/(.*))@" 
+				+ "wikipediaPage=EXTRACT(wikipediaURL,.*/(.*))" + 
+				
 				"	 --synonyms=wikidataAltLabel " 
 				;
 			AMIDict.execute(cmd);
@@ -1286,6 +1289,54 @@ https://github.com/petermr/openVirus/issues/81
 			Assert.assertEquals("title",  "disease", dictionary.getAttributeValue("title"));
 					
 			Assert.assertFalse(new File(targetDir, "disease_icd.xml").exists());
+			
+	}
+
+	/** dictionary name and filename are wrong
+https://github.com/petermr/openVirus/issues/81
+	 */ 
+	@Test
+	public void testCreateDictionaryFromSparqlAndsValidate() {
+		String dictionaryName = "country";
+		File targetDir = new File(TARGET_DICTIONARY, "create/");
+		File inputFile = new File(DICTIONARY_DIR, dictionaryName + ".sparql.xml");  // first 1 <results>
+		String cmd = ""
+				+ " -vv" + 
+				"	 --dictionary " + dictionaryName + 
+				"	 --directory  " + targetDir + 
+				"	 --input " + inputFile + 
+				"	create " + 
+				"	 --informat wikisparqlxml " + 
+				"	 --sparqlmap " + 
+				"wikidataURL=wikidata," + 
+				"wikipediaURL=wikipedia," + 
+//				"wikidataAltLabel=wikidataAltLabel," + 
+				"name=wikidataLabel," + 
+				"term=wikidataLabel," + 
+				"description=wikidataDescription," + 
+				
+				"_p297_country=_iso3166" + 
+				
+				"	 --transformName"
+				+ " wikidataID=EXTRACT(wikidataURL,.*/(.*))@" 
+				+ "wikipediaPage=EXTRACT(wikipediaURL,.*/(.*))" + 
+				
+				"	 --synonyms=synonym " 
+				;
+			AMIDict.execute(cmd);
+			File dictionaryFile = new File(targetDir, dictionaryName + ".xml");
+			Assert.assertTrue(""+dictionaryFile, dictionaryFile.exists());
+			Element dictionary = XMLUtil.parseQuietlyToRootElement(dictionaryFile);
+			Assert.assertEquals("title",  dictionaryName, dictionary.getAttributeValue("title"));
+
+			// now validate
+			cmd = 
+					" --dictionary " + dictionaryName 
+					+ " input " + dictionaryFile
+					+ " display"
+					+ " --validate"
+					;
+//			AMIDict.execute(cmd);
 			
 	}
 

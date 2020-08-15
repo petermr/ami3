@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p>To examine the structures and dynamics of Li
+ <sup>+</sup> and PF
+ <sub>6</sub>
+ <sup>−</sup> solvation shells and ion aggregates, we carried out classical MD simulations for 1.0 M LiPF
+ <sub>6</sub>/DEC solution using the force field parameters for PF
+ <sub>6</sub>
+ <sup>−</sup> in refs 
+ <xref ref-type="bibr" rid="b37">37</xref>, 
+ <xref ref-type="bibr" rid="b38">38</xref> with the general Amber force field parameters for DEC. A representative snapshot structure of the solution is shown in 
+ <xref ref-type="fig" rid="f6">Fig. 6a</xref>, where Li
+ <sup>+</sup> is represented by a yellow sphere and PF
+ <sub>6</sub>
+ <sup>−</sup> is by an octahedron. At this high lithium salt concentration, ions form not just CIPs but also large aggregates with a polydisperse distribution. 
+ <xref ref-type="fig" rid="f6">Figure 6b</xref> depicts the configuration of ions only. Interestingly, certain large-size aggregates adopt ion network structures where lithium cations and hexafluorophosphate anions form spatially extended multi-branch chains and even three-dimensional network-like structures. We have recently found that cations and anions in high salt aqueous solutions of KSCN, NaClO
+ <sub>4</sub> and NaBF
+ <sub>4</sub> show a strong propensity to form a large-scale spatially extended networks that are tightly intertwined with water H-bonding networks
+ <xref ref-type="bibr" rid="b39">39</xref>
+ <xref ref-type="bibr" rid="b40">40</xref>. The fact that Li
+ <sup>+</sup> and PF
+ <sub>6</sub>
+ <sup>−</sup> ions form three-dimensional ion networks in LIB electrolyte solutions could be a key to understand detailed mechanism of Li
+ <sup>+</sup> ion mobility, since Li
+ <sup>+</sup> can jump from one to the other neighbouring anions in the same or different ion networks in the presence of non-zero gradient of electric potential
+ <xref ref-type="bibr" rid="b41">41</xref>. Currently, we are carrying out a series of spectral graph analyses of the MD trajectories obtained for a variety of LIB electrolyte solutions and will present the results elsewhere since it is beyond the scope of this report.
+</p>

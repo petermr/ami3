@@ -56,11 +56,15 @@ import picocli.CommandLine.Spec;
 public abstract class AbstractAMIDictTool implements Callable<Void> {
 	
 
+
 	public static final String UTF_8 = "UTF-8";
 
 	/** Marker used to mark log statements that replaced call to the (now removed) `amiDebug` method. */
 	public static final Marker SPECIAL = MarkerManager.getMarker("amiDebug");
 	private static final Logger LOG = LogManager.getLogger(AbstractAMIDictTool.class);
+
+	private static final String DICTIONARY_NAME_REGEX = "[a-z][a-z0-9]+";
+//	private static final Pattern DICTIONARY_NAME_PATTERN = Pattern.compile(DICTIONARY_NAME_REGEX);
 
 	// injected by picocli
 	@ParentCommand
@@ -96,7 +100,22 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 
 	protected boolean parseGenerics() {
 		printGenericValues();
+		checkGenericValues();
 		return true;
+	}
+
+	private void checkGenericValues() {
+		checkDictionaryList();
+	}
+
+	private void checkDictionaryList() {
+		if (parent.dictionaryNameList != null) {
+			for (String dictionaryName : parent.dictionaryNameList) {
+				if (!Pattern.matches(DICTIONARY_NAME_REGEX, dictionaryName)) {
+					LOG.error("dictionaryName " + dictionaryName + " must match " + DICTIONARY_NAME_REGEX);
+				}
+			}
+		}
 	}
 
 	/**
@@ -121,7 +140,9 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 	}
 
 	/** override */
-	protected abstract void parseSpecifics();
+	protected void parseSpecifics() {
+		printOptionValues(System.out);
+	}
 
 	public int getVerbosityInt() {
 		return verbosity().length;
@@ -139,20 +160,6 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 		}
 	}
 
-//	/**
-//	 * Prints all options for this command with their value (either user-specified or the default)
-//	 * to the specified stream.
-//	 * @param stream the stream to write options to
-//	 */
-//	protected void printOptionValues(PrintStream stream) {
-//		ParseResult parseResult = spec.commandLine().getParseResult();
-//		for (OptionSpec option : spec.options()) {
-//			String label = parseResult.hasMatchedOption(option)
-//					? "(matched)" : "(default)";
-//			stream.printf("%s: %s %s%n", option.longestName(), option.getValue(), label);
-//		}
-//	}
-//	
 	/**
 	 * Prints all options for this command with their value (either user-specified or the default)
 	 * to the specified stream.
@@ -163,7 +170,10 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 		for (OptionSpec option : spec.options()) {
 			String label = parseResult.hasMatchedOption(option)
 					? "(matched)" : "(default)";
-			stream.printf("%-20s: %1s %9s%n", option.longestName(), label.substring(1,  2), option.getValue());
+			String longestName = option.longestName();
+			String labelS = label.substring(1,  2);
+			Object value = option.getValue();
+			stream.printf("%-20s: %1s %9s%n", longestName, labelS, value);
 		}
 	}
 	

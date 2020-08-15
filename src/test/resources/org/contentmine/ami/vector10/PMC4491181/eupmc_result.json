@@ -1,0 +1,467 @@
+{
+  "id": [
+    "26109057"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "26109057"
+  ],
+  "pmcid": [
+    "PMC4491181"
+  ],
+  "doi": [
+    "10.1038/ncomms8393"
+  ],
+  "title": [
+    "Silicon carbide-free graphene growth on silicon for lithium-ion battery with high volumetric energy density."
+  ],
+  "authorString": [
+    "Son IH, Hwan Park J, Kwon S, Park S, Rümmeli MH, Bachmatiuk A, Song HJ, Ku J, Choi JW, Choi JM, Doo SG, Chang H."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Son IH"
+          ],
+          "firstName": [
+            "In Hyuk"
+          ],
+          "lastName": [
+            "Son"
+          ],
+          "initials": [
+            "IH"
+          ],
+          "affiliation": [
+            "Energy Material Lab, Material Research Center, Samsung Advanced Institute of Technology, Samsung Electronics Co., Ltd, 130 Samsung-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do 443-803, Republic of Korea."
+          ]
+        },
+        {
+          "fullName": [
+            "Hwan Park J"
+          ],
+          "firstName": [
+            "Jong"
+          ],
+          "lastName": [
+            "Hwan Park"
+          ],
+          "initials": [
+            "J"
+          ],
+          "affiliation": [
+            "Energy Material Lab, Material Research Center, Samsung Advanced Institute of Technology, Samsung Electronics Co., Ltd, 130 Samsung-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do 443-803, Republic of Korea."
+          ]
+        },
+        {
+          "fullName": [
+            "Kwon S"
+          ],
+          "firstName": [
+            "Soonchul"
+          ],
+          "lastName": [
+            "Kwon"
+          ],
+          "initials": [
+            "S"
+          ],
+          "affiliation": [
+            "Energy Material Lab, Material Research Center, Samsung Advanced Institute of Technology, Samsung Electronics Co., Ltd, 130 Samsung-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do 443-803, Republic of Korea."
+          ]
+        },
+        {
+          "fullName": [
+            "Park S"
+          ],
+          "firstName": [
+            "Seongyong"
+          ],
+          "lastName": [
+            "Park"
+          ],
+          "initials": [
+            "S"
+          ],
+          "affiliation": [
+            "Analytical Engineering Group, Platform Technology Lab, Samsung Advanced Institute of Technology, Samsung Electronics Co., Ltd, 130 Samsung-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do 443-803, Republic of Korea."
+          ]
+        },
+        {
+          "fullName": [
+            "Rümmeli MH"
+          ],
+          "firstName": [
+            "Mark H"
+          ],
+          "lastName": [
+            "Rümmeli"
+          ],
+          "initials": [
+            "MH"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0003-3736-6439",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "IBS Center for Integrated Nanostructure Physics, Institute for Basic Science (IBS), Daejon 305-701, Republic of Korea."
+          ]
+        },
+        {
+          "fullName": [
+            "Bachmatiuk A"
+          ],
+          "firstName": [
+            "Alicja"
+          ],
+          "lastName": [
+            "Bachmatiuk"
+          ],
+          "initials": [
+            "A"
+          ],
+          "affiliation": [
+            "IBS Center for Integrated Nanostructure Physics, Institute for Basic Science (IBS), Daejon 305-701, Republic of Korea."
+          ]
+        },
+        {
+          "fullName": [
+            "Song HJ"
+          ],
+          "firstName": [
+            "Hyun Jae"
+          ],
+          "lastName": [
+            "Song"
+          ],
+          "initials": [
+            "HJ"
+          ],
+          "affiliation": [
+            "Nano Electronics Lab, Device and System Research Center, Samsung Advanced Institute of Technology, Samsung Electronics Co., Ltd, 130 Samsung-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do 443-803, Republic of Korea."
+          ]
+        },
+        {
+          "fullName": [
+            "Ku J"
+          ],
+          "firstName": [
+            "Junhwan"
+          ],
+          "lastName": [
+            "Ku"
+          ],
+          "initials": [
+            "J"
+          ],
+          "affiliation": [
+            "Energy Material Lab, Material Research Center, Samsung Advanced Institute of Technology, Samsung Electronics Co., Ltd, 130 Samsung-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do 443-803, Republic of Korea."
+          ]
+        },
+        {
+          "fullName": [
+            "Choi JW"
+          ],
+          "firstName": [
+            "Jang Wook"
+          ],
+          "lastName": [
+            "Choi"
+          ],
+          "initials": [
+            "JW"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-8783-0901",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Graduate School of Energy, Environment, Water, and Sustainability (EEWS), Korea Advanced Institute of Science and Technology (KAIST), Daejeon 305-701, Republic of Korea."
+          ]
+        },
+        {
+          "fullName": [
+            "Choi JM"
+          ],
+          "firstName": [
+            "Jae-Man"
+          ],
+          "lastName": [
+            "Choi"
+          ],
+          "initials": [
+            "JM"
+          ],
+          "affiliation": [
+            "Energy Material Lab, Material Research Center, Samsung Advanced Institute of Technology, Samsung Electronics Co., Ltd, 130 Samsung-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do 443-803, Republic of Korea."
+          ]
+        },
+        {
+          "fullName": [
+            "Doo SG"
+          ],
+          "firstName": [
+            "Seok-Gwang"
+          ],
+          "lastName": [
+            "Doo"
+          ],
+          "initials": [
+            "SG"
+          ],
+          "affiliation": [
+            "Energy Material Lab, Material Research Center, Samsung Advanced Institute of Technology, Samsung Electronics Co., Ltd, 130 Samsung-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do 443-803, Republic of Korea."
+          ]
+        },
+        {
+          "fullName": [
+            "Chang H"
+          ],
+          "firstName": [
+            "Hyuk"
+          ],
+          "lastName": [
+            "Chang"
+          ],
+          "initials": [
+            "H"
+          ],
+          "affiliation": [
+            "Material Research Center, Samsung Advanced Institute of Technology, Samsung Electronics Co., Ltd, 130 Samsung-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do 443-803, Republic of Korea."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0003-3736-6439",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-8783-0901",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "6"
+      ],
+      "journalIssueId": [
+        "2476014"
+      ],
+      "dateOfPublication": [
+        "2015 Jun"
+      ],
+      "monthOfPublication": [
+        "6"
+      ],
+      "yearOfPublication": [
+        "2015"
+      ],
+      "printPublicationDate": [
+        "2015-06-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Nature communications"
+          ],
+          "ISOAbbreviation": [
+            "Nat Commun"
+          ],
+          "medlineAbbreviation": [
+            "Nat Commun"
+          ],
+          "NLMid": [
+            "101528555"
+          ],
+          "ISSN": [
+            "2041-1723"
+          ],
+          "ESSN": [
+            "2041-1723"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2015"
+  ],
+  "pageInfo": [
+    "7393"
+  ],
+  "abstractText": [
+    "Silicon is receiving discernable attention as an active material for next generation lithium-ion battery anodes because of its unparalleled gravimetric capacity. However, the large volume change of silicon over charge-discharge cycles weakens its competitiveness in the volumetric energy density and cycle life. Here we report direct graphene growth over silicon nanoparticles without silicon carbide formation. The graphene layers anchored onto the silicon surface accommodate the volume expansion of silicon via a sliding process between adjacent graphene layers. When paired with a commercial lithium cobalt oxide cathode, the silicon carbide-free graphene coating allows the full cell to reach volumetric energy densities of 972 and 700 Wh l(-1) at first and 200th cycle, respectively, 1.8 and 1.5 times higher than those of current commercial lithium-ion batteries. This observation suggests that two-dimensional layered structure of graphene and its silicon carbide-free integration with silicon can serve as a prototype in advancing silicon anodes to commercially viable technology."
+  ],
+  "affiliation": [
+    "Energy Material Lab, Material Research Center, Samsung Advanced Institute of Technology, Samsung Electronics Co., Ltd, 130 Samsung-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do 443-803, Republic of Korea."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1038/ncomms8393"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4491181"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4491181?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "49"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2015-12-03"
+  ],
+  "dateOfCreation": [
+    "2015-06-26"
+  ],
+  "firstIndexDate": [
+    "2015-06-26"
+  ],
+  "fullTextReceivedDate": [
+    "2015-07-10"
+  ],
+  "dateOfRevision": [
+    "2019-04-30"
+  ],
+  "electronicPublicationDate": [
+    "2015-06-25"
+  ],
+  "firstPublicationDate": [
+    "2015-06-25"
+  ]
+}

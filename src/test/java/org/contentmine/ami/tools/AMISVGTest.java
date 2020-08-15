@@ -1,9 +1,13 @@
 package org.contentmine.ami.tools;
 
 import org.apache.logging.log4j.Logger;
+
+import java.io.File;
+
 import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMISVGTool;
 import org.contentmine.ami.tools.AMISVGTool.TidySVG;
+import org.contentmine.cproject.util.CMineTestFixtures;
 import org.junit.Test;
 
 /** test SVG.
@@ -11,8 +15,10 @@ import org.junit.Test;
  * @author pm286
  *
  */
-public class AMISVGTest {
+public class AMISVGTest extends AbstractAMITest {
 	private static final Logger LOG = LogManager.getLogger(AMISVGTest.class);
+	private static File TEST_VECTOR = new File(SRC_TEST_AMI, "vector10");
+
 @Test
 	/** 
 	 * convert single file
@@ -194,5 +200,36 @@ public class AMISVGTest {
 				;
 		new AMISVGTool().runCommands(args);
 	}
+	
+	
+	@Test
+	public void testExtractVectors() {
+		File projectDir = TEST_VECTOR;
+		File treeDir = new File(projectDir, "PMC4491181");
+		File targetDir = new File(TEST_VECTOR, "create/");
+		CMineTestFixtures.cleanAndCopyDir(projectDir, targetDir);
+
+		String cmd = ""
+				+ " -vv"
+				+ " --forcemake"
+//				+ " -t " + treeDir
+				+ " -p " + projectDir
+				+ " pdfbox"
+				+ " --maxprimitives=100000"
+				;
+		AMI.execute(cmd);
+
+		cmd = ""
+				+ " -vv"
+				+ " --forcemake"
+//				+ " -t " + treeDir
+				+ " -p " + projectDir
+				+ " svg"
+				+ " --panels xwidth=200,ywidth=100"
+				;
+		AMI.execute(cmd);
+	}
+	
+
 	
 }

@@ -1,0 +1,903 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.1 20151215//EN" "JATS-archivearticle1.dtd"> 
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="review-article"><?properties open_access?><?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Publishing DTD v2.3 20070202//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName journalpublishing.dtd?><?SourceDTD.Version 2.3?><?ConverterInfo.XSLTName jp2nlmx2.xsl?><?ConverterInfo.Version 1?><front><journal-meta><journal-id journal-id-type="nlm-ta">Materials (Basel)</journal-id><journal-id journal-id-type="iso-abbrev">Materials (Basel)</journal-id><journal-id journal-id-type="publisher-id">materials</journal-id><journal-title-group><journal-title>Materials</journal-title></journal-title-group><issn pub-type="epub">1996-1944</issn><publisher><publisher-name>MDPI</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">5452304</article-id><article-id pub-id-type="doi">10.3390/ma6041310</article-id><article-id pub-id-type="publisher-id">materials-06-01310</article-id><article-categories><subj-group subj-group-type="heading"><subject>Review</subject></subj-group></article-categories><title-group><article-title>Lithium Ion Battery Anode Aging Mechanisms</article-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Agubra</surname><given-names>Victor</given-names></name></contrib><contrib contrib-type="author"><name><surname>Fergus</surname><given-names>Jeffrey</given-names></name><xref rid="c1-materials-06-01310" ref-type="corresp">*</xref></contrib></contrib-group><aff id="af1-materials-06-01310">Materials Research and Education Center, Auburn University, 275 Wilmore Laboratories Auburn, AL 36849, USA; E-Mail: <email>vaa0002@auburn.edu</email></aff><author-notes><corresp id="c1-materials-06-01310"><label>*</label>Author to whom correspondence should be addressed; E-Mail: <email>jwfergus@eng.auburn.edu</email>; Tel.: +1334-844-3405; Fax: +1334-844-3400.</corresp></author-notes><pub-date pub-type="epub"><day>27</day><month>3</month><year>2013</year></pub-date><pub-date pub-type="collection"><month>4</month><year>2013</year></pub-date><volume>6</volume><issue>4</issue><fpage>1310</fpage><lpage>1325</lpage><history><date date-type="received"><day>27</day><month>11</month><year>2012</year></date><date date-type="rev-recd"><day>20</day><month>2</month><year>2013</year></date><date date-type="accepted"><day>15</day><month>3</month><year>2013</year></date></history><permissions><copyright-statement>&#x000a9; 2013 by the authors.</copyright-statement><copyright-year>2013</copyright-year><license license-type="open-access"><license-p>Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution license (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/</ext-link>).</license-p></license></permissions><abstract><p>Degradation mechanisms such as lithium plating, growth of the passivated surface film layer on the electrodes and loss of both recyclable lithium ions and electrode material adversely affect the longevity of the lithium ion battery. The anode electrode is very vulnerable to these degradation mechanisms. In this paper, the most common aging mechanisms occurring at the anode during the operation of the lithium battery, as well as some approaches for minimizing the degradation are reviewed.</p></abstract><kwd-group><kwd>Li-ion battery anode materials</kwd><kwd>Li-ion conduction</kwd><kwd>composite electrodes</kwd></kwd-group></article-meta></front><body><sec><title>1. Introduction</title><p>The high energy/ power density, and excellent cycle life of the lithium ion battery have positioned it as the preferred portable energy source for consumer appliances and in the automotive industry. The performance of the battery depends on the development of materials for the various components of the lithium ion battery [<xref rid="B1-materials-06-01310" ref-type="bibr">1</xref>,<xref rid="B2-materials-06-01310" ref-type="bibr">2</xref>,<xref rid="B3-materials-06-01310" ref-type="bibr">3</xref>]. The degradation of these components during battery operation adversely affects the energy delivery of the lithium ion battery.</p><p>The various battery components undergo different aging mechanisms; the binder and electrolyte decompose, the current collector corrodes, the separator melts and corrodes, and the cathode undergoes structural disorder and metal dissolution. </p><p>The anode undergoes a multitude of aging mechanisms that degrade the electrochemical performance of the lithium ion battery. The most commonly used anode materials include carbon-based compounds and lithium-alloys. The microstructure, texture, crystallinity and morphology of the anode material directly influence its performance [<xref rid="B4-materials-06-01310" ref-type="bibr">4</xref>].</p><p>By design, the anode electrode has a large geometry dimension compared to the cathode electrode so as to prevent edge lithium plating at the anode ends. Also, the anode electrode generally has excess anode capacity compared to the cathode so that the battery can deliver high energy density [<xref rid="B5-materials-06-01310" ref-type="bibr">5</xref>]. A reduced anode capacity will polarize the anode to a potential close to lithium deposition potentials. However, higher surface area of the electrode is preferred to active surface area, since a higher surface allows short diffusion paths for lithium ions between the graphite particles; this facilitates fast charge and discharge rate and improves the capacity of the battery. Decrease particles size tends to increase the specific surface area from BET (Brunauer Emmett and Teller) method and the irreversible capacity loss increases. On the other hand, irreversible capacity decreases as the active specific area of the electrode increases. The intercalation of lithium ions into the graphite sheets at various stages, e.g., Li<italic><sub>x</sub></italic>C<sub>6</sub>, Li<italic><sub>x</sub></italic>C<sub>12</sub>, during the charging cycles to provide a nominal theoretical capacity of the carbon based anode of about 372 mAh/g. Additives, such as B, N and P, have been used to enhance this capacity.</p><p>Nevertheless, the anode has been associated with many aging mechanisms in the lithium ion battery. The focus of this paper is to elucidate the various aging mechanisms occurring at the anode of the lithium ion battery. Although the main focus will be on the aging mechanisms, a brief analysis of various treatment measures adopted to mitigate these aging mechanisms on the anode will be discussed.</p></sec><sec><title>2. Formation of Passivated Surface Layer </title><p>Graphite is one of the common anode materials for lithium ion batteries operating in organic electrolytes, such as LiPF<sub>6</sub>, with co-solvents like ethylene carbonate (EC), dimethyl carbonate (DMC), diethyl carbonate (DEC), methyl ethyl carbonate (EMC)). The reaction of the anode with the electrolyte solution in the formation stage results in the formation of species such as ROCO<sub>2</sub>Li and CO<sub>2</sub>OLi, on the anode surface. The layer formed by these species is referred to as the solid electrolyte interphase (SEI). The ROCO<sub>2</sub>Li can undergo reduction reaction with CO<sub>2</sub> and traces of H<sub>2</sub>O in the electrolyte to form lithium carbonate [<xref rid="B6-materials-06-01310" ref-type="bibr">6</xref>] which further react with EC to form transesterification products such DMDOHC, EMDOHC and DECDOHC. In addition, anion contaminates, such as F<sup>&#x02212;</sup> from HF and PF<sub>5</sub>, readily react with lithium to form insoluble reaction products which are non-uniform, electronically insulating, and unstable on the surface of the graphite particles [<xref rid="B7-materials-06-01310" ref-type="bibr">7</xref>,<xref rid="B8-materials-06-01310" ref-type="bibr">8</xref>,<xref rid="B9-materials-06-01310" ref-type="bibr">9</xref>,<xref rid="B10-materials-06-01310" ref-type="bibr">10</xref>,<xref rid="B11-materials-06-01310" ref-type="bibr">11</xref>]. In addition, the dissolution of the cathode electrode metal from the lattice into the electrolyte due to the disproportionation of Mn<sup>3+</sup> (into Mn<sup>2+</sup> and Mn<sup>4+</sup>) by traces of hydrofluoric acid (HF) in the electrolyte, resulting in the deposition of cation contaminates, such as of Mn, Co and Fe, on the anode electrode surface [<xref rid="B12-materials-06-01310" ref-type="bibr">12</xref>],</p><p>At higher battery potentials, during the intercalation of lithium ions into the anode lattice structure, the graphite anode oxidizes. At this potential, electrolyte co-solvents, such as EC, which is highly reactive, react with the lithium ions and the reaction products quickly precipitate and grow on the anode surface [<xref rid="B13-materials-06-01310" ref-type="bibr">13</xref>,<xref rid="B14-materials-06-01310" ref-type="bibr">14</xref>]. The presence of these reaction products on the surface retards the intercalation kinetics of the carbon anode [<xref rid="B15-materials-06-01310" ref-type="bibr">15</xref>]. The surface layer grows in thickness as the decomposition reaction continues [<xref rid="B16-materials-06-01310" ref-type="bibr">16</xref>,<xref rid="B17-materials-06-01310" ref-type="bibr">17</xref>,<xref rid="B18-materials-06-01310" ref-type="bibr">18</xref>,<xref rid="B19-materials-06-01310" ref-type="bibr">19</xref>,<xref rid="B20-materials-06-01310" ref-type="bibr">20</xref>,<xref rid="B21-materials-06-01310" ref-type="bibr">21</xref>,<xref rid="B22-materials-06-01310" ref-type="bibr">22</xref>]. The layer thickness is established to be a function of operating cycles, regardless of the charging protocol (<italic>i.e.</italic>, pulse charging or DC charging) [<xref rid="B23-materials-06-01310" ref-type="bibr">23</xref>,<xref rid="B24-materials-06-01310" ref-type="bibr">24</xref>,<xref rid="B25-materials-06-01310" ref-type="bibr">25</xref>]. The layers become unstable and crack due to expansion and contraction of the graphite lattice during the insertion and de-insertion of the lithium ions [<xref rid="B26-materials-06-01310" ref-type="bibr">26</xref>,<xref rid="B27-materials-06-01310" ref-type="bibr">27</xref>,<xref rid="B28-materials-06-01310" ref-type="bibr">28</xref>]. This allows further surface reaction at these sites that may eventually isolate the graphite particles from the current collector. <xref ref-type="fig" rid="materials-06-01310-f001">Figure 1</xref> shows a typical surface film morphology and cracking of the layer (e.g., [<xref rid="B26-materials-06-01310" ref-type="bibr">26</xref>,<xref rid="B27-materials-06-01310" ref-type="bibr">27</xref>]). The surface crack formed on the surface does not typically travel to the carbon electrode [<xref rid="B26-materials-06-01310" ref-type="bibr">26</xref>]. The formation of this surface film layer is the predominate source of lithium ion loss in lithium ion battery during storage conditions [<xref rid="B25-materials-06-01310" ref-type="bibr">25</xref>]. It also leads to an increase in the charge transfer resistance, impedance, and clogs pores on the carbon anode electrode [<xref rid="B29-materials-06-01310" ref-type="bibr">29</xref>,<xref rid="B30-materials-06-01310" ref-type="bibr">30</xref>,<xref rid="B31-materials-06-01310" ref-type="bibr">31</xref>], which limits accessibility of lithium ions to the anode surface leading to an increase in irreversible capacity [<xref rid="B32-materials-06-01310" ref-type="bibr">32</xref>,<xref rid="B33-materials-06-01310" ref-type="bibr">33</xref>,<xref rid="B34-materials-06-01310" ref-type="bibr">34</xref>]. The growth of this surface layer on the anode electrode is prevalent in the electrolyte system with EC as the co-solvent compared to those with DEC or DMC as co-solvents [<xref rid="B35-materials-06-01310" ref-type="bibr">35</xref>,<xref rid="B36-materials-06-01310" ref-type="bibr">36</xref>,<xref rid="B37-materials-06-01310" ref-type="bibr">37</xref>,<xref rid="B38-materials-06-01310" ref-type="bibr">38</xref>].</p><fig id="materials-06-01310-f001" position="float"><label>Figure 1</label><caption><p>Growth of the passivation layer on the anode resulting from electrolyte decomposition. (<bold>a</bold>) Surface film agglomerates; (<bold>b</bold>) Surface film forms a &#x0201c;mat&#x0201d; on the carbon particle surface area.</p></caption><graphic xlink:href="materials-06-01310-g001"/></fig></sec><sec><title>3. Anode Impedance</title><p>The growth of the passive surface layer on the anode creates resistance to lithium ion flow, which results in a rise in the charge transfer resistance and the impedance of the anode [<xref rid="B39-materials-06-01310" ref-type="bibr">39</xref>,<xref rid="B40-materials-06-01310" ref-type="bibr">40</xref>]. This increase in anode impedance is said to increase with charge rate, cycle number, temperature, and anode material particle size [<xref rid="B41-materials-06-01310" ref-type="bibr">41</xref>,<xref rid="B42-materials-06-01310" ref-type="bibr">42</xref>,<xref rid="B43-materials-06-01310" ref-type="bibr">43</xref>]. However, at low temperatures (10&#x02013;30 &#x000b0;C) and low charge rate(C/20), the anode electrode contribution to the overall battery impedance is low. This is attributed to the small amount of the surface film formed on the electrode surface [<xref rid="B44-materials-06-01310" ref-type="bibr">44</xref>]. The low charge rate limits the amount of excess Li<sup>+</sup> that is not intercalated into the electrode to react with the electrolyte [<xref rid="B45-materials-06-01310" ref-type="bibr">45</xref>,<xref rid="B46-materials-06-01310" ref-type="bibr">46</xref>]. A typical SEM micrograph of anode covered with products of electrolyte decomposition reaction products is shown in <xref ref-type="fig" rid="materials-06-01310-f002">Figure 2</xref>. (e.g., [<xref rid="B38-materials-06-01310" ref-type="bibr">38</xref>,<xref rid="B39-materials-06-01310" ref-type="bibr">39</xref>,<xref rid="B44-materials-06-01310" ref-type="bibr">44</xref>,<xref rid="B46-materials-06-01310" ref-type="bibr">46</xref>,<xref rid="B47-materials-06-01310" ref-type="bibr">47</xref>]). Common surface reaction products formed on the anode surface include Li-alkyl carbonates, lithium carbonate species and fluorinated products. These products affect the intercalation and de-intercalation kinetics of the anode, and thus result in an increase in anode electrode impedance relative to the cathode [<xref rid="B47-materials-06-01310" ref-type="bibr">47</xref>,<xref rid="B48-materials-06-01310" ref-type="bibr">48</xref>,<xref rid="B49-materials-06-01310" ref-type="bibr">49</xref>].</p><fig id="materials-06-01310-f002" position="float"><label>Figure 2</label><caption><p>A typical SEM micrograph of surface film growth on the graphite particles. (<bold>a</bold>) Small precipitate of surface film on the carbon particles; (<bold>b</bold>) Precipitate thickness increases.</p></caption><graphic xlink:href="materials-06-01310-g002"/></fig><p>Comparing the impedance of the anode is difficult owing to the multitude of testing conditions and different anode materials used in various batteries. However, <xref ref-type="fig" rid="materials-06-01310-f003">Figure 3</xref>a,b shows the impedances of the individual electrodes as well as the overall battery impedance. In these two cases, the anode contributes less to the overall battery impedance compared to the cathode. In these two cases, carbon is the anode material, while LiPF<sub>6</sub> in EC+DMC is the electrolyte system and the operating conditions are low-to-medium temperature and low charge rate. The higher battery impedance exists at high operating temperature and charge rate, where the surface reactions are enhanced and a thicker surface film layer is formed on the electrode surface.</p><fig id="materials-06-01310-f003" position="float"><label>Figure 3</label><caption><p>(<bold>a</bold>) Anode contributing less to total battery impedance (charge rate of C/2 at room temperature) [<xref rid="B39-materials-06-01310" ref-type="bibr">39</xref>]; (<bold>b</bold>) Anode contributing less to total battery impedance (graphite and LiNi<sub>0.8</sub>Co<sub>0.15</sub>Al<sub>0.05</sub>O<sub>2</sub> electrodes: 0.5C charge rate at 40 &#x000b0;C) [<xref rid="B45-materials-06-01310" ref-type="bibr">45</xref>].</p></caption><graphic xlink:href="materials-06-01310-g003"/></fig></sec><sec><title>4. Degradation Due to the Loss of Recyclable Lithium Ions</title><p>The irreversible lithium ion loss is generally attributed to two phenomena, namely: (i) solid electrolyte interface (SEI) layer formation via electrolyte decomposition at the formation stage; (ii) side reaction of lithium ion with decomposed electrolyte compounds and water (e.g., 10&#x02013;1500 ppm) in the electrolyte at the later stage of the battery operation [<xref rid="B50-materials-06-01310" ref-type="bibr">50</xref>].</p><p>The loss and/or consumption of recyclable lithium ions at the anode by the passive layer is a major cause of the reduction in the reversible capacity of the lithium ion battery [<xref rid="B51-materials-06-01310" ref-type="bibr">51</xref>,<xref rid="B52-materials-06-01310" ref-type="bibr">52</xref>]. As the layer grows, lithium is consumed in the reaction and the increased thickness inhibits Li<sup>+</sup> transfer, thus the lithium ions must tunnel through the layer. This phenomenon is the main degradation mechanism in fully charged batteries at storage conditions [<xref rid="B52-materials-06-01310" ref-type="bibr">52</xref>,<xref rid="B53-materials-06-01310" ref-type="bibr">53</xref>,<xref rid="B54-materials-06-01310" ref-type="bibr">54</xref>,<xref rid="B55-materials-06-01310" ref-type="bibr">55</xref>], where the electronic insulating surface layer formed clog the pores and isolate graphite particles. The irreversible lithium ion loss is also a function of the specific area of the graphite particles, since an increase in area increases the volume of reaction products [<xref rid="B56-materials-06-01310" ref-type="bibr">56</xref>,<xref rid="B57-materials-06-01310" ref-type="bibr">57</xref>]. For a graphite anode with low specific area, the charge loss is low. The electrolyte additive, vinylene carbonate (VC) is one that increases the lithium ion loss rate at the anode for the Li/coke electrode during storage (ambient temperature conditions). Because it increases the rate of SEI formation reaction at ambient temperature conditions to increase the SEI thickness. However, its beneficial effect is seen at higher temperature (35&#x02013;50 &#x000b0;C) and higher voltages &#x0003e;0.4 V for Li/coke, electrode as it slows down the side reaction rate and undergoes reduction and polymerization to form poly alkyl Li-carbonate species that suppress both solvent and salt anion reduction on the anode electrode.</p><p>Similarly, in batteries stored at voltages greater than 3.6V, electrolyte oxidation at the cathode can also induce surface reaction deposits that cover the active cathode electrode area. These covered areas are insulating, which could result in a non-homogeneous local current distribution in the cathode electrode.</p></sec><sec><title>5. Anode Degradation Due to Structural Changes </title><p>Anode materials, such as mesosphere pitch-based carbon (MSPBC) and vapor grown carbon fibers (VGCF), have high surface area morphologies that provide large discharge capacity and high charge rate performance [<xref rid="B4-materials-06-01310" ref-type="bibr">4</xref>]. During battery degradation, the ordered and radial structures of the carbon electrode may become less ordered, but this structural change is not the main contributor to battery degradation [<xref rid="B58-materials-06-01310" ref-type="bibr">58</xref>]. Degradation can be either in the form of the lithium plating or the formation of the surface film (e.g., new XRD peaks as in <xref ref-type="fig" rid="materials-06-01310-f004">Figure 4</xref>). Neither the particles size nor the lattice parameter change significantly with these degradation processes [<xref rid="B59-materials-06-01310" ref-type="bibr">59</xref>]. </p><p>Cycling the lithium ion batteries at high C-rate and high state of charge (SOC) induces mechanical strain on the graphite lattice of the anode electrode due the steep gradient of lithium ions, and thus lattice parameter, in the particle. This mechanical strain caused by the insertion and de-insertion of the lithium ions cracks, fissures and splits the graphite particles thus making these particles less oriented as compared to the original platelets [<xref rid="B60-materials-06-01310" ref-type="bibr">60</xref>]. Pressed graphite particles improve the ionic conductivity with a trade off in a decreased ohmic resistance and irreversible capacity loss [<xref rid="B61-materials-06-01310" ref-type="bibr">61</xref>]. The nature and orientation of the graphite particles influences the reversible capacity of the anode. For instance, less-oriented graphite particles have a low reversible capacity due to more difficult lithium intercalation kinetics and to the formation of new boundaries between crystallite at which irreversible lithium ions/electrolyte interaction can occur [<xref rid="B62-materials-06-01310" ref-type="bibr">62</xref>,<xref rid="B63-materials-06-01310" ref-type="bibr">63</xref>,<xref rid="B64-materials-06-01310" ref-type="bibr">64</xref>,<xref rid="B65-materials-06-01310" ref-type="bibr">65</xref>,<xref rid="B66-materials-06-01310" ref-type="bibr">66</xref>]. While flake-like graphite particles have higher gravimetric capacity at higher C-rate compared to spherical particles [<xref rid="B67-materials-06-01310" ref-type="bibr">67</xref>]. Although the crystal structure of the anode typically does not change with aging, a change in the rhombohederal/hexagonal content during battery operation has been reported. The increase in the hexagonal content during the first and third stage of lithium ions intercalation lowers Faradic efficiency, thereby decreasing the reversible capacity of the anode [<xref rid="B68-materials-06-01310" ref-type="bibr">68</xref>,<xref rid="B69-materials-06-01310" ref-type="bibr">69</xref>,<xref rid="B70-materials-06-01310" ref-type="bibr">70</xref>], so ideally a high ratio of rhombohederal/hexagonal content which gives a high reversible capacity is most desired.</p><fig id="materials-06-01310-f004" position="float"><label>Figure 4</label><caption><p>Structural changes on the anode electrode from degradation. (<bold>a</bold>) Surface cracks on the sufrcae of aged anode electrode; (<bold>b</bold>) XRD spectra of aged anode electrode showing change in cystal structure (new phases).</p></caption><graphic xlink:href="materials-06-01310-g004"/></fig></sec><sec><title>6. Influence of Particle Size, Active Surface Area and Porosity </title><p>The size of the graphite particles in the anode greatly influences the performance of the anode. Small particles contain short diffusion paths between the graphite particles, which facilitate fast charge and discharge rate [<xref rid="B71-materials-06-01310" ref-type="bibr">71</xref>]. Similarly, the larger surface area of the smaller graphite particles are prone to higher internal heat generation and lithium ion are consumed during the exothermic reaction at high temperatures greater than 60 &#x000b0;C [<xref rid="B72-materials-06-01310" ref-type="bibr">72</xref>] compared to larger particles size, this leads to an increase in the irreversible capacity of the graphite electrode [<xref rid="B73-materials-06-01310" ref-type="bibr">73</xref>,<xref rid="B74-materials-06-01310" ref-type="bibr">74</xref>,<xref rid="B75-materials-06-01310" ref-type="bibr">75</xref>]. The area specific impedance (ASI) of the graphite particles remains constant and does not vary much with capacity of the battery until the maximum capacity is reached [<xref rid="B76-materials-06-01310" ref-type="bibr">76</xref>] as shown in <xref ref-type="fig" rid="materials-06-01310-f005">Figure 5</xref>. In the same vein, there has not been a direct correlation between the porosity of the graphite and the reversible capacity of the anode [<xref rid="B77-materials-06-01310" ref-type="bibr">77</xref>]. <xref ref-type="fig" rid="materials-06-01310-f006">Figure 6</xref> is a selected plot of graphite anode porosity data for prismatic and cylindrical (1.5 V) batteries cycled at 1C. An increase in porosity decreases the active surface area, reduces the electrical path into the graphite particles and reduces the accessibility of the lithium ions into the current collector. Although the pores will accommodate a large volume of electrolyte, they serve as a reaction point during the electrolyte decomposition process.</p><fig id="materials-06-01310-f005" position="float"><label>Figure 5</label><caption><p>Effect of area specific impedance (ASI) on charge capacity [<xref rid="B76-materials-06-01310" ref-type="bibr">76</xref>].</p></caption><graphic xlink:href="materials-06-01310-g005"/></fig><fig id="materials-06-01310-f006" position="float"><label>Figure 6</label><caption><p>Effect of anode porosity on charge capacity for prismatic cell and cylindrical cell charge at 1C at 300 cycles [<xref rid="B77-materials-06-01310" ref-type="bibr">77</xref>].</p></caption><graphic xlink:href="materials-06-01310-g006"/></fig><p>The density of the graphite anode has an effect on its ability to withstand degradation under strenuous battery operating conditions. A higher anode electrode particle density decreases the porosity and by extension, the active surface area of the electrode which reduces the electrode/electrolyte contact area. Therefore the denser the graphite material, the lower the irreversible capacity [<xref rid="B78-materials-06-01310" ref-type="bibr">78</xref>,<xref rid="B79-materials-06-01310" ref-type="bibr">79</xref>]. Furthermore, increased heat generation from a denser electrode material produces gaseous species [<xref rid="B79-materials-06-01310" ref-type="bibr">79</xref>] at temperatures greater than 120 &#x000b0;C from the thermal decomposition of the SEI layer. This implies that the thermal stability of the graphite anode is strongly dependent on the particle size of the graphite electrode.</p></sec><sec><title>7. Metallic Lithium Plating on the Anode</title><p>Its light weight, high voltage and high energy density once made lithium metal foil the preferred anode electrode for the lithium ion battery. However, its propensity to the formation of dendrites and moss made it unattractive. In the light if this, many more anode materials have been developed to replace the lithium metal foil as an anode material. Common anode materials currently used in lithium ion batteries include graphite, coke, hard carbon and lithium titanate. Among these, the unmodified graphite electrode is most susceptible to lithium plating because of the close proximity of its reversible potential to that of Li<sup>+</sup>/Li [<xref rid="B80-materials-06-01310" ref-type="bibr">80</xref>,<xref rid="B81-materials-06-01310" ref-type="bibr">81</xref>]. Lithium plating by itself is reversible, as the plated lithium oxidizes at potential of about 100mV, a potential much lower than that of lithium de-intercalation at the anode electrode, causing a voltage overshoot during the discharge cycle (over potential) as shown in <xref ref-type="fig" rid="materials-06-01310-f007">Figure 7</xref>a. Well-ordered carbon and non-graphitizable carbon have gradually replaced lithium metal as the preferred anode material for the lithium ion battery because of their superior capacity, good cycleability, lower susceptibility to lithium plating, and low electrode potential relative to Li<sup>+</sup>/Li.</p><fig id="materials-06-01310-f007" position="float"><label>Figure 7</label><caption><p>(<bold>a</bold>) Schematic current voltage over-potential caused by lithium plating [<xref rid="B81-materials-06-01310" ref-type="bibr">81</xref>]; (<bold>b</bold>) Lithium metal morphologies [<xref rid="B82-materials-06-01310" ref-type="bibr">82</xref>].</p></caption><graphic xlink:href="materials-06-01310-g007"/></fig><p>There are several factors that initiate the formation of metallic lithium on the surface of the anode electrode, some of these include: (1) the nature of the electrolyte (<italic>i.e.</italic>, electrolyte formulations with high EC content exhibit lithium plating); (2) the ratio between anode and cathode capacities (<italic>i.e.</italic>, low anode/capacity ratio will polarize the anode and promote lithium plating); (3) the operating temperature and the charge rate [<italic>i.e.</italic>, low temperature (&#x02212;20 &#x000b0;C) and high charge rate] all influence plating on the anode [<xref rid="B81-materials-06-01310" ref-type="bibr">81</xref>,<xref rid="B83-materials-06-01310" ref-type="bibr">83</xref>]. These factors affect the anode kinetics and the lithium ion diffusion rate, such that lithium plates on the surface of the electrode rather than intercalating into the lattice of the carbon.</p><p>The formed metallic lithium deposits on the graphite anode are affected by the degree of random orientation of the particles in the crystal structure in the anode material and the non-uniformity of the current distribution which is a function of diffusion and current density [<xref rid="B84-materials-06-01310" ref-type="bibr">84</xref>,<xref rid="B85-materials-06-01310" ref-type="bibr">85</xref>]. The disorientation of the particles in the graphite electrode initiates inhomogeneity in the charge distribution on the anode electrode in the third and fourth intercalation stages and results in the formation of moss-like deposits and dendrites [<xref rid="B82-materials-06-01310" ref-type="bibr">82</xref>,<xref rid="B86-materials-06-01310" ref-type="bibr">86</xref>,<xref rid="B87-materials-06-01310" ref-type="bibr">87</xref>]. These moss-like deposits and dendrites grow as a function of the temperature and current density between the polymer separator and the anode. As the temperature and charge rate increases, the reaction rate also increases and metallic lithium is deposited on the graphite at overcharge. Dendrites can cause the separator to disconnect and become isolated from the electrolyte and in some instances pierce through the separator. The mat of dead lithium and dendrites can cause a short circuit and thermal runway in the battery (e.g., <xref ref-type="fig" rid="materials-06-01310-f007">Figure 7</xref>b). The signature of lithium plating in batteries is usually manifested as a voltage plateau on the discharge voltage profile and low columbic efficiency [<xref rid="B88-materials-06-01310" ref-type="bibr">88</xref>]. </p><p>The vulnerability of the anode electrode to degrade rapidly has prompted research to improve its stability. Several methods have been explored, including the inclusion of stabilizing compounds into the graphite matrix, formulations of dendrite and lithium plating suppression electrolyte systems. Elements such as Sn and carbon have been dispersed on the surface of the graphite to improve the electrochemical cycling properties of the anode electrode [<xref rid="B89-materials-06-01310" ref-type="bibr">89</xref>,<xref rid="B90-materials-06-01310" ref-type="bibr">90</xref>,<xref rid="B91-materials-06-01310" ref-type="bibr">91</xref>,<xref rid="B92-materials-06-01310" ref-type="bibr">92</xref>]. Sn on the surface of carbon anode reduces the SEI resistance and the overall electrode polarization at low temperature [<xref rid="B93-materials-06-01310" ref-type="bibr">93</xref>]. Also Sn-graphite anode increases passivation layer conductivity. While a carbon black coating suppresses the delithiation process in the inner structure of the graphite at elevated temperature and thus improves cycle life and capacity fade [<xref rid="B94-materials-06-01310" ref-type="bibr">94</xref>,<xref rid="B95-materials-06-01310" ref-type="bibr">95</xref>]. </p><p>Another category of treatment on the surface of the anode electrode is the coating of the surface with additives like AD25, AsF<sub>6</sub>, VC and by thermal oxidation of the surface of the anode [<xref rid="B95-materials-06-01310" ref-type="bibr">95</xref>,<xref rid="B96-materials-06-01310" ref-type="bibr">96</xref>]. Thermal oxidation of graphite in air increases the surface area and fractional edge sites, which increases pores size and reduces particles size [<xref rid="B97-materials-06-01310" ref-type="bibr">97</xref>,<xref rid="B98-materials-06-01310" ref-type="bibr">98</xref>,<xref rid="B99-materials-06-01310" ref-type="bibr">99</xref>] and thus reduces the non-homogeneity of charge distribution that cause lithium plating. The additives AD25 and AsF<sub>6</sub> stabilize the graphite at elevated temperature and suppress the formation of metallic lithium and reduction products of the LiPF<sub>6</sub> [<xref rid="B20-materials-06-01310" ref-type="bibr">20</xref>,<xref rid="B100-materials-06-01310" ref-type="bibr">100</xref>,<xref rid="B101-materials-06-01310" ref-type="bibr">101</xref>]. Lastly, mechanical compression of the graphite particles during the electrode preparation process reduces the pore size thereby reducing the non-homogeneity of the charge distribution on the electrode and improving the reversible and irreversible capacities [<xref rid="B101-materials-06-01310" ref-type="bibr">101</xref>].</p></sec><sec><title>8. Conclusions</title><p>The anode of the lithium ion battery undergoes several degradation mechanisms during aging. Lithium plating is one aging mechanism which ends the life of a battery more rapidly due to the formation and growth of lithium dendrites. The decomposition of the electrolyte and subsequent formation of the film surface layer on the anode, cause an increase in the impedance and the consumption of recyclable lithium ions. These degradation mechanisms rarely affect the crystal structure of the anode electrode. The addition of various stabilizers, robust electrolyte systems, and temperature treatment are some of the methods that have been adopted to mitigate these aging effects on the electrode. However, further improvement is still needed to build a more robust anode that can deliver high energy density and good cycleability at various operating conditions. </p></sec></body><back><ref-list><title>References</title><ref id="B1-materials-06-01310"><label>1.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Whittingham</surname><given-names>M.S.</given-names></name></person-group>
+<article-title>Material challenges facing electrical energy storage</article-title>
+<source>MRS Bull.</source>
+<year>2008</year>
+<volume>33</volume>
+<fpage>411</fpage>
+<lpage>419</lpage>
+<pub-id pub-id-type="doi">10.1557/mrs2008.82</pub-id>
+</element-citation></ref><ref id="B2-materials-06-01310"><label>2.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Patil</surname><given-names>A.</given-names></name><name><surname>Patil</surname><given-names>V.</given-names></name><name><surname>Shin</surname><given-names>W.D.</given-names></name><name><surname>Choi</surname><given-names>J.W.</given-names></name><name><surname>Paik</surname><given-names>D.S.</given-names></name><name><surname>Yoon</surname><given-names>J.</given-names></name></person-group>
+<article-title>Issues and challenges facing rechargeable thin film lithium batteries</article-title>
+<source>Mater. Res. Bull.</source>
+<year>2008</year>
+<volume>43</volume>
+<fpage>1913</fpage>
+<lpage>1942</lpage>
+<pub-id pub-id-type="doi">10.1016/j.materresbull.2007.08.031</pub-id>
+</element-citation></ref><ref id="B3-materials-06-01310"><label>3.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Shukla</surname><given-names>A.K.</given-names></name><name><surname>Kumar</surname><given-names>T.P.</given-names></name></person-group>
+<article-title>Materials for the next generation lithium ion batteries</article-title>
+<source>Curr. Sci.</source>
+<year>2008</year>
+<volume>94</volume>
+<fpage>314</fpage>
+<lpage>331</lpage>
+</element-citation></ref><ref id="B4-materials-06-01310"><label>4.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Endo</surname><given-names>M.</given-names></name><name><surname>Kim</surname><given-names>C.</given-names></name><name><surname>Nishimura</surname><given-names>K.</given-names></name><name><surname>Fujino</surname><given-names>T.</given-names></name><name><surname>Miyashita</surname><given-names>K.</given-names></name></person-group>
+<article-title>Recent development of carbon materials for Li Ion batteries</article-title>
+<source>Carbon</source>
+<year>2000</year>
+<volume>38</volume>
+<fpage>183</fpage>
+<lpage>197</lpage>
+<pub-id pub-id-type="doi">10.1016/S0008-6223(99)00141-4</pub-id>
+</element-citation></ref><ref id="B5-materials-06-01310"><label>5.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Stewart</surname><given-names>S.</given-names></name><name><surname>Newman</surname><given-names>J.</given-names></name></person-group>
+<article-title>Measuring the salt activity coefficient in Lithium-battery electrolytes</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2008</year>
+<volume>155</volume>
+<fpage>A458</fpage>
+<lpage>A463</lpage>
+<pub-id pub-id-type="doi">10.1149/1.2904526</pub-id>
+</element-citation></ref><ref id="B6-materials-06-01310"><label>6.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lu</surname><given-names>M.</given-names></name><name><surname>Cheng</surname><given-names>H.</given-names></name><name><surname>Yang</surname><given-names>Y.</given-names></name></person-group>
+<article-title>A comparison of solid electrolyte interphase on the artificial graphite anode of the aged and cycled commercial lithium ion cells</article-title>
+<source>Eelectrochim. Acta</source>
+<year>2008</year>
+<volume>53</volume>
+<fpage>3539</fpage>
+<lpage>3546</lpage>
+<pub-id pub-id-type="doi">10.1016/j.electacta.2007.09.062</pub-id>
+</element-citation></ref><ref id="B7-materials-06-01310"><label>7.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Belharouak</surname><given-names>I.</given-names></name><name><surname>Koening</surname><given-names>G.</given-names><suffix>Jr.</suffix></name><name><surname>Tan</surname><given-names>T.</given-names></name><name><surname>Yumoto</surname><given-names>H.</given-names></name><name><surname>Ota</surname><given-names>N.</given-names></name></person-group>
+<article-title>Performance degradation and gassing of Li<sub>4</sub>Ti<sub>5</sub>O<sub>12</sub>/LiMn<sub>2</sub>O<sub>4</sub> lithium-ion cells</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2012</year>
+<volume>159</volume>
+<fpage>1165</fpage>
+<lpage>1170</lpage>
+<pub-id pub-id-type="doi">10.1149/2.013208jes</pub-id>
+</element-citation></ref><ref id="B8-materials-06-01310"><label>8.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Levi</surname><given-names>M.D.</given-names></name><name><surname>Wang</surname><given-names>C.</given-names></name><name><surname>Gnanara</surname><given-names>J.S.</given-names></name><name><surname>Aurbach</surname><given-names>D.</given-names></name></person-group>
+<article-title>Electrochemical behavior of graphite anode at elevated temperature in organic carbonate solution</article-title>
+<source>J. Power Sources</source>
+<year>2003</year>
+<volume>119</volume>
+<fpage>538</fpage>
+<lpage>542</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(03)00279-9</pub-id>
+</element-citation></ref><ref id="B9-materials-06-01310"><label>9.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ramadass</surname><given-names>P.</given-names></name><name><surname>Haran</surname><given-names>B</given-names></name><name><surname>White</surname><given-names>R</given-names></name><name><surname>Popov</surname><given-names>B N.</given-names></name></person-group>
+<article-title>Capacity fade of Sony 18650 cells cycled at elevated temperatures Part I. Cycling performance</article-title>
+<source>J. Power Sources</source>
+<year>2002</year>
+<volume>112</volume>
+<fpage>606</fpage>
+<lpage>613</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(02)00474-3</pub-id>
+</element-citation></ref><ref id="B10-materials-06-01310"><label>10.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Haran</surname><given-names>B.</given-names></name><name><surname>White</surname><given-names>R.</given-names></name><name><surname>Popov</surname><given-names>B.N.</given-names></name></person-group>
+<article-title>Capacity fade of Sony 18650 cells cycled at elevated temperatures Part II. Capacity fade analysis</article-title>
+<source>J. Power Sources</source>
+<year>2002</year>
+<volume>112</volume>
+<fpage>614</fpage>
+<lpage>620</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(02)00473-1</pub-id>
+</element-citation></ref><ref id="B11-materials-06-01310"><label>11.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zhang</surname><given-names>Y.</given-names></name><name><surname>Wang</surname><given-names>C.</given-names></name><name><surname>Tang</surname><given-names>X.</given-names></name></person-group>
+<article-title>Cycling degradation of automotive LiFePO<sub>4</sub> lithium-ion battery</article-title>
+<source>J. Power Sources</source>
+<year>2011</year>
+<volume>196</volume>
+<fpage>1513</fpage>
+<lpage>1520</lpage>
+<pub-id pub-id-type="doi">10.1016/j.jpowsour.2010.08.070</pub-id>
+</element-citation></ref><ref id="B12-materials-06-01310"><label>12.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yang</surname><given-names>L.</given-names></name><name><surname>Takahashi</surname><given-names>M.</given-names></name><name><surname>Wang</surname><given-names>B.</given-names></name></person-group>
+<article-title>A study on capacity fading of lithium-ion battery with a manganese positive electrode during cycling</article-title>
+<source>Electrochim. Acta</source>
+<year>2006</year>
+<volume>51</volume>
+<fpage>3228</fpage>
+<lpage>3234</lpage>
+<pub-id pub-id-type="doi">10.1016/j.electacta.2005.09.014</pub-id>
+</element-citation></ref><ref id="B13-materials-06-01310"><label>13.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Smith</surname><given-names>A.J.</given-names></name><name><surname>Hannah</surname><given-names>M.</given-names></name><name><surname>Dahn</surname><given-names>J.R.</given-names></name></person-group>
+<article-title>Long-term low rate cycling of LiCoO<sub>2</sub> graphite Li-ion cells at 55 &#x000b0;C</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2012</year>
+<volume>159</volume>
+<fpage>705</fpage>
+<lpage>710</lpage>
+<pub-id pub-id-type="doi">10.1149/2.056206jes</pub-id>
+</element-citation></ref><ref id="B14-materials-06-01310"><label>14.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Abraham</surname><given-names>D.P.</given-names></name><name><surname>Reynolds</surname><given-names>E.M.</given-names></name><name><surname>Samman</surname><given-names>E.</given-names></name><name><surname>Jansen</surname><given-names>A.N.</given-names></name><name><surname>Dees</surname><given-names>D.W.</given-names></name></person-group>
+<article-title>Aging characteristics of high-power lithium ion cells with LiNi<sub>0.8</sub>Co<sub>0.15</sub>Al<sub>0.05</sub>O<sub>2</sub> and Li<sub>4/3</sub>Ti<sub>5/3</sub>O<sub>4</sub> electrodes</article-title>
+<source>Electrochim. Acta</source>
+<year>2005</year>
+<volume>51</volume>
+<fpage>502</fpage>
+<lpage>510</lpage>
+<pub-id pub-id-type="doi">10.1016/j.electacta.2005.05.008</pub-id>
+</element-citation></ref><ref id="B15-materials-06-01310"><label>15.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ochida</surname><given-names>M.</given-names></name><name><surname>Domi</surname><given-names>Y.</given-names></name><name><surname>Doi</surname><given-names>T.</given-names></name><name><surname>Tsubouchi</surname><given-names>S.</given-names></name><name><surname>Nakagawa</surname><given-names>H.</given-names></name><name><surname>Yamanaka</surname><given-names>T.</given-names></name><name><surname>Abe</surname><given-names>T.</given-names></name><name><surname>Ogumi</surname><given-names>Z.</given-names></name></person-group>
+<article-title>Influence of manganese dissolution on the degradation of surface films on edge plane graphite negative -electrodes in lithium -ion batteries</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2012</year>
+<volume>159</volume>
+<fpage>A961</fpage>
+<lpage>A966</lpage>
+<pub-id pub-id-type="doi">10.1149/2.031207jes</pub-id>
+</element-citation></ref><ref id="B16-materials-06-01310"><label>16.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kumaresan</surname><given-names>K.</given-names></name><name><surname>Guo</surname><given-names>O.</given-names></name><name><surname>Ramada</surname><given-names>P.</given-names></name><name><surname>White</surname><given-names>R.E.</given-names></name></person-group>
+<article-title>Cycle life performance of lithium-ion pouch cells</article-title>
+<source>J. Power Sources</source>
+<year>2006</year>
+<volume>158</volume>
+<fpage>679</fpage>
+<lpage>688</lpage>
+<pub-id pub-id-type="doi">10.1016/j.jpowsour.2005.08.058</pub-id>
+</element-citation></ref><ref id="B17-materials-06-01310"><label>17.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Abraham</surname><given-names>D.P.</given-names></name><name><surname>Liua</surname><given-names>J.</given-names></name><name><surname>Chen</surname><given-names>C.H.</given-names></name><name><surname>Hyung</surname><given-names>Y.E.</given-names></name><name><surname>Stolla</surname><given-names>M.</given-names></name><name><surname>Elsena</surname><given-names>N.</given-names></name><name><surname>MacLaren</surname><given-names>S.</given-names></name><name><surname>Twesten</surname><given-names>R.</given-names></name><name><surname>Haasch</surname><given-names>R.</given-names></name><name><surname>Sammann</surname><given-names>E.</given-names></name><etal/></person-group>
+<article-title>Diagnosis of power fade mechanisms in high-power lithium-ion cells</article-title>
+<source>J. Power Sources</source>
+<year>2003</year>
+<volume>119</volume>
+<fpage>511</fpage>
+<lpage>516</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(03)00275-1</pub-id>
+</element-citation></ref><ref id="B18-materials-06-01310"><label>18.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bodenes</surname><given-names>L.</given-names></name><name><surname>Dedryvere</surname><given-names>R.</given-names></name><name><surname>Martinez</surname><given-names>H.</given-names></name><name><surname>Fischer</surname><given-names>F.</given-names></name><name><surname>Tessier</surname><given-names>C.</given-names></name><name><surname>Peres</surname><given-names>J.P.</given-names></name></person-group>
+<article-title>Lithium-ion batteries working at 85 &#x000b0;C: Aging phenomena and electrode/electrolyte interfaces studied by XPS</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2012</year>
+<volume>159</volume>
+<fpage>1739</fpage>
+<lpage>1746</lpage>
+<pub-id pub-id-type="doi">10.1149/2.061210jes</pub-id>
+</element-citation></ref><ref id="B19-materials-06-01310"><label>19.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lee</surname><given-names>S.</given-names></name><name><surname>Pyun</surname><given-names>S.</given-names></name></person-group>
+<article-title>The effect of electrolyte temperature on the passivity of the solid electrolyte interphase formed on a graphite</article-title>
+<source>Carbon</source>
+<year>2002</year>
+<volume>40</volume>
+<fpage>2333</fpage>
+<lpage>2339</lpage>
+<pub-id pub-id-type="doi">10.1016/S0008-6223(02)00144-6</pub-id>
+</element-citation></ref><ref id="B20-materials-06-01310"><label>20.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ning</surname><given-names>G.</given-names></name><name><surname>Haran</surname><given-names>B.</given-names></name><name><surname>Popov</surname><given-names>B.N.</given-names></name></person-group>
+<article-title>Capacity fade of lithium ion batteries cycled at high discharge rates</article-title>
+<source>J. Power Sources</source>
+<year>2003</year>
+<volume>117</volume>
+<fpage>160</fpage>
+<lpage>169</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(03)00029-6</pub-id>
+</element-citation></ref><ref id="B21-materials-06-01310"><label>21.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Markovsky</surname><given-names>B.</given-names></name><name><surname>Rodkin</surname><given-names>A.</given-names></name><name><surname>Cohen</surname><given-names>Y.S.</given-names></name><name><surname>Palchik</surname><given-names>O.</given-names></name><name><surname>Levi</surname><given-names>E.</given-names></name><name><surname>Aurbach</surname><given-names>D.</given-names></name><name><surname>Kim</surname><given-names>H.-J.</given-names></name><name><surname>Schmidt</surname><given-names>M.</given-names></name></person-group>
+<article-title>The study of capacity fading processes of Li-ion batteries: Major factors that play a role</article-title>
+<source>J. Power Sources</source>
+<year>2003</year>
+<volume>119&#x02013;121</volume>
+<fpage>504</fpage>
+<lpage>510</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(03)00274-X</pub-id>
+</element-citation></ref><ref id="B22-materials-06-01310"><label>22.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Braithwaite</surname><given-names>J.W.</given-names></name><name><surname>Gonzales</surname><given-names>A.</given-names></name><name><surname>Nagasubramanian</surname><given-names>G.</given-names></name><name><surname>Lucero</surname><given-names>S.J.</given-names></name><name><surname>Peebles</surname><given-names>D.E.</given-names></name><name><surname>Ohlhausen</surname><given-names>J.A.</given-names></name><name><surname>Cieslak</surname><given-names>W.R.</given-names></name></person-group>
+<article-title>Corrosion of lithium-ion battery current collectors</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>1999</year>
+<volume>146</volume>
+<fpage>448</fpage>
+<lpage>456</lpage>
+<pub-id pub-id-type="doi">10.1149/1.1391627</pub-id>
+</element-citation></ref><ref id="B23-materials-06-01310"><label>23.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kim</surname><given-names>J.S.</given-names></name><name><surname>Park</surname><given-names>Y.T.</given-names></name></person-group>
+<article-title>Characteristics of surface films formed at a mesocarbon microbead electrode in a Li-ion battery</article-title>
+<source>J. Power Sources</source>
+<year>2000</year>
+<volume>91</volume>
+<fpage>172</fpage>
+<lpage>176</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(00)00465-1</pub-id>
+</element-citation></ref><ref id="B24-materials-06-01310"><label>24.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Li</surname><given-names>J.</given-names></name><name><surname>Murphy</surname><given-names>E.</given-names></name><name><surname>Winnick</surname><given-names>J.</given-names></name><name><surname>Kohl</surname><given-names>A.P.</given-names></name></person-group>
+<article-title>The effect of pulse charge on cycling characteristics of commercial lithium-ion batteries</article-title>
+<source>J. Power Sources</source>
+<year>2001</year>
+<volume>102</volume>
+<fpage>302</fpage>
+<lpage>309</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(01)00820-5</pub-id>
+</element-citation></ref><ref id="B25-materials-06-01310"><label>25.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Broussely</surname><given-names>M.</given-names></name><name><surname>Herreyre</surname><given-names>S.</given-names></name><name><surname>Biensan</surname><given-names>P.</given-names></name><name><surname>Kasztejna</surname><given-names>P.</given-names></name><name><surname>Nechev</surname><given-names>K.</given-names></name><name><surname>Staniewicz</surname><given-names>R.J.</given-names></name></person-group>
+<article-title>Aging Mechanisms in Li ion cells and calendar life predictions</article-title>
+<source>J. Power Sources</source>
+<year>2001</year>
+<volume>97</volume>
+<fpage>13</fpage>
+<lpage>21</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(01)00722-4</pub-id>
+</element-citation></ref><ref id="B26-materials-06-01310"><label>26.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Li</surname><given-names>J.</given-names></name><name><surname>Murphy</surname><given-names>E.</given-names></name><name><surname>Winnick</surname><given-names>J.</given-names></name><name><surname>Kohl</surname><given-names>P.A.</given-names></name></person-group>
+<article-title>Studies on the cycle life of commercial lithium ion batteries during the charge-discharge cycling</article-title>
+<source>J. Power Sources</source>
+<year>2001</year>
+<volume>102</volume>
+<fpage>294</fpage>
+<lpage>301</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(01)00821-7</pub-id>
+</element-citation></ref><ref id="B27-materials-06-01310"><label>27.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Aurbach</surname><given-names>D.</given-names></name><name><surname>Markovsky</surname><given-names>B.</given-names></name><name><surname>Talyossef</surname><given-names>Y.</given-names></name><name><surname>Salitra</surname><given-names>G.</given-names></name><name><surname>Kim</surname><given-names>H.</given-names></name><name><surname>Choi</surname><given-names>S.</given-names></name></person-group>
+<article-title>Studies of cycling behaviour, ageing, and interfacial reactions of LiNi<sub>0.5</sub>Mn<sub>1.5</sub>O<sub>4</sub> and carbon electrode for lithium-ion 5-V cells</article-title>
+<source>J. Power Sources</source>
+<year>2006</year>
+<volume>162</volume>
+<fpage>780</fpage>
+<lpage>789</lpage>
+<pub-id pub-id-type="doi">10.1016/j.jpowsour.2005.07.009</pub-id>
+</element-citation></ref><ref id="B28-materials-06-01310"><label>28.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Keun</surname><given-names>C.</given-names></name><name><surname>Yin</surname><given-names>R.</given-names></name><name><surname>Shin</surname><given-names>S.</given-names></name><name><surname>Lee</surname><given-names>Y.</given-names></name><name><surname>Choi</surname><given-names>W.</given-names></name><name><surname>Kim</surname><given-names>Y.</given-names></name></person-group>
+<article-title>Electrochemical properties and gas evolution behavior of overlithiated Li<sub>2</sub>NiO<sub>2</sub> as cathode active mass for rechargeable Li ion batteries</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2012</year>
+<volume>159</volume>
+<fpage>887</fpage>
+<lpage>893</lpage>
+<pub-id pub-id-type="doi">10.1149/2.105206jes</pub-id>
+</element-citation></ref><ref id="B29-materials-06-01310"><label>29.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Abraham</surname><given-names>D.P.</given-names></name><name><surname>Knuth</surname><given-names>J.L.</given-names></name><name><surname>Dees</surname><given-names>D.W.</given-names></name><name><surname>Bloom</surname><given-names>I.</given-names></name></person-group>
+<article-title>Performance degradation of high power lithium ion cells- electrochemistry of harvested electrodes</article-title>
+<source>J. Power Sources</source>
+<year>2007</year>
+<volume>170</volume>
+<fpage>465</fpage>
+<lpage>475</lpage>
+<pub-id pub-id-type="doi">10.1016/j.jpowsour.2007.03.071</pub-id>
+</element-citation></ref><ref id="B30-materials-06-01310"><label>30.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Broussely</surname><given-names>M.</given-names></name><name><surname>Biensan</surname><given-names>P.H.</given-names></name><name><surname>Bonhomme</surname><given-names>F.</given-names></name><name><surname>Balnchard</surname><given-names>P.H.</given-names></name><name><surname>Herreyre</surname><given-names>S.</given-names></name><name><surname>Nechev</surname><given-names>K.</given-names></name><name><surname>Staniewicz</surname><given-names>R.J.</given-names></name></person-group>
+<article-title>Main aging mechanisms in lithium ion batteries</article-title>
+<source>J. Power Sources</source>
+<year>2005</year>
+<volume>146</volume>
+<fpage>90</fpage>
+<lpage>96</lpage>
+<pub-id pub-id-type="doi">10.1016/j.jpowsour.2005.03.172</pub-id>
+</element-citation></ref><ref id="B31-materials-06-01310"><label>31.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yamada</surname><given-names>H.</given-names></name><name><surname>Watanabe</surname><given-names>Y.</given-names></name><name><surname>Moriguchi</surname><given-names>I.</given-names></name><name><surname>Kudo</surname><given-names>T.</given-names></name></person-group>
+<article-title>Rate capability of lithium intercalation into nano-porous graphitized carbon</article-title>
+<source>Solid State Ionics</source>
+<year>2008</year>
+<volume>179</volume>
+<fpage>1706</fpage>
+<lpage>1709</lpage>
+<pub-id pub-id-type="doi">10.1016/j.ssi.2008.02.022</pub-id>
+</element-citation></ref><ref id="B32-materials-06-01310"><label>32.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Fellner</surname><given-names>J.P.</given-names></name><name><surname>Loeber</surname><given-names>G.J.</given-names></name><name><surname>Sandhu</surname><given-names>S.S.</given-names></name></person-group>
+<article-title>Testing of lithium-ion 18650 cells and characterizing/predicting cell performance</article-title>
+<source>J. Power Sources</source>
+<year>1999</year>
+<volume>81</volume>
+<fpage>867</fpage>
+<lpage>871</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(98)00238-9</pub-id>
+</element-citation></ref><ref id="B33-materials-06-01310"><label>33.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Smart</surname><given-names>M.C.</given-names></name><name><surname>Ratnakumar</surname><given-names>B.V.</given-names></name><name><surname>Surapudi</surname><given-names>S.</given-names></name><name><surname>Wang</surname><given-names>Y.</given-names></name><name><surname>Zhang</surname><given-names>X.</given-names></name><name><surname>Greenbaum</surname><given-names>S.G.</given-names></name><name><surname>Hightower</surname><given-names>A.</given-names></name><name><surname>Ahn</surname><given-names>C.C.</given-names></name><name><surname>Fultz</surname><given-names>B.</given-names></name></person-group>
+<article-title>Irreversible capacities of graphite in low temperature electrolytes for lithium-ion batteries</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>1999</year>
+<volume>46</volume>
+<fpage>3963</fpage>
+<lpage>3969</lpage>
+<pub-id pub-id-type="doi">10.1149/1.1392577</pub-id>
+</element-citation></ref><ref id="B34-materials-06-01310"><label>34.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Moss</surname><given-names>P.L.</given-names></name><name><surname>Au</surname><given-names>G.</given-names></name><name><surname>Plichta</surname><given-names>E.J.</given-names></name><name><surname>Zheng</surname><given-names>P.J.</given-names></name></person-group>
+<article-title>Study of capacity fade of lithium-ion polymer rechargeable batteries with continuous cycling</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2010</year>
+<volume>157</volume>
+<fpage>A1</fpage>
+<lpage>A7</lpage>
+<pub-id pub-id-type="doi">10.1149/1.3246001</pub-id>
+</element-citation></ref><ref id="B35-materials-06-01310"><label>35.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wolfgang</surname><given-names>M.</given-names></name><name><surname>Lu</surname><given-names>C.</given-names></name><name><surname>Novak</surname><given-names>P.</given-names></name></person-group>
+<article-title>Morphology of the solid electrolyte interphase of the graphite I dependency of the formation current</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2011</year>
+<fpage>1478</fpage>
+<lpage>1482</lpage>
+</element-citation></ref><ref id="B36-materials-06-01310"><label>36.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nakura</surname><given-names>K.</given-names></name><name><surname>Ohsugi</surname><given-names>Y.</given-names></name><name><surname>Imazaki</surname><given-names>M.</given-names></name><name><surname>Ariyoshi</surname><given-names>K.</given-names></name><name><surname>Ohzuku</surname><given-names>T.</given-names></name></person-group>
+<article-title>Extended cycle life of lithium-ion batteries consisting of lithium insertion electrodes: cycle efficiency<italic> versus</italic> Ah efficiency</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2011</year>
+<volume>158</volume>
+<fpage>1243</fpage>
+<lpage>1249</lpage>
+<pub-id pub-id-type="doi">10.1149/2.002112jes</pub-id>
+</element-citation></ref><ref id="B37-materials-06-01310"><label>37.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Shim</surname><given-names>J.</given-names></name><name><surname>Striebel</surname><given-names>K.</given-names></name></person-group>
+<article-title>Characterization of high-power lithium-ion cells during constant cycling: Part I cycling performance and electrochemical diagnostics</article-title>
+<source>J. Power Sources</source>
+<year>2003</year>
+<volume>122</volume>
+<fpage>188</fpage>
+<lpage>194</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(03)00351-3</pub-id>
+</element-citation></ref><ref id="B38-materials-06-01310"><label>38.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Shim</surname><given-names>J.</given-names></name><name><surname>Kostecki</surname><given-names>R.</given-names></name><name><surname>Richardson</surname><given-names>T.</given-names></name><name><surname>Song</surname><given-names>X.</given-names></name><name><surname>Striebel</surname><given-names>K.A.</given-names></name></person-group>
+<article-title>Electrochemical analysis for cycle performance and capacity fading of a lithium-ion battery cycled at elevated temperature</article-title>
+<source>J. Power Sources</source>
+<year>2002</year>
+<volume>112</volume>
+<fpage>222</fpage>
+<lpage>230</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(02)00363-4</pub-id>
+</element-citation></ref><ref id="B39-materials-06-01310"><label>39.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zhang</surname><given-names>D.</given-names></name><name><surname>Haran</surname><given-names>B.S.</given-names></name><name><surname>Durirajan</surname><given-names>A.</given-names></name><name><surname>White</surname><given-names>R.E.</given-names></name><name><surname>Podrazhansky</surname><given-names>Y.M.</given-names></name><name><surname>Popov</surname><given-names>B.N.</given-names></name></person-group>
+<article-title>Studies on capacity fade of lithium-ion batteries</article-title>
+<source>J. Power Sources</source>
+<year>2000</year>
+<volume>91</volume>
+<fpage>122</fpage>
+<lpage>129</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(00)00469-9</pub-id>
+</element-citation></ref><ref id="B40-materials-06-01310"><label>40.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kida</surname><given-names>Y.</given-names></name><name><surname>Kinoshita</surname><given-names>A.</given-names></name><name><surname>Yanagida</surname><given-names>K.</given-names></name><name><surname>Funahashi</surname><given-names>A.</given-names></name><name><surname>Nohma</surname><given-names>T.</given-names></name><name><surname>Yonezu</surname><given-names>I.</given-names></name></person-group>
+<article-title>Study on capacity fade factors of lithium secondary batteries using LiNi<sub>0.7 </sub>Co<sub>0.3</sub>O<sub>2</sub> and graphite-coke hybrid carbon</article-title>
+<source>Electrochim. Acta</source>
+<year>2002</year>
+<volume>47</volume>
+<fpage>4157</fpage>
+<lpage>4162</lpage>
+<pub-id pub-id-type="doi">10.1016/S0013-4686(02)00371-7</pub-id>
+</element-citation></ref><ref id="B41-materials-06-01310"><label>41.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Utsunomiya</surname><given-names>T.</given-names></name><name><surname>Hatozaki</surname><given-names>O.</given-names></name><name><surname>Yoshimoto</surname><given-names>N.</given-names></name><name><surname>Egashira</surname><given-names>M.</given-names></name><name><surname>Morita</surname><given-names>M.</given-names></name></person-group>
+<article-title>Influence of particle size on the self-discharge behavior of graphite electrodes in lithium-ion batteries</article-title>
+<source>J. Power Sources</source>
+<year>2011</year>
+<volume>196</volume>
+<fpage>8675</fpage>
+<lpage>8682</lpage>
+<pub-id pub-id-type="doi">10.1016/j.jpowsour.2011.06.070</pub-id>
+</element-citation></ref><ref id="B42-materials-06-01310"><label>42.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wu</surname><given-names>H.C.</given-names></name><name><surname>Guo</surname><given-names>Z.Z.</given-names></name><name><surname>Wen</surname><given-names>H.P.</given-names></name><name><surname>Yang</surname><given-names>M.Y.</given-names></name></person-group>
+<article-title>Study the fading mechanism of LiMn<sub>2</sub>O<sub>4</sub> battery with spherical and flake type graphite as anode material</article-title>
+<source>J. Power Sources</source>
+<year>2005</year>
+<volume>146</volume>
+<fpage>736</fpage>
+<lpage>740</lpage>
+<pub-id pub-id-type="doi">10.1016/j.jpowsour.2005.03.070</pub-id>
+</element-citation></ref><ref id="B43-materials-06-01310"><label>43.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sikha</surname><given-names>G.</given-names></name><name><surname>Ramadass</surname><given-names>P.</given-names></name><name><surname>Haran</surname><given-names>B.S.</given-names></name><name><surname>White</surname><given-names>R.E.</given-names></name><name><surname>Popov</surname><given-names>B.N.</given-names></name></person-group>
+<article-title>Comparison of the capacity fade of Sony US 18650 cells charged with different protocols</article-title>
+<source>J. Power Sources</source>
+<year>2003</year>
+<volume>122</volume>
+<fpage>67</fpage>
+<lpage>76</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(03)00027-2</pub-id>
+</element-citation></ref><ref id="B44-materials-06-01310"><label>44.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wang</surname><given-names>C.</given-names></name><name><surname>Appleby</surname><given-names>A.J.</given-names></name><name><surname>Little</surname><given-names>F.E.</given-names></name></person-group>
+<article-title>Low-temperature characterization of lithium-ion carbon anodes via microperturbation measurement</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2002</year>
+<volume>149</volume>
+<fpage>754</fpage>
+<lpage>760</lpage>
+<pub-id pub-id-type="doi">10.1149/1.1474427</pub-id>
+</element-citation></ref><ref id="B45-materials-06-01310"><label>45.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zhang</surname><given-names>Y.</given-names></name><name><surname>Wang</surname><given-names>C.Y.</given-names></name></person-group>
+<article-title>Cycle-life characterization of automotive lithium-ion batteries with LiNiO<sub>2</sub></article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2009</year>
+<volume>156</volume>
+<fpage>527</fpage>
+<lpage>535</lpage>
+<pub-id pub-id-type="doi">10.1149/1.3126385</pub-id>
+</element-citation></ref><ref id="B46-materials-06-01310"><label>46.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Zhou</surname><given-names>J.</given-names></name><name><surname>Notten</surname><given-names>P.H.L.</given-names></name></person-group>
+<article-title>Studies on degradation of Li-ion batteries by the use of micro reference electrodes</article-title>
+<source>J. Power Sources</source>
+<year>2008</year>
+<volume>177</volume>
+<fpage>553</fpage>
+<lpage>560</lpage>
+<pub-id pub-id-type="doi">10.1016/j.jpowsour.2007.11.032</pub-id>
+</element-citation></ref><ref id="B47-materials-06-01310"><label>47.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jasen</surname><given-names>N.A.</given-names></name><name><surname>Dees</surname><given-names>D.W.</given-names></name><name><surname>Abraham</surname><given-names>D.P.</given-names></name><name><surname>Amine</surname><given-names>K.</given-names></name><name><surname>Henriksen</surname><given-names>G.L.</given-names></name></person-group>
+<article-title>Low temperature study of lithium-ion cells using Li<italic><sub>y</sub></italic>Sn micro-reference electrode</article-title>
+<source>J. Power Sources</source>
+<year>2007</year>
+<volume>174</volume>
+<fpage>373</fpage>
+<lpage>379</lpage>
+<pub-id pub-id-type="doi">10.1016/j.jpowsour.2007.06.235</pub-id>
+</element-citation></ref><ref id="B48-materials-06-01310"><label>48.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tsujikawa</surname><given-names>T.</given-names></name><name><surname>Yabuta</surname><given-names>K.</given-names></name><name><surname>Matsushita</surname><given-names>T.</given-names></name><name><surname>Arakawa</surname><given-names>M.</given-names></name><name><surname>Hayashi</surname><given-names>K.</given-names></name></person-group>
+<article-title>A study on the cause of deterioration in float-charged lithium-ion batteries using LiMn<sub>2</sub>O<sub>4</sub> as a cathode active material</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2011</year>
+<volume>158</volume>
+<fpage>322</fpage>
+<lpage>325</lpage>
+<pub-id pub-id-type="doi">10.1149/1.3543651</pub-id>
+</element-citation></ref><ref id="B49-materials-06-01310"><label>49.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sarre</surname><given-names>G.</given-names></name><name><surname>Balanchard</surname><given-names>P.</given-names></name><name><surname>Broussely</surname><given-names>M.</given-names></name></person-group>
+<article-title>Aging of lithium-ion batteries</article-title>
+<source>J. Power Sources</source>
+<year>2004</year>
+<volume>127</volume>
+<fpage>65</fpage>
+<lpage>71</lpage>
+<pub-id pub-id-type="doi">10.1016/j.jpowsour.2003.09.008</pub-id>
+</element-citation></ref><ref id="B50-materials-06-01310"><label>50.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Brown</surname><given-names>S.</given-names></name><name><surname>Ogawa</surname><given-names>K.</given-names></name><name><surname>Kumeuchi</surname><given-names>Y.</given-names></name><name><surname>Enomoto</surname><given-names>S.</given-names></name><name><surname>Uno</surname><given-names>M.</given-names></name><name><surname>Saito</surname><given-names>H.</given-names></name><name><surname>Yoshisugu</surname><given-names>S.</given-names></name><name><surname>Abraham</surname><given-names>D.</given-names></name><name><surname>Lindberg</surname><given-names>G.</given-names></name></person-group>
+<article-title>Cycle life evaluation of 3 Ah Li<italic><sub>x</sub></italic>Mn<sub>2</sub>O<sub>4</sub>-based lithium-ion secondary cells for low-earth-orbit satellites</article-title>
+<source>J. Power Sources</source>
+<year>2008</year>
+<volume>185</volume>
+<fpage>1444</fpage>
+<lpage>1453</lpage>
+<pub-id pub-id-type="doi">10.1016/j.jpowsour.2008.07.070</pub-id>
+</element-citation></ref><ref id="B51-materials-06-01310"><label>51.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kostecki</surname><given-names>R.</given-names></name><name><surname>Lei</surname><given-names>J.</given-names></name><name><surname>McLarnon</surname><given-names>F.</given-names></name><name><surname>Shim</surname><given-names>J.</given-names></name><name><surname>Striebel</surname><given-names>K.</given-names></name></person-group>
+<article-title>Diagnostic evaluation of detrimental phenomena in high-power lithium-ion batteries</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2006</year>
+<volume>153</volume>
+<fpage>A669</fpage>
+<lpage>A672</lpage>
+<pub-id pub-id-type="doi">10.1149/1.2170551</pub-id>
+</element-citation></ref><ref id="B52-materials-06-01310"><label>52.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Safari</surname><given-names>M.</given-names></name><name><surname>Delacourt</surname><given-names>C.</given-names></name></person-group>
+<article-title>Aging of a commercial graphite LiFePO<sub>4</sub> cell</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2011</year>
+<volume>158</volume>
+<fpage>1123</fpage>
+<lpage>1135</lpage>
+<pub-id pub-id-type="doi">10.1149/1.3614529</pub-id>
+</element-citation></ref><ref id="B53-materials-06-01310"><label>53.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sinha</surname><given-names>N.N.</given-names></name><name><surname>Smith</surname><given-names>A.J.</given-names></name><name><surname>Burns</surname><given-names>J.C.</given-names></name><name><surname>Gaurav</surname><given-names>J.</given-names></name><name><surname>Eberman</surname><given-names>K.W.</given-names></name><name><surname>Scott</surname><given-names>E.</given-names></name><name><surname>Gardner</surname><given-names>J.P.</given-names></name><name><surname>Dahn</surname><given-names>J.R.</given-names></name></person-group>
+<article-title>The use of elevated temperature storage experiments to learn about parasitic reaction in wound LiCoO<sub>2</sub>/graphite cells</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2011</year>
+<volume>158</volume>
+<fpage>1194</fpage>
+<lpage>1201</lpage>
+<pub-id pub-id-type="doi">10.1149/2.007111jes</pub-id>
+</element-citation></ref><ref id="B54-materials-06-01310"><label>54.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sinha</surname><given-names>N.N.</given-names></name><name><surname>Marks</surname><given-names>T.H.</given-names></name><name><surname>Dahn</surname><given-names>H.M.</given-names></name><name><surname>Smith</surname><given-names>A.J.</given-names></name><name><surname>Burn</surname><given-names>J.C.</given-names></name><name><surname>Coyle</surname><given-names>D.J.</given-names></name><name><surname>Dahn</surname><given-names>J.J.</given-names></name><name><surname>Dahn</surname><given-names>J.R.</given-names></name></person-group>
+<article-title>The rate of active lithium loss from a soft carbon negative electrode as a function of temperature, time and electrode potential</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2012</year>
+<volume>159</volume>
+<fpage>1672</fpage>
+<lpage>1681</lpage>
+<pub-id pub-id-type="doi">10.1149/2.048210jes</pub-id>
+</element-citation></ref><ref id="B55-materials-06-01310"><label>55.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Novak</surname><given-names>P.</given-names></name><name><surname>Lanz</surname><given-names>M.</given-names></name><name><surname>Allia</surname><given-names>D.</given-names></name><name><surname>Rykart</surname><given-names>B.</given-names></name><name><surname>Paniz</surname><given-names>J.</given-names></name><name><surname>Haas</surname><given-names>O.</given-names></name></person-group>
+<article-title>The complex electrochemistry of graphite electrodes in lithium-ion batteries</article-title>
+<source>J. Power Sources</source>
+<year>2001</year>
+<volume>97</volume>
+<fpage>39</fpage>
+<lpage>46</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(01)00586-9</pub-id>
+</element-citation></ref><ref id="B56-materials-06-01310"><label>56.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wang</surname><given-names>H.</given-names></name><name><surname>Jang</surname><given-names>Y.</given-names></name><name><surname>Huang</surname><given-names>B.</given-names></name><name><surname>Sadoway</surname><given-names>R.D.</given-names></name><name><surname>Chiang</surname><given-names>Y.M</given-names></name></person-group>
+<article-title>TEM Study of Electrochemical Cycling-Induced Damage and Disorder in LiCoO<sub>2</sub> Cathodes for Rechargeable Lithium Batteries</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>1999</year>
+<volume>146</volume>
+<fpage>473</fpage>
+<lpage>480</lpage>
+<pub-id pub-id-type="doi">10.1149/1.1391631</pub-id>
+</element-citation></ref><ref id="B57-materials-06-01310"><label>57.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Schranzhofer</surname><given-names>H.</given-names></name><name><surname>Bugajski</surname><given-names>J.</given-names></name><name><surname>Santner</surname><given-names>H.J.</given-names></name><name><surname>Korepp</surname><given-names>C.</given-names></name><name><surname>Moller</surname><given-names>K.C.</given-names></name><name><surname>Besenhard</surname><given-names>J.O.</given-names></name><name><surname>Winter</surname><given-names>M.</given-names></name><name><surname>Sitte</surname><given-names>W.</given-names></name></person-group>
+<article-title>Electrochemical impedance spectroscopy study of the SEI formation on graphite and metal electrode</article-title>
+<source>J. Power Sources</source>
+<year>2006</year>
+<volume>153</volume>
+<fpage>391</fpage>
+<lpage>395</lpage>
+<pub-id pub-id-type="doi">10.1016/j.jpowsour.2005.05.034</pub-id>
+</element-citation></ref><ref id="B58-materials-06-01310"><label>58.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Markervich</surname><given-names>E.</given-names></name><name><surname>Salitra</surname><given-names>G.</given-names></name><name><surname>Levi</surname><given-names>M.D.</given-names></name><name><surname>Aurbach</surname><given-names>D.</given-names></name></person-group>
+<article-title>Capacity fading of lithiated graphite electrodes studied by a combination of electroanalytical methods, Raman spectroscopy and SEM</article-title>
+<source>J. Power Sources</source>
+<year>2005</year>
+<volume>146</volume>
+<fpage>146</fpage>
+<lpage>150</lpage>
+<pub-id pub-id-type="doi">10.1016/j.jpowsour.2005.03.107</pub-id>
+</element-citation></ref><ref id="B59-materials-06-01310"><label>59.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hossein</surname><given-names>M.</given-names></name><name><surname>Guoping</surname><given-names>D.</given-names></name><name><surname>Anaba</surname><given-names>A.</given-names></name><name><surname>Howard</surname><given-names>J.</given-names></name></person-group>
+<article-title>Thermal Stability Studies of Li-Ion Cells and Components</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>1999</year>
+<volume>146</volume>
+<fpage>A3224</fpage>
+<lpage>A3229</lpage>
+<pub-id pub-id-type="doi">10.1149/1.1392458</pub-id>
+</element-citation></ref><ref id="B60-materials-06-01310"><label>60.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Chang</surname><given-names>Y.</given-names></name><name><surname>Li</surname><given-names>H.</given-names></name><name><surname>Wu</surname><given-names>L.</given-names></name><name><surname>Lu</surname><given-names>T.</given-names></name></person-group>
+<article-title>Irreversible capacity loss of graphite electrode in lithium-ion batteries</article-title>
+<source>J. Power Sources</source>
+<year>1997</year>
+<volume>68</volume>
+<fpage>187</fpage>
+<lpage>190</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(96)02549-9</pub-id>
+</element-citation></ref><ref id="B61-materials-06-01310"><label>61.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Shim</surname><given-names>J.</given-names></name><name><surname>Striebel</surname><given-names>A.K.</given-names></name></person-group>
+<article-title>The dependence of natural graphite anode performance on electrode density</article-title>
+<source>J. Power Sources</source>
+<year>2004</year>
+<volume>130</volume>
+<fpage>247</fpage>
+<lpage>253</lpage>
+<pub-id pub-id-type="doi">10.1016/j.jpowsour.2003.12.015</pub-id>
+</element-citation></ref><ref id="B62-materials-06-01310"><label>62.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lai</surname><given-names>Y.</given-names></name><name><surname>Cao</surname><given-names>Z.</given-names></name><name><surname>Haishen</surname><given-names>S.</given-names></name><name><surname>Zhang</surname><given-names>Z.</given-names></name><name><surname>Chen</surname><given-names>X.</given-names></name><name><surname>Lu</surname><given-names>H.</given-names></name><name><surname>Jia</surname><given-names>M.</given-names></name><name><surname>Li</surname><given-names>J.</given-names></name></person-group>
+<article-title>Influence of Fe(II) species in electrolyte on performance of graphite anode for lithium-ion batteries</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2012</year>
+<volume>159</volume>
+<fpage>1961</fpage>
+<lpage>1966</lpage>
+<pub-id pub-id-type="doi">10.1149/2.044212jes</pub-id>
+</element-citation></ref><ref id="B63-materials-06-01310"><label>63.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Rhodes</surname><given-names>K.</given-names></name><name><surname>Kirkham</surname><given-names>M.</given-names></name><name><surname>Meisner</surname><given-names>R.</given-names></name><name><surname>Parish</surname><given-names>M.C.</given-names></name><name><surname>Dudney</surname><given-names>N.</given-names></name></person-group>
+<article-title>Novel cell design for combined<italic> in situ</italic> acoustic emission and x-ray diffraction study during electrochemical cycling of batteries</article-title>
+<source>Rev. Sci. Instrum.</source>
+<year>2011</year>
+<volume>82</volume>
+<fpage>75</fpage>
+<lpage>107</lpage>
+</element-citation></ref><ref id="B64-materials-06-01310"><label>64.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nagpure</surname><given-names>S.C.</given-names></name><name><surname>Bhushan</surname><given-names>B.</given-names></name><name><surname>Babu</surname><given-names>S.</given-names></name><name><surname>Rizzoni</surname><given-names>G.</given-names></name></person-group>
+<article-title>Scanning spreading resistance characterization of aged Li-ion batteries using atomic force microscopy</article-title>
+<source>Scripta Mater.</source>
+<year>2009</year>
+<volume>60</volume>
+<fpage>933</fpage>
+<lpage>936</lpage>
+<pub-id pub-id-type="doi">10.1016/j.scriptamat.2009.01.033</pub-id>
+</element-citation></ref><ref id="B65-materials-06-01310"><label>65.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ohzuku</surname><given-names>T.</given-names></name><name><surname>Ueda</surname><given-names>A.</given-names></name><name><surname>Yamamoto</surname><given-names>N.</given-names></name><name><surname>Yasunobu</surname><given-names>I.</given-names></name></person-group>
+<article-title>Factor affecting the capacity retention of lithium-ion cells</article-title>
+<source>J. Power Sources</source>
+<year>1995</year>
+<volume>54</volume>
+<fpage>99</fpage>
+<lpage>102</lpage>
+<pub-id pub-id-type="doi">10.1016/0378-7753(94)02047-7</pub-id>
+</element-citation></ref><ref id="B66-materials-06-01310"><label>66.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Jeong</surname><given-names>S.K.</given-names></name><name><surname>Inaba</surname><given-names>M.</given-names></name><name><surname>Takeshi</surname><given-names>A.</given-names></name><name><surname>Ogumi</surname><given-names>Z.</given-names></name></person-group>
+<article-title>Surface film formation on graphite negative electrode in lithium-ion batteries</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2001</year>
+<volume>148</volume>
+<fpage>A989</fpage>
+<lpage>A993</lpage>
+<pub-id pub-id-type="doi">10.1149/1.1387981</pub-id>
+</element-citation></ref><ref id="B67-materials-06-01310"><label>67.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Silvakkumar</surname><given-names>S.R.</given-names></name><name><surname>Nerkar</surname><given-names>J.Y.</given-names></name></person-group>
+<article-title>Rate capability of graphite materials as negative electrodes in lithium ion capacitors</article-title>
+<source>Electrochim. Acta</source>
+<year>2010</year>
+<volume>55</volume>
+<fpage>3330</fpage>
+<lpage>3335</lpage>
+<pub-id pub-id-type="doi">10.1016/j.electacta.2010.01.059</pub-id>
+</element-citation></ref><ref id="B68-materials-06-01310"><label>68.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Simon</surname><given-names>B.</given-names></name><name><surname>Flandrois</surname><given-names>S.</given-names></name><name><surname>Guerin</surname><given-names>K.</given-names></name><name><surname>Ferrier-Bouvier</surname><given-names>A.</given-names></name><name><surname>Teulat</surname><given-names>I.</given-names></name><name><surname>Biensan</surname><given-names>P.</given-names></name></person-group>
+<article-title>On the choice of graphite for lithium ion batteries</article-title>
+<source>J. Power Sources</source>
+<year>1999</year>
+<volume>81</volume>
+<fpage>312</fpage>
+<lpage>316</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(99)00211-6</pub-id>
+</element-citation></ref><ref id="B69-materials-06-01310"><label>69.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ridgway</surname><given-names>P.</given-names></name><name><surname>Zheng</surname><given-names>H.</given-names></name><name><surname>Bello</surname><given-names>A.F.</given-names></name><name><surname>Song</surname><given-names>X.</given-names></name><name><surname>Xun</surname><given-names>S.</given-names></name><name><surname>Chong</surname><given-names>J.</given-names></name><name><surname>Vincent</surname><given-names>B.</given-names></name></person-group>
+<article-title>Comparison of cycling performance of lithium ion cell anode graphites</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2012</year>
+<volume>159</volume>
+<fpage>520</fpage>
+<lpage>524</lpage>
+<pub-id pub-id-type="doi">10.1149/2.006205jes</pub-id>
+</element-citation></ref><ref id="B70-materials-06-01310"><label>70.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Anderson</surname><given-names>A.M.</given-names></name><name><surname>Edstrom</surname><given-names>K.</given-names></name><name><surname>Thomas</surname><given-names>J.O.</given-names></name></person-group>
+<article-title>Characterization of the ambient and elevated temperature performance of graphite electrode</article-title>
+<source>J. Power Sources</source>
+<year>1999</year>
+<volume>81&#x02013;82</volume>
+<fpage>8</fpage>
+<lpage>12</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(99)00185-8</pub-id>
+</element-citation></ref><ref id="B71-materials-06-01310"><label>71.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tran</surname><given-names>T.D.</given-names></name><name><surname>Feikert</surname><given-names>J.H.</given-names></name><name><surname>Pekala</surname><given-names>R.W.</given-names></name></person-group>
+<article-title>Rate effect on lithium-ion graphite electrode performance</article-title>
+<source>J. Appl. Electrochem.</source>
+<year>1996</year>
+<volume>26</volume>
+<fpage>1161</fpage>
+<lpage>1167</lpage>
+<pub-id pub-id-type="doi">10.1007/BF00243741</pub-id>
+</element-citation></ref><ref id="B72-materials-06-01310"><label>72.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Park</surname><given-names>Y.</given-names></name><name><surname>Lee</surname><given-names>S.</given-names></name></person-group>
+<article-title>Effect of particle size on the thermal stability of lithiated graphite</article-title>
+<source>Electrochim. Acta</source>
+<year>2009</year>
+<volume>54</volume>
+<fpage>3339</fpage>
+<lpage>3343</lpage>
+<pub-id pub-id-type="doi">10.1016/j.electacta.2008.12.030</pub-id>
+</element-citation></ref><ref id="B73-materials-06-01310"><label>73.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nga</surname><given-names>S.H.</given-names></name><name><surname>Vix-Guterl</surname><given-names>C.</given-names></name><name><surname>Bernardo</surname><given-names>P.H.</given-names></name><name><surname>Tran</surname><given-names>N.</given-names></name><name><surname>Ufheil</surname><given-names>J.</given-names></name><name><surname>Buqa</surname><given-names>H.</given-names></name><name><surname>Dentzer</surname><given-names>J.</given-names></name><name><surname>Gadiou</surname><given-names>R.</given-names></name><name><surname>Spahr</surname><given-names>M.E.</given-names></name><name><surname>Goers</surname><given-names>D.</given-names></name><etal/></person-group>
+<article-title>Correlations between surface properties of graphite and the first cycle specific charge loss in lithium-ion batteries</article-title>
+<source>Carbon</source>
+<year>2009</year>
+<volume>47</volume>
+<fpage>705</fpage>
+<lpage>712</lpage>
+<pub-id pub-id-type="doi">10.1016/j.carbon.2008.11.008</pub-id>
+</element-citation></ref><ref id="B74-materials-06-01310"><label>74.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Joho</surname><given-names>F.</given-names></name><name><surname>Rykart</surname><given-names>B.</given-names></name><name><surname>Wilhem</surname><given-names>H.</given-names></name><name><surname>Novak</surname><given-names>P.</given-names></name><name><surname>Spahr</surname><given-names>M.E.</given-names></name><name><surname>Monnier</surname><given-names>A.</given-names></name></person-group>
+<article-title>Relation between surface properties, pore structure and first cycle charge loss of graphite as negative electrode in lithium-ion batteries</article-title>
+<source>J. Power Sources</source>
+<year>2001</year>
+<volume>97</volume>
+<fpage>78</fpage>
+<lpage>82</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(01)00595-X</pub-id>
+</element-citation></ref><ref id="B75-materials-06-01310"><label>75.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Aurbach</surname><given-names>D.</given-names></name><name><surname>Teller</surname><given-names>H.</given-names></name><name><surname>Koltypin</surname><given-names>M.</given-names></name><name><surname>Levi</surname><given-names>E.</given-names></name></person-group>
+<article-title>On the behaviour of different types of graphite anodes</article-title>
+<source>J. Power Sources</source>
+<year>2003</year>
+<volume>119&#x02013;121</volume>
+<fpage>2</fpage>
+<lpage>7</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(03)00115-0</pub-id>
+</element-citation></ref><ref id="B76-materials-06-01310"><label>76.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wu</surname><given-names>Q.</given-names></name><name><surname>Lu</surname><given-names>W.</given-names></name><name><surname>Prakash</surname><given-names>J.</given-names></name></person-group>
+<article-title>Charaterization of commercial size cylindrical Li-ion cell with a reference electrode</article-title>
+<source>J. Power Sources</source>
+<year>2000</year>
+<volume>88</volume>
+<fpage>237</fpage>
+<lpage>242</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(00)00372-4</pub-id>
+</element-citation></ref><ref id="B77-materials-06-01310"><label>77.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Rubino</surname><given-names>S.R.</given-names></name><name><surname>Gan</surname><given-names>H.</given-names></name><name><surname>Takeuchi</surname><given-names>S.E.</given-names></name></person-group>
+<article-title>A study of capacity fades in cylindrical and prismatic lithium-ion batteries</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2001</year>
+<volume>148</volume>
+<fpage>1029</fpage>
+<lpage>1033</lpage>
+<pub-id pub-id-type="doi">10.1149/1.1390344</pub-id>
+</element-citation></ref><ref id="B78-materials-06-01310"><label>78.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Shim</surname><given-names>J.</given-names></name><name><surname>Striebel</surname><given-names>A.K.</given-names></name></person-group>
+<article-title>Effect of electrode density on cycle performance and irreversible capacity loss for natural graphite anode in lithium-ion batteries</article-title>
+<source>J. Power Sources</source>
+<year>2003</year>
+<volume>119</volume>
+<fpage>934</fpage>
+<lpage>937</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(03)00235-0</pub-id>
+</element-citation></ref><ref id="B79-materials-06-01310"><label>79.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Leising</surname><given-names>A.R.</given-names></name><name><surname>Palazzo</surname><given-names>M.J.</given-names></name><name><surname>Takeuchi</surname><given-names>S.E.</given-names></name><name><surname>Takeuchi</surname><given-names>J.K.</given-names></name></person-group>
+<article-title>Abuse Testing of Lithium-Ion Batteries Characterization of the Overcharge Reaction of LiCoO<sub>2</sub>/Graphite Cells</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2001</year>
+<volume>148</volume>
+<fpage>838</fpage>
+<lpage>844</lpage>
+<pub-id pub-id-type="doi">10.1149/1.1379740</pub-id>
+</element-citation></ref><ref id="B80-materials-06-01310"><label>80.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lanz</surname><given-names>M.</given-names></name><name><surname>Novak</surname><given-names>P.</given-names></name></person-group>
+<article-title>DEMS study of gas evolution at thick graphite electrodes for lithium-ion batteries: The effect of the &#x003b3;-butyrolactone</article-title>
+<source>J. Power Sources</source>
+<year>2001</year>
+<volume>102</volume>
+<fpage>277</fpage>
+<lpage>282</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(01)00826-6</pub-id>
+</element-citation></ref><ref id="B81-materials-06-01310"><label>81.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ratnakumar</surname><given-names>B.V.</given-names></name><name><surname>Smart</surname><given-names>M.C.</given-names></name></person-group>
+<article-title>Lithium plating behavior in lithium-ion cells</article-title>
+<source>J. Electrochem. Soc. Trans.</source>
+<year>2010</year>
+<volume>25</volume>
+<fpage>241</fpage>
+<lpage>252</lpage>
+</element-citation></ref><ref id="B82-materials-06-01310"><label>82.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Dolle</surname><given-names>M.</given-names></name><name><surname>Sannier</surname><given-names>L.</given-names></name><name><surname>Beaudion</surname><given-names>B.</given-names></name><name><surname>Trentin</surname><given-names>M.</given-names></name></person-group>
+<article-title>Live scanning electron microscope observation of dendrite growth in lithium polymer cells</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2002</year>
+<volume>5</volume>
+<fpage>286</fpage>
+<lpage>289</lpage>
+</element-citation></ref><ref id="B83-materials-06-01310"><label>83.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Smart</surname><given-names>M.C.</given-names></name><name><surname>Ratnakumar</surname><given-names>B.V.</given-names></name></person-group>
+<article-title>Effects of electrolyte composition on lithium plating in lithium-ion cells</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2011</year>
+<volume>158</volume>
+<fpage>379</fpage>
+<lpage>389</lpage>
+<pub-id pub-id-type="doi">10.1149/1.3544439</pub-id>
+</element-citation></ref><ref id="B84-materials-06-01310"><label>84.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Honbo</surname><given-names>H.</given-names></name><name><surname>Takei</surname><given-names>K.</given-names></name><name><surname>Ishii</surname><given-names>Y.</given-names></name><name><surname>Nishida</surname><given-names>T.</given-names></name></person-group>
+<article-title>Electrochemical properties and Li deposition morphologies of surface modified graphite after grinding</article-title>
+<source>J. Power Sources</source>
+<year>2009</year>
+<volume>189</volume>
+<fpage>337</fpage>
+<lpage>343</lpage>
+<pub-id pub-id-type="doi">10.1016/j.jpowsour.2008.08.048</pub-id>
+</element-citation></ref><ref id="B85-materials-06-01310"><label>85.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Rosso</surname><given-names>M.</given-names></name><name><surname>Gobron</surname><given-names>T.</given-names></name><name><surname>Brissot</surname><given-names>C.</given-names></name><name><surname>Chazalviel</surname><given-names>J.N.</given-names></name><name><surname>Lascaud</surname><given-names>S.</given-names></name></person-group>
+<article-title>Onset of dendritic growth in lithium/polymer cells</article-title>
+<source>J. Power Sources</source>
+<year>2001</year>
+<volume>97</volume>
+<fpage>804</fpage>
+<lpage>806</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(01)00734-0</pub-id>
+</element-citation></ref><ref id="B86-materials-06-01310"><label>86.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ornini</surname><given-names>F.</given-names></name><name><surname>Pasquier</surname><given-names>D.A.</given-names></name><name><surname>Beaudion</surname><given-names>B.</given-names></name><name><surname>Tarason</surname><given-names>J.M.</given-names></name><name><surname>Trentin</surname><given-names>M.</given-names></name></person-group>
+<article-title><italic>In situ</italic> scanning electron microscope observation of interfaces within plastic lithium batteries</article-title>
+<source>J. Power Sources</source>
+<year>1998</year>
+<volume>76</volume>
+<fpage>19</fpage>
+<lpage>29</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(98)00128-1</pub-id>
+</element-citation></ref><ref id="B87-materials-06-01310"><label>87.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Leising</surname><given-names>R.A.</given-names></name><name><surname>Palazzo</surname><given-names>M.J.</given-names></name><name><surname>Takeuchi</surname><given-names>E.S.</given-names></name><name><surname>Takeuchi</surname><given-names>K.J.</given-names></name></person-group>
+<article-title>A study of the overcharge reaction of lithium-ion batteries</article-title>
+<source>J. Power Sources</source>
+<year>2001</year>
+<volume>97</volume>
+<fpage>681</fpage>
+<lpage>683</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(01)00598-5</pub-id>
+</element-citation></ref><ref id="B88-materials-06-01310"><label>88.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kim</surname><given-names>W.</given-names></name><name><surname>Yoon</surname><given-names>W.</given-names></name></person-group>
+<article-title>Observation of dendritic growth on Li powder anode using the optical cell</article-title>
+<source>Electrochim. Acta</source>
+<year>2004</year>
+<volume>50</volume>
+<fpage>541</fpage>
+<lpage>545</lpage>
+<pub-id pub-id-type="doi">10.1016/j.electacta.2004.03.066</pub-id>
+</element-citation></ref><ref id="B89-materials-06-01310"><label>89.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kong</surname><given-names>S.</given-names></name><name><surname>Kim</surname><given-names>B.</given-names></name><name><surname>Yoon</surname><given-names>W.</given-names></name></person-group>
+<article-title>Electrochemical behavior of Li-powder anode in high Li capacity used</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2012</year>
+<volume>159</volume>
+<fpage>1551</fpage>
+<lpage>1553</lpage>
+<pub-id pub-id-type="doi">10.1149/2.062209jes</pub-id>
+</element-citation></ref><ref id="B90-materials-06-01310"><label>90.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bhattacharyya</surname><given-names>R.</given-names></name><name><surname>Key</surname><given-names>B.</given-names></name><name><surname>Chen</surname><given-names>H.</given-names></name><name><surname>Best</surname><given-names>A.S.</given-names></name><name><surname>Hollenkamp</surname><given-names>A.F.</given-names></name><name><surname>Grey</surname><given-names>C.P.</given-names></name></person-group>
+<article-title><italic>In situ</italic> NMR observation of the formation of metallic microstructure in lithium batteries</article-title>
+<source>Nat. Mater.</source>
+<year>2010</year>
+<volume>9</volume>
+<fpage>504</fpage>
+<lpage>510</lpage>
+<pub-id pub-id-type="pmid">20473288</pub-id></element-citation></ref><ref id="B91-materials-06-01310"><label>91.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lu</surname><given-names>W.</given-names></name><name><surname>Carmen</surname><given-names>M.</given-names></name><name><surname>Liu</surname><given-names>N.</given-names></name><name><surname>Vaughely</surname><given-names>T.J.</given-names></name><name><surname>Jansen</surname><given-names>A.</given-names></name><name><surname>Dees</surname><given-names>D.W.</given-names></name></person-group>
+<article-title>Overcharge effect on morphology and structure of carbon electrodes for lithium-ion batteries</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2012</year>
+<volume>159</volume>
+<fpage>566</fpage>
+<lpage>570</lpage>
+<pub-id pub-id-type="doi">10.1149/2.jes035205</pub-id>
+</element-citation></ref><ref id="B92-materials-06-01310"><label>92.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Fan</surname><given-names>J.</given-names></name><name><surname>Tan</surname><given-names>S.</given-names></name></person-group>
+<article-title>Studies on charging lithium-ion cells at low temperatures</article-title>
+<source>J. Electrochem. Soc.</source>
+<year>2006</year>
+<volume>153</volume>
+<fpage>1081</fpage>
+<lpage>1092</lpage>
+<pub-id pub-id-type="doi">10.1149/1.2190029</pub-id>
+</element-citation></ref><ref id="B93-materials-06-01310"><label>93.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Joho</surname><given-names>F.</given-names></name><name><surname>Rykart</surname><given-names>B.</given-names></name><name><surname>Imhof</surname><given-names>R.</given-names></name><name><surname>Novak</surname><given-names>P.</given-names></name><name><surname>Spahr</surname><given-names>M.E.</given-names></name><name><surname>Monnier</surname><given-names>A.</given-names></name></person-group>
+<article-title>Key factors for the cycling stability of graphite intercalation electrodes for lithium-ion batteries</article-title>
+<source>J. Power Sources</source>
+<year>1999</year>
+<volume>81</volume>
+<fpage>243</fpage>
+<lpage>247</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(99)00195-0</pub-id>
+</element-citation></ref><ref id="B94-materials-06-01310"><label>94.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Park</surname><given-names>Y.</given-names></name><name><surname>Bang</surname><given-names>H.J.</given-names></name><name><surname>Oh</surname><given-names>S.</given-names></name><name><surname>Sun</surname><given-names>Y.</given-names></name><name><surname>Lee</surname><given-names>S.</given-names></name></person-group>
+<article-title>Effect of carbon coating on thermal stability of natural graphite spheres used as anode materials in lithium-ion batteries</article-title>
+<source>J. Power Sources</source>
+<year>2009</year>
+<volume>190</volume>
+<fpage>553</fpage>
+<lpage>557</lpage>
+<pub-id pub-id-type="doi">10.1016/j.jpowsour.2009.01.067</pub-id>
+</element-citation></ref><ref id="B95-materials-06-01310"><label>95.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Chevsllier</surname><given-names>F.</given-names></name><name><surname>Gautier</surname><given-names>S.</given-names></name><name><surname>Salvetat</surname><given-names>J.P.</given-names></name><name><surname>Clinard</surname><given-names>C.</given-names></name><name><surname>Frackowiak</surname><given-names>E.</given-names></name><name><surname>Rouzaud</surname><given-names>J.N.</given-names></name><name><surname>Beguin</surname><given-names>F.</given-names></name></person-group>
+<article-title>Effects of post-treatment on performance of hard carbons in lithium cells</article-title>
+<source>J. Power Sources</source>
+<year>2001</year>
+<volume>97</volume>
+<fpage>143</fpage>
+<lpage>145</lpage>
+</element-citation></ref><ref id="B96-materials-06-01310"><label>96.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Natarajan</surname><given-names>C.</given-names></name><name><surname>Fujimoto</surname><given-names>H.</given-names></name><name><surname>Tokumitsu</surname><given-names>K.</given-names></name><name><surname>Mabuchi</surname><given-names>A.</given-names></name><name><surname>Kasuh</surname><given-names>T.</given-names></name></person-group>
+<article-title>Reduction of irreversible capacity of a graphite anode by the CVD process</article-title>
+<source>Carbon</source>
+<year>2001</year>
+<volume>39</volume>
+<fpage>1409</fpage>
+<lpage>1413</lpage>
+<pub-id pub-id-type="doi">10.1016/S0008-6223(00)00267-0</pub-id>
+</element-citation></ref><ref id="B97-materials-06-01310"><label>97.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Striebel</surname><given-names>K.A.</given-names></name><name><surname>Sierra</surname><given-names>A.</given-names></name><name><surname>Shim</surname><given-names>J.</given-names></name><name><surname>Wang</surname><given-names>C.W.</given-names></name><name><surname>Saatry</surname><given-names>A.M.</given-names></name></person-group>
+<article-title>The effect of compression on natural graphite anode performance and matrix conductivity</article-title>
+<source>J. Power Sources</source>
+<year>2004</year>
+<volume>234</volume>
+<fpage>241</fpage>
+<lpage>251</lpage>
+<pub-id pub-id-type="doi">10.1016/j.jpowsour.2004.03.052</pub-id>
+</element-citation></ref><ref id="B98-materials-06-01310"><label>98.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Shim</surname><given-names>J.</given-names></name><name><surname>Striebel</surname><given-names>K.A.</given-names></name></person-group>
+<article-title>Electrochemical characterization of thermally oxidized natural graphite anodes in lithium-ion batteries</article-title>
+<source>J. Power Sources</source>
+<year>2007</year>
+<volume>164</volume>
+<fpage>862</fpage>
+<lpage>867</lpage>
+<pub-id pub-id-type="doi">10.1016/j.jpowsour.2006.09.111</pub-id>
+</element-citation></ref><ref id="B99-materials-06-01310"><label>99.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Choi</surname><given-names>S.S.</given-names></name><name><surname>Lim</surname><given-names>H.S.</given-names></name></person-group>
+<article-title>Factors that affect cycle life and possible degradation mechanisms of a Li-ion cell based on LiCoO<sub>2</sub></article-title>
+<source>J. Power Sources</source>
+<year>2002</year>
+<volume>111</volume>
+<fpage>130</fpage>
+<lpage>136</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(02)00305-1</pub-id>
+</element-citation></ref><ref id="B100-materials-06-01310"><label>100.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nobili</surname><given-names>F.</given-names></name><name><surname>Mancini</surname><given-names>M.</given-names></name><name><surname>Dsoke</surname><given-names>S.</given-names></name><name><surname>Tossici</surname><given-names>R.</given-names></name><name><surname>Marassi</surname><given-names>R.</given-names></name></person-group>
+<article-title>Low-temperature behavior of graphite&#x02013;tin composite anodes for Li-ion batteries</article-title>
+<source>J. Power Sources</source>
+<year>2010</year>
+<volume>195</volume>
+<fpage>7090</fpage>
+<lpage>7097</lpage>
+<pub-id pub-id-type="doi">10.1016/j.jpowsour.2010.05.001</pub-id>
+</element-citation></ref><ref id="B101-materials-06-01310"><label>101.</label><element-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Rubino</surname><given-names>R.S.</given-names></name><name><surname>Takeuchi</surname><given-names>S.E.</given-names></name></person-group>
+<article-title>The study of irreversible capacity in lithium-ion anodes prepared with thermally oxidized graphite</article-title>
+<source>J. Power Sources</source>
+<year>1999</year>
+<volume>81</volume>
+<fpage>373</fpage>
+<lpage>377</lpage>
+<pub-id pub-id-type="doi">10.1016/S0378-7753(99)00217-7</pub-id>
+</element-citation></ref></ref-list></back></article>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table-wrap position="float" id="t1">
+ <label>Table 1</label>
+ <caption>
+  <title>Composition of as-fabricated and cycled layered-LNMO.</title>
+ </caption>
+ <table frame="hsides" rules="groups" border="1">
+  <colgroup>
+   <col align="left"/>
+   <col align="center"/>
+   <col align="char" char="."/>
+   <col align="char" char="."/>
+   <col align="char" char="."/>
+   <col align="char" char="."/>
+  </colgroup>
+  <thead valign="bottom">
+   <tr>
+    <th align="left" valign="top" charoff="50">
+     <bold>Material</bold>
+    </th>
+    <th align="center" valign="top" charoff="50">
+     <bold>Particle</bold>
+    </th>
+    <th colspan="4" align="center" valign="top" char="." charoff="50">
+     <bold>Concentration (</bold>
+     <bold>at %</bold>)
+     <hr/>
+    </th>
+   </tr>
+   <tr>
+    <th align="left" valign="top" charoff="50"> </th>
+    <th align="center" valign="top" charoff="50"> </th>
+    <th align="center" valign="top" char="." charoff="50">
+     <bold>Li</bold>
+    </th>
+    <th align="center" valign="top" char="." charoff="50">
+     <bold>O</bold>
+    </th>
+    <th align="center" valign="top" char="." charoff="50">
+     <bold>Mn</bold>
+    </th>
+    <th align="center" valign="top" char="." charoff="50">
+     <bold>Ni</bold>
+    </th>
+   </tr>
+  </thead>
+  <tbody valign="top">
+   <tr>
+    <td align="left" valign="top" charoff="50">As-fabricated layered-LNMO</td>
+    <td align="center" valign="top" charoff="50">P1</td>
+    <td align="char" valign="top" char="." charoff="50">41.61</td>
+    <td align="char" valign="top" char="." charoff="50">35.66</td>
+    <td align="char" valign="top" char="." charoff="50">16.6</td>
+    <td align="char" valign="top" char="." charoff="50">6.13</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50"> </td>
+    <td align="center" valign="top" charoff="50">P2</td>
+    <td align="char" valign="top" char="." charoff="50">40.75</td>
+    <td align="char" valign="top" char="." charoff="50">36.25</td>
+    <td align="char" valign="top" char="." charoff="50">17.03</td>
+    <td align="char" valign="top" char="." charoff="50">5.96</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50">Cycled layered-LNMO after 45 cycles</td>
+    <td align="center" valign="top" charoff="50">P1</td>
+    <td align="char" valign="top" char="." charoff="50">30.67</td>
+    <td align="char" valign="top" char="." charoff="50">35.37</td>
+    <td align="char" valign="top" char="." charoff="50">24.4</td>
+    <td align="char" valign="top" char="." charoff="50">9.56</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50"> </td>
+    <td align="center" valign="top" charoff="50">P2</td>
+    <td align="char" valign="top" char="." charoff="50">32.59</td>
+    <td align="char" valign="top" char="." charoff="50">33.86</td>
+    <td align="char" valign="top" char="." charoff="50">25.61</td>
+    <td align="char" valign="top" char="." charoff="50">7.94</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50"> </td>
+    <td align="center" valign="top" charoff="50">P3</td>
+    <td align="char" valign="top" char="." charoff="50">34.59</td>
+    <td align="char" valign="top" char="." charoff="50">34.6</td>
+    <td align="char" valign="top" char="." charoff="50">23.21</td>
+    <td align="char" valign="top" char="." charoff="50">7.6</td>
+   </tr>
+   <tr>
+    <td align="left" valign="top" charoff="50"> </td>
+    <td align="center" valign="top" charoff="50">P4</td>
+    <td align="char" valign="top" char="." charoff="50">34.91</td>
+    <td align="char" valign="top" char="." charoff="50">34.48</td>
+    <td align="char" valign="top" char="." charoff="50">21.38</td>
+    <td align="char" valign="top" char="." charoff="50">9.23</td>
+   </tr>
+  </tbody>
+ </table>
+ <table-wrap-foot>
+  <fn id="t1-fn1">
+   <p>The quantified overall composition of 2 different nanoparticles of as-fabricated layered-LNMO and 4 different nanoparticles from cycled layered-LNMO after 45 cycles.</p>
+  </fn>
+ </table-wrap-foot>
+</table-wrap>

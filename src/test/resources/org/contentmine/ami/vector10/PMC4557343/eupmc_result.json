@@ -1,0 +1,485 @@
+{
+  "id": [
+    "26272722"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "26272722"
+  ],
+  "pmcid": [
+    "PMC4557343"
+  ],
+  "doi": [
+    "10.1038/ncomms9014"
+  ],
+  "title": [
+    "Visualizing nanoscale 3D compositional fluctuation of lithium in advanced lithium-ion battery cathodes."
+  ],
+  "authorString": [
+    "Devaraj A, Gu M, Colby R, Yan P, Wang CM, Zheng JM, Xiao J, Genc A, Zhang JG, Belharouak I, Wang D, Amine K, Thevuthasan S."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Devaraj A"
+          ],
+          "firstName": [
+            "A"
+          ],
+          "lastName": [
+            "Devaraj"
+          ],
+          "initials": [
+            "A"
+          ],
+          "affiliation": [
+            "Environmental and Molecular Sciences Laboratory, Pacific Northwest National Laboratory, Richland, Washington 99354, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Gu M"
+          ],
+          "firstName": [
+            "M"
+          ],
+          "lastName": [
+            "Gu"
+          ],
+          "initials": [
+            "M"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-5126-9611",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Environmental and Molecular Sciences Laboratory, Pacific Northwest National Laboratory, Richland, Washington 99354, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Colby R"
+          ],
+          "firstName": [
+            "R"
+          ],
+          "lastName": [
+            "Colby"
+          ],
+          "initials": [
+            "R"
+          ],
+          "affiliation": [
+            "Environmental and Molecular Sciences Laboratory, Pacific Northwest National Laboratory, Richland, Washington 99354, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Yan P"
+          ],
+          "firstName": [
+            "P"
+          ],
+          "lastName": [
+            "Yan"
+          ],
+          "initials": [
+            "P"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-6387-7502",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Environmental and Molecular Sciences Laboratory, Pacific Northwest National Laboratory, Richland, Washington 99354, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Wang CM"
+          ],
+          "firstName": [
+            "C M"
+          ],
+          "lastName": [
+            "Wang"
+          ],
+          "initials": [
+            "CM"
+          ],
+          "affiliation": [
+            "Environmental and Molecular Sciences Laboratory, Pacific Northwest National Laboratory, Richland, Washington 99354, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Zheng JM"
+          ],
+          "firstName": [
+            "J M"
+          ],
+          "lastName": [
+            "Zheng"
+          ],
+          "initials": [
+            "JM"
+          ],
+          "affiliation": [
+            "Energy and Environmental Directorate, Pacific Northwest National Laboratory, Richland, Washington 99354, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Xiao J"
+          ],
+          "firstName": [
+            "J"
+          ],
+          "lastName": [
+            "Xiao"
+          ],
+          "initials": [
+            "J"
+          ],
+          "affiliation": [
+            "Energy and Environmental Directorate, Pacific Northwest National Laboratory, Richland, Washington 99354, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Genc A"
+          ],
+          "firstName": [
+            "A"
+          ],
+          "lastName": [
+            "Genc"
+          ],
+          "initials": [
+            "A"
+          ],
+          "affiliation": [
+            "FEI Company, 5350 NE Dawson Creek Dr., Hillsboro, Oregon 97124, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Zhang JG"
+          ],
+          "firstName": [
+            "J G"
+          ],
+          "lastName": [
+            "Zhang"
+          ],
+          "initials": [
+            "JG"
+          ],
+          "affiliation": [
+            "Energy and Environmental Directorate, Pacific Northwest National Laboratory, Richland, Washington 99354, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Belharouak I"
+          ],
+          "firstName": [
+            "I"
+          ],
+          "lastName": [
+            "Belharouak"
+          ],
+          "initials": [
+            "I"
+          ],
+          "affiliation": [
+            "Qatar Environment and Energy Research Institute, Qatar Foundation, PO box 5825, Doha, Qatar."
+          ]
+        },
+        {
+          "fullName": [
+            "Wang D"
+          ],
+          "firstName": [
+            "D"
+          ],
+          "lastName": [
+            "Wang"
+          ],
+          "initials": [
+            "D"
+          ],
+          "affiliation": [
+            "Chemical Sciences and Engineering Division, Argonne National Laboratory, Argonne, Illinois 60439, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Amine K"
+          ],
+          "firstName": [
+            "K"
+          ],
+          "lastName": [
+            "Amine"
+          ],
+          "initials": [
+            "K"
+          ],
+          "affiliation": [
+            "Chemical Sciences and Engineering Division, Argonne National Laboratory, Argonne, Illinois 60439, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Thevuthasan S"
+          ],
+          "firstName": [
+            "S"
+          ],
+          "lastName": [
+            "Thevuthasan"
+          ],
+          "initials": [
+            "S"
+          ],
+          "affiliation": [
+            "Environmental and Molecular Sciences Laboratory, Pacific Northwest National Laboratory, Richland, Washington 99354, USA."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-5126-9611",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-6387-7502",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "6"
+      ],
+      "journalIssueId": [
+        "2476314"
+      ],
+      "dateOfPublication": [
+        "2015 Aug"
+      ],
+      "monthOfPublication": [
+        "8"
+      ],
+      "yearOfPublication": [
+        "2015"
+      ],
+      "printPublicationDate": [
+        "2015-08-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Nature communications"
+          ],
+          "ISOAbbreviation": [
+            "Nat Commun"
+          ],
+          "medlineAbbreviation": [
+            "Nat Commun"
+          ],
+          "NLMid": [
+            "101528555"
+          ],
+          "ISSN": [
+            "2041-1723"
+          ],
+          "ESSN": [
+            "2041-1723"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2015"
+  ],
+  "pageInfo": [
+    "8014"
+  ],
+  "abstractText": [
+    "The distribution of cations in Li-ion battery cathodes as a function of cycling is a pivotal characteristic of battery performance. The transition metal cation distribution has been shown to affect cathode performance; however, Li is notoriously challenging to characterize with typical imaging techniques. Here laser-assisted atom probe tomography (APT) is used to map the three-dimensional distribution of Li at a sub-nanometre spatial resolution and correlate it with the distribution of the transition metal cations (M) and the oxygen. As-fabricated layered Li1.2Ni0.2Mn0.6O2 is shown to have Li-rich Li2MO3 phase regions and Li-depleted Li(Ni0.5Mn0.5)O2 regions. Cycled material has an overall loss of Li in addition to Ni-, Mn- and Li-rich regions. Spinel LiNi0.5Mn1.5O4 is shown to have a uniform distribution of all cations. APT results were compared to energy dispersive spectroscopy mapping with a scanning transmission electron microscope to confirm the transition metal cation distribution."
+  ],
+  "affiliation": [
+    "Environmental and Molecular Sciences Laboratory, Pacific Northwest National Laboratory, Richland, Washington 99354, USA."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1038/ncomms9014"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4557343"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4557343?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "11"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2016-01-14"
+  ],
+  "dateOfCreation": [
+    "2015-08-15"
+  ],
+  "firstIndexDate": [
+    "2015-08-16"
+  ],
+  "fullTextReceivedDate": [
+    "2015-09-16"
+  ],
+  "dateOfRevision": [
+    "2019-04-15"
+  ],
+  "electronicPublicationDate": [
+    "2015-08-14"
+  ],
+  "firstPublicationDate": [
+    "2015-08-14"
+  ]
+}

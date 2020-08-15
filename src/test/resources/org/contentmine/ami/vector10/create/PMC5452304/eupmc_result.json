@@ -1,0 +1,292 @@
+{
+  "id": [
+    "28809211"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "28809211"
+  ],
+  "pmcid": [
+    "PMC5452304"
+  ],
+  "doi": [
+    "10.3390/ma6041310"
+  ],
+  "title": [
+    "Lithium Ion Battery Anode Aging Mechanisms."
+  ],
+  "authorString": [
+    "Agubra V, Fergus J."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Agubra V"
+          ],
+          "firstName": [
+            "Victor"
+          ],
+          "lastName": [
+            "Agubra"
+          ],
+          "initials": [
+            "V"
+          ],
+          "affiliation": [
+            "Materials Research and Education Center, Auburn University, 275 Wilmore Laboratories Auburn, AL 36849, USA. vaa0002@auburn.edu."
+          ]
+        },
+        {
+          "fullName": [
+            "Fergus J"
+          ],
+          "firstName": [
+            "Jeffrey"
+          ],
+          "lastName": [
+            "Fergus"
+          ],
+          "initials": [
+            "J"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-8067-1992",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Materials Research and Education Center, Auburn University, 275 Wilmore Laboratories Auburn, AL 36849, USA. jwfergus@eng.auburn.edu."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-8067-1992",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "issue": [
+        "4"
+      ],
+      "volume": [
+        "6"
+      ],
+      "journalIssueId": [
+        "2587540"
+      ],
+      "dateOfPublication": [
+        "2013 Mar"
+      ],
+      "monthOfPublication": [
+        "3"
+      ],
+      "yearOfPublication": [
+        "2013"
+      ],
+      "printPublicationDate": [
+        "2013-03-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Materials (Basel, Switzerland)"
+          ],
+          "ISOAbbreviation": [
+            "Materials (Basel)"
+          ],
+          "medlineAbbreviation": [
+            "Materials (Basel)"
+          ],
+          "NLMid": [
+            "101555929"
+          ],
+          "ISSN": [
+            "1996-1944"
+          ],
+          "ESSN": [
+            "1996-1944"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2013"
+  ],
+  "pageInfo": [
+    "1310-1325"
+  ],
+  "abstractText": [
+    "Degradation mechanisms such as lithium plating, growth of the passivated surface film layer on the electrodes and loss of both recyclable lithium ions and electrode material adversely affect the longevity of the lithium ion battery. The anode electrode is very vulnerable to these degradation mechanisms. In this paper, the most common aging mechanisms occurring at the anode during the operation of the lithium battery, as well as some approaches for minimizing the degradation are reviewed."
+  ],
+  "affiliation": [
+    "Materials Research and Education Center, Auburn University, 275 Wilmore Laboratories Auburn, AL 36849, USA. vaa0002@auburn.edu."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ]
+    }
+  ],
+  "keywordList": [
+    {
+      "keyword": [
+        "Li-ion Conduction",
+        "Composite Electrodes",
+        "Li-ion Battery Anode Materials"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.3390/ma6041310"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC5452304"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC5452304?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "N"
+  ],
+  "citedByCount": [
+    "5"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCreation": [
+    "2017-08-15"
+  ],
+  "firstIndexDate": [
+    "2017-08-15"
+  ],
+  "fullTextReceivedDate": [
+    "2017-07-31"
+  ],
+  "dateOfRevision": [
+    "2017-08-18"
+  ],
+  "electronicPublicationDate": [
+    "2013-03-27"
+  ],
+  "firstPublicationDate": [
+    "2013-03-27"
+  ]
+}

@@ -1,0 +1,495 @@
+{
+  "id": [
+    "27256920"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "27256920"
+  ],
+  "pmcid": [
+    "PMC4895809"
+  ],
+  "doi": [
+    "10.1038/ncomms11774"
+  ],
+  "title": [
+    "Freestanding three-dimensional core-shell nanoarrays for lithium-ion battery anodes."
+  ],
+  "authorString": [
+    "Tan G, Wu F, Yuan Y, Chen R, Zhao T, Yao Y, Qian J, Liu J, Ye Y, Shahbazian-Yassar R, Lu J, Amine K."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Tan G"
+          ],
+          "firstName": [
+            "Guoqiang"
+          ],
+          "lastName": [
+            "Tan"
+          ],
+          "initials": [
+            "G"
+          ],
+          "affiliation": [
+            "School of Materials Science and Engineering, Beijing Institute of Technology, Beijing Key Laboratory of Environmental Science and Engineering, Beijing 100081, China."
+          ]
+        },
+        {
+          "fullName": [
+            "Wu F"
+          ],
+          "firstName": [
+            "Feng"
+          ],
+          "lastName": [
+            "Wu"
+          ],
+          "initials": [
+            "F"
+          ],
+          "affiliation": [
+            "School of Materials Science and Engineering, Beijing Institute of Technology, Beijing Key Laboratory of Environmental Science and Engineering, Beijing 100081, China."
+          ]
+        },
+        {
+          "fullName": [
+            "Yuan Y"
+          ],
+          "firstName": [
+            "Yifei"
+          ],
+          "lastName": [
+            "Yuan"
+          ],
+          "initials": [
+            "Y"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-2360-8794",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Chemical Sciences and Engineering Division, Argonne National Laboratory, 9700S. Cass Avenue, Lemont, Illinois 60439, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Chen R"
+          ],
+          "firstName": [
+            "Renjie"
+          ],
+          "lastName": [
+            "Chen"
+          ],
+          "initials": [
+            "R"
+          ],
+          "affiliation": [
+            "School of Materials Science and Engineering, Beijing Institute of Technology, Beijing Key Laboratory of Environmental Science and Engineering, Beijing 100081, China."
+          ]
+        },
+        {
+          "fullName": [
+            "Zhao T"
+          ],
+          "firstName": [
+            "Teng"
+          ],
+          "lastName": [
+            "Zhao"
+          ],
+          "initials": [
+            "T"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-2398-2495",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "School of Materials Science and Engineering, Beijing Institute of Technology, Beijing Key Laboratory of Environmental Science and Engineering, Beijing 100081, China."
+          ]
+        },
+        {
+          "fullName": [
+            "Yao Y"
+          ],
+          "firstName": [
+            "Ying"
+          ],
+          "lastName": [
+            "Yao"
+          ],
+          "initials": [
+            "Y"
+          ],
+          "affiliation": [
+            "School of Materials Science and Engineering, Beijing Institute of Technology, Beijing Key Laboratory of Environmental Science and Engineering, Beijing 100081, China."
+          ]
+        },
+        {
+          "fullName": [
+            "Qian J"
+          ],
+          "firstName": [
+            "Ji"
+          ],
+          "lastName": [
+            "Qian"
+          ],
+          "initials": [
+            "J"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-5788-1302",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "School of Materials Science and Engineering, Beijing Institute of Technology, Beijing Key Laboratory of Environmental Science and Engineering, Beijing 100081, China."
+          ]
+        },
+        {
+          "fullName": [
+            "Liu J"
+          ],
+          "firstName": [
+            "Jianrui"
+          ],
+          "lastName": [
+            "Liu"
+          ],
+          "initials": [
+            "J"
+          ],
+          "affiliation": [
+            "School of Materials Science and Engineering, Beijing Institute of Technology, Beijing Key Laboratory of Environmental Science and Engineering, Beijing 100081, China."
+          ]
+        },
+        {
+          "fullName": [
+            "Ye Y"
+          ],
+          "firstName": [
+            "Yusheng"
+          ],
+          "lastName": [
+            "Ye"
+          ],
+          "initials": [
+            "Y"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0001-9832-2478",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "School of Materials Science and Engineering, Beijing Institute of Technology, Beijing Key Laboratory of Environmental Science and Engineering, Beijing 100081, China."
+          ]
+        },
+        {
+          "fullName": [
+            "Shahbazian-Yassar R"
+          ],
+          "firstName": [
+            "Reza"
+          ],
+          "lastName": [
+            "Shahbazian-Yassar"
+          ],
+          "initials": [
+            "R"
+          ],
+          "affiliation": [
+            "Department of Mechanical and Industrial Engineering, University of Illinois at Chicago, Chicago, Illinois 60607, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Lu J"
+          ],
+          "firstName": [
+            "Jun"
+          ],
+          "lastName": [
+            "Lu"
+          ],
+          "initials": [
+            "J"
+          ],
+          "affiliation": [
+            "Chemical Sciences and Engineering Division, Argonne National Laboratory, 9700S. Cass Avenue, Lemont, Illinois 60439, USA."
+          ]
+        },
+        {
+          "fullName": [
+            "Amine K"
+          ],
+          "firstName": [
+            "Khalil"
+          ],
+          "lastName": [
+            "Amine"
+          ],
+          "initials": [
+            "K"
+          ],
+          "affiliation": [
+            "Chemical Sciences and Engineering Division, Argonne National Laboratory, 9700S. Cass Avenue, Lemont, Illinois 60439, USA."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0001-9832-2478",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-2398-2495",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-2360-8794",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0001-5788-1302",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "7"
+      ],
+      "journalIssueId": [
+        "2463534"
+      ],
+      "dateOfPublication": [
+        "2016 Jun"
+      ],
+      "monthOfPublication": [
+        "6"
+      ],
+      "yearOfPublication": [
+        "2016"
+      ],
+      "printPublicationDate": [
+        "2016-06-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Nature communications"
+          ],
+          "ISOAbbreviation": [
+            "Nat Commun"
+          ],
+          "medlineAbbreviation": [
+            "Nat Commun"
+          ],
+          "NLMid": [
+            "101528555"
+          ],
+          "ISSN": [
+            "2041-1723"
+          ],
+          "ESSN": [
+            "2041-1723"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2016"
+  ],
+  "pageInfo": [
+    "11774"
+  ],
+  "abstractText": [
+    "Structural degradation and low conductivity of transition-metal oxides lead to severe capacity fading in lithium-ion batteries. Recent efforts to solve this issue have mainly focused on using nanocomposites or hybrids by integrating nanosized metal oxides with conducting additives. Here we design specific hierarchical structures and demonstrate their use in flexible, large-area anode assemblies. Fabrication of these anodes is achieved via oxidative growth of copper oxide nanowires onto copper substrates followed by radio-frequency sputtering of carbon-nitride films, forming freestanding three-dimensional arrays with core-shell nano-architecture. Cable-like copper oxide/carbon-nitride core-shell nanostructures accommodate the volume change during lithiation-delithiation processes, the three-dimensional arrays provide abundant electroactive zones and electron/ion transport paths, and the monolithic sandwich-type configuration without additional binders or conductive agents improves energy/power densities of the whole electrode."
+  ],
+  "affiliation": [
+    "School of Materials Science and Engineering, Beijing Institute of Technology, Beijing Key Laboratory of Environmental Science and Engineering, Beijing 100081, China."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1038/ncomms11774"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4895809"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4895809?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "16"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2018-08-20"
+  ],
+  "dateOfCreation": [
+    "2016-06-04"
+  ],
+  "firstIndexDate": [
+    "2016-06-04"
+  ],
+  "fullTextReceivedDate": [
+    "2016-08-20"
+  ],
+  "dateOfRevision": [
+    "2019-01-11"
+  ],
+  "electronicPublicationDate": [
+    "2016-06-03"
+  ],
+  "firstPublicationDate": [
+    "2016-06-03"
+  ]
+}

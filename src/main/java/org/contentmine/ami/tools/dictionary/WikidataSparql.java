@@ -33,29 +33,32 @@ import nu.xom.Element;
  */
 public class WikidataSparql {
 
-	private static final String PERSONAL = "_";
-	private static final String Q = "q_";
-	private static final String P = "p_";
 	private static final Logger LOG = LogManager.getLogger(WikidataSparql.class);
-	private static final String MUST = "must";
-	private static final String SHOULD = "should";
-	private static final String CAN = "can";
-	private final static List<String> MUST_AMI = Arrays.asList(new String[] {DefaultAMIDictionary.TERM});
-	private final static List<String> SHOULD_AMI = Arrays.asList(new String[] {
-			DefaultAMIDictionary.DESCRIPTION,
-			DefaultAMIDictionary.NAME,
-			DefaultAMIDictionary.WIKIDATA,
-			DefaultAMIDictionary.WIKIPEDIA,
-		});
-	private final static List<String> CAN_AMI = Arrays.asList(new String[] {
-//			DefaultAMIDictionary.SYNONYM
-			});
-	private final static List<String> ALL_AMI = new ArrayList<String>();
-	static {
-		ALL_AMI.addAll(MUST_AMI);
-		ALL_AMI.addAll(SHOULD_AMI);
-		ALL_AMI.addAll(CAN_AMI);
-	};
+	
+//	private static final String PERSONAL = "_";
+//	private static final String Q = "q_";
+//	private static final String P = "p_";
+//	private static final String MUST = "must";
+//	private static final String SHOULD = "should";
+//	private static final String CAN = "can";
+//	private final static List<String> MUST_AMI = Arrays.asList(new String[] {DefaultAMIDictionary.TERM});
+//	private final static List<String> SHOULD_AMI = Arrays.asList(new String[] {
+//			DefaultAMIDictionary.DESCRIPTION,
+//			DefaultAMIDictionary.NAME,
+//			DefaultAMIDictionary.WIKIDATA_ID,
+//			DefaultAMIDictionary.WIKIDATA_URL,
+//			DefaultAMIDictionary.WIKIPEDIA_PAGE,
+//			DefaultAMIDictionary.WIKIPEDIA_URL,
+//		});
+//	private final static List<String> CAN_AMI = Arrays.asList(new String[] {
+////			DefaultAMIDictionary.SYNONYM
+//			});
+//	private final static List<String> ALL_AMI = new ArrayList<String>();
+//	static {
+//		ALL_AMI.addAll(MUST_AMI);
+//		ALL_AMI.addAll(SHOULD_AMI);
+//		ALL_AMI.addAll(CAN_AMI);
+//	};
 	
 	private static final String ITEM_LABEL = "itemLabel";
 	
@@ -71,19 +74,9 @@ public class WikidataSparql {
 	public WikidataSparql(DictionaryCreationTool dictionaryCreationTool) {
 		this.dictionaryCreationTool = dictionaryCreationTool;
 	}
-	private void checkNameMappings() {
-		amiNames = new ArrayList<String>(this.sparqlNameByAmiName.keySet());
-		LOG.info("WS>"+amiNames);
-		Collections.sort(amiNames);
-		checkAmiNamesContain(MUST_AMI, MUST);
-		checkAmiNamesContain(SHOULD_AMI, SHOULD);
-		checkAmiNamesContain(CAN_AMI, CAN);
-		checkUnknownAmiNames();
-		checkWikidataVariables();
-	}
 
-	private void checkWikidataVariables() {
-		amiValues = new ArrayList<String>(this.sparqlNameByAmiName.values());
+	private void checkWikidataVariables(List<String> amiNames) {
+//		amiValues = new ArrayList<String>(this.sparqlNameByAmiName.values());
 		searchValuesInTarget(amiValues, "sparqlVariables", sparqlVariables);
 		// __synonyms also create amiValues
 		amiValues.addAll(dictionaryCreationTool.synonymList);
@@ -94,34 +87,6 @@ public class WikidataSparql {
 		for (String value : searchValues) {
 			if (!targetValues.contains(value)) {
 				LOG.warn(value + " not found in " + target);
-			}
-		}
-	}
-
-	private void checkUnknownAmiNames() {
-		for (String amiName : amiNames) {
-			if (ALL_AMI.contains(amiName)) {
-				// OK
-			} else if (amiName.startsWith(P) || amiName.startsWith(Q)) {
-				// OK
-			} else if (amiName.startsWith(PERSONAL)) {
-				// OK
-			} else {
-				LOG.warn("unknown ami name: " + amiName);
-			}
-		}
-	}
-
-	private void checkAmiNamesContain(List<String> names, String message) {
-		for (String name : names) {
-			if (!amiNames.contains(name)) {
-				if (MUST.contentEquals(message)) {
-					throw new RuntimeException("sparqlMap MUST contain key: "+name);
-				} else if (SHOULD.contentEquals(message)) {
-					LOG.warn("sparqlMap SHOULD contain key: "+name);
-				} else if (CAN.contentEquals(message)) {
-					LOG.info("sparqlMap does not contain key: "+name);
-				}
 			}
 		}
 	}
@@ -137,7 +102,9 @@ public class WikidataSparql {
 		sparqlVariables = XMLUtil.getQueryValues(sparqlXml, 
 				"./*[local-name() = 'head']/*[local-name()='variable']/@name");
 		if (this.sparqlNameByAmiName.size() > 0) {
-			checkNameMappings();
+			amiNames = new ArrayList<String>(this.sparqlNameByAmiName.keySet());
+			new AMIDictValidator().checkNameMappings(amiNames);
+			checkWikidataVariables(amiNames);
 			DictionaryCreationTool.LOG.info("sparql names " + sparqlVariables);
 		} else {
 			LOG.warn("no --wikidatasparqlmap: Relying on user names for mapping");

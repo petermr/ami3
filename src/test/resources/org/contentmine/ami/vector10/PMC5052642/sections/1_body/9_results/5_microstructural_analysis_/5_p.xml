@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p>To create dynamic sub-volumes, we use the information readily available from DVC to warp an initial volumetric observation window according to the corresponding computed displacement fields in each time step. This concept is illustrated in 
+ <xref ref-type="fig" rid="f4">Fig. 4a</xref> using a small part of the bottom electrode, shown before lithation on the left. During lithiation, the particles in this sub-volume expand, distorting the sub-volume shape. The sub-volume containing the same set of particles is shown in the very last time step (right). For better visibility, the computed displacement field (middle) and the warping effect (right) have been rescaled by a factor 40 in the IP directions and by a factor 6 in the TP direction. 
+ <xref ref-type="supplementary-material" rid="S1">Supplementary Movie 5</xref> visualizes this dynamically deforming subvolume.
+</p>

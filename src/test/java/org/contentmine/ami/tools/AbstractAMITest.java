@@ -66,6 +66,8 @@ public abstract class AbstractAMITest {
 	public static File OPEN_VIRUS = new File(PROJECTS, "openVirus/");
 	public static File VIRAL950 = new File(OPEN_VIRUS, "viral_epidemics/");
 
+	public static final File TARGET = new File("target");
+
 	/**
 	 * tests XML output.
 	 * requires <testDirectory>/<root>.expected.xml

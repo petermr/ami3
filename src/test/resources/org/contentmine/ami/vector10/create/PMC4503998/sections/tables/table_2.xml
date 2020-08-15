@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table-wrap id="tbl2" position="float">
+ <label>Table 2</label>
+ <caption>
+  <p>Specific energy of ZFO/LFP-CNT cells obtained from galvanostatic discharge at 0.1 mA cm
+   <sup>−2</sup>. The values are calculated with respect to the active material (AM), active material and carbon (AM+C) and active material, carbon and binder (AM+C+B) weights of both electrodes
+  </p>
+ </caption>
+ <table frame="hsides" rules="groups">
+  <thead>
+   <tr>
+    <th align="left" rowspan="1" colspan="1">Full cell</th>
+    <th align="center" colspan="3" rowspan="1">Specific Energy [Wh kg
+     <sup>−1</sup>]
+     <hr/>
+    </th>
+   </tr>
+   <tr>
+    <th rowspan="1" colspan="1"/>
+    <th align="center" rowspan="1" colspan="1">AM</th>
+    <th align="center" rowspan="1" colspan="1">AM+C</th>
+    <th align="center" rowspan="1" colspan="1">AM+C+B</th>
+   </tr>
+  </thead>
+  <tbody>
+   <tr>
+    <td align="left" rowspan="1" colspan="1">ZFO-deLi/LFP-CNT</td>
+    <td align="center" rowspan="1" colspan="1">148</td>
+    <td align="center" rowspan="1" colspan="1">105</td>
+    <td align="center" rowspan="1" colspan="1">96</td>
+   </tr>
+   <tr>
+    <td align="left" rowspan="1" colspan="1">ZFO-200/LFP-CNT</td>
+    <td align="center" rowspan="1" colspan="1">158</td>
+    <td align="center" rowspan="1" colspan="1">112</td>
+    <td align="center" rowspan="1" colspan="1">103</td>
+   </tr>
+   <tr>
+    <td align="left" rowspan="1" colspan="1">ZFO-600/LFP-CNT</td>
+    <td align="center" rowspan="1" colspan="1">202</td>
+    <td align="center" rowspan="1" colspan="1">144</td>
+    <td align="center" rowspan="1" colspan="1">132</td>
+   </tr>
+  </tbody>
+ </table>
+</table-wrap>

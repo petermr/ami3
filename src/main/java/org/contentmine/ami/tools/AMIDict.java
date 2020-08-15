@@ -174,11 +174,11 @@ public class AMIDict implements Runnable {
 	}
 
 	public List<String> getDictionaryList() {
-		return dictionaryList;
+		return dictionaryNameList;
 	}
 
 	public void setDictionaryList(List<String> dictionaryList) {
-		this.dictionaryList = dictionaryList;
+		this.dictionaryNameList = dictionaryList;
 	}
 
 	/**
@@ -188,11 +188,14 @@ public class AMIDict implements Runnable {
 			scope = CommandLine.ScopeType.INHERIT, // this option can be used in all subcommands
 			arity = "1..*",
 			split=",",
-			description = "input or output dictionary name/s. for 'create' must be singular; when 'display' or 'translate', any number. "
+			description = "input or output dictionary NAMES/s. for 'create' must be singular; when 'display' or 'translate', any number. "
 					+ "Names should be lowercase, unique. [a-z][a-z0-9._]. Dots can be used to structure dictionaries into"
-					+ "directories. Dictionary names are relative to 'directory'. If <directory> is absent then "
-					+ "dictionary names are absolute.")
-	List<String> dictionaryList = new ArrayList<>();
+					+ "directories. Dictionary names are relative to 'directory'. "
+					+ "If <directory> is absent then dictionary names are absolute. ) This doesn't make sense; it should "
+					+ "relate to current working directory."
+					)
+	
+	List<String> dictionaryNameList = new ArrayList<>();
 
 	/**
 	 * both create and translate

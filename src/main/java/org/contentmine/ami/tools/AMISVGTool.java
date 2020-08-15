@@ -7,12 +7,13 @@ import java.io.PrintWriter;
 import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.DebugPrint;
@@ -85,6 +86,14 @@ public enum TidySVG {
 		}
 	};
 	
+	private enum PanelParam {
+		xwidth,
+		ywidth,
+		minlen
+	}
+	
+
+	
     @Option(names = {"--caches"},
     		arity = "1..*",
             description = "caches to process/create; values: ${COMPLETION-CANDIDATES}")
@@ -97,6 +106,10 @@ public enum TidySVG {
     		arity = "1..*",
             description = "pages to extract")
     private List<Integer> pageList = null;
+
+    @Option(names = {"--panels"},
+    		description = "group vectors into panels ")
+    private Map<PanelParam, String> panelMap = null;
 
     @Option(names = {"--regex"},
     		arity = "1..*",
@@ -159,13 +172,14 @@ public enum TidySVG {
 
     @Override
 	protected void parseSpecifics() {
-		LOG.info("pages                {}", pageList);
-		LOG.info("regexes              {}", regexList);
-		LOG.info("regexfile            {}", regexFilename);
-		LOG.info("tidyList             {}", tidyList);
-		LOG.info("vectorLogfilename    {}", vectorLog);
-		LOG.info("vectorDir            {}", vectorDirname);
-		LOG.info("logfile              {}", logfile);
+    	super.parseSpecifics();
+//		LOG.info("pages                {}", pageList);
+//		LOG.info("regexes              {}", regexList);
+//		LOG.info("regexfile            {}", regexFilename);
+//		LOG.info("tidyList             {}", tidyList);
+//		LOG.info("vectorLogfilename    {}", vectorLog);
+//		LOG.info("vectorDir            {}", vectorDirname);
+//		LOG.info("logfile              {}", logfile);
 	}
 
     @Override
@@ -235,16 +249,20 @@ public enum TidySVG {
 		List<File> svgFiles = CMineGlobber.listSortedChildFiles(svgDir, CTree.SVG);
 		// these are normally pages
 		for (File svgFile : svgFiles) {
-			currentPageName = FilenameUtils.getBaseName(svgFile.toString());
-			Matcher pageMatcher = PAGE_EXTRACT.matcher(svgFile.toString());
-			int page = pageMatcher.matches() ? Integer.parseInt(pageMatcher.group(1)): -1;
-			if ((pageList == null || pageList.size() == 0) || pageList.contains(new Integer(page))) {
-				if (pageList != null) LOG.warn(" p{}", page);
-				try {
-					runSVG(svgFile);
-				} catch (IOException e) {
-					LOG.error("***, cannot process "+svgFile+" "+e.getMessage());
-				}
+			processPage(svgFile);
+		}
+	}
+
+	private void processPage(File svgFile) {
+		currentPageName = FilenameUtils.getBaseName(svgFile.toString());
+		Matcher pageMatcher = PAGE_EXTRACT.matcher(svgFile.toString());
+		int page = pageMatcher.matches() ? Integer.parseInt(pageMatcher.group(1)): -1;
+		if ((pageList == null || pageList.size() == 0) || pageList.contains(new Integer(page))) {
+			if (pageList != null) LOG.warn(" p{}", page);
+			try {
+				runSVG(svgFile);
+			} catch (IOException e) {
+				LOG.error("***, cannot process "+svgFile+" "+e.getMessage());
 			}
 		}
 	}
@@ -341,12 +359,11 @@ public enum TidySVG {
 		if (vectorWriter != null) {
 			String page = "p."+currentPageName.split("\\.")[1];
 			int size = pathList.size();
+			System.out.println("PAGE: " + page + ": " + size);
 			try {
 				if (size > 0) {
 					vectorWriter.write("\n" + page + ":: " + size);
-					if (size > 0) {
-						SVGSVG.wrapAndWriteAsSVG(pathList, new File(svgVectorDir, "paths.svg"));
-					}
+					SVGSVG.wrapAndWriteAsSVG(pathList, new File(svgVectorDir, "paths.svg"));
 				}
 			} catch (IOException e) {
 				LOG.error("Cannot write to writer", e);

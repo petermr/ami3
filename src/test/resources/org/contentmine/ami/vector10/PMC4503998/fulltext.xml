@@ -1,0 +1,441 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.1d3 20150301//EN" "JATS-archivearticle1.dtd"> 
+<article xmlns:ali="http://www.niso.org/schemas/ali/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><?DTDIdentifier.IdentifierValue -//NLM//DTD Journal Publishing DTD v2.0 20040830//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName journalpublishing.dtd?><?SourceDTD.Version 2.0?><?ConverterInfo.XSLTName jp2nlmx2.xsl?><?ConverterInfo.Version 2?><front><journal-meta><journal-id journal-id-type="nlm-ta">Adv Energy Mater</journal-id><journal-id journal-id-type="iso-abbrev">Adv Energy Mater</journal-id><journal-id journal-id-type="publisher-id">aenm</journal-id><journal-title-group><journal-title>Advanced Energy Materials</journal-title></journal-title-group><issn pub-type="ppub">1614-6832</issn><issn pub-type="epub">1614-6840</issn><publisher><publisher-name>BlackWell Publishing Ltd</publisher-name><publisher-loc>Oxford, UK</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">4503998</article-id><article-id pub-id-type="doi">10.1002/aenm.201400054</article-id><article-categories><subj-group subj-group-type="heading"><subject>Full Papers</subject></subj-group></article-categories><title-group><article-title>ZnFe<sub>2</sub>O<sub>4</sub>-C/LiFePO<sub>4</sub>-CNT: A NovelHigh-Power Lithium-Ion Battery with Excellent Cycling Performance</article-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Varzi</surname><given-names>Alberto</given-names></name><xref ref-type="aff" rid="au1"/></contrib><contrib contrib-type="author"><name><surname>Bresser</surname><given-names>Dominic</given-names></name><xref ref-type="aff" rid="au1"/></contrib><contrib contrib-type="author"><name><surname>von Zamory</surname><given-names>Jan</given-names></name><xref ref-type="aff" rid="au1"/></contrib><contrib contrib-type="author"><name><surname>M&#x000fc;ller</surname><given-names>Franziska</given-names></name><xref ref-type="aff" rid="au1"/></contrib><contrib contrib-type="author"><name><surname>Passerini</surname><given-names>Stefano</given-names></name><xref ref-type="aff" rid="au1"/><xref ref-type="aff" rid="au2"/><xref ref-type="corresp" rid="cor1">*</xref></contrib><aff id="au1"><institution>Institute of Physical Chemistry &#x00026;, MEET Battery
+Research Center University of Muenster</institution><addr-line>Corrensstrasse 28/30 &#x00026; 46, 48149, M&#x000fc;nster,
+Germany</addr-line></aff><aff id="au2"><institution>Helmholtz Institute Ulm</institution><addr-line>Albert Einstein Allee 11, 89097, Ulm, Germany</addr-line></aff></contrib-group><author-notes><corresp id="cor1">E-mail: <email>stefano.passerini@uni-muenster.de</email></corresp></author-notes><pub-date pub-type="ppub"><day>15</day><month>7</month><year>2014</year></pub-date><pub-date pub-type="epub"><day>24</day><month>3</month><year>2014</year></pub-date><volume>4</volume><issue>10</issue><fpage>1</fpage><lpage>9</lpage><history><date date-type="received"><day>10</day><month>1</month><year>2014</year></date><date date-type="rev-recd"><day>04</day><month>2</month><year>2014</year></date></history><permissions><copyright-statement>&#x000a9; 2014 The Authors. Published by WILEY-VCH Verlag GmbH &#x00026;
+Co. KGaA, Weinheim</copyright-statement><copyright-year>2014</copyright-year><license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><license-p>This is an open access article under the terms of the Creative Commons
+Attribution-NonCommercial-NoDerivs License, which permits use and distribution in any
+medium, provided the original work is properly cited, the use is non-commercial and
+no modifications or adaptations are made.</license-p></license></permissions><abstract><p>An innovative and environmentally friendly battery chemistry is proposed for high
+power applications. A carbon-coated ZnFe<sub>2</sub>O<sub>4</sub> nanoparticle-based
+anode and a LiFePO<sub>4</sub>-multiwalled carbon nanotube-based cathode, both
+aqueous processed with Na-carboxymethyl cellulose, are combined, for the first time,
+in a Li-ion full cell with exceptional electrochemical performance. Such novel
+battery shows remarkable rate capabilities, delivering 50% of its nominal
+capacity at currents corresponding to &#x02248;20C (with respect to the limiting
+cathode). Furthermore, the pre-lithiation of the negative electrode offers the
+possibility of tuning the cell potential and, therefore, achieving remarkable
+gravimetric energy and power density values of 202 Wh kg<sup>&#x02212;1</sup> and 3.72
+W kg<sup>&#x02212;1</sup>, respectively, in addition to grant a lithium reservoir. The
+high reversibility of the system enables sustaining more than 10 000 cycles at
+elevated C-rates (&#x02248;10C with respect to the LiFePO<sub>4</sub> cathode), while
+retaining up to 85% of its initial capacity.</p></abstract><kwd-group><kwd>lithium-ion batteries</kwd><kwd>ZnFe<sub>2</sub>O<sub>4</sub></kwd><kwd>LiFePO<sub>4</sub></kwd><kwd>nanoparticles</kwd><kwd>carbon nanotubes</kwd></kwd-group></article-meta></front><body><sec><title>1 Introduction</title><p>The lithium-ion battery market is growing beyond expectations. The continuous progresses
+achieved by the development of new and/or enhanced materials has led to considerable
+improvements in terms of both energy and power densities.<xref rid="b1" ref-type="bibr">1</xref> This has enabled, apart from the nowadays-established consumer electronics,
+further applications for lithium-ion batteries as, for instance, in the automotive
+sector (i.e., electric or hybrid vehicles). Nevertheless, there is still much room for
+improvement, especially concerning the high power density demanded by such kind of
+applications.</p><p>Since the diffusion of Li ions in and out of the electrode structure is frequently the
+rate determining step, this must be improved to allow a fast charge and discharge of the
+battery.<xref rid="b2" ref-type="bibr">2</xref> With this goal in mind, scientists
+have put substantial efforts on developing new nanostructured materials, which
+facilitate the Li ion diffusion due to a reduced diffusion length within the active
+material particles and an increased electrode/electrolyte contact area. A variety of
+both anode and cathode materials was proposed in form of nanoparticles, nanofibers,
+nanotubes, etc.<xref rid="b3" ref-type="bibr">3</xref> Additionally, highly structured
+carbon nanocomposites were developed to enhance not only the ionic but also the
+electronic conductivity of the electrode.<xref rid="b4" ref-type="bibr">4</xref> On the
+cathode side, carbon-coated LiFePO<sub>4</sub>,<xref rid="b5" ref-type="bibr">5</xref>
+LiMn<sub>2</sub>O<sub>4</sub>,<xref rid="b6" ref-type="bibr">6</xref> and their
+composites with graphene<xref rid="b7" ref-type="bibr">7</xref> or carbon nanotubes<xref rid="b8" ref-type="bibr">8</xref>&#x02013;<xref rid="b11" ref-type="bibr">11</xref>
+are, so far, the best candidates for use in high power devices. In regard to the
+negative electrode, Sn-C,<xref rid="b12" ref-type="bibr">12</xref>,<xref rid="b13" ref-type="bibr">13</xref> electrodeposited Fe<sub>3</sub>O<sub>4</sub> on a nanostructured
+Cu current collector,<xref rid="b14" ref-type="bibr">14</xref> mesoporous
+Co<sub>3</sub>O<sub>4</sub> nanowires,<xref rid="b15" ref-type="bibr">15</xref> and
+nanocrystalline Li<sub>4</sub>Ti<sub>5</sub>O<sub>12</sub> on carbon nanofibers<xref rid="b16" ref-type="bibr">16</xref> are some examples of innovative materials with
+very promising high rate performances.</p><p>While the scientific literature abounds in studies focusing on the performance of newly
+developed active materials in half-cell configuration, there are only very few reports
+on full batteries with power-oriented performance. Basically, the most common battery
+configurations are Li<sub>4</sub>Ti<sub>5</sub>O<sub>12</sub>/LiCoO<sub>2</sub><xref rid="b17" ref-type="bibr">17</xref> and
+Li<sub>4</sub>Ti<sub>5</sub>O<sub>12</sub>/LiFePO<sub>4</sub>.<xref rid="b18" ref-type="bibr">18</xref> The latter system, when activated carbon is added to the positive
+electrode, was at the same time also investigated regarding its utilization as a
+lithium-ion capacitor.<xref rid="b19" ref-type="bibr">19</xref> However, the vast
+majority of these anyway only few studies utilized
+Li<sub>4</sub>Ti<sub>5</sub>O<sub>12</sub> as active material on the anode side. As
+an alternative, Derrien et al.<xref rid="b20" ref-type="bibr">20</xref> and Brutti et
+al.<xref rid="b21" ref-type="bibr">21</xref> recently reported very interesting
+results by combining a Sn-C-based anode with
+LiNi<sub>0.5</sub>Mn<sub>1.5</sub>O<sub>4</sub> and carbon-coated LiFePO<sub>4</sub>
+as cathode, respectively. Substituted metal oxides, such as the spinel
+ZnCo<sub>2</sub>O<sub>4</sub> (e.g., 3D nanowire arrays on carbon cloth), were also
+demonstrated to be superior to graphite in terms of rate performance in flexible
+lithium-ion cells with LiCoO<sub>2</sub> cathodes.<xref rid="b22" ref-type="bibr">22</xref> Similar to ZnCo<sub>2</sub>O<sub>4</sub>, which combines conversion and
+alloying mechanism for the reversible lithium storage, ZnFe<sub>2</sub>O<sub>4</sub> was
+also proposed as high capacity anode,<xref rid="b23" ref-type="bibr">23</xref>&#x02013;<xref rid="b27" ref-type="bibr">27</xref> offering the great
+advantage of being more environmentally friendly, more cost-efficient, and less toxic
+due to the replacement of cobalt by iron. Bresser et al.<xref rid="b28" ref-type="bibr">28</xref> demonstrated very recently that, beside the reversible capacity values
+exceeding 1000 mA g<sup>&#x02212;1</sup>, carbon-coated ZnFe<sub>2</sub>O<sub>4</sub>
+nanoparticles exhibit also excellent rate capability. Nevertheless, within their study
+they focused on the characterization of this new active material using half-cells
+only.</p><p>Here, we propose for the first time a novel battery configuration wherein carbon-coated
+ZnFe<sub>2</sub>O<sub>4</sub> nanoparticles are employed as negative electrode
+material and a multiwalled carbon nanotube (CNT)-LiFePO<sub>4</sub> composite is used on
+the positive electrode side (also referred to here as
+ZnFe<sub>2</sub>O<sub>4</sub>-C/LiFePO<sub>4</sub>-CNT). As a proof of concept, we
+demonstrate the great potential of such combination. In addition to the fact that only
+electrodes were employed, which were prepared using environmentally friendly,
+water-based Na-carboxymethyl cellulose as binder, more remarkably, this new lithium-ion
+full-cell provides advanced high rate performance and excellent cycling stability.</p></sec><sec><title>2 Results and Discussion</title><sec><title>2.1 Characterization of LiFePO<sub>4</sub>-CNT Cathode</title><p>Due to their rather poor electronic and ionic conductivities, cathode materials are
+frequently limiting the high power performance of lithium-ion batteries. Therefore,
+in order to keep up with the excellent rate capability of
+ZnFe<sub>2</sub>O<sub>4</sub>-C anodes (ZFO), carbon-rich LiFePO<sub>4</sub> (LFP)
+positive electrodes were prepared. Accordingly, commercial, carbon-coated,
+sub-micrometric LFP particles were embedded in an extensive network of multi-walled
+carbon nanotubes to form a composite cathode, which is hereinafter called LFP-CNT. As
+shown in <bold>Figure</bold>
+<xref ref-type="fig" rid="fig01">1</xref>a, because of their tubular shape, CNTs form
+an extended electronically conductive network interconnecting the single LFP
+particles (see inset <xref ref-type="fig" rid="fig01">Figure 1</xref>a), thus
+guaranteeing an efficient and rapid electron transport. In fact, such a large amount
+of conductive additive most probably exceeds the electronic percolation threshold.
+Additionally, the excess of carbon nanotubes shall ensure an advanced high rate
+performance of the commercial LFP particles with respect to the targeted application
+in a high power lithium-ion full-cell. In fact, as suggested by Sotowa et al.<xref rid="b29" ref-type="bibr">29</xref> creating sufficient space between the
+particles CNT facilitate the electrolyte permeability, hence, decreasing the
+concentration polarization when the electrode is subjected to high current loads. As
+displayed in <xref ref-type="fig" rid="fig01">Figure 1</xref>b, the LFP-CNT positive
+electrode has a practical reversible capacity of 158 mAh
+g<sup>&#x02212;1</sup><sub>LFP</sub> at C/5. When the applied C rate is increased
+to 10C and 20C, such electrodes still provide specific capacities of 90 and 60 mAh
+g<sup>&#x02212;1</sup><sub>LFP</sub>, respectively. Considering the initial
+capacity, such values account for a capacity retention of &#x02248;56% and
+38%. Besides, except for the first cycle, for which an irreversible capacity
+of 27 mAh g<sup>&#x02212;1</sup> is observed, the coulombic efficiency of these
+LFP-CNT electrodes subjected to galvanostatic charge/discharge is very high, reaching
+values of almost 100% at C rates as high as 10C and 20C.</p><fig id="fig01" position="float"><label>Figure 1</label><caption><p>a) Scanning electron microscopy (SEM) images of LFP-CNT positive electrodes.
+Inset: the connection network established by CNT between the LiFePO<sub>4</sub>
+particles. b) Rate capability and coulombic efficiency of LFP-CNT cathodes (in
+half-cell configuration vs. Li) at C rates ranging from C/5 to 20C. Inset: some
+selected potential profiles at different current loads.</p></caption><graphic xlink:href="aenm0004-0001-f1"/></fig></sec><sec><title>2.2 Pre-Formation of the ZnFe<sub>2</sub>O<sub>4</sub>-C Anode in Half-Cell
+Configuration</title><p>The detailed electrochemical characterization of the herein utilized ZFO-based anodes
+was already reported previously.<xref rid="b28" ref-type="bibr">28</xref> Such
+electrodes showed a remarkable rate performance and cycling stability. Being
+specifically interesting for the application of these electrodes in a lithium-ion
+full-cell, however, the irreversible charge consumption within the first cycle was
+slightly less than 30%. This initial irreversible capacity was mainly
+attributed to the formation of a solid electrolyte interphase (SEI) layer on the
+active material particles surface. Nevertheless, with respect to the anyway limited
+amount of lithium within a full-cell, the negative electrodes were electrochemically
+pre-lithiated prior to their assembly in the
+ZnFe<sub>2</sub>O<sub>4</sub>-C/LiFePO<sub>4</sub>-CNT lithium-ion full-cells.
+This pre-lithiation was done by galvanostatic cycling the ZFO anodes in Li half-cells
+at relatively low current (C/10, i.e., &#x02248;0.1 A g<sup>&#x02212;1</sup>). As
+displayed in <bold>Figure</bold>
+<xref ref-type="fig" rid="fig02">2</xref>, after a slight increase during the initial
+cycles, ZFO anodes reach a stable reversible capacity of 1073 mAh
+g<sup>&#x02212;1</sup> at the 20<sup>th</sup> cycle. ZFO evenly provides capacity
+in the potential range from 0 to 2 V vs. Li/Li<sup>+</sup>. However, it would
+be desirable to have a negative electrode mainly operating at rather low potentials
+in order to provide a higher energy density of the final lithium-ion full-cell. This
+is particularly true when LFP is used as cathode active material, which itself has a
+relatively low operating potential. Therefore, within the pre-lithiation step, anodes
+with three different lithiation degrees were prepared as shown in the inset in <xref ref-type="fig" rid="fig02">Figure 2</xref>. Accordingly, within thus processed
+electrodes a specific capacity of 0 mAh g<sup>&#x02212;1</sup> (ZFO-deLi), 200 mAh
+g<sup>&#x02212;1</sup> (ZFO-200), and 600 (ZFO-600) mAh g<sup>&#x02212;1</sup>
+remained. These two levels of doping have been chosen to investigate the effect of
+the anode Li storage mechanism on the full cell performance. Indeed, doping the
+negative electrode with 200 mAh g<sup>&#x02212;1</sup> or 600 mAh
+g<sup>&#x02212;1</sup> allows to preferentially exploit the conversion mechanism or
+the alloying mechanism, respectively. The doping of the negative electrodes has,
+besides the tailoring of the full cell potential, the further function of introducing
+a Li reservoir into the system, which might buffer eventual irreversible charge
+consumption processes.</p><fig id="fig02" position="float"><label>Figure 2</label><caption><p>Electrochemical pre-lithiation of ZFO-based anodes in half-cell configuration
+(vs. Li). The inset shows the different degree of lithiation reached during the
+last reduction cycle.</p></caption><graphic xlink:href="aenm0004-0001-f2"/></fig></sec><sec><title>2.3 Lithium-Ion Full-Cells:
+ZnFe<sub>2</sub>O<sub>4</sub>-C/LiFePO<sub>4</sub>-CNT</title><p>Here, different types of ZFO/LFP-CNT lithium-ion cells are presented with an average
+ZFO/LFP active mass ratio of 0.67. Despite the oversized cathode, the substantially
+lower specific capacity of LFP results in a positive to negative capacity ratio of
+&#x02248;0.22 (calculated according to the practical capacities of the two active
+materials, i.e., about 160 mAh g<sup>&#x02212;1</sup> for LFP, obtained at the
+10<sup>th</sup> cycle at C/5; and 1070 mAh g<sup>&#x02212;1</sup> for ZFO, obtained
+at the 20<sup>th</sup> cycle at C/10). Hence, the LFP-CNT cathodes in principle limit
+the capacity of all cells. Overall, three kinds of full-cells were assembled with
+fresh LFP-CNT cathodes and pre-formed ZFO anodes. With respect to the lithiation
+degree of the negative electrode, the cells are labeled as follows:
+&#x0201c;ZFO-deLi/LFP-CNT&#x0201d; (fully de-lithiated anode),
+&#x0201c;ZFO-200/LFP-CNT&#x0201d; (anode doped with 200 mAh g<sup>&#x02212;1</sup>) and
+&#x0201c;ZFO-600/LFP-CNT&#x0201d; (anode doped with 600 mAh g<sup>&#x02212;1</sup>).
+Although the doping leads to increased positive to negative capacity ratios (ZFO-200
+and ZFO-600 have a practical capacity of &#x02248;870 mAh g<sup>&#x02212;1</sup> and
+470 mAh g<sup>&#x02212;1</sup>, respectively), this remains considerably lower than
+the unity (i.e., 0.28 and 0.51 for ZFO-200/LFP-CNT and ZFO-600/LFP-CNT, respectively)
+and, therefore, all devices are still cathode limited. The performances of this novel
+type of battery have been investigated by galvanostatic cycling with current
+densities ranging from 0.05 to 6 mA cm<sup>&#x02212;2</sup>. Given the different
+capacities and active material mass loadings of the individual electrodes, the
+current effectively applied to the cells are also reported in A g<sup>&#x02212;1</sup>
+and C-rate with respect to both anode and cathode (see <bold>Table</bold>
+<xref ref-type="table" rid="tbl1"><bold>1</bold></xref>).</p><table-wrap id="tbl1" position="float"><label>Table 1</label><caption><p>Conversion between current densities applied to the full-cells and the
+respective values given as C rate and A g<sup>&#x02212;1</sup> related to both
+the anode (ZFO) and cathode (LFP) active material</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left" rowspan="1" colspan="1">Current applied to the full-cell</th><th align="center" colspan="2" rowspan="1">ZFO (<italic>C</italic><sub>th</sub>: 1000
+mAh g<sup>&#x02212;1</sup>)<hr/></th><th align="center" colspan="2" rowspan="1">LFP (<italic>C</italic><sub>th</sub>: 170 mAh
+g<sup>&#x02212;1</sup>)<hr/></th></tr><tr><th align="left" rowspan="1" colspan="1">[mA cm<sup>&#x02212;2</sup>]</th><th align="center" rowspan="1" colspan="1">[A g<sup>&#x02212;1</sup>]</th><th align="center" rowspan="1" colspan="1">[C]</th><th align="center" rowspan="1" colspan="1">[A g<sup>&#x02212;1</sup>]</th><th align="center" rowspan="1" colspan="1">[C]</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">0.1</td><td align="center" rowspan="1" colspan="1">0.08</td><td align="center" rowspan="1" colspan="1">0.08</td><td align="center" rowspan="1" colspan="1">0.05</td><td align="center" rowspan="1" colspan="1">0.32</td></tr><tr><td align="left" rowspan="1" colspan="1">0.5</td><td align="center" rowspan="1" colspan="1">0.41</td><td align="center" rowspan="1" colspan="1">0.41</td><td align="center" rowspan="1" colspan="1">0.27</td><td align="center" rowspan="1" colspan="1">1.59</td></tr><tr><td align="left" rowspan="1" colspan="1">1</td><td align="center" rowspan="1" colspan="1">0.82</td><td align="center" rowspan="1" colspan="1">0.82</td><td align="center" rowspan="1" colspan="1">0.54</td><td align="center" rowspan="1" colspan="1">3.19</td></tr><tr><td align="left" rowspan="1" colspan="1">2</td><td align="center" rowspan="1" colspan="1">1.63</td><td align="center" rowspan="1" colspan="1">1.63</td><td align="center" rowspan="1" colspan="1">1.09</td><td align="center" rowspan="1" colspan="1">6.41</td></tr><tr><td align="left" rowspan="1" colspan="1">3</td><td align="center" rowspan="1" colspan="1">2.45</td><td align="center" rowspan="1" colspan="1">2.45</td><td align="center" rowspan="1" colspan="1">1.63</td><td align="center" rowspan="1" colspan="1">9.61</td></tr><tr><td align="left" rowspan="1" colspan="1">6</td><td align="center" rowspan="1" colspan="1">4.89</td><td align="center" rowspan="1" colspan="1">4.89</td><td align="center" rowspan="1" colspan="1">3.26</td><td align="center" rowspan="1" colspan="1">19.23</td></tr></tbody></table></table-wrap><p><bold>Figure</bold>
+<xref ref-type="fig" rid="fig03">3</xref>a displays the voltage profiles of the
+full-cells during the first charge/discharge cycles at a very low current (i.e., 0.1
+mA cm<sup>&#x02212;1</sup>). As expected, the partial lithiation of the negative
+electrode has a clear influence on the shape of the curves, which, in the case of
+ZFO-200/LFP-CNT and ZFO-600/LFP-CNT, show the typical plateau of ZFO at 1 V
+(lithiation) and 1.5 V (de-lithiation) vs. Li/Li<sup>+</sup>. The full-cell
+employing the ZFO-deLi anode displays a much steeper voltage profile instead.
+Besides, the aspect appearing most noteworthy is the influence of the negative
+electrode doping level on the average discharge voltage of the cell. While the
+ZFO-deLi/LFP-CNT cell has a relatively low cell voltage of 1.58 V, the ZFO-200 and
+ZFO-600 anodes operate in a more negative voltage range, thus enabling a considerable
+increase of the cell discharge potential up to 1.69 V and 2.12 V, respectively.</p><fig id="fig03" position="float"><label>Figure 3</label><caption><p>Electrochemical performance of ZFO/LFP-CNT full-cells employing ZFO anodes with
+different degrees of lithiation. a) Cell voltage profiles for such cells upon
+galvanostatic cycling at 0.1 mA cm<sup>&#x02212;2</sup> and influence of the
+lithiation degree on the average discharge voltage. b) Rate capability as
+function of the applied current density (from 0.1 to 6 mA
+cm<sup>&#x02212;2</sup>) and c) relative voltage profiles of the individual
+electrodes and their influence on the overall cell voltage curves. Specific
+discharge capacity values are referred to the active material amount of both
+the limiting cathode (i.e., LFP) and the overall cell (i.e., TOT =
+LFP+ZFO).</p></caption><graphic xlink:href="aenm0004-0001-f3"/></fig><p>The capacity delivered by the full-cells under increasing current density is reported
+in <xref ref-type="fig" rid="fig03">Figure 3b</xref>. All devices display an initial
+capacity increase upon the first 20 cycles. Such behavior closely resembles the
+results observed in Figure <xref ref-type="fig" rid="fig01">1</xref>b and, therefore,
+can be attributed to the initial activation of the LFP-CNT cathode. The capacity
+values obtained at the 20<sup>th</sup> cycle approach the practical capacity of the
+positive electrode, accounting for specific capacities ranging from 93 to 101 mAh
+g<sup>&#x02212;1</sup> depending on the active material mass loading of both
+electrodes. The different lithiation degree of the ZFO anodes does not appear to
+considerably affect the rate capability of the full-cells. All cells deliver more
+than 50% of the initial capacity for the highest applied current density of 6
+mA cm<sup>&#x02212;2</sup>. It is worth to notice that such a current density
+corresponds to 4.89C and 19.23C for ZFO and LFP, respectively. Differently from the
+ZFO-200/LFP-CNT and ZFO-600/LFP-CNT cells, which show very stable capacity values at
+any current density, the ZFO-deLi/LFP-CNT cell seems to suffer of a certain capacity
+fading when the current density exceeds 0.5 mA cm<sup>&#x02212;2</sup>. At such
+current densities, as clearly noticeable from the voltage profiles displayed in <xref ref-type="fig" rid="fig03">Figure 3</xref>c, the ZFO-deLi anode becomes limiting
+during the cell discharge. In fact, due to the increasing polarization, the potential
+of the fully de-lithiated negative electrode easily reaches the upper cut-off
+potential (i.e., 2.8 V vs. Li/Li<sup>+</sup>, equivalent to the LFP-CNT lower
+cut-off), leading to the incomplete utilization of the positive electrode and,
+subsequently, to a progressive capacity fading at elevated rates. This phenomenon is
+not observed in ZFO-200/LFP-CNT and ZFO-600/LFP-CNT cells for which the anodes,
+because of the introduction of a defined amount of Li, operates in a more negative
+voltage window, thus buffering the voltage increase caused by polarization. In
+<bold>Figure</bold>
+<xref ref-type="fig" rid="fig04">4</xref>a, the average discharge voltage of the
+investigated cells is plotted as a function of the applied current density. Up to 1
+mA cm<sup>&#x02212;2</sup> the doping turns out to be a generally effective strategy
+for raising the full-cell discharge potential. However, in the case of the
+ZFO-200/LFP-CNT cell, when the load is increased, the average voltage drops to values
+comparable (and even lower) to those of the ZFO-deLi/LFP-CNT cell.</p><fig id="fig04" position="float"><label>Figure 4</label><caption><p>a) Effect of the current density on the average discharge voltage of
+ZFO/LFP-CNT cells and b) Ragone-like plot displaying their specific energy and
+power (referred to the total active material amount, i.e., LFP+ZFO).</p></caption><graphic xlink:href="aenm0004-0001-f4"/></fig><p>Although it might appear surprising, this is a direct consequence of the previously
+mentioned incomplete utilization of the cathode material in the ZFO-deLi/LFP-CNT cell
+caused by the limiting anode during discharge. As a matter of fact, the positive
+electrode voltage does not approach its lower limit during the cell discharge (see
+left plot in <xref ref-type="fig" rid="fig03">Figure 3</xref>c). This corresponds to
+a higher average cell voltage, but lower capacity. For the cell containing the
+ZFO-200 negative electrode, both electrodes are approaching their full discharge
+(center plot of <xref ref-type="fig" rid="fig03">Figure 3</xref>c) and thus the
+LFP-CNT electrode voltage is steeply decreasing toward the end of the discharge. This
+means that the average voltage of the LFP electrode is lower than in the previous
+cell, which results in a lower average cell voltage. The cell capacity, however, is
+higher.</p><p>Differently, the discharge voltage of the ZFO-600/LFP-CNT cell is remarkably retained
+upon increasing the current density because of the large amount of lithium stored in
+ZFO-600, resulting in a lower average anode voltage. Even for the maximum applied
+current density of 6 mA cm<sup>&#x02212;2</sup>, it is 0.43 V higher than that of the
+ZFO-deLi/LFP-CNT cell. Such phenomenon would suggest faster kinetics of the alloying
+mechanism compared to the conversion mechanism. As clearly shown by the Ragone-like
+plot, displayed in <xref ref-type="fig" rid="fig04">Figure 4b</xref>, the
+substantially higher cell voltage results in a remarkable improvement in terms of
+full-cell specific energy. In fact, while all cells display very high specific power,
+even exceeding 3 kW kg<sup>&#x02212;1</sup> (i.e., 3.02 kW kg<sup>&#x02212;1</sup> and
+3.72 kW kg<sup>&#x02212;1</sup> at 6 mA cm<sup>&#x02212;2</sup> for ZFO-deLi/LFP-CNT
+and ZFO-600/LFP-CNT, respectively), only the ZFO-600/LFP-CNT has a considerably
+higher specific energy. Specifically, the doping with 600 mAh g<sup>&#x02212;1</sup>
+leads to a gain in specific energy of about 37&#x02013;40% compared to the
+other two cells, independently from the applied current. The innovative combination
+ZFO/LFP-CNT we propose in this work demonstrates therefore incredibly promising
+features. This cell chemistry displays maximum power values similar to those of
+lithium-ion capacitors (LIC), while offering considerably higher specific energies.
+To the best of our knowledge, the highest specific energies reported for LIC have
+been achieved by graphite/AC systems and, referred to the weights of the active
+materials, barely exceed 100 Wh kg<sup>&#x02212;1</sup>.<xref rid="b30" ref-type="bibr">30</xref> So far, the highest value (125 Wh kg<sup>&#x02212;1</sup>) was
+obtained by Kim et al., using an artificial graphite anode,<xref rid="b31" ref-type="bibr">31</xref> which is considerably lower than the values provided by the
+ZFO/LFP-CNT cells. In fact, although we are aware that comparing specific energies
+obtained at different power/current is not fully appropriate, we do believe that the
+value of 202 Wh kg<sup>&#x02212;1</sup> (at 0.1 mA cm<sup>&#x02212;2</sup>) shown by
+the ZFO-600/LFP-CNT represents a remarkable achievement, testifying the great
+potential of such novel battery chemistry. The ZFO/LFP-CNT cells (as well as most
+lithium-ion capacitors) contain a not negligible amount of carbon and binder.
+However, the specific capacity values are still remarkable (see detailed values
+displayed in <bold>Table</bold>
+<xref ref-type="table" rid="tbl2">2</xref>). Indeed, considering the total mass of
+the electrodes (including active materials, carbon and binder), the ZFO-600/LFP-CNT
+cells deliver 132 Wh kg<sup>&#x02212;1</sup>. Such a value accounts for an improvement
+of almost 30% with respect to the 103.8 Wh kg<sup>&#x02212;1</sup> reported by
+Khomenko et al.<xref rid="b32" ref-type="bibr">32</xref></p><table-wrap id="tbl2" position="float"><label>Table 2</label><caption><p>Specific energy of ZFO/LFP-CNT cells obtained from galvanostatic discharge at
+0.1 mA cm<sup>&#x02212;2</sup>. The values are calculated with respect to the
+active material (AM), active material and carbon (AM+C) and active
+material, carbon and binder (AM+C+B) weights of both
+electrodes</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left" rowspan="1" colspan="1">Full cell</th><th align="center" colspan="3" rowspan="1">Specific Energy [Wh
+kg<sup>&#x02212;1</sup>]<hr/></th></tr><tr><th rowspan="1" colspan="1"/><th align="center" rowspan="1" colspan="1">AM</th><th align="center" rowspan="1" colspan="1">AM+C</th><th align="center" rowspan="1" colspan="1">AM+C+B</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">ZFO-deLi/LFP-CNT</td><td align="center" rowspan="1" colspan="1">148</td><td align="center" rowspan="1" colspan="1">105</td><td align="center" rowspan="1" colspan="1">96</td></tr><tr><td align="left" rowspan="1" colspan="1">ZFO-200/LFP-CNT</td><td align="center" rowspan="1" colspan="1">158</td><td align="center" rowspan="1" colspan="1">112</td><td align="center" rowspan="1" colspan="1">103</td></tr><tr><td align="left" rowspan="1" colspan="1">ZFO-600/LFP-CNT</td><td align="center" rowspan="1" colspan="1">202</td><td align="center" rowspan="1" colspan="1">144</td><td align="center" rowspan="1" colspan="1">132</td></tr></tbody></table></table-wrap><p>A further key feature of the ZFO/LFP-CNT cells is their impressive cycling stability.
+In fact, as shown in <bold>Figure</bold>
+<xref ref-type="fig" rid="fig05">5</xref>a, such cells are able to sustain 10 000
+galvanostatic cycles at a current density of 3 mA cm<sup>&#x02212;2</sup> (i.e., 9.61C
+for LFP and 2.45C for ZFO) with rather limited capacity fading. After a few
+stabilization cycles, the cells deliver rather similar capacities comprised between
+42 and 48 mAh g<sup>&#x02212;1</sup><sub>TOT</sub> (corresponding to 75&#x02013;86 mAh
+g<sup>&#x02212;1</sup><sub>LFP</sub>) for the 10<sup>th</sup> discharge. In the
+following cycles, however, while for ZFO-deLi/LFP-CNT a rather rapid decrease in
+capacity after 1000 cycles is observed, the cells assembled with doped anodes display
+considerably stable capacity retentions. After 10,000 cycles, ZFO-200/LFP-CNT and
+ZFO-600/LFP-CNT still deliver specific capacities of respectively 33 and 41 mAh
+g<sup>&#x02212;1</sup><sub>TOT</sub> (i.e., 60 and 74 mAh
+g<sup>&#x02212;1</sup><sub>LFP</sub>). In regard to the initial capacities
+(considered at the 10<sup>th</sup> cycle) such values account for a capacity
+retention of 79% and 85% for ZFO-200/LFP-CNT and ZFO-600/LFP-CNT,
+respectively.</p><fig id="fig05" position="float"><label>Figure 5</label><caption><p>a) Long-term cycling stability applying a high current density of 3 mA
+cm<sup>&#x02212;2</sup> and the coulombic efficiency of ZFO/LFP-CNT
+full-cells employing anodes with different degrees of lithiation. b) Selected
+electrode and cell voltage profiles evolution upon cycling. Specific capacity
+values are referred to the active material amount of both the limiting cathode
+(i.e., LFP) and the sum of the anode and cathode (i.e., TOT =
+LFP+ZFO).</p></caption><graphic xlink:href="aenm0004-0001-f5"/></fig><p>As expected, the capacity fading is generally accompanied by an increase in
+polarization between charge and discharge. From the selected voltage profiles
+displayed in <xref ref-type="fig" rid="fig05">Figure 5b</xref> it is evident that the
+ZFO anode is the primary cause of such increase. Structural changes in the active
+material, as well as passivation of the electrode surface might be responsible for
+this behavior. In any case, such processes seem to take place mainly upon the first
+5000 cycles. While this applies strictly to ZFO-200/LFP-CNT and ZFO-600/LFP-CNT, the
+performance of the ZFO-deLi/LFP-CNT cell appears to be additionally affected by a
+continuous capacity loss of the positive electrode. Considering that the cathode is
+in this cell the only lithium source besides the electrolyte, it is reasonable to
+attribute such decay to the lithium depletion in LFP. This phenomenon is avoided (or
+at least significantly delayed) in the other two cells within which, due to the
+partial lithiation of the ZFO anodes, a Li reservoir was generated, which is able to
+buffer the irreversible charge consumption upon cycling. Apart from this, no
+particular ageing phenomenon appears to have a dramatic effect on the performance of
+ZFO/LFP-CNT cells. This finding is strongly supported by the impedance spectra
+displayed in <bold>Figure</bold>
+<xref ref-type="fig" rid="fig06">6</xref>. Indeed, the Nyquist plots recorded after
+10 000 cycles highly resemble those of the fresh cells. No additional semicircles or
+peculiar features are detected, although, of course, a certain increase of the
+overall cell impedance is observed. As shown in <xref ref-type="fig" rid="fig06">Figure 6</xref> insets, this is mostly due to: i) higher electrolyte resistance
+(identified by the high frequency intercept with the Z<sub>real</sub> axis) and ii)
+contact/charge transfer resistance (evidenced by the diameter of the high frequency
+semicircle). However, such increases are, in our opinion, acceptable for cells
+operating for such a large number of cycles.</p><fig id="fig06" position="float"><label>Figure 6</label><caption><p>Impedance spectra of fresh and cycled ZFO/LFP-CNT full-cells. The insets show
+in detail the spectra in the medium-high frequency range.</p></caption><graphic xlink:href="aenm0004-0001-f6"/></fig><p>After recording the impedance spectra, the same full cells that underwent 10 000
+cycles at 3 mA cm<sup>&#x02212;2</sup>, have been further cycled at low currents (see
+<bold>Figure</bold>
+<xref ref-type="fig" rid="fig07">7</xref>). Upon 50 cycles at 0.5 mA
+cm<sup>&#x02212;2</sup> ZFO-deLi/LFP-CNT, ZFO-200/LFP-CNT, and ZFO-600/LFP-CNT
+showed stable capacities of 63, 62, and 68 mAh g<sup>&#x02212;1</sup><sub>TOT</sub>.
+In regard to the values obtained at the same current before the stability tests (see
+<xref ref-type="fig" rid="fig03">Figure 3</xref>b), these numbers results in
+remarkable capacity retentions of 73%, 72%, and 76% for
+ZFO-deLi/LFP-CNT, ZFO-200/LFP-CNT, and ZFO-600/LFP-CNT, respectively.</p><fig id="fig07" position="float"><label>Figure 7</label><caption><p>Galvanostatic cycling at 0.5 mA cm<sup>&#x02212;2</sup> after long cycling at
+high current. Specific capacity values are referred to the active material
+amount of both the limiting cathode (i.e., LFP) and the overall cell (i.e., TOT
+= LFP+ZFO).</p></caption><graphic xlink:href="aenm0004-0001-f7"/></fig><p>Finally, the effect of the electrochemical studies on the morphology of the ZFO
+anodes was investigated using SEM. SEM images of pristine and cycled electrodes (with
+different initial levels of Li doping) are displayed in <bold>Figure</bold>
+<xref ref-type="fig" rid="fig08">8</xref>. At a first glance, no dramatic differences
+can be observed for pristine and cycled electrodes. This somehow confirms the
+previously mentioned (see <xref ref-type="fig" rid="fig06">Figure 6</xref>) absence
+of any particular ageing phenomenon. Nevertheless, a more detailed look reveals some
+peculiar features appearing on the electrodes cycled at high current rates for 10 000
+cycles. As shown in <xref ref-type="fig" rid="fig08">Figure 8</xref>b, the prolonged
+operation of ZFO-deLi at potentials above 1 V vs. Li/Li<sup>+</sup> (resulting
+on a main storage of Li through the conversion mechanism) leads to the formation of
+large agglomerates, which may be responsible for the voltage profile shape change
+previously mentioned (see <xref ref-type="fig" rid="fig05">Figure 5</xref>b, left
+panel). As the anode working potential decreases (in-line with the remaining amount
+of lithium within the anode after the doping), these clusters become smaller (i.e.,
+ZFO-200, see <xref ref-type="fig" rid="fig08">Figure 8</xref>c) and practically
+disappear in ZFO-600 (<xref ref-type="fig" rid="fig08">Figure 8</xref>d), for which
+the Li is presumably mostly stored via the alloying mechanism with Zn.</p><fig id="fig08" position="float"><label>Figure 8</label><caption><p>SEM images of ZFO anodes at different magnifications. Comparison between: a)
+pristine ZFO negative electrodes and b) ZFO-deLi, c) ZFO-200 and d) ZFO-600
+electrodes after 10 000 cycles at 3 mA cm<sup>&#x02212;2</sup>. The white dashed
+lines highlight the regions more affected by the agglomeration of the ZFO
+nanoparticles.</p></caption><graphic xlink:href="aenm0004-0001-f8"/></fig></sec></sec><sec><title>3 Conclusions</title><p>In this work we proposed a novel battery configuration for high power applications. For
+the first time we have demonstrated, as a proof of concept, the highly promising
+features of lithium-ion full-cells combining carbon-coated ZnFe<sub>2</sub>O<sub>4</sub>
+anodes and composite LiFePO<sub>4</sub>-multi walled carbon nanotubes cathodes.
+ZFO/LFP-CNT cells showed remarkable rate capability retaining more than 50% of
+the initial capacity at C rates as high as &#x02248;20C with respect to the limiting
+cathode. Moreover, a partial lithiation of the ZFO anode does not only enable an
+enhanced cycling stability of the full-cell, but does also result in an increased
+average full-cell discharge voltage while not substantially affecting the high rate
+performance. Among the investigated cells, the battery employing the negative electrode
+with the highest lithiation degree (600 mAh g<sup>&#x02212;1</sup>, i.e.,
+ZFO-600/LFP-CNT) showed the best performance, delivering a maximum specific energy and
+power of 202 Wh kg<sup>&#x02212;1</sup> and 3.72 kW kg<sup>&#x02212;1</sup>, respectively
+(these values refer to the total active material amount of both electrodes). Due to the
+high reversibility of this system, such cells show a stable cycling performance at high
+current (3 mA cm<sup>&#x02212;2</sup>, i.e., &#x02248;10C with respect to LFP), showing a
+capacity retention of 85% after 10 000 cycles. In addition, 76% of the
+initial capacity is recovered when cycled subsequently applying lower current densities
+of, e.g., 0.5 mA cm<sup>&#x02212;2</sup>. Beside the remarkable performance, a great
+advantage of this novel high power battery is represented by its environmental friendly
+nature. Zn and Fe are benign and highly abundant elements and both electrodes are
+produced via aqueous processing employing a cellulose-based binder.</p></sec><sec><title>4 Experimental Section</title><p><italic>Electrode Preparation</italic>: Positive composite electrodes (labelled LFP-CNT)
+were prepared by processing all components in water. These were: carbon-coated
+LiFePO<sub>4</sub> (C<sub>th</sub>: 170 mAh g<sup>&#x02212;1</sup>; LFP P2,
+S&#x000fc;dchemie/Clariant, Germany), multiwalled carbon nanotubes (MWCNT Nanocyl-3101,
+Nanocyl, Belgium) and Na-carboxymethyl cellulose (CMC, Walocel CRT 2000PA, Dow Wolff
+Cellulosics, Germany), in the weight ratio 60:30:10. CMC was firstly dissolved in
+milli-Q deionized water to obtain a 1 wt% solution. Afterwards, MWCNT were added
+to the binder solution and, in order to promote their dispersion, such an aqueous
+mixture was treated in an ultrasonic bath for 2 h. Subsequently, LFP was added to the
+obtained homogeneous slurry, further stirred with a magnetic stirrer for 2 h, and then
+casted onto aluminium foil by the doctor blade technique (wet film thickness of 400
+&#x003bc;m). Negative electrodes (labelled ZFO) were also processed in water by mixing
+carbon-coated ZnFe<sub>2</sub>O<sub>4</sub> (a detailed description of the synthesis is
+given in ref. <xref rid="b28" ref-type="bibr">28</xref>, <italic>C</italic><sub>th</sub>
+&#x02248;1000 mAh g<sup>&#x02212;1</sup>), conductive carbon (Super C65, TIMCAL,
+Switzerland), and CMC in the weight ratio 75:20:5. The thus obtained mixture was ball
+milled for 2 h and the resulting slurry was then cast on dendritic copper foil (Schlenk,
+wet film thickness: 120 &#x003bc;m). The electrode sheets were firstly dried at room
+temperature and then transferred to an oven set at 80 &#x000b0;C for further drying
+overnight. Positive and negative electrodes (with a mass loading of &#x02248;1.8 and 1.2
+mg cm<sup>&#x02212;2</sup>, respectively) were then punched in disks (diameter: 12 mm)
+and dried for additional 12 h under vacuum at 180 &#x000b0;C prior to the electrochemical
+and morphological characterization.</p><p><italic>Electrodes and Cells Characterization</italic>: The electrochemical measurements
+were carried out in three electrode Swagelok-type cells assembled in an Ar-filled glove
+box (MBraun, Germany; oxygen and water content &#x0003c; 0.1 ppm). Polypropylene fleeces
+(Freudenberg FS 2226) were used as separators and drenched with 100 &#x003bc;L of
+electrolyte (1 M LiPF<sub>6</sub> in ethylene carbonate (EC) and diethylcarbonate (DEC)
+mixed in a 3:7 volume ratio). Half-cells, comprising battery grade metallic Li (Rockwood
+Lithium, Germany) serving as counter and reference electrodes, were used for: i)
+preliminary investigations on the LFP-CNT cathode performance, and ii) the ZFO anodes
+pre-formation/doping. The detailed characterization of the negative electrodes in
+half-cell configuration was already reported in detail by Bresser et al.<xref rid="b28" ref-type="bibr">28</xref> LFP-CNT composite electrodes were characterized
+by galvanostatic cycling with potential limitation (2.8&#x02013;4.2 V vs.
+Li/Li<sup>+</sup>) at current rates ranging from C/5 to 20C (i.e., from 0.034
+to 3.4 A g<sup>&#x02212;1</sup>). For the ZFO-based negative electrodes a pre-formation
+treatment in half-cells was performed, which was constituted of 20 galvanostatic cycles
+in the potential range 3&#x02013;0.05 V vs. Li/Li<sup>+</sup> at C/10 (i.e., 0.1 A
+g<sup>&#x02212;1</sup>) and, for the partially lithiated ones, of a further reduction
+(21<sup>st</sup> cycle) limited to 200 mAh g<sup>&#x02212;1</sup> (ZFO-200) or 600 mAh
+g<sup>&#x02212;1</sup> (ZFO-600). Prior to their assembly in full-cells, the
+pre-formed anodes were disassembled in the glove box and rinsed with fresh electrolyte.
+In the full-cells, a reference electrode (metallic Li) was also employed for monitoring
+the individual electrode potentials. Upon galvanostatic cycling the operational
+potential windows for these were limited to 4.2&#x02013;2.8 V vs.
+Li/Li<sup>+</sup> for the LFP-CNT cathode and 2.8&#x02013;0.05 V vs.
+Li/Li<sup>+</sup> for the ZFO anode. Hence, the maximum cell voltage window
+allowed was 4.15 V. Rate capability tests were performed at current densities as high as
+6 mA cm<sup>&#x02212;2</sup>, corresponding to almost 20C for LFP-CNT and 5C for ZFO.
+Impedance spectra of fresh and cycled (after 10 000 cycles) cells were collected under
+rest conditions (open circuit potential) in the frequency range comprised between 500
+kHz and 10 mHz, with a sinusoidal amplitude of 5 mV. All electrochemical measurements
+were performed by means of a programmable multi-channel potentiostat-galvanostat (VMP3,
+Biologic Science Instruments) in a climatic chamber (KBF115, Binder GmbH) at 20
+&#x000b0;C &#x000b1; 2 &#x000b0;C. The morphology of both fresh and aged electrodes was
+also investigated by means of SEM. The cells containing the aged electrodes were
+disassembled in an Ar-filled glove box (MBraun), and the electrodes were carefully
+rinsed with dimethyl carbonate (DMC). In order to avoid contact with air and moisture,
+the samples have been transferred to the microscope using a homemade vacuum-sealed
+sample holder. Electrodes micrographs were acquired with a Carl Zeiss AURIGA Scanning
+Electron Microscope equipped with a field emission electron gun as electron source and
+an in-lens detector. The acceleration voltage was set to 3 kV.</p></sec></body><back><ack><p>The authors would like to acknowledge the University of M&#x000fc;nster, the
+Bundesministerium f&#x000fc;r Bildung und Forschung (BMBF) within the project
+&#x0201c;IES, Innovative Elektrochemische Superkondensatoren&#x0201d; (contract number
+03EK3010), and the European Commission within the &#x0201c;ORION&#x0201d; project (229036)
+under the Seventh Framework Programme (7<sup>th</sup> FWP) for the financial
+support.</p></ack><ref-list><ref id="b1"><label>[1]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Tarascon</surname><given-names>JM</given-names></name><name><surname>Armand</surname><given-names>M</given-names></name></person-group><source>Nature</source><year>2001</year><volume>414</volume><fpage>359</fpage><pub-id pub-id-type="pmid">11713543</pub-id></element-citation></ref><ref id="b2"><label>[2]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Scrosati</surname><given-names>B</given-names></name><name><surname>Garche</surname><given-names>J</given-names></name></person-group><source>J. Power Sources</source><year>2010</year><volume>195</volume><fpage>2419</fpage></element-citation></ref><ref id="b3"><label>[3]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wang</surname><given-names>Y</given-names></name><name><surname>Cao</surname><given-names>G</given-names></name></person-group><source>Adv. Mater</source><year>2008</year><volume>20</volume><fpage>2251</fpage></element-citation></ref><ref id="b4"><label>[4]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Su</surname><given-names>DS</given-names></name><name><surname>Schl&#x000f6;gl</surname><given-names>R</given-names></name></person-group><source>ChemSusChem</source><year>2010</year><volume>3</volume><fpage>136</fpage><pub-id pub-id-type="pmid">20157927</pub-id></element-citation></ref><ref id="b5"><label>[5]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Xu</surname><given-names>G</given-names></name><name><surname>Li</surname><given-names>F</given-names></name><name><surname>Tao</surname><given-names>Z</given-names></name><name><surname>Wei</surname><given-names>X</given-names></name><name><surname>Liu</surname><given-names>Y</given-names></name><name><surname>Li</surname><given-names>X</given-names></name><name><surname>Ren</surname><given-names>Z</given-names></name><name><surname>Shen</surname><given-names>G</given-names></name><name><surname>Han</surname><given-names>G</given-names></name></person-group><source>J. Power Sources</source><year>2014</year><volume>246</volume><fpage>696</fpage></element-citation></ref><ref id="b6"><label>[6]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hosono</surname><given-names>E</given-names></name><name><surname>Kudo</surname><given-names>T</given-names></name><name><surname>Honma</surname><given-names>I</given-names></name><name><surname>Matsuda</surname><given-names>H</given-names></name><name><surname>Zhou</surname><given-names>H</given-names></name></person-group><source>Nano Lett</source><year>2009</year><volume>9</volume><fpage>1045</fpage><pub-id pub-id-type="pmid">19209916</pub-id></element-citation></ref><ref id="b7"><label>[7]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kucinskis</surname><given-names>G</given-names></name><name><surname>Bajars</surname><given-names>G</given-names></name><name><surname>Kleperis</surname><given-names>J</given-names></name></person-group><source>J. Power Sources</source><year>2013</year><volume>240</volume><fpage>66</fpage></element-citation></ref><ref id="b8"><label>[8]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kavan</surname><given-names>L</given-names></name><name><surname>Bacsa</surname><given-names>R</given-names></name><name><surname>Tunckol</surname><given-names>M</given-names></name><name><surname>Serp</surname><given-names>P</given-names></name><name><surname>Zakeeruddin</surname><given-names>SM</given-names></name><name><surname>Le Formal</surname><given-names>F</given-names></name><name><surname>Zukalova</surname><given-names>M</given-names></name><name><surname>Graetzel</surname><given-names>M</given-names></name></person-group><source>J. Power Sources</source><year>2010</year><volume>195</volume><fpage>5360</fpage></element-citation></ref><ref id="b9"><label>[9]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Varzi</surname><given-names>A</given-names></name><name><surname>T&#x000e4;ubert</surname><given-names>C</given-names></name><name><surname>Wohlfahrt-Mehrens</surname><given-names>M</given-names></name></person-group><source>Electrochim. Acta</source><year>2012</year><volume>78</volume><fpage>17</fpage></element-citation></ref><ref id="b10"><label>[10]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Qin</surname><given-names>G</given-names></name><name><surname>Wu</surname><given-names>Q</given-names></name><name><surname>Zhao</surname><given-names>J</given-names></name><name><surname>Ma</surname><given-names>Q</given-names></name><name><surname>Wang</surname><given-names>C</given-names></name></person-group><source>J. Power Sources</source><year>2014</year><volume>248</volume><fpage>588</fpage></element-citation></ref><ref id="b11"><label>[11]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Liu</surname><given-names>X-M</given-names></name><name><surname>Huang</surname><given-names>ZD</given-names></name><name><surname>Oh</surname><given-names>SW</given-names></name><name><surname>Zhang</surname><given-names>B</given-names></name><name><surname>Ma</surname><given-names>P-C</given-names></name><name><surname>Yuen</surname><given-names>MMF</given-names></name><name><surname>Kim</surname><given-names>J-K</given-names></name></person-group><source>Compos. Sci. Technol</source><year>2012</year><volume>72</volume><fpage>121</fpage></element-citation></ref><ref id="b12"><label>[12]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hassoun</surname><given-names>J</given-names></name><name><surname>Derrien</surname><given-names>G</given-names></name><name><surname>Panero</surname><given-names>S</given-names></name><name><surname>Scrosati</surname><given-names>B</given-names></name></person-group><source>Adv. Mater</source><year>2008</year><volume>20</volume><fpage>3169</fpage></element-citation></ref><ref id="b13"><label>[13]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Bresser</surname><given-names>D</given-names></name><name><surname>Mueller</surname><given-names>F</given-names></name><name><surname>Buchholz</surname><given-names>D</given-names></name><name><surname>Paillard</surname><given-names>E</given-names></name><name><surname>Passerini</surname><given-names>S</given-names></name></person-group><source>Electrochim. Acta</source><year>2013</year><comment>, DOI 10.1016/j.electacta.2013.09.007</comment></element-citation></ref><ref id="b14"><label>[14]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Taberna</surname><given-names>PL</given-names></name><name><surname>Mitra</surname><given-names>S</given-names></name><name><surname>Poizot</surname><given-names>P</given-names></name><name><surname>Simon</surname><given-names>P</given-names></name><name><surname>Tarascon</surname><given-names>J-M</given-names></name></person-group><source>Nat. Mater</source><year>2006</year><volume>5</volume><fpage>567</fpage><pub-id pub-id-type="pmid">16783360</pub-id></element-citation></ref><ref id="b15"><label>[15]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Li</surname><given-names>Y</given-names></name><name><surname>Tan</surname><given-names>B</given-names></name><name><surname>Wu</surname><given-names>Y</given-names></name></person-group><source>Nano Lett</source><year>2008</year><volume>8</volume><fpage>265</fpage><pub-id pub-id-type="pmid">18072799</pub-id></element-citation></ref><ref id="b16"><label>[16]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Naoi</surname><given-names>K</given-names></name><name><surname>Ishimoto</surname><given-names>S</given-names></name><name><surname>Isobe</surname><given-names>Y</given-names></name><name><surname>Aoyagi</surname><given-names>S</given-names></name></person-group><source>J. Power Sources</source><year>2010</year><volume>195</volume><fpage>6250</fpage></element-citation></ref><ref id="b17"><label>[17]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Wang</surname><given-names>GX</given-names></name><name><surname>Bradhurst</surname><given-names>DH</given-names></name><name><surname>Dou</surname><given-names>SX</given-names></name><name><surname>Liu</surname><given-names>HK</given-names></name></person-group><source>J. Power Sources</source><year>1999</year><volume>83</volume><fpage>156</fpage></element-citation></ref><ref id="b18"><label>[18]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Jaiswal</surname><given-names>A</given-names></name><name><surname>Horne</surname><given-names>CR</given-names></name><name><surname>Chang</surname><given-names>O</given-names></name><name><surname>Zhang</surname><given-names>W</given-names></name><name><surname>Kong</surname><given-names>W</given-names></name><name><surname>Wang</surname><given-names>E</given-names></name><name><surname>Chern</surname><given-names>T</given-names></name><name><surname>Doeff</surname><given-names>MM</given-names></name></person-group><source>J. Electrochem. Soc</source><year>2009</year><volume>156</volume><fpage>A1041</fpage></element-citation></ref><ref id="b19"><label>[19]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Hu</surname><given-names>X</given-names></name><name><surname>Huai</surname><given-names>Y</given-names></name><name><surname>Lin</surname><given-names>Z</given-names></name><name><surname>Suo</surname><given-names>J</given-names></name><name><surname>Deng</surname><given-names>Z</given-names></name></person-group><source>J. Electrochem. Soc</source><year>2007</year><volume>154</volume><fpage>A1026</fpage></element-citation></ref><ref id="b20"><label>[20]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Derrien</surname><given-names>G</given-names></name><name><surname>Hassoun</surname><given-names>J</given-names></name><name><surname>Panero</surname><given-names>S</given-names></name><name><surname>Scrosati</surname><given-names>B</given-names></name></person-group><source>Adv. Mater</source><year>2007</year><volume>19</volume><fpage>2336</fpage></element-citation></ref><ref id="b21"><label>[21]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Brutti</surname><given-names>S</given-names></name><name><surname>Hassoun</surname><given-names>J</given-names></name><name><surname>Scrosati</surname><given-names>B</given-names></name><name><surname>Lin</surname><given-names>C-Y</given-names></name><name><surname>Wu</surname><given-names>H</given-names></name><name><surname>Hsieh</surname><given-names>H-W</given-names></name></person-group><source>J. Power Sources</source><year>2012</year><volume>217</volume><fpage>72</fpage></element-citation></ref><ref id="b22"><label>[22]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Liu</surname><given-names>B</given-names></name><name><surname>Zhang</surname><given-names>J</given-names></name><name><surname>Wang</surname><given-names>X</given-names></name><name><surname>Chen</surname><given-names>G</given-names></name><name><surname>Chen</surname><given-names>D</given-names></name><name><surname>Zhou</surname><given-names>C</given-names></name><name><surname>Shen</surname><given-names>G</given-names></name></person-group><source>Nano Lett</source><year>2012</year><volume>12</volume><fpage>3005</fpage><pub-id pub-id-type="pmid">22607457</pub-id></element-citation></ref><ref id="b23"><label>[23]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>NuLi</surname><given-names>Y-N</given-names></name><name><surname>Chu</surname><given-names>Y-Q</given-names></name><name><surname>Qin</surname><given-names>Q-Z</given-names></name></person-group><source>J. Electrochem. Soc</source><year>2004</year><volume>151</volume><fpage>A1077</fpage></element-citation></ref><ref id="b24"><label>[24]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sharma</surname><given-names>Y</given-names></name><name><surname>Sharma</surname><given-names>N</given-names></name><name><surname>Rao</surname><given-names>GVS</given-names></name><name><surname>Chowdari</surname><given-names>BVR</given-names></name></person-group><source>Electrochim. Acta</source><year>2008</year><volume>53</volume><fpage>2380</fpage></element-citation></ref><ref id="b25"><label>[25]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Guo</surname><given-names>X</given-names></name><name><surname>Lu</surname><given-names>X</given-names></name><name><surname>Fang</surname><given-names>X</given-names></name><name><surname>Mao</surname><given-names>Y</given-names></name><name><surname>Wang</surname><given-names>Z</given-names></name><name><surname>Chen</surname><given-names>L</given-names></name><name><surname>Xu</surname><given-names>X</given-names></name><name><surname>Yang</surname><given-names>H</given-names></name><name><surname>Liu</surname><given-names>Y</given-names></name></person-group><source>Electrochem. Commun</source><year>2010</year><volume>12</volume><fpage>847</fpage></element-citation></ref><ref id="b26"><label>[26]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Deng</surname><given-names>Y</given-names></name><name><surname>Zhang</surname><given-names>Q</given-names></name><name><surname>Tang</surname><given-names>S</given-names></name><name><surname>Zhang</surname><given-names>L</given-names></name><name><surname>Deng</surname><given-names>S</given-names></name><name><surname>Shi</surname><given-names>Z</given-names></name><name><surname>Chen</surname><given-names>G</given-names></name></person-group><source>Chem. Commun</source><year>2011</year><volume>47</volume><fpage>6828</fpage></element-citation></ref><ref id="b27"><label>[27]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Ding</surname><given-names>Y</given-names></name><name><surname>Yang</surname><given-names>Y</given-names></name><name><surname>Shao</surname><given-names>H</given-names></name></person-group><source>Electrochim. Acta</source><year>2011</year><volume>56</volume><fpage>9433</fpage></element-citation></ref><ref id="b28"><label>[28]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Bresser</surname><given-names>D</given-names></name><name><surname>Paillard</surname><given-names>E</given-names></name><name><surname>Kloepsch</surname><given-names>R</given-names></name><name><surname>Krueger</surname><given-names>S</given-names></name><name><surname>Fiedler</surname><given-names>M</given-names></name><name><surname>Schmitz</surname><given-names>R</given-names></name><name><surname>Baither</surname><given-names>D</given-names></name><name><surname>Winter</surname><given-names>M</given-names></name><name><surname>Passerini</surname><given-names>S</given-names></name></person-group><source>Adv. Energy Mater</source><year>2013</year><volume>3</volume><fpage>513</fpage></element-citation></ref><ref id="b29"><label>[29]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Sotowa</surname><given-names>C</given-names></name><name><surname>Origi</surname><given-names>G</given-names></name><name><surname>Takeuchi</surname><given-names>M</given-names></name><name><surname>Nishimura</surname><given-names>Y</given-names></name><name><surname>Takeuchi</surname><given-names>K</given-names></name><name><surname>Jang</surname><given-names>IY</given-names></name><name><surname>Kim</surname><given-names>YJ</given-names></name><name><surname>Hayashi</surname><given-names>T</given-names></name><name><surname>Kim</surname><given-names>YA</given-names></name><name><surname>Endo</surname><given-names>M</given-names></name><name><surname>Dresselhaus</surname><given-names>MS</given-names></name></person-group><source>ChemSusChem</source><year>2008</year><volume>1</volume><fpage>911</fpage><pub-id pub-id-type="pmid">18980237</pub-id></element-citation></ref><ref id="b30"><label>[30]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Naoi</surname><given-names>K</given-names></name><name><surname>Ishimoto</surname><given-names>S</given-names></name><name><surname>Miyamoto</surname><given-names>J</given-names></name><name><surname>Naoi</surname><given-names>W</given-names></name></person-group><source>Energy Environ. Sci</source><year>2012</year><volume>5</volume><fpage>9363</fpage></element-citation></ref><ref id="b31"><label>[31]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Kim</surname><given-names>J-H</given-names></name><name><surname>Kim</surname><given-names>J-S</given-names></name><name><surname>Lim</surname><given-names>Y-G</given-names></name><name><surname>Lee</surname><given-names>J-G</given-names></name><name><surname>Kim</surname><given-names>Y-J</given-names></name></person-group><source>J. Power Sources</source><year>2011</year><volume>196</volume><fpage>10490</fpage></element-citation></ref><ref id="b32"><label>[32]</label><element-citation publication-type="journal"><person-group person-group-type="author"><name><surname>Khomenko</surname><given-names>V</given-names></name><name><surname>Raymundo-Pi&#x000f1;ero</surname><given-names>E</given-names></name><name><surname>B&#x000e9;guin</surname><given-names>F</given-names></name></person-group><source>J. Power Sources</source><year>2008</year><volume>177</volume><fpage>643</fpage></element-citation></ref></ref-list></back></article>

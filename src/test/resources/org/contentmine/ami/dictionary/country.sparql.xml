@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<sparql xmlns='http://www.w3.org/2005/sparql-results#'>
+	<head>
+		<variable name='wikidata'/>
+		<variable name='wikidataLabel'/>
+		<variable name='_iso3166'/>
+		<variable name='wikipedia'/>
+		<variable name='alt'/>
+		<variable name='synonym'/>
+		<variable name='wikidataDescription'/>
+		<variable name='term'/>
+	</head>
+	<results>
+		<result>
+			<binding name='wikidata'>
+				<uri>http://www.wikidata.org/entity/Q889</uri>
+			</binding>
+			<binding name='wikipedia'>
+				<uri>https://en.wikipedia.org/wiki/Afghanistan</uri>
+			</binding>
+			<binding name='wikidataLabel'>
+				<literal xml:lang='en'>Afghanistan</literal>
+			</binding>
+			<binding name='wikidataDescription'>
+				<literal xml:lang='en'>sovereign state situated at the confluence of Western, Central, and South Asia</literal>
+			</binding>
+			<binding name='synonym'>
+				<literal xml:lang='en'>AFG, af, Islamic Republic of Afghanistan</literal>
+			</binding>
+			<binding name='_iso3166'>
+				<literal>AF</literal>
+			</binding>
+			<binding name='alt'>
+				<literal xml:lang='en'>AFG, af, 🇦🇫, Islamic Republic of Afghanistan</literal>
+			</binding>
+			<binding name='term'>
+				<literal xml:lang='en'>Afghanistan</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='wikidata'>
+				<uri>http://www.wikidata.org/entity/Q222</uri>
+			</binding>
+			<binding name='wikipedia'>
+				<uri>https://en.wikipedia.org/wiki/Albania</uri>
+			</binding>
+			<binding name='wikidataLabel'>
+				<literal xml:lang='en'>Albania</literal>
+			</binding>
+			<binding name='wikidataDescription'>
+				<literal xml:lang='en'>sovereign state in Southeast Europe</literal>
+			</binding>
+			<binding name='synonym'>
+				<literal xml:lang='en'>ALB, al, Republic of Albania, Republika e Shqipërisë, Shqipërisë</literal>
+			</binding>
+			<binding name='_iso3166'>
+				<literal>AL</literal>
+			</binding>
+			<binding name='alt'>
+				<literal xml:lang='en'>ALB, al, 🇦🇱, Republic of Albania, Republika e Shqipërisë, Shqipërisë</literal>
+			</binding>
+			<binding name='term'>
+				<literal xml:lang='en'>Albania</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='wikidata'>
+				<uri>http://www.wikidata.org/entity/Q262</uri>
+			</binding>
+			<binding name='wikipedia'>
+				<uri>https://en.wikipedia.org/wiki/Algeria</uri>
+			</binding>
+			<binding name='wikidataLabel'>
+				<literal xml:lang='en'>Algeria</literal>
+			</binding>
+			<binding name='wikidataDescription'>
+				<literal xml:lang='en'>sovereign state in North Africa</literal>
+			</binding>
+			<binding name='synonym'>
+				<literal xml:lang='en'>ALG, dz, People’s Democratic Republic of Algeria</literal>
+			</binding>
+			<binding name='_iso3166'>
+				<literal>DZ</literal>
+			</binding>
+			<binding name='alt'>
+				<literal xml:lang='en'>ALG, dz, 🇩🇿, People’s Democratic Republic of Algeria</literal>
+			</binding>
+			<binding name='term'>
+				<literal xml:lang='en'>Algeria</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='wikidata'>
+				<uri>http://www.wikidata.org/entity/Q16641</uri>
+			</binding>
+			<binding name='wikipedia'>
+				<uri>https://en.wikipedia.org/wiki/American_Samoa</uri>
+			</binding>
+			<binding name='wikidataLabel'>
+				<literal xml:lang='en'>American Samoa</literal>
+			</binding>
+			<binding name='wikidataDescription'>
+				<literal xml:lang='en'>US territory in the Pacific</literal>
+			</binding>
+			<binding name='synonym'>
+				<literal xml:lang='en'>ASA, as, East Samoa, Samoa (American), Territory of American Samoa, U.S. Samoa, US Samoa</literal>
+			</binding>
+			<binding name='_iso3166'>
+				<literal>AS</literal>
+			</binding>
+			<binding name='alt'>
+				<literal xml:lang='en'>ASA, as, 🇦🇸, East Samoa, Samoa (American), Territory of American Samoa, U.S. Samoa, US Samoa</literal>
+			</binding>
+			<binding name='term'>
+				<literal xml:lang='en'>American Samoa</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='wikidata'>
+				<uri>http://www.wikidata.org/entity/Q228</uri>
+			</binding>
+			<binding name='wikipedia'>
+				<uri>https://en.wikipedia.org/wiki/Andorra</uri>
+			</binding>
+			<binding name='wikidataLabel'>
+				<literal xml:lang='en'>Andorra</literal>
+			</binding>
+			<binding name='wikidataDescription'>
+				<literal xml:lang='en'>sovereign microstate between France and Spain, in Western Europe</literal>
+			</binding>
+			<binding name='synonym'>
+				<literal xml:lang='en'>AND, ad, Principality of Andorra, Principality of the Valleys of Andorra</literal>
+			</binding>
+			<binding name='_iso3166'>
+				<literal>AD</literal>
+			</binding>
+			<binding name='alt'>
+				<literal xml:lang='en'>AND, ad, 🇦🇩, Principality of Andorra, Principality of the Valleys of Andorra</literal>
+			</binding>
+			<binding name='term'>
+				<literal xml:lang='en'>Andorra</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='wikidata'>
+				<uri>http://www.wikidata.org/entity/Q916</uri>
+			</binding>
+			<binding name='wikipedia'>
+				<uri>https://en.wikipedia.org/wiki/Angola</uri>
+			</binding>
+			<binding name='wikidataLabel'>
+				<literal xml:lang='en'>Angola</literal>
+			</binding>
+			<binding name='wikidataDescription'>
+				<literal xml:lang='en'>sovereign state in Africa</literal>
+			</binding>
+			<binding name='synonym'>
+				<literal xml:lang='en'>ANG, ao, Ngola, Republic of Angola</literal>
+			</binding>
+			<binding name='_iso3166'>
+				<literal>AO</literal>
+			</binding>
+			<binding name='alt'>
+				<literal xml:lang='en'>ANG, ao, 🇦🇴, Ngola, Republic of Angola</literal>
+			</binding>
+			<binding name='term'>
+				<literal xml:lang='en'>Angola</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='wikidata'>
+				<uri>http://www.wikidata.org/entity/Q25228</uri>
+			</binding>
+			<binding name='wikipedia'>
+				<uri>https://en.wikipedia.org/wiki/Anguilla</uri>
+			</binding>
+			<binding name='wikidataLabel'>
+				<literal xml:lang='en'>Anguilla</literal>
+			</binding>
+			<binding name='wikidataDescription'>
+				<literal xml:lang='en'>British Overseas Territory in the Caribbean</literal>
+			</binding>
+			<binding name='synonym'>
+				<literal xml:lang='en'>ai</literal>
+			</binding>
+			<binding name='_iso3166'>
+				<literal>AI</literal>
+			</binding>
+			<binding name='alt'>
+				<literal xml:lang='en'>ai, 🇦🇮</literal>
+			</binding>
+			<binding name='term'>
+				<literal xml:lang='en'>Anguilla</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='wikidata'>
+				<uri>http://www.wikidata.org/entity/Q21590062</uri>
+			</binding>
+			<binding name='wikidataLabel'>
+				<literal xml:lang='en'>Antarctic Treaty area</literal>
+			</binding>
+			<binding name='wikidataDescription'>
+				<literal xml:lang='en'>area around the South Pole covered by the Antarctic Treaty</literal>
+			</binding>
+			<binding name='synonym'>
+				<literal xml:lang='en'>ATA, AQ, Antarctica treaty area</literal>
+			</binding>
+			<binding name='_iso3166'>
+				<literal>AQ</literal>
+			</binding>
+			<binding name='alt'>
+				<literal xml:lang='en'>ATA, AQ, Antarctica treaty area, 🇦🇶</literal>
+			</binding>
+			<binding name='term'>
+				<literal xml:lang='en'>Antarctic Treaty area</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='wikidata'>
+				<uri>http://www.wikidata.org/entity/Q781</uri>
+			</binding>
+			<binding name='wikipedia'>
+				<uri>https://en.wikipedia.org/wiki/Antigua_and_Barbuda</uri>
+			</binding>
+			<binding name='wikidataLabel'>
+				<literal xml:lang='en'>Antigua and Barbuda</literal>
+			</binding>
+			<binding name='wikidataDescription'>
+				<literal xml:lang='en'>island sovereign state in the Caribbean Sea</literal>
+			</binding>
+			<binding name='synonym'>
+				<literal xml:lang='en'>ag, ANT</literal>
+			</binding>
+			<binding name='_iso3166'>
+				<literal>AG</literal>
+			</binding>
+			<binding name='alt'>
+				<literal xml:lang='en'>ag, ANT, 🇦🇬</literal>
+			</binding>
+			<binding name='term'>
+				<literal xml:lang='en'>Antigua and Barbuda</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='wikidata'>
+				<uri>http://www.wikidata.org/entity/Q414</uri>
+			</binding>
+			<binding name='wikipedia'>
+				<uri>https://en.wikipedia.org/wiki/Argentina</uri>
+			</binding>
+			<binding name='wikidataLabel'>
+				<literal xml:lang='en'>Argentina</literal>
+			</binding>
+			<binding name='wikidataDescription'>
+				<literal xml:lang='en'>sovereign state in South America</literal>
+			</binding>
+			<binding name='synonym'>
+				<literal xml:lang='en'>AR, ARG, ar, Argentine Republic</literal>
+			</binding>
+			<binding name='_iso3166'>
+				<literal>AR</literal>
+			</binding>
+			<binding name='alt'>
+				<literal xml:lang='en'>AR, ARG, ar, 🇦🇷, Argentine Republic</literal>
+			</binding>
+			<binding name='term'>
+				<literal xml:lang='en'>Argentina</literal>
+			</binding>
+		</result>
+	</results>
+</sparql>

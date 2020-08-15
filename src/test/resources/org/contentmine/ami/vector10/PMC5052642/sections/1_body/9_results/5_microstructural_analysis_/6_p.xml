@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p>The chosen 
+ <italic>δ</italic>/
+ <italic>β</italic> ratio in the PPC tomography reconstruction provides the appropriate trade-off between resolution and contrast such that each data set can be binarized into a particle phase and an electrolyte/binder/carbon black background phase using Huang's method
+ <xref ref-type="bibr" rid="b39">39</xref> (
+ <xref ref-type="supplementary-material" rid="S1">Supplementary Fig. 2</xref> and 
+ <xref ref-type="supplementary-material" rid="S1">Supplementary Note 2</xref>). In each time step, the threshold that partitions the volumetric grey scale image is calculated by minimizing the Shannon entropy function. As described, a different thresholding method yields similar results, indicating that the binarization is robust (
+ <xref ref-type="supplementary-material" rid="S1">Supplementary Fig. 3</xref> and 
+ <xref ref-type="supplementary-material" rid="S1">Supplementary Note 2</xref>).
+</p>

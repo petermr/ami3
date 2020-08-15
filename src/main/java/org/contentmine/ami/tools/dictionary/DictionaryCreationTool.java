@@ -63,6 +63,7 @@ import picocli.CommandLine.Option;
 				+ ""
 		})
 public class DictionaryCreationTool extends AbstractAMIDictTool {
+	
 	static final String BINDING = "binding";
 	static final String FLAG_A_Z = ":flag-[a-z]+:";
 	public static final Logger LOG = LogManager.getLogger(DictionaryCreationTool.class);
@@ -97,7 +98,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	private String currentTemplateName;
 	private WikipediaDictionary wikipediaDictionary;
 	private List<RectTabColumn> dataColList;
-	
+
 	@Option(names = {"--datacols"}, 
 			split=",",
 			arity="1..*",
@@ -244,6 +245,7 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 
 //	@Override
 	protected void parseSpecifics() {
+		super.parseSpecifics();
 		getDictionaryName();
 		LOG.info("dictionaryName: "+dictionaryName);
 		dictOutformat = (this.outformats == null || this.outformats.length != 1) ? null : this.outformats[0];

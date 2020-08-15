@@ -37,7 +37,8 @@ public class SimpleDictionary extends DefaultAMIDictionary {
 		this(dictionaryName);
 		super.dictionaryElement = dictionaryElement;
 		if (dictionaryName == null || !dictionaryName.equals(this.getTitle())) {
-			throw new RuntimeException("null or non-matching title for dictionary: "+dictionaryName+"/"+this.getTitle());
+//			throw new RuntimeException("null or non-matching title for dictionary: "+dictionaryName+"/"+this.getTitle());
+			LOG.error("null or non-matching title for dictionary: "+dictionaryName+"/"+this.getTitle());
 		}
 	}
 

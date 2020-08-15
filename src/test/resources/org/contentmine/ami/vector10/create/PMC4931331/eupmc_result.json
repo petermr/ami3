@@ -1,0 +1,371 @@
+{
+  "id": [
+    "27354162"
+  ],
+  "source": [
+    "MED"
+  ],
+  "pmid": [
+    "27354162"
+  ],
+  "pmcid": [
+    "PMC4931331"
+  ],
+  "doi": [
+    "10.1038/ncomms12032"
+  ],
+  "title": [
+    "Superconcentrated electrolytes for a high-voltage lithium-ion battery."
+  ],
+  "authorString": [
+    "Wang J, Yamada Y, Sodeyama K, Chiang CH, Tateyama Y, Yamada A."
+  ],
+  "authorList": [
+    {
+      "author": [
+        {
+          "fullName": [
+            "Wang J"
+          ],
+          "firstName": [
+            "Jianhui"
+          ],
+          "lastName": [
+            "Wang"
+          ],
+          "initials": [
+            "J"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-4170-1132",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Department of Chemical System Engineering, University of Tokyo, 7-3-1, Hongo, Tokyo 113-8656, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Yamada Y"
+          ],
+          "firstName": [
+            "Yuki"
+          ],
+          "lastName": [
+            "Yamada"
+          ],
+          "initials": [
+            "Y"
+          ],
+          "affiliation": [
+            "Department of Chemical System Engineering, University of Tokyo, 7-3-1, Hongo, Tokyo 113-8656, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Sodeyama K"
+          ],
+          "firstName": [
+            "Keitaro"
+          ],
+          "lastName": [
+            "Sodeyama"
+          ],
+          "initials": [
+            "K"
+          ],
+          "authorId": [
+            {
+              "_": "0000-0002-9228-0729",
+              "$": {
+                "type": "ORCID"
+              }
+            }
+          ],
+          "affiliation": [
+            "Elements Strategy Initiative for Catalysts and Batteries, Kyoto University, 1-30, Goryo-Ohara, Kyoto 615-8245, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Chiang CH"
+          ],
+          "firstName": [
+            "Ching Hua"
+          ],
+          "lastName": [
+            "Chiang"
+          ],
+          "initials": [
+            "CH"
+          ],
+          "affiliation": [
+            "Department of Chemical System Engineering, University of Tokyo, 7-3-1, Hongo, Tokyo 113-8656, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Tateyama Y"
+          ],
+          "firstName": [
+            "Yoshitaka"
+          ],
+          "lastName": [
+            "Tateyama"
+          ],
+          "initials": [
+            "Y"
+          ],
+          "affiliation": [
+            "Elements Strategy Initiative for Catalysts and Batteries, Kyoto University, 1-30, Goryo-Ohara, Kyoto 615-8245, Japan."
+          ]
+        },
+        {
+          "fullName": [
+            "Yamada A"
+          ],
+          "firstName": [
+            "Atsuo"
+          ],
+          "lastName": [
+            "Yamada"
+          ],
+          "initials": [
+            "A"
+          ],
+          "affiliation": [
+            "Department of Chemical System Engineering, University of Tokyo, 7-3-1, Hongo, Tokyo 113-8656, Japan."
+          ]
+        }
+      ]
+    }
+  ],
+  "authorIdList": [
+    {
+      "authorId": [
+        {
+          "_": "0000-0002-4170-1132",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-9228-0729",
+          "$": {
+            "type": "ORCID"
+          }
+        },
+        {
+          "_": "0000-0002-7191-7129",
+          "$": {
+            "type": "ORCID"
+          }
+        }
+      ]
+    }
+  ],
+  "journalInfo": [
+    {
+      "volume": [
+        "7"
+      ],
+      "journalIssueId": [
+        "2463534"
+      ],
+      "dateOfPublication": [
+        "2016 Jun"
+      ],
+      "monthOfPublication": [
+        "6"
+      ],
+      "yearOfPublication": [
+        "2016"
+      ],
+      "printPublicationDate": [
+        "2016-06-01"
+      ],
+      "journal": [
+        {
+          "title": [
+            "Nature communications"
+          ],
+          "ISOAbbreviation": [
+            "Nat Commun"
+          ],
+          "medlineAbbreviation": [
+            "Nat Commun"
+          ],
+          "NLMid": [
+            "101528555"
+          ],
+          "ISSN": [
+            "2041-1723"
+          ],
+          "ESSN": [
+            "2041-1723"
+          ]
+        }
+      ]
+    }
+  ],
+  "pubYear": [
+    "2016"
+  ],
+  "pageInfo": [
+    "12032"
+  ],
+  "abstractText": [
+    "Finding a viable electrolyte for next-generation 5 V-class lithium-ion batteries is of primary importance. A long-standing obstacle has been metal-ion dissolution at high voltages. The LiPF6 salt in conventional electrolytes is chemically unstable, which accelerates transition metal dissolution of the electrode material, yet beneficially suppresses oxidative dissolution of the aluminium current collector; replacing LiPF6 with more stable lithium salts may diminish transition metal dissolution but unfortunately encounters severe aluminium oxidation. Here we report an electrolyte design that can solve this dilemma. By mixing a stable lithium salt LiN(SO2F)2 with dimethyl carbonate solvent at extremely high concentrations, we obtain an unusual liquid showing a three-dimensional network of anions and solvent molecules that coordinate strongly to Li(+) ions. This simple formulation of superconcentrated LiN(SO2F)2/dimethyl carbonate electrolyte inhibits the dissolution of both aluminium and transition metal at around 5 V, and realizes a high-voltage LiNi0.5Mn1.5O4/graphite battery that exhibits excellent cycling durability, high rate capability and enhanced safety."
+  ],
+  "affiliation": [
+    "Department of Chemical System Engineering, University of Tokyo, 7-3-1, Hongo, Tokyo 113-8656, Japan."
+  ],
+  "language": [
+    "eng"
+  ],
+  "pubModel": [
+    "Electronic"
+  ],
+  "pubTypeList": [
+    {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    }
+  ],
+  "fullTextUrlList": [
+    {
+      "fullTextUrl": [
+        {
+          "availability": [
+            "Subscription required"
+          ],
+          "availabilityCode": [
+            "S"
+          ],
+          "documentStyle": [
+            "doi"
+          ],
+          "site": [
+            "DOI"
+          ],
+          "url": [
+            "https://doi.org/10.1038/ncomms12032"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "html"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4931331"
+          ]
+        },
+        {
+          "availability": [
+            "Open access"
+          ],
+          "availabilityCode": [
+            "OA"
+          ],
+          "documentStyle": [
+            "pdf"
+          ],
+          "site": [
+            "Europe_PMC"
+          ],
+          "url": [
+            "https://europepmc.org/articles/PMC4931331?pdf=render"
+          ]
+        }
+      ]
+    }
+  ],
+  "isOpenAccess": [
+    "Y"
+  ],
+  "inEPMC": [
+    "Y"
+  ],
+  "inPMC": [
+    "N"
+  ],
+  "hasPDF": [
+    "Y"
+  ],
+  "hasBook": [
+    "N"
+  ],
+  "hasSuppl": [
+    "Y"
+  ],
+  "citedByCount": [
+    "22"
+  ],
+  "hasData": [
+    "Y"
+  ],
+  "hasReferences": [
+    "Y"
+  ],
+  "hasTextMinedTerms": [
+    "Y"
+  ],
+  "hasDbCrossReferences": [
+    "N"
+  ],
+  "hasLabsLinks": [
+    "Y"
+  ],
+  "license": [
+    "cc by"
+  ],
+  "authMan": [
+    "N"
+  ],
+  "epmcAuthMan": [
+    "N"
+  ],
+  "nihAuthMan": [
+    "N"
+  ],
+  "hasTMAccessionNumbers": [
+    "N"
+  ],
+  "dateOfCompletion": [
+    "2018-08-10"
+  ],
+  "dateOfCreation": [
+    "2016-06-30"
+  ],
+  "firstIndexDate": [
+    "2016-06-30"
+  ],
+  "fullTextReceivedDate": [
+    "2016-07-14"
+  ],
+  "dateOfRevision": [
+    "2018-08-10"
+  ],
+  "electronicPublicationDate": [
+    "2016-06-29"
+  ],
+  "firstPublicationDate": [
+    "2016-06-29"
+  ]
+}

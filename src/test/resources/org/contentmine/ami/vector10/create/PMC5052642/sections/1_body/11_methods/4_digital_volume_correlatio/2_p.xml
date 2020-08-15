@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p>In all cases, we used circular shaped interrogation windows and universal outlier detection (remove threshold 2, insert threshold 3, epsilon=0.1, 3 × 3 × 3 neighbourhood). The resulting vector field was smoothed with a Gaussian filter in a 3 × 3 × 3 neighbourhood. For the sketches in 
+ <xref ref-type="fig" rid="f2">Figs 2b,c,e</xref> and 
+ <xref ref-type="fig" rid="f4">4a</xref>, the fields were computed with lower resolution for better visibility.
+</p>
