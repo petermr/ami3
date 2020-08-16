@@ -532,6 +532,7 @@ public static final String ILLEGAL_CHAR = "?";
 		text.setId("image."+oneBasedSerialString);
 		text.addAttribute(new Attribute("width", ""+width));
 		text.addAttribute(new Attribute("height", ""+height));
+		text.setFontSize(5.0);
 		svgg.appendChild(text);
 	}
 	private SVGRect getBoundingRect() {
@@ -544,7 +545,7 @@ public static final String ILLEGAL_CHAR = "?";
 	    		new RealRange(yMax - bounds.getMaxY(), yMax - bounds.getMinY())
 	    		).format(3);
 	    SVGRect rect = SVGRect.createFromReal2Range(box);
-	    rect.setStroke("blue").setStrokeWidth(0.3);
+	    rect.setStroke("blue").setStrokeWidth(0.3).setFill("pink").setOpacity(0.2);
 		return rect;
 	}
 	private String createTitle(Int2Range box, String oneBasedSerialString) {

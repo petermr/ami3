@@ -1608,11 +1608,13 @@ public enum RotateText {
 	 * 
 	 * @param x2
 	 */
-	public void appendFontWidth(double x) {
-		RealArray widthArray = getSVGXFontWidthArray();
-		if (widthArray == null) widthArray = new RealArray();
-		widthArray.addElement(x);
-		this.setSVGXFontWidth(widthArray);
+	public void appendFontWidth(Double width) {
+		if (width != null) {
+			RealArray widthArray = getSVGXFontWidthArray();
+			if (widthArray == null) widthArray = new RealArray();
+			widthArray.addElement(width);
+			this.setSVGXFontWidth(widthArray);
+		}
 	}
 
 	public void removeCharacter(int i) {
@@ -1798,12 +1800,14 @@ But for all other weights a numerical range from 100 to 900 is used. One of the 
 				return;
 			}
 			double delta = x1 - x0;
-			double width = widths.elementAt(i - 1);
-			double screenWidth = fontSize * width;
-			if (delta > screenWidth * widthFactor) {
-				sb.insert(i,  SPACE);
-				xArray.insertElementAt(i, x0 + screenWidth);
-				widths.insertElementAt(i, N_SPACE);
+			if (widths != null) {
+				double width = widths.elementAt(i - 1);
+				double screenWidth = fontSize * width;
+				if (delta > screenWidth * widthFactor) {
+					sb.insert(i,  SPACE);
+					xArray.insertElementAt(i, x0 + screenWidth);
+					widths.insertElementAt(i, N_SPACE);
+				}
 			}
 		}
 		this.setX(xArray);
@@ -1853,7 +1857,8 @@ But for all other weights a numerical range from 100 to 900 is used. One of the 
 					newText.appendX(text.getX());
 				}
 				newText.appendText(text.getValue());
-				newText.appendFontWidth(text.getSVGXFontWidth());
+				Double svgxFontWidth = text.getSVGXFontWidth();
+				if (svgxFontWidth != null) newText.appendFontWidth(svgxFontWidth);
 			}
 			previousStaticCoord = currentStaticCoord;
 			previousStyle = currentStyle;
