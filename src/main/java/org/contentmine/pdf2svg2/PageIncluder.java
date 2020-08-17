@@ -18,8 +18,11 @@ public class PageIncluder {
     
 
 	private static final Logger LOG = LogManager.getLogger(PageIncluder.class);
-private TreeSet<Integer> includeZeroBasedSortedPageNumbers;
+	
+	private TreeSet<Integer> includeZeroBasedSortedPageNumbers;
 	private TreeSet<Integer> excludeZeroBasedSortedPageNumbers;
+
+	private boolean lock = false;
 
 	public PageIncluder() {
 		
@@ -49,21 +52,37 @@ private TreeSet<Integer> includeZeroBasedSortedPageNumbers;
 		return include;
 	}
 
-	public void addZeroNumberedIncludePages(List<Integer> includePages) {
-		getOrCreateZeroNumberedIncludePageList().addAll(includePages);
+	
+	/** do not reset range 
+	 * @return */
+	public PageIncluder setLock(boolean lock) {
+		this.lock  = lock;
+		return this;
+	}
+	
+	public boolean isLock() {
+		return lock;
 	}
 
-	public void addZeroNumberedIncludePages(IntRange includePages) {
+	public PageIncluder addZeroNumberedIncludePages(List<Integer> includePages) {
+		getOrCreateZeroNumberedIncludePageList().addAll(includePages);
+		return this;
+	}
+
+	public PageIncluder addZeroNumberedIncludePages(IntRange includePages) {
 		List<Integer> pages = includePages.createArray().getIntegerList();
 		addZeroNumberedIncludePages(pages);
+		return this;
 	}
-	public void setZeroNumberedIncludePages(IntRange includePages) {
+	public PageIncluder setZeroNumberedIncludePages(IntRange includePages) {
 		this.includeZeroBasedSortedPageNumbers = null;
 		addZeroNumberedIncludePages(includePages);
+		return this;
 	}
 
-	public void addZeroNumberedIncludePages(Integer ...includePages) {
+	public PageIncluder addZeroNumberedIncludePages(Integer ...includePages) {
 		getOrCreateZeroNumberedIncludePageList().addAll(new ArrayList<Integer>(Arrays.asList(includePages)));
+		return this;
 	}
 
 	public TreeSet<Integer> getOrCreateZeroNumberedIncludePageList() {
@@ -73,16 +92,19 @@ private TreeSet<Integer> includeZeroBasedSortedPageNumbers;
 		return includeZeroBasedSortedPageNumbers;
 	}
 
-	public void addZeroNumberedExcludePages(List<Integer> excludePages) {
+	public PageIncluder addZeroNumberedExcludePages(List<Integer> excludePages) {
 		getOrCreateZeroBasedExcludePageList().addAll(excludePages);
+		return this;
 	}
 
-	public void addZeroNumberedExcludePages(IntRange excludePages) {
+	public PageIncluder addZeroNumberedExcludePages(IntRange excludePages) {
 		List<Integer> pages = excludePages.createArray().getIntegerList();
+		return this;
 	}
 
-	public void addZeroNumberedExcludePages(Integer ... excludePages) {
+	public PageIncluder addZeroNumberedExcludePages(Integer ... excludePages) {
 		getOrCreateZeroBasedExcludePageList().addAll(new ArrayList<Integer>(Arrays.asList(excludePages)));
+		return this;
 	}
 
 	public TreeSet<Integer> getOrCreateZeroBasedExcludePageList() {

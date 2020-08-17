@@ -210,10 +210,11 @@ public class AMISVGTest extends AbstractAMITest {
 		String cmd = ""
 				+ " -vv"
 				+ " --forcemake"
-//				+ " -t " + treeDir
-				+ " -p " + targetDir
+				+ " -t " + treeDir
+//				+ " -p " + targetDir
 				+ " pdfbox"
 				+ " --maxprimitives=100000"
+//				+ " --pages=4 5"
 				;
 		AMI.execute(cmd);
 

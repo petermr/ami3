@@ -507,8 +507,8 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 		useAbsoluteNames = false;
 		if (parent.directory != null) {
 			directory = parent.directory;
-		} else if (parent.getDictionaryList() != null && parent.getDictionaryList().size() > 0){
-			directory = new File(parent.getDictionaryList().get(0)).getParentFile();
+		} else if (parent.getDictionaryNameList() != null && parent.getDictionaryNameList().size() > 0){
+			directory = new File(parent.getDictionaryNameList().get(0)).getParentFile();
 			useAbsoluteNames = true;
 		} else {
 			LOG.error("Must give either 'directory' or existing absolute filenames of dictionaries");
@@ -668,12 +668,12 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 	}
 
 	protected void getDictionaryName() {
-		dictionaryName = parent.getDictionaryList() != null && parent.getDictionaryList().size() == 1 ?
-			parent.getDictionaryList().get(0) : null;
+		dictionaryName = parent.getDictionaryNameList() != null && parent.getDictionaryNameList().size() == 1 ?
+			parent.getDictionaryNameList().get(0) : null;
 	}
 
 	protected List<String> getDictionaryNameList() {
-		return parent.getDictionaryList() == null ? new ArrayList<>() : parent.getDictionaryList() ;
+		return parent.getDictionaryNameList() == null ? new ArrayList<>() : parent.getDictionaryNameList() ;
 	}
 
 	/**

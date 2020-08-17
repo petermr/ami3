@@ -59,7 +59,7 @@ public class DictionarySearchTool extends AbstractAMIDictTool {
 				searchDictionaryForTerms(file);
 			}
 		} else {
-			for (String filename : parent.getDictionaryList()) {
+			for (String filename : parent.getDictionaryNameList()) {
 				searchDictionaryForTerms(new File(filename));
 			}
 		}

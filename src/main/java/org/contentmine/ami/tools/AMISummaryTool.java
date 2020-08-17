@@ -63,7 +63,7 @@ public class AMISummaryTool extends AbstractAMITool {
 		}
 	}
 	public enum OutputType {
-		table,
+		tab,
 		countSet,
 		fullSet,
 		;
@@ -87,13 +87,14 @@ public class AMISummaryTool extends AbstractAMITool {
 //    private List<String> geneList = new ArrayList<>();
 
     @Option(names = {"--glob"},
-    		split=",",
+    		split="@",
             description = "files to summarize (as glob)")
     private List<String> globList = new ArrayList<>();
     
-    @Option(names = {"--output-types"},
+    @Option(names = {"--outtype"},
     		arity = "1..*",
-            description = "output type/s. Not sure how useful this is. `table` creates a CSV table")
+    		split = ",",
+            description = "output type/s. `table` creates a CSV table; the others may be obsolete")
     private List<OutputType> outputTypes = new ArrayList<>();
     
 //    @Option(names = {"--species"},
@@ -110,6 +111,7 @@ public class AMISummaryTool extends AbstractAMITool {
 	private RectangularTable table;
 	private Multiset<String> totalWordSet;
 	private Multiset<String> documentWordSet;
+	private StringBuilder csvStringBuilder;
 
 	public AMISummaryTool(CProject cProject) {
 		this.cProject = cProject;
@@ -275,25 +277,73 @@ public class AMISummaryTool extends AbstractAMITool {
 		outputDir.mkdirs();
 		List<File> fileList = new CMineGlobber().setGlob(glob)
 				.setLocation(cProject.getDirectory()).setRecurse(true).listFiles();
-		LOG.info("Sum>files: "+fileList.size());
-//		System.out.println(fileList);
-		makeSubtreeFiles(outputDir, outputDirPath, fileList);
+		LOG.info("Sum>files: "+fileList.size()+";"+fileList);
+		if (fileList.size() == 0) {
+			LOG.info("no files to summarize");
+		} else {
+			List<File> subTreeFiles = makeSubtreeFiles(outputDir, outputDirPath, fileList);
+		}
 		
 	}
 
+
 	private List<File> makeSubtreeFiles(File outputDir, Path outputDirPath, List<File> fileList) {
+		Path outputPath = outputDir.toPath();
+		System.out.println(outputPath);
 		List<File> subtreeFileList = new ArrayList<>();
+		if (outputTypes.contains(OutputType.tab)) {
+			csvStringBuilder = new StringBuilder();
+		}
+		String treeName = null;
 		for (int count = 0; count < fileList.size(); count++) {
 			File file = fileList.get(count);
 			File subTreeFile = makeSubtreeFile(outputDir, outputDirPath, count, file);
+			treeName = getCTreeNameFromRelativePaths(treeName, file, subTreeFile);
+			
 			try {
 				FileUtils.copyFile(file, subTreeFile);
 			} catch (IOException e) {
 				throw new RuntimeException("cannot copy", e);
 			}
-			count++;
+			addOutputTypes(treeName, subTreeFile);
 		}
+		writeCsvFile(new File(outputDir, "summary.csv"));
 		return subtreeFileList;
+	}
+
+	private void writeCsvFile(File csvFile) {
+		try {
+			FileUtils.write(csvFile, csvStringBuilder.toString(), "UTF-8");
+		} catch (IOException e) {
+			throw new RuntimeException("can't write: "+csvFile, e);
+		}
+	}
+
+	private String getCTreeNameFromRelativePaths(String treeName, File file, File subTreeFile) {
+		Path filePath = file.toPath();
+		Path subtreePath = subTreeFile.toPath();
+		Path relPath = subtreePath.relativize(filePath);
+		for (Path p : relPath) {
+			String ss = p.toString();
+			if (!ss.contentEquals("..")) {
+				treeName = ss;
+				break;
+			}
+		}
+		return treeName;
+	}
+
+	private void addOutputTypes(String cTreeName, File subTreeFile) {
+		if (outputTypes.contains(OutputType.tab)) {
+			String content = "";
+			try {
+				content = FileUtils.readFileToString(subTreeFile, "UTF-8");
+				content = content.replaceAll(",", "").replaceAll("<[^>]*>", "").replaceAll("\n", " ");
+			} catch (IOException e) {
+				throw new RuntimeException("cannot read "+subTreeFile, e);
+			}
+			csvStringBuilder.append(cTreeName + "," + subTreeFile + "," + content +"," + "\n");
+		}
 	}
 
 	private File makeSubtreeFile(File outputDir, Path outputDirPath, int count, File file) {
@@ -307,7 +357,7 @@ public class AMISummaryTool extends AbstractAMITool {
 	}
 
 	private void outputTables() {
-		if (outputTypes.contains(OutputType.table)) {
+		if (outputTypes.contains(OutputType.tab)) {
 			File file = new File(cProject.getDirectory(), "tidySummary.csv");
 			LOG.debug("TABLE "+file);
 			try {

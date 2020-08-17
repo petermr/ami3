@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<p>To visualize the time- and space-dependent electrochemical activity of silicon and graphite within the electrode, we again turn to DVC and compute the divergence of the displacement fields in each time step. Because electrode deformations and changes in local X-ray attenuation are much larger in the presence of silicon, a smaller SOC increment improves the accuracy of the DVC results. We therefore compute the cumulated divergence at scan number k from the DVC fields 
- <inline-formula id="d33e730">
-  <inline-graphic id="d33e731" xlink:href="ncomms12909-m6.jpg" xmlns:xlink="http://www.w3.org/1999/xlink"/>
- </inline-formula> relating subsequent tomographic scans j and j+1, that is:
-</p>

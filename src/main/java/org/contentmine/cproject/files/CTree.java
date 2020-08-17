@@ -1733,6 +1733,7 @@ public final static Pattern DOI_PREFIX = Pattern.compile("(10\\.[0-9]{3,}([\\.][
 	}
 
 	public boolean processPDFTree() {
+		getOrCreatePDFDocumentProcessor();
 		boolean processedTree = true;
 		int start = 0;
 		File existingFulltextPDF = getExistingFulltextPDF();
@@ -1753,15 +1754,19 @@ public final static Pattern DOI_PREFIX = Pattern.compile("(10\\.[0-9]{3,}([\\.][
 			throw new RuntimeException("Cannot load PDF "+existingFulltextPDF +" | " + e.getMessage(), e);
 		}
 		int pageCount = document.getNumberOfPages();
+    	PageIncluder pageIncluder = pdfDocumentProcessor.getOrCreatePageIncluder();
+		System.out.println("ipageIncluder "+pageIncluder.toString());
 		int deltaPages = pdfDocumentProcessor.getMaxPages();
 		System.out.print(" max pages: "+deltaPages);
+		
+		
 		while (start < pageCount) {
 			System.out.println(" " + start + " ");
-			getOrCreatePDFDocumentProcessor();
 		    try {
-		    	PageIncluder pageIncluder = pdfDocumentProcessor.getOrCreatePageIncluder();
-				pageIncluder.setZeroNumberedIncludePages(new IntRange(start, start + deltaPages - 1));
-				System.out.print("pages "+pageIncluder.toString());
+		    	if (pageIncluder.isLock()) {
+		    		pageIncluder.setZeroNumberedIncludePages(new IntRange(start, start + deltaPages - 1));
+		    	}
+				System.out.print("pageIncluder pages "+pageIncluder.toString());
 		    	pdfDocumentProcessor.readAndProcess(document);
 				LOG.trace("readAndProcess");
 		    	pdfDocumentProcessor.writeSVGPages(directory);

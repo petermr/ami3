@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<p>Car-Parrinello type DFT-MD simulations were carried out using CPMD code
- <xref ref-type="bibr" rid="b36">36</xref>. LiFSA/DMC solutions with salt-to-solvent molar ratios of 1:25, 1:2 and 1:1.1 were calculated in cubic supercells with 15.05, 17.03 and 14.34 Å linear dimensions, respectively. A fictitious electric mass of 500 a.u. and a time step of 4 a.u. (0.10 fs) were chosen. The temperature was controlled using a Nosé thermostat with a target temperature of 30 °C. After 5 ps equilibration steps, statistical averages were computed from trajectories of at least 10 ps in length. The electronic wave function was quenched to the Born-Oppenheimer surface approximately every 1 ps to maintain adiabaticity. The energy cutoff of the plane wave basis is set to 90 Ry. Goedecker–Teter–Hutter type norm-conserving pseudopotentials for C, H, O, N, S, F and Li were used
- <xref ref-type="bibr" rid="b37">37</xref>.
-</p>

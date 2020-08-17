@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<p>For the graphite–graphite sample no pre-processing steps were applied to the data. The histograms were computed on the full dynamic observation windows. We cut away the extreme tails of the histograms, by excluding bins with less than 3% of the counts of the histogram maximum. We then used a self-implemented MATLAB version of Huang's Shannon entropy automatic thresholding method
- <xref ref-type="bibr" rid="b39">39</xref> to binarize the data in every time step.
-</p>

@@ -12,6 +12,7 @@ import org.apache.commons.io.FilenameUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.contentmine.ami.tools.AbstractAMIDictTool;
+import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.DebugPrint;
 import org.contentmine.cproject.util.CMineGlobber;
 import org.contentmine.eucl.euclid.util.MultisetUtil;
@@ -130,6 +131,11 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
     private List<String> remoteUrls = new ArrayList<>(Arrays.asList(
     		new String[] {"https://github.com/petermr/dictionary"}));
 
+    @Option(names = {"--suffix"}, 
+   		    description = "suffix for dictionary, default XML)"
+    		)
+    private String suffix = CTree.XML;
+    
     @Option(names = {"--validate"}, 
    		    description = "add validation annotation)"
     		)
@@ -158,15 +164,25 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 
 	public void runSub() {
 		getOrCreateExistingDictionaryTop();
+		getOrCreateSingleDictionaryName();
 		LOG.info(">"+dictionaryTop.getAbsolutePath());
 		if (dictionaryName != null) {
-			listDictionaryInfo(new File(dictionaryTop, dictionaryName));
+			listDictionaryInfo(new File(dictionaryTop, dictionaryName + "." + suffix));
 		} else {
 			List<File> fileList = (files.size() > 0) ? files : collectDictionaryFiles(dictionaryTop);
 			listFiles(fileList);
 		}
 	}
 	
+	private String getOrCreateSingleDictionaryName() {
+		if (dictionaryName == null) {
+			if (parent.getDictionaryNameList().size() == 1) {
+				dictionaryName = parent.getDictionaryNameList().get(0);
+			}
+		}
+		return dictionaryName;
+	}
+
 	private void listFiles(List<File> files) {
 		if (files.size() == 0) {
 			LOG.warn("no files");
@@ -239,6 +255,7 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 				+ " or name()='name'"
 				+ " or name()='description'"
 				+ " or name()='id'"
+				+ " or name()='wikipediaPage'"
 				+ " or name()='wikipediaURL'"
 				+ " or name()='wikidataID'"
 				+ " or name()='wikidataURL'"
@@ -382,7 +399,7 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 	}
 	
 	private String checkAllowedChildren(Element entry, List<String> allowedList) {
-		StringBuilder sb = new StringBuilder("unknown attributes");
+		StringBuilder sb = new StringBuilder("unknown children");
 		boolean ok = true;
 		for (int i = 0; i < entry.getAttributeCount(); i++) {
 			String attName = entry.getAttribute(i).getLocalName();

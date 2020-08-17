@@ -173,7 +173,7 @@ public class AMIDict implements Runnable {
 		this.directory = new File(directoryTopname);
 	}
 
-	public List<String> getDictionaryList() {
+	public List<String> getDictionaryNameList() {
 		return dictionaryNameList;
 	}
 

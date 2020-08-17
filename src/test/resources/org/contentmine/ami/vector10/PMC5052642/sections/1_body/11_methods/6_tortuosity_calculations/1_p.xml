@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<p>The tortuosity 
- <italic>τ</italic> was calculated based on the definition and method in ref. 
- <xref ref-type="bibr" rid="b3">3</xref>. The steady state diffusion equation was solved on the full resolution pore space using an in-house code written in MATLAB. To drive particle diffusion through the microstructure along the dimension of interest, different Dirichlet boundary conditions were applied on the boundary planes of the considered volume that are orthogonal on the respective direction. No flux boundary conditions were implied on the other 4 boundaries and all pore—active material interfaces. The linear system of equations was assembled based on the routines developed in ref. 
- <xref ref-type="bibr" rid="b48">48</xref> and solved iteratively using MATLAB's pre-implemented ‘bicgstabl' iterative solver and incomplete LU factorization (MATLAB's built-in ‘ilu' algorithm).
-</p>

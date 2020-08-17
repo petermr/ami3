@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<p>To analyse the dynamics of the electrode, we apply DVC directly to the reconstructed data before any post-processing steps. DVC calculates a vector displacement field that maps two volumetric images locally on one another by maximizing the cross correlations between iteratively refined sub-volumes in the respective data sets. From the calculated vector fields, spatially resolved quantities like strain or relative volume expansion can be deduced.</p>

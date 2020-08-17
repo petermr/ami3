@@ -79,7 +79,7 @@ private CMJsonDictionary cmJsonDictionary;
 	@Override
 	public void runSub() {
 		File directory = createDirectory();
-		for (String dictionaryS : parent.getDictionaryList()) {
+		for (String dictionaryS : parent.getDictionaryNameList()) {
 			String basename = FilenameUtils.getBaseName(dictionaryS);
 			File dictionaryFile = (useAbsoluteNames) ? new File(dictionaryS) : new File(directory, dictionaryS);
 			if (!dictionaryFile.exists()) {

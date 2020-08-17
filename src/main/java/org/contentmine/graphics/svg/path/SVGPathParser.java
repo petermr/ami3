@@ -11,9 +11,9 @@ import org.contentmine.eucl.euclid.RealArray;
 import org.contentmine.graphics.svg.SVGPathPrimitive;
 
 public class SVGPathParser {
-	private static final String PRIMITIVE_ABBREVS= "mMcClLqQhHvVZz";
 	private static final Logger LOG = LogManager.getLogger(SVGPathParser.class);
-private Real2 firstPoint;
+	private static final String PRIMITIVE_ABBREVS= "mMcClLqQhHvVZz";
+	private Real2 firstPoint;
 	private Real2 currentPoint;
 	
 	private PathPrimitiveList pathPrimitiveList;
@@ -21,8 +21,13 @@ private Real2 firstPoint;
 	private String d;
 	private SVGPathPrimitive lastPrimitive;
 	private int pathPrimitiveTime = 0;
+	private int minTokenListLength = 5000; // min tokens to show tokenList
+	
 //	private int compactFactor = 0;
 //	private int maxToken = 4000;
+	
+	public SVGPathParser() {
+	}
 	
 	public PathPrimitiveList parseDString(String d) {
 		long t0 = System.currentTimeMillis();
@@ -72,8 +77,8 @@ private Real2 firstPoint;
 		char t;
 		int mm = 0;	int ll = 0;	int nl = 0;	int hv = 0;	int cc = 0;	int qq = 0;	int aa = 0;	int kk = 0;
 		long t0 = System.currentTimeMillis();
-		if (tokenList.size()>1000) {
-			System.out.println("tokenList>1000: "+tokenList.size());
+		if (tokenList.size() > minTokenListLength) {
+			System.out.println("tokenList>" + minTokenListLength + ": "+tokenList.size());
 		}
 		while (itok <tokenList.size()) {
 			String token = tokenList.get(itok);
@@ -574,5 +579,14 @@ treated as relative even though the initial moveto is interpreted as an absolute
 		}
 		return  token;
 	}
+
+	public int getMinTokenListLength() {
+		return minTokenListLength;
+	}
+
+	public void setMinTokenListLength(int minTokenListLength) {
+		this.minTokenListLength = minTokenListLength;
+	}
+
 
 }

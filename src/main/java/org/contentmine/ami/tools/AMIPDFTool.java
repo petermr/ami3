@@ -17,6 +17,7 @@ import org.contentmine.cproject.files.DebugPrint;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.pdf2svg2.PDFDocumentProcessor;
+import org.contentmine.pdf2svg2.PageIncluder;
 import org.contentmine.pdf2svg2.PageParserRunner;
 import org.contentmine.pdf2svg2.PageParserRunner.ParserDebug;
 
@@ -146,7 +147,7 @@ public class AMIPDFTool extends AbstractAMITool {
 
 	@Override
 	protected void parseSpecifics() {
-		printDebug();
+		super.parseSpecifics();
 		if (pages == null) {
 			pages = new ArrayList<Integer>();
 			pages.add(-1);
@@ -162,26 +163,22 @@ public class AMIPDFTool extends AbstractAMITool {
 		}
 	}
 
-	private void printDebug() {
-		LOG.info("maxpages            {}", maxpages);
-		LOG.info("svgDirectoryName    {}", svgDirectoryName);
-		LOG.info("minimagesize        {}", minimagesize);
-		LOG.info("outputSVG           {}", outputSVG);
-		LOG.info("pdf2html            {}", pdf2html);
-		LOG.info("imgDirectoryName    {}", pdfImagesDirname);
-		LOG.info("outputPDFImages     {}", outputPdfImages);
-		LOG.info("parserDebug         {}", parserDebug);
-	}
 
 	protected boolean processTree() {
 		processedTree = false;
 		LOG.warn("cTree: " + cTree.getName());
+		if (pages.size() > 0) {
+			PageIncluder pageIncluder = cTree.getOrCreatePDFDocumentProcessor().getOrCreatePageIncluder();
+			pageIncluder.addZeroNumberedIncludePages(pages).setLock(true);
+			System.out.println("pi>"+pageIncluder);
+		}
+
 		File pdfImagesDir = cTree.getExistingPDFImagesDir();
 		if (pdf2html) {
 			pdf2html();
 		}
 //		if (ParserType.early.equals(parserType)) {
-		boolean processed = false;
+//		boolean processed = false;
 		if (ParserDebug.AMI_ZERO.equals(parserDebug)) {
 			processedTree = docProcRunPDF();
 		} else if (ParserDebug.AMI_TWO.equals(parserDebug)) {

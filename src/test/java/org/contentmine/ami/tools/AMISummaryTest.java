@@ -11,33 +11,16 @@ import org.contentmine.cproject.util.CMineTestFixtures;
 import org.junit.Test;
 
 public class AMISummaryTest extends AbstractAMITest {
-	private static final String SUMMARY_CONST = "_summary";
 	private static final Logger LOG = LogManager.getLogger(AMISummaryTest.class);
-	static File TIGR2ESS = new File("/Users/pm286/workspace/Tigr2essDistrib/tigr2ess");
-	private static final File DICTIONARY_EXAMPLES = new File(TIGR2ESS, "dictionaries/examples/");
-	static File OSANCTUM200 = new File(TIGR2ESS, "/osanctum200");
-	static File OSANCTUM2000 = new File(TIGR2ESS, "scratch/ocimum2019027");
-
-	@Test	
-	public void testCommand() {
-		File targetDir = new File("target/summary/tigr2ess");
-		CMineTestFixtures.cleanAndCopyDir(OSANCTUM200, targetDir);
-		String args = 
-				"-p "+targetDir
-				+ " --word"
-				+ " --dictionary country drugs --junk "
-				+ " --species binomial"
-				+ " --output table"
-			;
-		new AMISummaryTool().runCommands(args);
-	}
+	private static final String SUMMARY_CONST = "_summary";
+	private static final File TARGET_SUMMARY = new File(TARGET, "summary");
 	
 	@Test
 	public void testSummarizeMethods() {
 		String root = "methods";
 		String project = "summarizeProject/";
 		File expectedDir = new File(TEST_BATTERY10+"."+"expected", project);
-		File targetDir = new File("target/"+project);
+		File targetDir = new File(TARGET_SUMMARY, project);
 		CMineTestFixtures.cleanAndCopyDir(TEST_BATTERY10, targetDir);
 		String cmd = "-vvv"
 				+ " -p "+targetDir
@@ -49,6 +32,8 @@ public class AMISummaryTest extends AbstractAMITest {
 		AMI.execute(cmd);
 		AbstractAMITest.compareDirectories(targetDir, expectedDir);
 		
+		// ami -vvv -p CEVOpen --output /sections/body/manny
+		//	 summary --glob **/PMC*/sections/*_body/*_methods/**/*_p.xml --flatten"
 	}
 
 	/** extracts the unflattened subtree with a globbed set of leafnodes
@@ -70,6 +55,30 @@ public class AMISummaryTest extends AbstractAMITest {
 				+ " summary "
 				+ " --glob **/PMC*/results/search/*/results.xml"
 //				+ " --merge=1"
+			;
+		AMI.execute(cmd);
+		AbstractAMITest.compareDirectories(targetDir, expectedDir);
+		
+	}
+
+	/** extracts the flattened subtree of abstracts
+	 * and a summary.csv 
+	 * 
+	 * */
+	@Test
+	public void testSummarizeAbstracts() {
+		String root = "abstract";
+		String project = "battery10/";
+		File expectedDir = new File(TEST_BATTERY10+"."+"expected", project);
+		File targetDir = new File(TARGET_SUMMARY, project);
+		CMineTestFixtures.cleanAndCopyDir(TEST_BATTERY10, targetDir);
+		String cmd = "-vvv"
+				+ " -p "+targetDir
+				+ " --output " + "/"+root
+				+ " summary "
+				+ " --flatten"
+				+ " --outtype tab"
+				+ " --glob **/PMC*/sections/*_front/*_article-meta/*_abstract.xml"
 			;
 		AMI.execute(cmd);
 		AbstractAMITest.compareDirectories(targetDir, expectedDir);

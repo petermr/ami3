@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<p>An initial cylindrically shaped observation window with a diameter of 1,800 voxels (1,170 μm) and a height of 250 voxels (162.5 μm) taken from the bottom electrode of the graphite–graphite sample was shifted and deformed according to the computed DVC displacement fields of the different time steps using MATLAB's built-in ‘interp3' function. This ‘dynamic mask' then labelled the part of the electrode microstructure in each time step that was used for microstructural computations.</p>
