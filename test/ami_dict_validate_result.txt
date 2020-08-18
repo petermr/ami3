@@ -1,0 +1,113 @@
+Generic values (DictionaryDisplayTool)
+================================
+--testString        : d      null
+--wikilinks         : d [Lorg.contentmine.ami.tools.AbstractAMIDictTool$WikiLink;@64b73e7a
+--fields            : m        []
+--files             : d        []
+--maxEntries        : d         3
+--remote            : d [https://github.com/petermr/dictionary]
+--suffix            : d       xml
+--validate          : m      true
+--help              : d     false
+--version           : d     false
+--dictionary        : d [country]
+--directory         : d ami_12_08_2020\small
+
+Specific values (DictionaryDisplayTool)
+================================
+--testString        : d      null
+--wikilinks         : d [Lorg.contentmine.ami.tools.AbstractAMIDictTool$WikiLink;@64b73e7a
+--fields            : m        []
+--files             : d        []
+--maxEntries        : d         3
+--remote            : d [https://github.com/petermr/dictionary]
+--suffix            : d       xml
+--validate          : m      true
+--help              : d     false
+--version           : d     false
+--dictionary        : d [country]
+--directory         : d ami_12_08_2020\small
+list all fields
+>C:\Users\eless\ami_12_08_2020\small
+
+Dictionary: country
+
+entries: 6
+******Unrecognised attribute(s) on entry******
+[term/name/description/id/wikipediaPage/wikipediaURL/wikidataAltLabel]
+or starts-with _p<number> or _q<number> or _
+<entry _iso3166="AF" description="sovereign state situated at the confluence of Western, Central, and South Asia" name="Afghanistan" term="Afghanistan" wikidata="http://www.wikidata.org/entity/Q889" wikipedia="https://en.wikipedia.org/wiki/Afghanistan">
+  <synonym>AFG</synonym>
+  <synonym>af</synonym>
+  <synonym>Islamic Republic of Afghanistan</synonym>
+ </entry>
+******Unrecognised attribute(s) on entry******
+[term/name/description/id/wikipediaPage/wikipediaURL/wikidataAltLabel]
+or starts-with _p<number> or _q<number> or _
+<entry _iso3166="AL" description="sovereign state in Southeast Europe" name="Albania" term="Albania" wikidata="http://www.wikidata.org/entity/Q222" wikipedia="https://en.wikipedia.org/wiki/Albania">
+  <synonym>ALB</synonym>
+  <synonym>al</synonym>
+  <synonym>Republic of Albania</synonym>
+  <synonym>Republika e Shqipδrisδ</synonym>
+  <synonym>Shqipδrisδ</synonym>
+ </entry>
+******Unrecognised attribute(s) on entry******
+[term/name/description/id/wikipediaPage/wikipediaURL/wikidataAltLabel]
+or starts-with _p<number> or _q<number> or _
+<entry _iso3166="DZ" description="sovereign state in North Africa" name="Algeria" term="Algeria" wikidata="http://www.wikidata.org/entity/Q262" wikipedia="https://en.wikipedia.org/wiki/Algeria">
+  <synonym>ALG</synonym>
+  <synonym>dz</synonym>
+  <synonym>PeopleÆs Democratic Republic of Algeria</synonym>
+ </entry>
+> fieldSummary:
+description> sovereign state situated at the confluence of Western, Central, and South Asia
+description> sovereign state in Southeast Europe
+description> sovereign state in North Africa
+description> US territory in the Pacific
+description> sovereign microstate between France and Spain, in Western Europe
+description> sovereign state in Africa
+description: [sovereign state in Southeast Europe, US territory in the Pacific, sovereign state in Africa, sovereign microstate between France and Spain, in Western Europe, sovereign state situated at the confluence of Western, Central, and South Asia, sovereign state in North Africa]
+id: []
+name> Afghanistan
+name> Albania
+name> Algeria
+name> American Samoa
+name> Andorra
+name> Angola
+name: [Afghanistan, Angola, Andorra, American Samoa, Algeria, Albania]
+term> Afghanistan
+term> Albania
+term> Algeria
+term> American Samoa
+term> Andorra
+term> Angola
+term: [Afghanistan, Angola, Andorra, American Samoa, Algeria, Albania]
+title: []
+url: []
+wikidata> http://www.wikidata.org/entity/Q889
+wikidata> http://www.wikidata.org/entity/Q222
+wikidata> http://www.wikidata.org/entity/Q262
+wikidata> http://www.wikidata.org/entity/Q16641
+wikidata> http://www.wikidata.org/entity/Q228
+wikidata> http://www.wikidata.org/entity/Q916
+wikidata: [http://www.wikidata.org/entity/Q889, http://www.wikidata.org/entity/Q228, http://www.wikidata.org/entity/Q262, http://www.wikidata.org/entity/Q916, http://www.wikidata.org/entity/Q16641, http://www.wikidata.org/entity/Q222]
+wikipedia> https://en.wikipedia.org/wiki/Afghanistan
+wikipedia> https://en.wikipedia.org/wiki/Albania
+wikipedia> https://en.wikipedia.org/wiki/Algeria
+wikipedia> https://en.wikipedia.org/wiki/American_Samoa
+wikipedia> https://en.wikipedia.org/wiki/Andorra
+wikipedia> https://en.wikipedia.org/wiki/Angola
+wikipedia: [https://en.wikipedia.org/wiki/Algeria, https://en.wikipedia.org/wiki/Afghanistan, https://en.wikipedia.org/wiki/Angola, https://en.wikipedia.org/wiki/American_Samoa, https://en.wikipedia.org/wiki/Albania, https://en.wikipedia.org/wiki/Andorra]
+desc: []
+entry: []
+synonym: []
+Attributes: @description: 6 @id: 0 @name: 6 @term: 6 @title: 0 @url: 0 @wikidata: 6 @wikipedia: 6
+dictionary@title: country
+======= start validation =======
+dictionary@title: country
+======= end validation =======
+Desc: Created from SPARQL query
+    Afghanistan
+    Albania
+    Algeria
+    ....
