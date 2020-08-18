@@ -126,6 +126,32 @@ When you type `echo $PATH` on the command line, you should see the `ami3-2020.07
 
 See https://kb.iu.edu/d/acar for another tutorial.
 
+### Setting your PATH on macOS
+
+The instructions below assume that after unzipping the distribution archive, you have a directory named `ami3-2020.07.24_07.23.42` in your home directory.
+
+You want to add the `$HOME/ami3-2020.07.24_07.23.42/bin` directory to your path.
+You can either follow the instructions for Unix above, or use the macOS-specific way described below.
+
+MacOS 10.5.5 (Leopard) introduced a utility called `path_helper` to help manage your `PATH`.
+This utility will add the contents of any files in the `/etc/pathd.d/` directory to your PATH.
+
+So, in our case, we can add `ami`'s `bin/` directory to the `PATH` with the following command:
+
+```bash
+echo $HOME/ami3-2020.07.24_07.23.42/bin > /etc/pathd.d/ami_home
+```
+
+This will create a file `/etc/pathd.d/ami_home` that contains one line: `$HOME/ami3-2020.07.24_07.23.42/bin`.
+This line is now added to your `PATH` every time you start a new Terminal session.
+
+Test this by closing your Terminal window and opening a new Terminal window, and type `echo $PATH`.
+The output should include the `$HOME/ami3-2020.07.24_07.23.42/bin` value.
+
+When a new version of AMI is released, simply execute the above command again to overwrite the `/etc/pathd.d/ami_home` file with the updated location of the new AMI version.
+
+
+
 ## Learning More About AMI
 
 See the [Running AMI](https://github.com/petermr/ami3/blob/master/README.md#running-ami) section in the README to learn more about the various `ami` commands.
