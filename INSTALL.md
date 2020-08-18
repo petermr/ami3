@@ -139,16 +139,16 @@ This utility will add the contents of any files in the `/etc/pathd.d/` directory
 So, in our case, we can add `ami`'s `bin/` directory to the `PATH` with the following command:
 
 ```bash
-echo $HOME/ami3-2020.07.24_07.23.42/bin > /etc/pathd.d/ami_home
+echo $HOME/ami3-2020.07.24_07.23.42/bin > /etc/pathd.d/ami
 ```
 
-This will create a file `/etc/pathd.d/ami_home` that contains one line: `$HOME/ami3-2020.07.24_07.23.42/bin`.
+This will create a file `/etc/pathd.d/ami` that contains one line: `$HOME/ami3-2020.07.24_07.23.42/bin`.
 This line is now added to your `PATH` every time you start a new Terminal session.
 
 Test this by closing your Terminal window and opening a new Terminal window, and type `echo $PATH`.
 The output should include the `$HOME/ami3-2020.07.24_07.23.42/bin` value.
 
-When a new version of AMI is released, simply execute the above command again to overwrite the `/etc/pathd.d/ami_home` file with the updated location of the new AMI version.
+When a new version of AMI is released, simply execute the above command again to overwrite the `/etc/pathd.d/ami` file with the updated location of the new AMI version.
 
 
 
