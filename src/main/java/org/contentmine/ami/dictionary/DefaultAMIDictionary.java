@@ -467,6 +467,9 @@ public class DefaultAMIDictionary extends DefaultStringDictionary {
 	}
 
 	public String getDictionaryName() {
+		if (dictionaryName == null) {
+			dictionaryName = getTitle();
+		}
 		return dictionaryName;
 	}
 

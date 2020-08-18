@@ -36,9 +36,10 @@ public class SimpleDictionary extends DefaultAMIDictionary {
 	public SimpleDictionary(String dictionaryName, Element dictionaryElement) {
 		this(dictionaryName);
 		super.dictionaryElement = dictionaryElement;
-		if (dictionaryName == null || !dictionaryName.equals(this.getTitle())) {
-//			throw new RuntimeException("null or non-matching title for dictionary: "+dictionaryName+"/"+this.getTitle());
-			LOG.error("null or non-matching title for dictionary: "+dictionaryName+"/"+this.getTitle());
+		if (this.getTitle() == null) {
+			LOG.error("***missing title for dictionary: " + dictionaryName + "/" + this.getTitle() + " ***");
+		} else if (!this.getTitle().equals(dictionaryName)) {
+			LOG.error("***non-matching title for dictionary / filename base: " + this.getTitle() + " != " + dictionaryName + "***");
 		}
 	}
 

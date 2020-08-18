@@ -1,14 +1,11 @@
 package org.contentmine.ami.dictionary;
 
-import java.awt.image.BufferedImage;
 import java.io.File;
 
-import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
-import org.contentmine.ami.tools.AMI;
+import org.apache.logging.log4j.Logger;
 import org.contentmine.ami.tools.AMIDict;
 import org.contentmine.ami.tools.AbstractAMITest;
-import org.contentmine.ami.tools.dictionary.DictionaryDisplayTool;
 import org.junit.Test;
 
 
@@ -81,12 +78,28 @@ public class AMIDictDisplayTest extends AbstractAMITest {
 				+ " --directory " + directory
 				+ " -vv"
 				+ " display"
-//				+ " --fields term name"
-				+ " --fields description"
+				+ " --fields term name description"
 				+ " --validate"
 				;
 		AMIDict.execute(args);
 		
 	}
+
+	@Test
+	public void testDictionaryValidateShowBugs() {
+		String dictionary = "bugs";
+		File directory = TEST_DICTIONARY;
+		String args = ""
+				+ " --dictionary " + dictionary
+				+ " --directory " + directory
+				+ " -vv"
+				+ " display"
+				+ " --fields id"
+				+ " --validate"
+				;
+		AMIDict.execute(args);
+		
+	}
+
 
 }

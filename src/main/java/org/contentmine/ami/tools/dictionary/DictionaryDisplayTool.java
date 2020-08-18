@@ -206,6 +206,7 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 	}
 
 	public void listDictionaryInfo() {
+		
 		LOG.warn("\nDictionary: " + simpleDictionary.getDictionaryName()+"\n");
 		List<Element> entries = XMLUtil.getQueryElements(simpleDictionary.getDictionaryElement(), "./*[local-name()='entry']");
 		LOG.warn("entries: "+entries.size());
@@ -267,24 +268,24 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 				+ ")"
 				+ "]"
 				
-//				+ " and not(@term)"
-//				+ " and not(@name)"
-//				+ " and not(@id)"
-//				+ " and not(@wikipedia)"
-//				+ " and not(@wikidata)"
-				+ " "
 				+ "]",
-				"******Bad entry attributes ****** ");
+				"******Unrecognised attribute(s) on entry****** \n"
+				+ "[term/name/description/id/wikipediaPage/wikipediaURL/wikidataAltLabel]\n"
+				+ "or starts-with _p<number> or _q<number> or _\n");
+		
+		
 	}
 	private void validateEntryChildren() {
 		validate("./*[local-name()='entry']/*[not(local-name()='synonym')]",
-				"******Bad entry children ****** ");
+				"******Unrecognised child on entry****** ");
 	}
 
 	private void validate(String xpath, String message, Element element) {
 		List<Node> nodes = XMLUtil.getQueryNodes(element, xpath);
 		if (nodes.size() != 0) {
-			LOG.error(message + nodes.get(0).toXML());
+			for (int i = 0; i < Math.min(nodes.size(), maxEntries); i++) {
+				LOG.error(message + nodes.get(i).toXML());
+			}
 		}
 	}
 
@@ -318,14 +319,16 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 	}
 
 	private void printDictionary() {
-		LOG.warn("dictionary: " + simpleDictionary.getDictionaryName());
+		LOG.trace("dictionary: " + simpleDictionary.getDictionaryName());
 		for (int i = 0; i < simpleDictionary.getDictionaryElement().getAttributeCount(); i++) {
 			Attribute attribute = simpleDictionary.getDictionaryElement().getAttribute(i);
 			String attName = attribute.getLocalName();
 			LOG.info("dictionary@" + attName + ": " + simpleDictionary.getDictionaryElement().getAttributeValue(attName));
 		}
 		if (validate) {
+			LOG.info("======= start validation =======");
 			validateDictionary();
+			LOG.info("======= end validation =======");
 		}
 	}
 
@@ -363,7 +366,7 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 			if (i < maxEntries) {
 				String term = entry.getAttributeValue(TERM);
 				LOG.warn("    "+term);
-				if (validate) {
+				if (false && validate) { // validation elsewhere
 					String message = validateAttributes(entry, MANDATORY_ENTRY_ATTRIBUTES, ALLOWED_ENTRY_ATTRIBUTES);
 //					message += validateChildren(entry, MANDATORY_ENTRY_CHILDREN, ALLOWED_ENTRY_CHILDREN);
 					if (message.trim().length() != 0) {
