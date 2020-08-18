@@ -489,14 +489,20 @@
   <g begin="text">
    <text y="179.344" x="385.427,390.479,393.812,397.309,398.858,402.747,404.694,408.582,412.471,418.299,422.188,426.077" svgx:width="0.72,0.5,0.5,0.22,0.56,0.28,0.56,0.56,0.83,0.56,0.56,0.33" style="fill:rgb(0,0,0);font-family:Helvetica;font-size:7.0px;stroke:none;">Cycle number</text>
   </g>
-  <path style="fill:rgb(128,0,128);stroke:none;stroke-width:1.0;" d="M152.650 159.950 M116.640 50.810 "/>
+  <path style="fill:rgb(128,0,128);stroke:none;stroke-width:1.0;" d="M152.650 159.950 M116.640 50.810 M156.140 622.480 L184.110 622.480 L184.110 712.440 L156.140 712.440 L156.140 622.480 "/>
+  <path style="fill:none;stroke:rgb(128,0,128);stroke-width:1.0;" d="M156.140 622.480 L184.110 622.480 L184.110 712.440 L156.140 712.440 L156.140 622.480 "/>
   <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.3;" d="M156.140 69.930 L184.110 69.930 L184.110 159.890 "/>
   <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.3;" d="M156.140 159.890 L156.140 69.930 "/>
+  <path style="fill:rgb(128,128,0);stroke:none;stroke-width:0.3;" d="M191.080 622.480 L219.040 622.480 L219.040 671.370 L191.080 671.370 L191.080 622.480 "/>
+  <path style="fill:none;stroke:rgb(128,128,0);stroke-width:0.3;" d="M191.080 622.480 L219.040 622.480 L219.040 671.370 L191.080 671.370 L191.080 622.480 "/>
   <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.3;" d="M191.080 111.000 L219.040 111.000 L219.040 159.890 "/>
   <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.3;" d="M191.080 159.890 L191.080 111.000 "/>
+  <path style="fill:rgb(0,0,255);stroke:none;stroke-width:0.3;" d="M226.020 622.480 L253.980 622.480 L253.980 653.870 L226.020 653.870 L226.020 622.480 "/>
+  <path style="fill:none;stroke:rgb(0,0,255);stroke-width:0.3;" d="M226.020 622.480 L253.980 622.480 L253.980 653.870 L226.020 653.870 L226.020 622.480 "/>
   <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.3;" d="M226.020 128.500 L253.980 128.500 L253.980 159.890 "/>
   <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.3;" d="M226.020 159.890 L226.020 128.500 "/>
-  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.3;" d="M260.960 159.890 "/>
+  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.3;" d="M260.960 622.480 L288.920 622.480 L288.920 628.730 L260.960 628.730 L260.960 622.480 "/>
+  <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.3;" d="M260.960 159.890 M260.960 622.480 L288.920 622.480 L288.920 628.730 L260.960 628.730 L260.960 622.480 "/>
   <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.3;" d="M260.960 153.630 L288.920 153.630 L288.920 159.890 "/>
   <path style="fill:none;stroke:rgb(0,0,0);stroke-width:0.3;" d="M260.960 159.890 L260.960 153.630 "/>
   <path style="fill:none;stroke:rgb(255,0,0);stroke-width:0.3;" d="M240.030 125.610 L240.030 128.500 "/>
@@ -596,6 +602,7 @@
   <path style="fill:none;stroke:rgb(255,255,255);stroke-width:0.5;" d="M239.180 193.140 L251.220 193.140 "/>
   <path style="fill:none;stroke:rgb(255,255,255);stroke-width:0.75;" d="M239.210 249.450 L251.260 249.450 "/>
   <path style="fill:none;stroke:rgb(255,255,255);stroke-width:0.75;" d="M245.320 193.560 L245.320 248.980 "/>
+  <path style="fill:rgb(255,255,255);stroke:none;stroke-width:0.5;" d="M124.690 525.040 L142.940 525.040 L142.940 526.760 L124.690 526.760 L124.690 525.040 "/>
   <g begin="text">
    <text y="253.852" x="124.206,128.095,131.983" svgx:width="0.56,0.56,0.28" style="fill:rgb(255,255,255);font-family:Helvetica;font-size:7.0px;stroke:none;">20 </text>
    <text y="253.852" x="133.929" svgx:width="0.58" style="fill:rgb(255,255,255);font-family:Symbol;font-size:7.0px;stroke:none;">µ</text>
@@ -610,8 +617,8 @@
    <text y="222.95" x="178.29" svgx:width="0.58" style="fill:rgb(255,255,255);font-family:Symbol;font-size:7.0px;stroke:none;">µ</text>
    <text y="222.95" x="182.322" svgx:width="0.83" style="fill:rgb(255,255,255);font-family:Helvetica;font-size:7.0px;stroke:none;">m</text>
   </g>
-  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.5;" d="M277.290 232.010 M277.970 234.300 L273.900 232.260 L277.970 230.230 L277.970 234.300 ZM317.870 230.230 L321.940 232.260 L317.870 234.300 L317.870 230.230 "/>
-  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.5;" d="M345.710 227.930 M346.390 230.220 L342.320 228.180 L346.390 226.150 L346.390 230.220 ZM393.970 226.150 L398.030 228.180 L393.970 230.220 L393.970 226.150 "/>
+  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.5;" d="M277.290 232.010 M277.290 550.350 L318.550 550.350 L318.550 549.840 L277.290 549.840 L277.290 550.350 M277.970 234.300 L273.900 232.260 L277.970 230.230 L277.970 234.300 ZM317.870 230.230 L321.940 232.260 L317.870 234.300 L317.870 230.230 "/>
+  <path style="fill:rgb(0,0,0);stroke:none;stroke-width:0.5;" d="M345.710 227.930 M345.710 554.430 L394.640 554.430 L394.640 553.920 L345.710 553.920 L345.710 554.430 M346.390 230.220 L342.320 228.180 L346.390 226.150 L346.390 230.220 ZM393.970 226.150 L398.030 228.180 L393.970 230.220 L393.970 226.150 "/>
   <g begin="text">
    <text y="242.746" x="351.265,355.16,359.056,361.005,364.901,366.735,372.569" svgx:width="0.56,0.56,0.28,0.56,0.28,0.83,0.83" style="fill:rgb(0,0,0);font-family:Helvetica;font-size:7.0px;stroke:none;">17.4 mm</text>
    <text y="244.99" x="277.767,281.663,285.559,287.509,291.406,293.24,299.075" svgx:width="0.56,0.56,0.28,0.56,0.28,0.83,0.83" style="fill:rgb(0,0,204);font-family:Helvetica;font-size:7.0px;stroke:none;">14.2 mm</text>
@@ -622,6 +629,7 @@
    <text y="197.64" x="198.303,203.713,206.039,209.926,213.813,217.7,219.25,221.191" svgx:width="0.78,0.33,0.56,0.56,0.56,0.22,0.28,0.56" style="fill:rgb(255,255,255);font-family:Helvetica;font-size:7.0px;stroke:none;">Graphite</text>
    <text y="197.803" x="351.591,357.035,359.364,363.254,367.143,371.033,372.585,374.529" svgx:width="0.78,0.33,0.56,0.56,0.56,0.22,0.28,0.56" style="fill:rgb(0,0,0);font-family:Helvetica;font-size:7.0px;stroke:none;">Graphite</text>
   </g>
+  <path style="fill:rgb(255,255,255);stroke:none;stroke-width:0.5;" d="M198.150 524.630 L216.400 524.630 L216.400 526.350 L198.150 526.350 L198.150 524.630 "/>
   <g begin="text">
    <text y="158.031" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)" rotateDegrees="0" matrix="[0.0,6.9956,-7.0,0.0,124.65,624.3306]" x="124.65" svgx:width="0.67" style="fill:rgb(0,0,0);font-family:Helvetica;font-size:7.0px;stroke:none;">V</text>
    <text y="153.363" transform="matrix(1.0,0.0,0.0,1.0,0.0,0.0)" rotateDegrees="0" matrix="[0.0,6.9956,-7.0,0.0,124.65,628.9988]" x="124.65" svgx:width="0.56" style="fill:rgb(0,0,0);font-family:Helvetica;font-size:7.0px;stroke:none;">o</text>

@@ -270,8 +270,8 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 				
 				+ "]",
 				"******Unrecognised attribute(s) on entry****** \n"
-				+ "[term/name/description/id/wikipediaPage/wikipediaURL/wikidataAltLabel]\n"
-				+ "or starts-with _p<number> or _q<number> or _\n");
+				+ "[Allowed attributes: term/name/description/id/wikipediaPage/wikipediaURL/wikidataAltLabel]\n"
+				+ "or starts-with _p<number> or _q<number> or _<anything>]\n\n");
 		
 		
 	}

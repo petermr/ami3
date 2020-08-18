@@ -172,7 +172,6 @@ private static final String WIDTH = "width";
     		System.out.println(">appRect ["+format(p0, ndec)+"/"+format(p1, ndec)+"/"+format(p2, ndec)+"/"+format(p3, ndec)+"]");
     	}
     	super.appendRectangle(p0, p1, p2, p3);
-
     }
 // ===== PATHS ========
     

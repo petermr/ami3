@@ -12,7 +12,7 @@ public class AMIDebugParameters {
 	private static final Logger LOG = LogManager.getLogger(AMIDebugParameters.class);
 // default - show everything
 	public boolean showAnnotation = true;
-	public boolean showAppendRectangle = true;
+	public boolean showAppendRectangle = /*true*/ false;
 	public boolean showBeginMarked = true;
 	public boolean showBeginText = true;
 	public boolean showChar = true;
@@ -48,7 +48,7 @@ public class AMIDebugParameters {
 	public static AMIDebugParameters getDefaultParameters() {
 		AMIDebugParameters parameters = new AMIDebugParameters();
 		parameters.showAnnotation = true;
-		parameters.showAppendRectangle = /*true*/ false;
+		parameters.showAppendRectangle = /*true */false;
 		parameters.showBeginMarked = true;
 		parameters.showBeginText = true;
 		parameters.showChar = true;
@@ -81,7 +81,7 @@ public class AMIDebugParameters {
 	public static AMIDebugParameters getBriefParameters() {
 		AMIDebugParameters parameters = new AMIDebugParameters();
 		parameters.showAnnotation = false;
-		parameters.showAppendRectangle = /*false*/ false;
+		parameters.showAppendRectangle = false /*true*/;
 		parameters.showBeginMarked = false;
 		parameters.showBeginText = false;
 		parameters.showChar = false;

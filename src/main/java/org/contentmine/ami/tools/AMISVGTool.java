@@ -363,7 +363,9 @@ public enum TidySVG {
 			try {
 				if (size > 0) {
 					vectorWriter.write("\n" + page + ":: " + size);
-					SVGSVG.wrapAndWriteAsSVG(pathList, new File(svgVectorDir, "paths.svg"));
+					File pathFile = new File(svgVectorDir, "paths.svg");
+					LOG.info("writing paths to " + pathFile);
+					SVGSVG.wrapAndWriteAsSVG(pathList, pathFile);
 				}
 			} catch (IOException e) {
 				LOG.error("Cannot write to writer", e);

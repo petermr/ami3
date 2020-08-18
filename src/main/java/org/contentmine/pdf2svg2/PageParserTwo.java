@@ -156,6 +156,7 @@ private static final String CLIP_PATH = "clipPath";
 //    }
 
     // This doesn't mark the canvas so not used
+    //   Oh yes it does
     @Override
     public void appendRectangle(Point2D p0, Point2D p1, Point2D p2, Point2D p3) {
     	if (debugParams.showAppendRectangle) {

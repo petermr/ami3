@@ -16,8 +16,8 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.pdfbox.pdmodel.PDResources;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.font.PDFont;
@@ -260,15 +260,39 @@ public static final String ILLEGAL_CHAR = "?";
 // ===== APPEND RECTANGLE =========
 
     /** not sure what this does - maybe sets a window
-     * not mandatory */
+     * not mandatory 
+     * WRONG - it creates a rectangle
+     */
     @Override
     public void appendRectangle(Point2D p0, Point2D p1, Point2D p2, Point2D p3) {
+    	if (debugParams.showAppendRectangle) {System.out.println("R"+format(p0, p1, p2, p3, ndec));}
     	super.appendRectangle(p0, p1, p2, p3);
+    	/** this is AWFUL. 
+    	 * Some of these rects are clippng rects and I haven't worked out how. This will let small rects through
+    	 */
+    	if  (Math.abs(p2.getX() - p0.getX()) < 100 && Math.abs(p3.getX() - p1.getX()) < 100 &&
+    		 Math.abs(p2.getY() - p0.getY()) < 100 && Math.abs(p3.getY() - p1.getY()) < 100) {
+	    	checkAndAddPrimitive(new MovePrimitive(new Real2(p0.getX(), transformYIdent((float)p0.getY())).format(ndec)));
+	    	checkAndAddPrimitive(new LinePrimitive(new Real2(p1.getX(), transformYIdent((float)p1.getY())).format(ndec)));
+	    	checkAndAddPrimitive(new LinePrimitive(new Real2(p2.getX(), transformYIdent((float)p2.getY())).format(ndec)));
+	    	checkAndAddPrimitive(new LinePrimitive(new Real2(p3.getX(), transformYIdent((float)p3.getY())).format(ndec)));
+	    	checkAndAddPrimitive(new LinePrimitive(new Real2(p0.getX(), transformYIdent((float)p0.getY())).format(ndec)));
+    	}
     }
+
+	private double transformYIdent(float y) {
+		return y;
+	}
+
+	private void checkAndAddPrimitive(SVGPathPrimitive pathPrimitive) {
+		if (checkViewBoxAndMaxPrimitives(pathPrimitive)) {
+			ensurePathPrimitiveList().add(pathPrimitive);
+    	}
+	}
     
 // ===== PATHS ========
     
-    /**  this does the actual stroking 
+	/**  this does the actual stroking 
      * gets stroke and Stroke from PDGraphics 
      * this is where we capture the stroke and stroke-width then create the SVGPath and dispatch it
      * does not reset fill*/
@@ -329,10 +353,10 @@ public static final String ILLEGAL_CHAR = "?";
     	if (debugParams.showMoveTo) {System.out.println("M"+format(x, y, ndec));}
     	super.moveTo(x, y);
     	Real2 point = new Real2(x, transformY(y));
-		MovePrimitive movePrimitive = new MovePrimitive(point.format(ndec));
-    	if (checkViewBoxAndMaxPrimitives(movePrimitive)) {
-			ensurePathPrimitiveList().add(movePrimitive);
-    	}
+		checkAndAddPrimitive(new MovePrimitive(point.format(ndec)));
+//    	if (checkViewBoxAndMaxPrimitives(movePrimitive)) {
+//			ensurePathPrimitiveList().add(movePrimitive);
+//    	}
     }
 
     /** captures lineTo and adds to PathPrimitiveList
@@ -346,10 +370,7 @@ public static final String ILLEGAL_CHAR = "?";
     	if (debugParams.showLineTo) {System.out.println("L"+format(x, y, ndec));}
     	super.lineTo(x, y);
     	Real2 point = new Real2(x, transformY(y));
-		LinePrimitive linePrimitive = new LinePrimitive(point.format(ndec));
-    	if (checkViewBoxAndMaxPrimitives(linePrimitive)) {
-			ensurePathPrimitiveList().add(linePrimitive);
-    	}
+		checkAndAddPrimitive(new LinePrimitive(point.format(ndec)));
     }
 
 
@@ -367,10 +388,10 @@ public static final String ILLEGAL_CHAR = "?";
     			new Real2(x3, transformY(y3)).format(ndec)
     		}
     		));
-    	CubicPrimitive cubicPrimitive = new CubicPrimitive(xyArray);
-    	if (checkViewBoxAndMaxPrimitives(cubicPrimitive)) {
-			ensurePathPrimitiveList().add(cubicPrimitive);
-    	}
+    	checkAndAddPrimitive(new CubicPrimitive(xyArray));
+//    	if (checkViewBoxAndMaxPrimitives(cubicPrimitive)) {
+//			ensurePathPrimitiveList().add(cubicPrimitive);
+//    	}
     }
 
     
@@ -586,6 +607,16 @@ public static final String ILLEGAL_CHAR = "?";
 		return "("+Util.format(point.getX(), ndec)+","+Util.format(point.getY(), ndec)+")";
 	}
 
+	protected String format(Point2D p0, Point2D p1, Point2D p2, Point2D p3, int ndec) {
+		return "("+
+				Util.format(p0.getX(), ndec)+","+Util.format(p0.getY(), ndec)+
+				Util.format(p1.getX(), ndec)+","+Util.format(p1.getY(), ndec)+
+				Util.format(p2.getX(), ndec)+","+Util.format(p2.getY(), ndec)+
+				Util.format(p3.getX(), ndec)+","+Util.format(p3.getY(), ndec)+
+	")";
+		
+	}
+
 	protected String format(float x, float y, int ndec) {
 		String s = "("+Util.format(x, ndec)+","+Util.format(y,  ndec)+")";
 		return s;
@@ -742,5 +773,10 @@ public static final String ILLEGAL_CHAR = "?";
 			viewBox = new Real2Range(new RealRange(-100, 1000), new RealRange(-100, 1000));
 	//		maxPrimitives = 5000; /// 
 		}
+
+    private Real2 createReal2(Point2D p) {
+    	return (p == null) ? null : new Real2(p.getX(), p.getY());
+	}
+
 
 }
