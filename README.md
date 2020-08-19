@@ -7,6 +7,12 @@ AMI is a **toolkit** to manage (scholarly) documents; download, aggregate, trans
 
 AMI turns documents into knowledge. Or at least the input for knowledge.
 
+## Wiki
+See https://github.com/petermr/ami3/wiki/ for the AMI3 wiki. We aim to have a wiki page for every `ami` and `amidict` command. These will have 
+* the `picocli` commands
+* hopefully a small tutorial
+* comments
+
 ## Installation
 
 As of July 24, 2020, binary distributions of AMI are hosted on GitHub Packages.
