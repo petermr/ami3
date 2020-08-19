@@ -208,4 +208,18 @@ public abstract class AbstractAMITest {
 		return globbedFiles;
 	}
 
+	protected String createTargetDirname() {
+		return "target/" + createAmiModuleName()+"/";
+	}
+
+	protected File createTargetDir() {
+		return new File(createTargetDirname());
+	}
+
+	private String createAmiModuleName() {
+		String shortClassName = this.getClass().getSimpleName();
+		String moduleName = shortClassName.replaceAll("(Tool|Test|AMI)", "").toLowerCase();
+		return moduleName;
+	}
+
 }

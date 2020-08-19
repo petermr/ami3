@@ -219,6 +219,8 @@ public abstract class AbstractAMISearchTool extends AbstractAMITool {
 			commandProcessor.runNormaIfNecessary();
 			commandProcessor.runJsonBibliography();
 			commandProcessor.runLegacyPluginOptions(this);
+			
+			LOG.info("Running oldstyle datatales");
 			commandProcessor.createDataTables(wikidataBiblio);
 		
 		} catch (IOException e) {

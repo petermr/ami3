@@ -337,8 +337,12 @@ public class AMISummaryTool extends AbstractAMITool {
 		if (outputTypes.contains(OutputType.tab)) {
 			String content = "";
 			try {
-				content = FileUtils.readFileToString(subTreeFile, "UTF-8");
-				content = content.replaceAll(",", "").replaceAll("<[^>]*>", "").replaceAll("\n", " ");
+				content = FileUtils.readFileToString(subTreeFile, "UTF-8").trim();
+				content = content
+						.replaceAll(",", " ")			// remove embedded commas
+						.replaceAll("<[^>]*>", "")      // remove HTML/XML tags
+						.replaceAll("\n", " ")          // remove newlines
+						.replaceAll("\\s+", " ");       // close up spaces
 			} catch (IOException e) {
 				throw new RuntimeException("cannot read "+subTreeFile, e);
 			}

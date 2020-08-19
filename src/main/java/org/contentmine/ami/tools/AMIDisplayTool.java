@@ -13,6 +13,7 @@ import org.apache.logging.log4j.Logger;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.DebugPrint;
+import org.contentmine.cproject.util.DataTablesTool;
 import org.contentmine.eucl.euclid.Transform2;
 import org.contentmine.eucl.euclid.Vector2;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -66,7 +67,9 @@ public class AMIDisplayTool extends AbstractAMITool {
 	}
 
 	private enum DataTableOption {
-		
+		foo,			// remove later
+		bar,			// remove later
+		;
 	}
 
     @Option(names = {"--aggregate"},
@@ -135,16 +138,15 @@ public class AMIDisplayTool extends AbstractAMITool {
 
     @Override
 	protected void parseSpecifics() {
-    	AMIUtil.printNameValue("aggregate", summaryFilename);
-    	AMIUtil.printNameValue("assert", assertList);
-    	AMIUtil.printNameValue("display", displayList);
-    	AMIUtil.printNameValue("orientation", orientation);
+    	super.parseSpecifics();
 	}
 
 
     @Override
     protected void runSpecifics() {
-    	if (processTrees()) { 
+		if (dataTableParameters != null) {
+			makeDataTable();
+		} else if (processTrees()) { 
     	} else {
 			LOG.error(DebugPrint.MARKER, "must give cProject or cTree");
 	    }
@@ -162,6 +164,17 @@ public class AMIDisplayTool extends AbstractAMITool {
 		}
 		summarizeFiles();
 		return processedTree;
+	}
+	
+	private void makeDataTable() {
+		DataTablesTool dataTablesTool = DataTablesTool.createBiblioEnabledTable();
+		boolean wikidataBiblio = true;
+		File projectDir = cProject.getDirectory();
+		try {
+			dataTablesTool.createDataTables(wikidataBiblio, projectDir, /*getMetadataByCTreename()*/ null);
+		} catch (IOException e) {
+			throw new RuntimeException("cannot create dataTablesTool", e );
+		}
 	}
 
 	private void displayImageDir(File imageDir) {

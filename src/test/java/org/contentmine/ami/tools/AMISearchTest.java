@@ -77,24 +77,6 @@ public class AMISearchTest extends AbstractAMITest {
 	}
 	
 	@Test
-	/** this effectively runs
-	 * ami -p <targetDir> search --dictionary country
-	 */
-	public void testZikaCooccurrence1() {
-		System.out.println(AMIFixtures.TEST_ZIKA1_DIR);
-		File targetDir = new File("target/cooccurrence/zika10a");
-		CMineTestFixtures.cleanAndCopyDir(AMIFixtures.TEST_ZIKA1_DIR, targetDir);
-		String args = 
-				" -p "+targetDir
-				+ " -vv"
-				+ " search"
-				+ " --dictionary "
-				+ " country disease"
-			;
-		AMI.main(args);
-	}
-	
-	@Test
 	// OK
 	public void testZikaCooccurrence() {
 		File targetDir = new File("target/cooccurrence/zika10");

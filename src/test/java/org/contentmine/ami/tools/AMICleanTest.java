@@ -28,15 +28,6 @@ import org.junit.Test;
 public class AMICleanTest extends AbstractAMITest {
 	
 	private static final String TARGET_CLEAN = new AMICleanTest().createTargetDirname();
-
-	private String createTargetDirname() {
-		return "target/" + createAmiModuleName()+"/";
-	}
-	private String createAmiModuleName() {
-		String shortClassName = this.getClass().getSimpleName();
-		String moduleName = shortClassName.replaceAll("(Tool|Test|AMI)", "").toLowerCase();
-		return moduleName;
-	}
 	static final Logger LOG = LogManager.getLogger(AMICleanTest.class);
 	
 @Test
