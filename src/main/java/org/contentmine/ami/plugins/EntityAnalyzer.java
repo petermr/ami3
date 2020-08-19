@@ -9,6 +9,7 @@ import java.util.List;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.contentmine.ami.AMIProcessor;
 import org.contentmine.ami.plugins.OccurrenceAnalyzer.OccurrenceType;
 import org.contentmine.ami.plugins.OccurrenceAnalyzer.SubType;
 import org.contentmine.eucl.euclid.Real2;
@@ -470,6 +471,22 @@ public class EntityAnalyzer {
 	File createCooccurenceTop() {
 		File cooccurrenceTop = new File(getProjectDir(), CooccurrenceAnalyzer.COOCCURRENCE);
 		return cooccurrenceTop;
+	}
+
+	public void defaultAnalyzeCooccurrence(List<String> facets) {
+		if (facets == null) {
+			return;
+		}
+	
+		AMIProcessor.LOG.debug("Analysing facets: "+facets);
+		for (String facet : facets) {
+			createAndAddOccurrenceAnalyzer(facet).setMaxCount(25);
+		}
+		
+		writeCSVFiles();
+		setWriteCSV(true);
+		setWriteSVG(true);
+		createAllCooccurrences();
 	}
 
 	private static File makeInputFile(String fileroot) {

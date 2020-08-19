@@ -10,6 +10,7 @@ import java.util.Map;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.contentmine.ami.plugins.EntityAnalyzer;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.DebugPrint;
@@ -98,12 +99,25 @@ public class AMIDisplayTool extends AbstractAMITool {
             )
     private List<String> assertList = null;
 
-    @Option(names = {"--datatables"},
-//    		arity = "1..*",
+    @Option(names = {"--cooccurrence"},
+    		arity = "0..*",
     		split = ",",
-            description = "create dataTables from CProject files. EXPERIMENTAL."
+            description = "create cooccurrence from CProject files. EXPERIMENTAL."
+            )
+    private Map<DataTableOption, String> cooccurrenceParameters = null; // use non-null as key to create
+
+    @Option(names = {"--datatables"},
+    		arity = "0..*",
+    		split = ",",
+            description = "create dataTables from CProject files."
             )
     private Map<DataTableOption, String> dataTableParameters = null; // use non-null as key to create
+
+    @Option(names = {"--facets"},
+    		split = ",",
+            description = "facets to display"
+            )
+    private List<String> facets = new ArrayList<>();
 
     @Option(names = {"--display"},
     		arity = "1..*",
@@ -146,6 +160,8 @@ public class AMIDisplayTool extends AbstractAMITool {
     protected void runSpecifics() {
 		if (dataTableParameters != null) {
 			makeDataTable();
+		} else if (cooccurrenceParameters != null) {
+			makeCooccurrence();
 		} else if (processTrees()) { 
     	} else {
 			LOG.error(DebugPrint.MARKER, "must give cProject or cTree");
@@ -175,6 +191,18 @@ public class AMIDisplayTool extends AbstractAMITool {
 		} catch (IOException e) {
 			throw new RuntimeException("cannot create dataTablesTool", e );
 		}
+	}
+
+	private void makeCooccurrence() {
+		EntityAnalyzer entityAnalyzer = EntityAnalyzer.createEntityAnalyzer(cProject.getDirectory());
+		entityAnalyzer.defaultAnalyzeCooccurrence(facets);
+
+//		File projectDir = cProject.getDirectory();
+//		try {
+//			dataTablesTool.createDataTables(wikidataBiblio, projectDir, /*getMetadataByCTreename()*/ null);
+//		} catch (IOException e) {
+//			throw new RuntimeException("cannot create dataTablesTool", e );
+//		}
 	}
 
 	private void displayImageDir(File imageDir) {

@@ -49,7 +49,7 @@ public class AMIDisplayTest extends AbstractAMITest {
 				+ " --dictionary "
 				+ " country disease"
 			;
-//		AMI.execute(args);
+		AMI.execute(args);
 
 		// needs -p to root it
 		args = " -vvv "
@@ -57,14 +57,43 @@ public class AMIDisplayTest extends AbstractAMITest {
 				+ " clean"
 				+ " **/full.dataTables.html"
 				;
-//		AMI.execute(args);
+		AMI.execute(args);
 		
 		args = " -v -p "+TARGET_DIR 
-				+ " display --datatables foo=fudge,bar=bilge"
+				+ " display"
+				+ " --datatables"
+				;
+		AMI.execute(args);
+	}
+
+	@Test
+	/** this effectively runs
+	 * ami -p <targetDir> search --dictionary country and then datatables again
+	 */
+	public void testCooccurrence() {
+		CMineTestFixtures.cleanAndCopyDir(AMIFixtures.TEST_ZIKA10_DIR, TARGET_DIR);
+		String args = 
+				" -p "+TARGET_DIR
+	//			+ " -v"
+				+ " search"
+				+ " --dictionary "
+				+ " country disease"
+			;
+//		AMI.execute(args);
+
+		// needs -p to root it
+		args = " -vvv "
+				+ " -p "+TARGET_DIR
+				+ " clean"
+				+ " **/__cooccurrence/"
 				;
 		AMI.execute(args);
 		
-		
+		args = " -v -p "+TARGET_DIR 
+				+ " display"
+				+ " --cooccurrence --facets=country,disease"
+				;
+		AMI.execute(args);
 	}
 
 }

@@ -40,7 +40,7 @@ public class AMIProcessor {
 	private static final String ARTIFACT_ID = "artifactId";
 	private static final String PLUGIN = "plugin";
 	private static final String LOCAL_NAME_BR = "local-name()";
-	private static final Logger LOG = LogManager.getLogger(AMIProcessor.class);
+	public static final Logger LOG = LogManager.getLogger(AMIProcessor.class);
 // move to AMISearch...
 	public static final String SEARCH = "search";
 	public static final String HELP = "help";
@@ -92,22 +92,10 @@ public class AMIProcessor {
 	}
 	
 	public void defaultAnalyzeCooccurrence(List<String> facets) {
-		if (facets == null) {
-			return;
-		}
 		EntityAnalyzer entityAnalyzer = EntityAnalyzer.createEntityAnalyzer(cProject.getDirectory());
-	
-		LOG.debug("Analysing facets: "+facets);
-		for (String facet : facets) {
-			entityAnalyzer.createAndAddOccurrenceAnalyzer(facet).setMaxCount(25);
-		}
-		
-		entityAnalyzer.writeCSVFiles();
-		entityAnalyzer.setWriteCSV(true);
-		entityAnalyzer.setWriteSVG(true);
-		entityAnalyzer.createAllCooccurrences();
+		entityAnalyzer.defaultAnalyzeCooccurrence(facets);
 	}
-
+	
 	public void runSearches(List<String> facetList) {
 		String cmd = "word(frequencies)xpath:@count>20~w.stopwords:pmcstop.txt_stopwords.txt";
 		cmd = addSearches(facetList, cmd);
