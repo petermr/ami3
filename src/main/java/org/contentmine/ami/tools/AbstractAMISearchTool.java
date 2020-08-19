@@ -207,7 +207,7 @@ public abstract class AbstractAMISearchTool extends AbstractAMITool {
  * @param cmd
  */
 	protected void runLegacyCommandProcessor(String cmd) {
-		LOG.debug("SEARCH running legacy processors");
+		LOG.info("SEARCH running legacy processors");
 		try {
 			
 			CommandProcessor commandProcessor = new CommandProcessor(cProject.getDirectory());

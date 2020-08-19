@@ -9,6 +9,9 @@ import java.util.Map;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.contentmine.ami.lookups.WikipediaLookup;
+import org.contentmine.ami.plugins.CommandProcessor;
+import org.contentmine.ami.plugins.ResultsAnalysisImpl;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.metadata.AbstractMetadata;
 import org.contentmine.cproject.metadata.DataTableLookup;
@@ -32,6 +35,7 @@ import org.contentmine.graphics.html.HtmlTh;
 import org.contentmine.graphics.html.HtmlThead;
 import org.contentmine.graphics.html.HtmlTr;
 import org.contentmine.graphics.html.HtmlTrContainer;
+import org.contentmine.norma.biblio.json.EPMCConverter;
 
 import nu.xom.Element;
 
@@ -514,6 +518,28 @@ public final static String ASPNET_AJAX = "http://ajax.aspnetcdn.com/ajax/";
 
 	public void setAddWikidataBiblio(boolean addWikidataBiblio) {
 		this.addWikidataBiblio = addWikidataBiblio;
+	}
+
+	public DataTablesTool createDataTables(boolean wikidataBiblio, File projectDir, Map<String, AbstractMetadata> metadataByCTreename) throws IOException {
+		CommandProcessor.LOG.warn("\ncreate data tables");
+		if (projectDir == null) {
+			throw new RuntimeException("projectDir must be set");
+		}
+		setLookup(new WikipediaLookup());
+		setAddWikidataBiblio(wikidataBiblio);
+		setProjectDir(projectDir);
+		setMetadataByTreename(metadataByCTreename);
+		
+		ResultsAnalysisImpl resultsAnalysis = new ResultsAnalysisImpl(this);
+		resultsAnalysis.addDefaultSnippets(projectDir);
+		resultsAnalysis.setRemoteLink0(EPMCConverter.HTTP_EUROPEPMC_ORG_ARTICLES);
+		resultsAnalysis.setRemoteLink1("");
+		resultsAnalysis.setLocalLink0("");
+		resultsAnalysis.setLocalLink1(ResultsAnalysisImpl.SCHOLARLY_HTML);
+		resultsAnalysis.setRowHeadingName("EPMCID");
+	
+		createTableComponents(resultsAnalysis);
+		return this;
 	}
 
 }

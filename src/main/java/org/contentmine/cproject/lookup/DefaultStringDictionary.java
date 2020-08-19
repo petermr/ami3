@@ -113,7 +113,7 @@ public class DefaultStringDictionary {
 		if (term == null) return;
 		String[] wordList = term.split("\\s+");
 		String key = wordList[0];
-		System.out.println("K "+key);
+		LOG.trace("Key "+key);
 		List<List<String>> lists = trailingWordsByLeadWord.get(key);
 		if (lists == null) {
 			lists = new ArrayList<List<String>>();

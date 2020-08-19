@@ -11,7 +11,6 @@ import java.util.Map;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
-import org.contentmine.ami.lookups.WikipediaLookup;
 import org.contentmine.ami.tools.AMISearchTool;
 import org.contentmine.ami.tools.AbstractAMITool;
 import org.contentmine.cproject.files.CProject;
@@ -38,7 +37,8 @@ public class CommandProcessor {
 
 
 	public static final Logger LOG = LogManager.getLogger(CommandProcessor.class);
-public final static String SYMBOLS = NAConstants.PLUGINS_RESOURCE+"/symbols.xml";
+	
+	public final static String SYMBOLS = NAConstants.PLUGINS_RESOURCE+"/symbols.xml";
 	private static final String EXPAND = "expand";
 	private static final String ABBREVIATION = "abbreviation";
 	private static final String ARTICLES = "articles";
@@ -215,26 +215,9 @@ public final static String SYMBOLS = NAConstants.PLUGINS_RESOURCE+"/symbols.xml"
 	 * @throws IOException
 	 */
 	public DataTablesTool createDataTables(boolean wikidataBiblio) throws IOException {
-		LOG.warn("\ncreate data tables");
-		if (projectDir == null) {
-			throw new RuntimeException("projectDir must be set");
-		}
-		dataTablesTool = DataTablesTool.createBiblioEnabledTable();
-		dataTablesTool.setLookup(new WikipediaLookup());
-		dataTablesTool.setAddWikidataBiblio(wikidataBiblio);
-		dataTablesTool.setProjectDir(projectDir);
-		dataTablesTool.setMetadataByTreename(metadataByCTreename);
-		
-		ResultsAnalysisImpl resultsAnalysis = new ResultsAnalysisImpl(dataTablesTool);
-		resultsAnalysis.addDefaultSnippets(this.projectDir);
-		resultsAnalysis.setRemoteLink0(EPMCConverter.HTTP_EUROPEPMC_ORG_ARTICLES);
-		resultsAnalysis.setRemoteLink1("");
-		resultsAnalysis.setLocalLink0("");
-		resultsAnalysis.setLocalLink1(ResultsAnalysisImpl.SCHOLARLY_HTML);
-		resultsAnalysis.setRowHeadingName("EPMCID");
-
-		dataTablesTool.createTableComponents(resultsAnalysis);
-		return dataTablesTool;
+		DataTablesTool dataTablesTool = DataTablesTool.createBiblioEnabledTable();
+		return dataTablesTool.createDataTables(wikidataBiblio, projectDir, getMetadataByCTreename());
+	
 	}
 
 	public static void main(String[] args) throws IOException {

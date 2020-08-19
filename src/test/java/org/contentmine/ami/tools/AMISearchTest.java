@@ -68,7 +68,7 @@ public class AMISearchTest extends AbstractAMITest {
 		CMineTestFixtures.cleanAndCopyDir(AMIFixtures.TEST_ZIKA10_DIR, targetDir);
 		String args = 
 				" -p "+targetDir
-				+ " -vvv"
+//				+ " -v"
 				+ " search"
 				+ " --dictionary "
 				+ " country disease"
