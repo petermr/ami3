@@ -5,14 +5,14 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.commons.io.FilenameUtils;
-import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.DebugPrint;
-import org.contentmine.eucl.euclid.RealArray;
 import org.contentmine.eucl.euclid.Transform2;
 import org.contentmine.eucl.euclid.Vector2;
 import org.contentmine.eucl.xml.XMLUtil;
@@ -34,7 +34,6 @@ import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGSVG;
 
 import nu.xom.Element;
-import nu.xom.Node;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 
@@ -52,6 +51,7 @@ description = {
 		"Displays files in CTree.",
 		"Uses HTML to aggregate several files from (say) same imageDir."
 		+ "Also creates aggregated links in parent directory."
+		+ "Also (2020-08) runs new dataTables (prototype)"
 })
 public class AMIDisplayTool extends AbstractAMITool {
 	private static final String FAIL = "fail";
@@ -59,13 +59,15 @@ public class AMIDisplayTool extends AbstractAMITool {
 	private static final String IMAGE = "image";
 
 	private static final Logger LOG = LogManager.getLogger(AMIDisplayTool.class);
-private enum Orientation {
+	private enum Orientation {
 		horizontal,
 		overlap,
 		vertical,
 	}
 
-
+	private enum DataTableOption {
+		
+	}
 
     @Option(names = {"--aggregate"},
     		arity = "1",
@@ -92,6 +94,13 @@ private enum Orientation {
             		
             )
     private List<String> assertList = null;
+
+    @Option(names = {"--datatables"},
+//    		arity = "1..*",
+    		split = ",",
+            description = "create dataTables from CProject files. EXPERIMENTAL."
+            )
+    private Map<DataTableOption, String> dataTableParameters = null; // use non-null as key to create
 
     @Option(names = {"--display"},
     		arity = "1..*",

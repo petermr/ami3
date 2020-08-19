@@ -84,6 +84,15 @@ public class WikidataSparql {
 	}
 
 	private void searchValuesInTarget(List<String> searchValues, String target, List<String> targetValues) {
+		if (searchValues == null) {
+			LOG.error("No search values given for " + target + " in WikidataSparql");
+			return;
+		}
+		if (targetValues == null) {
+			LOG.error("No target values given for " + target + "  in WikidataSparql");
+			return;
+		}
+		LOG.info("search: "+searchValues+"\n"+"target: "+targetValues);
 		for (String value : searchValues) {
 			if (!targetValues.contains(value)) {
 				LOG.warn(value + " not found in " + target);
@@ -104,6 +113,7 @@ public class WikidataSparql {
 		if (this.sparqlNameByAmiName.size() > 0) {
 			amiNames = new ArrayList<String>(this.sparqlNameByAmiName.keySet());
 			new AMIDictValidator().checkNameMappings(amiNames);
+			LOG.info(amiNames);
 			checkWikidataVariables(amiNames);
 			DictionaryCreationTool.LOG.info("sparql names " + sparqlVariables);
 		} else {

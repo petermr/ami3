@@ -163,9 +163,10 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	@Option(names = {"--sparqlmap"},
 			split=",",
 			description = "maps wikidata/SPARQL name onto AMIDict names. "
-			+ "builtin names = term, name, wikidata, wikipedia, description, "
-			+ "wikidata names are p_* (properties)  and q_* (items), "
-			+ "other names are _* , everything else is an error."
+			+ "builtin names = id, term, name, wikidataURL, wikidataID, wikipediaURL, wikipediaPage, description, "
+			+ "wikidata names are _p[\\d]+_* (properties)  and _q[\\d]+_* (items), "
+			+ "other names are _[a-zA-Z]* , everything else is an error."
+			+ "updated 2020-08-19. (this is still liable to change)"	
 			+ "Mandatory for wikisparql inputs"
 			
 			) 
@@ -179,8 +180,8 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 	
 	
 	@Option(names = {"--synonyms"},
-			description = "synonyms retrived from source. Syntax depends on source type."
-					+ "for `sparql` `AltLabels` this is a single String with comma-separated "
+			description = "pointers (labels) to synonyms retrived from source. Syntax depends on source type."
+					+ "for `sparql` and `synonyms=`wikidataAltLabels` this retrieves a single String with comma-separated "
 					+ "synonyms (and maybe extraneous commas)."
 					+ " DEPRECATED - will move to `ami update`"
 					
