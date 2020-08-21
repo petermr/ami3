@@ -1,6 +1,8 @@
 package org.contentmine.ami.tools;
 
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.contrib.java.lang.system.EnvironmentVariables;
 import picocli.CommandLine;
 
 import java.util.Scanner;
@@ -9,11 +11,28 @@ import static org.junit.Assert.*;
 import static picocli.CommandLine.Help.Ansi.OFF;
 
 public class AMITest {
+    @Rule
+    public final EnvironmentVariables environmentVariables = new EnvironmentVariables();
 
     @Test
-    public void testHelp() {
-        String usageMessage = new CommandLine(new AMI()).getUsageMessage(OFF);
+    public void testHelpWithoutEnvironmentVariable() {
+        environmentVariables.clear("AMIPROJECT");
 
+        String usageMessage = new CommandLine(new AMI()).getUsageMessage(OFF);
+        assertHelpMessage(usageMessage, System.getProperty("user.home") + "/amiprojects/myproject");
+    }
+
+    @Test
+    public void testHelpWithEnvironmentVariable() {
+        String defaultCProject = "/my/ami/project";
+        environmentVariables.set("AMIPROJECT", defaultCProject);
+        assertEquals(defaultCProject, System.getenv("AMIPROJECT"));
+
+        String usageMessage = new CommandLine(new AMI()).getUsageMessage(OFF);
+        assertHelpMessage(usageMessage, defaultCProject);
+    }
+
+    private void assertHelpMessage(String usageMessage, String defaultCProject) {
         String expected = String.format("" +
                 "Usage: ami [OPTIONS] COMMAND%n" +
                 "%n" +
@@ -36,9 +55,9 @@ public class AMITest {
                 "  -p, --cproject=DIR         The CProject (directory) to process. This can be (a) a child directory of cwd (current%n" +
                 "                               working directory (b) cwd itself (use `-p .`) or (c) an absolute filename. The cProject%n" +
                 "                               name is the basename of the file.%n" +
-                "                              The default is: `%s/amiprojects/myproject`.%n" +
+                "                              The default is: `%s`.%n" +
                 "                              You can control the default by setting the `AMIPROJECT` environment variable.%n",
-                System.getProperty("user.home"));
+                defaultCProject);
 
         Scanner scanExpected = new Scanner(expected);
         Scanner scanActual = new Scanner(usageMessage);
