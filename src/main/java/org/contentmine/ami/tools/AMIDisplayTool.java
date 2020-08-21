@@ -196,13 +196,6 @@ public class AMIDisplayTool extends AbstractAMITool {
 	private void makeCooccurrence() {
 		EntityAnalyzer entityAnalyzer = EntityAnalyzer.createEntityAnalyzer(cProject.getDirectory());
 		entityAnalyzer.defaultAnalyzeCooccurrence(facets);
-
-//		File projectDir = cProject.getDirectory();
-//		try {
-//			dataTablesTool.createDataTables(wikidataBiblio, projectDir, /*getMetadataByCTreename()*/ null);
-//		} catch (IOException e) {
-//			throw new RuntimeException("cannot create dataTablesTool", e );
-//		}
 	}
 
 	private void displayImageDir(File imageDir) {

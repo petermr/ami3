@@ -7,6 +7,7 @@ import java.net.URL;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -76,7 +77,8 @@ public class WikidataSparql {
 	}
 
 	private void checkWikidataVariables(List<String> amiNames) {
-//		amiValues = new ArrayList<String>(this.sparqlNameByAmiName.values());
+		Collection<String> values = this.sparqlNameByAmiName.values();
+		amiValues = new ArrayList<String>(values);
 		searchValuesInTarget(amiValues, "sparqlVariables", sparqlVariables);
 		// __synonyms also create amiValues
 		amiValues.addAll(dictionaryCreationTool.synonymList);
@@ -110,8 +112,11 @@ public class WikidataSparql {
 	private void readSparqlVariablesAndCreateMapping() {
 		sparqlVariables = XMLUtil.getQueryValues(sparqlXml, 
 				"./*[local-name() = 'head']/*[local-name()='variable']/@name");
+		LOG.info("sparqlVariables "+sparqlVariables);
+		LOG.info("sparqlNameByAmiName: "+this.sparqlNameByAmiName);
 		if (this.sparqlNameByAmiName.size() > 0) {
 			amiNames = new ArrayList<String>(this.sparqlNameByAmiName.keySet());
+			LOG.info("amiNames "+amiNames);
 			new AMIDictValidator().checkNameMappings(amiNames);
 			LOG.info(amiNames);
 			checkWikidataVariables(amiNames);

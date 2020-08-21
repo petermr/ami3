@@ -96,17 +96,21 @@ public class AMISearchTest extends AbstractAMITest {
 	public void testZikaCooccurrenceSmall() {
 		File targetDir = new File("target/cooccurrence/zika10");
 		CMineTestFixtures.cleanAndCopyDir(AMIFixtures.TEST_ZIKA10_DIR, targetDir);
-		String args = 
-				" -p " + AMIFixtures.TEST_ZIKA10_DIR 
+		String args = // "ami " +
+				" -p " + targetDir 
 				+ " search"
-//				+ " --dictionary /Users/pm286/projects/openVirus/dictionaries/country/country-final.xml"
 				+ " --dictionary "
-//				+ " /Users/pm286/ContentMine/dictionaries/geo/country.xml"
+				+ " /Users/pm286/ContentMine/dictionaries/geo/country.xml"
 				+ " disease funders"
 			;
 		AMI.execute(args);
+		/*
+		ami -p target/cooccurrence/zika10 search --dictionary /Users/pm286/ContentMine/dictionaries/geo/country.xml  disease funders
+		 */
+		
 //		new AMISearchTool().runCommands(args);
 	}
+	// Lantana Camara
 
 	@Test
 	public void testAMISearchNewIT() {
