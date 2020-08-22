@@ -150,6 +150,31 @@ Commands:
   generate-completion  Generate bash/zsh completion script for ami.
 ```
 
+### Default option values
+
+Many of the `ami` commands have quite a few options.
+It can be convenient to define default values for some options, so that you don't need to specify these options on the command line every time.
+
+The `ami` and the `amidict` commands (and their subcommands) support default values configured in a [Java properties file](https://en.wikipedia.org/wiki/.properties) in your home directory.
+This properties file is named `.ami.properties` for the `ami` command, and `.amidict.properties` for the `amidict` command.
+AMI will look for these files in your home directory.
+
+You can use these files to define default values for command and subcommand options, as follows:
+
+```
+# This is an example ${user.home}/.ami.properties file.
+
+# For options, the key is the longest option name.
+cproject = /my/ami/project/123
+
+# For subcommands, prefix with the subcommand name.
+ami.assert.directoryname=/my/ami/project/123/assertable/dir
+
+# For positional parameters, the key is the positional parameter’s param label.
+ami.clean.<files>=/my/files/to/clean/by/default
+```
+
+
 ## Tutorial
 
 For a tutorial and a wide range of features see https://github.com/petermr/tigr2ess, which shows AMI being used on crop plants. 
