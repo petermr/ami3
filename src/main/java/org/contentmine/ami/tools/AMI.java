@@ -37,6 +37,7 @@ import picocli.CommandLine.Spec;
 import picocli.jansi.graalvm.AnsiConsole;
 
 @Command(name = "ami", versionProvider = ManifestVersionProvider.class,
+		defaultValueProvider = CommandLine.PropertiesDefaultProvider.class,
 		description = {
 				"",
 				"`${COMMAND-FULL-NAME}` is a command suite for managing (scholarly) documents: " +
