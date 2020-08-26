@@ -23,9 +23,10 @@ public class AMIImageTest extends AbstractAMIImageTest {
 	private static final File FOREST_PLOT_SMALL = new File(SRC_TEST_AMI, "uclforest/forestplotssmall/");
 	private static final File OLD_SPSS = new File(SRC_TEST_AMI, "uclforest/spss/");
 	
-	
 	private static final Logger LOG = LogManager.getLogger(AMIImageTest.class);
-boolean started = false;
+	private static final File TARGET_DIR = new AMIImageTest().createAbsoluteTargetDir();
+
+	boolean started = false;
 
 	@Before
 	public void startUp() {

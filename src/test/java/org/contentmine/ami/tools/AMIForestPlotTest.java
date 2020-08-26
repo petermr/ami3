@@ -31,9 +31,11 @@ import junit.framework.Assert;
  * @author pm286
  *
  */
-public class AMIForestPlotTest {
+public class AMIForestPlotTest extends AbstractAMITest {
 	private static final Logger LOG = LogManager.getLogger(AMIForestPlotTest.class);
-private static final File FOREST_PLOT_DIR = new File("/Users/pm286/projects/forestplots");
+	private static final File TARGET_DIR = new AMIForestPlotTest().createAbsoluteTargetDir();
+
+	private static final File FOREST_PLOT_DIR = new File("/Users/pm286/projects/forestplots");
 	private static final File STATA_FOREST_PLOT_DIR = new File(FOREST_PLOT_DIR, "stataforestplots");
 	private final static String SPSS = "spss";
 	private static final File SPSS_DIR = new File(FOREST_PLOT_DIR, SPSS);

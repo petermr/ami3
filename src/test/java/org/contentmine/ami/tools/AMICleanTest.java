@@ -27,8 +27,8 @@ import org.junit.Test;
  */
 public class AMICleanTest extends AbstractAMITest {
 	
-	private static final String TARGET_CLEAN = new AMICleanTest().createTargetDirname();
 	static final Logger LOG = LogManager.getLogger(AMICleanTest.class);
+	private static final File TARGET_DIR = new AMICleanTest().createAbsoluteTargetDir();
 	
 @Test
 	public void testHelp() {
@@ -154,7 +154,7 @@ public class AMICleanTest extends AbstractAMITest {
 	 * tests cleaning XML files in a project
 	 */
 	public void testCleanXML() throws IOException {
-		File targetDir = new File(TARGET_CLEAN, "oil5/");
+		File targetDir = new File(TARGET_DIR, "oil5/");
 		CMineTestFixtures.cleanAndCopyDir(OIL5, targetDir);
 		
 		List<File> files = new CMineGlobber().setGlob("**/*.xml").setLocation(targetDir).setRecurse(true).listFiles();

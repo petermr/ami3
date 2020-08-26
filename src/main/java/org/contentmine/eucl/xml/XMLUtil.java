@@ -44,6 +44,7 @@ import org.contentmine.graphics.html.HtmlI;
 import org.contentmine.graphics.html.HtmlSub;
 import org.contentmine.graphics.html.HtmlSup;
 import org.contentmine.graphics.html.util.HtmlUtil;
+import org.junit.Assert;
 
 import nu.xom.Attribute;
 import nu.xom.Builder;
@@ -1082,8 +1083,9 @@ public abstract class XMLUtil implements XMLConstants {
 					break;
 				}
 			}
+		} else {
+			LOG.trace("ATT MS "+message);
 		}
-		LOG.trace("ATT MS "+message);
 		return message;
 	}
 	
@@ -1835,6 +1837,21 @@ public abstract class XMLUtil implements XMLConstants {
 		}
 		return true;
 			
+	}
+
+	public static void assertEqualsCanonically(String expectedString, Element actualElement) {
+		String msg = XMLUtil.equalsCanonically(expectedString, actualElement, true);
+		Assert.assertNull(actualElement.toXML(), msg);
+	}
+
+	public static void assertEqualsCanonically(File expectedFile, Element actualElement) {
+		String msg = XMLUtil.equalsCanonically(expectedFile, actualElement, true);
+		Assert.assertNull(actualElement.toXML(), msg);
+	}
+
+	public static void assertEqualsCanonically(Element expectedElement, Element actualElement) {
+		String msg = XMLUtil.equalsCanonically(expectedElement, actualElement, true);
+		Assert.assertNull(actualElement.toXML(), msg);
 	}
 
 

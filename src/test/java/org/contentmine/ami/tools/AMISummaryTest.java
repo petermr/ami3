@@ -2,25 +2,30 @@ package org.contentmine.ami.tools;
 
 import java.io.File;
 
-import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
-import org.contentmine.ami.AMIFixtures;
-import org.contentmine.ami.tools.AMISummaryTool;
-import org.contentmine.cproject.files.CProject;
+import org.apache.logging.log4j.Logger;
+import org.contentmine.cproject.CMineFixtures;
 import org.contentmine.cproject.util.CMineTestFixtures;
+import org.contentmine.eucl.euclid.files.CMFileUtilTest;
+import org.contentmine.eucl.euclid.util.CMFileUtil;
+import org.contentmine.eucl.xml.XMLUtil;
+import org.junit.Assert;
 import org.junit.Test;
 
+import nu.xom.Element;
+
 public class AMISummaryTest extends AbstractAMITest {
+	
 	private static final Logger LOG = LogManager.getLogger(AMISummaryTest.class);
+	private static final File TARGET_DIR = new AMISummaryTest().createAbsoluteTargetDir();
 	private static final String SUMMARY_CONST = "_summary";
-	private static final File TARGET_SUMMARY = new File(TARGET, "summary");
 	
 	@Test
 	public void testSummarizeMethods() {
 		String root = "methods";
 		String project = "summarizeProject/";
 		File expectedDir = new File(TEST_BATTERY10+"."+"expected", project);
-		File targetDir = new File(TARGET_SUMMARY, project);
+		File targetDir = new File(TARGET_DIR, project);
 		CMineTestFixtures.cleanAndCopyDir(TEST_BATTERY10, targetDir);
 		String cmd = "-vvv"
 				+ " -p "+targetDir
@@ -70,7 +75,7 @@ public class AMISummaryTest extends AbstractAMITest {
 		String root = "abstract";
 		String project = "battery10/";
 		File expectedDir = new File(TEST_BATTERY10+"."+"expected", project);
-		File targetDir = new File(TARGET_SUMMARY, project);
+		File targetDir = new File(TARGET_DIR, project);
 		CMineTestFixtures.cleanAndCopyDir(TEST_BATTERY10, targetDir);
 		String cmd = "-vvv"
 				+ " -p "+targetDir
@@ -83,6 +88,14 @@ public class AMISummaryTest extends AbstractAMITest {
 		AMI.execute(cmd);
 		AbstractAMITest.compareDirectories(targetDir, expectedDir);
 		
+	}
+
+	@Test
+	public void testDirectoryTreeElement() {
+		File root = new File(TEST_BATTERY10, "PMC3211491");
+		Element tree = AMISummaryTool.createDirectoryTree(root);
+		String expectedString = "<dir name='PMC3211491'><dir name='pdfimages' /><dir name='results'><dir name='search'><dir name='country' /><dir name='elements' /><dir name='funders' /></dir><dir name='word'><dir name='frequencies' /></dir></dir><dir name='sections'><dir name='0_front'><dir name='0_journal-meta' /><dir name='1_article-meta' /></dir><dir name='1_body'><dir name='0_introduction' /><dir name='1_experimental' /><dir name='2_results_and_discussions' /><dir name='3_conclusion' /><dir name='4_competing_interests' /><dir name='5_authors__contributions' /></dir><dir name='2_back'><dir name='0_acknowledgements' /><dir name='1_ref-list' /></dir><dir name='3_floats-group' /><dir name='figures' /></dir><dir name='svg' /></dir>";
+		XMLUtil.assertEqualsCanonically(expectedString, tree);
 	}
 
 

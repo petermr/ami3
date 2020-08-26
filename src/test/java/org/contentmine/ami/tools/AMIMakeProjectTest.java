@@ -24,9 +24,11 @@ import org.junit.Test;
  * @author pm286
  *
  */
-public class AMIMakeProjectTest {
+public class AMIMakeProjectTest extends AbstractAMITest {
 	private static final Logger LOG = LogManager.getLogger(AMIMakeProjectTest.class);
-private static final String PROJECT1 = "project1/";
+	private static final File TARGET_DIR = new AMIMakeProjectTest().createAbsoluteTargetDir();
+	
+	private static final String PROJECT1 = "project1/";
 
 	@Test
 	public void testMakeProject1long() throws Exception {

@@ -20,13 +20,14 @@ import nu.xom.Element;
  */
 public class AMIDictUpdateTest extends AbstractAMIDictTest {
 
+	private static final Logger LOG = LogManager.getLogger(AMIDictUpdateTest.class);
+	private static final File TARGET_DIR = new AMIDictUpdateTest().createAbsoluteTargetDir();
+
 	private static final String ENTRY = "entry";
 	private static final String DICTIONARY = "dictionary";
 	private static final String DICT1 = "dict1";
 	private static final String DICT2 = "dict2";
 	private static final String TITLE = "title";
-
-	private static final Logger LOG = LogManager.getLogger(AMIDictUpdateTest.class);
 
 	private Element dict1;
 	private Element dict2;
@@ -65,7 +66,7 @@ public class AMIDictUpdateTest extends AbstractAMIDictTest {
 				+ " entry@term=term5,@term,@description"
 				+ " --dictionary="+dictionary+" --directory=" + TEST_DICTIONARY + "";
 		AMIDict.execute(args);
-		AbstractAMITest.writeOutputAndCompare(TEST_DICTIONARY, dictionary, outputDir);
+		AbstractAMITest.writeXMLElementAndCompare(TEST_DICTIONARY, dictionary, outputDir);
 	}
 	
 	@Test
@@ -91,7 +92,7 @@ public class AMIDictUpdateTest extends AbstractAMIDictTest {
 	@Test
 	public void testCreateFromWikidataQueryMapTransform() throws IOException {
 		String dictionary = "disease4out";
-		File outputDir = TARGET_DICTIONARY;
+		File outputDir = TARGET_DIR;
 		String cmd = "-vvv"
 				+ " --dictionary " + dictionary
 				+ " --directory=" + outputDir
@@ -101,7 +102,7 @@ public class AMIDictUpdateTest extends AbstractAMIDictTest {
 				+ " --synonyms=wikidataAltLabel"
 				;
 		AMIDict.execute(cmd);
-		AbstractAMITest.writeOutputAndCompare(TEST_DICTIONARY, dictionary, outputDir);
+		AbstractAMITest.writeXMLElementAndCompare(TEST_DICTIONARY, dictionary, outputDir);
 	}
 
 

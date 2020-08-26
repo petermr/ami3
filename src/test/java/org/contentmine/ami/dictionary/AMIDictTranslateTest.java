@@ -1,12 +1,11 @@
 package org.contentmine.ami.dictionary;
 
-import java.awt.image.BufferedImage;
 import java.io.File;
 
-import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.contentmine.ami.tools.AMIDict;
-import org.contentmine.ami.tools.AbstractAMITest;
+import org.contentmine.ami.tools.AbstractAMIDictTest;
 import org.junit.Test;
 
 
@@ -15,10 +14,11 @@ import org.junit.Test;
  * @author pm286
  *
  */
-public class AMIDictTranslateTest extends AbstractAMITest {
+public class AMIDictTranslateTest extends AbstractAMIDictTest {
 	private static final Logger LOG = LogManager.getLogger(AMIDictTranslateTest.class);
-private static final File TARGET = new File("target");
-	public static final File DICTIONARY_DIR = new File(TARGET, "dictionary");
+	private static final File TARGET_DIR = new AMIDictTranslateTest().createAbsoluteTargetDir();
+//	private static final File TARGET = new File("target");
+//	public static final File DICTIONARY_DIR = new File(TARGET, "dictionary");
 	public static final File SRC_TEST_DICTIONARY = new File(SRC_TEST_AMI, "dictionary");
 	
 

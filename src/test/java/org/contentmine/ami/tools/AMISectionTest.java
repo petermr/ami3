@@ -65,9 +65,8 @@ import nu.xom.Element;
  */
 public class AMISectionTest extends AbstractAMITest {
 	
-
-	private static final File TARGET_SECTION = new File("target/section/");
 	private static final Logger LOG = LogManager.getLogger(AMISectionTest.class);
+	private static final File TARGET_DIR = new AMISectionTest().createAbsoluteTargetDir();
 	
 @Test
 	public void testHelp() {
@@ -80,7 +79,7 @@ public class AMISectionTest extends AbstractAMITest {
 @Test
 public void testAllSections() {
 
-	File targetDir = TARGET_SECTION;
+	File targetDir = TARGET_DIR;
 	CMineTestFixtures.cleanAndCopyDir(AMIFixtures.TEST_ZIKA10_DIR, targetDir);
 	String cmd = "-vv -p "+targetDir+" clean **/sections/**";
 	AMI.execute(cmd);
@@ -97,7 +96,7 @@ public void testAllSections() {
 	public void testAbstractMethods() {
 
 		CTree cTree = new CTree(new File(AMIFixtures.TEST_ZIKA10_DIR, "PMC3289602"));
-		File targetDir = new File(TARGET_SECTION, cTree.getName());
+		File targetDir = new File(TARGET_DIR, cTree.getName());
 		CMineTestFixtures.cleanAndCopyDir(cTree.getDirectory(), targetDir);
 		String cmd = "-vv clean **/PMC*/sections/**";
 		AMI.execute(cmd);

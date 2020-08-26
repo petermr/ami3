@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
@@ -19,6 +21,7 @@ import org.contentmine.eucl.xml.XMLUtil;
 import com.google.common.collect.HashMultiset;
 import com.google.common.collect.Multiset;
 
+import nu.xom.Attribute;
 import nu.xom.Element;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
@@ -34,6 +37,10 @@ import picocli.CommandLine.Option;
 				
 })
 public class AMISummaryTool extends AbstractAMITool {
+	private static final String FILE = "file";
+	private static final String NAME = "name";
+	private static final String DIR = "dir";
+	private static final String SUMMARY_CSV = "summary.csv";
 	private static final String _SUMMARY = "_summary";
 	private static final String SNIPPETS_TREE = "snippetsTree";
 	private static final String SNIPPETS = "snippets";
@@ -43,7 +50,6 @@ public class AMISummaryTool extends AbstractAMITool {
 	private static final String COUNT       = "count";
 	private static final String EXACT       = "exact";
 	private static final String FACET       = "facet";
-	private static final String FILE        = "file";
 	private static final String GENE        = "gene";
 	private static final String FREQUENCIES = "frequencies";
 	private static final String MATCH       = "match";
@@ -301,13 +307,19 @@ public class AMISummaryTool extends AbstractAMITool {
 			treeName = getCTreeNameFromRelativePaths(treeName, file, subTreeFile);
 			
 			try {
-				FileUtils.copyFile(file, subTreeFile);
+				if (file.isDirectory()) {
+					FileUtils.copyDirectory(file, subTreeFile);
+				} else {
+					FileUtils.copyFile(file, subTreeFile);
+				}
 			} catch (IOException e) {
 				throw new RuntimeException("cannot copy", e);
 			}
 			addOutputTypes(treeName, subTreeFile);
 		}
-		writeCsvFile(new File(outputDir, "summary.csv"));
+		if (outputTypes.contains(OutputType.tab)) {
+			writeCsvFile(new File(outputDir, SUMMARY_CSV));
+		}
 		return subtreeFileList;
 	}
 
@@ -370,6 +382,42 @@ public class AMISummaryTool extends AbstractAMITool {
 				throw new RuntimeException("Cannot write CSV: ", e);
 			}
 		}
+	}
+	
+	public static Element createDirectoryTree(File root) {
+		Element tree = createSubtree(root);
+		return tree;
+	}
+
+	private static Element createSubtree(File file) {
+		Element fileElement = null;
+		if (file != null && file.exists()) {
+			if (file.isDirectory()) {
+				fileElement = createAndAddDirectoryElement(file);
+			} else {
+				fileElement = new Element(FILE);
+				fileElement.addAttribute(new Attribute(NAME, file.getName()));
+			}
+		}
+		return fileElement;
+	}
+
+	private static Element createAndAddDirectoryElement(File file) {
+		Element fileElement;
+		fileElement = new Element(DIR);
+		fileElement.addAttribute(new Attribute(NAME, file.getName()));
+		File[] files = file.listFiles();
+		if (files != null) {
+			List<File> fileList = Arrays.asList(files);
+			Collections.sort(fileList);
+			for (File filex : fileList) {
+				if (!filex.isHidden()) {
+					Element subTree = createSubtree(filex);
+					fileElement.appendChild(subTree);
+				}
+			}
+		}
+		return fileElement;
 	}
 
 

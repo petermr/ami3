@@ -1,25 +1,24 @@
 package org.contentmine.ami.tools;
 
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LogManager;
-import org.contentmine.ami.tools.AMIGrobidTool;
-import org.contentmine.ami.tools.AMIOCRTool;
-import org.contentmine.norma.pdf.GrobidRunner;
-import org.junit.Ignore;
-import org.junit.Test;
-
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.PrintStream;
 
-import static org.junit.Assert.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.contentmine.norma.pdf.GrobidRunner;
+import org.junit.Assert;
+import org.junit.Ignore;
+import org.junit.Test;
 
 /**
  * test OCR.
  *
  * @author pm286
  */
-public class AMIGROBIDTest {
+public class AMIGROBIDTest extends AbstractAMITest {
 	private static final Logger LOG = LogManager.getLogger(AMIGROBIDTest.class);
+	private static final File TARGET_DIR = new AMIGROBIDTest().createAbsoluteTargetDir();
 
 /**
 	 * convert single (good) file
@@ -44,6 +43,19 @@ public class AMIGROBIDTest {
 						+ " --exe processFullText";
 		new AMIGrobidTool().runCommands(args);
 	}
+	
+	/** 
+	 * smoke test
+	 */
+	public void testGrobid() throws Exception {
+		String args = 
+				"-p /Users/pm286/workspace/uclforest/"
+				+ " --out "
+				+ " --exe processFullText"
+			;
+		new AMIGrobidTool().runCommands(args);
+	}
+
 
 	/**
 	 * convert whole project
@@ -216,7 +228,7 @@ public class AMIGROBIDTest {
 							"                               Default: []%n" +
 							"  -V, --version              Print version information and exit.%n",
 					System.getProperty("java.home"), GrobidRunner.GrobidOptions.GROBID_DEFAULT_VERSION);
-			assertEquals(expected, baos.toString());
+			Assert.assertEquals(expected, baos.toString());
 		} finally {
 			System.setOut(old);
 		}

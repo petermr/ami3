@@ -18,9 +18,11 @@ import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 
-public class AMITransformTest {
+public class AMITransformTest extends AbstractAMITest {
 	private static final Logger LOG = LogManager.getLogger(AMITransformTest.class);
-@Test
+	private static final File TARGET_DIR = new AMITransformTest().createAbsoluteTargetDir();
+
+	@Test
 	public void testOptions() {
 		AMI.execute("-vv transform --tidy");
 	}

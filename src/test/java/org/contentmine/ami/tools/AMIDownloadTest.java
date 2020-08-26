@@ -43,11 +43,13 @@ import nu.xom.Element;
  *
  */
 public class AMIDownloadTest extends AbstractAMITest {
-	private static final String CHROMEDRIVER = "/usr/local/bin/chromedriver";
 	public static final Logger LOG = LogManager.getLogger(AMIDownloadTest.class);
-private static File DOWNLOAD_DIR = new File(SRC_TEST_TOOLS, "download");
+	private static final File TARGET_DIR = new AMIDownloadTest().createAbsoluteTargetDir();
+	
+	private static File DOWNLOAD_DIR = new File(SRC_TEST_TOOLS, "download");
 	private static File BIORXIV_DIR = new File(DOWNLOAD_DIR, "biorxiv");
 	private static File CLIMATE_DIR = new File(BIORXIV_DIR, "climate");
+	private static final String CHROMEDRIVER = "/usr/local/bin/chromedriver";
 	
     private Object first;
     private Object second;

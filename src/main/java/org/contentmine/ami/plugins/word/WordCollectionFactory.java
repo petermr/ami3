@@ -116,7 +116,9 @@ public class WordCollectionFactory {
 		LOG.debug(_PR+"created words: "+wordList.size());
 		wordsTool = wordArgProcessor.getWordsTool();
 		List<String> chosenMethods = wordArgProcessor.getChosenWordAggregationMethods();
-		if (wordArgProcessor.getVerbosityInt() > 0) System.out.println("chosen createWordmethods: "+chosenMethods);
+		if (wordArgProcessor.getVerbosityInt() > 0) {
+			System.out.println("chosen createWordmethods: "+chosenMethods);
+		}
 		writeWordLengthsToResultsElement(chosenMethods);
 		writeWordFrequenciesToResultsElement(chosenMethods);
 	}

@@ -12,6 +12,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.contentmine.ami.dictionary.WikidataSparqlBuilder.WikidataLabel;
 import org.contentmine.ami.tools.AMIDict;
+import org.contentmine.ami.tools.AMIDownloadTest;
 import org.contentmine.ami.tools.AbstractAMIDictTest;
 import org.contentmine.ami.tools.AbstractAMIDictTool;
 import org.contentmine.ami.tools.AbstractAMIDictTool.DictionaryFileFormat;
@@ -38,7 +39,7 @@ import nu.xom.Element;
 public class AMIDictCreateTest extends AbstractAMIDictTest {
 	
 	private static final Logger LOG = LogManager.getLogger(AMIDictCreateTest.class);	
-
+	
 	@Test
 	public void testHelpSubcommands() {
 		String args = "create --help";
@@ -88,27 +89,6 @@ public class AMIDictCreateTest extends AbstractAMIDictTest {
             " --outformats html,xml " +
             " --terms " + ""
            		+ "Abamectin Actinomycin Alexidine Amikacin Amphotericin B Ampicillin"
-//           		+ " Anidulafungin Antimycin Aureobasidin Azithromycin Azoxystrobin Aztreonam"
-//           		+ " Bacitracin Benomyl Benznidazole Bifonazole Bleomycin Boscalid"
-//           		+ " Brassinin Brefeldin Calcofluor White Camptothecin Captan carbapenems Carbendazim Carbenicillin"
-//           		+ " Carboxin Caspofungin Cefotaxime Ceftazidime Ceftriaxone Cefuroxime Cefuroximel Cephalexin"
-//           		+ " Cercosporamide Chloramphenicol Chlorothalonil Ciprofloxacin Closantel Colistin Copper "
-//           		+ " Copper_sulphate Cycloheximide Cyclosporine Cyproconazole Daptomycin Diethofencarb"
-//           		+ " Difenoconazole Diniconazole Doxycycline Eflornithine Emamectin Epoxyconazole"
-//           		+ " Ethambutol Farnesol Fenarimol Fenhexamid Fenpropidin Fluconazole Flucytosine"
-//           		+ " Fludioxonil Flutriafol Gentamicin Gramicidin Hydrogen_peroxide Hygromycin"
-//           		+ " Hymexazol Imipenem Iprodione Isoniazid Itraconazole Ketoconazole Latrunculin"
-//           		+ " Leptomycin B Lincomycin Linezolid Mancozeb Mecillinam Meropenem Micafungin"
-//           		+ " Miconazole Miltefosine Moxifloxacin Myriocin Naftifine Nalidixic_acid Neomycin"
-//           		+ " Nifurtimox Nikkomycin Nisin nitrofurantoin Norfloxacin Novobiocin Nystatin"
-//           		+ " Oligomycin Oxacillin Oxolinic_acid Oxytetracycline Paromomycin Penicillin"
-//           		+ " Pentamidine Phenamacril phosphomycin Plumbagin Polymyxin_B1 posaconazole"
-//           		+ " Prochloraz Propiconazole Pyrimethanil Rapamycin Resveratrol Rifampicin"
-//           		+ " Rifampin Rose Bengal Rotenone Salicylhydroxamic Sordarin Spectinomycin"
-//           		+ " Spiroxamine Streptomycin sulfate Strobilurin Sulbactam Tebuconazole"
-//           		+ " Teicoplanin Telithromycin terbinafine Tetracycline Thiabendazole Thiophanate-methyl"
-//           		+ " Tiamulin Ticarcillin Tigecycline Tobramycin Triadimefon Trichostatin Triclabendazole"
-//           		+ " Triclosan Tricyclazole Tridemorph Trimethoprim Tunicamycin Tylosin Valinomycin Vancomycin"
            		+ " Verapamil Vinclozolin Virginiamycin Voriconazole"
 				;
 		AMIDict.execute(args);
@@ -449,7 +429,7 @@ public class AMIDictCreateTest extends AbstractAMIDictTest {
            " --wikilinks"
 			;
 		AMIDict.execute(args);
-		AbstractAMITest.writeOutputAndCompare(TEST_DICTIONARY, dictionary, outputDir);
+		AbstractAMITest.writeXMLElementAndCompare(TEST_DICTIONARY, dictionary, outputDir);
 	}
 
 //	@Test
@@ -497,7 +477,7 @@ public class AMIDictCreateTest extends AbstractAMIDictTest {
 	public void testCreateFromWikidataSparqlNoMap() {
 		String dictionary = "country1";
 		File inputFile = new File(TEST_DICTIONARY, dictionary + ".sparql.xml");
-		File outputDir = TARGET_DICTIONARY;
+		File outputDir = new AMIDictCreateTest().createAbsoluteTargetDir();
 		String cmd = "-vvv"
 				+ " --dictionary " + dictionary
 				+ " --directory=" + outputDir
@@ -506,7 +486,7 @@ public class AMIDictCreateTest extends AbstractAMIDictTest {
 				+ " --informat=wikisparqlxml"
 				;
 		AMIDict.execute(cmd);
-		AbstractAMITest.writeOutputAndCompare(TEST_DICTIONARY, dictionary, outputDir);
+		AbstractAMITest.writeXMLElementAndCompare(TEST_DICTIONARY, dictionary, outputDir);
 	}
 	
 	/**
@@ -545,7 +525,7 @@ public class AMIDictCreateTest extends AbstractAMIDictTest {
 	public void testCreateFromWikidataSparqlOutputAndMap() {
 		String dictionary = "disease3";
 		File inputFile = new File(TEST_DICTIONARY, dictionary + ".sparql.xml");
-		File outputDir = TARGET_DICTIONARY;
+		File outputDir = new AMIDictCreateTest().createAbsoluteTargetDir();
 		String cmd = "-vvv"
 				+ " --dictionary " + dictionary
 				+ " --directory=" + outputDir
@@ -555,7 +535,7 @@ public class AMIDictCreateTest extends AbstractAMIDictTest {
 				+ ""
 				+ " --sparqlmap "
 				+ "wikidataURL=Disease,"
-				+ "p_31_instanceOf=instanceofLabel,"
+				+ "_p31_instanceOf=instanceofLabel,"
 				+ "term=DiseaseLabel,"
 				+ "name=DiseaseLabel,"
 				+ "_icd10=ICDcode"
@@ -563,7 +543,7 @@ public class AMIDictCreateTest extends AbstractAMIDictTest {
 				+ " --synonyms=DiseaseAltLabel"
 				;
 		AMIDict.execute(cmd);
-		AbstractAMITest.writeOutputAndCompare(TEST_DICTIONARY, dictionary, outputDir);
+		AbstractAMITest.writeXMLElementAndCompare(TEST_DICTIONARY, dictionary, outputDir);
 		
 		/**
 		 * 		String cmd = "
@@ -603,7 +583,10 @@ public class AMIDictCreateTest extends AbstractAMIDictTest {
 	public void testCreateFromWikidataQueryMap() throws IOException {
 		String dictionary = "disease4";
 		File queryFile = new File(TEST_DICTIONARY, dictionary + ".sparql");
-		File outputDir = TARGET_DICTIONARY;
+		File outputDir = new AMIDictCreateTest().createAbsoluteTargetDir();
+		outputDir = this.createAbsoluteTargetDir();
+		System.out.println(">>"+outputDir);
+
 		String cmd = "-vvv"
 				+ " --dictionary " + dictionary
 				+ " --directory=" + outputDir
@@ -621,7 +604,7 @@ public class AMIDictCreateTest extends AbstractAMIDictTest {
 				+ " --synonyms=wikidataAltLabel"
 				;
 		AMIDict.execute(cmd);
-		AbstractAMITest.writeOutputAndCompare(TEST_DICTIONARY, dictionary, outputDir);
+		AbstractAMITest.writeXMLElementAndCompare(TEST_DICTIONARY, dictionary, outputDir);
 	}
 
 	/**
@@ -639,7 +622,7 @@ public class AMIDictCreateTest extends AbstractAMIDictTest {
 	public void testCreateFromWikidataQueryMapTransform() throws IOException {
 		String dictionary = "disease4";
 		File queryFile = new File(TEST_DICTIONARY, dictionary + ".sparql");
-		File outputDir = TARGET_DICTIONARY;
+		File outputDir = new AMIDictCreateTest().createAbsoluteTargetDir();
 		String cmd = "-vvv"
 				+ " --dictionary " + dictionary
 				+ " --directory=" + outputDir
@@ -658,7 +641,7 @@ public class AMIDictCreateTest extends AbstractAMIDictTest {
 				+ " --synonyms=wikidataAltLabel"
 				;
 		AMIDict.execute(cmd);
-		AbstractAMITest.writeOutputAndCompare(TEST_DICTIONARY, dictionary, outputDir);
+		AbstractAMITest.writeXMLElementAndCompare(TEST_DICTIONARY, dictionary, outputDir);
 	}
 
 
@@ -1256,7 +1239,7 @@ https://github.com/petermr/openVirus/issues/81
 	 */ 
 	@Test
 	public void testCreateDictionaryFileAndName() {
-		File targetDir = new File(TARGET_DICTIONARY, "create/");
+		File targetDir = new AMIDictCreateTest().createAbsoluteTargetDir();
 		File disease_icd = new File(DICTIONARY_DIR, "disease_icd.sparql.xml");
 		String cmd = ""
 //				+ "	amidict"
@@ -1298,7 +1281,7 @@ https://github.com/petermr/openVirus/issues/81
 	@Test
 	public void testCreateDictionaryFromSparqlAndsValidate() {
 		String dictionaryName = "country";
-		File targetDir = new File(TARGET_DICTIONARY, "create/");
+		File targetDir = new AMIDictCreateTest().createAbsoluteTargetDir();
 		File inputFile = new File(DICTIONARY_DIR, dictionaryName + ".sparql.xml");  // first 1 <results>
 		String cmd = ""
 				+ " -vv" + 
@@ -1383,7 +1366,7 @@ https://github.com/petermr/openVirus/issues/81
 				+ " create"
 				+ " --informat=" + informat;
 		AMIDict.execute(cmd);
-		AbstractAMITest.writeOutputAndCompare(TEST_DICTIONARY, dictionary, outputDir);
+		AbstractAMITest.writeXMLElementAndCompare(TEST_DICTIONARY, dictionary, outputDir);
 	}
 
 	private static String getInputSuffix(String informat) {

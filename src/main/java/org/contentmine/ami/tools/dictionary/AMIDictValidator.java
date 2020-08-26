@@ -43,7 +43,7 @@ public class AMIDictValidator {
 		ALL_AMI.addAll(SHOULD_AMI);
 		ALL_AMI.addAll(CAN_AMI);
 	};
-	private Pattern WIKIDATA_PQ_PATTERN = Pattern.compile("_[PpQq](\\d+)_[A-Za-z][A-Za-z0-9]+"); 
+	public static Pattern WIKIDATA_PQ_PATTERN = Pattern.compile("_[PpQq](\\d+)_[A-Za-z][A-Za-z0-9]+"); 
 
 	public AMIDictValidator() {
 		
@@ -80,7 +80,7 @@ public class AMIDictValidator {
 			} else if (amiName.startsWith(P) || amiName.startsWith(Q)) {
 				Matcher matcher = WIKIDATA_PQ_PATTERN.matcher(amiName);
 				if (!matcher.matches()) {
-					LOG.error("Bad syntax for wikidata name: "+amiName);
+					LOG.error("Bad syntax for wikidata name: " + amiName + "; should match: " + WIKIDATA_PQ_PATTERN);
 				}
 				LOG.debug("Wikidata Item: "+amiName);
 			} else if (amiName.startsWith(PERSONAL)) {

@@ -18,7 +18,8 @@ import org.junit.Test;
  */
 public class AMIPDFTest extends AbstractAMITest {
 	private static final Logger LOG = LogManager.getLogger(AMIPDFTest.class);
-public final static File PDF2SVG2TEST = new File(PDF2SVG2, "text");
+	private static final File TARGET_DIR = new AMIPDFTest().createAbsoluteTargetDir();
+	public final static File PDF2SVG2TEST = new File(PDF2SVG2, "text");
 	
 	@Test
 	/** reads UCL corpus as PDFs and creates first pass SVG , images and scholarly html

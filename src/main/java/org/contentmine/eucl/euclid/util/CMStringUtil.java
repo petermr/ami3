@@ -1,5 +1,7 @@
 package org.contentmine.eucl.euclid.util;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -95,4 +97,86 @@ public class CMStringUtil {
 		}
 		return sb.toString();
 	}
+
+	/** unescapes percent-encoded strings
+	 * replaces all %hh with their character values
+	 * thus ...%7bxy%7d.. becomes ...{xy}..
+	 * 
+	 * wraps Java URLdecoder as it fails to trap nulls
+	 * defaults to "UTF-8" input
+	 */
+	public static String urlDecode(String s) {
+		if (s == null) return null;
+		try {
+			return URLDecoder.decode(s, "UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			throw new RuntimeException(e);
+		}
+	}
+
+	/** unescapes percent-encoded strings
+	 * replaces all %hh with their character values
+	 * thus ...%7bxy%7d.. becomes ...{xy}..
+	 * 
+	 * @param s
+	 * @return
+	 * @deprecated // use URLdecoder
+	 */
+	public static String urlDecodeOld(String s) {
+		if (s == null) return null;
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < s.length(); i++) {
+			char c = s.charAt(i);
+			if (c == '%') {
+				if (i < s.length() - 3) {
+					String ss = extractHexChar(s, i);
+					if (ss != null) {
+						i += 2;
+						sb.append(ss);
+					} else {
+						sb.append('%');
+					}
+				}
+			} else {
+				sb.append(c);
+			}
+		}
+		return sb.toString();
+	}
+
+	/** extracts hex value of character substring
+	 * assumes ...%hh... where h are hex
+	 *            i 
+	 * @param s string in which value us encoded
+	 * @param i index
+	 * @return
+	 */
+	private static String extractHexChar(String s, int i) {
+		String ss = null;
+		char c1 = s.charAt(i+1);
+		char c2 = s.charAt(i+2);
+		if (isHexCharacter(c1) && isHexCharacter(c2)) {
+			try {
+				int ii = (int) Long.parseLong(s.substring(i+1, i+3), 16);
+				ss = String.valueOf((char) ii);
+			} catch (Exception e) {
+				throw new RuntimeException("BUG", e);
+			}
+		}
+		return ss;
+	}
+
+	/** is a single char interpreyable as hex character?
+	 * 
+	 * @param c
+	 * @return
+	 */
+	public static boolean isHexCharacter(char c) {
+		if (c >= '0' && c <= '9') return true;
+		if (c >= 'A' && c <= 'F') return true;
+		if (c >= 'a' && c <= 'f') return true;
+		return false;
+	}
+
+
 }

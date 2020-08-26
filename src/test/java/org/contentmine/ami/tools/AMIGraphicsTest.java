@@ -26,6 +26,7 @@ import org.junit.Test;
 public class AMIGraphicsTest extends AbstractAMITest {
 
 	private static final Logger LOG = LogManager.getLogger(AMIGraphicsTest.class);
+	private static final File TARGET_DIR = new AMIGraphicsTest().createAbsoluteTargetDir();
 	private static File PROBLEMS_DIR = new File(PDF2SVG2, "problems/");
 
 @Test

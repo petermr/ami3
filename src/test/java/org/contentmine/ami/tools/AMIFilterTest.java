@@ -1,6 +1,9 @@
 package org.contentmine.ami.tools;
 
 import org.apache.logging.log4j.Logger;
+
+import java.io.File;
+
 import org.apache.logging.log4j.LogManager;
 import org.junit.Assert;
 import org.junit.Test;
@@ -12,9 +15,11 @@ import org.junit.Test;
  * @author pm286
  *
  */
-public class AMIFilterTest {
+public class AMIFilterTest extends AbstractAMITest {
 	private static final Logger LOG = LogManager.getLogger(AMIFilterTest.class);
-@Test
+	private static final File TARGET_DIR = new AMIFilterTest().createAbsoluteTargetDir();
+
+	@Test
 	public void testGenericHelp() {
 		/** fails with NPE */
 		AbstractAMITool abstractTool;

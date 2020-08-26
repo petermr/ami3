@@ -3,14 +3,18 @@ package org.contentmine.ami.tools;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.DebugPrint;
+import org.contentmine.eucl.euclid.IntRange;
+import org.contentmine.eucl.euclid.util.CMStringUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.image.ImageUtil;
 
@@ -30,6 +34,8 @@ import picocli.CommandLine.Option;
 @Command(
 	name = "assert",
 	description = "Makes assertions about objects created by AMI. "
+			+ "Currently requires a type (${COMPLETION-CANDIDATES}),"
+			+ "and maybe a SubdirectoryType."
 )
 public class AMIAssertTool extends AbstractAMITool {
 
@@ -37,16 +43,30 @@ public class AMIAssertTool extends AbstractAMITool {
 private static final String FAIL = "fail";
 
 	public enum AssertType {
+		dir,
+		dirtree,
 		file,
 		help,
-		image,
+		img,
+		str,
 		xpath,
 	}
-	    
-    @Option(names = {"--directoryname"},
+    
+	@Option(names = {"--count"},
+			arity = "1..2",
+			split=",",
+	        description = "count to assert (single value or range), mainly used for type=dir")
+	private List<Integer> counts = null;
+	
+	@Option(names = {"--directoryname"},
+		arity = "1",
+	    description = "current directory")
+	private String currentDirname = null;
+
+    @Option(names = {"--dirtree"},
     		arity = "1",
-            description = "current directory")
-    private String currentDirname = null;
+            description = "file containing non-hidden files in directory tree sorted lexically")
+    private File dirtree = null;
 
     @Option(names = {"--fail"},
     		arity = "",
@@ -66,16 +86,22 @@ private static final String FAIL = "fail";
     @Option(names = {"--message"},
     		arity = "1..*",
             description = "(short) message to output. individual tokens will be concatenated. Punctuation is dangerous.")
-    private List<String> message = null;
+    private List<String> messageList = null;
+
+    @Option(names = {"--params"},
+    		arity = "1..*",
+            description = "(short) message to output. individual tokens will be concatenated. Punctuation is dangerous.")
+    private Map<String, String> params = null;
 
     @Option(names = {"--size"},
     		arity = "1..2",
+    		split=",",
             description = "sizes of objects (type-dependent)")
     private List<Integer> sizes = new ArrayList<>();
 
     @Option(names = {"--type"},
     		required = true,
-            description = "type of object to assert")
+            description = "type of object to assert (${COMPLETION-CANDIDATES})")
     private AssertType assertType = null;
 
     @Option(names = {"--width"},
@@ -85,7 +111,8 @@ private static final String FAIL = "fail";
 
     @Option(names = {"--xpath"},
     		arity = "1",
-            description = "xpath to evaluate and apply to file. Result is a node-set that is matched against list of sizes or values."
+            description = "xpath to evaluate and apply to file. Result is a node-set that is matched against"
+            		+ " list of sizes or values."
             		+ "")
     private String xpath;
 
@@ -117,21 +144,12 @@ private static final String FAIL = "fail";
 
     @Override
 	protected void parseSpecifics() {
+    	super.parseSpecifics();
     	if (assertType == null) {
     		throw new RuntimeException("Must give type");
     	}
-    	messageString = String.join(" ", message);
-    	xpath = unescape(xpath);
-		LOG.info("currentDirname      {}", currentDirname);
-		LOG.info("subdirectoryType    {}", subdirectoryType);
-		LOG.info("fail                {}", fail);
-		LOG.info("currentFilename     {}", currentFilename);
-		LOG.info("heights             {}", heights);
-		LOG.info("messageString       {}", messageString);
-		LOG.info("sizes               {}", sizes);
-		LOG.info("assertType          {}", assertType);
-		LOG.info("widths              {}", widths);
-		LOG.info("xpath               {}", xpath);
+    	messageString = messageList == null ? null : String.join(" ", messageList);
+    	xpath = CMStringUtil.urlDecode(xpath);
 	}
 
 
@@ -150,14 +168,55 @@ private static final String FAIL = "fail";
 			iterateOverPDFImageDirs();
 		} else if (SubDirectoryType.svg.equals(subdirectoryType)) {
 			iterateOverSVGFiles();
+		} else if (AssertType.dir.equals(assertType)) {
+			assertDir();
+		} else if (AssertType.dirtree.equals(assertType)) {
+			assertDirTree();
+		} else if (AssertType.file.equals(assertType)) {
+			assertFile();
 		} else {
-			currentDir = cTree.getDirectory();
-			this.currentFile = new File(currentDir, getInputBasename());
-			this.runAssert();
-			
+			System.err.println("Nothing to assert");
 		}
 		return processed;
 	}
+
+	private void assertFile() {
+		LOG.info("FILE");
+		
+		if (input() != null) {
+			currentDir = cTree.getDirectory();
+			this.currentFile = new File(currentDir, /*getInputBasename()*/ input());
+			if (!currentFile.exists()) {
+				throw new RuntimeException("File does not exist: "+currentFile);
+			}
+			int size = (int)FileUtils.sizeOf(currentFile);
+			List<Integer> ints = sizes;
+			checkIntValue(messageString, size, ints);
+		} else {
+			LOG.warn("No --input for file");
+		}
+	}
+
+	private void assertDir() {
+		LOG.info("DIR");
+		File[] files = cTree.getDirectory().listFiles();
+		List<File> fileList = files == null ? new ArrayList<>() : new ArrayList<File>(Arrays.asList(files));
+		int size = fileList.size();
+		if (counts != null) {
+			String message1 = assertValue(size, counts);
+			if (message1.length() > 0) {
+				LOG.warn("***** " + messageString + ": " +  message1 + " *****");
+			}
+		}
+	}
+
+	private void assertDirTree() {
+		LOG.info("DIR_TREE");
+		Element tree = AMISummaryTool.createDirectoryTree(cTree.getDirectory());
+		XMLUtil.assertEqualsCanonically(dirtree, tree);
+	}
+
+
 
 	private void iterateOverPDFImageDirs() {
 		List<File> imageDirs = cTree.getPDFImagesImageDirectories();
@@ -198,9 +257,10 @@ private static final String FAIL = "fail";
 	}
 	
 	public void runAssert() {
-		if (AssertType.file.equals(assertType)) {
-			assertMessage = assertFile();
-		} else if (AssertType.image.equals(assertType)) {
+		if (false) {
+		} else if (AssertType.file.equals(assertType)) {
+//			assertMessage = assertFile();
+		} else if (AssertType.img.equals(assertType)) {
 			assertMessage = assertImage();
 		} else if (AssertType.xpath.equals(assertType)) {
 			assertMessage = assertXPath();
@@ -220,10 +280,6 @@ private static final String FAIL = "fail";
 		}
 	}
 
-	private String assertFile() {
-		return null;
-	}
-	
 	private String assertImage() {
 		BufferedImage image = ImageUtil.readImageQuietly(currentFile);
 		
@@ -283,6 +339,8 @@ private static final String FAIL = "fail";
 		return errorMessage;
 	}
 
+	// ======================= PRIVATE =======================
+	
 	private String assertCondition(String string) {
 		return " "+string;
 	}
@@ -305,47 +363,28 @@ private static final String FAIL = "fail";
 		return null;
 	}
 	
-	public static String unescape(String s) {
-		StringBuilder sb = new StringBuilder();
-		for (int i = 0; i < s.length(); i++) {
-			char c = s.charAt(i);
-			if (c == '%') {
-				if (i < s.length() - 3) {
-					String ss = extractChar(s, i);
-					if (ss != null) {
-						i += 2;
-						sb.append(ss);
-					} else {
-						sb.append('%');
-					}
-				}
-			} else {
-				sb.append(c);
+	private static String assertValue(int value, List<Integer> intLimits) {
+		String message = "";
+		IntRange intRange = IntRange.getIntRange(intLimits);
+		if (intRange == null) {
+			throw new RuntimeException("bad limits "+intLimits);
+		}
+		if (!intRange.contains(value)) {
+			message = value + " not in range "+intRange;
+		}
+		return message;
+	}
+	
+	private static void checkIntValue(String messageString, int size, List<Integer> ints) {
+		if (ints != null) {
+			String message1 = assertValue(size, ints);
+			if (message1.length() > 0) {
+				LOG.warn("***** " + messageString + ": " +  message1 + " *****");
 			}
 		}
-		return sb.toString();
 	}
+	
 
-	public static String extractChar(String s, int i) {
-		String ss = null;
-		char c1 = s.charAt(i+1);
-		char c2 = s.charAt(i+2);
-		if (isHexCharacter(c1) && isHexCharacter(c2)) {
-			try {
-				int ii = (int) Long.parseLong(s.substring(i+1, i+3), 16);
-				ss = String.valueOf((char) ii);
-			} catch (Exception e) {
-				throw new RuntimeException("BUG", e);
-			}
-		}
-		return ss;
-	}
-
-	private static boolean isHexCharacter(char c2) {
-		if (c2 >= '0' && c2 <= '9') return true;
-		if (c2 >= 'A' && c2 <= 'F') return true;
-		if (c2 >= 'a' && c2 <= 'f') return true;
-		return false;
-	}
+	
 
 }

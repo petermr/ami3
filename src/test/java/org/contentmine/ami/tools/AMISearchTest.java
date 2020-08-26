@@ -12,6 +12,7 @@ import org.junit.Test;
 
 public class AMISearchTest extends AbstractAMITest {
 	private static final String MAIN_AMI_DIR = "src/main/resources/org/contentmine/ami";
+	private static final File TARGET_DIR = new AMISearchTest().createAbsoluteTargetDir();
 
 	private static final Logger LOG = LogManager.getLogger(AMISearchTest.class);
 	
@@ -110,7 +111,6 @@ public class AMISearchTest extends AbstractAMITest {
 		
 //		new AMISearchTool().runCommands(args);
 	}
-	// Lantana Camara
 
 	@Test
 	public void testAMISearchNewIT() {

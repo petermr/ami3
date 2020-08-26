@@ -28,8 +28,8 @@ import org.junit.Test;
  */
 public class AMIDisplayTest extends AbstractAMITest {
 	
-	private static final File TARGET_DIR = new AMIDisplayTest().createTargetDir();
 	static final Logger LOG = LogManager.getLogger(AMIDisplayTest.class);
+	private static final File TARGET_DIR = new AMIDisplayTest().createAbsoluteTargetDir();
 	
 	@Test
 	public void testHelp() {

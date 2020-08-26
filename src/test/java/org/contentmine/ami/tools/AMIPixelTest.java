@@ -31,6 +31,8 @@ import org.junit.Test;
  */
 public class AMIPixelTest extends AbstractAMIImageTest /*AbstractAMITest*/ {
 	private static final Logger LOG = LogManager.getLogger(AMIPixelTest.class);
+	private static final File TARGET_DIR = new AMIPixelTest().createAbsoluteTargetDir();
+	
 	private PixelIslandList islandList;
 	private int minHairLength;
 	private int maxIslands;

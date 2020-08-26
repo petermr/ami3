@@ -606,7 +606,7 @@ public enum IncExc {
 					}
 				} catch (Exception e) {
 					// log one line at ERROR level (this is displayed to the user)
-					LOG.error("Ignoring error that occurred while process tree: " + cTree.getName() + ": " + e);
+					LOG.error("Ignoring error (see logs) occurring in processTree(): " + cTree.getName() + ": " + e);
 
 					// log the stack trace at info level so it is captured in the log
 					LOG.debug("Details of the problem processing tree " + cTree.getName(), e);

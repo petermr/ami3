@@ -10,28 +10,71 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class AMIAssertTest {
+public class AMIAssertTest extends AbstractAMITest {
 
 	private static final Logger LOG = LogManager.getLogger(AMIAssertTest.class);
-@Test
-	public void testAssert() {
-//		String source = createSourceFromProjectAndTree("-p", ForestPlotType.stata);
-		File dir = new File("src/test/resources/org/contentmine/ami/tools/spssSimple");
-		assertTrue("Missing resource dir " + dir, dir.isDirectory());
-		assertTrue("Missing resource files in " + dir, dir.listFiles().length > 0);
-		LOG.debug("dir "+dir+" "+Arrays.asList(dir.listFiles()));
+//	private static final File TARGET_DIR = new AMIAssertTest().createAbsoluteTargetDir();
 
-		/** calculate projections and lines */
-		AMI.execute("-p " + dir
-				+ " --inputname "+"raw.png"
-				+ " assert "
-				+ " --type image"
-				+ " --size 10000 500000"
-				+ " --width 300 1400"
-				+ " --height 200 700"
-				+ " --image"
-				.split(" ")
-				);
+	String cmd;
+@Test
+	public void testAssertHelp() {
+		cmd = " assert --help";
+		AMI.execute(cmd);
+	}
+
+	@Test
+	public void testAssertDir() {
+		File dir = AbstractAMITest.TEST_BATTERY10;
+		cmd = " -vvv "
+				+ "-t " + new File(dir, "PMC3211491")
+			+ " assert "
+			+ " --type=dir"
+			+ " --count=15,17"
+			+ " --message=number_of_Files_in_directory "
+			;
+		AMI.execute(cmd);
+	}
+	
+	@Test
+	public void testAssertFile() {
+		File dir = AbstractAMITest.TEST_BATTERY10;
+		cmd = " -vvv "
+				+ " -i fulltext.pdf"
+				+ " -t " + new File(dir, "PMC3211491")
+			+ " assert "
+			+ " --type=file"
+			+ " --size=8543000,8544000 "
+			+ " --message=size_of_file "
+			;
+		AMI.execute(cmd);
+	}
+
+	@Test
+	public void testAssertDirTree() {
+		File dir = AbstractAMITest.TEST_BATTERY10;
+		File expected = new File(TEST_BATTERY10_EXPECTED, "PMC3211491/sortedtree.xml");
+		cmd = " -vvv "
+				+ " -t " + new File(dir, "PMC3211491")
+			+ " assert "
+			+ " --type=dirtree"
+			+ " --dirtree=" + expected
+			+ " --message=size_of_file "
+			;
+		AMI.execute(cmd);
+	}
+
+	@Test
+	public void testAssertDirGlob() {
+		File dir = AbstractAMITest.TEST_BATTERY10;
+		cmd = " -vvv "
+			+ " -p " + dir
+			+ " assert "
+			+ " --type=dir"
+			+ " --glob=**/results.xml"
+			+ " --count=22,24"
+			+ " --message=results.xml_count "
+			;
+		AMI.execute(cmd);
 	}
 
 }

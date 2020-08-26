@@ -22,6 +22,8 @@ import org.junit.Test;
  */
 public class AMIOCRTest extends AbstractAMIImageTest /*AbstractAMITest*/ {
 	public static final Logger LOG = LogManager.getLogger(AMIOCRTest.class);
+	private static final File TARGET_DIR = new AMIOCRTest().createAbsoluteTargetDir();
+
 	AMIOCRTool amiOCRTool;
 	
 	@Test

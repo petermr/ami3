@@ -10,7 +10,9 @@ import org.junit.Test;
 
 public class AMITableTest extends AbstractAMITest {
 	private static final Logger LOG = LogManager.getLogger(AMITableTest.class);
-@Test
+	private static final File TARGET_DIR = new AMITableTest().createAbsoluteTargetDir();
+	
+	@Test
 	@Ignore // phytomedchem.xml not found (See CEVOpen)
 	public void testSummaryTableOil() {
 		File dir = OIL5;

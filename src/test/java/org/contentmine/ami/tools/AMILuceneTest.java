@@ -51,11 +51,12 @@ import org.junit.Test;
  * @author pm286
  *
  */
-public class AMILuceneTest {
+public class AMILuceneTest extends AbstractAMITest {
 	
-
 	private static final Logger LOG = LogManager.getLogger(AMILuceneTest.class);
-public final static String CRICK_WATSON = ""
+	private static final File TARGET_DIR = new AMILuceneTest().createAbsoluteTargetDir();
+
+	public final static String CRICK_WATSON = ""
 			+ "It has not escaped our notice that the specific pairing we have postulated"
 			+ " immediately suggests a possible copying mechanism for the genetic material.";
 

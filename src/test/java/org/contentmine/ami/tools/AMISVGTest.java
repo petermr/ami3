@@ -14,6 +14,7 @@ import org.junit.Test;
  */
 public class AMISVGTest extends AbstractAMITest {
 	private static final Logger LOG = LogManager.getLogger(AMISVGTest.class);
+	private static final File TARGET_DIR = new AMISVGTest().createAbsoluteTargetDir();
 	private static File TEST_VECTOR = new File(SRC_TEST_AMI, "vector10");
 	private static File TARGET_VECTOR = new File(TARGET, "vector10");
 
@@ -216,7 +217,7 @@ public class AMISVGTest extends AbstractAMITest {
 				+ " --maxprimitives=100000"
 //				+ " --pages=4 5"
 				;
-//		AMI.execute(cmd);
+		AMI.execute(cmd);
 
 		cmd = ""
 				+ " -vv"

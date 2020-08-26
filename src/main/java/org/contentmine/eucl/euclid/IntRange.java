@@ -529,4 +529,24 @@ private final static Pattern CURLY_PATTERN1 = Pattern.compile("\\{([^,]+)\\}");
 		}
 		return this;
 	}
+	
+	/**
+	 * make IntRange from 1 or 2 values
+	 * 
+	 * @param ints if 1 set limits equals
+	 * @return
+	 */
+	public static IntRange getIntRange(List<Integer> ints) {
+		int size = ints.size();
+		IntRange intRange = null;
+		if (size == 0 || size > 2) {
+			throw new RuntimeException("bad 2-value list: "+ints);
+		} 
+		int i0 = ints.get(0);
+		int i1 = ints.get((size == 1) ? 0 : 1);
+		intRange = new IntRange(Math.min(i0,  i1), Math.max(i0, i1));
+		return intRange;
+	}
+
+
 }

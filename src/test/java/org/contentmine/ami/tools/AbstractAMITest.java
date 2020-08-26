@@ -15,6 +15,7 @@ import org.contentmine.cproject.CMineFixtures;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.util.CMineGlobber;
+import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.util.CMFileUtil;
 import org.contentmine.eucl.testutil.TestUtils;
@@ -43,6 +44,7 @@ public abstract class AbstractAMITest {
 	public static final File OIL5 = new File(SRC_TEST_AMI, "oil5/");
 	
 	public static final File TEST_BATTERY10 = new File(SRC_TEST_AMI, "battery10");
+	public static final File TEST_BATTERY10_EXPECTED = new File(SRC_TEST_AMI, "battery10.expected/");
 	public static final File TEST_BATTERY10COMPUTE = new File(SRC_TEST_AMI, "battery10compute");
 	public static final File TEST_DICTIONARY = new File(SRC_TEST_AMI, "dictionary");
 	
@@ -76,8 +78,9 @@ public abstract class AbstractAMITest {
 	 * @param testDirectory
 	 * @param root name of test file 
 	 * @param outputDir such as target/whatever/ 
+	 * @return actual file
 	 */
-	public static final void writeOutputAndCompare(File testDirectory, String root, File outputDir) {
+	public static final File writeXMLElementAndCompare(File testDirectory, String root, File outputDir) {
 		double eps = 0.001;
 		boolean stripWhite = true;
 		File expectedFile = new File(testDirectory, root + ".expected.xml");
@@ -87,8 +90,10 @@ public abstract class AbstractAMITest {
 			throw new RuntimeException(message);
 		}
 		Element expectedElement = XMLUtil.parseQuietlyToRootElement(expectedFile);
-		Element actualElement = XMLUtil.parseQuietlyToRootElement(new File(outputDir, root + ".xml"));
+		File actualFile = new File(outputDir, root + ".xml");
+		Element actualElement = XMLUtil.parseQuietlyToRootElement(actualFile);
 		TestUtils.assertEqualsIncludingFloat(root, expectedElement, actualElement, stripWhite, eps);
+		return actualFile;
 	}
 
 	/**
@@ -104,10 +109,10 @@ public abstract class AbstractAMITest {
 		Assert.assertEquals("trees not equal", expectedTree, actualTree);
 	}
 
-	protected static void echoAndExecute(String args, String  expected) {
+	protected void echoAndExecute(String args, String  expected) {
 		System.out.println("Running: "+args);
 		Assert.assertEquals(args.trim(), expected.trim());
-		AMI.execute(AMICleanTool.class, args);
+		AMI.execute(args);
 	}
 
 	protected CProject cProject;
@@ -212,14 +217,20 @@ public abstract class AbstractAMITest {
 		return "target/" + createAmiModuleName()+"/";
 	}
 
-	protected File createTargetDir() {
-		return new File(createTargetDirname());
+	protected File createAbsoluteTargetDir() {
+		return new File(createTargetDirname()).getAbsoluteFile();
 	}
 
 	private String createAmiModuleName() {
 		String shortClassName = this.getClass().getSimpleName();
 		String moduleName = shortClassName.replaceAll("(Tool|Test|AMI)", "").toLowerCase();
 		return moduleName;
+	}
+
+	protected File cleanAndCopyToTarget(File file) {
+		File targetDir = this.createAbsoluteTargetDir();
+		CMineTestFixtures.cleanAndCopyDir(file, targetDir);
+		return targetDir;
 	}
 
 }

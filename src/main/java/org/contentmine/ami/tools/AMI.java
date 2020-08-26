@@ -60,18 +60,16 @@ import picocli.jansi.graalvm.AnsiConsole;
 		subcommands = {
 				AMIAssertTool.class,
 				AMICleanTool.class,
-//				AMIDictionaryTool.class,
-//				AMIDict.class,
 				AMIDisplayTool.class,
 				AMIDownloadTool.class,
 				AMIDummyTool.class,
 				AMIFigureTool.class,
+				AMIFilesTool.class,
 				AMIFilterTool.class,
 				AMIForestPlotTool.class,
 				//AMIGetpapersTool.class, // https://github.com/petermr/ami3/issues/29
 				AMIGraphicsTool.class,
 				AMIGrobidTool.class,
-//				AMIImageFilterToolOLD.class, // replaced by AMIFilterTool
 				AMIImageTool.class,
 				AMILuceneTool.class,
 				AMIMakeProjectTool.class,

@@ -165,8 +165,9 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 			description = "maps wikidata/SPARQL name onto AMIDict names. "
 			+ "builtin names = id, term, name, wikidataURL, wikidataID, wikipediaURL, wikipediaPage, description, "
 			+ "wikidata names are _p[\\d]+_* (properties)  and _q[\\d]+_* (items), "
-			+ "other names are _[a-zA-Z]* , everything else is an error."
-			+ "updated 2020-08-19. (this is still liable to change)"	
+			+ "( see  *  )"
+			+ " other names are _[a-zA-Z]* , everything else is an error."
+			+ "updated 2020-08-21. (this is still liable to change)"	
 			+ "Mandatory for wikisparql inputs"
 			
 			) 

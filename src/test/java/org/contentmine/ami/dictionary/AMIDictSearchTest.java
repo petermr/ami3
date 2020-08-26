@@ -6,6 +6,8 @@ import java.io.File;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMIDict;
+import org.contentmine.ami.tools.AMIDownloadTest;
+import org.contentmine.ami.tools.AbstractAMIDictTest;
 import org.contentmine.ami.tools.AbstractAMITest;
 import org.contentmine.ami.tools.dictionary.DictionarySearchTool;
 import org.junit.Assert;
@@ -17,11 +19,11 @@ import org.junit.Test;
  * @author pm286
  *
  */
-public class AMIDictSearchTest extends AbstractAMITest {
+public class AMIDictSearchTest extends AbstractAMIDictTest {
 	private static final Logger LOG = LogManager.getLogger(AMIDictSearchTest.class);
+	private static final File TARGET_DIR = new AMIDictSearchTest().createAbsoluteTargetDir();
+
 	private static final String CEV_OPEN = "/Users/pm286/projects/CEVOpen";
-	private static final File TARGET = new File("target");
-	public static final File DICTIONARY_DIR = new File(TARGET, "dictionary");
 	public static final File SRC_TEST_DICTIONARY = new File(SRC_TEST_AMI, "dictionary");
 
 

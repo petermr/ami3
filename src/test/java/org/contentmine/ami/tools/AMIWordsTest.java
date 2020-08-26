@@ -1,48 +1,33 @@
 package org.contentmine.ami.tools;
 
-import java.awt.image.BufferedImage;
 import java.io.File;
 
-import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.contentmine.ami.AMIFixtures;
-import org.contentmine.ami.tools.AMITransformTool;
-import org.contentmine.ami.tools.AMIWordsTool;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.norma.NAConstants;
 import org.junit.Test;
 
 public class AMIWordsTest extends AbstractAMITest {
 	private static final Logger LOG = LogManager.getLogger(AMIWordsTest.class);
+	private static final File TARGET_DIR = new AMIWordsTest().createAbsoluteTargetDir();
 	
 
 	@Test
 	public void testOil5() {
-//		File testFile = OIL5;
-//		String name = testFile.getName();
-//		File targetDir = new File("target/cooccurrence/", name);
-//		CMineTestFixtures.cleanAndCopyDir(testFile, targetDir);
-//		/** need HTML */
-//		String args = 
-//				"-p /Users/pm286/workspace/cmdev/normami/target/cooccurrence/"+name+"/";
-//			;
-//		new AMITransformTool().runCommands(args);
-//		// transformed norma
-		System.out.println("output "+OIL5);
+		File targetDir = cleanAndCopyToTarget(OIL5);
 		String cmd = ""
-//				"-h"
-//				+ " -p /Users/pm286/workspace/cmdev/normami/target/cooccurrence/"+name+"/"
-				+ " -p " + OIL5
+				+ " -p " + targetDir
 				+ " -vv"
 				+ " words"
 				+ " --stopwords pmcstop.txt stopwords.txt"
 				+ " --methods frequencies "  //wordLengths"
-				+ " --stripNumbers" // works
-				+ " --stemming" // works
+				+ " --stripNumbers"          // works
+				+ " --stemming"              // works
 				+ " --wordCount 20,40"
 			;
-		AMI.execute(AMIWordsTool.class, cmd);
-//		new AMIWordsTool().runCommands(args);
+		echoAndExecute("-p target/words -vv words --stopwords pmcstop.txt stopwords.txt --methods frequencies  --stripNumbers --stemming --wordCount 20,40", cmd);
 	}
 	
 	

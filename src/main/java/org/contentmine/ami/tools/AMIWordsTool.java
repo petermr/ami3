@@ -239,6 +239,17 @@ public class AMIWordsTool extends AbstractAMISearchTool {
 
     }
 
+	protected boolean processTree() {
+		processedTree = true;
+		LOG.info("AMIWords processTree");
+		wordArgProcessor.setCTree(cTree);
+		processedTree = extractWords();
+		// this is the original, phased out; will run twice unnecessarily because runs project
+//		runWords();
+//		runWordsNew();
+		return processedTree;
+	}
+	
 	protected void createWordListInWordCollectionFactory() {
 		super.createWordListInWordCollectionFactory();
 	}
@@ -261,17 +272,6 @@ public class AMIWordsTool extends AbstractAMISearchTool {
     	return wordCmd;
 	}
 
-	protected boolean processTree() {
-		processedTree = true;
-		LOG.info("AMIWords processTree");
-		wordArgProcessor.setCTree(cTree);
-		processedTree = extractWords();
-		// this is the original, phased out; will run twice unnecessarily because runs project
-//		runWords();
-//		runWordsNew();
-		return processedTree;
-	}
-	
 	/** ================================================= 
 	 * @return */
 
