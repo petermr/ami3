@@ -36,7 +36,8 @@ import picocli.CommandLine.ParameterException;
 import picocli.CommandLine.Spec;
 import picocli.jansi.graalvm.AnsiConsole;
 
-@Command(name = "amidict",
+@Command(name = "amidict", versionProvider = ManifestVersionProvider.class,
+		defaultValueProvider = CommandLine.PropertiesDefaultProvider.class,
 		description = {
 				"",
 				"`${COMMAND-FULL-NAME}` is a command suite for managing dictionary: " +
