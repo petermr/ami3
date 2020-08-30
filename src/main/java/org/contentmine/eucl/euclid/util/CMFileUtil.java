@@ -548,6 +548,20 @@ private BiMap<File, File> newFileByOldFile;
 			
 	}
 
+	/** convenience method to avoid testing for null.
+	 * 
+	 * @param dir
+	 * @return empty list if no files 
+	 */
+	public static List<File> listFiles(File dir) {
+		List<File> fileList = new ArrayList<>();
+		if (dir.isDirectory()) {
+			File[] files = dir.listFiles();
+			fileList = files == null ? new ArrayList<>() : new ArrayList<File>(Arrays.asList(files));
+		}
+		return fileList;
+	}
+
 
 
 

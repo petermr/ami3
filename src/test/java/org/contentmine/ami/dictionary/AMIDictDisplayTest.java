@@ -98,6 +98,27 @@ public class AMIDictDisplayTest extends AbstractAMIDictTest {
 		AMIDict.execute(args);
 		
 	}
+	
+	@Test
+	/** reference a dictionary by explicit filename.
+	 * 
+	 */
+	public void testDictionaryValidateExplicitFilename() {
+		String dictionary = "funder";
+		File directory = new File("/Users/pm286/projects/openVirus/dictionaries/funders");
+		String args = ""
+				+ " --dictionary " + dictionary
+				+ " --directory " + directory
+				+ " -vv"
+				+ " display"
+				+ " --fields id"
+				+ " --validate"
+				;
+		AMIDict.execute(args);
+		
+	}
+	
+	
 
 
 }

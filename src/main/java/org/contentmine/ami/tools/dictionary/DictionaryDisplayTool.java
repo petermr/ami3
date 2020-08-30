@@ -137,7 +137,8 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
     private String suffix = CTree.XML;
     
     @Option(names = {"--validate"}, 
-   		    description = "add validation annotation)"
+   		    description = "add validation annotation. allowed elements; "
+   		    		+ "allowed children of elements; allowed attributes of elements."
     		)
     private boolean validate = false;
     
@@ -207,9 +208,9 @@ public class DictionaryDisplayTool extends AbstractAMIDictTool {
 
 	public void listDictionaryInfo() {
 		
-		LOG.warn("\nDictionary: " + simpleDictionary.getDictionaryName()+"\n");
+		LOG.info("\nDictionary: " + simpleDictionary.getDictionaryName()+"\n");
 		List<Element> entries = XMLUtil.getQueryElements(simpleDictionary.getDictionaryElement(), "./*[local-name()='entry']");
-		LOG.warn("entries: "+entries.size());
+		LOG.info("entries: "+entries.size());
 		LOG.trace("validate "+validate);
 		validateWithXPath();
 		printFieldSummary();

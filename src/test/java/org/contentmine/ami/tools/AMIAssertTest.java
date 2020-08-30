@@ -1,14 +1,10 @@
 package org.contentmine.ami.tools;
 
 import java.io.File;
-import java.util.Arrays;
 
-import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
-import org.contentmine.ami.tools.AMIAssertTool;
+import org.apache.logging.log4j.Logger;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class AMIAssertTest extends AbstractAMITest {
 
@@ -24,7 +20,7 @@ public class AMIAssertTest extends AbstractAMITest {
 
 	@Test
 	public void testAssertDir() {
-		File dir = AbstractAMITest.TEST_BATTERY10;
+		File dir = TEST_BATTERY10;
 		cmd = " -vvv "
 				+ "-t " + new File(dir, "PMC3211491")
 			+ " assert "
@@ -37,7 +33,7 @@ public class AMIAssertTest extends AbstractAMITest {
 	
 	@Test
 	public void testAssertFile() {
-		File dir = AbstractAMITest.TEST_BATTERY10;
+		File dir = TEST_BATTERY10;
 		cmd = " -vvv "
 				+ " -i fulltext.pdf"
 				+ " -t " + new File(dir, "PMC3211491")
@@ -51,27 +47,41 @@ public class AMIAssertTest extends AbstractAMITest {
 
 	@Test
 	public void testAssertDirTree() {
-		File dir = AbstractAMITest.TEST_BATTERY10;
+		File dir = TEST_BATTERY10;
 		File expected = new File(TEST_BATTERY10_EXPECTED, "PMC3211491/sortedtree.xml");
 		cmd = " -vvv "
 				+ " -t " + new File(dir, "PMC3211491")
 			+ " assert "
 			+ " --type=dirtree"
 			+ " --dirtree=" + expected
-			+ " --message=size_of_file "
+			+ " --message=directory_tree "
 			;
 		AMI.execute(cmd);
 	}
 
 	@Test
-	public void testAssertDirGlob() {
-		File dir = AbstractAMITest.TEST_BATTERY10;
+	public void testAssertDirGlobTree() {
+		File dir = new File(TEST_BATTERY10, "PMC3211491/");
+		cmd = " -vvv "
+			+ " -t " + dir
+			+ " assert "
+			+ " --type=dir"
+			+ " --glob=**/results.xml"
+			+ " --count=3"
+			+ " --message=results.xml_count "
+			;
+		AMI.execute(cmd);
+	}
+
+	@Test
+	public void testAssertDirGlobProject() {
+		File dir = TEST_BATTERY10;
 		cmd = " -vvv "
 			+ " -p " + dir
 			+ " assert "
 			+ " --type=dir"
 			+ " --glob=**/results.xml"
-			+ " --count=22,24"
+			+ " --count=99"
 			+ " --message=results.xml_count "
 			;
 		AMI.execute(cmd);

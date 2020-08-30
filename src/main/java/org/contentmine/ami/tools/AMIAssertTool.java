@@ -3,21 +3,28 @@ package org.contentmine.ami.tools;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.contentmine.cproject.files.CProject;
+import org.contentmine.cproject.files.CTree;
 import org.contentmine.cproject.files.DebugPrint;
+import org.contentmine.cproject.util.CMineGlobber;
 import org.contentmine.eucl.euclid.IntRange;
+import org.contentmine.eucl.euclid.RealRange;
+import org.contentmine.eucl.euclid.util.CMFileUtil;
 import org.contentmine.eucl.euclid.util.CMStringUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.image.ImageUtil;
 
+import jline.internal.Log;
 import nu.xom.Element;
 import nu.xom.Node;
 import picocli.CommandLine.Command;
@@ -40,23 +47,88 @@ import picocli.CommandLine.Option;
 public class AMIAssertTool extends AbstractAMITool {
 
 	private static final Logger LOG = LogManager.getLogger(AMIAssertTool.class);
-private static final String FAIL = "fail";
-
-	public enum AssertType {
-		dir,
-		dirtree,
-		file,
-		help,
-		img,
-		str,
-		xpath,
+	private static final String FAIL = "fail";
+	
+	private enum AssertType {
+		dir("files in a directory"),
+		dirtree("complete directory tree"),
+		file("single file"),
+		help("help!!"),
+		img("image"),
+		str("string"),
+		xpath("selector within XML files"),
+		;
+		private String desc;
+	
+		private AssertType(String desc) {
+			this.desc = desc;
+		}
 	}
-    
-	@Option(names = {"--count"},
-			arity = "1..2",
+
+	private enum ParamType {
+		height("height of image"),
+		width("width of image"),
+		;
+		private String desc;
+	
+		private ParamType(String desc) {
+			this.desc = desc;
+		}
+
+		public String getDescription() {
+			return desc;
+		}
+	}
+
+	private enum RangeType {
+		percent("allowed variation in either direction (positive real)"),
+		intd("deviation in either direction (positive int)"),
+		reald("deviation in either direction (positive real)"),
+		;
+		private String desc;
+	
+		private RangeType(String desc) {
+			this.desc = desc;
+		}
+
+		public String getDescription() {
+			return desc;
+		}
+
+		/**
+		 * gets value for RangeType.intd and interprets as integer
+		 * @return null if rangeMap is null or no RangeType.intd or not integer
+		 */
+		public static Integer getInteger(Map<RangeType, String> rangeMap) {
+			String s = rangeMap == null ? null : rangeMap.get(RangeType.intd);
+			try {
+				return (s == null) ? null : Integer.parseInt(s);
+			} catch (NumberFormatException nfe) {
+				LOG.warn("unparsable integer: " + s);
+				return null;
+			}
+		}
+		/**
+		 * gets value for RangeType.intd and interprets as integer
+		 * @return null if rangeMap is null or no RangeType.intd or not integer
+		 */
+		public static Double getDouble(Map<RangeType, String> rangeMap) {
+			String s = rangeMap == null ? null : rangeMap.get(RangeType.reald);
+			try {
+				return (s == null) ? null : Double.parseDouble(s);
+			} catch (NumberFormatException nfe) {
+				LOG.warn("unparsable double: " + s);
+				return null;
+			}
+		}
+	}
+
+	@Option(names = {"--filecount"},
+			arity = "1..*",
 			split=",",
-	        description = "count to assert (single value or range), mainly used for type=dir")
-	private List<Integer> counts = null;
+	        description = "file count(s) to assert , e.g. file counts per cTree /type=dir"
+	        		+ "")
+	private List<Integer> fileCounts = null;
 	
 	@Option(names = {"--directoryname"},
 		arity = "1",
@@ -78,10 +150,15 @@ private static final String FAIL = "fail";
             description = "current file relative to ctree")
     private String currentFilename = null;
 
-    @Option(names = {"--height"},
-    		arity = "1..2",
-            description = "heights of images")
-    private List<Integer> heights = new ArrayList<>();
+    @Option(names = {"--glob"},
+    		arity = "1..*",
+            description = "list of globs (aggregated) to create fileList")
+    private List<String> globList = null;
+
+//    @Option(names = {"--height"},
+//    		arity = "1..2",
+//            description = "heights of images; maybe obsolete (replace by params?)")
+//    private List<Integer> heights = new ArrayList<>();
 
     @Option(names = {"--message"},
     		arity = "1..*",
@@ -90,24 +167,29 @@ private static final String FAIL = "fail";
 
     @Option(names = {"--params"},
     		arity = "1..*",
-            description = "(short) message to output. individual tokens will be concatenated. Punctuation is dangerous.")
-    private Map<String, String> params = null;
+            description = "parameters")
+    private Map<ParamType, String> params = null;
 
-    @Option(names = {"--size"},
-    		arity = "1..2",
+    @Option(names = {"--range"},
     		split=",",
-            description = "sizes of objects (type-dependent)")
-    private List<Integer> sizes = new ArrayList<>();
+            description = "range of expected values - applied equally to all values. ")
+    private Map<RangeType, String> rangeMap = new HashMap<>();
+
+    @Option(names = {"--filesize"},
+    		arity = "1..*",
+    		split=",",
+            description = "sizes of files")
+    private List<Integer> fileSizes = new ArrayList<>();
 
     @Option(names = {"--type"},
     		required = true,
             description = "type of object to assert (${COMPLETION-CANDIDATES})")
     private AssertType assertType = null;
 
-    @Option(names = {"--width"},
-    		arity = "1..2",
-            description = "widths of images")
-    private List<Integer> widths = new ArrayList<>();
+//    @Option(names = {"--width"},
+//    		arity = "1..2",
+//            description = "widths of images ; maybe obsolete (replace by params?)")
+//    private List<Integer> widths = new ArrayList<>();
 
     @Option(names = {"--xpath"},
     		arity = "1",
@@ -141,6 +223,7 @@ private static final String FAIL = "fail";
 	@Option(names = {"--subdirectorytype"},
 			description = "Use subdirectory of cTree (${COMPLETION-CANDIDATES})")
 	protected SubDirectoryType subdirectoryType;
+	private File topDir;
 
     @Override
 	protected void parseSpecifics() {
@@ -155,7 +238,13 @@ private static final String FAIL = "fail";
 
     @Override
     protected void runSpecifics() {
-    	if (processTrees()) { 
+		topDir = getTopLevelDirectoryTreeOrProject();
+    	if (cProject != null) {
+    		for (CTree cTree : cProject.getOrCreateCTreeList()) {
+    			processTree();
+    		}
+    	} else if (cTree != null) { 
+    		processTree();
     	} else {
 			LOG.error(DebugPrint.MARKER, "must give cProject or cTree");
 	    }
@@ -169,7 +258,7 @@ private static final String FAIL = "fail";
 		} else if (SubDirectoryType.svg.equals(subdirectoryType)) {
 			iterateOverSVGFiles();
 		} else if (AssertType.dir.equals(assertType)) {
-			assertDir();
+			assertSingleDir();
 		} else if (AssertType.dirtree.equals(assertType)) {
 			assertDirTree();
 		} else if (AssertType.file.equals(assertType)) {
@@ -190,24 +279,45 @@ private static final String FAIL = "fail";
 				throw new RuntimeException("File does not exist: "+currentFile);
 			}
 			int size = (int)FileUtils.sizeOf(currentFile);
-			List<Integer> ints = sizes;
-			checkIntValue(messageString, size, ints);
+			List<Integer> ints = fileSizes;
+			checkIntValue(messageString, size, ints.get(0));
 		} else {
 			LOG.warn("No --input for file");
 		}
 	}
 
-	private void assertDir() {
+	private void assertSingleDir() {
 		LOG.info("DIR");
-		File[] files = cTree.getDirectory().listFiles();
-		List<File> fileList = files == null ? new ArrayList<>() : new ArrayList<File>(Arrays.asList(files));
-		int size = fileList.size();
-		if (counts != null) {
-			String message1 = assertValue(size, counts);
-			if (message1.length() > 0) {
-				LOG.warn("***** " + messageString + ": " +  message1 + " *****");
+		List<File> fileList = createFileListFromCTreeOrCproject();
+		if (fileList != null) {
+			int actualFileCount = fileList.size();
+			if (fileCounts != null && fileCounts.size() == 1/*fileList.size()*/) {
+				String message1 = assertValue(actualFileCount, fileCounts.get(0)/*, rangeMap*/);
+				if (message1.length() > 0) {
+					LOG.warn("***** " + messageString + ": " +  message1 + " *****");
+				}
 			}
 		}
+	}
+
+	private List<File> createFileListFromCTreeOrCproject() {
+		List<File> fileList = new ArrayList<>();
+		if (topDir == null) {
+			LOG.error("no dir given for assert type=dir");
+			return fileList;
+		}
+		if (globList != null && globList.size() > 0) {
+			CMineGlobber cMineGlobber = new CMineGlobber();
+			fileList = cMineGlobber.combineFileListsFromGlobs(topDir, globList);
+		} else {
+			fileList = CMFileUtil.listFiles(topDir);
+		}
+		return fileList;
+	}
+
+	private File getTopLevelDirectoryTreeOrProject() {
+		File dir = cProject != null ? cProject.getDirectory() : (cTree != null ? cTree.getDirectory() : null);
+		return dir;
 	}
 
 	private void assertDirTree() {
@@ -281,31 +391,66 @@ private static final String FAIL = "fail";
 	}
 
 	private String assertImage() {
+		if (params == null) {
+			throw new RuntimeException("must give --params for assert-image");
+		}
 		BufferedImage image = ImageUtil.readImageQuietly(currentFile);
 		
 		String totalMessage = null;
 		if (!currentFile.exists()) {
 			return "non-existent "+currentFile;
 		}
-		if (sizes != null) {
-			totalMessage = concatenate("file size", compareWithRange((int) FileUtils.sizeOf(currentFile), sizes), totalMessage);
+		if (fileSizes != null) {
+			// REFACTOR
+			totalMessage = concatenate("file size", assertRange(
+					(int) FileUtils.sizeOf(currentFile), new IntRange(fileSizes.get(0), fileSizes.get(0))), totalMessage);
 		}
-		if (heights != null) {
-			totalMessage = concatenate("height", compareWithRange(image.getHeight(), heights), totalMessage);
+		if (params.get(ParamType.height) != null) {
+			totalMessage = compareIntegersAgainstValuesAndRanges(ParamType.height, image.getHeight(), totalMessage);
 		}
-		if (widths != null) {
-			totalMessage = concatenate("width", compareWithRange(image.getWidth(), widths), totalMessage);
+		if (params.get(ParamType.width) != null) {
+			totalMessage = compareIntegersAgainstValuesAndRanges(ParamType.width, image.getWidth(), totalMessage);
 		}
 		return totalMessage;
 	}
 
-	private String compareWithRange(int value, List<Integer> sizes) {
-		String errorMessage = null;
-		if (sizes.size() == 1) {
-			errorMessage = assertRange(value, sizes.get(0), sizes.get(0));
-		} else if (sizes.size() == 2) {
-			errorMessage = assertRange(value, sizes.get(0), sizes.get(1));
+	private String compareIntegersAgainstValuesAndRanges(ParamType paramType, int actual, String totalMessage) {
+		IntRange expectedValues = parseIntegers(params.get(paramType));
+		totalMessage = concatenate(paramType.getDescription(), compareWithRange(actual, expectedValues), totalMessage);
+		return totalMessage;
+	}
+
+	private IntRange parseIntegers(String string) {
+		IntRange intRange = null;
+		Pattern pattern = Pattern.compile("(-?\\d+)(_-?\\d+)?");
+		Matcher matcher = pattern.matcher(string);
+		if (matcher.matches()) {
+			Integer min = new Integer(matcher.group(1));
+			Integer max = (matcher.groupCount() == 2) ? new Integer(matcher.group(2).substring(1)) : min;
+			intRange = new IntRange(min, max);
 		}
+		return intRange;
+	}
+
+	/** only supports normal doubles, not scientific notation
+	 * 
+	 * @param string
+	 * @return
+	 */
+	private RealRange parseDoubles(String string) {
+		RealRange realRange = null;
+		Pattern pattern = Pattern.compile("(-?\\d*?\\.?\\d+)(_(-?\\d*?\\.?\\d+))?");
+		Matcher matcher = pattern.matcher(string);
+		if (matcher.matches()) {
+			Double min = new Double(matcher.group(1));
+			Double max = (matcher.groupCount() == 2) ? new Double(matcher.group(2).substring(1)) : min;
+			realRange = new RealRange(min, max);
+		}
+		return realRange;
+	}
+
+	private String compareWithRange(int actualValue, IntRange expectedRange) {
+		String errorMessage = assertRange(actualValue, expectedRange);
 		return errorMessage;
 	}
 
@@ -322,16 +467,16 @@ private static final String FAIL = "fail";
 		List<Node> nodes = XMLUtil.getQueryNodes(element, xpath, null);
 		
 		boolean fail = false;
-		if (sizes == null || sizes.size() == 0) {
+		if (fileSizes == null || fileSizes.size() == 0) {
 			throw new RuntimeException("must give --sizes with 1 or 2 args");
 		}
 		String errorMessage = null;
-		if (sizes != null) {
+		if (fileSizes != null) {
 			/** exact count of args? */
-			if (sizes.size() == 1) {
-				errorMessage = assertRange(nodes.size(), sizes.get(0), sizes.get(0));
-			} else if (sizes.size() == 2) {
-				errorMessage = assertRange(nodes.size(), sizes.get(0), sizes.get(1));
+			if (fileSizes.size() == 1) {
+				errorMessage = assertIntegerRange(nodes.size(), fileSizes.get(0), fileSizes.get(0));
+			} else if (fileSizes.size() == 2) {
+				errorMessage = assertIntegerRange(nodes.size(), fileSizes.get(0), fileSizes.get(1));
 			} else {
 				errorMessage = assertInputError("too many args for xpath");
 			}
@@ -353,34 +498,73 @@ private static final String FAIL = "fail";
 		return "BUG (contact maintainers) : "+msg; 
 	}
 	
-	private String assertRange(int value, double arg0, double arg1) {
-		if (arg0 > arg1) {
-			return assertInputError(arg0 + "is greater than "+arg1);
+	private static String assertValue(int actual, int expected) {
+		String msg = "";
+		if (actual != expected) {
+			msg =  actual + " is not equal to " + expected;
 		}
-		if (value < arg0 || value > arg1) {
-			return assertCondition(value + " is outside range "+arg0 + " to "+arg1);
-		}
-		return null;
+		return msg;
 	}
 	
-	private static String assertValue(int value, List<Integer> intLimits) {
-		String message = "";
-		IntRange intRange = IntRange.getIntRange(intLimits);
-		if (intRange == null) {
-			throw new RuntimeException("bad limits "+intLimits);
-		}
+	private String assertRange(int value, IntRange intRange) {
+		String msg = "";
 		if (!intRange.contains(value)) {
-			message = value + " not in range "+intRange;
+			msg = (intRange.getRange() == 0) ? 
+					value + " is not equal to " + intRange.getMin() :
+					value + " is outside range " + intRange;
 		}
-		return message;
+		return msg;
 	}
 	
-	private static void checkIntValue(String messageString, int size, List<Integer> ints) {
-		if (ints != null) {
-			String message1 = assertValue(size, ints);
-			if (message1.length() > 0) {
-				LOG.warn("***** " + messageString + ": " +  message1 + " *****");
+		private String assertRange(double value, RealRange realRange) {
+			String msg = "";
+			if (!realRange.contains(value)) {
+				msg = (realRange.getMin() == realRange.getMax()) ? 
+						value + " is not equal to " + realRange.getMin() :
+						value + " is outside range " + realRange;
 			}
+			return msg;
+		}
+		
+		private String assertIntegerRange(int value, double arg0, double arg1) {
+			if (arg0 > arg1) {
+				return assertInputError(arg0 + "is greater than "+arg1);
+			}
+			if (value < arg0 || value > arg1) {
+				return assertCondition(value + " is outside range "+arg0 + " to "+arg1);
+			}
+			return null;
+		}
+		
+//		private String assertRange(int value, int expected, Map<RangeType, String> rangeMap) {
+//			int delta = RangeType.getInteger(rangeMap, RangeType.intd);
+//			if (arg0 > arg1) {
+//				return assertInputError(arg0 + "is greater than "+arg1);
+//			}
+//			if (value < arg0 || value > arg1) {
+//				return assertCondition(value + " is outside range "+arg0 + " to "+arg1);
+//			}
+//			return null;
+//		}
+		
+//	private static String assertValue(int value, List<Integer> intLimits) {
+//		String message = "";
+//		IntRange intRange = IntRange.getIntRange(intLimits);
+//		if (intRange == null) {
+//			throw new RuntimeException("bad limits "+intLimits);
+//		}
+//		if (intRange.getMin() == intRange.getMax() && value != intRange.getMin()) {
+//			message = value + " not equal to expected "+intRange.getMin();
+//		} else if (!intRange.contains(value)) {
+//			message = value + " not in expected range "+intRange;
+//		}
+//		return message;
+//	}
+//	
+	private static void checkIntValue(String messageString, int size, int expected) {
+		String message1 = assertValue(size, expected);
+		if (message1.length() > 0) {
+			LOG.warn("***** " + messageString + ": " +  message1 + " *****");
 		}
 	}
 	

@@ -562,9 +562,12 @@ public abstract class AbstractAMIDictTool implements Callable<Void> {
 	public Element listDictionaryInfo(File file) {
 		String dictionaryName = FilenameUtils.getBaseName(file.toString());
 		Element dictionaryElement = null;
+		InputStream is = null;
+//		if ()
 		try {
+			is = new FileInputStream(file);
 			dictionaryElement = XMLUtil.parseQuietlyToRootElement(
-					new FileInputStream(file), CMineUtil.UTF8_CHARSET);
+					is, CMineUtil.UTF8_CHARSET);
 		} catch (FileNotFoundException e) {
 			throw new RuntimeException("Cannot find "+file);
 		}

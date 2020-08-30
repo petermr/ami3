@@ -327,6 +327,15 @@ public class CMineGlobber {
 		return this;
 	}
 
+	public List<File> combineFileListsFromGlobs(File dir, List<String> globList) {
+		List<File> fileList = new ArrayList<>();
+		for (String glob : globList) {
+			List<File> fileList0 = setLocation(dir).setGlob(glob).setRecurse(true).listFiles();
+			fileList.addAll(fileList0);
+		}
+		return fileList;
+	}
+
 	/** get sorted list of child files (not directories).
 	 * 
 	 * @param dir
