@@ -10,7 +10,6 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -25,6 +24,7 @@ import org.contentmine.cproject.files.DebugPrint;
 import org.contentmine.cproject.util.CMineUtil;
 import org.contentmine.eucl.euclid.Util;
 import org.contentmine.eucl.euclid.util.CMFileUtil;
+import org.contentmine.eucl.euclid.util.CMStringUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.contentmine.graphics.html.HtmlA;
 import org.contentmine.graphics.html.HtmlBody;
@@ -399,6 +399,7 @@ public class AMISectionTool extends AbstractAMITool {
 		Element fulltext = XMLUtil.parseQuietlyToRootElementWithoutDTD(cTree.getExistingFulltextXML());
 		for (String tag : xpathMap.keySet()) {
 			String xpath = xpathMap.get(tag);
+			xpath = CMStringUtil.urlDecode(xpath);
 			applyXPathAndWriteFiles(fulltext, tag, xpath, outputDir);
 		}
 	}
