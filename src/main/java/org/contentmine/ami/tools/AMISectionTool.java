@@ -10,6 +10,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -32,7 +33,6 @@ import org.contentmine.graphics.html.HtmlElement;
 import org.contentmine.graphics.html.HtmlHtml;
 import org.contentmine.graphics.html.HtmlLabel;
 import org.contentmine.graphics.html.HtmlLi;
-import org.contentmine.graphics.html.HtmlP;
 import org.contentmine.graphics.html.HtmlSpan;
 import org.contentmine.graphics.html.HtmlTable;
 import org.contentmine.graphics.html.HtmlTd;
@@ -58,6 +58,7 @@ import org.contentmine.norma.sections.SectionElement;
 import org.w3c.dom.Document;
 
 import nu.xom.Element;
+import nu.xom.Node;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 
@@ -90,6 +91,7 @@ description = {
 })
 public class AMISectionTool extends AbstractAMITool {
 	
+	private static final String __TEXT = "text";
 	private static final String MINCOUNT = "mincount";
 	private static final String SUMMARY_HTML = "summary.html";
 	private static final String BOLD_FIRST_CHILD_OF_PARA_IN_SEC =
@@ -187,6 +189,13 @@ public class AMISectionTool extends AbstractAMITool {
             		+ "=>  <sec id='s2.1'><sec id='s2.1.1'><title>Extraction of Oils.</title>. <p>more text...</p></sec>%n")
     private boolean makeBoldSections = false;
     
+    @Option(names = {"--extract"},
+    		split=",",
+            description = "extract floats (${COMPLETION-CANDIDATES}) elements to subdirectory"
+            		+ "")
+    private List<FloatType> extractList = new ArrayList<FloatType>(
+    		Arrays.asList(new FloatType[]{FloatType.tab, FloatType.fig, FloatType.supplementary}));
+
     @Option(names = {"--html"},
     		arity = "1",
             description = "convert sections to HTML using stylesheet (convention as in --transform)."
@@ -200,18 +209,6 @@ public class AMISectionTool extends AbstractAMITool {
             description = "create hypertree from "
             		)
     private Map<String, String> hypertreeMap = new HashMap<>();
-
-    @Option(names = {"--extract"},
-    		split=",",
-            description = "extract comma-separated float elements to subdirectory,"
-            		+ "default table, fig, supplementary) ")
-    private List<FloatType> extractList = new ArrayList<FloatType>(
-    		Arrays.asList(new FloatType[]{FloatType.tab, FloatType.fig, FloatType.supplementary}));
-
-//    @Option(names = {"--figures"},
-//    		arity = "0..*",
-//            description = "extract float figure elements to subdirectory and make index; under development ")
-//    private List<String> figureList = null;
 
     @Option(names = {"--sections"},
     		arity = "1..*",
@@ -233,15 +230,21 @@ public class AMISectionTool extends AbstractAMITool {
             description = "create summary files for sections (${COMPLETION-CANDIDATES})")
     private List<SummaryType> summaryList = new ArrayList<>();
 
-//    @Option(names = {"--tables"},
-//    		arity = "0..*",
-//            description = "extract float table elements to subdirectory and make index; under development ")
-//    private List<String> tableList = null;
-    
     @Option(names = {"--write"},
     		arity = "0",
             description = "write section files (may be customised later); ")
 	public boolean writeFiles = true;
+
+    @Option(names = {"--xpath"},
+    		arity = "1",
+    		split = "~",
+            description = "use xpath to extract (sub(sub...))sections from fulltext.xml"
+            		+ " to output directory. syntax: tag1=xpath1~tag2=xpath2..."
+            		+ " tags are used to collect results in directory --output (default=__text)."
+            		+ " Used for external textmining, machine learning, etc."
+            		+ " NOTE: if xpath has fragile characters (e.g. '..' it may need URLescaping."
+            		+ " See also --glob for files (NYI). ")
+	public Map<String, String> xpathMap = null;
 
 	private JATSSectionTagger tagger;
 	SectionNumber sectionNumber;
@@ -264,13 +267,7 @@ public class AMISectionTool extends AbstractAMITool {
     @Override
 	protected void parseSpecifics() {
 		normalizeArgumentLists();
-		LOG.info("xslt                    {}", xsltName);
-		LOG.info("boldSections            {}", makeBoldSections);
-		LOG.info("extract                 {}", extractList);
-		LOG.info("sectionList             {}", sectionTagList);
-		LOG.info("sectiontype             {}", sectionType);
-		LOG.info("summaryList             {}", summaryList);
-		LOG.info("write                   {}", writeFiles);
+		super.parseSpecifics();
 	}
 
 
@@ -360,14 +357,18 @@ public class AMISectionTool extends AbstractAMITool {
 		processedTree = true;
 		sectionsDir = cTree.getSectionsDirectory();
 		boolean debug = false;
-		if (!CMFileUtil.shouldMake(getForceMake(), sectionsDir, debug, sectionsDir)) {
-			if (debug) LOG.debug("skipped: "+sectionsDir);
-			processedTree = false;
-			return processedTree;
+		if (xpathMap == null) {
+			if (!CMFileUtil.shouldMake(getForceMake(), sectionsDir, debug, sectionsDir)) {
+				if (debug) LOG.debug("skipped: "+sectionsDir);
+				processedTree = false;
+				return processedTree;
+			}
 		}
 		boolean deleteExisting = false;
 		if (cTree == null || !cTree.hasExistingFulltextXML()) {
 			LOG.warn("no fulltext.xml");
+		} else if (xpathMap != null) {
+			extractXPathTexts();
 		} else if (sectionTagList.size() == 1 && SectionTag.AUTO.equals(sectionTagList.get(0))) {
 			createSections();
 		} else {
@@ -387,6 +388,35 @@ public class AMISectionTool extends AbstractAMITool {
 		}
 		if (extractList.contains(FloatType.tab)) {
 			renameFloatsFilesAndCreateSummary(TABLE_FILE_REGEX, TABLES_DIR, TABLE_);
+		}
+	}
+
+	private void extractXPathTexts() {
+		if (output() == null) {
+			output(__TEXT);
+		}
+		File outputDir = new File(cTree.getDirectory(), output() + "/");
+		Element fulltext = XMLUtil.parseQuietlyToRootElementWithoutDTD(cTree.getExistingFulltextXML());
+		for (String tag : xpathMap.keySet()) {
+			String xpath = xpathMap.get(tag);
+			applyXPathAndWriteFiles(fulltext, tag, xpath, outputDir);
+		}
+	}
+
+	private void applyXPathAndWriteFiles(Element fulltext, String tag, String xpath, File outputDir) {
+		List<Node> nodeList = XMLUtil.getQueryNodes(fulltext, xpath);
+		if (nodeList.size() > 0) {
+//			LOG.info("TAGGED nodes ");
+		}
+		for (int i = 0; i < nodeList.size(); i++) {
+			Node node = nodeList.get(i);
+			File nodeTextFile = new File(outputDir, tag + "_" + i + ".txt");
+			System.out.println("NTF "+nodeTextFile.getAbsoluteFile());
+			try {
+				FileUtils.write(nodeTextFile, node.getValue(), "UTF-8");
+			} catch (IOException e) {
+				LOG.error("Cannot write " + nodeTextFile, e);
+			}
 		}
 	}
 

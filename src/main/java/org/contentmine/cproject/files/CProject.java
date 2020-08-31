@@ -401,7 +401,7 @@ public static final String PROJECT_TEMPLATE_XML = "cProjectTemplate.xml";
 	/** get list of matched Elements from CTrees in project.
 	 * 
 	 * @param glob
-	 * @param xpath
+	 * @param xpathMap
 	 * @return
 	 */
 	public ProjectSnippetsTree extractProjectSnippetsTree(String searchExpression) {

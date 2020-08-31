@@ -76,21 +76,11 @@ public class AMISummaryTool extends AbstractAMITool {
 		private OutputType() {
 		}
 	}
-//    @Option(names = {"--dictionary"},
-//    		arity = "1..*",
-//            description = "dictionaries to summarize. Probably OBSOLETE")
-//    private List<String> dictionaryList = new ArrayList<>();
 
     @Option(names = {"--flatten"},
     	    defaultValue = "false",
             description = "collect all leaf nodes in single directory; default=true")
     private boolean flatten = true;
-
-//    @Option(names = {"--gene"},
-//    		arity = "0..*",
-//    	    defaultValue = "human",
-//            description = "genes to summarize. OBSOLETE")
-//    private List<String> geneList = new ArrayList<>();
 
     @Option(names = {"--glob"},
     		split="@",
@@ -102,12 +92,6 @@ public class AMISummaryTool extends AbstractAMITool {
     		split = ",",
             description = "output type/s. `table` creates a CSV table; the others may be obsolete")
     private List<OutputType> outputTypes = new ArrayList<>();
-    
-//    @Option(names = {"--species"},
-//    		arity = "0..*",
-//    		defaultValue = "binomial",
-//            description = "species to summarize. OBSOLETE")
-//    private List<String> speciesList = new ArrayList<>();
     
     @Option(names = {"--word"},
     		arity = "0",

@@ -659,6 +659,7 @@ public void testAllSections() {
 	/** overlap all sectionTrees.
 	 * 
 	 */
+	@Ignore
 	public void testViralEpidem950IT() throws IOException {
 		
 		LOG.info(AbstractAMITest.VIRAL950);
@@ -689,6 +690,7 @@ public void testAllSections() {
 	/** overlap all sectionTrees.
 	 * 
 	 */
+	@Ignore
 	public void testViralEpidemPriyaIT() throws IOException {
 		
 		LOG.info(PRIYA_1_PART);
@@ -715,6 +717,17 @@ public void testAllSections() {
 
 	}
 
+	@Test
+	public void testXPathSnippetsTest() {
+		CProject cProject = new CProject(AMIFixtures.TEST_ZIKA10_DIR);
+		String cmd = " -vvv -p " + cProject.getDirectory() 
+		+ "  --output text"
+		+ " section"
+		+ " --xpath introduction=//*[title='Introduction']~method=//*[contains(title,'Methods')]"
+		;
+		AMI.execute(cmd);
+		
+	}
 
 	// ================= BUGS ===========
 	

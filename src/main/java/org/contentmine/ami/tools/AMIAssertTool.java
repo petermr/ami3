@@ -197,6 +197,13 @@ public class AMIAssertTool extends AbstractAMITool {
             		+ " list of sizes or values."
             		+ "")
     private String xpath;
+    
+    // https://www.xmlunit.org/api/java/2.7.0/overview-summary.html
+    @Option(names = {"--xmlassert"},
+//    		arity = "1",
+            description = "NOT YET USED (placeholder to use XMLAssert where possible)."
+            		+ "")
+    private String xmlassert = null;
 
 	private boolean assertFail;
 	private String assertMessage;
