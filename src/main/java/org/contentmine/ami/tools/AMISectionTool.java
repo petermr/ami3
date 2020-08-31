@@ -230,6 +230,10 @@ public class AMISectionTool extends AbstractAMITool {
             description = "create summary files for sections (${COMPLETION-CANDIDATES})")
     private List<SummaryType> summaryList = new ArrayList<>();
 
+    @Option(names = {"--whitespace"},
+            description = "add whitespace round XMLElements to avoid words running into each other")
+	public boolean addWhitespace = true;
+
     @Option(names = {"--write"},
     		arity = "0",
             description = "write section files (may be customised later); ")
@@ -412,9 +416,10 @@ public class AMISectionTool extends AbstractAMITool {
 		for (int i = 0; i < nodeList.size(); i++) {
 			Node node = nodeList.get(i);
 			File nodeTextFile = new File(outputDir, tag + "_" + i + ".txt");
-			System.out.println("NTF "+nodeTextFile.getAbsoluteFile());
+//			System.out.println("NTF "+nodeTextFile.getAbsoluteFile());
 			try {
-				FileUtils.write(nodeTextFile, node.getValue(), "UTF-8");
+				String text = XMLUtil.flattenToText(node, addWhitespace);
+				FileUtils.write(nodeTextFile, text, "UTF-8");
 			} catch (IOException e) {
 				LOG.error("Cannot write " + nodeTextFile, e);
 			}

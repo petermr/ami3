@@ -76,7 +76,6 @@ import nu.xom.canonical.Canonicalizer;
 public abstract class XMLUtil implements XMLConstants {
 
 	private static final String LOCAL_NAME_BR = "local-name()";
-
 	private static final String OR = "or";
 
 	private static Logger LOG = LogManager.getLogger(XMLUtil.class);
@@ -1487,6 +1486,12 @@ public abstract class XMLUtil implements XMLConstants {
 		}
 	}
 
+	/**
+	 * normalize all included whitespace to single space
+	 * 
+	 * @param element
+	 * @return normalized element
+	 */
 	public static Element normalizeWhitespaceInTextNodes(Element element) {
 		Nodes texts = element.query(".//text()");
 		for (int i = 0; i < texts.size(); i++) {
@@ -1494,6 +1499,33 @@ public abstract class XMLUtil implements XMLConstants {
 			text.setValue(normalizeSpace(text.getValue()));
 		}
 		return element;
+	}
+
+	/**
+	 * flatten to text content and normalize whitespace
+	 * don't change newlines
+	 * 
+	 * if (addWhitespace) adds space round  elements, 
+	 * e.g. author<sup>2</sup> would flatten to author 2, 
+	 * normalization is then applied
+	 * 
+	 * @param element
+	 * @param addWhitespace // add whitespace round elements
+	 * @return
+	 */
+	public static String flattenToText(Node node, boolean addWhitespace) {
+		StringBuilder sb = new StringBuilder();
+		Nodes texts = node.query(".//text()");
+		for (int i = 0; i < texts.size(); i++) {
+			Text text = (Text) texts.get(i);
+			String value = text.getValue();
+			if (addWhitespace) {
+				value = " " + value + " ";
+			}
+			sb.append(value);
+		}
+		String s = sb.toString().replaceAll("[ ]+", " ");
+		return s;
 	}
 
 	/**
