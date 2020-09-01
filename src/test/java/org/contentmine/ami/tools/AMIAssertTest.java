@@ -4,6 +4,8 @@ import java.io.File;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.contentmine.ami.AMIFixtures;
+import org.contentmine.cproject.files.CProject;
 import org.junit.Test;
 
 public class AMIAssertTest extends AbstractAMITest {
@@ -86,5 +88,38 @@ public class AMIAssertTest extends AbstractAMITest {
 			;
 		AMI.execute(cmd);
 	}
+	
+	@Test
+	/**
+	 * the first command creates files of the form:
+	 * cTree
+	 * ..text
+	 * ....introduction_d.txt
+	 * ....methods_d.txt
+	 * where d is number
+	 */
+	public void testXPathSnippetsTestEncoded() {
+		CProject cProject = new CProject(AMIFixtures.TEST_ZIKA10_DIR);
+		String cmd = ""
+		+ " -vvv -p " + cProject.getDirectory() 
+		+ " --output text"
+		+ " section"
+		+ " --xpath introduction=%2F%2F%2A%5Btitle%3D%27Introduction%27%5D~"
+		+ "method=%2F%2F%2A%5Bcontains%28title%2C%27Methods%27%29%5D";
+//		AMI.execute(cmd);
+		
+		cmd = ""
+		+ " -vvv -p " + cProject.getDirectory() 
+		+ " assert"
+		+ " --type=dir"
+		+ " --glob **/text/*.txt"
+		+ " --filecount 99"
+		;
+		AMI.execute(cmd);
+		
+		
+	}
+
+
 
 }

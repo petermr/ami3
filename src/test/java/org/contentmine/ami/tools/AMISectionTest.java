@@ -718,16 +718,32 @@ public void testAllSections() {
 	}
 
 	@Test
+	@Ignore
 	public void testXPathSnippetsTest() {
 		CProject cProject = new CProject(AMIFixtures.TEST_ZIKA10_DIR);
-		String cmd = " -vvv -p " + cProject.getDirectory() 
-		+ "  --output text"
+		String cmd = ""
+		+ " -vvv -p " + cProject.getDirectory() 
+		+ " --output text"
 		+ " section"
 		+ " --xpath introduction=//*[title='Introduction']~method=//*[contains(title,'Methods')]"
 		;
 		AMI.execute(cmd);
 		
 	}
+
+	@Test
+	public void testXPathSnippetsTestEncoded() {
+		CProject cProject = new CProject(AMIFixtures.TEST_ZIKA10_DIR);
+		String cmd = ""
+		+ " -vvv -p " + cProject.getDirectory() 
+		+ " --output text"
+		+ " section"
+		+ " --xpath introduction=%2F%2F%2A%5Btitle%3D%27Introduction%27%5D~method=%2F%2F%2A%5Bcontains%28title%2C%27Methods%27%29%5D";
+		AMI.execute(cmd);
+		
+	}
+
+
 
 	// ================= BUGS ===========
 	

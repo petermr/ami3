@@ -247,7 +247,8 @@ public class AMIAssertTool extends AbstractAMITool {
     protected void runSpecifics() {
 		topDir = getTopLevelDirectoryTreeOrProject();
     	if (cProject != null) {
-    		for (CTree cTree : cProject.getOrCreateCTreeList()) {
+    		for (CTree t : cProject.getOrCreateCTreeList()) {
+    			cTree = t;
     			processTree();
     		}
     	} else if (cTree != null) { 

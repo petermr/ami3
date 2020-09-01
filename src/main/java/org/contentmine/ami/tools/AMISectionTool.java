@@ -243,11 +243,14 @@ public class AMISectionTool extends AbstractAMITool {
     		arity = "1",
     		split = "~",
             description = "use xpath to extract (sub(sub...))sections from fulltext.xml"
-            		+ " to output directory. syntax: tag1=xpath1~tag2=xpath2..."
-            		+ " tags are used to collect results in directory --output (default=__text)."
-            		+ " Used for external textmining, machine learning, etc."
-            		+ " NOTE: if xpath has fragile characters (e.g. '..' it may need URLescaping."
-            		+ " See also --glob for files (NYI). ")
+        		+ " to output directory. syntax: tag1=xpath1~tag2=xpath2..."
+        		+ " tags are used to collect results in directory --output (default=__text)."
+        		+ " Used for external textmining, machine learning, etc."
+        		+ " NOTE: if xpath has fragile characters (e.g. '..' it may need URLescaping."
+        		+ " use an online URLEncoder, e.g. https://www.urlencoder.org/ to create "
+        		+ " --xpath introduction=%2F%2F%2A%5Btitle%3D%27Introduction%27%5D~method=%2F%2F%2A%5Bcontains%28title%2C%27Methods%27%29%5D\";\n"
+        		+ " NOTE the '=' between key and value is NOT URLEncoded but the whole XPath IS"
+        		+ " See also --glob for files (NYI). ")
 	public Map<String, String> xpathMap = null;
 
 	private JATSSectionTagger tagger;
@@ -416,7 +419,6 @@ public class AMISectionTool extends AbstractAMITool {
 		for (int i = 0; i < nodeList.size(); i++) {
 			Node node = nodeList.get(i);
 			File nodeTextFile = new File(outputDir, tag + "_" + i + ".txt");
-//			System.out.println("NTF "+nodeTextFile.getAbsoluteFile());
 			try {
 				String text = XMLUtil.flattenToText(node, addWhitespace);
 				FileUtils.write(nodeTextFile, text, "UTF-8");
