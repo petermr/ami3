@@ -3,6 +3,7 @@ package org.contentmine.ami.tools;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
@@ -590,6 +591,9 @@ public enum AMIImageType {
 					.setColourCount(octreeCount)
 					.quantize();
 			BufferedImage outImage = octree.getOutImage();
+			if (outputFiles == null) {
+				outputFiles = Arrays.asList(new OutputFile[] {OutputFile.octree, OutputFile.channels});
+			}
 			outputColourAnalysis(outImage);
 
 		}

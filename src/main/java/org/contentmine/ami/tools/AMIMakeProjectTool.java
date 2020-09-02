@@ -1,10 +1,12 @@
 package org.contentmine.ami.tools;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
-import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.contentmine.ami.tools.AbstractAMIDictTool.RawFileFormat;
 
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
@@ -69,9 +71,11 @@ public class AMIMakeProjectTool extends AbstractAMITool {
 	@Option(names = {"--rawfiletypes"},
 			arity = "1..*",
 			split = ",",
+//			defaultValue = RawFileFormat.pdf,
 			description = "Suffixes of included files (${COMPLETION-CANDIDATES}): "
-					+ "can be concatenated with commas ")
-	protected List<AbstractAMIDictTool.RawFileFormat> rawFileFormats = new ArrayList<>();
+					+ "can be concatenated with commas. Default PDF ")
+	protected List<RawFileFormat> rawFileFormats = 
+		new ArrayList<RawFileFormat>(Arrays.asList(new RawFileFormat[] {RawFileFormat.pdf}));
 
 	@Option(names = {"--logfile"},
 			description = "(A) log file for each tree/file/image analyzed. "
