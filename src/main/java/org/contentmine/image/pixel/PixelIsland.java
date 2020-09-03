@@ -1439,10 +1439,10 @@ public class PixelIsland implements Iterable<Pixel> {
 		if (islandRingListList == null) {
 			islandRingListList = new ArrayList<>();
 			PixelRingList pixelRings = getOrCreateInternalPixelRings();
-			LOG.debug("rings "+pixelRings.size());
+			LOG.debug(">rings "+pixelRings.size());
 			for (int i = 0; i < pixelRings.size(); i++) {
 				IslandRingList islandRingList = pixelRings.get(i).getIslandRings();
-				LOG.debug("ring "+i+" "+islandRingList.size());
+				LOG.debug(">ring "+i+" "+islandRingList.size());
 				islandRingListList.add(islandRingList);
 			}
 		}

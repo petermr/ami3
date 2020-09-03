@@ -419,6 +419,9 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
+             <!--  
+            <version>${junit5.version}</version>
+            -->
         </dependency>
         <dependency>
 	        <groupId>org.junit.jupiter</groupId>
@@ -440,6 +443,7 @@
 		  <version>3.17.1</version>
 		  <scope>test</scope>
 		</dependency>
+		
 		<!-- https://mvnrepository.com/artifact/org.assertj/assertj-core -->
 		
         <!-- extends JUnit, see https://stefanbirkner.github.io/system-rules/ -->

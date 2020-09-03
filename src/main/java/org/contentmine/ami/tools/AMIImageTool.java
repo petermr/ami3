@@ -265,6 +265,14 @@ public enum AMIImageType {
             		+ "run AFTER any other image enhancement. default FALSE")
     private Boolean despeckle = false;
 
+    @Option(names = {"--dither"},
+    		arity = "1",
+//    		negatable = true,
+//    		defaultValue = "true",
+            description = "dither in octree. Seems to be needed but needs exploring."
+            		+ "default true")
+	private boolean dither = true;
+
     @Option(names = {"--erodedilate"},
             description = "TRANSFORM: erode 1-pixel layer and then dilate. "
             		+ "Removes minor spikes (default: FALSE ${DEFAULT-VALUE}); generally destroys fine details."
@@ -336,6 +344,14 @@ public enum AMIImageType {
     		arity = "1",
     		description = "geometrical scalefactor. if missing, no scaling (don't use 1.0) Uses Imgscalr library. default NONE ")
 	private Double scalefactor = null;
+
+    @Option(names = {"--serpentine"},
+    		arity = "1",
+//    		negatable = true,
+//    		defaultValue = "true",
+            description = "serpentine in octree. Don't know whether it's needed. needs exploring."
+            		+ "default true")
+	private boolean serpentine = true;
 
     @Option(names = {"--sharpen"},
     		arity = "1",
@@ -589,7 +605,9 @@ public enum AMIImageType {
 			Octree octree = new Octree()
 					.readImage(image)
 					.setColourCount(octreeCount)
-					.quantize();
+					.quantize()
+					.setDither(dither)
+					.setSerpentine(serpentine);
 			BufferedImage outImage = octree.getOutImage();
 			if (outputFiles == null) {
 				outputFiles = Arrays.asList(new OutputFile[] {OutputFile.octree, OutputFile.channels});
@@ -654,7 +672,7 @@ public enum AMIImageType {
 			Integer color = ImageUtil.getSingleColor(image);
 			LOG.debug("colors {}", ImageUtil.createHexMultiset(image));
 			if (color != null) {
-				throw new RuntimeException("Single color: "+color+" Corrupt conversion?");
+				LOG.warn("Single color: "+color+" Corrupt conversion?");
 			}
 			type = binarize.toString().toLowerCase();
 			// debug

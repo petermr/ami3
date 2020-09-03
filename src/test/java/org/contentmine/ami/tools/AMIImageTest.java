@@ -10,7 +10,7 @@ import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.image.diagram.DiagramAnalyzerTest;
 import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 
 /** test cleaning.
@@ -187,7 +187,7 @@ public class AMIImageTest extends AbstractAMIImageTest {
 						+ " --sharpen sharpen4"
 						+ " --threshold "+threshold;
 				System.out.println("<"+cmd+">");
-				AMIImageTool imageTool = AMI.execute(AMIImageTool.class, cmd);
+				/*AMIImageTool imageTool = */AMI.execute(AMIImageTool.class, cmd);
 			}
 		}
 	}
@@ -490,7 +490,7 @@ public class AMIImageTest extends AbstractAMIImageTest {
 				+ " --duplicate _delete"
 //				+ " --duplicatedir duplicates"
 				;
-		AMIImageTool imageTool = AMI.execute(AMIImageTool.class, cmd);
+		/*AMIImageTool imageTool = */AMI.execute(AMIImageTool.class, cmd);
 	} 
 	
 	@Test
@@ -509,7 +509,7 @@ public class AMIImageTest extends AbstractAMIImageTest {
 				+ " --small small"
 				+ " --duplicate duplicate"
 				;
-		AMIImageTool imageTool = AMI.execute(AMIImageTool.class, cmd);
+		/*AMIImageTool imageTool = */AMI.execute(AMIImageTool.class, cmd);
 	}
 
 	@Test
@@ -582,8 +582,8 @@ public class AMIImageTest extends AbstractAMIImageTest {
 //				+ " --small=small --monochrome=monochrome --duplicate=duplicate"
 				+ " -s -m -d"
 				;
-		imageTool = AMI.execute(AMIImageTool.class, cmd);
-		System.out.println("imageTool? " + imageTool);
+		/*imageTool = */AMI.execute(AMIImageTool.class, cmd);
+//		System.out.println("imageTool? " + imageTool);
 				
 	}
 
@@ -620,7 +620,7 @@ public class AMIImageTest extends AbstractAMIImageTest {
 				+ " --outputfiles binary freqplot freqplot2 frequencies orig poster"
 				+ "";
 
-		AbstractAMITool imageTool = AMI.execute(AMIImageTool.class, cmd);
+		/*AbstractAMITool imageTool = */AMI.execute(AMIImageTool.class, cmd);
 
 				
 	}
@@ -686,7 +686,7 @@ public class AMIImageTest extends AbstractAMIImageTest {
 				+ " --outputfiles binary channels histogram "/*neighbours*/+ " octree"
 				+ "";
 
-		AbstractAMITool imageTool = (AbstractAMITool) AMI.execute(AMIImageTool.class, cmd);
+		/*AbstractAMITool imageTool = (AbstractAMITool) */ AMI.execute(AMIImageTool.class, cmd);
 
 				
 	}
@@ -717,6 +717,33 @@ public class AMIImageTest extends AbstractAMIImageTest {
 				
 	}
 
+
+	@Test
+	/** problem is that weak colour bars are skipped.
+	 * Haven't solved it. More colours may help. 
+	 * 
+	 */
+	public void testOctreeWeakBars() {
+		String cmd = null;
+		File cProjectDir = new File(SRC_TEST_IMAGE, "steffen");
+		File cTreeDir = new File(cProjectDir, "heitjans2012");
+		System.out.println("Tree "+cTreeDir.getAbsoluteFile());
+//		CProject project = new CProject(cProjectDir);
+
+		cmd = ""
+				+ "-p " + cProjectDir
+//				+ "-t " + cTreeDir
+				+ " -vvv"
+				+ " --inputname raw"
+				+ " --output octree8"
+				+ " image"
+				+ " --octree 8"
+				+ " --outputfiles binary channels octree"
+				+ "";
+
+		AMIImageTool imageTool = (AMIImageTool) AMI.execute(AMIImageTool.class, cmd);
+	}
+
 	
 	//probably move to Pixel
 	@Test
@@ -729,7 +756,7 @@ public class AMIImageTest extends AbstractAMIImageTest {
 		CProject project = new CProject(cProjectDir);
 		CTree tree = project.getCTreeByName("PMC4062906");
 
-		cmd = "-t " + tree
+		cmd = " -vv -t " + tree.getDirectory()
 				+ " -vv"
 				+ " --inputname raw"
 				+ " --output octree"

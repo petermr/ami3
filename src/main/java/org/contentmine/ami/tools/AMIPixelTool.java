@@ -159,6 +159,12 @@ private static final String LAST = "LAST";
             		+ "The output is truncated.")
     private int maxislands;
 
+    @Option(names = {"--maxislandsize"},
+    		arity = "1",
+    		defaultValue = "10000",
+            description = "maximum size of pixelIsland. Avoids all-black islands, default 10000")
+    private int maxIslandSize;
+
     @Option(names = {"--minwidth"},
     		arity = "1",    		
     		defaultValue = "30",
@@ -903,7 +909,7 @@ private static final String LAST = "LAST";
 		// analyze first island
 		SVGG g = new SVGG();
 		for (int islandx = 0; islandx < 20; islandx++) {
-			System.err.print("I"); // TODO progress util
+			System.err.print("Islands "); // TODO progress util
 			SVGG gg = this.findBoxesAndPlotSubIslands(islandx);
 			g.appendChild(gg);
 		}
@@ -914,22 +920,27 @@ private static final String LAST = "LAST";
 		SVGG g = new SVGG();
 		PixelIsland pixelIsland = pixelIslandList.get(island);
 		if (pixelIsland != null) {
-			LOG.warn(" "+pixelIsland.size()+" ");
-			List<IslandRingList> islandRingListListx = pixelIsland.getOrCreateIslandRingListList();
-			SVGRect box = SVGRect.createFromReal2Range(Real2Range.createReal2Range(pixelIsland.getIntBoundingBox()));
-			String boxColor = COLORS[island % COLORS.length];
-			box.setStroke(boxColor);
-			box.setFill("none");
-			g.appendChild(box);
-			SVGG gg = pixelIsland.createSVG();
-			String fill = COLORS[island % COLORS.length];
-			gg.setFill(fill);
-			g.appendChild(gg);
-			int lvl = pixelIsland.getLevelForMaximumRingCount();
-			// FIXME
-			lvl = Math.min(islandRingListListx.size() - 1, lvl + 2); // kludge for single subisland islands
-			
-			plotBoxForLevel(islandRingListListx, boxColor, gg, lvl);
+			int size = pixelIsland.size();
+			LOG.warn(" "+size+" ");
+			if (size > maxIslandSize) {
+				LOG.warn(" > "+maxIslandSize+", skipped");
+			} else {
+				List<IslandRingList> islandRingListListx = pixelIsland.getOrCreateIslandRingListList();
+				SVGRect box = SVGRect.createFromReal2Range(Real2Range.createReal2Range(pixelIsland.getIntBoundingBox()));
+				String boxColor = COLORS[island % COLORS.length];
+				box.setStroke(boxColor);
+				box.setFill("none");
+				g.appendChild(box);
+				SVGG gg = pixelIsland.createSVG();
+				String fill = COLORS[island % COLORS.length];
+				gg.setFill(fill);
+				g.appendChild(gg);
+				int lvl = pixelIsland.getLevelForMaximumRingCount();
+				// FIXME
+				lvl = Math.min(islandRingListListx.size() - 1, lvl + 2); // kludge for single subisland islands
+				
+				plotBoxForLevel(islandRingListListx, boxColor, gg, lvl);
+			}
 		}
 		return g;
 	}

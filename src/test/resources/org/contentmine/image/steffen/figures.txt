@@ -1,0 +1,44 @@
+#paper, figures,... 
+My prediction BEFORE (!) running the code...
+
+General:
+1 There are no meaningful Y-axis scales or labels. so the answers will be in arbitrary's (probably pixels)
+2 Some have insets. or panels . We don't yet have automatic processing but we can provide the curves.
+we are working on this problem
+3 Overlap of curves. generally this means the data are roughly the same for both curves so it's not tragic. We don't do curve fitting yet but we may be able to solve crossovers
+4 annotations. These are hard because their semantics are unclear and they often overlap. I have ideas for solving some...
+5 Dotted lines, especially crossing, may be hard.
+
+AMI has some simple peak finding tools (second derivative) and other analyses but the output can be processed elsewhere as well.
+
+Note that the XRD also appear tractable.
+
+Heitjans2012, 
+2, OK except (left) 0.60 VERY difficult to separate annotations from spectrum. (right) where 0.80 crosses 1.0 
+ 3, OK
+ 4, OK 
+ 5, OK - may need work on the legend box
+ 6, OK - needs work to separate inset 
+ 7 OK except for annotations and panels 
+ 
+Janek2011,
+ 3 OK
+
+Kilner2014,
+ 6, OK - may need to stipulate it's scanned on x-axis 
+ 7 (a) OK (b) difficult to resolve curves - we'll see! (c) have to separate inset , also difficult to separate square from circke where they overlap, but probably not important.
+ 
+Larraz2015, 
+6 OK although joining the dots in the deconvoluted spectra may be challenging
+
+Rettenwander2016,
+ 4, OK, I hope. You will have to interpret the gray background for me...
+ 5, OK except for the gray background will will be nearly impossible and I hope can be ignored.
+ 7 OK should be able to remove the JPEG noise (which is less than the instrumental noise)
+ 
+Vaughey2013,
+ 2, OK except possibly for the annotations
+ 4 OK (may need inset treating separately)
+   
+Wang2015, 4 
+Weppner2011, 3

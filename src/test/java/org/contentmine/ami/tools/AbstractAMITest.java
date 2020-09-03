@@ -36,6 +36,7 @@ public abstract class AbstractAMITest {
 	public static File CMINE = new File(CMDEV, CONTENTMINE);
 	public static File SRC_TEST_AMI = new File(CMINE, "ami");
 	public static File SRC_TEST_GRAPHICS = new File(CMINE, "graphics");
+	public static File SRC_TEST_IMAGE = new File(CMINE, "image");
 	public static File SRC_TEST_SVG = new File(SRC_TEST_GRAPHICS, "svg");
 	public static File SRC_TEST_PLOT = new File(SRC_TEST_SVG, "plot");
 	public static File SRC_TEST_TOOLS = new File(SRC_TEST_AMI, "tools");
