@@ -155,7 +155,13 @@ public abstract class AbstractAMITest {
 	}
 
 	protected AbstractAMITest setAMITestProjectName(String projectName) {
-		File cProjectDir = new File(SRC_TEST_AMI, projectName);
+		File root = SRC_TEST_AMI;
+		setProjectName(root, projectName);
+		return this;
+	}
+
+	protected AbstractAMITest setProjectName(File rootDir, String projectName) {
+		File cProjectDir = new File(rootDir, projectName);
 		if (!cProjectDir.exists() || !cProjectDir.isDirectory()) {
 			throw new RuntimeException("not a project directory: "+cProjectDir);
 		}

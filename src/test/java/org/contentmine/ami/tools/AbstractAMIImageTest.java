@@ -72,8 +72,8 @@ public class AbstractAMIImageTest extends AbstractAMITest {
 	}
 	
 	protected void checkImageFile() {
-		if (!imageFile.exists() || imageFile.isDirectory()) {
-			throw new RuntimeException("missing image file under " + layerDir);
+		if (imageFile == null || !imageFile.exists() || imageFile.isDirectory()) {
+			throw new RuntimeException("missing image file under layer " + layerDir);
 		}
 	}
 	

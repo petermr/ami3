@@ -1,13 +1,16 @@
 package org.contentmine.ami.tools;
 
 import java.awt.image.BufferedImage;
+
 import java.io.File;
 import java.util.List;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.core.config.Configurator;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.contentmine.graphics.svg.SVGG;
@@ -20,6 +23,7 @@ import org.contentmine.image.pixel.PixelIslandList;
 import org.contentmine.image.pixel.PixelRingList;
 import org.contentmine.image.processing.HilditchThinning;
 import org.contentmine.image.processing.ZhangSuenThinning;
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -32,7 +36,12 @@ import org.junit.Test;
 public class AMIPixelTest extends AbstractAMIImageTest /*AbstractAMITest*/ {
 	private static final Logger LOG = LogManager.getLogger(AMIPixelTest.class);
 	private static final File TARGET_DIR = new AMIPixelTest().createAbsoluteTargetDir();
-	
+	private static File UCLFOREST = new File(SRC_TEST_AMI, "uclforest");
+	private static File FORESTPLOTSMALL = new File(UCLFOREST, "forestplotsmall"); // project
+	private static CProject SMALL_PROJECT = new CProject(FORESTPLOTSMALL);
+	private static CTree CAMPBELL = SMALL_PROJECT.getOrCreateExistingCTree("campbell");
+	private static CTree BUZICK = SMALL_PROJECT.getOrCreateExistingCTree("buzick");
+
 	private PixelIslandList islandList;
 	private int minHairLength;
 	private int maxIslands;
@@ -43,34 +52,31 @@ public class AMIPixelTest extends AbstractAMIImageTest /*AbstractAMITest*/ {
 	
 	@Test
 	public void testPixelForestPlotsSmallTree() throws Exception {
-		String[] args = {
-//				"-t", "/Users/pm286/workspace/uclforest/forestplotssmall/buzick",
-				"-t", "/Users/pm286/workspace/uclforest/forestplotssmall/campbell",
-//				"-p", "/Users/pm286/workspace/uclforest/forestplotssmall",
-				"--maxislands", "1000",
-				"--minimumx", "50",
-				"--minimumy", "50",
-				};
-		new AMIPixelTool().runCommands(args);
+		String cmd = 
+				" -t " +  new File(FORESTPLOTSMALL, "campbell") 
+				+ " --maxislands 1000 --minimumx 50 --minimumy 50"
+				;
+		AMI.execute(cmd);
 	}
 	
 	@Test
 	public void testPixelForestPlotsSmallProject() throws Exception {
-		String[] args = {
-				"-p", "/Users/pm286/workspace/uclforest/forestplotssmall",
-				"--maxislands", "50",
-				"--minimumx", "50",
-				"--minimumy", "50",
-				};
-		new AMIPixelTool().runCommands(args);
+		String cmd = 
+				" -p "+ SMALL_PROJECT.getDirectory()
+				+ " --maxislands 50"
+				+ " --minimumx 50"
+				+ " --minimumy 50"
+				;
+		AMI.execute(cmd);
 	}
 
 	@Test
+	// FAILS. Must mend
 	/** 
 	 * 
 	 */
 	public void testCampbell() throws Exception {
-		String ctree = "/Users/pm286/workspace/uclforest/dev/campbell";
+		File ctree = CAMPBELL.getDirectory();
 		new AMIImageTool().runCommands(" --ctree " + ctree);
 		AMIPixelTool amiPixel = new AMIPixelTool();
 		amiPixel.runCommands(" --ctree " + ctree
@@ -176,7 +182,7 @@ islands > (10,10): islands: 6
 	 */
 	public void testBuzick() throws Exception {
 //		IslandRingList ringList;
-		String ctree = "/Users/pm286/workspace/uclforest/dev/buzick";
+		CTree ctree = BUZICK;
 		new AMIImageTool().runCommands(" --ctree " + ctree);
 		AbstractAMITool amiPixelTool = new AMIPixelTool();
 		amiPixelTool.runCommands(" --ctree " + ctree
@@ -295,8 +301,101 @@ islands > (10,10): islands: 6
 						+ "pdfimages/image.6.2.86_509.389_714/octree/channel.ce4dd2.png.zsthin1.svg"))
 				;
 	}
+
+
+	@Test
+	public void testMulticolorDiagrams() {
+		Configurator.setLevel("org.contentmine.ami.tools.AMIPixelTest", Level.DEBUG);
+
+		File topDir = SRC_TEST_IMAGE;
+		String projectName = "steffen";
+		String layer = "octree8";
+
+		File projectDir = new File(topDir, projectName);
+		System.out.println(".."+projectDir);
+		Assert.assertTrue(projectDir+" exists", projectDir.exists());
+		File[] cTreeFiles = projectDir.listFiles();
+		for (File cTreeFile : cTreeFiles) {
+			String treeName = cTreeFile.getName();
+			System.out.println("...."+treeName);
+			File file = new File(cTreeFile, "pdfimages/");
+			Assert.assertTrue(file+" exists", file.exists());
+			File[] imageDirs = file.listFiles();
+			if (imageDirs != null) {
+				for (File imageDir : imageDirs) {
+					String image = imageDir.getName();
+					System.out.println("......"+image);
+					analyzeChannelFiles(topDir, projectName, treeName, image, layer);
+				}
+			}
+		}
+//		String treeName = "wang2015";
+//		String image = "image.4.1.137_449.59_250";
+		
+	}
+
+	private void analyzeChannelFiles(File topDir, String projectName, String treeName, String image, String layer) {
+		File channelDir = new File(topDir, projectName+"/"+treeName+"/"+"pdfimages"+"/"+image+"/"+layer+"/");
+		System.out.println(">>img>"+channelDir);
+		for (File file : channelDir.listFiles()) {
+			String fileS = file.toString();
+			
+			String channel = FilenameUtils.getBaseName(fileS);
+			if (channel.startsWith("channel.") &&  fileS.endsWith(".png") 
+					&& channel.split("\\.").length == 2) {
+				imageFile = file;
+				System.out.println("root "+channel);
+				extractAndPlotChannel(topDir, projectName, treeName, image, layer, channel);
+			}
+		}
+	}
+
+	private void extractAndPlotChannel(File topDir,
+			String projectName, String treeName, String image, String layer, String channel) {
+		thinCreateIslandListAssertWrite(topDir, projectName, treeName, image, layer, channel);
+	}
+
+	private void thinCreateIslandListAssertWrite(File topDir, String projectName, String treeName, String image, String layer, String channel) {
+		String suffix = projectName+"/"+treeName+ "/pdfimages/"+image+"/"+layer+"/"+channel+".png";
+		File imageFile = this.getImageFile();
+		long sizeOf = FileUtils.sizeOf(imageFile);
+		if (sizeOf > 50000) {
+			LOG.warn("TOO BIG "+sizeOf+" / "+imageFile);
+			return;
+		}
+		sysou("SIZE "+sizeOf);
+		((AMIPixelTest)this
+		.setProjectName(topDir, projectName))
+		.setTreeName(treeName)
+		.setImageDirName(image)
+		.setLayer(layer)
+		.setChannel(channel)
+		.assertCanReadFile(this.getImageFile() + " input", this.getImageFile(), 100)
+		.assertTrue("img "+getImageFile()+" @ "+suffix, getImageFile().toString().endsWith(suffix))
+		.readImage()
+		.binarize(200)
+		.zhangSuenThin()
+		.writeImage("zsthin")
+		.assertCanReadFile("after thinning", getOutputFile(), 100)
+		.createTidiedPixelIslandList()
+		.setMinHairLength(10)
+		.setMaxIslands(10)
+		.removeIslandsWithLessThanPixelCount(8)
+		.tidyAndAnalyzeLargestIslands()
+		.writePixelIslandList("zsthin1")
+		.assertCanReadFile("after more thinning", this.getSVGFile(), 100)
+		.assertTrue(""+getSVGFile(), getSVGFile().toString().endsWith(
+				projectName+"/"+treeName+ "/pdfimages/"+image+"/"+layer+"/"+channel+".png"+".zsthin1.svg"))
+		;
+	}
 	
+
 	// ============================================
+
+	private void sysou(String string) {
+		// TODO Auto-generated method stub
+		
+	}
 
 	private void setDefaults() {
 		minHairLength = 10; //pixels
@@ -351,7 +450,7 @@ islands > (10,10): islands: 6
 	
 	private void checkPixelIslandList() {
 		if (islandList == null || islandList.size() == 0) {
-			throw new RuntimeException("no pixelIslandList");
+			LOG.warn("no pixelIslandList");
 		}
 	}
 	
@@ -362,8 +461,10 @@ islands > (10,10): islands: 6
 	}
 
 	private static void tidyAndAnalyzeLargestIslands(File imageFile, int minHairLength, PixelIslandList islandList, int maxIslands) {
+		islandList = islandList.sortBySizeDescending();
 		for (int isl = 0; isl < Math.min(maxIslands, islandList.size()) ; isl++) {
 			PixelIsland island = islandList.get(isl);
+			LOG.info("is "+isl+">"+island.size());
 			String filename = imageFile.toString()+"."+isl;
 			ImageUtil.writeImageQuietly(island.createImage(), new File(FilenameUtils.getBaseName(filename) + ".png"));
 			
