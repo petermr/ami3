@@ -61,7 +61,7 @@ public class Pixel {
 		return island;
 	}
 
-	/** tis can create neighbours even if not in PixelIsland.
+	/** this can create neighbours even if not in PixelIsland.
 	 * maybe bug
 	 * @param island
 	 * @return
@@ -229,15 +229,18 @@ public class Pixel {
 	}
 
 	public SVGRect getSVGRect() {
-		return getSVGRect(1, "red");
+		return getSVGRect(1, "red", "blue");
 	}
 
-	public SVGRect getSVGRect(int size, String color) {
+	public SVGRect getSVGRect(int size, String fill, String stroke) {
+		double dx = -0.5;
+		double dy = -0.5;
 		SVGRect rect = new SVGRect(
-				new Real2(this.point.getX(), this.point.getY()),
-				new Real2(this.point.getX() + size, this.point.getY() + size));
-		rect.setFill(color);
-		rect.setStroke(null);
+				new Real2(this.point.getX() + dx, this.point.getY() + dy),
+				new Real2(this.point.getX() + dx + size, this.point.getY() + dy + size));
+		rect.setFill(fill);
+		rect.setStroke(stroke);
+		rect.setStrokeWidth(0.2);
 		return rect;
 	}
 
@@ -519,4 +522,25 @@ public class Pixel {
 		}
 		return pixel.getInt2().equals(this.getInt2());
 	}
+
+	public Real2 getReal2() {
+		return point == null ? null : new Real2(point.x, point.y);
+	}
+
+	/** iterates over neighbours in random order and finds first neighbour in set.
+	 * 
+	 * @param set
+	 * @return
+	 */
+	public PixelList getNeighboursInSet(Set<Pixel> set) {
+		PixelList neighboursInSet = new PixelList();
+		PixelList neighbours = getOrCreateNeighbours(island);
+		for (Pixel pixel : neighbours) {
+			if (set.contains(pixel)) {
+				neighboursInSet.add(pixel);
+			};
+		}
+		return neighboursInSet;
+	}
+		
 }

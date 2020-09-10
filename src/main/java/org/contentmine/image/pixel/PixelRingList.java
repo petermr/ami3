@@ -24,7 +24,7 @@ public class PixelRingList implements Iterable<PixelRing> {
 	public static final String[] DEFAULT_COLOURS = {"red", "cyan", "orange", "green", "magenta", "blue"};
 	private List<PixelRing> ringList;
 	private PixelIsland island; // not used at present, but could be useful in future
-	private PixelRing outline;
+	private PixelList outline;
 	
 	/** generally should not be used to create PixelRingList. Create a PixelIsland and then
 	 * PixelIsland.createSeparateIslandWithClonedPixels()
@@ -96,7 +96,7 @@ public class PixelRingList implements Iterable<PixelRing> {
 		}
 		int i = 0;
 		
-		for (PixelRing pixelRing : this) {
+		for (PixelList pixelRing : this) {
 			SVGG g = pixelRing.plotPixels(fill[i]);
 			gg.appendChild(g);
 			i = (i + 1) % fill.length;
@@ -118,7 +118,7 @@ public class PixelRingList implements Iterable<PixelRing> {
 	 */
 	public void removeMinorIslands(int size) {
 		for (int ring = 0; ring < ringList.size(); ring++) {
-			PixelRing pixelRing = ringList.get(ring);
+			PixelList pixelRing = ringList.get(ring);
 			// make copy of ring as island to isolate the ring
 			PixelIsland newIsland = PixelIsland.createSeparateIslandWithClonedPixels(pixelRing, true);
 			int oldSize = newIsland.size();
@@ -167,7 +167,7 @@ public class PixelRingList implements Iterable<PixelRing> {
 	 * @return
 	 */
 	@Deprecated //"not fully described"
-	public PixelRing getOrCreateOutline() {
+	public PixelList getOrCreateOutline() {
 		if (outline == null) {
 			if (size() > 1) {
 				outline = get(1).getPixelsTouching(get(0));
@@ -184,14 +184,14 @@ public class PixelRingList implements Iterable<PixelRing> {
 		return g;
 	}
 
-	public PixelRing getOuterPixelRing() {
+	public PixelList getOuterPixelRing() {
 		return get(0);
 	}
 	
-	public PixelRing getRing(int i) {
+	public PixelList getRing(int i) {
 		PixelRing ring1 = get(i);
-		PixelRing ring0 = get(i-1);
-		PixelRing ring = ring0 == null ? ring1 : ring1.getPixelsTouching(ring0);
+		PixelList ring0 = get(i-1);
+		PixelList ring = ring0 == null ? ring1 : ring1.getPixelsTouching(ring0);
 		return ring;
 	}
 
@@ -199,13 +199,13 @@ public class PixelRingList implements Iterable<PixelRing> {
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("rings: "+ringList.size()+"\n");
-		for (PixelRing ring : this) {
+		for (PixelList ring : this) {
 			sb.append(" "+ring.size()+"\n");
 		}
 		return sb.toString();
 	}
 
-	public PixelRing getInnermostRing() {
+	public PixelList getInnermostRing() {
 		return ringList.get(ringList.size() - 1);
 	}
 
@@ -215,7 +215,7 @@ public class PixelRingList implements Iterable<PixelRing> {
 	 * 
 	 */
 	public Real2 getInnermostCentreCoordinate() {
-		PixelRing innermostRing = getInnermostRing();
+		PixelList innermostRing = getInnermostRing();
 		return innermostRing == null ? null : innermostRing.getCentreCoordinate();
 	}
 	
@@ -235,7 +235,7 @@ public class PixelRingList implements Iterable<PixelRing> {
 			if (nestedRings > minNestedRings) {
 				Real2Array coordinateArray = null;
 				for (int iring = 0; iring < nestedRings; iring++) {
-					PixelRing pixelRing = pixelRingListIsland.get(iring);
+					PixelList pixelRing = pixelRingListIsland.get(iring);
 					// lower nesting likely to contain isolated points
 					if (iring == minNestedRings - 1) {
 						coordinateArray = processLowestSignificantRing( pixelRing);
@@ -247,10 +247,10 @@ public class PixelRingList implements Iterable<PixelRing> {
 		return localSummitCoordinates;
 	}
 
-	private static Real2Array processLowestSignificantRing(PixelRing pixelRing) {
+	private static Real2Array processLowestSignificantRing(PixelList pixelRing) {
 		Real2Array coordinateArray = new Real2Array();
 		IslandRingList islandRingList = IslandRingList.createFromPixelRing(pixelRing, null);
-		for (PixelRing islandRing : islandRingList) {
+		for (PixelList islandRing : islandRingList) {
 			Real2 centreCoordinate = islandRing.getCentreCoordinate();
 			coordinateArray.addElement(centreCoordinate);
 		}

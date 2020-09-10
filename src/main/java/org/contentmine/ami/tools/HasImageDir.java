@@ -12,7 +12,7 @@ import java.io.File;
  */
 public interface HasImageDir {
 
-	void processImageDir(File imageFile);
+	void processImageFile(File imageFile);
 
 	void processImageDir();
 

@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg height="500.0" width="1000.0" xmlns="http://www.w3.org/2000/svg">
- <text x="50.0" y="50.0" style="font-size:50.0px;font-weight:bold;">no content</text>
+<svg height="227.5" width="223.5" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <g style="fill:red;">
+   <rect x="211.0" y="211.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="210.0" y="211.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="209.0" y="212.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="209.0" y="213.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="208.0" y="214.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="209.0" y="215.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="210.0" y="216.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="211.0" y="216.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="212.0" y="216.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+  </g>
+  <g style="fill:red;">
+   <line x1="211.5" y1="211.5" x2="212.5" y2="216.5" stroke-width="0.5"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:red;stroke-width:0.3;">
+   <circle cx="211.5" cy="211.5" r="1.0" style="fill:none;"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:green;stroke-width:0.3;">
+   <circle cx="212.5" cy="216.5" r="1.0" style="fill:none;"/>
+  </g>
+ </g>
 </svg>

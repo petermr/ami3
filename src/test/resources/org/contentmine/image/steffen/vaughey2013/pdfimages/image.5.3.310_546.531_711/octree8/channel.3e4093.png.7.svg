@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="527.5" width="706.5" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <g style="fill:red;">
+   <rect x="690.0" y="509.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="691.0" y="509.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="692.0" y="509.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="693.0" y="510.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+  </g>
+  <g style="fill:red;">
+   <line x1="690.5" y1="509.5" x2="693.5" y2="510.5" stroke-width="0.5"/>
+  </g>
+  <g style="fill:green;">
+   <rect x="692.0" y="516.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+   <rect x="691.0" y="516.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+   <rect x="690.0" y="516.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+  </g>
+  <g style="fill:green;">
+   <line x1="692.5" y1="516.5" x2="690.5" y2="516.5" stroke-width="0.5"/>
+  </g>
+  <g style="fill:blue;">
+   <rect x="693.0" y="511.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="693.0" y="512.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="693.0" y="513.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="693.0" y="514.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="693.0" y="515.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+  </g>
+  <g style="fill:blue;">
+   <line x1="693.5" y1="511.5" x2="693.5" y2="515.5" stroke-width="0.5"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:red;stroke-width:0.3;">
+   <circle cx="690.5" cy="509.5" r="1.0" style="fill:none;"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:green;stroke-width:0.3;">
+   <circle cx="695.5" cy="509.5" r="1.0" style="fill:none;"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:blue;stroke-width:0.3;">
+   <circle cx="695.5" cy="516.5" r="1.0" style="fill:none;"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:yellow;stroke-width:0.3;">
+   <circle cx="690.5" cy="516.5" r="1.0" style="fill:none;"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:pink;stroke-width:0.3;">
+   <circle cx="693.5" cy="510.5" r="1.0" style="fill:none;"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:gray;stroke-width:0.3;">
+   <circle cx="693.5" cy="515.5" r="1.0" style="fill:none;"/>
+  </g>
+ </g>
+</svg>

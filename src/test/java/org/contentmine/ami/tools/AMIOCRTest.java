@@ -13,7 +13,7 @@ import org.contentmine.graphics.svg.SVGElement;
 import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.norma.NormaFixtures;
 import org.contentmine.norma.image.ocr.GOCRConverter;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /** test OCR.
  * 
@@ -169,23 +169,21 @@ public class AMIOCRTest extends AbstractAMIImageTest /*AbstractAMITest*/ {
 				+ " ocr"
 				+ " --includetree"
 				+ " buzick%"
-				+ " case_systematic_review_ar"
-				+ " case_systematic_review_ju"
-				+ " cole_2014"
-				+ " dietrichson%"
-				+ " donkerdeboerkostons2014_l"
-				+ " ergen_canagli_17_"
-				+ " fanetal_2017_meta_science"
-//				+ " fauzan03"  // large scanned
-				+ " higginshallbaumfieldmosel"
-				+ " kunkel_2015"
-				+ " marulis_2010-300-35review"
-				+ " mcarthur_etal2012_cochran"
-				+ " puziocolby2013_co-operati"
-				+ " rui2009_meta_detracking"
-				+ " shenderovich_2016_pub"
-//				+ " tamim-2009-effectsoftechn" // large scanned
-				+ " zhengetal_2016"
+				+ "case_systematic_review_ar,"
+				+ "case_systematic_review_ju,"
+				+ "cole_2014,"
+				+ "dietrichson%,"
+				+ "donkerdeboerkostons2014_l,"
+				+ "ergen_canagli_17_,"
+				+ "fanetal_2017_meta_science,"
+				+ "higginshallbaumfieldmosel,"
+				+ "kunkel_2015,"
+				+ "marulis_2010-300-35review,"
+				+ "mcarthur_etal2012_cochran,"
+				+ "puziocolby2013_co-operati,"
+				+ "rui2009_meta_detracking,"
+				+ "shenderovich_2016_pub,"
+				+ "zhengetal_2016"
 				+ ""
 				+ " --html true"
                 + " --scalefactor 2.0"

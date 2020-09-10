@@ -7,7 +7,7 @@ import org.apache.logging.log4j.Logger;
 import org.contentmine.ami.AMIFixtures;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.norma.NAConstants;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class AMIWordsTest extends AbstractAMITest {
 	private static final Logger LOG = LogManager.getLogger(AMIWordsTest.class);

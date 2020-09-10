@@ -1,8 +1,9 @@
 package org.contentmine.ami.tools;
 
 import java.awt.image.BufferedImage;
-
 import java.io.File;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
@@ -13,19 +14,21 @@ import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.core.config.Configurator;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
+import org.contentmine.eucl.euclid.Real2;
+import org.contentmine.graphics.svg.SVGCircle;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGSVG;
+import org.contentmine.graphics.svg.SVGText;
 import org.contentmine.image.ImageUtil;
 import org.contentmine.image.pixel.IslandRingList;
-import org.contentmine.image.pixel.PixelGraph;
 import org.contentmine.image.pixel.PixelIsland;
 import org.contentmine.image.pixel.PixelIslandList;
+import org.contentmine.image.pixel.PixelRing;
 import org.contentmine.image.pixel.PixelRingList;
 import org.contentmine.image.processing.HilditchThinning;
-import org.contentmine.image.processing.ZhangSuenThinning;
-
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.Ignore;
+import org.junit.jupiter.api.Test;
 
 
 /** test cleaning.
@@ -34,65 +37,72 @@ import org.junit.Test;
  *
  */
 public class AMIPixelTest extends AbstractAMIImageTest /*AbstractAMITest*/ {
-	private static final Logger LOG = LogManager.getLogger(AMIPixelTest.class);
+	public static final Logger LOG = LogManager.getLogger(AMIPixelTest.class);
 	private static final File TARGET_DIR = new AMIPixelTest().createAbsoluteTargetDir();
 	private static File UCLFOREST = new File(SRC_TEST_AMI, "uclforest");
 	private static File FORESTPLOTSMALL = new File(UCLFOREST, "forestplotsmall"); // project
 	private static CProject SMALL_PROJECT = new CProject(FORESTPLOTSMALL);
-	private static CTree CAMPBELL = SMALL_PROJECT.getOrCreateExistingCTree("campbell");
-	private static CTree BUZICK = SMALL_PROJECT.getOrCreateExistingCTree("buzick");
+//	private static CTree CAMPBELL = SMALL_PROJECT.getOrCreateExistingCTree("campbell");
+//	private static CTree BUZICK = SMALL_PROJECT.getOrCreateExistingCTree("buzick");
+	private static CProject BATTERY10_PROJECT = new CProject(TEST_BATTERY10);
+	private static CProject STEFFEN_PROJECT = new CProject(new File(SRC_TEST_IMAGE, "steffen"));
+	private static CTree JANEK_TREE = STEFFEN_PROJECT.getOrCreateExistingCTree("janek2011");
 
 	private PixelIslandList islandList;
 	private int minHairLength;
 	private int maxIslands;
+	private AMIPixelTool pixelTool;
+	
+	String cmd;
 	
 	public AMIPixelTest() {
 		setDefaults();
 	}
 	
 	@Test
-	public void testPixelForestPlotsSmallTree() throws Exception {
-		String cmd = 
-				" -t " +  new File(FORESTPLOTSMALL, "campbell") 
-				+ " --maxislands 1000 --minimumx 50 --minimumy 50"
+	public void testHelp() {
+		cmd = " pixel --help";
+		AMI.execute(cmd);
+	}
+	
+	@Test
+	@Ignore // 18n sec may be slightly long
+	public void testPixelForestPlotsTree() throws Exception {
+		cmd = 
+				" -t " +  JANEK_TREE.getDirectory()
+				+ " pixel"
+				+ " --maxislands 1000"
 				;
 		AMI.execute(cmd);
 	}
 	
 	@Test
-	public void testPixelForestPlotsSmallProject() throws Exception {
-		String cmd = 
-				" -p "+ SMALL_PROJECT.getDirectory()
-				+ " --maxislands 50"
-				+ " --minimumx 50"
-				+ " --minimumy 50"
-				;
-		AMI.execute(cmd);
-	}
-
-	@Test
-	// FAILS. Must mend
 	/** 
-	 * 
+	 * Needs refactoring
 	 */
-	public void testCampbell() throws Exception {
-		File ctree = CAMPBELL.getDirectory();
-		new AMIImageTool().runCommands(" --ctree " + ctree);
-		AMIPixelTool amiPixel = new AMIPixelTool();
-		amiPixel.runCommands(" --ctree " + ctree
+//	@Ignore
+	// 15 sec
+	// doesn't use image dirs... 
+	public void testIslands() throws Exception {
+		File ctree = JANEK_TREE.getDirectory();
+		cmd = ""
+				+ " --ctree " + ctree
+				+ " pixel"
 				+ " --minwidth 0"
 				+ " --minheight 0"
-				);
-		PixelIslandList pixelIslandList = amiPixel.getPixelIslandList();
+				;
+		AMIPixelTool pixelTool = AMI.execute(AMIPixelTool.class, cmd);
+				
+		PixelIslandList pixelIslandList = pixelTool.getPixelIslandList();
 		// all the islands, includes the text (some are only 1 pixel)
 		Assert.assertEquals("toplevel islands", 29,  pixelIslandList.size());
 		// now the top 6 (the text is all 5 pixels high or less
-		amiPixel = new AMIPixelTool();
-		amiPixel.runCommands(" --ctree " + ctree
+		pixelTool = new AMIPixelTool();
+		pixelTool.runCommands(" --ctree " + ctree
 				+ " --minwidth 10"
 				+ " --minheight 10"
 				);
-		pixelIslandList = amiPixel.getPixelIslandList();
+		pixelIslandList = pixelTool.getPixelIslandList();
 		Assert.assertEquals("toplevel islands", 6,  pixelIslandList.size());
 		/*
 islands > (10,10): islands: 6
@@ -152,26 +162,26 @@ islands > (10,10): islands: 6
 	 */
 	public void testProjectAndIncludeAndScale() throws Exception {
 //		IslandRingList ringList;
-		String cproject = "/Users/pm286/workspace/uclforest/dev";
-		String ctree = cproject+"/"+"shenderovich";
-		new AMIImageTool().runCommands(""
-				+ " -t " + ctree
+		CProject cproject = STEFFEN_PROJECT;
+		CTree ctree = JANEK_TREE; 
+				cmd = ""
+				+ " -t " + ctree.getDirectory()
+				+ " pixel"
 				+ " --maxwidth 1000"
 				+ " --maxheight 1000"
-//				+ " --includetree shenderovich "
-				);
-		new AMIImageTool().runCommands(""
-				+ " -t " + ctree
-//				+ " --includetree shenderovich "
-				);
-		AbstractAMITool amiPixelTool = new AMIPixelTool();
-		amiPixelTool.runCommands(" -p " + cproject
+				;
+				AMI.execute(cmd);
+				
+				cmd = ""
 				// these are not working well yet 
+				+ " -p " + cproject
+				+ " pixel"
 				+ " --minwidth 350"
 				+ " --minheight 10"
 				+ " --maxislands 2000"
-				+ " --includetree shenderovich "
-				);
+				+ " --includetree larraz2015,rettenwander2016"
+				;
+				AMI.execute(cmd);
 		
 	}
 	
@@ -180,36 +190,19 @@ islands > (10,10): islands: 6
 	/** 
 	 * 
 	 */
-	public void testBuzick() throws Exception {
+	public void testJanek() throws Exception {
 //		IslandRingList ringList;
-		CTree ctree = BUZICK;
-		new AMIImageTool().runCommands(" --ctree " + ctree);
-		AbstractAMITool amiPixelTool = new AMIPixelTool();
-		amiPixelTool.runCommands(" --ctree " + ctree
+		CTree ctree = JANEK_TREE;
+			cmd = ""
+			+ " -t " + ctree.getDirectory()
+			+ " pixel"
 			// these are not working well yet 
 			+ " --minwidth 350"
 			+ " --minheight 10"
 			+ " --maxislands 2000"
 //				+ " --outputDirname pixels"
-			);
-		
-	}
-
-	@Test
-	/** 
-	 * 
-	 */
-	public void testRSCSpectra() throws Exception {
-		String ctree = "/Users/pm286/workspace/uclforest/dev/buzick";
-		new AMIImageTool().runCommands(" --ctree " + ctree);
-		AbstractAMITool amiPixelTool = new AMIPixelTool();
-		amiPixelTool.runCommands(" --ctree " + ctree
-			// these are not working well yet 
-			+ " --minwidth 350"
-			+ " --minheight 10"
-			+ " --maxislands 2000"
-//				+ " --outputDirname pixels"
-			);
+			;
+			AMI.execute(cmd);
 		
 	}
 
@@ -237,7 +230,7 @@ islands > (10,10): islands: 6
 		
 		int maxIslands = 10;
 		int maxHairLength = 10;
-		AMIPixelTest.tidyAndAnalyzeLargestIslands(imageFile, maxHairLength, islandList, maxIslands);
+		islandList.tidyAndAnalyzeLargestIslands(imageFile, maxHairLength, maxIslands);
 	}
 
 	@Test
@@ -266,7 +259,7 @@ islands > (10,10): islands: 6
 		
 		int maxIslands = 10;
 		int maxHairLength = 10;
-		AMIPixelTest.tidyAndAnalyzeLargestIslands(imageFile, maxHairLength, islandList, maxIslands);
+		islandList.tidyAndAnalyzeLargestIslands(imageFile, maxHairLength, maxIslands);
 	}
 
 
@@ -304,6 +297,7 @@ islands > (10,10): islands: 6
 
 
 	@Test
+	@Ignore // too big for routine, but uncomment to do complete project
 	public void testMulticolorDiagrams() {
 		Configurator.setLevel("org.contentmine.ami.tools.AMIPixelTest", Level.DEBUG);
 
@@ -319,82 +313,86 @@ islands > (10,10): islands: 6
 			String treeName = cTreeFile.getName();
 			System.out.println("...."+treeName);
 			File file = new File(cTreeFile, "pdfimages/");
-			Assert.assertTrue(file+" exists", file.exists());
-			File[] imageDirs = file.listFiles();
-			if (imageDirs != null) {
-				for (File imageDir : imageDirs) {
-					String image = imageDir.getName();
-					System.out.println("......"+image);
-					analyzeChannelFiles(topDir, projectName, treeName, image, layer);
+//			Assert.assertTrue(file+" exists", file.exists());
+			if (!file.exists()) {
+				LOG.error("NO FILE " + file);
+			} else {
+				File[] imageDirs = file.listFiles();
+				if (imageDirs != null) {
+					for (File imageDir : imageDirs) {
+						String image = imageDir.getName();
+						System.out.println("......"+image);
+						analyzeChannelFiles(topDir, projectName, treeName, image, layer);
+					}
 				}
 			}
 		}
-//		String treeName = "wang2015";
-//		String image = "image.4.1.137_449.59_250";
-		
 	}
 
-	private void analyzeChannelFiles(File topDir, String projectName, String treeName, String image, String layer) {
-		File channelDir = new File(topDir, projectName+"/"+treeName+"/"+"pdfimages"+"/"+image+"/"+layer+"/");
-		System.out.println(">>img>"+channelDir);
-		for (File file : channelDir.listFiles()) {
-			String fileS = file.toString();
-			
-			String channel = FilenameUtils.getBaseName(fileS);
-			if (channel.startsWith("channel.") &&  fileS.endsWith(".png") 
-					&& channel.split("\\.").length == 2) {
-				imageFile = file;
-				System.out.println("root "+channel);
-				extractAndPlotChannel(topDir, projectName, treeName, image, layer, channel);
-			}
-		}
-	}
+	@Test
+	public void testSingleOctree() {
+		Configurator.setLevel("org.contentmine.ami.tools.AMIPixelTest", Level.DEBUG);
 
-	private void extractAndPlotChannel(File topDir,
-			String projectName, String treeName, String image, String layer, String channel) {
+		File topDir = SRC_TEST_IMAGE;
+		String projectName = "steffen";
+		String layer = "octree8";
+		File projectDir = new File(topDir, projectName);
+		String treeName = "wang2015";
+		File cTreeFile = new File(projectDir, treeName);
+		File pdfimagesDir = new File(cTreeFile, "pdfimages/");
+		String image = "image.4.1.137_449.59_250";
+		File imageDir = new File(pdfimagesDir, image);
+		File layerDir = new File(imageDir, layer);
+		String channel = "channel.2526f0";
+		File channelFile = new File(layerDir , channel+".png");
+		imageFile = channelFile;
+		System.out.println("root "+channel);
 		thinCreateIslandListAssertWrite(topDir, projectName, treeName, image, layer, channel);
+
+//		analyzeChannelFiles(topDir, projectName, treeName, image, layer);
 	}
 
-	private void thinCreateIslandListAssertWrite(File topDir, String projectName, String treeName, String image, String layer, String channel) {
-		String suffix = projectName+"/"+treeName+ "/pdfimages/"+image+"/"+layer+"/"+channel+".png";
-		File imageFile = this.getImageFile();
-		long sizeOf = FileUtils.sizeOf(imageFile);
-		if (sizeOf > 50000) {
-			LOG.warn("TOO BIG "+sizeOf+" / "+imageFile);
-			return;
-		}
-		sysou("SIZE "+sizeOf);
-		((AMIPixelTest)this
-		.setProjectName(topDir, projectName))
-		.setTreeName(treeName)
-		.setImageDirName(image)
-		.setLayer(layer)
-		.setChannel(channel)
-		.assertCanReadFile(this.getImageFile() + " input", this.getImageFile(), 100)
-		.assertTrue("img "+getImageFile()+" @ "+suffix, getImageFile().toString().endsWith(suffix))
-		.readImage()
-		.binarize(200)
-		.zhangSuenThin()
-		.writeImage("zsthin")
-		.assertCanReadFile("after thinning", getOutputFile(), 100)
-		.createTidiedPixelIslandList()
-		.setMinHairLength(10)
-		.setMaxIslands(10)
-		.removeIslandsWithLessThanPixelCount(8)
-		.tidyAndAnalyzeLargestIslands()
-		.writePixelIslandList("zsthin1")
-		.assertCanReadFile("after more thinning", this.getSVGFile(), 100)
-		.assertTrue(""+getSVGFile(), getSVGFile().toString().endsWith(
-				projectName+"/"+treeName+ "/pdfimages/"+image+"/"+layer+"/"+channel+".png"+".zsthin1.svg"))
-		;
-	}
-	
-
-	// ============================================
-
-	private void sysou(String string) {
-		// TODO Auto-generated method stub
+	@Test
+	public void testCreateIslandRinglist() {
+		AMIPixelTool amiPixelTool = new AMIPixelTool(STEFFEN_PROJECT);
+		File imageFile = new File(JANEK_TREE.getDirectory(), "pdfimages/image.5.2.364_487.78_207/raw.png");
+		amiPixelTool.processImageFile(imageFile);
+		PixelIslandList islandList = amiPixelTool.getPixelIslandList();
 		
+		int isl;
+		isl = 0;
+//		isl = 1;
+		isl = 2;
+		
+		PixelIsland island = islandList.get(isl);
+		SVGG g = island.getOrCreateSVGG();
+		SVGSVG.wrapAndWriteAsSVG(g, new File("target/islands/island."+isl+".svg"));
+		island.getOrCreateGraph();
+		List<IslandRingList> ringListList = island.getOrCreateIslandRingListList();
+		System.out.println(">islandRingList> "+ringListList);
+		int i = 0;
+		for (IslandRingList ringList : ringListList) {
+			SVGSVG.wrapAndWriteAsSVG(ringList.getRing(0).getOrCreateSVG(), new File("target/islands/island."+isl+"."+(i++)+".svg"));
+		}
+		PixelRing outerRing = ringListList.get(0).get(0);
+		outerRing.setIsland(island);
+//		System.out.println("sorted "+outerRing.createSortedRing());
+		PixelRing sortedRing = outerRing.createSortedRing3();
+		if (true) return;
+		SVGSVG.wrapAndWriteAsSVG(sortedRing.plotPixels(null, "blue", "red"), new File("target/islands/sortedPixelRing."+isl+"."+(i++)+".svg"));
+		
+		outerRing.displayAndSortRing(isl);
+		
+		// find end nodes in sorted list
+	}
+
+	// ====================private========================
+
+	private AMIPixelTool getOrCreatePixelTool() {
+		if (this.pixelTool == null) {
+			this.pixelTool = new AMIPixelTool();
+		}
+		return pixelTool;
 	}
 
 	private void setDefaults() {
@@ -444,39 +442,28 @@ islands > (10,10): islands: 6
 	private AMIPixelTest tidyAndAnalyzeLargestIslands() {
 		checkImageFile();
 		checkPixelIslandList();
-		tidyAndAnalyzeLargestIslands(imageFile, minHairLength, islandList, maxIslands);
+		islandList.tidyAndAnalyzeLargestIslands(imageFile, minHairLength, maxIslands);
 		return this;
 	}
 	
-	private void checkPixelIslandList() {
+	public void checkPixelIslandList() {
 		if (islandList == null || islandList.size() == 0) {
 			LOG.warn("no pixelIslandList");
 		}
 	}
 	
+	public AMIPixelTest writePixelIslandList(String type) {
+		File svgFile = new File(imageFile.toString()+"."+type+".svg");
+		SVGSVG.wrapAndWriteAsSVG(islandList.getOrCreateSVGG(), svgFile);
+		return this;
+	}
+
+
 	private AMIPixelTest removeIslandsWithLessThanPixelCount(int pixelCount) {
 		checkPixelIslandList();
 		islandList.removeIslandsWithLessThanPixelCount(pixelCount);
 		return this;
 	}
-
-	private static void tidyAndAnalyzeLargestIslands(File imageFile, int minHairLength, PixelIslandList islandList, int maxIslands) {
-		islandList = islandList.sortBySizeDescending();
-		for (int isl = 0; isl < Math.min(maxIslands, islandList.size()) ; isl++) {
-			PixelIsland island = islandList.get(isl);
-			LOG.info("is "+isl+">"+island.size());
-			String filename = imageFile.toString()+"."+isl;
-			ImageUtil.writeImageQuietly(island.createImage(), new File(FilenameUtils.getBaseName(filename) + ".png"));
-			
-			PixelGraph pixelGraph = new PixelGraph(island)
-					.tidyNodesAndEdges(minHairLength)
-					.repairEdges();
-			
-			SVGG svgg = pixelGraph.drawEdgesAndNodes();
-			SVGSVG.wrapAndWriteAsSVG(svgg, new File(filename+".svg"));
-		}
-	}
-
 
 	private static File createChannelImageFile(String amiDir, String cTreeName, String imageDirName, String layerName, String channelName) {
 		CTree cTree = new CProject(new File(SRC_TEST_AMI, amiDir)).getCTreeByName(cTreeName);
@@ -488,13 +475,59 @@ islands > (10,10): islands: 6
 	}
 	
 	
-	private AMIPixelTest writePixelIslandList(String type) {
-		checkPixelIslandList();
-		svgFile = new File(imageFile.toString()+"."+type+".svg");
-		SVGSVG.wrapAndWriteAsSVG(islandList.getOrCreateSVGG(), svgFile);
-		return this;
+	private void analyzeChannelFiles(File topDir, String projectName, String treeName, String image, String layer) {
+		File channelDir = new File(topDir, projectName+"/"+treeName+"/"+"pdfimages"+"/"+image+"/"+layer+"/");
+		System.out.println(">>img>"+channelDir);
+		for (File channelFile : channelDir.listFiles()) {
+			String fileS = channelFile.toString();
+			
+			String channel = FilenameUtils.getBaseName(fileS);
+			if (channel.startsWith("channel.") &&  fileS.endsWith(".png") 
+					&& channel.split("\\.").length == 2) {
+				imageFile = channelFile;
+				System.out.println("root "+channel);
+				thinCreateIslandListAssertWrite(topDir, projectName, treeName, image, layer, channel);
+			}
+		}
 	}
 
+	private void thinCreateIslandListAssertWrite(File topDir, String projectName, String treeName, String image, String layer, String channel) {
+		String suffix = projectName+"/"+treeName+ "/pdfimages/"+image+"/"+layer+"/"+channel+".png";
+		File imageFile = this.getImageFile();
+		long sizeOf = FileUtils.sizeOf(imageFile);
+		if (sizeOf > 50000) {
+			LOG.warn("TOO BIG "+sizeOf+" / "+imageFile);
+			return;
+		}
+		
+		System.out.println("SIZE "+sizeOf);
+		((AMIPixelTest)this
+		.setProjectName(topDir, projectName))
+//		.getOrCreatePixelTool().
+		.setTreeName(treeName)
+		.setImageDirName(image)
+		.setLayer(layer)
+		.setChannel(channel)
+		.assertCanReadFile(this.getImageFile() + " input", this.getImageFile(), 100)
+		.assertTrue("img "+getImageFile()+" @ "+suffix, getImageFile().toString().endsWith(suffix))
+		.readImage()
+		.binarize(200)
+		.zhangSuenThin()
+		.writeImage("zsthin")
+		.assertCanReadFile("after thinning", getOutputFile(), 100)
+		.createTidiedPixelIslandList()
+		.setMinHairLength(10)
+//		.setMinHairLength(1)
+		.setMaxIslands(10)
+		.removeIslandsWithLessThanPixelCount(8)
+		.tidyAndAnalyzeLargestIslands()
+		.writePixelIslandList("zsthin1")
+		.assertCanReadFile("after more thinning", this.getSVGFile(), 100)
+		.assertTrue(""+getSVGFile(), getSVGFile().toString().endsWith(
+				projectName+"/"+treeName+ "/pdfimages/"+image+"/"+layer+"/"+channel+".png"+".zsthin1.svg"))
+		;
+	}
+	
 	// ======================================
 
 	public PixelIslandList getIslandList() {
@@ -512,6 +545,8 @@ islands > (10,10): islands: 6
 	
 	// ===== overridden to change return type ===
 
+	// ===== MOVE TO ASSERTJ =========
+	
 	@Override
 	protected AMIPixelTest assertTrue(String msg, boolean condition) {
 		return (AMIPixelTest) super.assertTrue(msg, condition);

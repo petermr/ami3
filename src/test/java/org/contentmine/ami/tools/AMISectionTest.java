@@ -51,7 +51,7 @@ import org.contentmine.norma.sections.TablesExtractor;
 import org.contentmine.norma.sections.TitlesExtractor;
 import org.junit.Assert;
 import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import com.google.common.collect.Multiset;
 import com.google.common.collect.Multiset.Entry;

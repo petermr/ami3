@@ -1,42 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg height="324.5" width="977.5" xmlns="http://www.w3.org/2000/svg">
+<svg height="326.5" width="977.5" xmlns="http://www.w3.org/2000/svg">
  <g>
   <g style="fill:red;">
-   <rect x="966.0" y="296.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="966.0" y="295.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="965.0" y="294.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="964.0" y="294.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="963.0" y="294.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="962.0" y="294.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="961.0" y="294.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="960.0" y="294.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="959.0" y="294.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="958.0" y="294.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="957.0" y="294.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="956.0" y="294.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="955.0" y="294.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="954.0" y="295.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="954.0" y="296.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="954.0" y="297.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="954.0" y="298.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="954.0" y="299.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="954.0" y="300.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="954.0" y="301.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="954.0" y="302.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="950.0" y="294.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="951.0" y="294.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="952.0" y="294.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="953.0" y="294.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
   </g>
   <g style="fill:red;">
-   <line x1="966.5" y1="296.5" x2="954.5" y2="302.5" stroke-width="0.5"/>
+   <line x1="950.5" y1="294.5" x2="953.5" y2="294.5" stroke-width="0.5"/>
+  </g>
+  <g style="fill:green;">
+   <rect x="966.0" y="296.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+   <rect x="966.0" y="295.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+   <rect x="965.0" y="294.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+   <rect x="964.0" y="294.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+   <rect x="963.0" y="294.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+   <rect x="962.0" y="294.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+   <rect x="961.0" y="294.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+   <rect x="960.0" y="294.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+   <rect x="959.0" y="294.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+   <rect x="958.0" y="294.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+   <rect x="957.0" y="294.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+   <rect x="956.0" y="294.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+   <rect x="955.0" y="294.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+  </g>
+  <g style="fill:green;">
+   <line x1="966.5" y1="296.5" x2="955.5" y2="294.5" stroke-width="0.5"/>
+  </g>
+  <g style="fill:blue;">
+   <rect x="964.0" y="300.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="964.0" y="301.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="964.0" y="302.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="963.0" y="303.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+  </g>
+  <g style="fill:blue;">
+   <line x1="964.5" y1="300.5" x2="963.5" y2="303.5" stroke-width="0.5"/>
+  </g>
+  <g style="fill:yellow;">
+   <rect x="964.0" y="307.0" width="1.0" height="1.0" style="fill:yellow;stroke:none;"/>
+   <rect x="964.0" y="306.0" width="1.0" height="1.0" style="fill:yellow;stroke:none;"/>
+   <rect x="964.0" y="305.0" width="1.0" height="1.0" style="fill:yellow;stroke:none;"/>
+   <rect x="963.0" y="304.0" width="1.0" height="1.0" style="fill:yellow;stroke:none;"/>
+  </g>
+  <g style="fill:yellow;">
+   <line x1="964.5" y1="307.5" x2="963.5" y2="304.5" stroke-width="0.5"/>
+  </g>
+  <g style="fill:pink;">
+   <rect x="958.0" y="315.0" width="1.0" height="1.0" style="fill:pink;stroke:none;"/>
+   <rect x="957.0" y="315.0" width="1.0" height="1.0" style="fill:pink;stroke:none;"/>
+   <rect x="956.0" y="315.0" width="1.0" height="1.0" style="fill:pink;stroke:none;"/>
+   <rect x="955.0" y="314.0" width="1.0" height="1.0" style="fill:pink;stroke:none;"/>
+  </g>
+  <g style="fill:pink;">
+   <line x1="958.5" y1="315.5" x2="955.5" y2="314.5" stroke-width="0.5"/>
+  </g>
+  <g style="fill:gray;">
+   <rect x="950.0" y="315.0" width="1.0" height="1.0" style="fill:gray;stroke:none;"/>
+   <rect x="951.0" y="315.0" width="1.0" height="1.0" style="fill:gray;stroke:none;"/>
+   <rect x="952.0" y="314.0" width="1.0" height="1.0" style="fill:gray;stroke:none;"/>
+   <rect x="953.0" y="314.0" width="1.0" height="1.0" style="fill:gray;stroke:none;"/>
+  </g>
+  <g style="fill:gray;">
+   <line x1="950.5" y1="315.5" x2="953.5" y2="314.5" stroke-width="0.5"/>
+  </g>
+  <g style="fill:brown;">
+   <rect x="954.0" y="295.0" width="1.0" height="1.0" style="fill:brown;stroke:none;"/>
+   <rect x="954.0" y="296.0" width="1.0" height="1.0" style="fill:brown;stroke:none;"/>
+   <rect x="954.0" y="297.0" width="1.0" height="1.0" style="fill:brown;stroke:none;"/>
+   <rect x="954.0" y="298.0" width="1.0" height="1.0" style="fill:brown;stroke:none;"/>
+   <rect x="954.0" y="299.0" width="1.0" height="1.0" style="fill:brown;stroke:none;"/>
+   <rect x="954.0" y="300.0" width="1.0" height="1.0" style="fill:brown;stroke:none;"/>
+   <rect x="954.0" y="301.0" width="1.0" height="1.0" style="fill:brown;stroke:none;"/>
+   <rect x="954.0" y="302.0" width="1.0" height="1.0" style="fill:brown;stroke:none;"/>
+  </g>
+  <g style="fill:brown;">
+   <line x1="954.5" y1="295.5" x2="954.5" y2="302.5" stroke-width="0.5"/>
+  </g>
+  <g style="fill:orange;">
+   <rect x="955.0" y="303.0" width="1.0" height="1.0" style="fill:orange;stroke:none;"/>
+   <rect x="956.0" y="303.0" width="1.0" height="1.0" style="fill:orange;stroke:none;"/>
+   <rect x="957.0" y="303.0" width="1.0" height="1.0" style="fill:orange;stroke:none;"/>
+   <rect x="958.0" y="303.0" width="1.0" height="1.0" style="fill:orange;stroke:none;"/>
+   <rect x="959.0" y="303.0" width="1.0" height="1.0" style="fill:orange;stroke:none;"/>
+   <rect x="960.0" y="303.0" width="1.0" height="1.0" style="fill:orange;stroke:none;"/>
+   <rect x="961.0" y="303.0" width="1.0" height="1.0" style="fill:orange;stroke:none;"/>
+   <rect x="962.0" y="303.0" width="1.0" height="1.0" style="fill:orange;stroke:none;"/>
+  </g>
+  <g style="fill:orange;">
+   <line x1="955.5" y1="303.5" x2="962.5" y2="303.5" stroke-width="0.5"/>
+  </g>
+  <g style="fill:red;">
+   <rect x="954.0" y="304.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="954.0" y="305.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="954.0" y="306.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="954.0" y="307.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="954.0" y="308.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="954.0" y="309.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="954.0" y="310.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="954.0" y="311.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="954.0" y="312.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="954.0" y="313.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+  </g>
+  <g style="fill:red;">
+   <line x1="954.5" y1="304.5" x2="954.5" y2="313.5" stroke-width="0.5"/>
   </g>
   <g style="fill:none;opacity:0.5;stroke:red;stroke-width:0.3;">
-   <circle cx="966.5" cy="296.5" r="1.0" style="fill:none;"/>
+   <circle cx="950.5" cy="294.5" r="1.0" style="fill:none;"/>
   </g>
   <g style="fill:none;opacity:0.5;stroke:green;stroke-width:0.3;">
-   <circle cx="955.5" cy="303.5" r="1.0" style="fill:none;"/>
+   <circle cx="966.5" cy="296.5" r="1.0" style="fill:none;"/>
   </g>
   <g style="fill:none;opacity:0.5;stroke:blue;stroke-width:0.3;">
-   <circle cx="963.5" cy="303.5" r="1.0" style="fill:none;"/>
+   <circle cx="964.5" cy="300.5" r="1.0" style="fill:none;"/>
   </g>
   <g style="fill:none;opacity:0.5;stroke:yellow;stroke-width:0.3;">
+   <circle cx="964.5" cy="307.5" r="1.0" style="fill:none;"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:pink;stroke-width:0.3;">
+   <circle cx="958.5" cy="315.5" r="1.0" style="fill:none;"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:gray;stroke-width:0.3;">
+   <circle cx="950.5" cy="315.5" r="1.0" style="fill:none;"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:brown;stroke-width:0.3;">
+   <circle cx="954.5" cy="295.5" r="1.0" style="fill:none;"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:orange;stroke-width:0.3;">
+   <circle cx="955.5" cy="303.5" r="1.0" style="fill:none;"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:red;stroke-width:0.3;">
+   <circle cx="963.5" cy="303.5" r="1.0" style="fill:none;"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:green;stroke-width:0.3;">
    <circle cx="954.5" cy="313.5" r="1.0" style="fill:none;"/>
   </g>
  </g>

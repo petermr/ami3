@@ -22,7 +22,7 @@ import org.contentmine.ami.tools.ocr.LevenshteinDistanceAligment;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
 import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import junit.framework.Assert;
 
@@ -117,9 +117,9 @@ public class AMIForestPlotTest extends AbstractAMITest {
 		String args =
 		"-p "+DEVTEST+""
 		+ " --includetree"
-		+ " donkerdeboerkostons2014_l"
-		+ " ergen_canagli_17_"
-		+ " fanetal_2017_meta_science"
+		+ " donkerdeboerkostons2014_l`"
+		+ "ergen_canagli_17_`"
+		+ "fanetal_2017_meta_science`"
 		+ ""
 		+ SHARP4
 		+ THRESH + " 180"
@@ -130,47 +130,47 @@ public class AMIForestPlotTest extends AbstractAMITest {
 
 		args = 	"-p "+DEVTEST+""
 				+ " --includetree"
-				+ " donkerdeboerkostons2014_l"
-				+ " ergen_canagli_17_"
-				+ " fanetal_2017_meta_science"
+				+ " donkerdeboerkostons2014_l,"
+				+ "ergen_canagli_17_,"
+				+ "fanetal_2017_meta_science"
 			;
 		new AMIForestPlotTool().runCommands(args);
 	}
 	
 	
-	@Test
-	/** scale small text
-	 * 
-	 * @throws Exception
-	 */
-	public void testScaleOCRProject() throws Exception {
-		String args = ""
-				+ "-p "+DEVTEST+""
-				+ " --includetree"
-				+ " buzick%"
-				+ " case_systematic_review_ar"
-				+ " case_systematic_review_ju"
-				+ " cole_2014"
-				+ " dietrichson%"
-				+ " donkerdeboerkostons2014_l"
-				+ " ergen_canagli_17_"
-				+ " fanetal_2017_meta_science"
-//				+ " fauzan03"  // large scanned
-				+ " higginshallbaumfieldmosel"
-				+ " kunkel_2015"
-				+ " marulis_2010-300-35review"
-				+ " mcarthur_etal2012_cochran"
-				+ " puziocolby2013_co-operati"
-				+ " rui2009_meta_detracking"
-				+ " shenderovich_2016_pub"
-//				+ " tamim-2009-effectsoftechn" // large scanned
-				+ " zhengetal_2016"
-				+ ""
-				+ " --html true"
-                + " --scalefactor 2.0"
-				;
-		new AMIForestPlotTool().runCommands(args);
-	}
+//	@Test
+//	/** scale small text
+//	 * 
+//	 * @throws Exception
+//	 */
+//	public void testScaleOCRProject() throws Exception {
+//		String args = ""
+//				+ "-p "+DEVTEST+""
+//				+ " --includetree"
+//				+ " buzick%"
+//				+ " case_systematic_review_ar,"
+//				+ "case_systematic_review_ju"
+//				+ "cole_2014"
+//				+ "dietrichson%"
+//				+ " donkerdeboerkostons2014_l"
+//				+ " ergen_canagli_17_"
+//				+ " fanetal_2017_meta_science"
+////				+ " fauzan03"  // large scanned
+//				+ " higginshallbaumfieldmosel"
+//				+ " kunkel_2015"
+//				+ " marulis_2010-300-35review"
+//				+ " mcarthur_etal2012_cochran"
+//				+ " puziocolby2013_co-operati"
+//				+ " rui2009_meta_detracking"
+//				+ " shenderovich_2016_pub"
+////				+ " tamim-2009-effectsoftechn" // large scanned
+//				+ " zhengetal_2016"
+//				+ ""
+//				+ " --html true"
+//                + " --scalefactor 2.0"
+//				;
+//		new AMIForestPlotTool().runCommands(args);
+//	}
 	
 
 	@Test

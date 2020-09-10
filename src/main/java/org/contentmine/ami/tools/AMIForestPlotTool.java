@@ -383,7 +383,7 @@ public enum ForestPlotType {
 	}
 
 	@Override
-	public void processImageDir(File imageFile) {
+	public void processImageFile(File imageFile) {
 		processImageDirCallback(imageFile);
 	}
 

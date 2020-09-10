@@ -10,6 +10,7 @@ import java.nio.file.Path;
 import java.util.List;
 
 import org.apache.logging.log4j.Logger;
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIFixtures;
 import org.contentmine.cproject.files.CProject;
@@ -19,7 +20,7 @@ import org.contentmine.cproject.util.CMineGlobber;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.eucl.euclid.util.CMFileUtil;
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /** test cleaning.
  * 
@@ -34,6 +35,11 @@ public class AMIDisplayTest extends AbstractAMITest {
 	@Test
 	public void testHelp() {
 		new AMIDisplayTool().runCommands(new String[]{});
+	}
+
+	@Test
+	public void testTarget() {
+		Assert.assertTrue(TARGET_DIR.toString().endsWith("ami3/target/display"));
 	}
 
 	@Test
@@ -64,6 +70,10 @@ public class AMIDisplayTest extends AbstractAMITest {
 				+ " --datatables"
 				;
 		AMI.execute(args);
+		File file = new File(TARGET_DIR, "full.dataTables.html");
+		Assert.assertTrue(file.exists());
+		long size = FileUtils.sizeOf(file);
+		Assert.assertTrue("size "+size, size == 24809);
 	}
 
 	@Test
@@ -94,6 +104,11 @@ public class AMIDisplayTest extends AbstractAMITest {
 				+ " --cooccurrence --facets=country,disease"
 				;
 		AMI.execute(args);
+		File __cooccurrence = new File(TARGET_DIR, "__cooccurrence");
+		File allPlots = new File(__cooccurrence, "allPlots.svg");
+		Assert.assertTrue(allPlots.exists());
+		long size = FileUtils.sizeOf(allPlots);
+		Assert.assertTrue("size "+size, size == 468116);
 	}
 
 }

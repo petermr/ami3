@@ -16,7 +16,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.junit.Assert;
 import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class AMITransformTest extends AbstractAMITest {
 	private static final Logger LOG = LogManager.getLogger(AMITransformTest.class);

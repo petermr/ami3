@@ -8,7 +8,7 @@ import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIProcessor;
 import org.contentmine.ami.plugins.AMIArgProcessor;
 import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /** tests AMIArgProcessor and AMIProcessor (the main enrty point)
  * 

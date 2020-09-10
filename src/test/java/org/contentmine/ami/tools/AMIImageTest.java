@@ -543,7 +543,7 @@ public class AMIImageTest extends AbstractAMIImageTest {
 				"PMC5241879",
 				"PMC5604389",
 				});
-		String treeNamesString = String.join(" ", treeNames);
+		String treeNamesString = String.join(",", treeNames);
 		cmd = "-p " + project
 				+ " -v"
 				+ " clean */svg/*"

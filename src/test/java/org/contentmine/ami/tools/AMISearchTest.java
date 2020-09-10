@@ -8,7 +8,7 @@ import org.contentmine.ami.AMIFixtures;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.norma.NAConstants;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class AMISearchTest extends AbstractAMITest {
 	private static final String MAIN_AMI_DIR = "src/main/resources/org/contentmine/ami";

@@ -18,7 +18,7 @@ import jline.internal.Log;
 public class ImageDirProcessor {
 
 	public static final Logger LOG = LogManager.getLogger(ImageDirProcessor.class);
-private CTree cTree;
+	private CTree cTree;
 	public AbstractAMITool amiTool;
 	private List<File> imageDirs;
 
@@ -157,7 +157,7 @@ private CTree cTree;
 		if (imageFile == null || !imageFile.exists()) {
 			LOG.error("BUG? image file does not exist: "+imageFile);
 		} else {
-			hasImageDir.processImageDir(imageFile);
+			hasImageDir.processImageFile(imageFile);
 		}
 	}
 

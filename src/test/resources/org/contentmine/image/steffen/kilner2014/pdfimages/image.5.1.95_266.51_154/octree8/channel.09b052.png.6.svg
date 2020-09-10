@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="66.5" width="573.5" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <g style="fill:red;">
+   <rect x="557.0" y="54.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="558.0" y="53.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="559.0" y="52.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="560.0" y="53.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="560.0" y="54.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+  </g>
+  <g style="fill:red;">
+   <line x1="557.5" y1="54.5" x2="560.5" y2="54.5" stroke-width="0.5"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:red;stroke-width:0.3;">
+   <circle cx="562.5" cy="55.5" r="1.0" style="fill:none;"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:green;stroke-width:0.3;">
+   <circle cx="559.5" cy="55.5" r="1.0" style="fill:none;"/>
+  </g>
+ </g>
+</svg>

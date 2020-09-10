@@ -28,7 +28,7 @@ import org.contentmine.html.util.WebDriverXom;
 import org.hamcrest.MatcherAssert;
 import org.junit.Assert;
 import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

@@ -49,7 +49,7 @@ import org.contentmine.image.pixel.AxialPixelFrequencies;
 import org.contentmine.image.pixel.IslandRingList;
 import org.contentmine.image.pixel.PixelIsland;
 import org.contentmine.image.pixel.PixelIslandList;
-import org.contentmine.image.pixel.PixelRing;
+import org.contentmine.image.pixel.PixelList;
 import org.contentmine.image.pixel.PixelRingList;
 import org.contentmine.image.processing.HilditchThinning;
 import org.contentmine.image.processing.Thinning;
@@ -163,7 +163,7 @@ private static final String LAST = "LAST";
     		arity = "1",
     		defaultValue = "10000",
             description = "maximum size of pixelIsland. Avoids all-black islands, default 10000")
-    private int maxIslandSize;
+    private int maxIslandSize = 10000;
 
     @Option(names = {"--minwidth"},
     		arity = "1",    		
@@ -210,7 +210,8 @@ private static final String LAST = "LAST";
     		defaultValue = "-1",
             description = "create pixelRings and tabulate properties. "
             		+ "Islands are only analyzed if they have more than minRingCount. "
-            		+ "Default (negative) means analyze none. 0 means all islands. Only '--islands' count are analyzed")
+            		+ "Default (negative) means analyze none. 0 means all islands. "
+            		+ "Only '--islands' count are analyzed")
     private Integer minRingCount = -1;
 	
     @Option(names = {"--subimage"},
@@ -327,27 +328,7 @@ private static final String LAST = "LAST";
     @Override
 	protected void parseSpecifics() {
     	outputDirname = outputDirname.endsWith("/") ? outputDirname : outputDirname + "/";
-		LOG.info("basename             {}", basename);
-		LOG.info("lines                {}", lines);
-		LOG.info("lineLengths          {}", lineLengths);
-		LOG.info("maxislands           {}", maxislands);
-		LOG.info("mingap               {}", mingap);
-		LOG.info("minwidth             {}", minwidth);
-		LOG.info("minheight            {}", minheight);
-		LOG.info("maxIslandCount       {}", maxIslandCount);
-		LOG.info("minRingCount         {}", minRingCount);
-		LOG.info("outputDirname        {}", outputDirname);
-		LOG.info("overlap              {}", overlap);
-		LOG.info("projections          {}", projections);
-		LOG.info("projectionsName      {}", projectionsName);
-		LOG.info("removelinesFilename  {}", removeLinesFilename);
-		LOG.info("subimageTokens       {}", subimageTokens);
-		LOG.info("templateInput        {}", templateInput);
-		LOG.info("templateOutput       {}", templateOutput);
-		LOG.info("templateXsl          {}", templateXsl);
-		LOG.info("thinning             {}", thinningName);
-		LOG.info("xProjectionFactor    {}", xProjectionFactor);
-		LOG.info("yProjectionFactor    {}", yProjectionFactor);
+    	super.parseSpecifics();
 	}
 
     @Override
@@ -375,7 +356,7 @@ private static final String LAST = "LAST";
 		outputDirectory = new File(imageDir, outputDirname+"/");
 		outputDirectory.mkdirs();
 		basename = FilenameUtils.getBaseName(imageFile.toString());
-		if (includeExclude(basename)) {
+		if (cTree != null && includeExclude(basename)) {
 			LOG.warn(">basename> {}", basename);
 		}
 		if (!imageFile.exists()) {
@@ -947,7 +928,7 @@ private static final String LAST = "LAST";
 
 	private void plotBoxForLevel(List<IslandRingList> islandRingListListx, String boxColor, SVGG gg, int lvl) {
 		IslandRingList ringListx = islandRingListListx.get(lvl);
-		for (PixelRing pixelRingx : ringListx) {
+		for (PixelList pixelRingx : ringListx) {
 			SVGRect box1 = SVGRect.createFromReal2Range(Real2Range.createReal2Range(pixelRingx.getIntBoundingBox()));
 			box1.setStroke("black");
 			box1.setFill(boxColor);
@@ -988,7 +969,7 @@ private static final String LAST = "LAST";
 	 */
 	
 	@Override
-	public void processImageDir(File imageFile) {
+	public void processImageFile(File imageFile) {
 		this.imageFile = imageFile;
 		runPixel(imageFile);
 	}

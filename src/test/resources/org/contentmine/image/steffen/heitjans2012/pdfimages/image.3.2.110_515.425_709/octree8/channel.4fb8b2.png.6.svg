@@ -13,30 +13,48 @@
    <rect x="211.0" y="387.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
    <rect x="211.0" y="388.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
    <rect x="210.0" y="389.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="210.0" y="390.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="210.0" y="391.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="211.0" y="392.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="211.0" y="393.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="211.0" y="394.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="211.0" y="395.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="211.0" y="396.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="210.0" y="397.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="209.0" y="397.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="208.0" y="397.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="207.0" y="397.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="206.0" y="397.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="205.0" y="397.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="204.0" y="396.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
-   <rect x="204.0" y="395.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
   </g>
   <g style="fill:red;">
-   <line x1="204.5" y1="386.5" x2="204.5" y2="395.5" stroke-width="0.5"/>
+   <line x1="204.5" y1="386.5" x2="210.5" y2="389.5" stroke-width="0.5"/>
+  </g>
+  <g style="fill:green;">
+   <rect x="209.0" y="390.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+   <rect x="208.0" y="390.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+   <rect x="207.0" y="390.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+  </g>
+  <g style="fill:green;">
+   <line x1="209.5" y1="390.5" x2="207.5" y2="390.5" stroke-width="0.5"/>
+  </g>
+  <g style="fill:blue;">
+   <rect x="204.0" y="395.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="204.0" y="396.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="205.0" y="397.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="206.0" y="397.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="207.0" y="397.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="208.0" y="397.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="209.0" y="397.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="210.0" y="397.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="211.0" y="396.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="211.0" y="395.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="211.0" y="394.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="211.0" y="393.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="211.0" y="392.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="210.0" y="391.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+  </g>
+  <g style="fill:blue;">
+   <line x1="204.5" y1="395.5" x2="210.5" y2="391.5" stroke-width="0.5"/>
   </g>
   <g style="fill:none;opacity:0.5;stroke:red;stroke-width:0.3;">
    <circle cx="204.5" cy="386.5" r="1.0" style="fill:none;"/>
   </g>
   <g style="fill:none;opacity:0.5;stroke:green;stroke-width:0.3;">
+   <circle cx="207.5" cy="390.5" r="1.0" style="fill:none;"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:blue;stroke-width:0.3;">
    <circle cx="204.5" cy="395.5" r="1.0" style="fill:none;"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:yellow;stroke-width:0.3;">
+   <circle cx="209.5" cy="390.5" r="1.0" style="fill:none;"/>
   </g>
  </g>
 </svg>

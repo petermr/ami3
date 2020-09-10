@@ -11,7 +11,7 @@ import org.contentmine.ami.tools.AbstractAMIDictTest;
 import org.contentmine.ami.tools.AbstractAMITest;
 import org.contentmine.ami.tools.dictionary.DictionarySearchTool;
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 
 /** tests AMIDictionary

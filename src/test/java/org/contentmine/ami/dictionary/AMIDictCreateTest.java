@@ -26,7 +26,7 @@ import org.contentmine.graphics.html.HtmlA;
 import org.contentmine.norma.NAConstants;
 import org.junit.Assert;
 import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import nu.xom.Element;
 

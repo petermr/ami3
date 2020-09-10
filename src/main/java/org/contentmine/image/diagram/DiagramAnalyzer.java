@@ -59,7 +59,6 @@ import org.contentmine.image.pixel.PixelIslandList;
 import org.contentmine.image.pixel.PixelList;
 import org.contentmine.image.pixel.PixelListFloodFill;
 import org.contentmine.image.pixel.PixelOutliner;
-import org.contentmine.image.pixel.PixelRing;
 import org.contentmine.image.pixel.PixelRingList;
 import org.contentmine.image.pixel.PixelSegment;
 import org.contentmine.image.pixel.PixelSegmentList;
@@ -545,7 +544,7 @@ public class DiagramAnalyzer {
 			PixelIslandList islandsOfOuterRing = null;
 			int initialSize = 0;
 			for (int ringNumber = 0; ringNumber < rings.size(); ringNumber++) {
-				PixelRing ring = rings.get(ringNumber);
+				PixelList ring = rings.get(ringNumber);
 				PixelIsland newIsland = PixelIsland.createSeparateIslandWithClonedPixels(ring, true);
 				newIsland.removeMinorIslands(3);
 				PixelList newRing = newIsland.getPixelList();

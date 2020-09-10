@@ -411,7 +411,7 @@ public class PlotTest {
 		}
 		SVGSVG.wrapAndWriteAsSVG(g, new File("target/" + SHARK + "/errorbar1AllRings.svg"));
 
-		PixelRing outline = pixelRingList.get(1).getPixelsTouching(pixelRingList.get(0));
+		PixelList outline = pixelRingList.get(1).getPixelsTouching(pixelRingList.get(0));
 		Assert.assertEquals("outline0", 198, pixelRingList.get(0).size());
 		Assert.assertEquals("outline1", 47, pixelRingList.get(1).size());
 		Assert.assertEquals("outline", 64, outline.size());
@@ -487,7 +487,7 @@ public class PlotTest {
 		SVGSVG.wrapAndWriteAsSVG(g, new File("target/" + SHARK + "/plotLine.svg"));
 
 		g = new SVGG();
-		PixelRing outline = pixelRingList.get(3).getPixelsTouching(pixelRingList.get(2));
+		PixelList outline = pixelRingList.get(3).getPixelsTouching(pixelRingList.get(2));
 		outline.plotPixels(g, "black");
 		// this is the outline of the symbol
 		SVGSVG.wrapAndWriteAsSVG(g, new File("target/" + SHARK + "/plotLinePoints23.svg"));
@@ -570,9 +570,9 @@ public class PlotTest {
 			if (island != null) {
 				PixelRingList pixelRingList = island.getOrCreateInternalPixelRings();
 				if (pixelRingList != null && pixelRingList.size() > ring1) {
-					PixelRing list0 = pixelRingList.get(ring0);
+					PixelList list0 = pixelRingList.get(ring0);
 					PixelRing list1 = pixelRingList.get(ring1);
-					PixelRing outline = list1.getPixelsTouching(list0);
+					PixelList outline = list1.getPixelsTouching(list0);
 					PixelListFloodFill pixelListFloodFill = new PixelListFloodFill(outline);
 					pixelListFloodFill.fillIslands();
 					PixelIslandList pixelIslandList1 = pixelListFloodFill.getIslandList();

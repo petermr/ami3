@@ -17,7 +17,7 @@ import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.norma.NAConstants;
 import org.contentmine.norma.NormaFixtures;
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /** tests AMIMakeProject
  * 

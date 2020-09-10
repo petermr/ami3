@@ -15,7 +15,7 @@ import org.contentmine.image.ImageAnalysisFixtures;
 import org.contentmine.image.ImageProcessor;
 import org.contentmine.image.colour.ColorAnalyzer;
 import org.contentmine.image.pixel.PixelIslandList;
-import org.contentmine.image.pixel.PixelRing;
+import org.contentmine.image.pixel.PixelList;
 import org.contentmine.image.pixel.PixelRingList;
 import org.contentmine.image.plot.PixelRingListComparator;
 import org.contentmine.image.plot.PlotTest;
@@ -79,12 +79,12 @@ public class ForestPlotIT {
 			pixelRingList.plotRings(g, new String[] {"red", "cyan", "purple", "yellow", "blue", "pink", "green"});
 			SVGSVG.wrapAndWriteAsSVG(g, new File(targetDir, fileRoot+"/allRings.svg"));
 			for (int i = 0; i < pixelRingList.size(); i+=5) {
-				PixelRing pixelRing = pixelRingList.get(i);
+				PixelList pixelRing = pixelRingList.get(i);
 				g = null;
 				g = pixelRing.plotPixels(g, "red");
 				SVGSVG.wrapAndWriteAsSVG(g, new File(targetDir, fileRoot+"/allRings"+i+".svg"));
 			}
-			PixelRing pixelRing10 = pixelRingList.get(10);
+			PixelList pixelRing10 = pixelRingList.get(10);
 			PixelIslandList pl;
 	//		PixelIslandList ringIslandList = PixelIslandList.;
 	

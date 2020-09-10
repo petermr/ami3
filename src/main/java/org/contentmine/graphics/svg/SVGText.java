@@ -1883,6 +1883,24 @@ But for all other weights a numerical range from 100 to 900 is used. One of the 
 		this.addAttribute(new Attribute(ROTATE_DEGREES, deg));
 	}
 
+	/** annotates a coordinate with its string value
+	 * coordinates are trimmed to integer
+	 * 
+	 * @param g receiving element, created if null
+	 * @param fontSize
+	 * @param currentXY
+	 * @param msg prefixed message (can be empty, else suggest trainling space)
+	 * @return SVGText object
+	 */
+	public static SVGG addCoordText(SVGG g, double fontSize, Real2 currentXY, String msg) {
+		if (g == null) {
+			g = new SVGG();
+		}
+		SVGText text = (SVGText) new SVGText(currentXY, String.valueOf(currentXY).replaceAll("\\..*", "").replaceAll("[\\(\\)]", "")).setFontSize(fontSize);
+		g.appendChild(msg + text);
+		return g;
+	}
+
 }
 class XComparator implements Comparator<SVGText> {
 

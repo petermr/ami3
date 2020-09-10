@@ -47,7 +47,6 @@ import org.contentmine.image.pixel.PixelGraph;
 import org.contentmine.image.pixel.PixelIsland;
 import org.contentmine.image.pixel.PixelIslandList;
 import org.contentmine.image.pixel.PixelList;
-import org.contentmine.image.pixel.PixelRing;
 import org.contentmine.image.pixel.PixelRingList;
 import org.contentmine.pdf2svg2.old.CustomPageDrawer;
 import org.junit.Ignore;
@@ -362,7 +361,7 @@ public class WellIT {
 		Assert.assertEquals("w",  620, width);
 		Assert.assertEquals("h",  1015, height);
 		SVGSVG.wrapAndWriteAsSVG(pixelRingList.plotPixels(), outfileSvg);
-		PixelRing pixelRingBase = pixelRingList.get(1);
+		PixelList pixelRingBase = pixelRingList.get(1);
 		LOG.debug("writing SVG1 to "+outfileSvg1);
 		SVGSVG.wrapAndWriteAsSVG(pixelRingBase.plotPixels("blue"), outfileSvg1);
 		// clip LH axial line
@@ -379,7 +378,7 @@ public class WellIT {
 		IntArray yFrequencies = axialPixelFrequencies.getYFrequencies();
 		LOG.debug(yFrequencies);
 		PixelList missing = new PixelList();
-		PixelRing ring0 = pixelRingList.get(0); // lowest ring
+		PixelList ring0 = pixelRingList.get(0); // lowest ring
 		for (int y = 0; y < yFrequencies.size(); y++) {
 			if (yFrequencies.elementAt(y) <= 1) {
 //				LOG.debug(y);
@@ -415,7 +414,7 @@ public class WellIT {
 		int height = image.getHeight();
 		Assert.assertEquals("w",  270, width);
 		Assert.assertEquals("h",  17576, height);
-		PixelRing pixelRingBase = pixelRingList.get(1);
+		PixelList pixelRingBase = pixelRingList.get(1);
 		SVGG pixelsG = pixelRingBase.plotPixels("blue");
 		// clip LH axial line
 		width = 520;

@@ -6,7 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.contentmine.ami.tools.AMIDict;
 import org.contentmine.ami.tools.AbstractAMIDictTest;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 
 /** tests AMIDictionary

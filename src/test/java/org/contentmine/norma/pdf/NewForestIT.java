@@ -16,7 +16,7 @@ import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.image.diagram.DiagramAnalyzer;
 import org.contentmine.image.pixel.AxialPixelFrequencies;
 import org.contentmine.image.pixel.PixelIslandList;
-import org.contentmine.image.pixel.PixelRing;
+import org.contentmine.image.pixel.PixelList;
 import org.contentmine.image.pixel.PixelRingList;
 import org.junit.Assert;
 import org.junit.Test;
@@ -81,7 +81,7 @@ private static final File PLOTS_DIR = new File("/Users/pm286/workspace/projects/
 		PixelRingList pixelRingList = diagramAnalyzer.createDefaultPixelRings();
 		Assert.assertEquals("pixelRings", 13, pixelRingList.size());
 		int pixelRingID = 1;
-		PixelRing pixelRing1 = pixelRingList.get(pixelRingID);
+		PixelList pixelRing1 = pixelRingList.get(pixelRingID);
 		SVGSVG.wrapAndWriteAsSVG(pixelRing1.getOrCreateSVG(), 
 				new File(cTree.getOrCreatePDFImageManager().getMakeOutputDirectory("derived"), "ring." + pixelRingID + "." + CTree.SVG));
 

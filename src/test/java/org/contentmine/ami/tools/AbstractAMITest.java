@@ -119,7 +119,7 @@ public abstract class AbstractAMITest {
 	protected CProject cProject;
 	protected CTree cTree;
 	protected File outputFile;
-	protected File svgFile;
+	public File svgFile;
 	File globTopDir;
 	List<File> globbedFiles;
 

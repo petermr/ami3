@@ -10,7 +10,7 @@ import org.contentmine.eucl.euclid.files.CMFileUtilTest;
 import org.contentmine.eucl.euclid.util.CMFileUtil;
 import org.contentmine.eucl.xml.XMLUtil;
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import nu.xom.Element;
 

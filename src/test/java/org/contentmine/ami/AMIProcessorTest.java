@@ -7,7 +7,7 @@ import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.AMIProcessor;
 import org.contentmine.norma.NAConstants;
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /** tests ami commandline
  * 

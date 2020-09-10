@@ -297,6 +297,21 @@ public static final Int2 ZERO = new Int2(0, 0);
 			y = y + 1;
 		}
 	}
+	/** can int2 be represented as an axial vector
+	 * 
+	 * @return
+	 */
+	public boolean isAxial() {
+		return (x == 0 || y == 0) && (x + y != 0);
+	}
+	
+	/** create 2-element array representing x,y 
+	 * mainly so it can be transformed
+	 * @return
+	 */
+	public IntArray toIntArray() {
+		return new IntArray(x, y);
+	}
 	
 }
 /**
@@ -346,6 +361,7 @@ class Int2Array {
         yarr = (IntArray) y.clone();
         expanded = false;
     }
+    
     private void expand() {
         if (expanded)
             return;

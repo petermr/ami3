@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="18.5" width="100.5" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <g style="fill:red;">
+   <rect x="70.0" y="7.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="71.0" y="7.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="72.0" y="7.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="73.0" y="7.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="74.0" y="7.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="75.0" y="7.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="76.0" y="7.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="77.0" y="7.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="78.0" y="7.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="79.0" y="7.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="80.0" y="7.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="81.0" y="7.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="82.0" y="7.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="83.0" y="7.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="84.0" y="7.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="85.0" y="7.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="86.0" y="7.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="87.0" y="7.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="88.0" y="7.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="89.0" y="7.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+  </g>
+  <g style="fill:red;">
+   <line x1="70.5" y1="7.5" x2="89.5" y2="7.5" stroke-width="0.5"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:red;stroke-width:0.3;">
+   <circle cx="70.5" cy="7.5" r="1.0" style="fill:none;"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:green;stroke-width:0.3;">
+   <circle cx="89.5" cy="7.5" r="1.0" style="fill:none;"/>
+  </g>
+ </g>
+</svg>

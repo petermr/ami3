@@ -21,7 +21,7 @@ import org.contentmine.graphics.svg.plot.AnnotatedAxis;
 import org.contentmine.graphics.svg.plot.AnnotatedAxisTest;
 import org.junit.Assert;
 import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class AMIGraphicsTest extends AbstractAMITest {
 

@@ -497,7 +497,7 @@ public class PixelGraph {
 		for (int i = 0; i < edgeList.size(); i++) {
 			String col = colours[i % colours.length];
 			PixelEdge edge = edgeList.get(i);
-			SVGG edgeG = edge.createPixelSVG(col);
+			SVGG edgeG = edge.createPixelSVG(col, "black");
 			edgeG.setFill(col);
 			g.appendChild(edgeG);
 			SVGG lineG = edge.createLineSVG();
@@ -818,19 +818,7 @@ public class PixelGraph {
 	}
 
 	private void tidyEdges(int largestSmallEdgeAllowed) {
-		List<PixelEdge> smallEdges = new ArrayList<PixelEdge>();
-		for (PixelEdge edge : edgeList) {
-			if (edge.getNodes().size() != 2) {
-				LOG.trace("Edge with missing node or nodes: " + edge.getNodes().size());
-			} else {
-				PixelNode first = edge.getNodes().get(0);
-				PixelNode last = edge.getNodes().get(1);
-				if ((first.getEdges().size() == 1 || last.getEdges().size() == 1) &&
-						edge.size() <= largestSmallEdgeAllowed) {
-					smallEdges.add(edge);
-				}
-			}
-		}
+		List<PixelEdge> smallEdges = createSmallEdges(largestSmallEdgeAllowed);
 //		System.out.println("n "+nodeList.size()+"/e "+edgeList.size());
 		for (PixelEdge smallEdge : smallEdges) {
 			removeEdge(smallEdge);
@@ -845,6 +833,23 @@ public class PixelGraph {
 //		this.edgeList = null;
 		System.out.println(this.getOrCreateEdgeList());
 		return;
+	}
+
+	private List<PixelEdge> createSmallEdges(int largestSmallEdgeAllowed) {
+		List<PixelEdge> smallEdges = new ArrayList<PixelEdge>();
+		for (PixelEdge edge : edgeList) {
+			if (edge.getNodes().size() != 2) {
+				LOG.trace("Edge with missing node or nodes: " + edge.getNodes().size());
+			} else {
+				PixelNode first = edge.getNodes().get(0);
+				PixelNode last = edge.getNodes().get(1);
+				if ((first.getEdges().size() == 1 || last.getEdges().size() == 1) &&
+						edge.size() <= largestSmallEdgeAllowed) {
+					smallEdges.add(edge);
+				}
+			}
+		}
+		return smallEdges;
 	}
 
 	private void tidyNodes() {
@@ -1379,6 +1384,7 @@ public class PixelGraph {
 	 */
 	public PixelEdgeList getShortTerminalEdges(int len) {
 		PixelEdgeList shortEdges = this.getShortEdges(len);
+		LOG.info("shortEdges "+shortEdges);
 		PixelEdgeList shortTerminalEdges = new PixelEdgeList();
 		for (PixelEdge shortEdge : shortEdges) {
 			int nterminal = 0;
@@ -1397,11 +1403,15 @@ public class PixelGraph {
 			this.removeEdge(pixelEdge);
 			System.out.println(">edge> "+pixelEdge);
 		}
+		remove2ConnectedNodes();
+		return pixelEdgeList;
+	}
+
+	private void remove2ConnectedNodes() {
 		List<PixelNode> nodeList0 = new ArrayList<>(this.getOrCreateNodeList().getList());
 		for (PixelNode node : nodeList0) {
 			this.remove2ConnectedNode(node);
 		}
-		return pixelEdgeList;
 	}
 
 	public PixelGraph repairEdges() {

@@ -1,0 +1,391 @@
+body{font-family:Times New Roman,Helvetica,sans-serif; font-size:100%;font-weight:normal; margin: 2% 2% 2% 2%;line-height:150%;}
+
+/*
+body{font-family:Arial,sans-serif; font-size:95%;font-weight:normal; margin: 2% 2% 2% 2%;line-height:150%;}
+*/
+
+/* 
+#wrapper{width:100%;}
+table{font-size:14px}
+th {font-weight:normal}
+#btnGB {border:solid 1px;background-color:Khaki;}
+*/
+
+.firstpara { margin-left: 0px; text-indent: 0px; text-align: left; margin-bottom: 0pt }
+.otherpara { margin-left: 0px; text-indent: 20px; text-align: left; margin-top: 0pt; margin-bottom: 0pt; }
+.RSCLink {font-weight: bold;font-size:70%;background-color:#C0C0C0;color:black;text-decoration:none;border-style:solid;border-width:1px; padding:1px;font-family:Arial, Geneva, sans-serif;}
+.btnLink{font-size:75%;background-color:#F5F5F5;color:black;text-decoration:none;border-style:solid;border-width:1px; padding:2px;font-family:Arial, Geneva, sans-serif;}
+.btnContainer{padding-right:0.5em;}
+.rsc-logo{padding:25px 5px 35px 0px;}
+
+
+.head_wrap{margin:0 auto;}
+.right_head{display:inline;float:right;text-align:right;width:50%;}
+.left_head{float:left;text-align:left;vertical-align:bottom;padding:0em 0em 1em 0em;width:50%;}
+.article_info{border-bottom:thin solid black;clear:both;}
+.COILink {font-size:70%;background-color:#F5F5F5;color:black;text-decoration: none;border-style:solid;border-width:1px; padding:2px;font-family:Arial, Geneva, sans-serif;}
+.DOILink {font-size:70%;background-color:#F5F5F5;color:black;text-decoration: none;border-style:solid;border-width:1px; padding:2px;font-family:Arial, Geneva, sans-serif;}
+.PMedLink {font-size:70%;background-color:#F5F5F5;color:black;text-decoration: none;border-style:solid;border-width:1px; padding:2px;font-family:Arial, Geneva, sans-serif;}
+.oa {text-align:left;}
+
+#open-crossmark{border: 0; display:inline;padding: 2.5em 0 1em 0;}
+#crossmark-logo{border: 0; display:inline;width: 100px;}
+
+/* DERA-Prospect TC Compounds, AN Biomed, CH Chemical*/
+/* This change for non MEDCHEMCOMM articles remove if MD applied to all */
+a.simple{text-decoration:none;color:black;}
+
+a.ALL:hover {text-decoration:underline;cursor:pointer;}
+a.tab{padding-right:0.5em;}
+#btnTC{background-color:#E7E74A;cursor:pointer;font-size:75%;vertical-align:super;color:black;text-decoration:none;border-style:solid;border-width:1px; padding:2px;font-family:Arial, Geneva, sans-serif;}
+.TC:hover{background-color:#E7E74A;cursor:pointer;text-decoration:none}
+.TC{text-decoration:none;color:black;}
+.RTC:hover{background-color:#E7E74A;cursor:pointer;text-decoration:none}
+.RTC{text-decoration:none;color:black;}
+#btnCH{background:#C6F3F6;cursor:pointer;font-size:75%;vertical-align:super;color:black;text-decoration:none;border-color:black;border-style:solid;border-width:1px;  padding:2px;font-family:Arial, Geneva, sans-serif;}
+.CH:hover{background:#C6F3F6;cursor:pointer;text-decoration:none}
+.CH{text-decoration:none;color:black;}
+#btnAN{background-color:#DEDCD3;cursor:pointer;font-size:75%;vertical-align:super;color:black;text-decoration:none;border-style:solid;border-width:1px; padding:2px;font-family:Arial, Geneva, sans-serif;}
+.AN:hover{background-color:#DEDCD3;cursor:pointer;text-decoration:none}
+.AN{text-decoration:none;color:black;}
+.GB:hover{background-color:Khaki;cursor:pointer;text-decoration:none}
+.GB{text-decoration:none;color:black;}
+
+
+
+/* Tooltip */
+.complink {text-align:center;font-weight:900;margin-bottom:1em;background-color:#0A2C35;color:white;padding:2px;}
+.ANlink {text-align:center;font-weight:900;margin-bottom:1em;color:black;background-color:#DEDCD3;text-transform:uppercase;}
+.CHlink {text-align:center;font-weight:900;margin-bottom:1em;color:#C6F3F6;background-color:white;text-transform:uppercase;}
+
+#chemnav{padding-top:10px;}
+#imgover { position:absolute; visibility:hidden;}
+
+/* Headings */
+
+.title_heading{font-size: 100%;margin-top: 2%; margin-bottom: 2%;font-weight: bold;line-height:120%;font-family:Arial, Geneva, sans-serif;}
+.a_heading{font-size: 95%;margin-top: 2%; margin-bottom: 2%;font-weight: bold;font-family:Arial, Geneva, sans-serif;}
+.b_heading{font-size: 95%;margin-top: 2%; margin-bottom: 2%;font-weight: bold;font-family:Arial, Geneva, sans-serif;}
+.c_heading_indent{font-size: 95%;display:inline-block;text-indent: 20px;margin-right:5px;font-weight: bold;font-family:Arial, Geneva, sans-serif;}
+.d_heading_indent{font-size: 95%;display:inline-block;font-style:italic; text-indent:30px; margin-right:5px; font-family:Arial, Geneva, sans-serif;}
+.e_heading{font-size: 95%;font-style:italic;font-family:Arial, Geneva, sans-serif;}
+.e_heading_indent{font-size: 95%;font-style:italic; text-indent:40px;font-family:Arial, Geneva, sans-serif;}
+
+/* General */
+
+.abstract{font-weight: normal;width:80%}
+.header_text{margin-top: 2%;}
+.graphic_title{text-align:right;}
+.text_indent{text-indent:2%;}
+.p{text-align:left;}
+.bold{font-weight: bold;}     
+.italic{font-style:italic;}
+.sup_ref{font-size:80%;}
+.header_text{font-size: 100%;}
+.small_caps{font-variant: small-caps;}
+.tfootnote{vertical-align:text-top;font-style:italic;font-size:70%} 
+.sansserif{font-family:Arial;}
+.ul{text-decoration:underline;}
+.ol{text-decoration:overline;}
+.warning{color:red;}
+.sup_inf{font-size: 80%;}
+.authgrp_book{font-style:italic;}
+.authgrp_news{font-weight:bold;margin-top:2%;text-align:right;}
+.centered {text-align: center;}
+.div.centered table {margin: 0 auto; text-align: left;}
+.tblrowbottom{vertical-align:bottom;}
+.box_border{border:1px solid black;border-spacing:1em 1em;}
+.simple_table{text-align: center; width:100%;}
+.hrule{margin: 0px; height: 1px; border: 1px solid black}
+.border_black{border-bottom:1px solid black}
+.border_bottom_thin{border-bottom:thin solid black}         
+.border_top_bottom{border-top:thin solid black;border-bottom:thin solid black}
+.centered{text-align: center;}
+.leftalign{text-align: left;}
+.charmap{border: 0;}
+
+/* TOC */
+
+.contents{list-style-type: none;}
+
+/* images and equations */
+
+.image_title{border-bottom: 1px solid #999999;width:50%;text-align:left;}
+td.pushTitleRight{width:25%;}
+td.pushTitleLeft{width:25%;text-align:right;}
+td.imgHolder{text-align:center;}
+td.titleHolder{width:50%;text-align:center;}
+td.leftEqn{width:10%;}
+td.rightEqn{text-align:right;width:10%;}
+td.eqn{text-align:center;width:80%;}
+td.eqnText{text-align:center;}
+td.biogPlate{width:25%;text-align:center;}
+img{max-width:80%;border: 0;}
+
+/* table element styles */
+
+table{font-size:100%;border:0;width:100%;}
+.tblrbottom {vertical-align:bottom;}
+.tgroup{width:100%;}
+.table_caption{padding:1em 0em 0em 0em;border-bottom:thin solid black;}
+
+
+#orcid-id-logo {
+    padding: 0px 1px 0px 2px;
+    vertical-align: baseline;
+}
+/* SPECIFIC CSS FOR THE RICH HTML */
+html, body {
+    background-color: #F6F6F7;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    line-height: 150%;
+}
+
+@media only screen and (min-width: 1168px) {
+    .pubs-ui .viewport {
+        max-width: 1168px;
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1460px) {
+    .pubs-ui .viewport {
+        max-width: 1168px;
+        padding-left: 32px;
+        padding-right: 32px;
+        width: 100%;
+    }
+}
+
+.pubs-ui .rtable__wrapper {
+    max-width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+.pubs-ui .rtable__inner {
+    min-width: 6200px;
+    width: 100%;
+}
+
+.pubs-ui .rtable {
+    width: auto;
+}
+
+@media only print {
+    html, body {
+        background-color: #FFFFFF !important;
+    }
+
+    .pubs-ui #wrapper p,
+    .pubs-ui #wrapper span {
+        font-size: 16px;
+    }
+}
+
+.pubs-ui .pushTitleRight,
+.pubs-ui .pushTitleLeft {
+    width: 0.0001%;
+}
+
+.pubs-ui #wrapper img {
+    max-width: 100%;
+}
+
+    .pubs-ui #wrapper img:not('crossmark-logo') {
+        box-sizing: border-box;
+        padding: 24px;
+    }
+
+.pubs-ui #wrapper p,
+.pubs-ui #wrapper span {
+    line-height: 1.875em;
+}
+
+@media only screen and (min-width: 1168px) {
+    .pubs-ui #wrapper p,
+    .pubs-ui #wrapper span {
+    }
+}
+
+.pubs-ui .image_table {
+    margin: 32px 0;
+}
+
+.pubs-ui #wrapper .biogPlate img {
+    box-sizing: border-box;
+    min-width: 160px;
+    padding: 24px 0 0 0;
+}
+
+.pubs-ui td.biogPlate a {
+    display: block;
+}
+
+.pubs-ui td.biogPlate {
+    display: block;
+    vertical-align: top;
+}
+
+    .pubs-ui td.biogPlate ~ td {
+        display: block;
+        vertical-align: top;
+    }
+
+.pubs-ui #wrapper .abstract {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px;
+}
+
+    .pubs-ui #wrapper .abstract:before {
+        content: "Abstract";
+        display: block;
+        font-family: 'Gotham', Arial, sans-serif;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 12px;
+        letter-spacing: -0.03em;
+    }
+
+.pubs-ui #wrapper h1,
+.pubs-ui #wrapper h2,
+.pubs-ui #wrapper h3,
+.pubs-ui #wrapper h1 > span,
+.pubs-ui #wrapper h2 > span,
+.pubs-ui #wrapper h3 > span {
+    font-family: 'Gotham', Arial, sans-serif;
+    line-height: 1.2em;
+    letter-spacing: -0.03em;
+}
+
+.pubs-ui #wrapper .btnContainer a {
+    display: inline-block;
+    margin-bottom: 12px;
+    xmin-height: 32px;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+    .pubs-ui #wrapper .btnContainer a.btn--light {
+        background-color: #F6F6F7;
+    }
+
+@media only screen and (min-width: 584px) {
+    .pubs-ui #wrapper .biogPlate img {
+        padding: 24px 24px 0px 24px;
+    }
+
+    .pubs-ui td.biogPlate {
+        display: table-cell;
+        width: 240px;
+    }
+
+        .pubs-ui td.biogPlate ~ td {
+            display: table-cell;
+            width: calc(100% - 240px);
+        }
+}
+
+.pubs-ui #wrapper {
+    word-wrap: break-word;
+}
+
+    .pubs-ui #wrapper .oa {
+        display: block;
+        font-size: 12px;
+        line-height: 20px;
+        padding: 4px;
+        text-align: right;
+    }
+
+.pubs-ui .TC, .pubs-ui .TC a {
+    text-decoration: none;
+    color: #474747;
+    padding: 0 4px;
+}
+
+.pubs-ui .RTC a {
+    text-decoration: none;
+    color: #474747;
+    padding: 0 4px;
+}
+
+.pubs-ui .CH a {
+    text-decoration: none;
+    color: #474747;
+    padding: 0 4px;
+}
+
+.pubs-ui .AN a {
+    text-decoration: none;
+    color: #474747;
+    padding: 0 4px;
+}
+
+.pubs-ui .GB a {
+    text-decoration: none;
+    color: #474747;
+    padding: 0 4px;
+}
+
+.pubs-ui #chemnav a .tab {
+    border: 0;
+    display: inline-block;
+    font-family: 'Source Sans Pro', 'source-sans-pro', Arial, sans-serif;
+}
+
+.pubs-ui #btnTC {
+    background-color: #BACD00;
+    border: 0;
+    border-bottom: 1px solid rgba(25,25,25,0.2);
+    cursor: pointer;
+    text-decoration: none;
+    padding: 4px 8px;
+    font-family: 'Source Sans Pro', 'source-sans-pro', Arial, sans-serif;
+    white-space: nowrap;
+}
+
+.pubs-ui #btnAN {
+    background-color: #D1CCBD;
+    border: 0;
+    border-bottom: 1px solid rgba(25,25,25,0.2);
+    cursor: pointer;
+    text-decoration: none;
+    padding: 4px 8px;
+    font-family: 'Source Sans Pro', 'source-sans-pro', Arial, sans-serif;
+    white-space: nowrap;
+}
+
+.pubs-ui #btnCH {
+    background-color: #E99814;
+    border: 0;
+    border-bottom: 1px solid rgba(25,25,25,0.2);
+    cursor: pointer;
+    text-decoration: none;
+    padding: 4px 8px;
+    font-family: 'Source Sans Pro', 'source-sans-pro', Arial, sans-serif;
+    white-space: nowrap;
+}
+
+    .pubs-ui #btnTC:hover,
+    .pubs-ui #btnAN:hover,
+    .pubs-ui #btnCH:hover {
+        background-color: #FFFFFF;
+}
+
+/* PUBS-3334 AHTML Restore ‘RETRACTED’ background to entire page */
+.ahtml-page .pnl {
+  background-color: white;
+}
+
+.ahtml-page.retracted .pnl  {
+  background-color: transparent;
+}
+
+.ahtml-page.retracted {
+  background-image: url(../NewImages/retract.png);
+}

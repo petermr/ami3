@@ -523,6 +523,14 @@ public enum IncExc {
 		return cTree;
 	}
 
+	public CTree getOrCreateCTreeByName(String treeName) {
+		if (cTree == null) {
+			cTree = cProject == null || treeName == null ? null :
+				cProject.getCTreeByName(treeName);
+		}
+		return cTree;
+	}
+
 	public AbstractAMITool setCProjectOutputDir(File dir) {
 		this.cProjectOutputDir = dir;
 		return this;

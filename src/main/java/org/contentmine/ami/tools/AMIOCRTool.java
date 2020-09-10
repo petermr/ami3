@@ -451,7 +451,7 @@ public class AMIOCRTool extends AbstractAMITool implements HasImageDir {
 	}
 	
 	@Override
-	public void processImageDir(File imageFile) {
+	public void processImageFile(File imageFile) {
 		runOCR(imageFile);
 	}
 

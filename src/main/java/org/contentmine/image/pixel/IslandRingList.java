@@ -17,7 +17,7 @@ public IslandRingList() {
 		super();
 	}
 
-	public static IslandRingList createFromPixelRing(PixelRing originalPixelRing, PixelIsland island) {
+	public static IslandRingList createFromPixelRing(PixelList originalPixelRing, PixelIsland island) {
 		IslandRingList islandRingList = null;
 		if (originalPixelRing != null) {
 			islandRingList = new IslandRingList();

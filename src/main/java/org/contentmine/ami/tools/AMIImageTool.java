@@ -815,7 +815,7 @@ public enum AMIImageType {
 
 	/** HasImageDir methods*/
 	@Override
-	public void processImageDir(File imageFile) {
+	public void processImageFile(File imageFile) {
 //		LOG.info("Single IMAGE FILE "+imageFile);
 		processSingleImageFile(imageFile);
 	}

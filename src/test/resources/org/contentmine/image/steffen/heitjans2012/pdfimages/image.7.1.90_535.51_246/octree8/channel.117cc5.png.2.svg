@@ -1,4 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg height="500.0" width="1000.0" xmlns="http://www.w3.org/2000/svg">
- <text x="50.0" y="50.0" style="font-size:50.0px;font-weight:bold;">no content</text>
+<svg height="88.5" width="250.5" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <g style="fill:red;">
+   <rect x="239.0" y="67.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="239.0" y="68.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="239.0" y="69.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="239.0" y="70.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="238.0" y="71.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="237.0" y="72.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="236.0" y="73.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+  </g>
+  <g style="fill:red;">
+   <line x1="239.5" y1="67.5" x2="236.5" y2="73.5" stroke-width="0.5"/>
+  </g>
+  <g style="fill:green;">
+   <rect x="233.0" y="77.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+   <rect x="234.0" y="76.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+   <rect x="235.0" y="75.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+   <rect x="235.0" y="74.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+   <rect x="236.0" y="73.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+  </g>
+  <g style="fill:green;">
+   <line x1="233.5" y1="77.5" x2="236.5" y2="73.5" stroke-width="0.5"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:red;stroke-width:0.3;">
+   <circle cx="239.5" cy="67.5" r="1.0" style="fill:none;"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:green;stroke-width:0.3;">
+   <circle cx="235.5" cy="72.5" r="1.0" style="fill:none;"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:blue;stroke-width:0.3;">
+   <circle cx="233.5" cy="77.5" r="1.0" style="fill:none;"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:yellow;stroke-width:0.3;">
+   <circle cx="236.5" cy="73.5" r="1.0" style="fill:none;"/>
+  </g>
+ </g>
 </svg>

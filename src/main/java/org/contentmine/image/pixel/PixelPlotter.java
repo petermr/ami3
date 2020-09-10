@@ -200,7 +200,7 @@ public class PixelPlotter {
 	public SVGG plot(SVGG g, PixelRingList pixelRingList, String[] colourArray) {
 		g = ensureSVGG(g);
 		int i = 0;
-		for (PixelRing pixelRing : pixelRingList) {
+		for (PixelList pixelRing : pixelRingList) {
 			plot(g, pixelRing, colourArray[i % colourArray.length]);
 			i++;
 		}

@@ -9,7 +9,7 @@ import org.apache.logging.log4j.Logger;
 import org.contentmine.norma.pdf.GrobidRunner;
 import org.junit.Assert;
 import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * test OCR.

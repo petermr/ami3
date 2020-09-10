@@ -8,7 +8,7 @@ import org.apache.logging.log4j.Logger;
 import org.contentmine.ami.tools.AMIDict;
 import org.contentmine.ami.tools.AbstractAMIDictTest;
 import org.contentmine.ami.tools.AbstractAMITest;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import nu.xom.Element;
 

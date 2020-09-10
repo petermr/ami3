@@ -11,7 +11,7 @@ import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.image.ImageAnalysisFixtures;
 import org.contentmine.image.ImageProcessor;
 import org.contentmine.image.pixel.PixelIslandList;
-import org.contentmine.image.pixel.PixelRing;
+import org.contentmine.image.pixel.PixelList;
 import org.contentmine.image.pixel.PixelRingList;
 import org.junit.Test;
 
@@ -51,7 +51,7 @@ public class CochraneIT {
 	//			LOG.debug("i "+i);
 	//			i++;
 	//		}
-			PixelRing pixelRing10 = pixelRingList.get(10);
+			PixelList pixelRing10 = pixelRingList.get(10);
 			LOG.trace("PR "+pixelRing10);
 			PixelIslandList pl;
 	//		PixelIslandList ringIslandList = PixelIslandList.;

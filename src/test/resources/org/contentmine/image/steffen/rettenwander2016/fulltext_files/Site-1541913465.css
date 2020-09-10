@@ -1,0 +1,14 @@
+.journal-header .journal-logo {
+    width: auto;
+    height: 45px;
+}
+
+.journal-header .society-logo {
+    width: 140px;
+    height: auto;
+}
+
+.journal-footer .journal-footer-affiliations-logo {
+    width: 140px;
+    height: auto;
+}

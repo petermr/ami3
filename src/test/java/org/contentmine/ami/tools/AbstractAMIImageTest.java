@@ -21,7 +21,7 @@ public class AbstractAMIImageTest extends AbstractAMITest {
 	protected File pdfImageDir;
 	protected File imageDir;
 	protected File layerDir;
-	protected File imageFile;
+	public File imageFile;
 	protected BufferedImage image;
 
 	private String imageSuffix = CTree.PNG;
@@ -73,7 +73,7 @@ public class AbstractAMIImageTest extends AbstractAMITest {
 	
 	protected void checkImageFile() {
 		if (imageFile == null || !imageFile.exists() || imageFile.isDirectory()) {
-			throw new RuntimeException("missing image file under layer " + layerDir);
+			throw new RuntimeException("missing image file (" + imageFile + ") under layer " + layerDir);
 		}
 	}
 	

@@ -7,7 +7,7 @@ import java.io.File;
 import org.apache.logging.log4j.LogManager;
 import org.contentmine.ami.tools.AMIGetpapersTool;
 import org.contentmine.ami.tools.AMIOCRTool;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /** test OCR.
  * 

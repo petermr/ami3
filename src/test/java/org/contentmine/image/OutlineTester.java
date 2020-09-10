@@ -11,6 +11,7 @@ import org.contentmine.image.pixel.PixelEdgeList;
 import org.contentmine.image.pixel.PixelGraph;
 import org.contentmine.image.pixel.PixelIsland;
 import org.contentmine.image.pixel.PixelIslandList;
+import org.contentmine.image.pixel.PixelList;
 import org.contentmine.image.pixel.PixelNodeList;
 import org.contentmine.image.pixel.PixelRing;
 import org.contentmine.image.pixel.PixelRingList;
@@ -64,7 +65,7 @@ public class OutlineTester {
 		}
 		SVGSVG.wrapAndWriteAsSVG(g, new File(outdir, inname + "AllRings."+currentIslandIndex+".svg"));
 	
-		PixelRing outline = pixelRingList.get(1).getPixelsTouching(pixelRingList.get(0));
+		PixelList outline = pixelRingList.get(1).getPixelsTouching(pixelRingList.get(0));
 		for (int iRing = 0; iRing < Math.min(expectedRingSizes.length, pixelRingList.size()); iRing++) {
 //			LOG.debug("ser "+currentIslandIndex+", iRing "+iRing);
 			Assert.assertEquals("ring"+iRing, expectedRingSizes[currentIslandIndex][iRing], pixelRingList.get(iRing).size());

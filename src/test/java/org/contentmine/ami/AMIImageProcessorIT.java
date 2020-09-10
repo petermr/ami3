@@ -39,6 +39,7 @@ import org.contentmine.image.diagram.DiagramAnalyzer;
 import org.contentmine.image.pixel.LocalSummitList;
 import org.contentmine.image.pixel.PixelGraphList;
 import org.contentmine.image.pixel.PixelIslandList;
+import org.contentmine.image.pixel.PixelList;
 import org.contentmine.image.pixel.PixelRing;
 import org.contentmine.image.pixel.PixelRingList;
 import org.contentmine.image.processing.ZhangSuenThinning;
@@ -273,7 +274,7 @@ public class AMIImageProcessorIT {
 		
 		List<PixelRing> pixelRingList = pixelIslandList.getOrCreatePixelRings();
 		SVGG g = new SVGG();
-		for (PixelRing pixelRing : pixelRingList) {
+		for (PixelList pixelRing : pixelRingList) {
 			g.appendChild(pixelRing.getOrCreateSVG());
 		}
 		SVGSVG.wrapAndWriteAsSVG(g, new File(pngDir, "outerRings"+"." + CTree.SVG));

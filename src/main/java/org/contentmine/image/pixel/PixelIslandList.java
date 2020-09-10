@@ -10,11 +10,11 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.logging.log4j.Logger;
+import org.apache.commons.io.FilenameUtils;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.contentmine.CHESConstants;
 import org.contentmine.eucl.euclid.Int2;
-import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.IntArray;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Range;
@@ -739,7 +739,7 @@ public class PixelIslandList implements Iterable<PixelIsland> {
 		if (outlineList == null) {
 			outlineList = new ArrayList<PixelList>();
 			List<PixelRing> pixelRingList = getOrCreatePixelRings();
-			for (PixelRing pixelRing : pixelRingList) {
+			for (PixelList pixelRing : pixelRingList) {
 				outlineList.add(pixelRing);
 			}
 		}
@@ -821,6 +821,26 @@ public class PixelIslandList implements Iterable<PixelIsland> {
 			aggregatedPixelRingList.addAll(pixelRingList);
 		}
 		return aggregatedPixelRingList;
+	}
+
+	public void tidyAndAnalyzeLargestIslands(File imageFile, int minHairLength, int maxIslands) {
+		sortBySizeDescending();
+		for (int isl = 0; isl < Math.min(maxIslands, size()) ; isl++) {
+			PixelIsland island = get(isl);
+			LOG.info("is "+isl+">"+island.size());
+			String filename = imageFile.toString()+"."+isl;
+			ImageUtil.writeImageQuietly(island.createImage(), new File(FilenameUtils.getBaseName(filename) + ".png"));
+			
+			PixelGraph pixelGraph = new PixelGraph(island)
+	//					.tidyNodesAndEdges(minHairLength) // this doesn't work
+					.repairEdges()
+					;
+			System.out.println("PiXGr "+pixelGraph);
+			
+			SVGG svgg = pixelGraph.drawEdgesAndNodes();
+			SVGSVG.wrapAndWriteAsSVG(svgg, new File(filename+".svg"));
+			SVGSVG.wrapAndWriteAsSVG(island.getOrCreateSVGG(), new File(filename+"."+isl+".svg"));
+		}
 	}
 
 	public static PixelIslandList createTidiedPixelIslandList(BufferedImage image) {

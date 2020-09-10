@@ -58,7 +58,7 @@ private List<PixelRingList> prlList;
 				localSummitList.add(pixelRing);
 				// lower nesting likely to contain isolated points
 				IslandRingList islandRingList = IslandRingList.createFromPixelRing(pixelRing, null);
-				for (PixelRing islandRing : islandRingList) {
+				for (PixelList islandRing : islandRingList) {
 					Real2 centreCoordinate = islandRing.getCentreCoordinate();
 					centreArray.addElement(centreCoordinate);
 				}

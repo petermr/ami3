@@ -1,0 +1,20 @@
+﻿[data-sitename="societyofeconomicgeologists"] .header-row {
+    background: url('/Themes/Client/app/img/contours_background.png') 0 0 repeat;
+}
+
+.pg_thesaurus-terms #main .thesaurus__top {
+    background: url('/Themes/Client/app/img/contours_background.png') 0 0 repeat;
+}
+
+.widget-instance-Home_MainContentB0 {
+    background: url('/Themes/Client/app/img/contours_background.png') 0 0 repeat;
+}
+.gsw-bg {
+    background: url('/Themes/Client/app/img/contours_background.png') 0 0 repeat;
+    height: 50px;
+}
+
+.global-nav-masthead {
+    background: url('/Themes/Client/app/img/masthead_with_bg.png') 0 0;
+    background-size: auto 100%;
+}

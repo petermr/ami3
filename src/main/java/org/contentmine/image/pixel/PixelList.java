@@ -9,18 +9,21 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.contentmine.eucl.euclid.Axis.Axis2;
 import org.contentmine.eucl.euclid.Int2;
 import org.contentmine.eucl.euclid.Int2Range;
 import org.contentmine.eucl.euclid.Real2;
 import org.contentmine.eucl.euclid.Real2Array;
 import org.contentmine.eucl.euclid.RealArray;
+import org.contentmine.graphics.svg.SVGCircle;
 import org.contentmine.graphics.svg.SVGG;
+import org.contentmine.graphics.svg.SVGLine;
 import org.contentmine.graphics.svg.SVGRect;
 import org.contentmine.graphics.svg.SVGSVG;
 import org.contentmine.image.colour.ColorUtilities;
@@ -45,7 +48,7 @@ public class PixelList implements Iterable<Pixel> {
 
 	protected List<Pixel> list;
 	private Real2Array points;
-	private PixelIsland island;
+	protected PixelIsland island;
 	private Map<Int2, Pixel> pixelByCoordinateMap;
 	private Map<Integer, PixelList> pixelListByXCoordinateMap;
 	private Map<Integer, PixelList> pixelListByYCoordinateMap;
@@ -57,6 +60,17 @@ public class PixelList implements Iterable<Pixel> {
 		ensurePixelByCoordinateMap();
 	}
 
+	/** create with an island.
+	 * Up to the user to make sure whether the pixels belong to the island 
+	 * or whether it matters.
+	 * 
+	 * @param island
+	 */
+	public PixelList(PixelIsland island) {
+		this();
+		this.island = island;
+	}
+	
 	private void ensureList() {
 		if (list == null) {
 			list = new ArrayList<Pixel>();
@@ -73,6 +87,7 @@ public class PixelList implements Iterable<Pixel> {
 
 	public PixelList(PixelList list) {
 		this(list.getList());
+		this.island = island;
 	}
 
 	public Pixel getPixelByCoordinate(Int2 coord) {
@@ -246,12 +261,12 @@ public class PixelList implements Iterable<Pixel> {
 	 */
 	public PixelList getPixelsTouching(PixelList list1) {
 		PixelList touchingList = null;
-		if (list1 != null) {
+		if (list1 != null && this.island != null) {
 			PixelSet used = new PixelSet();
 			this.getIsland();
 			list1.getIsland();
 			touchingList = new PixelList();
-			if (this.island != null && list1 != null && this.island.equals(list1.getIsland())) {
+			if (this.island.equals(list1.getIsland())) {
 				if (list1.size() > 0) {
 					int value = list1.get(0).getValue();
 					for (Pixel pixel : list) {
@@ -268,7 +283,19 @@ public class PixelList implements Iterable<Pixel> {
 		}
 		return touchingList;
 	}
+
 	
+	/** 
+	 * Plots pixels as squares.
+	 * no lines
+	 * @param g if null creates one
+	 * @param fill colour
+	 * @return
+	 */
+	public SVGG plotPixels(SVGG g, String fill) {
+		return plotPixels(g, fill, null);
+	}
+
 	/** 
 	 * Plots pixels as squares.
 	 * 
@@ -276,14 +303,27 @@ public class PixelList implements Iterable<Pixel> {
 	 * @param fill colour
 	 * @return
 	 */
-	public SVGG plotPixels(SVGG g, String fill) {
+	public SVGG plotPixels(SVGG g, String fill, String stroke) {
 		if (g == null) {
 			g = new SVGG();
 		}
+		Pixel first = null;
+		Pixel last = null;
 		for (Pixel pixel : this) {
-			SVGRect rect = pixel.getSVGRect();
-			rect.setFill(fill);
-			g.appendChild(rect);
+			first = first == null ? pixel : first;
+			if (fill != null) {
+				SVGRect rect = pixel.getSVGRect();
+				rect.setFill(fill).setOpacity(0.5);
+				g.appendChild(rect);
+			}
+			if (stroke != null) {
+				if (last != null) {
+					SVGLine line = (SVGLine) new SVGLine(last.getReal2(), pixel.getReal2()).setStroke(stroke).setStrokeWidth(0.3);
+					g.appendChild(line);
+				}
+			}
+			
+			last = pixel;
 		}
 		return g;
 	}
@@ -296,11 +336,7 @@ public class PixelList implements Iterable<Pixel> {
 	 */
 	public SVGG getOrCreateSVG() {
 		SVGG g = new SVGG();
-		for (Pixel pixel : this) {
-			SVGRect rect = pixel.getSVGRect();
-			rect.setFill(DEFAULT_FILL);
-			g.appendChild(rect);
-		}
+		plotPixels(g, DEFAULT_FILL);
 		return g;
 	}
 
@@ -840,6 +876,78 @@ public class PixelList implements Iterable<Pixel> {
 			return remove(pixel);
 		}
 		return false;
+	}
+
+	/** find neighbours in this pixelList.
+	 * (this might be a duplicate method)
+	 * 
+	 * @param pixel
+	 * @return
+	 */
+	public PixelList getOrCreateNeighboursInList(Pixel pixel) {
+		PixelList neighbourList = pixel.getOrCreateNeighbours(island);
+		PixelList neighboursInList = new PixelList();
+		for (Pixel neighbour : neighbourList) {
+			if (this.contains(neighbour)) {
+				neighboursInList.add(neighbour);
+			}
+		}
+		return neighboursInList;
+	}
+
+	/** get first pixel in list with exactly 2 neighbours in list
+	 * (not sure whether duagonal is honoured yet)
+	 * @return first 2-connected pixel including diagonals, else null
+	 */
+	protected Pixel getFirst2ConnectedPixel(Set<Pixel> multipleSet) {
+		Pixel first2 = null;
+		boolean diagonal = island.getDiagonal();
+		island.setDiagonal(true);
+		for (int i = 0; i < this.size(); i++) {
+			Pixel current = get(i);
+			PixelList neighbours = this.getOrCreateNeighboursInList(current);
+			int neighbourCount = neighbours.size();
+			if (neighbourCount == 2) {
+				if (multipleSet.contains(neighbours.get(0)) 
+						|| multipleSet.contains(neighbours.get(1))) {
+					LOG.warn("skip triangle " + current);
+					// skip triangle
+				} else {
+					first2 = current;
+					break;
+				}
+			}
+		}
+		island.setDiagonal(diagonal);
+		return first2;
+	}
+
+	protected int getUnusedNeighbours(Set<Pixel> unusedPixelSet, PixelList neighbours) {
+		int neighbourCount = 0;
+		for (Pixel neighbour : neighbours) {
+			if (this.contains(neighbour) && unusedPixelSet.contains(neighbour)) {
+				neighbourCount++;
+			}
+		}
+		return neighbourCount;
+	}
+
+	private void addLine(SVGG g, Pixel last, Pixel current) {
+		SVGLine line = new SVGLine(last.getReal2(), current.getReal2());
+		line.setStroke("blue").setStrokeWidth(0.3).setOpacity(0.5);
+		g.appendChild(line);
+	}
+
+	private void addCircle(SVGG g, Pixel current) {
+		SVGCircle c = (SVGCircle) new SVGCircle(current.getReal2(), 0.7).setFill("green").setOpacity(0.5);
+		g.appendChild(c);
+	}
+
+	private void addRect(SVGG g, Pixel current) {
+		Real2 xy = current.getReal2();
+		SVGRect rect = new SVGRect(xy, xy.plus(new Real2(0.5, 0.5)));
+		rect.setFill("black");
+		g.appendChild(rect);
 	}
 
 }

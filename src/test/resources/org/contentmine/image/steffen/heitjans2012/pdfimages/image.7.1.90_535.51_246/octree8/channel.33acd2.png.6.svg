@@ -1,11 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg height="102.5" width="275.5" xmlns="http://www.w3.org/2000/svg">
+<svg height="104.0" width="279.0" xmlns="http://www.w3.org/2000/svg">
  <g>
+  <g style="fill:red;">
+   <rect x="263.0" y="91.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="264.0" y="91.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="265.0" y="91.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="266.0" y="91.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="267.0" y="91.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="268.0" y="92.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="267.0" y="93.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="266.0" y="93.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="265.0" y="93.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="264.0" y="93.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="263.0" y="93.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="262.0" y="93.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="261.0" y="93.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+   <rect x="260.0" y="92.0" width="1.0" height="1.0" style="fill:red;stroke:none;"/>
+  </g>
+  <g style="fill:red;">
+   <line x1="263.5" y1="91.5" x2="260.5" y2="92.5" stroke-width="0.5"/>
+  </g>
+  <g style="fill:green;">
+   <rect x="267.0" y="80.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+   <rect x="268.0" y="81.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+   <rect x="268.0" y="82.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+   <rect x="267.0" y="83.0" width="1.0" height="1.0" style="fill:green;stroke:none;"/>
+  </g>
+  <g style="fill:green;">
+   <line x1="267.5" y1="80.5" x2="267.5" y2="83.5" stroke-width="0.5"/>
+  </g>
+  <g style="fill:blue;">
+   <rect x="266.0" y="79.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="265.0" y="78.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="264.0" y="78.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="263.0" y="77.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="262.0" y="78.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="261.0" y="78.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+   <rect x="260.0" y="79.0" width="1.0" height="1.0" style="fill:blue;stroke:none;"/>
+  </g>
+  <g style="fill:blue;">
+   <line x1="266.5" y1="79.5" x2="260.5" y2="79.5" stroke-width="0.5"/>
+  </g>
   <g style="fill:none;opacity:0.5;stroke:red;stroke-width:0.3;">
-   <circle cx="263.5" cy="91.5" r="1.0" style="fill:none;"/>
+   <circle cx="258.5" cy="81.5" r="1.0" style="fill:none;"/>
   </g>
   <g style="fill:none;opacity:0.5;stroke:green;stroke-width:0.3;">
+   <circle cx="258.5" cy="92.5" r="1.0" style="fill:none;"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:blue;stroke-width:0.3;">
+   <circle cx="263.5" cy="91.5" r="1.0" style="fill:none;"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:yellow;stroke-width:0.3;">
    <circle cx="264.5" cy="86.5" r="1.0" style="fill:none;"/>
+  </g>
+  <g style="fill:none;opacity:0.5;stroke:pink;stroke-width:0.3;">
+   <circle cx="260.5" cy="80.5" r="1.0" style="fill:none;"/>
   </g>
  </g>
 </svg>

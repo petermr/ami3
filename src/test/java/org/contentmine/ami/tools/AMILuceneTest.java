@@ -39,7 +39,7 @@ import org.apache.lucene.store.FSDirectory;
 import org.contentmine.ami.tools.lucene.LuceneUtils;
 import org.contentmine.norma.NAConstants;
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 
 

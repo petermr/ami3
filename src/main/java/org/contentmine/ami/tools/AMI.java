@@ -226,6 +226,7 @@ public class AMI implements Runnable {
 		protected static class TreeOptions {
 			@Option(names = {"-r", "--includetree"}, paramLabel = "DIR", order = 12,
 					arity = "1..*",
+					split = ",",
 					description = "Include only the CTrees in the list. (only works with --cproject). "
 							+ "Currently must be explicit but we'll add globbing later."
 			)

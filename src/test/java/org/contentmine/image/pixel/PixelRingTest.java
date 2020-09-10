@@ -58,9 +58,9 @@ public static String PIXEL_RINGS = "pixelRings";
 			Assert.assertEquals(pixelRingList.get(0).size(), 4);
 			pixelRingList.get(0).sortXY();
 			Assert.assertEquals("(1,1)(1,2)(2,1)(2,2)", pixelRingList.get(0).toString());
-			PixelRing outline = pixelRingList.getOrCreateOutline();
+			PixelList outline = pixelRingList.getOrCreateOutline();
 			Assert.assertNull("only 1 ring so null", outline); 
-			PixelRing outerRing = pixelRingList.getOuterPixelRing();
+			PixelList outerRing = pixelRingList.getOuterPixelRing();
 			Assert.assertEquals("only 1 ring ", 4, outerRing.size()); 
 			outerRing.sortXY();
 			Assert.assertEquals("(1,1)(1,2)(2,1)(2,2)", outerRing.toString());
@@ -168,7 +168,7 @@ public static String PIXEL_RINGS = "pixelRings";
 				+ "(5,4)(5,6)"
 				+ "(6,4)(6,5)(6,6)", pixelRingList.get(0).toString());
 		pixelRingList.get(1).sortXY();
-		PixelRing ringList1 = pixelRingList.get(1);
+		PixelList ringList1 = pixelRingList.get(1);
 		Assert.assertEquals("2 islands",""
 				+ "(2,2)(2,3)(3,2)(3,3)"
 				+ "(5,5)", 

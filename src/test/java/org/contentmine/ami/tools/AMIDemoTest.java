@@ -1,6 +1,6 @@
 package org.contentmine.ami.tools;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /** demos of AMI, often including several chained commands.
  * 

@@ -18,7 +18,7 @@ import org.contentmine.image.diagram.DiagramAnalyzer;
 import org.contentmine.image.pixel.PixelGraph;
 import org.contentmine.image.pixel.PixelIsland;
 import org.contentmine.image.pixel.PixelIslandList;
-import org.contentmine.image.pixel.PixelRing;
+import org.contentmine.image.pixel.PixelList;
 import org.contentmine.image.pixel.PixelRingList;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -63,7 +63,7 @@ private static File inputDir = SVGHTMLFixtures.FOREST_DIR;
 		int maxSize0 = maxSize - 1;
 		SVGG g = new SVGG();
 		if (pixelRingList.size() > maxSize) {
-			PixelRing outline = pixelRingList.get(maxSize).getPixelsTouching(pixelRingList.get(maxSize0));
+			PixelList outline = pixelRingList.get(maxSize).getPixelsTouching(pixelRingList.get(maxSize0));
 			outline.plotPixels(g, "black");
 			// this is the outline of the symbol
 			File file = new File("target/" + fileRoot + "/plotLine"+isl+"Points"+maxSize0+""+maxSize+".svg");

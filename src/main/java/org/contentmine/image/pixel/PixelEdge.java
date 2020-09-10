@@ -246,10 +246,10 @@ public class PixelEdge {
 		return midPixel;
 	}
 
-	public SVGG createPixelSVG(String colour) {
+	public SVGG createPixelSVG(String fill, String stroke) {
 		SVGG g = new SVGG();
 		for (Pixel pixel : pixelList) {
-			SVGRect rect = pixel.getSVGRect(1, colour);
+			SVGRect rect = pixel.getSVGRect(1, fill, stroke);
 			g.appendChild(rect);
 		}
 		return g;
