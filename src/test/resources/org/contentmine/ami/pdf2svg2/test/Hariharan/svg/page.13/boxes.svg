@@ -1,644 +1,775 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg height="760.0" width="4321.4" xmlns="http://www.w3.org/2000/svg">
+<svg height="760.0" width="389.91" xmlns="http://www.w3.org/2000/svg">
  <g>
   <g>
-   <rect x="34.0" y="9.100000000000001" width="302.96000000000004" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; 14BharathHariharan,PabloArbel´aez,RossGirshick,JitendraMalik; null</title>
+   <rect x="175.9" y="9.100000000000001" width="203.88999999999996" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>9.0; Simultaneous Detection and Segmentation 13; null</title>
    </rect>
-   <text svgx:width="0.51,0.51,0.73,0.57,0.51,0.4,0.51,0.4,0.57,0.77,0.51,0.4,0.29,0.57,0.51,0.4,0.51,0.57,0.29,0.7,0.51,0.57,0.29,0.51,0.77,0.4,0.57,0.46,0.29,0.51,0.51,0.46,0.46,0.29,0.76,0.51,0.41,0.41,0.81,0.29,0.4,0.41,0.57,0.29,0.46,0.54,0.29,0.53,0.29,0.4,0.46,0.57,0.57,0.4,0.51,0.94,0.51,0.29,0.29,0.54" y="18.1" x="34.0,38.6,67.1,73.6,78.7,83.3,86.9,91.5,95.1,103.3,110.2,114.8,118.4,121.0,126.1,130.7,134.3,138.9,144.1,149.7,155.7,160.3,165.4,168.0,175.7,182.6,186.2,191.6,195.7,198.2,198.2,202.8,206.9,211.0,216.6,223.4,228.0,231.7,238.4,245.6,248.2,251.8,255.4,260.5,263.1,266.9,271.8,277.4,282.2,284.7,288.3,292.4,297.5,302.6,306.2,313.9,322.4,327.0,329.5,332.1" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">14BharathHariharan,PabloArbel´aez,RossGirshick,JitendraMalik</text>
+   <text svgx:width="0.57,0.29,0.86,0.57,0.29,0.4,0.51,0.57,0.46,0.51,0.57,0.41,0.55,0.79,0.46,0.4,0.46,0.46,0.4,0.29,0.51,0.57,0.55,0.51,0.57,0.57,0.55,0.57,0.46,0.51,0.86,0.46,0.57,0.4,0.51,0.4,0.29,0.51,0.57,0.55,0.51,0.51" y="18.1" x="175.9,181.0,183.5,191.0,196.1,198.6,202.2,206.8,211.9,216.0,220.7,225.8,229.4,232.5,239.5,243.6,247.2,251.3,255.4,259.0,261.5,266.2,271.3,274.3,278.9,284.1,289.2,292.3,297.4,301.5,306.1,313.8,317.9,322.7,326.3,330.9,334.5,337.1,341.7,346.8,370.6,375.2" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Simultaneous Detection and Segmentation 13</text>
   </g>
   <g>
-   <rect x="60.0" y="33.0" width="37.17" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; Table 4.; null</title>
+   <rect x="56.0" y="142.5" width="3.8999999999999986" height="7.800000000000011" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.8; 0; null</title>
    </rect>
-   <text svgx:width="0.82,0.58,0.66,0.33,0.54,0.55,0.59,0.33" y="42.0" x="60.0,66.5,71.6,77.5,80.5,85.3,88.9,94.2" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Table 4.</text>
+   <text svgx:width="0.5" y="150.3" x="56.0" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:7.8px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">0</text>
   </g>
   <g>
-   <rect x="103.3" y="33.0" width="58.500000000000014" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; Results on AP; null</title>
+   <rect x="100.6" y="142.5" width="3.9000000000000057" height="7.800000000000011" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.8; 5; null</title>
    </rect>
-   <text svgx:width="0.76,0.46,0.41,0.57,0.29,0.4,0.41,0.55,0.51,0.57,0.55,0.77,0.7" y="42.0" x="103.3,110.0,114.1,117.8,122.9,125.5,129.0,132.7,135.8,140.4,145.5,148.6,155.5" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Results on AP</text>
+   <text svgx:width="0.5" y="150.3" x="100.6" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:7.8px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">5</text>
   </g>
   <g>
-   <rect x="161.7" y="32.2" width="3.3000000000000114" height="6.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>6.0; b; null</title>
+   <rect x="143.2" y="142.5" width="7.800000000000011" height="7.800000000000011" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.8; 10; null</title>
    </rect>
-   <text svgx:width="0.55" y="38.2" x="161.7" style="fill:rgb(0,0,0);font-family:CMMI6;font-size:6.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">b</text>
+   <text svgx:width="0.5,0.5" y="150.3" x="143.2,147.1" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:7.8px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">10</text>
   </g>
   <g>
-   <rect x="168.6" y="33.0" width="31.100000000000023" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; and AP; null</title>
+   <rect x="187.8" y="142.5" width="7.799999999999983" height="7.800000000000011" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.8; 15; null</title>
    </rect>
-   <text svgx:width="0.51,0.57,0.57,0.55,0.77,0.7" y="42.0" x="168.6,173.2,178.3,183.4,186.5,193.4" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">and AP</text>
+   <text svgx:width="0.5,0.5" y="150.3" x="187.8,191.7" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:7.8px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">15</text>
   </g>
   <g>
-   <rect x="199.7" y="32.2" width="3.3000000000000114" height="6.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>6.0; b; null</title>
+   <rect x="51.8" y="119.5" width="5.225999999999999" height="7.799999999999997" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.8; B; null</title>
    </rect>
-   <text svgx:width="0.55" y="38.2" x="199.7" style="fill:rgb(0,0,0);font-family:CMMI6;font-size:6.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">b</text>
+   <text svgx:width="0.67" y="127.3" x="51.8" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:7.8px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">B</text>
   </g>
   <g>
-   <rect x="199.7" y="37.8" width="10.000000000000028" height="6.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>6.0; vol; null</title>
+   <rect x="52.7" y="83.8" width="4.368000000000002" height="7.799999999999997" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.8; S; null</title>
    </rect>
-   <text svgx:width="0.63,0.61,0.4" y="43.8" x="199.7,203.6,207.3" style="fill:rgb(0,0,0);font-family:CMMI6;font-size:6.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">vol</text>
+   <text svgx:width="0.56" y="91.6" x="52.7" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:7.8px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">S</text>
   </g>
   <g>
-   <rect x="213.3" y="33.0" width="140.61" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; on VOC12 val. All numbers are %.; null</title>
+   <rect x="52.3" y="48.0" width="4.758000000000003" height="7.799999999999997" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.8; L; null</title>
    </rect>
-   <text svgx:width="0.51,0.57,0.55,0.77,0.8,0.74,0.51,0.51,0.55,0.54,0.51,0.29,0.29,0.55,0.77,0.29,0.29,0.55,0.57,0.57,0.86,0.57,0.46,0.4,0.41,0.55,0.51,0.4,0.46,0.55,0.86,0.29" y="42.0" x="213.3,217.9,223.0,226.1,232.7,239.9,246.5,251.1,255.7,258.8,263.2,267.8,270.3,272.9,276.0,282.9,285.4,288.0,291.1,295.9,301.1,308.5,313.9,318.0,321.6,325.2,328.3,332.9,336.5,340.6,343.7,351.3" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">on VOC12 val. All numbers are %.</text>
+   <text svgx:width="0.61" y="55.8" x="52.3" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:7.8px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">L</text>
   </g>
   <g>
-   <rect x="144.1" y="53.5" width="103.19000000000003" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; R-CNN[16] R-CNN-MCG; null</title>
+   <rect x="65.6" y="151.7" width="61.96800000000002" height="7.800000000000011" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.8; Improvement in AP; null</title>
    </rect>
-   <text svgx:width="0.76,0.34,0.74,0.77,0.77,0.29,0.51,0.51,0.29,0.55,0.76,0.34,0.74,0.77,0.77,0.34,0.94,0.74,0.81" y="62.5" x="144.1,150.9,153.9,160.6,167.5,174.4,177.0,181.6,186.2,188.8,191.5,198.3,201.4,208.0,215.0,221.9,224.9,233.4,240.0" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">R-CNN[16] R-CNN-MCG</text>
+   <text svgx:width="0.33,0.78,0.5,0.33,0.5,0.5,0.44,0.78,0.44,0.5,0.28,0.25,0.28,0.5,0.25,0.72,0.56" y="159.5" x="65.6,68.2,74.3,78.2,80.8,84.7,88.6,92.0,98.1,101.5,105.4,107.6,109.6,111.7,115.6,117.6,123.2" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:7.8px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Improvement in AP</text>
   </g>
   <g>
-   <rect x="257.1" y="53.5" width="57.049999999999955" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; A B C; null</title>
+   <rect x="126.9" y="149.4" width="2.0459999999999923" height="6.199999999999989" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.2; r; null</title>
    </rect>
-   <text svgx:width="0.89,0.55,0.84,0.55,0.85" y="62.5" x="257.1,265.0,283.3,290.9,306.5" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">A B C</text>
+   <text svgx:width="0.33" y="155.6" x="126.9" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.2px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
   </g>
   <g>
-   <rect x="92.3" y="65.1" width="38.500000000000014" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; Mean AP; null</title>
+   <rect x="128.9" y="151.7" width="61.873999999999995" height="7.800000000000011" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.8; (percentage points); null</title>
    </rect>
-   <text svgx:width="0.94,0.46,0.51,0.57,0.55,0.77,0.7" y="74.1" x="92.3,100.7,104.8,109.4,114.5,117.6,124.5" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Mean AP</text>
+   <text svgx:width="0.25,0.33,0.5,0.44,0.33,0.44,0.44,0.5,0.28,0.44,0.5,0.44,0.25,0.5,0.5,0.28,0.5,0.28,0.39,0.33" y="159.5" x="128.9,130.8,133.4,137.3,140.8,143.4,146.8,150.3,154.2,156.4,159.8,163.7,167.2,169.1,173.0,176.9,179.1,183.0,185.1,188.2" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:7.8px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx"> (percentage points)</text>
   </g>
   <g>
-   <rect x="130.8" y="64.3" width="3.3000000000000114" height="6.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>6.0; b; null</title>
+   <rect x="224.3" y="144.9" width="11.050000000000011" height="6.099999999999994" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.1; −0.4; null</title>
    </rect>
-   <text svgx:width="0.55" y="70.3" x="130.8" style="fill:rgb(0,0,0);font-family:CMMI6;font-size:6.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">b</text>
+   <text svgx:width="0.56,0.5,0.25,0.5" y="151.0" x="224.3,227.8,230.8,232.3" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.1px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−0.4</text>
   </g>
   <g>
-   <rect x="158.2" y="65.1" width="108.19" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; 51.0 51.7 51.9; null</title>
+   <rect x="255.8" y="144.9" width="11.050000000000011" height="6.099999999999994" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.1; −0.2; null</title>
    </rect>
-   <text svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" y="74.1" x="158.2,162.8,167.4,170.0,174.6,211.2,215.8,220.4,223.0,227.6,250.1,254.7,259.3,261.8" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">51.0 51.7 51.9</text>
+   <text svgx:width="0.56,0.5,0.25,0.5" y="151.0" x="255.8,259.3,262.3,263.8" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.1px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−0.2</text>
   </g>
   <g>
-   <rect x="274.9" y="65.1" width="18.810000000000002" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; 53.9; null</title>
+   <rect x="293.0" y="144.9" width="3.0500000000000114" height="6.099999999999994" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.1; 0; null</title>
    </rect>
-   <text svgx:width="0.59,0.59,0.33,0.59" y="74.1" x="274.9,280.2,285.5,288.4" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">53.9</text>
+   <text svgx:width="0.5" y="151.0" x="293.0" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.1px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">0</text>
   </g>
   <g>
-   <rect x="302.1" y="65.1" width="16.38999999999993" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; 53.0; null</title>
+   <rect x="322.2" y="144.9" width="7.550000000000011" height="6.099999999999994" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.1; 0.2; null</title>
    </rect>
-   <text svgx:width="0.51,0.51,0.29,0.51" y="74.1" x="302.1,306.8,311.4,313.9" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">53.0</text>
+   <text svgx:width="0.5,0.25,0.5" y="151.0" x="322.2,325.2,326.7" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.1px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">0.2</text>
   </g>
   <g>
-   <rect x="92.3" y="76.4" width="38.500000000000014" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; Mean AP; null</title>
+   <rect x="353.7" y="144.9" width="7.550000000000011" height="6.099999999999994" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.1; 0.4; null</title>
    </rect>
-   <text svgx:width="0.94,0.46,0.51,0.57,0.55,0.77,0.7" y="85.4" x="92.3,100.7,104.8,109.4,114.5,117.6,124.5" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Mean AP</text>
+   <text svgx:width="0.5,0.25,0.5" y="151.0" x="353.7,356.7,358.2" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.1px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">0.4</text>
   </g>
   <g>
-   <rect x="130.8" y="75.5" width="3.3000000000000114" height="6.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>6.0; b; null</title>
+   <rect x="207.0" y="44.0" width="23.683999999999997" height="6.100000000000001" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.1; aeroplane; null</title>
    </rect>
-   <text svgx:width="0.55" y="81.5" x="130.8" style="fill:rgb(0,0,0);font-family:CMMI6;font-size:6.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">b</text>
+   <text svgx:width="0.44,0.44,0.33,0.5,0.5,0.28,0.44,0.5,0.44" y="50.1" x="207.0,209.7,212.4,214.5,217.5,220.5,222.2,224.9,228.0" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.1px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">aeroplane</text>
   </g>
   <g>
-   <rect x="130.8" y="81.2" width="10.0" height="6.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>6.0; vol; null</title>
+   <rect x="213.2" y="48.9" width="17.584000000000003" height="6.100000000000001" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.1; bicycle; null</title>
    </rect>
-   <text svgx:width="0.63,0.61,0.4" y="87.2" x="130.8,134.7,138.4" style="fill:rgb(0,0,0);font-family:CMMI6;font-size:6.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">vol</text>
+   <text svgx:width="0.5,0.28,0.44,0.5,0.44,0.28,0.44" y="55.0" x="213.2,216.2,217.9,220.6,223.7,226.4,228.1" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.1px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">bicycle</text>
   </g>
   <g>
-   <rect x="158.2" y="76.4" width="108.19" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; 41.9 42.4 43.2; null</title>
+   <rect x="220.9" y="53.699999999999996" width="9.75" height="6.100000000000001" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.1; bird; null</title>
    </rect>
-   <text svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" y="85.4" x="158.2,162.8,167.4,170.0,174.6,211.2,215.8,220.4,223.0,227.6,250.1,254.7,259.3,261.8" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">41.9 42.4 43.2</text>
+   <text svgx:width="0.5,0.28,0.33,0.5" y="59.8" x="220.9,223.9,225.6,227.6" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.1px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">bird</text>
   </g>
   <g>
-   <rect x="274.9" y="76.4" width="18.810000000000002" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; 44.6; null</title>
+   <rect x="220.2" y="58.49999999999999" width="10.50800000000001" height="6.100000000000001" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.1; boat; null</title>
    </rect>
-   <text svgx:width="0.59,0.59,0.33,0.59" y="85.4" x="274.9,280.2,285.5,288.4" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">44.6</text>
+   <text svgx:width="0.5,0.5,0.44,0.28" y="64.6" x="220.2,223.2,226.3,229.0" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.1px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">boat</text>
   </g>
   <g>
-   <rect x="302.1" y="76.4" width="16.38999999999993" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; 44.2; null</title>
+   <rect x="216.8" y="63.4" width="13.883999999999986" height="6.100000000000001" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.1; bottle; null</title>
    </rect>
-   <text svgx:width="0.51,0.51,0.29,0.51" y="85.4" x="302.1,306.8,311.4,313.9" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">44.2</text>
+   <text svgx:width="0.5,0.5,0.28,0.28,0.28,0.44" y="69.5" x="216.8,219.9,222.9,224.6,226.3,228.0" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.1px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">bottle</text>
   </g>
   <g>
-   <rect x="34.0" y="111.3" width="123.69999999999999" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; 4.4 Results on pixel IU; null</title>
+   <rect x="222.3" y="68.2" width="8.478999999999985" height="6.099999999999994" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.1; bus; null</title>
    </rect>
-   <text svgx:width="0.57,0.32,0.57,0.55,0.86,0.53,0.45,0.64,0.32,0.45,0.45,0.55,0.57,0.64,0.55,0.64,0.32,0.61,0.53,0.32,0.55,0.44,0.88" y="121.3" x="34.0,39.7,42.9,48.6,60.1,68.7,74.0,78.5,84.8,88.0,92.5,97.0,100.8,106.5,112.9,116.7,123.1,126.3,132.3,137.6,140.8,144.6,148.9" style="fill:rgb(0,0,0);font-family:CMBX10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">4.4 Results on pixel IU</text>
+   <text svgx:width="0.5,0.5,0.39" y="74.3" x="222.3,225.4,228.4" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.1px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">bus</text>
   </g>
   <g>
-   <rect x="34.0" y="131.2" width="345.8" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; For the semantic segmentation task, we convert the output of our ﬁnal system; null</title>
+   <rect x="223.2" y="73.10000000000001" width="7.413000000000011" height="6.099999999999994" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.1; car; null</title>
    </rect>
-   <text svgx:width="0.65,0.5,0.39,0.55,0.39,0.56,0.44,0.55,0.39,0.44,0.83,0.5,0.56,0.39,0.28,0.44,0.55,0.39,0.44,0.5,0.83,0.44,0.56,0.39,0.5,0.39,0.28,0.5,0.56,0.55,0.39,0.5,0.39,0.53,0.28,0.55,0.72,0.44,0.55,0.44,0.5,0.56,0.53,0.44,0.39,0.39,0.55,0.39,0.56,0.44,0.55,0.5,0.56,0.39,0.56,0.56,0.39,0.55,0.5,0.31,0.55,0.5,0.56,0.39,0.55,0.56,0.56,0.5,0.28,0.55,0.39,0.53,0.39,0.39,0.44,0.83" y="141.2" x="34.0,39.7,44.7,48.6,52.2,56.1,61.6,66.0,69.7,73.7,78.1,86.4,91.4,96.6,100.5,103.3,107.7,111.4,115.3,119.7,124.7,133.0,137.4,142.7,146.6,151.5,155.4,158.2,163.2,168.7,172.4,176.2,181.2,185.2,190.4,193.2,196.8,203.8,208.1,211.9,216.3,221.3,226.5,231.5,235.9,239.8,243.7,247.4,251.2,256.8,261.2,264.9,269.8,275.4,279.3,284.8,290.3,294.2,297.9,302.9,305.9,309.6,314.5,320.1,324.0,327.6,333.2,338.7,343.7,346.5,350.1,354.1,359.3,363.2,367.1,371.5" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">For the semantic segmentation task, we convert the output of our ﬁnal system</text>
+   <text svgx:width="0.44,0.44,0.33" y="79.2" x="223.2,225.9,228.6" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.1px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">car</text>
   </g>
   <g>
-   <rect x="34.0" y="143.2" width="3.8999999999999986" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; (; null</title>
+   <rect x="223.6" y="77.9" width="7.108000000000004" height="6.099999999999994" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.1; cat; null</title>
    </rect>
-   <text svgx:width="0.39" y="153.2" x="34.0" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">(</text>
+   <text svgx:width="0.44,0.44,0.28" y="84.0" x="223.6,226.3,229.0" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.1px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">cat</text>
   </g>
   <g>
-   <rect x="37.9" y="143.2" width="8.299999999999997" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; C; null</title>
+   <rect x="218.5" y="82.7" width="12.113" height="6.099999999999994" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.1; chair; null</title>
    </rect>
-   <text svgx:width="0.83" y="153.2" x="37.9" style="fill:rgb(0,0,0);font-family:CMBX10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">C</text>
+   <text svgx:width="0.44,0.5,0.44,0.28,0.33" y="88.8" x="218.5,221.2,224.3,227.0,228.6" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.1px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">chair</text>
   </g>
   <g>
-   <rect x="46.2" y="143.2" width="333.59999999999997" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; +ref) into a pixel-level category labeling using the simple pasting scheme; null</title>
+   <rect x="220.7" y="87.60000000000001" width="10.092000000000013" height="6.099999999999994" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.1; cow; null</title>
    </rect>
-   <text svgx:width="0.78,0.39,0.44,0.31,0.39,0.55,0.28,0.56,0.39,0.5,0.55,0.5,0.55,0.56,0.28,0.53,0.44,0.28,0.33,0.28,0.44,0.53,0.44,0.28,0.55,0.44,0.5,0.39,0.44,0.5,0.5,0.39,0.53,0.55,0.28,0.5,0.56,0.44,0.28,0.28,0.56,0.5,0.55,0.56,0.39,0.28,0.56,0.5,0.55,0.39,0.56,0.44,0.55,0.39,0.28,0.83,0.56,0.28,0.44,0.55,0.56,0.5,0.39,0.39,0.28,0.56,0.5,0.55,0.39,0.44,0.56,0.44,0.83,0.44" y="153.2" x="46.2,53.9,57.8,62.2,66.1,69.9,74.6,77.4,82.7,86.5,91.5,96.2,101.2,105.9,111.4,114.2,119.5,123.9,126.7,130.0,132.8,137.2,142.2,146.6,149.4,154.1,158.5,163.5,167.3,171.8,176.7,181.7,185.6,190.9,195.6,198.4,203.3,209.2,213.6,216.4,219.1,224.7,229.6,234.3,239.9,243.8,246.6,252.1,257.1,261.8,265.7,271.2,275.6,280.3,284.3,287.0,295.3,300.9,303.6,308.0,312.8,318.3,323.3,327.2,331.1,333.8,339.4,344.4,349.1,353.0,357.2,362.7,367.1,375.4" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">+ref) into a pixel-level category labeling using the simple pasting scheme</text>
+   <text svgx:width="0.44,0.5,0.72" y="93.7" x="220.7,223.4,226.4" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.1px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">cow</text>
   </g>
   <g>
-   <rect x="34.0" y="155.1" width="93.8" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; proposed by Carreira; null</title>
+   <rect x="203.3" y="92.4" width="27.283999999999992" height="6.099999999999994" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.1; diningtable; null</title>
    </rect>
-   <text svgx:width="0.56,0.39,0.5,0.56,0.5,0.39,0.44,0.56,0.55,0.56,0.53,0.55,0.72,0.5,0.39,0.39,0.44,0.28,0.39,0.5" y="165.1" x="34.0,39.6,43.5,48.4,54.2,59.2,63.2,67.6,73.2,77.2,82.4,87.7,91.7,98.9,103.9,107.8,111.7,116.1,118.9,122.8" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">proposed by Carreira</text>
+   <text svgx:width="0.5,0.28,0.5,0.28,0.5,0.5,0.28,0.44,0.5,0.28,0.44" y="98.5" x="203.3,206.3,208.0,211.1,212.7,215.8,218.8,220.5,223.2,226.3,227.9" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.1px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">diningtable</text>
   </g>
   <g>
-   <rect x="131.8" y="155.1" width="19.799999999999983" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; et al; null</title>
+   <rect x="221.5" y="97.2" width="9.150000000000006" height="6.099999999999994" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.1; dog; null</title>
    </rect>
-   <text svgx:width="0.46,0.33,0.55,0.51,0.26" y="165.1" x="131.8,136.4,139.7,143.9,149.0" style="fill:rgb(0,0,0);font-family:CMTI10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">et al</text>
+   <text svgx:width="0.5,0.5,0.5" y="103.3" x="221.5,224.6,227.6" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.1px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">dog</text>
   </g>
   <g>
-   <rect x="151.6" y="155.1" width="228.19999999999996" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; . [5]. We cross validate the hyperparameters of this; null</title>
+   <rect x="217.5" y="102.10000000000001" width="13.183999999999997" height="6.099999999999994" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.1; horse; null</title>
    </rect>
-   <text svgx:width="0.28,0.55,0.28,0.5,0.28,0.28,0.55,1.03,0.44,0.55,0.44,0.39,0.5,0.39,0.39,0.55,0.53,0.5,0.28,0.28,0.56,0.5,0.39,0.44,0.55,0.39,0.56,0.44,0.55,0.56,0.53,0.56,0.44,0.39,0.56,0.5,0.39,0.5,0.83,0.44,0.39,0.44,0.39,0.39,0.55,0.5,0.31,0.55,0.39,0.56,0.28,0.39" y="165.1" x="151.6,154.3,158.4,161.1,166.1,168.9,171.7,175.7,185.1,189.5,193.6,198.0,201.9,206.9,210.8,214.7,218.8,223.5,228.5,231.2,234.0,239.5,244.5,248.4,252.8,256.8,260.7,266.2,270.6,274.7,280.0,285.2,291.0,295.5,299.4,304.9,309.9,313.8,318.8,327.1,331.5,335.4,339.8,343.7,347.6,351.7,356.7,359.7,363.7,367.6,373.1,375.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">. [5]. We cross validate the hyperparameters of this</text>
+   <text svgx:width="0.5,0.5,0.33,0.39,0.44" y="108.2" x="217.5,220.5,223.6,225.6,228.0" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.1px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">horse</text>
   </g>
   <g>
-   <rect x="34.0" y="167.1" width="345.79999999999995" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; pasting step on the VOC11 segmentation Val set. The results are in Table 5. We; null</title>
+   <rect x="205.7" y="106.9" width="24.98400000000001" height="6.099999999999994" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.1; motorbike; null</title>
    </rect>
-   <text svgx:width="0.56,0.5,0.39,0.39,0.28,0.56,0.5,0.55,0.39,0.39,0.44,0.56,0.55,0.5,0.56,0.55,0.39,0.56,0.44,0.55,0.75,0.78,0.72,0.5,0.5,0.55,0.39,0.44,0.5,0.83,0.44,0.56,0.39,0.5,0.39,0.28,0.5,0.56,0.55,0.75,0.5,0.28,0.55,0.39,0.44,0.39,0.28,0.55,0.72,0.56,0.44,0.55,0.39,0.44,0.39,0.56,0.28,0.39,0.39,0.55,0.5,0.39,0.44,0.55,0.28,0.56,0.55,0.72,0.5,0.56,0.28,0.44,0.55,0.5,0.28,0.55,1.03,0.44" y="177.1" x="34.0,39.6,44.5,48.5,52.3,55.1,60.6,65.6,68.5,72.4,76.3,80.7,86.3,89.2,94.1,99.7,102.6,106.4,112.0,116.4,119.3,126.5,134.2,141.4,146.4,151.4,154.3,158.2,162.7,167.6,175.9,180.4,185.6,189.5,194.5,198.3,201.1,206.1,211.7,214.5,221.2,226.1,228.9,231.8,235.7,240.2,244.0,246.8,249.7,256.9,262.4,266.8,269.8,273.7,278.1,282.0,287.5,290.3,294.2,298.1,301.0,306.0,309.9,314.3,317.2,320.0,325.5,328.4,334.8,339.7,345.3,348.0,352.4,355.4,360.3,363.1,366.0,375.4" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">pasting step on the VOC11 segmentation Val set. The results are in Table 5. We</text>
+   <text svgx:width="0.78,0.5,0.28,0.5,0.33,0.5,0.28,0.5,0.44" y="113.0" x="205.7,210.4,213.5,215.2,218.2,220.2,223.3,225.0,228.0" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.1px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">motorbike</text>
   </g>
   <g>
-   <rect x="34.0" y="179.0" width="60.89999999999999" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; compare to O; null</title>
+   <rect x="214.5" y="111.80000000000001" width="16.150000000000006" height="6.099999999999994" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.1; person; null</title>
    </rect>
-   <text svgx:width="0.44,0.5,0.83,0.56,0.5,0.39,0.44,0.55,0.39,0.5,0.55,0.78" y="189.0" x="34.0,38.4,43.4,51.7,57.3,62.2,66.1,70.5,74.4,78.3,83.3,87.1" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">compare to O</text>
+   <text svgx:width="0.5,0.44,0.33,0.39,0.5,0.5" y="117.9" x="214.5,217.5,220.2,222.2,224.6,227.6" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.1px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">person</text>
   </g>
   <g>
-   <rect x="94.9" y="183.5" width="3.989999999999995" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>7.0; 2; null</title>
+   <rect x="203.3" y="116.60000000000001" width="27.407999999999987" height="6.099999999999994" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.1; pottedplant; null</title>
    </rect>
-   <text svgx:width="0.57" y="190.5" x="94.9" style="fill:rgb(0,0,0);font-family:CMR7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">2</text>
+   <text svgx:width="0.5,0.5,0.28,0.28,0.44,0.5,0.5,0.28,0.44,0.5,0.28" y="122.7" x="203.3,206.3,209.4,211.1,212.7,215.4,218.5,221.5,223.2,225.9,229.0" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.1px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">pottedplant</text>
   </g>
   <g>
-   <rect x="99.3" y="179.0" width="280.49999999999994" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; P [5] and R-CNN which are the current state-of-the-art on this; null</title>
+   <rect x="216.8" y="121.5" width="13.849999999999994" height="6.099999999999994" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.1; sheep; null</title>
    </rect>
-   <text svgx:width="0.68,0.55,0.28,0.5,0.28,0.55,0.5,0.56,0.56,0.55,0.74,0.33,0.72,0.75,0.75,0.55,0.72,0.56,0.28,0.44,0.56,0.55,0.5,0.39,0.44,0.55,0.39,0.56,0.44,0.55,0.44,0.56,0.39,0.39,0.44,0.56,0.39,0.55,0.39,0.39,0.5,0.39,0.44,0.33,0.5,0.31,0.33,0.39,0.56,0.44,0.33,0.5,0.39,0.39,0.55,0.5,0.56,0.55,0.39,0.56,0.28,0.39" y="189.0" x="99.3,106.1,110.0,112.7,117.7,120.5,124.3,129.3,134.8,140.4,144.2,151.5,154.9,162.1,169.5,177.0,180.8,188.0,193.6,196.3,200.5,206.1,209.9,214.8,218.7,223.1,227.0,230.9,236.4,240.8,244.7,249.1,254.7,258.6,262.5,266.9,272.2,276.0,279.9,283.8,287.7,292.6,296.5,300.9,304.3,309.3,312.3,315.6,319.5,325.0,329.5,332.8,337.8,341.7,345.5,349.4,354.4,359.9,363.7,367.6,373.1,375.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">P [5] and R-CNN which are the current state-of-the-art on this</text>
+   <text svgx:width="0.39,0.5,0.44,0.44,0.5" y="127.6" x="216.8,219.2,222.2,224.9,227.6" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.1px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">sheep</text>
   </g>
   <g>
-   <rect x="34.0" y="191.0" width="317.40000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; task. We advance the state-of-the-art by about 5 points, or 10% relative.; null</title>
+   <rect x="220.6" y="126.30000000000001" width="10.084000000000003" height="6.099999999999994" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.1; sofa; null</title>
    </rect>
-   <text svgx:width="0.39,0.5,0.39,0.53,0.28,0.55,1.03,0.44,0.55,0.5,0.56,0.53,0.5,0.56,0.44,0.44,0.55,0.39,0.56,0.44,0.55,0.39,0.39,0.5,0.39,0.44,0.33,0.5,0.31,0.33,0.39,0.56,0.44,0.33,0.5,0.39,0.39,0.55,0.56,0.53,0.55,0.5,0.56,0.5,0.56,0.39,0.55,0.5,0.55,0.56,0.5,0.28,0.56,0.39,0.39,0.28,0.55,0.5,0.39,0.55,0.5,0.5,0.83,0.55,0.39,0.44,0.28,0.5,0.39,0.28,0.53,0.44,0.28" y="201.0" x="34.0,37.9,42.9,46.8,52.1,54.8,58.1,67.6,71.9,75.3,80.3,85.8,90.5,95.5,101.0,105.5,109.9,113.2,117.1,122.6,127.0,130.4,134.3,138.2,143.2,147.0,151.5,154.8,159.8,162.8,166.1,170.0,175.5,180.0,183.3,188.3,192.2,196.1,199.4,204.6,209.9,213.2,218.2,224.0,229.0,234.5,238.4,241.7,246.7,250.0,255.8,260.8,263.6,268.8,272.7,276.6,279.4,282.7,287.7,291.6,294.9,299.9,304.9,313.2,316.5,320.4,324.8,327.6,332.6,336.5,339.2,344.2,348.6" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">task. We advance the state-of-the-art by about 5 points, or 10% relative.</text>
+   <text svgx:width="0.39,0.5,0.33,0.44" y="132.4" x="220.6,223.0,226.0,228.0" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.1px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">sofa</text>
   </g>
   <g>
-   <rect x="49.0" y="202.9" width="330.8" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; To conclude, our pipeline achieves good results on the SDS task while im-; null</title>
+   <rect x="219.5" y="131.1" width="11.150000000000006" height="6.099999999999994" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.1; train; null</title>
    </rect>
-   <text svgx:width="0.72,0.5,0.55,0.44,0.5,0.56,0.44,0.28,0.56,0.56,0.44,0.28,0.55,0.5,0.56,0.39,0.55,0.56,0.28,0.56,0.44,0.28,0.28,0.56,0.44,0.55,0.5,0.44,0.56,0.28,0.44,0.53,0.44,0.39,0.55,0.5,0.5,0.5,0.56,0.55,0.39,0.44,0.39,0.56,0.28,0.39,0.39,0.55,0.5,0.56,0.55,0.39,0.56,0.44,0.55,0.56,0.76,0.56,0.55,0.39,0.5,0.39,0.53,0.55,0.72,0.56,0.28,0.28,0.44,0.55,0.28,0.83,0.33" y="212.9" x="49.0,55.3,60.3,64.3,68.7,73.7,79.2,83.7,86.4,92.0,97.5,101.9,104.7,108.7,113.7,119.2,123.1,127.1,132.6,135.4,141.2,145.7,148.4,151.2,156.7,161.1,165.1,170.1,174.3,179.8,182.6,187.0,192.0,196.4,200.3,204.3,209.3,214.6,219.8,225.4,229.4,233.3,237.7,241.6,247.2,249.9,253.8,257.7,261.7,266.7,272.3,276.2,280.1,285.6,290.0,294.1,299.6,307.2,312.8,316.7,320.6,325.6,329.5,334.8,338.8,346.0,351.5,354.3,357.0,361.4,365.5,368.2,376.5" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">To conclude, our pipeline achieves good results on the SDS task while im-</text>
+   <text svgx:width="0.28,0.33,0.44,0.28,0.5" y="137.2" x="219.5,221.2,223.2,225.9,227.6" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.1px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">train</text>
   </g>
   <g>
-   <rect x="34.0" y="214.9" width="345.9" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; proving state-of-the-art in object detection and semantic segmentation. Figure 7; null</title>
+   <rect x="206.7" y="136.0" width="23.91300000000001" height="6.099999999999994" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.1; tvmonitor; null</title>
    </rect>
-   <text svgx:width="0.56,0.39,0.5,0.53,0.28,0.56,0.5,0.55,0.39,0.39,0.5,0.39,0.44,0.33,0.5,0.31,0.33,0.39,0.56,0.44,0.33,0.5,0.39,0.39,0.55,0.28,0.56,0.55,0.5,0.56,0.31,0.44,0.44,0.39,0.55,0.56,0.44,0.39,0.44,0.44,0.39,0.28,0.5,0.56,0.55,0.5,0.56,0.56,0.55,0.39,0.44,0.83,0.5,0.56,0.39,0.28,0.44,0.55,0.39,0.44,0.5,0.83,0.44,0.56,0.39,0.5,0.39,0.28,0.5,0.56,0.28,0.55,0.65,0.28,0.5,0.56,0.39,0.44,0.55,0.5" y="224.9" x="34.0,39.6,43.5,48.2,53.4,56.2,61.7,66.7,69.5,73.4,77.3,82.3,86.2,90.6,93.9,98.9,101.9,105.3,109.1,114.7,119.1,122.4,127.4,131.3,135.2,138.0,140.7,146.3,149.1,154.1,160.2,163.2,167.6,172.1,175.9,178.7,184.3,188.7,192.6,197.0,201.4,205.3,208.1,213.1,218.6,221.4,226.4,231.9,237.5,240.2,244.2,248.6,256.9,261.9,267.2,271.0,273.8,278.2,281.0,285.0,289.4,294.4,302.7,307.1,312.4,316.2,321.2,325.1,327.9,332.8,338.4,341.2,343.9,350.4,353.2,358.2,363.7,367.6,372.0,374.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">proving state-of-the-art in object detection and semantic segmentation. Figure 7</text>
+   <text svgx:width="0.28,0.5,0.78,0.5,0.5,0.28,0.28,0.5,0.33" y="142.1" x="206.7,208.4,211.4,216.1,219.2,222.2,223.9,225.6,228.6" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:6.1px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">tvmonitor</text>
   </g>
   <g>
-   <rect x="34.0" y="226.9" width="194.4" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; shows examples of the output of our system.; null</title>
+   <rect x="277.8" y="152.39999999999998" width="9.388000000000034" height="7.300000000000011" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.3; AP; null</title>
    </rect>
-   <text svgx:width="0.39,0.56,0.5,0.72,0.39,0.55,0.44,0.53,0.5,0.83,0.56,0.28,0.44,0.39,0.55,0.5,0.31,0.55,0.39,0.56,0.44,0.55,0.5,0.56,0.39,0.56,0.56,0.39,0.55,0.5,0.31,0.55,0.5,0.56,0.39,0.55,0.39,0.53,0.39,0.39,0.44,0.83,0.28" y="236.9" x="34.0,37.9,43.5,48.2,55.4,59.3,62.6,67.1,72.3,77.3,85.6,91.1,93.9,98.3,102.2,105.6,110.6,113.6,116.9,120.8,126.3,130.7,134.1,139.1,144.6,148.5,154.0,159.6,163.4,166.7,171.7,174.8,178.1,183.1,188.6,192.5,195.8,199.8,205.0,208.9,212.8,217.3,225.6" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">shows examples of the output of our system.</text>
+   <text svgx:width="0.72,0.56" y="159.7" x="277.8,283.1" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:7.3px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">AP</text>
   </g>
   <g>
-   <rect x="105.6" y="259.2" width="37.170000000000016" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; Table 5.; null</title>
+   <rect x="287.2" y="150.2" width="5.699999999999989" height="5.800000000000011" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>5.8; pp; null</title>
    </rect>
-   <text svgx:width="0.82,0.58,0.66,0.33,0.54,0.55,0.59,0.33" y="268.2" x="105.6,112.1,117.2,123.1,126.1,130.9,134.5,139.8" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Table 5.</text>
+   <text svgx:width="0.5,0.5" y="156.0" x="287.2,290.0" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:5.8px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">pp</text>
   </g>
   <g>
-   <rect x="145.8" y="259.2" width="162.51" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; Results on Pixel IU. All numbers are %.; null</title>
+   <rect x="292.9" y="152.39999999999998" width="13.488000000000056" height="7.300000000000011" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.3; −AP; null</title>
    </rect>
-   <text svgx:width="0.76,0.46,0.41,0.57,0.29,0.4,0.41,0.55,0.51,0.57,0.55,0.7,0.29,0.54,0.46,0.29,0.55,0.37,0.77,0.29,0.55,0.77,0.29,0.29,0.55,0.57,0.57,0.86,0.57,0.46,0.4,0.41,0.55,0.51,0.4,0.46,0.55,0.86,0.29" y="268.2" x="145.8,152.6,156.7,160.3,165.4,168.0,171.6,175.3,178.3,182.9,188.0,191.1,197.4,199.9,204.8,208.9,211.5,214.5,217.8,224.7,227.3,230.4,237.3,239.8,242.4,245.5,250.3,255.5,262.9,268.3,272.4,276.0,279.6,282.7,287.3,290.9,295.0,298.0,305.7" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Results on Pixel IU. All numbers are %.</text>
+   <text svgx:width="0.56,0.72,0.56" y="159.7" x="292.9,297.0,302.3" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:7.3px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">−AP</text>
   </g>
   <g>
-   <rect x="214.9" y="278.3" width="7.199999999999989" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; O; null</title>
+   <rect x="306.4" y="150.2" width="4.814000000000021" height="5.800000000000011" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>5.8; pr; null</title>
    </rect>
-   <text svgx:width="0.8" y="287.3" x="214.9" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">O</text>
+   <text svgx:width="0.5,0.33" y="156.0" x="306.4,309.3" style="fill:rgb(0,0,0);font-family:Times-Roman;font-size:5.8px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">pr</text>
   </g>
   <g>
-   <rect x="222.1" y="282.3" width="3.6599999999999966" height="6.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>6.0; 2; null</title>
+   <rect x="34.0" y="173.2" width="27.97" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>9.0; Fig. 6.; null</title>
    </rect>
-   <text svgx:width="0.61" y="288.3" x="222.1" style="fill:rgb(0,0,0);font-family:CMR6;font-size:6.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">2</text>
+   <text svgx:width="0.74,0.33,0.59,0.33,0.55,0.59,0.33" y="182.2" x="34.0,40.7,43.6,48.9,51.9,53.7,59.0" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Fig. 6.</text>
   </g>
   <g>
-   <rect x="226.3" y="278.3" width="69.61000000000001" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; P [5] R-CNN [16]; null</title>
+   <rect x="65.5" y="173.2" width="252.90000000000003" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>9.0; Left: Impact of the three kinds of false positives on mean AP; null</title>
    </rect>
-   <text svgx:width="0.7,0.55,0.29,0.51,0.29,0.55,0.76,0.34,0.74,0.77,0.77,0.55,0.29,0.51,0.51,0.29" y="287.3" x="226.3,232.5,235.6,238.2,242.8,245.4,248.1,254.9,258.0,264.6,271.5,278.4,281.5,284.1,288.7,293.3" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">P [5] R-CNN [16]</text>
+   <text svgx:width="0.64,0.46,0.31,0.4,0.29,0.55,0.37,0.86,0.57,0.51,0.46,0.4,0.55,0.51,0.31,0.55,0.4,0.57,0.46,0.55,0.4,0.57,0.4,0.46,0.46,0.55,0.54,0.29,0.57,0.57,0.41,0.55,0.51,0.31,0.55,0.31,0.51,0.29,0.41,0.46,0.55,0.57,0.51,0.41,0.29,0.4,0.29,0.54,0.46,0.41,0.55,0.51,0.57,0.55,0.86,0.46,0.51,0.57,0.55,0.77,0.7" y="182.2" x="65.5,71.2,75.3,78.2,81.7,84.3,87.9,91.2,98.9,104.0,108.6,112.7,116.3,119.9,124.5,127.3,130.9,134.5,139.6,143.7,147.3,150.9,156.0,159.6,163.7,167.8,171.4,176.3,178.8,183.9,189.0,192.7,196.3,200.9,203.7,207.3,210.1,214.7,217.3,220.9,225.0,228.6,234.0,238.6,242.2,244.8,248.3,250.9,255.5,259.6,263.3,266.8,271.4,276.5,280.1,287.8,291.9,296.5,301.6,305.2,312.1" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Left: Impact of the three kinds of false positives on mean AP</text>
   </g>
   <g>
-   <rect x="298.6" y="278.3" width="7.649999999999977" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; C; null</title>
+   <rect x="318.4" y="172.4" width="3.480000000000018" height="6.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.0; r; null</title>
    </rect>
-   <text svgx:width="0.85" y="287.3" x="298.6" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">C</text>
+   <text svgx:width="0.58" y="178.4" x="318.4" style="fill:rgb(0,0,0);font-family:CMMI6;font-size:6.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
   </g>
   <g>
-   <rect x="306.3" y="278.3" width="17.689999999999998" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+   <rect x="322.6" y="173.2" width="57.25999999999999" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>9.0; . L : mislocal-; null</title>
+   </rect>
+   <text svgx:width="0.29,0.55,0.64,0.55,0.29,0.55,0.86,0.29,0.41,0.29,0.51,0.46,0.51,0.29,0.34" y="182.2" x="322.6,325.2,328.7,334.5,338.1,340.7,344.2,351.9,354.5,358.1,360.6,365.5,369.6,374.2,376.8" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">. L : mislocal-</text>
+  </g>
+  <g>
+   <rect x="34.0" y="184.2" width="345.91" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>9.0; ization, B : detection on background, and S : misﬁrings on similar categories. Right:; null</title>
+   </rect>
+   <text svgx:width="0.29,0.46,0.51,0.4,0.29,0.51,0.57,0.29,0.55,0.73,0.55,0.29,0.55,0.57,0.46,0.4,0.46,0.46,0.4,0.29,0.51,0.57,0.55,0.51,0.57,0.55,0.57,0.51,0.46,0.54,0.51,0.4,0.51,0.57,0.57,0.57,0.29,0.55,0.51,0.57,0.57,0.55,0.57,0.55,0.29,0.55,0.86,0.29,0.41,0.57,0.4,0.29,0.57,0.51,0.41,0.55,0.51,0.57,0.55,0.41,0.29,0.86,0.29,0.29,0.51,0.4,0.55,0.46,0.51,0.4,0.46,0.51,0.51,0.4,0.29,0.46,0.41,0.29,0.55,0.76,0.29,0.51,0.57,0.4,0.29" y="193.2" x="34.0,36.6,40.7,45.3,48.9,51.4,56.0,61.2,63.8,67.3,73.8,77.4,80.0,83.5,88.6,92.7,96.3,100.4,104.5,108.1,110.6,115.2,120.3,123.9,128.5,133.6,137.2,142.3,146.9,150.8,155.6,160.2,163.8,168.4,173.6,178.7,183.8,186.4,189.9,194.5,199.6,204.8,208.3,213.4,217.0,219.6,223.1,230.8,233.4,237.0,242.1,245.7,248.3,253.4,258.0,261.7,265.2,269.8,274.9,278.5,282.1,284.7,292.4,294.9,297.5,302.1,305.7,309.3,313.4,318.0,321.5,325.6,330.3,334.9,338.5,341.0,345.1,348.8,351.4,354.9,361.7,364.2,368.8,373.7,377.3" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">ization, B : detection on background, and S : misﬁrings on similar categories. Right:</text>
+  </g>
+  <g>
+   <rect x="34.0" y="195.1" width="345.84" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>9.0; Disambiguating between two kinds of mislocalizations. Bars to the left mean that we; null</title>
+   </rect>
+   <text svgx:width="0.79,0.29,0.41,0.51,0.86,0.57,0.29,0.51,0.57,0.51,0.4,0.29,0.57,0.51,0.55,0.57,0.46,0.4,0.74,0.46,0.46,0.57,0.55,0.4,0.74,0.51,0.55,0.54,0.29,0.57,0.57,0.41,0.55,0.51,0.31,0.55,0.86,0.29,0.41,0.29,0.51,0.46,0.51,0.29,0.29,0.46,0.51,0.4,0.29,0.51,0.57,0.41,0.29,0.55,0.73,0.51,0.4,0.41,0.55,0.4,0.51,0.55,0.4,0.57,0.46,0.55,0.29,0.46,0.31,0.4,0.55,0.86,0.46,0.51,0.57,0.55,0.4,0.57,0.51,0.4,0.55,0.74,0.46" y="204.1" x="34.0,41.1,43.6,47.2,51.9,59.3,64.4,67.0,71.6,76.7,81.3,84.9,87.4,92.6,97.1,100.5,105.9,110.0,113.3,119.7,123.8,127.9,133.0,136.3,139.7,146.1,150.6,154.0,158.9,161.4,166.5,171.7,175.3,178.6,183.2,186.0,189.4,197.0,199.6,203.2,205.8,210.7,214.8,219.4,221.9,224.5,228.6,233.2,236.8,239.3,243.9,249.1,252.7,255.3,258.6,265.1,269.7,273.3,277.0,280.3,283.9,288.4,291.8,295.4,300.5,304.6,307.9,310.5,314.6,317.4,321.0,324.3,332.0,336.1,340.7,345.8,349.1,352.7,357.8,362.4,366.0,369.3,375.7" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Disambiguating between two kinds of mislocalizations. Bars to the left mean that we</text>
+  </g>
+  <g>
+   <rect x="34.0" y="206.1" width="345.91" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>9.0; frequently overshoot the ground truth, while bars to the right mean that we undershoot.; null</title>
+   </rect>
+   <text svgx:width="0.31,0.4,0.46,0.54,0.57,0.46,0.57,0.4,0.29,0.54,0.55,0.51,0.54,0.46,0.4,0.41,0.57,0.51,0.51,0.4,0.55,0.4,0.57,0.46,0.55,0.51,0.4,0.51,0.57,0.57,0.57,0.55,0.4,0.4,0.57,0.4,0.57,0.29,0.55,0.74,0.57,0.29,0.29,0.46,0.55,0.57,0.51,0.4,0.41,0.55,0.4,0.51,0.55,0.4,0.57,0.46,0.55,0.4,0.29,0.51,0.57,0.4,0.55,0.86,0.46,0.51,0.57,0.55,0.4,0.57,0.51,0.4,0.55,0.74,0.46,0.55,0.57,0.57,0.57,0.46,0.4,0.41,0.57,0.51,0.51,0.4,0.29" y="215.1" x="34.0,36.8,40.4,44.5,49.4,54.5,58.6,63.5,67.1,69.6,74.5,76.6,81.0,85.6,89.7,93.3,96.9,102.0,106.9,111.5,115.1,117.2,120.8,125.9,130.1,132.2,136.8,140.4,145.0,150.1,155.2,160.4,162.5,166.1,169.7,174.8,178.4,183.5,186.1,188.2,194.9,200.0,202.6,205.1,209.2,211.4,216.5,221.1,224.7,228.4,230.5,234.0,238.6,240.8,244.4,249.5,253.6,255.7,259.3,261.9,266.5,271.4,275.0,277.1,284.8,288.9,293.5,298.6,300.7,304.3,309.4,314.0,317.6,319.8,326.2,330.3,332.4,337.5,342.7,347.8,351.9,355.5,359.1,364.2,369.1,373.7,377.3" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">frequently overshoot the ground truth, while bars to the right mean that we undershoot.</text>
+  </g>
+  <g>
+   <rect x="34.0" y="217.0" width="2.6099999999999994" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>9.0; .; null</title>
+   </rect>
+   <text svgx:width="0.29" y="226.0" x="34.0" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">.</text>
+  </g>
+  <g>
+   <rect x="34.0" y="237.9" width="37.97" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>9.0; Table 3.; null</title>
+   </rect>
+   <text svgx:width="0.82,0.58,0.66,0.33,0.54,0.55,0.59,0.33" y="246.9" x="34.0,40.5,45.7,51.6,54.5,59.4,63.6,69.0" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Table 3.</text>
+  </g>
+  <g>
+   <rect x="75.6" y="237.9" width="102.29999999999998" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>9.0; Maximum achievable AP; null</title>
+   </rect>
+   <text svgx:width="0.94,0.51,0.54,0.29,0.86,0.57,0.86,0.55,0.51,0.46,0.57,0.29,0.46,0.54,0.51,0.57,0.29,0.46,0.55,0.77,0.7" y="246.9" x="75.6,84.0,88.7,93.5,96.1,103.5,108.6,116.3,120.0,124.6,128.4,133.6,136.1,140.2,144.6,149.2,154.3,156.9,161.0,164.7,171.6" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Maximum achievable AP</text>
+  </g>
+  <g>
+   <rect x="177.8" y="237.1" width="3.4799999999999898" height="6.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.0; r; null</title>
+   </rect>
+   <text svgx:width="0.58" y="243.1" x="177.8" style="fill:rgb(0,0,0);font-family:CMMI6;font-size:6.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+  </g>
+  <g>
+   <rect x="185.7" y="237.9" width="190.0" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>9.0; (assuming perfect localization) and loss in AP; null</title>
+   </rect>
+   <text svgx:width="0.4,0.51,0.41,0.41,0.57,0.86,0.29,0.57,0.51,0.55,0.57,0.46,0.4,0.31,0.46,0.46,0.4,0.55,0.29,0.51,0.46,0.51,0.29,0.29,0.46,0.51,0.4,0.29,0.51,0.57,0.4,0.55,0.51,0.57,0.57,0.55,0.29,0.51,0.41,0.41,0.55,0.29,0.57,0.55,0.77,0.7" y="246.9" x="185.7,189.3,193.9,197.5,201.2,206.3,214.0,216.5,221.6,226.2,230.0,235.3,239.4,243.0,245.8,249.9,254.0,257.6,261.3,263.9,268.8,272.9,277.5,280.0,282.6,286.7,291.3,294.9,297.4,302.0,307.1,310.7,314.4,319.0,324.2,329.3,333.0,335.5,340.2,343.8,347.5,351.1,353.7,358.8,362.5,369.4" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">(assuming perfect localization) and loss in AP</text>
+  </g>
+  <g>
+   <rect x="375.7" y="237.1" width="3.480000000000018" height="6.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>6.0; r; null</title>
+   </rect>
+   <text svgx:width="0.58" y="243.1" x="375.7" style="fill:rgb(0,0,0);font-family:CMMI6;font-size:6.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+  </g>
+  <g>
+   <rect x="34.0" y="248.89999999999998" width="152.11" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>9.0; due to mislocalization for all systems.; null</title>
+   </rect>
+   <text svgx:width="0.57,0.57,0.46,0.55,0.4,0.51,0.55,0.86,0.29,0.41,0.29,0.51,0.46,0.51,0.29,0.29,0.46,0.51,0.4,0.29,0.51,0.57,0.55,0.31,0.51,0.4,0.55,0.51,0.29,0.29,0.55,0.41,0.54,0.41,0.4,0.46,0.86,0.41,0.29" y="257.9" x="34.0,39.1,44.3,48.4,51.4,55.0,59.6,62.7,70.4,72.9,76.6,79.1,84.0,88.1,92.7,95.3,97.8,101.9,106.5,110.1,112.7,117.3,122.4,125.5,128.3,132.9,136.5,139.6,144.2,146.7,149.3,152.4,156.0,160.9,164.5,168.1,172.2,179.9,183.5" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">due to mislocalization for all systems.</text>
+  </g>
+  <g>
+   <rect x="218.4" y="269.3" width="78.05000000000004" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>9.0; A B C C; null</title>
+   </rect>
+   <text svgx:width="0.89,0.55,0.84,0.55,0.85,0.55,0.85" y="278.3" x="218.4,226.4,243.5,251.0,268.3,275.9,288.8" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">A B C C</text>
+  </g>
+  <g>
+   <rect x="296.5" y="269.3" width="17.689999999999998" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.0; +ref; null</title>
    </rect>
-   <text svgx:width="0.8,0.4,0.46,0.31" y="287.3" x="306.3,313.5,317.1,321.2" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">+ref</text>
+   <text svgx:width="0.8,0.4,0.46,0.31" y="278.3" x="296.5,303.7,307.3,311.4" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">+ref</text>
   </g>
   <g>
-   <rect x="83.7" y="289.7" width="128.5" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; Mean Pixel IU (VOC2011 Test); null</title>
+   <rect x="96.6" y="280.6" width="69.83000000000001" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>9.0; AP Upper bound; null</title>
    </rect>
-   <text svgx:width="0.94,0.46,0.51,0.57,0.55,0.7,0.29,0.54,0.46,0.29,0.55,0.37,0.77,0.55,0.4,0.77,0.8,0.74,0.51,0.51,0.51,0.51,0.55,0.74,0.46,0.41,0.4,0.4" y="298.7" x="83.7,92.2,96.3,100.9,106.0,109.1,115.3,117.9,122.8,126.9,129.5,132.5,135.8,142.7,145.8,149.4,156.0,163.2,169.9,174.5,179.1,183.7,188.3,191.4,197.3,201.4,205.0,208.6" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Mean Pixel IU (VOC2011 Test)</text>
+   <text svgx:width="0.77,0.7,0.55,0.77,0.57,0.57,0.46,0.4,0.55,0.57,0.51,0.57,0.57,0.57" y="289.6" x="96.6,103.5,109.8,112.8,119.8,124.9,130.3,134.4,137.9,141.0,146.4,151.0,156.1,161.3" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">AP Upper bound</text>
   </g>
   <g>
-   <rect x="221.9" y="289.7" width="58.29000000000005" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; 47.6 47.9; null</title>
+   <rect x="214.2" y="280.6" width="95.49000000000007" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>9.0; 63.0 65.0 65.4 65.5; null</title>
    </rect>
-   <text svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" y="298.7" x="221.9,226.6,231.2,233.7,238.3,263.8,268.4,273.0,275.6" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">47.6 47.9</text>
+   <text svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" y="289.6" x="214.2,218.8,223.4,226.0,230.5,239.1,243.7,248.3,250.8,255.4,264.0,268.6,273.2,275.7,280.3,293.3,297.9,302.5,305.1" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">63.0 65.0 65.4 65.5</text>
   </g>
   <g>
-   <rect x="301.9" y="289.7" width="18.810000000000002" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; 52.6; null</title>
+   <rect x="96.6" y="291.6" width="109.13" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>9.0; Loss due to mislocalization; null</title>
    </rect>
-   <text svgx:width="0.59,0.59,0.33,0.59" y="298.7" x="301.9,307.2,312.5,315.4" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">52.6</text>
+   <text svgx:width="0.64,0.51,0.41,0.41,0.55,0.57,0.57,0.46,0.55,0.4,0.51,0.55,0.86,0.29,0.41,0.29,0.51,0.46,0.51,0.29,0.29,0.46,0.51,0.4,0.29,0.51,0.57" y="300.6" x="96.6,102.4,107.0,110.6,114.3,117.3,122.4,127.5,131.7,134.7,138.3,142.9,146.0,153.7,156.2,159.9,162.4,167.3,171.4,176.0,178.5,181.1,185.2,189.8,193.4,195.9,200.6" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Loss due to mislocalization</text>
   </g>
   <g>
-   <rect x="83.7" y="300.6" width="128.5" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; Mean Pixel IU (VOC2012 Test); null</title>
+   <rect x="214.2" y="291.6" width="95.49000000000007" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>9.0; 20.1 18.0 17.7 15.8; null</title>
    </rect>
-   <text svgx:width="0.94,0.46,0.51,0.57,0.55,0.7,0.29,0.54,0.46,0.29,0.55,0.37,0.77,0.55,0.4,0.77,0.8,0.74,0.51,0.51,0.51,0.51,0.55,0.74,0.46,0.41,0.4,0.4" y="309.6" x="83.7,92.2,96.3,100.9,106.0,109.1,115.3,117.9,122.8,126.9,129.5,132.5,135.8,142.7,145.8,149.4,156.0,163.2,169.9,174.5,179.1,183.7,188.3,191.4,197.3,201.4,205.0,208.6" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Mean Pixel IU (VOC2012 Test)</text>
+   <text svgx:width="0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51,0.55,0.51,0.51,0.29,0.51" y="300.6" x="214.2,218.8,223.4,226.0,230.5,239.1,243.7,248.3,250.8,255.4,264.0,268.6,273.2,275.7,280.3,293.3,297.9,302.5,305.1" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">20.1 18.0 17.7 15.8</text>
   </g>
   <g>
-   <rect x="221.9" y="300.6" width="51.66" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; 47.8 -; null</title>
+   <rect x="34.0" y="328.7" width="249.7" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; performance on the individual tasks. To compare on AP; null</title>
    </rect>
-   <text svgx:width="0.51,0.51,0.29,0.51,0.55,0.34" y="309.6" x="221.9,226.6,231.2,233.7,238.3,270.5" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">47.8 -</text>
+   <text svgx:width="0.56,0.44,0.39,0.31,0.5,0.39,0.83,0.5,0.56,0.44,0.44,0.55,0.5,0.56,0.55,0.39,0.56,0.44,0.55,0.28,0.56,0.56,0.28,0.53,0.28,0.56,0.56,0.5,0.28,0.55,0.39,0.5,0.39,0.53,0.39,0.28,0.55,0.72,0.5,0.55,0.44,0.5,0.83,0.56,0.5,0.39,0.44,0.55,0.5,0.56,0.55,0.75,0.68" y="338.7" x="34.0,39.8,44.3,48.2,51.2,56.2,60.1,68.4,73.4,78.9,83.3,87.7,91.6,96.6,102.2,106.0,109.8,115.4,119.8,123.6,126.4,131.9,137.5,140.2,145.5,148.3,153.8,159.3,164.3,167.1,170.9,174.8,179.8,183.7,189.0,192.9,195.7,199.5,205.9,210.9,214.7,219.1,224.1,232.4,238.0,242.9,246.8,251.2,255.1,260.1,265.7,269.5,276.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">performance on the individual tasks. To compare on AP</text>
   </g>
   <g>
-   <rect x="301.9" y="300.6" width="18.810000000000002" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; 51.6; null</title>
+   <rect x="283.7" y="328.1" width="3.5" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; b; null</title>
    </rect>
-   <text svgx:width="0.59,0.59,0.33,0.59" y="309.6" x="301.9,307.2,312.5,315.4" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">51.6</text>
+   <text svgx:width="0.5" y="335.1" x="283.7" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">b</text>
   </g>
   <g>
-   <rect x="92.0" y="535.2" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.1.92_121.543_582; null</title>
+   <rect x="287.7" y="328.7" width="92.20000000000005" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; , we retrain our ﬁnal; null</title>
    </rect>
-   <text class="image" id="image.14.1" width="29" height="39" y="543.2" x="92.0" style="font-size:8.0px;">image.14.1.92_121.543_582</text>
+   <text svgx:width="0.28,0.55,0.72,0.44,0.55,0.39,0.44,0.39,0.39,0.5,0.28,0.56,0.55,0.5,0.56,0.39,0.55,0.56,0.56,0.5,0.28" y="338.7" x="287.7,290.5,294.3,301.3,305.6,309.5,313.4,317.9,321.7,325.6,330.6,333.4,339.0,342.8,347.7,353.3,357.2,361.0,366.6,372.1,377.1" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">, we retrain our ﬁnal</text>
   </g>
   <g>
-   <rect x="92.0" y="535.2" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.2.92_121.543_582; null</title>
+   <rect x="34.0" y="340.7" width="345.8" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; region classiﬁers for the bounding box detection task. This is because the rank-; null</title>
    </rect>
-   <text class="image" id="image.14.2" width="29" height="39" y="543.2" x="92.0" style="font-size:8.0px;">image.14.2.92_121.543_582</text>
+   <text svgx:width="0.39,0.44,0.5,0.28,0.5,0.56,0.55,0.44,0.28,0.5,0.39,0.39,0.28,0.56,0.44,0.39,0.39,0.55,0.31,0.5,0.39,0.55,0.39,0.56,0.44,0.55,0.56,0.5,0.56,0.56,0.56,0.28,0.56,0.5,0.55,0.56,0.5,0.53,0.55,0.56,0.44,0.39,0.44,0.44,0.39,0.28,0.5,0.56,0.55,0.39,0.5,0.39,0.53,0.28,0.55,0.72,0.56,0.28,0.39,0.55,0.28,0.39,0.55,0.56,0.44,0.44,0.5,0.56,0.39,0.44,0.55,0.39,0.56,0.44,0.55,0.39,0.5,0.56,0.53,0.33" y="350.7" x="34.0,37.9,42.3,47.3,50.1,55.1,60.7,63.9,68.3,71.1,76.1,80.0,83.9,86.7,92.2,96.6,100.5,104.4,107.8,110.8,115.8,119.7,122.9,126.8,132.4,136.7,140.1,145.9,150.8,156.4,161.9,167.5,170.2,175.8,180.7,184.0,189.8,194.5,199.8,203.1,208.6,213.0,216.9,221.3,225.8,229.6,232.4,237.4,243.0,246.2,250.1,255.0,259.0,264.2,267.0,270.3,277.5,283.0,285.8,289.6,293.0,295.7,299.6,302.9,308.7,313.2,317.6,322.6,328.1,332.0,336.4,339.7,343.6,349.1,353.5,356.9,360.7,365.7,371.3,376.5" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">region classiﬁers for the bounding box detection task. This is because the rank-</text>
   </g>
   <g>
-   <rect x="124.5" y="535.2" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.3.125_154.543_582; null</title>
+   <rect x="34.0" y="352.6" width="345.90000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; ing of regions based on bounding box overlap is diﬀerent from that based on; null</title>
    </rect>
-   <text class="image" id="image.14.3" width="29" height="39" y="543.2" x="124.5" style="font-size:8.0px;">image.14.3.125_154.543_582</text>
+   <text svgx:width="0.28,0.56,0.5,0.55,0.5,0.31,0.55,0.39,0.44,0.5,0.28,0.5,0.56,0.39,0.55,0.56,0.5,0.39,0.44,0.56,0.55,0.5,0.56,0.55,0.56,0.5,0.56,0.56,0.56,0.28,0.56,0.5,0.55,0.56,0.5,0.53,0.55,0.5,0.53,0.44,0.39,0.28,0.5,0.56,0.55,0.28,0.39,0.55,0.56,0.28,0.58,0.44,0.39,0.44,0.56,0.39,0.55,0.31,0.39,0.5,0.83,0.55,0.39,0.56,0.5,0.39,0.55,0.56,0.5,0.39,0.44,0.56,0.55,0.5,0.56" y="362.6" x="34.0,36.8,42.3,47.3,51.5,56.5,59.6,63.8,67.7,72.1,77.1,79.9,84.9,90.4,94.3,98.6,104.1,109.1,113.0,117.5,123.0,127.2,132.2,137.8,142.0,147.8,152.8,158.3,163.9,169.4,172.2,177.7,182.7,186.9,192.7,197.4,202.7,206.9,211.7,216.6,221.1,225.0,227.7,232.7,238.3,242.5,245.3,249.1,253.4,259.0,261.7,267.5,272.0,275.9,280.3,285.6,289.4,293.7,296.7,300.6,305.6,313.9,318.2,322.0,327.6,332.6,336.4,340.7,346.2,351.2,355.1,359.5,365.1,369.3,374.3" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">ing of regions based on bounding box overlap is diﬀerent from that based on</text>
   </g>
   <g>
-   <rect x="124.5" y="535.2" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.4.125_154.543_582; null</title>
+   <rect x="34.0" y="364.6" width="345.90000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; segmentation overlap. As in [16], we use ground truth boxes as positive, and; null</title>
    </rect>
-   <text class="image" id="image.14.4" width="29" height="39" y="543.2" x="124.5" style="font-size:8.0px;">image.14.4.125_154.543_582</text>
+   <text svgx:width="0.39,0.44,0.5,0.83,0.44,0.56,0.39,0.5,0.39,0.28,0.5,0.56,0.55,0.5,0.53,0.44,0.39,0.28,0.5,0.56,0.28,0.55,0.75,0.39,0.55,0.28,0.56,0.55,0.28,0.5,0.5,0.28,0.28,0.55,0.72,0.44,0.55,0.56,0.39,0.44,0.55,0.5,0.39,0.5,0.56,0.56,0.56,0.55,0.39,0.39,0.56,0.39,0.56,0.55,0.56,0.5,0.53,0.44,0.39,0.55,0.5,0.39,0.55,0.56,0.5,0.39,0.28,0.39,0.28,0.53,0.44,0.28,0.55,0.5,0.56,0.56" y="374.6" x="34.0,37.9,42.4,47.4,55.7,60.1,65.3,69.2,74.2,78.1,80.8,85.8,91.4,95.7,100.5,105.4,109.9,113.8,116.5,121.5,127.0,129.8,134.2,141.7,145.6,150.0,152.7,158.3,162.7,165.4,170.4,175.4,178.2,181.0,185.3,192.2,196.6,201.1,206.6,210.5,214.9,219.3,224.3,228.2,233.2,238.7,244.3,249.8,254.2,258.1,262.0,267.5,271.4,276.9,281.3,287.1,291.8,297.1,301.5,305.4,309.8,314.8,318.7,323.1,328.9,333.9,337.8,340.6,344.5,347.2,352.2,356.6,359.4,363.8,368.8,374.3" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">segmentation overlap. As in [16], we use ground truth boxes as positive, and</text>
   </g>
   <g>
-   <rect x="157.0" y="538.0" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.5.157_205.546_582; null</title>
+   <rect x="34.0" y="376.5" width="345.9" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; MCG boxes overlapping by less than 50% as negative. At test time we do not; null</title>
    </rect>
-   <text class="image" id="image.14.5" width="48" height="36" y="546.0" x="157.0" style="font-size:8.0px;">image.14.5.157_205.546_582</text>
+   <text svgx:width="0.92,0.72,0.78,0.55,0.56,0.5,0.53,0.44,0.39,0.55,0.5,0.53,0.44,0.39,0.28,0.5,0.56,0.56,0.28,0.56,0.5,0.55,0.56,0.53,0.55,0.28,0.44,0.39,0.39,0.55,0.39,0.56,0.5,0.56,0.55,0.5,0.5,0.83,0.55,0.5,0.39,0.55,0.56,0.44,0.5,0.5,0.39,0.28,0.53,0.44,0.28,0.55,0.75,0.39,0.55,0.39,0.44,0.39,0.39,0.55,0.39,0.28,0.83,0.44,0.55,0.72,0.44,0.55,0.56,0.5,0.55,0.56,0.5,0.39" y="386.5" x="34.0,43.1,50.3,58.1,62.0,67.8,72.5,77.7,82.2,86.0,89.9,94.6,99.6,104.0,107.9,110.7,115.7,121.2,126.7,129.5,135.0,140.0,143.8,149.1,154.3,158.1,160.9,165.3,169.3,173.1,177.0,180.9,186.4,191.4,197.0,200.7,205.7,210.7,218.9,222.8,227.8,231.6,235.5,241.0,245.5,250.4,255.4,259.3,262.1,267.0,271.5,274.3,278.0,285.2,289.1,292.9,296.8,301.2,305.1,309.0,312.8,316.7,319.5,327.8,332.1,336.0,342.9,347.3,351.1,356.7,361.6,365.5,371.0,376.0" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">MCG boxes overlapping by less than 50% as negative. At test time we do not</text>
   </g>
   <g>
-   <rect x="157.0" y="538.0" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.6.157_205.546_582; null</title>
+   <rect x="34.0" y="388.5" width="111.10000000000002" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; do any region reﬁnement.; null</title>
    </rect>
-   <text class="image" id="image.14.6" width="48" height="36" y="546.0" x="157.0" style="font-size:8.0px;">image.14.6.157_205.546_582</text>
+   <text svgx:width="0.56,0.5,0.55,0.5,0.56,0.53,0.55,0.39,0.44,0.5,0.28,0.5,0.56,0.55,0.39,0.44,0.56,0.56,0.44,0.83,0.44,0.56,0.39,0.28" y="398.5" x="34.0,39.6,44.5,47.9,52.8,58.1,63.4,66.7,70.6,75.0,80.0,82.8,87.7,93.3,96.6,100.5,104.9,110.5,116.0,120.4,128.7,133.1,138.4,142.3" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">do any region reﬁnement.</text>
   </g>
   <g>
-   <rect x="208.5" y="538.0" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.7.208_257.546_582; null</title>
+   <rect x="49.0" y="401.5" width="250.0" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; We add two baselines: R-CNN is the system of Girshick; null</title>
    </rect>
-   <text class="image" id="image.14.7" width="48" height="36" y="546.0" x="208.5" style="font-size:8.0px;">image.14.7.208_257.546_582</text>
+   <text svgx:width="1.03,0.44,0.55,0.5,0.56,0.56,0.55,0.39,0.72,0.5,0.55,0.56,0.5,0.39,0.44,0.28,0.28,0.56,0.44,0.39,0.28,0.55,0.74,0.33,0.72,0.75,0.75,0.55,0.28,0.39,0.55,0.39,0.56,0.44,0.55,0.39,0.53,0.39,0.39,0.44,0.83,0.55,0.5,0.31,0.55,0.78,0.28,0.39,0.39,0.56,0.28,0.44,0.53" y="411.5" x="49.0,58.4,62.8,66.8,71.8,77.4,82.9,86.9,90.5,97.4,102.4,106.5,112.0,117.0,120.9,125.3,128.1,130.9,136.4,140.8,144.8,147.6,151.6,158.9,162.2,169.4,176.9,184.4,188.4,191.2,195.1,199.2,203.0,208.6,212.9,217.0,221.0,226.2,230.1,234.0,238.4,246.7,250.8,255.8,258.9,262.8,270.7,273.4,277.3,281.3,286.8,289.6,293.7" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">We add two baselines: R-CNN is the system of Girshick</text>
   </g>
   <g>
-   <rect x="208.5" y="538.0" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.8.208_257.546_582; null</title>
+   <rect x="303.0" y="401.5" width="19.80000000000001" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; et al; null</title>
    </rect>
-   <text class="image" id="image.14.8" width="48" height="36" y="546.0" x="208.5" style="font-size:8.0px;">image.14.8.208_257.546_582</text>
+   <text svgx:width="0.46,0.33,0.55,0.51,0.26" y="411.5" x="303.0,307.6,310.9,315.1,320.2" style="fill:rgb(0,0,0);font-family:CMTI10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">et al</text>
   </g>
   <g>
-   <rect x="260.0" y="535.2" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.9.260_289.543_582; null</title>
+   <rect x="322.8" y="401.5" width="57.10000000000002" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; . taken as is,; null</title>
    </rect>
-   <text class="image" id="image.14.9" width="29" height="39" y="543.2" x="260.0" style="font-size:8.0px;">image.14.9.260_289.543_582</text>
+   <text svgx:width="0.28,0.55,0.39,0.5,0.53,0.44,0.56,0.55,0.5,0.39,0.55,0.28,0.39,0.28" y="411.5" x="322.8,325.6,329.6,333.5,338.4,343.4,347.9,353.4,357.4,362.4,366.3,370.4,373.1,377.1" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">. taken as is,</text>
   </g>
   <g>
-   <rect x="260.0" y="535.2" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.10.260_289.543_582; null</title>
+   <rect x="34.0" y="413.5" width="345.90000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; and R-CNN-MCG is R-CNN on boxes from MCG instead of Selective Search.; null</title>
    </rect>
-   <text class="image" id="image.14.10" width="29" height="39" y="543.2" x="260.0" style="font-size:8.0px;">image.14.10.260_289.543_582</text>
+   <text svgx:width="0.5,0.56,0.56,0.55,0.74,0.33,0.72,0.75,0.75,0.33,0.92,0.72,0.78,0.55,0.28,0.39,0.55,0.74,0.33,0.72,0.75,0.75,0.55,0.5,0.56,0.55,0.56,0.5,0.53,0.44,0.39,0.55,0.31,0.39,0.5,0.83,0.55,0.92,0.72,0.78,0.55,0.28,0.56,0.39,0.39,0.44,0.5,0.56,0.55,0.5,0.31,0.55,0.56,0.44,0.28,0.44,0.44,0.39,0.28,0.53,0.44,0.55,0.56,0.44,0.5,0.39,0.44,0.56,0.28" y="423.5" x="34.0,39.0,44.5,50.1,54.0,61.3,64.6,71.8,79.3,86.8,90.1,99.2,106.4,114.2,118.1,120.9,124.8,128.7,136.1,139.4,146.6,154.1,161.5,165.4,170.4,176.0,179.9,185.7,190.4,195.6,200.1,204.0,207.9,211.0,214.9,219.8,228.1,232.1,241.2,248.4,256.1,260.1,262.9,268.4,272.3,276.2,280.6,285.6,291.2,295.1,300.0,303.1,307.0,312.5,317.0,319.7,324.2,328.6,332.5,335.2,340.2,344.6,348.5,354.1,358.5,363.5,367.4,371.5,377.1" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">and R-CNN-MCG is R-CNN on boxes from MCG instead of Selective Search.</text>
   </g>
   <g>
-   <rect x="292.4" y="535.2" width="3999.9999999999995" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.11.292_322.543_582; null</title>
+   <rect x="34.0" y="425.4" width="336.8" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; Note that neither of these baselines uses features from the region foreground.; null</title>
    </rect>
-   <text class="image" id="image.14.11" width="29" height="39" y="543.2" x="292.4" style="font-size:8.0px;">image.14.11.292_322.543_582</text>
+   <text svgx:width="0.75,0.5,0.39,0.44,0.55,0.39,0.56,0.5,0.39,0.55,0.56,0.44,0.28,0.39,0.56,0.44,0.39,0.55,0.5,0.31,0.55,0.39,0.56,0.44,0.39,0.44,0.55,0.56,0.5,0.39,0.44,0.28,0.28,0.56,0.44,0.39,0.55,0.56,0.39,0.44,0.39,0.55,0.31,0.44,0.5,0.39,0.56,0.39,0.44,0.39,0.55,0.31,0.39,0.5,0.83,0.55,0.39,0.56,0.44,0.55,0.39,0.44,0.5,0.28,0.5,0.56,0.55,0.31,0.5,0.39,0.44,0.5,0.39,0.5,0.56,0.56,0.56,0.28" y="435.4" x="34.0,41.5,46.5,50.3,54.7,58.1,62.0,67.5,72.5,76.4,79.7,85.2,89.6,92.4,96.3,101.8,106.2,110.1,113.5,118.5,121.5,124.8,128.7,134.2,138.6,142.6,147.0,150.3,155.9,160.9,164.8,169.2,172.0,174.7,180.3,184.7,188.6,192.0,197.5,201.4,205.8,209.7,213.1,216.1,220.6,225.5,229.4,235.0,238.9,243.3,247.2,250.5,253.6,257.5,262.5,270.7,274.1,278.0,283.5,287.9,291.2,295.1,299.6,304.6,307.3,312.3,317.9,321.2,324.2,329.2,333.1,337.5,342.5,346.4,351.4,356.9,362.5,368.0" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Note that neither of these baselines uses features from the region foreground.</text>
   </g>
   <g>
-   <rect x="292.4" y="535.2" width="3999.9999999999995" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.12.292_322.543_582; null</title>
+   <rect x="49.0" y="438.5" width="121.69999999999999" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; Table 4 shows the mean AP; null</title>
    </rect>
-   <text class="image" id="image.14.12" width="29" height="39" y="543.2" x="292.4" style="font-size:8.0px;">image.14.12.292_322.543_582</text>
+   <text svgx:width="0.72,0.5,0.56,0.28,0.44,0.55,0.5,0.55,0.39,0.56,0.5,0.72,0.39,0.55,0.39,0.56,0.44,0.55,0.83,0.44,0.5,0.56,0.55,0.75,0.68" y="448.5" x="49.0,55.3,60.3,65.8,68.6,73.0,76.2,81.2,84.4,88.4,93.9,98.6,105.8,109.7,112.9,116.8,122.4,126.7,130.0,138.3,142.7,147.7,153.3,156.5,163.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Table 4 shows the mean AP</text>
   </g>
   <g>
-   <rect x="54.0" y="575.3" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.13.54_102.583_620; null</title>
+   <rect x="170.7" y="437.9" width="3.5" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; b; null</title>
    </rect>
-   <text class="image" id="image.14.13" width="48" height="36" y="583.3" x="54.0" style="font-size:8.0px;">image.14.13.54_102.583_620</text>
+   <text svgx:width="0.5" y="444.9" x="170.7" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">b</text>
   </g>
   <g>
-   <rect x="54.0" y="575.3" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.14.54_102.583_620; null</title>
+   <rect x="177.9" y="438.5" width="33.599999999999994" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; and AP; null</title>
    </rect>
-   <text class="image" id="image.14.14" width="48" height="36" y="583.3" x="54.0" style="font-size:8.0px;">image.14.14.54_102.583_620</text>
+   <text svgx:width="0.5,0.56,0.56,0.55,0.75,0.68" y="448.5" x="177.9,182.9,188.4,194.0,197.2,204.7" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">and AP</text>
   </g>
   <g>
-   <rect x="105.5" y="575.3" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.15.105_154.583_620; null</title>
+   <rect x="211.4" y="437.9" width="3.5" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; b; null</title>
    </rect>
-   <text class="image" id="image.14.15" width="48" height="36" y="583.3" x="105.5" style="font-size:8.0px;">image.14.15.105_154.583_620</text>
+   <text svgx:width="0.5" y="444.9" x="211.4" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">b</text>
   </g>
   <g>
-   <rect x="105.5" y="575.3" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.16.105_154.583_620; null</title>
+   <rect x="211.4" y="444.3" width="10.719999999999999" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; vol; null</title>
    </rect>
-   <text class="image" id="image.14.16" width="48" height="36" y="583.3" x="105.5" style="font-size:8.0px;">image.14.16.105_154.583_620</text>
+   <text svgx:width="0.57,0.56,0.36" y="451.3" x="211.4,215.7,219.6" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">vol</text>
   </g>
   <g>
-   <rect x="157.0" y="575.3" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.17.157_205.583_620; null</title>
+   <rect x="222.7" y="438.5" width="157.2" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; . We get improvements over R-CNN; null</title>
    </rect>
-   <text class="image" id="image.14.17" width="48" height="36" y="583.3" x="157.0" style="font-size:8.0px;">image.14.17.157_205.583_620</text>
+   <text svgx:width="0.28,0.55,1.03,0.44,0.55,0.5,0.44,0.39,0.55,0.28,0.83,0.56,0.39,0.5,0.53,0.44,0.83,0.44,0.56,0.39,0.39,0.55,0.5,0.53,0.44,0.39,0.55,0.74,0.33,0.72,0.75,0.75" y="448.5" x="222.7,225.5,228.6,238.1,242.4,245.7,250.7,255.1,259.0,262.2,265.0,273.3,278.8,282.7,287.4,292.4,296.8,305.1,309.5,314.8,318.7,322.6,325.8,330.5,335.5,339.9,343.8,347.0,354.4,357.7,364.9,372.4" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">. We get improvements over R-CNN</text>
   </g>
   <g>
-   <rect x="157.0" y="575.3" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.18.157_205.583_620; null</title>
+   <rect x="34.0" y="450.5" width="50.0" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; on both AP; null</title>
    </rect>
-   <text class="image" id="image.14.18" width="48" height="36" y="583.3" x="157.0" style="font-size:8.0px;">image.14.18.157_205.583_620</text>
+   <text svgx:width="0.5,0.56,0.55,0.56,0.5,0.39,0.56,0.55,0.75,0.68" y="460.5" x="34.0,39.0,44.6,47.0,52.9,57.8,61.7,67.3,69.8,77.2" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">on both AP</text>
   </g>
   <g>
-   <rect x="208.5" y="575.3" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.19.208_257.583_620; null</title>
+   <rect x="84.0" y="449.8" width="3.5" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; b; null</title>
    </rect>
-   <text class="image" id="image.14.19" width="48" height="36" y="583.3" x="208.5" style="font-size:8.0px;">image.14.19.208_257.583_620</text>
+   <text svgx:width="0.5" y="456.8" x="84.0" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">b</text>
   </g>
   <g>
-   <rect x="208.5" y="575.3" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.20.208_257.583_620; null</title>
+   <rect x="90.5" y="450.5" width="32.89999999999999" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; and AP; null</title>
    </rect>
-   <text class="image" id="image.14.20" width="48" height="36" y="583.3" x="208.5" style="font-size:8.0px;">image.14.20.208_257.583_620</text>
+   <text svgx:width="0.5,0.56,0.56,0.55,0.75,0.68" y="460.5" x="90.5,95.5,101.0,106.6,109.1,116.6" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">and AP</text>
   </g>
   <g>
-   <rect x="260.0" y="575.3" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.21.260_308.583_620; null</title>
+   <rect x="123.3" y="449.8" width="3.5" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; b; null</title>
    </rect>
-   <text class="image" id="image.14.21" width="48" height="36" y="583.3" x="260.0" style="font-size:8.0px;">image.14.21.260_308.583_620</text>
+   <text svgx:width="0.5" y="456.8" x="123.3" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">b</text>
   </g>
   <g>
-   <rect x="260.0" y="575.3" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.22.260_308.583_620; null</title>
+   <rect x="123.3" y="456.3" width="10.720000000000013" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; vol; null</title>
    </rect>
-   <text class="image" id="image.14.22" width="48" height="36" y="583.3" x="260.0" style="font-size:8.0px;">image.14.22.260_308.583_620</text>
+   <text svgx:width="0.57,0.56,0.36" y="463.3" x="123.3,127.6,131.5" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">vol</text>
   </g>
   <g>
-   <rect x="311.4" y="575.3" width="3999.9999999999995" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.23.311_360.583_620; null</title>
+   <rect x="134.6" y="450.5" width="245.29999999999998" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; , with improvements on the latter metric being somewhat; null</title>
    </rect>
-   <text class="image" id="image.14.23" width="48" height="36" y="583.3" x="311.4" style="font-size:8.0px;">image.14.23.311_360.583_620</text>
+   <text svgx:width="0.28,0.55,0.72,0.28,0.39,0.56,0.55,0.28,0.83,0.56,0.39,0.5,0.53,0.44,0.83,0.44,0.56,0.39,0.39,0.55,0.5,0.56,0.55,0.39,0.56,0.44,0.55,0.28,0.5,0.39,0.39,0.44,0.39,0.55,0.83,0.44,0.39,0.39,0.28,0.44,0.55,0.56,0.44,0.28,0.56,0.5,0.55,0.39,0.5,0.83,0.44,0.72,0.56,0.5,0.39" y="460.5" x="134.6,137.4,139.8,147.0,149.8,153.7,159.3,161.7,164.5,172.8,178.3,182.2,186.9,191.9,196.4,204.7,209.1,214.3,218.2,222.1,224.7,229.6,235.2,237.7,241.6,247.1,251.5,254.0,256.8,261.8,265.6,269.5,274.0,277.8,280.4,288.7,293.1,297.0,300.9,303.6,308.0,310.6,316.4,320.8,323.6,329.1,334.1,336.6,340.5,345.5,353.8,358.3,365.5,371.0,376.0" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">, with improvements on the latter metric being somewhat</text>
   </g>
   <g>
-   <rect x="311.4" y="575.3" width="3999.9999999999995" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.24.311_360.583_620; null</title>
+   <rect x="34.0" y="462.4" width="271.40000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; larger. The right half of Figure 5 shows the variation in AP; null</title>
    </rect>
-   <text class="image" id="image.14.24" width="48" height="36" y="583.3" x="311.4" style="font-size:8.0px;">image.14.24.311_360.583_620</text>
+   <text svgx:width="0.28,0.5,0.39,0.5,0.44,0.39,0.28,0.55,0.72,0.56,0.44,0.55,0.39,0.28,0.5,0.56,0.39,0.55,0.56,0.5,0.28,0.31,0.55,0.5,0.31,0.55,0.65,0.28,0.5,0.56,0.39,0.44,0.55,0.5,0.55,0.39,0.56,0.5,0.72,0.39,0.55,0.39,0.56,0.44,0.55,0.53,0.5,0.39,0.28,0.5,0.39,0.28,0.5,0.56,0.55,0.28,0.56,0.55,0.75,0.68" y="472.4" x="34.0,36.8,41.8,45.7,50.6,55.1,59.0,61.8,66.1,73.3,78.9,83.2,87.7,91.6,94.3,99.3,104.6,108.4,112.8,118.3,123.3,126.1,129.2,133.5,138.5,141.6,145.9,152.4,155.2,160.2,165.7,169.6,174.0,178.4,183.4,187.7,191.7,197.2,201.9,209.1,213.0,217.4,221.3,226.8,231.2,235.6,240.3,245.3,249.2,252.0,257.0,260.8,263.6,268.6,274.2,278.5,281.3,286.8,291.2,298.6" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">larger. The right half of Figure 5 shows the variation in AP</text>
   </g>
   <g>
-   <rect x="54.0" y="617.0" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.25.54_102.625_657; null</title>
+   <rect x="305.4" y="461.8" width="3.5" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; b; null</title>
    </rect>
-   <text class="image" id="image.14.25" width="48" height="31" y="625.0" x="54.0" style="font-size:8.0px;">image.14.25.54_102.625_657</text>
+   <text svgx:width="0.5" y="468.8" x="305.4" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">b</text>
   </g>
   <g>
-   <rect x="54.0" y="617.0" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.26.54_102.625_657; null</title>
+   <rect x="313.8" y="462.4" width="65.99999999999994" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; as we vary the; null</title>
    </rect>
-   <text class="image" id="image.14.26" width="48" height="31" y="625.0" x="54.0" style="font-size:8.0px;">image.14.26.54_102.625_657</text>
+   <text svgx:width="0.5,0.39,0.55,0.72,0.44,0.55,0.53,0.5,0.39,0.53,0.55,0.39,0.56,0.44" y="472.4" x="313.8,318.8,322.7,327.1,334.0,338.4,342.8,347.5,352.5,356.4,361.6,366.0,369.9,375.4" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">as we vary the</text>
   </g>
   <g>
-   <rect x="105.5" y="617.0" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.27.105_154.625_657; null</title>
+   <rect x="34.0" y="474.4" width="345.9" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; overlap threshold for counting something as correct. We plot the improvement; null</title>
    </rect>
-   <text class="image" id="image.14.27" width="48" height="31" y="625.0" x="105.5" style="font-size:8.0px;">image.14.27.105_154.625_657</text>
+   <text svgx:width="0.5,0.53,0.44,0.39,0.28,0.5,0.56,0.55,0.39,0.56,0.39,0.44,0.39,0.56,0.5,0.28,0.56,0.55,0.31,0.5,0.39,0.55,0.44,0.5,0.56,0.56,0.39,0.28,0.56,0.5,0.55,0.39,0.5,0.83,0.44,0.39,0.56,0.28,0.56,0.5,0.55,0.5,0.39,0.55,0.44,0.5,0.39,0.39,0.44,0.44,0.39,0.28,0.55,1.03,0.44,0.55,0.56,0.28,0.5,0.39,0.55,0.39,0.56,0.44,0.55,0.28,0.83,0.56,0.39,0.5,0.53,0.44,0.83,0.44,0.56,0.39" y="484.4" x="34.0,38.7,43.7,48.1,52.0,54.8,59.8,65.4,69.1,72.9,78.5,82.4,86.8,90.7,96.3,101.3,104.0,109.6,113.3,116.3,121.3,125.2,129.0,133.4,138.4,143.9,149.2,153.1,155.8,161.4,166.3,170.1,174.0,179.0,187.3,191.7,195.6,201.1,203.9,209.4,214.4,218.2,223.2,227.0,230.8,235.3,240.2,244.1,248.0,252.5,256.9,260.8,263.6,267.3,276.7,281.1,284.9,290.4,293.2,298.2,302.0,305.8,309.6,315.2,319.6,323.4,326.1,334.4,340.0,343.9,348.6,353.6,358.0,366.3,370.7,376.0" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">overlap threshold for counting something as correct. We plot the improvement</text>
   </g>
   <g>
-   <rect x="105.5" y="617.0" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.28.105_154.625_657; null</title>
+   <rect x="34.0" y="486.3" width="26.200000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; in AP; null</title>
    </rect>
-   <text class="image" id="image.14.28" width="48" height="31" y="625.0" x="105.5" style="font-size:8.0px;">image.14.28.105_154.625_657</text>
+   <text svgx:width="0.28,0.56,0.55,0.75,0.68" y="496.3" x="34.0,36.8,42.4,46.0,53.4" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">in AP</text>
   </g>
   <g>
-   <rect x="157.0" y="612.6" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.29.157_205.621_657; null</title>
+   <rect x="60.2" y="485.7" width="3.5" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; b; null</title>
    </rect>
-   <text class="image" id="image.14.29" width="48" height="36" y="620.6" x="157.0" style="font-size:8.0px;">image.14.29.157_205.621_657</text>
+   <text svgx:width="0.5" y="492.7" x="60.2" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">b</text>
   </g>
   <g>
-   <rect x="157.0" y="612.6" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.30.157_205.621_657; null</title>
+   <rect x="67.8" y="486.3" width="312.09999999999997" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; over vanilla R-CNN. We do worse than R-CNN for low thresholds, but; null</title>
    </rect>
-   <text class="image" id="image.14.30" width="48" height="36" y="620.6" x="157.0" style="font-size:8.0px;">image.14.30.157_205.621_657</text>
+   <text svgx:width="0.5,0.53,0.44,0.39,0.55,0.53,0.5,0.56,0.28,0.28,0.28,0.5,0.55,0.74,0.33,0.72,0.75,0.75,0.28,0.55,1.03,0.44,0.55,0.56,0.5,0.55,0.72,0.5,0.39,0.39,0.44,0.55,0.39,0.56,0.5,0.56,0.55,0.74,0.33,0.72,0.75,0.75,0.55,0.31,0.5,0.39,0.55,0.28,0.5,0.72,0.55,0.39,0.56,0.39,0.44,0.39,0.56,0.5,0.28,0.56,0.39,0.28,0.55,0.56,0.56,0.39" y="496.3" x="67.8,72.5,77.5,81.9,85.8,89.5,94.2,99.2,104.7,107.5,110.2,113.0,118.0,121.6,129.0,132.3,139.5,146.9,154.4,157.2,160.8,170.2,174.6,178.3,183.8,188.8,192.4,199.4,204.3,208.2,212.2,216.6,220.2,224.1,229.6,234.6,240.2,243.8,251.1,254.4,261.6,269.1,276.6,280.2,283.3,288.2,292.1,295.8,298.5,303.2,310.4,314.1,318.0,323.5,327.4,331.8,335.7,341.3,346.3,349.0,354.6,358.5,361.3,364.9,370.4,376.0" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">over vanilla R-CNN. We do worse than R-CNN for low thresholds, but</text>
   </g>
   <g>
-   <rect x="208.5" y="612.6" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.31.208_257.621_657; null</title>
+   <rect x="34.0" y="498.3" width="345.8" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; are much better for higher thresholds. This is also true to some extent for R-; null</title>
    </rect>
-   <text class="image" id="image.14.31" width="48" height="36" y="620.6" x="208.5" style="font-size:8.0px;">image.14.31.208_257.621_657</text>
+   <text svgx:width="0.5,0.39,0.44,0.55,0.83,0.56,0.44,0.56,0.55,0.56,0.44,0.39,0.39,0.44,0.39,0.55,0.31,0.5,0.39,0.55,0.56,0.28,0.5,0.56,0.44,0.39,0.55,0.39,0.56,0.39,0.44,0.39,0.56,0.5,0.28,0.56,0.39,0.28,0.55,0.72,0.56,0.28,0.39,0.55,0.28,0.39,0.55,0.5,0.28,0.39,0.5,0.55,0.39,0.39,0.56,0.44,0.55,0.39,0.5,0.55,0.39,0.5,0.83,0.44,0.55,0.44,0.53,0.39,0.44,0.56,0.39,0.55,0.31,0.5,0.39,0.55,0.74,0.33" y="508.3" x="34.0,39.0,42.9,47.3,51.3,59.4,64.9,69.0,74.6,78.6,84.4,88.8,92.7,96.6,101.0,104.9,108.9,111.9,116.9,120.8,124.8,130.3,133.1,138.1,143.6,148.1,151.9,156.0,159.8,165.4,169.3,173.7,177.6,183.2,188.1,190.9,196.4,200.4,203.2,207.1,214.3,219.9,222.6,226.5,230.6,233.3,237.2,241.3,246.2,249.0,252.9,257.9,261.9,265.8,269.7,275.2,279.6,283.7,287.5,292.5,296.5,300.4,305.4,313.7,318.1,322.1,326.6,331.8,335.7,340.1,345.4,349.3,353.3,356.3,361.3,365.2,369.2,376.5" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">are much better for higher thresholds. This is also true to some extent for R-</text>
   </g>
   <g>
-   <rect x="208.5" y="612.6" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.32.208_257.621_657; null</title>
+   <rect x="34.0" y="510.20000000000005" width="345.90000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; CNN-MCG, so this is partly a property of MCG, and partly a consequence of; null</title>
    </rect>
-   <text class="image" id="image.14.32" width="48" height="36" y="620.6" x="208.5" style="font-size:8.0px;">image.14.32.208_257.621_657</text>
+   <text svgx:width="0.72,0.75,0.75,0.33,0.92,0.72,0.78,0.28,0.55,0.39,0.5,0.55,0.39,0.56,0.28,0.39,0.55,0.28,0.39,0.55,0.56,0.5,0.39,0.39,0.28,0.53,0.55,0.5,0.55,0.56,0.39,0.5,0.56,0.44,0.39,0.39,0.53,0.55,0.5,0.31,0.55,0.92,0.72,0.78,0.28,0.55,0.5,0.56,0.56,0.55,0.56,0.5,0.39,0.39,0.28,0.53,0.55,0.5,0.55,0.44,0.5,0.56,0.39,0.44,0.53,0.56,0.44,0.56,0.44,0.44,0.55,0.5,0.31" y="520.2" x="34.0,41.2,48.7,56.2,59.5,68.6,75.8,83.6,86.4,90.2,94.2,99.1,103.0,106.8,112.4,115.1,119.0,122.9,125.7,129.6,133.4,139.0,143.9,147.8,151.7,154.5,159.8,163.6,168.5,172.4,177.9,181.8,186.8,192.6,197.0,200.9,204.5,209.8,213.6,218.6,221.7,225.5,234.6,241.8,249.6,252.4,256.2,261.2,266.7,272.3,276.1,281.7,286.6,290.5,294.4,297.2,302.5,306.3,311.2,315.1,319.5,324.5,330.0,334.0,338.4,343.6,349.2,353.6,359.1,363.6,367.9,371.8,376.8" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">CNN-MCG, so this is partly a property of MCG, and partly a consequence of</text>
   </g>
   <g>
-   <rect x="260.0" y="616.8" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.33.260_308.625_657; null</title>
+   <rect x="34.0" y="522.2" width="227.2" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; our algorithm’s improved localization. Interestingly,; null</title>
    </rect>
-   <text class="image" id="image.14.33" width="48" height="32" y="624.8" x="260.0" style="font-size:8.0px;">image.14.33.260_308.625_657</text>
+   <text svgx:width="0.5,0.56,0.39,0.55,0.5,0.28,0.5,0.5,0.39,0.28,0.39,0.56,0.83,0.28,0.39,0.55,0.28,0.83,0.56,0.39,0.5,0.53,0.44,0.56,0.55,0.28,0.5,0.44,0.5,0.28,0.28,0.44,0.5,0.39,0.28,0.5,0.56,0.28,0.55,0.36,0.56,0.39,0.44,0.39,0.44,0.39,0.39,0.28,0.56,0.5,0.28,0.53,0.28" y="532.2" x="34.0,39.0,44.5,48.4,52.2,57.2,59.9,64.9,69.9,73.8,76.6,80.4,86.0,94.3,97.0,100.9,104.7,107.5,115.8,121.3,125.2,129.9,134.9,139.3,144.9,148.6,151.4,156.6,161.0,166.0,168.8,171.6,176.0,181.0,184.8,187.6,192.6,198.1,200.9,204.6,208.2,213.5,217.4,221.8,225.7,230.1,234.0,237.9,240.7,246.2,251.2,254.0,258.4" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">our algorithm’s improved localization. Interestingly,</text>
   </g>
   <g>
-   <rect x="260.0" y="616.8" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.34.260_308.625_657; null</title>
+   <rect x="264.9" y="522.2" width="8.300000000000011" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; C; null</title>
    </rect>
-   <text class="image" id="image.14.34" width="48" height="32" y="624.8" x="260.0" style="font-size:8.0px;">image.14.34.260_308.625_657</text>
+   <text svgx:width="0.83" y="532.2" x="264.9" style="fill:rgb(0,0,0);font-family:CMBX10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">C</text>
   </g>
   <g>
-   <rect x="311.4" y="616.8" width="3999.9999999999995" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.35.311_360.625_657; null</title>
+   <rect x="276.9" y="522.2" width="70.80000000000007" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; does worse than; null</title>
    </rect>
-   <text class="image" id="image.14.35" width="48" height="32" y="624.8" x="311.4" style="font-size:8.0px;">image.14.35.311_360.625_657</text>
+   <text svgx:width="0.56,0.5,0.44,0.39,0.55,0.72,0.5,0.39,0.39,0.44,0.55,0.39,0.56,0.5,0.56" y="532.2" x="276.9,282.4,287.7,292.1,296.0,299.8,306.7,311.7,315.6,319.5,323.9,327.7,331.6,337.1,342.1" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">does worse than</text>
   </g>
   <g>
-   <rect x="311.4" y="616.8" width="3999.9999999999995" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>8.0; image.14.36.311_360.625_657; null</title>
+   <rect x="351.4" y="522.2" width="8.199999999999989" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; B; null</title>
    </rect>
-   <text class="image" id="image.14.36" width="48" height="32" y="624.8" x="311.4" style="font-size:8.0px;">image.14.36.311_360.625_657</text>
+   <text svgx:width="0.82" y="532.2" x="351.4" style="fill:rgb(0,0,0);font-family:CMBX10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">B</text>
   </g>
   <g>
-   <rect x="34.0" y="484.0" width="27.97" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; Fig. 7.; null</title>
+   <rect x="359.5" y="522.2" width="20.299999999999955" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; . We; null</title>
    </rect>
-   <text svgx:width="0.74,0.33,0.59,0.33,0.55,0.59,0.33" y="493.0" x="34.0,40.7,43.6,48.9,51.9,53.7,59.0" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Fig. 7.</text>
+   <text svgx:width="0.28,0.55,1.03,0.44" y="532.2" x="359.5,362.3,366.0,375.4" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">. We</text>
   </g>
   <g>
-   <rect x="66.5" y="484.0" width="313.34" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; Top detections: 3 persons, 2 bikes, diningtable, sheep, chair, cat. We can handle; null</title>
+   <rect x="34.0" y="534.1" width="338.2" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; posit that this is because now the entire network has been ﬁnetuned for SDS.; null</title>
    </rect>
-   <text svgx:width="0.74,0.51,0.57,0.55,0.57,0.46,0.4,0.46,0.46,0.4,0.29,0.51,0.57,0.41,0.29,0.55,0.51,0.55,0.57,0.46,0.4,0.41,0.51,0.57,0.41,0.29,0.55,0.51,0.55,0.57,0.29,0.54,0.46,0.41,0.29,0.55,0.57,0.29,0.57,0.29,0.57,0.51,0.4,0.51,0.57,0.29,0.46,0.29,0.55,0.41,0.57,0.46,0.46,0.57,0.29,0.55,0.46,0.57,0.51,0.29,0.4,0.29,0.55,0.46,0.51,0.4,0.29,0.55,1.06,0.46,0.55,0.46,0.51,0.57,0.55,0.57,0.51,0.57,0.57,0.29,0.46" y="493.0" x="66.5,72.4,77.0,82.1,84.4,89.5,93.6,97.2,101.3,105.4,109.0,111.6,116.2,121.3,124.9,127.5,129.8,134.4,136.7,142.1,146.2,149.8,153.4,158.0,163.1,166.8,169.4,171.6,176.2,178.5,183.7,186.2,190.8,194.9,198.5,201.2,203.4,208.5,211.1,216.2,218.8,223.9,228.5,232.1,236.7,241.8,244.4,248.5,251.1,253.3,257.0,262.1,266.2,270.3,275.4,278.0,280.3,284.1,289.2,293.8,296.4,300.0,302.6,304.8,308.9,313.6,317.1,319.7,322.0,330.7,334.8,337.1,341.2,345.8,350.9,353.2,358.3,362.9,368.1,373.2,375.7" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Top detections: 3 persons, 2 bikes, diningtable, sheep, chair, cat. We can handle</text>
+   <text svgx:width="0.56,0.5,0.39,0.28,0.39,0.55,0.39,0.56,0.5,0.39,0.55,0.39,0.56,0.28,0.39,0.55,0.28,0.39,0.55,0.56,0.44,0.44,0.5,0.56,0.39,0.44,0.55,0.56,0.5,0.72,0.55,0.39,0.56,0.44,0.55,0.44,0.56,0.39,0.28,0.39,0.44,0.55,0.56,0.44,0.39,0.72,0.5,0.39,0.53,0.55,0.56,0.5,0.39,0.55,0.56,0.44,0.44,0.56,0.55,0.56,0.56,0.44,0.39,0.56,0.56,0.44,0.56,0.55,0.31,0.5,0.39,0.55,0.56,0.76,0.56,0.28" y="544.1" x="34.0,39.8,44.8,48.7,51.5,55.4,58.7,62.6,68.1,73.1,77.0,80.3,84.2,89.7,92.5,96.3,99.7,102.5,106.4,109.7,115.5,120.0,124.4,129.4,134.9,138.8,143.2,146.6,152.1,156.8,164.0,167.4,171.2,176.8,181.1,184.5,188.9,194.2,198.1,200.8,204.7,209.1,212.5,218.0,222.5,226.0,233.0,237.9,241.8,247.1,250.4,256.0,260.9,264.8,268.2,274.0,278.4,282.9,288.4,291.7,297.3,302.8,307.2,311.1,316.6,322.2,326.6,332.2,335.4,338.5,343.5,347.4,350.7,356.2,363.8,369.4" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">posit that this is because now the entire network has been ﬁnetuned for SDS.</text>
   </g>
   <g>
-   <rect x="34.0" y="495.0" width="292.21000000000004" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; uncommon pose and clutter and are able to resolve individual instances.; null</title>
+   <rect x="49.0" y="547.2" width="88.0" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; Finally we evaluated; null</title>
    </rect>
-   <text svgx:width="0.57,0.57,0.46,0.51,0.86,0.86,0.51,0.57,0.55,0.57,0.51,0.41,0.46,0.55,0.51,0.57,0.57,0.55,0.46,0.29,0.57,0.4,0.4,0.46,0.4,0.55,0.51,0.57,0.57,0.55,0.51,0.4,0.46,0.55,0.51,0.57,0.29,0.46,0.55,0.4,0.51,0.55,0.4,0.46,0.41,0.51,0.29,0.54,0.46,0.55,0.29,0.57,0.57,0.29,0.54,0.29,0.57,0.57,0.51,0.29,0.55,0.29,0.57,0.41,0.4,0.51,0.57,0.46,0.46,0.41,0.29" y="504.0" x="34.0,39.1,44.3,48.4,53.0,60.6,68.3,72.9,78.0,81.1,86.5,91.1,94.7,98.9,101.9,106.5,111.6,116.7,119.8,123.9,126.5,131.6,135.2,138.8,142.9,146.5,149.5,154.2,159.3,164.4,167.5,172.1,175.7,179.8,182.8,187.5,192.6,195.1,199.3,202.3,205.9,210.5,213.6,217.2,221.3,224.9,229.5,232.1,236.7,240.8,243.9,246.4,251.5,256.7,259.2,264.1,266.6,271.8,276.9,281.5,284.1,287.1,289.7,294.8,298.4,302.0,306.6,311.7,315.8,319.9,323.6" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">uncommon pose and clutter and are able to resolve individual instances.</text>
+   <text svgx:width="0.65,0.28,0.56,0.5,0.28,0.28,0.53,0.55,0.72,0.44,0.55,0.44,0.53,0.5,0.28,0.56,0.5,0.39,0.44,0.56" y="557.2" x="49.0,55.5,58.2,63.8,68.7,71.5,74.3,79.6,81.9,88.9,93.2,95.7,100.1,104.8,109.8,112.6,118.1,123.1,127.0,131.4" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Finally we evaluated</text>
   </g>
   <g>
-   <rect x="34.0" y="527.4" width="73.22" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>7.0; Acknowledgments.; null</title>
+   <rect x="139.3" y="547.2" width="8.300000000000011" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; C; null</title>
    </rect>
-   <text svgx:width="0.97,0.58,0.68,0.72,0.65,0.93,0.36,0.59,0.72,0.65,1.07,0.59,0.72,0.51,0.51,0.36" y="534.4" x="34.0,40.8,44.5,49.3,54.3,58.6,65.1,67.6,71.7,76.7,81.3,88.7,92.9,97.6,101.2,104.7" style="fill:rgb(0,0,0);font-family:CMBX7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Acknowledgments.</text>
+   <text svgx:width="0.83" y="557.2" x="139.3" style="fill:rgb(0,0,0);font-family:CMBX10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">C</text>
   </g>
   <g>
-   <rect x="110.0" y="527.4" width="269.81" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>7.0; This work was supported by ONR MURI N000141010933, a Google Research; null</title>
+   <rect x="150.0" y="547.2" width="182.8" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; on PASCAL VOC 2012 test. Our mean AP; null</title>
    </rect>
-   <text svgx:width="0.82,0.63,0.32,0.45,0.55,0.82,0.57,0.45,0.6,0.55,0.82,0.57,0.45,0.55,0.45,0.63,0.63,0.63,0.57,0.45,0.45,0.51,0.63,0.55,0.63,0.6,0.55,0.88,0.84,0.83,0.55,1.03,0.84,0.83,0.41,0.55,0.84,0.57,0.57,0.57,0.57,0.57,0.57,0.57,0.57,0.57,0.57,0.57,0.57,0.32,0.55,0.57,0.55,0.88,0.57,0.57,0.57,0.32,0.51,0.55,0.83,0.51,0.45,0.51,0.57,0.45,0.51,0.63" y="534.4" x="110.0,115.7,120.1,122.4,125.5,128.3,133.8,137.7,140.9,145.0,147.8,153.3,157.3,160.4,163.2,166.3,170.7,175.1,179.8,183.7,186.8,190.0,193.5,197.9,200.7,204.8,209.0,211.8,217.9,223.8,229.6,232.4,239.5,245.4,251.2,254.0,256.8,262.7,266.7,270.7,274.6,278.6,282.6,286.5,290.5,294.5,298.5,302.4,306.4,310.4,312.6,315.4,319.4,322.1,328.3,332.5,336.5,340.4,342.7,346.2,349.0,354.8,358.3,361.5,365.0,369.0,372.1,375.4" style="fill:rgb(0,0,0);font-family:CMR7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">This work was supported by ONR MURI N000141010933, a Google Research</text>
+   <text svgx:width="0.5,0.56,0.55,0.68,0.75,0.56,0.72,0.75,0.63,0.55,0.75,0.78,0.72,0.55,0.5,0.5,0.5,0.5,0.55,0.39,0.44,0.39,0.39,0.28,0.55,0.78,0.56,0.39,0.55,0.83,0.44,0.5,0.56,0.55,0.75,0.68" y="557.2" x="150.0,155.0,160.6,162.9,168.9,176.3,181.9,189.1,196.5,202.8,205.2,212.3,220.1,227.3,229.7,234.7,239.7,244.6,249.6,252.0,255.9,260.3,264.3,268.1,270.9,273.3,281.0,286.6,290.5,292.9,301.2,305.6,310.6,316.2,318.5,326.0" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">on PASCAL VOC 2012 test. Our mean AP</text>
   </g>
   <g>
-   <rect x="34.0" y="535.4" width="345.84999999999997" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>7.0; Grant and a Microsoft Research fellowship. We thank the NVIDIA Corporation for providing GPUs; null</title>
+   <rect x="332.8" y="546.6" width="3.5" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; b; null</title>
    </rect>
-   <text svgx:width="0.88,0.45,0.57,0.63,0.45,0.55,0.57,0.63,0.63,0.55,0.57,0.55,1.03,0.32,0.51,0.45,0.57,0.45,0.57,0.35,0.45,0.55,0.83,0.51,0.45,0.51,0.57,0.45,0.51,0.63,0.55,0.35,0.51,0.32,0.32,0.57,0.82,0.45,0.63,0.32,0.63,0.32,0.55,1.15,0.51,0.55,0.45,0.63,0.57,0.63,0.6,0.55,0.45,0.63,0.51,0.55,0.84,0.84,0.41,0.86,0.41,0.84,0.55,0.82,0.57,0.45,0.63,0.57,0.45,0.57,0.45,0.32,0.57,0.63,0.55,0.35,0.57,0.45,0.55,0.63,0.45,0.57,0.6,0.32,0.63,0.32,0.63,0.57,0.55,0.88,0.77,0.84,0.45" y="542.4" x="34.0,40.2,43.3,47.3,51.4,54.6,57.0,61.0,65.4,69.8,72.3,76.2,78.7,85.9,88.1,91.7,94.8,98.7,101.9,105.9,108.3,111.5,113.9,119.7,123.2,126.4,129.9,133.9,137.0,140.4,144.7,147.2,149.7,153.2,155.5,157.7,161.5,167.2,170.3,174.7,177.0,181.4,183.6,186.1,193.5,197.1,199.5,202.6,207.0,211.0,215.4,219.6,222.0,225.2,229.6,233.1,235.6,241.4,247.3,250.2,256.2,259.1,264.9,267.4,273.1,277.1,280.2,284.8,288.8,291.9,295.9,299.0,301.2,305.2,309.6,312.1,314.5,318.5,321.6,324.1,328.5,331.6,335.4,339.5,341.8,346.2,348.5,352.9,356.8,359.3,365.5,370.8,376.7" style="fill:rgb(0,0,0);font-family:CMR7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Grant and a Microsoft Research fellowship. We thank the NVIDIA Corporation for providing GPUs</text>
+   <text svgx:width="0.5" y="553.6" x="332.8" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">b</text>
   </g>
   <g>
-   <rect x="34.0" y="543.3" width="114.94" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>7.0; through their academic program.; null</title>
+   <rect x="339.2" y="547.2" width="8.100000000000023" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; of; null</title>
    </rect>
-   <text svgx:width="0.45,0.63,0.45,0.57,0.63,0.57,0.63,0.55,0.45,0.63,0.51,0.32,0.45,0.55,0.57,0.51,0.57,0.63,0.51,0.94,0.32,0.51,0.55,0.63,0.45,0.57,0.57,0.45,0.57,0.94,0.32" y="550.3" x="34.0,37.1,41.5,44.6,48.6,53.0,57.0,61.4,64.1,67.2,71.6,75.1,77.4,80.5,83.2,87.2,90.7,94.7,99.1,102.6,109.2,111.4,115.0,117.6,122.0,125.1,129.1,133.1,136.2,140.2,146.7" style="fill:rgb(0,0,0);font-family:CMR7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">through their academic program.</text>
+   <text svgx:width="0.5,0.31" y="557.2" x="339.2,344.2" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">of</text>
+  </g>
+  <g>
+   <rect x="350.4" y="547.2" width="20.30000000000001" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; 50.7; null</title>
+   </rect>
+   <text svgx:width="0.57,0.57,0.32,0.57" y="557.2" x="350.4,356.1,361.8,365.0" style="fill:rgb(0,0,0);font-family:CMBX10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">50.7</text>
+  </g>
+  <g>
+   <rect x="373.1" y="547.2" width="6.699999999999932" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; is; null</title>
+   </rect>
+   <text svgx:width="0.28,0.39" y="557.2" x="373.1,375.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">is</text>
+  </g>
+  <g>
+   <rect x="34.0" y="559.1" width="183.8" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; an improvement over the R-CNN mean AP; null</title>
+   </rect>
+   <text svgx:width="0.5,0.56,0.55,0.28,0.83,0.56,0.39,0.5,0.53,0.44,0.83,0.44,0.56,0.39,0.55,0.5,0.53,0.44,0.39,0.55,0.39,0.56,0.44,0.55,0.74,0.33,0.72,0.75,0.75,0.55,0.83,0.44,0.5,0.56,0.55,0.75,0.68" y="569.1" x="34.0,39.0,44.6,47.0,49.7,58.0,63.6,67.5,72.2,77.2,81.6,89.9,94.3,99.6,103.5,105.9,110.6,115.6,120.0,123.9,126.3,130.2,135.7,140.1,142.6,149.9,153.3,160.5,167.9,175.4,177.8,186.1,190.6,195.5,201.1,203.5,211.0" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">an improvement over the R-CNN mean AP</text>
+  </g>
+  <g>
+   <rect x="217.8" y="558.5" width="3.5" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; b; null</title>
+   </rect>
+   <text svgx:width="0.5" y="565.5" x="217.8" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">b</text>
+  </g>
+  <g>
+   <rect x="224.2" y="559.1" width="8.099999999999994" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; of; null</title>
+   </rect>
+   <text svgx:width="0.5,0.31" y="569.1" x="224.2,229.2" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">of</text>
+  </g>
+  <g>
+   <rect x="235.4" y="559.1" width="20.399999999999977" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; 49.6; null</title>
+   </rect>
+   <text svgx:width="0.57,0.57,0.32,0.57" y="569.1" x="235.4,241.2,246.9,250.1" style="fill:rgb(0,0,0);font-family:CMBX10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">49.6</text>
+  </g>
+  <g>
+   <rect x="258.2" y="559.1" width="121.70000000000005" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; (both without bounding box; null</title>
+   </rect>
+   <text svgx:width="0.39,0.56,0.5,0.39,0.56,0.55,0.72,0.28,0.39,0.56,0.5,0.56,0.39,0.55,0.56,0.5,0.56,0.56,0.56,0.28,0.56,0.5,0.55,0.56,0.5,0.53" y="569.1" x="258.2,262.1,267.9,272.9,276.8,282.4,284.8,291.9,294.7,298.6,304.1,309.1,314.6,318.5,320.9,326.8,331.7,337.3,342.8,348.4,351.1,356.7,361.6,364.1,369.9,374.6" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">(both without bounding box</text>
+  </g>
+  <g>
+   <rect x="34.0" y="571.1" width="315.59999999999997" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; regression), and much better than other systems, such as SegDPM [14] (; null</title>
+   </rect>
+   <text svgx:width="0.39,0.44,0.5,0.39,0.44,0.39,0.39,0.28,0.5,0.56,0.39,0.28,0.55,0.5,0.56,0.56,0.55,0.83,0.56,0.44,0.56,0.55,0.56,0.44,0.39,0.39,0.44,0.39,0.55,0.39,0.56,0.5,0.56,0.55,0.5,0.39,0.56,0.44,0.39,0.55,0.39,0.53,0.39,0.39,0.44,0.83,0.39,0.28,0.55,0.39,0.56,0.44,0.56,0.55,0.5,0.39,0.55,0.56,0.44,0.5,0.76,0.68,0.92,0.55,0.28,0.5,0.5,0.28,0.55,0.39" y="581.1" x="34.0,37.9,42.3,47.3,51.2,55.7,59.6,63.5,66.3,71.3,76.8,80.7,83.5,86.7,91.7,97.2,102.8,106.0,114.0,119.5,123.7,129.3,132.4,138.3,142.7,146.6,150.4,154.9,158.7,162.0,165.9,171.4,176.4,182.0,185.2,190.1,194.0,199.5,204.0,207.9,211.1,215.0,220.3,224.2,228.1,232.5,240.8,244.8,247.5,250.8,254.7,260.2,264.4,270.0,273.2,278.1,282.0,285.3,290.8,295.3,300.2,307.8,314.6,323.8,327.0,329.8,334.7,339.7,342.5,345.7" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">regression), and much better than other systems, such as SegDPM [14] (</text>
+  </g>
+  <g>
+   <rect x="349.6" y="571.1" width="20.299999999999955" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; 40.7; null</title>
+   </rect>
+   <text svgx:width="0.57,0.57,0.32,0.57" y="581.1" x="349.6,355.3,361.1,364.2" style="fill:rgb(0,0,0);font-family:CMBX10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">40.7</text>
+  </g>
+  <g>
+   <rect x="370.0" y="571.1" width="6.600000000000023" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; ).; null</title>
+   </rect>
+   <text svgx:width="0.39,0.28" y="581.1" x="370.0,373.8" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">).</text>
   </g>
   <line x1="34.0" y1="50.0" x2="34.0" y2="750.0" style="stroke:blue;stroke-width:1.0;"/>
-  <line x1="260.0" y1="50.0" x2="260.0" y2="750.0" style="stroke:blue;stroke-width:0.4;"/>
-  <line x1="208.0" y1="50.0" x2="208.0" y2="750.0" style="stroke:blue;stroke-width:0.4;"/>
-  <line x1="157.0" y1="50.0" x2="157.0" y2="750.0" style="stroke:blue;stroke-width:0.4;"/>
-  <line x1="105.0" y1="50.0" x2="105.0" y2="750.0" style="stroke:blue;stroke-width:0.3333333333333333;"/>
-  <line x1="92.0" y1="50.0" x2="92.0" y2="750.0" style="stroke:blue;stroke-width:0.26666666666666666;"/>
-  <line x1="54.0" y1="50.0" x2="54.0" y2="750.0" style="stroke:blue;stroke-width:0.26666666666666666;"/>
-  <line x1="311.0" y1="50.0" x2="311.0" y2="750.0" style="stroke:blue;stroke-width:0.26666666666666666;"/>
-  <line x1="130.0" y1="50.0" x2="130.0" y2="750.0" style="stroke:blue;stroke-width:0.2;"/>
-  <line x1="199.0" y1="50.0" x2="199.0" y2="750.0" style="stroke:blue;stroke-width:0.13333333333333333;"/>
-  <line x1="274.0" y1="50.0" x2="274.0" y2="750.0" style="stroke:blue;stroke-width:0.13333333333333333;"/>
-  <line x1="83.0" y1="50.0" x2="83.0" y2="750.0" style="stroke:blue;stroke-width:0.13333333333333333;"/>
-  <line x1="221.0" y1="50.0" x2="221.0" y2="750.0" style="stroke:blue;stroke-width:0.13333333333333333;"/>
-  <line x1="158.0" y1="50.0" x2="158.0" y2="750.0" style="stroke:blue;stroke-width:0.13333333333333333;"/>
-  <line x1="292.0" y1="50.0" x2="292.0" y2="750.0" style="stroke:blue;stroke-width:0.13333333333333333;"/>
-  <line x1="301.0" y1="50.0" x2="301.0" y2="750.0" style="stroke:blue;stroke-width:0.13333333333333333;"/>
-  <line x1="302.0" y1="50.0" x2="302.0" y2="750.0" style="stroke:blue;stroke-width:0.13333333333333333;"/>
-  <line x1="124.0" y1="50.0" x2="124.0" y2="750.0" style="stroke:blue;stroke-width:0.13333333333333333;"/>
+  <line x1="220.0" y1="50.0" x2="220.0" y2="750.0" style="stroke:blue;stroke-width:0.16;"/>
+  <line x1="49.0" y1="50.0" x2="49.0" y2="750.0" style="stroke:blue;stroke-width:0.12;"/>
+  <line x1="322.0" y1="50.0" x2="322.0" y2="750.0" style="stroke:blue;stroke-width:0.12;"/>
+  <line x1="214.0" y1="50.0" x2="214.0" y2="750.0" style="stroke:blue;stroke-width:0.12;"/>
+  <line x1="287.0" y1="50.0" x2="287.0" y2="750.0" style="stroke:blue;stroke-width:0.08;"/>
+  <line x1="177.0" y1="50.0" x2="177.0" y2="750.0" style="stroke:blue;stroke-width:0.08;"/>
+  <line x1="52.0" y1="50.0" x2="52.0" y2="750.0" style="stroke:blue;stroke-width:0.08;"/>
+  <line x1="65.0" y1="50.0" x2="65.0" y2="750.0" style="stroke:blue;stroke-width:0.08;"/>
+  <line x1="203.0" y1="50.0" x2="203.0" y2="750.0" style="stroke:blue;stroke-width:0.08;"/>
+  <line x1="211.0" y1="50.0" x2="211.0" y2="750.0" style="stroke:blue;stroke-width:0.08;"/>
+  <line x1="216.0" y1="50.0" x2="216.0" y2="750.0" style="stroke:blue;stroke-width:0.08;"/>
+  <line x1="217.0" y1="50.0" x2="217.0" y2="750.0" style="stroke:blue;stroke-width:0.08;"/>
+  <line x1="218.0" y1="50.0" x2="218.0" y2="750.0" style="stroke:blue;stroke-width:0.08;"/>
+  <line x1="222.0" y1="50.0" x2="222.0" y2="750.0" style="stroke:blue;stroke-width:0.08;"/>
+  <line x1="223.0" y1="50.0" x2="223.0" y2="750.0" style="stroke:blue;stroke-width:0.08;"/>
+  <line x1="224.0" y1="50.0" x2="224.0" y2="750.0" style="stroke:blue;stroke-width:0.08;"/>
+  <line x1="96.0" y1="50.0" x2="96.0" y2="750.0" style="stroke:blue;stroke-width:0.08;"/>
+  <line x1="123.0" y1="50.0" x2="123.0" y2="750.0" style="stroke:blue;stroke-width:0.08;"/>
   <line x1="34.0" y1="50.0" x2="34.0" y2="750.0" style="stroke:purple;stroke-width:1.0;"/>
-  <line x1="37.0" y1="50.0" x2="37.0" y2="750.0" style="stroke:purple;stroke-width:0.13333333333333333;"/>
-  <line x1="46.0" y1="50.0" x2="46.0" y2="750.0" style="stroke:purple;stroke-width:0.13333333333333333;"/>
-  <line x1="49.0" y1="50.0" x2="49.0" y2="750.0" style="stroke:purple;stroke-width:0.13333333333333333;"/>
-  <line x1="54.0" y1="50.0" x2="54.0" y2="750.0" style="stroke:purple;stroke-width:0.5333333333333333;"/>
-  <line x1="60.0" y1="50.0" x2="60.0" y2="750.0" style="stroke:purple;stroke-width:0.13333333333333333;"/>
-  <line x1="66.0" y1="50.0" x2="66.0" y2="750.0" style="stroke:purple;stroke-width:0.13333333333333333;"/>
-  <line x1="83.0" y1="50.0" x2="83.0" y2="750.0" style="stroke:purple;stroke-width:0.26666666666666666;"/>
-  <line x1="94.0" y1="50.0" x2="94.0" y2="750.0" style="stroke:purple;stroke-width:0.13333333333333333;"/>
-  <line x1="105.0" y1="50.0" x2="105.0" y2="750.0" style="stroke:purple;stroke-width:0.26666666666666666;"/>
-  <line x1="124.0" y1="50.0" x2="124.0" y2="750.0" style="stroke:purple;stroke-width:0.26666666666666666;"/>
-  <line x1="145.0" y1="50.0" x2="145.0" y2="750.0" style="stroke:purple;stroke-width:0.13333333333333333;"/>
-  <line x1="157.0" y1="50.0" x2="157.0" y2="750.0" style="stroke:purple;stroke-width:1.1333333333333333;"/>
-  <line x1="158.0" y1="50.0" x2="158.0" y2="750.0" style="stroke:purple;stroke-width:0.26666666666666666;"/>
-  <line x1="161.0" y1="50.0" x2="161.0" y2="750.0" style="stroke:purple;stroke-width:0.13333333333333333;"/>
-  <line x1="199.0" y1="50.0" x2="199.0" y2="750.0" style="stroke:purple;stroke-width:0.13333333333333333;"/>
-  <line x1="208.0" y1="50.0" x2="208.0" y2="750.0" style="stroke:purple;stroke-width:0.7333333333333333;"/>
-  <line x1="260.0" y1="50.0" x2="260.0" y2="750.0" style="stroke:purple;stroke-width:0.3333333333333333;"/>
-  <line x1="292.0" y1="50.0" x2="292.0" y2="750.0" style="stroke:purple;stroke-width:0.13333333333333333;"/>
-  <line x1="302.0" y1="50.0" x2="302.0" y2="750.0" style="stroke:purple;stroke-width:0.2;"/>
-  <line x1="311.0" y1="50.0" x2="311.0" y2="750.0" style="stroke:purple;stroke-width:0.4666666666666667;"/>
+  <line x1="51.0" y1="50.0" x2="51.0" y2="750.0" style="stroke:purple;stroke-width:0.08;"/>
+  <line x1="52.0" y1="50.0" x2="52.0" y2="750.0" style="stroke:purple;stroke-width:0.16;"/>
+  <line x1="60.0" y1="50.0" x2="60.0" y2="750.0" style="stroke:purple;stroke-width:0.08;"/>
+  <line x1="65.0" y1="50.0" x2="65.0" y2="750.0" style="stroke:purple;stroke-width:0.08;"/>
+  <line x1="67.0" y1="50.0" x2="67.0" y2="750.0" style="stroke:purple;stroke-width:0.08;"/>
+  <line x1="84.0" y1="50.0" x2="84.0" y2="750.0" style="stroke:purple;stroke-width:0.08;"/>
+  <line x1="90.0" y1="50.0" x2="90.0" y2="750.0" style="stroke:purple;stroke-width:0.08;"/>
+  <line x1="96.0" y1="50.0" x2="96.0" y2="750.0" style="stroke:purple;stroke-width:0.16;"/>
+  <line x1="100.0" y1="50.0" x2="100.0" y2="750.0" style="stroke:purple;stroke-width:0.08;"/>
+  <line x1="123.0" y1="50.0" x2="123.0" y2="750.0" style="stroke:purple;stroke-width:0.08;"/>
+  <line x1="126.0" y1="50.0" x2="126.0" y2="750.0" style="stroke:purple;stroke-width:0.08;"/>
+  <line x1="134.0" y1="50.0" x2="134.0" y2="750.0" style="stroke:purple;stroke-width:0.08;"/>
+  <line x1="139.0" y1="50.0" x2="139.0" y2="750.0" style="stroke:purple;stroke-width:0.08;"/>
+  <line x1="150.0" y1="50.0" x2="150.0" y2="750.0" style="stroke:purple;stroke-width:0.08;"/>
+  <line x1="170.0" y1="50.0" x2="170.0" y2="750.0" style="stroke:purple;stroke-width:0.08;"/>
+  <line x1="177.0" y1="50.0" x2="177.0" y2="750.0" style="stroke:purple;stroke-width:0.12;"/>
+  <line x1="203.0" y1="50.0" x2="203.0" y2="750.0" style="stroke:purple;stroke-width:0.08;"/>
+  <line x1="207.0" y1="50.0" x2="207.0" y2="750.0" style="stroke:purple;stroke-width:0.08;"/>
+  <line x1="211.0" y1="50.0" x2="211.0" y2="750.0" style="stroke:purple;stroke-width:0.08;"/>
+  <line x1="214.0" y1="50.0" x2="214.0" y2="750.0" style="stroke:purple;stroke-width:0.24;"/>
+  <line x1="217.0" y1="50.0" x2="217.0" y2="750.0" style="stroke:purple;stroke-width:0.12;"/>
+  <line x1="218.0" y1="50.0" x2="218.0" y2="750.0" style="stroke:purple;stroke-width:0.16;"/>
+  <line x1="220.0" y1="50.0" x2="220.0" y2="750.0" style="stroke:purple;stroke-width:0.28;"/>
+  <line x1="221.0" y1="50.0" x2="221.0" y2="750.0" style="stroke:purple;stroke-width:0.08;"/>
+  <line x1="223.0" y1="50.0" x2="223.0" y2="750.0" style="stroke:purple;stroke-width:0.12;"/>
+  <line x1="224.0" y1="50.0" x2="224.0" y2="750.0" style="stroke:purple;stroke-width:0.12;"/>
+  <line x1="235.0" y1="50.0" x2="235.0" y2="750.0" style="stroke:purple;stroke-width:0.08;"/>
+  <line x1="322.0" y1="50.0" x2="322.0" y2="750.0" style="stroke:purple;stroke-width:0.08;"/>
   <line x1="379.0" y1="50.0" x2="379.0" y2="750.0" style="stroke:green;stroke-width:1.0;"/>
-  <line x1="4260.0" y1="50.0" x2="4260.0" y2="750.0" style="stroke:green;stroke-width:0.6;"/>
-  <line x1="4157.0" y1="50.0" x2="4157.0" y2="750.0" style="stroke:green;stroke-width:0.6;"/>
-  <line x1="4208.0" y1="50.0" x2="4208.0" y2="750.0" style="stroke:green;stroke-width:0.6;"/>
-  <line x1="4105.0" y1="50.0" x2="4105.0" y2="750.0" style="stroke:green;stroke-width:0.4;"/>
-  <line x1="4054.0" y1="50.0" x2="4054.0" y2="750.0" style="stroke:green;stroke-width:0.4;"/>
-  <line x1="4311.0" y1="50.0" x2="4311.0" y2="750.0" style="stroke:green;stroke-width:0.4;"/>
-  <line x1="130.0" y1="50.0" x2="130.0" y2="750.0" style="stroke:green;stroke-width:0.2;"/>
-  <line x1="134.0" y1="50.0" x2="134.0" y2="750.0" style="stroke:green;stroke-width:0.2;"/>
-  <line x1="266.0" y1="50.0" x2="266.0" y2="750.0" style="stroke:green;stroke-width:0.2;"/>
-  <line x1="4124.0" y1="50.0" x2="4124.0" y2="750.0" style="stroke:green;stroke-width:0.2;"/>
-  <line x1="293.0" y1="50.0" x2="293.0" y2="750.0" style="stroke:green;stroke-width:0.2;"/>
-  <line x1="318.0" y1="50.0" x2="318.0" y2="750.0" style="stroke:green;stroke-width:0.2;"/>
-  <line x1="320.0" y1="50.0" x2="320.0" y2="750.0" style="stroke:green;stroke-width:0.2;"/>
-  <line x1="4292.0" y1="50.0" x2="4292.0" y2="750.0" style="stroke:green;stroke-width:0.2;"/>
-  <line x1="212.0" y1="50.0" x2="212.0" y2="750.0" style="stroke:green;stroke-width:0.2;"/>
-  <line x1="4092.0" y1="50.0" x2="4092.0" y2="750.0" style="stroke:green;stroke-width:0.2;"/>
-  <line x1="37.0" y1="50.0" x2="37.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
-  <line x1="46.0" y1="50.0" x2="46.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="230.0" y1="50.0" x2="230.0" y2="750.0" style="stroke:green;stroke-width:0.8695652173913043;"/>
+  <line x1="57.0" y1="50.0" x2="57.0" y2="750.0" style="stroke:green;stroke-width:0.13043478260869565;"/>
+  <line x1="287.0" y1="50.0" x2="287.0" y2="750.0" style="stroke:green;stroke-width:0.08695652173913043;"/>
+  <line x1="296.0" y1="50.0" x2="296.0" y2="750.0" style="stroke:green;stroke-width:0.08695652173913043;"/>
+  <line x1="309.0" y1="50.0" x2="309.0" y2="750.0" style="stroke:green;stroke-width:0.08695652173913043;"/>
+  <line x1="347.0" y1="50.0" x2="347.0" y2="750.0" style="stroke:green;stroke-width:0.08695652173913043;"/>
+  <line x1="370.0" y1="50.0" x2="370.0" y2="750.0" style="stroke:green;stroke-width:0.08695652173913043;"/>
+  <line x1="36.0" y1="50.0" x2="36.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
   <line x1="61.0" y1="50.0" x2="61.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
-  <line x1="94.0" y1="50.0" x2="94.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
-  <line x1="97.0" y1="50.0" x2="97.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
-  <line x1="98.0" y1="50.0" x2="98.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
-  <line x1="107.0" y1="50.0" x2="107.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="63.0" y1="50.0" x2="63.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="71.0" y1="50.0" x2="71.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="84.0" y1="50.0" x2="84.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="87.0" y1="50.0" x2="87.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="104.0" y1="50.0" x2="104.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
   <line x1="127.0" y1="50.0" x2="127.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
-  <line x1="134.0" y1="50.0" x2="134.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
-  <line x1="142.0" y1="50.0" x2="142.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
-  <line x1="151.0" y1="50.0" x2="151.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
-  <line x1="157.0" y1="50.0" x2="157.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
-  <line x1="199.0" y1="50.0" x2="199.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
-  <line x1="212.0" y1="50.0" x2="212.0" y2="750.0" style="stroke:cyan;stroke-width:2.0;"/>
-  <line x1="266.0" y1="50.0" x2="266.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
-  <line x1="293.0" y1="50.0" x2="293.0" y2="750.0" style="stroke:cyan;stroke-width:2.0;"/>
-  <line x1="308.0" y1="50.0" x2="308.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
-  <line x1="320.0" y1="50.0" x2="320.0" y2="750.0" style="stroke:cyan;stroke-width:2.0;"/>
-  <line x1="379.0" y1="50.0" x2="379.0" y2="750.0" style="stroke:cyan;stroke-width:5.0;"/>
-  <line x1="4054.0" y1="50.0" x2="4054.0" y2="750.0" style="stroke:cyan;stroke-width:4.0;"/>
-  <line x1="4092.0" y1="50.0" x2="4092.0" y2="750.0" style="stroke:cyan;stroke-width:1.5;"/>
-  <line x1="4157.0" y1="50.0" x2="4157.0" y2="750.0" style="stroke:cyan;stroke-width:6.0;"/>
-  <line x1="4208.0" y1="50.0" x2="4208.0" y2="750.0" style="stroke:cyan;stroke-width:5.0;"/>
-  <line x1="4260.0" y1="50.0" x2="4260.0" y2="750.0" style="stroke:cyan;stroke-width:2.5;"/>
-  <line x1="4311.0" y1="50.0" x2="4311.0" y2="750.0" style="stroke:cyan;stroke-width:3.0;"/>
+  <line x1="137.0" y1="50.0" x2="137.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="145.0" y1="50.0" x2="145.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="147.0" y1="50.0" x2="147.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="177.0" y1="50.0" x2="177.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="181.0" y1="50.0" x2="181.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="186.0" y1="50.0" x2="186.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="205.0" y1="50.0" x2="205.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="222.0" y1="50.0" x2="222.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="230.0" y1="50.0" x2="230.0" y2="750.0" style="stroke:cyan;stroke-width:1.5;"/>
+  <line x1="235.0" y1="50.0" x2="235.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="287.0" y1="50.0" x2="287.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="296.0" y1="50.0" x2="296.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="309.0" y1="50.0" x2="309.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="347.0" y1="50.0" x2="347.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="370.0" y1="50.0" x2="370.0" y2="750.0" style="stroke:cyan;stroke-width:1.5;"/>
+  <line x1="379.0" y1="50.0" x2="379.0" y2="750.0" style="stroke:cyan;stroke-width:21.5;"/>
  </g>
 </svg>

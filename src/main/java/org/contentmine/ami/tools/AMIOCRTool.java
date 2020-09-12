@@ -130,7 +130,8 @@ public class AMIOCRTool extends AbstractAMITool implements HasImageDir {
     private String gocrConfig = null;
     
     @Option(names = {"--html"},
-            description = "create structured html") 
+    		arity = "1",
+            description = "create structured html (default true)") 
     boolean outputHtml = true;
 
     @Option(names = {"--maxsize"},

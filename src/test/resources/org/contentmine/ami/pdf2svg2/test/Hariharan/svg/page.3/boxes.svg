@@ -1,422 +1,565 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg height="760.0" width="389.9000000000001" xmlns="http://www.w3.org/2000/svg">
+<svg height="760.0" width="4343.9" xmlns="http://www.w3.org/2000/svg">
  <g>
   <g>
-   <rect x="34.0" y="9.100000000000001" width="302.96000000000004" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>9.0; 4BharathHariharan,PabloArbel´aez,RossGirshick,JitendraMalik; null</title>
+   <rect x="175.9" y="9.100000000000001" width="203.88999999999996" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>9.0; Simultaneous Detection and Segmentation 3; null</title>
    </rect>
-   <text svgx:width="0.51,0.73,0.57,0.51,0.4,0.51,0.4,0.57,0.77,0.51,0.4,0.29,0.57,0.51,0.4,0.51,0.57,0.29,0.7,0.51,0.57,0.29,0.51,0.77,0.4,0.57,0.46,0.29,0.51,0.51,0.46,0.46,0.29,0.76,0.51,0.41,0.41,0.81,0.29,0.4,0.41,0.57,0.29,0.46,0.54,0.29,0.53,0.29,0.4,0.46,0.57,0.57,0.4,0.51,0.94,0.51,0.29,0.29,0.54" y="18.1" x="34.0,67.1,73.6,78.7,83.3,86.9,91.5,95.1,103.3,110.2,114.8,118.4,121.0,126.1,130.7,134.3,138.9,144.1,149.7,155.7,160.3,165.4,168.0,175.7,182.6,186.2,191.6,195.7,198.2,198.2,202.8,206.9,211.0,216.6,223.4,228.0,231.7,238.4,245.6,248.2,251.8,255.4,260.5,263.1,266.9,271.8,277.4,282.2,284.7,288.3,292.4,297.5,302.6,306.2,313.9,322.4,327.0,329.5,332.1" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">4BharathHariharan,PabloArbel´aez,RossGirshick,JitendraMalik</text>
+   <text svgx:width="0.57,0.29,0.86,0.57,0.29,0.4,0.51,0.57,0.46,0.51,0.57,0.41,0.55,0.79,0.46,0.4,0.46,0.46,0.4,0.29,0.51,0.57,0.55,0.51,0.57,0.57,0.55,0.57,0.46,0.51,0.86,0.46,0.57,0.4,0.51,0.4,0.29,0.51,0.57,0.55,0.51" y="18.1" x="175.9,181.0,183.5,191.0,196.1,198.6,202.2,206.8,211.9,216.0,220.7,225.8,229.4,232.5,239.5,243.6,247.2,251.3,255.4,259.0,261.5,266.2,271.3,274.3,278.9,284.1,289.2,292.3,297.4,301.5,306.1,313.8,317.9,322.7,326.3,330.9,334.5,337.1,341.7,346.8,375.2" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Simultaneous Detection and Segmentation 3</text>
   </g>
   <g>
-   <rect x="34.0" y="34.0" width="345.90000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; use object detections fromthe deformable parts model [13] to segment the image,; null</title>
+   <rect x="34.0" y="34.0" width="14.299999999999997" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; AP; null</title>
    </rect>
-   <text svgx:width="0.56,0.39,0.44,0.55,0.5,0.56,0.31,0.44,0.44,0.39,0.55,0.56,0.44,0.39,0.44,0.44,0.39,0.28,0.5,0.56,0.39,0.55,0.31,0.39,0.5,0.83,0.39,0.56,0.44,0.55,0.56,0.44,0.31,0.5,0.39,0.83,0.5,0.56,0.28,0.44,0.55,0.56,0.5,0.39,0.39,0.39,0.55,0.83,0.5,0.56,0.44,0.28,0.55,0.28,0.5,0.5,0.28,0.55,0.39,0.5,0.55,0.39,0.44,0.5,0.83,0.44,0.56,0.39,0.55,0.39,0.56,0.44,0.55,0.28,0.83,0.5,0.5,0.44,0.28" y="44.0" x="34.0,39.6,43.5,47.9,50.3,55.3,61.4,64.5,68.9,73.3,77.2,79.6,85.2,89.6,93.5,97.9,102.3,106.2,109.0,113.9,119.5,123.4,125.8,128.9,132.8,137.8,148.5,152.4,157.9,162.3,164.8,170.3,174.7,177.8,182.8,186.7,195.0,199.9,205.5,208.2,212.6,215.1,220.6,225.6,229.5,233.4,237.3,239.8,248.1,253.3,258.9,263.3,266.1,268.5,271.3,276.2,281.2,284.0,286.4,290.3,295.3,297.7,301.6,306.1,311.1,319.4,323.8,329.0,332.9,335.3,339.2,344.8,349.1,351.6,354.4,362.7,367.7,372.6,377.1" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">use object detections fromthe deformable parts model [13] to segment the image,</text>
+   <text svgx:width="0.75,0.68" y="44.0" x="34.0,41.5" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">AP</text>
   </g>
   <g>
-   <rect x="34.0" y="45.9" width="345.90000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; pasting ﬁgure-ground masks and reasoning about their relative depth ordering.; null</title>
+   <rect x="48.3" y="33.4" width="3.710000000000001" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; r; null</title>
    </rect>
-   <text svgx:width="0.56,0.5,0.39,0.39,0.28,0.56,0.5,0.55,0.56,0.5,0.56,0.39,0.44,0.33,0.5,0.39,0.5,0.56,0.56,0.56,0.55,0.83,0.5,0.39,0.53,0.39,0.55,0.5,0.56,0.56,0.55,0.39,0.44,0.5,0.39,0.5,0.56,0.28,0.56,0.5,0.55,0.5,0.56,0.5,0.56,0.39,0.55,0.39,0.56,0.44,0.28,0.39,0.55,0.39,0.44,0.28,0.5,0.39,0.28,0.53,0.44,0.55,0.56,0.44,0.56,0.39,0.56,0.55,0.5,0.39,0.56,0.44,0.39,0.28,0.56,0.5,0.28" y="55.9" x="34.0,39.6,44.5,48.5,52.3,55.1,60.6,65.6,69.1,74.6,79.6,85.1,89.0,93.4,96.8,101.8,105.7,110.6,116.2,121.7,127.3,130.7,139.0,144.0,147.9,153.2,157.0,160.5,165.5,171.1,176.6,180.0,183.9,188.4,193.3,197.3,202.3,207.8,210.6,216.1,221.1,224.5,229.5,235.3,240.3,245.8,249.7,253.2,257.0,262.6,267.0,269.8,273.6,277.1,281.0,285.4,288.2,293.2,297.1,299.8,304.8,309.2,312.7,318.2,322.7,328.2,332.1,337.6,341.0,346.0,349.9,355.5,359.9,363.8,366.6,372.1,377.1" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">pasting ﬁgure-ground masks and reasoning about their relative depth ordering.</text>
+   <text svgx:width="0.53" y="40.4" x="48.3" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
   </g>
   <g>
-   <rect x="34.0" y="57.900000000000006" width="38.19999999999999" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; Arbel´aez; null</title>
+   <rect x="52.7" y="34.0" width="323.20000000000005" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; , to distinguish it from the traditional bounding box AP, which we call AP; null</title>
    </rect>
-   <text svgx:width="0.75,0.39,0.56,0.44,0.28,0.5,0.5,0.44,0.44" y="67.9" x="34.0,41.5,45.4,51.2,55.6,58.4,58.4,63.4,67.8" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Arbel´aez</text>
+   <text svgx:width="0.28,0.55,0.39,0.5,0.55,0.56,0.28,0.39,0.39,0.28,0.56,0.5,0.56,0.28,0.39,0.56,0.55,0.28,0.39,0.55,0.31,0.39,0.5,0.83,0.55,0.39,0.56,0.44,0.55,0.39,0.39,0.5,0.56,0.28,0.39,0.28,0.5,0.56,0.5,0.28,0.55,0.56,0.5,0.56,0.56,0.56,0.28,0.56,0.5,0.55,0.56,0.5,0.53,0.55,0.75,0.68,0.28,0.55,0.72,0.56,0.28,0.44,0.56,0.55,0.72,0.44,0.55,0.44,0.5,0.28,0.28,0.55,0.75,0.68" y="44.0" x="52.7,55.5,58.5,62.4,67.3,70.4,75.9,78.7,82.6,86.5,89.2,94.8,99.7,105.3,108.0,112.0,117.6,120.5,123.3,127.2,130.2,133.3,137.2,142.1,150.4,153.5,157.3,162.9,167.2,170.3,174.2,178.1,183.1,188.6,191.4,195.3,198.0,203.0,208.5,213.5,216.3,219.3,225.1,230.1,235.6,241.2,246.7,249.5,255.0,260.0,263.0,268.8,273.5,278.8,281.8,289.3,295.2,298.0,301.0,308.2,313.8,316.5,320.7,326.3,329.2,336.2,340.5,343.6,348.0,353.0,355.8,358.6,361.6,369.1" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">, to distinguish it from the traditional bounding box AP, which we call AP</text>
   </g>
   <g>
-   <rect x="74.6" y="57.900000000000006" width="18.30000000000001" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+   <rect x="375.8" y="33.4" width="3.5" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; b; null</title>
+   </rect>
+   <text svgx:width="0.5" y="40.4" x="375.8" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">b</text>
+  </g>
+  <g>
+   <rect x="34.0" y="45.9" width="73.10000000000001" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; (the superscripts; null</title>
+   </rect>
+   <text svgx:width="0.39,0.39,0.56,0.44,0.55,0.39,0.56,0.56,0.44,0.39,0.39,0.44,0.39,0.28,0.56,0.39,0.39" y="55.9" x="34.0,37.9,41.8,47.3,51.7,55.2,59.1,64.6,70.5,74.9,78.8,82.7,87.2,91.1,93.8,99.4,103.2" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">(the superscripts</text>
+  </g>
+  <g>
+   <rect x="110.6" y="45.9" width="4.5" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; r; null</title>
+   </rect>
+   <text svgx:width="0.45" y="55.9" x="110.6" style="fill:rgb(0,0,0);font-family:CMMI10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+  </g>
+  <g>
+   <rect x="118.8" y="45.9" width="16.200000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; and; null</title>
+   </rect>
+   <text svgx:width="0.5,0.56,0.56" y="55.9" x="118.8,123.8,129.4" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">and</text>
+  </g>
+  <g>
+   <rect x="138.3" y="45.9" width="4.300000000000011" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; b; null</title>
+   </rect>
+   <text svgx:width="0.43" y="55.9" x="138.3" style="fill:rgb(0,0,0);font-family:CMMI10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">b</text>
+  </g>
+  <g>
+   <rect x="146.1" y="45.9" width="233.80000000000004" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; correspond to region and bounding box respectively).; null</title>
+   </rect>
+   <text svgx:width="0.44,0.5,0.39,0.39,0.44,0.39,0.56,0.5,0.56,0.56,0.55,0.39,0.5,0.55,0.39,0.44,0.5,0.28,0.5,0.56,0.55,0.5,0.56,0.56,0.55,0.56,0.5,0.56,0.56,0.56,0.28,0.56,0.5,0.55,0.56,0.5,0.53,0.55,0.39,0.44,0.39,0.56,0.44,0.44,0.39,0.28,0.53,0.44,0.28,0.53,0.39,0.28" y="55.9" x="146.1,150.5,155.5,159.4,163.3,167.7,171.6,177.5,182.4,188.0,193.6,197.0,200.8,205.8,209.3,213.2,217.6,222.6,225.3,230.3,235.9,239.3,244.3,249.8,255.4,258.8,264.6,269.6,275.2,280.7,286.2,289.0,294.5,299.5,303.0,308.8,313.5,318.8,322.2,326.1,330.5,334.5,340.3,344.7,349.1,353.0,355.8,360.7,365.2,367.9,373.2,377.1" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">correspond to region and bounding box respectively).</text>
+  </g>
+  <g>
+   <rect x="34.0" y="57.900000000000006" width="14.299999999999997" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; AP; null</title>
+   </rect>
+   <text svgx:width="0.75,0.68" y="67.9" x="34.0,41.5" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">AP</text>
+  </g>
+  <g>
+   <rect x="48.3" y="57.3" width="3.710000000000001" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; r; null</title>
+   </rect>
+   <text svgx:width="0.53" y="64.3" x="48.3" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+  </g>
+  <g>
+   <rect x="56.0" y="57.900000000000006" width="323.9" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; measures the accuracy of segmentation, and also requires the algorithm to; null</title>
+   </rect>
+   <text svgx:width="0.83,0.44,0.5,0.39,0.56,0.39,0.44,0.39,0.55,0.39,0.56,0.44,0.55,0.5,0.44,0.44,0.56,0.39,0.5,0.44,0.53,0.55,0.5,0.31,0.55,0.39,0.44,0.5,0.83,0.44,0.56,0.39,0.5,0.39,0.28,0.5,0.56,0.28,0.55,0.5,0.56,0.56,0.55,0.5,0.28,0.39,0.5,0.55,0.39,0.44,0.53,0.56,0.28,0.39,0.44,0.39,0.55,0.39,0.56,0.44,0.55,0.5,0.28,0.5,0.5,0.39,0.28,0.39,0.56,0.83,0.55,0.39,0.5" y="67.9" x="56.0,64.3,68.7,73.7,77.6,83.1,87.0,91.5,95.4,98.7,102.6,108.1,112.5,115.8,120.8,125.2,129.7,135.2,139.1,144.1,148.5,153.8,157.0,162.0,165.1,168.4,172.3,176.7,181.7,190.0,194.4,199.7,203.6,208.5,212.4,215.2,220.2,225.7,228.5,231.8,236.7,242.3,247.9,251.1,256.1,258.8,262.8,267.8,271.0,274.9,279.4,284.6,290.2,292.9,296.8,301.3,305.2,308.5,312.4,317.9,322.3,325.6,330.6,333.4,338.3,343.3,347.2,350.0,353.9,359.4,367.7,371.0,374.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">measures the accuracy of segmentation, and also requires the algorithm to</text>
+  </g>
+  <g>
+   <rect x="34.0" y="69.8" width="329.3" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; get each instance separately and completely. Our pipeline achieves an AP; null</title>
+   </rect>
+   <text svgx:width="0.5,0.44,0.39,0.55,0.44,0.5,0.44,0.56,0.55,0.28,0.56,0.39,0.39,0.5,0.56,0.44,0.44,0.55,0.39,0.44,0.56,0.5,0.39,0.5,0.39,0.44,0.28,0.53,0.55,0.5,0.56,0.56,0.55,0.44,0.5,0.83,0.56,0.28,0.44,0.39,0.44,0.28,0.53,0.28,0.55,0.78,0.56,0.39,0.55,0.56,0.28,0.56,0.44,0.28,0.28,0.56,0.44,0.55,0.5,0.44,0.56,0.28,0.44,0.53,0.44,0.39,0.55,0.5,0.56,0.55,0.75,0.68" y="79.8" x="34.0,39.0,43.4,47.3,51.4,55.9,60.8,65.0,70.6,74.7,77.4,83.0,86.9,90.8,95.8,101.3,105.7,110.1,114.3,118.2,122.6,128.2,133.2,137.1,142.0,145.9,150.3,153.1,158.4,162.5,167.5,173.0,178.6,182.7,187.1,192.1,200.4,205.9,208.7,213.1,217.0,221.4,224.2,228.6,231.4,235.5,243.3,248.8,252.7,256.9,262.4,265.2,271.0,275.4,278.2,280.9,286.5,290.8,295.0,300.0,304.2,309.7,312.5,316.9,321.9,326.3,330.2,334.4,339.4,344.9,349.0,356.5" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">get each instance separately and completely. Our pipeline achieves an AP</text>
+  </g>
+  <g>
+   <rect x="363.3" y="69.2" width="3.7099999999999795" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; r; null</title>
+   </rect>
+   <text svgx:width="0.53" y="76.2" x="363.3" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+  </g>
+  <g>
+   <rect x="371.8" y="69.8" width="8.100000000000023" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; of; null</title>
+   </rect>
+   <text svgx:width="0.5,0.31" y="79.8" x="371.8,376.8" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">of</text>
+  </g>
+  <g>
+   <rect x="34.0" y="81.8" width="193.70000000000002" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; 49.5% while at the same time improving AP; null</title>
+   </rect>
+   <text svgx:width="0.5,0.5,0.28,0.5,0.83,0.55,0.72,0.56,0.28,0.28,0.44,0.55,0.5,0.39,0.55,0.39,0.56,0.44,0.55,0.39,0.5,0.83,0.44,0.55,0.39,0.28,0.83,0.44,0.55,0.28,0.83,0.56,0.39,0.5,0.53,0.28,0.56,0.5,0.55,0.75,0.68" y="91.8" x="34.0,39.0,44.0,46.7,51.7,60.0,63.3,70.5,76.1,78.8,81.6,86.0,89.4,94.3,98.2,101.5,105.4,111.0,115.3,118.7,122.6,127.6,135.9,140.3,143.7,147.5,150.3,158.6,163.0,166.4,169.1,177.4,183.0,186.9,191.6,196.8,199.6,205.1,210.1,213.4,220.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">49.5% while at the same time improving AP</text>
+  </g>
+  <g>
+   <rect x="227.7" y="81.2" width="3.5" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; b; null</title>
+   </rect>
+   <text svgx:width="0.5" y="88.2" x="227.7" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">b</text>
+  </g>
+  <g>
+   <rect x="235.0" y="81.8" width="137.7" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; from 51.0% (R-CNN) to 53.0%.; null</title>
+   </rect>
+   <text svgx:width="0.31,0.39,0.5,0.83,0.55,0.5,0.5,0.28,0.5,0.83,0.55,0.39,0.74,0.33,0.72,0.75,0.75,0.39,0.55,0.39,0.5,0.55,0.5,0.5,0.28,0.5,0.83,0.28" y="91.8" x="235.0,238.0,241.9,246.9,255.2,258.5,263.5,268.5,271.3,276.3,284.5,287.9,291.8,299.1,302.4,309.6,317.1,324.6,328.4,331.7,335.6,340.6,343.9,348.9,353.9,356.7,361.6,369.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">from 51.0% (R-CNN) to 53.0%.</text>
+  </g>
+  <g>
+   <rect x="49.0" y="93.8" width="330.79999999999995" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; One can argue that the 50% threshold is itself artiﬁcial. For instance if we; null</title>
+   </rect>
+   <text svgx:width="0.78,0.56,0.44,0.55,0.44,0.5,0.56,0.55,0.5,0.39,0.5,0.56,0.44,0.55,0.39,0.56,0.5,0.39,0.55,0.39,0.56,0.44,0.55,0.5,0.5,0.83,0.55,0.39,0.56,0.39,0.44,0.39,0.56,0.5,0.28,0.56,0.55,0.28,0.39,0.55,0.28,0.39,0.39,0.44,0.28,0.31,0.55,0.5,0.39,0.39,0.28,0.56,0.44,0.28,0.5,0.28,0.28,0.55,0.65,0.5,0.39,0.55,0.28,0.56,0.39,0.39,0.5,0.56,0.44,0.44,0.55,0.28,0.31,0.55,0.72,0.44" y="103.8" x="49.0,56.7,62.2,66.6,70.5,75.0,79.9,85.5,89.3,94.3,98.2,103.2,108.7,113.1,117.0,120.9,126.4,131.4,135.3,139.1,143.0,148.5,152.9,156.8,161.8,166.8,175.0,178.9,182.8,188.3,192.2,196.7,200.6,206.1,211.1,213.9,219.5,223.3,226.0,229.9,233.8,236.6,240.5,244.4,248.8,251.6,254.7,258.5,263.5,267.4,271.2,274.0,279.5,284.0,286.7,291.7,294.5,297.3,301.1,306.8,311.8,315.6,319.5,322.3,327.8,331.7,335.6,340.6,346.1,350.6,354.9,358.8,361.6,364.7,368.5,375.4" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">One can argue that the 50% threshold is itself artiﬁcial. For instance if we</text>
+  </g>
+  <g>
+   <rect x="34.0" y="105.7" width="345.79999999999995" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; want to count the number of people in a crowd, we do not need to know their; null</title>
+   </rect>
+   <text svgx:width="0.72,0.5,0.56,0.39,0.55,0.39,0.5,0.55,0.44,0.5,0.56,0.56,0.39,0.55,0.39,0.56,0.44,0.55,0.56,0.56,0.83,0.56,0.44,0.39,0.55,0.5,0.31,0.55,0.56,0.44,0.5,0.56,0.28,0.44,0.55,0.28,0.56,0.55,0.5,0.55,0.44,0.39,0.5,0.72,0.56,0.28,0.55,0.72,0.44,0.55,0.56,0.5,0.55,0.56,0.5,0.39,0.55,0.56,0.44,0.44,0.56,0.55,0.39,0.5,0.55,0.53,0.56,0.5,0.72,0.55,0.39,0.56,0.44,0.28,0.39" y="115.7" x="34.0,40.9,45.9,51.2,55.1,58.7,62.6,67.6,71.3,75.7,80.7,86.2,91.5,95.4,99.1,102.9,108.5,112.8,116.6,121.8,127.4,135.4,141.2,145.6,149.5,153.2,158.2,161.3,164.9,170.8,175.2,180.2,185.7,188.5,192.9,196.6,199.3,204.9,208.6,213.6,217.2,221.7,225.6,230.3,237.5,243.0,245.8,249.5,256.4,260.8,264.5,270.0,275.0,278.7,284.2,289.2,293.1,296.8,302.3,306.8,311.2,316.8,320.4,324.3,329.3,333.0,338.2,343.8,348.5,355.6,359.3,363.2,368.7,373.2,375.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">want to count the number of people in a crowd, we do not need to know their</text>
+  </g>
+  <g>
+   <rect x="34.0" y="117.7" width="345.9" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; accurate segmentations. On the contrary, in a graphics application that seeks to; null</title>
+   </rect>
+   <text svgx:width="0.5,0.44,0.44,0.56,0.39,0.5,0.39,0.44,0.55,0.39,0.44,0.5,0.83,0.44,0.56,0.39,0.5,0.39,0.28,0.5,0.56,0.39,0.28,0.55,0.78,0.56,0.55,0.39,0.56,0.44,0.55,0.44,0.5,0.56,0.39,0.39,0.5,0.39,0.53,0.28,0.55,0.28,0.56,0.55,0.5,0.55,0.5,0.39,0.5,0.56,0.56,0.28,0.44,0.39,0.55,0.5,0.56,0.56,0.28,0.28,0.44,0.5,0.39,0.28,0.5,0.56,0.55,0.39,0.56,0.5,0.39,0.55,0.39,0.44,0.44,0.53,0.39,0.55,0.39,0.5" y="127.7" x="34.0,39.0,43.4,47.9,53.4,57.3,62.3,66.1,70.5,73.6,77.5,81.9,86.9,95.2,99.6,104.9,108.8,113.8,117.6,120.4,125.4,130.9,134.8,137.6,140.6,148.4,153.9,156.9,160.8,166.3,170.7,173.7,178.2,183.1,188.4,192.3,196.2,201.2,205.1,209.5,212.3,215.3,218.0,223.6,226.6,231.5,234.5,239.5,243.4,248.4,253.9,259.5,262.2,266.7,270.6,273.6,278.6,284.1,289.6,292.4,295.2,299.6,304.6,308.5,311.2,316.2,321.8,324.7,328.6,334.2,339.1,343.0,346.0,349.9,354.4,358.8,364.1,367.9,371.0,374.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">accurate segmentations. On the contrary, in a graphics application that seeks to</text>
+  </g>
+  <g>
+   <rect x="34.0" y="129.6" width="345.90000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; matte an object into a scene, we might want extremely accurate segmentations.; null</title>
+   </rect>
+   <text svgx:width="0.83,0.5,0.39,0.39,0.44,0.55,0.5,0.56,0.55,0.5,0.56,0.31,0.44,0.44,0.39,0.55,0.28,0.56,0.39,0.5,0.55,0.5,0.55,0.39,0.44,0.44,0.56,0.44,0.28,0.55,0.72,0.44,0.55,0.83,0.28,0.5,0.56,0.39,0.55,0.72,0.5,0.56,0.39,0.55,0.44,0.53,0.39,0.39,0.44,0.83,0.44,0.28,0.53,0.55,0.5,0.44,0.44,0.56,0.39,0.5,0.39,0.44,0.55,0.39,0.44,0.5,0.83,0.44,0.56,0.39,0.5,0.39,0.28,0.5,0.56,0.39,0.28" y="139.6" x="34.0,42.3,47.3,51.2,55.0,59.4,62.6,67.6,73.2,76.3,81.3,87.4,90.4,94.9,99.3,103.2,106.3,109.1,114.4,118.2,123.2,126.4,131.4,134.5,138.5,142.9,147.3,152.9,157.3,160.1,163.2,170.1,174.5,177.7,186.0,188.8,193.8,199.0,202.9,206.1,213.0,218.0,223.2,227.1,230.3,234.7,240.0,243.8,247.7,252.2,260.5,264.9,267.7,272.9,276.1,281.1,285.5,289.9,295.5,299.4,304.3,308.2,312.6,315.8,319.7,324.2,329.1,337.4,341.9,347.1,351.0,356.0,359.9,362.6,367.6,373.1,377.1" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">matte an object into a scene, we might want extremely accurate segmentations.</text>
+  </g>
+  <g>
+   <rect x="34.0" y="141.6" width="345.90000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; Thus the threshold at which we regard a detection as a true positive depends on; null</title>
+   </rect>
+   <text svgx:width="0.72,0.56,0.56,0.39,0.55,0.39,0.56,0.44,0.55,0.39,0.56,0.39,0.44,0.39,0.56,0.5,0.28,0.56,0.55,0.5,0.39,0.55,0.72,0.56,0.28,0.44,0.56,0.55,0.72,0.44,0.55,0.39,0.44,0.5,0.5,0.39,0.56,0.55,0.5,0.55,0.56,0.44,0.39,0.44,0.44,0.39,0.28,0.5,0.56,0.55,0.5,0.39,0.55,0.5,0.55,0.39,0.39,0.56,0.44,0.55,0.56,0.5,0.39,0.28,0.39,0.28,0.53,0.44,0.55,0.56,0.44,0.56,0.44,0.56,0.56,0.39,0.55,0.5,0.56" y="151.6" x="34.0,41.2,46.5,52.0,55.9,58.8,62.7,68.3,72.6,75.6,79.5,85.0,88.9,93.3,97.3,102.8,107.8,110.5,116.1,119.0,124.0,127.9,130.8,138.0,143.5,146.3,150.4,156.0,158.8,165.8,170.1,173.1,177.0,181.4,186.4,191.4,195.3,200.9,203.8,208.7,211.6,217.2,221.6,225.5,229.9,234.3,238.2,241.0,246.0,251.5,254.4,259.4,263.3,266.2,271.2,274.1,278.0,281.9,287.4,291.8,294.8,300.6,305.6,309.5,312.3,316.1,318.9,323.9,328.3,331.2,336.7,341.2,347.0,351.4,356.9,362.5,366.4,369.3,374.3" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Thus the threshold at which we regard a detection as a true positive depends on</text>
+  </g>
+  <g>
+   <rect x="34.0" y="153.5" width="345.90000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; the application. In general, we want algorithms that do well under a variety of; null</title>
+   </rect>
+   <text svgx:width="0.39,0.56,0.44,0.55,0.5,0.56,0.56,0.28,0.28,0.44,0.5,0.39,0.28,0.5,0.56,0.28,0.55,0.36,0.56,0.55,0.5,0.44,0.56,0.44,0.39,0.5,0.28,0.28,0.55,0.72,0.44,0.55,0.72,0.5,0.56,0.39,0.55,0.5,0.28,0.5,0.5,0.39,0.28,0.39,0.56,0.83,0.39,0.55,0.39,0.56,0.5,0.39,0.55,0.56,0.5,0.55,0.72,0.44,0.28,0.28,0.55,0.56,0.56,0.56,0.44,0.39,0.55,0.5,0.55,0.53,0.5,0.39,0.28,0.44,0.39,0.53,0.55,0.5,0.31" y="163.5" x="34.0,37.9,43.4,47.8,51.4,56.4,61.9,67.5,70.2,73.0,77.4,82.4,86.3,89.1,94.0,99.6,102.4,105.9,109.5,115.1,118.6,123.6,128.0,133.6,138.0,141.9,146.9,149.7,152.4,156.0,162.9,167.3,170.9,177.9,182.8,188.1,192.0,195.5,200.5,203.3,208.3,213.3,217.2,219.9,223.8,229.3,237.6,241.5,245.1,249.0,254.5,259.5,263.4,267.0,272.5,277.5,281.1,288.0,292.4,295.2,298.0,301.5,307.1,312.6,318.1,322.6,326.4,330.0,335.0,338.6,343.3,348.3,352.2,355.0,359.4,363.0,368.3,371.8,376.8" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">the application. In general, we want algorithms that do well under a variety of</text>
+  </g>
+  <g>
+   <rect x="34.0" y="165.5" width="345.79999999999995" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; thresholds. As the threshold varies, the PR curve traces out a PR surface. We; null</title>
+   </rect>
+   <text svgx:width="0.39,0.56,0.39,0.44,0.39,0.56,0.5,0.28,0.56,0.39,0.28,0.55,0.75,0.39,0.55,0.39,0.56,0.44,0.55,0.39,0.56,0.39,0.44,0.39,0.56,0.5,0.28,0.56,0.55,0.53,0.5,0.39,0.28,0.44,0.39,0.28,0.55,0.39,0.56,0.44,0.55,0.68,0.74,0.55,0.44,0.56,0.39,0.53,0.44,0.55,0.39,0.39,0.5,0.44,0.44,0.39,0.55,0.5,0.56,0.39,0.55,0.5,0.55,0.68,0.74,0.55,0.39,0.56,0.39,0.31,0.5,0.44,0.44,0.28,0.55,1.03,0.44" y="175.5" x="34.0,37.9,43.4,47.3,51.8,55.7,61.2,66.2,69.0,74.5,78.4,81.2,84.9,92.4,96.3,100.0,103.9,109.4,113.8,117.6,121.5,127.0,130.9,135.3,139.3,144.8,149.8,152.5,158.1,161.8,166.5,171.5,175.4,178.2,182.6,186.5,189.3,193.0,196.9,202.4,206.8,210.5,217.3,224.7,228.4,232.8,238.3,242.2,247.2,251.6,255.4,259.2,263.2,268.1,272.6,277.0,280.9,284.6,289.6,295.1,299.0,302.7,307.7,311.4,318.2,325.6,329.3,333.2,338.7,342.6,345.7,350.7,355.1,359.5,362.3,366.0,375.4" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">thresholds. As the threshold varies, the PR curve traces out a PR surface. We</text>
+  </g>
+  <g>
+   <rect x="34.0" y="177.4" width="334.6" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; can use the volume under this PR surface as a metric. We call this metric AP; null</title>
+   </rect>
+   <text svgx:width="0.44,0.5,0.56,0.55,0.56,0.39,0.44,0.55,0.39,0.56,0.44,0.55,0.53,0.5,0.28,0.56,0.83,0.44,0.55,0.56,0.56,0.56,0.44,0.39,0.55,0.39,0.56,0.28,0.39,0.55,0.68,0.74,0.55,0.39,0.56,0.39,0.31,0.5,0.44,0.44,0.55,0.5,0.39,0.55,0.5,0.55,0.83,0.44,0.39,0.39,0.28,0.44,0.28,0.55,1.03,0.44,0.55,0.44,0.5,0.28,0.28,0.55,0.39,0.56,0.28,0.39,0.55,0.83,0.44,0.39,0.39,0.28,0.44,0.55,0.75,0.68" y="187.4" x="34.0,38.4,43.4,49.0,51.9,57.5,61.4,65.8,68.8,72.6,78.2,82.6,85.6,90.5,95.5,98.3,103.8,112.1,116.5,119.5,125.0,130.6,136.1,140.5,144.4,147.4,151.3,156.8,159.6,163.5,166.5,173.2,180.6,183.5,187.5,193.0,196.9,199.9,204.9,209.3,213.7,216.7,221.7,225.6,228.6,233.6,236.5,244.8,249.3,253.1,257.0,259.8,264.2,267.0,270.0,279.4,283.7,286.7,291.2,296.2,298.9,301.7,304.6,308.5,314.1,316.8,320.7,323.7,332.0,336.4,340.3,344.2,347.0,351.4,354.4,361.8" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">can use the volume under this PR surface as a metric. We call this metric AP</text>
+  </g>
+  <g>
+   <rect x="368.6" y="176.8" width="3.7099999999999795" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; r; null</title>
+   </rect>
+   <text svgx:width="0.53" y="183.8" x="368.6" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+  </g>
+  <g>
+   <rect x="368.6" y="183.3" width="10.71999999999997" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; vol; null</title>
+   </rect>
+   <text svgx:width="0.57,0.56,0.36" y="190.3" x="368.6,372.9,376.8" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">vol</text>
+  </g>
+  <g>
+   <rect x="34.0" y="189.4" width="34.599999999999994" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; and AP; null</title>
+   </rect>
+   <text svgx:width="0.5,0.56,0.56,0.55,0.75,0.68" y="199.4" x="34.0,39.0,44.5,50.1,54.3,61.8" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">and AP</text>
+  </g>
+  <g>
+   <rect x="68.6" y="188.8" width="3.5" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; b; null</title>
+   </rect>
+   <text svgx:width="0.5" y="195.8" x="68.6" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">b</text>
+  </g>
+  <g>
+   <rect x="68.6" y="195.2" width="10.620000000000005" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; vol; null</title>
+   </rect>
+   <text svgx:width="0.57,0.56,0.36" y="202.2" x="68.6,72.8,76.7" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">vol</text>
+  </g>
+  <g>
+   <rect x="84.0" y="189.4" width="71.5" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; respectively. AP; null</title>
+   </rect>
+   <text svgx:width="0.39,0.44,0.39,0.56,0.44,0.44,0.39,0.28,0.53,0.44,0.28,0.53,0.28,0.55,0.75,0.68" y="199.4" x="84.0,87.9,92.3,96.3,102.1,106.5,110.9,114.8,117.6,122.6,127.0,129.8,134.2,137.0,141.2,148.7" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">respectively. AP</text>
+  </g>
+  <g>
+   <rect x="155.4" y="188.8" width="3.710000000000008" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; r; null</title>
+   </rect>
+   <text svgx:width="0.53" y="195.8" x="155.4" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+  </g>
+  <g>
+   <rect x="155.4" y="195.2" width="10.719999999999999" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; vol; null</title>
+   </rect>
+   <text svgx:width="0.57,0.56,0.36" y="202.2" x="155.4,159.7,163.6" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">vol</text>
+  </g>
+  <g>
+   <rect x="170.9" y="189.4" width="176.29999999999998" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; has the attractive property that an AP; null</title>
+   </rect>
+   <text svgx:width="0.56,0.5,0.39,0.55,0.39,0.56,0.44,0.55,0.5,0.39,0.39,0.39,0.5,0.44,0.39,0.28,0.53,0.44,0.55,0.56,0.39,0.5,0.56,0.44,0.39,0.39,0.53,0.55,0.39,0.56,0.5,0.39,0.55,0.5,0.56,0.55,0.75,0.68" y="199.4" x="170.9,176.4,181.4,185.3,189.6,193.5,199.0,203.4,207.7,212.6,216.5,220.4,224.3,229.3,233.7,237.6,240.3,245.3,249.7,254.0,259.5,263.4,268.4,274.2,278.6,282.5,286.1,291.4,295.6,299.5,305.0,310.0,313.9,318.1,323.1,328.7,332.9,340.4" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">has the attractive property that an AP</text>
+  </g>
+  <g>
+   <rect x="347.1" y="188.8" width="3.7099999999999795" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; r; null</title>
+   </rect>
+   <text svgx:width="0.53" y="195.8" x="347.1" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+  </g>
+  <g>
+   <rect x="347.1" y="195.2" width="10.71999999999997" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; vol; null</title>
+   </rect>
+   <text svgx:width="0.57,0.56,0.36" y="202.2" x="347.1,351.4,355.3" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">vol</text>
+  </g>
+  <g>
+   <rect x="362.6" y="189.4" width="17.299999999999955" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; of 1; null</title>
+   </rect>
+   <text svgx:width="0.5,0.31,0.55,0.5" y="199.4" x="362.6,367.6,370.7,374.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">of 1</text>
+  </g>
+  <g>
+   <rect x="34.0" y="201.4" width="345.79999999999995" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; implies we can perfectly detect and precisely segment all objects. Our pipeline; null</title>
+   </rect>
+   <text svgx:width="0.28,0.83,0.56,0.28,0.28,0.44,0.39,0.55,0.72,0.44,0.55,0.44,0.5,0.56,0.55,0.56,0.44,0.39,0.31,0.44,0.44,0.39,0.28,0.53,0.55,0.56,0.44,0.39,0.44,0.44,0.39,0.55,0.5,0.56,0.56,0.55,0.56,0.39,0.44,0.44,0.28,0.39,0.44,0.28,0.53,0.55,0.39,0.44,0.5,0.83,0.44,0.56,0.39,0.55,0.5,0.28,0.28,0.55,0.5,0.56,0.31,0.44,0.44,0.39,0.39,0.28,0.55,0.78,0.56,0.39,0.55,0.56,0.28,0.56,0.44,0.28,0.28,0.56,0.44" y="211.4" x="34.0,36.8,45.1,50.6,53.4,56.2,60.6,64.5,68.2,75.1,79.5,83.2,87.7,92.6,98.2,101.9,107.7,112.1,116.0,119.0,123.5,127.9,131.8,134.5,139.8,143.5,149.0,153.5,157.3,161.8,166.2,170.1,173.7,178.7,184.3,189.8,193.5,199.0,202.9,207.3,211.8,214.5,218.5,222.9,225.7,230.9,234.6,238.5,243.0,248.0,256.3,260.7,265.9,269.8,273.5,278.5,281.3,284.0,287.7,292.7,298.8,301.8,306.2,310.7,314.6,318.5,321.3,324.9,332.7,338.2,342.1,345.8,351.3,354.1,359.9,364.3,367.1,369.9,375.4" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">implies we can perfectly detect and precisely segment all objects. Our pipeline</text>
+  </g>
+  <g>
+   <rect x="34.0" y="213.3" width="48.7" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; gets an AP; null</title>
+   </rect>
+   <text svgx:width="0.5,0.44,0.39,0.39,0.55,0.5,0.56,0.55,0.75,0.68" y="223.3" x="34.0,39.0,43.4,47.3,51.2,54.5,59.5,65.1,68.4,75.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">gets an AP</text>
+  </g>
+  <g>
+   <rect x="82.6" y="212.7" width="3.7099999999999937" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; r; null</title>
+   </rect>
+   <text svgx:width="0.53" y="219.7" x="82.6" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">r</text>
+  </g>
+  <g>
+   <rect x="82.6" y="219.1" width="10.719999999999999" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; vol; null</title>
+   </rect>
+   <text svgx:width="0.57,0.56,0.36" y="226.1" x="82.6,86.9,90.8" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">vol</text>
+  </g>
+  <g>
+   <rect x="97.2" y="213.3" width="112.8" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; of 41.4%. We improve AP; null</title>
+   </rect>
+   <text svgx:width="0.5,0.31,0.55,0.5,0.5,0.28,0.5,0.83,0.28,0.55,1.03,0.44,0.55,0.28,0.83,0.56,0.39,0.5,0.53,0.44,0.55,0.75,0.68" y="223.3" x="97.2,102.2,105.3,108.5,113.5,118.5,121.3,126.2,134.5,137.3,140.6,150.0,154.4,157.8,160.6,168.9,174.4,178.3,183.0,188.0,192.4,195.7,203.2" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">of 41.4%. We improve AP</text>
+  </g>
+  <g>
+   <rect x="210.0" y="212.7" width="3.5" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; b; null</title>
+   </rect>
+   <text svgx:width="0.5" y="219.7" x="210.0" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">b</text>
+  </g>
+  <g>
+   <rect x="210.0" y="219.1" width="10.719999999999999" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.0; vol; null</title>
+   </rect>
+   <text svgx:width="0.57,0.56,0.36" y="226.1" x="210.0,214.2,218.2" style="fill:rgb(0,0,0);font-family:CMMI7;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">vol</text>
+  </g>
+  <g>
+   <rect x="224.5" y="213.3" width="137.8" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; from 41.9% (R-CNN) to 44.2%.; null</title>
+   </rect>
+   <text svgx:width="0.31,0.39,0.5,0.83,0.55,0.5,0.5,0.28,0.5,0.83,0.55,0.39,0.74,0.33,0.72,0.75,0.75,0.39,0.55,0.39,0.5,0.55,0.5,0.5,0.28,0.5,0.83,0.28" y="223.3" x="224.5,227.6,231.5,236.5,244.7,248.1,253.1,258.0,260.8,265.8,274.1,277.4,281.3,288.6,291.9,299.1,306.6,314.1,318.0,321.3,325.2,330.1,333.5,338.4,343.4,346.2,351.2,359.5" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">from 41.9% (R-CNN) to 44.2%.</text>
+  </g>
+  <g>
+   <rect x="49.0" y="225.3" width="330.79999999999995" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; We also ﬁnd that our pipeline furthers the state-of-the-art in the classic; null</title>
+   </rect>
+   <text svgx:width="1.03,0.44,0.55,0.5,0.28,0.39,0.5,0.55,0.56,0.56,0.56,0.55,0.39,0.56,0.5,0.39,0.55,0.5,0.56,0.39,0.55,0.56,0.28,0.56,0.44,0.28,0.28,0.56,0.44,0.55,0.31,0.56,0.39,0.39,0.56,0.44,0.39,0.39,0.55,0.39,0.56,0.44,0.55,0.39,0.39,0.5,0.39,0.44,0.33,0.5,0.31,0.33,0.39,0.56,0.44,0.33,0.5,0.39,0.39,0.55,0.28,0.56,0.55,0.39,0.56,0.44,0.55,0.44,0.28,0.5,0.39,0.39,0.28,0.44" y="235.3" x="49.0,58.4,62.8,67.7,72.7,75.5,79.4,84.4,89.3,94.8,100.4,105.9,110.8,114.7,120.2,125.2,129.1,134.0,139.0,144.5,148.4,153.3,158.8,161.6,167.4,171.8,174.6,177.4,182.9,187.3,192.3,195.3,200.8,204.7,208.6,214.1,218.6,222.5,226.4,231.3,235.2,240.7,245.1,250.1,254.0,257.9,262.8,266.7,271.1,274.5,279.5,282.5,285.8,289.7,295.2,299.7,303.0,308.0,311.9,315.7,320.7,323.4,329.0,333.9,337.7,343.3,347.6,352.6,357.0,359.8,364.8,368.7,372.7,375.4" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">We also ﬁnd that our pipeline furthers the state-of-the-art in the classic</text>
+  </g>
+  <g>
+   <rect x="34.0" y="237.2" width="345.9" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; PASCAL VOC semantic segmentation task, from 47.9% to 52.6%. Last but; null</title>
+   </rect>
+   <text svgx:width="0.68,0.75,0.56,0.72,0.75,0.63,0.55,0.75,0.78,0.72,0.55,0.39,0.44,0.83,0.5,0.56,0.39,0.28,0.44,0.55,0.39,0.44,0.5,0.83,0.44,0.56,0.39,0.5,0.39,0.28,0.5,0.56,0.55,0.39,0.5,0.39,0.53,0.28,0.55,0.31,0.39,0.5,0.83,0.55,0.5,0.5,0.28,0.5,0.83,0.55,0.39,0.5,0.55,0.5,0.5,0.28,0.5,0.83,0.28,0.55,0.63,0.5,0.39,0.39,0.55,0.56,0.56,0.39" y="247.2" x="34.0,40.0,47.4,53.0,60.2,67.6,73.9,78.9,86.0,93.8,101.0,106.0,109.9,114.3,122.6,127.6,132.9,136.8,139.5,143.9,148.9,152.9,157.3,162.3,170.6,175.0,180.3,184.1,189.1,193.0,195.8,200.7,206.3,211.3,215.1,220.1,224.1,229.3,232.1,237.1,240.1,244.0,249.0,257.3,262.3,267.3,272.2,275.0,280.0,288.3,293.3,297.2,302.1,307.1,312.1,317.1,319.9,324.8,333.1,335.9,340.9,347.1,352.1,356.0,359.9,364.9,370.4,376.0" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">PASCAL VOC semantic segmentation task, from 47.9% to 52.6%. Last but</text>
+  </g>
+  <g>
+   <rect x="34.0" y="249.2" width="345.9" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; not the least, following work in object detection [18], we also provide a set; null</title>
+   </rect>
+   <text svgx:width="0.56,0.5,0.39,0.55,0.39,0.56,0.44,0.55,0.28,0.44,0.5,0.39,0.39,0.28,0.55,0.31,0.5,0.28,0.28,0.5,0.72,0.28,0.56,0.5,0.55,0.72,0.5,0.39,0.53,0.55,0.28,0.56,0.55,0.5,0.56,0.31,0.44,0.44,0.39,0.55,0.56,0.44,0.39,0.44,0.44,0.39,0.28,0.5,0.56,0.55,0.28,0.5,0.5,0.28,0.28,0.55,0.72,0.44,0.55,0.5,0.28,0.39,0.5,0.55,0.56,0.39,0.5,0.53,0.28,0.56,0.44,0.55,0.5,0.55,0.39,0.44,0.39" y="259.2" x="34.0,39.6,44.5,48.4,53.4,57.2,62.8,67.2,72.2,74.9,79.4,84.3,88.3,92.1,94.9,99.9,102.9,107.9,110.7,113.4,118.1,125.3,128.1,133.6,138.6,143.6,150.5,155.5,159.4,164.6,169.6,172.3,177.9,182.8,187.8,193.9,197.0,201.4,205.8,209.7,214.6,220.2,224.6,228.5,232.9,237.3,241.2,244.0,249.0,254.5,259.4,262.2,267.2,272.2,274.9,277.7,282.7,289.6,294.0,299.0,303.9,306.7,310.6,315.6,320.6,326.1,330.0,334.7,340.0,342.8,348.3,352.7,357.7,362.7,367.6,371.5,376.0" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">not the least, following work in object detection [18], we also provide a set</text>
+  </g>
+  <g>
+   <rect x="34.0" y="261.1" width="345.79999999999995" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; of diagnostic tools for analyzing common error modes in the SDS task. Our; null</title>
+   </rect>
+   <text svgx:width="0.5,0.31,0.55,0.56,0.28,0.5,0.5,0.56,0.5,0.39,0.39,0.28,0.44,0.55,0.39,0.5,0.5,0.28,0.39,0.55,0.31,0.5,0.39,0.55,0.5,0.56,0.5,0.28,0.53,0.44,0.28,0.56,0.5,0.55,0.44,0.5,0.83,0.83,0.5,0.56,0.55,0.44,0.39,0.39,0.5,0.39,0.55,0.83,0.5,0.56,0.44,0.39,0.55,0.28,0.56,0.55,0.39,0.56,0.44,0.55,0.56,0.76,0.56,0.55,0.39,0.5,0.39,0.53,0.28,0.55,0.78,0.56,0.39" y="271.1" x="34.0,39.0,42.1,46.7,52.2,55.0,60.0,65.0,70.5,75.5,79.4,83.3,86.1,90.5,95.2,99.1,104.3,109.3,112.1,115.9,120.7,123.7,128.7,132.6,137.3,142.3,147.8,152.8,155.5,160.8,165.2,168.0,173.5,178.5,183.2,187.6,192.6,200.9,209.2,214.2,219.8,224.4,228.8,232.7,236.6,241.6,245.5,250.2,258.5,263.7,269.3,273.7,277.6,282.3,285.1,290.7,295.3,299.2,304.7,309.1,313.8,319.3,327.0,332.5,337.2,341.0,346.0,350.0,355.2,358.0,362.7,370.4,375.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">of diagnostic tools for analyzing common error modes in the SDS task. Our</text>
+  </g>
+  <g>
+   <rect x="34.0" y="273.1" width="345.9" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; algorithm, the benchmark and all diagnostic tools are publicly available at; null</title>
+   </rect>
+   <text svgx:width="0.5,0.28,0.5,0.5,0.39,0.28,0.39,0.56,0.83,0.28,0.55,0.39,0.56,0.44,0.55,0.56,0.44,0.56,0.44,0.56,0.83,0.5,0.39,0.53,0.55,0.5,0.56,0.56,0.55,0.5,0.28,0.28,0.55,0.56,0.28,0.5,0.5,0.56,0.5,0.39,0.39,0.28,0.44,0.55,0.39,0.5,0.5,0.28,0.39,0.55,0.5,0.39,0.44,0.55,0.56,0.56,0.56,0.28,0.28,0.44,0.28,0.53,0.55,0.5,0.53,0.5,0.28,0.28,0.5,0.56,0.28,0.44,0.55,0.5,0.39" y="283.1" x="34.0,39.0,41.8,46.7,51.7,55.6,58.4,62.3,67.8,76.1,78.9,84.2,88.1,93.7,98.0,103.4,109.3,113.7,119.2,123.4,128.9,137.2,142.2,146.1,151.4,156.7,161.7,167.2,172.8,178.1,183.1,185.9,188.7,194.0,199.6,202.3,207.3,212.3,217.8,222.8,226.7,230.6,233.4,237.8,243.2,247.0,252.3,257.3,260.0,263.9,269.3,274.3,278.2,282.6,288.0,293.6,299.1,304.6,307.4,310.2,314.6,317.4,322.6,328.0,332.7,337.4,342.4,345.1,347.9,352.9,358.4,361.2,365.6,371.0,376.0" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">algorithm, the benchmark and all diagnostic tools are publicly available at</text>
+  </g>
+  <g>
+   <rect x="34.0" y="285.0" width="312.40000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; http://www.eecs.berkeley.edu/Research/Projects/CS/vision/shape/sds.; null</title>
+   </rect>
+   <text svgx:width="0.56,0.39,0.39,0.56,0.28,0.5,0.5,0.72,0.72,0.72,0.28,0.44,0.44,0.44,0.39,0.28,0.56,0.44,0.39,0.53,0.44,0.28,0.44,0.53,0.28,0.44,0.56,0.56,0.5,0.74,0.44,0.39,0.44,0.5,0.39,0.44,0.56,0.5,0.68,0.39,0.5,0.31,0.44,0.44,0.39,0.39,0.5,0.72,0.56,0.5,0.53,0.28,0.39,0.28,0.5,0.56,0.5,0.39,0.56,0.5,0.56,0.44,0.5,0.39,0.56,0.39,0.28" y="295.0" x="34.0,39.3,43.1,47.0,52.6,55.3,60.3,65.3,72.5,79.7,86.9,89.6,94.1,98.5,102.9,106.9,109.6,115.4,119.9,123.8,128.7,133.2,135.9,140.4,144.8,147.6,152.0,157.5,163.1,168.0,175.4,179.8,183.7,188.2,193.1,197.0,201.2,206.7,211.7,218.5,222.4,227.9,231.0,235.4,239.8,243.7,247.6,252.6,259.8,265.3,270.3,275.6,278.4,282.3,285.0,290.0,295.6,300.5,304.5,310.0,315.0,320.8,325.2,330.2,334.1,339.7,343.6" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">http://www.eecs.berkeley.edu/Research/Projects/CS/vision/shape/sds.</text>
+  </g>
+  <g>
+   <rect x="39.5" y="546.5" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>8.0; image.3.1.40_89.554_588; null</title>
+   </rect>
+   <text class="image" id="image.3.1" width="49" height="33" y="554.5" x="39.5" style="font-size:8.0px;">image.3.1.40_89.554_588</text>
+  </g>
+  <g>
+   <rect x="103.8" y="530.0" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>8.0; image.3.2.104_148.538_560; null</title>
+   </rect>
+   <text class="image" id="image.3.2" width="44" height="22" y="538.0" x="103.8" style="font-size:8.0px;">image.3.2.104_148.538_560</text>
+  </g>
+  <g>
+   <rect x="103.8" y="552.0" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>8.0; image.3.3.104_148.560_582; null</title>
+   </rect>
+   <text class="image" id="image.3.3" width="44" height="22" y="560.0" x="103.8" style="font-size:8.0px;">image.3.3.104_148.560_582</text>
+  </g>
+  <g>
+   <rect x="103.8" y="574.1" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>8.0; image.3.4.104_148.582_604; null</title>
+   </rect>
+   <text class="image" id="image.3.4" width="44" height="22" y="582.1" x="103.8" style="font-size:8.0px;">image.3.4.104_148.582_604</text>
+  </g>
+  <g>
+   <rect x="162.2" y="521.9" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>8.0; image.3.5.162_188.530_556; null</title>
+   </rect>
+   <text class="image" id="image.3.5" width="25" height="25" y="529.9" x="162.2" style="font-size:8.0px;">image.3.5.162_188.530_556</text>
+  </g>
+  <g>
+   <rect x="162.2" y="570.9" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>8.0; image.3.6.162_188.579_605; null</title>
+   </rect>
+   <text class="image" id="image.3.6" width="25" height="25" y="578.9" x="162.2" style="font-size:8.0px;">image.3.6.162_188.579_605</text>
+  </g>
+  <g>
+   <rect x="210.7" y="348.5" width="15.456000000000017" height="7.699999999999989" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.7; Box ; null</title>
+   </rect>
+   <text svgx:width="0.67,0.56,0.5,0.28" y="356.2" x="210.7,215.9,220.1,224.0" style="fill:rgb(255,255,255);font-family:ArialMT;font-size:7.7px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Box </text>
+  </g>
+  <g>
+   <rect x="209.0" y="357.7" width="16.644000000000005" height="7.699999999999989" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.7; CNN; null</title>
+   </rect>
+   <text svgx:width="0.72,0.72,0.72" y="365.4" x="209.0,214.6,220.1" style="fill:rgb(255,255,255);font-family:ArialMT;font-size:7.7px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">CNN</text>
+  </g>
+  <g>
+   <rect x="205.2" y="397.5" width="26.456000000000017" height="7.699999999999989" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.7; Region ; null</title>
+   </rect>
+   <text svgx:width="0.72,0.56,0.56,0.22,0.56,0.56,0.28" y="405.2" x="205.2,210.7,215.0,219.3,221.0,225.3,229.5" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:7.7px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Region </text>
+  </g>
+  <g>
+   <rect x="209.0" y="406.7" width="16.644000000000005" height="7.699999999999989" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.7; CNN; null</title>
+   </rect>
+   <text svgx:width="0.72,0.72,0.72" y="414.4" x="209.0,214.6,220.1" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:7.7px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">CNN</text>
+  </g>
+  <g>
+   <rect x="275.0" y="548.2" width="4000.0" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>8.0; image.3.7.275_320.556_586; null</title>
+   </rect>
+   <text class="image" id="image.3.7" width="44" height="29" y="556.2" x="275.0" style="font-size:8.0px;">image.3.7.275_320.556_586</text>
+  </g>
+  <g>
+   <rect x="333.9" y="548.2" width="3999.9999999999995" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>8.0; image.3.8.334_379.556_586; null</title>
+   </rect>
+   <text class="image" id="image.3.8" width="44" height="29" y="556.2" x="333.9" style="font-size:8.0px;">image.3.8.334_379.556_586</text>
+  </g>
+  <g>
+   <rect x="282.8" y="352.5" width="30.755999999999972" height="7.699999999999989" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.7; Person? ; null</title>
+   </rect>
+   <text svgx:width="0.67,0.56,0.33,0.5,0.56,0.56,0.56,0.28" y="360.2" x="282.8,287.9,292.2,294.7,298.5,302.8,307.1,311.4" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:7.7px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Person? </text>
+  </g>
+  <g>
+   <rect x="289.5" y="361.7" width="15.211999999999989" height="7.699999999999989" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.7; +1.8; null</title>
+   </rect>
+   <text svgx:width="0.58,0.56,0.28,0.56" y="369.4" x="289.5,294.0,298.2,300.4" style="fill:rgb(0,0,0);font-family:Arial-BoldMT;font-size:7.7px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">+1.8</text>
+  </g>
+  <g>
+   <rect x="85.9" y="321.0" width="32.45599999999999" height="7.699999999999989" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.7; Proposal ; null</title>
+   </rect>
+   <text svgx:width="0.67,0.33,0.56,0.56,0.56,0.5,0.56,0.22,0.28" y="328.7" x="85.9,91.1,93.6,97.9,102.2,106.4,110.3,114.5,116.2" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:7.7px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Proposal </text>
+  </g>
+  <g>
+   <rect x="82.1" y="330.2" width="38.012" height="7.699999999999989" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.7; Generation; null</title>
+   </rect>
+   <text svgx:width="0.78,0.56,0.56,0.56,0.33,0.56,0.28,0.22,0.56,0.56" y="337.9" x="82.1,88.1,92.3,96.6,100.9,103.4,107.7,109.8,111.5,115.8" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:7.7px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Generation</text>
+  </g>
+  <g>
+   <rect x="183.1" y="321.0" width="28.55600000000001" height="7.699999999999989" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.7; Feature ; null</title>
+   </rect>
+   <text svgx:width="0.61,0.56,0.56,0.28,0.56,0.33,0.56,0.28" y="328.7" x="183.1,187.8,192.0,196.3,198.4,202.7,205.3,209.5" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:7.7px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Feature </text>
+  </g>
+  <g>
+   <rect x="179.3" y="330.2" width="34.111999999999966" height="7.699999999999989" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.7; Extraction; null</title>
+   </rect>
+   <text svgx:width="0.67,0.5,0.28,0.33,0.56,0.5,0.28,0.22,0.56,0.56" y="337.9" x="179.3,184.4,188.2,190.3,192.9,197.2,201.0,203.1,204.8,209.1" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:7.7px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Extraction</text>
+  </g>
+  <g>
+   <rect x="284.0" y="321.0" width="26.456000000000017" height="7.699999999999989" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.7; Region ; null</title>
+   </rect>
+   <text svgx:width="0.72,0.56,0.56,0.22,0.56,0.56,0.28" y="328.7" x="284.0,289.5,293.8,298.1,299.8,304.0,308.3" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:7.7px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Region </text>
+  </g>
+  <g>
+   <rect x="273.5" y="330.2" width="45.31200000000001" height="7.699999999999989" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.7; Classification; null</title>
+   </rect>
+   <text svgx:width="0.72,0.22,0.56,0.5,0.5,0.22,0.28,0.22,0.5,0.56,0.28,0.22,0.56,0.56" y="337.9" x="273.5,279.1,280.8,285.0,288.9,292.7,294.4,296.6,298.3,302.1,306.4,308.5,310.2,314.5" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:7.7px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Classification</text>
+  </g>
+  <g>
+   <rect x="343.9" y="321.0" width="26.456000000000017" height="7.699999999999989" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.7; Region ; null</title>
+   </rect>
+   <text svgx:width="0.72,0.56,0.56,0.22,0.56,0.56,0.28" y="328.7" x="343.9,349.4,353.7,358.0,359.7,363.9,368.2" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:7.7px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Region </text>
+  </g>
+  <g>
+   <rect x="336.4" y="330.2" width="39.25600000000003" height="7.699999999999989" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>7.7; Refinement; null</title>
+   </rect>
+   <text svgx:width="0.72,0.56,0.28,0.22,0.56,0.56,0.83,0.56,0.56,0.28" y="337.9" x="336.4,342.0,346.2,348.4,350.1,354.3,358.6,365.0,369.3,373.5" style="fill:rgb(0,0,0);font-family:ArialMT;font-size:7.7px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Refinement</text>
+  </g>
+  <g>
+   <rect x="34.0" y="464.9" width="27.97" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>9.0; Fig. 1.; null</title>
+   </rect>
+   <text svgx:width="0.74,0.33,0.59,0.33,0.55,0.59,0.33" y="473.9" x="34.0,40.7,43.6,48.9,51.9,53.7,59.0" style="fill:rgb(0,0,0);font-family:CMBX9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Fig. 1.</text>
+  </g>
+  <g>
+   <rect x="64.3" y="464.9" width="315.59" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>9.0; Overview of our pipeline. Our algorithm is based on classifying region proposals; null</title>
+   </rect>
+   <text svgx:width="0.8,0.54,0.46,0.4,0.54,0.29,0.46,0.74,0.55,0.51,0.31,0.55,0.51,0.57,0.4,0.55,0.57,0.29,0.57,0.46,0.29,0.29,0.57,0.46,0.29,0.55,0.8,0.57,0.4,0.55,0.51,0.29,0.51,0.51,0.4,0.29,0.4,0.57,0.86,0.55,0.29,0.41,0.55,0.57,0.51,0.41,0.46,0.57,0.55,0.51,0.57,0.55,0.46,0.29,0.51,0.41,0.41,0.29,0.31,0.54,0.29,0.57,0.51,0.55,0.4,0.46,0.51,0.29,0.51,0.57,0.55,0.57,0.4,0.51,0.57,0.51,0.41,0.51,0.29,0.41" y="473.9" x="64.3,71.5,76.1,80.2,83.8,88.6,91.2,95.3,101.9,104.3,109.0,111.7,114.2,118.8,123.9,127.5,129.9,135.0,137.6,143.0,147.0,149.6,152.2,157.3,161.4,164.0,166.3,173.5,178.6,182.2,184.6,189.2,191.8,196.4,201.0,204.6,207.2,210.8,215.9,223.6,226.0,228.5,232.2,234.5,239.7,244.3,247.9,252.0,257.1,259.5,264.1,269.2,271.6,275.7,278.3,282.9,286.5,290.2,292.7,295.5,300.4,303.0,308.1,312.7,315.1,318.7,322.8,327.4,330.0,334.6,339.7,342.1,347.2,350.8,355.4,360.8,365.4,369.0,373.7,376.2" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Overview of our pipeline. Our algorithm is based on classifying region proposals</text>
+  </g>
+  <g>
+   <rect x="34.0" y="475.8" width="345.83" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>9.0; using features extracted from both the bounding box of the region and the region; null</title>
+   </rect>
+   <text svgx:width="0.57,0.41,0.29,0.57,0.51,0.55,0.31,0.46,0.51,0.4,0.57,0.4,0.46,0.41,0.55,0.46,0.54,0.4,0.4,0.51,0.46,0.4,0.46,0.57,0.55,0.31,0.4,0.51,0.86,0.55,0.57,0.51,0.4,0.57,0.55,0.4,0.57,0.46,0.55,0.57,0.51,0.57,0.57,0.57,0.29,0.57,0.51,0.55,0.57,0.51,0.54,0.55,0.51,0.31,0.55,0.4,0.57,0.46,0.55,0.4,0.46,0.51,0.29,0.51,0.57,0.55,0.51,0.57,0.57,0.55,0.4,0.57,0.46,0.55,0.4,0.46,0.51,0.29,0.51,0.57" y="484.8" x="34.0,39.1,42.8,45.3,50.5,55.0,59.4,62.2,66.3,70.9,74.5,79.6,83.2,87.3,91.0,95.2,99.3,104.2,107.8,111.4,116.0,120.1,123.7,127.8,132.9,137.2,140.0,143.6,148.2,156.0,160.2,165.6,170.2,173.8,178.9,183.2,186.8,191.9,196.1,200.4,205.7,210.3,215.5,220.6,225.7,228.3,233.4,238.0,242.3,247.7,252.0,256.9,261.2,265.8,268.6,272.9,276.5,281.6,285.8,290.1,293.7,297.8,302.4,304.9,309.5,314.6,319.0,323.6,328.7,333.8,338.1,341.7,346.8,351.0,355.2,358.8,362.9,367.6,370.1,374.7" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">using features extracted from both the bounding box of the region and the region</text>
+  </g>
+  <g>
+   <rect x="34.0" y="486.8" width="345.91" height="9.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>9.0; foreground with a jointly trained CNN. A ﬁnal reﬁnement step improves segmentation.; null</title>
+   </rect>
+   <text svgx:width="0.31,0.51,0.4,0.46,0.51,0.4,0.51,0.57,0.57,0.57,0.55,0.74,0.29,0.4,0.57,0.55,0.51,0.55,0.31,0.51,0.29,0.57,0.4,0.29,0.54,0.55,0.4,0.4,0.51,0.29,0.57,0.46,0.57,0.55,0.74,0.77,0.77,0.29,0.55,0.77,0.55,0.57,0.57,0.51,0.29,0.55,0.4,0.46,0.57,0.57,0.46,0.86,0.46,0.57,0.4,0.55,0.41,0.4,0.46,0.57,0.55,0.29,0.86,0.57,0.4,0.51,0.54,0.46,0.41,0.55,0.41,0.46,0.51,0.86,0.46,0.57,0.4,0.51,0.4,0.29,0.51,0.57,0.29" y="495.8" x="34.0,36.8,41.4,45.0,49.1,53.8,57.4,62.0,67.1,72.2,77.3,79.9,86.5,89.1,92.7,97.8,100.4,104.9,107.5,110.3,114.9,117.5,122.4,126.0,128.5,133.4,135.9,139.5,143.1,147.7,150.3,155.4,159.5,164.6,167.2,173.8,180.7,187.7,190.3,192.8,199.7,202.2,207.4,212.5,217.1,219.7,222.2,225.8,229.9,235.0,240.1,244.2,251.9,256.0,260.9,264.5,267.0,270.7,274.3,278.4,283.5,286.0,288.6,296.3,301.4,305.0,309.3,314.0,318.0,321.7,324.2,327.9,332.0,336.6,344.3,348.4,353.2,356.8,361.4,365.0,367.6,372.2,377.3" style="fill:rgb(0,0,0);font-family:CMR9;font-size:9.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">foreground with a jointly trained CNN. A ﬁnal reﬁnement step improves segmentation.</text>
+  </g>
+  <g>
+   <rect x="34.0" y="535.0" width="98.57999999999998" height="12.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>12.0; 2 Related work; null</title>
+   </rect>
+   <text svgx:width="0.56,0.55,0.84,0.51,0.31,0.55,0.44,0.51,0.63,0.55,0.81,0.56,0.46,0.59" y="547.0" x="34.0,40.7,54.2,64.2,70.4,74.1,80.6,85.9,92.0,99.5,104.0,113.3,120.0,125.5" style="fill:rgb(0,0,0);font-family:CMBX12;font-size:12.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">2 Related work</text>
+  </g>
+  <g>
+   <rect x="34.0" y="559.1" width="345.8" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; For semantic segmentation, several researchers have tried to use activations from; null</title>
+   </rect>
+   <text svgx:width="0.65,0.5,0.39,0.55,0.39,0.44,0.83,0.5,0.56,0.39,0.28,0.44,0.55,0.39,0.44,0.5,0.83,0.44,0.56,0.39,0.5,0.39,0.28,0.5,0.56,0.28,0.55,0.39,0.44,0.53,0.44,0.39,0.5,0.28,0.55,0.39,0.44,0.39,0.44,0.5,0.39,0.44,0.56,0.44,0.39,0.39,0.55,0.56,0.5,0.53,0.44,0.55,0.39,0.39,0.28,0.44,0.56,0.55,0.39,0.5,0.55,0.56,0.39,0.44,0.55,0.5,0.44,0.39,0.28,0.53,0.5,0.39,0.28,0.5,0.56,0.39,0.55,0.31,0.39,0.5,0.83" y="569.1" x="34.0,39.7,44.7,48.6,51.2,55.1,59.6,67.9,72.8,78.1,82.0,84.7,89.1,91.8,95.7,100.2,105.1,113.4,117.9,123.1,127.0,132.0,135.9,138.6,143.6,149.1,151.9,154.5,158.5,162.9,167.9,172.3,176.2,181.2,184.0,186.6,190.5,194.9,198.9,203.3,208.3,212.2,216.3,221.8,226.3,230.2,234.1,236.7,242.3,247.0,252.0,256.3,259.0,262.9,266.8,269.6,274.0,279.6,282.1,286.0,291.0,293.6,299.2,303.1,307.5,310.2,315.1,319.6,323.4,326.2,330.9,335.9,339.8,342.5,347.5,353.1,356.9,359.6,362.7,366.6,371.5" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">For semantic segmentation, several researchers have tried to use activations from</text>
+  </g>
+  <g>
+   <rect x="34.0" y="571.1" width="302.3" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; oﬀ-the-shelf object detectors to guide the segmentation process. Yang; null</title>
+   </rect>
+   <text svgx:width="0.5,0.58,0.33,0.39,0.56,0.44,0.33,0.39,0.56,0.44,0.28,0.31,0.55,0.5,0.56,0.31,0.44,0.44,0.39,0.55,0.56,0.44,0.39,0.44,0.44,0.39,0.5,0.39,0.39,0.55,0.39,0.5,0.55,0.5,0.56,0.28,0.56,0.44,0.55,0.39,0.56,0.44,0.55,0.39,0.44,0.5,0.83,0.44,0.56,0.39,0.5,0.39,0.28,0.5,0.56,0.55,0.56,0.39,0.5,0.44,0.44,0.39,0.39,0.28,0.55,0.75,0.5,0.56,0.5" y="581.1" x="34.0,39.0,44.8,48.1,52.0,57.5,62.0,65.3,69.2,74.8,79.2,81.9,85.0,88.2,93.2,99.2,102.3,106.7,111.1,115.0,118.2,123.7,128.2,132.0,136.5,140.9,144.8,149.7,153.6,157.5,160.8,164.6,169.6,172.8,177.8,183.3,186.1,191.6,196.0,199.2,203.1,208.6,213.0,216.2,220.2,224.6,229.6,237.9,242.3,247.6,251.4,256.4,260.3,263.1,268.0,273.6,276.8,282.3,286.2,291.4,295.9,300.3,304.2,308.2,311.0,314.1,320.8,325.7,331.3" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">oﬀ-the-shelf object detectors to guide the segmentation process. Yang</text>
+  </g>
+  <g>
+   <rect x="339.4" y="571.1" width="19.100000000000023" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>10.0; et al; null</title>
    </rect>
-   <text svgx:width="0.46,0.33,0.55,0.51,0.26" y="67.9" x="74.6,79.2,82.5,85.2,90.3" style="fill:rgb(0,0,0);font-family:CMTI10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">et al</text>
+   <text svgx:width="0.46,0.33,0.55,0.51,0.26" y="581.1" x="339.4,344.0,347.3,350.8,355.9" style="fill:rgb(0,0,0);font-family:CMTI10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">et al</text>
   </g>
   <g>
-   <rect x="92.9" y="57.900000000000006" width="287.0000000000001" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; . [2] use poselet detections [4] as features to score region candidates,; null</title>
+   <rect x="358.4" y="571.1" width="21.500000000000057" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
+    <title>10.0; . [32]; null</title>
    </rect>
-   <text svgx:width="0.28,0.55,0.28,0.5,0.28,0.55,0.56,0.39,0.44,0.55,0.56,0.5,0.39,0.44,0.28,0.44,0.39,0.55,0.56,0.44,0.39,0.44,0.44,0.39,0.28,0.5,0.56,0.39,0.55,0.28,0.5,0.28,0.55,0.5,0.39,0.55,0.31,0.44,0.5,0.39,0.56,0.39,0.44,0.39,0.55,0.39,0.5,0.55,0.39,0.44,0.5,0.39,0.44,0.55,0.39,0.44,0.5,0.28,0.5,0.56,0.55,0.44,0.5,0.56,0.56,0.28,0.56,0.5,0.39,0.44,0.39,0.28" y="67.9" x="92.9,95.7,98.0,100.8,105.8,108.6,111.0,116.5,120.4,124.8,127.2,133.0,138.0,142.0,146.4,149.2,153.6,157.5,159.9,165.4,169.8,173.7,178.1,182.5,186.4,189.2,194.2,199.7,203.6,206.0,208.8,213.8,216.6,218.9,223.9,227.8,230.3,233.3,237.7,242.7,246.6,252.1,256.0,260.4,264.3,266.8,270.6,275.6,278.0,282.0,286.4,291.4,295.3,299.6,302.1,306.0,310.4,315.4,318.2,323.1,328.7,331.1,335.5,340.5,346.0,351.6,354.3,359.9,364.8,368.7,373.1,377.1" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">. [2] use poselet detections [4] as features to score region candidates,</text>
-  </g>
-  <g>
-   <rect x="34.0" y="69.8" width="204.4" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; in addition to appearance-based cues. Ladicky; null</title>
-   </rect>
-   <text svgx:width="0.28,0.56,0.55,0.5,0.56,0.56,0.28,0.39,0.28,0.5,0.56,0.55,0.39,0.5,0.55,0.5,0.56,0.56,0.44,0.5,0.39,0.5,0.56,0.44,0.44,0.33,0.56,0.5,0.39,0.44,0.56,0.55,0.44,0.56,0.44,0.39,0.28,0.55,0.63,0.5,0.56,0.28,0.44,0.53,0.53" y="79.8" x="34.0,36.8,42.4,46.2,51.1,56.7,62.2,65.0,68.8,71.6,76.6,82.2,86.0,89.8,94.8,98.6,103.6,109.2,115.0,119.4,124.4,128.3,133.3,138.8,143.2,147.7,151.0,156.5,161.5,165.4,169.9,175.4,179.2,183.7,189.2,193.6,197.5,200.3,204.1,210.4,215.4,220.9,223.7,227.8,233.1" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">in addition to appearance-based cues. Ladicky</text>
-  </g>
-  <g>
-   <rect x="242.2" y="69.8" width="19.600000000000023" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; et al; null</title>
-   </rect>
-   <text svgx:width="0.46,0.33,0.55,0.51,0.26" y="79.8" x="242.2,246.7,250.0,254.1,259.2" style="fill:rgb(0,0,0);font-family:CMTI10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">et al</text>
-  </g>
-  <g>
-   <rect x="261.7" y="69.8" width="118.09999999999997" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; . [22] use object detections; null</title>
-   </rect>
-   <text svgx:width="0.28,0.55,0.28,0.5,0.5,0.28,0.55,0.56,0.39,0.44,0.55,0.5,0.56,0.31,0.44,0.44,0.39,0.55,0.56,0.44,0.39,0.44,0.44,0.39,0.28,0.5,0.56,0.39" y="79.8" x="261.7,264.5,268.3,271.1,276.1,281.1,283.8,287.7,293.2,297.1,301.5,305.4,310.4,316.5,319.5,323.9,328.4,332.2,336.1,341.6,346.0,349.9,354.3,358.8,362.6,365.4,370.4,375.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">. [22] use object detections</text>
-  </g>
-  <g>
-   <rect x="34.0" y="81.8" width="345.79999999999995" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; as higher order potentials in a CRF-based segmentation system: all pixels in the; null</title>
-   </rect>
-   <text svgx:width="0.5,0.39,0.55,0.56,0.28,0.5,0.56,0.44,0.39,0.55,0.5,0.39,0.56,0.44,0.39,0.55,0.56,0.5,0.39,0.44,0.56,0.39,0.28,0.5,0.28,0.39,0.55,0.28,0.56,0.55,0.5,0.55,0.72,0.74,0.65,0.33,0.56,0.5,0.39,0.44,0.56,0.55,0.39,0.44,0.5,0.83,0.44,0.56,0.39,0.5,0.39,0.28,0.5,0.56,0.55,0.39,0.53,0.39,0.39,0.44,0.83,0.28,0.55,0.5,0.28,0.28,0.55,0.56,0.28,0.53,0.44,0.28,0.39,0.55,0.28,0.56,0.55,0.39,0.56,0.44" y="91.8" x="34.0,39.0,42.9,45.9,51.4,54.2,59.1,64.7,69.1,73.0,75.9,80.9,84.8,90.4,94.8,98.7,101.6,107.4,112.4,116.3,120.7,126.0,129.8,132.6,137.6,140.3,144.2,147.2,150.0,155.5,158.4,163.4,166.3,173.5,180.9,187.4,190.7,196.2,201.2,205.1,209.6,215.1,218.0,222.0,226.4,231.4,239.7,244.1,249.4,253.2,258.2,262.1,264.9,269.8,275.4,278.3,282.2,287.5,291.4,295.3,299.7,308.0,310.8,313.7,318.7,321.5,324.3,327.2,332.7,335.5,340.7,345.2,347.9,351.8,354.8,357.5,363.1,366.0,369.9,375.4" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">as higher order potentials in a CRF-based segmentation system: all pixels in the</text>
-  </g>
-  <g>
-   <rect x="34.0" y="93.8" width="345.79999999999995" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; foreground of a detected object are encouraged to share the category label of the; null</title>
-   </rect>
-   <text svgx:width="0.31,0.5,0.39,0.44,0.5,0.39,0.5,0.56,0.56,0.56,0.55,0.5,0.31,0.55,0.5,0.55,0.56,0.44,0.39,0.44,0.44,0.39,0.44,0.56,0.55,0.5,0.56,0.31,0.44,0.44,0.39,0.55,0.5,0.39,0.44,0.55,0.44,0.56,0.44,0.5,0.56,0.39,0.5,0.5,0.44,0.56,0.55,0.39,0.5,0.55,0.39,0.56,0.5,0.39,0.44,0.55,0.39,0.56,0.44,0.55,0.44,0.5,0.39,0.44,0.5,0.5,0.39,0.53,0.55,0.28,0.5,0.56,0.44,0.28,0.55,0.5,0.31,0.55,0.39,0.56,0.44" y="103.8" x="34.0,37.1,42.0,45.9,50.4,55.4,59.3,64.2,69.8,75.3,80.9,83.6,88.6,91.7,94.3,99.3,102.1,107.6,112.0,115.9,120.3,124.8,128.6,133.1,138.6,141.3,146.3,152.4,155.5,159.9,164.3,168.2,170.9,175.9,179.8,184.2,187.0,191.4,196.9,201.4,206.4,211.9,215.8,220.8,225.8,230.2,235.8,238.5,242.3,247.3,250.1,254.0,259.5,264.5,268.4,272.8,275.6,279.5,285.0,289.4,292.2,296.6,301.6,305.5,309.9,314.9,319.8,323.7,329.0,331.7,334.5,339.5,345.3,349.7,352.5,355.2,360.2,363.3,366.0,369.9,375.4" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">foreground of a detected object are encouraged to share the category label of the</text>
-  </g>
-  <g>
-   <rect x="34.0" y="105.7" width="345.90000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; detection. In addition, their system is allowed to switch oﬀ these potentials by; null</title>
-   </rect>
-   <text svgx:width="0.56,0.44,0.39,0.44,0.44,0.39,0.28,0.5,0.56,0.28,0.55,0.36,0.56,0.55,0.5,0.56,0.56,0.28,0.39,0.28,0.5,0.56,0.28,0.55,0.39,0.56,0.44,0.28,0.39,0.55,0.39,0.53,0.39,0.39,0.44,0.83,0.55,0.28,0.39,0.55,0.5,0.28,0.28,0.5,0.72,0.44,0.56,0.55,0.39,0.5,0.55,0.39,0.72,0.28,0.39,0.44,0.56,0.55,0.5,0.58,0.55,0.39,0.56,0.44,0.39,0.44,0.55,0.56,0.5,0.39,0.44,0.56,0.39,0.28,0.5,0.28,0.39,0.55,0.56,0.53" y="115.7" x="34.0,39.6,44.0,47.9,52.3,56.7,60.6,63.4,68.3,73.9,76.7,80.3,83.9,89.5,93.1,98.1,103.6,109.1,111.9,115.8,118.5,123.5,129.0,131.8,135.5,139.3,144.9,149.3,152.1,156.0,159.6,163.6,168.8,172.7,176.6,181.0,189.3,193.0,195.8,199.7,203.3,208.3,211.1,213.9,218.6,225.5,229.9,235.5,239.1,243.0,248.0,251.6,255.5,262.7,265.5,269.4,273.5,279.1,282.7,287.7,293.5,297.2,301.0,306.6,311.0,314.9,319.3,323.0,328.8,333.8,337.7,342.1,347.4,351.2,354.0,359.0,361.8,365.6,369.3,374.6" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">detection. In addition, their system is allowed to switch oﬀ these potentials by</text>
-  </g>
-  <g>
-   <rect x="34.0" y="117.7" width="345.90000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; assigning a true/false label to each detection. This system was extended by Boix; null</title>
-   </rect>
-   <text svgx:width="0.5,0.39,0.39,0.28,0.5,0.56,0.28,0.56,0.5,0.55,0.5,0.55,0.39,0.39,0.56,0.44,0.5,0.31,0.5,0.28,0.39,0.44,0.55,0.28,0.5,0.56,0.44,0.28,0.55,0.39,0.5,0.55,0.44,0.5,0.44,0.56,0.55,0.56,0.44,0.39,0.44,0.44,0.39,0.28,0.5,0.56,0.28,0.55,0.72,0.56,0.28,0.39,0.55,0.39,0.53,0.39,0.39,0.44,0.83,0.55,0.72,0.5,0.39,0.55,0.44,0.53,0.39,0.44,0.56,0.56,0.44,0.56,0.55,0.56,0.53,0.55,0.71,0.5,0.28,0.53" y="127.7" x="34.0,39.0,42.9,46.9,49.6,54.6,60.1,62.9,68.4,73.4,76.2,81.2,84.0,87.9,91.8,97.3,101.8,106.7,109.8,114.8,117.5,121.5,125.8,128.7,131.5,136.4,142.2,146.7,149.5,152.3,156.1,161.1,163.9,168.3,173.3,177.5,183.1,185.8,191.3,195.8,199.6,204.1,208.5,212.4,215.2,220.1,225.7,228.4,231.2,238.4,244.0,246.7,250.6,253.5,257.4,262.7,266.6,270.5,274.9,283.2,286.0,292.9,297.9,301.8,304.6,309.1,314.3,318.2,322.6,328.2,333.7,338.1,343.7,346.5,351.7,357.0,359.8,366.8,371.8,374.6" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">assigning a true/false label to each detection. This system was extended by Boix</text>
-  </g>
-  <g>
-   <rect x="34.0" y="129.6" width="19.300000000000004" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; et al; null</title>
-   </rect>
-   <text svgx:width="0.46,0.33,0.55,0.51,0.26" y="139.6" x="34.0,38.6,41.9,45.6,50.7" style="fill:rgb(0,0,0);font-family:CMTI10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">et al</text>
-  </g>
-  <g>
-   <rect x="53.2" y="129.6" width="326.59999999999997" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; . [3] who added a global, image-level node in the CRF to reason about the; null</title>
-   </rect>
-   <text svgx:width="0.28,0.55,0.28,0.5,0.28,0.55,0.72,0.56,0.5,0.55,0.5,0.56,0.56,0.44,0.56,0.55,0.5,0.55,0.5,0.28,0.5,0.56,0.5,0.28,0.28,0.55,0.28,0.83,0.5,0.5,0.44,0.33,0.28,0.44,0.53,0.44,0.28,0.55,0.56,0.5,0.56,0.44,0.55,0.28,0.56,0.55,0.39,0.56,0.44,0.55,0.72,0.74,0.65,0.55,0.39,0.5,0.55,0.39,0.44,0.5,0.39,0.5,0.56,0.55,0.5,0.56,0.5,0.56,0.39,0.55,0.39,0.56,0.44" y="139.6" x="53.2,56.0,59.4,62.2,67.2,70.0,73.4,80.6,86.1,91.1,94.5,99.5,105.0,110.6,115.0,120.6,124.0,129.0,132.4,137.4,140.2,145.1,150.7,155.7,158.4,161.2,164.6,167.4,175.7,180.7,185.7,190.1,193.4,196.2,200.6,205.6,210.0,212.8,216.2,221.7,227.0,232.5,236.9,240.4,243.2,248.8,252.1,256.0,261.6,265.9,269.4,276.6,283.9,290.4,293.9,297.8,302.7,306.2,310.1,314.5,319.5,323.4,328.4,334.0,337.4,342.4,348.2,353.2,358.7,362.6,366.0,369.9,375.4" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">. [3] who added a global, image-level node in the CRF to reason about the</text>
-  </g>
-  <g>
-   <rect x="34.0" y="141.6" width="193.20000000000002" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; categories present in the image, and by Kim; null</title>
-   </rect>
-   <text svgx:width="0.44,0.5,0.39,0.44,0.5,0.5,0.39,0.28,0.44,0.39,0.55,0.56,0.39,0.44,0.39,0.44,0.56,0.39,0.55,0.28,0.56,0.55,0.39,0.56,0.44,0.55,0.28,0.83,0.5,0.5,0.44,0.28,0.55,0.5,0.56,0.56,0.55,0.56,0.53,0.55,0.78,0.28,0.83" y="151.6" x="34.0,38.4,43.4,47.3,51.7,56.7,61.7,65.6,68.4,72.8,76.7,80.1,85.6,89.5,93.9,97.8,102.3,107.5,111.4,114.7,117.5,123.1,126.4,130.2,135.8,140.2,143.5,146.3,154.6,159.6,164.6,169.0,171.8,175.1,180.1,185.6,191.2,194.5,199.7,205.0,208.3,216.1,218.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">categories present in the image, and by Kim</text>
-  </g>
-  <g>
-   <rect x="230.5" y="141.6" width="19.099999999999994" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; et al; null</title>
-   </rect>
-   <text svgx:width="0.46,0.33,0.55,0.51,0.26" y="151.6" x="230.5,235.1,238.4,242.0,247.0" style="fill:rgb(0,0,0);font-family:CMTI10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">et al</text>
-  </g>
-  <g>
-   <rect x="249.6" y="141.6" width="130.19999999999996" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; . [20] who added relationships; null</title>
-   </rect>
-   <text svgx:width="0.28,0.55,0.28,0.5,0.5,0.28,0.55,0.72,0.56,0.5,0.55,0.5,0.56,0.56,0.44,0.56,0.55,0.39,0.44,0.28,0.5,0.39,0.28,0.5,0.56,0.39,0.56,0.28,0.56,0.39" y="151.6" x="249.6,252.4,255.7,258.5,263.4,268.4,271.2,274.5,281.7,287.3,292.2,295.6,300.5,306.1,311.6,316.0,321.6,324.9,328.8,333.2,336.0,341.0,344.9,347.6,352.6,358.1,362.1,367.6,370.4,375.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">. [20] who added relationships</text>
-  </g>
-  <g>
-   <rect x="34.0" y="153.5" width="203.0" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; between objects. In more recent work, Tighe; null</title>
-   </rect>
-   <text svgx:width="0.56,0.44,0.39,0.72,0.44,0.44,0.56,0.55,0.5,0.56,0.31,0.44,0.44,0.39,0.39,0.28,0.55,0.36,0.56,0.55,0.83,0.5,0.39,0.44,0.55,0.39,0.44,0.44,0.44,0.56,0.39,0.55,0.72,0.5,0.39,0.53,0.28,0.55,0.72,0.28,0.5,0.56,0.44" y="163.5" x="34.0,39.8,44.3,47.9,54.8,59.2,63.6,69.2,73.9,78.9,85.0,88.0,92.5,96.9,100.8,104.7,107.5,112.2,115.8,121.4,126.1,134.4,139.4,143.3,147.7,152.5,156.4,160.8,165.2,169.7,174.9,178.8,183.5,190.5,195.5,199.4,204.6,207.4,212.1,219.3,222.1,227.1,232.6" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">between objects. In more recent work, Tighe</text>
-  </g>
-  <g>
-   <rect x="241.8" y="153.5" width="20.5" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; et al; null</title>
-   </rect>
-   <text svgx:width="0.46,0.33,0.55,0.51,0.26" y="163.5" x="241.8,246.4,249.7,254.6,259.7" style="fill:rgb(0,0,0);font-family:CMTI10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">et al</text>
-  </g>
-  <g>
-   <rect x="262.2" y="153.5" width="117.69999999999999" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; . [31] use exemplar object; null</title>
-   </rect>
-   <text svgx:width="0.28,0.55,0.28,0.5,0.5,0.28,0.55,0.56,0.39,0.44,0.55,0.44,0.53,0.44,0.83,0.56,0.28,0.5,0.39,0.55,0.5,0.56,0.31,0.44,0.44,0.39" y="163.5" x="262.2,265.0,269.7,272.5,277.5,282.5,285.3,290.0,295.5,299.5,303.8,308.6,313.1,318.3,322.8,331.1,336.6,339.4,344.3,348.2,353.0,358.0,364.1,367.1,371.5,376.0" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">. [31] use exemplar object</text>
-  </g>
-  <g>
-   <rect x="34.0" y="165.5" width="288.0" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; detectors to segment out the scene as well as individual instances.; null</title>
-   </rect>
-   <text svgx:width="0.56,0.44,0.39,0.44,0.44,0.39,0.5,0.39,0.39,0.55,0.39,0.5,0.55,0.39,0.44,0.5,0.83,0.44,0.56,0.39,0.55,0.5,0.56,0.39,0.55,0.39,0.56,0.44,0.55,0.39,0.44,0.44,0.56,0.44,0.55,0.5,0.39,0.55,0.72,0.44,0.28,0.28,0.55,0.5,0.39,0.55,0.28,0.56,0.56,0.28,0.53,0.28,0.56,0.56,0.5,0.28,0.55,0.28,0.56,0.39,0.39,0.5,0.56,0.44,0.44,0.39,0.28" y="175.5" x="34.0,39.6,44.0,47.9,52.3,56.7,60.6,65.6,69.5,73.4,76.7,80.6,85.6,88.9,92.8,97.3,102.2,110.5,115.0,120.2,124.1,127.4,132.4,137.9,141.8,145.1,149.0,154.5,158.9,162.3,166.2,170.6,175.1,180.6,185.0,188.4,193.3,197.2,200.6,207.5,211.9,214.7,217.5,220.8,225.8,229.6,233.0,235.8,241.3,246.9,249.6,254.9,257.7,263.2,268.7,273.7,276.5,279.8,282.6,288.1,292.0,295.9,300.9,306.4,310.8,315.3,319.2" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">detectors to segment out the scene as well as individual instances.</text>
-  </g>
-  <g>
-   <rect x="49.0" y="185.1" width="330.90000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; There has also been work on localizing detections better using segmentation.; null</title>
-   </rect>
-   <text svgx:width="0.72,0.56,0.44,0.39,0.44,0.55,0.56,0.5,0.39,0.55,0.5,0.28,0.39,0.5,0.55,0.56,0.44,0.44,0.56,0.55,0.72,0.5,0.39,0.53,0.55,0.5,0.56,0.55,0.28,0.5,0.44,0.5,0.28,0.28,0.44,0.28,0.56,0.5,0.55,0.56,0.44,0.39,0.44,0.44,0.39,0.28,0.5,0.56,0.39,0.55,0.56,0.44,0.39,0.39,0.44,0.39,0.55,0.56,0.39,0.28,0.56,0.5,0.55,0.39,0.44,0.5,0.83,0.44,0.56,0.39,0.5,0.39,0.28,0.5,0.56,0.28" y="195.1" x="49.0,56.2,61.7,66.1,70.0,74.4,77.3,82.9,87.9,91.7,94.7,99.7,102.4,106.4,111.3,114.2,120.0,124.5,128.9,134.5,137.3,144.2,149.2,153.1,158.4,161.3,166.2,171.8,174.7,177.4,182.7,187.1,192.1,194.9,197.6,202.1,204.8,210.4,215.3,218.2,223.8,228.2,232.1,236.5,240.9,244.8,247.6,252.5,258.1,262.0,264.9,270.7,275.1,279.0,282.9,287.3,291.2,294.1,299.6,303.6,306.3,311.9,316.8,319.7,323.7,328.1,333.1,341.4,345.8,351.1,354.9,359.9,363.8,366.6,371.5,377.1" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">There has also been work on localizing detections better using segmentation.</text>
-  </g>
-  <g>
-   <rect x="34.0" y="197.1" width="29.0" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; Parkhi; null</title>
-   </rect>
-   <text svgx:width="0.68,0.5,0.39,0.53,0.56,0.28" y="207.1" x="34.0,40.5,45.5,49.4,54.7,60.2" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Parkhi</text>
-  </g>
-  <g>
-   <rect x="66.7" y="197.1" width="19.499999999999986" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; et al; null</title>
-   </rect>
-   <text svgx:width="0.46,0.33,0.55,0.51,0.26" y="207.1" x="66.7,71.3,74.6,78.6,83.6" style="fill:rgb(0,0,0);font-family:CMTI10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">et al</text>
-  </g>
-  <g>
-   <rect x="86.2" y="197.1" width="293.59999999999997" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; . use color models from predeﬁned rectangles on cat and dog faces; null</title>
-   </rect>
-   <text svgx:width="0.28,0.55,0.56,0.39,0.44,0.55,0.44,0.5,0.28,0.5,0.39,0.55,0.83,0.5,0.56,0.44,0.28,0.39,0.55,0.31,0.39,0.5,0.83,0.55,0.56,0.39,0.44,0.56,0.44,0.56,0.56,0.44,0.56,0.55,0.39,0.44,0.44,0.39,0.5,0.56,0.5,0.28,0.44,0.39,0.55,0.5,0.56,0.55,0.44,0.5,0.39,0.55,0.5,0.56,0.56,0.55,0.56,0.5,0.5,0.55,0.31,0.5,0.44,0.44,0.39" y="207.1" x="86.2,89.0,92.7,98.2,102.2,106.6,110.3,114.8,119.8,122.5,127.5,131.4,135.2,143.5,148.7,154.2,158.7,161.4,165.3,169.1,172.2,176.1,181.0,189.3,193.1,198.6,202.5,207.0,212.5,216.9,222.5,228.0,232.4,238.0,241.7,245.6,250.0,254.5,258.3,263.3,268.9,273.8,276.6,281.0,284.9,288.7,293.7,299.3,303.0,307.4,312.4,316.3,320.0,325.0,330.5,336.1,339.8,345.3,350.3,355.3,359.0,362.1,367.1,371.5,375.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">. use color models from predeﬁned rectangles on cat and dog faces</text>
-  </g>
-  <g>
-   <rect x="34.0" y="209.0" width="345.8" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; to do GrabCut and improve the predicted bounding box [26]. Dai and Hoiem; null</title>
-   </rect>
-   <text svgx:width="0.39,0.5,0.55,0.56,0.5,0.55,0.78,0.39,0.5,0.56,0.72,0.56,0.39,0.55,0.5,0.56,0.56,0.55,0.28,0.83,0.56,0.39,0.5,0.53,0.44,0.55,0.39,0.56,0.44,0.55,0.56,0.39,0.44,0.56,0.28,0.44,0.39,0.44,0.56,0.55,0.56,0.5,0.56,0.56,0.56,0.28,0.56,0.5,0.55,0.56,0.5,0.53,0.55,0.28,0.5,0.5,0.28,0.28,0.55,0.76,0.5,0.28,0.55,0.5,0.56,0.56,0.55,0.75,0.5,0.28,0.44,0.83" y="219.0" x="34.0,37.9,42.9,46.9,52.5,57.4,61.5,69.3,73.2,78.2,83.7,90.9,96.5,100.3,104.4,109.4,114.9,120.5,124.5,127.2,135.6,141.1,145.0,149.7,154.7,159.1,163.2,167.0,172.6,176.9,181.0,186.6,190.5,194.9,200.4,203.2,207.6,211.5,215.9,221.5,225.5,231.3,236.3,241.8,247.4,252.9,255.7,261.2,266.2,270.2,276.1,280.8,286.0,290.1,292.8,297.8,302.8,305.6,308.4,312.4,320.0,325.0,327.8,331.8,336.8,342.3,347.9,351.9,359.4,364.3,367.1,371.5" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">to do GrabCut and improve the predicted bounding box [26]. Dai and Hoiem</text>
-  </g>
-  <g>
-   <rect x="34.0" y="221.0" width="345.79999999999995" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; generalize this to all categories and use instance and category appearance models; null</title>
-   </rect>
-   <text svgx:width="0.5,0.44,0.56,0.44,0.39,0.5,0.28,0.28,0.44,0.44,0.55,0.39,0.56,0.28,0.39,0.55,0.39,0.5,0.55,0.5,0.28,0.28,0.55,0.44,0.5,0.39,0.44,0.5,0.5,0.39,0.28,0.44,0.39,0.55,0.5,0.56,0.56,0.55,0.56,0.39,0.44,0.55,0.28,0.56,0.39,0.39,0.5,0.56,0.44,0.44,0.55,0.5,0.56,0.56,0.55,0.44,0.5,0.39,0.44,0.5,0.5,0.39,0.53,0.55,0.5,0.56,0.56,0.44,0.5,0.39,0.5,0.56,0.44,0.44,0.55,0.83,0.5,0.56,0.44,0.28,0.39" y="231.0" x="34.0,39.0,43.4,49.0,53.4,57.3,62.3,65.0,67.8,72.2,76.6,79.2,83.0,88.6,91.3,95.2,97.8,101.6,106.6,109.1,114.1,116.9,119.7,122.1,126.6,131.5,135.4,139.8,144.8,149.8,153.7,156.5,160.9,164.8,167.3,172.3,177.8,183.4,185.9,191.4,195.3,199.7,202.3,205.0,210.6,214.5,218.4,223.3,228.9,233.3,237.7,240.2,245.2,250.8,256.3,258.8,263.2,268.2,272.1,276.5,281.5,286.5,290.4,295.6,298.1,303.1,308.6,314.4,318.9,323.9,327.8,332.7,338.3,342.7,347.1,349.6,357.9,363.2,368.7,373.1,375.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">generalize this to all categories and use instance and category appearance models</text>
-  </g>
-  <g>
-   <rect x="34.0" y="232.9" width="345.9" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; to improve detection [7]. These approaches do well when the objects are coherent; null</title>
-   </rect>
-   <text svgx:width="0.39,0.5,0.55,0.28,0.83,0.56,0.39,0.5,0.53,0.44,0.55,0.56,0.44,0.39,0.44,0.44,0.39,0.28,0.5,0.56,0.55,0.28,0.5,0.28,0.28,0.55,0.72,0.56,0.44,0.39,0.44,0.55,0.5,0.56,0.56,0.39,0.5,0.5,0.44,0.56,0.44,0.39,0.55,0.56,0.5,0.55,0.72,0.44,0.28,0.28,0.55,0.72,0.56,0.44,0.56,0.55,0.39,0.56,0.44,0.55,0.5,0.56,0.31,0.44,0.44,0.39,0.39,0.55,0.5,0.39,0.44,0.55,0.44,0.5,0.56,0.44,0.39,0.44,0.56,0.39" y="242.9" x="34.0,37.9,42.9,45.4,48.2,56.5,62.0,65.9,70.7,75.6,80.0,82.6,88.2,92.6,96.5,100.9,105.3,109.2,112.0,117.0,122.5,125.1,127.8,132.8,135.6,138.4,140.9,148.1,153.7,158.1,162.0,166.4,169.0,174.0,179.5,185.1,189.0,194.0,198.9,203.1,208.6,213.0,216.9,219.5,225.1,230.1,232.6,239.6,244.0,246.8,249.5,252.1,259.3,264.8,269.2,274.8,277.4,281.2,286.8,291.2,293.8,298.8,304.8,307.9,312.3,316.7,320.6,324.5,327.1,332.1,336.0,340.4,343.0,347.4,352.4,358.0,362.4,366.3,370.7,376.0" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">to improve detection [7]. These approaches do well when the objects are coherent</text>
-  </g>
-  <g>
-   <rect x="34.0" y="244.9" width="345.90000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; in color or texture. This is not true of many categories such as people, where each; null</title>
-   </rect>
-   <text svgx:width="0.28,0.56,0.55,0.44,0.5,0.28,0.5,0.39,0.55,0.5,0.39,0.55,0.39,0.44,0.53,0.39,0.56,0.39,0.44,0.28,0.55,0.72,0.56,0.28,0.39,0.55,0.28,0.39,0.55,0.56,0.5,0.39,0.55,0.39,0.39,0.56,0.44,0.55,0.5,0.31,0.55,0.83,0.5,0.56,0.53,0.55,0.44,0.5,0.39,0.44,0.5,0.5,0.39,0.28,0.44,0.39,0.55,0.39,0.56,0.44,0.56,0.55,0.5,0.39,0.55,0.56,0.44,0.5,0.56,0.28,0.44,0.28,0.55,0.72,0.56,0.44,0.39,0.44,0.55,0.44,0.5,0.44,0.56" y="254.9" x="34.0,36.8,42.4,44.8,49.2,54.2,57.0,62.0,65.9,68.4,73.3,77.2,79.7,83.6,88.0,93.3,97.2,102.7,106.6,111.0,113.8,116.3,123.5,129.0,131.8,135.7,138.2,141.0,144.9,147.4,152.9,157.9,161.8,164.3,168.2,172.1,177.6,182.0,184.5,189.5,192.6,195.0,203.3,208.3,213.6,218.9,221.3,225.8,230.7,234.6,239.0,244.0,249.0,252.9,255.7,260.1,264.0,266.5,270.4,276.0,280.1,285.7,288.2,293.1,297.0,299.6,305.4,309.8,314.8,320.3,323.1,327.5,330.3,332.8,340.0,345.5,349.9,353.8,358.2,360.7,365.2,370.2,374.3" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">in color or texture. This is not true of many categories such as people, where each</text>
-  </g>
-  <g>
-   <rect x="34.0" y="256.9" width="345.9" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; object can be made of multiple regions of diﬀerent appearance. An alternative to; null</title>
-   </rect>
-   <text svgx:width="0.5,0.56,0.31,0.44,0.44,0.39,0.55,0.44,0.5,0.56,0.55,0.56,0.44,0.55,0.83,0.5,0.56,0.44,0.55,0.5,0.31,0.55,0.83,0.56,0.28,0.39,0.28,0.56,0.28,0.44,0.55,0.39,0.44,0.5,0.28,0.5,0.56,0.39,0.55,0.5,0.31,0.55,0.56,0.28,0.58,0.44,0.39,0.44,0.56,0.39,0.55,0.5,0.56,0.56,0.44,0.5,0.39,0.5,0.56,0.44,0.44,0.28,0.55,0.75,0.56,0.55,0.5,0.28,0.39,0.44,0.39,0.56,0.5,0.39,0.28,0.53,0.44,0.55,0.39,0.5" y="266.9" x="34.0,39.0,45.1,48.1,52.6,57.0,60.9,63.5,68.0,72.9,78.5,81.2,87.0,91.4,94.1,102.4,107.4,112.9,117.3,120.0,125.0,128.1,130.7,138.7,144.3,147.0,150.9,153.7,159.2,162.0,166.4,169.1,173.0,177.4,182.4,185.1,190.1,195.7,199.5,202.3,207.3,210.3,213.0,218.5,221.3,227.1,231.5,235.4,239.8,245.1,249.0,251.7,256.6,262.2,268.0,272.4,277.4,281.3,286.3,291.8,296.2,300.7,303.5,306.1,313.6,319.2,321.8,326.8,329.5,333.4,337.8,341.7,347.3,352.3,356.1,358.9,363.9,368.3,371.0,374.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">object can be made of multiple regions of diﬀerent appearance. An alternative to</text>
-  </g>
-  <g>
-   <rect x="34.0" y="268.8" width="83.6" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; doing segmentation; null</title>
-   </rect>
-   <text svgx:width="0.56,0.5,0.28,0.56,0.5,0.55,0.39,0.44,0.5,0.83,0.44,0.56,0.39,0.5,0.39,0.28,0.5,0.56" y="278.8" x="34.0,39.6,44.5,47.3,52.8,57.8,60.1,64.1,68.5,73.5,81.8,86.2,91.5,95.4,100.3,104.2,107.0,112.0" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">doing segmentation</text>
-  </g>
-  <g>
-   <rect x="119.8" y="268.8" width="40.89999999999999" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; post facto; null</title>
-   </rect>
-   <text svgx:width="0.51,0.51,0.41,0.33,0.55,0.31,0.51,0.46,0.33,0.51" y="278.8" x="119.8,124.4,129.5,133.6,136.9,139.5,142.6,147.7,152.3,155.6" style="fill:rgb(0,0,0);font-family:CMTI10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">post facto</text>
-  </g>
-  <g>
-   <rect x="163.6" y="268.8" width="216.19999999999996" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; is to use segmentation to generate object proposals; null</title>
-   </rect>
-   <text svgx:width="0.28,0.39,0.55,0.39,0.5,0.55,0.56,0.39,0.44,0.55,0.39,0.44,0.5,0.83,0.44,0.56,0.39,0.5,0.39,0.28,0.5,0.56,0.55,0.39,0.5,0.55,0.5,0.44,0.56,0.44,0.39,0.5,0.39,0.44,0.55,0.5,0.56,0.31,0.44,0.44,0.39,0.55,0.56,0.39,0.5,0.56,0.5,0.39,0.5,0.28,0.39" y="278.8" x="163.6,166.4,170.3,172.7,176.5,181.5,183.9,189.4,193.3,197.7,200.1,204.0,208.4,213.4,221.7,226.2,231.4,235.3,240.3,244.1,246.9,251.9,257.5,259.8,263.6,268.6,271.0,275.9,280.4,285.9,290.3,294.2,299.2,303.1,307.5,309.8,314.8,320.9,324.0,328.4,332.8,336.7,339.0,344.6,348.5,353.4,359.3,364.2,368.2,373.1,375.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">is to use segmentation to generate object proposals</text>
-  </g>
-  <g>
-   <rect x="34.0" y="280.8" width="345.90000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; which are then classiﬁed. The proposals may be used as just bounding boxes [27]; null</title>
-   </rect>
-   <text svgx:width="0.72,0.56,0.28,0.44,0.56,0.55,0.5,0.39,0.44,0.55,0.39,0.56,0.44,0.56,0.55,0.44,0.28,0.5,0.39,0.39,0.28,0.56,0.44,0.56,0.28,0.55,0.72,0.56,0.44,0.55,0.56,0.39,0.5,0.56,0.5,0.39,0.5,0.28,0.39,0.55,0.83,0.5,0.53,0.55,0.56,0.44,0.55,0.56,0.39,0.44,0.56,0.55,0.5,0.39,0.55,0.31,0.56,0.39,0.39,0.55,0.56,0.5,0.56,0.56,0.56,0.28,0.56,0.5,0.55,0.56,0.5,0.53,0.44,0.39,0.55,0.28,0.5,0.5,0.28" y="290.8" x="34.0,41.2,46.7,49.5,53.7,59.2,61.9,66.9,70.8,75.2,78.0,81.8,87.4,91.8,97.4,100.1,104.5,107.2,112.2,116.2,120.1,122.9,128.4,132.8,138.4,141.1,143.8,151.0,156.6,161.0,163.7,169.3,173.2,178.1,183.9,188.9,192.9,197.8,200.6,204.5,207.3,215.6,220.3,225.5,228.2,234.1,238.4,241.2,246.7,250.7,255.1,260.7,263.4,268.3,272.2,275.0,278.0,283.6,287.5,291.4,294.1,299.9,304.9,310.4,316.0,321.5,324.2,329.8,334.8,337.5,343.3,348.0,353.3,357.7,361.6,364.3,367.1,372.1,377.1" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">which are then classiﬁed. The proposals may be used as just bounding boxes [27]</text>
-  </g>
-  <g>
-   <rect x="34.0" y="292.7" width="345.90000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; or as region proposals [6,1]. These proposals incorporate both the consistency of; null</title>
-   </rect>
-   <text svgx:width="0.5,0.39,0.55,0.5,0.39,0.55,0.39,0.44,0.5,0.28,0.5,0.56,0.55,0.56,0.39,0.5,0.56,0.5,0.39,0.5,0.28,0.39,0.55,0.28,0.5,0.28,0.5,0.28,0.28,0.55,0.72,0.56,0.44,0.39,0.44,0.55,0.56,0.39,0.5,0.56,0.5,0.39,0.5,0.28,0.39,0.55,0.28,0.56,0.44,0.5,0.39,0.56,0.5,0.39,0.5,0.39,0.44,0.55,0.56,0.5,0.39,0.56,0.55,0.39,0.56,0.44,0.55,0.44,0.5,0.56,0.39,0.28,0.39,0.39,0.44,0.56,0.44,0.53,0.55,0.5,0.31" y="302.7" x="34.0,39.0,42.9,45.9,50.8,54.7,57.7,61.6,66.0,71.0,73.8,78.8,84.4,87.3,92.8,96.7,101.7,107.5,112.5,116.4,121.4,124.2,128.0,131.0,133.8,138.8,141.6,146.5,149.3,152.1,155.0,162.2,167.8,172.2,176.1,180.5,183.5,189.0,192.9,197.9,203.7,208.7,212.6,217.6,220.4,224.3,227.3,230.0,235.6,240.0,245.0,248.9,254.7,259.7,263.6,268.6,272.4,276.8,279.8,285.6,290.6,294.5,300.1,303.0,306.9,312.4,316.8,319.8,324.2,329.2,334.7,338.6,341.4,345.3,349.2,353.6,359.2,363.6,368.9,371.8,376.8" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">or as region proposals [6,1]. These proposals incorporate both the consistency of</text>
-  </g>
-  <g>
-   <rect x="34.0" y="304.7" width="345.79999999999995" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; appearance in an object as well as the possibility of having multiple disparate; null</title>
-   </rect>
-   <text svgx:width="0.5,0.56,0.56,0.44,0.5,0.39,0.5,0.56,0.44,0.44,0.55,0.28,0.56,0.55,0.5,0.56,0.55,0.5,0.56,0.31,0.44,0.44,0.39,0.55,0.5,0.39,0.55,0.72,0.44,0.28,0.28,0.55,0.5,0.39,0.55,0.39,0.56,0.44,0.55,0.56,0.5,0.39,0.39,0.28,0.56,0.28,0.28,0.28,0.39,0.53,0.55,0.5,0.31,0.55,0.56,0.5,0.53,0.28,0.56,0.5,0.55,0.83,0.56,0.28,0.39,0.28,0.56,0.28,0.44,0.55,0.56,0.28,0.39,0.56,0.5,0.39,0.5,0.39,0.44" y="314.7" x="34.0,39.0,44.5,50.3,54.8,59.8,63.7,68.6,74.2,78.6,83.0,86.9,89.6,95.2,99.0,104.0,109.6,113.4,118.3,124.4,127.5,131.9,136.3,140.2,144.0,149.0,152.9,156.8,163.7,168.1,170.9,173.7,177.5,182.5,186.4,190.3,194.1,199.7,204.1,207.9,213.8,218.7,222.7,226.6,229.4,234.9,237.7,240.4,243.2,246.8,252.1,255.9,260.9,264.0,267.7,273.3,278.0,283.2,286.0,291.5,296.5,300.4,308.4,313.9,316.7,320.6,323.3,328.9,331.6,336.0,339.9,345.4,348.2,352.1,357.7,362.7,366.6,371.5,375.4" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">appearance in an object as well as the possibility of having multiple disparate</text>
-  </g>
-  <g>
-   <rect x="34.0" y="316.6" width="345.90000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; regions for each object. State-of-the-art detection systems [16] and segmentation; null</title>
-   </rect>
-   <text svgx:width="0.39,0.44,0.5,0.28,0.5,0.56,0.39,0.55,0.31,0.5,0.39,0.55,0.44,0.5,0.44,0.56,0.55,0.5,0.56,0.31,0.44,0.44,0.39,0.28,0.55,0.56,0.39,0.5,0.39,0.44,0.33,0.5,0.31,0.33,0.39,0.56,0.44,0.33,0.5,0.39,0.39,0.55,0.56,0.44,0.39,0.44,0.44,0.39,0.28,0.5,0.56,0.55,0.39,0.53,0.39,0.39,0.44,0.83,0.39,0.55,0.28,0.5,0.5,0.28,0.55,0.5,0.56,0.56,0.55,0.39,0.44,0.5,0.83,0.44,0.56,0.39,0.5,0.39,0.28,0.5,0.56" y="326.6" x="34.0,37.9,42.3,47.3,50.1,55.1,60.6,64.5,67.3,70.4,75.3,79.2,82.0,86.5,91.4,95.6,101.2,103.9,108.9,115.0,118.0,122.4,126.9,130.7,133.5,136.3,141.8,145.7,150.7,154.6,159.0,162.3,167.3,170.3,173.6,177.5,183.1,187.5,190.8,195.8,199.7,203.6,206.3,211.9,216.3,220.2,224.6,229.0,232.9,235.7,240.7,246.2,249.0,252.9,258.2,262.1,266.0,270.4,278.7,282.6,285.4,288.2,293.1,298.1,300.9,303.7,308.7,314.2,319.8,322.5,326.4,330.9,335.8,344.1,348.6,353.8,357.7,362.7,366.6,369.3,374.3" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">regions for each object. State-of-the-art detection systems [16] and segmentation</text>
-  </g>
-  <g>
-   <rect x="34.0" y="328.6" width="195.0" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; systems [5] are now based on these methods.; null</title>
-   </rect>
-   <text svgx:width="0.39,0.53,0.39,0.39,0.44,0.83,0.39,0.55,0.28,0.5,0.28,0.55,0.5,0.39,0.44,0.55,0.56,0.5,0.72,0.55,0.56,0.5,0.39,0.44,0.56,0.55,0.5,0.56,0.55,0.39,0.56,0.44,0.39,0.44,0.55,0.83,0.44,0.39,0.56,0.5,0.56,0.39,0.28" y="338.6" x="34.0,37.9,43.2,47.1,51.0,55.4,63.7,67.6,71.0,73.8,78.7,81.5,84.8,89.8,93.7,98.1,101.5,107.0,111.7,118.9,122.2,127.8,132.7,136.7,141.1,146.7,149.9,154.9,160.5,163.8,167.7,173.2,177.6,181.5,185.9,189.3,197.6,202.0,205.9,211.4,216.7,222.2,226.2" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">systems [5] are now based on these methods.</text>
-  </g>
-  <g>
-   <rect x="49.0" y="348.2" width="330.8" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; In many of these approaches, segmentation is used only to localize the de-; null</title>
-   </rect>
-   <text svgx:width="0.36,0.56,0.55,0.83,0.5,0.56,0.53,0.55,0.5,0.31,0.55,0.39,0.56,0.44,0.39,0.44,0.55,0.5,0.56,0.56,0.39,0.5,0.5,0.44,0.56,0.44,0.39,0.28,0.55,0.39,0.44,0.5,0.83,0.44,0.56,0.39,0.5,0.39,0.28,0.5,0.56,0.55,0.28,0.39,0.55,0.56,0.39,0.44,0.56,0.55,0.5,0.56,0.28,0.53,0.55,0.39,0.5,0.55,0.28,0.5,0.44,0.5,0.28,0.28,0.44,0.44,0.55,0.39,0.56,0.44,0.55,0.56,0.44,0.33" y="358.2" x="49.0,52.6,58.1,62.0,70.3,75.3,80.6,85.8,89.8,94.7,97.8,101.7,105.6,111.1,115.5,119.5,123.9,127.8,132.8,138.4,143.9,147.8,152.8,157.8,161.9,167.4,171.9,175.8,178.6,182.5,186.4,190.9,195.8,204.1,208.6,213.8,217.7,222.7,226.6,229.3,234.3,239.9,243.8,246.5,250.4,254.4,259.9,263.9,268.3,273.9,277.8,282.7,288.3,291.1,296.3,300.2,304.1,309.1,313.0,315.8,321.1,325.5,330.5,333.2,336.0,340.4,344.8,348.8,352.7,358.2,362.6,366.6,372.1,376.5" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">In many of these approaches, segmentation is used only to localize the de-</text>
-  </g>
-  <g>
-   <rect x="34.0" y="360.2" width="345.79999999999995" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; tections better. Other authors have explored using segmentation as a stronger; null</title>
-   </rect>
-   <text svgx:width="0.39,0.44,0.44,0.39,0.28,0.5,0.56,0.39,0.55,0.56,0.44,0.39,0.39,0.44,0.39,0.28,0.55,0.78,0.39,0.56,0.44,0.39,0.55,0.5,0.56,0.39,0.56,0.5,0.39,0.39,0.55,0.56,0.5,0.53,0.44,0.55,0.44,0.53,0.56,0.28,0.5,0.39,0.44,0.56,0.55,0.56,0.39,0.28,0.56,0.5,0.55,0.39,0.44,0.5,0.83,0.44,0.56,0.39,0.5,0.39,0.28,0.5,0.56,0.55,0.5,0.39,0.55,0.5,0.55,0.39,0.39,0.39,0.5,0.56,0.5,0.44,0.39" y="370.2" x="34.0,37.9,42.3,46.7,50.6,53.4,58.4,63.9,67.8,71.7,77.5,81.9,85.8,89.7,94.1,98.0,100.8,104.7,112.4,116.3,121.8,126.2,130.1,134.0,139.0,144.5,148.4,153.9,158.9,162.8,166.7,170.6,176.2,180.9,185.8,190.2,194.1,198.6,203.8,209.4,212.1,217.1,221.0,225.4,231.0,234.9,240.4,244.3,247.1,252.6,257.6,261.5,265.4,269.8,274.8,283.1,287.5,292.8,296.7,301.7,305.5,308.3,313.3,318.9,322.7,327.7,331.5,335.5,340.4,344.3,348.2,352.1,356.0,361.0,366.5,371.5,375.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">tections better. Other authors have explored using segmentation as a stronger</text>
-  </g>
-  <g>
-   <rect x="34.0" y="372.1" width="46.19999999999999" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; cue. Fidler; null</title>
-   </rect>
-   <text svgx:width="0.44,0.56,0.44,0.28,0.55,0.65,0.28,0.56,0.28,0.44,0.39" y="382.1" x="34.0,38.4,44.0,48.4,51.2,54.3,60.8,63.6,69.1,71.9,76.3" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">cue. Fidler</text>
-  </g>
-  <g>
-   <rect x="83.4" y="372.1" width="18.900000000000006" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; et al; null</title>
-   </rect>
-   <text svgx:width="0.46,0.33,0.55,0.51,0.26" y="382.1" x="83.4,87.9,91.2,94.6,99.7" style="fill:rgb(0,0,0);font-family:CMTI10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">et al</text>
-  </g>
-  <g>
-   <rect x="102.3" y="372.1" width="277.6" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; . [14] use the output of a state-of-the-art semantic segmentation; null</title>
-   </rect>
-   <text svgx:width="0.28,0.55,0.28,0.5,0.5,0.28,0.55,0.56,0.39,0.44,0.55,0.39,0.56,0.44,0.55,0.5,0.56,0.39,0.56,0.56,0.39,0.55,0.5,0.31,0.55,0.5,0.55,0.39,0.39,0.5,0.39,0.44,0.33,0.5,0.31,0.33,0.39,0.56,0.44,0.33,0.5,0.39,0.39,0.55,0.39,0.44,0.83,0.5,0.56,0.39,0.28,0.44,0.55,0.39,0.44,0.5,0.83,0.44,0.56,0.39,0.5,0.39,0.28,0.5,0.56" y="382.1" x="102.3,105.1,108.2,111.0,115.9,120.9,123.7,126.8,132.4,136.3,140.7,143.9,147.7,153.3,157.6,160.8,165.8,171.3,175.2,180.8,186.3,190.2,193.3,198.3,201.4,204.5,209.4,212.6,216.5,220.4,225.4,229.2,233.7,237.0,242.0,245.0,248.3,252.2,257.7,262.2,265.5,270.5,274.4,278.3,281.4,285.3,289.8,298.1,303.0,308.3,312.2,314.9,319.3,322.5,326.4,330.9,335.8,344.1,348.6,353.8,357.7,362.7,366.6,369.3,374.3" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">. [14] use the output of a state-of-the-art semantic segmentation</text>
-  </g>
-  <g>
-   <rect x="34.0" y="384.1" width="345.90000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; approach [5] to score detections better. Mottaghi [25] uses detectors based on; null</title>
-   </rect>
-   <text svgx:width="0.5,0.56,0.56,0.39,0.5,0.5,0.44,0.56,0.55,0.28,0.5,0.28,0.55,0.39,0.5,0.55,0.39,0.44,0.5,0.39,0.44,0.55,0.56,0.44,0.39,0.44,0.44,0.39,0.28,0.5,0.56,0.39,0.55,0.56,0.44,0.39,0.39,0.44,0.39,0.28,0.55,0.92,0.5,0.39,0.39,0.5,0.5,0.56,0.28,0.55,0.28,0.5,0.5,0.28,0.55,0.56,0.39,0.44,0.39,0.55,0.56,0.44,0.39,0.44,0.44,0.39,0.5,0.39,0.39,0.55,0.56,0.5,0.39,0.44,0.56,0.55,0.5,0.56" y="394.1" x="34.0,39.0,44.5,50.1,54.0,59.0,63.9,68.1,73.7,77.7,80.4,85.4,88.2,92.2,96.1,101.1,105.1,109.1,113.5,118.5,122.4,126.8,130.9,136.4,140.8,144.7,149.1,153.6,157.4,160.2,165.2,170.7,174.6,178.7,184.5,188.9,192.8,196.7,201.1,205.0,207.8,211.8,221.0,225.9,229.8,233.7,238.7,243.7,249.2,252.0,256.0,258.8,263.8,268.7,271.5,275.6,281.1,285.0,289.5,293.3,297.4,303.0,307.4,311.3,315.7,320.1,324.0,329.0,332.9,336.8,340.9,346.4,351.4,355.3,359.7,365.3,369.3,374.3" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">approach [5] to score detections better. Mottaghi [25] uses detectors based on</text>
-  </g>
-  <g>
-   <rect x="34.0" y="396.0" width="264.8" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; non-rectangular patches to both detect and segment objects.; null</title>
-   </rect>
-   <text svgx:width="0.56,0.5,0.56,0.33,0.39,0.44,0.44,0.39,0.5,0.56,0.5,0.56,0.28,0.5,0.39,0.55,0.56,0.5,0.39,0.44,0.56,0.44,0.39,0.55,0.39,0.5,0.55,0.56,0.5,0.39,0.56,0.55,0.56,0.44,0.39,0.44,0.44,0.39,0.55,0.5,0.56,0.56,0.55,0.39,0.44,0.5,0.83,0.44,0.56,0.39,0.55,0.5,0.56,0.31,0.44,0.44,0.39,0.39,0.28" y="406.0" x="34.0,39.6,44.5,50.1,53.4,57.3,61.7,66.1,70.0,75.0,80.5,85.5,91.1,93.8,98.8,102.7,106.0,111.6,116.5,120.4,124.6,130.1,134.5,138.4,141.8,145.7,150.6,154.0,159.8,164.7,168.6,174.2,177.5,183.0,187.4,191.3,195.7,200.2,204.1,207.4,212.4,217.9,223.5,226.7,230.7,235.1,240.1,248.4,252.8,258.1,261.9,265.3,270.2,276.3,279.4,283.8,288.2,292.1,296.0" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">non-rectangular patches to both detect and segment objects.</text>
-  </g>
-  <g>
-   <rect x="49.0" y="415.7" width="330.79999999999995" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; The approaches above were typically built on features such as SIFT[24] or; null</title>
-   </rect>
-   <text svgx:width="0.72,0.56,0.44,0.55,0.5,0.56,0.56,0.39,0.5,0.5,0.44,0.56,0.44,0.39,0.55,0.5,0.56,0.5,0.53,0.44,0.55,0.72,0.44,0.39,0.44,0.55,0.39,0.53,0.56,0.28,0.44,0.5,0.28,0.28,0.53,0.55,0.56,0.56,0.28,0.28,0.39,0.55,0.5,0.56,0.55,0.31,0.44,0.5,0.39,0.56,0.39,0.44,0.39,0.55,0.39,0.56,0.44,0.56,0.55,0.5,0.39,0.55,0.56,0.36,0.65,0.72,0.28,0.5,0.5,0.28,0.55,0.5,0.39" y="425.7" x="49.0,56.2,61.7,66.1,70.1,75.0,80.6,86.1,90.0,95.0,100.0,104.1,109.7,114.1,118.0,122.0,127.0,132.8,137.5,142.5,146.8,150.8,157.8,162.2,166.1,170.5,174.5,178.0,183.3,188.8,191.6,196.0,201.0,203.8,206.6,211.8,215.8,221.3,226.8,229.6,232.4,236.2,240.2,245.2,250.8,254.7,257.7,262.1,267.1,271.0,276.5,280.4,284.8,288.7,292.7,296.7,302.2,306.3,311.9,315.8,320.8,324.7,328.7,334.2,337.8,344.3,351.5,354.3,359.3,364.2,367.0,371.0,375.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">The approaches above were typically built on features such as SIFT[24] or</text>
-  </g>
-  <g>
-   <rect x="34.0" y="427.6" width="345.9" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; HOG[8]. Recently the computer vision community has shifted towards using; null</title>
-   </rect>
-   <text svgx:width="0.75,0.78,0.78,0.28,0.5,0.28,0.28,0.55,0.74,0.44,0.44,0.44,0.56,0.39,0.28,0.53,0.55,0.39,0.56,0.44,0.55,0.44,0.5,0.83,0.56,0.56,0.39,0.44,0.39,0.55,0.53,0.28,0.39,0.28,0.5,0.56,0.55,0.44,0.5,0.83,0.83,0.56,0.56,0.28,0.39,0.53,0.55,0.56,0.5,0.39,0.55,0.39,0.56,0.28,0.31,0.39,0.44,0.56,0.55,0.39,0.5,0.72,0.5,0.39,0.56,0.39,0.55,0.56,0.39,0.28,0.56,0.5" y="437.6" x="34.0,41.5,49.2,57.1,59.8,64.8,67.6,70.4,75.1,82.5,86.9,91.3,95.7,101.0,104.9,107.6,112.9,117.7,121.6,127.1,131.5,136.3,140.7,145.7,154.0,159.6,165.1,169.0,173.4,177.3,182.1,187.3,190.1,194.0,196.8,201.8,207.4,212.1,216.5,221.5,229.8,237.8,243.4,248.9,251.7,255.3,260.6,265.3,270.9,275.8,279.7,284.6,288.5,294.0,296.8,299.8,303.7,308.1,313.7,318.5,322.3,327.0,334.0,338.9,342.8,348.4,352.3,357.1,362.6,366.6,369.3,374.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">HOG[8]. Recently the computer vision community has shifted towards using</text>
-  </g>
-  <g>
-   <rect x="34.0" y="439.6" width="345.8" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; convolutional neural networks (CNNs). CNNs have their roots in the Neocogni-; null</title>
-   </rect>
-   <text svgx:width="0.44,0.5,0.56,0.53,0.5,0.28,0.56,0.39,0.28,0.5,0.56,0.5,0.28,0.55,0.56,0.44,0.56,0.39,0.5,0.28,0.55,0.56,0.44,0.39,0.72,0.5,0.39,0.53,0.39,0.55,0.39,0.72,0.75,0.75,0.39,0.39,0.28,0.55,0.72,0.75,0.75,0.39,0.55,0.56,0.5,0.53,0.44,0.55,0.39,0.56,0.44,0.28,0.39,0.55,0.39,0.5,0.5,0.39,0.39,0.55,0.28,0.56,0.55,0.39,0.56,0.44,0.55,0.75,0.44,0.5,0.44,0.5,0.5,0.56,0.28,0.33" y="449.6" x="34.0,38.4,43.4,48.7,53.7,58.6,61.4,66.9,70.8,73.6,78.6,84.1,89.1,91.9,95.1,100.6,105.0,110.6,114.5,119.5,122.2,125.4,131.0,135.4,139.0,145.9,150.9,154.8,160.1,164.0,167.2,171.1,178.3,185.8,193.2,197.2,201.0,203.8,207.0,214.2,221.7,229.2,233.1,236.3,241.9,246.6,251.5,255.9,259.2,263.1,268.6,273.0,275.8,279.7,282.9,286.8,292.1,297.1,300.9,304.8,308.1,310.9,316.4,319.6,323.5,329.0,333.4,336.7,344.1,348.6,353.8,358.3,363.2,368.2,373.8,376.5" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">convolutional neural networks (CNNs). CNNs have their roots in the Neocogni-</text>
-  </g>
-  <g>
-   <rect x="34.0" y="451.6" width="345.90000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; tron proposed by Fukushima [15]. Trained with the back-propagation algorithm,; null</title>
-   </rect>
-   <text svgx:width="0.39,0.39,0.5,0.56,0.55,0.56,0.39,0.5,0.56,0.5,0.39,0.44,0.56,0.55,0.56,0.53,0.55,0.65,0.56,0.53,0.56,0.39,0.56,0.28,0.83,0.5,0.55,0.28,0.5,0.5,0.28,0.28,0.55,0.72,0.39,0.5,0.28,0.56,0.44,0.56,0.55,0.72,0.28,0.39,0.56,0.55,0.39,0.56,0.44,0.55,0.56,0.5,0.44,0.53,0.33,0.56,0.39,0.5,0.56,0.5,0.5,0.5,0.39,0.28,0.5,0.56,0.55,0.5,0.28,0.5,0.5,0.39,0.28,0.39,0.56,0.83,0.28" y="461.6" x="34.0,37.9,41.8,46.8,52.4,55.1,60.6,64.5,69.5,75.3,80.3,84.3,88.7,94.3,97.0,102.3,107.6,110.3,116.0,121.6,126.8,132.3,136.3,141.8,144.6,152.9,157.9,160.7,163.4,168.4,173.4,176.2,179.0,181.7,188.1,192.0,197.0,199.8,205.3,209.7,215.3,218.1,225.3,228.0,231.9,237.5,240.2,244.1,249.6,254.0,256.9,262.4,267.4,271.5,276.8,280.1,285.7,289.6,294.5,300.1,305.1,310.0,315.0,318.9,321.7,326.6,332.2,335.0,340.0,342.7,347.7,352.7,356.6,359.4,363.2,368.8,377.1" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">tron proposed by Fukushima [15]. Trained with the back-propagation algorithm,</text>
-  </g>
-  <g>
-   <rect x="34.0" y="463.5" width="345.8" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; LeCun [23] showed that they could be used for handwritten zip code recogni-; null</title>
-   </rect>
-   <text svgx:width="0.63,0.44,0.72,0.56,0.56,0.55,0.28,0.5,0.5,0.28,0.55,0.39,0.56,0.5,0.72,0.44,0.56,0.55,0.39,0.56,0.5,0.39,0.55,0.39,0.56,0.44,0.53,0.55,0.44,0.5,0.56,0.28,0.56,0.55,0.56,0.44,0.55,0.56,0.39,0.44,0.56,0.55,0.31,0.5,0.39,0.55,0.56,0.5,0.56,0.56,0.72,0.39,0.28,0.39,0.39,0.44,0.56,0.55,0.44,0.28,0.56,0.55,0.44,0.5,0.56,0.44,0.55,0.39,0.44,0.44,0.5,0.5,0.56,0.28,0.33" y="473.5" x="34.0,40.2,44.7,51.9,57.4,63.0,67.0,69.7,74.7,79.7,82.5,86.5,90.4,95.9,100.7,107.6,112.0,117.6,121.6,125.4,131.0,135.9,139.8,143.8,147.7,153.3,157.7,163.0,167.0,171.4,176.4,181.9,184.7,190.2,194.2,200.0,204.4,208.5,214.0,218.0,222.4,228.0,231.9,235.0,240.0,243.9,247.9,253.4,258.4,263.9,269.5,276.7,280.6,283.3,287.2,291.1,295.5,301.1,305.1,309.5,312.3,317.8,321.8,326.3,331.5,337.1,341.4,345.5,349.4,353.8,358.3,363.2,368.2,373.8,376.5" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">LeCun [23] showed that they could be used for handwritten zip code recogni-</text>
-  </g>
-  <g>
-   <rect x="34.0" y="475.5" width="345.90000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; tion. They have since been used in a variety of tasks, including detection [29,28]; null</title>
-   </rect>
-   <text svgx:width="0.39,0.28,0.5,0.56,0.28,0.55,0.72,0.56,0.44,0.53,0.55,0.56,0.5,0.53,0.44,0.55,0.39,0.28,0.56,0.44,0.44,0.55,0.56,0.44,0.44,0.56,0.55,0.56,0.39,0.44,0.56,0.55,0.28,0.56,0.55,0.5,0.55,0.53,0.5,0.39,0.28,0.44,0.39,0.53,0.55,0.5,0.31,0.55,0.39,0.5,0.39,0.53,0.39,0.28,0.55,0.28,0.56,0.44,0.28,0.56,0.56,0.28,0.56,0.5,0.55,0.56,0.44,0.39,0.44,0.44,0.39,0.28,0.5,0.56,0.55,0.28,0.5,0.5,0.28,0.5,0.5,0.28" y="485.5" x="34.0,37.9,40.7,45.6,51.2,54.0,57.0,64.2,69.7,74.1,79.4,82.4,88.0,92.7,97.7,102.0,105.1,109.0,111.8,117.4,121.8,126.2,129.2,135.1,139.5,143.9,149.5,152.5,158.0,162.0,166.4,172.0,175.0,177.7,183.3,186.3,191.3,194.3,199.0,204.0,207.9,210.7,215.1,218.7,224.0,227.0,232.0,235.1,238.1,241.9,246.9,250.8,256.1,260.0,262.8,265.8,268.6,274.1,278.6,281.3,286.9,292.4,295.2,300.7,305.7,308.7,314.3,318.7,322.6,327.0,331.4,335.3,338.1,343.0,348.6,351.6,354.4,359.4,364.3,367.1,372.1,377.1" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">tion. They have since been used in a variety of tasks, including detection [29,28]</text>
-  </g>
-  <g>
-   <rect x="34.0" y="487.4" width="193.5" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; and semantic segmentation [12]. Krizhevsky; null</title>
-   </rect>
-   <text svgx:width="0.5,0.56,0.56,0.55,0.39,0.44,0.83,0.5,0.56,0.39,0.28,0.44,0.55,0.39,0.44,0.5,0.83,0.44,0.56,0.39,0.5,0.39,0.28,0.5,0.56,0.55,0.28,0.5,0.5,0.28,0.28,0.55,0.78,0.39,0.28,0.44,0.56,0.44,0.53,0.39,0.53,0.53" y="497.4" x="34.0,39.0,44.5,50.1,53.9,57.8,62.3,70.6,75.5,80.8,84.7,87.4,91.8,95.7,99.6,104.1,109.1,117.4,121.8,127.0,130.9,135.9,139.8,142.5,147.5,153.1,156.9,159.7,164.6,169.6,172.4,175.2,179.0,186.7,190.6,193.4,197.8,203.4,207.8,213.1,217.0,222.2" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">and semantic segmentation [12]. Krizhevsky</text>
-  </g>
-  <g>
-   <rect x="231.3" y="487.4" width="19.69999999999999" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; et al; null</title>
-   </rect>
-   <text svgx:width="0.46,0.33,0.55,0.51,0.26" y="497.4" x="231.3,235.9,239.2,243.3,248.4" style="fill:rgb(0,0,0);font-family:CMTI10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">et al</text>
-  </g>
-  <g>
-   <rect x="250.9" y="487.4" width="128.89999999999995" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; . [21] showed a large increase; null</title>
-   </rect>
-   <text svgx:width="0.28,0.55,0.28,0.5,0.5,0.28,0.55,0.39,0.56,0.5,0.72,0.44,0.56,0.55,0.5,0.55,0.28,0.5,0.39,0.5,0.44,0.55,0.28,0.56,0.44,0.39,0.44,0.5,0.39,0.44" y="497.4" x="250.9,253.7,257.5,260.3,265.3,270.2,273.0,276.8,280.8,286.3,291.0,297.9,302.4,307.9,311.7,316.7,320.5,323.3,328.3,332.2,337.2,341.6,345.4,348.2,353.7,358.2,362.1,366.5,371.5,375.4" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">. [21] showed a large increase</text>
-  </g>
-  <g>
-   <rect x="34.0" y="499.4" width="345.90000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; in performance by using CNNs for classiﬁcation in the ILSVRC challenge [9].; null</title>
-   </rect>
-   <text svgx:width="0.28,0.56,0.55,0.56,0.44,0.39,0.31,0.5,0.39,0.83,0.5,0.56,0.44,0.44,0.55,0.56,0.53,0.55,0.56,0.39,0.28,0.56,0.5,0.55,0.72,0.75,0.75,0.39,0.55,0.31,0.5,0.39,0.55,0.44,0.28,0.5,0.39,0.39,0.28,0.56,0.44,0.5,0.39,0.28,0.5,0.56,0.55,0.28,0.56,0.55,0.39,0.56,0.44,0.55,0.36,0.63,0.56,0.75,0.74,0.72,0.55,0.44,0.56,0.5,0.28,0.28,0.44,0.56,0.5,0.44,0.55,0.28,0.5,0.28,0.28" y="509.4" x="34.0,36.8,42.4,46.5,52.3,56.7,60.6,63.6,68.6,72.5,80.8,85.8,91.3,95.8,100.2,104.3,109.6,114.9,119.0,124.5,128.5,131.2,136.8,141.7,145.9,153.1,160.6,168.0,171.9,176.1,179.1,184.1,188.0,192.2,196.6,199.4,204.3,208.3,212.2,215.0,220.5,224.9,229.9,233.8,236.5,241.5,247.1,251.2,254.0,259.5,263.6,267.5,273.1,277.4,281.6,285.2,291.5,297.0,304.5,311.5,318.7,322.8,327.0,332.5,337.5,340.3,343.0,347.5,353.0,358.0,362.4,366.6,369.3,374.3,377.1" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">in performance by using CNNs for classiﬁcation in the ILSVRC challenge [9].</text>
-  </g>
-  <g>
-   <rect x="34.0" y="511.29999999999995" width="38.30000000000001" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; Donahue; null</title>
-   </rect>
-   <text svgx:width="0.76,0.5,0.56,0.5,0.56,0.56,0.44" y="521.3" x="34.0,41.6,46.6,52.1,57.1,62.4,67.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Donahue</text>
-  </g>
-  <g>
-   <rect x="76.5" y="511.29999999999995" width="20.0" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; et al; null</title>
-   </rect>
-   <text svgx:width="0.46,0.33,0.55,0.51,0.26" y="521.3" x="76.5,81.1,84.4,88.8,93.9" style="fill:rgb(0,0,0);font-family:CMTI10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">et al</text>
-  </g>
-  <g>
-   <rect x="96.4" y="511.29999999999995" width="283.5" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; . [10] showed that Krizhevsky’s architecture could be used as a; null</title>
-   </rect>
-   <text svgx:width="0.28,0.55,0.28,0.5,0.5,0.28,0.55,0.39,0.56,0.5,0.72,0.44,0.56,0.55,0.39,0.56,0.5,0.39,0.55,0.78,0.39,0.28,0.44,0.56,0.44,0.53,0.39,0.53,0.53,0.28,0.39,0.55,0.5,0.39,0.44,0.56,0.28,0.39,0.44,0.44,0.39,0.56,0.39,0.44,0.55,0.44,0.5,0.56,0.28,0.56,0.55,0.56,0.44,0.55,0.56,0.39,0.44,0.56,0.55,0.5,0.39,0.55,0.5" y="521.3" x="96.4,99.2,103.4,106.2,111.2,116.1,118.9,123.1,127.0,132.6,137.3,144.2,148.6,154.2,158.4,162.2,167.8,172.8,176.6,180.8,188.6,192.5,195.2,199.7,205.2,209.6,214.9,218.8,224.1,229.3,232.1,236.0,240.2,245.2,249.1,253.3,258.8,261.6,265.4,269.9,274.3,278.2,283.7,287.6,292.0,296.2,300.7,305.7,311.2,314.0,319.5,323.7,329.5,333.9,338.1,343.7,347.6,352.0,357.6,361.8,366.7,370.6,374.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">. [10] showed that Krizhevsky’s architecture could be used as a</text>
-  </g>
-  <g>
-   <rect x="34.0" y="523.3" width="345.90000000000003" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; generic feature extractor that did well across a wide variety of tasks. Girshick; null</title>
-   </rect>
-   <text svgx:width="0.5,0.44,0.56,0.44,0.39,0.28,0.44,0.55,0.31,0.44,0.5,0.39,0.56,0.39,0.44,0.55,0.44,0.53,0.39,0.39,0.5,0.44,0.39,0.5,0.39,0.55,0.39,0.56,0.5,0.39,0.55,0.56,0.28,0.56,0.55,0.72,0.44,0.28,0.28,0.55,0.5,0.44,0.39,0.5,0.39,0.39,0.55,0.5,0.55,0.72,0.28,0.56,0.44,0.55,0.53,0.5,0.39,0.28,0.44,0.39,0.53,0.55,0.5,0.31,0.55,0.39,0.5,0.39,0.53,0.39,0.28,0.55,0.78,0.28,0.39,0.39,0.56,0.28,0.44,0.53" y="533.3" x="34.0,39.0,43.4,49.0,53.4,57.3,60.1,64.4,68.4,71.4,75.9,80.9,84.7,90.3,94.2,98.5,102.5,106.9,112.2,116.1,120.0,125.0,129.4,133.3,138.2,142.1,146.0,149.9,155.5,160.4,164.3,168.2,173.8,176.5,182.1,186.0,192.9,197.3,200.1,202.9,206.8,211.8,216.2,220.1,225.1,229.0,232.9,236.8,241.8,245.7,252.9,255.7,261.2,265.6,269.6,274.3,279.3,283.2,285.9,290.4,293.9,299.2,303.1,308.1,311.2,315.1,318.9,323.9,327.8,333.1,337.0,339.8,343.7,351.5,354.3,358.2,362.1,367.7,370.4,374.6" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">generic feature extractor that did well across a wide variety of tasks. Girshick</text>
-  </g>
-  <g>
-   <rect x="34.0" y="535.2" width="19.5" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; et al; null</title>
-   </rect>
-   <text svgx:width="0.46,0.33,0.55,0.51,0.26" y="545.2" x="34.0,38.6,41.9,45.8,50.9" style="fill:rgb(0,0,0);font-family:CMTI10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">et al</text>
-  </g>
-  <g>
-   <rect x="53.5" y="535.2" width="326.4" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; . [16] build on this and ﬁnetune Krizhevsky’s architecture for detection to; null</title>
-   </rect>
-   <text svgx:width="0.28,0.55,0.28,0.5,0.5,0.28,0.55,0.56,0.56,0.28,0.28,0.56,0.55,0.5,0.56,0.55,0.39,0.56,0.28,0.39,0.55,0.5,0.56,0.56,0.55,0.56,0.56,0.44,0.39,0.56,0.56,0.44,0.55,0.78,0.39,0.28,0.44,0.56,0.44,0.53,0.39,0.53,0.53,0.28,0.39,0.55,0.5,0.39,0.44,0.56,0.28,0.39,0.44,0.44,0.39,0.56,0.39,0.44,0.55,0.31,0.5,0.39,0.55,0.56,0.44,0.39,0.44,0.44,0.39,0.28,0.5,0.56,0.55,0.39,0.5" y="545.2" x="53.5,56.3,59.9,62.7,67.7,72.7,75.5,79.1,84.7,90.2,93.0,95.7,101.3,105.0,110.0,115.5,119.2,123.1,128.6,131.4,135.3,139.0,144.0,149.5,155.1,158.8,164.3,169.9,174.3,178.2,183.7,189.2,193.6,197.4,205.1,209.0,211.8,216.2,221.7,226.2,231.4,235.4,240.6,245.9,248.6,252.5,256.3,261.3,265.2,269.3,274.9,277.6,281.5,285.9,290.4,294.2,299.8,303.7,308.0,311.8,314.8,319.8,323.7,327.4,333.0,337.4,341.3,345.7,350.1,354.0,356.8,361.7,367.3,371.0,374.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">. [16] build on this and ﬁnetune Krizhevsky’s architecture for detection to</text>
-  </g>
-  <g>
-   <rect x="34.0" y="547.2" width="345.9" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; nearly double the state-of-the-art performance. They use a simple pipeline, using; null</title>
-   </rect>
-   <text svgx:width="0.56,0.44,0.5,0.39,0.28,0.53,0.55,0.56,0.5,0.56,0.56,0.28,0.44,0.55,0.39,0.56,0.44,0.55,0.39,0.39,0.5,0.39,0.44,0.33,0.5,0.31,0.33,0.39,0.56,0.44,0.33,0.5,0.39,0.39,0.55,0.56,0.44,0.39,0.31,0.5,0.39,0.83,0.5,0.56,0.44,0.44,0.28,0.55,0.72,0.56,0.44,0.53,0.55,0.56,0.39,0.44,0.55,0.5,0.55,0.39,0.28,0.83,0.56,0.28,0.44,0.55,0.56,0.28,0.56,0.44,0.28,0.28,0.56,0.44,0.28,0.55,0.56,0.39,0.28,0.56,0.5" y="557.2" x="34.0,39.6,44.0,49.0,52.9,55.6,60.9,63.4,69.0,74.0,79.5,85.0,87.8,92.2,94.8,98.7,104.2,108.6,111.2,115.1,119.0,124.0,127.8,132.3,135.6,140.6,143.6,146.9,150.8,156.3,160.8,164.1,169.1,173.0,176.9,179.4,185.2,189.7,193.6,196.6,201.6,205.5,213.8,218.8,224.3,228.7,233.2,235.9,238.5,245.7,251.2,255.6,260.9,263.4,269.0,272.9,277.3,279.9,284.9,287.4,291.4,294.1,302.4,308.0,310.7,315.1,317.7,323.3,326.0,331.8,336.3,339.0,341.8,347.3,351.8,354.6,357.1,362.6,366.6,369.3,374.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">nearly double the state-of-the-art performance. They use a simple pipeline, using</text>
-  </g>
-  <g>
-   <rect x="34.0" y="559.1" width="345.79999999999995" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; CNNs to classify bounding box proposals from [27]. Our algorithm builds on this; null</title>
-   </rect>
-   <text svgx:width="0.72,0.75,0.75,0.39,0.55,0.39,0.5,0.55,0.44,0.28,0.5,0.39,0.39,0.28,0.31,0.53,0.55,0.56,0.5,0.56,0.56,0.56,0.28,0.56,0.5,0.55,0.56,0.5,0.53,0.55,0.56,0.39,0.5,0.56,0.5,0.39,0.5,0.28,0.39,0.55,0.31,0.39,0.5,0.83,0.55,0.28,0.5,0.5,0.28,0.28,0.55,0.78,0.56,0.39,0.55,0.5,0.28,0.5,0.5,0.39,0.28,0.39,0.56,0.83,0.55,0.56,0.56,0.28,0.28,0.56,0.39,0.55,0.5,0.56,0.55,0.39,0.56,0.28,0.39" y="569.1" x="34.0,41.2,48.7,56.2,60.0,62.8,66.6,71.6,74.3,78.7,81.5,86.5,90.4,94.3,97.1,100.1,105.4,108.1,113.9,118.9,124.4,129.9,135.5,138.2,143.8,148.7,151.4,157.2,161.9,167.2,169.9,175.4,179.3,184.3,190.1,195.1,199.0,204.0,206.7,210.6,213.3,216.4,220.3,225.3,233.5,236.2,239.0,244.0,249.0,251.7,254.5,257.2,264.9,270.5,274.4,277.0,282.0,284.8,289.8,294.8,298.7,301.4,305.3,310.8,319.1,321.8,327.3,332.9,335.7,338.4,343.9,347.8,350.6,355.5,361.1,363.7,367.6,373.1,375.9" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">CNNs to classify bounding box proposals from [27]. Our algorithm builds on this</text>
-  </g>
-  <g>
-   <rect x="34.0" y="571.1" width="235.60000000000002" height="10.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
-    <title>10.0; system, and on high quality region proposals from [1].; null</title>
-   </rect>
-   <text svgx:width="0.39,0.53,0.39,0.39,0.44,0.83,0.28,0.55,0.5,0.56,0.56,0.55,0.5,0.56,0.55,0.56,0.28,0.5,0.56,0.55,0.53,0.56,0.5,0.28,0.28,0.39,0.53,0.55,0.39,0.44,0.5,0.28,0.5,0.56,0.55,0.56,0.39,0.5,0.56,0.5,0.39,0.5,0.28,0.39,0.55,0.31,0.39,0.5,0.83,0.55,0.28,0.5,0.28,0.28" y="581.1" x="34.0,37.9,43.2,47.1,51.0,55.4,63.7,66.5,69.8,74.8,80.3,85.9,89.2,94.2,99.8,103.0,108.6,111.3,116.3,121.9,125.2,130.4,136.0,140.9,143.7,146.5,150.1,155.4,158.7,162.6,167.0,172.0,174.7,179.7,185.3,188.6,194.1,198.0,203.0,208.8,213.8,217.7,222.7,225.5,229.4,232.7,235.8,239.7,244.6,252.9,256.3,259.0,264.0,266.8" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">system, and on high quality region proposals from [1].</text>
+   <text svgx:width="0.28,0.55,0.28,0.5,0.5,0.28" y="581.1" x="358.4,361.2,364.3,367.1,372.1,377.1" style="fill:rgb(0,0,0);font-family:CMR10;font-size:10.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">. [32]</text>
   </g>
   <line x1="34.0" y1="50.0" x2="34.0" y2="750.0" style="stroke:blue;stroke-width:1.0;"/>
-  <line x1="49.0" y1="50.0" x2="49.0" y2="750.0" style="stroke:blue;stroke-width:0.07142857142857142;"/>
-  <line x1="53.0" y1="50.0" x2="53.0" y2="750.0" style="stroke:blue;stroke-width:0.047619047619047616;"/>
+  <line x1="82.0" y1="50.0" x2="82.0" y2="750.0" style="stroke:blue;stroke-width:0.11538461538461539;"/>
+  <line x1="210.0" y1="50.0" x2="210.0" y2="750.0" style="stroke:blue;stroke-width:0.11538461538461539;"/>
+  <line x1="103.0" y1="50.0" x2="103.0" y2="750.0" style="stroke:blue;stroke-width:0.11538461538461539;"/>
+  <line x1="68.0" y1="50.0" x2="68.0" y2="750.0" style="stroke:blue;stroke-width:0.07692307692307693;"/>
+  <line x1="209.0" y1="50.0" x2="209.0" y2="750.0" style="stroke:blue;stroke-width:0.07692307692307693;"/>
+  <line x1="155.0" y1="50.0" x2="155.0" y2="750.0" style="stroke:blue;stroke-width:0.07692307692307693;"/>
+  <line x1="347.0" y1="50.0" x2="347.0" y2="750.0" style="stroke:blue;stroke-width:0.07692307692307693;"/>
+  <line x1="162.0" y1="50.0" x2="162.0" y2="750.0" style="stroke:blue;stroke-width:0.07692307692307693;"/>
+  <line x1="48.0" y1="50.0" x2="48.0" y2="750.0" style="stroke:blue;stroke-width:0.07692307692307693;"/>
+  <line x1="368.0" y1="50.0" x2="368.0" y2="750.0" style="stroke:blue;stroke-width:0.07692307692307693;"/>
+  <line x1="49.0" y1="50.0" x2="49.0" y2="750.0" style="stroke:blue;stroke-width:0.07692307692307693;"/>
   <line x1="34.0" y1="50.0" x2="34.0" y2="750.0" style="stroke:purple;stroke-width:1.0;"/>
-  <line x1="49.0" y1="50.0" x2="49.0" y2="750.0" style="stroke:purple;stroke-width:0.07142857142857142;"/>
-  <line x1="53.0" y1="50.0" x2="53.0" y2="750.0" style="stroke:purple;stroke-width:0.047619047619047616;"/>
-  <line x1="66.0" y1="50.0" x2="66.0" y2="750.0" style="stroke:purple;stroke-width:0.047619047619047616;"/>
-  <line x1="76.0" y1="50.0" x2="76.0" y2="750.0" style="stroke:purple;stroke-width:0.047619047619047616;"/>
-  <line x1="86.0" y1="50.0" x2="86.0" y2="750.0" style="stroke:purple;stroke-width:0.047619047619047616;"/>
-  <line x1="92.0" y1="50.0" x2="92.0" y2="750.0" style="stroke:purple;stroke-width:0.047619047619047616;"/>
-  <line x1="102.0" y1="50.0" x2="102.0" y2="750.0" style="stroke:purple;stroke-width:0.047619047619047616;"/>
-  <line x1="230.0" y1="50.0" x2="230.0" y2="750.0" style="stroke:purple;stroke-width:0.047619047619047616;"/>
+  <line x1="39.0" y1="50.0" x2="39.0" y2="750.0" style="stroke:purple;stroke-width:0.07692307692307693;"/>
+  <line x1="48.0" y1="50.0" x2="48.0" y2="750.0" style="stroke:purple;stroke-width:0.15384615384615385;"/>
+  <line x1="49.0" y1="50.0" x2="49.0" y2="750.0" style="stroke:purple;stroke-width:0.15384615384615385;"/>
+  <line x1="52.0" y1="50.0" x2="52.0" y2="750.0" style="stroke:purple;stroke-width:0.07692307692307693;"/>
+  <line x1="56.0" y1="50.0" x2="56.0" y2="750.0" style="stroke:purple;stroke-width:0.07692307692307693;"/>
+  <line x1="82.0" y1="50.0" x2="82.0" y2="750.0" style="stroke:purple;stroke-width:0.11538461538461539;"/>
+  <line x1="85.0" y1="50.0" x2="85.0" y2="750.0" style="stroke:purple;stroke-width:0.07692307692307693;"/>
+  <line x1="97.0" y1="50.0" x2="97.0" y2="750.0" style="stroke:purple;stroke-width:0.07692307692307693;"/>
+  <line x1="103.0" y1="50.0" x2="103.0" y2="750.0" style="stroke:purple;stroke-width:0.3076923076923077;"/>
+  <line x1="110.0" y1="50.0" x2="110.0" y2="750.0" style="stroke:purple;stroke-width:0.07692307692307693;"/>
+  <line x1="146.0" y1="50.0" x2="146.0" y2="750.0" style="stroke:purple;stroke-width:0.07692307692307693;"/>
+  <line x1="155.0" y1="50.0" x2="155.0" y2="750.0" style="stroke:purple;stroke-width:0.15384615384615385;"/>
+  <line x1="162.0" y1="50.0" x2="162.0" y2="750.0" style="stroke:purple;stroke-width:0.11538461538461539;"/>
+  <line x1="210.0" y1="50.0" x2="210.0" y2="750.0" style="stroke:purple;stroke-width:0.07692307692307693;"/>
+  <line x1="227.0" y1="50.0" x2="227.0" y2="750.0" style="stroke:purple;stroke-width:0.07692307692307693;"/>
   <line x1="379.0" y1="50.0" x2="379.0" y2="750.0" style="stroke:green;stroke-width:1.0;"/>
-  <line x1="227.0" y1="50.0" x2="227.0" y2="750.0" style="stroke:green;stroke-width:0.05;"/>
-  <line x1="72.0" y1="50.0" x2="72.0" y2="750.0" style="stroke:green;stroke-width:0.05;"/>
-  <line x1="53.0" y1="50.0" x2="53.0" y2="750.0" style="stroke:green;stroke-width:0.05;"/>
-  <line x1="53.0" y1="50.0" x2="53.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
-  <line x1="63.0" y1="50.0" x2="63.0" y2="750.0" style="stroke:cyan;stroke-width:0.5;"/>
-  <line x1="72.0" y1="50.0" x2="72.0" y2="750.0" style="stroke:cyan;stroke-width:0.75;"/>
-  <line x1="80.0" y1="50.0" x2="80.0" y2="750.0" style="stroke:cyan;stroke-width:0.5;"/>
-  <line x1="86.0" y1="50.0" x2="86.0" y2="750.0" style="stroke:cyan;stroke-width:0.5;"/>
-  <line x1="96.0" y1="50.0" x2="96.0" y2="750.0" style="stroke:cyan;stroke-width:0.5;"/>
-  <line x1="102.0" y1="50.0" x2="102.0" y2="750.0" style="stroke:cyan;stroke-width:0.5;"/>
-  <line x1="229.0" y1="50.0" x2="229.0" y2="750.0" style="stroke:cyan;stroke-width:0.5;"/>
-  <line x1="237.0" y1="50.0" x2="237.0" y2="750.0" style="stroke:cyan;stroke-width:0.5;"/>
-  <line x1="238.0" y1="50.0" x2="238.0" y2="750.0" style="stroke:cyan;stroke-width:0.5;"/>
-  <line x1="379.0" y1="50.0" x2="379.0" y2="750.0" style="stroke:cyan;stroke-width:10.5;"/>
+  <line x1="4103.0" y1="50.0" x2="4103.0" y2="750.0" style="stroke:green;stroke-width:0.12;"/>
+  <line x1="48.0" y1="50.0" x2="48.0" y2="750.0" style="stroke:green;stroke-width:0.08;"/>
+  <line x1="52.0" y1="50.0" x2="52.0" y2="750.0" style="stroke:green;stroke-width:0.08;"/>
+  <line x1="4162.0" y1="50.0" x2="4162.0" y2="750.0" style="stroke:green;stroke-width:0.08;"/>
+  <line x1="213.0" y1="50.0" x2="213.0" y2="750.0" style="stroke:green;stroke-width:0.08;"/>
+  <line x1="225.0" y1="50.0" x2="225.0" y2="750.0" style="stroke:green;stroke-width:0.08;"/>
+  <line x1="231.0" y1="50.0" x2="231.0" y2="750.0" style="stroke:green;stroke-width:0.08;"/>
+  <line x1="372.0" y1="50.0" x2="372.0" y2="750.0" style="stroke:green;stroke-width:0.08;"/>
+  <line x1="375.0" y1="50.0" x2="375.0" y2="750.0" style="stroke:green;stroke-width:0.08;"/>
+  <line x1="52.0" y1="50.0" x2="52.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="61.0" y1="50.0" x2="61.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="68.0" y1="50.0" x2="68.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="72.0" y1="50.0" x2="72.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="82.0" y1="50.0" x2="82.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="86.0" y1="50.0" x2="86.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="93.0" y1="50.0" x2="93.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="107.0" y1="50.0" x2="107.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="120.0" y1="50.0" x2="120.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="135.0" y1="50.0" x2="135.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="213.0" y1="50.0" x2="213.0" y2="750.0" style="stroke:cyan;stroke-width:2.0;"/>
+  <line x1="225.0" y1="50.0" x2="225.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="227.0" y1="50.0" x2="227.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="231.0" y1="50.0" x2="231.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="358.0" y1="50.0" x2="358.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="375.0" y1="50.0" x2="375.0" y2="750.0" style="stroke:cyan;stroke-width:2.5;"/>
+  <line x1="379.0" y1="50.0" x2="379.0" y2="750.0" style="stroke:cyan;stroke-width:12.5;"/>
+  <line x1="4103.0" y1="50.0" x2="4103.0" y2="750.0" style="stroke:cyan;stroke-width:2.5;"/>
  </g>
 </svg>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+ <!--======page 0 L=======-->
+ <div>
+  <span class="columnSpan">regression. Tetris, most players would agree that the associated negatively with the game score. 1 &lt;j.m.lichtenberg@bath.ac.uk&gt;.th Proceedings of the36Abstract 1. Introduction</span>
+ </div>
+ <!--======page 0 R=======-->
+ <div>
+  <span class="columnSpan">11¨¨Ozgur S¸ ims¸ekon regularization. Speciﬁcally, we propose a model thatintroduces a bias toward giving all features equal weight. Wecall this modelShrinkage Toward Equal Weights(STEW).The ordinary least squares (OLS) solution to linear regres-sion is unbiased but can have high variance when the trainingset is small. Regularization reduces variance by introducingassumptions about the data and anchoring the weights in away that reﬂects these assumptions. For example, Lasso-type models (Tibshirani,1996;B¨uhlmann &amp; van de Geer,2011) assume that the features are irrelevant and shrinkweights toward zero with increasing regularization strength.Rather than shrinking the weights toward zero, STEWshrinks themtoward each other, converging to equal weightsin the limit of inﬁnite regularization. We study properties ofthe equal-weights model as a source of intuition regardingwhen, and why, STEWcan perform well. We provide theo-retical evidence that EWhas relatively low bias and that thisbias is further reduced when feature directions are known.Our empirical analysis shows that these properties translatefrom the equal-weights model to STEW. When informationon directions is available, STEW routinely outperformsexisting models including the non-negative Lasso, whichalso incorporates feature directions. Unlike methods thatare based on non-negativity constraints, we found STEWto be robust when the underlying assumption of knownfeature directions was violated, that is, when the informationabout directions was unreliable or absent. Finally, we foundSTEWto be remarkably useful when learning to play Tetris.Our results in Tetris were obtained using a novel approach tolearning in sequential decision environments. This approach,calledM-learning, is built around multinomial logistic re-gression. Here, we describe M-learning and present resultsfrom when it is used for learning to play Tetris, with or iswithout regularization. A subsequent article will more fullyexplore the properties and behavior of M-learning.We consider the linear regression problem where the objec-tive is to predict a responsey∈Rbyp?2. Background</span>
+ </div>
+ <!--======page 1 L=======-->
+ <div>
+  <span class="columnSpan">j=1 wherex
+   <sub>1</sub>, . . . , x
+   <sub>p</sub>are feature values andβ
+   <sub>0</sub>, . . . , β
+   <sub>p</sub> ofnobservations,(y
+   <sub>i</sub>, x
+   <sub>1</sub>
+   <sub>i</sub>, . . . , x
+   <sub>pi</sub>), i= 1, . . . , n ture (e.g.,Friedman et al.,2009
+   <sub>n</sub>1
+   <sup>?</sup> and responses are standardized so that
+   <sub>n</sub>
+   <sub>n</sub>
+   <sub>n</sub>
+   <sub>i</sub>
+   <sub>=1</sub> 1
+   <sup>?</sup>1
+   <sup>?</sup>
+   <sub>2</sub> n
+   <sup>i</sup>
+   <sup>=1</sup>
+   <sup>x</sup>
+   <sup>ij</sup>
+   <sup>= 0</sup>
+   <sup>, and</sup>n
+   <sup>i</sup>
+   <sup>=1</sup>
+   <sup>x</sup>
+   <sup>ij</sup>
+   <sup>= 1</sup>
+   <sup>, for</sup>
+   <sup>j</sup> It follows thatβ
+   <sub>0</sub> matrix notation, withy∈R
+   <sup>n</sup> X∈R
+   <sup>n</sup>
+   <sup>×</sup>
+   <sup>p</sup>the feature matrix, andβ= (β
+   <sub>1</sub> ?y−Xβ?
+   <sup>2</sup>
+   <sub>2</sub>on the training set. Regularized linear models. L(β, λ) =?y−Xβ?
+   <sup>2</sup>
+   <sub>2</sub>+λP(β), whereP function andλ≥0 known penalty functions use thel
+   <sub>q</sub> tor,?β?
+   <sub>q</sub>. For example, ridge regression ( 1970) uses thel
+   <sub>2</sub>penalty, the Lasso (Tibshirani, thel
+   <sub>1</sub>penalty, and the elastic net (Zou &amp;Hastie, a convex combination of thel
+   <sub>1</sub>and thel
+   <sub>2</sub> models shrink all weights toward zero asλ→∞ to them asmodels that shrink toward zero. Equal-weighting models. the linear model of Equation (1 have the same value(γ):?
+   <sup>p</sup>ˆy=γx
+   <sub>j</sub>. We deﬁneEqual Weights tor ofγ peared in a seminal paper byDawes &amp;Corrigan( showed thateven horn &amp; Hogarth,1975;Wainer,1976; 2010;Graefe,2015;Lichtenberg &amp; S¸ ims¸ek,2017 types of problems, including paired comparison ( et al.,1999) and portfolio optimization ( 2009). Directability of features.Thedirection directable
+  </span>
+ </div>
+ <!--======page 1 R=======-->
+ <div>
+  <span class="columnSpan">ββ15 are feapββ260.30.3ββ370.20.2β4 , is avail-0.10.10.00.0 y= 0, i−4−2024−1−0.501010101010101010 , . . . , p.λ(logscale)λ(logscale)(a) STEW (q = 2)(b) STEW (q = 1)0.30.3)the p0.20.20.10.10.00.0−3−2−1012−3−2.5−2−1.5−1−0.5101010101010101010101010λ(logscale)λ(logscale)(c) Ridge regression(d) LassoFigure 1.Weight estimates, as a function of the regularizationstrengthλ, for STEWwithq= 1andq= 2, ridge regression, and,the Lasso on theRentdata set with seven standardized features.) uses) usesby−1). Many problems are naturally constrained to have . We referonly positive weights (for example mixing problems, seeSlawski &amp; Hein,2013, and references therein). In otherproblems, features can be directed intuitively by the user,as supported by experimental evidence (Dana &amp; Thomas,2006;Katsikopoulos et al.,2010). Even without any priorknowledge, directions can be estimated from relatively fewtraining data (S¸ ims¸ek &amp; Buckmann,2015).(2)Notice that EWis a sensible model only if the features aredirected so that the true weights have identical signs. Therationale for the use of EW in psychology and decisionγ.EWmaking is the assumption that people are good in choos-ing relevant features and know—through intuition or past) thatexperience—howto direct them (Einhorn &amp;Hogarth,1975).The model we propose, STEW, can also use this knowledgefruitfully.,Motivated by the surprisingly high performance of equal). Equal-weighting models in the literature—not only in regressionbut also in classiﬁcation, paired comparison, and portfoliooptimization—we propose to use the equal-weights model,as a prior in regularization. In other words, we make theinitial assumption thatfeatures have equal impact on the re-sponse variable. This assumption leads to the regularization?qpenaltyλ| |β| −|β| |, forq &gt;0, which penalizesiji&lt;jdifferences in the magnitude of the weights. It leaves thechoice of feature directions free. However, the differencesof absolute values within the penalty function make the lossEin-
+   <sup>3. Shrinkage Toward Equal Weights</sup>
+  </span>
+ </div>
+ <!--======page 2 L=======-->
+ <div>
+  <span class="columnSpan">i&lt;jβ regularized linear model which penalizes thel
+   <sub>q</sub> minimizes the loss function below:STEW
+   <sup>2</sup>
+   <sup>?</sup> L(β, λ, q) =?y−Xβ?
+   <sub>2</sub>+λ|β
+   <sub>i</sub>−β whereq &gt;0andλ≥0 havior. Whenλ= 0 creasing regularization strengthλ λ→∞ converging toγ
+   <sub>EW</sub>. Figure1 regularization behavior for STEW withq= 1 compared to Lasso and ridge regression on theRent (described in Supplementary Material). In matrix notation, Equation (3L
+   <sup>STEW</sup>(β, λ, q) =?y−Xβ?
+   <sup>2</sup>
+   <sub>2</sub>+λ?Dβ?
+   <sup>q</sup>
+   <sub>q</sub> whereDis a pairwise difference matrix withp(p rows andpcolumns. The rows ofD tations of the vector(1,−1,0, . . . ,0)withp that the entry ‘1’ precedes the entry ‘−1’. With Equation (4 framework (Tibshirani &amp; Taylor,2011). Withq imizing Equation (4 lem (Tikhonov et al.,2013 solution below: argminL
+   <sup>STEW</sup>(β, λ,2) = (X
+   <sup>T</sup>X+λD
+   <sup>T</sup>D)
+   <sup>−</sup> We useq= 2 Related work. have regularizing properties (Meinshausen,2013; &amp; Hein,2013), NNLS has been combined withl
+   <sub>1</sub> as well (Efron et al.,2004;Slawski &amp;Hein,2013; 2014
+   <sub>2</sub> loss functionL
+   <sup>NNLasso</sup>(β, λ) =?y−Xβ?
+   <sub>2</sub>+ such thatβ
+   <sub>i</sub>≥0,∀i= 1, . . . , p. Chambolle,2004
+  </span>
+ </div>
+ <!--======page 2 R=======-->
+ <div>
+  <span class="columnSpan">a one-dimensional setting, TV models minimize the loss?2pTVallfunctionL(β, λ) =?y−Xβ?+λ|β−β|.jj−12j=2TV models have been developed for and used with data setswhere a natural adjacency relationship exists. TVmodels arealso used in biostatistics when the data allows a meaningful q β|,(3) jorder of features, for example, in protein mass spectroscopy.The fused Lasso (Tibshirani et al.,2005) considers a Lasso-typel-penalty in addition to a TV-type smoothness penalty.1There is a surface similarity between STEWand TVmodels:both models penalize differences between weights. But theexact form of the penalty differs between the models. TVmodels penalize the differences between adjacent weightswhile STEW penalizes all pairwise differences betweenthe weights. This difference is a direct consequence of q= 2the different motivations behind the two models and it redata setsults in meaningful differences in regularization behavior.Speciﬁcally, TV models shrink weights together in patchesor clusters that are deﬁned by the adjacency relationships(sample regularization paths are shown in the Supplemenqtary Material), which is quite different than the behavior of ?,(4) qSTEW(Figure1). It should be noted that imposing an arbip−1)/2trary adjacency relationship onto a dataset (to be used witha TV model) is not well justiﬁed: different adjacency rela-tionships result in arbitrarily different solutions along the q= 1,regularization path. The Supplementary Material presentsa comparison of regularization paths taken by TV modelswith different orderings of features of theRentdata set. = 2, min-Regularized linear models search for a happy medium be−1T Xy.tween OLS, which has low bias but high variance, and amodel that has high bias but low variance. For both STEWand models that shrink toward zero, the low-variance modelis an equal-weighting model: STEWregularizes toward theEW model (γ=γ) while models that shrink towardEWzero regularize toward what we call the0-model(γ= 0).Theorem1shows results on the bias-variance decompo-sition of mean squared error for equal-weighting models,providing intuition on when and why EW—and therefore ;SlawskiSTEW—can perform well. -penalty 12ˆˆMean squared errorMSE(β) =E||β−β||can be decomWu et al.,posed into two components, squared bias and the trace ofˆthe variance-covariance matrix,Σ,as follows:MSE(β) =ˆ λ?β?,β122ˆˆbias+variance=||E[β]−β||+tr(Σ).LetβandˆEWβˆβdenote the weight estimates of the EW model and the00-model, respectively. Their differences in squared bias and22ˆ:mean squared error are deﬁned as∆bias=bias(β)−02ˆˆˆ:bias(β)and∆MSE=MSE(β)−MSE(β), re-EW0EW4. Bias-Variance Analysis of Equal-WeightingModels</span>
+ </div>
+ <!--======page 3 L=======-->
+ <div>
+  <span class="columnSpan">2 Theorem 1.Lety∼(Xβ, σI), where||β||n×n 2 σ&gt;0, andIis the identity matrix of sizen×n?p1 ¯ β:=βii=1pT (2) For orthonormal data matrixX(i.e.,XX=22¯ (b)∆bias=pβ,22¯ (c)∆MSE=pβ−pσ,2¯ (d) The squared mean weightβ, and thus∆∆on an undirected set of weights. the equal-weighting constant (γ2¯ weights(β) an orthonormal data matrix,γEW the0 lower mean squared error than the0 results from estimatingγEW2 noise parameterσand the number of featuresp 2c). plying the values of all negative features by−1 operation does not change the biases of the0 the bias of the EWmodel. the results of Theorem1 diverse set of environments. 5.1. Simulated Environments We sampled data from the true modelY=Xβ11i.i.di.i.d Xβ+?, whereX∼ N(0,1)and?∼ N(0, 2020i bution from which the weightsβ= (β, . . . , β1 5. Empirical Analysis</span>
+ </div>
+ <!--======page 3 R=======-->
+ <div>
+  <span class="columnSpan">||
+   <sup>2</sup>&lt;∞,hind NNLasso. The regularization strengthλfor each model n. Letwas tuned using cross-validation. Full implementation de-tails are provided in the Supplementary Material. In all¯environments, when training sets were large enough, STEW, γisβ. p×p
+   <sup>ridge regression, and the Lasso performed equally well, with</sup> I),MSE converging to irreducible error. Our discussion willthus focus on small-to-medium sample sizes.Directable environments.We ﬁrst analyze the ideal use 2
+   <sub>case for STEW: when weights are known to be positive</sub>and(equivalently, if features are directable). Recall that, insuch an environment, STEW, EW, and NNLasso are ableto directly use the knowledge that the weights are positive.On the other hand, ridge regression and the Lasso cannotincorporate this information directly; they learn it from thedata.Figure2a shows the predictive performance of various mod-els whenβ∼ U(2,8). STEWperformed best overall. EWperformed relatively well when training sets were small—although it was outperformed (as expected) by all adaptivelyregularizing models for large sample sizes. STEWwas ableto combine the strengths of different models. For smallsample sizes, STEW regularized toward the EW solutionand outperformed all competing models, including EW. Forlarge sample sizes, STEW performed as well as the otheradaptively regularizing linear models. Notice that, for smallsample sizes, NNLasso was far behind STEW, even though p(Resultit also directly used the knowledge that the weights arepositive.One possible explanation for the superior performance ofSTEWcompared to NNLasso is that the prior distributionof the weights has relatively low variance. When variance islow, weights are relatively close to each other, creating an en-vironment that supports EW, and therefore STEW. We there-fore examine two additional environments,β∼ U(4,6)andβ∼ U(0,10), that are identical toβ∼ U(2,8)in theshape of the distribution and its mean but differ in theirvariance. The results are shown in panels b and c of Fig-ure2. STEW remained the best performing model in allthree environments but its relative advantage compared tothe next best model, NNLasso, decreased with increasingvariance. In additional experiments, we increased the vari-ance to unrealistically high levels, up toβ∼ U(0,50). Theresults, provided in the Supplementary Material, remainedqualitatively similar. 1
+   <sup>+</sup>
+   <sup>· · ·</sup>
+   <sup>+</sup>Effect of directability.Weight priors used in panels d–f of ,1). TheFigure2follow a uniform distribution as before. They all 20
+   <sup>have a support of length 2 but differ in the region of support.</sup> )wereFrom panel d to f, the environments decrease in the pro-portion of weights that are positive. In theβ∼ U(0,2)environment, all weights are positive. This prior there-
+  </span>
+ </div>
+ <!--======page 4 L=======-->
+ <div>
+  <span class="columnSpan">1 500●400● 4000●300048●β 300●●200 200●100 100●●●00152030501002001520Training set size (log scale)(a) β~Uniform(2, 8) 25110.0● 20●0−2−10127.5● 15β●5.0 10●●●52.5●●●0152030501002001520Training set size (log scale)(d) β~Uniform(0, 2)(e) 1●●●●●●● 400●0●024200 300β 200●100 100●●●0015203050100200300500152030Training set size (log scale)(g) 50% Sparsity Figure 2. corner of each panel.115 150●10−2−1012β 10●EWRidge5●●Lasso 5●NNLassoSTEW●●●01520305010020015203050Training set size (log scale) Figure 3. position (b) in a Gaussian environment. weights. Finally, theβ∼ U(−1,1)</span>
+ </div>
+ <!--======page 4 R=======-->
+ <div>
+  <span class="columnSpan">11500●00400048048EWββ●300 ●Ridge●Lasso200● ●NNLasso●100STEW●●●●●●0 305010020015203050100200Training set size (log scale) (b) β~Uniform(4, 6)(c) β~Uniform(0, 10)118●00EW6−2−1012−2−1012ββRidge●●Lasso4● ●NNLasso● ●STEW2●●●●●● 305010020015203050100200Training set size (log scale) β~Uniform(−0.5, 1.5)(f) β~Uniform(−1, 1)11 ●●●●●7500●024024EWββ●●50Ridge●LassoNNLasso25●STEW●●●●●●●●●05010020030050015203050100200300500Training set size (log scale) (h) 70% Sparsity(i) 90% SparsityNNLasso decreased relative to the performance of modelswhich do not use information about the direction of features.Yet STEWremained the best performing model even in anundirectable environment. In contrast, NNLasso performedconsiderably worse than ridge regression and the Lasso.High-dimensional environments with sparsity.On learn-ing curves presented so far, the early parts of the curves 100200
+   <sub>correspond to moderate</sub>
+   <sub>p &gt; n</sub>
+   <sub>situations with more features</sub>than observations. Butpwas of the same order of magnitudeasn. For the following set of experiments, we increased thenumber of features top= 200. In addition, we introducedsparsity by setting some proportion of weights to exactlyzero. Weights were sampled fromU(1,3)and subsequently,conditional on the outcome of a coin ﬂip, set to zero. Thiscoin ﬂip had success probabilityP[β= 0] =ω, whereωis the expected degree of sparsity in the environment. For
+  </span>
+ </div>
+ <!--======page 5 L=======-->
+ <div>
+  <span class="columnSpan">1.000.9 0.950.8 0.90 0.850.74610205010030070015004Training−set size (log scale)(a) Rent(intuitively directed) 1.000.9 0.950.8 0.90 0.850.74610205010030070015004Training−set size (log scale)(d) Rent(directed on training set) Figure 4. Rentdata set, the second column on theDiabetes a value of zero while 30% of the weights follow a distribution. Panels g to i of Figure2 large parts of the learning curve, especially when large parts of the learning curve. Empirical bias-variance analysis. ronment of Figure3 zero mean and unit variance,β∼ N(0,1) spective (Hoerl &amp; Kennard,1970 some variance. 5.2. Real-World Environments</span>
+ </div>
+ <!--======page 5 R=======-->
+ <div>
+  <span class="columnSpan">EW0.9Elasticnet0.8NNLassoSTEW0.70.60.546102050100300 6102050100300 Training−set size (log scale)Training−set size (log scale)(c) Mean across 13 data sets(b) Diabetes(Lasso−directed)(Lasso−directed)EW0.9Elasticnet0.8NNLassoSTEW0.70.60.546102050100300 6102050100300Training−set size (log scale) Training−set size (log scale)(e) Diabetes(f) Mean across 13 data sets(directed on training set) (directed on training set) U(1,3)different conditions regarding how directable features are.The Supplementary Material contains detailed descriptionsof each data set. n &lt;&lt; p.We ﬁrst consider theRentdata set (Tutz,2011) where theproblem is to estimate the responserent per m
+   <sup>2</sup>for 2053apartments based on 10 features. In the ﬁrst stage of ouranalysis, we directed features based on our intuition. Forexample, the featuresthe apartment has warm water(yes =1, no = 0) and theyear of construction(in years) were bothexpected to be positively associated with the response. Fig-ure4a shows that both EWand STEWclearly outperformedcompeting models across the entire learning curve on theintuitively directedRentdata set, with EWperforming evenbetter than STEW.Intuitively guessing feature directions is not always easy.In theDiabetesdata set, in which a quantitative measureof disease progression of 442 diabetes patients needs tobe predicted based onage, sex, body mass index, averageblood pressure, and six blood serum measurements, wecould not intuitively guess the directions of most features.However, a physician probably could. We simulated thistype of expert knowledge as follows. We estimated a Lassomodel on the entire data set and chose the regularizationstrength that resulted in the lowest cross-validated prediction
+  </span>
+ </div>
+ <!--======page 6 L=======-->
+ <!--======page 6 R=======-->
+ <div>
+  <span class="columnSpan">5000M−learning + STEWM−learning + Ridge4000M−learningEqual Weights300020001000035102050100200300Iteration (log scale)Figure 5.Quality of the policy learned as a function of the itera-tions of the algorithm. Each learning curve shows means across100 replications of the algorithm. Quality of the policy is measuredby the mean score obtained by the policy in 10 Tetris games.?a∈A(s) Diabetes
+   <sub>M−learning + NN</sub> 4showFor Tetris, we representU(s, a)as a linear function of aset of features,U(s, a) =β
+   <sup>T</sup>φ(s, a), whereφ(s, a)denotefeature values that correspond to selecting actionain states.As usual,βdenotes the feature weights. Feature weights areinitialized to randomvalues, then periodically updated usingmultinomial logistic regression. A single training samplefor updating feature weights is generated as follows.(1) For every available action in the current state, generateMindependent rollouts of lengthT, where a rollout is aforward simulation of the game beginning at the currentstate. In this simulation, actions are selected by maximizingU(s, a)unless an immediate clearing of one or more linesis possible, in which case the action that clears the highestnumber of lines is selected.(2) Execute the action that returned the highest mean totalreward in the rollouts. Let˜adenote this action.(3) To the training set of multinomial logistic regression,add one new sample,(˜a,φ(s, a
+   <sub>1</sub>), ...,φ(s, a
+   <sub>|A</sub>
+   <sub>(</sub>
+   <sub>s</sub>
+   <sub>)</sub>
+   <sub>|</sub>)), wherethe predictors are the feature values of all available actionsin statesand the response variable is the identity of theselected action.Periodically (in our case, after each decision in the game),feature weights are updated through multinomial logisticregression on the accumulated training set. The new set of Algortaweights maximizes the likelihood of the selected actionsin the training set if the agent were to use action-selectionprobabilities˜π(s, a) =
+   <sup>?</sup>
+   <sup>e</sup>
+   <sup>U</sup>
+   <sup>(</sup>
+   <sup>s,a</sup>
+   <sub>e</sub>
+   <sup>)</sup>
+   <sub>U</sub>
+   <sub>(</sub>
+   <sub>s,a</sub>
+   <sub>?</sub>
+   <sub>)</sub>.Regularized versions of M-learning are easily obtained by
+  </span>
+ </div>
+ <!--======page 7 L=======-->
+ <div>
+  <span class="columnSpan">a
+   <sub>i</sub>is the action that was selected in states
+   <sub>i</sub> setDandλ≥0 log(p(s
+   <sub>i</sub>, a
+   <sub>i</sub>))depends onβbecauseU(s, a) β under non-negativity constraints for all weights. closely-related algorithm is ment learning(Lagoudakis &amp; Parr,2003 choice modeling. Experiments.We used a board size of10×10 parametersM= 7,T= 10 actions is always smaller than34 algorithmwas at most34TM= 2380 regression in iterationkused the most recentn(k) samples, wheren(k) =min(50,?
+   <sup>k</sup>
+   <sub>2</sub>?+ 2) ization strengthλ features were used to describe a state-action pair: height,number of eroded piece cells, umn transitions,number of holes, hole depth, andnumber of rows with holes are from earlier work byThiery &amp; Scherrer( scribed byS¸ ims¸ek et al.(2016 &amp; Scherrer,2009 a baseline. Results. Tetris. Figure5 achieve comparable play.
+  </span>
+ </div>
+ <!--======page 7 R=======-->
+ <div>
+  <span class="columnSpan">2015) but these were obtained using a per-iteration budgetof 8,000,000 calls to the generative model. When CBMPI isapplied with budgets similar to those used for M-learning,CBMPI performance dropped substantially. In the Supple-mentary Material, we report experimental results comparingM-learning with CBMPI on small budgets.One may reasonably assume that STEW would performwell only in environments in which the true feature weightsare almost equal. This is clearly not the case. STEW hasproven to be useful in a wide range of synthetic and real-world environments where any assumption of equal weightsis clearly violated.To understand how STEW can outperform models thatshrink toward zero, it has been instructive to contrast thetwo models that are obtained in the limit of inﬁnite regu)traininglarization: EW and the0-model. Our theoretical resultsshow that EWhas lower bias than the0-model and that thisdifference increases with increasing directability of features. landingOn data sets that require strong regularization (for example,,col-small data sets), STEWinherits this relatively lower bias.,Sign-constrained models such as NNLS or NNLasso also ) whoutilize information on feature directions but generally didnot perform as well as STEW in fully directable environ-ments. Furthermore, when directions were not available,or were unreliable, these models failed to produce useful Thieryestimates whereas STEWperformed on par with other regu-larized linear models.STEWshowed surprisingly high prediction accuracy acrossa variety ofp &gt; nenvironments. Yet, unlike Lasso-typemodels, STEW has no built-in variable-selection mecha-nism. It is thus clearly not meant to be a model forsparserecovery, that is, STEWis not expected to identify the non-zero weights in a sparse environment. It could, however,potentially be developed further to include a sparsity com-ponent or used in conjunction with existing methods forvariable selection. One possibility is a two-stage model,similar toLasso + OLS(Efron et al.,2004;Belloni &amp; Cher-nozhukov,2013). The ﬁrst stage of this model consistsof ﬁtting a Lasso model on the entire training data andsubsequently discarding all features whose Lasso-estimatesare zero. The ﬁnal estimate is then obtained by ﬁtting thesecond-stage model on the reduced set of features. STEWcould prove useful as a second-stage model because theinitial Lasso estimate not only takes care of discarding irrel-evant features but also provides information about featuredirections. STEWand Lasso-type models exploit differenttypes of priors (or information) about the environment. De-veloping models that can exploit both types of information6. Discussion</span>
+ </div>
+ <!--======page 8 L=======-->
+ <div>
+  <span class="columnSpan">´ We would like to thank Sim¨ Algorta, S. and S¸ ims¸ek, learning.arXiv e-prints selection in high-dimensional sparse models. 19(2):521–547, 2013. B¨uhlmann, P. and van de Geer, S. Dimensional Data. Springer, 2011. and applications. Vision, 20(1):89–97, 2004. mechanical prediction. Making, 19(5):413–428, 2006. chometrika, 75(3):521–541, 2010. making.Psychological Bulletin strategy?Review of Financial Studies 2009. angle regression.The Annals of Statistics 2004. for decision making. man Performance, 13(2):171–192, 1975. Friedman, J., Hastie, T., and Tibshirani, R. tion. Springer, 2009. Acknowledgements References</span>
+ </div>
+ <!--======page 8 R=======-->
+ <!--======page 9 L=======-->
+ <!--======page 9 R=======-->
+</div>

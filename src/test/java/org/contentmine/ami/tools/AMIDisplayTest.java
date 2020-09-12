@@ -1,24 +1,12 @@
 package org.contentmine.ami.tools;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
-
 import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.List;
 
-import org.apache.logging.log4j.Logger;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.contentmine.ami.AMIFixtures;
-import org.contentmine.cproject.files.CProject;
-import org.contentmine.cproject.files.DirectoryDeleter;
-import org.contentmine.cproject.files.Unzipper;
-import org.contentmine.cproject.util.CMineGlobber;
 import org.contentmine.cproject.util.CMineTestFixtures;
-import org.contentmine.eucl.euclid.util.CMFileUtil;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 

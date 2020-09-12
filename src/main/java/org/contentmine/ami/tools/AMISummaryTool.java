@@ -78,6 +78,7 @@ public class AMISummaryTool extends AbstractAMITool {
 	}
 
     @Option(names = {"--flatten"},
+    		
     	    defaultValue = "false",
             description = "collect all leaf nodes in single directory; default=true")
     private boolean flatten = true;

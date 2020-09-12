@@ -1,6 +1,8 @@
 package org.contentmine.ami.tools;
 
 import java.io.File;
+
+
 import java.io.StringReader;
 import java.nio.file.Paths;
 import java.util.List;
@@ -95,7 +97,8 @@ public class AMILuceneTest extends AbstractAMITest {
 				+ " --skiptypes " + excludeTypes
 				+ " --index " + indexDir  
 				;
-		AMILuceneTool amiLuceneTool = AMI.execute(AMILuceneTool.class, cmd);
+		AMI.execute(cmd);
+//		AMILuceneTool amiLuceneTool = AMI.execute(AMILuceneTool.class, cmd);
 		Assert.assertTrue(new File(indexDir, "write.lock").exists());
 		
 	}
@@ -104,6 +107,11 @@ public class AMILuceneTest extends AbstractAMITest {
 	public void testSearchIndex() {
 		String query = "id id1000";
 		File indexDir = ZIKA10INDEX;
+		File[] files = ZIKA2INDEX.listFiles();
+		for (File file : files) {
+			System.out.println(">"+file);
+			file.delete();
+		}
 		System.out.println(indexDir);
 		String cmd = " -vv"
 				+ " lucene "
@@ -111,6 +119,11 @@ public class AMILuceneTest extends AbstractAMITest {
 				+ " --query "+query
 				;
 		AMI.execute(AMILuceneTool.class, cmd);
+		files = ZIKA2INDEX.listFiles();
+		System.out.println(">>"+files.length);
+		for (File file : files) {
+			System.out.println(">"+file);
+		}
 	}
 
 	@Test

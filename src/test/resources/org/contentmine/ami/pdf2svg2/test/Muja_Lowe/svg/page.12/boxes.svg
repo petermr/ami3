@@ -2,445 +2,445 @@
 <svg height="760.0" width="550.4250000000001" xmlns="http://www.w3.org/2000/svg">
  <g>
   <g>
-   <rect x="26.2" y="293.4" width="251.06" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="26.2" y="293.4" width="251.06" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; single process, showing no signiﬁcant overhead from the; null</title>
    </rect>
    <text svgx:width="0.43,0.29,0.58,0.55,0.29,0.48,0.55,0.6,0.4,0.54,0.45,0.48,0.43,0.43,0.25,0.55,0.43,0.58,0.54,0.83,0.29,0.58,0.55,0.55,0.58,0.54,0.55,0.43,0.29,0.55,0.58,0.29,0.6,0.45,0.5,0.58,0.32,0.55,0.54,0.56,0.48,0.4,0.58,0.48,0.5,0.61,0.55,0.33,0.4,0.54,0.88,0.55,0.32,0.58,0.48" y="302.9" x="26.2,30.3,33.2,38.8,44.1,47.0,51.5,55.2,61.0,64.7,70.0,74.4,79.0,83.1,87.3,89.6,93.2,97.4,103.0,108.3,116.2,119.1,124.7,129.9,133.6,139.2,144.3,147.9,152.0,154.9,160.2,165.8,168.7,174.5,178.8,183.7,189.4,192.4,196.0,201.2,206.6,211.3,215.1,220.7,225.4,230.2,236.0,239.6,242.8,246.7,251.9,260.2,263.9,267.1,272.7" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">single process, showing no signiﬁcant overhead from the</text>
   </g>
   <g>
-   <rect x="26.2" y="304.8" width="251.06" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="26.2" y="304.8" width="251.06" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; MPI runtime. For this experiment and the one in Fig. 15 we; null</title>
    </rect>
    <text svgx:width="0.95,0.6,0.33,0.55,0.4,0.6,0.58,0.32,0.29,0.88,0.48,0.25,0.55,0.55,0.54,0.4,0.55,0.32,0.58,0.29,0.43,0.55,0.48,0.52,0.6,0.48,0.4,0.29,0.88,0.48,0.58,0.32,0.55,0.5,0.58,0.61,0.55,0.32,0.58,0.48,0.55,0.54,0.58,0.48,0.55,0.29,0.58,0.55,0.55,0.29,0.55,0.25,0.55,0.5,0.5,0.55,0.83,0.48" y="314.3" x="26.2,35.3,41.1,44.2,46.6,50.5,56.3,61.9,65.0,67.9,76.4,81.0,83.4,85.8,91.1,96.4,100.1,102.5,105.6,111.3,114.1,118.2,120.6,125.2,130.2,136.0,140.7,144.4,147.4,155.8,160.5,166.1,169.1,171.5,176.4,182.0,187.8,190.2,193.3,199.0,203.5,205.9,211.2,216.8,221.3,223.7,226.6,232.1,234.5,239.8,242.7,248.0,250.4,252.8,257.6,262.3,264.7,272.7" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">MPI runtime. For this experiment and the one in Fig. 15 we</text>
   </g>
   <g>
-   <rect x="26.2" y="316.3" width="251.01" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="26.2" y="316.3" width="251.01" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; used a subset of only 8 million tiny images to be able to run; null</title>
    </rect>
    <text svgx:width="0.6,0.43,0.48,0.61,0.55,0.5,0.55,0.43,0.6,0.55,0.43,0.48,0.32,0.55,0.54,0.33,0.55,0.54,0.58,0.29,0.55,0.55,0.5,0.55,0.88,0.29,0.29,0.29,0.29,0.54,0.58,0.55,0.32,0.29,0.58,0.55,0.55,0.29,0.88,0.5,0.55,0.48,0.43,0.55,0.32,0.54,0.55,0.55,0.48,0.55,0.5,0.55,0.29,0.48,0.55,0.32,0.54,0.55,0.4,0.6,0.58" y="325.8" x="26.2,32.0,36.1,40.8,46.5,48.9,53.6,55.9,60.0,65.9,71.1,75.3,79.9,82.9,85.3,90.5,93.6,96.0,101.2,106.8,109.7,114.9,117.2,122.0,124.3,132.7,135.6,138.5,141.4,144.2,149.4,154.9,157.2,160.4,163.3,168.9,174.1,176.4,179.3,187.7,192.6,197.9,202.5,206.6,208.9,212.0,217.1,219.4,224.7,229.3,231.6,236.4,241.7,244.6,249.1,251.4,254.6,259.7,262.0,265.9,271.7" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">used a subset of only 8 million tiny images to be able to run</text>
   </g>
   <g>
-   <rect x="26.2" y="327.7" width="152.375" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="26.2" y="327.7" width="152.375" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; the experiment on a single machine.; null</title>
    </rect>
    <text svgx:width="0.32,0.58,0.48,0.55,0.48,0.52,0.6,0.48,0.4,0.29,0.88,0.48,0.58,0.32,0.55,0.54,0.58,0.55,0.5,0.55,0.43,0.29,0.58,0.55,0.29,0.48,0.55,0.88,0.5,0.45,0.58,0.29,0.58,0.48,0.25" y="337.2" x="26.2,29.3,35.0,39.5,41.7,46.3,51.3,57.1,61.8,65.6,68.5,77.0,81.6,87.2,90.3,92.5,97.7,103.2,105.4,110.1,112.3,116.4,119.3,124.9,130.3,133.1,137.7,139.8,148.3,153.1,157.5,163.1,166.0,171.6,176.2" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">the experiment on a single machine.</text>
   </g>
   <g>
-   <rect x="38.2" y="339.2" width="239.04000000000002" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="38.2" y="339.2" width="239.04000000000002" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; Fig. 15 shows the performance obtained by using eight; null</title>
    </rect>
    <text svgx:width="0.55,0.29,0.55,0.25,0.55,0.5,0.5,0.55,0.43,0.58,0.54,0.83,0.43,0.55,0.32,0.58,0.48,0.55,0.6,0.48,0.4,0.33,0.54,0.4,0.88,0.5,0.58,0.45,0.48,0.55,0.54,0.55,0.32,0.5,0.29,0.58,0.48,0.61,0.55,0.55,0.55,0.55,0.6,0.43,0.29,0.58,0.55,0.55,0.48,0.29,0.55,0.58,0.32" y="348.7" x="38.2,43.4,46.1,51.4,53.7,57.4,62.2,66.9,70.5,74.6,80.1,85.2,93.1,97.2,100.9,103.9,109.4,114.0,117.6,123.4,127.9,131.6,134.8,139.9,143.6,152.0,156.7,162.3,166.5,171.0,174.7,179.8,185.0,188.1,192.8,195.5,201.1,205.6,211.4,215.1,220.4,225.6,229.3,235.0,239.0,241.8,247.3,252.5,256.2,260.7,263.5,268.7,274.2" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Fig. 15 shows the performance obtained by using eight</text>
   </g>
   <g>
-   <rect x="26.2" y="350.7" width="251.01" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="26.2" y="350.7" width="251.01" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; parallel processes on one, two or three machines. Even; null</title>
    </rect>
    <text svgx:width="0.6,0.5,0.4,0.5,0.29,0.29,0.48,0.29,0.55,0.6,0.4,0.54,0.45,0.48,0.43,0.43,0.48,0.43,0.55,0.54,0.58,0.55,0.54,0.58,0.48,0.25,0.55,0.32,0.83,0.54,0.55,0.54,0.4,0.55,0.32,0.58,0.4,0.48,0.48,0.55,0.88,0.5,0.45,0.58,0.29,0.58,0.48,0.43,0.25,0.55,0.61,0.56,0.48,0.58" y="360.2" x="26.2,31.9,36.6,40.4,45.1,47.9,50.6,55.2,57.9,63.2,68.9,72.6,77.7,82.0,86.5,90.5,94.6,99.1,103.2,108.3,113.5,118.9,124.2,129.3,134.8,139.3,141.7,146.9,149.9,157.8,162.9,168.2,173.3,177.1,182.2,185.3,190.8,194.5,199.0,203.6,208.8,217.2,221.9,226.1,231.7,234.4,239.9,244.5,248.5,250.9,256.1,261.9,267.2,271.7" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">parallel processes on one, two or three machines. Even</text>
   </g>
   <g>
-   <rect x="26.2" y="362.1" width="251.04000000000002" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="26.2" y="362.1" width="251.04000000000002" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; though the same number of parallel processes are used, it; null</title>
    </rect>
    <text svgx:width="0.32,0.58,0.54,0.6,0.55,0.58,0.55,0.32,0.58,0.48,0.55,0.43,0.5,0.88,0.48,0.55,0.58,0.6,0.88,0.55,0.48,0.4,0.55,0.54,0.33,0.55,0.6,0.5,0.4,0.5,0.29,0.29,0.48,0.29,0.55,0.6,0.4,0.54,0.45,0.48,0.43,0.43,0.48,0.43,0.55,0.5,0.4,0.48,0.55,0.6,0.43,0.48,0.61,0.25,0.55,0.29,0.32" y="371.6" x="26.2,29.2,34.8,39.9,45.6,50.8,56.3,59.9,62.9,68.4,73.0,76.5,80.6,85.3,93.7,98.2,101.7,107.2,112.9,121.3,126.5,131.1,134.9,138.3,143.4,146.6,150.1,155.8,160.6,164.3,169.0,171.8,174.5,179.1,181.8,185.4,191.1,194.8,200.0,204.2,208.7,212.8,216.8,221.3,225.4,228.9,233.7,237.4,241.9,245.5,251.2,255.2,259.8,265.6,267.9,271.4,274.2" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">though the same number of parallel processes are used, it</text>
   </g>
   <g>
-   <rect x="26.2" y="373.6" width="251.03500000000003" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="26.2" y="373.6" width="251.03500000000003" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; can be seen that the performance increases when those pro-; null</title>
    </rect>
    <text svgx:width="0.45,0.5,0.58,0.55,0.55,0.48,0.55,0.43,0.48,0.48,0.58,0.55,0.32,0.58,0.5,0.32,0.55,0.32,0.58,0.48,0.55,0.6,0.48,0.4,0.33,0.54,0.4,0.88,0.5,0.58,0.45,0.48,0.55,0.29,0.58,0.45,0.4,0.48,0.5,0.43,0.48,0.43,0.55,0.83,0.58,0.48,0.58,0.55,0.32,0.58,0.54,0.43,0.48,0.55,0.6,0.4,0.54,0.33" y="383.1" x="26.2,30.4,35.2,40.6,43.3,48.5,53.1,55.7,59.8,64.3,68.8,74.3,77.0,80.0,85.6,90.3,93.3,96.0,99.0,104.5,109.1,111.7,117.5,122.0,125.7,128.9,134.0,137.7,146.1,150.8,156.4,160.6,165.1,167.8,170.5,176.0,180.3,184.0,188.5,193.3,197.3,201.8,205.9,208.5,216.4,221.9,226.5,231.9,234.6,237.6,243.2,248.3,252.3,256.9,259.5,265.3,269.0,274.1" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">can be seen that the performance increases when those pro-</text>
   </g>
   <g>
-   <rect x="26.2" y="385.0" width="251.16000000000003" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="26.2" y="385.0" width="251.16000000000003" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; cesses are distributed on more machines. This can also be; null</title>
    </rect>
    <text svgx:width="0.45,0.48,0.43,0.43,0.48,0.43,0.55,0.5,0.4,0.48,0.55,0.61,0.29,0.43,0.32,0.4,0.29,0.55,0.6,0.32,0.48,0.61,0.55,0.54,0.58,0.55,0.88,0.54,0.4,0.48,0.55,0.88,0.5,0.45,0.58,0.29,0.58,0.48,0.43,0.25,0.55,0.61,0.58,0.29,0.43,0.55,0.45,0.5,0.58,0.55,0.5,0.29,0.43,0.54,0.55,0.55,0.48" y="394.5" x="26.2,30.4,35.0,39.0,43.0,47.6,51.6,55.3,60.0,63.7,68.3,71.9,77.7,80.5,84.5,87.5,91.3,94.0,99.3,105.0,108.0,112.6,118.3,122.0,127.1,132.6,136.3,144.7,149.8,153.5,158.1,161.7,170.1,174.8,179.0,184.5,187.3,192.8,197.4,201.4,203.8,207.4,213.2,218.7,221.5,225.5,229.2,233.4,238.1,243.6,247.2,252.0,254.7,258.8,263.9,267.5,272.8" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">cesses are distributed on more machines. This can also be</text>
   </g>
   <g>
-   <rect x="26.2" y="396.5" width="251.01" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="26.2" y="396.5" width="251.01" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; explained by the memory access overhead, since when; null</title>
    </rect>
    <text svgx:width="0.48,0.52,0.6,0.29,0.5,0.29,0.58,0.48,0.61,0.55,0.55,0.55,0.55,0.32,0.58,0.48,0.55,0.88,0.48,0.88,0.54,0.4,0.55,0.55,0.5,0.45,0.45,0.48,0.43,0.43,0.55,0.54,0.56,0.48,0.4,0.58,0.48,0.5,0.61,0.25,0.55,0.43,0.29,0.58,0.45,0.48,0.55,0.83,0.58,0.48,0.58" y="406.0" x="26.2,30.7,35.6,41.4,44.1,48.9,51.6,57.1,61.7,67.4,73.0,78.2,83.4,89.0,92.1,97.6,102.1,107.7,116.0,120.6,128.9,134.1,137.8,143.0,148.6,153.3,157.6,161.8,166.3,170.4,174.4,179.9,185.1,190.4,194.9,198.7,204.2,208.7,213.4,219.2,221.6,227.2,231.2,234.0,239.5,243.7,248.3,253.8,261.7,267.2,271.7" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">explained by the memory access overhead, since when</text>
   </g>
   <g>
-   <rect x="26.2" y="407.9" width="251.01" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="26.2" y="407.9" width="251.01" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; more machines are used, fewer processes are running on; null</title>
    </rect>
    <text svgx:width="0.88,0.54,0.4,0.48,0.55,0.88,0.5,0.45,0.58,0.29,0.58,0.48,0.43,0.55,0.5,0.4,0.48,0.55,0.6,0.43,0.48,0.61,0.25,0.55,0.33,0.48,0.83,0.48,0.4,0.55,0.6,0.4,0.54,0.45,0.48,0.43,0.43,0.48,0.43,0.55,0.5,0.4,0.48,0.55,0.4,0.6,0.58,0.58,0.29,0.58,0.55,0.55,0.54,0.58" y="417.4" x="26.2,34.6,39.7,43.4,48.0,52.0,60.4,65.2,69.4,74.9,77.7,83.2,87.7,91.8,95.9,100.6,104.3,108.9,112.9,118.6,122.7,127.2,133.0,135.4,139.5,142.6,147.1,155.0,159.6,163.4,167.4,173.1,176.9,182.0,186.2,190.8,194.8,198.8,203.4,207.4,211.5,216.2,219.9,224.5,228.5,232.3,238.0,243.5,249.0,251.8,257.3,262.5,266.6,271.7" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">more machines are used, fewer processes are running on</text>
   </g>
   <g>
-   <rect x="26.2" y="419.4" width="203.675" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="26.2" y="419.4" width="203.675" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; each machine, requiring fewer memory accesses.; null</title>
    </rect>
    <text svgx:width="0.48,0.5,0.45,0.58,0.55,0.88,0.5,0.45,0.58,0.29,0.58,0.48,0.25,0.55,0.4,0.48,0.56,0.6,0.29,0.4,0.29,0.58,0.55,0.55,0.33,0.48,0.83,0.48,0.4,0.55,0.88,0.48,0.88,0.54,0.4,0.55,0.55,0.5,0.45,0.45,0.48,0.43,0.43,0.48,0.43,0.25" y="428.9" x="26.2,30.7,35.5,39.7,45.2,47.5,55.9,60.6,64.8,70.4,73.1,78.6,83.2,85.5,87.8,91.6,96.1,101.4,107.1,109.9,113.6,116.4,121.9,127.1,129.4,132.5,137.1,144.9,149.5,153.3,155.5,163.9,168.4,176.8,181.9,185.7,190.9,193.2,197.9,202.1,206.3,210.9,214.9,219.0,223.5,227.5" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">each machine, requiring fewer memory accesses.</text>
   </g>
   <g>
-   <rect x="38.2" y="430.8" width="239.05" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="38.2" y="430.8" width="239.05" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; Fig. 16 shows the search speedup for the data set of 80; null</title>
    </rect>
    <text svgx:width="0.55,0.29,0.55,0.25,0.55,0.5,0.5,0.55,0.43,0.58,0.54,0.83,0.43,0.55,0.32,0.58,0.48,0.55,0.43,0.48,0.5,0.4,0.45,0.58,0.55,0.43,0.6,0.48,0.48,0.61,0.6,0.6,0.55,0.33,0.54,0.4,0.55,0.32,0.58,0.48,0.55,0.61,0.5,0.32,0.5,0.55,0.43,0.48,0.32,0.55,0.54,0.33,0.55,0.5,0.5" y="440.3" x="38.2,43.2,45.7,50.8,53.1,57.2,61.7,66.4,70.6,74.4,79.7,84.7,92.3,96.4,100.5,103.3,108.7,113.2,117.3,121.1,125.5,130.0,133.6,137.6,143.1,147.2,151.0,156.5,160.9,165.2,170.8,176.4,182.0,186.2,189.1,194.0,197.8,201.9,204.7,210.0,214.6,218.7,224.3,228.8,231.7,236.4,240.5,244.3,248.7,251.7,255.8,260.7,263.8,268.0,272.5" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Fig. 16 shows the search speedup for the data set of 80</text>
   </g>
   <g>
-   <rect x="26.2" y="442.3" width="251.16000000000003" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="26.2" y="442.3" width="251.16000000000003" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; million tiny images of [7]. The algorithm used is the; null</title>
    </rect>
    <text svgx:width="0.88,0.29,0.29,0.29,0.29,0.54,0.58,0.55,0.32,0.29,0.58,0.55,0.55,0.29,0.88,0.5,0.55,0.48,0.43,0.55,0.54,0.33,0.55,0.33,0.5,0.33,0.25,0.55,0.61,0.58,0.48,0.55,0.5,0.29,0.55,0.54,0.4,0.29,0.32,0.58,0.88,0.55,0.6,0.43,0.48,0.61,0.55,0.29,0.43,0.55,0.32,0.58,0.48" y="451.8" x="26.2,34.4,36.9,39.5,42.1,44.6,49.5,55.0,62.0,64.9,67.5,72.8,78.0,85.0,87.5,95.7,100.3,105.3,109.6,113.7,120.6,125.6,128.7,135.7,138.7,143.2,146.2,148.5,155.4,161.1,166.4,170.9,177.9,182.4,185.0,190.0,195.0,198.5,201.1,203.9,209.2,217.6,224.5,230.1,233.9,238.3,244.1,251.0,253.6,257.7,264.7,267.5,272.8" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">million tiny images of [7]. The algorithm used is the</text>
   </g>
   <g>
-   <rect x="289.2" y="264.6" width="126.94000000000005" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="264.6" width="126.94000000000005" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; radomized k-d tree forest as it; null</title>
    </rect>
    <text svgx:width="0.4,0.5,0.61,0.54,0.88,0.29,0.5,0.48,0.61,0.55,0.55,0.33,0.61,0.55,0.32,0.4,0.48,0.48,0.55,0.33,0.54,0.4,0.48,0.43,0.32,0.55,0.5,0.43,0.55,0.29,0.32" y="274.1" x="289.2,292.8,297.3,302.9,307.9,316.0,318.6,323.1,327.4,333.2,336.6,341.7,344.6,350.4,353.9,356.7,360.3,364.6,369.1,372.5,375.5,380.4,383.9,388.3,392.1,395.1,398.6,403.1,407.2,410.5,413.1" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">radomized k-d tree forest as it</text>
   </g>
   <g>
-   <rect x="419.6" y="264.6" width="120.63499999999999" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="419.6" y="264.6" width="120.63499999999999" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; was determined by the auto-; null</title>
    </rect>
    <text svgx:width="0.83,0.5,0.43,0.55,0.61,0.48,0.32,0.48,0.4,0.88,0.29,0.58,0.48,0.61,0.55,0.55,0.55,0.55,0.32,0.58,0.48,0.55,0.5,0.6,0.32,0.54,0.33" y="274.1" x="419.6,427.3,431.8,435.8,439.3,444.9,449.2,452.1,456.4,460.0,468.2,470.7,476.0,480.3,486.1,489.6,494.6,499.8,503.2,506.1,511.4,515.9,519.3,523.8,529.4,532.2,537.1" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">was determined by the auto-</text>
   </g>
   <g>
-   <rect x="289.2" y="276.0" width="251.01000000000005" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="276.0" width="251.01000000000005" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; tuning procedure to be the most efﬁcient in this case. It can; null</title>
    </rect>
    <text svgx:width="0.32,0.6,0.58,0.29,0.58,0.55,0.55,0.6,0.4,0.54,0.45,0.48,0.61,0.6,0.4,0.48,0.55,0.32,0.54,0.55,0.55,0.48,0.55,0.32,0.58,0.48,0.55,0.88,0.54,0.43,0.32,0.55,0.48,0.33,0.6,0.45,0.29,0.48,0.58,0.32,0.55,0.29,0.58,0.55,0.32,0.58,0.29,0.43,0.55,0.45,0.5,0.43,0.48,0.25,0.55,0.33,0.32,0.55,0.45,0.5,0.58" y="285.5" x="289.2,292.1,297.6,302.9,305.5,310.8,316.0,319.6,325.1,328.6,333.5,337.6,341.9,347.5,353.0,356.6,361.1,364.6,367.4,372.5,376.0,381.1,385.6,389.1,392.0,397.2,401.8,405.3,413.5,418.4,422.2,425.3,428.8,433.1,436.1,441.6,445.6,448.2,452.5,457.8,460.9,464.4,467.0,472.4,475.9,478.8,484.1,486.7,490.7,494.1,498.2,502.7,506.5,510.9,513.2,516.7,519.7,522.7,526.2,530.2,534.7" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">tuning procedure to be the most efﬁcient in this case. It can</text>
   </g>
   <g>
-   <rect x="289.2" y="287.5" width="251.05" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="287.5" width="251.05" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; be seen that the search performance scales well with the data; null</title>
    </rect>
    <text svgx:width="0.55,0.48,0.55,0.43,0.48,0.48,0.58,0.55,0.32,0.58,0.5,0.32,0.55,0.32,0.58,0.48,0.55,0.43,0.48,0.5,0.4,0.45,0.58,0.55,0.6,0.48,0.4,0.33,0.54,0.4,0.88,0.5,0.58,0.45,0.48,0.55,0.43,0.45,0.5,0.29,0.48,0.43,0.55,0.83,0.48,0.29,0.29,0.55,0.83,0.29,0.32,0.58,0.55,0.32,0.58,0.48,0.55,0.61,0.5,0.32,0.5" y="297.0" x="289.2,294.3,298.8,301.6,305.5,309.8,314.2,319.6,322.5,325.3,330.7,335.2,338.2,341.1,343.9,349.3,353.8,356.6,360.4,364.8,369.3,372.8,376.9,382.4,385.2,390.7,395.0,398.6,401.5,406.5,410.0,418.2,422.7,428.0,432.1,436.6,439.4,443.2,447.3,451.8,454.4,458.7,462.8,465.5,473.2,477.5,480.1,482.8,485.7,493.4,495.9,498.8,504.3,507.0,509.9,515.2,519.8,522.5,528.1,532.7,535.5" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">be seen that the search performance scales well with the data</text>
   </g>
   <g>
-   <rect x="289.2" y="298.9" width="250.675" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="298.9" width="250.675" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; set size and it beneﬁts from using multiple parallel processes.; null</title>
    </rect>
    <text svgx:width="0.43,0.48,0.32,0.55,0.43,0.29,0.5,0.48,0.55,0.5,0.58,0.61,0.55,0.29,0.32,0.55,0.55,0.48,0.58,0.48,0.6,0.32,0.43,0.55,0.33,0.4,0.54,0.88,0.55,0.6,0.43,0.29,0.58,0.55,0.55,0.88,0.6,0.29,0.32,0.29,0.6,0.29,0.48,0.55,0.6,0.5,0.4,0.5,0.29,0.29,0.48,0.29,0.55,0.6,0.4,0.54,0.45,0.48,0.43,0.43,0.48,0.43,0.25" y="308.4" x="289.2,293.1,297.4,300.5,303.1,307.0,309.5,314.0,318.6,321.2,325.7,331.1,336.8,339.5,342.1,345.1,347.8,352.8,357.1,362.5,366.8,372.3,375.2,379.2,381.9,384.8,388.4,393.3,401.6,404.3,409.8,413.7,416.2,421.6,426.8,429.4,437.6,443.1,445.6,448.5,451.0,456.6,459.1,463.7,466.3,471.8,476.3,479.9,484.4,487.0,489.5,493.9,496.6,499.2,504.8,508.3,513.2,517.3,521.6,525.5,529.3,533.6,537.5" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">set size and it beneﬁts from using multiple parallel processes.</text>
   </g>
   <g>
-   <rect x="301.2" y="310.4" width="239.03500000000003" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="301.2" y="310.4" width="239.03500000000003" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; All the previous experiments have shown that distribut-; null</title>
    </rect>
    <text svgx:width="0.78,0.29,0.29,0.55,0.32,0.58,0.48,0.55,0.6,0.4,0.48,0.56,0.29,0.54,0.6,0.43,0.55,0.48,0.52,0.6,0.48,0.4,0.29,0.88,0.48,0.58,0.32,0.43,0.55,0.58,0.5,0.56,0.48,0.55,0.43,0.58,0.54,0.83,0.58,0.55,0.32,0.58,0.5,0.32,0.55,0.61,0.29,0.43,0.32,0.4,0.29,0.55,0.6,0.32,0.33" y="319.9" x="301.2,308.5,311.3,314.0,317.0,320.1,325.6,330.1,333.1,338.8,342.5,347.1,352.4,355.1,360.3,366.0,370.0,372.9,377.5,382.4,388.1,392.6,396.4,399.1,407.5,412.0,417.6,420.6,424.7,427.6,433.2,437.9,443.2,447.7,450.7,454.7,460.2,465.3,473.2,478.7,481.7,484.7,490.2,495.0,498.0,500.9,506.7,509.5,513.5,516.6,520.3,523.1,528.3,534.0,537.1" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">All the previous experiments have shown that distribut-</text>
   </g>
   <g>
-   <rect x="289.2" y="321.9" width="251.0850000000001" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="321.9" width="251.0850000000001" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; ing the nearest neighbor search to multiple machines results; null</title>
    </rect>
    <text svgx:width="0.29,0.58,0.55,0.55,0.32,0.58,0.48,0.55,0.58,0.48,0.5,0.4,0.48,0.43,0.32,0.55,0.58,0.48,0.29,0.55,0.58,0.55,0.54,0.4,0.55,0.43,0.48,0.5,0.4,0.45,0.58,0.55,0.32,0.54,0.55,0.88,0.6,0.29,0.32,0.29,0.6,0.29,0.48,0.55,0.88,0.5,0.45,0.58,0.29,0.58,0.48,0.43,0.55,0.4,0.48,0.43,0.6,0.29,0.32,0.43" y="331.4" x="289.2,292.0,297.5,302.7,305.0,308.1,313.6,318.1,320.4,325.9,330.5,335.2,339.0,343.5,347.5,350.6,352.9,358.4,362.9,365.7,370.9,376.4,381.6,386.7,390.5,392.8,396.9,401.4,406.1,409.9,414.1,419.6,421.9,425.0,430.1,432.4,440.8,446.5,449.2,452.3,455.0,460.8,463.5,468.1,470.4,478.8,483.5,487.7,493.2,496.0,501.5,506.0,510.1,512.4,516.1,520.7,524.7,530.4,533.2,536.2" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">ing the nearest neighbor search to multiple machines results</text>
   </g>
   <g>
-   <rect x="289.2" y="333.3" width="251.1599999999999" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="333.3" width="251.1599999999999" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; in an overall increase in performance in addition to the; null</title>
    </rect>
    <text svgx:width="0.29,0.58,0.55,0.5,0.58,0.55,0.54,0.56,0.48,0.4,0.5,0.29,0.29,0.55,0.29,0.58,0.45,0.4,0.48,0.5,0.43,0.48,0.55,0.29,0.58,0.55,0.6,0.48,0.4,0.33,0.54,0.4,0.88,0.5,0.58,0.45,0.48,0.55,0.29,0.58,0.55,0.5,0.61,0.61,0.29,0.32,0.29,0.54,0.58,0.55,0.32,0.54,0.55,0.32,0.58,0.48" y="342.8" x="289.2,292.0,297.5,302.2,307.0,312.4,317.3,322.4,327.7,332.2,336.0,340.7,343.5,346.2,350.9,353.7,359.2,363.4,367.2,371.7,376.4,380.5,385.0,389.8,392.5,398.0,402.8,408.5,413.1,416.8,419.9,425.1,428.8,437.2,441.9,447.4,451.7,456.2,460.9,463.7,469.2,474.0,478.7,484.5,490.3,493.1,496.1,498.9,504.0,509.5,514.3,517.3,522.4,527.2,530.2,535.8" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">in an overall increase in performance in addition to the</text>
   </g>
   <g>
-   <rect x="289.2" y="344.8" width="251.01000000000005" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="344.8" width="251.01000000000005" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; advantage of being able to use more memory. Ideally, when; null</title>
    </rect>
    <text svgx:width="0.5,0.61,0.56,0.5,0.58,0.32,0.5,0.55,0.48,0.55,0.54,0.33,0.55,0.55,0.48,0.29,0.58,0.55,0.55,0.5,0.55,0.29,0.48,0.55,0.32,0.54,0.55,0.6,0.43,0.48,0.55,0.88,0.54,0.4,0.48,0.55,0.88,0.48,0.88,0.54,0.4,0.55,0.25,0.55,0.33,0.61,0.48,0.5,0.29,0.29,0.55,0.25,0.55,0.83,0.58,0.48,0.58" y="354.3" x="289.2,294.0,299.8,305.1,309.8,315.4,318.4,323.1,328.4,332.9,335.3,340.4,343.5,346.0,351.2,355.8,358.5,364.0,369.2,371.7,376.4,381.6,384.4,388.9,391.4,394.4,399.5,402.0,407.7,411.7,416.2,418.7,427.1,432.2,435.9,440.5,442.9,451.3,455.8,464.2,469.3,473.0,478.3,480.6,483.1,486.2,492.0,496.6,501.3,504.1,506.8,512.0,514.4,516.8,524.7,530.2,534.7" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">advantage of being able to use more memory. Ideally, when</text>
   </g>
   <g>
-   <rect x="289.2" y="356.2" width="108.53000000000003" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="356.2" width="108.53000000000003" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; distributing the search to; null</title>
    </rect>
    <text svgx:width="0.61,0.29,0.43,0.32,0.4,0.29,0.55,0.6,0.32,0.29,0.58,0.55,0.55,0.32,0.58,0.48,0.55,0.43,0.48,0.5,0.4,0.45,0.58,0.55,0.32,0.54" y="365.7" x="289.2,295.1,297.8,301.9,304.9,308.6,311.4,316.6,322.3,325.4,328.1,333.7,338.9,342.5,345.5,351.0,355.6,359.2,363.2,367.8,372.5,376.3,380.5,386.0,389.6,392.6" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">distributing the search to</text>
   </g>
   <g>
-   <rect x="401.3" y="356.2" width="7.600000000000023" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="401.3" y="356.2" width="7.600000000000023" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; N; null</title>
    </rect>
    <text svgx:width="0.8" y="365.7" x="401.3" style="fill:rgb(35,31,32);font-family:AdvP4C4E51;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">N</text>
   </g>
   <g>
-   <rect x="413.3" y="356.2" width="126.89499999999992" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="413.3" y="356.2" width="126.89499999999992" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; machines the speedup would; null</title>
    </rect>
    <text svgx:width="0.88,0.5,0.45,0.58,0.29,0.58,0.48,0.43,0.55,0.32,0.58,0.48,0.55,0.43,0.6,0.48,0.48,0.61,0.6,0.6,0.55,0.83,0.54,0.6,0.29,0.61" y="365.7" x="413.3,421.7,426.4,430.6,436.1,438.9,444.4,449.0,453.0,456.6,459.7,465.2,469.7,473.3,477.4,483.1,487.6,492.2,498.0,503.7,509.4,513.0,520.8,526.0,531.7,534.4" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">machines the speedup would</text>
   </g>
   <g>
-   <rect x="289.2" y="367.7" width="9.860000000000014" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="367.7" width="9.860000000000014" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; be; null</title>
    </rect>
    <text svgx:width="0.55,0.48" y="377.2" x="289.2,294.5" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">be</text>
   </g>
   <g>
-   <rect x="303.6" y="367.7" width="7.600000000000023" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="303.6" y="367.7" width="7.600000000000023" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; N; null</title>
    </rect>
    <text svgx:width="0.8" y="377.2" x="303.6" style="fill:rgb(35,31,32);font-family:AdvP4C4E51;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">N</text>
   </g>
   <g>
-   <rect x="316.6" y="367.7" width="223.65999999999997" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="316.6" y="367.7" width="223.65999999999997" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; times higher, however in practice for approximate; null</title>
    </rect>
    <text svgx:width="0.32,0.29,0.88,0.48,0.43,0.55,0.58,0.29,0.55,0.58,0.48,0.4,0.25,0.55,0.58,0.54,0.83,0.48,0.56,0.48,0.4,0.55,0.29,0.58,0.55,0.6,0.4,0.5,0.45,0.32,0.29,0.45,0.48,0.55,0.33,0.54,0.4,0.55,0.5,0.6,0.6,0.4,0.54,0.52,0.29,0.88,0.5,0.32,0.48" y="377.2" x="316.6,319.7,322.4,330.8,335.3,339.4,344.0,349.5,352.3,357.5,363.0,367.6,371.3,373.7,378.3,383.8,388.9,396.8,401.4,406.7,411.2,415.0,419.6,422.4,427.9,432.6,438.3,442.0,446.8,451.0,454.0,456.8,461.0,465.6,470.2,473.4,478.5,482.3,486.9,491.6,497.3,503.0,506.8,511.9,516.8,519.6,528.0,532.7,535.7" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">times higher, however in practice for approximate</text>
   </g>
   <g>
-   <rect x="289.2" y="379.1" width="251.1599999999999" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="379.1" width="251.1599999999999" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; nearest neighbor search the speedup is smaller due to the; null</title>
    </rect>
    <text svgx:width="0.58,0.48,0.5,0.4,0.48,0.43,0.32,0.55,0.58,0.48,0.29,0.55,0.58,0.55,0.54,0.4,0.55,0.43,0.48,0.5,0.4,0.45,0.58,0.55,0.32,0.58,0.48,0.55,0.43,0.6,0.48,0.48,0.61,0.6,0.6,0.55,0.29,0.43,0.55,0.43,0.88,0.5,0.29,0.29,0.48,0.4,0.55,0.61,0.6,0.48,0.55,0.32,0.54,0.55,0.32,0.58,0.48" y="388.6" x="289.2,294.8,299.3,304.0,307.8,312.3,316.3,319.4,323.0,328.5,333.0,335.8,341.0,346.5,351.8,356.9,360.7,364.2,368.2,372.8,377.5,381.2,385.5,391.0,394.5,397.6,403.1,407.6,411.2,415.3,421.0,425.5,430.1,435.9,441.6,447.3,450.9,453.6,457.7,461.3,465.3,473.7,478.4,481.2,483.9,488.4,492.2,495.8,501.6,507.3,511.8,515.4,518.4,523.5,527.2,530.2,535.8" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">nearest neighbor search the speedup is smaller due to the</text>
   </g>
   <g>
-   <rect x="289.2" y="390.6" width="251.09999999999997" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="390.6" width="251.09999999999997" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; fact that the search on each of the machines has sub-linear; null</title>
    </rect>
    <text svgx:width="0.33,0.5,0.45,0.32,0.55,0.32,0.58,0.5,0.32,0.55,0.32,0.58,0.48,0.55,0.43,0.48,0.5,0.4,0.45,0.58,0.55,0.54,0.58,0.55,0.48,0.5,0.45,0.58,0.55,0.54,0.33,0.55,0.32,0.58,0.48,0.55,0.88,0.5,0.45,0.58,0.29,0.58,0.48,0.43,0.55,0.58,0.5,0.43,0.55,0.43,0.6,0.55,0.33,0.29,0.29,0.58,0.48,0.5,0.4" y="400.1" x="289.2,292.4,297.1,301.4,304.4,307.6,310.7,316.2,320.9,323.9,327.2,330.3,335.8,340.3,343.6,347.6,352.1,356.9,360.6,364.8,370.3,373.6,378.7,384.2,387.5,392.0,396.8,401.0,406.5,409.8,414.9,418.0,421.3,424.3,429.9,434.4,437.6,446.0,450.7,455.0,460.5,463.2,468.7,473.3,477.3,480.6,486.1,490.8,494.9,498.1,502.1,507.9,513.1,516.2,519.0,521.7,527.3,531.8,536.5" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">fact that the search on each of the machines has sub-linear</text>
   </g>
   <g>
-   <rect x="289.2" y="402.0" width="178.77500000000003" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="402.0" width="178.77500000000003" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; complexity in the size of the input data set.; null</title>
    </rect>
    <text svgx:width="0.45,0.54,0.88,0.6,0.29,0.48,0.52,0.29,0.32,0.55,0.55,0.29,0.58,0.55,0.32,0.58,0.48,0.55,0.43,0.29,0.5,0.48,0.55,0.54,0.33,0.55,0.32,0.58,0.48,0.55,0.29,0.58,0.6,0.6,0.32,0.55,0.61,0.5,0.32,0.5,0.55,0.43,0.48,0.32,0.25" y="411.5" x="289.2,293.5,298.6,307.0,312.7,315.4,320.0,324.9,327.7,330.7,335.9,338.2,341.0,346.5,348.8,351.8,357.3,361.9,364.1,368.2,370.9,375.7,380.2,382.5,387.6,390.7,393.0,396.0,401.6,406.1,408.4,411.1,416.6,422.3,428.1,431.1,433.4,439.2,444.0,447.0,451.7,454.0,458.0,462.6,465.6" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">complexity in the size of the input data set.</text>
   </g>
   <g>
-   <rect x="289.2" y="427.4" width="25.314999999999998" height="11.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="427.4" width="25.314999999999998" height="11.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>11.5; 6 T; null</title>
    </rect>
    <text svgx:width="0.55,0.55,0.61" y="438.9" x="289.2,295.6,307.5" style="fill:rgb(35,31,32);font-family:AdvP6EC5;font-size:11.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">6 T</text>
   </g>
   <g>
-   <rect x="314.5" y="429.7" width="12.76400000000001" height="9.199999999999989" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="314.5" y="429.7" width="12.76400000000001" height="9.199999999999989" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.2; HE; null</title>
    </rect>
    <text svgx:width="0.72,0.67" y="438.9" x="314.5,321.1" style="fill:rgb(35,31,32);font-family:AdvP6EC5;font-size:9.2px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">HE</text>
   </g>
   <g>
-   <rect x="330.0" y="427.4" width="48.61500000000001" height="11.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="330.0" y="427.4" width="48.61500000000001" height="11.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>11.5; FLANN L; null</title>
    </rect>
    <text svgx:width="0.61,0.61,0.72,0.72,0.72,0.55,0.61" y="438.9" x="330.0,337.0,344.1,352.3,360.5,368.8,371.6" style="fill:rgb(35,31,32);font-family:AdvP6EC5;font-size:11.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">FLANN L</text>
   </g>
   <g>
-   <rect x="378.6" y="429.7" width="35.063999999999965" height="9.199999999999989" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="378.6" y="429.7" width="35.063999999999965" height="9.199999999999989" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.2; IBRARY; null</title>
    </rect>
    <text svgx:width="0.28,0.72,0.72,0.72,0.72,0.67" y="438.9" x="378.6,381.2,387.8,394.3,400.9,407.5" style="fill:rgb(35,31,32);font-family:AdvP6EC5;font-size:9.2px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">IBRARY</text>
   </g>
   <g>
-   <rect x="289.2" y="445.2" width="251.02500000000003" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="445.2" width="251.02500000000003" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; The work presented in this paper has been made publicly; null</title>
    </rect>
    <text svgx:width="0.61,0.58,0.48,0.55,0.83,0.54,0.4,0.55,0.55,0.6,0.4,0.48,0.43,0.48,0.58,0.32,0.48,0.61,0.55,0.29,0.58,0.55,0.32,0.58,0.29,0.43,0.55,0.6,0.5,0.6,0.48,0.4,0.55,0.58,0.5,0.43,0.55,0.55,0.48,0.48,0.58,0.55,0.88,0.5,0.61,0.48,0.55,0.6,0.6,0.55,0.29,0.29,0.45,0.29,0.55" y="454.7" x="289.2,295.1,300.6,305.1,308.6,316.5,321.6,325.4,330.6,334.1,339.8,343.5,348.1,352.1,356.7,362.2,365.2,369.8,375.5,379.1,381.9,387.3,390.9,393.9,399.5,402.2,406.3,409.8,415.5,420.3,426.0,430.5,434.3,437.8,443.3,448.0,452.1,455.6,460.8,465.3,469.9,475.4,478.9,487.3,492.0,497.8,502.3,505.9,511.6,517.3,522.5,525.3,528.0,532.3,535.0" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">The work presented in this paper has been made publicly</text>
   </g>
   <g>
-   <rect x="289.2" y="456.6" width="251.09999999999997" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="456.6" width="251.09999999999997" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; available as an open source library named Fast Library for; null</title>
    </rect>
    <text svgx:width="0.5,0.56,0.5,0.29,0.29,0.5,0.55,0.29,0.48,0.55,0.5,0.43,0.55,0.5,0.58,0.55,0.54,0.6,0.48,0.58,0.55,0.43,0.54,0.6,0.4,0.45,0.48,0.55,0.29,0.29,0.55,0.4,0.5,0.4,0.55,0.55,0.58,0.5,0.88,0.48,0.61,0.55,0.55,0.5,0.43,0.32,0.55,0.61,0.29,0.55,0.4,0.5,0.4,0.55,0.55,0.33,0.54,0.4" y="466.1" x="289.2,294.0,299.3,304.0,306.8,309.5,314.3,319.5,322.3,326.8,330.0,334.7,338.8,341.9,346.6,352.1,355.4,360.5,366.2,370.7,376.2,379.4,383.5,388.6,394.3,398.1,402.3,406.8,410.1,412.8,415.6,420.8,424.5,429.3,433.0,438.2,441.4,446.9,451.7,460.0,464.6,470.3,473.6,478.8,483.5,487.6,490.6,493.8,499.6,502.4,507.6,511.3,516.1,519.8,525.0,528.3,531.4,536.5" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">available as an open source library named Fast Library for</text>
   </g>
   <g>
-   <rect x="289.2" y="468.1" width="137.185" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="468.1" width="137.185" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; Approximate Nearest Neighbors; null</title>
    </rect>
    <text svgx:width="0.78,0.6,0.6,0.4,0.54,0.52,0.29,0.88,0.5,0.32,0.48,0.55,0.83,0.48,0.5,0.4,0.48,0.43,0.32,0.55,0.83,0.48,0.29,0.55,0.58,0.55,0.54,0.4,0.43" y="477.6" x="289.2,296.6,302.4,308.1,311.8,316.9,321.9,324.6,333.0,337.7,340.8,345.3,347.6,355.5,360.0,364.7,368.5,373.0,377.0,380.1,382.3,390.2,394.8,397.5,402.7,408.2,413.5,418.6,422.3" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Approximate Nearest Neighbors</text>
   </g>
   <g>
-   <rect x="426.4" y="467.09999999999997" width="3.1499999999999773" height="6.300000000000011" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="426.4" y="467.09999999999997" width="3.1499999999999773" height="6.300000000000011" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>6.3; 5; null</title>
    </rect>
    <text svgx:width="0.5" y="473.4" x="426.4" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:6.3px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">5</text>
   </g>
   <g>
-   <rect x="432.2" y="468.1" width="18.17500000000001" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="432.2" y="468.1" width="18.17500000000001" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; [59].; null</title>
    </rect>
    <text svgx:width="0.33,0.5,0.5,0.33,0.25" y="477.6" x="432.2,435.4,440.1,444.8,448.0" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">[59].</text>
   </g>
   <g>
-   <rect x="301.2" y="479.6" width="238.99499999999995" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="301.2" y="479.6" width="238.99499999999995" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; FLANN is used in a large number of both research and; null</title>
    </rect>
    <text svgx:width="0.55,0.61,0.78,0.83,0.83,0.55,0.29,0.43,0.55,0.6,0.43,0.48,0.61,0.55,0.29,0.58,0.55,0.5,0.55,0.29,0.5,0.4,0.55,0.48,0.55,0.58,0.6,0.88,0.55,0.48,0.4,0.55,0.54,0.33,0.55,0.55,0.54,0.32,0.58,0.55,0.4,0.48,0.43,0.48,0.5,0.4,0.45,0.58,0.55,0.5,0.58,0.61" y="489.1" x="301.2,306.4,312.2,319.4,327.3,335.1,338.6,341.3,345.4,348.8,354.5,358.4,362.9,368.7,372.1,374.9,380.4,383.8,388.5,392.0,394.7,399.3,403.1,408.2,412.7,416.1,421.6,427.2,435.6,440.8,445.2,449.0,452.4,457.5,460.6,464.0,469.3,474.4,477.3,482.8,486.3,490.0,494.4,498.4,502.9,507.5,511.3,515.5,521.0,524.3,529.1,534.4" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">FLANN is used in a large number of both research and</text>
   </g>
   <g>
-   <rect x="289.2" y="491.0" width="251.22500000000008" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="491.0" width="251.22500000000008" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; industry projects (e.g., [60], [61], [62], [63], [64]) and is widely; null</title>
    </rect>
    <text svgx:width="0.29,0.58,0.61,0.6,0.43,0.32,0.4,0.55,0.55,0.6,0.4,0.54,0.23,0.48,0.45,0.32,0.43,0.55,0.33,0.48,0.25,0.55,0.25,0.25,0.55,0.33,0.5,0.5,0.33,0.25,0.55,0.33,0.5,0.5,0.33,0.25,0.55,0.33,0.5,0.5,0.33,0.25,0.55,0.33,0.5,0.5,0.33,0.25,0.55,0.33,0.5,0.5,0.33,0.33,0.55,0.5,0.58,0.61,0.55,0.29,0.43,0.55,0.83,0.29,0.61,0.48,0.29,0.55" y="500.5" x="289.2,292.0,297.4,303.2,308.9,312.8,315.8,319.6,324.8,326.9,332.6,336.3,341.3,343.5,347.9,352.1,355.1,359.2,361.3,364.5,368.8,371.2,376.4,378.7,381.0,383.2,386.3,391.0,395.7,398.7,401.1,403.3,406.5,411.1,415.8,418.8,421.2,423.4,426.6,431.1,435.9,438.9,441.3,443.5,446.7,451.3,456.0,459.0,461.4,463.6,466.8,471.4,476.1,479.2,482.3,484.5,489.2,494.7,500.5,502.6,505.4,509.5,511.6,519.5,522.2,527.9,532.4,535.2" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">industry projects (e.g., [60], [61], [62], [63], [64]) and is widely</text>
   </g>
   <g>
-   <rect x="289.2" y="502.5" width="251.185" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="502.5" width="251.185" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; used in the computer vision community, in part due to its; null</title>
    </rect>
    <text svgx:width="0.6,0.43,0.48,0.61,0.55,0.29,0.58,0.55,0.32,0.58,0.48,0.55,0.45,0.54,0.88,0.6,0.6,0.32,0.48,0.4,0.55,0.56,0.29,0.43,0.29,0.54,0.58,0.55,0.45,0.54,0.88,0.88,0.6,0.58,0.29,0.32,0.55,0.25,0.55,0.29,0.58,0.55,0.6,0.5,0.4,0.32,0.55,0.61,0.6,0.48,0.55,0.32,0.54,0.55,0.29,0.32,0.43" y="512.0" x="289.2,295.0,298.9,303.4,309.2,312.7,315.4,320.9,324.5,327.5,332.9,337.4,341.0,345.2,350.2,358.6,364.1,369.9,372.9,377.3,381.1,384.5,389.9,392.6,396.5,399.3,404.3,409.8,413.3,417.6,422.6,431.0,439.2,444.9,450.3,453.1,456.0,461.2,463.6,467.1,469.8,475.3,478.8,484.5,489.1,492.9,495.9,499.4,505.2,510.8,515.3,518.9,522.0,527.1,530.5,533.3,536.3" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">used in the computer vision community, in part due to its</text>
   </g>
   <g>
-   <rect x="289.2" y="513.9" width="251.09999999999997" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="513.9" width="251.09999999999997" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; inclusion in OpenCV[65], the popular open source computer; null</title>
    </rect>
    <text svgx:width="0.29,0.58,0.45,0.29,0.6,0.43,0.29,0.54,0.58,0.55,0.29,0.58,0.55,0.78,0.6,0.48,0.58,0.71,0.72,0.33,0.5,0.5,0.33,0.25,0.55,0.32,0.58,0.48,0.55,0.6,0.54,0.6,0.6,0.29,0.5,0.4,0.55,0.54,0.6,0.48,0.58,0.55,0.43,0.54,0.6,0.4,0.45,0.48,0.55,0.45,0.54,0.88,0.6,0.6,0.32,0.48,0.4" y="523.4" x="289.2,292.0,297.4,301.6,304.3,309.9,314.0,316.6,321.7,327.2,329.3,332.0,337.5,339.5,346.9,352.5,357.1,362.4,369.1,378.0,381.1,385.7,390.5,393.5,395.9,397.9,401.0,406.4,410.9,413.0,418.7,423.7,429.4,435.2,437.7,442.5,446.2,448.2,453.3,458.9,463.5,468.9,471.0,475.0,480.2,485.7,489.5,493.6,498.1,500.2,504.4,509.4,517.8,523.4,529.1,532.2,536.5" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">inclusion in OpenCV[65], the popular open source computer</text>
   </g>
   <g>
-   <rect x="289.2" y="525.4" width="251.01000000000005" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="525.4" width="251.01000000000005" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; vision library. FLANNalso is used by other well known open; null</title>
    </rect>
    <text svgx:width="0.56,0.29,0.43,0.29,0.54,0.58,0.55,0.29,0.29,0.55,0.4,0.5,0.4,0.55,0.25,0.55,0.55,0.61,0.78,0.83,0.83,0.5,0.29,0.43,0.54,0.55,0.29,0.43,0.55,0.6,0.43,0.48,0.61,0.55,0.55,0.55,0.55,0.54,0.32,0.58,0.48,0.4,0.55,0.83,0.48,0.29,0.29,0.55,0.55,0.58,0.54,0.83,0.58,0.55,0.54,0.6,0.48,0.58" y="534.9" x="289.2,294.6,297.2,301.2,304.0,308.9,314.4,316.3,319.1,321.7,327.0,330.6,335.3,339.0,344.1,346.5,348.4,353.6,359.3,366.7,374.5,384.2,388.9,391.6,395.6,400.7,402.6,405.3,409.4,411.2,417.0,420.9,425.4,431.2,433.1,438.3,443.5,445.3,450.4,453.5,458.9,463.4,467.2,469.0,476.8,481.3,484.0,486.8,488.6,493.9,499.2,504.4,512.2,517.7,519.5,524.7,530.4,534.7" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">vision library. FLANNalso is used by other well known open</text>
   </g>
   <g>
-   <rect x="289.2" y="536.9" width="251.06" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="536.9" width="251.06" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; source projects, such as the point cloud library (PCL) and the; null</title>
    </rect>
    <text svgx:width="0.43,0.54,0.6,0.4,0.45,0.48,0.55,0.6,0.4,0.54,0.23,0.48,0.45,0.32,0.43,0.25,0.55,0.43,0.6,0.45,0.58,0.55,0.5,0.43,0.55,0.32,0.58,0.48,0.55,0.6,0.54,0.29,0.58,0.32,0.55,0.45,0.29,0.54,0.6,0.61,0.55,0.29,0.29,0.55,0.4,0.5,0.4,0.55,0.55,0.33,0.6,0.71,0.61,0.33,0.55,0.5,0.58,0.61,0.55,0.32,0.58,0.48" y="546.4" x="289.2,293.3,298.3,304.0,307.7,311.8,316.4,318.5,324.2,328.0,332.9,335.1,339.6,343.7,346.7,350.6,353.0,355.2,359.3,364.9,369.1,374.6,376.8,381.5,385.6,387.7,390.7,396.1,400.7,402.9,408.6,413.6,416.3,421.7,424.8,427.0,431.2,433.9,439.0,444.6,450.4,452.6,455.4,458.0,463.2,466.9,471.6,475.2,480.4,482.6,485.8,491.5,498.0,503.9,507.0,509.2,513.9,519.2,525.0,527.3,530.3,535.7" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">source projects, such as the point cloud library (PCL) and the</text>
   </g>
   <g>
-   <rect x="289.2" y="548.3" width="251.13500000000005" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="548.3" width="251.13500000000005" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; robot operating system (ROS) [63]. FLANN has been pack-; null</title>
    </rect>
    <text svgx:width="0.4,0.54,0.55,0.54,0.32,0.55,0.54,0.6,0.48,0.4,0.5,0.32,0.29,0.58,0.55,0.55,0.43,0.55,0.43,0.32,0.48,0.88,0.55,0.33,0.67,0.78,0.52,0.33,0.55,0.33,0.5,0.5,0.33,0.25,0.55,0.55,0.61,0.78,0.83,0.83,0.55,0.58,0.5,0.43,0.55,0.55,0.48,0.48,0.58,0.55,0.6,0.5,0.45,0.55,0.33" y="557.8" x="289.2,293.0,298.0,303.2,308.2,311.2,314.6,319.8,325.4,329.9,333.5,338.3,341.2,343.9,349.3,354.5,357.9,361.9,367.2,371.1,374.1,378.6,387.0,390.3,393.4,399.7,406.9,411.9,415.0,418.3,421.5,426.1,430.8,433.9,436.2,439.6,444.8,450.5,457.9,465.8,473.6,476.9,482.4,487.2,491.2,494.5,499.7,504.1,508.6,514.1,517.4,523.2,527.8,532.0,537.2" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">robot operating system (ROS) [63]. FLANN has been pack-</text>
   </g>
   <g>
-   <rect x="289.2" y="559.8" width="251.185" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="559.8" width="251.185" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; aged by most of the mainstream Linux distributions such as; null</title>
    </rect>
    <text svgx:width="0.5,0.55,0.48,0.61,0.55,0.55,0.55,0.55,0.88,0.54,0.43,0.32,0.55,0.54,0.33,0.55,0.32,0.58,0.48,0.55,0.88,0.5,0.29,0.58,0.43,0.32,0.4,0.48,0.5,0.88,0.55,0.61,0.29,0.58,0.6,0.52,0.55,0.61,0.29,0.43,0.32,0.4,0.29,0.55,0.6,0.32,0.29,0.54,0.58,0.43,0.55,0.43,0.6,0.45,0.58,0.55,0.5,0.43" y="569.3" x="289.2,294.0,299.1,303.6,309.4,312.0,317.3,322.5,325.1,333.5,338.5,342.5,345.5,348.2,353.3,356.4,359.1,362.1,367.5,372.1,374.8,383.2,387.8,390.5,395.9,400.0,402.9,406.7,411.1,415.8,424.1,426.8,432.6,435.2,440.8,446.3,451.3,454.0,459.8,462.4,466.5,469.4,473.2,475.8,481.0,486.6,489.6,492.4,497.4,502.9,507.0,509.6,513.6,519.2,523.4,528.9,531.6,536.3" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">aged by most of the mainstream Linux distributions such as</text>
   </g>
   <g>
-   <rect x="289.2" y="571.2" width="247.675" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="571.2" width="247.675" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; Debian, Ubuntu, Fedora, Arch, Gentoo and their derivatives.; null</title>
    </rect>
    <text svgx:width="0.77,0.48,0.55,0.29,0.5,0.58,0.25,0.55,0.78,0.55,0.6,0.58,0.32,0.6,0.25,0.55,0.55,0.48,0.61,0.54,0.4,0.5,0.25,0.55,0.78,0.4,0.45,0.58,0.25,0.55,0.76,0.48,0.58,0.32,0.54,0.54,0.55,0.5,0.58,0.61,0.55,0.32,0.58,0.48,0.29,0.4,0.55,0.61,0.48,0.4,0.29,0.56,0.5,0.32,0.29,0.56,0.48,0.43,0.25" y="580.7" x="289.2,296.5,300.9,306.2,308.9,313.5,319.0,321.3,323.1,330.5,335.7,341.3,346.8,349.7,355.5,357.8,359.5,364.8,369.2,375.0,380.0,383.8,388.5,390.8,392.6,400.0,403.6,407.8,413.2,415.6,417.4,424.6,429.2,434.5,437.5,442.5,447.7,449.5,454.3,459.6,465.4,467.3,470.3,475.7,480.2,483.0,486.8,488.5,494.3,498.8,502.4,505.2,510.3,515.1,518.0,520.8,526.1,530.5,534.5" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Debian, Ubuntu, Fedora, Arch, Gentoo and their derivatives.</text>
   </g>
   <g>
-   <rect x="289.2" y="596.6" width="26.579999999999984" height="11.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="596.6" width="26.579999999999984" height="11.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>11.5; 7 C; null</title>
    </rect>
    <text svgx:width="0.55,0.55,0.72" y="608.1" x="289.2,295.6,307.5" style="fill:rgb(35,31,32);font-family:AdvP6EC5;font-size:11.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">7 C</text>
   </g>
   <g>
-   <rect x="315.8" y="598.9" width="61.063999999999965" height="9.200000000000045" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="315.8" y="598.9" width="61.063999999999965" height="9.200000000000045" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.2; ONCLUSIONS; null</title>
    </rect>
    <text svgx:width="0.78,0.72,0.72,0.61,0.72,0.67,0.28,0.78,0.72,0.67" y="608.1" x="315.8,322.9,329.5,336.1,341.7,348.3,354.4,357.0,364.2,370.7" style="fill:rgb(35,31,32);font-family:AdvP6EC5;font-size:9.2px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">ONCLUSIONS</text>
   </g>
   <g>
-   <rect x="289.2" y="614.4" width="251.2000000000001" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="614.4" width="251.2000000000001" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; This paper addresses the problem of fast nearest neighbor; null</title>
    </rect>
    <text svgx:width="0.61,0.58,0.29,0.43,0.55,0.6,0.5,0.6,0.48,0.4,0.55,0.5,0.61,0.61,0.4,0.48,0.43,0.43,0.48,0.43,0.55,0.32,0.58,0.48,0.55,0.6,0.4,0.54,0.55,0.29,0.48,0.88,0.55,0.54,0.33,0.55,0.33,0.5,0.43,0.32,0.55,0.58,0.48,0.5,0.4,0.48,0.43,0.32,0.55,0.58,0.48,0.29,0.55,0.58,0.55,0.54,0.4" y="623.9" x="289.2,295.1,300.6,303.3,307.4,310.8,316.6,321.3,327.0,331.5,335.3,338.7,343.5,349.3,355.1,358.8,363.4,367.3,371.4,375.9,380.0,383.4,386.5,392.0,396.5,400.0,405.7,409.5,414.6,419.8,422.6,427.0,435.3,438.9,444.0,447.2,450.7,453.8,458.5,462.6,465.6,469.1,474.6,479.2,483.9,487.7,492.2,496.2,499.3,502.7,508.2,512.7,515.5,520.7,526.2,531.5,536.6" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">This paper addresses the problem of fast nearest neighbor</text>
   </g>
   <g>
-   <rect x="289.2" y="625.9" width="251.12500000000006" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="625.9" width="251.12500000000006" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; search in high dimensional spaces, a core problem in many; null</title>
    </rect>
    <text svgx:width="0.43,0.48,0.5,0.4,0.45,0.58,0.55,0.29,0.58,0.55,0.58,0.29,0.55,0.58,0.55,0.61,0.29,0.88,0.48,0.58,0.43,0.29,0.54,0.58,0.5,0.29,0.55,0.43,0.6,0.5,0.45,0.48,0.43,0.25,0.55,0.5,0.55,0.45,0.54,0.4,0.48,0.55,0.6,0.4,0.54,0.55,0.29,0.48,0.88,0.55,0.29,0.58,0.55,0.88,0.5,0.58,0.55" y="635.4" x="289.2,293.3,297.8,302.6,306.3,310.5,316.0,318.8,321.6,327.1,330.0,335.5,338.2,343.4,348.9,351.8,357.6,360.4,368.8,373.3,378.8,382.9,385.6,390.7,396.2,400.9,403.6,406.5,410.6,416.3,421.0,425.3,429.8,433.8,436.2,439.0,443.7,446.6,450.8,455.9,459.7,464.2,467.0,472.8,476.5,481.6,486.8,489.6,494.1,502.4,505.3,508.1,513.5,516.5,524.8,529.6,535.1" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">search in high dimensional spaces, a core problem in many</text>
   </g>
   <g>
-   <rect x="289.2" y="637.3" width="251.09499999999997" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="637.3" width="251.09499999999997" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; computer vision and machine learning algorithms and; null</title>
    </rect>
    <text svgx:width="0.45,0.54,0.88,0.6,0.6,0.32,0.48,0.4,0.55,0.56,0.29,0.43,0.29,0.54,0.58,0.55,0.5,0.58,0.61,0.55,0.88,0.5,0.45,0.58,0.29,0.58,0.48,0.55,0.29,0.48,0.5,0.4,0.58,0.29,0.58,0.55,0.55,0.5,0.29,0.55,0.54,0.4,0.29,0.32,0.58,0.88,0.43,0.55,0.5,0.58,0.61" y="646.8" x="289.2,293.5,298.6,307.0,312.7,318.4,321.5,326.0,329.8,335.9,341.2,344.0,348.0,350.8,355.9,361.4,367.7,372.4,377.9,383.7,389.9,398.3,403.0,407.3,412.8,415.5,421.1,425.6,431.8,434.5,439.1,443.8,447.5,453.0,455.8,461.3,466.5,472.8,477.5,480.2,485.5,490.6,494.3,497.1,500.1,505.7,513.9,518.0,524.2,529.0,534.5" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">computer vision and machine learning algorithms and</text>
   </g>
   <g>
-   <rect x="289.2" y="648.8" width="251.03500000000003" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="648.8" width="251.03500000000003" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; which is often the most computationally expensive part of; null</title>
    </rect>
    <text svgx:width="0.83,0.58,0.29,0.45,0.58,0.55,0.29,0.43,0.55,0.54,0.33,0.32,0.48,0.58,0.55,0.32,0.58,0.48,0.55,0.88,0.54,0.43,0.32,0.55,0.45,0.54,0.88,0.6,0.6,0.32,0.5,0.32,0.29,0.54,0.58,0.5,0.29,0.29,0.55,0.55,0.48,0.52,0.6,0.48,0.58,0.43,0.29,0.56,0.48,0.55,0.6,0.5,0.4,0.32,0.55,0.54,0.33" y="658.3" x="289.2,297.1,302.6,305.4,309.6,315.1,318.5,321.3,325.3,328.8,333.9,337.0,340.1,344.6,350.1,353.5,356.5,362.0,366.6,370.0,378.4,383.5,387.6,390.6,394.0,398.2,403.4,411.7,417.5,423.2,426.2,430.9,433.9,436.7,441.8,447.3,452.0,454.8,457.5,462.7,466.1,470.7,475.6,481.3,485.8,491.4,495.4,498.1,503.5,508.0,511.4,517.1,521.8,525.6,528.6,532.0,537.1" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">which is often the most computationally expensive part of</text>
   </g>
   <g>
-   <rect x="289.2" y="660.2" width="251.0850000000001" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="660.2" width="251.0850000000001" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; these algorithms. We present and compare the algorithms; null</title>
    </rect>
    <text svgx:width="0.32,0.58,0.48,0.43,0.48,0.55,0.5,0.29,0.55,0.54,0.4,0.29,0.32,0.58,0.88,0.43,0.25,0.55,1.0,0.48,0.55,0.6,0.4,0.48,0.43,0.48,0.58,0.32,0.55,0.5,0.58,0.61,0.55,0.45,0.54,0.88,0.6,0.5,0.4,0.48,0.55,0.32,0.58,0.48,0.55,0.5,0.29,0.55,0.54,0.4,0.29,0.32,0.58,0.88,0.43" y="669.7" x="289.2,292.3,297.8,302.3,306.4,310.9,314.6,319.3,322.1,327.3,332.4,336.2,338.9,342.0,347.5,355.7,359.8,362.2,365.9,375.4,379.9,383.6,389.3,393.0,397.6,401.6,406.1,411.7,414.7,418.4,423.1,428.6,434.4,438.1,442.4,447.5,455.8,461.6,466.3,470.0,474.6,478.2,481.3,486.8,491.3,495.0,499.8,502.5,507.8,512.9,516.6,519.4,522.4,527.9,536.2" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">these algorithms. We present and compare the algorithms</text>
   </g>
   <g>
-   <rect x="289.2" y="671.7" width="251.10999999999996" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="671.7" width="251.10999999999996" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; we have found to work best at fast approximate search in; null</title>
    </rect>
    <text svgx:width="0.83,0.48,0.55,0.58,0.5,0.56,0.48,0.55,0.33,0.54,0.6,0.58,0.61,0.55,0.32,0.54,0.55,0.83,0.54,0.4,0.55,0.55,0.55,0.48,0.43,0.32,0.55,0.5,0.32,0.55,0.33,0.5,0.43,0.32,0.55,0.5,0.6,0.6,0.4,0.54,0.52,0.29,0.88,0.5,0.32,0.48,0.55,0.43,0.48,0.5,0.4,0.45,0.58,0.55,0.29,0.58" y="681.2" x="289.2,297.1,301.7,305.2,310.7,315.4,320.7,325.3,328.8,331.9,337.0,342.8,348.3,354.0,357.6,360.6,365.7,369.3,377.2,382.3,386.0,391.2,394.8,400.0,404.5,408.6,411.6,415.1,419.8,422.9,426.4,429.5,434.3,438.3,441.3,444.9,449.6,455.3,461.0,464.8,469.9,474.8,477.6,485.9,490.7,493.7,498.3,501.7,505.8,510.3,515.0,518.8,523.0,528.5,532.0,534.8" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">we have found to work best at fast approximate search in</text>
   </g>
   <g>
-   <rect x="289.2" y="683.1" width="251.05" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="683.1" width="251.05" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; high dimensional spaces: the randomized k-d trees and a; null</title>
    </rect>
    <text svgx:width="0.58,0.29,0.55,0.58,0.55,0.61,0.29,0.88,0.48,0.58,0.43,0.29,0.54,0.58,0.5,0.29,0.55,0.43,0.6,0.5,0.45,0.48,0.43,0.25,0.55,0.32,0.58,0.48,0.55,0.4,0.5,0.58,0.61,0.54,0.88,0.29,0.5,0.48,0.61,0.55,0.55,0.33,0.61,0.55,0.32,0.4,0.48,0.48,0.43,0.55,0.5,0.58,0.61,0.55,0.5" y="692.6" x="289.2,294.8,297.5,302.7,308.2,312.2,318.0,320.7,329.1,333.6,339.1,343.2,345.9,351.1,356.6,361.3,364.1,367.9,372.0,377.7,382.4,386.7,391.2,395.2,397.6,401.5,404.5,410.1,414.6,418.6,422.3,427.0,432.6,438.4,443.5,451.9,454.6,459.3,463.9,469.6,473.6,478.8,481.9,487.7,491.7,494.7,498.5,503.0,507.5,511.6,515.5,520.2,525.8,531.5,535.5" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">high dimensional spaces: the randomized k-d trees and a</text>
   </g>
   <g>
-   <rect x="289.2" y="694.6" width="251.185" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="694.6" width="251.185" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; newly introduced algorithm, the priority search k-means; null</title>
    </rect>
    <text svgx:width="0.58,0.48,0.83,0.29,0.55,0.55,0.29,0.58,0.32,0.4,0.54,0.61,0.6,0.45,0.48,0.61,0.55,0.5,0.29,0.55,0.54,0.4,0.29,0.32,0.58,0.88,0.25,0.55,0.32,0.58,0.48,0.55,0.6,0.4,0.29,0.54,0.4,0.29,0.32,0.55,0.55,0.43,0.48,0.5,0.4,0.45,0.58,0.55,0.55,0.33,0.88,0.48,0.5,0.58,0.43" y="704.1" x="289.2,294.8,299.3,307.2,309.9,315.1,319.7,322.5,328.0,331.1,334.8,339.9,345.7,351.5,355.7,360.2,366.0,370.7,375.4,378.1,383.4,388.5,392.2,395.0,398.0,403.5,411.9,414.3,418.8,421.9,427.4,432.0,436.6,442.4,446.1,448.9,454.0,457.7,460.5,463.5,468.7,473.3,477.4,481.9,486.6,490.4,494.6,500.1,504.7,510.0,513.1,521.5,526.0,530.8,536.3" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">newly introduced algorithm, the priority search k-means</text>
   </g>
   <g>
-   <rect x="289.2" y="706.0" width="251.06" height="9.5" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="706.0" width="251.06" height="9.5" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>9.5; tree. We introduce a new algorithm for fast approximate; null</title>
    </rect>
    <text svgx:width="0.32,0.4,0.48,0.48,0.25,0.55,1.0,0.48,0.55,0.29,0.58,0.32,0.4,0.54,0.61,0.6,0.45,0.48,0.55,0.5,0.55,0.58,0.48,0.83,0.55,0.5,0.29,0.55,0.54,0.4,0.29,0.32,0.58,0.88,0.55,0.33,0.54,0.4,0.55,0.33,0.5,0.43,0.32,0.55,0.5,0.6,0.6,0.4,0.54,0.52,0.29,0.88,0.5,0.32,0.48" y="715.5" x="289.2,292.3,296.0,300.6,305.1,307.5,311.7,321.2,325.7,330.0,332.8,338.3,341.3,345.1,350.2,355.9,361.6,365.9,370.4,374.7,379.4,383.7,389.2,393.7,401.6,405.9,410.7,413.4,418.6,423.8,427.5,430.2,433.3,438.8,447.1,451.4,454.6,459.7,463.5,467.7,470.9,475.6,479.6,482.7,487.0,491.7,497.4,503.2,506.9,512.0,516.9,519.6,528.0,532.7,535.7" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:9.5px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">tree. We introduce a new algorithm for fast approximate</text>
   </g>
   <g>
-   <rect x="26.2" y="688.6" width="251.14000000000004" height="8.0" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="26.2" y="688.6" width="251.14000000000004" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>8.0; Fig. 15. The advantage of distributing the search to multiple machines.; null</title>
    </rect>
    <text svgx:width="0.61,0.22,0.55,0.28,0.55,0.55,0.55,0.28,0.55,0.61,0.55,0.55,0.55,0.55,0.55,0.5,0.55,0.55,0.28,0.55,0.55,0.55,0.55,0.55,0.28,0.55,0.55,0.22,0.5,0.28,0.33,0.22,0.55,0.55,0.28,0.22,0.55,0.55,0.55,0.28,0.55,0.55,0.55,0.5,0.55,0.55,0.33,0.5,0.55,0.55,0.28,0.55,0.55,0.83,0.55,0.22,0.28,0.22,0.55,0.22,0.55,0.55,0.83,0.55,0.5,0.55,0.22,0.55,0.55,0.5,0.28" y="696.6" x="26.2,31.1,32.8,37.2,39.5,42.1,46.5,50.9,53.2,55.8,60.7,65.1,69.5,72.1,76.5,80.9,84.9,89.3,93.7,95.9,100.3,104.7,109.1,111.7,116.1,118.3,121.0,125.4,127.1,131.1,133.3,136.0,137.7,142.1,146.5,148.8,150.5,154.9,159.3,161.9,164.2,168.5,172.9,175.6,179.6,184.0,188.4,191.0,195.0,199.4,202.0,204.2,208.6,211.3,217.9,222.3,224.1,226.3,228.0,232.4,234.2,238.6,241.2,247.8,252.2,256.2,260.6,262.3,266.7,271.1,275.1" style="fill:rgb(35,31,32);font-family:AdvP6EC0;font-size:8.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Fig. 15. The advantage of distributing the search to multiple machines.</text>
   </g>
   <g>
-   <rect x="26.2" y="697.6" width="251.10000000000002" height="8.0" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="26.2" y="697.6" width="251.10000000000002" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>8.0; Even when using the same number of parallel processes, distributing; null</title>
    </rect>
    <text svgx:width="0.67,0.5,0.55,0.55,0.55,0.72,0.55,0.55,0.55,0.55,0.55,0.5,0.22,0.55,0.55,0.55,0.28,0.55,0.55,0.55,0.5,0.55,0.83,0.55,0.55,0.55,0.55,0.83,0.55,0.55,0.33,0.55,0.55,0.28,0.55,0.55,0.55,0.33,0.55,0.22,0.22,0.55,0.22,0.55,0.55,0.33,0.55,0.5,0.55,0.5,0.5,0.55,0.5,0.28,0.55,0.55,0.22,0.5,0.28,0.33,0.22,0.55,0.55,0.28,0.22,0.55,0.55" y="705.6" x="26.2,31.5,35.5,39.9,44.3,47.5,53.2,57.6,62.0,66.4,69.7,74.1,78.1,79.8,84.2,88.6,91.8,94.1,98.5,102.9,106.1,110.1,114.5,121.1,125.5,128.7,133.1,137.5,144.2,148.6,153.0,155.6,158.9,163.2,165.5,168.7,173.1,177.5,180.2,184.6,186.3,188.0,192.4,194.2,197.4,201.8,204.5,208.9,212.8,217.2,221.2,225.2,229.6,233.6,235.8,239.0,243.4,245.1,249.1,251.4,254.0,255.8,260.2,264.6,266.8,268.5,272.9" style="fill:rgb(35,31,32);font-family:AdvP6EC0;font-size:8.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Even when using the same number of parallel processes, distributing</text>
   </g>
   <g>
-   <rect x="26.2" y="706.6" width="251.10000000000002" height="8.0" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="26.2" y="706.6" width="251.10000000000002" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>8.0; the computation to multiple machines still leads to an improvement in; null</title>
    </rect>
    <text svgx:width="0.28,0.55,0.55,0.55,0.5,0.55,0.83,0.55,0.55,0.28,0.55,0.28,0.22,0.55,0.55,0.55,0.28,0.55,0.55,0.83,0.55,0.22,0.28,0.22,0.55,0.22,0.55,0.55,0.83,0.55,0.5,0.55,0.22,0.55,0.55,0.5,0.55,0.5,0.28,0.22,0.22,0.22,0.55,0.22,0.55,0.55,0.55,0.5,0.55,0.28,0.55,0.55,0.55,0.55,0.55,0.22,0.83,0.55,0.33,0.55,0.5,0.55,0.83,0.55,0.55,0.28,0.55,0.22,0.55" y="714.6" x="26.2,28.4,32.8,37.2,40.4,44.4,48.7,55.4,59.8,64.2,66.4,70.8,73.1,74.8,79.2,83.6,86.7,88.9,93.3,96.4,103.1,107.5,109.2,111.4,113.2,117.6,119.3,123.7,126.8,133.5,137.9,141.8,146.2,148.0,152.4,156.8,160.8,163.8,167.8,170.1,171.8,173.5,175.3,178.5,180.2,184.6,189.0,193.4,197.4,200.5,202.7,207.1,210.3,214.7,219.1,222.2,223.9,230.6,234.9,237.6,242.0,246.0,250.4,257.0,261.4,265.7,267.9,271.2,272.9" style="fill:rgb(35,31,32);font-family:AdvP6EC0;font-size:8.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">the computation to multiple machines still leads to an improvement in</text>
   </g>
   <g>
-   <rect x="26.2" y="715.5" width="251.14" height="8.0" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="26.2" y="715.5" width="251.14" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>8.0; performance due to less memory access overhead. “Direct search” cor-; null</title>
    </rect>
    <text svgx:width="0.55,0.55,0.33,0.28,0.55,0.33,0.83,0.55,0.55,0.5,0.55,0.55,0.55,0.55,0.55,0.55,0.28,0.55,0.55,0.22,0.55,0.5,0.5,0.55,0.83,0.55,0.83,0.55,0.33,0.5,0.55,0.55,0.5,0.5,0.55,0.5,0.5,0.55,0.55,0.5,0.55,0.33,0.55,0.55,0.55,0.55,0.28,0.55,0.33,0.72,0.22,0.33,0.55,0.5,0.28,0.55,0.5,0.55,0.55,0.33,0.5,0.55,0.33,0.55,0.5,0.55,0.33,0.33" y="723.5" x="26.2,30.6,35.0,37.6,39.9,44.3,46.9,53.6,58.0,62.4,66.4,70.7,73.0,77.4,81.8,86.1,88.4,90.7,95.1,97.4,99.1,103.5,107.5,111.5,113.8,120.4,124.8,131.5,135.9,138.5,142.5,144.7,149.1,153.1,157.1,161.5,165.5,169.5,171.7,176.1,180.1,184.5,187.2,191.6,196.0,200.4,204.8,207.0,209.2,211.8,217.6,219.3,222.0,226.4,230.3,232.6,234.9,238.9,243.3,247.7,250.3,254.3,258.7,261.3,263.6,267.6,272.0,274.7" style="fill:rgb(35,31,32);font-family:AdvP6EC0;font-size:8.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">performance due to less memory access overhead. “Direct search” cor-</text>
   </g>
   <g>
-   <rect x="26.2" y="724.5" width="251.10000000000002" height="8.0" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="26.2" y="724.5" width="251.10000000000002" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>8.0; responds to using FLANN without the MPI layer and is provided as a; null</title>
    </rect>
    <text svgx:width="0.33,0.55,0.5,0.55,0.55,0.55,0.55,0.5,0.55,0.28,0.55,0.55,0.55,0.5,0.22,0.55,0.55,0.55,0.61,0.55,0.67,0.72,0.72,0.55,0.72,0.22,0.28,0.55,0.55,0.55,0.28,0.55,0.28,0.55,0.55,0.55,0.83,0.67,0.28,0.55,0.22,0.55,0.5,0.55,0.33,0.55,0.55,0.55,0.55,0.55,0.22,0.5,0.55,0.55,0.33,0.55,0.5,0.22,0.55,0.55,0.55,0.55,0.55,0.5,0.55,0.55" y="732.5" x="26.2,28.8,33.2,37.2,41.6,46.0,50.4,54.8,58.8,61.9,64.1,68.5,71.7,76.1,80.0,81.8,86.2,90.6,93.7,98.5,102.9,108.3,114.0,119.7,122.8,128.5,130.3,132.5,136.9,141.3,145.7,147.9,151.0,153.3,157.7,162.0,165.2,171.8,177.1,179.4,182.5,184.2,188.6,192.6,197.0,199.6,202.7,207.1,211.5,215.9,219.1,220.8,224.8,227.9,232.3,235.0,239.4,243.3,245.1,249.5,253.9,258.3,261.3,265.7,269.7,272.9" style="fill:rgb(35,31,32);font-family:AdvP6EC0;font-size:8.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">responds to using FLANN without the MPI layer and is provided as a</text>
   </g>
   <g>
-   <rect x="26.2" y="733.4" width="74.53999999999999" height="8.0" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="26.2" y="733.4" width="74.53999999999999" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>8.0; comparison baseline.; null</title>
    </rect>
    <text svgx:width="0.5,0.55,0.83,0.55,0.55,0.33,0.22,0.5,0.55,0.55,0.55,0.55,0.55,0.5,0.55,0.22,0.22,0.55,0.55,0.28" y="741.4" x="26.2,30.2,34.6,41.2,45.6,50.0,52.7,54.4,58.4,62.8,67.2,69.0,73.4,77.8,81.8,86.2,87.9,89.7,94.1,98.5" style="fill:rgb(35,31,32);font-family:AdvP6EC0;font-size:8.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">comparison baseline.</text>
   </g>
   <g>
-   <rect x="289.2" y="245.5" width="250.74000000000007" height="8.0" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="289.2" y="245.5" width="250.74000000000007" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>8.0; Fig. 16. Matching 80 million tiny images directly using a compute cluster.; null</title>
    </rect>
    <text svgx:width="0.61,0.22,0.55,0.28,0.55,0.55,0.55,0.28,0.55,0.83,0.55,0.28,0.5,0.55,0.22,0.55,0.55,0.55,0.55,0.55,0.55,0.83,0.22,0.22,0.22,0.22,0.55,0.55,0.55,0.28,0.22,0.55,0.5,0.55,0.22,0.83,0.55,0.55,0.55,0.5,0.55,0.55,0.22,0.33,0.55,0.5,0.28,0.22,0.5,0.55,0.55,0.5,0.22,0.55,0.55,0.55,0.55,0.55,0.5,0.55,0.83,0.55,0.55,0.28,0.55,0.55,0.5,0.22,0.55,0.5,0.28,0.55,0.33,0.28" y="253.5" x="289.2,294.1,295.9,300.3,302.5,304.4,308.8,313.2,315.4,317.3,323.9,328.3,330.6,334.6,339.0,340.7,345.1,349.5,351.3,355.7,360.1,362.0,368.7,370.4,372.2,373.9,375.6,380.0,384.4,386.3,388.5,390.3,394.7,398.7,400.5,402.3,408.9,413.3,417.7,422.1,426.1,428.0,432.4,434.1,436.8,441.2,445.1,447.4,449.1,453.1,455.0,459.4,463.3,465.1,469.5,473.9,475.7,480.1,482.0,486.0,490.4,497.0,501.4,505.8,508.1,512.4,514.3,518.3,520.0,524.4,528.4,530.7,535.1,537.7" style="fill:rgb(35,31,32);font-family:AdvP6EC0;font-size:8.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Fig. 16. Matching 80 million tiny images directly using a compute cluster.</text>
   </g>
   <g>
-   <rect x="26.2" y="242.3" width="251.10000000000002" height="8.0" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="26.2" y="242.3" width="251.10000000000002" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>8.0; Fig. 14. Distributing nearest neighbor search on a single multi-core; null</title>
    </rect>
    <text svgx:width="0.61,0.22,0.55,0.28,0.55,0.55,0.55,0.28,0.55,0.72,0.22,0.5,0.28,0.33,0.22,0.55,0.55,0.28,0.22,0.55,0.55,0.55,0.55,0.55,0.55,0.33,0.55,0.5,0.28,0.55,0.55,0.55,0.22,0.55,0.55,0.55,0.55,0.33,0.55,0.5,0.55,0.55,0.33,0.5,0.55,0.55,0.55,0.55,0.55,0.55,0.55,0.5,0.22,0.55,0.55,0.22,0.55,0.55,0.83,0.55,0.22,0.28,0.22,0.33,0.5,0.55,0.33,0.55" y="250.3" x="26.2,31.1,32.8,37.2,39.5,43.9,48.3,52.7,55.0,59.5,65.2,66.9,70.9,73.2,75.8,77.4,81.8,86.2,88.5,90.2,94.6,99.0,103.1,107.5,111.9,116.3,119.0,123.2,127.2,129.5,133.6,138.0,142.4,144.2,148.6,153.0,157.4,161.6,164.3,168.4,172.4,176.8,181.2,183.9,187.9,192.2,196.3,200.7,205.1,209.2,213.6,217.8,221.8,223.5,227.9,232.3,234.1,238.5,242.6,249.2,253.6,255.4,257.5,259.2,261.9,265.9,270.3,272.9" style="fill:rgb(35,31,32);font-family:AdvP6EC0;font-size:8.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">Fig. 14. Distributing nearest neighbor search on a single multi-core</text>
   </g>
   <g>
-   <rect x="26.2" y="251.3" width="251.10000000000002" height="8.0" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="26.2" y="251.3" width="251.10000000000002" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>8.0; machine. When the degree of parallelism increases beyond a certain; null</title>
    </rect>
    <text svgx:width="0.83,0.55,0.5,0.55,0.22,0.55,0.55,0.28,0.55,0.95,0.55,0.55,0.55,0.55,0.28,0.55,0.55,0.55,0.55,0.55,0.55,0.33,0.55,0.55,0.55,0.55,0.28,0.55,0.55,0.55,0.33,0.55,0.22,0.22,0.55,0.22,0.22,0.5,0.83,0.55,0.22,0.55,0.5,0.33,0.55,0.55,0.5,0.55,0.5,0.55,0.55,0.55,0.5,0.55,0.55,0.55,0.55,0.55,0.55,0.5,0.55,0.33,0.28,0.55,0.22,0.55" y="259.3" x="26.2,32.8,37.2,41.2,45.6,47.4,51.6,56.0,58.3,61.7,69.2,73.6,78.0,82.4,85.8,88.0,92.4,96.8,100.2,104.6,109.0,113.4,116.0,120.4,124.8,128.1,132.5,134.8,138.2,142.6,147.0,149.6,154.0,155.7,157.5,161.9,163.5,165.2,169.2,175.8,179.3,181.0,185.4,189.4,192.0,196.3,200.7,204.7,209.1,213.1,216.4,220.8,225.2,229.2,233.6,238.0,242.4,245.8,250.1,253.6,257.6,262.0,264.6,266.7,271.1,272.9" style="fill:rgb(35,31,32);font-family:AdvP6EC0;font-size:8.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">machine. When the degree of parallelism increases beyond a certain</text>
   </g>
   <g>
-   <rect x="26.2" y="260.2" width="251.10000000000002" height="8.0" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="26.2" y="260.2" width="251.10000000000002" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>8.0; point the memory access becomes a bottleneck. The “direct search” case; null</title>
    </rect>
    <text svgx:width="0.55,0.55,0.22,0.55,0.28,0.55,0.28,0.55,0.55,0.55,0.83,0.55,0.83,0.55,0.33,0.5,0.55,0.55,0.5,0.5,0.55,0.5,0.5,0.55,0.55,0.55,0.5,0.55,0.83,0.55,0.5,0.55,0.55,0.55,0.55,0.55,0.28,0.28,0.22,0.55,0.55,0.55,0.5,0.5,0.28,0.55,0.61,0.55,0.55,0.55,0.33,0.55,0.22,0.33,0.55,0.5,0.28,0.55,0.5,0.55,0.55,0.33,0.5,0.55,0.33,0.55,0.5,0.55,0.5,0.55" y="268.2" x="26.2,30.6,35.0,36.7,41.1,43.4,45.0,47.2,51.6,56.0,57.6,64.2,68.6,75.3,79.5,82.2,86.2,87.8,92.2,96.2,100.2,104.6,108.5,112.4,114.1,118.5,122.9,126.8,131.2,137.8,142.2,146.1,147.8,152.2,153.8,158.2,162.6,164.8,167.1,168.7,173.1,177.5,181.9,185.9,189.9,192.1,193.7,198.6,203.0,207.3,209.0,211.6,216.0,217.8,220.4,224.8,228.8,231.0,232.5,236.5,240.9,245.3,248.0,252.0,256.2,258.9,260.6,264.5,268.9,272.9" style="fill:rgb(35,31,32);font-family:AdvP6EC0;font-size:8.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">point the memory access becomes a bottleneck. The “direct search” case</text>
   </g>
   <g>
-   <rect x="26.2" y="269.2" width="239.94" height="8.0" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="26.2" y="269.2" width="239.94" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>8.0; corresponds to using the FLANNlibrary directly, without the MPI layer.; null</title>
    </rect>
    <text svgx:width="0.5,0.55,0.33,0.33,0.55,0.5,0.55,0.55,0.55,0.55,0.5,0.55,0.28,0.55,0.55,0.55,0.5,0.22,0.55,0.55,0.55,0.28,0.55,0.55,0.55,0.61,0.55,0.67,0.72,0.72,0.22,0.22,0.55,0.33,0.55,0.33,0.5,0.55,0.55,0.22,0.33,0.55,0.5,0.28,0.22,0.5,0.28,0.55,0.72,0.22,0.28,0.55,0.55,0.55,0.28,0.55,0.28,0.55,0.55,0.55,0.83,0.67,0.28,0.55,0.22,0.55,0.5,0.55,0.33,0.28" y="277.2" x="26.2,30.2,34.6,37.2,39.9,44.3,48.3,52.6,57.0,61.4,65.8,69.7,71.3,73.5,77.9,79.4,83.8,87.8,89.5,93.9,98.3,99.8,102.1,106.5,110.9,112.4,117.3,121.7,127.0,132.7,140.0,141.7,143.4,147.8,150.5,154.9,157.4,161.4,163.0,167.4,169.1,171.8,176.2,180.2,182.4,184.1,188.0,190.2,191.8,197.6,199.3,201.5,205.9,210.3,214.6,216.9,218.4,220.7,225.1,229.5,231.0,237.7,243.0,245.2,246.7,248.5,252.9,256.8,261.2,263.9" style="fill:rgb(35,31,32);font-family:AdvP6EC0;font-size:8.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">corresponds to using the FLANNlibrary directly, without the MPI layer.</text>
   </g>
   <g>
-   <rect x="301.2" y="733.4" width="146.8" height="8.0" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="301.2" y="733.4" width="146.8" height="8.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>8.0; 5. http://www.cs.ubc.ca/research/ﬂann.; null</title>
    </rect>
    <text svgx:width="0.5,0.25,0.55,0.58,0.32,0.32,0.6,0.25,0.6,0.6,0.83,0.83,0.83,0.25,0.45,0.43,0.25,0.6,0.55,0.45,0.25,0.45,0.5,0.6,0.4,0.48,0.43,0.48,0.5,0.4,0.45,0.58,0.6,0.6,0.5,0.58,0.58,0.25" y="741.4" x="301.2,305.1,307.1,309.7,314.3,316.9,319.4,324.3,326.2,331.1,335.9,342.5,349.1,355.7,357.7,361.3,364.7,366.6,371.5,375.8,379.3,381.3,384.9,388.9,393.7,396.8,400.6,404.0,407.9,411.8,414.9,418.5,423.1,427.9,432.7,436.7,441.4,446.0" style="fill:rgb(35,31,32);font-family:AdvP1491;font-size:8.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">5. http://www.cs.ubc.ca/research/ﬂann.</text>
   </g>
   <g>
-   <rect x="26.2" y="23.9" width="514.05" height="7.0" style="fill:#ffcccc;stroke:black;stroke-width:0.2;">
+   <rect x="26.2" y="23.9" width="514.05" height="7.0" style="fill:#ffcccc;opacity:0.5;stroke:black;stroke-width:0.2;">
     <title>7.0; 2238 IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE, VOL. 36, NO. 11, NOVEMBER 2014; null</title>
    </rect>
    <text svgx:width="0.55,0.55,0.55,0.55,0.55,0.28,0.67,0.67,0.67,0.55,0.61,0.72,0.67,0.72,0.67,0.67,0.72,0.61,0.28,0.78,0.72,0.67,0.55,0.78,0.72,0.55,0.67,0.67,0.61,0.61,0.67,0.72,0.72,0.55,0.67,0.72,0.67,0.55,0.67,0.67,0.28,0.67,0.55,0.67,0.72,0.72,0.55,0.83,0.67,0.72,0.72,0.28,0.72,0.67,0.55,0.28,0.72,0.61,0.67,0.55,0.55,0.28,0.78,0.67,0.72,0.72,0.67,0.28,0.55,0.67,0.78,0.55,0.28,0.55,0.55,0.55,0.28,0.55,0.72,0.78,0.28,0.55,0.55,0.55,0.28,0.55,0.72,0.78,0.67,0.67,0.83,0.67,0.67,0.72,0.55,0.55,0.55,0.55,0.55" y="30.9" x="26.2,30.0,33.9,37.7,41.6,152.4,154.4,159.1,163.7,168.4,170.0,174.3,179.3,184.0,189.0,193.6,198.3,203.4,207.6,209.6,215.1,220.1,224.7,226.4,231.9,236.9,238.6,243.2,247.9,252.1,256.4,261.1,266.1,271.1,272.8,277.5,282.5,287.1,291.0,295.6,300.4,302.3,307.0,308.6,313.3,318.3,323.3,325.0,330.8,335.5,340.5,345.5,347.5,352.5,357.1,358.8,360.8,365.8,370.1,374.7,378.6,382.4,384.4,389.8,394.5,399.6,404.6,409.2,411.2,418.2,422.9,428.3,432.2,434.1,435.8,439.7,443.5,445.5,452.5,457.5,462.9,464.9,466.6,470.4,474.3,476.2,483.3,488.3,493.7,498.4,503.0,508.8,513.5,518.1,523.1,524.9,528.7,532.6,536.4" style="fill:rgb(35,31,32);font-family:AdvP6EC0;font-size:7.0px;stroke:none;" xmlns:svgx="http://www.xml-cml.org/schema/svgx">2238 IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE, VOL. 36, NO. 11, NOVEMBER 2014</text>
@@ -449,8 +449,22 @@
   <line x1="26.0" y1="50.0" x2="26.0" y2="750.0" style="stroke:blue;stroke-width:0.6571428571428571;"/>
   <line x1="301.0" y1="50.0" x2="301.0" y2="750.0" style="stroke:blue;stroke-width:0.08571428571428572;"/>
   <line x1="38.0" y1="50.0" x2="38.0" y2="750.0" style="stroke:blue;stroke-width:0.05714285714285714;"/>
+  <line x1="289.0" y1="50.0" x2="289.0" y2="750.0" style="stroke:purple;stroke-width:1.0;"/>
+  <line x1="301.0" y1="50.0" x2="301.0" y2="750.0" style="stroke:purple;stroke-width:0.08620689655172414;"/>
+  <line x1="303.0" y1="50.0" x2="303.0" y2="750.0" style="stroke:purple;stroke-width:0.034482758620689655;"/>
+  <line x1="314.0" y1="50.0" x2="314.0" y2="750.0" style="stroke:purple;stroke-width:0.034482758620689655;"/>
+  <line x1="316.0" y1="50.0" x2="316.0" y2="750.0" style="stroke:purple;stroke-width:0.034482758620689655;"/>
+  <line x1="330.0" y1="50.0" x2="330.0" y2="750.0" style="stroke:purple;stroke-width:0.034482758620689655;"/>
   <line x1="540.0" y1="50.0" x2="540.0" y2="750.0" style="stroke:green;stroke-width:1.0;"/>
   <line x1="277.0" y1="50.0" x2="277.0" y2="750.0" style="stroke:green;stroke-width:0.6451612903225806;"/>
   <line x1="539.0" y1="50.0" x2="539.0" y2="750.0" style="stroke:green;stroke-width:0.06451612903225806;"/>
+  <line x1="100.0" y1="50.0" x2="100.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="178.0" y1="50.0" x2="178.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="266.0" y1="50.0" x2="266.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="311.0" y1="50.0" x2="311.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="314.0" y1="50.0" x2="314.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="315.0" y1="50.0" x2="315.0" y2="750.0" style="stroke:cyan;stroke-width:1.0;"/>
+  <line x1="539.0" y1="50.0" x2="539.0" y2="750.0" style="stroke:cyan;stroke-width:1.5;"/>
+  <line x1="540.0" y1="50.0" x2="540.0" y2="750.0" style="stroke:cyan;stroke-width:25.5;"/>
  </g>
 </svg>

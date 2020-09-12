@@ -2,8 +2,6 @@ package org.contentmine.ami.tools;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
@@ -14,11 +12,8 @@ import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.core.config.Configurator;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.files.CTree;
-import org.contentmine.eucl.euclid.Real2;
-import org.contentmine.graphics.svg.SVGCircle;
 import org.contentmine.graphics.svg.SVGG;
 import org.contentmine.graphics.svg.SVGSVG;
-import org.contentmine.graphics.svg.SVGText;
 import org.contentmine.image.ImageUtil;
 import org.contentmine.image.pixel.IslandRingList;
 import org.contentmine.image.pixel.PixelIsland;
