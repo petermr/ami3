@@ -186,9 +186,11 @@ public class DictionaryCreationTool extends AbstractAMIDictTool {
 					+ "synonyms (and maybe extraneous commas)."
 					+ " DEPRECATED - will move to `ami update`"
 					
-			) List<String> synonymList = null;
+			) 
+	List<String> synonymList = null;
 	
     @Option(names = {"--template"}, 
+    		
     		arity="1..*",
     		
     		description = "names of Wikipedia Templates, e.g. Viral_systemic_diseases "

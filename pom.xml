@@ -81,6 +81,7 @@
         <!-- is this necessary? -->
 <!--         <lucene-query.version>4.0.0-BETA</lucene-query.version>  -->
         <log4j.version>2.13.3</log4j.version>
+        <pdf2dom.version>1.9</pdf2dom.version>
         <pdfbox2.version>2.0.19</pdfbox2.version>
         <pdfbox-tools.version>2.0.19</pdfbox-tools.version>
         <picocli.version>4.5.0</picocli.version>
@@ -582,6 +583,11 @@
             <artifactId>jbig2-imageio</artifactId>
             <version>${jbig2-imageio.version}</version>
         </dependency>
+        <dependency>
+		    <groupId>net.sf.cssbox</groupId>
+		    <artifactId>pdf2dom</artifactId>
+		    <version>${pdf2dom.version}</version>
+		</dependency>
 
         <dependency>
             <groupId>org.ejml</groupId>

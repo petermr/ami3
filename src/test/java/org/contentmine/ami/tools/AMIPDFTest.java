@@ -1,13 +1,16 @@
 package org.contentmine.ami.tools;
 
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.Writer;
 
-import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.pdfbox.pdmodel.PDDocument;
 import org.contentmine.cproject.files.CProject;
 import org.contentmine.cproject.util.CMineTestFixtures;
+import org.fit.pdfdom.PDFDomTree;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
@@ -220,12 +223,27 @@ public class AMIPDFTest extends AbstractAMITest {
 		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
 		String args = "-p " + targetDir
 				+ " pdfbox"
-				+ " --pdf2html"
+				+ " --pdf2txt"
 				;
       
 		AMI.execute(args);
 		
 	}
 
+	@Test
+	/** generates page-faithful HTML (i.e. characters+coordinates) which is generally of no use
+	 * It's also huge.
+	 */
+	public void testGenerateNonSemanticHTMLFromPDF() throws Exception {
+		File cTreeDir = new File(TEST_BATTERY10, "PMC3463005/");
+		File pdfInput = new File(cTreeDir, "fulltext.pdf");
+	    PDDocument pdf = PDDocument.load(pdfInput);
+		File outputDir = new File("target/pdf2html/PMC3463005/");
+		outputDir.mkdirs();
+	    Writer output = new PrintWriter(new File(outputDir, "pdf2html.html"), "utf-8");
+	    new PDFDomTree().writeText(pdf, output);
+	    
+	    output.close();
+	}
 
 }

@@ -81,7 +81,9 @@ public class WikidataSparql {
 		amiValues = new ArrayList<String>(values);
 		searchValuesInTarget(amiValues, "sparqlVariables", sparqlVariables);
 		// __synonyms also create amiValues
-		amiValues.addAll(dictionaryCreationTool.synonymList);
+		if (dictionaryCreationTool.synonymList != null) {
+			amiValues.addAll(dictionaryCreationTool.synonymList);
+		}
 		searchValuesInTarget(sparqlVariables, "amiValues", amiValues);
 	}
 

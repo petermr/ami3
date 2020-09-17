@@ -116,9 +116,9 @@ public class AMIPDFTool extends AbstractAMITool {
 	)
 	private boolean outputPdfImages = true;
 
-	@Option(names = {"--pdf2html"},
+	@Option(names = {"--pdf2txt"},
 			paramLabel = "PDF2HTML",
-			description = "Use PDFBox pdf2Html to create automatic html (NYI)"
+			description = "Use PDFBox TextStripper to create automatic text"
 	)
 	private boolean pdf2html = false;
 

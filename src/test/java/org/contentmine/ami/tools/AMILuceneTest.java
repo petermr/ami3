@@ -139,10 +139,12 @@ public class AMILuceneTest extends AbstractAMITest {
 				+ " --index " + indexDir.getAbsolutePath()  
 				;
 		AMI.execute(AMILuceneTool.class, cmd);
-		
+
+		System.out.println("======= query1==========");
 		String query1 = "id id1";
 		String query2 = "id id2";
 		cmd = " -vv"
+				+ " -p " + ZIKA2INPUT
 				+ " lucene "
 				+ " --operations query"
 				+ " --index " + indexDir.getAbsolutePath()  
@@ -150,8 +152,10 @@ public class AMILuceneTest extends AbstractAMITest {
 				+ " --query " + query2
 				;
 		AMI.execute(AMILuceneTool.class, cmd);
+		System.out.println("======= query2==========");
 		
 		cmd = " -vv"
+				+ " -p " + ZIKA2INPUT
 				+ " lucene "
 				+ " --operations fields"
 				+ " --index " + indexDir.getAbsolutePath()  

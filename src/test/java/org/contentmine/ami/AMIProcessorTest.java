@@ -22,6 +22,6 @@ public class AMIProcessorTest {
 		Assert.assertTrue("pom " + NAConstants.NORMAMI_DIR, NAConstants.NORMAMI_DIR.exists());
 		AMIProcessor.updatePOMinMainResources();
 		Assert.assertTrue("pom exists " + NAConstants.SRC_MAIN_RESOURCES_POM_XML, NAConstants.SRC_MAIN_RESOURCES_POM_XML.exists());
-		AMIProcessor.listCommands();
+//		AMIProcessor.listCommands();
 	}
 }

@@ -27,17 +27,17 @@ public class AMIArgProcessorTest {
 	// utility method to check first part of resultsElementList
 
 
-	@Test
-	@Ignore // fails command
-	public void testAMIProcessor() {
-		File indir = AMIFixtures.TEST_PLOSONE_DIR;
-		String cmd = " "+indir.getName();
-		cmd += " species";
-		LOG.debug(cmd);
-		
-		AMIProcessor amiProcessor = AMIProcessor.createProcessor(indir.getPath());
-		amiProcessor.setDebugLevel(Level.DEBUG);
-		amiProcessor.run(cmd);
-	}
+//	@Test
+//	@Ignore // fails command
+//	public void testAMIProcessor() {
+//		File indir = AMIFixtures.TEST_PLOSONE_DIR;
+//		String cmd = " "+indir.getName();
+//		cmd += " species";
+//		LOG.debug(cmd);
+//		
+//		AMIProcessor amiProcessor = AMIProcessor.createProcessor(indir.getPath());
+//		amiProcessor.setDebugLevel(Level.DEBUG);
+//		amiProcessor.run(cmd);
+//	}
 
 }

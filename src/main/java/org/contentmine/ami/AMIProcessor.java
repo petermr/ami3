@@ -52,30 +52,30 @@ public class AMIProcessor {
 	private Level debugLevel;
 
 	private AMIProcessor() {
-		
+		LOG.trace("Create AMIProcessor");
 	}
 	
-	private static AMIProcessor createProcessor(CProject cProject) {
-		AMIProcessor amiProcessor = null;
-		if (cProject != null) {
-			amiProcessor = new AMIProcessor();
-			amiProcessor.cProject = cProject;
-		}
-		return amiProcessor;
-	}
+//	private static AMIProcessor createProcessor(CProject cProject) {
+//		AMIProcessor amiProcessor = null;
+//		if (cProject != null) {
+//			amiProcessor = new AMIProcessor();
+//			amiProcessor.cProject = cProject;
+//		}
+//		return amiProcessor;
+//	}
 	
-	/** creates project from name and user.dir
-	 * 
-	 * @param projectName
-	 * @return
-	 */
-	public static AMIProcessor createProcessor(String projectName) {
-		
-		File userDir = new File(System.getProperty("user.dir"));
-		LOG.debug("project name: "+projectName+" "+userDir);
-		File projectDir = new File(userDir, projectName);
-		return createProcessorFromCProjectDir(projectDir);
-	}
+//	/** creates project from name and user.dir
+//	 * 
+//	 * @param projectName
+//	 * @return
+//	 */
+//	private static AMIProcessor createProcessor(String projectName) {
+//		
+//		File userDir = new File(System.getProperty("user.dir"));
+//		LOG.debug("project name: "+projectName+" "+userDir);
+//		File projectDir = new File(userDir, projectName);
+//		return createProcessorFromCProjectDir(projectDir);
+//	}
 
 	public static AMIProcessor createProcessorFromCProjectDir(File projectDir) {
 		if (!projectDir.exists() || !projectDir.isDirectory()) {
@@ -92,6 +92,7 @@ public class AMIProcessor {
 	}
 	
 	public void defaultAnalyzeCooccurrence(List<String> facets) {
+		LOG.debug("dicts: "+facets);
 		EntityAnalyzer entityAnalyzer = EntityAnalyzer.createEntityAnalyzer(cProject.getDirectory());
 		entityAnalyzer.defaultAnalyzeCooccurrence(facets);
 	}
@@ -184,22 +185,22 @@ public class AMIProcessor {
 		}
 	}
 
-	/** this is a mess. add brackets for subfacets (species, gene) 
-	 * depends on the file structure.
-	 * 
-	 * @param facetList
-	 * @return
-	 */
-	private List<String> addSubFacets(List<String> facetList) {
-		List<String> facetList1 = new ArrayList<String>();
-		for (String facet : facetList) {
-			if ("species".equals(facet)) {
-				facet += "(binomial)";
-			}
-			facetList1.add(facet);
-		}
-		return facetList1;
-	}
+//	/** this is a mess. add brackets for subfacets (species, gene) 
+//	 * depends on the file structure.
+//	 * 
+//	 * @param facetList
+//	 * @return
+//	 */
+//	private List<String> addSubFacets(List<String> facetList) {
+//		List<String> facetList1 = new ArrayList<String>();
+//		for (String facet : facetList) {
+//			if ("species".equals(facet)) {
+//				facet += "(binomial)";
+//			}
+//			facetList1.add(facet);
+//		}
+//		return facetList1;
+//	}
 
 	public void setIncludeCTrees(String... treeNames) {
 		if (cProject != null) {
@@ -209,56 +210,56 @@ public class AMIProcessor {
 	}
 
 
-	public static void main(String[] args) {
-		List<String> argList = new ArrayList<String>(Arrays.asList(args));
-		if (argList.size() == 0 || HELP.equals(argList.get(0))) {
-//			runHelp(argList);
-			listCommands();
-		} else {
-//			runAMISearches(argList);
-		}
-	}
+//	public static void main(String[] args) {
+//		List<String> argList = new ArrayList<String>(Arrays.asList(args));
+//		if (argList.size() == 0 || HELP.equals(argList.get(0))) {
+////			runHelp(argList);
+//			listCommands();
+//		} else {
+////			runAMISearches(argList);
+//		}
+//	}
 
-	public static void listCommands() {
-		String xpath = ""
-			+ "//*[" + LOCAL_NAME_BR + "='" + PLUGIN + "' and *[" + LOCAL_NAME_BR + "='" + ARTIFACT_ID + "' and .= 'appassembler-maven-plugin']]"
-			+ "/*[" + LOCAL_NAME_BR + "='" + CONFIGURATION + "']"
-			+ "/*[" + LOCAL_NAME_BR + "='" + PROGRAMS + "']"
-			+ "/*[" + LOCAL_NAME_BR + "='" + PROGRAM2 + "']"
-			;
-		URL pomUrl = AMIProcessor.class.getResource("/"+NAConstants.POM_XML);
-		List<AMICommandLineComponent> commandList = createCommandList(xpath, pomUrl);
-		for (AMICommandLineComponent component : commandList) {
-			System.err.println(component.toString());
-		}
-	}
+//	public static void listCommands() {
+//		String xpath = ""
+//			+ "//*[" + LOCAL_NAME_BR + "='" + PLUGIN + "' and *[" + LOCAL_NAME_BR + "='" + ARTIFACT_ID + "' and .= 'appassembler-maven-plugin']]"
+//			+ "/*[" + LOCAL_NAME_BR + "='" + CONFIGURATION + "']"
+//			+ "/*[" + LOCAL_NAME_BR + "='" + PROGRAMS + "']"
+//			+ "/*[" + LOCAL_NAME_BR + "='" + PROGRAM2 + "']"
+//			;
+//		URL pomUrl = AMIProcessor.class.getResource("/"+NAConstants.POM_XML);
+////		List<AMICommandLineComponent> commandList = createCommandList(xpath, pomUrl);
+////		for (AMICommandLineComponent component : commandList) {
+////			System.err.println(component.toString());
+////		}
+//	}
 
-	private static List<AMICommandLineComponent> createCommandList(String xpath, URL pomUrl) {
-		List<AMICommandLineComponent> commandList = new ArrayList<AMICommandLineComponent>();
-		List<Element> programList;
-		try {
-			programList = XMLUtil.getQueryElements(XMLUtil.parseQuietlyToDocument(pomUrl.openStream()).getRootElement(), xpath);
-			if (programList != null) {
-				for (Element program : programList) {
-					String id = XMLUtil.getSingleValue(program, "./*[" + LOCAL_NAME_BR + "='" + ID + "']");
-					String description = XMLUtil.getSingleValue(program, "./comment()[contains(.,'" + DESCRIPTION + "')]");
-					if (description != null) {
-						int idx = description.indexOf(DESCRIPTION);
-						if (idx != -1) {
-							description = description.substring(idx + DESCRIPTION.length()).trim();
-						}
-					}
-					String mainClass = XMLUtil.getSingleValue(program, "./*[" + LOCAL_NAME_BR + "='" + MAIN_CLASS + "']");
-					AMICommandLineComponent commandLineComponent = new AMICommandLineComponent(id, mainClass, description);
-					commandList.add(commandLineComponent);
-//					System.err.println(CMStringUtil.addPaddedSpaces(id, 20) + " " + description + " (" + mainClass + ")");
-				}
-			}
-		} catch (IOException ioe) {
-			throw new RuntimeException("cannot read POM", ioe);
-		}
-		return commandList;
-	}
+//	private static List<AMICommandLineComponent> createCommandList(String xpath, URL pomUrl) {
+//		List<AMICommandLineComponent> commandList = new ArrayList<AMICommandLineComponent>();
+//		List<Element> programList;
+//		try {
+//			programList = XMLUtil.getQueryElements(XMLUtil.parseQuietlyToDocument(pomUrl.openStream()).getRootElement(), xpath);
+//			if (programList != null) {
+//				for (Element program : programList) {
+//					String id = XMLUtil.getSingleValue(program, "./*[" + LOCAL_NAME_BR + "='" + ID + "']");
+//					String description = XMLUtil.getSingleValue(program, "./comment()[contains(.,'" + DESCRIPTION + "')]");
+//					if (description != null) {
+//						int idx = description.indexOf(DESCRIPTION);
+//						if (idx != -1) {
+//							description = description.substring(idx + DESCRIPTION.length()).trim();
+//						}
+//					}
+//					String mainClass = XMLUtil.getSingleValue(program, "./*[" + LOCAL_NAME_BR + "='" + MAIN_CLASS + "']");
+//					AMICommandLineComponent commandLineComponent = new AMICommandLineComponent(id, mainClass, description);
+//					commandList.add(commandLineComponent);
+////					System.err.println(CMStringUtil.addPaddedSpaces(id, 20) + " " + description + " (" + mainClass + ")");
+//				}
+//			}
+//		} catch (IOException ioe) {
+//			throw new RuntimeException("cannot read POM", ioe);
+//		}
+//		return commandList;
+//	}
 
 	public static void runHelp(List<String> argList) {
 		if (argList.size() > 0) argList.remove(0);

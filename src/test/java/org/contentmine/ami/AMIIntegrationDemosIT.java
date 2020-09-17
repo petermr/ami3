@@ -232,7 +232,7 @@ public class AMIIntegrationDemosIT {
 //		AMIProcessor.main(new String[]{});
 //		AMIProcessor.main(new String[]{"help"});
 //		AMIProcessor.main(new String[]{"help", "insecticide", "auxin", "grot", "inn"});
-		AMIProcessor.main(new String[]{"help", "dictionaries"});
+//		AMIProcessor.main(new String[]{"help", "dictionaries"});
 		
 //		AMIProcessor.main(new String[]{"marchantia"});
 //		AMIProcessor.main(new String[]{"marchantia", "country", "plantParts"});
@@ -254,22 +254,6 @@ public class AMIIntegrationDemosIT {
 		amiProcessor.convertHTMLsToProjectAndRunCooccurrence(facetList);
 	}
 
-	@Test
-	@Ignore // too long
-	public void testACSOpen() {
-
-		String projectName = "acsopen";
-		File sourceDir = new File(AMIFixtures.TEST_TOTAL_INT_DIR, projectName);
-		if (!TestUtil.checkForeignDirExists(sourceDir)) return;
-		File targetDir = new File(AMIFixtures.TARGET_TOTAL_INT_DIR, projectName);
-		CMineTestFixtures.cleanAndCopyDir(sourceDir, targetDir);
-		AMIProcessor amiProcessor = AMIProcessor.createProcessor(targetDir);
-		amiProcessor.makeProject();
-		List<String> facetList = Arrays.asList(new String[]{
-				"crystal", "country", "magnetism", "compchem", "nmrspectroscopy", "funders", "solvents"});
-		amiProcessor.convertPDFsToProjectAndRunCooccurrence(facetList);
-	}
-	
 	@Test
 	@Ignore
 	public void testACSOpenMain() {

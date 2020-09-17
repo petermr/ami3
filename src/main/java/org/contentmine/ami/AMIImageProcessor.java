@@ -297,7 +297,7 @@ public class AMIImageProcessor  extends AbstractAMITool {
 //		return this;
 //	}
 
-	public void convertImageAndWriteHOCRFiles(CTree cTree, File outputDir) {
+	private void convertImageAndWriteHOCRFiles(CTree cTree, File outputDir) {
 		File imageDir = new File(cTree.getExistingPDFImagesDir(), CTree.DERIVED); 
 		List<File> imageFiles = new CMineGlobber().setRegex(".*\\.png").setLocation(imageDir).listFiles();
 		for (File imageFile : imageFiles) {
@@ -309,11 +309,11 @@ public class AMIImageProcessor  extends AbstractAMITool {
 	}
 
 
-	public int getMaxPixelIslandCount() {
+	private int getMaxPixelIslandCount() {
 		return maxPixelIslandCount ;
 	}
 
-	public AbstractAMITool setMaxPixelIslandCount(int maxPixelIslandCount) {
+	private AbstractAMITool setMaxPixelIslandCount(int maxPixelIslandCount) {
 		this.maxPixelIslandCount = maxPixelIslandCount;
 		return this;
 	}
