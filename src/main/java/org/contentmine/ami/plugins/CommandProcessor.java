@@ -68,6 +68,7 @@ public class CommandProcessor {
 	}
 
 	private void readSymbols() {
+		LOG.debug("ComProc> Reading old AMI abbreviations: obsolete these");
 		InputStream is = new ResourceLocation().getInputStreamHeuristically(SYMBOLS);
 		if (is == null) {
 			throw new RuntimeException("cannot find symbols: "+SYMBOLS);

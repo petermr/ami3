@@ -115,10 +115,18 @@ public class AMISearchTool extends AbstractAMISearchTool {
             description = "suffix for search dictionary")
     private List<String> dictionarySuffix;
 
-    @Option(names = {"--dictionaryTop"},
+    @Option(names = {"-D", "--dictionaryTop"},
     		arity = "1",
-            description = " local dictionary home directory")
+    		defaultValue = "${AMIDICT:-${user.home}/ami/dictionary}", paramLabel = "DIR",
+            description = "Dictionary directory to use. `ami` will look for dictionaries in this directory by" +
+					" filename (e.g. drug.xml)" +
+					" The default is: `${DEFAULT-VALUE}`." +
+					" You can control the default by setting the `AMIDICT` environment variable."
+            )
     private List<String> dictionaryTopList;
+
+
+
 
 
 	// These may be required in subclasses
@@ -129,6 +137,7 @@ public class AMISearchTool extends AbstractAMISearchTool {
     
     private File dictionaryFile;
 	private InputStream dictionaryInputStream;
+	
 	
     /** used by some non-picocli calls
      * obsolete it

@@ -93,14 +93,14 @@ private static WordSetWrapper COMMON_ENGLISH_STOPWORDS;
 		InputStream stopwordsStream = AMIArgProcessor.class.getResourceAsStream(stopwordsResource);
 		if (stopwordsStream == null) {
 			if (stopwordsResource.endsWith(DOT_XML)) {
-				LOG.warn("Cannot read XML stopwords yet");
+				LOG.warn("WSW> Cannot read XML stopwords yet");
 			} else {
 				stopwordsResource = addTxt(stopwordsResource);
 				stopwordsStream = new ResourceLocation().getInputStreamHeuristically(stopwordsResource);
 			}
 		}
 		if (stopwordsStream == null) {
-			LOG.warn("Cannot read stopword stream: "+stopwordsResource);
+			LOG.warn("WSW> Cannot read stopword stream: "+stopwordsResource);
 		} else {
 			try {
 				List<String> lines = IOUtils.readLines(stopwordsStream);

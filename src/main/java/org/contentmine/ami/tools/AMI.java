@@ -103,6 +103,9 @@ public class AMI implements Runnable {
 	@ArgGroup(validate = false, heading = "Logging Options:%n", order = 70)
 	LoggingOptions loggingOptions = new LoggingOptions();
 
+//	@ArgGroup(validate = false, heading = "Dictionary Options:%n", order = 75)
+//	DictionaryOptions dictionaryOptions = new DictionaryOptions();
+
 	@Spec
 	CommandSpec spec;
 
@@ -216,7 +219,7 @@ public class AMI implements Runnable {
 	static class CProjectOptions {
 		@Option(names = {"-p", "--cproject"}, defaultValue = "${AMIPROJECT:-${user.home}/amiprojects/myproject}", paramLabel = "DIR",
 				description = {"The CProject (directory) to process."
-						+ " This can be (a) a child directory of cwd (current working directory (b) cwd itself (use `-p .`) or (c) an absolute filename."
+						+ " This can be (a) a child directory of cwd (current working directory) (b) cwd itself (use `-p .`) or (c) an absolute filename."
 						+ " The cProject name is the basename of the file.",
 						" The default is: `${DEFAULT-VALUE}`.",
 						" You can control the default by setting the `AMIPROJECT` environment variable."
@@ -305,6 +308,7 @@ public class AMI implements Runnable {
 				description = "Output filename (no defaults)"
 		)
 		protected String output = null;
+
 	}
 
 	static class LoggingOptions {
@@ -379,6 +383,7 @@ public class AMI implements Runnable {
 			}
 		}
 	}
+	
 
 	static class ShortErrorMessageHandler implements IParameterExceptionHandler {
 		@Override

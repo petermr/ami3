@@ -1,11 +1,13 @@
 package org.contentmine.ami.tools;
 
 import java.io.File;
+import java.time.Clock;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.contentmine.cproject.util.CMineTestFixtures;
 import org.contentmine.eucl.xml.XMLUtil;
+import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
 import nu.xom.Element;
@@ -17,26 +19,34 @@ public class AMISummaryTest extends AbstractAMITest {
 	private static final String SUMMARY_CONST = "_summary";
 	
 	@Test
-	public void testSummarizeMethods() {
+	public void testFlattenMethods() {
 		String root = "methods";
 		String project = "summarizeProject/";
 		File expectedDir = new File(TEST_BATTERY10+"."+"expected", project);
 		File targetDir = new File(TARGET_DIR, project);
 		CMineTestFixtures.cleanAndCopyDir(TEST_BATTERY10, targetDir);
+		String sections = "sections/body/"+root;
 		String cmd = "-vvv"
 				+ " -p "+targetDir
-				+ " --output " + "/sections/body/"+root
+//				+ " --output " + "/sections/body/"+root
+				+ " --output " + sections
 				+ " summary "
 				+ " --glob **/PMC*/sections/*_body/*_methods/**/*_p.xml"
 				+ " --flatten"
 			;
 		AMI.execute(cmd);
+		LOG.info("cmd="+cmd);
+		File outputFile = new File(targetDir, "_summary/"+sections);
+		LOG.info("flatten written to "+outputFile);
+		Assert.assertTrue("output "+outputFile, outputFile.toString().endsWith("ami3/target/summary/summarizeProject/_summary/sections/body/methods"));
+		System.out.println("target "+targetDir);
 		AbstractAMITest.compareDirectories(targetDir, expectedDir);
 		
 		// ami -vvv -p CEVOpen --output /sections/body/manny
 		//	 summary --glob **/PMC*/sections/*_body/*_methods/**/*_p.xml --flatten"
 	}
 
+	
 	/** extracts the unflattened subtree with a globbed set of leafnodes
 	 * This creates a glob'ed list of results files and then creates a subtree of
 	 * the project (see target/<project>
@@ -82,6 +92,7 @@ public class AMISummaryTest extends AbstractAMITest {
 				+ " --glob **/PMC*/sections/*_front/*_article-meta/*_abstract.xml"
 			;
 		AMI.execute(cmd);
+		System.out.println("target "+targetDir);
 		AbstractAMITest.compareDirectories(targetDir, expectedDir);
 		
 	}

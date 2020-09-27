@@ -81,6 +81,7 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 	private static final String BBB = "_b_";
 	private static final String ERODE = "_e";
 	private static final String IMAGE = "image";
+	private static final String MERGE = "_m";
 	private static final String OCTREE = "_o";
 	private static final String POSTER = "_p";
 	private static final String SCALEFACTOR = "_sc_";
@@ -88,7 +89,7 @@ public class AMIImageTool extends AbstractAMITool implements HasImageDir {
 	private static final String THRESHOLD = "_thr_";
 
 	private static final Logger LOG = LogManager.getLogger(AMIImageTool.class);
-public enum AMIImageType {
+	public enum AMIImageType {
 		NONE("none", 0, new AMIImageType[]{}),
 		RAW("raw", NONE.priority + 1, new AMIImageType[]{}),
 		BORDER("border", RAW.priority + 1, AMIImageType.RAW),
@@ -571,6 +572,7 @@ public enum AMIImageType {
 			if (nMerge > 0) {
 				ColorAnalyzer colorAnalyzer = new ColorAnalyzer(image);
 				image = colorAnalyzer.repeatedlyMergeMinorColors(image, nMerge);
+				basename += MERGE + nMerge;
 			}
 
 			if (octreeCount != null) {

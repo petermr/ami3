@@ -98,7 +98,7 @@ public class AMISearchTest extends AbstractAMITest {
 		File targetDir = new File("target/cooccurrence/zika10");
 		CMineTestFixtures.cleanAndCopyDir(AMIFixtures.TEST_ZIKA10_DIR, targetDir);
 		String args = // "ami " +
-				" -p " + targetDir 
+				" -vv -p " + targetDir
 				+ " search"
 				+ " --dictionary "
 				+ " /Users/pm286/ContentMine/dictionaries/geo/country.xml"

@@ -201,12 +201,12 @@ public class AMIDict implements Runnable {
 	/**
 	 * both create and translate
 	 */
-	@Option(names = {"--directory"},
+	@Option(names = {"-D", "--directory"},
 			scope = CommandLine.ScopeType.INHERIT, // this option can be used in all subcommands
 			arity = "1",
 			description = "top directory containing dictionary/s. Subdirectories will use structured names (NYI). Thus "
 					+ "dictionary 'animals' is found in '<directory>/animals.xml', while 'plants.parts' is found in "
-					+ "<directory>/plants/parts.xml. Required for relative dictionary names.")
+					+ "<directory>/plants/parts.xml (NYI). Required for relative dictionary names.")
 	File directory = null;
 
 
